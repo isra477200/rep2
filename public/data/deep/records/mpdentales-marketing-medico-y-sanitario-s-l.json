@@ -1,0 +1,611 @@
+{
+  "id": "mpdentales-marketing-medico-y-sanitario-s-l",
+  "name": "MPDentales (Marketing Médico y Sanitario S.L.)",
+  "reviewedAt": "2026-08-22T15:50:17.876Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Especialistas en Marketing Dental",
+    "heroObserved": true,
+    "priorSummary": "Marketing digital integral para clínicas dentales con experiencia sectorial y acompañamiento especializado.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 114 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1682 palabras por página comercial recuperada. Muestras breves: “Especialistas en Marketing Dental” · “Gestión dental para clínicas dentales (organización, equipo y más pacientes)” · “Plan de marketing para clínicas dentales (estrategia, captación y rentabilidad)”.",
+    "supportingHeadings": [
+      "Marketing para clínicas dentales orientado a resultados reales",
+      "Especialistas en Marketing Dental",
+      "¿Necesitas más información?",
+      "Nuestros Servicios de Marketing Dental",
+      "¿POR QUÉ ELEGIRNOS?",
+      "¿Quieres hacer videoconsultas ONLINE ?",
+      "Beneficios del Marketing Dental",
+      "Trabajamos desde Madrid para clínicas dentales de toda España",
+      "Preguntas Frecuentes",
+      "Nuestros Clientes dicen",
+      "Contáctanos",
+      "¡Te ayudamos con la digitalización de tu clínica!",
+      "Somos Agentes Digitalizadores Adheridos",
+      "Últimas Entradas",
+      "Cómo evitar campañas genéricas que atraen contactos poco cualificados",
+      "Cómo medir el retorno real de una campaña de marketing dental",
+      "Inversión en Google Ads para clínicas dentales: cuánto presupuesto necesitas",
+      "Accesos Directos",
+      "¿Quieres duplicar tus pacientes en 6 meses?",
+      "Gestión Dental",
+      "Gestión dental para clínicas dentales (organización, equipo y más pacientes)",
+      "¿Qué es la gestión dental?",
+      "Por qué es clave para tu clínica dental",
+      "Qué hacemos por tu clínica dental / Cómo lo hacemos",
+      "1) Diagnóstico de situación (rápido y realista)",
+      "2) Protocolos de atención y comunicación",
+      "3) Organización interna y motivación del equipo",
+      "4) Marketing aplicado a la gestión (para atraer y retener mejor)",
+      "Nuestro valor diferencial",
+      "DÓNDE ESTAMOS"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar diagnóstico gratis",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://mpdentales.com/",
+      "text": "Solicitar diagnóstico gratis",
+      "href": "https://mpdentales.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 318
+    },
+    "ctas": [
+      "Solicitar diagnóstico gratis",
+      "Google Ads y Facebook Pixel",
+      "Implementa en tu clínica CONSULTAS ONLINE",
+      "PEDIR PRESUPUESTO",
+      "PIDE PRESUPUESTO AHORA",
+      "Pide presupuesto ahora",
+      "DESCARGA CONTENIDO GRATIS",
+      "Tenemos la guía definitiva. Descárgala GRATIS y AHORA.",
+      "Declinar",
+      "Marketing",
+      "Analítica",
+      "Pipedrive",
+      "Necesarias",
+      "Contáctanos",
+      "ver más faqs",
+      "Enviar Mensaje",
+      "Quiero la guía",
+      "Google Analytics",
+      "Pide tu cita ahora",
+      "Google Tag Manager",
+      "QUIERO LA GUÍA ahora",
+      "Quiero que reviséis mi caso",
+      "Quiero hablar con un especialista",
+      "Quiero mi plan de marketing dental",
+      "Pide tu cita para Gestión Dental ahora",
+      "Quiero mejorar la gestión de mi clínica",
+      "Pide tu cita para Plan de Marketing ahora",
+      "Más pacientes para tu clínica dental, con estrategia y experienciaCon más de 25 años",
+      "Agencia de marketing digital para clínicas dentalesAyudamos a clínicas dentales de Madrid y toda",
+      "Agencia de marketing digital para clínicas dentales en Madrid Especialistas en captar más primeras"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://mpdentales.com/",
+        "index": 1,
+        "action": "https://mpdentales.com/",
+        "method": "POST",
+        "submitText": "Enviar Mensaje",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 9,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nombre]",
+            "label": "Nombre y Apellidos",
+            "placeholder": "Nombre y Apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[provincia]",
+            "label": "Provincia",
+            "placeholder": "Provincia*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[movil]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[web]",
+            "label": "Página web",
+            "placeholder": "Página web",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[especialidad]",
+            "label": "Especialidad",
+            "placeholder": "Especialidad*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[horario]",
+            "label": "Mejor horario para contactarle",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[mensaje]",
+            "label": "Mensaje",
+            "placeholder": "Mensaje",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_1]",
+            "label": "Políticas de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "form_fields[field_1da184a]",
+            "label": "SÍ",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://mpdentales.com/",
+        "index": 2,
+        "action": "https://mpdentales.com/",
+        "method": "POST",
+        "submitText": "QUIERO LA GUÍA ahora",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nombre]",
+            "label": "Nombre y Apellidos",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_3]",
+            "label": "Nombre de tu Clínica",
+            "placeholder": "Tu clínica",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_2]",
+            "label": "He leído y acepto las políticas de privacidad del sitio.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "form_fields[field_8c94e63]",
+            "label": "SÍ",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://mpdentales.com/casos-de-exito/",
+        "index": 1,
+        "action": "https://mpdentales.com/casos-de-exito/",
+        "method": "POST",
+        "submitText": "QUIERO LA GUÍA ahora",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nombre]",
+            "label": "Nombre y apellidos",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_3]",
+            "label": "Nombre de tu Clínica",
+            "placeholder": "Tu clínica",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_2]",
+            "label": "He leído y acepto las políticas de privacidad del sitio.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "form_fields[field_8c94e63]",
+            "label": "SÍ",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 5 y 10 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Página web.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 10,
+      "qualification": [
+        "Página web"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketing digital integral para clínicas dentales con experiencia sectorial y acompañamiento especializado.",
+    "audience": "Clínicas dentales y dentistas en España, con base y foco en Madrid. Forma parte de una estructura mayor de marketing sanitario (razón social MARKETING MÉDICO Y SANITARIO S.L., con sitio hermano maspacientes.es): la verticalización es de marca y dominio, no de empresa.",
+    "prices": [
+      "La clave está en comprobar cuántos pacientes reales se han conseguido, Leer Más >> Inversión en Google Ads para clínicas dentales: cuánto presupuesto necesitas Una clínica dental debería empezar con una inversión mínima de 600 € a 1.500 € al mes en Google Ads si"
+    ],
+    "guarantee": [],
+    "proof": [
+      "Agencia especializada en el sector dental 25 años de experiencia Enfoque estratégico y orientación a resultados Actualización constante.",
+      "Presencia en web, Chat GPT, Google My Business y RRSS Testimonios y reseñas reales en Google My Business DESCUBRE MÁS MOTIVOS POR LOS QUE NOS ELIGEN > ¿Quieres hacer videoconsultas ONLINE ?"
+    ],
+    "objections": [
+      "672 25 75 60 Pide presupuesto ahora Preguntas Frecuentes Sobre nuestro marketing médico para clínicas dentales ver más faqs ¿Qué hace una agencia de marketing digital para clínicas dentales?",
+      "Ir al contenido Kit Digital → Inicio Nosotros La Agencia ¿Por qué elegirnos?",
+      "¿Por qué es importante un marketing especializado en clínicas dentales?",
+      "¿Por qué necesito una estrategia y no solo campañas sueltas?",
+      "¿Cuánto tarda en funcionar el SEO en una clínica dental?",
+      "¿Qué es el SEO local y por qué es tan importante?",
+      "Contáctanos Nuestros Servicios de Marketing Dental Consultoría Marketing Digital Posicionamiento GEO Publicidad SEM Diseño Web Posicionamiento SEO Gestión de Redes Sociales Gestión de Reputación Experiencia del Paciente Telemedicina y Consultas Online ¿POR QUÉ ELEGIRNOS?"
+    ],
+    "urgency": [
+      "Lo ideal es combinar ambas para generar resultados ahora y consolidar tu posicionamiento a largo plazo.",
+      "672 25 75 60 Pide presupuesto ahora Preguntas Frecuentes Sobre nuestro marketing médico para clínicas dentales ver más faqs ¿Qué hace una agencia de marketing digital para clínicas dentales?",
+      "Comunícate con nosotros ahora mismo.",
+      "Fuimos los primeros en SEO para Google, ahora somos los primeros en posicionarte en Chat GPT.",
+      "PIDE PRESUPUESTO AHORA Beneficios del Marketing Dental Más Primeras Visitas Te ayudamos a destacar en tu zona y atraer pacientes con intención real.",
+      "QUIERO LA GUÍA ahora Tus datos están a salvo con MAS PACIENTES DENTAL ya que cumplimos con el RGPD (Reglamento General de Protección de Datos)."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "La clave está en comprobar cuántos pacientes reales se han conseguido, Leer Más >> Inversión en Google Ads para clínicas dentales: cuánto presupuesto necesitas Una clínica dental debería empezar con una inversión mínima de 600 € a 1.500 € al mes en Google Ads si",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Agencia especializada en el sector dental 25 años de experiencia Enfoque estratégico y orientación a resultados Actualización constante.",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Presencia en web, Chat GPT, Google My Business y RRSS Testimonios y reseñas reales en Google My Business DESCUBRE MÁS MOTIVOS POR LOS QUE NOS ELIGEN > ¿Quieres hacer videoconsultas ONLINE ?",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Ir al contenido Kit Digital → Inicio Nosotros La Agencia ¿Por qué elegirnos?",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Contáctanos Nuestros Servicios de Marketing Dental Consultoría Marketing Digital Posicionamiento GEO Publicidad SEM Diseño Web Posicionamiento SEO Gestión de Redes Sociales Gestión de Reputación Experiencia del Paciente Telemedicina y Consultas Online ¿POR QUÉ ELEGIRNOS?",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other"
+        },
+        {
+          "text": "672 25 75 60 Pide presupuesto ahora Preguntas Frecuentes Sobre nuestro marketing médico para clínicas dentales ver más faqs ¿Qué hace una agencia de marketing digital para clínicas dentales?",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué es importante un marketing especializado en clínicas dentales?",
+          "url": "https://mpdentales.com/",
+          "pageTitle": "Marketing Dental - Marketing Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ir al contenido Kit Digital → Inicio Nosotros La Agencia ¿Por qué elegirnos?",
+          "url": "https://mpdentales.com/preguntas-frecuentes-faqs/",
+          "pageTitle": "Agencia de Marketing para Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "¿Por qué necesito una estrategia y no solo campañas sueltas?",
+          "url": "https://mpdentales.com/preguntas-frecuentes-faqs/",
+          "pageTitle": "Agencia de Marketing para Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "¿Cuánto tarda en funcionar el SEO en una clínica dental?",
+          "url": "https://mpdentales.com/preguntas-frecuentes-faqs/",
+          "pageTitle": "Agencia de Marketing para Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "¿Qué es el SEO local y por qué es tan importante?",
+          "url": "https://mpdentales.com/preguntas-frecuentes-faqs/",
+          "pageTitle": "Agencia de Marketing para Clinicas Dentales - Mas Pacientes Dental",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Google Ads",
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://mpdentales.com/",
+        "https://mpdentales.com/consultoria-dental/gestion-dental/",
+        "https://mpdentales.com/consultoria-dental/plan-de-marketing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Especialistas en Marketing Dental",
+        "Gestión dental para clínicas dentales (organización, equipo y más pacientes)",
+        "Plan de marketing para clínicas dentales (estrategia, captación y rentabilidad)",
+        "Contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Agencia de marketing digital para clínicas dentales en Madrid Especialistas en captar más primeras",
+        "Solicitar diagnóstico gratis",
+        "Agencia de marketing digital para clínicas dentalesAyudamos a clínicas dentales de Madrid y toda",
+        "Más pacientes para tu clínica dental, con estrategia y experienciaCon más de 25 años",
+        "Contáctanos",
+        "PIDE PRESUPUESTO AHORA",
+        "DESCARGA CONTENIDO GRATIS",
+        "Pide presupuesto ahora"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://mpdentales.com/ · 10 campos",
+        "https://mpdentales.com/ · 5 campos",
+        "https://mpdentales.com/consultoria-dental/gestion-dental/ · 10 campos",
+        "https://mpdentales.com/consultoria-dental/gestion-dental/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por home, página local/servicio o lead magnet → CTA «Solicitar diagnóstico gratis» / «Quiero hablar con un especialista» / «Pide presupuesto» → formulario largo con nombre, provincia,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://mpdentales.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://mpdentales.com/consultoria-dental/gestion-dental/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://mpdentales.com/consultoria-dental/plan-de-marketing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://mpdentales.com/casos-de-exito/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://mpdentales.com/preguntas-frecuentes-faqs/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://mpdentales.com/nosotros/sobre-nosotros/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://mpdentales.com/contacto/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://mpdentales.com/marketing-dental-madrid/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR05069188305619255297?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR05069188305619255297/creative/CR07184666888121614337?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.mpdentales.com/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR05069188305619255297/creative/CR14746222344787722241?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR05069188305619255297/creative/CR16323274481214685185?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=mpdentales.com",
+      "label": "Fuente pública 15"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar diagnóstico gratis”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

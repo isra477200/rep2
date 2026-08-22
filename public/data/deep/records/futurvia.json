@@ -1,0 +1,581 @@
+{
+  "id": "futurvia",
+  "name": "FuturVía",
+  "reviewedAt": "2026-08-22T15:50:19.274Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Solicitud de servicios",
+    "heroObserved": true,
+    "priorSummary": "Sistema de gestión de reseñas para Google My Business y TripAdvisor que automatiza las solicitudes de valoración para \"mejorar la reputación de su empresa de forma natural y continuada\", con un incremento estadístico declarado del \"550%\" en votaciones anuales.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 245 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1344 palabras por página comercial recuperada. Muestras breves: “Reseñas Google My Business · Sistema Google Business Profile” · “Contacto” · “Solicitud de servicios”.",
+    "supportingHeadings": [
+      "Reseñas Google My Business · Sistema Google Business Profile",
+      "Mejorar las reseñas en Google es esencial para destacar entre la multitud y atraer más clientes a su negocio",
+      "desde el primer contacto hasta la postventa",
+      "Modo de solicitud activa de reseñas positivas",
+      "Facilitemos que los clientes satisfechos nos voten y los insatisfechos nos reclamen de forma privada y activa",
+      "Características del Sistema de Reseñas de Google",
+      "¿ESTÁ CANSADO DE VER CÓMO SU REPUTACIÓN SE HUNDE POR UNA MINORÍA DE \"CLIENTES\" QUE VOTAN NEGATIVAMENTE SU ACTIVIDAD?",
+      "Mejoramos el perfil de su empresa en Google favoreciendo la votación real de sus clientes con una aplicación propia única y la primera en el",
+      "Nuestro sistema de reseñas para Google MyBusiness y TripAdvisor es la solución a la reputación de su negocio.",
+      "Solicite presupuesto sin compromiso",
+      "Desde 1996 prestando servicios a empresas y creando plataformas únicas para internet",
+      "Nuestro sistema de reseñas",
+      "Sistema de reseñas Google My Business",
+      "¿Cómo funciona?",
+      "Caso de éxito",
+      "Piscinas Ferromar",
+      "Otros Competidores",
+      "La Experiencia de Nuestros Clientes",
+      "¿Qué hace y qué no nuestro sistema de reseñas Google Business Profile?",
+      "Lo que hacemos",
+      "Lo que no hacemos",
+      "Preguntas frecuentes de nuestro sistema de reseñas Google My Business.",
+      "Ventajas de nuestros sistemas de reseñas",
+      "1. Credibilidad y Confianza",
+      "2. Mejora en el Posicionamiento SEO",
+      "3. Influencia en la Decisión de Compra",
+      "4. Feedback para la Mejora Continua",
+      "5. Diferenciación de la Competencia",
+      "6. Fomenta el Marketing de Boca en Boca",
+      "7. Impulsa la Retención de Clientes"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.futurvia.es/resenas-google-my-business",
+      "text": "Contacto",
+      "href": "https://www.futurvia.es/contacto",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143
+    },
+    "ctas": [
+      "Contacto",
+      "Solicita Presupuesto",
+      "Solicitar presupuesto",
+      "Contacta con nosotros",
+      "Solicita tu ayuda de Kit Digital ahora",
+      "Hosting",
+      "Guardar",
+      "Servicios",
+      "Marketing",
+      "Contáctanos",
+      "Aplicaciones",
+      "Vista previa",
+      "Sobre nosotros",
+      "Certificaciones",
+      "Métodos de Pago",
+      "Enviar solicitud",
+      "Nosotros nos encargamos... ENVIAR"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.futurvia.es/resenas-google-my-business",
+        "index": 2,
+        "action": "https://www.futurvia.es/antibot",
+        "method": "POST",
+        "submitText": "Solicitar presupuesto",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre",
+            "placeholder": "Nombre *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": "Correo electrónico *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "label": "Página web",
+            "placeholder": "Página web actual",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "interested_service",
+            "label": "¿Qué servicio le interesa?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Detalle su consulta",
+            "placeholder": "Detalle su consulta *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr",
+            "label": "Consiento el tratamiento de mis datos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "fax",
+            "label": "Número de Fax",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.futurvia.es/contacto",
+        "index": 2,
+        "action": "https://www.futurvia.es/antibot",
+        "method": "POST",
+        "submitText": "Nosotros nos encargamos... ENVIAR",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre",
+            "placeholder": "Nombre *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": "Correo electrónico *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "Teléfono *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "inquire_type",
+            "label": "Tipo de consulta",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "contact_hours",
+            "label": "Horario de contacto",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "contact_method",
+            "label": "Método de contacto deseado",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Mensaje",
+            "placeholder": "¿Qué es lo que necesita o le gustaría tener?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr",
+            "label": "Consiento el tratamiento de mis datos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "allow_email",
+            "label": "Deseo recibir información sobre las promociones y novedades de FUTURVIA.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "fax",
+            "label": "Número de Fax",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.futurvia.es/blog/resenas-google-como-evitar-unos-pocos-clientes-hundan-reputacion-online",
+        "index": 2,
+        "action": "https://www.futurvia.es/antibot",
+        "method": "POST",
+        "submitText": "Guardar",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Su nombre",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment_body[0][value]",
+            "label": "Comentario",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "field_gdpr[value]",
+            "label": "Consiento el tratamiento de mis datos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.futurvia.es/solicitud-servicios?servicio=Sistema+Rese%C3%B1as",
+        "index": 2,
+        "action": "https://www.futurvia.es/antibot",
+        "method": "POST",
+        "submitText": "Enviar solicitud",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "servicio",
+            "label": "Servicio",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Comentarios",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr",
+            "label": "Consiento el tratamiento de mis datos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "fax",
+            "label": "Número de Fax",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 3 y 10 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Empresa, Página web, ¿Qué servicio le interesa?, Servicio.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 10,
+      "qualification": [
+        "Empresa",
+        "Página web",
+        "¿Qué servicio le interesa?",
+        "Servicio"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Sistema de gestión de reseñas para Google My Business y TripAdvisor que automatiza las solicitudes de valoración para \"mejorar la reputación de su empresa de forma natural y continuada\", con un incremento estadístico declarado del \"550%\" en votaciones anuales.",
+    "audience": "\"Empresas con presencia física y clientes recurrentes: restaurantes, hoteles, tiendas, negocios de servicios\" — el mismo tipo de pyme local con ubicación física que suele contratar Google/Meta Ads con RedVitalia.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Sobre nosotros FuturVía es un ISP que lleva desde 1996 ofreciendo servicios de desarrollo web (diseño web y tienda online), alojamiento, posicionamiento SEO, mantenimiento web… Más de 25 años apostando por el crecimiento de nuestros clientes."
+    ],
+    "objections": [],
+    "urgency": [
+      "Solicita tu ayuda de Kit Digital ahora Kit Digital eCommerce FuturVía 8 Febrero 2024 Compartir Añadir nuevo comentario Su nombre Comentario Acerca de formatos de texto Consiento el tratamiento de mis datos FUTURVIA tratará tus datos con la finalidad de gestionar su comentario en este",
+      "Todas nuestras tiendas son bastante sencillas de manejar y para asegurarnos que no tiene problema le damos un soporte telefónico ilimitado de manejo de la tienda Online.",
+      "…ominios, gestionando un sólo catálogo de productos Integración con Amazon y eBay Módulo de \"Cuenta Atrás\" con productos limitados para mejorar las ofertas a sus usuarios Y más...",
+      "Para obtener más información y comenzar tu viaje hacia una tienda en línea exitosa, no dudes en ponerte en contacto con FuturVía hoy mismo."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Sobre nosotros FuturVía es un ISP que lleva desde 1996 ofreciendo servicios de desarrollo web (diseño web y tienda online), alojamiento, posicionamiento SEO, mantenimiento web… Más de 25 años apostando por el crecimiento de nuestros clientes.",
+          "url": "https://www.futurvia.es/solicitud-servicios?servicio=Sistema+Rese%C3%B1as",
+          "pageTitle": "Solicitud de servicios | FuturVía",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sobre nosotros FuturVía es un ISP que lleva desde 1996 ofreciendo servicios de desarrollo web (diseño web y tienda online), alojamiento, posicionamiento SEO, mantenimiento web… Más de 25 años apostando por el crecimiento de nuestros clientes.",
+          "url": "https://www.futurvia.es/solicitud-servicios?servicio=Presupuesto+Tienda+Online",
+          "pageTitle": "Solicitud de servicios | FuturVía",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.futurvia.es/resenas-google-my-business",
+        "https://www.futurvia.es/contacto",
+        "https://www.futurvia.es/blog/resenas-google-como-evitar-unos-pocos-clientes-hundan-reputacion-online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Reseñas Google My Business · Sistema Google Business Profile",
+        "Contacto",
+        "Solicitud de servicios"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Solicitar presupuesto",
+        "Nosotros nos encargamos... ENVIAR",
+        "Sobre nosotros",
+        "Contacta con nosotros",
+        "Servicios",
+        "Hosting",
+        "Marketing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.futurvia.es/resenas-google-my-business · 9 campos",
+        "https://www.futurvia.es/contacto · 10 campos",
+        "https://www.futurvia.es/blog/resenas-google-como-evitar-unos-pocos-clientes-hundan-reputacion-online · 3 campos",
+        "https://www.futurvia.es/solicitud-servicios?servicio=Sistema+Rese%C3%B1as · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing del sistema de reseñas → «Contratar sistema» / solicitud de presupuesto/información → instalación y configuración inicial → conexión con Google Business Profile y/o TripAdvisor →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.futurvia.es/resenas-google-my-business",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.futurvia.es/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.futurvia.es/blog/resenas-google-como-evitar-unos-pocos-clientes-hundan-reputacion-online",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.futurvia.es/solicitud-servicios?servicio=Sistema+Rese%C3%B1as",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.futurvia.es/diseno-tienda-online-empresas",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.futurvia.es/blog/magento-con-kit-digital-oportunidad-crear-tienda-online-coste-adicional-con-futurvia",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.futurvia.es/solicitud-servicios?servicio=Presupuesto+Tienda+Online",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://futurvia.es/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

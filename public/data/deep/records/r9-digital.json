@@ -1,0 +1,405 @@
+{
+  "id": "r9-digital",
+  "name": "R9 Digital",
+  "reviewedAt": "2026-08-22T15:50:19.245Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ БИЗНЕСА В ИНТЕРНЕТЕ В Минске",
+    "heroObserved": true,
+    "priorSummary": "Agencia digital full service de Bielorrusia: desarrollo web/e-commerce, SEO, Google/Yandex Ads, soporte, SMM, marketplaces, reputación e integraciones CRM/Bitrix. No es un operador exclusivo de leads/citas.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 659 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1964 palabras por página comercial recuperada. Muestras breves: “КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ БИЗНЕСА В ИНТЕРНЕТЕ В Минске” · “Разработка корпоративных сайтов и порталов в Минске” · “SEO-продвижение сайтов в Google и Яндекс в Минске”.",
+    "supportingHeadings": [
+      "КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ БИЗНЕСА В ИНТЕРНЕТЕ В Минске",
+      "Вам нужно решить одну из следующих задач?",
+      "ЗАКРЫВАЕМ 100% ЗАДАЧ ВАШЕГО БИЗНЕСА В ИНТЕРНЕТЕ",
+      "ЧТО МЫ ДЕЛАЕМ ДЛЯ ВАШЕГО БИЗНЕСА",
+      "Разработка сайтов",
+      "SEO-продвижение",
+      "GEO-продвижение на картах",
+      "Контекстная реклама",
+      "Таргетированная реклама",
+      "AI-агенты и чат-боты",
+      "Техподдержка и серверы",
+      "Корпоративная почта и домены",
+      "ПОЧЕМУ БИЗНЕС ДОВЕРЯЕТ НАМ РАБОТУ В ИНТЕРНЕТЕ?",
+      "Защита данных и стабильность",
+      "Фиксированная стоимость без сюрпризов",
+      "Один подрядчик вместо пяти",
+      "Реакция за 15 минут",
+      "Понятная отчётность без «воды»",
+      "Персональная команда на вашей стороне",
+      "КАК МЫ БУДЕМ РАБОТАТЬ НАД ВАШИМ ПРОЕКТОМ",
+      "В РЕЗУЛЬТАТЕ ВЫ ПОЛУЧИТЕ",
+      "Digital-отдел на аутсорсе — разработчики, маркетологи и администраторы работают на вас без найма в штат",
+      "Стабильный поток заявок из поиска, рекламы и карт — с прозрачной аналитикой до каждого рубля",
+      "AI-менеджер, который обрабатывает обращения клиентов 24/7 и заносит данные в вашу CRM",
+      "Персональный менеджер и техподдержка с реакцией за 15 минут — ваш сайт и серверы под защитой",
+      "ПОКА ВЫ ДУМАЕТЕ",
+      "Digital Агентство R9 — СЕРТИФИЦИРОВАННЫЙ ПАРТНЁР ВЕДУЩИХ РЕКЛАМНЫХ И АНАЛИТИЧЕСКИХ ПЛАТФОРМ",
+      "ИСТОРИИ УСПЕШНОГО СОТРУДНИЧЕСТВА",
+      "Бизнес-задача, с которой обратился клиент:",
+      "Что мы предприняли:"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "ПОЛУЧИТЬ КП",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://r9.by/",
+      "text": "ПОЛУЧИТЬ КП",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 47.25
+    },
+    "ctas": [
+      "ПОЛУЧИТЬ КП"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://r9.by/",
+        "index": 1,
+        "action": "https://r9.by/send",
+        "method": "POST",
+        "submitText": "ПОЛУЧИТЬ КП",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "ContactForm[phone_home]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactForm[site_url]",
+            "label": "Адрес сайта",
+            "placeholder": "https://",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactForm[company]",
+            "label": "Название компании",
+            "placeholder": "Название компании",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "ContactForm[source]",
+            "label": "Откуда узнали о нас",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "ContactForm[body]",
+            "label": "Ваш комментарий",
+            "placeholder": "Сообщение",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactForm[name]",
+            "label": "Контактное лицо*",
+            "placeholder": "Ваше имя",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactForm[email]",
+            "label": "E-mail",
+            "placeholder": "info@example.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactForm[subject]",
+            "label": null,
+            "placeholder": "+375 / +7 ...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Согласен с обработкой моих персональных данных в соответствии с политикой конфиденциальности.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 10 y 10 campos visibles, mínimo 3 obligatorio(s). Fricción alta en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Alta",
+      "minFields": 10,
+      "maxFields": 10,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia digital full service de Bielorrusia: desarrollo web/e-commerce, SEO, Google/Yandex Ads, soporte, SMM, marketplaces, reputación e integraciones CRM/Bitrix. No es un operador exclusivo de leads/citas.",
+    "audience": "Pymes y empresas de Bielorrusia/CIS que necesitan activos web, promoción y soporte tecnológico.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "Uptime 99.9% по SLA — ваш сайт не упадёт в самый неподходящий момент.Фиксированная стоимость без сюрпризовВсе условия, сроки и бюджет прописаны в договоре.",
+      "Все цифры фиксируются в договоре, доплат не будет.Через сколько появятся первые результаты?Контекстная реклама даёт заявки уже в первые дни после запуска.",
+      "Один договор, один ответственный, никаких перекладываний.Что будет, если сайт упадёт ночью или в выходные?Наш мониторинг работает круглосуточно."
+    ],
+    "urgency": [
+      "Ваш бизнес находят люди, которые ищут услугу прямо сейчас, рядом с вами.",
+      "Вы платите за переход клиента, который прямо сейчас ищет ваш товар или услугу.",
+      "Полный доступ к рекламным кабинетам — они ваши.ОСТАЛИСЬ ВОПРОСЫ?Форма онлайн-заказаЗаполните форму сейчас и наш специалист свяжется с вами для консультации и составит ваше персональное предложение.",
+      "РАССКАЖИТЕ О ВАШЕМ ПРОЕКТЕ* — поля, обязательные для заполненияАдрес сайтаНазвание компанииОткуда узнали о насВыберитеПо рекомендациямПоиск (Google, Яндекс)Социальные сетиДругоеВаш комментарий Контактное лицо*E-mailТелефон*Переместите ползунок вправо→ПОЛУЧИТЬ КПНачните сотрудничествос нами уже сейчас!"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Uptime 99.9% по SLA — ваш сайт не упадёт в самый неподходящий момент.Фиксированная стоимость без сюрпризовВсе условия, сроки и бюджет прописаны в договоре.",
+          "url": "https://r9.by/",
+          "pageTitle": "Комплексное продвижение бизнеса в интернете — Digital Агентство R9",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Все цифры фиксируются в договоре, доплат не будет.Через сколько появятся первые результаты?Контекстная реклама даёт заявки уже в первые дни после запуска.",
+          "url": "https://r9.by/",
+          "pageTitle": "Комплексное продвижение бизнеса в интернете — Digital Агентство R9",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Один договор, один ответственный, никаких перекладываний.Что будет, если сайт упадёт ночью или в выходные?Наш мониторинг работает круглосуточно.",
+          "url": "https://r9.by/",
+          "pageTitle": "Комплексное продвижение бизнеса в интернете — Digital Агентство R9",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://r9.by/",
+        "https://r9.by/corporate-website-development",
+        "https://r9.by/search-engine-optimization"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ БИЗНЕСА В ИНТЕРНЕТЕ В Минске",
+        "Разработка корпоративных сайтов и порталов в Минске",
+        "SEO-продвижение сайтов в Google и Яндекс в Минске",
+        "Технический аудит сайта в Минске"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "ПОЛУЧИТЬ КП"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://r9.by/ · 10 campos",
+        "https://r9.by/ · 10 campos",
+        "https://r9.by/corporate-website-development · 10 campos",
+        "https://r9.by/corporate-website-development · 10 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de tarifas/servicio → calculadora o brief → llamada inicial → especificación técnica → estimación por horas → firma de contrato con precio, alcance, plazos y hitos →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://r9.by/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://r9.by/corporate-website-development",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://r9.by/search-engine-optimization",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://r9.by/technical-website-audit",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://r9.by/prices-for-our-work",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://r9.by/local-geo-maps-promotion",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://r9.by/marketplaces",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://r9.by/rates",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://r9.by/smm",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://r9.by/yandex-direkt",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=r9.by",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=R9%20Digital%20Belarus&search_type=keyword_unordered",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.r9.by/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.r9.by/rates",
+      "label": "Fuente pública 14"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “ПОЛУЧИТЬ КП”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 10 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

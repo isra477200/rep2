@@ -1,0 +1,342 @@
+{
+  "id": "newleads",
+  "name": "NewLeads",
+  "reviewedAt": "2026-08-22T15:50:18.564Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Receba clientes prontos para fechar negócio.",
+    "heroObserved": true,
+    "priorSummary": "Sistema de leads exclusivos para servicios locales mediante búsquedas y llamadas de alta intención.",
+    "voice": "Tono cuantitativo, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, apoya la promesa en prueba social. Usa 21 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 378 palabras por página comercial recuperada. Muestras breves: “Receba clientes prontos para fechar negócio.”.",
+    "supportingHeadings": [
+      "Receba clientes prontos para fechar negócio.",
+      "Sem risco, sem investimento inicial.",
+      "Cansado de pagar por publicidade que não funciona?",
+      "Acelere o seu negócio: ative o motor de vendas inevitável.",
+      "Posicionamento",
+      "Chamada Direta",
+      "Você Cresce",
+      "Há Clientes à sua procura. Basta ativarmos o sistema.",
+      "Pague apenas pelos resultados.",
+      "Comissão de 10% a 20%",
+      "500€ a 2.000€ + IVA / mês",
+      "Teste 1 Semana Totalmente Grátis.",
+      "Pronto para encher a sua agenda?",
+      "Sem risco, seminvestimento inicial.",
+      "Acelere o seu negócio: ative o motor de vendas que vai tornar o seu crescimento inevitável.",
+      "Chamadas Diretas",
+      "Pague por Resultados",
+      "Já temos clientes à sua espera no Porto e Lisboa.",
+      "Comissão de 10%",
+      "500€ + IVA / mês / zona",
+      "Teste 1 Semana Totalmente Grátis"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "Quero a minha semana grátis"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://newleads.pt/",
+        "index": 1,
+        "action": "https://newleads.pt/",
+        "method": "GET",
+        "submitText": "Quero a minha semana grátis",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "João Santos",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": null,
+            "placeholder": "9xx xxx xxx",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Nome do seu Negócio",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Ex: Limpezas, Mudanças, Pinturas...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://newleads.pt/leads-limpeza.html",
+        "index": 1,
+        "action": "https://formsubmit.co/newleadslimpeza@newcompany.pt",
+        "method": "POST",
+        "submitText": "Quero a minha semana grátis",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Nome",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Telefone",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: company.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": [
+        "company"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Sistema de leads exclusivos para servicios locales mediante búsquedas y llamadas de alta intención.",
+    "audience": "Empresas portuguesas de servicios locales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "NL NewLeads Início Setores Limpezas BREVEMENTE Mudanças Pinturas Investimento 1 Semana Grátis Início SETORES DISPONÍVEIS Leads de Limpeza Investimento Solicitar Teste Grátis Domine o seu mercado local Receba clientes prontos para fechar negócio.",
+      "A maioria das agências de marketing cobra taxas mensais elevadas, independentemente de lhe trazerem clientes ou não.",
+      "Disponibilidade Há Clientes à sua procura.",
+      "Veja os clientes a entrar antes de investir um cêntimo."
+    ],
+    "objections": [],
+    "urgency": [
+      "Só paga se o orçamento for aceite Leads exclusivas Opção B 500€ + IVA / mês / zona Leads ilimitadas.",
+      "Leads ilimitadas Exclusividade na sua região Primeiro mês de teste gratuito Escolher Fixo Teste 1 Semana Totalmente Grátis."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Sem fidelização mínima Paga apenas sobre orçamentos ganhos Leads exclusivas Escolher Variável Mais Rentável Pro 500€ a 2.000€ + IVA / mês Transforme as suas leads num ativo de custo fixo.",
+          "url": "https://newleads.pt/",
+          "pageTitle": "New Leads | Geração de Leads Orgânicas",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "NL NewLeads Início Setores Limpezas BREVEMENTE Mudanças Pinturas Investimento 1 Semana Grátis Início SETORES DISPONÍVEIS Leads de Limpeza Investimento Solicitar Teste Grátis Domine o seu mercado local Receba clientes prontos para fechar negócio.",
+          "url": "https://newleads.pt/",
+          "pageTitle": "New Leads | Geração de Leads Orgânicas",
+          "pageCategory": "other"
+        },
+        {
+          "text": "A maioria das agências de marketing cobra taxas mensais elevadas, independentemente de lhe trazerem clientes ou não.",
+          "url": "https://newleads.pt/",
+          "pageTitle": "New Leads | Geração de Leads Orgânicas",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Disponibilidade Há Clientes à sua procura.",
+          "url": "https://newleads.pt/",
+          "pageTitle": "New Leads | Geração de Leads Orgânicas",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Veja os clientes a entrar antes de investir um cêntimo.",
+          "url": "https://newleads.pt/",
+          "pageTitle": "New Leads | Geração de Leads Orgânicas",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://newleads.pt/",
+        "https://newleads.pt/index.html",
+        "https://newleads.pt/leads-limpeza.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Receba clientes prontos para fechar negócio."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Quero a minha semana grátis"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://newleads.pt/ · 4 campos",
+        "https://newleads.pt/index.html · 4 campos",
+        "https://newleads.pt/leads-limpeza.html · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) La empresa solicita el periodo de prueba y define servicios, zona y modalidad. 2) NewLeads genera demanda de alta intención mediante búsquedas y llamadas locales. 3) Cualifica"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://newleads.pt/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://newleads.pt/index.html",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://newleads.pt/leads-limpeza.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=newleads.pt",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=NewLeads.pt",
+      "label": "Fuente pública 5"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,815 @@
+{
+  "id": "edge-connection",
+  "name": "Edge Connection",
+  "reviewedAt": "2026-08-22T15:50:17.624Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "テレアポ代行の株式会社エッジコネクションEdge Connection",
+    "heroObserved": true,
+    "priorSummary": "Telemarketing B2B con personal propio, lista de empresas construida por especialistas, guion iterado y soporte de mejora comercial más allá de la cita.",
+    "voice": "Revisión manual: autoridad, precisión, urgencia moderada, orgullo operativo, reducción de riesgo reputacional. empleados a jornada completa especialistas B2B equipo propio de listas sin coste fijo historial de veinte años",
+    "supportingHeadings": [
+      "テレアポ代行の株式会社エッジコネクションEdge Connection",
+      "テレアポ代行サービス",
+      "正社員の専任コールスタッフリスト作成専門スタッフを束ねるコンサルタントが、",
+      "まずは資料請求・料金のお見積もりをご依頼ください。",
+      "当社テレマーケティングプロジェクト担当スタッフの特長",
+      "創業時から一貫して、直接連絡可能な当社正社員のみですべての業務を行います。",
+      "当社テレアポサービス独自のリスト作成専門チーム",
+      "業界に先駆けた当社雇用正社員のみでの対応",
+      "高度なリスト作成専門チーム",
+      "成約につながる高品質アポ",
+      "全ての料金形態に対応",
+      "安心してお任せいただける当社サービスの特⾧",
+      "お客様の声",
+      "導入効果事例",
+      "当社について",
+      "よくあるご質問FAQ",
+      "ご検討を深めたい方へーお役立ち資料ー",
+      "資料請求・お問い合わせフォーム",
+      "営業・人事・財務課題 伴走型支援企業",
+      "Edge Connection",
+      "お問い合わせ",
+      "お問い合わせフォーム",
+      "FAQよくあるご質問",
+      "事例紹介",
+      "営業ノウハウコラム",
+      "『マーケトランク』に代表取締役社長 大村…",
+      "『C-NAPS』に代表取締役社長 大村康…",
+      "新着記事",
+      "カテゴリー",
+      "タグ"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "お問い合わせ",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://edge-connection.co.jp/lp_telappointment/",
+      "text": "お問い合わせ",
+      "href": "https://edge-connection.co.jp/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.5
+    },
+    "ctas": [
+      "見積もり",
+      "お問い合わせ",
+      "お問い合わせフォーム",
+      "お問い合わせ・資料請求",
+      "個人情報の取り扱いに同意して送信確認へ進む",
+      "個人情報の取り扱いに同意して確認画面に進む"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://edge-connection.co.jp/lp_telappointment/",
+        "index": 1,
+        "action": "https://edge-connection.co.jp/lp_telappointment/",
+        "method": "POST",
+        "submitText": "個人情報の取り扱いに同意して送信確認へ進む",
+        "visibleFieldCount": 12,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "フリガナ",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "お問い合わせ項目[]",
+            "label": "資料請求",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "会社名",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "企業サイトURL",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "所属部署",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "役職",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "氏名",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "電話番号",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "商品名・サービス名",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "お問い合わせ・ご質問など",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://edge-connection.co.jp/contact-us/",
+        "index": 1,
+        "action": "https://edge-connection.co.jp/contact-us/mailformpro/mailformpro.cgi",
+        "method": "POST",
+        "submitText": "個人情報の取り扱いに同意して確認画面に進む",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "お問い合わせ項目",
+            "label": "バリュー",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "当社を知ったきっかけ",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "会社名",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "所属部署",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "役職",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "氏名",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "電話番号",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "お問い合わせ内容",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "書籍のお届け希望",
+            "label": "ダミー",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "書籍送付先のご住所",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 11 y 12 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: website.",
+      "friction": "Alta",
+      "minFields": 11,
+      "maxFields": 12,
+      "qualification": [
+        "website"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Telemarketing B2B con personal propio, lista de empresas construida por especialistas, guion iterado y soporte de mejora comercial más allá de la cita.",
+    "audience": "Empresas B2B japonesas con capacidad para atender al menos 10 reuniones mensuales; captación nueva, reactivación y leads de MA.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "信頼の実績2007年創業 累計取引実績1880社2026年6月末時点 顧客満足度86% 正社員の専任コールスタッフリスト作成専門スタッフを束ねるコンサルタントが、 成果報酬金額や結果を最大化させるプランをご提案します。",
+      "お客様の声 組織コンサルティング 新規事業は「提案してみないと」分からない。営業代行で仮説検証を加速し、アポ獲得コストを1/3に。",
+      "お電話でのお問い合わせは03-6825-5900 お問い合わせフォーム FAQよくあるご質問 導入事例はどのような業種がありますか？"
+    ],
+    "objections": [
+      "プライバシーマーク取得企業 エッジコネクションコーポレートサイト よくあるご質問FAQ リストは自社で用意する必要がありますか？"
+    ],
+    "urgency": [
+      "日本ロジテム株式会社営業開発部 副部長 兼 営業開発課長 相川 洋介 様 導入効果事例 人材派遣業成約率22.3%（当社取得商談に対して）問い合わせしてきた企業に対し、電話段階で今すぐニーズがあるかどうか聞き込み、確度の高い商談に集中することで高成約率を達成 WEBサービス成約率21.2%（当社取得商談に対して）新規のリストに対してアポイントを獲得するとともに、営業資料のチェックや商談の進め方などを総合的にアドバイスすることで達成※別途見積もりあり LED販売・施工アポ率15.7%メリットを強調したトークスクリプトで高いアポ率を達成 コン…"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "信頼の実績2007年創業 累計取引実績1880社2026年6月末時点 顧客満足度86% 正社員の専任コールスタッフリスト作成専門スタッフを束ねるコンサルタントが、 成果報酬金額や結果を最大化させるプランをご提案します。",
+          "url": "https://edge-connection.co.jp/lp_telappointment/",
+          "pageTitle": "テレアポ代行サービス | 株式会社エッジコネクション",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "お客様の声 組織コンサルティング 新規事業は「提案してみないと」分からない。営業代行で仮説検証を加速し、アポ獲得コストを1/3に。",
+          "url": "https://edge-connection.co.jp/lp_telappointment/",
+          "pageTitle": "テレアポ代行サービス | 株式会社エッジコネクション",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "お電話でのお問い合わせは03-6825-5900 お問い合わせフォーム FAQよくあるご質問 導入事例はどのような業種がありますか？",
+          "url": "https://edge-connection.co.jp/case-study/",
+          "pageTitle": "事例紹介｜株式会社エッジコネクション",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "はい、事例ページからそのままお問い合わせいただけます。「自社の商材でも同じような成果は出るか」「この業界での実績はあるか」など、お気軽にご相談ください。初回のご相談は無料です。お電話（03-6825-5900）またはお問い合わせフォームからどうぞ。",
+          "url": "https://edge-connection.co.jp/case-study/",
+          "pageTitle": "事例紹介｜株式会社エッジコネクション",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "プライバシーマーク取得企業 エッジコネクションコーポレートサイト よくあるご質問FAQ リストは自社で用意する必要がありますか？",
+          "url": "https://edge-connection.co.jp/lp_telappointment/",
+          "pageTitle": "テレアポ代行サービス | 株式会社エッジコネクション",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Llamada en frío",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://edge-connection.co.jp/lp_telappointment/",
+        "https://edge-connection.co.jp/contact-us/",
+        "https://edge-connection.co.jp/case-study/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "テレアポ代行の株式会社エッジコネクションEdge Connection",
+        "Edge Connection"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "お問い合わせ・資料請求",
+        "個人情報の取り扱いに同意して送信確認へ進む",
+        "お問い合わせ",
+        "個人情報の取り扱いに同意して確認画面に進む",
+        "お問い合わせフォーム",
+        "見積もり"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://edge-connection.co.jp/lp_telappointment/ · 12 campos",
+        "https://edge-connection.co.jp/contact-us/ · 11 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing/casos → solicitud de documentación o presupuesto → diagnóstico de producto, tasa esperada y capacidad → elección de pago por cita/lista/hora → lista a medida → guion →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación [observado] → cualificación [inferido] → propuesta y cierre [no observable] → entrega [observado] → retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://edge-connection.co.jp/lp_telappointment/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://edge-connection.co.jp/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://edge-connection.co.jp/case-study/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://edge-connection.co.jp/consultant_column/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://edge-connection.co.jp/consultant_column/?p=4390",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://edge-connection.co.jp/consultant_column/?p=4371",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://edge-connection.co.jp/consultant_column/?p=4360",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://edge-connection.co.jp/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=edge-connection.co.jp",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/17427397907615696241",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/5125587349459817890",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR11995968228959453185?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/1184572620783650444/index.html",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR04882112449467121665?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16892306678051006586",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11297740986005996984",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6274710087569853661",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/7796705651755873852",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/12642760250883699735",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR09300317475474243585?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR12910237324553486337?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR16850733144184193025?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR00788828090313736193?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR14854651551544246273?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR10947113051790245889?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR08034338249654665217?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR04310307768130076673?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR08342772701722574849?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR17087069930169303041?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR14851373692633481217/creative/CR14386081021961437185?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “お問い合わせ”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 11 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Convertir telemarketing en un proceso controlado por especialistas, no en una actividad de call center indiferenciada.",
+      "positioning": "operador experto, cuantitativo y disciplinado",
+      "audience": "Empresas B2B con capacidad real para atender al menos diez citas mensuales.",
+      "voice": [
+        "autoridad",
+        "precisión",
+        "urgencia moderada",
+        "orgullo operativo",
+        "reducción de riesgo reputacional"
+      ],
+      "patterns": [
+        "empleados a jornada completa",
+        "especialistas B2B",
+        "equipo propio de listas",
+        "sin coste fijo",
+        "historial de veinte años"
+      ]
+    },
+    "cta": {
+      "primary": "Solicitar documentación o presupuesto",
+      "secondary": [
+        "consulta",
+        "teléfono",
+        "casos"
+      ],
+      "forms": [
+        {
+          "url": "https://edge-connection.co.jp/lp_telappointment/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "tipo de consulta",
+            "empresa",
+            "URL",
+            "departamento",
+            "cargo",
+            "nombre",
+            "teléfono",
+            "email",
+            "producto o servicio",
+            "mensaje"
+          ],
+          "fieldCount": 16,
+          "friction": "media-alta",
+          "submitted": false
+        },
+        {
+          "url": "https://edge-connection.co.jp/contact-us/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "categoría",
+            "origen",
+            "empresa",
+            "departamento",
+            "cargo",
+            "nombre",
+            "teléfono",
+            "email",
+            "mensaje"
+          ],
+          "fieldCount": 19,
+          "friction": "alta",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Landing, contenido corporativo y casos convierten la experiencia operativa en autoridad. — stage: descubrimiento — evidenceUrls: https://edge-connection.co.jp/lp_telappointment/ · https://edge-connection.co.jp/case-study/"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Precio unitario, capacidad mínima, cifras propias y casos reducen incertidumbre. — stage: consideración — evidenceUrls: https://edge-connection.co.jp/lp_telappointment/"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario de documentación, presupuesto o consulta; teléfono como alternativa. — stage: captación — evidenceUrls: https://edge-connection.co.jp/contact-us/"
+      },
+      {
+        "stage": "cualificación",
+        "status": "inferido",
+        "detail": "Los campos de empresa, rol, URL y servicio permiten una cualificación inicial; el procedimiento posterior no es público. — stage: cualificación — evidenceUrls: https://edge-connection.co.jp/lp_telappointment/"
+      },
+      {
+        "stage": "propuesta y cierre",
+        "status": "no observable",
+        "detail": "No se observaron agenda, propuesta, checkout ni firma pública. — stage: propuesta y cierre — evidenceUrls:"
+      },
+      {
+        "stage": "entrega",
+        "status": "observado",
+        "detail": "Lista, guion, llamadas, citas, seguimiento del resultado y optimización. — stage: entrega — evidenceUrls: https://edge-connection.co.jp/case-study/?p=108 · https://edge-connection.co.jp/case-study/?p=137"
+      },
+      {
+        "stage": "retención",
+        "status": "inferido",
+        "detail": "La retroalimentación y mejora continua sugieren ciclos recurrentes; condiciones de renovación no públicas. — stage: retención — evidenceUrls: https://edge-connection.co.jp/case-study/?p=108"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "currency: JPY — amount: 15000 — unit: por cita, más impuestos — caveat: La tarifa final depende de la tasa de cita prevista; el filtro de capacidad implica al menos ¥150.000 mensuales si se alcanzan diez citas."
+      ],
+      "contract": [
+        "Duración mínima y salida contractual no expuestas en las páginas revisadas."
+      ],
+      "guarantee": [
+        "No se localizaron reglas públicas completas de validez, no-show, sustitución, cancelación o reembolso."
+      ]
+    },
+    "proof": [
+      "claims: 1.880 empresas atendidas · 86% de satisfacción declarado a junio de 2026 · casos con tasas de cierre de 22,3% y 21,2% · casos con tasas de cita de 15,7% y 25,7% — quality: media — caveat: Las métricas y casos son autopublicados; no se observó verificación independiente ni metodología completa de muestra."
+    ],
+    "objections": [
+      "objection: El telemarketing puede perjudicar la marca. — answer: Operadores propios y calidad de comunicación; un caso aborda expresamente ese temor.",
+      "objection: La lista o el guion pueden ser deficientes. — answer: Equipo especializado de listas y creación de guion incluidos.",
+      "objection: No tenemos capacidad para atender el volumen. — answer: Filtro explícito de al menos diez citas mensuales.",
+      "objection: ¿Qué ocurre con una cita no válida o ausente? — answer: No hay regla pública suficiente."
+    ],
+    "technology": [
+      "WordPress — basis: señales del HTML público",
+      "Google Tag Manager — basis: etiqueta pública",
+      "Google Analytics — basis: etiqueta pública",
+      "CRM — basis: no se identificó marca o integración pública"
+    ],
+    "contradictions": [
+      "La promesa de pago por cita no viene acompañada de una definición pública de cita válida, reposición o no-show. — severity: alta",
+      "La expresión sin coste fijo puede ocultar para una lectura rápida un gasto mínimo implícito ligado a diez citas. — severity: media",
+      "La prueba cuantitativa carece de fuente independiente y denominadores homogéneos. — severity: media"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "Auditoría de páginas públicas sin envío de formularios.",
+      "No se accedió a propuesta, llamada comercial, CRM, contrato privado ni campañas de pago.",
+      "Los resultados son declaraciones del proveedor y pueden cambiar."
+    ],
+    "lessons": {
+      "copy": [
+        "filtro de capacidad antes de aceptar al cliente",
+        "prueba de calidad humana del operador",
+        "casos con denominadores y secuencia operativa"
+      ],
+      "adapt": [
+        "precio por resultado con definición contractual de cita asistida",
+        "casos comparables por sector, muestra y periodo",
+        "Mostrar un calculador de capacidad: citas potenciales, capacidad de respuesta y coste esperado antes del formulario.",
+        "La ventaja no está en prometer más llamadas, sino en convertir calidad del operador, lista y capacidad del cliente en un sistema verificable."
+      ],
+      "avoid": [
+        "usar sin coste fijo sin exponer el gasto mínimo esperado",
+        "publicar tasas sin metodología"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://edge-connection.co.jp/lp_telappointment/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://edge-connection.co.jp/contact-us/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://edge-connection.co.jp/case-study/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://edge-connection.co.jp/case-study/?p=108",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://edge-connection.co.jp/case-study/?p=137",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://edge-connection.co.jp/case-study/?p=509",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://edge-connection.co.jp/case-study/?p=432",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

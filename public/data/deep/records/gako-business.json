@@ -1,0 +1,448 @@
+{
+  "id": "gako-business",
+  "name": "Gako Business",
+  "reviewedAt": "2026-08-22T15:50:19.936Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "უფასო ონლაინ-ჩანაწერი და სერვისული ბიზნესის მართვის სისტემა",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 393 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1190 palabras por página comercial recuperada. Muestras breves: “უფასო ონლაინ-ჩანაწერი და სერვისული ბიზნესის მართვის სისტემა” · “Free online booking and service business management system” · “Бесплатная онлайн-запись и система управления сервисным бизнесом”.",
+    "supportingHeadings": [
+      "უფასო ონლაინ-ჩანაწერი და სერვისული ბიზნესის მართვის სისტემა",
+      "ჩართეთ ონლაინ-ჩანაწერი თქვენს სერვისებზე",
+      "ავტომატური გამოქვეყნება Gako-ს კატალოგში",
+      "შესაფერისია ნებისმიერი სერვისული სფეროს კომპანიებისა და სპეციალისტებისთვის",
+      "სილამაზე",
+      "ჯანმრთელობა",
+      "ავტო",
+      "სპორტი",
+      "განათლება",
+      "ქირა",
+      "ვერ იპოვეთ თქვენი ბიზნესი?",
+      "ინტეგრაციები",
+      "თანამშრომლობა და ჩანაწერის ჟურნალში გრაფიკის მართვა",
+      "მართეთ დაგვიანებები და არამოსვლები",
+      "ივლისი 2026",
+      "აანალიზეთ შედეგები",
+      "გაზარდეთ კლიენტების დაბრუნება",
+      "დააბრუნეთ დაკარგული კლიენტები",
+      "ფუნქციები",
+      "ონლაინ-ჩანაწერი",
+      "გრაფიკი",
+      "სტატისტიკა",
+      "ლოიალობა",
+      "შეტყობინებები",
+      "პრომოუშენი",
+      "კლიენტთა ბაზა",
+      "ხელფასი",
+      "შემოსავალი და ხარჯი",
+      "ბრენდირებული აპი",
+      "CRM-ზე მეტი"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Try for FREE",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://gako.ge/business/",
+      "text": "Try for FREE",
+      "href": "https://business.gako.ge/start?lang=en",
+      "element": "a",
+      "kind": "conversion",
+      "score": 202
+    },
+    "ctas": [
+      "Download",
+      "Try for FREE",
+      "Start to use",
+      "Download Gako on the App Store",
+      "სცადეთ უფასოდ",
+      "დაყენება 10 წუთში",
+      "გამოყენების დაწყება",
+      "Get help with setup",
+      "Начать использовать",
+      "Set up in 10 minutes",
+      "Настроить за 10 минут",
+      "Попробовать бесплатно",
+      "მიიღეთ დახმარება დაყენებაში",
+      "Получить помощь с настройкой"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://gako.ge/business/ka/",
+        "index": 1,
+        "action": "https://gako.ge/business/ka/",
+        "method": "GET",
+        "submitText": "მიიღეთ დახმარება დაყენებაში",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "input",
+            "name": "business_name",
+            "label": null,
+            "placeholder": "ბიზნესის სახელი",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "city",
+            "label": null,
+            "placeholder": "ქალაქი",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "niche",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "instagram",
+            "label": null,
+            "placeholder": "Instagram / საიტი",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "+995 (5XX)-XX-XX-XX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telegram_username",
+            "label": "Telegram (არასავალდებულო)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": null,
+            "placeholder": "კომენტარი (არასავალდებულო)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://gako.ge/business/",
+        "index": 1,
+        "action": "https://gako.ge/business/",
+        "method": "GET",
+        "submitText": "Get help with setup",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "input",
+            "name": "business_name",
+            "label": null,
+            "placeholder": "Business name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "city",
+            "label": null,
+            "placeholder": "City",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "niche",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "instagram",
+            "label": null,
+            "placeholder": "Instagram / website",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "+995 (5XX)-XX-XX-XX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telegram_username",
+            "label": "Telegram (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": null,
+            "placeholder": "Comment (optional)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://gako.ge/business/ru/",
+        "index": 1,
+        "action": "https://gako.ge/business/ru/",
+        "method": "GET",
+        "submitText": "Получить помощь с настройкой",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "input",
+            "name": "business_name",
+            "label": null,
+            "placeholder": "Название бизнеса",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "city",
+            "label": null,
+            "placeholder": "Город",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "niche",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "instagram",
+            "label": null,
+            "placeholder": "Instagram / сайт",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "+995 (5XX)-XX-XX-XX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telegram_username",
+            "label": "Telegram (необязательно)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": null,
+            "placeholder": "Комментарий (необязательно)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: city.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": [
+        "city"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "People are now more often downloading mobile apps as it is convenient for them to book online.EElizabeth SmithBeauty salon \"Etalon\", TbilisiAs soon as we opened, we started working in Gako Business."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://gako.ge/business/ka/",
+        "https://gako.ge/business/",
+        "https://gako.ge/business/ru/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "უფასო ონლაინ-ჩანაწერი და სერვისული ბიზნესის მართვის სისტემა",
+        "Free online booking and service business management system",
+        "Бесплатная онлайн-запись и система управления сервисным бизнесом"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "დაყენება 10 წუთში",
+        "Download Gako on the App Store",
+        "სცადეთ უფასოდ",
+        "გამოყენების დაწყება",
+        "მიიღეთ დახმარება დაყენებაში",
+        "Set up in 10 minutes",
+        "Try for FREE",
+        "Download"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://gako.ge/business/ka/ · 7 campos",
+        "https://gako.ge/business/ · 7 campos",
+        "https://gako.ge/business/ru/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://gako.ge/business/ka/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://gako.ge/business/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://gako.ge/business/ru/",
+      "label": "Fuente pública 3"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://gako.ge/apk/gako-business.apk: Contenido no textual: application/vnd.android.package-archive",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Try for FREE”, manteniendo una sola ruta dominante por landing.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

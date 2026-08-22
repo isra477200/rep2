@@ -1,0 +1,598 @@
+{
+  "id": "leadexpertise",
+  "name": "LeadExpertise",
+  "reviewedAt": "2026-08-22T15:50:17.731Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "WIL JE NIEUWE KLANTEN UIT GOOGLE OF META ADS?",
+    "heroObserved": true,
+    "priorSummary": "Sistema gestionado para prestadores locales: investigación de mercado, landing, Google/Meta Ads, tracking, CRM, SMS/email, primera respuesta IA y flujo predecible de leads; resultado acordado o continúan trabajando gratis.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 112 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 774 palabras por página comercial recuperada. Muestras breves: “WIL JE NIEUWE KLANTEN UIT GOOGLE OF META ADS?” · “Heb je geen tijd, zin of kennis in marketing?” · “Van kennismaking tot constante stroom aan klanten”.",
+    "supportingHeadings": [
+      "WIL JE NIEUWE KLANTEN UIT GOOGLE OF META ADS?",
+      "Wat mensen zeggen",
+      "Krijg je grijze haren van marketing?",
+      "Heb je geen energie, zin of tijd om het zelf te doen?",
+      "Bang dat uitbesteden geld kost zonder resultaat?",
+      "Heb je geen tijd om leads op te volgen?",
+      "Een bewezen systeem voor structurele groei in klanten",
+      "Marktonderzoek",
+      "Groeistrategie",
+      "Landingspagina's",
+      "E-mail & SMS Automatisering",
+      "Advertenties & Creatives",
+      "Conversie Optimalisatie (CRO)",
+      "Alles wat je nodig hebt voor groei",
+      "Een snel, simpel en stressvrij proces",
+      "Klaar voor de volgende stap?",
+      "Meer dan alleen een marketingbureau.",
+      "Hoe wij ons onderscheiden",
+      "Geen mooie praatjes, maar cijfers",
+      "9 Redenen waarom bedrijven met ons groeien",
+      "Helder 90-Dagen Plan",
+      "Proactieve Groei & Kansen",
+      "Ervaren Business Builders",
+      "Geen Wurgcontracten",
+      "Volledige Transparantie",
+      "Resultaatverantwoordelijkheid",
+      "Een Bewezen Systeem",
+      "Bouw je Voorsprong",
+      "Bonus: Kennis & Training",
+      "Veelgestelde vragen"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Volgende stap",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.leadexpertise.nl/",
+      "text": "Volgende stap",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 46.75
+    },
+    "ctas": [
+      "Volgende stap",
+      "Boek vrijblijvend strategiegesprek"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.leadexpertise.nl/",
+        "index": 1,
+        "action": "https://www.leadexpertise.nl/",
+        "method": "GET",
+        "submitText": "Volgende stap",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "select",
+            "name": null,
+            "label": "Hoeveel omzet levert een nieuwe klant je gemiddeld op?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Wat mag één nieuwe klant jou maximaal kosten in advertenties?",
+            "placeholder": "Bijv. € 50",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Wat is je maandelijks budget voor advertenties?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.leadexpertise.nl/reviews",
+        "index": 1,
+        "action": "https://www.leadexpertise.nl/reviews",
+        "method": "GET",
+        "submitText": "Boek vrijblijvend strategiegesprek",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Naam",
+            "placeholder": "Je naam",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "E-mail",
+            "placeholder": "naam@bedrijf.nl",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Telefoonnummer",
+            "placeholder": "06 12345678",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "Wat is de URL van je website?",
+            "placeholder": "www.jouwbedrijf.nl",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Wat is je maandelijks budget voor advertenties?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.leadexpertise.nl/werkwijze",
+        "index": 1,
+        "action": "https://www.leadexpertise.nl/werkwijze",
+        "method": "GET",
+        "submitText": "Boek vrijblijvend strategiegesprek",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Naam",
+            "placeholder": "Je naam",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "E-mail",
+            "placeholder": "naam@bedrijf.nl",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Telefoonnummer",
+            "placeholder": "06 12345678",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "Website URL",
+            "placeholder": "www.jouwbedrijf.nl",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.leadexpertise.nl/over-ons",
+        "index": 1,
+        "action": "https://www.leadexpertise.nl/over-ons",
+        "method": "GET",
+        "submitText": "Boek vrijblijvend strategiegesprek",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Naam",
+            "placeholder": "Je naam",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "E-mail",
+            "placeholder": "naam@bedrijf.nl",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Telefoonnummer",
+            "placeholder": "06 12345678",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "Wat is de URL van je website?",
+            "placeholder": "www.jouwbedrijf.nl",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Hoeveel omzet levert een nieuwe klant je gemiddeld op?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Wat mag één nieuwe klant jou maximaal kosten in advertenties?",
+            "placeholder": "Bijv. € 50",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Wat is je maandelijks budget voor advertenties?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 3 y 7 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Wat is je maandelijks budget voor advertenties?, Wat is de URL van je website?, Website URL.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 7,
+      "qualification": [
+        "Wat is je maandelijks budget voor advertenties?",
+        "Wat is de URL van je website?",
+        "Website URL"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Google Analytics",
+      "GoHighLevel"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Sistema gestionado para prestadores locales: investigación de mercado, landing, Google/Meta Ads, tracking, CRM, SMS/email, primera respuesta IA y flujo predecible de leads; resultado acordado o continúan trabajando gratis.",
+    "audience": "Servicios locales neerlandeses: construcción/instalación, techadores, pintores, inmobiliarias, salud, consultoría y negocios regionales de alto valor.",
+    "prices": [
+      "Nu hebben we de kraan zelf in handen.\"Makelaardij 't GooiRegio AmsterdamWoningverkoopNieuwe listings+ 12/mndKosten per lead€ 42,00ROI12.4x\"De leads die binnenkomen zijn van veel hogere kwaliteit dan via Funda of andere kanalen.\"Schildersbedrijf P.Regio RotterdamSchilderwerkOfferte aanvragen+ 35/mndKoste…"
+    ],
+    "guarantee": [
+      "Als jouw klanten een hoge waarde hebben en lokaal/regionaal zoeken, werkt ons systeem gegarandeerd.Wat als ik geen resultaat behaal?Wij werken met een resultaatgarantie.",
+      "Wij nemen het risico, jij plukt de vruchten.Maandelijks opzegbaarExclusiviteit per regioResultaatgarantieKlik om de agenda te ladenOf scroll verder om automatisch te laden100% vrijblijvend.",
+      "…enheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieWIL JE NIEUWE KLANTEN UIT GOOGLE OF META ADS?Krijg een marketingmachine van wereldklasse…",
+      "…enheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieSuccesverhalenResultaten zeggen meer dan duizend woordenOntdek hoe wij lokale ondernemer…"
+    ],
+    "proof": [
+      "Anders werken we gratis door.Bekijk aanbodWinstgevendheids quizWat mensen zeggenMeer testimonialsHerken je dit?Krijg je grijze haren van marketing?Heb je geen tijd, zin of kennis om je marketing te doen?",
+      "Sam en team bedankt!\"ResultaatCase StudiesHoe wij bedrijven transformerenBekijk de strategieën en resultaten van onze klanten in detail.Omzetstijging+ €45.000/mndLeads85+Google AdsDakdekkerDakbeheer Nederland: Van lege agenda naar wachtlijstDe uitdaging: Dakbeheer Nederland was volledig afhankelijk van dure leadplatformen zoals Werkspot.",
+      "Binnen 24 uur reactie.Wij helpen lokale dienstverleners domineren in hun regio met meetbare marketingcampagnes die zichzelf terugverdienen.DienstenGoogle AdsFacebook & Instagram AdsConversie OptimalisatieBedrijfOver onsCasestudiesReviewsKlaar voor groei?Ontdek hoeveel leads jij misloopt.Gratis Groei Scan© 2024 LeadExpertise.",
+      "Geen loze beloftes, maar harde cijfers en tevreden klanten die hun ervaring delen.4.9/5 op GoogleWat klanten zeggenRecente reviews geverifieerd via GoogleBekijk alle reviews op GoogleMark de Jong2 weken geleden\"Sam en zijn team hebben ons dakdekkersbedrijf echt op de kaart gezet.",
+      "…nGoogle & METAAI SEOAI ChatbotsAI AutomatiseringGratis WinstgevenheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieWIL JE NIEUWE KLANTEN U…",
+      "…nGoogle & METAAI SEOAI ChatbotsAI AutomatiseringGratis WinstgevenheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieSuccesverhalenResultate…"
+    ],
+    "objections": [
+      "Vanaf dat moment kunnen de eerste leads binnen 24 uur binnenkomen.Zit ik vast aan een langetermijncontract?Nee, wij geloven in onze resultaten.",
+      "Krijg toegang tot een team van senior specialisten die meebouwen aan jouw succes.Geen WurgcontractenZijn we gek?",
+      "We willen dat je klant blijft omdat je groeit, niet omdat je vastzit aan een contract.Krijg ik exclusiviteit in mijn regio?Ja, om belangenverstrengeling te voorkomen werken wij vaak met exclusiviteit per regio voor specifieke niches."
+    ],
+    "urgency": [
+      "Sam en team bedankt!\"ResultaatCase StudiesHoe wij bedrijven transformerenBekijk de strategieën en resultaten van onze klanten in detail.Omzetstijging+ €45.000/mndLeads85+Google AdsDakdekkerDakbeheer Nederland: Van lege agenda naar wachtlijstDe uitdaging: Dakbeheer Nederland was volledig afhankelijk van dure leadplatformen zoals Werkspot.",
+      "Waar we eerst afhankelijk waren van dure leads via werkspot, krijgen we nu directe aanvragen via onze eigen site."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Nu hebben we de kraan zelf in handen.\"Makelaardij 't GooiRegio AmsterdamWoningverkoopNieuwe listings+ 12/mndKosten per lead€ 42,00ROI12.4x\"De leads die binnenkomen zijn van veel hogere kwaliteit dan via Funda of andere kanalen.\"Schildersbedrijf P.Regio RotterdamSchilderwerkOfferte aanvragen+ 35/mndKoste…",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Wij adviseren te starten met minimaal €500 per maand om genoeg data te verzamelen en resultaat te boeken.",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "…enheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieWIL JE NIEUWE KLANTEN UIT GOOGLE OF META ADS?Krijg een marketingmachine van wereldklasse…",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Als jouw klanten een hoge waarde hebben en lokaal/regionaal zoeken, werkt ons systeem gegarandeerd.Wat als ik geen resultaat behaal?Wij werken met een resultaatgarantie.",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Wij nemen het risico, jij plukt de vruchten.Maandelijks opzegbaarExclusiviteit per regioResultaatgarantieKlik om de agenda te ladenOf scroll verder om automatisch te laden100% vrijblijvend.",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…enheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieSuccesverhalenResultaten zeggen meer dan duizend woordenOntdek hoe wij lokale ondernemer…",
+          "url": "https://www.leadexpertise.nl/reviews",
+          "pageTitle": "Reviews & Case Studies | Klantresultaten van LeadExpertise | LeadExpertise",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Wij nemen het risico, jij plukt de vruchten.Maandelijks opzegbaarExclusiviteit per regioResultaatgarantieKlik om de agenda te ladenOf scroll verder om automatisch te laden100% vrijblijvend.",
+          "url": "https://www.leadexpertise.nl/reviews",
+          "pageTitle": "Reviews & Case Studies | Klantresultaten van LeadExpertise | LeadExpertise",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…nGoogle & METAAI SEOAI ChatbotsAI AutomatiseringGratis WinstgevenheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieWIL JE NIEUWE KLANTEN U…",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Anders werken we gratis door.Bekijk aanbodWinstgevendheids quizWat mensen zeggenMeer testimonialsHerken je dit?Krijg je grijze haren van marketing?Heb je geen tijd, zin of kennis om je marketing te doen?",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Binnen 24 uur reactie.Wij helpen lokale dienstverleners domineren in hun regio met meetbare marketingcampagnes die zichzelf terugverdienen.DienstenGoogle AdsFacebook & Instagram AdsConversie OptimalisatieBedrijfOver onsCasestudiesReviewsKlaar voor groei?Ontdek hoeveel leads jij misloopt.Gratis Groei Scan© 2024 LeadExpertise.",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…nGoogle & METAAI SEOAI ChatbotsAI AutomatiseringGratis WinstgevenheidsquizVoor wie?OverzichtDakdekkersMakelaarsWerkwijzeReviews & casestudiesOver onsBlogKom in contact4.6TevredenheidsgarantieKom in contactVertrouwd door 100+ bedrijven|4.6/5 Klantbeoordeling|Met tevredenheidsgarantieSuccesverhalenResultate…",
+          "url": "https://www.leadexpertise.nl/reviews",
+          "pageTitle": "Reviews & Case Studies | Klantresultaten van LeadExpertise | LeadExpertise",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Geen loze beloftes, maar harde cijfers en tevreden klanten die hun ervaring delen.4.9/5 op GoogleWat klanten zeggenRecente reviews geverifieerd via GoogleBekijk alle reviews op GoogleMark de Jong2 weken geleden\"Sam en zijn team hebben ons dakdekkersbedrijf echt op de kaart gezet.",
+          "url": "https://www.leadexpertise.nl/reviews",
+          "pageTitle": "Reviews & Case Studies | Klantresultaten van LeadExpertise | LeadExpertise",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Sam en team bedankt!\"ResultaatCase StudiesHoe wij bedrijven transformerenBekijk de strategieën en resultaten van onze klanten in detail.Omzetstijging+ €45.000/mndLeads85+Google AdsDakdekkerDakbeheer Nederland: Van lege agenda naar wachtlijstDe uitdaging: Dakbeheer Nederland was volledig afhankelijk van dure leadplatformen zoals Werkspot.",
+          "url": "https://www.leadexpertise.nl/reviews",
+          "pageTitle": "Reviews & Case Studies | Klantresultaten van LeadExpertise | LeadExpertise",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Binnen 24 uur reactie.Wij helpen lokale dienstverleners domineren in hun regio met meetbare marketingcampagnes die zichzelf terugverdienen.DienstenGoogle AdsFacebook & Instagram AdsConversie OptimalisatieBedrijfOver onsCasestudiesReviewsKlaar voor groei?Ontdek hoeveel leads jij misloopt.Gratis Groei Scan© 2024 LeadExpertise.",
+          "url": "https://www.leadexpertise.nl/reviews",
+          "pageTitle": "Reviews & Case Studies | Klantresultaten van LeadExpertise | LeadExpertise",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Krijg toegang tot een team van senior specialisten die meebouwen aan jouw succes.Geen WurgcontractenZijn we gek?",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Vanaf dat moment kunnen de eerste leads binnen 24 uur binnenkomen.Zit ik vast aan een langetermijncontract?Nee, wij geloven in onze resultaten.",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We willen dat je klant blijft omdat je groeit, niet omdat je vastzit aan een contract.Krijg ik exclusiviteit in mijn regio?Ja, om belangenverstrengeling te voorkomen werken wij vaak met exclusiviteit per regio voor specifieke niches.",
+          "url": "https://www.leadexpertise.nl/",
+          "pageTitle": "LeadExpertise | Google & META Ads Bureau voor Lokale Dienstverleners",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.leadexpertise.nl/",
+        "https://www.leadexpertise.nl/reviews",
+        "https://www.leadexpertise.nl/voor-wie"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "WIL JE NIEUWE KLANTEN UIT GOOGLE OF META ADS?",
+        "Heb je geen tijd, zin of kennis in marketing?",
+        "Van kennismaking tot constante stroom aan klanten",
+        "Van frustratie naar formule."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Volgende stap",
+        "Boek vrijblijvend strategiegesprek"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.leadexpertise.nl/ · 3 campos",
+        "https://www.leadexpertise.nl/reviews · 5 campos",
+        "https://www.leadexpertise.nl/werkwijze · 4 campos",
+        "https://www.leadexpertise.nl/over-ons · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Quiz/consulta gratuita → análisis de posición, competencia, cliente ideal, región y keywords → blueprint estratégico → construcción de landing, Google/Meta, creatividades y tracking → go-live en 5–10 días"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.leadexpertise.nl/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.leadexpertise.nl/reviews",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.leadexpertise.nl/voor-wie",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.leadexpertise.nl/werkwijze",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.leadexpertise.nl/over-ons",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=leadexpertise.nl",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=NL&q=LeadExpertise&search_type=keyword_unordered",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Volgende stap”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Google Analytics, GoHighLevel) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

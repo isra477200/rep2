@@ -1,0 +1,636 @@
+{
+  "id": "multiacustica",
+  "name": "Multiacústica",
+  "reviewedAt": "2026-08-22T15:50:18.591Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Encuentra tu centro auditivo Multiacústica más cercano",
+    "heroObserved": true,
+    "priorSummary": "Red española de más de 500 centros auditivos asociados: buscador geográfico, reserva de cita y acompañamiento hasta evaluación auditiva/selección de audífono.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 1213 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1941 palabras por página comercial recuperada. Muestras breves: “Encuentra tu centro auditivo Multiacústica más cercano” · “¿Cuánto cuesta un audífono?” · “¿Necesitas accesorios y ayudas auditivas?”.",
+    "supportingHeadings": [
+      "Encuentra tu centro auditivo Multiacústica más cercano",
+      "¿Cuánto cuesta un audífono?",
+      "Media de precios de los audífonos",
+      "Rango de precios de los audífonos en función de la gama elegida",
+      "Rango de precios de los audífonos en función del tipo de audífonos",
+      "¿Cuánto cuesta un audífono para sordera? En Multiacústica tenemos los mejores precios",
+      "Factores que afectan a los precios de los audífonos para la sordera",
+      "¿Qué tipos de audífonos existen?",
+      "Quiénes somos",
+      "Nacimos para cuidar la audición de las personas",
+      "Nuestra historia, más de 25 años contigo",
+      "Una red de centros auditivos independientes con un mismo propósito",
+      "Personas antes que resultados",
+      "Formación continua y criterio profesional",
+      "Innovación al servicio de tu audición",
+      "Nuestro compromiso con tu salud auditiva",
+      "Talleres sobre salud auditiva MA",
+      "Suscríbete a la newsletter de Multiacústica",
+      "Encuentra tu centro auditivo Multiacústica y reserva tu cita",
+      "Nuestros audioprotesistas te asesorarán para ofrecerte la mejor solución a tu caso",
+      "Más de 500 centros",
+      "Repartidos por toda España",
+      "¿Necesitas accesorios y ayudas auditivas?",
+      "Accesorios para audífonos",
+      "Ayudas auditivas",
+      "Reserva tu Prueba Auditiva Gratis",
+      "Más de 130",
+      "+ 20 mil",
+      "30 días de garantía",
+      "Gratis"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Reserva tu Revisión Auditiva GRATIS",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://multiacustica.com/prueba-auditiva-gratis/",
+      "text": "Reserva tu Revisión Auditiva GRATIS",
+      "href": "https://multiacustica.com/prueba-auditiva-gratis/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 216.25
+    },
+    "ctas": [
+      "Reserva tu Revisión Auditiva GRATIS",
+      "Reserva tu cita",
+      "Enviar",
+      "Confirmar"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://multiacustica.com/centros-auditivos/",
+        "index": 2,
+        "action": "https://multiacustica.com/centros-auditivos/",
+        "method": "POST",
+        "submitText": "Confirmar",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "centro",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "apellido",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telefono",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "correo",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zipcode",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "legales",
+            "label": "He leído y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "answer-0",
+            "label": "Explique brevemente el motivo de su visita",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "answer-1",
+            "label": "Detalle posibles antecedentes familiares",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://multiacustica.com/centros-auditivos/",
+        "index": 5,
+        "action": "https://multiacustica.com/centros-auditivos/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-tel",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-zipcode",
+            "label": "Código postal",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance",
+            "label": "Acepto recibir comunicaciones por parte de Multiacúsutica sobre productos y servicios. Política",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://multiacustica.com/prueba-auditiva-gratis/",
+        "index": 1,
+        "action": "https://multiacustica.com/prueba-auditiva-gratis/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_018af7c]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_8b4752d]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_1d513da]",
+            "label": "Teléfono",
+            "placeholder": "Telefono",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 4 y 9 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Acepto recibir comunicaciones por parte de Multiacúsutica sobre productos y servicios. Política.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 9,
+      "qualification": [
+        "Acepto recibir comunicaciones por parte de Multiacúsutica sobre productos y servicios. Política"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Tidio",
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Red española de más de 500 centros auditivos asociados: buscador geográfico, reserva de cita y acompañamiento hasta evaluación auditiva/selección de audífono.",
+    "audience": "Consumidores con pérdida auditiva y centros auditivos/audioprotesistas asociados en España.",
+    "prices": [
+      "VER TIPOS DE AUDÍFONOS Rango de precios de los audífonos en función de la gama elegida Gama Alta: Desde 2500 € Si valoras lo último en tecnología y comodidad, los audífonos de gama alta podrían ser para ti.",
+      "Además de por su capacidad para reconocer y resaltar el habla, lo que los hace ideales para situaciones sociales y comunicativas.Gama Baja: Entre 900 € y 1.800 € Para aquellos que buscan una solución más asequible, los audífonos de gama baja pueden ser la opción",
+      "La coordinación entre ambos audífonos para ofrecer una experiencia auditiva mejorada, ideal para disfrutar de películas y música con una calidad de sonido excepcional.Gama Media: Entre 1.800 € y 2.500 € Los audífonos de gama media ofrecen una excelente relación calidad-precio.",
+      "Rango de precios de los audífonos en función del tipo de audífonos Audífonos Invisibles (CIC): Desde 900€ hasta 3.000€.",
+      "Aunque su precio puede variar, su diseño casi invisible los convierte en una opción popular para aquellos que buscan una solución estética.Audífonos Intracanal (ITC): Entre 900€ y 3.000€.",
+      "Su rango de precios varía dependiendo de las características y la tecnología incluida.Audífonos BTE (Behind-the-Ear): Entre 900€ y 3.000€."
+    ],
+    "guarantee": [
+      "04 Mejor servicio garantizado en audífonos.",
+      "El servicio de máxima garantía y calidad está asegurado en cada uno de nuestros centros colaboradores con los que trabajamos ya que Multiacústica es una compañía con amplia trayectoria y profesionalidad en el sector de la audiología.",
+      "Confianza, profesionalidad y garantía nos hacen ser referentes y líderes en el sector de audífonos."
+    ],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Reservar cita ahora 03 ¿Por qué acudir a un centro Multiacústica?",
+      "Get Pasword Login Now Encuentra tu centro auditivo Nombre * Correo electrónico * Teléfono Código postal Acepto recibir comunicaciones por parte de Multiacúsutica sobre productos y servicios.",
+      "Get Pasword Login Now ¿Quieres más información?",
+      "Porque cuidar tu audición hoy también significa estar preparados para el mañana.",
+      "La tecnología en audífonos avanza como la de cualquier dispositivo electrónico por lo que a día de hoy existen todo tipo de audífonos: audífonos inalámbricos, audífonos baratos, audífonos con Bluetooth, audífonos recargables, audífonos digitales, audífonos pequeños, audífonos retroariculares, audífonos sin pilas y audífonos intracanales."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "VER TIPOS DE AUDÍFONOS Rango de precios de los audífonos en función de la gama elegida Gama Alta: Desde 2500 € Si valoras lo último en tecnología y comodidad, los audífonos de gama alta podrían ser para ti.",
+          "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+          "pageTitle": "Precios de Audífonos, ¿cuánto cuestan? - Multiacústica",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "La coordinación entre ambos audífonos para ofrecer una experiencia auditiva mejorada, ideal para disfrutar de películas y música con una calidad de sonido excepcional.Gama Media: Entre 1.800 € y 2.500 € Los audífonos de gama media ofrecen una excelente relación calidad-precio.",
+          "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+          "pageTitle": "Precios de Audífonos, ¿cuánto cuestan? - Multiacústica",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Además de por su capacidad para reconocer y resaltar el habla, lo que los hace ideales para situaciones sociales y comunicativas.Gama Baja: Entre 900 € y 1.800 € Para aquellos que buscan una solución más asequible, los audífonos de gama baja pueden ser la opción",
+          "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+          "pageTitle": "Precios de Audífonos, ¿cuánto cuestan? - Multiacústica",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Rango de precios de los audífonos en función del tipo de audífonos Audífonos Invisibles (CIC): Desde 900€ hasta 3.000€.",
+          "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+          "pageTitle": "Precios de Audífonos, ¿cuánto cuestan? - Multiacústica",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Aunque su precio puede variar, su diseño casi invisible los convierte en una opción popular para aquellos que buscan una solución estética.Audífonos Intracanal (ITC): Entre 900€ y 3.000€.",
+          "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+          "pageTitle": "Precios de Audífonos, ¿cuánto cuestan? - Multiacústica",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Su rango de precios varía dependiendo de las características y la tecnología incluida.Audífonos BTE (Behind-the-Ear): Entre 900€ y 3.000€.",
+          "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+          "pageTitle": "Precios de Audífonos, ¿cuánto cuestan? - Multiacústica",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "04 Mejor servicio garantizado en audífonos.",
+          "url": "https://multiacustica.com/centros-auditivos/",
+          "pageTitle": "Centros Auditivos y Audífonos | Multiacustica",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "El servicio de máxima garantía y calidad está asegurado en cada uno de nuestros centros colaboradores con los que trabajamos ya que Multiacústica es una compañía con amplia trayectoria y profesionalidad en el sector de la audiología.",
+          "url": "https://multiacustica.com/centros-auditivos/",
+          "pageTitle": "Centros Auditivos y Audífonos | Multiacustica",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Confianza, profesionalidad y garantía nos hacen ser referentes y líderes en el sector de audífonos.",
+          "url": "https://multiacustica.com/centros-auditivos/",
+          "pageTitle": "Centros Auditivos y Audífonos | Multiacustica",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://multiacustica.com/centros-auditivos/",
+        "https://multiacustica.com/audifonos/precio-de-audifonos/",
+        "https://multiacustica.com/quienes-somos-multiacustica/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Encuentra tu centro auditivo Multiacústica más cercano",
+        "¿Cuánto cuesta un audífono?",
+        "¿Necesitas accesorios y ayudas auditivas?",
+        "Reserva tu Prueba Auditiva Gratis"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Reserva tu cita",
+        "Confirmar",
+        "Enviar",
+        "Reserva tu Revisión Auditiva GRATIS"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://multiacustica.com/centros-auditivos/ · 9 campos",
+        "https://multiacustica.com/centros-auditivos/ · 5 campos",
+        "https://multiacustica.com/audifonos/precio-de-audifonos/ · 9 campos",
+        "https://multiacustica.com/audifonos/precio-de-audifonos/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online",
+        "Email",
+        "Reserva tu cita",
+        "Reserva tu cita",
+        "Reserva tu cita",
+        "Reserva tu cita",
+        "Reserva tu cita"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El usuario busca centro por ciudad, provincia o código postal, o pulsa “reservar cita”. 2) Completa nombre, apellidos, teléfono, email, fecha/hora y motivo/antecedentes. 3) Multiacústica envía la"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://multiacustica.com/centros-auditivos/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://multiacustica.com/audifonos/precio-de-audifonos/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://multiacustica.com/quienes-somos-multiacustica/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://multiacustica.com/accesorios-y-ayudas-auditivas/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://multiacustica.com/prueba-auditiva-gratis/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://multiacustica.com/centros-auditivos/madrid/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://multiacustica.com/centros-auditivos/cataluna/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=multiacustica.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR04435312404733100033?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16347447172616407311",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR08923821235012370433?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/17115892805339409451",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR16125894663511998465?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/356843305023554270",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR05095471486836146177?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR02253468125011902465?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR12281331379433635841?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR01147512671902367745?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR10425534422387261441?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR12076661413091737601?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR14784069776988700673?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR17501947621885870081?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR10164172605725081601?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR07523721819900084225?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR01728169229296861185/creative/CR10649914302888148993?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR15228941389996752897/creative/CR09815888691170639873?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/3336625221327631179",
+      "label": "Fuente pública 28"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Reserva tu Revisión Auditiva GRATIS”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Tidio, WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

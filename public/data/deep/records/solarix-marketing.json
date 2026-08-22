@@ -1,0 +1,362 @@
+{
+  "id": "solarix-marketing",
+  "name": "Solarix Marketing",
+  "reviewedAt": "2026-08-22T15:50:17.455Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "LA AGENCIA QUE SOLO TRABAJA CON INSTALADORAS SOLARES",
+    "heroObserved": true,
+    "priorSummary": "Agencia dedicada solo a instaladoras solares residenciales. Construye un sistema de ventas propio —diferenciación, capacitación comercial, campañas/landings y leads bajo la marca del instalador— y trabaja con una sola instaladora por zona.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 74 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 780 palabras por página comercial recuperada. Muestras breves: “LA AGENCIA QUE SOLO TRABAJA CON INSTALADORAS SOLARES” · “China deja de financiar la fotovoltaica y se abre una oportunidad…” · “El mercado fotovoltaico no está saturado, está clonado.”.",
+    "supportingHeadings": [
+      "LA AGENCIA QUE SOLO TRABAJA CON INSTALADORAS SOLARES",
+      "No vendemos leads. Construimos el sistema de ventas de tu instaladora.",
+      "Por qué la mayoría de las instaladoras no crece",
+      "Sin diferenciación, la única forma de vender es bajar el precio.",
+      "Todos dicen lo mismo",
+      "Competir por precio destruye el negocio",
+      "Comprar leads no resuelve nada",
+      "Un modelo diferente",
+      "El método Solarix",
+      "Tres pasos para que tu instaladora venda más todos los meses.",
+      "Diferenciación",
+      "CAPACITACIÓN",
+      "CAPTACIÓN",
+      "Casos de éxito",
+      "Resultados reales. Con datos reales.",
+      "¿Trabajamos juntos?",
+      "No trabajamos con cualquier instaladora. Trabajamos con las que tienen perfil para crecer.",
+      "Blog",
+      "Muchas empresas instaladoras funcionan como una ruleta",
+      "China deja de financiar la fotovoltaica y se abre una oportunidad…",
+      "El mercado fotovoltaico no está saturado, está clonado.",
+      "Tus comerciales están cansados de los leads basura",
+      "EL SIGUIENTE PASO",
+      "Descubre si podemos hacer crecer tu instaladora",
+      "Testimonio",
+      "Lo que dicen nuestros clientes",
+      "Contáctanos",
+      "MENÚ",
+      "SOBRE NOSOTROS",
+      "REDES"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "CONTACTO",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://solarixmarketing.com/",
+      "text": "CONTACTO",
+      "href": "https://solarixmarketing.com/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "CONTACTO",
+      "ENVIAR",
+      "Hablar con un especialista"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://solarixmarketing.com/",
+        "index": 1,
+        "action": "https://solarixmarketing.com/",
+        "method": "POST",
+        "submitText": "ENVIAR",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_dab8ff1]",
+            "label": "Teléfono (con códio país)",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_b0d3371]",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Mensaje",
+            "placeholder": "Mensaje",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_975f7af]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Empresa"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia dedicada solo a instaladoras solares residenciales. Construye un sistema de ventas propio —diferenciación, capacitación comercial, campañas/landings y leads bajo la marca del instalador— y trabaja con una sola instaladora por zona.",
+    "audience": "Instaladoras de fotovoltaica residencial con equipo comercial y disposición a invertir; casos en España y Costa Rica.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "CONTÁCTANOS BlogEscribimos sobre lo que le importa a una instaladora que quiere crecer: diferenciación, captación de clientes y ventas en el sector solar.",
+      "TestimonioLo que dicen nuestros clientes Juan Manuel Del ValDirector de marketing - Isla Solar★★★★★Trabajar con Solarix está siendo una experiencia excelente."
+    ],
+    "objections": [
+      "Por qué la mayoría de las instaladoras no creceSin diferenciación, la única forma de vender es bajar el precio.Hay demanda real de instalaciones solares.",
+      "Leads que llegan sabiendo quién eres y por qué elegirte.Casos de éxitoResultados reales."
+    ],
+    "urgency": [
+      "Hoy, 19 meses después, tienen leads y ventas todos los meses, sin excepción.",
+      "Por eso, en lugar de lamentarte o de sentarte a esperar qué sucede, hoy podés empezar a accionar para capitalizar este escenario con tu empresa.¿Qué estamos trabajando con nuestros clientes en Solarix Marketing para aprovechar esta noticia?Nuevos anun…",
+      "En 30 minutos analizamos si tu zona está disponible y si tu empresa tiene el perfil para crecer con Solarix.Si no las cumples todas, probablemente no seamos lo que necesitas ahora.",
+      "…ones de impuestos a la exportación de módulos solares a partir de 2026.Traducido a mercado real: los costos van a subir.Ahora bien, la mayoría va a leer esto como “mala noticia”.Algunos incluso van a esperar y ver qué pasa.Pero en fotovoltaica (y en negocios en general) los que se anticipan, venden más."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Un sistema que no para.Leads generados2.370Ventas concretadas65Costo por venta (último trim.)€498 Ver caso completo Valencia, EspañaAntes de abrir la empresa, ya tenían leads esperando.Leads generados347Ventas concretadas9Costo por venta€444 Ver caso completo Guanacaste, Costa…",
+          "url": "https://solarixmarketing.com/",
+          "pageTitle": "Agencia de marketing solar - Solarix Marketing",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "CONTÁCTANOS BlogEscribimos sobre lo que le importa a una instaladora que quiere crecer: diferenciación, captación de clientes y ventas en el sector solar.",
+          "url": "https://solarixmarketing.com/",
+          "pageTitle": "Agencia de marketing solar - Solarix Marketing",
+          "pageCategory": "other"
+        },
+        {
+          "text": "TestimonioLo que dicen nuestros clientes Juan Manuel Del ValDirector de marketing - Isla Solar★★★★★Trabajar con Solarix está siendo una experiencia excelente.",
+          "url": "https://solarixmarketing.com/",
+          "pageTitle": "Agencia de marketing solar - Solarix Marketing",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Por qué la mayoría de las instaladoras no creceSin diferenciación, la única forma de vender es bajar el precio.Hay demanda real de instalaciones solares.",
+          "url": "https://solarixmarketing.com/",
+          "pageTitle": "Agencia de marketing solar - Solarix Marketing",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leads que llegan sabiendo quién eres y por qué elegirte.Casos de éxitoResultados reales.",
+          "url": "https://solarixmarketing.com/",
+          "pageTitle": "Agencia de marketing solar - Solarix Marketing",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://solarixmarketing.com/",
+        "https://solarixmarketing.com/muchas-empresas-instaladoras-funcionan-como-una-ruleta/",
+        "https://solarixmarketing.com/china-deja-de-financiar-la-fotovoltaica-y-se-abre-una-oportunidad/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "LA AGENCIA QUE SOLO TRABAJA CON INSTALADORAS SOLARES",
+        "China deja de financiar la fotovoltaica y se abre una oportunidad…",
+        "El mercado fotovoltaico no está saturado, está clonado.",
+        "Tus comerciales están cansados de los leads basura"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "CONTACTO",
+        "ENVIAR",
+        "Hablar con un especialista"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://solarixmarketing.com/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) La instaladora reserva una videollamada de 30 min; Solarix valida solar residencial, equipo comercial, inversión y zona libre. 2) Diagnostica mercado y construye una propuesta de valor"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://solarixmarketing.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://solarixmarketing.com/muchas-empresas-instaladoras-funcionan-como-una-ruleta/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://solarixmarketing.com/china-deja-de-financiar-la-fotovoltaica-y-se-abre-una-oportunidad/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://solarixmarketing.com/el-mercado-fotovoltaico-no-esta-saturado-esta-clonado/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://solarixmarketing.com/tus-comerciales-estan-cansados-de-los-leads-basura/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://solarixmarketing.com/caso-de-exito-isla-solar/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://solarixmarketing.com/caso-de-exito-solarwave/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://solarixmarketing.com/caso-de-exito-ingenergy/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “CONTACTO”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,575 @@
+{
+  "id": "nocowboys",
+  "name": "NoCowboys",
+  "reviewedAt": "2026-08-22T15:50:18.280Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Find a business",
+    "heroObserved": true,
+    "priorSummary": "Directorio de reputación y jobs: consumidores buscan empresas por ubicación/reseñas o publican un trabajo; negocios pagan una ficha anual optimizada para captar contactos directos y construir reseñas verificadas.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 2085 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 5744 palabras por página comercial recuperada. Muestras breves: “Find a business” · “NoCowboys head office” · “Cornerstone Property Inspection Services LtdProperty Inspection Services in Titirangi”.",
+    "supportingHeadings": [
+      "Find a business",
+      "Review a business",
+      "NoCowboys makes finding Kiwi tradies (and other businesses) simple.",
+      "Search by business name",
+      "Assess",
+      "Contact & Negotiate",
+      "Pay it Forward",
+      "Popular Categories",
+      "NoCowboys head office",
+      "Ratings queries",
+      "Registered businesses",
+      "Business account managers",
+      "Sales team",
+      "Anything else we can help with?",
+      "Testimonials",
+      "NoCowboys - about your business",
+      "Elite Property Wash",
+      "Elite Carpet Cleaning",
+      "Bertina Builders",
+      "Reno Man",
+      "Kurt Transport Ltd - No Longer Trading",
+      "Auckland Houselevelling Ltd",
+      "Cleanline Bathrooms Ltd",
+      "Absolute Kitchens NO LONGER TRADING",
+      "Mr Walker Electrical & Plumbing",
+      "Euro Plumbing Ltd",
+      "Hulme Construction Limited",
+      "Anzac Automotive",
+      "Crash Management Ltd",
+      "Flourish Garden Concepts Ltd"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.nocowboys.co.nz/",
+      "text": "Contact",
+      "href": "https://www.nocowboys.co.nz/contact-us",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact the sales team",
+      "contact the ratings team",
+      "Contact the registration team",
+      "Let us know! We like to learn!",
+      "Yes",
+      "Cancel",
+      "Feedback",
+      "Send email",
+      "let us know",
+      "Send us a message",
+      "Send text message",
+      "send us a message",
+      "send us a short reply",
+      "Add your business here…",
+      "Send your question to us",
+      "Creating an Account Video"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+        "index": 2,
+        "action": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+        "method": "POST",
+        "submitText": "Send email",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Your name:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "emailAddress",
+            "label": "Your email address:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "confirmEmailAddress",
+            "label": "Re-enter email:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Phone (strongly recommended):",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": "Your address (for quoting purposes):",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "ccEmailAddress",
+            "label": "Send me a copy of this message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Your message:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+        "index": 3,
+        "action": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+        "method": "POST",
+        "submitText": "Send text message",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Your name:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "contactPhone",
+            "label": "Your contact phone number:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Your message:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "smsPreview",
+            "label": "Preview:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 7 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Directorio de reputación y jobs: consumidores buscan empresas por ubicación/reseñas o publican un trabajo; negocios pagan una ficha anual optimizada para captar contactos directos y construir reseñas verificadas.",
+    "audience": "Tradies y negocios locales de Nueva Zelanda; consumidores que buscan construcción, pintura, fontanería, jardín y otros servicios.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Toggle navigation How it Works For Businesses Jobs Blog Info-zone Log In × NoCowboys › Testimonials Testimonials Meet our happy customers!",
+      "I'm contacted nearly every day by potential clients via the NoCowboys website, giving me more work than I can handle.",
+      "Therefore, I am sad to say that I will not be renewing my membership.Thank you NoCowboys for a fantastic service of bringing clients and services together.\" – Bert Koppenaal, from Bertina Builders Reno Man \"NoCowboys has been fantastic for my business.",
+      "Follow the instructions: Your name: Your contact phone number: Your message: Preview: Character count: Are you human?",
+      "…structionGardening ServicesFence Construction Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys Perks Social Facebook Twitter I…",
+      "The Original Kiwi Rating Site Now with 146,306 ratings online ."
+    ],
+    "objections": [
+      "…sBathroom RemodelingDeck ConstructionGardening ServicesFence Construction Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys…",
+      "Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys Perks Social Facebook Twitter Instagram All content copyright ©2006-2026, NoCowboys Limited.",
+      "We will happily answer questions on the report findings and provide good quality information and advise where possible.",
+      "Informative report and on hand to answer follow up questions.",
+      "He was patient with complete novices like us and answered our questions in an easy-to-understand manner.",
+      "Phil's attention to detail and commitment to ensuring a comprehensive inspection gave me great confidence as a deciding factor to purchase the property.",
+      "He arrived on time of appointment set, answered all the questions i asked, and advised of various courses of action.",
+      "I was able to follow up wth him by phone to clarified few questions, this was extremely helpful."
+    ],
+    "urgency": [
+      "However, after more than 50 years in the trade, I now wish to retire.",
+      "I left Europe in 1999 and travelled using my trade skill knowledge in Australia and New Zealand, eventually settling in Auckland.",
+      "…back Contact Testimonials NoCowboys Perks Social Facebook Twitter Instagram All content copyright ©2006-2026, NoCowboys Limited.",
+      "They are very easy to deal with and are happy to sort out queries, no matter how big or small.\" – Chris Routhan, from Reno Man Kurt Transport Ltd - No Longer Trading \"Kurt Transport Ltd has been registered with NoCowboys for some years now",
+      "Send us a message Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys Perks Social Facebook Twitter Instagram All content",
+      "The Original Kiwi Rating Site Now with 146,306 ratings online ."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "The Original Kiwi Rating Site Now with 146,306 ratings online .",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "→ Review a business Whether it was a good experience or the opposite, leave a rating for a business you've used.",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Search by business name Click here to search by business name so you can read reviews or leave reviews.",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our ratings system is fair and balanced so you get quality intel.",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Pay it Forward When the job's over, pay it forward by coming back to leave a review.",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…structionGardening ServicesFence Construction Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys Perks Social Facebook Twitter I…",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "The Original Kiwi Rating Site Now with 146,306 ratings online .",
+          "url": "https://www.nocowboys.co.nz/testimonials",
+          "pageTitle": "Testimonials | NoCowboys",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Toggle navigation How it Works For Businesses Jobs Blog Info-zone Log In × NoCowboys › Testimonials Testimonials Meet our happy customers!",
+          "url": "https://www.nocowboys.co.nz/testimonials",
+          "pageTitle": "Testimonials | NoCowboys",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "The businesses below have taken our rating and review site one step further and rated us – the hub of online ratings!",
+          "url": "https://www.nocowboys.co.nz/testimonials",
+          "pageTitle": "Testimonials | NoCowboys",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "I'm contacted nearly every day by potential clients via the NoCowboys website, giving me more work than I can handle.",
+          "url": "https://www.nocowboys.co.nz/testimonials",
+          "pageTitle": "Testimonials | NoCowboys",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Therefore, I am sad to say that I will not be renewing my membership.Thank you NoCowboys for a fantastic service of bringing clients and services together.\" – Bert Koppenaal, from Bertina Builders Reno Man \"NoCowboys has been fantastic for my business.",
+          "url": "https://www.nocowboys.co.nz/testimonials",
+          "pageTitle": "Testimonials | NoCowboys",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "The Original Kiwi Rating Site Now with 146,306 ratings online .",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Follow the instructions: Your name: Your contact phone number: Your message: Preview: Character count: Are you human?",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Follow the instructions: Please Log in to leave a rating or continue as a guest When leaving feedback for a tradie or business on NoCowboys, you have two options: Create a Free Account: This is the easiest way.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You'll get your own dashboard with helpful features, and your reviews are automatically verified when logged in.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Leave a Review as a Guest: We'll send you a verification email to authenticate your feedback.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Simply click the link in the email to publish your review.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…sBathroom RemodelingDeck ConstructionGardening ServicesFence Construction Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys…",
+          "url": "https://www.nocowboys.co.nz/",
+          "pageTitle": "NoCowboys for builders, mechanics, painters, plumbers and more. Find, rate and use Kiwi tradespeople. | NoCowboys",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We will happily answer questions on the report findings and provide good quality information and advise where possible.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Informative report and on hand to answer follow up questions.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "He was patient with complete novices like us and answered our questions in an easy-to-understand manner.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Phil's attention to detail and commitment to ensuring a comprehensive inspection gave me great confidence as a deciding factor to purchase the property.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "He arrived on time of appointment set, answered all the questions i asked, and advised of various courses of action.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "I was able to follow up wth him by phone to clarified few questions, this was extremely helpful.",
+          "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+          "pageTitle": "Cornerstone Property Inspection Services Ltd | Property Inspection Services Titirangi | NoCowboys",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Toggle navigation How it Works For Businesses Jobs Blog Info-zone Log In × NoCowboys › FAQs FAQs For customers For businesses How do I choose the right business for the job?",
+          "url": "https://www.nocowboys.co.nz/faq",
+          "pageTitle": "FAQs | NoCowboys",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Website Home How it Works For Businesses Jobs FAQs Blog Login NC Websites Ratings Find a Tradie/Business Most Recent Ratings Browse All Categories Company About What's in it for Businesses Feedback Contact Testimonials NoCowboys Perks Social Facebook Twitter Instagram All content copyright ©2006-2026, NoCowboys Limited.",
+          "url": "https://www.nocowboys.co.nz/faq",
+          "pageTitle": "FAQs | NoCowboys",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.nocowboys.co.nz/",
+        "https://www.nocowboys.co.nz/contact-us",
+        "https://www.nocowboys.co.nz/testimonials"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Find a business",
+        "NoCowboys head office",
+        "Cornerstone Property Inspection Services LtdProperty Inspection Services in Titirangi",
+        "Design / Consulting / Advice businesses near Titirangi, New Zealand"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Feedback",
+        "Contact",
+        "Creating an Account Video",
+        "contact the ratings team",
+        "Contact the registration team",
+        "Contact the sales team",
+        "Send us a message",
+        "Send email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd · 7 campos",
+        "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Consumidor busca categoría/ubicación o publica job → compara rating/perfil → contacto y negociación directa → trabajo → reseña autenticada; negocio → alta anual → ficha/reseñas/SEO."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.nocowboys.co.nz/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.nocowboys.co.nz/contact-us",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.nocowboys.co.nz/testimonials",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.nocowboys.co.nz/businesses/cornerstone-property-inspection-services-ltd",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.nocowboys.co.nz/faq",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.nocowboys.co.nz/about-us",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.nocowboys.co.nz/search/titirangi/design-consulting-advice",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.nocowboys.co.nz/businesses",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=nocowboys.co.nz",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=102112019890164",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.nocowboys.co.nz/businesses/hall-electrical-services-: HTTP 404",
+    "https://www.nocowboys.co.nz/contact-us/send-message: Bloqueado por robots.txt",
+    "https://www.nocowboys.co.nz/contact-us/send-message?type=ratingsEnquiries: Bloqueado por robots.txt",
+    "https://www.nocowboys.co.nz/contact-us/send-message?type=registrationEnquiries: Bloqueado por robots.txt",
+    "https://www.nocowboys.co.nz/contact-us/send-message?type=salesEnquiries: Bloqueado por robots.txt",
+    "robots.txt impidió 4 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

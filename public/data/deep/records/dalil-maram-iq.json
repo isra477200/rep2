@@ -1,0 +1,308 @@
+{
+  "id": "dalil-maram-iq",
+  "name": "dalil.maram.iq",
+  "reviewedAt": "2026-08-22T15:50:18.724Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "اكتشف الشركات العراقية في مكان واحد",
+    "heroObserved": true,
+    "priorSummary": "Buscar y filtrar empresas por gobernación/sector/verificación; añadir empresa gratuitamente. CTA: Add your company free.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, urgencia comercial, consultivo / basado en preguntas, conciso, orientado a la acción. Usa 80 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 158 palabras por página comercial recuperada. Muestras breves: “اكتشف الشركات العراقية في مكان واحد” · “اتصل بنا”.",
+    "supportingHeadings": [
+      "احجز نطاقك العراقي الرسمي (.IQ) الآن",
+      "احجز نطاقك الآن",
+      "اكتشف الشركات العراقية في مكان واحد",
+      "تصفّح حسب القطاع",
+      "شركات مضافة حديثاً",
+      "Morshed Group",
+      "test tsets",
+      "شركة الرافدين للحلول التقنية",
+      "الشركة العامة لكبريت المشراق",
+      "الشركة العامة لصناعة الاسمدة الجنوبية",
+      "الشركة العامة للصناعات الفولاذية",
+      "تصفّح حسب المحافظة",
+      "شركتك تستحق أن تُرى",
+      "Archives",
+      "Categories",
+      "اتصل بنا",
+      "أرسل رسالة",
+      "معلومات التواصل",
+      "عندك شركة؟",
+      "نبذة عن الشركة",
+      "معلومات العمل",
+      "أوقات الدوام",
+      "الموقع",
+      "معرض الصور"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "اتصل بنا",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://dalil.maram.iq/",
+      "text": "اتصل بنا",
+      "href": "https://dalil.maram.iq/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "احجز نطاقك الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق وخارجه. احجز نطاقك",
+      "احجز نطاقك العراقي الرسمي (.IQ) الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق",
+      "واتساب",
+      "اتصل بنا",
+      "أضف شركتك",
+      "إرسال الرسالة",
+      "أضف شركتك مجاناً",
+      "تواصل عبر واتساب",
+      "تخطَّ إلى المحتوى"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://dalil.maram.iq/contact/",
+        "index": 1,
+        "action": "https://dalil.maram.iq/wp-admin/admin-post.php",
+        "method": "POST",
+        "submitText": "إرسال الرسالة",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "الاسم",
+            "placeholder": "اسمك الكامل",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "البريد الإلكتروني",
+            "placeholder": "example@mail.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "الموضوع",
+            "placeholder": "موضوع الرسالة",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "الرسالة",
+            "placeholder": "اكتب رسالتك هنا...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Buscar y filtrar empresas por gobernación/sector/verificación; añadir empresa gratuitamente. CTA: Add your company free.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "EN احجز نطاقك العراقي الرسمي (.IQ) الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق وخارجه.",
+      "احجز نطاقك الآن احجز نطاقك الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق وخارجه.",
+      "احجز نطاقك الآن بوابة الأعمال العراقية اكتشف الشركات العراقية في مكان واحد دليل شامل يجمع الشركات والأعمال في كل محافظات العراق — ابحث، تواصل، ونَمِّ عملك بثقة.",
+      "At the heart of Morshed Group’s success is its multi-disciplinary team of experts, combining local knowledge with international best practices.",
+      "With the launch of its new Market Research division, Morshed Group now delivers structured insights, consumer behavior analysis, competitive intelligence, and data-driven solutions to guide decision-making in Iraq’s complex and dynamic market."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://dalil.maram.iq/",
+        "https://dalil.maram.iq/contact/",
+        "https://dalil.maram.iq/company/morshed-group/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "اكتشف الشركات العراقية في مكان واحد",
+        "اتصل بنا"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "اتصل بنا",
+        "أضف شركتك",
+        "احجز نطاقك العراقي الرسمي (.IQ) الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق",
+        "احجز نطاقك الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق وخارجه. احجز نطاقك",
+        "واتساب",
+        "أضف شركتك مجاناً",
+        "تخطَّ إلى المحتوى",
+        "إرسال الرسالة"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://dalil.maram.iq/contact/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Email",
+        "احجز نطاقك العراقي الرسمي (.IQ) الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق",
+        "احجز نطاقك الآن احمِ علامتك التجارية واجعل مشروعك موثوقاً داخل العراق وخارجه. احجز نطاقك"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://dalil.maram.iq/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://dalil.maram.iq/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://dalil.maram.iq/company/morshed-group/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://dalil.maram.iq/company/test-tsets/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://dalil.maram.iq/company/%d8%b4%d8%b1%d9%83%d8%a9-%d8%a7%d9%84%d8%b1%d8%a7%d9%81%d8%af%d9%8a%d9%86-%d9%84%d9%84%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%aa%d9%82%d9%86%d9%8a%d8%a9/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://dalil.maram.iq/company/%d8%a7%d9%84%d8%b4%d8%b1%d9%83%d8%a9-%d8%a7%d9%84%d8%b9%d8%a7%d9%85%d8%a9-%d9%84%d9%83%d8%a8%d8%b1%d9%8a%d8%aa-%d8%a7%d9%84%d9%85%d8%b4%d8%b1%d8%a7%d9%82/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://dalil.maram.iq/company/%d8%a7%d9%84%d8%b4%d8%b1%d9%83%d8%a9-%d8%a7%d9%84%d8%b9%d8%a7%d9%85%d8%a9-%d9%84%d8%b5%d9%86%d8%a7%d8%b9%d8%a9-%d8%a7%d9%84%d8%a7%d8%b3%d9%85%d8%af%d8%a9-%d8%a7%d9%84%d8%ac%d9%86%d9%88%d8%a8%d9%8a/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://dalil.maram.iq/companies/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "3 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “اتصل بنا”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

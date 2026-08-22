@@ -1,0 +1,389 @@
+{
+  "id": "guineaecuatorial360-com",
+  "name": "guineaecuatorial360.com",
+  "reviewedAt": "2026-08-22T15:50:18.779Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Guinea Ecuatorial 360º",
+    "heroObserved": true,
+    "priorSummary": "Directorio de empresas nacionales/extranjeras; CTA de alta.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la venta en reversión de riesgo. Usa 83 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 602 palabras por página comercial recuperada. Muestras breves: “Guinea Ecuatorial 360º”.",
+    "supportingHeadings": [
+      "Guinea Ecuatorial 360º",
+      "Soy empresa de Guinea Ecuatorial",
+      "¡Quiero pertenecer al Directorio de Empresas!",
+      "Soy empresa extranjera",
+      "¿Quiere vender en Guinea Ecuatorial?",
+      "ACCA GE es reconocida por su excelencia en los servicios de handling",
+      "Los ganadores de la segunda edición de BANGE IMPULSA visitan la Cámara de Comercio de Bioko",
+      "Evolución de la inflación en el mes de febrero de 2023",
+      "Empresas destacadas",
+      "OSCAR DIAZ CONSULTING",
+      "ABBA INMOBILIARIA",
+      "Imprenta papeleria litoral",
+      "Directorio de empresas",
+      "Anuncios",
+      "Contacto",
+      "Servicios",
+      "AGEPSE S.L. Agencia de Gestión, Publicidad y Servicios. S.L.",
+      "Autos Litoral S.L",
+      "AWEL SL",
+      "CAMSA.SL",
+      "Ebeye General Services Sociedad Limitada",
+      "ENGONGAVOMO Proyectos y Sistemas",
+      "ETUNDI PRODUCCIONES",
+      "Fimac Services",
+      "GECOMAB",
+      "Global Clean & Services",
+      "Global Solutions",
+      "IBEROGUINEANA DE GESTIÓN SL",
+      "Lavandería Autoservicio H2O",
+      "MOSER Group S.L"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.guineaecuatorial360.com/",
+      "text": "Contacto",
+      "href": "https://www.guineaecuatorial360.com/contacto-es",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Enviar",
+      "Español",
+      "English",
+      "Français",
+      "Darme de alta ahora"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.guineaecuatorial360.com/",
+        "index": 1,
+        "action": "https://www.guineaecuatorial360.com/buscador-empresas",
+        "method": "GET",
+        "submitText": "Buscar",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.guineaecuatorial360.com/contacto-es",
+        "index": 2,
+        "action": "https://www.guineaecuatorial360.com/contacto-es",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "submitted[nombre]",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "submitted[apellidos]",
+            "label": "Apellidos *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "submitted[email]",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "submitted[asunto]",
+            "label": "Asunto *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "submitted[comentario]",
+            "label": "Comentario *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "submitted[politica_de_privacidad][on]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: empresa.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 6,
+      "qualification": [
+        "empresa"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Directorio de empresas nacionales/extranjeras; CTA de alta.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [
+      "Nuestras garantías y renuncias de responsabilidad Guinea Ecuatorial 360 ofrece sus Servicios con un nivel de competencia y diligencia razonable desde el punto de vista comercial, y esperamos que disfrutes al usarlos.",
+      "Ni Guinea Ecuatorial 360 ni sus proveedores o distribuidores ofrecen garantías específicas sobre los Servicios distintas a las establecidas de forma expresa en estas condiciones o en las condiciones adicionales.",
+      "…de sus proveedores y distribuidores, por cualquier reclamación realizada bajo estas condiciones, incluida por cualquier garantía implícita, se limita al importe que hayas pagado por usar los Servicios (o, si Guinea Ecuatorial 360 así lo decide, a la reanudación de los Servicios)."
+    ],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Darme de alta ahora Soy empresa extranjera ¿Quiere vender en Guinea Ecuatorial?",
+      "Darme de alta ahora ACCA GE es reconocida por su excelencia en los servicios de handling 03/16/2023 La empresa ACCA GE, con sede en Malabo, Guinea Ecuatorial, obtiene la primera posición en la liga i…",
+      "AWEL SL Nuestro campo de accion abarca desde ESTUDIOS Y PROYECTOS - CONSULTORIA - MANTENIMEINTO EN GENERAL Y SERVICIOS EN GENERAL CAMSA.SL Ebeye General Services Sociedad Limitada Safety Training Sevices,NDT Pipe inspection,Fit Testing and Engineering,Procurement and Construction."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Nuestras garantías y renuncias de responsabilidad Guinea Ecuatorial 360 ofrece sus Servicios con un nivel de competencia y diligencia razonable desde el punto de vista comercial, y esperamos que disfrutes al usarlos.",
+          "url": "https://www.guineaecuatorial360.com/terminos-y-codiciones",
+          "pageTitle": "Términos y Condiciones | Guinea Ecuatorial 360º",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Ni Guinea Ecuatorial 360 ni sus proveedores o distribuidores ofrecen garantías específicas sobre los Servicios distintas a las establecidas de forma expresa en estas condiciones o en las condiciones adicionales.",
+          "url": "https://www.guineaecuatorial360.com/terminos-y-codiciones",
+          "pageTitle": "Términos y Condiciones | Guinea Ecuatorial 360º",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…de sus proveedores y distribuidores, por cualquier reclamación realizada bajo estas condiciones, incluida por cualquier garantía implícita, se limita al importe que hayas pagado por usar los Servicios (o, si Guinea Ecuatorial 360 así lo decide, a la reanudación de los Servicios).",
+          "url": "https://www.guineaecuatorial360.com/terminos-y-codiciones",
+          "pageTitle": "Términos y Condiciones | Guinea Ecuatorial 360º",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "No obstante no podemos ofrecer garantías en relación con algunos aspectos de nuestros Servicios.",
+          "url": "https://www.guineaecuatorial360.com/terminos-y-codiciones",
+          "pageTitle": "Términos y Condiciones | Guinea Ecuatorial 360º",
+          "pageCategory": "conversion",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        },
+        {
+          "text": "Por ejemplo, Guinea Ecuatorial 360 no ofrece ninguna garantía en relación con el contenido de los Servicios, sus funciones específicas, su fiabilidad, su disponibilidad ni su capacidad para satisfacer tus necesidades.",
+          "url": "https://www.guineaecuatorial360.com/terminos-y-codiciones",
+          "pageTitle": "Términos y Condiciones | Guinea Ecuatorial 360º",
+          "pageCategory": "conversion",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.guineaecuatorial360.com/",
+        "https://www.guineaecuatorial360.com/contacto-es",
+        "https://www.guineaecuatorial360.com/node/663"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Guinea Ecuatorial 360º"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Darme de alta ahora",
+        "Español",
+        "Français",
+        "English",
+        "Enviar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.guineaecuatorial360.com/ · 1 campos",
+        "https://www.guineaecuatorial360.com/contacto-es · 1 campos",
+        "https://www.guineaecuatorial360.com/contacto-es · 6 campos",
+        "https://www.guineaecuatorial360.com/node/663 · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.guineaecuatorial360.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.guineaecuatorial360.com/contacto-es",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.guineaecuatorial360.com/node/663",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.guineaecuatorial360.com/empresas-guineanas-sector/29",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.guineaecuatorial360.com/empresas-extranjeras-sector/29",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.guineaecuatorial360.com/terminos-y-codiciones",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.guineaecuatorial360.com/empresas-guineanas-sector/12",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.guineaecuatorial360.com/users/vicente-nze-nguema-nchama: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/ebeye: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/fimac: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/jesus: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/global-solutions: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/universal-services: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/argentum: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/edgardo-espinosa: HTTP 500",
+    "https://www.guineaecuatorial360.com/users/oscar-diaz: HTTP 500",
+    "Se localizaron 2 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

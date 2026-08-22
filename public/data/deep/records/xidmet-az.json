@@ -1,0 +1,304 @@
+{
+  "id": "xidmet-az",
+  "name": "Xidmet.az",
+  "reviewedAt": "2026-08-22T15:50:18.358Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "XiDMET.AZ Xidmet sahələri, Usta Təmir icarə xidməti",
+    "heroObserved": true,
+    "priorSummary": "Marketplace local multiclase para descubrir proveedores y publicar servicios; monetiza visibilidad del anuncio con promociones de pago.",
+    "voice": "Tono cuantitativo, enérgico, explicativo, orientado a la acción. Usa 123 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 977 palabras por página comercial recuperada. Muestras breves: “XiDMET.AZ Xidmet sahələri, Usta Təmir icarə xidməti” · “Bizimlə Əlaqə” · “Şirkətlər”.",
+    "supportingHeadings": [
+      "XiDMET.AZ Xidmet sahələri, Usta Təmir icarə xidməti",
+      "Təmir və usta xidmətləri",
+      "Elektrik, santexnik və rəngsaz ustaları",
+      "Mebel, qapı və pəncərə təmiri xidmətləri",
+      "Ev və ofis bərpası",
+      "Ofis və biznes xidmətləri",
+      "Ofis təmizliyi və texniki dəstək",
+      "Reklam və marketinq xidmətləri",
+      "Ofis avadanlıqlarının quraşdırılması və servisi",
+      "Tədris və kurs xidmətləri",
+      "Xarici dil kursları və fərdi təlimlər",
+      "Peşə kursları və ixtisasartırma proqramları",
+      "Onlayn tədris imkanları və distant öyrənmə",
+      "IT və texnoloji xidmətlər",
+      "Veb saytların hazırlanması və texniki dəstək",
+      "Kompüter və şəbəkə xidmətləri",
+      "Rəqəmsal təhlükəsizlik və proqram təminatı",
+      "Gözəllik və sağlamlıq xidmətləri",
+      "Gözəllik və şəxsi baxım xidmətləri",
+      "Sağlamlıq və bədənə qulluq xidmətləri",
+      "Niyə XiDMET.AZ saytını seçməlisiniz?",
+      "Etibarlılıq və şəffaflıq prinsipi",
+      "Geniş xidmət çeşidi və peşəkar icra",
+      "Müştəri rəyləri və keyfiyyət zəmanəti",
+      "Bizimlə Əlaqə",
+      "Şirkətlər",
+      "BakuCom Tədris Mərkəzi",
+      "Logi Group MMC",
+      "Guven Glass",
+      "CASPIAN GEOMATICS MMC"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Bizimlə əlaqə",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://xidmet.az/",
+      "text": "Bizimlə əlaqə",
+      "href": "https://xidmet.az/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 161.75
+    },
+    "ctas": [
+      "Göndər",
+      "Контакты",
+      "Отправить",
+      "Bizimlə əlaqə"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://xidmet.az/contact",
+        "index": 2,
+        "action": "https://xidmet.az/contact/?act=&id=0&amod=contact&subact=yes",
+        "method": "POST",
+        "submitText": "Göndər",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "surname",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "tel",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "full",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace local multiclase para descubrir proveedores y publicar servicios; monetiza visibilidad del anuncio con promociones de pago.",
+    "audience": "Consumidores y profesionales/negocios locales de Azerbaiyán en múltiples categorías de servicios.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://xidmet.az/",
+        "https://xidmet.az/contact",
+        "https://xidmet.az/shops"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "XiDMET.AZ Xidmet sahələri, Usta Təmir icarə xidməti",
+        "Bizimlə Əlaqə",
+        "Şirkətlər",
+        "XiDMET.AZ Сферы услуг, услуги по аренде мастер-ремонта"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Bizimlə əlaqə",
+        "Göndər",
+        "Контакты",
+        "Отправить"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://xidmet.az/contact · 4 campos",
+        "https://xidmet.az/ru/contact · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Categoría o búsqueda → ficha del servicio → ver precio/perfil → contactar por teléfono/mensaje → acuerdo directo. Proveedor: registro/verificación → publicar anuncio → comprar promoción opcional."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://xidmet.az/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://xidmet.az/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://xidmet.az/shops",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://xidmet.az/company_add.php",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://xidmet.az/ru/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://xidmet.az/ru/contact",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://xidmet.az/ru/demontajnie-raboti-c2144",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://xidmet.az/oferta",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR15178562617615581185?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Xidmet.az&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://xidmet.az/",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Bizimlə əlaqə”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

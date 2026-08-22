@@ -1,0 +1,392 @@
+{
+  "id": "yellowpages-vu-ficha-de-cobertura-mundial-vanuatu",
+  "name": "yellowpages.vu — ficha de cobertura mundial — Vanuatu",
+  "reviewedAt": "2026-08-22T15:50:19.060Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Discover Vanuatu",
+    "heroObserved": true,
+    "priorSummary": "Buscar empresas y elegir Bronze gratuito, Silver o Gold. Gold incluye página publicitaria y prioridad; Silver logo/contactos/mapa; Bronze datos básicos. También banners y campañas adaptadas al presupuesto. CTA: Register Now/Contact us.",
+    "voice": "Tono orientado al lector, cuantitativo, enérgico, autoridad basada en prueba, urgencia comercial, orientado a la acción. Usa 33 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 305 palabras por página comercial recuperada. Muestras breves: “Discover Vanuatu” · “Yellow Pages Vanuatu” · “Yellow Pages of Vanuatu”.",
+    "supportingHeadings": [
+      "Discover Vanuatu",
+      "Welcome to Vanuatu Yellow Pages",
+      "Advertise with Us",
+      "About Yellow Pages",
+      "Yellow Pages Vanuatu",
+      "Contact",
+      "Contact Form",
+      "Our Partners",
+      "AAA Citizenship & Immigration",
+      "Barrett & Partners",
+      "icount",
+      "Moores & Rowland",
+      "The Bottom Line",
+      "Vanuatu Insurance Brokers Ltd",
+      "AJC - Chartered Accountants & Business Advisers",
+      "Funeral Home-Coffins",
+      "Architecture Concept Ltd",
+      "Becon Bani's Environmental Consultant",
+      "Company Services Limited",
+      "EMC - Liz Pechan MYOB Certified Consultant",
+      "Engineering Business Services Ltd (EBS)",
+      "G.H Solutions",
+      "H & D (Pacific) Consulting Group",
+      "International Finance Trust Company Ltd (IFTC)",
+      "Kramer Ausenco (Vanuatu) Limited",
+      "Link Personnel Services",
+      "Montgolfier (de) Paul",
+      "Next Ltd",
+      "Yellow Pages of Vanuatu"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Get the schedule by email",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.yellowpages.vu/",
+      "text": "Get the schedule by email",
+      "href": "https://www.yellowpages.vu/tana-cine/schedule/frontusers/profile",
+      "element": "a",
+      "kind": "conversion",
+      "score": 258.75
+    },
+    "ctas": [
+      "Get the schedule by email",
+      "Contact",
+      "Call Now !",
+      "Send Email",
+      "REGISTER NOW"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://www.yellowpages.vu/contact-us",
+        "index": 2,
+        "action": "https://www.yellowpages.vu/contact-us",
+        "method": "POST",
+        "submitText": "Send Email",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "jform[contact_name]",
+            "label": "Name *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "jform[contact_email]",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "jform[contact_subject]",
+            "label": "Subject *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "jform[contact_message]",
+            "label": "Message *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "jform[contact_email_copy]",
+            "label": "Send a copy to yourself",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpages.vu/250-international-finance-trust-company-ltd-iftc",
+        "index": 2,
+        "action": "https://www.yellowpages.vu/index.php",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "spcform[name]",
+            "label": "Namerequired element",
+            "placeholder": "Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "spcform[email]",
+            "label": "Email addressrequired element",
+            "placeholder": "Email address",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "spcform[message]",
+            "label": "Leave a message",
+            "placeholder": "Leave a message",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online",
+      "Teléfono"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Buscar empresas y elegir Bronze gratuito, Silver o Gold. Gold incluye página publicitaria y prioridad; Silver logo/contactos/mapa; Bronze datos básicos. También banners y campañas adaptadas al presupuesto. CTA: Register Now/Contact us.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Our goal is to provide a comprehensive and reliable platform for businesses to showcase their products and services, and for customers to easily connect with them.",
+      "More visibility, more clicks, more customers!"
+    ],
+    "objections": [],
+    "urgency": [
+      "REGISTER NOW About Yellow Pages Yellow Pages Vanuatu is the official on-line phone book of Vanuatu."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Our goal is to provide a comprehensive and reliable platform for businesses to showcase their products and services, and for customers to easily connect with them.",
+          "url": "https://www.yellowpages.vu/",
+          "pageTitle": "Yellow Pages of Vanuatu - Yellow Pages Vanuatu",
+          "pageCategory": "other"
+        },
+        {
+          "text": "More visibility, more clicks, more customers!",
+          "url": "https://www.yellowpages.vu/",
+          "pageTitle": "Yellow Pages of Vanuatu - Yellow Pages Vanuatu",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our goal is to provide a comprehensive and reliable platform for businesses to showcase their products and services, and for customers to easily connect with them.",
+          "url": "https://www.yellowpages.vu/915-professional-services",
+          "pageTitle": "Yellow Pages of Vanuatu - Professional Services - Yellow Pages Vanuatu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "More visibility, more clicks, more customers!",
+          "url": "https://www.yellowpages.vu/915-professional-services",
+          "pageTitle": "Yellow Pages of Vanuatu - Professional Services - Yellow Pages Vanuatu",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.yellowpages.vu/",
+        "https://www.yellowpages.vu/contact-us",
+        "https://www.yellowpages.vu/915-professional-services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Discover Vanuatu",
+        "Yellow Pages Vanuatu",
+        "Yellow Pages of Vanuatu"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Get the schedule by email",
+        "Contact",
+        "REGISTER NOW",
+        "Send Email",
+        "Call Now !"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.yellowpages.vu/contact-us · 5 campos",
+        "https://www.yellowpages.vu/250-international-finance-trust-company-ltd-iftc · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Teléfono",
+        "Get the schedule by email",
+        "Get the schedule by email",
+        "Get the schedule by email",
+        "Get the schedule by email",
+        "Get the schedule by email",
+        "Get the schedule by email"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.yellowpages.vu/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.yellowpages.vu/contact-us",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.yellowpages.vu/915-professional-services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.yellowpages.vu/942-consultancy-services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.yellowpages.vu/250-international-finance-trust-company-ltd-iftc",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.yellowpages.vu/353-becon-banis-environmental-consultant",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.yellowpages.vu/754-emc-liz-pechan-myob-certified-consultant",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.yellowpages.vu/advertise-with-us",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Get the schedule by email”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

@@ -1,0 +1,426 @@
+{
+  "id": "okawa-studio-comunicacion-slu",
+  "name": "OKAWA Studio Comunicación SLU",
+  "reviewedAt": "2026-08-22T15:50:19.095Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Diseñamos marcasque consiguen clientes,no solo aplausos.",
+    "heroObserved": true,
+    "priorSummary": "Agencia creativa y de crecimiento: estrategia, branding, diseño/web, SEO, Google/Meta Ads, redes y desarrollo. Diseña activos para leads, pedidos y reservas, pero su negocio no es exclusivamente captación/citas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 697 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1254 palabras por página comercial recuperada. Muestras breves: “Diseñamos marcasque consiguen clientes,no solo aplausos.” · “Meta Ads en Málaga:Facebook e Instagramque vende.” · “La Plancha Taberna taberna moderna de cocina tradicional sin gluten en Málaga”.",
+    "supportingHeadings": [
+      "Diseñamos marcasque consiguen clientes,no solo aplausos.",
+      "Diseño que se mide en ingresos, no en likes.",
+      "Marcas que pasaron de \"nos conocen poco\" a \"no damos abasto\".",
+      "Menadel Psicología web con alma para psicología clínica y tradicional",
+      "Reinventa Tu Dinero rompe el tabú del dinero",
+      "Dr. Andrés Muñoz ×5 en casos convertidos con marketing integral",
+      "Remedios Morillo Abogados +30 clientes de Segunda Oportunidad",
+      "Jose Elías Navarro Branding 360º + Meet & Greet con pago previo automatizado",
+      "Autos Dominguez Una web a medida que multiplica por 4 las suscripciones en 6 meses",
+      "Audax Renovables Una sola voz para 7 países",
+      "Dr. Hijano Mir De clínica invisible a referente digital en cirugía plástica",
+      "Una agencia. 7 palancas. Un solo objetivo: vender más.",
+      "No lo decimos nosotros. Lo dicen ellos.",
+      "¿Hablamos de cuánto quieres crecer este año?",
+      "Meta Ads en Málaga:Facebook e Instagramque vende.",
+      "Creatividad que vende. Estructura que escala.",
+      "Esto ya lo hicimos. Estos son los números.",
+      "Si te suena alguno de estos, hablemos.",
+      "Anuncios bonitos, ventas cero",
+      "CPM disparado",
+      "30 audiencias solapadas",
+      "Tracking a ciegas",
+      "Funnel completo. Test creativo semanal.",
+      "Auditoría de cuenta y creatividades",
+      "Estrategia full-funnel TOFU/MOFU/BOFU",
+      "Audiencias y lookalikes",
+      "Producción creativa",
+      "Pixel + Conversions API",
+      "Optimización iterativa",
+      "Dashboard CAC + ROAS"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Reserva una llamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://okawa.es/",
+      "text": "Reserva una llamada",
+      "href": "https://okawa.es/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 240.25
+    },
+    "ctas": [
+      "Reserva una llamada",
+      "Reservar reunión",
+      "Contacto",
+      "ShowMeLocal",
+      "Enviar mensaje"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://okawa.es/agencia-meta-ads-malaga-facebook-instagram/",
+        "index": 1,
+        "action": "https://okawa.es/wp-admin/admin-post.php",
+        "method": "POST",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": null,
+            "placeholder": "Empresa o proyecto",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "hola@tudominio.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "+34 ___ ___ ___",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Qué tienes hoy, qué quieres conseguir, plazos si los tienes…",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "rgpd",
+            "label": "He leído la política de privacidad y acepto el tratamiento de mis",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: empresa.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "empresa"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono",
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia creativa y de crecimiento: estrategia, branding, diseño/web, SEO, Google/Meta Ads, redes y desarrollo. Diseña activos para leads, pedidos y reservas, pero su negocio no es exclusivamente captación/citas.",
+    "audience": "Pymes multisector en España: salud, psicología, estética, abogados, automoción, hostelería, e-commerce, fitness y B2B.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Saltar al contenido Servicios Ver todos los servicios 01 Diseño web que convierte visitas en clientes.",
+      "01 / 2026 Diseñamos marcasque consiguen clientes,no solo aplausos.",
+      "01 Diseño web que convierte visitas en clientes.",
+      "Casos Proceso Nosotros Contacto Área Clientes Reservar reunión Estudio activo · Málaga — CET Ed.",
+      "Ver casos de éxito Reserva una llamada +0% Leads cualificados / cliente medio 0h Primer prototipo navegable 0d Sprint de lanzamiento end-to-end 0/10 Slots disponibles · Q2 Qué conseguimos Diseño que se mide en ingresos, no en likes.",
+      "Casos Proceso Nosotros Contacto Área Clientes Reservar reunión Casos publicados Ed."
+    ],
+    "objections": [],
+    "urgency": [
+      "Hoy somos ocho personas con perfiles complementarios: estrategas, directores de arte, diseñadores, copys y desarrolladores.",
+      "Trabajamos con un puñado limitado de clientes a la vez, los acompañamos durante años y nos hacemos responsables del número que pactamos.",
+      "07 Integraciones Conexión con CRM (HubSpot, Pipedrive), email (Mailchimp), reservas (Calendly) o lo que necesites.",
+      "No por ahora.",
+      "Puedes verificar tu web ahora mismo con PageSpeed Insights o GTmetrix, ambas gratuitas.",
+      "Para proyectos pequeños con presupuesto muy limitado y sin necesidad de SEO ni conversión activa, un freelance o una plantilla pueden bastar."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Saltar al contenido Servicios Ver todos los servicios 01 Diseño web que convierte visitas en clientes.",
+          "url": "https://okawa.es/",
+          "pageTitle": "Agencia de Marketing Digital Málaga para Pymes - OKAWA Studio Comunicación",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Casos Proceso Nosotros Contacto Área Clientes Reservar reunión Estudio activo · Málaga — CET Ed.",
+          "url": "https://okawa.es/",
+          "pageTitle": "Agencia de Marketing Digital Málaga para Pymes - OKAWA Studio Comunicación",
+          "pageCategory": "other"
+        },
+        {
+          "text": "01 / 2026 Diseñamos marcasque consiguen clientes,no solo aplausos.",
+          "url": "https://okawa.es/",
+          "pageTitle": "Agencia de Marketing Digital Málaga para Pymes - OKAWA Studio Comunicación",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ver casos de éxito Reserva una llamada +0% Leads cualificados / cliente medio 0h Primer prototipo navegable 0d Sprint de lanzamiento end-to-end 0/10 Slots disponibles · Q2 Qué conseguimos Diseño que se mide en ingresos, no en likes.",
+          "url": "https://okawa.es/",
+          "pageTitle": "Agencia de Marketing Digital Málaga para Pymes - OKAWA Studio Comunicación",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Confían en Okawa · +200 proyectos lanzados desde 2019 Ver todas las marcas (56) Ver menos Casos de éxito Marcas que pasaron de \"nos conocen poco\" a \"no damos abasto\".",
+          "url": "https://okawa.es/",
+          "pageTitle": "Agencia de Marketing Digital Málaga para Pymes - OKAWA Studio Comunicación",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Saltar al contenido Servicios Ver todos los servicios 01 Diseño web que convierte visitas en clientes.",
+          "url": "https://okawa.es/casos/",
+          "pageTitle": "Casos de Éxito · Proyectos de Marketing y Diseño Web | Okawa",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Casos Proceso Nosotros Contacto Área Clientes Reservar reunión Casos publicados Ed.",
+          "url": "https://okawa.es/casos/",
+          "pageTitle": "Casos de Éxito · Proyectos de Marketing y Diseño Web | Okawa",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Reserva una llamada Ver servicios Lo que dicen nuestros clientes No lo decimos nosotros.",
+          "url": "https://okawa.es/casos/",
+          "pageTitle": "Casos de Éxito · Proyectos de Marketing y Diseño Web | Okawa",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Saltar al contenido Servicios Ver todos los servicios 01 Diseño web que convierte visitas en clientes.",
+          "url": "https://okawa.es/servicios/",
+          "pageTitle": "▷ Servicios de Marketing y Diseño Web | Okawa Studio Málaga",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Casos Proceso Nosotros Contacto Área Clientes Reservar reunión Servicios · Ed.",
+          "url": "https://okawa.es/servicios/",
+          "pageTitle": "▷ Servicios de Marketing y Diseño Web | Okawa Studio Málaga",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "01 Diseño web que convierte visitas en clientes.",
+          "url": "https://okawa.es/servicios/",
+          "pageTitle": "▷ Servicios de Marketing y Diseño Web | Okawa Studio Málaga",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Reserva una llamada Ver casos primero Lo que dicen nuestros clientes No lo decimos nosotros.",
+          "url": "https://okawa.es/servicios/",
+          "pageTitle": "▷ Servicios de Marketing y Diseño Web | Okawa Studio Málaga",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://okawa.es/",
+        "https://okawa.es/agencia-meta-ads-malaga-facebook-instagram/",
+        "https://okawa.es/casos/la-plancha-taberna-web-para-taberna-de-tapas-en-malaga/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Diseñamos marcasque consiguen clientes,no solo aplausos.",
+        "Meta Ads en Málaga:Facebook e Instagramque vende.",
+        "La Plancha Taberna taberna moderna de cocina tradicional sin gluten en Málaga",
+        "Diseño web en Málagaque convierte visitasen clientes."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Reservar reunión",
+        "Reserva una llamada",
+        "ShowMeLocal",
+        "Enviar mensaje"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://okawa.es/agencia-meta-ads-malaga-facebook-instagram/ · 6 campos",
+        "https://okawa.es/diseno-web-malaga/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono",
+        "Agenda online",
+        "ShowMeLocal",
+        "Reserva una llamada",
+        "ShowMeLocal",
+        "ShowMeLocal",
+        "Reserva una llamada"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Caso, servicio o landing sectorial → reservar llamada/formulario → respuesta y propuesta en 24–48 h → discovery de 30–45 min → alcance, KPIs, equipo y calendario → sprint"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://okawa.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://okawa.es/agencia-meta-ads-malaga-facebook-instagram/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://okawa.es/casos/la-plancha-taberna-web-para-taberna-de-tapas-en-malaga/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://okawa.es/diseno-web-malaga/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://okawa.es/casos/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://okawa.es/servicios/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://okawa.es/nosotros/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://okawa.es/proceso/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://okawa.es/contacto/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&q=OKAWA%20Studio&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Reserva una llamada”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

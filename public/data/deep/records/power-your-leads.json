@@ -1,0 +1,503 @@
+{
+  "id": "power-your-leads",
+  "name": "Power Your Leads",
+  "reviewedAt": "2026-08-22T15:50:18.114Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Exclusive contractor leads.One contractor per market.",
+    "heroObserved": true,
+    "priorSummary": "\"We own local service websites that rank on Google and send every inbound homeowner call to a single contractor. Exclusive leads for contractors - not shared, not aggregated, not Angi.\" — CONFIRMADO",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 230 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 601 palabras por página comercial recuperada. Muestras breves: “Exclusive contractor leads.One contractor per market.” · “Check your market.” · “Two ways to pay. Both exclusive.”.",
+    "supportingHeadings": [
+      "Exclusive contractor leads.One contractor per market.",
+      "We own the site. You rent the calls.",
+      "We own the site",
+      "Google sends traffic",
+      "The call goes to you",
+      "What makes our leads different",
+      "Exclusive territory",
+      "Tracked & recorded",
+      "Local, not a marketplace",
+      "Eleven services. Three regions.",
+      "Latest from the blog",
+      "How to get more contractor leads in 2026: 9 channels that actually work",
+      "Wildfire smoke damage cleanup in California (2026)",
+      "What contractor leads should cost in 2026 (by service vertical)",
+      "Exclusive leads for contractors, not a shared marketplace",
+      "Exclusive contractor leads: common questions",
+      "Is your market open?",
+      "Check your market.",
+      "Two ways to pay. Both exclusive.",
+      "Why a range?",
+      "Real numbers from real contractors.",
+      "HVAC contractor, Thousand Oaks corridor",
+      "Setup",
+      "Switch",
+      "Outcome (90 days)",
+      "ADU + garage conversion builder, Ventura County",
+      "Outcome (first 6 months)",
+      "What both cases have in common",
+      "Run the numbers for your market.",
+      "Working notes on contractor lead gen."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.poweryourleads.com/",
+      "text": "Contact",
+      "href": "https://www.poweryourleads.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact →",
+      "Quote my market →",
+      "Get a quote for your market →",
+      "Send →",
+      "Check availability →",
+      "Check market availability →"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.poweryourleads.com/contact",
+        "index": 1,
+        "action": "https://www.poweryourleads.com/contact.php",
+        "method": "POST",
+        "submitText": "Send →",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Your name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "service",
+            "label": "Service",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "city",
+            "label": "City or region",
+            "placeholder": "e.g. Simi Valley, North San Diego County",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "notes",
+            "label": "Notes (optional)",
+            "placeholder": "Anything else we should know - current lead sources, monthly capacity, target",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 8 y 8 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Company, City or region, Website.",
+      "friction": "Alta",
+      "minFields": 8,
+      "maxFields": 8,
+      "qualification": [
+        "Company",
+        "City or region",
+        "Website"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "\"We own local service websites that rank on Google and send every inbound homeowner call to a single contractor. Exclusive leads for contractors - not shared, not aggregated, not Angi.\" — CONFIRMADO",
+    "audience": "Contratistas locales: roofing, HVAC, ADU y otros servicios del hogar (11 servicios declarados).",
+    "prices": [
+      "A $300 exclusive lead that closes at 40% costs you $750 per closed job.",
+      "A $40 shared lead that closes at 10% costs you $400 per closed job - but only if you actually answer faster than the other four contractors in the marketplace.",
+      "Flat monthly $500 - $2,000 / mo Predictable.",
+      "Exclusive territory locked Unlimited inbound calls Tracked local number Call recording included Cancel after minimum period Per lead $50 - $250 / lead Pay only for inbound calls.",
+      "ADU + garage conversion - $150-$350 per lead Highest pricing of any home-service vertical we run, justified by job size.",
+      "Garage conversions average $80K-$130K."
+    ],
+    "guarantee": [],
+    "proof": [
+      "…leads Regions Ventura County Conejo Valley San Fernando Valley San Diego Bay Area Company How it works Markets Pricing Results About Insights Partners Contact © 2026 Power Your Leads Independent operator · No third-party affiliations",
+      "→ Best results come from contractors who answer the phone within 30 seconds, every time.",
+      "Anonymized case studies - service vertical, region, call volume, close rate, monthly revenue.",
+      "The case studies below are representative, anonymized examples of how the model works."
+    ],
+    "objections": [
+      "Check market availability → How it works 47+Active markets 12Services covered 340+Calls / month 18Contractors served Model We own the site.",
+      "03 The call goes to you One contractor per territory.",
+      "Why contractors choose us What makes our leads different 01 Exclusive territory One contractor per market.",
+      "Power Your Leads MENU How it works Markets Pricing Check availability → ☀Light Exclusive contractor leads Exclusive contractor leads.One contractor per market.",
+      "We own local service websites that rank on Google and send every inbound homeowner call to a single contractor.",
+      "Exclusive leads for contractors - not shared, not aggregated, not Angi."
+    ],
+    "urgency": [
+      "Exclusive territory locked Unlimited inbound calls Tracked local number Call recording included Cancel after minimum period Per lead $50 - $250 / lead Pay only for inbound calls.",
+      "Best for contractors who want unlimited inbound calls from a locked territory.",
+      "They should know which is which.",
+      "\"AC repair near me\" leads cost more than \"best HVAC contractor\" leads because the searcher is ready to call right now."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Pay-per-lead runs $25 to $350 per inbound call depending on the service and market, so you only pay when the phone rings.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Flat monthly runs $500 to $2,000 for a locked, exclusive territory.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Flat monthly $500 - $2,000 / mo Predictable.",
+          "url": "https://www.poweryourleads.com/pricing",
+          "pageTitle": "Contractor Lead Pricing | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Exclusive territory locked Unlimited inbound calls Tracked local number Call recording included Cancel after minimum period Per lead $50 - $250 / lead Pay only for inbound calls.",
+          "url": "https://www.poweryourleads.com/pricing",
+          "pageTitle": "Contractor Lead Pricing | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "A $300 exclusive lead that closes at 40% costs you $750 per closed job.",
+          "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+          "pageTitle": "What Contractor Leads Cost in 2026 | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "A $40 shared lead that closes at 10% costs you $400 per closed job - but only if you actually answer faster than the other four contractors in the marketplace.",
+          "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+          "pageTitle": "What Contractor Leads Cost in 2026 | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "ADU + garage conversion - $150-$350 per lead Highest pricing of any home-service vertical we run, justified by job size.",
+          "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+          "pageTitle": "What Contractor Leads Cost in 2026 | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Garage conversions average $80K-$130K.",
+          "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+          "pageTitle": "What Contractor Leads Cost in 2026 | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Detached new builds run $180K-$350K with strong margins.",
+          "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+          "pageTitle": "What Contractor Leads Cost in 2026 | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Walk away if: someone offers ADU leads for under $100.",
+          "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+          "pageTitle": "What Contractor Leads Cost in 2026 | Power Your Leads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…leads Regions Ventura County Conejo Valley San Fernando Valley San Diego Bay Area Company How it works Markets Pricing Results About Insights Partners Contact © 2026 Power Your Leads Independent operator · No third-party affiliations",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Anonymized case studies - service vertical, region, call volume, close rate, monthly revenue.",
+          "url": "https://www.poweryourleads.com/results",
+          "pageTitle": "Results - Contractor Case Studies | Power Your Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "The case studies below are representative, anonymized examples of how the model works.",
+          "url": "https://www.poweryourleads.com/results",
+          "pageTitle": "Results - Contractor Case Studies | Power Your Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "→ Best results come from contractors who answer the phone within 30 seconds, every time.",
+          "url": "https://www.poweryourleads.com/results",
+          "pageTitle": "Results - Contractor Case Studies | Power Your Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…leads Regions Ventura County Conejo Valley San Fernando Valley San Diego Bay Area Company How it works Markets Pricing Results About Insights Partners Contact © 2026 Power Your Leads Independent operator · No third-party affiliations",
+          "url": "https://www.poweryourleads.com/results",
+          "pageTitle": "Results - Contractor Case Studies | Power Your Leads",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Power Your Leads MENU How it works Markets Pricing Check availability → ☀Light Exclusive contractor leads Exclusive contractor leads.One contractor per market.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We own local service websites that rank on Google and send every inbound homeowner call to a single contractor.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Exclusive leads for contractors - not shared, not aggregated, not Angi.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Check market availability → How it works 47+Active markets 12Services covered 340+Calls / month 18Contractors served Model We own the site.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        },
+        {
+          "text": "03 The call goes to you One contractor per territory.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Why contractors choose us What makes our leads different 01 Exclusive territory One contractor per market.",
+          "url": "https://www.poweryourleads.com/",
+          "pageTitle": "Exclusive Contractor Leads - Roofing, HVAC, ADU, EV",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.poweryourleads.com/",
+        "https://www.poweryourleads.com/contact",
+        "https://www.poweryourleads.com/pricing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Exclusive contractor leads.One contractor per market.",
+        "Check your market.",
+        "Two ways to pay. Both exclusive.",
+        "Working notes on contractor lead gen."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Check availability →",
+        "Check market availability →",
+        "Contact",
+        "Send →",
+        "Get a quote for your market →",
+        "Quote my market →",
+        "Contact →"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.poweryourleads.com/contact · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El contratista pulsa “Check availability” y solicita un mercado; la empresa valida en ~24 h si el territorio está libre. 2) Se asigna servicio, ciudad y territorio"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.poweryourleads.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.poweryourleads.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.poweryourleads.com/pricing",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.poweryourleads.com/results",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.poweryourleads.com/insights",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.poweryourleads.com/about",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.poweryourleads.com/insights/contractor-leads-cost-2026",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://poweryourleads.com/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=poweryourleads.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=Power%20Your%20Leads",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 8 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,448 @@
+{
+  "id": "addicional-addicional-marketing-s-l",
+  "name": "ADDICIONAL (Addicional Marketing S.L.)",
+  "reviewedAt": "2026-08-22T15:50:19.460Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Agencia de Marketing",
+    "heroObserved": true,
+    "priorSummary": "Google Ads, Meta Ads y LinkedIn Ads + funnels de venta, web/e-commerce, SEO/GEO, branding, vídeo y email marketing.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción. Usa 93 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 740 palabras por página comercial recuperada. Muestras breves: “Agencia de Marketing” · “CONECTA CON NOSOTROS” · “addicional”.",
+    "supportingHeadings": [
+      "addicional",
+      "Agencia de Marketing",
+      "Comunicacon actitud.",
+      "Hablamos simple, trabajamos en serio y nos importa que tu marca venda, no solo que se vea bien.",
+      "Desde 2015, creamos marcas sólidas, claras y coherentes con estrategia, contenido, diseño y audiovisual para que tu negocio se vea, se entienda y crezca.",
+      "+10",
+      "Años haciendo crecer marcas como la tuya",
+      "Echa un vistazo a algunos de nuestros proyectos",
+      "Soluciones para hacer crecer tú marca",
+      "MARKETING OUTSOURCING 360º",
+      "COMUNICACIÓN",
+      "PAID MEDIA Y CAPTACIÓN DE LEADS",
+      "POSICIONAMIENTO SEO Y GEO",
+      "DESARROLLO WEB Y eCOMMERCE",
+      "BRANDING",
+      "AUDIOVISUAL",
+      "Trabajamos para empresas, marcas e instituciones.",
+      "Solicita tu consultoría gratuita",
+      "Estamos aquí para resolver tus dudas",
+      "Branding",
+      "CONECTA CON NOSOTROS",
+      "Contáctanos",
+      "Casos de éxito",
+      "Hecha un vistazo a algunos de nuestros casos de éxito",
+      "SOLUCIONES",
+      "Comunicación",
+      "Soluciones y recursos en comunicación para empresas y marcas. Así trabaja nuestra agencia comunicación.",
+      "IA",
+      "La IA no sustituye la creatividad. La potencia.",
+      "Un buen producto no se vende solo. Necesita una voz, un tono y una estrategia. De eso nos encargamos nosotros."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicita una Consultoría Gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.addicional.com/comunicacion-empresas-marcas/",
+      "text": "Solicita una Consultoría Gratuita",
+      "href": "https://www.addicional.com/comunicacion-empresas-marcas/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 236.75
+    },
+    "ctas": [
+      "SOLICITAR CONSULTORÍA GRATUITA",
+      "Solicita una Consultoría Gratuita",
+      "agenda un meet",
+      "CONTACTO",
+      "Enviar solicitud",
+      "CONÓCENOS DE CERCA",
+      ".b246dd63-e0cb-4127-bd6e-d273cd4a8c0b{fill:#191919;}"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.addicional.com/",
+        "index": 2,
+        "action": "https://www.addicional.com/",
+        "method": "POST",
+        "submitText": "SOLICITAR CONSULTORÍA GRATUITA",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nombre]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[telf]",
+            "label": "Teléfono",
+            "placeholder": "+34 93 XXX XXX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[empresa]",
+            "label": "Empresa",
+            "placeholder": "Nombre de tu empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[servicio]",
+            "label": "Servicio de interés",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[presupuesto]",
+            "label": "Presupuesto orientativo",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[mensaje]",
+            "label": "Cuéntanos algo sobre tu empresa",
+            "placeholder": "Describe brevemente tu situación actual, desafíos y objetivos...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[Verificacion]",
+            "label": "Al enviar este formulario, aceptas nuestra Política de privacidad. Tus datos serán",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.addicional.com/work/",
+        "index": 1,
+        "action": "https://www.addicional.com/work/",
+        "method": "POST",
+        "submitText": "Enviar solicitud",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nombre]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[telefono]",
+            "label": "Teléfono",
+            "placeholder": "+34 666 XXX XXX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[departamento]",
+            "label": "Selecciona una área",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "form_fields[adjuntos][]",
+            "label": "Compártenos tu CV o Portafolio",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[mensaje]",
+            "label": "Comentarios",
+            "placeholder": "Cuéntanos algo sobre ti o tus inquietudes...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[varificacion]",
+            "label": "Al enviar este formulario, aceptas nuestra Política de privacidad. Tus datos serán",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 7 y 8 campos visibles, mínimo 6 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa, Servicio de interés, Presupuesto orientativo, Cuéntanos algo sobre tu empresa.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 8,
+      "qualification": [
+        "Empresa",
+        "Servicio de interés",
+        "Presupuesto orientativo",
+        "Cuéntanos algo sobre tu empresa"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Google Ads, Meta Ads y LinkedIn Ads + funnels de venta, web/e-commerce, SEO/GEO, branding, vídeo y email marketing.",
+    "audience": "PARCIALMENTE CONFIRMADO — pymes y negocios locales con foco Barcelona/Sabadell, empresas de servicios, y B2B para su línea de LinkedIn Ads (addicional.com).",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Convierte inversión en clientes reales.",
+      "None Reject All Save My Preferences Accept All MARKETING OUTSOURCING 360º COMUNICACIÓN PAID MEDIA Y CAPTACIÓN DE LEADS POSICIONAMIENTO SEO Y GEO DESARROLLO WEB Y eCOMMERCE BRANDING AUDIOVISUAL CASOS DE ÉXITO CONTACTO Programa un meet addicional Cerrar MARKETING OUTSOURCING 360º Tu departamento de marketing externo."
+    ],
+    "objections": [],
+    "urgency": [
+      "Para que te encuentren hoy y mañana.",
+      "Contenido Como agencia comunicación, creamos contenido audiovisual impactante que eleva tu marca — desde spots publicitarios hasta vídeos corporativos y contenido para redes.",
+      "Producimos vídeos corporativos, reels, spots, contenido UGC y piezas para redes — con guión, producción y edición — para que tu marca tenga presencia donde hay atención."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Convierte inversión en clientes reales.",
+          "url": "https://www.addicional.com/",
+          "pageTitle": "Agencia de Marketing en Sabadell | Addicional",
+          "pageCategory": "other"
+        },
+        {
+          "text": "None Reject All Save My Preferences Accept All MARKETING OUTSOURCING 360º COMUNICACIÓN PAID MEDIA Y CAPTACIÓN DE LEADS POSICIONAMIENTO SEO Y GEO DESARROLLO WEB Y eCOMMERCE BRANDING AUDIOVISUAL CASOS DE ÉXITO CONTACTO Programa un meet addicional Cerrar MARKETING OUTSOURCING 360º Tu departamento de marketing externo.",
+          "url": "https://www.addicional.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Increíbles: Agencia Marketing +10 Años",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Convierte inversión en clientes reales.",
+          "url": "https://www.addicional.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Increíbles: Agencia Marketing +10 Años",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.addicional.com/",
+        "https://www.addicional.com/contacto/",
+        "https://www.addicional.com/casos-de-exito/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia de Marketing",
+        "CONECTA CON NOSOTROS",
+        "addicional",
+        "SOLUCIONES"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "CONÓCENOS DE CERCA",
+        "agenda un meet",
+        "SOLICITAR CONSULTORÍA GRATUITA",
+        "CONTACTO",
+        ".b246dd63-e0cb-4127-bd6e-d273cd4a8c0b{fill:#191919;}",
+        "Solicita una Consultoría Gratuita",
+        "Enviar solicitud"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.addicional.com/ · 8 campos",
+        "https://www.addicional.com/contacto/ · 8 campos",
+        "https://www.addicional.com/casos-de-exito/ · 8 campos",
+        "https://www.addicional.com/comunicacion-empresas-marcas/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono",
+        "agenda un meet",
+        "agenda un meet",
+        "agenda un meet",
+        "agenda un meet",
+        "agenda un meet",
+        "agenda un meet"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por home/servicio → «Solicita tu consultoría gratuita» o autoagenda «Agenda un Meet» → formulario con empresa, servicio, presupuesto orientativo y contexto → respuesta declarada en 24h /"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.addicional.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.addicional.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.addicional.com/casos-de-exito/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.addicional.com/comunicacion-empresas-marcas/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.addicional.com/meet/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.addicional.com/work/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.addicional.com/agencia-marketing-outsourcing/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicita una Consultoría Gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

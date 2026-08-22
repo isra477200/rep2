@@ -1,0 +1,498 @@
+{
+  "id": "nokeon",
+  "name": "Nokeon",
+  "reviewedAt": "2026-08-22T15:50:19.342Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Soluciones de Marketing Digital",
+    "heroObserved": true,
+    "priorSummary": "\"Diseñamos campañas de Google Ads y social ads enfocadas en atraer empresas que necesitan soluciones logísticas específicas\" (nokeon.com)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 50 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1125 palabras por página comercial recuperada. Muestras breves: “Háblanos del proyecto” · “Soluciones de Marketing Digital” · “Agencia CRO”.",
+    "supportingHeadings": [
+      "Agencia de Marketing Digital para Empresas de Transporte",
+      "Estrategias digitales que ponen tu flota en movimiento comercial",
+      "De la búsqueda al envío: marketing que conecta tu flota con tus clientes",
+      "SEO para empresas de transporte",
+      "Posiciona tus servicios logísticos donde tus clientes te buscan",
+      "Publicidad online para transporte y logística",
+      "Captación de leads y contratos con campañas segmentadas",
+      "Redes sociales para empresas transporte",
+      "Refuerza tu marca, muestra tu operativa y genera confianza",
+      "Email Marketing para empresas de transporte",
+      "Mantén informados a tus clientes y potencia la fidelización",
+      "CRO para empresas del sector transporte",
+      "Transforma visitantes en contactos comerciales y cotizaciones",
+      "Preguntas frecuentes sobre marketing digital para empresas de transporte",
+      "¿Qué hace una agencia de marketing digital para empresas de transporte?",
+      "¿Qué servicios ofrece Nokeon para empresas de transporte?",
+      "¿Trabajáis con empresas de transporte local e internacional?",
+      "¿Cuánto tiempo se tarda en ver resultados?",
+      "¿Qué diferencia a Nokeon de otras agencias?",
+      "¿A qué estás esperando?",
+      "¿Qué opinan de nuestro trabajo?",
+      "¿Te apuntas a la newsletter?",
+      "Háblanos del proyecto",
+      "¡Estamos aquí para hacer crecer tu negocio!",
+      "Resultados que cuentan historias",
+      "Nuestros Proyectos",
+      "Induvalma",
+      "Mamayoga",
+      "El Galgo Azul",
+      "De Pan y Moja"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicita una auditoría CRO personalizada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://nokeon.com/hacemos/marketing/optimizacion-cro/",
+      "text": "Solicita una auditoría CRO personalizada",
+      "href": "https://nokeon.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 235
+    },
+    "ctas": [
+      "Solicita una auditoría CRO personalizada",
+      "Solicita una consultoría SEO personalizada",
+      "{title}",
+      "Formulario",
+      "Contáctanos",
+      "¡Me apunto!",
+      "Quiero un buen impulso",
+      "Quiero impulsar mi negocio"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://nokeon.com/sectores/marketing-digital-empresas-transporte/",
+        "index": 1,
+        "action": "https://nokeon.com/sectores/marketing-digital-empresas-transporte/",
+        "method": "POST",
+        "submitText": "¡Me apunto!",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "Escribe tu email...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_e7f1e50]",
+            "label": "Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://nokeon.com/contacto/",
+        "index": 1,
+        "action": "https://nokeon.com/contacto/",
+        "method": "POST",
+        "submitText": "Quiero un buen impulso",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nombre]",
+            "label": "Nombre",
+            "placeholder": "Escribe tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "Escribe tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[telefono]",
+            "label": "Teléfono",
+            "placeholder": "Escribe tu teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[empresa]",
+            "label": "Web del negocio",
+            "placeholder": "Indica el dominio (si existe)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[seleccion][]",
+            "label": "Web Corporativa",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿Cómo es el negocio?",
+            "placeholder": "Explícanos el negocio para entenderlo con un resumen",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_2fea6f9]",
+            "label": "¿Cuáles son los objetivos planteados?",
+            "placeholder": "Por ejemplo: mejorar volumen de pedidos, mejorar facturación, aumentar reputación, aumentar al",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_53f4e79][]",
+            "label": "0 - 100K",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_84b11f8][]",
+            "label": "Entre 500€ y 1.000€",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_797c300][]",
+            "label": "Google",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[privacy_policy]",
+            "label": "Confirmo que acepto la Política de Privacidad de este sitio.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 2 y 11 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Web del negocio, Web Corporativa, ¿Cuáles son los objetivos planteados?.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 11,
+      "qualification": [
+        "Web del negocio",
+        "Web Corporativa",
+        "¿Cuáles son los objetivos planteados?"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Diseñamos campañas de Google Ads y social ads enfocadas en atraer empresas que necesitan soluciones logísticas específicas\" (nokeon.com)",
+    "audience": "Empresas de transporte terrestre, logística internacional, última milla, distribución ecommerce",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Satisfacción del cliente del 95%Aseguramos la satisfacción de nuestros clientes.",
+      "Ver más Marketing arrasador Hemos conseguido llevar a nuestros clientes a los primeros puestos en Google con las estrategias de marketing digital más afinadas.",
+      "Landing pages irresistibles Diseñamos páginas que capturan la atención de tus clientes.",
+      "Captación de leads Leads que caen como moscas Captamos clientes potenciales de manera rápida y efectiva.",
+      "Marketing de contenidos Elaboramos contenidos valiosos que tus clientes apreciarán.",
+      "Fidelización de clientes Fomentamos la lealtad de tus clientes."
+    ],
+    "objections": [
+      "Ver estrategias B2C Preguntas frecuentes sobre soluciones de marketing digital ¿Qué incluye una solución de marketing digital completa?",
+      "Preguntas frecuentes sobre soluciones corporativas ¿Qué son las soluciones corporativas?",
+      "¿Por qué integrar la gestión del talento en la estrategia corporativa?",
+      "Diseñamos soluciones a medida para que tu empresa destaque en el competitivo mundo empresarial.Soluciones corporativas · Ecommerce · Captación de leads · B2B · B2C Contáctanos + ÍNDICE Soluciones corporativas · Ecommerce · Captación de leads · B2B · B2C WE FIX IT ¿Por qué"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Ver más Marketing arrasador Hemos conseguido llevar a nuestros clientes a los primeros puestos en Google con las estrategias de marketing digital más afinadas.",
+          "url": "https://nokeon.com/resultados/",
+          "pageTitle": "Los Resultados de Nuestro Trabajo | Agencia Nokeon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Satisfacción del cliente del 95%Aseguramos la satisfacción de nuestros clientes.",
+          "url": "https://nokeon.com/resultados/",
+          "pageTitle": "Los Resultados de Nuestro Trabajo | Agencia Nokeon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Landing pages irresistibles Diseñamos páginas que capturan la atención de tus clientes.",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Captación de leads Leads que caen como moscas Captamos clientes potenciales de manera rápida y efectiva.",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Marketing de contenidos Elaboramos contenidos valiosos que tus clientes apreciarán.",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Fidelización de clientes Fomentamos la lealtad de tus clientes.",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No hay mejor forma de saberlo que leyendo algunos testimonios de nuestros clientes.",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Marketing Corporativo y Comunicación Tu mensaje, alto y claro Creamos estrategias de marketing y comunicación que posicionan tu marca en la mente de tus clientes y te diferencian de la competencia.",
+          "url": "https://nokeon.com/soluciones/corporativas/",
+          "pageTitle": "Soluciones Corporativas | Impulsa tu facturación y vende más",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Refuerza la marca, mejora la visibilidad y fortalece la relación con clientes, empleados y stakeholders clave.",
+          "url": "https://nokeon.com/soluciones/corporativas/",
+          "pageTitle": "Soluciones Corporativas | Impulsa tu facturación y vende más",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No hay mejor forma de saberlo que leyendo algunos testimonios de nuestros clientes.",
+          "url": "https://nokeon.com/soluciones/corporativas/",
+          "pageTitle": "Soluciones Corporativas | Impulsa tu facturación y vende más",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Somos una agencia de marketing digital, creativa, actual y moderna con soluciones y servicios centrados en el crecimiento digital y aumento de resultados de nuestros clientes.",
+          "url": "https://nokeon.com/soluciones/corporativas/",
+          "pageTitle": "Soluciones Corporativas | Impulsa tu facturación y vende más",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Diseñamos soluciones a medida para que tu empresa destaque en el competitivo mundo empresarial.Soluciones corporativas · Ecommerce · Captación de leads · B2B · B2C Contáctanos + ÍNDICE Soluciones corporativas · Ecommerce · Captación de leads · B2B · B2C WE FIX IT ¿Por qué",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver estrategias B2C Preguntas frecuentes sobre soluciones de marketing digital ¿Qué incluye una solución de marketing digital completa?",
+          "url": "https://nokeon.com/soluciones/",
+          "pageTitle": "Soluciones de Marketing Digital | Estrategias para escalar ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Preguntas frecuentes sobre soluciones corporativas ¿Qué son las soluciones corporativas?",
+          "url": "https://nokeon.com/soluciones/corporativas/",
+          "pageTitle": "Soluciones Corporativas | Impulsa tu facturación y vende más",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "¿Por qué integrar la gestión del talento en la estrategia corporativa?",
+          "url": "https://nokeon.com/soluciones/corporativas/",
+          "pageTitle": "Soluciones Corporativas | Impulsa tu facturación y vende más",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://nokeon.com/sectores/marketing-digital-empresas-transporte/",
+        "https://nokeon.com/contacto/",
+        "https://nokeon.com/resultados/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Háblanos del proyecto",
+        "Soluciones de Marketing Digital",
+        "Agencia CRO",
+        "Agencia Auditoría SEO"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contáctanos",
+        "Quiero impulsar mi negocio",
+        "¡Me apunto!",
+        "Formulario",
+        "Quiero un buen impulso",
+        "{title}",
+        "Solicita una auditoría CRO personalizada",
+        "Solicita una consultoría SEO personalizada"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://nokeon.com/sectores/marketing-digital-empresas-transporte/ · 2 campos",
+        "https://nokeon.com/contacto/ · 11 campos",
+        "https://nokeon.com/contacto/ · 2 campos",
+        "https://nokeon.com/resultados/ · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing vertical de transporte/logística → CTA «Contáctanos»/«¿Trabajamos?» → análisis de cobertura, especialización y objetivos → estrategia combinada SEO + Paid Media + Social + Email +"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://nokeon.com/sectores/marketing-digital-empresas-transporte/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://nokeon.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://nokeon.com/resultados/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://nokeon.com/soluciones/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://nokeon.com/hacemos/marketing/optimizacion-cro/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://nokeon.com/hacemos/marketing/posicionamiento-seo/agencia-auditoria-seo/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://nokeon.com/soluciones/corporativas/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicita una auditoría CRO personalizada”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

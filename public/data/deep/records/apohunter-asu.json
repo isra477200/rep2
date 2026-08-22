@@ -1,0 +1,411 @@
+{
+  "id": "apohunter-asu",
+  "name": "ApoHunter / Asu",
+  "reviewedAt": "2026-08-22T15:50:17.192Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "小冊子",
+    "heroObserved": true,
+    "priorSummary": "Outsourcing B2B especializado en outbound y appointment setting a éxito: nuevos clientes, seguimiento de clientes actuales y reactivación de antiguos; incluye lista, guion, reporting y mejora mensual.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, consultivo / basado en preguntas, conciso, orientado a la acción. Usa 278 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 46 palabras por página comercial recuperada. Muestras breves: “モバイル下部” · “小冊子” · “お問い合わせ”.",
+    "supportingHeadings": [
+      "アポハンターとは",
+      "アポハンターが、御社の専属営業コンサルタントになります！",
+      "専属の担当者が月に1度訪問し、成果報告と営業戦略のご提案致します！",
+      "お客様から大好評の『月次コール結果報告レポート』",
+      "お問い合わせはこちらから",
+      "実績紹介",
+      "【情報・通信業】ビクターエンタテインメント株式会社様",
+      "【IT企業】株式会社ネットプロテクションズ様",
+      "【食品】株式会社菅乃屋ミート様",
+      "【食品】株式会社千興ファーム様",
+      "その他、沢山のお客様からアポハンターご利用の感想を頂戴しております！",
+      "料金システム",
+      "成果報酬、固定型、複合型、柔軟にカスタマイズ致します！！",
+      "オプションサービス",
+      "アポハンターと併用することで最高のパフォーマンスを生み出します！",
+      "商談が決まらない！！！即戦力営業マンが欲しい！",
+      "ヒットマン 成果報酬型プロセールスマンレンタルサービス",
+      "面倒なリストアップ作業だけ依頼したい！",
+      "アズノート リストアップ代行サービス",
+      "代表挨拶",
+      "アポハンターは【専門特化型】法人営業のアウトバウンド専門アウトソーサーです",
+      "【業界稀】成果連動報酬型アウトソーサーです",
+      "【業界屈指】アポの確度を\"\"かなり\"\"気にするアウトソーサーです",
+      "モバイル下部",
+      "小冊子",
+      "お客様事例",
+      "投稿のページ送り",
+      "会社概要",
+      "アクセスマップ",
+      "コンプライアンス体制"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "お問い合わせ",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://asz-park.com/service/apohunter/",
+      "text": "お問い合わせ",
+      "href": "https://asz-park.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.5
+    },
+    "ctas": [
+      "お問い合わせ",
+      "メールでのお問い合わせはこちら",
+      "送信",
+      "トップへ戻る"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://asz-park.com/contact/",
+        "index": 1,
+        "action": "https://asz-park.com/contact/",
+        "method": "POST",
+        "submitText": "送信",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "氏名 (※必須)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "kana",
+            "label": "フリガナ (※必須)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "メールアドレス (※必須)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company-name",
+            "label": "会社名 (※必須)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "company-tel",
+            "label": "電話番号 (※必須)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company-address",
+            "label": "住所",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "radio-222",
+            "label": "必要",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox-102[]",
+            "label": "メール",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "メッセージ本文 (※必須)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://asz-park.com/booklet/manual_exercise/",
+        "index": 1,
+        "action": "https://asz-park.com/booklet/manual_exercise/",
+        "method": "POST",
+        "submitText": "送信",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "company-name",
+            "label": "会社名（必須）",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel-number",
+            "label": "電話番号（必須）",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-address",
+            "label": "住所（必須）",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-postname",
+            "label": "部署・役職",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "氏名（必須）",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-ruby",
+            "label": "フリガナ",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "メールアドレス（必須）",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 7 y 9 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 9,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Outsourcing B2B especializado en outbound y appointment setting a éxito: nuevos clientes, seguimiento de clientes actuales y reactivación de antiguos; incluye lista, guion, reporting y mejora mensual.",
+    "audience": "Empresas B2B japonesas de IT, servicios, construcción/inmobiliario, alimentación y otras industrias que externalizan apertura de mercado y citas con decisores.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://asz-park.com/service/apohunter/",
+        "https://asz-park.com/booklet/",
+        "https://asz-park.com/case/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "モバイル下部",
+        "小冊子",
+        "お問い合わせ",
+        "営業代行で過去上手くいかなかったお客様向け小冊子"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "メールでのお問い合わせはこちら",
+        "お問い合わせ",
+        "送信",
+        "トップへ戻る"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://asz-park.com/contact/ · 9 campos",
+        "https://asz-park.com/booklet/manual_exercise/ · 7 campos",
+        "https://asz-park.com/booklet/success/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Definición cuantitativa/cualitativa del ICP → lista y test opcional hasta 300 empresas → guion → llamadas outbound y follow-up → lead/cita según cargo objetivo → entrega → reunión"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://asz-park.com/service/apohunter/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://asz-park.com/booklet/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://asz-park.com/case/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://asz-park.com/company/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://asz-park.com/contact/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://asz-park.com/booklet/manual_exercise/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://asz-park.com/booklet/success/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=asz-park.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=ApoHunter%20%2F%20Asu",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "7 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “お問い合わせ”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

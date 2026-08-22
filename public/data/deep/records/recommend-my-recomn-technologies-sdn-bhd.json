@@ -1,0 +1,1100 @@
+{
+  "id": "recommend-my-recomn-technologies-sdn-bhd",
+  "name": "Recommend.my (Recomn Technologies Sdn Bhd)",
+  "reviewedAt": "2026-08-22T15:50:18.530Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Book trusted home services in Malaysia",
+    "heroObserved": true,
+    "priorSummary": "Marketplace de mejoras del hogar: requisitos del cliente, hasta 3 respuestas de profesionales en 24 horas, comparación, cita y pago protegido.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, urgencia comercial, consultivo / basado en preguntas, orientado a la acción. Usa 311 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 439 palabras por página comercial recuperada. Muestras breves: “Book trusted home services in Malaysia” · “Popular” · “Electrical and Wiring Services”.",
+    "supportingHeadings": [
+      "Popular",
+      "Book trusted home services in Malaysia",
+      "Latest Promotion",
+      "Most Popular",
+      "Home Cleaning",
+      "Aircon Servicing",
+      "Electrical and Wiring Services",
+      "Plumber",
+      "Handyman Contractor",
+      "Washing Machine and Dryer Repair",
+      "Home Improvement",
+      "Aircon Installer",
+      "Cabinet Contractor",
+      "Curtain and Blinds Contractor",
+      "Interior Designer",
+      "Kitchen Cabinet",
+      "Plaster Ceiling Supplier and Installer",
+      "Home Maintenance",
+      "Alarm and CCTV Repair",
+      "Auto-gate Repair",
+      "Carpet Cleaning",
+      "Fridge Repair",
+      "Cleaning and Disinfection",
+      "Disinfection Services",
+      "We are proud to be the services partner for:",
+      "How to use Recommend.my",
+      "Thousands of pros ready to help you",
+      "D Ezeno Sdn Bhd",
+      "Ar Work Enterprise",
+      "Cool Ace Renovati..."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.recommend.my/",
+      "text": "Contact Us",
+      "href": "https://www.recommend.my/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Book Now",
+      "Apply",
+      "Contact Us",
+      "Request Quote",
+      "Request a service",
+      "Request this service",
+      "Whatsapp",
+      "Change",
+      "Pay Now"
+    ],
+    "captureType": "Checkout verificado",
+    "forms": [
+      {
+        "pageUrl": "https://www.recommend.my/businesses/your-planners/albums/37731?popup_album=true",
+        "index": 1,
+        "action": "https://www.recommend.my/searches",
+        "method": "GET",
+        "submitText": "Request Quote",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "select",
+            "name": "name",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.recommend.my/searches?name=Electrical+and+Wiring+Services",
+        "index": 1,
+        "action": "https://www.recommend.my/quote_requests",
+        "method": "POST",
+        "submitText": "Change",
+        "visibleFieldCount": 20,
+        "requiredFieldCount": 15,
+        "hiddenFieldCount": 26,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "quote_request[dynamic_content][1][answer][]",
+            "label": "View Pricing",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][3][answer]",
+            "label": "Install",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "quote_request[dynamic_content][4][answer][]",
+            "label": "3 phase wiring",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][5][answer]",
+            "label": "Yes",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][6][answer]",
+            "label": "Landed (e.g terrace, semi-d, bungalow)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][7][answer]",
+            "label": "Yes, give me 15% Off",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][8][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[appointment_date]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][9][answer]",
+            "label": "Morning (09:00 - 11:00)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[dynamic_content][10][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "quote_request[dynamic_content][11][answer][]",
+            "label": "Choose File",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[budget_credit_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[first_name]",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[last_name]",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quote_request[email]",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[phone]",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[area_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[city_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[venue]",
+            "label": null,
+            "placeholder": "Example: No. 35, Jalan 1/40, 47100 Petaling Jaya",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "quote_request[use_recomn_pay]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.recommend.my/searches?name=Electrical+and+Wiring+Services",
+        "index": 2,
+        "action": "https://www.recommend.my/vouchers",
+        "method": "GET",
+        "submitText": "Apply",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "q[code_or_name_eq]",
+            "label": null,
+            "placeholder": "Enter promo code here",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.recommend.my/searches?name=Courts+-+Aircon+Installer",
+        "index": 1,
+        "action": "https://www.recommend.my/quote_requests",
+        "method": "POST",
+        "submitText": "Change",
+        "visibleFieldCount": 29,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 38,
+        "fields": [
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][1][group_increment][0][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][1][group_increment][1][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][1][group_increment][2][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][1][group_increment][3][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][1][group_increment][4][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][2][group_increment][0][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][3][group_increment][0][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "quote_request[dynamic_content][3][group_increment][1][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][4][answer]",
+            "label": "Landed (e.g terrace, semi-d, bungalow)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][5][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][6][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][7][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][8][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][9][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][10][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][11][answer]",
+            "label": "Courts",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][12][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][13][answer]",
+            "label": "Morning (09:00 - 11:00)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][14][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][15][answer]",
+            "label": "Morning (09:00 - 11:00)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[dynamic_content][17][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "quote_request[dynamic_content][18][answer][]",
+            "label": "Choose File",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[first_name]",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[last_name]",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quote_request[email]",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[phone]",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[area_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[city_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[venue]",
+            "label": null,
+            "placeholder": "Example: No. 35, Jalan 1/40, 47100 Petaling Jaya",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.recommend.my/searches?name=Shopee+-+Aircon+Installer",
+        "index": 1,
+        "action": "https://www.recommend.my/quote_requests",
+        "method": "POST",
+        "submitText": "Change",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 15,
+        "fields": [
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][0][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][1][answer]",
+            "label": "Morning (09:00 - 11:00)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[dynamic_content][2][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[budget_credit_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[first_name]",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[last_name]",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quote_request[email]",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[phone]",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[area_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[city_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[venue]",
+            "label": null,
+            "placeholder": "Example: No. 35, Jalan 1/40, 47100 Petaling Jaya",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.recommend.my/searches?name=AEON+-+TV+Mounting",
+        "index": 1,
+        "action": "https://www.recommend.my/quote_requests",
+        "method": "POST",
+        "submitText": "Change",
+        "visibleFieldCount": 20,
+        "requiredFieldCount": 13,
+        "hiddenFieldCount": 25,
+        "fields": [
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][1][answer]",
+            "label": "Up to 32 Inch",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][2][answer]",
+            "label": "Yes",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][3][answer]",
+            "label": "Yes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][4][answer]",
+            "label": "Fixed wall mount",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][5][answer]",
+            "label": "Drywall",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][6][answer]",
+            "label": "Landed (e.g terrace, semi-d, bungalow)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][7][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][8][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][9][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][10][answer]",
+            "label": "1001",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[dynamic_content][11][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quote_request[dynamic_content][12][answer]",
+            "label": "Morning (09:00 - 11:00)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[dynamic_content][13][answer]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[first_name]",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[last_name]",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quote_request[email]",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quote_request[phone]",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[area_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quote_request[city_id]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quote_request[venue]",
+            "label": null,
+            "placeholder": "Example: No. 35, Jalan 1/40, 47100 Petaling Jaya",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "6 diseño(s) de formulario distinto(s); entre 1 y 29 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: quote_request[budget_credit_id], quote_request[area_id], quote_request[city_id].",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 29,
+      "qualification": [
+        "quote_request[budget_credit_id]",
+        "quote_request[area_id]",
+        "quote_request[city_id]"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": true,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketplace de mejoras del hogar: requisitos del cliente, hasta 3 respuestas de profesionales en 24 horas, comparación, cita y pago protegido.",
+    "audience": "Propietarios en Malasia y profesionales de reformas, reparación, mantenimiento e inspección del hogar.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Thousands of pros ready to help youD Ezeno Sdn BhdInterior designer in Perak 5.0 (5 reviews)\"Would highly recommend this team for whoever lo...\"Ar Work Enterprise Renovation Contractor in Kuala Lumpur 5.0 (5 reviews)\"I was attended by their Person-In-Charge Mr.",
+      "Ha...\"Cool Ace Renovati...Aircon servicing in Selangor 5.0 (1 review)\"They came and replaced my kitchen tap as well a...\"Reex Empire Sdn.BhdHome cleaning in Kuala Lumpur 5.0 (7 reviews)\"Workmanship was good, will definitely use their...\"Orientique ConceptPlumber in Selangor 5.0 (8 reviews)\"good quality and reasonable price."
+    ],
+    "objections": [
+      "Thousands of pros ready to help youD Ezeno Sdn BhdInterior designer in Perak 5.0 (5 reviews)\"Would highly recommend this team for whoever lo...\"Ar Work Enterprise Renovation Contractor in Kuala Lumpur 5.0 (5 reviews)\"I was attended by their Person-In-Charge Mr."
+    ],
+    "urgency": [
+      "Please select a date at least 3 working days from today.Preferred Installation Time *Morning (09:00 - 11:00)Lunch Time (11:00 - 13:00)Early Afternoon (13:00 - 15:00)Late Afternoon (15:00 - 17:00)Do not select Saturday (After 12PM) and Sunday as Installation Date/Time."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Thousands of pros ready to help youD Ezeno Sdn BhdInterior designer in Perak 5.0 (5 reviews)\"Would highly recommend this team for whoever lo...\"Ar Work Enterprise Renovation Contractor in Kuala Lumpur 5.0 (5 reviews)\"I was attended by their Person-In-Charge Mr.",
+          "url": "https://www.recommend.my/",
+          "pageTitle": "Hire Trusted Home Service Pros in Malaysia | Recommend.my",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ha...\"Cool Ace Renovati...Aircon servicing in Selangor 5.0 (1 review)\"They came and replaced my kitchen tap as well a...\"Reex Empire Sdn.BhdHome cleaning in Kuala Lumpur 5.0 (7 reviews)\"Workmanship was good, will definitely use their...\"Orientique ConceptPlumber in Selangor 5.0 (8 reviews)\"good quality and reasonable price.",
+          "url": "https://www.recommend.my/",
+          "pageTitle": "Hire Trusted Home Service Pros in Malaysia | Recommend.my",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Thousands of pros ready to help youD Ezeno Sdn BhdInterior designer in Perak 5.0 (5 reviews)\"Would highly recommend this team for whoever lo...\"Ar Work Enterprise Renovation Contractor in Kuala Lumpur 5.0 (5 reviews)\"I was attended by their Person-In-Charge Mr.",
+          "url": "https://www.recommend.my/",
+          "pageTitle": "Hire Trusted Home Service Pros in Malaysia | Recommend.my",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.recommend.my/",
+        "https://www.recommend.my/contact",
+        "https://www.recommend.my/businesses/your-planners/albums/37731?popup_album=true"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Book trusted home services in Malaysia",
+        "Popular",
+        "Electrical and Wiring Services",
+        "Courts - Aircon Installer"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Request this service",
+        "Contact Us",
+        "Request a service",
+        "Request Quote",
+        "Whatsapp",
+        "Change",
+        "Book Now",
+        "Apply"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.recommend.my/businesses/your-planners/albums/37731?popup_album=true · 1 campos",
+        "https://www.recommend.my/businesses/your-planners/albums/37731?popup_album=true · 1 campos",
+        "https://www.recommend.my/searches?name=Electrical+and+Wiring+Services · 20 campos",
+        "https://www.recommend.my/searches?name=Electrical+and+Wiring+Services · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Book Now"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "observado",
+      "evidence": [
+        "Checkout o compra directa visible."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario de requisitos → hasta 3 respuestas en 24 h → comparación de perfiles, reseñas y precio → cita → Recommend Pay → retención/liberación → reseña o reclamación."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Propuesta / cierre [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.recommend.my/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.recommend.my/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.recommend.my/businesses/your-planners/albums/37731?popup_album=true",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.recommend.my/searches?name=Electrical+and+Wiring+Services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.recommend.my/searches?name=Courts+-+Aircon+Installer",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.recommend.my/searches?name=Shopee+-+Aircon+Installer",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.recommend.my/searches?name=AEON+-+TV+Mounting",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=recommend.my",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR03155444508808708097/creative/CR00849442310927155201?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR05857725927294763009/creative/CR14451851857619845121?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR05857725927294763009/creative/CR13462521190551650305?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR05857725927294763009/creative/CR01971251390269358081?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Recommend.my&search_type=keyword_unordered",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.recommend.my/service/grille",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.recommend.my/businesses/listing/home-improvement/home-inspection/negeri-sembilan",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://www.recommend.my/blog/how-much-do-painting-services-cost-in-klang-valley/",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR03155444508808708097?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR05857725927294763009?region=anywhere",
+      "label": "Fuente pública 19"
+    }
+  ],
+  "archivedEvidenceCount": 11,
+  "archivedEvidenceNote": "Los enlaces temporales o técnicos no compartibles se retiraron; los activos recuperables permanecen en la galería local de la ficha.",
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

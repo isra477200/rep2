@@ -1,0 +1,445 @@
+{
+  "id": "yellowpages-com-fj-ficha-de-cobertura-mundial-fiyi",
+  "name": "yellowpages.com.fj — ficha de cobertura mundial — Fiyi",
+  "reviewedAt": "2026-08-22T15:50:19.045Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "SEARCH. FIND. CONNECT!",
+    "heroObserved": true,
+    "priorSummary": "Búsqueda, perfiles, mapas, reseñas, anuncios, sponsored links, e-books y listado online gratuito. CTA: List Your Business/Advertise.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 5361 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 5891 palabras por página comercial recuperada. Muestras breves: “SEARCH. FIND. CONNECT!” · “Our Contact Details” · “Tertiary Scholarships & Loans Service Claimed”.",
+    "supportingHeadings": [
+      "SEARCH. FIND. CONNECT!",
+      "Featured Businesses",
+      "Fiji’s most trusted online business directory.",
+      "Fiji’s best online directory.",
+      "Get Listed Today",
+      "Happening Cities",
+      "Suva",
+      "Nasinu",
+      "Nadi",
+      "Lautoka",
+      "Labasa",
+      "Ba",
+      "Explore Our Ebook Directory Now",
+      "Sponsored Link",
+      "Useful links",
+      "Quick Links",
+      "Our Contact Details",
+      "Suva Branch",
+      "Nadi Branch",
+      "Send us a message",
+      "Tertiary Scholarships & Loans Service Claimed",
+      "Additional Details",
+      "Ads Listing",
+      "Need Help ?",
+      "Search By Category Type",
+      "Tips for Better Searching",
+      "Who we are",
+      "Our Mission",
+      "Make Use of Yellow Pages",
+      "2026 Directory"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://yellowpages.com.fj/",
+      "text": "Contact Us",
+      "href": "https://yellowpages.com.fj/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Submit",
+      "Sign In",
+      "Submit Form"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://yellowpages.com.fj/",
+        "index": 3,
+        "action": "https://yellowpages.com.fj/",
+        "method": "POST",
+        "submitText": "Get New Password",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "email",
+            "name": "user_login",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yellowpages.com.fj/contact-us/",
+        "index": 6,
+        "action": "https://yellowpages.com.fj/contact-us/",
+        "method": "POST",
+        "submitText": "Submit Form",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "names[first_name]",
+            "label": "First Name",
+            "placeholder": "First Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "names[last_name]",
+            "label": "Last Name",
+            "placeholder": "Last Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Subject",
+            "placeholder": "Subject",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Your Message",
+            "placeholder": "Your Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yellowpages.com.fj/listing/tertiary-scholarships-loans-service/",
+        "index": 5,
+        "action": "https://yellowpages.com.fj/listing/tertiary-scholarships-loans-service/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Name:",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email6",
+            "label": null,
+            "placeholder": "Email:",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message1",
+            "label": null,
+            "placeholder": "Message:",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 5 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Meta Pixel",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Búsqueda, perfiles, mapas, reseñas, anuncios, sponsored links, e-books y listado online gratuito. CTA: List Your Business/Advertise.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Get discovered by customers across Fiji searching for local services.This entry-level option places your business in Fiji's top directory with over 15,000 verified listings, perfect for SMEs.",
+      "Connect with businesses in Fiji by phone, address, website, email, maps, rating, review and much more...",
+      "From phone numbers and addresses to websites, emails, maps, reviews, and ratings everything you need is right at your fingertips.",
+      "From Suva and Nadi to Lautoka, Labasa, and Savusavu, companies use Fiji directories to increase visibility and reach customers searching by location and service.",
+      "Our platform connects customers with the services they need by placing your business at the top of relevant searches.",
+      "Sponsored listings help you stand out from competitors, attract more leads, and reach customers actively looking for products and services like yours."
+    ],
+    "objections": [
+      "Cancel Sign In Home Directories About Us Promotions Contact Us Why Are You Reporting this Listing?"
+    ],
+    "urgency": [
+      "Connect Get Listed Today Fill out our free online listing form on Yellow Pages Fiji to instantly boost your business visibility.",
+      "List Your Business Now Happening Cities Cities and towns across Fiji rely on Yellow Page Fiji to help residents and visitors easily connect with local businesses through a trusted online directory.",
+      "Suva 2250Listings Nasinu 344Listings Nadi 880Listings Lautoka 765Listings Labasa 261Listings Ba 211Listings Explore Our Ebook Directory Now Download the latest Fiji business ebooks packed with verified listings, contacts, and services.",
+      "Open Now09:00 AM - 05:00 PMShow all timingsMonday09:00 AM - 05:00 PMTuesday09:00 AM - 05:00 PMWednesday09:00 AM - 05:00 PMThursday09:00 AM - 05:00 PMFriday09:00 AM - 05:00 PM Level 1, Unit 36-37 Gardeb City Complex, Raiwai.",
+      "Previously operating under the Amalgamated Telecom Holdings group and providing directory solutions for Telecom Fiji Limited, the Yellow Pages® and White Pages® brands have now entered a new chapter under the ownership of Datec Fiji Limited.",
+      "Our Mission Our mission is to transform Fiji’s business discovery experience by combining Yellow Pages Fiji’s trusted heritage with Datec Fiji Limited’s technological expertise."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Connect with businesses in Fiji by phone, address, website, email, maps, rating, review and much more...",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        },
+        {
+          "text": "From phone numbers and addresses to websites, emails, maps, reviews, and ratings everything you need is right at your fingertips.",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Get discovered by customers across Fiji searching for local services.This entry-level option places your business in Fiji's top directory with over 15,000 verified listings, perfect for SMEs.",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        },
+        {
+          "text": "From Suva and Nadi to Lautoka, Labasa, and Savusavu, companies use Fiji directories to increase visibility and reach customers searching by location and service.",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our platform connects customers with the services they need by placing your business at the top of relevant searches.",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sponsored listings help you stand out from competitors, attract more leads, and reach customers actively looking for products and services like yours.",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Cancel Sign In Home Directories About Us Promotions Contact Us Why Are You Reporting this Listing?",
+          "url": "https://yellowpages.com.fj/",
+          "pageTitle": "Yellow Pages Fiji: Your Guide to Trusted Services",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cancel Sign In Home Directories About Us Promotions Contact Us Why Are You Reporting this Listing?",
+          "url": "https://yellowpages.com.fj/listing/tertiary-scholarships-loans-service/",
+          "pageTitle": "Tertiary Scholarships & Loans Service - Yellow Pages Fiji",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cancel Sign In Home Directories About Us Promotions Contact Us Why Are You Reporting this Listing?",
+          "url": "https://yellowpages.com.fj/listing/carpet-shampooing-services/",
+          "pageTitle": "Carpet Shampooing Services - Yellow Pages Fiji",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.com.fj/",
+        "https://yellowpages.com.fj/contact-us/",
+        "https://yellowpages.com.fj/listing/tertiary-scholarships-loans-service/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "SEARCH. FIND. CONNECT!",
+        "Our Contact Details",
+        "Tertiary Scholarships & Loans Service Claimed",
+        "2026 Directory"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Sign In",
+        "Submit Form",
+        "Submit"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.com.fj/ · 1 campos",
+        "https://yellowpages.com.fj/contact-us/ · 1 campos",
+        "https://yellowpages.com.fj/contact-us/ · 5 campos",
+        "https://yellowpages.com.fj/listing/tertiary-scholarships-loans-service/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://yellowpages.com.fj/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://yellowpages.com.fj/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://yellowpages.com.fj/listing/tertiary-scholarships-loans-service/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://yellowpages.com.fj/help/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://yellowpages.com.fj/about-us/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://yellowpages.com.fj/directories/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://yellowpages.com.fj/listing/carpet-shampooing-services/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://yellowpages.com.fj/promotions/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://yellowpages.com.fj/free-listing/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://yellowpages.com.fj/wp-content/uploads/2026/04/2026_E_BOOK_web_eml_numbers_link.pdf: Contenido no textual: application/pdf",
+    "https://yellowpages.com.fj/wp-content/uploads/2026/01/2026_E_BOOK_White_compressed_final.pdf: Contenido no textual: application/pdf",
+    "https://yellowpages.com.fj/wp-content/uploads/2026/01/2026_EBOOK_Final.pdf: Contenido no textual: application/pdf",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Meta Pixel, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

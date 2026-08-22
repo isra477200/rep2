@@ -1,0 +1,505 @@
+{
+  "id": "habitissimo",
+  "name": "Habitissimo",
+  "reviewedAt": "2026-08-22T15:50:18.604Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Encuentra profesionales recomendados cerca de ti",
+    "heroObserved": true,
+    "priorSummary": "Al PROFESIONAL: \"Sin planes, sin comisiones, sin permanencia\" y \"Paga solo por los contactos que recibas, sin planes ni cuotas mensuales\". Al CONSUMIDOR, que es quien genera el lead: \"Hasta 4 contactos con profesionales recomendados en servicios del hogar. Solicítalo ya\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 595 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2277 palabras por página comercial recuperada. Muestras breves: “Encuentra profesionales recomendados cerca de ti” · “Contacto” · “Guía de precios y recomendaciones”.",
+    "supportingHeadings": [
+      "Consigue trabajos en tu zona",
+      "Consigue clientes sin complicaciones",
+      "Sin planes, sin comisiones, sin permanencia",
+      "Aumenta la visibilidad de tu negocio",
+      "Consigue trabajos",
+      "Así les funciona a estos profesionales",
+      "Empezar es fácil",
+      "Consigue trabajos en tu zona hoy mismo",
+      "Servicios más solicitados",
+      "Reformas",
+      "Limpieza",
+      "Instaladores",
+      "Preguntas frecuentes",
+      "Te informamos sin compromiso",
+      "Encuentra profesionales recomendados cerca de ti",
+      "Resuelve tus dudas con nuestras guías de precios",
+      "Cómo funciona habitissimo",
+      "Para particulares",
+      "Para profesionales",
+      "Te ayudamos a mejorar tu hogar",
+      "Busca profesionales con opiniones reales contrastadas",
+      "Oriéntate sobre precios y pide presupuesto gratis",
+      "Encuentra inspiración y resuelve tus dudas",
+      "Compara el antes y después en fotos de proyectos reales",
+      "Resuelve tus dudas con nuestras preguntas y respuestas",
+      "Esto es lo que opinan personas como tú",
+      "Descubre cómo hacer tu casa más eficiente",
+      "¿Eres un profesional? Consigue más clientes fácilmente",
+      "Pere Marques",
+      "José Manuel Ropero"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacta con nosotros",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.habitissimo.es/",
+      "text": "Contacta con nosotros",
+      "href": "https://www.habitissimo.es/contacto",
+      "element": "a",
+      "kind": "conversion",
+      "score": 159.75
+    },
+    "ctas": [
+      "Contacta con nosotros",
+      "Descarga la app",
+      "Escríbenos por Whatsapp",
+      "Enviar",
+      "Comunidad",
+      "Conseguir trabajos"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.habitissimo.es/contacto",
+        "index": 1,
+        "action": "https://www.habitissimo.es/contacto",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "display_name",
+            "label": "Nombre:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Email:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Teléfono:",
+            "placeholder": "(Opcional)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "user_type",
+            "label": "¿Eres un particular o una empresa?:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Asunto:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "body",
+            "label": "Mensaje:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "embedded_privacy_consent_form[terms_and_conditions]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: ¿Eres un particular o una empresa?:.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": [
+        "¿Eres un particular o una empresa?:"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp",
+      "Google Tag Manager",
+      "Google Analytics"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Al PROFESIONAL: \"Sin planes, sin comisiones, sin permanencia\" y \"Paga solo por los contactos que recibas, sin planes ni cuotas mensuales\". Al CONSUMIDOR, que es quien genera el lead: \"Hasta 4 contactos con profesionales recomendados en servicios del hogar. Solicítalo ya\".",
+    "audience": "Reformas, obra, albañilería, humedades, aerotermia, climatización, mudanzas, pintura, fontanería y gremios del hogar en toda España. Sede en Palma de Mallorca, operación en España, México, Chile, Argentina, Colombia y Perú.",
+    "prices": [],
+    "guarantee": [
+      "Calidad de los componentes Elegir componentes de mayor calidad aumenta el precio de la instalación, pero garantiza una rentabilidad debido a su alta eficiencia y garantía.",
+      "También hay que comprobar otras condiciones como las garantías que ofrece el fabricante."
+    ],
+    "proof": [
+      "Consigue más clientes fácilmenteContacta al instante con personas que buscan en tu zona a profesionales expertos en construcción, reformas, instalaciones, mudanzas, arquitectos, etcConsigue clientes si…",
+      "Me gusta poder contactar con clientes potenciales.",
+      "Estoy muy agradecido con habitissimo, ya que a través de la web he conseguido mis primeros clientes.",
+      "Y luego, el boca a boca hace el resto… Sinceramente, habitissimo ha salvado la vida de mi negocioJaime SalváBalearesLo que más me gusta de habitissimo es la oportunidad de acceder a clientes, ya que hoy en día es la parte más complicada de la profesión."
+    ],
+    "objections": [
+      "…reformas, instalaciones, mudanzas, arquitectos, etcConsigue clientes sin complicacionesSin planes, sin comisiones, sin permanenciaAumenta la visibilidad de tu negocioÚnete a nuestra red de profesionalesPere MarquesBarcelonaConocí habitissimo a través de un cliente de Mallorca cuando yo hacía de comercial."
+    ],
+    "urgency": [
+      "Y luego, el boca a boca hace el resto… Sinceramente, habitissimo ha salvado la vida de mi negocioJaime SalváBalearesLo que más me gusta de habitissimo es la oportunidad de acceder a clientes, ya que hoy en día es la parte más complicada de la profesión.",
+      "Ahora escribe los mejores consejos y trucos sobre reformas y consejos del hogar."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Calidad de los componentes Elegir componentes de mayor calidad aumenta el precio de la instalación, pero garantiza una rentabilidad debido a su alta eficiencia y garantía.",
+          "url": "https://www.habitissimo.es/presupuestos/placas-solares",
+          "pageTitle": "¿Cuánto cuesta instalar placas solares? Precio placas solares 2026",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "También hay que comprobar otras condiciones como las garantías que ofrece el fabricante.",
+          "url": "https://www.habitissimo.es/presupuestos/aire-acondicionado",
+          "pageTitle": "¿Cuál es el precio de instalación de un aire acondicionado?",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Consigue más clientes fácilmenteContacta al instante con personas que buscan en tu zona a profesionales expertos en construcción, reformas, instalaciones, mudanzas, arquitectos, etcConsigue clientes si…",
+          "url": "https://www.habitissimo.es/",
+          "pageTitle": "Cerrar banner",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Me gusta poder contactar con clientes potenciales.",
+          "url": "https://www.habitissimo.es/",
+          "pageTitle": "Cerrar banner",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Estoy muy agradecido con habitissimo, ya que a través de la web he conseguido mis primeros clientes.",
+          "url": "https://www.habitissimo.es/",
+          "pageTitle": "Cerrar banner",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Y luego, el boca a boca hace el resto… Sinceramente, habitissimo ha salvado la vida de mi negocioJaime SalváBalearesLo que más me gusta de habitissimo es la oportunidad de acceder a clientes, ya que hoy en día es la parte más complicada de la profesión.",
+          "url": "https://www.habitissimo.es/",
+          "pageTitle": "Cerrar banner",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…reformas, instalaciones, mudanzas, arquitectos, etcConsigue clientes sin complicacionesSin planes, sin comisiones, sin permanenciaAumenta la visibilidad de tu negocioÚnete a nuestra red de profesionalesPere MarquesBarcelonaConocí habitissimo a través de un cliente de Mallorca cuando yo hacía de comercial.",
+          "url": "https://www.habitissimo.es/",
+          "pageTitle": "Cerrar banner",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Email",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.habitissimo.es/registrar/empresa",
+        "https://www.habitissimo.es/",
+        "https://www.habitissimo.es/contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Encuentra profesionales recomendados cerca de ti",
+        "Contacto",
+        "Guía de precios y recomendaciones",
+        "¿Cuánto cuesta instalar placas solares? Precios en 2026"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Conseguir trabajos",
+        "Escríbenos por Whatsapp",
+        "Descarga la app",
+        "Contacta con nosotros",
+        "Comunidad",
+        "Enviar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.habitissimo.es/contacto · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Meta/Google → landing de profesionales → oficio y zona → registro → activar suscripción → asignar presupuesto semanal → enviar documentación → recibir contactos"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.habitissimo.es/registrar/empresa",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.habitissimo.es/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.habitissimo.es/contacto",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.habitissimo.es/presupuestos",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.habitissimo.es/presupuestos/placas-solares",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.habitissimo.es/presupuestos/aerotermia",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.habitissimo.es/presupuestos/aire-acondicionado",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.habitissimo.es/premium",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://habitissimo.es/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://web.archive.org/web/20130115054511/http://www.habitissimo.es/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://web.archive.org/web/20180101125759/https://www.habitissimo.es/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://web.archive.org/web/20220117100247/https://www.habitissimo.es",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "http://web.archive.org/web/20260101125017/https://www.habitissimo.es/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=2061336404468557",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR16137551617070202881?region=ES",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR01005934263310221313?region=ES",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1576031412888048292",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR07838346797310279681?region=ES",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR08453496932843651073?region=ES",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR00539006283840225281?region=ES",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/4366237094697978864/index.html",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR17615568585109798913?region=ES",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR16828944019177340929?region=ES",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR14944799891430309889?region=ES",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/12973936215833491907",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR05265619124528087041?region=ES",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR16780476747761057793?region=ES",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR03214598036814561281?region=ES",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13670128961572049843",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR08811679699043352577/creative/CR06258897656815288321?region=ES",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacta con nosotros”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp, Google Tag Manager, Google Analytics) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

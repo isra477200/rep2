@@ -1,0 +1,544 @@
+{
+  "id": "kanito",
+  "name": "Kanito",
+  "reviewedAt": "2026-08-22T15:50:19.526Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Servicios Informáticos Profesionales en Madrid para empresas",
+    "heroObserved": true,
+    "priorSummary": "SEO, diseño web, Google Ads, publicidad programática, gestión de redes sociales, contenido/copywriting, diseño gráfico, producción audiovisual, consultoría, cursos de formación",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 256 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2193 palabras por página comercial recuperada. Muestras breves: “Nuestra Agencia” · “Consultoría de Marketing Digital” · “Plan de Comunicación para Empresas”.",
+    "supportingHeadings": [
+      "Nuestra Agencia",
+      "Si quieres saber más sobre Kanito Marketing Group estás en el lugar correcto. Descubre todo lo que necesites sobre nosotros.",
+      "NUESTRO EQUIPO PROFESIONAL",
+      "Identidad Corporativa",
+      "Misión",
+      "Visión",
+      "Valores",
+      "Trabaja con nosotros | Buscamos talento",
+      "Enlaces de interés",
+      "Consultoría de Marketing Digital",
+      "Somos tu socio estratégico en el éxito empresarial",
+      "Consultoría de marketing digital smart methodology",
+      "Convierte tu proyecto en un negocio rentable",
+      "Consultoría estrategica",
+      "Potenciar el crecimiento de nuestros clientes a través de estrategias de marketing innovadoras y efectivas.",
+      "¿Quiénes somos?",
+      "Consultoría de marketing profesional con un equipo humano, cualificado, joven y profesional",
+      "¿Qué puedes esperar de nosotros?",
+      "¿Cómo hacemos que consigas más clientes?",
+      "Gestionamos tu Kit Digital para impulsar tu negocio.",
+      "Partners",
+      "Artículos de Marketing Digital",
+      "Cuéntanos acerca de tu proyecto",
+      "Preguntas frecuentes de consultoría de marketing",
+      "Confían en KMG",
+      "Otros llegaron aquí buscando",
+      "Nuestros Clientes",
+      "Plan de Comunicación para Empresas",
+      "Plan de Comunicación",
+      "¿Qué es un plan de comunicación?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agendar Videollamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://kanito.es/consultoria-de-marketing-digital/",
+      "text": "Agendar Videollamada",
+      "href": "https://calendly.com/agenciamarketingkmg",
+      "element": "a",
+      "kind": "conversion",
+      "score": 220
+    },
+    "ctas": [
+      "Agendar Videollamada",
+      "agendar una videollamada",
+      "Agendar una videollamada",
+      "Contacto",
+      "SOLICITAR AHORA",
+      "Solicita el Kit Digital",
+      "Enviar"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://kanito.es/agencia/",
+        "index": 1,
+        "action": "https://kanito.es/agencia/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-lastname",
+            "label": null,
+            "placeholder": "Apellido",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "perfil[]",
+            "label": "Google adwords SEM",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "cv",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-form",
+            "label": "He leido y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kanito.es/consultoria-de-marketing-digital/",
+        "index": 1,
+        "action": "https://kanito.es/consultoria-de-marketing-digital/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-tel",
+            "label": null,
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-form",
+            "label": "He leido y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kanito.es/plan-de-comunicacion-para-empresas/",
+        "index": 1,
+        "action": "https://kanito.es/plan-de-comunicacion-para-empresas/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-tel",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-form",
+            "label": "He leido y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kanito.es/posicionamiento-web-seo-para-empresas-de-reformas/",
+        "index": 1,
+        "action": "https://kanito.es/posicionamiento-web-seo-para-empresas-de-reformas/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Email*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-tel",
+            "label": "Teléfono*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "pagina-web",
+            "label": "Página Web*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-form",
+            "label": "He leido y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 4 y 8 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Página Web*.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 8,
+      "qualification": [
+        "Página Web*"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "SEO, diseño web, Google Ads, publicidad programática, gestión de redes sociales, contenido/copywriting, diseño gráfico, producción audiovisual, consultoría, cursos de formación",
+    "audience": "Multi-sector (ecommerce, agencias de viaje, arquitectura, reformas, pymes, veterinarias, clínicas dentales, startups, restaurantes, peluquerías/barberías, psicólogos, abogados) — sin solapamiento directo con plagas/toldos/auditivos/mudanzas",
+    "prices": [],
+    "guarantee": [
+      "Posicionamiento web de calidad con garantias."
+    ],
+    "proof": [
+      "CompromisoAsumimos cada proyecto como propio y no entendemos otra forma de trabajar que no sea implicándonos al 120% en cada proyecto para que consigas los resultados que mereces.",
+      "Nuestro conocimiento, profesionalidad y dedicación dentro de la informática quedan reflejados en el día a día con nuestros clientes Experiencia es saber qué es lo que funciona y lo que no para evitar errores."
+    ],
+    "objections": [],
+    "urgency": [
+      "PLAN PROFESIONAL 65,50€ Equipo/MesRecomendado a partir de 6 Equipos.Respuesta técnica < 1 hora.Asistencia remota Ilimitada.Soporte telefónico.Asistencia presencial No incluida.",
+      "ValoresEn KANITO Group actuamos con pasión, compromiso, excelencia y eficiencia desde el primer contacto con nuestros clientes ¡Informe de REDES SOCIALES!Solicítalo y te haremos llegar un completísimo informe con los puntos fuertes y débiles de tu perfil en las redes sociales SOLICITAR AHORA Trabaja con",
+      "Hoy en día, casi todos los sectores invierten tiempo y dinero en estrategias digitales para Leer más Blog Marketing Digital ¿Tu Negocio es un Secreto?",
+      "Descubre el Poder de la Visibilidad con UbikooEn el mundo digital de hoy, tener un negocio es solo la mitad de la batalla.",
+      "Hoy en día, si tienes un Leer más Cuéntanos acerca de tu proyectoQueremos ayudarte Infórmate ahora sin compromiso.",
+      "Dotamos de servicios informáticos para empresas en Madrid que se adaptan a la evolución de los medios tecnológicosEn el dinámico mundo empresarial de hoy, contar con servicios informáticos eficientes es clave para el éxito."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Posicionamiento web de calidad con garantias.",
+          "url": "https://kanito.es/posicionamiento-web-seo-para-startups/",
+          "pageTitle": "Agencia de posicionamiento web SEO para startups",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Nuestro conocimiento, profesionalidad y dedicación dentro de la informática quedan reflejados en el día a día con nuestros clientes Experiencia es saber qué es lo que funciona y lo que no para evitar errores.",
+          "url": "https://kanito.es/servicios-informaticos-madrid/",
+          "pageTitle": "Servicios informáticos en Madrid Soluciones Empresas Autónomos",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "CompromisoAsumimos cada proyecto como propio y no entendemos otra forma de trabajar que no sea implicándonos al 120% en cada proyecto para que consigas los resultados que mereces.",
+          "url": "https://kanito.es/servicios-informaticos-madrid/",
+          "pageTitle": "Servicios informáticos en Madrid Soluciones Empresas Autónomos",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…argar los planes y tarifas He leido y acepto la Política de Privacidado también puedesAgendar una videollamada Partners Preguntas frecuentes en servicios informáticos 01 ¿Qué servicios informáticos ofrecemos en Madrid?Ofrecemos una amplia gama de servicios informáticos que incluyen soporte técnico, mantenimiento de sis…",
+          "url": "https://kanito.es/servicios-informaticos-madrid/",
+          "pageTitle": "Servicios informáticos en Madrid Soluciones Empresas Autónomos",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://kanito.es/agencia/",
+        "https://kanito.es/consultoria-de-marketing-digital/",
+        "https://kanito.es/plan-de-comunicacion-para-empresas/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Nuestra Agencia",
+        "Consultoría de Marketing Digital",
+        "Plan de Comunicación para Empresas",
+        "Servicios Informáticos Profesionales en Madrid para empresas"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "SOLICITAR AHORA",
+        "Enviar",
+        "Solicita el Kit Digital",
+        "Agendar Videollamada",
+        "agendar una videollamada",
+        "Agendar una videollamada"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://kanito.es/agencia/ · 8 campos",
+        "https://kanito.es/consultoria-de-marketing-digital/ · 4 campos",
+        "https://kanito.es/plan-de-comunicacion-para-empresas/ · 4 campos",
+        "https://kanito.es/servicios-informaticos-madrid/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online",
+        "SOLICITAR AHORA",
+        "Agendar Videollamada",
+        "agendar una videollamada",
+        "Agendar una videollamada",
+        "Agendar Videollamada",
+        "Agendar Videollamada"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contacto por teléfono/email → diagnóstico de objetivos y necesidades → estrategia personalizada y propuesta → ejecución de los canales contratados → seguimiento continuo y comunicación transparente → resultados"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://kanito.es/agencia/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://kanito.es/consultoria-de-marketing-digital/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://kanito.es/plan-de-comunicacion-para-empresas/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://kanito.es/casos-de-exito/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://kanito.es/servicios-informaticos-madrid/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://kanito.es/posicionamiento-web-seo-para-empresas-de-reformas/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://kanito.es/posicionamiento-web-seo-para-startups/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://kanito.es/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://kanito.es/agencia/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agendar Videollamada”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

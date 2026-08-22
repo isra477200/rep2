@@ -1,0 +1,474 @@
+{
+  "id": "ghanayello-com",
+  "name": "ghanayello.com",
+  "reviewedAt": "2026-08-22T15:50:18.770Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "VerifiedBusiness Directory& Search Portal in Ghana",
+    "heroObserved": true,
+    "priorSummary": "Buscar/crear/reclamar ficha, enviar consulta y acceso a contactos.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 582 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 973 palabras por página comercial recuperada. Muestras breves: “VerifiedBusiness Directory& Search Portal in Ghana” · “Contact Us” · “Data Hub, powered by our SaaS platform.”.",
+    "supportingHeadings": [
+      "VerifiedBusiness Directory& Search Portal in Ghana",
+      "Facts about us.",
+      "Connect to our network. Expand your reach.",
+      "basic",
+      "premium",
+      "lifetime",
+      "New and updated companies.",
+      "Business data hub.",
+      "Popular locations.",
+      "Ghana lotto results.",
+      "Contact Us",
+      "Data Hub, powered by our SaaS platform.",
+      "Data Hub Pro",
+      "We Acccept",
+      "Questions & Answers",
+      "Who is this SaaS platform for?",
+      "What does “No Ads” mean?",
+      "Is all data visible?",
+      "Does Data Hub Pro include data export?",
+      "Can I send emails from the platform?",
+      "Can I cancel my subscription and get a refund?",
+      "What are the Terms of Use for your Data Hub?",
+      "NLA Results - Ghana Lotto Results Today - August 22, 2026",
+      "Find NLA Lotto Past Results",
+      "National Weekly Lotto Results",
+      "DAYWA Lotto Results",
+      "Super 6 Lotto Results",
+      "VAG Lotto Results",
+      "NOONRUSH Lotto Results",
+      "NLA Lotto Winning Numbers History"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.ghanayello.com/terms-of-service",
+      "text": "Contact us",
+      "href": "https://www.ghanayello.com/contact-us",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Audit and Accounting",
+      "Audit and Accounting in Accra",
+      "Contact us",
+      "I still want to contact you",
+      "Free Trial",
+      "Send to WhatsApp",
+      "Support",
+      "Get Listed",
+      "Send message",
+      "Remove Company",
+      "REPORT LISTING",
+      "Submit Your Comment"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.ghanayello.com/contact-us",
+        "index": 1,
+        "action": "https://www.ghanayello.com/contact-us",
+        "method": "POST",
+        "submitText": "Send message",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "select",
+            "name": "data[Contact][subject]",
+            "label": "Subject *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "data[Contact][name]",
+            "label": "Your Name *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "data[Contact][email]",
+            "label": "Your E-mail *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "data[Contact][company]",
+            "label": "Company name *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "data[Contact][company_url]",
+            "label": "Company URL on GhanaYello",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "data[Contact][message]",
+            "label": "Message *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today",
+        "index": 2,
+        "action": "https://www.ghanayello.com/comments/submit",
+        "method": "POST",
+        "submitText": "Submit Your Comment",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "data[Comment][text]",
+            "label": "Your Comment",
+            "placeholder": "Enter your opinion here. Minimum 5 words.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Company name *, Company URL on GhanaYello.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 6,
+      "qualification": [
+        "Company name *",
+        "Company URL on GhanaYello"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Buscar/crear/reclamar ficha, enviar consulta y acceso a contactos.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [
+      "In the event of any such termination: Account Holder will be entitled to a refund of prepaid subscription fees for the then-current Term if, and only if, notice of termination is given within 30 days after the start of the then-current Term (and no refund for p…"
+    ],
+    "proof": [
+      "Find tonight's winning numbers, the last 30 draws, and check NLA results from the Ghana National Lottery Authority.",
+      "Result History Two Sure DAYWA Lotto Results MonTueWedThuFriSat Saturday | 22 August 2026 ?????",
+      "Result History Predictions Super 6 Lotto Results MonTueWedThuFriSat Saturday | 22 August 2026 ??????",
+      "Ghana Business Directory - GhanaYello Sign in + Get ListedData Hub Ghana National LottoNLA ResultsLotto Prediction2 Sure TodayNational Lotto ResultsPast Results NLA Results - Ghana Lotto Results Today - August 22, 2026 View today's NLA Ghana Lotto Results, including Monday Spec…",
+      "…rience in the business directories market.database35,347Access up-to-date company listings with admin-verified profiles.Reviews6,270Genuine business reviews, human-approved.",
+      "Increase your visibility, attract new customers, and grow your business."
+    ],
+    "objections": [
+      "…THE OTHER PARTY FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THIS AGREEMENT (WHETHER IN CONTRACT OR TORT, INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE) EXCEED THE AGGREGATE FEES DUE BY ACCOUNT HOLDER TO GBD HEREUNDER DURING THE PRIOR 12 MONTHS.",
+      "…dBusiness Directory& Search Portal in GhanaBrowse Categories Search RestaurantsAutomotiveDoctorsShoppingLegalReal EstateContractorsEmploymentSchoolsSee All Facts about us.Since200917 years of experience in the business directories market.database35,347Access up-to-date company listings with admin-verified p…",
+      "Account Holder may cancel such Automatic Renewal by terminating the subscription and this Agreement as set forth herein or by providing written notice, at least 30 days prior to the Renewal Date, that Account Holder does not wish to renew the subscription.",
+      "If You have any questions, please Contact us prior to agreeing.",
+      "GBD and Account Holder are independent contractors, and neither GBD nor Account Holder is an agent, representative, employer, employee, or partner of the other."
+    ],
+    "urgency": [
+      "…hana Business Directory - GhanaYello Sign in + Get ListedData Hub Ghana National LottoNLA ResultsLotto Prediction2 Sure TodayNational Lotto ResultsPast Results NLA Results - Ghana Lotto Results Today - August 22, 2026 View today's NLA Ghana Lotto Results, including Monday Special, Lucky Tuesday, Midweek…",
+      "…55522 Resources Our Global NetworkPublic Holidays in GhanaData HubNational Lottery AuthorityLotto PredictionNLA Results Today2 Sure TodaySoccer PredictionArticles UsersGet ListedRemove CompanySign inNeed help?Contact our support teamSupport GhanaYello is Ghana's online business directory, helping people…",
+      "…ct us Resources Our Global NetworkPublic Holidays in GhanaData HubNational Lottery AuthorityLotto PredictionNLA Results Today2 Sure TodaySoccer PredictionArticles UsersGet ListedRemove CompanySign inNeed help?Contact our support teamSupport GhanaYello is Ghana's online business directory, helping people…",
+      "Resources Our Global NetworkPublic Holidays in GhanaData HubNational Lottery AuthorityLotto PredictionNLA Results Today2 Sure TodaySoccer PredictionArticles UsersGet ListedRemove CompanySign inNeed help?Contact our support teamSupport GhanaYello is Ghana's online business directory, helping people discover local businesses near you.",
+      "I would like to work with you to develop my career in the field of accounting.AnswerPhilip kwame OforiPosted on 22 May, 2017 I want to know about the quickbooks course,tuition fee and duration.PUBLIC USERRichard DwumorPosted on 24 May, 2017 QuickBooks Training is ghs650.00 and the",
+      "Data Hub Pro is view-only for now."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "In the event of any such termination: Account Holder will be entitled to a refund of prepaid subscription fees for the then-current Term if, and only if, notice of termination is given within 30 days after the start of the then-current Term (and no refund for p…",
+          "url": "https://www.ghanayello.com/terms-of-service",
+          "pageTitle": "Terms of service",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…rience in the business directories market.database35,347Access up-to-date company listings with admin-verified profiles.Reviews6,270Genuine business reviews, human-approved.",
+          "url": "https://www.ghanayello.com/",
+          "pageTitle": "Ghana’s Verified Online Business Directory Portal – GhanaYello",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Increase your visibility, attract new customers, and grow your business.",
+          "url": "https://www.ghanayello.com/",
+          "pageTitle": "Ghana’s Verified Online Business Directory Portal – GhanaYello",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Build a strong online reputation through reviews.",
+          "url": "https://www.ghanayello.com/",
+          "pageTitle": "Ghana’s Verified Online Business Directory Portal – GhanaYello",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…e address: 8th Floor, Block A, The Octagon, Accra, GhanaTel: +233 270 455522 Ghana Network Database 35,347Companies6,270Reviews23,619Photos11,676Products By continuing past this page, you agree to our Terms of use, Cookies policy, Privacy policy, Terms of service.© 2009 - 2026 GhanaYello (PRO2)",
+          "url": "https://www.ghanayello.com/",
+          "pageTitle": "Ghana’s Verified Online Business Directory Portal – GhanaYello",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ghana Business Directory - GhanaYello Sign in + Get ListedData Hub Ghana National LottoNLA ResultsLotto Prediction2 Sure TodayNational Lotto ResultsPast Results NLA Results - Ghana Lotto Results Today - August 22, 2026 View today's NLA Ghana Lotto Results, including Monday Spec…",
+          "url": "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today",
+          "pageTitle": "NLA Results - Ghana Lotto Results Today & Result History",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Find tonight's winning numbers, the last 30 draws, and check NLA results from the Ghana National Lottery Authority.",
+          "url": "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today",
+          "pageTitle": "NLA Results - Ghana Lotto Results Today & Result History",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Result History Two Sure DAYWA Lotto Results MonTueWedThuFriSat Saturday | 22 August 2026 ?????",
+          "url": "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today",
+          "pageTitle": "NLA Results - Ghana Lotto Results Today & Result History",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Result History Predictions Super 6 Lotto Results MonTueWedThuFriSat Saturday | 22 August 2026 ??????",
+          "url": "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today",
+          "pageTitle": "NLA Results - Ghana Lotto Results Today & Result History",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…e address: 8th Floor, Block A, The Octagon, Accra, GhanaTel: +233 270 455522 Ghana Network Database 35,347Companies6,270Reviews23,619Photos11,676Products By continuing past this page, you agree to our Terms of use, Cookies policy, Privacy policy, Terms of service.© 2009 - 2026 GhanaYello (PRO2)",
+          "url": "https://www.ghanayello.com/terms-of-service",
+          "pageTitle": "Terms of service",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…dBusiness Directory& Search Portal in GhanaBrowse Categories Search RestaurantsAutomotiveDoctorsShoppingLegalReal EstateContractorsEmploymentSchoolsSee All Facts about us.Since200917 years of experience in the business directories market.database35,347Access up-to-date company listings with admin-verified p…",
+          "url": "https://www.ghanayello.com/",
+          "pageTitle": "Ghana’s Verified Online Business Directory Portal – GhanaYello",
+          "pageCategory": "other"
+        },
+        {
+          "text": "If You have any questions, please Contact us prior to agreeing.",
+          "url": "https://www.ghanayello.com/terms-of-service",
+          "pageTitle": "Terms of service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Account Holder may cancel such Automatic Renewal by terminating the subscription and this Agreement as set forth herein or by providing written notice, at least 30 days prior to the Renewal Date, that Account Holder does not wish to renew the subscription.",
+          "url": "https://www.ghanayello.com/terms-of-service",
+          "pageTitle": "Terms of service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…THE OTHER PARTY FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THIS AGREEMENT (WHETHER IN CONTRACT OR TORT, INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE) EXCEED THE AGGREGATE FEES DUE BY ACCOUNT HOLDER TO GBD HEREUNDER DURING THE PRIOR 12 MONTHS.",
+          "url": "https://www.ghanayello.com/terms-of-service",
+          "pageTitle": "Terms of service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "GBD and Account Holder are independent contractors, and neither GBD nor Account Holder is an agent, representative, employer, employee, or partner of the other.",
+          "url": "https://www.ghanayello.com/terms-of-service",
+          "pageTitle": "Terms of service",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.ghanayello.com/",
+        "https://www.ghanayello.com/contact-us",
+        "https://www.ghanayello.com/saas"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "VerifiedBusiness Directory& Search Portal in Ghana",
+        "Contact Us",
+        "Data Hub, powered by our SaaS platform.",
+        "Terms of service"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Get Listed",
+        "Remove Company",
+        "Support",
+        "Send message",
+        "I still want to contact you",
+        "Free Trial",
+        "Submit Your Comment",
+        "Contact us"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.ghanayello.com/contact-us · 6 campos",
+        "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.ghanayello.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.ghanayello.com/contact-us",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.ghanayello.com/saas",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.ghanayello.com/lottery/ghana-lotto-results-for-today",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.ghanayello.com/terms-of-service",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.ghanayello.com/company/60005/Abdul_Latif_Niendoo_Saani",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.ghanayello.com/company/47932/RDK_Consulting_Services",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.ghanayello.com/terms-of-use",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.ghanayello.com/sitemap.html",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.ghanayello.com/contact-us/remove:yes: Bloqueado por robots.txt",
+    "https://www.ghanayello.com/contact-us/report:60005: Bloqueado por robots.txt",
+    "https://www.ghanayello.com/contact-us/update:60005: Bloqueado por robots.txt",
+    "robots.txt impidió 3 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

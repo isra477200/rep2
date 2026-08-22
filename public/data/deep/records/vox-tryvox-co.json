@@ -1,0 +1,511 @@
+{
+  "id": "vox-tryvox-co",
+  "name": "Vox (tryvox.co)",
+  "reviewedAt": "2026-08-22T15:50:20.154Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "vox.ai 서비스 소개서를 받아보세요",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, conciso, orientado a la acción, apoya la venta en reversión de riesgo. Usa 150 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 250 palabras por página comercial recuperada. Muestras breves: “전화 운영 규모에 맞춘요금제” · “전화 운영에 맞는 도입 방법을 확인하세요” · “vox.ai 서비스 소개서를 받아보세요”.",
+    "supportingHeadings": [
+      "전화 운영 규모에 맞춘요금제",
+      "구독 플랜",
+      "Free",
+      "Starter",
+      "Growth",
+      "Scale",
+      "Enterprise",
+      "월 예상 비용 계산",
+      "플랜 외 사용료",
+      "통신료",
+      "발신",
+      "통화 전환",
+      "SMS",
+      "전화번호",
+      "레터링",
+      "개인정보 보호",
+      "자주 묻는 질문",
+      "무료로 바로 테스트해 볼 수 있나요?",
+      "요금은 어떻게 계산되나요?",
+      "발신했는데 상대가 안 받거나 음성사서함으로 넘어가면 요금이 나가나요?",
+      "발신할 때 벨소리가 울리는 동안에도 요금이 나가나요?",
+      "에이전트가 상담사로 통화를 연결하면 요금은 어떻게 되나요?",
+      "요금은 어떻게 결제되나요?",
+      "플랜을 바꾸거나 해지할 수 있나요?",
+      "AICC의 새로운 기준",
+      "제품",
+      "활용사례",
+      "산업별",
+      "리소스",
+      "전화 운영에 맞는 도입 방법을 확인하세요"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "문의하기",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.tryvox.co/pricing",
+      "text": "문의하기",
+      "href": "https://www.tryvox.co/request-demo",
+      "element": "a",
+      "kind": "conversion",
+      "score": 164
+    },
+    "ctas": [
+      "문의하기",
+      "▼",
+      "시작하기",
+      "전화 받기",
+      "문서 열람하기"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.tryvox.co/request-demo",
+        "index": 1,
+        "action": "https://www.tryvox.co/request-demo",
+        "method": "GET",
+        "submitText": "문의하기",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "input",
+            "name": "name",
+            "label": "성함 *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "이메일 *",
+            "placeholder": "example@company.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phoneNumber",
+            "label": "전화번호 *",
+            "placeholder": "010-9876-5432",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "description",
+            "label": "어떤 점이 궁금하신가요?",
+            "placeholder": "자세히 안내받고 싶은 내용을 입력하세요.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.tryvox.co/use-cases/customer-support",
+        "index": 1,
+        "action": "https://www.tryvox.co/use-cases/customer-support",
+        "method": "GET",
+        "submitText": "전화 받기",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "이름",
+            "placeholder": "이름",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "전화번호",
+            "placeholder": "010-1234-5678",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.tryvox.co/service-introduction",
+        "index": 1,
+        "action": "https://www.tryvox.co/service-introduction",
+        "method": "GET",
+        "submitText": "문서 열람하기",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "input",
+            "name": "companyName",
+            "label": "회사명 *",
+            "placeholder": "회사명",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "name",
+            "label": "성함 *",
+            "placeholder": "성함",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "이메일 *",
+            "placeholder": "name@company.com",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 2 y 4 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [
+      "AI 사용료와 통신료는 상대가 직접 받은 통화에만 청구됩니다.연결된 발신20원/건응답 없음20원/건음성사서함20원/건통화 전환상담사에게 안내 후 연결하는 Warm Transfer에 적용됩니다.Warm Transfer12원/10초Cold Transfer추가 전환료 없음SMS문자는 발신과 수신 모두 건당 청구됩니다.",
+      "첨부파일이 있으면 MMS 단가가 적용됩니다.텍스트 발신25원/건MMS 발신60원/건수신25원/건전화번호vox.ai에서 제공하는 번호 종류와 보유 수를 기준으로 청구됩니다.070 인터넷전화번호7,000원/월대표번호20,000원/월레터링수신자 화면에 업체 이름을 표시합니다."
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "환불 불가 항목 후불 결제된 사용량 요금 (AI 통화료, 통신료, 전환 수수료, 문자료, 채팅료 등) 구독료 (구독 취소 시 해당 월 전액 과금, 일할 계산 미적용, 월말 종료) 포함크레딧 미사용분 보너스 크레딧 (가입 시 또는 프로모션으로 지급된 무료 크레딧) 2.",
+      "자주 묻는 질문 Q1.",
+      "구독을 취소하면 남은 기간에 대해 환불되나요?",
+      "구독 취소 시 해당 월 전액이 과금되며, 구독 효력은 해당 월 말일에 종료됩니다."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "AI 사용료와 통신료는 상대가 직접 받은 통화에만 청구됩니다.연결된 발신20원/건응답 없음20원/건음성사서함20원/건통화 전환상담사에게 안내 후 연결하는 Warm Transfer에 적용됩니다.Warm Transfer12원/10초Cold Transfer추가 전환료 없음SMS문자는 발신과 수신 모두 건당 청구됩니다.",
+          "url": "https://www.tryvox.co/pricing",
+          "pageTitle": "AI 전화 요금제ㅣ사용한 만큼만 후불 결제 - vox.ai",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "첨부파일이 있으면 MMS 단가가 적용됩니다.텍스트 발신25원/건MMS 발신60원/건수신25원/건전화번호vox.ai에서 제공하는 번호 종류와 보유 수를 기준으로 청구됩니다.070 인터넷전화번호7,000원/월대표번호20,000원/월레터링수신자 화면에 업체 이름을 표시합니다.",
+          "url": "https://www.tryvox.co/pricing",
+          "pageTitle": "AI 전화 요금제ㅣ사용한 만큼만 후불 결제 - vox.ai",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "All Rights Reserved.이용약관개인정보처리방침환불 정책이용 정책",
+          "url": "https://www.tryvox.co/pricing",
+          "pageTitle": "AI 전화 요금제ㅣ사용한 만큼만 후불 결제 - vox.ai",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "All Rights Reserved.이용약관개인정보처리방침환불 정책이용 정책",
+          "url": "https://www.tryvox.co/request-demo",
+          "pageTitle": "도입문의 | vox.ai",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "All Rights Reserved.이용약관개인정보처리방침환불 정책이용 정책",
+          "url": "https://www.tryvox.co/use-cases/customer-support",
+          "pageTitle": "CS 자동화를 위한 고객 지원 AI 에이전트 | 복스에이아이 vox.ai",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "All Rights Reserved.이용약관개인정보처리방침환불 정책이용 정책",
+          "url": "https://www.tryvox.co/service-introduction",
+          "pageTitle": "서비스 소개서 | vox.ai",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "본문 바로가기제품활용사례 산업별 리소스 요금로그인도입 문의메뉴환불 정책 마지막 업데이트: 2026-05-25 vox.ai는 후불제로 운영되며, 모든 요금은 환불되지 않습니다.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "환불 불가 원칙 본 서비스는 후불 결제 방식으로, 실제 발생한 사용량에 대해서만 과금합니다.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "따라서 모든 결제 항목은 환불 대상이 아닙니다.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "환불 불가 항목 후불 결제된 사용량 요금 (AI 통화료, 통신료, 전환 수수료, 문자료, 채팅료 등) 구독료 (구독 취소 시 해당 월 전액 과금, 일할 계산 미적용, 월말 종료) 포함크레딧 미사용분 보너스 크레딧 (가입 시 또는 프로모션으로 지급된 무료 크레딧) 2.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "구독을 취소하면 남은 기간에 대해 환불되나요?",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "환불은 제공되지 않습니다.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "All Rights Reserved.이용약관개인정보처리방침환불 정책이용 정책",
+          "url": "https://www.tryvox.co/use-cases/appointment-booking",
+          "pageTitle": "노쇼가 줄어드는 자동화된 AI 예약 관리 시스템 | 복스에이아이 vox.ai",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "All Rights Reserved.이용약관개인정보처리방침환불 정책이용 정책",
+          "url": "https://www.tryvox.co/use-cases/ivr-routing",
+          "pageTitle": "첫 마디만으로 의도를 파악하는 AI 기반 IVR 시스템 | 복스에이아이 vox.ai",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        }
+      ],
+      "proof": [],
+      "objections": [
+        {
+          "text": "환불 불가 항목 후불 결제된 사용량 요금 (AI 통화료, 통신료, 전환 수수료, 문자료, 채팅료 등) 구독료 (구독 취소 시 해당 월 전액 과금, 일할 계산 미적용, 월말 종료) 포함크레딧 미사용분 보너스 크레딧 (가입 시 또는 프로모션으로 지급된 무료 크레딧) 2.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "자주 묻는 질문 Q1.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "구독을 취소하면 남은 기간에 대해 환불되나요?",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "구독 취소 시 해당 월 전액이 과금되며, 구독 효력은 해당 월 말일에 종료됩니다.",
+          "url": "https://www.tryvox.co/legal/refund-policy",
+          "pageTitle": "사람처럼 응답하는 AICC 솔루션ㅣ복스에이아이 vox.ai AI 콜센터",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.tryvox.co/pricing",
+        "https://www.tryvox.co/request-demo",
+        "https://www.tryvox.co/use-cases/customer-support"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "전화 운영 규모에 맞춘요금제",
+        "전화 운영에 맞는 도입 방법을 확인하세요",
+        "vox.ai 서비스 소개서를 받아보세요",
+        "전화 한 통으로 예약이 잡히는 AI 예약 관리 시스템"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "시작하기",
+        "문의하기",
+        "▼",
+        "전화 받기",
+        "문서 열람하기"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.tryvox.co/request-demo · 4 campos",
+        "https://www.tryvox.co/use-cases/customer-support · 2 campos",
+        "https://www.tryvox.co/service-introduction · 3 campos",
+        "https://www.tryvox.co/use-cases/appointment-booking · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.tryvox.co/pricing",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.tryvox.co/request-demo",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.tryvox.co/use-cases/customer-support",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.tryvox.co/service-introduction",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.tryvox.co/legal/refund-policy",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.tryvox.co/use-cases/appointment-booking",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.tryvox.co/use-cases/ivr-routing",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “문의하기”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

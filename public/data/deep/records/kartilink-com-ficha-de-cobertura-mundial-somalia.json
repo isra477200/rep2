@@ -1,0 +1,440 @@
+{
+  "id": "kartilink-com-ficha-de-cobertura-mundial-somalia",
+  "name": "kartilink.com — ficha de cobertura mundial — Somalia",
+  "reviewedAt": "2026-08-22T15:50:18.816Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Find Somali services and trusted local help",
+    "heroObserved": true,
+    "priorSummary": "Comprador selecciona categoría, revisa proveedores y paquetes aprobados, envía una solicitud y recibe cotizaciones; KartiLink no asigna automáticamente. CTA: explorar servicios y solicitar cotización.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 29 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 648 palabras por página comercial recuperada. Muestras breves: “Find Somali services and trusted local help” · “Offer your services on KartiLink” · “Somali jobs across Somalia and the diaspora”.",
+    "supportingHeadings": [
+      "Find Somali services and trusted local help",
+      "1 — Pick a category",
+      "2 — Review real providers",
+      "3 — Request a quote",
+      "Need a job instead?",
+      "Take the next step on KartiLink",
+      "Popular Somali job pages",
+      "Popular Somali job cities",
+      "Popular Somali services",
+      "Popular Somali freelancers",
+      "Core Somali pages",
+      "Explore KartiLink",
+      "Offer your services on KartiLink",
+      "How it works",
+      "Categories you can offer in",
+      "What KartiLink does not do",
+      "Looking for work instead?",
+      "Somali jobs across Somalia and the diaspora",
+      "Search live Somali jobs",
+      "Browse jobs by city",
+      "Popular role categories",
+      "Hiring Somali talent?",
+      "Become a KartiLink freelancer",
+      "Three steps to start getting requests",
+      "Complete, safe profiles can go live right away",
+      "Have these ready before you apply",
+      "Apply to become a KartiLink freelancer",
+      "Manage your work from one place",
+      "Hire qualified talentworldwide with KartiLink",
+      "Post your first role today"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Apply as a provider",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.kartilink.com/somali-service-providers",
+      "text": "Apply as a provider",
+      "href": "https://www.kartilink.com/service-providers/apply",
+      "element": "a",
+      "kind": "conversion",
+      "score": 220.25
+    },
+    "ctas": [
+      "Send request",
+      "Apply as a provider",
+      "Become a provider →Apply to list your real services.",
+      "Get started→",
+      "Become a freelancer",
+      "Somali jobs →Prefer employment? Start here.",
+      "Provider application →Start your provider profile.",
+      "Soomaali",
+      "Loading…",
+      "Post a job",
+      "Create employer account",
+      "Review campaign options",
+      "Submit provider application"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.kartilink.com/service-providers/apply",
+        "index": 1,
+        "action": "https://www.kartilink.com/service-providers/apply",
+        "method": "GET",
+        "submitText": "Submit provider application",
+        "visibleFieldCount": 16,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Full name",
+            "placeholder": "Your name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email",
+            "placeholder": "you@example.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Phone (optional)",
+            "placeholder": "+1 …",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Category💻 Websites & Apps🛠️ IT Support🎨 Design & Branding📝 Resume & Career",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "City (optional)",
+            "placeholder": "Mogadishu, Minneapolis…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Country (optional)",
+            "placeholder": "Country",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Service title",
+            "placeholder": "e.g. Build a small business website in 5 days",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": "Description (min 30 chars)⚠ Do not share email addresses, phone numbers, WhatsApp,",
+            "placeholder": "Describe what you offer, who it's for, and what's included.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Skills (comma-separated, optional)",
+            "placeholder": "e.g. Next.js, WordPress, Figma, Somali, English",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Starting price (optional, free text)",
+            "placeholder": "e.g. $50, From $200, Negotiable",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Availability (optional)",
+            "placeholder": "e.g. Evenings & weekends, Full-time",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": null,
+            "placeholder": "https://… (jpg / png / webp)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "Website URL (optional)",
+            "placeholder": "https://…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "Portfolio URL (optional)",
+            "placeholder": "https://…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "WhatsApp link (optional)",
+            "placeholder": "https://wa.me/…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Social links (comma-separated, optional)",
+            "placeholder": "https://tiktok.com/@you, https://linkedin.com/in/you",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 16 y 16 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Category💻 Websites & Apps🛠️ IT Support🎨 Design & Branding📝 Resume & Career, City (optional), https://… (jpg / png / webp), Website URL (optional).",
+      "friction": "Alta",
+      "minFields": 16,
+      "maxFields": 16,
+      "qualification": [
+        "Category💻 Websites & Apps🛠️ IT Support🎨 Design & Branding📝 Resume & Career",
+        "City (optional)",
+        "https://… (jpg / png / webp)",
+        "Website URL (optional)"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Comprador selecciona categoría, revisa proveedores y paquetes aprobados, envía una solicitud y recibe cotizaciones; KartiLink no asigna automáticamente. CTA: explorar servicios y solicitar cotización.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "You control your packages and respond to requests directly.Listing is about real work and real clients.",
+      "…ply to list your provider profile, set your own packages, and receive real client requests — no fake leads, no invented reviews.For Somali freelancers and service providers who want to be found and hired.Apply as a providerSee the marketplaceKartiLink is a Somali-first marketplace.",
+      "Providers apply, get reviewed, and then appear in the relevant category where buyers can request quotes.",
+      "…ink/Somali jobs & services/For buyersFor buyersFind Somali services and trusted local helpTell KartiLink what you need, review approved providers in the right category, and request a quote — a clear, safe way to find Somali and local professionals.For buyers looking for Somali services and trusted local h…"
+    ],
+    "objections": [],
+    "urgency": [
+      "…manage your full hiring pipeline — built for employers hiring across local, regional, remote, and global markets.Post unlimited jobs during your first month.",
+      "Post unlimited jobs during your first month.",
+      "No charge today — billing starts after 30 days unless you cancel.",
+      "Posting, billing, and applicant review all live in one place from day one.🎯Step 02Pick your hiring paceStart with a 30-day free trial — post unlimited jobs with no charge."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [
+        {
+          "text": "Approval is not guaranteed.Submit provider applicationAlready applied?",
+          "url": "https://www.kartilink.com/service-providers/apply",
+          "pageTitle": "Become a freelancer | KartiLink | KartiLink",
+          "pageCategory": "conversion",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…ink/Somali jobs & services/For buyersFor buyersFind Somali services and trusted local helpTell KartiLink what you need, review approved providers in the right category, and request a quote — a clear, safe way to find Somali and local professionals.For buyers looking for Somali services and trusted local h…",
+          "url": "https://www.kartilink.com/find-somali-services",
+          "pageTitle": "Find Somali Services — Trusted Local Help & Quotes | KartiLink | KartiLink",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…ply to list your provider profile, set your own packages, and receive real client requests — no fake leads, no invented reviews.For Somali freelancers and service providers who want to be found and hired.Apply as a providerSee the marketplaceKartiLink is a Somali-first marketplace.",
+          "url": "https://www.kartilink.com/somali-service-providers",
+          "pageTitle": "Become a Somali Service Provider — Offer Services on KartiLink | KartiLink",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Providers apply, get reviewed, and then appear in the relevant category where buyers can request quotes.",
+          "url": "https://www.kartilink.com/somali-service-providers",
+          "pageTitle": "Become a Somali Service Provider — Offer Services on KartiLink | KartiLink",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You control your packages and respond to requests directly.Listing is about real work and real clients.",
+          "url": "https://www.kartilink.com/somali-service-providers",
+          "pageTitle": "Become a Somali Service Provider — Offer Services on KartiLink | KartiLink",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.kartilink.com/find-somali-services",
+        "https://www.kartilink.com/somali-service-providers",
+        "https://www.kartilink.com/somali-jobs"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Find Somali services and trusted local help",
+        "Offer your services on KartiLink",
+        "Somali jobs across Somalia and the diaspora",
+        "Become a KartiLink freelancer"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Become a freelancer",
+        "Become a provider →Apply to list your real services.",
+        "Apply as a provider",
+        "Provider application →Start your provider profile.",
+        "Somali jobs →Prefer employment? Start here.",
+        "Soomaali",
+        "Submit provider application",
+        "Loading…"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.kartilink.com/service-providers/apply · 16 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.kartilink.com/find-somali-services",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.kartilink.com/somali-service-providers",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.kartilink.com/somali-jobs",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.kartilink.com/service-providers/apply",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.kartilink.com/employers",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.kartilink.com/support",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.kartilink.com/support?topic=billing",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Apply as a provider”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 16 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

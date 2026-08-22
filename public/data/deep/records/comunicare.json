@@ -1,0 +1,629 @@
+{
+  "id": "comunicare",
+  "name": "Comunicare",
+  "reviewedAt": "2026-08-22T15:50:17.930Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Agencia de marketing estratégico",
+    "heroObserved": true,
+    "priorSummary": "\"Desarrollamos estrategias para captar nuevos clientes para guarderías de toda España\" (plantilla repetida por sector) + \"Nunca nos rendimos, nunca nos acomodamos\".",
+    "voice": "Revisión manual: enérgico, 360, consultivo, SEO masivo, orientado a acción, poco especializado en la ejecución editorial. nunca nos rendimos no nos conformamos informe de situación menos de 24 horas estrategia basada en datos resultados",
+    "supportingHeadings": [
+      "Marketing digital para funerarias",
+      "¿Buscas llegar a la persona adecuada en el momento adecuado?",
+      "Aumenta la visibilidad de tu funeraria",
+      "Solicita un informe de situación",
+      "Contacta con nosotros para empezar tu plan",
+      "Marketing para funerarias",
+      "Marketing online para funerarias",
+      "Marketing offline para funerarias",
+      "Plan de marketing de una funeraria",
+      "Publicidad de funerarias",
+      "Captación de clientes para funerarias",
+      "Comunicación para funerarias",
+      "Plan de marketing para funerarias",
+      "Estrategias de marketing para funerarias",
+      "Gestión redes sociales para funerarias",
+      "Posicionamiento orgánico SEO para funerarias",
+      "Reputación online para funerarias",
+      "Empresas funerarias",
+      "Sector funerario",
+      "Redes sociales",
+      "Servicios funerarios",
+      "Agencia de marketing estratégico",
+      "Análisis y plan de marketing",
+      "«Un buen plan no consiste en encontrar la mejor alternativa sino en encontrar una que funcione»",
+      "Desarrollamos planes de marketing online que nos encargamos de implementar, para que no haya excusas….",
+      "Analizamos el mercado, la competencia y el histórico de cada cliente",
+      "Definimos la estrategia final analizando los resultados de la batería de Tests",
+      "Nos encargamos de una correcta y eficaz implementación",
+      "un equipo que marca la diferencia",
+      "Para StartUps"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Quote",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.comunicare.es/glosario-de-marketing-digital-todos-los-terminos-que-deseas-conocer/",
+      "text": "Quote",
+      "href": "https://www.comunicare.es/quote/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223.75
+    },
+    "ctas": [
+      "Quote",
+      "Contacto",
+      "Download",
+      "Whatsapp",
+      "Call to Action",
+      "WhatsApp Marketing",
+      "Chat",
+      "Enviar",
+      "{title}",
+      "Servicios",
+      "formulario",
+      "Comunicare",
+      "Ir a Tienda",
+      "Speak Dation"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.comunicare.es/marketing-para-funerarias/",
+        "index": 1,
+        "action": "https://www.comunicare.es/marketing-para-funerarias/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "contacto-nombre",
+            "label": "Nombre y apellidos *",
+            "placeholder": "Nombre y apellidos *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "contacto-email",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "contacto-telefono",
+            "label": "Teléfono *",
+            "placeholder": "Teléfono *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "contacto-mensaje",
+            "label": "Mensaje *",
+            "placeholder": "Mensaje *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "contacto-acepta",
+            "label": "Autorizo el tratamiento de mis datos para que respondan a la consulta",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.comunicare.es/glosario-de-marketing-digital-todos-los-terminos-que-deseas-conocer/",
+        "index": 1,
+        "action": "https://www.comunicare.es/glosario-de-marketing-digital-todos-los-terminos-que-deseas-conocer/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "contacto-nombre",
+            "label": "Nombre*",
+            "placeholder": "Nombre*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "contacto-email",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "contacto-telefono",
+            "label": "Teléfono *",
+            "placeholder": "Teléfono *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "contacto-mensaje",
+            "label": "Mensaje *",
+            "placeholder": "Mensaje *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "contacto-acepta",
+            "label": "He leido y acepto la Política de Privacidad.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Calendly",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Desarrollamos estrategias para captar nuevos clientes para guarderías de toda España\" (plantilla repetida por sector) + \"Nunca nos rendimos, nunca nos acomodamos\".",
+    "audience": "Múltiples verticales de pyme local: funerarias, guarderías, ayuda a domicilio, residencias, agencias de viajes, inmobiliarias, gimnasios, despachos, concesionarios. Presencia en España, México, Colombia, EEUU, Chile.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Los clientes de hoy en día buscan nuevas formas innovadoras y modelos más acordes con la sociedad actual.",
+      "Hoy en día, Internet ofrece diferentes formatos de anuncios para llegar a los clientes.",
+      "Contactar ahora Certificados Ver todos nuestros certificados ¿Quieres recibir un presupuesto personalizado?",
+      "Plan de marketing para funerarias El sector en el que trabajan las funerarias siempre se ha relacionado con un carácter clásico y conservador en nuestro país, pero hoy en día es mucho más innovador y moderno.",
+      "Pero, hoy en día, utilizamos internet para hacerlo.",
+      "Veamos ahora con más detalle cada uno de ellos para entender cómo funcionan."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Google Ads",
+        "Meta Ads",
+        "Email",
+        "LinkedIn Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.comunicare.es/marketing-para-funerarias/",
+        "https://www.comunicare.es/estrategia-y-consultoria/",
+        "https://www.comunicare.es/plan-de-marketing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing digital para funerarias",
+        "Agencia de marketing estratégico",
+        "Plan de marketing digital",
+        "Social Ads – Anuncios en redes sociales"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Enviar",
+        "Servicios",
+        "formulario",
+        "Ir a Tienda",
+        "{title}",
+        "Comunicare",
+        "Call to Action"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.comunicare.es/marketing-para-funerarias/ · 5 campos",
+        "https://www.comunicare.es/estrategia-y-consultoria/ · 5 campos",
+        "https://www.comunicare.es/plan-de-marketing/ · 5 campos",
+        "https://www.comunicare.es/social-ads/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing sectorial → CTA «Solicitar informe» / «Contactar ahora» → formulario propio (nombre y apellidos, email, teléfono, mensaje, consentimiento) → promesa de informe de situación en menos de"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → educación [observado] → captación [observado] → diagnóstico [observado] → experimentación [observado] → propuesta [inferido] → ejecución [observado] → medición y continuidad [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.comunicare.es/marketing-para-funerarias/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.comunicare.es/estrategia-y-consultoria/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.comunicare.es/plan-de-marketing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.comunicare.es/empresas-de-marketing-en-la-ciudad-de-madrid/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.comunicare.es/social-ads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.comunicare.es/contacto/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.comunicare.es/glosario-de-marketing-digital-todos-los-terminos-que-deseas-conocer/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.comunicare.es/aviso-legal-comunicare/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097?region=ES",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR13649147690045407233?region=ES",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR07779831475674808321?region=ES",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR16663498400011911169?region=ES",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR08848732699733524481?region=ES",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR02045986088962490369?region=ES",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "http://miliga.laliga.com/",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR06736262999520051201?region=ES",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR07437320744490500097/creative/CR01671965218541928449?region=ES",
+      "label": "Fuente pública 17"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Quote”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Calendly, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Llegar a la persona adecuada en el momento adecuado y acompañar todo el proceso comercial con un plan basado en pruebas.",
+      "positioning": "agencia insistente de crecimiento integral",
+      "audience": "Funerarias y otros negocios que buscan consultoría o ejecución integral; la cartera pública cubre startups, pymes y grandes empresas.",
+      "voice": [
+        "enérgico",
+        "360",
+        "consultivo",
+        "SEO masivo",
+        "orientado a acción",
+        "poco especializado en la ejecución editorial"
+      ],
+      "patterns": [
+        "nunca nos rendimos",
+        "no nos conformamos",
+        "informe de situación",
+        "menos de 24 horas",
+        "estrategia basada en datos",
+        "resultados"
+      ]
+    },
+    "cta": {
+      "primary": "Solicita un informe de situación",
+      "secondary": [
+        "contactar",
+        "planificar una llamada en la agenda anunciada",
+        "explorar servicios"
+      ],
+      "forms": [
+        {
+          "url": "https://www.comunicare.es/marketing-para-funerarias/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono",
+            "mensaje",
+            "consentimiento de privacidad"
+          ],
+          "fieldCount": 5,
+          "friction": "baja",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Landing SEO vertical intercepta búsquedas de marketing para funerarias con una cobertura muy amplia de tácticas. — stage: descubrimiento — evidenceUrls: https://www.comunicare.es/marketing-para-funerarias/"
+      },
+      {
+        "stage": "educación",
+        "status": "observado",
+        "detail": "Explica SEO, web, blog, social, reputación y la relevancia del teléfono en un contexto de duelo. — stage: educación — evidenceUrls: https://www.comunicare.es/marketing-para-funerarias/"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Informe de situación sin compromiso y formulario corto; la página promete menos de 24 horas. — stage: captación — evidenceUrls: https://www.comunicare.es/marketing-para-funerarias/"
+      },
+      {
+        "stage": "diagnóstico",
+        "status": "observado",
+        "detail": "Mercado, competencia e histórico del cliente se revisan antes de diseñar la estrategia. — stage: diagnóstico — evidenceUrls: https://www.comunicare.es/estrategia-y-consultoria/"
+      },
+      {
+        "stage": "experimentación",
+        "status": "observado",
+        "detail": "La metodología declara una batería de tests antes de cerrar estrategia. — stage: experimentación — evidenceUrls: https://www.comunicare.es/estrategia-y-consultoria/"
+      },
+      {
+        "stage": "propuesta",
+        "status": "inferido",
+        "detail": "La estrategia final lleva a alcance y contratación; precio, propuesta y firma no se documentan públicamente. — stage: propuesta — evidenceUrls: https://www.comunicare.es/estrategia-y-consultoria/"
+      },
+      {
+        "stage": "ejecución",
+        "status": "observado",
+        "detail": "Implementación multicanal mediante SEO, paid social, contenido, web, reputación y acciones offline según plan. — stage: ejecución — evidenceUrls: https://www.comunicare.es/plan-de-marketing/ · https://www.comunicare.es/social-ads/"
+      },
+      {
+        "stage": "medición y continuidad",
+        "status": "inferido",
+        "detail": "La promesa data-driven presupone medición, pero cadencia, panel, KPI contractual, renovación y salida no son observables. — stage: medición y continuidad — evidenceUrls: https://www.comunicare.es/estrategia-y-consultoria/"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "No se publican fee, retainer, inversión mínima, presupuesto de medios ni tarifa del informe o de la estrategia. — currency: EUR — exactUrl: https://www.comunicare.es/marketing-para-funerarias/"
+      ],
+      "contract": [
+        "Permanencia, aprobación, renovación, cancelación, propiedad de campañas y alcance no son públicos en las fuentes comerciales revisadas. — exactUrl: https://www.comunicare.es/contacto/"
+      ],
+      "guarantee": [
+        "No se observa garantía de leads, citas, ventas o reembolso. La entrega del informe en menos de 24 horas es una promesa operativa sin SLA o remedio público. — exactUrl: https://www.comunicare.es/marketing-para-funerarias/"
+      ]
+    },
+    "proof": [
+      "claims: 12 años · más de 200 clientes satisfechos · logos de Santander, Just Eat, Sanitas e IFEMA — quality: baja-media — caveat: Prueba corporativa y autopublicada, no específica de funerarias. No se observa caso funerario con periodo, inversión, llamadas, citas, ventas o atribución."
+    ],
+    "objections": [
+      "objection: No sé qué está fallando. — answer: Informe de situación y análisis de mercado, competencia e histórico.",
+      "objection: ¿Cuánto tardan en responder? — answer: Promesa de informe en menos de 24 horas, sin SLA o remedio publicado.",
+      "objection: ¿Sirve solo lo digital? — answer: Propone combinar teléfono, online y offline según el proceso funerario.",
+      "objection: ¿Cuánto cuesta y cuánto dura? — answer: No se publican precio, permanencia ni inversión mínima.",
+      "objection: ¿Tienen caso funerario? — answer: No se localizó uno en las fuentes revisadas.",
+      "objection: ¿Garantizan leads? — answer: No se publica garantía de demanda o ventas."
+    ],
+    "technology": [
+      "WordPress — basis: estructura pública del sitio",
+      "Calendly — basis: agenda detectada en contacto; URL exacta del evento no observable",
+      "plataforma de reporting — basis: no se publicó producto o acceso",
+      "CRM — basis: no se publicó marca o integración"
+    ],
+    "contradictions": [
+      "La landing para funerarias habla varias veces de aumentar 'pacientes' y de 'pacientes potenciales', señal de reutilización de una plantilla sanitaria sin control vertical. — severity: crítica",
+      "Promete un informe en menos de 24 horas, pero no define contenido mínimo, reloj, canal, exclusiones ni remedio si no llega. — severity: alta",
+      "La página de contacto sugiere empezar a notar resultados desde el primer minuto, mientras la metodología requiere investigación, pruebas y estrategia; no hay benchmark que sostenga la inmediatez. — severity: alta",
+      "La amplitud de expertise y la landing vertical no se acompañan de un caso funerario específico; el error 'pacientes' debilita la especialización declarada. — severity: alta",
+      "El formulario es fácil pero no cualifica empresa, sector, presupuesto, servicio, urgencia ni capacidad, por lo que desplaza todo el filtrado a la llamada. — severity: media",
+      "El consentimiento de privacidad aparece opcional en el HTML aunque el formulario procesa datos personales; requiere revisión jurídica y técnica. — severity: alta"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "Auditoría pública sin enviar formulario, reservar agenda, pedir informe ni contratar.",
+      "No se observaron fee, propuesta, contrato, SLA, panel, caso funerario o URL exacta del evento de Calendly.",
+      "No se atribuyen a la landing errores de otras páginas no confirmados; solo se documenta el uso observado de 'pacientes'."
+    ],
+    "lessons": {
+      "copy": [
+        "informe de situación",
+        "respuesta temporal visible",
+        "teléfono como canal sensible",
+        "tests antes de la estrategia"
+      ],
+      "adapt": [
+        "diagnóstico de mercado-competencia-histórico",
+        "funnel online/offline",
+        "CTA de baja fricción",
+        "plan por tamaño de empresa",
+        "Crear una landing funeraria revisada por especialista: familias, disponibilidad 24/7, radio de servicio, tipo de atención, llamada prioritaria, caso real y formulario de seis campos con consentimiento obligatorio.",
+        "La escala SEO por vertical puede generar alcance, pero un solo término fuera de contexto destruye más confianza que la que aportan cientos de páginas."
+      ],
+      "avoid": [
+        "landings masivas sin revisión humana",
+        "sustantivos de otra vertical",
+        "resultado inmediato sin baseline",
+        "formulario genérico",
+        "consentimiento opcional"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://www.comunicare.es/marketing-para-funerarias/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.comunicare.es/estrategia-y-consultoria/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.comunicare.es/plan-de-marketing/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.comunicare.es/social-ads/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.comunicare.es/contacto/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.comunicare.es/politica-de-privacidad-comunicare/",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.comunicare.es/aviso-legal-comunicare/",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

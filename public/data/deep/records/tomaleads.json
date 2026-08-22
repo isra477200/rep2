@@ -1,0 +1,553 @@
+{
+  "id": "tomaleads",
+  "name": "Tomaleads",
+  "reviewedAt": "2026-08-22T15:50:19.707Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "¡Llegaste aquí!¿Qué necesitas?",
+    "heroObserved": true,
+    "priorSummary": "Google Ads, social ads, generación de leads, inbound marketing, webs/ecommerce, SEO, servicios de IA, gestión de redes, desarrollo de negocio B2B; además formación y alquiler de coworking",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 37 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1208 palabras por página comercial recuperada. Muestras breves: “Nos gusta nuestro trabajo y se refleja en los resultados” · “¡Llegaste aquí!¿Qué necesitas?” · “Anúnciate enGoogle Ads”.",
+    "supportingHeadings": [
+      "Nos gusta nuestro trabajo y se refleja en los resultados",
+      "La Agencia",
+      "DESARROLLAMOS NEGOCIOS",
+      "GESTIONAMOS PROYECTOS",
+      "DISEÑAMOS WEBS INCREIBLES",
+      "CREAMOS CAMPAÑAS SUPER EFECTIVAS",
+      "IMPARTIMOS FORMACIÓN",
+      "GESTIONAMOS REDES COMO UN PRO",
+      "CREAMOS ESPACIOS DE TRABAJO COLABORATIVOS",
+      "SALA DE REUNIONES",
+      "Nuestro equipo",
+      "Marc Ferré",
+      "CEO/CFO Proyectos y Finanzas",
+      "Lluc Millan",
+      "CCO/CMO Operaciones y Marketing",
+      "Marc Gasol",
+      "CCO/RRPP Comercial y Relaciones",
+      "Manel Capell",
+      "Desarollador web",
+      "Ainhoa León",
+      "Social Media Manager",
+      "Oriol Martí",
+      "Growth Marketing Specialist",
+      "CONOCENOS EN PERSONA",
+      "NUESTRAS FAQs DE LA AGENCIA",
+      "¡Nuestro ! equipo",
+      "La forma más fácil de conseguir clientes potenciales",
+      "contacta con nosotros aquí",
+      "¡Llegaste aquí!¿Qué necesitas?",
+      "Si has llegado aquí es por algo, dejanos tus datos y pasemos a la acción"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "agenda reunión online",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://tomaleads.com/la-agencia/",
+      "text": "agenda reunión online",
+      "href": "https://api.tomaup.com/widget/bookings/meet-tomaleads",
+      "element": "a",
+      "kind": "conversion",
+      "score": 159.75
+    },
+    "ctas": [
+      "agenda reunión online",
+      "agenda reunión presencial",
+      "Whatsapp",
+      "Enviar"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://tomaleads.com/formulario-de-servicios/",
+        "index": 1,
+        "action": "https://tomaleads.com/formulario-de-servicios/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre completo",
+            "placeholder": "Tu nombre completo...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_b87da82]",
+            "label": "Teléfono",
+            "placeholder": "Tu teléfono ...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "Tu correo electrónico ...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_7ce9609]",
+            "label": "Empresa",
+            "placeholder": "Tu empresa ...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_809160a][]",
+            "label": "CAMPAÑAS EN GOOGLE",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Mensaje",
+            "placeholder": "Tu mensaje ...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_2217fbc]",
+            "label": "Confirmo que he leído y acepto la política de privacidad del sitio",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_30fc615]",
+            "label": "Comfirmo que quiero recibir información comercial de Tomaleads",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 8 y 8 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Empresa.",
+      "friction": "Alta",
+      "minFields": 8,
+      "maxFields": 8,
+      "qualification": [
+        "Empresa"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Google Ads, social ads, generación de leads, inbound marketing, webs/ecommerce, SEO, servicios de IA, gestión de redes, desarrollo de negocio B2B; además formación y alquiler de coworking",
+    "audience": "Sin especialización sectorial declarada ('emprendedores, pymes y grandes empresas')",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Informe mensual con métricas clave Inversión en publicidad: 30 - 300 €/mes Me interesa Ideal para negocios que buscan sus primeros clientes a través de Google Ads con una inversión optimizada.",
+      "#más de 20.000 leads captados Outreach que convierte contactos B2B en clientes Cold Email Outreach para captar clientes B2B El Cold Email Outreach nos permite identificar y seleccionar con precisión los perfiles con los que queremos trabajar.",
+      "Somos Google partners o sea, uns pros de Google ads Anúnciate enGoogle Ads Llega a tus clientes en modo compra y aumenta tus ventas con campañas publicitarias avanzadas en Google Ads.",
+      "#¿Quieres más clientes?",
+      "Llega a tus clientes con un solo click Destaca en las primeras posiciones ...",
+      "Diseñamos Landings preparadas para convertir Es hora de empezar a captar nuevos clientes potenciales ¡Quiero empezar!"
+    ],
+    "objections": [
+      "#Conquista las redes, atrae clientes ¿Por qué elegir nuestras campañas en Paid Social?",
+      "#generacióndeleads #diseñoweb #googleads #posicionamientoSEO #socialads #IA #empresarial #redessociales #inboundmarketing Preguntas típicas de Google Ads ¿Por qué elegir a tomaleads para gestionar mis campañas de Google Ads?",
+      "#generacióndeleads #diseñoweb #googleads #posicionamientoSEO #socialads #IA #empresarial #redessociales #inboundmarketing Preguntas típicas de la captación de leads ¿Qué es la captación de leads y por qué es importante?",
+      "¿Por qué es importante medir CPL y CAC en la captación B2B?",
+      "#generacióndeleads #diseñoweb #googleads #posicionamientoSEO #socialads #IA #empresarial #redessociales #inboundmarketing Preguntas típicas de Desarrollo empresarial ¿Qué es el desarrollo empresarial y por qué es importante?"
+    ],
+    "urgency": [
+      "Hoy ayudamos a las marcas no solo a atraer leads, sino también a gestionarlos y convertirlos con las mejores herramientas digitales y estrategias personalizadas."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Somos Google partners o sea, uns pros de Google ads Anúnciate enGoogle Ads Llega a tus clientes en modo compra y aumenta tus ventas con campañas publicitarias avanzadas en Google Ads.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+          "pageTitle": "Agencia Partner de Google ADS - Campañas en buenas manos.",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#¿Quieres más clientes?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+          "pageTitle": "Agencia Partner de Google ADS - Campañas en buenas manos.",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Llega a tus clientes con un solo click Destaca en las primeras posiciones ...",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+          "pageTitle": "Agencia Partner de Google ADS - Campañas en buenas manos.",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Informe mensual con métricas clave Inversión en publicidad: 30 - 300 €/mes Me interesa Ideal para negocios que buscan sus primeros clientes a través de Google Ads con una inversión optimizada.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+          "pageTitle": "Agencia Partner de Google ADS - Campañas en buenas manos.",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Diseñamos Landings preparadas para convertir Es hora de empezar a captar nuevos clientes potenciales ¡Quiero empezar!",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+          "pageTitle": "Agencia Partner de Google ADS - Campañas en buenas manos.",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#Conquista las redes, atrae clientes ¿Por qué elegir nuestras campañas en Paid Social?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-paid-social/",
+          "pageTitle": "Campañas Paid Social - Especialistas en Social ADS",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Atraer tráfico cualificado,generar clientes potenciales , aumentar conversiones y ventas y potenciar el reconocimiento de marca.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-paid-social/",
+          "pageTitle": "Campañas Paid Social - Especialistas en Social ADS",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Con anuncios dinámicos y secuencias de impacto, logramos que quienes interactuaron con tu negocio den el siguiente paso: convertirse en clientes.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-paid-social/",
+          "pageTitle": "Campañas Paid Social - Especialistas en Social ADS",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Crece, impacta, consigue clientes vende más Consigue resultados y alcanza tus objetivos En redes sociales, la clave no es solo aparecer, sino impactar y convertir.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-paid-social/",
+          "pageTitle": "Campañas Paid Social - Especialistas en Social ADS",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "la forma más fácil de conseguir clientes de vender más para hacer crecer tu negocio Captación declientes potenciales Atraemos clientes potenciales con estrategias optimizadas para maximizar conversiones.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+          "pageTitle": "Captación de leads - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#Convierte tráfico enclientes potenciales.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+          "pageTitle": "Captación de leads - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Inbound Marketing para una captación natural Creamos contenido de valor y estrategias de atracción que generan confianza y convierten visitantes en clientes potenciales.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+          "pageTitle": "Captación de leads - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Herramientas de gestión y seguimiento de leads Utilizamos las últimas herramientas ayudarte a gestionar cada lead de forma estratégica y asegurarnos el éxito y su conversión Atrae, convierte, automatiza y vende más Mas clientes más ventas ...",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+          "pageTitle": "Captación de leads - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Atraemos clientes potenciales con campañas relevantes y optimizamos para que consigas el máximo resultado ¡Quiero una campaña!",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+          "pageTitle": "Captación de leads - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "la forma más fácil de conseguir clientes B2B de vender más B2B para hacer crecer tu negocio Captación leads B2B con Outreach Impulsa tu negocio con campañas de Outreach diseñadas para la captación de leads B2B de alta calidad.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Creamos mensajes personalizados y estrategias multicanal que conectan directamente con decisores, generan reuniones y convierten oportunidades en clientes reales.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#más de 20.000 leads captados Outreach que convierte contactos B2B en clientes Cold Email Outreach para captar clientes B2B El Cold Email Outreach nos permite identificar y seleccionar con precisión los perfiles con los que queremos trabajar.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Con un enfoque estratégico y métricas claras, optimizamos cada contacto para transformar correos en reuniones y reuniones en clientes.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Nuestro sistema de Outreach convierte interacciones por email en reuniones cualificadas con decisores, acelerando tu proceso de ventas y multiplicando las posibilidades de cerrar nuevos clientes.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Así maximizamos la rentabilidad de cada campaña y garantizamos que cada inversión se traduzca en clientes reales y resultados sostenibles.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Optimización de ventas y conversión Mejoramos tus procesos comerciales con técnicas avanzadas de captación de clientes, marketing digital y fidelización.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+          "pageTitle": "Desarrollo empresarial - Tomaleads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…de procesos internos para reducir costos y aumentar la productividad.Estrategias de marketing y ventas para atraer más clientes.Gestión financiera inteligente para un crecimiento rentable.Expansión a nuevos mercados para diversificar ingresos y escalar el negocio.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+          "pageTitle": "Desarrollo empresarial - Tomaleads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Para mejorar la rentabilidad es fundamental:Reducir costos operativos con automatización y digitalización.Optimizar los procesos de producción y gestión de recursos.Aumentar las conversiones con estrategias de marketing efectivas.Implementar una estrategia de fidelización de clientes.Tomar decisiones basadas en análisis de datos y métricas empresariales.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+          "pageTitle": "Desarrollo empresarial - Tomaleads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Algunos errores que afectan el desarrollo empresarial son:Falta de una estrategia clara de crecimiento.No invertir en tecnología y digitalización.No medir métricas clave para la toma de decisiones.Enfocarse solo en la adquisición de clientes y no en su retención.Falta de automatización y optimización de procesos.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+          "pageTitle": "Desarrollo empresarial - Tomaleads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Para impulsar tu negocio, debes:Analizar la situación actual y definir objetivos claros.Implementar tecnología y automatización para optimizar procesos.Definir estrategias de crecimiento y escalabilidad.Medir resultados y ajustar estrategias continuamente.",
+          "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+          "pageTitle": "Desarrollo empresarial - Tomaleads",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "#generacióndeleads #diseñoweb #googleads #posicionamientoSEO #socialads #IA #empresarial #redessociales #inboundmarketing Preguntas típicas de Google Ads ¿Por qué elegir a tomaleads para gestionar mis campañas de Google Ads?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+          "pageTitle": "Agencia Partner de Google ADS - Campañas en buenas manos.",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#Conquista las redes, atrae clientes ¿Por qué elegir nuestras campañas en Paid Social?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/campanas-paid-social/",
+          "pageTitle": "Campañas Paid Social - Especialistas en Social ADS",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#generacióndeleads #diseñoweb #googleads #posicionamientoSEO #socialads #IA #empresarial #redessociales #inboundmarketing Preguntas típicas de la captación de leads ¿Qué es la captación de leads y por qué es importante?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+          "pageTitle": "Captación de leads - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "¿Por qué es importante medir CPL y CAC en la captación B2B?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+          "pageTitle": "Captación leads B2B - Más clientes más ventas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "#generacióndeleads #diseñoweb #googleads #posicionamientoSEO #socialads #IA #empresarial #redessociales #inboundmarketing Preguntas típicas de Desarrollo empresarial ¿Qué es el desarrollo empresarial y por qué es importante?",
+          "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+          "pageTitle": "Desarrollo empresarial - Tomaleads",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://tomaleads.com/la-agencia/",
+        "https://tomaleads.com/formulario-de-servicios/",
+        "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Nos gusta nuestro trabajo y se refleja en los resultados",
+        "¡Llegaste aquí!¿Qué necesitas?",
+        "Anúnciate enGoogle Ads",
+        "Anúnciate enPaid Social"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Whatsapp",
+        "agenda reunión presencial",
+        "agenda reunión online",
+        "Enviar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://tomaleads.com/formulario-de-servicios/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Agenda online",
+        "agenda reunión presencial",
+        "agenda reunión online",
+        "agenda reunión presencial",
+        "agenda reunión online",
+        "agenda reunión presencial",
+        "agenda reunión online"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por web/contenido → CTA «Quiero hablar con Tomaleads» / «Quiero una propuesta» → contacto y análisis de situación/objetivos → propuesta adaptada a etapa y presupuesto → ejecución"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://tomaleads.com/la-agencia/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://tomaleads.com/formulario-de-servicios/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://tomaleads.com/servicios-marketing-digital/campanas-google-ads/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://tomaleads.com/servicios-marketing-digital/campanas-paid-social/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://tomaleads.com/servicios-marketing-digital/captacion-de-leads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tomaleads.com/servicios-marketing-digital/captacion-leads-b2b/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://tomaleads.com/servicios-marketing-digital/desarrollo-empresarial/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tomaleads.com/aviso-legal-y-privacidad/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=tomaleads.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=110861117509924",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://tomaleads.com/la-agencia/",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “agenda reunión online”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 8 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

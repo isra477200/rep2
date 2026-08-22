@@ -1,0 +1,380 @@
+{
+  "id": "ustabor-oxus-capital-group-ustabor-pro-services-llc",
+  "name": "Ustabor — OXUS CAPITAL GROUP / USTABOR PRO SERVICES LLC",
+  "reviewedAt": "2026-08-22T15:50:18.550Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Выбирайте категорию и заказывайте любые услуги по фиксированной цене",
+    "heroObserved": true,
+    "priorSummary": "Marketplace y catálogo de profesionales en Uzbekistán con más de 80 categorías: búsqueda/filtros o publicación de solicitud para recibir respuestas.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, centrado en la marca, consultivo / basado en preguntas, orientado a la acción. Usa 144 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 331 palabras por página comercial recuperada. Muestras breves: “Найдите проверенного специалиста за 5 минут.” · “Контакты - Ustabor.uz” · “Сколько стоят услуги специалистов в Узбекистане”.",
+    "supportingHeadings": [
+      "Найдите проверенного специалиста за 5 минут.",
+      "Сколько стоят услуги специалистов в Узбекистане",
+      "Выбирайте категорию и заказывайте любые услуги по фиксированной цене",
+      "FAQ"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Call a Pro",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://home.ustabor.uz/en/contacts",
+      "text": "Call a Pro",
+      "href": "https://home.ustabor.uz/en/request",
+      "element": "a",
+      "kind": "conversion",
+      "score": 122.5
+    },
+    "ctas": [
+      "Call a Pro",
+      "Send",
+      "Yuborish",
+      "Отправить",
+      "Оставить заявку"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://home.ustabor.uz/ru",
+        "index": 2,
+        "action": "https://home.ustabor.uz/ru/request",
+        "method": "POST",
+        "submitText": "Оставить заявку",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "request-form[username]",
+            "label": null,
+            "placeholder": "Имя *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "request-form[contact_phone]",
+            "label": null,
+            "placeholder": "Контактный номер телефона *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "request-form[text]",
+            "label": null,
+            "placeholder": "Здесь вы можете написать дополнительные пожелания к работе *",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://home.ustabor.uz/ru/contacts",
+        "index": 1,
+        "action": "https://home.ustabor.uz/ru/contacts",
+        "method": "POST",
+        "submitText": "Отправить",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "data[name]",
+            "label": null,
+            "placeholder": "Имя*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "data[phone]",
+            "label": null,
+            "placeholder": "Контактный телефон",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "data[email]",
+            "label": null,
+            "placeholder": "Электронная почта*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "data[message]",
+            "label": null,
+            "placeholder": "Сообщение*",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 3 y 4 campos visibles, mínimo 3 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace y catálogo de profesionales en Uzbekistán con más de 80 categorías: búsqueda/filtros o publicación de solicitud para recibir respuestas.",
+    "audience": "Consumidores y profesionales de oficios, reparación y servicios locales en Uzbekistán.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "Как это работает Каталог специалистов FAQ Сколько стоят услуги мастеров Правила и условия Статьи в Блоге Политика конфиденциальности Карта сайта Написать нам Сервисы Мы в соцсетях: Скачайте наше бесплатное приложение на смартфон!",
+      "Регион Бытовые услуги Строительство и ремонт Автоуслуги и сервис Ремонт техники Бытовые услуги Репетиторы и курсы Реклама и маркетинг Юристы и финансы Красота и здоровье Блог Стать специалистом ru English O’zbekcha Войти Оставить заявку FAQ После ввода данных для регистрации я не получил письмо с"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Как это работает Каталог специалистов FAQ Сколько стоят услуги мастеров Правила и условия Статьи в Блоге Политика конфиденциальности Карта сайта Написать нам Сервисы Мы в соцсетях: Скачайте наше бесплатное приложение на смартфон!",
+          "url": "https://home.ustabor.uz/ru/ustabor-service",
+          "pageTitle": "«Безопасная сделка» от Ustabor — это гарантия фиксированной цены и качественного результата - Ustabor.uz",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Регион Бытовые услуги Строительство и ремонт Автоуслуги и сервис Ремонт техники Бытовые услуги Репетиторы и курсы Реклама и маркетинг Юристы и финансы Красота и здоровье Блог Стать специалистом ru English O’zbekcha Войти Оставить заявку FAQ После ввода данных для регистрации я не получил письмо с",
+          "url": "https://home.ustabor.uz/ru/faq",
+          "pageTitle": "Часто задаваемые вопросы - Ustabor.uz",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Как это работает Каталог специалистов FAQ Сколько стоят услуги мастеров Правила и условия Статьи в Блоге Политика конфиденциальности Карта сайта Написать нам Сервисы Мы в соцсетях: Скачайте наше бесплатное приложение на смартфон!",
+          "url": "https://home.ustabor.uz/ru/faq",
+          "pageTitle": "Часто задаваемые вопросы - Ustabor.uz",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://home.ustabor.uz/ru",
+        "https://home.ustabor.uz/ru/contacts",
+        "https://home.ustabor.uz/ru/price"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Найдите проверенного специалиста за 5 минут.",
+        "Контакты - Ustabor.uz",
+        "Сколько стоят услуги специалистов в Узбекистане",
+        "Выбирайте категорию и заказывайте любые услуги по фиксированной цене"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Оставить заявку",
+        "Отправить",
+        "Call a Pro",
+        "Send",
+        "Yuborish"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://home.ustabor.uz/ru · 3 campos",
+        "https://home.ustabor.uz/ru/contacts · 4 campos",
+        "https://home.ustabor.uz/en/contacts · 4 campos",
+        "https://home.ustabor.uz/uz/contacts · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Buscar catálogo o publicar solicitud → filtrar/comparar ratings y precios → contacto/respuesta → acuerdo → Safe Deal opcional → confirmación/liberación → reseña."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://home.ustabor.uz/ru",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://home.ustabor.uz/ru/contacts",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://home.ustabor.uz/ru/price",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://home.ustabor.uz/ru/ustabor-service",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://home.ustabor.uz/ru/faq",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://home.ustabor.uz/en/contacts",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://home.ustabor.uz/uz/contacts",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://home.ustabor.uz/ru/howitworks",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Ustabor&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.ustabor.uz/ru/blog/prilozhenie-ustabor-poleznyj-instrument-dlya-masterov",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=ustabor.uz",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR07039737271167221761?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR10922162135068835841?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR07039737271167221761/creative/CR04719771911268073473?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR07039737271167221761/creative/CR09031011326524129281?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR10922162135068835841/creative/CR14155897549721960449?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR07039737271167221761/creative/CR04009634631203684353?region=anywhere",
+      "label": "Fuente pública 18"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "3 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Call a Pro”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

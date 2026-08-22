@@ -1,0 +1,921 @@
+{
+  "id": "growquikr",
+  "name": "GrowQuikr",
+  "reviewedAt": "2026-08-22T15:50:17.216Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "B2B Lead Generation Agency Pay Only for B.I.T-Qualified Leads. No Retainer. No Contracts.",
+    "heroObserved": true,
+    "priorSummary": "Reuniones B2B a éxito con decisores que confirman Budget, Interest y Timeline; prueba documental y cobro solo cuando la reunión se celebra.",
+    "voice": "Revisión manual: anti-retainer, diagnóstico, transparente, directo, numérico, orientado a accountability. B.I.T-qualified No proof, no charge No retainer Pay only for results Budget, Interest, Timeline Cancel anytime",
+    "supportingHeadings": [
+      "Pay Per Appointment Lead Generation - Pay Only When B.I.T-Qualified Leads Land on Your Calendar",
+      "What is Pay Per Appointment Lead Generation?",
+      "How a B.I.T-Qualified Lead is Delivered",
+      "Retainer Agency vs Pay Per Appointment",
+      "What Makes a Lead B.I.T-Qualified?",
+      "Budget",
+      "Interest",
+      "Timeline",
+      "From Setup to Your First Qualified Lead",
+      "Setup and Strategy",
+      "Outreach and Qualification",
+      "Lead Delivered - You Pay",
+      "Transparent Pay Per Appointment Pricing",
+      "GrowQuikr Pay Per Appointment Pricing",
+      "What B2B Lead Generation Actually Costs in 2026",
+      "The qualification rate nobody talks about.",
+      "What Clients Say About Pay Per Appointment",
+      "Common Questions About Pay Per Appointment Lead Generation",
+      "Ready to Pay Only for Qualified Leads?",
+      "Let's make sure we're a fit first.",
+      "Over a Decade in B2B Sales. One Decision That Changed Everything.",
+      "Starting from the Floor Up",
+      "50+ Clients. Good Relationships. A Growing Discomfort.",
+      "The Campaign That Broke the Model",
+      "How B.I.T Was Built - and What It Actually Means",
+      "What B.I.T qualification delivers - compared to before",
+      "Where GrowQuikr Is Now",
+      "Current Active Clients by Market",
+      "Two Things We Will Never Compromise On",
+      "🔍 Transparency - always"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Book a Call",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://growquikr.com/pay-per-lead",
+      "text": "Book a Call",
+      "href": "https://calendly.com/gqr",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.25
+    },
+    "ctas": [
+      "Book a Call",
+      "📞Book a Call",
+      "📞 Book a Call",
+      "⚡ Book My Strategy Call →",
+      "Confirm & Book My Strategy Call →",
+      "Contact",
+      "Start Calculator →",
+      "📄 Download Case Study →"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://growquikr.com/case-studies",
+        "index": 1,
+        "action": "https://growquikr.com/case-studies",
+        "method": "GET",
+        "submitText": "📄 Download Case Study →",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Jane Smith",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "jane@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "Your Company Inc.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growquikr.com/b2b-lead-generation-agency",
+        "index": 1,
+        "action": "https://growquikr.com/b2b-lead-generation-agency",
+        "method": "GET",
+        "submitText": "Confirm & Book My Strategy Call →",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name *",
+            "placeholder": "John Smith",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "john@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "country_code",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone_number",
+            "label": "Phone",
+            "placeholder": "123 456 7890",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company Name",
+            "placeholder": "Your Company Inc.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 3 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: company, Company Name.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 5,
+      "qualification": [
+        "company",
+        "Company Name"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Reuniones B2B a éxito con decisores que confirman Budget, Interest y Timeline; prueba documental y cobro solo cuando la reunión se celebra.",
+    "audience": "SaaS, tecnología, servicios profesionales, finanzas, healthcare y manufacturing B2B con LTV superior a USD 5.000; mid-market/enterprise.",
+    "prices": [],
+    "guarantee": [
+      "PERFORMANCE-BASED PRICING Pay Per Lead B2B ServicesOnly Pay for Results Tired of paying $5,000-$15,000/month retainers with zero guarantee?"
+    ],
+    "proof": [
+      "\"Albert and his team helped me achieve over 2000% ROI by helping me close enterprise clients.",
+      "Our best clients give the system 90 days to compound.",
+      "Case Study - InQbex Analytics 45 demos booked.",
+      "50+ Clients outsourced to us 6 Markets served Outsourced Lead Generation Results A B2B verification platform.",
+      "10+ Monthly Meetings 2000% ROI See All Case Studies → Why outsourcing worked here ✓ In-house team was freed from prospecting - they focused entirely on closing and delivery ✓ Consistent 10+ monthly meetings replaced an unpredict…",
+      "Highly recommended.\" - Amol, CEO Software / IT / SaaS / Design 📄 Download Full Case Study → 🇮🇳 Consulting / Training India 32 Appointments with C-Suite HR Executives in Under 6 Months A new leadership training startup with no marketing presence booked 32 confirmed"
+    ],
+    "objections": [
+      "📄 No 12 month contract - Cancel anytime Month-to-month.",
+      "No retainers, no 12-month contracts.",
+      "📄 Get My Custom Quote → See How It Works No monthly retainer Cancel anytime Pay for QUALIFIED leads only 📊 CPQL Calculator Tell us about your business.",
+      "❌ 6-figure retainers, zero accountability Locked into a 12-month contract with an agency that 'can't guarantee outcomes.' Sound familiar?",
+      "✓ High LTV makes per-lead pricing economically clear SaaS contracts with $20,000+ annual value make the unit economics of per-lead pricing straightforward.",
+      "No monthly retainer, no contracts.",
+      "📊 Calculate Your Cost Per Lead → Our Story No monthly retainer No in-house SDR costs No long-term contracts Cancel anytime Build vs Buy vs Outsource Three ways to do B2B outbound.One makes more sense.",
+      "…had a real buyer - not a researcher ✓ No retainer paid - OnGrid paid per qualified lead, not per month of effort Common Questions Questions about outsourcing B2B lead generation."
+    ],
+    "urgency": [
+      "Today Where GrowQuikr Is Now 50+ Total Clients Served 7 Active on New Model 35+ Years Combined Experience Current Active Clients by Market 4 clients based in India across SaaS, technolo…",
+      "10+ Monthly Qualified Meetings 2000% ROI Achieved 176 Leads Generated Key Challenge Less known product with limited social presence and a tight budget competing against established platforms.",
+      "3 Projects Closed in 4 Months 17 Meetings Delivered 34 Leads Pipeline Created Key Challenge No leads pipeline, limited online presence, had never done cold outreach before.",
+      "What B.I.T qualification delivers - compared to before <3% No-show rate on B.I.T-qualified leads 0 Meetings booked without confirmed decision-maker or decision influencer 3 days Average time to invoice clearance \"Now clients are happy to pay us and we are no longer chasing invoices.",
+      "What We Stand For Two Things We Will Never Compromise On 🔍 Transparency - always You will know exactly what we are doing, why, and what results look like - including when something is not working.",
+      "Clients who are a genuine fit will always know it."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "PERFORMANCE-BASED PRICING Pay Per Lead B2B ServicesOnly Pay for Results Tired of paying $5,000-$15,000/month retainers with zero guarantee?",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "❌ 6-figure retainers, zero accountability Locked into a 12-month contract with an agency that 'can't guarantee outcomes.' Sound familiar?",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        },
+        {
+          "text": "Results are not guaranteed.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        },
+        {
+          "text": "An in-house SDR in India costs ₹40,000-80,000/month in salary plus tools, onboarding, management time and a 3-6 month ramp period before they deliver results - with no guarantee of quality.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Pay Per Lead B2B Lead Generation Case Studies Our Story 📞 Book a Call ☰ Case Studies Real Campaigns.",
+          "url": "https://growquikr.com/case-studies",
+          "pageTitle": "B2B Lead Generation Case Studies | Real Results | GrowQuikr",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "\"Albert and his team helped me achieve over 2000% ROI by helping me close enterprise clients.",
+          "url": "https://growquikr.com/case-studies",
+          "pageTitle": "B2B Lead Generation Case Studies | Real Results | GrowQuikr",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Manager Software / IT / SaaS / PaaS 📄 Download Full Case Study → 🇺🇸 Janitorial Services United States 38 Monthly Appointments for a Janitorial Service Contractor with 2000% ROI A residential and commercial janitorial service provider went from 2-3 meetings a month to 38",
+          "url": "https://growquikr.com/case-studies",
+          "pageTitle": "B2B Lead Generation Case Studies | Real Results | GrowQuikr",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…hing and tell you things you might not expect from an agency.\" - Paul, Owner B2C / Services / Cleaning 📄 Download Full Case Study → 🇮🇳 UI/UX Design India 3 Projects Closed in 4 Months for a UI/UX Studio Starting from Zero A UI/UX design studio that relied entirely on referrals built a qualified leads pipe…",
+          "url": "https://growquikr.com/case-studies",
+          "pageTitle": "B2B Lead Generation Case Studies | Real Results | GrowQuikr",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Highly recommended.\" - Amol, CEO Software / IT / SaaS / Design 📄 Download Full Case Study → 🇮🇳 Consulting / Training India 32 Appointments with C-Suite HR Executives in Under 6 Months A new leadership training startup with no marketing presence booked 32 confirmed",
+          "url": "https://growquikr.com/case-studies",
+          "pageTitle": "B2B Lead Generation Case Studies | Real Results | GrowQuikr",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Services ▼ 💰Pay Per Lead 🎯B2B Lead Generation 📈Demand Generation 💻SaaS Lead Generation 🤝Outsourced Lead Generation 💼LinkedIn Outreach Case Studies Our Story 📞Book a Call B2B Lead Generation Agency Pay Only for B.I.T-Qualified Leads.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Our best clients give the system 90 days to compound.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Pay Per Lead B2B Lead Generation Case Studies Our Story 📞Book a Call ☰ B2B Demand Generation Agency The B2B Demand Generation Agency That Charges Per Qualified Meeting.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "📊 Calculate Your Cost Per Lead → See Results The Demand Generation Funnel 1 Market Awareness Your ICP knows you exist 2 Interest and Engagement Prospects respond to outreach 3 Qualification Budget, Interest, Timeline confirmed 4 B.I.T-Qualified Meeting Lands on your calendar with proof Understanding",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Demand Generation The full funnel process of creating awareness, building interest and generating pipeline across your target market.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The problem is converting that interest into revenue-generating pipeline - not free trial signups or exploratory conversations.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Pay Per Lead B2B Lead Generation Case Studies Our Story 📞Book a Call ☰ SaaS Lead Generation Agency Book More SaaS Demos With Decision-Makers Who Actually Have Budget.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "📊 Calculate Your Cost Per Lead → See Results 50+ Clients Served $0/mo Retainer Fee Protection Every lead is B.I.T-qualified ✓ Budget confirmed - They have funds or authority to allocate.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "💸 Retainer agencies keep charging while pipeline stalls You're paying $5,000-$15,000/month regardless of results.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Setup fee protection $0/mo Monthly retainer SaaS Lead Generation Results An HR analytics SaaS platform.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Case Study - InQbex Analytics 45 demos booked.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Pay Per Lead B2B Lead Generation Case Studies Our Story 📞Book a Call ☰ Outsourced B2B Lead Generation Stop Building an Outbound Team.Outsource It and Pay Only for Results.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "50+ Clients outsourced to us 6 Markets served Outsourced Lead Generation Results A B2B verification platform.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Case Study - OnGrid 10+ qualified meetings per month.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "10+ Monthly Meetings 2000% ROI See All Case Studies → Why outsourcing worked here ✓ In-house team was freed from prospecting - they focused entirely on closing and delivery ✓ Consistent 10+ monthly meetings replaced an unpredict…",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "An in-house SDR in India costs ₹40,000-80,000/month in salary plus tools, onboarding, management time and a 3-6 month ramp period before they deliver results - with no guarantee of quality.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "No Contracts.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No retainers, no 12-month contracts.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "📄 Get My Custom Quote → See How It Works No monthly retainer Cancel anytime Pay for QUALIFIED leads only 📊 CPQL Calculator Tell us about your business.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "❌ 6-figure retainers, zero accountability Locked into a 12-month contract with an agency that 'can't guarantee outcomes.' Sound familiar?",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "📄 No 12 month contract - Cancel anytime Month-to-month.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cancel anytime with 30 days' notice.",
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "pageTitle": "B2B Lead Generation Agency | No Retainer | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "A retainer agency's business model depends on contract renewals.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "✓ High LTV makes per-lead pricing economically clear SaaS contracts with $20,000+ annual value make the unit economics of per-lead pricing straightforward.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No commitment, no sales call.",
+          "url": "https://growquikr.com/demand-generation-agency",
+          "pageTitle": "B2B Demand Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "They asked questions.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The contract auto-renews.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Common Questions Questions about SaaS lead generation.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No monthly retainer, no contracts.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "How long before we see our first B.I.T-qualified SaaS demo?",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No commitment, no sales call required.",
+          "url": "https://growquikr.com/saas-lead-generation-agency",
+          "pageTitle": "SaaS Lead Generation Agency | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "📊 Calculate Your Cost Per Lead → Our Story No monthly retainer No in-house SDR costs No long-term contracts Cancel anytime Build vs Buy vs Outsource Three ways to do B2B outbound.One makes more sense.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…had a real buyer - not a researcher ✓ No retainer paid - OnGrid paid per qualified lead, not per month of effort Common Questions Questions about outsourcing B2B lead generation.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Can I cancel outsourced lead generation if it is not working?",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "There are no long-term contracts.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You can cancel anytime with no penalties.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No commitment required.",
+          "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+          "pageTitle": "Outsourced B2B Lead Generation | GrowQuikr",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Email",
+        "WhatsApp",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://growquikr.com/pay-per-lead",
+        "https://growquikr.com/our-story",
+        "https://growquikr.com/case-studies"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Pay Per Appointment Lead Generation - Pay Only When B.I.T-Qualified Leads Land on Your Calendar",
+        "Over a Decade in B2B Sales. One Decision That Changed Everything.",
+        "B2B Lead Generation Agency Pay Only for B.I.T-Qualified Leads. No Retainer. No Contracts.",
+        "The B2B Demand Generation Agency That Charges Per Qualified Meeting. Not Per Month."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "📞 Book a Call",
+        "Book a Call",
+        "Contact",
+        "📄 Download Case Study →",
+        "📞Book a Call",
+        "Start Calculator →",
+        "⚡ Book My Strategy Call →",
+        "Confirm & Book My Strategy Call →"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://growquikr.com/case-studies · 3 campos",
+        "https://growquikr.com/b2b-lead-generation-agency · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "WhatsApp",
+        "Teléfono",
+        "📞 Book a Call",
+        "Book a Call",
+        "📞 Book a Call",
+        "Book a Call",
+        "📞 Book a Call"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Audit ICP → setup de datos/secuencias → outreach multicanal → conversación → B.I.T. con prueba → calendario → reunión celebrada → factura; no-show/cancelación no se cobra → cliente"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → precalificación [observado] → captación [observado] → venta [observado] → setup [observado] → outreach [observado] → entrega y facturación [observado] → cierre [observado] → retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://growquikr.com/pay-per-lead",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://growquikr.com/our-story",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://growquikr.com/case-studies",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://growquikr.com/b2b-lead-generation-agency",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://growquikr.com/demand-generation-agency",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://growquikr.com/saas-lead-generation-agency",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://growquikr.com/terms-and-conditions",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/798356120958650721",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/3939695766803883198",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://growquikr.com/calculator: Bloqueado por robots.txt",
+    "robots.txt impidió 1 URL(s).",
+    "Se localizaron 3 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Book a Call”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "No proof, no charge: pagar por una conversación comercial demostrablemente cualificada, no por actividad ni por un retainer.",
+      "positioning": "operador contrarian de riesgo compartido",
+      "audience": "Empresas B2B de SaaS, tecnología, servicios profesionales, finanzas, healthcare y fabricación, sobre todo mid-market/enterprise y con LTV de cliente de al menos USD 5.000.",
+      "voice": [
+        "anti-retainer",
+        "diagnóstico",
+        "transparente",
+        "directo",
+        "numérico",
+        "orientado a accountability"
+      ],
+      "patterns": [
+        "B.I.T-qualified",
+        "No proof, no charge",
+        "No retainer",
+        "Pay only for results",
+        "Budget, Interest, Timeline",
+        "Cancel anytime"
+      ]
+    },
+    "cta": {
+      "primary": "Calcular coste por lead cualificado antes de hablar",
+      "secondary": [
+        "Reservar llamada",
+        "obtener presupuesto",
+        "descargar caso",
+        "WhatsApp"
+      ],
+      "forms": [
+        {
+          "url": "https://growquikr.com/b2b-lead-generation-agency",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "código de país",
+            "teléfono",
+            "empresa"
+          ],
+          "fieldCount": 5,
+          "friction": "media-baja",
+          "submitted": false
+        },
+        {
+          "url": "https://growquikr.com/case-studies",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "empresa"
+          ],
+          "fieldCount": 3,
+          "friction": "baja",
+          "submitted": false
+        },
+        {
+          "url": "https://growquikr.com/pay-per-lead",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "La landing declara que calcula según tamaño de empresa, región, industria, cargo y economía del cliente; los controles exactos no se verificaron sin interacción."
+          ],
+          "fieldCount": 1,
+          "friction": "no cuantificable",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Landings por problema, tipo de empresa y alternativas, más casos y comparativas, capturan intención B2B. — stage: descubrimiento — evidenceUrls: https://growquikr.com/pay-per-lead · https://growquikr.com/saas-lead-generation-agency · https://growquikr.com/case-studies"
+      },
+      {
+        "stage": "precalificación",
+        "status": "observado",
+        "detail": "El CPQL se presenta antes de la llamada para comprobar economía e ICP. — stage: precalificación — evidenceUrls: https://growquikr.com/pay-per-lead"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario ligero, calculadora, Calendly y WhatsApp. — stage: captación — evidenceUrls: https://growquikr.com/b2b-lead-generation-agency · https://calendly.com/gqr"
+      },
+      {
+        "stage": "venta",
+        "status": "observado",
+        "detail": "La strategy call fija precio, ICP y criterios; el importe se refleja en un SLA. — stage: venta — evidenceUrls: https://growquikr.com/terms-and-conditions"
+      },
+      {
+        "stage": "setup",
+        "status": "observado",
+        "detail": "Investigación de ICP, lista, secuencias e infraestructura; USD 650 o infraestructura del cliente. — stage: setup — evidenceUrls: https://growquikr.com/pay-per-lead · https://growquikr.com/terms-and-conditions"
+      },
+      {
+        "stage": "outreach",
+        "status": "observado",
+        "detail": "Outreach multicanal personalizado; los interesados pasan por cualificación directa. — stage: outreach — evidenceUrls: https://growquikr.com/pay-per-lead"
+      },
+      {
+        "stage": "entrega y facturación",
+        "status": "observado",
+        "detail": "Agenda, prueba B.I.T. y reunión asistida; solo entonces se factura. No-show o cancelación previa no se factura. — stage: entrega y facturación — evidenceUrls: https://growquikr.com/pay-per-lead · https://growquikr.com/terms-and-conditions"
+      },
+      {
+        "stage": "cierre",
+        "status": "observado",
+        "detail": "El cierre corresponde al equipo comercial del cliente; no hay garantía de ingresos. — stage: cierre — evidenceUrls: https://growquikr.com/terms-and-conditions"
+      },
+      {
+        "stage": "retención",
+        "status": "inferido",
+        "detail": "El cobro unitario y la devolución de lista permiten continuidad; cadencia de revisión y renovación no son públicas. — stage: retención — evidenceUrls: https://growquikr.com/terms-and-conditions"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "exactUrl: https://growquikr.com/pay-per-lead — currency: USD — setupFee: 650 — perBitQualifiedLead: min: 150 — max: 1500 — billingTrigger: Reunión B.I.T. celebrada; una cancelación previa o un no-show no se factura. — caveat: La tabla comparativa de la propia landing muestra USD 100–1.500, mientras la tarifa y los términos muestran USD 150–1.500. El precio exacto se documenta en el SLA."
+      ],
+      "contract": [
+        "Antes de 90 días se puede cancelar en cualquier momento; tras 90 días cualquiera de las partes necesita 30 días de preaviso escrito. No hay penalización de salida. — exactUrl: https://growquikr.com/terms-and-conditions"
+      ],
+      "guarantee": [
+        "Si no entrega ningún lead B.I.T. en 90 días devuelve el setup de USD 650 en siete días laborables. No cubre honorarios por leads ya facturados ni garantiza cierre, ingresos o conversión. — exactUrl: https://growquikr.com/pay-per-lead"
+      ]
+    },
+    "proof": [
+      "claims: 500+ leads y seis países · 50+ clientes · OnGrid: 10+ reuniones mensuales y 2.000% ROI · InQbex: 45 demos, siete PoC y pipeline de 300+ · janitorial: 38 citas mensuales y 2.000% ROI · agencia digital: 37 reuniones y 1.073% ROI · UI/UX: tres proyectos cerrados en cuatro meses — quality: media — caveat: Casos y ROI autopublicados; no se verificaron inversión completa, atribución, margen, contratos ganados ni metodología independiente."
+    ],
+    "objections": [
+      "objection: No quiero pagar un retainer sin resultados. — answer: USD 0 al mes y cobro por reunión asistida B.I.T.",
+      "objection: ¿Cómo sé que la reunión está cualificada? — answer: Los tres criterios se confirman por conversación y se entrega prueba documental.",
+      "objection: ¿Qué pasa con no-show o cancelación? — answer: No se factura si la reunión no tiene lugar.",
+      "objection: ¿Y si no funciona? — answer: Devolución del setup si hay cero B.I.T. en 90 días; no hay garantía de venta.",
+      "objection: ¿Puedo salir? — answer: Salida libre antes de 90 días y 30 días de preaviso después."
+    ],
+    "technology": [
+      "Calendly — basis: destino oficial de reserva",
+      "WhatsApp — basis: CTA público",
+      "CRM/outreach stack — basis: los términos mencionan CRM y herramientas, pero no publican marcas"
+    ],
+    "contradictions": [
+      "La tarifa principal y los términos dicen USD 150–1.500, pero la tabla comparativa de la misma landing muestra USD 100–1.500. — severity: alta",
+      "El mensaje 'No contracts' y 'cancel anytime' simplifica un SLA real y un preaviso obligatorio de 30 días después de 90 días. — severity: alta",
+      "La landing dice que se paga cuando la reunión llega al calendario, pero términos y FAQ aclaran que solo se factura si la reunión se celebra; la segunda definición es más favorable pero debe ser única. — severity: media",
+      "La frase 'we only earn when you get results' puede sugerir resultado comercial; legalmente el resultado facturable es una reunión asistida y no se garantiza cierre ni revenue. — severity: media"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "Auditoría pública sin enviar formularios, calcular CPQL ni reservar llamada.",
+      "No se observaron llamada, SLA individual, CRM, fuentes privadas ni campañas activas autenticadas.",
+      "Las métricas son declaraciones del proveedor y pueden cambiar."
+    ],
+    "lessons": {
+      "copy": [
+        "acrónimo de cualificación explícito",
+        "No proof, no charge",
+        "regla de no-show visible",
+        "separación entre entrega y cierre"
+      ],
+      "adapt": [
+        "calculadora antes de agenda",
+        "protección de setup",
+        "prueba adjunta a cada cita",
+        "precio unitario según ICP",
+        "Definir una ficha de cita asistida con criterios, evidencias, razón de aceptación/rechazo y contador de SLA antes de facturar.",
+        "La promesa se vuelve defendible cuando la cualificación, la prueba, el no-show y el momento de cobro caben en una sola definición contractual."
+      ],
+      "avoid": [
+        "dos rangos de precio",
+        "decir no contract cuando existe SLA/preaviso",
+        "usar result sin nombrar la unidad facturable"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://growquikr.com/pay-per-lead",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/terms-and-conditions",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/case-studies",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/our-story",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/b2b-lead-generation-agency",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/demand-generation-agency",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/saas-lead-generation-agency",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      },
+      {
+        "url": "https://growquikr.com/outsourced-b2b-lead-generation",
+        "label": "Fuente manual 8",
+        "status": "observado"
+      },
+      {
+        "url": "https://calendly.com/gqr",
+        "label": "Fuente manual 9",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,266 @@
+{
+  "id": "dotramo",
+  "name": "dotramo",
+  "reviewedAt": "2026-08-22T15:50:19.345Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Solicita la evaluación.",
+    "heroObserved": true,
+    "priorSummary": "Infraestructura outbound B2B por reunión celebrada y cualificada: señales de compra, datos/enriquecimiento, scoring ICP, email/LinkedIn/llamada, cualificación humana y sincronización CRM.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas. Usa 51 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 441 palabras por página comercial recuperada. Muestras breves: “Conseguimos reuniones B2B cualificadas con outbound.” · “Solicita la evaluación.” · “Condiciones de la prueba”.",
+    "supportingHeadings": [
+      "Conseguimos reuniones B2B cualificadas con outbound.",
+      "Construimos el sistema, ejecutamos la prospección y entregamos reuniones cualificadas para que tu equipo se concentre en vender.",
+      "Construimos el sistema",
+      "Ejecutamos la prospección",
+      "Entregamos reuniones cualificadas",
+      "Empezamos por lo que el mercado te está diciendo.",
+      "Señales de mercado",
+      "Señales de intención",
+      "Señales internas",
+      "Señales operativas",
+      "Tres módulos conectados en un único sistema.",
+      "Datos y mercado",
+      "Ejecución outbound",
+      "CRM y aprendizaje",
+      "Cada operación se configura desde cero según ocho ejes.",
+      "La ruta cambia con cada operación.",
+      "Infraestructura variable para cada operación.",
+      "Un stack de seis capas, conectadas y auditables.",
+      "Capa de señales",
+      "Capa de datos",
+      "Capa de segmentación",
+      "Capa de cualificación humana",
+      "Capa de ejecución",
+      "Capa de CRM y aprendizaje",
+      "Cómo construimos tu canal outbound",
+      "ICP y señales",
+      "Infraestructura",
+      "Ejecución multicanal",
+      "Cualificación",
+      "Optimización"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar evaluación",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://dotramo.com/es",
+      "text": "Solicitar evaluación",
+      "href": "https://dotramo.com/es/book",
+      "element": "a",
+      "kind": "conversion",
+      "score": 220
+    },
+    "ctas": [
+      "Solicitar evaluación",
+      "Solicitar evaluación →"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://dotramo.com/es/book",
+        "index": 1,
+        "action": "https://dotramo.com/es/book",
+        "method": "GET",
+        "submitText": "Solicitar evaluación",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "tunombre@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "He leído la Política de Privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 2 y 2 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 2,
+      "qualification": []
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Infraestructura outbound B2B por reunión celebrada y cualificada: señales de compra, datos/enriquecimiento, scoring ICP, email/LinkedIn/llamada, cualificación humana y sincronización CRM.",
+    "audience": "Empresas B2B con oferta, ICP y mercado validables que quieren pipeline sin fijo ni permanencia; no es un especialista vertical local.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://dotramo.com/es",
+        "https://dotramo.com/es/book",
+        "https://dotramo.com/es/condiciones-prueba"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Conseguimos reuniones B2B cualificadas con outbound.",
+        "Solicita la evaluación.",
+        "Condiciones de la prueba",
+        "Aviso legal"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Solicitar evaluación",
+        "Solicitar evaluación →"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://dotramo.com/es/book · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Solicitar evaluación",
+        "Solicitar evaluación →"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Evaluación → validación de oferta/ICP/mercado → kickoff → piloto de 14 días → detección de señales + datos → secuencia multicanal → gestión de respuestas → cualificación →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://dotramo.com/es",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://dotramo.com/es/book",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://dotramo.com/es/condiciones-prueba",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://dotramo.com/es/aviso-legal",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://dotramo.com/es/privacidad",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://dotramo.com/es/cookies",
+      "label": "Fuente pública 6"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar evaluación”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

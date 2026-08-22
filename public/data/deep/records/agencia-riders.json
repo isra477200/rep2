@@ -1,0 +1,569 @@
+{
+  "id": "agencia-riders",
+  "name": "Agencia Riders",
+  "reviewedAt": "2026-08-22T15:50:17.266Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos y Conviértete en Referente en tu Sector",
+    "heroObserved": true,
+    "priorSummary": "\"Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos (incluso si te preocupa la saturación del mercado o los costes de la publicidad online)\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, apoya la promesa en prueba social. Usa 140 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1911 palabras por página comercial recuperada. Muestras breves: “Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos y Conviértete en Referente en tu Sector” · “Declaración de privacidad (UE)” · “Política de cookies (UE)”.",
+    "supportingHeadings": [
+      "Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos y Conviértete en Referente en tu Sector",
+      "(incluso si te preocupa la saturación del mercado o los costes de la publicidad online)",
+      "Exclusivo para Negocios Online de Infoproductos High Ticket.",
+      "¿Te suena esto?",
+      "Mientras tanto...",
+      "NO ESTÁS SOLO.",
+      "Piensa por un segundo...",
+      "1️⃣ Si todavía no vendes infoproductos...",
+      "2️⃣ Si ya vendes infoproductos...",
+      "¿Cómo lo hacemos?",
+      "POR FIN...",
+      "Aunque...",
+      "AGENCIA DE LANZAMIENTOS DIGITALES",
+      "Webinar Evergreen, Video Sales Letter (VSL), Product Launch Formula (PLF)...",
+      "Lanzamiento Webinar",
+      "Video Sales Letter",
+      "PLF",
+      "Webinar Automatizado",
+      "Algunos de nuestros clientes en Agencia Riders",
+      "Sistema PILO",
+      "Planificación",
+      "Implementación",
+      "Lanzamiento",
+      "Optimización",
+      "¿Quiénes somos nosotros?",
+      "Necesitas una estrategia que se adapte perfectamente a ti, y no al revés.",
+      "Webinar Evergreen, VSL, Product Launch Formula (PLF), Reto De WhatsApp...",
+      "Testimonio de Manuel, de Escuela de La Memoria.",
+      "Testimonios de Agencia Riders",
+      "Anika Rytel - Mascotas Urbanas"
+    ]
+  },
+  "conversion": {
+    "primaryCta": ">> Enviar solicitud",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://agenciariders.com/",
+      "text": ">> Enviar solicitud",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 45.25
+    },
+    "ctas": [
+      ">> Enviar solicitud"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://agenciariders.com/",
+        "index": 1,
+        "action": "https://digitalriders.activehosted.com/proc.php",
+        "method": "POST",
+        "submitText": ">> Enviar solicitud",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 15,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fullname",
+            "label": "Nombre completo *",
+            "placeholder": "Tu nombre completo (con apellidos).",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico para recibir notificaciones.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Número de teléfono CON PREFIJO DEL PAÍS *",
+            "placeholder": "Número de teléfono (CON PREFIJO del país). Ejemplo: +34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[8]",
+            "label": "Tu página web (si tienes)",
+            "placeholder": "www.ejemplo.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[7]",
+            "label": "Cuéntanos sobre tu proyecto *",
+            "placeholder": "Quién eres, qué vendes, a quién ayudas y qué objetivo quieres conseguir",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "field[46]",
+            "label": "Menos de 3.000 €",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "field[49]",
+            "label": "Sí",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[9]",
+            "label": "Información adicional que debamos tener en cuenta",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "field[50][]",
+            "label": "Entiendo que este proceso está orientado a lanzar o escalar una oferta",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "field[1][]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://agenciariders.com/declaracion-de-privacidad-ue/",
+        "index": 1,
+        "action": "https://digitalriders.activehosted.com/proc.php",
+        "method": "POST",
+        "submitText": ">> Enviar solicitud",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 15,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fullname",
+            "label": "Nombre completo *",
+            "placeholder": "Tu nombre completo (con apellidos).",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico para recibir notificaciones.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Número de teléfono CON PREFIJO DEL PAÍS *",
+            "placeholder": "Número de teléfono (CON PREFIJO del país). Ejemplo: +34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[8]",
+            "label": "Tu página web (si tienes)",
+            "placeholder": "www.ejemplo.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[7]",
+            "label": "Cuéntanos sobre tu proyecto *",
+            "placeholder": "Quién eres, qué vendes, a quién ayudas y qué objetivo quieres conseguir",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "field[46]",
+            "label": "Menos de 3.000 €",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "field[49]",
+            "label": "Sí",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[9]",
+            "label": "Información adicional que debamos tener en cuenta",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "field[50][]",
+            "label": "Entiendo que este proceso está orientado a lanzar o escalar una oferta",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "field[1][]",
+            "label": "He leído y acepto la política de privacidad *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 10 y 10 campos visibles, mínimo 8 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Tu página web (si tienes).",
+      "friction": "Alta",
+      "minFields": 10,
+      "maxFields": 10,
+      "qualification": [
+        "Tu página web (si tienes)"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos (incluso si te preocupa la saturación del mercado o los costes de la publicidad online)\".",
+    "audience": "\"Exclusivo para Negocios Online de Infoproductos High Ticket\" (literal). Expertos, formadores e infoproductores. Nada que ver con la pyme local, pero es donde mejor está construida la cualificación.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "❌ La atracción y conversión de clientes potenciales de forma rentable son acertijos que aún no has logrado resolver.",
+      "Diseñando sistemas de ventas que atraen a personas interesadas en lo que ofreces y las convierten en clientes de forma predecible, recurrente y escalable.",
+      "❌ No te garantizamos resultados estratosféricos sin mover ni un dedo desde el sofá de tu casa, ni mucho menos hacerte millonario (aunque tampoco serías el primer cliente de Agencia Riders que lo consigue..).",
+      "Webinar Automatizado Sistema de captación de clientes potenciales automatizado para venta de productos de medio y alto valor.",
+      "Quiero hablar con vosotros Algunos de nuestros clientes en Agencia Riders ¿Cómo lo hacemos?"
+    ],
+    "objections": [
+      "Preguntas Frecuentes (FAQ) ¿Qué es un lanzamiento?",
+      "¿Por qué hacer un lanzamiento ahora?"
+    ],
+    "urgency": [
+      "Hemos lanzado más de 400 negocios digitales, y, al trabajar con clientes que (ahora sí) son referentes de sus mercados, hemos perfeccionado nuestros sistemas de ventas online, desarrollando una metodología propia de lanzamiento.",
+      "→ Agenda tu llamada hoy mismo con nuestro equipo.",
+      "Si necesitas ayuda para hacer un lanzamiento, son de los más profesionales que vas a poder encontrar.” Bruno Tombolato «Mi negocio ahora es otra cosa.",
+      "¿Por qué hacer un lanzamiento ahora?",
+      "If you have any questions, or want to know exactly what data we keep of you, please contact us.1.",
+      "Accessing and modifying your dataIf you have any questions or want to know which personal data we have about you, please contact us."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "* Menos de 3.000 € Entre 3.000 € y 6.000 € Más de 6.000 € Los negocios digitales más exitosos suelen apoyarse en ofertas high ticket.",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [
+        {
+          "text": "No hacemos declaraciones ni garantías de ningún tipo, expresas o implícitas, sobre la integridad, precisión, fiabilidad, idoneidad o disponibilidad de los productos, servicios o contenido relacionado en esta página.",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "❌ La atracción y conversión de clientes potenciales de forma rentable son acertijos que aún no has logrado resolver.",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Diseñando sistemas de ventas que atraen a personas interesadas en lo que ofreces y las convierten en clientes de forma predecible, recurrente y escalable.",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "❌ No te garantizamos resultados estratosféricos sin mover ni un dedo desde el sofá de tu casa, ni mucho menos hacerte millonario (aunque tampoco serías el primer cliente de Agencia Riders que lo consigue..).",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Webinar Automatizado Sistema de captación de clientes potenciales automatizado para venta de productos de medio y alto valor.",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Quiero hablar con vosotros Algunos de nuestros clientes en Agencia Riders ¿Cómo lo hacemos?",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Preguntas Frecuentes (FAQ) ¿Qué es un lanzamiento?",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué hacer un lanzamiento ahora?",
+          "url": "https://agenciariders.com/",
+          "pageTitle": "Agencia de Lanzamientos y Embudos para Infoproductos",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://agenciariders.com/",
+        "https://agenciariders.com/declaracion-de-privacidad-ue/",
+        "https://agenciariders.com/politica-de-cookies-ue/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos y Conviértete en Referente en tu Sector",
+        "Declaración de privacidad (UE)",
+        "Política de cookies (UE)",
+        "Aviso Legal / Imprint"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        ">> Enviar solicitud"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://agenciariders.com/ · 10 campos",
+        "https://agenciariders.com/ · 10 campos",
+        "https://agenciariders.com/declaracion-de-privacidad-ue/ · 10 campos",
+        "https://agenciariders.com/politica-de-cookies-ue/ · 10 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing para infoproductos high-ticket → popup de sesión de valoración → aplicación/cualificación → valoración 1:1 gratuita → estrategia y propuesta → lanzamiento o evergreen."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://agenciariders.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://agenciariders.com/declaracion-de-privacidad-ue/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://agenciariders.com/politica-de-cookies-ue/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://agenciariders.com/aviso-legal-imprint/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=agenciariders.com",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "http://agenciariders.com/google/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR13104925108294647809?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://agenciariders.com/google/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR07586013113573441537?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR08147570226280529921?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR16318921841097834497?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "http://agenciariders.com/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR04551654246918914049?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "http://agenciariders.com/lanzamiento/infoproductos",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR00968249060613947393?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR14563200954942881793?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR18213644224186810369?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR03482630118076055553/creative/CR01970906324006862849?region=anywhere",
+      "label": "Fuente pública 19"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “>> Enviar solicitud”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 10 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

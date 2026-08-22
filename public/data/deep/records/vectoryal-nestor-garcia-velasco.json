@@ -1,0 +1,450 @@
+{
+  "id": "vectoryal-nestor-garcia-velasco",
+  "name": "Vectoryal (Néstor García Velasco)",
+  "reviewedAt": "2026-08-22T15:50:17.979Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Marketing Digital 360y automatizado en Pamplona",
+    "heroObserved": true,
+    "priorSummary": "\"Atraemos clientes para tu empresa en Pamplona\", \"Reciba un flujo constante de clientes potenciales y los convierta en ventas\", \"Cada euro invertido se traduce en leads cualificados\", \"Resultados en días\" (pago) / \"3-6 meses\" (SEO/funnels).",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 189 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1135 palabras por página comercial recuperada. Muestras breves: “Marketing Digital 360y automatizado en Pamplona” · “Transforma tu empresa. Empieza hoy.” · “Consultoría en sistemasy automatización”.",
+    "supportingHeadings": [
+      "Marketing Digital 360y automatizado en Pamplona",
+      "Marketing digital 360 y automatizado para empresas de Pamplona",
+      "Por qué hacer tu marketing con Vectoryal en Pamplona",
+      "Captación de leads multicanal",
+      "Funnels de venta automatizados",
+      "SEO local y posicionamiento",
+      "Email marketing con IA",
+      "Tu proyecto de marketing 360 en Pamplona, paso a paso",
+      "Diagnóstico",
+      "Diseño a medida",
+      "Implementación",
+      "Soporte y mejora",
+      "A qué empresas de Pamplona ayudamos",
+      "Marketing 360 en Pamplona: ejemplos reales",
+      "Captación para Comercio",
+      "Clínicas estéticas y dentales",
+      "Qué gana tu empresa de Pamplona",
+      "Leads que compran, no solo clics",
+      "Coste por cliente bajo control",
+      "Marca presente en todo el funnel",
+      "Todo medido y optimizado",
+      "Por qué confían en Vectoryal",
+      "Con qué trabajamos para empresas de Pamplona",
+      "Marketing 360 en Pamplona y toda España",
+      "Preguntas sobre marketing 360 en Pamplona",
+      "Combínalo con otros servicios en Pamplona",
+      "Automatización IA en Pamplona",
+      "Chatbots y Agentes IA en Pamplona",
+      "Desarrollo Web en Pamplona",
+      "Automatización de Facturación en Pamplona"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agenda auditoría gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://vectoryal.com/sobre-nosotros",
+      "text": "Agenda auditoría gratuita",
+      "href": "https://calendar.app.google/FEA6j2iVR2en15GT7",
+      "element": "a",
+      "kind": "conversion",
+      "score": 158.75
+    },
+    "ctas": [
+      "Agenda auditoría gratuita",
+      "Contacto",
+      "Contactar →",
+      "WhatsApp +34 613 004 986",
+      "Comprobar",
+      "Escribirnos →",
+      "Enviar Solicitud →",
+      "Cambiar preferencias",
+      "Hablemos de tu proyecto →"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://vectoryal.com/contacto",
+        "index": 1,
+        "action": "https://vectoryal.com/contacto",
+        "method": "GET",
+        "submitText": "Enviar Solicitud →",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo *",
+            "placeholder": "Juan Perez",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "juan@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa",
+            "placeholder": "Mi Empresa S.L.",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "businessSector",
+            "label": "Sector o tipo de negocio *",
+            "placeholder": "Clinica dental, inmobiliaria, gimnasio, etc.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "businessSize",
+            "label": "Tamaño del negocio",
+            "placeholder": "Autónomo, Pyme, Empresa mediana o Corporación",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "help[]",
+            "label": "Automatización de procesos",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "helpOther",
+            "label": null,
+            "placeholder": "Si has marcado 'Otro', cuentanos brevemente que necesitas",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos sobre tu negocio *",
+            "placeholder": "Describe brevemente tu negocio y que procesos te gustaria automatizar...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://vectoryal.com/servicios/automatizacion-reservas/pamplona",
+        "index": 1,
+        "action": "https://vectoryal.com/servicios/automatizacion-reservas/pamplona",
+        "method": "GET",
+        "submitText": "Comprobar",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "loc",
+            "label": null,
+            "placeholder": "Escribe tu localidad…",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 9 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Empresa, Sector o tipo de negocio *.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 9,
+      "qualification": [
+        "Empresa",
+        "Sector o tipo de negocio *"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Atraemos clientes para tu empresa en Pamplona\", \"Reciba un flujo constante de clientes potenciales y los convierta en ventas\", \"Cada euro invertido se traduce en leads cualificados\", \"Resultados en días\" (pago) / \"3-6 meses\" (SEO/funnels).",
+    "audience": "Pymes de Pamplona/Navarra: automoción, industria, agroalimentario, salud, clínicas estéticas y dentales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "El marketing digital 360 conecta todas las piezas —SEO, publicidad, contenidos, email y automatización— para que tu empresa de Pamplona reciba un flujo constante de clientes potenciales y los convierta en ventas.",
+      "…Reservar llamada EN ES FR DE Pamplona · Marketing Digital 360 Marketing Digital 360y automatizado en Pamplona Atraemos clientes para tu empresa en Pamplona con marketing digital 360: captación de leads, funnels de venta automatizados, email marketing con IA y SEO local.",
+      "Para las empresas de Pamplona en sectores como Automoción (VW Navarra) y Industria, Agroalimentario, el reto no es solo tener presencia online, sino atraer clientes de forma constante y rentable.",
+      "SEO local y posicionamiento Posicionamos tu negocio en las búsquedas de tu ciudad para que te encuentren los clientes de tu zona justo cuando buscan lo que ofreces.",
+      "Email marketing con IA Secuencias y campañas personalizadas según el comportamiento de cada contacto, para vender más a tu base de clientes sin esfuerzo manual."
+    ],
+    "objections": [
+      "Compruébalo: Comprobar Preguntas frecuentes Preguntas sobre marketing 360 en Pamplona ¿Qué incluye una estrategia de marketing 360?",
+      "Por qué Vectoryal Por qué hacer tu marketing con Vectoryal en Pamplona Captación de leads multicanal Campañas en los principales canales de publicidad con seguimiento automatizado para que recibas contactos cualificados, no solo clics que no llevan a ninguna parte."
+    ],
+    "urgency": [
+      "Descubre lo que hacemos Cómo trabajamos Tu proyecto de marketing 360 en Pamplona, paso a paso 1 Diagnóstico Analizamos cómo trabaja hoy tu empresa en Pamplona y detectamos dónde marketing 360 aporta más valor y mejor retorno.",
+      "Hablemos de tu proyecto → 1 Auditoría y mapeo de procesos Revisamos cómo trabajas hoy: canales de captación, herramientas, tareas manuales, puntos de fricción y oportunidades de automatización.",
+      "Descubre lo que hacemos Cómo trabajamos Tu proyecto de automatización de reservas, paso a paso 1 Diagnóstico Analizamos cómo trabaja hoy tu empresa y detectamos dónde automatización de reservas aporta más valor y mejor retorno.",
+      "Descubre lo que hacemos Cómo trabajamos Tu proyecto de automatización de reservas en Pamplona, paso a paso 1 Diagnóstico Analizamos cómo trabaja hoy tu empresa en Pamplona y detectamos dónde automatización de reservas aporta más valor y mejor retorno.",
+      "Descubre lo que hacemos Cómo trabajamos Tu proyecto de consultoría de automatización en Pamplona, paso a paso 1 Diagnóstico Analizamos cómo trabaja hoy tu empresa en Pamplona y detectamos dónde consultoría de automatización aporta más valor y mejor retorno.",
+      "El desarrollo lo hacemos en remoto con infraestructura cloud, y nos desplazamos a Pamplona para las reuniones de arranque, los talleres y la formación del equipo."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…Reservar llamada EN ES FR DE Pamplona · Marketing Digital 360 Marketing Digital 360y automatizado en Pamplona Atraemos clientes para tu empresa en Pamplona con marketing digital 360: captación de leads, funnels de venta automatizados, email marketing con IA y SEO local.",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "El marketing digital 360 conecta todas las piezas —SEO, publicidad, contenidos, email y automatización— para que tu empresa de Pamplona reciba un flujo constante de clientes potenciales y los convierta en ventas.",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Para las empresas de Pamplona en sectores como Automoción (VW Navarra) y Industria, Agroalimentario, el reto no es solo tener presencia online, sino atraer clientes de forma constante y rentable.",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "SEO local y posicionamiento Posicionamos tu negocio en las búsquedas de tu ciudad para que te encuentren los clientes de tu zona justo cuando buscan lo que ofreces.",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Email marketing con IA Secuencias y campañas personalizadas según el comportamiento de cada contacto, para vender más a tu base de clientes sin esfuerzo manual.",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Por qué Vectoryal Por qué hacer tu marketing con Vectoryal en Pamplona Captación de leads multicanal Campañas en los principales canales de publicidad con seguimiento automatizado para que recibas contactos cualificados, no solo clics que no llevan a ninguna parte.",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Compruébalo: Comprobar Preguntas frecuentes Preguntas sobre marketing 360 en Pamplona ¿Qué incluye una estrategia de marketing 360?",
+          "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+          "pageTitle": "Marketing Digital 360 en Pamplona | Vectoryal",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://vectoryal.com/servicios/marketing-360/pamplona",
+        "https://vectoryal.com/contacto",
+        "https://vectoryal.com/sobre-nosotros"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing Digital 360y automatizado en Pamplona",
+        "Transforma tu empresa. Empieza hoy.",
+        "Consultoría en sistemasy automatización",
+        "Automatización de Reservas"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Contactar →",
+        "Comprobar",
+        "Escribirnos →",
+        "WhatsApp +34 613 004 986",
+        "Enviar Solicitud →",
+        "Cambiar preferencias",
+        "Agenda auditoría gratuita"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://vectoryal.com/contacto · 9 campos",
+        "https://vectoryal.com/servicios/automatizacion-reservas/pamplona · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp",
+        "Agenda auditoría gratuita"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing local o servicio de captación → diagnóstico gratuito de negocio, ICP y objetivos → diseño a medida del sistema → implementación de campañas multicanal y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://vectoryal.com/servicios/marketing-360/pamplona",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://vectoryal.com/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://vectoryal.com/sobre-nosotros",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://vectoryal.com/servicios/consultoria-automatizacion",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://vectoryal.com/servicios/automatizacion-reservas",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://vectoryal.com/servicios/automatizacion-reservas/pamplona",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://vectoryal.com/servicios/consultoria-automatizacion/pamplona",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://vectoryal.com/servicios/captacion-leads",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://vectoryal.com/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://vectoryal.com/aviso-legal",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agenda auditoría gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

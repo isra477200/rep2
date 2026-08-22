@@ -1,0 +1,340 @@
+{
+  "id": "investcomoros-net",
+  "name": "investcomoros.net",
+  "reviewedAt": "2026-08-22T15:50:18.800Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Bienvenue à l'Agence Nationale pour la Promotion des Investissements en Union des Comores",
+    "heroObserved": true,
+    "priorSummary": "Consultar empresas, recursos legales y ventanilla única.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, centrado en la marca, consultivo / basado en preguntas, orientado a la acción. Usa 208 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 553 palabras por página comercial recuperada. Muestras breves: “ANPI COMORES” · “Nous contacter” · “Nos Services”.",
+    "supportingHeadings": [
+      "ANPI COMORES",
+      "Vous voulez investir aux Comores mais vous ne savez pas par où commencer ?",
+      "Nous contacter",
+      "Nos Services",
+      "Accompagnement aux procédures",
+      "Intelligence Économique et Sectorielle",
+      "Facilitation des partenariats",
+      "Conseil juridique",
+      "Guichet unique",
+      "Information économique",
+      "Prêt à investir aux Comores?",
+      "Ressources utiles",
+      "Bienvenue à l'Agence Nationale pour la Promotion des Investissements en Union des Comores",
+      "Faciliter et promouvoir les investissements pour stimuler le développement économique du pays",
+      "Pourquoi investir aux Comores ?",
+      "Investir aux Comores, c'est investir dans le futur",
+      "Projection 2025 : La 3ème édition BIK 2025 en gestation",
+      "Rapport biennal 2022-2023 : Des réformes et des actions percutantes",
+      "Rapport biennal 2022-2023 : Plus de 10 milliards KMF pour soutenir les entreprises",
+      "Coopération économique Tanzanie – Comores : Une délégation d’investisseurs tanzaniens reçue à l’ANPI",
+      "Inclusion financière de la Diaspora : Les opportunités et les défis au menu des échanges",
+      "Visite de Mme Heba Capdevila-Janggeerkhan, PDG du groupe Cementis Océan Indien",
+      "Union des Comores Destination d’avenir",
+      "Indicateurs Économiques Clés (2024)",
+      "Opportunités d’Investissement",
+      "Tourisme Haut de Gamme",
+      "Agriculture Biologique",
+      "Énergies Renouvelables",
+      "Infrastructures",
+      "Incitations aux Investissements"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Ouvrir un dossier",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.investcomoros.net/",
+      "text": "Ouvrir un dossier",
+      "href": "https://anpicomores.com/fr/utilisateurs/register/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 80.75
+    },
+    "ctas": [
+      "Soumettre",
+      "Ouvrir un dossier",
+      "Envoyer le Message",
+      "Code des investissements"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.investcomoros.net/annuaire-des-entreprises/",
+        "index": 2,
+        "action": "https://www.investcomoros.net/annuaire-des-entreprises/",
+        "method": "POST",
+        "submitText": "Soumettre",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Votre adresse mail",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.investcomoros.net/nous-contacter/",
+        "index": 2,
+        "action": "https://www.investcomoros.net/nous-contacter/your_form_processing_url",
+        "method": "POST",
+        "submitText": "Envoyer le Message",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nom Complet :",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Adresse Email :",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Objet :",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message :",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "office",
+            "label": "Bureau de Contact :",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 5 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Consultar empresas, recursos legales y ventanilla única.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "…pays Découvrir → Documentations Téléchargez guides, formulaires et documents utiles pour votre investissement Accéder → FAQ Questions fréquentes sur l'investissement aux Comores Consulter → L’ANPI a été créée en 2008.",
+      "🏢 Hub de l'investissement Guichet unique pour la création et l'accompagnement des entrepreneurs 💼 Hub des Services Découvrez les acteurs de l'écosystème économique comorien ⚖️ E-Régulation Plateforme juridique pour toutes vos questions légales Hub des Services à la Diaspora E-Régulation Guichet Unique"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…pays Découvrir → Documentations Téléchargez guides, formulaires et documents utiles pour votre investissement Accéder → FAQ Questions fréquentes sur l'investissement aux Comores Consulter → L’ANPI a été créée en 2008.",
+          "url": "https://www.investcomoros.net/les-services-de-lanpi-comores/",
+          "pageTitle": "Les services de l'ANPI-Comores - Agence Nationale pour la Promotion des Investissements | Comores",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "🏢 Hub de l'investissement Guichet unique pour la création et l'accompagnement des entrepreneurs 💼 Hub des Services Découvrez les acteurs de l'écosystème économique comorien ⚖️ E-Régulation Plateforme juridique pour toutes vos questions légales Hub des Services à la Diaspora E-Régulation Guichet Unique",
+          "url": "https://www.investcomoros.net/les-services-de-lanpi-comores/",
+          "pageTitle": "Les services de l'ANPI-Comores - Agence Nationale pour la Promotion des Investissements | Comores",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "🏢 Hub de l'investissement Guichet unique pour la création et l'accompagnement des entrepreneurs 💼 Hub des Services Découvrez les acteurs de l'écosystème économique comorien ⚖️ E-Régulation Plateforme juridique pour toutes vos questions légales Hub des Services à la Diaspora E-Régulation Guichet Unique",
+          "url": "https://www.investcomoros.net/",
+          "pageTitle": "Accueil - Agence Nationale pour la Promotion des Investissements | Comores",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.investcomoros.net/annuaire-des-entreprises/",
+        "https://www.investcomoros.net/nous-contacter/",
+        "https://www.investcomoros.net/les-services-de-lanpi-comores/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "ANPI COMORES",
+        "Nous contacter",
+        "Nos Services",
+        "Bienvenue à l'Agence Nationale pour la Promotion des Investissements en Union des Comores"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Soumettre",
+        "Envoyer le Message",
+        "Ouvrir un dossier",
+        "Code des investissements"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.investcomoros.net/annuaire-des-entreprises/ · 1 campos",
+        "https://www.investcomoros.net/nous-contacter/ · 5 campos",
+        "https://www.investcomoros.net/nous-contacter/ · 1 campos",
+        "https://www.investcomoros.net/les-services-de-lanpi-comores/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.investcomoros.net/annuaire-des-entreprises/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.investcomoros.net/nous-contacter/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.investcomoros.net/les-services-de-lanpi-comores/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.investcomoros.net/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.investcomoros.net/les-procedures-de-creation-dentreprises-aux-comores/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.investcomoros.net/fiche-pays/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.investcomoros.net/blog/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Ouvrir un dossier”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

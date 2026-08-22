@@ -1,0 +1,448 @@
+{
+  "id": "telapo-shokunin",
+  "name": "Telapo Shokunin",
+  "reviewedAt": "2026-08-22T15:50:17.616Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "返金した例",
+    "heroObserved": true,
+    "priorSummary": "Teleappointment B2B por lista para pequeñas empresas japonesas: crea el guion, realiza hasta tres intentos por target, comunica citas/material y entrega informe diario.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, conciso, orientado a la acción, apoya la venta en reversión de riesgo. Usa 436 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 152 palabras por página comercial recuperada. Muestras breves: “返金した例” · “お問い合わせフォーム” · “参考料金”.",
+    "supportingHeadings": [
+      "返金した例",
+      "テレアポをしてクレームになるかの心配について",
+      "サービス内容",
+      "アポインター舘野より",
+      "平均アポ率の推移",
+      "主な過去の実績",
+      "料金",
+      "料金例",
+      "注意事項",
+      "テレアポ代行開始までの流れ",
+      "お客様の声",
+      "よくある質問",
+      "地図",
+      "参考料金",
+      "導入実績",
+      "個人の方へ",
+      "コンサルティング事例",
+      "ソフトウェアの法人向け販売のアポ取り",
+      "個人宅向けの販売目的のアポ取り",
+      "個人向け商品販売のアポ取り",
+      "人材派遣会社の法人向け販売のアポ取り",
+      "他の事例",
+      "コンサルティングをご検討中の方へ",
+      "お試しコンサルティング",
+      "具体的な金額を教えて下さい",
+      "成果報酬での代行はやっていますか？",
+      "アポ率を教えて下さい",
+      "主な実績",
+      "1件もアポイントが取れない事はありますか？",
+      "リストの作成は可能でしょうか？"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "お問い合わせ窓口",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.telapo.com/service/",
+      "text": "お問い合わせ窓口",
+      "href": "https://www.telapo.com/contact/index.html",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243
+    },
+    "ctas": [
+      "お問い合わせ窓口",
+      "お問い合わせフォーム",
+      "送信"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.telapo.com/service/",
+        "index": 1,
+        "action": "http://regist.mag2.com/reader/Magrdop",
+        "method": "POST",
+        "submitText": "送信",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "radio",
+            "name": "op",
+            "label": "登録する",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "rdemail",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdqFsIbeIY2cj-IZkEwZSu6oCXapPaqazgv8StJXOi6qblQxA/viewform",
+        "index": 1,
+        "action": "https://docs.google.com/forms/d/e/1FAIpQLSdqFsIbeIY2cj-IZkEwZSu6oCXapPaqazgv8StJXOi6qblQxA/formResponse",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 2 y 7 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Teleappointment B2B por lista para pequeñas empresas japonesas: crea el guion, realiza hasta tres intentos por target, comunica citas/material y entrega informe diario.",
+    "audience": "Pymes B2B japonesas, sobre todo con menos de 100 M JPY de facturación y menos de 10 empleados; proyectos de 50–2.000 targets. No llama a hogares/consumidor.",
+    "prices": [],
+    "guarantee": [
+      "（ただし、０もあります。良い事だけを言っても仕方がないので、まったく取れないで返金保証を実施した例です） 返金した例 平成２９年８月 グローバル展開しているＩＴ企業へのパートナーになれないかのアポ取り リスト数１９件 アポ数０件 ※ほとんどんが受付で問い合わせフォームからエントリーして下さいかメールでのエントリーのみと言われる。",
+      "平成２８年７月 美容室・エステへのメール配信システムのアポ取り リスト数１０５件 アポ数０件 平成２８年６月 あん摩・指圧・はり・きゅうへのＦＣ加盟のアポ取り リスト数１００件 アポ数０件 残念ながら結果が出なかったので返金しています。"
+    ],
+    "proof": [
+      "主な過去の実績 【間接部門へのコンサルティングの提案】 9.4% (リスト数775件 アポ73件 資料64件 実施期間25日) 【人材派遣】 3.9% (リスト数1000件 アポ39件) 【コンサルティングの提案】 3.5% (リスト数200件 アポ7件 資料送付4件) 【人事部門へのコンサルティングの提案】 2.3% (リスト数1500件 資料送付540件 アポ35件)…"
+    ],
+    "objections": [
+      "（設計事務所経営 K・Tさん） よくある質問 テレアポ代行サービスについて、よくいただく質問と回答を紹介しています。ご参照ください。→ テレアポ代行「よくある質問」 ▲ このページの先頭に戻る 【まぐまぐ殿堂入り】企業にとって重要な新規開拓業務、特にテレアポ営業に特化したメルマガです。"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "（ただし、０もあります。良い事だけを言っても仕方がないので、まったく取れないで返金保証を実施した例です） 返金した例 平成２９年８月 グローバル展開しているＩＴ企業へのパートナーになれないかのアポ取り リスト数１９件 アポ数０件 ※ほとんどんが受付で問い合わせフォームからエントリーして下さいかメールでのエントリーのみと言われる。",
+          "url": "https://www.telapo.com/service/",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "平成２８年７月 美容室・エステへのメール配信システムのアポ取り リスト数１０５件 アポ数０件 平成２８年６月 あん摩・指圧・はり・きゅうへのＦＣ加盟のアポ取り リスト数１００件 アポ数０件 残念ながら結果が出なかったので返金しています。",
+          "url": "https://www.telapo.com/service/",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "（ただし、０もあります。良い事だけを言っても仕方がないので、まったく取れないで返金保証を実施した例です） 返金した例 平成２９年８月 グローバル展開しているＩＴ企業へのパートナーになれないかのアポ取り リスト数１９件 アポ数０件 ※ほとんどんが受付で問い合わせフォームからエントリーして下さいかメールでのエントリーのみと言われる。",
+          "url": "https://www.telapo.com/service/index.html",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "平成２８年７月 美容室・エステへのメール配信システムのアポ取り リスト数１０５件 アポ数０件 平成２８年６月 あん摩・指圧・はり・きゅうへのＦＣ加盟のアポ取り リスト数１００件 アポ数０件 残念ながら結果が出なかったので返金しています。",
+          "url": "https://www.telapo.com/service/index.html",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "主な過去の実績 【間接部門へのコンサルティングの提案】 9.4% (リスト数775件 アポ73件 資料64件 実施期間25日) 【人材派遣】 3.9% (リスト数1000件 アポ39件) 【コンサルティングの提案】 3.5% (リスト数200件 アポ7件 資料送付4件) 【人事部門へのコンサルティングの提案】 2.3% (リスト数1500件 資料送付540件 アポ35件)…",
+          "url": "https://www.telapo.com/service/",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "主な過去の実績 【間接部門へのコンサルティングの提案】 9.4% (リスト数775件 アポ73件 資料64件 実施期間25日) 【人材派遣】 3.9% (リスト数1000件 アポ39件) 【コンサルティングの提案】 3.5% (リスト数200件 アポ7件 資料送付4件) 【人事部門へのコンサルティングの提案】 2.3% (リスト数1500件 資料送付540件 アポ35件)…",
+          "url": "https://www.telapo.com/service/index.html",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "業種は色々とありますので、「よくある質問」の実績を参照して下さい。",
+          "url": "https://www.telapo.com/service/",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "（設計事務所経営 K・Tさん） よくある質問 テレアポ代行サービスについて、よくいただく質問と回答を紹介しています。ご参照ください。→ テレアポ代行「よくある質問」 ▲ このページの先頭に戻る 【まぐまぐ殿堂入り】企業にとって重要な新規開拓業務、特にテレアポ営業に特化したメルマガです。",
+          "url": "https://www.telapo.com/service/",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "登録する 解除する ■竹野恵介公式サイト テレアポ トップページ 公式ブログ（アメブロ） Twitter 採用情報 ■メインコンテンツ テレアポ職人®のご紹介 テレアポ代行サービス コンサルティングサービス テレアポ教材販売 ■その他コンテンツ セミナー・講演 よくある質問 会社概要 プライバシーポリシー 特定商取引に基づく表示 リンク集 ■無料相談など お問い合わせフォーム ■無料テレアポノウハウ メールマガジン テレアポコラム Copyright (C) 2003 Link Up Staff Co., Ltd All Rights Reserved.",
+          "url": "https://www.telapo.com/service/",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "業種は色々とありますので、「よくある質問」の実績を参照して下さい。",
+          "url": "https://www.telapo.com/service/index.html",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "（設計事務所経営 K・Tさん） よくある質問 テレアポ代行サービスについて、よくいただく質問と回答を紹介しています。ご参照ください。→ テレアポ代行「よくある質問」 ▲ このページの先頭に戻る 【まぐまぐ殿堂入り】企業にとって重要な新規開拓業務、特にテレアポ営業に特化したメルマガです。",
+          "url": "https://www.telapo.com/service/index.html",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "登録する 解除する ■竹野恵介公式サイト テレアポ トップページ 公式ブログ（アメブロ） Twitter 採用情報 ■メインコンテンツ テレアポ職人®のご紹介 テレアポ代行サービス コンサルティングサービス テレアポ教材販売 ■その他コンテンツ セミナー・講演 よくある質問 会社概要 プライバシーポリシー 特定商取引に基づく表示 リンク集 ■無料相談など お問い合わせフォーム ■無料テレアポノウハウ メールマガジン テレアポコラム Copyright (C) 2003 Link Up Staff Co., Ltd All Rights Reserved.",
+          "url": "https://www.telapo.com/service/index.html",
+          "pageTitle": "テレアポ代行サービス - テレアポ職人® 竹野恵介の公式サイト",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "登録する 解除する ■竹野恵介公式サイト テレアポ トップページ 公式ブログ（アメブロ） Twitter 採用情報 ■メインコンテンツ テレアポ職人®のご紹介 テレアポ代行サービス コンサルティングサービス テレアポ教材販売 ■その他コンテンツ セミナー・講演 よくある質問 会社概要 プライバシーポリシー 特定商取引に基づく表示 リンク集 ■無料相談など お問い合わせフォーム ■無料テレアポノウハウ メールマガジン テレアポコラム Copyright (C) 2003 Link Up Staff Co., Ltd All Rights Reserved.",
+          "url": "https://www.telapo.com/service/faq.html",
+          "pageTitle": "テレアポ代行「よくある質問」",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.telapo.com/service/",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdqFsIbeIY2cj-IZkEwZSu6oCXapPaqazgv8StJXOi6qblQxA/viewform",
+        "https://www.telapo.com/content/company.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "返金した例",
+        "お問い合わせフォーム",
+        "参考料金",
+        "具体的な金額を教えて下さい"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "お問い合わせ窓口",
+        "送信",
+        "お問い合わせフォーム"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.telapo.com/service/ · 2 campos",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdqFsIbeIY2cj-IZkEwZSu6oCXapPaqazgv8StJXOi6qblQxA/viewform · 7 campos",
+        "https://www.telapo.com/content/company.html · 2 campos",
+        "https://www.telapo.com/service/index.html · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Reunión de alcance → orden por email → factura → creación/aprobación del guion → pago → hasta 3 llamadas por target → cita o envío de material →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.telapo.com/service/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdqFsIbeIY2cj-IZkEwZSu6oCXapPaqazgv8StJXOi6qblQxA/viewform",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.telapo.com/content/company.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.telapo.com/service/index.html",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.telapo.com/consul/index.html",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.telapo.com/service/faq.html",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.telapo.com/index.html",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=telapo.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=Telapo%20Shokunin",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "3 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “お問い合わせ窓口”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

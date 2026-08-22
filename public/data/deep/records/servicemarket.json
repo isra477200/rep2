@@ -1,0 +1,519 @@
+{
+  "id": "servicemarket",
+  "name": "ServiceMarket",
+  "reviewedAt": "2026-08-22T15:50:18.304Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "ServiceMarket Service guarantee",
+    "heroObserved": true,
+    "priorSummary": "Marketplace de servicios del hogar en EAU para comparar empresas licenciadas, reservar trabajos puntuales o recurrentes y pagar según modalidad.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 168 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 859 palabras por página comercial recuperada. Muestras breves: “Sit back, we'll take it from here” · “Share your feedback, or ask us a question” · “ServiceMarket Service guarantee”.",
+    "supportingHeadings": [
+      "Sit back, we'll take it from here",
+      "Choose from over 25 home services from trusted companies in Dubai",
+      "Most Popular Services in Dubai",
+      "Local moving in Dubai",
+      "Home cleaning services in Dubai",
+      "Women's Salon At Home in Dubai",
+      "Spa at Home in Dubai",
+      "Laundry services in Dubai",
+      "Handyman in Dubai",
+      "Painting in Dubai",
+      "Pest control in Dubai",
+      "Babysitters and nannies in Dubai",
+      "Moving & Storage",
+      "International moving from Dubai",
+      "Villa moving in Dubai",
+      "Furniture moving in Dubai",
+      "Office moving in Dubai",
+      "Storage in Dubai",
+      "Furniture Storage in Dubai",
+      "Self Storage in Dubai",
+      "Car shipping in Dubai",
+      "Moving to Australia from Dubai",
+      "Moving to Canada from Dubai",
+      "Moving to India from Dubai",
+      "Moving to Lebanon from Dubai",
+      "Moving to the UK from Dubai",
+      "Moving to the USA from Dubai",
+      "Cleaning Services",
+      "Deep cleaning in Dubai",
+      "Shoe cleaning in Dubai"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://servicemarket.com/en/dubai?r=cw3g0f",
+      "text": "Contact us",
+      "href": "https://servicemarket.com/en/contact-us",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Contact us",
+      "Apply promo",
+      "Submit",
+      "Get in touch",
+      "Add New Address",
+      "myServiceMarket-whatsup"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://servicemarket.com/en/contact-us",
+        "index": 1,
+        "action": "https://servicemarket.com/en/contact-us",
+        "method": "GET",
+        "submitText": "Submit",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fname",
+            "label": null,
+            "placeholder": "First Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "lname",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Message",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketplace de servicios del hogar en EAU para comparar empresas licenciadas, reservar trabajos puntuales o recurrentes y pagar según modalidad.",
+    "audience": "Hogares de Emiratos y empresas verificadas de mudanzas, limpieza, mantenimiento, seguros y otros servicios.",
+    "prices": [],
+    "guarantee": [
+      "And hopefully termites will now stay away for 5 years as guaranteed.❮❯Did Something Not Go Right?We do know that at times the service you request might not go as planned and that you might not be satisfied with your experience with us.In such cases, we",
+      "In the case, where the damage is irreversible, maximum coverage of up to AED500 will be provided, given that conditions of the Satisfaction Guarantee have been met.*In the event of damage or a missing item, the customer will be asked to provide proof of ownership",
+      "ServiceMarket Service guaranteeWhen we started ServiceMarket in 2013, our main objective was to make household chores simpler, easier and worry free."
+    ],
+    "proof": [
+      "We have always taken the promise of keeping it simple to heart and ensured that the quality of our work speaks for itself.150,000+ happy customersOver 15,000 reviewsRated 4.8 out of 5Trusted service professionalsLive customer supportWhen we started ServiceMarket in 2013, our main objective was to"
+    ],
+    "objections": [
+      "Frequently Asked Questions150,000+ happy customersOver 15,000 reviewsRated 4.8 out of 5Trusted service professionalsLive customer supportAbout ServiceMarketWhat is ServiceMarket?ServiceMarket is the leading online marketplace for home services in the UAE.",
+      "How do I make a booking?You can easily book a service in 4 simple steps: Tell us how long you would like the professionals to stay.",
+      "You will have the option to cancel or modify your booking up to 24 hours before the service starts.",
+      "If you cancel or change your booking less than 24 hours in advance of the booking, then you might have to pay a late cancellation/modification fee.",
+      "Can I change or cancel my service?Yes."
+    ],
+    "urgency": [
+      "And hopefully termites will now stay away for 5 years as guaranteed.❮❯Did Something Not Go Right?We do know that at times the service you request might not go as planned and that you might not be satisfied with your experience with us.In such cases, we",
+      "Our contact center is open 7 days per week to help you out with anything you need.How it worksWe have partnered with Dubai's best companies to get you the service you deserveTell us what you needLet us know what service you are looking for.",
+      "plus the price is known before having the service and it is fixed price, so you will be more secure that the agent won’t tell u to pay more cuz doing extra work!",
+      "Not only do they have the know-how to take care of the required task properly but will also be able to bring the necessary supplies and equipment if requested."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "ServiceMarket Service guaranteeWhen we started ServiceMarket in 2013, our main objective was to make household chores simpler, easier and worry free.",
+          "url": "https://servicemarket.com/en/servicemarket-guarantee",
+          "pageTitle": "ServiceMarket Service guarantee",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "And hopefully termites will now stay away for 5 years as guaranteed.❮❯Did Something Not Go Right?We do know that at times the service you request might not go as planned and that you might not be satisfied with your experience with us.In such cases, we",
+          "url": "https://servicemarket.com/en/servicemarket-guarantee",
+          "pageTitle": "ServiceMarket Service guarantee",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "In the case, where the damage is irreversible, maximum coverage of up to AED500 will be provided, given that conditions of the Satisfaction Guarantee have been met.*In the event of damage or a missing item, the customer will be asked to provide proof of ownership",
+          "url": "https://servicemarket.com/en/servicemarket-guarantee",
+          "pageTitle": "ServiceMarket Service guarantee",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "ServiceMarket will estimate the value of repairs or replacement of the items up to a maximum of AED500.The Satisfaction Guarantee applies under the following conditions:The work was booked and delivered through the ServiceMarket platform with a corresponding order number.",
+          "url": "https://servicemarket.com/en/servicemarket-guarantee",
+          "pageTitle": "ServiceMarket Service guarantee",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        }
+      ],
+      "proof": [
+        {
+          "text": "We have always taken the promise of keeping it simple to heart and ensured that the quality of our work speaks for itself.150,000+ happy customersOver 15,000 reviewsRated 4.8 out of 5Trusted service professionalsLive customer supportWhen we started ServiceMarket in 2013, our main objective was to",
+          "url": "https://servicemarket.com/en/servicemarket-guarantee",
+          "pageTitle": "ServiceMarket Service guarantee",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Frequently Asked Questions150,000+ happy customersOver 15,000 reviewsRated 4.8 out of 5Trusted service professionalsLive customer supportAbout ServiceMarketWhat is ServiceMarket?ServiceMarket is the leading online marketplace for home services in the UAE.",
+          "url": "https://servicemarket.com/en/faqs",
+          "pageTitle": "Frequently Asked Questions | ServiceMarket",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "How do I make a booking?You can easily book a service in 4 simple steps: Tell us how long you would like the professionals to stay.",
+          "url": "https://servicemarket.com/en/faqs",
+          "pageTitle": "Frequently Asked Questions | ServiceMarket",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Can I change or cancel my service?Yes.",
+          "url": "https://servicemarket.com/en/faqs",
+          "pageTitle": "Frequently Asked Questions | ServiceMarket",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "You will have the option to cancel or modify your booking up to 24 hours before the service starts.",
+          "url": "https://servicemarket.com/en/faqs",
+          "pageTitle": "Frequently Asked Questions | ServiceMarket",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "If you cancel or change your booking less than 24 hours in advance of the booking, then you might have to pay a late cancellation/modification fee.",
+          "url": "https://servicemarket.com/en/faqs",
+          "pageTitle": "Frequently Asked Questions | ServiceMarket",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://servicemarket.com/en/dubai?r=cw3g0f",
+        "https://servicemarket.com/en/contact-us",
+        "https://servicemarket.com/en/servicemarket-guarantee"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Sit back, we'll take it from here",
+        "Share your feedback, or ask us a question",
+        "ServiceMarket Service guarantee",
+        "Book home services in Dubai | ServiceMarket"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact us",
+        "myServiceMarket-whatsup",
+        "Submit",
+        "Get in touch",
+        "Add New Address",
+        "Apply promo"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://servicemarket.com/en/contact-us · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp",
+        "Add New Address",
+        "Apply promo",
+        "Add New Address",
+        "Apply promo"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Categoría → ubicación/datos → presupuesto o franja → comparar/reservar → pagar a plataforma o proveedor → servicio → reseña. Partner: formulario → revisión → contacto ventas."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://servicemarket.com/en/dubai?r=cw3g0f",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://servicemarket.com/en/contact-us",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://servicemarket.com/en/servicemarket-guarantee",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://servicemarket.com/en/faqs",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://servicemarket.com/en/about-us",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://servicemarket.com/en/dubai/cleaning-maid-services/book-online/job-details?promo=OC40",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://servicemarket.com/en/dubai/cleaning-maid-services/book-online/location",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://servicemarket.com/en/become-a-partner",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://servicemarket.com/en/payment-and-refund-policy",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://servicemarket.com/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=ServiceMarket&search_type=keyword_unordered",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR05117788334474657793?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR09358310803964428289?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR17427630247985020929?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR10751705208191975425?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR15720122714779811841?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR01785080629755379713?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR06555892437720498177?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR14646210045570711553?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR07728424763000881153?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR10465619481009848321?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR06064504069743968257?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR00258413132634914817?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR10767464327964262401?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR17328322357764292609?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR09511973360741908481?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR02229670355469860865?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR15631796746697310209?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR12756834484448395265/creative/CR14307935543709663233?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact us”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

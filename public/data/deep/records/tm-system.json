@@ -1,0 +1,411 @@
+{
+  "id": "tm-system",
+  "name": "TM System",
+  "reviewedAt": "2026-08-22T15:50:17.973Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Concertación de Visitas Comerciales",
+    "heroObserved": true,
+    "priorSummary": "\"Llenamos la agenda de tu equipo comercial con citas cualificadas y oportunidades reales de negocio\"",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 140 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1117 palabras por página comercial recuperada. Muestras breves: “Concertación de Visitas Comerciales” · “Tecnología de vanguardia al servicio de las personas” · “Contact Center para Administración Pública”.",
+    "supportingHeadings": [
+      "Concertación de Visitas Comerciales",
+      "Convierte costes fijos en un flujo optimizado de ventas",
+      "¿Por qué TM System y no un Call Center Masivo?",
+      "Enfoque Boutique: Calidad sobre Volumen",
+      "Cómo garantizamos la calidad de cada visita",
+      "Diagnóstico y Estrategia",
+      "Entrenamiento Inmersivo",
+      "Ejecución Inteligente",
+      "Validación y Entrega",
+      "Impacto cuantificable en tu negocio",
+      "¿Quieres multiplicar tus ventas con Concertación de Visitas Comerciales en España?",
+      "Comprometidos con la Calidad y la Seguridad de tus Datos",
+      "FAQs sobre Concertación de Visitas Comerciales",
+      "TM System",
+      "Servicios Call Center",
+      "Noticias y recursos",
+      "Tecnología de vanguardia al servicio de las personas",
+      "Innovación tecnológica para un servicio Boutique",
+      "Automarcación Inteligente CTI",
+      "Enrutamiento y Trazabilidad",
+      "Enrutamiento Inteligente",
+      "Trazabilidad Total",
+      "Control de Calidad",
+      "Base de Datos Segmentada y Personalizada",
+      "Atención Omnicanal Inteligente (IA)",
+      "Confidencialidad y Cumplimiento GDPR",
+      "Preguntas Frecuentes sobre nuestra Infraestructura",
+      "TM System no es un call center tradicional",
+      "Nuestro enfoque es claro:",
+      "TM System. Conversaciones que generan negocio."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://tmsystem.es/sectores/contact-center-administracion-publica/",
+      "text": "Contacto",
+      "href": "https://tmsystem.es/sectores/contact-center-administracion-publica/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223
+    },
+    "ctas": [
+      "Contacto",
+      "Escríbenos porWhatsApp",
+      "Enviar",
+      "Sectores",
+      "ONGs y Fundaciones",
+      "Administración Pública"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+        "index": 1,
+        "action": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 13,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_4.3",
+            "label": "Nombre",
+            "placeholder": "Nombre*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_6",
+            "label": "Empresa*",
+            "placeholder": "Empresa*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_7",
+            "label": "Correo electrónico*",
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "input_8",
+            "label": "Teléfono*",
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_12",
+            "label": "Mensaje",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "input_10.1",
+            "label": "Acepto la política de privacidad*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa*.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Empresa*"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Llenamos la agenda de tu equipo comercial con citas cualificadas y oportunidades reales de negocio\"",
+    "audience": "Empresas B2B y B2C que externalizan ventas y concertación de citas, incluyendo ONGs y administración (Cruz Roja, Save The Children, UGR)",
+    "prices": [],
+    "guarantee": [
+      "Trabajar con ellos es, literalmente, garantía de éxito.» Mario Sánchez Vicepresidente y Tesorero, Asociación para la Lucha Contra las Enfermedades Renales de Sevilla y Huelva «Destacan por su amabilidad y cercanía» «Llevamos más de 30 años trabajando con ellos y además de su excelente servicio"
+    ],
+    "proof": [
+      "Estos son algunos logros reales de nuestros clientes:+20% en Ventas: Gracias a la inmediatez en la gestión del lead (contactar mientras el interés del cliente potencial está alto).+15% en Volumen de Citas: Incremento de visitas asig…",
+      "La concertación de visitas comerciales es una estrategia B2B que consiste en contactar con clientes potenciales (prospectos) para agendar una reunión de ventas cualificada.",
+      "Analizamos tu situación actual y diseñamos una solución integral que optimiza la comunicación con tus clientes y potencia la eficiencia de tus operaciones desde el primer día.",
+      "GRACIAS A NOSOTROS Una compañía aseguradora consiguió duplicar la tasa de cierre de pólizas al implementar nuestros guiones consultivos adaptados a clientes españoles."
+    ],
+    "objections": [
+      "¿Por qué TM System y no un Call Center Masivo?",
+      "FAQs sobre Concertación de Visitas Comerciales ¿Qué es la concertación de visitas comerciales y para qué sirve?",
+      "¿Por qué externalizar la concertación de citas comerciales?",
+      "FAQs sobre sobre Contact Center a Medida ¿Qué incluye un proyecto de Call Center a medida?"
+    ],
+    "urgency": [
+      "Realizamos integraciones vía API o Webhooks con los principales CRMs del mercado (Salesforce, HubSpot, Zoho, Microsoft Dynamics, etc.) para asegurar que la información se actualice en tiempo real en ambos sistemas.",
+      "Muchas gestiones administrativas son ahora digitales, lo que excluye a personas mayores o sin competencias tecnológicas.",
+      "Nuestros sistemas pueden conectarse con los principales CRMs del mercado (Salesforce, HubSpot, Zoho, Microsoft Dynamics, etc.) para asegurar que la información fluye bidireccionalmente y tus bases de datos estén siempre actualizadas."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Trabajar con ellos es, literalmente, garantía de éxito.» Mario Sánchez Vicepresidente y Tesorero, Asociación para la Lucha Contra las Enfermedades Renales de Sevilla y Huelva «Destacan por su amabilidad y cercanía» «Llevamos más de 30 años trabajando con ellos y además de su excelente servicio",
+          "url": "https://tmsystem.es/sectores/contact-center-ongs-fundaciones/",
+          "pageTitle": "Contact Center para ONGs y Fundaciones | TM System",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Estos son algunos logros reales de nuestros clientes:+20% en Ventas: Gracias a la inmediatez en la gestión del lead (contactar mientras el interés del cliente potencial está alto).+15% en Volumen de Citas: Incremento de visitas asig…",
+          "url": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+          "pageTitle": "Concertación de Visitas Comerciales | TM System",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "La concertación de visitas comerciales es una estrategia B2B que consiste en contactar con clientes potenciales (prospectos) para agendar una reunión de ventas cualificada.",
+          "url": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+          "pageTitle": "Concertación de Visitas Comerciales | TM System",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Analizamos tu situación actual y diseñamos una solución integral que optimiza la comunicación con tus clientes y potencia la eficiencia de tus operaciones desde el primer día.",
+          "url": "https://tmsystem.es/servicios/call-center-a-medida/",
+          "pageTitle": "Call Center a Medida | TM System",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "GRACIAS A NOSOTROS Una compañía aseguradora consiguió duplicar la tasa de cierre de pólizas al implementar nuestros guiones consultivos adaptados a clientes españoles.",
+          "url": "https://tmsystem.es/servicios/call-center-a-medida/",
+          "pageTitle": "Call Center a Medida | TM System",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "¿Por qué TM System y no un Call Center Masivo?",
+          "url": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+          "pageTitle": "Concertación de Visitas Comerciales | TM System",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "FAQs sobre Concertación de Visitas Comerciales ¿Qué es la concertación de visitas comerciales y para qué sirve?",
+          "url": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+          "pageTitle": "Concertación de Visitas Comerciales | TM System",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "¿Por qué externalizar la concertación de citas comerciales?",
+          "url": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+          "pageTitle": "Concertación de Visitas Comerciales | TM System",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "FAQs sobre sobre Contact Center a Medida ¿Qué incluye un proyecto de Call Center a medida?",
+          "url": "https://tmsystem.es/servicios/call-center-a-medida/",
+          "pageTitle": "Call Center a Medida | TM System",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+        "https://tmsystem.es/servicios/tecnologia-contact-center/",
+        "https://tmsystem.es/sobre-nosotros/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Concertación de Visitas Comerciales",
+        "Tecnología de vanguardia al servicio de las personas",
+        "Contact Center para Administración Pública",
+        "Call Center para Clínicas y Sector Salud"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Administración Pública",
+        "ONGs y Fundaciones",
+        "Enviar",
+        "Escríbenos porWhatsApp",
+        "Sectores"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/ · 6 campos",
+        "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/ · 6 campos",
+        "https://tmsystem.es/servicios/tecnologia-contact-center/ · 6 campos",
+        "https://tmsystem.es/sobre-nosotros/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada/CTA: formulario/teléfono; propuesta en 24 horas. | Cualificación: diagnostica producto y target y pacta criterios estrictos, guion, decisor, necesidad y timing. | Producción/captación: forma al equipo y ejecuta"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://tmsystem.es/servicios/servicios-comerciales/concertacion-visitas/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://tmsystem.es/servicios/tecnologia-contact-center/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://tmsystem.es/sobre-nosotros/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://tmsystem.es/sectores/contact-center-administracion-publica/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://tmsystem.es/sectores/call-center-salud-clinicas/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tmsystem.es/sectores/contact-center-ongs-fundaciones/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://tmsystem.es/servicios/call-center-a-medida/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tmsystem.es/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=tmsystem.es",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

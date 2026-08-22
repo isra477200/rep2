@@ -1,0 +1,564 @@
+{
+  "id": "peak-marketing-service",
+  "name": "Peak Marketing Service",
+  "reviewedAt": "2026-08-22T15:50:18.663Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Answering Service Leads",
+    "heroObserved": true,
+    "priorSummary": "Citas concertadas para contratistas de home improvement; definidas como homeowner que expresa verbalmente necesidad y acepta día/hora, pero compartibles con hasta cuatro contratistas.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 167 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 995 palabras por página comercial recuperada. Muestras breves: “Home” · “Contact HA” · “Pricing Information – Per By The Lead”.",
+    "supportingHeadings": [
+      "Home",
+      "Get Started",
+      "LEARN MORE",
+      "Pay-Per-Lead",
+      "DIY & Managed SEO",
+      "Managed SEO",
+      "Organic Leads!",
+      "Marketing Solutions For Home Pros",
+      "1. ALL LEADS ARE 100% ORGANIC",
+      "2. ENJOY 5%- 8% MARKETING COST",
+      "3. LEADS, LEADS, AND MORE LEADS",
+      "Pay-Per-Lead With Measurable Results!",
+      "Recent Posts",
+      "CONTACT INFO",
+      "Contact HA",
+      "SELECT THE TYPE OF LEADS YOU ARE INTERESTED IN:",
+      "Pricing Information – Per By The Lead",
+      "How Much Do Exclusive Sales Leads for Home Pros Cost?",
+      "*Form Lead Conversion Rates /100 leads",
+      "100% Pay For Results SEO",
+      "100% Pay For Results SEO | Page 1, or You Don’t Pay",
+      "What if You Could Invest in SEO Without the Risk?",
+      "HOW MUCH DOES PAY FOR PERFORMANCE SEO COST?",
+      "ONE-TIME SETUP FEE",
+      "PAY FOR RESULTS SEO PACKAGES",
+      "SEARCH POSITION",
+      "You Win, or Don’t Pay",
+      "PEAK MARKETING",
+      "Still Have Questions?",
+      "SEO FOR ROOFERS, LAWYERS, HVAC, SIDING, GYMS, SPAS, SOLAR, & MORE"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "REQUEST CONSULT",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://peakmarketingservice.com/pay-for-results-seo/",
+      "text": "REQUEST CONSULT",
+      "href": "https://peakmarketingservice.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 321.25
+    },
+    "ctas": [
+      "REQUEST CONSULT",
+      "Request A Consultation",
+      "Contact",
+      "CONTACT US",
+      "Get a Quote",
+      "Compare Quotes",
+      "Get Started",
+      "GET STARTED",
+      "GET STARTED HERE",
+      "Learn More",
+      "Send",
+      "Get Home Pro Leads"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://peakmarketingservice.com/contact/",
+        "index": 1,
+        "action": "https://peakmarketingservice.com/contact/",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Name (required)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Email (required)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Phone (required)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-company",
+            "label": "Company (required)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-website",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "your-subject",
+            "label": "Annual Revenue No Revenue - just starting<$500k$500k-$1M$1M-$3M$4M-$9M$10M-$49M$50M+",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "menu-258",
+            "label": "Do you currently buy leads? YesNo, but I have in the pastNo",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "leadsources",
+            "label": "What companies have you purchased leads from? (Either in the past or",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "menu-259",
+            "label": "What CRM do you use? MarketSharpZoHoLeadPerfectionImproveit360OtherI Don’t Use One",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "kc_captcha",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 11 y 11 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Company (required), Website, Annual Revenue No Revenue - just starting<$500k$500k-$1M$1M-$3M$4M-$9M$10M-$49M$50M+.",
+      "friction": "Alta",
+      "minFields": 11,
+      "maxFields": 11,
+      "qualification": [
+        "Company (required)",
+        "Website",
+        "Annual Revenue No Revenue - just starting<$500k$500k-$1M$1M-$3M$4M-$9M$10M-$49M$50M+"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Citas concertadas para contratistas de home improvement; definidas como homeowner que expresa verbalmente necesidad y acepta día/hora, pero compartibles con hasta cuatro contratistas.",
+    "audience": "Home improvement EE.UU. (techado, solar, ventanas, revestimientos, HVAC)",
+    "prices": [
+      "PRICING: $80 – $175/lead (Varies by Industry) STARTING PRICE/LEADS Most campaigns start out at $175/lead and the cost is scaled back in subsequent months after we determine what the market will yield."
+    ],
+    "guarantee": [
+      "ONE-TIME SETUP FEE $199 Initial Research and Strategy Development Technical SEO Audit Competition Analysis PAY FOR RESULTS SEO PACKAGES SEARCH POSITION #1on Google *$150/mo Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #2-#3on Google *$125 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #4-#10on Google *$50-$60 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #11+on Google FREE Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "For instance, we might charge clients only when their website reaches the top three positions for targeted keywords, or we may guarantee a specific increase in organic traffic within a set timeframe.",
+      "Get Started Exclusive Answering Service Leads – Guaranteed Leads Pump up Your Close Rate by 90% With Exclusive Answering Service Dealer Leads Buy Answering Service Sales Leads – Buy Exclusive Guaranteed Qualified Sales Leads actively looking to hire a phone answering service or call center"
+    ],
+    "proof": [
+      "ONE-TIME SETUP FEE $199 Initial Research and Strategy Development Technical SEO Audit Competition Analysis PAY FOR RESULTS SEO PACKAGES SEARCH POSITION #1on Google *$150/mo Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #2-#3on Google *$125 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #4-#10on Google *$50-$60 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #11+on Google FREE Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+      "Our clients see marketing costs ranging between 3% – 10%.",
+      "Answering Service Sales Leads Call Center Services Sales Leads Virtual Receptionist Leads An answering service is a business that receives and answers telephone calls for its clients."
+    ],
+    "objections": [
+      "Get Started PEAK MARKETING Pay Only for Leads Received Get Started B2B Exclusive Leads— Result Based SEO Content That Converts Links That Build Authority Transparent Reporting No Contracts Only PayFor Page 1 Rankingson Google LEARN MORE PAY-PER-LEAD You only pay for qualified exclusive leads.",
+      "MONTH-TO MONTH: No long term contract.",
+      "REAL LEADS THAT CLOSE REAL FAST YOU’LL WONDER HOW YOU EVER WENT WITHOUT THEM NO CONTRACTS.",
+      "Our focus is on connecting you with prospects in the medical, legal, contractor, real estate, and small business sectors.",
+      "Contractor Answering Service Leads: Engage with builders, developers, and individual contractors seeking efficient call handling services."
+    ],
+    "urgency": [
+      "Knowing how the Payment Model affects search engine results Typically, we establish payment based on specific KPIs such as keyword rankings, organic traffic increases, or lead generation metrics, clearly defining expectations upfront.",
+      "A SOLUTION THAT WORKS Today, we capture serious prospects in a wide array of industries and we have hundreds of trusted companies buying our leads each and every month.",
+      "ENJOY 5%- 8% MARKETING COST Stop wasting time with prospects that feel ‘tricked’, and enjoy leads that are expecting a call, and want to buy….NOW.",
+      "Try ‘Pay-Per-Lead’ or let’s get your own site ranked for unlimited free organic leads.",
+      "Contact Peak Marketing Today Inbound Marketing­— Qualified Leads in Real Time 3,452,308 LEADS CAPTURED… AND WE’RE NOT DONE!",
+      "There are a huge array of factors that go into the actual final marketing cost, such as, but not limited to, your ability to follow up consistently with leads, the cost of your product, the value you deliver, and your overall sales process."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "PRICING: $80 – $175/lead (Varies by Industry) STARTING PRICE/LEADS Most campaigns start out at $175/lead and the cost is scaled back in subsequent months after we determine what the market will yield.",
+          "url": "https://peakmarketingservice.com/pricing/",
+          "pageTitle": "How Much Do Exclusive Sales Leads for Home Pros Cost? Peak Marketing Service",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "ONE-TIME SETUP FEE $199 Initial Research and Strategy Development Technical SEO Audit Competition Analysis PAY FOR RESULTS SEO PACKAGES SEARCH POSITION #1on Google *$150/mo Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #2-#3on Google *$125 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #4-#10on Google *$50-$60 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #11+on Google FREE Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "For instance, we might charge clients only when their website reaches the top three positions for targeted keywords, or we may guarantee a specific increase in organic traffic within a set timeframe.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Overly Aggressive Promises – If they guarantee you’ll rank on the first page, it’s likely too good to be true.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Get Started Exclusive Answering Service Leads – Guaranteed Leads Pump up Your Close Rate by 90% With Exclusive Answering Service Dealer Leads Buy Answering Service Sales Leads – Buy Exclusive Guaranteed Qualified Sales Leads actively looking to hire a phone answering service or call center",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "GUARANTEED ANSWERING SERVICE LEADS EXCLUSIVE TO YOUR BUSINESS AFFORDABLE LEADS FOR ANSWERING SERVICES IN ANY MARKET CHEAPEST ANSWERING SERVICE LEADS WITH GREAT ROI Welcome To Peak Marketing Service: Discover the premier destination for specialized answering service leads.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "WE DO NOT MAKE GUARANTEES, REPRESENTATIONS, OR WARRANTIES REGARDING A CUSTOMER’S LEVEL OF INTEREST, THEIR DESIRE TO HAVE YOUR SERVICES, THEIR ABILITY TO PAY YOU, THE ACCURACY OF THE INFORMATION PROVIDED BY THE CUSTOMERS, OR THAT ANY CUSTOMERS WILL HIRE YOU TO PERFORM SERVICES, NOR",
+          "url": "https://peakmarketingservice.com/pricing/",
+          "pageTitle": "How Much Do Exclusive Sales Leads for Home Pros Cost? Peak Marketing Service",
+          "pageCategory": "pricing",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "ONE-TIME SETUP FEE $199 Initial Research and Strategy Development Technical SEO Audit Competition Analysis PAY FOR RESULTS SEO PACKAGES SEARCH POSITION #1on Google *$150/mo Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #2-#3on Google *$125 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #4-#10on Google *$50-$60 Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Results: 3-5 mos REQUEST CONSULT SEARCH POSITION #11+on Google FREE Month to Month Free Cancellation Guaranteed Results 10 – 20 Keywords Est.",
+          "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+          "pageTitle": "100% Pay For Results SEO | Page 1, or You Don't Pay",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Every prospect you speak with will be engaged and/or have been looking at reviews, comparing prices, and are now ready to be sold by the best company.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Answering Service Sales Leads Call Center Services Sales Leads Virtual Receptionist Leads An answering service is a business that receives and answers telephone calls for its clients.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Peak Marketing Service owns a wide array of internet assets, including review sites, niche websites, and cost comparison websites.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Our clients see marketing costs ranging between 3% – 10%.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Get Started PEAK MARKETING Pay Only for Leads Received Get Started B2B Exclusive Leads— Result Based SEO Content That Converts Links That Build Authority Transparent Reporting No Contracts Only PayFor Page 1 Rankingson Google LEARN MORE PAY-PER-LEAD You only pay for qualified exclusive leads.",
+          "url": "https://peakmarketingservice.com/",
+          "pageTitle": "Lead Generation For Home Pros | Performance Based Marketing",
+          "pageCategory": "other"
+        },
+        {
+          "text": "REAL LEADS THAT CLOSE REAL FAST YOU’LL WONDER HOW YOU EVER WENT WITHOUT THEM NO CONTRACTS.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "MONTH-TO MONTH: No long term contract.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Our focus is on connecting you with prospects in the medical, legal, contractor, real estate, and small business sectors.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Contractor Answering Service Leads: Engage with builders, developers, and individual contractors seeking efficient call handling services.",
+          "url": "https://peakmarketingservice.com/answering-service-leads/",
+          "pageTitle": "Buy Exclusive Answering Service Sales Leads – Guaranteed Leads | Peak Marketing Service",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://peakmarketingservice.com/",
+        "https://peakmarketingservice.com/contact-ha/",
+        "https://peakmarketingservice.com/pricing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Home",
+        "Contact HA",
+        "Pricing Information – Per By The Lead",
+        "Answering Service Leads"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Get Started",
+        "Learn More",
+        "Get Home Pro Leads",
+        "Request A Consultation",
+        "REQUEST CONSULT",
+        "CONTACT US",
+        "Compare Quotes"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://peakmarketingservice.com/contact/ · 11 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El contratista solicita citas y define mercado, industria, presupuesto y, si procede, integración CRM. 2) Peak capta homeowners y verifica verbalmente que buscan el servicio. 3) El"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://peakmarketingservice.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://peakmarketingservice.com/contact-ha/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://peakmarketingservice.com/pricing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://peakmarketingservice.com/pay-for-results-seo/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://peakmarketingservice.com/answering-service-leads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://peakmarketingservice.com/about/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://peakmarketingservice.com/contact/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=peakmarketingservice.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=1467253446886623",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “REQUEST CONSULT”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 11 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

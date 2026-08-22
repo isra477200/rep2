@@ -1,0 +1,622 @@
+{
+  "id": "beyuri",
+  "name": "BeYuri",
+  "reviewedAt": "2026-08-22T15:50:19.743Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "TENEMOS UNA MISIÓN",
+    "heroObserved": true,
+    "priorSummary": "Paquete Vostok de marketing generalista: Google Ads, objetivos, landing, Analytics/analítica propia, email, soporte y optimización diaria. La landing de limpieza es una plantilla vertical entre muchas, no una empresa dedicada exclusivamente a captación/citas para limpieza.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 439 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1937 palabras por página comercial recuperada. Muestras breves: “Contacto” · “Método Vostok ®” · “marketing online servicios de limpieza”.",
+    "supportingHeadings": [
+      "Teléfono",
+      "E-mail",
+      "Marketing Digital para Empresas de Limpieza",
+      "Más de 15 años de experiencia ayudando a empresas de limpieza",
+      "Ayudamos a que tu empresa de limpieza crezca",
+      "Google Ads para Empresas de Limpieza",
+      "Llena tu empresa de nuevos clientes",
+      "Recibe más clientes con Google Ads",
+      "Preguntas frecuentes",
+      "Únete al éxito: más de 200 clientes ya han impulsado su negocio con Agencia BeYuri. ¡Sé el siguiente!",
+      "BEYURI ® Todos los derechos reservados | Toda la información y todos los textos están protegidos con copyright.",
+      "954 08 01 02",
+      "662 05 66 41",
+      "hola@beyuri.com",
+      "Contacto",
+      "¿Quieres sentirte como Yuri?",
+      "¡Prepárate porque allá vamos!",
+      "Aumenta tus ventas. Consigue tus objetivos.Queremos impulsar tu negocio y llevarte a los primeros puestos en buscadores.",
+      "Aumenta tus ventas. Consigue tus objetivos. Queremos impulsar tu negocio y llevarte a los primeros puestos en buscadores. Estas a un paso.",
+      "Gestión de clientes",
+      "Soluciones de gestión de clientes",
+      "Precio del servicio 2.000€ - 4.000€",
+      "¿Qué nos diferencia de otros agentes?",
+      "Método Vostok ®",
+      "¿En qué consiste este método?",
+      "Servicios de marketing online",
+      "Con tu Vostok:",
+      "Un Vostok a tu medida",
+      "Un sistema de trabajo que se adapta a las necesidades de cada momento",
+      "Ventajas del Método VOSTOK"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://beyuri.com/",
+      "text": "Contacto",
+      "href": "https://beyuri.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Consulta gratuita",
+      "Contacto",
+      "Enviar",
+      "ENVIAR",
+      "Infórmate",
+      "Pide tu cita",
+      "SOLICÍTALO YA",
+      "Contrátalo ahora",
+      "Pide una cita gratuita"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://beyuri.com/marketing-online-para-empresas-de-limpieza/",
+        "index": 2,
+        "action": "https://beyuri.com/marketing-online-para-empresas-de-limpieza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_a0b0f05]",
+            "label": "Apellido",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_b6b6fcf]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_abb2e20]",
+            "label": "He leído y acepto la Política de Privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://beyuri.com/contacto/",
+        "index": 2,
+        "action": "https://beyuri.com/contacto/",
+        "method": "POST",
+        "submitText": "ENVIAR",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_1]",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_3]",
+            "label": "He leído y acepto la Política de Privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/",
+        "index": 2,
+        "action": "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre/ Empresa",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[message]",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_e4c7a4e]",
+            "label": "He leído y acepto la Política de privacidad.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/",
+        "index": 4,
+        "action": "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre/ Empresa",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[message]",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 3 y 5 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Nombre/ Empresa.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 5,
+      "qualification": [
+        "Nombre/ Empresa"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Paquete Vostok de marketing generalista: Google Ads, objetivos, landing, Analytics/analítica propia, email, soporte y optimización diaria. La landing de limpieza es una plantilla vertical entre muchas, no una empresa dedicada exclusivamente a captación/citas para limpieza.",
+    "audience": "Agencia generalista española con landings casi idénticas para limpieza, artistas, concesionarios, construcción, adicciones, terapeutas, fotografía, moda y otros sectores.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "+ 0 años Marcas con personalidad reconocida Diseño publicitario que atrae a nuevos clientes Aparece en los primeros lugares de los buscadores Tu tienda vendiendo 24/7 Invade tus redes de contenidos creativos El usuario consume videos.",
+      "Estudiamos tu negocio PASO 1 Ideamos Creamos una estrategia Con los resultados obtenidos presentamos un proyecto adecuado a sus posibilidades.",
+      "PASO 1 Ideamos Creamos una estrategia Con los resultados obtenidos presentamos un proyecto adecuado a sus posibilidades.",
+      "Hazlo de forma centralizada y ten acceso a ellos desde cualquier dispositivo, gracias a un diseño responsivo podrás gestionar tus clientes desde el movil o incluso una androidTV.",
+      "Ayudamos a negocios especializados en limpieza de oficinas, comunidades, industrias, viviendas y servicios profesionales a captar nuevos clientes y generar más oportunidades de negocio.",
+      "...cada día es más difícil destacar Proyectos estancados sin clientes truncados sin ventas No hay tiempo que perder ¡ Toma tu casco !"
+    ],
+    "objections": [
+      "Permanencia mínima de 3 meses.",
+      "Permanencia mínima de 6 meses.",
+      "Ir al contenido Lanzar Sputnik O Kit Digital Teléfono 954 08 01 02 E-mail hola@beyuri.com Agencia de Publicidad ¿Por qué Yuri?",
+      "…y el presupuesto destinado a las campañas y anuncios de Google Ads y Facebook Ads.Todas nuestras tarifas planas son SIN PERMANENCIA Y ESCALABLES, se puede contratar el plan más básico para probar y posteriormente ampliar a planes superiores o cancelar.",
+      "Ir al contenido Agencia de Publicidad ¿Por qué Yuri?"
+    ],
+    "urgency": [
+      "…na web Avanzada Cuentas de e-mail (hasta 10) Alta y optimización de perfiles en Google Maps Firma para Mails Contrátalo ahora OPORTUNIDAD Forma parte de la Siente la expderiencia de ser el 1º, como Yuri Gagarin Un conglomerado de estrellas que centellean en el firmamento empresarial, destacando del resto…"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "MÉTODO VOSTOK Comienza el cambio click para ver más información Impulsamos tu empresa en internet por sólo 1000 € ¿Quieres lanzar un Sputnik?",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "1000 € sin mantenimiento Diseño de marca Branding Dominio y alojamiento web (durante un año) Página web Avanzada Cuentas de e-mail (hasta 10) Alta y optimización de perfiles en Google Ma…",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "Nuestros servicios de marketing online los adaptamos a cada uno de ellos con la garantía del éxito.",
+          "url": "https://beyuri.com/servicios-marketing-online/",
+          "pageTitle": "Servicios marketing online | Método Vostok ® Bolsa de Horas",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        }
+      ],
+      "proof": [
+        {
+          "text": "Hazlo de forma centralizada y ten acceso a ellos desde cualquier dispositivo, gracias a un diseño responsivo podrás gestionar tus clientes desde el movil o incluso una androidTV.",
+          "url": "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/",
+          "pageTitle": "Gestión de clientes | BeYuri",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Ayudamos a negocios especializados en limpieza de oficinas, comunidades, industrias, viviendas y servicios profesionales a captar nuevos clientes y generar más oportunidades de negocio.",
+          "url": "https://beyuri.com/tag/marketing-online-servicios-de-limpieza/",
+          "pageTitle": "marketing online servicios de limpieza | BeYuri",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ayudamos a negocios especializados en limpieza de oficinas, comunidades, industrias, viviendas y servicios profesionales a captar nuevos clientes y generar más oportunidades de negocio.",
+          "url": "https://beyuri.com/tag/publicidad-servicios-de-limpieza/",
+          "pageTitle": "publicidad servicios de limpieza | BeYuri",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "...cada día es más difícil destacar Proyectos estancados sin clientes truncados sin ventas No hay tiempo que perder ¡ Toma tu casco !",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        },
+        {
+          "text": "+ 0 años Marcas con personalidad reconocida Diseño publicitario que atrae a nuevos clientes Aparece en los primeros lugares de los buscadores Tu tienda vendiendo 24/7 Invade tus redes de contenidos creativos El usuario consume videos.",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Marcas con personalidad reconocida Diseño publicitario que atrae a nuevos clientes Aparece en los primeros lugares de los buscadores Tu tienda vendiendo 24/7 Invade tus redes de contenidos creativos El usuario consume videos.",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Estudiamos tu negocio PASO 1 Ideamos Creamos una estrategia Con los resultados obtenidos presentamos un proyecto adecuado a sus posibilidades.",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        },
+        {
+          "text": "PASO 1 Ideamos Creamos una estrategia Con los resultados obtenidos presentamos un proyecto adecuado a sus posibilidades.",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Clientes que un día estuvieron en tu situación y han conseguido el objetivo marcado.¿Puedes verlas brillar?.",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Ir al contenido Lanzar Sputnik O Kit Digital Teléfono 954 08 01 02 E-mail hola@beyuri.com Agencia de Publicidad ¿Por qué Yuri?",
+          "url": "https://beyuri.com/servicios-marketing-online/",
+          "pageTitle": "Servicios marketing online | Método Vostok ® Bolsa de Horas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Permanencia mínima de 3 meses.",
+          "url": "https://beyuri.com/servicios-marketing-online/",
+          "pageTitle": "Servicios marketing online | Método Vostok ® Bolsa de Horas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Permanencia mínima de 6 meses.",
+          "url": "https://beyuri.com/servicios-marketing-online/",
+          "pageTitle": "Servicios marketing online | Método Vostok ® Bolsa de Horas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…y el presupuesto destinado a las campañas y anuncios de Google Ads y Facebook Ads.Todas nuestras tarifas planas son SIN PERMANENCIA Y ESCALABLES, se puede contratar el plan más básico para probar y posteriormente ampliar a planes superiores o cancelar.",
+          "url": "https://beyuri.com/servicios-marketing-online/",
+          "pageTitle": "Servicios marketing online | Método Vostok ® Bolsa de Horas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Si continúas usando este sitio, asumiremos que estás de acuerdo con ello.AceptarCancelarPolítica de privacidad",
+          "url": "https://beyuri.com/servicios-marketing-online/",
+          "pageTitle": "Servicios marketing online | Método Vostok ® Bolsa de Horas",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ir al contenido Lanzar Sputnik O Kit Digital Teléfono 954 08 01 02 E-mail hola@beyuri.com Agencia de Publicidad ¿Por qué Yuri?",
+          "url": "https://beyuri.com/tag/marketing-online-servicios-de-limpieza/",
+          "pageTitle": "marketing online servicios de limpieza | BeYuri",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Si continúas usando este sitio, asumiremos que estás de acuerdo con ello.AceptarCancelarPolítica de privacidad",
+          "url": "https://beyuri.com/tag/marketing-online-servicios-de-limpieza/",
+          "pageTitle": "marketing online servicios de limpieza | BeYuri",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ir al contenido Lanzar Sputnik O Kit Digital Teléfono 954 08 01 02 E-mail hola@beyuri.com Agencia de Publicidad ¿Por qué Yuri?",
+          "url": "https://beyuri.com/tag/publicidad-servicios-de-limpieza/",
+          "pageTitle": "publicidad servicios de limpieza | BeYuri",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Si continúas usando este sitio, asumiremos que estás de acuerdo con ello.AceptarCancelarPolítica de privacidad",
+          "url": "https://beyuri.com/tag/publicidad-servicios-de-limpieza/",
+          "pageTitle": "publicidad servicios de limpieza | BeYuri",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ir al contenido Agencia de Publicidad ¿Por qué Yuri?",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Si continúas usando este sitio, asumiremos que estás de acuerdo con ello.AceptarCancelarPolítica de privacidad",
+          "url": "https://beyuri.com/",
+          "pageTitle": "Agencia de Marketing Digital y Publicidad en España | BeYuri",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://beyuri.com/marketing-online-para-empresas-de-limpieza/",
+        "https://beyuri.com/contacto/",
+        "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Método Vostok ®",
+        "marketing online servicios de limpieza",
+        "publicidad servicios de limpieza"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Pide una cita gratuita",
+        "Consulta gratuita",
+        "Pide tu cita",
+        "Enviar",
+        "ENVIAR",
+        "SOLICÍTALO YA",
+        "Infórmate"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://beyuri.com/marketing-online-para-empresas-de-limpieza/ · 5 campos",
+        "https://beyuri.com/contacto/ · 5 campos",
+        "https://beyuri.com/contacto/ · 5 campos",
+        "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) Prospecto pide cita/consulta o completa formulario. 2) BeYuri realiza videoconferencia de unos 30 minutos y recomienda un plan Vostok. 3) Con contratación mínima de 3 meses, crea"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://beyuri.com/marketing-online-para-empresas-de-limpieza/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://beyuri.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://beyuri.com/agentes-digitalizadores-kit-digital/gestion_de_clientes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://beyuri.com/servicios-marketing-online/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://beyuri.com/tag/marketing-online-servicios-de-limpieza/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://beyuri.com/tag/publicidad-servicios-de-limpieza/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://beyuri.com/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://beyuri.com/?p=799: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

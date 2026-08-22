@@ -1,0 +1,425 @@
+{
+  "id": "rwandalinker-com",
+  "name": "rwandalinker.com",
+  "reviewedAt": "2026-08-22T15:50:18.922Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Connect. Grow.Succeed in Rwanda.",
+    "heroObserved": true,
+    "priorSummary": "Cuenta/listados gratis, contacto/chat, marketplace y asociación; pago opcional para visibilidad.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 167 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 641 palabras por página comercial recuperada. Muestras breves: “Connect. Grow.Succeed in Rwanda.” · “Contact Us” · “Marketplace”.",
+    "supportingHeadings": [
+      "Marketplace",
+      "Jobs",
+      "Classifieds",
+      "Companies",
+      "Connect. Grow.Succeed in Rwanda.",
+      "Grow your business",
+      "Find Your Dream Job",
+      "How It Works & How to Grow",
+      "Create Account",
+      "Explore & Discover",
+      "Connect & Engage",
+      "Grow & Succeed",
+      "Featured Products",
+      "Featured Real Estate",
+      "Featured Companies",
+      "Available Vehicles",
+      "Featured Jobs",
+      "Featured Candidates",
+      "Latest News",
+      "What People Are Saying",
+      "Grow your business with us",
+      "Frequently Asked",
+      "Contact Us",
+      "Get In Touch",
+      "Address",
+      "Phone",
+      "Email",
+      "Support",
+      "Send a Message",
+      "Terms of Service"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://rwandalinker.com/",
+      "text": "Contact",
+      "href": "https://rwandalinker.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact Us",
+      "Contact Owner",
+      "Apply for Partnership",
+      "Download Flyer",
+      "Share on WhatsApp",
+      "Call us: +250 788 375 992",
+      "View",
+      "View Job",
+      "View Details",
+      "Send Message",
+      "Kigali Digital Store 5.0 (1 reviews) View Company",
+      "Other Handwoven Imigongo Art Set 45,000 RWF (negotiable) Huye · New",
+      "FEATURED Appliances Solar Water Heater — 150L 420,000 RWF (negotiable) Musanze · New",
+      "Construction Materials Cement — 50kg Bags (Bulk) 9,500 RWF (negotiable) Kigali · New",
+      "FEATURED Furniture Modern Ergonomic Office Chair 85,000 RWF (negotiable) Kigali · New",
+      "FEATURED Electronics Samsung Galaxy A54 5G — 128GB 350,000 RWF (negotiable) Kigali · New",
+      "FEATURED Sports & Outdoors Running Shoes — Men's Size 42 120,000 RWF (negotiable) Kigali",
+      "FEATURED Electronics HP Pavilion Laptop — Core i5, 8GB RAM 650,000 RWF (negotiable) Kigali"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://rwandalinker.com/contact",
+        "index": 1,
+        "action": "https://rwandalinker.com/contact",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "full_name",
+            "label": null,
+            "placeholder": "Your full name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "your@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "+250 7XX XXX XXX",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "inquiry_type",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": null,
+            "placeholder": "Brief subject of your message",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Write your message here…",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rwandalinker.com/marketplace/demo-samsung-galaxy-a54",
+        "index": 1,
+        "action": "https://rwandalinker.com/marketplace/demo-samsung-galaxy-a54",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Your name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Your phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Your email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Is this still available? ...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 6 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Cuenta/listados gratis, contacto/chat, marketplace y asociación; pago opcional para visibilidad.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Job Seeker Verified \"[DEMO] Great platform for reaching customers across Rwanda.",
+      "Entrepreneur Verified Grow your business with us Join hundreds of businesses already using Rwanda Linker to reach more customers across Rwanda.",
+      "Every new product, job, classified ad, and company profile is reviewed by a real member of our team before it becomes visible to the public — never an automated approval.",
+      "Your first listing goes through the same verification review as everyone else's."
+    ],
+    "objections": [
+      "Our Platforms Marketplace Jobs Classifieds Companies Candidates Partnership Company About Us Contact FAQ Get In Touch Kigali Heights, KG 7 Ave, Kigali, Rwanda +250 788 375 992 [email protected] Mon–Sat: 8AM–8PMSun: 10AM–6PM © 2026 RWANDA LINKER.",
+      "Apply for Partnership Learn More Questions Frequently Asked Is Rwanda Linker free to use?"
+    ],
+    "urgency": [
+      "Know someone who'd love Rwanda Linker?"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Job Seeker Verified \"[DEMO] Great platform for reaching customers across Rwanda.",
+          "url": "https://rwandalinker.com/",
+          "pageTitle": "RWANDA LINKER — Rwanda's Marketplace, Jobs & Business Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Entrepreneur Verified Grow your business with us Join hundreds of businesses already using Rwanda Linker to reach more customers across Rwanda.",
+          "url": "https://rwandalinker.com/",
+          "pageTitle": "RWANDA LINKER — Rwanda's Marketplace, Jobs & Business Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Every new product, job, classified ad, and company profile is reviewed by a real member of our team before it becomes visible to the public — never an automated approval.",
+          "url": "https://rwandalinker.com/",
+          "pageTitle": "RWANDA LINKER — Rwanda's Marketplace, Jobs & Business Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Your first listing goes through the same verification review as everyone else's.",
+          "url": "https://rwandalinker.com/",
+          "pageTitle": "RWANDA LINKER — Rwanda's Marketplace, Jobs & Business Directory",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Apply for Partnership Learn More Questions Frequently Asked Is Rwanda Linker free to use?",
+          "url": "https://rwandalinker.com/",
+          "pageTitle": "RWANDA LINKER — Rwanda's Marketplace, Jobs & Business Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our Platforms Marketplace Jobs Classifieds Companies Candidates Partnership Company About Us Contact FAQ Get In Touch Kigali Heights, KG 7 Ave, Kigali, Rwanda +250 788 375 992 [email protected] Mon–Sat: 8AM–8PMSun: 10AM–6PM © 2026 RWANDA LINKER.",
+          "url": "https://rwandalinker.com/",
+          "pageTitle": "RWANDA LINKER — Rwanda's Marketplace, Jobs & Business Directory",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://rwandalinker.com/",
+        "https://rwandalinker.com/contact",
+        "https://rwandalinker.com/marketplace"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Connect. Grow.Succeed in Rwanda.",
+        "Contact Us",
+        "Marketplace",
+        "Terms of Service"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Call us: +250 788 375 992",
+        "Contact",
+        "View",
+        "View Details",
+        "Contact Owner",
+        "View Job",
+        "Apply for Partnership",
+        "Download Flyer"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://rwandalinker.com/contact · 6 campos",
+        "https://rwandalinker.com/marketplace/demo-samsung-galaxy-a54 · 4 campos",
+        "https://rwandalinker.com/marketplace/demo-hp-pavilion-laptop · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://rwandalinker.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://rwandalinker.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://rwandalinker.com/marketplace",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://rwandalinker.com/terms",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://rwandalinker.com/about",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://rwandalinker.com/marketplace/demo-samsung-galaxy-a54",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://rwandalinker.com/marketplace/demo-hp-pavilion-laptop",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://rwandalinker.com/companies-list/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://rwandalinker.com/faq: HTTP 500",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,297 @@
+{
+  "id": "rated-people",
+  "name": "Rated People",
+  "reviewedAt": "2026-08-22T15:50:18.432Z",
+  "status": "Limitada",
+  "confidence": "Limitada",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Cuota mensual + coste pequeño por lead, con cashback mensual en crédito; plan Unlimited con leads ilimitados dentro de un tope de presupuesto de proyecto",
+    "voice": "Tono tono no clasificable automáticamente; requiere revisión humana. La argumentación visible usa pocas cifras. Densidad aproximada: no medible palabras por página comercial recuperada.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Cuota mensual + coste pequeño por lead, con cashback mensual en crédito; plan Unlimited con leads ilimitados dentro de un tope de presupuesto de proyecto",
+    "audience": "Marketplace de trades UK, +1.000.000 solicitudes de homeowners al año",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El homeowner publica gratis el trabajo. 2) Rated People lo distribuye y normalmente 1–2, con máximo 3 profesionales, compran el lead. 3) El profesional elige oficio/área/plan, ve"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.ratedpeople.com/c/tradespeople/how-it-works",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=ratedpeople.com",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR06041841485828063233?region=anywhere",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "http://ratedpeople.com/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "http://www.ratedpeople.com/%E2%81%A9",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR12961906262160703489?region=anywhere",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/14741075349651247645",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR03437329405788028929?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/8610564961733010611",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR11986820343755964417?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/4512153481636232501",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR05366748836796563457?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13889983693312383443",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/894667418673640829",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR09692147590996426753?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13638745914026448021",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR00843171263538003969?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR17738966053540593665?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR16573467432992112641?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR08830365701588910081?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR01848883373959806977?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16944186927600834103",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/17226790841689118402",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR15311597786500169729?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR14574158163839287297?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR07385043922982010881?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR05866258549843165185?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR08099272588892569601?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR13339141477515657217/creative/CR11294227197641883649?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.ratedpeople.com/: HTTP 403",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "no_observable"
+}

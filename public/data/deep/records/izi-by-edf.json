@@ -1,0 +1,566 @@
+{
+  "id": "izi-by-edf",
+  "name": "IZI by EDF",
+  "reviewedAt": "2026-08-22T15:50:18.155Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "IZI by EDF, votre confort, notre priorité",
+    "heroObserved": true,
+    "priorSummary": "Red de profesionales bajo marca EDF: EDF capta al particular con su gran visibilidad de marca y reparte los encargos a la red de artesanos certificados cercanos",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 268 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1618 palabras por página comercial recuperada. Muestras breves: “Développez votre activité grâce à des chantiers clés en main !” · “Nous contacter” · “IZI by EDF, votre confort, notre priorité”.",
+    "supportingHeadings": [
+      "Développez votre activité grâce à des chantiers clés en main !",
+      "Prêt à rejoindre le réseau IZI by EDF ?",
+      "Nos métiers",
+      "Nous contacter",
+      "Vous nous contactez pour :",
+      "Contactez-nous",
+      "Ecrivez-nous afin de préciser votre demande",
+      "IZI by EDF, votre confort, notre priorité",
+      "Demandez votre devis travaux gratuit et sans engagement",
+      "Vous êtes un professionnel ?",
+      "On répond à toutes vos questions !",
+      "Votre devis travaux avec IZI by EDF !",
+      "Votre devis travaux gratuit pour tous vos projets",
+      "L’expertise IZI by EDF pour votre devis travaux !",
+      "IZI by EDF vous accompagne de A à Z",
+      "Suivez le guide !",
+      "Installer une borne de recharge à domicile",
+      "Votre solution de recharge pour la maison",
+      "Votre sérénité, notre priorité",
+      "La recharge intelligente à domicile : mode d’emploi",
+      "Rechargez futé avec l’application mobile IZI by EDF smart charge",
+      "Votre recharge pilotée depuis l'application Wiser Home​",
+      "Pour plus de sérénité, votre borne de recharge est garantie 5 ans !",
+      "Seulement 4h pour recharger votre voiture électrique à la maison",
+      "IZI by EDF, installateur de bornes de recharge à votre service",
+      "Combien coûte l’installation d’une borne de recharge pour voiture électrique ?",
+      "Installer une borne de recharge en maison : à quel prix ?",
+      "Quelles variables déterminent le prix d’installation d’une borne de recharge ?",
+      "Existe-t-il des aides pour installer une borne 7,4 kW pour voiture électrique ?",
+      "La TVA à 5,5 % pour tous les particuliers"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://izi-by-edf.fr/",
+      "text": "Contact",
+      "href": "https://izi-by-edf.fr/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Envoyer",
+      "Voir tous les articles",
+      "Voir tous les produits",
+      "devis pour l’installation d’une borne de recharge"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://izi-by-edf.fr/contact",
+        "index": 3,
+        "action": "https://izi-by-edf.fr/contact",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "select",
+            "name": "Salutation",
+            "label": "Civilité*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "Commentaire__c[Votre demande concerne...]",
+            "label": "Votre demande concerne...*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "PostalCode",
+            "label": "Code postal*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "FirstName",
+            "label": "Prénom*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "LastName",
+            "label": "Nom*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "Email*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "MobilePhone",
+            "label": "Numéro de téléphone*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Commentaire__c[Votre message]",
+            "label": "Votre message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "Consentement_mail_commerciaux__c",
+            "label": null,
+            "placeholder": "J’accepte de recevoir de IZI by EDF des communications du Groupe EDF",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 9 y 9 campos visibles, mínimo 7 obligatorio(s). Fricción alta en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Alta",
+      "minFields": 9,
+      "maxFields": 9,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Red de profesionales bajo marca EDF: EDF capta al particular con su gran visibilidad de marca y reparte los encargos a la red de artesanos certificados cercanos",
+    "audience": "Artesanos certificados RGE/IRVE (rénovation énergétique: aislamiento, calefacción, climatización) en Francia",
+    "prices": [],
+    "guarantee": [
+      "Pour plus de sérénité, votre borne de recharge est garantie 5 ans !",
+      "Avec l'option extension de garantie IZI by EDF, profitez d’une tranquillité totale de 5 ans : soit 3 ans de garantie supplémentaire en plus des 2 ans de garantie légale de conformité** !",
+      "** 2 ans de garantie légale de conformité + 3 ans d’extension de garantie pour 160 € TTC (TVA à 5,5 %) pour l'installation d'une borne Schneider Charge 7-22 kW.",
+      "Prix justes Vous avez la garantie d’un prix transparent, d’un devis clair et détaillé.",
+      "Quelles sont les garanties d’IZI by EDF ?",
+      "En plus des garanties légales applicables auxquelles nous sommes tenus, vous pouvez bénéficiez également des éventuelles garanties commerciales des fabricants sur vos équipements, sous conditions."
+    ],
+    "proof": [
+      "Obtenir un devis Nos clients nous recommandent Trustpilot Vous êtes un professionnel ?"
+    ],
+    "objections": [
+      "Vérifier mon éligibilité Demandez votre devis travaux gratuit et sans engagement Avec IZI by EDF faites une demande de devis gratuit et personnalisé pour vos travaux.",
+      "Questions fréquentes On répond à toutes vos questions !",
+      "Le pré-devis est gratuit et sans engagement."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Prix justes Vous avez la garantie d’un prix transparent, d’un devis clair et détaillé.",
+          "url": "https://izi-by-edf.fr/",
+          "pageTitle": "IZI by EDF, la solution de confort pour vos travaux !",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Quelles sont les garanties d’IZI by EDF ?",
+          "url": "https://izi-by-edf.fr/faq",
+          "pageTitle": "Questions fréquentes du site IZI by EDF",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "En plus des garanties légales applicables auxquelles nous sommes tenus, vous pouvez bénéficiez également des éventuelles garanties commerciales des fabricants sur vos équipements, sous conditions.",
+          "url": "https://izi-by-edf.fr/faq",
+          "pageTitle": "Questions fréquentes du site IZI by EDF",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Prix justes Vous avez la garantie d’un prix transparent, d’un devis clair et détaillé.",
+          "url": "https://izi-by-edf.fr/devis-travaux",
+          "pageTitle": "Devis travaux : faites votre simulation en ligne !",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Pour plus de sérénité, votre borne de recharge est garantie 5 ans !",
+          "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+          "pageTitle": "Installation d'une borne de recharge chez vous​",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Avec l'option extension de garantie IZI by EDF, profitez d’une tranquillité totale de 5 ans : soit 3 ans de garantie supplémentaire en plus des 2 ans de garantie légale de conformité** !",
+          "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+          "pageTitle": "Installation d'une borne de recharge chez vous​",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Vos avantages :En cas de panne, nous réparons ou remplaçons votre matériel (4)L'extension de garantie couvre le matériel, les déplacements et la main-d'oeuvre.",
+          "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+          "pageTitle": "Installation d'une borne de recharge chez vous​",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "** 2 ans de garantie légale de conformité + 3 ans d’extension de garantie pour 160 € TTC (TVA à 5,5 %) pour l'installation d'une borne Schneider Charge 7-22 kW.",
+          "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+          "pageTitle": "Installation d'une borne de recharge chez vous​",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "(4) L’extension de garantie est limitée à la fourniture de la pièce remplaçant celle reconnue défectueuse par Schneider Electric, le cas échéant, et à la prise en charge des frais de transport, et de tous fr…",
+          "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+          "pageTitle": "Installation d'une borne de recharge chez vous​",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "Service client Assistance pour l'utilisation de votre borne, maintenance : nous vous aidons face à la moindre difficulté​​.​ Et plus d'options Option smart charge, option extension de garantie...",
+          "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+          "pageTitle": "Installation d'une borne de recharge chez vous​",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        }
+      ],
+      "proof": [
+        {
+          "text": "Obtenir un devis Nos clients nous recommandent Trustpilot Vous êtes un professionnel ?",
+          "url": "https://izi-by-edf.fr/",
+          "pageTitle": "IZI by EDF, la solution de confort pour vos travaux !",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Vérifier mon éligibilité Demandez votre devis travaux gratuit et sans engagement Avec IZI by EDF faites une demande de devis gratuit et personnalisé pour vos travaux.",
+          "url": "https://izi-by-edf.fr/",
+          "pageTitle": "IZI by EDF, la solution de confort pour vos travaux !",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Questions fréquentes On répond à toutes vos questions !",
+          "url": "https://izi-by-edf.fr/faq",
+          "pageTitle": "Questions fréquentes du site IZI by EDF",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Le pré-devis est gratuit et sans engagement.",
+          "url": "https://izi-by-edf.fr/faq",
+          "pageTitle": "Questions fréquentes du site IZI by EDF",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Partners / afiliación"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://izi-by-edf.fr/professionnels-partenaires",
+        "https://izi-by-edf.fr/contact",
+        "https://izi-by-edf.fr/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Développez votre activité grâce à des chantiers clés en main !",
+        "Nous contacter",
+        "IZI by EDF, votre confort, notre priorité",
+        "Votre devis travaux avec IZI by EDF !"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Voir tous les articles",
+        "Voir tous les produits",
+        "Envoyer",
+        "devis pour l’installation d’une borne de recharge"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://izi-by-edf.fr/contact · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El propietario entra por EDF/IZI, elige obra energética y pide presupuesto → IZI cualifica el proyecto → Praxedo lo distribuye a un profesional RGE/IRVE dentro del radio elegido"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://izi-by-edf.fr/professionnels-partenaires",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://izi-by-edf.fr/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://izi-by-edf.fr/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://izi-by-edf.fr/faq",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://izi-by-edf.fr/devis-travaux",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://izi-by-edf.fr/offre/installation-d-une-solution-de-recharge-de-vehicule-electrique",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://izi-by-edf.fr/blog/voiture-electrique-combien-coute-linstallation-dun-equipement-de-recharge-a-domicile",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=izi-by-edf.fr",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/12190538919087091494",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR06654681504481804289/creative/CR06295622788292018177?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16658788514517857851",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/8555165489840685788",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/15982210234305287288",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/799665406440408917",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/14866814270701758345",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6370225237813644444",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR01179162663863713793/creative/CR16057329762648981505?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/4272517211019424990",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR01179162663863713793/creative/CR10028304991808126977?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/18155152517580420253",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6444654830908233280",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/9131764640356661591",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1891864090773153449",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6027678503008621947",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6511145435923263180",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/267363482355319424",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/109185949562936278",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/15062278353104468129",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1274422230925736022",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 9 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

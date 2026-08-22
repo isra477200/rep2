@@ -1,0 +1,540 @@
+{
+  "id": "promozione-medica",
+  "name": "Promozione Medica",
+  "reviewedAt": "2026-08-22T15:50:17.816Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "Pubblicità e marketing per Medici e Dentisti",
+    "heroObserved": true,
+    "priorSummary": "Google Ads, SEO, redes sociales y generación de leads especializados en sanidad, con conformidad deontológica médica",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 534 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 8815 palabras por página comercial recuperada. Muestras breves: “Pubblicità e marketing per Medici e Dentisti” · “Configurazione Pixel Facebook e Meta Business Manager” · “Pazienti e lead: costruisci il tuo potenziale”.",
+    "supportingHeadings": [
+      "Pubblicità e marketing per Medici e Dentisti",
+      "Agenzia pubblicitaria per Medici Chirurghi ed Odontoiatri campagne google ads | social MEDIA MARKETING | produzione audiovisiva",
+      "Un mondo di servizi completi per i professionisti della sanità, dai professionisti del Marketing Digitale",
+      "Abbiamo fatto una scelta",
+      "Specializzati solo nel marketing sanitario",
+      "chiamaci per: produzione video e foto per studi medici | script video per promozioni instagram e facebook per Medici e Dentisti | copywriting sanitario e",
+      "Tu fai il Medico, noi altro",
+      "Niente miracoli, solo buon marketing digitale",
+      "Produciamo i tuoi contenuti",
+      "Sai cos'è l'Inbound Marketing?",
+      "Ti aiutiamo solo se tu aiuti i tuoi pazienti",
+      "Ti presentiamo Dr. AMO, il tuo prossimo miglior collaboratore",
+      "Sei tu che ci chiami: noi rispondiamo",
+      "Formazione Accademica Continua, per un Lifelong Learning di qualità",
+      "Ci aggiorniamo sempre, per darti il miglior servizio possibile",
+      "Storie di grandi professionisti della Medicina, che abbiamo costruito assieme",
+      "Portiamo numeri, non chiacchiere",
+      "Articoli generati da un'AI? No, grazie",
+      "Vuoi un aiuto rapido? Chiedi al Dr. AMO!",
+      "Vuoi le ultime novità dal mondo della salute e del marketing sanitario?",
+      "numeri reali, pazienti reali",
+      "Iscriviti alla nostra newsletter",
+      "Ci vuoi seguire sui nostri social?",
+      "Configurazione Pixel Facebook e Meta Business Manager",
+      "Come sfruttare vecchie pagine web in disuso?",
+      "Meta Business Manager configurato perfettamente per te, subito pronto da usare",
+      "Facebook Pixel subito pronto, qualsiasi sia il tuo sito web",
+      "Nessun finto manuale, nessun trucco: tutto configurato a € 399,00",
+      "C'è pubblicità e pubblicità",
+      "I professionisti del Digital Marketing Sanitario che ti risolvono i problemi"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "WhatsApp",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.promozionemedica.it/",
+      "text": "WhatsApp",
+      "href": "https://wa.me/3332922308",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143
+    },
+    "ctas": [
+      "Richiedi ora il tuo consulto!",
+      "WhatsApp",
+      "Invia!"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.promozionemedica.it/",
+        "index": 1,
+        "action": "https://www.promozionemedica.it/formcontent/invioform-green.php",
+        "method": "POST",
+        "submitText": "Richiedi ora il tuo consulto!",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "Il tuo numero di telefono*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacypolicy_rapid_tel",
+            "label": "Ho letto ed accetto la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consensodati_rapid_tel",
+            "label": "Dichiaro di accettare il GDPR (Reg.UE n.679/2016)*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.promozionemedica.it/",
+        "index": 2,
+        "action": "https://www.promozionemedica.it/formcontent/invioform-mini.php",
+        "method": "POST",
+        "submitText": "Invia!",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Il tuo nome..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "Il tuo numero di telefono..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "La tua email..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "servizio",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacypolicymini",
+            "label": "Ho letto ed accetto la privacy policy*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consensodatimini",
+            "label": "Consento l'uso dei miei dati personali",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.promozionemedica.it/",
+        "index": 4,
+        "action": "https://www.promozionemedica.it/formcontent/invioform.php",
+        "method": "POST",
+        "submitText": "Invia!",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Il tuo nome e cognome..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "La tua e-mail..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "Un tuo telefono..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "oggetto",
+            "label": null,
+            "placeholder": "Chiedici quello che vuoi..*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacypolicy",
+            "label": "privacy policy*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consensodati",
+            "label": "Dichiaro di accettare il GDPR (Reg.UE n.679/2016)*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 3 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email",
+      "Teléfono",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Mailchimp",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Google Ads, SEO, redes sociales y generación de leads especializados en sanidad, con conformidad deontológica médica",
+    "audience": "Médicos, dentistas y clínicas privadas en Italia",
+    "prices": [
+      "La media delle conversioni dei lead viaggia sulle 14 acquisizioni giornaliere , con un budget di € 390,00 al mese Esempio di sito informativo di un Medico Estetico, per cui abbiamo attuato un deciso ed impegnativo lavoro di Social Media Marketing sulla piattaforma Instagram."
+    ],
+    "guarantee": [
+      "Non ti promettiamo che diventerai primo su Google, né ti garantiamo un numero minimo di nuovi pazienti ogni giorno.",
+      "Non garantiamo promesse irrealizzabili, ma numeri reali."
+    ],
+    "proof": [
+      "Tra queste, la regola della revisione tra pari (peer review), che consente di dividere tra cosa è Scienza e cosa non lo è."
+    ],
+    "objections": [
+      "FAQ (domande frequenti) + Cos’è un lead in ambito sanitario?",
+      "Come ottenere nuovi pazienti online: niente trucchi, niente miracoli FAQ (domande frequenti) Formazione Accademica Continua, per un Lifelong Learning di qualità Ci aggiorniamo sempre, per darti il miglior servizio possibile Storie di professionisti della Medicina, che abbiamo aiutato Contattaci ora Vuoi metterti in contatto con"
+    ],
+    "urgency": [
+      "Giorgio Fiorini e dei suoi collaboratori, ad esempio quelle di Google, Hubspot e quelle delle lingue straniere (come l'Inglese) sono costantemente aggiornate.",
+      "Un tipico esempio di promozione outbound è uno spot commerciale su YouTube, che interrompe sul più bello la visione di un filmato, oppure uno spot alla televisione."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "La media delle conversioni dei lead viaggia sulle 14 acquisizioni giornaliere , con un budget di € 390,00 al mese Esempio di sito informativo di un Medico Estetico, per cui abbiamo attuato un deciso ed impegnativo lavoro di Social Media Marketing sulla piattaforma Instagram.",
+          "url": "https://www.promozionemedica.it/",
+          "pageTitle": "Pubblicità e marketing per Medici e Dentisti | Promozione Medica",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "scopri di più ❮ ❯ Portiamo numeri, non chiacchiere Risultati che parlano da soli, e che possiamo dimostrarti in qualsiasi momento €0 Fatturato aggregato dei nostri clienti 0+ Pazienti aiutati ogni anno 0h Ore annue di attività di consulenza Articoli generati da un'AI?",
+          "url": "https://www.promozionemedica.it/",
+          "pageTitle": "Pubblicità e marketing per Medici e Dentisti | Promozione Medica",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Non ti promettiamo che diventerai primo su Google, né ti garantiamo un numero minimo di nuovi pazienti ogni giorno.",
+          "url": "https://www.promozionemedica.it/",
+          "pageTitle": "Pubblicità e marketing per Medici e Dentisti | Promozione Medica",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Non garantiamo promesse irrealizzabili, ma numeri reali.",
+          "url": "https://www.promozionemedica.it/",
+          "pageTitle": "Pubblicità e marketing per Medici e Dentisti | Promozione Medica",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Non garantiamo promesse irrealizzabili, ma numeri reali.",
+          "url": "https://www.promozionemedica.it/servizi-sub-facebook-business-manager.php",
+          "pageTitle": "Configurazione veloce di Meta Business Manager",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Non garantiamo promesse irrealizzabili, ma numeri reali.",
+          "url": "https://www.promozionemedica.it/marketing-lead-generation-medical.php",
+          "pageTitle": "Ottieni nuovi pazienti per il tuo studio medico",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Non garantiamo promesse irrealizzabili, ma numeri reali.",
+          "url": "https://www.promozionemedica.it/specialita-reviews-sanitarie.php",
+          "pageTitle": "Aumenta i pazienti e scopri come ottenere sempre recensioni a 5 stelle",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Non garantiamo promesse irrealizzabili, ma numeri reali.",
+          "url": "https://www.promozionemedica.it/servizi-bidding-facebook-ads.php",
+          "pageTitle": "Ottieni nuovi pazienti grazie a Facebook | Marketing Sanitario",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Tra queste, la regola della revisione tra pari (peer review), che consente di dividere tra cosa è Scienza e cosa non lo è.",
+          "url": "https://www.promozionemedica.it/",
+          "pageTitle": "Pubblicità e marketing per Medici e Dentisti | Promozione Medica",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tra queste, la regola della revisione tra pari (peer review), che consente di dividere tra cosa è Scienza e cosa non lo è.",
+          "url": "https://www.promozionemedica.it/marketing-lead-generation-medical.php",
+          "pageTitle": "Ottieni nuovi pazienti per il tuo studio medico",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Tra queste, la regola della revisione tra pari (peer review), che consente di dividere tra cosa è Scienza e cosa non lo è.",
+          "url": "https://www.promozionemedica.it/specialita-reviews-sanitarie.php",
+          "pageTitle": "Aumenta i pazienti e scopri come ottenere sempre recensioni a 5 stelle",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Come ottenere nuovi pazienti online: niente trucchi, niente miracoli FAQ (domande frequenti) Formazione Accademica Continua, per un Lifelong Learning di qualità Ci aggiorniamo sempre, per darti il miglior servizio possibile Storie di professionisti della Medicina, che abbiamo aiutato Contattaci ora Vuoi metterti in contatto con",
+          "url": "https://www.promozionemedica.it/marketing-lead-generation-medical.php",
+          "pageTitle": "Ottieni nuovi pazienti per il tuo studio medico",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "FAQ (domande frequenti) + Cos’è un lead in ambito sanitario?",
+          "url": "https://www.promozionemedica.it/marketing-lead-generation-medical.php",
+          "pageTitle": "Ottieni nuovi pazienti per il tuo studio medico",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "WhatsApp",
+        "Meta Ads",
+        "Google Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.promozionemedica.it/",
+        "https://www.promozionemedica.it/servizi-sub-facebook-business-manager.php",
+        "https://www.promozionemedica.it/marketing-lead-generation-medical.php"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Pubblicità e marketing per Medici e Dentisti",
+        "Configurazione Pixel Facebook e Meta Business Manager",
+        "Pazienti e lead: costruisci il tuo potenziale",
+        "Bellezza ad ogni costo: la pubblicità per gli studi di Chirurgia estetica"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Richiedi ora il tuo consulto!",
+        "Invia!"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.promozionemedica.it/ · 3 campos",
+        "https://www.promozionemedica.it/ · 6 campos",
+        "https://www.promozionemedica.it/ · 6 campos",
+        "https://www.promozionemedica.it/servizi-sub-facebook-business-manager.php · 3 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email",
+        "Teléfono",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contenido/white paper/análisis gratuito → formulario con servicio de interés → consulta → estrategia sanitaria a medida → ejecución en SEO/Google/Facebook/contenido → seguimiento NO COMPROBADO."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.promozionemedica.it/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.promozionemedica.it/servizi-sub-facebook-business-manager.php",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.promozionemedica.it/marketing-lead-generation-medical.php",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.promozionemedica.it/studio-medico-studio-chirurgia-estetica.php",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.promozionemedica.it/specialita-reviews-sanitarie.php",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.promozionemedica.it/promozione-medica-sanitaria-chi-siamo.php",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.promozionemedica.it/servizi-bidding-facebook-ads.php",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.promozionemedica.it/marketing-medicina-digitale-marketing.php",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.promozionemedica.it/specialita-aumento-pazienti.php",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.promozionemedica.it/marketing-promozione-medica.php",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “WhatsApp”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

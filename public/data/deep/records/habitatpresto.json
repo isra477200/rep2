@@ -1,0 +1,558 @@
+{
+  "id": "habitatpresto",
+  "name": "Habitatpresto",
+  "reviewedAt": "2026-08-22T15:50:18.455Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Trouvez un professionnel de confiance pour vos travaux",
+    "heroObserved": true,
+    "priorSummary": "Marketplace de leads con modelo mixto: abonnement mensual + coste por lead recibido",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 424 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2849 palabras por página comercial recuperada. Muestras breves: “Trouvez un professionnel de confiance pour vos travaux” · “Jusqu'à 5 devis travaux gratuits en 48h” · “Plan de site Habitatpresto”.",
+    "supportingHeadings": [
+      "Trouvez un professionnel de confiance pour vos travaux",
+      "Je recherche un artisan qualifié pour des travaux de :",
+      "Devis travaux les plus demandés",
+      "Peinture intérieure",
+      "Rénovation complète",
+      "Maçonnerie",
+      "Cloisons / Isolation",
+      "Carrelage / Dallage",
+      "Agrandissement",
+      "Ravalement de façades",
+      "Salle de bain / WC",
+      "Comment ça marche ?",
+      "J'explique mon projet",
+      "Je choisis mon professionnel",
+      "Je profite de ma maison",
+      "La presse parle de nous",
+      "De nombreux conseils pour vos travaux",
+      "Jusqu'à 5 devis travaux gratuits en 48h",
+      "5000 professionnels, 30 000 avis clients",
+      "Sélectionnez le type de travaux que vous souhaitez réaliser",
+      "Accès rapide au top travaux les plus demandés",
+      "Plan de site Habitatpresto",
+      "Témoignages",
+      "Nos avis",
+      "Réparer fissure carrelage sol : solutions pour un rendu esthétique et durable",
+      "Peut-on réparer un carrelage fissuré sans le remplacer ?",
+      "Comment réparer un carrelage fissuré selon le type de dommage ?",
+      "Reboucher une fissure fine avec une résine époxy",
+      "Combler une fissure légère avec un mastic ou un émail de réparation",
+      "Remplacer le carreau fissuré quand la réparation ne suffit plus"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Audit énergétique",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.habitatpresto.com/",
+      "text": "Audit énergétique",
+      "href": "https://www.habitatpresto.com/mag/audit-energetique",
+      "element": "a",
+      "kind": "conversion",
+      "score": 180.75
+    },
+    "ctas": [
+      "Audit énergétique",
+      "Contact",
+      "WhatsApp",
+      "Chat",
+      "Devis vmc",
+      "Devis béton",
+      "Devis chape",
+      "Devis travaux",
+      "Devis toiture",
+      "Devis fenêtre",
+      "Devis faïence",
+      "Devis Gratuits",
+      "Devis peinture",
+      "Devis terrasse",
+      "Devis ragréage",
+      "Devis carrelage",
+      "Devis carreleur",
+      "Devis rénovation",
+      "Devis maçonnerie",
+      "Devis dalle béton",
+      "Devis terrassement",
+      "Demander des devis",
+      "Devis pose de pavé",
+      "Devis climatisation",
+      "Devis chauffage gaz",
+      "Finaliser ma demande",
+      "Devis pompe à chaleur",
+      "Devis dépose carrelage",
+      "Devis carrelage extérieur",
+      "Devis carrelage imitation parquet"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage",
+        "index": 3,
+        "action": "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage",
+        "method": "POST",
+        "submitText": "Finaliser ma demande",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "project[consumer][zipcode]",
+            "label": "Code postal",
+            "placeholder": "Votre code postal",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "project[consumer][city]",
+            "label": "Ville",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "project[description]",
+            "label": "Description",
+            "placeholder": "Détaillez votre projet, pièces, surfaces... maison ou appartement, propriétaire ou locataire, délai,",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "project[consumer][firstname]",
+            "label": "Prénom",
+            "placeholder": "Votre prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "project[consumer][lastname]",
+            "label": "Nom",
+            "placeholder": "Votre nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "project[consumer][phone]",
+            "label": "Téléphone",
+            "placeholder": "Votre numéro de téléphone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "project[consumer][email]",
+            "label": "Email",
+            "placeholder": "Votre email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage",
+        "index": 5,
+        "action": "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage",
+        "method": "POST",
+        "submitText": "Commenter",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "comment[nickname]",
+            "label": "Pseudo",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment[content]",
+            "label": "Commentaire",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 2 y 7 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace de leads con modelo mixto: abonnement mensual + coste por lead recibido",
+    "audience": "Artisans BTP multi-oficio en Francia, particulares que piden presupuesto de reforma",
+    "prices": [],
+    "guarantee": [
+      "Une pose inadaptée peut créer des tensions thermiques ou altérer la garantie.Free cooling nocturne : Le free cooling nocturne désigne le rafraîchissement naturel par ventilation lorsque l’air extérieur est plus frais que l’air intérieur."
+    ],
+    "proof": [
+      "J'explique mon projet Vous allez recevoir jusqu'à 5 devis en 48h Je choisis mon professionnel Vous sélectionnez les professionnels à l'aide des avis clients Je profite de ma maison Vous êtes satisfait de vos travaux, vous pouvez laisser une évaluation.",
+      "1 J’explique mon projet Vous allez recevoir jusqu’à 5 devis en 48h 2 Je choisis mon professionnel Vous sélectionnez les professionnels à l’aide des avis clients 3 Je profite de ma maison Vous êtes satisfait de vos travaux, vous pouvez laisser une évaluation Plus de"
+    ],
+    "objections": [
+      "Je trouve un pro de confiance & reçois mes devis ✓ Gratuit ✓ Sans engagement ✓ Rapide Je parle de mon projet à l'expert IA Comment souhaitez-vous échanger ?",
+      "Les solutions intérieures ou peu visibles sont plus simples, mais pas toujours aussi efficaces.FAQ utileQuel est le meilleur investissement pour rafraîchir un appartement ?Le meilleur investissement dépend de la cause de la chaleur.",
+      "On écrit pour que vos travaux se passent au mieux, avec des infos justes, sourcées, et pensées pour répondre aux vraies questions que vous vous posez avant, pendant ou après un chantier.",
+      "❯ ❯ Le Conseil Habitatpresto : ne choisissez pas la solution la plus visible, choisissez celle qui traite la cause ❯ Vos doutes, nos réponses ❯ FAQ utile ❯ Lexique utile ❯ 📍 Pour approfondir vos connaissances ❯ 📝 On demande un devis gratuit pour",
+      "Climatisation : Trouvez gratuitement le professionnel pour vos travaux Devis gratuit 💬 J'ai des questions Services Particuliers Devis travaux Comment ça marche Aide Guide travaux Tendances travaux Trouver un pro Mon espace Services Pro S'inscrire Comment ça marche Aide Application Mob…"
+    ],
+    "urgency": [
+      "🌡️ Gratuit & Immédiat Prix & Aides Travaux Lancez notre simulateur de prix pour votre projet Je calcule maintenant Commentaires Pseudo Commentaire Commenter 🏠 Magazine Climatisation Comment rafraîchir un appartement ?",
+      "Anticiper votre demande permet de trouver plus facilement une entreprise disponible avant le pic d'activité.Je contacte un pro qualifié dès maintenantLe Conseil Habitatpresto :Signalez et surveillez toutes fissures, même minimes !Si vous êtes locataire, une fissure doit toujours être signalée et suivie dans le temps."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Une pose inadaptée peut créer des tensions thermiques ou altérer la garantie.Free cooling nocturne : Le free cooling nocturne désigne le rafraîchissement naturel par ventilation lorsque l’air extérieur est plus frais que l’air intérieur.",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "J'explique mon projet Vous allez recevoir jusqu'à 5 devis en 48h Je choisis mon professionnel Vous sélectionnez les professionnels à l'aide des avis clients Je profite de ma maison Vous êtes satisfait de vos travaux, vous pouvez laisser une évaluation.",
+          "url": "https://www.habitatpresto.com/",
+          "pageTitle": "Trouvez le bon Professionnel pour vos Travaux | Habitatpresto",
+          "pageCategory": "other"
+        },
+        {
+          "text": "1 J’explique mon projet Vous allez recevoir jusqu’à 5 devis en 48h 2 Je choisis mon professionnel Vous sélectionnez les professionnels à l’aide des avis clients 3 Je profite de ma maison Vous êtes satisfait de vos travaux, vous pouvez laisser une évaluation Plus de",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Je trouve un pro de confiance & reçois mes devis ✓ Gratuit ✓ Sans engagement ✓ Rapide Je parle de mon projet à l'expert IA Comment souhaitez-vous échanger ?",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "❯ ❯ Le Conseil Habitatpresto : ne choisissez pas la solution la plus visible, choisissez celle qui traite la cause ❯ Vos doutes, nos réponses ❯ FAQ utile ❯ Lexique utile ❯ 📍 Pour approfondir vos connaissances ❯ 📝 On demande un devis gratuit pour",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Les solutions intérieures ou peu visibles sont plus simples, mais pas toujours aussi efficaces.FAQ utileQuel est le meilleur investissement pour rafraîchir un appartement ?Le meilleur investissement dépend de la cause de la chaleur.",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "On écrit pour que vos travaux se passent au mieux, avec des infos justes, sourcées, et pensées pour répondre aux vraies questions que vous vous posez avant, pendant ou après un chantier.",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Climatisation : Trouvez gratuitement le professionnel pour vos travaux Devis gratuit 💬 J'ai des questions Services Particuliers Devis travaux Comment ça marche Aide Guide travaux Tendances travaux Trouver un pro Mon espace Services Pro S'inscrire Comment ça marche Aide Application Mob…",
+          "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+          "pageTitle": "Comment rafraîchir un appartement ? 10 solutions efficaces",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.habitatpresto.com/",
+        "https://www.habitatpresto.com/devis-travaux-1",
+        "https://www.habitatpresto.com/plan-de-site"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Trouvez un professionnel de confiance pour vos travaux",
+        "Jusqu'à 5 devis travaux gratuits en 48h",
+        "Plan de site Habitatpresto",
+        "Témoignages"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Devis Gratuits",
+        "Audit énergétique",
+        "Devis travaux",
+        "Devis peinture",
+        "Devis climatisation",
+        "Devis vmc",
+        "Devis chauffage gaz",
+        "Devis terrassement"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage · 7 campos",
+        "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage · 2 campos",
+        "https://www.habitatpresto.com/mag/maconnerie/reparer-fissure-beton-exterieur · 7 campos",
+        "https://www.habitatpresto.com/mag/maconnerie/reparer-fissure-beton-exterieur · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El propietario completa gratis la solicitud de hasta cinco presupuestos con obra, ubicación, presupuesto y plazo → Habitatpresto valida y distribuye simultáneamente el lead a varios artesanos abonados"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.habitatpresto.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.habitatpresto.com/devis-travaux-1",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.habitatpresto.com/plan-de-site",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.habitatpresto.com/temoignages",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.habitatpresto.com/mag/carrelage-faience/reparer-fissure-carrelage",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.habitatpresto.com/mag/maconnerie/reparer-fissure-beton-exterieur",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.habitatpresto.com/mag/climatisation/rafraichir-appartement-solutions",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.marty-app.com/blog/avis-habitat-presto",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=habitatpresto.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR17097979774166368257?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/10955178516932880546",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR13773255125160165377?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11755083790887864683",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1223078494507619093",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16008923908868006607",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR16945305566673108993?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6494664580475437959",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR05993924210743836673?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13295948166383583865",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR17885630201627410433?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/3844622345582231729",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR15232421404428206081?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/2859312655519007775",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR13611125538574827521?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/8701010013513303224",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR09161569106732777473?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/9839865947405605622",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR09512849877667676161/creative/CR12889485923774889985?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13684808392117622346",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Audit énergétique”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

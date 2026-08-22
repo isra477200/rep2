@@ -1,0 +1,434 @@
+{
+  "id": "taskty",
+  "name": "Taskty",
+  "reviewedAt": "2026-08-22T15:50:18.966Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "العروض المميزة",
+    "heroObserved": true,
+    "priorSummary": "Marketplace de servicios domésticos con proveedores contratados y verificados, precio cerrado y seguimiento",
+    "voice": "Tono cuantitativo, urgencia comercial, orientado a la acción, apoya la venta en reversión de riesgo. Usa 180 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 688 palabras por página comercial recuperada. Muestras breves: “العروض المميزة” · “اتصل بنا” · “الخدمات”.",
+    "supportingHeadings": [
+      "العروض المميزة",
+      "تنظيف المنزل للمرة الواحدة - حتى 170م",
+      "وجه نظافة بالمتر",
+      "تأسيس سباكة 1 حمام + 1 مطبخ",
+      "مكافحة حشرات المطبخ والحمام عديمة الرائحة",
+      "غسيل بالمنظفات انتريه + كراسى السفرة (او سجادة)",
+      "شحن فريون التكييف",
+      "كشط وتلميع الباركيه",
+      "نظافة منزلية مميزة Premium",
+      "أطلب بثقة وأمان جميع مقدمى الخدمات متعاقدين ومضمونين",
+      "أراء حقيقية للعملاء بعد التجربة",
+      "الباقات الجاهزة",
+      "مكافحة الحشرات المنزل بالكامل للمساحات الكبيرة (عديمة الرائحة)",
+      "مكافحة القوارض",
+      "تنظيف المنزل 4 مرات بسعر 2000 جنيه بدلا من 2080 جنيه",
+      "فك وتركيب تكييف",
+      "تصميم و تصنيع مطابخ الوميتال",
+      "صور للخدمات بعد التنفيذ",
+      "من أعمالنا صور على الطبيعة يمكنك الطلب منها",
+      "حمل تطبيق تاسكتى",
+      "التغطية الإعلامية",
+      "اتصل بنا",
+      "الخدمات",
+      "عن الشركة",
+      "خدماتك المنزلية أضمن وأسهل مع تاسكتى",
+      "تغطية من مؤسسة Forbes الشرق الأوسط",
+      "\"تاسكتى من أفضل 20 شركة ناشئة فى مصر لعام 2016\"",
+      "والعديد من المقالات والتقارير من مواقع محلية واجنبية",
+      "لماذا تطلب من تاسكتى ؟",
+      "تصفح خدماتنا الآن والباقات الخاصة"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "للتواصل",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.taskty.com/",
+      "text": "للتواصل",
+      "href": "https://www.taskty.com/Contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163.25
+    },
+    "ctas": [
+      "تواصل معنا : 0233312727",
+      "إرسال",
+      "للتواصل",
+      "واتس آب",
+      "اتصل بنا",
+      "إتصل بنا",
+      "نظافة منزلية",
+      "نظافة متخصصة",
+      "نظافة مفروشات",
+      "القائمة الرئيسية",
+      "الإنضمام للفنيين والشركات"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.taskty.com/Contact",
+        "index": 1,
+        "action": "https://www.taskty.com/Contact/SubmitContactForm",
+        "method": "POST",
+        "submitText": "إرسال",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Name",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "phone",
+            "name": "Subject",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Message",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketplace de servicios domésticos con proveedores contratados y verificados, precio cerrado y seguimiento",
+    "audience": "Hogares y oficinas en Egipto; limpieza, mantenimiento/reparaciones y control de plagas con proveedores contratados.",
+    "prices": [],
+    "guarantee": [
+      "خدمة احترافية بضمان 8 شهور.",
+      "(9+) مكافحة حشرات استمتع بمنزل خالى من الحشرات والقوارض وجميع انواع الزواحف نوفر خدمات مكافحة احترافية للصراصير والنمل والأبراص وغيرها وبضمان 6 أشهر.",
+      "مشاهدة التفاصيل ليه تطلب من تاسكتى أطلب بثقة وأمان جميع مقدمى الخدمات متعاقدين ومضمونين لضمان طلبك تم معاينة واختبار جميع مقدمى الخدمات وجميع بياناتهم متاحة ، ونقوم بالمتابعة معك خطوة بخطوة لضمان حصولك على خدمة مريحة وميزة.",
+      "نظافة منزلية مميزة Premium نظافة متخصصة أعمال النظافة المتخصصة للمنازل والشركات بمعدات وماكينات متخصصة لضمان مستوى نظافة عالى.",
+      "…ة نظافة منزلية أراء حقيقية للعملاء بعد التجربة ليه تطلب من تاسكتى أطلب بثقة وأمان جميع مقدمى الخدمات متعاقدين ومضمونين لضمان طلبك تم معاينة واختبار جميع مقدمى الخدمات وجميع بياناتهم متاحة ، ونقوم بالمتابعة معك خطوة بخطوة لضمان حصولك على خدمة مريحة وميزة."
+    ],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "أطلب الآن نظافة منزلية مميزة Premium نظافة منزلية 1,000 جنيه تجربة تنظيف مميزة.",
+      "أطلب الآن نظافة منزلية شاملة نظافة منزلية 750 جنيه خدمة النظافة المنزلية الشاملة، نظافة عميقة تصل لأدق التفاصيل تشمل تنظيف شامل لـ7 وحدات حتى 150 متر.بما في ذلك دواليب المطبخ، والنوافذ، والأسقف و حوائط المطبخ و الحمام بواسطة عمال مدربون.نضمن لك بيئة منزلية نقية ومنعشة",
+      "أطلب الآن أطلب فنى يساعدك خدمات الصيانة المنزلية المختلفة ، ضرورية لمنزلك ولراحتك سباكة كهرباء نقاشة نجارة الرخام دش و تليفزيون أراء حقيقية للعملاء بعد التجربة الباقات الجاهزة 1,700 جنيه مكافحة الحشرات المنزل بالكامل للمساحات الكبيرة (عديمة الرائحة) قسم: مكافحة حشرات مكافحة حشرات المنزل بالكامل"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "مشاهدة التفاصيل ليه تطلب من تاسكتى أطلب بثقة وأمان جميع مقدمى الخدمات متعاقدين ومضمونين لضمان طلبك تم معاينة واختبار جميع مقدمى الخدمات وجميع بياناتهم متاحة ، ونقوم بالمتابعة معك خطوة بخطوة لضمان حصولك على خدمة مريحة وميزة.",
+          "url": "https://www.taskty.com/",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "خدمة احترافية بضمان 8 شهور.",
+          "url": "https://www.taskty.com/",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "(9+) مكافحة حشرات استمتع بمنزل خالى من الحشرات والقوارض وجميع انواع الزواحف نوفر خدمات مكافحة احترافية للصراصير والنمل والأبراص وغيرها وبضمان 6 أشهر.",
+          "url": "https://www.taskty.com/Services",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "نظافة منزلية مميزة Premium نظافة متخصصة أعمال النظافة المتخصصة للمنازل والشركات بمعدات وماكينات متخصصة لضمان مستوى نظافة عالى.",
+          "url": "https://www.taskty.com/Services",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "(9+) مكافحة حشرات استمتع بمنزل خالى من الحشرات والقوارض وجميع انواع الزواحف نوفر خدمات مكافحة احترافية للصراصير والنمل والأبراص وغيرها وبضمان 6 أشهر.",
+          "url": "https://www.taskty.com/Services/Index",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "نظافة منزلية مميزة Premium نظافة متخصصة أعمال النظافة المتخصصة للمنازل والشركات بمعدات وماكينات متخصصة لضمان مستوى نظافة عالى.",
+          "url": "https://www.taskty.com/Services/Index",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…ة نظافة منزلية أراء حقيقية للعملاء بعد التجربة ليه تطلب من تاسكتى أطلب بثقة وأمان جميع مقدمى الخدمات متعاقدين ومضمونين لضمان طلبك تم معاينة واختبار جميع مقدمى الخدمات وجميع بياناتهم متاحة ، ونقوم بالمتابعة معك خطوة بخطوة لضمان حصولك على خدمة مريحة وميزة.",
+          "url": "https://www.taskty.com/Offers/ServiceOffers/6",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "أعمال الحدادة خدمات الشركات والمكاتب خدمات نظافة متخصصة بأحدث المعدات والمنظفات، غسيل كراسي المكاتب والأطقم، والموكيت، صيانة وتركيب التكييفات، مكافحة الحشرات مع ضمان 6 أشهر، وتنظيف وغسيل واجهات المباني من الخارج نظافة متخصصة للشركات و المكاتب غسيل الكراسي و أطقم الجلوس بمنظفات وتعقيم بالبخار صيانة",
+          "url": "https://www.taskty.com/Services",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        },
+        {
+          "text": "أعمال الحدائق واللاندسكيب اجهزة منزلية صيانة محترفة للغسالات والثلاجات بالتعاقد مع فنيين متخصصين، بما في ذلك تبديل قطع الغيار، مع ضمان السرعة والجودة في الأداء.",
+          "url": "https://www.taskty.com/Services",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        },
+        {
+          "text": "أعمال الحدادة خدمات الشركات والمكاتب خدمات نظافة متخصصة بأحدث المعدات والمنظفات، غسيل كراسي المكاتب والأطقم، والموكيت، صيانة وتركيب التكييفات، مكافحة الحشرات مع ضمان 6 أشهر، وتنظيف وغسيل واجهات المباني من الخارج نظافة متخصصة للشركات و المكاتب غسيل الكراسي و أطقم الجلوس بمنظفات وتعقيم بالبخار صيانة",
+          "url": "https://www.taskty.com/Services/Index",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        },
+        {
+          "text": "أعمال الحدائق واللاندسكيب اجهزة منزلية صيانة محترفة للغسالات والثلاجات بالتعاقد مع فنيين متخصصين، بما في ذلك تبديل قطع الغيار، مع ضمان السرعة والجودة في الأداء.",
+          "url": "https://www.taskty.com/Services/Index",
+          "pageTitle": "Taskty تاسكتى - اكبر سوق للخدمات المنزلية على الانترنت",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        }
+      ],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.taskty.com/",
+        "https://www.taskty.com/Contact",
+        "https://www.taskty.com/Services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "العروض المميزة",
+        "اتصل بنا",
+        "الخدمات",
+        "نظافة منزلية"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "اتصل بنا",
+        "الإنضمام للفنيين والشركات",
+        "إتصل بنا",
+        "للتواصل",
+        "تواصل معنا : 0233312727",
+        "واتس آب",
+        "إرسال",
+        "نظافة منزلية"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.taskty.com/Contact · 4 campos",
+        "https://www.taskty.com/Contact/Index · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El usuario elige servicio/oferta, dirección y fecha. 2) Taskty muestra precio cerrado y asigna un trabajador contratado, identificado y verificado. 3) El cliente puede comprobar identidad antes"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.taskty.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.taskty.com/Contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.taskty.com/Services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.taskty.com/AboutUs",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.taskty.com/Contact/Index",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.taskty.com/Services/Index",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.taskty.com/Offers/ServiceOffers/6",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://taskty.com/Offers",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=taskty.com",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.taskty.com/Images/Testimonial/16.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/17.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/18.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/20.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/21.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/22.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/23.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/24.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/25.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/26.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/27.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/28.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/29.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/30.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/31.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/32.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/33.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/34.jpg: Contenido no textual: image/jpeg",
+    "https://www.taskty.com/Images/Testimonial/10.jpg: Contenido no textual: image/jpeg",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “للتواصل”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

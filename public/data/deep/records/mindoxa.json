@@ -1,0 +1,402 @@
+{
+  "id": "mindoxa",
+  "name": "Mindoxa",
+  "reviewedAt": "2026-08-22T15:50:19.627Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Mindoxa",
+    "heroObserved": true,
+    "priorSummary": "Servicio multicanal de generación y nurturing de leads mediante paid ads, SEO, social, contenido, landing pages y email; forma parte de una agencia digital generalista.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 252 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 547 palabras por página comercial recuperada. Muestras breves: “Mindoxa”.",
+    "supportingHeadings": [
+      "Mindoxa",
+      "Strategic Lead Generation Services",
+      "Fuel Your Sales Pipeline",
+      "Targeted Lead Acquisition",
+      "Multi-Channel Strategies",
+      "Lead Qualification",
+      "Our Lead Generation Process",
+      "Research & Strategy",
+      "Campaign Setup",
+      "Lead Nurturing",
+      "Optimization & Scaling",
+      "Our Lead Generation Approach",
+      "Paid Advertising Campaigns",
+      "Content Marketing",
+      "Landing Page Optimization",
+      "Email Marketing Automation",
+      "Lead Generation Packages",
+      "Starter Package",
+      "Growth Package",
+      "Enterprise Package",
+      "Ready to Transform Your Digital Presence?",
+      "Quick Links",
+      "Our Services",
+      "Contact Us",
+      "Get in Touch",
+      "Contact Information",
+      "Dubai Office",
+      "Pakistan Office",
+      "Send Us a Message",
+      "Visit Our Offices"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Get a Free Consultation",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://mindoxa.com/services/lead-generation",
+      "text": "Get a Free Consultation",
+      "href": "https://mindoxa.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 299.25
+    },
+    "ctas": [
+      "Get a Free Consultation",
+      "Get a Free Quote",
+      "Contact",
+      "Contact Us",
+      "Get a Quote",
+      "Contact Us Today",
+      "Request Custom Quote",
+      "Contact for Custom Quote",
+      "Call Us",
+      "Call Now",
+      "WhatsApp Us",
+      "Get Started",
+      "Call Us Now",
+      "Chat on WhatsApp",
+      "Start Your Project",
+      "Claim Offer via WhatsApp",
+      "Choose Plan",
+      "Send Message",
+      "Send via Email",
+      "Choose This Plan"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://mindoxa.com/contact",
+        "index": 1,
+        "action": "https://mindoxa.com/contact",
+        "method": "GET",
+        "submitText": "Send Message",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "input",
+            "name": "name",
+            "label": "Full Name *",
+            "placeholder": "Your name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "your.email@example.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "phone",
+            "label": "Phone Number",
+            "placeholder": "+971 XX XXX XXXX",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "company",
+            "label": "Company Name",
+            "placeholder": "Your company",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "service",
+            "label": "Service You're Interested In *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Your Message *",
+            "placeholder": "Tell us about your project and requirements",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://mindoxa.com/tools/seo-audit",
+        "index": 1,
+        "action": "https://mindoxa.com/tools/seo-audit",
+        "method": "GET",
+        "submitText": "Analyze",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "url",
+            "name": null,
+            "label": null,
+            "placeholder": "https://example.com",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 7 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Company Name.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 7,
+      "qualification": [
+        "Company Name"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Servicio multicanal de generación y nurturing de leads mediante paid ads, SEO, social, contenido, landing pages y email; forma parte de una agencia digital generalista.",
+    "audience": "Pymes y empresas en crecimiento de Dubai/UAE que necesitan leads B2B o B2C por varios canales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Over a three-month period, we implemented a comprehensive optimization strategy that included campaign restructuring, keyword refinement, ad copy testing, and landing page optimization.The results were dramatic: ROAS increased from 1.8:1 to 5.6:1, representing a 312% improvement.",
+      "The ROAS increased from 1.8:1 to 5.6:1, representing a 312% improvement, while cost per acquisition decreased by 47%.These results were achieved through a systematic approach that included campaign restructuring, keyword refinement, ad copy testing, landing page optimization, and advanced bidding strategies.",
+      "This case study details our approach, implementation, and the specific strategies that led to this remarkable turnaround.Key ResultsROAS Improvement312%Revenue Increase156%CPA Reduction47%Conver…"
+    ],
+    "objections": [],
+    "urgency": [
+      "…ve since grown into a full-service agency with offices in Dubai and Pakistan, serving clients across the UAE and beyond.Today, we're proud to have helped hundreds of businesses transform their digital presence and achieve remarkable growth.Our Mission & ValuesWhat Drives UsAt Mindoxa, we're guided by a s…",
+      "…our office locationsDubai OfficeAl Ain Center, Dubai, UAEView on Google MapsChakwal OfficeOffice 1 & 2, Usman Bakshwal Plaza, Talagang Road, ChakwalView on Google MapsContact FAQsAnswers to common questions about contacting usHow quickly will I receive a response?We aim to respond to all inquiries withi…",
+      "Chat on WhatsApp Call Us NowGet a Free QuoteMindoxaYour trusted digital marketing partner in Dubai.",
+      "…ghboring GCC countries.Prior to engaging Mindoxa, FashionHub had been managing their Google Ads campaigns in-house with limited expertise."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Over a three-month period, we implemented a comprehensive optimization strategy that included campaign restructuring, keyword refinement, ad copy testing, and landing page optimization.The results were dramatic: ROAS increased from 1.8:1 to 5.6:1, representing a 312% improvement.",
+          "url": "https://mindoxa.com/case-studies/ecommerce-roi",
+          "pageTitle": "Mindoxa - Digital Marketing Agency",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "This case study details our approach, implementation, and the specific strategies that led to this remarkable turnaround.Key ResultsROAS Improvement312%Revenue Increase156%CPA Reduction47%Conver…",
+          "url": "https://mindoxa.com/case-studies/ecommerce-roi",
+          "pageTitle": "Mindoxa - Digital Marketing Agency",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "The ROAS increased from 1.8:1 to 5.6:1, representing a 312% improvement, while cost per acquisition decreased by 47%.These results were achieved through a systematic approach that included campaign restructuring, keyword refinement, ad copy testing, landing page optimization, and advanced bidding strategies.",
+          "url": "https://mindoxa.com/case-studies/ecommerce-roi",
+          "pageTitle": "Mindoxa - Digital Marketing Agency",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Meta Ads",
+        "Google Ads",
+        "SEO / contenido",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://mindoxa.com/services/lead-generation",
+        "https://mindoxa.com/contact",
+        "https://mindoxa.com/pricing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Mindoxa"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "WhatsApp Us",
+        "Get a Quote",
+        "Get a Free Consultation",
+        "Get Started",
+        "Request Custom Quote",
+        "Chat on WhatsApp",
+        "Call Us Now"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://mindoxa.com/contact · 7 campos",
+        "https://mindoxa.com/tools/seo-audit · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Research de mercado/ICP → configuración de campañas y landing → paid/SEO/social/email → captura → scoring/cualificación → nurturing automatizado → entrega/CRM → optimización y escalado."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://mindoxa.com/services/lead-generation",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://mindoxa.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://mindoxa.com/pricing",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://mindoxa.com/portfolio",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://mindoxa.com/case-studies/ecommerce-roi",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://mindoxa.com/about",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://mindoxa.com/tools/seo-audit",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.facebook.com/ads/library/?id=2473814326435453",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?id=1669511380759801",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Get a Free Consultation”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

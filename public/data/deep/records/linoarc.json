@@ -1,0 +1,176 @@
+{
+  "id": "linoarc",
+  "name": "Linoarc",
+  "reviewedAt": "2026-08-22T15:50:17.601Z",
+  "status": "Limitada",
+  "confidence": "Limitada",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Teleappointment B2B 100% a éxito en Japón: Linoarc obtiene citas con responsables/decisores y solo factura reuniones válidas que realmente se celebran.",
+    "voice": "Tono tono no clasificable automáticamente; requiere revisión humana. La argumentación visible usa pocas cifras. Densidad aproximada: no medible palabras por página comercial recuperada.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Teleappointment B2B 100% a éxito en Japón: Linoarc obtiene citas con responsables/decisores y solo factura reuniones válidas que realmente se celebran.",
+    "audience": "Empresas y autónomos en Japón que buscan nueva prospección B2B, test de mercado o liberar a ventas del cold calling; cobertura nacional. Rechaza encargos cuya dificultad exigiría más de 20.000 JPY por cita.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Brief de producto/target/condiciones → estimación de dificultad → test call para 5 citas → script y lista → llamadas → cita con responsable → celebración efectiva → validación/no-count"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://linoarc.co.jp/telephone.html",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://linoarc.co.jp/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=linoarc.co.jp",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=Linoarc",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://linoarc.co.jp/%E4%B8%87%E3%81%8C%E4%B8%80%E3%82%A2%E3%83%9D%E3%81%8C%E5%8F%96%E5%BE%97%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E5%A0%B4%E5%90%88%E3%81%AF%E3%80%81%E8%B2%BB%E7%94%A8%E3%81%AF%E4%B8%80/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://linoarc.co.jp/%E3%82%A2%E3%83%9D%E5%8D%98%E4%BE%A1%E3%81%AE%E7%9B%AE%E5%AE%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+      "label": "Fuente pública 6"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://linoarc.co.jp/telephone.html: HTTP 403",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "no_observable"
+}

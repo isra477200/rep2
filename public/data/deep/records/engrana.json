@@ -1,0 +1,474 @@
+{
+  "id": "engrana",
+  "name": "Engrana",
+  "reviewedAt": "2026-08-22T15:50:17.414Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Tu negocio, funcionando.Tú, desconectado.",
+    "heroObserved": true,
+    "priorSummary": "Campañas de Meta que llegan a conversación y sistema que agenda, recuerda, reactiva y solicita reseñas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 588 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2043 palabras por página comercial recuperada. Muestras breves: “Tu negocio, funcionando.Tú, desconectado.” · “¿Dudas? Estamos aquí.”.",
+    "supportingHeadings": [
+      "Tu negocio, funcionando.Tú, desconectado.",
+      "Tu negocio funciona porque tú no paras",
+      "Seis cosas que pasan solas en tu negocio desde el momento en que entra Engrana",
+      "Responde 24/7 con datos reales de tu negocio",
+      "Reserva, mueve y cancela citas en la conversación",
+      "Pre-cita, post-servicio, revisión anual",
+      "Despierta clientes inactivos antes de que se vayan",
+      "Reseñas en Google, automáticas, post-servicio",
+      "Métricas semanales y campañas segmentadas",
+      "Tu negocio funciona.",
+      "Tu equipo descansa.",
+      "Tus clientes se sienten reconocidos.",
+      "No es un chatbot. Es un agente con memoria de cada cliente",
+      "Tú no tocas código. Nosotros lo hacemos funcionar",
+      "Se conecta a tu agenda y CRM",
+      "Identifica a cada cliente",
+      "Conversa con tu tono",
+      "Te informa sin que preguntes",
+      "Si tu cliente te escribe por WhatsApp y atender el móvil te quita tiempo, encajas",
+      "Clínicas dentales y médicas",
+      "Clínicas estéticas",
+      "Despachos de abogados",
+      "Talleres mecánicos",
+      "Peluquerías y barberías",
+      "Empresas de reformas",
+      "Si nos contratas, hablas con nosotros",
+      "Operativo en menos de una semana",
+      "Demo de 20 min",
+      "Setup técnico",
+      "A producción"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "agenda una demo",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://engrana.es/blog/automatizar-campana-renta-asesoria",
+      "text": "agenda una demo",
+      "href": "https://engrana.es/demo",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.25
+    },
+    "ctas": [
+      "Gestión de citasApps para agendar citas: cuál elegir según tu volumen de WhatsAppGuía práctica",
+      "agenda una demo",
+      "Contacto",
+      "WhatsApp",
+      "Política de WhatsApp",
+      "recordatorio de citas por WhatsApp",
+      "Mensajes automáticosWhatsApp Business",
+      "WhatsApp Business API para asesorías: qué cambia",
+      "WhatsAppChat de citas por WhatsApp gratis 2026: qué se puede y qué noQué puedes",
+      "WhatsAppCómo Crear un Bot de WhatsApp en 15 Minutos [Sin Programar, 2026]Guía práctica para",
+      "AsesoríasWhatsApp Business API para asesorías: qué cambia de verdadLa API saca el WhatsApp de",
+      "AbogadosWhatsApp con clientes en un despacho: qué es legal (2026)Usar WhatsApp con clientes es",
+      "WhatsAppRGPD WhatsApp Business: qué puedes enviar y qué noGuía clara para usar WhatsApp Business",
+      "AutomatizaciónROI de un Chatbot de WhatsApp: Calculadora + Casos Reales [2026]Calcula el ROI real",
+      "Gestión de citasConfirmar citas por WhatsApp gratis: el flujo simple del \"SÍ\"Cómo confirmar citas",
+      "WhatsAppWhatsApp cobrará cada mensaje desde octubre 2026: tarifas y qué hacerMeta cobrará los mensajes",
+      "Gestión de citasRecordatorio de citas por WhatsApp: ejemplos + guíaPlantillas de recordatorio de citas",
+      "WhatsAppWhatsApp Business API España: Guía Completa 2026 + CostesGuía completa de WhatsApp Business API",
+      "WhatsAppWhatsApp Business para abogados: cumplimiento LOPD 2026Cómo usar WhatsApp Business en un despacho sin",
+      "Enviar mensaje",
+      "Selecciona un asunto",
+      "Mensajes y campañas automáticas",
+      "ChatBot IAAgente conversacional",
+      "Qué ha anunciado Meta exactamente",
+      "RecordatoriosConfirmación automática",
+      "Qué NO cambia (y conviene tener claro)",
+      "Tarifas para España, con la tabla delante",
+      "Cuánto te supone: tres ejemplos con números",
+      "El agente de IA de Meta vs un agente propio",
+      "Ver más diferencias entre chatbot y agente IA"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://engrana.es/contacto",
+        "index": 1,
+        "action": "https://engrana.es/contacto",
+        "method": "GET",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "input",
+            "name": null,
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": null,
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": null,
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "Cuéntanos en qué podemos ayudarte",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Campañas de Meta que llegan a conversación y sistema que agenda, recuerda, reactiva y solicita reseñas.",
+    "audience": "Clínicas, abogados, talleres, peluquerías, reformas y servicios locales.",
+    "prices": [
+      "Tu negocio funciona aunque tú estés cenando con tu familia.Pide una demo de 20 minVer qué hace Engrana 89€/mes sin permanencia Setup en menos de 1 semana Cumple RGPDCClínica Sonríeen líneaHola, ¿podríais cambiarme la cita del jueves?17:42 ✓✓Hola Marta 👋 Veo que tienes la limpieza"
+    ],
+    "guarantee": [],
+    "proof": [
+      "Reduce no-shows hasta un 80%.Cómo funcionan los recordatorios04ReconquistaDespierta clientes inactivos antes de que se vayanSi un cliente lleva X meses sin venir, Engrana le manda un mensaje proactivo.",
+      "Ver todo el producto →Lo que cambia con EngranaTu negocio funciona.Tu equipo descansa.Tus clientes se sienten reconocidos.Y tú, por fin, vivesDiferenciaciónNo es un chatbot.",
+      "InicioProductoSectoresSobre NosotrosBlogContactoES|ENÁrea clienteAgendar DemoES|ENOperación autónoma para negocios con clientes recurrentesTu negocio, funcionando.Tú, desconectado.Engrana se ocupa de tus clientes por WhatsApp: atiende, agenda, recuerda, reactiva, pide reseñas y te informa.",
+      "¿Cuál te encaja?17:43Hoy en EngranaMensajes resueltos147Citas confirmadas23Reseñas pedidas8Tu tiempo+4hConoce a cada clientePor su nombreFunciona24/7Se conecta a tu agenda y a tu CRMWhatsApp Business APIGoogle CalendarCalendlyMN ProgramHubSpotTu sistema con API o CSVSi te pasa estoTu negocio funciona porque tú no parasMontaste tu negocio para vivir mejor.",
+      "Sin que tú te acuerdes.05Pide reseñasReseñas en Google, automáticas, post-servicioTras cada servicio, Engrana pide reseña con link directo.",
+      "Filtra con micro-encuesta antes.Solicitar reseñas automáticamente06InformaMétricas semanales y campañas segmentadasRecibes los informes que tú elijas."
+    ],
+    "objections": [
+      "Tu negocio funciona aunque tú estés cenando con tu familia.Pide una demo de 20 minVer qué hace Engrana 89€/mes sin permanencia Setup en menos de 1 semana Cumple RGPDCClínica Sonríeen líneaHola, ¿podríais cambiarme la cita del jueves?17:42 ✓✓Hola Marta 👋 Veo que tienes la limpieza",
+      "¿Te reservo hueco?\"02AgendaReserva, mueve y cancela citas en la conversaciónEl cliente pide hueco por WhatsApp.",
+      "¿Qué lo diferencia de Manychat o un bot básico?¿Cuánto cuesta y hay permanencia?¿Cuánto se tarda en ponerlo en marcha?¿Para qué tipo de negocio funciona?¿Qué pasa con los datos de mis clientes?",
+      "Te enseñamos exactamente cómo quedaría con tu agenda, tu sector y tu tono.Pide tu demo de 20 minVer el producto en detalle Sin compromiso Sin email obligatorio para la demo Cancela cuando quierasPreguntas frecuentes sobre Engrana¿Qué hace exactamente Engrana?¿Engrana sustituye mi software de gestión o"
+    ],
+    "urgency": [
+      "También se cobrarán las plantillas de utility enviadas dentro de esa ventana, que hasta ahora eran gratuitas.Hasta ahora, responder a un cliente dentro de las 24 horas siguientes a su último mensaje no costaba nada, sin límite mensual.",
+      "Además el coste varía con la complejidad de cada respuesta, así que es difícil de predecir.Agente propio sobre la API: cada respuesta paga la tarifa de servicio (unos 1,7 céntimos de euro en España) más el coste del modelo de IA, que a día de",
+      "En España esa tarifa es hoy de 0,0166 euros por mensaje.",
+      "Tarifa mensual fijaRango típico: €50-200/mesIncluye: acceso a la plataforma, cierto número de usuarios, soporte básicoBSPs baratos: ~€50/mes (funcionalidades limitadas)BSPs premium: €150-200/mes (chatbots, integraciones, analytics)2.",
+      "De cuánto tiempo se come tu equipo respondiendo siempre lo mismo hablamos en detalle en cuánto tiempo pierde un despacho al mes respondiendo consultas repetitivas.Qué espera hoy el cliente legal: respuesta en minutos y por WhatsApp, no un buzón de vozSi crees que el cliente",
+      "¿Cuál te encaja?17:43Hoy en EngranaMensajes resueltos147Citas confirmadas23Reseñas pedidas8Tu tiempo+4hConoce a cada clientePor su nombreFunciona24/7Se conecta a tu agenda y a tu CRMWhatsApp Business APIGoogle CalendarCalendlyMN ProgramHubSpotTu sistema con API o CSVSi te pasa estoTu negocio funciona porque tú no parasMontaste tu negocio para vivir mejor."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Tu negocio funciona aunque tú estés cenando con tu familia.Pide una demo de 20 minVer qué hace Engrana 89€/mes sin permanencia Setup en menos de 1 semana Cumple RGPDCClínica Sonríeen líneaHola, ¿podríais cambiarme la cita del jueves?17:42 ✓✓Hola Marta 👋 Veo que tienes la limpieza",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Total: 142€.17:42Peluquerías y barberíasLucía, hace 3 meses que no te vemos por aquí ✂️ -20% esta semana en corte y color.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "InicioProductoSectoresSobre NosotrosBlogContactoES|ENÁrea clienteAgendar DemoES|ENOperación autónoma para negocios con clientes recurrentesTu negocio, funcionando.Tú, desconectado.Engrana se ocupa de tus clientes por WhatsApp: atiende, agenda, recuerda, reactiva, pide reseñas y te informa.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Cuál te encaja?17:43Hoy en EngranaMensajes resueltos147Citas confirmadas23Reseñas pedidas8Tu tiempo+4hConoce a cada clientePor su nombreFunciona24/7Se conecta a tu agenda y a tu CRMWhatsApp Business APIGoogle CalendarCalendlyMN ProgramHubSpotTu sistema con API o CSVSi te pasa estoTu negocio funciona porque tú no parasMontaste tu negocio para vivir mejor.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Reduce no-shows hasta un 80%.Cómo funcionan los recordatorios04ReconquistaDespierta clientes inactivos antes de que se vayanSi un cliente lleva X meses sin venir, Engrana le manda un mensaje proactivo.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin que tú te acuerdes.05Pide reseñasReseñas en Google, automáticas, post-servicioTras cada servicio, Engrana pide reseña con link directo.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Filtra con micro-encuesta antes.Solicitar reseñas automáticamente06InformaMétricas semanales y campañas segmentadasRecibes los informes que tú elijas.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ver todo el producto →Lo que cambia con EngranaTu negocio funciona.Tu equipo descansa.Tus clientes se sienten reconocidos.Y tú, por fin, vivesDiferenciaciónNo es un chatbot.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Tu negocio funciona aunque tú estés cenando con tu familia.Pide una demo de 20 minVer qué hace Engrana 89€/mes sin permanencia Setup en menos de 1 semana Cumple RGPDCClínica Sonríeen líneaHola, ¿podríais cambiarme la cita del jueves?17:42 ✓✓Hola Marta 👋 Veo que tienes la limpieza",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Te reservo hueco?\"02AgendaReserva, mueve y cancela citas en la conversaciónEl cliente pide hueco por WhatsApp.",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Te enseñamos exactamente cómo quedaría con tu agenda, tu sector y tu tono.Pide tu demo de 20 minVer el producto en detalle Sin compromiso Sin email obligatorio para la demo Cancela cuando quierasPreguntas frecuentes sobre Engrana¿Qué hace exactamente Engrana?¿Engrana sustituye mi software de gestión o",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Qué lo diferencia de Manychat o un bot básico?¿Cuánto cuesta y hay permanencia?¿Cuánto se tarda en ponerlo en marcha?¿Para qué tipo de negocio funciona?¿Qué pasa con los datos de mis clientes?",
+          "url": "https://engrana.es/",
+          "pageTitle": "Engrana — Operación autónoma de tu negocio por WhatsApp",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Meta Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://engrana.es/",
+        "https://engrana.es/contacto",
+        "https://engrana.es/blog"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Tu negocio, funcionando.Tú, desconectado.",
+        "¿Dudas? Estamos aquí."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Mensajes y campañas automáticas",
+        "Ver más diferencias entre chatbot y agente IA",
+        "ChatBot IAAgente conversacional",
+        "RecordatoriosConfirmación automática",
+        "Mensajes automáticosWhatsApp Business",
+        "Política de WhatsApp",
+        "Selecciona un asunto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://engrana.es/contacto · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email",
+        "agenda una demo"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Web → demo de 20 minutos → explicación del volumen de WhatsApp, agenda y flujos → configuración técnica conectando agenda y CRM y aprobación de textos → puesta"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://engrana.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://engrana.es/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://engrana.es/blog",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://engrana.es/blog/automatizar-campana-renta-asesoria",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://engrana.es/blog/whatsapp-cobrara-mensajes-octubre-2026",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://engrana.es/blog/precio-whatsapp-business-api-espana",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://engrana.es/blog/captar-clientes-despacho-abogados",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=engrana.es",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.engrana.es/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033/creative/CR15822754153773400065?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033/creative/CR10659237199419015169?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.engrana.es/atc/24-7",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033/creative/CR11621848634420625409?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033/creative/CR09983576652631769089?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033/creative/CR17462949524996620289?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR18312647017110700033/creative/CR11356957041835900929?region=anywhere",
+      "label": "Fuente pública 18"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “agenda una demo”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

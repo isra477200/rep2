@@ -1,0 +1,217 @@
+{
+  "id": "botswana-services",
+  "name": "Botswana Services",
+  "reviewedAt": "2026-08-22T15:50:18.710Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Terms and Conditions",
+    "heroObserved": true,
+    "priorSummary": "Crear cuenta, listar negocio y comprar un paquete de anuncio destacado desde el panel; pago con tarjeta y publicación inmediata según la guía.",
+    "voice": "Tono orientado al lector, cuantitativo, autoridad basada en prueba, urgencia comercial, explicativo, orientado a la acción. Usa 630 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 12229 palabras por página comercial recuperada. Muestras breves: “Terms and Conditions”.",
+    "supportingHeadings": [
+      "Terms and Conditions",
+      "1.1 Preamble",
+      "1.2 Interpretation",
+      "1.2.1. In these General Terms:",
+      "1.3 Definitions",
+      "1.4 Introduction",
+      "1.5 Product Specific Terms",
+      "1.6 Use Policies",
+      "1.8 Third Party Suppliers",
+      "1.8.2 Customer acknowledges further that,",
+      "1.9 Customer Status",
+      "1.10 Commencement And Duration",
+      "1.11 Customer Identifiers And IP Address",
+      "1.12 Subscription Fees, Charges And Payment",
+      "1.13. Intellectual Property Rights",
+      "1.14. Confidentiality Undertaking",
+      "1.14.12. The above undertakings shall not apply to-",
+      "1.15. Data Protection",
+      "1.16. Protection Of Personal Information",
+      "1.17. Purpose",
+      "1.18. Breach",
+      "1.19. Insolvency",
+      "1.20. Termination and Suspension",
+      "1.21. General Limitation",
+      "1.22. Monitoring And Termination Rights",
+      "1.23. Preservation Of Security, Maintenance And Repair",
+      "1.24. Force Majeure",
+      "1.25. Dispute Resolution",
+      "1.25.6. Urgent relief:",
+      "1.26. General Provisions"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "contact us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://botswanaservices.com/terms",
+      "text": "contact us",
+      "href": "https://botswanaservices.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "contact us",
+      "Contact Us",
+      "Chat with us on WhatsApp",
+      "Sign Up!",
+      "List Business"
+    ],
+    "captureType": "WhatsApp",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Crear cuenta, listar negocio y comprar un paquete de anuncio destacado desde el panel; pago con tarjeta y publicación inmediata según la guía.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "1.8 Third Party Suppliers 1.8.1 Customer acknowledges that BOTSWANA SERVICES™ as part of its product offering, markets, promotes and on sells Third Party Products and/or Services via the BOTSWANA SERVICES™ Portal as a reseller to Third Party Suppliers and has for these purposes entered into",
+      "1.10 Commencement And Duration 1.10.1 Customer acknowledges and agrees that the Agreement and the BOTSWANA SERVICES™ Terms shall subject to Customer's credit vetting approval, become binding on Customer with effect from the date of receipt of the duly Signed Order Form by BOTSWANA SERVICES™ notwithstanding",
+      "Terms other than those defined within these General Terms will be given their plain English meaning, and those terms, acronyms, and phrases known in the information technology industry will be interpreted in accordance with their generally accepted meanings.",
+      "To the extent that Customer uses any one or more Products and/or Services offered by BOTSWANA SERVICES™, Customer acknowledges that it is bound by the particular Product Terms relating to the Products and/or Services that it uses.",
+      "…spect of the use of Licensed Products by BOTSWANA SERVICES™ as part of its Product and/or Service offering, Customer acknowledges that the Licensed Products are made available on the understanding that such use is subject to the BOTSWANA SERVICES™ Terms.",
+      "Customer acknowledges that BOTSWANA SERVICES™ as part of its Products and/or Services offering utilises the Licensed Products of Third-Party Service Providers in order to ensure quality and effective operation, functionality and use of the Products and/or Services by Customer."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://botswanaservices.com/terms"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Terms and Conditions"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "contact us",
+        "List Business",
+        "Contact Us",
+        "Sign Up!",
+        "Chat with us on WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://botswanaservices.com/terms",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.botswanaservices.com/How%20it%20works.pdf",
+      "label": "Fuente pública 2"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://botswanaservices.com/How%20it%20works.pdf: Contenido no textual: application/pdf",
+    "6 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “contact us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

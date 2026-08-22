@@ -1,0 +1,348 @@
+{
+  "id": "vox-ai",
+  "name": "Vox.ai",
+  "reviewedAt": "2026-08-22T15:50:19.735Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "One voice.Any platform.",
+    "heroObserved": true,
+    "priorSummary": "Plataforma de Voice AI para restauración/QSR: automatiza pedidos en drive-thru y teléfono, integra POS/cocina, pagos y analítica, con soporte para 95+ idiomas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la venta en reversión de riesgo. Usa 61 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 331 palabras por página comercial recuperada. Muestras breves: “One voice.Any platform.” · “Let's start a conversation” · “Hear what your drive-thru hasbeen trying to tell you”.",
+    "supportingHeadings": [
+      "One voice.Any platform.",
+      "Across all your channels.",
+      "Built for restaurants.Not demos.",
+      "The staffing Challenge",
+      "Reality, not demos.",
+      "Mistakes are expensive.",
+      "Speed breaks under pressure.",
+      "One voice. Every order.",
+      "Insights",
+      "Drive",
+      "Pay",
+      "Phone",
+      "We empower your team to make every “hello” count.",
+      "Seamlessly integrated with industry leaders",
+      "Try VOX AI and see for yourself",
+      "Let's start a conversation",
+      "Hear what your drive-thru hasbeen trying to tell you",
+      "Turn every conversation into Insights.",
+      "Find what's breaking your experience",
+      "See every missed upsell opportunity",
+      "Diagnose delay before it costs you",
+      "Turn data into team development",
+      "Simple to deploy. Immediate value.",
+      "See the moments behind the numbers.",
+      "See what your drive-thru is really saying.",
+      "Frequently Asked Questions",
+      "One platform. Full Control.Built-in intelligence",
+      "Don't pay more for getting less",
+      "Fragmented providers",
+      "Opaque pricing"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://vox.ai/",
+      "text": "Contact",
+      "href": "https://vox.ai/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Schedule Request a demo",
+      "Start the live order demo",
+      "Book a Vox Phone demo",
+      "Contact",
+      "Send message"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://vox.ai/contact/",
+        "index": 1,
+        "action": "https://vox.ai/contact/",
+        "method": "GET",
+        "submitText": "Send message",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Full Name*",
+            "placeholder": "Jane Doe",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone Number*",
+            "placeholder": "+1 (555) 555-5555",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Email*",
+            "placeholder": "janedoe@gmail.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company",
+            "placeholder": "Company Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Subject*",
+            "placeholder": "Jane Doe",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Company.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Company"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Plataforma de Voice AI para restauración/QSR: automatiza pedidos en drive-thru y teléfono, integra POS/cocina, pagos y analítica, con soporte para 95+ idiomas.",
+    "audience": "Cadenas y restaurantes QSR con alto volumen de pedidos por drive-thru, teléfono y otros canales.",
+    "prices": [],
+    "guarantee": [
+      "Any technology that can't handle real-world conditions won't survive production.Mistakes are expensive.Order errors lead to food waste, refunds, and lost trust."
+    ],
+    "proof": [],
+    "objections": [
+      "SolutionsAdvantagesImpactPartnersContactOne voice.Any platform.Your branded voice, perfectly delivered across every customer touchpoint.Request a demoUnify all customer interactions into one consistent, human-like experience.Across all your channels.WHY USBuilt for restaurants.Not demos.Voice AI proven in the most demanding real-world environments."
+    ],
+    "urgency": [
+      "…o callLive phone orderYour order will appear here.Subtotal$0.00Tax (8%)$0.00Total$0.00Waiting for a call21:47DDrip CrustToday 21:48Thanks for your order, Sam!",
+      "Analyzed as they happen.Order #1247 · Lane ALiveGUESTCan I get the family combo?STAFFWe're actually out of the large fries right now.GUESTOh… okay, just two burgers then.VOX AI INSIGHTSNo alternative offeredMissed Recovery$4.20 revenue lost on downgradeRevenue LeakageOrder #1248 · Lane BLiveGUESTHi, can I get a chicken",
+      "Vox AI adds the missing layer — real conversations that shaped the outcome, analyzed across every location.Error DetectionFind what's breaking your experienceMissing greetings, menu knowledge gaps, item stock surprises.",
+      "Every friction point logged, timestamped, and categorized automatically.Revenue LeakageSee every missed upsell opportunityMissing greetings, menu knowledge gaps, item stock surprises."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Any technology that can't handle real-world conditions won't survive production.Mistakes are expensive.Order errors lead to food waste, refunds, and lost trust.",
+          "url": "https://vox.ai/",
+          "pageTitle": "VOX AI",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "SolutionsAdvantagesImpactPartnersContactOne voice.Any platform.Your branded voice, perfectly delivered across every customer touchpoint.Request a demoUnify all customer interactions into one consistent, human-like experience.Across all your channels.WHY USBuilt for restaurants.Not demos.Voice AI proven in the most demanding real-world environments.",
+          "url": "https://vox.ai/",
+          "pageTitle": "VOX AI",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://vox.ai/",
+        "https://vox.ai/contact/",
+        "https://vox.ai/insights/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "One voice.Any platform.",
+        "Let's start a conversation",
+        "Hear what your drive-thru hasbeen trying to tell you",
+        "Try VOX AI and see for yourself"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Schedule Request a demo",
+        "Send message",
+        "Start the live order demo",
+        "Book a Vox Phone demo"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://vox.ai/contact/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Schedule Request a demo",
+        "Schedule Request a demo",
+        "Schedule Request a demo",
+        "Schedule Request a demo",
+        "Schedule Request a demo",
+        "Book a Vox Phone demo",
+        "Schedule Request a demo"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada: «Request a demo» en vox.ai. | Cualificación: conversación comercial sobre volumen, canales, hardware/POS y necesidades del restaurante. | Propuesta: despliegue de Voice AI en drive-thru, teléfono y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://vox.ai/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://vox.ai/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://vox.ai/insights/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://vox.ai/drive/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://vox.ai/pay/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://vox.ai/phone/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://vox.ai/privacy-policy/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.vox.ai/terms",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://vox.ai/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,511 @@
+{
+  "id": "lookup-pk",
+  "name": "Lookup.pk",
+  "reviewedAt": "2026-08-22T15:50:18.852Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Lookup.pk | Find, Share, Review",
+    "heroObserved": true,
+    "priorSummary": "Buscar por categoría, ciudad, teléfono, dirección o marca; consultar ficha y contactar. Empresas pueden añadir ficha gratis o solicitar publicidad.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 299 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 875 palabras por página comercial recuperada. Muestras breves: “Lookup.pk | Find, Share, Review” · “CONTACT LOOKUP.PK” · “Fumigation Service in Pakistan. (189 Result(s))”.",
+    "supportingHeadings": [
+      "CONTACT LOOKUP.PK",
+      "CONTACT INFORMATION",
+      "OUR OFFICE LOCATIONS",
+      "Fumigation Service in Pakistan. (189 Result(s))",
+      "One Roof Fumigation Services",
+      "S. Adamjee Services",
+      "Fine House Care Services",
+      "American Fumigation",
+      "Country Care",
+      "A1 Fumigations",
+      "Unique Fumigation Service",
+      "BugOut Fumigation Services",
+      "Prime Fumigation Service",
+      "World Fantastic Services",
+      "Fumigation Service in Pakistan.",
+      "Fumigation Service in Pakistan. (12 Result(s))",
+      "Kaufmann Enterprises (Pvt) Ltd.",
+      "United Human Resource Services (Pvt) Ltd.",
+      "Indus Fumigation",
+      "Termino Pest Management Services",
+      "Chemtech Pest Management Systems",
+      "Call & Call Pest Control",
+      "Pestex",
+      "ECO Services",
+      "Urban Pest Management",
+      "Reviews",
+      "Company Network",
+      "Business Details",
+      "Other Links"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.lookup.pk/",
+      "text": "Contact Us",
+      "href": "https://www.lookup.pk/static/contact-us.aspx",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "CALL NOW",
+      "Call & Call Pest Control",
+      "Careers",
+      "SEND MESSAGE",
+      "Submit Review",
+      "Submit Inquiry",
+      "Report an Error",
+      "I Agree Continue",
+      "Advertise with us"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.lookup.pk/static/contact-us.aspx",
+        "index": 2,
+        "action": "https://www.lookup.pk/static/contact-us.aspx",
+        "method": "POST",
+        "submitText": "SEND MESSAGE",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Example : Ali, Ahmed or etc",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact",
+            "label": null,
+            "placeholder": "Example : 0324-2717xxx",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Example : john@gmai.com or etc",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "city",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "query",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.lookup.pk/company/126873-American-Fumigation",
+        "index": 2,
+        "action": "https://www.lookup.pk/company/126873-American-Fumigation",
+        "method": "POST",
+        "submitText": "Submit Review",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "CompName",
+            "label": "Email",
+            "placeholder": "Ali, Ahmed or etc.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "CNumber",
+            "label": null,
+            "placeholder": "Please enter your contact #",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "Email",
+            "placeholder": "Example : ali@example.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Review",
+            "label": "Review",
+            "placeholder": "please enter your review",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "CompRating",
+            "label": "Bad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.lookup.pk/company/126873-American-Fumigation",
+        "index": 3,
+        "action": "https://www.lookup.pk/company/126873-American-Fumigation",
+        "method": "POST",
+        "submitText": "Submit Inquiry",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "select",
+            "name": "QueryType",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Name",
+            "label": null,
+            "placeholder": "Example : Ali,Ahmed or etc",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Company",
+            "label": null,
+            "placeholder": "Example : TCS or etc",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Number",
+            "label": null,
+            "placeholder": "Example : 021-111453453",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Designation",
+            "label": null,
+            "placeholder": "Example : CEO, Manager or etc",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": null,
+            "placeholder": "Example : john@gmail.com or etc",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "OfficeNumber",
+            "label": null,
+            "placeholder": "Example : 021-111453453",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "City",
+            "label": null,
+            "placeholder": "Example : Karachi,Lahore or etc",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Country",
+            "label": null,
+            "placeholder": "Example : USA,Pakistan or ETC",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Message",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 5 y 10 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: city, Company, City.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 10,
+      "qualification": [
+        "city",
+        "Company",
+        "City"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Buscar por categoría, ciudad, teléfono, dirección o marca; consultar ficha y contactar. Empresas pueden añadir ficha gratis o solicitar publicidad.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "| 4 Star Ranking >> Read Reviews Send a Message +92-321-5111768 United Human Resource Services (Pvt) Ltd.",
+      "| 4 Star Ranking >> Read Reviews CALL NOW Send Message Reviews | 4 Star Ranking aggregated over 1 reviews.",
+      "We help you to communicate with companies to search, find and review their brands, products and services.",
+      "| WRITE A REVIEW Akram Adil Ali on 1/12/2014 3:45:16 PM \"We are satisfied with the work done for us by United HR."
+    ],
+    "objections": [],
+    "urgency": [
+      "| 5 Star Ranking >> Read Reviews CALL NOW Send Message Reviews | 5 Star Ranking aggregated over 4 reviews.",
+      "Multiple Locations VIEW ALL ADDRESSES | 1 Star Ranking >> Read Reviews CALL NOW Send Message Reviews | 1 Star Ranking aggregated over 1 reviews.",
+      "| 4 Star Ranking >> Read Reviews CALL NOW Send Message Reviews | 4 Star Ranking aggregated over 1 reviews.",
+      "They know their trade.\" Zubair Ahmed on 8/1/2013 10:39:01 PM \"We were facing termite issues from last year.",
+      "| 1 Star Ranking >> Read Reviews 1st Floor, Plaza No.",
+      "Landmarks : Ayaz Mehmood Masjid, Caltex Petrol Pump, Fajar Super Store Click to view nearby landmarks City / District : Karachi Phone: +92-21-35888452Mobile: 0300-8254474 CALL NOW Business Details Managed By: Mr."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "We help you to communicate with companies to search, find and review their brands, products and services.",
+          "url": "https://www.lookup.pk/",
+          "pageTitle": "Lookup.pk | Find, Share, Review",
+          "pageCategory": "other"
+        },
+        {
+          "text": "| 4 Star Ranking >> Read Reviews Send a Message +92-321-5111768 United Human Resource Services (Pvt) Ltd.",
+          "url": "https://www.lookup.pk/company/126462-United-Human-Resource-Services-Pvt-Ltd",
+          "pageTitle": "United Human Resource Services (Pvt) Ltd. | Address, Contacts, Reviews @ Lookup.pk",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "| 4 Star Ranking >> Read Reviews CALL NOW Send Message Reviews | 4 Star Ranking aggregated over 1 reviews.",
+          "url": "https://www.lookup.pk/company/126462-United-Human-Resource-Services-Pvt-Ltd",
+          "pageTitle": "United Human Resource Services (Pvt) Ltd. | Address, Contacts, Reviews @ Lookup.pk",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "| WRITE A REVIEW Akram Adil Ali on 1/12/2014 3:45:16 PM \"We are satisfied with the work done for us by United HR.",
+          "url": "https://www.lookup.pk/company/126462-United-Human-Resource-Services-Pvt-Ltd",
+          "pageTitle": "United Human Resource Services (Pvt) Ltd. | Address, Contacts, Reviews @ Lookup.pk",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We help you to communicate with companies to search, find and review their brands, products and services.",
+          "url": "https://www.lookup.pk/company/126462-United-Human-Resource-Services-Pvt-Ltd",
+          "pageTitle": "United Human Resource Services (Pvt) Ltd. | Address, Contacts, Reviews @ Lookup.pk",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.lookup.pk/",
+        "https://www.lookup.pk/static/contact-us.aspx",
+        "https://www.lookup.pk/dynamic/search.aspx?searchtype=cat&class_id=2536"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Lookup.pk | Find, Share, Review",
+        "CONTACT LOOKUP.PK",
+        "Fumigation Service in Pakistan. (189 Result(s))",
+        "Fumigation Service in Pakistan. (12 Result(s))"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Report an Error",
+        "Advertise with us",
+        "SEND MESSAGE",
+        "Careers",
+        "Call & Call Pest Control",
+        "CALL NOW",
+        "Submit Review"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.lookup.pk/static/contact-us.aspx · 5 campos",
+        "https://www.lookup.pk/company/126873-American-Fumigation · 5 campos",
+        "https://www.lookup.pk/company/126873-American-Fumigation · 10 campos",
+        "https://www.lookup.pk/company/126529-Kaufmann-Enterprises-Pvt-Ltd · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.lookup.pk/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.lookup.pk/static/contact-us.aspx",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.lookup.pk/dynamic/search.aspx?searchtype=cat&class_id=2536",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.lookup.pk/dynamic/search.aspx?searchtype=cat&class_id=2536&sorttype=1",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.lookup.pk/company/126873-American-Fumigation",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.lookup.pk/company/126529-Kaufmann-Enterprises-Pvt-Ltd",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.lookup.pk/company/126462-United-Human-Resource-Services-Pvt-Ltd",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.lookup.pk/static/termsofuse",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

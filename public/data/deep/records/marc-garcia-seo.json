@@ -1,0 +1,443 @@
+{
+  "id": "marc-garcia-seo",
+  "name": "Marc García SEO",
+  "reviewedAt": "2026-08-22T15:50:19.145Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "¿Qué necesita tu negocio?",
+    "heroObserved": true,
+    "priorSummary": "SEO local, web y Google Maps; trabaja con una empresa por localidad.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 111 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 528 palabras por página comercial recuperada. Muestras breves: “Consultoría SEO en Directo — 147€” · “¿Qué necesita tu negocio?” · “Tu web profesional desde 97€ al mes”.",
+    "supportingHeadings": [
+      "¿Te gustaría conseguir de 5 a 25 contactos exclusivos al mes?",
+      "¿Te suena alguna de estas situaciones?",
+      "Dependes de Habitissimo",
+      "Vives del boca a boca",
+      "Tu web no genera nada",
+      "Sistema de Captación Web + Google Maps",
+      "Web optimizada para reformas",
+      "Google Maps optimizado",
+      "SEO Local continuo",
+      "Solo trabajo con una empresa por localidad",
+      "Consultar disponibilidad",
+      "Garantía de resultados de 90 días",
+      "Preguntas Frecuentes",
+      "Deja de depender de plataformas. Genera tus propios clientes.",
+      "Consultoría SEO en Directo — 147€",
+      "¿Qué incluye la consultoría?",
+      "60 minutos de análisis en directo contigo",
+      "Revisión de tu ficha de Google",
+      "Detección de errores críticos",
+      "Análisis de visibilidad y competencia",
+      "Estrategia de palabras clave",
+      "Plan de acción paso a paso",
+      "Recomendaciones aplicables",
+      "Lo que dicen mis clientes",
+      "Deja de perder clientes por errores que no sabes que tienes",
+      "Casos de Éxito Reales",
+      "Mellow Shisha Bar",
+      "Qué hicimos",
+      "Kamasot",
+      "Granollers Beauty"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar auditoría gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://marcgarciaseo.es/contacto/",
+      "text": "Solicitar auditoría gratuita",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 203
+    },
+    "ctas": [
+      "Solicitar auditoría gratuita",
+      "Contactar por WhatsApp",
+      "Consultar disponibilidad",
+      "Reservar consultoría ahora →",
+      "Contacto",
+      "Contactar",
+      "Solicitar información",
+      "WhatsApp",
+      "Quiero mi web",
+      "Empezar ahora",
+      "Quiero mi web →",
+      "Quiero mi web SEO",
+      "Quiero web premium",
+      "Quiero más clientes →",
+      "Hablemos de tu negocio →",
+      "Quiero resultados así en mi negocio →"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://marcgarciaseo.es/empresas-reformas/",
+        "index": 1,
+        "action": "https://formspree.io/f/xnjlbkay",
+        "method": "POST",
+        "submitText": "Consultar disponibilidad",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono",
+            "placeholder": "Tu teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ciudad",
+            "label": "Ciudad donde trabajas",
+            "placeholder": "Ej: Sabadell, Terrassa, Barcelona...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://marcgarciaseo.es/contacto/",
+        "index": 1,
+        "action": "https://formspree.io/f/xnjlbkay",
+        "method": "POST",
+        "submitText": "Solicitar auditoría gratuita",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "Tu teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email (opcional)",
+            "placeholder": "tu@email.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "negocio",
+            "label": "Negocio (opcional)",
+            "placeholder": "Tipo de negocio o nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ciudad",
+            "label": "Ciudad (opcional)",
+            "placeholder": "Tu ciudad",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Mensaje *",
+            "placeholder": "Cuéntame brevemente sobre tu negocio, qué objetivos tienes y cómo puedo ayudarte...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 3 y 6 campos visibles, mínimo 3 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Ciudad donde trabajas, Ciudad (opcional).",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 6,
+      "qualification": [
+        "Ciudad donde trabajas",
+        "Ciudad (opcional)"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "SEO local, web y Google Maps; trabaja con una empresa por localidad.",
+    "audience": "Empresas de reformas.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "…n 6 meses Qué hicimos Creación de ficha desde cero Optimización completa Superación de competidores en 6 meses ¿Quieres resultados así en tu negocio?",
+      "Optimización de tu ficha de Google Maps Posicionamiento en búsquedas locales de tu zona Más llamadas, más clientes, más facturación Informe mensual para que veas los resultados Desde 147€ al mes Ver planes de SEO Local → 3 planes disponibles Consultoría SEO ¿Tienes dudas y",
+      "Diseño profesional a medida para tu negocio Hosting, dominio y mantenimiento incluido Optimizada para SEO desde el primer día Sin coste inicial, sin permanencia Desde 97€ al mes Ver planes de Diseño Web → 3 planes disponibles Servicio estrella SEO Local ¿Tus clientes buscan en",
+      "Ayudo a negocios locales a conseguir más clientes.",
+      "Elige el servicio que mejor se adapta a tu situación y empieza a conseguir más clientes.",
+      "Con la suscripción mensual te diseño una web a medida, optimizada para Google y lista para recibir clientes."
+    ],
+    "objections": [
+      "Diseño profesional a medida para tu negocio Hosting, dominio y mantenimiento incluido Optimizada para SEO desde el primer día Sin coste inicial, sin permanencia Desde 97€ al mes Ver planes de Diseño Web → 3 planes disponibles Servicio estrella SEO Local ¿Tus clientes buscan en"
+    ],
+    "urgency": [
+      "Plazas limitadas cada semana Solo acepto 5 consultorías nuevas por semana para garantizar calidad.",
+      "147€ Reservar consultoría ahora → Sin permanencias · Sesión en directo · Resultados aplicables desde el día 1 Marc García.",
+      "247 €/mes Sin permanencia Empezar ahora Todo lo de Presencia Digital, más: 4 publicaciones mensuales en la ficha Estudio de palabras clave de tu zona Optimización web para SEO Local Presencia en webs y portales de tu se…",
+      "…sual Gestión de Google Ads local Informes avanzados con KPIs detallados Reunión mensual de seguimiento Soporte premium ilimitado +50 Negocios ayudados 4.9 Valoración media Top 3 Objetivo de posición 3-6 Meses para resultados FAQ Preguntas Frecuentes Resuelvo las dudas más habituales sobre el servicio de SE…",
+      "Reservar consultoría ahora → 60 minutos en directo Plan de acción incluido Grabación incluida Todo incluido ¿Qué incluye la consultoría?",
+      "Consulta ahora si tu ciudad está disponible."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…ca a boca Después • x4 reservas mensuales • Agenda completa • Reservas directas desde Google Maps x4 Reservas mensuales Clientes reservan directamente desde Google Maps Qué hicimos Optimización ficha Google Búsquedas transaccionales Resultado validado Estética Granollers Granollers Beauty Centro de estética…",
+          "url": "https://marcgarciaseo.es/casos-de-exito/",
+          "pageTitle": "Casos de Éxito SEO Local | Resultados Reales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…n 6 meses Qué hicimos Creación de ficha desde cero Optimización completa Superación de competidores en 6 meses ¿Quieres resultados así en tu negocio?",
+          "url": "https://marcgarciaseo.es/casos-de-exito/",
+          "pageTitle": "Casos de Éxito SEO Local | Resultados Reales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Ayudo a negocios locales a conseguir más clientes.",
+          "url": "https://marcgarciaseo.es/casos-de-exito/",
+          "pageTitle": "Casos de Éxito SEO Local | Resultados Reales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Servicios SEO Local Diseño Web Consultoría SEO Mentoría SEO Empresa Sobre Mí Casos de Éxito Blog Contacto Legal Aviso Legal Política de Privacidad Política de Cookies Términos y Condiciones Política de Reembolsos © 2025 Marc García SEO.",
+          "url": "https://marcgarciaseo.es/casos-de-exito/",
+          "pageTitle": "Casos de Éxito SEO Local | Resultados Reales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Elige el servicio que mejor se adapta a tu situación y empieza a conseguir más clientes.",
+          "url": "https://marcgarciaseo.es/servicios/",
+          "pageTitle": "Servicios SEO Local y Diseño Web | Marc García",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Con la suscripción mensual te diseño una web a medida, optimizada para Google y lista para recibir clientes.",
+          "url": "https://marcgarciaseo.es/servicios/",
+          "pageTitle": "Servicios SEO Local y Diseño Web | Marc García",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Diseño profesional a medida para tu negocio Hosting, dominio y mantenimiento incluido Optimizada para SEO desde el primer día Sin coste inicial, sin permanencia Desde 97€ al mes Ver planes de Diseño Web → 3 planes disponibles Servicio estrella SEO Local ¿Tus clientes buscan en",
+          "url": "https://marcgarciaseo.es/servicios/",
+          "pageTitle": "Servicios SEO Local y Diseño Web | Marc García",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Optimización de tu ficha de Google Maps Posicionamiento en búsquedas locales de tu zona Más llamadas, más clientes, más facturación Informe mensual para que veas los resultados Desde 147€ al mes Ver planes de SEO Local → 3 planes disponibles Consultoría SEO ¿Tienes dudas y",
+          "url": "https://marcgarciaseo.es/servicios/",
+          "pageTitle": "Servicios SEO Local y Diseño Web | Marc García",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Diseño profesional a medida para tu negocio Hosting, dominio y mantenimiento incluido Optimizada para SEO desde el primer día Sin coste inicial, sin permanencia Desde 97€ al mes Ver planes de Diseño Web → 3 planes disponibles Servicio estrella SEO Local ¿Tus clientes buscan en",
+          "url": "https://marcgarciaseo.es/servicios/",
+          "pageTitle": "Servicios SEO Local y Diseño Web | Marc García",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://marcgarciaseo.es/empresas-reformas/",
+        "https://marcgarciaseo.es/consultoria-seo/",
+        "https://marcgarciaseo.es/casos-de-exito/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Consultoría SEO en Directo — 147€",
+        "¿Qué necesita tu negocio?",
+        "Tu web profesional desde 97€ al mes",
+        "Posicionamiento SEO Local y Google Maps desde 147€/mes"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contactar",
+        "Consultar disponibilidad",
+        "Contacto",
+        "WhatsApp",
+        "Contactar por WhatsApp",
+        "Reservar consultoría ahora →",
+        "Quiero resultados así en mi negocio →",
+        "Hablemos de tu negocio →"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://marcgarciaseo.es/empresas-reformas/ · 3 campos",
+        "https://marcgarciaseo.es/contacto/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing vertical de reformas → CTA «Consultar disponibilidad en mi ciudad» → formulario nombre/teléfono/ciudad → comprobación de exclusividad territorial (solo una empresa por localidad) → implantación"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://marcgarciaseo.es/empresas-reformas/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://marcgarciaseo.es/consultoria-seo/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://marcgarciaseo.es/casos-de-exito/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://marcgarciaseo.es/servicios/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://marcgarciaseo.es/diseno-web/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://marcgarciaseo.es/seo-local/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://marcgarciaseo.es/contacto/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://marcgarciaseo.es/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar auditoría gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

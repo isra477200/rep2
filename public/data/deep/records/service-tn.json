@@ -1,0 +1,325 @@
+{
+  "id": "service-tn",
+  "name": "Service.tn",
+  "reviewedAt": "2026-08-22T15:50:18.343Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Nous contacter",
+    "heroObserved": true,
+    "priorSummary": "Directorio nacional para buscar profesionales por servicio/ciudad, comparar rating y verificación, contactar directamente o publicar una solicitud; no procesa pagos ni cobra comisión.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, conciso, orientado a la acción. Usa 69 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 204 palabras por página comercial recuperada. Muestras breves: “Trouvez des professionnels de confiance en Tunisie” · “Nous contacter” · “Rechercher des services”.",
+    "supportingHeadings": [
+      "Trouvez des professionnels de confiance en Tunisie",
+      "Catégories populaires",
+      "Professionnels à la une",
+      "hygiene 4D",
+      "Explorer par gouvernorat",
+      "Comment ça marche",
+      "Découvrir",
+      "Comparer",
+      "Contacter",
+      "Questions fréquentes",
+      "Prenez le contrôle de votre présence digitale",
+      "Explorer",
+      "Entreprise",
+      "Légal",
+      "Nous contacter",
+      "Rechercher des services",
+      "Filtres",
+      "Maison en bois tunis",
+      "Tunisie Abris Piscin",
+      "Tunisie Panneaux",
+      "Ste ALLUBOIS Ariana",
+      "Hydropro Tunisie",
+      "Hometech Tunisie",
+      "Alpha Marbre Tunisie",
+      "ACBAT SFAX",
+      "spi-tunisie",
+      "Tunisie Transformate",
+      "STQ Société tunisien",
+      "Mapiscine Tunis",
+      "FAQ"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://service.tn/fr",
+      "text": "Contact",
+      "href": "https://service.tn/fr/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223.25
+    },
+    "ctas": [
+      "Contact",
+      "tous",
+      "Envoyer",
+      "Effacer",
+      "Appliquer",
+      "Réinitialiser",
+      "Créer un compte",
+      "Services à domicile"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://service.tn/fr/contact",
+        "index": 1,
+        "action": null,
+        "method": "GET",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "input",
+            "name": "name",
+            "label": "Nom",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 3 y 3 campos visibles, mínimo 3 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 3,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Directorio nacional para buscar profesionales por servicio/ciudad, comparar rating y verificación, contactar directamente o publicar una solicitud; no procesa pagos ni cobra comisión.",
+    "audience": "Consumidores y empresas tunecinas; proveedores de hogar, salud, educación, legal, retail, viajes y otras categorías.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "…VICE.TNVotre Guide des Services en TunisieRechercheCatégoriesBlogÀ proposContactMon entrepriseConnexionCréer un comptefrFAQRéponses aux questions fréquentes sur Service.tn.Comment trouver un professionnel ?Utilisez la recherche ou parcourez catégories et villes, puis contactez le prestataire.Comment ré…"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…VICE.TNVotre Guide des Services en TunisieRechercheCatégoriesBlogÀ proposContactMon entrepriseConnexionCréer un comptefrFAQRéponses aux questions fréquentes sur Service.tn.Comment trouver un professionnel ?Utilisez la recherche ou parcourez catégories et villes, puis contactez le prestataire.Comment ré…",
+          "url": "https://service.tn/fr/faq",
+          "pageTitle": "FAQ | Service.tn",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Réclamez votre profil, faites-vous vérifier et développez votre activité.ExplorerRechercheCatégoriesPublier une demandeEntrepriseÀ proposBlogContactFAQLégalConditionsConfidentialitéCookies© 2026 Service.tn – Tous droits réservésConçu pour la Tunisie",
+          "url": "https://service.tn/fr/faq",
+          "pageTitle": "FAQ | Service.tn",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://service.tn/fr",
+        "https://service.tn/fr/contact",
+        "https://service.tn/fr/search?category=home-services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Trouvez des professionnels de confiance en Tunisie",
+        "Nous contacter",
+        "Rechercher des services",
+        "Catégories"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Créer un compte",
+        "Envoyer",
+        "Services à domicile",
+        "Effacer",
+        "tous",
+        "Appliquer",
+        "Réinitialiser"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://service.tn/fr/contact · 3 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Buscar servicio/ciudad o publicar demanda → comparar perfil/rating/verificación → contactar directamente → negociar y contratar fuera de plataforma."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://service.tn/fr",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://service.tn/fr/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://service.tn/fr/search?category=home-services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://service.tn/fr/faq",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://service.tn/fr/about",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://service.tn/fr/search",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://service.tn/fr/categories",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://service.tn/en",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=service.tn",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=service.tn&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://service.tn/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://service.tn/",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

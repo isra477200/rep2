@@ -1,0 +1,434 @@
+{
+  "id": "b8ak",
+  "name": "B8ak / بيتك",
+  "reviewedAt": "2026-08-22T15:50:18.309Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "مرحبا بك في بيتك",
+    "heroObserved": true,
+    "priorSummary": "Más de 50 servicios domésticos en una app, proveedores verificados, ofertas permanentes y garantía de hasta 30 días.",
+    "voice": "Tono cuantitativo, enérgico, apoya la venta en reversión de riesgo. Usa 66 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 363 palabras por página comercial recuperada. Muestras breves: “مرحبا بك في بيتك” · “التكييف” · “مدونة بيتك”.",
+    "supportingHeadings": [
+      "مرحبا بك في بيتك",
+      "لماذا تطبيق بيتك؟",
+      "حمل التطبيق و استمتع بخصم 10% على طلبك الأول مع كود \"B10\"",
+      "الخدمات المنزلية الشائعة",
+      "تنظيف مكيفات",
+      "التسريبات و الانسدادات",
+      "مكافحة حشرات العامة",
+      "تحويل الجهد الكهربائي",
+      "كيف يعمل؟",
+      "أختر الخدمة المناسبة لك",
+      "إختر وقت الزيارة و مزود الخدمات المناسب لك",
+      "استرخ و ريح بالك!",
+      "مقالات منزلية تهمك",
+      "6 أمور يجب عملها في بيتك لحمايتك من خطر الحرائق في بيتك",
+      "5 حركات ذكية في بيتك راح تخلي حياتك أسهل و بتكاليف بسيطة (تهكيرات المنزل)",
+      "6 نصائح يجب إتباعها لوقايتك من فيروس كورونا عند الخروج من بيتك.",
+      "6 طرق تساعدك على الوقاية من فيروس كورونا خلال فترة الحجر المنزلي",
+      "التكييف",
+      "تركيب مكيفات",
+      "نقل و تركيب المكيفات",
+      "تنظيف المكيفات",
+      "تعبئة الفريون",
+      "اصلاح الأعطال",
+      "صيانة شاملة دورية لأجهزة التكييف",
+      "الأجهزة المنزلية",
+      "الثلاجات",
+      "الأفران الكهربائية و الغازية",
+      "غسالات و نشافات الملابس",
+      "غسالات الصحون",
+      "سخانات المياه"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "ارسال"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://b8ak.com/%d8%aa%d9%88%d8%a7%d8%b5%d9%84-%d9%85%d8%b9%d9%86%d8%a7/",
+        "index": 1,
+        "action": "https://b8ak.com/%d8%aa%d9%88%d8%a7%d8%b5%d9%84-%d9%85%d8%b9%d9%86%d8%a7/",
+        "method": "POST",
+        "submitText": "ارسال",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0]",
+            "label": null,
+            "placeholder": "اسمك (مطلوب)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": null,
+            "placeholder": "بريدك الالكتروني (مطلوب)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][4]",
+            "label": null,
+            "placeholder": "رقم هاتفك",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": null,
+            "placeholder": "الموضوع (مطلوب)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][2]",
+            "label": null,
+            "placeholder": "الرسالة (مطلوبة)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[hp]",
+            "label": "Comment",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Más de 50 servicios domésticos en una app, proveedores verificados, ofertas permanentes y garantía de hasta 30 días.",
+    "audience": "Hogares que necesitan mantenimiento, climatización, electrodomésticos, fontanería, electricidad, pintura o control de plagas.",
+    "prices": [],
+    "guarantee": [
+      "ضمان على الخدمات ضمان على الخدمات يصل حتى 30 يوم!"
+    ],
+    "proof": [],
+    "objections": [
+      "Toggle navigation الصفحة الرئيسية جميع الخدمات المدونة تواصل معنا الأسئلة الشائعة من نحن اشترك كمزود خدمة مرحبا بك في بيتك اطلب خدمات الصيانة و العناية لمنزلك من أفضل محترفي الخدمات في منطقتك."
+    ],
+    "urgency": [
+      "حمل التطبيق و استمتع بخصم 10% على طلبك الأول مع كود \"B10\"حمل التطبيق الآن الخدمات المنزلية الشائعة تنظيف مكيفات المكيفات اقرأ المزيد التسريبات و الانسدادات السباكة اقرأ المزيد مكافحة حشرات العامة مكافحة الحشرات اقرأ المزيد تحويل الجهد الكهربائي كهرباء ا…"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…ربة الفيروس يجب ان نتكاتف معا لأجل إنهاء هذا الوباء، قد يستهين البعض بهذا الفيروس اقرأ المزيد Posted By - بيتك Date - مارس 29, 2020 6 طرق تساعدك على الوقاية من فيروس كورونا خلال فترة الحجر المنزلي لابد من اخذ الحيطة و الحذر من أن نصاب بفيروس كورونا ولأننا في تطبيق بيتك نعمل على تقديم خدماتنا بمستوى عالي جداً من…",
+          "url": "https://b8ak.com/",
+          "pageTitle": "بيتك – +50 خدمة صيانة لبيتك بأفضل الأسعار مع ضمان على الخدمات",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "ضمان على الخدمات ضمان على الخدمات يصل حتى 30 يوم!",
+          "url": "https://b8ak.com/",
+          "pageTitle": "بيتك – +50 خدمة صيانة لبيتك بأفضل الأسعار مع ضمان على الخدمات",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Toggle navigation الصفحة الرئيسية جميع الخدمات المدونة تواصل معنا الأسئلة الشائعة من نحن اشترك كمزود خدمة مرحبا بك في بيتك اطلب خدمات الصيانة و العناية لمنزلك من أفضل محترفي الخدمات في منطقتك.",
+          "url": "https://b8ak.com/",
+          "pageTitle": "بيتك – +50 خدمة صيانة لبيتك بأفضل الأسعار مع ضمان على الخدمات",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://b8ak.com/",
+        "https://b8ak.com/%d8%ac%d9%85%d9%8a%d8%b9-%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a7%d8%aa/",
+        "https://b8ak.com/%d8%a7%d9%84%d9%85%d8%af%d9%88%d9%86%d8%a9/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "مرحبا بك في بيتك",
+        "التكييف",
+        "مدونة بيتك",
+        "تواصل معنا"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "ارسال"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://b8ak.com/%d8%aa%d9%88%d8%a7%d8%b5%d9%84-%d9%85%d8%b9%d9%86%d8%a7/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "SEO/web → descarga de app → elección de servicio → selección de horario y proveedor → prestación → garantía 30 días → valoración; incentivo de primera compra B10"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://b8ak.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://b8ak.com/%d8%ac%d9%85%d9%8a%d8%b9-%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a7%d8%aa/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://b8ak.com/%d8%a7%d9%84%d9%85%d8%af%d9%88%d9%86%d8%a9/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://b8ak.com/%d8%aa%d9%88%d8%a7%d8%b5%d9%84-%d9%85%d8%b9%d9%86%d8%a7/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://b8ak.com/%d8%a7%d9%84%d8%a3%d8%b3%d8%a6%d9%84%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d8%a6%d8%b9%d8%a9/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://b8ak.com/%d9%85%d9%86-%d9%86%d8%ad%d9%86-2/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://b8ak.com/%d8%aa%d9%86%d8%b8%d9%8a%d9%81-%d8%a7%d9%84%d9%85%d9%83%d9%8a%d9%81%d8%a7%d8%aa/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://b8ak.com/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9-lp/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=1397608447230887",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=b8ak.com",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?id=793399269921444",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?id=1533108644897175",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.facebook.com/ads/library/?id=26907307762226440",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=1318790113483485",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.facebook.com/ads/library/?id=975857978461659",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.facebook.com/ads/library/?id=2514791468916332",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://www.facebook.com/ads/library/?id=3018507981688742",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://www.facebook.com/ads/library/?id=1567846181517924",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://www.facebook.com/ads/library/?id=1079505921037113",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://www.facebook.com/ads/library/?id=34969311062716170",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://www.facebook.com/ads/library/?id=892800203681094",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.facebook.com/ads/library/?id=4194927630651120",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://www.facebook.com/ads/library/?id=26794326713591211",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?id=741372379044396",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://www.facebook.com/ads/library/?id=1349296467330852",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.facebook.com/ads/library/?id=1266330132338779",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://www.facebook.com/ads/library/?id=1426852375392102",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?id=1639213510525166",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://www.facebook.com/ads/library/?id=1555556908831067",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?id=1523682598693298",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

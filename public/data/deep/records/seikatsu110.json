@@ -1,0 +1,349 @@
+{
+  "id": "seikatsu110",
+  "name": "Seikatsu110",
+  "reviewedAt": "2026-08-22T15:50:20.093Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "利用規約",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, consultivo / basado en preguntas, orientado a la acción. Usa 516 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 439 palabras por página comercial recuperada. Muestras breves: “無料ご相談窓口” · “利用規約” · “お庭の手入れ業者”.",
+    "supportingHeadings": [
+      "生活110番とは？",
+      "あなたの地域で対応できる業者を、検索・ご紹介するサービスです",
+      "サービス満足度",
+      "とにかく早い！",
+      "とっても安心！",
+      "豊富なジャンル",
+      "ご利用の流れ",
+      "まずは検索！",
+      "電話・LINE・メールで相談",
+      "お近くの業者をご紹介",
+      "＼ お電話一本で、すぐにご紹介 ／",
+      "新着の口コミ",
+      "サービスカテゴリ一覧",
+      "サービスカテゴリ",
+      "生活110番とは",
+      "加盟希望",
+      "無料ご相談窓口",
+      "利用規約",
+      "よくあるご質問",
+      "はじめてご利用される方へ",
+      "費用・お支払いについて",
+      "サービスについて",
+      "連絡方法について",
+      "作業について",
+      "キャンセル・変更について",
+      "加盟店登録・掲載について",
+      "その他",
+      "お庭の手入れ業者",
+      "お近くの地域でお庭の手入れを探す 業者数： 10,702件",
+      "北海道・東北地方"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "お問い合わせ",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.seikatsu110.jp/about/",
+      "text": "お問い合わせ",
+      "href": "https://www.seikatsu110.jp/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.5
+    },
+    "ctas": [
+      "お問い合わせ",
+      "送信する",
+      "ページトップへ戻る"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.seikatsu110.jp/contact/",
+        "index": 1,
+        "action": "https://www.seikatsu110.jp/contact/",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "customer_name",
+            "label": "お名前 必須",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "customer_tel",
+            "label": "お電話番号 必須",
+            "placeholder": "ハイフン無しでご記入ください",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "situation[0]",
+            "label": "ご相談カテゴリ",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "situation[1]",
+            "label": "ご相談内容 必須",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacy",
+            "label": "利用規約、個人情報の取り扱い 必須",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "第8条 （お客様と加盟店の契約） 当社は、お客様と加盟店との取引契約の成否およびその履行､加盟店が提供する商品・サービス等の内容､質等に関しては、当社がこれらの当事者にならないことから、一切の保証ができません。お客様に対し、これらに関する一切の責任を負いかねますのであらかじめご了承のうえご利用ください。",
+          "url": "https://www.seikatsu110.jp/terms-of-service/",
+          "pageTitle": "利用規約｜生活110番",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "本サービスの提供に必要な設備の点検または保守作業を行う場合 コンピュータ、通信回線等が事故により停止した場合 火災、停電、天災地変、感染症の流行等の不可抗力により本サービスを提供できない場合 本サービスの提供に必要なデータのバックアップ等を行なう場合 当社において本サービスの停止または中断が必要と合理的に判断した場合 その他、運用上または技術上の理由でやむを得ない場合 第11条 （広告等） 当社は、本サービスに関するウェブサイトやパンフレット等に第三者の提供する広告を掲載できるものとします。なお、当該広告は広告提供者の責任で掲載されるものであり、当社はその正確性、適法性等については保証できません。",
+          "url": "https://www.seikatsu110.jp/terms-of-service/",
+          "pageTitle": "利用規約｜生活110番",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "ご利用の際の料金を保証するものではありませんのでご注意ください。",
+          "url": "https://www.seikatsu110.jp/service/garden/",
+          "pageTitle": "お庭の手入れ｜おすすめ業者を料金と口コミで比較｜生活110番",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "ご利用の際の料金を保証するものではありませんのでご注意ください。",
+          "url": "https://www.seikatsu110.jp/service/vermin/",
+          "pageTitle": "害虫駆除・対策｜おすすめ業者を料金と口コミで比較｜生活110番",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "保証がついてるので安心して過ごすことが出来ます。",
+          "url": "https://www.seikatsu110.jp/service/animal/",
+          "pageTitle": "害獣駆除・対策｜おすすめ業者を料金と口コミで比較｜生活110番",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "ご利用の際の料金を保証するものではありませんのでご注意ください。",
+          "url": "https://www.seikatsu110.jp/service/animal/",
+          "pageTitle": "害獣駆除・対策｜おすすめ業者を料金と口コミで比較｜生活110番",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        }
+      ],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.seikatsu110.jp/about/",
+        "https://www.seikatsu110.jp/contact/",
+        "https://www.seikatsu110.jp/terms-of-service/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "無料ご相談窓口",
+        "利用規約",
+        "お庭の手入れ業者",
+        "害虫駆除業者"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "お問い合わせ",
+        "送信する",
+        "ページトップへ戻る"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.seikatsu110.jp/contact/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.seikatsu110.jp/about/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.seikatsu110.jp/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.seikatsu110.jp/terms-of-service/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.seikatsu110.jp/faq/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.seikatsu110.jp/service/garden/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.seikatsu110.jp/service/vermin/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.seikatsu110.jp/service/animal/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://www.sharing-tech.co.jp/service",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.sharing-tech.co.jp/service/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “お問い合わせ”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

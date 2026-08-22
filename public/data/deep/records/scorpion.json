@@ -1,0 +1,371 @@
+{
+  "id": "scorpion",
+  "name": "Scorpion",
+  "reviewedAt": "2026-08-22T15:50:17.659Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "RevenueMAX promete más trabajos e ingresos sin adivinanzas, conectando marketing, IA y datos de negocio.",
+    "heroObserved": false,
+    "priorSummary": "RevenueMAX: plataforma + equipo de marketing vertical para generar leads, reservar trabajos/citas y atribuir ingresos. Integra Ads, SEO/AI ranking, web/landings, Leads AI, chat/agent 24/7, scheduling, reputación, reporting y Capacity Marketing Engine.",
+    "voice": "Revisión manual: ambicioso, dominante, orientado a revenue, tecnológico, sectorial. Repite maximize, growth y revenue. Desplaza el KPI desde lead a trabajo e ingreso. Presenta IA como automatización integrada y no como herramienta aislada.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "RevenueMAX: plataforma + equipo de marketing vertical para generar leads, reservar trabajos/citas y atribuir ingresos. Integra Ads, SEO/AI ranking, web/landings, Leads AI, chat/agent 24/7, scheduling, reputación, reporting y Capacity Marketing Engine.",
+    "audience": "Negocios locales de EE. UU. de alto valor: home services/oficios, legal, salud, dental, franquicias y multi-location.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "YouTube Ads",
+        "SEO / contenido",
+        "Email",
+        "Partners / afiliación"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página por vertical → reservar reunión → consultoría y plan RevenueMAX → Ads/LSA/SEO/web/landing generan llamada, formulario o chat → Leads AI puntúa y resume calidad → Scorpion Connect/Convert"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Demanda [observado] → Contacto comercial [inferido] → Integración [observado] → Captura y respuesta [observado] → Capacidad [observado] → Cierre [inferido] → Atribución [observado] → Optimización [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.scorpion.co/home-services/marketing-solutions/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.scorpion.co/law-firms/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.scorpion.co/landscaping/marketing-solutions/platform-and-reporting/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.scorpion.co/how-we-help/video-services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.scorpion.co/",
+      "label": "Fuente pública 5"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.scorpion.co/: HTTP 403",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "RevenueMAX promete más trabajos e ingresos sin adivinanzas, conectando marketing, IA y datos de negocio.",
+      "promise": "Medir cada lead hasta el ingreso, responder y reservar 24/7, y ajustar gasto cuando la agenda se llena o necesita trabajo.",
+      "positioning": "Plataforma y agencia integral de crecimiento para home services, franquicias y firmas legales",
+      "audience": "Empresas de servicios del hogar, redes de franquicia y firmas con volumen, agenda y datos operativos integrables.",
+      "voice": [
+        "ambicioso",
+        "dominante",
+        "orientado a revenue",
+        "tecnológico",
+        "sectorial"
+      ],
+      "patterns": [
+        "Repite maximize, growth y revenue.",
+        "Desplaza el KPI desde lead a trabajo e ingreso.",
+        "Presenta IA como automatización integrada y no como herramienta aislada."
+      ]
+    },
+    "cta": {
+      "primary": "Get Started",
+      "secondary": [
+        "Book a Meeting",
+        "Schedule a Consultation"
+      ],
+      "forms": [
+        {
+          "url": "https://www.scorpion.co/home-services/get-started/",
+          "purpose": "Captura o contacto",
+          "fields": [],
+          "fieldCount": 5,
+          "friction": "no evaluable; el índice oficial expone cinco inputs pero el bloqueo 403 impidió confirmar etiquetas y validaciones",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Demanda",
+        "status": "observado",
+        "detail": "SEO, contenidos, publicidad, social y sitio generan atención y leads sectoriales."
+      },
+      {
+        "stage": "Contacto comercial",
+        "status": "inferido",
+        "detail": "Get Started o Book a Meeting conduce a evaluación y propuesta."
+      },
+      {
+        "stage": "Integración",
+        "status": "observado",
+        "detail": "Datos de CRM, leads, agenda y resultados alimentan la plataforma y el presupuesto."
+      },
+      {
+        "stage": "Captura y respuesta",
+        "status": "observado",
+        "detail": "Leads AI resume y puntúa; Scorpion Connect contesta, informa, agenda y acepta pagos 24/7."
+      },
+      {
+        "stage": "Capacidad",
+        "status": "observado",
+        "detail": "El motor reduce o aumenta inversión según disponibilidad de agenda."
+      },
+      {
+        "stage": "Cierre",
+        "status": "inferido",
+        "detail": "El equipo del cliente convierte reservas en trabajos y registra estados e ingresos."
+      },
+      {
+        "stage": "Atribución",
+        "status": "observado",
+        "detail": "Revenue Intelligence relaciona comunidad, servicio y cliente con trabajo e ingreso."
+      },
+      {
+        "stage": "Optimización",
+        "status": "observado",
+        "detail": "Los resultados realimentan targeting, presupuesto y marketing."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "fee — personalizado según objetivos y alcance"
+      ],
+      "contract": [
+        "marketing, tecnología y SEO — normalmente 12 meses",
+        "publicidad digital — típicamente mes a mes"
+      ],
+      "guarantee": [
+        "resultado — no se observó garantía general de leads, trabajos, ingreso o ROI"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Cloudflare",
+      "RevenueMAX, Leads AI, Revenue Intelligence, Scorpion Connect, Capacity Marketing Engine, Ranking AI y Reputation AI",
+      "Google, Meta y Microsoft Advertising",
+      "AccuLynx, LeadDocket, Filevine y Clio"
+    ],
+    "contradictions": [
+      "La duración cambia por componente: la tecnología y SEO suelen ser anuales, mientras publicidad puede ser mensual; una frase general sobre contrato sería engañosa.",
+      "Conocer automáticamente el valor de cada lead depende de que CRM, estados, importes e integraciones estén completos y correctos.",
+      "No guesswork y maximum revenue son promesas de posicionamiento, no una garantía contractual pública.",
+      "Las métricas agregadas mezclan sectores, tamaños y periodos, por lo que no predicen el resultado de un cliente concreto."
+    ],
+    "inferences": [
+      "Contacto comercial: Get Started o Book a Meeting conduce a evaluación y propuesta.",
+      "Cierre: El equipo del cliente convierte reservas en trabajos y registra estados e ingresos."
+    ],
+    "notObservable": [
+      "precio",
+      "mínimo de medios",
+      "SLA",
+      "criterio exacto de lead score",
+      "campos del formulario",
+      "derechos sobre activos y datos",
+      "remedio por resultados insuficientes",
+      "implementación técnica de IA",
+      "modelos",
+      "almacén de datos",
+      "proveedor de telefonía",
+      "tracking del formulario",
+      "No se verificaron calendario, respuesta comercial, evaluación gratuita, propuesta o cadencia."
+    ],
+    "limitations": [
+      "La protección oficial bloqueó la descarga directa con HTTP 403.",
+      "El formulario se vio solo de forma parcial en el índice oficial.",
+      "No se obtuvo propuesta, contrato o demo.",
+      "Cifras y testimonios son autodeclarados y no deben extrapolarse entre verticales."
+    ],
+    "lessons": {
+      "copy": [
+        "Cambiar el centro del discurso de leads a trabajos e ingreso.",
+        "Nombrar módulos por resultado operativo."
+      ],
+      "adapt": [
+        "Control de inversión por capacidad real de agenda.",
+        "Atribución por zona, servicio, cliente y valor de vida.",
+        "Respuesta, reserva y recuperación integradas en el mismo sistema."
+      ],
+      "avoid": [
+        "Prometer atribución automática sin exigir higiene de CRM.",
+        "Mezclar métricas de múltiples verticales.",
+        "Ocultar desde el inicio que algunos módulos requieren 12 meses."
+      ],
+      "test": [
+        "Presupuesto que sigue capacidad frente a presupuesto mensual fijo.",
+        "Scoring por calidad frente a scoring por ingreso esperado.",
+        "Oferta modular mensual frente a suite anual."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.scorpion.co/home-services/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/home-services/marketing-solutions/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/home-services/marketing-solutions/platform-and-reporting/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/home-services/marketing-solutions/revenue-intelligence/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/franchises/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/franchises/marketing-solutions/leads-ai/",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/about-us/scorpion-news/scorpion-news/2024/scorpion-launches-revenuemax-for-law-firms-creat/",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.scorpion.co/home-services/get-started/",
+        "label": "Fuente manual 8",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "manual_only"
+}

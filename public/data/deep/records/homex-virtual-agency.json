@@ -1,0 +1,842 @@
+{
+  "id": "homex-virtual-agency",
+  "name": "Homex Virtual Agency",
+  "reviewedAt": "2026-08-22T15:50:18.017Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Se distancia del call center genérico y vende equipos anglófonos de Kosovo adaptados a cada operación estadounidense.",
+    "heroObserved": true,
+    "priorSummary": "Equipos remotos de habla inglesa para ventas, cold calling, reactivación de leads, appointment setting, soporte, marketing y operaciones; orientados sobre todo a EE. UU.",
+    "voice": "Revisión manual: humano, operativo, flexible, orientado a ahorro, internacional. Insiste en equipo personalizado frente a call center. Convierte huso horario, cantidad de agentes y duración en variables de alcance. Apoya el argumento de coste con comparación frente a contratación estadounidense.",
+    "supportingHeadings": [
+      "[email protected]",
+      "+1 (267) 287 3073",
+      "Not Just Outsourced. Outperformed.",
+      "Virtual Assistant Agency for Cold Calling, Sales & Support",
+      "Trusted Virtual Assistant Agency for Sales & Support",
+      "How we can help",
+      "Sales Support",
+      "Customer Experience",
+      "Lead Generation",
+      "Back Office Assistance",
+      "Flexible Solutions, Built Around You",
+      "Industries we serve",
+      "Listen to a Cold Call",
+      "Don't just take our word for it",
+      "Hayford M.",
+      "MyKingHomes",
+      "Maxine R.",
+      "Jordan L",
+      "Jahim T.",
+      "News and press releases",
+      "Ready to chat with us?",
+      "SITEMAP",
+      "HELPFUL LINKS",
+      "CONTACT US",
+      "Contact",
+      "Let's connect",
+      "Explore our frequently asked questions",
+      "Find Us Near You",
+      "Explore our network of offices and service centers",
+      "Benefits of Outsourcing: Cost Savings, ROI & Strategic Growth (2026 Guide)"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://homexcall.com/",
+      "text": "Contact",
+      "href": "https://homexcall.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Request a free strategy call",
+      "Book a Meeting",
+      "Contact",
+      "Contact us",
+      "Send Request",
+      "REQUEST A QUOTE",
+      "Request a Quote",
+      "Whatsapp",
+      "WhatsApp",
+      "Start Your Career Today",
+      "Send",
+      "submit",
+      "Let's Talk",
+      "Talk to Sales"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://homexcall.com/contact/",
+        "index": 1,
+        "action": "https://homexcall.com/contact/",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "quform_1_6[2]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_1_7[2]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quform_1_11",
+            "label": "Email address*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_1_12[2]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quform_1_13",
+            "label": "How can we help you?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quform_1_641379",
+            "label": "Business Email*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quform_1_14",
+            "label": "Your Message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://homexcall.com/request-a-quote/",
+        "index": 1,
+        "action": "https://homexcall.com/request-a-quote/",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 16,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "quform_5_6[2]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_5_74",
+            "label": "Company Name *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_5_75",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quform_5_13",
+            "label": "Email Address *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_5_84",
+            "label": "Phone Number*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "quform_5_55[]",
+            "label": "Cold Calling & Lead Generation",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "quform_5_56",
+            "label": "Real Estate",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_5_67",
+            "label": "How many agents/staff do you need?*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quform_5_68",
+            "label": "Preferred working hours/time zone?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quform_5_69",
+            "label": "Project duration*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quform_5_70",
+            "label": "Brief description of your project or needs",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quform_5_72",
+            "label": "Estimated monthly budget **",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quform_5_79",
+            "label": "When would you like to start?*",
+            "placeholder": "YYYY-MM-DD",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quform_5_82",
+            "label": "How did you hear about us?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "quform_5_83[]",
+            "label": "Upload any relevant files (briefs, scripts, etc.)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quform_5_250409",
+            "label": "Company Name*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 7 y 16 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Company Name *, Website, Estimated monthly budget **, Company Name*.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 16,
+      "qualification": [
+        "Company Name *",
+        "Website",
+        "Estimated monthly budget **",
+        "Company Name*"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono",
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Equipos remotos de habla inglesa para ventas, cold calling, reactivación de leads, appointment setting, soporte, marketing y operaciones; orientados sobre todo a EE. UU.",
+    "audience": "Inmobiliario, solar, automoción, educación, e-commerce y empresas estadounidenses que externalizan ventas/soporte.",
+    "prices": [],
+    "guarantee": [
+      "If services have been partially rendered, the maximum refund available will be 30% of the fee paid.",
+      "First Name*Last Name*Email address*Phone Number*How can we help you?Please selectGeneral InquiryRefundOtherBusiness Email*Your MessagePlease Provide Detailed InformationAre you human?*Send Have Questions?",
+      "Refunds outside these parameters are not typically provided but will be considered on a case-by-case basis.Requests for refunds must be submitted in writing to our support team within [X days] of the service start date.",
+      "…e ensure that all payment information you provide is accurate and complete to facilitate a seamless transaction process.Refunds and Cancellations Homex USA LLC’s refund policy is designed to be fair, recognizing the nature of our services:If a client terminates their agreement on the first day of service,…"
+    ],
+    "proof": [
+      "That’s how we do it” Durim GorencaCEO Satisfied Clients 0 + Powering Our Workflow About Us Trusted Virtual Assistant Agency for Sales & Support At HomeX, we are a results-driven virtual assistant agency helping businesses across the U.S.",
+      "For monthly billing, clients are required to pay 50% of the total fee upfront to cover the first two weeks.",
+      "Learn More Customer Experience Our remote agents deliver friendly, reliable, and professional customer support to keep your clients happy and loyal.",
+      "As a trusted virtual assistant agency, we build high-performing remote teams that crush sales targets, close leads, and keep your customers happy…Virtual Assistant Agency for Cold Calling, Sales & Support Let's Talk Learn More Calls Handled 1 M+ “At HomeX, we don’t just make calls",
+      "More Reviews “Great work from the first project!",
+      "Business Owner Blog News and press releases Explore strategies for engaging customers, maximizing sales, and building brand loyalty."
+    ],
+    "objections": [
+      "…t all payment information you provide is accurate and complete to facilitate a seamless transaction process.Refunds and Cancellations Homex USA LLC’s refund policy is designed to be fair, recognizing the nature of our services:If a client terminates their agreement on the first day of service, we offer a…",
+      "Fulfillment Policy Our commitment to providing timely and effective services is outlined in our Fulfillment Policy:Automotive Industry (Dealerships): We charge an acquisition fee only after each vehicle is procured.",
+      "…settled in full.Homex USA LLC reserves the right to terminate the agreement under certain conditions, such as breach of contract or non-payment, following appropriate notice."
+    ],
+    "urgency": [
+      "Today, it means deploying a specialized remote team that runs a full sales pipeline, handles customer escalations at 2 a.m., or books appointments while your in-house team focuses on closing deals.",
+      "They’re part of our playbook now.” Jahim T.U.S.",
+      "Today, a well-run outsourced team in a high-English-proficiency market can match — and often outperform — a domestic hire at 40–60% lower total cost.",
+      "Now outsource outbound sales and lead generation at volume.",
+      "Warm Leads, Clear Scripts, Steady Projects Start Your Career Today How to Choose an Outsourcing Vendor: Evaluation Framework Define Your KPIs and Service-Level Agreements (SLAs) First Before you evaluate any vendor, define what “good” looks like.",
+      "They’re the ones that know exactly which functions to keep internal and which to outsource to specialists who execute at higher volume, lower cost, and measurable quality."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "First Name*Last Name*Email address*Phone Number*How can we help you?Please selectGeneral InquiryRefundOtherBusiness Email*Your MessagePlease Provide Detailed InformationAre you human?*Send Have Questions?",
+          "url": "https://homexcall.com/contact/",
+          "pageTitle": "Contact - Homex Virtual Agency",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…e ensure that all payment information you provide is accurate and complete to facilitate a seamless transaction process.Refunds and Cancellations Homex USA LLC’s refund policy is designed to be fair, recognizing the nature of our services:If a client terminates their agreement on the first day of service,…",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "If services have been partially rendered, the maximum refund available will be 30% of the fee paid.",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Refunds outside these parameters are not typically provided but will be considered on a case-by-case basis.Requests for refunds must be submitted in writing to our support team within [X days] of the service start date.",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "As a trusted virtual assistant agency, we build high-performing remote teams that crush sales targets, close leads, and keep your customers happy…Virtual Assistant Agency for Cold Calling, Sales & Support Let's Talk Learn More Calls Handled 1 M+ “At HomeX, we don’t just make calls",
+          "url": "https://homexcall.com/",
+          "pageTitle": "Outsource Cold Calling, Sales & Support | HOMEX Virtual Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "That’s how we do it” Durim GorencaCEO Satisfied Clients 0 + Powering Our Workflow About Us Trusted Virtual Assistant Agency for Sales & Support At HomeX, we are a results-driven virtual assistant agency helping businesses across the U.S.",
+          "url": "https://homexcall.com/",
+          "pageTitle": "Outsource Cold Calling, Sales & Support | HOMEX Virtual Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Learn More Customer Experience Our remote agents deliver friendly, reliable, and professional customer support to keep your clients happy and loyal.",
+          "url": "https://homexcall.com/",
+          "pageTitle": "Outsource Cold Calling, Sales & Support | HOMEX Virtual Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "More Reviews “Great work from the first project!",
+          "url": "https://homexcall.com/",
+          "pageTitle": "Outsource Cold Calling, Sales & Support | HOMEX Virtual Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Business Owner Blog News and press releases Explore strategies for engaging customers, maximizing sales, and building brand loyalty.",
+          "url": "https://homexcall.com/",
+          "pageTitle": "Outsource Cold Calling, Sales & Support | HOMEX Virtual Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "For monthly billing, clients are required to pay 50% of the total fee upfront to cover the first two weeks.",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "TerminationClients may terminate their service agreement at any time by providing written notice to Homex USA LLC.Upon termination, all outstanding fees up to the date of termination must be settled…",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…t all payment information you provide is accurate and complete to facilitate a seamless transaction process.Refunds and Cancellations Homex USA LLC’s refund policy is designed to be fair, recognizing the nature of our services:If a client terminates their agreement on the first day of service, we offer a…",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Fulfillment Policy Our commitment to providing timely and effective services is outlined in our Fulfillment Policy:Automotive Industry (Dealerships): We charge an acquisition fee only after each vehicle is procured.",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…settled in full.Homex USA LLC reserves the right to terminate the agreement under certain conditions, such as breach of contract or non-payment, following appropriate notice.",
+          "url": "https://homexcall.com/terms-of-service/",
+          "pageTitle": "Terms of Service - Homex Virtual Agency",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Google Ads",
+        "Meta Ads",
+        "Email",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://homexcall.com/",
+        "https://homexcall.com/contact/",
+        "https://homexcall.com/benefits-of-outsourcing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Virtual Assistant Agency for Cold Calling, Sales & Support",
+        "Contact",
+        "Benefits of Outsourcing: Cost Savings, ROI & Strategic Growth (2026 Guide)",
+        "🔧 HomeX Solutions"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Whatsapp",
+        "Contact",
+        "REQUEST A QUOTE",
+        "WhatsApp",
+        "Request a Quote",
+        "Let's Talk",
+        "Book a Meeting",
+        "Contact us"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://homexcall.com/contact/ · 7 campos",
+        "https://homexcall.com/request-a-quote/ · 16 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono",
+        "Agenda online",
+        "Book a Meeting"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "SEO/contenido por servicio e industria → solicitud de presupuesto (servicio, sector, nº agentes, horario, duración, presupuesto y fecha) → discovery → equipo a medida → scripts/formación → llamadas/textos/CRM"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Captación [observado] → Scoping [observado] → Diseño [inferido] → Onboarding [observado] → Producción [observado] → Gestión [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://homexcall.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://homexcall.com/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://homexcall.com/benefits-of-outsourcing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://homexcall.com/solutions/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://homexcall.com/about-us/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://homexcall.com/request-a-quote/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://homexcall.com/terms-of-service/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://homexcall.com/our-history/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://homexcall.com/we-are-hiring-appointment-setter-sales-on-site/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=homexcall.com",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=HomeX%20Virtual%20Agency&search_type=keyword_exact_phrase",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://homexcall.com/",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Se distancia del call center genérico y vende equipos anglófonos de Kosovo adaptados a cada operación estadounidense.",
+      "promise": "Cubrir prospección, citas, soporte y trabajo administrativo con selección, guiones, formación y seguimiento de KPI.",
+      "positioning": "Equipos virtuales y BPO de ventas, cold calling, lead generation, soporte y operaciones remotas",
+      "audience": "Empresas de real estate, solar, educación, automoción, ecommerce y servicios que quieren capacidad remota.",
+      "voice": [
+        "humano",
+        "operativo",
+        "flexible",
+        "orientado a ahorro",
+        "internacional"
+      ],
+      "patterns": [
+        "Insiste en equipo personalizado frente a call center.",
+        "Convierte huso horario, cantidad de agentes y duración en variables de alcance.",
+        "Apoya el argumento de coste con comparación frente a contratación estadounidense."
+      ]
+    },
+    "cta": {
+      "primary": "Request a quote",
+      "secondary": [
+        "Free strategy call / Calendly",
+        "WhatsApp",
+        "Contact"
+      ],
+      "forms": [
+        {
+          "url": "https://homexcall.com/contact/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "empresa",
+            "email",
+            "teléfono",
+            "servicio",
+            "asunto",
+            "mensaje"
+          ],
+          "fieldCount": 7,
+          "friction": "media",
+          "submitted": false
+        },
+        {
+          "url": "https://homexcall.com/request-a-quote/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "empresa",
+            "web",
+            "email",
+            "teléfono",
+            "servicios",
+            "sector",
+            "número de agentes",
+            "huso y horario",
+            "duración",
+            "brief",
+            "presupuesto mensual",
+            "fecha de inicio",
+            "origen",
+            "archivo y campos de contexto"
+          ],
+          "fieldCount": 25,
+          "friction": "alta para una primera interacción; útil para cotización precisa",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Captación",
+        "status": "observado",
+        "detail": "Páginas por solución y vertical conducen a cotización, estrategia, teléfono o mensajería."
+      },
+      {
+        "stage": "Scoping",
+        "status": "observado",
+        "detail": "El formulario recoge capacidad, horario, duración, presupuesto, fecha y documentación."
+      },
+      {
+        "stage": "Diseño",
+        "status": "inferido",
+        "detail": "Se propone un equipo adaptado y se acuerdan guion, perfil y KPI."
+      },
+      {
+        "stage": "Onboarding",
+        "status": "observado",
+        "detail": "Selección, formación y conexión con herramientas del cliente."
+      },
+      {
+        "stage": "Producción",
+        "status": "observado",
+        "detail": "Llamadas, mensajes, actualización de CRM, citas, soporte o back office según alcance."
+      },
+      {
+        "stage": "Gestión",
+        "status": "inferido",
+        "detail": "KPI, reporting, QA y ampliación o reducción del equipo."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "precio público — no publicado; se cotiza según servicio, agentes, horario, duración y presupuesto",
+        "moneda — USD y, de forma excepcional, EUR",
+        "automoción — puede facturar una comisión cuando el vehículo se adquiere",
+        "real estate — 50% por adelantado para las primeras dos semanas en acuerdos mensuales"
+      ],
+      "contract": [
+        "facturación — por transacción, semanal o mensual según servicio",
+        "cancelación — en cualquier momento por escrito, pagando importes devengados"
+      ],
+      "guarantee": [
+        "primer día — 90% de devolución si se termina el primer día",
+        "servicio parcial — devolución máxima del 30%; otros casos quedan a criterio",
+        "resultados — no se observó garantía de citas, ventas o ingresos"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Cloudflare",
+      "WordPress",
+      "Google Tag Manager",
+      "Calendly",
+      "WhatsApp",
+      "CRM y herramientas del cliente"
+    ],
+    "contradictions": [
+      "Los términos contienen literalmente el marcador incompleto ‘within [X days]’ para solicitudes de devolución.",
+      "Cancelar en cualquier momento no equivale a devolución total: tras servicio parcial el máximo publicado es 30%.",
+      "La comunicación presenta una compañía de Kosovo, mientras aparecen Homex USA LLC, jurisdicción de New Jersey y direcciones en Filadelfia y Pristina; las funciones de cada entidad no están plenamente explicadas.",
+      "La comparación de ahorro no se acompaña de una tarifa pública por agente o unidad de producción."
+    ],
+    "inferences": [
+      "Diseño: Se propone un equipo adaptado y se acuerdan guion, perfil y KPI.",
+      "Gestión: KPI, reporting, QA y ampliación o reducción del equipo."
+    ],
+    "notObservable": [
+      "tarifa por agente y margen",
+      "SLA y definición de cita",
+      "propiedad de números y grabaciones",
+      "proceso de sustitución de agentes",
+      "benchmark de conversión por sector",
+      "marcador",
+      "CRM interno",
+      "telefonía",
+      "QA de llamadas",
+      "gestión de personal",
+      "No se verificaron confirmación, tiempo de respuesta, calendario, propuesta ni secuencia comercial."
+    ],
+    "limitations": [
+      "No se pidió propuesta ni se reservó estrategia.",
+      "No se auditó a empleados, llamadas, CRM, clientes ni métricas.",
+      "Las cifras de llamadas, clientes y profesionales son autodeclaradas.",
+      "No se pudo resolver públicamente el reparto contractual entre entidades y países."
+    ],
+    "lessons": {
+      "copy": [
+        "Vender capacidad integrada y especializada, no horas genéricas de call center.",
+        "Hacer visibles zona horaria, idiomas y tipos de función."
+      ],
+      "adapt": [
+        "Formulario avanzado opcional después de un primer paso corto.",
+        "Cotización basada en capacidad, horario, duración, fecha y presupuesto."
+      ],
+      "avoid": [
+        "Publicar condiciones con marcadores sin completar.",
+        "Usar cancelación flexible como sinónimo de devolución.",
+        "Dejar ambiguo quién contrata, factura y responde jurídicamente."
+      ],
+      "test": [
+        "Test de formulario corto con enriquecimiento posterior frente a 25 campos iniciales.",
+        "Test de equipo dedicado frente a célula compartida por resultados."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://homexcall.com/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://homexcall.com/request-a-quote/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://homexcall.com/contact/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://homexcall.com/solutions/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://homexcall.com/about-us/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://homexcall.com/terms-of-service/",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,393 @@
+{
+  "id": "reformedia",
+  "name": "Reformedia",
+  "reviewedAt": "2026-08-22T15:50:17.536Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Agencia de markeitng y publicidad para empresas de reformas, construcción y arquitectos.",
+    "heroObserved": true,
+    "priorSummary": "\"El sistema APGR (Adquisición, Persuasión Web, Gestión de Leads y Recolección de Reseñas)\" — sistema integral de captación y conversión para empresas de reformas, con \"GARANTIZAMOS RESULTADOS POR CONTRATO\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 58 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1962 palabras por página comercial recuperada. Muestras breves: “Agencia de markeitng y publicidad para empresas de reformas, construcción y arquitectos.” · “¿Cómo conseguir más clientes para mi empresa de reformas? La guía definitiva de marketing y publicidad para captar obras y reformas” · “Diseño web para empresas de reformas: desmárcate de la competencia”.",
+    "supportingHeadings": [
+      "Agencia de markeitng y publicidad para empresas de reformas, construcción y arquitectos.",
+      "Nos has visto en:",
+      "Nos encargamos de que nunca te falte trabajo y no dependas del boca a boca todos meses.",
+      "¿A qué tipo de empresas ayudamos?",
+      "¿Qué hacemos exactamente? Descubre los 4 pasos del Sistema AFGR",
+      "1.- Adquisición",
+      "2. - Filtrado y citas",
+      "3. - Gestión",
+      "4. - Recolección",
+      "¿Qué usamos para lograrlo?",
+      "¿Cómo conseguir más clientes para mi empresa de reformas? La guía definitiva de marketing y publicidad para captar obras y reformas",
+      "Los desafíos de conseguir clientes en el sector de las reformas",
+      "La creciente competencia en el mercado",
+      "La dificultad de destacar entre otras empresas",
+      "La evolución de los hábitos de búsqueda de los clientes",
+      "La importancia de una estrategia de captación de clientes sólida",
+      "Cómo diferenciarse de la competencia",
+      "Generar confianza y credibilidad",
+      "La importancia del marketing digital",
+      "Estrategias de Captación de Clientes",
+      "Marketing de proximidad",
+      "Da a conocer tu empresa a tus contactos",
+      "Busca partners y colaboradores locales",
+      "Haz una oferta llamativa de lanzamiento en tu zona",
+      "Buzoneo y flyers personalizados",
+      "Tarjeta de visita digital y física",
+      "Marketing digital y Publicidad online",
+      "Crea una página web optimizada para SEO",
+      "Gestión de redes sociales",
+      "Publicidad online (Google Ads, Facebook Ads)"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://reformedia.es/",
+      "text": "Contacto",
+      "href": "https://reformedia.es/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Publicar el comentario"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://reformedia.es/como-captar-obras-y-reformas/",
+        "index": 1,
+        "action": "https://reformedia.es/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Publicar el comentario",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comentario *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url",
+            "label": "Web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guarda mi nombre, correo electrónico y web en este navegador para la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Web, Guarda mi nombre, correo electrónico y web en este navegador para la.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": [
+        "Web",
+        "Guarda mi nombre, correo electrónico y web en este navegador para la"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"El sistema APGR (Adquisición, Persuasión Web, Gestión de Leads y Recolección de Reseñas)\" — sistema integral de captación y conversión para empresas de reformas, con \"GARANTIZAMOS RESULTADOS POR CONTRATO\".",
+    "audience": "Empresas de construcción y reformas (constructoras y reformistas establecidos con equipo comercial, no autónomos ni freelance según su propia web).",
+    "prices": [],
+    "guarantee": [
+      "Es muy estresante vivir sin saber por donde te va a llegar el próximo cliente.Por eso hemos creado el sistema AFGR especialmente diseñado para garantizar un flujo estable de clientes y con garantía de resultados.0 riesgo pra ti, si no te funciona te devolvemos el"
+    ],
+    "proof": [
+      "Descubre los 4 pasos del Sistema AFGR 1.- Adquisición Centenares de personas usan Facebook e instagram en tu zona y buscan empresas para hacer su reforma o su instalación, son clientes realmente interesados que buscan hacer la obra cuanto antes.",
+      "Nos has visto en: Algunos de los medios donde hemos aparecido por nuestros resultados con clientes aplicando nuestra innovadora metodología.",
+      "En Reformedia somos especialistas en conseguir un flujo de clientes estable para empresas de reformas del hogar e instalaciones.El boca a boca está bien, pero no es nada predecible.¿Cuántos clientes te llamarán el mes que viene?",
+      "Nos encargamos de que tu empresa sea una de las que encuentre poniéndola delante suya con videos y fotos atractivos para atraer a clientes con dinero que buscan calidad.",
+      "Hay que recolectar las opiniones de tus clientes, hacer antes y después y crear casos de éxito.Esta información la recolectamos y plasmamos en la web y perfil de Google para retroalimentar el sistema y que sea más potente mes tras mes.¿Tú no querrías saber como",
+      "Es muy estresante vivir sin saber por donde te va a llegar el próximo cliente.Por eso hemos creado el sistema AFGR especialmente diseñado para garantizar un flujo estable de clientes y con garantía de resultados.0 riesgo pra ti, si no te funciona te devolvemos el"
+    ],
+    "objections": [],
+    "urgency": [
+      "Contáctanos hoy y descubre cómo te podemos garantizar mínimo 20 solicitudes de presupuesto en 60 días, todo por escrito en contrato.",
+      "Sin embargo, este boom también ha atraído a numerosos nuevos jugadores al mercado.Empresas establecidas, startups innovadoras y profesionales autónomos compiten ahora por la atención de los mismos clientes potenciales.",
+      "Hoy en día, la gran mayoría de los clientes potenciales comienza su búsqueda de servicios de reformas en línea.",
+      "Juan Pérez Read More Gracias al diseño web que nos desarrollaron, nuestros clientes ahora nos perciben como una empresa mucho más profesional.",
+      "Ahora imagina esto: una página web que habla por ti, que muestra tus mejores proyectos y que le dice a tus clientes potenciales, desde el primer vistazo, que contigo no hay chapuzas ni sorpresas desagradables.",
+      "Solicita hoy mismo una consulta gratuita con nuestros expertos y descubre cómo puedes implementar estas estrategias en tu negocio."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Es muy estresante vivir sin saber por donde te va a llegar el próximo cliente.Por eso hemos creado el sistema AFGR especialmente diseñado para garantizar un flujo estable de clientes y con garantía de resultados.0 riesgo pra ti, si no te funciona te devolvemos el",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Nos has visto en: Algunos de los medios donde hemos aparecido por nuestros resultados con clientes aplicando nuestra innovadora metodología.",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "En Reformedia somos especialistas en conseguir un flujo de clientes estable para empresas de reformas del hogar e instalaciones.El boca a boca está bien, pero no es nada predecible.¿Cuántos clientes te llamarán el mes que viene?",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Es muy estresante vivir sin saber por donde te va a llegar el próximo cliente.Por eso hemos creado el sistema AFGR especialmente diseñado para garantizar un flujo estable de clientes y con garantía de resultados.0 riesgo pra ti, si no te funciona te devolvemos el",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Descubre los 4 pasos del Sistema AFGR 1.- Adquisición Centenares de personas usan Facebook e instagram en tu zona y buscan empresas para hacer su reforma o su instalación, son clientes realmente interesados que buscan hacer la obra cuanto antes.",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nos encargamos de que tu empresa sea una de las que encuentre poniéndola delante suya con videos y fotos atractivos para atraer a clientes con dinero que buscan calidad.",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Hay que recolectar las opiniones de tus clientes, hacer antes y después y crear casos de éxito.Esta información la recolectamos y plasmamos en la web y perfil de Google para retroalimentar el sistema y que sea más potente mes tras mes.¿Tú no querrías saber como",
+          "url": "https://reformedia.es/",
+          "pageTitle": "Agencia de Marketing para Reformas - Reformedia",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://reformedia.es/",
+        "https://reformedia.es/como-captar-obras-y-reformas/",
+        "https://reformedia.es/seo-para-empresas-de-reformas/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia de markeitng y publicidad para empresas de reformas, construcción y arquitectos.",
+        "¿Cómo conseguir más clientes para mi empresa de reformas? La guía definitiva de marketing y publicidad para captar obras y reformas",
+        "Diseño web para empresas de reformas: desmárcate de la competencia",
+        "Aviso Legal"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Publicar el comentario"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://reformedia.es/como-captar-obras-y-reformas/ · 5 campos",
+        "https://reformedia.es/seo-para-empresas-de-reformas/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Facebook/Instagram → landing → contacto inmediato → preguntas de cualificación → cita para presupuesto → seguimiento de presupuestos y rentabilidad → reseñas y casos antes/después."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://reformedia.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://reformedia.es/como-captar-obras-y-reformas/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://reformedia.es/seo-para-empresas-de-reformas/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://reformedia.es/nombres-originales-empresas-reformas-construccion/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://reformedia.es/diseno-web-reformas/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://reformedia.es/aviso-legal/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://reformedia.es/politica-de-privacidad/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.murcia.com/empresas/noticias/2025/03/31-reformedia-elimina-la-incertidumbre-comercial-en-el-sector-de-reformas-con-resultados-garantizados.asp",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://web.archive.org/web/20250216042002/https://reformedia.es/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://web.archive.org/web/20260215043000/https://reformedia.es/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://web.archive.org/web/20240326013137/https://www.reformedia.es/",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "http://reformedia.es/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 14"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://reformedia.es/registro-caso-exito/: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

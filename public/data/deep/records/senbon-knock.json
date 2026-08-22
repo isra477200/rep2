@@ -1,0 +1,561 @@
+{
+  "id": "senbon-knock",
+  "name": "Senbon Knock",
+  "reviewedAt": "2026-08-22T15:50:17.863Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "フォーム営業代行",
+    "heroObserved": true,
+    "priorSummary": "Outbound B2B por formularios web: lista, research, mensaje personalizado, 50–100 envíos/día, deduplicación, reporting y traspaso de respuestas.",
+    "voice": "Revisión manual: simple, precio primero, transaccional, baja ceremonia, cuantitativo. ¥30 por envío desde cien 50–100 diarios reporte pago por éxito",
+    "supportingHeadings": [
+      "フォーム営業代行",
+      "SOLUTION",
+      "こんな課題はありませんか？",
+      "千本ノックが解決します",
+      "SERVICES",
+      "リスト作成",
+      "メッセージ作成",
+      "フォーム送信代行",
+      "PRICING",
+      "成果報酬型オプション",
+      "FLOW",
+      "ヒアリング・戦略設計",
+      "ターゲット企業選定",
+      "フォーム送信実行",
+      "結果報告・引き継ぎ",
+      "CONTACT",
+      "無料相談受付中",
+      "お問い合わせフォーム",
+      "千本ノック",
+      "ABOUT",
+      "私たちについて",
+      "新規事業立ち上げ支援",
+      "インバウンド支援",
+      "AI導入支援",
+      "HP・LP作成",
+      "And More",
+      "連絡先情報",
+      "サポート内容",
+      "多言語対応",
+      "文化理解に基づくサービス設計"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "無料相談",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://senbon-knock.co.jp/ai.html",
+      "text": "無料相談",
+      "href": "https://senbon-knock.co.jp/ai.html",
+      "element": "a",
+      "kind": "conversion",
+      "score": 164
+    },
+    "ctas": [
+      "無料相談",
+      "お問い合わせ",
+      "無料相談を申し込む",
+      "お問い合わせはこちら",
+      "お問い合わせ・お見積り",
+      "お問い合わせフォームを送信",
+      "フォーム営業代行のお問い合わせフォームを送信"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://senbon-knock.co.jp/form-sales.html",
+        "index": 1,
+        "action": "https://formspree.io/f/xwpnzvrd",
+        "method": "POST",
+        "submitText": "送信する",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "お名前 *",
+            "placeholder": "お名前を入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "会社名 *",
+            "placeholder": "会社名を入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "メールアドレス *",
+            "placeholder": "メールアドレスを入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "interest",
+            "label": "ご興味のあるプラン",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "メッセージ *",
+            "placeholder": "ご質問やご要望をお聞かせください",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://senbon-knock.co.jp/index.html",
+        "index": 1,
+        "action": "https://formspree.io/f/xwpnzvrd",
+        "method": "POST",
+        "submitText": "送信する",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "お名前 *",
+            "placeholder": "お名前を入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "会社名",
+            "placeholder": "会社名を入力してください（個人の場合は「個人」と入力）",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "メールアドレス *",
+            "placeholder": "メールアドレスを入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "メッセージ *",
+            "placeholder": "メッセージを入力してください",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://senbon-knock.co.jp/inbound.html",
+        "index": 1,
+        "action": "https://formspree.io/f/xwpnzvrd",
+        "method": "POST",
+        "submitText": "無料相談を申し込む",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "お名前 *",
+            "placeholder": "お名前を入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "会社名",
+            "placeholder": "会社名を入力してください（個人の場合は「個人」と入力）",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "メールアドレス *",
+            "placeholder": "メールアドレスを入力してください",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "ご相談内容 *",
+            "placeholder": "インバウンド支援についてご相談したい内容を入力してください",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Outbound B2B por formularios web: lista, research, mensaje personalizado, 50–100 envíos/día, deduplicación, reporting y traspaso de respuestas.",
+    "audience": "Empresas B2B japonesas con falta de recursos comerciales y necesidad de nueva prospección.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://senbon-knock.co.jp/form-sales.html",
+        "https://senbon-knock.co.jp/index.html",
+        "https://senbon-knock.co.jp/inbound.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "フォーム営業代行",
+        "千本ノック",
+        "インバウンド支援",
+        "新規事業立ち上げ支援"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "お問い合わせ",
+        "お問い合わせ・お見積り",
+        "フォーム営業代行のお問い合わせフォームを送信",
+        "お問い合わせはこちら",
+        "お問い合わせフォームを送信",
+        "無料相談を申し込む",
+        "無料相談"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://senbon-knock.co.jp/form-sales.html · 5 campos",
+        "https://senbon-knock.co.jp/index.html · 4 campos",
+        "https://senbon-knock.co.jp/inbound.html · 4 campos",
+        "https://senbon-knock.co.jp/new-business.html · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Consulta → diagnóstico/KPI/calendario → segmentación y lista → mensajes personalizados → envíos 50–100/día → control de duplicados → reporting → traspaso de interesados → cita/venta del cliente."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación [observado] → cualificación [inferido] → propuesta y cierre [no observable] → entrega [observado] → retención [no observable]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://senbon-knock.co.jp/form-sales.html",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://senbon-knock.co.jp/index.html",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://senbon-knock.co.jp/inbound.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://senbon-knock.co.jp/new-business.html",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://senbon-knock.co.jp/ai.html",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://senbon-knock.co.jp/web-design.html",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://senbon-knock.co.jp/dx.html",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=senbon-knock.co.jp",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Senbon%20Knock&search_type=keyword_unordered",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "4 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “無料相談”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Ejecutar outreach por formulario con precio unitario visible y carga operativa mínima para el cliente.",
+      "positioning": "operador utilitario de bajo coste",
+      "audience": "Empresas B2B que priorizan cobertura de bajo coste y aceptan un canal de outreach por formulario.",
+      "voice": [
+        "simple",
+        "precio primero",
+        "transaccional",
+        "baja ceremonia",
+        "cuantitativo"
+      ],
+      "patterns": [
+        "¥30 por envío",
+        "desde cien",
+        "50–100 diarios",
+        "reporte",
+        "pago por éxito"
+      ]
+    },
+    "cta": {
+      "primary": "Consultar el servicio",
+      "secondary": [
+        "revisar precios",
+        "ver empresa"
+      ],
+      "forms": [
+        {
+          "url": "https://senbon-knock.co.jp/form-sales.html",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "empresa",
+            "email",
+            "plan de interés opcional",
+            "mensaje"
+          ],
+          "fieldCount": 5,
+          "friction": "baja",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Landing de precio y ejemplos de volumen. — stage: descubrimiento — evidenceUrls: https://senbon-knock.co.jp/form-sales.html"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Comparación simple entre tarifa base y opciones de éxito. — stage: consideración — evidenceUrls: https://senbon-knock.co.jp/form-sales.html"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario corto gestionado por Formspree. — stage: captación — evidenceUrls: https://senbon-knock.co.jp/form-sales.html"
+      },
+      {
+        "stage": "cualificación",
+        "status": "inferido",
+        "detail": "Plan de interés y mensaje permiten un filtro mínimo; ICP, legalidad y volumen se resolverían fuera del formulario. — stage: cualificación — evidenceUrls: https://senbon-knock.co.jp/form-sales.html"
+      },
+      {
+        "stage": "propuesta y cierre",
+        "status": "no observable",
+        "detail": "No hay checkout, contrato o definición pública de evento facturable por éxito. — stage: propuesta y cierre — evidenceUrls:"
+      },
+      {
+        "stage": "entrega",
+        "status": "observado",
+        "detail": "Lista, mensaje, 50–100 envíos diarios, deduplicación, reporte y entrega de interesados. — stage: entrega — evidenceUrls: https://senbon-knock.co.jp/form-sales.html"
+      },
+      {
+        "stage": "retención",
+        "status": "no observable",
+        "detail": "No se observan nurturing, optimización recurrente ni renovación pública. — stage: retención — evidenceUrls:"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "currency: JPY — basePerForm: 30 — minimumForms: 100 — minimumBase: 3000 — examples: 500 envíos: ¥15.000 · 1.000: ¥30.000 · 2.000: ¥60.000 — successOptions: solicitud de información: ¥5.000 · cita: ¥15.000 · venta: ¥100.000 — tax: no incluido"
+      ],
+      "contract": [
+        "Mínimo de cien formularios; no se observó duración recurrente obligatoria."
+      ],
+      "guarantee": [
+        "La opción por éxito reduce riesgo, pero no se publican atribución, validez, disputas o remedios."
+      ]
+    },
+    "proof": [
+      "claims: — quality: muy baja — caveat: No se localizaron casos, logos, tasas de respuesta, citas, show rate, ventas o testimonios verificables en las páginas revisadas."
+    ],
+    "objections": [
+      "objection: Es demasiado caro probar outbound. — answer: Mínimo de ¥3.000 y precio por unidad.",
+      "objection: Habrá duplicados o no sabré qué se envió. — answer: Desduplicación y reporte detallado.",
+      "objection: Quiero pagar por resultado. — answer: Opciones por solicitud, cita o venta, combinables con base.",
+      "objection: ¿Cómo se asegura personalización y cumplimiento? — answer: No hay explicación pública suficiente."
+    ],
+    "technology": [
+      "sitio estático — basis: estructura HTML y rutas simples",
+      "Formspree — basis: acción pública del formulario",
+      "analítica — basis: no identificada en la revisión",
+      "CRM — basis: no identificado ni declarado"
+    ],
+    "contradictions": [
+      "La opción de éxito se presenta como reducción de riesgo, aunque la tarifa base puede seguir aplicando cuando se combina. — severity: alta",
+      "No hay marco público de legalidad, opt-out, tratamiento de datos, atribución ni validez de cita o venta. — severity: alta",
+      "El precio extremadamente bajo no se acompaña de explicación sobre profundidad de research o personalización por cuenta. — severity: media",
+      "La empresa declara inicio en 2025 y capital de ¥300.000, pero no compensa su juventud con prueba social visible. — severity: media"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "No se envió el formulario.",
+      "No se verificaron mensajes reales, listas, reportes o respuestas.",
+      "No se observaron términos legales completos ni prueba social."
+    ],
+    "lessons": {
+      "copy": [
+        "precio por unidad",
+        "ejemplos exactos de volumen",
+        "mínimo de prueba reducido",
+        "reporte de ejecución"
+      ],
+      "adapt": [
+        "añadir research y personalización",
+        "definir eventos por éxito",
+        "incluir controles de cumplimiento y exclusión",
+        "Piloto pequeño con revisión humana, exclusiones de riesgo, personalización por cuenta y pago solo por respuesta positiva validada.",
+        "La unidad económica simple facilita la compra, pero sin cumplimiento, personalización y prueba el modelo compite solo por precio y expone la marca."
+      ],
+      "avoid": [
+        "form-spam masivo",
+        "éxito sin atribución",
+        "bajo precio como única prueba de valor"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://senbon-knock.co.jp/form-sales.html",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://senbon-knock.co.jp/index.html",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "partial"
+}

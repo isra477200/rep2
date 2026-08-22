@@ -1,0 +1,530 @@
+{
+  "id": "t4-franquicias-grupo-t4-lafranquicia-es",
+  "name": "T4 Franquicias (Grupo T4 / lafranquicia.es)",
+  "reviewedAt": "2026-08-22T15:50:18.667Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Captación de franquiciados",
+    "heroObserved": true,
+    "priorSummary": "\"Hemos creado un sistema de trabajo para captación de referencias que asegura el flujo de trabajo en cualquier organización de franquicia\" (t4franquicias.com)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 175 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1130 palabras por página comercial recuperada. Muestras breves: “Captación de franquiciados” · “Contacto”.",
+    "supportingHeadings": [
+      "Captación de franquiciados",
+      "Captación de franquiciados. En T4 Franquicia disponemos de las mejores herramientas para la captación de candidatos a franquiciado para redes de franquicias.",
+      "Plataformas y medios para la captación de franquiciados",
+      "¿Quieres saber más?",
+      "Contacto",
+      "Contacta con T4Franquicias",
+      "Formulario de Contacto",
+      "Clientes de T4",
+      "Clientes de T4 Franquicias",
+      "Preguntas más frecuentes",
+      "Empresa",
+      "Empresa consultoría de franquicias",
+      "Qué me aporta un consultor de franquicias",
+      "Qué aporta un consultor de franquicias al emprendedor",
+      "Qué aporta un consultor de franquicias al futuro franquiciador",
+      "Navegación de entradas",
+      "Etiqueta: Consultor de franquicias",
+      "6 funciones importantes de un consultor de franquicias",
+      "La franquicia Integral Care hace balance de su actividad",
+      "T4 Franquicias acude a la sexta edición de ‘Desayunos con Empresarios y Directivos’",
+      "La franquicia Eboca aspira a liderar el sector del vending en España",
+      "Franquiciador de éxito parte IV: proveedores de franquicias",
+      "Franquiciador de éxito parte III: el franquiciado adecuado",
+      "La importancia de retener a los franquiciados y hacerlos parte de la marca",
+      "¿Quieres abrir una franquicia? 5 pasos para que tu franquicia sea un éxito en el futuro",
+      "9 claves para el éxito de la franquicia",
+      "Los mejores sectores para iniciar nuevas franquicias",
+      "¿Cómo hacer que tu negocio sea más rentable? ¡Franquícialo!"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+      "text": "Contacto",
+      "href": "https://www.t4franquicias.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143
+    },
+    "ctas": [
+      "Contacto",
+      "Enviar",
+      "Necessary",
+      "Mostrar más",
+      "Non-necessary"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+        "index": 1,
+        "action": "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Introduce tu Nombre...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Introduce tu E-mail...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": null,
+            "placeholder": "Introduce tu Teléfono...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "cualfranquicia",
+            "label": null,
+            "placeholder": "En caso afirmativo, indique cual",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Observaciones",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-504",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "kc_captcha",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.t4franquicias.com/contacto/",
+        "index": 1,
+        "action": "https://www.t4franquicias.com/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Introduce tu Nombre...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Introduce tu E-mail...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": null,
+            "placeholder": "Introduce tu Teléfono...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "cualfranquicia",
+            "label": null,
+            "placeholder": "En caso afirmativo, indique cual",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-inversion",
+            "label": null,
+            "placeholder": "Inversión a realizar",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Observaciones",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-504",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "kc_captcha",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 7 y 8 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 8,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Hemos creado un sistema de trabajo para captación de referencias que asegura el flujo de trabajo en cualquier organización de franquicia\" (t4franquicias.com)",
+    "audience": "Marcas de franquicia (franquiciadores) que buscan candidatos a franquiciado en España",
+    "prices": [],
+    "guarantee": [
+      "Si lo que desea es conseguir referencias póngase en contacto con nosotros y le desarrollaremos un plan de acciones personalizado con la garantía que nos viene avalada por los resultados obtenidos."
+    ],
+    "proof": [
+      "…de ingreso Cómo montar una franquicia Cómo franquiciar un restaurante Preguntas más frecuentes Blog Contacto Português Clientes de T4 Clientes de T4 Franquicias Estas son algunas de las empresas clientes de T4 Franquicias, marcas que aportan un elevado valor añadido al sector de la franquicia, y que reflej…"
+    ],
+    "objections": [
+      "Expertos en franquicia Nuestras Oficinas T4 Internacional Método para franquiciar empresas ¿Por qué T4 Franquicias?",
+      "Ir arriba ¿Por qué debería franquiciar mi negocio?",
+      "Guía práctica Guía de franquicias Royalty de franquicia y otras líneas de ingreso Cómo montar una franquicia Cómo franquiciar un restaurante Preguntas más frecuentes Blog Contacto Português Preguntas más frecuentes ¿Por qué elegir la franquicia y no otro método?"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Si lo que desea es conseguir referencias póngase en contacto con nosotros y le desarrollaremos un plan de acciones personalizado con la garantía que nos viene avalada por los resultados obtenidos.",
+          "url": "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+          "pageTitle": "Asesores de Franquicias: Captación de candidatos. - T4franquicias.com",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…de ingreso Cómo montar una franquicia Cómo franquiciar un restaurante Preguntas más frecuentes Blog Contacto Português Clientes de T4 Clientes de T4 Franquicias Estas son algunas de las empresas clientes de T4 Franquicias, marcas que aportan un elevado valor añadido al sector de la franquicia, y que reflej…",
+          "url": "https://www.t4franquicias.com/clientes-de-t4-franquicias/",
+          "pageTitle": "Clientes de T4 Franquicias - T4franquicias.com",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Expertos en franquicia Nuestras Oficinas T4 Internacional Método para franquiciar empresas ¿Por qué T4 Franquicias?",
+          "url": "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+          "pageTitle": "Asesores de Franquicias: Captación de candidatos. - T4franquicias.com",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Expertos en franquicia Nuestras Oficinas T4 Internacional Método para franquiciar empresas ¿Por qué T4 Franquicias?",
+          "url": "https://www.t4franquicias.com/informacion/preguntas-mas-frecuentes/",
+          "pageTitle": "Preguntas y dudas más frecuentes sobre franquicia - T4franquicias.com",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Guía práctica Guía de franquicias Royalty de franquicia y otras líneas de ingreso Cómo montar una franquicia Cómo franquiciar un restaurante Preguntas más frecuentes Blog Contacto Português Preguntas más frecuentes ¿Por qué elegir la franquicia y no otro método?",
+          "url": "https://www.t4franquicias.com/informacion/preguntas-mas-frecuentes/",
+          "pageTitle": "Preguntas y dudas más frecuentes sobre franquicia - T4franquicias.com",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Ir arriba ¿Por qué debería franquiciar mi negocio?",
+          "url": "https://www.t4franquicias.com/informacion/preguntas-mas-frecuentes/",
+          "pageTitle": "Preguntas y dudas más frecuentes sobre franquicia - T4franquicias.com",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Partners / afiliación",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+        "https://www.t4franquicias.com/contacto/",
+        "https://www.t4franquicias.com/clientes-de-t4-franquicias/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Captación de franquiciados",
+        "Contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Enviar",
+        "Mostrar más",
+        "Necessary",
+        "Non-necessary"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/ · 7 campos",
+        "https://www.t4franquicias.com/contacto/ · 8 campos",
+        "https://www.t4franquicias.com/clientes-de-t4-franquicias/ · 7 campos",
+        "https://www.t4franquicias.com/informacion/preguntas-mas-frecuentes/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) La marca franquiciadora solicita información y T4 diagnostica objetivos, expansión y perfil de franquiciado. 2) Diseña plan de captación y posicionamiento. 3) Difunde la oportunidad por lafranquicia.es,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.t4franquicias.com/servicios-para-empresas-de-franquicias/captacion-de-franquiciados/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.t4franquicias.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.t4franquicias.com/clientes-de-t4-franquicias/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.t4franquicias.com/informacion/preguntas-mas-frecuentes/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.t4franquicias.com/empresa/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.t4franquicias.com/blog/2019/06/19/que-me-aporta-un-consultor-de-franquicias/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.t4franquicias.com/blog/tag/consultor-de-franquicias/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.t4franquicias.com/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.lafranquicia.es/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://lafranquicia.es/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=t4franquicias.com",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR10437539019188338689?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/9832123766708155273",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR06368985356603228161?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR14231505045899182081?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1860816230735879538",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR10462356096138870785?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR01689243966463016961?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR04293116199455162369?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR06696806947447898113?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR05164064648583970817?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR15176680425507520513/creative/CR01969030093313409025?region=anywhere",
+      "label": "Fuente pública 23"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,213 @@
+{
+  "id": "wsm-aura-directory-ficha-de-cobertura-mundial-samoa",
+  "name": "wsm.aura.directory — ficha de cobertura mundial — Samoa",
+  "reviewedAt": "2026-08-22T15:50:19.000Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 28,
+  "message": {
+    "hero": "Samoa Business Directory",
+    "heroObserved": true,
+    "priorSummary": "Búsqueda/navegación por categorías y fichas (escuelas, restaurantes, tiendas, oficinas, etc.). No se encontró un CTA empresarial claro de alta o compra en el subdominio Samoa.",
+    "voice": "Tono tono no clasificable automáticamente; requiere revisión humana, centrado en la marca. Usa 9 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 713 palabras por página comercial recuperada. Muestras breves: “Samoa Business Directory”.",
+    "supportingHeadings": [
+      "Samoa Business Directory",
+      "Schools in Samoa",
+      "Restaurants in Samoa",
+      "Corporate offices in Samoa",
+      "Grocery stores in Samoa",
+      "Clothing stores in Samoa",
+      "Electronics stores in Samoa",
+      "Hardware stores in Samoa",
+      "Stores in Samoa",
+      "Government offices in Samoa",
+      "Home goods stores in Samoa",
+      "Shopping malls in Samoa",
+      "Banks in Samoa",
+      "Hospitals in Samoa",
+      "Cafes in Samoa",
+      "Supermarkets in Samoa",
+      "Pharmacies in Samoa",
+      "Hotels in Samoa",
+      "Post offices in Samoa",
+      "Car Service Stations in Samoa",
+      "ATMs in Samoa"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://wsm.aura.directory/",
+      "text": "Contact Us",
+      "href": "https://www.aura.directory/contact-us",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Contact us"
+    ],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Búsqueda/navegación por categorías y fichas (escuelas, restaurantes, tiendas, oficinas, etc.). No se encontró un CTA empresarial claro de alta o compra en el subdominio Samoa.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://wsm.aura.directory/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Samoa Business Directory"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Contact us"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://wsm.aura.directory/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.aura.directory/about-us",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "http://aura.directory/",
+      "label": "Fuente pública 3"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://wsm.aura.directory/place/80--171D9664367: HTTP 404",
+    "https://wsm.aura.directory/category/car-service-stations: HTTP 404",
+    "https://wsm.aura.directory/1: HTTP 404",
+    "https://wsm.aura.directory/category/schools: HTTP 404",
+    "https://wsm.aura.directory/place/626--171D7829846: HTTP 404",
+    "https://wsm.aura.directory/place/683--171D6018866: HTTP 404",
+    "https://wsm.aura.directory/place/830--172D3282795: HTTP 404",
+    "https://wsm.aura.directory/category/restaurants: HTTP 404",
+    "https://wsm.aura.directory/place/176--172D2221189: HTTP 404",
+    "https://wsm.aura.directory/place/317--171D8035957: HTTP 404",
+    "https://wsm.aura.directory/place/532-0: HTTP 404",
+    "https://wsm.aura.directory/category/corporate-offices: HTTP 404",
+    "https://wsm.aura.directory/place/178--171D770112: HTTP 404",
+    "https://wsm.aura.directory/place/318--171D7545378: HTTP 404",
+    "https://wsm.aura.directory/category/grocery-stores: HTTP 404",
+    "https://wsm.aura.directory/place/56--171D7738131: HTTP 404",
+    "https://wsm.aura.directory/place/83--171D7629583: HTTP 404",
+    "https://wsm.aura.directory/place/88--171D8882382: HTTP 404",
+    "https://wsm.aura.directory/category/clothing-stores: HTTP 404",
+    "https://wsm.aura.directory/place/23--171D770507: HTTP 404",
+    "https://wsm.aura.directory/place/30--171D7695276: HTTP 404",
+    "https://wsm.aura.directory/place/33--171D7699344: HTTP 404",
+    "https://wsm.aura.directory/category/electronics-stores: HTTP 404",
+    "https://wsm.aura.directory/place/123--171D7692631: HTTP 404",
+    "https://wsm.aura.directory/place/141--171D7736424: HTTP 404",
+    "https://wsm.aura.directory/category/hardware-stores: HTTP 404",
+    "https://wsm.aura.directory/place/26--171D7706613: HTTP 404",
+    "https://wsm.aura.directory/place/42--171D8063267: HTTP 404",
+    "https://wsm.aura.directory/place/222--171D8062888: HTTP 404",
+    "https://wsm.aura.directory/category/stores: HTTP 404"
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

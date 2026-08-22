@@ -1,0 +1,582 @@
+{
+  "id": "dentalead",
+  "name": "Dentalead",
+  "reviewedAt": "2026-08-22T15:50:17.509Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Consigue pacientes nuevos cada mes para tu clínica dental sin depender del boca a boca",
+    "heroObserved": true,
+    "priorSummary": "Meta Ads + Google Ads, ofertas por tratamiento, filtrado, automatización y panel. Declara una media del 52% de leads convertidos en cita.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 258 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 993 palabras por página comercial recuperada. Muestras breves: “Consigue pacientes nuevos cada mes para tu clínica dental sin depender del boca a boca” · “Facebook e Instagram Ads para Clínicas Dentales que Convierten” · “Más Pacientes de Implantes para tu Clínica: Leads de Alto Valor”.",
+    "supportingHeadings": [
+      "Consigue pacientes nuevos cada mes para tu clínica dental sin depender del boca a boca",
+      "¡Mensaje enviado!",
+      "Especialistas en clínicas dentales,no en marketing genérico",
+      "No vendemos campañas. Vendemos un sistema de captación.",
+      "Los números hablan",
+      "Un sistema diseñadopara escalar tu clínica",
+      "¿Cómo conseguir más pacientes para tu clínica? Pregúntale a Atlas.",
+      "Leads. Citas. Crecimiento.",
+      "No todas las agencias juegan el mismo partido",
+      "Probablemente estés pensandoalguna de estas cosas",
+      "Todo el riesgo lo asumimos nosotros",
+      "Diagnóstico gratuito",
+      "Sin permanencias",
+      "Resultados medibles",
+      "Quiero más pacienteseste mes.",
+      "Facebook e Instagram Ads para Clínicas Dentales que Convierten",
+      "La diferencia entre Meta y Google para clínicas dentales",
+      "Qué funciona en Meta para clínicas dentales",
+      "Lead Ads con formulario nativo",
+      "Vídeo corto con resultados reales",
+      "Segmentación hiper-local",
+      "Remarketing inteligente",
+      "Nuestro proceso de cualificación",
+      "Resultados reales",
+      "¿Quieres generar demanda dental en tu zona?",
+      "Más Pacientes de Implantes para tu Clínica: Leads de Alto Valor",
+      "El reto del paciente de implante",
+      "Cómo captamos pacientes de implantes",
+      "Por qué el ROI de implantes justifica la inversión",
+      "Resultado típico"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar diagnóstico gratuito",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://dentalead.io/",
+      "text": "Solicitar diagnóstico gratuito",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Solicitar diagnóstico gratuito",
+      "Quiero mi diagnóstico gratuito",
+      "Reserva tu diagnóstico gratuito",
+      "Contacto"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://dentalead.io/",
+        "index": 1,
+        "action": "https://dentalead.io/",
+        "method": "GET",
+        "submitText": "Solicitar diagnóstico gratuito",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo Indica tu nombre completo.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono Introduce un teléfono válido.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email Introduce un email válido.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "clinic",
+            "label": "Clínica dental Indica el nombre de tu clínica.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "city",
+            "label": "Ciudad Indica la ciudad de la clínica.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Mensaje (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Ciudad Indica la ciudad de la clínica., website.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": [
+        "Ciudad Indica la ciudad de la clínica.",
+        "website"
+      ]
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Meta Ads + Google Ads, ofertas por tratamiento, filtrado, automatización y panel. Declara una media del 52% de leads convertidos en cita.",
+    "audience": "Clínicas dentales; captación por tratamiento.",
+    "prices": [
+      "El ticket es alto (800 € – 3.500 € por implante), el ciclo de decisión puede durar semanas, y las objeciones son concretas: el precio, el miedo al procedimiento, y la desconfianza hacia clínicas que no conoce.",
+      "Resultado típico 187 primeras visitas en 3 meses · 8,40 € por lead · Clínica en Barcelona Este resultado corresponde a una clínica especializada en implantología que partía de una agenda con huecos.",
+      "Nuestro sistema mantiene el contacto mediante WhatsApp y email durante las semanas posteriores para reactivar a quienes aún no han dado el paso Por qué el ROI de implantes justifica la inversión Con un ticket medio de 1.800 € por caso completo, un solo paciente",
+      "…usiva en el sector dental · Más de 40 clínicas confían en nosotros 📍 Clínica en Barcelona★★★★★ 187 primeras visitas en 3 meses · €8,40 por lead \"Pasamos de no saber de dónde venían los pacientes a tener lista de espera en dos meses.\" 🦷 Clínica dental, Barcelona Implantes · 187 primeras visitas 📍 Clínica en…"
+    ],
+    "guarantee": [
+      "Esa presión es nuestra mejor garantía de resultados.",
+      "Y cuando finalmente decide actuar, necesita encontrar una clínica que le transmita seguridad en tres frentes: competencia profesional, transparencia en el precio y garantía de resultado."
+    ],
+    "proof": [
+      "⚡ Quedan 3 plazas disponibles este mes para nuevas clínicas — Reserva tu diagnóstico gratuito ✕ El sistema Resultados Marketing Dental Blog Recursos ES EN Quiero más pacientes 🌙 ✕ El sistema Resultados Marketing Dental Blog Recursos Quiero más pacientes → 187 Primeras visitas en 3 meses · €8,40/…"
+    ],
+    "objections": [
+      "Sin permanencias Nada de contratos de 12 meses.",
+      "Sin permanencias · Sin compromiso · Respuesta en 24h ★★★★★ 4.9/5 · Basado en clínicas activas Solo clínicas dentales +40 clínicas activas +120.000 leads generados 5M€+ en ventas para clínicas Sin permanencias ¿POR QUÉ DENTALEAD?",
+      "¿Cuánto tardaré en ver resultados?+ Los primeros leads suelen llegar durante la primera semana de campaña.",
+      "✓Diagnóstico gratuito de tu situación actual ✓Plan de captación personalizado sin compromiso ✓Respuesta en menos de 24 horas ✓Sin permanencias ni letra pequeña Nombre completo Indica tu nombre completo.",
+      "Quiero más pacientes → Reservar llamada estratégica Sin permanencias · Sin compromiso · Diagnóstico gratuito CL DR MC 40+ clínicas confían en Dentalead Nombre completo Indica tu nombre completo.",
+      "Trabajamos con una tarifa mensual sin permanencia, y la inversión publicitaria en Meta y Google la decides tú y va siempre a tu nombre."
+    ],
+    "urgency": [
+      "⚡ Quedan 3 plazas disponibles este mes para nuevas clínicas — Reserva tu diagnóstico gratuito ✕ El sistema Resultados Marketing Dental Blog Recursos ES EN Quiero más pacientes 🌙 ✕ El sistema Resul…",
+      "PASO 03 Campañas en Meta y Google que convierten Lanzamos campañas dirigidas a personas de tu zona que buscan tratamiento dental ahora.",
+      "Atlas Online Tu estratega de captación dental — disponible ahora.",
+      "Con el sistema correcto, tú llegas antes que tu competencia a los pacientes que están buscando tratamiento ahora mismo en tu zona.",
+      "Google Ads para Dentistas Pacientes que ya están buscando tratamiento dental en tu zona ahora mismo."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…más pacientes 🌙 ✕ El sistema Resultados Marketing Dental Blog Recursos Quiero más pacientes → 187 Primeras visitas en 3 meses · €8,40/lead 40+ Clínicas activas en toda España 52% Conversión media a cita agendada Hola, soy Atlas 👋 Te cuento cómo conseguir más pacientes para tu clínica.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Sin permanencias · Sin compromiso · Respuesta en 24h ★★★★★ 4.9/5 · Basado en clínicas activas Solo clínicas dentales +40 clínicas activas +120.000 leads generados 5M€+ en ventas para clínicas Sin permanencias ¿POR QUÉ DENTALEAD?",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "+40 Clínicas activas 5M€+ Ventas generadas 52% Conversión media 24/7 Sistema activo captando pacientes ⚠ EL PROBLEMA REAL Si cada mes no sabes cuántos pacientes nuevosvan a entrar por la puerta, no tienes un negocio predecible.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "…usiva en el sector dental · Más de 40 clínicas confían en nosotros 📍 Clínica en Barcelona★★★★★ 187 primeras visitas en 3 meses · €8,40 por lead \"Pasamos de no saber de dónde venían los pacientes a tener lista de espera en dos meses.\" 🦷 Clínica dental, Barcelona Implantes · 187 primeras visitas 📍 Clínica en…",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Con Dentalead fue diferente desde el primer día.\" 🦷 Clínica dental, Valencia Ortodoncia · 94 leads cualificados 📍 Clínica en Sevilla★★★★★ x3 en facturación en 4 meses · €11,50 por lead \"Lo mejor es la transparencia.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "El ticket es alto (800 € – 3.500 € por implante), el ciclo de decisión puede durar semanas, y las objeciones son concretas: el precio, el miedo al procedimiento, y la desconfianza hacia clínicas que no conoce.",
+          "url": "https://dentalead.io/marketing-dental/implantes/",
+          "pageTitle": "Captación de Pacientes para Implantes Dentales | Dentalead",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Nuestro sistema mantiene el contacto mediante WhatsApp y email durante las semanas posteriores para reactivar a quienes aún no han dado el paso Por qué el ROI de implantes justifica la inversión Con un ticket medio de 1.800 € por caso completo, un solo paciente",
+          "url": "https://dentalead.io/marketing-dental/implantes/",
+          "pageTitle": "Captación de Pacientes para Implantes Dentales | Dentalead",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Un ejemplo con números reales: Inversión publicitaria: 2.000 €/mes Coste por lead cualificado: 8 – 18 € Leads generados: 110 – 250 al mes Conversión a primera visita: 52% Ticket medio por caso: 1.800 €+ Incluso en el escenario más conservador, la facturación generada por",
+          "url": "https://dentalead.io/marketing-dental/implantes/",
+          "pageTitle": "Captación de Pacientes para Implantes Dentales | Dentalead",
+          "pageCategory": "pricing",
+          "amountType": "ad_spend"
+        },
+        {
+          "text": "Resultado típico 187 primeras visitas en 3 meses · 8,40 € por lead · Clínica en Barcelona Este resultado corresponde a una clínica especializada en implantología que partía de una agenda con huecos.",
+          "url": "https://dentalead.io/marketing-dental/implantes/",
+          "pageTitle": "Captación de Pacientes para Implantes Dentales | Dentalead",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Esa presión es nuestra mejor garantía de resultados.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Y cuando finalmente decide actuar, necesita encontrar una clínica que le transmita seguridad en tres frentes: competencia profesional, transparencia en el precio y garantía de resultado.",
+          "url": "https://dentalead.io/marketing-dental/implantes/",
+          "pageTitle": "Captación de Pacientes para Implantes Dentales | Dentalead",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "⚡ Quedan 3 plazas disponibles este mes para nuevas clínicas — Reserva tu diagnóstico gratuito ✕ El sistema Resultados Marketing Dental Blog Recursos ES EN Quiero más pacientes 🌙 ✕ El sistema Resultados Marketing Dental Blog Recursos Quiero más pacientes → 187 Primeras visitas en 3 meses · €8,40/…",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Quiero más pacientes → Reservar llamada estratégica Sin permanencias · Sin compromiso · Diagnóstico gratuito CL DR MC 40+ clínicas confían en Dentalead Nombre completo Indica tu nombre completo.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin permanencias · Sin compromiso · Respuesta en 24h ★★★★★ 4.9/5 · Basado en clínicas activas Solo clínicas dentales +40 clínicas activas +120.000 leads generados 5M€+ en ventas para clínicas Sin permanencias ¿POR QUÉ DENTALEAD?",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Trabajamos con una tarifa mensual sin permanencia, y la inversión publicitaria en Meta y Google la decides tú y va siempre a tu nombre.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Cuánto tardaré en ver resultados?+ Los primeros leads suelen llegar durante la primera semana de campaña.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin permanencias Nada de contratos de 12 meses.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        },
+        {
+          "text": "✓Diagnóstico gratuito de tu situación actual ✓Plan de captación personalizado sin compromiso ✓Respuesta en menos de 24 horas ✓Sin permanencias ni letra pequeña Nombre completo Indica tu nombre completo.",
+          "url": "https://dentalead.io/",
+          "pageTitle": "Captación de Pacientes para Clínicas Dentales | Dentalead",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://dentalead.io/",
+        "https://dentalead.io/marketing-dental/facebook-ads-clinicas-dentales/",
+        "https://dentalead.io/marketing-dental/implantes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Consigue pacientes nuevos cada mes para tu clínica dental sin depender del boca a boca",
+        "Facebook e Instagram Ads para Clínicas Dentales que Convierten",
+        "Más Pacientes de Implantes para tu Clínica: Leads de Alto Valor",
+        "Marketing Dental que Genera Pacientes, No Solo Clics"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Reserva tu diagnóstico gratuito",
+        "Solicitar diagnóstico gratuito",
+        "Quiero mi diagnóstico gratuito",
+        "Contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://dentalead.io/ · 7 campos",
+        "https://dentalead.io/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Reserva tu diagnóstico gratuito"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → formulario con nombre, teléfono, email, clínica y ciudad → respuesta en menos de 24 h → diagnóstico de zona/competencia y propuesta cerrada con estimación de CPL"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://dentalead.io/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://dentalead.io/marketing-dental/facebook-ads-clinicas-dentales/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://dentalead.io/marketing-dental/implantes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://dentalead.io/sobre-nosotros/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://dentalead.io/blog/cuanto-cuesta-publicidad-facebook-dentistas/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://dentalead.io/blog/marketing-implantes-dentales/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://dentalead.io/marketing-dental/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=dentalead.io",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?id=2072395857495128",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://ildentistacieco.com/il-dentista-cieco",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://ildentistacieco.com/",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.facebook.com/ads/library/?id=2008379903137176",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://odontocrazia.com/vsl-odontocrazia",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "http://odontocrazia.com/",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.facebook.com/ads/library/?id=1386486333329051",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://ildentistacieco.com/il-dentista-cieco",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://www.facebook.com/ads/library/?id=1621345466081335",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "http://dentalead.ch/analisi",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "http://dentalead.ch/analisi",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "http://dentalead.ch/",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.facebook.com/ads/library/?id=1055774130168229",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "http://dentalead.ch/analisi",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?id=1615051713551058",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://www.odontocrazia.com/vsl-odontocrazia",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.odontocrazia.com/vsl-odontocrazia",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "http://www.odontocrazia.com/",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?id=2254064758750877",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://ildentistacieco.com/il-dentista-cieco",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?id=2306836960132896",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar diagnóstico gratuito”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

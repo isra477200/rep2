@@ -1,0 +1,376 @@
+{
+  "id": "bia",
+  "name": "BIA",
+  "reviewedAt": "2026-08-22T15:50:19.852Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Contact Information - BIA",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, orientado a la acción. Usa 332 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 436 palabras por página comercial recuperada. Muestras breves: “BIA” · “Contact Information - BIA”.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.bia.ge/en",
+      "text": "Contact",
+      "href": "https://www.bia.ge/en/Home/Contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223.25
+    },
+    "ctas": [
+      "Contact",
+      "Cart",
+      "Send",
+      "Advertisement in BIA",
+      "A.Tsereteli Ave.116, Didube Plaza, 4 Floor"
+    ],
+    "captureType": "Checkout verificado",
+    "forms": [
+      {
+        "pageUrl": "https://www.bia.ge/en",
+        "index": 5,
+        "action": "https://www.bia.ge/en",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "SenderName",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "SenderMail",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Subject",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Body",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.bia.ge/en/Home/Contact",
+        "index": 2,
+        "action": "https://www.bia.ge/en/Home/Contact",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "ContactBiaMessageModel.SenderName",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactBiaMessageModel.SenderLastname",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactBiaMessageModel.SenderMail",
+            "label": null,
+            "placeholder": "E-Mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ContactBiaMessageModel.MailSubject",
+            "label": null,
+            "placeholder": "Subject",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "ContactBiaMessageModel.MessageText",
+            "label": null,
+            "placeholder": "Text",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.bia.ge/en/Company/1878",
+        "index": 6,
+        "action": "https://www.bia.ge/en/Company/1878",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "SenderName",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "SenderMail",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Subject",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Body",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "IAgree",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": true,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Terms And Conditions Yout Name Your E-Mail Subject Text Close Retry Welcome to www.bia.ge You can search for business information about more than 79 000 companies on our website Use our search engine Or view all companies in Full List New feature on BIA Now",
+      "…information Marketing list Email marketing Business Consulting Advertisement in BIA Contact A.Tsereteli Ave.116, Didube Plaza, 4 Floor +995 32 219 55 55 info@bia.ge Subscribe newsletters Join us © 2017 BIA «Business Information Agency» Feedback F.A.Q.",
+      "…s About company Management Marketing Finance Online Press Trademarks: IT Service Brands: Not Available Legal Form: LLC (Limited Liability Company) VAT Number: 404431539 Registration Number: Registration Date: 08/11/2012 Registration Authority: LEPL National Agency of Public Registry Legal Address: 0102, Tb…",
+      "Spreading the technical salt on the streets during snowfall; 5.",
+      "Read More No Logo Ainow IT Trademarks: Ainow IT Industries Spheres: Computer software;Computer services Read More Comland Trademarks: Comland Industries Spheres: Online stores;Computer services;Computer hardware and accessories trade (Wholesale); ..."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.bia.ge/en",
+        "https://www.bia.ge/en/Home/Contact",
+        "https://www.bia.ge/en/Company/IndustryCategory/62"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "BIA",
+        "Contact Information - BIA"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "A.Tsereteli Ave.116, Didube Plaza, 4 Floor",
+        "Cart",
+        "Send",
+        "Advertisement in BIA"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.bia.ge/en · 4 campos",
+        "https://www.bia.ge/en/Home/Contact · 5 campos",
+        "https://www.bia.ge/en/Home/Contact · 4 campos",
+        "https://www.bia.ge/en/Company/IndustryCategory/62 · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "observado",
+      "evidence": [
+        "Checkout o compra directa visible."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Propuesta / cierre [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.bia.ge/en",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.bia.ge/en/Home/Contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.bia.ge/en/Company/IndustryCategory/62",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.bia.ge/en/Company/IndustryCategory/74",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.bia.ge/en/Company/1878",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.bia.ge/en/Company/Industry/2537?ServiceCategoryId=62",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.bia.ge/en/Company/80567?VisitCompanyType=3&ServiceCategoryId=62&ServiceId=2537",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

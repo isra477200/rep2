@@ -1,0 +1,467 @@
+{
+  "id": "callda",
+  "name": "CallDa",
+  "reviewedAt": "2026-08-22T15:50:19.881Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "사장님이 못 받은 전화·카톡·문의, 콜다가 대신 받습니다.",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, urgencia comercial, consultivo / basado en preguntas, explicativo. Usa 272 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 955 palabras por página comercial recuperada. Muestras breves: “사장님이 못 받은 전화·카톡·문의, 콜다가 대신 받습니다.” · “개인정보처리방침” · “이용약관”.",
+    "supportingHeadings": [
+      "사장님이 못 받은 전화·카톡·문의, 콜다가 대신 받습니다.",
+      "내 가게 이름으로AI 인사말 듣기",
+      "하루 5~10통 전화,직원을 뽑아야 하나?",
+      "이런 목소리로받습니다.",
+      "받고, 정리하고,필요하면 이어받습니다.",
+      "어떤 문의를맡길 수 있나요",
+      "영업·구직·상담 문의",
+      "주문·배송·교환·반품·취소",
+      "병원·미용실·식당·상담 예약",
+      "A/S·설치·수리·청소",
+      "AI가 다 답한다고약속하지 않습니다.",
+      "업종마다 말은 달라도,해결하는 구조는 같습니다.",
+      "전화만이 아닙니다. 게시판·채팅까지 한 번에.",
+      "규모에 맞게4가지 플랜.",
+      "FAQ",
+      "AI가 단가까지 답해주나요?",
+      "채널톡을 쓰고 있는데 같이 쓸 수 있나요?",
+      "사장님이 직접 운영해야 하나요?",
+      "통화량이 갑자기 늘어나면 청구 폭탄이 오나요?",
+      "도입까지 얼마나 걸리나요?",
+      "첫 통화,3일 안에 시작합니다.",
+      "결제취소 및 환불규정",
+      "제1조 (결제 수단)",
+      "제2조 (결제 취소)",
+      "제3조 (환불 기준)",
+      "제4조 (정기결제 해지)",
+      "제5조 (환불 처리 기간)",
+      "제6조 (환불 제한 사유)",
+      "제7조 (결제 실패 및 재시도)",
+      "제8조 (데이터 보관 및 삭제)"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "contact@callda.co.kr",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://callda.co.kr/static/refund-policy.html",
+      "text": "contact@callda.co.kr",
+      "href": null,
+      "element": "a",
+      "kind": "conversion",
+      "score": 165
+    },
+    "ctas": [
+      "contact@callda.co.kr",
+      "상담 신청하기"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://callda.co.kr/",
+        "index": 1,
+        "action": "https://callda.co.kr/",
+        "method": "GET",
+        "submitText": "상담 신청하기",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "업체명",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "담당자명",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "연락처",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "industry",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: company, industry.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": [
+        "company",
+        "industry"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "02 · 주문/조회 주문·배송·교환·반품·취소 주문조회·배송조회는 AI가 즉답.",
+      "업종 선택 병원/의원 미용실/네일샵 학원 식당/카페 쇼핑몰/이커머스 기타 상담 신청하기 개인정보처리방침 | 이용약관 | 결제취소 및 환불규정 © 2026 CALLDA.",
+      "교환·반품·취소는 정보 수집 후 운영자 마감.",
+      "자주 묻는 질문 FAQ AI가 단가까지 답해주나요?",
+      "단가·계약·법적 약속은 자동 응답하지 않습니다.",
+      "CALLDA 홈 개인정보처리방침 이용약관 결제취소 및 환불규정 시행일: 2026년 5월 18일 콜다(CALLDA) 서비스 이용과 관련한 결제 취소 및 환불 기준을 안내합니다.",
+      "제2조 (결제 취소) 결제 당일 취소 신용카드: 당일 결제 승인 취소가 가능하며, 카드사 정책에 따라 처리됩니다.",
+      "실시간 계좌이체: 당일 취소 요청 시 전액 환불됩니다."
+    ],
+    "urgency": [
+      "교환·반품·취소는 정보 수집 후 운영자 마감.",
+      "받기 → 확인 → 마감."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "혼자 운영하시는 사장님께 하루 5~10통 전화,직원을 뽑아야 하나?",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "사람 1명 더 뽑으면 정직원 월 250~350만(보험·퇴직 포함) 파트타임 월 150~220만(풀타임 기준) 9~18시 / 한 번에 1통 / 연차·점심·휴가 빠짐 vs 콜다를 쓰면 Basic 월 30만(전화 300건) Starter 월 60만(전화+채팅 600건) Growth 월 120만(옴니채널 1,000건) 24시간 / 동시 다회선 / 한 번도 안 빠짐 이런",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "triage.callda 02 · 확인 틀리면 안 되는 정보는다시 한 번 확인 거래처 화환 30만원 가능해요?",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "오후 2:14 오후 2:14 네, 30만원 표준 화환 가능합니다.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "01 · 리드 접수 영업·구직·상담 문의 B2B 영업문의, 구직자 지원 문의, 일반 상담 요청을 자동 수집·정리.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "03 · 예약 접수 병원·미용실·식당·상담 예약 예약 의도 확인 → 희망 날짜·시간·이름·연락처 수집 → 운영자 확정 후 알림.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "결제 링크 보내드릴게요 🙂 summary.callda 03 · 연결 어려운 건 사람이이어받을 수 있게 콜다 · 담당자 전달 환불 문의 1건 · 거래처 박OO주문 #4521 · 5/12 배송 건주문 정보 정리 완료담당자 확인 후 회신 부탁드립니다 14:38 접수 전체 보기 → 분쟁·민감 문의는 정리해서 담당자에게 전달합니다.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "자동 AI만 처리 반복 문의·정해진 가격 주문·예약 의도 확인·배송 조회 같은 일상 응대는 AI가 바로 처리 확인 다시 확인이 필요한 것 이름·주소·주문 정보·일정처럼 틀리면 안 되는 정보는 카톡이나 링크로 짧게 다시 확인 연결 사람이 이어받게 연결 환불·분쟁·긴급·애매한 문의는 정리해서 담당자에게 전달.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "전화 채널 통화 CS 24시간 AI 자동 응대 용건 정리 → 카톡 전달 민감 건 상담사 에스컬레이션 통화 녹취·주간 리포트 게시판·채팅 채널 텍스트 CS 쿠팡·네이버 게시판 5분 내 답변 카카오톡 채널·인스타 DM·라이브챗 반품·부분환불 구글시트 정리 상담사 검수 (민감 건) Starter 월 60만원부터 · 전화 +",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "업종 선택 병원/의원 미용실/네일샵 학원 식당/카페 쇼핑몰/이커머스 기타 상담 신청하기 개인정보처리방침 | 이용약관 | 결제취소 및 환불규정 © 2026 CALLDA.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "CALLDA 홈 개인정보처리방침 이용약관 결제취소 및 환불규정 시행일: 2026년 5월 18일 콜다(CALLDA) 서비스 이용과 관련한 결제 취소 및 환불 기준을 안내합니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "실시간 계좌이체: 당일 취소 요청 시 전액 환불됩니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "가상계좌: 입금 전에는 즉시 취소 가능하며, 입금 후에는 환불 규정이 적용됩니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "취소 접수: contact@callda.co.kr 제3조 (환불 기준) 구분 환불 금액 이용 개시 전 해지 전액 환불 이용 개시 후 해지 해지 요청일 기준 당월 잔여 기간에 대해 일할 계산하여 환불 도입 상담 또는 샘플 확인 단계 별도 유료 세팅 합의가 없는 경우 과금 없음 파일럿 또는",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "다만 이용자가 즉시 중단을 요청하는 경우 잔여 기간을 일할 계산하여 환불할 수 있습니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "제5조 (환불 처리 기간) 환불은 해지 요청 접수일로부터 영업일 기준 7일 이내에 처리됩니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        }
+      ],
+      "proof": [],
+      "objections": [
+        {
+          "text": "02 · 주문/조회 주문·배송·교환·반품·취소 주문조회·배송조회는 AI가 즉답.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other"
+        },
+        {
+          "text": "교환·반품·취소는 정보 수집 후 운영자 마감.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other"
+        },
+        {
+          "text": "자주 묻는 질문 FAQ AI가 단가까지 답해주나요?",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other"
+        },
+        {
+          "text": "단가·계약·법적 약속은 자동 응답하지 않습니다.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other"
+        },
+        {
+          "text": "업종 선택 병원/의원 미용실/네일샵 학원 식당/카페 쇼핑몰/이커머스 기타 상담 신청하기 개인정보처리방침 | 이용약관 | 결제취소 및 환불규정 © 2026 CALLDA.",
+          "url": "https://callda.co.kr/",
+          "pageTitle": "콜다 — 전화·카톡 1차는 AI, 단가·계약은 운영자 검수",
+          "pageCategory": "other"
+        },
+        {
+          "text": "CALLDA 홈 개인정보처리방침 이용약관 결제취소 및 환불규정 시행일: 2026년 5월 18일 콜다(CALLDA) 서비스 이용과 관련한 결제 취소 및 환불 기준을 안내합니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "제2조 (결제 취소) 결제 당일 취소 신용카드: 당일 결제 승인 취소가 가능하며, 카드사 정책에 따라 처리됩니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "실시간 계좌이체: 당일 취소 요청 시 전액 환불됩니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "가상계좌: 입금 전에는 즉시 취소 가능하며, 입금 후에는 환불 규정이 적용됩니다.",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "취소 접수: contact@callda.co.kr 제3조 (환불 기준) 구분 환불 금액 이용 개시 전 해지 전액 환불 이용 개시 후 해지 해지 요청일 기준 당월 잔여 기간에 대해 일할 계산하여 환불 도입 상담 또는 샘플 확인 단계 별도 유료 세팅 합의가 없는 경우 과금 없음 파일럿 또는",
+          "url": "https://callda.co.kr/static/refund-policy.html",
+          "pageTitle": "결제취소 및 환불규정 - 콜다(CALLDA)",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://callda.co.kr/",
+        "https://callda.co.kr/static/refund-policy.html",
+        "https://callda.co.kr/static/privacy.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "사장님이 못 받은 전화·카톡·문의, 콜다가 대신 받습니다.",
+        "개인정보처리방침",
+        "이용약관"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "상담 신청하기",
+        "contact@callda.co.kr"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://callda.co.kr/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://callda.co.kr/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://callda.co.kr/static/refund-policy.html",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://callda.co.kr/static/privacy.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://callda.co.kr/static/terms.html",
+      "label": "Fuente pública 4"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://callda.co.kr/api/payment/catalog: Bloqueado por robots.txt",
+    "robots.txt impidió 1 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “contact@callda.co.kr”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

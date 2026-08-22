@@ -1,0 +1,579 @@
+{
+  "id": "rami-media",
+  "name": "Rami Media",
+  "reviewedAt": "2026-08-22T15:50:17.820Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Entwicklung",
+    "heroObserved": true,
+    "priorSummary": "Paquete 'Marketing-FLAT' con garantía de resultado y devolución íntegra del dinero si no se cumplen los objetivos",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, orientado a la acción, apoya la venta en reversión de riesgo. Usa 60 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 615 palabras por página comercial recuperada. Muestras breves: “Entwicklung”.",
+    "supportingHeadings": [
+      "Entwicklung",
+      "Marketing",
+      "Branchen",
+      "Print",
+      "ÜBER UNS",
+      "Marketing-FLAT: Geld-zurück-Garantie",
+      "Fragen Sie uns!",
+      "...seit 20 Jahren ✓",
+      "Facebook Marketing",
+      "Rami: Stabiler Wachstum rechnet sich.",
+      "Liebt Dich Google?",
+      "Handwerk Marketing: Preise, Kosten",
+      "Erfolgreiche Kunden: Websites von Rami",
+      "Dienstleistung",
+      "Dienstleistungen: Tipps für mehr Aufträge ✓",
+      "Existenzgründung, StartUp"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Lieber per WhatsApp? Hier klicken",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://rami-media.de/online-marketing/garantie-erfolg",
+      "text": "Lieber per WhatsApp? Hier klicken",
+      "href": "https://wa.me/4971150073030?text=Hallo%20Rami,%20ich%20bin%20%C3%BCber%20Eure%20Website%20zu%20Euch%20gelangt%20und%20habe%20folgende%20Fragen:%20",
+      "element": "a",
+      "kind": "conversion",
+      "score": 116.75
+    },
+    "ctas": [
+      "Facebook down, Instagram down, WhatsApp down",
+      "Lieber per WhatsApp? Hier klicken",
+      "Kontakt",
+      "Absenden"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://rami-media.de/online-marketing/garantie-erfolg",
+        "index": 3,
+        "action": "https://rami-media.de/online-marketing/garantie-erfolg",
+        "method": "POST",
+        "submitText": "Absenden",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0]",
+            "label": "Name / Firma *",
+            "placeholder": "Name / Firma",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "eMail-Adresse *",
+            "placeholder": "eMail-Adresse",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Telefon *",
+            "placeholder": "Telefon",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][2]",
+            "label": "Fragen Sie uns! *",
+            "placeholder": "Fragen Sie uns!",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[hp]",
+            "label": "Message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rami-media.de/facebook-marketing",
+        "index": 3,
+        "action": "https://rami-media.de/facebook-marketing",
+        "method": "POST",
+        "submitText": "Absenden",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0]",
+            "label": "Name / Firma *",
+            "placeholder": "Name / Firma",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "eMail-Adresse *",
+            "placeholder": "eMail-Adresse",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Telefon *",
+            "placeholder": "Telefon",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][2]",
+            "label": "Fragen Sie uns! *",
+            "placeholder": "Fragen Sie uns!",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[hp]",
+            "label": "Email",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rami-media.de/handwerk-marketing/handwerk-marketing-preise-kosten",
+        "index": 3,
+        "action": "https://rami-media.de/handwerk-marketing/handwerk-marketing-preise-kosten",
+        "method": "POST",
+        "submitText": "Absenden",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0]",
+            "label": "Name / Firma *",
+            "placeholder": "Name / Firma",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "eMail-Adresse *",
+            "placeholder": "eMail-Adresse",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Telefon *",
+            "placeholder": "Telefon",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][2]",
+            "label": "Fragen Sie uns! *",
+            "placeholder": "Fragen Sie uns!",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[hp]",
+            "label": "Phone",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rami-media.de/kunden",
+        "index": 3,
+        "action": "https://rami-media.de/kunden",
+        "method": "POST",
+        "submitText": "Absenden",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0]",
+            "label": "Name / Firma *",
+            "placeholder": "Name / Firma",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "eMail-Adresse *",
+            "placeholder": "eMail-Adresse",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Telefon *",
+            "placeholder": "Telefon",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][2]",
+            "label": "Fragen Sie uns! *",
+            "placeholder": "Fragen Sie uns!",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[hp]",
+            "label": "Comment",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rami-media.de/existenzgruendung-startup",
+        "index": 3,
+        "action": "https://rami-media.de/existenzgruendung-startup",
+        "method": "POST",
+        "submitText": "Absenden",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0]",
+            "label": "Name / Firma *",
+            "placeholder": "Name / Firma",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "eMail-Adresse *",
+            "placeholder": "eMail-Adresse",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Telefon *",
+            "placeholder": "Telefon",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][2]",
+            "label": "Fragen Sie uns! *",
+            "placeholder": "Fragen Sie uns!",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[hp]",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "5 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Website.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": [
+        "Website"
+      ]
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Paquete 'Marketing-FLAT' con garantía de resultado y devolución íntegra del dinero si no se cumplen los objetivos",
+    "audience": "Pymes locales alemanas (marketing online generalista, SEO/SEM)",
+    "prices": [],
+    "guarantee": [
+      "Hier klickenMessageAbsenden Datenschutz-Hinweis Oben eingegebene Daten speichern wir zur Verarbeitung Ihre Anfrage und löschen sie nach Bearbeitung wieder (Datenschutzerklärung) Marketing-FLAT: Geld-zurück-Garantie Online-Marketing | Warum?",
+      "| FLAT | SEO | Social Media | Garantie | Regional | PR | Adwords Wir übernehmen das volle Risiko für Sie: Voller Erfolg, oder Geld zurück.",
+      "Wie aber können wir das aber garantieren, wenn die Positionierung durch Google festgelegt wird und Dritte keinen direkten Einfluss darauf haben?"
+    ],
+    "proof": [],
+    "objections": [
+      "…port mehr Print Corporate Design Logo Banner Flyer Schilder Speisekarten Briefpapier Beispiele ÜBER UNS Über uns Kunden FAQ Kontakt ...seit über 20 Jahren.",
+      "Über uns Kunden Häufige Fragen (FAQ) Karriere Kontakt Kontakt FRAGEN SIE UNS!"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Hier klickenMessageAbsenden Datenschutz-Hinweis Oben eingegebene Daten speichern wir zur Verarbeitung Ihre Anfrage und löschen sie nach Bearbeitung wieder (Datenschutzerklärung) Marketing-FLAT: Geld-zurück-Garantie Online-Marketing | Warum?",
+          "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+          "pageTitle": "Marketing-FLAT: Geld-zurück-Garantie",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "| FLAT | SEO | Social Media | Garantie | Regional | PR | Adwords Wir übernehmen das volle Risiko für Sie: Voller Erfolg, oder Geld zurück.",
+          "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+          "pageTitle": "Marketing-FLAT: Geld-zurück-Garantie",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Wie aber können wir das aber garantieren, wenn die Positionierung durch Google festgelegt wird und Dritte keinen direkten Einfluss darauf haben?",
+          "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+          "pageTitle": "Marketing-FLAT: Geld-zurück-Garantie",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…port mehr Print Corporate Design Logo Banner Flyer Schilder Speisekarten Briefpapier Beispiele ÜBER UNS Über uns Kunden FAQ Kontakt ...seit über 20 Jahren.",
+          "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+          "pageTitle": "Marketing-FLAT: Geld-zurück-Garantie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Über uns Kunden Häufige Fragen (FAQ) Karriere Kontakt Kontakt FRAGEN SIE UNS!",
+          "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+          "pageTitle": "Marketing-FLAT: Geld-zurück-Garantie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Über Rami Häufige Fragen (FAQ) Erfolgreiche Kunden Impressionen Partner Karriere Kontakt Datenschutz Impressum Unsere Website nutzt Cookies, um Analysen und das Nutzererlebnis zu verbessern.",
+          "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+          "pageTitle": "Marketing-FLAT: Geld-zurück-Garantie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "…port mehr Print Corporate Design Logo Banner Flyer Schilder Speisekarten Briefpapier Beispiele ÜBER UNS Über uns Kunden FAQ Kontakt ...seit über 20 Jahren.",
+          "url": "https://rami-media.de/marketing/dienstleistungen",
+          "pageTitle": "Dienstleistungen Marketing: Website individuell, Suchmaschinenoptimierung, Social Media Marketing ✓",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Über uns Kunden Häufige Fragen (FAQ) Karriere Kontakt Kontakt FRAGEN SIE UNS!",
+          "url": "https://rami-media.de/marketing/dienstleistungen",
+          "pageTitle": "Dienstleistungen Marketing: Website individuell, Suchmaschinenoptimierung, Social Media Marketing ✓",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Über Rami Häufige Fragen (FAQ) Erfolgreiche Kunden Impressionen Partner Karriere Kontakt Datenschutz Impressum Unsere Website nutzt Cookies, um Analysen und das Nutzererlebnis zu verbessern.",
+          "url": "https://rami-media.de/marketing/dienstleistungen",
+          "pageTitle": "Dienstleistungen Marketing: Website individuell, Suchmaschinenoptimierung, Social Media Marketing ✓",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://rami-media.de/online-marketing/garantie-erfolg",
+        "https://rami-media.de/facebook-marketing",
+        "https://rami-media.de/handwerk-marketing/handwerk-marketing-preise-kosten"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Entwicklung"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Kontakt",
+        "Lieber per WhatsApp? Hier klicken",
+        "Absenden",
+        "Facebook down, Instagram down, WhatsApp down"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://rami-media.de/online-marketing/garantie-erfolg · 5 campos",
+        "https://rami-media.de/online-marketing/garantie-erfolg · 5 campos",
+        "https://rami-media.de/facebook-marketing · 5 campos",
+        "https://rami-media.de/facebook-marketing · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario/WhatsApp o consulta gratuita → conversación para detectar debilidades de la presencia exterior y valorar web/SEO → propuesta individual ajustada al negocio y presupuesto; el cliente decide →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://rami-media.de/online-marketing/garantie-erfolg",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://rami-media.de/facebook-marketing",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://rami-media.de/handwerk-marketing/handwerk-marketing-preise-kosten",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://rami-media.de/kunden",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://rami-media.de/online-marketing/dienstleistung",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://rami-media.de/marketing/dienstleistungen",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://rami-media.de/existenzgruendung-startup",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://rami-media.de/handwerk-marketing",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Lieber per WhatsApp? Hier klicken”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

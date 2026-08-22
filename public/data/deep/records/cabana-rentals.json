@@ -1,0 +1,378 @@
+{
+  "id": "cabana-rentals",
+  "name": "Cabana Rentals",
+  "reviewedAt": "2026-08-22T15:50:19.752Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Gestión de alquiler vacacional y de temporada",
+    "heroObserved": true,
+    "priorSummary": "Gestión integral de alquiler vacacional: optimización de anuncio, gestión multicanal, limpieza, mantenimiento, atención 24/7, ayuda con licencias",
+    "voice": "Tono cuantitativo, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 35 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 774 palabras por página comercial recuperada. Muestras breves: “Gestión de alquiler vacacional y de temporada” · “Contacto” · “CABANA, gestión transparente”.",
+    "supportingHeadings": [
+      "Gestión de alquiler vacacional y de temporada",
+      "En todo el territorio nacional!",
+      "Somos anfitriones profesionales de Airbnb",
+      "Transparencia, comunicación y calidad",
+      "¿Cómo funciona?",
+      "Los servicios incluidos en CABANA",
+      "Actualización de tarifas y precios",
+      "Gestión del perfil",
+      "Gestión de reservas",
+      "Multiplataforma",
+      "Check in/Check out",
+      "Limpieza",
+      "Mantenimiento",
+      "Total transparencia",
+      "Servicios CABANA",
+      "Gestión en tiempo real",
+      "Síguenos",
+      "Contacto",
+      "No seas tímido, hablemos",
+      "Formulario de contacto",
+      "CABANA, gestión transparente",
+      "PLAN BRISA",
+      "PLAN OASIS",
+      "PLAN PARAÍSO",
+      "PLAN LEGADO",
+      "Compromiso con la excelencia",
+      "Servicios integrales CABANA",
+      "Fotografía",
+      "Reformas y decoración",
+      "Licencias de apertura"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Consulta nuestras tarifas",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://cabanarentals.es/",
+      "text": "Consulta nuestras tarifas",
+      "href": "https://cabanarentals.es/tarifa/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 178.75
+    },
+    "ctas": [
+      "Consulta nuestras tarifas",
+      "Contact us",
+      "Contacta con nosotros",
+      "Te llamamos",
+      "Enviar",
+      "{title}",
+      "+34 ‭644 081 538",
+      "hola@cabanarentals.es"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://cabanarentals.es/",
+        "index": 1,
+        "action": "https://cabanarentals.es/",
+        "method": "POST",
+        "submitText": "Te llamamos",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[numtelefono]",
+            "label": "Telefono",
+            "placeholder": "Introduce tu número de teléfono",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cabanarentals.es/contacto/",
+        "index": 1,
+        "action": "https://cabanarentals.es/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[tel]",
+            "label": "Teléfono de contacto",
+            "placeholder": "Teléfono de contacto",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[message]",
+            "label": "Tipo de inmueble",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_040c01f]",
+            "label": "Localización del inmueble",
+            "placeholder": "Localización del inmueble",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "form_fields[field_ee559f7]",
+            "label": "Número de habitaciones",
+            "placeholder": "Número de habitaciones",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_a6eda33]",
+            "label": "Comentarios adicionales",
+            "placeholder": "Comentarios adicionales",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 7 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "HubSpot",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Gestión integral de alquiler vacacional: optimización de anuncio, gestión multicanal, limpieza, mantenimiento, atención 24/7, ayuda con licencias",
+    "audience": "Propietarios de viviendas de alquiler vacacional en Tenerife (Canarias) y otras regiones (Galicia, Andalucía, Castilla y León)",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "…De Reservas Consulta nuestras tarifas NUESTRA TARIFA DESDE Por reserva 1 % Impuestos no incluidos Sin cuota de alta Sin permanencia Contacta con nosotros Gestión en tiempo real Monitoriza tus ingresos Consulta los beneficios que genera tu alquiler turístico y el volumen de ocupación.",
+      "…ramente tu vivienda turística de forma transparente.Nuestra tarifa desde un 10% realIVA no incluidoSin cuota de alta ni permanencia Rentabilización Nos encargamos de obtener el máximo beneficio mediante la gestión de tu alquiler turístico en Vigo.Estrategia profesional de precios.Recibe los ingresos directamen…"
+    ],
+    "urgency": [
+      "Ahora, el edificio tiene muy buena ocupación y huéspedes están encantados con el servicio.",
+      "Ahora, mi casa rural no solo está siempre en perfectas condiciones, sino que también recibe comentarios maravillosos de los visitantes.",
+      "Contáctenos hoy para obtener más información sobre nuestros servicios de gestión de reservas y cómo pueden agilizar sus operaciones y mejorar la experiencia de sus huéspedes.",
+      "Now, the building has very good occupancy and guests are delighted with the service.",
+      "Now, my country house is not only always in perfect condition, but it also receives wonderful comments from visitors.",
+      "Contact us today to learn more about our reservation management services and how they can streamline your operations and enhance your guest experience."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…ramente tu vivienda turística de forma transparente.Nuestra tarifa desde un 10% realIVA no incluidoSin cuota de alta ni permanencia Rentabilización Nos encargamos de obtener el máximo beneficio mediante la gestión de tu alquiler turístico en Vigo.Estrategia profesional de precios.Recibe los ingresos directamen…",
+          "url": "https://cabanarentals.es/",
+          "pageTitle": "Empresa gestión alquiler vacacional - CABANA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…De Reservas Consulta nuestras tarifas NUESTRA TARIFA DESDE Por reserva 1 % Impuestos no incluidos Sin cuota de alta Sin permanencia Contacta con nosotros Gestión en tiempo real Monitoriza tus ingresos Consulta los beneficios que genera tu alquiler turístico y el volumen de ocupación.",
+          "url": "https://cabanarentals.es/",
+          "pageTitle": "Empresa gestión alquiler vacacional - CABANA",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://cabanarentals.es/",
+        "https://cabanarentals.es/contacto/",
+        "https://cabanarentals.es/tarifa/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Gestión de alquiler vacacional y de temporada",
+        "Contacto",
+        "CABANA, gestión transparente",
+        "Servicios integrales CABANA"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Te llamamos",
+        "Consulta nuestras tarifas",
+        "Contacta con nosotros",
+        "+34 ‭644 081 538",
+        "hola@cabanarentals.es",
+        "Enviar",
+        "{title}",
+        "Contact us"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://cabanarentals.es/ · 1 campos",
+        "https://cabanarentals.es/contacto/ · 7 campos",
+        "https://cabanarentals.es/en/contact/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://cabanarentals.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://cabanarentals.es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://cabanarentals.es/tarifa/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://cabanarentals.es/servicios/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://cabanarentals.es/gestion-de-reservas/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://cabanarentals.es/en/contact/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://cabanarentals.es/en/reservation-management/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://cabanarentals.es/en/vacation-rental-management-tenerife/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://cabanarentals.es/aviso-legal",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Consulta nuestras tarifas”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, HubSpot, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "not_applicable"
+}

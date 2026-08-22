@@ -1,0 +1,504 @@
+{
+  "id": "mon-artisan",
+  "name": "Mon Artisan",
+  "reviewedAt": "2026-08-22T15:50:18.346Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "El usuario describe el problema y la plataforma selecciona al profesional adecuado con precio conocido de antemano.",
+    "heroObserved": true,
+    "priorSummary": "Reserva de reparaciones, montaje, mudanzas, limpieza, mantenimiento y proyectos de renovación; Mon Artisan selecciona al profesional y coordina la intervención.",
+    "voice": "Revisión manual: cercano, tranquilizador, práctico, local, orientado a confianza. Reduce miedo con precio previo, profesional seleccionado e intervención asegurada. Resume el proceso en pasos simples desde problema hasta valoración. Enfatiza disponibilidad 7/7 y 24 horas para urgencias. A los proveedores les vende acceso a trabajos sin alta o suscripción de pago.",
+    "supportingHeadings": [
+      "Exigez le meilleur pour votre ménage",
+      "Comment ça marche ?",
+      "Travaux et Dépannages",
+      "Solutions entreprises",
+      "Les interventions les plus courantes",
+      "Nos Clients",
+      "Projets et Renovations",
+      "Ils parlent de nous",
+      "Contactez-nous",
+      "Foire Aux Questions",
+      "Vous ne trouvez pas votre bonheur dans cette FAQ ?",
+      "A propos",
+      "Qui sommes nous ?",
+      "Nos services",
+      "Nos chiffres clés",
+      "+ 0",
+      "+ 0 %",
+      "Ils nous font confiance",
+      "Notre impact écologique",
+      "Conditions Générales d'Utilisation"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactez-nous",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://monartisan.ci/",
+      "text": "Contactez-nous",
+      "href": "https://monartisan.ci/contact-us",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.5
+    },
+    "ctas": [
+      "Contactez-nous",
+      "contact@monartisan.ci",
+      "courriel",
+      "Envoyer message"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://monartisan.ci/contact-us/",
+        "index": 1,
+        "action": "https://monartisan.ci/contact-us/",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "input",
+            "name": "nom",
+            "label": null,
+            "placeholder": "Nom & prénom(s)*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "E-mail*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Téléphone*",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Message*",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Reserva de reparaciones, montaje, mudanzas, limpieza, mantenimiento y proyectos de renovación; Mon Artisan selecciona al profesional y coordina la intervención.",
+    "audience": "Hogares y empresas de Costa de Marfil que necesitan mantenimiento, urgencias o reformas; artesanos que buscan encargos.",
+    "prices": [],
+    "guarantee": [
+      "Nous nous assurons que les interventions des artisans soient faites avec attention et promptitude et leur encourageons à offrir un service de qualité, des conseils appropriés, une transparence tarifaire ainsi qu’une garantie de satisfaction.",
+      "Pour ce faire, nous leur faisons signer une charte de qualité, nous avons des Conseillers clients qui suivent l’exécution des travaux et recueille les avis des clients, et faisons jouer une garantie satisfait ou refait dans certains cas.",
+      "Si malgré tous nos efforts, vous n’êtes tout de même pas satisfait, merci de nous contacter afin de vous faire bénéficier de la garantie satisfaction : nous revenons gratuitement chez vous."
+    ],
+    "proof": [
+      "Téléchargez l'application mobile Mon Artisan Nos Clients Ils nous font confiance, pourquoi pas vous ?"
+    ],
+    "objections": [
+      "Particuliers Espace artisan Espace entreprise Accueil Connexion Demander une prestation en urgence Accueil Connexion Accueil Blog Dépannage d'urgence Demander une prestation Connexion Foire Aux Questions Accueil Foire Aux Questions Foire Aux Questions Vous trouverez ici une gamme des questions les plus courantes des clients.",
+      "Vous ne trouvez pas votre bonheur dans cette FAQ ?",
+      "Contactez-nous A propos FAQ CGU Contactez-nous Presse Blog A propos FAQ CGU Contactez-nous Presse Blog © Mon Artisan, Inc 2026."
+    ],
+    "urgency": [
+      "Postulez maintenant Projets et Renovations Imaginer, rêver....nous réalisons !"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Nous nous assurons que les interventions des artisans soient faites avec attention et promptitude et leur encourageons à offrir un service de qualité, des conseils appropriés, une transparence tarifaire ainsi qu’une garantie de satisfaction.",
+          "url": "https://monartisan.ci/faq/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Pour ce faire, nous leur faisons signer une charte de qualité, nous avons des Conseillers clients qui suivent l’exécution des travaux et recueille les avis des clients, et faisons jouer une garantie satisfait ou refait dans certains cas.",
+          "url": "https://monartisan.ci/faq/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Si malgré tous nos efforts, vous n’êtes tout de même pas satisfait, merci de nous contacter afin de vous faire bénéficier de la garantie satisfaction : nous revenons gratuitement chez vous.",
+          "url": "https://monartisan.ci/faq/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Téléchargez l'application mobile Mon Artisan Nos Clients Ils nous font confiance, pourquoi pas vous ?",
+          "url": "https://monartisan.ci/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Particuliers Espace artisan Espace entreprise Accueil Connexion Demander une prestation en urgence Accueil Connexion Accueil Blog Dépannage d'urgence Demander une prestation Connexion Foire Aux Questions Accueil Foire Aux Questions Foire Aux Questions Vous trouverez ici une gamme des questions les plus courantes des clients.",
+          "url": "https://monartisan.ci/faq/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Vous ne trouvez pas votre bonheur dans cette FAQ ?",
+          "url": "https://monartisan.ci/faq/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Contactez-nous A propos FAQ CGU Contactez-nous Presse Blog A propos FAQ CGU Contactez-nous Presse Blog © Mon Artisan, Inc 2026.",
+          "url": "https://monartisan.ci/faq/",
+          "pageTitle": "Accueil - Trouvez les meilleurs artisans près de chez vous",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://monartisan.ci/",
+        "https://monartisan.ci/contact-us/",
+        "https://monartisan.ci/faq/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Exigez le meilleur pour votre ménage",
+        "Contactez-nous",
+        "A propos",
+        "Conditions Générales d'Utilisation"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contactez-nous",
+        "contact@monartisan.ci",
+        "Envoyer message",
+        "courriel"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://monartisan.ci/contact-us/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Describir problema → obtener rango/seleccionar fecha → reservar o validar devis → asignación del artesano → intervención → pago → evaluación."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Necesidad [observado] → Estimación [observado] → Matching [observado] → Confirmación [observado] → Intervención [observado] → Pago [observado] → Calidad [observado] → Monetización proveedor [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://monartisan.ci/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://monartisan.ci/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://monartisan.ci/faq/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://monartisan.ci/a-propos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://monartisan.ci/cgu/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=monartisan.ci",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=1770513633223050",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactez-nous”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "El usuario describe el problema y la plataforma selecciona al profesional adecuado con precio conocido de antemano.",
+      "promise": "Resolver trabajos del hogar en Abiyán mediante profesionales seleccionados, presupuesto inicial gratuito, disponibilidad amplia y mecanismos de satisfacción.",
+      "positioning": "Vertical marketplace: intermediación y captación de solicitudes para profesionales del hogar",
+      "audience": "Particulares y empresas que necesitan un profesional de confianza en Abiyán y alrededores; profesionales que quieren recibir trabajos sin suscripción.",
+      "voice": [
+        "cercano",
+        "tranquilizador",
+        "práctico",
+        "local",
+        "orientado a confianza"
+      ],
+      "patterns": [
+        "Reduce miedo con precio previo, profesional seleccionado e intervención asegurada.",
+        "Resume el proceso en pasos simples desde problema hasta valoración.",
+        "Enfatiza disponibilidad 7/7 y 24 horas para urgencias.",
+        "A los proveedores les vende acceso a trabajos sin alta o suscripción de pago."
+      ]
+    },
+    "cta": {
+      "primary": "Reservar una prestación",
+      "secondary": [
+        "WhatsApp",
+        "teléfono"
+      ],
+      "forms": []
+    },
+    "funnel": [
+      {
+        "stage": "Necesidad",
+        "status": "observado",
+        "detail": "El usuario elige o describe el problema y aporta fecha o contexto."
+      },
+      {
+        "stage": "Estimación",
+        "status": "observado",
+        "detail": "Recibe un rango provisional o presupuesto inicial; el precio final depende del presupuesto firmado con el profesional."
+      },
+      {
+        "stage": "Matching",
+        "status": "observado",
+        "detail": "La plataforma selecciona al profesional más adecuado de su red."
+      },
+      {
+        "stage": "Confirmación",
+        "status": "observado",
+        "detail": "Email de solicitud y segundo email cuando el profesional acepta, seguido de contacto directo."
+      },
+      {
+        "stage": "Intervención",
+        "status": "observado",
+        "detail": "El profesional acude, valida alcance y realiza el trabajo bajo presupuesto acordado."
+      },
+      {
+        "stage": "Pago",
+        "status": "observado",
+        "detail": "Pago en efectivo, cheque o mobile money según los términos disponibles."
+      },
+      {
+        "stage": "Calidad",
+        "status": "observado",
+        "detail": "El usuario valora; ante insatisfacción se anuncia una nueva intervención gratuita en determinados casos."
+      },
+      {
+        "stage": "Monetización proveedor",
+        "status": "observado",
+        "detail": "El profesional no paga suscripción y paga cuando recibe trabajos; la fórmula exacta no se publica."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "uso del servicio de intermediación — gratuito para el usuario según CGU",
+        "primer presupuesto — gratuito",
+        "precio del trabajo — rango provisional antes; precio final en presupuesto firmado con el profesional",
+        "proveedor — sin alta o suscripción; paga al recibir trabajos, importe no publicado"
+      ],
+      "contract": [
+        "cancelación — gratuita antes del trabajo, solicitada al menos dos horas antes; si el profesional ya llegó puede cobrarse desplazamiento",
+        "parte contractual — Social Tech se define como intermediario y no parte del contrato usuario-profesional"
+      ],
+      "guarantee": [
+        "satisfacción — retorno gratuito o repetición en determinados casos",
+        "profesionales — selección y prueba inicial de tres trabajos declaradas"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "JavaScript propio y recursos CDN",
+      "WhatsApp"
+    ],
+    "contradictions": [
+      "El marketing transmite que la plataforma se ocupa del proceso y que las intervenciones están aseguradas, mientras las CGU la limitan a intermediario no parte del contrato.",
+      "La promesa de satisfacción o repetición se limita en la FAQ a determinados casos, que no se definen públicamente.",
+      "El presupuesto inicial se presenta como gratuito, pero una cancelación tardía o tras la llegada puede generar desplazamiento.",
+      "No se publican límites monetarios, exclusiones ni aseguradora de la cobertura anunciada."
+    ],
+    "inferences": [],
+    "notObservable": [
+      "Campos y lógica completos del cuestionario por categoría.",
+      "Comisión o coste exacto para el profesional.",
+      "Criterio de reparto de solicitudes entre profesionales.",
+      "Alcance, aseguradora y exclusiones de la cobertura anunciada.",
+      "CMS o framework exacto",
+      "analítica",
+      "CRM",
+      "motor de matching",
+      "proveedor de email",
+      "sistema de pagos o seguro"
+    ],
+    "limitations": [
+      "No se recorrió el cuestionario dinámico ni se solicitó profesional.",
+      "No se comprobó ningún email, llamada, presupuesto, pago, seguro o intervención.",
+      "La selección, experiencia y garantía son afirmaciones propias no auditadas.",
+      "No se conoce el contrato operativo con proveedores ni la comisión real."
+    ],
+    "lessons": {
+      "copy": [
+        "Reducir ansiedad con rango previo, profesional seleccionado, disponibilidad y pasos sencillos.",
+        "Explicar qué ocurre justo después de la solicitud mediante dos confirmaciones diferenciadas."
+      ],
+      "adapt": [
+        "Usar matching gestionado cuando el usuario no quiere comparar decenas de proveedores.",
+        "Mostrar criterios de selección y prueba inicial del proveedor."
+      ],
+      "avoid": [
+        "Prometer que la plataforma lo gestiona todo si legalmente solo intermedia.",
+        "Usar asegurado o garantizado sin límites, exclusiones y responsable."
+      ],
+      "test": [
+        "Test: selección automática de un proveedor frente a comparación de tres opciones.",
+        "Test: rango de precio antes de pedir datos frente a estimación después del contacto."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://monartisan.ci/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://monartisan.ci/reserver-prestation/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://monartisan.ci/faq/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://monartisan.ci/cgu/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

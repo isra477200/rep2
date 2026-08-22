@@ -1,0 +1,746 @@
+{
+  "id": "daas-group-vendermas",
+  "name": "DaaS Group / Vendermas",
+  "reviewedAt": "2026-08-22T15:50:17.707Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Sector Servicios Financieros y Seguros",
+    "heroObserved": true,
+    "priorSummary": "SDR externo, ABM, inside sales, social selling y captación multicanal; validación manual y CRM.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 97 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 825 palabras por página comercial recuperada. Muestras breves: “Generación de leads para productos tecnológicos” · “Consultoría gratuita” · “Sector Servicios Financieros y Seguros”.",
+    "supportingHeadings": [
+      "Generación de leads para productos tecnológicos",
+      "Impulsa tus ventas con estrategias de lead generation B2B a medida",
+      "Acciones de generación de leads B2B",
+      "Externalización de SDR",
+      "Lead generation",
+      "Account Based Marketing",
+      "Inside sales",
+      "Social selling",
+      "Cualificación bases de datos",
+      "¿Cómo te ayudaremos?",
+      "Contamos con una plataforma de call center propia",
+      "Ventajas de contratar DaaS Group",
+      "Generación de leads B2B de alta calidad",
+      "Conexión directa con los decisores adecuados",
+      "Reducción de la complejidad en prospección",
+      "Aceleración del ciclo de ventas",
+      "Mejora del retorno de inversión (ROI)",
+      "Preguntas frecuentes sobre lead generation B2B",
+      "1. ¿Por qué es importante la generación de leads B2B?",
+      "2. ¿Qué canales son más efectivos para generar leads B2B?",
+      "3. ¿Qué ventajas tiene externalizar la generación de leads B2B?",
+      "4. ¿Cómo funciona una campaña de generación de leads con DaaS Group?",
+      "5. ¿Cómo puedo saber si los leads que recibo son realmente cualificados?",
+      "6. ¿Es rentable la generación de leads con DaaS Group?",
+      "7. ¿Puedo empezar sin compromiso?",
+      "Descubre cómo nuestra metodología IMSP™ puede impulsar tu negocio tecnológico",
+      "Mantente al día sobre marketing y ventas B2B",
+      "Cómo optimizar cada fase del embudo de conversión para captar más leads",
+      "Qué es la IA agéntica y cómo transformará tus procesos comerciales",
+      "Diseño universal: los 7 principios para comunicar sin dejar a nadie fuera"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Request a consultation",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.daas-group.com/en/free-consultation/",
+      "text": "Request a consultation",
+      "href": "https://www.daas-group.com/en/free-consultation/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 239.5
+    },
+    "ctas": [
+      "Solicitar consultoría",
+      "Request a consultation",
+      "Contact us",
+      "Contact Contact",
+      "Contacto Contacto",
+      "Contacta con nosotros",
+      "Descarga nuestro dossier Descarga nuestro dossier",
+      "ES",
+      "EN",
+      "{title}",
+      "Suscríbete"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.daas-group.com/generacion-leads/",
+        "index": 3,
+        "action": "https://www.daas-group.com/generacion-leads/",
+        "method": "POST",
+        "submitText": "Suscríbete",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "email@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_8412a1d]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/consultoria-gratuita/",
+        "index": 3,
+        "action": "https://www.daas-group.com/consultoria-gratuita/",
+        "method": "POST",
+        "submitText": "Solicitar consultoría",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre y apelidos*",
+            "placeholder": "Nombre y apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d60e74a]",
+            "label": "Empresa*",
+            "placeholder": "Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico*",
+            "placeholder": "email@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f22bc46]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[field_ce96d4d]",
+            "label": "Servicio de interés",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿Cómo podemos ayudarte?",
+            "placeholder": "¿Cómo podemos ayudarte?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_36f4866]",
+            "label": "He leído y acepto la Política de Privacidad de Daas Group*.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_be11b57]",
+            "label": "Acepto recibir comunicaciones comerciales de DAAS GROUP.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/consultoria-gratuita/",
+        "index": 4,
+        "action": "https://www.daas-group.com/consultoria-gratuita/",
+        "method": "POST",
+        "submitText": "Suscríbete",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico*",
+            "placeholder": "email@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_8412a1d]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/servicios-financieros-y-seguros/",
+        "index": 3,
+        "action": "https://www.daas-group.com/servicios-financieros-y-seguros/",
+        "method": "POST",
+        "submitText": "Contacta con nosotros",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre y apelidos*",
+            "placeholder": "Nombre y apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d60e74a]",
+            "label": "Empresa*",
+            "placeholder": "Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico*",
+            "placeholder": "email@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f22bc46]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿Cómo podemos ayudarte?",
+            "placeholder": "¿Cómo podemos ayudarte?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_36f4866]",
+            "label": "He leído y acepto la Política de Privacidad de Daas Group* *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_eacae9d]",
+            "label": "Acepto recibir comunicaciones comerciales de DAAS GROUP.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/contacto/",
+        "index": 3,
+        "action": "https://www.daas-group.com/contacto/",
+        "method": "POST",
+        "submitText": "Contacta con nosotros",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre y apelidos*",
+            "placeholder": "Nombre y apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d60e74a]",
+            "label": "Empresa*",
+            "placeholder": "Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "email@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f22bc46]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿Cómo podemos ayudarte?",
+            "placeholder": "¿Cómo podemos ayudarte?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_36f4866]",
+            "label": "He leído y acepto la Política de Privacidad de Daas Group* *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_f73a132]",
+            "label": "Acepto recibir comunicaciones comerciales de DAAS GROUP.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/contacto/",
+        "index": 4,
+        "action": "https://www.daas-group.com/contacto/",
+        "method": "POST",
+        "submitText": "Suscríbete",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "email@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_8412a1d]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/en/free-consultation/",
+        "index": 3,
+        "action": "https://www.daas-group.com/en/free-consultation/",
+        "method": "POST",
+        "submitText": "Request a consultation",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Name and surname(s)*",
+            "placeholder": "Name and surname(s)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d60e74a]",
+            "label": "Company*",
+            "placeholder": "Company",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "E-mail address*",
+            "placeholder": "email@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f22bc46]",
+            "label": "Telephone",
+            "placeholder": "Telephone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[message]",
+            "label": "Service of interest",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_b2f211e]",
+            "label": "How can we help you?",
+            "placeholder": "How can we help you?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_36f4866]",
+            "label": "I have read and accept the DaaS Group Privacy Policy*.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_eacae9d]",
+            "label": "I agree to receive commercial emails from DAAS GROUP .",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daas-group.com/en/contact/",
+        "index": 3,
+        "action": "https://www.daas-group.com/en/contact/",
+        "method": "POST",
+        "submitText": "Contact us",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Name and surname(s)*",
+            "placeholder": "Name and surname(s)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d60e74a]",
+            "label": "Company*",
+            "placeholder": "Company",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "E-mail address",
+            "placeholder": "email@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f22bc46]",
+            "label": "Telephone",
+            "placeholder": "Telephone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "How can we help you?",
+            "placeholder": "How can we help you?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_36f4866]",
+            "label": "I have read and accept the DaaS Group Privacy Policy*.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_eacae9d]",
+            "label": "I agree to receive commercial emails from DAAS GROUP .",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "8 diseño(s) de formulario distinto(s); entre 2 y 8 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Empresa*, Servicio de interés, Company*.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 8,
+      "qualification": [
+        "Empresa*",
+        "Servicio de interés",
+        "Company*"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "HubSpot",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "SDR externo, ABM, inside sales, social selling y captación multicanal; validación manual y CRM.",
+    "audience": "B2B, medianas/grandes empresas.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "…idades y oportunidades de negocio en bancos, aseguradoras y otros actores relevantes, conectando tus soluciones con los clientes adecuados."
+    ],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…idades y oportunidades de negocio en bancos, aseguradoras y otros actores relevantes, conectando tus soluciones con los clientes adecuados.",
+          "url": "https://www.daas-group.com/servicios-financieros-y-seguros/",
+          "pageTitle": "Servicios financieros y seguros | DaaS Group",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "LinkedIn Ads",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.daas-group.com/generacion-leads/",
+        "https://www.daas-group.com/consultoria-gratuita/",
+        "https://www.daas-group.com/servicios-financieros-y-seguros/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Generación de leads para productos tecnológicos",
+        "Consultoría gratuita",
+        "Sector Servicios Financieros y Seguros",
+        "Contacta con DaaS Group"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto Contacto",
+        "Suscríbete",
+        "Solicitar consultoría",
+        "Descarga nuestro dossier Descarga nuestro dossier",
+        "Contacta con nosotros",
+        "ES",
+        "EN",
+        "{title}"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.daas-group.com/generacion-leads/ · 2 campos",
+        "https://www.daas-group.com/consultoria-gratuita/ · 8 campos",
+        "https://www.daas-group.com/consultoria-gratuita/ · 2 campos",
+        "https://www.daas-group.com/servicios-financieros-y-seguros/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de generación de leads → consulta gratuita/contacto → definición de objetivos y público → creación de guiones y ofertas → llamadas outbound y captura de datos →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.daas-group.com/generacion-leads/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.daas-group.com/consultoria-gratuita/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.daas-group.com/servicios-financieros-y-seguros/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.daas-group.com/quienes-somos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.daas-group.com/contacto/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.daas-group.com/en/free-consultation/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.daas-group.com/en/contact/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=daas-group.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Request a consultation”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, HubSpot, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

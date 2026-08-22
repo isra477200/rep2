@@ -1,0 +1,800 @@
+{
+  "id": "cleanify-agency",
+  "name": "Cleanify Agency",
+  "reviewedAt": "2026-08-22T15:50:17.850Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Cleanify es Marketing Digital para Empresas de Limpieza",
+    "heroObserved": true,
+    "priorSummary": "Agencia española especializada en empresas de limpieza: SEO local, optimización de presencia digital, web con formularios/reservas, Google/Meta Ads y mejora continua. Promesa de conseguir clientes en seis meses o seguir trabajando sin coste adicional.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 163 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1755 palabras por página comercial recuperada. Muestras breves: “Cleanify es Marketing Digital para Empresas de Limpieza” · “Contacto”.",
+    "supportingHeadings": [
+      "Cleanify es Marketing Digital para Empresas de Limpieza",
+      "Descubre cómo Cleanify puede ayudarte a captar más clientes, destacar frente a la competencia y aumentar tus ingresos con estrategias personalizadas.",
+      "¿Por qué elegir Cleanify para tu negocio de limpieza?",
+      "Beneficios destacados",
+      "Soluciones de marketing digital para empresas de limpieza",
+      "Posicionamiento Web (SEO)",
+      "Publicidad Digital",
+      "Generación de Leads",
+      "Producción Audiovisual",
+      "Diseño Web Profesional",
+      "Gestión de Redes Sociales",
+      "Diseño Gráfico",
+      "Aparición en Medios",
+      "Consultoría Estratégica Personalizada",
+      "Historias de Éxito",
+      "con Cleanify",
+      "Cómo Cleanify Transforma Tu Negocio",
+      "Diagnóstico Inicial",
+      "Estrategia Personalizada",
+      "Implementación y Resultados",
+      "Lo que Dicen Nuestros Clientes",
+      "Guía gratuita",
+      "Minicurso en video",
+      "Checklist descargable",
+      "Aprende a Impulsar Tu Negocio con Nuestros Recursos",
+      "Haz Crecer Tu Negocio con Cleanify",
+      "Services",
+      "Blog",
+      "Contacto",
+      "Consultoría Gratuita"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agendar llamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://cleanify.agency/",
+      "text": "Agendar llamada",
+      "href": "https://api.leadconnectorhq.com/widget/booking/8j7BPnsvBlMEfakG8L1s",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.25
+    },
+    "ctas": [
+      "Solicita tu Auditoría Gratuita de Redes Sociales",
+      "Agendar llamada",
+      "Consultoría Gratuita",
+      "Agendatu asesoramientogratuito",
+      "Descubre cómo podemos ayudarte a ti también.",
+      "Reserva tu consultoría gratuita y comienza a ver resultados hoy. Cada paso cuenta para",
+      "Contacto",
+      "Empieza hoy con un asesoramiento gratuito",
+      "Descarga Nuestra Guía para Mejorar tu Web",
+      "descarga nuestra guía de seo local para empresas de limpieza",
+      "Más Información",
+      "Enviar",
+      "Contáctanos aquí",
+      "Publicar comentario",
+      "Asesoramiento Gratuito",
+      "Prueba nuestras estrategias",
+      "¡Serás nuestro próximo caso de éxito!",
+      "Quiero Mejorar mis Redes Sociales Hoy",
+      "Mejora y Transforma tu Presencia Online",
+      "Te Ayudamos con Marketing, Diseño y Publicidad",
+      "consigue más clientes para tu empresa de limpieza"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+        "index": 1,
+        "action": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "electrónico mensaje Correo",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][4]",
+            "label": "Teléfono *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+        "index": 2,
+        "action": "https://cleanify.agency/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Publicar comentario",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comentario",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Nombre",
+            "placeholder": "Nombre *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": "Correo electrónico *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url",
+            "label": "Web",
+            "placeholder": "Web",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guarda mi nombre, correo electrónico y web en este navegador para la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cleanify.agency/seo-para-empresas-de-limpieza/",
+        "index": 1,
+        "action": "https://cleanify.agency/seo-para-empresas-de-limpieza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][4]",
+            "label": "Teléfono *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Comentario electrónico Teléfono",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cleanify.agency/diseno-web-para-empresas-de-limpieza/",
+        "index": 1,
+        "action": "https://cleanify.agency/diseno-web-para-empresas-de-limpieza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][4]",
+            "label": "Teléfono *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "mensaje Comentario Nombre",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cleanify.agency/diseno-web-para-empresas-de-limpieza/",
+        "index": 2,
+        "action": "https://cleanify.agency/diseno-web-para-empresas-de-limpieza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][3]",
+            "label": "Nombre electrónico Correo",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cleanify.agency/gestion-de-redes-sociales-para-empresas-de-limpieza/",
+        "index": 1,
+        "action": "https://cleanify.agency/gestion-de-redes-sociales-para-empresas-de-limpieza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][4]",
+            "label": "Teléfono *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Comentario electrónico mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "6 diseño(s) de formulario distinto(s); entre 4 y 6 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Web, Guarda mi nombre, correo electrónico y web en este navegador para la.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 6,
+      "qualification": [
+        "Web",
+        "Guarda mi nombre, correo electrónico y web en este navegador para la"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "GoHighLevel"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia española especializada en empresas de limpieza: SEO local, optimización de presencia digital, web con formularios/reservas, Google/Meta Ads y mejora continua. Promesa de conseguir clientes en seis meses o seguir trabajando sin coste adicional.",
+    "audience": "Empresas de limpieza de comunidades, oficinas, industria y servicios relacionados en España.",
+    "prices": [],
+    "guarantee": [
+      "Otra táctica efectiva podría ser la incorporación de garantías de satisfacción que aseguren un nivel superior de confianza entre los clientes potenciales.",
+      "Ofrecer garantías: Una garantía de satisfacción o la posibilidad de repetir el servicio sin costo adicional en caso de no cumplir con las expectativas puede aumentar la confianza y reducir el riesgo percibido.",
+      "Sellos de garantía, certificaciones o años de experiencia destacados."
+    ],
+    "proof": [
+      "Las empresas con una web optimizada consiguen hasta 3 veces más clientes.",
+      "Te ayudamos a atraer más clientes, aumentar tu visibilidad y posicionarte como líder en tu sector.",
+      "Resultados medibles: Nos enfocamos en captar más clientes y aumentar tu visibilidad online desde el primer mes.",
+      "Soluciones de marketing digital para empresas de limpieza Nuestros servicios están diseñados específicamente para negocios de limpieza que buscan aumentar su presencia online y captar más clientes.",
+      "Sin embargo, este crecimiento también conlleva un aumento en la competencia, lo que hace que captar nuevos clientes sea un reto constante.",
+      "Esto implica que las empresas deben adaptarse rápidamente a las nuevas demandas del mercado, como el uso de productos ecológicos, la integración de tecnología en sus procesos y una comunicación efectiva con sus clientes."
+    ],
+    "objections": [
+      "Empieza hoy con un asesoramiento gratuito Conoce nuestrosservicios ¿Por qué elegir Cleanify para tu negocio de limpieza?"
+    ],
+    "urgency": [
+      "Reserva tu consultoría gratuita y comienza a ver resultados hoy.",
+      "Antes, dependíamos mucho del boca a boca y de clientes recurrentes, pero ahora hemos logrado multiplicar nuestras reservas online y atraer a nuevos clientes de manera constante.",
+      "Presupuesto limitado: La inversión en marketing a menudo se percibe como costosa, y esto limita la posibilidad de implementar estrategias que garanticen un alcance efectivo.",
+      "Llamadas a la acción (CTA): Frases como «Solicita un presupuesto ahora» o «Reserva tu limpieza en menos de 2 minutos» deben estar visibles en toda la web.",
+      "Reserva ahora y obtén un descuento exclusivo del 10 %.” Crear campañas personalizadas para empresas comerciales, ofreciendo descuentos o beneficios específicos por contratar servicios regulares.",
+      "Podrías reactivar su interés con mensajes del tipo: “Te extrañamos, vuelve a disfrutar de un hogar impecable con un 15 % de descuento en tu próxima limpieza.” Mejores opciones de CRM para empresas de limpieza: Algunas herramientas ideales para este sector son: HubSpot CRM: Gratuito"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Otra táctica efectiva podría ser la incorporación de garantías de satisfacción que aseguren un nivel superior de confianza entre los clientes potenciales.",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Ofrecer garantías: Una garantía de satisfacción o la posibilidad de repetir el servicio sin costo adicional en caso de no cumplir con las expectativas puede aumentar la confianza y reducir el riesgo percibido.",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Sellos de garantía, certificaciones o años de experiencia destacados.",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Saltar al contenido Menú Menú Home Servicios SEO Diseño Web RRSS Publicidad Contacto Blog Agendar llamada Cleanify es Marketing Digital para Empresas de Limpieza Descubre cómo Cleanify puede ayudarte a captar más clientes, destacar frente a la competencia y aumentar tus ingresos con estrategias personalizadas.",
+          "url": "https://cleanify.agency/",
+          "pageTitle": "👉 Marketing Digital para Empresas de Limpieza | Cleanify",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Te ayudamos a atraer más clientes, aumentar tu visibilidad y posicionarte como líder en tu sector.",
+          "url": "https://cleanify.agency/",
+          "pageTitle": "👉 Marketing Digital para Empresas de Limpieza | Cleanify",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Beneficios destacados Especialización en el sector de limpieza: Entendemos los desafíos únicos de tu industria, como la competencia local, la estacionalidad y las necesidades específicas de los clientes, y adaptamos nuestras estrategias para superarlos eficazmente.",
+          "url": "https://cleanify.agency/",
+          "pageTitle": "👉 Marketing Digital para Empresas de Limpieza | Cleanify",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Resultados medibles: Nos enfocamos en captar más clientes y aumentar tu visibilidad online desde el primer mes.",
+          "url": "https://cleanify.agency/",
+          "pageTitle": "👉 Marketing Digital para Empresas de Limpieza | Cleanify",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Soluciones de marketing digital para empresas de limpieza Nuestros servicios están diseñados específicamente para negocios de limpieza que buscan aumentar su presencia online y captar más clientes.",
+          "url": "https://cleanify.agency/",
+          "pageTitle": "👉 Marketing Digital para Empresas de Limpieza | Cleanify",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Saltar al contenido Menú Menú Home Servicios SEO Diseño Web RRSS Publicidad Contacto Blog Agendar llamada Cómo conseguir clientes para una empresa de limpieza El sector de limpieza se encuentra en constante crecimiento debido a la creciente demanda de servicios profesionales tanto en hogares como",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Sin embargo, este crecimiento también conlleva un aumento en la competencia, lo que hace que captar nuevos clientes sea un reto constante.",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Esto implica que las empresas deben adaptarse rápidamente a las nuevas demandas del mercado, como el uso de productos ecológicos, la integración de tecnología en sus procesos y una comunicación efectiva con sus clientes.",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Aprenderás cómo aumentar tu clientela utilizando tácticas modernas de marketing digital, mejorar tu posicionamiento en el mercado aprovechando herramientas locales y globales, y maximizar tus ingresos implementando procesos que fidelicen a tus clientes actuales.",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "¿Qué Necesitan las Empresas de Limpieza para Captar Clientes?",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Principales retos en la captación de clientes para empresas de limpieza Muchas empresas de limpieza enfrentan dificultades al intentar atraer nuevos clientes.",
+          "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+          "pageTitle": "【Cómo conseguir clientes para una empresa de limpieza】",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Saltar al contenido Menú Menú Home Servicios SEO Diseño Web RRSS Publicidad Contacto Blog Agendar llamada Cómo un Buen Diseño Web Puede Atraer Más Clientes a tu Empresa de Limpieza ¿Por qué es clave un buen diseño web para tu empresa de limpieza?",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Si tienes una empresa de limpieza, tu página web es tu carta de presentación y tu mejor herramienta para conseguir clientes.",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Si tu sitio web es lento, confuso o difícil de navegar, los clientes se irán sin contactarte y buscarán otra opción.",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Si tu web no está optimizada para móviles, estás perdiendo una gran cantidad de clientes potenciales.",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Las empresas con una web optimizada consiguen hasta 3 veces más clientes.",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Un buen diseño web para tu empresa de Limpieza no solo hace que tu empresa se vea más profesional, sino que también facilita que los clientes te encuentren, te contacten y reserven tus servicios sin esfuerzo.",
+          "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+          "pageTitle": "【Un Buen Diseño Web Puede Atraer Más Clientes a tu empresa de Limpieza】🚀",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Empieza hoy con un asesoramiento gratuito Conoce nuestrosservicios ¿Por qué elegir Cleanify para tu negocio de limpieza?",
+          "url": "https://cleanify.agency/",
+          "pageTitle": "👉 Marketing Digital para Empresas de Limpieza | Cleanify",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://cleanify.agency/",
+        "https://cleanify.agency/contacto/",
+        "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Cleanify es Marketing Digital para Empresas de Limpieza",
+        "Contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Agendar llamada",
+        "Empieza hoy con un asesoramiento gratuito",
+        "¡Serás nuestro próximo caso de éxito!",
+        "Reserva tu consultoría gratuita y comienza a ver resultados hoy. Cada paso cuenta para",
+        "Descubre cómo podemos ayudarte a ti también.",
+        "Enviar",
+        "consigue más clientes para tu empresa de limpieza"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/ · 6 campos",
+        "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/ · 5 campos",
+        "https://cleanify.agency/seo-para-empresas-de-limpieza/ · 6 campos",
+        "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Email",
+        "Teléfono",
+        "Agendar llamada",
+        "¡Serás nuestro próximo caso de éxito!",
+        "Reserva tu consultoría gratuita y comienza a ver resultados hoy. Cada paso cuenta para",
+        "Descubre cómo podemos ayudarte a ti también.",
+        "Agenda incrustada"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Búsqueda/contenido o anuncio → página vertical para empresas de limpieza → CTA «asesoramiento gratuito»/«agendar llamada» → widget LeadConnector → llamada de diagnóstico → propuesta personalizada → SEO local,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://cleanify.agency/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://cleanify.agency/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://cleanify.agency/mas-clientes-para-empresas-de-limpieza/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://cleanify.agency/seo-para-empresas-de-limpieza/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://cleanify.agency/un-buen-diseno-web-puede-atraer-mas-clientes-a-tu-empresa-de-limpieza/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://cleanify.agency/diseno-web-para-empresas-de-limpieza/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://cleanify.agency/gestion-de-redes-sociales-para-empresas-de-limpieza/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=cleanify.agency",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agendar llamada”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, GoHighLevel) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

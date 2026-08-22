@@ -1,0 +1,811 @@
+{
+  "id": "culture-publication-teleapo",
+  "name": "Culture Publication Teleapo",
+  "reviewedAt": "2026-08-22T15:50:17.672Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Telemarketing de baja barrera con dos planes: éxito por resultado definido o tarifa por llamada.",
+    "heroObserved": true,
+    "priorSummary": "Telemarketing japonés con monedero prepago y cobro por unidad: llamada, permiso/solicitud o cita.",
+    "voice": "Revisión manual: detallado, transaccional, pragmático, orientado a reducción de riesgo, educativo. Explica dinero y pasos con ejemplos numéricos. Distingue cita, documentación y permiso de volver a llamar. Anticipa no-show, saldo y cancelación como objeciones.",
+    "supportingHeadings": [
+      "完全成功報酬型のテレアポ代行",
+      "Culture Publicationのテレアポ代行5つの強み",
+      "特長1アポインターはコールセンターにて架電",
+      "特長2事前にお見積りを提示します！",
+      "特長3契約はいつでも解約可能！アポイントが取れない場合は返金します！",
+      "特長4資料請求と架電許可案件も提供！",
+      "特長5初期費用は10,000円のみ",
+      "成果報酬型テレアポ代行は、どんなサービスなの？",
+      "只今、こんな法人様が利用されています。",
+      "選べる2つのプラン",
+      "完全成果報酬型",
+      "コール課金型",
+      "お問合せ まずはお問合せください。",
+      "審査",
+      "契約",
+      "テレアポ開始",
+      "納品",
+      "明細の添付",
+      "残高と継続分のお支払い",
+      "契約の中断",
+      "契約の解約",
+      "デザイン会社様（デザイン請負業務）",
+      "複合機販売会社様 （複合機の販売）",
+      "メーカー様 （ペットショップ様向けに取引先拡大希望）",
+      "リストは有料ですか？",
+      "アポイントの質のレベルはどの程度ですか？",
+      "審査基準を教えてください。",
+      "同行訪問やクロージングの依頼も可能ですか？",
+      "苦情が入った場合の対応は？",
+      "納品されたアポイントが不在だった場合は？"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "送信内容を確認"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "http://teleapo.media-jp.co.jp/cont/",
+        "index": 1,
+        "action": "http://teleapo.media-jp.co.jp/cont/",
+        "method": "POST",
+        "submitText": "送信内容を確認",
+        "visibleFieldCount": 18,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "お問い合わせの内容[data][]",
+            "label": "テレアポ代行について",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "お名前",
+            "label": null,
+            "placeholder": "山田 太郎",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ふりがな",
+            "label": null,
+            "placeholder": "やまだ たろう",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "団体名",
+            "label": null,
+            "placeholder": "（例）株式会社Culture publication",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "役職名",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zip1",
+            "label": null,
+            "placeholder": "半角数字",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zip2",
+            "label": null,
+            "placeholder": "半角数字",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "address1",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address2",
+            "label": null,
+            "placeholder": "市区町村",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "strt21",
+            "label": null,
+            "placeholder": "町名番地等",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "apart",
+            "label": null,
+            "placeholder": "建物名",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "電話番号[data][0]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "電話番号[data][1]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "電話番号[data][2]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ホームページ",
+            "label": null,
+            "placeholder": "（例）http://example.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "E-mail",
+            "label": null,
+            "placeholder": "（例）yamada@example.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "E-mail_comf",
+            "label": null,
+            "placeholder": "（例）yamada@example.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "お問い合わせ",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 18 y 18 campos visibles, mínimo 0 obligatorio(s). Fricción alta en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Alta",
+      "minFields": 18,
+      "maxFields": 18,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Telemarketing japonés con monedero prepago y cobro por unidad: llamada, permiso/solicitud o cita.",
+    "audience": "Empresas japonesas que externalizan telemarketing y quieren controlar gasto por microresultado.",
+    "prices": [
+      "コール課金型 1コール200円 ~（当日の再コール料金内） コール課金型は貴社のターゲットとする法人の数が少ない場合に有効です。テレアポ活動において、会話した内容等を文章にして報告いたします。"
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "資料請求（資料の郵送を希望する法人様）または架電許可（詳しく話しを聞いてみたいという法人様）案件情報も1,000円で納品！",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "特長5初期費用は10,000円のみ 打ち合わせからトークスプリクトの作成まで、初期費用は10,000円のみです。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "選べる2つのプラン 完全成果報酬型 1アポイント＝10,000円～ 1資料請求（※1）＝1,000円～ 1架電許可案件（※2）＝1,000円～ （※1）資料請求とはご担当者様のお名前（苗字）を教えていただき、郵送、FAX、メール等によって、貴社の資料または、サンプルURL等の配信、送付の許可を頂いた案件となります。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "【例】 貴社のサービスを詳しく知りたい アポインターではなく、担当者と話したい 会う前にまずは話だけ聞きたい 等です。こちらの案件はアポイントにも結び付きやすく、ご興味も持っていただいているケースも多いため、成約にも結び付きやすくなっており、また1件1,000円と安価な為、費用対効果も高いです。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "コール課金型 1コール200円 ~（当日の再コール料金内） コール課金型は貴社のターゲットとする法人の数が少ない場合に有効です。テレアポ活動において、会話した内容等を文章にして報告いたします。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "契約 契約書をかわします。初期費用（10,000円）と、最低5件分（50,000円）はデポジットとして前払いとなります。（毎月25日までに翌月分を支払い） テレアポ開始 テレアポ業務を始めます。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "資料請求（資料の郵送を希望する法人様）または架電許可（詳しく話しを聞いてみたいという法人様）案件情報も1,000円で納品！",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "特長5初期費用は10,000円のみ 打ち合わせからトークスプリクトの作成まで、初期費用は10,000円のみです。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "選べる2つのプラン 完全成果報酬型 1アポイント＝10,000円～ 1資料請求（※1）＝1,000円～ 1架電許可案件（※2）＝1,000円～ （※1）資料請求とはご担当者様のお名前（苗字）を教えていただき、郵送、FAX、メール等によって、貴社の資料または、サンプルURL等の配信、送付の許可を頂いた案件となります。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "【例】 貴社のサービスを詳しく知りたい アポインターではなく、担当者と話したい 会う前にまずは話だけ聞きたい 等です。こちらの案件はアポイントにも結び付きやすく、ご興味も持っていただいているケースも多いため、成約にも結び付きやすくなっており、また1件1,000円と安価な為、費用対効果も高いです。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "コール課金型 1コール200円 ~（当日の再コール料金内） コール課金型は貴社のターゲットとする法人の数が少ない場合に有効です。テレアポ活動において、会話した内容等を文章にして報告いたします。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "契約 契約書をかわします。初期費用（10,000円）と、最低5件分（50,000円）はデポジットとして前払いとなります。（毎月25日までに翌月分を支払い） テレアポ開始 テレアポ業務を始めます。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "特長3契約はいつでも解約可能！アポイントが取れない場合は返金します！",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "契約期間も1ヶ月単位での更新となりますので、いつでも解約または、中断することが出来る為（解約金はなし、アポイントが取れなかった分は返金）、もし費用対効果が悪いとか、考えていたサービスと異なった場合において、解約リスクも低いサービスとなっております。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "再開未定の中断の場合においては、残高が残っている場合は一旦ご返金いたします。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "また、解約時にデポジットの残高がございましたら、ご返金いたします。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "アポイントが不在だった場合は、弊社から再度架電をし、不在の理由を聞き、アポイントを取り直します。もし再訪を断られましたら引かれたデポジットの残高を戻します（返金）。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "主観的なご意見になりますので、原則返金は出来かねます。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "特長3契約はいつでも解約可能！アポイントが取れない場合は返金します！",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "契約期間も1ヶ月単位での更新となりますので、いつでも解約または、中断することが出来る為（解約金はなし、アポイントが取れなかった分は返金）、もし費用対効果が悪いとか、考えていたサービスと異なった場合において、解約リスクも低いサービスとなっております。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "再開未定の中断の場合においては、残高が残っている場合は一旦ご返金いたします。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "また、解約時にデポジットの残高がございましたら、ご返金いたします。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "アポイントが不在だった場合は、弊社から再度架電をし、不在の理由を聞き、アポイントを取り直します。もし再訪を断られましたら引かれたデポジットの残高を戻します（返金）。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "主観的なご意見になりますので、原則返金は出来かねます。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "特長3契約はいつでも解約可能！アポイントが取れない場合は返金します！",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "契約期間も1ヶ月単位での更新となりますので、いつでも解約または、中断することが出来る為（解約金はなし、アポイントが取れなかった分は返金）、もし費用対効果が悪いとか、考えていたサービスと異なった場合において、解約リスクも低いサービスとなっております。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "契約の解約 契約の解約は双方、どちらからでも、いつでも解約できます。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "また、解約時にデポジットの残高がございましたら、ご返金いたします。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "途中解約は双方可能とはどういうことですか？",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "まず、貴社が解約される場合は、原則、弊社の納品するアポイントに対して費用対効果が感じられなかった場合になると思います。その場合はいつでも解約可能です。また、逆に弊社から解約する場合は、貴社のサービスにおいて、弊社の能力ではアポイントが取れないと判断した場合です。原則3時間に1件のペースでアポイントが取れない案件となります。どちらにしましても、デポジットに残高がある場合はご返金させていただきます。",
+          "url": "https://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "特長3契約はいつでも解約可能！アポイントが取れない場合は返金します！",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "契約期間も1ヶ月単位での更新となりますので、いつでも解約または、中断することが出来る為（解約金はなし、アポイントが取れなかった分は返金）、もし費用対効果が悪いとか、考えていたサービスと異なった場合において、解約リスクも低いサービスとなっております。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "契約の解約 契約の解約は双方、どちらからでも、いつでも解約できます。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "また、解約時にデポジットの残高がございましたら、ご返金いたします。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "途中解約は双方可能とはどういうことですか？",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        },
+        {
+          "text": "まず、貴社が解約される場合は、原則、弊社の納品するアポイントに対して費用対効果が感じられなかった場合になると思います。その場合はいつでも解約可能です。また、逆に弊社から解約する場合は、貴社のサービスにおいて、弊社の能力ではアポイントが取れないと判断した場合です。原則3時間に1件のペースでアポイントが取れない案件となります。どちらにしましても、デポジットに残高がある場合はご返金させていただきます。",
+          "url": "http://teleapo.media-jp.co.jp/",
+          "pageTitle": "テレアポ代行",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://teleapo.media-jp.co.jp/",
+        "http://teleapo.media-jp.co.jp/cont/",
+        "http://teleapo.media-jp.co.jp/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "完全成功報酬型のテレアポ代行",
+        "テレアポ代行お問い合わせ"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "送信内容を確認"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "http://teleapo.media-jp.co.jp/cont/ · 18 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Consulta → definición de unidad/criterios → alta → depósito → llamadas → débito por llamada/permiso/cita → entrega/reprogramación → pausa al agotar saldo → recarga o cierre → devolución"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Consulta [observado] → Screening [observado] → Propuesta y contrato [observado] → Prepago [observado] → Preparación [observado] → Llamada [observado] → Entrega y liquidación [observado] → No-show y salida [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://teleapo.media-jp.co.jp/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "http://teleapo.media-jp.co.jp/cont/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "http://teleapo.media-jp.co.jp/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=teleapo.media-jp.co.jp",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Culture%20Publication%20Teleapo&search_type=keyword_unordered",
+      "label": "Fuente pública 5"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Evitar o testear:** el formulario más corto ya pide 18 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Telemarketing de baja barrera con dos planes: éxito por resultado definido o tarifa por llamada.",
+      "promise": "Listas sin coste, guion incluido, reporting y devolución del saldo no consumido al parar o cancelar.",
+      "positioning": "Servicio japonés gestionado de telemarketing y concertación",
+      "audience": "Empresas japonesas que externalizan prospección, concertación o petición de documentación B2B o B2C.",
+      "voice": [
+        "detallado",
+        "transaccional",
+        "pragmático",
+        "orientado a reducción de riesgo",
+        "educativo"
+      ],
+      "patterns": [
+        "Explica dinero y pasos con ejemplos numéricos.",
+        "Distingue cita, documentación y permiso de volver a llamar.",
+        "Anticipa no-show, saldo y cancelación como objeciones."
+      ]
+    },
+    "cta": {
+      "primary": "お問い合わせ",
+      "secondary": [
+        "相談・見積もり"
+      ],
+      "forms": [
+        {
+          "url": "https://teleapo.media-jp.co.jp/cont/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "tipo de consulta",
+            "nombre",
+            "kana",
+            "organización",
+            "cargo",
+            "código postal en partes",
+            "prefectura o dirección",
+            "calle",
+            "edificio",
+            "teléfono en tres partes",
+            "sitio web",
+            "email",
+            "confirmación de email",
+            "mensaje",
+            "controles técnicos"
+          ],
+          "fieldCount": 18,
+          "friction": "alta; formato corporativo japonés con datos duplicados o segmentados",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Consulta",
+        "status": "observado",
+        "detail": "La empresa comunica producto, target y resultado deseado mediante el formulario."
+      },
+      {
+        "stage": "Screening",
+        "status": "observado",
+        "detail": "El proveedor revisa encaje, conflicto competitivo y capacidad antes de aceptar."
+      },
+      {
+        "stage": "Propuesta y contrato",
+        "status": "observado",
+        "detail": "Se elige plan, definición de éxito y lista; se formaliza contrato."
+      },
+      {
+        "stage": "Prepago",
+        "status": "observado",
+        "detail": "Se deposita alta de JPY 10.000 y un mínimo equivalente a cinco citas, JPY 50.000 en el ejemplo principal."
+      },
+      {
+        "stage": "Preparación",
+        "status": "observado",
+        "detail": "Reunión, guion y lista propia o del cliente preparan la campaña."
+      },
+      {
+        "stage": "Llamada",
+        "status": "observado",
+        "detail": "Un call center gestionado ejecuta llamadas y registra citas, documentación o permiso de rellamada."
+      },
+      {
+        "stage": "Entrega y liquidación",
+        "status": "observado",
+        "detail": "Los resultados se comunican por email o informe y se descuentan del depósito con estado mensual."
+      },
+      {
+        "stage": "No-show y salida",
+        "status": "observado",
+        "detail": "Se intenta reprogramar; el saldo se repone, arrastra o reembolsa al parar o cancelar conforme a lo publicado."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "alta — JPY 10.000, incluyendo reunión y guion",
+        "éxito — cita desde JPY 10.000; petición de documentación desde JPY 1.000; permiso de volver a llamar desde JPY 1.000",
+        "por llamada — desde JPY 200; rellamadas del mismo día incluidas"
+      ],
+      "contract": [
+        "depósito — alta JPY 10.000 más prepago mínimo de cinco citas, JPY 50.000 en el esquema publicado",
+        "pago — antes del día 25 del mes siguiente; impago pausa la operación",
+        "salida — mensual, cancelable por cualquiera de las partes sin fee; saldo no consumido reembolsable al paro indefinido o cancelación"
+      ],
+      "guarantee": [
+        "no-show — se vuelve a llamar para reprogramar; si rechaza, se devuelve el saldo aplicable",
+        "calidad subjetiva — una reunión considerada pobre o no satisfactoria no genera por sí sola reembolso"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "nginx",
+      "WordPress",
+      "Call center presencial, email e informes"
+    ],
+    "contradictions": [
+      "La denominación de éxito completo convive con JPY 10.000 de alta y un depósito inicial de al menos JPY 50.000; es prepago con liquidación, no cero desembolso.",
+      "La idea de reembolso si no hay cita se refiere al saldo no consumido o al no-show especificado; no cubre una reunión de calidad subjetivamente baja.",
+      "El éxito puede definirse como cita, documentación, permiso de rellamada o incluso condición ligera acordada, por lo que el nombre appointment no es una unidad uniforme.",
+      "La web llama dos a los planes, pero también permite combinarlos y menciona posibilidades adicionales; la taxonomía no es cerrada.",
+      "No se publica detalle suficiente de consentimiento, grabación, listas y normativa por campaña B2B o B2C."
+    ],
+    "inferences": [],
+    "notObservable": [
+      "criterios de screening",
+      "definición particular de éxito",
+      "calidad mínima de cita",
+      "SLA de entrega",
+      "cumplimiento por tipo de campaña",
+      "grabación y retención",
+      "validación de lista",
+      "dialer",
+      "CRM",
+      "grabación",
+      "proveedor de telefonía",
+      "analítica",
+      "gestión de listas",
+      "No se verificaron pantalla de confirmación, respuesta, screening, presupuesto o contrato."
+    ],
+    "limitations": [
+      "No se envió consulta ni se recibió presupuesto.",
+      "No se verificaron listas, guiones, llamadas, citas, facturas o reembolsos.",
+      "Los casos son autodeclarados.",
+      "La regulación y el consentimiento deben comprobarse por campaña antes de operar."
+    ],
+    "lessons": {
+      "copy": [
+        "Separar cita, documentación y permiso de rellamada como eventos con valor distinto.",
+        "Explicar dinero y liquidación mediante casos numéricos completos."
+      ],
+      "adapt": [
+        "Depósito con saldo visible, arrastre y reembolso.",
+        "Proceso explícito de reprogramación de no-show.",
+        "Lista propia o del cliente y definición de éxito antes de llamar."
+      ],
+      "avoid": [
+        "Llamar éxito puro a un modelo con alta y depósito.",
+        "Prometer reembolso sin distinguir saldo, no-show y calidad subjetiva.",
+        "Operar sin documentación pública de consentimiento por campaña."
+      ],
+      "test": [
+        "Precio por cita frente a documento o permiso.",
+        "Depósito pequeño frente a facturación posterior.",
+        "Definición binaria de válida frente a score de calidad."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://teleapo.media-jp.co.jp/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://teleapo.media-jp.co.jp/cont/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,517 @@
+{
+  "id": "globental",
+  "name": "Globental",
+  "reviewedAt": "2026-08-22T15:50:19.402Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Cuéntanos qué necesitas. Nosotros hacemos el resto.",
+    "heroObserved": true,
+    "priorSummary": "Contratan directamente al talento LATAM (Colombia, México, Argentina, Chile, Perú) y facturan a la agencia europea una única cuota mensual — \"55% ahorro medio vs Europa\" en coste de talento",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 191 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 750 palabras por página comercial recuperada. Muestras breves: “Amplía tu agencia con talento remoto de Latinoamérica” · “Cuéntanos qué necesitas. Nosotros hacemos el resto.” · “Un fee fijo, sin sorpresas. Ahorra desde el día uno.”.",
+    "supportingHeadings": [
+      "Amplía tu agencia con talento remoto de Latinoamérica",
+      "Perfiles que las agencias más contratan",
+      "Desarrolladores Web",
+      "Marketing Digital",
+      "SDRs / Biz Dev",
+      "Project Managers",
+      "QA / Testing",
+      "Asistentes de Cuenta",
+      "¿Por qué las agencias europeas contratan en Latinoamérica?",
+      "Tu equipo ampliado en tres pasos",
+      "Cuéntanos tus necesidades",
+      "Recibe candidatos evaluados",
+      "Integra y ejecuta",
+      "¿Necesitas más capacidad para tu agencia?",
+      "Cuéntanos qué necesitas. Nosotros hacemos el resto.",
+      "Solicitud recibida",
+      "¿Prefieres hablar directamente?",
+      "Sin coste inicial",
+      "15 min, sin presión",
+      "Candidatos pre-evaluados",
+      "Compliance incluido",
+      "Un fee fijo, sin sorpresas. Ahorra desde el día uno.",
+      "¿Cuánto cuesta realmente contratar en España?",
+      "¿Cuánto podrías ahorrar?",
+      "Todo esto está incluido",
+      "Sourcing dedicado",
+      "5 filtros de evaluación",
+      "Contratos y compliance",
+      "Pagos internacionales",
+      "Onboarding asistido"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Reserva tu llamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://globental.com/contacto/",
+      "text": "Reserva tu llamada",
+      "href": "https://cal.com/joaquin-fernandez-1r8ljy/30min",
+      "element": "a",
+      "kind": "conversion",
+      "score": 220.5
+    },
+    "ctas": [
+      "Reserva tu llamada",
+      "Reserva tu llamada gratis",
+      "Solicita perfiles para tu startup",
+      "Escríbenos Rellena el formulario y te respondemos en menos de 24h.",
+      "Contacto",
+      "Solicita perfiles",
+      "Solicitar perfiles",
+      "contacto@globental.com",
+      "Solicita perfiles ahora",
+      "Solicitar propuesta gratuita",
+      "Solicita perfiles para tu agencia",
+      "EN",
+      "Enviar solicitud",
+      "Hablar con un asesor",
+      "Quiero contratar talento",
+      "Ver perfiles disponibles",
+      "Busco trabajo / envío mi CV"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://globental.com/contacto/",
+        "index": 1,
+        "action": "https://globental.com/contacto/",
+        "method": "GET",
+        "submitText": "Enviar solicitud",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Empresa",
+            "placeholder": "Nombre de tu empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Teléfono (opcional)",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "¿Qué perfil estás buscando?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": "Cuéntanos más sobre lo que necesitas",
+            "placeholder": "Describe el perfil ideal, número de personas, urgencia, presupuesto aproximado... todo lo",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Empresa"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Contratan directamente al talento LATAM (Colombia, México, Argentina, Chile, Perú) y facturan a la agencia europea una única cuota mensual — \"55% ahorro medio vs Europa\" en coste de talento",
+    "audience": "\"Agencias europeas\" (incluida España) que quieren ampliar equipo (SDR/BDR, marketing digital, PM, QA, asistentes de cuenta) sin subir nómina fija en Europa",
+    "prices": [
+      "Talento freelance LATAM contratado por Globental, pagado en una única factura mensual: cubre el salario del profesional + una tarifa de gestión fija desde 290 €/mes; nosotros contratamos al candidato y gestionamos los pagos.",
+      "Salario profesional 1.200 € / mes Fee de gestión Globental 290 € / mes Tu coste total 1.490 € / mes El mismo perfil en España 2.800 – 3.500 € / mes (con SS) Ahorro mensual 1.300 – 2.000 € España vs LATAM ¿Cuánto cuesta",
+      "Incluye Seguridad Social y cargas Datos reales de mercado LATAM 2026 Sin compromiso Salario bruto anual en España EUR / año Coste España / mes 4,875 EUR Coste LATAM / mes 1,950 EUR Ahorro anual estimado 35,100 EUR basado en el salario introducido Todo esto",
+      "Solo empiezas a recibir la factura mensual (salario + tarifa desde 290 €/mes) cuando el profesional ya está trabajando.",
+      "Recibes una factura única mensual de Globental que cubre el salario del profesional + la tarifa de gestión (desde 290 €/mes)."
+    ],
+    "guarantee": [
+      "Garantía 30 días Si decides terminar la colaboración en el primer mes, te reembolsamos las tarifas del periodo y buscamos un sustituto sin coste adicional.",
+      "Garantía 30 días: reembolso + sustitución Reembolso íntegro de las tarifas y sustitución sin coste si no encaja.",
+      "Garantía de 30 días: si decides terminar la colaboración en el primer mes, te reembolsamos las tarifas del periodo y buscamos un sustituto sin coste adicional.",
+      "Solicitar propuesta gratuita Hablar con un asesor Propuesta en <24h Garantía 30 días: reembolso + sustitución Sin permanencia (1 mes de preaviso) Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+      "Reserva tu llamada gratis Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución Sin permanencia (1 mes de preaviso) Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+      "Solicita perfiles ahora Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución 290 €/mes fee fijo Conectamos empresas europeas con el mejor talento remoto de Latinoamérica."
+    ],
+    "proof": [],
+    "objections": [
+      "No hay permanencia mínima ni contratos de larga duración: la suscripción es mensual y solo necesitas avisarnos con 1 mes de preaviso para cancelar.",
+      "Reserva tu llamada gratis Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución Sin permanencia (1 mes de preaviso) Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+      "¿Qué pasa si no me convence ningún candidato?",
+      "¿Puedo cancelar en cualquier momento?",
+      "¿Qué pasa si necesito más de un profesional?",
+      "Servicios Perfiles Precios Recursos Nosotros EN Solicita perfiles × Servicios Perfiles Precios Recursos Nosotros Solicita perfiles FAQ Preguntas frecuentes Todo lo que necesitas saber sobre contratar talento freelance LATAM a través de Globental: nosotros contratamos al profesional y te facturamos en una única factura mensual."
+    ],
+    "urgency": [
+      "Solicita perfiles ahora Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución 290 €/mes fee fijo Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+      "GA4 Meta Ads HubSpot Ver perfiles → 📞 SDRs / Biz Dev Prospección y generación de nuevos clientes para tu propia agencia.",
+      "Herramientas de agencia: Figma, WordPress, Shopify, GA4, Meta Ads, HubSpot...",
+      "Introduce lo que pagas hoy por un puesto en España.",
+      "HubSpot Apollo LinkedIn Ver perfiles → 🚀 Marketing Digital Growth, SEO, content, paid media y social media."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Talento freelance LATAM contratado por Globental, pagado en una única factura mensual: cubre el salario del profesional + una tarifa de gestión fija desde 290 €/mes; nosotros contratamos al candidato y gestionamos los pagos.",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Salario profesional 1.200 € / mes Fee de gestión Globental 290 € / mes Tu coste total 1.490 € / mes El mismo perfil en España 2.800 – 3.500 € / mes (con SS) Ahorro mensual 1.300 – 2.000 € España vs LATAM ¿Cuánto cuesta",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Incluye Seguridad Social y cargas Datos reales de mercado LATAM 2026 Sin compromiso Salario bruto anual en España EUR / año Coste España / mes 4,875 EUR Coste LATAM / mes 1,950 EUR Ahorro anual estimado 35,100 EUR basado en el salario introducido Todo esto",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Solo empiezas a recibir la factura mensual (salario + tarifa desde 290 €/mes) cuando el profesional ya está trabajando.",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Recibes una factura única mensual de Globental que cubre el salario del profesional + la tarifa de gestión (desde 290 €/mes).",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Garantía 30 días Si decides terminar la colaboración en el primer mes, te reembolsamos las tarifas del periodo y buscamos un sustituto sin coste adicional.",
+          "url": "https://globental.com/contacto/",
+          "pageTitle": "Contacto — Globental | Solicita Perfiles de Talento LATAM",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía 30 días: reembolso + sustitución Reembolso íntegro de las tarifas y sustitución sin coste si no encaja.",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía de 30 días: si decides terminar la colaboración en el primer mes, te reembolsamos las tarifas del periodo y buscamos un sustituto sin coste adicional.",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Solicitar propuesta gratuita Hablar con un asesor Propuesta en <24h Garantía 30 días: reembolso + sustitución Sin permanencia (1 mes de preaviso) Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+          "url": "https://globental.com/precios/",
+          "pageTitle": "Precios — Globental | Ahorra Hasta un 60% Contratando en LATAM",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Todas Precios Proceso Talento Legal y compliance Garantías Precios y costes ¿Cuánto cuesta contratar a través de Globental?",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantías y soporte ¿Qué garantía tengo si el candidato no funciona?",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía de 30 días: si decides terminar la colaboración en el primer mes, te reembolsamos las tarifas del periodo y buscamos un sustituto sin coste adicional.",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Reserva tu llamada gratis Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución Sin permanencia (1 mes de preaviso) Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "El proceso es el mismo: rápido, simple y sin riesgo.",
+          "url": "https://globental.com/talento-remoto-para-startups/",
+          "pageTitle": "Talento Remoto para Startups — Globental | Equipos LATAM para Europa",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Solicita perfiles ahora Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución 290 €/mes fee fijo Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+          "url": "https://globental.com/talento-remoto-para-startups/",
+          "pageTitle": "Talento Remoto para Startups — Globental | Equipos LATAM para Europa",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Servicios Perfiles Precios Recursos Nosotros EN Solicita perfiles × Servicios Perfiles Precios Recursos Nosotros Solicita perfiles FAQ Preguntas frecuentes Todo lo que necesitas saber sobre contratar talento freelance LATAM a través de Globental: nosotros contratamos al profesional y te facturamos en una única factura mensual.",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "¿Qué pasa si no me convence ningún candidato?",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "¿Puedo cancelar en cualquier momento?",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "No hay permanencia mínima ni contratos de larga duración: la suscripción es mensual y solo necesitas avisarnos con 1 mes de preaviso para cancelar.",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "¿Qué pasa si necesito más de un profesional?",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Reserva tu llamada gratis Ver precios Shortlist en 10 días Garantía 30 días: reembolso + sustitución Sin permanencia (1 mes de preaviso) Conectamos empresas europeas con el mejor talento remoto de Latinoamérica.",
+          "url": "https://globental.com/preguntas-frecuentes/",
+          "pageTitle": "Preguntas Frecuentes — Globental | FAQ sobre Contratación LATAM",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://globental.com/talento-remoto-para-agencias/",
+        "https://globental.com/contacto/",
+        "https://globental.com/precios/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Amplía tu agencia con talento remoto de Latinoamérica",
+        "Cuéntanos qué necesitas. Nosotros hacemos el resto.",
+        "Un fee fijo, sin sorpresas. Ahorra desde el día uno.",
+        "Del briefing al candidato contratado. En días, no meses."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Solicita perfiles",
+        "Solicita perfiles para tu agencia",
+        "Solicita perfiles ahora",
+        "contacto@globental.com",
+        "Contacto",
+        "EN",
+        "Quiero contratar talento",
+        "Busco trabajo / envío mi CV"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://globental.com/contacto/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Agenda online",
+        "Reserva tu llamada",
+        "Reserva tu llamada gratis",
+        "Reserva tu llamada gratis",
+        "Reserva tu llamada gratis"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing/precios/contacto → formulario o llamada gratuita de 15 min → definición de rol, herramientas, idioma y disponibilidad → Globental filtra con CV, prueba técnica, entrevista conductual,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://globental.com/talento-remoto-para-agencias/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://globental.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://globental.com/precios/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://globental.com/como-funciona/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://globental.com/preguntas-frecuentes/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://globental.com/nosotros/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://globental.com/talento-remoto-para-startups/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://globental.com/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://globental.com/talento-remoto-para-agencias/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Reserva tu llamada”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

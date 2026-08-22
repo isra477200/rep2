@@ -1,0 +1,578 @@
+{
+  "id": "teamleads",
+  "name": "TeamLeads",
+  "reviewedAt": "2026-08-22T15:50:18.002Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "● Agencia de generación de leads cualificados",
+    "heroObserved": true,
+    "priorSummary": "\"Flujo predecible de oportunidades con intención de compra\"; leads exclusivos no compartidos con competencia; metodología T.E.A.M (Target-Estrategia-Activación-Mejora)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 212 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1887 palabras por página comercial recuperada. Muestras breves: “● Agencia de generación de leads cualificados” · “Llena tu agenda de primeras visitas de implantes cada mes” · “Captación inmobiliaria para agencias que quieren liderar su zona.”.",
+    "supportingHeadings": [
+      "● Agencia de generación de leads cualificados",
+      "Tu propia máquina de captación de leads con cualificación automática.",
+      "Solicita información sobre el sistema de captación de leads",
+      "Sistema T.E.A.M",
+      "Target",
+      "Estrategia",
+      "Activación",
+      "Mejora continua",
+      "Generación de leads cualificados adaptada a tu negocio",
+      "Leads inmobiliarios",
+      "Leads de hipotecas",
+      "Leads para clínicas",
+      "Leads de implantes dentales",
+      "Leads de paneles solares",
+      "Leads de seguros",
+      "Leads para reformas",
+      "¿Otro sector?",
+      "No todas las empresas de captación de leads consiguen leads comerciales reales",
+      "La mayoría",
+      "Con TeamLeads",
+      "El equipo de trabajo.",
+      "El Origen.",
+      "Todo sobre la generación de leads",
+      "Cómo trabaja una agencia de generación de leads paso a paso",
+      "Reunión de inicio: definimos qué es un lead cualificado para ti",
+      "Montamos los anuncios y el embudo de cualificación",
+      "Activación de la campaña y calibración",
+      "Optimización hasta tener un volumen previsible",
+      "Consigue leads cualificados para tu negocio.",
+      "Consigue leads cualificados para tu negocio"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactar con TeamLeads por WhatsApp",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.teamleads.es/captacion-inmobiliaria",
+      "text": "Contactar con TeamLeads por WhatsApp",
+      "href": "https://api.whatsapp.com/send?phone=+34611902030&text=Hola,%20vengo%20de%20la%20web%20de%20TeamLeads.%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20para%20tener%20m%C3%A1s%20captaciones.",
+      "element": "a",
+      "kind": "conversion",
+      "score": 196
+    },
+    "ctas": [
+      "Contactar con TeamLeads por WhatsApp",
+      "Contactar por WhatsApp para captación de pacientes en clínicas estéticas",
+      "💬 Hablar por WhatsApp",
+      "Descubrir el sistema privado de captación inmobiliaria por WhatsApp",
+      "Conseguir leads",
+      "Ver la solución →",
+      "Quiero más leads cualificados",
+      "SÍ, NECESITO NUEVOS PACIENTES",
+      "Quiero captar pacientes para mi clínica",
+      "QUIERO MIS LEADS HIPOTECARIOS EXCLUSIVOS",
+      "QUIERO MIS LEADS DE AUTOMOCIÓN EXCLUSIVOS",
+      "Sí, necesito nuevos pacientes de implantes",
+      "RECIBIR INFORMACIÓN PARA VENDER MÁS COCHES",
+      "RECIBIR INFORMACIÓN PARA AUMENTAR MIS LEADS",
+      "RECIBIR INFORMACIÓN PARA AUMENTAR MIS CAPTACIONES",
+      "Recibir información para multiplicar mis firmas hipotecarias"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.teamleads.es/",
+        "index": 1,
+        "action": "https://www.teamleads.es/",
+        "method": "GET",
+        "submitText": "QUIERO MÁS LEADS CUALIFICADOS",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "sector",
+            "label": "Sector",
+            "placeholder": "¿Cuál es tu sector?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Sí, acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.teamleads.es/captar-pacientes-implantes",
+        "index": 1,
+        "action": "https://www.teamleads.es/captar-pacientes-implantes",
+        "method": "GET",
+        "submitText": "SÍ, NECESITO NUEVOS PACIENTES",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ciudad",
+            "label": null,
+            "placeholder": "Ciudad",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Sí, acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.teamleads.es/captar-pacientes-implantes",
+        "index": 2,
+        "action": "https://www.teamleads.es/captar-pacientes-implantes",
+        "method": "GET",
+        "submitText": "SÍ, NECESITO NUEVOS PACIENTES",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "ciudad",
+            "label": "Ciudad",
+            "placeholder": "Ciudad",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Sí, acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.teamleads.es/marketing-digital-para-clinicas-esteticas",
+        "index": 1,
+        "action": "https://www.teamleads.es/marketing-digital-para-clinicas-esteticas",
+        "method": "GET",
+        "submitText": "QUIERO CAPTAR PACIENTES",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "sector",
+            "label": "Tipo de clínica",
+            "placeholder": "¿Qué tipo de clínica tienes?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Sí, acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Sector, ciudad, Ciudad.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": [
+        "Sector",
+        "ciudad",
+        "Ciudad"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Flujo predecible de oportunidades con intención de compra\"; leads exclusivos no compartidos con competencia; metodología T.E.A.M (Target-Estrategia-Activación-Mejora)",
+    "audience": "Inmobiliarias, brokers hipotecarios, clínicas estéticas/dentales, instaladores solares, corredurías de seguros, empresas de reforma",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Te construimos una entrada de clientes constante y predecible que por fin controlas tú.",
+      "leads inmobiliarios captación de propietarios leads para inmobiliarias Conseguir leads inmobiliarios → Hipotecas Leads de hipotecas Clientes que buscan financiación: primera hipoteca, mejora de condiciones o reunificación de deuda.",
+      "leads de seguros leads seguros de salud leads seguros de vida Conseguir leads → Reformas Leads para reformas Clientes con proyectos reales de obra: reformas integrales, reforma de baño, reforma de cocina, pavimentos y aislamiento térmico.",
+      "Te ayudamos a trasladar tu verdadero valor a tus clientes y convertirte en la empresa que buscan cuando deciden comprar.",
+      "Generar leads: significado y para qué sirve + Generar leads significa conseguir contactos de potenciales clientes que han mostrado interés en lo que ofreces, normalmente dejando sus datos a cambio de información de valor."
+    ],
+    "objections": [
+      "Y trabajamos sin permanencia: continúas mes a mes mientras los números te salgan.",
+      "Quiero mi propio sistema de leads → Irene Directora & Comunicación Ainhoa Media Buyer Ana Ventas Ricardo Edición & Diseño Salma Administración Preguntas frecuentes Todo sobre la generación de leads ¿Qué es la generación de leads?",
+      "¿Hay permanencia para trabajar con TeamLeads?",
+      "Trabajamos sin permanencia.",
+      "Sin compromiso y sin permanencia."
+    ],
+    "urgency": [
+      "0 de 5 requisitos completados 0% Cumplo los requisitos — solicitar acceso Experiencias Ellos crecen con nosotros,ahora es tu turno.",
+      "Empieza hoy Consigue leads cualificados para tu negocio.",
+      "¿Por qué Meta Ads y no solo Google Ads?+ Google Ads capta a quien ya busca implantes, pero ese público es limitado.",
+      "🏡 Hoy tiene un flujo constante de propiedades de calidad en su zona.",
+      "Preguntas frecuentes · Captación inmobiliaria Quizás ahora te estáspreguntando… ¿Qué diferencia hay entre leads genéricos y captación de inmuebles cualificada?"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Te construimos una entrada de clientes constante y predecible que por fin controlas tú.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "leads inmobiliarios captación de propietarios leads para inmobiliarias Conseguir leads inmobiliarios → Hipotecas Leads de hipotecas Clientes que buscan financiación: primera hipoteca, mejora de condiciones o reunificación de deuda.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "leads de seguros leads seguros de salud leads seguros de vida Conseguir leads → Reformas Leads para reformas Clientes con proyectos reales de obra: reformas integrales, reforma de baño, reforma de cocina, pavimentos y aislamiento térmico.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Te ayudamos a trasladar tu verdadero valor a tus clientes y convertirte en la empresa que buscan cuando deciden comprar.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Generar leads: significado y para qué sirve + Generar leads significa conseguir contactos de potenciales clientes que han mostrado interés en lo que ofreces, normalmente dejando sus datos a cambio de información de valor.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Quiero mi propio sistema de leads → Irene Directora & Comunicación Ainhoa Media Buyer Ana Ventas Ricardo Edición & Diseño Salma Administración Preguntas frecuentes Todo sobre la generación de leads ¿Qué es la generación de leads?",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Hay permanencia para trabajar con TeamLeads?",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Trabajamos sin permanencia.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Y trabajamos sin permanencia: continúas mes a mes mientras los números te salgan.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin compromiso y sin permanencia.",
+          "url": "https://www.teamleads.es/",
+          "pageTitle": "TeamLeads | Agencia de Captación de Leads Cualificados",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.teamleads.es/",
+        "https://www.teamleads.es/captar-pacientes-implantes",
+        "https://www.teamleads.es/captacion-inmobiliaria"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "● Agencia de generación de leads cualificados",
+        "Llena tu agenda de primeras visitas de implantes cada mes",
+        "Captación inmobiliaria para agencias que quieren liderar su zona.",
+        "Leads para Hipotecas: Multiplica tus Firmas Cada Mes"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Conseguir leads",
+        "Quiero más leads cualificados",
+        "SÍ, NECESITO NUEVOS PACIENTES",
+        "Sí, necesito nuevos pacientes de implantes",
+        "Contactar con TeamLeads por WhatsApp",
+        "Descubrir el sistema privado de captación inmobiliaria por WhatsApp",
+        "RECIBIR INFORMACIÓN PARA AUMENTAR MIS CAPTACIONES",
+        "QUIERO MIS LEADS HIPOTECARIOS EXCLUSIVOS"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.teamleads.es/ · 5 campos",
+        "https://www.teamleads.es/ · 5 campos",
+        "https://www.teamleads.es/captar-pacientes-implantes · 5 campos",
+        "https://www.teamleads.es/captar-pacientes-implantes · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → formulario con sector, nombre, email y teléfono → respuesta en menos de 24 h → Target: definición de negocio y público → Strategy: anuncios y landing"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.teamleads.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.teamleads.es/captar-pacientes-implantes",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.teamleads.es/captacion-inmobiliaria",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.teamleads.es/leads-hipotecas",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.teamleads.es/leads-reformas",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.teamleads.es/marketing-digital-para-clinicas-esteticas",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.teamleads.es/leads-concesionarios",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=teamleads.es",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=1058412027345959",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.teamleads.es/resultados: Respuesta supera 2500000 bytes",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactar con TeamLeads por WhatsApp”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

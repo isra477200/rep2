@@ -1,0 +1,466 @@
+{
+  "id": "busysales-ai",
+  "name": "busysales.ai",
+  "reviewedAt": "2026-08-22T15:50:19.866Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "SGD60",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 331 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 4950 palabras por página comercial recuperada. Muestras breves: “SGD60” · “More”.",
+    "supportingHeadings": [
+      "SGD60",
+      "What you get",
+      "How It Works",
+      "Built using leading AI technologies",
+      "See BusySales.ai In Action",
+      "Everything Your AI Salesman Does For You",
+      "BusySales Plans & Pricing",
+      "Testimonials",
+      "Estimated Sales Team Monthly Cost (SGD)",
+      "Frequently Asked Questions",
+      "Who is busysales.ai for?",
+      "How many leads do I get?",
+      "Do I need technical skills?",
+      "Can I use my own lead lists?",
+      "Does BusySales integrate with other tools?",
+      "Is BusySales GDPR/PDPA compliant?",
+      "Can I customize my campaigns?",
+      "How do I track performance?",
+      "What makes BusySales different from other CRMs?",
+      "Is BusySales suitable for B2B businesses?",
+      "Can B2C businesses use BusySales to manage customer data?",
+      "What is BusySales?",
+      "Ready to Supercharge Your Sales?",
+      "Grow your Sales with your AI Salesman!",
+      "Stay PDPA Compliant with BusySales’ DPO-As-A-Service",
+      "BusySales SME Offer",
+      "Only$300/year",
+      "Scout Bee",
+      "Responsible Outreach & Usage Policy",
+      "About Us"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us to Find Out More",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://busysales.ai/",
+      "text": "Contact Us to Find Out More",
+      "href": "https://busysales.ai/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 178.25
+    },
+    "ctas": [
+      "Contact Us to Find Out More",
+      "Apply",
+      "Contact Us",
+      "Start chat"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://busysales.ai/",
+        "index": 1,
+        "action": "https://busysales.ai/",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "First Name",
+            "placeholder": "John",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[lname]",
+            "label": "Last Name",
+            "placeholder": "Doe",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "email@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[company_name]",
+            "label": "Company",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[type]",
+            "label": "Type",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "How can BusySales help?",
+            "placeholder": "How can we help you today?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://busysales.ai/",
+        "index": 2,
+        "action": "https://busysales.ai/wp-admin/admin-ajax.php",
+        "method": "POST",
+        "submitText": "Start chat",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "company_name",
+            "label": "Company Name",
+            "placeholder": "Company Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "you@company.com",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 2 y 6 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Company, Company Name.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 6,
+      "qualification": [
+        "Company",
+        "Company Name"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Joel Chua Financial Consultant Read More As an insurance agent, BusySales helps me identify potential SME clients every morning.",
+      "Lydia Chew Founder, Lyncro Branding Read More Instead of paying $4,000 for a salesperson, I pay a fraction and get consistent results.",
+      "Amirah Binte Zainal Event Planner Read More busysales helped me connect with corporate clients for my event business.",
+      "Built using leading AI technologies Open AI Google Gemini DeepSeek Claude See BusySales.ai In Action Everything you need to find, engage and convert more customers.",
+      "It finds fresh leads, manages outreach, and follows up with potential customers to turn more conversations into real opportunities."
+    ],
+    "objections": [
+      "3 months S$90/month 6 months S$72/month 12 months Standard S$60/month 24 months S$54/month 36 months Best Value S$48/month Cancel Apply",
+      "Sarah Lim Founder, EduLeap Academy Read More BusySales helped my training company secure contracts from SMEs I didn’t even know existed.",
+      "…/ Lead Generator $2,200 – $3,200 Sales Support / Coordinator $2,500 – $3,500 Commission / Incentives $2,000 – $10,000+ Frequently Asked Questions Can't find what you are looking for?"
+    ],
+    "urgency": [
+      "Sarah Lim Founder, EduLeap Academy Read More BusySales helped my training company secure contracts from SMEs I didn’t even know existed.",
+      "Now BusySales brings warm B2B leads straight to our inbox.",
+      "Aaron Wong Head of Sales, BuildSmart Services Read More My sales team now focuses on closing deals, not finding them.",
+      "Clarence Neo Creative Director, PixelWave Studio Read More My small design agency now competes with bigger players because of BusySales’ automation.",
+      "Now I rely on data.",
+      "Tracking What’s Happening See who opened your emails, who replied, and who’s interested — so you always know where your next opportunity is coming from."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Your AI B2B Salesman From SGD 60 / month About $2 a day Built for small businesses, freelancers and growing teams.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Worker Bee SGD 100/mo Choose Coming Soon Most Popular Scout Bee SGD 60 /mo 12 months Get Started Queen Bee SGD 150/mo Choose Coming Soon Worker Bee — Your AI B2B Salesman and Admin Bee!",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "From SGD 100 / Month (about $4 a day) Ready to take your sales process further?",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "…WhatsApp Campaigns Visual Sales Funnels & Conversion Reports Inventory & Supplier Management tools Scout Bee — Your AI B2B Salesman From SGD 60 / Month (about $2 a day) A simple starting point for small businesses, freelancers, and growing teams.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Features More Details Reach out to as much as 30 business leads a day Manage Quotations and Meetings Handle Customer Queries Find Partners or Resellers directly from your dashboard Daily reports on the campaigns Queen Bee — B2B AI Salesman + AI Admin + AI",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Lydia Chew Founder, Lyncro Branding Read More Instead of paying $4,000 for a salesperson, I pay a fraction and get consistent results.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [
+        {
+          "text": "The platform does not provide downloadable contact databases, does not sell personal data, and does not guarantee the completeness or accuracy of third-party data.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        },
+        {
+          "text": "However, we cannot guarantee complete security of data transmitted via the internet.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Skip to content How it Works FAQ Pricing Testimonials More About Us Menu How it Works FAQ Pricing Testimonials More About Us Sign Up Login Sign Up How it Works Pricing FAQ Testimonials More About Us Contact Us Menu Sign Up How it Works Pricing",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Built using leading AI technologies Open AI Google Gemini DeepSeek Claude See BusySales.ai In Action Everything you need to find, engage and convert more customers.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "It finds fresh leads, manages outreach, and follows up with potential customers to turn more conversations into real opportunities.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Joel Chua Financial Consultant Read More As an insurance agent, BusySales helps me identify potential SME clients every morning.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Lydia Chew Founder, Lyncro Branding Read More Instead of paying $4,000 for a salesperson, I pay a fraction and get consistent results.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Amirah Binte Zainal Event Planner Read More busysales helped me connect with corporate clients for my event business.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Skip to content How it Works FAQ Pricing Testimonials More About Us Menu How it Works FAQ Pricing Testimonials More About Us Sign Up Login Sign Up How it Works Pricing FAQ Testimonials More About Us Contact Us Menu Sign Up How it Works Pricing",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sarah Lim Founder, EduLeap Academy Read More BusySales helped my training company secure contracts from SMEs I didn’t even know existed.",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…/ Lead Generator $2,200 – $3,200 Sales Support / Coordinator $2,500 – $3,500 Commission / Incentives $2,000 – $10,000+ Frequently Asked Questions Can't find what you are looking for?",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "How it Works FAQ Pricing Testimonials How it Works FAQ Pricing Testimonials Investors Relations Careers Partnership More About Us Investors Relations Careers Partnership More About Us Terms & Conditions Privacy Policy Data Protection Responsible Use Policy Terms & Conditions Privacy Policy Data Protection Responsible Use",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        },
+        {
+          "text": "3 months S$90/month 6 months S$72/month 12 months Standard S$60/month 24 months S$54/month 36 months Best Value S$48/month Cancel Apply",
+          "url": "https://busysales.ai/",
+          "pageTitle": "BusySales.ai | AI Sales Prospecting, Lead Generation & Sales Automation Software",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://busysales.ai/",
+        "https://busysales.ai/about-us/",
+        "https://busysales.ai/more/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "SGD60",
+        "More"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Start chat",
+        "Contact Us to Find Out More",
+        "Apply"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://busysales.ai/ · 6 campos",
+        "https://busysales.ai/ · 2 campos",
+        "https://busysales.ai/about-us/ · 2 campos",
+        "https://busysales.ai/more/ · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://busysales.ai/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://busysales.ai/about-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://busysales.ai/more/",
+      "label": "Fuente pública 3"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://busysales.ai/cdn-cgi/l/email-protection: HTTP 404",
+    "https://busysales.ai/wp-content/uploads/2026/06/Website-1-20260720-054827-4cb832ed.webp: Contenido no textual: image/webp",
+    "https://busysales.ai/wp-content/uploads/2026/06/Quotation-screenshot-20260722-044046-189bf59d.webp: Contenido no textual: image/webp",
+    "https://busysales.ai/wp-content/uploads/2026/06/Website-3-1-20260720-070503-a17bfcd8-scaled.webp: Contenido no textual: image/webp",
+    "https://busysales.ai/wp-content/uploads/2026/06/Website-4-20260720-054827-652aaf83.webp: Contenido no textual: image/webp",
+    "Se localizaron 2 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us to Find Out More”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

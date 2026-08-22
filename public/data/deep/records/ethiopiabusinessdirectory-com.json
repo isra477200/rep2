@@ -1,0 +1,424 @@
+{
+  "id": "ethiopiabusinessdirectory-com",
+  "name": "ethiopiabusinessdirectory.com",
+  "reviewedAt": "2026-08-22T15:50:18.759Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Category",
+    "heroObserved": true,
+    "priorSummary": "Registrar empresa, navegar categorías y consultar noticias/contacto.",
+    "voice": "Tono tono no clasificable automáticamente; requiere revisión humana, conciso, orientado a la acción. Usa 17 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 223 palabras por página comercial recuperada. Muestras breves: “Category” · “Company” · “Low Cost Throat Cancer Treatment in India”.",
+    "supportingHeadings": [
+      "Category",
+      "Get in Touch",
+      "Address",
+      "Send Us a Mail",
+      "Company",
+      "Mekedonia",
+      "Weema international",
+      "Holt International",
+      "A.C.O.R.D",
+      "Network of Ethiopian Women’s Associations",
+      "Organization for Women in Self Employment",
+      "Canadian humanitarian",
+      "Cordaid",
+      "AHOPE for Children",
+      "Nehmia-autism center",
+      "Mothers and Children Multi-sectoral Development Organization",
+      "Ethiopian Medical Association",
+      "A Glimmer of Hope Foundation",
+      "A Hope Ethiopia",
+      "Abebech Gobena Yehetsanat Kebekabena Limat Mahiber (AGOHELMA)",
+      "Action for development (AFD)",
+      "Addis Ababa Mulu Wongel Believers Church Relief and Development Program",
+      "Addis Development Vision (ADV)",
+      "ADDIS TESFA INTEGRATED COMMUNITY DEVELOPMENT ASSOCIATION (ATICDA)",
+      "Adey Integrated Development Organization",
+      "ADHENO YETEKENAJE YEGETER LIMAT MAHIBER",
+      "Admas Child Rehabilitation and Development Organization",
+      "Adult and non formal education association",
+      "adventist development and relief agency",
+      "AED alive and thrive"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://ethiopiabusinessdirectory.com/contact",
+      "text": "Contact Us",
+      "href": "https://ethiopiabusinessdirectory.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Submit",
+      "Register Your Company",
+      "Register For News letter"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://ethiopiabusinessdirectory.com/contact",
+        "index": 1,
+        "action": "https://ethiopiabusinessdirectory.com/contact",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone_number",
+            "label": "Phone Number",
+            "placeholder": "Phone Number",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message",
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://ethiopiabusinessdirectory.com/contact",
+        "index": 2,
+        "action": "https://ethiopiabusinessdirectory.com/email-list",
+        "method": "POST",
+        "submitText": "Register For News letter",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "email",
+            "name": "name",
+            "label": null,
+            "placeholder": "your email@yourdomain.com",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://ethiopiabusinessdirectory.com/register-your-company",
+        "index": 1,
+        "action": "https://ethiopiabusinessdirectory.com/register-your-company",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "file",
+            "name": "image",
+            "label": "Logo",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "poster_image",
+            "label": "Logo",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Logo",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "branch_name",
+            "label": null,
+            "placeholder": "Head Office",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "location",
+            "label": "Logo",
+            "placeholder": "Location",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "category_id",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sub_category_id",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone_number",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "description",
+            "label": null,
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 11 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: website.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 11,
+      "qualification": [
+        "website"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Registrar empresa, navegar categorías y consultar noticias/contacto.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "…ECTOR TRADE TRANSPORT AND LOGISTICS News Register Your Company Home Category Contact Us News Register Your Company Menu FAQ 1 What is the Ethiopian Business Directory?"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…ECTOR TRADE TRANSPORT AND LOGISTICS News Register Your Company Home Category Contact Us News Register Your Company Menu FAQ 1 What is the Ethiopian Business Directory?",
+          "url": "https://ethiopiabusinessdirectory.com/faq",
+          "pageTitle": "Frequently Asked Questions | Ethiopian Business Directory",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://ethiopiabusinessdirectory.com/contact",
+        "https://ethiopiabusinessdirectory.com/category/12",
+        "https://ethiopiabusinessdirectory.com/category/19"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Category",
+        "Company",
+        "Low Cost Throat Cancer Treatment in India",
+        "Abraham Visa Consultants"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Register Your Company",
+        "Contact Us",
+        "Submit",
+        "Register For News letter"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://ethiopiabusinessdirectory.com/contact · 4 campos",
+        "https://ethiopiabusinessdirectory.com/contact · 1 campos",
+        "https://ethiopiabusinessdirectory.com/category/12 · 1 campos",
+        "https://ethiopiabusinessdirectory.com/category/19 · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://ethiopiabusinessdirectory.com/contact",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://ethiopiabusinessdirectory.com/category/12",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://ethiopiabusinessdirectory.com/category/19",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://ethiopiabusinessdirectory.com/303/low-cost-throat-cancer-treatment-in-india",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://ethiopiabusinessdirectory.com/faq",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://ethiopiabusinessdirectory.com/register-your-company",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://ethiopiabusinessdirectory.com/310/abraham-visa-consultants",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

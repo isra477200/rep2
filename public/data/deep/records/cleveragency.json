@@ -1,0 +1,400 @@
+{
+  "id": "cleveragency",
+  "name": "CleverAgency",
+  "reviewedAt": "2026-08-22T15:50:17.361Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Profesjonalne strony fanpage na Facebooku",
+    "heroObserved": true,
+    "priorSummary": "Leads B2B/B2C por LinkedIn, cold calling + email y Meta; mensajes personalizados, gestor dedicado y reporting.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 323 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2155 palabras por página comercial recuperada. Muestras breves: “Generowanie leadów sprzedażowych B2B - pozyskiwanie leadów na LinkedIn” · “Profesjonalne strony fanpage na Facebooku” · “Referencje”.",
+    "supportingHeadings": [
+      "Generowanie leadów sprzedażowych B2B - pozyskiwanie leadów na LinkedIn",
+      "Chcesz poznać więcej szczegółów?",
+      "Zamów rozmowę",
+      "Jak pozyskujemy leady?",
+      "Ile kosztują nasze leady?",
+      "Zaufali nam",
+      "Referencje",
+      "Dlaczego warto pozyskiwać leady na Linkedin?",
+      "Jak nawiązać współpracę?",
+      "W jaki sposób przebiega generowanie leadów?",
+      "Dla jakiej branży generowane są leady?",
+      "Czy otrzymam raport ze zrealizowanej usługi?",
+      "Jak dobierana jest grupa docelowa dla leadów?",
+      "Jak jest koszt generowania leadów",
+      "Czy agencja umawia leada na spotkanie?",
+      "Czy otrzymam fakturę vat?",
+      "Czy jest podpisywana umowa z agencją?",
+      "Czy można otrzymać indywidualną ofertę?",
+      "Czy do współpracy zostanie przydzielony opiekun?",
+      "Jakie są korzyści z usługi generowania leadów?",
+      "Czy agencja ustala ze mną treść wysłańcy wiadomości?",
+      "Czy agencja może również prowadzić mój profil na LinkedIn?",
+      "Czy agencja pobiera dodatkowe prowizje za wynik?",
+      "Jak mogę się skontaktować z agencją?",
+      "Kiedy można rozpocząć współpracę?",
+      "Dlaczego warto skorzystać z usługi lead generation na LinkedIn?",
+      "Czym jest i na czym polega lead scoring?",
+      "Generowanie leadów B2B na Linkedin",
+      "Co to jest lead sprzedażowy?",
+      "Na czym polega pozyskiwanie leadów?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Kampanie na Booking",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.cleveragency.pl/generowanie-leadow/",
+      "text": "Kampanie na Booking",
+      "href": "https://www.cleveragency.pl/booking/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 160.25
+    },
+    "ctas": [
+      "Kampanie na Booking",
+      "Kontakt",
+      "Wyślij Wysyłanie...",
+      "TAK, chcę wypróbować!",
+      "TAK, chce wypróbować!"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://www.cleveragency.pl/generowanie-leadow/",
+        "index": 1,
+        "action": "https://www.cleveragency.pl/generowanie-leadow/",
+        "method": "POST",
+        "submitText": "Wyślij Wysyłanie...",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "telefon",
+            "label": null,
+            "placeholder": "Telefon...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "E-mail...(wymagane)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "tresc",
+            "label": null,
+            "placeholder": "Wiadomość...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "dzien",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "godzina",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.cleveragency.pl/generowanie-leadow/",
+        "index": 2,
+        "action": "https://www.cleveragency.pl/generowanie-leadow/",
+        "method": "POST",
+        "submitText": "Wyślij Wysyłanie...",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "imie",
+            "label": null,
+            "placeholder": "Imię...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "E-mail...(wymagane)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telefon",
+            "label": null,
+            "placeholder": "Telefon...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "tresc",
+            "label": null,
+            "placeholder": "Proszę o ofertę na generowanie leadów...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "zgoda_rodo",
+            "label": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zadane",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online",
+      "Email"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Leads B2B/B2C por LinkedIn, cold calling + email y Meta; mensajes personalizados, gestor dedicado y reporting.",
+    "audience": "B2B y B2C multiindustria; experiencia declarada en finanzas, seguros, fotovoltaica, IT y medicina.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Jak jest koszt generowania leadów W ramach usługi na generowanie leadów oferujemy 3 pakiety cenowe: 100 spersonalizowanych wiadomości mies.",
+      "Oferta Call+Mail stanowi połączenie tych dwóch działań.",
+      "Znajdziemy na nim miliony kontaktów z możliwością filtracji po branży, stanowisku, lokalizacji, zamożności, itp.",
+      "Czy agencja umawia leada na spotkanie?",
+      "W standardowym modelu współpracy, agencja zadba o to aby przekazany lead był zainteresowany spotkaniem, jednak ustalenie konkretnej godziny i dnia jest po stronie zleceniodawcy.",
+      "W efekcie może on zostać Twoim nowym fanem na FB, a następnie nowym i lojalnym klientem."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.cleveragency.pl/generowanie-leadow/",
+        "https://www.cleveragency.pl/facebook/",
+        "https://www.cleveragency.pl/klienci/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Generowanie leadów sprzedażowych B2B - pozyskiwanie leadów na LinkedIn",
+        "Profesjonalne strony fanpage na Facebooku",
+        "Referencje",
+        "Transmisje sprzedażowe na Facebooku (LIVE)"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Kampanie na Booking",
+        "Kontakt",
+        "Wyślij Wysyłanie...",
+        "TAK, chcę wypróbować!",
+        "TAK, chce wypróbować!"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.cleveragency.pl/generowanie-leadow/ · 5 campos",
+        "https://www.cleveragency.pl/generowanie-leadow/ · 5 campos",
+        "https://www.cleveragency.pl/facebook/ · 5 campos",
+        "https://www.cleveragency.pl/facebook/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online",
+        "Email",
+        "Kampanie na Booking",
+        "Kampanie na Booking",
+        "Kampanie na Booking",
+        "Kampanie na Booking",
+        "Kampanie na Booking"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de servicio/SEO → formulario o llamada → contacto del gestor en 1–2 días laborables → definición conjunta del público → elección LinkedIn, Call+Mail o Meta B2C →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.cleveragency.pl/generowanie-leadow/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.cleveragency.pl/facebook/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.cleveragency.pl/klienci/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.cleveragency.pl/live-facebook/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.cleveragency.pl/reklamy-facebook/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.cleveragency.pl/konkursy-fb/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.cleveragency.pl/grupa-facebook/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR05178275664574283777?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR05178275664574283777/creative/CR02177386318416314369?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=CleverAgency%20Poland&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.cleveragency.pl/referencje/",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.cleveragency.pl/wp-content/uploads/2026/07/referencje-sport-i-rekreacja-1.png: Contenido no textual: image/png",
+    "https://www.cleveragency.pl/wp-content/uploads/2026/07/Referencje-handel-i-e-commerce_gastronomia-i-hotelarstwo-1.png: Contenido no textual: image/png",
+    "https://www.cleveragency.pl/wp-content/uploads/2026/07/Referencje-Finanse-1.png: Contenido no textual: image/png",
+    "https://www.cleveragency.pl/wp-content/uploads/2026/05/Estate-Fellows-Referencja.webp: Contenido no textual: image/webp",
+    "https://www.cleveragency.pl/wp-content/uploads/2026/05/Referencje-Enitra.webp: Contenido no textual: image/webp",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Kampanie na Booking”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

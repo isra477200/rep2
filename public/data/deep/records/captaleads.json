@@ -1,0 +1,552 @@
+{
+  "id": "captaleads",
+  "name": "CaptaLeads",
+  "reviewedAt": "2026-08-22T15:50:18.576Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "CaptaLeads: La Mejor Agencia de Leads para tu negocio",
+    "heroObserved": true,
+    "priorSummary": "\"Garantizamos clientes potenciales de calidad\". Venden paquetes de leads exclusivos por vertical, mismo esquema y mismo template que generacionleads.es.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 224 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2846 palabras por página comercial recuperada. Muestras breves: “CaptaLeads: La Mejor Agencia de Leads para tu negocio” · “¡Contacta con Nosotros para Firmar nuevos Clientes Día a Día!” · “Leads para Planes de Ahorro”.",
+    "supportingHeadings": [
+      "CaptaLeads: La Mejor Agencia de Leads para tu negocio",
+      "Somos la agencia de leads Número 1 para PYMEs, especializada en diversos sectores.",
+      "Pide tu Cotización de Leads",
+      "CaptaLeads en Cifras",
+      "Agencia Leads",
+      "Leads para Abogados, Hipotecas, Seguros y ¡Mucho Más!",
+      "Agencia de Leads experta en captar clientes potenciales",
+      "Leads de Alta Calidad Garantizados 100%",
+      "Obtén una Alta Conversión",
+      "Capta clientes y genera retorno",
+      "Leads Ajustados a los Requisitos del Servicio",
+      "Leads Adaptados a Tus Necesidades",
+      "¿Quieres Impulsar Tu Negocio Desde el Primer Día?",
+      "Agencia leads de calidad",
+      "Recibe Leads de Calidad en 3 sencillos pasos",
+      "01",
+      "02",
+      "03",
+      "Sobre CaptaLeads",
+      "Expertos en Generación de Leads para Tu Sector",
+      "Testimonios sobre la Captación de Leads",
+      "Conoce la Opinión de Nuestros Clientes sobre Nuestros Leads",
+      "Preguntas Frecuentes sobre leads",
+      "¿Dudas o Consultas? Contáctanos",
+      "CaptaLeads: La Mejor Agencia de Captación de Leads para PYMEs",
+      "Leads de Calidad",
+      "Leads de Alta Calidad Garantizados",
+      "Alta Conversión",
+      "Estrategias de Alta Conversión",
+      "¡Contacta con Nosotros para Firmar nuevos Clientes Día a Día!"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://captaleads.net/",
+      "text": "Contacto",
+      "href": "https://captaleads.net/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Contacta con Nosotros",
+      "Contacte con Nosotros",
+      "Enviar",
+      "Captación de Leads"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://captaleads.net/",
+        "index": 1,
+        "action": "https://captaleads.net/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[email]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_3f98100]",
+            "label": "Apellido",
+            "placeholder": "Apellido",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_89ee661]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_2f14c15]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[field_9b78162]",
+            "label": "Sector de la Empresa",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_2746b53]",
+            "label": "Nombre de la Empresa",
+            "placeholder": "Nombre de la Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_e673b2b]",
+            "label": "Cargo en la Empresa",
+            "placeholder": "Cargo en la Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_7b41c45]",
+            "label": "Web de la Empresa (opcional)",
+            "placeholder": "Web de la Empresa (opcional)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://captaleads.net/",
+        "index": 2,
+        "action": "https://captaleads.net/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[field_2f14c15]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://captaleads.net/",
+        "index": 3,
+        "action": "https://captaleads.net/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[email]",
+            "label": "Nombre",
+            "placeholder": "Nombre Completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_a00d7fd]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_4c7898f]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_2e6c773]",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_d8fe3be]",
+            "label": "Consulta",
+            "placeholder": "Consulta",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://captaleads.net/agencia-leads/",
+        "index": 1,
+        "action": "https://captaleads.net/agencia-leads/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[email]",
+            "label": "Nombre Completo",
+            "placeholder": "Nombre Completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_a00d7fd]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_4c7898f]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_2e6c773]",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_d8fe3be]",
+            "label": "Consulta",
+            "placeholder": "Consulta",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 1 y 8 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Sector de la Empresa, Nombre de la Empresa, Cargo en la Empresa, Web de la Empresa (opcional), Empresa.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 8,
+      "qualification": [
+        "Sector de la Empresa",
+        "Nombre de la Empresa",
+        "Cargo en la Empresa",
+        "Web de la Empresa (opcional)",
+        "Empresa"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Garantizamos clientes potenciales de calidad\". Venden paquetes de leads exclusivos por vertical, mismo esquema y mismo template que generacionleads.es.",
+    "audience": "Mismos verticales que Generación Leads: abogados, clínicas, seguros, hipotecas, reformas, psicólogos, inmobiliaria de captación de propietarios y energía. Base declarada en Barcelona.",
+    "prices": [],
+    "guarantee": [
+      "Por lo que el buen trabajo en la captación de leads es nuestra única garantía."
+    ],
+    "proof": [
+      "Leads al Mes + 0 Clientes + 0 Mejor Conversión 0 % Años de Experiencia + 0 Agencia Leads Leads para Abogados, Hipotecas, Seguros y ¡Mucho Más!",
+      "Email Enviar Agencia leads de calidad Recibe Leads de Calidad en 3 sencillos pasos CaptaLeads se distingue por su compromiso con la calidad y el éxito de nuestros clientes.",
+      "Descubre cómo CaptaLeads puede ayudarte a conseguir más clientes potenciales con nuestras estrategias personalizadas de generación de leads.",
+      "Contacta con Nosotros Obtén una Alta Conversión Capta clientes y genera retorno Nuestras estrategias están diseñadas para maximizar la tasa de conversión de leads.",
+      "Contacta a CaptaLeads y descubre cómo podemos ayudarte a conseguir más clientes potenciales y hacer crecer tu empresa."
+    ],
+    "objections": [
+      "Recomiendo sus servicios a cualquier empresa que busque mejorar su captación de clientes potenciales.\" Preguntas Frecuentes sobre leads ¿Qué es una agencia de leads y por qué es necesaria?Una agencia de leads se especializa en generar y calificar contactos potenciales para empresas, utilizando estrateg…",
+      "Recomiendo sus servicios a cualquier empresa que busque mejorar su captación de clientes potenciales.\" Preguntas Frecuentes ¿Qué es una agencia de leads y por qué es necesaria?Una agencia de leads se especializa en generar y calificar contactos potenciales para empresas, utilizando estrategias innovado…",
+      "¿Hay permanencia para el servició de generación de leads?No, en absoluto."
+    ],
+    "urgency": [
+      "Únete a nosotros y empieza a conseguir más clientes hoy mismo.",
+      "Ahora, podemos centrarnos en brindar un excelente servicio legal mientras ellos se encargan de atraer a nuevos clientes.",
+      "¡Solicita una consulta gratuita ahora!",
+      "¡Empieza Hoy Mismo a Generar Leads para la Ley de Segunda Oportunidad!"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Por lo que el buen trabajo en la captación de leads es nuestra única garantía.",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Descubre cómo CaptaLeads puede ayudarte a conseguir más clientes potenciales con nuestras estrategias personalizadas de generación de leads.",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leads al Mes + 0 Clientes + 0 Mejor Conversión 0 % Años de Experiencia + 0 Agencia Leads Leads para Abogados, Hipotecas, Seguros y ¡Mucho Más!",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Contacta con Nosotros Obtén una Alta Conversión Capta clientes y genera retorno Nuestras estrategias están diseñadas para maximizar la tasa de conversión de leads.",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Contacta a CaptaLeads y descubre cómo podemos ayudarte a conseguir más clientes potenciales y hacer crecer tu empresa.",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Email Enviar Agencia leads de calidad Recibe Leads de Calidad en 3 sencillos pasos CaptaLeads se distingue por su compromiso con la calidad y el éxito de nuestros clientes.",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Recomiendo sus servicios a cualquier empresa que busque mejorar su captación de clientes potenciales.\" Preguntas Frecuentes sobre leads ¿Qué es una agencia de leads y por qué es necesaria?Una agencia de leads se especializa en generar y calificar contactos potenciales para empresas, utilizando estrateg…",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Hay permanencia para el servició de generación de leads?No, en absoluto.",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Recomiendo sus servicios a cualquier empresa que busque mejorar su captación de clientes potenciales.\" Preguntas Frecuentes ¿Qué es una agencia de leads y por qué es necesaria?Una agencia de leads se especializa en generar y calificar contactos potenciales para empresas, utilizando estrategias innovado…",
+          "url": "https://captaleads.net/",
+          "pageTitle": "Agencia leads ▷ Garantizamos clientes potenciales de calidad",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Meta Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://captaleads.net/",
+        "https://captaleads.net/contacto/",
+        "https://captaleads.net/leads-planes-ahorro-inversion/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "CaptaLeads: La Mejor Agencia de Leads para tu negocio",
+        "¡Contacta con Nosotros para Firmar nuevos Clientes Día a Día!",
+        "Leads para Planes de Ahorro",
+        "La Mejor Agencia de Leads de España"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Enviar",
+        "Captación de Leads",
+        "Contacta con Nosotros",
+        "Contacte con Nosotros"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://captaleads.net/ · 8 campos",
+        "https://captaleads.net/ · 1 campos",
+        "https://captaleads.net/ · 5 campos",
+        "https://captaleads.net/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El anunciante entra por formulario o teléfono y define vertical, zona y volumen → CaptaLeads prepara campaña/landing sectorial → capta y filtra solicitudes de potenciales clientes → entrega"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://captaleads.net/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://captaleads.net/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://captaleads.net/leads-planes-ahorro-inversion/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://captaleads.net/agencia-leads/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://captaleads.net/agencia-leads-abogados/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://captaleads.net/leads-ley-de-segunda-oportunidad/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://captaleads.net/leads-accidentes-de-trafico/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=captaleads.net",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=121430857620014",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

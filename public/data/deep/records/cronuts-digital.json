@@ -1,0 +1,749 @@
+{
+  "id": "cronuts-digital",
+  "name": "Cronuts Digital",
+  "reviewedAt": "2026-08-22T15:50:19.136Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Hablemos del problema real de tu negocio.",
+    "heroObserved": true,
+    "priorSummary": "Paid media, SEO/GEO, contenido, atribución, CRM e IA; planes de crecimiento con permanencias escalonadas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 840 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1801 palabras por página comercial recuperada. Muestras breves: “Precio cerrado. Alcance fijo. Sin horas facturables.” · “Herramientas gratuitas que entregan insight en 30 segundos.” · “Hablemos del problema real de tu negocio.”.",
+    "supportingHeadings": [
+      "Precio cerrado. Alcance fijo. Sin horas facturables.",
+      "¿Cómo se contrata cronuts.digital?",
+      "Tres planes para servicios recurrentes.",
+      "Starter",
+      "Grow",
+      "Scale",
+      "Starter, Grow o Scale, lado a lado.",
+      "Una plataforma. Trackers en tiempo real. Cerebro de IA.",
+      "Trackers unificados",
+      "Cerebro IA",
+      "Histórico decisiones",
+      "Desarrollo web con precio cerrado.",
+      "Web Starter",
+      "Web Grow",
+      "Web Scale",
+      "¿Necesitas estimar una web antes de elegir plan?",
+      "Seis productos IA con precio cerrado.",
+      "Seis cosas que otras agencias no te dicen.",
+      "Lo que dicen clientes sobre contratar con precio cerrado.",
+      "Lo que directivos nos preguntan antes de firmar.",
+      "¿Qué plan encaja con tu negocio? Te lo decimos en 30 min.",
+      "Explora pilares relacionados",
+      "Herramientas gratuitas que entregan insight en 30 segundos.",
+      "¿Te citan ChatGPT, Claude y Perplexity?",
+      "Tu estudio de madurez digital en 20 preguntas",
+      "¿Cuánto te cuesta tu site lento cada mes?",
+      "Calcula tu ROI proyectado en paid media",
+      "Presupuesta tu web custom en 60 segundos",
+      "Tres pasos. Sin fricciones.",
+      "Inputs mínimos"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agenda una videollamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://cronuts.digital/contactar-consultora-digital-crecimiento/",
+      "text": "Agenda una videollamada",
+      "href": "https://cronuts.digital/agendar/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 219.25
+    },
+    "ctas": [
+      "Agenda una videollamada",
+      "Pedir diagnóstico gratis →",
+      "Agenda 30 min →",
+      "Reservar auditoría",
+      "Ver mi diagnóstico →",
+      "Contacto",
+      "Quiero que me contactéis · respuesta en 24 h",
+      "EN",
+      "Sí",
+      "No",
+      "1 – 2",
+      "3 – 5",
+      "6 o más",
+      "← Atrás",
+      "< 2.800 €",
+      "Sin equipo",
+      "> 50.000 €",
+      "1Sin sistema",
+      "4Automatizado",
+      "2.800 – 6.000 €",
+      "6.000 – 15.000 €",
+      "3Proceso medible",
+      "15.000 – 50.000 €",
+      "2Actividad suelta",
+      "Recibir la Señal →",
+      "Escalar ventas B2B",
+      "Desbloquear resultado →",
+      "Automatizar procesos con IA",
+      "Generar más leads cualificados",
+      "Posicionar la marca en mi sector"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://cronuts.digital/planes/",
+        "index": 1,
+        "action": "https://cronuts.digital/planes/",
+        "method": "GET",
+        "submitText": "Pedir diagnóstico gratis →",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email profesional",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Teléfono",
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": null,
+            "label": "Tu web",
+            "placeholder": "tuempresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Plan que te interesa",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad y recibir el diagnóstico por email.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cronuts.digital/contactar-consultora-digital-crecimiento/",
+        "index": 1,
+        "action": "https://cronuts.digital/contactar-consultora-digital-crecimiento/",
+        "method": "GET",
+        "submitText": "Quiero que me contactéis · respuesta en 24 h",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa *",
+            "placeholder": "Nombre legal",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional *",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono (te llamamos en 24 h) *",
+            "placeholder": "+34 600 123 456",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "facturacion",
+            "label": "Facturación anual aproximada *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos más opcional",
+            "placeholder": "Qué problema quieres resolver, timing, presupuesto aproximado…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": "Acepto la política de privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cronuts.digital/casos-de-exito/",
+        "index": 1,
+        "action": "https://cronuts.digital/wp-json/cronuts/v1/senal",
+        "method": "POST",
+        "submitText": "Recibir la Señal →",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "role",
+            "label": "Tu rol principal",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad y recibir la Señal cada viernes.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cronuts.digital/growth-marketing/",
+        "index": 1,
+        "action": "https://cronuts.digital/growth-marketing/",
+        "method": "GET",
+        "submitText": "Pedir diagnóstico gratis →",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email profesional",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Teléfono",
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Empresa",
+            "placeholder": "Nombre de tu empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Facturación anual",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad y recibir el diagnóstico por email.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://cronuts.digital/diagnostico-digital-empresa/",
+        "index": 1,
+        "action": "https://cronuts.digital/diagnostico-digital-empresa/",
+        "method": "GET",
+        "submitText": "Desbloquear resultado →",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector",
+            "label": "Sector",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "revenue_band",
+            "label": "Facturación anual",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company_website",
+            "label": "Sitio web de la empresa",
+            "placeholder": "https://tuempresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "+34 600 123 456",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": "He leído la política de privacidad y acepto recibir el diagnóstico por",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "5 diseño(s) de formulario distinto(s); entre 3 y 9 campos visibles, mínimo 3 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Tu web, Empresa *, Facturación anual aproximada *, Empresa, Facturación anual, website, Sector, Sitio web de la empresa.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 9,
+      "qualification": [
+        "Tu web",
+        "Empresa *",
+        "Facturación anual aproximada *",
+        "Empresa",
+        "Facturación anual",
+        "website",
+        "Sector",
+        "Sitio web de la empresa"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Google Analytics",
+      "Meta Pixel",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Paid media, SEO/GEO, contenido, atribución, CRM e IA; planes de crecimiento con permanencias escalonadas.",
+    "audience": "Despachos y firmas legales; también growth general.",
+    "prices": [
+      "Sin duda, un partner muy recomendable.G Reseña verificada en GoogleACAlba C.Head of Growth · Legal tech · 7 M€Nos propusieron el plan Scale con squad dedicado.",
+      "Nos ahorraron 24 K€/año.",
+      "Pocas agencias dicen NO al upselling.G Google BusinessHace 1 mesPVPablo V.CEO · Industrial B2B · 15 M€Proyecto web Grow 28 K€ pago único.",
+      "Lo que otras agencias te venden como \"custom development\" a 150 €/h aquí viene cerrado con garantía Lighthouse 95+.G Google BusinessHace 5 semanasMDMarina D.CMO · Ecommerce premium · 18 M€Contraté Producto IA Agente atención 2.400 € / 30 días.",
+      "La única excepción son expansiones de alcance firmadas como addendum, nunca \"horas extra\" al final del mes.¿Qué incluye realmente un retainer Grow de 3.500 €?Alcance escrito en el contrato.",
+      "Alcance focalizado.1.500 €/mes1 disciplina (SEO · Paid · Content · Growth)Strategist senior asignadoReunión mensual + comunicación SlackDigital Hub: trackers + cerebro IAHerramientas premium incluidasAd spe…"
+    ],
+    "guarantee": [
+      "Lo que otras agencias te venden como \"custom development\" a 150 €/h aquí viene cerrado con garantía Lighthouse 95+.G Google BusinessHace 5 semanasMDMarina D.CMO · Ecommerce premium · 18 M€Contraté Producto IA Agente atención 2.400 € / 30 días.",
+      "Los planes Grow y Scale añaden la garantía de entrega: sistema y medición completos, o el 7º mes gratis.",
+      "Garantía de entrega en Grow y Scale.01 · StarterStarterPara empresas B2B que arrancan un canal nuevo o validan un partner.",
+      "Alcance cerrado protege a cliente y agencia.05Una garantía real se compromete con entregables concretos, no con promesas de resultados.",
+      "Precio fijo, alcance escrito en el contrato, plazo garantizado.",
+      "Zero \"horas extra\" sorpresa.¿Qué pasa si no llegamos a los KPIs acordados?No vendemos resultados garantizados: los KPIs de negocio dependen también de tu ejecución, tu producto y tu mercado."
+    ],
+    "proof": [
+      "Aproximadamente el 60% de nuestros clientes optan por NDA total — esos casos los compartimos solo bajo acuerdo de confidencialidad en proceso comercial avanzado.¿Cómo gestionáis los datos confidenciales del cliente?Firmamos NDA bilateral antes del kick-off.",
+      "Sin capturas de Looker sueltas.Si tu agencia no te entrega estos KPIs cada mes con definición clara y fuente auditable, no estás midiendo casos de éxito — estás coleccionando capturas de pantalla.Diagnóstico gratuito →Método CRONUTS02 / 02 Sectores · Resultado-clave verificadoCasos por sector con resultado",
+      "Casos bajo NDA referenciados de forma anonimizada con permiso explícito.03 / 03 FAQ · Casos de éxito B2BPreguntas frecuentes sobre nuestros casos.¿Cómo medís un caso de éxito en marketing digital B2B?Cada caso lleva tracking server-side conectado al CRM del cliente (Holded, HubSpot, Salesforce, Pipedrive).",
+      "Las métricas son auditables por el cliente — nada de capturas de Looker sueltas.¿Qué casos de éxito publicáis y cuáles no?Solo publicamos casos con autorización escrita del cliente y métricas auditables en su sistema."
+    ],
+    "objections": [],
+    "urgency": [
+      "Productos IA: pago único 50% kickoff + 50% delivery, plazo fijo en contrato.¿Quién es buen fit y quién NO?Fit: empresas B2B entre 500 K€ y 100 M€ facturación, ciclo comercial > 30 días, ticket medio > 3 K€, CRM conectado (HubSpot / Pipedrive / Salesforce).",
+      "Casos bajo NDA referenciados de forma anonimizada con permiso explícito.03 / 03 FAQ · Casos de éxito B2BPreguntas frecuentes sobre nuestros casos.¿Cómo medís un caso de éxito en marketing digital B2B?Cada caso lleva tracking server-side conectado al CRM del cliente (Holded, HubSpot, Salesforce, Pipedrive).",
+      "Dashboards ejecutivos semanales.15+ señalesÁrea 6 · CRM + automationHubSpot / Pipedrive + IACRM con stages + reporting.",
+      "…je, te lo decimos y seguimos cada uno a lo suyo.Respuesta <24h laborablesPrimera llamada gratisSin compromisoEscríbenos ahora →Agenda una videollamadaCanales directos Emailinfo@cronuts.digital Teléfono+34 722 525 769 OficinaCarrer d’Aribau 205, 08021 Barcelona HorarioLunes a viernes · 9:00-19:00 CETCómo…",
+      "Zero dashboards sueltos.Componente 01Trackers unificadosGA4 server-side + Meta CAPI + LinkedIn CAPI + GSC + SE Ranking + HubSpot / Pipedrive / Salesforce.",
+      "No hacemos descuentos \"porque estamos al final de trimestre\" o \"si firmas hoy\"."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Alcance focalizado.1.500 €/mes1 disciplina (SEO · Paid · Content · Growth)Strategist senior asignadoReunión mensual + comunicación SlackDigital Hub: trackers + cerebro IAHerramientas premium incluidasAd spe…",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Sin duda, un partner muy recomendable.G Reseña verificada en GoogleACAlba C.Head of Growth · Legal tech · 7 M€Nos propusieron el plan Scale con squad dedicado.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Nos ahorraron 24 K€/año.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Pocas agencias dicen NO al upselling.G Google BusinessHace 1 mesPVPablo V.CEO · Industrial B2B · 15 M€Proyecto web Grow 28 K€ pago único.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Lo que otras agencias te venden como \"custom development\" a 150 €/h aquí viene cerrado con garantía Lighthouse 95+.G Google BusinessHace 5 semanasMDMarina D.CMO · Ecommerce premium · 18 M€Contraté Producto IA Agente atención 2.400 € / 30 días.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "La única excepción son expansiones de alcance firmadas como addendum, nunca \"horas extra\" al final del mes.¿Qué incluye realmente un retainer Grow de 3.500 €?Alcance escrito en el contrato.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Los planes Grow y Scale añaden la garantía de entrega: sistema y medición completos, o el 7º mes gratis.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía de entrega en Grow y Scale.01 · StarterStarterPara empresas B2B que arrancan un canal nuevo o validan un partner.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Alcance cerrado protege a cliente y agencia.05Una garantía real se compromete con entregables concretos, no con promesas de resultados.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Lo que otras agencias te venden como \"custom development\" a 150 €/h aquí viene cerrado con garantía Lighthouse 95+.G Google BusinessHace 5 semanasMDMarina D.CMO · Ecommerce premium · 18 M€Contraté Producto IA Agente atención 2.400 € / 30 días.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Precio fijo, alcance escrito en el contrato, plazo garantizado.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Zero \"horas extra\" sorpresa.¿Qué pasa si no llegamos a los KPIs acordados?No vendemos resultados garantizados: los KPIs de negocio dependen también de tu ejecución, tu producto y tu mercado.",
+          "url": "https://cronuts.digital/planes/",
+          "pageTitle": "Planes B2B Productizados · Starter, Grow, Scale | cronuts.digital",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Sin capturas de Looker sueltas.Si tu agencia no te entrega estos KPIs cada mes con definición clara y fuente auditable, no estás midiendo casos de éxito — estás coleccionando capturas de pantalla.Diagnóstico gratuito →Método CRONUTS02 / 02 Sectores · Resultado-clave verificadoCasos por sector con resultado",
+          "url": "https://cronuts.digital/casos-de-exito/",
+          "pageTitle": "Casos de éxito archivo - CRONUTS.DIGITAL",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Casos bajo NDA referenciados de forma anonimizada con permiso explícito.03 / 03 FAQ · Casos de éxito B2BPreguntas frecuentes sobre nuestros casos.¿Cómo medís un caso de éxito en marketing digital B2B?Cada caso lleva tracking server-side conectado al CRM del cliente (Holded, HubSpot, Salesforce, Pipedrive).",
+          "url": "https://cronuts.digital/casos-de-exito/",
+          "pageTitle": "Casos de éxito archivo - CRONUTS.DIGITAL",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Las métricas son auditables por el cliente — nada de capturas de Looker sueltas.¿Qué casos de éxito publicáis y cuáles no?Solo publicamos casos con autorización escrita del cliente y métricas auditables en su sistema.",
+          "url": "https://cronuts.digital/casos-de-exito/",
+          "pageTitle": "Casos de éxito archivo - CRONUTS.DIGITAL",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Aproximadamente el 60% de nuestros clientes optan por NDA total — esos casos los compartimos solo bajo acuerdo de confidencialidad en proceso comercial avanzado.¿Cómo gestionáis los datos confidenciales del cliente?Firmamos NDA bilateral antes del kick-off.",
+          "url": "https://cronuts.digital/casos-de-exito/",
+          "pageTitle": "Casos de éxito archivo - CRONUTS.DIGITAL",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://cronuts.digital/planes/",
+        "https://cronuts.digital/herramientas/",
+        "https://cronuts.digital/contactar-consultora-digital-crecimiento/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Precio cerrado. Alcance fijo. Sin horas facturables.",
+        "Herramientas gratuitas que entregan insight en 30 segundos.",
+        "Hablemos del problema real de tu negocio.",
+        "La consultora que hace crecer negocios. No gestiona presupuestos."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Pedir diagnóstico gratis →",
+        "Agenda 30 min →",
+        "EN",
+        "Quiero que me contactéis · respuesta en 24 h",
+        "Agenda una videollamada",
+        "Recibir la Señal →",
+        "Reservar auditoría"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://cronuts.digital/planes/ · 5 campos",
+        "https://cronuts.digital/contactar-consultora-digital-crecimiento/ · 7 campos",
+        "https://cronuts.digital/casos-de-exito/ · 3 campos",
+        "https://cronuts.digital/growth-marketing/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Email",
+        "Teléfono",
+        "Agenda 30 min →",
+        "Agenda una videollamada",
+        "Agenda 30 min →",
+        "Agenda 30 min →"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por página de planes → diagnóstico inicial gratuito de 30 min → elección de modelo: retainer mensual, proyecto web cerrado o producto IA paquetizado → SOW con"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://cronuts.digital/planes/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://cronuts.digital/herramientas/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://cronuts.digital/contactar-consultora-digital-crecimiento/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://cronuts.digital/casos-de-exito/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://cronuts.digital/growth-marketing/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://cronuts.digital/scorecard-madurez-digital/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://cronuts.digital/diagnostico-digital-empresa/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agenda una videollamada”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Google Analytics, Meta Pixel, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

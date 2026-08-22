@@ -1,0 +1,540 @@
+{
+  "id": "salesaladin",
+  "name": "SalesAladin",
+  "reviewedAt": "2026-08-22T15:50:17.612Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Generating Qualified leads at scale",
+    "heroObserved": true,
+    "priorSummary": "Lead generation y appointment setting B2B por email, LinkedIn, warm calls y ABM, con datos, research, SDR, respuestas, agenda y reporting.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 254 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 896 palabras por página comercial recuperada. Muestras breves: “Pricing” · “Master B2B lead generation skills and build your career” · “Generating Qualified leads at scale”.",
+    "supportingHeadings": [
+      "Pricing",
+      "Plans & Packages",
+      "Lead Generation Plans",
+      "Short Term",
+      "Medium Term",
+      "Annual",
+      "Hire Resources Packages",
+      "SDR",
+      "Researcher",
+      "ABM SDR",
+      "Digital Marketer",
+      "Feel Free To Contact Us",
+      "Master B2B lead generation skills and build your career",
+      "What you will Learn?",
+      "How we will teach you?",
+      "Why get a training from Salesaladin?",
+      "What Customers Are Saying?",
+      "Frequently Asked Questions",
+      "Testimonials",
+      "What clients say about us?",
+      "Rashmi Ranganath",
+      "Dhirendra Singh",
+      "Tarun Gujral",
+      "Ajay Dubedi",
+      "Gaurav Mishra",
+      "Jay Singh",
+      "Ajeet Singh",
+      "Bobby Singh",
+      "Nitin Gupta",
+      "Veeral Lakhani"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://salesaladin.com/",
+      "text": "Contact Us",
+      "href": "https://salesaladin.com/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "GET A QUOTE",
+      "Get A Quote",
+      "CONTACT US NOW",
+      "Services",
+      "Send Message",
+      "Sign-up Today",
+      "Register Today"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://salesaladin.com/complete-b2b-lead-generation-and-demo-setting-mastery-course-by-salesaladin/",
+        "index": 1,
+        "action": "https://salesaladin.com/complete-b2b-lead-generation-and-demo-setting-mastery-course-by-salesaladin/",
+        "method": "POST",
+        "submitText": "Register Today",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Your name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Your email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Your phone",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://salesaladin.com/",
+        "index": 1,
+        "action": "https://salesaladin.com/",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Your Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-mobile",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-website",
+            "label": null,
+            "placeholder": "Website",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Your Message....",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quiz-586",
+            "label": "Capital of India(Write Delhi)?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 3 y 6 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: your-website.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 6,
+      "qualification": [
+        "your-website"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Lead generation y appointment setting B2B por email, LinkedIn, warm calls y ABM, con datos, research, SDR, respuestas, agenda y reporting.",
+    "audience": "Empresas B2B de productos y servicios que buscan decisores y citas; programas de 3, 6 y 12 meses.",
+    "prices": [
+      "Minimum all inclusive monthly fee range is $1000 - $3000 based on your requirements."
+    ],
+    "guarantee": [
+      "B2B Lead generation for IT companies one time course fee is only 14,999/- which is payable in advance with 100% money back if not satisfied."
+    ],
+    "proof": [
+      "We are proud to have 85% retention of clients and 25% client referral rate.",
+      "We are happy with results and 800% ROI.",
+      "Ajay Dubedi Founder, CloudAnalogy I have been working with SalesAladin team for last 10 months, their focus, commitment and result oriented focus helped us close many new clients.",
+      "$105 Million Pipeline Delivered 6798 Appointments delivered 1807 Opportunities delivered 67 Clients served Grow At Scale Engagement Models We offer customizable lead gen programs which you can choose based on your needs and budgets.",
+      "67 CLIENTS SERVED 6798 APPOINTMENTS DELIVERED 1807 OPPORTUNITIES DELIVERED 403 DEALS WON Our Clients Trusted by Companies - Big or Small What Customers Are Saying 100+ companies across 15+ industries trusted us for experience, delivery, fast turnaround and execution skills as their success partner.",
+      "Our systematic detail approach helped our clients get consistent appointments every month."
+    ],
+    "objections": [
+      "Ajay Dubedi Founder, CloudAnalogy I have been working with SalesAladin team for last 10 months, their focus, commitment and result oriented focus helped us close many new clients.",
+      "Our minimum plan starts at $1000/month with an annual commitment.",
+      "How long does it typically take to start seeing results?",
+      "ABM specialist Team – Part-time Account Manager Weekly review meetings Fortnightly ABM strategy sessions Live reports on Google Sheet Get A Quote Your Questions Frequently Asked Questions How do you tailor your messaging for different software products targeting diverse industries?",
+      "Their commitment to targets and timeliness is commendable.",
+      "We have expanded our contract for 2017-18."
+    ],
+    "urgency": [
+      "Let’s Talk sales@salesaladin.com P: +91 997-113-8887 ExploreTechnologies Industries Roles Job Titles Countries Departments Our Location HA-4, Ganga Nagar, Mawana Road, Meerut, Uttar Pradesh, India 250001 © 2024 Zanshinsoft Private Limited.",
+      "Call us : +91 997 113 8887 Let's Started We work with Award Winning Growth Partner We bring deep technology knowledge, outbound marketing skills and market insights to generate demand for your B2B products or services.",
+      "CONTACT US NOW SalesaladinSince 2016, we have worked with several B2B services and product companies for their lead generation campaigns.",
+      "Register Today Build your career in B2B lead generation for IT companies.",
+      "Course Fees - 14,999/- Register Today Complete B2B Lead Gen Training What you will Learn?",
+      "We offer foundational knowledge in both areas and equip you with every essential skill necessary to kickstart or enhance your career in B2B IT lead generation."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Minimum all inclusive monthly fee range is $1000 - $3000 based on your requirements.",
+          "url": "https://salesaladin.com/pricing/",
+          "pageTitle": "Pricing - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Dhirendra Singh Founder, Trivialworks Technologies Thank you Ambuj for your team's effort and helping us close USD 100k new recurring revenue during our 6 months of engagement and scheduled appointments with 27 qualified prospects.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "B2B Lead generation for IT companies one time course fee is only 14,999/- which is payable in advance with 100% money back if not satisfied.",
+          "url": "https://salesaladin.com/complete-b2b-lead-generation-and-demo-setting-mastery-course-by-salesaladin/",
+          "pageTitle": "Trainings - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…UI UX Design Services Website Development AI Powered SEO AI Powered Social Media Marketing AI Powered Content Marketing Clients Clients Testimonials Pricing Blog Contact Us Testimonials Top Lead Generation and Appointment Setting Agency - Salesaladin Testimonials Client Words What clients say about us?",
+          "url": "https://salesaladin.com/testimonials/",
+          "pageTitle": "Testimonials - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Our systematic detail approach helped our clients get consistent appointments every month.",
+          "url": "https://salesaladin.com/testimonials/",
+          "pageTitle": "Testimonials - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "We are proud to have 85% retention of clients and 25% client referral rate.",
+          "url": "https://salesaladin.com/testimonials/",
+          "pageTitle": "Testimonials - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "We are happy with results and 800% ROI.",
+          "url": "https://salesaladin.com/testimonials/",
+          "pageTitle": "Testimonials - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…UI UX Design Services Website Development AI Powered SEO AI Powered Social Media Marketing AI Powered Content Marketing Clients Clients Testimonials Pricing Blog Contact Us Generating Qualified leads at scale Our AI powered + human centric SDR and ABM services deliver qualified leads for your IT and Softwa…",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "67 CLIENTS SERVED 6798 APPOINTMENTS DELIVERED 1807 OPPORTUNITIES DELIVERED 403 DEALS WON Our Clients Trusted by Companies - Big or Small What Customers Are Saying 100+ companies across 15+ industries trusted us for experience, delivery, fast turnaround and execution skills as their success partner.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We are happy with results and 800% ROI.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ajay Dubedi Founder, CloudAnalogy I have been working with SalesAladin team for last 10 months, their focus, commitment and result oriented focus helped us close many new clients.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Say Hello We are proud to deliver high-quality results consistently to our 67+ clients spanning across 15+ industries.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…UI UX Design Services Website Development AI Powered SEO AI Powered Social Media Marketing AI Powered Content Marketing Clients Clients Testimonials Pricing Blog Contact Us UI UX Design Services Top Lead Generation and Appointment Setting Agency - Salesaladin UI UX Design Services Let's transform your UI/U…",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "$105 Million Pipeline Delivered 6798 Appointments delivered 1807 Opportunities delivered 67 Clients served Grow At Scale Engagement Models We offer customizable lead gen programs which you can choose based on your needs and budgets.",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "ABM specialist Team – Part-time Account Manager Weekly review meetings Fortnightly ABM strategy sessions Live reports on Google Sheet Get A Quote Your Questions Frequently Asked Questions How do you tailor your messaging for different software products targeting diverse industries?",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "How long does it typically take to start seeing results?",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Results usually begin to show within 2-3 weeks.",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Their commitment to targets and timeliness is commendable.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ajay Dubedi Founder, CloudAnalogy I have been working with SalesAladin team for last 10 months, their focus, commitment and result oriented focus helped us close many new clients.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We have expanded our contract for 2017-18.",
+          "url": "https://salesaladin.com/",
+          "pageTitle": "Home - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our minimum plan starts at $1000/month with an annual commitment.",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "ABM specialist Team – Part-time Account Manager Weekly review meetings Fortnightly ABM strategy sessions Live reports on Google Sheet Get A Quote Your Questions Frequently Asked Questions How do you tailor your messaging for different software products targeting diverse industries?",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "How long does it typically take to start seeing results?",
+          "url": "https://salesaladin.com/ui-ux-design-services/",
+          "pageTitle": "UI UX Design Services - Top Lead Generation and Appointment Setting Agency - Salesaladin",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://salesaladin.com/pricing/",
+        "https://salesaladin.com/complete-b2b-lead-generation-and-demo-setting-mastery-course-by-salesaladin/",
+        "https://salesaladin.com/testimonials/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Pricing",
+        "Master B2B lead generation skills and build your career",
+        "Generating Qualified leads at scale",
+        "Get Appointments for your B2B Offerings globally"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "GET A QUOTE",
+        "CONTACT US NOW",
+        "Register Today",
+        "Send Message",
+        "Sign-up Today",
+        "Get A Quote",
+        "Services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://salesaladin.com/complete-b2b-lead-generation-and-demo-setting-mastery-course-by-salesaladin/ · 3 campos",
+        "https://salesaladin.com/ · 6 campos",
+        "https://salesaladin.com/contact-us/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Plan/ICP → cuentas/contactos → copy/secuencias → email/LinkedIn/warm calls → respuestas → MQL/SQL → calendario → nurturing → review/reporting."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://salesaladin.com/pricing/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://salesaladin.com/complete-b2b-lead-generation-and-demo-setting-mastery-course-by-salesaladin/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://salesaladin.com/testimonials/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://salesaladin.com/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://salesaladin.com/account-based-marketing/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://salesaladin.com/ui-ux-design-services/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://salesaladin.com/contact-us/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=salesaladin.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=SalesAladin",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

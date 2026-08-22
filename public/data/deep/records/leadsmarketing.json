@@ -1,0 +1,460 @@
+{
+  "id": "leadsmarketing",
+  "name": "LeadsMarketing",
+  "reviewedAt": "2026-08-22T15:50:18.678Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "👋La Mejor Agencia de Captación de Leads en España",
+    "heroObserved": true,
+    "priorSummary": "\"CONSIGUE AHORA UN 15% MÁS DE LEADS POR TU COMPRA EN CUALQUIERA DE NUESTROS PAQUETES\"; leads 100% exclusivos, reposición garantizada si el lead no es válido",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 192 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1993 palabras por página comercial recuperada. Muestras breves: “👋La Mejor Agencia de Captación de Leads para Reformas en España” · “🚀¿Listo para empezar a captar clientes potenciales?” · “👋La Mejor Agencia de Captación de Leads para Planes de Ahorro e Inversión en España”.",
+    "supportingHeadings": [
+      "👋La Mejor Agencia de Captación de Leads para Reformas en España",
+      "Líderes en Generación de Leads para Empresas Energéticas",
+      "Clientes",
+      "Satisfacción",
+      "Experiencia",
+      "Repiten Servicio",
+      "🎯Nuestros Filtros para la Captación de Leads para el Sector de la Remodelación",
+      "Aumenta tus ventas con leads verificados y listos para contactar. Nos adaptamos a tu empresa de reformas para conseguir leads de calidad día a día",
+      "💡¿Qué Son Los Leads De Reformas Y Por Qué Los Necesitas?",
+      "Atrae contactos que buscan activamente una reforma integral o parcial",
+      "🛠️Leads Para Remodelación Integrales Listos Para Contratar",
+      "Personas interesadas en grandes proyectos de reformas",
+      "👉Comprar Leads Verificados para Empresas de Reformas",
+      "Conoce las características de los leads que generamos en Leads Marketing.",
+      "Garantía de Reposición",
+      "Leads Exclusivos",
+      "Sin Permanencia",
+      "Alta Conversión",
+      "Captación Personalizada",
+      "📈¿Listo para empezar a captar clientes potenciales para Remodelación?",
+      "Ponte en contacto con la mejor agencia de generación de leads en España",
+      "🔍 ¿Cómo Funciona La Captación De Leads De Reformas?",
+      "Un sistema digital probado que genera resultados reales",
+      "📊 ¿Por Qué Confiar En Una Agencia De Marketing Para Decoradores de Interiores?",
+      "Experiencia, resultados y un sistema probado",
+      "✅Conoce la Experiencia de Nuestros Clientes",
+      "Generación de Leads B2B para más 100 servicios de reformas diferentes",
+      "👉Preguntas Frecuentes sobre la generación de Leads para Reformas",
+      "Resolvemos tus dudas para que puedas conseguir leads para remodelación para tu negocio hoy mismo",
+      "🚀¿Listo para empezar a captar clientes potenciales para Reformas?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://leadsparamarketing.com/",
+      "text": "Contacto",
+      "href": "https://leadsparamarketing.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "📞Programar llamada con Nosotros",
+      "LeadsMarketing",
+      "🚀Comprar Leads",
+      "Enviar Solicitud",
+      "Captación de Leads"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://leadsparamarketing.com/leads-reformas/",
+        "index": 1,
+        "action": "https://leadsparamarketing.com/leads-reformas/",
+        "method": "POST",
+        "submitText": "Enviar Solicitud",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_dde7657]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_7971ac3]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_b3dd134]",
+            "label": "Servicio de Interés",
+            "placeholder": "Servicio de Interés",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Escribe aquí tu consulta",
+            "placeholder": "Escribe aquí tu consulta",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 1 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Servicio de Interés.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Servicio de Interés"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"CONSIGUE AHORA UN 15% MÁS DE LEADS POR TU COMPRA EN CUALQUIERA DE NUESTROS PAQUETES\"; leads 100% exclusivos, reposición garantizada si el lead no es válido",
+    "audience": "Empresas de reformas, remodelación y decoradores de interiores (cocinas, baños, reformas integrales, proyectos de alto valor)",
+    "prices": [],
+    "guarantee": [
+      "Por eso, ofrecemos una garantía de reposición: si algún lead no es válido o no cumple con los criterios acordados, lo reemplazamos sin coste adicional, de forma rápida y sencilla.Leads ExclusivosCada lead que recibes es 100 % exclusivo para tu negocio.",
+      "Realizamos una segmentación precisa para entregarte leads cualificados, con mayor probabilidad de conversión y ajustados a tu perfil de cliente ideal.Garantía de ReposiciónSabemos lo importante que es recibir leads que realmente cumplan con tus expectativas.",
+      "Adaptamos cada campaña a las necesidades del sector para maximizar la rentabilidad de cada lead.¿Qué garantías ofrece Leads Marketing sobre los leads?Ofrecemos garantía de reposición: si un lead no cumple con los requisitos mínimos (datos erróneos, no está interesado, etc.), lo reponemos sin coste.",
+      "Así te entregamos leads con altas probabilidades de convertirse en clientes.Garantía de ReposiciónEn Leads Marketing entendemos que tu equipo necesita contactos de valor, no solo volumen.Por eso, si algún lead de ahorro o inversión no cumple con los criterios acordados o presenta inconsistencias, lo reponemos"
+    ],
+    "proof": [
+      "🚀Comprar Leads 📞Programar llamada con Nosotros + 0Clientes 0 %Satisfacción + 0 añosExperiencia 0 %Repiten Servicio 🎯Captación de Leads Cualificados para Todo Tipo de NegociosAumenta tus ventas con leads verificados y listos para contactar.",
+      "Leads para EnergíaCaptamos clientes potenciales interesados en cambiar de proveedor energético, contratar energía solar o buscar soluciones sostenibles.",
+      "Leads para ReformasConseguimos leads para Empresas de Reformas interesados en conseguir más clientes potenciales cualificados para reformas integrales.",
+      "Nuestros clientes potenciales están interesados en programas presenciales u online, y se filtran por edad, estudios previos e intereses académicos.",
+      "Nos adaptamos a tu sector para conseguir leads de calidad día a día Leads para AbogadosGeneramos leads cualificados para despachos de abogados en áreas como divorcios, herencias, derecho laboral, penal y civil, aumentando tu cartera de clientes con casos reales y urgentes.",
+      "…ta AdsBusiness Partner TikTok AdsMarketing Partners LinkedIn AdsMarketing Partners 🚀Generación de Leads de Calidad con Resultados ComprobadosMás tráfico, más leads, más clientes potenciales y más ventasComo agencia de leads especializada en generación de leads online, combinamos creatividad, análisis de dato…"
+    ],
+    "objections": [
+      "Esto te garantiza una ventaja competitiva, mayor posibilidad de cierre y evita saturar al cliente con múltiples ofertas.Sin PermanenciaQueremos que trabajes con nosotros por resultados, no por obligación.",
+      "Por eso, ofrecemos un modelo sin permanencia, sin contratos a largo plazo.",
+      "👉Preguntas Frecuentes sobre la generación de LeadsResolvemos tus dudas para que puedas conseguir leads para tu negocio hoy mismo¿Qué es Leads Marketing y qué servicios ofrece?Leads Marketing es una age…",
+      "Nos diferenciamos como una agencia de generación de leads que apuesta por la calidad, no por el volumen.¿Puedo comprar leads sin permanencia?¡Por supuesto!",
+      "En Leads Marketing puedes comprar leads sin compromiso de permanencia.",
+      "Además, todos nuestros leads cualificados son filtrados y verificados antes de ser entregados.¿Por qué elegir Leads Marketing frente a otras empresas que generan leads?Somos reconocidos como una de las mejores agencias de captación de leads en España, por nuestra transparencia, enfoque personalizado, leads exclusivos, y"
+    ],
+    "urgency": [
+      "Por eso, ofrecemos una garantía de reposición: si algún lead no es válido o no cumple con los criterios acordados, lo reemplazamos sin coste adicional, de forma rápida y sencilla.Leads ExclusivosCada lead que recibes es 100 % exclusivo para tu negocio.",
+      "Por eso, en Leads Marketing ofrecemos garantía de reposición: si algún lead para reformas no es válido o no cumple con los criterios acordados, lo reemplazamos sin coste adicional, de forma rápida y sin complicaciones.Leads ExclusivosCada lead que recibes es 100 % exclusivo para tu",
+      "Hoy seguimos trabajando juntos, pero por elección, no por obligación José AngelJefe comercialHemos trabajado con otras agencias donde el mismo contacto lo reciben varias empresas, y eso genera desconfianza en el cliente.",
+      "Nombre Apellidos Email Teléfono Servicio de Interés Volumen de leads de interés Escribe aquí tu consulta Enviar Solicitud Hoy, conseguir clientes potenciales de reformas depende de tu presencia online.",
+      "🚀Comprar Leads 📞Programar llamada con Nosotros 🎯¿Cómo Conseguir Clientes Potenciales Hoy?Estrategias de captación de leads personalizadas según tu sector y tipo de clienteSi te preguntas cómo conseguir leads en 2025, la respuesta está en una estrategia multicanal bien ejecutada.",
+      "👉Preguntas Frecuentes sobre la generación de LeadsResolvemos tus dudas para que puedas conseguir leads para tu negocio hoy mismo¿Qué es Leads Marketing y qué servicios ofrece?Leads Marketing es una agencia de captación de leads en España especializada en atraer clientes potenciales cualificados para e…"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Así te entregamos leads con altas probabilidades de convertirse en clientes.Garantía de ReposiciónEn Leads Marketing entendemos que tu equipo necesita contactos de valor, no solo volumen.Por eso, si algún lead de ahorro o inversión no cumple con los criterios acordados o presenta inconsistencias, lo reponemos",
+          "url": "https://leadsparamarketing.com/leads-planes-ahorro-e-inversion/",
+          "pageTitle": "✅Leads para Planes de Ahorro e Inversión👉Leads de Calidad",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Realizamos una segmentación precisa para entregarte leads cualificados, con mayor probabilidad de conversión y ajustados a tu perfil de cliente ideal.Garantía de ReposiciónSabemos lo importante que es recibir leads que realmente cumplan con tus expectativas.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Por eso, ofrecemos una garantía de reposición: si algún lead no es válido o no cumple con los criterios acordados, lo reemplazamos sin coste adicional, de forma rápida y sencilla.Leads ExclusivosCada lead que recibes es 100 % exclusivo para tu negocio.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Adaptamos cada campaña a las necesidades del sector para maximizar la rentabilidad de cada lead.¿Qué garantías ofrece Leads Marketing sobre los leads?Ofrecemos garantía de reposición: si un lead no cumple con los requisitos mínimos (datos erróneos, no está interesado, etc.), lo reponemos sin coste.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "🚀Comprar Leads 📞Programar llamada con Nosotros + 0Clientes 0 %Satisfacción + 0 añosExperiencia 0 %Repiten Servicio 🎯Captación de Leads Cualificados para Todo Tipo de NegociosAumenta tus ventas con leads verificados y listos para contactar.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nos adaptamos a tu sector para conseguir leads de calidad día a día Leads para AbogadosGeneramos leads cualificados para despachos de abogados en áreas como divorcios, herencias, derecho laboral, penal y civil, aumentando tu cartera de clientes con casos reales y urgentes.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leads para EnergíaCaptamos clientes potenciales interesados en cambiar de proveedor energético, contratar energía solar o buscar soluciones sostenibles.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leads para ReformasConseguimos leads para Empresas de Reformas interesados en conseguir más clientes potenciales cualificados para reformas integrales.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nuestros clientes potenciales están interesados en programas presenciales u online, y se filtran por edad, estudios previos e intereses académicos.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…ta AdsBusiness Partner TikTok AdsMarketing Partners LinkedIn AdsMarketing Partners 🚀Generación de Leads de Calidad con Resultados ComprobadosMás tráfico, más leads, más clientes potenciales y más ventasComo agencia de leads especializada en generación de leads online, combinamos creatividad, análisis de dato…",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Esto te garantiza una ventaja competitiva, mayor posibilidad de cierre y evita saturar al cliente con múltiples ofertas.Sin PermanenciaQueremos que trabajes con nosotros por resultados, no por obligación.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Por eso, ofrecemos un modelo sin permanencia, sin contratos a largo plazo.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "👉Preguntas Frecuentes sobre la generación de LeadsResolvemos tus dudas para que puedas conseguir leads para tu negocio hoy mismo¿Qué es Leads Marketing y qué servicios ofrece?Leads Marketing es una age…",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nos diferenciamos como una agencia de generación de leads que apuesta por la calidad, no por el volumen.¿Puedo comprar leads sin permanencia?¡Por supuesto!",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "En Leads Marketing puedes comprar leads sin compromiso de permanencia.",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Además, todos nuestros leads cualificados son filtrados y verificados antes de ser entregados.¿Por qué elegir Leads Marketing frente a otras empresas que generan leads?Somos reconocidos como una de las mejores agencias de captación de leads en España, por nuestra transparencia, enfoque personalizado, leads exclusivos, y",
+          "url": "https://leadsparamarketing.com/",
+          "pageTitle": "✅Agencia Leads👉Leads Filtrados de Calidad ▶️¡Garantizado!",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://leadsparamarketing.com/leads-reformas/",
+        "https://leadsparamarketing.com/contacto/",
+        "https://leadsparamarketing.com/leads-planes-ahorro-e-inversion/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "👋La Mejor Agencia de Captación de Leads para Reformas en España",
+        "🚀¿Listo para empezar a captar clientes potenciales?",
+        "👋La Mejor Agencia de Captación de Leads para Planes de Ahorro e Inversión en España",
+        "👋La Mejor Agencia de Captación de Leads en España"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "📞Programar llamada con Nosotros",
+        "Enviar Solicitud",
+        "Captación de Leads",
+        "LeadsMarketing",
+        "🚀Comprar Leads"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://leadsparamarketing.com/leads-reformas/ · 6 campos",
+        "https://leadsparamarketing.com/contacto/ · 6 campos",
+        "https://leadsparamarketing.com/leads-planes-ahorro-e-inversion/ · 6 campos",
+        "https://leadsparamarketing.com/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) La empresa compra un paquete o agenda contacto y define servicio, zona y criterios. 2) LeadsMarketing monta campañas y formularios inteligentes en Google/Meta. 3) Filtra presupuesto, urgencia,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://leadsparamarketing.com/leads-reformas/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://leadsparamarketing.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://leadsparamarketing.com/leads-planes-ahorro-e-inversion/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://leadsparamarketing.com/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://leadsparamarketing.com/leads-hipotecas/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://leadsparamarketing.com/leads-clausulas-suelo/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://leadsparamarketing.com/leads-subrogacion/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://leadsparamarketing.com/aviso-legal/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=leadsparamarketing.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=LeadsMarketing&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://leadsparamarketing.com/agencia-leads/: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

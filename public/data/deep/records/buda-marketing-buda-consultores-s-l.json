@@ -1,0 +1,599 @@
+{
+  "id": "buda-marketing-buda-consultores-s-l",
+  "name": "Buda Marketing (Buda Consultores S.L.)",
+  "reviewedAt": "2026-08-22T15:50:17.170Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Agencia de marketing digital en Madrid, enfocada a resultados.",
+    "heroObserved": true,
+    "priorSummary": "\"NO HACEMOS MARKETING. Somos tu sistema de captación de clientes. NO MEDIMOS IMPRESIONES NI CLICS. Medimos clientes reales y euros generados para tu negocio\". Y en home: \"Convertimos tu inversión en clientes, no en 'me gusta'\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 315 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1076 palabras por página comercial recuperada. Muestras breves: “Teléfono” · “Agencia de marketing digital en Madrid, enfocada a resultados.” · “Tu marca no necesita hacer más ruido. Necesita tener más sentido.”.",
+    "supportingHeadings": [
+      "Más clientes de calidad, mes a mes.",
+      "Agenda tu llamada gratuita",
+      "Esto es lo que conseguimos",
+      "Investfy · Inversión inmobiliaria",
+      "HomeTailor · Reformas en Madrid",
+      "Un sistema, no campañas sueltas",
+      "Atracción",
+      "Cualificación",
+      "Conversión",
+      "Optimización",
+      "Clientes que ya crecen",
+      "Las dudas más habituales",
+      "¿Hablamos?",
+      "Teléfono",
+      "WhatsApp",
+      "Email",
+      "¿Necesitas una agencia de marketing digital que ayude a tu negocio a crecer?",
+      "Gestión de Redes Sociales para Empresas",
+      "Tus redes sociales no son un tablón de anuncios. Son el corazón de tu comunidad.",
+      "Las 3 frustraciones más comunes en la gestión de redes sociales (y cómo las resolvemos)",
+      "El \"Publicar por Publicar\"",
+      "El \"Grito en el Vacío\"",
+      "El \"Agujero Negro de la Inversión\"",
+      "Todo lo que nuestra agencia de redes sociales hace por ti",
+      "Estrategia y Planificación",
+      "Creación de Contenido",
+      "Gestión de la Comunidad",
+      "Crecimiento y Publicidad",
+      "Nuestro proceso: Un camino claro y colaborativo para la gestión de tus redes sociales",
+      "Inmersión y Estrategia"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agenda tu llamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://budamarketing.es/mas-clientes-con-captacion/",
+      "text": "Agenda tu llamada",
+      "href": "https://budamarketing.es/mas-clientes-con-captacion/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 220.75
+    },
+    "ctas": [
+      "Agenda mi llamada",
+      "Agenda tu llamada",
+      "Contacto",
+      "{title}",
+      "Enviar ❯",
+      "Servicios",
+      "Contáctanos"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://budamarketing.es/mas-clientes-con-captacion/",
+        "index": 1,
+        "action": "https://budamarketing.es/mas-clientes-con-captacion/",
+        "method": "POST",
+        "submitText": "Agenda mi llamada",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel-387",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "necesidad",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-consent",
+            "label": "Acepto la Política de Protección de Datos",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://budamarketing.es/contacto/",
+        "index": 1,
+        "action": "https://budamarketing.es/contacto/",
+        "method": "POST",
+        "submitText": "Enviar ❯",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 13,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel-387",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-consent",
+            "label": "Acepto la Política de Protección de Datos",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"NO HACEMOS MARKETING. Somos tu sistema de captación de clientes. NO MEDIMOS IMPRESIONES NI CLICS. Medimos clientes reales y euros generados para tu negocio\". Y en home: \"Convertimos tu inversión en clientes, no en 'me gusta'\".",
+    "audience": "Pymes y profesionales de servicios, base en Madrid. Generalista con VERTICALES DECLARADAS que solapan con RedVitalia: abogados y despachos, psicólogos y clínicas dentales. En cartera también inmobiliaria y financiero.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto 91 066 71 37 ¿Hablamos?",
+      "Por qué elegir a Buda 1 100% orientado a resultados Cada decisión mira el coste por cliente, no el coste por clic.",
+      "4 Reportamos los resultados Informes claros centrados en lo que de verdad importa para tu negocio.",
+      "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto Captación de clientes Más clientes de calidad, mes a mes.",
+      "Publicidad y SEO que convierten tu inversión en clientes de forma predecible y escalable, no en métricas vacías.",
+      "Lo que dicen de nosotros Clientes que ya crecen Las dudas más habituales ¿Qué os hace diferentes?"
+    ],
+    "objections": [
+      "Contáctanos y empezamos FAQS Las preguntas que más nos hacen."
+    ],
+    "urgency": [
+      "El problema ¿Cuántos clientes buscan ahora mismo lo que haces… y acaban en tu competencia?",
+      "Sí, sobre todo si tu web no transmite bien tu valor, si suena genérica o si no está alineada con lo que quieres vender ahora.",
+      "Tu web puede seguir esperando… o empezar a vender hoy."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…en Google en su sector nº 0 valoración en Google 0 ★ clientes potenciales captados 0 coste por cliente potencial desde 0 € 365 oportunidades Investfy · Inversión inmobiliaria 365 oportunidades de venta captadas a través de su web, a menos de 14 € cada una, y nº1 en Google de su sector.",
+          "url": "https://budamarketing.es/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid ॐ Buda",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto Captación de clientes Más clientes de calidad, mes a mes.",
+          "url": "https://budamarketing.es/mas-clientes-con-captacion/",
+          "pageTitle": "Mas clientes con captacion - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Publicidad y SEO que convierten tu inversión en clientes de forma predecible y escalable, no en métricas vacías.",
+          "url": "https://budamarketing.es/mas-clientes-con-captacion/",
+          "pageTitle": "Mas clientes con captacion - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "✓ GOOGLE PARTNER · ✓ META PARTNER ★★★★★ 5,0 en reseñas de Google · +20 marcas confían en Buda Agenda tu llamada gratuita Vemos tu caso y te decimos, con franqueza, si podemos ayudarte y cómo.",
+          "url": "https://budamarketing.es/mas-clientes-con-captacion/",
+          "pageTitle": "Mas clientes con captacion - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Lo que dicen de nosotros Clientes que ya crecen Las dudas más habituales ¿Qué os hace diferentes?",
+          "url": "https://budamarketing.es/mas-clientes-con-captacion/",
+          "pageTitle": "Mas clientes con captacion - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto 91 066 71 37 ¿Hablamos?",
+          "url": "https://budamarketing.es/captacion-de-clientes/",
+          "pageTitle": "Captación de clientes - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto PARA EMPRESAS QUE VAN EN SERIO Más clientes de calidad, mes a mes.",
+          "url": "https://budamarketing.es/captacion-de-clientes/",
+          "pageTitle": "Captación de clientes - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Publicidad y SEO que convierten tu inversión en clientes de forma predecible y escalable, no en métricas vacías.",
+          "url": "https://budamarketing.es/captacion-de-clientes/",
+          "pageTitle": "Captación de clientes - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Si tu marketing es más gasto que inversión, y solo ves facturas pero no clientes, algo está fallando.",
+          "url": "https://budamarketing.es/captacion-de-clientes/",
+          "pageTitle": "Captación de clientes - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Por qué elegir a Buda 1 100% orientado a resultados Cada decisión mira el coste por cliente, no el coste por clic.",
+          "url": "https://budamarketing.es/captacion-de-clientes/",
+          "pageTitle": "Captación de clientes - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "4 Reportamos los resultados Informes claros centrados en lo que de verdad importa para tu negocio.",
+          "url": "https://budamarketing.es/captacion-de-clientes/",
+          "pageTitle": "Captación de clientes - Agencia de Marketing Buda",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto 91 066 71 37 ¿Hablamos?",
+          "url": "https://budamarketing.es/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid ॐ Buda",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Inicio Captación de clientes Estrategia de marca Servicios Diseño Web Posicionamiento SEO Redes Sociales Vídeo Marketing Publicidad en Redes Publicidad en Google Contacto Agencia de marketing digital Agencia de marketing digital en Madrid, enfocada a resultados.",
+          "url": "https://budamarketing.es/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid ॐ Buda",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Convertimos tu inversión en clientes, no en “me gusta”.Tenemos un sistema de captación predecible y escalable, medido y en exclusiva por sector, con un equipo que da la cara y te enseña los números.",
+          "url": "https://budamarketing.es/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid ॐ Buda",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No te prometemos un número de clientes.",
+          "url": "https://budamarketing.es/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid ॐ Buda",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Contáctanos y empezamos FAQS Las preguntas que más nos hacen.",
+          "url": "https://budamarketing.es/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid ॐ Buda",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://budamarketing.es/mas-clientes-con-captacion/",
+        "https://budamarketing.es/contacto/",
+        "https://budamarketing.es/gestion-de-redes-sociales-para-empresas/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agencia de marketing digital en Madrid, enfocada a resultados.",
+        "Tu marca no necesita hacer más ruido. Necesita tener más sentido.",
+        "Una web no es un adorno. Es tu motor de crecimiento."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Agenda mi llamada",
+        "Agenda tu llamada",
+        "Servicios",
+        "Contáctanos",
+        "Enviar ❯",
+        "{title}"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://budamarketing.es/mas-clientes-con-captacion/ · 5 campos",
+        "https://budamarketing.es/contacto/ · 5 campos",
+        "https://budamarketing.es/gestion-de-redes-sociales-para-empresas/ · 5 campos",
+        "https://budamarketing.es/captacion-de-clientes/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Email",
+        "Agenda mi llamada",
+        "Agenda tu llamada"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing de captación → CTA «¿Empezamos?» / «Contacta ya» → formulario de contacto (nombre, teléfono, email) o WhatsApp/teléfono → llamada de 20 minutos para entender negocio,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://budamarketing.es/mas-clientes-con-captacion/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://budamarketing.es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://budamarketing.es/gestion-de-redes-sociales-para-empresas/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://budamarketing.es/captacion-de-clientes/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://budamarketing.es/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://budamarketing.es/estrategia-de-marca/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://budamarketing.es/agencia-de-diseno-web/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08668483779997728769?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09818128396356419585?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://www.budamarketing.es/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09698985316370612225?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR14654954263977918465?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR14157612195155804161?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09997794643648970753?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR15726597944914214913?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR15957462401398341633?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR07562834884473913345?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09874864871386906625?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08683029657408241665?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09769448300720685057?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR15686172621802569729?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=budamarketing.es",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12019164651540447233?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6453102383037130493",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR13521931514652131329?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11195141099389628188",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR14130242138104922113?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "http://www.budamarketing.es/%E2%81%A9",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agenda tu llamada”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,562 @@
+{
+  "id": "captain-prospect",
+  "name": "Captain Prospect",
+  "reviewedAt": "2026-08-22T15:50:17.296Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Agence de prospection B2B",
+    "heroObserved": true,
+    "priorSummary": "Prospección multicanal (email, teléfono, inbound) con citas cualificadas puestas directamente en la agenda del cliente",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 161 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2224 palabras por página comercial recuperada. Muestras breves: “Agence de prospection B2B” · “Une lettre pour le Captain” · “Agence de prospection commerciale BtoB Française”.",
+    "supportingHeadings": [
+      "Agence de prospection B2B",
+      "Captain Prospect, votre partenaire en prospection commerciale B2B",
+      "Ils nous font confiance",
+      "Nos expertises en prospection commerciale",
+      "Prospection téléphonique B2B",
+      "Prospection multicanal",
+      "Acquisition inbound B2B",
+      "Prospection par mail",
+      "Formation à la prospection B2B",
+      "Nos réalisations en prospection commerciale",
+      "Les entreprises avec une vraie stratégie de prospection sont 2 fois plus susceptibles d’atteindre ou dépasser leurs objectifs de revenus — Salesgenie",
+      "Nos offres de prospection",
+      "Prospection mail",
+      "Prospection téléphonique",
+      "Pourquoi externaliser votre prospection à une agence ?",
+      "Qualification des leads : des rendez-vous vraiment utiles à vos équipes",
+      "Une stratégie commerciale qui soutient votre croissance",
+      "Plus de temps pour convertir et performer",
+      "Une prospection B2B pensée pour vos résultats",
+      "Générez des opportunités qui font vraiment grandir votre business",
+      "Nombre de rendez-vous générés",
+      "Taux de closing",
+      "Commerciaux formés",
+      "Nos clients en parlent le mieux",
+      "L'efficacité de notre approche en prospection commerciale",
+      "Nos Actualités & Technique de ventes",
+      "Les conseils Captain Prospect",
+      "En savoir plus sur Captain Prospect",
+      "Tout ce que vous devez savoir pour avancer",
+      "Qu’est-ce que Captain Prospect ?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactez-nousBook a Free Call",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.captainprospect.fr/",
+      "text": "Contactez-nousBook a Free Call",
+      "href": "https://www.captainprospect.fr/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 397.5
+    },
+    "ctas": [
+      "Contactez-nousBook a Free Call",
+      "Audit concurrentiel SEO sur le mot-clé “Call center” : où se placer pour capter",
+      "Contact",
+      "Nous contacterContact",
+      "Nous contacterNous contactez",
+      "Nous contactezNous contactez",
+      "Envoyer",
+      "Formation",
+      "S'inscrire",
+      "Candidater",
+      "Mentions légales",
+      "Politique de confidentialité",
+      "un diagnostic de prospection B2B"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.captainprospect.fr/",
+        "index": 1,
+        "action": "https://www.captainprospect.fr/",
+        "method": "GET",
+        "submitText": "S'inscrire",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "mail",
+            "label": null,
+            "placeholder": "jean@entreprise.fr",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.captainprospect.fr/contact",
+        "index": 1,
+        "action": "https://www.captainprospect.fr/contact",
+        "method": "GET",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "firstname",
+            "label": null,
+            "placeholder": "Prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "Entreprise",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sujet",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "mail",
+            "label": null,
+            "placeholder": "Adresse mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Téléphone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Message...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "visibility",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.captainprospect.fr/la-captainerie",
+        "index": 1,
+        "action": "https://hook.eu1.make.com/5s5a2afhpxfw31a4swpwzq6q7h5m31l6",
+        "method": "POST",
+        "submitText": "Candidater",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "prenom",
+            "label": null,
+            "placeholder": "Prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "nom",
+            "label": null,
+            "placeholder": "Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telephone",
+            "label": null,
+            "placeholder": "Téléphone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "mail",
+            "label": null,
+            "placeholder": "Mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "poste",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "fichier",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Captain...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.captainprospect.fr/offres/mail",
+        "index": 1,
+        "action": "https://www.captainprospect.fr/offres/mail",
+        "method": "GET",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "firstname",
+            "label": null,
+            "placeholder": "Prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "mail",
+            "label": null,
+            "placeholder": "Adresse mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Téléphone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "Entreprise",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sujet",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Message...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 1 y 8 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: company.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 8,
+      "qualification": [
+        "company"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Webflow"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Prospección multicanal (email, teléfono, inbound) con citas cualificadas puestas directamente en la agenda del cliente",
+    "audience": "PME y startups B2B en Francia que quieren externalizar la prospección comercial",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Nous savons que votre priorité est de transformer vos offres en clients, pas de remplir des listes de contacts.",
+      "CaptainProspect a su nous mettre en relation rapidement avec des clients potentiels en très peu de temps.",
+      "Vous vous concentrez sur ce qui compte vraiment : transformer vos opportunités en clients et faire grandir votre activité.Prospection multicanalAcquisition de clients qualifiésUne prospection B2B pensée pour vos résultatsGénérez des opportunités qui font vraiment grand…",
+      "…e vos campagnes d'appels sortants et vous garantit un discours commercial maîtrisé et percutant pour séduire vos futurs clients.Quels sont les outils utilisés pour les campagnes de prospection ?Captain Prospect met à votre disposition une palette d'outils innovants pour vous aider à optimiser votre prospec…"
+    ],
+    "objections": [
+      "Leur équipe de support est également très réactive et disponible pour répondre à toutes nos questions."
+    ],
+    "urgency": [
+      "Nous avons régulièrement des rdv de prospects intéressés, ce qui nous donne accès à des sociétés auxquelles nous n'aurions pas pensé.Alban GardetFondateurLe cabinet de prospection commercial Captain Prospect est un partenaire clé pour notre entreprise depuis maintenant 2 ans.",
+      "Les rendez-vous sont ciblés et de qualité et nous permettent d’entrer en relation avec de nouveaux prospects qualifiés.”42863027498245037965%Client satisfait42863027406245037965+Années d'expériences CEO Emage-MEAlban GardetFondateurLe cabinet de prospection commercial Captain Prospect est un partenaire clé pour notre entreprise depuis maintenant 2 ans.",
+      "Je recommande fortement CaptainProspect à toute entreprise qui cherche à améliorer sa prospection commerciale.Alban GardetFondateurLe cabinet de prospection commercial Captain Prospect est un partenaire clé pour notre entreprise depuis maintenant 2 ans.",
+      "Nous recommandons.Alban GardetFondateurLe cabinet de prospection commercial Captain Prospect est un partenaire clé pour notre entreprise depuis maintenant 2 ans.",
+      "Je parle de Captain Prospect autour de moi sans hésiter !Marc SauvageDirigeantTrès bonne écoute, de vrais spécialistes du sujet :)Alban GardetFondateurLe cabinet de prospection commercial Captain Prospect est un partenaire clé pour notre entreprise depuis maintenant 2 ans.",
+      "Les commerciaux savent-ils pourquoi ils contactent ce prospect, maintenant ?Une prospection B2B qui convertit repose sur une segmentation propre."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Nous savons que votre priorité est de transformer vos offres en clients, pas de remplir des listes de contacts.",
+          "url": "https://www.captainprospect.fr/",
+          "pageTitle": "Agence de prospection B2B | Captain Prospect",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Vous vous concentrez sur ce qui compte vraiment : transformer vos opportunités en clients et faire grandir votre activité.Prospection multicanalAcquisition de clients qualifiésUne prospection B2B pensée pour vos résultatsGénérez des opportunités qui font vraiment grand…",
+          "url": "https://www.captainprospect.fr/",
+          "pageTitle": "Agence de prospection B2B | Captain Prospect",
+          "pageCategory": "other"
+        },
+        {
+          "text": "CaptainProspect a su nous mettre en relation rapidement avec des clients potentiels en très peu de temps.",
+          "url": "https://www.captainprospect.fr/",
+          "pageTitle": "Agence de prospection B2B | Captain Prospect",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…e vos campagnes d'appels sortants et vous garantit un discours commercial maîtrisé et percutant pour séduire vos futurs clients.Quels sont les outils utilisés pour les campagnes de prospection ?Captain Prospect met à votre disposition une palette d'outils innovants pour vous aider à optimiser votre prospec…",
+          "url": "https://www.captainprospect.fr/",
+          "pageTitle": "Agence de prospection B2B | Captain Prospect",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Leur équipe de support est également très réactive et disponible pour répondre à toutes nos questions.",
+          "url": "https://www.captainprospect.fr/",
+          "pageTitle": "Agence de prospection B2B | Captain Prospect",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.captainprospect.fr/",
+        "https://www.captainprospect.fr/contact",
+        "https://www.captainprospect.fr/la-captainerie"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agence de prospection B2B",
+        "Une lettre pour le Captain",
+        "Agence de prospection commerciale BtoB Française",
+        "Prospection mail"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Nous contacterContact",
+        "Nous contacterNous contactez",
+        "Contactez-nousBook a Free Call",
+        "S'inscrire",
+        "Contact",
+        "Envoyer",
+        "Formation",
+        "Mentions légales"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.captainprospect.fr/ · 1 campos",
+        "https://www.captainprospect.fr/contact · 8 campos",
+        "https://www.captainprospect.fr/contact · 1 campos",
+        "https://www.captainprospect.fr/la-captainerie · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contacto/llamada gratuita → diagnóstico comercial → identificación y cualificación de prospectos → prospección email/teléfono/multicanal o inbound → cita directa en el calendario → cliente realiza el cierre; facturación"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.captainprospect.fr/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.captainprospect.fr/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.captainprospect.fr/la-captainerie",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.captainprospect.fr/blog",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.captainprospect.fr/blog/7-questions-taux-conversion-prospection-commerciale-b2b",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.captainprospect.fr/blog/agence-generation-leads-vs-equipe-interne-choix-roi-commercial",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.captainprospect.fr/offres/mail",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=captainprospect.fr",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactez-nousBook a Free Call”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Webflow) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

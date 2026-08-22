@@ -1,0 +1,414 @@
+{
+  "id": "gastroagencia",
+  "name": "Gastroagencia",
+  "reviewedAt": "2026-08-22T15:50:19.231Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "AGENCIA DE MARKETING DIGITAL ESPECIALIZADA EN ALIMENTACIÓN Y GASTRONOMÍA",
+    "heroObserved": true,
+    "priorSummary": "\"AGENCIA DE MARKETING DIGITAL ESPECIALIZADA EN ALIMENTACIÓN Y GASTRONOMÍA\" y \"El marketing gastronómico, SÍ\".",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 40 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 581 palabras por página comercial recuperada. Muestras breves: “AGENCIA DE MARKETING DIGITAL ESPECIALIZADA EN ALIMENTACIÓN Y GASTRONOMÍA” · “Háblanos de tu proyecto” · “Consultoría estratégica y planning para marcas de alimentación”.",
+    "supportingHeadings": [
+      "AGENCIA DE MARKETING DIGITAL ESPECIALIZADA EN ALIMENTACIÓN Y GASTRONOMÍA",
+      "Estrategias de marketing gastronómico",
+      "Agencia de marketing gastronómico especializada en marcas de alimentación",
+      "Planning",
+      "Eventos",
+      "Influencers marketing",
+      "Social media",
+      "SEM",
+      "Audiovisual",
+      "Diseño web",
+      "Diseño gráfico",
+      "SEO",
+      "Influencers",
+      "Ley 580 de Italia: por qué la pasta italiana se elabora con trigo duro",
+      "5 Chiringuitos en la Playa de Valencia",
+      "Merchandising gastronómico: ¿por qué la taza personalizada sigue siendo la apuesta más rentable?",
+      "Háblanos de tu proyecto",
+      "Marcas y proyectos con los que trabajamos",
+      "Consultoría estratégica y planning para marcas de alimentación",
+      "Consultoría gastronómica para hacer crecer tu marca",
+      "Construye una identidad sólida con una consultoría de marca",
+      "Auditorías de canales digitales: detectamos qué está frenando tu crecimiento",
+      "Sobre el servicio de Consultoría estratégica para marcas de alimentación",
+      "Casos de éxito",
+      "Proyectos que hablan por sí solos",
+      "El marketing convencional no funciona en marcas de alimentación",
+      "Soluciones probadas para cada etapa de tu marca",
+      "Diseño Gráfico",
+      "Diseño Web",
+      "Social Media"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "AGENDA UNA CITA",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://gastroagencia.es/",
+      "text": "AGENDA UNA CITA",
+      "href": "https://gastroagencia.es/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 181.25
+    },
+    "ctas": [
+      "AGENDA UNA CITA",
+      "CONTACTO",
+      "Solicita una reunión",
+      "CONTACTA CON NOSOTROS",
+      "Enviar",
+      "CONTÁCTANOS",
+      "HABLEMOS DE TU MARCA"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://gastroagencia.es/contacto/",
+        "index": 1,
+        "action": "https://gastroagencia.es/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_301804c]",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[field_a3efe1f]",
+            "label": "¿En qué servicio estás interesado?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_3acf955]",
+            "label": "Indícanos el nombre de tu empresa/proyecto",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_38b51c5]",
+            "label": "¿Tu empresa tiene web? Déjanos la url",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Cuéntanos más sobre tu proyecto",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_1f81673]",
+            "label": "He leído y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 8 y 8 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: ¿En qué servicio estás interesado?, Indícanos el nombre de tu empresa/proyecto, ¿Tu empresa tiene web? Déjanos la url.",
+      "friction": "Alta",
+      "minFields": 8,
+      "maxFields": 8,
+      "qualification": [
+        "¿En qué servicio estás interesado?",
+        "Indícanos el nombre de tu empresa/proyecto",
+        "¿Tu empresa tiene web? Déjanos la url"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"AGENCIA DE MARKETING DIGITAL ESPECIALIZADA EN ALIMENTACIÓN Y GASTRONOMÍA\" y \"El marketing gastronómico, SÍ\".",
+    "audience": "Marcas de alimentación y gastronomía: catering, eventos, restaurantes, bodegas, productores y grandes marcas de gran consumo. Sede en Valencia. Más de veinte años declarados.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "SEM Diseñamos y optimizamos campañas publicitarias para que captes clientes e impulses la notoriedad de tu marca.",
+      "SEM Diseñamos y optimizamos campañas publicitarias para que captes clientes.",
+      "CONFÍAN EN NOSOTROS QUÉ OPINAN NUESTROS CLIENTES Lo que dicen nuestros clientes sobre trabajar con Gastroagencia.",
+      "Es el aliado perfecto para una acción de street marketing y degustación de productos.\" Gonzalo YbarraDirector marketing Grupo Yvarra \"Desde el principio captaron lo que necesitábamos y nos han ayudado a llegar de una manera más cercana a nuestros clientes.\" Cayetano BelsaCEO Koroko \"Gracias a"
+    ],
+    "objections": [
+      "CONOCE EL ESPACIO NUESTRO BLOG NOVEDADES Ley 580 de Italia: por qué la pasta italiana se elabora con trigo duro Leer más → 5 Chiringuitos en la Playa de Valencia Leer más → Merchandising gastronómico: ¿por qué la taza personalizada sigue siendo la apuesta más"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "SEM Diseñamos y optimizamos campañas publicitarias para que captes clientes e impulses la notoriedad de tu marca.",
+          "url": "https://gastroagencia.es/",
+          "pageTitle": "Inicio - Gastroagencia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "SEM Diseñamos y optimizamos campañas publicitarias para que captes clientes.",
+          "url": "https://gastroagencia.es/",
+          "pageTitle": "Inicio - Gastroagencia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "CONFÍAN EN NOSOTROS QUÉ OPINAN NUESTROS CLIENTES Lo que dicen nuestros clientes sobre trabajar con Gastroagencia.",
+          "url": "https://gastroagencia.es/",
+          "pageTitle": "Inicio - Gastroagencia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Es el aliado perfecto para una acción de street marketing y degustación de productos.\" Gonzalo YbarraDirector marketing Grupo Yvarra \"Desde el principio captaron lo que necesitábamos y nos han ayudado a llegar de una manera más cercana a nuestros clientes.\" Cayetano BelsaCEO Koroko \"Gracias a",
+          "url": "https://gastroagencia.es/",
+          "pageTitle": "Inicio - Gastroagencia",
+          "pageCategory": "other"
+        },
+        {
+          "text": "de Puerto Rico 48, bajo derecha, 46006 Valenciainfo@gastroagencia.es962 065 453 InicioServiciosNuestro espacioCasos de éxitoEquipo CONTÁCTANOS Somos miembros de: Aviso legal y Política de privacidad – Política de cookies Este sitio utiliza cookies funcionales y scripts externos para mejorar tu experiencia.",
+          "url": "https://gastroagencia.es/casos-de-exito/",
+          "pageTitle": "Casos de éxito - Gastroagencia",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "de Puerto Rico 48, bajo derecha, 46006 Valenciainfo@gastroagencia.es962 065 453 InicioServiciosNuestro espacioCasos de éxitoEquipo CONTÁCTANOS Somos miembros de: Aviso legal y Política de privacidad – Política de cookies Este sitio utiliza cookies funcionales y scripts externos para mejorar tu experiencia.",
+          "url": "https://gastroagencia.es/servicios/",
+          "pageTitle": "Servicios - Gastroagencia",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "de Puerto Rico 48, bajo derecha, 46006 Valenciainfo@gastroagencia.es962 065 453 InicioServiciosNuestro espacioCasos de éxitoEquipo CONTÁCTANOS Somos miembros de: Aviso legal y Política de privacidad – Política de cookies Este sitio utiliza cookies funcionales y scripts externos para mejorar tu experiencia.",
+          "url": "https://gastroagencia.es/casos-de-exito/olala/",
+          "pageTitle": "Olalá - Gastroagencia",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "de Puerto Rico 48, bajo derecha, 46006 Valenciainfo@gastroagencia.es962 065 453 InicioServiciosNuestro espacioCasos de éxitoEquipo CONTÁCTANOS Somos miembros de: Aviso legal y Política de privacidad – Política de cookies Este sitio utiliza cookies funcionales y scripts externos para mejorar tu experiencia.",
+          "url": "https://gastroagencia.es/casos-de-exito/la-masia/",
+          "pageTitle": "La Masía - Gastroagencia",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "CONOCE EL ESPACIO NUESTRO BLOG NOVEDADES Ley 580 de Italia: por qué la pasta italiana se elabora con trigo duro Leer más → 5 Chiringuitos en la Playa de Valencia Leer más → Merchandising gastronómico: ¿por qué la taza personalizada sigue siendo la apuesta más",
+          "url": "https://gastroagencia.es/",
+          "pageTitle": "Inicio - Gastroagencia",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Partners / afiliación"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://gastroagencia.es/",
+        "https://gastroagencia.es/contacto/",
+        "https://gastroagencia.es/servicios/planning/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "AGENCIA DE MARKETING DIGITAL ESPECIALIZADA EN ALIMENTACIÓN Y GASTRONOMÍA",
+        "Háblanos de tu proyecto",
+        "Consultoría estratégica y planning para marcas de alimentación",
+        "El marketing convencional no funciona en marcas de alimentación"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "CONTÁCTANOS",
+        "CONTACTO",
+        "AGENDA UNA CITA",
+        "CONTACTA CON NOSOTROS",
+        "Enviar",
+        "Solicita una reunión",
+        "HABLEMOS DE TU MARCA"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://gastroagencia.es/contacto/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono",
+        "AGENDA UNA CITA"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por home/servicios/contenido → CTA «Hablemos de tu marca» / formulario / reunión → briefing con servicio, empresa, web y proyecto → diagnóstico y planning → propuesta a"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://gastroagencia.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://gastroagencia.es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://gastroagencia.es/servicios/planning/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://gastroagencia.es/casos-de-exito/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://gastroagencia.es/servicios/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://gastroagencia.es/casos-de-exito/olala/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://gastroagencia.es/casos-de-exito/la-masia/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://gastroagencia.es/servicios/sem/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=gastroagencia.es",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “AGENDA UNA CITA”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 8 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

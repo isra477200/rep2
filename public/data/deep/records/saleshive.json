@@ -1,0 +1,707 @@
+{
+  "id": "saleshive",
+  "name": "SalesHive",
+  "reviewedAt": "2026-08-22T15:50:17.634Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "One fee. The whole outbound engine.",
+    "heroObserved": true,
+    "priorSummary": "Equipo SDR, estratega, plataforma de IA, datos, dialer, email y CRM sync en una sola cuota; reuniones cualificadas en calendario.",
+    "voice": "Revisión manual: Operational, Financial, Transparent, Enterprise-capable. High in-house SDR cost Slow ramp-up Fragmented outbound tools",
+    "supportingHeadings": [
+      "One fee.The wholeoutbound engine.",
+      "Three tiers. Two team options. One bill.",
+      "Get exact numbers on a 30-minute call",
+      "The bills you stop paying.",
+      "The full platform, in every plan",
+      "Done for you, or run it yourself",
+      "Full service",
+      "Platform only",
+      "See exactly who represents you, before you pay",
+      "Priced like a vendor. Performs like a team.",
+      "The fine print, in plain language",
+      "Get a quote built around your goals",
+      "Start a conversation, not a contract.",
+      "For everything else, write to us.",
+      "From hello to booked meetings",
+      "Reach out",
+      "Calls that respect your time",
+      "Questions, answered",
+      "Ready to fill your pipeline?",
+      "Trusted by the teams whose pipeline we fill.",
+      "Real feedback from the teams we book for",
+      "The numbers behind the kind words",
+      "The reporting clients call honest",
+      "Reviews echo the same three things.",
+      "Find the proof in your corner of B2B",
+      "About our reviews",
+      "Lead generation that ends in held meetings.",
+      "A lead is an outcome, not a purchase",
+      "A list is not leads",
+      "Inbound is not enough"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Tour the live platform demo",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://saleshive.com/contact",
+      "text": "Tour the live platform demo",
+      "href": "https://saleshive.com/demo",
+      "element": "a",
+      "kind": "conversion",
+      "score": 238.25
+    },
+    "ctas": [
+      "Book a strategy call",
+      "Tour the live platform demo",
+      "Get your quote",
+      "Contact supportTell us what you are trying to do and where you got stuck.",
+      "ask us directly",
+      "Tour the platform",
+      "Send it to a strategist"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://saleshive.com/contact",
+        "index": 2,
+        "action": "https://saleshive.com/contact",
+        "method": "GET",
+        "submitText": "Send it to a strategist",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "firstName",
+            "label": "First name *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "lastName",
+            "label": "Last name",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Work email *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "What do you need? *",
+            "placeholder": "Who do you sell to, and what would a great meeting look",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Website, Company *.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": [
+        "Website",
+        "Company *"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Equipo SDR, estratega, plataforma de IA, datos, dialer, email y CRM sync en una sola cuota; reuniones cualificadas en calendario.",
+    "audience": "Empresas B2B que externalizan SDR, cold calling, email y appointment setting.",
+    "prices": [
+      "to hire)$0Setup fees, ever100%US-based SDRsThe plansThree tiers."
+    ],
+    "guarantee": [
+      "Cancel anytime with written notice.Get your quote Compare plansRisk-free onboarding · Month to month · 100% US-based SDRs60%+Cost savings vs.",
+      "Replaces a separate CRM, data provider, and sending tools AI agents research, personalize, triage, and report Native two-way CRM sync while you transitionTour the platform Risk-free onboardingSee exactly who represents you, before you payBefore your first invoice ever goes out, you approve the people, the"
+    ],
+    "proof": [
+      "…pricingLive in 2 to 3 weeks · Month-to-month · No setup fees129K+Qualified meetings booked$2.5B+Pipeline generated2,285Clients scaled47+Industries servedLeads are earned, not boughtA lead is an outcome, not a purchaseAnyone can sell you contact names.",
+      "Here is what they tell us, in their own words.Book a strategy call See the case studiesVerified reviews on Trustpilot · 2,285 clients scaled · No long-term contracts Verified client reviewsPublished on TrustpilotThey felt like an extension of our own team from week one.",
+      "Within the first quarter we had a repeatable outbound motion we could count on.”VP of Sales · Mid-size fintech firm2,285 clients have handed SalesHive their outbound.",
+      "The next review on this page could be yours.Book a strategy call Reviews backed by resultsThe numbers behind the kind wordsA few of the verified outcomes our clients have shared.",
+      "Every call, email, reply, and meeting tracked in real time Attribution on every lead: the touch that earned it Two-way CRM sync, or run your whole motion on ours Weekly strategist reviews tune targeting from live resultsTour the platform How it worksFrom kickoff to a",
+      "…ices & MSPs Medical Devices Commercial Real Estate Staffing & RecruitingAll 47+ industries Questions, answeredAbout our reviewsStraight answers about how we collect and present client feedback.Where can I read independent reviews?We maintain a verified review presence on Trustpilot, where clients leave fe…"
+    ],
+    "objections": [
+      "The difference is how fast you get to qualified leads and how much infrastructure you carry.Comparing your options?B2B sales agency Sales development agency Sales outsourcing SDR outsourcing Cold calling scripts Your industry Questions, answeredWhat teams ask about lead generation servicesThe short version is on the"
+    ],
+    "urgency": [
+      "Open any question to go deeper.What is the SalesHive Help Center?It is the public knowledge base for the SalesHive platform: practical, step-by-step guides to the campaign, dialer, inbox, and account features our clients use every day.",
+      "The people who call and write for you know your market, because they live in it.04Ten years · The record129K+ meetings.",
+      "The proof is in the case studies.05Today · The turnThe platform became agent-native.Agents do the work.",
+      "Chat is real today; voice and a dedicated mobile app are where it goes next, so employees and clients direct the work from anywhere.",
+      "We earn the relationship every month with booked meetings, not contracts.Learn more Agent-native, todayAI agents research, personalize, dial, respond, and report across the whole motion, and people approve what matters.Learn more Questions, answeredMore about who we areThe short version is on the surface.",
+      "We always know what is working, what is being tested, and what is changing next."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "to hire)$0Setup fees, ever100%US-based SDRsThe plansThree tiers.",
+          "url": "https://saleshive.com/pricing",
+          "pageTitle": "SalesHive Pricing | Flat Monthly SDR Team, No Contracts",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "A dedicated, all-inclusive team is built to fill the funnel predictably, without the hiring risk.129K+Qualified meetings booked$2.5B+Pipeline generated for clients2,285Clients scaledPricing questions, answeredThe fine print, in plain languageNo surprises.",
+          "url": "https://saleshive.com/pricing",
+          "pageTitle": "SalesHive Pricing | Flat Monthly SDR Team, No Contracts",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Cancel anytime with written notice.Get your quote Compare plansRisk-free onboarding · Month to month · 100% US-based SDRs60%+Cost savings vs.",
+          "url": "https://saleshive.com/pricing",
+          "pageTitle": "SalesHive Pricing | Flat Monthly SDR Team, No Contracts",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Replaces a separate CRM, data provider, and sending tools AI agents research, personalize, triage, and report Native two-way CRM sync while you transitionTour the platform Risk-free onboardingSee exactly who represents you, before you payBefore your first invoice ever goes out, you approve the people, the",
+          "url": "https://saleshive.com/pricing",
+          "pageTitle": "SalesHive Pricing | Flat Monthly SDR Team, No Contracts",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "WebsitePlatformHomeServicesProductIndustriesPricingCompanyAbout UsOur ProcessCareersCase StudiesReviewsResourcesAlready a client?Sign in to your SalesHive dashboard.Log in What our clients sayTrusted by the teams whose pipeline we fill.For a decade, B2B companies across 47+ industries have handed us their outbound and watched the meetings show up.",
+          "url": "https://saleshive.com/reviews",
+          "pageTitle": "Reviews: what SalesHive clients say",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Here is what they tell us, in their own words.Book a strategy call See the case studiesVerified reviews on Trustpilot · 2,285 clients scaled · No long-term contracts Verified client reviewsPublished on TrustpilotThey felt like an extension of our own team from week one.",
+          "url": "https://saleshive.com/reviews",
+          "pageTitle": "Reviews: what SalesHive clients say",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "The strategist owned our messaging and the meetings just started showing up on the calendar.VP of SalesMid-size SaaS company129K+Qualified meetings booked$2.5B+Pipeline generated2,285Clients scaled47+Industries servedIn their wordsReal feedback from the teams we book forPresented by role and company type to keep our clients' confidence.",
+          "url": "https://saleshive.com/reviews",
+          "pageTitle": "Reviews: what SalesHive clients say",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Within the first quarter we had a repeatable outbound motion we could count on.”VP of Sales · Mid-size fintech firm2,285 clients have handed SalesHive their outbound.",
+          "url": "https://saleshive.com/reviews",
+          "pageTitle": "Reviews: what SalesHive clients say",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "The next review on this page could be yours.Book a strategy call Reviews backed by resultsThe numbers behind the kind wordsA few of the verified outcomes our clients have shared.",
+          "url": "https://saleshive.com/reviews",
+          "pageTitle": "Reviews: what SalesHive clients say",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…ices & MSPs Medical Devices Commercial Real Estate Staffing & RecruitingAll 47+ industries Questions, answeredAbout our reviewsStraight answers about how we collect and present client feedback.Where can I read independent reviews?We maintain a verified review presence on Trustpilot, where clients leave fe…",
+          "url": "https://saleshive.com/reviews",
+          "pageTitle": "Reviews: what SalesHive clients say",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…pricingLive in 2 to 3 weeks · Month-to-month · No setup fees129K+Qualified meetings booked$2.5B+Pipeline generated2,285Clients scaled47+Industries servedLeads are earned, not boughtA lead is an outcome, not a purchaseAnyone can sell you contact names.",
+          "url": "https://saleshive.com/lead-generation",
+          "pageTitle": "B2B Lead Generation Services: Outbound Pipeline, Built for You | SalesHive",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Every call, email, reply, and meeting tracked in real time Attribution on every lead: the touch that earned it Two-way CRM sync, or run your whole motion on ours Weekly strategist reviews tune targeting from live resultsTour the platform How it worksFrom kickoff to a",
+          "url": "https://saleshive.com/lead-generation",
+          "pageTitle": "B2B Lead Generation Services: Outbound Pipeline, Built for You | SalesHive",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "The difference is how fast you get to qualified leads and how much infrastructure you carry.Comparing your options?B2B sales agency Sales development agency Sales outsourcing SDR outsourcing Cold calling scripts Your industry Questions, answeredWhat teams ask about lead generation servicesThe short version is on the",
+          "url": "https://saleshive.com/lead-generation",
+          "pageTitle": "B2B Lead Generation Services: Outbound Pipeline, Built for You | SalesHive",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://saleshive.com/pricing",
+        "https://saleshive.com/contact",
+        "https://saleshive.com/reviews"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "One fee.The wholeoutbound engine.",
+        "Start a conversation, not a contract.",
+        "Lead generation that ends in held meetings.",
+        "Click around the real SalesHive platform"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Get your quote",
+        "ask us directly",
+        "Book a strategy call",
+        "Send it to a strategist",
+        "Tour the live platform demo",
+        "Tour the platform",
+        "Contact supportTell us what you are trying to do and where you got stuck."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://saleshive.com/contact · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Book a strategy call",
+        "Book a strategy call",
+        "Book a strategy call",
+        "Book a strategy call",
+        "Book a strategy call"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Llamada de 30 min → cotización y definición de ICP → presentación de SDR/estratega, playbook y aprobación de mensajes antes de facturar → outbound con datos/dialer/email/CRM → reunión"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Economic case [observed] → Strategy call [observed] → Agreement before charge [observed] → Week-one intake [observed] → Build and approval [observed] → Launch and optimization [observed]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://saleshive.com/pricing",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://saleshive.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://saleshive.com/reviews",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://saleshive.com/lead-generation",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://saleshive.com/help",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://saleshive.com/about",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://saleshive.com/demo",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://saleshive.com/appointment-setting",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://saleshive.com/privacy",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=saleshive.com",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR13525248672513654785?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/4883359305544020754",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR18244704422649135105?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11251468904814157539",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR12812976243947339777?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/17848014794145341105",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR10205260668060303361?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13058430488137425556",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR11442758806098935809?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/12230650041055700791",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR07138098215588462593?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/5857172428227309910",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR02689587969060241409?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/15019421006030753093",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR02684204760130650113?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/5406811972051844231",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR13970871114524524545?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR05759732571944517633?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR13206012343336566785?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Tour the live platform demo”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "One fee. The whole outbound engine.",
+      "promise": "Replace the cost and complexity of an internal outbound team with a complete managed engine.",
+      "positioning": "The service is sold as a complete system with people, process and platform rather than isolated appointments.",
+      "audience": "B2B teams seeking outsourced outbound capacity · Teams comparing agency cost with an internal SDR function",
+      "voice": [
+        "Operational",
+        "Financial",
+        "Transparent",
+        "Enterprise-capable"
+      ],
+      "patterns": [
+        "High in-house SDR cost",
+        "Slow ramp-up",
+        "Fragmented outbound tools"
+      ]
+    },
+    "cta": {
+      "primary": "Book a strategy call",
+      "secondary": [],
+      "forms": [
+        {
+          "url": "https://saleshive.com/pricing",
+          "purpose": "Custom 30-minute strategy call",
+          "fields": [
+            "Date and time visible before deeper booking steps"
+          ],
+          "fieldCount": 1,
+          "friction": "No time was selected, so later questions were not observed.",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Economic case",
+        "status": "observed",
+        "detail": "Pricing content compares the managed engine with building an internal team."
+      },
+      {
+        "stage": "Strategy call",
+        "status": "observed",
+        "detail": "Visitor enters a custom 30-minute booking flow."
+      },
+      {
+        "stage": "Agreement before charge",
+        "status": "observed",
+        "detail": "The public process says the people, plan and copy are approved before invoice and launch."
+      },
+      {
+        "stage": "Week-one intake",
+        "status": "observed",
+        "detail": "A Playmaker gathers ICP, offer, personas, objections, proof and domain requirements."
+      },
+      {
+        "stage": "Build and approval",
+        "status": "observed",
+        "detail": "Lists, copy and scripts are prepared in week two for client approval."
+      },
+      {
+        "stage": "Launch and optimization",
+        "status": "observed",
+        "detail": "Launch occurs around weeks two to three, with first meetings expected around weeks three to four and continuing tests."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "Exact prices were not public on the reviewed page",
+        "Starter, Growth and Crush tiers",
+        "100+, 250+ or 500+ daily touches depending on tier"
+      ],
+      "contract": [
+        "No setup fee",
+        "Month-to-month",
+        "Written termination notice",
+        "Outreach and billing end at the end of the next billing month"
+      ],
+      "guarantee": [
+        "Risk is reduced through approval before invoice and launch; no public result guarantee was observed."
+      ]
+    },
+    "proof": [
+      "129,000 meetings claimed",
+      "USD 2.5 billion pipeline claimed",
+      "2,285 clients claimed",
+      "All figures were self-reported"
+    ],
+    "objections": [
+      "Setup risk",
+      "Long contracts",
+      "Paying before seeing the team and plan",
+      "Cost versus an internal SDR team",
+      "Time to first meetings"
+    ],
+    "technology": [
+      "Next.js",
+      "Custom booking experience",
+      "Proprietary SalesHive platform",
+      "OpenAI infrastructure claimed"
+    ],
+    "contradictions": [
+      "qualification — The notice and billing timing should appear beside the cancellation claim. — Month-to-month and cancel-anytime language reduces perceived lock-in. — Written notice applies and activity ends at the end of the next billing month.",
+      "terms-scope — The signed agreement remains the controlling source. — The public process is specific about onboarding. — General website terms do not guarantee outcomes and a client agreement may supersede them."
+    ],
+    "inferences": [
+      "The approval-before-invoice sequence is designed to remove fear of agency bait-and-switch. — confidence: high — basis: The process repeatedly foregrounds approval of people, plan and wording before launch.",
+      "The custom booking interface is also a live demand signal. — confidence: medium — basis: The modal displayed a recent strategy-call booking count."
+    ],
+    "notObservable": [
+      "Questions after selecting a booking time",
+      "Custom quote",
+      "Signed client agreement",
+      "Exact meeting or pipeline SLA",
+      "Private reporting interface"
+    ],
+    "limitations": [
+      "No calendar slot was selected.",
+      "Headline performance totals were not independently audited.",
+      "No client agreement or private proposal was available."
+    ],
+    "lessons": {
+      "copy": [
+        "Show the exact implementation timeline",
+        "Name the owner of each onboarding step",
+        "Make the approval and billing trigger explicit",
+        "Frame the offer against the full cost of an internal alternative"
+      ],
+      "adapt": [],
+      "avoid": [
+        "Using cancel-anytime language without adjacent notice detail",
+        "Leaving package prices entirely opaque if qualification permits a range"
+      ],
+      "test": [
+        "Approval-before-payment onboarding",
+        "A visible launch timeline with expected first-result window"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://saleshive.com/pricing",
+        "label": "pricing / headline / offer",
+        "status": "observado"
+      },
+      {
+        "url": "https://saleshive.com/process",
+        "label": "process",
+        "status": "observado"
+      },
+      {
+        "url": "https://saleshive.com/terms-conditions",
+        "label": "terms",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

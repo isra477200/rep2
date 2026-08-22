@@ -1,0 +1,563 @@
+{
+  "id": "salesarte",
+  "name": "SalesArte",
+  "reviewedAt": "2026-08-22T15:50:17.336Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Soluciones de ventas adaptadas a la necesidad del cliente.",
+    "heroObserved": true,
+    "priorSummary": "Equipo comercial externalizado para SaaS y tecnología: ICP, leads cualificados, demos, gestión del proceso, CRM incluido y reporting.",
+    "voice": "Revisión manual: consultivo, energético, orientado a crecimiento, relacional, simple, pragmático, orientado a eficiencia, tecnológico, medible. qualified customer meetings A to Z free CRM meeting-based pricing monthly meeting guarantee Enfatiza personalización según necesidad en vez de un paquete único. Usa ahorro, velocidad de arranque, demos y conversión como anclas. Presenta CRM y reporting como parte de la entrega, no como extra. La llamada principal invita a planificar una demo.",
+    "supportingHeadings": [
+      "İhtiyacınıza Uygun Çözümler",
+      "Hizmetlerimiz:",
+      "Neden SalesArte ile Çalışmalısınız?",
+      "Hangi Hizmet Size Uygun?",
+      "Bizimle İletişime Geçin",
+      "Sıkça Sorulan Sorular",
+      "B2B Satış Danışmanlığı ileNitelikli Müşteri Görüşmeleri Planlayın",
+      "Neden SalesArte?",
+      "Hizmet Paketlerimiz",
+      "Referanslarımız",
+      "SalesArte Nasıl Çalışır?",
+      "İhtiyaç Analizi",
+      "Strateji Geliştirme",
+      "Uygulama",
+      "Optimizasyon",
+      "Rekabette Öne Çıkmanızı Sağlayan 6 Avantaj",
+      "Hedef Odaklı Yaklaşım",
+      "Hızlı Kurulum",
+      "Uzman Ekip",
+      "Maliyet Optimizasyonu",
+      "Ölçülebilir Büyüme",
+      "Kanıtlanmış Başarı",
+      "SalesArte'nin sunduğu hizmetler nelerdir?",
+      "SalesArte nasıl müşteri adayları buluyor?",
+      "Fiyatlandırma modeli nasıl çalışır?",
+      "Ücretsiz CRM sistemi neler sunuyor?",
+      "Demo görüşmeleri nasıl yönetilir?",
+      "Satışlarınızı Artırmaya Hazır mısınız?",
+      "Satışı Sanata Dönüştürüyoruz",
+      "Biz Kimiz?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "Mesajı Gönder"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://salesarte.com/iletisim",
+        "index": 1,
+        "action": "https://salesarte.com/iletisim",
+        "method": "GET",
+        "submitText": "Mesajı Gönder",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Ad Soyad *",
+            "placeholder": "Adınız Soyadınız",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-posta Adresi *",
+            "placeholder": "ornek@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Şirket Adı *",
+            "placeholder": "Şirket Adınız",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Telefon Numarası",
+            "placeholder": "+90 5XX XXX XX XX",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "serviceType",
+            "label": "Hangi Hizmetten Yararlanmak İstiyorsunuz? *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Mesajınız *",
+            "placeholder": "İhtiyaçlarınızı ve hedeflerinizi bize anlatın...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Equipo comercial externalizado para SaaS y tecnología: ICP, leads cualificados, demos, gestión del proceso, CRM incluido y reporting.",
+    "audience": "SaaS, tecnología, software B2B y proveedores de soluciones corporativas.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://salesarte.com/servisler",
+        "https://salesarte.com/iletisim",
+        "https://salesarte.com/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "İhtiyacınıza Uygun Çözümler",
+        "Bizimle İletişime Geçin",
+        "B2B Satış Danışmanlığı ileNitelikli Müşteri Görüşmeleri Planlayın",
+        "Satışı Sanata Dönüştürüyoruz"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Mesajı Gönder"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://salesarte.com/iletisim · 6 campos",
+        "https://www.salesarte.com/iletisim · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → demo/consultoría gratuita → análisis de público y necesidad → propuesta → generación y calificación de leads → reuniones/demo con decisores → gestión A-Z en CRM incluido"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación [observado] → cualificación [inferido] → propuesta y cierre [observado] → entrega [observado] → retención [observado] → Atracción y educación [observado] → Conversión [observado] → Diagnóstico [observado] → Propuesta [inferido] → Compromiso [observado] → Operación [observado] → Gestión [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://salesarte.com/servisler",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://salesarte.com/iletisim",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://salesarte.com/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://salesarte.com/hakkimizda",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://salesarte.com/maliyet-hesaplama",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.salesarte.com/iletisim",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=salesarte.com",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=SalesArte&search_type=keyword_unordered",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Soluciones de ventas adaptadas a la necesidad del cliente.",
+      "promise": "Generar reuniones cualificadas y gestionar de extremo a extremo un equipo de ventas externalizado para compañías B2B, tecnológicas y SaaS.",
+      "positioning": "Núcleo: ventas B2B externalizadas, generación de leads y reuniones demo",
+      "audience": "Empresas B2B de tecnología, SaaS y comercio electrónico que buscan evitar el coste y la demora de construir un equipo interno.",
+      "voice": [
+        "consultivo",
+        "energético",
+        "orientado a crecimiento",
+        "relacional",
+        "simple",
+        "pragmático",
+        "orientado a eficiencia",
+        "tecnológico",
+        "medible"
+      ],
+      "patterns": [
+        "qualified customer meetings",
+        "A to Z",
+        "free CRM",
+        "meeting-based pricing",
+        "monthly meeting guarantee",
+        "Enfatiza personalización según necesidad en vez de un paquete único.",
+        "Usa ahorro, velocidad de arranque, demos y conversión como anclas.",
+        "Presenta CRM y reporting como parte de la entrega, no como extra.",
+        "La llamada principal invita a planificar una demo."
+      ]
+    },
+    "cta": {
+      "primary": "Planificar una demo",
+      "secondary": [
+        "calcular coste",
+        "contactar",
+        "ver paquetes",
+        "consulta gratuita de 30 minutos — provider: Google Calendar",
+        "calculadora de coste interno"
+      ],
+      "forms": [
+        {
+          "url": "https://salesarte.com/iletisim",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "empresa",
+            "teléfono opcional",
+            "servicio",
+            "mensaje"
+          ],
+          "fieldCount": 6,
+          "friction": "media",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Home y servicios explican la externalización de reuniones B2B. — stage: descubrimiento — evidenceUrls: https://salesarte.com/ · https://salesarte.com/servisler"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Tres paquetes, calculadora, CRM gratuito, métricas y proceso de cuatro etapas. — stage: consideración — evidenceUrls: https://salesarte.com/servisler · https://salesarte.com/maliyet-hesaplama"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario, agenda Google y demo gratuita. — stage: captación — evidenceUrls: https://salesarte.com/iletisim"
+      },
+      {
+        "stage": "cualificación",
+        "status": "inferido",
+        "detail": "Servicio, empresa y consulta permiten filtro básico; no se pide ICP, ticket, mercado, volumen o capacidad. — stage: cualificación — evidenceUrls: https://salesarte.com/iletisim"
+      },
+      {
+        "stage": "propuesta y cierre",
+        "status": "observado",
+        "detail": "Consulta de treinta minutos, paquete y contrato mínimo de seis meses; importe privado. — stage: propuesta y cierre — evidenceUrls: https://salesarte.com/servisler · https://salesarte.com/iletisim"
+      },
+      {
+        "stage": "entrega",
+        "status": "observado",
+        "detail": "Análisis de necesidad, estrategia, implementación y optimización; reuniones, CRM y coaching. — stage: entrega — evidenceUrls: https://salesarte.com/servisler"
+      },
+      {
+        "stage": "retención",
+        "status": "observado",
+        "detail": "Mínimo de seis meses, garantía mensual y optimización recurrente. — stage: retención — evidenceUrls: https://salesarte.com/servisler"
+      },
+      {
+        "stage": "Atracción y educación",
+        "status": "observado",
+        "detail": "Servicios y calculadora comparan externalización frente al coste de un equipo propio."
+      },
+      {
+        "stage": "Conversión",
+        "status": "observado",
+        "detail": "Demo, formulario o consulta gratuita de 30 minutos."
+      },
+      {
+        "stage": "Diagnóstico",
+        "status": "observado",
+        "detail": "Primera reunión y análisis de necesidad gratuitos."
+      },
+      {
+        "stage": "Propuesta",
+        "status": "inferido",
+        "detail": "Diseño de solución y equipo adaptados al objetivo; el precio no se publica."
+      },
+      {
+        "stage": "Compromiso",
+        "status": "observado",
+        "detail": "Contrato mínimo publicado de seis meses."
+      },
+      {
+        "stage": "Operación",
+        "status": "observado",
+        "detail": "Definición de objetivo, datos, contacto comercial y generación de reuniones demo."
+      },
+      {
+        "stage": "Gestión",
+        "status": "observado",
+        "detail": "Registro en CRM, reporting de rendimiento y optimización continua."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "Se declara precio por reunión y tres paquetes —Sales Connector, Sales Momentum y Sales Engine—, pero no se publican importes.",
+        "tarifa de SalesArte — no publicada",
+        "ahorro promocionado — hasta 60% frente a equipo interno — note: Afirmación propia; la calculadora no incluye de forma visible la cuota de SalesArte."
+      ],
+      "contract": [
+        "Compromiso mínimo de seis meses.",
+        "duración mínima — 6 meses",
+        "inicio operativo — se promociona arranque en una semana"
+      ],
+      "guarantee": [
+        "Se promete un número mensual de reuniones, sin publicar cantidad, definición, no-show, reposición o remedio.",
+        "garantía cuantificada — no publicada"
+      ]
+    },
+    "proof": [
+      "claims: más de cincuenta clientes felices · más de quinientas demos · incremento de conversión declarado del 85% · primeras reuniones dentro de una semana — quality: baja — caveat: Cifras autopublicadas; los contadores renderizados en servidor muestran simultáneamente cero, sin metodología o auditoría."
+    ],
+    "objections": [
+      "objection: Quiero pagar por reuniones, no por actividad. — answer: Pricing presentado como basado en reuniones.",
+      "objection: No tengo CRM. — answer: CRM gratuito incluido.",
+      "objection: Necesito empezar rápido. — answer: Se anuncian primeras reuniones en una semana.",
+      "objection: No quiero compromiso largo. — answer: El requisito público es mínimo de seis meses; no se ofrece respuesta de menor compromiso.",
+      "objection: ¿Cuántas reuniones garantiza y qué cuenta? — answer: No se publica cantidad, validez o remedio."
+    ],
+    "technology": [
+      "Google Tag Manager — basis: etiqueta pública",
+      "Google Analytics — basis: etiqueta pública",
+      "Google Calendar appointment schedule — basis: enlace de reserva",
+      "CRM gratuito — basis: entregable declarado; marca no observable",
+      "método GET del formulario — basis: HTML público; no se envió para comprobar comportamiento final",
+      "Next.js",
+      "Google Analytics 4",
+      "Google Calendar",
+      "CRM profesional incluido"
+    ],
+    "contradictions": [
+      "Los contadores públicos renderizan 0+, 0+ y 0% mientras otra zona de la misma página declara 50+, 500+ y 85%. — severity: crítica",
+      "Los tres paquetes muestran esencialmente los mismos bullets, por lo que su diferenciación no es legible. — severity: alta",
+      "La garantía mensual carece de cantidad y definición pública de reunión válida. — severity: alta",
+      "La flexibilidad de paquetes convive con un mínimo fijo de seis meses. — severity: media",
+      "El formulario declara método GET en el HTML, una anomalía potencial para datos de contacto; no se confirmó mediante envío. — severity: media",
+      "La calculadora estima coste interno con salarios y estructura, pero no muestra la tarifa de SalesArte; por tanto no permite comprobar por sí sola el ahorro de hasta 60%.",
+      "Las cifras de 700+ demos, 20% de aumento de conversión, 95% de clientes felices y 2.500+ datos de comercio electrónico no publican periodo, muestra ni metodología.",
+      "No hay términos públicos que definan volumen mínimo de reuniones, calidad, reemplazo o reembolso."
+    ],
+    "inferences": [
+      "Propuesta: Diseño de solución y equipo adaptados al objetivo; el precio no se publica."
+    ],
+    "notObservable": [
+      "Canales y cadencias exactos utilizados en cada servicio.",
+      "Precio de SalesArte y costes externos.",
+      "Definición contractual de reunión cualificada.",
+      "Remedio si no se alcanzan objetivos y condiciones de cancelación.",
+      "proveedor del CRM entregado",
+      "herramientas de prospección",
+      "telefonía",
+      "automatización de email",
+      "sistema de reporting interno",
+      "La página promete respuesta dentro de 24 horas, pero no se verificaron confirmación, email, agenda ni cumplimiento del SLA."
+    ],
+    "limitations": [
+      "No se envió el formulario ni se reservó consulta.",
+      "No se accedió a contrato, CRM o definición privada de garantía.",
+      "No se verificaron las cifras con fuente independiente.",
+      "No se dispuso de navegador interactivo; no se probó la calculadora como usuario ni el calendario.",
+      "No se enviaron formularios ni se reservó una consulta.",
+      "Las cifras de actividad y ahorro son declaraciones comerciales, no resultados auditados.",
+      "No se accedió a propuesta, contrato, CRM ni reporting de un cliente real."
+    ],
+    "lessons": {
+      "copy": [
+        "CRM incluido",
+        "pago por reunión",
+        "inicio rápido",
+        "proceso en cuatro fases",
+        "consulta breve",
+        "Usar el coste de oportunidad de contratar, formar y dirigir un equipo interno como contraste.",
+        "Nombrar con claridad el entregable: reuniones demo cualificadas, CRM y reporting."
+      ],
+      "adapt": [
+        "diferenciar paquetes por volumen y SLA",
+        "publicar importes o rangos",
+        "mostrar contador estático verificado",
+        "pedir economía básica antes de agenda",
+        "Tres paquetes realmente escalonados por reuniones asistidas, cobertura de canales, SLA y profundidad de coaching, con comparador lateral.",
+        "La sencillez reunión + CRM + coaching es atractiva, pero las inconsistencias visuales y paquetes indistinguibles hacen imposible evaluar valor.",
+        "Crear calculadora comparativa que incluya de forma transparente el precio propio y todos los supuestos.",
+        "Ofrecer una primera sesión gratuita con agenda clara y promesa de respuesta verificable."
+      ],
+      "avoid": [
+        "tres paquetes idénticos",
+        "garantía sin cantidad",
+        "contadores rotos",
+        "método GET para contacto",
+        "Publicar porcentajes de ahorro o conversión sin periodo, muestra y fórmula.",
+        "Ocultar simultáneamente precio, garantía y definición de reunión cualificada."
+      ],
+      "test": [
+        "Test: calculadora de coste total frente a caso práctico descargable.",
+        "Test: CTA de demo frente a diagnóstico gratuito con resultado concreto."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://salesarte.com/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesarte.com/servisler",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesarte.com/iletisim",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesarte.com/maliyet-hesaplama",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesarte.com/hakkimizda",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "partial"
+}

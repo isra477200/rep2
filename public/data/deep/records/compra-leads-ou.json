@@ -1,0 +1,602 @@
+{
+  "id": "compra-leads-ou",
+  "name": "Compra Leads OÜ",
+  "reviewedAt": "2026-08-22T15:50:18.109Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Leads Cualificados a CPL: Solo pagas por leads generados",
+    "heroObserved": true,
+    "priorSummary": "\"Leads Cualificados a CPL: Solo pagas por leads generados\" · \"Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads. Sin cuotas fijas ni permanencia\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 100 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1227 palabras por página comercial recuperada. Muestras breves: “Leads Cualificados a CPL: Solo pagas por leads generados” · “Comprar Leads: Clientes Potenciales de Calidad al Instante” · “AVISO LEGAL”.",
+    "supportingHeadings": [
+      "Leads Cualificados a CPL: Solo pagas por leads generados",
+      "Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads.Sin cuotas fijas ni permanencia.",
+      "¡Garantía Total! Si los leads entregados no cumplen los criterios de información y validación expresamente acordados para tu proyecto... ¡No los Pagas!",
+      "Tu Sistema de Captación con Inteligencia Artificial",
+      "Estrategias de Generación de Leads de Alta Calidad",
+      "¿Por qué confiar en Compra Leads para escalar?",
+      "Empresas que escalan su captación con nosotros:",
+      "¿Preparado para escalar tu facturación?",
+      "La infraestructura en generación de leads que tu negocio necesita",
+      "Sectores con Resultados Validados",
+      "Solicita tu Proyección Estratégica de Leads",
+      "Sincronización Automatizada con tu CRM",
+      "Colaboramos con empresas financieras registradas en:",
+      "Comprar Leads: Clientes Potenciales de Calidad al Instante",
+      "El Poder de Comprar Leads en tu Éxito Empresarial",
+      "Comprar Leads en tu Sector: Amplia Variedad para Impulsar tu Negocio",
+      "Leads Hipotecas:",
+      "Leads Préstamos:",
+      "Leads Energía Fotovoltaica:",
+      "Leads Seguros:",
+      "Leads Personalizados:",
+      "Compra Leads Según Tus Necesidades",
+      "Comprar Leads: 5 Razones para Elegirnos como tu Proveedor",
+      "AVISO LEGAL",
+      "IDENTIFICACIÓN DEL TITULAR",
+      "ACEPTACIÓN DE LAS CONDICIONES",
+      "OBJETO",
+      "DEFINICIÓN DEL SITIO WEB",
+      "CONDICIONES PARTICULARES",
+      "ACCESO AL SITIO WEB"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Get A Quote",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://compraleads.com/",
+      "text": "Get A Quote",
+      "href": "https://compraleads.com/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 162.25
+    },
+    "ctas": [
+      "Get A Quote",
+      "WhatsApp",
+      "Subscribirme",
+      "Enviar mensaje",
+      "Enviar Mensaje"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://compraleads.com/",
+        "index": 1,
+        "action": "https://compraleads.com/",
+        "method": "POST",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name-1",
+            "label": "Nombre completo *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone-1",
+            "label": "Número de teléfono *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "text-1",
+            "label": "Empresa *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email-1",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "text-2",
+            "label": "Página Web *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "text-3",
+            "label": "Mensaje *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://compraleads.com/",
+        "index": 3,
+        "action": "https://compraleads.com/",
+        "method": "POST",
+        "submitText": "Subscribirme",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "Email *",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://compraleads.com/leads-seguros/",
+        "index": 1,
+        "action": "https://compraleads.com/leads-seguros/",
+        "method": "POST",
+        "submitText": "Enviar Mensaje",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][0][first]",
+            "label": "Nombre *",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][0][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellido",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][7]",
+            "label": "Número de Contacto *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][8]",
+            "label": "Nombre Empresa *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][14]",
+            "label": "Página Web *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][1]",
+            "label": "Email *",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][13]",
+            "label": "Mensaje *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wpforms[fields][12][]",
+            "label": "He leido y estoy de acuerdo con las políticas de privacidad y",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 8 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Empresa *, Página Web *, Nombre Empresa *.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 8,
+      "qualification": [
+        "Empresa *",
+        "Página Web *",
+        "Nombre Empresa *"
+      ]
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Leads Cualificados a CPL: Solo pagas por leads generados\" · \"Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads. Sin cuotas fijas ni permanencia\".",
+    "audience": "Verticales de alto valor por lead: hipotecas, préstamos, seguros (vida, salud, decesos), reformas, energía solar y formación digital. Clientes tipo: intermediación financiera, aseguradoras e inmobiliarias.",
+    "prices": [],
+    "guarantee": [
+      "¿Qué ocurre si los leads no cumplen con la información acordada?Nuestra garantía es absoluta: si los contactos no incluyen la información requerida y pactada previamente, el servicio no tiene coste para ti.",
+      "Estas condiciones particulares podrán regular, entre otras cuestiones: precios; volumen contratado; segmentación; criterios de validación; criterios de reposición; información mínima requerida; integraciones; plazos de entrega; zonas geográficas; exclusividad; garantías.",
+      "…be Ads con tecnología de vanguardia para ofrecerte leads cualificados con un coste de adquisición controlado y rentable.Garantía por Contrato: Si no entregamos prospectos que cumplan estrictamente con los filtros de información acordados para tu empresa, NO PAGAS POR NUESTRO SERVICIO.",
+      "Garantía y reposición Los criterios de validación, garantía y reposición serán exclusivamente aquellos establecidos por escrito en: la propuesta comercial; el contrato; el presupuesto; la orden de compra; o cualquier otro documento aceptado por ambas partes con carácter previo al inicio de la campaña."
+    ],
+    "proof": [
+      "…os infraestructuras de conversión 100% personalizadas y optimizadas con Inteligencia Artificial para filtrar solo a los clientes que tu empresa necesita.Apoyamos a tu equipo comercial inyectando un flujo constante de oportunidades de alta calidad de manera efectiva y rápida.Nuestro sistema se basa en 3 pila…",
+      "Más información Flujo de clientes cualificados para préstamos personales y soluciones de deuda.",
+      "Descubre Cómo Expande tu Negocio A través de lead generation (generación de leads), ayudamos a empresas de intermediación financiera entre muchas otras a obtener clientes potenciales altamente cualificados y relevantes.",
+      "Escuchamos los requisitos de nuestros clientes para seleccionar la solución más adecuada.",
+      "Clientes que Confían en Nosotros: ¿Tienes un proyecto en mente?Podemos ayudarte a hacer realidad el crecimiento de tu negocio en energía fotovoltaica .",
+      "Más información ¡Obtén más clientes para tu negocio de energía fotovoltaica!"
+    ],
+    "objections": [
+      "Ir al contenido Compra Leads Leads Hipotecas Leads Préstamos Leads Seguros Leads Formación Leads Reformas Leads Energía Solar Contacto Blog Leads Cualificados a CPL: Solo pagas por leads generados Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads.Sin cuotas",
+      "Solicitar mi Proyección de Leads ¿Por qué confiar en Compra Leads para escalar?",
+      "¿Por qué elegir un modelo de CPL en lugar de gestionar mis propias campañas?El modelo de CPL (Coste por Lead) te ofrece previsibilidad total."
+    ],
+    "urgency": [
+      "Límite económico de responsabilidad Salvo dolo o culpa grave, la responsabilidad máxima asumida por Compra Leads quedará limitada, en todo caso, al importe efectivamente abonado por el cliente correspondiente a los leads objeto de la reclamación.",
+      "Know-how El cliente reconoce que las metodologías, procesos de captación, configuraciones publicitarias, sistemas de optimización, embudos, automatizaciones, estructuras de campañas y demás procedimientos desarrollados por Compra Leads constituyen información confidencial y know-how propio de la empresa.",
+      "Hablemos hoy mismo sobre cómo alcanzar tus objetivos de negocio de forma predecible y rentable."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "¡Garantía Total!",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…be Ads con tecnología de vanguardia para ofrecerte leads cualificados con un coste de adquisición controlado y rentable.Garantía por Contrato: Si no entregamos prospectos que cumplan estrictamente con los filtros de información acordados para tu empresa, NO PAGAS POR NUESTRO SERVICIO.",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "¿Qué ocurre si los leads no cumplen con la información acordada?Nuestra garantía es absoluta: si los contactos no incluyen la información requerida y pactada previamente, el servicio no tiene coste para ti.",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Estas condiciones particulares podrán regular, entre otras cuestiones: precios; volumen contratado; segmentación; criterios de validación; criterios de reposición; información mínima requerida; integraciones; plazos de entrega; zonas geográficas; exclusividad; garantías.",
+          "url": "https://compraleads.com/terminos-condiciones/",
+          "pageTitle": "Términos y Condiciones - Compra Leads",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía y reposición Los criterios de validación, garantía y reposición serán exclusivamente aquellos establecidos por escrito en: la propuesta comercial; el contrato; el presupuesto; la orden de compra; o cualquier otro documento aceptado por ambas partes con carácter previo al inicio de la campaña.",
+          "url": "https://compraleads.com/terminos-condiciones/",
+          "pageTitle": "Términos y Condiciones - Compra Leads",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "La entrega del lead conforme a las condiciones particulares del proyecto supondrá el cumplimiento de la obligación principal asumida por Compra Leads, sin perjuicio de las garantías de reposición expresamente pactadas.",
+          "url": "https://compraleads.com/terminos-condiciones/",
+          "pageTitle": "Términos y Condiciones - Compra Leads",
+          "pageCategory": "conversion",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [
+        {
+          "text": "En consecuencia, la implementación de cualquiera de dichas optimizaciones no supondrá reconocimiento alguno de incumplimiento contractual, defecto del servicio, responsabilidad, garantía adicional ni aceptación de que las configuraciones anteriores fueran incorrectas o insuficientes.",
+          "url": "https://compraleads.com/terminos-condiciones/",
+          "pageTitle": "Términos y Condiciones - Compra Leads",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "technical_warranty"
+        }
+      ],
+      "proof": [
+        {
+          "text": "Ir al contenido Compra Leads Leads Hipotecas Leads Préstamos Leads Seguros Leads Formación Leads Reformas Leads Energía Solar Contacto Blog Leads Cualificados a CPL: Solo pagas por leads generados Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads.Sin cuotas",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…os infraestructuras de conversión 100% personalizadas y optimizadas con Inteligencia Artificial para filtrar solo a los clientes que tu empresa necesita.Apoyamos a tu equipo comercial inyectando un flujo constante de oportunidades de alta calidad de manera efectiva y rápida.Nuestro sistema se basa en 3 pila…",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Más información Flujo de clientes cualificados para préstamos personales y soluciones de deuda.",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Descubre Cómo Expande tu Negocio A través de lead generation (generación de leads), ayudamos a empresas de intermediación financiera entre muchas otras a obtener clientes potenciales altamente cualificados y relevantes.",
+          "url": "https://compraleads.com/lead-generation/",
+          "pageTitle": "Lead Generation",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Escuchamos los requisitos de nuestros clientes para seleccionar la solución más adecuada.",
+          "url": "https://compraleads.com/lead-generation/",
+          "pageTitle": "Lead Generation",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Clientes que Confían en Nosotros: ¿Tienes un proyecto en mente?Podemos ayudarte a hacer realidad el crecimiento de tu negocio en energía fotovoltaica .",
+          "url": "https://compraleads.com/lead-generation/",
+          "pageTitle": "Lead Generation",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Nombre completo *Número de teléfono *Empresa *Correo electrónico *Página Web *Mensaje * Enviar mensaje Misión & Visión Subscríbete a Nuestra Newsletter Email *Subscribirme Colaboramos con empresas registradas en: Conoce Nuestros Sectores ¡Obtén más clientes interesados en reformar su vivienda!",
+          "url": "https://compraleads.com/lead-generation/",
+          "pageTitle": "Lead Generation",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Más información ¡Obtén más clientes para tu negocio de energía fotovoltaica!",
+          "url": "https://compraleads.com/lead-generation/",
+          "pageTitle": "Lead Generation",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Ir al contenido Compra Leads Leads Hipotecas Leads Préstamos Leads Seguros Leads Formación Leads Reformas Leads Energía Solar Contacto Blog Leads Cualificados a CPL: Solo pagas por leads generados Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads.Sin cuotas",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Solicitar mi Proyección de Leads ¿Por qué confiar en Compra Leads para escalar?",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué elegir un modelo de CPL en lugar de gestionar mis propias campañas?El modelo de CPL (Coste por Lead) te ofrece previsibilidad total.",
+          "url": "https://compraleads.com/",
+          "pageTitle": "Comprar Leads Exclusivos | Modelo CPL | Compra Leads",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Meta Ads",
+        "TikTok Ads",
+        "WhatsApp",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://compraleads.com/",
+        "https://compraleads.com/comprar-leads/",
+        "https://compraleads.com/terminos-condiciones/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Leads Cualificados a CPL: Solo pagas por leads generados",
+        "Comprar Leads: Clientes Potenciales de Calidad al Instante",
+        "AVISO LEGAL",
+        "Lead Generation para Empresas Financieras"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Enviar mensaje",
+        "WhatsApp",
+        "Subscribirme",
+        "Get A Quote",
+        "Enviar Mensaje"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://compraleads.com/ · 6 campos",
+        "https://compraleads.com/ · 6 campos",
+        "https://compraleads.com/ · 1 campos",
+        "https://compraleads.com/comprar-leads/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Meta formulario instantáneo o web → diagnóstico/proyección 15–20 min → propuesta CPL → integración CRM/API → entrega de leads"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://compraleads.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://compraleads.com/comprar-leads/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://compraleads.com/terminos-condiciones/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://compraleads.com/lead-generation/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://compraleads.com/leads-hipotecas/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://compraleads.com/leads-seguros/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://compraleads.com/vender-cursos-online/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=ES",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=115998998233824",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://fb.me/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ES&id=1567766664997071",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?id=1364780621717779",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "http://compraleads.com/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=1567766664997071",
+      "label": "Fuente pública 14"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Get A Quote”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

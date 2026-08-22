@@ -1,0 +1,585 @@
+{
+  "id": "sales-robots",
+  "name": "Sales Robots",
+  "reviewedAt": "2026-08-22T15:50:17.655Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Automatiza la adquisición B2B y permite avanzar desde una herramienta económica hasta un flujo de leads totalmente externalizado.",
+    "heroObserved": true,
+    "priorSummary": "Escalera desde automatización email/LinkedIn hasta externalización integral B2B.",
+    "voice": "Revisión manual: tecnológico, directo, orientado a volumen, didáctico, seguro. Organiza la oferta como una escalera de autonomía. Habla de una corriente de leads desde la primera semana. Usa garantía y flexibilidad contractual para reducir riesgo.",
+    "supportingHeadings": [
+      "Cennik",
+      "B2B to nasza specjalność, a firmom z tego sektora pomagamy na 3 sposoby:",
+      "Skontaktuj się z nami",
+      "Marketing internetowy i lead generation",
+      "Polecamy przeczytać!",
+      "Sales playbook: jak zbudować playbook dla handlowców (szablon + przykłady)",
+      "Czym jest sales playbook i co powinien zmienić w zespole",
+      "Struktura playbooka (sekcje)",
+      "Szablon playbooka do skopiowania",
+      "Przykład: 1 play \"demo request\" (Zgłoszenie na stronie)",
+      "Jak wdrożyć playbook (onboarding i rytm pracy)",
+      "Jak aktualizować playbook (ciągłe doskonalenie)",
+      "Sekcja błędów: czego unikać przy pracy z playbookiem",
+      "FAQ",
+      "Powiązane artykuły",
+      "Najczęściej zadawane pytania",
+      "Tu znajdziesz odpowiedzi na najczęściej zadawane pytania przez naszych użytkowników"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Kontakt",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://salesrobots.pl/pl/cennik",
+      "text": "Kontakt",
+      "href": "https://salesrobots.pl/pl/kontakt",
+      "element": "a",
+      "kind": "conversion",
+      "score": 63.25
+    },
+    "ctas": [
+      "Wyślij",
+      "Kontakt"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://salesrobots.pl/pl/cennik",
+        "index": 4,
+        "action": "https://salesrobots.pl/pl/cennik",
+        "method": "GET",
+        "submitText": "Wyślij",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Nazwa Twojej firmy lub adres WWW *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Imię *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Nazwisko *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Numer telefonu *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Adres e-mail *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Treść wiadomości * (pozostało 2048 znaków)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Zapoznałem/łam się z polityką prywatności i akceptuję jej treść. *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Wyrażam zgodę na kontakt w celu otrzymywania informacji handlowej. *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://salesrobots.pl/pl/cennik",
+        "index": 5,
+        "action": "https://salesrobots.pl/pl/cennik",
+        "method": "GET",
+        "submitText": "Zapisz się",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Imię *",
+            "placeholder": "Twoje imię",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Adres e-mail *",
+            "placeholder": "jan@kowalski.pl",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Zapoznałem/łam się z polityką prywatności i akceptuję jej treść. *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Chcę otrzymywać informacje o nowych artykułach, nowościach i zmianach. *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 8 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 8,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Escalera desde automatización email/LinkedIn hasta externalización integral B2B.",
+    "audience": "B2B y B2C premium; generación global en polaco e inglés.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "Porównanie FAQ vs HowTo vs Article, praktyczne przykłady JSON-LD, testowanie w Rich Results Test i monitorowanie efektów w Google Search Console."
+    ],
+    "urgency": [
+      "* Chcę otrzymywać informacje o nowych artykułach, nowościach i zmianach.",
+      "Dobrze przygotowany dokument drastycznie skraca czas wdrożenia nowego pracownika, dając mu do ręki najlepsze rynkowe standardy od pierwszego dnia.",
+      "Drastycznie skraca i porządkuje onboarding, zmniejszając czas potrzebny nowemu pracownikowi na dowiezienie pierwszych wyników.3 Usuwa konieczność mikrozarządzania, dając pracownikom pewność siebie i ograniczając niepotrzebne konsultacje z dyrektorem.",
+      "Zapewnia błyskawiczną obsługę obiekcji cenowych i rynkowych, dając do ręki gotowe argumenty zamiast improwizacji.",
+      "Zmierz realistycznie, ile miesięcy trwa u Was wdrożenie nowej osoby do momentu samodzielnego zamknięcia pierwszego kontraktu.",
+      "Zorganizuj spotkanie, na którym wytłumaczysz liderom, że procedury to nie forma kontroli, ale narzędzie do zarabiania większych pieniędzy."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Porównanie FAQ vs HowTo vs Article, praktyczne przykłady JSON-LD, testowanie w Rich Results Test i monitorowanie efektów w Google Search Console.",
+          "url": "https://salesrobots.pl/pl/marketing-internetowy-lead-generation?p=3",
+          "pageTitle": "Marketing internetowy i lead generation - Sales Robots",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://salesrobots.pl/pl/cennik",
+        "https://salesrobots.pl/pl/marketing-internetowy-lead-generation",
+        "https://salesrobots.pl/pl/artykul/sales-playbook-jak-zbudowac-playbook-dla-handlowcow"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Cennik",
+        "Marketing internetowy i lead generation",
+        "Sales playbook: jak zbudować playbook dla handlowców (szablon + przykłady)"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Kontakt",
+        "Wyślij"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://salesrobots.pl/pl/cennik · 8 campos",
+        "https://salesrobots.pl/pl/cennik · 4 campos",
+        "https://salesrobots.pl/pl/marketing-internetowy-lead-generation · 4 campos",
+        "https://salesrobots.pl/pl/artykul/sales-playbook-jak-zbudowac-playbook-dla-handlowcow · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contenido/curso o pricing → elegir automatización/sistema/outsourcing → contacto → onboarding → LinkedIn/email/chat/CRM → lead nurturing → entrega de leads → ventas cliente."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Educación [observado] → Diagnóstico [observado] → Diseño [observado] → Prueba [observado] → Producción [observado] → Handoff [observado] → Optimización [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://salesrobots.pl/pl/cennik",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://salesrobots.pl/pl/marketing-internetowy-lead-generation",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://salesrobots.pl/pl/artykul/sales-playbook-jak-zbudowac-playbook-dla-handlowcow",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://salesrobots.pl/pl/faq",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://salesrobots.pl/pl/marketing-internetowy-lead-generation?p=2",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://salesrobots.pl/pl/marketing-internetowy-lead-generation?p=3",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://salesrobots.pl/pl/marketing-internetowy-lead-generation?p=4",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=salesrobots.pl",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Sales%20Robots%20Poland&search_type=keyword_unordered",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://salesrobots.pl/pl/outsourcing-leadow",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://salesrobots.pl/pl/kontakt",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Kontakt”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Automatiza la adquisición B2B y permite avanzar desde una herramienta económica hasta un flujo de leads totalmente externalizado.",
+      "promise": "Definir el lead con el cliente, probar audiencia y mensaje, escalar LinkedIn y email, y entregar interesados en tiempo real.",
+      "positioning": "Plataforma de automatización comercial, servicio gestionado multicanal y outsourcing de leads",
+      "audience": "Empresas B2B y B2C premium que buscan decisores o perfiles de alto poder adquisitivo.",
+      "voice": [
+        "tecnológico",
+        "directo",
+        "orientado a volumen",
+        "didáctico",
+        "seguro"
+      ],
+      "patterns": [
+        "Organiza la oferta como una escalera de autonomía.",
+        "Habla de una corriente de leads desde la primera semana.",
+        "Usa garantía y flexibilidad contractual para reducir riesgo."
+      ]
+    },
+    "cta": {
+      "primary": "Contactar / solicitar consulta",
+      "secondary": [
+        "Curso gratuito de leads B2B",
+        "Newsletter"
+      ],
+      "forms": [
+        {
+          "url": "https://salesrobots.pl/pl/cennik",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "empresa/web",
+            "nombre",
+            "apellido",
+            "teléfono",
+            "email",
+            "mensaje",
+            "consentimiento de privacidad",
+            "consentimiento de marketing"
+          ],
+          "fieldCount": 8,
+          "friction": "media",
+          "submitted": false
+        },
+        {
+          "url": "https://salesrobots.pl/pl",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "consentimiento principal",
+            "consentimiento opcional"
+          ],
+          "fieldCount": 4,
+          "friction": "baja para contenido",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Educación",
+        "status": "observado",
+        "detail": "Contenido, curso y páginas de precio segmentan por nivel de servicio."
+      },
+      {
+        "stage": "Diagnóstico",
+        "status": "observado",
+        "detail": "Se analiza producto, cliente ideal, competencia, proceso y definición contractual del lead."
+      },
+      {
+        "stage": "Diseño",
+        "status": "observado",
+        "detail": "Se construyen buyer persona, contenido, targeting y lista."
+      },
+      {
+        "stage": "Prueba",
+        "status": "observado",
+        "detail": "Se lanza una muestra para validar mensaje y audiencia antes de escalar."
+      },
+      {
+        "stage": "Producción",
+        "status": "observado",
+        "detail": "LinkedIn y email generan interesados; el servicio puede incluir especialista, automatización y CRM."
+      },
+      {
+        "stage": "Handoff",
+        "status": "observado",
+        "detail": "Los contactos se entregan en tiempo real por email o CRM."
+      },
+      {
+        "stage": "Optimización",
+        "status": "inferido",
+        "detail": "Se ajustan campaña y volumen según aceptación del cliente."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "Email marketing automation — 999 PLN netos al mes",
+        "Sales Robots System — 5.999 PLN netos al mes",
+        "Lead outsourcing — 9.999 PLN netos al mes",
+        "volumen anunciado — 50–1.000 leads al mes según proyecto; no equivale a volumen incluido publicado"
+      ],
+      "contract": [
+        "software y sistema — contrato indefinido flexible",
+        "baja — un mes de preaviso"
+      ],
+      "guarantee": [
+        "outsourcing — declara garantizar el número mensual acordado desde el primer mes; no publica cantidad, remedio, reemplazo o devolución"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Cloudflare",
+      "Nuxt",
+      "Google Tag Manager",
+      "HubSpot",
+      "LinkedIn Sales Navigator",
+      "ClickMeeting, EmailLabs/SMTP, HubSpot, LiveSpace y FreshSales"
+    ],
+    "contradictions": [
+      "Los 9.999 PLN aparecen como paquete mensual y a la vez como liquidación por lead con garantía; no se publica la fórmula entre base, unidad y volumen.",
+      "La garantía carece públicamente de cantidad, definición de aceptación y remedio.",
+      "La primera corriente de leads en una semana es un plazo comercial, no un benchmark de volumen o cualificación.",
+      "Un artículo oficial antiguo conserva paquetes de 9.999 y 11.999 PLN con condiciones diferentes; parece histórico y no debe mezclarse con la tarifa vigente."
+    ],
+    "inferences": [
+      "Optimización: Se ajustan campaña y volumen según aceptación del cliente."
+    ],
+    "notObservable": [
+      "número garantizado dentro de 9.999 PLN",
+      "remedio por incumplimiento",
+      "criterios de lead aceptado",
+      "reemplazos y duplicados",
+      "tasas por canal y sector",
+      "base de datos exacta",
+      "motor de automatización",
+      "sistema de scoring",
+      "atribución de venta",
+      "La FAQ declara contacto del asesor el siguiente día, pero no se verificaron respuesta, cualificación o calendario."
+    ],
+    "limitations": [
+      "No se solicitó consulta ni acceso al sistema.",
+      "No se observó contrato, propuesta o definición de lead de un cliente real.",
+      "No se verificaron volúmenes, entregas o conversiones.",
+      "Las integraciones de delivery son declaradas; no todas se detectaron cargadas en el sitio."
+    ],
+    "lessons": {
+      "copy": [
+        "Permitir al cliente reconocerse en software, asistido o totalmente gestionado.",
+        "Definir el lead con el cliente antes de activar volumen."
+      ],
+      "adapt": [
+        "Cohorte de prueba antes del escalado.",
+        "Entrega en tiempo real al sistema del cliente.",
+        "Mostrar una unidad económica comparable en los tres niveles."
+      ],
+      "avoid": [
+        "Llamar garantía a una promesa sin volumen y remedio.",
+        "Mantener contenido antiguo con precios sin etiqueta histórica.",
+        "Mezclar cuota fija y precio por lead sin fórmula."
+      ],
+      "test": [
+        "Test de escalera herramienta–asistido–gestionado.",
+        "Test de precio por lead aceptado frente a retainer con mínimo garantizado."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://salesrobots.pl/pl",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesrobots.pl/pl/cennik",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesrobots.pl/pl/outsourcing-leadow",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesrobots.pl/pl/faq",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://salesrobots.pl/pl/kontakt",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "partial"
+}

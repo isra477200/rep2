@@ -1,0 +1,676 @@
+{
+  "id": "builderscrack",
+  "name": "Builderscrack",
+  "reviewedAt": "2026-08-22T15:50:18.201Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Promete al propietario acceso a profesionales verificados y al profesional control sobre qué oportunidades perseguir.",
+    "heroObserved": true,
+    "priorSummary": "El propietario publica gratis un trabajo y recibe contactos de tradies verificados; el profesional elige qué invitaciones perseguir y consume tokens cuando el cliente acepta conectar.",
+    "voice": "Revisión manual: local, claro, orientado a confianza, pragmático, comunitario. Separa publicación, match y conexión. Explica el doble consentimiento como protección frente a leads indiscriminados. Usa volumen de trabajos y reseñas como prueba social autodeclarada.",
+    "supportingHeadings": [
+      "Find a verified plumber",
+      "How it works for Homeowners",
+      "Trusted",
+      "973,031",
+      "Experienced",
+      "16,165",
+      "Genuine",
+      "352,455",
+      "Effective",
+      "4.8 / 5.0",
+      "Popular trades near you",
+      "The smartest way to find your next trade professional",
+      "“Builderscrack helped us get in touch with",
+      "Recent reviews",
+      "Get connected with a verified trade professional",
+      "Projects",
+      "Let's get that job done",
+      "Where to start to make your home warmer this winter",
+      "Where to start with an older home",
+      "Start with draught sealing",
+      "Need a tradie?",
+      "Get the insulation right, ceiling before underfloor",
+      "Choose the right heating",
+      "Where double glazing fits",
+      "The small things that also add up",
+      "Need to hire a healthy home specialist?",
+      "Why Blair does this work",
+      "Tradies who can help",
+      "A big thank you",
+      "Let’s get your paint job done."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Help & Support",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://builderscrack.co.nz/",
+      "text": "Help & Support",
+      "href": "https://builderscrack.co.nz/contact?subject=general",
+      "element": "a",
+      "kind": "conversion",
+      "score": 161.5
+    },
+    "ctas": [
+      "Start search",
+      "Sign up",
+      "Help & Support"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://builderscrack.co.nz/post-job/step-1",
+        "index": 1,
+        "action": "https://builderscrack.co.nz/post-job/step-1",
+        "method": "POST",
+        "submitText": "Next",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": "Leave this blank!",
+            "placeholder": "Leave this blank!",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "trade_id",
+            "label": null,
+            "placeholder": "What do you need help with?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://builderscrack.co.nz/trades/handymen",
+        "index": 2,
+        "action": "https://builderscrack.co.nz/post-job/quick",
+        "method": "POST",
+        "submitText": "Next",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": "Leave this blank!",
+            "placeholder": "Leave this blank!",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "desc",
+            "label": null,
+            "placeholder": "Start by typing what you need done here",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 2 y 2 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 2,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "El propietario publica gratis un trabajo y recibe contactos de tradies verificados; el profesional elige qué invitaciones perseguir y consume tokens cuando el cliente acepta conectar.",
+    "audience": "Propietarios con reparaciones y reformas; constructores y oficios de Nueva Zelanda.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Review date: 22-08-2026 Exterior Door Installation Exterior Window & Door Installation Victoria, Rotorua 5.0 I have no question about recommending Roman to do work for you.",
+      "Review date: 22-08-2026 Broken sliders on curtain track Curtain Repair Lincoln, Selwyn 5.0 High quality work amd great communication.",
+      "Review date: 22-08-2026 Install undersink vented tap kit, water filter AND Bosch dishwasher Water Treatment & Filters Tuakau, Franklin 5.0 Show up on time.",
+      "Review date: 22-08-2026 Pool deck Decking & Pergolas Taradale, Napier 5.0 Aiden was easy to work with, and we would totally recommend him.",
+      "Review date: 21-08-2026 Patching laminate flooring in kitchen Laminate & Floating Flooring Northcote, North Shore 5.0 Great comms and did the work as quoted.",
+      "Review date: 19-04-2026 Downpipe unblocking - urgent PVC Spouting and Downpipes Bethlehem, Tauranga 5.0 Fantastic service from Melvin."
+    ],
+    "objections": [
+      "Get started HOMEOWNERS Post a job How it works Job cost estimator Trade directory Homeowner FAQ FOR TRADIES Get work Plans & prices How it works Trades FAQ INSPIRATION Project Home Project Advice Project Stories ABOUT About us Help & Support Code of conduct Media Partner wit…"
+    ],
+    "urgency": [
+      "Unfortunately the job I had for him today turned out to be a real shiocker of a door installation, but Roman did not give up.",
+      "Knows his work really recommend this company will deff be using for future jobs..",
+      "Get started today Get connected with a verified trade professional Trade professionals are required to submit their NZBN, identification, and proof of address upon joining Builderscrack.",
+      "Get started now Love details?",
+      "See all projects As seen on Get started now!",
+      "Post your job for free, now!"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Review date: 22-08-2026 Exterior Door Installation Exterior Window & Door Installation Victoria, Rotorua 5.0 I have no question about recommending Roman to do work for you.",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Review date: 22-08-2026 Broken sliders on curtain track Curtain Repair Lincoln, Selwyn 5.0 High quality work amd great communication.",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Review date: 22-08-2026 Install undersink vented tap kit, water filter AND Bosch dishwasher Water Treatment & Filters Tuakau, Franklin 5.0 Show up on time.",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Review date: 22-08-2026 Pool deck Decking & Pergolas Taradale, Napier 5.0 Aiden was easy to work with, and we would totally recommend him.",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Review date: 21-08-2026 Patching laminate flooring in kitchen Laminate & Floating Flooring Northcote, North Shore 5.0 Great comms and did the work as quoted.",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Review date: 21-08-2026 Bledisloe Rd Metal Fencing & Gates Maraenui, Napier 5.0 Great work and would use him again Review date: 21-08-2026 Hot water cylynder leaking warm water constant overflo and knocking from cylynde Plumbing Repair Weymouth, Manukau 5.0 Highly recommend fast easy and really",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Review date: 19-04-2026 Downpipe unblocking - urgent PVC Spouting and Downpipes Bethlehem, Tauranga 5.0 Fantastic service from Melvin.",
+          "url": "https://builderscrack.co.nz/tradies/5otkqh7g/kitset-assembly-services-papamoa",
+          "pageTitle": "Kitset Assembly Services Papamoa | Builderscrack",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Review date: 08-04-2026 Replace one timber exterior board and paint Timber Fascia Repair Hairini, Tauranga 5.0 Melvin excelled in every way and I would not use anyone else.",
+          "url": "https://builderscrack.co.nz/tradies/5otkqh7g/kitset-assembly-services-papamoa",
+          "pageTitle": "Kitset Assembly Services Papamoa | Builderscrack",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Review date: 23-02-2026 Holes in wall repair Plasterboard Repair Morrinsville, Matamata-Piako 4.0 Great person, professional and very accommodating.",
+          "url": "https://builderscrack.co.nz/tradies/5otkqh7g/kitset-assembly-services-papamoa",
+          "pageTitle": "Kitset Assembly Services Papamoa | Builderscrack",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Review date: 23-02-2026 Disassemble shed, relocate, assemble Kitset Garages Brookfield, Tauranga 5.0 Brilliant service and communication.",
+          "url": "https://builderscrack.co.nz/tradies/5otkqh7g/kitset-assembly-services-papamoa",
+          "pageTitle": "Kitset Assembly Services Papamoa | Builderscrack",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Get started HOMEOWNERS Post a job How it works Job cost estimator Trade directory Homeowner FAQ FOR TRADIES Get work Plans & prices How it works Trades FAQ INSPIRATION Project Home Project Advice Project Stories ABOUT About us Help & Support Code of conduct Media Partner wit…",
+          "url": "https://builderscrack.co.nz/",
+          "pageTitle": "Find Trusted Tradies for Home Repairs & Renovations | Builderscrack",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://builderscrack.co.nz/",
+        "https://builderscrack.co.nz/post-job/step-1",
+        "https://builderscrack.co.nz/blog/project-advice/advice-seasonal-maintenance/where-to-start-to-make-your-home-warmer-this-winter.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Find a verified plumber",
+        "Let's get that job done",
+        "Cost estimators",
+        "Handymen"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Sign up",
+        "Help & Support",
+        "Start search"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://builderscrack.co.nz/post-job/step-1 · 2 campos",
+        "https://builderscrack.co.nz/trades/handymen · 2 campos",
+        "https://builderscrack.co.nz/trades/handymen · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Propietario publica brief/fotos → matching → invitaciones a tradies → tradie persigue lead → propietario acepta conexión → presupuesto/contratación → trabajo → reseña."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Publicación [observado parcialmente] → Matching [observado] → Interés profesional [observado] → Doble conexión [observado] → Cotización [inferido] → Reputación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://builderscrack.co.nz/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://builderscrack.co.nz/post-job/step-1",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://builderscrack.co.nz/blog/project-advice/advice-seasonal-maintenance/where-to-start-to-make-your-home-warmer-this-winter.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://builderscrack.co.nz/estimates",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://builderscrack.co.nz/blog/project-advice/plumbing/planning-a-reno-when-to-bring-in-your-plumber-and-how-to-hire-the-right-one.html",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://builderscrack.co.nz/trades/handymen",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://builderscrack.co.nz/tradies/5otkqh7g/kitset-assembly-services-papamoa",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://builderscrack.co.nz/how-it-works/trade",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://builderscrack.co.nz/good-for-trade",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=233806210426",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://builderscrack.co.nz/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1685911092468931",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1793697825334760",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR14264649669299666945?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR09087891914887266305?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR04754048773947129857?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR16582870387713376257?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR08636856096096518145?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR07779779669779283969?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR13611886314721902593?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR04390717699169189889?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR05409370374255149057/creative/CR13878738680136335361?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1949127122435340",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=4579849468926542",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1782539462937589",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1572610167597202",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1683023312984696",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1608345197472937",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&id=1557577142442462",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Help & Support”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Promete al propietario acceso a profesionales verificados y al profesional control sobre qué oportunidades perseguir.",
+      "promise": "Publicar gratis, recibir hasta tres conexiones y escoger por perfil, referencias y conversación; el profesional paga solo al existir interés mutuo.",
+      "positioning": "Marketplace de trabajos domésticos con conexión de doble consentimiento y reputación verificada",
+      "audience": "Propietarios de Nueva Zelanda y profesionales de construcción, mantenimiento y oficios.",
+      "voice": [
+        "local",
+        "claro",
+        "orientado a confianza",
+        "pragmático",
+        "comunitario"
+      ],
+      "patterns": [
+        "Separa publicación, match y conexión.",
+        "Explica el doble consentimiento como protección frente a leads indiscriminados.",
+        "Usa volumen de trabajos y reseñas como prueba social autodeclarada."
+      ]
+    },
+    "cta": {
+      "primary": "Post a job",
+      "secondary": [
+        "Join as a tradie",
+        "Browse tradies"
+      ],
+      "forms": [
+        {
+          "url": "https://builderscrack.co.nz/post-job/step-1",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "What do you need help with?"
+          ],
+          "fieldCount": 1,
+          "friction": "baja en el primer paso",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Publicación",
+        "status": "observado parcialmente",
+        "detail": "El propietario comienza con la necesidad y completa descripción, zona y fotos en pasos posteriores."
+      },
+      {
+        "stage": "Matching",
+        "status": "observado",
+        "detail": "La plataforma propone oportunidades a profesionales según oficio y zona."
+      },
+      {
+        "stage": "Interés profesional",
+        "status": "observado",
+        "detail": "El profesional revisa el brief y decide perseguir el trabajo."
+      },
+      {
+        "stage": "Doble conexión",
+        "status": "observado",
+        "detail": "El propietario acepta contactar y entonces se descuentan tokens al profesional."
+      },
+      {
+        "stage": "Cotización",
+        "status": "inferido",
+        "detail": "Las partes conversan, inspeccionan y acuerdan precio directamente."
+      },
+      {
+        "stage": "Reputación",
+        "status": "observado",
+        "detail": "Tras el contacto o trabajo se permite reseñar trabajo y comunicación; se distingue el origen de ciertas reseñas."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "propietario — publicación gratuita",
+        "profesional nuevo — leads locales gratuitos durante 30 días",
+        "profesional — suscripción con tokens; cantidades y coste no visibles antes de registro"
+      ],
+      "contract": [
+        "introducción — plan inicial de seis meses al equivalente mensual del plan de doce",
+        "renovación — renueva automáticamente a doce meses si no se cancela antes; puede pausarse contactando soporte"
+      ],
+      "guarantee": [
+        "calidad del trabajo — no se observó garantía universal; el acuerdo es entre propietario y profesional"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Apache",
+      "WordPress",
+      "Meta Pixel",
+      "Zendesk",
+      "plataforma Builderscrack"
+    ],
+    "contradictions": [
+      "Los leads gratuitos durante 30 días introducen un plan de seis meses que después renueva a doce; el compromiso posterior merece máxima prominencia.",
+      "Sin registro no se publica la economía completa de token, asignación por plan y coste por tipo de trabajo.",
+      "Algunas valoraciones pueden corresponder a trabajos realizados fuera de la plataforma o valorar solo comunicación; se etiquetan, pero no equivalen todas a un trabajo contratado y concluido dentro del sistema.",
+      "Los contadores de trabajos, usuarios y reseñas cambian entre páginas o fechas y deben tratarse como métricas dinámicas autodeclaradas."
+    ],
+    "inferences": [
+      "Cotización: Las partes conversan, inspeccionan y acuerdan precio directamente."
+    ],
+    "notObservable": [
+      "precio de planes y tokens antes del registro",
+      "número medio de profesionales notificados",
+      "remedio por datos falsos o no respuesta",
+      "conversión por categoría",
+      "mecanismo exacto de ranking",
+      "CRM",
+      "motor de matching",
+      "scoring antifraude",
+      "atribución de contratación",
+      "No se observó el matching real, notificación, disponibilidad, coste en tokens ni conversación posterior."
+    ],
+    "limitations": [
+      "No se publicó trabajo ni creó perfil profesional.",
+      "No se observaron precio/token, matching o mensajes autenticados.",
+      "No se verificaron trabajos o reseñas individuales.",
+      "Las cifras de volumen son contadores de la propia plataforma."
+    ],
+    "lessons": {
+      "copy": [
+        "Explicar por qué se cobra cuando las dos partes quieren hablar.",
+        "Diferenciar reseña de trabajo, reseña de comunicación e importación externa."
+      ],
+      "adapt": [
+        "Doble consentimiento antes de consumir crédito.",
+        "Vista previa del brief y fotos antes de aceptar la oportunidad.",
+        "Verificación por identidad, empresa, seguro y licencia cuando aplique."
+      ],
+      "avoid": [
+        "Ocultar la economía de créditos hasta el alta.",
+        "Convertir una prueba gratuita en renovación extensa poco visible.",
+        "Mezclar tipos de reseña en una puntuación sin etiqueta."
+      ],
+      "test": [
+        "Test de crédito al recibir lead frente a crédito al conectar mutuamente.",
+        "Test de máximo tres conexiones frente a mercado abierto."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://builderscrack.co.nz/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://builderscrack.co.nz/post-job/step-1",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://builderscrack.co.nz/how-it-works/trade",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://builderscrack.co.nz/good-for-trade",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://builderscrack.co.nz/good-for-trade/leads",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://builderscrack.co.nz/about",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

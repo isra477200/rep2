@@ -1,0 +1,551 @@
+{
+  "id": "roi-performance",
+  "name": "ROI Performance",
+  "reviewedAt": "2026-08-22T15:50:17.791Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Leads qualifiés et exclusifs pour booster votre croissance",
+    "heroObserved": true,
+    "priorSummary": "Leads exclusivos entregados en tiempo real vía red de +5.000 editores premium, pago solo por prospecto generado",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 527 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2243 palabras por página comercial recuperada. Muestras breves: “Leads qualifiés et exclusifs pour booster votre croissance” · “Contactez-nous” · “Leads travaux”.",
+    "supportingHeadings": [
+      "Leads qualifiés et exclusifs pour booster votre croissance",
+      "Agence de génération de leads qualifiés",
+      "Pourquoi faire appel à une agence de génération de leads qualifiés ?",
+      "Des prospects parfaitement alignés",
+      "Maximisez votre ROI",
+      "Les engagements ROI PERFORMANCE notre agence de génération de leads",
+      "Aquisition de leads dans des secteurs BtoC spécialisés",
+      "Notre agence de lead génération prend en charge toutes les étapes de conception de vos campagnes d’acquisition de A à Z .",
+      "Nos leads qualifiés ont le potentiel de convertir jusqu’à 30 %.",
+      "Une méthode d’acquisition prouvée :",
+      "Des leads frais immédiatement disponibles",
+      "Boostez les taux de rendez-vous avec vos prospects",
+      "Plus de prospects intentionnistes = plus de ventes",
+      "Contactez ROI Performance",
+      "Notre agence travaille avec des éditeurs premium",
+      "ROI PERFORMANCE DANS LA PRESSE",
+      "ROI Performance, pour convertir les leads en clients",
+      "Blog sur l'achat de leads",
+      "Contactez-nous",
+      "Leads travaux",
+      "Agence de génération de Leads travaux",
+      "Des Leads travaux immédiatement disponibles",
+      "Des demandes de travaux ciblées et exploitables",
+      "Un éventail complet de leads rénovation énergétique",
+      "Une collecte de données RGPD conforme",
+      "Un taux de conversion optimisé",
+      "Pourquoi choisir ROI Performance pour vos leads travaux ?",
+      "Comment ça fonctionne ?",
+      "Un achat de leads travaux simple et efficace",
+      "Des prospects qualifiés pour tous les acteurs du bâtiment"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "totowin88",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.roi-performance.fr/",
+      "text": "totowin88",
+      "href": "https://hauteandhealthy.com/contact-me/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 162.75
+    },
+    "ctas": [
+      "WhatsApp",
+      "Discuter sur WhatsApp",
+      "Envoyer",
+      "totowin88",
+      "Commencer ➜",
+      "Devis gratuit",
+      "Obtenir mon devis GRATUIT",
+      "Demandez un devis gratuit"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.roi-performance.fr/",
+        "index": 1,
+        "action": "https://www.roi-performance.fr/",
+        "method": "POST",
+        "submitText": "Obtenir mon devis GRATUIT",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[societe]",
+            "label": "Votre société",
+            "placeholder": "Votre société",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[lastname]",
+            "label": "Nom",
+            "placeholder": "Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[firstname]",
+            "label": "Prénom",
+            "placeholder": "Prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[phone]",
+            "label": "Numéro de téléphone (avec indicatif)",
+            "placeholder": "Numéro de téléphone (avec indicatif)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[industry]",
+            "label": "Type de lead",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.roi-performance.fr/contact/",
+        "index": 1,
+        "action": "https://www.roi-performance.fr/contact/",
+        "method": "POST",
+        "submitText": "Demandez un devis gratuit",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[societe]",
+            "label": "Votre Société",
+            "placeholder": "Votre Société*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[lastname]",
+            "label": "Nom",
+            "placeholder": "Nom*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[firstname]",
+            "label": "Prénom",
+            "placeholder": "Prénom*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[phone]",
+            "label": "Numéro de téléphone",
+            "placeholder": "Numéro de téléphone (avec indicatif)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[industry]",
+            "label": "Type de lead",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 6 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Leads exclusivos entregados en tiempo real vía red de +5.000 editores premium, pago solo por prospecto generado",
+    "audience": "Multisector B2B/B2C en Francia: reforma energética (paneles solares, bombas de calor, aislamiento), inmobiliario, seguros, servicios para mayores",
+    "prices": [],
+    "guarantee": [
+      "Fort taux de conversion Agence de génération de leads qualifiésLes garanties ROI Performance pour des leads qui se transforment en clients Leads sont livrés en temps réel pour garantir le meilleur taux de réponse."
+    ],
+    "proof": [
+      "…ernisez votre approche de gestion des prospects grâce à ROI Performance.Une méthode d’acquisition prouvée : + de 90% de clients satisfaitsDes leads frais immédiatement disponibles 1.",
+      "Fort taux de conversion Agence de génération de leads qualifiésLes garanties ROI Performance pour des leads qui se transforment en clients Leads sont livrés en temps réel pour garantir le meilleur taux de réponse.",
+      "Grâce à des campagnes marketing optimisées pour votre activité, ROI Performance identifie, cible sur les meilleurs réseaux du web et engage vos futurs clients.",
+      "Ces leads, caractérisés par une intention d’achat clairement exprimée, présentent un potentiel élevé de transformation en clients actifs et récurrents.",
+      "Convertissez vos leads en clients et boostez votre chiffre d’affaire grâce à nos solutions de marketing à la performance.",
+      "Inscription gratuite ROI PERFORMANCE DANS LA PRESSEVu dans Le FigaroROI Performance, pour convertir les leads en clientsLa forte expertise digitale de ROI Performance lui permet de générer des leads de qualité à fort taux de conversion afin d’accompagner ses clients dans l’atteinte de leurs objectif…"
+    ],
+    "objections": [
+      "Simple, efficace, et taillé pour maximiser votre ROI !Sans engagement !",
+      "Avec notre solution, profitez d’une collaboration sans engagement, vous restez libre à tout moment, sans contraintes.Sans frais de conception de campagne !",
+      "N’hésitez pas à nous contacter dès maintenant : notre équipe vous répondra dans les plus brefs délais pour vous accompagner et répondre à toutes vos questions NOUVEAUTÉ Contactez-nous directement sur WhatsApp."
+    ],
+    "urgency": [
+      "N’hésitez pas à nous contacter dès maintenant : notre équipe vous répondra dans les plus brefs délais pour vous accompagner et répondre à toutes vos questions NOUVEAUTÉ Contactez-nous directement sur WhatsApp.",
+      "Vous constatez le renforcement de la pertinence de vos actions de nurturing et l’accélération significative de votre cycle de vente.Démarrez maintenant votre génération de leads pompes à chaleurContactez ROI Performance pour en savoir plus sur nos services.",
+      "Exclusivité géographique configurable.Livraison et intégration CRMLes leads peuvent être livrés en temps réel sur plusieurs canaux simultanés : e-mail nominatif, SMS optionnel, webhook ou Google Sheet pour intégration CRM (HubSpot, Pipedrive, Zoho, Salesforce, Sellsy, etc.).",
+      "Exclusivité géographique configurable au département ou à la métropole.Livraison et intégration CRMLes leads peuvent être livrés en temps réel sur plusieurs canaux simultanés : e-mail nominatif, SMS optionnel, webhook ou Google Sheet pour intégration CRM (HubSpot, Pipedrive, Zoho, Salesforce, Sellsy, etc., selon votre outil)."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Fort taux de conversion Agence de génération de leads qualifiésLes garanties ROI Performance pour des leads qui se transforment en clients Leads sont livrés en temps réel pour garantir le meilleur taux de réponse.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Fort taux de conversion Agence de génération de leads qualifiésLes garanties ROI Performance pour des leads qui se transforment en clients Leads sont livrés en temps réel pour garantir le meilleur taux de réponse.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Grâce à des campagnes marketing optimisées pour votre activité, ROI Performance identifie, cible sur les meilleurs réseaux du web et engage vos futurs clients.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…ernisez votre approche de gestion des prospects grâce à ROI Performance.Une méthode d’acquisition prouvée : + de 90% de clients satisfaitsDes leads frais immédiatement disponibles 1.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Ces leads, caractérisés par une intention d’achat clairement exprimée, présentent un potentiel élevé de transformation en clients actifs et récurrents.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Convertissez vos leads en clients et boostez votre chiffre d’affaire grâce à nos solutions de marketing à la performance.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Inscription gratuite ROI PERFORMANCE DANS LA PRESSEVu dans Le FigaroROI Performance, pour convertir les leads en clientsLa forte expertise digitale de ROI Performance lui permet de générer des leads de qualité à fort taux de conversion afin d’accompagner ses clients dans l’atteinte de leurs objectif…",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Simple, efficace, et taillé pour maximiser votre ROI !Sans engagement !",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Avec notre solution, profitez d’une collaboration sans engagement, vous restez libre à tout moment, sans contraintes.Sans frais de conception de campagne !",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        },
+        {
+          "text": "N’hésitez pas à nous contacter dès maintenant : notre équipe vous répondra dans les plus brefs délais pour vous accompagner et répondre à toutes vos questions NOUVEAUTÉ Contactez-nous directement sur WhatsApp.",
+          "url": "https://www.roi-performance.fr/",
+          "pageTitle": "Agence de génération de leads B2B | ROI Performance",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Partners / afiliación",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.roi-performance.fr/",
+        "https://www.roi-performance.fr/contact/",
+        "https://www.roi-performance.fr/leads-travaux/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Leads qualifiés et exclusifs pour booster votre croissance",
+        "Contactez-nous",
+        "Leads travaux",
+        "Leads pompe à chaleur (PAC)"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Obtenir mon devis GRATUIT",
+        "Commencer ➜",
+        "Demandez un devis gratuit",
+        "totowin88",
+        "WhatsApp",
+        "Devis gratuit",
+        "Envoyer",
+        "Discuter sur WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.roi-performance.fr/ · 6 campos",
+        "https://www.roi-performance.fr/ · 6 campos",
+        "https://www.roi-performance.fr/ · 6 campos",
+        "https://www.roi-performance.fr/contact/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Presupuesto gratuito → configuración de campaña y segmentación → adquisición nativa mediante red de publishers → entrega exclusiva del lead en tiempo real y cesión al cliente →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.roi-performance.fr/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.roi-performance.fr/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.roi-performance.fr/leads-travaux/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.roi-performance.fr/leads-pompe-chaleur/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.roi-performance.fr/leads-panneaux-solaires/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.roi-performance.fr/leads-isolation-et-ite/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.roi-performance.fr/leads-fenetres/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=roi-performance.fr",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR10801424161927331841?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/17990209003828209611",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR11009093939587186689?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "http://www.roi-performance.fr/%E2%81%A9",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/3030950441502730128/index.html",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR05749695894798729217?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "http://www.roi-performance.fr/leads/mutuelle-senior%E2%81%A9",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/13637064138364605200/index.html",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR05732534717312401409?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16186367527801550506",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR00621797035510595585?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR17616379268776853505?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR04096584689333043201?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR11307223012765335553?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR16396727046270615553/creative/CR05390038391448403969?region=anywhere",
+      "label": "Fuente pública 24"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “totowin88”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

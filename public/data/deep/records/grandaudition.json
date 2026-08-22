@@ -1,0 +1,503 @@
+{
+  "id": "grandaudition",
+  "name": "GrandAudition",
+  "reviewedAt": "2026-08-22T15:50:19.797Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Tu audiólogo de confianza para toda la vida",
+    "heroObserved": true,
+    "priorSummary": "Atención personalizada por audioprotesistas ('Método MOAD'), audiometría gratuita, periodo de prueba de audífonos sin compromiso de compra",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 45 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1247 palabras por página comercial recuperada. Muestras breves: “Tu audiólogo de confianza para toda la vida” · “Tu centro auditivo GrandAudition más cercano” · “Tu salud auditiva empieza aquí”.",
+    "supportingHeadings": [
+      "Tu audiólogo de confianza para toda la vida",
+      "La primera red de centros auditivos con nombres y apellidos",
+      "Así será tu primera visita",
+      "Análisis: Test auditivo",
+      "Diagnóstico",
+      "Prueba gratuita",
+      "Audiólogos para toda la vida",
+      "¿Quieres oír mejor?",
+      "Estamos contigo desde el primer día",
+      "Prueba",
+      "Descubre",
+      "Decide",
+      "Nuestros centros auditivos",
+      "GrandAudition al día",
+      "Presbiacusia: qué es y cómo afecta a la audición con la edad",
+      "Cómo destapar un oído taponado de forma segura",
+      "La pérdida auditiva hereditaria: por qué el diagnóstico precoz es clave",
+      "Trastorno del Procesamiento Auditivo: qué es y cómo detectarlo",
+      "¿Por qué cada vez más jóvenes utilizan audífonos?",
+      "Acúfenos: causas, síntomas y soluciones para los pitidos en el oído",
+      "Tu nueva audición comienza aquí",
+      "Tu centro auditivo GrandAudition más cercano",
+      "Nuestros Centros Auditivos",
+      "Albacete",
+      "Alicante",
+      "Barcelona",
+      "Cádiz",
+      "Castellón",
+      "Córdoba",
+      "Ciudad Real"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "QUIERO MEJORAR MI AUDICIÓN",
+      "QUIERO CITA PARA UNA REVISIÓN GRATUITA"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://grandaudition.es/",
+        "index": 1,
+        "action": "https://grandaudition.es/",
+        "method": "POST",
+        "submitText": "QUIERO CITA PARA UNA REVISIÓN GRATUITA",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": null,
+            "placeholder": "Nombre y Apellidos",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_e14aec4]",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[field_02920f4]",
+            "label": "Selecciona tu centro",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://grandaudition.es/perdida-auditiva-hereditaria-diagnostico-precoz/",
+        "index": 2,
+        "action": "https://grandaudition.es/perdida-auditiva-hereditaria-diagnostico-precoz/",
+        "method": "POST",
+        "submitText": "QUIERO MEJORAR MI AUDICIÓN",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": null,
+            "placeholder": "Nombre y Apellidos",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_e14aec4]",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[field_02920f4]",
+            "label": "Selecciona tu centro",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://grandaudition.es/grandaudition-albacete/",
+        "index": 1,
+        "action": "https://grandaudition.es/grandaudition-albacete/",
+        "method": "POST",
+        "submitText": "QUIERO CITA PARA UNA REVISIÓN GRATUITA",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": null,
+            "placeholder": "Nombre y Apellidos",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_e14aec4]",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 3 y 4 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Atención personalizada por audioprotesistas ('Método MOAD'), audiometría gratuita, periodo de prueba de audífonos sin compromiso de compra",
+    "audience": "Centros auditivos / audioprótesis",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "27 de julio de 2026 Prevención La pérdida auditiva hereditaria: por qué el diagnóstico precoz es clave La pérdida auditiva hereditaria es una de esas condiciones que viajan de generación en generación sin que nadie las nombre.",
+      "26 de junio de 2026 Salud Auditiva ¿Por qué cada vez más jóvenes utilizan audífonos?"
+    ],
+    "urgency": [
+      "Al terminar, recibes una explicación clara de los resultados, con orientación real sobre si necesitas alguna solución ahora o simplemente un seguimiento en el tiempo.",
+      "Y ahora tú notas que, en ambientes ruidosos, sigues las conversaciones con más esfuerzo del que deberías.",
+      "Pide tu cita aquí y da el primer paso hoy.",
+      "La revisión auditiva sirve para entender tu situación actual y valorar si necesitas una solución ahora o más adelante.",
+      "La mayoría de los audífonos se pueden ajustar con un teléfono móvil o Tablet con la comodidad y seguridad de estar en tu casa, evitando desplazamiento innecesarios.Queremos estar cerca de ti, siendo tu audiólogo de confianza para toda la vida.Buscamos la mayor cercanía contigo, incluso"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "27 de julio de 2026 Prevención La pérdida auditiva hereditaria: por qué el diagnóstico precoz es clave La pérdida auditiva hereditaria es una de esas condiciones que viajan de generación en generación sin que nadie las nombre.",
+          "url": "https://grandaudition.es/",
+          "pageTitle": "GrandAudition - Tu audiólogo de confianza para toda la vida",
+          "pageCategory": "other"
+        },
+        {
+          "text": "26 de junio de 2026 Salud Auditiva ¿Por qué cada vez más jóvenes utilizan audífonos?",
+          "url": "https://grandaudition.es/",
+          "pageTitle": "GrandAudition - Tu audiólogo de confianza para toda la vida",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://grandaudition.es/",
+        "https://grandaudition.es/centros-auditivos/",
+        "https://grandaudition.es/soluciones-y-servicios-ga/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Tu audiólogo de confianza para toda la vida",
+        "Tu centro auditivo GrandAudition más cercano",
+        "Tu salud auditiva empieza aquí",
+        "La pérdida auditiva hereditaria: por qué el diagnóstico precoz es clave"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "QUIERO CITA PARA UNA REVISIÓN GRATUITA",
+        "QUIERO MEJORAR MI AUDICIÓN"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://grandaudition.es/ · 4 campos",
+        "https://grandaudition.es/centros-auditivos/ · 4 campos",
+        "https://grandaudition.es/soluciones-y-servicios-ga/ · 4 campos",
+        "https://grandaudition.es/quienes-somos/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada / CTA: No comprobado en detalle | Propuesta pública: Atención personalizada por audioprotesistas ('Método MOAD'), audiometría gratuita, periodo de prueba de audífonos sin compromiso de compra |"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://grandaudition.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://grandaudition.es/centros-auditivos/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://grandaudition.es/soluciones-y-servicios-ga/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://grandaudition.es/quienes-somos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://grandaudition.es/perdida-auditiva-hereditaria-diagnostico-precoz/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://grandaudition.es/trastorno-procesamiento-auditivo-que-es-como-detectarlo/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://grandaudition.es/grandaudition-albacete/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://grandaudition.es/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=grandaudition.es",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR02599779653145067521?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/14029181454264945296",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/5804759436631243329",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11343905593870300278",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR05750316775271038977?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/15798236386309033198",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR03092200333691060225?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1207046986853299364",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16303267088520078350",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/18280667571446027231",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR02181867180486819841?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/582369000635263582",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR13189214623162695681?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/8351460820889721137",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/14218052699950838848",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6561495913617185873",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR08653717416146108417?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/9322774538049840391",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR03571055179644010497?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR08673794103332306945/creative/CR17657501029425479681?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "not_applicable"
+}

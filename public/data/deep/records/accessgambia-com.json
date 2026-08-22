@@ -1,0 +1,211 @@
+{
+  "id": "accessgambia-com",
+  "name": "accessgambia.com",
+  "reviewedAt": "2026-08-22T15:50:18.691Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "Libraries in Gambia",
+    "heroObserved": true,
+    "priorSummary": "Navegación por categorías y enlaces/contactos externos.",
+    "voice": "Tono orientado al lector, cuantitativo, conciso, orientado a la acción. Usa 26 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 177 palabras por página comercial recuperada. Muestras breves: “Gambia Business Directory” · “Bookshops in Gambia | Contact details | Page 1” · “Libraries in Gambia”.",
+    "supportingHeadings": [
+      "Gambia Business Directory"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Bookshops",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.accessgambia.com/extra/library-services.html",
+      "text": "Bookshops",
+      "href": "https://www.accessgambia.com/information/book-shops.html",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.75
+    },
+    "ctas": [
+      "Bookshops",
+      "Book Shops",
+      "Mobile Page"
+    ],
+    "captureType": "Agenda",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Navegación por categorías y enlaces/contactos externos.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.accessgambia.com/business.html",
+        "https://www.accessgambia.com/information/book-shops.html",
+        "https://www.accessgambia.com/extra/library-services.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Gambia Business Directory",
+        "Bookshops in Gambia | Contact details | Page 1",
+        "Libraries in Gambia",
+        "Consultants in Gambia"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Book Shops",
+        "Mobile Page",
+        "Bookshops"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Book Shops",
+        "Mobile Page",
+        "Bookshops",
+        "Bookshops",
+        "Bookshops",
+        "Bookshops"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.accessgambia.com/business.html",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.accessgambia.com/information/book-shops.html",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.accessgambia.com/extra/library-services.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.accessgambia.com/extra/consultants.html",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.accessgambia.com/extra/c-l-m-book-shop.html",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.accessgambia.com/extra/b-nobic-ventures-books.html",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.accessgambia.com/extra/b-ks-bookshop.html",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Bookshops”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

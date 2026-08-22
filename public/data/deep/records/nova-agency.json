@@ -1,0 +1,572 @@
+{
+  "id": "nova-agency",
+  "name": "Nova Agency",
+  "reviewedAt": "2026-08-22T15:50:17.257Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Tu contenido debería estar captando clientes ahora mismo.",
+    "heroObserved": true,
+    "priorSummary": "\"Tu contenido debería estar captando clientes ahora mismo. El sistema de contenido orgánico para negocios que ya facturan\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, apoya la promesa en prueba social. Usa 79 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1077 palabras por página comercial recuperada. Muestras breves: “Tu contenido debería estar captando clientes ahora mismo.” · “Descubre cómo generar clientes con tu contenido”.",
+    "supportingHeadings": [
+      "Tu contenido debería estar captando clientes ahora mismo.",
+      "Nuestros casos de éxito",
+      "+4 años convirtiendo el contenido orgánico en un sistema de captación",
+      "Si publicas contenido y tu facturación no aumenta cada mes, tienes un problema de sistema.",
+      "Estos no son casos aislados. Son el resultado de aplicar mi sistema.",
+      "¿Por qué no trabajo como las otras agencias de contenido?",
+      "Agencias de Contenido",
+      "¿Cómo convierto tu conocimiento en clientes reales?",
+      "Mi forma de trabajar requiere implicación total en cada cliente.",
+      "Descubre cómo generar clientes con tu contenido"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Hablemos por Whatsapp",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.novagency.es/",
+      "text": "Hablemos por Whatsapp",
+      "href": "https://wa.me/34685728124?text=Hola%2C%20he%20visto%20el%20sitio%20web%20de%20nova%2C%20y%20quiero%20obtener%20m%C3%A1s%20informaci%C3%B3n",
+      "element": "a",
+      "kind": "conversion",
+      "score": 139.75
+    },
+    "ctas": [
+      "Hablemos por Whatsapp",
+      "Enviar"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.novagency.es/",
+        "index": 1,
+        "action": "https://www.novagency.es/",
+        "method": "GET",
+        "submitText": "Enviar",
+        "visibleFieldCount": 13,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Nombre",
+            "label": "Nombre",
+            "placeholder": "Tu nombre completo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "Email",
+            "placeholder": "Tu correo electrónico",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "description",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "feedback",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "notes",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "details",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "remarks",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "comments",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.novagency.es/formulario-contenido",
+        "index": 1,
+        "action": "https://www.novagency.es/formulario-contenido",
+        "method": "GET",
+        "submitText": "Enviar",
+        "visibleFieldCount": 20,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Nombre y Apellido",
+            "label": "Nombre y Apellidos:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "Correo electrónico:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "Número de teléfono",
+            "label": "Número de teléfono:",
+            "placeholder": "+34 xxxxxx",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Escribe el @ de tus redes sociales",
+            "label": "Escribe el @ de tus redes sociales",
+            "placeholder": "@..... (Instagram, Tiktok y, si tienes, Youtube)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "¿Cuánto factura tu negocio al mes actualmente?",
+            "label": "¿Cuánto factura tu negocio al mes actualmente?SeleccionarMenos de 10.000€/mesEntre 10.000€ y 25.000€/mesEntre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "¿Qué presupuesto tienes para invertir mensualmente en captación",
+            "label": "¿Qué presupuesto tienes para invertir mensualmente en captación de clientes a través",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "¿A qué se dedica tu negocio?",
+            "label": "¿A qué se dedica tu negocio?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "¿Cuál es tu situación actual con el contenido?",
+            "label": "¿Cuál es tu situación actual con el contenido?SeleccionarNo hago contenido y quiero",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "¿Qué objetivos quieres conseguir gracias al contenido?",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "description",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "feedback",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "notes",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "details",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "remarks",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "comments",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 13 y 20 campos visibles, mínimo 0 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: website, company, ¿Cuánto factura tu negocio al mes actualmente?SeleccionarMenos de 10.000€/mesEntre 10.000€ y 25.000€/mesEntre, ¿Qué presupuesto tienes para invertir mensualmente en captación de clientes a través, ¿Qué objetivos quieres conseguir gracias al contenido?.",
+      "friction": "Alta",
+      "minFields": 13,
+      "maxFields": 20,
+      "qualification": [
+        "website",
+        "company",
+        "¿Cuánto factura tu negocio al mes actualmente?SeleccionarMenos de 10.000€/mesEntre 10.000€ y 25.000€/mesEntre",
+        "¿Qué presupuesto tienes para invertir mensualmente en captación de clientes a través",
+        "¿Qué objetivos quieres conseguir gracias al contenido?"
+      ]
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Tu contenido debería estar captando clientes ahora mismo. El sistema de contenido orgánico para negocios que ya facturan\".",
+    "audience": "\"El sistema de contenido orgánico para negocios que ya facturan\" (literal). Marcas personales y negocios de servicios con facturación previa. El formulario fija el suelo: la primera opción es menos de 10.000€/mes de facturación y el presupuesto mínimo contemplado es menos de 1.500€/mes.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Quiero más clientesHablemos por WhatsappNuestros casos de éxitoNuestros casos de éxito<<Gracias a 20 videos en redes, facturamos 30.000€ que transformaron por completo la forma en que conseguimos clientes.",
+      "ServiciosCasos de ÉxitoVentajasProcesoSistemaTrabajemos JuntosEl sistema de contenido orgánico para negocios que ya facturan.Tu contenido debería estar captando clientes ahora mismo.",
+      "Quiero más clientesHablemos por WhatsappEl sistema de contenido orgánico para negocios que ya facturan.Tu contenido debería estar captando clientes ahora mismo.",
+      "Captación de clientes, no de seguidores.",
+      "Basada en datos reales.Basada en datos reales.Solicitar AuditoríaSolicitar AuditoríaSi publicas contenido y tu facturación no aumenta cada mes, tienes un problema de sistema.Dependes del boca a bocaTodos tus clientes vienen por referidos.",
+      "No tienes ningún canal predecible de captaciónDependes del boca a bocaTodos tus clientes vienen por referidos."
+    ],
+    "objections": [],
+    "urgency": [
+      "Ahora mi contenido no solo crece, sino que atrae oportunidades de negocio.Christian AbelairaMarca personal desde 0En menos de un mes pasamos de 0 a más de 100.000 seguidores, superando los 21 millones de visualizaciones.",
+      "Hoy triplicamos las visualizaciones, duplicamos los seguidores y tenemos más consultas gracias al contenido.Con Novagency encontré la forma de hacerlo bien: en 4 meses pasé de publicar sin estrategia a recibir más consultas directamente desde mis redes.",
+      "ServiciosCasos de ÉxitoVentajasProcesoSistemaTrabajemos JuntosEl sistema de contenido orgánico para negocios que ya facturan.Tu contenido debería estar captando clientes ahora mismo.",
+      "Quiero más clientesHablemos por WhatsappEl sistema de contenido orgánico para negocios que ya facturan.Tu contenido debería estar captando clientes ahora mismo.",
+      "Ahora mi contenido no solo crece, sino que atrae oportunidades de negocio.Lotería Las ArenasCEO de la empresaNuestro negocio funcionaba bien, pero no estábamos aprovechando redes sociales como canal de ventas.",
+      "Hoy triplicamos las visualizaciones, duplicamos los seguidores y tenemos más consultas gracias al contenido."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Quiero más clientesHablemos por WhatsappNuestros casos de éxitoNuestros casos de éxito<<Gracias a 20 videos en redes, facturamos 30.000€ que transformaron por completo la forma en que conseguimos clientes.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Una decisión que no dudaríamos en repetirGracias a 20 videos en redes, facturamos 30.000€ que transformaron por completo la forma en que conseguimos clientes.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "ServiciosCasos de ÉxitoVentajasProcesoSistemaTrabajemos JuntosEl sistema de contenido orgánico para negocios que ya facturan.Tu contenido debería estar captando clientes ahora mismo.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Quiero más clientesHablemos por WhatsappEl sistema de contenido orgánico para negocios que ya facturan.Tu contenido debería estar captando clientes ahora mismo.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Quiero más clientesHablemos por WhatsappNuestros casos de éxitoNuestros casos de éxito<<Gracias a 20 videos en redes, facturamos 30.000€ que transformaron por completo la forma en que conseguimos clientes.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Captación de clientes, no de seguidores.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Basada en datos reales.Basada en datos reales.Solicitar AuditoríaSolicitar AuditoríaSi publicas contenido y tu facturación no aumenta cada mes, tienes un problema de sistema.Dependes del boca a bocaTodos tus clientes vienen por referidos.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No tienes ningún canal predecible de captaciónDependes del boca a bocaTodos tus clientes vienen por referidos.",
+          "url": "https://www.novagency.es/",
+          "pageTitle": "Nova Agency - Agencia de Creación de Contenido para Captar Leads",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "WhatsApp",
+        "Meta Ads",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.novagency.es/",
+        "https://www.novagency.es/formulario-contenido"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Tu contenido debería estar captando clientes ahora mismo.",
+        "Descubre cómo generar clientes con tu contenido"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Hablemos por Whatsapp",
+        "Enviar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.novagency.es/ · 13 campos",
+        "https://www.novagency.es/ · 13 campos",
+        "https://www.novagency.es/ · 13 campos",
+        "https://www.novagency.es/formulario-contenido · 20 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contenido/landing → Solicitar auditoría o Quiero más clientes → formulario de cualificación → conversación por WhatsApp/venta → onboarding → investigación → producción y test → réplica de ganadores."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.novagency.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.novagency.es/formulario-contenido",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 4"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Hablemos por Whatsapp”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 13 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

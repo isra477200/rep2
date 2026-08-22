@@ -1,0 +1,543 @@
+{
+  "id": "tala-com-com",
+  "name": "tala-com.com",
+  "reviewedAt": "2026-08-22T15:50:18.958Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Trouvez l’entreprise idéale pour vos projets",
+    "heroObserved": true,
+    "priorSummary": "Directorio, empleos, licitaciones, promociones, anuncios, alta gratuita y marketing.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 270 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1061 palabras por página comercial recuperada. Muestras breves: “Trouvez l’entreprise idéale pour vos projets” · “Événements” · “Nous contacter”.",
+    "supportingHeadings": [
+      "Trouvez l’entreprise idéale pour vos projets",
+      "Zoom sur nos marques partenaires",
+      "PULLMAN KINSHASA GRAND HOTEL",
+      "MAJESTIC RIVER",
+      "TotalEnergies Marketing RDC SA",
+      "MOMO",
+      "LUBEVO",
+      "SERVE AIR",
+      "DEV MOBILIER",
+      "O POETA",
+      "SFA CONGO",
+      "DEVIMCO",
+      "MK ENERGIES",
+      "TALACOM",
+      "PRODIMPEX",
+      "CASTEL BEER",
+      "Les marques cherchent des talents comme vous",
+      "ACTION CONTRE LA FAIM ONG",
+      "INTERSOS",
+      "ACTED",
+      "HANDICAP INTERNATIONAL",
+      "MBUMU Merveille",
+      "Mukendi emmany",
+      "KIDUSHI MBOMA SÉBASTIEN",
+      "KOMO Joseph",
+      "Bula Matthieu",
+      "Luamba Jules",
+      "Pitshou kimanga",
+      "Événements",
+      "Entreprise à la une"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.tala-com.com/",
+      "text": "Contact",
+      "href": "https://www.tala-com.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Whatsapp",
+      " Whatsapp : (+243) 812 318 573",
+      "Envoyer",
+      "Événements",
+      "Voir tous les évènements"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://www.tala-com.com/agenda/",
+        "index": 1,
+        "action": "https://www.tala-com.com/agenda/",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "motcle",
+            "label": null,
+            "placeholder": "Recherche",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "type_evenement",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "date_debut",
+            "label": null,
+            "placeholder": "Date",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.tala-com.com/agenda/",
+        "index": 3,
+        "action": "https://www.tala-com.com/agenda/",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "post_status",
+            "label": "Statut",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.tala-com.com/contact/",
+        "index": 1,
+        "action": "https://www.tala-com.com/contact/",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nom *",
+            "placeholder": "Nom *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "E-mail *",
+            "placeholder": "E-mail *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Téléphone *",
+            "placeholder": "Téléphone *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": "Sujet *",
+            "placeholder": "Sujet *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Message *",
+            "placeholder": "Message *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-262",
+            "label": "Oui, j'accepte que les données personnelles collectées soient conservées pendant 2 ans",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.tala-com.com/offres-emploi/responsable-achats/",
+        "index": 1,
+        "action": "https://www.tala-com.com/offres-emploi/responsable-achats/",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 12,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "email_contact_field",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "nom",
+            "label": null,
+            "placeholder": "Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "prenom",
+            "label": null,
+            "placeholder": "Prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "date",
+            "name": "naissance",
+            "label": null,
+            "placeholder": "Date de naissance",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "sexe",
+            "label": "Femme",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "courriel",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "disponibilite",
+            "label": null,
+            "placeholder": "Disponibilité",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "lieu-travail",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "adresse",
+            "label": null,
+            "placeholder": "Adresse",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "cv",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "lettre-motivation",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "offre-id",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 1 y 12 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 12,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp",
+      "Agenda online",
+      "Teléfono"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Directorio, empleos, licitaciones, promociones, anuncios, alta gratuita y marketing.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Création de contenu, réseaux sociaux, publicité en ligne et visibilité web : TalaCom accompagne votre entreprise pour toucher les bonnes audiences, attirer de nouveaux clients et transformer votre présence digitale en véritables opportunités en RDC.",
+      "Délégué commercial – Nova Atlas : prospection, contact avec les clients, présentation des produits et suivi des ventes.",
+      "Formation pratique de pompiste – Station Service Emo : accueil des clients, manipulation de la pompe, respect des consignes de sécurité et notions de contrôle des index."
+    ],
+    "objections": [
+      "TALACOM 2025 © TOUS DROITS RÉSERVÉS – By Euroweb Digital A propos Contact FAQ Mentions légales Plan du site Ajouter un nouveau post Remplissez les informations ci-dessous Statut 📝 Brouillon ✅ Publié 🔒 Privé Annuler Sauvegarder ✨ Bienvenue sur notre nouveau site !",
+      "Afterwork Castel Beer, un rendez-vous exclusif qui rassemble cadres professionnels, collègues et amis autour d'échanges enrichissants et d'une ambiance décontractée."
+    ],
+    "urgency": [
+      "Rejoignez-nous dès maintenant et exposez votre marque là où elle compte."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Création de contenu, réseaux sociaux, publicité en ligne et visibilité web : TalaCom accompagne votre entreprise pour toucher les bonnes audiences, attirer de nouveaux clients et transformer votre présence digitale en véritables opportunités en RDC.",
+          "url": "https://www.tala-com.com/",
+          "pageTitle": "Tala-Com | Le hub en ligne des entreprises, services, emploi et opportunités en RDC",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Délégué commercial – Nova Atlas : prospection, contact avec les clients, présentation des produits et suivi des ventes.",
+          "url": "https://www.tala-com.com/",
+          "pageTitle": "Tala-Com | Le hub en ligne des entreprises, services, emploi et opportunités en RDC",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Formation pratique de pompiste – Station Service Emo : accueil des clients, manipulation de la pompe, respect des consignes de sécurité et notions de contrôle des index.",
+          "url": "https://www.tala-com.com/",
+          "pageTitle": "Tala-Com | Le hub en ligne des entreprises, services, emploi et opportunités en RDC",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Afterwork Castel Beer, un rendez-vous exclusif qui rassemble cadres professionnels, collègues et amis autour d'échanges enrichissants et d'une ambiance décontractée.",
+          "url": "https://www.tala-com.com/",
+          "pageTitle": "Tala-Com | Le hub en ligne des entreprises, services, emploi et opportunités en RDC",
+          "pageCategory": "other"
+        },
+        {
+          "text": "TALACOM 2025 © TOUS DROITS RÉSERVÉS – By Euroweb Digital A propos Contact FAQ Mentions légales Plan du site Ajouter un nouveau post Remplissez les informations ci-dessous Statut 📝 Brouillon ✅ Publié 🔒 Privé Annuler Sauvegarder ✨ Bienvenue sur notre nouveau site !",
+          "url": "https://www.tala-com.com/",
+          "pageTitle": "Tala-Com | Le hub en ligne des entreprises, services, emploi et opportunités en RDC",
+          "pageCategory": "other"
+        },
+        {
+          "text": "TALACOM 2025 © TOUS DROITS RÉSERVÉS – By Euroweb Digital A propos Contact FAQ Mentions légales Plan du site Ajouter un nouveau post Remplissez les informations ci-dessous Statut 📝 Brouillon ✅ Publié 🔒 Privé Annuler Sauvegarder ✨ Bienvenue sur notre nouveau site !",
+          "url": "https://www.tala-com.com/faq/",
+          "pageTitle": "FAQ Tala-Com | Questions fréquentes sur l’annuaire, les annonces et les services",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.tala-com.com/",
+        "https://www.tala-com.com/agenda/",
+        "https://www.tala-com.com/appels-offres/termes-de-reference-pour-la-fourniture-des-motos-et-accessoires-pour-le-transport-des-superviseurs-du-projet/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Trouvez l’entreprise idéale pour vos projets",
+        "Événements",
+        "Nous contacter",
+        "Contexte et mission :"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Whatsapp",
+        "Événements",
+        "Voir tous les évènements",
+        "Contact",
+        " Whatsapp : (+243) 812 318 573",
+        "Envoyer"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.tala-com.com/agenda/ · 3 campos",
+        "https://www.tala-com.com/agenda/ · 1 campos",
+        "https://www.tala-com.com/contact/ · 6 campos",
+        "https://www.tala-com.com/offres-emploi/responsable-achats/ · 12 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Agenda online",
+        "Teléfono",
+        "Événements",
+        "Voir tous les évènements",
+        "Événements",
+        "Événements",
+        "Événements"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.tala-com.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.tala-com.com/agenda/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.tala-com.com/appels-offres/termes-de-reference-pour-la-fourniture-des-motos-et-accessoires-pour-le-transport-des-superviseurs-du-projet/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.tala-com.com/faq/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.tala-com.com/contact/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.tala-com.com/offres-emploi/responsable-achats/",
+      "label": "Fuente pública 6"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.tala-com.com/?attachment_id=45713: Bloqueado por robots.txt",
+    "https://www.tala-com.com/tous-les-appels-doffres/?appel_categorie=marche-de-services: Bloqueado por robots.txt",
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "robots.txt impidió 2 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

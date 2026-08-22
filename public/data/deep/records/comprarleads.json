@@ -1,0 +1,852 @@
+{
+  "id": "comprarleads",
+  "name": "ComprarLeads",
+  "reviewedAt": "2026-08-22T15:50:18.648Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Generamos Leads Cualificados para tu Negocio",
+    "heroObserved": true,
+    "priorSummary": "\"Leads de alarmas cualificados para instaladores y empresas de seguridad. Propietarios con intención real de instalar sistema de alarma. Teléfono verificado, entrega inmediata.\"",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 320 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 757 palabras por página comercial recuperada. Muestras breves: “Comprar Leads de Alarmas Cualificados y Verificados” · “Generamos Leads Cualificados para tu Negocio” · “Comprar Leads de Seguros Cualificados y Verificados”.",
+    "supportingHeadings": [
+      "Comprar Leads de Alarmas Cualificados y Verificados",
+      "¿Cansado de Visitas que No Convierten y Clientes sin Presupuesto Real?",
+      "Nuestra Propuesta para Instaladores y Empresas de Seguridad:",
+      "¿Te suena familiar?",
+      "¿Por qué las empresas de seguridad eligen nuestros leads?",
+      "Intención de Compra Verificada",
+      "Tipo de Propiedad Confirmado",
+      "Entrega Inmediata",
+      "Segmentación por Tipo de Alarma",
+      "Exclusividad Geográfica",
+      "Propietario con Decisión de Compra",
+      "Cómo Funciona para Empresas de Alarmas",
+      "Captación Especializada",
+      "Cualificación del Perfil",
+      "Asignación Inteligente",
+      "Ejemplo Lead Alarma para Hogar:",
+      "Ejemplo Lead Alarma para Negocio:",
+      "¿Listo para Dejar de Hacer Visitas en Frío y Recibir Clientes con Intención Real de Instalar?",
+      "Generamos Leads Cualificados para tu Negocio",
+      "¿Cansado de Invertir en Marketing Sin Ver Resultados Reales?",
+      "Nuestra Propuesta es Simple:",
+      "¿Por qué elegir Comprar Leads?",
+      "Leads Cualificados",
+      "Pago por Lead Entregado",
+      "Volumen Escalable",
+      "Segmentación Precisa",
+      "Seguimiento Transparente",
+      "Nuestro Proceso Probado",
+      "Análisis Inicial",
+      "Configuración"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Enviar Solicitud",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://comprarleads.com/",
+      "text": "Enviar Solicitud",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 46
+    },
+    "ctas": [
+      "Enviar Solicitud",
+      "Verificar Disponibilidad en Mi Zona"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://comprarleads.com/alarmas/",
+        "index": 1,
+        "action": "https://formspree.io/f/mzdjvzrq",
+        "method": "POST",
+        "submitText": "Verificar Disponibilidad en Mi Zona",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional *",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa *",
+            "placeholder": "Nombre de tu empresa de seguridad",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zona",
+            "label": "Zona de trabajo",
+            "placeholder": "Madrid, Barcelona, Valencia...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "tipo-alarma",
+            "label": "Tipo de instalación",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "volumen",
+            "label": "Volumen mensual estimado",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos sobre tu situación actual",
+            "placeholder": "¿Cuántas instalaciones cierras al mes? ¿Cuáles son tus principales retos de captación?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://comprarleads.com/",
+        "index": 1,
+        "action": "https://formspree.io/f/mpqayvqq",
+        "method": "POST",
+        "submitText": "Enviar Solicitud",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email empresarial *",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa *",
+            "placeholder": "Nombre de tu empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos sobre tu negocio",
+            "placeholder": "¿Qué tipo de leads necesitas? ¿Cuál es tu sector?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://comprarleads.com/seguros/",
+        "index": 1,
+        "action": "https://formspree.io/f/mwvergvb",
+        "method": "POST",
+        "submitText": "Verificar Disponibilidad en Mi Zona",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional *",
+            "placeholder": "tu@agencia.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Agencia / Correduría *",
+            "placeholder": "Nombre de tu agencia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zona",
+            "label": "Zona de trabajo",
+            "placeholder": "Madrid, Barcelona, Valencia...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "especialidad",
+            "label": "Especialidad en seguros",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos sobre tu situación actual",
+            "placeholder": "¿Cuántos leads necesitas al mes? ¿Cuáles son tus principales retos?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://comprarleads.com/inmobiliarios/",
+        "index": 1,
+        "action": "https://formspree.io/f/xojakgjq",
+        "method": "POST",
+        "submitText": "Verificar Disponibilidad en Mi Zona",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre completo *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional *",
+            "placeholder": "tu@inmobiliaria.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Inmobiliaria / Agencia *",
+            "placeholder": "Nombre de tu inmobiliaria",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zona",
+            "label": "Zona de trabajo",
+            "placeholder": "Madrid, Barcelona, Valencia...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "especialidad",
+            "label": "Especialidad inmobiliaria",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "tipo-propiedad",
+            "label": "Tipo de propiedad preferido",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos sobre tu situación actual",
+            "placeholder": "¿Cuántos leads necesitas al mes? ¿Cuáles son tus principales retos?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://comprarleads.com/b2b/",
+        "index": 1,
+        "action": "https://formspree.io/f/xeejryaj",
+        "method": "POST",
+        "submitText": "Enviar Solicitud",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre Completo *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": "Empresa *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector",
+            "label": "Sector/Industria *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "ticket-medio",
+            "label": "Ticket Medio de Venta",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Cuéntanos sobre tu negocio y qué tipo de empresas buscas",
+            "placeholder": "Ej: Vendemos software CRM a empresas de 20-200 empleados del sector servicios.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://comprarleads.com/segunda-oportunidad/",
+        "index": 1,
+        "action": "https://formspree.io/f/xlgrpqgk",
+        "method": "POST",
+        "submitText": "Enviar Solicitud",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre Completo *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "despacho",
+            "label": "Despacho/Bufete *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "provincia",
+            "label": "Provincia *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "experiencia",
+            "label": "Experiencia en LSO",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Cuéntanos sobre tu despacho y experiencia con casos LSO",
+            "placeholder": "Ej: Despacho especializado en derecho concursal con 5 años de experiencia en",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://comprarleads.com/creditos-revolving/",
+        "index": 1,
+        "action": "https://formspree.io/f/xykgnrkq",
+        "method": "POST",
+        "submitText": "Enviar Solicitud",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre Completo *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "despacho",
+            "label": "Despacho/Bufete *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "phonePrefix",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "provincia",
+            "label": "Provincia *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "experiencia",
+            "label": "Experiencia en Revolving",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "especializacion[]",
+            "label": "Tarjetas Revolving",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Cuéntanos sobre tu despacho y experiencia con reclamaciones bancarias",
+            "placeholder": "Ej: Despacho especializado en derecho bancario con 8 años de experiencia en",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "7 diseño(s) de formulario distinto(s); entre 6 y 9 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa *, Email empresarial *, Sector/Industria *, Cuéntanos sobre tu negocio y qué tipo de empresas buscas.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 9,
+      "qualification": [
+        "Empresa *",
+        "Email empresarial *",
+        "Sector/Industria *",
+        "Cuéntanos sobre tu negocio y qué tipo de empresas buscas"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "\"Leads de alarmas cualificados para instaladores y empresas de seguridad. Propietarios con intención real de instalar sistema de alarma. Teléfono verificado, entrega inmediata.\"",
+    "audience": "Instaladores y empresas de seguridad/alarmas; además cubren seguros, inmobiliario, B2B, placas solares, hipotecas, préstamos, LSO (multi-vertical, no exclusivo de alarmas).",
+    "prices": [],
+    "guarantee": [
+      "Sin contratos largos, sin riesgos."
+    ],
+    "proof": [
+      "Solicitar Servicio Ver Cómo Funciona Solo pagas por leads cualificados Resultados en 30 días “ Cerré una operación inmobiliaria de los primeros 10 leads."
+    ],
+    "objections": [
+      "Solicitar Mi Plaza Ahora * Consulta gratuita • Sin compromiso • Respuesta en 24h ✨ Nuestras Ventajas ¿Por qué elegir Comprar Leads?"
+    ],
+    "urgency": [
+      "Busca cancelar deudas urgentemente.\" Lead generado: Hace 8 minutos • Fuente: Formulario especializado LSO Aplicar Ahora Configuramos tu cuenta y empiezas a recibir leads en 24-48 horas ¿Listo para Conseguir Clientes LSO que Realmente Cumplen los Requisitos?",
+      "Solo trabajamos con 2 agentes por zona — si la tuya está disponible, asegúrala ahora.",
+      "⚡ Plazas Limitadas Solo trabajamos con 5 profesionales por sector y zona geográfica para mantener la calidad del proceso de cualificación.",
+      "Exclusividad Limitada Máximo 5 profesionales por sector y zona geográfica.",
+      "Decisión en próximas 3 semanas.\" Lead generado: Hace 15 minutos • Fuente: Formulario web especializado Aplicar Ahora Configuramos tu cuenta y empiezas a recibir leads en 24-48 horas ¿Listo para Acelerar tus Ventas B2B de Manera Predecible?",
+      "⚡ Plazas Limitadas Solo trabajamos con 2 despachos por provincia para mantener la exclusividad del proceso de cualificación."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Sin contratos largos, sin riesgos.",
+          "url": "https://comprarleads.com/",
+          "pageTitle": "Comprar Leads - Generamos leads cualificados para tu negocio",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Solicitar Servicio Ver Cómo Funciona Solo pagas por leads cualificados Resultados en 30 días “ Cerré una operación inmobiliaria de los primeros 10 leads.",
+          "url": "https://comprarleads.com/",
+          "pageTitle": "Comprar Leads - Generamos leads cualificados para tu negocio",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Solicitar Mi Plaza Ahora * Consulta gratuita • Sin compromiso • Respuesta en 24h ✨ Nuestras Ventajas ¿Por qué elegir Comprar Leads?",
+          "url": "https://comprarleads.com/",
+          "pageTitle": "Comprar Leads - Generamos leads cualificados para tu negocio",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://comprarleads.com/alarmas/",
+        "https://comprarleads.com/",
+        "https://comprarleads.com/seguros/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Comprar Leads de Alarmas Cualificados y Verificados",
+        "Generamos Leads Cualificados para tu Negocio",
+        "Comprar Leads de Seguros Cualificados y Verificados",
+        "Comprar Leads Inmobiliarios Cualificados y Verificados"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Verificar Disponibilidad en Mi Zona",
+        "Enviar Solicitud"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://comprarleads.com/alarmas/ · 9 campos",
+        "https://comprarleads.com/ · 6 campos",
+        "https://comprarleads.com/seguros/ · 8 campos",
+        "https://comprarleads.com/inmobiliarios/ · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El instalador pulsa «Verificar disponibilidad en mi zona» y declara área/volumen → ComprarLeads comprueba capacidad y limita nuevas empresas → sus campañas captan propietarios con intención de instalar"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://comprarleads.com/alarmas/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://comprarleads.com/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://comprarleads.com/seguros/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://comprarleads.com/inmobiliarios/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://comprarleads.com/b2b/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://comprarleads.com/segunda-oportunidad/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://comprarleads.com/creditos-revolving/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=comprarleads.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=ComprarLeads",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://comprarleads.com/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Enviar Solicitud”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

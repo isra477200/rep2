@@ -1,0 +1,448 @@
+{
+  "id": "ventask",
+  "name": "Ventask",
+  "reviewedAt": "2026-08-22T15:50:18.025Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Customer Communication",
+    "heroObserved": true,
+    "priorSummary": "Contact center inbound/outbound, generación de prospectos cualificados y concertación de visitas/reuniones.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 87 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 408 palabras por página comercial recuperada. Muestras breves: “Customer Communication” · “Contacts” · “CUSTOMER SERVICE – SPANISH SPEAKER”.",
+    "supportingHeadings": [
+      "About Ventask",
+      "What we do",
+      "Customer Communication",
+      "Brand Activation",
+      "Point of Sale Management",
+      "Other services",
+      "Team",
+      "Hugo Martins",
+      "Margarida Abreu",
+      "Nuno Margarido",
+      "100",
+      "Credit Intermediary",
+      "Join us",
+      "BRAND PROMOTION/ACTIVATION",
+      "COMMERCIAL MANAGER",
+      "OUTBOUND COMMUNICATOR",
+      "CUSTOMER SERVICE – SPANISH SPEAKER",
+      "CUSTOMER SERVICE – ITALIAN SPEAKER",
+      "SOLAR ACCOUNT – PHOTOVOLTAIC SYSTEM",
+      "Sectors that trust us",
+      "Blog",
+      "Emotional Intelligence: The Definitive Tool for offering empathy in Customer Service",
+      "BPO Outsourcing",
+      "Contact Center agents and stress",
+      "The New Trend: Part-time jobs and the New Generations",
+      "Is working from home the new normal?",
+      "The impact of professional experience abroad",
+      "About Art and Life",
+      "Music opened the way for him to communicate",
+      "Does the work environment define the feeling of Ownership?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Read more",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.ventask.pt/",
+      "text": "Read more",
+      "href": "https://www.ventask.pt/sem-categoria/contact-center-agents-and-stress/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 182.75
+    },
+    "ctas": [
+      "Read more",
+      "Enviar",
+      "To send"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.ventask.pt/contacts/",
+        "index": 1,
+        "action": "https://www.ventask.pt/contacts/",
+        "method": "POST",
+        "submitText": "To send",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nome]",
+            "label": "Name",
+            "placeholder": "Enter your name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Enter your email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[contacto]",
+            "label": "Contact",
+            "placeholder": "Enter your cell phone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "form_fields[cv]",
+            "label": "CV",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[mensagem]",
+            "label": "Message",
+            "placeholder": "Leave us a message",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[rgpd]",
+            "label": "I accept and agree with the Privacy Policy",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.ventask.pt/pt-pt/contactos-contact-center/",
+        "index": 1,
+        "action": "https://www.ventask.pt/pt-pt/contactos-contact-center/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[nome]",
+            "label": "Nome",
+            "placeholder": "Introduza o seu nome",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Introduza o seu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[contacto]",
+            "label": "Contacto",
+            "placeholder": "Introduza o seu telemóvel",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "form_fields[cv]",
+            "label": "CV",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[mensagem]",
+            "label": "Mensagem",
+            "placeholder": "Deixe-nos uma mensagem",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[rgpd]",
+            "label": "Aceito e concordo com a Política de Privacidade",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Contact center inbound/outbound, generación de prospectos cualificados y concertación de visitas/reuniones.",
+    "audience": "Empresas que externalizan atención, telemarketing y soporte comercial.",
+    "prices": [],
+    "guarantee": [
+      "We guarantee the quality of data processing and the legality of the entire operation."
+    ],
+    "proof": [
+      "13 OUTBOUND COMMUNICATOR Ventask is recruiting Outbound Communicators for its clients in the areas of Banking, Energy and Services.",
+      "We have an excellent team capable of generating the best results for your business!As one of the prominent call center solution providers in Portugal, we leverage cutting-edge technology and industry best practices to deliver measurable results and exceed client expectations.",
+      "+ Information Brand Activation We promote brand activation actions to provide your customers with unique and differentiating experiences."
+    ],
+    "objections": [
+      "Our commitment to excellence extends to being a trusted call center leads provider, ensuring you have access to qualified prospects who are primed for your offerings.",
+      "Portugal’s bank Alternative Dispute Resolution Means:» Arbitration Center» Arbitration Center Regulations» Arbitration Agreement» Resolution of Consumer Conflicts Join us How long will you wait for a new professional opportunity?"
+    ],
+    "urgency": [
+      "I want to know moreWe are looking for talent from 21 to 61...We have new experiences waiting for you!",
+      "I want to know moreWant to increase sales?Ventask manages your point of sale.",
+      "I want to know more About Ventask Welcome to Ventask, your premier partner in BPO and call center solutions in Portugal.",
+      "If you ask us what our differentiating factor is based on, without hesitation we answer: the competence, knowledge and professionalism of our employees who work in the Inbound and Outbound domains.",
+      "Constructive feedback plays an important role, letting agents know where they are succeeding and where they can improve, without creating more stress.",
+      "Partnering with us means gaining access to a network of skilled professionals and the latest tools in the industry, all aimed at enhancing your customer satisfaction and optimizing operational costs.Join hands with Ventask today and experience the difference with one of the leading contact center"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "We guarantee the quality of data processing and the legality of the entire operation.",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Skip to content About Us What we do Join us Blogs Contacts About Us What we do Join us Blogs Contacts Quero candidatar-me Do you want to communicate better with your customers?We create your contact center service.",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We have an excellent team capable of generating the best results for your business!As one of the prominent call center solution providers in Portugal, we leverage cutting-edge technology and industry best practices to deliver measurable results and exceed client expectations.",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other"
+        },
+        {
+          "text": "+ Information Brand Activation We promote brand activation actions to provide your customers with unique and differentiating experiences.",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other"
+        },
+        {
+          "text": "13 OUTBOUND COMMUNICATOR Ventask is recruiting Outbound Communicators for its clients in the areas of Banking, Energy and Services.",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Our commitment to excellence extends to being a trusted call center leads provider, ensuring you have access to qualified prospects who are primed for your offerings.",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Portugal’s bank Alternative Dispute Resolution Means:» Arbitration Center» Arbitration Center Regulations» Arbitration Agreement» Resolution of Consumer Conflicts Join us How long will you wait for a new professional opportunity?",
+          "url": "https://www.ventask.pt/",
+          "pageTitle": "Ventask: Your Trusted Sales & Communication BPO Call Center",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.ventask.pt/",
+        "https://www.ventask.pt/contacts/",
+        "https://www.ventask.pt/emprego/customer-service-spanish-speaker/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Customer Communication",
+        "Contacts",
+        "CUSTOMER SERVICE – SPANISH SPEAKER",
+        "Blog"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Read more",
+        "To send",
+        "Enviar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.ventask.pt/contacts/ · 6 campos",
+        "https://www.ventask.pt/pt-pt/contactos-contact-center/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contacto B2B → definición de alcance y objetivo → operación inbound/outbound de contact center → cualificación → visita/reunión agendada para ventas → soporte/contact center según servicio; facturación, contrato,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.ventask.pt/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.ventask.pt/contacts/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.ventask.pt/emprego/customer-service-spanish-speaker/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.ventask.pt/about-us/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.ventask.pt/sem-categoria/contact-center-agents-and-stress/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.ventask.pt/pt-pt/contactos-contact-center/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.ventask.pt/pt-pt/o-que-fazemos-contact-center/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.ventask.pt/what-we-do/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=ventask.pt",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Read more”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

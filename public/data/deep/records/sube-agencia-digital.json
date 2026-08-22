@@ -1,0 +1,435 @@
+{
+  "id": "sube-agencia-digital",
+  "name": "SUBE Agencia Digital",
+  "reviewedAt": "2026-08-22T15:50:18.083Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "SUBE",
+    "heroObserved": true,
+    "priorSummary": "\"Campañas en Google Ads y Meta Ads con presupuesto acotado, segmentación precisa y control estricto del coste por cliente\", propuesta modular por bloques de servicio",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 3584 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2307 palabras por página comercial recuperada. Muestras breves: “Agencia de marketing digital para pymes” · “Estamos en puntos estratégicos” · “SUBE”.",
+    "supportingHeadings": [
+      "SUBE",
+      "Agencia de marketing digital para pymes",
+      "¿Qué son los servicios de marketing digital para pymes y para qué sirven?",
+      "Nuestro criterio",
+      "Qué incluye nuestro servicio de marketing digital para pymes",
+      "SEO local",
+      "Publicidad digital",
+      "Gestión de redes sociales",
+      "Contenido interactivo",
+      "Automatización de marketing",
+      "Medición y reporte",
+      "Qué priorizar según el tipo de pyme",
+      "Cómo trabajamos con una pyme",
+      "Diagnóstico",
+      "Priorización",
+      "Puesta en marcha",
+      "Ejecución mensual",
+      "Revisión y ajuste",
+      "Beneficios de contratar una agencia de marketing digital para tu pyme",
+      "Acceso a expertos",
+      "Ahorro de tiempo y recursos",
+      "Resultados medibles",
+      "Escalabilidad del gasto",
+      "Competir con empresas mayores",
+      "Continuidad estratégica",
+      "Cómo elegir la mejor agencia de marketing digital para pymes",
+      "Preguntas frecuentes sobre marketing digital para pymes",
+      "¿Qué servicios de marketing digital son imprescindibles para una pyme?",
+      "¿Cuánto cuesta contratar una agencia de marketing digital para pymes?",
+      "¿Cuánto tiempo tarda en verse resultados con una agencia de marketing digital?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicita tu diagnóstico gratuito",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/",
+      "text": "Solicita tu diagnóstico gratuito",
+      "href": "https://www.subeagenciadigital.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 237
+    },
+    "ctas": [
+      "Solicita tu diagnóstico gratuito",
+      "Solicita tu auditoría de Meta Ads",
+      "Contacto",
+      "¡Cotizar!",
+      "CDMX",
+      "Miami",
+      "Texas",
+      "Bogotá",
+      "Madrid",
+      "Enviar",
+      "Español",
+      "Regresar",
+      "Argentina",
+      "Servicios",
+      "ver detalles",
+      "Switch to Inglés",
+      "Switch to English",
+      "Switch to Español",
+      "¡Súbete a la nave!",
+      "Región Metropolitana"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/",
+        "index": 3,
+        "action": "https://www.subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 17,
+        "requiredFieldCount": 9,
+        "hiddenFieldCount": 18,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-lastname",
+            "label": "* Apellido",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "* Correo electrónico corporativo (preferentemente)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "lada",
+            "label": "Lada:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-cel",
+            "label": "* Teléfono celular",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "lada2",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Teléfono local",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "descubriste",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "textotro",
+            "label": null,
+            "placeholder": "¿Dinos cuál?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Para brindarte una atención personalizada, platícanos sobre tu proyecto y cuál es",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "pais-contacto",
+            "label": "* ¿Desde qué país nos contactas? MéxicoEstados UnidosColombiaAlbaniaAlemaniaAndorraAngolaAntigua y BarbudaArabia Saudit…",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "mercado-objetivo",
+            "label": "* ¿Cuál es tu mercado objetivo? MéxicoEstados UnidosColombiaAlbaniaAlemaniaAndorraAngolaAntigua y BarbudaArabia Saudita…",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "tamanio-empresa",
+            "label": "* ¿Qué tan grande es tu empresa? EmprendedorPequeñoMedioGrandeMultinacionalSin fines de lucroOtro",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "tiempo-marketing",
+            "label": "* ¿Cuánto tiempo llevas haciendo marketing digital? 3 - 5 años1 -",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "inversion-anual",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "tiene-brief",
+            "label": "No",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "brief",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 17 y 17 campos visibles, mínimo 9 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: * ¿Cuál es tu mercado objetivo? MéxicoEstados UnidosColombiaAlbaniaAlemaniaAndorraAngolaAntigua y BarbudaArabia Saudita…, * ¿Qué tan grande es tu empresa? EmprendedorPequeñoMedioGrandeMultinacionalSin fines de lucroOtro.",
+      "friction": "Alta",
+      "minFields": 17,
+      "maxFields": 17,
+      "qualification": [
+        "* ¿Cuál es tu mercado objetivo? MéxicoEstados UnidosColombiaAlbaniaAlemaniaAndorraAngolaAntigua y BarbudaArabia Saudita…",
+        "* ¿Qué tan grande es tu empresa? EmprendedorPequeñoMedioGrandeMultinacionalSin fines de lucroOtro"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Campañas en Google Ads y Meta Ads con presupuesto acotado, segmentación precisa y control estricto del coste por cliente\", propuesta modular por bloques de servicio",
+    "audience": "Pymes; agencia con sede matriz en CDMX pero oficinas declaradas en Bogotá, Miami, Texas, Madrid, Argentina y Chile",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "01 Diagnóstico Revisamos tu presencia digital actual, tu competencia directa y de dónde vienen hoy tus clientes.",
+      "El servicio Qué incluye nuestro servicio de marketing digital para pymes Un plan modular: activamos solo las palancas que tu negocio necesita hoy."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/",
+        "https://www.subeagenciadigital.com/contacto/",
+        "https://www.subeagenciadigital.com/casos-de-exito/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia de marketing digital para pymes",
+        "Estamos en puntos estratégicos",
+        "SUBE",
+        "Agencia de Facebook Ads en México"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "CDMX",
+        "Bogotá",
+        "Miami",
+        "Texas",
+        "Madrid",
+        "Argentina",
+        "Región Metropolitana",
+        "Contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/ · 17 campos",
+        "https://www.subeagenciadigital.com/contacto/ · 17 campos",
+        "https://www.subeagenciadigital.com/casos-de-exito/ · 17 campos",
+        "https://www.subeagenciadigital.com/nuestros-servicios-por-tipo-de-servicio/ · 17 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "«Solicita tu diagnóstico gratuito» → revisión de presencia digital, competencia directa y origen actual de clientes → priorización de 3-4 acciones y cálculo del umbral de inversión →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.subeagenciadigital.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.subeagenciadigital.com/casos-de-exito/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.subeagenciadigital.com/nuestros-servicios-por-tipo-de-servicio/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.subeagenciadigital.com/nosotros/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.subeagenciadigital.com/agencia-de-facebook-ads/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.subeagenciadigital.com/agencias-de-google-ads/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://subeagenciadigital.com/agencias-de-marketing-digital-para-pymes/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.subeagenciadigital.com/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicita tu diagnóstico gratuito”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 17 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

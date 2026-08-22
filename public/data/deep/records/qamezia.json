@@ -1,0 +1,546 @@
+{
+  "id": "qamezia",
+  "name": "Qamezia",
+  "reviewedAt": "2026-08-22T15:50:19.203Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "Tu web tiene que vender antes de que te llamen.",
+    "heroObserved": true,
+    "priorSummary": "Sistema operativo IA local productizado, no agencia de captación gestionada pura: web/AEO/Google Business Profile, agente WhatsApp, agenda, recuperación de presupuestos, reseñas, reactivación y dashboard. La landing dental es una de 12 verticales.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 173 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 847 palabras por página comercial recuperada. Muestras breves: “Sistema IA para clínicas dentales: agenda llena, presupuestos que se cierran, pacientes que vuelven.” · “Dime tu negocio. Te digo que esta bloqueando contactos.” · “Elige tu plan QAmezIA”.",
+    "supportingHeadings": [
+      "Sistema IA para clínicas dentales: agenda llena, presupuestos que se cierran, pacientes que vuelven.",
+      "No te falta una web nueva. Te falta dejar de perder revenue.",
+      "El sillón vacío a las 16:00",
+      "47 presupuestos en frío que nadie sigue",
+      "Las pacientes que no vuelven a la revisión",
+      "La recepcionista contestando \"¿cuánto cuesta una limpieza?\" treinta veces al día",
+      "12 reseñas Google frente a 240 de la franquicia de al lado",
+      "La urgencia que llega a las 23:00 por WhatsApp y se va a otra clínica",
+      "47 presupuestos abiertos a 1.500 € medio = 70.500 € que están en tu carpeta sin tocar",
+      "Seis módulos diseñados específicamente para clínica dental.",
+      "Web dental optimizada para conversión",
+      "Agente IA en WhatsApp para captación dental",
+      "Recuperación automática de presupuestos abiertos",
+      "Reseñas Google sistematizadas",
+      "Recordatorios de revisión y reactivación",
+      "Dashboard de captación y revenue",
+      "Cifras de una implantación tipo: clínica dental de 2 sillones, 90 días.",
+      "Cinco etapas. Cero opacidad.",
+      "Auditoría inicial gratuita",
+      "Implementación supervisada",
+      "Piloto medido de 30 días",
+      "Optimización mensual",
+      "Reporting y siguientes acciones",
+      "Comparado con tus cuatro alternativas reales.",
+      "Agencia digital genérica",
+      "Plataforma SaaS dental (Doctoralia, etc.)",
+      "Hacerlo en interno",
+      "Qamezia AI Domination",
+      "QAmezIA recupera presupuestos abiertos",
+      "Pack Web + Visibilidad IA"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.qamezia.com/dentistas",
+      "text": "Contacto",
+      "href": "https://www.qamezia.com/contacto",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143
+    },
+    "ctas": [
+      "Contacto",
+      "Quiero mas llamadas",
+      "Pedir revision gratis",
+      "Formulario principalRevision gratisLa via mas rapida para entrar en el CRM y responder con",
+      "Quiero saber que pack encaja",
+      "Quiero Pro",
+      "No tengo web",
+      "Quiero Express",
+      "Enviar pregunta",
+      "Quiero mi revision",
+      "Rellenar formulario",
+      "Mi web parece antigua",
+      "Hablar con una persona",
+      "No aparezco bien en Google",
+      "Quiero mi revision gratuita"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.qamezia.com/contacto",
+        "index": 1,
+        "action": "https://www.qamezia.com/contacto",
+        "method": "GET",
+        "submitText": "Quiero mi revision gratuita",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Telefono *",
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Negocio",
+            "placeholder": "Ej: Taller Garcia",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "currentTools",
+            "label": "Ciudad o zona *",
+            "placeholder": "Madrid, Getafe, Valencia...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "role",
+            "label": "Tipo de negocio",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email opcional",
+            "placeholder": "tu@negocio.com",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.qamezia.com/contacto",
+        "index": 2,
+        "action": "https://www.qamezia.com/contacto",
+        "method": "GET",
+        "submitText": "Enviar pregunta",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Telefono",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "businessType",
+            "label": "Tipo de negocio",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "subject",
+            "label": "Tema",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Pregunta concreta",
+            "placeholder": "Ej: ya tengo web, quiero saber si el pack encaja para mi",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Ciudad o zona *.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Ciudad o zona *"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Sistema operativo IA local productizado, no agencia de captación gestionada pura: web/AEO/Google Business Profile, agente WhatsApp, agenda, recuperación de presupuestos, reseñas, reactivación y dashboard. La landing dental es una de 12 verticales.",
+    "audience": "Negocios locales españoles en 12 sectores; oferta detallada para clínicas dentales, además de estética, reformas, abogados, inmobiliarias, fisioterapia y otros.",
+    "prices": [
+      "Producto plug & play sin paquetes A/B/C.Mantenimiento opcionalDespues del setup puedes contratar mantenimiento por 29 EUR/mes.",
+      "QAmezIA se paga una vez (desde 390 EUR).",
+      "La cuota de 29 EUR/mes solo aplica si quieres mantenimiento o soporte posterior, y la cancelas cuando quieras.Puedo pedir revision si ya tengo webSi.",
+      "…tienes varios servicios, varias zonas o quieres seguir publicando contenido y reseñas con soporte, el mantenimiento de 29 EUR/mes lo cubre.Preguntas frecuentesRespuestas antes de pedir presupuesto.Por que no dais presupuesto abiertoPorque el dueno de un negocio necesita decidir rapido."
+    ],
+    "guarantee": [
+      "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerrajerosTalleres…"
+    ],
+    "proof": [
+      "Te diremos que falla, que arreglar primero y si el pack tiene sentido para tu negocio.Pedir revision gratisQAmezIASistema operativo IA para que negocios locales españoles consigan más clientes desde Google, Maps y WhatsApp.",
+      "Te diremos que pack encaja, que arreglar primero y que no merece gastar todavia.Pedir revision gratisQAmezIASistema operativo IA para que negocios locales españoles consigan más clientes desde Google, Maps y WhatsApp."
+    ],
+    "objections": [
+      "El cliente no tiene que buscar como hablar contigo.Confianza inmediataBloques de pruebas, proceso, preguntas frecuentes y mensajes que reducen dudas antes de pedir presupuesto.Copy incluidoNo te dejamos frente a una pagina vacia.",
+      "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerraje…",
+      "Sin alcance infinito, sin permanencia obligatoria y sin esconder el precio.Pedir revision gratisVer packs490 EURfundacional7 diasentrega express0permanenciadesde490 EURresultado compradoUna web que convierte dudas en siguiente paso.Web localpublicadaSEO basepreparadoContactoarribalo que incluyeEl pack no es una pagina."
+    ],
+    "urgency": [
+      "Si el paciente no tiene mutua o tiene una con la que no trabajas, le ofrecemos financiación propia (Sequra, Aplazame, Pepper).",
+      "Lo más rápido en cerrar son los presupuestos abiertos que tienes ahora mismo en frío.¿Puedo personalizar el tono del agente IA?+Sí."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Debe tener alcance claro, precio cerrado y una funcion: que el cliente entienda, confie y contacte.Pedir revision gratisVer packsPago unico desde 390 EUR (QAmezIA)Mantenimiento opcional 29 EUR/mesEntrega en 7 dias si el material esta listoSEO local basico incluidoPrecio cerradoQAmezIA es un pago unico desde 390",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Producto plug & play sin paquetes A/B/C.Mantenimiento opcionalDespues del setup puedes contratar mantenimiento por 29 EUR/mes.",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "…tienes varios servicios, varias zonas o quieres seguir publicando contenido y reseñas con soporte, el mantenimiento de 29 EUR/mes lo cubre.Preguntas frecuentesRespuestas antes de pedir presupuesto.Por que no dais presupuesto abiertoPorque el dueno de un negocio necesita decidir rapido.",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "QAmezIA se paga una vez (desde 390 EUR).",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "La cuota de 29 EUR/mes solo aplica si quieres mantenimiento o soporte posterior, y la cancelas cuando quieras.Puedo pedir revision si ya tengo webSi.",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerrajerosTalleres…",
+          "url": "https://www.qamezia.com/contacto",
+          "pageTitle": "Contacto - Revision Gratuita de Web Local y SEO | QAMEZIA",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Todos los derechos reservados.Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos.Politica de privacidadCondiciones del servicioEliminacion de datos",
+          "url": "https://www.qamezia.com/contacto",
+          "pageTitle": "Contacto - Revision Gratuita de Web Local y SEO | QAMEZIA",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerrajerosTalleres…",
+          "url": "https://www.qamezia.com/casos-de-exito",
+          "pageTitle": "Ejemplos de Presencia Local para Negocios | QAMEZIA",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Todos los derechos reservados.Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos.Politica de privacidadCondiciones del servicioEliminacion de datos",
+          "url": "https://www.qamezia.com/casos-de-exito",
+          "pageTitle": "Ejemplos de Presencia Local para Negocios | QAMEZIA",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerrajerosTalleres…",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Todos los derechos reservados.Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos.Politica de privacidadCondiciones del servicioEliminacion de datos",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerrajerosTalleres…",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Todos los derechos reservados.Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos.Politica de privacidadCondiciones del servicioEliminacion de datos",
+          "url": "https://www.qamezia.com/precios-pagina-web",
+          "pageTitle": "Cuanto Cuesta una Pagina Web para un Negocio Local | QAMEZIA",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Te diremos que falla, que arreglar primero y si el pack tiene sentido para tu negocio.Pedir revision gratisQAmezIASistema operativo IA para que negocios locales españoles consigan más clientes desde Google, Maps y WhatsApp.",
+          "url": "https://www.qamezia.com/casos-de-exito",
+          "pageTitle": "Ejemplos de Presencia Local para Negocios | QAMEZIA",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Te diremos que pack encaja, que arreglar primero y que no merece gastar todavia.Pedir revision gratisQAmezIASistema operativo IA para que negocios locales españoles consigan más clientes desde Google, Maps y WhatsApp.",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Sin alcance infinito, sin permanencia obligatoria y sin esconder el precio.Pedir revision gratisVer packs490 EURfundacional7 diasentrega express0permanenciadesde490 EURresultado compradoUna web que convierte dudas en siguiente paso.Web localpublicadaSEO basepreparadoContactoarribalo que incluyeEl pack no es una pagina.",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "El cliente no tiene que buscar como hablar contigo.Confianza inmediataBloques de pruebas, proceso, preguntas frecuentes y mensajes que reducen dudas antes de pedir presupuesto.Copy incluidoNo te dejamos frente a una pagina vacia.",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin permanencia · garantía de puesta en marcha.hola@qamezia.comSectores con sistema propioClínicas estéticasClínicas dentalesReformasAbogadosInmobiliariasFisioterapiaMás sectoresPsicologíaCerraje…",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Todos los derechos reservados.Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos.Politica de privacidadCondiciones del servicioEliminacion de datos",
+          "url": "https://www.qamezia.com/servicios",
+          "pageTitle": "Web Local y SEO para Negocios - Precio Cerrado | QAMEZIA",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.qamezia.com/dentistas",
+        "https://www.qamezia.com/contacto",
+        "https://www.qamezia.com/comprar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Sistema IA para clínicas dentales: agenda llena, presupuestos que se cierran, pacientes que vuelven.",
+        "Dime tu negocio. Te digo que esta bloqueando contactos.",
+        "Elige tu plan QAmezIA",
+        "Tu web tiene que vender antes de que te llamen."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Hablar con una persona",
+        "Rellenar formulario",
+        "No tengo web",
+        "Mi web parece antigua",
+        "No aparezco bien en Google",
+        "Quiero mas llamadas",
+        "Quiero saber que pack encaja"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.qamezia.com/contacto · 6 campos",
+        "https://www.qamezia.com/contacto · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) Entrada por auditoría gratuita de 48–72 h, reserva de 99 € o checkout del pack. 2) Se elige producto: Boost/autoservicio, Growth o AI Domination; los alcances no"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.qamezia.com/dentistas",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.qamezia.com/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.qamezia.com/comprar",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.qamezia.com/casos-de-exito",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.qamezia.com/servicios",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.qamezia.com/precios-pagina-web",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.qamezia.com/por-que-nosotros",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.qamezia.com/terminos",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

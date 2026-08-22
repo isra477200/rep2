@@ -1,0 +1,359 @@
+{
+  "id": "modernize",
+  "name": "Modernize",
+  "reviewedAt": "2026-08-22T15:50:18.218Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "Acompaña el viaje desde inquiry hasta instalación mediante leads de intención, llamadas, marca y financiación.",
+    "heroObserved": false,
+    "priorSummary": "Marketplace de leads para reformas y mejoras del hogar con precio variable según valor/rendimiento del lead.",
+    "voice": "Revisión manual: data-driven, corporativo, orientado a escala, predecible, sectorial. Repite predict, real-time y ready to buy. Convierte volumen y feedback en promesa de previsibilidad. Presenta varios formatos de oportunidad según madurez operativa.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace de leads para reformas y mejoras del hogar con precio variable según valor/rendimiento del lead.",
+    "audience": "Contratistas de ventanas, cubiertas, HVAC, solar y mejoras del hogar.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Red de medios exclusiva → propietario solicita presupuesto → lead en tiempo real al CRM o llamada entrante/transferencia precalificada → asignación por oficio y zona → seguimiento y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Captura de propietario [observado] → Consentimiento [observado] → Cualificación [observado] → Matching [observado] → Entrega [observado] → Seguimiento [observado] → Feedback [observado] → Optimización [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://modernize.com/pros/marketplace-solutions",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=modernize.com",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 3"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://modernize.com/pros/marketplace-solutions: HTTP 403",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Acompaña el viaje desde inquiry hasta instalación mediante leads de intención, llamadas, marca y financiación.",
+      "promise": "Volumen nacional, entrega en tiempo real y programas flexibles con datos para predecir crecimiento.",
+      "positioning": "Marketplace y plataforma multicanal de demanda para mejora del hogar",
+      "audience": "Contratistas y empresas de home improvement con call center, CRM o capacidad de seguimiento rápido.",
+      "voice": [
+        "data-driven",
+        "corporativo",
+        "orientado a escala",
+        "predecible",
+        "sectorial"
+      ],
+      "patterns": [
+        "Repite predict, real-time y ready to buy.",
+        "Convierte volumen y feedback en promesa de previsibilidad.",
+        "Presenta varios formatos de oportunidad según madurez operativa."
+      ]
+    },
+    "cta": {
+      "primary": "Get Leads",
+      "secondary": [
+        "Schedule a Call",
+        "Call Modernize"
+      ],
+      "forms": [
+        {
+          "url": "https://modernize.com/pros",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "apellido",
+            "empresa",
+            "trade principal",
+            "teléfono",
+            "email",
+            "sitio web o sin sitio",
+            "código postal",
+            "ingresos anuales",
+            "cómo conoció la empresa"
+          ],
+          "fieldCount": 10,
+          "friction": "alta pero útil para cobertura, fit y tamaño; la página indica menos de cinco minutos",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Captura de propietario",
+        "status": "observado",
+        "detail": "SEM, social y publishers dirigen cuestionarios sobre proyecto e intención."
+      },
+      {
+        "stage": "Consentimiento",
+        "status": "observado",
+        "detail": "La plataforma conserva consentimiento uno-a-uno para la marca emparejada; en llamadas puede usar grabación."
+      },
+      {
+        "stage": "Cualificación",
+        "status": "observado",
+        "detail": "Datos del formulario y, en algunos productos, un call center verifican la oportunidad."
+      },
+      {
+        "stage": "Matching",
+        "status": "observado",
+        "detail": "El propietario puede emparejarse con hasta cuatro contratistas."
+      },
+      {
+        "stage": "Entrega",
+        "status": "observado",
+        "detail": "Lead a CRM, llamada entrante o live transfer se envía en tiempo real."
+      },
+      {
+        "stage": "Seguimiento",
+        "status": "observado",
+        "detail": "El contratista contacta entre aproximadamente dos minutos y 24 horas, agenda, cotiza y vende."
+      },
+      {
+        "stage": "Feedback",
+        "status": "observado",
+        "detail": "Cuenta, portal o CRM recogen resultados; los primeros 90 días alimentan aprendizaje de valor y mezcla."
+      },
+      {
+        "stage": "Optimización",
+        "status": "observado",
+        "detail": "Right Pricing intenta ajustar precio al valor previsto dentro del límite del comprador."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "lead — precio privado y variable por trade, intención, volumen, mercado y valor previsto; el comprador fija límites"
+      ],
+      "contract": [
+        "duración, mínimo y salida — no publicados en las fuentes revisadas"
+      ],
+      "guarantee": [
+        "resultado o crédito — no se observó garantía de cierre ni política pública de devolución o reemplazo"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Amazon CloudFront",
+      "CRM delivery, call routing y live transfer",
+      "Right Pricing",
+      "360 Finance"
+    ],
+    "contradictions": [
+      "Una página declara 10 millones+ de inquiries, 400.000 leads y 1.000+ negocios, mientras About comunica aproximadamente 6 millones anuales y 800+ profesionales; pueden diferir por periodo y definición, pero no se unifican.",
+      "Ready to buy convive con contenido propio que señala que más de un tercio de propietarios no empieza en 30 días.",
+      "El claim de que 100 o 5.000 leads convierten a la misma tasa requiere cohortes y control de mix no publicados; Right Pricing reconoce valor variable.",
+      "Hasta cuatro contratistas significa oportunidad compartida, no exclusiva.",
+      "No hay precio ni remedio por dato inválido suficientes para calcular riesgo neto de compra."
+    ],
+    "inferences": [],
+    "notObservable": [
+      "precio por categoría y mercado",
+      "contrato y mínimo",
+      "política de crédito",
+      "definición de inválido",
+      "exclusividad por producto",
+      "modelo de Right Pricing",
+      "SLA de disputa",
+      "CRM interno",
+      "modelo de pricing",
+      "proveedor de call center",
+      "motor de matching",
+      "tracking del formulario",
+      "No se verificaron respuesta de account manager, cotización, disponibilidad, volumen ni términos."
+    ],
+    "limitations": [
+      "La descarga directa fue bloqueada con HTTP 403.",
+      "No se envió formulario ni se otorgó consentimiento.",
+      "No se recibió precio, contrato o política de créditos.",
+      "Las métricas públicas usan periodos y definiciones diferentes."
+    ],
+    "lessons": {
+      "copy": [
+        "Ofrecer formatos de oportunidad según capacidad: dato, llamada o transferencia en vivo.",
+        "Hablar desde inquiry hasta instalación."
+      ],
+      "adapt": [
+        "Consentimiento uno-a-uno entregado con evidencia.",
+        "Bucle de feedback de 90 días y precio dentro del límite del comprador.",
+        "Formulario B2B que recoge trade, zona y facturación para diseñar programa."
+      ],
+      "avoid": [
+        "Afirmar igual conversión a cualquier volumen sin cohortes.",
+        "Llamar ready to buy a toda la demanda.",
+        "Ocultar crédito por inválido y nivel de compartición."
+      ],
+      "test": [
+        "Lead bruto frente a live transfer.",
+        "Precio fijo frente a valor previsto con cap.",
+        "Hasta dos proveedores frente a hasta cuatro."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://modernize.com/pros",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://modernize.com/pros/marketplace-solutions/leads/wilson",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://modernize.com/about/faq",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://modernize.com/contractor-resources/articles/how-much-do-modernize-leads-cost",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://modernize.com/contractor-resources/articles/how-a-lead-comes-to-modernize",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://modernize.com/contractor-resources/articles/modernize-guide-to-1-to-1-consent-for-home-services-professionals",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://modernize.com/about",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "manual_only"
+}

@@ -1,0 +1,399 @@
+{
+  "id": "persuade",
+  "name": "Persuade",
+  "reviewedAt": "2026-08-22T15:50:17.643Z",
+  "status": "Limitada",
+  "confidence": "Alta",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "SDR externalizado para B2B: definición de ICP, datos, secuencias, outreach humano y automatizado, cualificación y demos.",
+    "voice": "Revisión manual: estratégico, enterprise, anti-agencia, control operativo, madurez comercial. revenue infrastructure not a lead-gen agency sales-ready predictable pipeline accountability",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "SDR externalizado para B2B: definición de ICP, datos, secuencias, outreach humano y automatizado, cualificación y demos.",
+    "audience": "Empresas B2B que consideran outbound un motor estable; casos en tecnología, seguridad, fintech, servicios corporativos y producción.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email",
+        "LinkedIn Ads",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contenido/casos → llamada estratégica → definición de ICP y Scope of Work → firma + depósito → lista de cuentas/decisores → secuencia y outreach SDR → cualificación →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación [observado] → cualificación [inferido] → propuesta y cierre [observado] → entrega [observado] → retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.persuade.co.za/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.persuade.co.za/case-studies/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.persuade.co.za/case-study/fivestar/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.persuade.co.za/case-study/thales/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.persuade.co.za/wp-content/uploads/2023/01/Service-Level-Agreement.pdf",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=persuade.co.za",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Persuade%20Cape%20Town&search_type=keyword_exact_phrase",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://sdragency.co.za/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.persuade.co.za/about-us/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://persuade.co.za/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.persuade.co.za/about-us/: HTTP 404",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Sustituir la generación de ruido por una máquina de pipeline predecible y responsable.",
+      "positioning": "socio enterprise de infraestructura comercial",
+      "audience": "Empresas B2B mid-market o enterprise de EMEA que buscan outbound serio, no una prueba táctica corta.",
+      "voice": [
+        "estratégico",
+        "enterprise",
+        "anti-agencia",
+        "control operativo",
+        "madurez comercial"
+      ],
+      "patterns": [
+        "revenue infrastructure",
+        "not a lead-gen agency",
+        "sales-ready",
+        "predictable pipeline",
+        "accountability"
+      ]
+    },
+    "cta": {
+      "primary": "Reservar una llamada estratégica",
+      "secondary": [
+        "explorar SDR externalizado",
+        "ver casos",
+        "leer modelo de equipo"
+      ],
+      "forms": [
+        {
+          "url": "https://www.persuade.co.za/contact-us/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "empresa",
+            "email",
+            "móvil",
+            "mensaje",
+            "captcha aritmético"
+          ],
+          "fieldCount": 6,
+          "friction": "media",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Contenido de categoría y servicio atrae a compradores enterprise con problema de outbound. — stage: descubrimiento — evidenceUrls: https://www.persuade.co.za/ · https://www.persuade.co.za/outsourced-sdr/"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Casos, modelo de delivery y lenguaje de infraestructura filtran madurez y horizonte. — stage: consideración — evidenceUrls: https://www.persuade.co.za/pricing/ · https://www.persuade.co.za/case-studies/"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Calendly desde CTA reiterado y formulario corporativo alternativo con captcha. — stage: captación — evidenceUrls: https://calendly.com/jaredkoning/see-how-we-can-help-2 · https://www.persuade.co.za/contact-us/"
+      },
+      {
+        "stage": "cualificación",
+        "status": "inferido",
+        "detail": "La llamada estratégica y el énfasis en clientes serios sugieren filtro de ICP, alcance y capacidad; preguntas no observadas. — stage: cualificación — evidenceUrls: https://www.persuade.co.za/"
+      },
+      {
+        "stage": "propuesta y cierre",
+        "status": "observado",
+        "detail": "Cotización, Scope of Work, firma y depósito; cambios pueden alterar tarifa y plazo. — stage: propuesta y cierre — evidenceUrls: https://www.persuade.co.za/wp-content/uploads/2023/01/Service-Level-Agreement.pdf"
+      },
+      {
+        "stage": "entrega",
+        "status": "observado",
+        "detail": "Equipo SDR dedicado con manager, estratega, sales ops y account support; secuencia multicanal y reuniones sales-ready. — stage: entrega — evidenceUrls: https://www.persuade.co.za/pricing/ · https://www.persuade.co.za/outsourced-sdr/"
+      },
+      {
+        "stage": "retención",
+        "status": "inferido",
+        "detail": "Reporting semanal, optimización y tarifas mensuales sostienen recurrencia; periodo exacto depende del Scope of Work privado. — stage: retención — evidenceUrls: https://www.persuade.co.za/pricing/ · https://www.persuade.co.za/wp-content/uploads/2023/01/Service-Level-Agreement.pdf"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "No publica importes; una FAQ vigente describe retainer mensual fijo según alcance, capacidad SDR y complejidad del mercado. El SLA indexado remite tarifa y depósito a cotización y Scope of Work."
+      ],
+      "contract": [
+        "SLA marco más Scope of Work firmado; servicios comienzan tras firma y depósitos exigidos."
+      ],
+      "guarantee": [
+        "El SLA declara que no puede ni debe garantizar un resultado comercial particular."
+      ]
+    },
+    "proof": [
+      "claims: más de treinta marcas · Five Star: 83 demos en seis meses y 900 decisores · Thales: 54 demos en dos meses y 1.424 decisores · iKhokha: 320 empresas alcanzadas mediante una secuencia de email — quality: media — caveat: Casos autopublicados; no todos exponen inversión, show rate, ventas, periodo comparable o verificación independiente."
+    ],
+    "objections": [
+      "objection: No quiero otra agencia de leads. — answer: Reencuadre como infraestructura de revenue y equipo integrado.",
+      "objection: Mi equipo pierde tiempo cualificando. — answer: Solo entrega reuniones sales-ready con contexto.",
+      "objection: Necesito responsabilidad y reporting. — answer: Roles dedicados, reporting semanal e integración CRM.",
+      "objection: ¿Garantiza resultados comerciales? — answer: No; el SLA lo excluye expresamente.",
+      "objection: ¿Cuánto cuesta y cuánto dura? — answer: Se define en cotización y Scope of Work privados."
+    ],
+    "technology": [
+      "WordPress — basis: señales públicas",
+      "Elementor — basis: estructura y popup",
+      "Calendly — basis: URL de agenda",
+      "captcha aritmético — basis: formulario público de contacto",
+      "Google Tag Manager y Google Analytics — basis: etiquetas públicas",
+      "Meta Pixel — basis: etiqueta pública",
+      "Happier Leads — basis: script público",
+      "CRM — basis: integración ofrecida; marca no observable",
+      "enriquecimiento con IA — basis: capacidad declarada; proveedor no observable"
+    ],
+    "contradictions": [
+      "La promesa de pipeline predecible y accountability convive con una renuncia contractual a garantizar cualquier resultado comercial particular. — severity: alta",
+      "La página pricing no publica ningún precio. — severity: alta",
+      "El mensaje de ausencia de handoffs simplifica una entrega que en realidad involucra múltiples roles especializados. — severity: media",
+      "La URL canónica antigua del dataset, /about-us/, devuelve error; la ruta vigente es /about/. — severity: baja"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "No se reservaron slots, no se envió el formulario y no se observaron campos de Calendly.",
+      "No se accedió a Scope of Work, cotización o CRM privados.",
+      "El SLA oficial estaba indexado y pudo revisarse, pero su URL directa devolvió 404 en la verificación final; debe tratarse como términos históricos, no como prueba de vigencia contractual actual."
+    ],
+    "lessons": {
+      "copy": [
+        "reencuadre de categoría",
+        "mapa de equipo y roles",
+        "definición de entrega sales-ready",
+        "lenguaje de cuentas y revenue"
+      ],
+      "adapt": [
+        "publicar rangos de inversión",
+        "alinear previsibilidad con escenarios, no garantía",
+        "resumir términos críticos junto al CTA",
+        "Selector de madurez outbound que recomiende equipo, volumen, plazo y rango de inversión antes de Calendly.",
+        "El posicionamiento enterprise eleva valor percibido, pero la confianza máxima aparece cuando el lenguaje de marketing y el SLA comparten la misma definición de resultado."
+      ],
+      "avoid": [
+        "llamar pricing a una página sin importes",
+        "prometer predictibilidad sin intervalo ni condiciones",
+        "licencias o uso de logo por defecto sin explicación visible"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://www.persuade.co.za/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/pricing/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/about/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/contact-us/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/appointment-setting-agency-south-africa/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/case-studies/",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/outsourced-sdr/",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.persuade.co.za/wp-content/uploads/2023/01/Service-Level-Agreement.pdf",
+        "label": "Fuente manual 8",
+        "status": "observado"
+      },
+      {
+        "url": "https://calendly.com/jaredkoning/see-how-we-can-help-2",
+        "label": "Fuente manual 9",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "manual_only"
+}

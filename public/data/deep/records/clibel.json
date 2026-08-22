@@ -1,0 +1,578 @@
+{
+  "id": "clibel",
+  "name": "Clibel",
+  "reviewedAt": "2026-08-22T15:50:17.433Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno.",
+    "heroObserved": true,
+    "priorSummary": "Captación + prefiltrado; promesa de clientes a 100 € y 'tú no llamas'.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, apoya la promesa en prueba social. Usa 93 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 388 palabras por página comercial recuperada. Muestras breves: “Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno.”.",
+    "supportingHeadings": [
+      "SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA",
+      "Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno.",
+      "Tú no llamas a nadie.",
+      "(Mira el vídeo hasta el final y luego reserva aquí abajo)",
+      "PASO 1: Rellena este breve formulario",
+      "\"23,000 en 30 dias.\" - Estética Claire en Valladolid",
+      "\"Esta mañana hemos vendido un bono de 1800€\"",
+      "Buscamos propietarias que se PAREZCAN a cómo estaban nuestros actuales casos de éxito cuando empezaron a trabajar con nosotros.",
+      "⬇️ Nuestros resultados ⬇️",
+      "\"Al dia siguiente ya teniamos citas!\"",
+      "Cómo Carmen y Melanie, madre e hija, pasaron de pensar en cerrar a facturar 15.000€ en menos de un mes.",
+      "Cómo Sira pasó de facturar 8-12.000€ a 22.000€ en su primer mes.",
+      "Cómo Jessie pasó de estar a punto de cerrar a facturar casi 14.000€ en su segundo mes.",
+      "Cómo Sonia ha facturado +6.000€ en una semana y media",
+      "Cómo Carolina pasó de vender bonos de 300€ a 1.000€ en 7 días.",
+      "Cómo Libertad, madre de tres hijos, pasó de trabajar en su casa a ganar +7.000€ al mes con su centro.",
+      "Claire llevaba meses sin poder salir a cenar, en 30 días estaba en 10.000€ de BENEFICIOS.",
+      "A día 25 de marzo hemos facturado 23.000€ de clientes nuevos.",
+      "He tenido que añadir una cabina nueva!!",
+      "Cómo Viviana pasó de tener clientas CAZADESCUENTOS a tener clientas de alta calidad dispuestas a pagar bonos de +1.000€.",
+      "Cómo Roxana de Rox Beauty, vende packs de casi 1000€ sin problema.",
+      "Carmen pasó de vender 10 sesiones por 199€ a vender bonos de 1090€.",
+      "Sabina pasó de agencias que le hacían bajar sus precios a captar a su cliente ideal.",
+      "Por primera vez, a Rebeca le sobra dinero a final de mes.",
+      "Cristina pensaba que en su pueblo de 9.000 habitantes no podía subir sus precios.",
+      "Cómo Lidia, tras 9 años, batió su récord de facturación... sin trabajar ella en cabina.",
+      "Cómo Marta, con 26 años de experiencia, rompió su techo y pasó de 10.000€ a 16.000€ al mes.",
+      "Cómo Rosa y Minorca vendieron el bono más caro de su historia (990€) en su primera semana.",
+      "Monika recuperó su inversión en 7 días."
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://clibel.com/",
+        "index": 1,
+        "action": "https://clibel.com/",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 20,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "full_name",
+            "label": "Nombre *",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono *",
+            "placeholder": "Movil",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "tQNZ8GhV5VmdUPiA9PbE",
+            "label": "Web o Instagram del centro *",
+            "placeholder": "Pagina web o Instagram",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Menos de 5.000€/mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Entre 5.000€ y 10.000€/mes.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Entre 10.000€ y 25.000€/mes.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Entre 25.000€ y 50.000€/mes.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Más de 50.000€/mes.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "i6C98Sx4pbq4SlaDf4Ex",
+            "label": "¿Cuál es tu beneficio mensual? (Necesitamos saberlo para poder ayudarte) *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Rentabilidad: Busco incrementar beneficios",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Escalabilidad: Tengo un centro rentable y quiero crecer.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "AbQ1tsJSO51FuZw65V55",
+            "label": "¿Qué te está impidiendo resolver este reto ahora mismo? (Sé lo más",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "0€ - 500€ al mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "500€ - 1.000€ al mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "1.000€ - 2.500€ al mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "2.500€ - 5.000€ al mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "+5.000€ al mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "Si",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": null,
+            "label": "No",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 20 y 20 campos visibles, mínimo 0 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Web o Instagram del centro *.",
+      "friction": "Alta",
+      "minFields": 20,
+      "maxFields": 20,
+      "qualification": [
+        "Web o Instagram del centro *"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "GoHighLevel"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Captación + prefiltrado; promesa de clientes a 100 € y 'tú no llamas'.",
+    "audience": "Centros de estética no invasiva",
+    "prices": [
+      "Menos de 5.000€/mesEntre 5.000€ y 10.000€/mes.Entre 10.000€ y 25.000€/mes.Entre 25.000€ y 50.000€/mes.Más de 50.000€/mes.¿Cuál es tu beneficio mensual?",
+      "*0€ - 500€ al mes500€ - 1.000€ al mes1.000€ - 2.500€ al mes2.500€ - 5.000€ al mes+5.000€ al mesReservaremos el tiempo de un experto para ayudarte."
+    ],
+    "guarantee": [],
+    "proof": [
+      "He vendido bonos de un rango de 1.400€ a casi 2.000€ al 80% de los clientes.\"Claire llevaba meses sin poder salir a cenar, en 30 días estaba en 10.000€ de BENEFICIOS.\"He vuelto a quererme más a mí misma, decir, bueno, pues saco un momento para mí.\"A día 2…",
+      "Ahora le vendo bonos de 1.000€ a 8 de cada 10 clientes que entran por la puerta.\"Cómo Viviana pasó de tener clientas CAZADESCUENTOS a tener clientas de alta calidad dispuestas a pagar bonos de +1.000€.\"Ahora con vosotros me está llega…",
+      "Podcast Resultados SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno.",
+      "Buscamos propietarias que se PAREZCAN a cómo estaban nuestros actuales casos de éxito cuando empezaron a trabajar con nosotros.⬇️ Nuestros resultados ⬇️\"Al dia siguiente ya teniamos citas!\"Cómo Carmen y Melanie, madre e hija, pasaron de pensar en cerrar a facturar 15.000€ en menos de un"
+    ],
+    "objections": [],
+    "urgency": [
+      "Ahora le vendo bonos de 1.000€ a 8 de cada 10 clientes que entran por la puerta.\"Cómo Viviana pasó de tener clientas CAZADESCUENTOS a tener clientas de alta calidad dispuestas a pagar b…",
+      "Ahora miro mi agenda y está full de aquí a un mes.\"Cómo Sonia ha facturado +6.000€ en una semana y media\"No me lo podia creer, yo miraba al cielo y decia: \"esto esta siendo muy fácil\"Cómo Carolina pasó de vender bonos de 300€ a 1.000€",
+      "*Rentabilidad: Busco incrementar beneficiosEscalabilidad: Tengo un centro rentable y quiero crecer.¿Qué te está impidiendo resolver este reto ahora mismo?",
+      "Cuánto podrías invertir para solucionarlo ahora?"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Podcast Resultados SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno.",
+          "url": "https://clibel.com/",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Menos de 5.000€/mesEntre 5.000€ y 10.000€/mes.Entre 10.000€ y 25.000€/mes.Entre 25.000€ y 50.000€/mes.Más de 50.000€/mes.¿Cuál es tu beneficio mensual?",
+          "url": "https://clibel.com/",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "*0€ - 500€ al mes500€ - 1.000€ al mes1.000€ - 2.500€ al mes2.500€ - 5.000€ al mes+5.000€ al mesReservaremos el tiempo de un experto para ayudarte.",
+          "url": "https://clibel.com/",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "*SiNoNEXT\"23,000 en 30 dias.\" - Estética Claire en Valladolid\"Esta mañana hemos vendido un bono de 1800€\"Aviso Legal | Cookies | Política de privacidad",
+          "url": "https://clibel.com/",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Podcast Resultados SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno.",
+          "url": "https://clibel.com/",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Buscamos propietarias que se PAREZCAN a cómo estaban nuestros actuales casos de éxito cuando empezaron a trabajar con nosotros.⬇️ Nuestros resultados ⬇️\"Al dia siguiente ya teniamos citas!\"Cómo Carmen y Melanie, madre e hija, pasaron de pensar en cerrar a facturar 15.000€ en menos de un",
+          "url": "https://clibel.com/resultados",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "He vendido bonos de un rango de 1.400€ a casi 2.000€ al 80% de los clientes.\"Claire llevaba meses sin poder salir a cenar, en 30 días estaba en 10.000€ de BENEFICIOS.\"He vuelto a quererme más a mí misma, decir, bueno, pues saco un momento para mí.\"A día 2…",
+          "url": "https://clibel.com/resultados",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Ahora le vendo bonos de 1.000€ a 8 de cada 10 clientes que entran por la puerta.\"Cómo Viviana pasó de tener clientas CAZADESCUENTOS a tener clientas de alta calidad dispuestas a pagar bonos de +1.000€.\"Ahora con vosotros me está llega…",
+          "url": "https://clibel.com/resultados",
+          "pageTitle": "Reserva tu reunión gratuita",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Meta Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://clibel.com/",
+        "https://clibel.com/resultados",
+        "https://clibel.com/aviso-legal"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Te llevamos clientes a la puerta de tu centro que te pagan 100€ cada uno."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://clibel.com/ · 20 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "VSL para propietarios de centros estéticos → formulario con nombre, teléfono, email, web/Instagram, facturación/beneficio, reto, presupuesto y compromiso de asistencia → cribado de encaje → reunión gratuita con"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://clibel.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://clibel.com/resultados",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://clibel.com/aviso-legal",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://clibel.com/cookies",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://clibel.com/politica-de-privacidad",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.facebook.com/ads/library/?id=1033942596046068",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://clibel.com/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?id=944069242025253",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.facebook.com/ads/library/?id=1568534938273291",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.facebook.com/ads/library/?id=1760868645259634",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://www.facebook.com/ads/library/?id=1388131656762652",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://www.facebook.com/ads/library/?id=2518320008580665",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.facebook.com/ads/library/?id=2120749418879843",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?id=1286405324550812",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.facebook.com/ads/library/?id=835534536251770",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?id=1081224508177889",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://clibel.com/consultoria",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?id=1035243049244317",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://clibel.com/cdn-cgi/l/email-protection: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Evitar o testear:** el formulario más corto ya pide 20 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (GoHighLevel) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

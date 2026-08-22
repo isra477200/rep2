@@ -1,0 +1,251 @@
+{
+  "id": "haraj",
+  "name": "Haraj",
+  "reviewedAt": "2026-08-22T15:50:18.783Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "تواصل معنا",
+    "heroObserved": true,
+    "priorSummary": "El vendedor publica un anuncio; el comprador busca, filtra y contacta directamente al anunciante.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 62 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1073 palabras por página comercial recuperada. Muestras breves: “Trusted Purchase Service - Terms and Conditions” · “اتفاقية الاستخدام” · “تواصل معنا”.",
+    "supportingHeadings": [
+      "About Haraj",
+      "Website address",
+      "FAQ",
+      "Trusted Purchase Service - Terms and Conditions",
+      "Buyer",
+      "Seller",
+      "How Trusted Purchase works",
+      "Request the service",
+      "Lock the price and fees",
+      "Notify seller and ship",
+      "Receive and inspect",
+      "Release funds to seller",
+      "Terms and Conditions",
+      "Role of the Escrow Company:",
+      "Receipt and Disputes:",
+      "Warranty and Disclaimer:",
+      "Data Sharing:",
+      "Haraj Platform Liability:",
+      "Dispute Resolution:",
+      "Settlement:",
+      "Service Fees:",
+      "Cancellation or Termination of Transaction:",
+      "Fees",
+      "Refunds",
+      "Annual Subscription",
+      "Members",
+      "Replies",
+      "Membership",
+      "Advertisements",
+      "Reviews"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://haraj.com.sa/en/about.php/",
+      "text": "Contact",
+      "href": "https://haraj.com.sa/en/contact.php",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact us"
+    ],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "El vendedor publica un anuncio; el comprador busca, filtra y contacta directamente al anunciante.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "LoginEnglish(EN)ENFAQFeesHow do I pay the site fees?Fees can be paid via: Mada Card By clicking here If payment is made via Mada, the fees will be activated in your account automatically within 24 hours (no need to fill out the transfer form).",
+      "To learn more about the reasons for the ban,click here (link to ban questions) Why should I subscribe to paid memberships?Paid memberships receive additional benefits and greater flexibility."
+    ],
+    "urgency": [
+      "I used to be able to block general replies, and now the site is asking for fees?The user gets this feature for one year if the fees reach 101 SAR or more during the year.MembershipHow do I change my membership name?To change your membership name,",
+      "After confirmation, or if the deadline passes without objection, the amount is automatically released to the seller.02Receipt and Disputes:The buyer has a limited timeframe - as determined by escrow company terms and conditions - from the time of receiving the shipment to open a dispute."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "LoginEnglish(EN)ENFAQFeesHow do I pay the site fees?Fees can be paid via: Mada Card By clicking here If payment is made via Mada, the fees will be activated in your account automatically within 24 hours (no need to fill out the transfer form).",
+          "url": "https://haraj.com.sa/en/faq/",
+          "pageTitle": "FAQ | Haraj",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "To learn more about the reasons for the ban,click here (link to ban questions) Why should I subscribe to paid memberships?Paid memberships receive additional benefits and greater flexibility.",
+          "url": "https://haraj.com.sa/en/faq/",
+          "pageTitle": "FAQ | Haraj",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "…rms & ConditionsTrusted Purchase ServiceLicenseSafety CenterRatingDiscountSuspended accounts and numbersProhibited ItemsFAQPrivacy PolicyIntellectual Property PolicyContact+A-Aمؤسسة موقع حراج لتقنية المعلوماتN0.0.1 , 2026-08-11 20VAT: 300710482300003",
+          "url": "https://haraj.com.sa/en/faq/",
+          "pageTitle": "FAQ | Haraj",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://haraj.com.sa/en/about.php/",
+        "https://haraj.com.sa/en/contact.php.tsx",
+        "https://haraj.com.sa/en/buy-requests-tos/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Trusted Purchase Service - Terms and Conditions",
+        "اتفاقية الاستخدام",
+        "تواصل معنا"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact us",
+        "Contact"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://haraj.com.sa/en/about.php/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://haraj.com.sa/en/contact.php.tsx",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://haraj.com.sa/en/buy-requests-tos/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://haraj.com.sa/en/faq/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://haraj.com.sa/en/terms.php",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://haraj.com.sa/en/contact.php",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://haraj.com.sa/en/contact.php?reason=wrong_transfer",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "3 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

@@ -1,0 +1,482 @@
+{
+  "id": "unlimited-growth",
+  "name": "Unlimited Growth",
+  "reviewedAt": "2026-08-22T15:50:18.059Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "Agencia Marketing Digital",
+    "heroObserved": true,
+    "priorSummary": "SEO, Google Ads, Social Ads (Facebook/Instagram/LinkedIn/TikTok), PPC, content marketing, email marketing, diseño web, generación y optimización de leads",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 106 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1237 palabras por página comercial recuperada. Muestras breves: “Publicidad para Empresas de Control de Plagas” · “Contacta con nosotros” · “Agencia Marketing Digital”.",
+    "supportingHeadings": [
+      "Publicidad para Empresas de Control de Plagas",
+      "Marketing Digital para Empresas de Control de Plagas",
+      "¿Por qué contratar una agencia de marketing para control de plagas?",
+      "Aumento de la visibilidad online",
+      "Generación de Leads y conversión",
+      "Costo-Eficiencia",
+      "Seguimiento y análisis",
+      "Adaptabilidad y escalabilidad",
+      "Reputación y credibilidad",
+      "Atención inmediata a emergencias",
+      "Competencia y diferenciación",
+      "Educación del cliente",
+      "Construcción de relaciones duraderas",
+      "Nuestros servicios de publicidad para empresas de control de plagas",
+      "Estrategia de marketing digital",
+      "SEO para empresas de control de plagas",
+      "Campañas PPC",
+      "Marketing de contenidos",
+      "Social Ads",
+      "Email marketing",
+      "Desarrollo y diseño web",
+      "Un servicio de consultoría SEO a medida",
+      "Campañas de Google Ads",
+      "Generación de leads y conversiones",
+      "Videotestimonios clientes",
+      "¿Estás listo para llevar tu negocio al siguiente nivel con Unlimited Growth?",
+      "FAQs sobre nuestro servicio de marketing para empresas de control de plagas",
+      "Estrategias Publicitarias a Medida",
+      "Campañas PPC Rentables",
+      "¿Por qué es importante el marketing digital para una empresa de control de plagas?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://unlimitedgrowth.online/",
+      "text": "Contacto",
+      "href": "https://unlimitedgrowth.online/contacta/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "contacto con nosotros",
+      "ENVIAR",
+      "Enviar",
+      "Hablar con especialistas"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://unlimitedgrowth.online/marketing-digital-control-de-plagas/",
+        "index": 1,
+        "action": "https://unlimitedgrowth.online/marketing-digital-control-de-plagas/",
+        "method": "POST",
+        "submitText": "ENVIAR",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "first-name",
+            "label": null,
+            "placeholder": "Nombre y apellidos *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Teléfono *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "asunto",
+            "label": null,
+            "placeholder": "Asunto *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Mensaje *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "aceptacion",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://unlimitedgrowth.online/contacta/",
+        "index": 1,
+        "action": "https://unlimitedgrowth.online/contacta/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Nombre*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Correo electrónico*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "number-13",
+            "label": null,
+            "placeholder": "Número de teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "asunto",
+            "label": null,
+            "placeholder": "Asunto",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "aceptacion",
+            "label": "He leído y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "SEO, Google Ads, Social Ads (Facebook/Instagram/LinkedIn/TikTok), PPC, content marketing, email marketing, diseño web, generación y optimización de leads",
+    "audience": "Control de plagas / desinsectación / desratización",
+    "prices": [
+      "DESDE 180 € Más información Desarrollo Web Ya ha llegado el momento de que tu web se adapte a los criterios de usabilidad del usuario sin abandonar las exigencias de Google.",
+      "DESDE 180 € Más información Social Ads Nuestra agencia de marketing online te ayudará a aumentar conversiones gracias a novedosas estrategias de publicidad online que te brindarán un alcance mayor y aumentarán tu popularidad y reconocimiento en el ámbito digital."
+    ],
+    "guarantee": [
+      "03 Éxito garantizado Contamos con la experiencia de un equipo de profesionales cualificado."
+    ],
+    "proof": [
+      "01 Prosperidad en tu negocio Nuestro equipo conseguirá en el menor tiempo posible resultados realistas.",
+      "02 Los mejores resultados Solo los podrás conseguir de la mano del mejor equipo.",
+      "…dIn Facebook Instagram [email protected] +34 91 159 31 34 LinkedIn Instagram Facebook Unlimitedgrowth Nosotros Nuestros Clientes Sectores Google Ads Social Ads Posicionamiento SEO Diseño Web Blog Contacto Opiniones de los clientes de Unlimited Growth Nuestra agencia de marketing online cuenta con una amplia…",
+      "Son muchos los clientes que han conseguido resultados ¿Quieres ser uno de ellos?",
+      "Calidad Si quieres obtener resultados la única opción es apostar por los mejores.",
+      "Precios Una de nuestras máximas premisas como agencia de marketing online es ajustarnos a las necesidades de nuestros clientes."
+    ],
+    "objections": [
+      "leer más Leer más Preguntas Frecuentes ¿Qué es una agencia de marketing digital y qué servicios ofrece?"
+    ],
+    "urgency": [
+      " [email protected]  +34 91 159 31 34 LinkedIn Facebook Instagram [email protected] +34 91 159 31 34 LinkedIn Instagram Facebook Unlimitedgrowth Nosotros Nuestros Clientes Sectores Google Ads Social Ads Posicionamiento SEO Diseño Web Blog Contacto Contacta con nosotros ¡Ponte en manos de la",
+      "…tected]  +34 91 159 31 34 LinkedIn Facebook Instagram [email protected] +34 91 159 31 34 LinkedIn Instagram Facebook Unlimitedgrowth Nosotros Nuestros Clientes Sectores Google Ads Social Ads Posicionamiento SEO Diseño Web Blog Contacto Publicidad para Empresas de Control de Plagas He leído y acepto la pol…",
+      "…tected]  +34 91 159 31 34 LinkedIn Facebook Instagram [email protected] +34 91 159 31 34 LinkedIn Instagram Facebook Unlimitedgrowth Nosotros Nuestros Clientes Sectores Google Ads Social Ads Posicionamiento SEO Diseño Web Blog Contacto Opiniones de los clientes de Unlimited Growth Nuestra agencia de marke…",
+      "Somos Unlimited Growth Los resultados en el marketing digital no son instantáneos a no ser que hagas publicidad online.",
+      "Esto es particularmente beneficioso para pequeñas y medianas empresas de control de plagas, que pueden tener presupuestos de marketing más limitados porque apenas inician sus labores.",
+      "Unlimited Growth es la agencia que podrá ayudarte a destacar por encima de otras empresas de control de plagas y llegar al público que realmente esperas alcanzar."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "DESDE 180 € Más información Social Ads Nuestra agencia de marketing online te ayudará a aumentar conversiones gracias a novedosas estrategias de publicidad online que te brindarán un alcance mayor y aumentarán tu popularidad y reconocimiento en el ámbito digital.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "DESDE 180 € Más información Desarrollo Web Ya ha llegado el momento de que tu web se adapte a los criterios de usabilidad del usuario sin abandonar las exigencias de Google.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "03 Éxito garantizado Contamos con la experiencia de un equipo de profesionales cualificado.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…dIn Facebook Instagram [email protected] +34 91 159 31 34 LinkedIn Instagram Facebook Unlimitedgrowth Nosotros Nuestros Clientes Sectores Google Ads Social Ads Posicionamiento SEO Diseño Web Blog Contacto Opiniones de los clientes de Unlimited Growth Nuestra agencia de marketing online cuenta con una amplia…",
+          "url": "https://unlimitedgrowth.online/nuestros-clientes/",
+          "pageTitle": "Nuestros Clientes - Unlimited Growth",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Son muchos los clientes que han conseguido resultados ¿Quieres ser uno de ellos?",
+          "url": "https://unlimitedgrowth.online/nuestros-clientes/",
+          "pageTitle": "Nuestros Clientes - Unlimited Growth",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "01 Prosperidad en tu negocio Nuestro equipo conseguirá en el menor tiempo posible resultados realistas.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other"
+        },
+        {
+          "text": "02 Los mejores resultados Solo los podrás conseguir de la mano del mejor equipo.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Calidad Si quieres obtener resultados la única opción es apostar por los mejores.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Son muchos los clientes que han conseguido resultados ¿Quieres ser uno de ellos?",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Precios Una de nuestras máximas premisas como agencia de marketing online es ajustarnos a las necesidades de nuestros clientes.",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "leer más Leer más Preguntas Frecuentes ¿Qué es una agencia de marketing digital y qué servicios ofrece?",
+          "url": "https://unlimitedgrowth.online/",
+          "pageTitle": "Agencia de Marketing Digital en Madrid | Unlimited Growth",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "TikTok Ads",
+        "LinkedIn Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://unlimitedgrowth.online/marketing-digital-control-de-plagas/",
+        "https://unlimitedgrowth.online/contacta/",
+        "https://unlimitedgrowth.online/nuestros-clientes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Publicidad para Empresas de Control de Plagas",
+        "Contacta con nosotros",
+        "Agencia Marketing Digital",
+        "Sectores"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "ENVIAR",
+        "contacto con nosotros",
+        "Enviar",
+        "Hablar con especialistas"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://unlimitedgrowth.online/marketing-digital-control-de-plagas/ · 6 campos",
+        "https://unlimitedgrowth.online/marketing-digital-control-de-plagas/ · 6 campos",
+        "https://unlimitedgrowth.online/contacta/ · 6 campos",
+        "https://unlimitedgrowth.online/blog/que-es-geo-y-como-afecta-al-seo-de-tu-empresa/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing sectorial/servicio → CTA «Quiero campañas rentables» / «¡Lo quiero!» → elección de plan o contacto → análisis de situación, público y objetivos → definición de campaña/estrategia y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://unlimitedgrowth.online/marketing-digital-control-de-plagas/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://unlimitedgrowth.online/contacta/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://unlimitedgrowth.online/nuestros-clientes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://unlimitedgrowth.online/nosotros/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://unlimitedgrowth.online/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://unlimitedgrowth.online/blog/que-es-geo-y-como-afecta-al-seo-de-tu-empresa/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://unlimitedgrowth.online/sectores/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://unlimitedgrowth.online/agencia-social-ads/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://unlimitedgrowth.online/agencia-google-ads/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

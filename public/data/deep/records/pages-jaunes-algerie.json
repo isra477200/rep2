@@ -1,0 +1,498 @@
+{
+  "id": "pages-jaunes-algerie",
+  "name": "Pages Jaunes Algérie",
+  "reviewedAt": "2026-08-22T15:50:18.890Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Foire Internationale d’Alger (FIA)",
+    "heroObserved": true,
+    "priorSummary": "Empresas aparecen en el directorio y pueden contratar Digital Boost, EMailer o Easy Prospect; usuarios buscan y contactan.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas. Usa 231 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 389 palabras por página comercial recuperada. Muestras breves: “Foire Internationale d’Alger (FIA)” · “Contactez Pages Jaunes Algérie” · “Pages Jaunes Algérie”.",
+    "supportingHeadings": [
+      "Nos Annonceurs",
+      "GEMA SOCIÉTÉ GÉNÉRALE MARITIME",
+      "QUINCAILLERIE EL MERDJA,SARL",
+      "ATS ALGÉRIE TELECOM SATELLITE",
+      "SMICOM SOCIÉTÉ DE MAINTENANCE INDUSTRIELLE & CONSTRUCTION MÉTALLIQUE,SARL",
+      "Secteurs d'activités",
+      "Assurances",
+      "Transports et transit",
+      "Tourisme",
+      "Travaux publics & bâtiment",
+      "Ind. électrique, électronique & informatique",
+      "Industrie métallurgique & mécanique",
+      "Industrie chimique & plastique",
+      "Arts graphiques et dérivés",
+      "Industrie du bois et des meubles",
+      "Industrie du textile & de l'habillement",
+      "Industrie agro-alimentaire",
+      "Eau, Gaz & Electricité",
+      "Industrie extractive",
+      "Production agricole",
+      "Communications & télécommunications",
+      "Production artisanale",
+      "Solution de Prospection",
+      "EasyProspect de Pages Jaunes Algérie",
+      "Nos Offres",
+      "Digital Boost",
+      "EasyProspect",
+      "Emailer",
+      "Soyez Présents Sur Nos Différents Supports",
+      "Évènements"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Chercher",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://pagesjaunes-dz.com/",
+      "text": "Chercher",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 48
+    },
+    "ctas": [
+      "Envoyer",
+      "Valider",
+      "Chercher"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://pagesjaunes-dz.com/Companies/contactus",
+        "index": 1,
+        "action": "https://pagesjaunes-dz.com/Companies/contactus",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nom",
+            "label": null,
+            "placeholder": "Votre nom *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email Address*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "tel",
+            "label": null,
+            "placeholder": "Téléphone *",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "objet",
+            "label": null,
+            "placeholder": "Objet *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Votre Message",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://pagesjaunes-dz.com/Companies/referencer_entreprise",
+        "index": 1,
+        "action": "https://pagesjaunes-dz.com/Companies/referencer_entreprise",
+        "method": "POST",
+        "submitText": "Valider",
+        "visibleFieldCount": 21,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "abv_company_name",
+            "label": null,
+            "placeholder": "Sigle",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company_name",
+            "label": null,
+            "placeholder": "Nom d'entreprise",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "key_words",
+            "label": null,
+            "placeholder": "Maximum 5, Séparé par des virgules",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": null,
+            "placeholder": "Adresse de l'entreprise",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "wilaya",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "town",
+            "label": null,
+            "placeholder": "Ville",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "latitude",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "longitude",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Téléphone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "fax",
+            "label": null,
+            "placeholder": "Fax",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "web_site",
+            "label": null,
+            "placeholder": "Site web",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "facebook",
+            "label": null,
+            "placeholder": "Facebook",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Nom dirigeant",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Prénom dirigeant",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Fonction Dirigeant",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Téléphone dirigeant",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Email Dirigeant",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "activity",
+            "label": null,
+            "placeholder": "Détail de l'activité de votre entreprise",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 21 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: abv_company_name, company_name, sector, web_site.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 21,
+      "qualification": [
+        "abv_company_name",
+        "company_name",
+        "sector",
+        "web_site"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Empresas aparecen en el directorio y pueden contratar Digital Boost, EMailer o Easy Prospect; usuarios buscan y contactan.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "Tenders DZ, La plateforme dédiée aux appels d’offres et marchés publics en Algérie Vous Avez Des Questions ?"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Tenders DZ, La plateforme dédiée aux appels d’offres et marchés publics en Algérie Vous Avez Des Questions ?",
+          "url": "https://pagesjaunes-dz.com/",
+          "pageTitle": "Annuaire des Entreprises Algeriennes, des activités professionnelles, industrielles, commerciales et artisanales en Algérie, Pages Jaunes Algérie",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://pagesjaunes-dz.com/",
+        "https://pagesjaunes-dz.com/Companies/contactus",
+        "https://pagesjaunes-dz.com/Companies/referencer_entreprise"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Foire Internationale d’Alger (FIA)",
+        "Contactez Pages Jaunes Algérie",
+        "Pages Jaunes Algérie",
+        "Authentification"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Chercher",
+        "Envoyer",
+        "Valider"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://pagesjaunes-dz.com/Companies/contactus · 5 campos",
+        "https://pagesjaunes-dz.com/Companies/referencer_entreprise · 21 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://pagesjaunes-dz.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://pagesjaunes-dz.com/Companies/contactus",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://pagesjaunes-dz.com/Companies/referencer_entreprise",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://pagesjaunes-dz.com/Companies",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://pagesjaunes-dz.com/Companies/detail/dd18a9eed52f06df76ddea3b1bd88721/eis-electronique-industrie-service",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://pagesjaunes-dz.com/Companies/detail/1ea73a34f2411bfc56bb15865918a103/eis-electronique-industrie-service",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://pagesjaunes-dz.com/Users/login",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.pagesjaunes-dz.com/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.pagesjaunes-dz.com/qui-sommes-nous",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Chercher”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

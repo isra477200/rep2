@@ -1,0 +1,321 @@
+{
+  "id": "filkhedma",
+  "name": "FilKhedma",
+  "reviewedAt": "2026-08-22T15:50:18.490Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Everything Your Home Needs, All in One Place",
+    "heroObserved": true,
+    "priorSummary": "Servicios verificados para mantenimiento, limpieza y reparaciones del hogar; reserva por app/web/teléfono; garantía de 1 mes salvo limpieza.",
+    "voice": "Tono orientado al lector, autoridad basada en prueba, urgencia comercial, conciso, orientado a la acción, apoya la venta en reversión de riesgo. Usa 12 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 247 palabras por página comercial recuperada. Muestras breves: “Everything Your Home Needs, All in One Place” · “Why become a SweepStar?” · “كل خدماتك المنزليّة في مكان واحد”.",
+    "supportingHeadings": [
+      "Everything Your Home Needs, All in One Place",
+      "Why choose FILKHEDMA?",
+      "Giving your home what it deserves with a click!",
+      "Why become a SweepStar?",
+      "Work with a company that has over 10 years experience in servicing customers.",
+      "House Work",
+      "Garden Work",
+      "To be a SweepStar you need:",
+      "SweepStar Reviews:",
+      "كل خدماتك المنزليّة في مكان واحد",
+      "لماذا تختار في الخدمة ؟",
+      "!نوفر لمنزلك كل ما يستحقه بضغطة زر",
+      "ترغب في العمل مع في الخدمة؟"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Apply for Work",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.filkhedma.com/",
+      "text": "Apply for Work",
+      "href": "https://www.filkhedma.com/apply-as-a-worker/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.5
+    },
+    "ctas": [
+      "Book now",
+      "احجز الآن",
+      "تواصل معنا",
+      "Book a Service",
+      "Apply Now",
+      "Contact Us",
+      "Apply for Work",
+      "Apply as a Worker",
+      "Apply for House Work",
+      "Apply for Garden Work"
+    ],
+    "captureType": "Intención de agenda",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Servicios verificados para mantenimiento, limpieza y reparaciones del hogar; reserva por app/web/teléfono; garantía de 1 mes salvo limpieza.",
+    "audience": "Hogares y empresas en Egipto que reservan mantenimiento, reparación, limpieza, climatización y facility services.",
+    "prices": [],
+    "guarantee": [
+      "1 month quality guarantee Flexible scheduling & punctuality Trusted technicians & certified cleaners HOW IT WORKS Giving your home what it deserves with a click!"
+    ],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "SweepStar Reviews: “I’m a single mother and raising my kids with money earned with Sweepsouth.” – Bongiwe “Working with Sweepsouth has helped boost my confidence, I have gained experience because each client teaches me new things.”— Yvonne “It made me a strong woman, I can",
+      "Apply Now Why choose FILKHEDMA?"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "1 month quality guarantee Flexible scheduling & punctuality Trusted technicians & certified cleaners HOW IT WORKS Giving your home what it deserves with a click!",
+          "url": "https://www.filkhedma.com/",
+          "pageTitle": "Home Services | FilKhedma",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Meta Ads",
+        "Google Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.filkhedma.com/",
+        "https://www.filkhedma.com/apply-as-a-worker/",
+        "https://www.filkhedma.com/ar/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Everything Your Home Needs, All in One Place",
+        "Why become a SweepStar?",
+        "كل خدماتك المنزليّة في مكان واحد"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Book a Service",
+        "Apply for Work",
+        "Apply Now",
+        "Book now",
+        "Contact Us",
+        "Apply as a Worker",
+        "Apply for House Work",
+        "Apply for Garden Work"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Book a Service",
+        "Book now",
+        "Book a Service",
+        "احجز الآن"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El usuario reserva por app, web, 19125 o WhatsApp, elige servicio, dirección y franja → ve mínimo público y materiales separados → FilKhedma asigna un profesional verificado y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.filkhedma.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.filkhedma.com/apply-as-a-worker/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.filkhedma.com/ar/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.filkhedma.com/help",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://adstransparency.google.com/advertiser/AR13492931337123790849?region=anywhere",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&q=FilKhedma&search_type=keyword_unordered",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR13492931337123790849?region=EG",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?id=814309841738351",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?id=1050381410710797",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?id=1926991097992281",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?id=1409988157894421",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.facebook.com/ads/library/?id=1022228506862027",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=1330438179194591",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.facebook.com/ads/library/?id=1337299807897705",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.facebook.com/ads/library/?id=1635643157736916",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR13492931337123790849/creative/CR08834766763167055873?region=EG",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR13492931337123790849/creative/CR02449463262438227969?region=EG",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR13492931337123790849/creative/CR02932517976521310209?region=EG",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&is_targeted_country=false&media_type=all&search_type=page&sort_data\\",
+      "label": "Fuente pública 20"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.filkhedma.com/help: HTTP 404",
+    "https://www.filkhedma.com/aboutus: HTTP 404",
+    "https://www.filkhedma.com/contactus: HTTP 404",
+    "https://www.filkhedma.com/apply/indoor/: HTTP 404",
+    "https://www.filkhedma.com/apply/outdoor/: HTTP 404",
+    "https://www.filkhedma.com/privacy: fetch failed",
+    "https://www.filkhedma.com/terms: fetch failed",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Apply for Work”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

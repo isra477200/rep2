@@ -1,4 +1,4 @@
-# RedVitalia Radar Global
+# Inteligencia Mundial de Captación · RedVitalia
 
 Portal de inteligencia competitiva sobre agencias y sistemas de captación de
 clientes a escala mundial.
@@ -7,9 +7,10 @@ clientes a escala mundial.
 
 - 712 empresas canónicas.
 - 195 Estados auditados y 9 registros de mercados especiales.
-- 3.974 materiales locales vinculados a su ficha madre.
-- 8.817 fuentes públicas únicas.
+- 3.957 materiales locales verificados y vinculados a su ficha madre.
+- 6.275 fuentes públicas únicas en la base consolidada.
 - 245 precios convertibles a euros con conservación de la moneda original.
+- Auditoría comercial y funnel estructurado para las 712 fichas.
 
 ## Uso local
 

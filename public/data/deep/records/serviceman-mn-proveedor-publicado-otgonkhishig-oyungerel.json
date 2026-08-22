@@ -1,0 +1,284 @@
+{
+  "id": "serviceman-mn-proveedor-publicado-otgonkhishig-oyungerel",
+  "name": "ServiceMan.mn — proveedor publicado: Otgonkhishig Oyungerel",
+  "reviewedAt": "2026-08-22T15:50:18.541Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Монголын хамгийн том үйлчилгээний платформ",
+    "heroObserved": true,
+    "priorSummary": "Sitio que se presenta como plataforma de profesionales locales para electricidad, fontanería, construcción, carpintería, automóvil, limpieza y otros servicios.",
+    "voice": "Tono cuantitativo, consultivo / basado en preguntas, orientado a la acción. Usa 113 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 566 palabras por página comercial recuperada. Muestras breves: “Монголын хамгийн том үйлчилгээний платформ” · “Холбоо барих” · “Бидний үйлчилгээнүүд”.",
+    "supportingHeadings": [
+      "Монголын хамгийн том үйлчилгээний платформ",
+      "Яагаад Service Man сонгох ёстой вэ?",
+      "Хурдан олох",
+      "Аюулгүй байдал",
+      "Чанартай үйлчилгээ",
+      "Бидний үйлчилгээнүүд",
+      "Цахилгаанчин",
+      "Сантекник",
+      "Барилгын ажил",
+      "Модон эдлэл",
+      "Автомашин засвар",
+      "Цэвэрлэгээ",
+      "Хувилгаанчин",
+      "Тусгай үйлчилгээ",
+      "Одоо эхлээрэй",
+      "Холбоо барих",
+      "Бидэнд захиа илгээх",
+      "Холбоо барих мэдээлэл",
+      "Түгээмэл асуултууд",
+      "Service Man платформ хэрхэн ажилладаг вэ?",
+      "Үйлчилгээний төлбөр хэрхэн төлөх вэ?",
+      "Үйлчилгээ үзүүлэгч болж бүртгүүлэх боломжтой юу?",
+      "Халаалтын систем",
+      "Хүссэн үйлчилгээгээ олоорой",
+      "Бидний тухай",
+      "Бидний зорилго",
+      "Бидний үнэт зүйлс",
+      "Бидний түүх",
+      "Бидний баг",
+      "Бидэнтэй хамтран ажиллахыг хүсэж байна уу?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Холбоо барих",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://serviceman.mn/",
+      "text": "Холбоо барих",
+      "href": "https://serviceman.mn/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 162
+    },
+    "ctas": [
+      "Download on the App Store",
+      "Илгээх",
+      "Холбоо барих"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://serviceman.mn/contact/",
+        "index": 1,
+        "action": "https://serviceman.mn/contact/",
+        "method": "GET",
+        "submitText": "Илгээх",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Нэр *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "И-мэйл *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Сэдэв",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Мессеж *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Sitio que se presenta como plataforma de profesionales locales para electricidad, fontanería, construcción, carpintería, automóvil, limpieza y otros servicios.",
+    "audience": "Consumidores y profesionales de servicios locales en Mongolia.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://serviceman.mn/",
+        "https://serviceman.mn/contact/",
+        "https://serviceman.mn/services/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Монголын хамгийн том үйлчилгээний платформ",
+        "Холбоо барих",
+        "Бидний үйлчилгээнүүд",
+        "Үйлчилгээний нөхцөл ба Нууцлалын бодлого"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Холбоо барих",
+        "Download on the App Store",
+        "Илгээх"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://serviceman.mn/contact/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada/CTA: descargar la app y registrarse con teléfono o Facebook/Google; el cliente busca un servicio cercano y el empleador puede publicar un trabajo. | Cualificación: muestra perfiles de"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://serviceman.mn/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://serviceman.mn/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://serviceman.mn/services/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://serviceman.mn/about/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://serviceman.mn/terms/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=serviceman.mn",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&q=serviceman.mn&search_type=keyword_unordered",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Serviceman.mn&search_type=keyword_unordered",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://serviceman.mn/cdn-cgi/l/email-protection: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Холбоо барих”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

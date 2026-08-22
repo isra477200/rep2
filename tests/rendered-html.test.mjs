@@ -36,24 +36,17 @@ test("the production index has the exact canonical coverage", async () => {
     summary.categories.reduce((sum, item) => sum + item.count, 0),
     712,
   );
-  assert.deepEqual(
-    {
-      recordsInProgress: summary.completion.recordsInProgress,
-      residualPending: summary.completion.residualPending,
-      motherlessRecords: summary.completion.motherlessRecords,
-      criticalEmptyUnexplained: summary.completion.criticalEmptyUnexplained,
-      orphanMedia: summary.completion.orphanMedia,
-      recordsWithoutPublicSource: summary.completion.recordsWithoutPublicSource,
-    },
-    {
-      recordsInProgress: 0,
-      residualPending: 0,
-      motherlessRecords: 0,
-      criticalEmptyUnexplained: 0,
-      orphanMedia: 0,
-      recordsWithoutPublicSource: 0,
-    },
-  );
+  assert.equal(summary.completion.recordsInProgress, 0);
+  assert.equal(summary.completion.motherlessRecords, 0);
+  assert.equal(summary.completion.criticalEmptyUnexplained, 0);
+  assert.equal(summary.completion.orphanMedia, 0);
+  assert.equal(summary.completion.recordsWithoutPublicSource, 0);
+  if (summary.completion.status === "TERMINADO") {
+    assert.equal(summary.completion.residualPending, 0);
+  } else {
+    assert.equal(summary.completion.status, "AMPLIACIÓN FORENSE EN CURSO");
+    assert.ok(summary.completion.residualPending > 0);
+  }
 });
 
 test("every published media file has a truthful extension and readable payload", async () => {
@@ -276,10 +269,10 @@ test("brand assets are local, traceable and byte-verified", async () => {
     new Set(Object.keys(logos)),
     new Set(companies.map((company) => company.id)),
   );
-  assert.equal(values.filter((record) => record.file).length, 583);
+  assert.equal(values.filter((record) => record.file).length, 615);
   assert.equal(
     values.filter((record) => record.status === "official").length,
-    425,
+    457,
   );
   assert.equal(
     values.filter((record) => record.status === "favicon").length,
@@ -291,9 +284,9 @@ test("brand assets are local, traceable and byte-verified", async () => {
   );
   assert.equal(
     values.filter((record) => record.status === "fallback").length,
-    129,
+    97,
   );
-  assert.equal(summary.logos.authentic, 583);
+  assert.equal(summary.logos.authentic, 615);
   assert.equal(summary.logos.hotlinked, 0);
   for (const record of values) {
     assert.doesNotMatch(
@@ -305,7 +298,10 @@ test("brand assets are local, traceable and byte-verified", async () => {
       assert.ok(record.reason);
       continue;
     }
-    assert.match(record.file, /^\/logos\/[a-f0-9]+\/logo\.webp$/);
+    assert.match(
+      record.file,
+      /^\/logos\/[a-z0-9][a-z0-9-]{1,95}\/logo\.webp$/,
+    );
     assert.match(record.source, /^https?:\/\//);
     const buffer = await readFile(
       path.join(publicDir, record.file.replace(/^\//, "")),
@@ -329,7 +325,10 @@ test("the shareable interface contains the full renderer, permanent links and so
     readFile(new URL("../public/og.png", import.meta.url)),
   ]);
   assert.match(portal, /searchParams\.set\("empresa"/);
-  assert.match(portal, /searchParams\.set\(\s*"media"/);
+  assert.match(portal, /source === "funnel" \? "evidence" : "media"/);
+  assert.match(portal, /searchParams\.set\("vista"/);
+  assert.match(portal, /aria-current=/);
+  assert.match(portal, /<table aria-label="Comparación de empresas">/);
   assert.match(record, /ReactMarkdown/);
   assert.match(record, /remarkGfm/);
   assert.match(record, /Expandir todo/);

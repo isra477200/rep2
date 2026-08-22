@@ -1,0 +1,955 @@
+{
+  "id": "companeo",
+  "name": "Companeo",
+  "reviewedAt": "2026-08-22T15:50:18.568Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Conecta compradores B2B con proveedores mediante solicitudes verificadas por hablantes nativos y ajustadas a capacidad comercial.",
+    "heroObserved": true,
+    "priorSummary": "Marketplace B2B con leads verificados manualmente en más de 50 categorías y opción compartida/exclusiva.",
+    "voice": "Revisión manual: corporativo, orientado a ROI, internacional, pragmático, de escala. Distingue lead compartido y exclusivo. Vende verificación humana y nativa como control de calidad. Pregunta por número de comerciales antes de ofrecer volumen.",
+    "supportingHeadings": [
+      "CONSIGA MAIS CLIENTES COM A COMPANEO",
+      "Gestão do público",
+      "Geração de Leads",
+      "Qualificação das Leads",
+      "Envio das Leads",
+      "Leads exclusivas",
+      "Leads partilhadas",
+      "CARTÕES DE COMBUSTÍVEL",
+      "LOCALIZAÇÃO",
+      "CAIXAS REGISTADORAS / POS",
+      "SOLUÇÕES DE PAGAMENTO / TPA",
+      "FOTOCOPIADORAS/ IMPRESSORAS",
+      "SEGUROS",
+      "CONTABILISTAS",
+      "SOLUÇÕES DE SEGURANÇA",
+      "Sobre",
+      "Ligações úteis e contactos",
+      "O nosso boletim informativo",
+      "Contacte as PME que estão à procura do seu produto ou serviço!",
+      "Principais benefícios:",
+      "¡ Contacte las PME que están demandando su servicio !",
+      "Ventajas principales",
+      "Acerca de",
+      "Enlaces útiles y contacto",
+      "Nuestro boletín",
+      "Acerca de nosotros",
+      "Infopro Digital Group",
+      "Sobre Companeo",
+      "Presencia internacional",
+      "Contactos"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://pro.companeo.com/en/contact-us/",
+      "text": "Contact us",
+      "href": "https://pro.companeo.com/en/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Contacto",
+      "Contact us",
+      "Invia",
+      "Enviar",
+      "Submit",
+      "Contáctenos"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://pro.companeo.com/pt/work-with-us-pt/",
+        "index": 1,
+        "action": "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D40000000N3O7",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 15,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "select",
+            "name": "recordType",
+            "label": "Type d'enregistrement de piste",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NUX000002tex2",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "lead_source",
+            "label": "Origine de la piste",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00N40000002p1bA",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NUX0000051sMr",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00N1W000003LV0v",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00N1W000003Gavq",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Nome da empresa *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NUX0000051scz",
+            "label": "Atividade *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00NUX0000051W4b",
+            "label": "Número de vendedores *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "first_name",
+            "label": "Nome *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "last_name",
+            "label": "Sobrenome *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Endereço de e-mail *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Telefone *",
+            "placeholder": "+351 XXX XX XX XX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Description_li_e_au_contact__c",
+            "label": "A sua necessidade (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://pro.companeo.com/es/contacto/",
+        "index": 1,
+        "action": "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D40000000N3O7",
+        "method": "POST",
+        "submitText": "Invia",
+        "visibleFieldCount": 15,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "select",
+            "name": "recordType",
+            "label": "Type d'enregistrement de piste",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NUX000002tex2",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "lead_source",
+            "label": "Origine de la piste",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00N40000002p1bA",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NUX0000051sMr",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00N1W000003LV0v",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00N1W000003Gavq",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Nombre de la empresa *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NUX0000051scz",
+            "label": "Actividad *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00NUX0000051W4b",
+            "label": "Número de vendedores *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "first_name",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "last_name",
+            "label": "Apellido *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Dirección email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono *",
+            "placeholder": "+34 XXX XX XX XX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Description_li_e_au_contact__c",
+            "label": "Su necesidad (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://pro.companeo.com/en/contact-us/",
+        "index": 1,
+        "action": "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D7Q000000IonB",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 13,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "select",
+            "name": "00NJv0000007oWL",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "lead_source",
+            "label": "Origine de la piste",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NJv0000007ubl",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00NJv0000007uiD",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "00NJv0000007ugb",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "00NJv000005jkqD",
+            "label": "Activity :",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "00NJv0000007uYX",
+            "label": "Number of salespeople :",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "first_name",
+            "label": "First name",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "last_name",
+            "label": "Last Name",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "countryCode",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone *",
+            "placeholder": "01 02 03 04 05",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 13 y 15 campos visibles, mínimo 4 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Nome da empresa *, Nombre de la empresa *, Company*.",
+      "friction": "Alta",
+      "minFields": 13,
+      "maxFields": 15,
+      "qualification": [
+        "Nome da empresa *",
+        "Nombre de la empresa *",
+        "Company*"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Salesforce / Pardot"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketplace B2B con leads verificados manualmente en más de 50 categorías y opción compartida/exclusiva.",
+    "audience": "Proveedores B2B en más de 50 categorías; operación localizada para Portugal.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío",
+        "Partners / afiliación"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://pro.companeo.com/pt/work-with-us-pt/",
+        "https://pro.companeo.com/pt/contactar-nos/",
+        "https://pro.companeo.com/es/contacto/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "CONSIGA MAIS CLIENTES COM A COMPANEO",
+        "Contacte as PME que estão à procura do seu produto ou serviço!",
+        "¡ Contacte las PME que están demandando su servicio !",
+        "Contact us and find new customers !"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Enviar",
+        "Contacto",
+        "Invia",
+        "Contáctenos",
+        "Contact us",
+        "Submit"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://pro.companeo.com/pt/work-with-us-pt/ · 15 campos",
+        "https://pro.companeo.com/pt/contactar-nos/ · 15 campos",
+        "https://pro.companeo.com/es/contacto/ · 15 campos",
+        "https://pro.companeo.com/en/contact-us/ · 13 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "La empresa compradora publica gratis una petición de presupuesto con necesidad y datos → agentes de Companeo verifican manualmente la solicitud → matching con proveedores de la categoría"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Demanda [observado] → Validación [observado] → Matching [inferido] → Distribución [observado] → Venta [observado] → Feedback [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://pro.companeo.com/pt/work-with-us-pt/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://pro.companeo.com/pt/contactar-nos/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://pro.companeo.com/es/contacto/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://pro.companeo.com/es/acerca-de-nosotros/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://pro.companeo.com/en/contact-us/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://pro.companeo.com/es/work-with-us-es/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://pro.companeo.com/en/about/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=pro.companeo.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?id=2284657532343559",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://fb.me/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?id=1569591358215637",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.companeo.com/caisse-enregistreuse/devis-express/media/6211_0326?qcp=FBK_FR_AD_6211_MULE_426_ALL_LAL_X_2",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=1933396317360451",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "http://fb.me/",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.facebook.com/ads/library/?id=1027163533118010",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "http://fb.me/",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://www.facebook.com/ads/library/?id=892849983588293",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://www.companeo.it/macchina-caffe/devis-express/media/7197_0625?qcp=FBK_IT_AD_7197_TZ_326_ALL_LAL_X_1",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://www.facebook.com/ads/library/?id=2511193049304934",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "http://fb.me/",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.facebook.com/ads/library/?id=28208361025472985",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "http://fb.me/",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?id=28170430529249850",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://www.companeo.it/macchina-caffe/devis-express/media/7197_2020?qcp=FBK_IT_AD_7197_R1_1025_ALL_US_X_1",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.facebook.com/ads/library/?id=2125527164663895",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://www.companeo.be/nl_BE/verkooppunten/spoed-offerte-aanvraag/media/5280_0326?qcp=FBK_BENL_AD_5280_MULE_526_ALL_RMK_X_1",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?id=1449275629974108",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://www.companeo.de/tankkarten/express-angebot/media/680_2020?qcp=FBK_DE_AD_680_RESP16_1025_ALL_INT_M_5",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?id=1452461176465549",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact us”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 13 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Salesforce / Pardot) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Conecta compradores B2B con proveedores mediante solicitudes verificadas por hablantes nativos y ajustadas a capacidad comercial.",
+      "promise": "Entregar oportunidades cualificadas, compartidas o exclusivas, con control de volumen y retorno medible.",
+      "positioning": "Marketplace B2B paneuropeo que capta solicitudes, las valida manualmente y vende leads compartidos o exclusivos",
+      "audience": "Proveedores B2B europeos con equipo de ventas y cobertura de uno o varios mercados.",
+      "voice": [
+        "corporativo",
+        "orientado a ROI",
+        "internacional",
+        "pragmático",
+        "de escala"
+      ],
+      "patterns": [
+        "Distingue lead compartido y exclusivo.",
+        "Vende verificación humana y nativa como control de calidad.",
+        "Pregunta por número de comerciales antes de ofrecer volumen."
+      ]
+    },
+    "cta": {
+      "primary": "Work with us / recibir leads",
+      "secondary": [
+        "Contact",
+        "Elegir mercado"
+      ],
+      "forms": [
+        {
+          "url": "https://pro.companeo.com/pt/work-with-us-pt/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "empresa",
+            "actividad",
+            "número de vendedores",
+            "nombre",
+            "apellido",
+            "email",
+            "teléfono",
+            "necesidad opcional",
+            "campos técnicos de campaña y routing"
+          ],
+          "fieldCount": 15,
+          "friction": "media; preclasifica capacidad",
+          "submitted": false
+        },
+        {
+          "url": "https://pro.companeo.com/es/work-with-us-es/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "empresa",
+            "actividad",
+            "número de comerciales",
+            "nombre",
+            "apellido",
+            "email",
+            "teléfono",
+            "necesidad y routing"
+          ],
+          "fieldCount": 15,
+          "friction": "media",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Demanda",
+        "status": "observado",
+        "detail": "Un comprador B2B completa gratuitamente una solicitud de presupuesto o proveedor."
+      },
+      {
+        "stage": "Validación",
+        "status": "observado",
+        "detail": "Un equipo multilingüe verifica manualmente necesidad y datos."
+      },
+      {
+        "stage": "Matching",
+        "status": "inferido",
+        "detail": "La solicitud se cruza con sector, mercado, volumen y acuerdo de proveedor."
+      },
+      {
+        "stage": "Distribución",
+        "status": "observado",
+        "detail": "El lead se entrega como compartido o exclusivo según modalidad."
+      },
+      {
+        "stage": "Venta",
+        "status": "observado",
+        "detail": "El proveedor contacta y cotiza directamente al comprador."
+      },
+      {
+        "stage": "Feedback",
+        "status": "inferido",
+        "detail": "El retorno del proveedor ajusta calidad, criterios y volumen posterior."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "comprador — solicitud gratuita",
+        "proveedor — pago por lead; CPL, mínimo y volumen no publicados",
+        "modalidades — lead compartido o exclusivo; diferencia económica no publicada"
+      ],
+      "contract": [
+        "duración y mínimos — no observables en las páginas públicas revisadas"
+      ],
+      "guarantee": [
+        "calidad o ROI — se comunica cualificación y ROI claro, pero no se publicó reemplazo, devolución o rendimiento garantizado"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "nginx",
+      "WordPress",
+      "Google Tag Manager",
+      "Salesforce Web-to-Lead",
+      "WhatsApp",
+      "validación humana multilingüe"
+    ],
+    "contradictions": [
+      "Distintas páginas comunican presencia en más de 13 o más de 15 países; puede responder a fecha o alcance y requiere datado.",
+      "La promesa de ROI claro no va acompañada públicamente de CPL, multiplicidad del lead compartido o política de invalidez.",
+      "Qualified y manually verified no incluyen una rúbrica pública de criterios mínimos.",
+      "No se publica cómo cambia precio, competencia o prioridad entre exclusivo y compartido.",
+      "Algunos contadores cargan como 1 cuando falla el script; no se tomaron como métricas válidas."
+    ],
+    "inferences": [
+      "Matching: La solicitud se cruza con sector, mercado, volumen y acuerdo de proveedor.",
+      "Feedback: El retorno del proveedor ajusta calidad, criterios y volumen posterior."
+    ],
+    "notObservable": [
+      "CPL",
+      "número de receptores del lead compartido",
+      "criterios de cualificación",
+      "política de duplicado o inválido",
+      "duración y mínimos",
+      "SLA de contacto",
+      "CRM operativo más allá de entrada Salesforce",
+      "motor de matching",
+      "distribución de leads",
+      "scoring de calidad",
+      "No se verificaron llamada comercial, propuesta, precio, contrato, entrega o feedback de lead."
+    ],
+    "limitations": [
+      "No se pidió propuesta ni se recibió lead.",
+      "No se verificó la llamada de validación humana.",
+      "No se conoce el CPL, contrato o remedio.",
+      "Las métricas de alcance y equipo son autodeclaradas y pueden variar por país o fecha."
+    ],
+    "lessons": {
+      "copy": [
+        "Explicar qué parte de la cualificación realiza una persona y en qué idioma.",
+        "Separar claramente compartido y exclusivo."
+      ],
+      "adapt": [
+        "Preguntar capacidad comercial para no sobreentregar.",
+        "Feedback estructurado de cada lead para recalibrar.",
+        "Ficha de calidad con criterios de validación visibles."
+      ],
+      "avoid": [
+        "Prometer ROI claro sin economía publicada.",
+        "Usar qualified sin rúbrica.",
+        "Cambiar cifra de mercados sin fecha y alcance."
+      ],
+      "test": [
+        "Test de lead exclusivo frente a compartido con economics completos.",
+        "Test de validación humana total frente a verificación automatizada con auditoría humana."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pro.companeo.com/pt/work-with-us-pt/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://pro.companeo.com/es/work-with-us-es/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://pro.companeo.com/en/leads-unitedkingdom/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://pro.companeo.com/es/acerca-de-nosotros/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://pro.companeo.com/es/contacto/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

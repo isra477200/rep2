@@ -1,0 +1,229 @@
+{
+  "id": "naver-smartplace",
+  "name": "Naver SmartPlace",
+  "reviewedAt": "2026-08-22T15:50:20.045Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "네이버스마트플레이스광고주센터톡톡스마트스토어페이교육마이비즈",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, enérgico, consultivo / basado en preguntas, orientado a la acción. Usa 309 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 744 palabras por página comercial recuperada. Muestras breves: “📵스마트플레이스 업체정보 관리 영업 전화를 주의하세요.” · “네이버스마트플레이스광고주센터톡톡스마트스토어페이교육마이비즈”.",
+    "supportingHeadings": [
+      "📵스마트플레이스 업체정보 관리 영업 전화를 주의하세요.",
+      "네이버스마트플레이스광고주센터톡톡스마트스토어페이교육마이비즈"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "로그인",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://new.smartplace.naver.com/introduction/booking/pension",
+      "text": "로그인",
+      "href": "https://new.smartplace.naver.com/introduction/booking/pension",
+      "element": "a",
+      "kind": "conversion",
+      "score": 64.25
+    },
+    "ctas": [
+      "로그인",
+      "회차형",
+      "시작하기",
+      "가입절차",
+      "펜션 예약",
+      "뷰티 예약",
+      "날짜선택형",
+      "병의원 예약",
+      "자세히 보기",
+      "레저시설 예약",
+      "직접 제작하기",
+      "제작지원 신청하기",
+      "· 네이버 예약 온라인 고객센터",
+      "네이버 펜션예약 서비스 FAQ 전체보기"
+    ],
+    "captureType": "Agenda",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://new.smartplace.naver.com/notices/740",
+        "https://new.smartplace.naver.com/introduction/booking/pension",
+        "https://new.smartplace.naver.com/help/policy?menu=term&tab=smartplace"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "📵스마트플레이스 업체정보 관리 영업 전화를 주의하세요.",
+        "네이버스마트플레이스광고주센터톡톡스마트스토어페이교육마이비즈"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "펜션 예약",
+        "레저시설 예약",
+        "뷰티 예약",
+        "병의원 예약",
+        "로그인",
+        "네이버 펜션예약 서비스 FAQ 전체보기",
+        "날짜선택형",
+        "회차형"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "펜션 예약",
+        "레저시설 예약",
+        "뷰티 예약",
+        "병의원 예약",
+        "로그인",
+        "네이버 펜션예약 서비스 FAQ 전체보기",
+        "로그인"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://new.smartplace.naver.com/notices/740",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://new.smartplace.naver.com/introduction/booking/pension",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://new.smartplace.naver.com/help/policy?menu=term&tab=smartplace",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://new.smartplace.naver.com/introduction/booking/leisure",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://new.smartplace.naver.com/introduction/booking/beauty",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://new.smartplace.naver.com/introduction/booking/hospital",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://new.smartplace.naver.com/booking/pension/guide",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “로그인”, manteniendo una sola ruta dominante por landing.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

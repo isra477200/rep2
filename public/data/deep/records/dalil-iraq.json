@@ -1,0 +1,447 @@
+{
+  "id": "dalil-iraq",
+  "name": "Dalil Iraq",
+  "reviewedAt": "2026-08-22T15:50:18.729Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Dalil Iraq Business Directory",
+    "heroObserved": true,
+    "priorSummary": "Alta en dos pasos y verificación; Basic gratuito, Premium con hasta 3 categorías/prioridad/badge/descripción, y Sponsor exclusivo por sector con banner y página dedicada. Pago en efectivo en Erbil, FastPay o PayPal.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, orientado a la acción. Usa 42 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 427 palabras por página comercial recuperada. Muestras breves: “Dalil Iraq Business Directory” · “Contact Us” · “Pricing & Packages”.",
+    "supportingHeadings": [
+      "More than 6500+ listed businesses",
+      "Explore the directory by City, Business Type, or Business Name.",
+      "Popular Sectors",
+      "Dalil Iraq Business Directory",
+      "Featured Cities",
+      "Baghdad",
+      "Erbil",
+      "Duhok",
+      "Sulaymaniyah",
+      "Numbers & Stats",
+      "Contact Us",
+      "Pricing & Packages",
+      "This sector is sponsored by PIT Designs",
+      "Frequently Asked Questions",
+      "General Information",
+      "What is the Iraq Business Directory website for?",
+      "How many businesses are listed in the Iraq business directory?",
+      "Why is Iraq Business Directory the better than Yellow Pages?",
+      "Is it free to register at Iraq Business Directory?",
+      "What is the best alternative for Yellow Pages Iraq?",
+      "My business is not in Iraq, can I still get listed?",
+      "PACKAGES & BENEFITS",
+      "Can I become a sponsor in Iraq Business Directory?",
+      "What are the benefits of becoming a sponsor in Iraq Business Directory?",
+      "What is the price for Sponsorship at Iraq Business Directory?",
+      "What is the price for premium business at Iraq Business Directory?",
+      "Taj Company",
+      "Computer Services",
+      "Scan QR Code",
+      "Add Your Business"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://daliliraq.com/",
+      "text": "Contact",
+      "href": "https://daliliraq.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Apply",
+      "Contact",
+      "Submit",
+      "Add A Business",
+      "Become a Sponsor",
+      "Upgrade to Premium",
+      "Edit Business Information",
+      "I don't have a website - I need one."
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://daliliraq.com/contact/add-a-business/",
+        "index": 1,
+        "action": "https://daliliraq.com/contact/add-a-business/",
+        "method": "POST",
+        "submitText": "Previous",
+        "visibleFieldCount": 18,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 16,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_1",
+            "label": "Business Name*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_3",
+            "label": "Email*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_4",
+            "label": "Secondary Email (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "input_5",
+            "label": "Phone 1*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "input_6",
+            "label": "Phone 2 (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_7.1",
+            "label": "Street Address",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_7.3",
+            "label": "City",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_7.6",
+            "label": "Country",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "input_8",
+            "label": "Website",
+            "placeholder": "http://",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "input_21",
+            "label": "Basic (Free)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "input_18",
+            "label": "Additional Information",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "input_31",
+            "label": "Upload Logo",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_26",
+            "label": "Sector 1",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_28",
+            "label": "Sector 2",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_27",
+            "label": "Sector 3",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_29",
+            "label": "Sponsoring",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_22",
+            "label": "Number of Months*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Coupon",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 18 y 18 campos visibles, mínimo 7 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: City, Website, Sector 1, Sector 2, Sector 3.",
+      "friction": "Alta",
+      "minFields": 18,
+      "maxFields": 18,
+      "qualification": [
+        "City",
+        "Website",
+        "Sector 1",
+        "Sector 2",
+        "Sector 3"
+      ]
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp",
+      "Gravity Forms"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Alta en dos pasos y verificación; Basic gratuito, Premium con hasta 3 categorías/prioridad/badge/descripción, y Sponsor exclusivo por sector con banner y página dedicada. Pago en efectivo en Erbil, FastPay o PayPal.",
+    "audience": null,
+    "prices": [
+      "…EntryGet Basic Premium Premium Business Listing Detailed listingListing in 3 categoriesPremium Business badge Normally 8$ per Month $5 monthly 36$ Savings*Upgrade Business Sponsor Full Sponsorship Premium business featuresSponsoring entire categoryPremium Business badge Normally 20$ per Month $15 monthly 60$ Savings*Become a…"
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "…aniyah Duhok All Contact Add A Business Become a Sponsor Upgrade to Premium Edit Business Information Packages Benefits FAQ Sponsors You're browsing: Dalil Iraq > Computer Services This sector is sponsored by PIT Designs Sun Pc Sun Pc for Computer Services in Baghdad Zafeer International Trading Co.",
+      "For PayPal & Money Transfer in Iraq contact itsepayDalil Iraq Cities Erbil Baghdad Sulaymaniyah Duhok All Contact Add A Business Become a Sponsor Upgrade to Premium Edit Business Information Packages Benefits FAQ Sponsors More than 6500+ listed businessesExplore the directory by City, Business Type, or"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…EntryGet Basic Premium Premium Business Listing Detailed listingListing in 3 categoriesPremium Business badge Normally 8$ per Month $5 monthly 36$ Savings*Upgrade Business Sponsor Full Sponsorship Premium business featuresSponsoring entire categoryPremium Business badge Normally 20$ per Month $15 monthly 60$ Savings*Become a…",
+          "url": "https://daliliraq.com/pricing-packages/",
+          "pageTitle": "Pricing & Packages - Dalil Iraq",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "For PayPal & Money Transfer in Iraq contact itsepayDalil Iraq Cities Erbil Baghdad Sulaymaniyah Duhok All Contact Add A Business Become a Sponsor Upgrade to Premium Edit Business Information Packages Benefits FAQ Sponsors More than 6500+ listed businessesExplore the directory by City, Business Type, or",
+          "url": "https://daliliraq.com/",
+          "pageTitle": "Dalil Iraq - Iraq Business Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…aniyah Duhok All Contact Add A Business Become a Sponsor Upgrade to Premium Edit Business Information Packages Benefits FAQ Sponsors You're browsing: Dalil Iraq > Computer Services This sector is sponsored by PIT Designs Sun Pc Sun Pc for Computer Services in Baghdad Zafeer International Trading Co.",
+          "url": "https://daliliraq.com/business_type/computer-services/",
+          "pageTitle": "Computer Services - Dalil Iraq",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://daliliraq.com/",
+        "https://daliliraq.com/contact/",
+        "https://daliliraq.com/pricing-packages/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Dalil Iraq Business Directory",
+        "Contact Us",
+        "Pricing & Packages",
+        "This sector is sponsored by PIT Designs"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Add A Business",
+        "Become a Sponsor",
+        "Upgrade to Premium",
+        "Edit Business Information",
+        "I don't have a website - I need one.",
+        "Apply",
+        "Submit"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://daliliraq.com/contact/add-a-business/ · 18 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://daliliraq.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://daliliraq.com/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://daliliraq.com/pricing-packages/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://daliliraq.com/business_type/computer-services/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://daliliraq.com/faq/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://daliliraq.com/listings/taj-company-2553/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://daliliraq.com/contact/add-a-business/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://daliliraq.com/membership-benefits/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 18 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp, Gravity Forms) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

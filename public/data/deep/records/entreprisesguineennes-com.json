@@ -1,0 +1,526 @@
+{
+  "id": "entreprisesguineennes-com",
+  "name": "entreprisesguineennes.com",
+  "reviewedAt": "2026-08-22T15:50:18.746Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Nos services",
+    "heroObserved": true,
+    "priorSummary": "Buscar 934 establecimientos, añadir ficha, socio, promociones, reservas, empleo y geolocalización.",
+    "voice": "Tono cuantitativo, explicativo, orientado a la acción. Usa 160 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1267 palabras por página comercial recuperada. Muestras breves: “Se connecter” · “Nos services” · “INTERNATIONAL BUSINESS LOGISTICS import et export agences de voyage prestation de service fret transit”.",
+    "supportingHeadings": [
+      "Se connecter",
+      "Entreprises",
+      "Société Guinéenne Du Patrimoine MINIER",
+      "Dépôt Grand Moulin de Conakry",
+      "GALERIE MARIFALA",
+      "Ministère de l'Industrie et des Petites et Moyennes Entreprises",
+      "Sonoco SA",
+      "Silvio Massimo",
+      "Super Sécurite",
+      "Go Africa Online Guinee",
+      "Loumo vêtements Luxe (LVL) Nongo Conteya",
+      "SETA MOTORS",
+      "Garage CANAGUI",
+      "GUICOPRES SA",
+      "Orange Guinée",
+      "Galerie Afrique Étoile",
+      "Guinee HIT Music Siege",
+      "electroniquePro (ePro)",
+      "Icône Publicité",
+      "INTERNATIONAL BUSINESS LOGISTICS",
+      "Entreprise Guinéenne de Commerce et Travaux de Qualité - EGUICOTRAQ",
+      "Baldez'Arts Communication & Imagerie",
+      "Nos partenaires",
+      "BCRG - Central Bank of the Republic",
+      "Préférences de confidentialité",
+      "Color Switcher",
+      "Nos bureaux",
+      "Nos services",
+      "Comment ça fonctionne ?",
+      "Prêt à booster votre activité ?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://entreprisesguineennes.com/establishment/search/establishmen/list?list=all",
+      "text": "Contact",
+      "href": "https://entreprisesguineennes.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223.25
+    },
+    "ctas": [
+      "Facebook",
+      "Contact",
+      "Voir",
+      "Blog",
+      "Envoyé",
+      "Presse",
+      "LinkedIn",
+      "Sécurité",
+      "Instagram",
+      "Carrières",
+      "Promotions",
+      "X / Twitter",
+      "Se connecter",
+      "Centre d'aide",
+      "Investisseurs",
+      "MoccineDesign",
+      "Créer un compte",
+      "Géolocalisation",
+      "À propos de nous",
+      "Mentions légales",
+      "Devenir partenaire",
+      "Système de notation",
+      "Réservation en ligne",
+      "Signaler un problème",
+      "Nouveaux établissements",
+      "Ajouter un établissement",
+      "Conditions d'utilisation",
+      "Politique de confidentialité",
+      "www.entreprisesguineennes.com",
+      "contat@entreprisesguineennes.com"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://entreprisesguineennes.com/contact",
+        "index": 1,
+        "action": "https://entreprisesguineennes.com/contact/agence",
+        "method": "POST",
+        "submitText": "Envoyé",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "contact[name]",
+            "label": "Name",
+            "placeholder": "Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact[object]",
+            "label": "Object",
+            "placeholder": "objet",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "contact[message]",
+            "label": "Message",
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://entreprisesguineennes.com/establishment/international-business-logistics",
+        "index": 5,
+        "action": "https://entreprisesguineennes.com/establishment/add/comment/international-business-logistics",
+        "method": "POST",
+        "submitText": "Publier l'avis",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "select",
+            "name": "establishement",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author[name]",
+            "label": "name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "author[email]",
+            "label": "email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "content",
+            "label": "commentaire",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://entreprisesguineennes.com/establishment/international-business-logistics",
+        "index": 6,
+        "action": "https://entreprisesguineennes.com/establishment/international-business-logistics",
+        "method": "GET",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Votre message à l'entreprise",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Votre email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://entreprisesguineennes.com/establishment/international-business-logistics",
+        "index": 7,
+        "action": "https://entreprisesguineennes.com/add/booking/establishment/international-business-logistics",
+        "method": "POST",
+        "submitText": "Réserver",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "booking-date",
+            "label": null,
+            "placeholder": "Date",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "time-slot",
+            "label": "9:00 - 12:00 5 créneau(s) disponible(s)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "adults",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "children",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://entreprisesguineennes.com/quatation/establishment/international-business-logistics",
+        "index": 1,
+        "action": "https://entreprisesguineennes.com/quatation/establishment/international-business-logistics",
+        "method": "POST",
+        "submitText": "Validé",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "quatation[title]",
+            "label": "Objet de votre demande",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quatation[name]",
+            "label": "Nom",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "quatation[lastName]",
+            "label": "Prénom",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "quatation[category][]",
+            "label": "Secteur d'activité",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "quatation[email]",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "quatation[description]",
+            "label": "Description de votre demande",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "5 diseño(s) de formulario distinto(s); entre 2 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Buscar 934 establecimientos, añadir ficha, socio, promociones, reservas, empleo y geolocalización.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Contactez-nous maintenant Portail de l'internet guinéen et annuaire pages jaunes des entreprises guinéennes."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…Ajouter un établissement Devenir partenaire Réservation en ligne Système de notation Géolocalisation Aide Centre d'aide FAQ Contact Signaler un problème Sécurité Entreprise À propos de nous Carrières Presse Blog Investisseurs Légal Conditions d'utilisation Politique de confidentialité Cookies Mentions…",
+          "url": "https://entreprisesguineennes.com/service",
+          "pageTitle": "Entreprises guinéennes - Nos services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…Ajouter un établissement Devenir partenaire Réservation en ligne Système de notation Géolocalisation Aide Centre d'aide FAQ Contact Signaler un problème Sécurité Entreprise À propos de nous Carrières Presse Blog Investisseurs Légal Conditions d'utilisation Politique de confidentialité Cookies Mentions…",
+          "url": "https://entreprisesguineennes.com/establishment/category/prestation-de-service/",
+          "pageTitle": "Entreprises guinéennes",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://entreprisesguineennes.com/establishment/search/establishmen/list?list=all",
+        "https://entreprisesguineennes.com/contact",
+        "https://entreprisesguineennes.com/service"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Se connecter",
+        "Nos services",
+        "INTERNATIONAL BUSINESS LOGISTICS import et export agences de voyage prestation de service fret transit",
+        "Les Eléphants de l'Imprimerie impression numérique prestation de service"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Ajouter un établissement",
+        "Se connecter",
+        "Créer un compte",
+        "Voir",
+        "www.entreprisesguineennes.com",
+        "contat@entreprisesguineennes.com",
+        "Envoyé"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://entreprisesguineennes.com/contact · 4 campos",
+        "https://entreprisesguineennes.com/establishment/international-business-logistics · 4 campos",
+        "https://entreprisesguineennes.com/establishment/international-business-logistics · 2 campos",
+        "https://entreprisesguineennes.com/establishment/international-business-logistics · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "Réserver",
+        "Réserver"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://entreprisesguineennes.com/establishment/search/establishmen/list?list=all",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://entreprisesguineennes.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://entreprisesguineennes.com/service",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://entreprisesguineennes.com/establishment/international-business-logistics",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://entreprisesguineennes.com/quatation/establishment/international-business-logistics",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://entreprisesguineennes.com/establishment/category/prestation-de-service/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://entreprisesguineennes.com/establishment/les-elephants-de-limprimerie",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

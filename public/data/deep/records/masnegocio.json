@@ -1,0 +1,523 @@
+{
+  "id": "masnegocio",
+  "name": "MásNegocio",
+  "reviewedAt": "2026-08-22T15:50:17.366Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+    "heroObserved": true,
+    "priorSummary": "Base de datos, email, WhatsApp y voz con IA; cualifica y agenda. Planes por tamaño.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 184 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 874 palabras por página comercial recuperada. Muestras breves: “Vende tus productos y serviciosa 5 millones de negociossin empleados.” · “Política de privacidad” · “Aviso legal”.",
+    "supportingHeadings": [
+      "Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+      "Vender a nuevos clientes cuesta demasiado tiempo, dinero y energía.",
+      "No tienes tiempo",
+      "No tienes base de datos",
+      "Contratar comercial no es viable",
+      "No es un programa. Es un comercial que nunca duerme.",
+      "Cuatro cosas que solo nosotros hacemos.",
+      "Base de datos actualizada constantemente",
+      "IA que vende y cierra acuerdos",
+      "Llamadas y mensajes realistas",
+      "Multi-idioma con localización cultural",
+      "Inteligencia que tu competencia no tiene.",
+      "Conoce a cada decisor antes de la primera llamada",
+      "No hagas negocios con empresas de riesgo",
+      "¿Por qué contratar este programa?",
+      "Tres formas de usar MásNegocio.",
+      "Empresas y pymes B2B",
+      "Autónomos y profesionales",
+      "Particulares y profesionales en transición",
+      "Planes claros. Sin trucos.",
+      "MásNegocio Enterprise",
+      "Sin trampas, pero con sentido común.",
+      "Por qué ponemos límites de uso por hora",
+      "Qué necesitamos de ti para que la IA venda bien.",
+      "A quién quieres vender",
+      "Qué ofreces, en una frase",
+      "Qué canales autorizas",
+      "Qué pasa cuando alguien dice que sí",
+      "Qué consideras un lead bueno",
+      "Qué material ya tienes hecho"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.masnegocio.es/",
+      "text": "Contacto",
+      "href": "https://www.masnegocio.es/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "WhatsApp 641 161 771",
+      "Hablar con ventas",
+      "Enviar solicitud →",
+      "Hablar con ventas →"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.masnegocio.es/",
+        "index": 1,
+        "action": null,
+        "method": "GET",
+        "submitText": "Enviar solicitud →",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Nombre",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Apellidos",
+            "label": "Apellidos *",
+            "placeholder": "Tus apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "Email corporativo *",
+            "placeholder": "tu@empresa.es",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "Telefono",
+            "label": "Teléfono *",
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Empresa",
+            "label": "Nombre del negocio *",
+            "placeholder": "Razón social o marca comercial",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "Web",
+            "label": "Web",
+            "placeholder": "https://...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "Tipo",
+            "label": "Tipo de negocio *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "Empleados",
+            "label": "Tamaño del equipo",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Mensaje",
+            "label": "¿Qué vendes y a quién?",
+            "placeholder": "Cuéntanos brevemente tu producto/servicio, tu mercado objetivo y qué te gustaría conseguir",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad y autorizo a MásNegocio a contactarme por",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 10 y 10 campos visibles, mínimo 7 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Web, Tamaño del equipo.",
+      "friction": "Alta",
+      "minFields": 10,
+      "maxFields": 10,
+      "qualification": [
+        "Web",
+        "Tamaño del equipo"
+      ]
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Base de datos, email, WhatsApp y voz con IA; cualifica y agenda. Planes por tamaño.",
+    "audience": "Autónomos y pymes.",
+    "prices": [],
+    "guarantee": [
+      "Garantía 30 días en todos los planes.Precios sin IVA.",
+      "Garantía 30 días.",
+      "Si en 30 días no hay reuniones cualificadas, devolución completa sin preguntas.",
+      "En planes anuales (con descuento del 20%) no hay devolución prorrateada pero mantienes el servicio hasta fin del período pagado.",
+      "\"Ahora es el momento de facturar más, sin riesgos ni inversiones."
+    ],
+    "proof": [
+      "MMásNegocio Producto Inteligencia Por qué Clientes Precios Contacto Iniciar sesión Empezar gratis ✦ Pruébalo ahora gratis Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+      "Mientras tu competencia sigue contratando, tú puedes empezar hoy con una prueba gratuita de 7 días y comprobar resultados antes de decidir.— Empieza con MásNegocio · Sin permanencia · Sin coste de instalación La solución No es un programa.",
+      "…ro−25.000€↓ En sueldos de empleados Vende a todas horas24 horas— WhatsApp, llamadas y email El problema Vender a nuevos clientes cuesta demasiado tiempo, dinero y energía.",
+      "Y prospectar nuevos clientes es la primera tarea que se aplaza, semana tras semana, hasta que la facturación se pierde y empiezan los problemas financieros.",
+      "02No tienes base de datosNo tienes tiempo ni personal para crear una lista de posibles clientes, contactarles y hacerles seguimiento.",
+      "Te damos contexto profundo de cada empresa y de cada decisor para que cierres más ventas con menos llamadas, evitando a los clientes morosos antes de empezar."
+    ],
+    "objections": [
+      "MMásNegocio Producto Inteligencia Por qué Clientes Precios Contacto Iniciar sesión Empezar gratis ✦ Pruébalo ahora gratis Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+      "Mientras tu competencia sigue contratando, tú puedes empezar hoy con una prueba gratuita de 7 días y comprobar resultados antes de decidir.— Empieza con MásNegocio · Sin permanencia · Sin coste de instalación La solución No es un programa.",
+      "Si esto encaja con lo que necesitas, MásNegocio es para ti.Formación inicial incluida 02HubSpot, Salesforce, SAP… ¿por qué empezar con MásNegocio?Porque las herramientas grandes están pensadas para grandes equipos comerciales con miles de opciones, configuraciones y módulos.",
+      "Por qué MásNegocio ¿Por qué contratar este programa?",
+      "Por qué ponemos límites de uso por horaEl plan PYME Sin Límites te da acceso a todo el mercado español, Andorra y Portugal."
+    ],
+    "urgency": [
+      "MMásNegocio Producto Inteligencia Por qué Clientes Precios Contacto Iniciar sesión Empezar gratis ✦ Pruébalo ahora gratis Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+      "Mientras tu competencia sigue contratando, tú puedes empezar hoy con una prueba gratuita de 7 días y comprobar resultados antes de decidir.— Empieza con MásNegocio · Sin permanencia · Sin coste de instalación La solución No es un programa.",
+      "Y prospectar nuevos clientes es la primera tarea que se aplaza, semana tras semana, hasta que la facturación se pierde y empiezan los problemas financieros.",
+      "\"Ahora es el momento de facturar más, sin riesgos ni inversiones.",
+      "HubSpot, Salesforce y similares son CRMs reactivos: tú metes los contactos uno a uno y luego debes llamarles, actualizando toda la información.",
+      "No competimos con HubSpot ni Salesforce."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…es/dashboard Empresas verificadas+5 Millones↑ +12% esta semana Todo el país54— España, Andorra y Portugal Ahorra dinero−25.000€↓ En sueldos de empleados Vende a todas horas24 horas— WhatsApp, llamadas y email El problema Vender a nuevos clientes cuesta demasiado tiempo, dinero y energía.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "03Contratar comercial no es viableEl beneficio que generas no es suficiente para contratar comerciales de 30.000 €/año, además de impuestos y gastos asociados.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "LinkedIn Premium cuesta 30-60 €/mes y solo te muestra perfiles.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "¿Por qué la diferencia entre Pro (999 €) y Sin Límites (1.499 €)?Pro tiene 15.000 leads desbloqueados/mes y 20 sectores+provincias.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "\"Ahora es el momento de facturar más, sin riesgos ni inversiones.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía 30 días en todos los planes.Precios sin IVA.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Si en 30 días no hay reuniones cualificadas, devolución completa sin preguntas.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "En planes anuales (con descuento del 20%) no hay devolución prorrateada pero mantienes el servicio hasta fin del período pagado.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantía 30 días.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "MMásNegocio Producto Inteligencia Por qué Clientes Precios Contacto Iniciar sesión Empezar gratis ✦ Pruébalo ahora gratis Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…ro−25.000€↓ En sueldos de empleados Vende a todas horas24 horas— WhatsApp, llamadas y email El problema Vender a nuevos clientes cuesta demasiado tiempo, dinero y energía.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Y prospectar nuevos clientes es la primera tarea que se aplaza, semana tras semana, hasta que la facturación se pierde y empiezan los problemas financieros.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "02No tienes base de datosNo tienes tiempo ni personal para crear una lista de posibles clientes, contactarles y hacerles seguimiento.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Mientras tu competencia sigue contratando, tú puedes empezar hoy con una prueba gratuita de 7 días y comprobar resultados antes de decidir.— Empieza con MásNegocio · Sin permanencia · Sin coste de instalación La solución No es un programa.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Te damos contexto profundo de cada empresa y de cada decisor para que cierres más ventas con menos llamadas, evitando a los clientes morosos antes de empezar.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "MMásNegocio Producto Inteligencia Por qué Clientes Precios Contacto Iniciar sesión Empezar gratis ✦ Pruébalo ahora gratis Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Mientras tu competencia sigue contratando, tú puedes empezar hoy con una prueba gratuita de 7 días y comprobar resultados antes de decidir.— Empieza con MásNegocio · Sin permanencia · Sin coste de instalación La solución No es un programa.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Por qué MásNegocio ¿Por qué contratar este programa?",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Si esto encaja con lo que necesitas, MásNegocio es para ti.Formación inicial incluida 02HubSpot, Salesforce, SAP… ¿por qué empezar con MásNegocio?Porque las herramientas grandes están pensadas para grandes equipos comerciales con miles de opciones, configuraciones y módulos.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin permanencia.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Por qué ponemos límites de uso por horaEl plan PYME Sin Límites te da acceso a todo el mercado español, Andorra y Portugal.",
+          "url": "https://www.masnegocio.es/",
+          "pageTitle": "MásNegocio — Tu equipo comercial automatizado con IA",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "WhatsApp",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.masnegocio.es/",
+        "https://www.masnegocio.es/privacidad/",
+        "https://www.masnegocio.es/aviso-legal/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Vende tus productos y serviciosa 5 millones de negociossin empleados.",
+        "Política de privacidad",
+        "Aviso legal",
+        "Política de cookies"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Hablar con ventas →",
+        "Enviar solicitud →",
+        "Hablar con ventas",
+        "WhatsApp 641 161 771"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.masnegocio.es/ · 10 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Web → formulario de negocio y perfil → contacto en menos de 24 h → llamada de descubrimiento de 30 minutos → demo en directo con base de"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.masnegocio.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.masnegocio.es/privacidad/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.masnegocio.es/aviso-legal/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.masnegocio.es/cookies/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.masnegocio.es/condiciones/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.masnegocio.es/dpa/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://masnegocio.es/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=masnegocio.es",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 10 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

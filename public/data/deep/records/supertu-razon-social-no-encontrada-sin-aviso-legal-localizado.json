@@ -1,0 +1,469 @@
+{
+  "id": "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
+  "name": "Supertú (razón social no encontrada — sin aviso legal localizado)",
+  "reviewedAt": "2026-08-22T15:50:17.941Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Social Media Marketing Agency",
+    "heroObserved": true,
+    "priorSummary": "\"Convertimos tu marca en una supermarca en redes sociales\" y \"Cada euro que inviertes en Facebook o Instagram vuelve en forma de leads, reservas o ventas.\" (https://supertu.es/agencia-meta-ads/)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 125 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1099 palabras por página comercial recuperada. Muestras breves: “Agencia Meta Ads en Málaga” · “Dinos qué necesitas” · “Agencia LinkedIn Ads en Málaga”.",
+    "supportingHeadings": [
+      "Agencia Meta Ads en Málaga",
+      "Qué es Meta Ads y por qué importa para tu negocio",
+      "Qué incluye nuestro servicio de publicidad en redes",
+      "¿Para qué tipo de negocios en Málaga funciona Meta Ads?",
+      "Estas otras plataformas pueden encajar mejor con tu negocio",
+      "¿Tu negocio está en esta lista? Entonces Meta Ads tiene mucho que aportarte.",
+      "Por qué elegir Supertú como tu agencia Meta Ads en Málaga",
+      "Preguntas frecuentes",
+      "¿Qué diferencia hay entre Meta Ads, Facebook Ads e Instagram Ads?",
+      "¿Cuánto presupuesto mínimo necesito para anunciarme en Facebook e Instagram?",
+      "¿Cuánto tarda Meta Ads en dar resultados?",
+      "¿Qué es el Meta Pixel y por qué lo necesito?",
+      "¿Cómo medís el éxito de una campaña?",
+      "¿Trabajáis solo con negocios de Málaga?",
+      "¿Tengo que aportar yo los vídeos y las fotos?",
+      "¿Quieres ser una supermarca en redes sociales?",
+      "Dinos qué necesitas",
+      "Contacto",
+      "Estamos aquí",
+      "Hablando se entiende la gente",
+      "Si nunca has trabajado con una agencia de redes sociales ...",
+      "Si ya has trabajado con una agencia antes ...",
+      "Nuestros clientes",
+      "Juguetes Carrión",
+      "Juguetería",
+      "Agrosarmiento",
+      "Maquinaria de jardinería",
+      "Vetsur",
+      "Clínica veterinaria",
+      "Cervantes"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://supertu.es/",
+      "text": "Contacto",
+      "href": "https://supertu.es/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Agenda una reunión con Espe",
+      "Contacto",
+      "Preguntar por WhatsApp",
+      "Escríbenos por WhatsApp",
+      "Te lo decimos en una llamada",
+      "Preguntar por LinkedIn Ads en WhatsApp",
+      "Social Ads",
+      "Hablar con una experta",
+      "Quiero ser una supermarca",
+      "Quiero revisar mis campañas",
+      "Quiero anunciarme en TikTok",
+      "Quiero anunciarme en LinkedIn",
+      "Analizar mi caso sin compromiso",
+      "Convierte tus redes en una herramienta de negocio"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://supertu.es/agencia-meta-ads/",
+        "index": 1,
+        "action": "https://supertu.es/agencia-meta-ads/",
+        "method": "POST",
+        "submitText": "Quiero ser una supermarca",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "Tu Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_126f747]",
+            "label": null,
+            "placeholder": "Asunto",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_b71fa84]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://supertu.es/contacto/",
+        "index": 1,
+        "action": "https://supertu.es/contacto/",
+        "method": "POST",
+        "submitText": "Quiero ser una supermarca",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": null,
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_9068df4]",
+            "label": "He leído y acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Convertimos tu marca en una supermarca en redes sociales\" y \"Cada euro que inviertes en Facebook o Instagram vuelve en forma de leads, reservas o ventas.\" (https://supertu.es/agencia-meta-ads/)",
+    "audience": "Clínicas estéticas, dentistas, restaurantes, inmobiliarias, ecommerce, centros educativos y empresas B2B de ticket medio-alto, en Málaga y alrededores.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "AgrosarmientoMaquinaria de jardineríaEstrategias de captación de clientes potenciales a través de redes sociales.",
+      "VetsurClínica veterinariaComunicación online acerca de la clínica y estrategias de captación de clientes potenciales.",
+      "Reserva Del Higuerón PrivéInmobiliariaEstrategia 360º en redes sociales enfocada a la generación de clientes potenciales en Facebook, Instagram y Linkedin.",
+      "EIPEscuela de postgradosCreación, monitorización y gestión de campañas orientadas a la búsqueda de clientes potenciales para los másters online de la escuela.",
+      "Kitchen and StyleDiseño de cocinasCreamos su imagen digital, que sirve de escaparate a sus clientes potenciales.",
+      "También gestionamos y monitorizamos campañas de Ads para la obtención de nuevos clientes."
+    ],
+    "objections": [
+      "Al delegarlo en nuestro equipo, dejas de preocuparte por qué subir mañana y conviertes tus perfiles en una herramienta real de captación de clientes, liberando tu tiempo para dirigir tu negocio.",
+      "¿Por qué es importante delegar la gestión de redes sociales para empresas?Porque publicar por publicar no trae ventas."
+    ],
+    "urgency": [
+      "Lo que empezó siendo «la red de los bailes» hoy es el segundo buscador más usado por los menores de 35 años.",
+      "Engloba los anuncios que aparecen en Facebook, Instagram, Messenger, WhatsApp y la red Audience Network.A día de hoy, sigue siendo la forma más rápida de llegar a tu cliente ideal en Málaga.",
+      "Nos vemos las caras antes de cobrar el primer mes.Preguntas frecuentes sobre TikTok Ads Por qué TikTok es la oportunidad más infravalorada en Málaga ahora mismoHay un dato que pocos negocios locales han visto venir.Mientras Meta Ads sube de precio cada trimestre, TikTok Ads sigue",
+      "De hecho, muchas veces el primer paso es justo ese: sentarnos contigo, entender tu negocio, ver qué estás haciendo ahora y detectar qué redes tienen sentido para tu marca.No te vamos a marear con tecnicismos ni con paquetes que no encajan contigo.",
+      "Cuando el proyecto lo necesita, conectamos los formularios de LinkedIn con herramientas como HubSpot, Salesforce, Pipedrive u otros CRM."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "AgrosarmientoMaquinaria de jardineríaEstrategias de captación de clientes potenciales a través de redes sociales.",
+          "url": "https://supertu.es/clientes/",
+          "pageTitle": "Clientes - Supertu | Tu agencia de redes sociales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "VetsurClínica veterinariaComunicación online acerca de la clínica y estrategias de captación de clientes potenciales.",
+          "url": "https://supertu.es/clientes/",
+          "pageTitle": "Clientes - Supertu | Tu agencia de redes sociales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Reserva Del Higuerón PrivéInmobiliariaEstrategia 360º en redes sociales enfocada a la generación de clientes potenciales en Facebook, Instagram y Linkedin.",
+          "url": "https://supertu.es/clientes/",
+          "pageTitle": "Clientes - Supertu | Tu agencia de redes sociales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "EIPEscuela de postgradosCreación, monitorización y gestión de campañas orientadas a la búsqueda de clientes potenciales para los másters online de la escuela.",
+          "url": "https://supertu.es/clientes/",
+          "pageTitle": "Clientes - Supertu | Tu agencia de redes sociales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Kitchen and StyleDiseño de cocinasCreamos su imagen digital, que sirve de escaparate a sus clientes potenciales.",
+          "url": "https://supertu.es/clientes/",
+          "pageTitle": "Clientes - Supertu | Tu agencia de redes sociales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "También gestionamos y monitorizamos campañas de Ads para la obtención de nuevos clientes.",
+          "url": "https://supertu.es/clientes/",
+          "pageTitle": "Clientes - Supertu | Tu agencia de redes sociales",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Convierte tus redes en una herramienta de negocio Nuestros números +153Cuentas mejoradas +99%Clientes satisfechos +21403Cápsulas de café +82Teclas por segundoLa opinión de nuestros clientes Carlos SepúlvedaCEO Proinsermant Con Super Tu tenemos la buena onda y cercanía esenciales para transmitir los valores de la empresa.",
+          "url": "https://supertu.es/",
+          "pageTitle": "Agencia de Redes Sociales en Málaga | Supertú",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tener un perfil bonito no sirve de nada si no ayuda a tu negocio.Muchas empresas publican cuando pueden, tienen las redes a medias, invierten en publicidad sin una estrategia clara o miden solo seguidores sin saber si esas acciones están trayendo clientes.No es falta de",
+          "url": "https://supertu.es/",
+          "pageTitle": "Agencia de Redes Sociales en Málaga | Supertú",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "¿Por qué es importante delegar la gestión de redes sociales para empresas?Porque publicar por publicar no trae ventas.",
+          "url": "https://supertu.es/",
+          "pageTitle": "Agencia de Redes Sociales en Málaga | Supertú",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Al delegarlo en nuestro equipo, dejas de preocuparte por qué subir mañana y conviertes tus perfiles en una herramienta real de captación de clientes, liberando tu tiempo para dirigir tu negocio.",
+          "url": "https://supertu.es/",
+          "pageTitle": "Agencia de Redes Sociales en Málaga | Supertú",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "TikTok Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://supertu.es/agencia-meta-ads/",
+        "https://supertu.es/contacto/",
+        "https://supertu.es/clientes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia Meta Ads en Málaga",
+        "Dinos qué necesitas",
+        "Agencia LinkedIn Ads en Málaga",
+        "Social Media Marketing Agency"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Analizar mi caso sin compromiso",
+        "Quiero revisar mis campañas",
+        "Preguntar por WhatsApp",
+        "Quiero ser una supermarca",
+        "Social Ads",
+        "Hablar con una experta",
+        "Quiero anunciarme en LinkedIn"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://supertu.es/agencia-meta-ads/ · 5 campos",
+        "https://supertu.es/contacto/ · 4 campos",
+        "https://supertu.es/clientes/ · 5 campos",
+        "https://supertu.es/agencia-linkedin-ads/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono",
+        "WhatsApp",
+        "Agenda una reunión con Espe"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing de servicio → Analizar mi caso o WhatsApp → formulario de contacto → consulta → auditoría y configuración → estrategia y creatividades → optimización semanal y reporting"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://supertu.es/agencia-meta-ads/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://supertu.es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://supertu.es/clientes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://supertu.es/agencia-linkedin-ads/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://supertu.es/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://supertu.es/agencia-tiktok-ads/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://supertu.es/nuestro-equipo/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://supertu.es/aviso-legal/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://supertu.es/politica-de-privacidad/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://wa.me/34653903359",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://supertu.es/servicios/: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

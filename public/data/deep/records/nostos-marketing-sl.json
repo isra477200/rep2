@@ -1,0 +1,537 @@
+{
+  "id": "nostos-marketing-sl",
+  "name": "Nostos Marketing SL",
+  "reviewedAt": "2026-08-22T15:50:19.258Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Tu departamento de marketing, operado por agentes. Desde 99 €/mes.*",
+    "heroObserved": true,
+    "priorSummary": "Software + servicio de marketing con IA y equipo humano para estrategia, contenidos y redes. Studio es autoservicio; Copilot/Crew externalizan el departamento de marketing. No se confirmó Google/Meta Ads como servicio central.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 320 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 866 palabras por página comercial recuperada. Muestras breves: “Tu departamento de marketing, operado por agentes. Desde 99 €/mes.*” · “Hablemos 30 minutos. Te decimos qué nivel encaja contigoy cuánto cuesta.*” · “Precio público. Sin negociación. Sin sorpresas.*”.",
+    "supportingHeadings": [
+      "Tu departamento de marketing, operado por agentes. Desde 99 €/mes.*",
+      "Tu marketing lleva meses esperando.",
+      "Hay tres formas de llevar tu marketing. Solo una lo opera de verdad.",
+      "En 12 minutos tienes el mes listo.",
+      "Elige el nivel que encaja con tu momento.",
+      "El más elegido*",
+      "Resultados que hablan por sí solos. El marketing que opera, no que promete.",
+      "97 de cada 100 clientes renuevan después del primer mes.",
+      "Elena Ramírez",
+      "Ideas y casos reales para el marketing que opera solo.",
+      "La IA no es creativa. Solo es buena imitando lo que ya tienes claro",
+      "La inteligencia artificial sin visión estratégica es solo eficiencia vacía",
+      "Lo que comunicas no se mide solo por lo que dices, sino por lo que sostienes",
+      "Lo que nos preguntan siempre",
+      "¿Aún tienes preguntas?",
+      "Tu marketing puede empezar esta semana.",
+      "Hablemos 30 minutos. Te decimos qué nivel encaja contigoy cuánto cuesta.*",
+      "Laura",
+      "Te decimos qué nivel encaja contigo y cuánto cuesta.*",
+      "Lo tuyo es:",
+      "30 minutos. Sin presentaciones. Sin presión.",
+      "Lorem ipsum dolor sit amet consectetur. Ac tellus leo ipsum mollis.",
+      "Antes",
+      "Durante",
+      "Después",
+      "Lo que dicen los que ya lo decidieron.",
+      "Diego Tinte",
+      "Camila Diaz",
+      "Roberto Peña",
+      "Lo que nos preguntansiempre"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Empieza por 10 €",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://nostos.es/",
+      "text": "Empieza por 10 €",
+      "href": "https://buy.stripe.com/28E9ATdcX9rf3fF9Tm4F200?locale=es&__embed_source=buy_btn_1TgQLaFfiSFFjlDEL0KqlINf",
+      "element": "a",
+      "kind": "conversion",
+      "score": 141
+    },
+    "ctas": [
+      "Empieza por 10 €",
+      "Calcula tu nivel"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://nostos.es/reservar-reunion/",
+        "index": 1,
+        "action": "https://nostos.es/reservar-reunion/?773njU=450ARhuF1M10&method=reload",
+        "method": "POST",
+        "submitText": "Calcula tu nivel",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "select",
+            "name": "tamano",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "presupuesto",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "preferencia",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: sector, presupuesto.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": [
+        "sector",
+        "presupuesto"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Software + servicio de marketing con IA y equipo humano para estrategia, contenidos y redes. Studio es autoservicio; Copilot/Crew externalizan el departamento de marketing. No se confirmó Google/Meta Ads como servicio central.",
+    "audience": "Autónomos/solopreneurs y pymes españolas de 10–50 empleados sin equipo de marketing propio.",
+    "prices": [
+      "Desde 99 €/mes.* Marketing operado, no consultado.Tres niveles, precio público, sin permanencia.",
+      "Copilot desde 1.200 €/mes.",
+      "Crew desde 2.500 €/mes.",
+      "Empieza por 10 € 30 días de garantía de devolución.",
+      "Studio tiene primer mes a 10 € y 30 días de garantía de devolución total desde el primer cobro mensual de 99 €.",
+      "Para empresas con necesidades de marketing por encima de 5.000 €/mes."
+    ],
+    "guarantee": [
+      "30 días de garantía total.",
+      "30 días de garantía.",
+      "Empieza por 10 € 30 días de garantía de devolución.",
+      "Studio tiene primer mes a 10 € y 30 días de garantía de devolución total desde el primer cobro mensual de 99 €.",
+      "Hablemos Primer mes por 10 €* Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras · 30 días de garantía Para quién: Ideal para solopreneurs, autónomos y micro-PYMES que quieren presencia consistente en redes sin contratar agencia ni"
+    ],
+    "proof": [
+      "Leads en 90 días + 0 % 97 de cada 100 clientes renuevan después del primer mes.",
+      "97% De clientes renuevan después del primer mes.",
+      "Si algo no da resultados en 60 días, cambiamos la estrategia sin coste adicional.",
+      "Studio publicó por ellos mientras cerraban nuevos clientes."
+    ],
+    "objections": [
+      "Desde 99 €/mes.* Marketing operado, no consultado.Tres niveles, precio público, sin permanencia.",
+      "Empieza por 10 € Ver cómo funciona Primer mes a 10 €.Cancela cuando quieras.",
+      "España México Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras Empieza por 10 € 16 piezas/mes 4 redes (LinkedIn, Instagram, Facebook, X) Calendario inteligente Programación automática Plan generado en 12 min 16 piezas/mes Para quién:Solopreneurs, autónomos y",
+      "Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras Empieza por 10 € 16 piezas/mes 4 redes (LinkedIn, Instagram, Facebook, X) Calendario inteligente Programación automática Plan generado en 12 min 16 piezas/mes Para quién:Solopreneurs, autónomos y micro-PYMES que",
+      "Sin permanencia anual.",
+      "¿Qué pasa si me voy?"
+    ],
+    "urgency": [
+      "Ahora lo tenemos listo en una tarde y funciona mejor.",
+      "Te preguntamos qué estás haciendo ahora, qué quieres conseguir y cuánto tiempo tienes."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Desde 99 €/mes.* Marketing operado, no consultado.Tres niveles, precio público, sin permanencia.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Empieza por 10 € Ver cómo funciona Primer mes a 10 €.Cancela cuando quieras.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "* Studio a 99 €/mes.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Copilot desde 1.200 €/mes.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Crew desde 2.500 €/mes.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Contratar un Head of Marketing cuesta 65.000 €/año y nueve meses de búsqueda.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Hablemos Primer mes por 10 €* Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras · 30 días de garantía Para quién: Ideal para solopreneurs, autónomos y micro-PYMES que quieren presencia consistente en redes sin contratar agencia ni",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Empieza por 10 € 30 días de garantía de devolución.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Studio tiene primer mes a 10 € y 30 días de garantía de devolución total desde el primer cobro mensual de 99 €.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Para empresas con necesidades de marketing por encima de 5.000 €/mes.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Studio 99 €/mes.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Copilot desde 1.200 €/mes.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "30 días de garantía total.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "30 días de garantía.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Hablemos Primer mes por 10 €* Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras · 30 días de garantía Para quién: Ideal para solopreneurs, autónomos y micro-PYMES que quieren presencia consistente en redes sin contratar agencia ni",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Empieza por 10 € 30 días de garantía de devolución.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Studio tiene primer mes a 10 € y 30 días de garantía de devolución total desde el primer cobro mensual de 99 €.",
+          "url": "https://nostos.es/precios/",
+          "pageTitle": "Precios – Nostos Marketing",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "30 días de garantía.",
+          "url": "https://nostos.es/casos/",
+          "pageTitle": "Casos – Nostos Marketing",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "Una agencia tradicional, entre 2.000 y 3.000 €/mes sin precio claro, sin garantías y con un deck de estrategia que nadie ejecuta.Mientras decides, tu marca no publica.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Studio publicó por ellos mientras cerraban nuevos clientes.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leads en 90 días + 0 % 97 de cada 100 clientes renuevan después del primer mes.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "97% De clientes renuevan después del primer mes.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Si algo no da resultados en 60 días, cambiamos la estrategia sin coste adicional.",
+          "url": "https://nostos.es/casos/",
+          "pageTitle": "Casos – Nostos Marketing",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Desde 99 €/mes.* Marketing operado, no consultado.Tres niveles, precio público, sin permanencia.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Empieza por 10 € Ver cómo funciona Primer mes a 10 €.Cancela cuando quieras.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin permanencia anual.",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "España México Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras Empieza por 10 € 16 piezas/mes 4 redes (LinkedIn, Instagram, Facebook, X) Calendario inteligente Programación automática Plan generado en 12 min 16 piezas/mes Para quién:Solopreneurs, autónomos y",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nostos Studio Tus redes en 12 minutos 99 € /mes Sin permanencia · Cancela cuando quieras Empieza por 10 € 16 piezas/mes 4 redes (LinkedIn, Instagram, Facebook, X) Calendario inteligente Programación automática Plan generado en 12 min 16 piezas/mes Para quién:Solopreneurs, autónomos y micro-PYMES que",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Qué pasa si me voy?",
+          "url": "https://nostos.es/",
+          "pageTitle": "Nostos Marketing – Agencia de inteligencia artificial",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://nostos.es/",
+        "https://nostos.es/reservar-reunion/",
+        "https://nostos.es/precios/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Tu departamento de marketing, operado por agentes. Desde 99 €/mes.*",
+        "Hablemos 30 minutos. Te decimos qué nivel encaja contigoy cuánto cuesta.*",
+        "Precio público. Sin negociación. Sin sorpresas.*",
+        "Términos de servicio*"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Empieza por 10 €",
+        "Calcula tu nivel"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://nostos.es/reservar-reunion/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Studio: página de precios → prueba gratuita 7 días/alta → uso autoservicio de IA → cuota mensual. Copilot/Crew: página del plan → reunión de 30 min → diagnóstico"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://nostos.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://nostos.es/reservar-reunion/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://nostos.es/precios/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://nostos.es/casos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://nostos.es/terminos-de-servicio/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://nostos.es/modelo/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://nostos.es/nostos-studio/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://nostos.es/precios-v2/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://nostos.es/nostos-copilot/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://nostos.es/nostos-crew-v2/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Empieza por 10 €”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,306 @@
+{
+  "id": "servly-georgia",
+  "name": "SERVLY Georgia",
+  "reviewedAt": "2026-08-22T15:50:20.106Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "Запускаем сервис поискамастеров рядом.",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 168 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1180 palabras por página comercial recuperada. Muestras breves: “Запускаем сервис поискамастеров рядом.”.",
+    "supportingHeadings": [
+      "Запускаем сервис поискамастеров рядом.",
+      "Привет,",
+      "Кто вы?",
+      "SERVLY начинает свой путь",
+      "Первые заявки",
+      "Проверенные мастера",
+      "Рост вместе",
+      "Как это работает",
+      "Оставляете заявку",
+      "Получаете предложения",
+      "Выбираете мастера",
+      "Оплачиваете после работы",
+      "Честно для клиента.Удобно для мастера.",
+      "Оплата после работы",
+      "Безопасные платежи",
+      "Быстрые выплаты мастерам",
+      "Какие услуги можно найти в SERVLY",
+      "Популярные бытовые услуги",
+      "Быстрый поиск мастера рядом",
+      "Почему клиенты доверяют SERVLY",
+      "Возможности для специалистов",
+      "Отзывы",
+      "Я клиент",
+      "Я мастер",
+      "Получить ранний доступ",
+      "Local services marketplace in Tbilisi, Batumi, and Georgia",
+      "Services and local intent coverage",
+      "Jobs and work for masters",
+      "Geo areas and districts",
+      "Internal semantic links"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Начать зарабатывать",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://joinservly.com/ka/",
+      "text": "Начать зарабатывать",
+      "href": "https://joinservly.com/ka/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 60.25
+    },
+    "ctas": [
+      "Начать зарабатывать",
+      "Получить ранний доступ"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://joinservly.com/ka/",
+        "index": 1,
+        "action": "https://formspree.io/f/mkoyolvw",
+        "method": "POST",
+        "submitText": "Получить ранний доступ",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "select",
+            "name": "request_type",
+            "label": "Тип обращения",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "user_role",
+            "label": "Кто вы?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Имя",
+            "placeholder": "Ваше имя",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "country_code",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Телефон",
+            "placeholder": "555 12 34 56",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Что нужно сделать?",
+            "placeholder": "Описание вашей задачи...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": "Я соглашаюсь на обработку персональных данных и принимаю политику конфиденциальности.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 7 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Некоторые функции ограничены.",
+      "Если хотите, можете оставить свой отзыв или пожелание уже сейчас.",
+      "Сейчас доступен ранний доступ через сайт."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://joinservly.com/ka/",
+        "https://joinservly.com/tbilisi/",
+        "https://joinservly.com/batumi/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Запускаем сервис поискамастеров рядом."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Начать зарабатывать",
+        "Получить ранний доступ"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://joinservly.com/ka/ · 7 campos",
+        "https://joinservly.com/tbilisi/ · 7 campos",
+        "https://joinservly.com/batumi/ · 7 campos",
+        "https://joinservly.com/ru/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://joinservly.com/ka/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://joinservly.com/tbilisi/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://joinservly.com/batumi/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://joinservly.com/ru/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://joinservly.com/en/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://joinservly.com/jobs/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://joinservly.com/tbilisi/plumber/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Начать зарабатывать”, manteniendo una sola ruta dominante por landing.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

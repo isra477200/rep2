@@ -1,0 +1,539 @@
+{
+  "id": "c-onnect",
+  "name": "C-onnect",
+  "reviewedAt": "2026-08-22T15:50:18.658Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Générez vos leads à la demande",
+    "heroObserved": true,
+    "priorSummary": "\"precio fijo por contacto 100% garantizado\" (c-onnect.com)",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 87 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 620 palabras por página comercial recuperada. Muestras breves: “Leads telecom” · “Contacto” · “Trabajar con nosotros”.",
+    "supportingHeadings": [
+      "Leads telecom",
+      "Generación de leads cualificados en telecomunicaciones.",
+      "Clientes fiables",
+      "Generación de leads cualificados en telecomunicaciones",
+      "¿Por qué elegir nuestra agencia para la generación de leads telecom?",
+      "Precio fijo por contacto 100% garantizado",
+      "Leads regulares intencionados",
+      "Optimización constante del ROI",
+      "Expertos en telecomunicaciones",
+      "Optimiza la generación de leads de telecomunicaciones con CPL.",
+      "Estrategia multicanal",
+      "Equipo de expertos especializados",
+      "Saber hacer y RGPD",
+      "Máxima rentabilidad",
+      "Flexibilidad y riesgo mínimo",
+      "Crecimiento cuantificable",
+      "Un proceso eficaz de 4 pasos.",
+      "Contacto",
+      "Incorporación",
+      "Test de campaña",
+      "Seguimiento de los resultados",
+      "Acelera la captación de clientes en telecomunicaciones.",
+      "¿Qué tipo de leads genera?",
+      "¿Cómo se mide el éxito de una campaña de captación de leads?",
+      "¿Cuál es la cantidad mínima de leads que puedo pedir?",
+      "FAQ Generación de leads",
+      "Preguntas frecuentes",
+      "Nuestros otros ámbitos de predilección.",
+      "Energía",
+      "Educación"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactez-nous",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://c-onnect.com/",
+      "text": "Contactez-nous",
+      "href": "https://c-onnect.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.5
+    },
+    "ctas": [
+      "Agenda una cita",
+      "Contactez-nous",
+      "ES",
+      "FR",
+      "Contáctanos",
+      "¡Contáctanos!",
+      "¡Envíanos tu solicitud!",
+      "Envoyez votre demande !",
+      "Sectores Génération de leads à la demande",
+      "Secteurs Génération de leads à la demande"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://c-onnect.com/es/contacto/",
+        "index": 1,
+        "action": "https://c-onnect.com/es/contacto/",
+        "method": "POST",
+        "submitText": "¡Envíanos tu solicitud!",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[firstname]",
+            "label": "Nombre",
+            "placeholder": "ej. Juan",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[lastname]",
+            "label": "Apellido",
+            "placeholder": "ej. Fernandez",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "ej. juan.fernandez@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_b9e9455]",
+            "label": "Teléfono",
+            "placeholder": "ej. 678 901 236",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[projet]",
+            "label": "Objeto de tu solicitud",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_acb4700]",
+            "label": "Detalla tu solicitud",
+            "placeholder": "Déjanos su mensaje...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_c0dc72a]",
+            "label": "Acepto la política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://c-onnect.com/contact/",
+        "index": 1,
+        "action": "https://c-onnect.com/contact/",
+        "method": "POST",
+        "submitText": "Envoyez votre demande !",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[firstname]",
+            "label": "Prénom",
+            "placeholder": "Ex: Jean",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[lastname]",
+            "label": "Nom",
+            "placeholder": "Ex : Dupont",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "E-mail",
+            "placeholder": "Ex : jean.dupont@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_b9e9455]",
+            "label": "Téléphone",
+            "placeholder": "Ex : 0605040302",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[projet]",
+            "label": "Objet de votre demande",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_acb4700]",
+            "label": "Précisez votre demande",
+            "placeholder": "Laissez votre message…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_c0dc72a]",
+            "label": "J'accepte la politique de confidentialité",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 6 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"precio fijo por contacto 100% garantizado\" (c-onnect.com)",
+    "audience": "Operadoras/comercializadoras de telecomunicaciones (fibra/móvil) en B2C, con expansión a energía, educación, seguros y reforma energética",
+    "prices": [],
+    "guarantee": [
+      "Qualité garantie Obtenez uniquement des leads pré-qualifiés selon vos critères."
+    ],
+    "proof": [
+      "Prenez rendez-vous Contactez-nous 100% de croissance chaque année 50k+ leads par mois 25+ clients en France et en Espagne Témoignages “Avec C-onnect nous avons doublé nos ventes depuis 1 an.",
+      "Contactez-nous Clients de confiance Pourquoi C-onnect ?",
+      "Découvrir Assurances Vous évoluez dans le secteur des assurances et souhaitez attirer de nouveaux clients pour dynamiser vos ventes.",
+      "Nous vous aidons à accélérer l'acquisition de nouveaux clients."
+    ],
+    "objections": [
+      "Contáctanos Agenda una cita The Connect Agency S.L.Agencia de generación de leadsNIF : B09694027 Linkedin Instagram SectoresTelecomunicaciónEnergíaEducaciónSegurosRenovación energética Agencia¿Por qué C-onnect?BlogPreguntas frecuentesTrabajar con nosotros¡Contáctanos!",
+      "Únete a nuestros equipos Trabajar en C-onnect Preguntas frecuentes FAQ generación de leads ¿Preguntas?",
+      "ESFRESFR Contáctanos ESFR FAQ Generación de leads C-onnect te explica todo sobre generación de leads.",
+      "Preguntas frecuentes ¡Inicia tu campaña!",
+      "Rejoignez nos équipes Travailler chez C-onnect Question fréquentes FAQ génération de leads Une question ?",
+      "FRESFRES Contactez-nous FRES FAQ Génération de leads C-onnect vous explique tout sur la génération de leads.",
+      "Questions fréquentes Démarrez votre campagne !",
+      "Todos los sectores Telecomunicación Paquete de internet y móvil… Energía Electricidad, Gas… EducaciónDigital, diseño, dirección… Seguros Funerales, préstamos, mutuas jubilación… Renovación energética Paneles solares… Agenda una cita ¿Por qué C-onnect?Recursos Blog ¡Sigue todas nuestras noticias!"
+    ],
+    "urgency": [
+      "Ponte en contacto con nosotros hoy mismo y descubre cómo nuestra solución de generación de leads puede impulsar tu empresa de telecomunicaciones hacia nuevas alturas.",
+      "Envía tu candidatura ahora ¿Por qué unirte a nuestro equipo?",
+      "Envía tu candidatura ahora Al unirte a C-ONNECT, te convertirás en parte integrante de un equipo que valora la fiabilidad, la calidad y la capacidad de respuesta, al tiempo que se desarrolla en un entorno d…",
+      "Envía tu candidatura ahora FlexibilidadTeletrabajo, espacios de coworking y horarios flexibles son algunas de las ventajas que permiten a nuestros equipos conciliar eficazmente tu vida profesional y privada."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Qualité garantie Obtenez uniquement des leads pré-qualifiés selon vos critères.",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Contactez-nous Clients de confiance Pourquoi C-onnect ?",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Découvrir Assurances Vous évoluez dans le secteur des assurances et souhaitez attirer de nouveaux clients pour dynamiser vos ventes.",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Prenez rendez-vous Contactez-nous 100% de croissance chaque année 50k+ leads par mois 25+ clients en France et en Espagne Témoignages “Avec C-onnect nous avons doublé nos ventes depuis 1 an.",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nous vous aidons à accélérer l'acquisition de nouveaux clients.",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Todos los sectores Telecomunicación Paquete de internet y móvil… Energía Electricidad, Gas… EducaciónDigital, diseño, dirección… Seguros Funerales, préstamos, mutuas jubilación… Renovación energética Paneles solares… Agenda una cita ¿Por qué C-onnect?Recursos Blog ¡Sigue todas nuestras noticias!",
+          "url": "https://c-onnect.com/es/faq/",
+          "pageTitle": "Preguntas frecuentes | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Únete a nuestros equipos Trabajar en C-onnect Preguntas frecuentes FAQ generación de leads ¿Preguntas?",
+          "url": "https://c-onnect.com/es/faq/",
+          "pageTitle": "Preguntas frecuentes | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "ESFRESFR Contáctanos ESFR FAQ Generación de leads C-onnect te explica todo sobre generación de leads.",
+          "url": "https://c-onnect.com/es/faq/",
+          "pageTitle": "Preguntas frecuentes | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Preguntas frecuentes ¡Inicia tu campaña!",
+          "url": "https://c-onnect.com/es/faq/",
+          "pageTitle": "Preguntas frecuentes | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Contáctanos Agenda una cita The Connect Agency S.L.Agencia de generación de leadsNIF : B09694027 Linkedin Instagram SectoresTelecomunicaciónEnergíaEducaciónSegurosRenovación energética Agencia¿Por qué C-onnect?BlogPreguntas frecuentesTrabajar con nosotros¡Contáctanos!",
+          "url": "https://c-onnect.com/es/faq/",
+          "pageTitle": "Preguntas frecuentes | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Contacto [email protected] +34 932 20 02 35 Plaza Universitat 3, 6A08007 Barcelone, Espagne © 2026 C-ONNECT • Realizado por TheBlockAviso legalPolítica de privacidadPolítica de cookies Sectores Génération de leads à la demande ¿Por qué C-onnect?",
+          "url": "https://c-onnect.com/es/faq/",
+          "pageTitle": "Preguntas frecuentes | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Rejoignez nos équipes Travailler chez C-onnect Question fréquentes FAQ génération de leads Une question ?",
+          "url": "https://c-onnect.com/faq/",
+          "pageTitle": "Questions fréquentes sur la Génération de Leads | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "FRESFRES Contactez-nous FRES FAQ Génération de leads C-onnect vous explique tout sur la génération de leads.",
+          "url": "https://c-onnect.com/faq/",
+          "pageTitle": "Questions fréquentes sur la Génération de Leads | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Questions fréquentes Démarrez votre campagne !",
+          "url": "https://c-onnect.com/faq/",
+          "pageTitle": "Questions fréquentes sur la Génération de Leads | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Rejoignez nos équipes Travailler chez C-onnect Question fréquentes FAQ génération de leads Contactez-nous Contactez-nous Télécommunication Forfait internet… Énergie Électricité, Gaz… Éducation Digital, design, management… Assurances Obsèques, emprunteur, mutuelle senior… Rénovation énergétique Panneaux solaires… Contactez-nous Prenez rendez-vous",
+          "url": "https://c-onnect.com/faq/",
+          "pageTitle": "Questions fréquentes sur la Génération de Leads | FAQ C-onnect",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Rejoignez nos équipes Travailler chez C-onnect Question fréquentes FAQ génération de leads Une question ?",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Rejoignez nos équipes Travailler chez C-onnect Question fréquentes FAQ génération de leads Contactez-nous Contactez-nous Télécommunication Forfait internet… Énergie Électricité, Gaz… Éducation Digital, design, management… Assurances Obsèques, emprunteur, mutuelle senior… Rénovation énergétique Panneaux solaires… Contactez-nous Prenez rendez-vous",
+          "url": "https://c-onnect.com/",
+          "pageTitle": "C-onnect | Agence de génération de leads clés en main",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://c-onnect.com/es/sectores/telecomunicacion/",
+        "https://c-onnect.com/es/contacto/",
+        "https://c-onnect.com/es/faq/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Leads telecom",
+        "Contacto",
+        "Trabajar con nosotros",
+        "Contact"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Agenda una cita",
+        "Contáctanos",
+        "¡Contáctanos!",
+        "ES",
+        "FR",
+        "¡Envíanos tu solicitud!",
+        "Sectores Génération de leads à la demande",
+        "Contactez-nous"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://c-onnect.com/es/contacto/ · 7 campos",
+        "https://c-onnect.com/contact/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda una cita",
+        "Agenda una cita",
+        "Agenda una cita",
+        "Agenda una cita"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El comprador pide una prueba y define sector, zona, volumen y criterios → C-onnect lanza/canaliza campañas y valida contacto e intención del consumidor → entrega al cliente el"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://c-onnect.com/es/sectores/telecomunicacion/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://c-onnect.com/es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://c-onnect.com/es/faq/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://c-onnect.com/es/aplicar/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://c-onnect.com/contact/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://c-onnect.com/faq/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://c-onnect.com/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=c-onnect.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=C-onnect&search_type=keyword_unordered",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactez-nous”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

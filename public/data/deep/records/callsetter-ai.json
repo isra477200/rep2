@@ -1,0 +1,578 @@
+{
+  "id": "callsetter-ai",
+  "name": "CallSetter AI",
+  "reviewedAt": "2026-08-22T15:50:19.454Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Stop Losing Customers toMissed Calls",
+    "heroObserved": true,
+    "priorSummary": "Appointment setter IA done-for-you que responde inbound y llama a cada lead nuevo en menos de 60 segundos, cualifica, reserva en calendario 24/7 y hace seguimiento; integración con CRM/calendario y reactivación de leads antiguos.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 335 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 985 palabras por página comercial recuperada. Muestras breves: “Stop Losing Customers toMissed Calls” · “Slow Follow-Up Is Costing YouMoney Every Month” · “Book more appointments, 24/7, without a setter on the phone”.",
+    "supportingHeadings": [
+      "Stop Losing Customers toMissed Calls",
+      "Why Speed-To-Lead Works",
+      "391%",
+      "Higher Conversion",
+      "100x",
+      "Higher Connect Rate",
+      "42h",
+      "Their Response Time",
+      "21x",
+      "Higher Qualifications",
+      "vs Manual Appointment Setters",
+      "ROI on every customer moment.",
+      "See Every Call. Track Every Appointment.",
+      "You Do Nothing. We Deliver Booked Appointments",
+      "We Build It",
+      "We Connect It",
+      "Appointments Book Automatically",
+      "WhatYouGet",
+      "Everything Required to Turn Leads Into Booked Appointments",
+      "Friday, 6:42 PM.A lead named Mike hits your website.",
+      "Calculate Your Lost Revenue",
+      "$9,000",
+      "$108,000",
+      "Frequently AskedQuestions",
+      "Slow Follow-Up Is Costing YouMoney Every Month",
+      "What Happens on the Call",
+      "We Learn Your Business",
+      "Your Revenue Leak, Estimated",
+      "How CallSetter Would Work",
+      "Honest Fit Check"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Book A Demo",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.callsetter.ai/",
+      "text": "Book A Demo",
+      "href": "https://www.callsetter.ai/demo",
+      "element": "a",
+      "kind": "conversion",
+      "score": 262.25
+    },
+    "ctas": [
+      "Book A Demo",
+      "Book a Demo",
+      "Book a demo",
+      "Schedule a Demo",
+      "book a demo directly",
+      "See the difference in a live demo",
+      "Contact",
+      "Get Started",
+      "Send Message"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.callsetter.ai/contact",
+        "index": 1,
+        "action": "https://www.callsetter.ai/contact",
+        "method": "GET",
+        "submitText": "Send Message",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name",
+            "placeholder": "John Smith",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "john@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone",
+            "placeholder": "(555) 123-4567",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message",
+            "placeholder": "Tell us about your business and what you are looking for...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "HubSpot",
+      "GoHighLevel",
+      "Calendly"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Appointment setter IA done-for-you que responde inbound y llama a cada lead nuevo en menos de 60 segundos, cualifica, reserva en calendario 24/7 y hace seguimiento; integración con CRM/calendario y reactivación de leads antiguos.",
+    "audience": "Empresas que usan appointment setters humanos y buscan sustituirlos por IA",
+    "prices": [
+      "SMS Follow-Up Engine $499 one-time setup + $149 /mo 11 custom-written texts across 3 automated flows, every message written from our conversion framework: the owner's voice with your real name on it, proof from your own jobs, a concrete time offered, a one-tap booking link.",
+      "$997 /mo $0.45/min · $1,497 one-time setup · Overage: $0.50/min 2,200 minutes included · about 730 calls/mo 2 AI agents (inbound + outbound) Everything in Starter, plus: Speed-to-lead outbound calling 3 phone numbers with local presence 3 script optimizations / month Get Started Enterprise For",
+      "$497 /mo $0.50/min · $997 one-time setup · Overage: $0.55/min 1,000 minutes included · about 330 calls/mo 1 AI agent (any type) Call recordings + transcripts Real-time reporting dashboard 1 script optimization / month Get Started Recommended Growth For growing companies that need multiple agents",
+      "$1,997 /mo $0.40/min · $1,997 one-time setup · Overage: $0.45/min 5,000 minutes included · about 1,665 calls/mo 3 AI agents (full stack) Everything in Growth, plus: Multi-campaign reactivation at scale 4 script optimizations / month Priority support + quarterly strategy reviews Get Started SMS +",
+      "Cuts no-shows 38% Reschedule recovery flow (3 texts): instant rebook link, next-day follow-up, 7-day win-back A2P registration and verification handled for you, texts send from your own number Email Follow-Up Engine $499 one-time setup + $149 /mo 9 custom-written emails across 3 automated flows, benefit-first",
+      "Message and carrier costs run at cost through your CRM, typically $20 to $50/mo."
+    ],
+    "guarantee": [
+      "14 Days No Questions Asked Cancel within the first 14 days for a full refund.",
+      "First, cancel within 14 days for a full refund, no questions asked.",
+      "If you are not impressed for any reason, full refund.",
+      "Will This Replace My Sales Team?How Does The Guarantee Work?07.",
+      "Do We Have Full Visibility Into What Is Happening?OUR PROMISEZero-Risk Guarantee14 days to try it.",
+      "The Triple Guarantee We take on the risk so you do not have to."
+    ],
+    "proof": [
+      "Reply C if you need to change it.SMS reminders cut no-shows 38% · Imperial College, peer-reviewedTUE 10:30 AMThe visitMike shows up.",
+      "85% of callers who reach voicemail never call back (Invoca), and companies that respond within an hour are 7x more likely to qualify the lead (Harvard Business Review).",
+      "The average business takes 42 hours to respond to a new lead (Harvard Business Review)."
+    ],
+    "objections": [
+      "Measured against your prior month, straight from the call logs.0ContractsCancel Anytime.No lock-ins.",
+      "Cancel anytime.14DaysNo Questions AskedTry CallSetter for 14 days.",
+      "Here is what happens anyway.6:42 PMNew lead capturedRoof repair request, Google Ads form.42his how long the average business would make Mike wait (HBR).6:42 PMFriday eveningMike submits a quote requestRoof repair, Google Ads.",
+      "No cancellation fees.",
+      "Speed to lead drives bookings, and that is where it wins.What an AI appointment setter actually doesA human setter calls leads, asks a few questions to confirm they are a real fit, and books them on the calendar.",
+      "…kely to pick up and talk.03It qualifies by voiceA natural conversation confirms the lead is a real fit, using the exact questions you would ask yourself.04It books the meetingThe AI offers open times and drops the appointment on your calendar.",
+      "We give you a flat number on a short call, so you see the real cost for your business with no per-seat surprises.Frequently asked questionsWhat is an AI appointment setter?+An AI appointment setter is a voice agent that calls your leads, talks to them like",
+      "Each trade routes to the correct dispatch team with the right qualification questions."
+    ],
+    "urgency": [
+      "Now multiply by every lead you get this month, including the ones at 2 AM.Included in every planAI Voice60sto first contactAnswers every inbound call and calls every new lead within 60 seconds.",
+      "We map how your leads get handled now, estimate what slow follow-up costs you every month, and show you how an AI agent calls every new lead in seconds so fewer jobs slip away.",
+      "The clock starts now, and the average business will take 42 hours to call him back.+42 SECFirst call attemptThe AI calls Mike in 42 secondsMike is driving home.",
+      "Know exactly how many calls were answered, how many appointments were booked, and where your leads are coming from.How it worksYou Do Nothing.",
+      "The AI qualifies the job, checks your live calendar, and books him on the spot.",
+      "The reminder closes that gap automatically.Reminder: your Apex Roofing inspection is today at 10:30 AM."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "$497 /mo $0.50/min · $997 one-time setup · Overage: $0.55/min 1,000 minutes included · about 330 calls/mo 1 AI agent (any type) Call recordings + transcripts Real-time reporting dashboard 1 script optimization / month Get Started Recommended Growth For growing companies that need multiple agents",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "$997 /mo $0.45/min · $1,497 one-time setup · Overage: $0.50/min 2,200 minutes included · about 730 calls/mo 2 AI agents (inbound + outbound) Everything in Starter, plus: Speed-to-lead outbound calling 3 phone numbers with local presence 3 script optimizations / month Get Started Enterprise For",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "$1,997 /mo $0.40/min · $1,997 one-time setup · Overage: $0.45/min 5,000 minutes included · about 1,665 calls/mo 3 AI agents (full stack) Everything in Growth, plus: Multi-campaign reactivation at scale 4 script optimizations / month Priority support + quarterly strategy reviews Get Started SMS +",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "SMS Follow-Up Engine $499 one-time setup + $149 /mo 11 custom-written texts across 3 automated flows, every message written from our conversion framework: the owner's voice with your real name on it, proof from your own jobs, a concrete time offered, a one-tap booking link.",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Cuts no-shows 38% Reschedule recovery flow (3 texts): instant rebook link, next-day follow-up, 7-day win-back A2P registration and verification handled for you, texts send from your own number Email Follow-Up Engine $499 one-time setup + $149 /mo 9 custom-written emails across 3 automated flows, benefit-first",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Message and carrier costs run at cost through your CRM, typically $20 to $50/mo.",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "How It WorksROI CalculatorWho This Is ForFAQSGuaranteeBook A DemoOpen main menuStop Losing Customers toMissed CallsCall Setter AI answers every call in under 60 seconds, qualifies the caller, and books straight to your calendar.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Will This Replace My Sales Team?How Does The Guarantee Work?07.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Do We Have Full Visibility Into What Is Happening?OUR PROMISEZero-Risk Guarantee14 days to try it.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "If you are not impressed for any reason, full refund.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "No leads going cold while you sleep.See CallSetter in actionBook a demo Done-for-you setup 14-day risk-free trial No contracts, cancel anytimeUnder 60sto call every new lead24/7coverage, nights and weekends includedZeroleads left waiting for a callbackQuick answer.",
+          "url": "https://www.callsetter.ai/ai-appointment-setter",
+          "pageTitle": "AI Appointment Setter: Book More Appointments 24/7 | Call Setter AI",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "The Triple Guarantee We take on the risk so you do not have to.",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "14 Days No Questions Asked Cancel within the first 14 days for a full refund.",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "How does the Triple Guarantee work?",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "First, cancel within 14 days for a full refund, no questions asked.",
+          "url": "https://www.callsetter.ai/pricing",
+          "pageTitle": "Pricing | CallSetter AI - AI Appointment Setting Plans",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "How It WorksROI CalculatorWho This Is ForFAQSGuaranteeBook A DemoOpen main menuStop Losing Customers toMissed CallsCall Setter AI answers every call in under 60 seconds, qualifies the caller, and books straight to your calendar.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Reply C if you need to change it.SMS reminders cut no-shows 38% · Imperial College, peer-reviewedTUE 10:30 AMThe visitMike shows up.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "85% of callers who reach voicemail never call back (Invoca), and companies that respond within an hour are 7x more likely to qualify the lead (Harvard Business Review).",
+          "url": "https://www.callsetter.ai/home-services",
+          "pageTitle": "AI Receptionist for Home Service Companies | CallSetter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The average business takes 42 hours to respond to a new lead (Harvard Business Review).",
+          "url": "https://www.callsetter.ai/home-services",
+          "pageTitle": "AI Receptionist for Home Service Companies | CallSetter AI",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "How It WorksROI CalculatorWho This Is ForFAQSGuaranteeBook A DemoOpen main menuStop Losing Customers toMissed CallsCall Setter AI answers every call in under 60 seconds, qualifies the caller, and books straight to your calendar.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Here is what happens anyway.6:42 PMNew lead capturedRoof repair request, Google Ads form.42his how long the average business would make Mike wait (HBR).6:42 PMFriday eveningMike submits a quote requestRoof repair, Google Ads.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cancel anytime.14DaysNo Questions AskedTry CallSetter for 14 days.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Measured against your prior month, straight from the call logs.0ContractsCancel Anytime.No lock-ins.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No commitments.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No cancellation fees.",
+          "url": "https://www.callsetter.ai/",
+          "pageTitle": "AI Appointment Setter That Books Leads in 60 Seconds | Call Setter AI",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No leads going cold while you sleep.See CallSetter in actionBook a demo Done-for-you setup 14-day risk-free trial No contracts, cancel anytimeUnder 60sto call every new lead24/7coverage, nights and weekends includedZeroleads left waiting for a callbackQuick answer.",
+          "url": "https://www.callsetter.ai/ai-appointment-setter",
+          "pageTitle": "AI Appointment Setter: Book More Appointments 24/7 | Call Setter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Speed to lead drives bookings, and that is where it wins.What an AI appointment setter actually doesA human setter calls leads, asks a few questions to confirm they are a real fit, and books them on the calendar.",
+          "url": "https://www.callsetter.ai/ai-appointment-setter",
+          "pageTitle": "AI Appointment Setter: Book More Appointments 24/7 | Call Setter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…kely to pick up and talk.03It qualifies by voiceA natural conversation confirms the lead is a real fit, using the exact questions you would ask yourself.04It books the meetingThe AI offers open times and drops the appointment on your calendar.",
+          "url": "https://www.callsetter.ai/ai-appointment-setter",
+          "pageTitle": "AI Appointment Setter: Book More Appointments 24/7 | Call Setter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We give you a flat number on a short call, so you see the real cost for your business with no per-seat surprises.Frequently asked questionsWhat is an AI appointment setter?+An AI appointment setter is a voice agent that calls your leads, talks to them like",
+          "url": "https://www.callsetter.ai/ai-appointment-setter",
+          "pageTitle": "AI Appointment Setter: Book More Appointments 24/7 | Call Setter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Each trade routes to the correct dispatch team with the right qualification questions.",
+          "url": "https://www.callsetter.ai/home-services",
+          "pageTitle": "AI Receptionist for Home Service Companies | CallSetter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The AI re-engages the homeowner, answers questions, and books the work.",
+          "url": "https://www.callsetter.ai/home-services",
+          "pageTitle": "AI Receptionist for Home Service Companies | CallSetter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Frequently Asked Questions Can CallSetter AI handle multiple trades under one company?Yes.",
+          "url": "https://www.callsetter.ai/home-services",
+          "pageTitle": "AI Receptionist for Home Service Companies | CallSetter AI",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The AI supports multi-trade routing for companies offering HVAC, plumbing, electrical, roofing, appliance repair, and general contracting.",
+          "url": "https://www.callsetter.ai/home-services",
+          "pageTitle": "AI Receptionist for Home Service Companies | CallSetter AI",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.callsetter.ai/",
+        "https://www.callsetter.ai/demo",
+        "https://www.callsetter.ai/ai-appointment-setter"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Stop Losing Customers toMissed Calls",
+        "Slow Follow-Up Is Costing YouMoney Every Month",
+        "Book more appointments, 24/7, without a setter on the phone",
+        "Let's Talk"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Book A Demo",
+        "Book a Demo",
+        "Book a demo",
+        "book a demo directly",
+        "Send Message",
+        "Schedule a Demo",
+        "Contact",
+        "Get Started"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.callsetter.ai/contact · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Book A Demo",
+        "Book A Demo",
+        "Book a Demo",
+        "Book A Demo",
+        "Book a demo",
+        "Book a Demo",
+        "book a demo directly"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Lead entra por anuncio/formulario/llamada → CallSetter conecta anuncios, formularios, CRM, teléfono y calendario → agente IA llama al lead en menos de 60 segundos o atiende inbound →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.callsetter.ai/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.callsetter.ai/demo",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.callsetter.ai/ai-appointment-setter",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.callsetter.ai/contact",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.callsetter.ai/pricing",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.callsetter.ai/home-services",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.callsetter.ai/plumbing",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://callsetter.ai/best-ai-appointment-setter-software",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://callsetter.ai/blog/ai-vs-human-setters",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Book A Demo”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, HubSpot, GoHighLevel, Calendly) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

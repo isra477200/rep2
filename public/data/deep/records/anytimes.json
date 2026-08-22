@@ -1,0 +1,397 @@
+{
+  "id": "anytimes",
+  "name": "AnyTimes",
+  "reviewedAt": "2026-08-22T15:50:19.831Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "みんなのサービス",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, centrado en la marca, consultivo / basado en preguntas, orientado a la acción. Usa 434 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 648 palabras por página comercial recuperada. Muestras breves: “生活相談のサービス” · “観葉植物アドバイスのサービス” · “お帰りなさい！”.",
+    "supportingHeadings": [
+      "利用料はかかりますか？",
+      "生活相談のサービス",
+      "¥0",
+      "¥2,000",
+      "¥7,000",
+      "¥10,000",
+      "¥8,000",
+      "¥5,000",
+      "¥3,000",
+      "¥500",
+      "¥4,000",
+      "¥20,000",
+      "カテゴリーから探す",
+      "地域から検索する",
+      "観葉植物アドバイスのサービス",
+      "お帰りなさい！",
+      "みんなのサービス",
+      "¥130",
+      "¥6,000",
+      "¥280",
+      "¥50",
+      "LIFE SHARE, LIKE SHARE.",
+      "みんなでつくる、新しい暮らしかた。",
+      "ロゴへの想い",
+      "Connected Plus",
+      "経営理念",
+      "Mission",
+      "Vision",
+      "Message",
+      "会社概要"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "お問い合わせ",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.any-times.com/faq/5",
+      "text": "お問い合わせ",
+      "href": "https://www.any-times.com/inquiry",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163.5
+    },
+    "ctas": [
+      "お問い合わせ",
+      "お問い合わせフォームへ",
+      "送信",
+      "保存",
+      "こちら",
+      "新規登録",
+      "chat 生活相談"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.any-times.com/faq/5",
+        "index": 1,
+        "action": "https://www.any-times.com/inquiry",
+        "method": "POST",
+        "submitText": "送信",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "名前",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "メールアドレス",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "content",
+            "label": null,
+            "placeholder": "内容",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.any-times.com/ticket/services/any/consultation",
+        "index": 1,
+        "action": "https://www.any-times.com/ticket/services/any/consultation",
+        "method": "GET",
+        "submitText": "保存",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "number",
+            "name": "budget",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "maxBudget",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "isIdentityVerifiedUser",
+            "label": "本人確認済み",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "isCertificatedUser",
+            "label": "認定サポーター",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "isHideCloseTicket",
+            "label": "募集終了案件を除く",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 3 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: budget, maxBudget.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 5,
+      "qualification": [
+        "budget",
+        "maxBudget"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "COMPANY 会社概要 利用規約 特定商取引に基づく表記 個人情報保護方針 CONTENTS ANYLIFE NEWS SUPPORT ご利用ガイド よくある質問 お問い合わせ CONTACT 企業様・自治体様 家具関連会社様 取材・講演依頼 IT導入補助金を利用してアプリ制作を希望される企業様へ 決済方法 お支払いは、クレジットカード決済がご利用いただけます。クレジットカードをお持ちでない方は、事務局までご連絡ください。",
+      "詳細を見る perm_phone_msg パトロール assignment_ind 本人確認 tag_faces 評価制度 smartphone 番号確認 lock シェアワーカー保険 stars 認定制度 よくある質問 チケットの金額は変更できますか？"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "どのインテリアのデザインやコーディネートをしてもらいたいかによっても変動します。例えば、2級建築士の資格もお持ちのインテリアコーディネーターさんですと、20,000円（交通費、雑費込）ほどとなっております。",
+          "url": "https://www.any-times.com/ticket/services/any/greenery-&-plants",
+          "pageTitle": "人気の観葉植物・グリーンコーディネートサービス12選 (2026年08月更新) | ANYTIMES エニタイムズ",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "また、ちょっとしたインテリアのアドバイス等ですと、3,000-5,000円でサービス提供されるケースもございます。",
+          "url": "https://www.any-times.com/ticket/services/any/greenery-&-plants",
+          "pageTitle": "人気の観葉植物・グリーンコーディネートサービス12選 (2026年08月更新) | ANYTIMES エニタイムズ",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "完了報告後、返金をしてもらいたい 作業実施後にサポーターさんによる不備を確認しました。どうしたら良いですか？",
+          "url": "https://www.any-times.com/faq/5",
+          "pageTitle": "ご近所で、会って、助け合い 「ANYTIMES」- スキルシェアサービス",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "返金手続きしたが、どのように返金されるか？",
+          "url": "https://www.any-times.com/faq/5",
+          "pageTitle": "ご近所で、会って、助け合い 「ANYTIMES」- スキルシェアサービス",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        }
+      ],
+      "proof": [],
+      "objections": [
+        {
+          "text": "COMPANY 会社概要 利用規約 特定商取引に基づく表記 個人情報保護方針 CONTENTS ANYLIFE NEWS SUPPORT ご利用ガイド よくある質問 お問い合わせ CONTACT 企業様・自治体様 家具関連会社様 取材・講演依頼 IT導入補助金を利用してアプリ制作を希望される企業様へ 決済方法 お支払いは、クレジットカード決済がご利用いただけます。クレジットカードをお持ちでない方は、事務局までご連絡ください。",
+          "url": "https://www.any-times.com/faq/5",
+          "pageTitle": "ご近所で、会って、助け合い 「ANYTIMES」- スキルシェアサービス",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "詳細を見る perm_phone_msg パトロール assignment_ind 本人確認 tag_faces 評価制度 smartphone 番号確認 lock シェアワーカー保険 stars 認定制度 よくある質問 チケットの金額は変更できますか？",
+          "url": "https://www.any-times.com/ticket/services",
+          "pageTitle": "みんなのサービス - ご近所で、会って、助け合い 「ANYTIMES」- スキルシェアサービス",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "COMPANY 会社概要 利用規約 特定商取引に基づく表記 個人情報保護方針 CONTENTS ANYLIFE NEWS SUPPORT ご利用ガイド よくある質問 お問い合わせ CONTACT 企業様・自治体様 家具関連会社様 取材・講演依頼 IT導入補助金を利用してアプリ制作を希望される企業様へ 決済方法 お支払いは、クレジットカード決済がご利用いただけます。クレジットカードをお持ちでない方は、事務局までご連絡ください。",
+          "url": "https://www.any-times.com/ticket/services",
+          "pageTitle": "みんなのサービス - ご近所で、会って、助け合い 「ANYTIMES」- スキルシェアサービス",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.any-times.com/faq/5",
+        "https://www.any-times.com/ticket/services/any/consultation",
+        "https://www.any-times.com/ticket/services/any/greenery-&-plants"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "生活相談のサービス",
+        "観葉植物アドバイスのサービス",
+        "お帰りなさい！",
+        "みんなのサービス"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "新規登録",
+        "送信",
+        "お問い合わせ",
+        "保存",
+        "chat 生活相談",
+        "こちら",
+        "お問い合わせフォームへ"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.any-times.com/faq/5 · 3 campos",
+        "https://www.any-times.com/ticket/services/any/consultation · 5 campos",
+        "https://www.any-times.com/ticket/services/any/consultation · 5 campos",
+        "https://www.any-times.com/ticket/services/any/greenery-&-plants · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.any-times.com/faq/5",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.any-times.com/ticket/services/any/consultation",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.any-times.com/ticket/services/any/greenery-&-plants",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.any-times.com/login",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.any-times.com/ticket/services",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.any-times.com/company",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.any-times.com/ticket/services/any/consultation?order=recommend",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “お問い合わせ”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

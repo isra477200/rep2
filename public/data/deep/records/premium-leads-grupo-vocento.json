@@ -1,0 +1,623 @@
+{
+  "id": "premium-leads-grupo-vocento",
+  "name": "Premium Leads (grupo Vocento)",
+  "reviewedAt": "2026-08-22T15:50:18.600Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Orquesta el recorrido completo desde generar tráfico hasta convertir, atribuir, nutrir y optimizar negocio.",
+    "heroObserved": true,
+    "priorSummary": "Acquisition Suite (Outlander, paid media, SEO, Vekkto e inventario Vocento) + Conversion Suite (Webphone, WASK WhatsApp, MEIGA IA y CDP Vekkto).",
+    "voice": "Revisión manual: corporativo, tecnológico, consultivo, modular, orientado a performance. Estructura la oferta en Acquisition, Conversion y Business. Nombra productos propios como piezas de un ecosistema. Usa porcentajes de casos como prueba de impacto.",
+    "supportingHeadings": [
+      "Technology shapes success",
+      "Optimizamos procesos, generamos impacto.",
+      "Estrategias a medida",
+      "Speech Analytics aplicado a ventas: de la llamada a los KPIs...",
+      "Por qué automatizar el funnel ya no es una opción: lecciones...",
+      "Cómo conseguimos que las landings rindan un 25% más sin tocar...",
+      "10 consejos que debes conocer antes de utilizar GA4",
+      "Contacto",
+      "Nosotros",
+      "Misión",
+      "Visión",
+      "Valores",
+      "Performance suites",
+      "Proyectos",
+      "Mundo R",
+      "Mejoramos la captación con Webphone + servicios de marketing",
+      "Blog",
+      "ChatGPT y SEO: ¿Sueña la IA con keywords eléctricas?",
+      "Truquis de Optimización de imágenes para SEO",
+      "Como exprimir los datos de Google Trends con Pytrends y Python",
+      "Join MySQL: la distintas formas de unión entre tablas",
+      "%title%"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.premiumleads.com/",
+      "text": "Contacto",
+      "href": "https://www.premiumleads.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Conoce cómo podemos ayudarte",
+      "Contacto",
+      "Whatsapp",
+      "ENVIAR"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.premiumleads.com/contacto/",
+        "index": 1,
+        "action": "https://www.premiumleads.com/api/lead",
+        "method": "POST",
+        "submitText": "ENVIAR",
+        "visibleFieldCount": 16,
+        "requiredFieldCount": 9,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "select",
+            "name": "reason",
+            "label": "Motivo de contacto",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "8989eda7-eb5b-4068-8996-008517b0a205",
+            "label": "Nombre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "f1c4b0d2-3e6a-4c8b-9f5e-7d8f3c1b2a3b",
+            "label": "Apellidos",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "position",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "6d872dde-7e4a-426d-9717-54c661df797e",
+            "label": "Teléfono - Prefijo",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "6b7d7144-32fa-4c7e-8502-e51953fdfec2",
+            "label": "Teléfono - Número",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "24b6d351-d729-429a-9959-9111a15edbb2",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "cv",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "b1433110-217a-459c-a450-e52d242ba7a5",
+            "label": "Tu curriculum",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "surname",
+            "label": null,
+            "placeholder": "Apellidos",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "prefix",
+            "label": null,
+            "placeholder": "Prefijo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 16 y 16 campos visibles, mínimo 9 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: company.",
+      "friction": "Alta",
+      "minFields": 16,
+      "maxFields": 16,
+      "qualification": [
+        "company"
+      ]
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Acquisition Suite (Outlander, paid media, SEO, Vekkto e inventario Vocento) + Conversion Suite (Webphone, WASK WhatsApp, MEIGA IA y CDP Vekkto).",
+    "audience": "Multi-vertical nacional: formación, energía, seguros, hogar, automoción y servicios.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Caso de uso +20% Optimización de procesos Mejora de la analítica de negocio Implementamos una arquitectura sólida de medición y llevamos a cabo un proceso de análisis continuado para mejorar los resultados.",
+      "VER MÁS Lead conversion RETENCIÓN Convertimos leads en clientes e incrementamos notablemente la fidelización gracias al desarrollo de plataformas avanzadas y a acciones calculadas."
+    ],
+    "objections": [
+      "Ver + 28/07/2025 Por qué automatizar el funnel ya no es una opción: lecciones..."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Caso de uso +20% Optimización de procesos Mejora de la analítica de negocio Implementamos una arquitectura sólida de medición y llevamos a cabo un proceso de análisis continuado para mejorar los resultados.",
+          "url": "https://www.premiumleads.com/",
+          "pageTitle": "Soluciones tecnológicas y estratégicas | Premium Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "VER MÁS Lead conversion RETENCIÓN Convertimos leads en clientes e incrementamos notablemente la fidelización gracias al desarrollo de plataformas avanzadas y a acciones calculadas.",
+          "url": "https://www.premiumleads.com/",
+          "pageTitle": "Soluciones tecnológicas y estratégicas | Premium Leads",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Ver + 28/07/2025 Por qué automatizar el funnel ya no es una opción: lecciones...",
+          "url": "https://www.premiumleads.com/",
+          "pageTitle": "Soluciones tecnológicas y estratégicas | Premium Leads",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.premiumleads.com/",
+        "https://www.premiumleads.com/contacto/",
+        "https://www.premiumleads.com/nosotros/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Technology shapes success",
+        "Contacto",
+        "Performance suites",
+        "Proyectos"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Whatsapp",
+        "ENVIAR",
+        "Conoce cómo podemos ayudarte"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.premiumleads.com/contacto/ · 16 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) Empresa y Premium Leads definen vertical, audiencia, volumen y objetivos por contacto comercial. 2) Acquisition Suite capta demanda con Outlander, paid media, SEO, activos del grupo Vocento"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Contacto y alcance [inferido] → Adquisición [observado] → Captura [observado] → Precualificación [observado] → Handoff [observado] → Nurture y atribución [observado] → Inteligencia [observado] → Optimización [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.premiumleads.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.premiumleads.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.premiumleads.com/nosotros/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.premiumleads.com/performance-suites/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.premiumleads.com/proyectos/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.premiumleads.com/proyectos/mundo-r/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.premiumleads.com/blog/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://premiumleads.es/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=premiumleads.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=Premium%20Leads%20%2F%20Vocento",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 16 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Orquesta el recorrido completo desde generar tráfico hasta convertir, atribuir, nutrir y optimizar negocio.",
+      "promise": "Leads de alto potencial mediante tecnología propia, inventario de medios, IA conversacional y datos activables.",
+      "positioning": "Suite española de adquisición, conversión y business intelligence del grupo Vocento",
+      "audience": "Empresas españolas de automoción, educación, real estate, energía, banca y otros verticales con volumen y CRM.",
+      "voice": [
+        "corporativo",
+        "tecnológico",
+        "consultivo",
+        "modular",
+        "orientado a performance"
+      ],
+      "patterns": [
+        "Estructura la oferta en Acquisition, Conversion y Business.",
+        "Nombra productos propios como piezas de un ecosistema.",
+        "Usa porcentajes de casos como prueba de impacto."
+      ]
+    },
+    "cta": {
+      "primary": "Contacta con nosotros",
+      "secondary": [
+        "Descubre nuestros proyectos",
+        "Hablar por WhatsApp"
+      ],
+      "forms": [
+        {
+          "url": "https://www.premiumleads.com/contacto/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "motivo general o CV",
+            "nombre",
+            "apellidos",
+            "empresa",
+            "cargo",
+            "prefijo",
+            "teléfono",
+            "email",
+            "mensaje",
+            "CV condicional"
+          ],
+          "fieldCount": 9,
+          "friction": "alta para una primera conversación",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Contacto y alcance",
+        "status": "inferido",
+        "detail": "Formulario o canal directo inicia diagnóstico de vertical, audiencia, volumen y objetivos."
+      },
+      {
+        "stage": "Adquisición",
+        "status": "observado",
+        "detail": "Outlander crea landings o micrositios y combina SEM, programática, Google, Meta, TikTok, SEO e inventario Vocento."
+      },
+      {
+        "stage": "Captura",
+        "status": "observado",
+        "detail": "Webphone, chat, SMS y WASK capturan llamadas y conversaciones en web o WhatsApp."
+      },
+      {
+        "stage": "Precualificación",
+        "status": "observado",
+        "detail": "MEIGA usa texto o voz para FAQ, identificación y precualificación 24/7."
+      },
+      {
+        "stage": "Handoff",
+        "status": "observado",
+        "detail": "La oportunidad y su contexto se envían al CRM o equipo comercial."
+      },
+      {
+        "stage": "Nurture y atribución",
+        "status": "observado",
+        "detail": "Vekkto perfila, puntúa, atribuye y activa audiencias, remarketing y secuencias."
+      },
+      {
+        "stage": "Inteligencia",
+        "status": "observado",
+        "detail": "Call Metrics y dashboards analizan calidad, proceso y resultado."
+      },
+      {
+        "stage": "Optimización",
+        "status": "inferido",
+        "detail": "Datos y casos realimentan medios, mensajes y operación comercial."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "precio — no publicado; requiere contacto y alcance"
+      ],
+      "contract": [
+        "duración, mínimo y salida — no publicados"
+      ],
+      "guarantee": [
+        "resultado, volumen o SLA — no se observó garantía contractual pública"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Apache",
+      "Google Tag Manager",
+      "WhatsApp",
+      "Outlander AI, Vekkto, Webphone, WASK, MEIGA y Call Metrics",
+      "Google, Meta, TikTok y programática",
+      "HubSpot y Salesforce"
+    ],
+    "contradictions": [
+      "Leads de alto potencial y cualificación son mensajes centrales, pero no se publica una rubric de aceptación o evento facturable.",
+      "No perder oportunidades gracias a disponibilidad 24/7 describe cobertura tecnológica, no asegura contacto, asistencia o venta.",
+      "Los porcentajes de casos pertenecen a proyectos, sectores y periodos distintos y no pueden sumarse ni generalizarse.",
+      "La frontera entre módulo base, personalización, integración y servicio gestionado solo puede conocerse mediante propuesta.",
+      "La obligatoriedad de todos los campos visibles crea fricción incompatible con una exploración ligera de primera etapa."
+    ],
+    "inferences": [
+      "Contacto y alcance: Formulario o canal directo inicia diagnóstico de vertical, audiencia, volumen y objetivos.",
+      "Optimización: Datos y casos realimentan medios, mensajes y operación comercial."
+    ],
+    "notObservable": [
+      "precio",
+      "contrato",
+      "SLA",
+      "criterio de lead cualificado",
+      "módulos incluidos por proyecto",
+      "propiedad y portabilidad de datos",
+      "modelo de atribución",
+      "garantías",
+      "arquitectura de datos",
+      "modelos de IA",
+      "proveedor de voz",
+      "CRM interno",
+      "reglas de scoring",
+      "retención operativa",
+      "No se verificaron API de recepción, respuesta, demo, diagnóstico, propuesta, alcance modular ni seguimiento."
+    ],
+    "limitations": [
+      "No se envió el formulario ni se abrió una conversación.",
+      "No se obtuvo propuesta, demo o contrato.",
+      "No se verificaron campañas, llamadas, conversaciones, CRM o atribución.",
+      "Los resultados de proyectos son autodeclarados y con contexto desigual."
+    ],
+    "lessons": {
+      "copy": [
+        "Organizar la oferta por Acquisition, Conversion y Business.",
+        "Nombrar cada módulo por una función concreta del funnel."
+      ],
+      "adapt": [
+        "Unificar web, voz, mensajería y CRM con contexto continuo.",
+        "Usar inventario propio y datos de primera parte con consentimiento.",
+        "Separar métricas de adquisición, conversación y revenue."
+      ],
+      "avoid": [
+        "Llamar cualificado sin rubric pública.",
+        "Mezclar resultados de casos como promesa general.",
+        "Obligar a demasiados campos antes de aportar valor."
+      ],
+      "test": [
+        "Suite modular frente a plan vertical preconfigurado.",
+        "IA de texto frente a voz para precualificación.",
+        "Formulario corto con enriquecimiento posterior frente al actual largo."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.premiumleads.com/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.premiumleads.com/contacto/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.premiumleads.com/performance-suites/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.premiumleads.com/performance-suites/acquisition/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.premiumleads.com/performance-suites/conversion/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.premiumleads.com/performance-suites/business/",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.premiumleads.com/proyectos/",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,344 @@
+{
+  "id": "kerix-net",
+  "name": "kerix.net",
+  "reviewedAt": "2026-08-22T15:50:18.820Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Résultat de recherche Marketing direct - conseils et services",
+    "heroObserved": true,
+    "priorSummary": "Ficha básica gratis validada; pago según presupuesto para prioridad, logo, catálogo, vídeo, links, keywords y marcas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, consultivo / basado en preguntas, orientado a la acción. Usa 244 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 701 palabras por página comercial recuperada. Muestras breves: “Kerix.net L’annuaire digital B2B” · “Pack visibilité Kerix Boostez votre fiche et captez plus de clients” · “Kerix”.",
+    "supportingHeadings": [
+      "Kerix.net L’annuaire digital B2B",
+      "Résultats de recherche",
+      "À lire en ce moment",
+      "Découvrez l'ensemble des produits et services KERIX, destinés aux professionnels",
+      "Maroc1000 : Les 1000 premières entreprises au Maroc",
+      "Kerix-Export : Le premier portail des exportateurs marocains",
+      "Ekipotel : Le Guide Collectivités, Hotellerie et Restauration",
+      "ExpoMaroc : Le 1er portail des salons professionnels au Maroc",
+      "Si vous souhaitez réagir à une information traitée sur ce site, n'hésitez pas à nous contacter. [email protected]",
+      "Pack visibilité Kerix Boostez votre fiche et captez plus de clients",
+      "Demande express Recevez votre offre visibilité sur mesure",
+      "FAQ (Foire Aux Questions) Kerix.net",
+      "Accès rapide",
+      "1. Qu’est-ce que Kerix.net ?",
+      "2. À qui s’adresse Kerix.net ?",
+      "3. Quels sont les avantages d’utiliser un annuaire B2B plutôt que Google ?",
+      "4. Qu’est-ce que l’écosystème Kerix ?",
+      "5. La consultation de Kerix.net est-elle gratuite ?",
+      "6. Comment effectuer une recherche efficace sur Kerix.net ?",
+      "7. Comment comprendre les résultats de recherche ?",
+      "8. Comment consulter une fiche entreprise et contacter un fournisseur ?",
+      "9. Est-il possible d’envoyer une demande groupée de devis ?",
+      "10. Pourquoi la demande de devis via Kerix.net est-elle si performante ?",
+      "11. Pourquoi référencer mon entreprise sur Kerix.net ?",
+      "12. L’inscription est-elle payante ?",
+      "13. Comment ajouter mon entreprise à l’annuaire Kerix.net ?",
+      "14. Quelle est la différence entre un référencement gratuit et une offre payante ?",
+      "15. Est-ce que des entreprises internationales utilisent Kerix ?",
+      "16. Mon entreprise est déjà sur Kerix.net : comment modifier mes informations ?",
+      "17. D’où viennent les données de Kerix ?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Change the CAPTCHA code",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.kerix.net/fr/contact",
+      "text": "Change the CAPTCHA code",
+      "href": "https://www.kerix.net/fr/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 139.25
+    },
+    "ctas": [
+      "9. Devis",
+      "Booster ma fiche",
+      "Appliquer le filtre",
+      "Speak the CAPTCHA code",
+      "Change the CAPTCHA code",
+      "402 Bd Zerktouni - 20040 Casablanca - Maroc",
+      "Boostez votre visibilité avec un pack payant !"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.kerix.net/fr/contact",
+        "index": 2,
+        "action": "https://www.kerix.net/fr/contact",
+        "method": "POST",
+        "submitText": "Booster ma fiche",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "contact[nom]",
+            "label": "Nom Complet",
+            "placeholder": "Entrez votre nom complet",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact[tel]",
+            "label": "Numéro de Téléphone",
+            "placeholder": "Entrez votre numéro de téléphone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "label": "Adresse Email",
+            "placeholder": "Entrez votre adresse email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact[entreprise]",
+            "label": "Nom de l'entreprise",
+            "placeholder": "Entrez le nom de votre entreprise",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "contact[message]",
+            "label": "Votre Message",
+            "placeholder": "Dites-nous comment nous pouvons vous aider...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact[captchaCode]",
+            "label": null,
+            "placeholder": "Saisir le texte",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "contact[conditionsGenerales]",
+            "label": "J’accepte que KERIX collecte et utilise mes données personnelles dans le cadre",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 7 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Ficha básica gratis validada; pago según presupuesto para prioridad, logo, catálogo, vídeo, links, keywords y marcas.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "Inscription entreprise Connectez-vous FR / EN Accueil › FAQ FAQ (Foire Aux Questions) Kerix.net Tout ouvrir Tout fermer Accès rapide 1."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Inscription entreprise Connectez-vous FR / EN Accueil › FAQ FAQ (Foire Aux Questions) Kerix.net Tout ouvrir Tout fermer Accès rapide 1.",
+          "url": "https://www.kerix.net/fr/faq",
+          "pageTitle": "FAQ B2B Maroc – Référencement d'entreprises et demande de devis | Kerix.net",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Nous contacter Mentions légales Politique de cookie Conditions générales d'utilisation FAQ (Foire Aux Questions) Coordonnées 402 Bd Zerktouni - 20040 Casablanca - Maroc Nos horaires De 9h00 à 17h00 Du lundi au vendredi 2026 Kerix.Tout droit réservé ↑",
+          "url": "https://www.kerix.net/fr/faq",
+          "pageTitle": "FAQ B2B Maroc – Référencement d'entreprises et demande de devis | Kerix.net",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Nous contacter Mentions légales Politique de cookie Conditions générales d'utilisation FAQ (Foire Aux Questions) Coordonnées 402 Bd Zerktouni - 20040 Casablanca - Maroc Nos horaires De 9h00 à 17h00 Du lundi au vendredi 2026 Kerix.Tout droit réservé ↑",
+          "url": "https://www.kerix.net/fr/annuaire-entreprise/marketing-direct-conseils-et-services.html",
+          "pageTitle": "Marketing direct - conseils et services Maroc | Kerix, l'annuaire professionnel du Maroc",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.kerix.net/fr/",
+        "https://www.kerix.net/fr/contact",
+        "https://www.kerix.net/fr/faq"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Kerix.net L’annuaire digital B2B",
+        "Pack visibilité Kerix Boostez votre fiche et captez plus de clients",
+        "Kerix",
+        "Résultat de recherche Marketing direct - conseils et services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Boostez votre visibilité avec un pack payant !",
+        "Change the CAPTCHA code",
+        "Speak the CAPTCHA code",
+        "Booster ma fiche",
+        "402 Bd Zerktouni - 20040 Casablanca - Maroc",
+        "9. Devis",
+        "Appliquer le filtre"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.kerix.net/fr/contact · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.kerix.net/fr/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.kerix.net/fr/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.kerix.net/fr/faq",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.kerix.net/fr/annuaire-entreprise/kerix",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.kerix.net/fr/annuaire-entreprise/marketing-direct-conseils-et-services.html",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.kerix.net/fr/envoyer-un-devis/marketing-direct-conseils-et-services.html",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.kerix.net/fr/annuaire-entreprise/sc-sabiri-company",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.kerix.net/index.php/fr/faq",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.kerix.net/index.php/fr/addedit",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Change the CAPTCHA code”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

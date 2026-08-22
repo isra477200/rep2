@@ -1,0 +1,624 @@
+{
+  "id": "tumejorlead",
+  "name": "TuMejorLead",
+  "reviewedAt": "2026-08-22T15:50:17.578Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Tu agencia de captación. Lo hacemos por ti.",
+    "heroObserved": true,
+    "priorSummary": "\"Tú solo respondes a los interesados\" — generación de leads B2B automatizada con panel en directo",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 95 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1174 palabras por página comercial recuperada. Muestras breves: “Tu agencia de captación. Lo hacemos por ti.” · “Hablemos de tu captación” · “Captación de clientes B2B, gestionada por nosotros.”.",
+    "supportingHeadings": [
+      "Tu agencia de captación. Lo hacemos por ti.",
+      "Bienvenido de vuelta",
+      "Solicita tu propuesta gratis",
+      "Así se llena tu bandeja de interesados",
+      "Externaliza tu captación. Sale a cuenta.",
+      "Contratar un comercial",
+      "Agencia de captación gestionada",
+      "Agencia de SDR tradicional",
+      "Nosotros lo hacemos. Tú recibes oportunidades.",
+      "Nos envías un ejemplo",
+      "Creamos las versiones",
+      "Configuramos todo",
+      "Recibes oportunidades",
+      "Una agencia de captación, en piloto automático.",
+      "Mira cómo se envían tus emails, en directo.",
+      "Cada campaña, a tu medida.",
+      "Si no conseguimos ningún interesado, te devolvemos el dinero.",
+      "Preguntas frecuentes",
+      "Olvídate de buscar clientes.",
+      "Hablemos de tu captación",
+      "Escríbenos",
+      "¿Prefieres una propuesta?",
+      "Captamos clientes en tu sector.",
+      "¿No ves tu sector?",
+      "Captación de clientes B2B, gestionada por nosotros.",
+      "Agencia de cold email",
+      "Generación de leads b2b",
+      "Captación de clientes b2b",
+      "Prospección comercial externalizada",
+      "Envío de publicidad por email"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://tumejorlead.com/",
+      "text": "Contacto",
+      "href": "https://tumejorlead.com/contacto",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "WhatsApp",
+      "WhatsApp631 17 20 65",
+      "Enviar mensaje →"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://tumejorlead.com/contacto",
+        "index": 1,
+        "action": "https://tumejorlead.com/contacto",
+        "method": "POST",
+        "submitText": "Enviar mensaje →",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website_url",
+            "label": "No rellenar",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "asunto",
+            "label": "Asunto (opcional)",
+            "placeholder": "¿Sobre qué quieres hablar?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Mensaje",
+            "placeholder": "¿En qué podemos ayudarte?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acepto_privacidad",
+            "label": "He leído y acepto la Política de Privacidad y el tratamiento de",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "WhatsApp",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Tú solo respondes a los interesados\" — generación de leads B2B automatizada con panel en directo",
+    "audience": "B2B: autónomos, pymes, agencias y profesionales de servicios/consultoría/software/instaladores",
+    "prices": [],
+    "guarantee": [
+      "Estamos tan seguros de nuestro sistema de captación que, si al finalizar tu campaña no conseguimos ni un solo interesado real en tus servicios, te devolvemos el 100 % del importe pagado, cumpliendo las condiciones de la garantía.",
+      "Riesgo 0 para ti Garantía por escrito Sin letra pequeña Solo ganamos si tú consigues oportunidades Consultar condiciones de la garantía → Se considera «interesado» cualquier empresa que responda pidiendo información, precio, una llamada o una propuesta.",
+      "Cómo funciona Contacto Solicitar propuesta → Iniciar sesión Garantía de devolución Última actualización: 21 de julio de 2026 En TuMejorLead estamos comprometidos con ofrecer campañas de captación de calidad.",
+      "En ese caso, te devolvemos el 100 % del importe pagado por la campaña, siempre que se cumplan los requisitos descritos en esta garantía.",
+      "🛡️ Garantía Tu Mejor Lead Si no conseguimos ningún interesado, te devolvemos el dinero.",
+      "Por ello ofrecemos una garantía de devolución bajo las condiciones que se detallan a continuación."
+    ],
+    "proof": [
+      "Cómo funciona Contacto Solicitar propuesta → Iniciar sesión Inicio / Sectores 50 SECTORES · CAPTACIÓN GESTIONADA Captamos clientes en tu sector.",
+      "Pedir propuesta gratis → Preguntas frecuentes ¿En qué sectores podéis captar clientes?En más de 40 sectores: restaurantes, clínicas, despachos de abogados, inmobiliarias, agencias, talleres, fisioterapeutas y muchos más.",
+      "Una agencia de captación en piloto automático: investigamos a tus clientes ideales, escribimos los emails y los enviamos desde tu propio correo.",
+      "Nuestro objetivo es exactamente el mismo que el tuyo: conseguirte clientes.",
+      "Tu negocioCapta solo Olvídate de buscar clientes.",
+      "Captamos clientes en cualquier categoría de negocio."
+    ],
+    "objections": [
+      "Ver sectores → Preguntas frecuentes ¿Qué servicios ofrece TuMejorLead?Captación de clientes B2B gestionada: encontramos los contactos, redactamos y enviamos campañas de cold email desde tu propio correo.",
+      "El cliente no ha solicitado detener, modificar o cancelar la campaña antes de finalizarla.",
+      "Pago único, sin permanencia.",
+      "DudasPreguntas frecuentes ¿Cómo funciona TuMejorLead?+Es un servicio gestionado.",
+      "Cancela cuando quieras, sin permanencia.",
+      "¿Puedo cancelar cuando quiera?+Sí.",
+      "No hay permanencia: solicitas tu propuesta gratis, decides si empiezas y puedes pausar o cancelar cuando quieras.",
+      "Propuesta gratis y sin permanencia."
+    ],
+    "urgency": [
+      "plantillas cold email Plantillas de cold email que convierten [5 ejemplos reales] Por Daniel Perramón Calonge 07 Apr 2026 268 lecturas ← Volver al blog Esta guía va de plantillas cold email: qué funciona hoy en España, con qué herramientas y en qué orden.",
+      "Aceptar todas Rechazar todas Configurar / Guardar preferencias Empieza hoy — propuesta gratis, sin tarjeta, sin compromiso Pedir mi propuesta →",
+      "Dicho de otro modo: para trabajar con nosotros tu cuenta tiene que estar mejor protegida de lo que probablemente esté hoy.Qué acceso da exactamenteDa acceso a enviar y a leer el correo de esa cuenta, por SMTP e IMAP.",
+      "OAuth es el sistema de “Iniciar sesión con Google” con permisos acotados que usan las herramientas grandes, y hoy no lo tenemos."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "🛡️ Garantía Tu Mejor Lead Si no conseguimos ningún interesado, te devolvemos el dinero.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Estamos tan seguros de nuestro sistema de captación que, si al finalizar tu campaña no conseguimos ni un solo interesado real en tus servicios, te devolvemos el 100 % del importe pagado, cumpliendo las condiciones de la garantía.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Riesgo 0 para ti Garantía por escrito Sin letra pequeña Solo ganamos si tú consigues oportunidades Consultar condiciones de la garantía → Se considera «interesado» cualquier empresa que responda pidiendo información, precio, una llamada o una propuesta.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Cómo funciona Contacto Solicitar propuesta → Iniciar sesión Garantía de devolución Última actualización: 21 de julio de 2026 En TuMejorLead estamos comprometidos con ofrecer campañas de captación de calidad.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Por ello ofrecemos una garantía de devolución bajo las condiciones que se detallan a continuación.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Esta garantía está redactada en términos claros, sin letra pequeña.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "En qué consiste la garantía La devolución del importe abonado se realizará únicamente cuando, una vez finalizada la campaña contratada, no se haya generado ningún interesado real en tus servicios.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "En ese caso, te devolvemos el 100 % del importe pagado por la campaña, siempre que se cumplan los requisitos descritos en esta garantía.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "TuMejorLead determinará de buena fe si una respuesta constituye o no un interesado real, siguiendo los criterios descritos en esta garantía.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Una agencia de captación en piloto automático: investigamos a tus clientes ideales, escribimos los emails y los enviamos desde tu propio correo.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Recibes oportunidadesClientes potenciales interesados, directamente en tu bandeja de entrada, cada día.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nuestro objetivo es exactamente el mismo que el tuyo: conseguirte clientes.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tu negocioCapta solo Olvídate de buscar clientes.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cómo funciona Contacto Solicitar propuesta → Iniciar sesión Inicio / Sectores 50 SECTORES · CAPTACIÓN GESTIONADA Captamos clientes en tu sector.",
+          "url": "https://tumejorlead.com/buscar-clientes/",
+          "pageTitle": "Captación de Clientes por Sector | TuMejorLead",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Captamos clientes en cualquier categoría de negocio.",
+          "url": "https://tumejorlead.com/buscar-clientes/",
+          "pageTitle": "Captación de Clientes por Sector | TuMejorLead",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Pedir propuesta gratis → Preguntas frecuentes ¿En qué sectores podéis captar clientes?En más de 40 sectores: restaurantes, clínicas, despachos de abogados, inmobiliarias, agencias, talleres, fisioterapeutas y muchos más.",
+          "url": "https://tumejorlead.com/buscar-clientes/",
+          "pageTitle": "Captación de Clientes por Sector | TuMejorLead",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "¿Cómo conseguís los clientes?Encontramos las empresas de tu sector y zona objetivo, verificamos los emails y les enviamos una campaña de cold email personalizada desde tu propio correo.",
+          "url": "https://tumejorlead.com/buscar-clientes/",
+          "pageTitle": "Captación de Clientes por Sector | TuMejorLead",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "¿Cuánto tardo en ver resultados?Las primeras respuestas de clientes potenciales suelen llegar durante los primeros días de campaña.",
+          "url": "https://tumejorlead.com/buscar-clientes/",
+          "pageTitle": "Captación de Clientes por Sector | TuMejorLead",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Cómo funciona Contacto Solicitar propuesta → Iniciar sesión SERVICIOS Captación de clientes B2B, gestionada por nosotros.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Agencia de cold email Agencia de cold email que crea y envía tus campañas desde tu propio correo para conseguirte clientes B2B.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver servicio → Captación de clientes b2b Captación de clientes B2B hecha por ti: contactamos cada día a tu mercado desde tu correo y te pasamos a los interesados.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver servicio → Prospección comercial externalizada Prospección comercial externalizada: buscamos, contactamos y cualificamos a tus clientes potenciales sin que amplíes tu equipo.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver servicio → Conseguir clientes Conseguir clientes para tu negocio: buscamos las empresas que encajan, las contactamos desde tu correo y te pasamos las interesadas.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver servicio → Agencia de prospección Agencia de prospección B2B que busca, contacta y cualifica a tus clientes potenciales por ti, desde tu correo.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Pago único, sin permanencia.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "DudasPreguntas frecuentes ¿Cómo funciona TuMejorLead?+Es un servicio gestionado.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cancela cuando quieras, sin permanencia.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Puedo cancelar cuando quiera?+Sí.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No hay permanencia: solicitas tu propuesta gratis, decides si empiezas y puedes pausar o cancelar cuando quieras.",
+          "url": "https://tumejorlead.com/",
+          "pageTitle": "TuMejorLead — Clientes potenciales en tu bandeja, cada día",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Propuesta gratis y sin permanencia.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin permanencia.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver servicio → Alternativa a contratar comercial Comparamos contratar un SDR interno, una agencia de captación tradicional y TuMejorLead: coste real, tiempo de arranque, riesgo y permanencia.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver sectores → Preguntas frecuentes ¿Qué servicios ofrece TuMejorLead?Captación de clientes B2B gestionada: encontramos los contactos, redactamos y enviamos campañas de cold email desde tu propio correo.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Los planes de pago dependen del volumen de envíos y no tienen permanencia.",
+          "url": "https://tumejorlead.com/servicios",
+          "pageTitle": "Servicios de Captación de Clientes B2B | TuMejorLead",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Solicitudes de baja o de dejar de recibir comunicaciones («STOP», «Baja», «Cancelar suscripción», «Eliminar de la base de datos»).",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "El cliente no ha solicitado detener, modificar o cancelar la campaña antes de finalizarla.",
+          "url": "https://tumejorlead.com/garantia",
+          "pageTitle": "Garantía de devolución - TuMejorLead",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://tumejorlead.com/",
+        "https://tumejorlead.com/contacto",
+        "https://tumejorlead.com/buscar-clientes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Tu agencia de captación. Lo hacemos por ti.",
+        "Hablemos de tu captación",
+        "Captación de clientes B2B, gestionada por nosotros.",
+        "Email marketing B2B gestionado: lo escribimos, lo enviamos desde tu correoy tú solo contestas."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Enviar mensaje →",
+        "WhatsApp631 17 20 65",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://tumejorlead.com/contacto · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "WhatsApp",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → solicitud de propuesta gratuita y sin compromiso → propuesta personalizada → aceptación y pago único → investigación del cliente ideal, copies, variantes antispam y configuración técnica"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://tumejorlead.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://tumejorlead.com/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://tumejorlead.com/buscar-clientes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://tumejorlead.com/servicios",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://tumejorlead.com/garantia",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tumejorlead.com/email-marketing-b2b",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://tumejorlead.com/blog/plantillas-cold-email-ejemplos",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=tumejorlead.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=TuMejorLead&search_type=keyword_unordered",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR17375064297868099585/creative/CR09771704404091600897?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16621748139153293789",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR17375064297868099585/creative/CR15381458564895735809?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/16896792602606985064",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR17375064297868099585/creative/CR01583171820578668545?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR17375064297868099585/creative/CR04970781989163499521?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR17375064297868099585/creative/CR09158930631013433345?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR11693533012980400129/creative/CR06054938318582317057?region=anywhere",
+      "label": "Fuente pública 17"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,400 @@
+{
+  "id": "sirelo",
+  "name": "Sirelo",
+  "reviewedAt": "2026-08-22T15:50:18.584Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Presupuesto de mudanza online en España",
+    "heroObserved": true,
+    "priorSummary": "Comparación gratuita de hasta 5 presupuestos de empresas de mudanzas, reseñas verificadas, guías de mudanza",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 500 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2430 palabras por página comercial recuperada. Muestras breves: “Precios de mudanzas nacionales en España 2026” · “Información sobre Cookies” · “Presupuesto de mudanza online en España”.",
+    "supportingHeadings": [
+      "Sobre nosotros",
+      "¿Qué es Sirelo?",
+      "Qué hace diferente a Sirelo",
+      "La independencia de Sirelo y nuestro compromiso con la transparencia",
+      "¿Quién nos paga?",
+      "¿Pueden influirnos los socios que pagan?",
+      "Lo que defendemos",
+      "Lo que Sirelo no hace:",
+      "Resolución de disputas",
+      "Qué ofrece Sirelo",
+      "Directorio de empresas de mudanzas",
+      "Reseñas verificadas de clientes",
+      "Experiencias reales de mudanza (nuestros blogs de expatriados)",
+      "Guías y checklists de mudanza",
+      "Solicitud gratuita de presupuestos",
+      "Información sobre mudanzas internacionales",
+      "Sirelo en cifras",
+      "El equipo detrás de Sirelo",
+      "Contacto y soporte",
+      "Guías populares",
+      "Preguntas más frecuentes",
+      "¿Cómo gana dinero Sirelo?",
+      "¿Mis datos están seguros?",
+      "¿Qué ocurre después de solicitar presupuestos?",
+      "¿Puedo contactar directamente con las empresas de mudanzas?",
+      "¿Cuándo recibiré los presupuestos?",
+      "¿Más información?",
+      "Precios de mudanzas nacionales en España 2026",
+      "Precios por hora, km y entre ciudades",
+      "Puntos clave:"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicita presupuestos gratis",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://sirelo.es/sobre-nosotros/",
+      "text": "Solicita presupuestos gratis",
+      "href": "https://sirelo.es/presupuesto-mudanza/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 198
+    },
+    "ctas": [
+      "Solicita presupuestos gratis",
+      "Recibe presupuestos",
+      "7. Contacto y soporte",
+      "Solicita Presupuestos",
+      "Recibe 5 presupuestos gratuitos",
+      "Solicita al menos 3 presupuestos",
+      "O recibe inmediatamente 5 presupuestos gratuitos basados en el volumen",
+      "Empezar",
+      "Vamos allá",
+      "Añadir empresa",
+      "Recibe el cálculo"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://sirelo.es/sobre-nosotros/",
+        "index": 1,
+        "action": "https://sirelo.es/formulario-de-cotizacion/",
+        "method": "GET",
+        "submitText": "Recibe presupuestos",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 12,
+        "fields": [
+          {
+            "type": "text",
+            "name": "place_from",
+            "label": "Me mudo de",
+            "placeholder": "Su ciudad o dirección actual",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "place_to",
+            "label": "Me mudo a",
+            "placeholder": "Su país, ciudad o dirección de destino",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://sirelo.es/sobre-nosotros/",
+        "index": 2,
+        "action": "https://sirelo.es/formulario-de-cotizacion/",
+        "method": "GET",
+        "submitText": "Recibe 5 presupuestos gratuitos",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 12,
+        "fields": [
+          {
+            "type": "text",
+            "name": "place_from",
+            "label": null,
+            "placeholder": "Me quiero mudar desde…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "place_to",
+            "label": null,
+            "placeholder": "Me quiero mudar a…",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+        "index": 2,
+        "action": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+        "method": "GET",
+        "submitText": "Recibe el cálculo",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Introduzca su correo electrónico...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 2 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 2,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Comparación gratuita de hasta 5 presupuestos de empresas de mudanzas, reseñas verificadas, guías de mudanza",
+    "audience": "Mudanzas (nacionales e internacionales)",
+    "prices": [
+      "Por ejemplo:Tipo de vehículoCapacidadPrecio por díaFurgoneta pequeña6 – 10 m³50€ – 80€Furgoneta mediana10 – 12 m³70€ – 110€Furgoneta grande o camión+15 m³100€ – 180€Nota: Estos precios son estimaciones y han sido actualizadas por última vez en abril de 2026.",
+      "Los precios oscilan entre 400€ y 2.500€ en promedio, según la ruta específica.Por ejemplo, una mudanza de un piso de 2 habitaciones de Madrid a Valencia (~350 km) suele costar entre 800€ y 1.200€.¿Cuál es el precio por km en una mudanza nacional?",
+      "Han sido actualizados por última vez en abril de 2026.Precio alquiler camión de mudanzasEl precio de un camión de mudanzas generalmente oscila entre los 60€ y 180€ por día, sin incluir el combustible.Este precio puede variar según su capacidad.",
+      "El coste por kilómetro está entre 0,60€ y 1,20€/km, según el tipo de transporte y la empresa.",
+      "…ión podrás encontrar una estimación de los precios de una mudanza nacional según el volumen.Número de habitacionesPrecio6-10 m³ (~1 habitación)400€ – 600€10-20 m³ (~2 habitaciones)600€ – 900€20-25 m³ (~3 habitaciones)900€ – 1.300€+25 m³ (+4 habitaciones)1.200€ – 2.000€Nota: Estos precios son orientativos y variarán según la d…"
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Solo se eliminan en casos concretos (a petición del autor, empresa equivocada o, en casos limitados, mediante una orden judicial válida).Filtramos el marketing.",
+      "Si una reseña se disputa, se mantiene publicada salvo que cumpla condiciones muy específicas de eliminación (a petición del autor, empresa equivocada o, en casos limitados, una orden judicial válida).",
+      "Esto te facilitará todo el proceso de la mudanza y te evitará posibles multas durante el día de la mudanza.Además, disfrutar de los servicios de empresas de mudanzas en Madrid es una forma fácil de reducir el precio de tu mudanza, ya que la empresa",
+      "El uso de nuestras páginas web hace referencia, aunque no está limitado, a navegar, acceder, registrarse para el uso, y/o subscribirse a cualquier tipo de información o servicio ofrecido en la misma.Por favor, asegúrate de leer estos Términos y Condiciones de Uso antes de acceder"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…ión podrás encontrar una estimación de los precios de una mudanza nacional según el volumen.Número de habitacionesPrecio6-10 m³ (~1 habitación)400€ – 600€10-20 m³ (~2 habitaciones)600€ – 900€20-25 m³ (~3 habitaciones)900€ – 1.300€+25 m³ (+4 habitaciones)1.200€ – 2.000€Nota: Estos precios son orientativos y variarán según la d…",
+          "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+          "pageTitle": "Presupuestos y precios de mudanzas nacionales en España (2026)",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Han sido actualizados por última vez en abril de 2026.Precio alquiler camión de mudanzasEl precio de un camión de mudanzas generalmente oscila entre los 60€ y 180€ por día, sin incluir el combustible.Este precio puede variar según su capacidad.",
+          "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+          "pageTitle": "Presupuestos y precios de mudanzas nacionales en España (2026)",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Por ejemplo:Tipo de vehículoCapacidadPrecio por díaFurgoneta pequeña6 – 10 m³50€ – 80€Furgoneta mediana10 – 12 m³70€ – 110€Furgoneta grande o camión+15 m³100€ – 180€Nota: Estos precios son estimaciones y han sido actualizadas por última vez en abril de 2026.",
+          "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+          "pageTitle": "Presupuestos y precios de mudanzas nacionales en España (2026)",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "O recibe inmediatamente 5 presupuestos gratuitos basados en el volumen Factores que afectan al precio de una mudanzaEl volumen es el elemento principal que determina el precio final, pero existen otros factores que pueden hacer variar significativamente el coste de una mudanza nacional.Volumen: Las empresas",
+          "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+          "pageTitle": "Presupuestos y precios de mudanzas nacionales en España (2026)",
+          "pageCategory": "pricing",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Los precios oscilan entre 400€ y 2.500€ en promedio, según la ruta específica.Por ejemplo, una mudanza de un piso de 2 habitaciones de Madrid a Valencia (~350 km) suele costar entre 800€ y 1.200€.¿Cuál es el precio por km en una mudanza nacional?",
+          "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+          "pageTitle": "Presupuestos y precios de mudanzas nacionales en España (2026)",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "El coste por kilómetro está entre 0,60€ y 1,20€/km, según el tipo de transporte y la empresa.",
+          "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+          "pageTitle": "Presupuestos y precios de mudanzas nacionales en España (2026)",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://sirelo.es/sobre-nosotros/",
+        "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+        "https://sirelo.es/informacion-sobre-cookies/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Precios de mudanzas nacionales en España 2026",
+        "Información sobre Cookies",
+        "Presupuesto de mudanza online en España",
+        "Términos de Uso"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Recibe presupuestos",
+        "7. Contacto y soporte",
+        "Recibe 5 presupuestos gratuitos",
+        "Empezar",
+        "Solicita presupuestos gratis",
+        "Recibe el cálculo",
+        "O recibe inmediatamente 5 presupuestos gratuitos basados en el volumen",
+        "Solicita al menos 3 presupuestos"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://sirelo.es/sobre-nosotros/ · 2 campos",
+        "https://sirelo.es/sobre-nosotros/ · 2 campos",
+        "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/ · 2 campos",
+        "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El consumidor completa en menos de dos minutos origen, destino, volumen, fecha y datos de contacto. 2) Sirelo valida y empareja con empresas de mudanzas verificadas y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://sirelo.es/sobre-nosotros/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://sirelo.es/mudanzas-nacionales/mudanzas-precios/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://sirelo.es/informacion-sobre-cookies/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://sirelo.es/presupuesto-mudanza/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://sirelo.es/terminos-de-uso/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://sirelo.es/empresa-mudanzas/madrid/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://sirelo.es/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=sirelo.es",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicita presupuestos gratis”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

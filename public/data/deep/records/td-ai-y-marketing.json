@@ -1,0 +1,418 @@
+{
+  "id": "td-ai-y-marketing",
+  "name": "TD-AI & Marketing",
+  "reviewedAt": "2026-08-22T15:50:19.487Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Marketing services in Debrecen & Hungary",
+    "heroObserved": true,
+    "priorSummary": "Contenido y marketing con IA para generar más clientes y ventas en pymes locales.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 244 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 982 palabras por página comercial recuperada. Muestras breves: “Marketing agency Debrecen — qualified leads nationwide for SMEs” · “Lehet, hogy nem több hirdetésre van szükséged.” · “Marketing services in Debrecen & Hungary”.",
+    "supportingHeadings": [
+      "Marketing agency Debrecen — qualified leads nationwide for SMEs",
+      "We don’t buy clicks — we measure quote requests and revenue, month over month.",
+      "Marketing services — pick what you need",
+      "Marketing strategy",
+      "Google Ads management",
+      "Meta / Facebook ads",
+      "Website & webshop",
+      "AI chatbot",
+      "Marketing automation",
+      "Free consultation",
+      "How the lead generation system works — pick a focus",
+      "Google Ads and Meta advertising: measurable client acquisition",
+      "Ad creative production with AI support",
+      "Marketing automation and AI chatbot: from lead to client",
+      "Tracking and monthly reporting: what works and what doesn't",
+      "What our SME clients in Debrecen and nationwide say",
+      "Measurable, visible results within 7–14 days.",
+      "Marketing pricing for SMEs — one-off projects and monthly packages",
+      "Start package",
+      "Growth & campaigns package",
+      "Who is behind the TD-AI marketing agency?",
+      "Frequently asked questions about the agency and pricing",
+      "Tell us your challenge — we offer a risk-free first month!",
+      "TD - AI & Marketing Agency",
+      "7 Ready-to-Use Marketing Tools for SMEs",
+      "7 free marketing tools for growth",
+      "Lehet, hogy nem több hirdetésre van szükséged.",
+      "Ezt nézem meg nálad",
+      "Weboldal ügyfélszerzési teljesítménye",
+      "Online jelenlét ereje"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Request a free consultation",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://tdaimarketing.hu/en/services",
+      "text": "Request a free consultation",
+      "href": "https://tdaimarketing.hu/en/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 298.25
+    },
+    "ctas": [
+      "Request a free consultation",
+      "Request a free consultation now!",
+      "Ready to grow? Request a free consultation",
+      "Request audit",
+      "Request a Meta audit",
+      "Start package — free consultation",
+      "Request callback today",
+      "Kérem az ingyenes auditot →",
+      "Contact",
+      "Quote request",
+      "Request a quote",
+      "Request custom quote",
+      "WhatsApp",
+      "WhatsApp üzenet",
+      "Send"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://tdaimarketing.hu/en/index",
+        "index": 1,
+        "action": "https://tdaimarketing.hu/en/index",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "_gotcha",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "name",
+            "label": "Name",
+            "placeholder": "e.g. John",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail",
+            "placeholder": "you@company.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "website",
+            "label": "Website / brand",
+            "placeholder": "yourcompany.com (optional)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "What do you want to achieve?",
+            "placeholder": "e.g. 30% more clients, lower acquisition cost, new creative system...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://tdaimarketing.hu/ingyenes-ai-marketing-audit",
+        "index": 1,
+        "action": "https://tdaimarketing.hu/ingyenes-ai-marketing-audit",
+        "method": "GET",
+        "submitText": "Kérem az ingyenes auditot →",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "_gotcha",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Név *",
+            "placeholder": "Pl. Kovács János",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail cím *",
+            "placeholder": "te@cegednev.hu",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Cégnév *",
+            "placeholder": "Pl. Kovács Kft.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": "Weboldal URL *",
+            "placeholder": "cegednev.hu",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Elfogadom, hogy a TD-AI kapcsolatba lépjen velem az audit ügyében, és időnként",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 6 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Website / brand, Weboldal URL *.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 6,
+      "qualification": [
+        "Website / brand",
+        "Weboldal URL *"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Contenido y marketing con IA para generar más clientes y ventas en pymes locales.",
+    "audience": "Hungría; pymes, HVAC, dentistas, despachos legales, construcción y servicios locales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "HomeServicesQuote requestBlogContact Request a quote Language / Nyelv Magyar English Service hub Marketing services in Debrecen & Hungary Click the card for the service you need — each click opens a dedicated page with scope, process and FAQs."
+    ],
+    "urgency": [
+      "· client work nationwide Google Business Directions ☎ Call now Solutions Packages Instant Download 7 Ready-to-Use Marketing Tools for SMEs Download our free 7-part SME Marketing Pack!",
+      "7–14 days to first signals 24/7 AI chatbot availability 100% measurable campaigns Request a free consultation now!",
+      "Automation → How we work together 01 · Discovery 30 minutes, straight talk We look at where you are now: ads, web, CRM, team.",
+      "If you can't tell, give me a call — we go through all four and I will tell you which one your growth depends on right now.",
+      "☎ Call now Request callback today"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "HomeServicesQuote requestBlogContact Request a quote Language / Nyelv Magyar English Service hub Marketing services in Debrecen & Hungary Click the card for the service you need — each click opens a dedicated page with scope, process and FAQs.",
+          "url": "https://tdaimarketing.hu/en/services",
+          "pageTitle": "Marketing Services Debrecen | SEO, Google Ads, Web & AI | TD-AI",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Meta Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://tdaimarketing.hu/en/index",
+        "https://tdaimarketing.hu/ingyenes-ai-marketing-audit",
+        "https://tdaimarketing.hu/en/services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing agency Debrecen — qualified leads nationwide for SMEs",
+        "Lehet, hogy nem több hirdetésre van szükséged.",
+        "Marketing services in Debrecen & Hungary",
+        "Meta ads that bring enquiries — not just likes"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Quote request",
+        "Ready to grow? Request a free consultation",
+        "Request a free consultation now!",
+        "Request audit",
+        "Start package — free consultation",
+        "Request custom quote",
+        "Send",
+        "Contact"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://tdaimarketing.hu/en/index · 5 campos",
+        "https://tdaimarketing.hu/ingyenes-ai-marketing-audit · 6 campos",
+        "https://tdaimarketing.hu/en/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Teléfono",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario, teléfono o consulta gratuita de 30 min → revisión breve de situación, objetivo y cuello de botella → kickoff con accesos → paquete mensual o presupuesto a"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://tdaimarketing.hu/en/index",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://tdaimarketing.hu/ingyenes-ai-marketing-audit",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://tdaimarketing.hu/en/services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://tdaimarketing.hu/en/about",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://tdaimarketing.hu/en/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tdaimarketing.hu/en/meta-facebook-ads-debrecen",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://tdaimarketing.hu/facebook-meta-hirdetes-kezeles-debrecen",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tdaimarketing.hu/en/blog-hungary-digitalization-grant-2026",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?id=1567161388467079",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?id=966213585877403",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Request a free consultation”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

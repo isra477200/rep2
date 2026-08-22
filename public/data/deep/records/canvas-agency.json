@@ -1,0 +1,268 @@
+{
+  "id": "canvas-agency",
+  "name": "Canvas Agency",
+  "reviewedAt": "2026-08-22T15:50:19.575Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "AUIS Career Fair",
+    "heroObserved": true,
+    "priorSummary": "Agencia digital generalista de social media, branding, web, fotografía y printing para empresas de Erbil/Sulaimania.",
+    "voice": "Tono cuantitativo, centrado en la marca, conciso. Usa 21 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 150 palabras por página comercial recuperada. Muestras breves: “AUIS Career Fair” · “$800”.",
+    "supportingHeadings": [
+      "AUIS Career Fair",
+      "Erbil Rotana – Festive Season",
+      "$800",
+      "$1100",
+      "$1600"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://canvas.krd/",
+      "text": "Contact",
+      "href": "https://canvas.krd/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163.25
+    },
+    "ctas": [
+      "Contact",
+      "Send Message"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://canvas.krd/",
+        "index": 1,
+        "action": "https://canvas.krd/",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "first-name",
+            "label": null,
+            "placeholder": "* FIRST NAME",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "last-name",
+            "label": null,
+            "placeholder": "* LAST NAME",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "* YOUR EMAIL",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "* YOUR PHONE",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "YOUR MESSAGE",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia digital generalista de social media, branding, web, fotografía y printing para empresas de Erbil/Sulaimania.",
+    "audience": "Pymes y marcas en Kurdistán que necesitan presencia, contenido y activos digitales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Social MediaRaise Awareness, Strengthen Customer Relationship, Drive Demand & Boost Sales BrandingBranding is all of the ways you establish an image of your company in your customers’ eyes.",
+      "PrintingQuality of printed materials and the artworks we create is all you need to illustrate your business to your customers."
+    ],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Social MediaRaise Awareness, Strengthen Customer Relationship, Drive Demand & Boost Sales BrandingBranding is all of the ways you establish an image of your company in your customers’ eyes.",
+          "url": "https://canvas.krd/",
+          "pageTitle": "Canvas Agency – Iraq – Digital Marketing & IT Solutions Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "PrintingQuality of printed materials and the artworks we create is all you need to illustrate your business to your customers.",
+          "url": "https://canvas.krd/",
+          "pageTitle": "Canvas Agency – Iraq – Digital Marketing & IT Solutions Agency",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://canvas.krd/",
+        "https://canvas.krd/portfolio/smpackages/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "AUIS Career Fair",
+        "$800"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Send Message"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://canvas.krd/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Ver servicios/portfolio/paquetes → formulario Let's Talk → propuesta → ejecución creativa/marketing."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://canvas.krd/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://canvas.krd/portfolio/smpackages/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=canvas.krd",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=100063661075913",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "http://canvas.krd/",
+      "label": "Fuente pública 5"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

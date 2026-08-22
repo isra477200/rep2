@@ -1,0 +1,733 @@
+{
+  "id": "werise-performance",
+  "name": "WeRise Performance",
+  "reviewedAt": "2026-08-22T15:50:17.523Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "ALTA CONVERSIÓN",
+    "heroObserved": true,
+    "priorSummary": "Ads + landing + formulario cualificado con validación automática y humana. El cliente paga solo por lead válido.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 102 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 939 palabras por página comercial recuperada. Muestras breves: “Agencia de leads a comisión: cómo funciona el modelo en el que solo pagas por lead válido” · “ALTA CONVERSIÓN”.",
+    "supportingHeadings": [
+      "Agencia de leads a comisión: cómo funciona el modelo en el que solo pagas por lead válido",
+      "El problema de pagar publicidad sin garantías",
+      "Qué significa realmente “generación de leads a comisión”",
+      "Solo cobramos por lead válido",
+      "Definición clara de lead válido (sin trampas)",
+      "Validación manual + automatizada",
+      "Alineación total de intereses",
+      "Lead válido vs lead basura (tabla comparativa)",
+      "Cómo funciona nuestro modelo Lead Boost paso a paso",
+      "Para qué tipo de empresas funciona mejor este modelo",
+      "Ventajas frente a una agencia tradicional",
+      "¿Cuánto cuesta realmente pagar por lead?",
+      "CPL vs comisión: lo importante es el coste por oportunidad real",
+      "Rentabilidad según ticket medio",
+      "Solicitar auditoría gratuita de captación a comisión",
+      "Preguntas frecuentes sobre pagar por lead válido",
+      "Miramos tu cuenta con tus datos.",
+      "Más sobre Sin categoría.",
+      "SEO con estrategia: cómo una agencia de posicionamiento web puede escalar tu negocio en Google",
+      "Agencia de posicionamiento web en Valencia: cómo elegir la opción correcta para crecer en 2026",
+      "Posicionamiento SEO en Valencia: guía para liderar las búsquedas locales",
+      "Leer está bien. Medir está mejor.",
+      "ALTA CONVERSIÓN",
+      "CRECIMIENTO DE VENTAS",
+      "Servicios de Consultoría",
+      "Aumentar La Tasa De Conversión (Cro)",
+      "ALTA PRESENCIA",
+      "AUMENTO DE CONFIANZA",
+      "Branding",
+      "Diseño Y Desarrollo"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar auditoría gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://weriseperformance.com/agencia-de-leads-a-comision/",
+      "text": "Solicitar auditoría gratuita",
+      "href": "https://weriseperformance.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 238
+    },
+    "ctas": [
+      "Solicita Consulta Gratuita",
+      "Solicitar auditoría gratuita",
+      "Solicita tu Consulta Gratuita",
+      "Agenda una Consultoría Gratis",
+      "Enviar y reservar sesión →",
+      "Contacto",
+      "Whatsapp",
+      "Learn More",
+      "English"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://weriseperformance.com/",
+        "index": 1,
+        "action": "https://weriseperformance.com/",
+        "method": "POST",
+        "submitText": "Solicita Consulta Gratuita",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "¿Cómo nos dirigimos a ti?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f4c4247]",
+            "label": "Teléfono",
+            "placeholder": "Tu número de teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_ca5c2cd]",
+            "label": "Sector",
+            "placeholder": "¿A qué sector pertenece tu negocio?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿En qué podemos ayudarte?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://weriseperformance.com/contacto/",
+        "index": 1,
+        "action": "https://weriseperformance.com/contacto/",
+        "method": "POST",
+        "submitText": "Solicita Consulta Gratuita",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "¿Cómo nos dirigimos a ti?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f4c4247]",
+            "label": "Teléfono",
+            "placeholder": "Tu número de teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_ca5c2cd]",
+            "label": "Sector",
+            "placeholder": "¿A qué sector pertenece tu negocio?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Comentarios",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://weriseperformance.com/casos/",
+        "index": 1,
+        "action": "https://weriseperformance.com/casos/",
+        "method": "GET",
+        "submitText": "Enviar y reservar sesión →",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "web",
+            "label": null,
+            "placeholder": "https://",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "servicio",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "presupuesto",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "facturacion",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Cuéntanos tu situación y tu objetivo principal.",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": "He leído y acepto la política de privacidad y el tratamiento de",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa_web",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://weriseperformance.com/servicios/",
+        "index": 1,
+        "action": "https://weriseperformance.com/servicios/",
+        "method": "POST",
+        "submitText": "Solicita Consulta Gratuita",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "¿Cómo nos dirigimos a ti?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f4c4247]",
+            "label": "Teléfono",
+            "placeholder": "Tu numero de teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_c7245ac]",
+            "label": "Sector",
+            "placeholder": "¿Qué negocio tienes?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿En qué podemos ayudarte?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://weriseperformance.com/servicio-de-consultoria-para-empresas/",
+        "index": 1,
+        "action": "https://weriseperformance.com/servicio-de-consultoria-para-empresas/",
+        "method": "POST",
+        "submitText": "Solicita Consulta Gratuita",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "¿Cómo nos dirigimos a ti?",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f4c4247]",
+            "label": "Teléfono",
+            "placeholder": "Tu numero de teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d48b825]",
+            "label": "Sector",
+            "placeholder": "Escribe tu tipo de negocio",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "¿En qué podemos ayudarte?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "5 diseño(s) de formulario distinto(s); entre 5 y 11 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Sector, web, sector, servicio, presupuesto, facturacion, empresa_web.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 11,
+      "qualification": [
+        "Sector",
+        "web",
+        "sector",
+        "servicio",
+        "presupuesto",
+        "facturacion",
+        "empresa_web"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Ads + landing + formulario cualificado con validación automática y humana. El cliente paga solo por lead válido.",
+    "audience": "Pymes y servicios con ticket y zona definibles.",
+    "prices": [],
+    "guarantee": [
+      "¿Qué garantías ofrecen?"
+    ],
+    "proof": [
+      "Ayudamos a empresas de todos los sectores a aumentar su visibilidad, atraer clientes potenciales y alcanzar sus objetivos comerciales en el entorno digital.Juntos, Rise Higher, Perform Better.",
+      "Diseñamos estrategias personalizadas que maximizan tu ROI y construimos relaciones de confianza a largo plazo con nuestros clientes.",
+      "No son testimoniales.",
+      "Creamos contenido atractivo, interactuamos con tu audiencia y reforzamos la conexión con tus clientes.",
+      "Desarrollamos sitios que no solo atraen, sino que también convierten visitantes en clientes."
+    ],
+    "objections": [],
+    "urgency": [
+      "…de Éxito Ver Más Historias de Éxito TestimoniosHistorias Reales, Impacto Real Nuestros clientes confiaron en nosotros y ahora son nuestro caso de éxito.",
+      "Desde que iniciamos en 2021, nuestro objetivo ha sido ir más allá de los resultados convencionales.Hoy, nos hemos reinventado, evolucionando nuestro equipo, metodología y herramientas para ofrecer estrategias de alto rendimiento, diseñadas para hacer crecer tu facturación.",
+      "Un lead puede ser válido aunque no compre hoy.",
+      "Inicia Hoy Tu Estrategia Conviértete en Nuestro Próximo Caso de Éxito Rellena el siguiente formulario y obtén una consulta + auditoría gratuita."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "¿Qué garantías ofrecen?",
+          "url": "https://weriseperformance.com/servicio-de-consultoria-para-empresas/",
+          "pageTitle": "Servicio de Consultoría para Empresas - WeRise Performance",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Ayudamos a empresas de todos los sectores a aumentar su visibilidad, atraer clientes potenciales y alcanzar sus objetivos comerciales en el entorno digital.Juntos, Rise Higher, Perform Better.",
+          "url": "https://weriseperformance.com/",
+          "pageTitle": "Agencia De Marketing Digital Valencia | Performance Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Diseñamos estrategias personalizadas que maximizan tu ROI y construimos relaciones de confianza a largo plazo con nuestros clientes.",
+          "url": "https://weriseperformance.com/",
+          "pageTitle": "Agencia De Marketing Digital Valencia | Performance Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No son testimoniales.",
+          "url": "https://weriseperformance.com/casos/",
+          "pageTitle": "Casos de éxito - WeRise Performance",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Creamos contenido atractivo, interactuamos con tu audiencia y reforzamos la conexión con tus clientes.",
+          "url": "https://weriseperformance.com/servicios/",
+          "pageTitle": "Servicios Marketing Digital Valencia | SEO, SEM, Diseño Web... - WeRise Performance",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Desarrollamos sitios que no solo atraen, sino que también convierten visitantes en clientes.",
+          "url": "https://weriseperformance.com/servicios/",
+          "pageTitle": "Servicios Marketing Digital Valencia | SEO, SEM, Diseño Web... - WeRise Performance",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://weriseperformance.com/agencia-de-leads-a-comision/",
+        "https://weriseperformance.com/",
+        "https://weriseperformance.com/contacto/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia de leads a comisión: cómo funciona el modelo en el que solo pagas por lead válido",
+        "ALTA CONVERSIÓN"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Solicitar auditoría gratuita",
+        "Contacto",
+        "Solicita Consulta Gratuita",
+        "Whatsapp",
+        "Learn More",
+        "English",
+        "Enviar y reservar sesión →",
+        "Solicita tu Consulta Gratuita"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://weriseperformance.com/ · 5 campos",
+        "https://weriseperformance.com/contacto/ · 5 campos",
+        "https://weriseperformance.com/casos/ · 11 campos",
+        "https://weriseperformance.com/servicios/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "WhatsApp",
+        "Agenda una Consultoría Gratis"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de servicio → solicitud de auditoría gratuita → evaluación de viabilidad, canales y estimación → brief y definición de lead válido → diseño de anuncios, landing y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://weriseperformance.com/agencia-de-leads-a-comision/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://weriseperformance.com/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://weriseperformance.com/contacto/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://weriseperformance.com/casos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://weriseperformance.com/servicios/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://weriseperformance.com/sobre-nosotros/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://weriseperformance.com/servicio-de-consultoria-para-empresas/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://weriseperformance.com/sem-trafico-de-pago/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/2755380556886770989",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR13056413066139271169?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR08743170237618192385?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR10043911159205068801?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR07724920215716233217?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR14703448224320978945?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR06612598865159782401?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR07781459276869926913?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR00569555278115110913?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR05914714370876637185?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR09220111031395680257?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR10695664981719908353?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR06927923956598964225?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR14659422541794246657?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR16732805703151910913?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR13517805116232564737?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR01562707297845641217/creative/CR10222000870032146433?region=anywhere",
+      "label": "Fuente pública 25"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar auditoría gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

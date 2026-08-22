@@ -1,0 +1,890 @@
+{
+  "id": "growyourindustry",
+  "name": "GrowYourIndustry",
+  "reviewedAt": "2026-08-22T15:50:18.078Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Todas sus necesidades de marketing B2B en una única suscripción mensual",
+    "heroObserved": true,
+    "priorSummary": "\"Generar leads B2B de Alta Calidad que se Convierten en Ventas\" · \"leads listos para hablar con tu equipo comercial, no en inflar tu base de datos\" (growyourindustry.com)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 39 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 530 palabras por página comercial recuperada. Muestras breves: “Generar Leads B2B de Alta Calidad que se Convierten en Ventas” · “¿Está listo para llevar su marketing industrial al siguiente nivel?” · “Toda la fuerza de marketing que necesita”.",
+    "supportingHeadings": [
+      "Generar Leads B2B de Alta Calidad que se Convierten en Ventas",
+      "¿Qué es la Generación de Leads B2B?​",
+      "¿Cómo Generar Leads B2B en 2025?",
+      "Servicios de Generación de Leads B2B",
+      "Agencia de Lead Generation B2B",
+      "Publicidad en LinkedIn para B2B",
+      "PPC y SEM para Leads B2B​",
+      "Lead Nurturing para Empresas B2B",
+      "¿Por Qué Elegirnos para tu Lead Gen B2B?",
+      "Nuestro método para generar leads B2B",
+      "¿Quién debería usar este servicio?",
+      "Preguntas Frecuentes sobre la Generación de Leads B2B",
+      "¿Está listo para llevar su marketing industrial al siguiente nivel?",
+      "Reserve una llamada para descubrir:",
+      "¡CONTÁCTENOS!",
+      "Toda la fuerza de marketing que necesita",
+      "SEO",
+      "SEM",
+      "INDUSTRIAL LAUNCH",
+      "¿Por qué cambiar a un modelo de marketing basado en suscripciones?",
+      "Deje atrás los costes de contratación.",
+      "Libérate de las horas facturables.",
+      "Póngase en marcha.",
+      "Todo en el mismo sitio.",
+      "Acceso a un equipo especializado.",
+      "Aumentar o reducir el plan según sea necesario.",
+      "CASOS DE ÉXITO",
+      "Proyecto y Servicios",
+      "Resultados",
+      "Todas sus necesidades de marketing B2B en una única suscripción mensual"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Book a Call",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://growyourindustry.com/en/contact/",
+      "text": "Book a Call",
+      "href": "https://growyourindustry.com/en/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 302.25
+    },
+    "ctas": [
+      "Book a Call",
+      "Book a call",
+      "Reservar Llamada",
+      "Consigue tu auditoría SEO industrial gratis",
+      "Empieza a generar leads hoy",
+      "Enviar"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://growyourindustry.com/generar-leads-b2b/",
+        "index": 1,
+        "action": "https://growyourindustry.com/generar-leads-b2b/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "electrónico Compañia mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Compañia *",
+            "placeholder": "Compañia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][6]",
+            "label": "Cargo",
+            "placeholder": "Cargo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje *",
+            "placeholder": "¿Qué tareas le gustaría resolver?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growyourindustry.com/contacto/",
+        "index": 1,
+        "action": "https://growyourindustry.com/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Correo electrónico Comentario",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Compañia *",
+            "placeholder": "Compañia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][6]",
+            "label": "Cargo",
+            "placeholder": "Cargo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje *",
+            "placeholder": "¿Qué tareas le gustaría resolver?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growyourindustry.com/planes/",
+        "index": 1,
+        "action": "https://growyourindustry.com/planes/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Compañia *",
+            "placeholder": "Compañia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][6]",
+            "label": "Cargo",
+            "placeholder": "Cargo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Compañia Comentario mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje *",
+            "placeholder": "¿Qué tareas le gustaría resolver?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growyourindustry.com/casos-de-exito/",
+        "index": 1,
+        "action": "https://growyourindustry.com/casos-de-exito/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "mensaje Compañia o",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Compañia *",
+            "placeholder": "Compañia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][6]",
+            "label": "Cargo",
+            "placeholder": "Cargo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje *",
+            "placeholder": "¿Qué tareas le gustaría resolver?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growyourindustry.com/servicios/",
+        "index": 1,
+        "action": "https://growyourindustry.com/servicios/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "mensaje Cargo Nombre",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Compañia *",
+            "placeholder": "Compañia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][6]",
+            "label": "Cargo",
+            "placeholder": "Cargo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje *",
+            "placeholder": "¿Qué tareas le gustaría resolver?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growyourindustry.com/seo-para-empresas-industriales/",
+        "index": 1,
+        "action": "https://growyourindustry.com/seo-para-empresas-industriales/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Apellidos",
+            "placeholder": "Apellidos",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Comentario Correo mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Compañia *",
+            "placeholder": "Compañia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][6]",
+            "label": "Cargo",
+            "placeholder": "Cargo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comentario o mensaje *",
+            "placeholder": "¿Qué tareas le gustaría resolver?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://growyourindustry.com/en/contact/",
+        "index": 1,
+        "action": "https://growyourindustry.com/en/contact/",
+        "method": "POST",
+        "submitText": "Book a call",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "First",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Last",
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][8]",
+            "label": "Correo electrónico *",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][2]",
+            "label": "you to would",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][10]",
+            "label": "Company *",
+            "placeholder": "Company",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][11]",
+            "label": "Position",
+            "placeholder": "Position",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][5]",
+            "label": "What tasks would you like to solve?",
+            "placeholder": "What tasks would you like to solve?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "7 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Cargo, mensaje Cargo Nombre, Company *.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": [
+        "Cargo",
+        "mensaje Cargo Nombre",
+        "Company *"
+      ]
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Generar leads B2B de Alta Calidad que se Convierten en Ventas\" · \"leads listos para hablar con tu equipo comercial, no en inflar tu base de datos\" (growyourindustry.com)",
+    "audience": "Empresas B2B: software, SaaS, consultoría, industria, agencias, formación corporativa, con foco en sectores industriales/tecnológicos",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "es líder en centrífugas, secadores y micronizadores industriales.Su maquinaria es de alto ticket (entre 100.000 y 1 millón de euros).Necesitaban renovar su presencia online y empezar a captar clientes a través de su sitio web.",
+      "Investigación de palabras claveTraducción de contenido técnicoCampañas de Google Ads Resultados Nueva página web y nueva imagen de marca para la división de centrifugadoras de rascador.Entre 5 y 10 nuevas oportunidades comerciales.",
+      "Nueva página web industrialContenido optimizado con palabras claveEnfoque en el formulario de contacto Resultados Recuperaron su inversión en el sitio web en solo dos semanas.El resto es historia… Proyecto y Servicios ICESA es una empresa con más de 30 años de experiencia en el sector",
+      "Diseño y desarrollo completo de sitios webGestión de LinkedInOptimización SEO 360 completaCampañas de Google Ads (internacionales) Resultados SEO: Entre 5 y 10 clientes potenciales internacionales al mesPaid Media: 20.000 € invertidos en 2024Ingresos adicionales: 140 000 €ROAS: x7 Proyecto y Servicios ISOGOM SISTEMAS, S.L.",
+      "Métricas, calendario y asignación presupuestaria Monitorizamos los resultados con métricas claras, implementamos un calendario de acciones y gestionamos el presupuesto para maximizar el ROI en tu estrategia de marketing digital.",
+      "Cada proyecto refuerza la identidad de tu marca y está orientado a captar clientes potenciales en sectores industriales y B2B exigentes."
+    ],
+    "objections": [
+      "Preguntas Frecuentes sobre Nuestro Servicio de Marketing B2B Industrial Descubre cómo nuestras estrategias especializadas en SEO industrial, diseño web técnico e inbound marketing B2B pueden impulsar el crecimiento de tu empresa.",
+      "¿Por qué implementar inbound marketing B2B en mi empresa?"
+    ],
+    "urgency": [
+      "Empieza a generar leads hoy Servicios de Generación de Leads B2B Servicios pensados para atraer, captar y convertir prospectos B2B en oportunidades reales de venta mediante estrategias multicanal efectivas.",
+      "Empieza a generar leads hoy ¿Qué es la Generación de Leads B2B?​ La generación de leads B2B (o B2B lead generation) consiste en atraer y captar contactos cualificados de otras empresas interesadas en tus productos o servicios.",
+      "Usamos HubSpot, ActiveCampaign, LinkedIn Campaign Manager, Google Ads, Zapier, y otras herramientas que se integran con tu stack actual.",
+      "Pero con nuestro servicio de suscripción, tienes acceso ilimitado a nuestro equipo de especialistas por un precio mensual."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "es líder en centrífugas, secadores y micronizadores industriales.Su maquinaria es de alto ticket (entre 100.000 y 1 millón de euros).Necesitaban renovar su presencia online y empezar a captar clientes a través de su sitio web.",
+          "url": "https://growyourindustry.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Industriales | GrowYourIndustry",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Diseño y desarrollo completo de sitios webGestión de LinkedInOptimización SEO 360 completaCampañas de Google Ads (internacionales) Resultados SEO: Entre 5 y 10 clientes potenciales internacionales al mesPaid Media: 20.000 € invertidos en 2024Ingresos adicionales: 140 000 €ROAS: x7 Proyecto y Servicios ISOGOM SISTEMAS, S.L.",
+          "url": "https://growyourindustry.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Industriales | GrowYourIndustry",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "se especializa en la extrusión de juntas y perfiles.La empresa se encontraba estancada con los mismos clientes de siempre (negocio familiar).Invirtieron en una página web con el «Kit Digital» y, tras seis meses, no obtuvieron ni un solo cliente potencial cualificado.",
+          "url": "https://growyourindustry.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Industriales | GrowYourIndustry",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Investigación de palabras claveTraducción de contenido técnicoCampañas de Google Ads Resultados Nueva página web y nueva imagen de marca para la división de centrifugadoras de rascador.Entre 5 y 10 nuevas oportunidades comerciales.",
+          "url": "https://growyourindustry.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Industriales | GrowYourIndustry",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Nueva página web industrialContenido optimizado con palabras claveEnfoque en el formulario de contacto Resultados Recuperaron su inversión en el sitio web en solo dos semanas.El resto es historia… Proyecto y Servicios ICESA es una empresa con más de 30 años de experiencia en el sector",
+          "url": "https://growyourindustry.com/casos-de-exito/",
+          "pageTitle": "Casos de Éxito Industriales | GrowYourIndustry",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Métricas, calendario y asignación presupuestaria Monitorizamos los resultados con métricas claras, implementamos un calendario de acciones y gestionamos el presupuesto para maximizar el ROI en tu estrategia de marketing digital.",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cada proyecto refuerza la identidad de tu marca y está orientado a captar clientes potenciales en sectores industriales y B2B exigentes.",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Nos aseguramos de que tu marca sea fácilmente encontrada por tus clientes potenciales, aumentando el tráfico orgánico y generando oportunidades de negocio.",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Con estrategias personalizadas, maximizamos tu retorno de inversión y captamos clientes relevantes para tu negocio.",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Con mensajes personalizados, llevamos la propuesta de valor de tu empresa directamente a tus clientes potenciales, fomentando relaciones duraderas y generando resultados medibles.",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Preguntas Frecuentes sobre Nuestro Servicio de Marketing B2B Industrial Descubre cómo nuestras estrategias especializadas en SEO industrial, diseño web técnico e inbound marketing B2B pueden impulsar el crecimiento de tu empresa.",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "¿Por qué implementar inbound marketing B2B en mi empresa?",
+          "url": "https://growyourindustry.com/servicios/",
+          "pageTitle": "Marketing B2B Industrial | SEO, Leads y Web a Medida",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "LinkedIn Ads",
+        "Google Ads",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://growyourindustry.com/generar-leads-b2b/",
+        "https://growyourindustry.com/contacto/",
+        "https://growyourindustry.com/planes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Generar Leads B2B de Alta Calidad que se Convierten en Ventas",
+        "¿Está listo para llevar su marketing industrial al siguiente nivel?",
+        "Toda la fuerza de marketing que necesita",
+        "Todas sus necesidades de marketing B2B en una única suscripción mensual"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Reservar Llamada",
+        "Empieza a generar leads hoy",
+        "Enviar",
+        "Consigue tu auditoría SEO industrial gratis",
+        "Book a Call",
+        "Book a call"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://growyourindustry.com/generar-leads-b2b/ · 7 campos",
+        "https://growyourindustry.com/contacto/ · 7 campos",
+        "https://growyourindustry.com/planes/ · 7 campos",
+        "https://growyourindustry.com/casos-de-exito/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Reservar Llamada",
+        "Book a Call",
+        "Book a call"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página B2B → llamada y diagnóstico gratuito del funnel/canales → diseño de estrategia → implementación multicanal (LinkedIn, Google, Facebook, SEO, contenidos y automatizaciones) → landing/formulario → lead scoring,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://growyourindustry.com/generar-leads-b2b/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://growyourindustry.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://growyourindustry.com/planes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://growyourindustry.com/casos-de-exito/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://growyourindustry.com/servicios/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://growyourindustry.com/seo-para-empresas-industriales/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://growyourindustry.com/en/contact/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR04042722131539132417?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=growyourindustry.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.growyourindustry.com/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR04042722131539132417/creative/CR08858741253433458689?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR04042722131539132417/creative/CR17546530318721220609?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR04042722131539132417/creative/CR04791491749077843969?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR04042722131539132417/creative/CR13297773297413390337?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.growyourindustry.com/generar/b2b-leads",
+      "label": "Fuente pública 16"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Book a Call”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

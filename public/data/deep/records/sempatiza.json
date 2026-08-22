@@ -1,0 +1,551 @@
+{
+  "id": "sempatiza",
+  "name": "Sempatiza",
+  "reviewedAt": "2026-08-22T15:50:17.278Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Servicios de marketing por horas",
+    "heroObserved": true,
+    "priorSummary": "\"captar a la Generación Z sin comprometer tu economía\"",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 624 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1227 palabras por página comercial recuperada. Muestras breves: “¿Cómo captar alumnos de la generación Z para tu autoescuela sin perder profesionalidad ni arruinarte en el intento?” · “Consultoría de Inteligencia Artificial por horas” · “Servicios de marketing por horas”.",
+    "supportingHeadings": [
+      "¿Cómo captar alumnos de la generación Z para tu autoescuela sin perder profesionalidad ni arruinarte en el intento?",
+      "¿Por Qué la Generación Z Elige Autoescuela de Forma Diferente?",
+      "Los 5 Pilares del Marketing para Autoescuelas que Captan a la Gen Z",
+      "Pilar 1. Presencia en TikTok e Instagram",
+      "Pilar 2. Contenido Auténtico que Conecta",
+      "Pilar 3. Sistema de Reservas Online",
+      "Pilar 4. Contenido sobre Ansiedad al Volante",
+      "Pilar 5. Comunicación con Padres",
+      "La Realidad de los Recursos para una Autoescuela en un Mercado Saturado",
+      "¿Por Dónde Empezar tu Marketing Digital para Autoescuelas sin Arruinarte?",
+      "Dejar un comentario",
+      "Deja una respuesta Cancelar la respuesta",
+      "Consultoría de Inteligencia Artificial por horas",
+      "¿Qué es la Inteligencia Artificial?",
+      "¿Por qué elegirnos como tu consultora en Inteligencia Artificial por horas?",
+      "Experiencia y conocimientos",
+      "Innovación constante",
+      "Satisfacción del cliente",
+      "¿Cómo hacemos Inteligencia Artificial por horas?",
+      "Análisis inicial",
+      "Desarrollo de estrategia",
+      "Implementación",
+      "Optimización continua",
+      "Necesitas saber si la IA es como la pintan, consultoría en Inteligencia Artificial por horas",
+      "¿No te decides? Nuestros clientes también compartieron tus mismas dudas.",
+      "¿Cuánto tiempo tarda en ver resultados la implementación de Inteligencia Artificial?",
+      "¿La IA reemplazará el trabajo humano?",
+      "¿Qué tipos de IA existen?",
+      "¿Cómo se usa la IA en los negocios?",
+      "Sabemos que es el momento de apostar por la consultoría de IA por horas"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicita una auditoría gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://sempatiza.es/precio-justo-por-marketing/",
+      "text": "Solicita una auditoría gratuita",
+      "href": "https://sempatiza.es/hola-que-tal/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 237.25
+    },
+    "ctas": [
+      "Solicita una auditoría gratuita",
+      "Solicita ahora tu primera consultoría de IA",
+      "Empieza tu consultoría de marketing digital hoy",
+      "Contacto",
+      "Espero que me contactéis",
+      "Empieza ahora",
+      "Empieza a conocernos",
+      "Compartir en WhatsApp",
+      "Publicar el comentario",
+      "Hablar con alguien del equipo"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://sempatiza.es/marketing-digital-para-autoescuelas/",
+        "index": 1,
+        "action": "https://sempatiza.es/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Publicar el comentario",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "label": "Web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guarda mi nombre, correo electrónico y web en este navegador para la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comentario *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://sempatiza.es/consultoria-ia/",
+        "index": 1,
+        "action": "https://sempatiza.es/consultoria-ia/",
+        "method": "POST",
+        "submitText": "Espero que me contactéis",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1]",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][3]",
+            "label": "Nombre de tu empresa *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][5]",
+            "label": "Teléfono de contacto *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][6]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][2]",
+            "label": "Nombre tu consulta",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][7]",
+            "label": "Cuéntanos algo sobre tu consulta *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wpforms[fields][9][]",
+            "label": "Estoy de acuerdo con la Política de privacidad*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://sempatiza.es/hola-que-tal/",
+        "index": 1,
+        "action": "https://sempatiza.es/hola-que-tal/",
+        "method": "POST",
+        "submitText": "Espero que me contactéis",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1]",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][3]",
+            "label": "Nombre de tu empresa *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][5]",
+            "label": "Teléfono de contacto *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][2]",
+            "label": "Casillas Correo Teléfono",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][6]",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][7]",
+            "label": "Cuéntanos algo sobre tu consulta *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wpforms[fields][9][]",
+            "label": "Estoy de acuerdo con la Política de privacidad*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 5 y 7 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Web, Guarda mi nombre, correo electrónico y web en este navegador para la, Nombre de tu empresa *.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 7,
+      "qualification": [
+        "Web",
+        "Guarda mi nombre, correo electrónico y web en este navegador para la",
+        "Nombre de tu empresa *"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"captar a la Generación Z sin comprometer tu economía\"",
+    "audience": "Autoescuelas en mercados saturados, foco en captar Generación Z (13-28 años) y a sus padres, que pagan el servicio.",
+    "prices": [
+      "SEO (posicionamiento orgánico): 300-2.000€/mes El SEO es uno de los servicios con mayor rango de precios, porque depende mucho de la competencia en tu sector y de tus objetivos.",
+      "SEO básico para negocio local con poca competencia: 300-600€/mes.",
+      "SEO para negocio con competencia media a nivel nacional: 800-1.500€/mes.",
+      "SEO para negocio con alta competencia o e-commerce grande: 1.500-2.000€/mes o más."
+    ],
+    "guarantee": [
+      "Red flag 4: Promesas irreales Si te prometen «primera posición en Google en 2 semanas», o «multiplicar tus ventas por 10 en un mes», o «resultados garantizados», es una red flag enorme."
+    ],
+    "proof": [
+      "Creamos anuncios optimizados y bien segmentados que atraen tráfico cualificado y te ayudan a convertir leads en clientes Necesito una campaña Analítica web Medimos, analizamos y optimizamos tus métricas digitales para que tomes decisiones informadas.",
+      "No solo diseñamos páginas visualmente atractivas, sino también funcionales, asegurándonos de que tu web esté preparada para captar leads y mejorar tu presencia digital Quiero una web que funcione SEO Mejoramos tu posicionamiento en buscadores para que tus clientes potenciales te encuentren antes que a"
+    ],
+    "objections": [],
+    "urgency": [
+      "Porque la Generación Z (es decir, los jóvenes nacidos entre 1997 y 2012, que ahora tienen entre 13 y 28 años) son nativos digitales.",
+      "…ing: Guía rápida para CEOs ocupadosGuía Básica: Marketing digital para empresas¿Llevas 30 años sin necesitar Internet y ahora todos te dicen que es imprescindible?Cuánto tiempo tarda en dar resultados el marketing digital (datos reales) 0 comentarios Dejar un comentario¿Quieres unirte a la conversación?S…",
+      "La Realidad de los Recursos para una Autoescuela en un Mercado Saturado Ahora mismo puedes estar pensando: «Todo esto suena bien, pero yo no tengo tiempo ni dinero para crear contenido en TikTok, gestionar Instagram, implementar un sistema de reservas online… Apenas tengo tiempo para",
+      "Y hoy te vamos a explicar cómo hacerlo.",
+      "Desplazarse hacia arriba",
+      "¿La IA reemplazará el trabajo humano?Aunque la IA puede automatizar tareas repetitivas, es más probable que complemente a los humanos, liberando tiempo para tareas más estratégicas."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Cada vez que un cliente potencial me dice «me han pasado un presupuesto de 1.500€ al mes, ¿es caro?», mi respuesta es siempre la misma: depende.",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Contenidos ocultar 1 Benchmarks por servicio 1.1 SEO (posicionamiento orgánico): 300-2.000€/mes 1.2 Gestión de Google Ads: 15-20% del presupuesto publicitario 1.3 Social Media gestión: 400-1.500€/mes 1.4 Diseño web: 1.000-10.000€ 1.5 Contenido (artículos de blog): 50-150…",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "amountType": "ad_spend"
+        },
+        {
+          "text": "SEO (posicionamiento orgánico): 300-2.000€/mes El SEO es uno de los servicios con mayor rango de precios, porque depende mucho de la competencia en tu sector y de tus objetivos.",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "SEO básico para negocio local con poca competencia: 300-600€/mes.",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "SEO para negocio con competencia media a nivel nacional: 800-1.500€/mes.",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "SEO para negocio con alta competencia o e-commerce grande: 1.500-2.000€/mes o más.",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Red flag 4: Promesas irreales Si te prometen «primera posición en Google en 2 semanas», o «multiplicar tus ventas por 10 en un mes», o «resultados garantizados», es una red flag enorme.",
+          "url": "https://sempatiza.es/precio-justo-por-marketing/",
+          "pageTitle": "¿Sabes si estás pagando un precio justo por marketing?",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "No solo diseñamos páginas visualmente atractivas, sino también funcionales, asegurándonos de que tu web esté preparada para captar leads y mejorar tu presencia digital Quiero una web que funcione SEO Mejoramos tu posicionamiento en buscadores para que tus clientes potenciales te encuentren antes que a",
+          "url": "https://sempatiza.es/servicios-de-marketing-por-horas/",
+          "pageTitle": "👩🏻‍💻 Servicios de marketing por horas: SEO, Ads, Redes, Web",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Creamos anuncios optimizados y bien segmentados que atraen tráfico cualificado y te ayudan a convertir leads en clientes Necesito una campaña Analítica web Medimos, analizamos y optimizamos tus métricas digitales para que tomes decisiones informadas.",
+          "url": "https://sempatiza.es/servicios-de-marketing-por-horas/",
+          "pageTitle": "👩🏻‍💻 Servicios de marketing por horas: SEO, Ads, Redes, Web",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://sempatiza.es/marketing-digital-para-autoescuelas/",
+        "https://sempatiza.es/consultoria-ia/",
+        "https://sempatiza.es/servicios-de-marketing-por-horas/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "¿Cómo captar alumnos de la generación Z para tu autoescuela sin perder profesionalidad ni arruinarte en el intento?",
+        "Consultoría de Inteligencia Artificial por horas",
+        "Servicios de marketing por horas",
+        "Estás a un paso de tener tu departamento de marketing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Compartir en WhatsApp",
+        "Publicar el comentario",
+        "Solicita ahora tu primera consultoría de IA",
+        "Espero que me contactéis",
+        "Empieza ahora",
+        "Hablar con alguien del equipo",
+        "Empieza a conocernos"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://sempatiza.es/marketing-digital-para-autoescuelas/ · 5 campos",
+        "https://sempatiza.es/consultoria-ia/ · 7 campos",
+        "https://sempatiza.es/hola-que-tal/ · 7 campos",
+        "https://sempatiza.es/precio-justo-por-marketing/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Artículo vertical para autoescuelas → CTA de auditoría gratis → formulario (nombre, empresa, teléfono, email, consulta y privacidad) → contacto manual de Sempatiza → propuesta por horas. No"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://sempatiza.es/marketing-digital-para-autoescuelas/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://sempatiza.es/consultoria-ia/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://sempatiza.es/servicios-de-marketing-por-horas/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://sempatiza.es/quienes-somos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://sempatiza.es/hola-que-tal/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://sempatiza.es/soluciones-de-marketing-por-horas/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://sempatiza.es/precio-justo-por-marketing/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ES&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://sempatiza.es/aviso-legal/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicita una auditoría gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

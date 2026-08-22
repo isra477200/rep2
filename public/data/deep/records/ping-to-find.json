@@ -1,0 +1,638 @@
+{
+  "id": "ping-to-find",
+  "name": "Ping To Find",
+  "reviewedAt": "2026-08-22T15:50:18.222Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Invierte la venta de vehículos: el comprador declara el coche que busca y los concesionarios eligen las oportunidades que pueden atender.",
+    "heroObserved": true,
+    "priorSummary": "Marketplace inverso para concesionarios: leads automoción verificados, previsualización y compra solo de los que interesan; sin subir stock.",
+    "voice": "Revisión manual: energético, simple, orientado a concesionario, selectivo, centrado en velocidad. Usa Hot y Cold como decisiones rápidas. Repite accept only what you want. Reduce el riesgo a precio fijo por aceptación.",
+    "supportingHeadings": [
+      "🎉 New update! Get our latest insights.",
+      "Stop Wasting Time.Start Closing Deals.",
+      "From 1200+ Clients",
+      "Partnered with over 100+ major dealerships in south africa",
+      "Unleash the Power of Our Platform",
+      "Easy Sign Up",
+      "Live Lead Feed",
+      "Built-in CRM",
+      "For us it is all about Stats",
+      "Hot/Cold Indicators",
+      "Simple and Secure",
+      "Only Real Leads",
+      "Pay As you go",
+      "Per Lead",
+      "Fresh Leads Per Day",
+      "Higher Close Rate",
+      "Features that make a difference.",
+      "Unified Dashboard",
+      "Pay Per Lead",
+      "Custom edits",
+      "Automated Reporting",
+      "CRM Integration",
+      "Real-Time Notifications",
+      "Only Pay For The Leads You Want",
+      "Frequently Asked Questions",
+      "1000's are searching on PingToFind",
+      "Get in touch",
+      "Quick links",
+      "Follow Us",
+      "Let's Get In Touch"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://pingtofind.co.za/",
+      "text": "Contact",
+      "href": "https://pingtofind.co.za/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact Us",
+      "Get Started",
+      "WhatsApp Us",
+      "Send",
+      "Post Comment",
+      "Fill out our form",
+      "Register As A Dealer",
+      "Centurion, South Africa",
+      "Register As A New Dealer",
+      "Access the Biggest Selection of Quality Stock in South Africa, Today!"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://pingtofind.co.za/contact-us/",
+        "index": 1,
+        "action": "https://pingtofind.co.za/contact-us/",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Name",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_610fb75]",
+            "label": "Subject",
+            "placeholder": "Subject",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Message",
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://pingtofind.co.za/find-your-dream-car-in-minutes-with-ping-to-find/",
+        "index": 1,
+        "action": "https://pingtofind.co.za/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Post Comment",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comment *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Name *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Website.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": [
+        "Website"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketplace inverso para concesionarios: leads automoción verificados, previsualización y compra solo de los que interesan; sin subir stock.",
+    "audience": "Concesionarios y grupos de automoción en Sudáfrica; comprador final que busca vehículo.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Get Started  Rated 5 out of 5 From 1200+ Clients Partnered with over 100+ major dealerships in south africa Unleash the Power of Our Platform Built to make your life easier, our platform flips the outdated, frustrating lead generation model upside down, delivering unmatched",
+      "Custom editsOur development team tailors custom solutions to meet the unique needs of corporate clients, ensuring a seamless fit for your goals.",
+      "Our expert team can also tailor custom solutions for corporate clients with specific needs."
+    ],
+    "objections": [
+      "Setup R500 Once-off registration Includes verification Monthly FREE Full usage of the Ping To Find Platform Leads R250 Price per lead You choose which ones to accept No contracts.",
+      "Frequently Asked Questions If you have any questions we haven’t addressed here, please don’t hesitate to contact us!",
+      "Are there any long-term contracts or hidden costs?",
+      "No contracts, no surprises."
+    ],
+    "urgency": [
+      "…ubject Message Send Our LocationCenturion, South Africa Email Usinfo@pingtofind.com Chat with us+27 76 988 2152 Call Us Now+27 76 988 2152 1000's are searching on PingToFind Pay For The Leads You Want Verified Leads Only Access to all features Learn More Get Started Revolutionizing the lead generation…",
+      "We seamlessly integrate with your CRM, so all your leads are managed in one spot.",
+      "Connect with us now to revolutionize your lead generation.",
+      "Start Your Search Today Ready to find your dream car?"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Get Started  Rated 5 out of 5 From 1200+ Clients Partnered with over 100+ major dealerships in south africa Unleash the Power of Our Platform Built to make your life easier, our platform flips the outdated, frustrating lead generation model upside down, delivering unmatched",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Custom editsOur development team tailors custom solutions to meet the unique needs of corporate clients, ensuring a seamless fit for your goals.",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our expert team can also tailor custom solutions for corporate clients with specific needs.",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Setup R500 Once-off registration Includes verification Monthly FREE Full usage of the Ping To Find Platform Leads R250 Price per lead You choose which ones to accept No contracts.",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Frequently Asked Questions If you have any questions we haven’t addressed here, please don’t hesitate to contact us!",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Are there any long-term contracts or hidden costs?",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No contracts, no surprises.",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cancel anytime.",
+          "url": "https://pingtofind.co.za/",
+          "pageTitle": "Ping To Find: Best Lead Platform for SA Dealers",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "WhatsApp",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://pingtofind.co.za/",
+        "https://pingtofind.co.za/contact-us/",
+        "https://pingtofind.co.za/about-us/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Stop Wasting Time.Start Closing Deals.",
+        "1000's are searching on PingToFind",
+        "Latest Articles & Resources"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Access the Biggest Selection of Quality Stock in South Africa, Today!",
+        "Contact Us",
+        "Register As A Dealer",
+        "Register As A New Dealer",
+        "Get Started",
+        "Contact",
+        "Send",
+        "Centurion, South Africa"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://pingtofind.co.za/contact-us/ · 4 campos",
+        "https://pingtofind.co.za/find-your-dream-car-in-minutes-with-ping-to-find/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Alta + verificación (R500) → conexión a base de vehículos/CRM → aviso y previsualización de lead → indicador Hot/Cold → aceptación voluntaria → cargo R250 → seguimiento en"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Intención del comprador [observado] → Creación [observado] → Feed [observado] → Aceptación [observado] → Asignación [observado] → Contacto y venta [inferido] → Feedback [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://pingtofind.co.za/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://pingtofind.co.za/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://pingtofind.co.za/about-us/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://pingtofind.co.za/how-it-works/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://pingtofind.co.za/blog-posts/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://pingtofind.co.za/find-your-dream-car-in-minutes-with-ping-to-find/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://pingtofind.co.za/privacy-policy/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=pingtofind.co.za",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Ping%20To%20Find&search_type=keyword_exact_phrase",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://pingtofind.co.za/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Invierte la venta de vehículos: el comprador declara el coche que busca y los concesionarios eligen las oportunidades que pueden atender.",
+      "promise": "Sin subir stock, mensualidad o contrato; pagar solo por leads que el concesionario acepta.",
+      "positioning": "Marketplace inverso de intención de compra de automóviles para concesionarios sudafricanos",
+      "audience": "Concesionarios sudafricanos de vehículo nuevo, usado o mayorista.",
+      "voice": [
+        "energético",
+        "simple",
+        "orientado a concesionario",
+        "selectivo",
+        "centrado en velocidad"
+      ],
+      "patterns": [
+        "Usa Hot y Cold como decisiones rápidas.",
+        "Repite accept only what you want.",
+        "Reduce el riesgo a precio fijo por aceptación."
+      ]
+    },
+    "cta": {
+      "primary": "Register as a Dealer",
+      "secondary": [
+        "See How It Works",
+        "Contact Us"
+      ],
+      "forms": [
+        {
+          "url": "https://pingtofind.com/dealer/register",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "tipo de vehículo: nuevo/usado/mayorista",
+            "nombre del concesionario",
+            "razón social",
+            "número de registro",
+            "nombre",
+            "apellido",
+            "teléfono",
+            "email",
+            "dirección",
+            "provincia",
+            "ciudad",
+            "código postal",
+            "dos controles técnicos no comerciales"
+          ],
+          "fieldCount": 14,
+          "friction": "alta, apropiada para verificación B2B",
+          "submitted": false
+        },
+        {
+          "url": "https://pingtofind.co.za/contact-us/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono",
+            "mensaje"
+          ],
+          "fieldCount": 4,
+          "friction": "media",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Intención del comprador",
+        "status": "observado",
+        "detail": "El usuario declara el vehículo deseado y sus requisitos."
+      },
+      {
+        "stage": "Creación",
+        "status": "observado",
+        "detail": "La plataforma busca en su base de vehículos y crea o verifica un lead."
+      },
+      {
+        "stage": "Feed",
+        "status": "observado",
+        "detail": "El concesionario ve oportunidades, marca Hot o Cold y preselecciona según stock y ajuste."
+      },
+      {
+        "stage": "Aceptación",
+        "status": "observado",
+        "detail": "Hasta cuatro o diez concesionarios, según la página, pueden aceptar a R250."
+      },
+      {
+        "stage": "Asignación",
+        "status": "observado",
+        "detail": "La oportunidad aceptada se asigna en el CRM del concesionario."
+      },
+      {
+        "stage": "Contacto y venta",
+        "status": "inferido",
+        "detail": "El concesionario contacta, confirma stock, presenta opción y cierra."
+      },
+      {
+        "stage": "Feedback",
+        "status": "observado",
+        "detail": "Estados y reporting permiten seguir oportunidades."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "verificación — R500 una sola vez",
+        "suscripción — R0 al mes",
+        "lead aceptado — R250"
+      ],
+      "contract": [
+        "permanencia — sin contrato; cancelación anunciada en cualquier momento"
+      ],
+      "guarantee": [
+        "validez o venta — no se observó política pública de reembolso, reemplazo o cierre"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "WordPress",
+      "Google Tag Manager",
+      "Base de vehículos, feed, Hot/Cold, CRM y reportes"
+    ],
+    "contradictions": [
+      "La portada indica un máximo de diez concesionarios por lead; How It Works dice máximo cuatro.",
+      "La portada usa no fake leads, mientras How It Works cuantifica 95% genuinos, admitiendo implícitamente una fracción no genuina.",
+      "Contadores rotos muestran R0 por lead, 0+ diarios y 0% superior, contradiciendo el precio claro de R250 y el claim de hasta 80%.",
+      "La promesa de aceptar solo si el coche está en stock convive con no subir stock; el mecanismo de comprobación o integración no se publica."
+    ],
+    "inferences": [
+      "Contacto y venta: El concesionario contacta, confirma stock, presenta opción y cierra."
+    ],
+    "notObservable": [
+      "límite real de concesionarios",
+      "definición de verificado",
+      "política de inválido",
+      "regla si varios aceptan",
+      "SLA",
+      "origen y consentimiento del comprador",
+      "tasa de contacto y cierre",
+      "CRM concreto",
+      "base de stock",
+      "motor de matching",
+      "antifraude",
+      "pasarela de cobro",
+      "No se verificaron revisión de R500, acceso al feed, lead preview, aceptación, cobro o CRM."
+    ],
+    "limitations": [
+      "No se creó cuenta ni se pagó verificación.",
+      "No se vio un lead real antes de aceptar.",
+      "No se comprobó el CRM ni el proceso posterior.",
+      "Las contradicciones de competencia, autenticidad y contadores impiden usar esas cifras sin aclaración contractual."
+    ],
+    "lessons": {
+      "copy": [
+        "El comprador declara intención y el proveedor decide si acepta.",
+        "Hot/Cold crea una interacción rápida y comprensible."
+      ],
+      "adapt": [
+        "Cobro después de preview con criterios mínimos visibles.",
+        "Registro B2B y verificación única.",
+        "Feed sin obligar a mantener catálogo si el matching puede consultar disponibilidad."
+      ],
+      "avoid": [
+        "Publicar límites diferentes de competidores.",
+        "Usar no fake junto a 95% genuino.",
+        "Dejar contadores con cero que contradicen el precio."
+      ],
+      "test": [
+        "Preview parcial frente a completo antes de cobro.",
+        "Lead exclusivo frente a máximo dos o cuatro.",
+        "Etiqueta Hot/Cold frente a score continuo."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://pingtofind.co.za/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://pingtofind.co.za/how-it-works/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://pingtofind.co.za/contact-us/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://pingtofind.com/dealer/register",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://pingtofind.co.za/privacy-policy/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

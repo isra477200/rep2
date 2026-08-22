@@ -1,0 +1,475 @@
+{
+  "id": "leadmarket",
+  "name": "LeadMarket",
+  "reviewedAt": "2026-08-22T15:50:18.028Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Lead Generation",
+    "heroObserved": true,
+    "priorSummary": "Generación B2B, contacto con decisores, teleprospección e inside sales sobre bases del cliente.",
+    "voice": "Tono cuantitativo, centrado en la marca, orientado a la acción. Usa 65 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 303 palabras por página comercial recuperada. Muestras breves: “Lead Generation” · “Contacts” · “Contactos”.",
+    "supportingHeadings": [
+      "Lead Generation",
+      "Launch your product or service",
+      "Receive a new approach to your database",
+      "Methodology",
+      "Reasons to choose us",
+      "Contacts",
+      "About Us",
+      "Mission",
+      "Vision",
+      "Values",
+      "Contactos",
+      "Términos y Condiciones",
+      "Términos e Condiciones Generales de Uso del Sitio Web «Leadmarket»",
+      "Objetivo",
+      "Aceptación de los Términos y Condiciones Generales de Uso",
+      "Navegación",
+      "Responsabilidades",
+      "Links Externos",
+      "Drecehos de Autor",
+      "Servicio de Atendimiento al Cliente",
+      "Sanciones",
+      "Alteraciones",
+      "Encontrar quem realmente necessita da sua solução",
+      "Acelerar a conversão de oportunidades",
+      "Qualificação detalhada de cada lead",
+      "Áreas de Atuação",
+      "Metodologia",
+      "Razões para nos escolher"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agendar Reunião",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://leadmarket.pt/contactos/",
+      "text": "Agendar Reunião",
+      "href": "https://calendly.com/equipacomercial/reuniao-de-apresentacao-leadmarket",
+      "element": "a",
+      "kind": "conversion",
+      "score": 161.25
+    },
+    "ctas": [
+      "Agendar Reunião",
+      "Schedule a meeting",
+      "Send",
+      "Enviar",
+      "Subscrever"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://leadmarket.pt/en/contacts/",
+        "index": 1,
+        "action": "https://leadmarket.pt/en/contacts/",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 13,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_1",
+            "label": "Name(Required)",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_3",
+            "label": "Email(Required)",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_4",
+            "label": "Telephone",
+            "placeholder": "Telephone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_7",
+            "label": "Em que área podemos ajudar?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "input_6",
+            "label": "Message(Required)",
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leadmarket.pt/contactos/",
+        "index": 1,
+        "action": "https://leadmarket.pt/contactos/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 13,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_1",
+            "label": "Nome(Obrigatório)",
+            "placeholder": "Nome",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_3",
+            "label": "Email(Obrigatório)",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_4",
+            "label": "Contacto",
+            "placeholder": "Número direto móvel ou fixo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_7",
+            "label": "Em que área podemos ajudar?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "input_6",
+            "label": "Como podemos ajudar?(Obrigatório)",
+            "placeholder": "Conte-nos um pouco sobre o seu desafio",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leadmarket.pt/contactos/",
+        "index": 2,
+        "action": "https://leadmarket.pt/contactos/",
+        "method": "POST",
+        "submitText": "Subscrever",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 15,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_1",
+            "label": "Nome(Obrigatório)",
+            "placeholder": "Nome",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_2",
+            "label": "Apelido",
+            "placeholder": "Apelido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_3",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "input_4.1",
+            "label": "Concordo com a política de privacidade.(Obrigatório)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leadmarket.pt/es/contactos/",
+        "index": 1,
+        "action": "https://leadmarket.pt/es/contactos/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 13,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_1",
+            "label": "Nombre(Obligatorio)",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "input_3",
+            "label": "Email(Obligatorio)",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_4",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "input_7",
+            "label": "Em que área podemos ajudar?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "input_6",
+            "label": "Mensaje(Obligatorio)",
+            "placeholder": "Mensaje",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Gravity Forms",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Generación B2B, contacto con decisores, teleprospección e inside sales sobre bases del cliente.",
+    "audience": "Ventas y generación de demanda B2B.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "LinkedIn Ads",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://leadmarket.pt/en/services/lead-generation/",
+        "https://leadmarket.pt/en/contacts/",
+        "https://leadmarket.pt/en/company/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Lead Generation",
+        "Contacts",
+        "Contactos",
+        "Términos y Condiciones"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Schedule a meeting",
+        "Send",
+        "Enviar",
+        "Agendar Reunião",
+        "Subscrever"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://leadmarket.pt/en/contacts/ · 5 campos",
+        "https://leadmarket.pt/contactos/ · 5 campos",
+        "https://leadmarket.pt/contactos/ · 4 campos",
+        "https://leadmarket.pt/es/contactos/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Schedule a meeting",
+        "Schedule a meeting",
+        "Schedule a meeting",
+        "Agendar Reunião"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contacto comercial → definición de target/decisor y posible uso de base del cliente → teleprospección/inside sales → cualificación → traspaso del contacto decisor al equipo comercial → seguimiento"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://leadmarket.pt/en/services/lead-generation/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://leadmarket.pt/en/contacts/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://leadmarket.pt/en/company/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://leadmarket.pt/contactos/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://leadmarket.pt/es/contactos/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://leadmarket.pt/es/terminos-y-condiciones/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://leadmarket.pt/servicos/lead-generation/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=leadmarket.pt",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agendar Reunião”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Gravity Forms, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

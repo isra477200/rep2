@@ -1,0 +1,478 @@
+{
+  "id": "itpartner-leads-ee",
+  "name": "ITPartner / Leads.ee",
+  "reviewedAt": "2026-08-22T15:50:18.229Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "Las empresas pagan solo por consultas reales generadas por sitios SEO propios, sin agencia full service ni contrato largo.",
+    "heroObserved": true,
+    "priorSummary": "Solicitudes cualificadas generadas por una red de webs SEO propias; se paga únicamente por cada solicitud real entregada.",
+    "voice": "Revisión manual: sobrio, práctico, local, transparente en precio, orientado a prueba. Contrasta coste por resultado con el fee de agencia. Expone nicho, precio y estado de disponibilidad. Invita a empezar con un paquete pequeño.",
+    "supportingHeadings": [
+      "Kaasturundus Eesti ettevõtetele",
+      "Kuidas see töötab",
+      "Klient otsib teenust",
+      "Täidab vormi",
+      "Kvalifitseerimine",
+      "Päring teieni",
+      "Aktiivsed nišid",
+      "Sanitaartööd",
+      "Boilerid ja küte",
+      "Elektritööd",
+      "Koristusteenused",
+      "Kolimine ja kandmine",
+      "Ehitustööd",
+      "Uksed ja aknad",
+      "Raamatupidamine",
+      "Aia- ja haljastustööd",
+      "Finants ja krediit",
+      "Ettevõtted, kes juba ostavad päringuid",
+      "Saagem partneriks",
+      "Toetused startup'idele",
+      "Google Ads",
+      "Optimeerimine",
+      "Kogemus",
+      "Поддержка стартапов",
+      "Оптимизация",
+      "Опыт",
+      "Kontseptsioonide töökoda",
+      "Kuidas see stuudio töötab",
+      "Alati tervik, mitte detail",
+      "Kokkupanek nähtust"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Связаться →",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://itp.ee/ru/dlya-startapov/",
+      "text": "Связаться →",
+      "href": "https://itp.ee/ru/kontakty/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 162.25
+    },
+    "ctas": [
+      "Связаться →",
+      "Saada sõnum"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://itp.ee/",
+        "index": 1,
+        "action": "https://itp.ee/",
+        "method": "GET",
+        "submitText": "Saada sõnum",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Teie nimi",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-post",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Telefon",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Sõnum",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Solicitudes cualificadas generadas por una red de webs SEO propias; se paga únicamente por cada solicitud real entregada.",
+    "audience": "Estonia; fontanería, calefacción, electricidad, limpieza, mudanzas, construcción, puertas/ventanas, contabilidad y jardinería.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Vaata → 🏗 Aktiivne Valmis veebilehed Nišiveebilehed valmis tootena: ost või rent alates 150 €/kuus.",
+          "url": "https://itp.ee/",
+          "pageTitle": "Isiklik kontseptsioonistuudio | ITPartner",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://itp.ee/kaasturundus/",
+        "https://itp.ee/startupile/",
+        "https://itp.ee/ru/dlya-startapov/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Kaasturundus Eesti ettevõtetele",
+        "Toetused startup'idele",
+        "Поддержка стартапов",
+        "Kontseptsioonide töökoda"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Связаться →",
+        "Saada sõnum"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://itp.ee/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El comprador contacta para acordar vertical, zona, volumen y criterios y puede iniciar piloto → ITPartner capta demanda con su red de webs SEO → filtra spam y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Demanda SEO [observado] → Formulario [observado] → Validación [observado] → Entrega [observado] → Handoff [observado] → Prueba [observado] → Optimización [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://itp.ee/kaasturundus/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://itp.ee/startupile/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://itp.ee/ru/dlya-startapov/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://itp.ee/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://itp.ee/kontseptsioonid/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://itp.ee/muusika/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://itp.ee/mangud/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=itp.ee",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Связаться →”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Las empresas pagan solo por consultas reales generadas por sitios SEO propios, sin agencia full service ni contrato largo.",
+      "promise": "Spam filtrado, contacto validado y entrega inmediata a CRM, Telegram o email.",
+      "positioning": "Operador estonio de sitios SEO verticales y venta CPL a proveedores locales",
+      "audience": "Proveedores estonios de fontanería, calefacción, electricidad, limpieza, mudanzas, construcción, carpintería, contabilidad y jardín.",
+      "voice": [
+        "sobrio",
+        "práctico",
+        "local",
+        "transparente en precio",
+        "orientado a prueba"
+      ],
+      "patterns": [
+        "Contrasta coste por resultado con el fee de agencia.",
+        "Expone nicho, precio y estado de disponibilidad.",
+        "Invita a empezar con un paquete pequeño."
+      ]
+    },
+    "cta": {
+      "primary": "Võta ühendust",
+      "secondary": [
+        "Alusta testpaketiga"
+      ],
+      "forms": [
+        {
+          "url": "https://itp.ee/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono",
+            "mensaje"
+          ],
+          "fieldCount": 4,
+          "friction": "media-baja",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Demanda SEO",
+        "status": "observado",
+        "detail": "Sitios verticales propios posicionan búsquedas locales de servicio."
+      },
+      {
+        "stage": "Formulario",
+        "status": "observado",
+        "detail": "El comprador indica trabajo, región y momento preferido."
+      },
+      {
+        "stage": "Validación",
+        "status": "observado",
+        "detail": "ITPartner filtra spam y valida datos de contacto."
+      },
+      {
+        "stage": "Entrega",
+        "status": "observado",
+        "detail": "La consulta llega inmediatamente por CRM, Telegram o email."
+      },
+      {
+        "stage": "Handoff",
+        "status": "observado",
+        "detail": "El proveedor contacta, presupuesta y ejecuta sin backend fee adicional anunciado."
+      },
+      {
+        "stage": "Prueba",
+        "status": "observado",
+        "detail": "El proveedor comienza con paquete pequeño y negocia volumen, precio y condiciones."
+      },
+      {
+        "stage": "Optimización",
+        "status": "inferido",
+        "detail": "Volumen y términos se ajustan tras observar respuesta y cierre."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "fontanería — EUR 15–25 por lead",
+        "calefacción — EUR 20–30",
+        "electricidad — EUR 15–25",
+        "limpieza — EUR 10–20",
+        "mudanzas — EUR 15–25",
+        "construcción — EUR 20–40",
+        "puertas y ventanas — EUR 15–30",
+        "contabilidad — EUR 20–40",
+        "jardín — EUR 10–20",
+        "finanzas — pausado; consultar"
+      ],
+      "contract": [
+        "entrada — paquete pequeño de prueba; volumen, precio y condiciones se acuerdan",
+        "permanencia — se anuncia ausencia de contratos largos, pero no se publica duración exacta"
+      ],
+      "guarantee": [
+        "resultado — se cobra la consulta validada, no venta, cita o trabajo; no se observó garantía de cierre"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "nginx",
+      "Sitios SEO propios",
+      "CRM, Telegram y email"
+    ],
+    "contradictions": [
+      "Pagar solo por resultados reales significa en la práctica consulta validada y entregada, no venta ni trabajo concluido.",
+      "Sin intermediarios convive con el papel de ITPartner como propietario de sitios, validador y distribuidor; probablemente significa sin capa o fee posterior, no ausencia de intermediación.",
+      "Sin contrato largo no define duración, mínimo, salida o política del paquete de prueba.",
+      "Solo se muestran como ejemplo público aiameister24.ee y doors.ee, insuficientes para probar demanda de todos los nichos listados.",
+      "No se publica si el lead es exclusivo, compartido o revendible."
+    ],
+    "inferences": [
+      "Optimización: Volumen y términos se ajustan tras observar respuesta y cierre."
+    ],
+    "notObservable": [
+      "volumen por nicho",
+      "exclusividad o compartición",
+      "rubric de validación",
+      "política de inválido",
+      "tamaño del paquete",
+      "contrato y salida",
+      "atribución a venta",
+      "SLA",
+      "CRM concreto",
+      "motor de distribución",
+      "tracking",
+      "telefonía",
+      "automatización",
+      "antifraude",
+      "No se verificaron respuesta, volumen disponible, paquete de prueba, contrato, integración o primer lead."
+    ],
+    "limitations": [
+      "No se pidió paquete de prueba.",
+      "No se verificaron sitios, formularios, leads o entregas de un nicho concreto más allá de la información pública.",
+      "No se obtuvo contrato o política de inválidos.",
+      "Los productos de web por cuota mensual son otra línea y no se mezclaron con el CPL."
+    ],
+    "lessons": {
+      "copy": [
+        "Una tabla CPL por nicho transmite claridad inmediata.",
+        "Explicar el origen SEO y el filtro antes de la entrega."
+      ],
+      "adapt": [
+        "Paquete de prueba pequeño.",
+        "Entrega por CRM, mensajería o email a elección.",
+        "Estado activo o pausado visible por nicho."
+      ],
+      "avoid": [
+        "Llamar resultado a una consulta sin definirlo.",
+        "Decir sin intermediarios cuando se controla routing.",
+        "Ocultar exclusividad y política de inválido."
+      ],
+      "test": [
+        "CPL fijo frente a rango según intención.",
+        "Paquete de cinco o diez oportunidades.",
+        "Exclusivo frente a compartido con precio proporcional."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://itp.ee/kaasturundus/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://itp.ee/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://itp.ee/kontaktid/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "partial"
+}

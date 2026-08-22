@@ -1,0 +1,507 @@
+{
+  "id": "la-teva-web",
+  "name": "La Teva Web",
+  "reviewedAt": "2026-08-22T15:50:19.594Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Diseño web Barcelona",
+    "heroObserved": true,
+    "priorSummary": "\"Una agencia de diseño web y marketing digital\" con \"soluciones a medida, combinando la consultoría estratégica, el diseño innovador y las mejores prácticas de marketing digital\" (cita vía emprendedores.es).",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 143 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1069 palabras por página comercial recuperada. Muestras breves: “Diseño web Barcelona” · “Agencia Meta Ads (anteriormente Facebook Ads)” · “Precios”.",
+    "supportingHeadings": [
+      "Diseño web Barcelona",
+      "Diseño web",
+      "Marketing digital",
+      "Tu agencia de seo, sem y diseño web en Barcelona",
+      "Poderosas razones para hacer tu web con nosotros",
+      "Las fases de una página web",
+      "Estudio del proyecto",
+      "Programación web",
+      "SEO",
+      "Marketing digital y seguimiento",
+      "Casos de éxito",
+      "Clientes de la agencia",
+      "Nuestro blog de marketing digital",
+      "SEO para Wix",
+      "Guía SEO para webs con base JavaScript",
+      "FAQ's",
+      "Agencia Meta Ads (anteriormente Facebook Ads)",
+      "Segmentación de las campañas en Meta Ads",
+      "¿Qué tipo de campañas podemos crear en nuestra agencia de Meta Ads?",
+      "La Teva Web, tu agencia de Meta Ads en Barcelona",
+      "¿Qué herramientas y campañas SEM trabajamos?",
+      "Preguntas frecuentes sobre Meta Ads",
+      "¿Cuánto cuesta una campaña de Meta Ads (antes Facebook Ads)?",
+      "¿Qué tipos de anuncios se pueden crear en Meta Ads?",
+      "¿Cuál es la diferencia entre Meta Ads y Facebook Ads?",
+      "¿Cómo medimos el éxito de las campañas en Meta Ads?",
+      "¿Meta Ads es adecuado para mi negocio?",
+      "¿Cuál es la mejor estrategia para mi primera campaña de Meta Ads?",
+      "Precios",
+      "Precios de páginas web"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.latevaweb.com/",
+      "text": "Contacto",
+      "href": "https://www.latevaweb.com/contacto-diseno-web",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Start ups (4)",
+      "Enviar",
+      "Consúltanos",
+      "Quiero mi página web",
+      "Quiero empezar mi proyecto"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.latevaweb.com/precios-web-barcelona",
+        "index": 1,
+        "action": "https://www.latevaweb.com/enviar-formulario",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Nom",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Telefon",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Empresa",
+            "label": "Empresa",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Url",
+            "label": "Dominio de tu web",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Comentaris",
+            "label": "Comentarios",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "Privacitat",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "Publi",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.latevaweb.com/trabajo",
+        "index": 1,
+        "action": "https://www.latevaweb.com/enviar-formulario",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Nom",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Telefon",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Perfil",
+            "label": "Perfil profesional",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Linkedin",
+            "label": "URL Linkedin",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Comentaris",
+            "label": "Comentarios",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "CV",
+            "label": "Adjuntar CV (fichero word o pdf)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "Privacitat",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 8 y 8 campos visibles, mínimo 7 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Empresa, Dominio de tu web.",
+      "friction": "Alta",
+      "minFields": 8,
+      "maxFields": 8,
+      "qualification": [
+        "Empresa",
+        "Dominio de tu web"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Una agencia de diseño web y marketing digital\" con \"soluciones a medida, combinando la consultoría estratégica, el diseño innovador y las mejores prácticas de marketing digital\" (cita vía emprendedores.es).",
+    "audience": "\"Empresas y profesionales\" que buscan \"dar el salto al mundo digital\" y \"optimizar su presencia digital y mejorar sus resultados comerciales\" — agencia de Barcelona, diseño web + marketing digital.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Con cariñoTenemos relaciones longevas con nuestros clientes.",
+      "Haremos seguimiento y mejoras constantes para crecer contigo.Quiero empezar mi proyectoCasos de éxitoNuestra mayor satisfacción es ver a clientes satisfechos, que crecen y se expanden de nuestra mano.",
+      "Somos una agencia de diseño web de Barcelona y estamos muy ligados a nuestra ciudad, que nos sirve de continua inspiración, pero tenemos la inmensa suerte de tener clientes en seis continentes.",
+      "El diseño web es la visión y el criterio gráfico que va a permitir que tu página web sea única, se diferencie de la competencia, transmita los valores de la marca y conecte con sus clientes potenciales.En nuestra agencia de Barcelona contamos con diseñadores web",
+      "…para auténticos emblemas de la ciudad condal como el Ayuntamiento de Barcelona o La Boqueria pero también verás además clientes de web o marketing digital de gran parte de Cataluña (Barcelona, Girona, Tarragona y Lleida), y de muchas localidades como L'Hospitalet, Sabadell, Terrassa, Mataró o Sant Cugat, e…",
+      "También tenemos un largo recorrido con clientes de Madrid, València, Zaragoza...Finalmente, nuestra amplia experiencia y las posibilidades tecnológicas nos han brindado la oportunidad de trabajar en proyectos web, SEO y SEM en los siete continentes, excepto en la Antártida por ahora...¿Hacéis las páginas web en"
+    ],
+    "objections": [
+      "…de La Teva Web en TV3: una campaña que refleja nuestra esencia como agencia de marketing digital en Barcelona.Ver todosFAQ's¿Cuál es el precio de una página web profesional?",
+      "…consultarlas y editarlas a su gusto, puede consultar el gasto exacto de cada una de ellas, y no tenemos ningún tipo de permanencia."
+    ],
+    "urgency": [
+      "También tenemos un largo recorrido con clientes de Madrid, València, Zaragoza...Finalmente, nuestra amplia experiencia y las posibilidades tecnológicas nos han brindado la oportunidad de trabajar en proyectos web, SEO y SEM en los siete continentes, excepto en la Antártida por ahora...¿Hacéis las páginas web en",
+      "Ahora, incluye la posibilidad de crear y gestionar anuncios en Facebook, Instagram y otras plataformas de Meta desde una única interfaz."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Con cariñoTenemos relaciones longevas con nuestros clientes.",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Haremos seguimiento y mejoras constantes para crecer contigo.Quiero empezar mi proyectoCasos de éxitoNuestra mayor satisfacción es ver a clientes satisfechos, que crecen y se expanden de nuestra mano.",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "El diseño web es la visión y el criterio gráfico que va a permitir que tu página web sea única, se diferencie de la competencia, transmita los valores de la marca y conecte con sus clientes potenciales.En nuestra agencia de Barcelona contamos con diseñadores web",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Somos una agencia de diseño web de Barcelona y estamos muy ligados a nuestra ciudad, que nos sirve de continua inspiración, pero tenemos la inmensa suerte de tener clientes en seis continentes.",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…para auténticos emblemas de la ciudad condal como el Ayuntamiento de Barcelona o La Boqueria pero también verás además clientes de web o marketing digital de gran parte de Cataluña (Barcelona, Girona, Tarragona y Lleida), y de muchas localidades como L'Hospitalet, Sabadell, Terrassa, Mataró o Sant Cugat, e…",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "También tenemos un largo recorrido con clientes de Madrid, València, Zaragoza...Finalmente, nuestra amplia experiencia y las posibilidades tecnológicas nos han brindado la oportunidad de trabajar en proyectos web, SEO y SEM en los siete continentes, excepto en la Antártida por ahora...¿Hacéis las páginas web en",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Algún día tu proyecto puede estar entre estos casos de éxito¿Hablamos?EmpresaLa Teva WebPreciosContactoPorfolioBlogLa Teva WikiDiseño webWebs para empresasPáginas web WordPressPáginas web a medidaWebs institucionalesDiseño web E-commerceTie…",
+          "url": "https://www.latevaweb.com/porfolio-clientes-diseno-web",
+          "pageTitle": "Porfolio | Proyectos de diseño web y marketing online",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…de La Teva Web en TV3: una campaña que refleja nuestra esencia como agencia de marketing digital en Barcelona.Ver todosFAQ's¿Cuál es el precio de una página web profesional?",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…consultarlas y editarlas a su gusto, puede consultar el gasto exacto de cada una de ellas, y no tenemos ningún tipo de permanencia.",
+          "url": "https://www.latevaweb.com/",
+          "pageTitle": "Diseño web Barcelona. Mejor agencia de diseño páginas web",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Partners / afiliación"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.latevaweb.com/",
+        "https://www.latevaweb.com/gestion-publicidad-facebook-ads",
+        "https://www.latevaweb.com/precios-web-barcelona"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Diseño web Barcelona",
+        "Agencia Meta Ads (anteriormente Facebook Ads)",
+        "Precios",
+        "Webs de Servicios B2B para empresas"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Consúltanos",
+        "Quiero empezar mi proyecto",
+        "Enviar",
+        "Start ups (4)",
+        "Quiero mi página web"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.latevaweb.com/precios-web-barcelona · 8 campos",
+        "https://www.latevaweb.com/trabajo · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario o reserva de llamada → llamada inicial para entender situación y encaje → acceso de lectura a Google/Meta Ads → primera lectura en menos de 48 h"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.latevaweb.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.latevaweb.com/gestion-publicidad-facebook-ads",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.latevaweb.com/precios-web-barcelona",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.latevaweb.com/porfolio-clientes-diseno-web",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.latevaweb.com/web-servicios-b2b-empresas",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.latevaweb.com/trabajo",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.latevaweb.com/webs-empresas",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.latevaweb.com/auditoria-sem-profesional",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.latevaweb.com/agencia-google-ads-barcelona",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.latevaweb.com/contacto-diseno-web",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://emprendedores.es/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://latevaweb.com/",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 8 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

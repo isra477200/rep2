@@ -1,0 +1,336 @@
+{
+  "id": "salesman-ssm-ge",
+  "name": "SALESMAN / ssm.ge",
+  "reviewedAt": "2026-08-22T15:50:17.993Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "La oferta se presenta como un configurador de servicios con precio visible y selección del objetivo comercial.",
+    "heroObserved": false,
+    "priorSummary": "Plataforma/servicio georgiano de ventas corporativas: segmenta empresas por categoría y ubicación, prepara propuesta comercial, ejecuta prospección y entrega interesados con reporting; añade SEO, gestión web/social y LinkedIn.",
+    "voice": "Revisión manual: transaccional, práctico, orientado a precio, autoservicio. Reduce la ambigüedad inicial mostrando precios en el selector. Convierte el briefing comercial en una secuencia paso a paso. Mezcla ventas corporativas, SEO, web, social, LinkedIn y productos digitales pequeños.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Plataforma/servicio georgiano de ventas corporativas: segmenta empresas por categoría y ubicación, prepara propuesta comercial, ejecuta prospección y entrega interesados con reporting; añade SEO, gestión web/social y LinkedIn.",
+    "audience": "Empresas de cualquier sector que venden B2B en Georgia y necesitan externalizar ventas corporativas o servicios digitales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario multietapa: datos de contacto/empresa → selección de servicio → elección de tarifa de ventas corporativas → selección de categorías objetivo → envío → propuesta/ejecución comercial y reporting."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada [observado] → Identificación [observado] → Configuración [observado] → Modelo comercial [observado] → Targeting [observado] → Diagnóstico y propuesta [inferido] → Prospección y entrega [no observable]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.ssm.ge/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.ssm.ge/service",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.facebook.com/salesman.georgia",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.linkedin.com/company/salesman-georgia/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=ssm.ge",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=61576630082584",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "http://ssm.ge/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://ssm.ge/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://ssm.ge/: fetch failed",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "La oferta se presenta como un configurador de servicios con precio visible y selección del objetivo comercial.",
+      "promise": "Permitir que una empresa solicite servicios comerciales y digitales eligiendo modalidad, presupuesto y sectores objetivo.",
+      "positioning": "Núcleo: servicio comercial externalizado combinado con servicios de marketing",
+      "audience": "Empresas georgianas que quieren contratar ventas corporativas o marketing con una entrada guiada.",
+      "voice": [
+        "transaccional",
+        "práctico",
+        "orientado a precio",
+        "autoservicio"
+      ],
+      "patterns": [
+        "Reduce la ambigüedad inicial mostrando precios en el selector.",
+        "Convierte el briefing comercial en una secuencia paso a paso.",
+        "Mezcla ventas corporativas, SEO, web, social, LinkedIn y productos digitales pequeños."
+      ]
+    },
+    "cta": {
+      "primary": "Configurar y enviar solicitud",
+      "secondary": [],
+      "forms": [
+        {
+          "url": "https://www.ssm.ge/service",
+          "purpose": "Captura o contacto",
+          "fields": [],
+          "fieldCount": "variable, en cuatro pasos",
+          "friction": "media-alta: la progresión cualifica bien, pero la taxonomía extensa de sectores puede alargar la tarea",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Entrada",
+        "status": "observado",
+        "detail": "Página de servicios con configurador comercial."
+      },
+      {
+        "stage": "Identificación",
+        "status": "observado",
+        "detail": "Recoge datos personales y empresa."
+      },
+      {
+        "stage": "Configuración",
+        "status": "observado",
+        "detail": "El usuario elige servicios y ve anclas de precio."
+      },
+      {
+        "stage": "Modelo comercial",
+        "status": "observado",
+        "detail": "Para ventas corporativas elige precio fijo o fijo reducido más porcentaje."
+      },
+      {
+        "stage": "Targeting",
+        "status": "observado",
+        "detail": "Selecciona categorías de empresas objetivo antes de enviar."
+      },
+      {
+        "stage": "Diagnóstico y propuesta",
+        "status": "inferido",
+        "detail": "Una revisión humana y propuesta posterior son probables, pero no se observan públicamente."
+      },
+      {
+        "stage": "Prospección y entrega",
+        "status": "no observable",
+        "detail": "La operación, cualificación, reporting y handoff no pudieron observarse."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "ventas corporativas — 1.500 GEL fijos o 800 GEL más un porcentaje de contratos",
+        "SEO — 1.500 GEL/mes",
+        "gestión web — desde 700 GEL/mes",
+        "sitio de imagen — desde 300 GEL",
+        "social media — 1.400 GEL/mes",
+        "LinkedIn — 1.000 GEL/mes",
+        "QR/e-menu — 50 GEL/mes",
+        "micrositio — 250 GEL una vez y 35 GEL/mes"
+      ],
+      "contract": [
+        "duración y cancelación — no publicadas en la evidencia accesible"
+      ],
+      "guarantee": [
+        "garantía — no observable"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [],
+    "contradictions": [
+      "La opción 800 GEL más porcentaje no informa tasa, base, momento de devengo ni tratamiento de renovaciones.",
+      "El total del configurador aparece inicialmente en cero en el contenido indexado; no pudo comprobarse su actualización interactiva.",
+      "No puede confirmarse si los precios indexados siguen vigentes porque el dominio no resolvía."
+    ],
+    "inferences": [
+      "Diagnóstico y propuesta: Una revisión humana y propuesta posterior son probables, pero no se observan públicamente."
+    ],
+    "notObservable": [
+      "Estado operativo actual del negocio y del dominio.",
+      "Canales, cadencia, criterios de cualificación y entrega.",
+      "Porcentaje aplicable a contratos y base sobre la que se calcula.",
+      "SLA, contrato, cancelación y garantías.",
+      "CMS o framework",
+      "analítica",
+      "CRM",
+      "proveedor del formulario",
+      "herramientas de prospección",
+      "sistema de reporting",
+      "El sitio no estaba accesible y no se envió la solicitud; no se conoce confirmación, SLA, reunión ni propuesta posterior."
+    ],
+    "limitations": [
+      "El dominio oficial no resolvía DNS el 22 de agosto de 2026.",
+      "La evidencia procede de contenido oficial indexado públicamente, no de una sesión activa del sitio.",
+      "No se probó el configurador ni se envió información.",
+      "No se pudo detectar stack ni contrastar condiciones vigentes."
+    ],
+    "lessons": {
+      "copy": [
+        "Un configurador convierte una oferta compleja en decisiones pequeñas y concretas.",
+        "El precio visible puede reducir el miedo a iniciar una conversación."
+      ],
+      "adapt": [
+        "Pedir sectores objetivo antes de la reunión para llegar con una estimación de mercado.",
+        "Usar un estimador progresivo con resumen final de alcance, precio y supuestos."
+      ],
+      "avoid": [
+        "Publicar una tarifa de éxito sin porcentaje y base de cálculo.",
+        "Ofrecer una taxonomía tan amplia que el usuario no sepa qué elegir."
+      ],
+      "test": [
+        "Test: formulario breve frente a configurador de cuatro pasos.",
+        "Test: precio fijo frente a fijo más variable con simulación transparente."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://ssm.ge/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.ssm.ge/service",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "manual_only"
+}

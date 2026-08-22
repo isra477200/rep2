@@ -1,0 +1,572 @@
+{
+  "id": "coldcalling-sg",
+  "name": "ColdCalling.sg",
+  "reviewedAt": "2026-08-22T15:50:18.330Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Find the right AI calling solution.Built for Singapore.",
+    "heroObserved": true,
+    "priorSummary": "Marketplace/matching independiente de proveedores de voz IA en Singapur. No construye, opera ni revende calling; evalúa necesidad y deriva por defecto a un proveedor, hasta tres si el comprador lo elige.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 142 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1250 palabras por página comercial recuperada. Muestras breves: “Find the right AI calling solution.Built for Singapore.” · “Grants and funding for AI calling in Singapore” · “Get in touch”.",
+    "supportingHeadings": [
+      "Find the right AI calling solution.Built for Singapore.",
+      "Get matched in about 90 seconds",
+      "Why businesses are moving to AI calling",
+      "Consistent effort",
+      "Concurrency, not speed",
+      "Nothing gets skipped",
+      "Every call is recorded and summarised",
+      "Where it struggles",
+      "Compliance does not go away",
+      "Solutions by industry",
+      "One short assessment. One suitable recommendation.",
+      "Tell us what you need",
+      "We assess the requirement",
+      "Meet the right provider",
+      "Which type of solution do you actually need?",
+      "Before any AI makes a call for you",
+      "Screen the list first",
+      "A check lasts 21 days",
+      "Voice is treated differently",
+      "Calling hours are industry practice",
+      "Why \"20,000 calls a month\" is not the number that matters",
+      "Buyer guides",
+      "PDPA and the Do Not Call Registry",
+      "Is AI cold calling legal in Singapore?",
+      "How to choose an AI voice provider",
+      "What AI calling costs in Singapore",
+      "AI versus a human telemarketer",
+      "Grants and funding support",
+      "Common questions",
+      "Not sure which AI calling solution fits?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://coldcalling.sg/",
+      "text": "Contact",
+      "href": "https://coldcalling.sg/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "contact page",
+      "Start the form",
+      "Start free assessment",
+      "Back",
+      "Get my match"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://coldcalling.sg/",
+        "index": 1,
+        "action": "https://coldcalling.sg/lead.php",
+        "method": "POST",
+        "submitText": "Get my match",
+        "visibleFieldCount": 17,
+        "requiredFieldCount": 11,
+        "hiddenFieldCount": 11,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "use_case",
+            "label": "Outbound salesProspecting and cold calls",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "industry",
+            "label": "Industry",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "insurer",
+            "label": "Which company are you with? (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "calling_model",
+            "label": "Outbound onlyWe call them",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "monthly_workload_volume",
+            "label": "Roughly what volume do you handle each month?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "languages",
+            "label": "English",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "budget",
+            "label": "Estimated monthly budget",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "timeline",
+            "label": "When would you like to start?",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "decision_authority",
+            "label": "Your role in the decision",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "full_name",
+            "label": "Full name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company or agency (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "mobile",
+            "label": "Mobile",
+            "placeholder": "9123 4567",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "notes",
+            "label": "Anything else we should know? (optional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "distribution_preference",
+            "label": "Match me with the single best-fit provider Recommended. We assess your requirements",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": "I agree that ColdCalling.sg may use my details to assess this request",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "marketing_optin",
+            "label": "Optional. Send me occasional guides about AI voice solutions in Singapore. This",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 17 y 17 campos visibles, mínimo 11 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Industry, Which company are you with? (optional), Estimated monthly budget, Your role in the decision, Company or agency (optional).",
+      "friction": "Alta",
+      "minFields": 17,
+      "maxFields": 17,
+      "qualification": [
+        "Industry",
+        "Which company are you with? (optional)",
+        "Estimated monthly budget",
+        "Your role in the decision",
+        "Company or agency (optional)"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace/matching independiente de proveedores de voz IA en Singapur. No construye, opera ni revende calling; evalúa necesidad y deriva por defecto a un proveedor, hasta tres si el comprador lo elige.",
+    "audience": "Empresas/agentes de Singapur que compran AI cold calling, appointment setting, recepcionista, cualificación, follow-up o servicio; proveedores de esas soluciones que compran enquiries cualificadas.",
+    "prices": [
+      "Sanity check: a Singapore packaged offer advertising S$1,200 a month for a claimed 500 to 800 calls a day implies roughly S$0.15 per connected minute if you assume a 20% connect rate and 2.5 minute calls, neither of which is a sourced figure.",
+      "A second platform charges US$0.05 per minute plus the same components at cost, which lands in the same range and corroborates the first.",
+      "One states an all-in range of US$0.07 to US$0.31 per minute, made up of platform US$0.055, speech synthesis US$0.015 to US$0.040, language model US$0.003 to US$0.160, and telephony US$0.015, with optional add-ons such as knowledge base, denoising, guardrails and PII removal adding up to US$0.025.",
+      "Derivation of the per-minute bands Band USD per minute SGD per minute What that configuration means Lower endUS$0.070S$0.09Cheapest voice, cheapest model, you hold the platform account TypicalUS$0.156S$0.20Mid-range voice, a model capable of handling objections Upper endUS$0.312S$0.40Premium voice, str…"
+    ],
+    "guarantee": [],
+    "proof": [
+      "Written by the ColdCalling.sg editorial team Last reviewed: 4 August 2026 Next review due: February 2027 Related reading AI cold calling Finding the interest in the first place.",
+      "They are reviewed by ColdCalling.sg and passed to the provider or providers you chose."
+    ],
+    "objections": [
+      "This changes the questions we ask next, so we match you properly.",
+      "Data handlingWhere recordings live, how long they are kept, and who can access them.",
+      "PDPA and the Do Not Call Registry What businesses must check before calling, how long a check lasts, and what the exemptions really cover.",
+      "Read guide What AI calling costs in Singapore Pricing models explained, the drivers that actually move the bill, and the questions to ask before signing.",
+      "Read guide Common questions Is ColdCalling.sg free to use?",
+      "The questions we ask are different from the ones we ask an agency, because the requirements are different.",
+      "AI customer service Inbound The same twenty questions consume most of your support time.",
+      "Answer a few short questions and we will assess your requirement, then introduce a provider built for that use case rather than one selling a general platform."
+    ],
+    "urgency": [
+      "One states an all-in range of US$0.07 to US$0.31 per minute, made up of platform US$0.055, speech synthesis US$0.015 to US$0.040, language model US$0.003 to US$0.160, and telephony US$0.015, with optional add-ons such as knowledge base, denoising, guardrails and PII removal adding up to US$0.025.",
+      "Anything else we should know?",
+      "We ask for contact details only at the end, once we know enough to be useful.",
+      "Ask what you actually want to know: how many connected conversations, and at what cost each.",
+      "Four traps worth knowing about Paying before you apply PSG requires no payment or deposit to the supplier before submission.",
+      "Three things to know before you trust this These are platform rates, not retail prices."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Budget and timing Estimated monthly budget Please select Under S$1,000 S$1,000 to S$3,000 S$3,000 to S$5,000 S$5,000 to S$10,000 S$10,000 to S$20,000 More than S$20,000 Not sure yet Please choose a range, or select \"Not sure yet\".",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Penalties for breaching the Do Not Call provisions reach up to S$1 million for an organisation, or S$200,000 for an individual.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "One states an all-in range of US$0.07 to US$0.31 per minute, made up of platform US$0.055, speech synthesis US$0.015 to US$0.040, language model US$0.003 to US$0.160, and telephony US$0.015, with optional add-ons such as knowledge base, denoising, guardrails and PII removal adding up to US$0.025.",
+          "url": "https://coldcalling.sg/pricing/",
+          "pageTitle": "What AI Calling Costs in Singapore: 2026 Guide",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "A second platform charges US$0.05 per minute plus the same components at cost, which lands in the same range and corroborates the first.",
+          "url": "https://coldcalling.sg/pricing/",
+          "pageTitle": "What AI Calling Costs in Singapore: 2026 Guide",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Derivation of the per-minute bands Band USD per minute SGD per minute What that configuration means Lower endUS$0.070S$0.09Cheapest voice, cheapest model, you hold the platform account TypicalUS$0.156S$0.20Mid-range voice, a model capable of handling objections Upper endUS$0.312S$0.40Premium voice, str…",
+          "url": "https://coldcalling.sg/pricing/",
+          "pageTitle": "What AI Calling Costs in Singapore: 2026 Guide",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Sanity check: a Singapore packaged offer advertising S$1,200 a month for a claimed 500 to 800 calls a day implies roughly S$0.15 per connected minute if you assume a 20% connect rate and 2.5 minute calls, neither of which is a sourced figure.",
+          "url": "https://coldcalling.sg/pricing/",
+          "pageTitle": "What AI Calling Costs in Singapore: 2026 Guide",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "They are reviewed by ColdCalling.sg and passed to the provider or providers you chose.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Written by the ColdCalling.sg editorial team Last reviewed: 4 August 2026 Next review due: February 2027 Related reading AI cold calling Finding the interest in the first place.",
+          "url": "https://coldcalling.sg/ai-appointment-setting/",
+          "pageTitle": "AI Appointment Setting in Singapore: A Buyer's Guide",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "This changes the questions we ask next, so we match you properly.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Data handlingWhere recordings live, how long they are kept, and who can access them.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "PDPA and the Do Not Call Registry What businesses must check before calling, how long a check lasts, and what the exemptions really cover.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Read guide What AI calling costs in Singapore Pricing models explained, the drivers that actually move the bill, and the questions to ask before signing.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Read guide Common questions Is ColdCalling.sg free to use?",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "The questions we ask are different from the ones we ask an agency, because the requirements are different.",
+          "url": "https://coldcalling.sg/",
+          "pageTitle": "AI Calling and Telemarketing in Singapore | ColdCalling.sg",
+          "pageCategory": "other"
+        },
+        {
+          "text": "AI customer service Inbound The same twenty questions consume most of your support time.",
+          "url": "https://coldcalling.sg/solutions/",
+          "pageTitle": "AI Voice Solutions for Singapore Businesses",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Answer a few short questions and we will assess your requirement, then introduce a provider built for that use case rather than one selling a general platform.",
+          "url": "https://coldcalling.sg/solutions/",
+          "pageTitle": "AI Voice Solutions for Singapore Businesses",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "It establishes whether there is interest One or two leading questions, not an open-ended discovery conversation.",
+          "url": "https://coldcalling.sg/ai-appointment-setting/",
+          "pageTitle": "AI Appointment Setting in Singapore: A Buyer's Guide",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Common questions How is this different from AI cold calling?",
+          "url": "https://coldcalling.sg/ai-appointment-setting/",
+          "pageTitle": "AI Appointment Setting in Singapore: A Buyer's Guide",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "What if the prospect cancels?",
+          "url": "https://coldcalling.sg/ai-appointment-setting/",
+          "pageTitle": "AI Appointment Setting in Singapore: A Buyer's Guide",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://coldcalling.sg/",
+        "https://coldcalling.sg/ai-calling-grants-singapore/",
+        "https://coldcalling.sg/contact/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Find the right AI calling solution.Built for Singapore.",
+        "Grants and funding for AI calling in Singapore",
+        "Get in touch",
+        "What AI calling actually costs in Singapore"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Back",
+        "Get my match",
+        "Start free assessment",
+        "Contact",
+        "Start the form",
+        "contact page"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://coldcalling.sg/ · 17 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Caso de uso/industria → dirección de llamadas → volumen → idiomas → presupuesto/timing/rol → datos de contacto y consentimiento → revisión humana → match con 1 proveedor por"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://coldcalling.sg/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://coldcalling.sg/ai-calling-grants-singapore/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://coldcalling.sg/contact/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://coldcalling.sg/pricing/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://coldcalling.sg/solutions/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://coldcalling.sg/about/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://coldcalling.sg/ai-appointment-setting/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://coldcalling.sg/terms/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://coldcalling.sg/partner-with-us/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=coldcalling.sg",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&q=coldcalling.sg&search_type=keyword_unordered",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://coldcalling.sg/",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 17 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

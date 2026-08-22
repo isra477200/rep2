@@ -1,0 +1,338 @@
+{
+  "id": "callva",
+  "name": "Callva",
+  "reviewedAt": "2026-08-22T15:50:19.885Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "얼마나 아낄 수 있을까?",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, orientado a la acción. Usa 217 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 271 palabras por página comercial recuperada. Muestras breves: “요금부담 없이,필요한 기능만 담았습니다.” · “얼마나 아낄 수 있을까?” · “도입 문의 및 상담”.",
+    "supportingHeadings": [
+      "요금부담 없이,필요한 기능만 담았습니다.",
+      "기본에 넣지 않는 것들.필요할 때만 맞춥니다.",
+      "아웃바운드 전화",
+      "추가 동시 AI 처리",
+      "녹음본 추가 저장",
+      "고급 예약 연동",
+      "다지점 운영",
+      "맞춤 프롬프트 제작",
+      "외부 시스템 연동",
+      "엔터프라이즈 보안",
+      "AI가 처리한 시간을 10초 단위로",
+      "가격 전에확인할 것.",
+      "제품",
+      "업종별 안내",
+      "지원",
+      "법적 고지",
+      "얼마나 아낄 수 있을까?",
+      "하루에 전화가 몇 통 정도 오나요?",
+      "어떤 업종이든,전화 업무가 많다면",
+      "상담 중에 전화 오면 어떻게 하세요?",
+      "이런 고민 있으시죠?",
+      "Callva AI 솔루션",
+      "다른 업종도 가능합니다",
+      "다음 영업전화부터 AI가 받습니다",
+      "자주 묻는 질문",
+      "서비스 이용",
+      "기능 및 품질",
+      "플랜 및 요금",
+      "유의사항",
+      "여기에 없는 궁금한 점이 있으신가요?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "도입 문의",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://callva.ai/pricing",
+      "text": "도입 문의",
+      "href": "https://callva.ai/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143.75
+    },
+    "ctas": [
+      "도입 문의",
+      "상담 신청하기",
+      "Vox 공식 출처 2"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://callva.ai/contact",
+        "index": 1,
+        "action": "https://callva.ai/contact",
+        "method": "GET",
+        "submitText": "상담 신청하기",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "홍길동",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": null,
+            "placeholder": "010-1234-5678",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Callva Cafe",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "관심 있는 플랜이나 구체적인 상담 내용을 적어주세요.",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "AI 상담 전화를 받고 싶어요",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "개인정보 수집 및 이용에 동의합니다. (필수)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [
+      "이 페이지에서는 구매하거나 사용량을 결제하지 않습니다.AI 음성처리 사용료AI 음성처리 10초당 35원AI 음성처리·캠페인 운영·상담사 연결 지원을 포함하며, 처리 완료 건에는 별도 실행료가 없습니다.AI 캠페인 실행실행 1건당 총 10원무응답·실패·취소 건에 대한 AI 캠페인 실행·결과 분류 비용입니다.응답된 휴대전화 통화 시나리오VoxCallva이 시나리오의 차이AI 3분, 전환 없음776원630원Callva 18.8% 낮음AI 3분",
+      "셀프 세팅은 0원이고 선택형 턴키 서비스는 150,000원입니다.Pro59,000원/ 월셀프 세팅 0원선택형 턴키 150,000원 · 구독 결제에 자동 포함되지 않음월 AI 음성처리 300분AI 응대 1건당 최대 5분동시 AI 처리 3건1개월 녹음 보관 및 다운로드VIP 개별 관리 포함셀프 세팅 0원선택형 Callva 턴키 서비스 150,000원세팅 문의하기Business159…"
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "…간 잠들지 않는 콜바가 대표님의 비즈니스를 지켜드립니다.제품기능 소개도입 비용솔루션 비교활용 사례대시보드 바로가기 ↗업종별 안내카페/베이커리음식점/식당미용실/네일샵병원/의원헬스/피트니스전체 업종 보기 →지원무료 진단자주 묻는 질문도입 문의회사 소개서비스 상태법적 고지이용약관개인정보처리방침(주)스토리위버 | 대표: 박준영사업자등록번호: 677-86-03723 | 통신판매업신고번호: 2026-성남분당B-0093주소: 경기도 성남시 분당구 돌마로 52 605-18호연락처: 02-6677-8288 | 고객센터: info@callva.ai | 개인정보 관…",
+      "기능 소개활용 사례요금 안내회사 소개🇰🇷한국어얼마나 아낄 수 있을까?대시보드 로그인FAQ자주 묻는 질문Callva AI 도입을 위해 가장 많이 궁금해하시는 내용을 모았습니다.서비스 이용어떻게 시작하나요?콜바 앱을 설치하시면 착신전환 설정을 안내해드립니다."
+    ],
+    "urgency": [
+      "받자니 지금 상담이 끊기고, 안 받자니 중요한 건일 수도 있고."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "셀프 세팅은 0원이고 선택형 턴키 서비스는 150,000원입니다.Pro59,000원/ 월셀프 세팅 0원선택형 턴키 150,000원 · 구독 결제에 자동 포함되지 않음월 AI 음성처리 300분AI 응대 1건당 최대 5분동시 AI 처리 3건1개월 녹음 보관 및 다운로드VIP 개별 관리 포함셀프 세팅 0원선택형 Callva 턴키 서비스 150,000원세팅 문의하기Business159…",
+          "url": "https://callva.ai/pricing",
+          "pageTitle": "요금 | 월 59,000원부터 | Callva AI",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "이 페이지에서는 구매하거나 사용량을 결제하지 않습니다.AI 음성처리 사용료AI 음성처리 10초당 35원AI 음성처리·캠페인 운영·상담사 연결 지원을 포함하며, 처리 완료 건에는 별도 실행료가 없습니다.AI 캠페인 실행실행 1건당 총 10원무응답·실패·취소 건에 대한 AI 캠페인 실행·결과 분류 비용입니다.응답된 휴대전화 통화 시나리오VoxCallva이 시나리오의 차이AI 3분, 전환 없음776원630원Callva 18.8% 낮음AI 3분",
+          "url": "https://callva.ai/pricing",
+          "pageTitle": "요금 | 월 59,000원부터 | Callva AI",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "기능 소개활용 사례요금 안내회사 소개🇰🇷한국어얼마나 아낄 수 있을까?대시보드 로그인FAQ자주 묻는 질문Callva AI 도입을 위해 가장 많이 궁금해하시는 내용을 모았습니다.서비스 이용어떻게 시작하나요?콜바 앱을 설치하시면 착신전환 설정을 안내해드립니다.",
+          "url": "https://callva.ai/faq",
+          "pageTitle": "자주 묻는 질문 | 설치·요금·기능 안내 | Callva AI",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "…간 잠들지 않는 콜바가 대표님의 비즈니스를 지켜드립니다.제품기능 소개도입 비용솔루션 비교활용 사례대시보드 바로가기 ↗업종별 안내카페/베이커리음식점/식당미용실/네일샵병원/의원헬스/피트니스전체 업종 보기 →지원무료 진단자주 묻는 질문도입 문의회사 소개서비스 상태법적 고지이용약관개인정보처리방침(주)스토리위버 | 대표: 박준영사업자등록번호: 677-86-03723 | 통신판매업신고번호: 2026-성남분당B-0093주소: 경기도 성남시 분당구 돌마로 52 605-18호연락처: 02-6677-8288 | 고객센터: info@callva.ai | 개인정보 관…",
+          "url": "https://callva.ai/faq",
+          "pageTitle": "자주 묻는 질문 | 설치·요금·기능 안내 | Callva AI",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://callva.ai/pricing",
+        "https://callva.ai/consultation",
+        "https://callva.ai/use-cases"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "요금부담 없이,필요한 기능만 담았습니다.",
+        "얼마나 아낄 수 있을까?",
+        "도입 문의 및 상담"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Vox 공식 출처 2",
+        "도입 문의",
+        "상담 신청하기"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://callva.ai/contact · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://callva.ai/pricing",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://callva.ai/consultation",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://callva.ai/use-cases",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://callva.ai/faq",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://callva.ai/about",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://callva.ai/contact",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://callva.ai/cases",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “도입 문의”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

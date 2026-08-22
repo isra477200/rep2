@@ -1,0 +1,740 @@
+{
+  "id": "todobravo",
+  "name": "TodoBravo",
+  "reviewedAt": "2026-08-22T15:50:19.128Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Presupuesto Personalizado",
+    "heroObserved": true,
+    "priorSummary": "Gestión de Google Ads con cuota fija barata y sin permanencia. \"Cuota fija mensual, sin sorpresas ni costes adicionales\" · \"¡Tú decides el presupuesto!\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 187 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1070 palabras por página comercial recuperada. Muestras breves: “Precios Google Ads y campañas SEM” · “Presupuesto Personalizado” · “Contacta con TodoBravo: Agencia de Diseño Web”.",
+    "supportingHeadings": [
+      "Precios Google Ads y campañas SEM",
+      "Google ads precio​",
+      "Google Ads Agencia",
+      "Google Ads Agencia Pro",
+      "Google Ads Premier Partner",
+      "Google Ads Premier Partner Empresa",
+      "¡Haz crecer tu negocio con nuestro servicio profesional de SEM y Google Ads!",
+      "¿Por qué elegir TodoBravo para crear o posicionar tu web?",
+      "Diseño y Desarrollo web",
+      "Mantenimiento Web y Servicios",
+      "Confianza y Experiencia",
+      "Consultoría de Marketing",
+      "Calidad y Precios",
+      "Agencia Google Ads",
+      "Contacto",
+      "Nosotros",
+      "Servicios",
+      "Herramientas web",
+      "Presupuesto Personalizado",
+      "Una agencia de diseño web cerca de mí",
+      "Contacta con TodoBravo: Agencia de Diseño Web",
+      "¡Cuéntanos tu proyecto web!",
+      "We are a Web Design Agency in Madrid, Spain",
+      "Nous sommes une Agence Web à Madrid en Espagne",
+      "Términos y condiciones",
+      "CONDICIONES GENERALES DE VENTA",
+      "1. INTRODUCCIÓN",
+      "2. REALIZAR UN PEDIDO",
+      "3. INFORMACIÓN SOBRE LOS SERVICIOS DIGITALES",
+      "4. PRECIOS"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Presupuesto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.todobravo.es/tarifas/google-ads-sem/",
+      "text": "Presupuesto",
+      "href": "https://www.todobravo.es/presupuesto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 142.25
+    },
+    "ctas": [
+      "Pedir Auditoría SEO",
+      "Presupuesto",
+      "PRESUPUESTO SEM",
+      "Formulario de Contacto",
+      "formulario de contacto",
+      "Solicita tu Presupuesto SEO",
+      "Pedir Presupuesto Personalizado",
+      "Enviar",
+      "Español",
+      "contáctanos",
+      "Scroll to top",
+      "Cambiar a Français"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.todobravo.es/presupuesto/",
+        "index": 1,
+        "action": "https://www.todobravo.es/presupuesto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "product[]",
+            "label": "Diseño Web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-fullname",
+            "label": null,
+            "placeholder": "Nombre Apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "your-website",
+            "label": null,
+            "placeholder": "¿Tienes una web? Indícanos su dirección",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "¿Cómo podemos ayudarte? ¡Cuantos más detalles nos des, mejor!",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-acceptance",
+            "label": "He leído y acepto la Política de privacidad de TodoBravo. Este sitio",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.todobravo.es/contacto/",
+        "index": 1,
+        "action": "https://www.todobravo.es/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "product[]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-fullname",
+            "label": null,
+            "placeholder": "Nombre Apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "your-website",
+            "label": null,
+            "placeholder": "¿Tienes una web? Indícanos su dirección",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "¿Cómo podemos ayudarte?",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-acceptance",
+            "label": "He leído y acepto la Política de privacidad de TodoBravo. Este sitio",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.todobravo.es/posicionamiento-web/auditoria-seo/",
+        "index": 1,
+        "action": "https://www.todobravo.es/posicionamiento-web/auditoria-seo/",
+        "method": "POST",
+        "submitText": "Pedir Auditoría SEO",
+        "visibleFieldCount": 12,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-fullname",
+            "label": null,
+            "placeholder": "Nombre Apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-dni",
+            "label": null,
+            "placeholder": "DNI/Pasaporte*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "your-website",
+            "label": null,
+            "placeholder": "Dirección de tu página web *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-company",
+            "label": null,
+            "placeholder": "Nombre de la empresa*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-nif",
+            "label": null,
+            "placeholder": "NIF*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-address",
+            "label": null,
+            "placeholder": "Dirección/Calle*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-postcode",
+            "label": null,
+            "placeholder": "Código postal*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-city",
+            "label": null,
+            "placeholder": "Ciudad*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Comentarios",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-acceptance",
+            "label": "He leído y acepto la Política de privacidad y las Condiciones generales",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.todobravo.es/presupuesto/pedido-google-ads-sem/?product=google_ads_eco",
+        "index": 1,
+        "action": "https://www.todobravo.es/presupuesto/pedido-google-ads-sem/?product=google_ads_eco",
+        "method": "POST",
+        "submitText": "Pedir Presupuesto Personalizado",
+        "visibleFieldCount": 13,
+        "requiredFieldCount": 11,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "product",
+            "label": null,
+            "placeholder": "Servicio contratado*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-fullname",
+            "label": null,
+            "placeholder": "Nombre Apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-dni",
+            "label": null,
+            "placeholder": "DNI/Pasaporte*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-phone",
+            "label": null,
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "your-website",
+            "label": null,
+            "placeholder": "Dirección de tu página web *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-company",
+            "label": null,
+            "placeholder": "Nombre de la empresa*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-nif",
+            "label": null,
+            "placeholder": "NIF*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-address",
+            "label": null,
+            "placeholder": "Dirección/Calle*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-postcode",
+            "label": null,
+            "placeholder": "Código postal*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-city",
+            "label": null,
+            "placeholder": "Ciudad*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Comentarios",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-acceptance",
+            "label": "He leído y acepto la Política de privacidad y las Condiciones generales",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 7 y 13 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Diseño Web, your-website, your-company, your-city.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 13,
+      "qualification": [
+        "Diseño Web",
+        "your-website",
+        "your-company",
+        "your-city"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Gestión de Google Ads con cuota fija barata y sin permanencia. \"Cuota fija mensual, sin sorpresas ni costes adicionales\" · \"¡Tú decides el presupuesto!\".",
+    "audience": "Pymes y autónomos, Madrid y Barcelona con cobertura nacional. Sin vertical. Oficina en Calle de Guzmán El Bueno 28, Chamberí, Madrid. Fundada en París, trasladada a Madrid en 2012.",
+    "prices": [
+      "Alta 199 €99 €/mesPago trimestral en una cuota.",
+      "Alta 299 €149 €/mesPago semestral en 3 cuotas.",
+      "Google Ads AgenciaComo agencia de Google Ads, gestionamos tus campañas SEM al mejor precio Google Ads, con un plan básico desde solo 99€ al mes, para que obtengas resultados profesionales sin gastar de más.",
+      "Presupuesto en Google Ads: Inferior a 99€/mes (facturado directamente por Google).",
+      "PRESUPUESTO SEMGoogle Ads Agencia ProPlan Google Ads Pro: TodoBravo lleva tus campañas SEM al máximo por solo 149€/mes."
+    ],
+    "guarantee": [
+      "Consulta nuestros precios de Google Ads y campañas SEM y descubre una solución adaptada a tu presupuesto, con la garantía de contar con un equipo de expertos certificados en Google Ads.",
+      "Muchas veces, los planes de SEO que parecen prometer resultados rápidos no cumplen con las expectativas y ofrecen pocas garantías visibles."
+    ],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Redacción profesional de anuncios, con revisiones ilimitadas.",
+      "Redacción de anuncios publicitarios por consultor google ads con revisiones ilimitadas hasta alcanzar el mensaje perfecto.",
+      "Servicio de redacción de anuncios por consultor SEM, con revisiones ilimitadas para lograr el máximo impacto.",
+      "Solicita tu presupuesto personalizado hoy."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Google Ads AgenciaComo agencia de Google Ads, gestionamos tus campañas SEM al mejor precio Google Ads, con un plan básico desde solo 99€ al mes, para que obtengas resultados profesionales sin gastar de más.",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Alta 199 €99 €/mesPago trimestral en una cuota.",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Presupuesto en Google Ads: Inferior a 99€/mes (facturado directamente por Google).",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "PRESUPUESTO SEMGoogle Ads Agencia ProPlan Google Ads Pro: TodoBravo lleva tus campañas SEM al máximo por solo 149€/mes.",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Alta 299 €149 €/mesPago semestral en 3 cuotas.",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Tu Agencia Google Ads en Madrid Inversión en Google Ads: Desde 100€/mes hasta 500€/mes (Facturación realizada por Google).",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Consulta nuestros precios de Google Ads y campañas SEM y descubre una solución adaptada a tu presupuesto, con la garantía de contar con un equipo de expertos certificados en Google Ads.",
+          "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+          "pageTitle": "Precios Google Ads y campañas SEM | TodoBravo Agencia Google Ads",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Garantías 11.",
+          "url": "https://www.todobravo.es/terminos-y-condiciones/",
+          "pageTitle": "Términos y condiciones | TodoBravo Agencia Diseño Web y Marketing Digital",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Muchas veces, los planes de SEO que parecen prometer resultados rápidos no cumplen con las expectativas y ofrecen pocas garantías visibles.",
+          "url": "https://www.todobravo.es/posicionamiento-web/auditoria-seo/",
+          "pageTitle": "Auditoría SEO Experta | TodoBravo Agencia SEO, +20 años *N°1*",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "GARANTÍAS No se aplican garantías a los servicios digitales en todobravo.es 11.",
+          "url": "https://www.todobravo.es/terminos-y-condiciones/",
+          "pageTitle": "Términos y condiciones | TodoBravo Agencia Diseño Web y Marketing Digital",
+          "pageCategory": "conversion",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.todobravo.es/tarifas/google-ads-sem/",
+        "https://www.todobravo.es/presupuesto/",
+        "https://www.todobravo.es/contacto/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Precios Google Ads y campañas SEM",
+        "Presupuesto Personalizado",
+        "Contacta con TodoBravo: Agencia de Diseño Web",
+        "Términos y condiciones"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Presupuesto",
+        "PRESUPUESTO SEM",
+        "Formulario de Contacto",
+        "Enviar",
+        "Español",
+        "Cambiar a Français",
+        "Scroll to top",
+        "formulario de contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.todobravo.es/presupuesto/ · 7 campos",
+        "https://www.todobravo.es/contacto/ · 7 campos",
+        "https://www.todobravo.es/posicionamiento-web/auditoria-seo/ · 12 campos",
+        "https://www.todobravo.es/presupuesto/pedido-google-ads-sem/?product=google_ads_eco · 13 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada SEO/transaccional por página de tarifas Google Ads → elección entre plan Agencia, Pro, Premier Partner o Empresa según inversión publicitaria → CTA «PRESUPUESTO SEM» / propuesta gratuita"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.todobravo.es/tarifas/google-ads-sem/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.todobravo.es/presupuesto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.todobravo.es/contacto/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.todobravo.es/terminos-y-condiciones/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.todobravo.es/posicionamiento-web/auditoria-seo/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.todobravo.es/presupuesto/pedido-google-ads-sem/?product=google_ads_eco",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.todobravo.es/presupuesto/pedido-google-ads-sem/?product=google_ads_pro",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.todobravo.es/tarifas/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://todobravo.com/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://web.archive.org/cdx/search/cdx?url=todobravo.com",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Presupuesto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

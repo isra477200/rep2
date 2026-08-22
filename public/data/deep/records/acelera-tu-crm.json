@@ -1,0 +1,527 @@
+{
+  "id": "acelera-tu-crm",
+  "name": "Acelera tu CRM",
+  "reviewedAt": "2026-08-22T15:50:17.429Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Deja de conseguir leads.Adquiere clientes.",
+    "heroObserved": true,
+    "priorSummary": "Agencia multi-nicho de captación conectada al CRM: separa funnels, filtra intención/presupuesto, integra Meta/Google/LinkedIn con CAPI/Enhanced Conversions y optimiza hasta contrato/venta y comisión, no solo formulario.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 459 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2442 palabras por página comercial recuperada. Muestras breves: “Marketing para agencias inmobiliarias y API.Duplica las ventas cerradas al mes” · “Hablemos. Sin compromiso, sin humo.” · “Te aceleramos tu CRMllenándotelo de clientes reales, no de leads basura”.",
+    "supportingHeadings": [
+      "Marketing para agencias inmobiliarias y API.Duplica las ventas cerradas al mes",
+      "Te decimos exactamente qué hacer para duplicar contratos firmados y ventas cerradas que vienen de campañas",
+      "Pistas claras de que tu captación inmobiliaria está rota",
+      "Lo que pasa cuando las campañas dejan de optimizar a curiosos",
+      "Sector reformas residenciales, captación local cualificada — el método aplica idéntico a una agencia inmobiliaria",
+      "Servicio profesional consultivo con ticket alto — el mismo perfil decisor que el de un propietario vendedor o comprador premium",
+      "Una agencia genérica vs una que entiende el sector inmobiliario",
+      "3 funnels paralelos: oferta, demanda e inversores",
+      "Captación propietarios (oferta)",
+      "Captación compradores (demanda)",
+      "Captación inversores (B2B + premium)",
+      "Cómo montamos el sistema de captación inmobiliaria en 4 pasos",
+      "Reunión de auditoría de tu captación actual y proceso comercial inmobiliario",
+      "Doble funnel separado — captación oferta (propietarios) + captación demanda (compradores)",
+      "Tercer funnel B2B inversores cuando aplica — LinkedIn + Google Ads",
+      "Conversions API + dashboard CAC por funnel (propietario / comprador / inversor)",
+      "Cuánto cuesta nuestra gestión para tu agencia inmobiliaria",
+      "¿Quieres saber exactamente qué hacer para duplicar contratos firmados y ventas cerradas?",
+      "Preguntas frecuentes sobre marketing para agencias inmobiliarias",
+      "¿Os integráis con CRMs inmobiliarios como Inmovilla, Idealista PRO, Witei o Fotocasa Pro?",
+      "¿Idealista y Fotocasa o captación directa por Meta y Google? ¿Qué funciona mejor?",
+      "¿Cómo captamos exclusivas y no colaboraciones a 50/50 con otras agencias?",
+      "¿Cómo gestionamos los portales + nuestras campañas sin duplicar anuncios?",
+      "¿Cómo atribuimos una operación cerrada cuando el comprador entró por Idealista pero hizo visita después de ver un anuncio de Meta?",
+      "¿Funciona la captación B2B de inversores inmobiliarios? Es distinta de la captación de compradores particulares.",
+      "Captación local vs zona ampliada — ¿cuándo conviene cada una?",
+      "Tenemos 6-12 agentes — ¿cómo asignamos los leads de campañas para que no se peleen ni se pierdan?",
+      "¿Cuánto tardáis en poner el sistema en marcha y cuándo veo contratos de exclusiva o ventas cerradas?",
+      "¿No eres agencia inmobiliaria? Trabajamos otros sectores",
+      "Contacto"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar auditoría",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://aceleratucrm.com/aceleramos-tu-crm",
+      "text": "Solicitar auditoría",
+      "href": "https://aceleratucrm.com/contacto?cta=auditoria-gratuita",
+      "element": "a",
+      "kind": "conversion",
+      "score": 240.25
+    },
+    "ctas": [
+      "Solicitar auditoría",
+      "Solicitar auditoría gratuita",
+      "Auditar mi marketing gratis",
+      "Auditar mi captación B2B gratis",
+      "Auditar mi captación inmobiliaria gratis",
+      "Reservar mi reunión Madrid",
+      "Auditoría gratuita de tu publicidad",
+      "Quiero mi hora gratis",
+      "Enviar mensaje",
+      "Acelera mi CRM",
+      "Cuéntanos qué CRM usas →",
+      "Hablamos con un especialista B2B",
+      "Hablamos con un especialista en inmobiliaria"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://aceleratucrm.com/contacto",
+        "index": 1,
+        "action": "https://aceleratucrm.com/contacto",
+        "method": "GET",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre y apellidos *",
+            "placeholder": "Pablo Rodríguez",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "pablo@tuempresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "urlWeb",
+            "label": "Web de la empresa",
+            "placeholder": "tuempresa.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "facturacionMensual",
+            "label": "Facturación mensual *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "inversionMensual",
+            "label": "¿Cuánto puedes invertir en publicidad al mes? *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "usaCrm",
+            "label": "¿Tienes CRM? ¿Cuál?",
+            "placeholder": "Zoho, HubSpot, no tengo...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "hasSalesTeam",
+            "label": "¿Tienes equipo de ventas?",
+            "placeholder": "Sí, 3 personas / No / Solo yo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "frustration",
+            "label": "¿Cuál es tu mayor frustración con el marketing ahora mismo?",
+            "placeholder": "No sé qué campañas me generan clientes reales...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 9 y 9 campos visibles, mínimo 5 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Web de la empresa, Facturación mensual *, ¿Tienes equipo de ventas?.",
+      "friction": "Alta",
+      "minFields": 9,
+      "maxFields": 9,
+      "qualification": [
+        "Web de la empresa",
+        "Facturación mensual *",
+        "¿Tienes equipo de ventas?"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Meta Pixel",
+      "Microsoft Clarity"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia multi-nicho de captación conectada al CRM: separa funnels, filtra intención/presupuesto, integra Meta/Google/LinkedIn con CAPI/Enhanced Conversions y optimiza hasta contrato/venta y comisión, no solo formulario.",
+    "audience": "Pymes de ticket consultivo; ficha específica para agencias inmobiliarias/API que captan propietarios vendedores, compradores e inversores. También trabaja reformas, B2B, legal y otros sectores.",
+    "prices": [
+      "En la práctica: el CAC baja, el ROAS real sube, y tu equipo comercial deja de perder tiempo con leads inútiles.¿Cuánto cuesta una agencia CRM en Madrid?Nuestros precios: desde 780 €/mes por un canal (Google Ads o Meta Ads) con CRM conectado.",
+      "El bundle Google + Meta con analítica completa sale desde 2.800 €/mes —es lo que más vendemos porque las dos plataformas juntas multiplican el resultado."
+    ],
+    "guarantee": [],
+    "proof": [
+      "Sistema que llenó el e-commerce de clientes con ventas reales medidas en CRM, no solo tráfico.+120%Ventas/mes5.8×ROASVisitar webVinos / E-commerceAMB VinosE-commerce de vinos y destilados.",
+      "Sistema que llenó la tienda de clientes recurrentes con compras reales, no carritos abandonados.+95%Ventas/mes6.4×ROASVisitar webMascotas / AlimentaciónLobo AzulPiensos premium para perros y gatos.",
+      "Cuanto antes empieces, antes llenarás tu empresa de clientes reales.Quiero aplicar este sistema en mi empresaAcelera tu CRMConectamos Google Ads y Meta Ads con tu CRM para optimizar a ventas reales, no leads.",
+      "Acelera tu CRMServiciosClientesIntegracionesBlogReservar reunión1 hora contigo · Gratis · Sin permanenciaMarketing B2B para servicios profesionales con ciclo de venta largo.Duplica las cuentas firmadas al mesTu…",
+      "…io consulta → cliente firmadoBase 100×1,8Tiempo medio de cierreBase 100-28%Visitar la web de CC LawyersMira el resto de clientes con CRM conectado¿Quieres saber exactamente qué cambiar en tu sistema B2B para multiplicar cuentas firmadas?",
+      "Es lo que aplicamos en clientes B2B con ciclos de 2-12 meses."
+    ],
+    "objections": [
+      "Cero permanencia tras los 3 meses iniciales.",
+      "Acelera tu CRMServiciosClientesIntegracionesBlogReservar reunión1 hora contigo · Gratis · Sin permanenciaMarketing B2B para servicios profesionales con ciclo de venta largo.Duplica las cuentas firmadas al mesTu empresa B2B (consultoría, software, servicios profesionales) ya invierte e…",
+      "Sin compromiso, sin coste, sin letra pequeña.Auditar mi captación B2B gratisAntes mira cómo funciona AceleraPreguntas frecuentes sobre marketing B2B y servicios profesionalesLo que nos preguntan directores de marketing y CEOs de empresas B2B con ciclos de venta de 2-12 meses y CRM activo pero sin atribución…",
+      "No hay diferencia de precio entre presencial y remoto.¿Qué es un CRM comercial y por qué importa para la publicidad?Un CRM comercial es el sistema donde tu equipo de ventas registra qué pasa con cada lead: si responde, si se cualifica, si llega a propuesta",
+      "En una hora sabemos las dos cosas.Cuéntanos qué CRM usas →Preguntas frecuentes: agencia y empresa de CRM¿Qué es una agencia de CRM y cómo funciona?Una agencia de CRM conecta tus campañas de publicidad (Google Ads, Meta Ads) con tu CRM (HubSpot, Zoho, Salesforce, Pipedrive…) para",
+      "Conectamos tu CRM con Meta y Google por etapa del pipeline para que aprendan de SQLs y cuentas firmadas, no de MQLs basura.Hablamos con un especialista B2BAuditar mi captación B2B gratis1 hora contigo · Gratis · Sin permanenciaTe decimos exactamente qué hacer para multiplicar por"
+    ],
+    "urgency": [
+      "Pasé los últimos 4 años montando el sistema propio que ahora aplicamos en todos los clientes de la agencia.LinkedIn de Pablo→Preguntas frecuentesLo que nos preguntan empresarios que ya hacen ads pero sienten que la publicidad \"es como una c…",
+      "Es lo opuesto a 'CPL: 80 €' — que en B2B largo no significa nada.¿Integráis con HubSpot Sales Hub, Salesforce o Pipedrive?+Los tres son los CRMs B2B más comunes y los conectamos a Meta Conversions API + Google Enhanced Conversions for Leads vía Webhooks/Workflows nativos.",
+      "Compatible con Zoho, HubSpot, Salesforce integrado con Ringover, Aircall o cualquier CRM con registro de llamadas.Resultado para tu equipo comercialEn 6–8 semanas: más llamadas que merece la pena hacer, menos tiempo de comerciales en leads que no van a comprar nunca.",
+      "¿Cuál?¿Tienes equipo de ventas?¿Cuál es tu mayor frustración con el marketing ahora mismo?Enviar mensajeSolo trabajamos con empresas que invierten en publicidad y tienen proceso de ventas.",
+      "Ahora invertimos donde sabemos que vuelve.”Visitar la web de TenofransaEmpresas distintas.",
+      "Hoy les estás diciendo 'tráeme cualquiera que rellene un formulario'."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "En la práctica: el CAC baja, el ROAS real sube, y tu equipo comercial deja de perder tiempo con leads inútiles.¿Cuánto cuesta una agencia CRM en Madrid?Nuestros precios: desde 780 €/mes por un canal (Google Ads o Meta Ads) con CRM conectado.",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "El bundle Google + Meta con analítica completa sale desde 2.800 €/mes —es lo que más vendemos porque las dos plataformas juntas multiplican el resultado.",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Acelera tu CRMServiciosClientesIntegracionesBlogReservar reuniónCasos de éxitoResultados realesmedidos en ventasClientes que han implementado el sistema ACELERA y han pasado de generar leads a llenar su CRM de ventas reales y medibles.+25Clientes activos+15Sectores distintos×7.4ROAS medioSector:TodosCasos reales (medidos desde el CRM)Aquí no medimos leads.",
+          "url": "https://aceleratucrm.com/clientes",
+          "pageTitle": "Casos de éxito con ROI medido en el CRM — Acelera tu CRM",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Sistema que llenó el e-commerce de clientes con ventas reales medidas en CRM, no solo tráfico.+120%Ventas/mes5.8×ROASVisitar webVinos / E-commerceAMB VinosE-commerce de vinos y destilados.",
+          "url": "https://aceleratucrm.com/clientes",
+          "pageTitle": "Casos de éxito con ROI medido en el CRM — Acelera tu CRM",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Sistema que llenó la tienda de clientes recurrentes con compras reales, no carritos abandonados.+95%Ventas/mes6.4×ROASVisitar webMascotas / AlimentaciónLobo AzulPiensos premium para perros y gatos.",
+          "url": "https://aceleratucrm.com/clientes",
+          "pageTitle": "Casos de éxito con ROI medido en el CRM — Acelera tu CRM",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Sistema que conecta campañas con presupuestos aceptados, eliminando leads sin intención real de reforma.+75%Proyectos cerrados-45%CACTu negocio podría ser el siguienteImplementa ACELERA y llenatu negocio de clientes realesSi has visto nuestros casos, sabes que este sistema es lo que te hace falta.",
+          "url": "https://aceleratucrm.com/clientes",
+          "pageTitle": "Casos de éxito con ROI medido en el CRM — Acelera tu CRM",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Cuanto antes empieces, antes llenarás tu empresa de clientes reales.Quiero aplicar este sistema en mi empresaAcelera tu CRMConectamos Google Ads y Meta Ads con tu CRM para optimizar a ventas reales, no leads.",
+          "url": "https://aceleratucrm.com/clientes",
+          "pageTitle": "Casos de éxito con ROI medido en el CRM — Acelera tu CRM",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Acelera tu CRMServiciosClientesIntegracionesBlogReservar reunión1 hora contigo · Gratis · Sin permanenciaMarketing B2B para servicios profesionales con ciclo de venta largo.Duplica las cuentas firmadas al mesTu…",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…io consulta → cliente firmadoBase 100×1,8Tiempo medio de cierreBase 100-28%Visitar la web de CC LawyersMira el resto de clientes con CRM conectado¿Quieres saber exactamente qué cambiar en tu sistema B2B para multiplicar cuentas firmadas?",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Es lo que aplicamos en clientes B2B con ciclos de 2-12 meses.",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Eso te permite optimizar publicidad no contra el primer ticket sino contra el LTV proyectado — y ahí los números de inversión publicitaria suelen multiplicarse, porque captar un cliente B2B de calidad rentabiliza 10x.¿Cuánto se tarda en ver los primeros resultados en B2B?+Honestidad: más que",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Acelera tu CRMServiciosClientesIntegracionesBlogReservar reuniónBig Data & AI para VentasDeja de conseguir leads.Adquiere clientes.Conectamos tu CRM con Google Ads y Meta Ads para que el algoritmo aprenda de tus clientes reales.",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin proceso automatizado, sin seguimiento real.crm_health_check.sh•OfflineLeadsDead DataTu agencia optimiza campañas, no resultadosTe enseña métricas de plataforma, lo que pasa después no lo mide nadiepipeline_trace.log&check;Lead received (ID: 8942)&check;Contacted via CRMConnection lost.",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "….MARKETING“El algoritmo busca personas que rellenan formularios.”Leads baratosLeads rápidos“Tu CRM se llena… pero no de clientes.”VENTAS“Tu equipo recibe esos leads y se encuentra con dos problemas:”Pierde tiempo filtrando contactos que no van a comprarNo tiene datos para mejorar el proceso“Nadie sabe dónde…",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Si tiene API, lo conectamos.Implementamos un sistema completo: del anuncio a la ventaConectamos tus campañas con tu proceso comercial en un único sistema que genera clientes, no leads.Campañas optimizadas a ventas realesTus campañas no buscan leads — buscan clientes.",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Acelera tu CRMServiciosClientesIntegracionesBlogReservar reunión1 hora contigo · Gratis · Sin permanenciaMarketing B2B para servicios profesionales con ciclo de venta largo.Duplica las cuentas firmadas al mesTu empresa B2B (consultoría, software, servicios profesionales) ya invierte e…",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Conectamos tu CRM con Meta y Google por etapa del pipeline para que aprendan de SQLs y cuentas firmadas, no de MQLs basura.Hablamos con un especialista B2BAuditar mi captación B2B gratis1 hora contigo · Gratis · Sin permanenciaTe decimos exactamente qué hacer para multiplicar por",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin compromiso, sin coste, sin letra pequeña.Auditar mi captación B2B gratisAntes mira cómo funciona AceleraPreguntas frecuentes sobre marketing B2B y servicios profesionalesLo que nos preguntan directores de marketing y CEOs de empresas B2B con ciclos de venta de 2-12 meses y CRM activo pero sin atribución…",
+          "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+          "pageTitle": "Marketing B2B + Servicios Profesionales — Acelera tu CRM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "En una hora sabemos las dos cosas.Cuéntanos qué CRM usas →Preguntas frecuentes: agencia y empresa de CRM¿Qué es una agencia de CRM y cómo funciona?Una agencia de CRM conecta tus campañas de publicidad (Google Ads, Meta Ads) con tu CRM (HubSpot, Zoho, Salesforce, Pipedrive…) para",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cero permanencia tras los 3 meses iniciales.",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No hay diferencia de precio entre presencial y remoto.¿Qué es un CRM comercial y por qué importa para la publicidad?Un CRM comercial es el sistema donde tu equipo de ventas registra qué pasa con cada lead: si responde, si se cualifica, si llega a propuesta",
+          "url": "https://aceleratucrm.com/",
+          "pageTitle": "Agencia CRM y publicidad conectada — Madrid | Acelera tu CRM",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://aceleratucrm.com/marketing-agencias-inmobiliarias",
+        "https://aceleratucrm.com/contacto",
+        "https://aceleratucrm.com/clientes"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing para agencias inmobiliarias y API.Duplica las ventas cerradas al mes",
+        "Hablemos. Sin compromiso, sin humo.",
+        "Te aceleramos tu CRMllenándotelo de clientes reales, no de leads basura",
+        "Marketing B2B para servicios profesionales con ciclo de venta largo.Duplica las cuentas firmadas al mes"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Hablamos con un especialista en inmobiliaria",
+        "Auditar mi captación inmobiliaria gratis",
+        "Quiero mi hora gratis",
+        "Enviar mensaje",
+        "Acelera mi CRM",
+        "Auditoría gratuita de tu publicidad",
+        "Solicitar auditoría",
+        "Solicitar auditoría gratuita"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://aceleratucrm.com/contacto · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) Auditoría gratuita de una hora revisa anuncios, creatividades, formularios, CRM, portales y proceso comercial. 2) Diseña funnels separados para propietarios, compradores e inversores, con canal, mensaje, filtro"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://aceleratucrm.com/marketing-agencias-inmobiliarias",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://aceleratucrm.com/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://aceleratucrm.com/clientes",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://aceleratucrm.com/aceleramos-tu-crm",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://aceleratucrm.com/marketing-b2b-servicios",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://aceleratucrm.com/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://aceleratucrm.com/agencia-marketing-digital-madrid",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://aceleratucrm.com/auditoria-gratuita-agencia-actual",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://aceleratucrm.com/aviso-legal",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=aceleratucrm.com",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar auditoría”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 9 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Meta Pixel, Microsoft Clarity) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

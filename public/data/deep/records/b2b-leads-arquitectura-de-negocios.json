@@ -1,0 +1,654 @@
+{
+  "id": "b2b-leads-arquitectura-de-negocios",
+  "name": "B2B Leads / Arquitectura de Negocios",
+  "reviewedAt": "2026-08-22T15:50:17.317Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Conoce nuestro Portafolio de Servicios",
+    "heroObserved": true,
+    "priorSummary": "Citas con decisores mediante CRM, speech y checklist.",
+    "voice": "Revisión manual: formalidad, diagnóstico, autoridad, aversión al caos, promesa de control. citas reales tomadores de decisión telemarketing corporativo retorno garantizado metodología japonesa",
+    "supportingHeadings": [
+      "Generación de Leads",
+      "Descubre y construye una red de negocios a largo plazo.",
+      "Beneficios al contratar",
+      "Incremento de Cartera de Clientes",
+      "Información Centralizada",
+      "Pipeline Independiente",
+      "Identificación de Closers",
+      "Participación y Conocimiento",
+      "Diferenciales",
+      "Reducción de Gastos Fijos",
+      "Especialización y Eficiencia",
+      "Segmentación Estratégica",
+      "Guía de diagnóstico",
+      "Bajo nivel de ventas",
+      "Nulo crecimiento",
+      "Desconocimiento de procesos",
+      "Desmotivación",
+      "Coerción",
+      "Informalidad",
+      "Robo y fuga",
+      "Desconocimiento de oportunidades",
+      "Sin acertividad",
+      "Valor Agregado",
+      "ROI Garantizado",
+      "Speech & Checklist",
+      "Leads",
+      "Seguimiento",
+      "CRM",
+      "Apoyo en Tiempo Real",
+      "Accede a nuestra red de conexión empresarial."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Conoce Contact Center",
+    "primaryCtaEvidence": {
+      "pageUrl": "http://b2b-leads.com.mx/conexion-empresarial-en-mexico/",
+      "text": "Conoce Contact Center",
+      "href": "http://b2b-leads.com.mx/contact-center-mexico/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 219.75
+    },
+    "ctas": [
+      "callContacto",
+      "Contacta vía WhatsApp",
+      "Contacto rápido",
+      "Conoce Contact Center",
+      "Descarga PDF",
+      "Enviar",
+      "Entrar",
+      "Back to top",
+      "trending_flatBeneficios al contratar"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+        "index": 2,
+        "action": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Su nombre (requerido)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Correo de contacto (requerido)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel-493",
+            "label": "Número de contacto",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": "Asunto",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "¿Alguna duda en particular?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+        "index": 3,
+        "action": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre (requerido)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Email (requerido)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": "Asunto",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Citas con decisores mediante CRM, speech y checklist.",
+    "audience": "Corporativo e industrial en México, Centroamérica y Sudamérica.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Contacta con un asesor experto: +01 (442) 186 1080LinkedInMenúInicio Red B2B Empresa Conoce B2B Leads Nuestro Equipo Testimonios Servicios Generación de Leads en México Consultoría Internacional Entrenamientos Ejecutivos Voz del cliente Head Hunting en México Contact Center Blog callContacto Testimonios de…",
+      "Contacta con un asesor experto: +01 (442) 186 1080LinkedInMenúInicio Red B2B Empresa Conoce B2B Leads Nuestro Equipo Testimonios Servicios Generación de Leads en México Consultoría Internacional Entrenamientos Ejecutivos Voz del cliente Head Hunting en México Contact Center Blog callContacto Conoce nuestro…",
+      "JimenoDirección ComercialEstudio de satisfacción del cliente, apoyo en la identificación y contacto de clientes potenciales, formalizando citas que terminaron en excelentes resultados para la empresa no solo en territorio nacional, sino también en Sudamérica, entre otros.A."
+    ],
+    "objections": [],
+    "urgency": [
+      "107 citas con tomadores de decisión, 62 prospectos calificados, 10 programas de entrenamiento vendidos (hasta ahora)...J.E."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Contacta con un asesor experto: +01 (442) 186 1080LinkedInMenúInicio Red B2B Empresa Conoce B2B Leads Nuestro Equipo Testimonios Servicios Generación de Leads en México Consultoría Internacional Entrenamientos Ejecutivos Voz del cliente Head Hunting en México Contact Center Blog callContacto Testimonios de…",
+          "url": "https://b2b-leads.com.mx/testimonios-de-nuestros-clientes/",
+          "pageTitle": "Testimonios de nuestros Clientes – B2B Leads | Arquitectura de Negocios",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "JimenoDirección ComercialEstudio de satisfacción del cliente, apoyo en la identificación y contacto de clientes potenciales, formalizando citas que terminaron en excelentes resultados para la empresa no solo en territorio nacional, sino también en Sudamérica, entre otros.A.",
+          "url": "https://b2b-leads.com.mx/testimonios-de-nuestros-clientes/",
+          "pageTitle": "Testimonios de nuestros Clientes – B2B Leads | Arquitectura de Negocios",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Contacta con un asesor experto: +01 (442) 186 1080LinkedInMenúInicio Red B2B Empresa Conoce B2B Leads Nuestro Equipo Testimonios Servicios Generación de Leads en México Consultoría Internacional Entrenamientos Ejecutivos Voz del cliente Head Hunting en México Contact Center Blog callContacto Conoce nuestro…",
+          "url": "https://b2b-leads.com.mx/servicios/",
+          "pageTitle": "Servicios – B2B Leads | Arquitectura de Negocios",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+        "https://b2b-leads.com.mx/consultoria-internacional/",
+        "https://b2b-leads.com.mx/testimonios-de-nuestros-clientes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Generación de Leads",
+        "División Consultoría",
+        "Conoce nuestro Portafolio de Servicios",
+        "División Contact Center"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "callContacto",
+        "Contacto rápido",
+        "Enviar",
+        "Descarga PDF",
+        "Entrar",
+        "Conoce Contact Center",
+        "trending_flatBeneficios al contratar",
+        "Back to top"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://b2b-leads.com.mx/generacion-de-leads-mexico/ · 5 campos",
+        "https://b2b-leads.com.mx/generacion-de-leads-mexico/ · 4 campos",
+        "https://b2b-leads.com.mx/consultoria-internacional/ · 5 campos",
+        "https://b2b-leads.com.mx/consultoria-internacional/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing/brochure → llamada o formulario → diagnóstico → speech/checklist → base/CRM → negociación telefónica → cita con decisor → apoyo en tiempo real → seguimiento post-presentación."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación [observado] → cualificación [inferido] → propuesta y cierre [no observable] → entrega [observado] → retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://b2b-leads.com.mx/consultoria-internacional/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://b2b-leads.com.mx/testimonios-de-nuestros-clientes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://b2b-leads.com.mx/servicios/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "http://b2b-leads.com.mx/conexion-empresarial-en-mexico/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://b2b-leads.com.mx/contact-center-mexico/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "http://b2b-leads.com.mx/contacto/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://b2b-leads.com.mx/brochures/2w-b2b-leads-gral.pdf",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://linkedin.com/company/b2bleadsmx",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=b2b-leads.com.mx",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=B2B%20Leads%20Mexico&search_type=keyword_unordered",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR06335545961007284225/creative/CR07547850740010582017?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR06335545961007284225/creative/CR04420812431933046785?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR06335545961007284225/creative/CR11088673155231776769?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.youtube.com/watch?v=cMeTYIcrwZg",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.youtube.com/shorts/cMeTYIcrwZg",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR06335545961007284225/creative/CR11978576935715340289?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1768953221680650038",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11671265100159596119",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/2047295819163355528",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR06335545961007284225/creative/CR15212792587841699841?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.youtube.com/watch?v=oBTAOuauoZc",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://www.youtube.com/watch?v=BsQ_hbi5MCE",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR06335545961007284225/creative/CR10007588930020442113?region=anywhere",
+      "label": "Fuente pública 24"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Conoce Contact Center”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Construir un flujo independiente de prospectos y citas con decisores para que ventas se concentre en cerrar.",
+      "positioning": "consultor corporativo que diagnostica desorden comercial",
+      "audience": "Empresas que venden B2B en México, Centroamérica y Sudamérica y necesitan separar prospección de cierre.",
+      "voice": [
+        "formalidad",
+        "diagnóstico",
+        "autoridad",
+        "aversión al caos",
+        "promesa de control"
+      ],
+      "patterns": [
+        "citas reales",
+        "tomadores de decisión",
+        "telemarketing corporativo",
+        "retorno garantizado",
+        "metodología japonesa"
+      ]
+    },
+    "cta": {
+      "primary": "Programar una llamada o contactar",
+      "secondary": [
+        "WhatsApp",
+        "teléfono",
+        "descargar brochure",
+        "ver servicios"
+      ],
+      "forms": [
+        {
+          "url": "https://b2b-leads.com.mx/contacto/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono",
+            "asunto",
+            "pregunta o mensaje"
+          ],
+          "fieldCount": 5,
+          "friction": "media",
+          "submitted": false
+        },
+        {
+          "url": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono o asunto según variante",
+            "mensaje"
+          ],
+          "fieldCount": 4,
+          "friction": "baja-media",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Landing SEO y brochure captan búsquedas de generación de leads y telemarketing B2B. — stage: descubrimiento — evidenceUrls: https://b2b-leads.com.mx/generacion-de-leads-mexico/ · https://b2b-leads.com.mx/brochures/2w-b2b-leads-gral.pdf"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Diagnóstico de problemas, lista de entregables y testimonios construyen necesidad. — stage: consideración — evidenceUrls: https://b2b-leads.com.mx/generacion-de-leads-mexico/ · https://b2b-leads.com.mx/testimonios-de-nuestros-clientes/"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario general, teléfono y WhatsApp; no existe una ruta única dominante. — stage: captación — evidenceUrls: https://b2b-leads.com.mx/contacto/"
+      },
+      {
+        "stage": "cualificación",
+        "status": "inferido",
+        "detail": "El primer formulario recoge pocos datos; la cualificación comercial se desplaza a la llamada. — stage: cualificación — evidenceUrls: https://b2b-leads.com.mx/contacto/"
+      },
+      {
+        "stage": "propuesta y cierre",
+        "status": "no observable",
+        "detail": "Precio, alcance contractual, garantía y propuesta permanecen privados. — stage: propuesta y cierre — evidenceUrls:"
+      },
+      {
+        "stage": "entrega",
+        "status": "observado",
+        "detail": "Segmentación, speech, checklist, llamadas, cita, seguimiento y actualización de CRM. — stage: entrega — evidenceUrls: https://b2b-leads.com.mx/servicios/"
+      },
+      {
+        "stage": "retención",
+        "status": "inferido",
+        "detail": "Soporte y seguimiento continuo sugieren recurrencia, pero no hay términos públicos. — stage: retención — evidenceUrls: https://b2b-leads.com.mx/servicios/"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "no observable"
+      ],
+      "contract": [
+        "No se observaron duración, salida ni mínimos públicos."
+      ],
+      "guarantee": [
+        "Se declara ROI garantizado o asegurado, pero no se publica fórmula, umbral, periodo, remedio ni exclusiones."
+      ]
+    },
+    "proof": [
+      "claims: un testimonio atribuye 107 citas, 62 prospectos cualificados y 10 programas vendidos · testimonios de responsables empresariales identificados en varios casos por iniciales y cargo — quality: baja-media — caveat: Prueba autopublicada, identificación parcial y sin auditoría, ventanas temporales o metodología homogénea."
+    ],
+    "objections": [
+      "objection: Mi equipo vende poco y dedica tiempo a prospectar. — answer: Separar generación de cita de cierre y alimentar un pipeline independiente.",
+      "objection: Perderemos control de los datos. — answer: Centralización y alimentación del CRM.",
+      "objection: ¿Cómo se garantiza el ROI? — answer: La promesa existe, pero no su mecanismo público.",
+      "objection: ¿Qué es una cita válida? — answer: No se publica definición, show rate, reposición o exclusiones."
+    ],
+    "technology": [
+      "WordPress — basis: señales públicas del sitio",
+      "Contact Form 7 — basis: estructura de formularios",
+      "Google Tag Manager — basis: etiqueta pública",
+      "Google Analytics — basis: etiqueta pública",
+      "WhatsApp — basis: CTA público",
+      "CRM propio o de cliente — basis: se promete alimentación de CRM, sin marca o integración observable"
+    ],
+    "contradictions": [
+      "Se promete ROI garantizado sin publicar cálculo, periodo, condición, devolución o reparación. — severity: crítica",
+      "La metodología japonesa funciona como sello de autoridad, pero el mecanismo diferencial no queda suficientemente explicado. — severity: media",
+      "La amplitud de consultoría 360 diluye la claridad de la oferta principal de citas B2B. — severity: media"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "No se contactó por formulario, teléfono ni WhatsApp.",
+      "No se accedió a contrato, propuesta, llamadas o CRM.",
+      "La prueba social es autopublicada."
+    ],
+    "lessons": {
+      "copy": [
+        "diagnóstico del desorden comercial",
+        "separación entre prospección y cierre",
+        "centralización de datos como beneficio"
+      ],
+      "adapt": [
+        "cambiar ROI garantizado por un SLA cuantificado",
+        "mostrar metodología y definición de cita",
+        "añadir calendario y cualificación previa",
+        "Diagnóstico interactivo que calcule coste de prospección interna, capacidad de cierre y brecha de pipeline.",
+        "El dolor organizativo es un ángulo potente, pero una promesa financiera solo crea confianza si expone fórmula, atribución y remedio."
+      ],
+      "avoid": [
+        "garantías sin remedio",
+        "lenguaje corporativo genérico",
+        "formularios sin ruta de siguiente paso"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://b2b-leads.com.mx/contacto/",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://b2b-leads.com.mx/testimonios-de-nuestros-clientes/",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://b2b-leads.com.mx/servicios/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://b2b-leads.com.mx/brochures/2w-b2b-leads-gral.pdf",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

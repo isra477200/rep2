@@ -1,0 +1,506 @@
+{
+  "id": "leads-energy",
+  "name": "Leads Energy",
+  "reviewedAt": "2026-08-22T15:50:17.487Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Leads solares cualificados para tu zona y solo para ti.",
+    "heroObserved": true,
+    "priorSummary": "Embudo, tracking, CRM, WhatsApp y captación en Google, Meta y LinkedIn. Filtra decisor, viabilidad del edificio, consumo, plazo y necesidad; confirma citas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 76 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1462 palabras por página comercial recuperada. Muestras breves: “Leads solares cualificados para tu zona y solo para ti.” · “Por qué el boca a boca dejó de llenar la agenda de las instaladoras” · “Instaladores, no comerciales: dónde se pierden los presupuestos”.",
+    "supportingHeadings": [
+      "Leads solares cualificados para tu zona y solo para ti.",
+      "Cómo llenamos tu agenda de clientes solares",
+      "Por qué a muchas instaladoras les cuesta crecer",
+      "El boca a boca no se puede subir de volumen",
+      "La captación se para cuando entra obra",
+      "El contacto llega frío y compartido",
+      "¿Por qué Leads Energy?",
+      "No somos una agencia de volumen.Somos una estructura de precisión.",
+      "Exclusividad territorial garantizada",
+      "En toda España",
+      "Tu inversión trabaja para ti",
+      "¿Tu provincia está disponible?",
+      "La demanda solar en España no es una promesa:es un hecho medible",
+      "Nuestro proceso en 3 pasos",
+      "Setup estratégico",
+      "Campañas & optimización",
+      "Escalado comercial",
+      "Medimos lo que otros ignoran.",
+      "Ejemplo ilustrativo del método de medición",
+      "Comprar contactos o construir un sistema propio",
+      "Una instaladora por provincia",
+      "Sin permanencias. Sin humo. Sólo datos.",
+      "Preguntas frecuentes",
+      "Sabemos de tu negocio",
+      "Comprar leads o generarlos: el coste a 12 meses",
+      "Siete señales de que una agencia no va a funcionar",
+      "Qué es un lead cualificado y cómo se filtra",
+      "Descubre cuántos clientes puedes generar este mes",
+      "Solicita tu diagnóstico",
+      "En tu diagnóstico:"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar diagnóstico gratuito",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://leads.energy/",
+      "text": "Solicitar diagnóstico gratuito",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Solicitar diagnóstico gratuito",
+      "19GA4, CRM y WhatsApp: el sistema mínimoPublicadoLas tres piezas para no perder ningún contacto",
+      "Contacto",
+      "Publicar el comentario"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://leads.energy/",
+        "index": 1,
+        "action": "https://leads.energy/",
+        "method": "POST",
+        "submitText": "Solicitar diagnóstico gratuito",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre y apellidos",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": "Nombre de tu empresa",
+            "placeholder": "Instaladora S.L.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "provincia",
+            "label": "Provincia",
+            "placeholder": "Tu provincia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono",
+            "placeholder": "600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Cuéntanos brevemente tu situación",
+            "placeholder": "Cómo captáis clientes ahora, qué volumen de instalaciones hacéis…",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "He leído y acepto la política de privacidad y el tratamiento de",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leads.energy/boca-a-boca-instaladoras-fotovoltaicas/",
+        "index": 1,
+        "action": "https://leads.energy/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Publicar el comentario",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comentario *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url",
+            "label": "Web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guarda mi nombre, correo electrónico y web en este navegador para la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 7 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Nombre de tu empresa, Web, Guarda mi nombre, correo electrónico y web en este navegador para la.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 7,
+      "qualification": [
+        "Nombre de tu empresa",
+        "Web",
+        "Guarda mi nombre, correo electrónico y web en este navegador para la"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Embudo, tracking, CRM, WhatsApp y captación en Google, Meta y LinkedIn. Filtra decisor, viabilidad del edificio, consumo, plazo y necesidad; confirma citas.",
+    "audience": "Instaladores fotovoltaicos en España.",
+    "prices": [],
+    "guarantee": [
+      "10 clientesEn toda EspañaNo es una limitación operativa: es nuestra garantía de calidad.",
+      "Requiere añadir lo que el cliente sí puede valorar: qué incluye y qué no, qué pasa si hay que reforzar la cubierta, quién tramita las ayudas, qué garantía tiene cada componente, y qué ocurre si algo falla dentro de dos años."
+    ],
+    "proof": [
+      "Máximo 10 clientes en toda España.",
+      "10 clientesEn toda EspañaNo es una limitación operativa: es nuestra garantía de calidad.",
+      "…ómo funciona Sin compromiso · 15 minutos · Plan de acción concreto 0/provinciaExclusividad territorial garantizada máx.0Clientes en toda España 0conflictosNunca con dos competidores a la vez Míralo en 2 minutos Cómo llenamos tu agenda de clientes solares Te explico el sistema completo: de dónde salen los le…",
+      "Es que la captación de clientes depende de canales que no se pueden regular.",
+      "Tu empresa de energía tiene que generar clientes de forma constante.",
+      "Trabajamos con exclusividad territorial absoluta y un número limitado de clientes."
+    ],
+    "objections": [
+      "…ntes solares Te explico el sistema completo: de dónde salen los leads, cómo se filtran antes de llegar a tu comercial y por qué trabajamos con una sola instaladora por provincia.",
+      "Solicitar diagnóstico gratuito Por qué nace Leads Energy Por qué a muchas instaladoras les cuesta crecer No suele ser un problema de producto ni de precio.",
+      "La alternativa ¿Por qué Leads Energy?",
+      "Comprobar mi provincia Cómo trabajamos contigo Sin permanencias.",
+      "Medimos todo Reportamos todo Optimizamos cada semana Partners certificados de Google, Meta y LinkedIn Antes de empezar Preguntas frecuentes Lo que más nos preguntan las instaladoras antes de empezar.",
+      "¿Cuánto tarda en estar en marcha?+Depende del punto de partida: no es lo mismo una empresa con web y analítica funcionando que una que empieza de cero."
+    ],
+    "urgency": [
+      "24 artículos● 4 nuevos por semanaActualizado hoy Una ruta, del contexto al método Los artículos siguen un orden pensado: primero entender el mercado y tu propio negocio, luego diagnosticar por qué no entran clientes, y por último el método concreto para captarlos.",
+      "Trabajamos con exclusividad territorial absoluta y un número limitado de clientes.",
+      "No son estimaciones nuestras: son las búsquedas reales que tus futuros clientes están haciendo ahora mismo.",
+      "¿Qué incluye el diagnóstico gratuito?+Una conversación de unos quince minutos para ver si tu provincia está disponible, revisar cómo captas clientes ahora y explicarte qué haríamos en tu caso.",
+      "Factor 3: el cliente se ha vuelto más exigente y desconfiado El comprador de hoy ha visto muchas ofertas, conoce casos de instalaciones problemáticas y desconfía más.",
+      "Le muestras a alguien que quizá llevaba tiempo pensando «algún día pondré placas» un motivo para dar el paso ahora."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "10 clientesEn toda EspañaNo es una limitación operativa: es nuestra garantía de calidad.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Requiere añadir lo que el cliente sí puede valorar: qué incluye y qué no, qué pasa si hay que reforzar la cubierta, quién tramita las ayudas, qué garantía tiene cada componente, y qué ocurre si algo falla dentro de dos años.",
+          "url": "https://leads.energy/donde-se-pierden-presupuestos-instaladoras/",
+          "pageTitle": "Instaladores, no comerciales: dónde se pierden los presupuestos - Leads Energy",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Máximo 10 clientes en toda España.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…ómo funciona Sin compromiso · 15 minutos · Plan de acción concreto 0/provinciaExclusividad territorial garantizada máx.0Clientes en toda España 0conflictosNunca con dos competidores a la vez Míralo en 2 minutos Cómo llenamos tu agenda de clientes solares Te explico el sistema completo: de dónde salen los le…",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Es que la captación de clientes depende de canales que no se pueden regular.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tu empresa de energía tiene que generar clientes de forma constante.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Trabajamos con exclusividad territorial absoluta y un número limitado de clientes.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "10 clientesEn toda EspañaNo es una limitación operativa: es nuestra garantía de calidad.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "…ntes solares Te explico el sistema completo: de dónde salen los leads, cómo se filtran antes de llegar a tu comercial y por qué trabajamos con una sola instaladora por provincia.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Solicitar diagnóstico gratuito Por qué nace Leads Energy Por qué a muchas instaladoras les cuesta crecer No suele ser un problema de producto ni de precio.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "La alternativa ¿Por qué Leads Energy?",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Comprobar mi provincia Cómo trabajamos contigo Sin permanencias.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Medimos todo Reportamos todo Optimizamos cada semana Partners certificados de Google, Meta y LinkedIn Antes de empezar Preguntas frecuentes Lo que más nos preguntan las instaladoras antes de empezar.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Cuánto tarda en estar en marcha?+Depende del punto de partida: no es lo mismo una empresa con web y analítica funcionando que una que empieza de cero.",
+          "url": "https://leads.energy/",
+          "pageTitle": "Agencia de captación de leads para instaladoras fotovoltaicas - Leads Energy",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://leads.energy/",
+        "https://leads.energy/blog/",
+        "https://leads.energy/boca-a-boca-instaladoras-fotovoltaicas/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Leads solares cualificados para tu zona y solo para ti.",
+        "Por qué el boca a boca dejó de llenar la agenda de las instaladoras",
+        "Instaladores, no comerciales: dónde se pierden los presupuestos",
+        "Por qué sube el coste por lead y qué factores lo empujan"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Solicitar diagnóstico gratuito",
+        "Contacto",
+        "19GA4, CRM y WhatsApp: el sistema mínimoPublicadoLas tres piezas para no perder ningún contacto",
+        "Publicar el comentario"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://leads.energy/ · 7 campos",
+        "https://leads.energy/boca-a-boca-instaladoras-fotovoltaicas/ · 5 campos",
+        "https://leads.energy/donde-se-pierden-presupuestos-instaladoras/ · 5 campos",
+        "https://leads.energy/por-que-sube-el-coste-por-lead/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → formulario con nombre, empresa, provincia, teléfono, email y situación → respuesta en 24 h y diagnóstico gratuito de 15 minutos con comprobación de exclusividad territorial →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://leads.energy/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://leads.energy/blog/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://leads.energy/boca-a-boca-instaladoras-fotovoltaicas/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://leads.energy/donde-se-pierden-presupuestos-instaladoras/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://leads.energy/por-que-sube-el-coste-por-lead/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://leads.energy/que-preguntar-a-una-agencia-antes-de-firmar/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://leads.energy/meta-ads-o-google-ads-instaladoras/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=leads.energy",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar diagnóstico gratuito”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

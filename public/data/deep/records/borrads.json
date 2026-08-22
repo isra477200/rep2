@@ -1,0 +1,560 @@
+{
+  "id": "borrads",
+  "name": "BORRADS",
+  "reviewedAt": "2026-08-22T15:50:17.755Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Agencia de marketing digital",
+    "heroObserved": true,
+    "priorSummary": "Agencia generalista de captación y crecimiento para pymes: Google Ads, Facebook/Instagram Ads, SEO, CRO, landings, automatización de email, contenido y vídeo. Gancho central: resultados o no se cobra; la versión CRO fija objetivos públicos distintos para campañas existentes y nuevas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 440 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2358 palabras por página comercial recuperada. Muestras breves: “Agencia Captación de Leads” · “contactar con nosotros.” · “Agencia de Facebook Ads”.",
+    "supportingHeadings": [
+      "Agencia Captación de Leads",
+      "Estudio de Mercado",
+      "Segmentación del público",
+      "Análisis demográfico",
+      "Tendencias de consumo",
+      "Buyer persona",
+      "Buyer journey",
+      "Creación y Gestión de Campañas Publicitarias",
+      "Publicidad en línea",
+      "Campañas PPC",
+      "Google Ads",
+      "Facebook Marketing",
+      "Estrategias publicitarias digitales",
+      "Optimización de Landing Pages",
+      "Diseño de landing page",
+      "Conversión de página de aterrizaje",
+      "CTA efectivos",
+      "Landing page responsive",
+      "Estrategias de Contenido",
+      "Marketing de contenidos",
+      "Blogs optimizados",
+      "Infografías SEO",
+      "Video marketing",
+      "Contenido de valor",
+      "Email Marketing",
+      "Campañas de email",
+      "Automatización de correos",
+      "Funnel de email",
+      "Conversión email marketing",
+      "Automatización y Seguimiento"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://borrads.com/",
+      "text": "Contacto",
+      "href": "https://borrads.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Contactar con BORRADS",
+      "Solicita tu sesión estratégica GRATUITA aquí.",
+      "Solicita tu sesión estratégica gratuita Tienes que ser rápido. Ya casi se han agotado",
+      "Obtener mi informe gratuito"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://borrads.com/agencia/",
+        "index": 1,
+        "action": "https://borrads.com/agencia/",
+        "method": "POST",
+        "submitText": "Obtener mi informe gratuito",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre sin apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Correo electrónico",
+            "placeholder": "Tu correo electrónico profesional*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_5cdbd70]",
+            "label": "He leído y acepto la política de privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://borrads.com/contacto/",
+        "index": 1,
+        "action": "https://borrads.com/contacto/",
+        "method": "POST",
+        "submitText": "Contactar con BORRADS",
+        "visibleFieldCount": 10,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[firstname]",
+            "label": "firstname",
+            "placeholder": "Nombre*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[lastname]",
+            "label": "lastname",
+            "placeholder": "Apellido*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "email",
+            "placeholder": "Correo electrónico*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[phone]",
+            "label": "phone",
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[website]",
+            "label": "website",
+            "placeholder": "Sitio web*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[budget]",
+            "label": "budget",
+            "placeholder": "Presupuesto del proyecto*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[country]",
+            "label": "country",
+            "placeholder": "País*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[offertype]",
+            "label": "offertype",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "message",
+            "placeholder": "Háblanos sobre tu proyecto*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_b3ab3d5]",
+            "label": "RGPD",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://borrads.com/contacto/",
+        "index": 2,
+        "action": "https://borrads.com/contacto/",
+        "method": "POST",
+        "submitText": "Obtener mi informe gratuito",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre sin apellidos*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "email",
+            "placeholder": "Tu correo electrónico profesional*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_5cdbd70]",
+            "label": "He leído y acepto la política de privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 3 y 10 campos visibles, mínimo 3 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: website, budget.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 10,
+      "qualification": [
+        "website",
+        "budget"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "HubSpot",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia generalista de captación y crecimiento para pymes: Google Ads, Facebook/Instagram Ads, SEO, CRO, landings, automatización de email, contenido y vídeo. Gancho central: resultados o no se cobra; la versión CRO fija objetivos públicos distintos para campañas existentes y nuevas.",
+    "audience": "Pymes, ecommerce y servicios B2C/B2B en más de 60 nichos declarados; no está verticalizada en los nichos prioritarios de RedVitalia.",
+    "prices": [],
+    "guarantee": [
+      "Nuestro equipo de especialistas de Facebook es el más talentosos del planeta, y estamos tan seguros de que podremos hacer crecer tu negocio a través de Facebook, que incluso estamos dispuestos a ofrecer una Garantía de mejora del 30%.Ve a buscar otra agencia que esté",
+      "Por este motivo ofrecemos INCREÍBLES garantías que otras agencias no son capaces de asegurar.",
+      "Ofrecemos garantías para todas nuestras fuentes de tráfico."
+    ],
+    "proof": [
+      "Quiero hacer crecer mi F* business 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Nuestro compromiso Aumentar tus ventas y clientes en tiempo récord En nuestra agencia de marketing digital hemos desarrollado un «sistema de ventas» probado en más de 60 nichos",
+      "Captación y conversiónLanding pages optimizadasFormularios, lead magnets, pruebas gratuitasFunnels de conversiónOptimización del checkoutOferta irresistibleObjetivo: Convertir ese tráfico en leads (contactos) o directamente en clientes.",
+      "Haz crecer tu negocio con funnels de captación de clientes que sí funcionan, guías para cerrar más clientes y todo ello basado en el método científico y en la psicología humana (no en modas y tendencias que dejarán de funcionar).",
+      "Escoger Agencia 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Aprende a hacerlo tú mismo Cursos Formación online para profesionales de coaching, consultoría o servicios que desean escalar a 7 cifras de forma ACELERADA.",
+      "Próximamente 4,5 estrellas de 25 reseñas  Valorado con 4.5 de 5 Crece 10x más rápido y rentable Deja de probar trucos y estrategias que han hecho que pierdas tu tiempo y tu dinero."
+    ],
+    "objections": [
+      "Haz clic en el f* botón 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Preguntas frecuentes de marketing digital ¿Qué hace una Agencia de Marketing Digital?",
+      "¿POR QUÉ BORRADS?",
+      "¿Por qué BORRADS es la mejor agencia de marketing digital para mi negocio?",
+      "¿Por qué la pizza está deliciosa?",
+      "¿Por qué el agua moja?"
+    ],
+    "urgency": [
+      "Ya casi se han agotado las plazas gratis para AGOSTO 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 ¡Has confiado en su palabra pero al final han malgastado todo tu dinero sin obtener resultados!",
+      "Ya casi se han agotado las plazas gratis para AGOSTO 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 ¿Cómo podemos garantizar los resultados?",
+      "Esta oferta es limitada y sólo aceptamos 6 nuevos clientes por mes con esta oferta.",
+      "Ya casi se han agotado las plazas gratis para AGOSTO 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 ¡Acelera el crecimiento de tu negocio sin riesgo!",
+      "Ya casi se han agotado las plazas gratis para AGOSTO 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Experiencia con marcas ¡Las pruebas!",
+      "Ya casi se han agotado las plazas gratis para AGOSTO 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 LA OFERTA DE AGOSTO ESTÁ APUNTO DE DESAPARECER LA PROMO DE AGOSTO SE ACABA..."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Ingresos generados 0 M€ Hacemos que nuestros números hablen por sí mismos.",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Podemos trabajar contigo.¿Entiendes el valor de invertir 1€ para generar 5€?",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Nuestro equipo de especialistas de Facebook es el más talentosos del planeta, y estamos tan seguros de que podremos hacer crecer tu negocio a través de Facebook, que incluso estamos dispuestos a ofrecer una Garantía de mejora del 30%.Ve a buscar otra agencia que esté",
+          "url": "https://borrads.com/agencia-facebook-ads/",
+          "pageTitle": "#1 Agencia Facebook Ads | Social Media Marketing [2024]",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Por este motivo ofrecemos INCREÍBLES garantías que otras agencias no son capaces de asegurar.",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Ofrecemos garantías para todas nuestras fuentes de tráfico.",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Quiero hacer crecer mi F* business 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Nuestro compromiso Aumentar tus ventas y clientes en tiempo récord En nuestra agencia de marketing digital hemos desarrollado un «sistema de ventas» probado en más de 60 nichos",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Captación y conversiónLanding pages optimizadasFormularios, lead magnets, pruebas gratuitasFunnels de conversiónOptimización del checkoutOferta irresistibleObjetivo: Convertir ese tráfico en leads (contactos) o directamente en clientes.",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Escoger Agencia 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Aprende a hacerlo tú mismo Cursos Formación online para profesionales de coaching, consultoría o servicios que desean escalar a 7 cifras de forma ACELERADA.",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Próximamente 4,5 estrellas de 25 reseñas  Valorado con 4.5 de 5 Crece 10x más rápido y rentable Deja de probar trucos y estrategias que han hecho que pierdas tu tiempo y tu dinero.",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Haz crecer tu negocio con funnels de captación de clientes que sí funcionan, guías para cerrar más clientes y todo ello basado en el método científico y en la psicología humana (no en modas y tendencias que dejarán de funcionar).",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "¿POR QUÉ BORRADS?",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Haz clic en el f* botón 4,8 estrellas de 49 reseñas  Valorado con 4.8 de 5 Preguntas frecuentes de marketing digital ¿Qué hace una Agencia de Marketing Digital?",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué BORRADS es la mejor agencia de marketing digital para mi negocio?",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué la pizza está deliciosa?",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué el agua moja?",
+          "url": "https://borrads.com/",
+          "pageTitle": "BORRADS® | Agencia de Marketing Digital y CRO",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://borrads.com/agencia/",
+        "https://borrads.com/contacto/",
+        "https://borrads.com/sobre-nosotros/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia Captación de Leads",
+        "contactar con nosotros.",
+        "Agencia de Facebook Ads",
+        "Reduce el coste por lead y multiplica la rentabilidad de tus campañas"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Solicita tu sesión estratégica gratuita Tienes que ser rápido. Ya casi se han agotado",
+        "Contacto",
+        "Obtener mi informe gratuito",
+        "Contactar con BORRADS",
+        "Solicita tu sesión estratégica GRATUITA aquí."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://borrads.com/agencia/ · 3 campos",
+        "https://borrads.com/contacto/ · 10 campos",
+        "https://borrads.com/contacto/ · 3 campos",
+        "https://borrads.com/sobre-nosotros/ · 3 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página larga de venta → problemas, servicios, casos y garantía → CTA a sesión estratégica gratuita → formulario/reserva → diagnóstico y propuesta personalizada → despliegue de canal, landing/CRO"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://borrads.com/agencia/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://borrads.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://borrads.com/sobre-nosotros/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://borrads.com/agencia-facebook-ads/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://borrads.com/sesion-estrategica-campanas-publicitarias-30-minutos-borrads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://borrads.com/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://borrads.com/agencia-seo/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://borrads.com/agencia-cro/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (HubSpot, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

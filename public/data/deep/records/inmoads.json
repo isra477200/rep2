@@ -1,0 +1,828 @@
+{
+  "id": "inmoads",
+  "name": "INMOADS",
+  "reviewedAt": "2026-08-22T15:50:17.345Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Promete convertir publicidad, CRM, automatización y guiones en exclusivas firmadas, con una sola agencia por zona.",
+    "heroObserved": true,
+    "priorSummary": "Sistema inmobiliario done-for-you para captar propietarios, cualificar y nutrirlos hasta convertirlos en citas y exclusivas; instalación declarada en 7 días y exclusividad contractual de zona.",
+    "voice": "Revisión manual: especialista, seguro, urgente, territorial, orientado a resultado. Habla de exclusivas firmadas, no de leads. Usa escasez de una agencia por territorio. Combina garantía fuerte con un proceso de 120 días.",
+    "supportingHeadings": [
+      "CAPTACIÓN EXCLUSIVAOFFMARKETACELERADA PREDECIBLE.",
+      "TU AGENCIA PIERDE DINEROHOY MISMO.",
+      "EL MÉTODO INMOADS",
+      "LO QUE HAYDENTRO",
+      "ASÍ SE VE UN MES PREDECIBLE",
+      "LO QUE ENTREGAMOS",
+      "EL SISTEMA EN ACCIÓN",
+      "TODO LO QUENECESITAS SABER",
+      "TU ZONA TE ESPERA.ALGUIEN YA LA ESTÁPIDIENDO.",
+      "Guías de Captación Inmobiliaria",
+      "Estrategias que funcionan.Primero aquí.",
+      "¿Disponible tu zona?",
+      "Verificando tu zona",
+      "Términos y Condiciones",
+      "1. Objeto",
+      "2. Descripción del servicio",
+      "3. Acceso y registro",
+      "4. Obligaciones del usuario",
+      "5. Precios y condiciones económicas",
+      "6. Propiedad intelectual",
+      "7. Limitación de responsabilidad",
+      "8. Modificaciones",
+      "9. Legislación aplicable",
+      "10. Contacto",
+      "El blog de las agencias que captan diferente",
+      "Política de Privacidad",
+      "1. Responsable del tratamiento",
+      "2. Datos que recogemos",
+      "3. Finalidad del tratamiento",
+      "4. Base jurídica"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "ANALIZAR MI ZONA GRATIS →",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://inmoads.es/blog/como-captar-exclusivas-inmobiliarias",
+      "text": "ANALIZAR MI ZONA GRATIS →",
+      "href": "https://inmoads.es/demo-gratuita",
+      "element": "a",
+      "kind": "conversion",
+      "score": 198.75
+    },
+    "ctas": [
+      "Contacto",
+      "ENVIARME LA GUÍA GRATIS →",
+      "ANALIZAR MI ZONA GRATIS →",
+      "Quiero recibirlas",
+      "QUIERO LAS 12 EXCLUSIVAS →",
+      "Verificar disponibilidad → Enviando..."
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://inmoads.es/",
+        "index": 1,
+        "action": "https://inmoads.es/",
+        "method": "GET",
+        "submitText": "Quiero recibirlas",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "nl_email",
+            "label": null,
+            "placeholder": "tu@agencia.es",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://inmoads.es/",
+        "index": 2,
+        "action": "https://inmoads.es/",
+        "method": "GET",
+        "submitText": "Verificar disponibilidad → Enviando...",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "agencia",
+            "label": null,
+            "placeholder": "Nombre de tu agencia",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Tu email de trabajo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "Tu teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zona",
+            "label": null,
+            "placeholder": "Tu ciudad o zona de actuación",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "hp_website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://inmoads.es/blog",
+        "index": 1,
+        "action": "https://inmoads.es/blog",
+        "method": "GET",
+        "submitText": "Quiero recibirlas",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "nl_email",
+            "label": null,
+            "placeholder": "tu@agencia.es",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "hp_website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://inmoads.es/guia-captacion-exclusivas",
+        "index": 1,
+        "action": "https://inmoads.es/guia-captacion-exclusivas",
+        "method": "GET",
+        "submitText": "ENVIARME LA GUÍA GRATIS →",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "WhatsApp",
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "agentes",
+            "label": "Agentes en tu equipo",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zona",
+            "label": "Zona principal",
+            "placeholder": "Ej: Madrid norte, Valencia, etc.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "hp_website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 1 y 6 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: hp_website, Agentes en tu equipo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 6,
+      "qualification": [
+        "hp_website",
+        "Agentes en tu equipo"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Google Analytics",
+      "Meta Pixel",
+      "Microsoft Clarity",
+      "Calendly"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Sistema inmobiliario done-for-you para captar propietarios, cualificar y nutrirlos hasta convertirlos en citas y exclusivas; instalación declarada en 7 días y exclusividad contractual de zona.",
+    "audience": "Agencias inmobiliarias boutique españolas, especialmente equipos de 2–5 agentes y 100.000–500.000 € de comisiones anuales; admite agencias mayores y promotoras si hay encaje territorial.",
+    "prices": [
+      "Pagas 800, 1.200, 2.000€ al mes a portales que tú no controlas."
+    ],
+    "guarantee": [
+      "12 Exclusivas offmarketfirmadas en 120 días Mínimo garantizado por contrato.",
+      "Eso para un negocio como el mío lo cambia todo.» // Agencia boutique · Cliente InmoAds · Valencia Garantía sin letra pequeñaSi en 120 días no firmas 12 exclusivas offmarket o no generamos 50.000€ adicionales — devolvemos el 100%.",
+      "El plazo garantizado es de 120 días para un mínimo de 12 exclusivas.",
+      "Si no hay suficiente masa crítica para cumplir la garantía, te lo decimos y no aceptamos el encargo.",
+      "Es el tiempo necesario para que el sistema funcione, optimice y cumpla la garantía.",
+      "Pero si llegáramos, la garantía existe y es real."
+    ],
+    "proof": [
+      "Torres7.800€ 02 // Análisis de Resultados DATOS QUE AYUDANA CERRAR MÁS El sistema analiza cada semana en qué punto se frenan los propietarios y te indica exactamente qué cambiar para convertir más visitas en exclusivas firmadas.",
+      "Reseñas 5 estrellas en Google Maps conseguidas en automático Programa «Trae un amigo y gana 500€» activado desde el día 1 Posicionamiento como autoridad local — el propietario te elige a ti reputación / google + referidosActivo ⭐⭐⭐⭐⭐ 0 238 reseñas · Google Maps ●",
+      "— Huelva Capitalpiso_90m² · comisión_4.2k€Firmada ✓Familia Torres — Cartayachalet · comisión_7.8k€ // Resultados del Sistema LO QUE ENTREGAMOS Sin letra pequeña.",
+      "Solicita reseñas en el momento justo, filtra las negativas antes de que se publiquen."
+    ],
+    "objections": [
+      "QUIERO EL SISTEMA Ver cómo funciona → 300+ INMOBILIARIAS 7.500+ EXCLUSIVAS OFFMARKET FIRMADAS 7+ AÑOS DE EXPERIENCIA EN EL SECTOR Sin permanencia.",
+      "No sé por qué.» → Sin pipeline predecible = sin negocio escalable.",
+      "// MÓDULO_05 💬 CRM Inmobiliario Todo en Uno Cada propietario tiene su ficha completa: cuándo nos contactó, por qué quiere vender, qué precio espera y qué agente lo lleva.",
+      "14hSemanalesrecuperadas// reinvertidas en cierre // Preguntas Frecuentes TODO LO QUENECESITAS SABER Las preguntas que nos hacen antes de empezar — respondidas sin rodeos.",
+      "¿Qué pasa si mi competencia directa también quiere contrataros para mi misma zona?",
+      "¿Hay permanencia o tengo que firmar un contrato largo?"
+    ],
+    "urgency": [
+      "Scroll +300 inmobiliarias ya confían en INMOADS // Diagnóstico del Sistema TU AGENCIA PIERDE DINEROHOY MISMO.",
+      "// ACCESO LIMITADO TU ZONA TE ESPERA.ALGUIEN YA LA ESTÁPIDIENDO."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Pagas 800, 1.200, 2.000€ al mes a portales que tú no controlas.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Gasté 600€ y no vendí nada.» No fue culpa tuya.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Coste medio por propietario captado: 5€.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "— Aljaraquechalet · 290k€ NuevoBase ×3 reactivadaauto · día_4 // Cualificado AltaAna R.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Fernández4.200€ ✓ FirmadaFam.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Torres7.800€ 02 // Análisis de Resultados DATOS QUE AYUDANA CERRAR MÁS El sistema analiza cada semana en qué punto se frenan los propietarios y te indica exactamente qué cambiar para convertir más visitas en exclusivas firmadas.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "12 Exclusivas offmarketfirmadas en 120 días Mínimo garantizado por contrato.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Eso para un negocio como el mío lo cambia todo.» // Agencia boutique · Cliente InmoAds · Valencia Garantía sin letra pequeñaSi en 120 días no firmas 12 exclusivas offmarket o no generamos 50.000€ adicionales — devolvemos el 100%.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "El plazo garantizado es de 120 días para un mínimo de 12 exclusivas.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Si no hay suficiente masa crítica para cumplir la garantía, te lo decimos y no aceptamos el encargo.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Es el tiempo necesario para que el sistema funcione, optimice y cumpla la garantía.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Pero si llegáramos, la garantía existe y es real.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Torres7.800€ 02 // Análisis de Resultados DATOS QUE AYUDANA CERRAR MÁS El sistema analiza cada semana en qué punto se frenan los propietarios y te indica exactamente qué cambiar para convertir más visitas en exclusivas firmadas.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Solicita reseñas en el momento justo, filtra las negativas antes de que se publiquen.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Reseñas 5 estrellas en Google Maps conseguidas en automático Programa «Trae un amigo y gana 500€» activado desde el día 1 Posicionamiento como autoridad local — el propietario te elige a ti reputación / google + referidosActivo ⭐⭐⭐⭐⭐ 0 238 reseñas · Google Maps ●",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "— Huelva Capitalpiso_90m² · comisión_4.2k€Firmada ✓Familia Torres — Cartayachalet · comisión_7.8k€ // Resultados del Sistema LO QUE ENTREGAMOS Sin letra pequeña.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "QUIERO EL SISTEMA Ver cómo funciona → 300+ INMOBILIARIAS 7.500+ EXCLUSIVAS OFFMARKET FIRMADAS 7+ AÑOS DE EXPERIENCIA EN EL SECTOR Sin permanencia.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No sé por qué.» → Sin pipeline predecible = sin negocio escalable.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "// MÓDULO_05 💬 CRM Inmobiliario Todo en Uno Cada propietario tiene su ficha completa: cuándo nos contactó, por qué quiere vender, qué precio espera y qué agente lo lleva.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "14hSemanalesrecuperadas// reinvertidas en cierre // Preguntas Frecuentes TODO LO QUENECESITAS SABER Las preguntas que nos hacen antes de empezar — respondidas sin rodeos.",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Qué pasa si mi competencia directa también quiere contrataros para mi misma zona?",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Hay permanencia o tengo que firmar un contrato largo?",
+          "url": "https://inmoads.es/",
+          "pageTitle": "Captación de Exclusivas Inmobiliarias | 12 Firmadas en 120 Días | INMOADS",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "WhatsApp",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://inmoads.es/",
+        "https://inmoads.es/terminos-y-condiciones",
+        "https://inmoads.es/blog"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "CAPTACIÓN EXCLUSIVAOFFMARKETACELERADA PREDECIBLE.",
+        "Términos y Condiciones",
+        "Política de Privacidad",
+        "Política de Cookies"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Quiero recibirlas",
+        "Contacto",
+        "Verificar disponibilidad → Enviando...",
+        "ENVIARME LA GUÍA GRATIS →",
+        "ANALIZAR MI ZONA GRATIS →",
+        "QUIERO LAS 12 EXCLUSIVAS →"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://inmoads.es/ · 1 campos",
+        "https://inmoads.es/ · 6 campos",
+        "https://inmoads.es/blog · 2 campos",
+        "https://inmoads.es/guia-captacion-exclusivas · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "CTA web → formulario de zona → respuesta <24 h → auditoría/encaje → implantación 120 días → orgánico/reactivación/Meta (y Google cuando procede) → cualificación y nurturing → cita"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Atracción [observado] → Cualificación [observado] → Venta [inferido] → Setup [observado] → Captación [observado] → Handoff humano [observado] → Optimización [observado] → Salida [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://inmoads.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://inmoads.es/terminos-y-condiciones",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://inmoads.es/blog",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://inmoads.es/politica-privacidad",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://inmoads.es/politica-cookies",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://inmoads.es/guia-captacion-exclusivas",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://inmoads.es/blog/como-captar-exclusivas-inmobiliarias",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://inmoads.es/blog/0-a-12-exclusivas-120-dias-meta-ads-crm",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://inmoads.es/sistema/vsl: Bloqueado por robots.txt",
+    "robots.txt impidió 1 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “ANALIZAR MI ZONA GRATIS →”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Google Analytics, Meta Pixel, Microsoft Clarity, Calendly) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Promete convertir publicidad, CRM, automatización y guiones en exclusivas firmadas, con una sola agencia por zona.",
+      "promise": "Doce exclusivas en 120 días o devolución, con campañas, filtrado, seguimiento, scripts y activos que conserva la agencia.",
+      "positioning": "Sistema gestionado de captación de propietarios y exclusivas para agencias inmobiliarias boutique",
+      "audience": "Agencias inmobiliarias españolas con capacidad comercial local y voluntad de trabajar propietarios.",
+      "voice": [
+        "especialista",
+        "seguro",
+        "urgente",
+        "territorial",
+        "orientado a resultado"
+      ],
+      "patterns": [
+        "Habla de exclusivas firmadas, no de leads.",
+        "Usa escasez de una agencia por territorio.",
+        "Combina garantía fuerte con un proceso de 120 días."
+      ]
+    },
+    "cta": {
+      "primary": "Comprobar disponibilidad en mi zona",
+      "secondary": [
+        "Descargar guía",
+        "Reservar llamada"
+      ],
+      "forms": [
+        {
+          "url": "https://inmoads.es/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "agencia",
+            "email profesional",
+            "teléfono",
+            "ciudad o zona",
+            "honeypot técnico"
+          ],
+          "fieldCount": 6,
+          "friction": "media-baja; permite validar territorio",
+          "submitted": false
+        },
+        {
+          "url": "https://inmoads.es/guia-captacion-exclusivas",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "WhatsApp",
+            "tamaño de equipo",
+            "zona",
+            "honeypot técnico"
+          ],
+          "fieldCount": 5,
+          "friction": "media para un recurso",
+          "submitted": false
+        },
+        {
+          "url": "https://inmoads.es/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "email de newsletter"
+          ],
+          "fieldCount": 1,
+          "friction": "baja",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Atracción",
+        "status": "observado",
+        "detail": "Contenido y landing presentan exclusivas, garantía y escasez territorial."
+      },
+      {
+        "stage": "Cualificación",
+        "status": "observado",
+        "detail": "Se recoge agencia, equipo, zona, teléfono y canal profesional."
+      },
+      {
+        "stage": "Venta",
+        "status": "inferido",
+        "detail": "Se valida territorio y se formaliza propuesta y contrato de 120 días."
+      },
+      {
+        "stage": "Setup",
+        "status": "observado",
+        "detail": "Campañas Meta o Google, CRM, automatizaciones, guiones y proceso se configuran para el cliente."
+      },
+      {
+        "stage": "Captación",
+        "status": "observado",
+        "detail": "Se anuncian primeros propietarios en semanas 2–3."
+      },
+      {
+        "stage": "Handoff humano",
+        "status": "observado",
+        "detail": "La automatización se detiene cuando el agente entra en conversación."
+      },
+      {
+        "stage": "Optimización",
+        "status": "observado",
+        "detail": "Revisión semanal de citas, conversaciones, exclusivas y campañas."
+      },
+      {
+        "stage": "Salida",
+        "status": "observado",
+        "detail": "Tras 120 días no se anuncia permanencia y el cliente conserva funnels, automatizaciones, scripts y proceso."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "fee — no publicado; se entrega por propuesta",
+        "ad spend — separado del servicio"
+      ],
+      "contract": [
+        "programa — 120 días; sin permanencia posterior anunciada",
+        "activos — funnels, automatizaciones, scripts y proceso quedan en el cliente"
+      ],
+      "guarantee": [
+        "resultado principal — 12 exclusivas firmadas en 120 días o devolución del 100%",
+        "variante — otra sección formula 12 exclusivas o €50.000 de ingresos adicionales"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Google Tag Manager",
+      "Google Analytics 4",
+      "Meta Pixel",
+      "Microsoft Clarity",
+      "Calendly",
+      "WhatsApp",
+      "Meta Ads y Google Ads",
+      "CRM, automatización y scripts"
+    ],
+    "contradictions": [
+      "La landing promete devolución por resultado, mientras las condiciones genéricas indican pagos no reembolsables salvo acuerdo expreso y excluyen garantía de resultados específicos. Solo un contrato particular podría resolver la prioridad.",
+      "El gatillo de garantía aparece como 12 exclusivas y también como 12 exclusivas o €50.000 de ingresos; no es una definición única.",
+      "Expresiones como sin letra pequeña o sin condiciones conviven con términos genéricos y dependencia de mercado, equipo y gasto.",
+      "La idea si no hay resultado no pagas parece operar como pago seguido de devolución, no necesariamente ausencia de desembolso.",
+      "La privacidad identifica INMOADS como responsable, pero en la página revisada no se observó entidad legal y NIF completos."
+    ],
+    "inferences": [
+      "Venta: Se valida territorio y se formaliza propuesta y contrato de 120 días."
+    ],
+    "notObservable": [
+      "precio y gasto mínimo",
+      "definición completa de exclusiva válida",
+      "condiciones privadas de la garantía",
+      "tamaño y límites de cada territorio",
+      "atribución y pruebas de firma",
+      "CRM exacto",
+      "plataforma de automatización",
+      "proveedor de telefonía",
+      "sistema de atribución",
+      "La web anuncia respuesta en menos de 24 horas; no se verificó llamada, email, disponibilidad o propuesta."
+    ],
+    "limitations": [
+      "No se recibió contrato particular ni propuesta económica.",
+      "No se comprobó disponibilidad territorial.",
+      "Los casos y el número de agencias son autodeclarados.",
+      "No se verificaron campañas, CRM, firmas o devoluciones reales."
+    ],
+    "lessons": {
+      "copy": [
+        "Vincular la promesa a exclusivas firmadas, no a leads.",
+        "Usar escasez territorial solo con reglas verificables."
+      ],
+      "adapt": [
+        "Activos transferibles y automatización que cede al humano.",
+        "Scorecard semanal de propietario a firma.",
+        "Garantía con definición, evidencia, exclusiones, remedio y calendario públicos."
+      ],
+      "avoid": [
+        "Decir sin condiciones cuando existen términos.",
+        "Usar dos gatillos distintos de garantía.",
+        "Contradecir landing y condiciones genéricas.",
+        "Ocultar identidad jurídica o precio hasta demasiado tarde."
+      ],
+      "test": [
+        "Test de garantía por exclusivas frente a garantía por citas cualificadas.",
+        "Test de una agencia por microzona con inventario público de disponibilidad."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://inmoads.es/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://inmoads.es/terminos-y-condiciones",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://inmoads.es/guia-captacion-exclusivas",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://inmoads.es/blog/0-a-12-exclusivas-120-dias-meta-ads-crm",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://inmoads.es/politica-privacidad",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

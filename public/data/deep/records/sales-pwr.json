@@ -1,0 +1,417 @@
+{
+  "id": "sales-pwr",
+  "name": "Sales PWR",
+  "reviewedAt": "2026-08-22T15:50:19.215Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Your External B2BSales Team",
+    "heroObserved": true,
+    "priorSummary": "Red portuguesa de comerciales independientes que externaliza todo el ciclo B2B: prospección/SDR, reuniones, cierre, onboarding, retención y upsell.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 239 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 761 palabras por página comercial recuperada. Muestras breves: “Your External B2BSales Team” · “Privacy Policy” · “Política de Privacidade”.",
+    "supportingHeadings": [
+      "Your External B2BSales Team",
+      "What We Do",
+      "Prospecting & SDR",
+      "Sales Closing",
+      "Retention & Upsell",
+      "How it Works",
+      "Diagnosis",
+      "Activation",
+      "Results",
+      "Talk to Us orBook a Meeting",
+      "Products & Services We Sell",
+      "Home Energy",
+      "Telecommunications",
+      "Financial Services",
+      "Marketing",
+      "Software",
+      "Accounting",
+      "Home Equipment",
+      "Technical Services",
+      "Health & Wellness",
+      "B2B Sales with Proximity and Method",
+      "Frequently Asked Questions",
+      "Clients Who Trust Us",
+      "Telefone",
+      "E-mail",
+      "Phone Number",
+      "Quero ser Contactado",
+      "I Want to be Contacted",
+      "Privacy Policy",
+      "1. Data We Collect"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://salespwr.pt/isencao-de-responsabilidade/",
+      "text": "Contacto",
+      "href": "https://salespwr.pt/isencao-de-responsabilidade/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143
+    },
+    "ctas": [
+      "Contacto",
+      "Contact Us",
+      "13. Contact",
+      "16. Contact",
+      "13. Contacto",
+      "16. Contacto",
+      "Request a proposal",
+      "Submit",
+      "Enviar"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://salespwr.pt/en/",
+        "index": 1,
+        "action": "https://salespwr.pt/en/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "Company name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "912 345 678",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "what-sell",
+            "label": null,
+            "placeholder": "Briefly describe the product(s)/service(s). Or ask a question.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consentimento",
+            "label": "I have read and accept the Privacy Policy.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://salespwr.pt/en/",
+        "index": 2,
+        "action": "https://salespwr.pt/en/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nome",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consentimento",
+            "label": "Li e aceito a Política de Privacidade.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://salespwr.pt/en/",
+        "index": 3,
+        "action": "https://salespwr.pt/en/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consentimento",
+            "label": "I have read and accept the Privacy Policy.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 3 y 6 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: company.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 6,
+      "qualification": [
+        "company"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Red portuguesa de comerciales independientes que externaliza todo el ciclo B2B: prospección/SDR, reuniones, cierre, onboarding, retención y upsell.",
+    "audience": "Marcas B2B que venden en Portugal continental e islas; energía, telecom, finanzas, servicios técnicos, salud/bienestar y otros sectores evaluados.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Minors The Website is not intended for users under 16.We do not knowingly collect data from minors."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://salespwr.pt/en/",
+        "https://salespwr.pt/en/privacy-policy/",
+        "https://salespwr.pt/politica-de-privacidade/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Your External B2BSales Team",
+        "Privacy Policy",
+        "Política de Privacidade",
+        "Termos e Condições"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Submit",
+        "Request a proposal",
+        "Contact Us",
+        "Enviar",
+        "13. Contact",
+        "13. Contacto",
+        "16. Contacto",
+        "Contacto"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://salespwr.pt/en/ · 6 campos",
+        "https://salespwr.pt/en/ · 3 campos",
+        "https://salespwr.pt/en/ · 3 campos",
+        "https://salespwr.pt/en/privacy-policy/ · 3 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario → contacto en 1 día hábil → diagnóstico de objetivo, región, ICP y meta → pitch, materiales, listas y cadencias → selección/asignación de comerciales → arranque en"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://salespwr.pt/en/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://salespwr.pt/en/privacy-policy/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://salespwr.pt/politica-de-privacidade/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://salespwr.pt/termos-e-condicoes/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://salespwr.pt/isencao-de-responsabilidade/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://salespwr.pt/politica-de-cookies/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://salespwr.pt/en/terms-and-conditions/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://salespwr.pt/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=salespwr.pt",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=PT&q=Sales%20PWR&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

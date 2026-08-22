@@ -1,0 +1,300 @@
+{
+  "id": "angi-inc-ex-homeadvisor",
+  "name": "Angi Inc. (ex-HomeAdvisor)",
+  "reviewedAt": "2026-08-22T15:50:18.651Z",
+  "status": "Limitada",
+  "confidence": "Limitada",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Marketplace que conecta homeowners con \"pros\" verificados; el profesional paga membresía + coste por lead",
+    "voice": "Tono tono no clasificable automáticamente; requiere revisión humana. La argumentación visible usa pocas cifras. Densidad aproximada: no medible palabras por página comercial recuperada.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace que conecta homeowners con \"pros\" verificados; el profesional paga membresía + coste por lead",
+    "audience": "Contratistas home services EE.UU. (HVAC, fontanería, techado, reformas, electricidad)",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Email",
+        "Partners / afiliación"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El propietario publica gratis el proyecto, categoría, ubicación y detalles → Angi valida/enruta la solicitud y la comparte normalmente con 3–8 profesionales compatibles → el pro recibe el"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.ftc.gov/business-guidance/blog/2023/01/homeadvisors-72-million-proposed-settlement-ftc-hits-home-small-businesses-gig-workers",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://inshalytics.com/blogs/angi-cost-per-lead-hvac-contractors",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://homeshowoff.com/real-cost-of-contractor-leads/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.leadtruffle.co/blog/angi-leads-cost-pricing-contractors-2026/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=angi.com",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.facebook.com/ads/library/?id=914861978052319",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://request.angi.com/service-request/task/40022?entry_point_id=44934152&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://angi.com/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?id=1449003183639897",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://request.angi.com/service-request/task/40073?entry_point_id=44934110&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?id=1247763370756520",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://request.angi.com/service-request/category/12061?entry_point_id=43605050&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=2156408861851972",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://request.angi.com/service-request/task/40124?entry_point_id=43276713&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.facebook.com/ads/library/?id=786146457552963",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://request.angi.com/service-request/task/61840?entry_point_id=43276760&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://www.facebook.com/ads/library/?id=893191760494508",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://request.angi.com/service-request/category/12054?entry_point_id=42929874&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://www.facebook.com/ads/library/?id=954764033765424",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://request.angi.com/service-request/task/40121?entry_point_id=43023826&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.facebook.com/ads/library/?id=936225699159077",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://request.angi.com/service-request/category/12061?entry_point_id=43605050&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?id=4401824973470521",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://request.angi.com/service-request/task/40113?entry_point_id=44934102&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.facebook.com/ads/library/?id=957144020228914",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://request.angi.com/service-request/task/40879?entry_point_id=43296760&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?id=2190728565069451",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://request.angi.com/service-request/category/12001?entry_point_id=43143046&m=cammfbangiacq&campaign_name=%7B%7Bcampaign.name%7D%7D&fb_ad_id=%7B%7Bad.id%7D%7D",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?id=811933321476308",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.angi.com/: HTTP 403",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "no_observable"
+}

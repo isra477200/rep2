@@ -1,0 +1,502 @@
+{
+  "id": "salesroads",
+  "name": "SalesRoads",
+  "reviewedAt": "2026-08-22T15:50:17.773Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "B2B Appointment Setting Services",
+    "heroObserved": true,
+    "priorSummary": "\"Full SDR Appointment Setting\" y \"Market Research Lead Generation\" con retainer por ciclo de 4 semanas — CONFIRMADO",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 351 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1214 palabras por página comercial recuperada. Muestras breves: “1-800-836-4033” · “B2B Appointment Setting Services” · “Appointment Setting Services Cost: Different Types of Pricing Models”.",
+    "supportingHeadings": [
+      "1-800-836-4033",
+      "PRICING",
+      "Solutions to meet your need, and your bandwidth",
+      "Full SDR Appointment Setting",
+      "Market Research Lead Generation",
+      "Pipeline Acceleration Team",
+      "Growth Enablement Suite",
+      "our solutions",
+      "Choose the best fit for your business",
+      "Wave 'Goodbye' to Your Empty Pipeline",
+      "Let's Talk About Growing Your Pipeline",
+      "100,000+ Appointments Set",
+      "Fueling growth for America's biggest brands",
+      "America's Most-Trusted Sales Outsourcing Firm",
+      "Clutch",
+      "UpCity",
+      "G2",
+      "A Track Record of Success",
+      "Case Study: Rudholm Group",
+      "Case Story: Bold Penguin",
+      "Case Study: Crewhu",
+      "Case Study: ZoomIn",
+      "Case Study: Shell",
+      "Case Study: FCS Roofing Software",
+      "Case Study: Marta",
+      "Case Study: Parker Hannifin",
+      "Case Study: AchieveIt",
+      "Case Study: The Protecht Group",
+      "Case Study: A CSC Subsidiary – The Company Corporation",
+      "Case Study: BioDigital"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Request a Quote",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://salesroads.com/pricing/",
+      "text": "Request a Quote",
+      "href": "https://salesroads.com/request-a-quote/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 141.25
+    },
+    "ctas": [
+      "Request a Quote",
+      "request a quote",
+      "Let's Talk"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://salesroads.com/pricing/",
+        "index": 1,
+        "action": "https://salesroads.activehosted.com/proc.php",
+        "method": "POST",
+        "submitText": "Let's Talk",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 13,
+        "fields": [
+          {
+            "type": "text",
+            "name": "firstname",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "lastname",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Phone",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[4]",
+            "label": null,
+            "placeholder": "Extension",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "customer_account",
+            "label": null,
+            "placeholder": "Company",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "field[6]",
+            "label": null,
+            "placeholder": "Website",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "field[37]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "field[43]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "field[41]",
+            "label": "Yes, we'll be calling into other businesses (B2B)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "field[42]",
+            "label": "Yes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 11 y 11 campos visibles, mínimo 7 obligatorio(s). Fricción alta en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Alta",
+      "minFields": 11,
+      "maxFields": 11,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Full SDR Appointment Setting\" y \"Market Research Lead Generation\" con retainer por ciclo de 4 semanas — CONFIRMADO",
+    "audience": "Empresas B2B en EE.UU. que externalizan su equipo SDR/appointment setting — CONFIRMADO",
+    "prices": [
+      "Yes, we'll be calling into other businesses (B2B) No, we'll be calling consumers (B2C) SalesRoads engagements start at $9,950 for 4 weeks and continue on a retainer basis.",
+      "For example, if an SDR worked 40 hours per week at a rate of $25 per hour, you’d be paying them $1,000 per week.",
+      "The typical cost of a meeting is anywhere from $15 to $100, as it is more expensive to schedule appointments with CEOs than with a lower-level manager.",
+      "Most appointment setting services charge a flat rate of $25 to $50 per hour.2 Pros: Appointment setting services that charge a flat rate make it easier for companies to set aside a specific sum of money for the program.",
+      "Here’s a quick look at the average CPL across various industries: IndustryAverage CPLIT & Services$369.88Healthcare & Medical $285.82Financial Services$271.54Industrial & Manufacturing$235.09Media & Publishing $191.07Consumer Products$182.37Marketing Agencies$172.72Education $65.68Nonprofit$43.36 Source: Marketi…"
+    ],
+    "guarantee": [],
+    "proof": [
+      "Read our case studies to see how we can help your business grow through our award-winning appointment setting services.",
+      "Case Study: ZoomIn Case Study: A CSC Subsidiary – The Company Corporation Case Study: The Protecht Group Case Study: AchieveIt Case Study: Körber Supply Chain Case Study: Optimas Solutions…",
+      "Watch the full case study APPOINTMENT SETTING CASE STUDY Bid Retriever “SalesRoads made every effort to look at our process & to improve how we move people from prospects, to opportunities, to eventual Sa…",
+      "Our client reviews average 4.9/5 stars with most reviews being 5/5.",
+      "Our clients generally have positive things to say about working with us.",
+      "Our clients appreciate our ability to collaborate with their internal teams to drive sales performance."
+    ],
+    "objections": [
+      "Turn Your Sales Team Into A Quota-Crushing Machine No commitments.",
+      "Let's Talk learn about appointment setting Appointment Setting Services FAQ What are appointment setting services?"
+    ],
+    "urgency": [
+      "…BOCA RATON, FL, January 1, 2025 SalesRoads, a leading provider of B2B lead generation and appointment setting services, today announced the acquisition of VSA Prospecting, Read More » For the Third Time, SalesRoads Makes the Inc.",
+      "Read More » May 27, 2026 Sales Tactics Cold Calling Psychology Tricks Every Sales Rep Should Know Cold calling has a reputation for being brutal and for good reason.",
+      "Since then, we have expanded our mission by helping more than 500 companies reach their unique sales potential, creating more than 100,000 new opportunities for our partners in the process.Today, SalesRoads is recognized as the gold-standard B2B appointment setting and SDR outsourcing service.",
+      "Call us now at 1-800-836-4033!",
+      "Accelerate revenue We accelerate your pipeline by scheduling appointments with decision-makers who are ready to buy now, not later.",
+      "revealed today that SalesRoads ranks No."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Yes, we'll be calling into other businesses (B2B) No, we'll be calling consumers (B2C) SalesRoads engagements start at $9,950 for 4 weeks and continue on a retainer basis.",
+          "url": "https://salesroads.com/pricing/",
+          "pageTitle": "Pricing - Sales Outsourcing Company | Outsourced Sales Team Services - SalesRoads",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "The typical cost of a meeting is anywhere from $15 to $100, as it is more expensive to schedule appointments with CEOs than with a lower-level manager.",
+          "url": "https://salesroads.com/outsourcing/appointment-setting-pricing-models/",
+          "pageTitle": "Appointment Setting Services Cost: Different Types of Pricing Models",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "For example, if an SDR worked 40 hours per week at a rate of $25 per hour, you’d be paying them $1,000 per week.",
+          "url": "https://salesroads.com/outsourcing/appointment-setting-pricing-models/",
+          "pageTitle": "Appointment Setting Services Cost: Different Types of Pricing Models",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Most appointment setting services charge a flat rate of $25 to $50 per hour.2 Pros: Appointment setting services that charge a flat rate make it easier for companies to set aside a specific sum of money for the program.",
+          "url": "https://salesroads.com/outsourcing/appointment-setting-pricing-models/",
+          "pageTitle": "Appointment Setting Services Cost: Different Types of Pricing Models",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Here’s a quick look at the average CPL across various industries: IndustryAverage CPLIT & Services$369.88Healthcare & Medical $285.82Financial Services$271.54Industrial & Manufacturing$235.09Media & Publishing $191.07Consumer Products$182.37Marketing Agencies$172.72Education $65.68Nonprofit$43.36 Source: Marketi…",
+          "url": "https://salesroads.com/outsourcing/appointment-setting-pricing-models/",
+          "pageTitle": "Appointment Setting Services Cost: Different Types of Pricing Models",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Yes, we'll be calling into other businesses (B2B) No, we'll be calling consumers (B2C) SalesRoads engagements start at $9,950 for 4 weeks and continue on a retainer basis.",
+          "url": "https://salesroads.com/outsourcing/appointment-setting-pricing-models/",
+          "pageTitle": "Appointment Setting Services Cost: Different Types of Pricing Models",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Read our case studies to see how we can help your business grow through our award-winning appointment setting services.",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Case Study: ZoomIn Case Study: A CSC Subsidiary – The Company Corporation Case Study: The Protecht Group Case Study: AchieveIt Case Study: Körber Supply Chain Case Study: Optimas Solutions…",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Playbook ReviewWe leverage your feedback on your Demand Generation Playbook to perfect our approach and strategy prior to starting SDR training.",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Watch the full case study APPOINTMENT SETTING CASE STUDY Bid Retriever “SalesRoads made every effort to look at our process & to improve how we move people from prospects, to opportunities, to eventual Sa…",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Our client reviews average 4.9/5 stars with most reviews being 5/5.",
+          "url": "https://salesroads.com/reviews/",
+          "pageTitle": "Client Reviews",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Our clients generally have positive things to say about working with us.",
+          "url": "https://salesroads.com/reviews/",
+          "pageTitle": "Client Reviews",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Our clients appreciate our ability to collaborate with their internal teams to drive sales performance.",
+          "url": "https://salesroads.com/reviews/",
+          "pageTitle": "Client Reviews",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Cancel anytime.",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No Commitments.",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Turn Your Sales Team Into A Quota-Crushing Machine No commitments.",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Let's Talk learn about appointment setting Appointment Setting Services FAQ What are appointment setting services?",
+          "url": "https://salesroads.com/appointment-setting-services/",
+          "pageTitle": "B2B Appointment Setting Services | SalesRoads",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Llamada en frío",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://salesroads.com/pricing/",
+        "https://salesroads.com/request-a-quote/",
+        "https://salesroads.com/client-success/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "1-800-836-4033",
+        "B2B Appointment Setting Services",
+        "Appointment Setting Services Cost: Different Types of Pricing Models"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Request a Quote",
+        "request a quote",
+        "Let's Talk"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://salesroads.com/pricing/ · 11 campos",
+        "https://salesroads.com/pricing/ · 11 campos",
+        "https://salesroads.com/request-a-quote/ · 11 campos",
+        "https://salesroads.com/request-a-quote/ · 11 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de precios → “Request a Quote” → formulario con contacto, empresa, web, B2B/B2C y validación de presupuesto (encaje con 9.950 USD/4 semanas) → conversación y propuesta →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://salesroads.com/pricing/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://salesroads.com/request-a-quote/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://salesroads.com/client-success/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://salesroads.com/appointment-setting-services/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://salesroads.com/about-us/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://salesroads.com/outsourcing/appointment-setting-pricing-models/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://salesroads.com/reviews/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://salesroads.com/privacy-policy/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://salesroads.com/case-study/fcs/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://salesroads.com/case-study/case-study-rudholm-group/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=salesroads.com",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=177994025737438",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Request a Quote”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 11 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

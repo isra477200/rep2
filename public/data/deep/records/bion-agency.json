@@ -1,0 +1,414 @@
+{
+  "id": "bion-agency",
+  "name": "BION Agency",
+  "reviewedAt": "2026-08-22T15:50:19.721Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "¿TU NEGOCIO NECESITA MÁS CLIENTES?",
+    "heroObserved": true,
+    "priorSummary": "\"Creamos campañas en Google o Meta Ads\" que \"generan clientes reales\"; sin permanencia, primera campaña \"a los 5 días de la firma\"",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, apoya la promesa en prueba social. Usa 63 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1550 palabras por página comercial recuperada. Muestras breves: “¿TU NEGOCIO NECESITA MÁS CLIENTES?” · “POLÍTICA DE COOKIES” · “Política de privacidad”.",
+    "supportingHeadings": [
+      "¿TU NEGOCIO NECESITA MÁS CLIENTES?",
+      "Si la respuesta es SÍ, estas de suerte, sabemos cómo hacerlo. Creamos campañas en Google o Meta Ads dependiendo del negocio, que generan clientes reales",
+      "¿Qué hacemos?",
+      "Inmersión",
+      "Plan",
+      "Sistema",
+      "Lanzamiento",
+      "Análisis",
+      "Optimización",
+      "¿Cómo lo hacemos?",
+      "Atracción",
+      "Interacción",
+      "Conversión",
+      "¿Quién está detrás de BION Agency?",
+      "Urtzi Saenz de urturi - CEO Y Fundador de BION Agency",
+      "TESTIMONIOS DE CLIENTES",
+      "Preguntas frecuentes",
+      "¡Aquí No gestionamos campañas, Creamos estrategias!",
+      "ESTO ES LO QUE CONSEGUIRÁS CON UNA ESTRATEGIA",
+      "OMNICANAL PERSONALIZADA",
+      "#1 Atacar a tu cliente potencial",
+      "#2 Optimizar los costes de campañas",
+      "#3 Aumentar de la tasa de conversión",
+      "#4 Optimizar los recursos",
+      "¿Qué es la estrategia multicanal?",
+      "LA IMPORTANCIA DE APLICAR UNA ESTRATEGIA MULTICANAL",
+      "Beneficio 1 - Multivisibilidad",
+      "Beneficio 2 - Datos y Análisis Enriquecidos",
+      "Beneficio 3 - Optimización de la Inversión",
+      "Solicita tu propuesta estratégica sin coste"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "CONSULTA GRATUITA",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://bion.agency/",
+      "text": "CONSULTA GRATUITA",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 145.75
+    },
+    "ctas": [
+      "CONSULTA GRATUITA",
+      "Solicitar propuesta gratuita"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://bion.agency/",
+        "index": 1,
+        "action": "https://bion.agency/",
+        "method": "POST",
+        "submitText": "CONSULTA GRATUITA",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[phone]",
+            "label": "Móvil",
+            "placeholder": "Whatsapp number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Menasje",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_626f2e2]",
+            "label": "Acepto los términos y condiciones y la política de privacidad.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://bion.agency/",
+        "index": 2,
+        "action": "https://bion.agency/",
+        "method": "POST",
+        "submitText": "Solicitar propuesta gratuita",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_468ea44]",
+            "label": null,
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_54014de]",
+            "label": null,
+            "placeholder": "La URL de tu negocio",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Menasje",
+            "placeholder": "Describe tu proyecto y lo que necesitas",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_840fb2b]",
+            "label": "Aceptar política de privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Creamos campañas en Google o Meta Ads\" que \"generan clientes reales\"; sin permanencia, primera campaña \"a los 5 días de la firma\"",
+    "audience": "Empresas con \"producto o servicios de alto valor y global\"",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Estrategia Metodología Testimonios Preguntas Menu Estrategia Metodología Testimonios Preguntas ¿TU NEGOCIO NECESITA MÁS CLIENTES?",
+      "Creamos campañas en Google o Meta Ads dependiendo del negocio, que generan clientes reales gracias a una estrategia completa de publicidad + contenido.",
+      "Es decir un sistemas de captación de clientes para tu empresa.",
+      "CONTACTAR AtracciónCualquiera puede montar campañas en Google o Facebook; crear una estrategia para conseguir clientes otra historia.",
+      "ConversiónConseguir clics es fácil; convertir esos clics en clientes, es un arte.",
+      "Urtzi Saenz de urturi - CEO Y Fundador de BION Agency Soy Urtzi, experto en captación de clientes potenciales online."
+    ],
+    "objections": [
+      "No nos gusta hacer contratos de permanencia ya que muchos de nuestros clientes vienen con malas experiencias de agencias anteriores y se sienten atrapados con este contrato.",
+      "Nuria MAteo ⭐⭐⭐⭐⭐ CONTACTAR Preguntas frecuentes ¿Cómo sé si esta agencia sirve para mi negocio?",
+      "¿Por qué debería contratar vuestro servicio?",
+      "¿Hay contrato de permanencia?"
+    ],
+    "urgency": [
+      "…todo otro documento adjunto podrá enviarse a la siguiente dirección y/o correo electrónico: Dirección postal: Artikutza plaza Donostia San Sebastian Correo electrónico: [email protected] Enlaces a sitios web de terceros El Sitio Web puede incluir hipervínculos o enlaces que permiten acceder a páginas web…"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Estrategia Metodología Testimonios Preguntas Menu Estrategia Metodología Testimonios Preguntas ¿TU NEGOCIO NECESITA MÁS CLIENTES?",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Creamos campañas en Google o Meta Ads dependiendo del negocio, que generan clientes reales gracias a una estrategia completa de publicidad + contenido.",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Es decir un sistemas de captación de clientes para tu empresa.",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "CONTACTAR AtracciónCualquiera puede montar campañas en Google o Facebook; crear una estrategia para conseguir clientes otra historia.",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "ConversiónConseguir clics es fácil; convertir esos clics en clientes, es un arte.",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Urtzi Saenz de urturi - CEO Y Fundador de BION Agency Soy Urtzi, experto en captación de clientes potenciales online.",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Nuria MAteo ⭐⭐⭐⭐⭐ CONTACTAR Preguntas frecuentes ¿Cómo sé si esta agencia sirve para mi negocio?",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué debería contratar vuestro servicio?",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Hay contrato de permanencia?",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No nos gusta hacer contratos de permanencia ya que muchos de nuestros clientes vienen con malas experiencias de agencias anteriores y se sienten atrapados con este contrato.",
+          "url": "https://bion.agency/",
+          "pageTitle": "Agencia de Captación de Clientes Potenciales - BION AGENCY",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://bion.agency/",
+        "https://bion.agency/politica-de-cookies/",
+        "https://bion.agency/politica-de-privacidad/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "¿TU NEGOCIO NECESITA MÁS CLIENTES?",
+        "POLÍTICA DE COOKIES",
+        "Política de privacidad"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "CONSULTA GRATUITA",
+        "Solicitar propuesta gratuita"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://bion.agency/ · 5 campos",
+        "https://bion.agency/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → «Consulta gratuita» / propuesta estratégica → formulario con nombre, email, WhatsApp y necesidad → auditoría y reunión de diagnóstico → estrategia personalizada → firma de contrato"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://bion.agency/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://bion.agency/politica-de-cookies/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://bion.agency/politica-de-privacidad/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://bion.agency/aviso-legal",
+      "label": "Fuente pública 4"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://bion.agency/cdn-cgi/l/email-protection: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “CONSULTA GRATUITA”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

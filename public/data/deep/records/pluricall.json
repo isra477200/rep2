@@ -1,0 +1,770 @@
+{
+  "id": "pluricall",
+  "name": "Pluricall",
+  "reviewedAt": "2026-08-22T15:50:17.742Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Contact Center para Microempresas",
+    "heroObserved": true,
+    "priorSummary": "Campañas de outbound (llamada en frío) con el objetivo de agendar reuniones para los comerciales de la empresa cliente",
+    "voice": "Tono cuantitativo, autoridad basada en prueba, urgencia comercial, centrado en la marca, orientado a la acción, apoya la promesa en prueba social. Usa 48 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 327 palabras por página comercial recuperada. Muestras breves: “Marcação de Reuniões” · “Pluricall” · “Contact Center para Microempresas”.",
+    "supportingHeadings": [
+      "Marcação de Reuniões",
+      "Pedido de Proposta",
+      "Pluricall",
+      "Contact Center para Micro Empresas",
+      "Crie Relações de Proximidade com o seu Cliente",
+      "Helpdesk",
+      "Atendimento de Spots",
+      "Serviço de Apoio e Gestão do Cliente",
+      "Não encontrou exatamente o que procura?",
+      "Peça, hoje, uma proposta personalizada!",
+      "Faça a sua Carteira de Clientes Crescer",
+      "Ação de Angariação de Novos Clientes",
+      "Marcação de Reuniões e Gestão de Agenda Comercial",
+      "Geração de Leads",
+      "Promoção de Produtos",
+      "Qualificação de Base de Dados",
+      "Convite a Presença em Eventos",
+      "A Pluricall é mais do que imagina",
+      "Contact Center para Microempresas",
+      "Cree una Relación Estrecha con sus Clientes",
+      "Atendimento de Anuncios de Radio o TV",
+      "Asistencia y Servicio al cliente",
+      "¿No ha encontrado exactamente lo que busca?",
+      "Solicite hoy mismo un presupuesto personalizado",
+      "Aumente su Cartera de Clientes",
+      "Acciones para Captar Nuevos Clientes",
+      "Reserva de Reuniones y Gestión de la Agenda Profesional",
+      "Generación de Leads",
+      "Promoción de Productos",
+      "Cualificación de la Base de Datos"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "REQUEST A QUOTE",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.pluricall.pt/en/contacts/",
+      "text": "REQUEST A QUOTE",
+      "href": "https://www.pluricall.pt/pedido-de-proposta/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 141.25
+    },
+    "ctas": [
+      "Agendar una Reúnion",
+      "REQUEST A QUOTE",
+      "Enviar",
+      "Submit",
+      "Submeter",
+      "Marcar Reunião"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.pluricall.pt/industrias/marcacao-de-reunioes/",
+        "index": 1,
+        "action": "https://www.pluricall.pt/industrias/marcacao-de-reunioes/",
+        "method": "POST",
+        "submitText": "Submeter",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nome",
+            "placeholder": "Nome*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_37d5bb3]",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_a28b64c]",
+            "label": "Telefone",
+            "placeholder": "Telefone*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_09f7d0f]",
+            "label": "Observações",
+            "placeholder": "Observações",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_ad631f5]",
+            "label": "Serviço",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_212febf]",
+            "label": "Privacidade",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pluricall.pt/contactos/",
+        "index": 1,
+        "action": "https://www.pluricall.pt/contactos/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nome",
+            "placeholder": "Nome *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_5755bfc]",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_7bd51a8]",
+            "label": "Tel",
+            "placeholder": "Telemóvel",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d4dd42c]",
+            "label": "Assunto",
+            "placeholder": "Assunto *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_90f8bb8]",
+            "label": "Aceito que a Pluricall trate os dados pessoais acima fornecidos com a",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pluricall.pt/solucoes-micro-empresas/",
+        "index": 1,
+        "action": "https://www.pluricall.pt/solucoes-micro-empresas/",
+        "method": "POST",
+        "submitText": "Marcar Reunião",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pluricall.pt/en/contacts/",
+        "index": 1,
+        "action": "https://www.pluricall.pt/en/contacts/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nome",
+            "placeholder": "Name *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_e46d4d3]",
+            "label": "Empresa",
+            "placeholder": "Company",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_cb959f5]",
+            "label": "Telemóvel",
+            "placeholder": "Phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_aa68e47]",
+            "label": "Assunto",
+            "placeholder": "Subject *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_0bbe719]",
+            "label": "Privacidade",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pluricall.pt/pedido-de-proposta/",
+        "index": 1,
+        "action": "https://www.pluricall.pt/pedido-de-proposta/",
+        "method": "POST",
+        "submitText": "Submeter",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nome",
+            "placeholder": "Nome *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_8f0827d]",
+            "label": "Empresa",
+            "placeholder": "Empresa*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_fed8cfb]",
+            "label": "Telemóvel",
+            "placeholder": "Telemóvel",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_2d03f7e][]",
+            "label": "Atendimento telefónico 24 horas",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_bbf5979][]",
+            "label": "Helpdesk",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_e93fa0c]",
+            "label": "Privacidade",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pluricall.pt/es/contactos-2/",
+        "index": 1,
+        "action": "https://www.pluricall.pt/es/contactos-2/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nome",
+            "placeholder": "Nombre *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_5755bfc]",
+            "label": "Empresa",
+            "placeholder": "Empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_7bd51a8]",
+            "label": "Tel",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_d4dd42c]",
+            "label": "Assunto",
+            "placeholder": "Asunto *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_90f8bb8]",
+            "label": "Acepto que Pluricall trate los datos personales facilitados anteriormente con la finalidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "6 diseño(s) de formulario distinto(s); entre 1 y 7 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Empresa.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 7,
+      "qualification": [
+        "Empresa"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Campañas de outbound (llamada en frío) con el objetivo de agendar reuniones para los comerciales de la empresa cliente",
+    "audience": "Micro, pequenas, médias e grandes empresas portuguesas que necesitan generar reuniones comerciales B2B (y algo de B2C)",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Email Agendar una Reúnion Cree una Relación Estrecha con sus Clientes Soluciones en las que el consumidor da el primer paso en la relación con la marca o empresa.",
+      "Utilizamos esta línea para recopilar datos de clientes y registrar pedidos.",
+      "SOLUCIONES DE INBOUND Asistencia y Servicio al cliente Una línea de atención al cliente diseñada para responder a las preguntas y necesidades de sus clientes.",
+      "SOLUCIONES DE OUTBOUND Acciones para Captar Nuevos Clientes Campaña de captación de clientes, centrada principalmente en la promoción y venta de productos y servicios a clientes actuales y potenciales.",
+      "SOLUCIONES DE OUTBOUND Generación de Leads Generar clientes potenciales a través del contacto outbounddentro de una base de datos sobre el target seleccionado por el cliente con el objetivo de captar clientes potenciales para su negocio.",
+      "Solicite hoy mismo un presupuesto personalizado SOLICITAR PROPUESTA Aumente su Cartera de Clientes Soluciones que se complementan y hacen más completo el contacto con su cliente, centrándose en la promoción y venta de productos o servicios a antiguos, actuales o potenciales clientes."
+    ],
+    "objections": [],
+    "urgency": [
+      "Solicite hoy mismo un presupuesto personalizado SOLICITAR PROPUESTA Aumente su Cartera de Clientes Soluciones que se complementan y hacen más completo el contacto con su cliente, centrándose en la promoción y venta de productos o servicios a antiguos, actuales o potenciales clientes.",
+      "SOLUÇÕES DE INBOUND Atendimento de Spots Atendimento de spots Televisivos ou de Rádio nos quais são promovidos produtos ou serviços."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Email Agendar una Reúnion Cree una Relación Estrecha con sus Clientes Soluciones en las que el consumidor da el primer paso en la relación con la marca o empresa.",
+          "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+          "pageTitle": "Soluciones para microempresas - Pluricall",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Utilizamos esta línea para recopilar datos de clientes y registrar pedidos.",
+          "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+          "pageTitle": "Soluciones para microempresas - Pluricall",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "SOLUCIONES DE INBOUND Asistencia y Servicio al cliente Una línea de atención al cliente diseñada para responder a las preguntas y necesidades de sus clientes.",
+          "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+          "pageTitle": "Soluciones para microempresas - Pluricall",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Solicite hoy mismo un presupuesto personalizado SOLICITAR PROPUESTA Aumente su Cartera de Clientes Soluciones que se complementan y hacen más completo el contacto con su cliente, centrándose en la promoción y venta de productos o servicios a antiguos, actuales o potenciales clientes.",
+          "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+          "pageTitle": "Soluciones para microempresas - Pluricall",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "SOLUCIONES DE OUTBOUND Acciones para Captar Nuevos Clientes Campaña de captación de clientes, centrada principalmente en la promoción y venta de productos y servicios a clientes actuales y potenciales.",
+          "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+          "pageTitle": "Soluciones para microempresas - Pluricall",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "SOLUCIONES DE OUTBOUND Generación de Leads Generar clientes potenciales a través del contacto outbounddentro de una base de datos sobre el target seleccionado por el cliente con el objetivo de captar clientes potenciales para su negocio.",
+          "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+          "pageTitle": "Soluciones para microempresas - Pluricall",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.pluricall.pt/industrias/marcacao-de-reunioes/",
+        "https://www.pluricall.pt/contactos/",
+        "https://www.pluricall.pt/solucoes-micro-empresas/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marcação de Reuniões",
+        "Pluricall",
+        "Contact Center para Microempresas",
+        "Pedido de Proposta"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Submeter",
+        "Enviar",
+        "Marcar Reunião",
+        "Agendar una Reúnion",
+        "REQUEST A QUOTE",
+        "Submit"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.pluricall.pt/industrias/marcacao-de-reunioes/ · 7 campos",
+        "https://www.pluricall.pt/contactos/ · 6 campos",
+        "https://www.pluricall.pt/solucoes-micro-empresas/ · 1 campos",
+        "https://www.pluricall.pt/es/soluciones-para-microempresas/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario de propuesta comercial → diagnóstico del servicio/objetivo → campaña outbound de contact center → cualificación no detallada públicamente → reunión agendada y calendarizada para ventas → facturación"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.pluricall.pt/industrias/marcacao-de-reunioes/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.pluricall.pt/contactos/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.pluricall.pt/solucoes-micro-empresas/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.pluricall.pt/es/soluciones-para-microempresas/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.pluricall.pt/en/contacts/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.pluricall.pt/pedido-de-proposta/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.pluricall.pt/es/contactos-2/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://pluricall.pt/industrias/marcacao-de-reunioes",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://pluricall.pt/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=pluricall.pt",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR09611071940026433537?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/7433985488971436515",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR15181175967776243713?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=C5w5Q5BfkV_L3FpCUpgOo0qKgD97avuJG_ZHMuaUDwI23ARABIIjJgx1gye7thsijoBmIAQGgAbOkitQDyAEJqAMByANAqgRhT9Cb8XlvI9rmDHvtDOztiYG03MpbRGP3EgsUDxPAwsIT1UNsJRaVe70al7Iq7y1yNtj4DB8p8TGjMD3MskAVls917cFmLJoAeIGyeU8mKMCoZA-0-aa3n56SZy8NtPB-YYgGAaAGLoAHtdv1K6gHgcYbqAemvhvYBwDSCAUIgAEQAQ&num=1&cid=CAASEuRoMfoJsHkc87HBzkJy9UE8xQ&sig=AOD64_0VVhsN3gbJxkywA3rOj9rzgkuhCg&client=ca-mongoogle&preview&rf=1&ctype=78&nb=8&adurl=https%3A%2F%2Fwww.pluricall.pt%2F",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/398177049174770166/index.html",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR05956322613880946689?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR04862696671848431617?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR06905437500701933569?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR11115177252386504705?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR03702714378445914113?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR11000441289882730497?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR12047913032316092417?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR04304837079306600449?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR13900363565593788417?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR05634554281223782401?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR12278266808598790145?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "http://www.pluricall.pt/%E2%81%A9",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/13037552907432354302/index.html",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR10412043345994973185/creative/CR02369006499075719169?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.pluricall.pt/wp-content/uploads/2026/04/PlanodePervencaodeRiscosdeCorrupcao.pdf: Contenido no textual: application/pdf",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “REQUEST A QUOTE”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

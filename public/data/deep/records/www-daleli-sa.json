@@ -1,0 +1,483 @@
+{
+  "id": "www-daleli-sa",
+  "name": "www.daleli.sa",
+  "reviewedAt": "2026-08-22T15:50:20.174Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "دليل الشركات السعودية",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, urgencia comercial, explicativo, orientado a la acción. Usa 62 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 930 palabras por página comercial recuperada. Muestras breves: “دليل الشركات السعودية” · “شركة خدمات منع التآكل (ان دى تى )” · “الشركة العالمية للخدمات والانشاءات الصناعية”.",
+    "supportingHeadings": [
+      "دليل الشركات السعودية",
+      "الأنشطة الأكثر بحثًا",
+      "إعلانات واشتراكات مميزة",
+      "شركاء دليلي",
+      "أحدث المقالات",
+      "شركة خدمات منع التآكل (ان دى تى )",
+      "بيانات الشركة",
+      "معرض الصور",
+      "التعليقات",
+      "التصنيفات",
+      "روابط الشركة",
+      "شركات ذات صلة",
+      "أضف شركتك إلى دليل الأعمال السعودي",
+      "البيانات الأساسية",
+      "الموقع والعنوان",
+      "بيانات التواصل",
+      "روابط التواصل الاجتماعي",
+      "الملفات",
+      "معلومات مهمة",
+      "إرشادات",
+      "الشركة العالمية للخدمات والانشاءات الصناعية",
+      "الهجان للخدمات الصناعية",
+      "مؤسسة خليفه أحمد خليفه البوعينين للمقاولات العامة",
+      "ماتكو للخدمات الصناعية"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "حساب جديد",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.daleli.sa/",
+      "text": "حساب جديد",
+      "href": "https://www.daleli.sa/register",
+      "element": "a",
+      "kind": "conversion",
+      "score": 82.75
+    },
+    "ctas": [
+      "حساب جديد",
+      "إرسال الطلب",
+      "إرسال التعليق"
+    ],
+    "captureType": "Alta / listado profesional",
+    "forms": [
+      {
+        "pageUrl": "https://www.daleli.sa/advertisements/ndt-corrosion-control-services",
+        "index": 1,
+        "action": "https://www.daleli.sa/advertisements/ndt-corrosion-control-services",
+        "method": "POST",
+        "submitText": "إرسال التعليق",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "body",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.daleli.sa/advertisements/add-company",
+        "index": 1,
+        "action": "https://www.daleli.sa/advertisements/add-company",
+        "method": "POST",
+        "submitText": "إرسال الطلب",
+        "visibleFieldCount": 20,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name_ar",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name_en",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "city_id",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "category_ids[]",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "description",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "description_en",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": null,
+            "placeholder": "اكتب عنوانًا نصيًا كاملًا",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "location",
+            "label": null,
+            "placeholder": "اكتب وصفًا نصيًا للموقع",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "map_url",
+            "label": null,
+            "placeholder": "https://maps.google.com/...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telephone",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "mobile",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "fax",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "website",
+            "label": null,
+            "placeholder": "https://example.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "facebook",
+            "label": null,
+            "placeholder": "Facebook",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "instagram",
+            "label": null,
+            "placeholder": "Instagram",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "twitter",
+            "label": null,
+            "placeholder": "X / Twitter",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "video",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "logo",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "images[]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "listing",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 20 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: city_id, website.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 20,
+      "qualification": [
+        "city_id",
+        "website"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "الرئيسية أضف شركتك التصنيفات مدونة دليلي AR EN دخول حساب جديد مؤسسة خليفه أحمد خليفه البوعينين للمقاولات العامة Khalifa Ahmed Khalifa Al Buainain General Contracting Est مؤسسة خليفه أحمد خليفه البوعينين للمقاولات العامة عذرًا، لا يتوفر فيديو لهذه الشركة في الوقت الحالي."
+    ],
+    "urgency": [
+      "الرئيسية أضف شركتك التصنيفات مدونة دليلي AR EN دخول حساب جديد الهجان للخدمات الصناعية Al Hajan For Industrial Services ينبع اتصال الآن بيانات الشركة العنوان منطقة الصناعات الخفيفة الجوال 0143926184 الهاتف 0143926184 معرض الصور لا توجد صور إضافية لهذه الشركة حاليًا.",
+      "الرئيسية أضف شركتك التصنيفات مدونة دليلي AR EN دخول حساب جديد ماتكو للخدمات الصناعية MATCO Industrial Services الجبيل اتصال الآن بيانات الشركة العنوان شارع جده الجوال 0133636613 - 0133636614 الهاتف 0133636613 - 0133636614 معرض الصور لا توجد صور إضافية لهذه الشركة حاليًا.",
+      "…ديد الشركة العالمية للخدمات والانشاءات الصناعية International Construction & Manufacturing Services (ICMS) الجبيل اتصال الآن بيانات الشركة الموقع النصي Business Executive Center, الجبيل 35522، السعودية الجوال 0133448662 - 0133448663 الهاتف 0133448662 - 0133448663 الإحداثيات 26.948896, 49.664243 معرض الص…",
+      "اتصال الآن بيانات الشركة العنوان لا يوجد, لا يوجد الموقع النصي لا يوجد رابط الخرائط فتح الموقع على الخريطة الجوال 0133632335 - 0133612339 الهاتف 0113632335 البريد الإلكتروني abdulrahman@biscosaudi.com معرض الصور التعليقات الاسم البريد الإلكتروني عنوان التعليق التعليق إرسال التعليق لا توجد تعليقات منشورة حتى الآن.",
+      "كل المقالات لا توجد مقالات منشورة حتى الآن.",
+      "التعليقات الاسم البريد الإلكتروني عنوان التعليق التعليق إرسال التعليق لا توجد تعليقات منشورة حتى الآن."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "كل التصنيفات مطاعم 11470 عملية بحث مهندسون 9121 عملية بحث نقل مدرسى ونقل جامعى وتوصيل طالبات وتوصيل مدرسات 8924 عملية بحث بيض 7999 عملية بحث معاهد صحية 5987 عملية بحث معدات ثقيلة 5705 عملية بحث محامون 5598 عملية بحث فنادق 5595 عملية بحث فيبرجلاس…",
+          "url": "https://www.daleli.sa/",
+          "pageTitle": "دليلي - دليل الشركات السعودية",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "الرئيسية أضف شركتك التصنيفات مدونة دليلي AR EN دخول حساب جديد مؤسسة خليفه أحمد خليفه البوعينين للمقاولات العامة Khalifa Ahmed Khalifa Al Buainain General Contracting Est مؤسسة خليفه أحمد خليفه البوعينين للمقاولات العامة عذرًا، لا يتوفر فيديو لهذه الشركة في الوقت الحالي.",
+          "url": "https://www.daleli.sa/advertisements/bisco-integrated-services-industrial-corp",
+          "pageTitle": "مؤسسة خليفه أحمد خليفه البوعينين للمقاولات العامة",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.daleli.sa/",
+        "https://www.daleli.sa/advertisements/ndt-corrosion-control-services",
+        "https://www.daleli.sa/advertisements/add-company"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "دليل الشركات السعودية",
+        "شركة خدمات منع التآكل (ان دى تى )",
+        "الشركة العالمية للخدمات والانشاءات الصناعية",
+        "الهجان للخدمات الصناعية"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "حساب جديد",
+        "إرسال التعليق",
+        "إرسال الطلب"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.daleli.sa/advertisements/ndt-corrosion-control-services · 4 campos",
+        "https://www.daleli.sa/advertisements/add-company · 20 campos",
+        "https://www.daleli.sa/advertisements/international-construction-manufacturing-services-icms · 4 campos",
+        "https://www.daleli.sa/advertisements/al-hajan-for-industrial-services · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.daleli.sa/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.daleli.sa/advertisements/ndt-corrosion-control-services",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.daleli.sa/advertisements/add-company",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.daleli.sa/advertisements/international-construction-manufacturing-services-icms",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.daleli.sa/advertisements/al-hajan-for-industrial-services",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.daleli.sa/advertisements/bisco-integrated-services-industrial-corp",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.daleli.sa/advertisements/matco-industrial-services",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó prueba nueva con métrica, cliente, rating o testimonio identificable; la síntesis previa no se eleva a observación actual.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “حساب جديد”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

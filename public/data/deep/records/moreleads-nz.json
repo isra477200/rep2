@@ -1,0 +1,345 @@
+{
+  "id": "moreleads-nz",
+  "name": "MoreLeads.nz",
+  "reviewedAt": "2026-08-22T15:50:18.256Z",
+  "status": "Limitada",
+  "confidence": "Alta",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Leads cualificados para negocios neozelandeses de home services, sin coste inicial ni cuota mensual.",
+    "voice": "Revisión manual: simple, local, anti-agencia, tranquilizador, exclusivo, orientado a riesgo. no upfront costs no monthly fees pay per qualified lead exclusive territory free trial no leads, pay nothing",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Leads cualificados para negocios neozelandeses de home services, sin coste inicial ni cuota mensual.",
+    "audience": "Nueva Zelanda; empresas de servicios para el hogar y profesionales locales.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El negocio de home services solicita entrada y define nicho, territorio y criterios. 2) MoreLeads capta solicitudes locales y las cualifica. 3) Reserva un solo negocio por"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → precalificación [observado] → captación [observado] → prueba [observado] → revisión y precio [observado] → contrato [observado] → producción [observado] → facturación y calidad [observado] → revisión o salida [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://moreleads.nz/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=moreleads.nz",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=MoreLeads.nz",
+      "label": "Fuente pública 3"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "Se recuperaron 1 recurso(s), pero ninguno superó el umbral de página comercial utilizable; XML, contenido vacío y páginas técnicas se excluyeron de cobertura.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Recibir leads locales exclusivos sin adelantar dinero, pagar anuncios ni asumir una cuota fija.",
+      "positioning": "socio local de riesgo compartido",
+      "audience": "Empresas consolidadas de home services en Nueva Zelanda, con trabajo medio superior a NZD 3.000, capacidad operativa y territorio definido; ejemplos: bombas de calor, solar, reformas y oficios especializados.",
+      "voice": [
+        "simple",
+        "local",
+        "anti-agencia",
+        "tranquilizador",
+        "exclusivo",
+        "orientado a riesgo"
+      ],
+      "patterns": [
+        "no upfront costs",
+        "no monthly fees",
+        "pay per qualified lead",
+        "exclusive territory",
+        "free trial",
+        "no leads, pay nothing"
+      ]
+    },
+    "cta": {
+      "primary": "Start Now / Get Started",
+      "secondary": [
+        "Get In Touch",
+        "comprobar encaje durante prueba gratuita"
+      ],
+      "forms": [
+        {
+          "url": "https://moreleads.nz/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "firstName",
+            "lastName",
+            "email",
+            "phone",
+            "businessName",
+            "serviceType",
+            "location",
+            "averageJobValue",
+            "message opcional"
+          ],
+          "fieldCount": 9,
+          "friction": "media-alta",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "La propuesta atrae a home services mediante cero fijo, SEO local y exclusividad territorial. — stage: descubrimiento — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "precalificación",
+        "status": "observado",
+        "detail": "La web filtra por tipo de servicio, ubicación y trabajo medio de NZD 3.000+, además de capacidad y condición de empresa establecida. — stage: precalificación — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario de nueve campos captura empresa, vertical, territorio y economía antes del contacto. — stage: captación — evidenceUrls: https://moreleads.nz/ · https://moreleads.nz/wp-json/moreleads/v1/contact"
+      },
+      {
+        "stage": "prueba",
+        "status": "observado",
+        "detail": "Se ejecuta una prueba gratuita de 2–4 semanas antes de pactar el precio. — stage: prueba — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "revisión y precio",
+        "status": "observado",
+        "detail": "Las partes revisan resultados de la prueba y acuerdan precio por lead según economía y territorio. — stage: revisión y precio — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "contrato",
+        "status": "observado",
+        "detail": "Comienza un contrato exclusivo de tres meses, aunque el copy de cancelación no queda alineado. — stage: contrato — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "producción",
+        "status": "observado",
+        "detail": "MoreLeads mantiene el sitio y SEO; el lead llega directamente por teléfono o email. La rampa publicada es 3–6 meses, con casos tempranos en el primer mes. — stage: producción — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "facturación y calidad",
+        "status": "observado",
+        "detail": "Factura mensual por leads cualificados, hace control mensual y optimización. — stage: facturación y calidad — evidenceUrls: https://moreleads.nz/"
+      },
+      {
+        "stage": "revisión o salida",
+        "status": "observado",
+        "detail": "Revisión trimestral; al salir, MoreLeads conserva sus sitios y redirige los futuros leads. — stage: revisión o salida — evidenceUrls: https://moreleads.nz/"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "currency: NZD — typicalPerQualifiedLead: min: 80 — max: 200 — setupFee: 0 — subscriptionFee: 0 — adSpend: 0 — billing: Factura mensual por los leads cualificados entregados. — exactUrl: https://moreleads.nz/ — evidenceAssetUrl: https://moreleads.nz/wp-content/themes/moreleads-theme/assets/index-oCmtvzvV.js?ver=1.0.1 — caveat: El precio exacto se acuerda tras la prueba según industria, ubicación, valor del trabajo y margen; no existe tarifa pública por categoría o territorio."
+      ],
+      "contract": [
+        "Tras la prueba se acuerda precio y comienza un contrato exclusivo de tres meses, con reporting mensual y revisión trimestral. El copy también dice sin compromiso largo, sin penalización y posibilidad de no continuar en cualquier momento. — exactUrl: https://moreleads.nz/ — evidenceAssetUrl: https://moreleads.nz/wp-content/themes/moreleads-theme/assets/index-oCmtvzvV.js?ver=1.0.1"
+      ],
+      "guarantee": [
+        "Prueba gratuita de 2–4 semanas, cero setup o suscripción y pago solo por lead cualificado entregado. No garantiza volumen, ventas ni revenue; la exclusividad cubre un negocio por territorio durante la relación acordada. — exactUrl: https://moreleads.nz/ — evidenceAssetUrl: https://moreleads.nz/wp-content/themes/moreleads-theme/assets/index-oCmtvzvV.js?ver=1.0.1"
+      ]
+    },
+    "proof": [
+      "claims: 45+ años de experiencia combinada del equipo · Sandra: 25+ años en web, agencia, SEO e IA · John: 20+ años en ventas, marketing y coaching · la mayoría de clientes recibe 5–15 leads al mes tras la rampa · algunos sitios producen en el primer mes — quality: baja-media — caveat: No se localizaron casos nombrados con periodo, tráfico, definición de cualificado, leads aceptados, ventas o facturación. 'La mayoría' no incluye muestra ni denominador."
+    ],
+    "objections": [
+      "objection: No quiero pagar antes de comprobarlo. — answer: Prueba gratuita de 2–4 semanas y precio acordado después.",
+      "objection: ¿Compartís el lead? — answer: Un negocio por territorio durante la exclusividad.",
+      "objection: ¿Tengo que pagar publicidad? — answer: No; el modelo declarado se apoya en SEO local y no cobra ad spend.",
+      "objection: ¿Cuánto tarda? — answer: Rampa habitual de 3–6 meses; algunos sitios generan en el primer mes.",
+      "objection: ¿Qué es un lead cualificado? — answer: La definición, rechazo, duplicados y reposición no se publican; es el punto de riesgo del modelo.",
+      "objection: ¿Me quedo con el activo SEO? — answer: No; MoreLeads conserva la propiedad de los sitios y redirige futuros leads al terminar."
+    ],
+    "technology": [
+      "WordPress — basis: shell y endpoint REST oficiales",
+      "React — basis: bundle de aplicación pública",
+      "WordPress REST API — basis: acción pública /wp-json/moreleads/v1/contact",
+      "CRM — basis: la entrega es por teléfono/email; no se publica marca o integración"
+    ],
+    "contradictions": [
+      "'No long-term commitments' y 'cancel anytime' conviven con un contrato exclusivo de tres meses y revisión trimestral; falta una regla de salida única. — severity: alta",
+      "'No monthly fees' puede confundirse con no recibir factura mensual; en realidad no hay fijo, pero sí facturación mensual por leads. — severity: media",
+      "El lead cualificado activa el cobro, pero no hay definición pública, evidencias, exclusiones, duplicado, rechazo ni remedio. — severity: alta",
+      "'Proven results' y 5–15 leads para la mayoría no se apoyan en casos nombrados, muestra o periodo común. — severity: media",
+      "La exclusividad territorial es central, pero no se publica cómo se delimita, reserva, pierde o reasigna el territorio. — severity: alta",
+      "El cliente financia resultados unitarios pero no construye un activo SEO propio: los sitios y los futuros leads permanecen con MoreLeads. — severity: media"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "Auditoría pública sin enviar el formulario, iniciar la prueba, recibir leads ni revisar contrato privado.",
+      "El HTML inicial es un contenedor de aplicación; parte del texto y el formulario se verificaron en el bundle oficial servido por el dominio.",
+      "No se observaron criterios contractuales de lead, territorios disponibles, clientes nombrados ni panel de reporting."
+    ],
+    "lessons": {
+      "copy": [
+        "prueba antes del precio",
+        "un cliente por territorio",
+        "rampa orgánica realista",
+        "declaración de propiedad del activo"
+      ],
+      "adapt": [
+        "precio por economía comprobada",
+        "cualificación por valor medio",
+        "control de calidad mensual",
+        "revisión trimestral",
+        "Hacer un piloto por territorio con 10 leads, definición contractual, evidencias, ventana de rechazo y opción de adquirir o licenciar el activo SEO.",
+        "La prueba gratuita reduce el riesgo inicial, pero la verdadera confianza depende de definir la unidad facturable y el derecho territorial con el mismo detalle que el precio."
+      ],
+      "avoid": [
+        "contrato y cancelación incompatibles",
+        "qualified sin definición",
+        "proven sin caso",
+        "ocultar que mensual significa facturación variable"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://moreleads.nz/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://moreleads.nz/wp-content/themes/moreleads-theme/assets/index-oCmtvzvV.js?ver=1.0.1",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://moreleads.nz/wp-json/moreleads/v1/contact",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "manual_only"
+}

@@ -1,0 +1,400 @@
+{
+  "id": "querybay",
+  "name": "QueryBay",
+  "reviewedAt": "2026-08-22T15:50:17.559Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Outreach that converts.Pipeline that scales.",
+    "heroObserved": true,
+    "priorSummary": "Equipo gestionado de lead generation y multichannel outreach B2B: datos verificados, LinkedIn, cold email, WhatsApp, llamadas/AI voice, gestión de respuestas y reuniones cualificadas en calendario; también growth/ads/CRO.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la venta en reversión de riesgo. Usa 64 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 567 palabras por página comercial recuperada. Muestras breves: “Outreach that converts.Pipeline that scales.” · “Contact” · “Terms of Service”.",
+    "supportingHeadings": [
+      "Outreach that converts.Pipeline that scales.",
+      "Everything you need to fill your pipeline",
+      "Multichannel Outreach",
+      "Lead Generation & Data",
+      "Growth Marketing",
+      "Appointment Setting",
+      "LATAM + Ghana Talent",
+      "Templates & Automation",
+      "We reach your prospects wherever they are",
+      "Plans that scale with your pipeline",
+      "Boring where it matters",
+      "Cancel anytime",
+      "Clear scope, clear quote",
+      "Real human reply within 24h",
+      "Your data stays yours",
+      "Questions, answered honestly",
+      "Tell us about your project",
+      "Services",
+      "Company",
+      "Platform",
+      "Contact",
+      "About QueryBay",
+      "The team behind your pipeline, across LATAM and Ghana",
+      "Lead Generation Blog",
+      "Best UI components for modern websites",
+      "9 simple ways to improve your design skills",
+      "Tips to quickly improve your coding speed.",
+      "Terms of Service",
+      "1.The Services",
+      "2.Eligibility & Accounts"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.querybay.com/",
+      "text": "Contact",
+      "href": "https://www.querybay.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Book a free call",
+      "Contact",
+      "Get a quote",
+      "X",
+      "LinkedIn",
+      "Instagram",
+      "Create account",
+      "Talk to our team"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.querybay.com/",
+        "index": 1,
+        "action": "https://www.querybay.com/",
+        "method": "GET",
+        "submitText": "Book a free call",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Name",
+            "placeholder": "Your name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Company",
+            "placeholder": "Your company",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email",
+            "placeholder": "you@company.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "I'm interested in",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": "Message (optional)",
+            "placeholder": "Tell us a bit more...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Company.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": [
+        "Company"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Calendly"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Equipo gestionado de lead generation y multichannel outreach B2B: datos verificados, LinkedIn, cold email, WhatsApp, llamadas/AI voice, gestión de respuestas y reuniones cualificadas en calendario; también growth/ads/CRO.",
+    "audience": "Equipos B2B que venden a cuentas objetivo y quieren un SDR/outbound team externalizado, con talento operativo en LATAM y Ghana y horario compatible con EE. UU.",
+    "prices": [],
+    "guarantee": [
+      "We don't claim it's risk-free since LinkedIn automation is in a gray area, but our guardrails are stricter than every competitor we've benchmarked.Which channels do you run?LinkedIn, cold email, WhatsApp, and outbound calling, coordinated as one campaign."
+    ],
+    "proof": [
+      "No asterisks.How quickly will I see booked meetings?Most clients see their first qualified meetings within 2 to 4 weeks."
+    ],
+    "objections": [
+      "…aseDatabase & auth · row-level securityVercelEdge delivery · 99.99% uptimeCaddyTLS end-to-end · Let’s Encrypt auto-renewCancel anytimeSelf-serve cancellation from your dashboard.",
+      "No long contracts, no surprises.",
+      "No retention calls, no questions.Clear scope, clear quoteEvery proposal lists exact deliverables and KPIs before you commit.",
+      "We don't sell, share, or profile.FAQQuestions, answered honestlyWhat we tell you in sales is what you get in production.",
+      "Either way the data is refreshed continuously so campaigns never run on stale contacts.Can I cancel anytime?Yes.",
+      "No friction, no long commitments.Get startedSign in+12kmeetings booked9.1%average reply rate4 channelsLinkedIn · Email · WhatsApp · Call7 daysto campaign launchServicesEverything you need to fill your pipelineA full lead generation stack: data, outreach, and booked meetings."
+    ],
+    "urgency": [
+      "Access is limited to the team running your campaigns, with audit logging.How much does it cost?Every engagement is scoped to your market, target list size, and channel mix, so we quote per client rather than list a fixed number.",
+      "We integrate Instantly, Smartlead, Apollo, HubSpot, and your CRM to operate at scale.Multichannel OutreachWe reach your prospects wherever they areWe don't rely on a single channel.",
+      "Ask us anythingGet started todayTell us about your projectBook a free 15-min call.",
+      "No commitment.Get started todayTell us about your projectBook a free 15-min call.",
+      "We do not knowingly collect personal information from children.",
+      "…build a reliable pipeline of qualified leads using LinkedIn outreach and cold email, including templates you can reuse today.Start by defining your Ideal Customer Profile (ICP) and target accounts."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "We don't claim it's risk-free since LinkedIn automation is in a gray area, but our guardrails are stricter than every competitor we've benchmarked.Which channels do you run?LinkedIn, cold email, WhatsApp, and outbound calling, coordinated as one campaign.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "No asterisks.How quickly will I see booked meetings?Most clients see their first qualified meetings within 2 to 4 weeks.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "No friction, no long commitments.Get startedSign in+12kmeetings booked9.1%average reply rate4 channelsLinkedIn · Email · WhatsApp · Call7 daysto campaign launchServicesEverything you need to fill your pipelineA full lead generation stack: data, outreach, and booked meetings.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No long contracts, no surprises.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…aseDatabase & auth · row-level securityVercelEdge delivery · 99.99% uptimeCaddyTLS end-to-end · Let’s Encrypt auto-renewCancel anytimeSelf-serve cancellation from your dashboard.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No retention calls, no questions.Clear scope, clear quoteEvery proposal lists exact deliverables and KPIs before you commit.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We don't sell, share, or profile.FAQQuestions, answered honestlyWhat we tell you in sales is what you get in production.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Either way the data is refreshed continuously so campaigns never run on stale contacts.Can I cancel anytime?Yes.",
+          "url": "https://www.querybay.com/",
+          "pageTitle": "QueryBay: Lead Generation & Multichannel Outreach",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "Email",
+        "WhatsApp",
+        "Llamada en frío",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.querybay.com/",
+        "https://www.querybay.com/contact",
+        "https://www.querybay.com/about"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Outreach that converts.Pipeline that scales.",
+        "Contact",
+        "Terms of Service",
+        "Privacy Policy"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Get a quote",
+        "Talk to our team",
+        "Book a free call",
+        "Create account",
+        "LinkedIn",
+        "X",
+        "Instagram"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.querybay.com/ · 5 campos",
+        "https://www.querybay.com/contact · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Book a free call",
+        "Book a free call"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Llamada gratuita de 15 min → auditoría de outreach + 3 plantillas + plan 90 días → propuesta con entregables/KPI → ICP/lista → campañas multicanal → gestión y"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.querybay.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.querybay.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.querybay.com/about",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.querybay.com/blog",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.querybay.com/terms",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.querybay.com/privacy",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.querybay.com/blog-details",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=querybay.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=QueryBay&search_type=keyword_unordered",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://querybay.com/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Calendly) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

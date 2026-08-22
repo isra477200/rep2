@@ -1,0 +1,416 @@
+{
+  "id": "sea-pricing",
+  "name": "SeA pricing",
+  "reviewedAt": "2026-08-22T15:50:20.089Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "세일즈맵X디지오션 웨비나",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 515 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1702 palabras por página comercial recuperada. Muestras breves: “SeA 가격 알아보기” · “AI CRM 세일즈맵” · “CRM 기능, 도입 후 온보딩 절차와 관련해궁금하신 점이 있나요?”.",
+    "supportingHeadings": [
+      "SeA 가격 알아보기",
+      "요금 계산하기",
+      "왜 사람이 아닌,AI 영업사원이어야 할까요?",
+      "일반 영업사원 (SDR)",
+      "SeA",
+      "근무시간",
+      "주 5일, 업무시간 내",
+      "365일 / 24시간",
+      "응답 속도",
+      "평균 수 시간~다음 날",
+      "5초 이내",
+      "처리량",
+      "하루 최대 20~30건 후속 대응",
+      "선제 / 동시 대응",
+      "리서치",
+      "리드당 30분 이상 직접 조사",
+      "실시간 자동",
+      "퀄리파잉",
+      "경험과 감에 의존",
+      "데이터 기반 일관 판단",
+      "인수인계",
+      "구두 전달, 메모",
+      "구조화된 브리핑",
+      "비용",
+      "월 300~500만원",
+      "월 99,000원+ 대화당 1,000원",
+      "온보딩",
+      "2~4주 교육",
+      "5분 이내",
+      "B2B 팀의 AI 영업 파트너"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "도입 문의",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://salesmap.kr/home",
+      "text": "도입 문의",
+      "href": "https://salesmap.kr/demo",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143.75
+    },
+    "ctas": [
+      "도입 문의",
+      "문의 남기기",
+      "무료로 시작하기",
+      "7일 무료 체험하기",
+      "서비스･온보딩 소개서",
+      "지금 바로 SeA 7일 무료 체험"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://salesmap.kr/product/sea/pricing",
+        "index": 1,
+        "action": "https://salesmap.kr/product/sea/pricing",
+        "method": "GET",
+        "submitText": "문의 남기기",
+        "visibleFieldCount": 16,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Name",
+            "label": "이름*",
+            "placeholder": "이름을 입력하세요",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Company",
+            "label": "회사명*",
+            "placeholder": "회사명을 입력하세요",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "Phone number",
+            "label": "전화번호*",
+            "placeholder": "전화번호를 입력하세요",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "Email",
+            "label": "이메일*",
+            "placeholder": "이메일 주소를 입력하세요",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "회사 홈페이지 URL",
+            "label": "회사 홈페이지 URL",
+            "placeholder": "기업 홈페이지 주소를 입력하세요",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "description",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "feedback",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "notes",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "details",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "remarks",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "comments",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 16 y 16 campos visibles, mínimo 3 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: website, company.",
+      "friction": "Alta",
+      "minFields": 16,
+      "maxFields": 16,
+      "qualification": [
+        "website",
+        "company"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "SalesMapCRM 소개솔루션고객 사례리소스가격로그인무료로 시작하기AI 영업사원CRM 소개Why CRMCRM이 해결하는 B2B 문제 25가지CRM 12종 비교가격·기능 비교표 제공타 솔루션 비교vs 세일즈포스복잡한 설정 없이 더 빠르게vs 허브스팟국내 비즈니스에 특화된 기능으로vs 파이프드라이브마케팅과 세일즈를 연결하는vs 먼데이닷컴프로젝트가 아닌, 고객에…",
+      "B2B 마케터는 왜 성과를 보여주기 어려울까?Chapter 1.B2B 마케터는 왜 성과를 보여주기 어려울까?길고 복잡한 B2B 고객의 구매 여정길고 복잡한 B2B 고객의 구매 여정실무자와 경영진의 시선의 괴리실무자와 경영진의 시선의 괴리Chapter 2.",
+      "…이 있다면 편하게 문의해 주세요 14일 동안 세일즈맵을 무료로 사용해 보실 수도 있어요도입 문의무료로 시작하기기능웹 폼알림자동화보안대시보드연동솔루션마케터Why CRMB2B팀 리더세일즈맨서비스･온보딩 소개서CRM 비교고객 사례세일즈맵 +도입 문의가격CRM 플랜온보딩 플랜고객 지원가이드북가이드 영상업데이트 노트블로그인사이트블로그 홈B2B 위키CRM 템플릿세일즈맵 팀이벤트자료GTM eBookGTM 웨비나뉴스레터2026 B2B 캘린더AI 트렌드 리포트(주) 세일즈맵 | 대표자 : 정희영사업자등록번호 : 525-87-02702 | 통신판매신고번호 :…"
+    ],
+    "objections": [],
+    "urgency": [
+      "패스트캠퍼스 B2B 본부처럼 마케터와 세일즈맨의 경계없는 협업을 이끌어내고 싶다면 지금 30일 체험을 시작해 보세요!함께 보면 좋을 포스트함께 보면 좋을 포스트[백패커] 반복되는 업무 자동화로 영업 성과 300% 상승백퍼커는 세일즈맵을 어떻게 활용하고 있을까요?",
+      "패스트캠퍼스 B2B 본부처럼 마케터와 세일즈맨의 경계없는 협업을 이끌어내고 싶다면 지금 30일 체험을 시작해 보세요!👉 패스트캠퍼스 B2B 교육사업본부패스트캠퍼스 B2B 교육사업본부는 기업의 임직원 성장에 필요한 온/오프라인 교육 프로그램과 HRD 컨설팅 서비스를 제공하고 있습니다.",
+      "오늘날 B2B 고객은 광고나 콜드 메일 한 통에 쉽게 반응하지 않습니다.",
+      "그리고 정말 필요하다고 느낄 때가 되어서야 브랜드에 접촉합니다.그래서 단순히 연락처를 확보한 뒤 세일즈팀이 전화를 걸어 제품/솔루션의 장점을 설명하는 방식은, 정보가 넘쳐나는 오늘날 고객에게 충분한 신뢰나 설득력을 주지 못합니다.",
+      "세일즈팀은 연락이 닿지 않거나 구매 의향이 전혀 없는 리드 때문에 리소스를 낭비하고, 마케팅 팀은 퍼포먼스 수치가 있지만 매출 기여도는 떨어지는 괴리를 경험하는 상황이 생기는 것입니다.‘고객 스스로의 리서치’가 구매 여정의 핵심이 된 지금, 마케터는 더 이상 일방적으로 메시지를 던지는 앵무새가 아니라, 고객이 찾아올 이유를 만드는 전략가가",
+      "단순히 정보를 전달하는 것이 아니라, 고객이 어떤 상황에 놓여 있는지, 어떤 질문을 던지고 있는지를 먼저 고민해야 하니까요.그렇다고 지금까지 해오고 있던 리드젠 전략을 버릴 필요는 없습니다."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "SalesMapCRM 소개솔루션고객 사례리소스가격로그인무료로 시작하기AI 영업사원CRM 소개Why CRMCRM이 해결하는 B2B 문제 25가지CRM 12종 비교가격·기능 비교표 제공타 솔루션 비교vs 세일즈포스복잡한 설정 없이 더 빠르게vs 허브스팟국내 비즈니스에 특화된 기능으로vs 파이프드라이브마케팅과 세일즈를 연결하는vs 먼데이닷컴프로젝트가 아닌, 고객에…",
+          "url": "https://salesmap.kr/offer/webinar-lead-generation-vs-demand-generation",
+          "pageTitle": "[세일즈맵X디지오션 웨비나] B2B 마케터, 매출에 어떻게 기여하고 계신가요? (feat. 리드젠 vs 디맨젠)",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "B2B 마케터는 왜 성과를 보여주기 어려울까?Chapter 1.B2B 마케터는 왜 성과를 보여주기 어려울까?길고 복잡한 B2B 고객의 구매 여정길고 복잡한 B2B 고객의 구매 여정실무자와 경영진의 시선의 괴리실무자와 경영진의 시선의 괴리Chapter 2.",
+          "url": "https://salesmap.kr/offer/webinar-lead-generation-vs-demand-generation",
+          "pageTitle": "[세일즈맵X디지오션 웨비나] B2B 마케터, 매출에 어떻게 기여하고 계신가요? (feat. 리드젠 vs 디맨젠)",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…이 있다면 편하게 문의해 주세요 14일 동안 세일즈맵을 무료로 사용해 보실 수도 있어요도입 문의무료로 시작하기기능웹 폼알림자동화보안대시보드연동솔루션마케터Why CRMB2B팀 리더세일즈맨서비스･온보딩 소개서CRM 비교고객 사례세일즈맵 +도입 문의가격CRM 플랜온보딩 플랜고객 지원가이드북가이드 영상업데이트 노트블로그인사이트블로그 홈B2B 위키CRM 템플릿세일즈맵 팀이벤트자료GTM eBookGTM 웨비나뉴스레터2026 B2B 캘린더AI 트렌드 리포트(주) 세일즈맵 | 대표자 : 정희영사업자등록번호 : 525-87-02702 | 통신판매신고번호 :…",
+          "url": "https://salesmap.kr/offer/webinar-lead-generation-vs-demand-generation",
+          "pageTitle": "[세일즈맵X디지오션 웨비나] B2B 마케터, 매출에 어떻게 기여하고 계신가요? (feat. 리드젠 vs 디맨젠)",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "All rights reservedCRM 소개솔루션고객 사례리소스가격로그인무료로 시작하기AI 영업사원CRM 소개Why CRMCRM이 해결하는 B2B 문제 25가지CRM 12종 비교가격·기능 비교표 제공타 솔루션 비교vs 세일즈포스복잡한 설정 없이 더 빠르게vs 허브스팟국내 비즈니스에 특화된 기능으로vs 파이프드라이브마케팅과 세일즈를 연결하는vs 먼데이닷컴프로젝트가 아닌, 고객에 집중📗 지금 바로 웨비나 자료 다운받기",
+          "url": "https://salesmap.kr/offer/webinar-lead-generation-vs-demand-generation",
+          "pageTitle": "[세일즈맵X디지오션 웨비나] B2B 마케터, 매출에 어떻게 기여하고 계신가요? (feat. 리드젠 vs 디맨젠)",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://salesmap.kr/product/sea/pricing",
+        "https://salesmap.kr/home",
+        "https://salesmap.kr/demo"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "SeA 가격 알아보기",
+        "AI CRM 세일즈맵",
+        "CRM 기능, 도입 후 온보딩 절차와 관련해궁금하신 점이 있나요?",
+        "세일즈맵X디지오션 웨비나"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "무료로 시작하기",
+        "7일 무료 체험하기",
+        "지금 바로 SeA 7일 무료 체험",
+        "문의 남기기",
+        "도입 문의",
+        "서비스･온보딩 소개서"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://salesmap.kr/product/sea/pricing · 16 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://salesmap.kr/product/sea/pricing",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://salesmap.kr/home",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://salesmap.kr/demo",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://salesmap.kr/blog/fastcampus-b2b-salesmap-success-story",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://salesmap.kr/offer/webinar-lead-generation-vs-demand-generation",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://salesmap.kr/blog/category/about-salesmap-team",
+      "label": "Fuente pública 6"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “도입 문의”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 16 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

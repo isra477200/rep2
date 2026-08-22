@@ -1,0 +1,604 @@
+{
+  "id": "remosell-call-agent-network",
+  "name": "REMOSELL Call / Agent Network",
+  "reviewedAt": "2026-08-22T15:50:17.608Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "CONTACTお問い合わせ",
+    "heroObserved": true,
+    "priorSummary": "Telemarketing B2B japonés con listas de empresas en contratación, callers freelance experimentados y tres modelos: fijo mensual, pago por llamada conectada + resultado, o performance por cita/solicitud de información.",
+    "voice": "Tono cuantitativo, enérgico, conciso, orientado a la acción. Usa 361 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 143 palabras por página comercial recuperada. Muestras breves: “HR業界の新規開拓を ブーストさせる” · “お問い合わせ” · “COMPANY企業概要”.",
+    "supportingHeadings": [
+      "HR業界の新規開拓を ブーストさせる",
+      "人事・採用宛の 電話営業（テレアポ・BDR）に最適",
+      "選ばれる理由",
+      "REASONS",
+      "100媒体以上からリスト化",
+      "フリーランスが実働",
+      "データドリブンなPDCA",
+      "利用実績",
+      "RESULTS",
+      "離職防止SaaS",
+      "複業求人広告",
+      "介護人材紹介",
+      "フリーランスマッチング",
+      "特定技能人材紹介",
+      "中途人材広告",
+      "Webマーケ支援",
+      "SESアライアンス",
+      "短期人材派遣",
+      "新卒求人広告",
+      "ITエンジニア人材紹介",
+      "ECコンサルティング",
+      "女性転職支援",
+      "外国人採用支援",
+      "DXコンサルティング",
+      "単日バイトマッチング",
+      "料金プラン",
+      "PRICE",
+      "新着記事",
+      "NEW ARTICLES",
+      "【2022年最新式】テレアポはPDCAを回せば必ず成果が出せる！【実践例も紹介】"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "お問い合わせ",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://agent-network.com/remosell/",
+      "text": "お問い合わせ",
+      "href": "https://agent-network.com/remosell/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.5
+    },
+    "ctas": [
+      "資料請求",
+      "お問い合わせ",
+      "法人の方はこちらからPR TIMES記事のお問い合わせ",
+      "CONTACT",
+      "こちら",
+      "確認画面へ",
+      "入力内容の確認へ",
+      "個人の方はこちらから"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://agent-network.com/remosell/contact/",
+        "index": 1,
+        "action": "https://agent-network.com/remosell/contact/",
+        "method": "POST",
+        "submitText": "確認画面へ",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "lastname",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "firstname",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "mail",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "inquiry",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacy[data][]",
+            "label": "プライバシーポリシーに同意する",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://agent-network.com/contact/business/",
+        "index": 1,
+        "action": "https://agent-network.com/contact/business/",
+        "method": "POST",
+        "submitText": "入力内容の確認へ",
+        "visibleFieldCount": 14,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "business_area[data][]",
+            "label": "デジタルデバイド",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "content",
+            "label": "詳しいサービス内容を知りたい",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "remarks",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": "株式会社エージェント",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company_kana",
+            "label": null,
+            "placeholder": "エージェント",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zip",
+            "label": null,
+            "placeholder": "150-0043",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": null,
+            "placeholder": "東京都渋谷区道玄坂2-25-12 道玄坂通5F",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "エージェント太郎",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "kana",
+            "label": null,
+            "placeholder": "エージェントタロウ",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "department",
+            "label": null,
+            "placeholder": "営業部",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "director",
+            "label": null,
+            "placeholder": "営業",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "mail",
+            "label": null,
+            "placeholder": "info@agent-network.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "tel",
+            "label": null,
+            "placeholder": "03-3780-3911",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacy[data][]",
+            "label": "個人情報の取り扱いに同意する",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://agent-network.com/contact/personal/",
+        "index": 1,
+        "action": "https://agent-network.com/contact/personal/",
+        "method": "POST",
+        "submitText": "入力内容の確認へ",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "service[data][]",
+            "label": "弊社求人へのご応募",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "remarks",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "エージェント太郎",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "kana",
+            "label": null,
+            "placeholder": "エージェントタロウ",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "mail",
+            "label": null,
+            "placeholder": "info@agent-network.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "tel",
+            "label": null,
+            "placeholder": "03-3780-3911",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "zip",
+            "label": null,
+            "placeholder": "150-0042",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": null,
+            "placeholder": "東京都渋谷区宇田川33-7 アイ・アンド・イー渋谷ビル4F",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "privacy[data][]",
+            "label": "個人情報の取り扱いに同意する",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 7 y 14 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: company, company_kana.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 14,
+      "qualification": [
+        "company",
+        "company_kana"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Telemarketing B2B japonés con listas de empresas en contratación, callers freelance experimentados y tres modelos: fijo mensual, pago por llamada conectada + resultado, o performance por cita/solicitud de información.",
+    "audience": "Principalmente RRHH, recruiting, SaaS y servicios B2B que quieren llamar a empresas con señales de contratación; admite cualquier industria B2B, no llamadas B2C.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "Google Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://agent-network.com/remosell/",
+        "https://agent-network.com/remosell/contact/",
+        "https://agent-network.com/remosell/company/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "HR業界の新規開拓を ブーストさせる",
+        "お問い合わせ",
+        "COMPANY企業概要",
+        "CONTACTお問い合わせ"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "お問い合わせ",
+        "資料請求",
+        "CONTACT",
+        "確認画面へ",
+        "法人の方はこちらからPR TIMES記事のお問い合わせ",
+        "個人の方はこちらから",
+        "こちら",
+        "入力内容の確認へ"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://agent-network.com/remosell/contact/ · 7 campos",
+        "https://agent-network.com/contact/business/ · 14 campos",
+        "https://agent-network.com/contact/personal/ · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Señales de contratación en 100+ portales → lista gratis → Must/Want y script → callers remotos → llamada conectada → cita o petición de información → grabaciones/datos →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://agent-network.com/remosell/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://agent-network.com/remosell/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://agent-network.com/remosell/company/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://agent-network.com/corporate/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://agent-network.com/contact/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://agent-network.com/contact/business/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://agent-network.com/contact/personal/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR01333509494830792705?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR02766617279801065473?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR11939394189592100865?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR16863447063424139265?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR17678668964722376705?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR17935130945254326273?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR17765996576246857729?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR06013315885006061569/creative/CR15943298836206714881?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=REMOSELL%20Call%20%2F%20Agent%20Network",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://agent-network.com/remosell/lp/",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://agent-network.com/remosell/request/",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://agent-network.com/news/press-release_3013/",
+      "label": "Fuente pública 20"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “お問い合わせ”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

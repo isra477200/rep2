@@ -1,0 +1,577 @@
+{
+  "id": "clientes-potenciales-com",
+  "name": "Clientes-Potenciales.com",
+  "reviewedAt": "2026-08-22T15:50:19.079Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Conseguimos Clientes Para Tu Empresa",
+    "heroObserved": true,
+    "priorSummary": "Intermediación en venta de contactos: captan demanda mediante portales web posicionados en buscadores y revenden esos contactos a técnicos y empresas. \"solo pagarás por Leads de Clientes Potenciales que buscan los servicios\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 111 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1167 palabras por página comercial recuperada. Muestras breves: “Conseguimos Clientes Para Tu Empresa” · “Contacto” · “Leads de Climatización (Clientes)”.",
+    "supportingHeadings": [
+      "Conseguimos Clientes Para Tu Empresa",
+      "Clientes",
+      "Sectores",
+      "Provincias",
+      "Hacemos que tu negocio crezca",
+      "Comprar Clientes",
+      "Venta de avisos de reparaciones, instalaciones y construcciones",
+      "Leads de Climatizción (Clientes)",
+      "¿Qué es un Lead de Climatización?",
+      "Leads (Clientes) de Climatización por Provincia",
+      "Leads de Reparación de Electrodomésticos (Clientes)",
+      "¿Qué es un Lead de Reparación de Electrodomésticos?",
+      "Leads (Clientes) de Reparación de Electrodomésticos por Provincia",
+      "Testimonios",
+      "La relación es buenísima, son serios y formales y desde que trabajamos con ellos no nos ha faltado el trabajo y por supuesto hemos ganado",
+      "Lástima que no los hayamos conocido antes. Nos han dado trabajos con los que con uno solo hemos amortizado toda la inversión con ellos de",
+      "¿Estás listo para Crecer?",
+      "Formulario de Contacto",
+      "Rellena el formulario y te llamaremos en breve o llámanos tú directamente",
+      "Contacto",
+      "Dirección",
+      "Teléfono",
+      "Email",
+      "Síguenos",
+      "Contáctanos",
+      "¿Listo para crecer?",
+      "¿Cómo conseguir más clientes para tu empresa de servicios?",
+      "¡Deja de perseguir clientes! Nosotros te los conseguimos.",
+      "¿Trabajas bien pero no tienes suficientes clientes?",
+      "Colabora con nosotros y consigue trabajos reales para tu negocio"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.clientes-potenciales.com/",
+      "text": "Contacto",
+      "href": "https://www.clientes-potenciales.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "LLAMA 616 902 441",
+      "Enviar",
+      "Seguir",
+      "Necessary",
+      "Mostrar más",
+      "Non-necessary",
+      "Venta de Avisos"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.clientes-potenciales.com/",
+        "index": 1,
+        "action": "https://www.clientes-potenciales.com/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_0",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_teléfono_0",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_0",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_ciudad_0",
+            "label": "Ciudad",
+            "placeholder": "Ciudad",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "et_pb_contact_message_0",
+            "label": "Mensaje",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_captcha_0",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.clientes-potenciales.com/contacto/",
+        "index": 1,
+        "action": "https://www.clientes-potenciales.com/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_0",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_ciudad_0",
+            "label": "Ciudad",
+            "placeholder": "Ciudad",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_teléfono_0",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_0",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "et_pb_contact_message_0",
+            "label": "Mensaje",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_captcha_0",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+        "index": 1,
+        "action": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_0",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_ciudad_0",
+            "label": "Ciudad",
+            "placeholder": "Ciudad",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_0",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_0",
+            "label": "Dirección de correo electrónico",
+            "placeholder": "Dirección de correo electrónico",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "et_pb_contact_message_0",
+            "label": "Mensaje",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Acepto la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_captcha_0",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 7 y 7 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Ciudad.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 7,
+      "qualification": [
+        "Ciudad"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Intermediación en venta de contactos: captan demanda mediante portales web posicionados en buscadores y revenden esos contactos a técnicos y empresas. \"solo pagarás por Leads de Clientes Potenciales que buscan los servicios\".",
+    "audience": "Técnicos y empresas de climatización (aire acondicionado y calefacción), reparación de electrodomésticos a domicilio, construcción de piscinas, fontanería, electricidad y reformas, en todas las provincias españolas.",
+    "prices": [],
+    "guarantee": [
+      "Sin complicaciones, sin riesgos, sin necesidad de ser experto en marketing."
+    ],
+    "proof": [
+      "LLAMA 616 902 441¡Deja de perseguir clientes!",
+      "LLAMA 616 902 441 Contacta con nosotrosColabora con nosotros y consigue trabajos reales para tu negocioEn Clientes Potenciales, buscamos empresas de servicios comprometidas, puntuales y profesionales, con las que podamos colaborar a largo plazo.",
+      "Si quieres multiplicar exponencialmente tu negocio, Contacta con nosotros, te va a gustar.Comprar ClientesConsigue más clientes potenciales para tu negocio y aumenta tus beneficios.",
+      "Compra clientes interesados en tus servicios de forma rápida, eficaz y segura.",
+      "Gana tiempo y dinero haciendo que los clientes lleguen a ti en lugar de salir a buscarlos.",
+      "Tenemos la tecnología e infraestructura para suministrarte clientes que demandan tus servicios.Ahorra dineroNo tienes que gastarte dinero en una web y su elevado costo en posicionamiento."
+    ],
+    "objections": [],
+    "urgency": [
+      "Hoy, más del 80% de los clientes buscan servicios por internet.",
+      "¿Por qué tu empresa necesita captar más clientes ahora?Porque si no estás creciendo, te estás quedando atrás.",
+      "Tú solo necesitas hacerlo.🎯 Completa el formulario o llámanos ahora.Los cupos por zona son limitados y se asignan por orden de contacto.👉 Empieza hoy mismo a recibir clientes que ya están buscando tus servicios."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Sin complicaciones, sin riesgos, sin necesidad de ser experto en marketing.",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Si quieres multiplicar exponencialmente tu negocio, Contacta con nosotros, te va a gustar.Comprar ClientesConsigue más clientes potenciales para tu negocio y aumenta tus beneficios.",
+          "url": "https://www.clientes-potenciales.com/",
+          "pageTitle": "▷ Compra Avisos de CLIENTES-POTENCIALES",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Compra clientes interesados en tus servicios de forma rápida, eficaz y segura.",
+          "url": "https://www.clientes-potenciales.com/",
+          "pageTitle": "▷ Compra Avisos de CLIENTES-POTENCIALES",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Gana tiempo y dinero haciendo que los clientes lleguen a ti en lugar de salir a buscarlos.",
+          "url": "https://www.clientes-potenciales.com/",
+          "pageTitle": "▷ Compra Avisos de CLIENTES-POTENCIALES",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tenemos la tecnología e infraestructura para suministrarte clientes que demandan tus servicios.Ahorra dineroNo tienes que gastarte dinero en una web y su elevado costo en posicionamiento.",
+          "url": "https://www.clientes-potenciales.com/",
+          "pageTitle": "▷ Compra Avisos de CLIENTES-POTENCIALES",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…n de Calefacción Avisos de Instalación de Aire Acondicionado Avisos de Instalación de CalefacciónLeads de Climatizción (Clientes)Si eres autónomo o tienes una empresa de Climatización y estás leyendo esto, es porque necesitas más clientes, los has necesitado en algún momento o quieres más trabajo para aumen…",
+          "url": "https://www.clientes-potenciales.com/",
+          "pageTitle": "▷ Compra Avisos de CLIENTES-POTENCIALES",
+          "pageCategory": "other"
+        },
+        {
+          "text": "No tendrás que pagar por publicidad o marketing, ni pagar por una web en la que no te entran clientes si no te gastas enormes cantidades de dinero en posicionamiento.",
+          "url": "https://www.clientes-potenciales.com/",
+          "pageTitle": "▷ Compra Avisos de CLIENTES-POTENCIALES",
+          "pageCategory": "other"
+        },
+        {
+          "text": "En Clientes Potenciales, buscamos colaborar con profesionales serios como tú: nosotros nos encargamos del marketing digital y la captación de clientes, y tú realizas los trabajos con total autonomía.",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "LLAMA 616 902 441¡Deja de perseguir clientes!",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Buscar clientes, hacer publicidad, mantener redes sociales, posicionar una web… Y muchas veces, sin resultados.",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Por eso, nos encargamos de lo más difícil: atraer clientes cualificados para tu empresa de servicios.Tú te encargas de hacer el trabajo.",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Nosotros, de que no te falte.¿Trabajas bien pero no tienes suficientes clientes?Muchos profesionales ofrecen un gran servicio, pero no consiguen despegar porque no tienen visibilidad online.",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "LLAMA 616 902 441 Contacta con nosotrosColabora con nosotros y consigue trabajos reales para tu negocioEn Clientes Potenciales, buscamos empresas de servicios comprometidas, puntuales y profesionales, con las que podamos colaborar a largo plazo.",
+          "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+          "pageTitle": "¿Cómo conseguir más clientes para tu empresa de servicios?",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.clientes-potenciales.com/",
+        "https://www.clientes-potenciales.com/contacto/",
+        "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Conseguimos Clientes Para Tu Empresa",
+        "Contacto",
+        "Leads de Climatización (Clientes)",
+        "Leads de Reparación de Electrodomésticos (Clientes)"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Enviar",
+        "Venta de Avisos",
+        "Seguir",
+        "Mostrar más",
+        "Necessary",
+        "Non-necessary",
+        "LLAMA 616 902 441"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.clientes-potenciales.com/ · 7 campos",
+        "https://www.clientes-potenciales.com/contacto/ · 7 campos",
+        "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/ · 7 campos",
+        "https://www.clientes-potenciales.com/leads-de-climatizacion/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "La empresa compradora llama o escribe para pedir contactos por servicio/territorio → se acuerdan nicho, zona y volumen → la red de portales SEO capta a consumidores que"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.clientes-potenciales.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.clientes-potenciales.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.clientes-potenciales.com/como-conseguir-mas-clientes-para-tu-empresa-de-servicios/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.clientes-potenciales.com/leads-de-climatizacion/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.clientes-potenciales.com/leads-de-reparacion-de-electrodomesticos/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.clientes-potenciales.com/a-coruna/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.clientes-potenciales.com/alava/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.clientes-potenciales.com/aviso-legal/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=clientes-potenciales.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=Clientes%20Potenciales&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,609 @@
+{
+  "id": "yellowpages-com-pg-ficha-de-cobertura-mundial-nueva-guinea-papua",
+  "name": "yellowpages.com.pg — ficha de cobertura mundial — Nueva Guinea Papúa",
+  "reviewedAt": "2026-08-22T15:50:19.053Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Sign In",
+    "heroObserved": true,
+    "priorSummary": "Crear cuenta y listado; Silver, Gold o Platinum. Funciones según plan: perfil, reseñas, mapas, contactos, booking, SEO, campañas, e-commerce, payment gateway, cupones, anuncios, email marketing y analítica.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 219 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1030 palabras por página comercial recuperada. Muestras breves: “Sign In” · “We're here to help The Yellow Pages team is here to help your business stand out and reach its potential. Don't miss the opportunity to” · “Sandaun Surf Hotel”.",
+    "supportingHeadings": [
+      "Sign In",
+      "Discover Papua New Guinea",
+      "Services, Restaurants, Activities & More...",
+      "Find things you'll love",
+      "Support independent sellers",
+      "services, restaurants & activities",
+      "Popular Categories",
+      "Featured Listings Discover Top-Rated Local Businesses",
+      "Sandaun Surf Hotel Verified Listing",
+      "VIRTUALFLEX SOLUTIONS LTD Verified Listing",
+      "UNITED FINANCE LIMITED Verified Listing",
+      "Lahara Lodge Verified Listing",
+      "Northwest Provincial Government Administration Verified Listing",
+      "Trades & Services",
+      "SBC Solutions",
+      "Sovereign Real Estate Limited",
+      "Omega Business Consultants",
+      "MOORE PRINTING",
+      "UNITED FINANCE LIMITED",
+      "Huon Real Estate Limited",
+      "Food, Drink & Dining",
+      "Tasty Bite Resturant",
+      "Dixie’s Bungalows",
+      "Opaoti Trading Ltd",
+      "Golden Rooster",
+      "Bakeology Cafe & Bakery @ The Shady Rest Hotel",
+      "City Cafe",
+      "Find your local",
+      "Agriculture, Farming & Forestry",
+      "Automotive & Marine"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://yellowpages.com.pg/",
+      "text": "Contact",
+      "href": "https://yellowpages.com.pg/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Request Pricing",
+      "WhatsApp",
+      "More",
+      "Send",
+      "Log In",
+      "Sign In",
+      "Register",
+      "Street View",
+      "Submit Review",
+      "Get in Yellow PagesGet Your Business in the Yellow Pages Papua New Guinea. Boost",
+      "Take your business onlineTake your business online with the Yellow Pages Papua New Guinea",
+      "Report Listing ErrorsIf you notice incorrect details about any business listing on the Yellow"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://yellowpages.com.pg/contact/",
+        "index": 3,
+        "action": "https://yellowpages.com.pg/contact/",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Your Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": null,
+            "placeholder": "Subject",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "textarea-69",
+            "label": null,
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/",
+        "index": 4,
+        "action": "https://yellowpages.com.pg/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Submit Review",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "radio",
+            "name": "service",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "value-for-money",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "location",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "cleanliness",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "attachments[]",
+            "label": "Add Photos",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Name *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comment *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Save my name, email, and website in this browser for the next",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/",
+        "index": 5,
+        "action": "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/",
+        "method": "POST",
+        "submitText": "Request Pricing",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "First and Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel-300",
+            "label": null,
+            "placeholder": "Phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "textarea-637",
+            "label": null,
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "radio-950",
+            "label": "Email",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 4 y 9 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: textarea-69, Save my name, email, and website in this browser for the next, textarea-637.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 9,
+      "qualification": [
+        "textarea-69",
+        "Save my name, email, and website in this browser for the next",
+        "textarea-637"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Email",
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Crear cuenta y listado; Silver, Gold o Platinum. Funciones según plan: perfil, reseñas, mapas, contactos, booking, SEO, campañas, e-commerce, payment gateway, cupones, anuncios, email marketing y analítica.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [
+      "If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange.To be eligible for a return, your item must be unused and in the same condition that you received it.",
+      "Please do not send your purchase back to the manufacturer.There are certain situations where only partial refunds are granted (if applicable)Any item not in its original condition, is damaged or missing parts for reasons not due to our error Any item that is returned more than 30 days after…",
+      "Sign InTerms and conditions Refund and Returns PolicyYellow Pages PNGTerms and conditions Refund and Returns PolicyTerms and Conditions of: Refund, Shipping, Privacy, Legal, Use OVERVIEWThis website is operated by PNG Directories Limited.",
+      "We will also notify you of the approval or rejection of your refund.",
+      "If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within a certain amount of days.Late or missing refunds (if applicable) If you haven’t received a refund yet, first"
+    ],
+    "proof": [
+      "…n top-tier ICT products, enterprise-level solutions, and cloud services, supporting government, private sector, and ISP clients with innovative technology that meets the fast-evolving digital landscape.Our expert engineers provide ICT consulting to optimize cloud, virtualization, networking, and security,…",
+      "Get your business featured at the top of searches and get more customers."
+    ],
+    "objections": [
+      "Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.SECTION 20 – CONTACT INFORMATIONQuestions about the Terms of Service should be sent to us at sales@yellowpages.com.pg.SECTION 21",
+      "We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order.",
+      "In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e‑mail and/or billing address/phone number provided at the time the order was made.",
+      "We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order).We undertake no o…",
+      "…resby Facebook WhatsAppCategoriesComputer Equipment - Installation &/or ServicesRegionsPt MoresbyLocation Get DirectionsFAQWhat core ICT services and enterprise solutions does VirtualFlex provide in PNG?VirtualFlex functions as both a digital transformation consultant and an infrastructure modernizatio…",
+      "Sign In Computer Equipment - Installation &/or Services Pt Moresby VIRTUALFLEX SOLUTIONS LTD UME Street, Gordons, National Capital District Login To Bookmark Items Show All Photos OverviewGalleryLocationFAQFounded in 2013, we are a leading IT firm serving New Zealand, Australia, and the Pacific, with operations in"
+    ],
+    "urgency": [
+      "Sign InTerms and conditions Refund and Returns PolicyYellow Pages PNGTerms and conditions Refund and Returns PolicyTerms and Conditions of: Refund, Shipping, Privacy, Legal, Use OVERVIEWThis website is operated by PNG Directories Limited.",
+      "Δ Verified Listing Send a messagePreferred contact methodEmailPhone ΔNow Closed Opening HoursMonday 08:00 AM - 05:00 PM Tuesday 08:00 AM - 05:00 PM Wednesday 08:00 AM - 05:00 PM Thursday 08:00 AM - 05:00 PM Friday 08:00 AM - 05:00 PM SaturdayClosedSundayClosed Login To Bookmark",
+      "Δ Verified Listing Send a messagePreferred contact methodEmailPhone ΔNow Closed Opening HoursMonday 08:00 AM - 04:00 PM Tuesday 08:00 AM - 04:00 PM Wednesday 08:00 AM - 04:00 PM Thursday 08:00 AM - 04:00 PM Friday 08:00 AM - 04:00 PM SaturdayClosedSundayClosed Login To Bookmark",
+      "Get online today Yellow Pages Papua New Guinea Directory.",
+      "Don't miss the opportunity to reach a wider audience—sign up today!",
+      "Listing your business online improves your accessibility and credibility, helping you grow in today’s digital world."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Sign InTerms and conditions Refund and Returns PolicyYellow Pages PNGTerms and conditions Refund and Returns PolicyTerms and Conditions of: Refund, Shipping, Privacy, Legal, Use OVERVIEWThis website is operated by PNG Directories Limited.",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange.To be eligible for a return, your item must be unused and in the same condition that you received it.",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Please do not send your purchase back to the manufacturer.There are certain situations where only partial refunds are granted (if applicable)Any item not in its original condition, is damaged or missing parts for reasons not due to our error Any item that is returned more than 30 days after…",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "We will also notify you of the approval or rejection of your refund.",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within a certain amount of days.Late or missing refunds (if applicable) If you haven’t received a refund yet, first",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "We cannot guarantee that your computer monitor’s display of any color will be accurate.We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction.",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Get your business featured at the top of searches and get more customers.",
+          "url": "https://yellowpages.com.pg/",
+          "pageTitle": "Yellow Pages Papua New Guinea - Yellow Pages PNG",
+          "pageCategory": "other"
+        },
+        {
+          "text": "A comprehensive list of companies in Papua New Guinea with contact details, maps, phone numbers, reviews and ratings.Helpful LinksBookmarksBookingsPrivacy PolicyTerms & ConditionsWhite PagesMy ProfileMy ListingsAdd ListingContact UsTelikom Rumana, Kumul Ave, Port Moresby 295 NCD, PN…",
+          "url": "https://yellowpages.com.pg/",
+          "pageTitle": "Yellow Pages Papua New Guinea - Yellow Pages PNG",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…n top-tier ICT products, enterprise-level solutions, and cloud services, supporting government, private sector, and ISP clients with innovative technology that meets the fast-evolving digital landscape.Our expert engineers provide ICT consulting to optimize cloud, virtualization, networking, and security,…",
+          "url": "https://yellowpages.com.pg/listings/pt-moresby/computer-equipment-installation-or-services/virtualflex-solutions-ltd/",
+          "pageTitle": "VIRTUALFLEX SOLUTIONS LTD - Yellow Pages PNG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "A comprehensive list of companies in Papua New Guinea with contact details, maps, phone numbers, reviews and ratings.Helpful LinksBookmarksBookingsPrivacy PolicyTerms & ConditionsWhite PagesMy ProfileMy ListingsAdd ListingContact UsTelikom Rumana, Kumul Ave, Port Moresby 295 NCD, PN…",
+          "url": "https://yellowpages.com.pg/listings/pt-moresby/computer-equipment-installation-or-services/virtualflex-solutions-ltd/",
+          "pageTitle": "VIRTUALFLEX SOLUTIONS LTD - Yellow Pages PNG",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Sign In Computer Equipment - Installation &/or Services Pt Moresby VIRTUALFLEX SOLUTIONS LTD UME Street, Gordons, National Capital District Login To Bookmark Items Show All Photos OverviewGalleryLocationFAQFounded in 2013, we are a leading IT firm serving New Zealand, Australia, and the Pacific, with operations in",
+          "url": "https://yellowpages.com.pg/listings/pt-moresby/computer-equipment-installation-or-services/virtualflex-solutions-ltd/",
+          "pageTitle": "VIRTUALFLEX SOLUTIONS LTD - Yellow Pages PNG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…resby Facebook WhatsAppCategoriesComputer Equipment - Installation &/or ServicesRegionsPt MoresbyLocation Get DirectionsFAQWhat core ICT services and enterprise solutions does VirtualFlex provide in PNG?VirtualFlex functions as both a digital transformation consultant and an infrastructure modernizatio…",
+          "url": "https://yellowpages.com.pg/listings/pt-moresby/computer-equipment-installation-or-services/virtualflex-solutions-ltd/",
+          "pageTitle": "VIRTUALFLEX SOLUTIONS LTD - Yellow Pages PNG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order.",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e‑mail and/or billing address/phone number provided at the time the order was made.",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order).We undertake no o…",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.SECTION 20 – CONTACT INFORMATIONQuestions about the Terms of Service should be sent to us at sales@yellowpages.com.pg.SECTION 21",
+          "url": "https://yellowpages.com.pg/refund_returns/",
+          "pageTitle": "Terms and conditions Refund and Returns Policy - Yellow Pages PNG",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.com.pg/",
+        "https://yellowpages.com.pg/contact/",
+        "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Sign In",
+        "We're here to help The Yellow Pages team is here to help your business stand out and reach its potential. Don't miss the opportunity to",
+        "Sandaun Surf Hotel",
+        "VIRTUALFLEX SOLUTIONS LTD"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Log In",
+        "Register",
+        "More",
+        "Sign In",
+        "Street View",
+        "Send",
+        "Get in Yellow PagesGet Your Business in the Yellow Pages Papua New Guinea. Boost"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.com.pg/contact/ · 4 campos",
+        "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/ · 9 campos",
+        "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/ · 5 campos",
+        "https://yellowpages.com.pg/listings/pt-moresby/computer-equipment-installation-or-services/virtualflex-solutions-ltd/ · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Email",
+        "Teléfono",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://yellowpages.com.pg/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://yellowpages.com.pg/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://yellowpages.com.pg/listings/wewak/accommodation-accommodation-tourism-accommodation-guest-houses-hotels-motels/sandaun-surf-hotel/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://yellowpages.com.pg/listings/pt-moresby/computer-equipment-installation-or-services/virtualflex-solutions-ltd/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://yellowpages.com.pg/listings/alotau,goroka,mt-hagen,pt-moresby/personal-loans/united-finance-limited-2/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://yellowpages.com.pg/listings/pt-moresby/government-bodies/northwest-provincial-government-administration/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://yellowpages.com.pg/refund_returns/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://yellowpages.com.pg/yellow-online/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://yellowpages.com.pg/yellow-promotions/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://yellowpages.com.pg/add-listing/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

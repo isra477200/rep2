@@ -1,0 +1,409 @@
+{
+  "id": "vodafone-business",
+  "name": "Vodafone Business",
+  "reviewedAt": "2026-08-22T15:50:19.179Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Información para clientes y consumidores",
+    "heroObserved": true,
+    "priorSummary": "'Marketing Online': mejora de reputación online y captación de clientes gestionada por expertos desde una sola plataforma, más paquetes de presencia digital (Start Next, Web Next, Ecommerce Next) y campañas de Google Ads / Facebook Ads gestionadas",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 266 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1864 palabras por página comercial recuperada. Muestras breves: “Información para clientes y consumidores” · “Configura tu tarifa” · “Recomiéndanos con el Plan Amigo y llevaos 100€”.",
+    "supportingHeadings": [
+      "Negocio Online",
+      "Servicios de marketing digital para empresas adaptados a tu negocio",
+      "¿Qué ventajas te ofrece nuestra solución Negocio Online?",
+      "Elige el pack de Negocio Online para digitalizar tu actividad",
+      "Elige el pack de Negocio Online ideal para tu pyme",
+      "Elige START NEXT si:",
+      "Necesitas START NEXT PLUS si:",
+      "Elige LANDING NEXT si:",
+      "Contrata WEB NEXT si:",
+      "Necesitas ECOMMERCE NEXT si:",
+      "REDES LITE NEXT es tu solución si:",
+      "Elige REDES SOCIALES NEXT si:",
+      "Datos de interés sobre Marketing Digital en empresas",
+      "Y si además quieres añadir el servicio de Seguridad Digital...",
+      "Móvil, Fibra, Negocio Digital y Seguridad Digital",
+      "También te puede interesar",
+      "¿Por qué Vodafone Empresas?",
+      "Garantizamos tu visibilidad",
+      "Impulsamos tu marca y clientes",
+      "Expande tus ventas globalmente",
+      "Soporte profesional continuo",
+      "Preguntas frecuentes",
+      "¿Qué es el marketing digital y cómo puede beneficiar a mi negocio?",
+      "¿Por qué debería elegir a Vodafone Empresas frente a una agencia tradicional de marketing digital?",
+      "¿Cuáles son los principales servicios de marketing digital para empresas que ofrece Vodafone Empresas?",
+      "Ya dispongo de una página web propia, ¿qué valor aportan estas soluciones?",
+      "¿Los servicios de Vodafone Negocio Digital están adaptados para pymes y autónomos?",
+      "¿Ofrecen consultoría de marketing digital personalizada o únicamente acceso a las herramientas?",
+      "¿Cómo me ayudarán vuestras herramientas a mejorar la visibilidad y captar clientes?",
+      "¿Qué soporte técnico ofrecen con sus servicios de marketing digital?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Consulta de Cobertura",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+      "text": "Consulta de Cobertura",
+      "href": "https://www.vodafone.es/c/empresas/grandes-clientes/es/consulta-de-cobertura/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 159.75
+    },
+    "ctas": [
+      "Consulta de Cobertura",
+      "Consulta tu Tarifa actual",
+      "Consulta tu factura y consumo",
+      "Consulta la cobertura de móvil e IoT",
+      "Consulta la cobertura de Móvil e IoT",
+      "Te llamamos gratis",
+      "Whatsapp nueva pestaña",
+      "Català",
+      "Borrar",
+      "Enviar",
+      "Castellano",
+      "Atención telefónica",
+      "Información a clientes",
+      "Política de Privacidad"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.vodafone.es/c/empresas/es/marketing-online/",
+        "index": 4,
+        "action": "https://www.vodafone.es/c/empresas/es/marketing-online/",
+        "method": "GET",
+        "submitText": "Política de Privacidad",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Nº de teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "check",
+            "label": "Acepto recibir comunicaciones comerciales de Vodafone (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.vodafone.es/c/tienda-online/particulares/configurador/",
+        "index": 1,
+        "action": "https://www.vodafone.es/c/tienda-online/particulares/configurador/",
+        "method": "GET",
+        "submitText": "Enviar",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "phone",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Tu nº de teléfono",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 3 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 3,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "'Marketing Online': mejora de reputación online y captación de clientes gestionada por expertos desde una sola plataforma, más paquetes de presencia digital (Start Next, Web Next, Ecommerce Next) y campañas de Google Ads / Facebook Ads gestionadas",
+    "audience": "Pymes y autónomos clientes de Vodafone Business (5-100 empleados aprox.)",
+    "prices": [
+      "Recomiéndanos con el Plan Amigo y llevaos 100€ Saltar al contenido principalMenús secundarios.",
+      "Fibra/ móvil -->25€ para ti y 25€ para tu amigo Fibra + Móvil --> 50€ para ti y 50€ para tu amigo *Importante, las líneas de móvil adicionales no se abonarán como recompensa."
+    ],
+    "guarantee": [
+      "Con ancho de banda garantizado, latencia ultrabaja y flujo de datos protegido, la red privada 5G y la tecnología Edge Computing pueden liberar nuevas posibilidades para las empresas digitales.",
+      "Informe18 de noviembre de 2025Ver más articulos relacionados con CiberseguridadHaz de la ciberseguridad la garantía de tu negocioTe invitamos a descargar este nuevo Whitepaper elaborado por el equipo de Ciberseguridad de Vodafone Business en colaboración con Incibe y la participación de destaca…"
+    ],
+    "proof": [
+      "Expertos en infraestructuras críticas y en servicios gestionados que integran conectividad y seguridad sobre la red más resiliente.Especialización sectorialSomos el socio tecnológico de referencia para más de 400.000 clientes empresariales.",
+      "Abre en ventana modalSoy clienteIr a la pagina acceso clientesSoy clienteIr a la pagina acceso clientes.",
+      "Con el trabajo deslocalizado, y los nuevos ecosistemas colaborativos, las comunicaciones unificadas inteligentes son la clave para la buena gestión de las llamadas internas y externas con clientes, colaboradores y proveedores, estén donde estén.",
+      "En este whitepaper IoT 2026 reunimos los insights de expertos, las tendencias tecnológicas clave (IA, 5G, LPWA) y casos de éxito que demuestran el valor real del IoT en la transformación digital de empresas y administraciones públicas."
+    ],
+    "objections": [],
+    "urgency": [
+      "…o a máxima velocidad?Si necesitas seguir navegando a máxima velocidad puede contratar cualquiera de los Bonos de Datos Ilimitados de 2, 7 y 31 días en la app Mi Vodafone.¿Qué es Secure Net y qué ventajas tiene?Todas las tarifas móviles incluyen 3 meses de Secure Net gratis.",
+      "…y reputación online: Gestión de reseñasRRSS con IAHerramienta para autogestión de RRSS con asistente IASoporte técnico ilimitadoAbrir modalVer funcionalidadesCargando contenido...11,50,50€/mes (IVA no incl.) Permanencia 24 meses Más infoMás info9-Start Next Plus Incluye START NEXT más...",
+      "Soporte profesional continuo Cuenta con el apoyo de nuestros expertos para la puesta en marcha y el soporte técnico ilimitado de tu servicio.Preguntas frecuentes ¿Qué es el marketing digital y cómo puede beneficiar a mi negocio?",
+      "Esto te permite gestionar toda tu estrategia digital desde un único cuadro de mando, reduciendo costes operativos y contando con soporte técnico ilimitado.",
+      "Ofrecemos atención personalizada y soporte técnico ilimitado para todos nuestros servicios de marketing digital para pymes y grandes empresas.",
+      "…idad Soluciones con IA Soluciones IoT Promoción Lanzamiento Nuevos Samsung Galaxy Z Flip8, Fold8 y Fold8 UltraLlévatelo ahora a un precio exclusivoDisfruta de la nueva gama de Samsung más compacta, ligera y potente que nunca con Galaxy AI."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Recomiéndanos con el Plan Amigo y llevaos 100€ Saltar al contenido principalMenús secundarios.",
+          "url": "https://www.vodafone.es/c/particulares/es/plan-amigo-vodafone/?source=main_header_menu",
+          "pageTitle": "Plan Amigo: Trae 5 amigos y gana unos AirPods Max 2",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Fibra/ móvil -->25€ para ti y 25€ para tu amigo Fibra + Móvil --> 50€ para ti y 50€ para tu amigo *Importante, las líneas de móvil adicionales no se abonarán como recompensa.",
+          "url": "https://www.vodafone.es/c/particulares/es/plan-amigo-vodafone/?source=main_header_menu",
+          "pageTitle": "Plan Amigo: Trae 5 amigos y gana unos AirPods Max 2",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Informe18 de noviembre de 2025Ver más articulos relacionados con CiberseguridadHaz de la ciberseguridad la garantía de tu negocioTe invitamos a descargar este nuevo Whitepaper elaborado por el equipo de Ciberseguridad de Vodafone Business en colaboración con Incibe y la participación de destaca…",
+          "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+          "pageTitle": "Vodafone | Soluciones tecnológicas para empresas y AAPP",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Con ancho de banda garantizado, latencia ultrabaja y flujo de datos protegido, la red privada 5G y la tecnología Edge Computing pueden liberar nuevas posibilidades para las empresas digitales.",
+          "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+          "pageTitle": "Vodafone | Soluciones tecnológicas para empresas y AAPP",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Abre en ventana modalSoy clienteIr a la pagina acceso clientesSoy clienteIr a la pagina acceso clientes.",
+          "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+          "pageTitle": "Vodafone | Soluciones tecnológicas para empresas y AAPP",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Expertos en infraestructuras críticas y en servicios gestionados que integran conectividad y seguridad sobre la red más resiliente.Especialización sectorialSomos el socio tecnológico de referencia para más de 400.000 clientes empresariales.",
+          "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+          "pageTitle": "Vodafone | Soluciones tecnológicas para empresas y AAPP",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "En este whitepaper IoT 2026 reunimos los insights de expertos, las tendencias tecnológicas clave (IA, 5G, LPWA) y casos de éxito que demuestran el valor real del IoT en la transformación digital de empresas y administraciones públicas.",
+          "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+          "pageTitle": "Vodafone | Soluciones tecnológicas para empresas y AAPP",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Con el trabajo deslocalizado, y los nuevos ecosistemas colaborativos, las comunicaciones unificadas inteligentes son la clave para la buena gestión de las llamadas internas y externas con clientes, colaboradores y proveedores, estén donde estén.",
+          "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+          "pageTitle": "Vodafone | Soluciones tecnológicas para empresas y AAPP",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.vodafone.es/c/empresas/es/marketing-online/",
+        "https://www.vodafone.es/c/empresas/es/mapa-de-cobertura-movil-iot/",
+        "https://www.vodafone.es/c/conocenos/es/vodafone-espana/contacto/informacion-al-consumidor/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Información para clientes y consumidores",
+        "Configura tu tarifa",
+        "Recomiéndanos con el Plan Amigo y llevaos 100€"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Política de Privacidad",
+        "Te llamamos gratis",
+        "Consulta la cobertura de móvil e IoT",
+        "Información a clientes",
+        "Castellano",
+        "Català",
+        "Consulta tu factura y consumo",
+        "Atención telefónica"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.vodafone.es/c/empresas/es/marketing-online/ · 3 campos",
+        "https://www.vodafone.es/c/tienda-online/particulares/configurador/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por Marketing Online/Soluciones Digitales → elección de módulo o pack → contratación online o contacto con asesor → alta y puesta en marcha por equipo de expertos"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.vodafone.es/c/empresas/es/marketing-online/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.vodafone.es/c/empresas/es/mapa-de-cobertura-movil-iot/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.vodafone.es/c/conocenos/es/vodafone-espana/contacto/informacion-al-consumidor/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.vodafone.es/c/tienda-online/particulares/configurador/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.vodafone.es/c/particulares/es/plan-amigo-vodafone/?source=main_header_menu",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.vodafone.es/c/empresas/grandes-clientes/es/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.vodafone.es/c/empresas/pymes/es/soluciones-digitales-para-pymes/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.vodafone.es/c/empresas/pymes/es/soluciones-para-pymes/digitaliza-tu-negocio/vodafone-digital-market-place/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://vodafone.es/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Consulta de Cobertura”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,546 @@
+{
+  "id": "babycare-agency-responsable-rodrigo-mantillan-paz",
+  "name": "Babycare Agency — responsable: Rodrigo Mantillán Paz",
+  "reviewedAt": "2026-08-22T15:50:17.518Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Servicios de marketing para marcas baby, infantiles y family brands",
+    "heroObserved": true,
+    "priorSummary": "Marketing vertical baby/family; para guarderías combina SEO local, Google Business Profile, campañas geolocalizadas, redes, reputación, web y mensaje educativo para generar solicitudes, visitas y matrículas.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 35 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1226 palabras por página comercial recuperada. Muestras breves: “Marketing para guarderías y escuelas infantiles” · “Contáctanos” · “Servicios de marketing para marcas baby, infantiles y family brands”.",
+    "supportingHeadings": [
+      "Marketing para guarderías y escuelas infantiles",
+      "Atrae más familias, comunica mejor tu proyecto educativo y refuerza la confianza en tu centro",
+      "Las familias no eligen una escuela infantil solo por cercanía",
+      "Déjanos ayudarte",
+      "Marketing local para captar matrículas y solicitudes de información",
+      "Cómo ayudamos a crecer a tu guardería",
+      "SEO local para escuelas infantiles",
+      "Google Business Profile y Google Maps",
+      "Campañas para captación de matrículas",
+      "Comunicación de tu proyecto educativo",
+      "Redes sociales para transmitir confianza",
+      "Reputación online y reseñas",
+      "De tener un buen centro a comunicarlo con claridad",
+      "Para qué tipo de centros está pensado este servicio",
+      "Una estrategia adaptada al ciclo de decisión de las familias",
+      "Qué podemos trabajar contigo",
+      "Visibilidad local",
+      "Redes sociales",
+      "Estrategia de Marca",
+      "Comunicación educativa",
+      "Captación de solicitudes",
+      "Reputación online",
+      "Por qué Babycare Agency",
+      "Preguntas Frecuentes (FAQs)",
+      "¿Qué tipo de marketing necesita una guardería?",
+      "¿Cómo puede una escuela infantil conseguir más matrículas?",
+      "¿Qué es el SEO local para escuelas infantiles?",
+      "¿Tiene sentido hacer campañas de publicidad para una guardería?",
+      "¿Cómo ayudan las redes sociales a una escuela infantil?",
+      "¿Por qué son importantes las reseñas para una escuela infantil?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Reserva una llamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://babycare.agency/es/contacto/",
+      "text": "Reserva una llamada",
+      "href": "https://cal.com/babycareagency/15min",
+      "element": "a",
+      "kind": "conversion",
+      "score": 220.25
+    },
+    "ctas": [
+      "Reserva una llamada",
+      "Book a Discovery Call",
+      "Solicita una llamada",
+      "Reserva una sesión",
+      "Reserve una llamada",
+      "Chat",
+      "Chat!",
+      "Enviar",
+      "{title}",
+      "Submit Form",
+      "Chat with us",
+      "Cambiar a English",
+      "Switch to Español",
+      "Chatea con nosotros"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://babycare.agency/es/sectores/guarderias-escuelas-infantiles/",
+        "index": 1,
+        "action": "https://babycare.agency/es/sectores/guarderias-escuelas-infantiles/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "names[first_name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "names[last_name]",
+            "label": "Apellido",
+            "placeholder": "Apellido",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Móvil",
+            "placeholder": "Número de móvil para Whatsapp",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "dropdown",
+            "label": "Desplegable",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Tu mensaje",
+            "placeholder": "Tu mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr-agreement",
+            "label": "He leído y acepto la [Política de Privacidad] y consiento el tratamiento",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://babycare.agency/es/contacto/",
+        "index": 1,
+        "action": "https://babycare.agency/es/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "names[first_name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "names[last_name]",
+            "label": "Apellido",
+            "placeholder": "Apellido",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Móvil",
+            "placeholder": "Número de móvil para Whatsapp",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "dropdown",
+            "label": "Cómo nos conociste?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Asunto",
+            "placeholder": "Asunto",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Tu mensaje",
+            "placeholder": "Tu mensaje",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr-agreement",
+            "label": "He leído y acepto la Política de Privacidad y consiento el tratamiento",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://babycare.agency/contact/",
+        "index": 1,
+        "action": "https://babycare.agency/contact/",
+        "method": "POST",
+        "submitText": "Submit Form",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "names[first_name]",
+            "label": "First Name",
+            "placeholder": "First Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "names[last_name]",
+            "label": "Last Name",
+            "placeholder": "Last Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone/Mobile",
+            "placeholder": "Mobile Number",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "dropdown",
+            "label": "- Where did you hear about us -",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Subject",
+            "placeholder": "Subject",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Your Message",
+            "placeholder": "Your Message",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "gdpr-agreement",
+            "label": "I have read and accept the [Privacy Policy] and consent to the",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 7 y 8 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 8,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online",
+      "WhatsApp"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketing vertical baby/family; para guarderías combina SEO local, Google Business Profile, campañas geolocalizadas, redes, reputación, web y mensaje educativo para generar solicitudes, visitas y matrículas.",
+    "audience": "Guarderías privadas, escuelas infantiles, centros 0–3, centros bilingües/Montessori/Reggio, ludotecas y, en su cartera amplia, marcas de puericultura, maternidad, juguetes, moda y ecommerce infantil.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Solicita una llamada Chatea con nosotros Clientes y proyectos para marcas de infancia, puericultura y familia Trabajamos con marcas del ecosistema baby, kids, maternity y family para ordenar su estrategia, mejorar su visibilidad y construir una presencia digital más clara, coherente y preparada para crecer."
+    ],
+    "objections": [],
+    "urgency": [
+      "Two decades of category knowledgeMore than 20 years of experience in the baby and children’s sector Our perspective on this market is not recent or superficial.",
+      "…ores.Ese proyecto nos acercó a marcas, tiendas, fabricantes y profesionales del sector, y nos ayudó a entender algo que hoy sigue guiando nuestro trabajo: en las categorías infantiles, la confianza pesa tanto como la visibilidad.",
+      "Sí, especialmente en momentos de captación como apertura de matrículas, plazas disponibles, jornadas de puertas abiertas, inicio de curso o lanzamiento de nuevos grupos.La publicidad geolocalizada permite llegar a familias cercanas y generar solicitudes de información en periodos concretos.",
+      "…na estrategia más orientada a matrículas, proyecto educativo, confianza institucional, visitas al centro y ocupación de plazas.Las ludotecas y espacios de crianza suelen centrarse más en actividades, talleres, juego, comunidad, cumpleaños o reservas flexibles.Por eso conviene trabajar ambas verticales con…"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Solicita una llamada Chatea con nosotros Clientes y proyectos para marcas de infancia, puericultura y familia Trabajamos con marcas del ecosistema baby, kids, maternity y family para ordenar su estrategia, mejorar su visibilidad y construir una presencia digital más clara, coherente y preparada para crecer.",
+          "url": "https://babycare.agency/es/clientes-y-proyectos/",
+          "pageTitle": "Clientes y Proyectos | Babycare Agency",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…ajeHe leído y acepto la Política de Privacidad y consiento el tratamiento de mis datos para atender mi solicitud.Enviar TestimoniosNuestros clientes pasados y presentes son nuestra mejor carta de presentación SandraPropietaria de Luniska  Valorado con 5 de 5Trabajamos con Babycare Agency en SEO, estrategi…",
+          "url": "https://babycare.agency/es/servicios/",
+          "pageTitle": "Qué hacemos | Babycare Agency",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://babycare.agency/es/sectores/guarderias-escuelas-infantiles/",
+        "https://babycare.agency/es/contacto/",
+        "https://babycare.agency/es/clientes-y-proyectos/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing para guarderías y escuelas infantiles",
+        "Contáctanos",
+        "Servicios de marketing para marcas baby, infantiles y family brands",
+        "Contact us"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Reserva una sesión",
+        "Chatea con nosotros",
+        "Enviar",
+        "Chat!",
+        "Reserva una llamada",
+        "{title}",
+        "Cambiar a English",
+        "Solicita una llamada"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://babycare.agency/es/sectores/guarderias-escuelas-infantiles/ · 7 campos",
+        "https://babycare.agency/es/sectores/guarderias-escuelas-infantiles/ · 7 campos",
+        "https://babycare.agency/es/contacto/ · 8 campos",
+        "https://babycare.agency/es/clientes-y-proyectos/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "WhatsApp",
+        "Reserva una sesión",
+        "Reserva una llamada",
+        "Solicita una llamada",
+        "Solicita una llamada",
+        "Reserve una llamada",
+        "Book a Discovery Call"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Sesión/chat/formulario → diagnóstico de producto, zona, ocupación y objetivos → estrategia a medida → SEO/Google Business/campaña geolocalizada/contenido/reseñas → familia descubre y compara → solicitud de información → visita"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://babycare.agency/es/sectores/guarderias-escuelas-infantiles/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://babycare.agency/es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://babycare.agency/es/clientes-y-proyectos/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://babycare.agency/es/servicios/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://babycare.agency/es/sobre-nosotros/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://babycare.agency/contact/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://babycare.agency/industries/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://babycare.agency/es/sectores/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://cal.com/babycareagency/15min",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://babycare.agency/cookie-policy-eu/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=babycare.agency",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Reserva una llamada”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

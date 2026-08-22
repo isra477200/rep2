@@ -1,0 +1,439 @@
+{
+  "id": "hack-celeration-agencia-outbound",
+  "name": "Hack'celeration (Agencia Outbound)",
+  "reviewedAt": "2026-08-22T15:50:17.958Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Presupuesto en Línea",
+    "heroObserved": true,
+    "priorSummary": "Infraestructura de outbound multicanal (ICP, entregabilidad, secuencias, integración CRM) mediante herramientas propias (lemlist, Instantly, Clay, Apollo)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 448 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1227 palabras por página comercial recuperada. Muestras breves: “La agencia Outbound.Más reuniones, menos spam.” · “Presupuesto en Línea” · “Get a Free Quote”.",
+    "supportingHeadings": [
+      "La agencia Outbound.Más reuniones, menos spam.",
+      "Una agencia outbound opera toda la máquina, no solo la secuencia.",
+      "ICP y listas de leads construidas con datos, no un volcado",
+      "Infraestructura de inbox SPF, DKIM, DMARC y calentamiento",
+      "Cadencias multicanal cold email más LinkedIn outreach",
+      "Respuestas enrutadas, reuniones cualificadas en el calendario",
+      "Tratamos el outbound como infraestructura, no un rociado.",
+      "Nosotros hacemos outbound para nosotros mismos.",
+      "Outbound en el centro, tu stack comercial alrededor.",
+      "ICP y listas de leads",
+      "Setup de entregabilidad",
+      "Secuencias de cold email",
+      "LinkedIn outreach",
+      "Herramientas: Clay, lemlist, Instantly",
+      "Handoff CRM y reporting",
+      "Ponemos a prueba tu encaje outbound, te llevas un plan.",
+      "Cómo llevamos un encargo outbound.",
+      "Comprobar si el cold outbound de verdad encaja",
+      "Montar la infraestructura para que entres en inbox",
+      "Construir las listas y las secuencias multicanal",
+      "Lanzar la cadencia y enrutar cada respuesta",
+      "Ajustar la máquina, y luego darte las llaves",
+      "Nos juzgan por el pipeline que aterriza.",
+      "Las preguntas que nos hacen en bucle.",
+      "Agencias relacionadas, mismo nivel.",
+      "Deja de disparar listas frías. Construye la máquina.",
+      "Presupuesto en Línea",
+      "Get a Free Quote",
+      "LABS : WE TEST THE TOOLS FOR YOU, NO BS.",
+      "Everything we test, sorted by angle."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Quick quote ✔",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://hackceleration.com/quote-online",
+      "text": "Quick quote ✔",
+      "href": "https://hackceleration.com/quote-online",
+      "element": "a",
+      "kind": "conversion",
+      "score": 221.75
+    },
+    "ctas": [
+      "Auditoría gratis de 60 min →",
+      "Empezar la auditoría →",
+      "Reservar la auditoría →",
+      "Presupuesto ✔",
+      "Quick quote ✔",
+      "Presupuesto ✔→",
+      "Quick quote ✔→",
+      "Send request →",
+      "Request a quote →",
+      "Start free →",
+      "Create a free Make account→",
+      "Create a free Make account →",
+      "EN",
+      "Try Pro →",
+      "Try Core →",
+      "Try Teams →",
+      "Suggest a tool →",
+      "Enviar solicitud →",
+      "Send my question →",
+      "Hablar con el equipo→"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://hackceleration.com/es/agencia/outbound",
+        "index": 1,
+        "action": "https://hackceleration.com/es/agencia/outbound",
+        "method": "GET",
+        "submitText": "Auditoría gratis de 60 min →",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": "tu@empresa.com",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://hackceleration.com/es/presupuesto-en-linea",
+        "index": 1,
+        "action": "https://hackceleration.com/es/presupuesto-en-linea",
+        "method": "GET",
+        "submitText": "Enviar solicitud →",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "company",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "first_name",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "last_name",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "description",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://hackceleration.com/labs",
+        "index": 1,
+        "action": "https://hackceleration.com/labs",
+        "method": "GET",
+        "submitText": "Send my question →",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "you@company.com",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 6 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: tu@empresa.com, company.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 6,
+      "qualification": [
+        "tu@empresa.com",
+        "company"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Infraestructura de outbound multicanal (ICP, entregabilidad, secuencias, integración CRM) mediante herramientas propias (lemlist, Instantly, Clay, Apollo)",
+    "audience": "Equipos comerciales B2B con ciclos de venta moderados que buscan pipeline cualificado sin quemar dominios de email",
+    "prices": [
+      "…hort answer: Make is free up to 1,000 credits/mo on a permanent Free plan, and the first paid plan (Core) starts around $9/mo on annual billing (about $12/mo monthly) for 10,000 credits.",
+      "Paid plans start with Core around $9/mo on annual billing (about $12 monthly).Create a free Make account →The plansReal costComparison The price at a glanceMake, the key numbers~$9per monthCore plan, billed annually, 10,000 credits~8,640credits bur…",
+      "Indicative pricing is around $11 per 10,000 extra credits (single source, to confirm).",
+      "A freelancer running about 800 to 1,000 simple runs a month with no polling stays on Free at $0/mo.",
+      "Several figures are to confirm on the official pricing page: Core lands around $9 to $10.59/mo annual depending on the source, Pro around $16, and Teams around $29/user/mo (sources also report $34.12, and the total-vs-per-user split is ambiguous, so treat it as per user, to",
+      "Below we walk through every plan, the credit model, and what you really pay depending on your profile.Romain CochardCEO of Hack'celerationUpdated June 2026Free·forever plan1,000·monthly credits~15-20%·paid yearlyAffiliate links: if you sign up through our links, you support us at no extra cost.Starts at$0/mo (Free plan)Free forever,"
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Stay on Free as long as it covers you, move to Core when you need unlimited scenarios, and only consider Enterprise past 40,000 credits a month.",
+      "Preferimos decírtelo ahora que tras tres meses de envíos.02 Paso 2 · Infra de inboxMontar la infraestructura para que entres en inboxRegistramos dominios de envío dedicados, configuramos SPF, DKIM y DMARC, calentamos los buzones, y ajustamos la rotación de inbox para que el volumen nunca",
+      "On paid plans, unused credits roll over for one month (since November 2025).Is there a free trial for Make?+There is no separate time-limited trial: on Make the permanent Free plan is the trial.",
+      "When you need more credits, unlimited scenarios, a 1-minute interval or the Make API, you move up to Core (around $9/mo annual).",
+      "The real difference is self-hosting: n8n can run free on your own VPS ($3 to $50/mo) with unlimited executions, which is unbeatable on raw volume.",
+      "Cableamos el handoff: respuestas positivas enrutadas a tu CRM (HubSpot, Pipedrive, Attio), reuniones agendadas en tu calendario, y la cadencia ajustada sobre lo que de verdad convierte."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…hort answer: Make is free up to 1,000 credits/mo on a permanent Free plan, and the first paid plan (Core) starts around $9/mo on annual billing (about $12/mo monthly) for 10,000 credits.",
+          "url": "https://hackceleration.com/labs/make-pricing",
+          "pageTitle": "How Much Does Make Cost? Make Pricing & Plans 2026 Guide | Hack'celeration",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Below we walk through every plan, the credit model, and what you really pay depending on your profile.Romain CochardCEO of Hack'celerationUpdated June 2026Free·forever plan1,000·monthly credits~15-20%·paid yearlyAffiliate links: if you sign up through our links, you support us at no extra cost.Starts at$0/mo (Free plan)Free forever,",
+          "url": "https://hackceleration.com/labs/make-pricing",
+          "pageTitle": "How Much Does Make Cost? Make Pricing & Plans 2026 Guide | Hack'celeration",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Paid plans start with Core around $9/mo on annual billing (about $12 monthly).Create a free Make account →The plansReal costComparison The price at a glanceMake, the key numbers~$9per monthCore plan, billed annually, 10,000 credits~8,640credits bur…",
+          "url": "https://hackceleration.com/labs/make-pricing",
+          "pageTitle": "How Much Does Make Cost? Make Pricing & Plans 2026 Guide | Hack'celeration",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Several figures are to confirm on the official pricing page: Core lands around $9 to $10.59/mo annual depending on the source, Pro around $16, and Teams around $29/user/mo (sources also report $34.12, and the total-vs-per-user split is ambiguous, so treat it as per user, to",
+          "url": "https://hackceleration.com/labs/make-pricing",
+          "pageTitle": "How Much Does Make Cost? Make Pricing & Plans 2026 Guide | Hack'celeration",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Indicative pricing is around $11 per 10,000 extra credits (single source, to confirm).",
+          "url": "https://hackceleration.com/labs/make-pricing",
+          "pageTitle": "How Much Does Make Cost? Make Pricing & Plans 2026 Guide | Hack'celeration",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "A freelancer running about 800 to 1,000 simple runs a month with no polling stays on Free at $0/mo.",
+          "url": "https://hackceleration.com/labs/make-pricing",
+          "pageTitle": "How Much Does Make Cost? Make Pricing & Plans 2026 Guide | Hack'celeration",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://hackceleration.com/es/agencia/outbound",
+        "https://hackceleration.com/es/presupuesto-en-linea",
+        "https://hackceleration.com/quote-online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "La agencia Outbound.Más reuniones, menos spam.",
+        "Presupuesto en Línea",
+        "Get a Free Quote",
+        "LABS : WE TEST THE TOOLS FOR YOU, NO BS."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Presupuesto ✔",
+        "Presupuesto ✔→",
+        "Auditoría gratis de 60 min →",
+        "Reservar la auditoría →",
+        "Hablar con el equipo→",
+        "Empezar la auditoría →",
+        "EN",
+        "Enviar solicitud →"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://hackceleration.com/es/agencia/outbound · 1 campos",
+        "https://hackceleration.com/es/agencia/outbound · 1 campos",
+        "https://hackceleration.com/es/agencia/outbound · 1 campos",
+        "https://hackceleration.com/es/presupuesto-en-linea · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada/CTA: auditoría gratuita de 60 minutos. | Cualificación: valida oferta, ICP, ticket y ciclo; define alcance fijo y propuesta. | Producción/captación: configura dominios/buzones, listas y secuencias multicanal; lanza"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://hackceleration.com/es/agencia/outbound",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://hackceleration.com/es/presupuesto-en-linea",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://hackceleration.com/quote-online",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://hackceleration.com/labs",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://hackceleration.com/labs/make-pricing",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://hackceleration.com/labs/review",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://hackceleration.com/labs/review/allo-the-mobile-first-company",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=hackceleration.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Quick quote ✔”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

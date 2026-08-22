@@ -1,0 +1,538 @@
+{
+  "id": "agencialeads-net-agk-marketing-agency-llc",
+  "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
+  "reviewedAt": "2026-08-22T15:50:18.164Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "La Agencia de Leads especializada en Leads de Calidad para tu Sector",
+    "heroObserved": true,
+    "priorSummary": "Leads exclusivos y filtrados por servicio/zona; red de landings verticales.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 94 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1663 palabras por página comercial recuperada. Muestras breves: “Política de AVISO LEGAL en AgenciaLeads” · “Calculadora para Comprar Leads” · “¡Consigue una Sesión de Consultoría 100% Gratuita!”.",
+    "supportingHeadings": [
+      "Política de AVISO LEGAL en AgenciaLeads",
+      "Privacidad del Cliente de AgenciaLeads",
+      "Identidad del Responsable",
+      "Actividad de la Sociedad",
+      "Propiedad Intelectual",
+      "Protección de Datos Personales",
+      "Exclusión de Responsabilidad",
+      "Legislación y Jurisdicción Aplicable",
+      "Modificaciones del Aviso Legal",
+      "Dirección",
+      "HORARIO",
+      "CONTACTO",
+      "¡Consigue una Sesión de Consultoría 100% Gratuita!",
+      "Calculadora para Comprar Leads",
+      "Presupuesto personalizado para Comprar Leads Cualificados",
+      "¿Preguntas sobre la Generación de Leads?",
+      "Pide una Cotización de Leads Personalizada",
+      "Agencia de Leads para Planes de Ahorro e Inversión: Captación de Clientes Potenciales",
+      "Tu Aliado en la Captación de Leads para Ahorro e Inversión",
+      "Leads Cualificados para Planes de Ahorro e Inversión",
+      "Captación de Leads para Productos de Ahorro Personal y Financiero",
+      "Leads para Ahorro e Inversión",
+      "Así Filtramos los clientes potenciales para Planes de Ahorro e Inversión",
+      "AgenciaLeads es tu Aliado para Escalar tu Empresa del Sector Financiero",
+      "¿Cómo son nuestros Leads de Planes de Ahorro e Inversión?",
+      "Leads Cualificados, Filtrados y Exclusivos",
+      "Leads Filtrados",
+      "Leads Exclusivos",
+      "Precios Competitivos",
+      "Seguimiento y Verificación de Leads"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar Consultoría",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://agencialeads.net/",
+      "text": "Solicitar Consultoría",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 224.75
+    },
+    "ctas": [
+      "Solicitar Consultoría",
+      "Contacto",
+      "ENVIAR",
+      "CONTINUAR",
+      "Contáctanos",
+      "captar leads ahora",
+      "Leads para tu Sector"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://agencialeads.net/aviso-legal/",
+        "index": 1,
+        "action": "https://agencialeads.net/aviso-legal/",
+        "method": "POST",
+        "submitText": "Solicitar Consultoría",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Full Name",
+            "placeholder": "Nombre y Apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_5af01a3]",
+            "label": "Phone",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Correo Electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Servicio que ofrece tu empresa",
+            "placeholder": "Servicio que ofrece tu empresa",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://agencialeads.net/calculadora-comprar-leads/",
+        "index": 1,
+        "action": "https://agencialeads.net/calculadora-comprar-leads/",
+        "method": "POST",
+        "submitText": "CONTINUAR",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Full Name",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_7ac4620]",
+            "label": null,
+            "placeholder": "Apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_672e355]",
+            "label": null,
+            "placeholder": "Nombre de la Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_351b207]",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_2bd5e62]",
+            "label": null,
+            "placeholder": "CIF o NIF",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://agencialeads.net/contacto-agencia-leads/",
+        "index": 1,
+        "action": "https://agencialeads.net/contacto-agencia-leads/",
+        "method": "POST",
+        "submitText": "ENVIAR",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 7,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Full Name",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_7ac4620]",
+            "label": null,
+            "placeholder": "Apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_351b207]",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_672e355]",
+            "label": null,
+            "placeholder": "Nombre de la Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_bae3595]",
+            "label": null,
+            "placeholder": "Cargo en la Empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "form_fields[field_3628ce6]",
+            "label": null,
+            "placeholder": "Volumen de Leads Mensual",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "form_fields[field_f995296]",
+            "label": "Servicio de Interés",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 4 y 8 campos visibles, mínimo 1 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Servicio que ofrece tu empresa, Servicio de Interés.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 8,
+      "qualification": [
+        "Servicio que ofrece tu empresa",
+        "Servicio de Interés"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WhatsApp",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Leads exclusivos y filtrados por servicio/zona; red de landings verticales.",
+    "audience": "Más de 100 páginas de servicios y verticales en mercado hispano.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "LEADS PARA TU SECTOR ¿Por qué elegir a AgenciaLeads para Captar Leads y Conseguir Más Clientes Potenciales?",
+      "Si necesitas una agencia de leads confiable para conseguir más leads, nuestro servicio está diseñado para maximizar la visibilidad y el alcance de tu empresa, conectándote con clientes potenciales listos para contratar tus servicios.",
+      "…mas Leads para Inmobiliarias Leads para Clínicas Leads Telecomunicaciones Leads para Ley de Segunda OportunidadCaptamos clientes potenciales que buscan acogerse a la ley de segunda oportunidad para reducir o cancelar sus deudas.",
+      "Nuestro enfoque asegura leads activos en la búsqueda de justicia financiera.Leads para Reclamación de MicrocréditosGeneramos leads para despachos que ayudan a clientes afectados por intereses abusivos en microcréditos.",
+      "Conectamos con clientes que buscan recuperar su estabilidad financiera y resolver deudas.Leads para Derecho de FamiliaCaptamos leads para casos de derecho de familia, incluyendo divorcios, custodias y pensiones alimenticias.",
+      "Nuestro servicio conecta con personas que necesitan apoyo legal en temas familiares complejos.Leads para Derecho PenalGeneramos leads para despachos que representan clientes en casos de derecho penal."
+    ],
+    "objections": [
+      "LEADS PARA TU SECTOR ¿Por qué elegir a AgenciaLeads para Captar Leads y Conseguir Más Clientes Potenciales?",
+      "…de Segunda OportunidadCaptamos clientes potenciales que buscan acogerse a la ley de segunda oportunidad para reducir o cancelar sus deudas.",
+      "Mateo HernándezEmpresa de Reformas Lo que necesitas saber sobre Nuestra Agencia de Leads Preguntas Frecuentes sobre el Servicio de Leads de AgenciaLeads ¿Qué es exactamente la captación de leads y cómo funciona en AgenciaLeads?La captación de leads consiste en identificar y atraer clientes potenciales interesados"
+    ],
+    "urgency": [
+      "Empieza hoy mismo a captar clientes potenciales con garantías.",
+      "Contáctanos ahora y escala tu negocio mes a mes.",
+      "CAPTAR LEADS ahora Servicio de Interés Leads para Abogados Leads para Energía Leads para Finanzas Leads para Seguros Leads para Inmobiliarias Leads para Reformas Leads para Clínicas Otro ENVIAR Consigue Más Clientes de Hipotecas con AgenciaLeads La mejor agencia de leads para el sector financiero",
+      "CAPTAR LEADS ahora Servicio de Interés Leads para Abogados Leads para Energía Leads para Finanzas Leads para Seguros Leads para Inmobiliarias Leads para Reformas Leads para Clínicas Otro ENVIAR Lead…",
+      "¡CAPTAR LEADS AHORA!",
+      "Gracias a ellos, ahora contamos con contactos interesados en productos hipotecarios específicos, como la subrogación y los gastos hipotecarios."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "LEADS PARA TU SECTOR ¿Por qué elegir a AgenciaLeads para Captar Leads y Conseguir Más Clientes Potenciales?",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Si necesitas una agencia de leads confiable para conseguir más leads, nuestro servicio está diseñado para maximizar la visibilidad y el alcance de tu empresa, conectándote con clientes potenciales listos para contratar tus servicios.",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…mas Leads para Inmobiliarias Leads para Clínicas Leads Telecomunicaciones Leads para Ley de Segunda OportunidadCaptamos clientes potenciales que buscan acogerse a la ley de segunda oportunidad para reducir o cancelar sus deudas.",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nuestro enfoque asegura leads activos en la búsqueda de justicia financiera.Leads para Reclamación de MicrocréditosGeneramos leads para despachos que ayudan a clientes afectados por intereses abusivos en microcréditos.",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Conectamos con clientes que buscan recuperar su estabilidad financiera y resolver deudas.Leads para Derecho de FamiliaCaptamos leads para casos de derecho de familia, incluyendo divorcios, custodias y pensiones alimenticias.",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nuestro servicio conecta con personas que necesitan apoyo legal en temas familiares complejos.Leads para Derecho PenalGeneramos leads para despachos que representan clientes en casos de derecho penal.",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "LEADS PARA TU SECTOR ¿Por qué elegir a AgenciaLeads para Captar Leads y Conseguir Más Clientes Potenciales?",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…de Segunda OportunidadCaptamos clientes potenciales que buscan acogerse a la ley de segunda oportunidad para reducir o cancelar sus deudas.",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Mateo HernándezEmpresa de Reformas Lo que necesitas saber sobre Nuestra Agencia de Leads Preguntas Frecuentes sobre el Servicio de Leads de AgenciaLeads ¿Qué es exactamente la captación de leads y cómo funciona en AgenciaLeads?La captación de leads consiste en identificar y atraer clientes potenciales interesados",
+          "url": "https://agencialeads.net/",
+          "pageTitle": "🟡Agencia Leads de Calidad⚫¡Leads con Éxito Garantizado!",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://agencialeads.net/aviso-legal/",
+        "https://agencialeads.net/calculadora-comprar-leads/",
+        "https://agencialeads.net/contacto-agencia-leads/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Política de AVISO LEGAL en AgenciaLeads",
+        "Calculadora para Comprar Leads",
+        "¡Consigue una Sesión de Consultoría 100% Gratuita!",
+        "Agencia de Leads para Planes de Ahorro e Inversión: Captación de Clientes Potenciales"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Solicitar Consultoría",
+        "CONTINUAR",
+        "Leads para tu Sector",
+        "captar leads ahora",
+        "ENVIAR",
+        "Contáctanos"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://agencialeads.net/aviso-legal/ · 4 campos",
+        "https://agencialeads.net/calculadora-comprar-leads/ · 6 campos",
+        "https://agencialeads.net/calculadora-comprar-leads/ · 4 campos",
+        "https://agencialeads.net/contacto-agencia-leads/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "«Captar leads ahora», formulario, WhatsApp o llamada → briefing B2B con empresa, cargo, servicio, sector y volumen mensual → campaña segmentada por nicho/zona → filtrado con más de"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://agencialeads.net/aviso-legal/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://agencialeads.net/calculadora-comprar-leads/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://agencialeads.net/contacto-agencia-leads/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://agencialeads.net/leads-planes-ahorro-e-inversion/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://agencialeads.net/agencia-leads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://agencialeads.net/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://agencialeads.net/leads-hipotecas/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=agencialeads.net",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=AgenciaLeads.net",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://leadsagencia.es/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://leadsagencia.es/aviso-legal/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://agencialeads.net/",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar Consultoría”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WhatsApp, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,642 @@
+{
+  "id": "iniciativas-digitales",
+  "name": "Iniciativas Digitales",
+  "reviewedAt": "2026-08-22T15:50:18.073Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Convierte tu inversión digital en clientes, no en visitas perdidas.",
+    "heroObserved": true,
+    "priorSummary": "Sistema de captación de leads (landing + Ads + automatización email + tracking GA4), webs corporativas orientadas a conversión, gestión de Ads (Google/Meta/LinkedIn)",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 236 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1418 palabras por página comercial recuperada. Muestras breves: “Convierte tu inversión digital en clientes, no en visitas perdidas.” · “Contacta con un consultor de marketing digital para tu pyme.” · “Tarifas de consultor de marketing digital.”.",
+    "supportingHeadings": [
+      "Convierte tu inversión digital en clientes, no en visitas perdidas.",
+      "Sistema de captación",
+      "Web corporativa",
+      "Campañas de Google, Meta y LinkedIn Ads",
+      "Agencia SEM, freelance al uso o Iniciativas Digitales",
+      "¿Te encaja lo que acabas de ver?",
+      "Quince años antes de Iniciativas Digitales",
+      "Por qué Iniciativas Digitales",
+      "Visión integral",
+      "Trato directo",
+      "Experiencia de agencia",
+      "Solo medimos resultados",
+      "Cómo trabajo",
+      "Llamada inicial gratuita",
+      "Propuesta clara",
+      "Ejecución con checkpoints",
+      "Resultados y reporting",
+      "Cómo es la primera llamada",
+      "Sobre el proyecto",
+      "Lo último del blog",
+      "Lead Nurturing: la secuencia de email para leads que no compran al primer impacto",
+      "Cómo mejorar el posicionamiento web de tu empresa: guía práctica para pymes",
+      "Cuánto cuesta una landing page (y qué determina el precio de verdad)",
+      "Preguntas frecuentes",
+      "Reservemos 30 minutos.",
+      "Contacta con un consultor de marketing digital para tu pyme.",
+      "Qué pasa después de que me escribas",
+      "Leo tu mensaje y te respondo en menos de 24h hábiles",
+      "Llamada inicial de 30 minutos, gratuita",
+      "Propuesta por escrito con precio cerrado"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://iniciativasdigitales.es/",
+      "text": "Contacto",
+      "href": "https://iniciativasdigitales.es/contacto",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Quiero la llamada",
+      "Cuéntame tu caso",
+      "Cuéntame tu proyecto"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://iniciativasdigitales.es/",
+        "index": 1,
+        "action": "https://iniciativasdigitales.es/",
+        "method": "GET",
+        "submitText": "Quiero la llamada",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "interes",
+            "label": "Sistema de captación",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "tipo",
+            "label": "Particular",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Teléfono (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": "¿Algo más que quieras contarme? (opcional)",
+            "placeholder": "Ej.: Vendemos servicios B2B, hoy llegan leads solo por boca-oreja. Queremos abrir",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "He leído y acepto la política de privacidad y el tratamiento de",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://iniciativasdigitales.es/servicios/campanas-ads",
+        "index": 1,
+        "action": "https://iniciativasdigitales.es/servicios/campanas-ads",
+        "method": "GET",
+        "submitText": "Quiero la llamada",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Teléfono (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": "¿Qué necesitas? *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "He leído y acepto la política de privacidad y el tratamiento de",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 7 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Sistema de captación de leads (landing + Ads + automatización email + tracking GA4), webs corporativas orientadas a conversión, gestión de Ads (Google/Meta/LinkedIn)",
+    "audience": "B2B, servicios profesionales, software/SaaS, formación, industria, construcción/inmobiliario — excluye explícitamente ecommerce de bajo precio",
+    "prices": [
+      "Si el alcance crece a mitad de proyecto, se habla y se ajusta por escrito antes de trabajar, nunca en la factura del mes siguiente.La competencia de tu sectorUn sector con clics a 0,40 € y otro con clics a 6 € no necesitan el",
+      "La captación de leads parte de 1.500 € de setup más 400-800 €/mes de gestión; el diseño web corporativo va de 1.200 € a 3.500 € a proyecto cerrado; y la gestión de campañas —Google Ads, Meta Ads o LinkedIn Ads—, de 350 € a",
+      "Pagas un retainer mensual cerrado, sin permanencia y con IVA aparte.¿Cuánto cuesta una página web corporativa?Entre 1.200 € y 3.500 € a proyecto cerrado según alcance y complejidad.",
+      "Leer Preguntas frecuentes¿Cuánto cuesta?Sistema de captación: setup inicial de 1.500€-2.500€ + gestión mensual de 400€-800€ (según volumen de campañas).",
+      "Campañas de ads: desde 350€/mes de gestión.",
+      "Te paso una propuesta con precio cerrado por escrito tras la primera llamada.¿Cuánto cobra un consultor de marketing digital freelance?Como freelance con método de agencia, mis precios son más bajos que los de una agencia (que suele pedir 1.500-3.000 €/mes con permanencia) y más transparentes"
+    ],
+    "guarantee": [],
+    "proof": [
+      "…partir números reales del negocio.Tu presupuesto publicitario va a estar permanentemente por debajo de 500€/mes.Esperas resultados consistentes en menos de 4 semanas.Quieres una agencia '360' que te lleve también redes orgánicas, branding, eventos y todo lo demás.",
+      "…2B Midiendo: GA4 · Tag Manager · Consent v2 01Captación02Web03Ads01Captación02Web03AdsConvierte tu inversión digital en clientes, no en visitas perdidas.Sistema de captación (landing + ads + email) y desarrollo web para pymes B2B y de servicios.",
+      "Por debajo de eso es difícil sacar conclusiones.¿Cuánto tarda en verse resultados?En campañas de pago, las primeras conversiones suelen llegar en 2-4 semanas.",
+      "Trabajo con públicos personalizados a partir de tu base de clientes y visitantes web, públicos similares construidos sobre clientes buenos y no sobre cualquier lead, y segmentación por cargo o sector donde la plataforma la permite con fiabilidad.",
+      "…directamente a Google, a Meta o a LinkedIn.¿Qué hace un especialista en Meta Ads para una pyme B2B?Define los públicos (clientes actuales, visitantes web, similares construidos sobre buenos clientes), produce y rota las creatividades, monta el embudo en capas de descubrimiento, consideración y conversión, c…",
+      "Tú decides en cada hito.04 / 04Resultados y reportingMétricas claras, qué se ha hecho, qué viene después."
+    ],
+    "objections": [
+      "Sin intermediarios.Precio típico400-800€/mes retainer cerradoMétodo y procesosDe agencia, adaptado a pymePropiedad de cuentasSiempre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negocio mensualDedicaciónCartera limitada y transparenteReservemos 30 minutos.Cuéntame en dos líneas qué tienes entre manos.",
+      "Leer Preguntas frecuentes¿Cuánto cuesta?Sistema de captación: setup inicial de 1.500€-2.500€ + gestión mensual de 400€-800€ (según volumen de campañas).",
+      "Sin permanencia ni penalizaciones por baja.",
+      "Cuéntame tu casoPreguntas frecuentes¿Qué presupuesto mínimo de publicidad necesito?500€/mes es el suelo recomendado para tener datos suficientes con los que decidir.",
+      "Cuéntame tu casoPreguntas frecuentes¿Qué hace exactamente un consultor de Google Ads?Un consultor de Google Ads diseña la estrategia de la cuenta (qué campañas, qué palabras clave, qué públicos), monta la estructura, configura la medición, lanza los anuncios y los optimiza mes a mes.",
+      "Método y experiencia de agencia, trato directo y precios de freelance.Cuéntame tu casoVer precios y plazos empieza aquí Respuesta en menos de 24 h hábiles·Sin permanencia·Cuentas a tu nombre ¿Aún no es el momento de hablar?",
+      "Leer 21 de julio de 2026·9 min de lecturaCómo mejorar el posicionamiento web de tu empresa: guía práctica para pymesCómo mejorar el posicionamiento web de una pyme paso a paso: qué mueve de verdad el ranking, por dónde empezar y cuánto tarda en notarse.",
+      "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias© 2026 Iniciativas Digitales."
+    ],
+    "urgency": [
+      "Completo y medido.Te encaja si…Necesitas que entren contactos de forma sistemática y hoy solo llegan por boca a boca.+Landing dedicada+Campañas de Google Ads o Meta Ads+Secuencias de email+Medición y reportingdesde 1500 € de setup + 400 €–800 €/mes Ver el servicio Ser…",
+      "Sin intermediarios.Precio típico400-800€/mes retainer cerradoMétodo y procesosDe agencia, adaptado a pymePropiedad de cuentasSiempre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negocio mensualDedicaciónCartera limitada y transparenteReservemos 30 minutos.Cuéntame en dos líneas qué tienes entre manos.",
+      "Reservas, hablamos y decides tú.Te pregunto por tu producto, tu cliente ideal y tus números de hoyPara saber si lo que necesitas encaja con lo que hago, no con un guion de venta.Te digo claro si encaja o noEn la misma llamada.",
+      "Tu web sigue funcionando como hasta ahora; este sistema vive en paralelo.¿Google Ads, Meta Ads o ambos?Depende de tu producto y de dónde está tu cliente cuando decide.",
+      "…menos tiempo perdemos los dos: —A qué se dedica tu empresa y a quién le vendes (B2B, servicios, industria…).—Qué tienes hoy funcionando: web, campañas de Google Ads o Meta Ads, analítica, CRM.—Qué te está fallando o qué te gustaría conseguir en los próximos seis meses.—Si ya inviertes en publicidad, cu…",
+      "…mpre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negocio mensualDedicaciónCartera limitada y transparente¿Te encaja lo que acabas de ver?Cuéntame tu caso en una llamada de 30 min, gratis y sin compromiso."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Sin intermediarios.Precio típico400-800€/mes retainer cerradoMétodo y procesosDe agencia, adaptado a pymePropiedad de cuentasSiempre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negoc…",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Leer Preguntas frecuentes¿Cuánto cuesta?Sistema de captación: setup inicial de 1.500€-2.500€ + gestión mensual de 400€-800€ (según volumen de campañas).",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Web corporativa: de 1.200€ a 3.500€ a proyecto cerrado.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Campañas de ads: desde 350€/mes de gestión.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Suele tener sentido cuando ya tienes claro qué necesitas y tu prioridad es renovar el activo principal antes de invertir en captación.¿Cuánto presupuesto de publicidad necesito para que tenga sentido?Recomiendo un mínimo de 500€/mes de inversión publicitaria (aparte de los honorarios) para tener datos suficientes",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other",
+          "amountType": "ad_spend"
+        },
+        {
+          "text": "Si el alcance crece a mitad de proyecto, se habla y se ajusta por escrito antes de trabajar, nunca en la factura del mes siguiente.La competencia de tu sectorUn sector con clics a 0,40 € y otro con clics a 6 € no necesitan el",
+          "url": "https://iniciativasdigitales.es/precios",
+          "pageTitle": "Tarifas de Consultor de Marketing Digital | Iniciativas Digitales",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Sistema completo: 400-800 €/mes.Canales que necesitan optimización continua: ads, captación, email.Agencia con equipo Cuota mensual con account manager y varios perfiles asignados.Suele arrancar en 1.500-3.000 €/mes, con permanencia.Volumen alto, varios mercados o necesidad de reporting semanal.",
+          "url": "https://iniciativasdigitales.es/precios",
+          "pageTitle": "Tarifas de Consultor de Marketing Digital | Iniciativas Digitales",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Sin intermediarios.Precio típico400-800€/mes retainer cerradoMétodo y procesosDe agencia, adaptado a pymePropiedad de cuentasSiempre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negoc…",
+          "url": "https://iniciativasdigitales.es/precios",
+          "pageTitle": "Tarifas de Consultor de Marketing Digital | Iniciativas Digitales",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "La captación de leads parte de 1.500 € de setup más 400-800 €/mes de gestión; el diseño web corporativo va de 1.200 € a 3.500 € a proyecto cerrado; y la gestión de campañas —Google Ads, Meta Ads o LinkedIn Ads—, de 350 € a",
+          "url": "https://iniciativasdigitales.es/precios",
+          "pageTitle": "Tarifas de Consultor de Marketing Digital | Iniciativas Digitales",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Te paso una propuesta con precio cerrado por escrito tras la primera llamada.¿Cuánto cobra un consultor de marketing digital freelance?Como freelance con método de agencia, mis precios son más bajos que los de una agencia (que suele pedir 1.500-3.000 €/mes con permanencia) y más transparentes",
+          "url": "https://iniciativasdigitales.es/precios",
+          "pageTitle": "Tarifas de Consultor de Marketing Digital | Iniciativas Digitales",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Pagas un retainer mensual cerrado, sin permanencia y con IVA aparte.¿Cuánto cuesta una página web corporativa?Entre 1.200 € y 3.500 € a proyecto cerrado según alcance y complejidad.",
+          "url": "https://iniciativasdigitales.es/precios",
+          "pageTitle": "Tarifas de Consultor de Marketing Digital | Iniciativas Digitales",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…2B Midiendo: GA4 · Tag Manager · Consent v2 01Captación02Web03Ads01Captación02Web03AdsConvierte tu inversión digital en clientes, no en visitas perdidas.Sistema de captación (landing + ads + email) y desarrollo web para pymes B2B y de servicios.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tú decides en cada hito.04 / 04Resultados y reportingMétricas claras, qué se ha hecho, qué viene después.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Por debajo de eso es difícil sacar conclusiones.¿Cuánto tarda en verse resultados?En campañas de pago, las primeras conversiones suelen llegar en 2-4 semanas.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Trabajo con públicos personalizados a partir de tu base de clientes y visitantes web, públicos similares construidos sobre clientes buenos y no sobre cualquier lead, y segmentación por cargo o sector donde la plataforma la permite con fiabilidad.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…directamente a Google, a Meta o a LinkedIn.¿Qué hace un especialista en Meta Ads para una pyme B2B?Define los públicos (clientes actuales, visitantes web, similares construidos sobre buenos clientes), produce y rota las creatividades, monta el embudo en capas de descubrimiento, consideración y conversión, c…",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…partir números reales del negocio.Tu presupuesto publicitario va a estar permanentemente por debajo de 500€/mes.Esperas resultados consistentes en menos de 4 semanas.Quieres una agencia '360' que te lleve también redes orgánicas, branding, eventos y todo lo demás.",
+          "url": "https://iniciativasdigitales.es/servicios/sistema-captacion",
+          "pageTitle": "Sistema de captación de leads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Método y experiencia de agencia, trato directo y precios de freelance.Cuéntame tu casoVer precios y plazos empieza aquí Respuesta en menos de 24 h hábiles·Sin permanencia·Cuentas a tu nombre ¿Aún no es el momento de hablar?",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…doMétodo y procesosDe agencia, adaptado a pymePropiedad de cuentasSiempre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negocio mensualDedicaciónCartera limitada y transparente¿Te encaja lo que acabas de ver?Cuéntame tu caso en una llamada de 30 min, gratis y sin compromiso.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Si no encajo, te lo digo yo primero: sin persecución comercial ni permanencia.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sectores con los que he trabajado Servicios profesionalesSoftware / SaaSFormaciónIndustria / fabricaciónConstrucción / inmobiliarioServicios B2B en generalPor qué Iniciativas Digitales01Visión integralWeb, SEO, publicidad de pago y email funcionando como un sistema conectado, no como servicios sueltos.02Trato directoHablas con quien hace el trabajo.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leer 21 de julio de 2026·9 min de lecturaCómo mejorar el posicionamiento web de tu empresa: guía práctica para pymesCómo mejorar el posicionamiento web de una pyme paso a paso: qué mueve de verdad el ranking, por dónde empezar y cuánto tarda en notarse.",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leer Preguntas frecuentes¿Cuánto cuesta?Sistema de captación: setup inicial de 1.500€-2.500€ + gestión mensual de 400€-800€ (según volumen de campañas).",
+          "url": "https://iniciativasdigitales.es/",
+          "pageTitle": "Consultor de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias Cómo saber qué servicio te toca Casi todas las dudas que me llegan se resuelven con una de estas cuatro respuestas.",
+          "url": "https://iniciativasdigitales.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin intermediarios.Precio típico400-800€/mes retainer cerradoMétodo y procesosDe agencia, adaptado a pymePropiedad de cuentasSiempre a tu nombreContrato y facturaciónEscrito, sin permanencia, IVAReportingMétrica de negocio mensualDedicaciónCartera limitada y transparenteReservemos 30 minutos.Cuéntame en dos líneas qué tienes entre manos.",
+          "url": "https://iniciativasdigitales.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias Iniciativas · Digitales Marketing digital integral para pymes españolas.",
+          "url": "https://iniciativasdigitales.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias© 2026 Iniciativas Digitales.",
+          "url": "https://iniciativasdigitales.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para Pymes | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Si en el futuro alguien te pregunta por qué se hizo X, hay rastro.Cuentas publicitarias a tu nombre, accesos compartidos, sin 'rehén tecnológico'.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin permanencia ni penalizaciones por baja.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cuéntame tu casoPreguntas frecuentes¿Qué hace exactamente un consultor de Google Ads?Un consultor de Google Ads diseña la estrategia de la cuenta (qué campañas, qué palabras clave, qué públicos), monta la estructura, configura la medición, lanza los anuncios y los optimiza mes a mes.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "En la primera llamada vemos si la curva de aprendizaje del sector es razonable.¿Por qué un freelance especialista en Google Ads y no una agencia SEM?Con un freelance hablas siempre con el mismo experto que toca la cuenta.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias Iniciativas · Digitales Marketing digital integral para pymes españolas.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias© 2026 Iniciativas Digitales.",
+          "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+          "pageTitle": "Consultor Google Ads y Meta Ads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin permanencia ni penalizaciones por baja.",
+          "url": "https://iniciativasdigitales.es/servicios/sistema-captacion",
+          "pageTitle": "Sistema de captación de leads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cuéntame tu casoPreguntas frecuentes¿Qué presupuesto mínimo de publicidad necesito?500€/mes es el suelo recomendado para tener datos suficientes con los que decidir.",
+          "url": "https://iniciativasdigitales.es/servicios/sistema-captacion",
+          "pageTitle": "Sistema de captación de leads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias Iniciativas · Digitales Marketing digital integral para pymes españolas.",
+          "url": "https://iniciativasdigitales.es/servicios/sistema-captacion",
+          "pageTitle": "Sistema de captación de leads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Autónomo dado de alta en EspañaContrato escrito y precio cerradoCuentas y datos a tu nombreCumplimiento RGPDSin permanencias© 2026 Iniciativas Digitales.",
+          "url": "https://iniciativasdigitales.es/servicios/sistema-captacion",
+          "pageTitle": "Sistema de captación de leads para pymes B2B | Iniciativas Digitales",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://iniciativasdigitales.es/",
+        "https://iniciativasdigitales.es/contacto",
+        "https://iniciativasdigitales.es/precios"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Convierte tu inversión digital en clientes, no en visitas perdidas.",
+        "Contacta con un consultor de marketing digital para tu pyme.",
+        "Tarifas de consultor de marketing digital.",
+        "Servicios de marketing digital para pymes."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Quiero la llamada",
+        "Contacto",
+        "Cuéntame tu proyecto",
+        "Cuéntame tu caso"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://iniciativasdigitales.es/ · 7 campos",
+        "https://iniciativasdigitales.es/contacto · 7 campos",
+        "https://iniciativasdigitales.es/precios · 7 campos",
+        "https://iniciativasdigitales.es/servicios · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contenido/checklist → formulario → respuesta <24 h → llamada gratuita 30 min → propuesta cerrada por escrito → setup → retainer mensual → reporting/optimización → salida con 1"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://iniciativasdigitales.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://iniciativasdigitales.es/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://iniciativasdigitales.es/precios",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://iniciativasdigitales.es/servicios",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://iniciativasdigitales.es/marketing-digital-asesorias",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://iniciativasdigitales.es/servicios/campanas-ads",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://iniciativasdigitales.es/servicios/sistema-captacion",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://iniciativasdigitales.es/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

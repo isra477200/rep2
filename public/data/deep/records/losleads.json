@@ -1,0 +1,549 @@
+{
+  "id": "losleads",
+  "name": "LosLeads",
+  "reviewedAt": "2026-08-22T15:50:17.331Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "The product is qualified appointments, not raw leads",
+    "heroObserved": true,
+    "priorSummary": "Entrega citas B2B cualificadas con calendario, historial completo y briefing del prospecto.",
+    "voice": "Revisión manual: Blunt, Spanish direct response, Category-reframing, Anti-cheap-lead. Leads that do not convert Cheap, low-intent contacts Brittle automation Time wasted qualifying",
+    "supportingHeadings": [
+      "Citas calificadas con tus clientes ideales. Para tu negocio.",
+      "Los leads no convierten. Las citas sí.",
+      "Leads sin calificar",
+      "Cold calling sin contexto",
+      "Tiempo en prospección en lugar de cierre",
+      "Operamos tu adquisición de principio a fin",
+      "Definimos tu avatar B2B",
+      "Construimos tu sistema de atracción",
+      "Calificamos cada prospecto",
+      "Entregamos la cita con briefing",
+      "Todo para que el agente solo cierre",
+      "Definición de avatar B2B",
+      "Páginas de aterrizaje",
+      "Secuencias de contacto",
+      "Calificación humana",
+      "Briefing pre-cita",
+      "Panel de leads y reportes",
+      "No somos otra agencia de leads",
+      "Herramientas comerciales con IA, listas en menos de una semana.",
+      "CRM personalizado",
+      "Cotizadores y calculadoras",
+      "Portal de clientes con roles",
+      "Sistema de agendamiento",
+      "Dashboard / panel interno",
+      "Inventario / operación",
+      "Para el negocio que quiere escalar, no para cualquiera",
+      "El precio depende de tu mercado y volumen objetivo",
+      "Lo que nos preguntan antes de empezar",
+      "¿Listo para que tus citas lleguen solas?",
+      "Más clientes.Tu autoridad visible online."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agenda una sesión gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.losleads.com/es/sistemas",
+      "text": "Agenda una sesión gratuita",
+      "href": "https://www.losleads.com/es/agendar",
+      "element": "a",
+      "kind": "conversion",
+      "score": 158.5
+    },
+    "ctas": [
+      "Consultoría",
+      "Agenda una sesión gratuita",
+      "Enviar solicitud de diagnóstico",
+      "Seguros",
+      "Tecnología B2B",
+      "Enviar Mensaje",
+      "3–5 citas / mes",
+      "20+ citas / mes",
+      "Legal / jurídico",
+      "6–10 citas / mes",
+      "Otro servicio B2B",
+      "11–20 citas / mes",
+      "Outsourcing / RRHH",
+      "Servicios financieros",
+      "Hablar con el equipoUn profesional te ayuda a comunicar tu propuesta de valor y"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.losleads.com/es/diagnostico/general",
+        "index": 1,
+        "action": "https://www.losleads.com/es/diagnostico/general",
+        "method": "GET",
+        "submitText": "Enviar solicitud de diagnóstico",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Ej. Antonio Caballero",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": null,
+            "placeholder": "Ej. +52 55 1234 5678",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Ej. Consultoría de procesos para PyMEs",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Ej. CDMX, Estado de México, Guadalajara",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "Contexto adicional sobre tu negocio, tamaño de empresa que buscas, etc.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.losleads.com/es/sistemas",
+        "index": 1,
+        "action": "https://www.losleads.com/es/sistemas",
+        "method": "GET",
+        "submitText": "Enviar Mensaje",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "tu@correo.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "+52 (555) 000-0000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "¿Qué sistema necesitas?",
+            "placeholder": "Describe tu proyecto, ej: un cotizador para mi agencia de seguros…",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Contexto adicional sobre tu negocio, tamaño de empresa que buscas, etc..",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": [
+        "Contexto adicional sobre tu negocio, tamaño de empresa que buscas, etc."
+      ]
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Entrega citas B2B cualificadas con calendario, historial completo y briefing del prospecto.",
+    "audience": "Negocios B2B con 2+ años, cierre consolidado y objetivo de 5–15 citas cualificadas al mes.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "BlogCasosAgendar SesiónClientes reales · Sitios en vivoLanding pages que hemos creadoCada una diseñada, escrita y lanzada para un negocio real."
+    ],
+    "objections": [],
+    "urgency": [
+      "Entregamos la primera versión publicada en menos de 24 horas.Más Clientes.El Mismo Día.Tu página de coaching y consultoría captando prospectos calificados las 24 horasCrear mi página ahora Recibes tu página primero.",
+      "Copy que posiciona, diseño que convierte.03Recibes tu página hoyTe enviamos el link el mismo día.",
+      "Empieza el siguiente mes.Crear mi página ahora Preguntas frecuentes sobre páginas web para coachesLo que más nos preguntan coaches, mentores y consultores antes de contratar.¿Cuánto cuesta una página web para un coach o consultor en México?+Con LosLeads, una landing para coaches cuesta $290.00 únicos y",
+      "El equipo crea tu página sin llamadas.Crear mi página ahora Recibes tu página primero.",
+      "Si quieres ajustes, agendamos una sesión de revisión.Crear mi página ahora Todo lo que NecesitasHerramientas diseñadas para coaches y consultores exitososPosiciónate como ExpertoMuestra tu trayectoria, certificaciones y casos de éxito.",
+      "Cuéntanos qué duele hoy.CuéntanosCómo trabajamosCuatro pasos."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "BlogCasosAgendar SesiónClientes reales · Sitios en vivoLanding pages que hemos creadoCada una diseñada, escrita y lanzada para un negocio real.",
+          "url": "https://www.losleads.com/es/casos",
+          "pageTitle": "Casos de Éxito | LosLeads — Landing Pages Reales que Hemos Creado",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "WhatsApp",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.losleads.com/es",
+        "https://www.losleads.com/es/coaches",
+        "https://www.losleads.com/es/terminos"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Citas calificadas con tus clientes ideales. Para tu negocio.",
+        "Más clientes.Tu autoridad visible online.",
+        "Términos y Condiciones",
+        "Cuéntanos sobre tu negocio"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Hablar con el equipoUn profesional te ayuda a comunicar tu propuesta de valor y",
+        "Consultoría",
+        "Servicios financieros",
+        "Legal / jurídico",
+        "Tecnología B2B",
+        "Outsourcing / RRHH",
+        "Seguros",
+        "Otro servicio B2B"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.losleads.com/es/diagnostico/general · 5 campos",
+        "https://www.losleads.com/es/sistemas · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Agenda una sesión gratuita"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → diagnóstico gratis 30 min → propuesta personalizada → avatar B2B → landing/email/WhatsApp/contenido → cualificación humana → cita con historial y briefing → panel y reporting."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Category reframing [observed] → Structured diagnostic request [observed] → WhatsApp coordination [observed] → Thirty-minute diagnostic [observed] → Managed demand generation [observed] → Human qualification and handoff [observed]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.losleads.com/es",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.losleads.com/es/coaches",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.losleads.com/es/terminos",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.losleads.com/es/casos",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.losleads.com/es/diagnostico/general",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.losleads.com/es/sistemas",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.losleads.com/es/privacidad",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR15140305832081620993/creative/CR06333466672850010113?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=1088017674390953",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/173701901169058079",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agenda una sesión gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "The product is qualified appointments, not raw leads",
+      "promise": "Deliver human-qualified B2B appointments with context so the client can focus on closing.",
+      "positioning": "LosLeads distinguishes booked, contextualized appointments from lists of contacts or fragile automation.",
+      "audience": "At least two years in business · B2B services · A consolidated sales close · Demand for 5–15 appointments per month",
+      "voice": [
+        "Blunt",
+        "Spanish direct response",
+        "Category-reframing",
+        "Anti-cheap-lead"
+      ],
+      "patterns": [
+        "Leads that do not convert",
+        "Cheap, low-intent contacts",
+        "Brittle automation",
+        "Time wasted qualifying"
+      ]
+    },
+    "cta": {
+      "primary": "Request a diagnostic",
+      "secondary": [],
+      "forms": [
+        {
+          "url": "https://www.losleads.com/es/diagnostico/general",
+          "purpose": "Qualify the company for a diagnostic",
+          "fields": [
+            "Name",
+            "WhatsApp",
+            "Business vertical",
+            "Main service",
+            "Cities or regions",
+            "Desired appointments",
+            "Optional context"
+          ],
+          "fieldCount": 7,
+          "friction": "The form requests consent to coordinate by WhatsApp.",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Category reframing",
+        "status": "observed",
+        "detail": "The homepage contrasts appointments with raw leads and emphasizes human qualification."
+      },
+      {
+        "stage": "Structured diagnostic request",
+        "status": "observed",
+        "detail": "The form captures service, territory, vertical and desired appointment volume."
+      },
+      {
+        "stage": "WhatsApp coordination",
+        "status": "observed",
+        "detail": "The company coordinates the diagnostic through WhatsApp."
+      },
+      {
+        "stage": "Thirty-minute diagnostic",
+        "status": "observed",
+        "detail": "Objective, strategy and expected cost are described as personalized."
+      },
+      {
+        "stage": "Managed demand generation",
+        "status": "observed",
+        "detail": "ICP, landing, email, WhatsApp and content are combined."
+      },
+      {
+        "stage": "Human qualification and handoff",
+        "status": "observed",
+        "detail": "The client receives a booked appointment with briefing and interaction history."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "Exact price not public",
+        "Price said to depend on market, volume and geography"
+      ],
+      "contract": [],
+      "guarantee": [
+        "No fully specified public performance guarantee was observed."
+      ]
+    },
+    "proof": [
+      "Outcome claims were visible",
+      "Public independently verifiable case evidence was limited on the reviewed path"
+    ],
+    "objections": [
+      "Raw leads versus real meetings",
+      "Need for human qualification",
+      "Buyer fit",
+      "Territorial relevance",
+      "Time wasted on unqualified prospects"
+    ],
+    "technology": [
+      "Next.js",
+      "Vercel",
+      "Meta Pixel",
+      "Google Analytics 4"
+    ],
+    "contradictions": [
+      "price-opacity — A starting range would let qualified buyers self-select more efficiently. — The offer promises a defined monthly appointment range. — No price range or minimum commitment was public.",
+      "proof-gap — The positioning is stronger than the public evidence layer. — Strong category claims create confidence. — Few public independently checkable case details were visible."
+    ],
+    "inferences": [
+      "Explicit disqualification protects delivery capacity and makes acceptance feel selective. — confidence: high — basis: The page clearly defines businesses it does and does not serve.",
+      "WhatsApp coordination is intended to preserve a human feel before the diagnostic. — confidence: medium — basis: The form asks for WhatsApp and the brand argues against impersonal automation."
+    ],
+    "notObservable": [
+      "Actual WhatsApp coordination",
+      "Calendar or booking steps",
+      "Diagnostic output",
+      "Pricing proposal",
+      "Contract and guarantee terms",
+      "Client dashboard"
+    ],
+    "limitations": [
+      "The diagnostic form was not submitted.",
+      "No private pricing or contract was available.",
+      "Public proof depth was limited."
+    ],
+    "lessons": {
+      "copy": [
+        "Sell the appointment outcome instead of the contact",
+        "State who is not a fit",
+        "Make the client benefit operational: only close",
+        "Transfer interaction history with every appointment",
+        "Use diagnostic fields that improve the first conversation"
+      ],
+      "adapt": [],
+      "avoid": [
+        "Hiding all price context",
+        "Making strong claims without equivalent case depth"
+      ],
+      "test": [
+        "A diagnostic form with explicit rejection criteria",
+        "Appointment cards that include source, need, objections and history"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.losleads.com/es",
+        "label": "home",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.losleads.com/es/diagnostico/general",
+        "label": "diagnostic",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

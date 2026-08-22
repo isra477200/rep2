@@ -1,0 +1,460 @@
+{
+  "id": "solomondirectory-islesmedia-net-ficha-de-cobertura-mundial-islas-salomon",
+  "name": "solomondirectory.islesmedia.net — ficha de cobertura mundial — Islas Salomón",
+  "reviewedAt": "2026-08-22T15:50:18.937Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Explore Solomon Islands",
+    "heroObserved": true,
+    "priorSummary": "Buscar negocios, reclamar/crear/actualizar fichas, promover visibilidad y convertir visitas en clientes; CTA: Claim Now/Get Started.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 182 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 580 palabras por página comercial recuperada. Muestras breves: “Explore Solomon Islands” · “Contact” · “Results For Religious Organization Listings”.",
+    "supportingHeadings": [
+      "Explore Solomon Islands",
+      "Featured Directories",
+      "Marie’s Kitchen",
+      "Absolute Graphic Limited",
+      "Dolphine View Beach",
+      "Claim & Get Started Today!",
+      "1- Claimed",
+      "2- Promote",
+      "3- Convert",
+      "Exclusive",
+      "News & Tips",
+      "Advertise With Solomon Classifieds",
+      "Contact",
+      "Address",
+      "Contact us",
+      "Results For Religious Organization Listings",
+      "Submit Your Listing",
+      "Leave a Comment Cancel reply",
+      "Categories",
+      "Comments"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://solomondirectory.islesmedia.net/",
+      "text": "Contact",
+      "href": "https://solomondirectory.islesmedia.net/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Sign In",
+      "Register",
+      "Send Message",
+      "Post a comment"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://solomondirectory.islesmedia.net/",
+        "index": 2,
+        "action": "https://solomondirectory.islesmedia.net/",
+        "method": "POST",
+        "submitText": "Register",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "username",
+            "label": null,
+            "placeholder": "User name *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://solomondirectory.islesmedia.net/",
+        "index": 3,
+        "action": "https://solomondirectory.islesmedia.net/",
+        "method": "POST",
+        "submitText": "Get New Password",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "email",
+            "name": "user_login",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://solomondirectory.islesmedia.net/contact/",
+        "index": 6,
+        "action": "https://solomondirectory.islesmedia.net/contact/",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "uname",
+            "label": null,
+            "placeholder": "Name:",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "uemail",
+            "label": null,
+            "placeholder": "Email:",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "usubject",
+            "label": null,
+            "placeholder": "Subject:",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "umessage",
+            "label": null,
+            "placeholder": "Message:",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://solomondirectory.islesmedia.net/maries-kitchen/",
+        "index": 6,
+        "action": "https://solomondirectory.islesmedia.net/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Post a comment",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "label": "Website",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Save my name, email, and website in this browser for the next",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comment",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 1 y 5 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Website, Save my name, email, and website in this browser for the next.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 5,
+      "qualification": [
+        "Website",
+        "Save my name, email, and website in this browser for the next"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Buscar negocios, reclamar/crear/actualizar fichas, promover visibilidad y convertir visitas en clientes; CTA: Claim Now/Get Started.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Nearly 80% Of Consumers Turn To Directories With Reviews To Find A Local Business.",
+      "2- Promote Promote your business to target customers who need your services or products.",
+      "3- Convert Turn your visitors into paying customers with exciting offers and services on your page.",
+      "Exclusive Popular Exclusive Listings In Our Directory Save Preview The University of the South Pacific Diplomats Honiara City Save Preview Anglican Church of Melanesia Religious Organization Honiara City https://l.facebook.com/l.php?u..."
+    ],
+    "objections": [
+      "Cancel Sign In Add Listing Sign In Add Listing Home Contact Why Are You Reposrting this Listing?",
+      "Cancel Sign In Add Listing Sign In Add Listing Why Are You Reposrting this Listing?"
+    ],
+    "urgency": [
+      "Read More Arts & Graphics Absolute Graphic Limited By Solomon Directory / July 26, 2022 For Location and Contact details, please click the link to Solomon Directory below: Absolute Graphic Limited | Solomon Directory (islesmedia.net), Related...",
+      "In 2020 because of the demand I trained two of my sisters and now we’re operating full time Mon-Sat.",
+      "…e & PastryHomestay & ResortsInformation TechnologyNews & Media Featured Directories Directory Features You Must Explore Today Food & Catering Marie’s Kitchen By Solomon Directory / July 26, 2022 For Location and Contact details, please click the link to Solomon Directory below: Maries Kitchen | Solomon D…",
+      "Read More Claim & Get Started Today!",
+      "…omens Media Maries Kitchen: Cakes for Every Occasion BY JOY OFASIA Baking is loved by many and is one of the most well-known hobby people passionate and have turn into moneymaking.",
+      "Right after our son’s birthday I vowed to myself that from now on I must teach myself how bake so that on each of his birthday I will make him the perfect cake."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Nearly 80% Of Consumers Turn To Directories With Reviews To Find A Local Business.",
+          "url": "https://solomondirectory.islesmedia.net/",
+          "pageTitle": "Solomon Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "2- Promote Promote your business to target customers who need your services or products.",
+          "url": "https://solomondirectory.islesmedia.net/",
+          "pageTitle": "Solomon Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "3- Convert Turn your visitors into paying customers with exciting offers and services on your page.",
+          "url": "https://solomondirectory.islesmedia.net/",
+          "pageTitle": "Solomon Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Exclusive Popular Exclusive Listings In Our Directory Save Preview The University of the South Pacific Diplomats Honiara City Save Preview Anglican Church of Melanesia Religious Organization Honiara City https://l.facebook.com/l.php?u...",
+          "url": "https://solomondirectory.islesmedia.net/",
+          "pageTitle": "Solomon Directory",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Cancel Sign In Add Listing Sign In Add Listing Home Contact Why Are You Reposrting this Listing?",
+          "url": "https://solomondirectory.islesmedia.net/",
+          "pageTitle": "Solomon Directory",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cancel Sign In Add Listing Sign In Add Listing Why Are You Reposrting this Listing?",
+          "url": "https://solomondirectory.islesmedia.net/listing-category/legal-services/religious-organization/",
+          "pageTitle": "Religious Organization – Solomon Directory",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://solomondirectory.islesmedia.net/",
+        "https://solomondirectory.islesmedia.net/contact/",
+        "https://solomondirectory.islesmedia.net/listing-category/legal-services/religious-organization/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Explore Solomon Islands",
+        "Contact",
+        "Results For Religious Organization Listings",
+        "Submit Your Listing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Register",
+        "Contact",
+        "Sign In",
+        "Send Message",
+        "Post a comment"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://solomondirectory.islesmedia.net/ · 2 campos",
+        "https://solomondirectory.islesmedia.net/ · 1 campos",
+        "https://solomondirectory.islesmedia.net/contact/ · 2 campos",
+        "https://solomondirectory.islesmedia.net/contact/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://solomondirectory.islesmedia.net/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://solomondirectory.islesmedia.net/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://solomondirectory.islesmedia.net/listing-category/legal-services/religious-organization/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://solomondirectory.islesmedia.net/submit-listing/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://solomondirectory.islesmedia.net/maries-kitchen/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://solomondirectory.islesmedia.net/absolute-graphic-limited/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://solomondirectory.islesmedia.net/dolphine-view-beach-facing-the-brunt-of-covid-19-situation/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://solomondirectory.islesmedia.net/listing/isles-media-solomon-online-directory-event-websites/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://solomondirectory.islesmedia.net/location/solomon-islands/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "2 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

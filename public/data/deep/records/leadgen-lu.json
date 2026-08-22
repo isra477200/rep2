@@ -1,0 +1,715 @@
+{
+  "id": "leadgen-lu",
+  "name": "LeadGen.lu",
+  "reviewedAt": "2026-08-22T15:50:17.686Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Concrete tools to fill your order book in Luxembourg",
+    "heroObserved": true,
+    "priorSummary": "Cinco soluciones modulares para llenar la cartera: web de captación, SEO/Google, recepción y cualificación por IA, lista diaria de nuevas empresas y widget de vídeo con reserva.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 418 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1237 palabras por página comercial recuperada. Muestras breves: “Concrete tools to fill your order book in Luxembourg” · “Let's talk about your growth” · “Your customers spend 2 hours a day on Meta.”.",
+    "supportingHeadings": [
+      "Services",
+      "Advertising",
+      "Solutions",
+      "Resources",
+      "Contact",
+      "Newsletter",
+      "Concrete tools to fill your order book in Luxembourg",
+      "Choose what you need right now",
+      "AI Lead Gen Website",
+      "Google Domination",
+      "AI Phone Answering Service",
+      "Luxembourg Business Watch",
+      "Interactive Video Widget",
+      "Why Luxembourg SMEs trust us",
+      "Fully managed",
+      "No commitment",
+      "Built for SMEs",
+      "Measurable results",
+      "Frequently asked questions",
+      "Want to receive more quote requests ?",
+      "Let's talk about your growth",
+      "How it works in practice",
+      "After your request",
+      "Let's talk about your project",
+      "Your goal",
+      "How many quote requests per month do you want?",
+      "What additional revenue are you targeting?",
+      "Contact details",
+      "Opening hours",
+      "Frequently Asked Questions"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Book a call",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://leadgen.lu/en/about",
+      "text": "Book a call",
+      "href": "https://leadgen.lu/en/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 302.25
+    },
+    "ctas": [
+      "Book a call",
+      "Book a free call",
+      "Book a strategy call",
+      "Receive my free Meta Ads audit",
+      "Get a free quote",
+      "contact@leadgen.lu",
+      "Call us directly",
+      "WhatsApp Business",
+      "Fill in the form",
+      "Ask your question",
+      "Discuter de mon projet",
+      "Vérifier mon éligibilité",
+      "Démarrer mon essai gratuit",
+      "Chat IA 24h/24Répond aux visiteurs même le dimanche+ 300€"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://leadgen.lu/en/services/facebook-instagram-ads",
+        "index": 2,
+        "action": "https://leadgen.lu/en/services/facebook-instagram-ads",
+        "method": "GET",
+        "submitText": "Receive my free Meta Ads audit",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Type of business",
+            "placeholder": "E.g.: Restaurant, Hair salon, Shop...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Geographic area",
+            "placeholder": "E.g.: Luxembourg City, Esch-sur-Alzette, whole country...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Planned monthly budget",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Your name",
+            "placeholder": "First name Last name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Work email",
+            "placeholder": "you@company.lu",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leadgen.lu/en/solutions/ai-phone-system",
+        "index": 2,
+        "action": "https://leadgen.lu/en/solutions/ai-phone-system",
+        "method": "GET",
+        "submitText": "Démarrer mon essai gratuit",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Quel est votre métier ?",
+            "placeholder": "Ex: Plombier, Menuisier, Fiduciaire, Avocat...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": null,
+            "label": "Combien d'appels recevez-vous par jour ?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Votre nom",
+            "placeholder": "Prénom Nom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email pro",
+            "placeholder": "vous@entreprise.lu",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Votre numéro de téléphone",
+            "placeholder": "+352 621 xxx xxx",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Geographic area, Planned monthly budget.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": [
+        "Geographic area",
+        "Planned monthly budget"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Cinco soluciones modulares para llenar la cartera: web de captación, SEO/Google, recepción y cualificación por IA, lista diaria de nuevas empresas y widget de vídeo con reserva.",
+    "audience": "Luxemburgo; pymes, artesanos, comercios, construcción, restauración y servicios locales.",
+    "prices": [],
+    "guarantee": [
+      "…jour de sécuritéRapport mensuel de performancesSupport réactif par email et téléphoneSME Packages Digital — Jusqu'à 70% rembourséLe Ministère de l'Économie luxembourgeois rembourse jusqu'à 70% de votre investissement digital, plafonné à 17 500€.",
+      "L'État luxembourgeois rembourse jusqu'à 70% de votre investissement.Get a free quote Réponse sous 24h Satisfaction garantie SME Packages éligible",
+      "Concrete results or your money back.Built for SMEsSolutions designed for tradespeople and SMEs in Luxembourg, not multinationals.Measurable resultsEvery euro invested is tracked.",
+      "Étape 4 : optimisation mensuelle continue pour améliorer les performances.Response within 24h guaranteedStill have questions?Our team replies within 24h."
+    ],
+    "proof": [
+      "For example: a lead gen website + Google domination + AI phone system create a complete system where all you have to do is pick up the phone.How long before I see the first results?The website is delivered in 1 week, the AI phone system",
+      "For SEO (Google domination), first results appear in 2 to 4 weeks depending on competition for your keywords.Do these solutions work for my sector?If you sell a service or product locally in Luxembourg (tradesperson, trust company, firm, shop), yes.",
+      "Yours will be instant — on phone and desktop.Your clients speak 3 languages, so does your siteIn Luxembourg, your clients search in French, English or German.",
+      "You know exactly what it returns.10+clients served4.9/51 wkwebsite delivery timeFrequently asked questionsIs there a long-term commitment?No.",
+      "We have clients in construction, restaurants, business services and retail.Turnkey solutionsWant to receive more quote requests ?Book a free 30-minute discovery call.",
+      "Un site qui vous ramène des clients.Les agences web font des sites vitrines."
+    ],
+    "objections": [
+      "For example: a lead gen website + Google domination + AI phone system create a complete system where all you have to do is pick up the phone.How long before I see the first results?The website is delivered in 1 week, the AI phone system",
+      "Vous recevez un rapport détaillé avec un plan d'action chiffré sous 48 heures.Résultats2 questionsCombien de temps faut-il pour voir les premiers résultats ?Cela dépend du service choisi.",
+      "…s Google en 6 moisÉÉquipe MarketingÉquipe Marketing — EmailTree.aiSaaS / Intelligence ArtificielleDiscuter de mon projetFrequently asked questionsEverything you need to know about website creation in Luxembourg.How much does a professional website cost in Luxembourg?Budgets start at €1,000 excl.",
+      "VAT / monthor €490 HT/an (2 months free)Try 7 days freeAI chatbot customised to your businessAnswers common questions 24/7Captures quote requestsAutomatic appointment bookingFrench, English, GermanIntegration with your existing siteEmail notificationsMost popularVoiceAI answers the phone for you€119excl.",
+      "You know exactly what it returns.10+clients served4.9/51 wkwebsite delivery timeFrequently asked questionsIs there a long-term commitment?No.",
+      "We prefer to keep you through results, not a contract.Can I combine multiple solutions?Yes, it's even recommended.",
+      "It's the SEO of tomorrow, and we're shipping it today.Votre prochain client vous cherche sur Google en ce momentDevis gratuit en 24h, sans engagement.",
+      "Ready to call back.An assistant that responds even on Sunday eveningAn intelligent chat on your site answers your clients' common questions (rates, availability, service area) even when you're on a job site.You know where your clients come fromGoogle, word of mouth, Yellow Pages?"
+    ],
+    "urgency": [
+      "Each solution solves a real problem you face today.€29from /month1 wkwebsite delivered24/7AI phone activeBook a strategy callSee the solutionsChoose what you need right nowEach solution works on its own.",
+      "You know exactly what it returns.10+clients served4.9/51 wkwebsite delivery timeFrequently asked questionsIs there a long-term commitment?No.",
+      "· Bertrange · €15,000 - 25,000just nowQuoteNRoof quote — Detached houseMarc L.",
+      "· Kirchberg · Fast response12 min agoUrgent+6 quotestoday16 leadsthis month+280%SEO traffic",
+      "…g — EmailTree.aiSaaS / Intelligence ArtificielleDiscuter de mon projetFrequently asked questionsEverything you need to know about website creation in Luxembourg.How much does a professional website cost in Luxembourg?Budgets start at €1,000 excl.",
+      "It's the SEO of tomorrow, and we're shipping it today.Votre prochain client vous cherche sur Google en ce momentDevis gratuit en 24h, sans engagement."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Concrete results or your money back.Built for SMEsSolutions designed for tradespeople and SMEs in Luxembourg, not multinationals.Measurable resultsEvery euro invested is tracked.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Étape 4 : optimisation mensuelle continue pour améliorer les performances.Response within 24h guaranteedStill have questions?Our team replies within 24h.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…jour de sécuritéRapport mensuel de performancesSupport réactif par email et téléphoneSME Packages Digital — Jusqu'à 70% rembourséLe Ministère de l'Économie luxembourgeois rembourse jusqu'à 70% de votre investissement digital, plafonné à 17 500€.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "L'État luxembourgeois rembourse jusqu'à 70% de votre investissement.Get a free quote Réponse sous 24h Satisfaction garantie SME Packages éligible",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "You know exactly what it returns.10+clients served4.9/51 wkwebsite delivery timeFrequently asked questionsIs there a long-term commitment?No.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "For example: a lead gen website + Google domination + AI phone system create a complete system where all you have to do is pick up the phone.How long before I see the first results?The website is delivered in 1 week, the AI phone system",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "For SEO (Google domination), first results appear in 2 to 4 weeks depending on competition for your keywords.Do these solutions work for my sector?If you sell a service or product locally in Luxembourg (tradesperson, trust company, firm, shop), yes.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We have clients in construction, restaurants, business services and retail.Turnkey solutionsWant to receive more quote requests ?Book a free 30-minute discovery call.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Un site qui vous ramène des clients.Les agences web font des sites vitrines.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Combiné avec notre référencement SEO et nos campagnes Google Ads, c'est un système complet.Your clients find you on GoogleWhen someone types \"plumber Luxembourg\" or \"renovation Esch-sur-Alzette\", it's your site that appears in the top results.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Yours will be instant — on phone and desktop.Your clients speak 3 languages, so does your siteIn Luxembourg, your clients search in French, English or German.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ready to call back.An assistant that responds even on Sunday eveningAn intelligent chat on your site answers your clients' common questions (rates, availability, service area) even when you're on a job site.You know where your clients come fromGoogle, word of mouth, Yellow Pages?",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "No more investing blindly.As beautiful on phone as on a large screen80% of your future clients search from their phone.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Your site will be perfect on all screens — from smartphone to 27-inch.We handle everything, you focus on your clientsUpdates, security, backups, hosting — all managed.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You decide when and how to call back.10+ active clientsWhat our clients sayCalls, quotes and appointments delivered for the businesses we work with in Luxembourg.« Franchement, juste en SEO tu génères des contacts.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Both include a 7-day free trial — no commitment, no credit card.Do clients realise they're talking to an AI?The voice is natural and fluid.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Skip to main contentLeadGenServices Solutions ProjectsFAQAboutContactENENBook a free callLeadGenYour digital marketing partner in Luxembourg.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You focus on your work.No commitmentTry before you commit.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You know exactly what it returns.10+clients served4.9/51 wkwebsite delivery timeFrequently asked questionsIs there a long-term commitment?No.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "All our solutions are commitment-free.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We prefer to keep you through results, not a contract.Can I combine multiple solutions?Yes, it's even recommended.",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "For example: a lead gen website + Google domination + AI phone system create a complete system where all you have to do is pick up the phone.How long before I see the first results?The website is delivered in 1 week, the AI phone system",
+          "url": "https://leadgen.lu/en/solutions",
+          "pageTitle": "Turnkey Solutions for SMEs in Luxembourg | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Skip to main contentLeadGenServices Solutions ProjectsFAQAboutContactENENBook a free callLeadGenYour digital marketing partner in Luxembourg.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Que vous soyez en phase d'amorçage ou de croissance, nous adaptons notre stratégie à votre stade de développement et à vos objectifs.SEO & Référencement3 questionsPouvez-vous garantir des résultats SEO ?Nous ne garantissons pas de positions spécifiques car Google contrôle ses algorithmes.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Vous recevez un rapport détaillé avec un plan d'action chiffré sous 48 heures.Résultats2 questionsCombien de temps faut-il pour voir les premiers résultats ?Cela dépend du service choisi.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Vous savez exactement combien d'appels et de devis chaque action génère.Tarifs4 questionsComment sont structurés vos tarifs ?Nos tarifs sont transparents et adaptés à vos objectifs.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "L'appel de diagnostic de 30 minutes est gratuit et sans engagement.Faut-il s'engager sur une longue durée ?Non.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Suite à cet appel, vous recevez un diagnostic complet de votre présence digitale sous 48 heures, sans engagement.",
+          "url": "https://leadgen.lu/en/faq",
+          "pageTitle": "Frequently Asked Questions - FAQ | LeadGen.lu",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Skip to main contentLeadGenServices Solutions ProjectsFAQAboutContactENENBook a free callLeadGenYour digital marketing partner in Luxembourg.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ready to call back.An assistant that responds even on Sunday eveningAn intelligent chat on your site answers your clients' common questions (rates, availability, service area) even when you're on a job site.You know where your clients come fromGoogle, word of mouth, Yellow Pages?",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…s Google en 6 moisÉÉquipe MarketingÉquipe Marketing — EmailTree.aiSaaS / Intelligence ArtificielleDiscuter de mon projetFrequently asked questionsEverything you need to know about website creation in Luxembourg.How much does a professional website cost in Luxembourg?Budgets start at €1,000 excl.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "It's the SEO of tomorrow, and we're shipping it today.Votre prochain client vous cherche sur Google en ce momentDevis gratuit en 24h, sans engagement.",
+          "url": "https://leadgen.lu/en/solutions/website-creation",
+          "pageTitle": "Website Creation Luxembourg — From €1,000 | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Skip to main contentLeadGenServices Solutions ProjectsFAQAboutContactENENBook a free callLeadGenYour digital marketing partner in Luxembourg.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The AI assistant picks up in 2 seconds, using your business name.\"Hello, Martin Plumbing, how can I help you?\"STEP 02The AI identifies the needThe assistant asks the right questions: what type of problem, how urgent, what address.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You find the appointment in your calendar.We qualify the enquiryProject type, budget, urgency, address — the AI asks the right questions and sends you a summary by SMS or email.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You only call back the good leads.We answer on your website tooA chatbot on your site that answers questions (rates, coverage area, availability) and captures quote requests even at 11 PM on a Sunday.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "VAT / monthor €490 HT/an (2 months free)Try 7 days freeAI chatbot customised to your businessAnswers common questions 24/7Captures quote requestsAutomatic appointment bookingFrench, English, GermanIntegration with your existing siteEmail notificationsMost popularVoiceAI answers the phone for you€119excl.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sans engagement.",
+          "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+          "pageTitle": "AI Phone System — We Answer the Phone While You're on the Job | LeadGen.lu",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://leadgen.lu/en/solutions",
+        "https://leadgen.lu/en/contact",
+        "https://leadgen.lu/en/faq"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Concrete tools to fill your order book in Luxembourg",
+        "Let's talk about your growth",
+        "Your customers spend 2 hours a day on Meta.",
+        "Création de Site Internet au Luxembourg"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Book a free call",
+        "contact@leadgen.lu",
+        "Book a strategy call",
+        "Fill in the form",
+        "Call us directly",
+        "Ask your question",
+        "Book a call",
+        "WhatsApp Business"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://leadgen.lu/en/services/facebook-instagram-ads · 5 campos",
+        "https://leadgen.lu/en/solutions/ai-phone-system · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp",
+        "Book a free call",
+        "Book a strategy call",
+        "Book a free call",
+        "Book a free call",
+        "Book a free call"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Diagnóstico o alta de módulo → configuración de target/solución → producción modular (datos, web/SEO, IA o widget) → entrega diaria de CSV a las 08:00 o lead/call/reserva según"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://leadgen.lu/en/solutions",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://leadgen.lu/en/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://leadgen.lu/en/faq",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://leadgen.lu/en/about",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://leadgen.lu/en/services/facebook-instagram-ads",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://leadgen.lu/en/solutions/website-creation",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://leadgen.lu/en/solutions/ai-phone-system",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR02134966953658286081?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 15,
+      "url": "http://cmo.lu/",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=leadgen.lu",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://www.leadgen.lu/alternative/lbr",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR02134966953658286081/creative/CR07709566223029108737?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://leadgen.lu/solutions/site-web-lead-gen",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://www.youtube.com/watch?v=kE6zd5srG8M",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR02134966953658286081/creative/CR15079374410953523201?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR02134966953658286081/creative/CR06317475650613542913?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "http://leadgen.lu/",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR02134966953658286081/creative/CR05296070305217773569?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.leadgen.lu/",
+      "label": "Fuente pública 26"
+    }
+  ],
+  "archivedEvidenceCount": 6,
+  "archivedEvidenceNote": "Los enlaces temporales o técnicos no compartibles se retiraron; los activos recuperables permanecen en la galería local de la ficha.",
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Book a call”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

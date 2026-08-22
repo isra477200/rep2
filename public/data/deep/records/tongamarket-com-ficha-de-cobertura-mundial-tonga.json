@@ -1,0 +1,461 @@
+{
+  "id": "tongamarket-com-ficha-de-cobertura-mundial-tonga",
+  "name": "tongamarket.com — ficha de cobertura mundial — Tonga",
+  "reviewedAt": "2026-08-22T15:50:18.981Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Shop Products",
+    "heroObserved": true,
+    "priorSummary": "Comprar desde cualquier lugar y recoger en las islas; explorar tiendas, reservar estancias/tours, descargar eBooks o vender online. También comercializa su tecnología PaciSeller.",
+    "voice": "Tono cuantitativo, orientado a la acción, apoya la venta en reversión de riesgo. Usa 103 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 333 palabras por página comercial recuperada. Muestras breves: “Shop Products” · “Contact” · “Shop”.",
+    "supportingHeadings": [
+      "Shop Products",
+      "Book Stays & Tours",
+      "eBooks & Downloads",
+      "Explore Stores",
+      "Featured stores",
+      "A & A Retailer (Tonga) Ltd",
+      "Al & Partners",
+      "Eiko-San Tonga",
+      "FANAS AIR BNB",
+      "Grace Nursery & Garden",
+      "Hilliard Memorial School",
+      "IVI'S IDEAS",
+      "SPARE PARTS ZONE TONGA (Fale kongokonga me'alele 'a Rasaki)",
+      "Tino & Joe Business",
+      "Tongamarket",
+      "TradeMe - IVI'S IDEAS",
+      "TradeMe - Matamoana Excavator Services",
+      "Stays, tours, and services",
+      "HR Policy Development Package",
+      "HRIS / Payroll Implementation Consulting (Hourly)",
+      "HR Consultation Session (Hourly)",
+      "Career Counseling Session (Hourly)",
+      "Startup Entrepreneur Training Workshop",
+      "Financial Reporting Preparation (Hourly)",
+      "Bookkeeping Setup — Monthly Package",
+      "Tax Return Preparation & Filing",
+      "Multi-Branch Stock",
+      "Diaspora Payments",
+      "Pickup-First Fulfillment",
+      "PaciSeller — one domain, one payment, yours for life."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Request Demo",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://tongamarket.com/",
+      "text": "Request Demo",
+      "href": "https://tongamarket.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 342
+    },
+    "ctas": [
+      "Request Demo",
+      "Request a Demo",
+      "Book a service",
+      "booking53 items",
+      "HR Consultation Session (Hourly)",
+      "Bookkeeping Setup — Monthly Package",
+      "HRIS / Payroll Implementation Consulting (Hourly)",
+      "Contact",
+      "Book Stays & ToursHotels, guest houses, whale watching, and island experiences.Book now →",
+      "Start Free",
+      "Startup Entrepreneur Training Workshop",
+      "EN",
+      "TO",
+      "Help",
+      "Cart",
+      "Service",
+      "Support",
+      "Checkout",
+      "Cart (0)",
+      "Services",
+      "Add to cart",
+      "View Service",
+      "Send message",
+      "View service",
+      "Basket Cart (0)",
+      "Get Enterprise Pro",
+      "HR Policy Development Package",
+      "Tax Return Preparation & Filing",
+      "Business Advisory Session (Hourly)",
+      "Financial Reporting Preparation (Hourly)"
+    ],
+    "captureType": "Checkout verificado",
+    "forms": [
+      {
+        "pageUrl": "https://tongamarket.com/paciseller/",
+        "index": 3,
+        "action": "https://tongamarket.com/wp-admin/admin-post.php",
+        "method": "POST",
+        "submitText": "Send message",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "ps_contact_name",
+            "label": "Name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "ps_contact_email",
+            "label": "Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "ps_contact_topic",
+            "label": "How can we help?General enquirySeller onboardingOrder supportPaciSeller platform",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "ps_contact_message",
+            "label": "Message",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://tongamarket.com/shop/potted-plants-hire/flowering-potted-plant-hire-day-l/",
+        "index": 3,
+        "action": "https://tongamarket.com/shop/potted-plants-hire/flowering-potted-plant-hire-day-l/",
+        "method": "POST",
+        "submitText": "Add to cart",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "number",
+            "name": "quantity",
+            "label": "Flowering Potted Plant Hire/Day - L quantity",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "checkout",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 4 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": true,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Comprar desde cualquier lugar y recoger en las islas; explorar tiendas, reservar estancias/tours, descargar eBooks o vender online. También comercializa su tecnología PaciSeller.",
+    "audience": null,
+    "prices": [
+      "Related products Grace Nursery & GardenFlowering Potted Plant Hire/Day – M $32.31 Add to cart Grace Nursery & GardenGreen Potted Plant Hire/Day – LTransform your surroundings into a vibrant oasis with our exquisite collection of green potted plants available… $…"
+    ],
+    "guarantee": [
+      "The seller covers the refund; the marketplace refunds the margin on refunded amounts.",
+      "whale watching) are rebooked or refunded in full.",
+      "Downloads/eBooks: refundable only if the file is corrupt or materially not as described — digital goods cannot be “returned”.",
+      "Refunds are made to the original payment method within [10] business days of approval."
+    ],
+    "proof": [],
+    "objections": [
+      "Bookings (stays, tours, services): free cancellation up to [48 hours] before the booked time; later cancellations at the seller’s stated policy on the listing.",
+      "Weather cancellations (e.g."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Related products Grace Nursery & GardenFlowering Potted Plant Hire/Day – M $32.31 Add to cart Grace Nursery & GardenGreen Potted Plant Hire/Day – LTransform your surroundings into a vibrant oasis with our exquisite collection of green potted plants available… $…",
+          "url": "https://tongamarket.com/shop/potted-plants-hire/flowering-potted-plant-hire-day-l/",
+          "pageTitle": "Flowering Potted Plant Hire/Day – L – TongaMarket.Com",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Marketplace MarketplaceMy AccountCartCheckoutSupport Seller Tools Become a Seller Seller Account Support PaciSeller Plans and Pricing Request a Demo About the Platform Trust & Legal Terms of Use Acceptable Use Seller Agreement Refunds & Returns Privacy & Data Deletion Security Statement Support (24/7) Copyright 2026 TongaMarket.Com.",
+          "url": "https://tongamarket.com/",
+          "pageTitle": "TongaMarket.Com – Tonga Online Market for all Tonga Products and Services",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Marketplace MarketplaceMy AccountCartCheckoutSupport Seller Tools Become a Seller Seller Account Support PaciSeller Plans and Pricing Request a Demo About the Platform Trust & Legal Terms of Use Acceptable Use Seller Agreement Refunds & Returns Privacy & Data Deletion Security Statement Support (24/7) Copyright 2026 TongaMarket.Com.",
+          "url": "https://tongamarket.com/contact/",
+          "pageTitle": "Contact – TongaMarket.Com",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Marketplace MarketplaceMy AccountCartCheckoutSupport Seller Tools Become a Seller Seller Account Support PaciSeller Plans and Pricing Request a Demo About the Platform Trust & Legal Terms of Use Acceptable Use Seller Agreement Refunds & Returns Privacy & Data Deletion Security Statement Support (24/7) Copyright 2026 TongaMarket.Com.",
+          "url": "https://tongamarket.com/shop/potted-plants-hire/flowering-potted-plant-hire-day-l/",
+          "pageTitle": "Flowering Potted Plant Hire/Day – L – TongaMarket.Com",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Marketplace MarketplaceMy AccountCartCheckoutSupport Seller Tools Become a Seller Seller Account Support PaciSeller Plans and Pricing Request a Demo About the Platform Trust & Legal Terms of Use Acceptable Use Seller Agreement Refunds & Returns Privacy & Data Deletion Security Statement Support (24/7) Copyright 2026 TongaMarket.Com.",
+          "url": "https://tongamarket.com/store/tino-and-joe-business-services/",
+          "pageTitle": "TongaMarket.Com",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "The seller covers the refund; the marketplace refunds the margin on refunded amounts.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "whale watching) are rebooked or refunded in full.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Downloads/eBooks: refundable only if the file is corrupt or materially not as described — digital goods cannot be “returned”.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Refunds are made to the original payment method within [10] business days of approval.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Marketplace MarketplaceMy AccountCartCheckoutSupport Seller Tools Become a Seller Seller Account Support PaciSeller Plans and Pricing Request a Demo About the Platform Trust & Legal Terms of Use Acceptable Use Seller Agreement Refunds & Returns Privacy & Data Deletion Security Statement Support (24/7) Copyright 2026 TongaMarket.Com.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Bookings (stays, tours, services): free cancellation up to [48 hours] before the booked time; later cancellations at the seller’s stated policy on the listing.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Weather cancellations (e.g.",
+          "url": "https://tongamarket.com/refunds-returns/",
+          "pageTitle": "Refunds & Returns – TongaMarket.Com",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://tongamarket.com/",
+        "https://tongamarket.com/contact/",
+        "https://tongamarket.com/shop/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Shop Products",
+        "Contact",
+        "Shop",
+        "PaciSeller"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Help",
+        "Basket Cart (0)",
+        "booking53 items",
+        "Contact",
+        "Book Stays & ToursHotels, guest houses, whale watching, and island experiences.Book now →",
+        "Service",
+        "HR Policy Development Package",
+        "View Service"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://tongamarket.com/paciseller/ · 4 campos",
+        "https://tongamarket.com/shop/potted-plants-hire/flowering-potted-plant-hire-day-l/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "booking53 items",
+        "Service",
+        "HR Policy Development Package",
+        "View Service",
+        "Service",
+        "HRIS / Payroll Implementation Consulting (Hourly)",
+        "View Service"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "observado",
+      "evidence": [
+        "Checkout o compra directa visible."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Propuesta / cierre [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://tongamarket.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://tongamarket.com/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://tongamarket.com/shop/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://tongamarket.com/paciseller/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://tongamarket.com/shop/potted-plants-hire/flowering-potted-plant-hire-day-l/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tongamarket.com/store/tino-and-joe-business-services/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://tongamarket.com/refunds-returns/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tongamarket.com/shop-list/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://tongamarket.com/shop/?add-to-cart=23004: Bloqueado por robots.txt",
+    "robots.txt impidió 1 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Request Demo”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

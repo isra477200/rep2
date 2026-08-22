@@ -10,13 +10,31 @@ import {
   useRef,
   useState,
 } from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
+import remarkGfm from "remark-gfm";
 import CompanyLogo from "./CompanyLogo";
+import {
+  classifyMediaResolution,
+  dimensionsFromMedia,
+  imagePresentationStyle,
+  measureImage,
+  MediaResolutionBadge,
+  MediaResolutionNotice,
+  type MediaDimensions,
+} from "./MediaResolution";
 import RecordDetail from "./RecordDetail";
 import type {
   Company,
   Country,
   CountryGeo,
+  DeepIndex,
+  DeepIndexItem,
   Editorial,
+  FunnelV3Index,
+  FunnelV3IndexItem,
+  FunnelV3Review,
   LogoManifest,
   Media,
   Summary,
@@ -27,6 +45,7 @@ const WorldMap = lazy(() => import("./WorldMap"));
 type View =
   | "home"
   | "companies"
+  | "funnels"
   | "map"
   | "countries"
   | "ads"
@@ -37,6 +56,7 @@ type View =
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
   { id: "companies", label: "Empresas", icon: "◎" },
+  { id: "funnels", label: "Funnels de venta", icon: "⌁" },
   { id: "map", label: "Mapa 3D", icon: "◉" },
   { id: "countries", label: "Países", icon: "◈" },
   { id: "ads", label: "Galerías", icon: "▣" },
@@ -50,43 +70,95 @@ const scopeShort: Record<string, string> = {
   "Adyacente — BPO/infraestructura": "BPO / infraestructura",
   "Excluir — fuente/no negocio": "Fuera del núcleo",
 };
+const readinessLabel: Record<DeepIndexItem["researchReadiness"], string> = {
+  usable: "Cobertura utilizable",
+  partial: "Cobertura parcial",
+  manual_only: "Revisión manual · web 0%",
+  no_observable: "Sin funnel público observable",
+  not_applicable: "No aplica al funnel competitivo",
+};
 const fmt = (n: number) => new Intl.NumberFormat("es-ES").format(n);
-const strip = (s: string) =>
-  s
-    .replace(/[*_#]/g, "")
-    .replace(/<[^>]+>/g, "")
-    .trim();
 const short = (s: string, n = 170) =>
   s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s;
+const funnelScreenshotMedia = (review: FunnelV3Review): Media[] =>
+  (review.evidenceScreenshots || []).map((item, index) => ({
+    file: item.file,
+    type: item.type,
+    bytes: item.bytes,
+    order: index + 1,
+  }));
 
-function RichText({ text }: { text: string }) {
-  const lines = text
-    .split("\n")
-    .map((x) => x.trim())
-    .filter(Boolean);
+const editorialMarkdownSchema = {
+  ...defaultSchema,
+  tagNames: [...(defaultSchema.tagNames || []), "details", "summary"],
+  attributes: { ...defaultSchema.attributes, details: ["open"] },
+};
+
+const isPublicHref = (input?: string) => {
+  if (!input) return false;
+  try {
+    const url = new URL(input);
+    const hostname = url.hostname.toLowerCase();
+    const privateIpv4 =
+      /^(?:10\.|127\.|169\.254\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)/.test(
+        hostname,
+      );
+    return (
+      ["http:", "https:"].includes(url.protocol) &&
+      !/(^|\.)notion\.(?:com|so|site)$/i.test(hostname) &&
+      !/(^|\.)(?:localhost|local|internal)$/i.test(hostname) &&
+      !privateIpv4
+    );
+  } catch {
+    return false;
+  }
+};
+
+function EditorialText({
+  text,
+  companyById,
+  onOpen,
+}: {
+  text: string;
+  companyById: Map<string, Company>;
+  onOpen: (company: Company) => void;
+}) {
   return (
     <div className="rich-text">
-      {lines.map((line, i) => {
-        const clean = strip(line);
-        if (!clean) return null;
-        if (line.startsWith("### ")) return <h4 key={i}>{clean}</h4>;
-        if (line.startsWith("## ")) return <h3 key={i}>{clean}</h3>;
-        if (line.startsWith("# ")) return <h2 key={i}>{clean}</h2>;
-        if (/^[-*] /.test(line))
-          return (
-            <p className="bullet" key={i}>
-              {clean}
-            </p>
-          );
-        if (/^\d+\. /.test(line))
-          return (
-            <p className="numbered" key={i}>
-              {clean}
-            </p>
-          );
-        if (/^---+$/.test(line) || /^<(?:table|tr|td)/.test(line)) return null;
-        return <p key={i}>{clean}</p>;
-      })}
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw, [rehypeSanitize, editorialMarkdownSchema]]}
+        components={{
+          a: ({ href, children }) => {
+            const internal = href?.match(/^\?empresa=([^&#]+)$/);
+            if (internal) {
+              const company = companyById.get(decodeURIComponent(internal[1]));
+              return company ? (
+                <a
+                  href={href}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    onOpen(company);
+                  }}
+                >
+                  {children}
+                </a>
+              ) : (
+                <span>{children}</span>
+              );
+            }
+            return isPublicHref(href) ? (
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {children} ↗
+              </a>
+            ) : (
+              <span>{children}</span>
+            );
+          },
+        }}
+      >
+        {text}
+      </ReactMarkdown>
     </div>
   );
 }
@@ -101,6 +173,10 @@ function MediaTile({
   onOpen: () => void;
 }) {
   const [failed, setFailed] = useState(false);
+  const [dimensions, setDimensions] = useState<MediaDimensions | null>(() =>
+    dimensionsFromMedia(item),
+  );
+  const resolution = classifyMediaResolution(dimensions);
   if (failed)
     return (
       <div className="media-tile media-fallback" role="status">
@@ -138,17 +214,28 @@ function MediaTile({
     );
   return (
     <button
-      className="media-tile"
+      className={`media-tile${resolution.isLowResolution ? " media-low-resolution" : ""}`}
       onClick={onOpen}
-      aria-label={"Ampliar material de " + name}
+      aria-label={
+        resolution.isLowResolution
+          ? `Abrir ${resolution.label?.toLocaleLowerCase("es")} de ${name}; ${resolution.dimensionLabel}`
+          : "Abrir material de " + name
+      }
+      data-media-resolution={resolution.kind}
     >
       <img
         src={item.file}
         alt={"Material de " + name}
         loading="lazy"
         decoding="async"
+        style={imagePresentationStyle(resolution, "tile")}
+        onLoad={(event) => {
+          const measured = measureImage(event.currentTarget);
+          if (measured) setDimensions(measured);
+        }}
         onError={() => setFailed(true)}
       />
+      <MediaResolutionBadge resolution={resolution} />
     </button>
   );
 }
@@ -261,7 +348,9 @@ export default function Portal() {
   const [summary, setSummary] = useState<Summary | null>(null),
     [editorial, setEditorial] = useState<Editorial | null>(null),
     [geo, setGeo] = useState<CountryGeo[]>([]),
-    [logos, setLogos] = useState<LogoManifest>({});
+    [logos, setLogos] = useState<LogoManifest>({}),
+    [deepIndex, setDeepIndex] = useState<DeepIndex | null>(null),
+    [v3Index, setV3Index] = useState<FunnelV3Index | null>(null);
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -269,11 +358,18 @@ export default function Portal() {
   const [priceOnly, setPriceOnly] = useState(false),
     [channel, setChannel] = useState("Todos"),
     [visible, setVisible] = useState(24);
+  const [funnelCapture, setFunnelCapture] = useState("Todos"),
+    [funnelStatus, setFunnelStatus] = useState("Todos"),
+    [funnelVisible, setFunnelVisible] = useState(30);
   const [active, setActive] = useState<Company | null>(null),
     [lightbox, setLightbox] = useState<{
       media: Media;
       company: Company;
+      collection: Media[];
+      source: "gallery" | "funnel";
     } | null>(null);
+  const lightboxRef = useRef<HTMLDivElement | null>(null);
+  const lightboxCloseRef = useRef<HTMLButtonElement | null>(null);
   const [compare, setCompare] = useState<string[]>([]),
     [galleryLimit, setGalleryLimit] = useState(8),
     [editorialTab, setEditorialTab] = useState<keyof Editorial>("blueprint");
@@ -282,25 +378,36 @@ export default function Portal() {
     [failedLightboxFile, setFailedLightboxFile] = useState<string | null>(null),
     [focusCountry, setFocusCountry] = useState<string | null>(null),
     [toast, setToast] = useState("");
+  const [measuredImageDimensions, setMeasuredImageDimensions] = useState<
+    Record<string, MediaDimensions>
+  >({});
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/companies.json").then((r) => r.json()),
+      fetch("/data/companies-index.json").then((r) => r.json()),
       fetch("/data/countries.json").then((r) => r.json()),
       fetch("/data/summary.json").then((r) => r.json()),
       fetch("/data/editorial.json").then((r) => r.json()),
       fetch("/data/country-geo.json").then((r) => r.json()),
       fetch("/data/logos.json").then((r) => (r.ok ? r.json() : {})),
+      fetch("/data/deep/index.json").then((r) => (r.ok ? r.json() : null)),
+      fetch("/data/funnel-v3/index.json")
+        .then((r) => (r.ok ? r.json() : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l]) => {
+      .then(([c, co, s, e, g, l, d, v3]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
         setEditorial(e);
         setGeo(g);
         setLogos(l);
+        setDeepIndex(d);
+        setV3Index(v3);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
+        const requestedView = params.get("vista");
+        if (nav.some((item) => item.id === requestedView)) setView(requestedView as View);
         const requested = params.get("empresa");
         const requestedCompany = requested
           ? c.find((x: Company) => x.id === requested)
@@ -308,6 +415,7 @@ export default function Portal() {
         if (requestedCompany) {
           setActive(requestedCompany);
           const mediaIndex = Number(params.get("media")) - 1;
+          const evidenceIndex = Number(params.get("evidence")) - 1;
           if (
             Number.isInteger(mediaIndex) &&
             requestedCompany.media[mediaIndex]
@@ -315,12 +423,29 @@ export default function Portal() {
             setLightbox({
               company: requestedCompany,
               media: requestedCompany.media[mediaIndex],
+              collection: requestedCompany.media,
+              source: "gallery",
             });
+          else if (Number.isInteger(evidenceIndex) && evidenceIndex >= 0)
+            fetch(`/data/funnel-v3/records/${requestedCompany.id}.json`)
+              .then((response) => (response.ok ? response.json() : null))
+              .then((review: FunnelV3Review | null) => {
+                if (!review) return;
+                const collection = funnelScreenshotMedia(review);
+                if (collection[evidenceIndex])
+                  setLightbox({
+                    company: requestedCompany,
+                    media: collection[evidenceIndex],
+                    collection,
+                    source: "funnel",
+                  });
+              })
+              .catch(() => undefined);
         }
         setLoading(false);
       })
       .catch(() => {
-        setError("No se pudo cargar la instantánea del radar.");
+        setError("No se pudo cargar la instantánea de inteligencia competitiva.");
         setLoading(false);
       });
   }, []);
@@ -330,7 +455,12 @@ export default function Portal() {
     [companies],
   );
   const channels = useMemo(
-    () => ["Todos", ...new Set(companies.flatMap((x) => x.channels))].sort(),
+    () => [
+      "Todos",
+      ...[...new Set(companies.flatMap((x) => x.channels))].sort((a, b) =>
+        a.localeCompare(b, "es"),
+      ),
+    ],
     [companies],
   );
   const countryOptions = useMemo(() => {
@@ -351,6 +481,19 @@ export default function Portal() {
       .sort((a, b) => a.name.localeCompare(b.name, "es"));
     return [...canonical, ...special];
   }, [companies, countries]);
+  const companyById = useMemo(
+    () => new Map(companies.map((company) => [company.id, company])),
+    [companies],
+  );
+  const locationSummary = useMemo(() => {
+    const withPoint = companies.filter(
+      (company) =>
+        company.location &&
+        Number.isFinite(company.location.latitude) &&
+        Number.isFinite(company.location.longitude),
+    ).length;
+    return { withPoint, withoutPoint: companies.length - withPoint };
+  }, [companies]);
   const filtered = useMemo(
     () =>
       companies.filter((c) => {
@@ -398,31 +541,130 @@ export default function Portal() {
   const compared = compare
     .map((id) => companies.find((x) => x.id === id))
     .filter(Boolean) as Company[];
+  const deepRows = useMemo(() => {
+    const q = query.toLocaleLowerCase("es");
+    return (deepIndex?.records || [])
+      .map((intel: DeepIndexItem) => ({ intel, company: companyById.get(intel.id) }))
+      .filter(
+        (row): row is { intel: DeepIndexItem; company: Company } =>
+          Boolean(row.company),
+      )
+      .filter(({ intel, company }) =>
+        (!q ||
+          [
+            company.name,
+            company.primaryCountry,
+            company.offer,
+            company.niche,
+            intel.hero,
+            intel.primaryCta || "",
+            intel.captureType,
+            ...intel.technologies,
+          ]
+            .join(" ")
+            .toLocaleLowerCase("es")
+            .includes(q)) &&
+        (scope === "Todos" || company.scope === scope) &&
+        (country === "Todos" || company.countries.includes(country) || company.primaryCountry === country) &&
+        (funnelCapture === "Todos" || intel.captureType === funnelCapture) &&
+        (funnelStatus === "Todos" || intel.status === funnelStatus),
+      )
+      .sort(
+        (a, b) =>
+          b.intel.coveragePercent - a.intel.coveragePercent ||
+          b.company.score - a.company.score,
+      );
+  }, [companyById, country, deepIndex, funnelCapture, funnelStatus, query, scope]);
+  const v3Rows = useMemo(() => {
+    const q = query.toLocaleLowerCase("es");
+    return (v3Index?.records || [])
+      .map((intel: FunnelV3IndexItem) => ({
+        intel,
+        company: companyById.get(intel.id),
+      }))
+      .filter(
+        (row): row is { intel: FunnelV3IndexItem; company: Company } =>
+          Boolean(row.company),
+      )
+      .filter(({ intel, company }) => {
+        const conversionMatch =
+          funnelCapture === "Todos" ||
+          (funnelCapture === "Con formulario" && intel.forms > 0) ||
+          (funnelCapture === "Sin formulario" && intel.forms === 0) ||
+          (funnelCapture === "Con CTA observable" && Boolean(intel.primaryCta)) ||
+          (funnelCapture === "Sin CTA observable" && !intel.primaryCta);
+        const coverageMatch =
+          funnelStatus === "Todos" ||
+          (funnelStatus === "Evidencia manual" && intel.manualEvidence) ||
+          (funnelStatus === "Verificación estructural" && !intel.manualEvidence) ||
+          (funnelStatus === "Cobertura 75–100%" && intel.coveragePercent >= 75) ||
+          (funnelStatus === "Cobertura 50–74%" && intel.coveragePercent >= 50 && intel.coveragePercent < 75) ||
+          (funnelStatus === "Cobertura menor del 50%" && intel.coveragePercent < 50);
+        return (
+          (!q ||
+            [
+              company.name,
+              company.primaryCountry,
+              company.offer,
+              company.niche,
+              intel.headline,
+              intel.primaryCta || "",
+              intel.status,
+            ]
+              .join(" ")
+              .toLocaleLowerCase("es")
+              .includes(q)) &&
+          (scope === "Todos" || company.scope === scope) &&
+          (country === "Todos" ||
+            company.countries.includes(country) ||
+            company.primaryCountry === country) &&
+          conversionMatch &&
+          coverageMatch
+        );
+      })
+      .sort(
+        (a, b) =>
+          b.intel.coveragePercent - a.intel.coveragePercent ||
+          b.intel.evidence - a.intel.evidence ||
+          b.company.score - a.company.score,
+      );
+  }, [companyById, country, funnelCapture, funnelStatus, query, scope, v3Index]);
   const top = companies.slice(0, 4);
   const go = (v: View) => {
     setView(v);
+    const url = new URL(window.location.href);
+    if (v === "home") url.searchParams.delete("vista");
+    else url.searchParams.set("vista", v);
+    window.history.pushState({ vista: v }, "", url);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   const chooseCountry = (name: string) => {
     setCountry(name);
     setView("companies");
     setVisible(24);
+    const url = new URL(window.location.href);
+    url.searchParams.set("vista", "companies");
+    window.history.pushState({ vista: "companies" }, "", url);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const toggleCompare = (id: string) =>
-    setCompare((x) =>
-      x.includes(id)
-        ? x.filter((y) => y !== id)
-        : x.length < 4
-          ? [...x, id]
-          : x,
-    );
+  const toggleCompare = (id: string) => {
+    if (compare.includes(id)) {
+      setCompare((current) => current.filter((candidate) => candidate !== id));
+      return;
+    }
+    if (compare.length >= 4) {
+      setToast("El comparador admite un máximo de cuatro empresas");
+      return;
+    }
+    setCompare((current) => [...current, id]);
+  };
   const openCompany = useCallback((company: Company) => {
     setActive(company);
     setLightbox(null);
     const url = new URL(window.location.href);
     url.searchParams.set("empresa", company.id);
     url.searchParams.delete("media");
+    url.searchParams.delete("evidence");
     url.hash = "";
     window.history.pushState({ empresa: company.id }, "", url);
   }, []);
@@ -432,6 +674,7 @@ export default function Portal() {
     const url = new URL(window.location.href);
     url.searchParams.delete("empresa");
     url.searchParams.delete("media");
+    url.searchParams.delete("evidence");
     url.hash = "";
     window.history.pushState({}, "", url);
   }, []);
@@ -443,16 +686,23 @@ export default function Portal() {
       setToast("Copia la dirección del navegador para compartir esta ficha");
     }
   }, []);
-  const openMedia = useCallback((media: Media, company: Company) => {
-    setLightbox({ media, company });
+  const openMedia = useCallback((
+    media: Media,
+    company: Company,
+    suppliedCollection?: Media[],
+    source: "gallery" | "funnel" = "gallery",
+  ) => {
+    const collection = suppliedCollection?.length ? suppliedCollection : company.media;
+    const index = collection.findIndex((item) => item.file === media.file);
+    if (index < 0) return;
+    setLightbox({ media, company, collection, source });
     const url = new URL(window.location.href);
     url.searchParams.set("empresa", company.id);
-    url.searchParams.set(
-      "media",
-      String(company.media.findIndex((item) => item.file === media.file) + 1),
-    );
+    url.searchParams.delete("media");
+    url.searchParams.delete("evidence");
+    url.searchParams.set(source === "funnel" ? "evidence" : "media", String(index + 1));
     window.history.pushState(
-      { empresa: company.id, media: media.file },
+      { empresa: company.id, media: media.file, source },
       "",
       url,
     );
@@ -461,28 +711,32 @@ export default function Portal() {
     setLightbox(null);
     const url = new URL(window.location.href);
     url.searchParams.delete("media");
+    url.searchParams.delete("evidence");
+    if (!active) url.searchParams.delete("empresa");
     window.history.pushState(active ? { empresa: active.id } : {}, "", url);
   }, [active]);
   const stepLightbox = useCallback(
     (direction: number) =>
       setLightbox((current) => {
-        if (!current || current.company.media.length < 2) return current;
-        const index = current.company.media.findIndex(
+        if (!current || current.collection.length < 2) return current;
+        const index = current.collection.findIndex(
           (item) => item.file === current.media.file,
         );
         const next =
-          (index + direction + current.company.media.length) %
-          current.company.media.length;
-        const nextMedia = current.company.media[next];
+          (index + direction + current.collection.length) %
+          current.collection.length;
+        const nextMedia = current.collection[next];
         const url = new URL(window.location.href);
         url.searchParams.set("empresa", current.company.id);
-        url.searchParams.set("media", String(next + 1));
+        url.searchParams.delete("media");
+        url.searchParams.delete("evidence");
+        url.searchParams.set(current.source === "funnel" ? "evidence" : "media", String(next + 1));
         window.history.replaceState(
-          { empresa: current.company.id, media: nextMedia.file },
+          { empresa: current.company.id, media: nextMedia.file, source: current.source },
           "",
           url,
         );
-        return { company: current.company, media: nextMedia };
+        return { ...current, media: nextMedia };
       }),
     [],
   );
@@ -493,24 +747,75 @@ export default function Portal() {
         else if (active) closeCompany();
       } else if (lightbox && e.key === "ArrowLeft") stepLightbox(-1);
       else if (lightbox && e.key === "ArrowRight") stepLightbox(1);
+      else if (lightbox && e.key === "Tab") {
+        const focusable = Array.from(
+          lightboxRef.current?.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), video[controls], [tabindex]:not([tabindex="-1"])',
+          ) || [],
+        ).filter((element) => !element.hasAttribute("hidden"));
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     };
     window.addEventListener("keydown", fn);
     return () => window.removeEventListener("keydown", fn);
   }, [active, closeCompany, closeMedia, lightbox, stepLightbox]);
+  const lightboxOpen = Boolean(lightbox);
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const priorFocus = document.activeElement as HTMLElement | null;
+    const frame = window.requestAnimationFrame(() => lightboxCloseRef.current?.focus());
+    return () => {
+      window.cancelAnimationFrame(frame);
+      if (priorFocus && document.contains(priorFocus)) priorFocus.focus();
+    };
+  }, [lightboxOpen]);
   useEffect(() => {
     const onPop = () => {
       const params = new URLSearchParams(window.location.search);
+      const requestedView = params.get("vista");
+      setView(nav.some((item) => item.id === requestedView) ? requestedView as View : "home");
       const requested = params.get("empresa");
       const company = requested
         ? companies.find((item) => item.id === requested) || null
         : null;
       setActive(company);
       const mediaIndex = Number(params.get("media")) - 1;
-      setLightbox(
-        company && Number.isInteger(mediaIndex) && company.media[mediaIndex]
-          ? { company, media: company.media[mediaIndex] }
-          : null,
-      );
+      const evidenceIndex = Number(params.get("evidence")) - 1;
+      if (company && Number.isInteger(mediaIndex) && company.media[mediaIndex]) {
+        setLightbox({
+          company,
+          media: company.media[mediaIndex],
+          collection: company.media,
+          source: "gallery",
+        });
+      } else if (company && Number.isInteger(evidenceIndex) && evidenceIndex >= 0) {
+        fetch(`/data/funnel-v3/records/${company.id}.json`)
+          .then((response) => (response.ok ? response.json() : null))
+          .then((review: FunnelV3Review | null) => {
+            if (!review) return setLightbox(null);
+            const collection = funnelScreenshotMedia(review);
+            setLightbox(
+              collection[evidenceIndex]
+                ? {
+                    company,
+                    media: collection[evidenceIndex],
+                    collection,
+                    source: "funnel",
+                  }
+                : null,
+            );
+          })
+          .catch(() => setLightbox(null));
+      } else setLightbox(null);
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
@@ -521,11 +826,19 @@ export default function Portal() {
     return () => window.clearTimeout(timer);
   }, [toast]);
 
+  const lightboxResolution = classifyMediaResolution(
+    lightbox
+      ? dimensionsFromMedia(lightbox.media) ||
+          measuredImageDimensions[lightbox.media.file] ||
+          null
+      : null,
+  );
+
   if (loading)
     return (
       <main className="loading-screen">
         <div className="brandmark">RV</div>
-        <h1>Preparando el radar mundial</h1>
+        <h1>Preparando la inteligencia mundial</h1>
         <p>Cargando fichas, países, precios y galerías…</p>
       </main>
     );
@@ -537,6 +850,12 @@ export default function Portal() {
       </main>
     );
 
+  const auditedPriceRecords = v3Index?.insights.commercialSignals.recordsWithNumericPublicPrice
+    ?? summary.priceCoverage?.commercialAuditV3.records
+    ?? summary.publicPrices;
+  const auditedPricePercent = summary.priceCoverage?.commercialAuditV3.percent
+    ?? Number(((auditedPriceRecords / summary.companies) * 100).toFixed(1));
+
   return (
     <main className="app-shell">
       <aside className="sidebar">
@@ -544,7 +863,7 @@ export default function Portal() {
           <span className="brandmark">RV</span>
           <span>
             <strong>RedVitalia</strong>
-            <small>Radar mundial de captación</small>
+            <small>Inteligencia mundial de captación</small>
           </span>
         </button>
         <nav aria-label="Navegación principal">
@@ -553,6 +872,7 @@ export default function Portal() {
               key={n.id}
               className={view === n.id ? "active" : ""}
               onClick={() => go(n.id)}
+              aria-current={view === n.id ? "page" : undefined}
             >
               <i>{n.icon}</i>
               <span>{n.label}</span>
@@ -581,7 +901,7 @@ export default function Portal() {
                 if (e.target.value && view === "home") setView("companies");
               }}
               placeholder="Busca empresa, país, modelo, canal o precio…"
-              aria-label="Buscar en todo el radar"
+              aria-label="Buscar en toda la investigación"
             />
             {query && (
               <button onClick={() => setQuery("")} aria-label="Borrar búsqueda">
@@ -629,7 +949,7 @@ export default function Portal() {
               <article>
                 <span>EMPRESAS CANÓNICAS</span>
                 <strong>{fmt(summary.companies)}</strong>
-                <small>Fichas madre completas</small>
+                <small>Fichas madre estructuradas y trazables</small>
               </article>
               <article>
                 <span>MATERIALES LOCALES</span>
@@ -642,9 +962,9 @@ export default function Portal() {
                 <small>Sin enlaces privados</small>
               </article>
               <article>
-                <span>PRECIOS CONVERTIBLES</span>
-                <strong>{fmt(summary.publicPrices)}</strong>
-                <small>{summary.priceCoveragePercent}% del universo</small>
+                <span>PRECIOS AUDITADOS · LOCAL + EUR</span>
+                <strong>{fmt(auditedPriceRecords)}</strong>
+                <small>{auditedPricePercent}% del universo</small>
               </article>
             </section>
             <section className="brand-coverage">
@@ -828,15 +1148,414 @@ export default function Portal() {
           </div>
         )}
 
+        {view === "funnels" && (
+          <div className="view funnel-intel-view">
+            <section className="page-head funnel-page-head">
+              <p className="eyebrow">INTELIGENCIA COMERCIAL FORENSE</p>
+              <h1>Cómo habla y cómo vende cada competidor</h1>
+              <p>
+                El inventario se convierte aquí en una herramienta de decisión:
+                mensaje, CTA, formularios, fricción, agenda, WhatsApp, tecnología,
+                prueba, objeciones y recorrido completo con cada etapa marcada como
+                observada, inferida o no observable.
+              </p>
+            </section>
+
+            {v3Index || deepIndex ? (
+              <>
+                <section className="funnel-stat-grid">
+                  {v3Index ? (
+                    <>
+                      <article>
+                        <span>FICHAS PROFUNDAS VERIFICADAS</span>
+                        <strong>{fmt(v3Index.stats.verified)}</strong>
+                        <small>de {fmt(v3Index.stats.total)} competidores publicados</small>
+                      </article>
+                      <article>
+                        <span>EVIDENCIA MANUAL</span>
+                        <strong>{fmt(v3Index.stats.manualEvidence)}</strong>
+                        <small>expedientes reforzados con revisión humana</small>
+                      </article>
+                      <article>
+                        <span>COBERTURA MEDIA</span>
+                        <strong>{v3Index.stats.averageCoverage}%</strong>
+                        <small>del recorrido comercial públicamente observable</small>
+                      </article>
+                      <article>
+                        <span>EVIDENCIAS</span>
+                        <strong>{fmt(v3Index.stats.evidence)}</strong>
+                        <small>{fmt(v3Index.stats.screenshots)} capturas verificadas</small>
+                      </article>
+                      <article>
+                        <span>FORMULARIOS</span>
+                        <strong>{fmt(v3Index.stats.forms)}</strong>
+                        <small>en {fmt(v3Index.stats.withForms)} competidores</small>
+                      </article>
+                      <article>
+                        <span>CAMPOS VISIBLES</span>
+                        <strong>{fmt(v3Index.stats.visibleFields)}</strong>
+                        <small>estructura, obligatoriedad y fricción inventariadas</small>
+                      </article>
+                    </>
+                  ) : deepIndex ? (
+                    <>
+                      <article>
+                        <span>FICHAS ESTRUCTURADAS</span>
+                        <strong>{fmt(deepIndex.stats.schemaValid)}</strong>
+                        <small>control técnico superado; trazabilidad previa conservada</small>
+                      </article>
+                      <article>
+                        <span>REVISIÓN MANUAL</span>
+                        <strong>{fmt(deepIndex.stats.manualVerified)}</strong>
+                        <small>{fmt(deepIndex.stats.structuralVerified)} verificaciones estructurales</small>
+                      </article>
+                      <article>
+                        <span>COBERTURA MEDIA</span>
+                        <strong>{deepIndex.stats.averageObservableCoverage}%</strong>
+                        <small>porcentaje de funnel públicamente observable</small>
+                      </article>
+                      <article>
+                        <span>COBERTURA WEB 0%</span>
+                        <strong>{fmt(deepIndex.stats.zeroObservableCoverage)}</strong>
+                        <small>{fmt(deepIndex.stats.limitedConfidence)} con confianza limitada</small>
+                      </article>
+                      <article>
+                        <span>LIMITADAS</span>
+                        <strong>{fmt(deepIndex.stats.limited)}</strong>
+                        <small>acceso o evidencia insuficiente, con causa documentada</small>
+                      </article>
+                      <article>
+                        <span>FORMULARIOS</span>
+                        <strong>{fmt(deepIndex.stats.withForms)}</strong>
+                        <small>con campos y fricción inventariados</small>
+                      </article>
+                    </>
+                  ) : null}
+                </section>
+
+                {v3Index?.insights ? (
+                  <section className="market-insight-grid" aria-label="Patrones globales de conversión">
+                    <article>
+                      <p className="eyebrow">DISTRIBUCIÓN DE COBERTURA</p>
+                      <h2>Qué parte del recorrido deja ver el mercado</h2>
+                      <div className="insight-bars">
+                        {v3Index.insights.coverageBands.map((band) => (
+                          <div key={band.label}>
+                            <span>{band.label}</span>
+                            <i>
+                              <b
+                                style={{
+                                  width: `${Math.max(2, (band.count / v3Index.stats.total) * 100)}%`,
+                                }}
+                              />
+                            </i>
+                            <strong>{fmt(band.count)}</strong>
+                          </div>
+                        ))}
+                      </div>
+                    </article>
+                    <article className="stage-observability">
+                      <p className="eyebrow">RADIOGRAFÍA DEL FUNNEL</p>
+                      <h2>Visibilidad pública de las 12 etapas</h2>
+                      <div>
+                        {v3Index.insights.funnelStages.map((stage, index) => (
+                          <div key={stage.stage}>
+                            <span>{String(index + 1).padStart(2, "0")}</span>
+                            <p>{stage.stage}</p>
+                            <i>
+                              <b style={{ width: `${stage.observedPercent}%` }} />
+                            </i>
+                            <strong>{stage.observedPercent}%</strong>
+                          </div>
+                        ))}
+                      </div>
+                    </article>
+                    <article>
+                      <p className="eyebrow">SEÑALES COMERCIALES</p>
+                      <h2>Qué puede medirse sin inventar</h2>
+                      <dl className="signal-ledger">
+                        <div>
+                          <dt>CTA principal observable</dt>
+                          <dd>{fmt(v3Index.insights.commercialSignals.primaryCtaObserved)}</dd>
+                        </div>
+                        <div>
+                          <dt>Captura con formulario</dt>
+                          <dd>{fmt(v3Index.insights.commercialSignals.withForms)}</dd>
+                        </div>
+                        <div>
+                          <dt>Precio numérico público</dt>
+                          <dd>{fmt(v3Index.insights.commercialSignals.recordsWithNumericPublicPrice)}</dd>
+                        </div>
+                        <div>
+                          <dt>Expedientes con evidencia manual</dt>
+                          <dd>{fmt(v3Index.insights.commercialSignals.manualEvidence)}</dd>
+                        </div>
+                        <div>
+                          <dt>Límites expresamente documentados</dt>
+                          <dd>{fmt(v3Index.insights.commercialSignals.explicitLimitations)}</dd>
+                        </div>
+                      </dl>
+                      <p className="insight-note">
+                        “No observable” no significa que la empresa no lo haga: significa
+                        que no existe una prueba pública suficiente para afirmarlo.
+                      </p>
+                    </article>
+                  </section>
+                ) : null}
+
+                <section className="filterbar funnel-filterbar">
+                  <label>
+                    Modelo
+                    <select
+                      value={scope}
+                      onChange={(event) => {
+                        setScope(event.target.value);
+                        setFunnelVisible(30);
+                      }}
+                    >
+                      {scopes.map((item) => (
+                        <option key={item}>{item}</option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    País / mercado
+                    <select
+                      value={country}
+                      onChange={(event) => {
+                        setCountry(event.target.value);
+                        setFunnelVisible(30);
+                      }}
+                    >
+                      <option>Todos</option>
+                      {countryOptions.map((item) => (
+                        <option key={item.name} value={item.name}>
+                          {item.name} · {item.count}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    {v3Index ? "Conversión visible" : "Captura"}
+                    <select
+                      value={funnelCapture}
+                      onChange={(event) => {
+                        setFunnelCapture(event.target.value);
+                        setFunnelVisible(30);
+                      }}
+                    >
+                      <option>Todos</option>
+                      {v3Index ? (
+                        <>
+                          <option>Con formulario</option>
+                          <option>Sin formulario</option>
+                          <option>Con CTA observable</option>
+                          <option>Sin CTA observable</option>
+                        </>
+                      ) : (
+                        [...new Set((deepIndex?.records || []).map((item) => item.captureType))]
+                          .sort((a, b) => a.localeCompare(b, "es"))
+                          .map((item) => <option key={item}>{item}</option>)
+                      )}
+                    </select>
+                  </label>
+                  <label>
+                    {v3Index ? "Cobertura / revisión" : "Estado"}
+                    <select
+                      value={funnelStatus}
+                      onChange={(event) => {
+                        setFunnelStatus(event.target.value);
+                        setFunnelVisible(30);
+                      }}
+                    >
+                      <option>Todos</option>
+                      {v3Index ? (
+                        <>
+                          <option>Evidencia manual</option>
+                          <option>Verificación estructural</option>
+                          <option>Cobertura 75–100%</option>
+                          <option>Cobertura 50–74%</option>
+                          <option>Cobertura menor del 50%</option>
+                        </>
+                      ) : (
+                        <>
+                          <option>Borrador automático</option>
+                          <option>Verificada manual</option>
+                          <option>Verificada estructural</option>
+                          <option>Limitada</option>
+                          <option>No aplica verificado</option>
+                        </>
+                      )}
+                    </select>
+                  </label>
+                  <button
+                    onClick={() => {
+                      setScope("Todos");
+                      setCountry("Todos");
+                      setFunnelCapture("Todos");
+                      setFunnelStatus("Todos");
+                      setQuery("");
+                      setFunnelVisible(30);
+                    }}
+                  >
+                    Limpiar
+                  </button>
+                </section>
+
+                <div className="result-line">
+                  <strong>
+                    {fmt(v3Index ? v3Rows.length : deepRows.length)} funnels analizados
+                  </strong>
+                  <span>
+                    {v3Index
+                      ? "Ordenados por cobertura, evidencia y valor estratégico"
+                      : "Trazabilidad previa: ordenados por cobertura observable"}
+                  </span>
+                </div>
+                <section className="funnel-card-grid">
+                  {v3Index
+                    ? v3Rows.slice(0, funnelVisible).map(({ intel, company }) => (
+                        <article className="funnel-card" key={intel.id}>
+                          <div className="funnel-card-head">
+                            <CompanyLogo company={company} logos={logos} />
+                            <div>
+                              <span>{company.primaryCountry}</span>
+                              <h3>{company.name}</h3>
+                            </div>
+                            <b>{intel.coveragePercent}%</b>
+                          </div>
+                          <div
+                            className="coverage-bar"
+                            aria-label={`Cobertura ${intel.coveragePercent}%`}
+                          >
+                            <i style={{ width: `${intel.coveragePercent}%` }} />
+                          </div>
+                          <div className="funnel-card-status">
+                            <span>Auditoría verificada</span>
+                            <span>{intel.status}</span>
+                            {intel.manualEvidence ? (
+                              <span className="manual-badge">Evidencia manual</span>
+                            ) : (
+                              <span>Verificación estructural</span>
+                            )}
+                            <span>{intel.forms} formularios</span>
+                            <span>{intel.fields} campos</span>
+                          </div>
+                          <blockquote>
+                            {intel.headline || "Mensaje principal no observable públicamente"}
+                          </blockquote>
+                          <dl>
+                            <div>
+                              <dt>CTA principal</dt>
+                              <dd>{intel.primaryCta || "No observable"}</dd>
+                            </div>
+                            <div>
+                              <dt>Captura exacta</dt>
+                              <dd>
+                                {intel.forms
+                                  ? `${intel.forms} formularios · ${intel.fields} campos · ${intel.requiredFields} obligatorios`
+                                  : "Sin formulario comercial medible"}
+                              </dd>
+                            </div>
+                            <div>
+                              <dt>Trazabilidad</dt>
+                              <dd>
+                                {intel.evidence} evidencias · {intel.screenshots} capturas · {intel.limitations} límites
+                              </dd>
+                            </div>
+                          </dl>
+                          <div className="funnel-card-foot">
+                            <span>12 etapas y 12 dimensiones en la ficha</span>
+                            <button onClick={() => openCompany(company)}>
+                              Abrir auditoría completa →
+                            </button>
+                          </div>
+                        </article>
+                      ))
+                    : deepRows.slice(0, funnelVisible).map(({ intel, company }) => (
+                    <article className="funnel-card" key={intel.id}>
+                      <div className="funnel-card-head">
+                        <CompanyLogo company={company} logos={logos} />
+                        <div>
+                          <span>{company.primaryCountry}</span>
+                          <h3>{company.name}</h3>
+                        </div>
+                        <b>{intel.coveragePercent}%</b>
+                      </div>
+                      <div className="coverage-bar" aria-label={`Cobertura ${intel.coveragePercent}%`}>
+                        <i style={{ width: `${intel.coveragePercent}%` }} />
+                      </div>
+                      <div className="funnel-card-status">
+                        <span>{intel.schemaValid ? "Esquema válido" : "Esquema pendiente"}</span>
+                        <span>{readinessLabel[intel.researchReadiness]}</span>
+                        <span>{intel.status}</span>
+                        {intel.manualReviewed ? <span className="manual-badge">🧠 Revisión manual</span> : null}
+                        <span>Confianza {intel.confidence.toLowerCase()}</span>
+                        <span>{intel.captureType}</span>
+                      </div>
+                      <blockquote>{intel.hero}</blockquote>
+                      <dl>
+                        <div>
+                          <dt>CTA principal</dt>
+                          <dd>{intel.primaryCta || "No observable"}</dd>
+                        </div>
+                        <div>
+                          <dt>Formulario</dt>
+                          <dd>
+                            {intel.maxFormFields
+                              ? `${intel.minFormFields}–${intel.maxFormFields} campos`
+                              : "Sin campos medibles"}
+                          </dd>
+                        </div>
+                        <div>
+                          <dt>Stack visible</dt>
+                          <dd>
+                            {intel.technologies.slice(0, 5).join(" · ") || "No detectado"}
+                            {intel.technologies.length > 5
+                              ? ` · +${intel.technologies.length - 5} más en la ficha`
+                              : ""}
+                          </dd>
+                        </div>
+                      </dl>
+                      <div className="funnel-card-foot">
+                        <span>{intel.evidenceCount} fuentes del análisis</span>
+                        <span>{intel.limitationCount} límites explicados</span>
+                        <button onClick={() => openCompany(company)}>
+                          Abrir deep dive →
+                        </button>
+                      </div>
+                    </article>
+                  ))}
+                </section>
+                {funnelVisible < (v3Index ? v3Rows.length : deepRows.length) && (
+                  <button
+                    className="load-more"
+                    onClick={() => setFunnelVisible((current) => current + 30)}
+                  >
+                    Mostrar 30 funnels más
+                  </button>
+                )}
+              </>
+            ) : (
+              <div className="empty-state">
+                La auditoría comercial profunda está en proceso de publicación. Las fichas
+                aparecen aquí únicamente después de superar trazabilidad, privacidad
+                y control de calidad.
+              </div>
+            )}
+          </div>
+        )}
+
         {view === "map" && (
           <div className="view map-view">
             <section className="page-head map-page-head">
               <p className="eyebrow">CARTOGRAFÍA ESTRATÉGICA</p>
-              <h1>Un globo 3D para volar hasta cada mercado</h1>
+              <h1>Un globo 3D para volar hasta cada competidor</h1>
               <p>
                 Pulsa un punto, una agrupación o el selector territorial. El
-                vuelo abre las empresas asociadas y cada una conduce a su ficha
-                madre completa.
+                vuelo distingue puntos publicados, centros de ciudad y simples
+                referencias de país o mercado. Desde cada punto puedes abrir su
+                ficha madre completa.
               </p>
             </section>
             <Suspense
@@ -858,11 +1577,10 @@ export default function Portal() {
               />
             </Suspense>
             <p className="source-note">
-              Geolocalización honesta: los puntos usan centroides de país o
-              territorio porque la fuente canónica no contiene coordenadas de
-              sede. Se muestran 708 fichas vinculables a un territorio; los
-              cuatro modelos globales permanecen en una lista separada para no
-              inventar una ubicación.
+              Geolocalización auditada: 67 puntos publicados por la empresa,
+              107 centros de ciudad derivados, 535 centros de país o mercado y
+              3 fichas sin punto inventado. Ninguno se presenta como sede
+              central confirmada.
             </p>
           </div>
         )}
@@ -1004,7 +1722,7 @@ export default function Portal() {
               </p>
             </section>
             <div className="compare-picker">
-              {companies.slice(0, 40).map((c) => (
+              {filtered.slice(0, 80).map((c) => (
                 <button
                   key={c.id}
                   className={compare.includes(c.id) ? "selected" : ""}
@@ -1015,54 +1733,70 @@ export default function Portal() {
                 </button>
               ))}
             </div>
+            {!filtered.length && (
+              <p className="record-empty">
+                No hay empresas que coincidan con la búsqueda y los filtros actuales.
+              </p>
+            )}
             {compared.length ? (
               <div className="compare-table">
-                <div className="compare-row header">
-                  <b>Dimensión</b>
-                  {compared.map((c) => (
-                    <strong key={c.id}>
-                      {c.name}
-                      <button onClick={() => toggleCompare(c.id)}>×</button>
-                    </strong>
-                  ))}
-                </div>
-                {[
-                  [
-                    "País",
-                    (c: Company) => c.countries.join(", ") || c.primaryCountry,
-                  ],
-                  ["Modelo", (c: Company) => c.agencyType],
-                  ["Puntuación", (c: Company) => c.score + "/100"],
-                  ["Oferta", (c: Company) => c.offer || "No documentada"],
-                  [
-                    "Precio local",
-                    (c: Company) => c.priceLocal || "No publicado",
-                  ],
-                  [
-                    "Equivalencia EUR",
-                    (c: Company) =>
-                      c.price.eur != null
-                        ? "≈ " + c.price.label
-                        : c.price.label,
-                  ],
-                  ["Contrato", (c: Company) => c.contract || "No publicado"],
-                  ["Garantía", (c: Company) => c.guarantee || "No publicada"],
-                  [
-                    "Canales",
-                    (c: Company) => c.channels.join(", ") || "No documentados",
-                  ],
-                  ["Decisión RV", (c: Company) => c.decision],
-                  ["Evidencia", (c: Company) => c.evidence],
-                ].map((item) => (
-                  <div className="compare-row" key={item[0] as string}>
-                    <b>{item[0] as string}</b>
-                    {compared.map((c) => (
-                      <span key={c.id}>
-                        {(item[1] as (c: Company) => string)(c)}
-                      </span>
+                <table aria-label="Comparación de empresas">
+                  <thead>
+                    <tr className="compare-row header">
+                      <th scope="col">Dimensión</th>
+                      {compared.map((c) => (
+                        <th key={c.id} scope="col">
+                          {c.name}
+                          <button
+                            onClick={() => toggleCompare(c.id)}
+                            aria-label={`Quitar ${c.name} del comparador`}
+                          >
+                            ×
+                          </button>
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      [
+                        "País",
+                        (c: Company) => c.countries.join(", ") || c.primaryCountry,
+                      ],
+                      ["Modelo", (c: Company) => c.agencyType],
+                      ["Puntuación", (c: Company) => c.score + "/100"],
+                      ["Oferta", (c: Company) => c.offer || "No documentada"],
+                      [
+                        "Precio local",
+                        (c: Company) => c.priceLocal || "No publicado",
+                      ],
+                      [
+                        "Equivalencia EUR",
+                        (c: Company) =>
+                          c.price.eur != null
+                            ? "≈ " + c.price.label
+                            : c.price.label,
+                      ],
+                      ["Contrato", (c: Company) => c.contract || "No publicado"],
+                      ["Garantía", (c: Company) => c.guarantee || "No publicada"],
+                      [
+                        "Canales",
+                        (c: Company) => c.channels.join(", ") || "No documentados",
+                      ],
+                      ["Decisión RV", (c: Company) => c.decision],
+                      ["Evidencia", (c: Company) => c.evidence],
+                    ].map((item) => (
+                      <tr className="compare-row" key={item[0] as string}>
+                        <th scope="row">{item[0] as string}</th>
+                        {compared.map((c) => (
+                          <td key={c.id}>
+                            {(item[1] as (c: Company) => string)(c)}
+                          </td>
+                        ))}
+                      </tr>
                     ))}
-                  </div>
-                ))}
+                  </tbody>
+                </table>
               </div>
             ) : (
               <div className="empty-state">
@@ -1076,26 +1810,32 @@ export default function Portal() {
           <div className="view editorial-view">
             <section className="page-head">
               <p className="eyebrow">CONCLUSIONES Y EJECUCIÓN</p>
-              <h1>Del radar al negocio definitivo</h1>
+              <h1>De la investigación al negocio definitivo</h1>
               <p>
                 La síntesis estratégica completa, separada de la base para que
                 el equipo pueda decidir sin atravesar miles de registros.
               </p>
             </section>
-            <div className="editorial-tabs">
+            <div className="editorial-tabs" role="tablist" aria-label="Documentos estratégicos">
               <button
+                role="tab"
+                aria-selected={editorialTab === "blueprint"}
                 className={editorialTab === "blueprint" ? "active" : ""}
                 onClick={() => setEditorialTab("blueprint")}
               >
                 Blueprint
               </button>
               <button
+                role="tab"
+                aria-selected={editorialTab === "execution"}
                 className={editorialTab === "execution" ? "active" : ""}
                 onClick={() => setEditorialTab("execution")}
               >
                 Sistema operativo
               </button>
               <button
+                role="tab"
+                aria-selected={editorialTab === "report"}
                 className={editorialTab === "report" ? "active" : ""}
                 onClick={() => setEditorialTab("report")}
               >
@@ -1107,7 +1847,11 @@ export default function Portal() {
                 <span>REDVITALIA · 22/08/2026</span>
                 <h2>{editorial[editorialTab].title}</h2>
               </div>
-              <RichText text={editorial[editorialTab].body} />
+              <EditorialText
+                text={editorial[editorialTab].body}
+                companyById={companyById}
+                onOpen={openCompany}
+              />
             </article>
           </div>
         )}
@@ -1144,9 +1888,11 @@ export default function Portal() {
                 </p>
               </article>
               <article>
-                <span>PRECIOS</span>
-                <strong>{summary.publicPrices}</strong>
-                <p>Con importe y moneda convertibles.</p>
+                <span>PRECIOS AUDITADOS</span>
+                <strong>{auditedPriceRecords}</strong>
+                <p>
+                  Moneda local + EUR en V3; el índice rápido contiene {summary.publicPrices}.
+                </p>
               </article>
               <article>
                 <span>FUENTES</span>
@@ -1162,15 +1908,21 @@ export default function Portal() {
                 </p>
               </article>
               <article>
-                <span>FICHAS SIN RECORTE</span>
+                <span>FICHAS MADRE INDEXADAS</span>
                 <strong>712 / 712</strong>
-                <p>42 campos principales, tablas, enlaces y dossier íntegro.</p>
+                <p>
+                  Esquema canónico íntegro; la cobertura observable se declara
+                  por separado.
+                </p>
               </article>
               <article>
                 <span>MAPA TERRITORIAL</span>
-                <strong>708 + 4</strong>
+                <strong>
+                  {locationSummary.withPoint} + {locationSummary.withoutPoint}
+                </strong>
                 <p>
-                  708 vinculables a territorio y 4 globales sin punto inventado.
+                  {locationSummary.withPoint} vinculables a territorio y {locationSummary.withoutPoint}{" "}
+                  sin punto inventado.
                 </p>
               </article>
             </section>
@@ -1219,10 +1971,7 @@ export default function Portal() {
                 <h2>Privacidad y estructura</h2>
                 <ul>
                   <li>Una única base conceptual: empresas y evidencias.</li>
-                  <li>
-                    “Radar” es el estudio; “Universo activo” era una etiqueta
-                    histórica.
-                  </li>
+                  <li>Un único portal compartible para todo el equipo.</li>
                   <li>No se publican enlaces internos ni privados.</li>
                   <li>Los medios viven en la ficha correspondiente.</li>
                   <li>Las fuentes externas se abren desde la ficha.</li>
@@ -1245,13 +1994,13 @@ export default function Portal() {
         )}
         {view === "audit" && (
           <section className="completion-panel">
-            <div className="completion-mark">✓</div>
+            <div className="completion-mark">{summary.completion.status === "TERMINADO" ? "✓" : "↻"}</div>
             <div>
               <p className="eyebrow">CRITERIOS DE CIERRE</p>
               <h2>{summary.completion.status}</h2>
-              <p>
-                La auditoría canónica no conserva trabajo abierto ni evidencia
-                disponible fuera de su ficha madre.
+              <p>{summary.completion.status === "TERMINADO"
+                ? "La auditoría canónica no conserva trabajo abierto ni evidencia disponible fuera de su ficha madre."
+                : "La base anterior está preservada, pero la ampliación forense de funnels todavía tiene registros pendientes de revisar, sincronizar o publicar."}
               </p>
             </div>
             <div className="completion-kpis">
@@ -1275,6 +2024,34 @@ export default function Portal() {
                 <b>{summary.completion.recordsWithoutPublicSource}</b> sin
                 fuente pública
               </span>
+              <span>
+                <b>{fmt(summary.completion.availableEvidencePlaced)}</b> piezas
+                de galería verificadas
+              </span>
+              <span>
+                <b>{fmt(v3Index?.stats.evidence || 0)}</b> evidencias de funnel
+              </span>
+              <span>
+                <b>{fmt(v3Index?.stats.screenshots || 0)}</b> capturas de funnel
+              </span>
+              <span>
+                <b>{fmt(v3Index?.stats.verified || 0)}</b> fichas comerciales
+                verificadas
+              </span>
+            </div>
+            <div className="audit-banner">
+              <strong>Limitaciones explícitas, nunca datos inventados</strong>
+              <p>
+                {fmt(summary.completion.unavailableEvidenceDocumented)} archivos de
+                origen no recuperables están documentados; {fmt(summary.logos.fallback)}
+                {" "}marcas sin activo público verificable usan iniciales neutras; y
+                {" "}{fmt(summary.completion.specialMarketRecords)} fichas de mercado
+                especial conservan su alcance territorial explicado. La investigación
+                pública no envía formularios ni contacta a las empresas.
+              </p>
+              <a href="/data/final-audit.json" target="_blank" rel="noopener noreferrer">
+                Abrir auditoría final exacta ↗
+              </a>
             </div>
           </section>
         )}
@@ -1282,6 +2059,7 @@ export default function Portal() {
 
       {active && (
         <RecordDetail
+          key={active.id}
           company={active}
           logos={logos}
           compared={compare.includes(active.id)}
@@ -1289,7 +2067,7 @@ export default function Portal() {
           onMediaOpen={openMedia}
           onShare={shareCompany}
           onLocate={() => {
-            setFocusCountry(active.primaryCountry);
+            setFocusCountry(active.location?.canonicalMarket || active.primaryCountry);
             setView("map");
             closeCompany();
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1304,19 +2082,22 @@ export default function Portal() {
       )}
       {lightbox && (
         <div
+          ref={lightboxRef}
           className="lightbox"
           role="dialog"
           aria-modal="true"
           aria-label={"Visor de materiales de " + lightbox.company.name}
+          aria-describedby="lightbox-caption"
         >
           <button
+            ref={lightboxCloseRef}
             className="lightbox-close"
             aria-label="Cerrar"
             onClick={closeMedia}
           >
             ×
           </button>
-          {lightbox.company.media.length > 1 && (
+          {lightbox.collection.length > 1 && (
             <>
               <button
                 className="lightbox-nav prev"
@@ -1360,16 +2141,45 @@ export default function Portal() {
             ) : (
               <img
                 src={lightbox.media.file}
-                alt={"Material ampliado de " + lightbox.company.name}
+                alt={
+                  lightboxResolution.isLowResolution
+                    ? `Original de baja resolución de ${lightbox.company.name}`
+                    : "Material ampliado de " + lightbox.company.name
+                }
+                data-media-resolution={lightboxResolution.kind}
+                data-upscaled={
+                  lightboxResolution.isLowResolution ? "false" : undefined
+                }
+                style={imagePresentationStyle(lightboxResolution, "viewer")}
+                onLoad={(event) => {
+                  const measured = measureImage(event.currentTarget);
+                  if (!measured) return;
+                  setMeasuredImageDimensions((current) => {
+                    const previous = current[lightbox.media.file];
+                    if (
+                      previous?.width === measured.width &&
+                      previous.height === measured.height
+                    )
+                      return current;
+                    return {
+                      ...current,
+                      [lightbox.media.file]: measured,
+                    };
+                  });
+                }}
                 onError={() => setFailedLightboxFile(lightbox.media.file)}
               />
             )}
-            <p>
+            <MediaResolutionNotice
+              resolution={lightboxResolution}
+              file={lightbox.media.file}
+            />
+            <p id="lightbox-caption">
               {lightbox.company.name} · material{" "}
-              {lightbox.company.media.findIndex(
+              {lightbox.collection.findIndex(
                 (item) => item.file === lightbox.media.file,
               ) + 1}{" "}
-              de {lightbox.company.media.length}
+              de {lightbox.collection.length}
             </p>
             <small>Usa ← y → para avanzar · Esc para cerrar</small>
           </div>

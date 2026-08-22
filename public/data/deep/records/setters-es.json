@@ -1,0 +1,471 @@
+{
+  "id": "setters-es",
+  "name": "Setters.es",
+  "reviewedAt": "2026-08-22T15:50:19.364Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "Curso Appointment Setter",
+    "heroObserved": true,
+    "priorSummary": "Curso online de Appointment Setter con bolsa de trabajo propia y \"tutor personal durante 12 meses\" tras la compra.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 87 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 497 palabras por página comercial recuperada. Muestras breves: “Curso Appointment Setter” · “Contacto formación y trabajo appointment setting” · “¡Descubre la nueva habilidad digital con la que generar entre 1500-5000 EUR o USD por mes desde tu movil u ordenador”.",
+    "supportingHeadings": [
+      "Curso Appointment Setter",
+      "Quiero postular para aprender habilidad De Setter Digital",
+      "GARANTÍA DE TRABAJO TRAS LA FORMACIÓN",
+      "Elige un vacante de nuestra bolsa de trabajo y también te enseñamos conseguir clientes de \"high ticket\" y alto valor por tu cuenta Te garantizamos",
+      "ES PARA TI SI:",
+      "¡Puedes ver el video directamente después de rellenar el formulario!",
+      "Contacto formación y trabajo appointment setting",
+      "Setters.es",
+      "Déjanos un mensaje",
+      "En un mes te enseñamos como ganar entre $1.500 y $5.000 al mes desde cualquier lugar del mundo en tu móvil y portátil!",
+      "Programar una entrevista para saber más sobre la formación de Appointment Setter",
+      "FAQ: Curso de Appointment Setters",
+      "FAQ Curso Setters",
+      "Servicios B2B:",
+      "Bienes Raíces:",
+      "Cuidado de la Salud:",
+      "Servicios Tecnológicos:",
+      "Educación y Formación:",
+      "Servicios Legales:",
+      "Seguros:",
+      "Planificación de Eventos:",
+      "Servicios para el Hogar:",
+      "Recursos Humanos y Contratación:",
+      "Appointment Setters Profesionales Para Tu Negocio",
+      "¿Necesitas appointment setters profesionales para aumentar las ventas de tu negocio?",
+      "Nuestros appointment setters",
+      "Ramona Ruiz",
+      "Ángel Sanchez",
+      "Petra María",
+      "Maria Córdoba"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "=> Agenda sesión GRATIS <=",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://setters.es/",
+      "text": "=> Agenda sesión GRATIS <=",
+      "href": "https://calendly.com/setters_es/30min",
+      "element": "a",
+      "kind": "conversion",
+      "score": 238.5
+    },
+    "ctas": [
+      "=> Agenda sesión GRATIS <=",
+      "AGENDA SESIÓN AQUÍ",
+      "Contacto",
+      "contacto",
+      "Whatsapp",
+      "WhatsApp",
+      "Enviar mensaje",
+      "¡Voy a por ello!",
+      "Programe una sesión",
+      "¡Recibir información por correo!"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://setters.es/",
+        "index": 1,
+        "action": "https://setters.es/",
+        "method": "POST",
+        "submitText": "¡Voy a por ello!",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_bd4e9fb]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_349f522]",
+            "label": "He leído y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://setters.es/contacto/",
+        "index": 2,
+        "action": "https://setters.es/contacto/",
+        "method": "POST",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "text-69",
+            "label": null,
+            "placeholder": "Nombre completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email-564",
+            "label": null,
+            "placeholder": "Correo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "menu-993",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "textarea-218",
+            "label": null,
+            "placeholder": "Tu Mensaje",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://setters.es/contacto/",
+        "index": 3,
+        "action": "https://setters.es/contacto/",
+        "method": "POST",
+        "submitText": "¡Recibir información por correo!",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 2 y 4 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: textarea-218.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 4,
+      "qualification": [
+        "textarea-218"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp",
+      "WordPress",
+      "Calendly"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Curso online de Appointment Setter con bolsa de trabajo propia y \"tutor personal durante 12 meses\" tras la compra.",
+    "audience": "Personas que quieren formarse y trabajar como appointment setters digitales (mercado de formacion) — a la vez, cantera de talento para agencias como RedVitalia.",
+    "prices": [],
+    "guarantee": [
+      "Entrenamiento gratis de 11 minutos Quiero postular para aprender habilidad De Setter Digital AGENDA SESIÓN AQUÍ GARANTÍA DE TRABAJO TRAS LA FORMACIÓN Elige un vacante de nuestra bolsa de trabajo y también te enseñamos conseguir clientes de \"high ticket\" y alto valor por tu cuenta Te garantizamos que…",
+      "EXAMEN CERTIFICACIÓN ¡GARANTÍA DE Trabajo!"
+    ],
+    "proof": [
+      "Elige un vacante de nuestra bolsa de trabajo o consigue clientes de \"high ticket\" por tu cuenta ¡Te garantizamos que tras finalizar el examen obtendrás ofertas de trabajo 100% seguras!",
+      "¡Te enseñamos como conseguir clientes con productos y servicios de alta valor €1.000 hasta €10.000 por venta y comisiones altas!",
+      "…QUÍ GARANTÍA DE TRABAJO TRAS LA FORMACIÓN Elige un vacante de nuestra bolsa de trabajo y también te enseñamos conseguir clientes de \"high ticket\" y alto valor por tu cuenta Te garantizamos que después de nuestra formación tendrás acceso a trabajar en una empresa ese mismo mes."
+    ],
+    "objections": [],
+    "urgency": [
+      "¡No tienes que pagar nada (por el momento, ¡entonces aprovecha ahora!)!"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Inicio Curso Gratis Setters Para Empresas Setters Buscando Trabajo FAQ Blog Contacto Mapa del sitio Política de privacidad Curso Appointment Setter ¡Descubre la nueva habilidad digital con la que generar entre 1500-5000 EUR o USD por mes desde tu móvil u ordenador!",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "¡Te enseñamos como conseguir clientes con productos y servicios de alta valor €1.000 hasta €10.000 por venta y comisiones altas!",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Entrenamiento gratis de 11 minutos Quiero postular para aprender habilidad De Setter Digital AGENDA SESIÓN AQUÍ GARANTÍA DE TRABAJO TRAS LA FORMACIÓN Elige un vacante de nuestra bolsa de trabajo y también te enseñamos conseguir clientes de \"high ticket\" y alto valor por tu cuenta Te garantizamos que…",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "EXAMEN CERTIFICACIÓN ¡GARANTÍA DE Trabajo!",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…QUÍ GARANTÍA DE TRABAJO TRAS LA FORMACIÓN Elige un vacante de nuestra bolsa de trabajo y también te enseñamos conseguir clientes de \"high ticket\" y alto valor por tu cuenta Te garantizamos que después de nuestra formación tendrás acceso a trabajar en una empresa ese mismo mes.",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Elige un vacante de nuestra bolsa de trabajo o consigue clientes de \"high ticket\" por tu cuenta ¡Te garantizamos que tras finalizar el examen obtendrás ofertas de trabajo 100% seguras!",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¡Te enseñamos como conseguir clientes con productos y servicios de alta valor €1.000 hasta €10.000 por venta y comisiones altas!",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Inicio Curso Gratis Setters Para Empresas Setters Buscando Trabajo FAQ Blog Contacto Mapa del sitio Política de privacidad Curso Appointment Setter ¡Descubre la nueva habilidad digital con la que generar entre 1500-5000 EUR o USD por mes desde tu móvil u ordenador!",
+          "url": "https://setters.es/",
+          "pageTitle": "Curso Appointment Setter - 5K/mes Como Setter Digital!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Programe una sesión Inicio Curso Gratis Setters Para Empresas Setters Buscando Trabajo FAQ Blog Contacto Mapa del sitio Política de privacidad Inicio Curso Gratis Setters Para Empresas Setters Buscando Trabajo FAQ Blog Contacto Mapa del sitio Política de privacidad FAQ:…",
+          "url": "https://setters.es/preguntas-frecuentes-faq/",
+          "pageTitle": "FAQ: Curso De Appointment Setters",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://setters.es/",
+        "https://setters.es/contacto/",
+        "https://setters.es/preguntas-frecuentes-faq/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Curso Appointment Setter",
+        "Contacto formación y trabajo appointment setting",
+        "¡Descubre la nueva habilidad digital con la que generar entre 1500-5000 EUR o USD por mes desde tu movil u ordenador",
+        "¿Eres un setter profesional con experiencia y buscas trabajo? ¡Únete a nuestro equipo de expertos en appointment setting!"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "AGENDA SESIÓN AQUÍ",
+        "=> Agenda sesión GRATIS <=",
+        "¡Voy a por ello!",
+        "Whatsapp",
+        "Programe una sesión",
+        "WhatsApp",
+        "Enviar mensaje"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://setters.es/ · 4 campos",
+        "https://setters.es/contacto/ · 4 campos",
+        "https://setters.es/contacto/ · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Email",
+        "Teléfono",
+        "AGENDA SESIÓN AQUÍ",
+        "=> Agenda sesión GRATIS <=",
+        "AGENDA SESIÓN AQUÍ",
+        "=> Agenda sesión GRATIS <="
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por web/SEO/social → formulario o WhatsApp → información/admisión al curso de Appointment Setter → compra financiada/fraccionada → formación online → acompañamiento con tutor personal durante 12 meses"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://setters.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://setters.es/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://setters.es/preguntas-frecuentes-faq/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://setters.es/setters-para-empresas/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://setters.es/video-primer-curso-de-11-minutos-gratis/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://setters.es/setters-buscando-trabajo/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://setters.es/blog/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://setters.es/faq/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “=> Agenda sesión GRATIS <=”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp, WordPress, Calendly) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

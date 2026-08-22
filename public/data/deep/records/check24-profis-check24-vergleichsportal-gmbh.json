@@ -1,0 +1,248 @@
+{
+  "id": "check24-profis-check24-vergleichsportal-gmbh",
+  "name": "CHECK24 Profis (CHECK24 Vergleichsportal GmbH)",
+  "reviewedAt": "2026-08-22T15:50:18.673Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Als Profi einfach neue Kunden gewinnen",
+    "heroObserved": true,
+    "priorSummary": "Perfil gratuito sin cuota de alta; tarifas de mediación (Vermittlungsgebühr) solo en algunos servicios concretos",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 320 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1994 palabras por página comercial recuperada. Muestras breves: “Als Profi einfach neue Kunden gewinnen” · “Allgemeine Geschäftsbedingungen für Auftraggeber” · “Datenschutzrechtliche Vorabinformationen gemäß Ziffer 13 EU-DSGVO”.",
+    "supportingHeadings": [
+      "Als Profi einfach neue Kunden gewinnen",
+      "Kostenfrei registrieren & Profi-Profil erstellen",
+      "Kundenanfragen erhalten",
+      "Aufträge unterwegs erhalten mit der CHECK24 App",
+      "Allgemeine Geschäftsbedingungen für Auftraggeber",
+      "1. Anmeldung",
+      "2. Gegenstand der Leistung",
+      "3. Angaben der Auftraggeber",
+      "4. Nutzungseinschränkungen",
+      "5. Bewertung der Auftragnehmer",
+      "6. Hinweis zur Beschränkung bzgl. von Nutzern erstellten Inhalten",
+      "7. Hinweis zu Empfehlungssystemen",
+      "8. Haftung",
+      "9. Rechtmäßige Nutzung",
+      "10. Datenschutz",
+      "11. Schlussbestimmungen, anwendbares Recht; Gerichtsstandsvereinbarung für Kaufleute",
+      "Nutzungsbedingungen gegenüber Auftraggebern für das Online-Bezahlsystem der CHECK24 Vergleichsportal Profis GmbH",
+      "Vorbemerkung:",
+      "1. Gegenstand des durch CHECK24 Profis bereitgestellten Service",
+      "2. Laufzeit und Beendigung der Nutzung",
+      "3. Rechte und Pflichten des Auftraggebers",
+      "4. Rechte und Pflichten der CHECK24 Profis",
+      "5. Widerruf, Stornierung und/oder Reklamation der beauftragten Dienstleistung",
+      "6. Haftung",
+      "7. Schlussbestimmungen",
+      "Widerrufsbelehrung",
+      "Datenschutzrechtliche Vorabinformationen gemäß Ziffer 13 EU-DSGVO",
+      "Datenschutzerklärung CHECK24 Vergleichsportal Profis GmbH",
+      "Allgemeine Hinweise",
+      "Information über die Erhebung personenbezogener Daten"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Chat",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://experts.profis.check24.de/portal/cs/unternehmen",
+      "text": "Chat",
+      "href": "https://www.check24.de/unternehmen/kontakt/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 64
+    },
+    "ctas": [
+      "Chat",
+      "Unterkunft anmelden",
+      "Werkstattpartner werden"
+    ],
+    "captureType": "Teléfono / email",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Perfil gratuito sin cuota de alta; tarifas de mediación (Vermittlungsgebühr) solo en algunos servicios concretos",
+    "audience": "Handwerker generalista — extensión del comparador CHECK24 (seguros, energía, telco, viajes) hacia servicios locales",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://experts.profis.check24.de/portal/cs/unternehmen",
+        "https://experts.profis.check24.de/portal/cs/agb",
+        "https://experts.profis.check24.de/portal/cs/datenschutz"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Als Profi einfach neue Kunden gewinnen",
+        "Allgemeine Geschäftsbedingungen für Auftraggeber",
+        "Datenschutzrechtliche Vorabinformationen gemäß Ziffer 13 EU-DSGVO",
+        "CHECK24 Profis | Anmelden"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Chat",
+        "Werkstattpartner werden",
+        "Unterkunft anmelden"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El profesional crea gratis perfil, categorías, preferencias y zona → el consumidor publica una solicitud en CHECK24 → la plataforma la cruza y notifica a profesionales compatibles →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://experts.profis.check24.de/portal/cs/unternehmen",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://experts.profis.check24.de/portal/cs/agb",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://experts.profis.check24.de/portal/cs/datenschutz",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://experts.profis.check24.de/portal/psp/unified/web/login?client_id=3d4b6cd60bf81363e84dac3327599634ac631bde9eb46ba1444f595fce352708&redirect_uri=https%3A%2F%2Fexperts.profis.check24.de%2Fportal%2Fpsp%2Funified%2Fauth&state=98866c9365f0ac8&origin=%2Fportal%2Fpsp%2Funified%2Fweb%2Flogin",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://experts.profis.check24.de/portal/psp/unified/web/login?state=a81b7b788f5461a&client_id=3d4b6cd60bf81363e84dac3327599634ac631bde9eb46ba1444f595fce352708&redirect_uri=https%3A%2F%2Fexperts.profis.check24.de%2Fportal%2Fpsp%2Funified%2Fauth&origin=https%3A%2F%2Fexperts.profis.check24.de%2Fportal%2Fpsp%2Fservice%2Fweb%2Fadd",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://experts.profis.check24.de/portal/cs/vorab-informationen",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://experts.profis.check24.de/portal/psp/agb",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=experts.profis.check24.de",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://experts.profis.check24.de/portal/cs/%3C!--%20EMBED:MOBILE_HEADER_BACK_LINK%20--%3E: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Chat”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

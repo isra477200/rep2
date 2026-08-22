@@ -1,0 +1,663 @@
+{
+  "id": "ranking-online",
+  "name": "Ranking Online",
+  "reviewedAt": "2026-08-22T15:50:17.949Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "De clics a clientes:el marketing que tu asesoría necesita",
+    "heroObserved": true,
+    "priorSummary": "\"De clics a clientes: el marketing que tu asesoría necesita\"; posicionan la generación de leads y el crecimiento medible como su valor central.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 94 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1149 palabras por página comercial recuperada. Muestras breves: “De clics a clientes:el marketing que tu asesoría necesita” · “Documentar procesos con IA: graba una vez y el procedimiento queda escrito” · “Contactate con un asesor”.",
+    "supportingHeadings": [
+      "De clics a clientes:el marketing que tu asesoría necesita",
+      "Casos que demuestran que estarás en buenas manos",
+      "La agencia Nº1 en España para asesorías",
+      "Olvídate del marketing interno.Nosotros traemos clientes, tu servicio hace que quieran quedarse",
+      "Captación",
+      "Fidelización",
+      "Rentabilidad",
+      "Conocemos tus herramientas, trabajamos como parte de tu equipo",
+      "Estamos cambiando las asesorías en toda España ¿Te sumas?",
+      "Curso gratuito para asesorías: 4 módulos para crecer con método",
+      "¿Qué vas a aprender?",
+      "Formato y acceso",
+      "Somos parte activa del ecosistema de innovación en asesorías",
+      "Si esto te suena… tenemos cómo solucionarlo",
+      "Multiplica la rentabilidad de tu asesoría",
+      "¿Quieres escalar tu despacho?",
+      "¿Tienes alguna duda?",
+      "Agenda tu reunión",
+      "Documentar procesos con IA: graba una vez y el procedimiento queda escrito",
+      "BORME con IA: las empresas constituidas en tu provincia, en un informe cada mañana",
+      "Cruzar el extracto bancario con las facturas usando IA (sin Excel)",
+      "IA segura en el despacho: el semáforo de permisos que evita sustos",
+      "Ranking Online estará en Accountex España 2026: esto es lo que buscamos en IFEMA Madrid",
+      "El impacto de los vídeos corporativos en la confianza del cliente digital de las asesorías",
+      "Por qué el diseño web para abogados determina los clientes que atraes por internet",
+      "Automatizar tareas con IA en el despacho: el lunes, con el trabajo hecho",
+      "Agente de IA para asesorías: le das una carpeta y trabaja sin ti delante",
+      "Propuestas comerciales con IA: 3 opciones el mismo día (y qué haría yo con las de tu despacho)",
+      "Últimos artículos publicados",
+      "Aprendizaje que te interesará:"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agenda tu reunión",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://rankingonline.com/",
+      "text": "Agenda tu reunión",
+      "href": "https://rankingonline.com/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 180.75
+    },
+    "ctas": [
+      "¿Necesitas ayuda? Contacto de WhatsApp",
+      "Agenda tu reunión",
+      "Contacto",
+      "CONTACTAR",
+      "Enviar",
+      "Servicios",
+      "Enviar formulario",
+      "Enviar comentario",
+      "Hablar con alguien"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://rankingonline.com/",
+        "index": 1,
+        "action": "https://crm.zoho.eu/crm/WebToLeadForm",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Last Name",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Email",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Phone",
+            "label": "Teléfono",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Description",
+            "label": "Mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rankingonline.com/",
+        "index": 3,
+        "action": "https://crm.zoho.eu/crm/WebToLeadForm",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Last Name",
+            "label": "Nombre *",
+            "placeholder": "Nombre *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Email",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Phone",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rankingonline.com/blog-ro/",
+        "index": 2,
+        "action": "https://rankingonline.com/blog-ro/",
+        "method": "POST",
+        "submitText": "Enviar formulario",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][8]",
+            "label": "Nombre *",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][9]",
+            "label": "Correo electrónico *",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][11]",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][7]",
+            "label": "Mensaje",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wpforms[fields][12][]",
+            "label": "Confirmo que acepto y he leído el aviso legal.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rankingonline.com/blog/borme-con-ia-empresas-constituidas-provincia/",
+        "index": 1,
+        "action": "https://rankingonline.com/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Enviar comentario",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comentario *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": "Correo electrónico *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "label": "Web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guarda mi nombre, correo electrónico y web en este navegador para la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rankingonline.com/plaza/",
+        "index": 1,
+        "action": "https://rankingonline.com/plaza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][8]",
+            "label": "Nombre *",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "wpforms[fields][11]",
+            "label": "Números",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][9]",
+            "label": "Correo electrónico *",
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][7]",
+            "label": "Párrafo de texto",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://rankingonline.com/plaza/",
+        "index": 3,
+        "action": "https://rankingonline.com/plaza/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1]",
+            "label": "Nombre",
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Correo electrónico *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][3]",
+            "label": "Tu teléfono",
+            "placeholder": "Tu teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wpforms[fields][4][]",
+            "label": "Acepto las políticas de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "6 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 1 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Web, Guarda mi nombre, correo electrónico y web en este navegador para la.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": [
+        "Web",
+        "Guarda mi nombre, correo electrónico y web en este navegador para la"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"De clics a clientes: el marketing que tu asesoría necesita\"; posicionan la generación de leads y el crecimiento medible como su valor central.",
+    "audience": "Despachos de abogados y asesorías/gestorías fiscales-contables para pymes",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Estamos muy contentos con el servicio.Gracias por el trato cercano!Montserrat Díaz M.hace 1 añoComo abogada trabajé para promocionar mis servicios con Ranking Online a inicios de 2025 y captamos clientes con la ayuda de su estrategia.",
+      "Tienen un enfoque claro y brindan buen soporte!!Jose Javier B.hace 1 añoArrancamos a trabajar con Ranking Online a inicios de 2025 y ya estamos captando clientes para nuestra asesoría gracias a su estrategia.",
+      "Nos han ayudado de forma constante a captar clientes y siempre han sido muy cercanos, claros y profesionales.Oscar Tejerina R.hace 1 añoEn Ahedo llevamos algo más de un año trabajando con Ranking Online.",
+      "Curso gratuito para asesorías: 4 módulos para crecer con métodoDescubre cómo transformar la forma en la que captas, vendes y fidelizas clientes en tu despacho.",
+      "Están siendo de gran ayuda tanto en la captación de nuevos clientes, como en la comunicación con los ya existentes.",
+      "Me gustaría poder escribir más reseñas como esta de mis proveedores."
+    ],
+    "objections": [],
+    "urgency": [
+      "Juega en otra liga.La nota honesta: el estudio encuentra empresas, no clientesY ahora la parte que no vas a oír en ningún sitio donde te vendan algo parecido.El estudio encuentra empresas, no clientes.",
+      "Ese número, al mes, es el volumen que hoy no estás ni viendo.",
+      "Hoy te enseño a montar un estudio del BORME: un informe diario, automático, con las sociedades que se constituyeron ayer en tu provincia.",
+      "Ahora lo tienes.Esto es parte de Claude para despachos, un curso gratuito de cero a pro.",
+      "Te enseño esto gratis porque un despacho que produce mejor con la IA y decide con información, en vez de esperar, es imbatible.Y dime una cosa: hoy, ¿cómo te enteras de lo que se mueve en tu provincia?",
+      "Y esa visita, hoy, casi siempre empieza en un buscador."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Me gustaría poder escribir más reseñas como esta de mis proveedores.",
+          "url": "https://rankingonline.com/",
+          "pageTitle": "Ranking Online | Marketing para Asesorías y Despachos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Están siendo de gran ayuda tanto en la captación de nuevos clientes, como en la comunicación con los ya existentes.",
+          "url": "https://rankingonline.com/",
+          "pageTitle": "Ranking Online | Marketing para Asesorías y Despachos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Estamos muy contentos con el servicio.Gracias por el trato cercano!Montserrat Díaz M.hace 1 añoComo abogada trabajé para promocionar mis servicios con Ranking Online a inicios de 2025 y captamos clientes con la ayuda de su estrategia.",
+          "url": "https://rankingonline.com/",
+          "pageTitle": "Ranking Online | Marketing para Asesorías y Despachos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Tienen un enfoque claro y brindan buen soporte!!Jose Javier B.hace 1 añoArrancamos a trabajar con Ranking Online a inicios de 2025 y ya estamos captando clientes para nuestra asesoría gracias a su estrategia.",
+          "url": "https://rankingonline.com/",
+          "pageTitle": "Ranking Online | Marketing para Asesorías y Despachos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nos han ayudado de forma constante a captar clientes y siempre han sido muy cercanos, claros y profesionales.Oscar Tejerina R.hace 1 añoEn Ahedo llevamos algo más de un año trabajando con Ranking Online.",
+          "url": "https://rankingonline.com/",
+          "pageTitle": "Ranking Online | Marketing para Asesorías y Despachos",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Curso gratuito para asesorías: 4 módulos para crecer con métodoDescubre cómo transformar la forma en la que captas, vendes y fidelizas clientes en tu despacho.",
+          "url": "https://rankingonline.com/",
+          "pageTitle": "Ranking Online | Marketing para Asesorías y Despachos",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "LinkedIn Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://rankingonline.com/",
+        "https://rankingonline.com/blog-ro/",
+        "https://rankingonline.com/contacto/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "De clics a clientes:el marketing que tu asesoría necesita",
+        "Documentar procesos con IA: graba una vez y el procedimiento queda escrito",
+        "Contactate con un asesor",
+        "Marketing para asesorías enfocado a la rentabilidad"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Agenda tu reunión",
+        "Enviar",
+        "¿Necesitas ayuda? Contacto de WhatsApp",
+        "Hablar con alguien",
+        "Enviar formulario",
+        "Servicios",
+        "CONTACTAR"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://rankingonline.com/ · 5 campos",
+        "https://rankingonline.com/ · 5 campos",
+        "https://rankingonline.com/ · 5 campos",
+        "https://rankingonline.com/blog-ro/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "Agenda tu reunión"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por home, contenido o curso gratuito → CTA «Agenda tu reunión» → reunión de diagnóstico/encaje → análisis de captación, venta y fidelización del despacho/asesoría → plan personalizado"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://rankingonline.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://rankingonline.com/blog-ro/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://rankingonline.com/contacto/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://rankingonline.com/blog/borme-con-ia-empresas-constituidas-provincia/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://rankingonline.com/plaza/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://rankingonline.com/blog/diseno-web-para-abogados/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://rankingonline.com/blog/seo-local-empresas-asesorias/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/advertiser/AR00148626312485928961?region=anywhere",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=rankingonline.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=103870657853149",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR00148626312485928961/creative/CR15992879706743504897?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR00148626312485928961/creative/CR06149686577032331265?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR00148626312485928961/creative/CR14941181304174018561?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR00148626312485928961/creative/CR09993240578155872257?region=anywhere",
+      "label": "Fuente pública 14"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agenda tu reunión”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

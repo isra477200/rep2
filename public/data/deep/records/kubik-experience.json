@@ -1,0 +1,623 @@
+{
+  "id": "kubik-experience",
+  "name": "Kubik Experience",
+  "reviewedAt": "2026-08-22T15:50:17.841Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Consultora de Crecimiento Digital para marcas valientes",
+    "heroObserved": true,
+    "priorSummary": "Marketing y Google Ads orientados a captación medible; no pagar hasta conseguir el primer contacto real.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 100 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 674 palabras por página comercial recuperada. Muestras breves: “Consultora de Crecimiento Digital para marcas valientes” · “Agencia de Publicidad en Redes para marcas que quieren captar clientes” · “Equipo”.",
+    "supportingHeadings": [
+      "Consultora de Crecimiento Digital para marcas valientes",
+      "paramarcasvalientes",
+      "Agencia de Captación de Leads para marcas que generan confianza y resultados",
+      "Robert Arteaga",
+      "Existe otra forma de convertir usuarios en clientes",
+      "Bienvenidos a la era de la no personalización.",
+      "Donde cada clic se siente igual que el anterior, y los mensajes pierden relevancia en un mar de promesas vacías.",
+      "Nuestros servicios",
+      "Posicionamiento SEO tráfico orgánico para tu web",
+      "Directora de campañas de pago",
+      "Desarrollador de App y Web",
+      "Director y Fundador",
+      "Redes sociales",
+      "Dirección programación y UX",
+      "Vídeo y Streaming",
+      "Estamos ayudando a estas compañías a crecer desde la estrategia, el marketing y la visión de negocio.",
+      "Los números hablan por sí solos Necesitas empezar a medir.",
+      "Optimización tasa de conversión",
+      "Escucha nuestro Podcast \"Te Falta Selva\"",
+      "Contacta con un CONSULTOR de crecimiento digital.",
+      "Agencia de Publicidad en Redes para marcas que quieren captar clientes",
+      "Bienvenidos a la era del impacto fugaz.",
+      "Donde los usuarios ven miles de anuncios al día, pero recuerdan apenas unos pocos, y solo interactúan con los que realmente les hablan.",
+      "Tus anuncios pueden ser más que simples interrupciones: pueden ser soluciones, inspiraciones o incluso el inicio de una relación con tu marca",
+      "¿Listo para transformar el \"me salté otro anuncio\" en \"esto es justo lo que necesito\"?",
+      "Existe otra forma de transformar likes en seguidores reales.",
+      "Metodología de Publcidad en Redes Sociales aplicada al marketing digital",
+      "Auditoria RRSS",
+      "Competencia",
+      "Identidad visual"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://kubikexperience.com/",
+      "text": "Contacto",
+      "href": "https://kubikexperience.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163
+    },
+    "ctas": [
+      "Contacto",
+      "Contactar",
+      "Enviar",
+      "Servicios"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://kubikexperience.com/",
+        "index": 1,
+        "action": "https://kubikexperience.com/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre aquí",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f0104c8]",
+            "label": "Teléfono",
+            "placeholder": "+34 |",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Mensaje",
+            "placeholder": "Escribe algo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_0f6face]",
+            "label": "He leído y acepto el aviso legal y la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kubikexperience.com/equipo/",
+        "index": 1,
+        "action": "https://kubikexperience.com/equipo/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre aquí",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f0104c8]",
+            "label": "Teléfono",
+            "placeholder": "+34 |",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Mensaje",
+            "placeholder": "Escribe algo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_0f6face]",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kubikexperience.com/consultor-experto-redes-sociales/",
+        "index": 1,
+        "action": "https://kubikexperience.com/consultor-experto-redes-sociales/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre aquí",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f0104c8]",
+            "label": "Teléfono",
+            "placeholder": "+34 |",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Mensaje",
+            "placeholder": "Escribe algo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_0f6face]",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kubikexperience.com/contacto/",
+        "index": 1,
+        "action": "https://kubikexperience.com/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre aquí",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f0104c8]",
+            "label": "Teléfono",
+            "placeholder": "+34 |",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_d8a7900]",
+            "label": "Mensaje",
+            "placeholder": "Escribe algo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "form_fields[message]",
+            "label": "URL",
+            "placeholder": "Tu empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_f8fe25e]",
+            "label": "Presupuesto estimando",
+            "placeholder": "Escribe algo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_4028654]",
+            "label": "¿Qué necesitas para tu proyecto?",
+            "placeholder": "Escribe algo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_0f6face]",
+            "label": "He leído y acepto el aviso legal y la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kubikexperience.com/agencia-posicionamiento-seo/",
+        "index": 1,
+        "action": "https://kubikexperience.com/agencia-posicionamiento-seo/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "Nombre",
+            "placeholder": "Tu nombre aquí",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[field_f0104c8]",
+            "label": "Teléfono",
+            "placeholder": "+34 |",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[email]",
+            "label": "Email",
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[message]",
+            "label": "Mensaje",
+            "placeholder": "Escribe algo",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "form_fields[field_0f6face]",
+            "label": "He leído y acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "5 diseño(s) de formulario distinto(s); entre 5 y 8 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Presupuesto estimando.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 8,
+      "qualification": [
+        "Presupuesto estimando"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketing y Google Ads orientados a captación medible; no pagar hasta conseguir el primer contacto real.",
+    "audience": "Pymes y \"marcas valientes\" sin vertical definida. Clientes de sectores dispares: hostelería (Café Jurado), ocio y deporte (LanzaSurf), Harmonium. Base en Sant Joan d'Alacant, Alicante: MISMO PERFIL DE PYME LOCAL que ataca RedVitalia, y además en su propia provincia.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Crecimiento orgánico 0 % Crecimiento PAID 0 % Embudos Lanzados + 0 Optimización tasa de conversión 0 % Existe otra forma de convertir usuarios en clientes Escucha nuestro Podcast \"Te Falta Selva\" Contacta con un CONSULTOR de crecimiento digital.",
+      "Descubre cómo Kubik trabaja par tu éxito Robert Arteaga Director Existe otra forma de convertir usuarios en clientes Bienvenidos a la era de la no personalización.",
+      "¿El mismo que ha logrado que miles de marcas reciclen las mismas fórmulas obsoletas creyendo que así captarán más clientes?",
+      "Existe otra forma de convertir usuarios en clientes Auténtica, cercana y optimizada para impactar."
+    ],
+    "objections": [],
+    "urgency": [
+      "Hoy, para destacar, necesitas más que trucos; necesitas estrategia, relevancia y entender a tu audiencia mejor que nadie."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Descubre cómo Kubik trabaja par tu éxito Robert Arteaga Director Existe otra forma de convertir usuarios en clientes Bienvenidos a la era de la no personalización.",
+          "url": "https://kubikexperience.com/",
+          "pageTitle": "Agencia de Captación de leads - Kubik Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿El mismo que ha logrado que miles de marcas reciclen las mismas fórmulas obsoletas creyendo que así captarán más clientes?",
+          "url": "https://kubikexperience.com/",
+          "pageTitle": "Agencia de Captación de leads - Kubik Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Existe otra forma de convertir usuarios en clientes Auténtica, cercana y optimizada para impactar.",
+          "url": "https://kubikexperience.com/",
+          "pageTitle": "Agencia de Captación de leads - Kubik Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Crecimiento orgánico 0 % Crecimiento PAID 0 % Embudos Lanzados + 0 Optimización tasa de conversión 0 % Existe otra forma de convertir usuarios en clientes Escucha nuestro Podcast \"Te Falta Selva\" Contacta con un CONSULTOR de crecimiento digital.",
+          "url": "https://kubikexperience.com/",
+          "pageTitle": "Agencia de Captación de leads - Kubik Marketing Digital",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Google Ads",
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://kubikexperience.com/",
+        "https://kubikexperience.com/consultor-publicidad-en-redes/",
+        "https://kubikexperience.com/equipo/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Consultora de Crecimiento Digital para marcas valientes",
+        "Agencia de Publicidad en Redes para marcas que quieren captar clientes",
+        "Equipo",
+        "Estrategia y Gestión de Redes Sociales que genera Comunidad"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Contactar",
+        "Enviar",
+        "Servicios"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://kubikexperience.com/ · 5 campos",
+        "https://kubikexperience.com/consultor-publicidad-en-redes/ · 5 campos",
+        "https://kubikexperience.com/equipo/ · 5 campos",
+        "https://kubikexperience.com/consultor-experto-redes-sociales/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Home/servicios/casos → contacto con consultor → formulario con nombre, teléfono, email y mensaje → diagnóstico → propuesta de crecimiento/CRO → ejecución y seguimiento."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://kubikexperience.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://kubikexperience.com/consultor-publicidad-en-redes/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://kubikexperience.com/equipo/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://kubikexperience.com/consultor-experto-redes-sociales/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://kubikexperience.com/consultor-google-ads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://kubikexperience.com/contacto/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://kubikexperience.com/agencia-posicionamiento-seo/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=kubikexperience.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/advertiser/AR01796587877933514753/creative/CR12378216564502036481?region=anywhere",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR01796587877933514753/creative/CR06070599830927835137?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR01796587877933514753/creative/CR17831060864015269889?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR01796587877933514753/creative/CR09220255617174732801?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR01796587877933514753/creative/CR04120312906174693377?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR01796587877933514753/creative/CR05312852013753565185?region=anywhere",
+      "label": "Fuente pública 16"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

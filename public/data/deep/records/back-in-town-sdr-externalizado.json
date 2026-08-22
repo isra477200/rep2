@@ -1,0 +1,394 @@
+{
+  "id": "back-in-town-sdr-externalizado",
+  "name": "Back In Town (SDR Externalizado)",
+  "reviewedAt": "2026-08-22T15:50:17.505Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Consultoría comercial",
+    "heroObserved": true,
+    "priorSummary": "Especialista senior de prospección asignado que abre conversaciones, cualifica y agenda reuniones con decisores, \"sin sumar un SDR a tu plantilla\"",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 149 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2057 palabras por página comercial recuperada. Muestras breves: “SDR externalizado · Servicio SDR B2B” · “Consultoría comercial” · “Consultoría de ventas B2B”.",
+    "supportingHeadings": [
+      "SDR externalizado · Servicio SDR B2B",
+      "Qué es un SDR externalizado (y qué no es)",
+      "No es: Una base de datos",
+      "No es: Una herramienta",
+      "No es: \"Leads\" por volumen",
+      "No es: Un becario con un guion",
+      "Qué hace, en concreto, tu SDR externalizado",
+      "Mapa de cuentas objetivo",
+      "Apertura multicanal, no solo llamada",
+      "Cualificación contra criterios pactados",
+      "Agendado de reuniones con decisores",
+      "Seguimiento de lo que no cierra hoy",
+      "CRM, registro y revisión mensual",
+      "SDR interno o SDR externalizado: la cuenta, sin maquillar",
+      "Precio del servicio de SDR externalizado",
+      "Un senior haciendo la función SDR, no un junior con secuencias",
+      "Pregunta algo técnico",
+      "Aparece la objeción real",
+      "La cuenta no vale la pena",
+      "Representa tu marca",
+      "Cómo arrancamos un servicio de SDR externalizado",
+      "Diagnóstico comercial",
+      "Asignación del especialista",
+      "Mapa de cuentas y mensaje",
+      "Salida al mercado y ajuste",
+      "Revisión mensual con datos",
+      "¿Y si no funciona?",
+      "Pipeline visible desde el primer día",
+      "Revisión mensual, incómoda si toca",
+      "Diagnóstico con derecho a no empezar"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactar",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://backintown.io/sdr-externalizado/",
+      "text": "Contactar",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 107.75
+    },
+    "ctas": [
+      "Contactar",
+      "Hablar sobre mi crecimiento"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://backintown.io/sdr-externalizado/",
+        "index": 1,
+        "action": "https://backintown.io/sdr-externalizado/",
+        "method": "POST",
+        "submitText": "Contactar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 11,
+        "fields": [
+          {
+            "type": "text",
+            "name": "item_meta[17]",
+            "label": "name *",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "item_meta[18]",
+            "label": "email *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "item_meta[19]",
+            "label": "phone *",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "item_meta[25]",
+            "label": "company_web *",
+            "placeholder": "Web de tu negocio",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "item_meta[20][]",
+            "label": "He leído y acepto los términos y condiciones.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "item_meta[48]",
+            "label": "Si eres humano, deja este campo en blanco.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://backintown.io/contacto/",
+        "index": 1,
+        "action": "https://backintown.io/contacto/",
+        "method": "POST",
+        "submitText": "Contactar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "item_meta[27]",
+            "label": "name *",
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "item_meta[28]",
+            "label": "email *",
+            "placeholder": "Correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "item_meta[29]",
+            "label": "phone *",
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "item_meta[30]",
+            "label": "company_web *",
+            "placeholder": "Web de tu negocio",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "item_meta[34]",
+            "label": "message",
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "item_meta[31][]",
+            "label": "He leído y acepto los términos y condiciones.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "item_meta[48]",
+            "label": "Si eres humano, deja este campo en blanco.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 7 campos visibles, mínimo 5 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: company_web *.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 7,
+      "qualification": [
+        "company_web *"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Especialista senior de prospección asignado que abre conversaciones, cualifica y agenda reuniones con decisores, \"sin sumar un SDR a tu plantilla\"",
+    "audience": "Pymes B2B consolidadas (más de 2M€ facturación, 10+ empleados) con ciclos de venta complejos y varios interlocutores",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Empieza hoy y aprovecha un -20% durante los 3 primeros mesesSolo para nuevos clientes que activen su servicio este mes.",
+      "Ese \"ahora no\" tiene fecha y se trabaja: es la parte que casi todo servicio de SDR abandona y donde está buena parte del pipeline del año siguiente.",
+      "pedro@backintown.io +34 616 54 29 90 Plaza Reyes Prósper 7, 4.",
+      "Seguimiento de lo que no cierra hoy En B2B, la mayoría de las cuentas dice \"ahora no\".",
+      "Precio del servicio de SDR externalizado Lo publicamos porque preferimos que descartes ahora si no encaja, en lugar de descubrirlo los dos en la tercera reunión.",
+      "Hablemos de tu sistema de ventas y de lo que hoy te está frenando Agenda una reunión y revisamos tu proceso comercial, tu pipeline y tu enfoque de prospección."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "Email",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://backintown.io/sdr-externalizado/",
+        "https://backintown.io/consultoria-comercial/",
+        "https://backintown.io/empresa-telemarketing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "SDR externalizado · Servicio SDR B2B",
+        "Consultoría comercial",
+        "Consultoría de ventas B2B",
+        "Hablemos del crecimiento de tu negocio con criterio"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contactar",
+        "Hablar sobre mi crecimiento"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://backintown.io/sdr-externalizado/ · 6 campos",
+        "https://backintown.io/consultoria-comercial/ · 6 campos",
+        "https://backintown.io/empresa-telemarketing/ · 6 campos",
+        "https://backintown.io/consultoria-ventas/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada/CTA: diagnóstico gratuito/presupuesto mediante formulario. | Cualificación: filtra empresas B2B consolidadas (más de 2 M€ y 10 empleados), sector, ciclo complejo, decisor y compromiso; pacta criterios de lead."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://backintown.io/sdr-externalizado/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://backintown.io/consultoria-comercial/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://backintown.io/empresa-telemarketing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://backintown.io/consultoria-ventas/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://backintown.io/contacto/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://backintown.io/empresa-telemarketing/logrono/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://backintown.io/empresa-telemarketing/badalona/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=backintown.io",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactar”, manteniendo una sola ruta dominante por landing.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,195 @@
+{
+  "id": "yellowpages-mw",
+  "name": "yellowpages.mw",
+  "reviewedAt": "2026-08-22T15:50:19.056Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Listado para visibilidad, tráfico y leads; empleos y licitaciones.",
+    "voice": "Tono orientado al lector, urgencia comercial. Usa 2 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 308 palabras por página comercial recuperada. Muestras breves: “Home”.",
+    "supportingHeadings": [
+      "Home",
+      "Promote Your Visibility and Grow Your Business",
+      "Drive high quality leads to your online Web pages",
+      "Major Features"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://yellowpages.mw/",
+      "text": "Contact Us",
+      "href": "https://yellowpages.mw/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Register"
+    ],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Listado para visibilidad, tráfico y leads; empleos y licitaciones.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Find Out More About Yellowpages Drive high quality leads to your online Web pages When customers search on YellowPages Malawi they’re actively looking for your products and services."
+    ],
+    "objections": [],
+    "urgency": [
+      "See All Listed Categories Copyright © 2026 Yellowpages.mw - Developed by Globe Internet Limited.",
+      "READ MORESlide 1Globe Internet LimitedREAD MORE Promote Your Visibility and Grow Your Business Promote your business in Malawi and have a powerful online Marketing strategy that effectively reaches current and potential buyers."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Find Out More About Yellowpages Drive high quality leads to your online Web pages When customers search on YellowPages Malawi they’re actively looking for your products and services.",
+          "url": "https://yellowpages.mw/",
+          "pageTitle": "Yellowpages – Leading yellowpages listing in Malawi",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.mw/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Home"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Register"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://yellowpages.mw/",
+      "label": "Fuente pública 1"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://yellowpages.mw/contact-us/: HTTP 404",
+    "https://yellowpages.mw/about-yp/: HTTP 404",
+    "https://yellowpages.mw/tenders/: HTTP 404",
+    "https://yellowpages.mw/jobs/: HTTP 404",
+    "https://yellowpages.mw/listings/: HTTP 404",
+    "https://yellowpages.mw/listing-categories/: HTTP 404",
+    "https://yellowpages.mw/listing-locations/: HTTP 404",
+    "https://yellowpages.mw/search-listings/: HTTP 404",
+    "https://yellowpages.mw/listing-form/: HTTP 404",
+    "https://yellowpages.mw/register/: HTTP 404",
+    "https://yellowpages.mw/login/: HTTP 404",
+    "https://yellowpages.mw/serendib-hotels/: HTTP 404",
+    "https://yellowpages.mw/vacancies/: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

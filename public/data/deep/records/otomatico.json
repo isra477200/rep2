@@ -1,0 +1,791 @@
+{
+  "id": "otomatico",
+  "name": "Otomatico",
+  "reviewedAt": "2026-08-22T15:50:17.712Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Connect your product with B2B buyers",
+    "heroObserved": true,
+    "priorSummary": "Prospección B2B a rendimiento: lead cualificado, reunión o demo sin cuota de alta ni mensualidad.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 73 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 937 palabras por página comercial recuperada. Muestras breves: “Precio por lead cualificado B2B para Agencias de marketing y publicidad” · “Empresa” · “Términos y Condiciones de uso”.",
+    "supportingHeadings": [
+      "Precio por lead cualificado B2B para Agencias de marketing y publicidad",
+      "Generación de Leads B2B de marketing y publicidad",
+      "Precio por reunión o demo",
+      "Pagar por reunión",
+      "Precio por lead cualificado",
+      "Pagar por lead cualificado",
+      "Coste de adquisición para agencias de marketing y publicidad",
+      "Resultados según el servicio",
+      "Posicionamiento web (SEO)",
+      "Agencias de SEO para posicionar comercios locales, ecommerce, y otros sitios web",
+      "Social Media y contenidos",
+      "Producción audiovisual",
+      "Social / Meta Ads",
+      "Agencia eCommerce",
+      "Agencias de Branding",
+      "Paid Media / Google Ads",
+      "Agencia de performance",
+      "Agencia de medios",
+      "Empresa",
+      "Otomatico",
+      "Términos y Condiciones de uso",
+      "Servicio de Otomatico",
+      "Oportunidades",
+      "Precio por oportunidad",
+      "Prospección y cualificación",
+      "Lista de exclusión",
+      "OTOMATICO pone a disposición una lista de exclusión, que desautoriza a OTOMATICO a contactar a direcciones de correo incluidas, así como tampoco podrá contactar a",
+      "Condiciones de gestión, datos y contenidos",
+      "Price per Meeting",
+      "90 – 180 €"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Schedule a Call",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://otomatico.com/",
+      "text": "Schedule a Call",
+      "href": "https://calendar.otomatico.com/otomatico/1",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.25
+    },
+    "ctas": [
+      "Agendar Llamada",
+      "Schedule a Call",
+      "Request More Information",
+      "Start",
+      "Get Started",
+      "{title}",
+      "English",
+      "Español",
+      "Sign up",
+      "Empezar",
+      "Calcular",
+      "Calculate",
+      "Crear Cuenta",
+      "Create Account",
+      "Crea una cuenta",
+      "Create an account",
+      "Speak to an Expert",
+      "Hablar con un Experto"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+        "index": 1,
+        "action": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+        "method": "POST",
+        "submitText": "Calcular",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "et_pb_contact_country_0",
+            "label": "¿Dónde buscas clientes?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_0",
+            "label": "Nombre y apellido",
+            "placeholder": "Nombre y apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_web_0",
+            "label": "Enlace del sitio web (URL)",
+            "placeholder": "Enlace del sitio web (URL)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_0",
+            "label": "Email profesional",
+            "placeholder": "Email profesional",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_0",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+        "index": 2,
+        "action": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+        "method": "POST",
+        "submitText": "Calcular",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "et_pb_contact_country_1",
+            "label": "¿Dónde buscas clientes?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_1",
+            "label": "Nombre y apellido",
+            "placeholder": "Nombre y apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_web_1",
+            "label": "Enlace del sitio web (URL)",
+            "placeholder": "Enlace del sitio web (URL)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_1",
+            "label": "Email profesional",
+            "placeholder": "Email profesional",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_1",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://otomatico.com/pricing/",
+        "index": 1,
+        "action": "https://otomatico.com/pricing/",
+        "method": "POST",
+        "submitText": "Calculate",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "et_pb_contact_country_0",
+            "label": "Where do you look for clients?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "et_pb_contact_business_0",
+            "label": "How would you describe your business?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_0",
+            "label": "First and Last Name",
+            "placeholder": "First and Last Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_0",
+            "label": "Phone",
+            "placeholder": "Phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_0",
+            "label": "Work email (personal emails won’t be replied to)",
+            "placeholder": "Work email (personal emails won’t be replied to)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://otomatico.com/pricing/",
+        "index": 2,
+        "action": "https://otomatico.com/pricing/",
+        "method": "POST",
+        "submitText": "Calculate",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "et_pb_contact_country_1",
+            "label": "Where are you looking for clients?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "et_pb_contact_business_1",
+            "label": "How would you describe your business?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_1",
+            "label": "First and Last Name",
+            "placeholder": "First and Last Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_web_1",
+            "label": "Website URL",
+            "placeholder": "Website URL",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_1",
+            "label": "Work email",
+            "placeholder": "Work email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_1",
+            "label": "Phone",
+            "placeholder": "Phone",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://otomatico.com/es/precios/",
+        "index": 1,
+        "action": "https://otomatico.com/es/precios/",
+        "method": "POST",
+        "submitText": "Calcular",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "et_pb_contact_country_0",
+            "label": "¿Dónde buscas clientes?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "et_pb_contact_business_0",
+            "label": "¿Cómo describirías tu negocio?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_0",
+            "label": "Nombre y apellido",
+            "placeholder": "Nombre y apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_0",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_0",
+            "label": "Email profesional (no se responde a personal)",
+            "placeholder": "Email profesional (no se responde a personal)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://otomatico.com/es/precios/",
+        "index": 2,
+        "action": "https://otomatico.com/es/precios/",
+        "method": "POST",
+        "submitText": "Calcular",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "select",
+            "name": "et_pb_contact_country_1",
+            "label": "¿Dónde buscas clientes?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "et_pb_contact_business_1",
+            "label": "¿Cómo describirías tu negocio?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_name_1",
+            "label": "Nombre y apellido",
+            "placeholder": "Nombre y apellido",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_web_1",
+            "label": "Enlace del sitio web (URL)",
+            "placeholder": "Enlace del sitio web (URL)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_email_1",
+            "label": "Email profesional",
+            "placeholder": "Email profesional",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "et_pb_contact_phone_1",
+            "label": "Teléfono",
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "6 diseño(s) de formulario distinto(s); entre 5 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Enlace del sitio web (URL), Website URL.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 6,
+      "qualification": [
+        "Enlace del sitio web (URL)",
+        "Website URL"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Email"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "Calendly"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Prospección B2B a rendimiento: lead cualificado, reunión o demo sin cuota de alta ni mensualidad.",
+    "audience": "Agencias de marketing y empresas B2B.",
+    "prices": [
+      "Schedule a Call Pricing Log in Sign up Select Page Price per Meeting 90 – 180 € No setup costs or monthly fees Start What’s the price per qualified meeting?",
+      "Programar una reunión Precios Iniciar sesión Crear Cuenta Seleccionar página Precio por Oportunidad 50 € – 160 € Solo pagas cuando un comprador validado solicita reunirse contigo Empezar ¿Cuánto cuesta una oportunidad cualificada?",
+      "Pagar por reunión Paga por obtener cada reunión sin costes de set up ni fees mensuales Agendar Llamada Precio por lead cualificado 20-110€ ¿Cuánto cuesta conseguir un lead cualificado para servicios de marketing y publicidad?El precio por lead cualificado depende del grado de interés y"
+    ],
+    "guarantee": [],
+    "proof": [
+      "Choose how many meetings you want to receive each month on the platform Our top clients don’t limit the number of meetings or request more than 25 per month.",
+      "With Otomatico’s technology and proven results, our clients receive meetings with interested leads who have agreed to schedule a meeting at a specific date and time.",
+      "Otomatico generates B2B meetings for clients across multiple markets in Spanish, French, English, Portuguese, and Italian."
+    ],
+    "objections": [
+      "The platform requires a minimum target of 10 meetings, but you only pay for completed meetings if that target is not reached What if they don’t show up to the meeting?",
+      "What if the lead doesn’t match my Ideal Customer Profile?",
+      "If a lead doesn’t match your target audience, you can choose whether to proceed with the meeting or cancel it.",
+      "If the meeting is canceled, it will not be billed."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Precio por reunión o demo 80-110€ ¿Cuánto cuesta cerrar una reunión con un potencial cliente?El precio por reunión depende del Perfil de Cliente Ideal.",
+          "url": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+          "pageTitle": "Precio por lead B2B para Agencias - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Pagar por reunión Paga por obtener cada reunión sin costes de set up ni fees mensuales Agendar Llamada Precio por lead cualificado 20-110€ ¿Cuánto cuesta conseguir un lead cualificado para servicios de marketing y publicidad?El precio por lead cualificado depende del grado de interés y",
+          "url": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+          "pageTitle": "Precio por lead B2B para Agencias - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Ejemplo para calcular el ROI Si el coste del lead cualificado es de 60€ y el ratio de conversión para captar un cliente es del 25%, el coste de adquisición de un cliente es 240 €.",
+          "url": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+          "pageTitle": "Precio por lead B2B para Agencias - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Si el cliente paga una mensualidad de 800€ y permanece de media 1 año: el cliente pagará en total 9.600 € y nos ha costado 240 €: es rentable.",
+          "url": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+          "pageTitle": "Precio por lead B2B para Agencias - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Schedule a Call Pricing Log in Sign up Select Page Price per Meeting 90 – 180 € No setup costs or monthly fees Start What’s the price per qualified meeting?",
+          "url": "https://otomatico.com/pricing/",
+          "pageTitle": "Pricing - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Pricing ranges from €90 to €180 depending on the selected Ideal Customer Profile.",
+          "url": "https://otomatico.com/pricing/",
+          "pageTitle": "Pricing - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Example: how to calculate ROI If the conversion rate for a qualified lead worth €75 is 20%, the customer acquisition cost is €375.",
+          "url": "https://otomatico.com/pricing/",
+          "pageTitle": "Pricing - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "If that customer pays a €200 monthly subscription and stays for an average of 12 months, they’ll pay a total of €2,400 – and since acquiring them cost only €375, it’s profitable.",
+          "url": "https://otomatico.com/pricing/",
+          "pageTitle": "Pricing - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Programar una reunión Precios Iniciar sesión Crear Cuenta Seleccionar página Precio por Oportunidad 50 € – 160 € Solo pagas cuando un comprador validado solicita reunirse contigo Empezar ¿Cuánto cuesta una oportunidad cualificada?",
+          "url": "https://otomatico.com/es/precios/",
+          "pageTitle": "Precios - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Cuestan entre 50 € y 160 € según el Perfil de Cliente Ideal designado.",
+          "url": "https://otomatico.com/es/precios/",
+          "pageTitle": "Precios - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Ejemplo para calcular el ROI Si el ratio de conversión para un lead cualificado de 75€ es del 20%, el coste de adquisición de un cliente es 375 €.",
+          "url": "https://otomatico.com/es/precios/",
+          "pageTitle": "Precios - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        },
+        {
+          "text": "Si el cliente paga una suscripción mensual de 200€ y permanece de media 12 meses: el cliente pagará en total 2.400 € y nos ha costado 375€: es rentable.",
+          "url": "https://otomatico.com/es/precios/",
+          "pageTitle": "Precios - Otomatico",
+          "pageCategory": "pricing",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Choose how many meetings you want to receive each month on the platform Our top clients don’t limit the number of meetings or request more than 25 per month.",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        },
+        {
+          "text": "With Otomatico’s technology and proven results, our clients receive meetings with interested leads who have agreed to schedule a meeting at a specific date and time.",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Otomatico generates B2B meetings for clients across multiple markets in Spanish, French, English, Portuguese, and Italian.",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "No commitments.",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        },
+        {
+          "text": "The platform requires a minimum target of 10 meetings, but you only pay for completed meetings if that target is not reached What if they don’t show up to the meeting?",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        },
+        {
+          "text": "What if the lead doesn’t match my Ideal Customer Profile?",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        },
+        {
+          "text": "If a lead doesn’t match your target audience, you can choose whether to proceed with the meeting or cancel it.",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        },
+        {
+          "text": "If the meeting is canceled, it will not be billed.",
+          "url": "https://otomatico.com/",
+          "pageTitle": "Connect your product with Qualified B2B buyers - Otomatico",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "LinkedIn Ads",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+        "https://otomatico.com/es/calendly/",
+        "https://otomatico.com/es/terminos-y-condiciones-de-uso/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Precio por lead cualificado B2B para Agencias de marketing y publicidad",
+        "Empresa",
+        "Términos y Condiciones de uso",
+        "Price per Meeting"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Crear Cuenta",
+        "Calcular",
+        "Agendar Llamada",
+        "{title}",
+        "English",
+        "Español",
+        "Schedule a Call",
+        "Sign up"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/ · 5 campos",
+        "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/ · 5 campos",
+        "https://otomatico.com/pricing/ · 5 campos",
+        "https://otomatico.com/pricing/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Email",
+        "Agendar Llamada",
+        "{title}",
+        "English",
+        "Español",
+        "Schedule a Call",
+        "Schedule a Call"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de servicio/precio → llamada o formulario-calculadora → descubrimiento de ICP y oferta → guía de mensajes y escenarios → búsqueda/enriquecimiento de empresas y decisores → email personalizado"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://otomatico.com/es/precio-por-lead-cualificado-b2b-para-agencias-de-marketing-y-publicidad/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://otomatico.com/es/calendly/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://otomatico.com/es/terminos-y-condiciones-de-uso/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://otomatico.com/pricing/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://otomatico.com/es/precios/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://otomatico.com/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://otomatico.com/es/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://otomatico.com/es/otomatico-2/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR14744806603307876353/creative/CR02553338661399691265?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=145413508657459",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=otomatico.com",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Schedule a Call”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, Calendly) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

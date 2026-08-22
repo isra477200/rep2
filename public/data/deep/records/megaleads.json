@@ -1,0 +1,827 @@
+{
+  "id": "megaleads",
+  "name": "MegaLeads",
+  "reviewedAt": "2026-08-22T15:50:18.214Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Pay-per-lead opportunities for local professionals",
+    "heroObserved": true,
+    "priorSummary": "Pay-per-lead para contratistas sudafricanos: leads dirigidos por industria/área, entrega en tiempo real por WhatsApp, 1 crédito = 1 lead estándar; leads de mayor escala pueden costar fracciones o múltiples créditos. La distribución oficial actual indica un contratista a la vez; la venta no está garantizada.",
+    "voice": "Revisión manual: Aggressive, SEO-heavy, Repetitive, Performance-claim driven. Wasted ad spend No local opportunities Time spent marketing Low return on campaigns",
+    "supportingHeadings": [
+      "Pay Per Lead: The Simple Way to Get More Customers",
+      "Stop Wasting Money: Why Pay Per Lead is the Smart Choice for Your Business",
+      "What Are Pay Per Lead Services and How They Transform Your Business Growth",
+      "Understanding the Pay Per Lead Model",
+      "Why Traditional Marketing Falls Short",
+      "The Performance-Based Advantage",
+      "How Our Pay Per Lead System Delivers Results for South African Businesses",
+      "Our Lead Qualification Process",
+      "Real-Time Lead Delivery and CRM Integration",
+      "Quality Assurance and Lead Scoring Methods",
+      "Proven Benefits of Our Performance-Based Lead Generation",
+      "Guaranteed Return on Investment",
+      "Predictable Lead Costs and Budget Control",
+      "Scalable Business Growth Solutions",
+      "Risk-Free Marketing Investment",
+      "Comprehensive Industry Coverage Across South Africa",
+      "Professional Services and B2B Lead Generation",
+      "Home Services and Trade Industries",
+      "Financial Services and Insurance Sectors",
+      "Technology and Specialised Services",
+      "Why MegaLeads Is Your Trusted Lead Generation Partner",
+      "Local South African Market Expertise",
+      "Exclusive Territory Coverage and Lead Protection",
+      "Advanced Lead Generation Technology",
+      "Dedicated Account Management and Support",
+      "Transform Your Business Growth with South Africa’s Premier Pay Per Lead Agency",
+      "📍 CHECK IF YOUR AREA IS AVAILABLE",
+      "Get Started.SIGNUP NOW!",
+      "WhatsApp",
+      "Email"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://megaleads.co.za/",
+      "text": "Contact",
+      "href": "https://megaleads.co.za/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact Us",
+      "Contact Us Now →",
+      "Contact MegaLeads",
+      "Contact Sales Team",
+      "WhatsApp 061 920 8075",
+      "WhatsApp Us: 061 920 8075",
+      "Start Getting Jobs Like This",
+      "Register",
+      "GET MY LEADS",
+      "SEND MESSAGE",
+      "JOIN AS A PRO",
+      "Join as a pro",
+      "Join as a Pro",
+      "MegaLeads home",
+      "Register as a Pro",
+      "Become a Verified Pro",
+      "Claim Your Territory →"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://megaleads.co.za/pay-per-lead/",
+        "index": 1,
+        "action": "https://megaleads.co.za/pay-per-lead/",
+        "method": "POST",
+        "submitText": "GET MY LEADS",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fname",
+            "label": "Full Name",
+            "placeholder": "e.g. Johan Smith",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "trade",
+            "label": null,
+            "placeholder": "e.g. Plumbing & Geysers",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "WhatsApp Number",
+            "placeholder": "e.g. 082 123 4567",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "city",
+            "label": "Your City / Suburb",
+            "placeholder": "e.g. Sandton, Gauteng",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://megaleads.co.za/contact/",
+        "index": 1,
+        "action": "https://megaleads.co.za/contact/",
+        "method": "POST",
+        "submitText": "SEND MESSAGE",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fname",
+            "label": "Full Name *",
+            "placeholder": "e.g. Johan Smith",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel",
+            "label": "WhatsApp Number *",
+            "placeholder": "e.g. 082 123 4567",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email Address *",
+            "placeholder": "e.g. johan@example.co.za",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "How can we help? *",
+            "placeholder": "Tell us a bit about your business and lead requirements...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 4 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Your City / Suburb.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 4,
+      "qualification": [
+        "Your City / Suburb"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Pay-per-lead para contratistas sudafricanos: leads dirigidos por industria/área, entrega en tiempo real por WhatsApp, 1 crédito = 1 lead estándar; leads de mayor escala pueden costar fracciones o múltiples créditos. La distribución oficial actual indica un contratista a la vez; la venta no está garantizada.",
+    "audience": "Sudáfrica; home services y oficios, servicios profesionales, finanzas/seguros, salud, educación y tecnología.",
+    "prices": [],
+    "guarantee": [
+      "Should you not be happy after 90 days we will refund you for your remaining credits.",
+      "However, if a lead has a disconnected number, is outside your chosen area, or is looking for a service you don’t offer, we will refund that credit back to your account.",
+      "You only pay for quality results, making our service risk-free.",
+      "Legitimacy & Guarantees 2.",
+      "Legitimacy & Guarantees What is Pay Per Lead?",
+      "Does Mega Leads offer a Money-Back Guarantee?"
+    ],
+    "proof": [
+      "OUR SOLUTIONS Comprehensive Lead Generation Services That Drive Results MegaLeads offers top-notch lead generation services managed from start to finish.",
+      "Full Name Main Trade WhatsApp Number Your City / Suburb Takes 30 seconds •No credit card required 100% secure & POPIA compliant - no spam, ever THE ENGINE LEADS IN 3SIMPLE STEPS We run targeted ads in your area to attract ready-to-book customers – then",
+      "3 QUOTE & WIN MORE JOBS Be first to respond, quote quickly, and turn leads into paying customers.",
+      "Conservative25% Realistic40% Optimistic75% Nearly half close — typical for fast responders with strong reviews.",
+      "Start Getting Jobs Like This VERIFIED REVIEWS WHAT OUR PROS SAY J Johan Venter Plumbing Contractor, Pretoria ★★★★★ “I bought a R3,000 credit package and closed a R45,000 solar geyser job on the second day.",
+      "We use a multi-channel approach combining proven strategies with cutting-edge tech to reach potential customers across various touchpoints."
+    ],
+    "objections": [
+      "ARE THERE MONTHLY CONTRACTS OR FEES?",
+      "+ No monthly contracts, no membership fees, and absolutely zero commission on your jobs.",
+      "Can I cancel my package and receive a refund?",
+      "Calculate Your ROI See How It Works AREA EXCLUSIVITY: We work with a maximum of 3 contractors per suburb to maintain lead quality.",
+      "Contractors who reply within 5 minutes close significantly more leads.",
+      "Secured a R15,000 rewiring job within 5 minutes of the ping because I was the only one calling them.” FREQUENTLY ASKED QUESTIONS Everything you need to know about scaling your SA service business.",
+      "Your package may only be cancelled if you do not receive any leads after 90 days.",
+      "AREA EXCLUSIVITY: We work with a maximum of 3 contractors per suburb to maintain lead quality."
+    ],
+    "urgency": [
+      "Our approach blends local market knowledge with advanced technology, ensuring you only pay for real results.",
+      "Secured a R15,000 rewiring job within 5 minutes of the ping because I was the only one calling them.” FREQUENTLY ASKED QUESTIONS Everything you need to know about scaling your SA service business.",
+      "You invest confidently, knowing each lead represents a genuine sales opportunity.",
+      "Home Services and Trade Industries Home services need quick responses and local know-how.",
+      "As a lead generation agency, we know tech buyers need detailed specs and proof of concept.",
+      "This knowledge helps us create roi-focused lead generation campaigns that connect with your audience."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "However, if a lead has a disconnected number, is outside your chosen area, or is looking for a service you don’t offer, we will refund that credit back to your account.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "You only pay for quality results, making our service risk-free.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Legitimacy & Guarantees 2.",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Legitimacy & Guarantees What is Pay Per Lead?",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Does Mega Leads offer a Money-Back Guarantee?",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Should you not be happy after 90 days we will refund you for your remaining credits.",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Do we guarantee a set amount of Leads?",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Nothing in life is guaranteed.",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Full Name Main Trade WhatsApp Number Your City / Suburb Takes 30 seconds •No credit card required 100% secure & POPIA compliant - no spam, ever THE ENGINE LEADS IN 3SIMPLE STEPS We run targeted ads in your area to attract ready-to-book customers – then",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "3 QUOTE & WIN MORE JOBS Be first to respond, quote quickly, and turn leads into paying customers.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Conservative25% Realistic40% Optimistic75% Nearly half close — typical for fast responders with strong reviews.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Start Getting Jobs Like This VERIFIED REVIEWS WHAT OUR PROS SAY J Johan Venter Plumbing Contractor, Pretoria ★★★★★ “I bought a R3,000 credit package and closed a R45,000 solar geyser job on the second day.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Follow Us PLATFORMHow it Works ROI Calculator Contractor Reviews SUPPORTFAQ Client Love Contact Join as a pro LEGALTerms & Conditions Privacy Policy POPIA Compliance SECURE CHECKOUT PAYFAST OZOW EFT SECURE ✓ POPIA COMPLIANT © 2026 MegaLeads.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "OUR SOLUTIONS Comprehensive Lead Generation Services That Drive Results MegaLeads offers top-notch lead generation services managed from start to finish.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We use a multi-channel approach combining proven strategies with cutting-edge tech to reach potential customers across various touchpoints.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "PPC Campaigns Target ideal customers when they search for your offerings.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Includes Rank & Rent Solutions Transform Your Business Growth Today Stop worrying about where your next customers will come from.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We create strategic campaigns that capture high-quality ppc leads ready to become customers.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Our approach ensures you only pay for leads that become customers.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We use audience targeting & segmentation to find ideal customers across channels.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Calculate Your ROI See How It Works AREA EXCLUSIVITY: We work with a maximum of 3 contractors per suburb to maintain lead quality.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Contractors who reply within 5 minutes close significantly more leads.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Start Getting Jobs Like This VERIFIED REVIEWS WHAT OUR PROS SAY J Johan Venter Plumbing Contractor, Pretoria ★★★★★ “I bought a R3,000 credit package and closed a R45,000 solar geyser job on the second day.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Secured a R15,000 rewiring job within 5 minutes of the ping because I was the only one calling them.” FREQUENTLY ASKED QUESTIONS Everything you need to know about scaling your SA service business.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "ARE THERE MONTHLY CONTRACTS OR FEES?",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "+ No monthly contracts, no membership fees, and absolutely zero commission on your jobs.",
+          "url": "https://megaleads.co.za/",
+          "pageTitle": "MegaLeads SA - Buy LEADS & Grow your Business today!",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Register as a Pro Contact Sales Team Connecting elite South African contractors with premium, high-intent residential and commercial job leads.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Follow Us PLATFORMHow it Works ROI Calculator Contractor Reviews SUPPORTFAQ Client Love Contact Join as a pro LEGALTerms & Conditions Privacy Policy POPIA Compliance SECURE CHECKOUT PAYFAST OZOW EFT SECURE ✓ POPIA COMPLIANT © 2026 MegaLeads.",
+          "url": "https://megaleads.co.za/services/",
+          "pageTitle": "Services -",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Am I bound to any contract?",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "There is no contract.",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "We are more than happy to do a Zoom or WhatsApp video call to answer all your questions.",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Can I cancel my package and receive a refund?",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Your package may only be cancelled if you do not receive any leads after 90 days.",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Does Mega Leads reserve the right to cancel your package?",
+          "url": "https://megaleads.co.za/faq/",
+          "pageTitle": "Faq -",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "This commitment ensures lasting success in South Africa’s dynamic market.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "AREA EXCLUSIVITY: We work with a maximum of 3 contractors per suburb to maintain lead quality.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Full Name Main Trade WhatsApp Number Your City / Suburb Takes 30 seconds •No credit card required 100% secure & POPIA compliant - no spam, ever Connecting elite South African contractors with premium, high-intent residential and commercial job leads.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Follow Us PLATFORMHow it Works ROI Calculator Contractor Reviews SUPPORTFAQ Client Love Contact Join as a pro LEGALTerms & Conditions Privacy Policy POPIA Compliance SECURE CHECKOUT PAYFAST OZOW EFT SECURE ✓ POPIA COMPLIANT © 2026 MegaLeads.",
+          "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+          "pageTitle": "Pay-Per-Click (PPC) Lead Generation Campaigns | MegaLeads",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "Email",
+        "WhatsApp",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://megaleads.co.za/pay-per-lead/",
+        "https://megaleads.co.za/contact/",
+        "https://megaleads.co.za/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Pay Per Lead: The Simple Way to Get More Customers",
+        "Get Started.SIGNUP NOW!",
+        "QUALITY LEADS.STRAIGHT TO YOUR WHATSAPP.",
+        "Boost Your Sales with the Right Lead Generation Services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "JOIN AS A PRO",
+        "Contact Us",
+        "GET MY LEADS",
+        "Join as a pro",
+        "WhatsApp Us: 061 920 8075",
+        "WhatsApp 061 920 8075",
+        "SEND MESSAGE"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://megaleads.co.za/pay-per-lead/ · 4 campos",
+        "https://megaleads.co.za/contact/ · 4 campos",
+        "https://megaleads.co.za/ · 4 campos",
+        "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "1) El contratista elige sector, servicio y territorio y recarga créditos; no hay cuota mensual anunciada. 2) MegaLeads capta solicitudes con anuncios segmentados. 3) Recoge nombre, teléfono, suburbio"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Performance landing [observed] → Provider inquiry [observed] → Vetting [observed] → Credit purchase [observed] → Trade and area match [observed] → Automatic WhatsApp delivery [observed] → Provider close [observed]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://megaleads.co.za/pay-per-lead/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://megaleads.co.za/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://megaleads.co.za/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://megaleads.co.za/services/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://megaleads.co.za/faq/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://megaleads.co.za/about/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://megaleads.co.za/pay-per-click-ppc-lead-generation-campaigns/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://megaleads.co.za/terms/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=megaleads.co.za",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "Pay-per-lead opportunities for local professionals",
+      "promise": "Receive matching requests for quotes in a chosen trade and area without paying for conventional advertising.",
+      "positioning": "MegaLeads presents prepaid lead credits as a low-risk alternative to managing advertising.",
+      "audience": "Local trade professionals · Providers able to contact quote requests quickly · Businesses comfortable prepaying credits",
+      "voice": [
+        "Aggressive",
+        "SEO-heavy",
+        "Repetitive",
+        "Performance-claim driven"
+      ],
+      "patterns": [
+        "Wasted ad spend",
+        "No local opportunities",
+        "Time spent marketing",
+        "Low return on campaigns"
+      ]
+    },
+    "cta": {
+      "primary": "Check your area",
+      "secondary": [
+        "Join as a pro",
+        "WhatsApp"
+      ],
+      "forms": [
+        {
+          "url": "https://megaleads.co.za/pay-per-lead/",
+          "purpose": "Check eligibility or join",
+          "fields": [
+            "Name",
+            "Trade",
+            "Phone",
+            "City"
+          ],
+          "fieldCount": 4,
+          "friction": "WhatsApp was also a prominent route.",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Performance landing",
+        "status": "observed",
+        "detail": "The page emphasizes ROI, area availability and pay-per-lead economics."
+      },
+      {
+        "stage": "Provider inquiry",
+        "status": "observed",
+        "detail": "Name, trade, phone and city begin vetting."
+      },
+      {
+        "stage": "Vetting",
+        "status": "observed",
+        "detail": "The provider supplies company documents before acceptance."
+      },
+      {
+        "stage": "Credit purchase",
+        "status": "observed",
+        "detail": "Credits are prepaid before lead delivery."
+      },
+      {
+        "stage": "Trade and area match",
+        "status": "observed",
+        "detail": "The provider profile determines which lead requests match."
+      },
+      {
+        "stage": "Automatic WhatsApp delivery",
+        "status": "observed",
+        "detail": "A matching request is sent and credits are deducted automatically."
+      },
+      {
+        "stage": "Provider close",
+        "status": "observed",
+        "detail": "The provider contacts, quotes and closes the consumer."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "Prepaid credit model",
+        "Exact current package price not reverified",
+        "One or more credits may be deducted depending on service"
+      ],
+      "contract": [
+        "Matched leads are automatically sent and charged",
+        "A matching provider cannot decline before deduction",
+        "A balance refund may apply if no leads arrive for 90 days",
+        "Recredit requests require documented evidence and stated defect conditions"
+      ],
+      "guarantee": [
+        "Marketing uses strong ROI language, while FAQ and terms do not guarantee jobs, sales or lead volume."
+      ]
+    },
+    "proof": [
+      "Strong outcome claims",
+      "No independent audit of ROI was visible on the reviewed path"
+    ],
+    "objections": [
+      "Ad-spend risk",
+      "Wrong industry or area",
+      "Unresponsive lead",
+      "No lead volume",
+      "Refund of unused balance"
+    ],
+    "technology": [
+      "WordPress",
+      "Contact Form 7",
+      "WhatsApp"
+    ],
+    "contradictions": [
+      "guarantee-conflict — This is a material conflict between acquisition copy and legal reality. — The landing uses guaranteed ROI, guaranteed results and risk-free language. — FAQ and terms do not guarantee jobs, sales or lead volume.",
+      "credit-expiry-conflict — Credit persistence is internally inconsistent. — FAQ and parts of the terms say credits do not expire. — The terms also say a pause longer than 14 days can forfeit remaining credits.",
+      "localization-error — The currency mismatch signals recycled copy and reduces trust. — A South African page referred to every pound spent. — The market uses South African rand.",
+      "pricing-drift — Do not publish it as current without a dated live source. — A prior dataset referenced R45. — That exact current unit price was not confirmed."
+    ],
+    "inferences": [
+      "Automatic deduction transfers matching risk from the marketplace to the provider. — confidence: high — basis: Terms state that a matched lead is sent and charged without a pre-acceptance choice.",
+      "The recredit documentation burden is designed to limit refund leakage. — confidence: high — basis: Call recordings, screenshots and multiple attempts are required for some disputes."
+    ],
+    "notObservable": [
+      "Exact current credit packages",
+      "Post-submission vetting",
+      "Provider dashboard",
+      "Lead-quality distribution",
+      "Actual recredit adjudication"
+    ],
+    "limitations": [
+      "No form or WhatsApp action was completed.",
+      "Pricing was not currently public enough to reverify the historical figure.",
+      "Outcome claims were not independently audited."
+    ],
+    "lessons": {
+      "copy": [
+        "Audit landing claims against FAQ and terms",
+        "Define a lead as a request for quote rather than a sale",
+        "Publish invalid-lead and recredit criteria",
+        "Explain automatic charges before purchase"
+      ],
+      "adapt": [],
+      "avoid": [
+        "Guaranteed ROI language when terms reject outcomes",
+        "Contradictory credit-expiry rules",
+        "Localization and currency errors",
+        "Automatic deduction hidden in fine print"
+      ],
+      "test": [
+        "Pre-acceptance lead preview versus automatic delivery",
+        "A simple dispute workflow with visible evidence requirements"
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://megaleads.co.za/pay-per-lead/",
+        "label": "service-landing",
+        "status": "observado"
+      },
+      {
+        "url": "https://megaleads.co.za/faq/",
+        "label": "faq",
+        "status": "observado"
+      },
+      {
+        "url": "https://megaleads.co.za/terms/",
+        "label": "terms",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

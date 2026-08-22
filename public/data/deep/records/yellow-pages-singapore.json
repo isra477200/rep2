@@ -1,0 +1,762 @@
+{
+  "id": "yellow-pages-singapore",
+  "name": "Yellow Pages Singapore",
+  "reviewedAt": "2026-08-22T15:50:19.020Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Car Servicing in Singapore",
+    "heroObserved": true,
+    "priorSummary": "Empresa reclama/verifica ficha, contrata plan y obtiene visibilidad; el consumidor busca contenidos y empresas. La verificación declarada tarda 3–5 días laborables.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 62 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 763 palabras por página comercial recuperada. Muestras breves: “Contact” · “Car Servicing in Singapore” · “Advertise with Us”.",
+    "supportingHeadings": [
+      "About Us",
+      "About YP",
+      "Our Mission",
+      "YP = Business + Content Discovery",
+      ">120,000 Businesses",
+      "Discover Content",
+      "Company Page",
+      "Content Marketing",
+      "Display Ads",
+      "Advertise With YP",
+      "Google Partner",
+      "Information",
+      "Quick Links",
+      "Related Sites",
+      "Contact",
+      "Yellow Pages Pte Ltd",
+      "Hotlines:",
+      "Contact Us",
+      "Car Servicing in Singapore",
+      "What Entails Automobile Servicing?",
+      "Types of Automobile Services & Products",
+      "Best Automobile Servicing & Retail Companies in Singapore",
+      "Car Body Repair",
+      "Car Coating",
+      "Car Inspection",
+      "Car Servicing",
+      "Car Polishing",
+      "Car Towing Service",
+      "Automotives Repairs & Servicing",
+      "Car & Vehicle Wrecking"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.yellowpages.com.sg/about-us/",
+      "text": "Contact Us",
+      "href": "https://www.yellowpages.com.sg/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Contact Us Today",
+      "Contact Us to find out how you can leap frog your business today.",
+      "Call",
+      "Call Now",
+      "Send",
+      "Submit",
+      "Linkedin",
+      "Whats App",
+      "Signup & Submit Review"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.yellowpages.com.sg/contact/",
+        "index": 3,
+        "action": "https://www.yellowpages.com.sg/contact/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "*Name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Company-Name",
+            "label": "Company Name(if any)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "MobileNo",
+            "label": "*Mobile",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "*Email",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox-78[]",
+            "label": "Advertise with Yellow Pages",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Your message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox-779[]",
+            "label": "I acknowledge that I have read and understood the below Data Protection",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpages.com.sg/advertise-with-us/",
+        "index": 3,
+        "action": "https://www.yellowpages.com.sg/advertise-with-us/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "select",
+            "name": "Salutation",
+            "label": "Salutation MrMissMrs",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "*First Name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "last-name",
+            "label": "*Last Name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "ContactNumber",
+            "label": "*Contact Number",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "*Email Address",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "designation",
+            "label": "*Designation",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company-name",
+            "label": "*Company Name",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company-website",
+            "label": "*Company Website",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox-78[]",
+            "label": "Advertise with Yellow Pages",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "enquiry-message",
+            "label": "*Enquiry Message",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-consent",
+            "label": "I acknowledge that I have read and understood the below Data Protection",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+        "index": 2,
+        "action": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Name:",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email6",
+            "label": null,
+            "placeholder": "Email:",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message1",
+            "label": null,
+            "placeholder": "Message:",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+        "index": 4,
+        "action": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "secd-name",
+            "label": null,
+            "placeholder": "Name *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "secd-email",
+            "label": null,
+            "placeholder": "Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "secd-phone",
+            "label": null,
+            "placeholder": "Contact Number *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "secd-company",
+            "label": null,
+            "placeholder": "Company(if any)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Your message (optional)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "secd-sendto",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "your-consent",
+            "label": "I acknowledge that I have read and understood the below Data Protection",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+        "index": 5,
+        "action": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+        "method": "POST",
+        "submitText": "Signup & Submit Review",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "email",
+            "name": "u_mail",
+            "label": "Email*",
+            "placeholder": "you@website.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "post_title",
+            "label": "Title*",
+            "placeholder": "Example: It was an awesome experience to be there",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "post_description",
+            "label": "Review*",
+            "placeholder": "Tip: A great review covers food, service, and ambiance. Got recommendations for",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpages.com.sg/list-tags/bookkeeping-services/",
+        "index": 3,
+        "action": "https://www.yellowpages.com.sg/list-tags/bookkeeping-services/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 17,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "eq-name",
+            "label": null,
+            "placeholder": "Name *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "eq-email",
+            "label": null,
+            "placeholder": "Email address *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "eq-contact",
+            "label": null,
+            "placeholder": "Contact Number *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "eq-company",
+            "label": null,
+            "placeholder": "Company Name *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox-838[]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "eq-subject",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-1",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-2",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-3",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-4",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-5",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-6",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-7",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-8",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-9",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "cemail-10",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-760",
+            "label": "I acknowledge that I have read and understand the Data Protection Policy,",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "6 diseño(s) de formulario distinto(s); entre 3 y 17 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Company Name(if any), *Company Name, *Company Website, secd-company, eq-company.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 17,
+      "qualification": [
+        "Company Name(if any)",
+        "*Company Name",
+        "*Company Website",
+        "secd-company",
+        "eq-company"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Empresa reclama/verifica ficha, contrata plan y obtiene visibilidad; el consumidor busca contenidos y empresas. La verificación declarada tarda 3–5 días laborables.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Is your business missing out to thousands of potential customers?Do you wish to generate more business leads?Yellow Pages is a trusted online platforms for people and businesses to connect and get things done."
+    ],
+    "objections": [],
+    "urgency": [
+      "…Engine Marketing (Google Adwords)Social Media Marketing (Facebook)Change of Company InformationOthers Your message I acknowledge that I have read and understood the below Data Protection Notice, and consent to the collection, use and disclosure of my personal data by Yellow Pages Pte Ltd for the purpos…",
+      "Company Page Do you know that 92% of consumers read online reviews?",
+      "Advertiser Enquiries: +65 6230 8277Generate more leads today boost your company awareness.",
+      "About Us Home About Us About YP You’ve known us as that thick Yellow Book for decades, but we’ve come a long way.",
+      "Get found and start collecting quality leads today!",
+      "Contact Us Today YP is a new way for people and businesses to connect and get things done."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Is your business missing out to thousands of potential customers?Do you wish to generate more business leads?Yellow Pages is a trusted online platforms for people and businesses to connect and get things done.",
+          "url": "https://www.yellowpages.com.sg/categories/automobile-services/",
+          "pageTitle": "Best Car Servicing Companies in Singapore | Yellow Pages Singapore",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.yellowpages.com.sg/about-us/",
+        "https://www.yellowpages.com.sg/contact/",
+        "https://www.yellowpages.com.sg/categories/automobile-services/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Car Servicing in Singapore",
+        "Advertise with Us",
+        "Accounting Services in Singapore"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Contact Us Today",
+        "Submit",
+        "Contact Us to find out how you can leap frog your business today.",
+        "Linkedin",
+        "Call",
+        "Send",
+        "Signup & Submit Review"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.yellowpages.com.sg/contact/ · 7 campos",
+        "https://www.yellowpages.com.sg/advertise-with-us/ · 11 campos",
+        "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/ · 3 campos",
+        "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.yellowpages.com.sg/about-us/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.yellowpages.com.sg/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.yellowpages.com.sg/categories/automobile-services/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.yellowpages.com.sg/advertise-with-us/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.yellowpages.com.sg/categories/accounting/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.yellowpages.com.sg/listing/acs-management-consultants-pte-ltd/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.yellowpages.com.sg/list-tags/bookkeeping-services/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://listing.yellowpages.com.sg/sme-plus-plan/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://listing.yellowpages.com.sg/wp-content/uploads/2023/04/Claim-listing-ownership-on-SME-Business-Directory.pdf",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

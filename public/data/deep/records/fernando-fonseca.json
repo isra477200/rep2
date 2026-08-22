@@ -1,0 +1,461 @@
+{
+  "id": "fernando-fonseca",
+  "name": "Fernando Fonseca",
+  "reviewedAt": "2026-08-22T15:50:19.406Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Milagreiros ou Gurus autoproclamados?",
+    "heroObserved": true,
+    "priorSummary": "Paquetes escalonados de marketing; Business añade Google o Meta, campañas, landing y reporting de leads/CPL; Top combina canales y SEO/email.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 221 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1164 palabras por página comercial recuperada. Muestras breves: “Milagreiros ou Gurus autoproclamados?” · “Contactos” · “Marketing Digital Imobiliário: Redes, Website, SEO e Imóveis sempre em destaque”.",
+    "supportingHeadings": [
+      "Para negócios que querem crescer sem promessas vazias",
+      "Milagreiros ou Gurus autoproclamados?",
+      "Transforme o seu marketing digital numa máquina previsível de oportunidades",
+      "Benefícios para o seu negócio",
+      "Marketing digital em Números",
+      "8 em cada 10 decisões começam online",
+      "Mais de 60% das empresas já investem no digital",
+      "Empresas com estratégia geram mais leads",
+      "Conteúdo + anúncios reduz o custo por lead",
+      "Escolha entre 4 Planos de Marketing Digital",
+      "Menos custos fixos, mais previsibilidade",
+      "Acesso a senioridade sem contratar em full-time",
+      "Planos de Marketing Digital",
+      "BASIC – Fundamentos de Marketing Digital",
+      "BUSINESS – Marketing Digital + Tráfego Pago",
+      "TOP – Crescimento Acelerado (SEO, Ads, Conteúdo & Email)",
+      "Plano Personalizado de Marketing Digital",
+      "O que está incluído em TODOS os planos",
+      "Opções & Condições Adicionais",
+      "Descontos de pagamento",
+      "Investimento em anúncios",
+      "Trabalho com a sua equipa",
+      "Pronto para tratar o marketing digital do seu negócio com seriedade?",
+      "vamos conversar",
+      "O que dizem",
+      "os meus clientes?",
+      "Katia F.Medica Dent.",
+      "Nelson PintoCert. Accountant",
+      "Celine CapouDir. Agen. Com.",
+      "Ultimos artigos"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contacto",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://fernandofonseca.pt/digital-marketing-services/",
+      "text": "Contacto",
+      "href": "https://fernandofonseca.pt/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223
+    },
+    "ctas": [
+      "Contacto",
+      "Contactos",
+      "Pedir contacto",
+      "Quero mais contactos para o meu stand",
+      "Quero saber mais sobre o TOP",
+      "Quero saber mais sobre o BASIC",
+      "Quero saber mais sobre o BUSINESS",
+      "Quero saber mais sobre o DRIVE BASIC",
+      "Quero saber mais sobre o DRIVE ROCKET",
+      "Quero saber mais sobre o DRIVE BUSINESS",
+      "Serviços",
+      "Quero começar já",
+      "Quero este plano TOP",
+      "Quero este plano BASIC",
+      "Quero um plano à medida",
+      "Quero detalhes do BASIC",
+      "Quero este plano GROWTH",
+      "Quero detalhes do GROWTH",
+      "Quero este plano PREMIUM",
+      "Quero este plano BUSINESS",
+      "Quero detalhes do PREMIUM",
+      "Quero este plano DRIVE BASIC",
+      "Quero este plano DRIVE ROCKET",
+      "Quero falar sobre o meu stand",
+      "Quero falar sobre o meu negócio",
+      "Quero este plano DRIVE BUSINESS",
+      "Quero esclarecer algumas dúvidas",
+      "Preciso de ajuda a escolher o plano",
+      "Quero mais leads para a minha agência",
+      "Tenho dúvidas, mas quero perceber melhor"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://fernandofonseca.pt/digital-marketing-services/",
+        "index": 2,
+        "action": "https://fernandofonseca.pt/digital-marketing-services/",
+        "method": "POST",
+        "submitText": "Pedir contacto",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nome",
+            "label": null,
+            "placeholder": "Nome",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "telefone",
+            "label": null,
+            "placeholder": "Telemóvel",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": null,
+            "placeholder": "Nome da empresa / marca",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "area-negocio",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": "Website (Se tiver)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensagem",
+            "label": null,
+            "placeholder": "Fale-me do seu negócio, dos desafios e do que pretende alcançar com",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://fernandofonseca.pt/2023/11/14/reimagining-our-digital-marketing-blog-a-fresh-journey/",
+        "index": 1,
+        "action": "https://fernandofonseca.pt/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Enviar comentário",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "author",
+            "label": null,
+            "placeholder": "Your Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guardar o meu nome, email e site neste navegador para a próxima",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "label": null,
+            "placeholder": "Your Website",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": null,
+            "placeholder": "Your comment...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 7 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: empresa, area-negocio, website.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 7,
+      "qualification": [
+        "empresa",
+        "area-negocio",
+        "website"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Paquetes escalonados de marketing; Business añade Google o Meta, campañas, landing y reporting de leads/CPL; Top combina canales y SEO/email.",
+    "audience": "Pymes portuguesas.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "…(palavras-chave, públicos, segmentações) Criação/otimização de 1 landing page focada em conversão Relatório mensal com resultados: leads, contactos, custo por lead, etc.",
+      "Quero começar já Preciso de ajuda a escolher o plano Obtenha um orçamento gratuito vamos conversar Selecione a área de negócioRestauraçãoImobiliárioTurismo e hotelariaServiçosE-commerceSaúde e bem-estarEducaçãoOutro Δ Feedback O que dizem os meus clientes?"
+    ],
+    "objections": [
+      "…a Restaurantes Planos de Marketing Para Stands Planos de Marketing Digital para PME’s Portfolio Sobre mim Contacto Blog FAQ'S - Fernando Fonseca - Serviços de Marketing Digital e RP InicioFAQ’S faq's Need Any Help ?",
+      "Read our Frequently Asked Questions Where am I based?"
+    ],
+    "urgency": [
+      "In order to satisfy that need I need to know what are your needs, what funtionalities you actualy require and what is the amount of work needed in order to give you a fair price.Website prices vary from a few thousand Euros to, in some",
+      "Your Go-To Spot for Home, Family, and Trending Items Fernando Novembro 14, 2023 Re-imagining the Digital Marketing Blog: A Fresh new start!",
+      "Promoção por tempo limitado.",
+      "Promoção válida por tempo limitado, aplicada durante todo o período contratado.",
+      "Your Go-To Spot for Home, Family, and Trending Items Excited to share the upcoming launch of my latest project – Siiee!",
+      "The blueprint for our rejuvenated blog involves an enriched repertoire of articles, each a beacon of knowledge and practical wisdom."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…(palavras-chave, públicos, segmentações) Criação/otimização de 1 landing page focada em conversão Relatório mensal com resultados: leads, contactos, custo por lead, etc.",
+          "url": "https://fernandofonseca.pt/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services - Fernando Fonseca - Serviços de Marketing Digital e RP",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Quero começar já Preciso de ajuda a escolher o plano Obtenha um orçamento gratuito vamos conversar Selecione a área de negócioRestauraçãoImobiliárioTurismo e hotelariaServiçosE-commerceSaúde e bem-estarEducaçãoOutro Δ Feedback O que dizem os meus clientes?",
+          "url": "https://fernandofonseca.pt/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services - Fernando Fonseca - Serviços de Marketing Digital e RP",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Politica de Privacidade FAQ's Contacto",
+          "url": "https://fernandofonseca.pt/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services - Fernando Fonseca - Serviços de Marketing Digital e RP",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…a Restaurantes Planos de Marketing Para Stands Planos de Marketing Digital para PME’s Portfolio Sobre mim Contacto Blog FAQ'S - Fernando Fonseca - Serviços de Marketing Digital e RP InicioFAQ’S faq's Need Any Help ?",
+          "url": "https://fernandofonseca.pt/faqs/",
+          "pageTitle": "FAQ'S - Fernando Fonseca - Serviços de Marketing Digital e RP",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Read our Frequently Asked Questions Where am I based?",
+          "url": "https://fernandofonseca.pt/faqs/",
+          "pageTitle": "FAQ'S - Fernando Fonseca - Serviços de Marketing Digital e RP",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Politica de Privacidade FAQ's Contacto",
+          "url": "https://fernandofonseca.pt/faqs/",
+          "pageTitle": "FAQ'S - Fernando Fonseca - Serviços de Marketing Digital e RP",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://fernandofonseca.pt/digital-marketing-services/",
+        "https://fernandofonseca.pt/contact/",
+        "https://fernandofonseca.pt/pacotes-de-marketing-para-imobiliarias/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Milagreiros ou Gurus autoproclamados?",
+        "Contactos",
+        "Marketing Digital Imobiliário: Redes, Website, SEO e Imóveis sempre em destaque",
+        "Marketing digital para stands que querem viver de leads (não só de placas “vende-se”)"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Quero falar sobre o meu negócio",
+        "Quero este plano BASIC",
+        "Quero saber mais sobre o BASIC",
+        "Quero este plano BUSINESS",
+        "Quero saber mais sobre o BUSINESS",
+        "Quero este plano TOP",
+        "Quero saber mais sobre o TOP"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://fernandofonseca.pt/digital-marketing-services/ · 7 campos",
+        "https://fernandofonseca.pt/contact/ · 7 campos",
+        "https://fernandofonseca.pt/pacotes-de-marketing-para-imobiliarias/ · 7 campos",
+        "https://fernandofonseca.pt/faqs/ · 7 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por página de servicios/planes → elección Basic, Business, Top o personalizado → contacto/orçamento → diagnóstico del modelo de negocio, sector, competencia y ciclo de venta → estrategia"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://fernandofonseca.pt/digital-marketing-services/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://fernandofonseca.pt/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://fernandofonseca.pt/pacotes-de-marketing-para-imobiliarias/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://fernandofonseca.pt/planos-de-marketing-para-stands/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://fernandofonseca.pt/faqs/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://fernandofonseca.pt/about-me/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://fernandofonseca.pt/2023/11/14/reimagining-our-digital-marketing-blog-a-fresh-journey/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contacto”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

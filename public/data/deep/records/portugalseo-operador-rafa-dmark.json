@@ -1,0 +1,492 @@
+{
+  "id": "portugalseo-operador-rafa-dmark",
+  "name": "PortugalSEO / operador Rafa–Dmark",
+  "reviewedAt": "2026-08-22T15:50:17.350Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Auditoria SEO",
+    "heroObserved": true,
+    "priorSummary": "SEO, Google Ads, contenido educativo, funnels de conversión y campañas en redes para empresas de energía solar",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 457 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1462 palabras por página comercial recuperada. Muestras breves: “Marketing Digital para Empresas de Energia Solar” · “Auditoria SEO” · “Consultoria SEO”.",
+    "supportingHeadings": [
+      "Marketing Digital para Empresas de Energia Solar",
+      "Desafios do Marketing Digital para Energia Solar",
+      "Educação do Mercado",
+      "Ciclos de Venda Longos",
+      "Concorrência com Utilities Estabelecidas",
+      "Serviços de Marketing Digital para Empresas de Energia Solar",
+      "SEO para Termos de Energia Solar",
+      "Google Ads para Instalação Solar",
+      "Conteúdo Educativo e Calculadoras de Poupança",
+      "Funis de Geração de Leads",
+      "Campanhas de Sensibilização (Facebook e Instagram)",
+      "Outreach B2B para Solar Comercial",
+      "Benefícios do Marketing Digital para Energia Solar",
+      "Geração de Leads Qualificados",
+      "Educação e Autoridade no Mercado",
+      "Posicionamento Competitivo",
+      "Como Funciona o Nosso Processo?",
+      "Análise & Auditoria",
+      "Estratégia & Planeamento",
+      "Implementação & Otimização",
+      "Crescimento & Escala",
+      "Resultados Reais no Seu Setor",
+      "Leads Qualificados",
+      "Tráfego Orgânico",
+      "Custo por Lead",
+      "Perguntas Frequentes",
+      "Agende a Sua Consulta Gratuita",
+      "Obrigado pelo seu contacto!",
+      "Marketing Digital para Outros Setores",
+      "Comunicação Digital para Autarquias"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Agendar Consulta",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://portugalseo.pt/servicos-seo/auditoria-seo/",
+      "text": "Agendar Consulta",
+      "href": null,
+      "element": "button",
+      "kind": "conversion",
+      "score": 126
+    },
+    "ctas": [
+      "Agendar Consulta",
+      "WhatsApp",
+      "Partilhar no WhatsApp",
+      "Pedir Proposta Gratuita"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://portugalseo.pt/marketing-digital-energia-solar/",
+        "index": 2,
+        "action": "https://formspree.io/f/xgoldvpk",
+        "method": "POST",
+        "submitText": "Pedir Proposta Gratuita",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nome",
+            "label": null,
+            "placeholder": "O seu nome completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "O seu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefone",
+            "label": null,
+            "placeholder": "O seu telefone (opcional)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "cidade",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensagem",
+            "label": null,
+            "placeholder": "Descreva brevemente o seu projeto ou dúvida...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Declaro que li e concordo com a Política de Privacidade e consinto",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://portugalseo.pt/contactos/",
+        "index": 1,
+        "action": "https://formspree.io/f/xgoldvpk",
+        "method": "POST",
+        "submitText": "Agendar Consulta",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nome",
+            "label": null,
+            "placeholder": "O seu nome completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "O seu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefone",
+            "label": null,
+            "placeholder": "O seu telefone (opcional)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "cidade",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "servico",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensagem",
+            "label": null,
+            "placeholder": "Descreva brevemente o seu projeto ou dúvida...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "Declaro que li e concordo com a Política de Privacidade e consinto",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 7 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Google Analytics",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "SEO, Google Ads, contenido educativo, funnels de conversión y campañas en redes para empresas de energía solar",
+    "audience": "Empresas de energía solar en Portugal",
+    "prices": [],
+    "guarantee": [
+      "A nossa maior garantia são os resultados que entregamos."
+    ],
+    "proof": [
+      "…e Demonstram o Nosso Impacto +200Projetos SEO realizados +87%Aumento médio de tráfego orgânico 4.9/5Avaliação média dos clientes +12 anosDedicados ao SEO em Portugal Caso de Sucesso: Imobiliária na Grande Lisboa O Desafio Uma imobiliária de média dimensão na região da Grande Lisboa, com 3 agências e cerca d…",
+      "Os Resultados (10 meses) Tráfego orgânico: de 90 para 1.870 visitas/mês (+1.977%) Keywords posicionadas: 340+ combinações de marca+modelo+localização Contactos orgânicos: de 2 para 31 contactos/mês vindos do Google Vendas atribuídas ao SEO: 7-12 veículos/mês vendidos via leads orgânicos Custo por lead orgânico: 3,40€ (vs.",
+      "Desde 2014, ajudamos centenas de empresas portuguesas de diversos setores a crescer online através de estratégias de SEO comprovadas, éticas e orientadas a resultados mensuráveis.",
+      "O proprietário queria reduzir os custos com portais e ter um canal próprio de captação de clientes.",
+      "…revisto, licença da ERS visível), otimização do Google Business Profile com fotografias profissionais e gestão ativa de reviews, criação de conteúdo informativo sobre tratamentos dentários, e implementação de Schema markup MedicalOrganization."
+    ],
+    "objections": [
+      "Auditoria inicial, estratégia proposta, keywords alvo, entregáveis mensais, métricas de sucesso, preço e condições de cancelamento.",
+      "Partilhar: Categorias: FAQ Marketing DigitalTags: SEO Artigos Relacionados Mais conteúdo sobre SEO e marketing digital que pode interessar."
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "A nossa maior garantia são os resultados que entregamos.",
+          "url": "https://portugalseo.pt/contactos/",
+          "pageTitle": "Contactos PortugalSEO | Pedir Proposta SEO Gratuita",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Desde 2014, ajudamos centenas de empresas portuguesas de diversos setores a crescer online através de estratégias de SEO comprovadas, éticas e orientadas a resultados mensuráveis.",
+          "url": "https://portugalseo.pt/casos-de-sucesso/",
+          "pageTitle": "Casos de Sucesso SEO | Resultados Reais — PortugalSEO",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…e Demonstram o Nosso Impacto +200Projetos SEO realizados +87%Aumento médio de tráfego orgânico 4.9/5Avaliação média dos clientes +12 anosDedicados ao SEO em Portugal Caso de Sucesso: Imobiliária na Grande Lisboa O Desafio Uma imobiliária de média dimensão na região da Grande Lisboa, com 3 agências e cerca d…",
+          "url": "https://portugalseo.pt/casos-de-sucesso/",
+          "pageTitle": "Casos de Sucesso SEO | Resultados Reais — PortugalSEO",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…revisto, licença da ERS visível), otimização do Google Business Profile com fotografias profissionais e gestão ativa de reviews, criação de conteúdo informativo sobre tratamentos dentários, e implementação de Schema markup MedicalOrganization.",
+          "url": "https://portugalseo.pt/casos-de-sucesso/",
+          "pageTitle": "Casos de Sucesso SEO | Resultados Reais — PortugalSEO",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "O proprietário queria reduzir os custos com portais e ter um canal próprio de captação de clientes.",
+          "url": "https://portugalseo.pt/casos-de-sucesso/",
+          "pageTitle": "Casos de Sucesso SEO | Resultados Reais — PortugalSEO",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Os Resultados (10 meses) Tráfego orgânico: de 90 para 1.870 visitas/mês (+1.977%) Keywords posicionadas: 340+ combinações de marca+modelo+localização Contactos orgânicos: de 2 para 31 contactos/mês vindos do Google Vendas atribuídas ao SEO: 7-12 veículos/mês vendidos via leads orgânicos Custo por lead orgânico: 3,40€ (vs.",
+          "url": "https://portugalseo.pt/casos-de-sucesso/",
+          "pageTitle": "Casos de Sucesso SEO | Resultados Reais — PortugalSEO",
+          "pageCategory": "proof"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Auditoria inicial, estratégia proposta, keywords alvo, entregáveis mensais, métricas de sucesso, preço e condições de cancelamento.",
+          "url": "https://portugalseo.pt/perguntas-comuns-seo-faq-portugal/",
+          "pageTitle": "20 Perguntas Mais Comuns sobre SEO em Portugal - PortugalSEO",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Partilhar: Categorias: FAQ Marketing DigitalTags: SEO Artigos Relacionados Mais conteúdo sobre SEO e marketing digital que pode interessar.",
+          "url": "https://portugalseo.pt/perguntas-comuns-seo-faq-portugal/",
+          "pageTitle": "20 Perguntas Mais Comuns sobre SEO em Portugal - PortugalSEO",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Início / FAQ Marketing Digital / 20 Perguntas Mais Comuns sobre SEO em Portugal Política de Privacidade Termos de Serviço Política de Cookies Início SEO Ligar Marketing WhatsApp Este website utiliza cookies.",
+          "url": "https://portugalseo.pt/perguntas-comuns-seo-faq-portugal/",
+          "pageTitle": "20 Perguntas Mais Comuns sobre SEO em Portugal - PortugalSEO",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://portugalseo.pt/marketing-digital-energia-solar/",
+        "https://portugalseo.pt/servicos-seo/auditoria-seo/",
+        "https://portugalseo.pt/casos-de-sucesso/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing Digital para Empresas de Energia Solar",
+        "Auditoria SEO",
+        "Consultoria SEO",
+        "Fale Connosco"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Pedir Proposta Gratuita",
+        "WhatsApp",
+        "Agendar Consulta",
+        "Partilhar no WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://portugalseo.pt/marketing-digital-energia-solar/ · 6 campos",
+        "https://portugalseo.pt/servicos-seo/auditoria-seo/ · 6 campos",
+        "https://portugalseo.pt/marketing-empresas-construcao/ · 6 campos",
+        "https://portugalseo.pt/servicos-seo/consultoria-seo/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Propuesta → auditoría del negocio solar y objetivos → fases iniciales de estrategia/configuración → SEO/Google Ads/contenido/funnel/social → entrega de leads cualificados al cliente → optimización desde el día"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://portugalseo.pt/marketing-digital-energia-solar/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://portugalseo.pt/servicos-seo/auditoria-seo/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://portugalseo.pt/casos-de-sucesso/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://portugalseo.pt/perguntas-comuns-seo-faq-portugal/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://portugalseo.pt/marketing-empresas-construcao/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://portugalseo.pt/servicos-seo/consultoria-seo/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://portugalseo.pt/contactos/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://portugalseo.pt/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://rafa.pt/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://dmark.pt/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://rafa.pt/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "http://portugalseo.pt/marketing-digital-energia-solar",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "http://portugalseo.pt/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "http://dmark.pt/",
+      "label": "Fuente pública 14"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Agendar Consulta”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Google Analytics, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

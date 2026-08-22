@@ -1,0 +1,621 @@
+{
+  "id": "leads-for-plumbers",
+  "name": "Leads For Plumbers",
+  "reviewedAt": "2026-08-22T15:50:17.810Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "We get you more plumbing jobs - so you can focus on the work, not the marketing",
+    "heroObserved": true,
+    "priorSummary": "3 planes mensuales de generación de leads/visibilidad local para fontaneros, sin contrato de permanencia",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 157 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1089 palabras por página comercial recuperada. Muestras breves: “We get you more plumbing jobs - so you can focus on the work, not the marketing” · “Contact Us” · “The Future of Plumber Lead Generation”.",
+    "supportingHeadings": [
+      "We get you more plumbing jobs - so you can focus on the work, not the marketing",
+      "4.9 out of 5",
+      "Get More Information",
+      "Helping local plumbers grow their business — one call at a time.",
+      "We make it simple — you focus on the jobs, we handle the leads.",
+      "Ready to get started and get more calls this week?",
+      "Fair prices. Clear results. You only pay to keep the calls coming in — nothing hidden, nothing fancy.",
+      "£255 / month",
+      "£499 / month",
+      "£699 / month",
+      "Got questions? We’ve got answers.",
+      "What our awesome clients say",
+      "Latest Stories & Articles",
+      "Contact Us",
+      "Keep your phone ringing with new customer calls every week",
+      "We handle everything — setup, updates, and follow-ups",
+      "No contracts, cancel anytime",
+      "Blog Classic",
+      "Search",
+      "Categories",
+      "Zungo Archives",
+      "The Future of Plumber Lead Generation",
+      "What the future of plumber lead generation really looks like",
+      "The old way of getting plumbing leads is less reliable",
+      "Google will keep doing the heavy lifting",
+      "Reviews will matter even more than rankings alone",
+      "Speed will separate the firms that win from the firms that miss out",
+      "Automation will help, but only when it stays practical",
+      "More leads will come from local authority, not wider reach",
+      "Done-for-you marketing will become more attractive"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Book Your Setup Slot",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://leadsforplumbers.co.uk/",
+      "text": "Book Your Setup Slot",
+      "href": "https://leadsforplumbers.co.uk/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 260
+    },
+    "ctas": [
+      "Book a Free Consult",
+      "Book Your Setup Slot",
+      "Whatsapp",
+      "Learn More",
+      "Send Message",
+      "Post Comment"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://leadsforplumbers.co.uk/",
+        "index": 1,
+        "action": "https://leadsforplumbers.co.uk/",
+        "method": "POST",
+        "submitText": "Book a Free Consult",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "text-664",
+            "label": null,
+            "placeholder": "Complete Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email-504",
+            "label": null,
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "text-156",
+            "label": null,
+            "placeholder": "Phone No",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leadsforplumbers.co.uk/contact-us/",
+        "index": 1,
+        "action": "https://leadsforplumbers.co.uk/contact-us/",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "text-664",
+            "label": null,
+            "placeholder": "Complete Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email-504",
+            "label": null,
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "text-156",
+            "label": null,
+            "placeholder": "Phone No",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "textarea-901",
+            "label": null,
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+        "index": 1,
+        "action": "https://leadsforplumbers.co.uk/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Post Comment",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "author",
+            "label": null,
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": null,
+            "placeholder": "Type Comment here",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 3 y 4 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: textarea-901.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 4,
+      "qualification": [
+        "textarea-901"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "3 planes mensuales de generación de leads/visibilidad local para fontaneros, sin contrato de permanencia",
+    "audience": "Exclusivamente fontaneros (plumbers) del Reino Unido",
+    "prices": [
+      "Home About Pricing Resources Contact Whatsapp 0130 2616 311 We get you more plumbing jobs - so you can focus on the work, not the marketing With our done-for-you lead system, you can get 20–30 new qualified leads a month for as little as £255/month."
+    ],
+    "guarantee": [],
+    "proof": [
+      "More Jobs Booked Every Month + Happy Local Businesses + Calls & Leads Generated + Leaky Taps Turned into Happy Clients How it Works We make it simple — you focus on the jobs, we handle the leads.",
+      "How long before I start seeing results?",
+      "Home About Pricing Resources Contact Whatsapp 0130 2616 311 How Plumber Google Reviews Help Get More Jobs HomeHow Plumber Google Reviews Help Get More Jobs April 8, 2026 By Cristian 0 Comments Resources A homeowner with a leaking boiler or a blocked drain is not",
+      "We set up your local marketing system so you stay visible where customers are searching.",
+      "We set up your online presence so local customers can easily find and contact you when they need a plumber.",
+      "You’ll see momentum build as reviews, visibility, and local reputation grow."
+    ],
+    "objections": [
+      "How long before I start seeing results?",
+      "They quote custom retainers, add setup charges, lock clients into contracts and bury the actual deliverables behind vague language.",
+      "Next Post How to Get Plumbing Leads That Turn Into Jobs April 3, 2026 Leave A Comment Cancel reply Post Comment Visit Us UClimb Ltd5th Floor167 – 169 Great Portland StreetLondonW1W 5PF WORKING HOURS Monday – Friday09:00 am – 09:00 pmSaturday – Sunday – Closed",
+      "…curring Plumber Marketing June 21, 2026 Next Post How Plumbers Rank on Maps and Get Calls June 21, 2026 Leave A Comment Cancel reply Post Comment Visit Us UClimb Ltd5th Floor167 – 169 Great Portland StreetLondonW1W 5PF WORKING HOURS Monday – Friday09:00 am – 09:00 pmSaturday – Sunday – Closed Quick Links…",
+      "Get More Information Book a Free Consult Keep your phone ringing with new customer calls every week We handle everything — setup, updates, and follow-ups No contracts, cancel anytime WHAT WE DO Helping local plumbers grow their business — one call at a time.",
+      "Fixed pricing and no contract matter more than you think Plumbers are used to paying for tools, fuel, stock and staff.",
+      "If there is no long-term contract, the risk is lower and the decision is easier.",
+      "That is especially useful for smaller plumbing firms that want steady growth without taking on another financial commitment they cannot control."
+    ],
+    "urgency": [
+      "We know you’d rather be fixing boilers than figuring out how to get more leads online.",
+      "Now I get a steady consistent jobs like boiler repairs and emergency leaks.",
+      "They know they need more leads, but they do not want another job managing marketing on top of quoting, ordering parts, and getting to call-outs.",
+      "Google will keep doing the heavy lifting If you want to know where plumbing leads are heading, start with local search.",
+      "They also help future customers see that you handle the kind of problem they have right now.",
+      "Customers want to know you serve their patch."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Home About Pricing Resources Contact Whatsapp 0130 2616 311 We get you more plumbing jobs - so you can focus on the work, not the marketing With our done-for-you lead system, you can get 20–30 new qualified leads a month for as little as £255/month.",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [
+        {
+          "text": "No service can guarantee every lead will turn into a paid job.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "We set up your local marketing system so you stay visible where customers are searching.",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "More Jobs Booked Every Month + Happy Local Businesses + Calls & Leads Generated + Leaky Taps Turned into Happy Clients How it Works We make it simple — you focus on the jobs, we handle the leads.",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We set up your online presence so local customers can easily find and contact you when they need a plumber.",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "How long before I start seeing results?",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "You’ll see momentum build as reviews, visibility, and local reputation grow.",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "It is about making sure local customers can find you, trust you, and ring you before they ring the next firm.",
+          "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+          "pageTitle": "The Future of Plumber Lead Generation - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "More customers search on their mobile phones, compare reviews in seconds, and expect a quick response.",
+          "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+          "pageTitle": "The Future of Plumber Lead Generation - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "More of your leads will come from a small set of local visibility signals working together – your Google Business Profile, your reviews, your service area relevance, your business details across the web, your regular business activity, and how quickly you respond when someone makes",
+          "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+          "pageTitle": "The Future of Plumber Lead Generation - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "A plumbing business that has current reviews, clear services, recent posts, proper contact details, and a solid local footprint will usually beat a business with an outdated profile and a forgotten Facebook page.",
+          "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+          "pageTitle": "The Future of Plumber Lead Generation - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The old way of getting plumbing leads is less reliable A lot of plumbing firms still depend too heavily on referrals, repeat customers, or the occasional lead site.",
+          "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+          "pageTitle": "The Future of Plumber Lead Generation - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Home About Pricing Resources Contact Whatsapp 0130 2616 311 How Plumber Google Reviews Help Get More Jobs HomeHow Plumber Google Reviews Help Get More Jobs April 8, 2026 By Cristian 0 Comments Resources A homeowner with a leaking boiler or a blocked drain is not",
+          "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+          "pageTitle": "How Plumber Google Reviews Help Get More Jobs - Leads For Plumbers",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "That is where plumber Google reviews help more than most plumbers realise.",
+          "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+          "pageTitle": "How Plumber Google Reviews Help Get More Jobs - Leads For Plumbers",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "If your profile has a handful of old reviews, or none at all, you are making that decision harder for them.",
+          "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+          "pageTitle": "How Plumber Google Reviews Help Get More Jobs - Leads For Plumbers",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Reviews are not just about reputation.",
+          "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+          "pageTitle": "How Plumber Google Reviews Help Get More Jobs - Leads For Plumbers",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Why plumber Google reviews help so much Google reviews do three jobs at the same time.",
+          "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+          "pageTitle": "How Plumber Google Reviews Help Get More Jobs - Leads For Plumbers",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "First, they give customers confidence.",
+          "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+          "pageTitle": "How Plumber Google Reviews Help Get More Jobs - Leads For Plumbers",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "…urces A quiet phone in the middle of the week usually means one of two things – you are either fully booked from repeat customers, or your business is too hard to find.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The right service puts your business in front of local people who need a plumber now, without leaving you to figure out profiles, reviews, posts and rankings after a long day on the tools.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "What plumbing lead generation services should actually do At the simplest level, these services should help you get more inbound calls from local customers.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "That includes your business profile, local area coverage, review activity, regular updates, social proof and ongoing improvements based on what is working.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "You can be excellent on site, fairly priced and reliable, but still have empty spaces in the diary if local customers cannot find you or do not trust what they see.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "A weak review profile, patchy business information or an inactive online presence can make a solid plumbing business look smaller or less reliable than it really is.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Get More Information Book a Free Consult Keep your phone ringing with new customer calls every week We handle everything — setup, updates, and follow-ups No contracts, cancel anytime WHAT WE DO Helping local plumbers grow their business — one call at a time.",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "How long before I start seeing results?",
+          "url": "https://leadsforplumbers.co.uk/",
+          "pageTitle": "Get More Plumbing Jobs | Leads for Plumbers UK",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…curring Plumber Marketing June 21, 2026 Next Post How Plumbers Rank on Maps and Get Calls June 21, 2026 Leave A Comment Cancel reply Post Comment Visit Us UClimb Ltd5th Floor167 – 169 Great Portland StreetLondonW1W 5PF WORKING HOURS Monday – Friday09:00 am – 09:00 pmSaturday – Sunday – Closed Quick Links…",
+          "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+          "pageTitle": "The Future of Plumber Lead Generation - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Fixed pricing and no contract matter more than you think Plumbers are used to paying for tools, fuel, stock and staff.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "They quote custom retainers, add setup charges, lock clients into contracts and bury the actual deliverables behind vague language.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "If there is no long-term contract, the risk is lower and the decision is easier.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "That is especially useful for smaller plumbing firms that want steady growth without taking on another financial commitment they cannot control.",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Next Post How to Get Plumbing Leads That Turn Into Jobs April 3, 2026 Leave A Comment Cancel reply Post Comment Visit Us UClimb Ltd5th Floor167 – 169 Great Portland StreetLondonW1W 5PF WORKING HOURS Monday – Friday09:00 am – 09:00 pmSaturday – Sunday – Closed",
+          "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+          "pageTitle": "Plumbing Lead Generation Services That Work - Leads For Plumbers",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://leadsforplumbers.co.uk/",
+        "https://leadsforplumbers.co.uk/contact-us/",
+        "https://leadsforplumbers.co.uk/resources/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "We get you more plumbing jobs - so you can focus on the work, not the marketing",
+        "Contact Us",
+        "The Future of Plumber Lead Generation",
+        "How to Automate Plumber Follow Ups"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Whatsapp",
+        "Book a Free Consult",
+        "Book Your Setup Slot",
+        "Learn More",
+        "Send Message",
+        "Post Comment"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://leadsforplumbers.co.uk/ · 3 campos",
+        "https://leadsforplumbers.co.uk/contact-us/ · 4 campos",
+        "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/ · 3 campos",
+        "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/ · 3 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono",
+        "Email",
+        "Book a Free Consult",
+        "Book Your Setup Slot"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Selección de plan → contratación online → activación del servicio para fontaneros → primeras llamadas/leads directos al negocio en días/primera semana → cuota mensual £255/£499/£699; cancelación libre, sin"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://leadsforplumbers.co.uk/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://leadsforplumbers.co.uk/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://leadsforplumbers.co.uk/resources/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://leadsforplumbers.co.uk/future-of-plumber-lead-generation/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://leadsforplumbers.co.uk/how-plumber-google-reviews-help-get-more-jobs/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://leadsforplumbers.co.uk/how-to-automate-plumber-follow-ups/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://leadsforplumbers.co.uk/plumbing-lead-generation-services-that-work/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=leadsforplumbers.co.uk",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://leadsforplumbers.co.uk/2026/04/03/plumbing-lead-generation-services-that-work/: HTTP 404",
+    "Se localizaron 1 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Book Your Setup Slot”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

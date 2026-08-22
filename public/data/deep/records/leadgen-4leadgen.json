@@ -1,0 +1,549 @@
+{
+  "id": "leadgen-4leadgen",
+  "name": "LeadGen / 4leadgen",
+  "reviewedAt": "2026-08-22T15:50:17.598Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "نبني لك فريق النمو، ونشغّله، ونقيس نتيجته",
+    "heroObserved": true,
+    "priorSummary": "Citas B2B cualificadas por unidad: lista/decisor, outreach teléfono-email-LinkedIn, cinco criterios escritos, reunión en calendario, brief y reporte semanal.",
+    "voice": "Tono cuantitativo, autoridad basada en prueba, urgencia comercial, explicativo, orientado a la acción. Usa 84 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 849 palabras por página comercial recuperada. Muestras breves: “نبني لك فريق النمو، ونشغّله، ونقيس نتيجته” · “أخبرنا بما تحتاجه، ونرد خلال يوم عمل” · “سعر معلن لما يمكن تسعيره، وعرض مخصص لما لا يمكن”.",
+    "supportingHeadings": [
+      "نبني لك فريق النمو، ونشغّله، ونقيس نتيجته",
+      "من نعمل معهم",
+      "كيف نعمل بالأرقام",
+      "حلول تغطي دورة النمو كاملة",
+      "نمو الأعمال",
+      "تطوير المبيعات",
+      "حلول الموارد البشرية",
+      "التوظيف واستقطاب المواهب",
+      "الفرق عن بُعد",
+      "الإسناد والفرق المخصصة",
+      "شركاؤنا",
+      "كادر",
+      "Supportefy",
+      "لماذا يعمل هذا النموذج",
+      "كيف نبدأ معك",
+      "مكالمة تعارف",
+      "عرض مكتوب",
+      "بداية صغيرة",
+      "قياس ثم توسّع",
+      "قطاعات نعمل فيها",
+      "أسئلة متكررة",
+      "احجز استشارة مجانية",
+      "ابدأ بخطوة واحدة صغيرة",
+      "أخبرنا بما تحتاجه، ونرد خلال يوم عمل",
+      "أرسل طلبك",
+      "إلى أين يذهب طلبك",
+      "طلبات الشركات",
+      "طلبات التدريب",
+      "الشراكات",
+      "سعر معلن لما يمكن تسعيره، وعرض مخصص لما لا يمكن"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "تواصل معنا",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://4leadgen.com/",
+      "text": "تواصل معنا",
+      "href": "https://4leadgen.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 262.5
+    },
+    "ctas": [
+      "تواصل معنا",
+      "احجز استشارة",
+      "اشترك",
+      "السابق",
+      "English",
+      "أرسل الطلب",
+      "اطلب الخدمة",
+      "اطلب عرض سعر",
+      "املأ النموذج",
+      "اختر هذه الباقة",
+      "info@4leadgen.com",
+      "ناقش حالتك مع فريقنا",
+      "ابدأ التجربة المجانية"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://4leadgen.com/",
+        "index": 1,
+        "action": "https://4leadgen.com/send.php",
+        "method": "POST",
+        "submitText": "أرسل الطلب",
+        "visibleFieldCount": 20,
+        "requiredFieldCount": 10,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fax",
+            "label": "Company fax",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "services[]",
+            "label": "تطوير المبيعات والمواعيد المؤهلة",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "اسم الشركة",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": "الموقع الإلكتروني (اختياري)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "industry",
+            "label": "القطاع اختر التقنية و SaaSالعقار والتطويرالرعاية الصحية والعياداتالتعليم والتدريباللوجستيات وسلاسل الإمدادالخدمات المال…",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "country",
+            "label": "الدولة اختر السعوديةالإماراتالكويتقطرالبحرينعُمانالأردندولة أخرى",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "team_size",
+            "label": "حجم الفريق اختر 1 إلى 1011 إلى 5051 إلى 200أكثر من 200",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "timeline",
+            "label": "متى تريد البدء؟ اختر في أقرب وقتخلال شهرخلال ثلاثة أشهرما زلنا ندرس",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "target_market",
+            "label": "من هو عميلك المستهدف، وفي أي سوق؟",
+            "placeholder": "مثال: شركات مقاولات متوسطة في الرياض وجدة",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "roles_needed",
+            "label": "ما الأدوار التي تحتاج توظيفها، وكم عددها؟",
+            "placeholder": "مثال: مندوبا مبيعات ومحاسب واحد",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "seats_needed",
+            "label": "كم مقعدًا تحتاج، وبأي ساعات عمل؟",
+            "placeholder": "مثال: ثلاثة مقاعد بتوقيت الرياض من 9 إلى 6",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "process_scope",
+            "label": "ما العملية التي تريد إسنادها، وما حجمها الشهري؟",
+            "placeholder": "مثال: خدمة عملاء، نحو 900 محادثة شهريًا",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "repetitive_work",
+            "label": "ما العمل المتكرر الذي يستهلك وقت فريقك؟",
+            "placeholder": "مثال: إعداد تقرير المبيعات الشهري يدويًا",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "main_blocker",
+            "label": "ما أكبر عائق أمام نموكم الآن؟",
+            "placeholder": "مثال: الفرص موجودة لكن نسبة الإغلاق منخفضة",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "goals",
+            "label": "ما النتيجة التي تريد الوصول إليها؟",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": "الاسم",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "job_title",
+            "label": "المسمى الوظيفي (اختياري)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "البريد الإلكتروني في العمل",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "رقم الهاتف أو واتساب",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "consent",
+            "label": "أوافق على أن يتواصل معي فريق 4LeadGen بخصوص هذا الطلب.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://4leadgen.com/",
+        "index": 2,
+        "action": "https://4leadgen.com/send.php",
+        "method": "POST",
+        "submitText": "اشترك",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": "بريدك الإلكتروني في العمل",
+            "placeholder": "بريدك الإلكتروني في العمل",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 20 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Company fax.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 20,
+      "qualification": [
+        "Company fax"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Citas B2B cualificadas por unidad: lista/decisor, outreach teléfono-email-LinkedIn, cinco criterios escritos, reunión en calendario, brief y reporte semanal.",
+    "audience": "B2B en Arabia Saudí y GCC: SaaS, real estate, salud, educación, logística, fintech, industria, consultoría, retail y construcción.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "ابدأ بخطوة واحدة صغيرة لا تحتاج إلى عقد كبير لتبدأ.",
+      "يمكنك إلغاء الاشتراك في أي وقت.",
+      "…المالية والتقنية المالية الصناعة والتصنيع الخدمات المهنية والاستشارات التجزئة والتجارة الإلكترونية المقاولات والإنشاءات FAQ أسئلة متكررة ما الذي تقدّمه 4LeadGen بالضبط؟ نحن شريك نمو يجمع ستة أشياء عادة تشتريها من ست جهات: تطوير المبيعات والمواعيد المؤهلة، التوظيف والموارد البشرية، الفرق عن بُعد، إسناد…"
+    ],
+    "urgency": [
+      "تعريف مكتوب للجودة قبل بدء أي عملتقارير بالأرقام لا بالانطباعاتابدأ صغيرًا ووسّع عند ثبوت النتيجة اطلب عرض سعر احجز استشارة استكشف الحلول 0 حلول متكاملة تحت سقف واحد 0 مسارًا تدريبيًا في الأكاديمية 0 مواعيد مؤهلة مجانًا للتجربة من نعمل معهم من نعمل معهم شركة",
+      "0 حلول متكاملة تحت سقف واحد 0 مسارًا تدريبيًا يغذّي فرقنا بالكوادر 0 معايير مكتوبة تحدد الموعد المؤهل 0 يوم عمل واحد هو سقف الرد على طلبك الحلول حلول تغطي دورة النمو كاملة ابدأ بما تحتاجه اليوم.",
+      "من هو عميلك المستهدف، وفي أي سوق؟ ما الأدوار التي تحتاج توظيفها، وكم عددها؟ كم مقعدًا تحتاج، وبأي ساعات عمل؟ ما العملية التي تريد إسنادها، وما حجمها الشهري؟ ما العمل المتكرر الذي يستهلك وقت فريقك؟ ما أكبر عائق أمام نموكم الآن؟ ما النتيجة التي تريد",
+      "كل حل بمخرجات ومؤشرات مكتوبةابدأ بأصغر نطاق يثبت النتيجةفريق واحد مسؤول عن كل ما تشتريه اطلب عرض سعر احجز استشارة الحلول العشرة اختر ما يناسب وضعك اليوم.",
+      "العمليات اليومية والوردياتمؤشرات الأداء والمراجعاتضبط الجودة والتدريب التفاصيل تطوير الأعمال المبيعات تبيع ما هو موجود، وتطوير الأعمال يفتح ما هو غير موجود: شريك يوصلك لسوق كامل، أو موزع يغطي منطقة، أو حساب كبير يغيّر حجم شركتك.",
+      "ما نعرضه هنا هو ما نستطيع إثباته اليوم."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "ماذا يحدث بعد الإرسال 01نراجع طلبك ونتحقق من أننا الجهة المناسبة له فعلًا02نرد خلال يوم عمل واحد بأسئلة محددة أو موعد مكالمة03مكالمة 30 دقيقة نفهم فيها وضعك ونقترح المسار04عرض مكتوب بنطاق ومدة وتكلفة واضحة info@4leadgen.com Company fax 1 من 4 ما الذي تحتاجه؟ اختر ما",
+          "url": "https://4leadgen.com/",
+          "pageTitle": "حلول نمو الأعمال والمبيعات والتوظيف في السعودية | 4LeadGen",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "…المالية والتقنية المالية الصناعة والتصنيع الخدمات المهنية والاستشارات التجزئة والتجارة الإلكترونية المقاولات والإنشاءات FAQ أسئلة متكررة ما الذي تقدّمه 4LeadGen بالضبط؟ نحن شريك نمو يجمع ستة أشياء عادة تشتريها من ست جهات: تطوير المبيعات والمواعيد المؤهلة، التوظيف والموارد البشرية، الفرق عن بُعد، إسناد…",
+          "url": "https://4leadgen.com/",
+          "pageTitle": "حلول نمو الأعمال والمبيعات والتوظيف في السعودية | 4LeadGen",
+          "pageCategory": "other"
+        },
+        {
+          "text": "ابدأ بخطوة واحدة صغيرة لا تحتاج إلى عقد كبير لتبدأ.",
+          "url": "https://4leadgen.com/",
+          "pageTitle": "حلول نمو الأعمال والمبيعات والتوظيف في السعودية | 4LeadGen",
+          "pageCategory": "other"
+        },
+        {
+          "text": "يمكنك إلغاء الاشتراك في أي وقت.",
+          "url": "https://4leadgen.com/",
+          "pageTitle": "حلول نمو الأعمال والمبيعات والتوظيف في السعودية | 4LeadGen",
+          "pageCategory": "other"
+        },
+        {
+          "text": "يمكنك إلغاء الاشتراك في أي وقت.",
+          "url": "https://4leadgen.com/solutions/",
+          "pageTitle": "حلول 4LeadGen للشركات في السعودية والخليج",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://4leadgen.com/",
+        "https://4leadgen.com/contact/",
+        "https://4leadgen.com/pricing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "نبني لك فريق النمو، ونشغّله، ونقيس نتيجته",
+        "أخبرنا بما تحتاجه، ونرد خلال يوم عمل",
+        "سعر معلن لما يمكن تسعيره، وعرض مخصص لما لا يمكن",
+        "كل ما تحتاجه لتنمو، من شريك واحد"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "احجز استشارة",
+        "تواصل معنا",
+        "اطلب عرض سعر",
+        "السابق",
+        "أرسل الطلب",
+        "اشترك",
+        "English",
+        "املأ النموذج"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://4leadgen.com/ · 20 campos",
+        "https://4leadgen.com/ · 1 campos",
+        "https://4leadgen.com/contact/ · 20 campos",
+        "https://4leadgen.com/contact/ · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "احجز استشارة",
+        "احجز استشارة",
+        "احجز استشارة",
+        "احجز استشارة",
+        "احجز استشارة",
+        "احجز استشارة",
+        "احجز استشارة"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Solicitud → llamada 30 min → 5 criterios escritos → 3 citas gratis → lista aprobada → formación y guiones → outreach multicanal → cualificación → reunión+brief →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://4leadgen.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://4leadgen.com/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://4leadgen.com/pricing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://4leadgen.com/case-studies/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://4leadgen.com/solutions/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://4leadgen.com/about/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://4leadgen.com/solutions/business-consulting/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://4leadgen.com/en/solutions/sales-development/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=4leadgen.com",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=LeadGen%20%2F%204leadgen",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://4leadgen.com/en/pricing/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://4leadgen.com/en/",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://4leadgen.com/en/case-studies/",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.linkedin.com/company/4leadgen",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=4LeadGen",
+      "label": "Fuente pública 15"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “تواصل معنا”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

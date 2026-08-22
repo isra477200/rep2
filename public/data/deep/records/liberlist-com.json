@@ -1,0 +1,364 @@
+{
+  "id": "liberlist-com",
+  "name": "liberlist.com",
+  "reviewedAt": "2026-08-22T15:50:18.840Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Liberia's Most Trusted Business Directory",
+    "heroObserved": true,
+    "priorSummary": "Buscar negocios, añadir ficha general/destacada y fotos/vídeo.",
+    "voice": "Tono orientado al lector, cuantitativo, urgencia comercial, consultivo / basado en preguntas, orientado a la acción. Usa 131 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 735 palabras por página comercial recuperada. Muestras breves: “Liberia's Most Trusted Business Directory” · “Contact” · “Filters”.",
+    "supportingHeadings": [
+      "Liberia's Most Trusted Business Directory",
+      "More Filters",
+      "Browse by popular categories",
+      "Connect With Verified Liberian Businesses",
+      "Sonii Express",
+      "Ministry of Health Ambulance Service",
+      "Modern Electronics",
+      "Licia’s Kitchen",
+      "Cyroza Enterprise",
+      "Viking Incorporated",
+      "Join the Fastest Growing Business Directory in Liberia",
+      "Insights About Liberian Commerce",
+      "List of Autonomous Agencies in Liberia: Download Free E-book",
+      "Find Business Contact Information in Liberia – All You Need to Know About Liberlist.com, Liberia Online Business Directory",
+      "Liberia National Fire Service Numbers and Safety Guidelines",
+      "Our Company",
+      "Quick Links",
+      "Contact",
+      "Filters",
+      "The Royal Grand Hotel",
+      "Boulevard Palace Hotel",
+      "Corina Hotel",
+      "Afrilodge",
+      "Murex Plaza & Suites",
+      "About",
+      "The Turning Point",
+      "Empowering Your Search for Autonomous Agencies in Liberia",
+      "Get Your Free Autonomous Agencies Guide",
+      "Post navigation",
+      "Leave a Reply Cancel reply"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://liberlist.com/",
+      "text": "Contact",
+      "href": "https://liberlist.com/contact/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Contact",
+      "Apply Filters",
+      "here",
+      "Submit",
+      "{title}",
+      "Post Comment"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://liberlist.com/contact/",
+        "index": 1,
+        "action": "https://liberlist.com/contact/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 6,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][first]",
+            "label": "First",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][1][last]",
+            "label": "Last",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][4]",
+            "label": "Comment Email Name",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][2]",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "wpforms[fields][3]",
+            "label": "Comment or Message",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://liberlist.com/2026/07/07/list-of-autonomous-agencies-in-liberia/",
+        "index": 1,
+        "action": "https://liberlist.com/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Post Comment",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Comment *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Name *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Save my name, email, and website in this browser for the next",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Save my name, email, and website in this browser for the next.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": [
+        "Save my name, email, and website in this browser for the next"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Buscar negocios, añadir ficha general/destacada y fotos/vídeo.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Add Your Business Now Insights About Liberian CommerceAnalysis and insights about Liberia's business and trade environment July 7, 2026 List of Autonomous Agencies in Liberia: Download Free E-book Growing a business is hard work.",
+      "July 5, 2026 Find Business Contact Information in Liberia – All You Need to Know About Liberlist.com, Liberia Online Business Directory Are you tired of searching through fragmented social media posts or outdated flyers just to find a simple phone number or...",
+      "…About Business Directory Contact Add Listing Close Menu Find Business Contact Information in Liberia – All You Need to Know About Liberlist.com, Liberia Online Business Directory Posted on July 5, 2026 by dev Liberlist.com, Liberia Online Business Directory Are you tired of searching through fragmented…",
+      "…sting Close Menu Tag: Find Business Contact Information Find Business Contact Information in Liberia – All You Need to Know About Liberlist.com, Liberia Online Business Directory Posted on July 5, 2026 by dev Are you tired of searching through fragmented social media posts or outdated flyers just to fi…",
+      "This FREE E-book is available for a limited time only.",
+      "Visit Liberlist.com today to find verified contact information for the businesses and government agencies that matter to you."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://liberlist.com/",
+        "https://liberlist.com/contact/",
+        "https://liberlist.com/single-category/services/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Liberia's Most Trusted Business Directory",
+        "Contact",
+        "Filters",
+        "List of Autonomous Agencies in Liberia: Download Free E-book"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Apply Filters",
+        "Submit",
+        "{title}",
+        "here",
+        "Post Comment"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://liberlist.com/contact/ · 5 campos",
+        "https://liberlist.com/2026/07/07/list-of-autonomous-agencies-in-liberia/ · 4 campos",
+        "https://liberlist.com/2026/07/05/find-business-contact-information-in-liberia/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://liberlist.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://liberlist.com/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://liberlist.com/single-category/services/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://liberlist.com/about-us/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://liberlist.com/2026/07/07/list-of-autonomous-agencies-in-liberia/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://liberlist.com/2026/07/05/find-business-contact-information-in-liberia/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://liberlist.com/tag/find-business-contact-information/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://liberlist.com/add-listing/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

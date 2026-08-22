@@ -1,0 +1,196 @@
+{
+  "id": "exponencialmente",
+  "name": "Exponencialmente",
+  "reviewedAt": "2026-08-22T15:50:17.898Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 28,
+  "message": {
+    "hero": "closer de ventas de alto valor",
+    "heroObserved": true,
+    "priorSummary": "Agencia de closers de ventas y setters de appointment \"como servicio\", con modelo de pago 100% por resultado",
+    "voice": "Tono orientado al lector, interrogativo / diagnóstico, consultivo / basado en preguntas. Usa 6 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 438 palabras por página comercial recuperada. Muestras breves: “closer de ventas de alto valor” · “aviso legal exponencialmente.es” · “Política de cookies exponencialmente.es”.",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": "Reserva tu sesión",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://exponencialmente.es/",
+      "text": "Reserva tu sesión",
+      "href": "https://calendly.com/gerardo-sanz/60min",
+      "element": "a",
+      "kind": "conversion",
+      "score": 180.75
+    },
+    "ctas": [
+      "Reserva tu sesión"
+    ],
+    "captureType": "Agenda",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Agencia de closers de ventas y setters de appointment \"como servicio\", con modelo de pago 100% por resultado",
+    "audience": "Empresas digitales que necesitan externalizar el cierre de ventas (closers y setters de appointment como servicio)",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://exponencialmente.es/",
+        "https://exponencialmente.es/aviso-legal",
+        "https://exponencialmente.es/politica-de-cookies"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "closer de ventas de alto valor",
+        "aviso legal exponencialmente.es",
+        "Política de cookies exponencialmente.es",
+        "Política de privacidad exponencialmente.es"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Reserva tu sesión"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Reserva tu sesión"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Landing → reserva en Calendly → consultoría gratuita → análisis del punto de partida y objetivo → experiencia comparable + plan de acción personalizado → auditoría del embudo,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://exponencialmente.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://exponencialmente.es/aviso-legal",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://exponencialmente.es/politica-de-cookies",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://exponencialmente.es/politica-de-privacidad",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=exponencialmente.es",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 6"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Reserva tu sesión”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

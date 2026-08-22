@@ -1,0 +1,843 @@
+{
+  "id": "99-calls",
+  "name": "99 Calls",
+  "reviewedAt": "2026-08-22T15:50:17.651Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "The New Business Marketing",
+    "heroObserved": true,
+    "priorSummary": "Marketing local para contratistas: web/GBP/SEO, Google Ads y LSA, CRM, seguimiento, agenda y reactivación de base de datos.",
+    "voice": "Revisión manual: práctico, optimista, orientado a small business, urgencia, abundancia de prueba. exclusive high-intent no contracts turnkey answer the phone A+ BBB",
+    "supportingHeadings": [
+      "Pricing",
+      "3 Flexible Packages to Suit Your Business Needs",
+      ".rating-block { grid-column-gap: 16px; grid-row-gap: 16px; display: inline-flex; align-items: center; } .logo { justify-content: center; align-items: center; display: flex; line-height: 1; } .star-block { grid-column-gap:",
+      "Package Options",
+      "Growth Pro",
+      "Best in Class Lead Generation Services & Done For You Marketing",
+      "Price: $999 setup. $999+15% of Ads budget per month",
+      "Growth",
+      "Most Popular Exclusive Leads & Tools to Convert More",
+      "Price: $399 setup. $199+15% of Ads budget per month",
+      "Essentials",
+      "Price: $249 setup. $99 per month",
+      "Speak with a Lead Specialist",
+      "Google Ads PPC and LSA Leads",
+      "Want to supplement an already robust marketing machine?",
+      "99 Calls offers effective paid marketing leads.",
+      "SEO Lead Pricing by Industry",
+      "Wondering the Per-Lead Cost for Organic Leads?",
+      "See Organic SEO Pricing Here",
+      "Credit Cards Accepted",
+      "Social Media",
+      "Contact 99 Calls",
+      "Call Us",
+      "Email Us",
+      "Visit Us",
+      "Office Hours",
+      "Speak with a Lead Generation Specialist",
+      "Reviews & Testimonials",
+      "Reviews from the Web",
+      "Customer Reviews"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://99calls.com/Pricing",
+      "text": "Contact",
+      "href": "https://99calls.com/contact.htm",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact Us",
+      "Start Online",
+      "Start Generating Leads",
+      "Submit"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://99calls.com/Pricing",
+        "index": 1,
+        "action": "https://99calls.com/webservice/processForm.php",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "senderName",
+            "label": null,
+            "placeholder": "Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "senderEmail",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "input",
+            "name": "senderPhone",
+            "label": null,
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Get Started",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "optInService",
+            "label": "Text Me!",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "optInMarketing",
+            "label": "Opt-In",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "GoHighLevel"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Marketing local para contratistas: web/GBP/SEO, Google Ads y LSA, CRM, seguimiento, agenda y reactivación de base de datos.",
+    "audience": "Contratistas y negocios de servicios locales en EE. UU. y Canadá.",
+    "prices": [
+      "Growth Pro Best in Class Lead Generation Services & Done For You Marketing Starting at $999/Mo.",
+      "Price: $999 setup.",
+      "$999+15% of Ads budget per month Get Started Growth Most Popular Exclusive Leads & Tools to Convert More Starting at $199/Mo.",
+      "Price: $399 setup.",
+      "$199+15% of Ads budget per month Start Generating Leads Essentials Start with the Basics Establish a Brand & Build Your Online Presence Starting at $99/Mo.",
+      "Price: $249 setup."
+    ],
+    "guarantee": [
+      "Extremely profitable.\" Jason Skelton, Guaranteed Tree Service - Tree Services in Covington, Georgia 2020-11-11 5★★★★★ - \"99 Calls has been AMAZING for my company."
+    ],
+    "proof": [
+      "Exclusive Leads 99 Calls vs Angi 99 Calls vs Logical Position 99 Calls vs Hook Agency Get Started Reviews & Testimonials ⭐⭐⭐⭐⭐ Reviews from the Web Google Facebook Better Business Bureau ⭐⭐⭐⭐⭐ Customer Reviews Rated 5.0 out of 5.0 ...",
+      "Not only did we have a restricted account but our long standing GBP with over 40 reviews was suspended.",
+      "Highly recommend to use 99 Calls for all your marketing, advertising and GBP services !!!\"Vicky Bar 2024-09-11 5★★★★★ Kevin Lockett - Lock Pro Cleaning Services - Carpet Cleaning in Lynwood, IL 2024-09-05 5★★★★★ - \"99 calls is a phenomenal business to work with my customers",
+      "I would highly recommend!\" Phoenix Construction Services - General Contractor in Haymarket, VA 2023-03-23 5★★★★★ - \"Professional, knowledgeable employees who produce results.\" Chris A Plus - A Plus Air Conditioning and Appliances Inc.",
+      "Very happy with all the business I get.\" Deckmasters - Deck & Fence Staining in Osseo, MN 2022-07-21 5★★★★★ - \"I am truly blessed and grateful for all of your patience and help this year and am so fortunate that I am one of your",
+      "We are in our second year with them, and we continue to receive new customers every month."
+    ],
+    "objections": [
+      "👉 Call us today to find the perfect solution for your business needs at (888) 528-1993.Last updated July 2026 Got Questions?",
+      "Exclusive Leads 99 Calls vs Angi 99 Calls vs Logical Position 99 Calls vs Hook Agency Get Started 99 Calls Frequently Asked Questions Here you will find answers to the most commonly asked questions about our services.",
+      "See our customer reviews >> Get Started Last updated May 2026 Got Questions?",
+      "Submit Credit Cards Accepted Social Media 99Calls The Lead Generation Company We help contractors grow their business with exclusive, high-intent leads that convert.",
+      "Because you are a contractor who serves customers at their location, Google hides your street address so people do not visit you at your location."
+    ],
+    "urgency": [
+      "Charlie , Dream Baths of Alabama\" Charlie Thornton, Dream Baths of Alabama - Bathroom Remodeling in Central Alabama 2024-10-01 5★★★★★ - \"Love 99 I have been getting great converting leads for years now.",
+      "Monthly Growth Strategy Consultation: 55-minute sessions and unlimited email support.",
+      "I would highly recommend!\" Phoenix Construction Services - General Contractor in Haymarket, VA 2023-03-23 5★★★★★ - \"Professional, knowledgeable employees who produce results.\" Chris A Plus - A Plus Air Conditioning and Appliances Inc.",
+      "Affordable Essentials Set up today for just $249 Monthly service fee: $99 expires 08/31/2026 Why Choose the Essentials Package?",
+      "(1000% RECOMMENDATIONS)\"Montel Burton 2025-03-21 5★★★★★ Jeff Coleman, Cloud 9 Tubs LLC - Remodeling Leads Specializing in Tub to Shower Conversions in New Hampshire 2024-10-14 5★★★★★ - \"Kristen I don't know how to say Thank You the right way for all you do .",
+      "Exclusive Leads 99 Calls vs Angi 99 Calls vs Logical Position 99 Calls vs Hook Agency Get Started The New Business Marketing Build a Strong Foundation for Your Service Business Call Now - Start Getting Leads Starting a new service-area business requires planning and preparation."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Growth Pro Best in Class Lead Generation Services & Done For You Marketing Starting at $999/Mo.",
+          "url": "https://99calls.com/Pricing",
+          "pageTitle": "Lead Generation Pricing for Contractors - Affordable SEO & Google Ads Lead Across the US & Canada",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Price: $999 setup.",
+          "url": "https://99calls.com/Pricing",
+          "pageTitle": "Lead Generation Pricing for Contractors - Affordable SEO & Google Ads Lead Across the US & Canada",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "$999+15% of Ads budget per month Get Started Growth Most Popular Exclusive Leads & Tools to Convert More Starting at $199/Mo.",
+          "url": "https://99calls.com/Pricing",
+          "pageTitle": "Lead Generation Pricing for Contractors - Affordable SEO & Google Ads Lead Across the US & Canada",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Price: $399 setup.",
+          "url": "https://99calls.com/Pricing",
+          "pageTitle": "Lead Generation Pricing for Contractors - Affordable SEO & Google Ads Lead Across the US & Canada",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "$199+15% of Ads budget per month Start Generating Leads Essentials Start with the Basics Establish a Brand & Build Your Online Presence Starting at $99/Mo.",
+          "url": "https://99calls.com/Pricing",
+          "pageTitle": "Lead Generation Pricing for Contractors - Affordable SEO & Google Ads Lead Across the US & Canada",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Price: $249 setup.",
+          "url": "https://99calls.com/Pricing",
+          "pageTitle": "Lead Generation Pricing for Contractors - Affordable SEO & Google Ads Lead Across the US & Canada",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "Extremely profitable.\" Jason Skelton, Guaranteed Tree Service - Tree Services in Covington, Georgia 2020-11-11 5★★★★★ - \"99 Calls has been AMAZING for my company.",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Exclusive Leads 99 Calls vs Angi 99 Calls vs Logical Position 99 Calls vs Hook Agency Get Started Reviews & Testimonials ⭐⭐⭐⭐⭐ Reviews from the Web Google Facebook Better Business Bureau ⭐⭐⭐⭐⭐ Customer Reviews Rated 5.0 out of 5.0 ...",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "But our generation of great Customers are totally built on ya'll working with us and the professional caring attitude you bring.",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Not only did we have a restricted account but our long standing GBP with over 40 reviews was suspended.",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Highly recommend to use 99 Calls for all your marketing, advertising and GBP services !!!\"Vicky Bar 2024-09-11 5★★★★★ Kevin Lockett - Lock Pro Cleaning Services - Carpet Cleaning in Lynwood, IL 2024-09-05 5★★★★★ - \"99 calls is a phenomenal business to work with my customers",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "I would highly recommend!\" Phoenix Construction Services - General Contractor in Haymarket, VA 2023-03-23 5★★★★★ - \"Professional, knowledgeable employees who produce results.\" Chris A Plus - A Plus Air Conditioning and Appliances Inc.",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Very happy with all the business I get.\" Deckmasters - Deck & Fence Staining in Osseo, MN 2022-07-21 5★★★★★ - \"I am truly blessed and grateful for all of your patience and help this year and am so fortunate that I am one of your",
+          "url": "https://99calls.com/testimonials.htm",
+          "pageTitle": "Reviews & Testimonials for 99 Calls",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "We are in our second year with them, and we continue to receive new customers every month.",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We would absolutely recommend using them if you want to increase your business.\" Jason Dillard, Tri-City Electric Get Started The Essentials Package Establish a Brand & Build an Online Presence ____________ ⭐ Professional Branded Website: A professional, SEO-optimized website will build your online presence and",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "⭐ Optimized Google Business Profile (GBP): Our Platinum GBP Product expert ensures you'll show up in local searches, making it easy for potential clients to find and contact you.",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We help you collect and showcase customer reviews, establishing trust that brings in more business.",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We'll create a branded, SEO-optimized website that makes it easy for potential customers to find you online.",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "This isn’t just a website; it’s a lead-generating machine that converts visitors into paying customers.",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "👉 Call us today to find the perfect solution for your business needs at (888) 528-1993.Last updated July 2026 Got Questions?",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Submit Credit Cards Accepted Social Media 99Calls The Lead Generation Company We help contractors grow their business with exclusive, high-intent leads that convert.",
+          "url": "https://99calls.com/New-Business-Marketing-Services",
+          "pageTitle": "New Business Marketing for Contractors – Affordable SEO, GBP, Google Ads & LSA | US & Canada",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Exclusive Leads 99 Calls vs Angi 99 Calls vs Logical Position 99 Calls vs Hook Agency Get Started 99 Calls Frequently Asked Questions Here you will find answers to the most commonly asked questions about our services.",
+          "url": "https://99calls.com/FAQ.htm",
+          "pageTitle": "FAQ",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Because you are a contractor who serves customers at their location, Google hides your street address so people do not visit you at your location.",
+          "url": "https://99calls.com/FAQ.htm",
+          "pageTitle": "FAQ",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "See our customer reviews >> Get Started Last updated May 2026 Got Questions?",
+          "url": "https://99calls.com/FAQ.htm",
+          "pageTitle": "FAQ",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Submit Credit Cards Accepted Social Media 99Calls The Lead Generation Company We help contractors grow their business with exclusive, high-intent leads that convert.",
+          "url": "https://99calls.com/FAQ.htm",
+          "pageTitle": "FAQ",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://99calls.com/Pricing",
+        "https://99calls.com/contact.htm",
+        "https://99calls.com/testimonials.htm"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Pricing",
+        "Contact 99 Calls",
+        "The New Business Marketing",
+        "Want More Quality Leads Without Wasting Time or Money?"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Start Generating Leads",
+        "Submit",
+        "Contact",
+        "Start Online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://99calls.com/Pricing · 6 campos",
+        "https://99calls.com/contact.htm · 6 campos",
+        "https://99calls.com/testimonials.htm · 6 campos",
+        "https://99calls.com/New-Business-Marketing-Services · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Formulario/llamada → elección de paquete → configuración de web/GBP/SEO/Google Ads o LSA → doble verificación con IA de Google y revisión manual → entrega de llamada/lead cualificado →"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación [observado] → cualificación [inferido] → propuesta y cierre [observado] → entrega [observado] → retención [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://99calls.com/Pricing",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://99calls.com/contact.htm",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://99calls.com/testimonials.htm",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://99calls.com/New-Business-Marketing-Services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://99calls.com/FAQ.htm",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://99calls.com/about.htm",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://99calls.com/Roofing-eBook",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://99calls.com/Google-LSA.htm",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://99calls.com/blog/comparison-of-10-lead-generation-companies-for-service-businesses-and-why-99-calls-is-the-top-choice",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=99calls.com",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR17023523105886175233?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR11974709541003591681?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR09714962328423759873?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR16226266494441357313?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "http://www.99calls.com/roofing_leads%E2%81%A9",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR05322875874716942337?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "http://www.99calls.com/%E2%81%A9",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR07020539119541420033?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR13337922308099014657?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR14150029619373277185?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "http://www.99calls.com/electrician/leads%E2%81%A9",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR04636252853403385857?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "http://www.99calls.com/",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR05008332793743147009?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR07212862403527049217?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR17413825175123656705?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR15851341825462763521/creative/CR10640992685151748097?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (GoHighLevel) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Leads locales exclusivos y herramientas para convertirlos, sin contrato y con una escalera de servicio accesible.",
+      "positioning": "socio práctico y asequible para contratistas",
+      "audience": "Contratistas y servicios locales de Estados Unidos y Canadá, desde nuevos negocios hasta multiubicación.",
+      "voice": [
+        "práctico",
+        "optimista",
+        "orientado a small business",
+        "urgencia",
+        "abundancia de prueba"
+      ],
+      "patterns": [
+        "exclusive",
+        "high-intent",
+        "no contracts",
+        "turnkey",
+        "answer the phone",
+        "A+ BBB"
+      ]
+    },
+    "cta": {
+      "primary": "Hablar con un especialista o empezar online",
+      "secondary": [
+        "teléfono",
+        "ebook de roofing",
+        "auditorías",
+        "calculadores",
+        "casos",
+        "comparativas"
+      ],
+      "forms": [
+        {
+          "url": "https://99calls.com/contact.htm",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono",
+            "mensaje",
+            "consentimiento SMS de servicio opcional",
+            "consentimiento promocional opcional"
+          ],
+          "fieldCount": 6,
+          "friction": "media",
+          "submitted": false
+        },
+        {
+          "url": "https://99calls.com/Pricing",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "teléfono",
+            "mensaje",
+            "dos consentimientos SMS separados"
+          ],
+          "fieldCount": 6,
+          "friction": "media",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "SEO masivo por industria y ubicación, comparativas, herramientas, ebook, Ads y LSA. — stage: descubrimiento — evidenceUrls: https://99calls.com/ · https://99calls.com/Roofing-eBook · https://99calls.com/Google-LSA.htm"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Precios, FAQ, testimonios, comparadores y métricas por vertical. — stage: consideración — evidenceUrls: https://99calls.com/Pricing · https://99calls.com/testimonials.htm · https://99calls.com/FAQ.htm"
+      },
+      {
+        "stage": "captación",
+        "status": "observado",
+        "detail": "Formulario repetido, teléfono y lead magnets. — stage: captación — evidenceUrls: https://99calls.com/contact.htm · https://99calls.com/Roofing-eBook"
+      },
+      {
+        "stage": "cualificación",
+        "status": "inferido",
+        "detail": "El especialista asigna paquete, canal, industria, territorio y presupuesto; el formulario recoge pocos datos de negocio. — stage: cualificación — evidenceUrls: https://99calls.com/FAQ.htm"
+      },
+      {
+        "stage": "propuesta y cierre",
+        "status": "observado",
+        "detail": "Tres paquetes de entrada, pago con tarjeta aceptado y servicios/costes variables por canal. — stage: propuesta y cierre — evidenceUrls: https://99calls.com/Pricing"
+      },
+      {
+        "stage": "entrega",
+        "status": "observado",
+        "detail": "Tráfico SEO/PPC/LSA produce llamada o formulario exclusivo, se valida y entra en CRM con automatizaciones de respuesta y nurture. — stage: entrega — evidenceUrls: https://99calls.com/Google-LSA.htm · https://99calls.com/Pricing"
+      },
+      {
+        "stage": "retención",
+        "status": "observado",
+        "detail": "SEO acumulativo, reporting, reviews, reactivación, sesiones de estrategia y upsell de paquetes. — stage: retención — evidenceUrls: https://99calls.com/Pricing · https://99calls.com/New-Business-Marketing-Services"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "currency: USD — packages: Essentials — setup: 249 — monthly: 99 · Growth — setup: 399 — monthly: 199 — adBudgetPercent: 15 · Growth Pro — setup: 999 — monthly: 999 — adBudgetPercent: 15"
+      ],
+      "contract": [
+        "Promesa reiterada de ausencia de contrato largo y cancelación; detalle de aviso no localizado."
+      ],
+      "guarantee": [
+        "Para SEO lead generation declara facturar solo leads exclusivos cualificados y no cobrar los no entregados; en LSA monitoriza y disputa inválidos. No garantiza volumen universal."
+      ]
+    },
+    "proof": [
+      "claims: más de 1,5 millones de leads generados · más de 1.000 contratistas atendidos · actividad desde 2010 · calificación A+ de BBB declarada · página extensa de testimonios — quality: media — caveat: La mayoría de cifras está autopublicada; los testimonios varían en antigüedad y no todos exponen inversión o atribución."
+    ],
+    "objections": [
+      "objection: No quiero leads compartidos. — answer: Se presentan como exclusivos para una sola empresa.",
+      "objection: No quiero contrato. — answer: Cancelación y ausencia de contrato largo como argumento central.",
+      "objection: Pierdo llamadas y no hago seguimiento. — answer: Missed-call text back, calendario, nurturing y CRM.",
+      "objection: ¿Cuándo y cuántos leads recibiré? — answer: La FAQ diferencia velocidad por canal y evita un volumen único; SEO tarda más que PPC.",
+      "objection: ¿Qué pasa con leads inválidos? — answer: Validación por Google/IA y revisión manual en LSA, con disputa de inválidos; reglas universales de crédito no visibles."
+    ],
+    "technology": [
+      "Google Tag Manager, Google Analytics y Google Ads — basis: etiquetas públicas",
+      "GoHighLevel — basis: señales en recursos y stack de CRM",
+      "Google LSA y Google Business Profile — basis: servicios principales",
+      "Zapier — basis: integración CRM declarada",
+      "Google Calendar — basis: calendario integrado declarado",
+      "reCAPTCHA — basis: protección del formulario"
+    ],
+    "contradictions": [
+      "Leads exclusivos y cualificados se presentan como promesa amplia, pero la garantía pública concreta se limita a determinadas modalidades de SEO y disputas LSA. — severity: alta",
+      "El producto de entrada de bajo coste puede necesitar tiempo SEO y gasto de Ads adicional, mientras el mensaje de rapidez domina varias páginas. — severity: media",
+      "El stack de funciones es tan amplio que los límites entre paquetes y costes variables requieren lectura cuidadosa. — severity: media",
+      "La página pública de términos encontrada regula SMS, no constituye términos comerciales completos del servicio. — severity: baja"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "No se envió ningún formulario ni se llamó.",
+      "No se accedió a términos comerciales completos, CRM o campañas.",
+      "La verificación externa de BBB, reviews y volumen queda fuera de esta pasada centrada en fuentes oficiales."
+    ],
+    "lessons": {
+      "copy": [
+        "escalera de paquetes",
+        "leads exclusivos",
+        "stack de conversión poslead",
+        "sin contrato",
+        "contenido por vertical y ubicación"
+      ],
+      "adapt": [
+        "tabla comparativa limpia",
+        "política única de lead inválido",
+        "captación con campos de fit",
+        "casos por canal y cohorte",
+        "Selector por sector, territorio, velocidad deseada y presupuesto que recomiende SEO, PPC, LSA o combinación y enseñe rango de ramp-up.",
+        "La verdadera ventaja no es solo generar el lead: es capturarlo, responder, reservar, nutrir, medir y reactivar dentro del mismo sistema."
+      ],
+      "avoid": [
+        "sobrecargar la ficha con funciones",
+        "extender una garantía de un canal a toda la oferta",
+        "repetir el mismo formulario sin contexto"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://99calls.com/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/Pricing",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/contact.htm",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/testimonials.htm",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/New-Business-Marketing-Services",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/FAQ.htm",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/about.htm",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/Roofing-eBook",
+        "label": "Fuente manual 8",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/Google-LSA.htm",
+        "label": "Fuente manual 9",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/why-99-Calls.htm",
+        "label": "Fuente manual 10",
+        "status": "observado"
+      },
+      {
+        "url": "https://99calls.com/terms-conditions.htm",
+        "label": "Fuente manual 11",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

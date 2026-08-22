@@ -1,0 +1,892 @@
+{
+  "id": "surper",
+  "name": "Surper",
+  "reviewedAt": "2026-08-22T15:50:17.475Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Agencia deMarketing Digitalen Barcelona y Madrid",
+    "heroObserved": true,
+    "priorSummary": "Agencia generalista para negocios locales y pymes: Meta/Google, SEO local, automatización, CRM y asistentes IA, con auditoría y propuesta cerrada.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 1101 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 3987 palabras por página comercial recuperada. Muestras breves: “Agencia deMarketing Digitalen Barcelona y Madrid” · “Estrategia, Accióny Resultados”.",
+    "supportingHeadings": [
+      "Agencia deMarketing Digitalen Barcelona y Madrid",
+      "Marcas que crecen con nosotros",
+      "Servicios de marketing digitalen Barcelona y Madrid",
+      "Diseño Web Profesional",
+      "SEO Local",
+      "Meta Ads",
+      "Google Ads",
+      "Pack Meta + Google Ads",
+      "Community Manager",
+      "Branding Completo",
+      "Automatizaciones Inteligentes",
+      "CRM Personalizado a Medida + IA",
+      "Publicidad Exterior — Rótulos y Lonas",
+      "¿Quieres ver más servicios?",
+      "Todo tu negocio en un solo sistema",
+      "Deja de perder tiempoentre mil herramientas",
+      "¿Quieres saber qué está frenando tu negocio online?",
+      "Un proceso simple,resultados extraordinarios",
+      "Análisis gratuito",
+      "Estrategia a medida",
+      "Ejecución rápida",
+      "Optimización continua",
+      "Reportes claros",
+      "Resultados que hablanpor sí solos",
+      "Clínica dental — Madrid",
+      "Gimnasio — Barcelona",
+      "Tienda gourmet — Valencia",
+      "Proyectos quehablan por nosotros",
+      "Empresas que ya crecencon Surper",
+      "Últimos artículos"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar auditoría gratis →",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://surper.es/servicio/pack-ads",
+      "text": "Solicitar auditoría gratis →",
+      "href": "https://surper.es/contacto",
+      "element": "a",
+      "kind": "conversion",
+      "score": 298
+    },
+    "ctas": [
+      "Solicitar auditoría gratis →",
+      "💬 Consultar por WhatsApp",
+      "Quiero mi auditoría gratis",
+      "Solicitar análisis gratis →",
+      "Solicitar presupuesto gratis →",
+      "Contacto",
+      "Solicitar →",
+      "Solicitar presupuesto →",
+      "WhatsApp directo",
+      "Pídelo por WhatsApp",
+      "💬 WhatsApp directo",
+      "💬 Prefiero WhatsApp",
+      "Escríbenos por WhatsApp",
+      "💬 Enviármelo por WhatsApp",
+      "💬 Hablar ahora por WhatsApp",
+      "← Volver",
+      "Continuar →",
+      "💬 Pregúntanos",
+      "Enviar mensaje →",
+      "Enviar feedback →",
+      "Enviar solicitud →",
+      "Enviar testimonio →",
+      "Quiero una web así →",
+      "Enviarme el checklist",
+      "Hablar con el equipo →",
+      "📹 Enviar mi testimonio",
+      "Hablemos de tu proyecto →",
+      "Quiero unificar mi negocio →",
+      "Quiero las tarifas mayoristas",
+      "Marca blanca · Sé mi proveedor"
+    ],
+    "captureType": "Alta / listado profesional",
+    "forms": [
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 1,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Enviarme el checklist",
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": null,
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 2,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Enviar mensaje →",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": null,
+            "placeholder": "Tu empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "servicio",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Cuéntanos sobre tu proyecto...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 3,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Enviar solicitud →",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "puesto",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "portfolio",
+            "label": null,
+            "placeholder": "https://tu-portfolio.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "file",
+            "name": "cv",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "experiencia",
+            "label": null,
+            "placeholder": "Cuéntanos tu experiencia en marketing digital...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Motívanos para tenerte en el equipo...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 4,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Enviar testimonio →",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Tu nombre o negocio",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": null,
+            "placeholder": "Nombre de tu negocio",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "rol",
+            "label": null,
+            "placeholder": "Ej: Propietario, Gerente...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "rating",
+            "label": "★",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "texto",
+            "label": null,
+            "placeholder": "Cuéntanos cómo te ayudó Surper...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 5,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Enviar feedback →",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "tu@email.com (opcional)",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "experiencia",
+            "label": null,
+            "placeholder": "Cuéntanos qué tal ha ido todo...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "¿Qué podríamos hacer mejor?",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 6,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Quiero las tarifas mayoristas",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre y apellidos *",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": "Empresa o marca *",
+            "placeholder": "Nombre de tu negocio",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email profesional *",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "+34 600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector_partner",
+            "label": "¿A qué te dedicas?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "volumen",
+            "label": "Volumen que prevés derivar",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "servicios_mb",
+            "label": "Diseño web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": "Cuéntanos tu caso (opcional)",
+            "placeholder": "Qué tipo de clientes tienes, qué te piden y qué no puedes",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "listing",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 7,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Solicitar →",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Tu email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://surper.es/servicio/pack-ads",
+        "index": 8,
+        "action": "https://surper.es/servicio/pack-ads",
+        "method": "GET",
+        "submitText": "Quiero mi auditoría gratis",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "empresa",
+            "label": "Nombre de tu negocio *",
+            "placeholder": "Ej: Restaurante La Marina",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "sector",
+            "label": "Sector *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "web",
+            "label": "Tu web o Instagram (opcional)",
+            "placeholder": "tunegocio.com o @tunegocio",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Tu nombre *",
+            "placeholder": "Ej: Marta",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "tu@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono *",
+            "placeholder": "600 000 000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website",
+            "label": "No rellenar",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "8 diseño(s) de formulario distinto(s); entre 2 y 8 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: website, empresa, servicio, puesto, Empresa o marca *, Diseño web, Sector *, Tu web o Instagram (opcional).",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 8,
+      "qualification": [
+        "website",
+        "empresa",
+        "servicio",
+        "puesto",
+        "Empresa o marca *",
+        "Diseño web",
+        "Sector *",
+        "Tu web o Instagram (opcional)"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia generalista para negocios locales y pymes: Meta/Google, SEO local, automatización, CRM y asistentes IA, con auditoría y propuesta cerrada.",
+    "audience": "Negocios locales y pymes; ejemplos en salud, fitness, ecommerce y servicios.",
+    "prices": [],
+    "guarantee": [
+      "Trabajamos con proveedores tecnológicos (alojamiento, correo) que actúan como encargados del tratamiento bajo contrato y con garantías adecuadas."
+    ],
+    "proof": [
+      "Ver servicio de diseño web → Ver portfolio <2sTiempo de carga 100%Responsive SEOOptimizado Sistema integral con IA Todo tu negocioen un solosistema Ventas, clientes, facturación, WhatsApp, agenda, marketing y métricas unificados.",
+      "+50Negocios activos +150Proyectos entregados 98%Clientes satisfechos 5.0★Valoración media Ver casos de éxito y portfolio → Nuestros servicios Servicios de marketing digitalen Barcelona y Madrid Diseño web, SEO, publicidad y automatización para negocios locales y PYMEs en Barcelona, Madrid y toda España.",
+      "★★★★★ 5,0 · +50 reseñas verificadas en Google Solicitar presupuesto gratis → Ver servicios +150Proyectos entregados 98%Clientes satisfechos +50Clientes activos 5.0★Google Reviews Auditoría gratis → Respondemos en menos de 24h Diseño Web Premium Webs queconviertenvisitantes en clientes Diseño web profesional optimizado para velocidad, SEO y",
+      "Inicio Servicios Portfolio Resultados Testimonios Blog Nosotros Contacto ▼ Español✓ Català✓ English✓ Deutsch✓ Français✓ Italiano✓ Inicio Servicios Portfolio Resultados Testimonios Blog Nosotros Contacto Pedir mi audit…"
+    ],
+    "objections": [
+      "Explorar todos los servicios → 💬 Pregúntanos ✓ +20 servicios ✓ Sin permanencia ✓ Presupuesto gratis ✓ Pago flexible Sistema Integral Todo tu negocio en un solo sistema Olvídate de tener 10 herramientas distintas.",
+      "FAQAntes de escribirnos ¿En cuánto tiempo me responden?Siempre en menos de 24 horas laborables, y en la mayoría de casos el mismo día.",
+      "¿Por qué contactarnos?",
+      "5MB) * Experiencia relevante ¿Por qué quieres unirte a Surper?",
+      "Solicitar auditoría gratis → FAQPreguntas frecuentes ¿Cuánto tarda un proyecto en estar listo?Depende del servicio: una web sencilla suele estar lista en 1-2 semanas, un ecommerce o CRM con IA en 3-4 semanas, y campañas de ads pueden lanzarse en menos de una semana."
+    ],
+    "urgency": [
+      "…acho de abogados de empresa Agencia de marketing saturada Otro Volumen que prevés derivar Selecciona una opción Empiezo ahora · 1-2 proyectos al año 1-2 proyectos al mes 3-5 proyectos al mes Más de 5 proyectos al mes Cartera activa que quiero migrar ¿Qué servicios quieres revender?",
+      "Empieza hoy ¿Listo para hacercrecer tu negocio?",
+      "Hoy somos un equipo pequeño y especializado que trabaja con decenas de negocios en toda España."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Trabajamos con proveedores tecnológicos (alojamiento, correo) que actúan como encargados del tratamiento bajo contrato y con garantías adecuadas.",
+          "url": "https://surper.es/contacto",
+          "pageTitle": "Contacto — Pide tu Presupuesto Gratis | Surper",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Trabajamos con proveedores tecnológicos (alojamiento, correo) que actúan como encargados del tratamiento bajo contrato y con garantías adecuadas.",
+          "url": "https://surper.es/resultados",
+          "pageTitle": "Resultados Reales de Nuestros Clientes | Surper",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Trabajamos con proveedores tecnológicos (alojamiento, correo) que actúan como encargados del tratamiento bajo contrato y con garantías adecuadas.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Inicio Servicios Portfolio Resultados Testimonios Blog Nosotros Contacto ▼ Español✓ Català✓ English✓ Deutsch✓ Français✓ Italiano✓ Inicio Servicios Portfolio Resultados Testimonios Blog Nosotros Contacto Pedir mi audit…",
+          "url": "https://surper.es/resultados",
+          "pageTitle": "Resultados Reales de Nuestros Clientes | Surper",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "★★★★★ 5,0 · +50 reseñas verificadas en Google Solicitar presupuesto gratis → Ver servicios +150Proyectos entregados 98%Clientes satisfechos +50Clientes activos 5.0★Google Reviews Auditoría gratis → Respondemos en menos de 24h Diseño Web Premium Webs queconviertenvisitantes en clientes Diseño web profesional optimizado para velocidad, SEO y",
+          "url": "https://surper.es/resultados",
+          "pageTitle": "Resultados Reales de Nuestros Clientes | Surper",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Ver servicio de diseño web → Ver portfolio <2sTiempo de carga 100%Responsive SEOOptimizado Sistema integral con IA Todo tu negocioen un solosistema Ventas, clientes, facturación, WhatsApp, agenda, marketing y métricas unificados.",
+          "url": "https://surper.es/resultados",
+          "pageTitle": "Resultados Reales de Nuestros Clientes | Surper",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "+50Negocios activos +150Proyectos entregados 98%Clientes satisfechos 5.0★Valoración media Ver casos de éxito y portfolio → Nuestros servicios Servicios de marketing digitalen Barcelona y Madrid Diseño web, SEO, publicidad y automatización para negocios locales y PYMEs en Barcelona, Madrid y toda España.",
+          "url": "https://surper.es/resultados",
+          "pageTitle": "Resultados Reales de Nuestros Clientes | Surper",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Inicio Servicios Portfolio Resultados Testimonios Blog Nosotros Contacto ▼ Español✓ Català✓ English✓ Deutsch✓ Français✓ Italiano✓ Inicio Servicios Portfolio Resultados Testimonios Blog Nosotros Contacto Pedir mi audit…",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "★★★★★ 5,0 · +50 reseñas verificadas en Google Solicitar presupuesto gratis → Ver servicios +150Proyectos entregados 98%Clientes satisfechos +50Clientes activos 5.0★Google Reviews Auditoría gratis → Respondemos en menos de 24h Diseño Web Premium Webs queconviertenvisitantes en clientes Diseño web profesional optimizado para velocidad, SEO y",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ver servicio de diseño web → Ver portfolio <2sTiempo de carga 100%Responsive SEOOptimizado Sistema integral con IA Todo tu negocioen un solosistema Ventas, clientes, facturación, WhatsApp, agenda, marketing y métricas unificados.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "+50Negocios activos +150Proyectos entregados 98%Clientes satisfechos 5.0★Valoración media Ver casos de éxito y portfolio → Nuestros servicios Servicios de marketing digitalen Barcelona y Madrid Diseño web, SEO, publicidad y automatización para negocios locales y PYMEs en Barcelona, Madrid y toda España.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Sin permanencia.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Explorar todos los servicios → 💬 Pregúntanos ✓ +20 servicios ✓ Sin permanencia ✓ Presupuesto gratis ✓ Pago flexible Sistema Integral Todo tu negocio en un solo sistema Olvídate de tener 10 herramientas distintas.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "¿Por qué contactarnos?",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "FAQAntes de escribirnos ¿En cuánto tiempo me responden?Siempre en menos de 24 horas laborables, y en la mayoría de casos el mismo día.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "5MB) * Experiencia relevante ¿Por qué quieres unirte a Surper?",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Solicitar auditoría gratis → FAQPreguntas frecuentes ¿Cuánto tarda un proyecto en estar listo?Depende del servicio: una web sencilla suele estar lista en 1-2 semanas, un ecommerce o CRM con IA en 3-4 semanas, y campañas de ads pueden lanzarse en menos de una semana.",
+          "url": "https://surper.es/servicios",
+          "pageTitle": "Servicios de Marketing Digital para PYMEs | Surper",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://surper.es/servicio/pack-ads",
+        "https://surper.es/contacto",
+        "https://surper.es/resultados"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia deMarketing Digitalen Barcelona y Madrid",
+        "Estrategia, Accióny Resultados"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Solicitar presupuesto gratis →",
+        "💬 Consultar por WhatsApp",
+        "Quiero una web así →",
+        "💬 Pregúntanos",
+        "Quiero unificar mi negocio →",
+        "📹 Enviar mi testimonio",
+        "Enviarme el checklist"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://surper.es/servicio/pack-ads · 3 campos",
+        "https://surper.es/servicio/pack-ads · 6 campos",
+        "https://surper.es/servicio/pack-ads · 8 campos",
+        "https://surper.es/servicio/pack-ads · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Auditoría/Contacto → análisis de negocio y competencia → estrategia + propuesta → ejecución (campañas en menos de una semana, según web) → optimización e informe mensual → lead"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://surper.es/servicio/pack-ads",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://surper.es/contacto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://surper.es/resultados",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://surper.es/servicios",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://surper.es/nosotros",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://surper.es/portfolio",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://surper.es/cartel-contacto.html",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://surper.es/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar auditoría gratis →”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

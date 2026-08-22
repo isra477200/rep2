@@ -1,0 +1,381 @@
+{
+  "id": "empresasguinea-com",
+  "name": "empresasguinea.com",
+  "reviewedAt": "2026-08-22T15:50:18.736Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Directorio de empresas y Servicios profesionales de Guinea Ecuatorial",
+    "heroObserved": true,
+    "priorSummary": "Buscar clientes/proveedores; publicar servicios, productos, eventos, empleo, inmuebles y vídeos.",
+    "voice": "Tono cuantitativo, enérgico, autoridad basada en prueba, urgencia comercial, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 273 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1144 palabras por página comercial recuperada. Muestras breves: “Directorio de empresas y Servicios profesionales de Guinea Ecuatorial”.",
+    "supportingHeadings": [
+      "Your Shopping Cart",
+      "Directorio de empresas y Servicios profesionales de Guinea Ecuatorial",
+      "Buscar por categoría",
+      "Anuncios destacados",
+      "Noticias",
+      "Popular",
+      "Anuncios recientes",
+      "Tipos de auditorías que puedes realizar en tu pyme",
+      "Comparte esta información",
+      "Destacado",
+      "Servicios",
+      "NEGOCIO BÁSICO",
+      "NEGOCIO AVANZADO",
+      "NEGOCIO PREMIUM",
+      "La empresa GEPsing pone en conocimiento del publico la disponibilidad de varias ofertas de empleo",
+      "Contactar con nosotros",
+      "Negocios y servicios profesionales"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.empresasguinea.com/",
+      "text": "Contact Us",
+      "href": "https://www.empresasguinea.com/pages/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Call Centers",
+      "Enviar",
+      "¡Compra ahora!",
+      "todas las categorias"
+    ],
+    "captureType": "Checkout verificado",
+    "forms": [
+      {
+        "pageUrl": "https://www.empresasguinea.com/",
+        "index": 4,
+        "action": "https://www.empresasguinea.com/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "select",
+            "name": "select-country",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.empresasguinea.com/pages/servicios",
+        "index": 3,
+        "action": "https://www.empresasguinea.com/pages/servicios",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Ingrese su mensaje",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Introduzca su nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Ingrese su teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Introduce tu correo electrónico",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "captcha_code",
+            "label": null,
+            "placeholder": "Por favor ingrese el código.",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 5 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": true,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Buscar clientes/proveedores; publicar servicios, productos, eventos, empleo, inmuebles y vídeos.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "NEGOCIO AVANZADO CFA 30000.00 Destacado en resultados de búsqueda Soporte limitado 1 negocio, 5 productos Saldo de 50 SMS en EquaMarketing.com ¡Compra ahora!",
+      "NEGOCIO PREMIUM CFA 50000.00 Destacado en portada y resultados de búsquedas Soporte prioritario 24x7 1 negocio, 10 productos Saldo de 100 SMS en EquaMarketing.com ¡Compra ahora!",
+      "Administre sus campañas de marketing, cree alertas por SMS e interactúe con sus clientes desde el área de clientes de...",
+      "Encuentra todo lo que buscas: clientes, proveedores, servicios profesionales y anuncia tus servicios.",
+      "Ayudamos a nuestros clientes, tanto empresas como particulares a estar al dia con sus obligaciones con......",
+      "Operating at the cutting edge of business practices today, Centurion stands ready to provide outsourced legal representation and a......"
+    ],
+    "objections": [],
+    "urgency": [
+      "NEGOCIO AVANZADO CFA 30000.00 Destacado en resultados de búsqueda Soporte limitado 1 negocio, 5 productos Saldo de 50 SMS en EquaMarketing.com ¡Compra ahora!",
+      "NEGOCIO PREMIUM CFA 50000.00 Destacado en portada y resultados de búsquedas Soporte prioritario 24x7 1 negocio, 10 productos Saldo de 100 SMS en EquaMarketing.com ¡Compra ahora!",
+      "IBEROGUINEANA Rey Boncoro 342 Malabo, Bioko Norte 342, Guinea Ecuatorial Telefono no: 240 222 16 59 59 IBEROGUINEANA nace con el objetivo de gestionar tus compras en España o Europa, eliminando el coste de desplazamiento y evitando la molestia de buscar proveedores.",
+      "Ahora que empieza el periodo escolar es el momento de pensar por el futuro de tus hijos.",
+      "Operating at the cutting edge of business practices today, Centurion stands ready to provide outsourced legal representation and a......",
+      "Crear una cuenta ahora Restablecer contraseña Iniciar sesión Crear una cuenta ahora Iniciar sesión Los campos obligatorios están en negrita ."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Administre sus campañas de marketing, cree alertas por SMS e interactúe con sus clientes desde el área de clientes de...",
+          "url": "https://www.empresasguinea.com/",
+          "pageTitle": "Directorio de empresas y Servicios profesionales de Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Encuentra todo lo que buscas: clientes, proveedores, servicios profesionales y anuncia tus servicios.",
+          "url": "https://www.empresasguinea.com/",
+          "pageTitle": "Directorio de empresas y Servicios profesionales de Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "other"
+        },
+        {
+          "text": "NEGOCIO AVANZADO CFA 30000.00 Destacado en resultados de búsqueda Soporte limitado 1 negocio, 5 productos Saldo de 50 SMS en EquaMarketing.com ¡Compra ahora!",
+          "url": "https://www.empresasguinea.com/pages/servicios",
+          "pageTitle": "Registro en el directorio y servicios publicitarios en Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "NEGOCIO PREMIUM CFA 50000.00 Destacado en portada y resultados de búsquedas Soporte prioritario 24x7 1 negocio, 10 productos Saldo de 100 SMS en EquaMarketing.com ¡Compra ahora!",
+          "url": "https://www.empresasguinea.com/pages/servicios",
+          "pageTitle": "Registro en el directorio y servicios publicitarios en Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ayudamos a nuestros clientes, tanto empresas como particulares a estar al dia con sus obligaciones con......",
+          "url": "https://www.empresasguinea.com/pages/servicios",
+          "pageTitle": "Registro en el directorio y servicios publicitarios en Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Operating at the cutting edge of business practices today, Centurion stands ready to provide outsourced legal representation and a......",
+          "url": "https://www.empresasguinea.com/pages/servicios",
+          "pageTitle": "Registro en el directorio y servicios publicitarios en Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Encuentra todo lo que buscas: clientes, proveedores, servicios profesionales y anuncia tus servicios.",
+          "url": "https://www.empresasguinea.com/pages/servicios",
+          "pageTitle": "Registro en el directorio y servicios publicitarios en Guinea Ecuatorial | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Ayudamos a nuestros clientes, tanto empresas como particulares a estar al dia con sus obligaciones con......",
+          "url": "https://www.empresasguinea.com/category/negocios-y-servicios-profesionales-2",
+          "pageTitle": "La mejor guí­a, buscador y directorio de empresas y servicios profesionales en Guinea Ecuatorial. | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Operating at the cutting edge of business practices today, Centurion stands ready to provide outsourced legal representation and a......",
+          "url": "https://www.empresasguinea.com/category/negocios-y-servicios-profesionales-2",
+          "pageTitle": "La mejor guí­a, buscador y directorio de empresas y servicios profesionales en Guinea Ecuatorial. | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Encuentra todo lo que buscas: clientes, proveedores, servicios profesionales y anuncia tus servicios.",
+          "url": "https://www.empresasguinea.com/category/negocios-y-servicios-profesionales-2",
+          "pageTitle": "La mejor guí­a, buscador y directorio de empresas y servicios profesionales en Guinea Ecuatorial. | EMPRESASGUINEA.COM",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.empresasguinea.com/",
+        "https://www.empresasguinea.com/news/tipos-de-auditorias-que-puedes-realizar-en-tu-pyme",
+        "https://www.empresasguinea.com/pages/servicios"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Directorio de empresas y Servicios profesionales de Guinea Ecuatorial"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Enviar",
+        "¡Compra ahora!",
+        "todas las categorias",
+        "Call Centers"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.empresasguinea.com/ · 1 campos",
+        "https://www.empresasguinea.com/news/tipos-de-auditorias-que-puedes-realizar-en-tu-pyme · 1 campos",
+        "https://www.empresasguinea.com/pages/servicios · 5 campos",
+        "https://www.empresasguinea.com/pages/servicios · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "observado",
+      "evidence": [
+        "Checkout o compra directa visible."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Propuesta / cierre [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.empresasguinea.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.empresasguinea.com/news/tipos-de-auditorias-que-puedes-realizar-en-tu-pyme",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.empresasguinea.com/pages/servicios",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.empresasguinea.com/login",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.empresasguinea.com/news/la-empresa-gepsing-pone-en-conocimiento-del-publico-la-disponibilidad-de-varias-ofertas-de-empleo",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.empresasguinea.com/pages/contact",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.empresasguinea.com/category/negocios-y-servicios-profesionales-2",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.empresasguinea.com/users/hybrid_login/Facebook: HTTP 500",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

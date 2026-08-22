@@ -1,0 +1,453 @@
+{
+  "id": "syrian-business-gateway",
+  "name": "Syrian Business Gateway",
+  "reviewedAt": "2026-08-22T15:50:18.951Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "مرجع مهني لفهم السوق السوري",
+    "heroObserved": true,
+    "priorSummary": "Cuenta gratuita o suscripción; acceso a oportunidades, investigación, asistente SBG AI y servicios por encargo de entrada a mercado, constitución, viabilidad, crecimiento y presencia digital.",
+    "voice": "Tono cuantitativo, urgencia comercial, explicativo, orientado a la acción. Usa 102 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1758 palabras por página comercial recuperada. Muestras breves: “مرجع مهني لفهم السوق السوري” · “تواصل معنا” · “تسعيرة المحروقات الجديدة في سوريا: تخفيضات مباشرة واختبار أكبر لآلية التسعير”.",
+    "supportingHeadings": [
+      "مرجع مهني لفهم السوق السوري",
+      "وتأسيس الأعمال واتخاذ قرارات أوضح",
+      "ابدأ حسب احتياجك",
+      "فهم السوق",
+      "فرصة استثمارية",
+      "متابعة القوانين",
+      "البحث عن مناقصة",
+      "تطوير الشركة",
+      "تحديد الاحتياج",
+      "تصنيفاً في خريطة المنصة",
+      "دراسة جدوى عملية",
+      "مادة قانونية وتشريعية",
+      "مادة منشورة",
+      "لماذا تستحق سوريا الدراسة الاستثمارية الآن؟",
+      "إعادة إعمار واسعة",
+      "إطار قانوني أكثر انفتاحاً",
+      "اقتصاد منخفض القاعدة",
+      "الطاقة مفتاح التعافي",
+      "موقع تجاري بين أسواق قريبة",
+      "ابدأ بدراسة السوق قبل اتخاذ القرار",
+      "قانون الاستثمار في سوريا: دليل مرجعي لفهم الإطار القانوني للاستثمار",
+      "كيفية تحليل السوق في دراسة الجدوى: خطوات عملية تناسب واقع الاقتصاد السوري",
+      "ما الذي يجب فهمه قبل البحث عن فرصة استثمارية في سوريا؟",
+      "من الفهم إلى التأسيس: متى تنتقل إلى دخول السوق وتأسيس الشركات؟",
+      "آخر ما يهم مجتمع الأعمال",
+      "مختارات حديثة لفهم بيئة الأعمال في سوريا",
+      "●",
+      "تحليلات اقتصادية",
+      "من طلال الهلالي إلى رواد رمضان: هل تدخل هيئة الاستثمار السورية مرحلة التنفيذ؟",
+      "نمو من خانتين في 2026.. هل يدخل الاقتصاد السوري مرحلة الانطلاقة؟"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "تواصل معنا",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://syrianbusinessgateway.com/",
+      "text": "تواصل معنا",
+      "href": "https://syrianbusinessgateway.com/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 262.5
+    },
+    "ctas": [
+      "تواصل معنا",
+      "ارسل",
+      "حلول مخصصة",
+      "إرسال الرسالة",
+      "سياسة التحرير",
+      "ابدأ تأسيس شركتك",
+      "مركز متابعة الأعمال"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://syrianbusinessgateway.com/contact-us/",
+        "index": 1,
+        "action": "https://syrianbusinessgateway.com/contact-us/",
+        "method": "POST",
+        "submitText": "إرسال الرسالة",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "input_text",
+            "label": "الاسم الكامل",
+            "placeholder": "اكتب الاسم الكامل",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_text_1",
+            "label": "اسم الشركة أو الجهة",
+            "placeholder": "اكتب اسم الشركة أو الجهة",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_text_2",
+            "label": "المنصب أو الصفة",
+            "placeholder": "مدير عام، مؤسس، صاحب شركة، مدير تطوير أعمال...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "البريد الإلكتروني",
+            "placeholder": "example@company.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "رقم الهاتف/الجوال",
+            "placeholder": "أدخل رقم الهاتف",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "input_radio",
+            "label": "استفسار عام",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "input_text_3",
+            "label": "موضوع الرسالة",
+            "placeholder": "اكتب موضوع الرسالة",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "description",
+            "label": "نص الرسالة",
+            "placeholder": "اكتب رسالتك باختصار ووضوح، وسنراجعها ونتواصل معك في أقرب وقت ممكن.",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox[]",
+            "label": "أوافق على استخدام المعلومات الواردة أعلاه لغرض متابعة هذا التواصل فقط.",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://syrianbusinessgateway.com/syria-fuel-prices-new-pricing-mechanism/",
+        "index": 1,
+        "action": "https://syrianbusinessgateway.com/syria-fuel-prices-new-pricing-mechanism/",
+        "method": "POST",
+        "submitText": "ارسل",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[name]",
+            "label": "الأسم الكامل",
+            "placeholder": "الأسم الكامل",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "form_fields[email]",
+            "label": "هاتف",
+            "placeholder": "هاتف",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_1]",
+            "label": "البريد الالكتروني",
+            "placeholder": "البريد الالكتروني",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_00187c7]",
+            "label": "نص الرسالة",
+            "placeholder": "نص الرسالة",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 9 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 9,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Cuenta gratuita o suscripción; acceso a oportunidades, investigación, asistente SBG AI y servicios por encargo de entrada a mercado, constitución, viabilidad, crecimiento y presencia digital.",
+    "audience": null,
+    "prices": [
+      "…يعني أن سعر المحروقات في سوريا سيبقى متأثراً بعوامل خارجية وداخلية في وقت واحد، لكنه سيصدر للمستهلك والقطاع الخاص بصورة رسمية بالليرة السورية.المراجعة كل 15 يوماً: هل هي إيجابية؟أعلنت اللجنة الدائمة لتحديد أسعار المواد البترولية والثروات المعدنية أن عملها يقوم على اجتماع دوري كل 15 يوماً، إضافة إلى جلسات استثنائية عند الحاجة."
+    ],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "اطلب جلسة تحديد الاحتياج الأسئلة الشائعة ما الذي تتضمنه خدمات الأعمال؟تتضمن خدمات الأعمال مسارين رئيسيين: خدمات السوق والاستثمار، وخدمات النمو والتطوير للشركات، ويخدم كل منهما احتياجاً عملياً مختلفاً داخل رحلة القرار أو التنفيذ.",
+      "ما أهم المخاطر القانونية التي يجب الانتباه لها قبل توقيع عقد أو بدء شراكة؟أهم المخاطر تشمل غموض صلاحيات الشركاء، ضعف توثيق الاتفاق، عدم وضوح آلية فض النزاعات، وجود التزامات سابقة على الطرف المحلي، عدم التحقق من الملكية أو الترخيص، أو الاعتم…",
+      "لذلك يجب التمييز بين تأسيس الكيان القانوني والحصول على ترخيص مزاولة النشاط.حتى عندما تكون العلاقة مبنية على الثقة، يبقى العقد أداة تنظيمية ضرورية، خصوصاً في الشركات التي تريد بناء إدارة موارد بشرية واضحة وقابلة للتوسع.",
+      "…بحسب القطاع.قد تمتلك الشركة سجلاً تجارياً، لكنها لا تستطيع ممارسة نشاط معين قبل الحصول على الترخيص الخاص به.كلما كان العقد أوضح، كان أسهل في التطبيق وأقل عرضة للنزاع.",
+      "متى يحتاج المستثمر إلى مستشار قانوني أو خبير متخصص؟يحتاج المستثمر إلى مستشار قانوني أو خبير متخصص عندما ينتقل من مرحلة الاطلاع العام إلى مرحلة اتخاذ قرار فعلي، مثل تأسيس شركة، توقيع عقد، شراء أصول، الدخول في شراكة، استئجار موقع، التقدم لترخيص، أو استيراد معدات ومواد.المعلومات",
+      "وكلما زادت قيمة المشروع أو تعقيد القطاع، زادت الحاجة إلى مراجعة قانونية ومهنية قبل التنفيذ.كما يجب الانتباه إلى شروط الدفع، التوريد، المسؤولية، الانسحاب، السرية، الملكية الفكرية، وتوزيع الأرباح والخسائر.العقد الجيد لا يعبّر فقط عن الثقة بين الأطراف، بل يحمي المشروع عند ظهور خلاف أو تغير",
+      "…أو غير دقيق، عدم التحقق من التراخيص المطلوبة، الاعتماد على اتفاق شفهي بين الشركاء، عدم تنظيم الحصص والصلاحيات، استخدام عقد تأسيس لا يعكس طبيعة المشروع، أو بدء الإنفاق قبل التأكد من قابلية الترخيص.هذه الأخطاء قد لا تظهر في البداية، لكنها قد تسبب مشكلات عند التوسع أو دخول شريك جديد أو الحصول على تمويل أ…"
+    ],
+    "urgency": [
+      "تابع التحديثات القانونية التحليلات القانونيةقراءات تشرح أثر القوانين والقرارات على السوق، الاستثمار، الشركات، التكاليف، الامتثال، والتشغيل اليومي للأعمال.",
+      "هذا النوع من المواقع قد يكون مفيداً في مرحلة معينة، لأنه يمنح الشركة حضوراً رقمياً أساسياً ويساعد العميل أو الشريك على التحقق من وجودها.لكن السؤال الأهم اليوم هو: هل يكفي أن يكون الموقع أداة عرض؟ أم يجب أن يصبح أداة نمو؟الإجابة لا تكون واحدة لكل",
+      "أما بقية الخدمات فهي مخصصة لمن يعرف بالفعل ما الذي يحتاجه الآن، سواء كان ذلك فهماً للسوق، أو تقييماً أولياً لمشروع، أو ترتيباً لخطوات الدخول والتأسيس.",
+      "…مات وإدارة محددة داخل الشركة.أما المتعاقد المستقل فيقدم خدمة محددة أو عملاً معيناً دون أن يكون جزءاً من البنية الإدارية اليومية للشركة.الخلط بين الحالتين قد يسبب مشكلات قانونية ومالية، خصوصاً إذا تم التعامل مع موظف فعلي على أنه متعاقد مستقل لتجنب الالتزامات النظامية."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "الأعمالللشركات والمستثمرين والكيانات36 $ / شهرياً360 $ / سنوياً ✓ كل مزايا قرار.✓ حساب شركة لعدد 3 إلى 5 مستخدمين.✓ موارد ومتابعات أوسع مناسبة لاستخدام الفريق.✓ نشرات وتنبيهات أكثر ارتباطاً باهتمامات الجهة عند توفرها.✓ وصولاً إلى تقار…",
+          "url": "https://syrianbusinessgateway.com/",
+          "pageTitle": "Syrian Business Gateway | بوابة الأعمال السورية",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "…يعني أن سعر المحروقات في سوريا سيبقى متأثراً بعوامل خارجية وداخلية في وقت واحد، لكنه سيصدر للمستهلك والقطاع الخاص بصورة رسمية بالليرة السورية.المراجعة كل 15 يوماً: هل هي إيجابية؟أعلنت اللجنة الدائمة لتحديد أسعار المواد البترولية والثروات المعدنية أن عملها يقوم على اجتماع دوري كل 15 يوماً، إضافة إلى جلسات استثنائية عند الحاجة.",
+          "url": "https://syrianbusinessgateway.com/syria-fuel-prices-new-pricing-mechanism/",
+          "pageTitle": "تسعيرة المحروقات الجديدة في سوريا: تخفيضات مباشرة واختبار أكبر لآلية التسعير - Syrian Business Gateway",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "اطلب جلسة تحديد الاحتياج الأسئلة الشائعة ما الذي تتضمنه خدمات الأعمال؟تتضمن خدمات الأعمال مسارين رئيسيين: خدمات السوق والاستثمار، وخدمات النمو والتطوير للشركات، ويخدم كل منهما احتياجاً عملياً مختلفاً داخل رحلة القرار أو التنفيذ.",
+          "url": "https://syrianbusinessgateway.com/category/business-services/",
+          "pageTitle": "خدمات الأعمال - Syrian Business Gateway",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "ما أهم المخاطر القانونية التي يجب الانتباه لها قبل توقيع عقد أو بدء شراكة؟أهم المخاطر تشمل غموض صلاحيات الشركاء، ضعف توثيق الاتفاق، عدم وضوح آلية فض النزاعات، وجود التزامات سابقة على الطرف المحلي، عدم التحقق من الملكية أو الترخيص، أو الاعتم…",
+          "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+          "pageTitle": "الأسئلة الشائعة - Syrian Business Gateway",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "متى يحتاج المستثمر إلى مستشار قانوني أو خبير متخصص؟يحتاج المستثمر إلى مستشار قانوني أو خبير متخصص عندما ينتقل من مرحلة الاطلاع العام إلى مرحلة اتخاذ قرار فعلي، مثل تأسيس شركة، توقيع عقد، شراء أصول، الدخول في شراكة، استئجار موقع، التقدم لترخيص، أو استيراد معدات ومواد.المعلومات",
+          "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+          "pageTitle": "الأسئلة الشائعة - Syrian Business Gateway",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "وكلما زادت قيمة المشروع أو تعقيد القطاع، زادت الحاجة إلى مراجعة قانونية ومهنية قبل التنفيذ.كما يجب الانتباه إلى شروط الدفع، التوريد، المسؤولية، الانسحاب، السرية، الملكية الفكرية، وتوزيع الأرباح والخسائر.العقد الجيد لا يعبّر فقط عن الثقة بين الأطراف، بل يحمي المشروع عند ظهور خلاف أو تغير",
+          "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+          "pageTitle": "الأسئلة الشائعة - Syrian Business Gateway",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "لذلك يجب التمييز بين تأسيس الكيان القانوني والحصول على ترخيص مزاولة النشاط.حتى عندما تكون العلاقة مبنية على الثقة، يبقى العقد أداة تنظيمية ضرورية، خصوصاً في الشركات التي تريد بناء إدارة موارد بشرية واضحة وقابلة للتوسع.",
+          "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+          "pageTitle": "الأسئلة الشائعة - Syrian Business Gateway",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "…بحسب القطاع.قد تمتلك الشركة سجلاً تجارياً، لكنها لا تستطيع ممارسة نشاط معين قبل الحصول على الترخيص الخاص به.كلما كان العقد أوضح، كان أسهل في التطبيق وأقل عرضة للنزاع.",
+          "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+          "pageTitle": "الأسئلة الشائعة - Syrian Business Gateway",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "…أو غير دقيق، عدم التحقق من التراخيص المطلوبة، الاعتماد على اتفاق شفهي بين الشركاء، عدم تنظيم الحصص والصلاحيات، استخدام عقد تأسيس لا يعكس طبيعة المشروع، أو بدء الإنفاق قبل التأكد من قابلية الترخيص.هذه الأخطاء قد لا تظهر في البداية، لكنها قد تسبب مشكلات عند التوسع أو دخول شريك جديد أو الحصول على تمويل أ…",
+          "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+          "pageTitle": "الأسئلة الشائعة - Syrian Business Gateway",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://syrianbusinessgateway.com/",
+        "https://syrianbusinessgateway.com/contact-us/",
+        "https://syrianbusinessgateway.com/syria-fuel-prices-new-pricing-mechanism/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "مرجع مهني لفهم السوق السوري",
+        "تواصل معنا",
+        "تسعيرة المحروقات الجديدة في سوريا: تخفيضات مباشرة واختبار أكبر لآلية التسعير",
+        "خدمات الأعمال"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "ابدأ تأسيس شركتك",
+        "تواصل معنا",
+        "حلول مخصصة",
+        "مركز متابعة الأعمال",
+        "إرسال الرسالة",
+        "سياسة التحرير",
+        "ارسل"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://syrianbusinessgateway.com/contact-us/ · 9 campos",
+        "https://syrianbusinessgateway.com/syria-fuel-prices-new-pricing-mechanism/ · 4 campos",
+        "https://syrianbusinessgateway.com/is-a-website-a-showcase-or-a-growth-tool/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://syrianbusinessgateway.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://syrianbusinessgateway.com/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://syrianbusinessgateway.com/syria-fuel-prices-new-pricing-mechanism/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://syrianbusinessgateway.com/is-a-website-a-showcase-or-a-growth-tool/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://syrianbusinessgateway.com/category/business-services/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://syrianbusinessgateway.com/category/laws-and-regulations/laws-faq/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://syrianbusinessgateway.com/about-us/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “تواصل معنا”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

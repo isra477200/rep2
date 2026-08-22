@@ -1,0 +1,274 @@
+{
+  "id": "annuaire-mg",
+  "name": "annuaire.mg",
+  "reviewedAt": "2026-08-22T15:50:18.694Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "L'annuaire de référence des entreprises de Madagascar",
+    "heroObserved": true,
+    "priorSummary": "Inscripción permanente con JSON-LD, opción verificada y web llave en mano.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas. Usa 169 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 575 palabras por página comercial recuperada. Muestras breves: “Trouvée sur Google. Lisible par les IA.” · “Services informatiques” · “Pro Media Consulting”.",
+    "supportingHeadings": [
+      "Trouvée sur Google. Lisible par les IA.",
+      "Une fiche qui travaille pour vous",
+      "Lisible par les IA",
+      "Trouvée sur Google",
+      "Permanente et complète",
+      "L'inscription, et l'option Vérifié",
+      "Inscription",
+      "Vérifié option",
+      "Le badge « Identité vérifiée »",
+      "Pièces officielles contrôlées",
+      "Toujours à jour",
+      "Badge visible",
+      "Comment ça marche",
+      "Vous nous envoyez vos informations",
+      "Vous réglez comme vous voulez",
+      "Nous publions votre fiche",
+      "Demande d'inscription",
+      "Informations à fournir",
+      "Votre présence vérifiée est offerte avec Serenity by Simafri",
+      "Tout ce qu'il faut savoir",
+      "Secteurs",
+      "Villes",
+      "Ressources",
+      "Services informatiques",
+      "Simafri",
+      "Atout Persona",
+      "Micro Mania",
+      "PC Upgrade",
+      "Leex Network",
+      "Emotion"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "Envoyer ma demande"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://annuaire.mg/inscription/",
+        "index": 3,
+        "action": "https://forms.simafri.com/submit",
+        "method": "POST",
+        "submitText": "Envoyer ma demande",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": "Ne pas remplir",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "nom",
+            "label": "Votre nom *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Votre e-mail *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "entreprise",
+            "label": "Nom de votre entreprise",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Informations de votre entreprise *",
+            "placeholder": "Secteur d'activité : Ville / quartier : Adresse : Téléphone(s) : Site",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Inscripción permanente con JSON-LD, opción verificada y web llave en mano.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://annuaire.mg/inscription/",
+        "https://annuaire.mg/secteur/services-informatiques/",
+        "https://annuaire.mg/pro-media-consulting/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Trouvée sur Google. Lisible par les IA.",
+        "Services informatiques",
+        "Pro Media Consulting",
+        "eTech Consulting"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Envoyer ma demande"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://annuaire.mg/inscription/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://annuaire.mg/inscription/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://annuaire.mg/secteur/services-informatiques/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://annuaire.mg/pro-media-consulting/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://annuaire.mg/etech/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://annuaire.mg/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://annuaire.mg/articles/",
+      "label": "Fuente pública 6"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://annuaire.mg/categorie/carnet-adresses/services-informatiques/: HTTP 404",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

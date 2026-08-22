@@ -1,0 +1,368 @@
+{
+  "id": "pro-co-il",
+  "name": "המקצוענים (Pro.co.il)",
+  "reviewedAt": "2026-08-22T15:50:18.296Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "בעלי מקצוע מומלצים עם הפיקוח של המקצוענים",
+    "heroObserved": true,
+    "priorSummary": "Directorio/marketplace israelí de profesionales recomendados, filtrados y monitorizados, con precios orientativos, reseñas y reserva/contacto.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 198 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 786 palabras por página comercial recuperada. Muestras breves: “בעלי מקצוע מומלצים עם הפיקוח של המקצוענים” · “צור קשר” · “מחירון המקצוענים”.",
+    "supportingHeadings": [
+      "בעלי מקצוע מומלצים עם הפיקוח של המקצוענים",
+      "תחומים מובילים",
+      "איך אנחנו עושים את זה",
+      "מחירון המקצוענים",
+      "חוות דעת אחרונות",
+      "תקלות ועבודות נפוצות",
+      "המפתח נשבר במנעול: כל השלבים עד לפתרון",
+      "תחזוקה קבועה לגינה: כל מה שצריך לדעת",
+      "תריס חשמלי שיצא מהמסילה: כל השלבים עד הפתרון",
+      "לכידת חולדות: כל השלבים בדרך לפתרון",
+      "מדריך המקצוענים",
+      "איך אפשר לקנות דירה ב - 2022?",
+      "איך מטפלים בגלישת צבעים בשטיח?",
+      "פינוי קן יונים: המדריך המלא להרחקת קן יונים מהבית",
+      "בפיקוח מלא: תפקידיו של מפקח הבנייה",
+      "שאלות ותשובות",
+      "צור קשר",
+      "שלחו לנו הודעה",
+      "מוקד שירות לקוחות",
+      "מחירונים לתחומים מובילים",
+      "מחירונים לתחומים נוספים",
+      "איך נקבעים המחירים במחירון",
+      "שלב 1",
+      "שלב 2",
+      "שלב 3",
+      "שבעה מיתוסים על הדברה",
+      "אינטרקום סלולארי: כל מה שצריך לדעת",
+      "ריח של טיגונים מהמזגן: הדרכים להתמודדות ומניעה",
+      "סדקים בקירות: מתי זו בעיה קוסמטית ומתי נזק כבד",
+      "תקלות ועבודות בתחומים מובילים"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "צור קשר",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.pro.co.il/",
+      "text": "צור קשר",
+      "href": "https://www.pro.co.il/contact-us",
+      "element": "a",
+      "kind": "conversion",
+      "score": 163.25
+    },
+    "ctas": [
+      "שלח",
+      "המשך",
+      "צור קשר",
+      "שלחו לי שוב",
+      "תוכן מקצועי",
+      "שלחו לי את הקוד ב-SMS"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.pro.co.il/",
+        "index": 3,
+        "action": "https://www.pro.co.il/",
+        "method": "GET",
+        "submitText": "שלחו לי את הקוד ב-SMS",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "מה מספר הנייד שלך?",
+            "placeholder": "?מה מספר הנייד שלך",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pro.co.il/contact-us",
+        "index": 3,
+        "action": "https://www.pro.co.il/contact-us",
+        "method": "GET",
+        "submitText": "שלח",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "full_name",
+            "label": "שם מלא*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone_number",
+            "label": "מספר טלפון*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "radio",
+            "label": "תמליצו לי על בעל מקצוע",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "הודעה*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.pro.co.il/pest-control/guide/seven-extermination-myths",
+        "index": 3,
+        "action": "https://www.pro.co.il/pest-control/guide/seven-extermination-myths",
+        "method": "GET",
+        "submitText": "שלח",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "tel",
+            "name": null,
+            "label": "הכנס מספר טלפון",
+            "placeholder": "הכנס מספר טלפון",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 4 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Directorio/marketplace israelí de profesionales recomendados, filtrados y monitorizados, con precios orientativos, reseñas y reserva/contacto.",
+    "audience": "Hogares israelíes y profesionales autorizados de reparación, mantenimiento y mejoras del hogar.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.pro.co.il/",
+        "https://www.pro.co.il/contact-us",
+        "https://www.pro.co.il/pricing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "בעלי מקצוע מומלצים עם הפיקוח של המקצוענים",
+        "צור קשר",
+        "מחירון המקצוענים",
+        "תקלות ועבודות נפוצות"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "צור קשר",
+        "שלחו לי את הקוד ב-SMS",
+        "המשך",
+        "שלחו לי שוב",
+        "תוכן מקצועי",
+        "שלח"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.pro.co.il/ · 1 campos",
+        "https://www.pro.co.il/contact-us · 4 campos",
+        "https://www.pro.co.il/contact-us · 1 campos",
+        "https://www.pro.co.il/pricing · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Categoría → precio guía/contenido → lista ordenada por disponibilidad → filtrar por rating/antigüedad/precio → llamar/reservar → control posservicio/reseña."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.pro.co.il/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.pro.co.il/contact-us",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.pro.co.il/pricing",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.pro.co.il/services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.pro.co.il/about-us",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.pro.co.il/pest-control/guide/seven-extermination-myths",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.pro.co.il/pest-control/guide/environment-friendly-rats-extermination",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.pro.co.il/faq",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.pro.co.il/terms-and-conditions",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 14,
+      "url": "http://pro.co.il/",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%A0%D7%99%D7%9D%20",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR03106419381270216705?region=anywhere",
+      "label": "Fuente pública 16"
+    }
+  ],
+  "archivedEvidenceCount": 18,
+  "archivedEvidenceNote": "Los enlaces temporales o técnicos no compartibles se retiraron; los activos recuperables permanecen en la galería local de la ficha.",
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “צור קשר”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

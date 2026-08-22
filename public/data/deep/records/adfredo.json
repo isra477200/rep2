@@ -1,0 +1,394 @@
+{
+  "id": "adfredo",
+  "name": "AdFredo",
+  "reviewedAt": "2026-08-22T15:50:17.500Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Tu cliente ya te busca en Google. ¿Estás ahí?",
+    "heroObserved": true,
+    "priorSummary": "Agencia dedicada exclusivamente a paid media para generación de leads mediante Google Search, Meta Ads y YouTube Ads, con acceso total a la cuenta y optimización continua.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, apoya la promesa en prueba social. Usa 61 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 715 palabras por página comercial recuperada. Muestras breves: “Tu cliente ya te busca en Google. ¿Estás ahí?” · “Te decimos exactamente qué leads estás perdiendo cada mes.” · “Agencia AdWords. Ahora se llama Google Ads.”.",
+    "supportingHeadings": [
+      "Tu cliente ya te busca en Google. ¿Estás ahí?",
+      "Paid media enfocadoen una métrica: el lead.",
+      "Google Ads Search",
+      "Meta Ads",
+      "YouTube Ads",
+      "Sectores en los quegeneramos leads a diario.",
+      "Trabajamos diferente.",
+      "Solo paid media",
+      "Transparencia total",
+      "Sin permanencias",
+      "Basados en Valencia",
+      "Hola, soy Alfredo.",
+      "De 12 a 94 leads al mes.Sin aumentar el presupuesto.",
+      "De cero a campaña rentableen menos de dos semanas.",
+      "Auditoría gratuita",
+      "Estrategia personalizada",
+      "Lanzamiento y seguimiento",
+      "Optimización continua",
+      "No te lo decimos nosotros.",
+      "Lo que nos preguntanantes de empezar.",
+      "¿Tu competencia yaaparece antes que tú?",
+      "Te decimos exactamente qué leads estás perdiendo cada mes.",
+      "Solicita tu análisis gratuito",
+      "Agencia AdWords. Ahora se llama Google Ads.",
+      "¿Qué es una agencia de AdWordsy qué puede hacer por tu negocio?",
+      "Más allá del nombre,resultados reales.",
+      "Campañas de búsqueda",
+      "Display y remarketing",
+      "Especialistas desde antesde que cambiara el nombre.",
+      "Foco en leads, no en clics"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "Quiero mi análisis gratuito"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://adfredo.com/analisis/",
+        "index": 1,
+        "action": "https://formspree.io/f/xvzvbzyl",
+        "method": "POST",
+        "submitText": "Quiero mi análisis gratuito",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": "Nombre",
+            "placeholder": "Tu nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "tu@empresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "telefono",
+            "label": "Teléfono",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "web",
+            "label": "Web de tu empresa",
+            "placeholder": "tuempresa.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "inversion",
+            "label": "Inversión mensual actual en publicidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Web de tu empresa.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": [
+        "Web de tu empresa"
+      ]
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Agencia dedicada exclusivamente a paid media para generación de leads mediante Google Search, Meta Ads y YouTube Ads, con acceso total a la cuenta y optimización continua.",
+    "audience": "Negocios de toda España: seguros/finanzas, inmobiliaria, reformas, abogados, formación, instalaciones, clínicas/salud y SaaS B2B.",
+    "prices": [
+      "Para sectores más competitivos como clínicas o reformas, recomendamos partir desde 1.000 €/mes para tener datos suficientes."
+    ],
+    "guarantee": [],
+    "proof": [
+      "Quiero mi análisis gratis Ver resultados → Sin compromiso · Respuesta en menos de 24h Campaña activa — Valencia en vivo 312 Leads / mes €8.40 CPL medio 4.6× ROAS Google Ads 68% Meta Ads 32% ↑ 23% vs.",
+      "mes anterior Clientes satisfechos 21 Inversión gestionada +8M€ ROAS medio conseguido 4.2× Años de experiencia 8+ Han confiado en nosotros “ Cerré una operación inmobiliaria de los primeros 10 leads.",
+      "03 Sin permanencias Nos quedamos porque los resultados nos avalan, no porque un contrato te obligue.",
+      "AdFREDO Servicios Proceso Resultados Análisis gratuito Análisis gratuito Agencia Google Ads · Meta Ads · Valencia Tu cliente ya te busca en Google.",
+      "Medimos cuántos clientes potenciales contactan con tu negocio cada mes.",
+      "Vi demasiadas agencias vendiendo humo y quise construir algo diferente: una agencia pequeña, especializada y obsesionada con los resultados de sus clientes."
+    ],
+    "objections": [
+      "03 Sin permanencias Nos quedamos porque los resultados nos avalan, no porque un contrato te obligue.",
+      "＋ Seguros y finanzas ＋ Inmobiliaria y promotoras ＋ Reformas y construcción ＋ Despachos de abogados ＋ Academias y formación ＋ Instalaciones y servicios ＋ Clínicas y salud ＋ Software y SaaS B2B Por qué AdFredo Trabajamos diferente.",
+      "Cada reunión acabamos entendiendo exactamente qué está pasando y por qué.\" JR Javier R.",
+      "CEO, academia de formación online Preguntas frecuentes Lo que nos preguntanantes de empezar.",
+      "¿Tengo que firmar un contrato de permanencia?",
+      "Trabajamos sin permanencias."
+    ],
+    "urgency": [
+      "Quiero mi análisis gratis Saber más → Sin compromiso · Respuesta en menos de 24h Antes Google AdWords hasta 2018 Ahora Google Ads desde 2018 Misma plataforma.",
+      "Ahora es nuestro canal principal de captación.\" LP Laura P.",
+      "Ahora se llama Google Ads."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Quiero mi análisis gratis Ver resultados → Sin compromiso · Respuesta en menos de 24h Campaña activa — Valencia en vivo 312 Leads / mes €8.40 CPL medio 4.6× ROAS Google Ads 68% Meta Ads 32% ↑ 23% vs.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "mes anterior Clientes satisfechos 21 Inversión gestionada +8M€ ROAS medio conseguido 4.2× Años de experiencia 8+ Han confiado en nosotros “ Cerré una operación inmobiliaria de los primeros 10 leads.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        },
+        {
+          "text": "En mercados locales de Valencia, con 500–800 €/mes en inversión ya se pueden obtener resultados consistentes.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Para sectores más competitivos como clínicas o reformas, recomendamos partir desde 1.000 €/mes para tener datos suficientes.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "AdFREDO Servicios Proceso Resultados Análisis gratuito Análisis gratuito Agencia Google Ads · Meta Ads · Valencia Tu cliente ya te busca en Google.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Quiero mi análisis gratis Ver resultados → Sin compromiso · Respuesta en menos de 24h Campaña activa — Valencia en vivo 312 Leads / mes €8.40 CPL medio 4.6× ROAS Google Ads 68% Meta Ads 32% ↑ 23% vs.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "mes anterior Clientes satisfechos 21 Inversión gestionada +8M€ ROAS medio conseguido 4.2× Años de experiencia 8+ Han confiado en nosotros “ Cerré una operación inmobiliaria de los primeros 10 leads.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Medimos cuántos clientes potenciales contactan con tu negocio cada mes.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "03 Sin permanencias Nos quedamos porque los resultados nos avalan, no porque un contrato te obligue.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Vi demasiadas agencias vendiendo humo y quise construir algo diferente: una agencia pequeña, especializada y obsesionada con los resultados de sus clientes.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "＋ Seguros y finanzas ＋ Inmobiliaria y promotoras ＋ Reformas y construcción ＋ Despachos de abogados ＋ Academias y formación ＋ Instalaciones y servicios ＋ Clínicas y salud ＋ Software y SaaS B2B Por qué AdFredo Trabajamos diferente.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "03 Sin permanencias Nos quedamos porque los resultados nos avalan, no porque un contrato te obligue.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Cada reunión acabamos entendiendo exactamente qué está pasando y por qué.\" JR Javier R.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "CEO, academia de formación online Preguntas frecuentes Lo que nos preguntanantes de empezar.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Tengo que firmar un contrato de permanencia?",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Trabajamos sin permanencias.",
+          "url": "https://adfredo.com/",
+          "pageTitle": "Agencia Google Ads Valencia - AdFredo",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://adfredo.com/",
+        "https://adfredo.com/analisis/",
+        "https://adfredo.com/agencia-adwords/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Tu cliente ya te busca en Google. ¿Estás ahí?",
+        "Te decimos exactamente qué leads estás perdiendo cada mes.",
+        "Agencia AdWords. Ahora se llama Google Ads."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Quiero mi análisis gratuito"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://adfredo.com/analisis/ · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Análisis gratuito → revisión de cuenta actual o competencia → estrategia por sector, presupuesto y objetivo → estructura, keywords negativas, segmentación y tracking → lanzamiento en menos de"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://adfredo.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://adfredo.com/analisis/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://adfredo.com/agencia-adwords/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=adfredo.com",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ES&q=AdFredo&search_type=keyword_unordered",
+      "label": "Fuente pública 5"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

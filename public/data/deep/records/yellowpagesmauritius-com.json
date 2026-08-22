@@ -1,0 +1,415 @@
+{
+  "id": "yellowpagesmauritius-com",
+  "name": "yellowpagesmauritius.com",
+  "reviewedAt": "2026-08-22T15:50:19.063Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Mauritius Yellow Pages",
+    "heroObserved": true,
+    "priorSummary": "Ficha gratis/pagada, YellowMail, RFQ, catálogo, cupones, banners y marketing.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, orientado a la acción. Usa 78 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 624 palabras por página comercial recuperada. Muestras breves: “Local Business Search - Yellow Pages” · “Contact Mauritius Yellow Pages” · “Mauritius Yellow Pages Business Page Plans”.",
+    "supportingHeadings": [
+      "Local Business Search - Yellow Pages",
+      "Latest Discounts More",
+      "Restaurant Reviews More",
+      "#ThinkLocal #BuyLocal",
+      "Events More",
+      "Currency Exchange (MUR)",
+      "Podcast (Video - Audio)",
+      "Yellow Markets",
+      "Business Videos",
+      "Business Reviews More",
+      "Jobs Vacancies And Opportunities More",
+      "Communications services and equipment",
+      "How Technology Can Benefit Your Business - Part 1",
+      "Marketing and sales",
+      "MYP Trademark Back To Mauritius",
+      "A Sustainable Mauritius",
+      "Weather ReportSat 22nd Aug",
+      "Enterprises Online",
+      "Blog On Enterprises In Mauritius",
+      "Finance Online",
+      "Portal On Mauritius Finance",
+      "Mauritius Online",
+      "Online Magazine On Mauritius",
+      "Contact Mauritius Yellow Pages",
+      "Thank you for visiting Yellow Pages.",
+      "Support Through YellowMail",
+      "Our Contact details",
+      "Frequently Asked Questions",
+      "Mauritius Yellow Pages Business Page Plans",
+      "FIND BELOW THE NAME OF EACH PLAN AVAILABLE, YEARLY SUBSCRIPTION FEES AND LINKS TO VISUAL EXAMPLE."
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Demo: Cyber Plan This business page plan is great solution for larger companies,...",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.yellowpagesmauritius.com/en/index.html",
+      "text": "Demo: Cyber Plan This business page plan is great solution for larger companies,...",
+      "href": "https://www.yellowpagesmauritius.com/en/business/4034/demo-cyber-plan/?v=rev",
+      "element": "a",
+      "kind": "conversion",
+      "score": 224.25
+    },
+    "ctas": [
+      "Demo: Cyber Plan This business page plan is great solution for larger companies,...",
+      "Demo: Cyber Plan Ce plan de page professionnelle est une excellente solution pour les",
+      "Contact Us",
+      "Demo: Cyber Plan This business page plan is great solution for larger companies, corporations",
+      "Sign In",
+      "English",
+      "Français",
+      "Send Message",
+      "S'identifier",
+      "Browse Categories",
+      "Envoyer un Message",
+      "Parcourir les Catégories"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.yellowpagesmauritius.com/en/contact-us.html",
+        "index": 2,
+        "action": "https://www.yellowpagesmauritius.com/action/osprey/sendContact/?l=en",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fname",
+            "label": "First Name*:",
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "lname",
+            "label": "Last Name*:",
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email*:",
+            "placeholder": "Email address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Phone:",
+            "placeholder": "Phone Number",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "addinfo",
+            "label": "Additional Information:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message*:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.yellowpagesmauritius.com/fr/contact-us.html",
+        "index": 2,
+        "action": "https://www.yellowpagesmauritius.com/action/osprey/sendContact/?l=fr",
+        "method": "POST",
+        "submitText": "Envoyer un Message",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "fname",
+            "label": "Prénom*:",
+            "placeholder": "Prénom",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "lname",
+            "label": "Nom de Famille*:",
+            "placeholder": "Nom de famille",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email*:",
+            "placeholder": "Adresse e-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Téléphone:",
+            "placeholder": "Numéro de Téléphone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "addinfo",
+            "label": "Information Additionnelle:",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message*:",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Ficha gratis/pagada, YellowMail, RFQ, catálogo, cupones, banners y marketing.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Browse Categories Articles Yellow Pages Coupons Reviews Restaurant Reviews Vacancies - Opportunities Sustainable Mauritius Exchange Rates Yellow Markets Business Directory Services Register Good Reasons Search Options Quotation Functi…",
+      "Why Read Yellow Pages’ Restaurant Reviews?"
+    ],
+    "objections": [],
+    "urgency": [
+      "…Year Classic+ MUR 199.00 / Year Premium MUR 499.00 / Year Premium+ MUR 999.00 / Year Cyber MUR 1,499.00 / Year Register Now Compare Yellow Pages Business Page Plans View sample link of each plan at the bottom of each column Classic Classic+ Premium Premium+ Cyber EditableBusiness Account AdminMulti-Lan…",
+      "…ableOverall Rating Food Rating Service Rating Atmosphere Rating #ThinkLocal #BuyLocal We Support Local Business Sign Up Today Events More Currency Exchange (MUR) Last checked: 14:37 22nd Aug More EUR54.47 USD46.60 GBP63.57 ZAR2.91 Podcast (Video - Audio) Yellow Markets Double Opportunity To Shine: Learn…",
+      "…TableOverall Rating Food Rating Service Rating Atmosphere Rating Food and Beverage Reviews in MauritiusThe Yellow Pages now has a dedicated page for independent, professional reviews of restaurants, bars, cafés, pubs and fast food outlets.",
+      "…1 MYP Trademark Back To Mauritius Promoting Fair Search and Fair Trade Online Covid-19 in Mauritius - What you need to know!"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Browse Categories Articles Yellow Pages Coupons Reviews Restaurant Reviews Vacancies - Opportunities Sustainable Mauritius Exchange Rates Yellow Markets Business Directory Services Register Good Reasons Search Options Quotation Functi…",
+          "url": "https://www.yellowpagesmauritius.com/en/reviews.html",
+          "pageTitle": "Reviews",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Why Read Yellow Pages’ Restaurant Reviews?",
+          "url": "https://www.yellowpagesmauritius.com/en/reviews.html",
+          "pageTitle": "Reviews",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Browse Categories Articles Yellow Pages Coupons Reviews Restaurant Reviews Vacancies - Opportunities Sustainable Mauritius Exchange Rates Yellow Markets Business Directory Services Register Good Reasons Search Options Quotation Functi…",
+          "url": "https://www.yellowpagesmauritius.com/en/business-directory-services.html",
+          "pageTitle": "Mauritius Yellow Pages",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.yellowpagesmauritius.com/en/index.html",
+        "https://www.yellowpagesmauritius.com/en/contact-us.html",
+        "https://www.yellowpagesmauritius.com/en/business-page-plans.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Local Business Search - Yellow Pages",
+        "Contact Mauritius Yellow Pages",
+        "Mauritius Yellow Pages Business Page Plans",
+        "Mauritius Yellow Pages"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Demo: Cyber Plan This business page plan is great solution for larger companies,...",
+        "Contact Us",
+        "Français",
+        "Browse Categories",
+        "Sign In",
+        "Send Message",
+        "Demo: Cyber Plan Ce plan de page professionnelle est une excellente solution pour les",
+        "Demo: Cyber Plan This business page plan is great solution for larger companies, corporations"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.yellowpagesmauritius.com/en/contact-us.html · 6 campos",
+        "https://www.yellowpagesmauritius.com/fr/contact-us.html · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.yellowpagesmauritius.com/en/index.html",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.yellowpagesmauritius.com/en/contact-us.html",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.yellowpagesmauritius.com/en/business-page-plans.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.yellowpagesmauritius.com/en/reviews.html",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.yellowpagesmauritius.com/en/business-directory-services.html",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.yellowpagesmauritius.com/en/about.html",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.yellowpagesmauritius.com/fr/contact-us.html",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.yellowpagesmauritius.com/demo/en/business-page-plans.html",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.yellowpagesmauritius.com/en/good-reasons.html",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.yellowpagesmauritius.com/en/myp-services.html",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Demo: Cyber Plan This business page plan is great solution for larger companies,...”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

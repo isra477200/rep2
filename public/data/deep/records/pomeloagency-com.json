@@ -1,0 +1,669 @@
+{
+  "id": "pomeloagency-com",
+  "name": "pomeloagency.com",
+  "reviewedAt": "2026-08-22T15:50:20.068Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "YOUR BRAND. IRAQ'S MARKET. OUR MOVE.",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 447 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1031 palabras por página comercial recuperada. Muestras breves: “YOUR BRAND. IRAQ'S MARKET. OUR MOVE.” · “POMELO FILE.Opening dossier” · “One agency. Six segments.”.",
+    "supportingHeadings": [
+      "YOUR BRAND. IRAQ'S MARKET. OUR MOVE.",
+      "WE BUILD BRANDS THAT WIN.",
+      "Automotive.",
+      "TV & media.",
+      "Beauty & cosmetics.",
+      "Restaurants & F&B.",
+      "E-commerce.",
+      "SMEs & retail.",
+      "Our Strategic Allies",
+      "POMELO AGENCY.",
+      "The Origin.",
+      "Marketing Excellence.",
+      "What is Pomelo?",
+      "INDUSTRIES WE SERVE.",
+      "MEDIA",
+      "Media & Entertainment",
+      "RETAIL",
+      "Retail & E-commerce",
+      "HOSPITALITY",
+      "Hospitality & Tourism",
+      "HEALTHCARE",
+      "Healthcare & Wellness",
+      "EDUCATION",
+      "Education",
+      "TECHNOLOGY",
+      "Technology",
+      "REAL ESTATE",
+      "Real Estate",
+      "FINANCE",
+      "Finance"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Request a free audit",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://pomeloagency.com/services/seo",
+      "text": "Request a free audit",
+      "href": "https://pomeloagency.com/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 300
+    },
+    "ctas": [
+      "Request a free audit",
+      "Request your free audit",
+      "Request audit",
+      "Request your audit",
+      "Start New Request",
+      "Contact",
+      "Submit Request",
+      "Start a project",
+      "Start your project",
+      "Start the 90-day plan",
+      "Start the conversation",
+      "Start your channel plan",
+      "SEO",
+      "3D Art",
+      "Branding",
+      "Paid Media",
+      "Chat with us",
+      "Social Media",
+      "Email Marketing",
+      "Photo Production",
+      "Video Production",
+      "Mobile App Design",
+      "Submit Application",
+      "Campaign Launching",
+      "Influencer Marketing",
+      "Web Design & Development"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://pomeloagency.com/",
+        "index": 1,
+        "action": "https://pomeloagency.com/",
+        "method": "GET",
+        "submitText": "Submit Application",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": "Full Name",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": "Email Address",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": "Phone Number",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": "Primary Skill (e.g. SEO, PPC)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": null,
+            "label": "I want to receive job alerts. I understand that Pomelo Agency keeps",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://pomeloagency.com/",
+        "index": 2,
+        "action": "https://pomeloagency.com/",
+        "method": "GET",
+        "submitText": "Submit Request",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "budget",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: budget.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": [
+        "budget"
+      ]
+    },
+    "contacts": [
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Meta Pixel"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "site:pomeloagency.comseo questions About 5 results · 0.21 seconds Featured snippet P pomeloagency.com› services › seo How long does SEO take to show results?",
+      "Digital Growth Digital Growth OUR SATISFIED CLIENTS Join the List of Our Satisfied Customers We're proud to work with amazing brands and businesses.",
+      "Most clients sit in the $1,200–$5,000/month management range depending on channels and spend tier.",
+      "Optimise · Monthly Monthly Data-driven changes Optimise Monthly reviews of what worked, what didn't, what we're changing next, backed by real platform data, not opinions.",
+      "UGC-style ads, testimonial cuts, product demos, engineered for Meta Ads and TikTok Ads, with A/B variants built in from day one of the paid plan.",
+      "A producer will review your requirements and contact you within 24 hours."
+    ],
+    "objections": [
+      "site:pomeloagency.comseo questions About 5 results · 0.21 seconds Featured snippet P pomeloagency.com› services › seo How long does SEO take to show results?",
+      "90days First measurable wins $1.5K /mo Entry retainer AR · EN · KU Three search markets Start the 90-day plan Real questions,real answers.",
+      "Home Partners About Services Work Blogs FAQ Contact Paid Advertising Pay for results.",
+      "Agency Work Services About Services SEO Social Media Paid Advertising Video Production Branding Web & App Explore FAQ's Blogs Job Openings Socials © 2026 Pomelo Agency Inc.",
+      "Home Partners About Services Work Blogs FAQ Contact Home Services Erbil + Baghdad, since 2020 One agency.",
+      "Rudaw Business Shafaq News Iraqi News Campaign ME Clutch.co Crunchbase 06 Arabic & Kurdish SEO Native-language keyword research, correct hreflang implementation, and content optimized for Arabic and Kurdish search behaviour.",
+      "Home Partners About Services Work Blogs FAQ Contact EN ع ک YOUR BRAND.",
+      "Your FAQs, Answered."
+    ],
+    "urgency": [
+      "Today +18% Sales$1,287 Walk-ins34 Avg ticket$36 Enter Strategic Allies Our Strategic Allies One Coalition 01 Babylon Media network 02 UTV Broadcast TV 03 Babylon Arabia Regional broadca…",
+      "Order now ROAS 4.2× CPC $0.18 05 Influencer Activation Working relationships with the right Iraqi and Kurdish creators across every category, beauty, food, automotive, lifestyle.",
+      "We specialise in the ten industries we know inside out, and years of results in Iraq prove it.",
+      "L @layla.bgnow 04 Paid Social Meta Ads, TikTok Ads, Snapchat Ads, built around the same content, optimised for the right business outcome: traffic, leads, sales, or app installs.",
+      "3-8 min Corporate Recruitment 00:00 · Intro02:14 · Origin05:08 · Today07:22 · Vision Frame 03 / 06Social VerticalTake 1 Social-first vertical video.",
+      "We know what makes Iraqi diners click, share, and show up."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Today +18% Sales$1,287 Walk-ins34 Avg ticket$36 Enter Strategic Allies Our Strategic Allies One Coalition 01 Babylon Media network 02 UTV Broadcast TV 03 Babylon Arabia Regional broadcast 04 BXF Bo…",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Your Name Email Address Project Type Email Marketing Social Media Paid Media SEO Photo Production Campaign Launching Video Production Branding Mobile App Design Influencer Marketing Web Design & Development 3D Art Estimated Budget (USD) Project Goals / Brief Submit Request Protected by reCAPTCHA and the",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [
+        {
+          "text": "#PA-005 Do you guarantee ROAS?",
+          "url": "https://pomeloagency.com/services/paid-advertising",
+          "pageTitle": "Paid Advertising Iraq | Meta, TikTok & Google Ads | Pomelo Agency",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        },
+        {
+          "text": "What we guarantee is transparent management, ruthless optimisation, and that we tell you fast if the math doesn't work.",
+          "url": "https://pomeloagency.com/services/paid-advertising",
+          "pageTitle": "Paid Advertising Iraq | Meta, TikTok & Google Ads | Pomelo Agency",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "marketplace_or_third_party"
+        }
+      ],
+      "proof": [
+        {
+          "text": "We build SEO-optimized platforms that convert visitors into customers.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Digital Growth Digital Growth OUR SATISFIED CLIENTS Join the List of Our Satisfied Customers We're proud to work with amazing brands and businesses.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "A producer will review your requirements and contact you within 24 hours.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Rank for what your customers actually search.",
+          "url": "https://pomeloagency.com/services",
+          "pageTitle": "Services · Six Disciplines, One Agency | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact Search Engine Optimization Rank where your customers actually search.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "SEO is the opposite, visibility that keeps generating leads long after the work is done.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Most Iraqi businesses are barely visible for the keywords their customers actually use, and the Arabic keyword space is almost entirely unclaimed.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…canonical\"href=\"/services/seo\"> 5<scripttype=\"application/ld+json\">{...}</script> 6</head> 7<body> 8<h1>Rank where your customers search</h1> 03 Content Strategy Keyword research grounded in real buyer journey, mapped to commercial-intent landing pages and top-of-funnel content.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "SEO agency Iraq digital marketing Erbil وكالة تسويق العراق Baghdad SEO creative agency MENA حملات إعلانية brand strategy video production Iraq paid ads Erbil Kurdish content social media KRI سيو في العراق 04 Local SEO Google Business Profile optimization for Erbil and Baghdad, NAP consistency",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "site:pomeloagency.comseo questions About 5 results · 0.21 seconds Featured snippet P pomeloagency.com› services › seo How long does SEO take to show results?",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Most clients sit in the $1,200–$5,000/month management range depending on channels and spend tier.",
+          "url": "https://pomeloagency.com/services/paid-advertising",
+          "pageTitle": "Paid Advertising Iraq | Meta, TikTok & Google Ads | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Mon Tue Wed Thu Fri Sat Sun Video Photo Story 03 Community Management Real humans replying in your brand's voice, in the right language, during the hours your customers are actually online.",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Optimise · Monthly Monthly Data-driven changes Optimise Monthly reviews of what worked, what didn't, what we're changing next, backed by real platform data, not opinions.",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "UGC-style ads, testimonial cuts, product demos, engineered for Meta Ads and TikTok Ads, with A/B variants built in from day one of the paid plan.",
+          "url": "https://pomeloagency.com/services/video-production",
+          "pageTitle": "Video Production Iraq | TV Commercials & Brand Films, Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "04 Post & Delivery Rough cut → first review → fine cut → colour & sound → final deliverables in every format your media plan needs.",
+          "url": "https://pomeloagency.com/services/video-production",
+          "pageTitle": "Video Production Iraq | TV Commercials & Brand Films, Pomelo Agency",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact EN ع ک YOUR BRAND.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Your FAQs, Answered.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "You have questions.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Agency Work Services About Services SEO Social Media Paid Advertising Video Production Branding Web & App Explore FAQ's Blogs Job Openings Socials © 2026 Pomelo Agency Inc.",
+          "url": "https://pomeloagency.com/",
+          "pageTitle": "Digital Marketing Agency Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact Home Services Erbil + Baghdad, since 2020 One agency.",
+          "url": "https://pomeloagency.com/services",
+          "pageTitle": "Services · Six Disciplines, One Agency | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "That's why brands like Babylon, UTV, Talabat, Guerlain, and Chery let us run end-to-end campaigns instead of three contracts.",
+          "url": "https://pomeloagency.com/services",
+          "pageTitle": "Services · Six Disciplines, One Agency | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "AgencyWorkServicesAbout ServicesSEOSocial MediaPaid AdvertisingVideo ProductionBrandingWeb & App ExploreFAQ'sBlogsJob Openings Socials ©2026Pomelo Agency Inc.Privacy PolicyErbil • Baghdad",
+          "url": "https://pomeloagency.com/services",
+          "pageTitle": "Services · Six Disciplines, One Agency | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact Search Engine Optimization Rank where your customers actually search.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Rudaw Business Shafaq News Iraqi News Campaign ME Clutch.co Crunchbase 06 Arabic & Kurdish SEO Native-language keyword research, correct hreflang implementation, and content optimized for Arabic and Kurdish search behaviour.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "90days First measurable wins $1.5K /mo Entry retainer AR · EN · KU Three search markets Start the 90-day plan Real questions,real answers.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The questions Iraqi founders actually ask before signing an SEO retainer.",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "site:pomeloagency.comseo questions About 5 results · 0.21 seconds Featured snippet P pomeloagency.com› services › seo How long does SEO take to show results?",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "AgencyWorkServicesAbout ServicesSEOSocial MediaPaid AdvertisingVideo ProductionBrandingWeb & App ExploreFAQ'sBlogsContact Socials ©2026Pomelo Agency Inc.Privacy PolicyErbil • Baghdad",
+          "url": "https://pomeloagency.com/services/seo",
+          "pageTitle": "SEO Agency Iraq | Search Engine Optimization Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact Paid Advertising Pay for results.",
+          "url": "https://pomeloagency.com/services/paid-advertising",
+          "pageTitle": "Paid Advertising Iraq | Meta, TikTok & Google Ads | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The questions Iraqi marketers and founders actually file before signing a paid-media retainer.",
+          "url": "https://pomeloagency.com/services/paid-advertising",
+          "pageTitle": "Paid Advertising Iraq | Meta, TikTok & Google Ads | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "AgencyWorkServicesAbout ServicesSEOSocial MediaPaid AdvertisingVideo ProductionBrandingWeb & App ExploreFAQ'sBlogsContact Socials ©2026Pomelo Agency Inc.Privacy PolicyErbil • Baghdad",
+          "url": "https://pomeloagency.com/services/paid-advertising",
+          "pageTitle": "Paid Advertising Iraq | Meta, TikTok & Google Ads | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact Social Media Management Show up where your audience already lives.",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "We brief, vet, contract, and manage activations end-to-end.",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "The questions Iraqi founders actually drop into our DMs before signing a social retainer.",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "From contract signature to first post is typically 3–4 weeks.",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "AgencyWorkServicesAbout ServicesSEOSocial MediaPaid AdvertisingVideo ProductionBrandingWeb & App ExploreFAQ'sBlogsContact Socials ©2026Pomelo Agency Inc.Privacy PolicyErbil • Baghdad",
+          "url": "https://pomeloagency.com/services/social-media-management",
+          "pageTitle": "Social Media Management Iraq | Erbil & Baghdad | Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Home Partners About Services Work Blogs FAQ Contact Home Services Video Production Erbil & Baghdad · In-house production Stops the scroll.",
+          "url": "https://pomeloagency.com/services/video-production",
+          "pageTitle": "Video Production Iraq | TV Commercials & Brand Films, Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "video_production_FAQ.mp4 · 06:42 total HD · EN 01:14 00:00 How much does a TV commercial cost in Iraq?",
+          "url": "https://pomeloagency.com/services/video-production",
+          "pageTitle": "Video Production Iraq | TV Commercials & Brand Films, Pomelo Agency",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "01:32 01:14 How long does production take?",
+          "url": "https://pomeloagency.com/services/video-production",
+          "pageTitle": "Video Production Iraq | TV Commercials & Brand Films, Pomelo Agency",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://pomeloagency.com/",
+        "https://pomeloagency.com/work/cherry-iraq",
+        "https://pomeloagency.com/services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "YOUR BRAND. IRAQ'S MARKET. OUR MOVE.",
+        "POMELO FILE.Opening dossier",
+        "One agency. Six segments.",
+        "Rank where your customers actually search."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Start your project",
+        "Submit Application",
+        "Chat with us",
+        "Email Marketing",
+        "Social Media",
+        "Paid Media",
+        "SEO"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://pomeloagency.com/ · 5 campos",
+        "https://pomeloagency.com/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://pomeloagency.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://pomeloagency.com/work/cherry-iraq",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://pomeloagency.com/services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://pomeloagency.com/services/seo",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://pomeloagency.com/services/paid-advertising",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://pomeloagency.com/services/social-media-management",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://pomeloagency.com/services/video-production",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://pomeloagency.com/",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Request a free audit”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Meta Pixel) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

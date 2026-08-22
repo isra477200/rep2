@@ -1,0 +1,526 @@
+{
+  "id": "oman-yellow-pages",
+  "name": "Oman Yellow Pages",
+  "reviewedAt": "2026-08-22T15:50:18.877Z",
+  "status": "Verificada estructural",
+  "confidence": "Alta",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Find and Discover Local Businesses",
+    "heroObserved": true,
+    "priorSummary": "Empresas se listan por industria, ubicación, producto y servicio y pueden contratar paquetes y banners para generar descubrimiento y consultas.",
+    "voice": "Revisión manual: funcional, institucional, sobrio, poco persuasivo, directory-first. Find and discover official Oman Yellow Pages business directories advertise with us business enquiry",
+    "supportingHeadings": [
+      "Find and Discover Local Businesses",
+      "Featured Companies"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://yellowpages.om/",
+      "text": "Contact Us",
+      "href": "https://yellowpages.om/yp/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact on whatsapp",
+      "Contact Us",
+      "Call",
+      "All",
+      "Phone",
+      "Login",
+      "Brands",
+      "Signup",
+      "SUBMIT",
+      "Business",
+      "Products",
+      "Services",
+      "Whats App",
+      "Get Enquiry details"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://yellowpages.om/",
+        "index": 8,
+        "action": "https://yellowpages.om/",
+        "method": "POST",
+        "submitText": "Get Enquiry details",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Your Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Mobile/Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "category",
+            "label": null,
+            "placeholder": "Category",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Your Enquiry",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yellowpages.om/yp/contact",
+        "index": 2,
+        "action": "https://yellowpages.om/yp/contact.php",
+        "method": "POST",
+        "submitText": "SUBMIT",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Your Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Your Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": null,
+            "placeholder": "Your Phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Your Message",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Empresas se listan por industria, ubicación, producto y servicio y pueden contratar paquetes y banners para generar descubrimiento y consultas.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "All All Business Products Services Phone Brands A-Z Advertise Events Useful Nos Login Signup Listed under 'Dental Implants' Al Bushra Medical Specialty Complex Excellence Is Our Target Al-Bushra Medical Specialty Complex was initially known as (SFC) Specialty Fertility Center in 2010, later in October 2012"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.om/",
+        "https://yellowpages.om/yp/contact",
+        "https://yellowpages.om/yp/taglisting?tl=Dental+Implants"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Find and Discover Local Businesses"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact on whatsapp",
+        "Get Enquiry details",
+        "Contact Us",
+        "All",
+        "Business",
+        "Products",
+        "Services",
+        "Phone"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://yellowpages.om/ · 5 campos",
+        "https://yellowpages.om/yp/contact · 4 campos",
+        "https://yellowpages.om/yp/contact · 5 campos",
+        "https://yellowpages.om/yp/taglisting?tl=Dental+Implants · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "descubrimiento [observado] → consideración [observado] → captación comprador [observado] → distribución [no observable] → captación anunciante [observado] → venta y cierre [no observable] → retención [no observable]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://yellowpages.om/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://yellowpages.om/yp/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://yellowpages.om/yp/taglisting?tl=Dental+Implants",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://yellowpages.om/yp/taglisting?tl=Cargo+Services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://yellowpages.om/yp/taglisting?tl=Cargo+Services-Air+Sea",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://yellowpages.om/yp/taglisting?tl=Cargo+Services-Door-to-Door",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://yellowpages.om/yp/taglisting?tl=Cargo+Services-Road",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://yellowpages.om/images/Oman_Yellow_Pages-1.pdf",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Encontrar y descubrir empresas locales con una taxonomía amplia.",
+      "positioning": "infraestructura utilitaria de directorio",
+      "audience": "Consumidores y compradores B2B que buscan proveedores en Omán; empresas que quieren listing o exposición regional.",
+      "voice": [
+        "funcional",
+        "institucional",
+        "sobrio",
+        "poco persuasivo",
+        "directory-first"
+      ],
+      "patterns": [
+        "Find and discover",
+        "official Oman Yellow Pages",
+        "business directories",
+        "advertise with us",
+        "business enquiry"
+      ]
+    },
+    "cta": {
+      "primary": "Buscar empresa/producto/servicio o realizar business enquiry",
+      "secondary": [
+        "advertise with us",
+        "list your business",
+        "WhatsApp",
+        "contacto de ventas"
+      ],
+      "forms": [
+        {
+          "url": "https://yellowpages.om/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "móvil/teléfono",
+            "categoría",
+            "mensaje"
+          ],
+          "fieldCount": 5,
+          "friction": "media-baja",
+          "submitted": false
+        },
+        {
+          "url": "https://yellowpages.om/yp/advertise",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "nombre",
+            "email",
+            "móvil/teléfono",
+            "categoría",
+            "mensaje"
+          ],
+          "fieldCount": 5,
+          "friction": "media-baja",
+          "submitted": false
+        },
+        {
+          "url": "https://yellowpages.om/yp/contact",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "El colector previo observó cuatro controles opcionales, pero la revisión actual recibió verificación antibot."
+          ],
+          "fieldCount": 4,
+          "friction": "no verificable actualmente",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "descubrimiento",
+        "status": "observado",
+        "detail": "Búsqueda multientidad y páginas de categoría capturan intención local. — stage: descubrimiento — evidenceUrls: https://yellowpages.om/ · https://yellowpages.om/yp/taglisting?tl=Dental+Implants"
+      },
+      {
+        "stage": "consideración",
+        "status": "observado",
+        "detail": "Listados y featured companies ofrecen presencia; no se observan comparadores de precio, rating o SLA homogéneos. — stage: consideración — evidenceUrls: https://yellowpages.om/"
+      },
+      {
+        "stage": "captación comprador",
+        "status": "observado",
+        "detail": "Formulario de categoría y mensaje o contacto WhatsApp. — stage: captación comprador — evidenceUrls: https://yellowpages.om/"
+      },
+      {
+        "stage": "distribución",
+        "status": "no observable",
+        "detail": "No se explica públicamente a cuántos proveedores se envía el enquiry, qué datos reciben ni cómo se valida. — stage: distribución — evidenceUrls:"
+      },
+      {
+        "stage": "captación anunciante",
+        "status": "observado",
+        "detail": "Advertise/list business enlaza al mismo formulario genérico y al responsable de ventas. — stage: captación anunciante — evidenceUrls: https://yellowpages.om/yp/advertise"
+      },
+      {
+        "stage": "venta y cierre",
+        "status": "no observable",
+        "detail": "Propuesta, precio, checkout y contrato suceden fuera de lo público. — stage: venta y cierre — evidenceUrls:"
+      },
+      {
+        "stage": "retención",
+        "status": "no observable",
+        "detail": "No se publica renovación, reporting, atribución ni rendimiento del anunciante. — stage: retención — evidenceUrls:"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "No se publican paquetes, tarifas, CPL, comisión ni precio de listing en las páginas revisadas. — exactUrl: https://yellowpages.om/yp/advertise"
+      ],
+      "contract": [
+        "Duración, renovación, cancelación, propiedad de datos y términos comerciales de anunciante no visibles. — exactUrl: https://yellowpages.om/yp/advertise"
+      ],
+      "guarantee": [
+        "No se localizó garantía pública de volumen, calidad, exclusividad, respuesta, refund o resultado. — exactUrl: https://yellowpages.om/yp/advertise"
+      ]
+    },
+    "proof": [
+      "claims: empresas destacadas · taxonomía extensa · logotipo de Oman Yellow Pages Association · claim 'official Oman Yellow Pages' — quality: baja — caveat: No hay casos, reviews, usuarios, enquiries, tasa de respuesta o fuente pública independiente que sustente escala o autoridad oficial."
+    ],
+    "objections": [
+      "objection: ¿Puedo buscar por lo que conozco? — answer: Empresa, producto, servicio, teléfono o marca.",
+      "objection: ¿Cómo anuncio mi negocio? — answer: Formulario, WhatsApp o responsable de ventas; precio no visible.",
+      "objection: ¿Cuántos leads recibiré? — answer: No se publican volumen, exclusividad ni definición.",
+      "objection: ¿Qué significa official? — answer: No se localizó respaldo público de gobierno o asociación en las páginas revisadas."
+    ],
+    "technology": [
+      "Google Tag Manager — basis: etiqueta pública",
+      "Google Analytics — basis: etiqueta pública",
+      "WhatsApp — basis: CTA público",
+      "CRM/distribución — basis: no se identifica stack ni flujo posterior"
+    ],
+    "contradictions": [
+      "Se autodenomina 'official Oman Yellow Pages' sin mostrar en las páginas revisadas autoridad pública, licencia o enlace verificable que sustente oficialidad. — severity: alta",
+      "La página Advertise apenas añade contenido comercial y repite el formulario de business enquiry; no separa claramente comprador de anunciante. — severity: alta",
+      "La CTA de negocio puede interpretarse como pedir información a proveedor o como solicitar publicidad, con campos genéricos insuficientes para ambas rutas. — severity: media",
+      "El sitio se presenta actualizado como plataforma activa, pero el footer público mantiene copyright 2023. — severity: media",
+      "No existe economía pública para proveedores: precio, alcance, lead válido, duplicidad, exclusividad y refund quedan opacos. — severity: alta"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "No se envió enquiry ni se contactó por WhatsApp/teléfono.",
+      "La URL de contacto mostró verificación antibot en la revisión actual.",
+      "No se observó propuesta, tarifa, distribución, contrato ni resultado."
+    ],
+    "lessons": {
+      "copy": [
+        "búsqueda por múltiples entidades",
+        "taxonomía local",
+        "contacto directo visible"
+      ],
+      "adapt": [
+        "categoría como dato obligatorio",
+        "entrada de buyer y supplier diferenciada desde hero",
+        "Dos embudos: 'necesito proveedor' con criterios/timing y 'quiero recibir oportunidades' con cobertura, tarifa y muestra de volumen.",
+        "El directorio resuelve descubrimiento; para competir como captador necesita transformar la categoría en intención verificable y publicar la economía del proveedor."
+      ],
+      "avoid": [
+        "official sin evidencia",
+        "formulario genérico para dos intenciones",
+        "precio y distribución opacos",
+        "prueba solo por densidad de listing"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://yellowpages.om/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://yellowpages.om/yp/advertise",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://yellowpages.om/yp/contact",
+        "label": "Fuente manual 3",
+        "status": "no observable"
+      },
+      {
+        "url": "https://yellowpages.om/yp/taglisting?tl=Dental+Implants",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "partial"
+}

@@ -1,0 +1,755 @@
+{
+  "id": "33-mile-radius",
+  "name": "33 Mile Radius",
+  "reviewedAt": "2026-08-22T15:50:18.350Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "Job Leads For Contractors - Just Answer the Phone",
+    "heroObserved": true,
+    "priorSummary": "Pay-per-lead exclusivo por llamada: \"Each call is sent exclusively to one partner\" — CONFIRMADO",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 310 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1039 palabras por página comercial recuperada. Muestras breves: “Job Leads For Contractors - Just Answer the Phone” · “Interested In Working With Us?” · “Exclusive Leads With Fair And Flexible Pricing”.",
+    "supportingHeadings": [
+      "Job Leads For Contractors - Just Answer the Phone",
+      "GET THE LEADS YOU NEED TO GROW YOUR BUSINESS",
+      "1-888-594-8381",
+      "Connecting Contractors With Customers",
+      "How It Works",
+      "Leave The Marketing To Us",
+      "Exclusive Leads. Fair And Flexible Pricing.",
+      "If this sounds too good to be true, don’t just take our word for it…",
+      "Frequently Asked Questions",
+      "How do I get more leads for my contracting business?",
+      "How do I market myself as a contractor?",
+      "How do I get free contractor leads?",
+      "How fast will I start getting leads?",
+      "Can you help me get construction leads?",
+      "Do you have a list of leads I can use?",
+      "Can you provide local contractor leads?",
+      "I am not B2B, can you provide residential contractor leads?",
+      "Why should I choose you instead of an app like Angie’s List or Porch?",
+      "What is the average cost of your leads?",
+      "Stop Losing Out On The More Than 20,000 Quality Leads We Send To Our Partners Each Year. With Our Fair & Flexible Pricing, You Pay",
+      "Start Booking Jobs Today!",
+      "Latest Posts",
+      "Contact Us",
+      "Menu",
+      "Interested In Working With Us?",
+      "Exclusive Leads With Fair And Flexible Pricing",
+      "Reviews From Customers That Buy Our Leads",
+      "Watch Your Lead Generation Efforts Skyrocket with Our Digital Marketing Packages for Contractors",
+      "Choose From Our Suite Of Tools And Services Create A Digital Marketing Strategy Specific To Your Business",
+      "The Digital Marketing Difference"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.33mileradius.com/",
+      "text": "Contact Us",
+      "href": "https://www.33mileradius.com/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Call Tracking",
+      "Start Your 30 Day Free Trial Now",
+      "About",
+      "Submit",
+      "Services",
+      "Signup Now",
+      "Lead Types",
+      "Calculate Your Revenue",
+      "Restoration1 of Springfield",
+      "Xpert Restoration of Cleveland"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.33mileradius.com/",
+        "index": 1,
+        "action": "https://www.33mileradius.com/",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 33,
+        "fields": [
+          {
+            "type": "text",
+            "name": "wpforms[fields][1]",
+            "label": "First Name *",
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][2]",
+            "label": "Last Name *",
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "wpforms[fields][3]",
+            "label": "Email *",
+            "placeholder": "Email Address",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "wpforms[fields][4]",
+            "label": "Phone *",
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpforms[fields][5]",
+            "label": "Company Name *",
+            "placeholder": "Company Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wpforms[fields][6][]",
+            "label": "Yes, I Would Like To Receive Calls, Texts, And Emails From EverConnect",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.33mileradius.com/pricing/",
+        "index": 1,
+        "action": "https://www.33mileradius.com/pricing/report",
+        "method": "POST",
+        "submitText": "Calculate Your Revenue",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 26,
+        "fields": [
+          {
+            "type": "select",
+            "name": "vertical_type",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "avg_revenue_per_dry_out",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "selectNumber",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "conversionRate",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "FullName",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Phone",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email_address",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "State",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 8 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Company Name *, avg_revenue_per_dry_out.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 8,
+      "qualification": [
+        "Company Name *",
+        "avg_revenue_per_dry_out"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Pay-per-lead exclusivo por llamada: \"Each call is sent exclusively to one partner\" — CONFIRMADO",
+    "audience": "Contratistas de restauración de daños/mitigación de desastres y home services en EE.UU. — CONFIRMADO",
+    "prices": [
+      "Lead Generation Pricing Signup Now Review Generation Acquirly Review Generation Pricing Increase the number of positive reviews you get now for as low as $33 per month."
+    ],
+    "guarantee": [
+      "“All you have to do is make sure you answer the phone and you are guaranteed to make money using this company.."
+    ],
+    "proof": [
+      "Leads Generated for Our Clients 48538 Exclusive Leads.",
+      "They are able to target the right clients and have jump started my business with great leads!”Tom O’Hara Owner, Restoration 1 of Southern Connecticut “I have been using 33 Mile Radius for over 7 years they provide high-quality Water damage leads for my company.",
+      "These tactics all enable your business to precisely target your desired audience and ensure that your message reaches prospects most likely to convert to clients.",
+      "This attracts potential clients searching for reliable contractors.",
+      "Lead Generation Pricing Signup Now Review Generation Reviews From Customers That Buy Our Leads We have a 4.5-star rating on Google with more than 80 reviews and a 4.7-star rating on Facebook with more than 20 reviews.",
+      "Lead Generation Pricing Signup Now Review Generation Job Leads For Contractors - Just Answer the Phone GET THE LEADS YOU NEED TO GROW YOUR BUSINESS Learn More 1-888-594-8381 Connecting Contractors With Customers Our exclu…"
+    ],
+    "objections": [
+      "Exclusive Leads Only Pay For Valid Leads No Setup or Monthly Fees No Long Term Contracts Dedicated Account Managers If this sounds too good to be true, don’t just take our word for it… “33 Mile Radius has been a tremendous resource for our company",
+      "This attracts potential clients searching for reliable contractors.",
+      "Lead Generation Pricing Signup Now Review Generation Job Leads For Contractors - Just Answer the Phone GET THE LEADS YOU NEED TO GROW YOUR BUSINESS Learn More 1-888-594-8381 Connecting Contractors With Customers Our exclusive lead generation system takes…",
+      "You can pause your account at any time and there are never any long-term contracts.",
+      "So it certainly paid dividends for us.” – Shane O’Dazier, Simple Solutions Restoration Frequently Asked Questions How do I get more leads for my contracting business?",
+      "Generating quality contractor leads is an important yet challenging part of the job.",
+      "Network and Partnerships: Establish relationships with local suppliers, real estate agents, and other contractors who can refer your services.",
+      "This allows your contracting business to steadily continue growing."
+    ],
+    "urgency": [
+      "We received a lot of smaller water and mold leads, and now we’ve received a large fire lead.” – Bob Straughn, WSC Construction and Restoration “We landed a big $80,000 job on Super Bowl Sunday.",
+      "But knowing how to market yourself to attract new clients and generate contractor leads can be challenging.",
+      "Lead Generation Pricing Signup Now Review Generation Reviews From Customers That Buy Our Leads We have a 4.5-star rating on Google with more than 80 reviews and a 4.7-star rating on Facebook with more than 20 reviews.",
+      "Lead Generation Pricing Signup Now Review Generation Job Leads For Contractors - Just Answer the Phone GET THE LEADS YOU NEED TO GROW YOUR BUSINESS Learn More 1-888-594-8381 Connecting Contractors With Customers Ou…",
+      "Marketing can now be as easy as answering the phone.",
+      "In today’s highly competitive market, it’s important to differentiate yourself and stand out from the crowd."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "We received a lot of smaller water and mold leads, and now we’ve received a large fire lead.” – Bob Straughn, WSC Construction and Restoration “We landed a big $80,000 job on Super Bowl Sunday.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "$80,000 [reconstruction].",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "The [mitigation], I think, was about $15,000.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Lead Generation Pricing Signup Now Review Generation Acquirly Review Generation Pricing Increase the number of positive reviews you get now for as low as $33 per month.",
+          "url": "https://www.33mileradius.com/services/pricing/",
+          "pageTitle": "Plans And Pricing For Acquirly Review Generation",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "“All you have to do is make sure you answer the phone and you are guaranteed to make money using this company..",
+          "url": "https://www.33mileradius.com/testimonials/",
+          "pageTitle": "Testimonials | Reviews From Contractors That Buy 33 Mile Radius Leads",
+          "pageCategory": "proof",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [
+        {
+          "text": "While not every lead is guaranteed to turn into a job, our top partners close 90% of the qualified leads we send to them.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        },
+        {
+          "text": "While not every lead is guaranteed to turn into a job, our top partners close 90% of the leads we send to them.",
+          "url": "https://www.33mileradius.com/pricing/",
+          "pageTitle": "Pricing | 33 Mile Radius Exclusive Disaster Mitigation Leads",
+          "pageCategory": "pricing",
+          "polarity": "negative",
+          "guaranteeType": "disclaimer"
+        }
+      ],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Lead Generation Pricing Signup Now Review Generation Job Leads For Contractors - Just Answer the Phone GET THE LEADS YOU NEED TO GROW YOUR BUSINESS Learn More 1-888-594-8381 Connecting Contractors With Customers Our exclu…",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We use digital marketing techniques to put our ads in front of customers.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Customers call into our network and we route their call directly to you.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "We generate our leads by actively targeting potential customers looking for the services you provide by using search engine marketing (SEM), Google Ads, search engine optimization (SEO), content marketing, and email marketing as part of our inbound lead generation strategy.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Leads Generated for Our Clients 48538 Exclusive Leads.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Whether you need pest control leads, mold remediation leads, plumbing leads, carpet cleaning leads, gutter leads, bathroom remodeling leads, or something else, we’re ready to connect you with new potential customers.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Lead Generation Pricing Signup Now Review Generation Reviews From Customers That Buy Our Leads We have a 4.5-star rating on Google with more than 80 reviews and a 4.7-star rating on Facebook with more than 20 reviews.",
+          "url": "https://www.33mileradius.com/testimonials/",
+          "pageTitle": "Testimonials | Reviews From Contractors That Buy 33 Mile Radius Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Here are just some of the reviews that the contractors that buy leads from us have given us.",
+          "url": "https://www.33mileradius.com/testimonials/",
+          "pageTitle": "Testimonials | Reviews From Contractors That Buy 33 Mile Radius Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "They are able to target the right clients and have jump started my business with great leads!”Tom O’Hara Owner, Restoration 1 of Southern Connecticut “I have been using 33 Mile Radius for over 7 years they provide high-quality Water damage leads for my company.",
+          "url": "https://www.33mileradius.com/testimonials/",
+          "pageTitle": "Testimonials | Reviews From Contractors That Buy 33 Mile Radius Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Just answer your phone and verify the lead and you can make money as well.”Patrick O’Connor Owner, 2nd Chance Restoration “33 Mile Radius has been a tremendous resource for our company in generating profitable revenues from their high quality Leads.",
+          "url": "https://www.33mileradius.com/testimonials/",
+          "pageTitle": "Testimonials | Reviews From Contractors That Buy 33 Mile Radius Leads",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Lead Generation Pricing Signup Now Review Generation Watch Your Lead Generation Efforts Skyrocket with Our Digital Marketing Packages for Contractors Choose From Our Suite Of Tools And Services Create A Digital Marketing…",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "A dedicated digital marketing plan connects you even faster to the customers searching for your service!",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "These tactics all enable your business to precisely target your desired audience and ensure that your message reaches prospects most likely to convert to clients.",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "This attracts potential clients searching for reliable contractors.",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Lead Generation Pricing Signup Now Review Generation Job Leads For Contractors - Just Answer the Phone GET THE LEADS YOU NEED TO GROW YOUR BUSINESS Learn More 1-888-594-8381 Connecting Contractors With Customers Our exclusive lead generation system takes…",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "You can pause your account at any time and there are never any long-term contracts.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Exclusive Leads Only Pay For Valid Leads No Setup or Monthly Fees No Long Term Contracts Dedicated Account Managers If this sounds too good to be true, don’t just take our word for it… “33 Mile Radius has been a tremendous resource for our company",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "So it certainly paid dividends for us.” – Shane O’Dazier, Simple Solutions Restoration Frequently Asked Questions How do I get more leads for my contracting business?",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Generating quality contractor leads is an important yet challenging part of the job.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Network and Partnerships: Establish relationships with local suppliers, real estate agents, and other contractors who can refer your services.",
+          "url": "https://www.33mileradius.com/",
+          "pageTitle": "Lead Generation and Marketing Services for Contractors",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…icing Signup Now Review Generation Watch Your Lead Generation Efforts Skyrocket with Our Digital Marketing Packages for Contractors Choose From Our Suite Of Tools And Services Create A Digital Marketing Strategy Specific To Your Business The Digital Marketing Difference Now more than ever, it's important to…",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "This allows your contracting business to steadily continue growing.",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "This attracts potential clients searching for reliable contractors.",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Analytical Insights for Your Marketing Campaigns Analytical Insights for Your Marketing Campaigns At the core of everything we do is a commitment to transparency and data-driven decision-making.",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Our comprehensive reporting services provide your contracting business with in-depth insights into the performance of your digital marketing efforts, like click-through and conversion rates.",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "So it certainly paid dividends for us.\" – Shane O’Dazier, Simple Solutions Restoration Frequently Asked Questions How do I advertise myself as a contractor?",
+          "url": "https://www.33mileradius.com/digital-marketing-services/",
+          "pageTitle": "Digital Marketing Services",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.33mileradius.com/",
+        "https://www.33mileradius.com/contact-us/",
+        "https://www.33mileradius.com/pricing/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Job Leads For Contractors - Just Answer the Phone",
+        "Interested In Working With Us?",
+        "Exclusive Leads With Fair And Flexible Pricing",
+        "Watch Your Lead Generation Efforts Skyrocket with Our Digital Marketing Packages for Contractors"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Signup Now",
+        "Submit",
+        "Call Tracking",
+        "Services",
+        "About",
+        "Lead Types",
+        "Calculate Your Revenue"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.33mileradius.com/ · 6 campos",
+        "https://www.33mileradius.com/contact-us/ · 6 campos",
+        "https://www.33mileradius.com/pricing/ · 8 campos",
+        "https://www.33mileradius.com/pricing/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El contratista solicita información y define oficio, servicios, radio/mercado y capacidad → Keyword Connects capta llamadas de propietarios y valida servicio, zona e intención → cada llamada/lead válido"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.33mileradius.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.33mileradius.com/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.33mileradius.com/pricing/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.33mileradius.com/testimonials/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.33mileradius.com/digital-marketing-services/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.33mileradius.com/our-team/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.33mileradius.com/services/pricing/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11465239070143294868",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/3631974452069701981",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/11266311330528186157",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6771884208347735765",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/6330584686628361246",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/14270956900914693561/index.html",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/14993067278653632780",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/226043705159729104/index.html",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR04661150512530325505?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/15209455497413783830",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR09566665620318060545?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR01666137265748836353?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR17205052887948853249?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR09166298252272730113?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR15085717012497825793?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR11961802167846699009?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR12450086485648998401?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR09171500522820075521?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR16245915085057294337?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR13038656296948072449?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR08190916341901819905?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR17485017547999805441?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR04552125610989715457/creative/CR00504088457421783041?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "Se localizaron 2 negación(es) o disclaimer(s) de garantía; no se clasificaron como garantía positiva.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

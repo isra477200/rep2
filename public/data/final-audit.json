@@ -1,0 +1,94 @@
+{
+  "format": "redvitalia-final-audit-1",
+  "generatedAt": "2026-08-22T22:54:56.432Z",
+  "status": "AMPLIACIÓN FORENSE EN CURSO",
+  "totals": {
+    "canonicalRecords": 712,
+    "canonicalMotherRecords": 0,
+    "canonicalChildRecords": 0,
+    "publicCompanies": 712,
+    "publicCompanyDetails": 712,
+    "publicFunnelDossiers": 712,
+    "countries": 195,
+    "publicSources": 6275,
+    "galleryEvidence": 3957,
+    "funnelEvidenceLinks": 15236,
+    "funnelScreenshots": 1251,
+    "canonicalRecordsSynchronized": 0,
+    "publicPricesWithEuroEquivalent": 299,
+    "companyIndexPricesWithEuroEquivalent": 245,
+    "funnelV3PricesWithEuroEquivalent": 299,
+    "authenticBrandAssets": 615,
+    "neutralLogoFallbacks": 97,
+    "mappedRecords": 709,
+    "unmappedRecords": 3,
+    "publishedCoordinateRecords": 67,
+    "cityCenterRecords": 107,
+    "marketCenterRecords": 535
+  },
+  "closure": {
+    "status": "AMPLIACIÓN FORENSE EN CURSO",
+    "recordsInProgress": 0,
+    "residualPending": 712,
+    "motherlessRecords": 0,
+    "criticalEmptyUnexplained": 0,
+    "orphanMedia": 0,
+    "availableEvidencePlaced": 3957,
+    "unavailableEvidenceDocumented": 5,
+    "unavailableEvidenceTotal": 5,
+    "technicalArtifactsExcluded": 17,
+    "recordsWithoutPublicSource": 0,
+    "specialMarketRecords": 9,
+    "stageResidual": {
+      "research": 0,
+      "synthesis": 0,
+      "qualityControl": 0,
+      "canonicalSync": 712,
+      "publicPortal": 0
+    },
+    "qaErrors": 0,
+    "qaWarnings": 0,
+    "checks": {
+      "exactCanonicalRecords": true,
+      "canonicalBaseAudited": false,
+      "zeroInProgress": true,
+      "zeroResidualPending": false,
+      "zeroMotherlessRecords": true,
+      "zeroCriticalEmptyUnexplained": true,
+      "zeroOrphanMedia": true,
+      "zeroRecordsWithoutPublicSource": true,
+      "allCanonicalRecordsSynchronized": false,
+      "allPublicDossiersPublished": true,
+      "allQualityControlsPassed": true,
+      "allUnavailableEvidenceDocumented": true
+    }
+  },
+  "researchQuality": {
+    "deep": 353,
+    "usable": 276,
+    "thin": 23,
+    "unobservable": 18,
+    "classificationDocumented": 42,
+    "averageCoveragePercent": 52.9
+  },
+  "documentedLimitations": {
+    "unavailableGalleryFiles": 5,
+    "neutralLogoFallbacks": 97,
+    "technicalArtifactsExcluded": 17,
+    "specialMarketRecords": 9,
+    "unmappedRecords": 3,
+    "explicitFunnelLimitations": 6173,
+    "pricingCoverage": {
+      "companyIndex": {
+        "records": 245,
+        "percent": 34.4
+      },
+      "commercialAuditV3": {
+        "records": 299,
+        "percent": 42
+      },
+      "explanation": "El índice rápido muestra el precio estructurado original; la auditoría comercial V3 añade precios públicos trazables encontrados en la revisión profunda. El total más amplio no se mezcla con fichas sin importe verificable."
+    },
+    "note": "La investigación utiliza únicamente evidencia pública consultable sin enviar formularios ni contactar a las empresas. La ausencia de datos se documenta; no se rellena con supuestos."
+  }
+}

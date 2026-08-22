@@ -1,0 +1,488 @@
+{
+  "id": "socigate",
+  "name": "Socigate",
+  "reviewedAt": "2026-08-22T15:50:19.590Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Search",
+    "heroObserved": true,
+    "priorSummary": "Agencia de marketing digital, campañas, social media, SEO, branding, contenido, foto/vídeo, software, UX y desarrollo web.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, orientado a la acción, apoya la promesa en prueba social. Usa 100 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 342 palabras por página comercial recuperada. Muestras breves: “Search” · “بحث”.",
+    "supportingHeadings": [
+      "Search",
+      "0+",
+      "What We Do?",
+      "Services",
+      "Projects",
+      "Our Innovations in Projects",
+      "Beauty Bounty",
+      "Paky",
+      "Tawreed",
+      "Grande",
+      "POTENTIA",
+      "IBS",
+      "BLACK SEA LOGISTICS",
+      "TRANSIT",
+      "WSS",
+      "BEBEAR",
+      "BAHAR",
+      "Testimonials",
+      "Paky Eye",
+      "beauty bounty",
+      "TAWREED",
+      "Health",
+      "Contact us",
+      "Discover more",
+      "Contact us and start building real results",
+      "Integrated Solutions for Digital Growth",
+      "Top Services We Offer",
+      "The Partner for Your Business Growth",
+      "A Word from the Founder & CEO",
+      "Ahmed Ali — Founder & CEO, Socigate"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://socigate.com/",
+      "text": "Contact Us",
+      "href": "https://socigate.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "تواصل معنا",
+      "Contact Us",
+      "Start Your Growth Journey",
+      "بحث",
+      "Send",
+      "إرسال",
+      "Search",
+      "العربية",
+      "English"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://socigate.com/contact",
+        "index": 3,
+        "action": "https://socigate.com/contact/send",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Name",
+            "placeholder": "الاسم",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Your Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": "Address",
+            "placeholder": "Your Address",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "Phone",
+            "placeholder": "Your Phone",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "Subject",
+            "placeholder": "Subject",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "content",
+            "label": "Content",
+            "placeholder": "Write your message here",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "agree_terms_and_policy",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "valid_from",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "math-captcha",
+            "label": null,
+            "placeholder": "8 + 3 = ?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://socigate.com/ar/contact",
+        "index": 3,
+        "action": "https://socigate.com/ar/contact/send",
+        "method": "POST",
+        "submitText": "إرسال",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "الاسم",
+            "placeholder": "الاسم",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "البريد الإلكتروني",
+            "placeholder": "البريد الإلكتروني",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "address",
+            "label": "العنوان",
+            "placeholder": "عنوانك",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "label": "الهاتف",
+            "placeholder": "رقم هاتفك",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subject",
+            "label": "الموضوع",
+            "placeholder": "الموضوع",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "content",
+            "label": "المحتوى",
+            "placeholder": "اكتب رسالتك هنا",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "agree_terms_and_policy",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "valid_from",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "math-captcha",
+            "label": null,
+            "placeholder": "4 + 2 = ?",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 9 y 9 campos visibles, mínimo 4 obligatorio(s). Fricción alta en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Alta",
+      "minFields": 9,
+      "maxFields": 9,
+      "qualification": []
+    },
+    "contacts": [
+      "Email",
+      "WhatsApp",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "Meta Pixel",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia de marketing digital, campañas, social media, SEO, branding, contenido, foto/vídeo, software, UX y desarrollo web.",
+    "audience": "Empresas de Erbil/Iraq y Estambul que buscan presencia digital y campañas multicanal.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "The strongest agency in Erbil, delivering outstanding quality to its clients.",
+      "Thank you for your excellent cooperation in delivering top-notch service.Healthis one of the region’s leading online solution providers, we assist our clients in developing their presence online and expanding their businesses.",
+      "is one of the region’s leading online solution providers, we assist our clients in developing their presence online and expanding their businesses.",
+      "More ServicesProjectsProjectsOur Innovations in ProjectsBeauty BountyPakyTawreedGrandePOTENTIAIBSBLACK SEA LOGISTICSTRANSITWSSBEBEARBAHARMore Projects Customer Feedback and Trust that Sets Us ApartTestimonialsThank you for the excellent service and impressive results."
+    ],
+    "objections": [
+      "Our commitment to excellence ensures that we provide solutions that not only meet but exceed your expectations.Comprehensive Digital Marketing Integrated strategies that connect you with your audience & achieve your goals."
+    ],
+    "urgency": [
+      "NewsletterSubscribe NowStay in the Loop: Sign Up for Our Newsletter!Email Address This site is protected by Honeypot."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "More ServicesProjectsProjectsOur Innovations in ProjectsBeauty BountyPakyTawreedGrandePOTENTIAIBSBLACK SEA LOGISTICSTRANSITWSSBEBEARBAHARMore Projects Customer Feedback and Trust that Sets Us ApartTestimonialsThank you for the excellent service and impressive results.",
+          "url": "https://socigate.com/",
+          "pageTitle": "Digital Growth Partner for Ambitious Brands - Socigate",
+          "pageCategory": "other"
+        },
+        {
+          "text": "The strongest agency in Erbil, delivering outstanding quality to its clients.",
+          "url": "https://socigate.com/",
+          "pageTitle": "Digital Growth Partner for Ambitious Brands - Socigate",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Thank you for your excellent cooperation in delivering top-notch service.Healthis one of the region’s leading online solution providers, we assist our clients in developing their presence online and expanding their businesses.",
+          "url": "https://socigate.com/",
+          "pageTitle": "Digital Growth Partner for Ambitious Brands - Socigate",
+          "pageCategory": "other"
+        },
+        {
+          "text": "is one of the region’s leading online solution providers, we assist our clients in developing their presence online and expanding their businesses.",
+          "url": "https://socigate.com/services",
+          "pageTitle": "Our Services | Socigate Agency Digital Marketing & Technical Solutions - Socigate",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Our commitment to excellence ensures that we provide solutions that not only meet but exceed your expectations.Comprehensive Digital Marketing Integrated strategies that connect you with your audience & achieve your goals.",
+          "url": "https://socigate.com/services",
+          "pageTitle": "Our Services | Socigate Agency Digital Marketing & Technical Solutions - Socigate",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://socigate.com/",
+        "https://socigate.com/contact",
+        "https://socigate.com/services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Search",
+        "بحث"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Start Your Growth Journey",
+        "Search",
+        "العربية",
+        "Send",
+        "تواصل معنا",
+        "بحث",
+        "English"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://socigate.com/contact · 9 campos",
+        "https://socigate.com/ar/contact · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email",
+        "WhatsApp",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Explorar servicios/portfolio → consulta gratuita/contacto → plan a medida → ejecución → reportes y ajustes."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://socigate.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://socigate.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://socigate.com/services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://socigate.com/about",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://socigate.com/ar/contact",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://socigate.com/projects/wss-world-system-services",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://socigate.com/ar/services",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=socigate.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&view_all_page_id=100083372649297",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://socigate.com/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 9 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, Meta Pixel, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

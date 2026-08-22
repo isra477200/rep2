@@ -1,0 +1,441 @@
+{
+  "id": "salesafspraken-nl",
+  "name": "Salesafspraken.nl",
+  "reviewedAt": "2026-08-22T15:50:17.760Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "Meer Afspraken met BeslissersWij zorgen voor de AfsprakenU sluit de Deals",
+    "heroObserved": true,
+    "priorSummary": "Externalización de la prospección telefónica y agenda de citas comerciales de alta calidad (\"topafspraken\") bajo modelo no cure no pay: \"pagas solo por las citas realmente conseguidas\".",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 136 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 977 palabras por página comercial recuperada. Muestras breves: “Telemarketing” · “B2B telemarketing contact” · “Buitendienstafspraken”.",
+    "supportingHeadings": [
+      "Telemarketing",
+      "Hoofdmenu navigatie",
+      "Mobiele navigatie",
+      "Contact",
+      "Meer weten?",
+      "Telemarketing \"No Cure No Pay\" +15 Jaar Uw callcenter",
+      "Afspraken met de juiste \"Targets\" in uw markt",
+      "Koude Acquisitie",
+      "Leadopvolging",
+      "Bezoekafspraken Bureau",
+      "Plan een \"Telefoongesprek\" en ontdek wat dit oplevert in uw markt",
+      "Footer links en informatie",
+      "Over ons",
+      "Onze diensten",
+      "Salesafspraken.nl",
+      "Telemarketing.BE",
+      "Legal navigatie",
+      "Volg Salesafspraken op sociale media",
+      "B2B telemarketing contact",
+      "Adresgegevens Nederland",
+      "Adresgegevens Belgie",
+      "buitendienstafspraken agendaplanning",
+      "Buitendienstafspraken",
+      "100% \"No Cure No Pay\" Bezoekafspraken via TelemarketingDuizenden Euro's opstartkosten? Niet bij ons!",
+      "onze teams salesafspraken",
+      "De Teamsvan Salesafspraken",
+      "\"Na 15 jaar Ontwikkeling Presenteren wij hier onze Toegewijde Salesmanagers\"",
+      "Mark: De Resultaatgedreven Pionier",
+      "Ivo: De Meester in Mensen",
+      "Chris: De Strategische Visionair"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.salesafspraken.nl/",
+      "text": "Contact",
+      "href": "https://www.salesafspraken.nl/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 243.25
+    },
+    "ctas": [
+      "Michiel van Drunen CompareConsult",
+      "Contact",
+      "Verstuur",
+      "Verzenden",
+      "Check uw markt",
+      "Directeur, Spasimo",
+      "Eigenaar, Aqua Swan",
+      "Eigenaar, Dynamic Tuning",
+      "CEO A. Bonefaas ATM Chiptuning",
+      "Richard Oerlemans CEO, Offertify"
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://www.salesafspraken.nl/telemarketing",
+        "index": 1,
+        "action": "https://www.salesafspraken.nl/telemarketing",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Naam *",
+            "placeholder": "Naam *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail *",
+            "placeholder": "E-mail *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Evt. Bericht",
+            "placeholder": "Evt. Bericht",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.salesafspraken.nl/contact",
+        "index": 1,
+        "action": "https://www.salesafspraken.nl/contact",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Naam",
+            "label": "Naam *",
+            "placeholder": "Naam *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail *",
+            "placeholder": "E-mail *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Telefoon",
+            "label": "Telefoon *",
+            "placeholder": "Telefoon *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Uw wens",
+            "label": "Uw wens",
+            "placeholder": "Uw wens",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.salesafspraken.nl/Onze-Teams",
+        "index": 1,
+        "action": "https://www.salesafspraken.nl/Onze-Teams",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Naam *",
+            "placeholder": "Naam *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail *",
+            "placeholder": "E-mail *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Evt. Bericht en of telefoonnummer",
+            "placeholder": "Evt. Bericht en of telefoonnummer",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.salesafspraken.nl/",
+        "index": 1,
+        "action": "https://www.salesafspraken.nl/",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 3,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Naam *",
+            "placeholder": "Naam *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "E-mail *",
+            "placeholder": "E-mail *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Opmerking",
+            "placeholder": "Opmerking",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 3 y 4 campos visibles, mínimo 2 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 3,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Agenda online",
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Externalización de la prospección telefónica y agenda de citas comerciales de alta calidad (\"topafspraken\") bajo modelo no cure no pay: \"pagas solo por las citas realmente conseguidas\".",
+    "audience": "Telemarketing y concertación de citas B2B (\"topafspraken\") para pymes neerlandesas y belgas de varios sectores: tuning de coches, software, selección de personal, servicios financieros, logística.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Llamada en frío",
+        "Web / landing",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.salesafspraken.nl/telemarketing",
+        "https://www.salesafspraken.nl/contact",
+        "https://www.salesafspraken.nl/buitendienstafspraken-agendaplanning"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Telemarketing",
+        "B2B telemarketing contact",
+        "Buitendienstafspraken",
+        "Meer Afspraken met BeslissersWij zorgen voor de AfsprakenU sluit de Deals"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact",
+        "Verstuur",
+        "Verzenden",
+        "CEO A. Bonefaas ATM Chiptuning",
+        "Eigenaar, Dynamic Tuning",
+        "Eigenaar, Aqua Swan",
+        "Directeur, Spasimo",
+        "Michiel van Drunen CompareConsult"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.salesafspraken.nl/telemarketing · 3 campos",
+        "https://www.salesafspraken.nl/contact · 4 campos",
+        "https://www.salesafspraken.nl/buitendienstafspraken-agendaplanning · 3 campos",
+        "https://www.salesafspraken.nl/Onze-Teams · 3 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Teléfono",
+        "Email",
+        "Plan een afspraak",
+        "Plan een afspraak",
+        "Plan een afspraak",
+        "Plan een afspraak"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Intake gratuito → definición de ICP y estándar de calidad → aprobación de guiones → telemarketing con control de calidad → cita lograda o venta cerrada → cobro"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.salesafspraken.nl/telemarketing",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.salesafspraken.nl/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.salesafspraken.nl/buitendienstafspraken-agendaplanning",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.salesafspraken.nl/Onze-Teams",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.salesafspraken.nl/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.salesafspraken.nl/over-ons",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.salesafspraken.nl/aanvraagformulier",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=salesafspraken.nl",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://salesafspraken.nl/",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (3 campos) y cualificación después, midiendo calidad y tasa de cita."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

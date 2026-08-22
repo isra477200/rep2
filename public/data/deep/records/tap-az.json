@@ -1,0 +1,274 @@
+{
+  "id": "tap-az",
+  "name": "Tap.az",
+  "reviewedAt": "2026-08-22T15:50:18.962Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 44,
+  "message": {
+    "hero": "Premium elanlar",
+    "heroObserved": true,
+    "priorSummary": "Usuarios publican anuncios; compradores buscan, consultan el anuncio y contactan o usan mensajería. La plataforma ofrece promoción pagada.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, consultivo / basado en preguntas, explicativo, orientado a la acción. Usa 418 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1653 palabras por página comercial recuperada. Muestras breves: “Premium elanlar” · “İctimai oferta” · “Planşetlər və elektron kitablar”.",
+    "supportingHeadings": [
+      "Premium elanlar",
+      "İctimai oferta",
+      "1. Təriflər",
+      "2. Müqavilənin predmeti",
+      "3. Müqavilənin bağlanması. Xidmət sifarişi",
+      "4. Xidmət göstərilməsinin ümumi şərtləri",
+      "5. Xidmətlərin dəyəri və hesablaşma qaydası",
+      "6. Məsuliyyət",
+      "7. İddialara baxılması",
+      "8. Qarşısıalınmaz qüvvə (Fors-major hallar)",
+      "9. Müqavilənin ləğvi və pul vəsaitinin geri qaytarılması",
+      "10. Şirkət haqqında məlumat",
+      "Planşetlər və elektron kitablar",
+      "VIP elanlar",
+      "Elanlar",
+      "İstifadəçi Razılaşmasına Əlavə №2",
+      "Ödənişli xidmətlər (bundan sonra “İrəlilətmə” xidmətləri)",
+      "Mündəricat:",
+      "İrəlilətmə xidmətləri:",
+      "- İrəli çək",
+      "- VIP",
+      "- Premium",
+      "İrəlilətmə xidmətləri",
+      "“İrəli çək” xidməti",
+      "Xidmətin ödənişi nə qədərdir?",
+      "Xidmət necə işləyir?",
+      "Xidmət elanın aktivlik müddətinə təsir edirmi?",
+      "Xidməti bir neçə dəfə tətbiq etdikdə nə baş verəcək?",
+      "“VIP” xidməti",
+      "Elan ona dəyişikliklər edildikdən sonra “VIP elanlar” blokunda qalacaqmı?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Ümumi oferta müqaviləsi",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://tap.az/",
+      "text": "Ümumi oferta müqaviləsi",
+      "href": "https://tap.az/pages/proposal",
+      "element": "a",
+      "kind": "conversion",
+      "score": 79.25
+    },
+    "ctas": [
+      "Ağsu",
+      "Bakı",
+      "Ağdam",
+      "Ağdaş",
+      "Bərdə",
+      "Culfa",
+      "Gəncə",
+      "Ağdərə",
+      "Astara",
+      "Füzuli",
+      "Göyçay",
+      "Göygöl",
+      "Ağstafa",
+      "Balakən",
+      "Gədəbəy",
+      "Göytəpə",
+      "Horadiz",
+      "İmişli",
+      "Ağcabədi",
+      "Beyləqan",
+      "Cəbrayıl",
+      "Daşkəsən",
+      "Goranboy",
+      "Kəlbəcər",
+      "Kürdəmir",
+      "Biləsuvar",
+      "Cəlilabad",
+      "Hacıqabul",
+      "İsmayıllı",
+      "Ümumi oferta müqaviləsi"
+    ],
+    "captureType": "Teléfono / email",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Usuarios publican anuncios; compradores buscan, consultan el anuncio y contactan o usan mensajería. La plataforma ofrece promoción pagada.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://tap.az/",
+        "https://tap.az/pages/proposal",
+        "https://tap.az/elanlar/elektronika/plansetler"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Premium elanlar",
+        "İctimai oferta",
+        "Planşetlər və elektron kitablar",
+        "Ödənişli xidmətlər (bundan sonra “İrəlilətmə” xidmətləri)"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Ümumi oferta müqaviləsi",
+        "Ağcabədi",
+        "Ağdam",
+        "Ağdaş",
+        "Ağdərə",
+        "Ağstafa",
+        "Ağsu",
+        "Astara"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://tap.az/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://tap.az/pages/proposal",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://tap.az/elanlar/elektronika/plansetler",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://tap.az/pages/paid-services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://tap.az/help",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tap.az/pages/about",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://tap.az/pages/proposal?q%5Bregion_id%5D=468",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tap.az/pages/terms-and-conditions",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://tap.az/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://tap.az/bookmarks: Bloqueado por robots.txt",
+    "robots.txt impidió 1 URL(s).",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Ümumi oferta müqaviləsi”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

@@ -35,6 +35,11 @@ yarn-error.log*
 .vercel
 
 /dist/
+
+# Canonical research and audits contain private source identifiers. They are
+# local resumable inputs and must never be published with the portal source.
+/research/
+/audit/
 /.wrangler/
 /outputs/
 /work/

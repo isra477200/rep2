@@ -1,0 +1,606 @@
+{
+  "id": "playmedic",
+  "name": "Playmedic",
+  "reviewedAt": "2026-08-22T15:50:17.717Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Solución nº1 en captación de pacientes",
+    "heroObserved": true,
+    "priorSummary": "Agencia dedicada al sector salud que diseña sistemas de captación y experiencia de paciente para clínicas, profesionales, laboratorios, marcas y eHealth: Google/Meta/TikTok/Spotify Ads, SEO/web/inbound, vídeo/contenido y asistentes IA para teléfono, WhatsApp y chatbot, agenda, seguimiento y reactivación.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 71 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1605 palabras por página comercial recuperada. Muestras breves: “Solución nº1 en captación de pacientes” · “Agenda tu llamada gratuita y empieza el cambio.” · “Contáctanos”.",
+    "supportingHeadings": [
+      "Solución nº1 en captación de pacientes",
+      "Expertos en captación de pacientes y estrategias de marketing salud",
+      "Consigue pacientes con marketing de salud orientado a resultados",
+      "Sistema de captación de pacientes con resultados cada mes",
+      "Comprensión del Paciente",
+      "Análisis y Optimización Constante",
+      "Sin cambiar o rediseñar tu web",
+      "Sin gastar tiempo y dinero creando contenido en redes",
+      "Multiplica resultados y facturación",
+      "Cómo lo hacemos",
+      "Clientes",
+      "Opiniones",
+      "¿Por qué tener un sistema de captación de pacientes?",
+      "Tecnología al Servicio de la Salud",
+      "Integración de Canales de Comunicación",
+      "¿Por qué tener una agencia de marketing salud para mi captación de pacientes?",
+      "Integración de Tecnología Avanzada",
+      "Énfasis en la Experiencia del Paciente",
+      "Optimización Multicanal",
+      "Medición y ROI en Tiempo Real",
+      "¿Es mejor una agencia de marketing para clínicas especializada o una multisector?",
+      "Estrategias Personalizadas",
+      "Resultados Medibles y Análisis Continuo",
+      "Enfoque en la Experiencia del Paciente",
+      "Adaptación a las Nuevas Tecnologías",
+      "¿Cómo puede el marketing en salud ayudarme a captar más pacientes?",
+      "¿Qué diferencia a Playmedic de otras agencias de marketing para clínicas?",
+      "¿Cómo saber si mi clínica necesita una agencia de marketing digital en salud?",
+      "Agenda tu llamada con un experto",
+      "Publicidad Digital"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "RESERVA UNA CONSULTORÍA GRATUITA",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.playmedic.com/",
+      "text": "RESERVA UNA CONSULTORÍA GRATUITA",
+      "href": "https://www.playmedic.com/formulario-captacion-pacientes/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 177
+    },
+    "ctas": [
+      "RESERVA UNA CONSULTORÍA GRATUITA",
+      "EMPIEZA HOY",
+      "EMPIEZA HOY MISMO",
+      "Enviar",
+      "{title}"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.playmedic.com/",
+        "index": 1,
+        "action": "https://www.playmedic.com/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre Completo*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Correo electrónico profesional*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Teléfono*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url-145",
+            "label": "Web de la clínica*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "number-211",
+            "label": "¿Cuantos años de actividad tiene tu clínica?*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "radio-789",
+            "label": "Menos 1.000€/mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-291",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.playmedic.com/formulario-captacion-pacientes/",
+        "index": 1,
+        "action": "https://www.playmedic.com/formulario-captacion-pacientes/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 6,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre Completo*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Correo electrónico profesional*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Teléfono*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url-145",
+            "label": "Web de la clínica*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "number",
+            "name": "number-211",
+            "label": "¿Cuantos años de actividad tiene tu clínica?*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "radio-771",
+            "label": "No tengo",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "text-165",
+            "label": "¿Qué tratamientos quieres impulsar? (Ej. Implantes Dentales)*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "radio-789",
+            "label": "Menos 1.000€/mes",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-291",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.playmedic.com/contacto/",
+        "index": 1,
+        "action": "https://www.playmedic.com/contacto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre Completo*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Correo electrónico profesional*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Teléfono*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Tu mensaje*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-291",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.playmedic.com/seo-dental/",
+        "index": 1,
+        "action": "https://www.playmedic.com/seo-dental/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nombre Completo*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "Correo electrónico profesional*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-phone",
+            "label": "Teléfono*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url-145",
+            "label": "Web de empresa*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "¿Qué palabras clave quieres posicionar? (Ej: ortodoncia valencia)*",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-291",
+            "label": "Acepto la Política de Privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "4 diseño(s) de formulario distinto(s); entre 5 y 9 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Web de la clínica*, Web de empresa*.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 9,
+      "qualification": [
+        "Web de la clínica*",
+        "Web de empresa*"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agencia dedicada al sector salud que diseña sistemas de captación y experiencia de paciente para clínicas, profesionales, laboratorios, marcas y eHealth: Google/Meta/TikTok/Spotify Ads, SEO/web/inbound, vídeo/contenido y asistentes IA para teléfono, WhatsApp y chatbot, agenda, seguimiento y reactivación.",
+    "audience": "Clínicas médicas, dentales y de medicina estética; profesionales sanitarios, laboratorios farmacéuticos, marcas de salud y startups eHealth. Operación autodeclarada en cuatro países.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Multiplica resultados y facturación Hemos aumentado la captación de pacientes y la facturación en 8 de cada 10 clínicas con las que trabajamos, así como la captación de leads y ventas en compañías de seguros de salud, laboratorios y otras empresas de salud.",
+      "Los resultados de nuestros clientes nos avalan.Ya sea que busques marketing para médicos, marketing para clínicas dentales o marketing para cirujanos plásticos, entre otros, confía en nuestros servicios de marketing para atraer pacientes a tu negocio.",
+      "Sistema de captación de pacientes con resultados cada mes Somos expertos en captación de pacientes en distintas especialidades del ámbito de la salud, belleza y bienestar.",
+      "…y servicio para mejorar la captación y atraer nuevos pacientes.Análisis y Optimización ConstanteEl análisis continuo de resultados permite ajustar estrategias en tiempo real, asegurando así que se están utilizando los métodos más eficientes para atraer y retener a los pacientes.",
+      "…ción de nuevos pacientes para profesionales médicos y clínicas médicas, y creación de estrategias digitales que generan resultados para clínicas, laboratorios farmacéuticos, marcas de salud y startups del sector ehealth.Si ya estás facturando pero quieres crecer más: diseñamos e implementamos tu estrategia de…"
+    ],
+    "objections": [
+      "¿Por qué tener un sistema de captación de pacientes?",
+      "¿Por qué tener una agencia de marketing salud para mi captación de pacientes?"
+    ],
+    "urgency": [
+      "…e 10 años conocemos los retos reales que enfrentan clínicas como la tuya: saturación del mercado, pacientes con acceso ilimitado a información (no siempre fiable), dificultad para destacar entre la competencia… Por eso diseñamos soluciones personalizadas, basadas en datos, experiencia y una comprensión tot…",
+      "…garantissant une expérience sécurisée et agréable.The moment multipliers start stacking in a Hacksaw Gaming slot, you know you’re not in for a gentle ride.",
+      "empieza ahora tu adquisición de pacientes.",
+      "Estas tecnologías permiten conectar comportamientos de pacientes y personalizar tu marketing de salud.Énfasis en la Experiencia del PacienteEl enfoque se ha desplazado hacia mejorar la experiencia del paciente.",
+      "EMPIEZA HOY MISMO Partners: Hablan de nosotros La importancia de la publicidad clínica dental La publicidad dental desempeña un papel fundamental en el éxito y crecimiento de una clínica dental.",
+      "Spotify Ads para dar a conocer tu clinica dental La publicidad en Spotify nos permite llegar a potenciales pacientes mientras disfrutan de su música favorita."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…ción de nuevos pacientes para profesionales médicos y clínicas médicas, y creación de estrategias digitales que generan resultados para clínicas, laboratorios farmacéuticos, marcas de salud y startups del sector ehealth.Si ya estás facturando pero quieres crecer más: diseñamos e implementamos tu estrategia de…",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Los resultados de nuestros clientes nos avalan.Ya sea que busques marketing para médicos, marketing para clínicas dentales o marketing para cirujanos plásticos, entre otros, confía en nuestros servicios de marketing para atraer pacientes a tu negocio.",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sistema de captación de pacientes con resultados cada mes Somos expertos en captación de pacientes en distintas especialidades del ámbito de la salud, belleza y bienestar.",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…y servicio para mejorar la captación y atraer nuevos pacientes.Análisis y Optimización ConstanteEl análisis continuo de resultados permite ajustar estrategias en tiempo real, asegurando así que se están utilizando los métodos más eficientes para atraer y retener a los pacientes.",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Multiplica resultados y facturación Hemos aumentado la captación de pacientes y la facturación en 8 de cada 10 clínicas con las que trabajamos, así como la captación de leads y ventas en compañías de seguros de salud, laboratorios y otras empresas de salud.",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "¿Por qué tener un sistema de captación de pacientes?",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué tener una agencia de marketing salud para mi captación de pacientes?",
+          "url": "https://www.playmedic.com/",
+          "pageTitle": "Nº1 Captación Pacientes Growth Marketing Salud - Playmedic",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.playmedic.com/",
+        "https://www.playmedic.com/formulario-captacion-pacientes/",
+        "https://www.playmedic.com/contacto/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Solución nº1 en captación de pacientes",
+        "Agenda tu llamada gratuita y empieza el cambio.",
+        "Contáctanos",
+        "Publicidad Clínica Dental"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "RESERVA UNA CONSULTORÍA GRATUITA",
+        "EMPIEZA HOY",
+        "Enviar",
+        "{title}",
+        "EMPIEZA HOY MISMO"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.playmedic.com/ · 7 campos",
+        "https://www.playmedic.com/formulario-captacion-pacientes/ · 9 campos",
+        "https://www.playmedic.com/contacto/ · 5 campos",
+        "https://www.playmedic.com/publicidad-clinica-dental/ · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "RESERVA UNA CONSULTORÍA GRATUITA"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página vertical por subsector → CTA a consulta gratuita → formulario (contacto, web, años de actividad y tramo de inversión mensual) → cualificación/consulta → diagnóstico de paciente, mercado,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.playmedic.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.playmedic.com/formulario-captacion-pacientes/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.playmedic.com/contacto/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.playmedic.com/publicidad-clinica-dental/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.playmedic.com/publicidad-medicina-estetica/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.playmedic.com/seo-dental/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.playmedic.com/seo-medico/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.playmedic.com/aviso-legal/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.playmedic.com/marketing-medicina-estetica/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.playmedic.com/marketing-farmaceutico/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.playmedic.com/asistentes-inteligencia-artificial-para-clinicas/",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “RESERVA UNA CONSULTORÍA GRATUITA”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

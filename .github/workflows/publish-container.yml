@@ -1,4 +1,4 @@
-name: Publish RedVitalia container
+name: Publish RedVitalia portal
 
 on:
   push:
@@ -32,10 +32,10 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/isra477200/redvitalia-radar:latest
-            ghcr.io/isra477200/redvitalia-radar:${{ github.sha }}
+            ghcr.io/isra477200/redvitalia-inteligencia:latest
+            ghcr.io/isra477200/redvitalia-inteligencia:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=https://github.com/isra477200/rep2
-            org.opencontainers.image.title=RedVitalia Radar Global
+            org.opencontainers.image.title=Inteligencia Mundial de Captación · RedVitalia
           cache-from: type=gha
           cache-to: type=gha,mode=max

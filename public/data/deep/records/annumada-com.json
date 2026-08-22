@@ -1,0 +1,321 @@
+{
+  "id": "annumada-com",
+  "name": "annumada.com",
+  "reviewedAt": "2026-08-22T15:50:18.697Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Entrez votre adresse email",
+    "heroObserved": true,
+    "priorSummary": "Búsqueda, inscripción gratuita y Premium mediante contacto comercial.",
+    "voice": "Tono cuantitativo, centrado en la marca, consultivo / basado en preguntas, conciso, orientado a la acción. Usa 281 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 247 palabras por página comercial recuperada. Muestras breves: “Entrez votre adresse email”.",
+    "supportingHeadings": [
+      "Entrez votre adresse email",
+      "Explorer par thème",
+      "Dernières Consultations",
+      "MATERNITE AVE MARIA ANTSIRABE",
+      "DOMAINE DE MAHITASOA",
+      "SFOI",
+      "PLANETE FRANCE MADAGASCAR",
+      "SGS Madagascar SARL",
+      "LEMURIA TOURS",
+      "APPLICATION ANNUMADA",
+      "À Découvrir",
+      "édition 2024",
+      "Les agendas 2026",
+      "SPAT",
+      "FCCIM",
+      "CCIFM",
+      "GEM",
+      "Plans des Villes Touristiques de Madagascar",
+      "Antananarivo",
+      "Toamasina",
+      "Antsirabe",
+      "Fianarantsoa",
+      "Mahajanga",
+      "Sainte Marie",
+      "Antsiranana",
+      "Nos coordonnées",
+      "Filtrer par ville",
+      "Rubriques",
+      "ANTANANARIVO (TANANARIVE)",
+      "Localisation"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactez-nous",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.annumada.com/",
+      "text": "Contactez-nous",
+      "href": "https://www.annumada.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 241.5
+    },
+    "ctas": [
+      "Contactez-nous",
+      "Nous contacter",
+      "contact@sear.mg",
+      "Envoyer",
+      "Connexion",
+      "Mot de passe oublié",
+      "Appliquer le filtre",
+      "Pas encore inscrit ? Créer un compte"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.annumada.com/",
+        "index": 3,
+        "action": "https://www.annumada.com/user/reset",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.annumada.com/contact",
+        "index": 4,
+        "action": "https://www.annumada.com/contact/send",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Nom",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "mail",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "society",
+            "label": null,
+            "placeholder": "Société",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": null,
+            "placeholder": "Message",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 4 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 4,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Búsqueda, inscripción gratuita y Premium mediante contacto comercial.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.annumada.com/",
+        "https://www.annumada.com/contact",
+        "https://www.annumada.com/company/searchCompany/34744"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Entrez votre adresse email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contactez-nous",
+        "Pas encore inscrit ? Créer un compte",
+        "Nous contacter",
+        "Connexion",
+        "Mot de passe oublié",
+        "Envoyer",
+        "Appliquer le filtre",
+        "contact@sear.mg"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.annumada.com/ · 1 campos",
+        "https://www.annumada.com/contact · 1 campos",
+        "https://www.annumada.com/contact · 4 campos",
+        "https://www.annumada.com/company/searchCompany/34744 · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.annumada.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.annumada.com/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.annumada.com/company/searchCompany/34744",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.annumada.com/topic/detail/1",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.annumada.com/companies?rubric_id=43",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.annumada.com/topic/detail/2",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.annumada.com/topic/detail/5",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.annumada.com/souscription",
+      "label": "Fuente pública 8"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactez-nous”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

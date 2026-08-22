@@ -1,0 +1,528 @@
+{
+  "id": "ernesto-it-buytron-srl",
+  "name": "Ernesto.it (Buytron SRL)",
+  "reviewedAt": "2026-08-22T15:50:18.150Z",
+  "status": "Limitada",
+  "confidence": "Alta",
+  "coveragePercent": 0,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Recibir presupuestos comparables; primeros contactos gratis para el profesional que completa su perfil",
+    "voice": "Revisión manual: masivo, simple, local, transaccional, optimista, orientado a volumen. gratuito migliori professionisti richieste contatti senza impegno garanzia visibilità",
+    "supportingHeadings": []
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [],
+    "captureType": "Sin captura visible",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Recibir presupuestos comparables; primeros contactos gratis para el profesional que completa su perfil",
+    "audience": "Profesionales de reformas y servicios para el hogar en Italia",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se pudo recuperar una página pública."
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se localizó una acción comercial inequívoca; se excluyeron navegación, redes, FAQ y tarjetas."
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El consumidor responde preguntas sobre el servicio → Ernesto empareja y avisa a profesionales adecuados → el profesional completa perfil para probar contactos gratuitos y después compra un"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "demanda [observado] → activación comprador [observado] → adquisición proveedor [observado] → matching [observado] → monetización [observado] → propuesta [observado] → cierre [observado] → retención [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://help.ernesto.it/domande-frequenti-professionisti/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.ernesto.it/signup/pro",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=ernesto.it",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR12959504610938060801?region=anywhere",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/7798270376573507119/index.html",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR08522992991206375425?region=anywhere",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/13864125005948074130/index.html",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR12352640919017619457?region=anywhere",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "http://ernesto.it/",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://www.ernesto.it/%E2%81%A9",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/3942611287769867914/index.html",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/15964527480786650362/index.html",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR08869160483316301825?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/18367240290702282471/index.html",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR15099538724062494721?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/9415455128303730176/index.html",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR15681143953833328641?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/5524549940447914388/index.html",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR12709325669343952897?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/7449656092982850655",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR08336555951309979649?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/451092677345101820/index.html",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR08641728702134091777?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/15283285505299005114/index.html",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR17759143277321256961?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/18195282994521839403/index.html",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR03128905287411433473?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://tpc.googlesyndication.com/archive/sadbundle/$csp%3Darchive$/15358663321506440941/index.html",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR08330171052927746049/creative/CR17859813995024744449?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-1.xml.gz: Contenido no textual: application/gzip",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-1.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-2.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-3.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-4.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-5.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-6.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-7.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-8.xml: Respuesta supera 2500000 bytes",
+    "https://www.ernesto.it/sitemap/ernesto.it/prices-cities-it-9.xml: Respuesta supera 2500000 bytes",
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se recuperó contenido comercial HTML utilizable; requiere navegador o documentación externa.",
+    "Se recuperaron 2 recurso(s), pero ninguno superó el umbral de página comercial utilizable; XML, contenido vacío y páginas técnicas se excluyeron de cobertura.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó una página comercial utilizable; XML, contenido vacío y páginas técnicas no cuentan como landing.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó un CTA inequívoco en el HTML público recuperado; puede existir en contenido dinámico o tras autenticación.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**No copiar todavía:** falta evidencia pública accesible; mantener esta referencia fuera de decisiones hasta una revisión visual o una fuente alternativa."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": null,
+      "promise": "Para el comprador, comparar profesionales locales gratis; para el profesional, encontrar demanda y pagar solo cuando decide responder.",
+      "positioning": "gran mercado local de oportunidad inmediata",
+      "audience": "Consumidores italianos que buscan más de 1.000 tipos de servicio y profesionales o empresas locales que quieren oportunidades comerciales.",
+      "voice": [
+        "masivo",
+        "simple",
+        "local",
+        "transaccional",
+        "optimista",
+        "orientado a volumen"
+      ],
+      "patterns": [
+        "gratuito",
+        "migliori professionisti",
+        "richieste",
+        "contatti",
+        "senza impegno",
+        "garanzia",
+        "visibilità"
+      ]
+    },
+    "cta": {
+      "primary": "Buscar servicio y publicar solicitud",
+      "secondary": [
+        "registrarse como profesional",
+        "consultar a Ernesto",
+        "comprar contactos",
+        "activar plan"
+      ],
+      "forms": [
+        {
+          "url": "https://www.ernesto.it/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "servicio",
+            "detalle opcional",
+            "fotos o documentos opcionales",
+            "dirección o zona",
+            "email",
+            "teléfono",
+            "nombre",
+            "aceptación de términos y privacidad",
+            "confirmación por email"
+          ],
+          "fieldCount": 9,
+          "friction": "media-alta y progresiva",
+          "submitted": false
+        },
+        {
+          "url": "https://www.ernesto.it/signup/pro",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "servicio",
+            "dirección o zona",
+            "datos posteriores de registro no observables sin avanzar"
+          ],
+          "fieldCount": 3,
+          "friction": "no cuantificable",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "demanda",
+        "status": "observado",
+        "detail": "Comprador busca uno de más de 1.000 servicios, describe necesidad, zona y datos de contacto. — stage: demanda — evidenceUrls: https://www.ernesto.it/"
+      },
+      {
+        "stage": "activación comprador",
+        "status": "observado",
+        "detail": "La solicitud se confirma por email y se comunica a profesionales locales; el uso es gratuito para el comprador. — stage: activación comprador — evidenceUrls: https://www.ernesto.it/"
+      },
+      {
+        "stage": "adquisición proveedor",
+        "status": "observado",
+        "detail": "Alta gratuita, servicio y zona; perfil completo y reseñas aumentan visibilidad. — stage: adquisición proveedor — evidenceUrls: https://www.ernesto.it/signup/pro · https://www.ernesto.it/help/pros/how-it-works?c1=altro"
+      },
+      {
+        "stage": "matching",
+        "status": "observado",
+        "detail": "Profesionales reciben solicitudes gratuitas según perfil y pueden ignorar o responder. — stage: matching — evidenceUrls: https://www.ernesto.it/help/pros/contacts"
+      },
+      {
+        "stage": "monetización",
+        "status": "observado",
+        "detail": "Responder manual o automáticamente consume un contacto y revela datos recíprocos; el precio queda tras login. — stage: monetización — evidenceUrls: https://www.ernesto.it/help/pros/contacts · https://www.ernesto.it/help/terms"
+      },
+      {
+        "stage": "propuesta",
+        "status": "observado",
+        "detail": "La guía estima que un profesional suele enviar unas tres propuestas para lograr un trabajo; Ernesto no media la contratación. — stage: propuesta — evidenceUrls: https://www.ernesto.it/help/pros/how-it-works?c1=altro · https://www.ernesto.it/help/terms"
+      },
+      {
+        "stage": "cierre",
+        "status": "observado",
+        "detail": "Comprador y profesional contactan y acuerdan fuera de la plataforma; usuarios asumen calidad, pago y ejecución. — stage: cierre — evidenceUrls: https://www.ernesto.it/help/terms"
+      },
+      {
+        "stage": "retención",
+        "status": "observado",
+        "detail": "Paquetes, ilimitados, renovación automática, respuesta automática y garantía en créditos fomentan continuidad. — stage: retención — evidenceUrls: https://www.ernesto.it/help/pros/contacts · https://help.ernesto.it/garanzia-ernesto-it/"
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "Alta y recepción de solicitudes gratuitas; responder consume un contacto. Existen paquetes de 10–30 contactos y planes ilimitados mensuales o anuales, pero el importe solo se muestra dentro de la cuenta. — currency: EUR — exactUrl: https://www.ernesto.it/help/pros/contacts"
+      ],
+      "contract": [
+        "Opciones mensuales y anuales; renovación automática por defecto para pagos con tarjeta o PayPal. La cancelación exige usar el icono de papelera y comunicar a soporte un código generado. Las condiciones pueden cambiar con aviso público. — exactUrl: https://www.ernesto.it/help/terms"
+      ],
+      "guarantee": [
+        "Garantía para profesionales nuevos: con perfil completo/certificado y todos los contactos comprados consumidos, si no se cierra ningún trabajo se conceden créditos, no dinero. La última oportunidad debe tener al menos 14 días y la compra por consumo menos de un año; se solicita y verifica. — creditTable: mensual 10 → 5 contactos · mensual 30 → 15 · anual 10 → 25 · anual 30 → 60 · ilimitado mensual → 180 · ilimitado anual → 300 — exactUrl: https://help.ernesto.it/garanzia-ernesto-it/ — caveat: Si se consiguió un solo trabajo la garantía queda invalidada. La propia página contiene una frase incompatible que parece exigir haber completado al menos uno."
+      ]
+    },
+    "proof": [
+      "claims: más de 155.000 solicitudes · más de €130 millones de facturación solicitada · 3,7 millones de visitantes anuales · 100.000 profesionales · más de 1.000 servicios · más de 5.000 solicitudes disponibles · las reseñas aumentarían la selección un 230% — quality: media-baja — caveat: Contadores y efectos autopublicados sin periodo o auditoría uniforme. Volumen de solicitud no equivale a lead válido, propuesta, contratación ni facturación realizada."
+    ],
+    "objections": [
+      "objection: ¿Cuesta publicar una necesidad? — answer: No para el comprador; la monetización recae en profesionales que responden.",
+      "objection: ¿Pago por recibir solicitudes? — answer: No; el contacto se consume al responder y desbloquear datos.",
+      "objection: ¿Cuánto cuesta cada contacto? — answer: Se muestra solo dentro de la cuenta y puede variar; hay consumo e ilimitados.",
+      "objection: ¿Me reembolsan si el cliente no me elige? — answer: Generalmente no; solo abuso reconocido o garantía en créditos bajo condiciones estrictas.",
+      "objection: ¿Puedo cancelar? — answer: Sí, pero existe renovación automática y un flujo de cancelación con código y soporte.",
+      "objection: ¿Ernesto selecciona al mejor? — answer: Marketing habla de mejores profesionales; términos aclaran que no media ni preselecciona y que la responsabilidad es de usuarios."
+    ],
+    "technology": [
+      "marketplace web dinámico — basis: flujos comprador/profesional",
+      "Calendly — basis: agenda oficial de consulta",
+      "WhatsApp — basis: canal comercial/consentimiento descrito",
+      "respuesta automática — basis: función pública para profesionales",
+      "CRM externo — basis: sin integración o marca pública verificable"
+    ],
+    "contradictions": [
+      "'Totalmente gratuito' es cierto para comprador y alta, pero no para el profesional que quiere responder; la interfaz debe separar siempre ambos roles. — severity: media",
+      "Las páginas difieren entre al menos un primer contacto, dos contactos y hasta dos contactos gratuitos al mes. — severity: alta",
+      "La garantía dice que aplica si se han cerrado cero trabajos y que un solo trabajo la invalida, pero otra frase de la misma página la subordina a completar al menos uno. — severity: crítica",
+      "La política general niega devolución de contactos usados, mientras la garantía solo repone una fracción en créditos y bajo múltiples condiciones; no es garantía de recuperación del gasto. — severity: alta",
+      "'Sin compromiso' convive con planes anuales y renovación automática por defecto, cuya baja requiere un procedimiento no inmediato. — severity: media",
+      "Marketing promete contacto con los mejores profesionales, mientras los términos excluyen mediación, preselección y responsabilidad sobre calidad. — severity: alta",
+      "La promoción de €50 en Amazon no presenta condiciones completas y auditables junto al claim revisado. — severity: media"
+    ],
+    "inferences": [],
+    "notObservable": [],
+    "limitations": [
+      "Auditoría pública sin crear cuenta, publicar solicitud, comprar contacto, activar prueba ni reservar consulta.",
+      "Precios exactos y controles posteriores del signup requieren autenticación y quedan no observables.",
+      "No se verificaron solicitudes reales, identidad de profesionales, cierre de trabajos ni desembolso de garantía."
+    ],
+    "lessons": {
+      "copy": [
+        "rol comprador gratis / proveedor de pago",
+        "pago al revelar contacto",
+        "perfil y reputación",
+        "garantía expresada en tabla"
+      ],
+      "adapt": [
+        "alertas por zona",
+        "créditos solo tras evidencia",
+        "propuesta media como benchmark",
+        "respuesta automática con límites",
+        "Mostrar antes de comprar coste por contacto, competencia esperada, definición de solicitud válida, probabilidad histórica por categoría y política de crédito en una sola pantalla.",
+        "Un marketplace crece separando gratuidad de demanda y monetización de oferta, pero la confianza exige que precio, competencia, calidad y renovación sean visibles antes de consumir el primer crédito."
+      ],
+      "avoid": [
+        "precio detrás de login",
+        "renovación automática opaca",
+        "garantía contradictoria",
+        "consentimiento comercial demasiado amplio",
+        "mejores profesionales sin verificación"
+      ],
+      "test": []
+    },
+    "sources": [
+      {
+        "url": "https://www.ernesto.it/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.ernesto.it/signup/pro",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.ernesto.it/help/pros/contacts",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.ernesto.it/help/pros/how-it-works?c1=altro",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      },
+      {
+        "url": "https://help.ernesto.it/domande-frequenti-professionisti/",
+        "label": "Fuente manual 5",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.ernesto.it/help/terms",
+        "label": "Fuente manual 6",
+        "status": "observado"
+      },
+      {
+        "url": "https://help.ernesto.it/garanzia-ernesto-it/",
+        "label": "Fuente manual 7",
+        "status": "observado"
+      },
+      {
+        "url": "https://calendly.com/appuntamento-con-ernesto/consulenza-con-ernesto-it",
+        "label": "Fuente manual 8",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "manual_only"
+}

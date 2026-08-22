@@ -1,0 +1,614 @@
+{
+  "id": "sejasa",
+  "name": "Sejasa",
+  "reviewedAt": "2026-08-22T15:50:18.321Z",
+  "status": "Verificada manual",
+  "confidence": "Alta",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "El usuario pide un servicio y recibe hasta seis presupuestos para comparar en pocas horas.",
+    "heroObserved": true,
+    "priorSummary": "Marketplace indonesio que recoge un brief, distribuye la solicitud a proveedores y permite recibir ofertas, contratar y pagar con escrow SejasaPay.",
+    "voice": "Revisión manual: masivo, práctico, orientado a confianza, comparativo, transaccional. Convierte la elección de proveedor en comparación de varias ofertas. Usa número de clientes, seguro y garantía de devolución como prueba de confianza. A los proveedores les vende un perfil, solicitudes y posibilidad de cotizar. Los términos enfatizan mantener pago y comunicación dentro de plataforma para conservar protección.",
+    "supportingHeadings": [
+      "Popular",
+      "Temukan penyedia jasa terpercaya untuk segala kebutuhan Anda",
+      "Lebih dari 300,000 customer telah menggunakan Sejasa.com untuk menemukan Penyedia Jasa Terpercaya",
+      "Apakah kamu Penyedia Jasa?",
+      "Menjadi Penyedia Jasa",
+      "Download Aplikasi",
+      "Sejasa.com adalah tempat mencari penyedia jasa profesional terlengkap dan terbesar di Indonesia.",
+      "Di Balik Sejasa.com",
+      "Links",
+      "Mari Terhubung dengan Tim Sejasa!",
+      "Frequently Asked Questions"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.sejasa.com/about",
+      "text": "Contact Us",
+      "href": "https://www.sejasa.com/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Contact Us",
+      "Beli"
+    ],
+    "captureType": "Checkout verificado",
+    "forms": [
+      {
+        "pageUrl": "https://www.sejasa.com/",
+        "index": 1,
+        "action": "https://www.sejasa.com/searches",
+        "method": "GET",
+        "submitText": "Temukan Jasa",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "select",
+            "name": "name",
+            "label": "Jasa",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "location",
+            "label": "Lokasi",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.sejasa.com/",
+        "index": 3,
+        "action": "https://www.sejasa.com/carts",
+        "method": "POST",
+        "submitText": "Beli",
+        "visibleFieldCount": 2,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "digital_invoice[digital_line_items_attributes][0][customer_id]",
+            "label": null,
+            "placeholder": "32173849183",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "digital_invoice[digital_line_items_attributes][0][digital_product_id]",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "checkout",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 2 y 2 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Baja",
+      "minFields": 2,
+      "maxFields": 2,
+      "qualification": []
+    },
+    "contacts": [
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": true,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Marketplace indonesio que recoge un brief, distribuye la solicitud a proveedores y permite recibir ofertas, contratar y pagar con escrow SejasaPay.",
+    "audience": "Hogares/empresas de Indonesia y prestadores de reformas, hogar, eventos, educación y otros servicios.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [
+      "Cari Vendor Terbaik!MasukDaftarPopularKategori LainnyaKategori Belum TersediaMaaf, kategori yang Anda cari belum tersedia.DaftarMasukPopular Frequently Asked Questions Need more details?"
+    ],
+    "urgency": [
+      "…takan sesuatu yang positif dan berguna bagi masyarakat, juga semakin bersemangat dalam hidup dengan pemikiran \"I don't know what tomorrow brings, but bring it on!\"ALEX TAN – \"THE MARKETER\"Alex adalah seorang Microsoft developer, konsultan marketing, dan content director."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Meter/ID PelNomor yang Anda masukkan salahNominalRp 20,000 Rp 50,000 Rp 100,000 Rp 200,000Beli*Biaya administrasi = Rp 2,500 ×Transaksi Tidak Dapat DilakukanMohon maaf, pembelian token tidak dapat dilakukan pada pukul23:00 - 01:00 WIB sesuai ketentuan PLN.",
+          "url": "https://www.sejasa.com/",
+          "pageTitle": "Service Marketplace No. 1 di Indonesia",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Meter/ID PelNomor yang Anda masukkan salahNominalRp 20,000 Rp 50,000 Rp 100,000 Rp 200,000Beli*Biaya administrasi = Rp 2,500 ×Transaksi Tidak Dapat DilakukanMohon maaf, pembelian token tidak dapat dilakukan pada pukul23:00 - 01:00 WIB sesuai ketentuan PLN.",
+          "url": "https://www.sejasa.com/?view=renovasi-bangun-rumah",
+          "pageTitle": "Service Marketplace No. 1 di Indonesia",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Meter/ID PelNomor yang Anda masukkan salahNominalRp 20,000 Rp 50,000 Rp 100,000 Rp 200,000Beli*Biaya administrasi = Rp 2,500 ×Transaksi Tidak Dapat DilakukanMohon maaf, pembelian token tidak dapat dilakukan pada pukul23:00 - 01:00 WIB sesuai ketentuan PLN.",
+          "url": "https://www.sejasa.com/?view=interior-designer",
+          "pageTitle": "Service Marketplace No. 1 di Indonesia",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Cari Vendor Terbaik!MasukDaftarPopularKategori LainnyaKategori Belum TersediaMaaf, kategori yang Anda cari belum tersedia.DaftarMasukPopular Frequently Asked Questions Need more details?",
+          "url": "https://www.sejasa.com/faq",
+          "pageTitle": "Frequently Asked Questions",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.sejasa.com/",
+        "https://www.sejasa.com/about",
+        "https://www.sejasa.com/contact"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Temukan penyedia jasa terpercaya untuk segala kebutuhan Anda",
+        "Popular"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Beli",
+        "Contact Us"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.sejasa.com/ · 2 campos",
+        "https://www.sejasa.com/ · 2 campos",
+        "https://www.sejasa.com/ · 2 campos",
+        "https://www.sejasa.com/?view=renovasi-bangun-rumah · 2 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "observado",
+      "evidence": [
+        "Checkout o compra directa visible."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Cuestionario (ubicación, fecha, presupuesto, fotos, contacto) → ofertas → elección → SejasaPay o pago directo → ejecución/reseña. Provider: validación → recibir/aceptar trabajo → contactar."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Intención [observado] → Briefing [observado parcialmente] → Distribución [observado] → Comparación [observado] → Aceptación [observado] → Pago protegido [observado] → Ejecución [observado] → Resolución [observado] → Monetización [observado]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.sejasa.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.sejasa.com/about",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.sejasa.com/contact",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.sejasa.com/faq",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.sejasa.com/?view=renovasi-bangun-rumah",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.sejasa.com/?view=interior-designer",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.sejasa.com/memilih-penyedia-jasa",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.sejasa.com/tnc",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.sejasa.com/blog/syarat-dan-ketentuan-layanan-express/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.sejasa.com/kabinet-request/new",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://sejasa.com/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&q=Sejasa&search_type=keyword_unordered",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497?region=anywhere",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR06709610837662760961?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR08557419292977528833?region=anywhere",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR10182492118711271425?region=anywhere",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR01248173760289177601?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR17474681932540280833?region=anywhere",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR16039914091170496513?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR16527656427049713665?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR11185138120699936769?region=anywhere",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR11713020662581821441?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR11984761276304719873?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR01748736281489178625?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR08155542527395495937?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR14338189731429351425?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR09798620869646352385?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR06085258081862680577?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR07211737895189610497/creative/CR12589307223483613185?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/2432147428077665091",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "1 página(s) con menos de 80 palabras; posible renderizado JavaScript o contenido mínimo.",
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (2 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": {
+    "reviewedAt": "2026-08-22",
+    "message": {
+      "headline": "El usuario pide un servicio y recibe hasta seis presupuestos para comparar en pocas horas.",
+      "promise": "Facilitar la elección de profesionales mediante varias ofertas, perfiles y reseñas, con pago protegido y ayuda si el proyecto falla.",
+      "positioning": "Vertical marketplace: captación, comparación y contratación de profesionales con pago protegido",
+      "audience": "Consumidores indonesios que necesitan servicios locales y profesionales de más de cien categorías que buscan solicitudes verificadas.",
+      "voice": [
+        "masivo",
+        "práctico",
+        "orientado a confianza",
+        "comparativo",
+        "transaccional"
+      ],
+      "patterns": [
+        "Convierte la elección de proveedor en comparación de varias ofertas.",
+        "Usa número de clientes, seguro y garantía de devolución como prueba de confianza.",
+        "A los proveedores les vende un perfil, solicitudes y posibilidad de cotizar.",
+        "Los términos enfatizan mantener pago y comunicación dentro de plataforma para conservar protección."
+      ]
+    },
+    "cta": {
+      "primary": "Buscar o pedir un servicio",
+      "secondary": [
+        "registrarse como proveedor",
+        "WhatsApp"
+      ],
+      "forms": [
+        {
+          "url": "https://www.sejasa.com/",
+          "purpose": "Captura o contacto",
+          "fields": [
+            "servicio",
+            "ubicación"
+          ],
+          "fieldCount": 2,
+          "friction": "baja en la entrada; el cuestionario posterior varía por categoría y no se recorrió",
+          "submitted": false
+        }
+      ]
+    },
+    "funnel": [
+      {
+        "stage": "Intención",
+        "status": "observado",
+        "detail": "El usuario elige servicio y ubicación desde la portada."
+      },
+      {
+        "stage": "Briefing",
+        "status": "observado parcialmente",
+        "detail": "Responde preguntas específicas de categoría; el contenido completo es dinámico."
+      },
+      {
+        "stage": "Distribución",
+        "status": "observado",
+        "detail": "La solicitud se ofrece a profesionales relevantes que pueden enviar presupuesto."
+      },
+      {
+        "stage": "Comparación",
+        "status": "observado",
+        "detail": "El usuario recibe hasta seis ofertas y compara precio, perfil, reseñas y contacto."
+      },
+      {
+        "stage": "Aceptación",
+        "status": "observado",
+        "detail": "Al confirmar una oferta se forma el acuerdo vinculante entre cliente y proveedor."
+      },
+      {
+        "stage": "Pago protegido",
+        "status": "observado",
+        "detail": "SejasaPay retiene fondos y permite hitos o retención hasta completar el trabajo."
+      },
+      {
+        "stage": "Ejecución",
+        "status": "observado",
+        "detail": "El profesional realiza el trabajo; mantener la operación en plataforma preserva protección."
+      },
+      {
+        "stage": "Resolución",
+        "status": "observado",
+        "detail": "Mediación y compensación limitada si hay problemas, sujeta a términos y valor del trabajo."
+      },
+      {
+        "stage": "Monetización",
+        "status": "observado",
+        "detail": "El profesional asume fee de marketing o depósito para acceder a oportunidades; la fórmula vigente no se detalla en la portada."
+      }
+    ],
+    "terms": {
+      "pricing": [
+        "cliente — solicitud y comparación sin precio público de plataforma; el servicio profesional se acuerda por oferta",
+        "proveedor — fee de marketing y/o depósito según términos; importe actual no expuesto en las páginas revisadas"
+      ],
+      "contract": [
+        "formación del acuerdo — la aceptación confirma un contrato vinculante entre cliente y proveedor",
+        "salida de plataforma — puede hacer perder protecciones de pago y disputa",
+        "modificación de términos — la plataforma se reserva cambios conforme a sus condiciones"
+      ],
+      "guarantee": [
+        "protección — mediación y compensación según valor razonable, con máximo de 30% y tope de 20 millones IDR en los supuestos descritos",
+        "alcance — puede limitarse al depósito o primera etapa y exige uso de SejasaPay"
+      ]
+    },
+    "proof": [],
+    "objections": [],
+    "technology": [
+      "Ruby on Rails",
+      "Google Tag Manager",
+      "Google Analytics 4",
+      "Meta Pixel",
+      "Pusher",
+      "OneSignal",
+      "CloudFront/CDN",
+      "Zendesk",
+      "WhatsApp",
+      "SejasaPay"
+    ],
+    "contradictions": [
+      "El marketing usa garantía de calidad o devolución, mientras los términos limitan compensación por valor razonable, porcentaje, tope y etapa cubierta.",
+      "Hasta seis ofertas es un máximo; la cantidad real depende de categoría, ubicación y oferta de profesionales y no se garantiza públicamente.",
+      "La portada mezcla el flujo principal de contratación con un widget no relacionado de compra de token eléctrico, lo que introduce ruido en el objetivo de conversión.",
+      "No se publica una tabla vigente y simple de coste por lead o comisión para proveedores."
+    ],
+    "inferences": [],
+    "notObservable": [
+      "Cuestionario y criterios de scoring por cada categoría.",
+      "Algoritmo de distribución y ranking.",
+      "Precio efectivo por lead para cada proveedor.",
+      "Tasa real de respuesta y número medio de presupuestos.",
+      "motor de matching",
+      "CRM",
+      "scoring antifraude",
+      "proveedor bancario",
+      "modelo de atribución de leads",
+      "No se creó cuenta ni solicitud; no se observaron todos los campos, validaciones, mensajes, cantidad real de presupuestos o SLA por categoría."
+    ],
+    "limitations": [
+      "No se creó cuenta ni se envió solicitud o presupuesto.",
+      "No se recorrieron cuestionarios dinámicos ni se probó SejasaPay.",
+      "La cifra de 300.000+ clientes es una afirmación propia no auditada.",
+      "No se verificaron número real de ofertas, calidad, disputas, compensaciones o economics de proveedores."
+    ],
+    "lessons": {
+      "copy": [
+        "Una comparación acotada de varias ofertas crea sensación de control sin abrumar.",
+        "Vincular la protección a pago en plataforma refuerza retención y confianza."
+      ],
+      "adapt": [
+        "Usar pagos por hitos y retención para proyectos de mayor riesgo.",
+        "Mostrar perfiles, reseñas, precio y disponibilidad en una vista comparable."
+      ],
+      "avoid": [
+        "Llamar devolución garantizada a una compensación limitada por porcentaje y tope.",
+        "Añadir productos o widgets ajenos al trabajo principal en la entrada del funnel."
+      ],
+      "test": [
+        "Test: hasta seis ofertas frente a tres proveedores preseleccionados.",
+        "Test: pago íntegro retenido frente a hitos con retención final."
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://www.sejasa.com/",
+        "label": "Fuente manual 1",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.sejasa.com/penyedia-jasa",
+        "label": "Fuente manual 2",
+        "status": "observado"
+      },
+      {
+        "url": "https://www.sejasa.com/tnc",
+        "label": "Fuente manual 3",
+        "status": "observado"
+      },
+      {
+        "url": "https://pages.sejasa.com/pay/",
+        "label": "Fuente manual 4",
+        "status": "observado"
+      }
+    ],
+    "reviewLabel": "Revisión manual contrastada"
+  },
+  "schemaValid": true,
+  "reviewMethod": "manual",
+  "researchReadiness": "usable"
+}

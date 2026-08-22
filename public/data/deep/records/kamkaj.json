@@ -1,0 +1,622 @@
+{
+  "id": "kamkaj",
+  "name": "KamKaj",
+  "reviewedAt": "2026-08-22T15:50:18.500Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Skilled Professional At Your Doorstep.",
+    "heroObserved": true,
+    "priorSummary": "Plataforma de servicios del hogar con profesionales filtrados para electricidad, fontanería, carpintería, pintura, aire acondicionado y reparaciones.",
+    "voice": "Tono cuantitativo, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 81 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 912 palabras por página comercial recuperada. Muestras breves: “Skilled Professional At Your Doorstep.” · “Contact Us” · “Cleaning Services”.",
+    "supportingHeadings": [
+      "Skilled Professional At Your Doorstep.",
+      "Book your service",
+      "Our Top Services",
+      "Recommended Services",
+      "AC Install and Repair Services",
+      "Sofa Cleaning",
+      "Carpet Cleaning",
+      "Deep Cleaning Service",
+      "Washing Machine Repair",
+      "Refrigerator and Deep Freezer Repair",
+      "Microwave Oven Repair Services",
+      "Pest Control Services",
+      "Electrician Services",
+      "Water Dispenser Repair",
+      "Curtain Cleaning",
+      "Water Tank Cleaning",
+      "Customer Experience",
+      "Why Choose Kam Kaj?",
+      "Thank you for post a job",
+      "Download Kam Kaj App",
+      "Trusted by Leading Organizations",
+      "Company",
+      "Customers",
+      "Support",
+      "Contact Us",
+      "Cleaning Services",
+      "Select Your Desired Service Now!",
+      "Mattress Cleaning",
+      "Commercial Cleaning",
+      "Window Cleaning"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.kamkaj.pk/",
+      "text": "Contact Us",
+      "href": "https://www.kamkaj.pk/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.5
+    },
+    "ctas": [
+      "Request a Call",
+      "Book Now",
+      "Contact Us",
+      "Call",
+      "Pro",
+      "Submit",
+      "Sign up",
+      "Refresh",
+      "Company",
+      "Support",
+      "Whats App",
+      "Customers",
+      "Customers Sign up"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.kamkaj.pk/",
+        "index": 1,
+        "action": "https://www.kamkaj.pk/hirepro/postjobfromprogram",
+        "method": "POST",
+        "submitText": "Request a Call",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "JobName",
+            "label": null,
+            "placeholder": "Name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "JobMobile",
+            "label": null,
+            "placeholder": "03XXXXXXXXX",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "subprogram",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "JobCity1",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "JobAddress",
+            "label": null,
+            "placeholder": "Address",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.kamkaj.pk/contact",
+        "index": 1,
+        "action": "https://www.kamkaj.pk/contact",
+        "method": "POST",
+        "submitText": "Submit",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "FirstName",
+            "label": null,
+            "placeholder": "First Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "LastName",
+            "label": null,
+            "placeholder": "Last Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Phone",
+            "label": null,
+            "placeholder": "0000-0000000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Message",
+            "label": null,
+            "placeholder": "Message",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "CaptchaInputText",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 5 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: JobCity1.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 6,
+      "qualification": [
+        "JobCity1"
+      ]
+    },
+    "contacts": [
+      "WhatsApp",
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Plataforma de servicios del hogar con profesionales filtrados para electricidad, fontanería, carpintería, pintura, aire acondicionado y reparaciones.",
+    "audience": "Hogares urbanos de Pakistán y profesionales técnicos.",
+    "prices": [],
+    "guarantee": [
+      "Kam Kaj is a leading multiple service provider company catering to your 360 needs with quality guaranteed.",
+      "…nd Safety Affordable and Upfront Pricing Timely and Convenient Services Experienced, Trained and Certified Post Service Guarantee × Help Us Find You Thank you for post a job We appreciate you taking the time to contact us via our web form."
+    ],
+    "proof": [
+      "Company Blog About Us Careers Customers How it works iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Follow Us Mobile App Copyright © 2017 - 2026 Kam Kaj.",
+      "Company About Us Why Kam Kaj Careers Customers How it works Work with us Customers Login Customers Sign up Safety iPhone app Android app Pro Work with us iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Copyright © 2017 - 2026 Kam Kaj.",
+      "Your feedback inspires us to keep improving Happy Customers | Sparkling Sofa Cleaning Results Thank you for letting us serve you!",
+      "Home Appliance Repair Cleaning Services Electrical Services Plumbing Services Pest Control Services Recommended Services Services highly recommended by our valuable customers.",
+      "Book Now Customer Experience Valuable customers sharing their reviews after availing our services.",
+      "#CustomerAppreciation #FeedbackThanks #GratefulCustomers #FeedbackIsGold #CustomerInsights #CustomerLove #AppreciateFeedback #ThankYouCustomers Happy Customers | Expert Sofa Cleaning A big thank you to our wonderful customers!"
+    ],
+    "objections": [],
+    "urgency": [
+      "Book Now Sofa Cleaning Best sofa cleaning services in Karachi for fabric, leather, and upholstery.",
+      "Book Now Carpet Cleaning Transform your carpets from dull to dazzling with our expert carpet cleaning.",
+      "Book Now Deep Cleaning Service Experience the ultimate clean with our thorough deep cleaning service.",
+      "Book Now Washing Machine Repair Expert Washing Machine Repairing in Karachi – We fix all brands and types, including front-load, top...",
+      "Book Now Refrigerator and Deep Freezer Repair Expert Fridge & Deep Freezer Repairing in Karachi – We repair all brands and types, including single...",
+      "Book Now Microwave Oven Repair Services Expert Microwave Oven Repair in Karachi – We repair all brands and models, including solo and grill ..."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Kam Kaj is a leading multiple service provider company catering to your 360 needs with quality guaranteed.",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "…nd Safety Affordable and Upfront Pricing Timely and Convenient Services Experienced, Trained and Certified Post Service Guarantee × Help Us Find You Thank you for post a job We appreciate you taking the time to contact us via our web form.",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Home Appliance Repair Cleaning Services Electrical Services Plumbing Services Pest Control Services Recommended Services Services highly recommended by our valuable customers.",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Book Now Customer Experience Valuable customers sharing their reviews after availing our services.",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other"
+        },
+        {
+          "text": "#CustomerAppreciation #FeedbackThanks #GratefulCustomers #FeedbackIsGold #CustomerInsights #CustomerLove #AppreciateFeedback #ThankYouCustomers Happy Customers | Expert Sofa Cleaning A big thank you to our wonderful customers!",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Happy Customer of Kam Kaj Happy customers like you make it all worthwhile.",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Our Valued Customer | Sofa Cleaning Services To our amazing customers – thank you for your support and for sharing your experiences with us!",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Happy Customers | Professional Sofa Cleaning Your trust keeps us going!",
+          "url": "https://www.kamkaj.pk/",
+          "pageTitle": "Home Maintenance Services | Home Repair Services - Kam Kaj",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Karachi Service is required Area is required Search Home How it works Work with us Login Sign up Language Why KamKaj Track my order Work with us Cleaning Services Kam Kaj specializes in quality Cleaning Services from Commercial to Residential customers.",
+          "url": "https://www.kamkaj.pk/pr/cleaning-services",
+          "pageTitle": "#1 Cleaning Company | Residential & Commercial Cleaning Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Book Now Latest Customer Reviews Here’s what some of our customers say about us.",
+          "url": "https://www.kamkaj.pk/pr/cleaning-services",
+          "pageTitle": "#1 Cleaning Company | Residential & Commercial Cleaning Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Lahore very good services , Sadaqat Javaid is very professional and cooperative, good going and keep it up Customer Experience Valuable customers sharing their reviews after availing our services.",
+          "url": "https://www.kamkaj.pk/pr/cleaning-services",
+          "pageTitle": "#1 Cleaning Company | Residential & Commercial Cleaning Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Happy Customers | Expert Sofa Cleaning A big thank you to our wonderful customers!",
+          "url": "https://www.kamkaj.pk/pr/cleaning-services",
+          "pageTitle": "#1 Cleaning Company | Residential & Commercial Cleaning Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Your feedback inspires us to keep improving Happy Customers | Sparkling Sofa Cleaning Results Thank you for letting us serve you!",
+          "url": "https://www.kamkaj.pk/pr/cleaning-services",
+          "pageTitle": "#1 Cleaning Company | Residential & Commercial Cleaning Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Happy Customers Trust Our Expert Sofa Cleaning Happy customers like you make it all worthwhile.",
+          "url": "https://www.kamkaj.pk/pr/cleaning-services",
+          "pageTitle": "#1 Cleaning Company | Residential & Commercial Cleaning Service",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Book Now Latest Customer Reviews Here’s what some of our customers say about us.",
+          "url": "https://www.kamkaj.pk/pr/electrical-services",
+          "pageTitle": "Professional Electrical Services | Best Electricians Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Karachi I am satisfied with your work and will recommend your page in good reviews for your Kamkaj team doing reliable work.",
+          "url": "https://www.kamkaj.pk/pr/electrical-services",
+          "pageTitle": "Professional Electrical Services | Best Electricians Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Scan QR code Trusted by Leading Organizations When it comes to Kam Kaj, the object of the word 'Kam' reflects our motive to add value to our customers' lives by providing all the essential services in their day-to-day lives.",
+          "url": "https://www.kamkaj.pk/pr/electrical-services",
+          "pageTitle": "Professional Electrical Services | Best Electricians Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Company Blog About Us Careers Customers How it works iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Follow Us Mobile App Copyright © 2017 - 2026 Kam Kaj.",
+          "url": "https://www.kamkaj.pk/pr/electrical-services",
+          "pageTitle": "Professional Electrical Services | Best Electricians Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Privacy Policy Terms of Use When it comes to Kam Kaj, the object of the word 'Kam' reflects our motive to add value to our customers' lives by providing all the essential services in their day-to-day lives.",
+          "url": "https://www.kamkaj.pk/pr/electrical-services",
+          "pageTitle": "Professional Electrical Services | Best Electricians Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Company About Us Why Kam Kaj Careers Customers How it works Work with us Customers Login Customers Sign up Safety iPhone app Android app Pro Work with us iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Copyright © 2017 - 2026 Kam Kaj.",
+          "url": "https://www.kamkaj.pk/pr/electrical-services",
+          "pageTitle": "Professional Electrical Services | Best Electricians Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Book Now Latest Customer Reviews Here’s what some of our customers say about us.",
+          "url": "https://www.kamkaj.pk/pr/plumbing-services",
+          "pageTitle": "Kam Kaj Plumbing Services | Professional Plumbers Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Scan QR code Trusted by Leading Organizations When it comes to Kam Kaj, the object of the word 'Kam' reflects our motive to add value to our customers' lives by providing all the essential services in their day-to-day lives.",
+          "url": "https://www.kamkaj.pk/pr/plumbing-services",
+          "pageTitle": "Kam Kaj Plumbing Services | Professional Plumbers Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Company Blog About Us Careers Customers How it works iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Follow Us Mobile App Copyright © 2017 - 2026 Kam Kaj.",
+          "url": "https://www.kamkaj.pk/pr/plumbing-services",
+          "pageTitle": "Kam Kaj Plumbing Services | Professional Plumbers Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Privacy Policy Terms of Use When it comes to Kam Kaj, the object of the word 'Kam' reflects our motive to add value to our customers' lives by providing all the essential services in their day-to-day lives.",
+          "url": "https://www.kamkaj.pk/pr/plumbing-services",
+          "pageTitle": "Kam Kaj Plumbing Services | Professional Plumbers Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Company About Us Why Kam Kaj Careers Customers How it works Work with us Customers Login Customers Sign up Safety iPhone app Android app Pro Work with us iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Copyright © 2017 - 2026 Kam Kaj.",
+          "url": "https://www.kamkaj.pk/pr/plumbing-services",
+          "pageTitle": "Kam Kaj Plumbing Services | Professional Plumbers Near Me",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Book Now Latest Customer Reviews Here’s what some of our customers say about us.",
+          "url": "https://www.kamkaj.pk/pr/pest-control-services",
+          "pageTitle": "#1 Pest Control Company | Fumigation Service Near Me | Kam Kaj",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Karachi I am satisfied with KamKaj their professionals are very hardworking good work KamKaj in Pakistan Customer Experience Valuable customers sharing their reviews after availing our services.",
+          "url": "https://www.kamkaj.pk/pr/pest-control-services",
+          "pageTitle": "#1 Pest Control Company | Fumigation Service Near Me | Kam Kaj",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Scan QR code Trusted by Leading Organizations When it comes to Kam Kaj, the object of the word 'Kam' reflects our motive to add value to our customers' lives by providing all the essential services in their day-to-day lives.",
+          "url": "https://www.kamkaj.pk/pr/pest-control-services",
+          "pageTitle": "#1 Pest Control Company | Fumigation Service Near Me | Kam Kaj",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Company Blog About Us Careers Customers How it works iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Follow Us Mobile App Copyright © 2017 - 2026 Kam Kaj.",
+          "url": "https://www.kamkaj.pk/pr/pest-control-services",
+          "pageTitle": "#1 Pest Control Company | Fumigation Service Near Me | Kam Kaj",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Privacy Policy Terms of Use When it comes to Kam Kaj, the object of the word 'Kam' reflects our motive to add value to our customers' lives by providing all the essential services in their day-to-day lives.",
+          "url": "https://www.kamkaj.pk/pr/pest-control-services",
+          "pageTitle": "#1 Pest Control Company | Fumigation Service Near Me | Kam Kaj",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Company About Us Why Kam Kaj Careers Customers How it works Work with us Customers Login Customers Sign up Safety iPhone app Android app Pro Work with us iPhone app Android app Support Contact Us 0304-111-1526 support@kamkaj.pk Copyright © 2017 - 2026 Kam Kaj.",
+          "url": "https://www.kamkaj.pk/pr/pest-control-services",
+          "pageTitle": "#1 Pest Control Company | Fumigation Service Near Me | Kam Kaj",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.kamkaj.pk/",
+        "https://www.kamkaj.pk/contact",
+        "https://www.kamkaj.pk/pr/cleaning-services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Skilled Professional At Your Doorstep.",
+        "Contact Us",
+        "Cleaning Services",
+        "Electrical Services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Whats App",
+        "Sign up",
+        "Call",
+        "Request a Call",
+        "Book Now",
+        "Contact Us",
+        "Customers Sign up",
+        "Refresh"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.kamkaj.pk/ · 5 campos",
+        "https://www.kamkaj.pk/contact · 6 campos",
+        "https://www.kamkaj.pk/pr/cleaning-services · 5 campos",
+        "https://www.kamkaj.pk/pr/electrical-services · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "WhatsApp",
+        "Teléfono",
+        "Email",
+        "Book Now",
+        "Book Now",
+        "Book Now",
+        "Book Now",
+        "Book Now"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Elegir servicio → reservar y facilitar ubicación → asignación de experto → ejecución → pago al finalizar → garantía de 7 días."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.kamkaj.pk/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.kamkaj.pk/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.kamkaj.pk/pr/cleaning-services",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.kamkaj.pk/about",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.kamkaj.pk/pr/electrical-services",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.kamkaj.pk/pr/plumbing-services",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.kamkaj.pk/pr/pest-control-services",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.kamkaj.pk/howitworks",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.kamkaj.pk/blogs/reasons-why-i-should-hire-experts-from-kam-kaj",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=kamkaj.pk",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&q=KamKaj&search_type=keyword_unordered",
+      "label": "Fuente pública 12"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

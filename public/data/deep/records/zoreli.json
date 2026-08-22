@@ -1,0 +1,476 @@
+{
+  "id": "zoreli",
+  "name": "Zoreli",
+  "reviewedAt": "2026-08-22T15:50:20.263Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Zoreli - All Your Services at Home",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 57 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1637 palabras por página comercial recuperada. Muestras breves: “Zoreli: Connect with Trusted Service Providers” · “Contact us” · “Zoreli - All Your Services at Home”.",
+    "supportingHeadings": [
+      "Zoreli: Connect with Trusted Service Providers",
+      "What is",
+      "Zoreli?",
+      "How to Join",
+      "and Use the Zoreli App",
+      "First Step: Get the App",
+      "Place Your Order",
+      "Track Your Order From Start to Finish",
+      "Collect Bonuses and Referral Points",
+      "Enjoy the App and Save Your Time",
+      "Download the App Now",
+      "Download the App",
+      "Build Your Worker Account",
+      "Get Your First Order",
+      "Keep Clients Updated Every Step",
+      "Collect Referral Points",
+      "Save Time and Find Work Faster",
+      "Get Started with Zoreli",
+      "Manage Your Company Page from the Admin Panel",
+      "Stay on Track with Every Order",
+      "Grow Your Client Base",
+      "Discover the Service You Need",
+      "Car wash",
+      "Family Care",
+      "Personal care",
+      "Teaching",
+      "Pet care",
+      "Cleaning",
+      "Smart home systems",
+      "Furniture assembly"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Have more questions? – Contact us!",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://zoreli.com/en/",
+      "text": "Have more questions? – Contact us!",
+      "href": "https://zoreli.com/en/contact-us/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 236.5
+    },
+    "ctas": [
+      "Have more questions? – Contact us!",
+      "Contact Us",
+      "Send Request",
+      "Download App",
+      "Կապ",
+      "{title}",
+      "Կապ մեզ հետ",
+      "Get the Link",
+      "Switch to AM",
+      "Switch to RU",
+      "Switch to EN",
+      "Ուղարկել հարցումը",
+      "Ունե՞ք հարցեր։ Կապ մեզ հետ",
+      "EN – Language switcher, press tab to navigate to other languages",
+      "AM – Language switcher, press tab to navigate to other languages"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://zoreli.com/en/",
+        "index": 1,
+        "action": "https://zoreli.com/en/",
+        "method": "POST",
+        "submitText": "Get the Link",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "tel",
+            "name": "form_fields[phone]",
+            "label": "Phone Number",
+            "placeholder": "Phone Number",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://zoreli.com/en/contact-us/",
+        "index": 1,
+        "action": "https://zoreli.com/en/contact-us/",
+        "method": "POST",
+        "submitText": "Send Request",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[field_8ff41a3]",
+            "label": "Your name",
+            "placeholder": "Your name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_0ddbb5b]",
+            "label": "Your email",
+            "placeholder": "Your email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_deff57b]",
+            "label": "Your company’s name",
+            "placeholder": "Your company’s name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_29b713f]",
+            "label": "Your message (Optional)",
+            "placeholder": "Your message (Optional)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://zoreli.com/contact-us/",
+        "index": 1,
+        "action": "https://zoreli.com/contact-us/",
+        "method": "POST",
+        "submitText": "Ուղարկել հարցումը",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "form_fields[field_8ff41a3]",
+            "label": "Ձեր անունը",
+            "placeholder": "Ձեր անունը",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "form_fields[field_0ddbb5b]",
+            "label": "Ձեր էլ. փոստը",
+            "placeholder": "Ձեր էլ. փոստը",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "form_fields[field_deff57b]",
+            "label": "Ձեր ընկերության անվանումը",
+            "placeholder": "Ձեր ընկերության անվանումը",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "form_fields[field_29b713f]",
+            "label": "Ձեր հաղորդագրությունը (ըստ ցանկության)",
+            "placeholder": "Ձեր հաղորդագրությունը (ըստ ցանկության)",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 1 y 4 campos visibles, mínimo 1 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Your company’s name.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 4,
+      "qualification": [
+        "Your company’s name"
+      ]
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "…ry care How to Use Zoreli - Step-by-Step Guide Zoreli makes booking home services simple and stress-free for everyone – clients, workers, and business partners.",
+      "For Clients For Workers For Business Partners Download and Setup the AppGo to the App Store or Google Play, search for Zoreli, and install it in seconds.",
+      "Accept orders, message clients, and provide updates easily through the app.",
+      "Track Performance and Build ReputationUpload photos or updates as you work - show clients the results.",
+      "Track Your Service in Real TimeSee when your worker is on the way, when they arrive, and when the job begins.Stay updated through the app and chat directly with your provider if needed.Once the job is done, confirm and leave a review to help others",
+      "Browse and Book ServicesDiscover a variety of options - from cleaning and repairs to personal care and family assistance.Tell us what you need, when, and where - so the right home service providers can reach you quickly.Compare prices, read reviews, and pick a verified professional"
+    ],
+    "objections": [
+      "Recent Blogs August 7, 2026 10 mins read Senior Care Checklist: A Step-by-Step Guide to Choosing the Right Care Service July 27, 2026 8 mins read How to Care for Elderly Parents With Professional Help July 7, 2026 8 mins read Benefits of Hiring a",
+      "How do I cancel or reschedule a booking?",
+      "Go to My Orders, open the active booking, and select Cancel or Reschedule.",
+      "Some services may have cancellation rules depending on how close the appointment time is or whether the specialist has already prepared materials.",
+      "General Questions How do I verify my account?"
+    ],
+    "urgency": [
+      "Download the App Now Joining Zoreli means joining a trusted community of home service pros ready to grow, earn, and connect with clients who need reliable help.",
+      "Your name Your email Your company’s name Your message (Optional) Send Request Order services easily and get them done at home with the Zoreli app․ Download now for free.",
+      "Download the App Now Key Benefits of Using Zoreli Discover why clients, professionals, and businesses across the country choose Zoreli as their go-to platform for trusted home services.",
+      "With Zoreli, you can hire verified workers at home, knowing every profile is reviewed and approved for quality and reliability.",
+      "DOWNLOAD THE APP NOW Get Started with ZoreliZoreli makes it simple for businesses to join and start offering services.",
+      "DOWNLOAD THE APP NOW Discover the Service You Need Car wash Family Care Personal care Teaching Pet care Cleaning Smart home systems Furniture assembly Home Repair Gardening Events Car Service and Repa…"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "…ry care How to Use Zoreli - Step-by-Step Guide Zoreli makes booking home services simple and stress-free for everyone – clients, workers, and business partners.",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "For Clients For Workers For Business Partners Download and Setup the AppGo to the App Store or Google Play, search for Zoreli, and install it in seconds.",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Browse and Book ServicesDiscover a variety of options - from cleaning and repairs to personal care and family assistance.Tell us what you need, when, and where - so the right home service providers can reach you quickly.Compare prices, read reviews, and pick a verified professional",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Track Your Service in Real TimeSee when your worker is on the way, when they arrive, and when the job begins.Stay updated through the app and chat directly with your provider if needed.Once the job is done, confirm and leave a review to help others",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Accept orders, message clients, and provide updates easily through the app.",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Track Performance and Build ReputationUpload photos or updates as you work - show clients the results.",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Recent Blogs August 7, 2026 10 mins read Senior Care Checklist: A Step-by-Step Guide to Choosing the Right Care Service July 27, 2026 8 mins read How to Care for Elderly Parents With Professional Help July 7, 2026 8 mins read Benefits of Hiring a",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Main About Us Services For client For worker For business worker Blog Contact Us FAQ Legal Payment Terms & Conditions Privacy Policy Terms of Use Services Car Wash Family Care Personal Care Teaching Pet Care Cleaning Smart Home Systems Furniture Assembly Home Repa…",
+          "url": "https://zoreli.com/en/services/",
+          "pageTitle": "Our Services | Zoreli",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "How do I cancel or reschedule a booking?",
+          "url": "https://zoreli.com/en/faq/",
+          "pageTitle": "Frequently Asked Questions | Zoreli",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Go to My Orders, open the active booking, and select Cancel or Reschedule.",
+          "url": "https://zoreli.com/en/faq/",
+          "pageTitle": "Frequently Asked Questions | Zoreli",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Some services may have cancellation rules depending on how close the appointment time is or whether the specialist has already prepared materials.",
+          "url": "https://zoreli.com/en/faq/",
+          "pageTitle": "Frequently Asked Questions | Zoreli",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "General Questions How do I verify my account?",
+          "url": "https://zoreli.com/en/faq/",
+          "pageTitle": "Frequently Asked Questions | Zoreli",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Main About Us Services For client For worker For business worker Blog Contact Us FAQ Legal Payment Terms & Conditions Privacy Policy Terms of Use Services Car Wash Family Care Personal Care Teaching Pet Care Cleaning Smart Home Systems Furniture Assembly Home Repa…",
+          "url": "https://zoreli.com/en/faq/",
+          "pageTitle": "Frequently Asked Questions | Zoreli",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://zoreli.com/en/",
+        "https://zoreli.com/en/contact-us/",
+        "https://zoreli.com/en/services/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Zoreli: Connect with Trusted Service Providers",
+        "Contact us",
+        "Zoreli - All Your Services at Home",
+        "How to Care for Elderly Parents With Professional Help"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Get the Link",
+        "Have more questions? – Contact us!",
+        "Download App",
+        "EN – Language switcher, press tab to navigate to other languages",
+        "Switch to AM",
+        "Switch to RU",
+        "Send Request"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://zoreli.com/en/ · 1 campos",
+        "https://zoreli.com/en/contact-us/ · 4 campos",
+        "https://zoreli.com/contact-us/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://zoreli.com/en/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://zoreli.com/en/contact-us/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://zoreli.com/en/services/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://zoreli.com/en/how-to-care-for-elderly-parents/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://zoreli.com/en/faq/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://zoreli.com/en/about-us/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://zoreli.com/contact-us/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Have more questions? – Contact us!”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

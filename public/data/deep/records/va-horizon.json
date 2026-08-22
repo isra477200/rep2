@@ -1,0 +1,738 @@
+{
+  "id": "va-horizon",
+  "name": "VA Horizon",
+  "reviewedAt": "2026-08-22T15:50:17.231Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 78,
+  "message": {
+    "hero": "Real Estate VA Services for Real Estate Investors.",
+    "heroObserved": true,
+    "priorSummary": "Cold calling gestionado para real estate wholesalers/investors: VA egipcio, Readymode, HighLevel, listas/skip tracing, scripts, QA y mínimo garantizado de 30 seller leads cualificados/mes.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 248 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1278 palabras por página comercial recuperada. Muestras breves: “Pricing That Matches Your Buy Box.” · “Stop Chasing Trash Leads. Pay Only For Qualified.” · “Real Estate VA Services for Real Estate Investors.”.",
+    "supportingHeadings": [
+      "Pricing That Matches Your Buy Box.",
+      "Price is only useful when the operating model fits.",
+      "Ready for managed execution",
+      "Build the foundation first",
+      "Still comparing the model",
+      "Cold callers that fill your pipeline",
+      "Cold Calling VA",
+      "Cold Calling VAs, 3+ Seats",
+      "The closers who turn leads into contracts",
+      "Lead Manager",
+      "Acquisition Manager",
+      "Disposition Manager",
+      "U.S.-Based Acquisition Manager",
+      "VA Horizon Acquisition Manager",
+      "Get your exact per-lead price by email",
+      "SMS that reaches sellers at scale, hands-off",
+      "Every seat ships with the whole system, not just a hire",
+      "Readymode dialer seat",
+      "HighLevel CRM buildout",
+      "Scripts and training",
+      "Weekly QA and call reviews",
+      "5-day replacement guarantee",
+      "Performance management",
+      "A written lead standard, not a vague promise",
+      "Why Pay-Per-Qualified-Lead Beats a Retainer",
+      "What Happens If a Lead Falls Short",
+      "What Makes a Lead Qualified",
+      "Pricing questions, answered",
+      "Get the exact number for your operation",
+      "Choose your next action"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Apply Now",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.vahorizon.site/case-studies/",
+      "text": "Apply Now",
+      "href": "https://www.vahorizon.site/apply/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.75
+    },
+    "ctas": [
+      "Book a Call",
+      "Book a Call Today",
+      "Book a 15-min call",
+      "Book a Roofing Call",
+      "Book a Strategy Call",
+      "Book a Founder Fit Call",
+      "Book a Free Strategy Call",
+      "Book a Real Estate Fit Call",
+      "Book a 15-Min SMS Setup Call",
+      "Prefer to talk first? Book a 15-min call →",
+      "Apply Now",
+      "Get Your Quote",
+      "Apply for Real Estate",
+      "Prefer to apply? Apply now",
+      "Start the Fit Application",
+      "Start the 2-Minute Application",
+      "Not ready to talk? Start the 2-minute application",
+      "Back",
+      "I Hate Trash Leads",
+      "Review Application",
+      "Turn On My Lead-Flow",
+      "Send My Per-Lead Price",
+      "Open it in a new tab →",
+      "Continue to Application",
+      "Send for Founder Review",
+      "Continue to Your Business",
+      "Continue to What You Need",
+      "Map Your TerritoryDiscuss your service area, estimate criteria, and calendar capacity."
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://www.vahorizon.site/pricing/",
+        "index": 1,
+        "action": "https://formsubmit.co/youssef@vahorizon.site",
+        "method": "POST",
+        "submitText": "Send My Per-Lead Price",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 1,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "website",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "_honey",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Work email *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "market",
+            "label": "Your market (city/state)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.vahorizon.site/apply/",
+        "index": 1,
+        "action": "https://formsubmit.co/youssef@vahorizon.site",
+        "method": "POST",
+        "submitText": "Send for Founder Review",
+        "visibleFieldCount": 14,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "text",
+            "name": "full_name",
+            "label": "Full Name *",
+            "placeholder": "John Doe",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Work Email *",
+            "placeholder": "john@example.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone *",
+            "placeholder": "(555) 000-0000",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company / Brand *",
+            "placeholder": "Your Brand Name",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "website_social",
+            "label": "Website or Instagram (Optional)",
+            "placeholder": "https://...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "markets",
+            "label": "Primary Market(s) (City/State) *",
+            "placeholder": "e.g. Austin, TX | Phoenix, AZ",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "model[]",
+            "label": "Wholesaling",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "model_other",
+            "label": "Tell us your other business model",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "deals_per_month",
+            "label": "Deals currently closing per month?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "start_timeline",
+            "label": "How soon do you want to start?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "sources[]",
+            "label": "Cold call",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "needs[]",
+            "label": "Cold Calling",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "bottleneck",
+            "label": "Biggest bottleneck in your business right now?",
+            "placeholder": "e.g. Lead quality is down, follow-up is manual, no time to dial...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "additional_info",
+            "label": "Anything else we should know?",
+            "placeholder": "...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 14 campos visibles, mínimo 1 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: website, Your market (city/state), Company / Brand *, Website or Instagram (Optional), Primary Market(s) (City/State) *.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 14,
+      "qualification": [
+        "website",
+        "Your market (city/state)",
+        "Company / Brand *",
+        "Website or Instagram (Optional)",
+        "Primary Market(s) (City/State) *"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "Microsoft Clarity"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Cold calling gestionado para real estate wholesalers/investors: VA egipcio, Readymode, HighLevel, listas/skip tracing, scripts, QA y mínimo garantizado de 30 seller leads cualificados/mes.",
+    "audience": "Inversores y wholesalers inmobiliarios de EE. UU.; equipos que captan propietarios motivados y luego gestionan adquisición/disposición.",
+    "prices": [
+      "Management is responsive, fair, and attentive to questions throughout the engagement.” — Isam Fuad · Trustpilot review U.S.-Based Acquisition Manager $3,500 to $6,000 /month What the U.S.",
+      "market charges for one acquisition manager, or $60,000 to $80,000 a year as a W2 hire, and that is before payroll taxes, benefits, and recruiting fees."
+    ],
+    "guarantee": [
+      "Engagements run month to month and you can cancel anytime with 30 days' written notice, per our Refund Policy.",
+      "+1 (512) 580-5821Explore services by division Home / Refund Policy Refund & Cancellation Policy Last Updated: December 17, 2025 Thank you for choosing VA Horizon.",
+      "You get a new VA, not a refund negotiation.",
+      "However, we understand that there may be circumstances where you need to cancel your service or request a refund.",
+      "This policy outlines the terms and conditions for refunds, cancellations, and our replacement guarantee.",
+      "Therefore, Setup Fees are non-refundable once the onboarding process has commenced."
+    ],
+    "proof": [
+      "Book a Call Today Apply Now Proof Library Real Results 10 studiesPublished now 92% capturedAnswer-rate example 4x volumeDeal scale example $180k foundPipeline cleanup 10Published case studies 92%Captured answer rate example 4xDeal volume scale example $180kPipeline value uncovered Case Studies Library Choose the result closest to",
+      "Apply now Home / Real Estate / Case Studies Client Results Proof from the systems that fill the calendar.",
+      "See how VA Horizon clients improved lead generation, follow-up, CRM operations, and team performance with managed callers, SMS, AI, QA, and appointment systems.",
+      "Named clients where approved.",
+      "Skip to main content DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead.",
+      "Apply now Book a Call Menu×DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead."
+    ],
+    "objections": [
+      "+1 (512) 580-5821Explore services by division Home / Refund Policy Refund & Cancellation Policy Last Updated: December 17, 2025 Thank you for choosing VA Horizon.",
+      "However, we understand that there may be circumstances where you need to cancel your service or request a refund.",
+      "This policy outlines the terms and conditions for refunds, cancellations, and our replacement guarantee.",
+      "Cancellation Policy You may cancel your subscription at any time by providing us with at least 30 days' written notice via email to youssef@vahorizon.site.",
+      "…Lists, data, calls, and SMS→ 02Qualify and follow upIntake, nurture, and lead ownership→ 03Close and dispositionOffers, contracts, and buyer handoff→ 04Systems and operationsCRM, automation, dialer, and QA→ 05Scale the teamOne managed seat or a connected team→ See Main Real Estate Offer 15 managed servicesO…",
+      "Cancel anytime.Prefer to apply?",
+      "Cancel anytime.Prefer to talk now?",
+      "Add experienced ownership for seller conversations, offer-stage follow-up, contract movement, and buyer coordination."
+    ],
+    "urgency": [
+      "What Changed 1 Caller → Full Acquisition Team Read Case Study → One HighLevel build running the whole operation Problem Cash Offers Today, a two-partner cash-offer operation in California, was running on a stack of disconnected tools - a dialer here, an answering service there,",
+      "Book a Call Today Apply Now Proof Library Real Results 10 studiesPublished now 92% capturedAnswer-rate example 4x volumeDeal scale example $180k foundPipeline cleanup 10Published case studies 92%Captured answer rate example 4xDeal volume scale example $180kPipeline value uncovered Case Studies Library Choose the result closest to",
+      "Apply now Home / Real Estate / Case Studies Client Results Proof from the systems that fill the calendar.",
+      "What Changed Disconnected Tools → One System Read Case Study → An AI voice agent that answers every call Problem Cash Offers Today was paying to generate inbound seller calls, then losing the after-hours and overflow ones to voicemail - and most motivated sellers never",
+      "Apply now Book a Call Menu×DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead.",
+      "Cancel anytime.Prefer to talk now?"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Management is responsive, fair, and attentive to questions throughout the engagement.” — Isam Fuad · Trustpilot review U.S.-Based Acquisition Manager $3,500 to $6,000 /month What the U.S.",
+          "url": "https://www.vahorizon.site/pricing/",
+          "pageTitle": "Real Estate Lead Generation Pricing | Cold Calling & SMS | VA Horizon",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "market charges for one acquisition manager, or $60,000 to $80,000 a year as a W2 hire, and that is before payroll taxes, benefits, and recruiting fees.",
+          "url": "https://www.vahorizon.site/pricing/",
+          "pageTitle": "Real Estate Lead Generation Pricing | Cold Calling & SMS | VA Horizon",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [
+        {
+          "text": "5-day replacement guarantee If a VA underperforms, we swap them within 5 business days at no extra placement cost, at any point in the engagement.",
+          "url": "https://www.vahorizon.site/pricing/",
+          "pageTitle": "Real Estate Lead Generation Pricing | Cold Calling & SMS | VA Horizon",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Engagements run month to month and you can cancel anytime with 30 days' written notice, per our Refund Policy.",
+          "url": "https://www.vahorizon.site/pricing/",
+          "pageTitle": "Real Estate Lead Generation Pricing | Cold Calling & SMS | VA Horizon",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "You get a new VA, not a refund negotiation.",
+          "url": "https://www.vahorizon.site/pricing/",
+          "pageTitle": "Real Estate Lead Generation Pricing | Cold Calling & SMS | VA Horizon",
+          "pageCategory": "pricing",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "+1 (512) 580-5821Explore services by division Home / Refund Policy Refund & Cancellation Policy Last Updated: December 17, 2025 Thank you for choosing VA Horizon.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "However, we understand that there may be circumstances where you need to cancel your service or request a refund.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "This policy outlines the terms and conditions for refunds, cancellations, and our replacement guarantee.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Therefore, Setup Fees are non-refundable once the onboarding process has commenced.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "No refunds will be issued for partial months of service or for periods where the Client did not utilize the available services.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "All worked hours are non-refundable.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Skip to main content DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead.",
+          "url": "https://www.vahorizon.site/case-studies/",
+          "pageTitle": "Client Case Studies | Lead Generation Results | VA Horizon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Apply now Book a Call Menu×DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead.",
+          "url": "https://www.vahorizon.site/case-studies/",
+          "pageTitle": "Client Case Studies | Lead Generation Results | VA Horizon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Apply now Home / Real Estate / Case Studies Client Results Proof from the systems that fill the calendar.",
+          "url": "https://www.vahorizon.site/case-studies/",
+          "pageTitle": "Client Case Studies | Lead Generation Results | VA Horizon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "See how VA Horizon clients improved lead generation, follow-up, CRM operations, and team performance with managed callers, SMS, AI, QA, and appointment systems.",
+          "url": "https://www.vahorizon.site/case-studies/",
+          "pageTitle": "Client Case Studies | Lead Generation Results | VA Horizon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Named clients where approved.",
+          "url": "https://www.vahorizon.site/case-studies/",
+          "pageTitle": "Client Case Studies | Lead Generation Results | VA Horizon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Book a Call Today Apply Now Proof Library Real Results 10 studiesPublished now 92% capturedAnswer-rate example 4x volumeDeal scale example $180k foundPipeline cleanup 10Published case studies 92%Captured answer rate example 4xDeal volume scale example $180kPipeline value uncovered Case Studies Library Choose the result closest to",
+          "url": "https://www.vahorizon.site/case-studies/",
+          "pageTitle": "Client Case Studies | Lead Generation Results | VA Horizon",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Skip to main content DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Apply now Book a Call Menu×DivisionsReal EstateB2B Lead GenRoofingSolar Your Real Estate JourneyOverviewServicesPricingCase StudiesSwitch Division ResourcesIndustriesBlogGuidesTools CompanyAboutBook a Real Estate Fit CallPay per qualified lead.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Pick the managed VA role or operating layer that clears your next bottleneck, whether that is seller conversations, follow-up, offers, disposition, CRM, SMS, or scaling the whole team.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Connect CRM stages, automation, dialer infrastructure, and quality review so individual roles operate as one system.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Recommended starting pointWholesaling Virtual Assistant for broad operating support around a defined seller pipeline.Commonly paired withWholesale Team Scaling when callers, lead management, acquisitions, disposition, CRM, and QA must work together.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Cancel anytime.Prefer to apply?",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cancel anytime.Prefer to talk now?",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…Lists, data, calls, and SMS→ 02Qualify and follow upIntake, nurture, and lead ownership→ 03Close and dispositionOffers, contracts, and buyer handoff→ 04Systems and operationsCRM, automation, dialer, and QA→ 05Scale the teamOne managed seat or a connected team→ See Main Real Estate Offer 15 managed servicesO…",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Add experienced ownership for seller conversations, offer-stage follow-up, contract movement, and buyer coordination.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Recommended starting pointAcquisition Manager when qualified sellers are not receiving consistent offer-stage attention.Commonly paired withDisposition Manager once signed contracts need organized buyer outreach and feedback.",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…tate InvestorsAdd a vetted acquisition manager VA for wholesaling follow-up, seller rapport, comps support, offers, and contract-stage conversations.Explore service→ Pay per leadBuyers Disposition Manager VAs for InvestorsAdd a disposition manager VA to build buyer lists, package deals, collect feedback, an…",
+          "url": "https://www.vahorizon.site/services/",
+          "pageTitle": "Real Estate VA Services for Investors | VA Horizon",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "+1 (512) 580-5821Explore services by division Home / Refund Policy Refund & Cancellation Policy Last Updated: December 17, 2025 Thank you for choosing VA Horizon.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "However, we understand that there may be circumstances where you need to cancel your service or request a refund.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "This policy outlines the terms and conditions for refunds, cancellations, and our replacement guarantee.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Subscription Services & Cancellation VA Horizon services are billed on a subscription basis.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Cancellation Policy You may cancel your subscription at any time by providing us with at least 30 days' written notice via email to youssef@vahorizon.site.",
+          "url": "https://www.vahorizon.site/refund-policy/",
+          "pageTitle": "Refund Policy | VA Horizon",
+          "pageCategory": "objections"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Llamada en frío",
+        "WhatsApp",
+        "Email",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.vahorizon.site/pricing/",
+        "https://www.vahorizon.site/apply/",
+        "https://www.vahorizon.site/case-studies/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Pricing That Matches Your Buy Box.",
+        "Stop Chasing Trash Leads. Pay Only For Qualified.",
+        "Real Estate VA Services for Real Estate Investors.",
+        "Booked roofing estimates on your calendar. Exclusive. Confirmed."
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Book a Real Estate Fit Call",
+        "Prefer to apply? Apply now",
+        "Book a Call",
+        "I Hate Trash Leads",
+        "Start the Fit Application",
+        "Get Your Quote",
+        "Send My Per-Lead Price",
+        "Book a 15-min call"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.vahorizon.site/pricing/ · 4 campos",
+        "https://www.vahorizon.site/apply/ · 14 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Teléfono",
+        "Email",
+        "Book a Real Estate Fit Call",
+        "Book a Call",
+        "I Hate Trash Leads",
+        "Book a 15-min call",
+        "Book a 15-Min SMS Setup Call"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Intake/mercado/lista → lanzamiento 48–72h → 800–1.000 dials por turno → cualificación de propietario en 11 puntos → registro en HighLevel → lead manager/closer → follow-up → QA semanal;"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.vahorizon.site/pricing/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.vahorizon.site/apply/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.vahorizon.site/case-studies/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.vahorizon.site/services/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.vahorizon.site/refund-policy/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.vahorizon.site/about/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.vahorizon.site/roofing/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.vahorizon.site/services/cold-calling/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.vahorizon.site/guides/real-estate-cold-calling-va-guarantees/",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=vahorizon.site",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=keyword_unordered&q=VA%20Horizon",
+      "label": "Fuente pública 11"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Apply Now”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Microsoft Clarity) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

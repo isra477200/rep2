@@ -1,0 +1,501 @@
+{
+  "id": "fixando",
+  "name": "Fixando",
+  "reviewedAt": "2026-08-22T15:50:18.373Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "¿No sabe? No lo invente. ¡Busque un especialista!",
+    "heroObserved": true,
+    "priorSummary": "Literal: \"El registro es gratuito\" y \"visualizar solicitudes tambien lo es. Solo se paga al enviar una propuesta para acceder a los datos de contacto del cliente.\" Y: \"No cobramos ninguna comision sobre el valor que gane... Pagara solo por los paquetes de creditos que compre.\"",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 183 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1068 palabras por página comercial recuperada. Muestras breves: “¿No sabe? No lo invente. ¡Busque un especialista!” · “¿Quiere saber el presupuesto para Eventos?” · “¿Quiere saber el precio para servicios del Hogar?”.",
+    "supportingHeadings": [
+      "Política de Cookies",
+      "¿No sabe? No lo invente. ¡Busque un especialista!",
+      "¿Cómo funciona Fixando?",
+      "Qué es lo que nuestros usuarios piensan de nosotros",
+      "Consulte aquí los precios de todas las categorías:",
+      "Servicios más populares. No pierda la oportunidad de responder registrándose:",
+      "Entrenamiento personal y fitness",
+      "Catering - Eventos y fiestas",
+      "Hospedaje y guarderías de mascotas",
+      "Recintos",
+      "Servicios Legales",
+      "Alquiler de autobuses y coches",
+      "Bricolaje y Muebles",
+      "Adiestramiento de perros",
+      "Jardinería",
+      "Estamos presentes en las siguientes localizaciones:",
+      "Remodele su casa",
+      "Remodelación de cocinas",
+      "Fontanería",
+      "Servicios de construcción",
+      "Servicios arquitectónicos",
+      "Decoración de interiores",
+      "Planifique su evento",
+      "Catering de eventos (servicio completo)",
+      "Fotografía de eventos",
+      "Servicios de catering",
+      "Alquiler de vestidos",
+      "Entretenimiento con banda de mariachi y música latina",
+      "Manténgase en forma",
+      "Entrenamiento personal"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactos",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.fixando.es/",
+      "text": "Contactos",
+      "href": "https://www.fixando.es/info/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 242.75
+    },
+    "ctas": [
+      "Contactos",
+      "Presupuesto para Eventos",
+      "Presupuesto de Cantantes",
+      "Presupuesto de Fotografía",
+      "Presupuesto de Espectáculos de danza",
+      "Presupuesto de Servicios de aparcacoches",
+      "Presupuesto de servicio de Fuegos Artificiales",
+      "Presupuesto de servicios de Oficiantes de bodas",
+      "Español es",
+      "English en",
+      "Português pt",
+      "Guardar Selección"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.fixando.es/",
+        "index": 1,
+        "action": "https://www.fixando.es/",
+        "method": "POST",
+        "submitText": "Guardar Selección",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "checkbox",
+            "name": "options[]",
+            "label": "Esenciales — Estas cookies son obligatorias para usar el sitio web de",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://www.fixando.es/",
+        "index": 2,
+        "action": "https://www.fixando.es/",
+        "method": "GET",
+        "submitText": "Iniciar",
+        "visibleFieldCount": 1,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "search_service",
+            "label": null,
+            "placeholder": "¿Qué servicio necesita? Busque aquí.",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 1 y 1 campos visibles, mínimo 0 obligatorio(s). Fricción baja en la variante más corta. Cualifica mediante: Esenciales — Estas cookies son obligatorias para usar el sitio web de.",
+      "friction": "Baja",
+      "minFields": 1,
+      "maxFields": 1,
+      "qualification": [
+        "Esenciales — Estas cookies son obligatorias para usar el sitio web de"
+      ]
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Literal: \"El registro es gratuito\" y \"visualizar solicitudes tambien lo es. Solo se paga al enviar una propuesta para acceder a los datos de contacto del cliente.\" Y: \"No cobramos ninguna comision sobre el valor que gane... Pagara solo por los paquetes de creditos que compre.\"",
+    "audience": "Marketplace multi-servicio de particulares: reformas, montaje de muebles, entrenadores personales, fotografos, hospedaje de mascotas, y otros servicios del hogar y personales en toda España. Parte del mismo grupo/modelo que otras plataformas Fixando en Portugal/Brasil.",
+    "prices": [
+      "Precio fijo Promedio 3.637 € El costo varía entre: 35 - 87.000 € Precio por hora Promedio 19 € El costo varía entre: 13 - 25 € ¿Cómo hacer un pedido de Hogar?",
+      "El costo de Hogar está entre 35 - 87.000 €.",
+      "El importe cobrado por un proyecto de para servicios del Hogar se encuentra entre 35 - 87.000 €/Precio fijo.",
+      "Precios de Hogar por ciudad Ciudades Intervalo de precio País Vasco 35 - 87.000 € Comunidad de Madrid 35 - 87.000 € Andalucía 50 - 900 € Última actualización: Publicado en: 20/08/2026 Aldana (Amorebieta-Etxano) Precios para servicios del Hogar Servicios necesar…"
+    ],
+    "guarantee": [],
+    "proof": [
+      "Ayúdenos a responder a todos nuestros clientes.",
+      "Envíe cotizaciones y aumente su negocio y su cartera de clientes!",
+      "Después de responder algunas preguntas, puede leer las evaluaciones de clientes anteriores, analizar los presupuestos y agendar una visita con el especialista seleccionado."
+    ],
+    "objections": [],
+    "urgency": [
+      "El valor puede variar dependiendo de los detalles del proyecto, del tiempo de ejecución, de la distancia de desplazamiento, de los materiales requeridos y del plazo establecido."
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "70 €85 Marco T.",
+          "url": "https://www.fixando.es/",
+          "pageTitle": "Fixando - ¿Necesita un servicio? ¡Confíe en nuestros especialistas!",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Foto Star 101 €95 Filipa G.",
+          "url": "https://www.fixando.es/",
+          "pageTitle": "Fixando - ¿Necesita un servicio? ¡Confíe en nuestros especialistas!",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "80 €100 Carlos G.",
+          "url": "https://www.fixando.es/",
+          "pageTitle": "Fixando - ¿Necesita un servicio? ¡Confíe en nuestros especialistas!",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "46760, Tavernes de la Valldigna 22.08.2026 - 15:55 Adiestramiento de perros - Clases privadas Edad del perro2-3 añosTamaño del perroGrande (21 - 31 Kg)Tipo de adiestramiento de perrosGeneral/obedienciaPresupuesto por perro300 - 500 € N.",
+          "url": "https://www.fixando.es/",
+          "pageTitle": "Fixando - ¿Necesita un servicio? ¡Confíe en nuestros especialistas!",
+          "pageCategory": "other",
+          "amountType": "marketplace_or_third_party"
+        },
+        {
+          "text": "Precio fijo Promedio 3.637 € El costo varía entre: 35 - 87.000 € Precio por hora Promedio 19 € El costo varía entre: 13 - 25 € ¿Cómo hacer un pedido de Hogar?",
+          "url": "https://www.fixando.es/servicios-del-hogar/precio",
+          "pageTitle": "¿Cual es el precio para servicios del Hogar en Fixando?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "El costo de Hogar está entre 35 - 87.000 €.",
+          "url": "https://www.fixando.es/servicios-del-hogar/precio",
+          "pageTitle": "¿Cual es el precio para servicios del Hogar en Fixando?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Precios de Hogar por ciudad Ciudades Intervalo de precio País Vasco 35 - 87.000 € Comunidad de Madrid 35 - 87.000 € Andalucía 50 - 900 € Última actualización: Publicado en: 20/08/2026 Aldana (Amorebieta-Etxano) Precios para servicios del Hogar Servicios necesar…",
+          "url": "https://www.fixando.es/servicios-del-hogar/precio",
+          "pageTitle": "¿Cual es el precio para servicios del Hogar en Fixando?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "El importe cobrado por un proyecto de para servicios del Hogar se encuentra entre 35 - 87.000 €/Precio fijo.",
+          "url": "https://www.fixando.es/servicios-del-hogar/precio",
+          "pageTitle": "¿Cual es el precio para servicios del Hogar en Fixando?",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Ayúdenos a responder a todos nuestros clientes.",
+          "url": "https://www.fixando.es/servicios-del-hogar",
+          "pageTitle": "Hogar - Contratar Especialistas - Fixando España",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Envíe cotizaciones y aumente su negocio y su cartera de clientes!",
+          "url": "https://www.fixando.es/servicios-del-hogar",
+          "pageTitle": "Hogar - Contratar Especialistas - Fixando España",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Después de responder algunas preguntas, puede leer las evaluaciones de clientes anteriores, analizar los presupuestos y agendar una visita con el especialista seleccionado.",
+          "url": "https://www.fixando.es/servicios-del-hogar",
+          "pageTitle": "Hogar - Contratar Especialistas - Fixando España",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.fixando.es/",
+        "https://www.fixando.es/eventos/presupuesto",
+        "https://www.fixando.es/servicios-del-hogar/precio"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "¿No sabe? No lo invente. ¡Busque un especialista!",
+        "¿Quiere saber el presupuesto para Eventos?",
+        "¿Quiere saber el precio para servicios del Hogar?",
+        "Hogar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Guardar Selección",
+        "Contactos",
+        "Presupuesto para Eventos",
+        "Español es",
+        "English en",
+        "Português pt",
+        "Presupuesto de servicios de Oficiantes de bodas",
+        "Presupuesto de Fotografía"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.fixando.es/ · 1 campos",
+        "https://www.fixando.es/ · 1 campos",
+        "https://www.fixando.es/eventos/presupuesto · 1 campos",
+        "https://www.fixando.es/servicios-del-hogar/precio · 1 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El cliente completa gratis un cuestionario de necesidad y ubicación → Fixando empareja la solicitud con profesionales → el profesional ve solicitudes gratis y gasta créditos, unos 2–4"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.fixando.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.fixando.es/eventos/presupuesto",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.fixando.es/servicios-del-hogar/precio",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.fixando.es/servicios-del-hogar",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.fixando.es/team",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.fixando.es/info/contact",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.fixando.es/floristas/presupuesto",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.fixando.es/how-it-works-pro",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=fixando.es",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "http://fixando.pt/",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://www.facebook.com/ads/library/?id=1699757557871650",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://www.fixando.pt/fb/635",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://www.facebook.com/ads/library/?id=4345520539031208",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "https://www.fixando.pt/fb/86",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "https://www.facebook.com/ads/library/?id=1395503849052344",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://www.fixando.pt/fb/823",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://www.facebook.com/ads/library/?id=1252684307005518",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://www.fixando.pt/fb/823",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://www.facebook.com/ads/library/?id=2016193519775706",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "https://www.fixando.pt/fb/40",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://www.facebook.com/ads/library/?id=944065901969553",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://www.fixando.pt/fb/573",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://www.facebook.com/ads/library/?id=2150896092426624",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://www.fixando.pt/fb/484",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://www.facebook.com/ads/library/?id=1934933270501955",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://www.fixando.pt/fb/484",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://www.facebook.com/ads/library/?id=914222414981121",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://www.fixando.pt/fb/433",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://www.facebook.com/ads/library/?id=985129940913977",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactos”, manteniendo una sola ruta dominante por landing.",
+    "**Probar:** captura de baja fricción (1 campos) y cualificación después, midiendo calidad y tasa de cita.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

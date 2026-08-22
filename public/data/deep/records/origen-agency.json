@@ -1,0 +1,462 @@
+{
+  "id": "origen-agency",
+  "name": "Origen Agency",
+  "reviewedAt": "2026-08-22T15:50:19.328Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Agencia de generaciónde leads",
+    "heroObserved": true,
+    "priorSummary": "Outsourcing comercial SDR/setter: define ICP, crea listas y guiones, prospecta por teléfono/email/LinkedIn, cualifica con humanos y agenda reuniones con contexto en CRM.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 168 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1640 palabras por página comercial recuperada. Muestras breves: “Agencia de generaciónde leads” · “Leads para consultoras de negocios” · “Leads para Agencias de marketing”.",
+    "supportingHeadings": [
+      "Agencia de generaciónde leads",
+      "¿Qué hacemos como agencia de generación de leads?",
+      "Sectores que trabajamos como agencia de generación de leads",
+      "Generación de leads para agencias de marketing",
+      "Generación de leads para consultoras de negocio",
+      "Generación de leads para empresas industriales",
+      "Generación de leads para despachos de abogados",
+      "Generación de leads para inmobiliarias",
+      "Generación de leads para SaaS",
+      "Así trabajamos en nuestra agencia de generación de leads",
+      "¿Por qué contratarnos para generar leads para tu empresa?",
+      "Externaliza la generación de leads y ahorra costes innecesarios",
+      "Aumenta tus ventas con nuestro servicio de generación de leads",
+      "FAQs sobre nuestra agencia de generación de leads",
+      "¿Cobráis un coste inicial en vuestra agencia de generación de leads?",
+      "¿Cuántas reuniones de venta podéis agendar a la semana?",
+      "¿Qué sucede si una reunión agendada no está cualificada?",
+      "¿Cómo garantizamos en nuestra agencia de generación de leads la calidad de estos?",
+      "¿Por qué contratar una agencia en lugar de generar leads por cuenta propia?",
+      "¿Te vas sin saber cuántos leads podrías generar?",
+      "Empresa SDR",
+      "¿Qué es una empresa SDR?",
+      "Ventajas de contratar una empresa SDR",
+      "Metodología como empresa SDR",
+      "Agencia de SDR: llenamos tu empresa de nuevos clientes",
+      "Beneficios de contratarnos como agencia de SDR",
+      "SDR interno vs. SDR externalizado",
+      "FAQs sobre nuestro servicio de SDR",
+      "¿Es rentable externalizar el servicio de SDR?",
+      "¿Qué información me proporcionaréis en vuestra empresa SDR sobre cada lead?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Reserva videollamada",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://origenagency.com/",
+      "text": "Reserva videollamada",
+      "href": "https://crm.origenagency.com/book/?book=origen-agency",
+      "element": "a",
+      "kind": "conversion",
+      "score": 320
+    },
+    "ctas": [
+      "Reserva videollamada",
+      "Captar leadsQuiero llenar mi agenda de oportunidades nuevas.",
+      "Contacto",
+      "WhatsApp",
+      "Hablar por WhatsApp",
+      "Atrás",
+      "Continuar",
+      "Contáctanos",
+      "Enviar mensaje",
+      "OtrosTengo otra necesidad, te escuchamos.",
+      "Crear mi departamento comercialQuiero montar mi equipo de ventas desde cero."
+    ],
+    "captureType": "Agenda",
+    "forms": [
+      {
+        "pageUrl": "https://origenagency.com/",
+        "index": 1,
+        "action": "https://api.web3forms.com/submit",
+        "method": "POST",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 8,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "Nombre",
+            "label": null,
+            "placeholder": "Daniel García",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "Teléfono",
+            "label": null,
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "daniel@empresa.com",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "Facturación",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "Tipo de venta",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Asunto",
+            "label": null,
+            "placeholder": "Necesito leads cualificados",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "Mensaje",
+            "label": null,
+            "placeholder": "Cuéntanos brevemente tu situación...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "Acepto-privacidad",
+            "label": "Acepto la política de privacidad de datos.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 8 y 8 campos visibles, mínimo 3 obligatorio(s). Fricción alta en la variante más corta. Cualifica mediante: Facturación.",
+      "friction": "Alta",
+      "minFields": 8,
+      "maxFields": 8,
+      "qualification": [
+        "Facturación"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": true,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Outsourcing comercial SDR/setter: define ICP, crea listas y guiones, prospecta por teléfono/email/LinkedIn, cualifica con humanos y agenda reuniones con contexto en CRM.",
+    "audience": "B2B y B2C en agencias, consultoría, industria, abogacía, inmobiliario y SaaS; compra citas cualificadas sin montar equipo interno.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Sin permanencias | Modelo basado en resultados | Más de 10 años de experiencia 25+ Clientes activos 1000+ Reuniones agendadas 10+ Años de experiencia 85% Tasa de show Nuestra propuesta ¿Qué hacemos como agencia de generación de leads?",
+      "Sectores Sectores que trabajamos Agencias de marketingLlena el pipeline de tus clientes.",
+      "Buscamos, llamamos y cualificamos a tus potenciales clientes.",
+      "En nuestra agencia de generación de leads nos especializamos en cualificar y atraer potenciales clientes para tu empresa.",
+      "Nos encargamos de todo el proceso, desde el análisis y filtrado del cliente, hasta la captación y la programación de las reuniones de venta con los potenciales clientes.",
+      "…s nos especializamos en generar oportunidades de negocio para empresas que necesitan un flujo recurrente de potenciales clientes cada mes."
+    ],
+    "objections": [
+      "Sin permanencias | Modelo basado en resultados | Más de 10 años de experiencia 25+ Clientes activos 1000+ Reuniones agendadas 10+ Años de experiencia 85% Tasa de show Nuestra propuesta ¿Qué hacemos como agencia de generación de leads?",
+      "25+ Clientes activos 1000+ Reuniones agendadas 10+ Años de experiencia 85% Tasa de show Externalización Externaliza la generación de leads y ahorra costes innecesarios Buscar clientes no tiene por qué ser un quebradero de cabeza.",
+      "Datos que nos avalan ¿Por qué contratarnos para generar leads para tu empresa?",
+      "Preguntas frecuentes FAQs sobre nuestra agencia de generación de leads ¿Cobráis un coste inicial en vuestra agencia de generación de leads?",
+      "¿Por qué contratar una agencia en lugar de generar leads por cuenta propia?",
+      "Sin spam, sin permanencias."
+    ],
+    "urgency": [
+      "Empieza ahora mismo a captar nuevos clientes cualificados y listos para una demo.",
+      "Empieza hoy Tus próximas reuniones de venta empiezan aquí Reserva 30 minutos de videollamadaEscríbenos y vemos juntos a quién quieres llegar.",
+      "Empieza hoy ¿Listo para llenar tu agenda de reuniones cualificadas?",
+      "Si hoy siembras conversaciones, mañana recoges reuniones.",
+      "Empieza hoy ¿Listo para llenar tu pipeline de oportunidades reales?",
+      "Empieza hoy ¿Listo para hacer crecer tu agencia con leads cualificados?"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Tu nombre Tu teléfono Tu correo electrónico Facturación anual de tu empresa Selecciona un rango… Menos de 100.000 € 100.000 € – 500.000 € 500.000 € – 1.000.000 € 1.000.000 € – 5.000.000 € Más de 5.000.000 € ¿Vendes a empresas o a particulares?",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other",
+          "amountType": "client_result"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Sectores Sectores que trabajamos Agencias de marketingLlena el pipeline de tus clientes.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Buscamos, llamamos y cualificamos a tus potenciales clientes.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin permanencias | Modelo basado en resultados | Más de 10 años de experiencia 25+ Clientes activos 1000+ Reuniones agendadas 10+ Años de experiencia 85% Tasa de show Nuestra propuesta ¿Qué hacemos como agencia de generación de leads?",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "En nuestra agencia de generación de leads nos especializamos en cualificar y atraer potenciales clientes para tu empresa.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Nos encargamos de todo el proceso, desde el análisis y filtrado del cliente, hasta la captación y la programación de las reuniones de venta con los potenciales clientes.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…s nos especializamos en generar oportunidades de negocio para empresas que necesitan un flujo recurrente de potenciales clientes cada mes.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Sin permanencias | Modelo basado en resultados | Más de 10 años de experiencia 25+ Clientes activos 1000+ Reuniones agendadas 10+ Años de experiencia 85% Tasa de show Nuestra propuesta ¿Qué hacemos como agencia de generación de leads?",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Datos que nos avalan ¿Por qué contratarnos para generar leads para tu empresa?",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "25+ Clientes activos 1000+ Reuniones agendadas 10+ Años de experiencia 85% Tasa de show Externalización Externaliza la generación de leads y ahorra costes innecesarios Buscar clientes no tiene por qué ser un quebradero de cabeza.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Preguntas frecuentes FAQs sobre nuestra agencia de generación de leads ¿Cobráis un coste inicial en vuestra agencia de generación de leads?",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "¿Por qué contratar una agencia en lugar de generar leads por cuenta propia?",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Sin spam, sin permanencias.",
+          "url": "https://origenagency.com/",
+          "pageTitle": "Origen Agency | Agencia de generación de Leads",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email",
+        "Llamada en frío"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://origenagency.com/",
+        "https://origenagency.com/empresa-sdr/",
+        "https://origenagency.com/empresa-setter/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia de generaciónde leads",
+        "Leads para consultoras de negocios",
+        "Leads para Agencias de marketing",
+        "Leads para abogados"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Reserva videollamada",
+        "WhatsApp",
+        "Captar leadsQuiero llenar mi agenda de oportunidades nuevas.",
+        "Crear mi departamento comercialQuiero montar mi equipo de ventas desde cero.",
+        "OtrosTengo otra necesidad, te escuchamos.",
+        "Atrás",
+        "Continuar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://origenagency.com/ · 8 campos",
+        "https://origenagency.com/empresa-sdr/ · 8 campos",
+        "https://origenagency.com/empresa-setter/ · 8 campos",
+        "https://origenagency.com/leads-para-consultoras-de-negocios/ · 8 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp",
+        "Reserva videollamada",
+        "Reserva videollamada",
+        "Reserva videollamada",
+        "Reserva videollamada",
+        "Reserva videollamada"
+      ],
+      "note": "Se observó un destino de agenda; no se reservó."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página/WhatsApp/formulario → diagnóstico 30 min → definición de ICP y criterios → listas/datos/guiones → llamadas, email y LinkedIn → gestión de respuestas → cualificación humana (dolor, urgencia, autoridad"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://origenagency.com/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://origenagency.com/empresa-sdr/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://origenagency.com/empresa-setter/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://origenagency.com/leads-para-consultoras-de-negocios/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://origenagency.com/leads-para-agencias-de-marketing/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://origenagency.com/leads-para-abogados/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://origenagency.com/leads-para-saas/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://origenagency.com/outsourcing-comercial/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://origenagency.com/contacto/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Reserva videollamada”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 8 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

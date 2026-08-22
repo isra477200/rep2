@@ -1,0 +1,592 @@
+{
+  "id": "iqlex-solutions-sl",
+  "name": "IQLex Solutions SL",
+  "reviewedAt": "2026-08-22T15:50:17.882Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Marketing para Abogados:Estrategia y Resultados para tu Despacho",
+    "heroObserved": true,
+    "priorSummary": "\"Marketing para Abogados: Estrategia y Resultados para tu Despacho\" y \"Agencia experta en Marketing Jurídico y DIGITALIZACIÓN DE DESPACHOS\".",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 174 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1545 palabras por página comercial recuperada. Muestras breves: “Marketing para Abogados:Estrategia y Resultados para tu Despacho” · “Somos IQLex, el partner digital para impulsar tu despacho” · “Servicios Marketingpara Abogados”.",
+    "supportingHeadings": [
+      "Marketing para Abogados:Estrategia y Resultados para tu Despacho",
+      "Agencia experta en Marketing Jurídico y digitalización de despachos",
+      "Marketing jurídico adaptado a tu despacho",
+      "Marketing para abogados: Servicios profesionales",
+      "Estrategia de Marketing Jurídico",
+      "SEO para despachos de Abogados",
+      "Campañas en Google Ads",
+      "Redes Sociales para Despachos",
+      "Optimización de páginas web",
+      "Email Marketing para Abogados",
+      "Mejora de la Reputación Online de despachos",
+      "Generación de Contenido Legal Estratégico",
+      "Marketing para abogados. Información al momento.",
+      "Dudas y Respuestas",
+      "Innovación Legal: Transforma tu despacho con los mejores consejos",
+      "Descarga nuestro nuevo eBook: Análisis de Competencia",
+      "Marketing para Abogados: IQLex",
+      "Marketing para Abogados: ¿Por qué es tan importante?",
+      "Atracción de Nuevos Clientes",
+      "Fortalecimiento de la Reputación del Despacho",
+      "Aumento de la Visibilidad en Motores de Búsqueda",
+      "Generación de Contenido Educativo y de Valor",
+      "Fidelización de Clientes Actuales",
+      "Adaptación a la Era Digital",
+      "Nuestros Servicios de Marketing Jurídico",
+      "SEO para Abogados",
+      "Publicidad PPC para abogados",
+      "Marketing de Contenidos Juridicos",
+      "Gestión de Redes Sociales para despachos",
+      "Diseño y Desarrollo Web para abogados"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicita una auditoría gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://iqlex.es/desarrollo-web-abogados/",
+      "text": "Solicita una auditoría gratuita",
+      "href": "https://iqlex.es/desarrollo-web-abogados/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 237.25
+    },
+    "ctas": [
+      "Solicita una auditoría gratuita",
+      "Consulta nuestras FAQ",
+      "Contacto",
+      "Solicita información",
+      "Solicitar información",
+      "Send",
+      "Enviar",
+      "Trabaja con nosotros"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://iqlex.es/",
+        "index": 1,
+        "action": "https://iqlex.es/",
+        "method": "POST",
+        "submitText": "Solicitar información",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "your-tel",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://iqlex.es/",
+        "index": 2,
+        "action": "https://iqlex.es/",
+        "method": "GET",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 3,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "law_firm",
+            "label": null,
+            "placeholder": "Despacho",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "checkbox",
+            "label": null,
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://iqlex.es/",
+        "index": 3,
+        "action": "https://iqlex.es/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "Email",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-despacho",
+            "label": null,
+            "placeholder": "Despacho",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://iqlex.es/contacto-agencia-legaltech/",
+        "index": 1,
+        "action": "https://iqlex.es/contacto-agencia-legaltech/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": null,
+            "placeholder": "Nombre",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": null,
+            "placeholder": "E-mail",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-company",
+            "label": null,
+            "placeholder": "Despacho",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": null,
+            "placeholder": "Mensaje",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://iqlex.es/blog/menu-de-tu-web-cuantas-areas-de-practica-sin-perder-clientes/",
+        "index": 1,
+        "action": "https://iqlex.es/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Send",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": null,
+            "placeholder": "Your Comment *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": null,
+            "placeholder": "Your Name *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "label": null,
+            "placeholder": "Your Email *",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "url",
+            "label": null,
+            "placeholder": "Website",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Guarda mi nombre, correo electrónico y web en este navegador para la",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "5 diseño(s) de formulario distinto(s); entre 4 y 5 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: your-company, Guarda mi nombre, correo electrónico y web en este navegador para la.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 5,
+      "qualification": [
+        "your-company",
+        "Guarda mi nombre, correo electrónico y web en este navegador para la"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Marketing para Abogados: Estrategia y Resultados para tu Despacho\" y \"Agencia experta en Marketing Jurídico y DIGITALIZACIÓN DE DESPACHOS\".",
+    "audience": "Exclusivamente despachos de abogados y bufetes, con un enfoque añadido de \"digitalización de despachos\" — no solo marketing, también tecnología. Base en Barcelona (Balmes 177). Activos desde 2016.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Soluciones de marketing para abogados 900 877 223 Solicita información Servicios marketing jurídico: Flexible, eficiente y 100% a tu medida Desde la gestión de tu reputación online y la captación de clientes, hasta el mantenimiento técnico y la gestión de redes sociales profesionales.",
+      "Captación leads para abogados ¿Buscas clientes para tu despacho?",
+      "…etingpara Abogados Servicios profesionales de marketing digital para abogados: estrategias personalizadas, captación de clientes, gestión de redes sociales y mejora de visibilidad online.",
+      "Tenemos la experiencia que tu despacho necesita Nos comprometemos a brindar soluciones digitales a despachos de abogados que no solo mejoren su eficiencia y productividad, sino que también expandan su alcance y conecten con sus clientes de maneras innovadoras.",
+      "Social Ads Alcance y captación de clientes con anuncios precisos y efectivos.",
+      "Estrategia y Comunicación Content Marketing Estrategias de contenidos para crear conexiones y atraer nuevos clientes."
+    ],
+    "objections": [
+      "…spacho 18 Ago Diseño Web Menú de tu web, cuántas áreas de práctica sin perder clientes 18 Ago Analítica Mapas de calor, por qué necesitan tu permiso desde 2025 Descarga nuestro nuevo eBook: Análisis de Competencia Diseñado para guiar a los despachos de abogados en el análisis de la competencia online, prop…",
+      "Solicitar información Dudas y Respuestas Consulta nuestras preguntas frecuentes sobre marketing para abogados ¿Cómo puede el marketing para abogados ayudar a captar más clientes?",
+      "Marketing para Abogados: ¿Por qué es tan importante?"
+    ],
+    "urgency": [
+      "Optimización Móvil Hoy en día, más del 50% de los usuarios acceden a sitios web desde dispositivos móviles.",
+      "Contáctanos hoy mismo para empezar a transformar tu presencia digital.",
+      "Esto es crucial para: Facilitar la navegación en dispositivos móviles, evitando la frustración causada por desplazamientos laterales o botones difíciles de tocar.",
+      "Descargar eBook ahora Descargar eBook ahora Marketing para Abogados: IQLex En nuestra agencia de marketing para abogados, entendemos las necesidades únicas de los despachos de abogados y ofrecemos soluciones digitales personalizadas para potenciar su presencia en línea."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Captación leads para abogados ¿Buscas clientes para tu despacho?",
+          "url": "https://iqlex.es/",
+          "pageTitle": "Marketing Abogados: Consultora Digital para Despachos | IQLex",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Soluciones de marketing para abogados 900 877 223 Solicita información Servicios marketing jurídico: Flexible, eficiente y 100% a tu medida Desde la gestión de tu reputación online y la captación de clientes, hasta el mantenimiento técnico y la gestión de redes sociales profesionales.",
+          "url": "https://iqlex.es/",
+          "pageTitle": "Marketing Abogados: Consultora Digital para Despachos | IQLex",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…etingpara Abogados Servicios profesionales de marketing digital para abogados: estrategias personalizadas, captación de clientes, gestión de redes sociales y mejora de visibilidad online.",
+          "url": "https://iqlex.es/servicios-marketing-abogados/",
+          "pageTitle": "Servicios Marketing Abogados: Publicidad para Despachos | IQLex",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Redefimos el ámbito legal: Marketing digital para abogados Especializados en el desarrollo de estrategias de marketing digital y soluciones LegalTech, nuestro enfoque está en personalizar cada servicio para satisfacer las necesidades específicas de nuestros clientes.",
+          "url": "https://iqlex.es/servicios-marketing-abogados/",
+          "pageTitle": "Servicios Marketing Abogados: Publicidad para Despachos | IQLex",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Tenemos la experiencia que tu despacho necesita Nos comprometemos a brindar soluciones digitales a despachos de abogados que no solo mejoren su eficiencia y productividad, sino que también expandan su alcance y conecten con sus clientes de maneras innovadoras.",
+          "url": "https://iqlex.es/servicios-marketing-abogados/",
+          "pageTitle": "Servicios Marketing Abogados: Publicidad para Despachos | IQLex",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Social Ads Alcance y captación de clientes con anuncios precisos y efectivos.",
+          "url": "https://iqlex.es/servicios-marketing-abogados/",
+          "pageTitle": "Servicios Marketing Abogados: Publicidad para Despachos | IQLex",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Estrategia y Comunicación Content Marketing Estrategias de contenidos para crear conexiones y atraer nuevos clientes.",
+          "url": "https://iqlex.es/servicios-marketing-abogados/",
+          "pageTitle": "Servicios Marketing Abogados: Publicidad para Despachos | IQLex",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Solicitar información Dudas y Respuestas Consulta nuestras preguntas frecuentes sobre marketing para abogados ¿Cómo puede el marketing para abogados ayudar a captar más clientes?",
+          "url": "https://iqlex.es/",
+          "pageTitle": "Marketing Abogados: Consultora Digital para Despachos | IQLex",
+          "pageCategory": "other"
+        },
+        {
+          "text": "…spacho 18 Ago Diseño Web Menú de tu web, cuántas áreas de práctica sin perder clientes 18 Ago Analítica Mapas de calor, por qué necesitan tu permiso desde 2025 Descarga nuestro nuevo eBook: Análisis de Competencia Diseñado para guiar a los despachos de abogados en el análisis de la competencia online, prop…",
+          "url": "https://iqlex.es/",
+          "pageTitle": "Marketing Abogados: Consultora Digital para Despachos | IQLex",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Marketing para Abogados: ¿Por qué es tan importante?",
+          "url": "https://iqlex.es/",
+          "pageTitle": "Marketing Abogados: Consultora Digital para Despachos | IQLex",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://iqlex.es/",
+        "https://iqlex.es/contacto-agencia-legaltech/",
+        "https://iqlex.es/blog/menu-de-tu-web-cuantas-areas-de-practica-sin-perder-clientes/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Marketing para Abogados:Estrategia y Resultados para tu Despacho",
+        "Somos IQLex, el partner digital para impulsar tu despacho",
+        "Servicios Marketingpara Abogados",
+        "Somos la fórmula de éxito para tu despacho"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Solicita información",
+        "Solicitar información",
+        "Enviar",
+        "Consulta nuestras FAQ",
+        "Trabaja con nosotros",
+        "Send",
+        "Solicita una auditoría gratuita"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://iqlex.es/ · 4 campos",
+        "https://iqlex.es/ · 4 campos",
+        "https://iqlex.es/ · 4 campos",
+        "https://iqlex.es/contacto-agencia-legaltech/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Contenido/SEO o eBook → CTA «Solicita información» → formulario o llamada 900 → análisis/auditoría → planificación → ejecución por bolsa de horas → seguimiento y ajuste."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://iqlex.es/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://iqlex.es/contacto-agencia-legaltech/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://iqlex.es/blog/menu-de-tu-web-cuantas-areas-de-practica-sin-perder-clientes/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://iqlex.es/servicios-marketing-abogados/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://iqlex.es/somos-iqlex/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://iqlex.es/blog/consultas-de-search-console-que-traen-leads-a-tu-despacho/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://iqlex.es/desarrollo-web-abogados/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://iqlex.es/analitica-web-para-abogados/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://iqlex.es/wp-content/uploads/2024/02/logo-iqlex-light.svg",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&q=IQLex&search_type=keyword_unordered",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicita una auditoría gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

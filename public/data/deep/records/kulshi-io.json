@@ -1,0 +1,348 @@
+{
+  "id": "kulshi-io",
+  "name": "Kulshi.io",
+  "reviewedAt": "2026-08-22T15:50:19.804Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 33,
+  "message": {
+    "hero": "اكتشف كل شيءحولك مع كلشي",
+    "heroObserved": true,
+    "priorSummary": "Directorio horizontal de negocios, viajes turísticos y empleo con perfiles, contacto directo y panel para comercios.",
+    "voice": "Tono urgencia comercial, orientado a la acción. Usa 4 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 294 palabras por página comercial recuperada. Muestras breves: “اكتشف كل شيءحولك مع كلشي” · “اكتشف أفضل المواقعالتجارية في العراق” · “اكتشف أجمل الوجهاتالتاريخية والدينية في العراق”.",
+    "supportingHeadings": [
+      "اكتشف كل شيءحولك مع كلشي",
+      "كل ما تحتاجه في منصة واحدة",
+      "اكتشف أفضل المحلات حولك",
+      "اكتشف جمال العراق",
+      "ابحث عن فرصتك المهنية",
+      "هل أنت صاحب عمل؟",
+      "سجّل متجرك وابدأ بالنمو اليوم",
+      "سجّل الآن — مجاناً",
+      "منصة صُممت للعراقيين",
+      "نحن هنا لمساعدتك",
+      "اكتشف أفضل المواقعالتجارية في العراق",
+      "الفئات",
+      "المدينة",
+      "الحالة",
+      "لا توجد نتائج",
+      "اكتشف أجمل الوجهاتالتاريخية والدينية في العراق",
+      "وسيلة النقل",
+      "المدة",
+      "لا توجد رحلات متاحة",
+      "ابحث عن وظيفتك المثاليةفي أفضل الشركات العراقية",
+      "نوع الدوام",
+      "سنوات الخبرة",
+      "لا توجد وظائف متاحة",
+      "استمارة التقديم على الوظيفة",
+      "تسجيل الدخول مطلوب",
+      "تم إرسال طلبك بنجاح!",
+      "تعذّر إرسال الطلب"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "تواصل معنا",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://kulshi.io/",
+      "text": "تواصل معنا",
+      "href": "https://kulshi.io/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 182.5
+    },
+    "ctas": [
+      "تواصل معنا",
+      "ابدأ الآن"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://kulshi.io/employment.html",
+        "index": 1,
+        "action": "https://kulshi.io/employment.html",
+        "method": "GET",
+        "submitText": null,
+        "visibleFieldCount": 11,
+        "requiredFieldCount": 9,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "أحمد محمد العراقي",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": null,
+            "label": null,
+            "placeholder": "example@email.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": null,
+            "label": null,
+            "placeholder": "07xxxxxxxx",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "مطور برمجيات",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "كربلاء — حي العسكري",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "اكتب نبذة قصيرة عن نفسك ومؤهلاتك...",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "اذكر خبراتك السابقة مع اسم الشركة والمدة الزمنية...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "بكالوريوس هندسة برمجيات — جامعة بغداد (٢٠١٨-٢٠٢٢)...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": null,
+            "label": null,
+            "placeholder": "العربية (أصلية) — الإنجليزية (متقدم) — الكردية (متوسط)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "JavaScript, React, إدارة الفريق، التفكير التحليلي...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": null,
+            "label": null,
+            "placeholder": "أخبر صاحب العمل لماذا أنت الشخص المناسب لهذه الوظيفة...",
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 11 y 11 campos visibles, mínimo 9 obligatorio(s). Fricción alta en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Alta",
+      "minFields": 11,
+      "maxFields": 11,
+      "qualification": []
+    },
+    "contacts": [],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Directorio horizontal de negocios, viajes turísticos y empleo con perfiles, contacto directo y panel para comercios.",
+    "audience": "Consumidor y comercio local en Iraq, especialmente Karbala; restaurantes, hoteles, salud, educación, turismo y empleo.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "احجز الآن واستمتع بتجربة لا تُنسى.",
+      "انشر وظيفة الآن أو تصفح جميع الوظائف للتجار والأعمال سجّل متجرك وابدأ بالنمو اليوم انضم لأكثر من ١٬٦٠٠ تاجر يستفيدون من منصة كلشي.",
+      "١أنشئ حسابكسجّل بياناتك في دقيقة واحدة ٢أضف متجركخصص صفحة متجرك بالصور والخدمات ٣ابدأ بالتواصلاستقبل العملاء وتواصل معهم مباشرة سجّل الآن — مجاناً اسم المتجر / النشاط التجاري اسمك الكامل رقم الهاتف فئة النشاط التجاري اختر الفئة...",
+      "المميزات المواقع الرحلات التوظيف عن كلشي تواصل معنا EN سجّل متجرك ابدأ الآن المميزات المواقع الرحلات التوظيف عن كلشي تواصل معنا سجّل متجرك المنصة الرقمية الأولى في العراق اكتشف كل شيءحولك مع كلشي منصة متكاملة تربطك بالمواقع التجارية، الرحلات السياحية، وفرص العمل في مدينتك."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://kulshi.io/",
+        "https://kulshi.io/locations.html",
+        "https://kulshi.io/trips.html"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "اكتشف كل شيءحولك مع كلشي",
+        "اكتشف أفضل المواقعالتجارية في العراق",
+        "اكتشف أجمل الوجهاتالتاريخية والدينية في العراق",
+        "ابحث عن وظيفتك المثاليةفي أفضل الشركات العراقية"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "تواصل معنا",
+        "ابدأ الآن"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://kulshi.io/employment.html · 11 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Reserva o contacto directo: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Explorar directorio/viaje/empleo → abrir ficha → contactar/reservar; comercio: formulario → llamada del equipo en 24 h → perfil/panel."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://kulshi.io/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://kulshi.io/locations.html",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://kulshi.io/trips.html",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://kulshi.io/employment.html",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://kulshi.io/locations.html?city=%D9%83%D8%B1%D8%A8%D9%84%D8%A7%D8%A1",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://kulshi.io/locations.html?city=%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://kulshi.io/locations.html?cat=%D9%85%D8%B7%D8%A7%D8%B9%D9%85",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "http://kulshiapp.com/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://kulshi.io/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se observó una vía pública inequívoca de reserva o contacto en las páginas recuperadas.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “تواصل معنا”, manteniendo una sola ruta dominante por landing.",
+    "**Evitar o testear:** el formulario más corto ya pide 11 campos; dividir cualificación y reserva puede reducir abandono.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}

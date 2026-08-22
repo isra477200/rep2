@@ -1,6 +1,6 @@
 services:
-  redvitalia-radar:
-    image: ghcr.io/isra477200/redvitalia-radar:latest
+  redvitalia-inteligencia:
+    image: ghcr.io/isra477200/redvitalia-inteligencia:latest
     pull_policy: always
     restart: unless-stopped
     ports:

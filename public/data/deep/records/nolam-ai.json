@@ -1,0 +1,420 @@
+{
+  "id": "nolam-ai",
+  "name": "Nolam.ai",
+  "reviewedAt": "2026-08-22T15:50:19.393Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Tu primera línea de atención, siempre disponible",
+    "heroObserved": true,
+    "priorSummary": "Agente de voz IA que atiende llamadas 24h, consulta disponibilidad en calendario y escala a humano en casos complejos",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 173 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 866 palabras por página comercial recuperada. Muestras breves: “Hablemos sobre tu negocio” · “Tu primera línea de atención, siempre disponible” · “Descubre Nolam Agents y Nolam Hub en una demo personalizada”.",
+    "supportingHeadings": [
+      "Precio de agente de voz IA en España [2026]",
+      "Tabla comparativa de precios por rango [2026]",
+      "Por qué no existe \"un precio\" único",
+      "Rango básico: de 50 € a 150 € al mes",
+      "Qué incluye habitualmente",
+      "Limitaciones reales",
+      "Rango medio: de 150 € a 500 € al mes",
+      "Qué cambia respecto al rango básico",
+      "Ejemplo realista",
+      "Rango alto y enterprise: de 500 € a más de 2.000 € al mes",
+      "Los costes ocultos que nadie menciona en el primer email",
+      "Calculadora de ROI: cuánto puedes ahorrar según tu negocio",
+      "Cómo evaluar si el precio es razonable",
+      "Qué preguntar antes de firmar",
+      "Preguntas frecuentes",
+      "¿Cuánto cuesta un agente de voz con IA en España?",
+      "¿Qué incluye el precio de un asistente telefónico con IA?",
+      "¿Merece la pena el coste de un agente de voz con IA frente a una persona?",
+      "¿Existen costes ocultos en los agentes de voz con IA?",
+      "¿Qué es más barato, un agente de voz con IA o un call center externo?",
+      "Pruébalo en tu atención al cliente",
+      "Artículos relacionados",
+      "Recepcionista virtual IA vs. tradicional: comparativa",
+      "Agente de voz IA para empresas: guía completa [2026]",
+      "Agente de voz IA vs. IVR: comparativa [2026]",
+      "Footer",
+      "Productos",
+      "Casos de uso",
+      "Empresa",
+      "Legal"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Solicitar demo",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://nolam.ai/blog/precio-agente-voz-ia",
+      "text": "Solicitar demo",
+      "href": "https://nolam.ai/demo",
+      "element": "a",
+      "kind": "conversion",
+      "score": 321.5
+    },
+    "ctas": [
+      "Solicitar demo",
+      "Demo",
+      "Reserva 15 min",
+      "Contacto",
+      "Contactar por email",
+      "Asistente telefónico con IA vs. call center externo: comparativa real",
+      "Enviar mensaje",
+      "Cuéntanos cuál usas →"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://nolam.ai/contact",
+        "index": 1,
+        "action": "https://nolam.ai/contact",
+        "method": "GET",
+        "submitText": "Enviar mensaje",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa/Negocio *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono (opcional)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Mensaje *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptTerms",
+            "label": "Acepto los términos y condiciones y la política de privacidad",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa/Negocio *.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Empresa/Negocio *"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Agente de voz IA que atiende llamadas 24h, consulta disponibilidad en calendario y escala a humano en casos complejos",
+    "audience": "Pymes españolas que quieren automatizar recepción telefónica y agenda con IA",
+    "prices": [],
+    "guarantee": [
+      "Cada llamada abandonada es una oportunidad perdida y un cliente frustrado.50xRepetir 50 veces lo mismoTu equipo dedica horas a responder las mismas preguntas una y otra vez: horarios, estado de pedidos, políticas de devolución."
+    ],
+    "proof": [
+      "…IA no vuelven atrásDescubre por qué los negocios que prueban IA en atención al cliente no vuelven atrás: datos reales, casos de éxito y el efecto 'imposible desinstalar'.Leer artículo →GeneralROI de un agente de voz IA: cómo calcularlo en 10 minutosCalcula el ROI de un agente de voz IA en 10 minutos con esta fór…",
+      "Tiempo que podría dedicarse a casos complejos.?Sin cobertura fuera de horarioFuera del horario laboral, los clientes no tienen a quién llamar.",
+      "Cuéntanos cuál usas →Seguridad y privacidadLos datos de tus clientes, protegidos al máximo nivelLa privacidad de tus clientes es prioritaria.",
+      "Catalán, inglés, francés y otros idiomas disponibles según tus necesidades y las de tus clientes.¿Cumple RGPD?Sí."
+    ],
+    "objections": [
+      "…reservas de forma autónoma las 24h del día, incluso cuando el restaurante está cerrado o en pleno servicio.🔄Cambios y cancelacionesEl cliente puede modificar o cancelar su reserva sin esperar.",
+      "Qué datos capturar, cómo configurarlo y qué workflows disparar.Leer artículo →GeneralPor qué los negocios que prueban IA no vuelven atrásDescubre por qué los negocios que prueban IA en atención al cliente no vuelven atrás: datos reales, casos de éxito y el efecto 'imposib…",
+      "Responde consultas frecuentes sin necesidad de intervención humana.¿Qué pasa si el cliente necesita hablar con una persona?El agente detecta cuándo una consulta requiere intervención humana y escala la llamada automáticamente al operador disponible, con todo el contexto recogido.¿Puede gestionar picos de llamadas?Sí, ese es uno",
+      "Para grupos muy grandes o eventos privados, toma mensaje con prioridad.¿Qué pasa si preguntan por alérgenos o el menú?El agente se configura con la información de tu carta, menú del día, alérgenos y opciones especiales (vegetariano, sin gluten, etc.)."
+    ],
+    "urgency": [
+      "La ventaja del agente de voz es además la disponibilidad 24 horas y la consistencia en las respuestas.Pruébalo en tu atención al clienteLlama ahora y te atenderá nuestro propio agente de voz IA: así compruebas cómo suena.",
+      "Son soluciones con configuración limitada, pero funcionales para autónomos, pequeños comercios o despachos profesionales.",
+      "Por qué la IA conversacional reemplaza al IVR y cuándo el IVR todavía tiene sentido.Leer másFooterNNolam.aiPlataforma de IA conversacional para negocios.",
+      "Nolam.ai se integra con lo que ya usas para gestionar el soporte.ZapierAutomatizaciónMakeAutomatizaciónHubSpotCRMZohoCRMZendeskTicketsFreshdeskTickets¿Usas otro sistema de tickets?",
+      "Nolam.ai se integra con Zendesk, Freshdesk, HubSpot y otros sistemas de soporte.",
+      "Enviaremos el enlace de la videollamada a todos los participantes.¿Prefieres hablar con nosotros directamente?Llamar ahoraEnviar emailFooterNNolam.aiPlataforma de IA conversacional para negocios."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Cada llamada abandonada es una oportunidad perdida y un cliente frustrado.50xRepetir 50 veces lo mismoTu equipo dedica horas a responder las mismas preguntas una y otra vez: horarios, estado de pedidos, políticas de devolución.",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Tiempo que podría dedicarse a casos complejos.?Sin cobertura fuera de horarioFuera del horario laboral, los clientes no tienen a quién llamar.",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cuéntanos cuál usas →Seguridad y privacidadLos datos de tus clientes, protegidos al máximo nivelLa privacidad de tus clientes es prioritaria.",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Catalán, inglés, francés y otros idiomas disponibles según tus necesidades y las de tus clientes.¿Cumple RGPD?Sí.",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…IA no vuelven atrásDescubre por qué los negocios que prueban IA en atención al cliente no vuelven atrás: datos reales, casos de éxito y el efecto 'imposible desinstalar'.Leer artículo →GeneralROI de un agente de voz IA: cómo calcularlo en 10 minutosCalcula el ROI de un agente de voz IA en 10 minutos con esta fór…",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cuéntanos cuál usas →Seguridad y privacidadLos datos de tus clientes, protegidos al máximo nivelLa privacidad de tus clientes es prioritaria.",
+          "url": "https://nolam.ai/soluciones/restaurantes",
+          "pageTitle": "Agente IA para Restaurantes | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Cuéntanos cuál usas →Seguridad y privacidadLos datos de tus clientes, protegidos al máximo nivelLa privacidad de tus clientes es prioritaria.",
+          "url": "https://nolam.ai/soluciones/inmobiliarias",
+          "pageTitle": "Agente IA para Inmobiliarias | Nolam.ai",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Responde consultas frecuentes sin necesidad de intervención humana.¿Qué pasa si el cliente necesita hablar con una persona?El agente detecta cuándo una consulta requiere intervención humana y escala la llamada automáticamente al operador disponible, con todo el contexto recogido.¿Puede gestionar picos de llamadas?Sí, ese es uno",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Qué datos capturar, cómo configurarlo y qué workflows disparar.Leer artículo →GeneralPor qué los negocios que prueban IA no vuelven atrásDescubre por qué los negocios que prueban IA en atención al cliente no vuelven atrás: datos reales, casos de éxito y el efecto 'imposib…",
+          "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+          "pageTitle": "Atención al Cliente con IA | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…reservas de forma autónoma las 24h del día, incluso cuando el restaurante está cerrado o en pleno servicio.🔄Cambios y cancelacionesEl cliente puede modificar o cancelar su reserva sin esperar.",
+          "url": "https://nolam.ai/soluciones/restaurantes",
+          "pageTitle": "Agente IA para Restaurantes | Nolam.ai",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Para grupos muy grandes o eventos privados, toma mensaje con prioridad.¿Qué pasa si preguntan por alérgenos o el menú?El agente se configura con la información de tu carta, menú del día, alérgenos y opciones especiales (vegetariano, sin gluten, etc.).",
+          "url": "https://nolam.ai/soluciones/restaurantes",
+          "pageTitle": "Agente IA para Restaurantes | Nolam.ai",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://nolam.ai/blog/precio-agente-voz-ia",
+        "https://nolam.ai/contact",
+        "https://nolam.ai/soluciones/atencion-al-cliente"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Hablemos sobre tu negocio",
+        "Tu primera línea de atención, siempre disponible",
+        "Descubre Nolam Agents y Nolam Hub en una demo personalizada",
+        "Atiende el 100% de llamadas y no pierdas reservas aunque la sala esté llena"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Solicitar demo",
+        "Reserva 15 min",
+        "Asistente telefónico con IA vs. call center externo: comparativa real",
+        "Demo",
+        "Enviar mensaje",
+        "Cuéntanos cuál usas →",
+        "Contactar por email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://nolam.ai/contact · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "Agenda online",
+        "Reserva 15 min"
+      ],
+      "note": "Se observó intención de reserva, pero no un destino público verificable."
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [
+        "El CTA invita a reserva/contacto; no se ejecutó la conversación."
+      ],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por home/blog → demo gratuita de 15 min o llamada al agente real → caso de uso y propuesta a medida → setup rápido en días (<5"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://nolam.ai/blog/precio-agente-voz-ia",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://nolam.ai/contact",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://nolam.ai/soluciones/atencion-al-cliente",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://nolam.ai/about",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://nolam.ai/demo",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://nolam.ai/soluciones/restaurantes",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://nolam.ai/soluciones/inmobiliarias",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://nolam.ai/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "http://nolam.ai/blog/precio-agente-voz-ia",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Solicitar demo”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

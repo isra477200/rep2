@@ -1,0 +1,441 @@
+{
+  "id": "proxity",
+  "name": "Proxity",
+  "reviewedAt": "2026-08-22T15:50:19.075Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "Petites annonces en Tunisie : acheter, vendre, louer",
+    "heroObserved": true,
+    "priorSummary": "Portal general de anuncios gratuitos para comprar, vender o alquilar vehículos, inmuebles, productos, empleo y servicios; conecta anunciantes con contactos cercanos.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, consultivo / basado en preguntas, explicativo, apoya la venta en reversión de riesgo. Usa 508 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1644 palabras por página comercial recuperada. Muestras breves: “Petites annonces en Tunisie : acheter, vendre, louer” · “Voir les annonces” · “Annonces Emploi et Services”.",
+    "supportingHeadings": [
+      "Voir les annonces",
+      "Compte",
+      "Nos Blogs",
+      "Petites annonces en Tunisie : acheter, vendre, louer",
+      "Publier une annonce en Tunisie : vendre ou louer",
+      "Vendez vite voiture, maison, téléphone",
+      "Top Annonces",
+      "Espaces de travail Regus en Tunisie : coworking, bureaux et salles de réunion",
+      "Accès tout compris à espaces de travail, bureaux virtuels et salles de réunion à TUNIS, Carthage",
+      "Accès tout compris à espaces de travail, bureaux virtuels et salles de réunion à TUNIS, Berges du Lac 2",
+      "Espaces de travail, services et accompagnement pour vous aider à travailler plus efficacement à TUNIS, Urbain Nord",
+      "Espaces de travail, services et accompagnement pour vous aider à travailler plus efficacement à Tunis, Access Building Lac II",
+      "Découvrez de multiples façons de travailler à votre rythme à Sfax, La Rocade",
+      "Espaces de travail, services et accompagnement pour vous aider à travailler plus efficacement à Tunis, Av. De La Monnaie",
+      "Nous proposons des options d’espaces de travail entièrement adaptées à vos besoins à Tunis, Le Golfe de Tunis",
+      "Annonces Gold",
+      "DES LOTS AGRICOLE DE 1000 m2",
+      "des Lots de terrains Agricole de 01 Hectare",
+      "TERRAIN A CHOTRANA 3 LA SOUKRA",
+      "CENTRE ANIMATION ET LOISIRS",
+      "Ferme agricole 17 hectares à vendre près de Tunis",
+      "Boutique",
+      "de la Semaine",
+      "Sélection Proxity.tn",
+      "Découvrez la boutique de la semaine sur Proxity.tn avec une sélection d’annonces, de produits et de bonnes affaires disponibles en Tunisie. Catégories : Immobilier, véhicules,",
+      "Annonces Boutique",
+      "Mahindra Kuv 100 2018 Essence",
+      "Véhicules sur Proxity.tn",
+      "Annonces voitures",
+      "Wallys Iris"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "Envoyer"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://proxity.tn/devenir-partenaire-avec-proxity/",
+        "index": 3,
+        "action": "https://proxity.tn/devenir-partenaire-avec-proxity/",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nom",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "Entreprise",
+            "label": "Entreprise",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "E-mail",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel-352",
+            "label": "Numéro Téléphone",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "radio",
+            "name": "Joignabilite",
+            "label": "08:00 – 12:00",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": "Objet",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Message (facultatif)",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://proxity.tn/contactez-nous/",
+        "index": 3,
+        "action": "https://proxity.tn/contactez-nous/",
+        "method": "POST",
+        "submitText": "Envoyer",
+        "visibleFieldCount": 4,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 7,
+        "fields": [
+          {
+            "type": "text",
+            "name": "your-name",
+            "label": "Nom",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "your-email",
+            "label": "E-mail",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "your-subject",
+            "label": "Sujet",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "your-message",
+            "label": "Message",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 4 y 7 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 4,
+      "maxFields": 7,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "Google Tag Manager",
+      "WordPress"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Portal general de anuncios gratuitos para comprar, vender o alquilar vehículos, inmuebles, productos, empleo y servicios; conecta anunciantes con contactos cercanos.",
+    "audience": "Público general tunecino y pequeños anunciantes; servicios del hogar son solo una subcategoría dentro de un portal horizontal.",
+    "prices": [],
+    "guarantee": [
+      "Testez-le en direct : son, température, affichage, fuites, garantie.",
+      "Demandez si une facture ou garantie est disponible."
+    ],
+    "proof": [],
+    "objections": [
+      "Informations et support Contactez-nous FAQ Conditions d'utilisations Publicité et partenariat Annonces Proxity.tn Créer une annonce Toutes les annonces Mon Profil Mes annonces Rejoignez-nous ici Facebook Instagram Pinterest Youtube Tiktok Linkedin © PROXITY.",
+      "FAQ Proxity.tn – Toutes les réponses à vos questions FAQ Générale (Proxity) Est-ce que Proxity.tn est gratuit ?",
+      "🚗 FAQ Véhicules Comment vendre ma voiture rapidement sur Proxity.tn ?",
+      "Ne versez jamais d’argent avant d’avoir vu le véhicule Méfiez-vous des prix trop bas Vérifiez les papiers originaux N’envoyez jamais d’acompte à distance 🏠 FAQ Immobilier Comment publier une annonce immobilière efficace ?",
+      "💻 FAQ Informatique & Multimédia Comment trouver un smartphone ou un ordinateur d’occasion à bon prix ?",
+      "🏡 FAQ Maison & Jardin Comment bien vendre ses meubles d’occasion ?",
+      "Les meilleurs moments : Été pour les climatiseurs Hiver pour les chauffages Mars/Avril pour les réfrigérateurs & TV 👕 FAQ Habillement & Bien-être Comment vendre des vêtements efficacement ?"
+    ],
+    "urgency": [
+      "Découvrez aussi l’électroménager, les meubles et bien plus encore ; parcourez toutes les annonces dès maintenant, publiez la vôtre gratuitement et profitez des meilleures opportunités partout en Tunisie."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "Testez-le en direct : son, température, affichage, fuites, garantie.",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        },
+        {
+          "text": "Demandez si une facture ou garantie est disponible.",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": [
+        {
+          "text": "Informations et support Contactez-nous FAQ Conditions d'utilisations Publicité et partenariat Annonces Proxity.tn Créer une annonce Toutes les annonces Mon Profil Mes annonces Rejoignez-nous ici Facebook Instagram Pinterest Youtube Tiktok Linkedin © PROXITY.",
+          "url": "https://proxity.tn/",
+          "pageTitle": "Tunisie annonce : achat, vente, location | Proxity",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Informations et support Contactez-nous FAQ Conditions d'utilisations Publicité et partenariat Annonces Proxity.tn Créer une annonce Toutes les annonces Mon Profil Mes annonces Rejoignez-nous ici Facebook Instagram Pinterest Youtube Tiktok Linkedin © PROXITY.",
+          "url": "https://proxity.tn/emploi-et-services",
+          "pageTitle": "Emploi et services en Tunisie : offres, jobs, annonces de services | Proxity.tn",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "FAQ Proxity.tn – Toutes les réponses à vos questions FAQ Générale (Proxity) Est-ce que Proxity.tn est gratuit ?",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "🚗 FAQ Véhicules Comment vendre ma voiture rapidement sur Proxity.tn ?",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Ne versez jamais d’argent avant d’avoir vu le véhicule Méfiez-vous des prix trop bas Vérifiez les papiers originaux N’envoyez jamais d’acompte à distance 🏠 FAQ Immobilier Comment publier une annonce immobilière efficace ?",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "💻 FAQ Informatique & Multimédia Comment trouver un smartphone ou un ordinateur d’occasion à bon prix ?",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "🏡 FAQ Maison & Jardin Comment bien vendre ses meubles d’occasion ?",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Les meilleurs moments : Été pour les climatiseurs Hiver pour les chauffages Mars/Avril pour les réfrigérateurs & TV 👕 FAQ Habillement & Bien-être Comment vendre des vêtements efficacement ?",
+          "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+          "pageTitle": "FAQ Proxity – Vendre, acheter et publier des annonces en Tunisie",
+          "pageCategory": "objections"
+        },
+        {
+          "text": "Informations et support Contactez-nous FAQ Conditions d'utilisations Publicité et partenariat Annonces Proxity.tn Créer une annonce Toutes les annonces Mon Profil Mes annonces Rejoignez-nous ici Facebook Instagram Pinterest Youtube Tiktok Linkedin © PROXITY.",
+          "url": "https://proxity.tn/emploi-et-services/",
+          "pageTitle": "Emploi et services en Tunisie : offres, jobs, annonces de services | Proxity.tn",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "SEO / contenido"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://proxity.tn/",
+        "https://proxity.tn/devenir-partenaire-avec-proxity/",
+        "https://proxity.tn/contactez-nous/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Petites annonces en Tunisie : acheter, vendre, louer",
+        "Voir les annonces",
+        "Annonces Emploi et Services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Envoyer"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://proxity.tn/devenir-partenaire-avec-proxity/ · 7 campos",
+        "https://proxity.tn/devenir-partenaire-avec-proxity/ · 7 campos",
+        "https://proxity.tn/contactez-nous/ · 4 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Buscar por categoría/ubicación → abrir anuncio → contactar al anunciante; o crear cuenta → publicar anuncio/fotos/precio → recibir contactos."
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://proxity.tn/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://proxity.tn/devenir-partenaire-avec-proxity/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://proxity.tn/contactez-nous/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://proxity.tn/emploi-et-services",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://proxity.tn/faq-annonce-gratuite-en-tunisie/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://proxity.tn/equipements-bebe-enfant/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://proxity.tn/emploi-et-services/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=proxity.tn",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=834665663403858",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó evidencia legal o de confianza suficientemente legible en las páginas recuperadas; puede existir en otra ruta o jurisdicción.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Replicar la disciplina de medición:** el stack público detectado (Google Tag Manager, WordPress) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

@@ -1,0 +1,315 @@
+{
+  "id": "2merkato-com",
+  "name": "2merkato.com",
+  "reviewedAt": "2026-08-22T15:50:18.684Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 50,
+  "message": {
+    "hero": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado.",
+    "heroObserved": false,
+    "priorSummary": "Featured Listing, banners y publicación/suscripción de licitaciones.",
+    "voice": "Tono orientado al lector, cuantitativo, explicativo, orientado a la acción. Usa 232 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 841 palabras por página comercial recuperada.",
+    "supportingHeadings": [
+      "2merkato",
+      "About 2Merkato.com",
+      "Services",
+      "Access to Tender/Bid Notices from All Over Ethiopia:",
+      "Post Tenders/Bids",
+      "B2B",
+      "Construction Portal",
+      "Business Information",
+      "Contact",
+      "Registration, Licenses and Certificates",
+      "Featured Company",
+      "Company Info",
+      "Business Directory",
+      "Tenders",
+      "Connect with us",
+      "General Questions",
+      "Startups",
+      "Customs Duty, Tariff, Levies and Taxes in Ethiopia",
+      "1. Applicable Dates for Assessment and Payment of Customs Duties and Taxes",
+      "2. Customs Duty and Tariff Rates",
+      "3. Determination of Dutiable Value",
+      "Method 1: Transaction value method",
+      "Method 2: Valuation of identical goods",
+      "Method 3: Valuation of similar goods",
+      "Method 4: Deductive value method",
+      "Method 5: Computed value method",
+      "4. Mode of Payment",
+      "5. Refund of Duties and Taxes",
+      "6. Duty and Tax Exemptions",
+      "7. Service Charges"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://www.2merkato.com/59-about-2merkatocom",
+      "text": "Contact",
+      "href": "https://www.2merkato.com/59-about-2merkatocom",
+      "element": "a",
+      "kind": "conversion",
+      "score": 143.25
+    },
+    "ctas": [
+      "Contact",
+      "Contact Us",
+      "Contact Form",
+      "DOWNLOAD",
+      "download the mobile app '2merkato Tenders' from Google Play Store",
+      "Register",
+      "Send Email"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://www.2merkato.com/general-questions",
+        "index": 2,
+        "action": "https://www.2merkato.com/general-questions",
+        "method": "POST",
+        "submitText": "Send Email",
+        "visibleFieldCount": 5,
+        "requiredFieldCount": 0,
+        "hiddenFieldCount": 5,
+        "fields": [
+          {
+            "type": "text",
+            "name": "jform[contact_name]",
+            "label": "Name *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "jform[contact_email]",
+            "label": "Email *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "jform[contact_subject]",
+            "label": "Subject *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "jform[contact_message]",
+            "label": "Message *",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "jform[contact_email_copy]",
+            "label": "Send copy to yourself",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "1 diseño(s) de formulario distinto(s); entre 5 y 5 campos visibles, mínimo 0 obligatorio(s). Fricción media en la variante más corta. No se detectaron campos explícitos de presupuesto, tamaño o objetivo.",
+      "friction": "Media",
+      "minFields": 5,
+      "maxFields": 5,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Featured Listing, banners y publicación/suscripción de licitaciones.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "(The amount of sea freight cost depends on the measurement (volume) of cargo) 1.4 Chemicals Most importantly know the nature of your cargo especially if the cargo is hazardous or dangerous ( ex.",
+      "6.2 Port regulations Important points a consignee needs to know are: All goods for Ethiopia are accepted on transit basis and the amount of storage period allowed is limited.",
+      "Cargo, Transit time To ensure the timely arrival of goods, it is important to know the lead-time needed for arranging shipment from Port of Origin to Destination.",
+      "Some ports are off line and availability of sailing is limited and also served on indirect basis by re-routing cargo through different connecting points.",
+      "You need to know this prior to shipping or booking a space for shipment Unit weight of individual packages and total weights of the shipment in metric tons Dimension of packages: Length, Height and Width of packages and the overall total measurement/volume in cubic meter"
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://www.2merkato.com/59-about-2merkatocom",
+        "https://www.2merkato.com/general-questions",
+        "https://www.2merkato.com/news/startups/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Promesa y encaje: no se localizó evidencia pública y no se ejecutó ninguna conversión."
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Register",
+        "Contact",
+        "download the mobile app '2merkato Tenders' from Google Play Store",
+        "Contact Us",
+        "Contact Form",
+        "Send Email",
+        "DOWNLOAD"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://www.2merkato.com/general-questions · 5 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://www.2merkato.com/59-about-2merkatocom",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://www.2merkato.com/general-questions",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://www.2merkato.com/news/startups/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://www.2merkato.com/articles/customs/69-customs-duty-tariff-and-taxes-in-ethiopia",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://www.2merkato.com/articles/industry/communication/7122-communication-services",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://www.2merkato.com/articles/starting-a-business/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://www.2merkato.com/articles/shipping/92-ethiopian-shipping-lines-procedures-on-booking-shipping-and-clearing",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://www.2merkato.com/93-advertise-on-2merkato",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.2merkato.com/3282-banner-advertisement-options-on-2merkato",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://tender.2merkato.com/post-tender",
+      "label": "Fuente pública 10"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se recuperó un titular principal suficientemente legible en las páginas públicas accesibles.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

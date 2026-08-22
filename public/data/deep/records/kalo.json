@@ -1,0 +1,470 @@
+{
+  "id": "kalo",
+  "name": "KALO",
+  "reviewedAt": "2026-08-22T15:50:17.418Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 56,
+  "message": {
+    "hero": "Agência de Marketing Digital para PMEs em Portugal",
+    "heroObserved": true,
+    "priorSummary": "Ads, landing pages y automatizaciones que filtran/cualifican leads antes de entregarlos a ventas.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, apoya la promesa en prueba social. Usa 228 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 824 palabras por página comercial recuperada. Muestras breves: “Agência de Marketing Digital para PMEs em Portugal” · “Vamos Conversar” · “Casos de Sucesso em Marketing Digital”.",
+    "supportingHeadings": [
+      "Agência de Marketing Digital para PMEs em Portugal",
+      "Tudo o que precisa paratransformar cliques em clientes",
+      "Google Ads",
+      "Meta Ads",
+      "Landing Pages",
+      "Marketing Automation",
+      "Inteligência Artificial",
+      "Trabalhamos melhor comnegócios assim:",
+      "Em 4 semanas, o seu negóciocomeça a receber leads.",
+      "Diagnóstico & Oferta",
+      "Estratégia & Setup",
+      "Lançamento & Otimização",
+      "Escala & Relatórios",
+      "Não gerimos anúncios.Construímos máquinas de leads.",
+      "Resultados que os nossos clientesmedem no banco",
+      "O que dizem os clientes quehoje recebem leads todos os meses.",
+      "Recursos para fazer crescero seu negócio",
+      "Automação de Marketing: 3 workflows que tem de implementar hoje",
+      "O que nos perguntamsempre antes de avançar",
+      "Deixe de ser o departamento de marketing inteiro.Nós tratamos das leads por si.",
+      "Vamos Conversar",
+      "Email",
+      "Telefone",
+      "Morada",
+      "Horário",
+      "Envie-nos uma Mensagem",
+      "Casos de Sucesso em Marketing Digital",
+      "Design de Interiores — De 4 leads incertos a 30 qualificadas por mês",
+      "E-commerce Desportivo — Do zero a 6M€ em receita com Google Ads",
+      "SaaS B2B — CPA reduzido em 48% com reestruturação de Google Ads"
+    ]
+  },
+  "conversion": {
+    "primaryCta": null,
+    "primaryCtaEvidence": null,
+    "ctas": [
+      "Voltar",
+      "Enviar Mensagem"
+    ],
+    "captureType": "Agenda mediante formulario",
+    "forms": [
+      {
+        "pageUrl": "https://kalo.pt/contactos/",
+        "index": 1,
+        "action": "https://kalo.pt/api/contact/",
+        "method": "POST",
+        "submitText": "Enviar Mensagem",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 8,
+        "fields": [
+          {
+            "type": "text",
+            "name": "kalo_website",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact_nome",
+            "label": "Nome Completo",
+            "placeholder": "João Silva",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "contact_empresa",
+            "label": "Empresa",
+            "placeholder": "Nome da sua empresa",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "contact_email",
+            "label": "Email",
+            "placeholder": "joao@empresa.pt",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "contact_telefone",
+            "label": "Telefone",
+            "placeholder": "+351 9XX XXX XXX",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "contact_servico",
+            "label": "Serviço de interesse",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "contact_mensagem",
+            "label": "Mensagem",
+            "placeholder": "Conte-nos um pouco sobre os seus objetivos e o seu projeto...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://kalo.pt/agendar-diagnostico/",
+        "index": 1,
+        "action": "https://kalo.pt/api/booking/submit/",
+        "method": "POST",
+        "submitText": null,
+        "visibleFieldCount": 9,
+        "requiredFieldCount": 8,
+        "hiddenFieldCount": 10,
+        "fields": [
+          {
+            "type": "text",
+            "name": "kalo_hp",
+            "label": "Website",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "b_nome",
+            "label": "Nome completo",
+            "placeholder": "Joao Silva",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "b_empresa",
+            "label": "Empresa",
+            "placeholder": "Nome da empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "b_email",
+            "label": "Email",
+            "placeholder": "joao@empresa.pt",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "b_telefone",
+            "label": "Telefone",
+            "placeholder": "+351 9XX XXX XXX",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "b_desafio",
+            "label": "Principal desafio",
+            "placeholder": "Descreva o principal desafio de marketing ou vendas...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "b_budget",
+            "label": "Orçamento aproximado",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "b_fonte",
+            "label": "Como nos conheceu",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "b_privacy",
+            "label": "Li e concordo com a Política de Privacidade.",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "booking",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 7 y 9 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Website, Empresa.",
+      "friction": "Media",
+      "minFields": 7,
+      "maxFields": 9,
+      "qualification": [
+        "Website",
+        "Empresa"
+      ]
+    },
+    "contacts": [
+      "Agenda online",
+      "Email",
+      "Teléfono"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "Ads, landing pages y automatizaciones que filtran/cualifican leads antes de entregarlos a ventas.",
+    "audience": "Pymes portuguesas.",
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Quero mais leads Ver resultados reais +2M€ budget publicitário gerido 1 sem.",
+      "02 Meta Ads Ponha a sua marca à frente de quem ainda não o conhece Criamos campanhas no Facebook e Instagram que apresentam o seu negócio a potenciais clientes — mesmo que ainda não saibam que precisam de si.",
+      "05 Inteligência Artificial IA ao serviço do seu marketing (não ao contrário) Usamos inteligência artificial para acelerar o que já funciona: anúncios que se optimizam sozinhos, relatórios automáticos, e respostas mais rápidas a potenciais clientes.",
+      "Clientes que confiam em nós Dezenas de empresas em Portugal já recebem leads todos os dias com a KALO Digital.",
+      "O que fazemos Tudo o que precisa paratransformar cliques em clientes Não somos uma agência de marketing digital comum."
+    ],
+    "objections": [
+      "Ler artigo Google Ads O que é o Google Ads: Anúncios Google Ads Online 23 Mar 2026 Ler artigo FAQ O que nos perguntamsempre antes de avançar O que é uma agência de marketing digital e o que faz a KALO Digital?"
+    ],
+    "urgency": [],
+    "evidence": {
+      "prices": [
+        {
+          "text": "Quero mais leads Ver resultados reais +2M€ budget publicitário gerido 1 sem.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "\" \"Antes da KALO Digital, gastávamos 800€/mês em ads sem saber o que estava a funcionar.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        },
+        {
+          "text": "Recomendamos um orçamento mínimo de 500€/mês em media spend (valor pago às plataformas de publicidade).",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other",
+          "amountType": "ad_spend"
+        },
+        {
+          "text": "Se ainda está em fase de validação ou o orçamento em ads é inferior a 500€/mês, podemos não ser a melhor escolha — e dizemos isso de início.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other",
+          "amountType": "ambiguous"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Quero mais leads Ver resultados reais +2M€ budget publicitário gerido 1 sem.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "Clientes que confiam em nós Dezenas de empresas em Portugal já recebem leads todos os dias com a KALO Digital.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "O que fazemos Tudo o que precisa paratransformar cliques em clientes Não somos uma agência de marketing digital comum.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "02 Meta Ads Ponha a sua marca à frente de quem ainda não o conhece Criamos campanhas no Facebook e Instagram que apresentam o seu negócio a potenciais clientes — mesmo que ainda não saibam que precisam de si.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other"
+        },
+        {
+          "text": "05 Inteligência Artificial IA ao serviço do seu marketing (não ao contrário) Usamos inteligência artificial para acelerar o que já funciona: anúncios que se optimizam sozinhos, relatórios automáticos, e respostas mais rápidas a potenciais clientes.",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Ler artigo Google Ads O que é o Google Ads: Anúncios Google Ads Online 23 Mar 2026 Ler artigo FAQ O que nos perguntamsempre antes de avançar O que é uma agência de marketing digital e o que faz a KALO Digital?",
+          "url": "https://kalo.pt/",
+          "pageTitle": "KALO Digital | Agência de Marketing Digital",
+          "pageCategory": "other"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://kalo.pt/",
+        "https://kalo.pt/contactos/",
+        "https://kalo.pt/portfolio/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agência de Marketing Digital para PMEs em Portugal",
+        "Vamos Conversar",
+        "Casos de Sucesso em Marketing Digital",
+        "Design de Interiores — De 4 leads incertos a 30 qualificadas por mês"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Enviar Mensagem",
+        "Voltar"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://kalo.pt/contactos/ · 7 campos",
+        "https://kalo.pt/agendar-diagnostico/ · 9 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Agenda online",
+        "Email",
+        "Teléfono"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Evaluación/reunión → definición de oferta y público → Ads y landing → automatizaciones filtran el lead → entrega al equipo comercial del cliente → inversión recomendada desde 500"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://kalo.pt/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://kalo.pt/contactos/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://kalo.pt/portfolio/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://kalo.pt/portfolio/design-interiores-leads-qualificadas-crescimento/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://kalo.pt/portfolio/saas-b2b-cpa-reduzido/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://kalo.pt/agendar-diagnostico/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://kalo.pt/servicos/agencia-meta-ads/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se recuperó una presentación pública suficientemente clara del equipo en las páginas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

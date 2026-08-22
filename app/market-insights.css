@@ -1,0 +1,115 @@
+.market-insight-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(420px, 1.5fr) minmax(260px, 0.85fr);
+  gap: 12px;
+  margin: 12px 48px 24px;
+}
+
+.market-insight-grid > article {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(20, 65, 48, 0.04);
+}
+
+.market-insight-grid h2 {
+  margin: 4px 0 18px;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+
+.insight-bars {
+  display: grid;
+  gap: 12px;
+}
+
+.insight-bars > div {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) 32px;
+  gap: 8px;
+  align-items: center;
+}
+
+.insight-bars span,
+.insight-bars strong {
+  font-size: 9px;
+}
+
+.insight-bars strong { text-align: right; }
+
+.insight-bars i,
+.stage-observability i {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #edf2ef;
+}
+
+.insight-bars i b,
+.stage-observability i b {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0b8f61, #56d49e);
+}
+
+.stage-observability > div {
+  display: grid;
+  gap: 7px;
+}
+
+.stage-observability > div > div {
+  display: grid;
+  grid-template-columns: 24px minmax(145px, 1fr) minmax(90px, 0.8fr) 42px;
+  gap: 8px;
+  align-items: center;
+}
+
+.stage-observability span,
+.stage-observability strong {
+  font-size: 8px;
+  color: #607067;
+}
+
+.stage-observability strong { text-align: right; }
+.stage-observability p { margin: 0; font-size: 9px; line-height: 1.25; }
+
+.signal-ledger {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+}
+
+.signal-ledger > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 11px;
+  border-radius: 9px;
+  background: #f4f8f6;
+}
+
+.signal-ledger dt { font-size: 9px; color: #596a61; }
+.signal-ledger dd { margin: 0; font-size: 17px; font-weight: 850; color: #0b6f4b; }
+.insight-note { margin: 14px 0 0; font-size: 9px; line-height: 1.55; color: #718078; }
+
+@media (max-width: 1180px) {
+  .market-insight-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stage-observability { grid-column: 1 / -1; }
+}
+
+@media (max-width: 900px) {
+  .market-insight-grid { margin-left: 20px; margin-right: 20px; }
+}
+
+@media (max-width: 620px) {
+  .market-insight-grid { grid-template-columns: 1fr; margin-left: 10px; margin-right: 10px; }
+  .stage-observability { grid-column: auto; }
+  .stage-observability > div > div {
+    grid-template-columns: 22px minmax(120px, 1fr) 55px;
+  }
+  .stage-observability i { display: none; }
+}

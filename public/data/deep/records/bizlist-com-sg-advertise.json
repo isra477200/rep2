@@ -1,0 +1,457 @@
+{
+  "id": "bizlist-com-sg-advertise",
+  "name": "bizlist.com.sg/advertise",
+  "reviewedAt": "2026-08-22T15:50:19.858Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 61,
+  "message": {
+    "hero": "All Home Services",
+    "heroObserved": true,
+    "priorSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 266 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1058 palabras por página comercial recuperada. Muestras breves: “Put your business in front of Singapore” · “We'd love tohear from you” · “All Home Services”.",
+    "supportingHeadings": [
+      "Put your business in front of Singapore",
+      "Simple, transparent pricing",
+      "Where your business appears",
+      "Common questions",
+      "Ready to grow your business?",
+      "Let's get you started!",
+      "Is your business listed on BizList?",
+      "We'd love tohear from you",
+      "Message sent!",
+      "All Home Services",
+      "Carpenters 匠",
+      "Swiss Interior Design",
+      "Renozone Interior Design",
+      "Livspace Singapore",
+      "Flo Design",
+      "Top lists for Professional Services",
+      "How can we help you?",
+      "Still need help?",
+      "Built for theheartbeat ofSingapore business",
+      "From a simplefrustration toa real solution",
+      "What makes us different",
+      "Powered byTechford Solutions",
+      "Partner with us",
+      "Ready to build something together?",
+      "Your business belongs on BizList",
+      "Built on trust,backed by process",
+      "How we verifyevery business",
+      "How reviewswork on BizList",
+      "All Professional Services",
+      "Paul Hype Page & Co"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact Us",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://bizlist.com.sg/advertise/",
+      "text": "Contact Us",
+      "href": "https://bizlist.com.sg/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 222.5
+    },
+    "ctas": [
+      "Facebook",
+      "Contact Us",
+      "Contact us",
+      "Contact BizList",
+      "Call",
+      "call",
+      "Call us",
+      "WhatsApp",
+      "Call now",
+      "WhatsApp us →",
+      "Call +65 8719 8800",
+      "create a free account",
+      "WhatsApp +65 8719 8800",
+      "Call us +65 8719 8800 Mon–Fri, 9am–6pm SGT",
+      "WhatsApp us +65 8719 8800 Typically replies within 1 hour",
+      "Chat with us WhatsApp Us Quick replies · Usually within the hour",
+      "TikTok",
+      "Sign up",
+      "LinkedIn",
+      "Instagram",
+      "Post Review",
+      "Send Message",
+      "report function",
+      "Report a listing",
+      "Claim your listing"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://bizlist.com.sg/contact/",
+        "index": 1,
+        "action": "https://formspree.io/f/meenevqg",
+        "method": "POST",
+        "submitText": "Send Message",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 0,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Full Name *",
+            "placeholder": "e.g. John Tan",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email Address *",
+            "placeholder": "you@example.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Phone Number",
+            "placeholder": "+65 9XXX XXXX",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Company Name",
+            "placeholder": "Your business name",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "subject",
+            "label": "Enquiry Type *",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Message *",
+            "placeholder": "Tell us how we can help you…",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "source",
+            "label": "How did you hear about us?",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://bizlist.com.sg/places/sbs-consulting-pte-ltd/",
+        "index": 1,
+        "action": "https://bizlist.com.sg/wp-comments-post.php",
+        "method": "POST",
+        "submitText": "Post Review",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 4,
+        "hiddenFieldCount": 4,
+        "fields": [
+          {
+            "type": "textarea",
+            "name": "comment",
+            "label": "Review text",
+            "placeholder": "Enter your review comments here (required)...",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "author",
+            "label": "Name",
+            "placeholder": "Name (required)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email",
+            "placeholder": "Email (required)",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "url",
+            "name": "url",
+            "label": "Website",
+            "placeholder": "Website",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "wp-comment-cookies-consent",
+            "label": "Save my name, email, and website in this browser for the next",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "wpsec_captcha_answer",
+            "label": null,
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 7 campos visibles, mínimo 4 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Company Name, Website, Save my name, email, and website in this browser for the next.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 7,
+      "qualification": [
+        "Company Name",
+        "Website",
+        "Save my name, email, and website in this browser for the next"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Oferta comercial no localizada en fuentes públicas; limitación documentada en la revisión del 22/08/2026.",
+    "audience": null,
+    "prices": [],
+    "guarantee": [],
+    "proof": [
+      "Read full ranking Updated Apr 2026 🏆 Editor's Pick ✦ Sponsored Tuition 5 centres ranked Top 5 Best Tuition Centres in Singapore From PSLE to O-Levels and A-Levels, these tuition centres have helped thousands of Singapore students achieve their best results.",
+      "Professional Services Favorite Accounting Solutions Asia (ASA)Accounting Solutions Asia is a Singapore-based firm that focuses on SME clients.",
+      "…rketing Agencies in Singapore From SEO to social media, Singapore's most trusted digital marketing agencies — ranked by results, reputation and client reviews.",
+      "Read full ranking Updated Apr 2026 🏆 Editor's Pick ✦ Sponsored Beauty 5 salons ranked Top 5 Best Beauty Salons in Singapore From hair treatments to facials and nail art, these are Singapore's most loved beauty salons — ranked by real customer reviews."
+    ],
+    "objections": [],
+    "urgency": [
+      "…nsultation ⭐ Most Popular Recommended Pro S$ 149 /year ≈ S$12.40/month Homepage featuring PLUS the coveted #1 sponsored spot in one of our expert ranking articles — be the first business people see.",
+      "Everything in Basic #1 Sponsored spot in 1 ranking article \"Editor's Pick\" badge on article feature Direct link to your website from article 12 months visibility Get Pro → 🔒 No obligation · Free consultation Maximum…",
+      "Everything in Pro Sponsored banner on your category page Priority customer support Monthly performance report 12 months visibility Get Elite → 🔒 No obligation · Free consultation Placements Where your business appears Every package puts your business in high-visibility spots where Singapore consumers are actively",
+      "Basic Pro Elite 🏆 Article #1 Ranking Your business takes the top sponsored spot in a curated \"Top 5\" article for your category.",
+      "Join Singapore businesses already advertising on BizList and reach thousands of local consumers today.",
+      "Simply reach out to us via WhatsApp, phone, or email and let us know which package you're interested in."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Read full ranking Updated Apr 2026 🏆 Editor's Pick ✦ Sponsored Tuition 5 centres ranked Top 5 Best Tuition Centres in Singapore From PSLE to O-Levels and A-Levels, these tuition centres have helped thousands of Singapore students achieve their best results.",
+          "url": "https://bizlist.com.sg/places/category/home-services/",
+          "pageTitle": "Home Services - BizList.com.sg",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Read full ranking Updated Apr 2026 🏆 Editor's Pick ✦ Sponsored Beauty 5 salons ranked Top 5 Best Beauty Salons in Singapore From hair treatments to facials and nail art, these are Singapore's most loved beauty salons — ranked by real customer reviews.",
+          "url": "https://bizlist.com.sg/places/category/home-services/",
+          "pageTitle": "Home Services - BizList.com.sg",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Professional Services Favorite Accounting Solutions Asia (ASA)Accounting Solutions Asia is a Singapore-based firm that focuses on SME clients.",
+          "url": "https://bizlist.com.sg/places/category/professional-services/",
+          "pageTitle": "Professional Services - BizList.com.sg",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…rketing Agencies in Singapore From SEO to social media, Singapore's most trusted digital marketing agencies — ranked by results, reputation and client reviews.",
+          "url": "https://bizlist.com.sg/places/category/professional-services/",
+          "pageTitle": "Professional Services - BizList.com.sg",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Read full ranking Updated Apr 2026 🏆 Editor's Pick ✦ Sponsored Tuition 5 centres ranked Top 5 Best Tuition Centres in Singapore From PSLE to O-Levels and A-Levels, these tuition centres have helped thousands of Singapore students achieve their best results.",
+          "url": "https://bizlist.com.sg/places/category/professional-services/",
+          "pageTitle": "Professional Services - BizList.com.sg",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Read full ranking Updated Apr 2026 🏆 Editor's Pick ✦ Sponsored Beauty 5 salons ranked Top 5 Best Beauty Salons in Singapore From hair treatments to facials and nail art, these are Singapore's most loved beauty salons — ranked by real customer reviews.",
+          "url": "https://bizlist.com.sg/places/category/professional-services/",
+          "pageTitle": "Professional Services - BizList.com.sg",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://bizlist.com.sg/advertise/",
+        "https://bizlist.com.sg/contact/",
+        "https://bizlist.com.sg/places/category/home-services/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Put your business in front of Singapore",
+        "We'd love tohear from you",
+        "All Home Services",
+        "All Professional Services"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contact Us",
+        "Call +65 8719 8800",
+        "Call us +65 8719 8800 Mon–Fri, 9am–6pm SGT",
+        "WhatsApp us +65 8719 8800 Typically replies within 1 hour",
+        "WhatsApp",
+        "Contact us",
+        "Report a listing",
+        "Claim your listing"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://bizlist.com.sg/contact/ · 7 campos",
+        "https://bizlist.com.sg/places/sbs-consulting-pte-ltd/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "no observable",
+      "evidence": [],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://bizlist.com.sg/advertise/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://bizlist.com.sg/contact/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://bizlist.com.sg/places/category/home-services/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://bizlist.com.sg/help/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://bizlist.com.sg/about-us/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://bizlist.com.sg/places/category/professional-services/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://bizlist.com.sg/places/sbs-consulting-pte-ltd/",
+      "label": "Fuente pública 7"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "Público objetivo: no se localizó evidencia pública suficiente en las páginas recuperadas; la ausencia queda documentada y no se interpreta como inexistencia.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizó una garantía pública positiva nueva; las síntesis previas y negaciones no se presentan como observación actual.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact Us”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta.",
+    "**Clasificación a validar:** confirmar que es fuente/no negocio antes de declarar el funnel como no aplicable."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

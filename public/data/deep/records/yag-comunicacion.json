@@ -1,0 +1,624 @@
+{
+  "id": "yag-comunicacion",
+  "name": "YAG Comunicación",
+  "reviewedAt": "2026-08-22T15:50:17.496Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 72,
+  "message": {
+    "hero": "Diseño web, SEO y marketing digital para tu empresa",
+    "heroObserved": true,
+    "priorSummary": "Planes de marketing, localización y adquisición con cuentas/datos propiedad del cliente.",
+    "voice": "Tono orientado al lector, cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la promesa en prueba social. Usa 385 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 1752 palabras por página comercial recuperada. Muestras breves: “Agencia de marketing digital en Tenerife orientada a resultados.” · “Tu proyecto merece una propuesta real.” · “Precios marketing digital en Canarias sin letra pequeña”.",
+    "supportingHeadings": [
+      "Agencia de marketing digital en Tenerife orientada a resultados.",
+      "Invertir en Ads sin medir bien es pagar por tráfico, no por negocio",
+      "El coste de no hacer nada",
+      "Puede que no necesites más presupuesto: necesites 3 ajustes",
+      "Cómo lo resolvemos",
+      "Agencia de marketing digital para empresas, en una frase",
+      "Marketing que conecta con todo",
+      "Google Ads (SEM)",
+      "Meta Ads (Facebook & Instagram)",
+      "Email Marketing",
+      "Estrategia y analítica",
+      "Social media management",
+      "Funnel y CRO",
+      "8 canales digitales: cuándo usar cada uno",
+      "Google Ads Search",
+      "Google Shopping + Performance Max",
+      "Meta Ads (Facebook + Instagram)",
+      "TikTok Ads",
+      "LinkedIn Ads",
+      "YouTube Ads",
+      "Retargeting multi-canal",
+      "Tres fases hasta escalar con rentabilidad",
+      "Mes 1 · Setup y aprendizaje",
+      "Mes 2 · Optimización",
+      "Mes 3 en adelante · Escalado",
+      "Revisión trimestral",
+      "Fee mensual + % de medios: transparente",
+      "Start",
+      "Growth",
+      "Scale"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Pedir auditoría gratuita",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+      "text": "Pedir auditoría gratuita",
+      "href": "https://yagcomunicacion.com/contacto/",
+      "element": "a",
+      "kind": "conversion",
+      "score": 159
+    },
+    "ctas": [
+      "Pedir auditoría gratuita",
+      "Auditoría de campañas gratuita",
+      "Contacto",
+      "Contactar",
+      "Solicitar propuesta",
+      "Escríbenos desde contacto",
+      "Solicitar primera valoración",
+      "Solicitar presupuesto en 24 h",
+      "Empezar con Start",
+      "Abrir chat de WhatsApp",
+      "WhatsApp · Respuesta rápidaEnviar mensaje",
+      "Cuéntanoslo →",
+      "Empezar Full Ads",
+      "Empezar con Scale",
+      "Empezar con Growth",
+      "Empezar Google Ads",
+      "Revisar mi captación",
+      "Revisamos tu empresa",
+      "Hablar con el equipo",
+      "Cuéntanos tu proyecto",
+      "Hablar de tu proyecto",
+      "Empezar marketing completo"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://yagcomunicacion.com/marketing-digital/",
+        "index": 1,
+        "action": "https://yagcomunicacion.com/marketing-digital/",
+        "method": "GET",
+        "submitText": "Revisar mi captación",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre * (obligatorio)",
+            "placeholder": "Tu nombre completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email * (obligatorio)",
+            "placeholder": "hola@tuempresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono (opcional)",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa o marca * (obligatorio)",
+            "placeholder": "Nombre de tu empresa",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "package",
+            "label": "Qué quieres mejorar * (obligatorio)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Objetivo, situación actual y presupuesto orientativo * (obligatorio)",
+            "placeholder": "Ej. invertimos en Google Ads pero no sabemos si genera clientes reales...",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yagcomunicacion.com/contacto/",
+        "index": 1,
+        "action": "https://yagcomunicacion.com/contacto/",
+        "method": "GET",
+        "submitText": "Solicitar propuesta",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 1,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre *",
+            "placeholder": "Tu nombre completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email *",
+            "placeholder": "hola@tuempresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "service",
+            "label": "Servicio de interés",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "budget",
+            "label": "Presupuesto aproximado",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Cuéntanos tu proyecto *",
+            "placeholder": "¿Qué necesitas? ¿Qué tienes ahora? ¿Cuál es tu objetivo principal? Cuanto más",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://yagcomunicacion.com/agencia-marketing-digital-alzira-valencia/",
+        "index": 1,
+        "action": "https://yagcomunicacion.com/agencia-marketing-digital-alzira-valencia/",
+        "method": "GET",
+        "submitText": "Revisar mi captación",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 5,
+        "hiddenFieldCount": 2,
+        "fields": [
+          {
+            "type": "text",
+            "name": "name",
+            "label": "Nombre * (obligatorio)",
+            "placeholder": "Tu nombre completo",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": "Email * (obligatorio)",
+            "placeholder": "hola@tuempresa.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "label": "Teléfono (opcional)",
+            "placeholder": "+34 600 000 000",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "text",
+            "name": "company",
+            "label": "Empresa y web * (obligatorio)",
+            "placeholder": "Nombre de empresa · https://tuweb.com",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "select",
+            "name": "package",
+            "label": "Prioridad * (obligatorio)",
+            "placeholder": null,
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "message",
+            "label": "Qué vendes, dónde y qué necesitas mejorar * (obligatorio)",
+            "placeholder": "Ej: somos una empresa de Alzira o Valencia y queremos captar oportunidades",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "3 diseño(s) de formulario distinto(s); entre 6 y 6 campos visibles, mínimo 3 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Empresa o marca * (obligatorio), Objetivo, situación actual y presupuesto orientativo * (obligatorio), Servicio de interés, Presupuesto aproximado, Empresa y web * (obligatorio).",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 6,
+      "qualification": [
+        "Empresa o marca * (obligatorio)",
+        "Objetivo, situación actual y presupuesto orientativo * (obligatorio)",
+        "Servicio de interés",
+        "Presupuesto aproximado",
+        "Empresa y web * (obligatorio)"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "WhatsApp",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "Planes de marketing, localización y adquisición con cuentas/datos propiedad del cliente.",
+    "audience": "Pymes y servicios, con foco local, turismo y multilingüe.",
+    "prices": [
+      "…narias · TenerifePrecios marketing digital en Canarias sin letra pequeñaGoogle Ads, Meta Ads y campañas completas desde 390 €/mes.",
+      "En ambos casos reportamos métricas reales desde la semana 1.¿Qué presupuesto mínimo de inversión necesito?Para Google Ads Search: mínimo 300 €/mes de inversión para que el algoritmo tenga datos suficientes.",
+      "Con menos de 300 €/mes la fase de aprendizaje se alarga y el CPC puede dispararse.",
+      "Para Meta Ads: mínimo 200 €/mes.",
+      "Recomendamos un mínimo de 300 €/mes en inversión para Google Ads y 200 €/mes para Meta Ads para que los algoritmos tengan datos suficientes para optimizar.¿Por qué contratar en Canarias si tiene más sentido ir a una agencia de Madrid?Dos razones reales: (1) Precio competitivo:",
+      "La tarifa de gestión (390-1.490 €/mes) es lo que cobras a nosotros por gestionar las campañas: estrategia, configuración, optimización diaria, reporting e informes."
+    ],
+    "guarantee": [],
+    "proof": [
+      "No atribuimos a YAG el diseño original ni publicamos resultados sin fuente, periodo y punto de partida.Visitar prosana.es ↗SEO para clínicasAnalítica y medicióndesahuciosbilbao.orgAbrir plataformaCliente SEO activoLegal · BilbaoDesahuciosBilba…",
+      "Los agrupamos por relación para evitar confusiones: proyectos construidos, clientes con servicio SEO activo y plataformas desarrolladas por YAG.",
+      "Revisaremos los trabajos comparables y te explicaremos qué alcance tiene sentido sin compartir información privada de otros clientes.Servicios relacionados¿Qué quieres mejorar en tu empresa?Los mejores resultados llegan cuando los servicios hablan entre sí.",
+      "Convierte más visitas en clientes sin gastar más en captación.→Analítica y MediciónGA4, Google Tag Manager y tracking de conversiones.",
+      "Si tienes web pero no recibes visitas ni clientes digitales, el SEO local es el siguiente paso.",
+      "Valoraciones reales que generan confianza y atraen clientes.→890+proyectos entregados desde 201214Años en activo (desde 2012)300+Dominios activos94%Tasa de retenciónMadrid · Mercado principalCompetir en Madrid exige priorizar, no hacer más ruidoEn Madrid compiten agencias, consultoras, especialistas y equipos internos por las mismas búsquedas y presupuestos."
+    ],
+    "objections": [
+      "Sin permanencia abusiva.Ver tarifas →◉Precios marketing digitalDesde 390 €/mes — Google Ads, Full Ads y marketing completo.",
+      "…pleto --plazo=24h✓ tarifas publicadas: diseño web · SEO · marketing✓ todo lo que incluye (y lo que no) por escrito✓ sin permanencia abusiva, sin sorpresas en factura✓ presupuesto cerrado → enviado en menos de 24h$ ▊⬡Precios diseño webDesde 390 € — landing, corporativa, e-commerce y web a medida.",
+      "Después decides si quieres un presupuesto formal en 24 horas.Calcular mi presupuestoHablar con el equipoPreguntas frecuentesDudas habituales antes de empezar¿Cuál es el servicio más adecuado para mi empresa?Depende de tu objetivo y situación actual.",
+      "Por eso publicamos precios de entrada, límites y siguientes escalones sin presentar el plan más económico como una solución universal.Por qué trabajamos como servicio integradoNo todas las empresas necesitan todos los servicios.",
+      "La estrategia se adapta al mercado, la competencia y la demanda real de cada empresa; no replicamos páginas o campañas locales cambiando únicamente el nombre de la ciudad.¿Hay permanencias mínimas en los servicios mensuales?Depende del servicio y queda escrito antes de empezar.",
+      "Analizamos tu web gratis y te mostramos exactamente por qué estás perdiendo visibilidad en Google frente a tu competencia y qué hacer para solucionarlo.Solicitar auditoría en vídeoTarifas transparentesPrecios sin letra pequeñaPublicamos las tarifas reales con todo lo que incluye y lo que no."
+    ],
+    "urgency": [
+      "14 años trabajando en exclusiva en digital, desde la primera web de WordPress hecha en 2012 hasta los chatbots con RAG y agentes IA que entregamos hoy.Lidera personalmente la dirección técnica de los proyectos críticos y participa en la primera reunión con cada cliente nuevo.",
+      "Hoy nuestro foco está en Madrid y en toda España, con el mismo equipo e infraestructura con los que llevamos años trabajando desde Canarias.Lo que nos diferencia de las agencias que aparecen y desaparecen es la infraestructura técnica propia.",
+      "Puedes verificar los tiempos en nuestros casos de éxito.Antes de decidir alcance, también puedes pedir un diagnóstico de visibilidad en IA sin coste: comprobamos si ChatGPT, Perplexity o Gemini citan hoy tu marca.Por sectorExperiencia web por sector en Madrid y EspañaCada sector tiene particularidades que"
+    ],
+    "evidence": {
+      "prices": [
+        {
+          "text": "…narias · TenerifePrecios marketing digital en Canarias sin letra pequeñaGoogle Ads, Meta Ads y campañas completas desde 390 €/mes.",
+          "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+          "pageTitle": "Precios Marketing Digital Canarias · Google y Meta Ads 2026",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "La tarifa de gestión (390-1.490 €/mes) es lo que cobras a nosotros por gestionar las campañas: estrategia, configuración, optimización diaria, reporting e informes.",
+          "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+          "pageTitle": "Precios Marketing Digital Canarias · Google y Meta Ads 2026",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Recomendamos un mínimo de 300 €/mes en inversión para Google Ads y 200 €/mes para Meta Ads para que los algoritmos tengan datos suficientes para optimizar.¿Por qué contratar en Canarias si tiene más sentido ir a una agencia de Madrid?Dos razones reales: (1) Precio competitivo:",
+          "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+          "pageTitle": "Precios Marketing Digital Canarias · Google y Meta Ads 2026",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "En ambos casos reportamos métricas reales desde la semana 1.¿Qué presupuesto mínimo de inversión necesito?Para Google Ads Search: mínimo 300 €/mes de inversión para que el algoritmo tenga datos suficientes.",
+          "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+          "pageTitle": "Precios Marketing Digital Canarias · Google y Meta Ads 2026",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Con menos de 300 €/mes la fase de aprendizaje se alarga y el CPC puede dispararse.",
+          "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+          "pageTitle": "Precios Marketing Digital Canarias · Google y Meta Ads 2026",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        },
+        {
+          "text": "Para Meta Ads: mínimo 200 €/mes.",
+          "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+          "pageTitle": "Precios Marketing Digital Canarias · Google y Meta Ads 2026",
+          "pageCategory": "pricing",
+          "amountType": "own_fee_candidate"
+        }
+      ],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "No atribuimos a YAG el diseño original ni publicamos resultados sin fuente, periodo y punto de partida.Visitar prosana.es ↗SEO para clínicasAnalítica y medicióndesahuciosbilbao.orgAbrir plataformaCliente SEO activoLegal · BilbaoDesahuciosBilba…",
+          "url": "https://yagcomunicacion.com/casos-de-exito/",
+          "pageTitle": "Proyectos web y clientes SEO en Madrid | YAG",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Los agrupamos por relación para evitar confusiones: proyectos construidos, clientes con servicio SEO activo y plataformas desarrolladas por YAG.",
+          "url": "https://yagcomunicacion.com/casos-de-exito/",
+          "pageTitle": "Proyectos web y clientes SEO en Madrid | YAG",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Revisaremos los trabajos comparables y te explicaremos qué alcance tiene sentido sin compartir información privada de otros clientes.Servicios relacionados¿Qué quieres mejorar en tu empresa?Los mejores resultados llegan cuando los servicios hablan entre sí.",
+          "url": "https://yagcomunicacion.com/casos-de-exito/",
+          "pageTitle": "Proyectos web y clientes SEO en Madrid | YAG",
+          "pageCategory": "proof"
+        },
+        {
+          "text": "Convierte más visitas en clientes sin gastar más en captación.→Analítica y MediciónGA4, Google Tag Manager y tracking de conversiones.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Recupera carritos, nutre leads y fideliza sin trabajo manual.→Reputación Online y ReseñasGestión de reseñas en Google y protocolo de respuesta.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Valoraciones reales que generan confianza y atraen clientes.→890+proyectos entregados desde 201214Años en activo (desde 2012)300+Dominios activos94%Tasa de retenciónMadrid · Mercado principalCompetir en Madrid exige priorizar, no hacer más ruidoEn Madrid compiten agencias, consultoras, especialistas y equipos internos por las mismas búsquedas y presupuestos.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Si tienes web pero no recibes visitas ni clientes digitales, el SEO local es el siguiente paso.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": [
+        {
+          "text": "Por eso publicamos precios de entrada, límites y siguientes escalones sin presentar el plan más económico como una solución universal.Por qué trabajamos como servicio integradoNo todas las empresas necesitan todos los servicios.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Analizamos tu web gratis y te mostramos exactamente por qué estás perdiendo visibilidad en Google frente a tu competencia y qué hacer para solucionarlo.Solicitar auditoría en vídeoTarifas transparentesPrecios sin letra pequeñaPublicamos las tarifas reales con todo lo que incluye y lo que no.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "…pleto --plazo=24h✓ tarifas publicadas: diseño web · SEO · marketing✓ todo lo que incluye (y lo que no) por escrito✓ sin permanencia abusiva, sin sorpresas en factura✓ presupuesto cerrado → enviado en menos de 24h$ ▊⬡Precios diseño webDesde 390 € — landing, corporativa, e-commerce y web a medida.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Sin permanencia abusiva.Ver tarifas →◉Precios marketing digitalDesde 390 €/mes — Google Ads, Full Ads y marketing completo.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "Después decides si quieres un presupuesto formal en 24 horas.Calcular mi presupuestoHablar con el equipoPreguntas frecuentesDudas habituales antes de empezar¿Cuál es el servicio más adecuado para mi empresa?Depende de tu objetivo y situación actual.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "La estrategia se adapta al mercado, la competencia y la demanda real de cada empresa; no replicamos páginas o campañas locales cambiando únicamente el nombre de la ciudad.¿Hay permanencias mínimas en los servicios mensuales?Depende del servicio y queda escrito antes de empezar.",
+          "url": "https://yagcomunicacion.com/servicios/",
+          "pageTitle": "Servicios digitales en Madrid · SEO, web, IA y Ads | YAG",
+          "pageCategory": "offer"
+        }
+      ]
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "Meta Ads",
+        "SEO / contenido",
+        "Email"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://yagcomunicacion.com/marketing-digital/",
+        "https://yagcomunicacion.com/contacto/",
+        "https://yagcomunicacion.com/precios-marketing-digital-canarias/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia de marketing digital en Tenerife orientada a resultados.",
+        "Tu proyecto merece una propuesta real.",
+        "Precios marketing digital en Canarias sin letra pequeña",
+        "Diseño web, SEO y marketing digital para tu empresa"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Cuéntanoslo →",
+        "Contacto",
+        "Contactar",
+        "Solicitar propuesta",
+        "Empezar con Start",
+        "Empezar con Growth",
+        "Empezar con Scale",
+        "Revisar mi captación"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://yagcomunicacion.com/marketing-digital/ · 6 campos",
+        "https://yagcomunicacion.com/contacto/ · 6 campos",
+        "https://yagcomunicacion.com/agencia-marketing-digital-alzira-valencia/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "WhatsApp",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Página de servicio y planes → elección de plan o solicitud de propuesta → objetivos del cliente → propuesta personalizada en 24 h → mes 1: auditoría técnica,"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://yagcomunicacion.com/marketing-digital/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://yagcomunicacion.com/contacto/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://yagcomunicacion.com/precios-marketing-digital-canarias/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://yagcomunicacion.com/casos-de-exito/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://yagcomunicacion.com/servicios/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://yagcomunicacion.com/agencia-marketing-digital-alzira-valencia/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://yagcomunicacion.com/sobre-nosotros/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=yagcomunicacion.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Pedir auditoría gratuita”, manteniendo una sola ruta dominante por landing.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Copiar:** responder objeciones de precio, plazo, permanencia y resultados antes del CTA de alto compromiso.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

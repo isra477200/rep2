@@ -1,0 +1,438 @@
+{
+  "id": "citysem-marketing-online-s-l",
+  "name": "Citysem Marketing Online, S.L.",
+  "reviewedAt": "2026-08-22T15:50:19.171Z",
+  "status": "Verificada estructural",
+  "confidence": "Media",
+  "coveragePercent": 67,
+  "message": {
+    "hero": "Oasis Servicios",
+    "heroObserved": true,
+    "priorSummary": "\"Creamos campañas SEM en Sevilla con medición, optimización y foco en leads reales para tu negocio\" (https://citysem.es/agencia-google-ads-sevilla/)",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, enérgico, autoridad basada en prueba, consultivo / basado en preguntas, explicativo, orientado a la acción, apoya la venta en reversión de riesgo, apoya la promesa en prueba social. Usa 313 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 2476 palabras por página comercial recuperada. Muestras breves: “Agencia Google Ads Sevilla” · “Contacto” · “Oasis Servicios”.",
+    "supportingHeadings": [
+      "Agencia Google Ads Sevilla",
+      "Gestionamos tu publicidad en Google para captar clientes en Sevilla",
+      "Convierte tu inversión en contactos, llamadas y ventas reales",
+      "Qué aporta Citysem a tus campañas SEM",
+      "Estrategia antes de invertir",
+      "Campañas orientadas a conversión",
+      "Medición clara desde el inicio",
+      "Optimización continua del presupuesto",
+      "Landing preparada para vender",
+      "Informes útiles para decidir",
+      "Campañas Google Ads para cada tipo de negocio",
+      "Google Ads para pymes",
+      "Google Ads para ecommerce",
+      "Google Ads para clínicas",
+      "Google Ads para inmobiliariasr",
+      "Así trabajamos",
+      "Telas San Julián",
+      "SEO, SEM, diseño y desarrollo web",
+      "Timber Armarios",
+      "Clínica Mirasierra",
+      "SEM, diseño y desarrollo web",
+      "Oasis Servicios",
+      "Empieza a captar pacientes desde Google",
+      "Preguntas frecuentes sobre contratar Google Ads en Sevilla",
+      "¿Cuánto debo invertir en Google Ads?",
+      "¿Cuándo empezaré a recibir contactos?",
+      "¿Sirve si ya tengo campañas?",
+      "¿Qué incluye la gestión mensual?",
+      "¿Puedo controlar el presupuesto?",
+      "¿Qué pasa si mi web no convierte?"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contactar por WhatsApp",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://citysem.es/agencia-google-ads-sevilla/",
+      "text": "Contactar por WhatsApp",
+      "href": "https://wa.me/+34626405431",
+      "element": "a",
+      "kind": "conversion",
+      "score": 199.5
+    },
+    "ctas": [
+      "Contactar por WhatsApp",
+      "Contacto",
+      "Solicita presupuesto",
+      "SOLICITA PRESUPUESTO",
+      "Enviar"
+    ],
+    "captureType": "Formulario",
+    "forms": [
+      {
+        "pageUrl": "https://citysem.es/agencia-google-ads-sevilla/",
+        "index": 1,
+        "action": "https://citysem.es/agencia-google-ads-sevilla/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 6,
+        "requiredFieldCount": 3,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Nombre*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel",
+            "label": null,
+            "placeholder": "Teléfono*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Correo electrónico*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Háblanos de tu proyecto",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-579",
+            "label": "He leído y acepto la política de privacidad*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-464",
+            "label": "Doy mi consentimiento al envío publicitario y/o comercial",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      },
+      {
+        "pageUrl": "https://citysem.es/cuentanos-tu-proyecto/",
+        "index": 1,
+        "action": "https://citysem.es/cuentanos-tu-proyecto/",
+        "method": "POST",
+        "submitText": "Enviar",
+        "visibleFieldCount": 7,
+        "requiredFieldCount": 2,
+        "hiddenFieldCount": 9,
+        "fields": [
+          {
+            "type": "text",
+            "name": "nombre",
+            "label": null,
+            "placeholder": "Nombre Completo*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "tel",
+            "name": "tel",
+            "label": null,
+            "placeholder": "Teléfono",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "label": null,
+            "placeholder": "Correo electrónico*",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "area[]",
+            "label": "Desarrollo web",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "textarea",
+            "name": "mensaje",
+            "label": null,
+            "placeholder": "Cuéntanos un poco sobre tu proyecto",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-579",
+            "label": "He leído y acepto la política de privacidad*",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          },
+          {
+            "type": "checkbox",
+            "name": "acceptance-464",
+            "label": "Doy mi consentimiento al envío publicitario y/o comercial",
+            "placeholder": null,
+            "required": false,
+            "hidden": false
+          }
+        ],
+        "kind": "commercial",
+        "isConversion": true,
+        "isLeadCapture": true
+      }
+    ],
+    "formAnalysis": {
+      "text": "2 diseño(s) de formulario distinto(s); entre 6 y 7 campos visibles, mínimo 2 obligatorio(s). Fricción media en la variante más corta. Cualifica mediante: Desarrollo web.",
+      "friction": "Media",
+      "minFields": 6,
+      "maxFields": 7,
+      "qualification": [
+        "Desarrollo web"
+      ]
+    },
+    "contacts": [
+      "Teléfono",
+      "Agenda online",
+      "Email",
+      "WhatsApp"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": [
+      "WordPress",
+      "WhatsApp"
+    ]
+  },
+  "offer": {
+    "existingSummary": "\"Creamos campañas SEM en Sevilla con medición, optimización y foco en leads reales para tu negocio\" (https://citysem.es/agencia-google-ads-sevilla/)",
+    "audience": "Pymes locales en Sevilla, Granada y Málaga: clínicas dentales, inmobiliarias, despachos de abogados, hoteles/restaurantes, clínicas estéticas, veterinarias.",
+    "prices": [],
+    "guarantee": [
+      "+ 0 Años de experiencia dominando el sector desde 2013 0 /5 De nota media nuestra mejor garantía son nuestros clientes Llevadme al siguiente nivel Lo que aporta Citysem a tus campañas Estrategia antes de invertir Antes de activar campañas, revisamos qué vendes, a quién"
+    ],
+    "proof": [
+      "Las imágenes son la base de una página que se complementa con toda la información detallada sobre lo que Oasis ofrece a sus clientes.",
+      "La inversión en posicionamiento en Google facilitó que los clientes que buscaban servicios como los de Oasis dieran en la tecla a la primera con la empresa que mejor les ayudaría.",
+      "En resumen, con la inversión en una página web y en publicidad online logramos que muchos más clientes conocieran la labor de Oasis."
+    ],
+    "objections": [],
+    "urgency": [
+      "Empezamos hoy con tu Email Marketing Las campañas están muy bien planteadas y estructuradas, con una óptima selección de palabras clave."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [
+        {
+          "text": "+ 0 Años de experiencia dominando el sector desde 2013 0 /5 De nota media nuestra mejor garantía son nuestros clientes Llevadme al siguiente nivel Lo que aporta Citysem a tus campañas Estrategia antes de invertir Antes de activar campañas, revisamos qué vendes, a quién",
+          "url": "https://citysem.es/facebook-ads/",
+          "pageTitle": "Agencia Facebook Ads para vender más en redes",
+          "pageCategory": "conversion",
+          "polarity": "positive_or_unclear",
+          "guaranteeType": "result_or_refund_candidate"
+        }
+      ],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [
+        {
+          "text": "Las imágenes son la base de una página que se complementa con toda la información detallada sobre lo que Oasis ofrece a sus clientes.",
+          "url": "https://citysem.es/portfolio/desarrollo-web/oasis-servicios/",
+          "pageTitle": "Oasis Servicios: Un escaparate digital adaptado a los tiempos - Citysem",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "La inversión en posicionamiento en Google facilitó que los clientes que buscaban servicios como los de Oasis dieran en la tecla a la primera con la empresa que mejor les ayudaría.",
+          "url": "https://citysem.es/portfolio/desarrollo-web/oasis-servicios/",
+          "pageTitle": "Oasis Servicios: Un escaparate digital adaptado a los tiempos - Citysem",
+          "pageCategory": "offer"
+        },
+        {
+          "text": "En resumen, con la inversión en una página web y en publicidad online logramos que muchos más clientes conocieran la labor de Oasis.",
+          "url": "https://citysem.es/portfolio/desarrollo-web/oasis-servicios/",
+          "pageTitle": "Oasis Servicios: Un escaparate digital adaptado a los tiempos - Citysem",
+          "pageCategory": "offer"
+        }
+      ],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing",
+        "Google Ads",
+        "SEO / contenido",
+        "Otro"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://citysem.es/agencia-google-ads-sevilla/",
+        "https://citysem.es/contacta-con-nosotros/",
+        "https://citysem.es/portfolio/desarrollo-web/oasis-servicios/"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Agencia Google Ads Sevilla",
+        "Contacto",
+        "Oasis Servicios",
+        "Agencia Facebook Ads"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "Solicita presupuesto",
+        "Enviar",
+        "Contactar por WhatsApp",
+        "SOLICITA PRESUPUESTO"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "observado",
+      "evidence": [
+        "https://citysem.es/agencia-google-ads-sevilla/ · 6 campos",
+        "https://citysem.es/contacta-con-nosotros/ · 6 campos",
+        "https://citysem.es/portfolio/desarrollo-web/oasis-servicios/ · 6 campos",
+        "https://citysem.es/email-marketing-para-empresas/ · 6 campos"
+      ],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Agenda online",
+        "Email",
+        "WhatsApp"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "Entrada por landing local/sectorial o contacto → «Solicita presupuesto» / teléfono / formulario → análisis previo de negocio, margen, zona, cliente objetivo y situación de cuenta/landing → definición"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Captura / cualificación [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://citysem.es/agencia-google-ads-sevilla/",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://citysem.es/contacta-con-nosotros/",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://citysem.es/portfolio/desarrollo-web/oasis-servicios/",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://citysem.es/email-marketing-para-empresas/",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://citysem.es/facebook-ads/",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://citysem.es/cuentanos-tu-proyecto/",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://citysem.es/solicita-presupuesto/",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://citysem.es/google-ads-para-abogados/",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://citysem.es/google-shopping/",
+      "label": "Fuente pública 9"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contactar por WhatsApp”, manteniendo una sola ruta dominante por landing.",
+    "**Adaptar:** convertir la reversión de riesgo visible en una condición contractual medible, no en una promesa ambigua.",
+    "**Copiar con control:** presentar casos con cliente, periodo, inversión, denominador y resultado; distinguir siempre datos autodeclarados de auditoría independiente.",
+    "**Probar:** WhatsApp como vía rápida, con consentimiento, SLA de respuesta y trazabilidad en CRM.",
+    "**Replicar la disciplina de medición:** el stack público detectado (WordPress, WhatsApp) indica una captación instrumentada; RedVitalia debe mantener atribución de fuente a venta."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "usable"
+}

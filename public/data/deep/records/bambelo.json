@@ -1,0 +1,367 @@
+{
+  "id": "bambelo",
+  "name": "Bambelo",
+  "reviewedAt": "2026-08-22T15:50:18.587Z",
+  "status": "Verificada estructural",
+  "confidence": "Limitada",
+  "coveragePercent": 39,
+  "message": {
+    "hero": "Hola, ¿cómo podemos ayudarte?",
+    "heroObserved": true,
+    "priorSummary": "'Haz crecer tu cartera de clientes' — entrega de leads cualificados a empresas de mudanzas a través de una red propia de '40 páginas web'",
+    "voice": "Tono cuantitativo, interrogativo / diagnóstico, autoridad basada en prueba, urgencia comercial, centrado en la marca, consultivo / basado en preguntas, orientado a la acción. Usa 90 cifras o porcentajes en las páginas revisadas. Densidad aproximada: 511 palabras por página comercial recuperada. Muestras breves: “Mudanzas” · “Hola, ¿cómo podemos ayudarte?” · “Hi, how can we help you?”.",
+    "supportingHeadings": [
+      "¿Estás preparado para recibir más clientes?",
+      "Mudanzas",
+      "Crecer más puede ser muy sencillo",
+      "Consigue clientes más fácilmente",
+      "Las 7 ventajas exclusivas de trabajar con Bambelo",
+      "Hola, ¿cómo podemos ayudarte?",
+      "Conviértete en colaborador de Bambelo",
+      "Centro de ayuda",
+      "Ponte en contacto con nosotros",
+      "Conectando gente, proactivos y orientados a la obtención de resultados desde hace más de 15 años",
+      "Los 3 motores de Bambelo",
+      "1. Proactividad",
+      "2. Resultados",
+      "3. Diversión",
+      "Nuestras cifras:",
+      "+60",
+      "9,4",
+      "+40",
+      "6",
+      "+3.000",
+      "+240.000",
+      "Ven a trabajar a Bambelo",
+      "¿Quieres conocernos?",
+      "Are you ready for a lot more customers?",
+      "Hi, how can we help you?",
+      "Become a Bambelo partner",
+      "Help Centre",
+      "Contact us",
+      "Air conditioning",
+      "It can be a very simple matter to increase growth"
+    ]
+  },
+  "conversion": {
+    "primaryCta": "Contact",
+    "primaryCtaEvidence": {
+      "pageUrl": "https://partners.bambelo.com/en-gb/contact",
+      "text": "Contact",
+      "href": "https://partners.bambelo.com/en-gb/contact",
+      "element": "a",
+      "kind": "conversion",
+      "score": 223.25
+    },
+    "ctas": [
+      "Consulta nuestras vacantes",
+      "Contact",
+      "Contacto",
+      "Contact form For all your questions Answered within one working day.",
+      "Call +31 76 200 7000",
+      "Call (Belgium) +32 9 274 24 26 Available from 9.00 am to 5.00 pm",
+      "Call (Netherlands) +31 76 200 7000 Available from 9.00 am to 5.00 pm on",
+      "English",
+      "Services",
+      "Nederlands",
+      "België- Nederlands",
+      "België - Nederlands"
+    ],
+    "captureType": "Teléfono / email",
+    "forms": [],
+    "formAnalysis": {
+      "text": "No se observó un formulario HTML público en las páginas recuperadas; puede existir uno dinámico o una ruta alternativa.",
+      "friction": "No medible",
+      "minFields": 0,
+      "maxFields": 0,
+      "qualification": []
+    },
+    "contacts": [
+      "Teléfono",
+      "Email"
+    ],
+    "bookingObserved": false,
+    "checkoutObserved": false,
+    "technologies": []
+  },
+  "offer": {
+    "existingSummary": "'Haz crecer tu cartera de clientes' — entrega de leads cualificados a empresas de mudanzas a través de una red propia de '40 páginas web'",
+    "audience": "Mudanzas",
+    "prices": [],
+    "guarantee": [],
+    "proof": [],
+    "objections": [],
+    "urgency": [
+      "Become a partner Help Centre Do you have a question or would you like to know what we can do for you?",
+      "We make sure they know where to find you."
+    ],
+    "evidence": {
+      "prices": [],
+      "guarantee": [],
+      "guaranteeDisclaimers": [],
+      "guaranteeOther": [],
+      "proof": [],
+      "objections": []
+    }
+  },
+  "funnel": [
+    {
+      "stage": "Entrada / adquisición",
+      "status": "inferido",
+      "evidence": [
+        "Web / landing"
+      ],
+      "note": "Los canales proceden de la investigación previa; el sitio no revela por sí solo la fuente de tráfico."
+    },
+    {
+      "stage": "Landing / página de entrada",
+      "status": "observado",
+      "evidence": [
+        "https://partners.bambelo.com/es-es/mudanzas",
+        "https://partners.bambelo.com/es-es/contactar",
+        "https://partners.bambelo.com/es-es/sobre-nosotros"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Promesa y encaje",
+      "status": "observado",
+      "evidence": [
+        "Mudanzas",
+        "Hola, ¿cómo podemos ayudarte?",
+        "Hi, how can we help you?",
+        "Air conditioning"
+      ],
+      "note": null
+    },
+    {
+      "stage": "CTA",
+      "status": "observado",
+      "evidence": [
+        "Contacto",
+        "English",
+        "België - Nederlands",
+        "Nederlands",
+        "Consulta nuestras vacantes",
+        "Services",
+        "België- Nederlands",
+        "Contact form For all your questions Answered within one working day."
+      ],
+      "note": null
+    },
+    {
+      "stage": "Captura / cualificación",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se envió ningún formulario."
+    },
+    {
+      "stage": "Reserva o contacto directo",
+      "status": "observado",
+      "evidence": [
+        "Teléfono",
+        "Email"
+      ],
+      "note": null
+    },
+    {
+      "stage": "Conversación comercial",
+      "status": "inferido",
+      "evidence": [],
+      "note": "No se contactó con la empresa."
+    },
+    {
+      "stage": "Propuesta / cierre",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se puede confirmar sin interactuar o contactar."
+    },
+    {
+      "stage": "Seguimiento / nurturing",
+      "status": "no observable",
+      "evidence": [],
+      "note": "No se enviaron datos ni se activaron secuencias."
+    },
+    {
+      "stage": "Entrega / retención",
+      "status": "inferido",
+      "evidence": [
+        "El particular completa en una web de la red los datos de la mudanza, origen/destino, fecha y contacto → Bambelo valida la solicitud y la cruza con empresas"
+      ],
+      "note": "Basado en información pública previa; no se auditó como cliente."
+    }
+  ],
+  "route": "Entrada / adquisición [inferido] → Landing / página de entrada [observado] → Promesa y encaje [observado] → CTA [observado] → Reserva o contacto directo [observado] → Conversación comercial [inferido] → Entrega / retención [inferido]",
+  "evidence": [
+    {
+      "id": 1,
+      "url": "https://partners.bambelo.com/es-es/mudanzas",
+      "label": "Fuente pública 1"
+    },
+    {
+      "id": 2,
+      "url": "https://partners.bambelo.com/es-es/contactar",
+      "label": "Fuente pública 2"
+    },
+    {
+      "id": 3,
+      "url": "https://partners.bambelo.com/es-es/sobre-nosotros",
+      "label": "Fuente pública 3"
+    },
+    {
+      "id": 4,
+      "url": "https://partners.bambelo.com/en-gb/contact",
+      "label": "Fuente pública 4"
+    },
+    {
+      "id": 5,
+      "url": "https://partners.bambelo.com/en-gb/airconditioning",
+      "label": "Fuente pública 5"
+    },
+    {
+      "id": 6,
+      "url": "https://partners.bambelo.com/fr-be/contacter",
+      "label": "Fuente pública 6"
+    },
+    {
+      "id": 7,
+      "url": "https://partners.bambelo.com/fr-fr/contacter",
+      "label": "Fuente pública 7"
+    },
+    {
+      "id": 8,
+      "url": "https://adstransparency.google.com/?region=anywhere&domain=bambelo.com",
+      "label": "Fuente pública 8"
+    },
+    {
+      "id": 9,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&search_type=page&view_all_page_id=354411498244498",
+      "label": "Fuente pública 9"
+    },
+    {
+      "id": 10,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR10067860291984556033?region=anywhere",
+      "label": "Fuente pública 10"
+    },
+    {
+      "id": 11,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/1803752348347047051",
+      "label": "Fuente pública 11"
+    },
+    {
+      "id": 12,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR16818868833354776577?region=anywhere",
+      "label": "Fuente pública 12"
+    },
+    {
+      "id": 13,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/13430023026055772840",
+      "label": "Fuente pública 13"
+    },
+    {
+      "id": 14,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR15134681297529602049?region=anywhere",
+      "label": "Fuente pública 14"
+    },
+    {
+      "id": 15,
+      "url": "http://partners.bambelo.com/%E2%81%A9",
+      "label": "Fuente pública 15"
+    },
+    {
+      "id": 16,
+      "url": "http://bambelo.com/",
+      "label": "Fuente pública 16"
+    },
+    {
+      "id": 17,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR17892809170743197697?region=anywhere",
+      "label": "Fuente pública 17"
+    },
+    {
+      "id": 18,
+      "url": "https://tpc.googlesyndication.com/archive/simgad/8742062619046932375",
+      "label": "Fuente pública 18"
+    },
+    {
+      "id": 19,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR15893792629381398529?region=anywhere",
+      "label": "Fuente pública 19"
+    },
+    {
+      "id": 20,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR13620631091474857985?region=anywhere",
+      "label": "Fuente pública 20"
+    },
+    {
+      "id": 21,
+      "url": "http://partners.bambelo.com/",
+      "label": "Fuente pública 21"
+    },
+    {
+      "id": 22,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR15925513213425221633?region=anywhere",
+      "label": "Fuente pública 22"
+    },
+    {
+      "id": 23,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR01831917007600091137?region=anywhere",
+      "label": "Fuente pública 23"
+    },
+    {
+      "id": 24,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR11422262423298506753?region=anywhere",
+      "label": "Fuente pública 24"
+    },
+    {
+      "id": 25,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR01477070606355660801?region=anywhere",
+      "label": "Fuente pública 25"
+    },
+    {
+      "id": 26,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR15233334686274027521?region=anywhere",
+      "label": "Fuente pública 26"
+    },
+    {
+      "id": 27,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR02239994013740433409?region=anywhere",
+      "label": "Fuente pública 27"
+    },
+    {
+      "id": 28,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR04132972210610503681?region=anywhere",
+      "label": "Fuente pública 28"
+    },
+    {
+      "id": 29,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR13775062739456098305?region=anywhere",
+      "label": "Fuente pública 29"
+    },
+    {
+      "id": 30,
+      "url": "https://adstransparency.google.com/advertiser/AR08848828348655206401/creative/CR13968879151642312705?region=anywhere",
+      "label": "Fuente pública 30"
+    }
+  ],
+  "archivedEvidenceCount": 0,
+  "archivedEvidenceNote": null,
+  "limitations": [
+    "No se enviaron formularios, no se contactó a la empresa y no se inventaron etapas posteriores al CTA.",
+    "No se localizó una tarifa propia nueva con contexto suficiente; el precio canónico previo, si existe, se conserva como evidencia previa.",
+    "No se observó un formulario HTML recuperable; puede cargarse con JavaScript o aparecer después de un CTA.",
+    "No se localizaron objeciones o preguntas frecuentes explícitas en las páginas públicas revisadas.",
+    "No se localizó un recurso descargable o incentivo de captación explícito en las páginas públicas revisadas.",
+    "No se detectó una firma técnica comercial reconocible en scripts, iframes, enlaces o formularios públicos; esto no demuestra que no exista.",
+    "No se enviaron formularios ni datos personales.",
+    "No se contactó con la empresa.",
+    "No se contrató el servicio."
+  ],
+  "redVitalia": [
+    "**Adaptar:** una acción principal inequívoca como “Contact”, manteniendo una sola ruta dominante por landing."
+  ],
+  "manual": null,
+  "schemaValid": true,
+  "reviewMethod": "automatic",
+  "researchReadiness": "partial"
+}
