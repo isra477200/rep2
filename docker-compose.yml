@@ -3,7 +3,7 @@ services:
     image: ghcr.io/isra477200/redvitalia-radar:latest
     pull_policy: always
     restart: unless-stopped
-    expose:
+    ports:
       - "3000"
     labels:
       - traefik.enable=true
@@ -11,8 +11,6 @@ services:
       - traefik.http.routers.${COMPOSE_PROJECT_NAME}.entrypoints=websecure
       - traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls.certresolver=letsencrypt
       - traefik.http.services.${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=3000
-    networks:
-      - traefik-proxy
     mem_limit: 768m
     cpus: 1.0
     security_opt:
@@ -21,7 +19,3 @@ services:
     tmpfs:
       - /tmp:size=64m
       - /app/.wrangler:size=16m,uid=1000,gid=1000
-
-networks:
-  traefik-proxy:
-    external: true
