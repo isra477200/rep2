@@ -9,6 +9,19 @@ const root = new URL("../", import.meta.url);
 const json = async (path) =>
   JSON.parse(await readFile(new URL(path, root), "utf8"));
 
+test("modal layers close through browser history without reopening stale records", async () => {
+  const [portal, record] = await Promise.all([
+    readFile(new URL("../app/Portal.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/RecordDetail.tsx", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(portal, /rvModal: "company"/);
+  assert.match(portal, /rvModal: "media"/);
+  assert.match(portal, /window\.history\.state\?\.rvModal === "company"[\s\S]*?window\.history\.back\(\)/);
+  assert.match(portal, /window\.history\.state\?\.rvModal === "media"[\s\S]*?window\.history\.back\(\)/);
+  assert.match(record, /event\.preventDefault\(\)[\s\S]*?window\.history\.replaceState/);
+});
+
 test("the production index has the exact canonical coverage", async () => {
   const [companies, countries, summary, audit, media] = await Promise.all([
     json("public/data/companies.json"),

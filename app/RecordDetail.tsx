@@ -71,7 +71,7 @@ const scalarText = (input: unknown): string => {
 
 const value = (input: unknown, fallback = "No documentado públicamente") =>
   scalarText(input) || fallback;
-const isPublicHref = (input?: string) => {
+const isPublicHref = (input?: string | null) => {
   if (!input) return false;
   try {
     const url = new URL(input);
@@ -398,6 +398,7 @@ export default function RecordDetail({
   const navigateToRecordSection = (
     event: React.MouseEvent<HTMLAnchorElement>,
   ) => {
+    event.preventDefault();
     const id = event.currentTarget.hash.slice(1);
     const section = document.getElementById(id);
     if (
@@ -409,6 +410,9 @@ export default function RecordDetail({
 
     section.open = true;
     if (id === "record-analysis") setAnalysisOpen(true);
+    const url = new URL(window.location.href);
+    url.hash = id;
+    window.history.replaceState(window.history.state, "", url);
 
     window.requestAnimationFrame(() => {
       const summary = Array.from(section.children).find(
@@ -438,7 +442,11 @@ export default function RecordDetail({
   useEffect(() => {
     let active = true;
     fetch(`/data/company-details/${company.id}.json`)
-      .then((response) => (response.ok ? response.json() : null))
+      .then((response) =>
+        response.ok
+          ? (response.json() as Promise<{ body: string; sources: string[] }>)
+          : null,
+      )
       .then(
         (result) =>
           active && setCompanyDetailResult({ companyId: company.id, value: result }),
@@ -455,7 +463,9 @@ export default function RecordDetail({
   useEffect(() => {
     let active = true;
     fetch(`/data/deep/records/${company.id}.json`)
-      .then((response) => (response.ok ? response.json() : null))
+      .then((response) =>
+        response.ok ? (response.json() as Promise<DeepReview>) : null,
+      )
       .then(
         (result) =>
           active && setDeepResult({ companyId: company.id, value: result }),
@@ -472,7 +482,9 @@ export default function RecordDetail({
   useEffect(() => {
     let active = true;
     fetch(`/data/funnel-v3/records/${company.id}.json`)
-      .then((response) => (response.ok ? response.json() : null))
+      .then((response) =>
+        response.ok ? (response.json() as Promise<FunnelV3Review>) : null,
+      )
       .then(
         (result) =>
           active && setDeepV3Result({ companyId: company.id, value: result }),
@@ -580,7 +592,11 @@ export default function RecordDetail({
                 Web oficial ↗
               </a>
             )}
-            <button onClick={onLocate}>Ver en mapa 3D</button>
+            <button onClick={onLocate}>
+              {company.location?.precision === "sin_punto"
+                ? "Ver contexto territorial"
+                : "Ver en mapa 3D"}
+            </button>
             <button onClick={onShare}>Copiar enlace</button>
             <button
               className={compared ? "is-compared" : ""}

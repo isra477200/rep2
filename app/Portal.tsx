@@ -79,6 +79,10 @@ const readinessLabel: Record<DeepIndexItem["researchReadiness"], string> = {
   not_applicable: "No aplica al funnel competitivo",
 };
 const fmt = (n: number) => new Intl.NumberFormat("es-ES").format(n);
+const scrollBehavior = (): ScrollBehavior =>
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? "auto"
+    : "smooth";
 const short = (s: string, n = 170) =>
   s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s;
 const funnelScreenshotMedia = (review: FunnelV3Review): Media[] =>
@@ -271,7 +275,7 @@ function MediaRail({
           <b>{company.media.length} materiales</b>
           <button
             onClick={() =>
-              rail.current?.scrollBy({ left: -640, behavior: "smooth" })
+              rail.current?.scrollBy({ left: -640, behavior: scrollBehavior() })
             }
             aria-label="Anterior"
           >
@@ -279,7 +283,7 @@ function MediaRail({
           </button>
           <button
             onClick={() =>
-              rail.current?.scrollBy({ left: 640, behavior: "smooth" })
+              rail.current?.scrollBy({ left: 640, behavior: scrollBehavior() })
             }
             aria-label="Siguiente"
           >
@@ -401,15 +405,31 @@ export default function Portal() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/companies-index.json").then((r) => r.json()),
-      fetch("/data/countries.json").then((r) => r.json()),
-      fetch("/data/summary.json").then((r) => r.json()),
-      fetch("/data/editorial.json").then((r) => r.json()),
-      fetch("/data/country-geo.json").then((r) => r.json()),
-      fetch("/data/logos.json").then((r) => (r.ok ? r.json() : {})),
-      fetch("/data/deep/index.json").then((r) => (r.ok ? r.json() : null)),
+      fetch("/data/companies-index.json").then(
+        (r) => r.json() as Promise<Company[]>,
+      ),
+      fetch("/data/countries.json").then(
+        (r) => r.json() as Promise<Country[]>,
+      ),
+      fetch("/data/summary.json").then(
+        (r) => r.json() as Promise<Summary>,
+      ),
+      fetch("/data/editorial.json").then(
+        (r) => r.json() as Promise<Editorial>,
+      ),
+      fetch("/data/country-geo.json").then(
+        (r) => r.json() as Promise<CountryGeo[]>,
+      ),
+      fetch("/data/logos.json").then((r) =>
+        r.ok ? (r.json() as Promise<LogoManifest>) : {},
+      ),
+      fetch("/data/deep/index.json").then((r) =>
+        r.ok ? (r.json() as Promise<DeepIndex>) : null,
+      ),
       fetch("/data/funnel-v3/index.json")
-        .then((r) => (r.ok ? r.json() : null))
+        .then((r) =>
+          r.ok ? (r.json() as Promise<FunnelV3Index>) : null,
+        )
         .catch(() => null),
     ])
       .then(([c, co, s, e, g, l, d, v3]) => {
@@ -445,7 +465,11 @@ export default function Portal() {
             });
           else if (Number.isInteger(evidenceIndex) && evidenceIndex >= 0)
             fetch(`/data/funnel-v3/records/${requestedCompany.id}.json`)
-              .then((response) => (response.ok ? response.json() : null))
+              .then((response) =>
+                response.ok
+                  ? (response.json() as Promise<FunnelV3Review>)
+                  : null,
+              )
               .then((review: FunnelV3Review | null) => {
                 if (!review) return;
                 const collection = funnelScreenshotMedia(review);
@@ -657,7 +681,7 @@ export default function Portal() {
     if (v === "home") url.searchParams.delete("vista");
     else url.searchParams.set("vista", v);
     window.history.pushState({ vista: v }, "", url);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
   const chooseCountry = (name: string) => {
     setCountry(name);
@@ -666,7 +690,7 @@ export default function Portal() {
     const url = new URL(window.location.href);
     url.searchParams.set("vista", "companies");
     window.history.pushState({ vista: "companies" }, "", url);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
   const toggleCompare = (id: string) => {
     if (compare.includes(id)) {
@@ -687,9 +711,31 @@ export default function Portal() {
     url.searchParams.delete("media");
     url.searchParams.delete("evidence");
     url.hash = "";
-    window.history.pushState({ empresa: company.id }, "", url);
+    window.history.pushState(
+      { ...window.history.state, rvModal: "company", empresa: company.id },
+      "",
+      url,
+    );
   }, []);
   const closeCompany = useCallback(() => {
+    setActive(null);
+    setLightbox(null);
+    if (window.history.state?.rvModal === "company") {
+      window.history.back();
+      return;
+    }
+    const url = new URL(window.location.href);
+    url.searchParams.delete("empresa");
+    url.searchParams.delete("media");
+    url.searchParams.delete("evidence");
+    url.hash = "";
+    window.history.replaceState(
+      { vista: url.searchParams.get("vista") || "home" },
+      "",
+      url,
+    );
+  }, []);
+  const dismissCompanyInPlace = useCallback(() => {
     setActive(null);
     setLightbox(null);
     const url = new URL(window.location.href);
@@ -697,7 +743,11 @@ export default function Portal() {
     url.searchParams.delete("media");
     url.searchParams.delete("evidence");
     url.hash = "";
-    window.history.replaceState({}, "", url);
+    window.history.replaceState(
+      { vista: url.searchParams.get("vista") || "home" },
+      "",
+      url,
+    );
   }, []);
   const shareCompany = useCallback(async () => {
     try {
@@ -723,18 +773,37 @@ export default function Portal() {
     url.searchParams.delete("evidence");
     url.searchParams.set(source === "funnel" ? "evidence" : "media", String(index + 1));
     window.history.pushState(
-      { empresa: company.id, media: media.file, source },
+      {
+        ...window.history.state,
+        rvModal: "media",
+        empresa: company.id,
+        media: media.file,
+        source,
+      },
       "",
       url,
     );
   }, []);
   const closeMedia = useCallback(() => {
     setLightbox(null);
+    if (window.history.state?.rvModal === "media") {
+      window.history.back();
+      return;
+    }
     const url = new URL(window.location.href);
     url.searchParams.delete("media");
     url.searchParams.delete("evidence");
     if (!active) url.searchParams.delete("empresa");
-    window.history.replaceState(active ? { empresa: active.id } : {}, "", url);
+    window.history.replaceState(
+      active
+        ? {
+            vista: url.searchParams.get("vista") || "home",
+            empresa: active.id,
+          }
+        : { vista: url.searchParams.get("vista") || "home" },
+      "",
+      url,
+    );
   }, [active]);
 
   const clearCompanyFilters = () => {
@@ -782,7 +851,12 @@ export default function Portal() {
         url.searchParams.delete("evidence");
         url.searchParams.set(current.source === "funnel" ? "evidence" : "media", String(next + 1));
         window.history.replaceState(
-          { empresa: current.company.id, media: nextMedia.file, source: current.source },
+          {
+            ...window.history.state,
+            empresa: current.company.id,
+            media: nextMedia.file,
+            source: current.source,
+          },
           "",
           url,
         );
@@ -849,7 +923,11 @@ export default function Portal() {
         });
       } else if (company && Number.isInteger(evidenceIndex) && evidenceIndex >= 0) {
         fetch(`/data/funnel-v3/records/${company.id}.json`)
-          .then((response) => (response.ok ? response.json() : null))
+          .then((response) =>
+            response.ok
+              ? (response.json() as Promise<FunnelV3Review>)
+              : null,
+          )
           .then((review: FunnelV3Review | null) => {
             if (!review) return setLightbox(null);
             const collection = funnelScreenshotMedia(review);
@@ -911,7 +989,7 @@ export default function Portal() {
       </main>
     );
 
-  const auditedPriceRecords = v3Index?.insights.commercialSignals.recordsWithNumericPublicPrice
+  const auditedPriceRecords = v3Index?.insights?.commercialSignals.recordsWithNumericPublicPrice
     ?? summary.priceCoverage?.commercialAuditV3.records
     ?? summary.publicPrices;
   const auditedPricePercent = summary.priceCoverage?.commercialAuditV3.percent
@@ -2240,7 +2318,7 @@ export default function Portal() {
           onShare={shareCompany}
           onLocate={() => {
             const selectedCompany = active;
-            closeCompany();
+            dismissCompanyInPlace();
             go("map");
             setFocusCountry(
               selectedCompany.location?.canonicalMarket ||
