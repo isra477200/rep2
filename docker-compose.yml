@@ -1,8 +1,7 @@
 services:
   redvitalia-radar:
-    build:
-      context: https://github.com/isra477200/rep2.git#a60507cf884798bc313a8857d6e65ab31b963b28
-      dockerfile: Dockerfile
+    image: ghcr.io/isra477200/redvitalia-radar:latest
+    pull_policy: always
     restart: unless-stopped
     expose:
       - "3000"
