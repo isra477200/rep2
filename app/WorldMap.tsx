@@ -36,6 +36,7 @@ export default function WorldMap({
   geo,
   logos,
   focusCountry,
+  focusCompanyId,
   onOpen,
 }: {
   companies: Company[];
@@ -43,6 +44,7 @@ export default function WorldMap({
   geo: CountryGeo[];
   logos: LogoManifest;
   focusCountry: string | null;
+  focusCompanyId: string | null;
   onOpen: (company: Company) => void;
 }) {
   const mapNode = useRef<HTMLDivElement>(null);
@@ -235,7 +237,13 @@ export default function WorldMap({
       const clusterId = Number(feature.properties?.cluster_id);
       const source = map.getSource("company-locations") as GeoJSONSource;
       const zoom = await source.getClusterExpansionZoom(clusterId);
-      map.easeTo({ center: feature.geometry.coordinates as [number, number], zoom: Math.min(zoom, 13), pitch: 48, duration: 1300 });
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      map.easeTo({
+        center: feature.geometry.coordinates as [number, number],
+        zoom: Math.min(zoom, 13),
+        pitch: reduced ? 0 : 48,
+        duration: reduced ? 0 : 1300,
+      });
     });
     map.on("click", "company-points", (event: MapLayerMouseEvent) => {
       const id = String(event.features?.[0]?.properties?.id || "");
@@ -261,10 +269,21 @@ export default function WorldMap({
     return () => window.cancelAnimationFrame(frame);
   }, [focusCountry, flyToCountry, geoByName]);
 
+  useEffect(() => {
+    if (!focusCompanyId || status === "loading") return;
+    const company = companyById.get(focusCompanyId);
+    if (!company) return;
+    const frame = window.requestAnimationFrame(() => {
+      flyToCompany(company);
+      mapNode.current?.focus({ preventScroll: true });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [companyById, flyToCompany, focusCompanyId, status]);
+
   return (
     <section className="world-map-shell" aria-label="Mapa mundial de competidores y precisión de ubicación">
       <div className="world-map-stage">
-        <div ref={mapNode} className={`world-map-canvas${status === "fallback" ? " map-hidden" : ""}`} aria-label="Globo 3D interactivo con 709 competidores localizables" />
+        <div ref={mapNode} tabIndex={-1} className={`world-map-canvas${status === "fallback" ? " map-hidden" : ""}`} aria-label="Globo 3D interactivo con 709 competidores localizables" />
         {status === "loading" && <div className="map-loading"><span /><b>Preparando el globo 3D…</b><small>Cargando puntos y precisión verificada</small></div>}
         {status === "fallback" && <div className="map-fallback" role="status"><b>La vista 3D no está disponible en este dispositivo</b><p>La lista lateral conserva las 712 fichas y abre la misma información.</p></div>}
         <div className="map-legend" aria-label="Leyenda de precisión">
@@ -274,7 +293,10 @@ export default function WorldMap({
           <span><i className="cluster" /> Agrupación</span>
           <small>Ningún punto se presenta como sede central confirmada.</small>
         </div>
-        <button className="map-reset" onClick={() => mapRef.current?.flyTo({ center: [2, 18], zoom: 1.22, pitch: 8, bearing: 0, duration: 1200 })}>Ver mundo completo</button>
+        <button className="map-reset" onClick={() => {
+          const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          mapRef.current?.flyTo({ center: [2, 18], zoom: 1.22, pitch: reduced ? 0 : 8, bearing: 0, duration: reduced ? 0 : 1200 });
+        }}>Ver mundo completo</button>
       </div>
 
       <aside className="map-panel">

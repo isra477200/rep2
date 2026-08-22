@@ -114,6 +114,7 @@ const privateIdPattern = new RegExp(privateIds.flatMap((id) => [id, dashedUuid(i
 if (queue.items.length !== 712 || privateIds.length !== 712) throw new Error("La publicación V3 exige una biyección exacta de 712 fichas.");
 
 const rows = [];
+const globallyUniqueEvidenceUrls = new Set();
 const dimensionCounts = Object.fromEntries(DIMENSION_KEYS.map((key) => [key, emptyStatusCounts()]));
 const funnelStageCounts = new Map();
 let recordsWithNumericPublicPrice = 0;
@@ -163,6 +164,12 @@ for (const item of queue.items) {
   delete publicReview.qa;
   await writeJsonAtomic(`${OUTPUT_DIR}/${publicId}.json`, publicReview);
   const stats = formStats(publicReview);
+  const recordEvidenceUrls = new Set(
+    (Array.isArray(publicReview.evidence) ? publicReview.evidence : [])
+      .map((source) => safePublicUrl(source?.url))
+      .filter(Boolean),
+  );
+  for (const url of recordEvidenceUrls) globallyUniqueEvidenceUrls.add(url);
   for (const key of DIMENSION_KEYS) addStatus(dimensionCounts[key], publicReview[key]?.status);
   for (const stage of publicReview.funnel || []) {
     if (!funnelStageCounts.has(stage.stage)) funnelStageCounts.set(stage.stage, emptyStatusCounts());
@@ -185,6 +192,7 @@ for (const item of queue.items) {
     fields: stats.fields,
     requiredFields: stats.requiredFields,
     evidence: Array.isArray(publicReview.evidence) ? publicReview.evidence.length : 0,
+    uniqueEvidenceUrls: recordEvidenceUrls.size,
     screenshots: screenshots.length,
     manualEvidence: Boolean(item.manualSources?.length),
     limitations: Array.isArray(publicReview.limitations) ? publicReview.limitations.length : 0,
@@ -204,6 +212,9 @@ const index = {
     forms: rows.reduce((sum, row) => sum + row.forms, 0),
     visibleFields: rows.reduce((sum, row) => sum + row.fields, 0),
     evidence: rows.reduce((sum, row) => sum + row.evidence, 0),
+    evidenceReferences: rows.reduce((sum, row) => sum + row.evidence, 0),
+    uniqueEvidenceUrlsWithinRecords: rows.reduce((sum, row) => sum + row.uniqueEvidenceUrls, 0),
+    uniqueEvidenceUrlsGlobal: globallyUniqueEvidenceUrls.size,
     screenshots: rows.reduce((sum, row) => sum + row.screenshots, 0),
     averageCoverage: Math.round((rows.reduce((sum, row) => sum + row.coveragePercent, 0) / rows.length) * 10) / 10,
   },

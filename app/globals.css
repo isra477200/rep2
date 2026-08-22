@@ -74,3 +74,17 @@ body:has(.record-backdrop){overflow:hidden}
 .price-box small,.brand-coverage>strong small,.record-kpis span,.record-kpis small,.record-trust span,.record-field>span,.analysis-image-note,.funnel-stat-grid span,.funnel-stat-grid small,.funnel-card-head span,.funnel-card dt,.funnel-card-foot span,.deep-overview span,.deep-overview small,.deep-funnel>article>div:last-child>span,.deep-evidence-card small{color:#5d6b64}
 .source-blocked{color:#6b513e}
 .compare-table table{width:100%;border-collapse:collapse}.compare-row>th{text-align:left}.compare-row:not(.header)>th{background:#f5f8f6}.compare-row.header th{font-size:12px}
+
+/* Correcciones finales de legibilidad, foco y movimiento reducido. */
+.analysis-load,.audit-grid p,.brand-coverage p:last-child,.compare-picker button,.compare-row>*,.complete-analysis td,.complete-analysis th,.country-label,.country-summary span,.deep-block>p,.deep-funnel h5,.deep-rv .complete-analysis,.detail-modal>header p,.detail-modal>header>a,.eyebrow,.filterbar>button,.gallery-stats span,.hero-orbit small,.lightbox p,.lightbox-error span,.limitation p,.manual-funnel h5,.map-global button,.map-global summary,.map-panel-head p:last-child,.map-reset,.map-selected-company p:not(.eyebrow),.map-selected-company>.primary-action,.media-tile.document span,.portal-toast,.record-empty,.record-index>a,.record-load-more,.record-trust b,.score,.side-status strong,.source-note,.sources p,.stat-grid small,.v3-message-card p,.v3-strategy h6,.v3-three-columns h6{font-size:11px;line-height:1.45}
+.v3-message-card p{font-size:12px;line-height:1.65}
+.stat-grid small{color:#5d6b64}
+.record-sheet :focus-visible,.global-search:focus-within{outline:3px solid #fff;outline-offset:1px;box-shadow:0 0 0 5px #087b52}
+.maplibregl-canvas:focus{outline:3px solid #fff;outline-offset:-5px;box-shadow:inset 0 0 0 7px #087b52}
+.v3-screenshots>button,.v3-screenshot-unavailable{position:relative;height:250px;padding:0;border:1px solid #d8e5de;border-radius:9px;overflow:hidden;background:#eff4f1}
+.v3-screenshot-unavailable{display:block}
+@media(max-width:620px){.v3-screenshot-unavailable{height:210px}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}

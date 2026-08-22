@@ -229,35 +229,43 @@ function EvidenceScreenshot({
   ) => void;
 }) {
   const [failed, setFailed] = useState(false);
+  if (failed) {
+    return (
+      <div className="v3-screenshot-unavailable">
+        <span className="v3-screenshot-fallback" role="img" aria-label={`${item.label}: imagen no disponible`}>
+          <b>Vista no disponible</b>
+          <small>La evidencia textual y su fuente siguen visibles en la ficha.</small>
+        </span>
+        <span className="v3-screenshot-label">{item.label}</span>
+      </div>
+    );
+  }
   return (
     <button
       type="button"
       aria-label={`Ampliar ${item.label} de ${company.name}`}
-      onClick={() => {
-        if (!failed) {
-          onMediaOpen(
-            { file: item.file, type: item.type, bytes: item.bytes, order: index + 1 },
-            company,
-            collection,
-            "funnel",
-          );
-        }
-      }}
+      onClick={() =>
+        onMediaOpen(
+          {
+            file: item.file,
+            type: item.type,
+            bytes: item.bytes,
+            order: index + 1,
+            label: item.label,
+          },
+          company,
+          collection,
+          "funnel",
+        )
+      }
     >
-      {failed ? (
-        <span className="v3-screenshot-fallback" role="img" aria-label="Imagen no disponible">
-          <b>Vista no disponible</b>
-          <small>La evidencia textual y su fuente siguen visibles en la ficha.</small>
-        </span>
-      ) : (
-        <img
-          src={item.file}
-          alt={`${item.label} de ${company.name}`}
-          loading="lazy"
-          decoding="async"
-          onError={() => setFailed(true)}
-        />
-      )}
+      <img
+        src={item.file}
+        alt={`${item.label} de ${company.name}`}
+        loading="lazy"
+        decoding="async"
+        onError={() => setFailed(true)}
+      />
       <span className="v3-screenshot-label">{item.label}</span>
     </button>
   );
@@ -290,6 +298,7 @@ export default function FunnelV3Panel({
       type: item.type,
       bytes: item.bytes,
       order: index + 1,
+      label: item.label,
     }),
   );
   const allCtas = [

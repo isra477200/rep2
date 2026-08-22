@@ -210,6 +210,7 @@ test("the V3 index totals are recomputed from the published records", async () =
       forms: forms.length,
       fields: forms.reduce((sum, form) => sum + form.visibleFieldCount, 0),
       evidence: record.evidence.length,
+      uniqueEvidenceUrls: new Set(record.evidence.map((row) => row.url).filter(Boolean)).size,
       screenshots: record.evidenceScreenshots.length,
       coverage: record.coveragePercent,
     };
@@ -222,6 +223,9 @@ test("the V3 index totals are recomputed from the published records", async () =
     forms: rows.reduce((sum, row) => sum + row.forms, 0),
     visibleFields: rows.reduce((sum, row) => sum + row.fields, 0),
     evidence: rows.reduce((sum, row) => sum + row.evidence, 0),
+    evidenceReferences: rows.reduce((sum, row) => sum + row.evidence, 0),
+    uniqueEvidenceUrlsWithinRecords: rows.reduce((sum, row) => sum + row.uniqueEvidenceUrls, 0),
+    uniqueEvidenceUrlsGlobal: new Set(records.flatMap((record) => record.evidence.map((row) => row.url).filter(Boolean))).size,
     screenshots: rows.reduce((sum, row) => sum + row.screenshots, 0),
     averageCoverage:
       Math.round(
@@ -229,6 +233,9 @@ test("the V3 index totals are recomputed from the published records", async () =
       ) / 10,
   };
   assert.deepEqual(index.stats, expected);
+  assert.equal(index.stats.evidenceReferences, 15236);
+  assert.equal(index.stats.uniqueEvidenceUrlsWithinRecords, 14803);
+  assert.equal(index.stats.uniqueEvidenceUrlsGlobal, 14542);
 });
 
 test("the global commercial insights reconcile with all 712 published dossiers", async () => {

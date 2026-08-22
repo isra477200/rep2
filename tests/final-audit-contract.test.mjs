@@ -25,6 +25,9 @@ test("the published closure audit satisfies every exact completion condition", a
   assert.equal(finalAudit.totals.publicPricesWithEuroEquivalent, 299);
   assert.equal(finalAudit.totals.companyIndexPricesWithEuroEquivalent, 245);
   assert.equal(finalAudit.totals.funnelV3PricesWithEuroEquivalent, 299);
+  assert.equal(finalAudit.totals.funnelEvidenceReferences, 15236);
+  assert.equal(finalAudit.totals.funnelEvidenceUrlsWithinRecords, 14803);
+  assert.equal(finalAudit.totals.funnelEvidenceLinks, 14542);
   assert.equal(funnelIndex.stats.verified, 712);
   assert.equal(
     finalAudit.totals.mappedRecords + finalAudit.totals.unmappedRecords,

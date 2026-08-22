@@ -259,10 +259,49 @@ const mediaKind = (media: Media) =>
       ? "video"
       : "image";
 
+const isVisibleFocusTarget = (element: HTMLElement) => {
+  if (
+    element.hidden ||
+    element.tabIndex < 0 ||
+    element.matches(":disabled") ||
+    element.getAttribute("aria-disabled") === "true" ||
+    (element instanceof HTMLInputElement && element.type === "hidden") ||
+    element.closest('[hidden], [inert], [aria-hidden="true"]')
+  ) {
+    return false;
+  }
+
+  let ancestor: HTMLElement | null = element;
+  while (ancestor) {
+    if (ancestor instanceof HTMLDetailsElement && !ancestor.open) {
+      const summary = Array.from(ancestor.children).find(
+        (child) => child instanceof HTMLElement && child.tagName === "SUMMARY",
+      );
+      if (!(summary instanceof HTMLElement) || !summary.contains(element)) {
+        return false;
+      }
+    }
+
+    const style = window.getComputedStyle(ancestor);
+    if (
+      style.display === "none" ||
+      style.visibility === "hidden" ||
+      style.visibility === "collapse" ||
+      Number(style.opacity) === 0
+    ) {
+      return false;
+    }
+    ancestor = ancestor.parentElement;
+  }
+
+  return element.getClientRects().length > 0;
+};
+
 export default function RecordDetail({
   company: companySummary,
   logos,
   compared,
+  lightboxOpen,
   onClose,
   onMediaOpen,
   onShare,
@@ -272,6 +311,7 @@ export default function RecordDetail({
   company: Company;
   logos: LogoManifest;
   compared: boolean;
+  lightboxOpen: boolean;
   onClose: () => void;
   onMediaOpen: (
     media: Media,
@@ -355,6 +395,36 @@ export default function RecordDetail({
     if (open) setAnalysisOpen(true);
   };
 
+  const navigateToRecordSection = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+  ) => {
+    const id = event.currentTarget.hash.slice(1);
+    const section = document.getElementById(id);
+    if (
+      !(section instanceof HTMLDetailsElement) ||
+      !contentRef.current?.contains(section)
+    ) {
+      return;
+    }
+
+    section.open = true;
+    if (id === "record-analysis") setAnalysisOpen(true);
+
+    window.requestAnimationFrame(() => {
+      const summary = Array.from(section.children).find(
+        (child) => child instanceof HTMLElement && child.tagName === "SUMMARY",
+      );
+      if (!(summary instanceof HTMLElement)) return;
+      summary.focus({ preventScroll: true });
+      summary.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+        block: "start",
+      });
+    });
+  };
+
   useEffect(() => {
     const id = window.location.hash.slice(1);
     if (!id) return;
@@ -418,8 +488,15 @@ export default function RecordDetail({
 
   useEffect(() => {
     const priorFocus = document.activeElement as HTMLElement | null;
-    const sheet = contentRef.current?.closest(".record-sheet");
     closeRef.current?.focus();
+    return () => {
+      if (priorFocus && document.contains(priorFocus)) priorFocus.focus();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (lightboxOpen) return;
+    const sheet = contentRef.current?.closest(".record-sheet");
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
@@ -429,16 +506,24 @@ export default function RecordDetail({
       if (event.key !== "Tab" || !(sheet instanceof HTMLElement)) return;
       const focusable = Array.from(
         sheet.querySelectorAll<HTMLElement>(
-          'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+          'a[href], button:not([disabled]), summary, input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), video[controls], audio[controls], [contenteditable="true"], [tabindex]:not([tabindex="-1"])',
         ),
-      ).filter((element) => !element.hasAttribute("hidden"));
+      ).filter(isVisibleFocusTarget);
       if (!focusable.length) return;
       const first = focusable[0];
       const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
+      const activeElement = document.activeElement;
+      if (
+        !(activeElement instanceof HTMLElement) ||
+        !sheet.contains(activeElement) ||
+        !focusable.includes(activeElement)
+      ) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      } else if (event.shiftKey && activeElement === first) {
         event.preventDefault();
         last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
+      } else if (!event.shiftKey && activeElement === last) {
         event.preventDefault();
         first.focus();
       }
@@ -446,20 +531,23 @@ export default function RecordDetail({
     document.addEventListener("keydown", onKeyDown);
     return () => {
       document.removeEventListener("keydown", onKeyDown);
-      priorFocus?.focus();
     };
-  }, [onClose]);
+  }, [lightboxOpen, onClose]);
 
   return (
     <div
       className="record-backdrop"
       role="presentation"
-      onMouseDown={(event) => event.target === event.currentTarget && onClose()}
+      aria-hidden={lightboxOpen ? true : undefined}
+      inert={lightboxOpen ? true : undefined}
+      onMouseDown={(event) =>
+        !lightboxOpen && event.target === event.currentTarget && onClose()
+      }
     >
       <article
         className="record-sheet"
         role="dialog"
-        aria-modal="true"
+        aria-modal={lightboxOpen ? undefined : true}
         aria-label={`Ficha completa de ${company.name}`}
       >
         <button
@@ -496,6 +584,7 @@ export default function RecordDetail({
             <button onClick={onShare}>Copiar enlace</button>
             <button
               className={compared ? "is-compared" : ""}
+              aria-pressed={compared}
               onClick={onCompare}
             >
               {compared ? "✓ En comparación" : "Añadir a comparar"}
@@ -540,16 +629,36 @@ export default function RecordDetail({
         <div className="record-layout">
           <aside className="record-index">
             <p className="eyebrow">FICHA MADRE COMPLETA</p>
-            <a href="#record-identity">Identidad</a>
-            <a href="#record-offer">Oferta</a>
-            <a href="#record-price">Precio y contrato</a>
-            <a href="#record-acquisition">Captación</a>
-            <a href="#record-forensics-v3">Auditoría comercial profunda</a>
-            <a href="#record-forensics">Trazabilidad previa</a>
-            <a href="#record-position">Lectura RedVitalia</a>
-            <a href="#record-media">Galería</a>
-            <a href="#record-analysis">Dossier íntegro</a>
-            <a href="#record-sources">Fuentes</a>
+            <a href="#record-identity" onClick={navigateToRecordSection}>
+              Identidad
+            </a>
+            <a href="#record-offer" onClick={navigateToRecordSection}>
+              Oferta
+            </a>
+            <a href="#record-price" onClick={navigateToRecordSection}>
+              Precio y contrato
+            </a>
+            <a href="#record-acquisition" onClick={navigateToRecordSection}>
+              Captación
+            </a>
+            <a href="#record-forensics-v3" onClick={navigateToRecordSection}>
+              Auditoría comercial profunda
+            </a>
+            <a href="#record-forensics" onClick={navigateToRecordSection}>
+              Trazabilidad previa
+            </a>
+            <a href="#record-position" onClick={navigateToRecordSection}>
+              Lectura RedVitalia
+            </a>
+            <a href="#record-media" onClick={navigateToRecordSection}>
+              Galería
+            </a>
+            <a href="#record-analysis" onClick={navigateToRecordSection}>
+              Dossier íntegro
+            </a>
+            <a href="#record-sources" onClick={navigateToRecordSection}>
+              Fuentes
+            </a>
             <div className="record-trust">
               <b>{value(company.evidence)}</b>
               <span>Revisión: {company.reviewedAt || "fecha no indicada"}</span>

@@ -4,6 +4,7 @@
 import {
   lazy,
   Suspense,
+  type KeyboardEvent as ReactKeyboardEvent,
   useCallback,
   useEffect,
   useMemo,
@@ -81,12 +82,23 @@ const fmt = (n: number) => new Intl.NumberFormat("es-ES").format(n);
 const short = (s: string, n = 170) =>
   s.length > n ? s.slice(0, n).replace(/\s+\S*$/, "") + "…" : s;
 const funnelScreenshotMedia = (review: FunnelV3Review): Media[] =>
-  (review.evidenceScreenshots || []).map((item, index) => ({
-    file: item.file,
-    type: item.type,
-    bytes: item.bytes,
-    order: index + 1,
-  }));
+  (review.evidenceScreenshots || []).map((item, index) => {
+    const screenshot = item as typeof item & { title?: string };
+    return {
+      file: screenshot.file,
+      type: screenshot.type,
+      bytes: screenshot.bytes,
+      order: index + 1,
+      label: screenshot.label,
+      title: screenshot.title || screenshot.label,
+    };
+  });
+
+const editorialTabs: Array<{ id: keyof Editorial; label: string }> = [
+  { id: "blueprint", label: "Blueprint" },
+  { id: "execution", label: "Sistema operativo" },
+  { id: "report", label: "Informe estratégico" },
+];
 
 const editorialMarkdownSchema = {
   ...defaultSchema,
@@ -331,6 +343,7 @@ function CompanyCard({
         <button
           className={selected ? "compare-on" : ""}
           onClick={onCompare}
+          aria-pressed={selected}
           aria-label={
             selected ? "Quitar del comparador" : "Añadir al comparador"
           }
@@ -377,7 +390,11 @@ export default function Portal() {
     [error, setError] = useState(""),
     [failedLightboxFile, setFailedLightboxFile] = useState<string | null>(null),
     [focusCountry, setFocusCountry] = useState<string | null>(null),
+    [focusCompanyId, setFocusCompanyId] = useState<string | null>(null),
     [toast, setToast] = useState("");
+  const editorialTabRefs = useRef<
+    Partial<Record<keyof Editorial, HTMLButtonElement | null>>
+  >({});
   const [measuredImageDimensions, setMeasuredImageDimensions] = useState<
     Record<string, MediaDimensions>
   >({});
@@ -631,6 +648,10 @@ export default function Portal() {
   }, [companyById, country, funnelCapture, funnelStatus, query, scope, v3Index]);
   const top = companies.slice(0, 4);
   const go = (v: View) => {
+    if (v === "map") {
+      setFocusCountry(null);
+      setFocusCompanyId(null);
+    }
     setView(v);
     const url = new URL(window.location.href);
     if (v === "home") url.searchParams.delete("vista");
@@ -676,7 +697,7 @@ export default function Portal() {
     url.searchParams.delete("media");
     url.searchParams.delete("evidence");
     url.hash = "";
-    window.history.pushState({}, "", url);
+    window.history.replaceState({}, "", url);
   }, []);
   const shareCompany = useCallback(async () => {
     try {
@@ -713,8 +734,37 @@ export default function Portal() {
     url.searchParams.delete("media");
     url.searchParams.delete("evidence");
     if (!active) url.searchParams.delete("empresa");
-    window.history.pushState(active ? { empresa: active.id } : {}, "", url);
+    window.history.replaceState(active ? { empresa: active.id } : {}, "", url);
   }, [active]);
+
+  const clearCompanyFilters = () => {
+    setScope("Todos");
+    setCountry("Todos");
+    setChannel("Todos");
+    setPriceOnly(false);
+    setQuery("");
+    setVisible(24);
+  };
+
+  const handleEditorialTabKeyDown = (
+    event: ReactKeyboardEvent<HTMLButtonElement>,
+    currentTab: keyof Editorial,
+  ) => {
+    const currentIndex = editorialTabs.findIndex((tab) => tab.id === currentTab);
+    let nextIndex = currentIndex;
+    if (event.key === "ArrowRight")
+      nextIndex = (currentIndex + 1) % editorialTabs.length;
+    else if (event.key === "ArrowLeft")
+      nextIndex = (currentIndex - 1 + editorialTabs.length) % editorialTabs.length;
+    else if (event.key === "Home") nextIndex = 0;
+    else if (event.key === "End") nextIndex = editorialTabs.length - 1;
+    else return;
+
+    event.preventDefault();
+    const nextTab = editorialTabs[nextIndex].id;
+    setEditorialTab(nextTab);
+    window.requestAnimationFrame(() => editorialTabRefs.current[nextTab]?.focus());
+  };
   const stepLightbox = useCallback(
     (direction: number) =>
       setLightbox((current) => {
@@ -833,6 +883,17 @@ export default function Portal() {
           null
       : null,
   );
+  const lightboxMediaCaption = lightbox
+    ? Array.from(
+        new Set(
+          [lightbox.media.title, lightbox.media.label]
+            .filter(
+              (value): value is string => Boolean(value && value.trim()),
+            )
+            .map((value) => value.trim()),
+        ),
+      ).join(" · ")
+    : "";
 
   if (loading)
     return (
@@ -897,8 +958,17 @@ export default function Portal() {
             <input
               value={query}
               onChange={(e) => {
-                setQuery(e.target.value);
-                if (e.target.value && view === "home") setView("companies");
+                const nextQuery = e.target.value;
+                setQuery(nextQuery);
+                if (
+                  nextQuery &&
+                  !(["companies", "funnels", "ads", "compare"] as View[]).includes(
+                    view,
+                  )
+                ) {
+                  go("companies");
+                  setToast("Búsqueda abierta en Empresas");
+                }
               }}
               placeholder="Busca empresa, país, modelo, canal o precio…"
               aria-label="Buscar en toda la investigación"
@@ -957,9 +1027,16 @@ export default function Portal() {
                 <small>Imágenes, vídeo y documentos</small>
               </article>
               <article>
-                <span>FUENTES PÚBLICAS</span>
-                <strong>{fmt(summary.sources)}</strong>
-                <small>Sin enlaces privados</small>
+                <span>URLS PÚBLICAS ÚNICAS</span>
+                <strong>
+                  {fmt(v3Index?.stats.uniqueEvidenceUrlsGlobal ?? summary.sources)}
+                </strong>
+                <small>
+                  {fmt(v3Index?.stats.evidenceReferences ?? 0)} referencias
+                  analíticas ·{" "}
+                  {fmt(v3Index?.stats.uniqueEvidenceUrlsWithinRecords ?? 0)}
+                  {" "}únicas por ficha
+                </small>
               </article>
               <article>
                 <span>PRECIOS AUDITADOS · LOCAL + EUR</span>
@@ -1109,15 +1186,7 @@ export default function Portal() {
                 />{" "}
                 Solo precio convertible
               </label>
-              <button
-                onClick={() => {
-                  setScope("Todos");
-                  setCountry("Todos");
-                  setChannel("Todos");
-                  setPriceOnly(false);
-                  setQuery("");
-                }}
-              >
+              <button onClick={clearCompanyFilters}>
                 Limpiar
               </button>
             </section>
@@ -1182,9 +1251,11 @@ export default function Portal() {
                         <small>del recorrido comercial públicamente observable</small>
                       </article>
                       <article>
-                        <span>EVIDENCIAS</span>
-                        <strong>{fmt(v3Index.stats.evidence)}</strong>
-                        <small>{fmt(v3Index.stats.screenshots)} capturas verificadas</small>
+                        <span>URLS PÚBLICAS ÚNICAS</span>
+                        <strong>{fmt(v3Index.stats.uniqueEvidenceUrlsGlobal)}</strong>
+                        <small>
+                          {fmt(v3Index.stats.evidenceReferences)} referencias analíticas · {fmt(v3Index.stats.uniqueEvidenceUrlsWithinRecords)} URLs únicas por ficha
+                        </small>
                       </article>
                       <article>
                         <span>FORMULARIOS</span>
@@ -1460,7 +1531,7 @@ export default function Portal() {
                             <div>
                               <dt>Trazabilidad</dt>
                               <dd>
-                                {intel.evidence} evidencias · {intel.screenshots} capturas · {intel.limitations} límites
+                                {intel.uniqueEvidenceUrls} URLs únicas · {intel.evidence} referencias · {intel.screenshots} capturas · {intel.limitations} límites
                               </dd>
                             </div>
                           </dl>
@@ -1573,6 +1644,7 @@ export default function Portal() {
                 geo={geo}
                 logos={logos}
                 focusCountry={focusCountry}
+                focusCompanyId={focusCompanyId}
                 onOpen={openCompany}
               />
             </Suspense>
@@ -1656,7 +1728,7 @@ export default function Portal() {
                 <b>{fmt(summary.withMedia)}</b> empresas con galería
               </span>
               <span>
-                <b>{fmt(summary.media)}</b> archivos legibles
+                <b>{fmt(summary.media)}</b> archivos disponibles y verificados
               </span>
               <span>
                 <b>{fmt(summary.mediaFileTypeCorrections)}</b> formatos
@@ -1721,12 +1793,98 @@ export default function Portal() {
                 cargado tres referentes para empezar.
               </p>
             </section>
-            <div className="compare-picker">
+            <section className="filterbar" aria-label="Filtros del comparador">
+              <label>
+                Modelo
+                <select value={scope} onChange={(event) => setScope(event.target.value)}>
+                  {scopes.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                País / mercado
+                <select
+                  value={country}
+                  onChange={(event) => setCountry(event.target.value)}
+                >
+                  <option>Todos</option>
+                  {countryOptions.map((item) => (
+                    <option key={item.name} value={item.name}>
+                      {item.name} · {item.count}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Canal
+                <select
+                  value={channel}
+                  onChange={(event) => setChannel(event.target.value)}
+                >
+                  {channels.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="check">
+                <input
+                  type="checkbox"
+                  checked={priceOnly}
+                  onChange={(event) => setPriceOnly(event.target.checked)}
+                />{" "}
+                Solo precio convertible
+              </label>
+              <button onClick={clearCompanyFilters}>Limpiar filtros</button>
+            </section>
+            {(query ||
+              scope !== "Todos" ||
+              country !== "Todos" ||
+              channel !== "Todos" ||
+              priceOnly) && (
+              <div
+                className="compare-picker"
+                role="group"
+                aria-label="Filtros activos; pulsa uno para quitarlo"
+              >
+                {query && (
+                  <button onClick={() => setQuery("")} aria-label={`Quitar búsqueda ${query}`}>
+                    Búsqueda: “{query}” ×
+                  </button>
+                )}
+                {scope !== "Todos" && (
+                  <button onClick={() => setScope("Todos")} aria-label="Quitar filtro de modelo">
+                    Modelo: {scopeShort[scope] || scope} ×
+                  </button>
+                )}
+                {country !== "Todos" && (
+                  <button onClick={() => setCountry("Todos")} aria-label="Quitar filtro de país">
+                    País: {country} ×
+                  </button>
+                )}
+                {channel !== "Todos" && (
+                  <button onClick={() => setChannel("Todos")} aria-label="Quitar filtro de canal">
+                    Canal: {channel} ×
+                  </button>
+                )}
+                {priceOnly && (
+                  <button onClick={() => setPriceOnly(false)} aria-label="Quitar filtro de precio">
+                    Precio convertible ×
+                  </button>
+                )}
+              </div>
+            )}
+            <div className="result-line" aria-live="polite">
+              <strong>{fmt(filtered.length)} empresas disponibles</strong>
+              <span>{compare.length} de 4 seleccionadas</span>
+            </div>
+            <div className="compare-picker" aria-label="Empresas disponibles para comparar">
               {filtered.slice(0, 80).map((c) => (
                 <button
                   key={c.id}
                   className={compare.includes(c.id) ? "selected" : ""}
                   onClick={() => toggleCompare(c.id)}
+                  aria-pressed={compare.includes(c.id)}
                 >
                   {compare.includes(c.id) ? "✓ " : ""}
                   {c.name}
@@ -1817,42 +1975,46 @@ export default function Portal() {
               </p>
             </section>
             <div className="editorial-tabs" role="tablist" aria-label="Documentos estratégicos">
-              <button
-                role="tab"
-                aria-selected={editorialTab === "blueprint"}
-                className={editorialTab === "blueprint" ? "active" : ""}
-                onClick={() => setEditorialTab("blueprint")}
-              >
-                Blueprint
-              </button>
-              <button
-                role="tab"
-                aria-selected={editorialTab === "execution"}
-                className={editorialTab === "execution" ? "active" : ""}
-                onClick={() => setEditorialTab("execution")}
-              >
-                Sistema operativo
-              </button>
-              <button
-                role="tab"
-                aria-selected={editorialTab === "report"}
-                className={editorialTab === "report" ? "active" : ""}
-                onClick={() => setEditorialTab("report")}
-              >
-                Informe estratégico
-              </button>
+              {editorialTabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  ref={(element) => {
+                    editorialTabRefs.current[tab.id] = element;
+                  }}
+                  id={`editorial-tab-${tab.id}`}
+                  role="tab"
+                  aria-controls={`editorial-panel-${tab.id}`}
+                  aria-selected={editorialTab === tab.id}
+                  tabIndex={editorialTab === tab.id ? 0 : -1}
+                  className={editorialTab === tab.id ? "active" : ""}
+                  onClick={() => setEditorialTab(tab.id)}
+                  onKeyDown={(event) => handleEditorialTabKeyDown(event, tab.id)}
+                >
+                  {tab.label}
+                </button>
+              ))}
             </div>
-            <article className="editorial-paper">
-              <div className="paper-title">
-                <span>REDVITALIA · 22/08/2026</span>
-                <h2>{editorial[editorialTab].title}</h2>
-              </div>
-              <EditorialText
-                text={editorial[editorialTab].body}
-                companyById={companyById}
-                onOpen={openCompany}
-              />
-            </article>
+            {editorialTabs.map((tab) => (
+              <article
+                key={tab.id}
+                id={`editorial-panel-${tab.id}`}
+                className="editorial-paper"
+                role="tabpanel"
+                aria-labelledby={`editorial-tab-${tab.id}`}
+                tabIndex={0}
+                hidden={editorialTab !== tab.id}
+              >
+                <div className="paper-title">
+                  <span>REDVITALIA · 22/08/2026</span>
+                  <h2>{editorial[tab.id].title}</h2>
+                </div>
+                <EditorialText
+                  text={editorial[tab.id].body}
+                  companyById={companyById}
+                  onOpen={openCompany}
+                />
+              </article>
+            ))}
           </div>
         )}
 
@@ -1873,7 +2035,7 @@ export default function Portal() {
                 <p>Empresas canónicas y Estados auditados.</p>
               </article>
               <article>
-                <span>MEDIOS LEGIBLES</span>
+                <span>MEDIOS VERIFICADOS</span>
                 <strong>
                   {fmt(summary.media)} /{" "}
                   {fmt(
@@ -1895,9 +2057,17 @@ export default function Portal() {
                 </p>
               </article>
               <article>
-                <span>FUENTES</span>
-                <strong>{fmt(summary.sources)}</strong>
-                <p>URLs públicas únicas conservadas.</p>
+                <span>URLS ÚNICAS DE FUNNEL</span>
+                <strong>
+                  {fmt(v3Index?.stats.uniqueEvidenceUrlsGlobal ?? summary.sources)}
+                </strong>
+                <p>
+                  {fmt(v3Index?.stats.evidenceReferences ?? 0)} referencias
+                  analíticas y{" "}
+                  {fmt(v3Index?.stats.uniqueEvidenceUrlsWithinRecords ?? 0)} URLs
+                  únicas al deduplicar cada ficha. El índice empresarial conserva
+                  por separado {fmt(summary.sources)} fuentes canónicas.
+                </p>
               </article>
               <article>
                 <span>MARCAS AUTÉNTICAS</span>
@@ -2029,7 +2199,8 @@ export default function Portal() {
                 de galería verificadas
               </span>
               <span>
-                <b>{fmt(v3Index?.stats.evidence || 0)}</b> evidencias de funnel
+                <b>{fmt(v3Index?.stats.uniqueEvidenceUrlsGlobal || 0)}</b> URLs públicas
+                únicas de funnel
               </span>
               <span>
                 <b>{fmt(v3Index?.stats.screenshots || 0)}</b> capturas de funnel
@@ -2063,14 +2234,19 @@ export default function Portal() {
           company={active}
           logos={logos}
           compared={compare.includes(active.id)}
+          lightboxOpen={lightboxOpen}
           onClose={closeCompany}
           onMediaOpen={openMedia}
           onShare={shareCompany}
           onLocate={() => {
-            setFocusCountry(active.location?.canonicalMarket || active.primaryCountry);
-            setView("map");
+            const selectedCompany = active;
             closeCompany();
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            go("map");
+            setFocusCountry(
+              selectedCompany.location?.canonicalMarket ||
+                selectedCompany.primaryCountry,
+            );
+            setFocusCompanyId(selectedCompany.id);
           }}
           onCompare={() => toggleCompare(active.id)}
         />
@@ -2175,7 +2351,8 @@ export default function Portal() {
               file={lightbox.media.file}
             />
             <p id="lightbox-caption">
-              {lightbox.company.name} · material{" "}
+              {lightbox.company.name} ·{" "}
+              {lightboxMediaCaption || "Material verificado"} ·{" "}
               {lightbox.collection.findIndex(
                 (item) => item.file === lightbox.media.file,
               ) + 1}{" "}

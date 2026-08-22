@@ -34,7 +34,8 @@
 
 .insight-bars span,
 .insight-bars strong {
-  font-size: 9px;
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 .insight-bars strong { text-align: right; }
@@ -69,12 +70,13 @@
 
 .stage-observability span,
 .stage-observability strong {
-  font-size: 8px;
+  font-size: 11px;
+  line-height: 1.4;
   color: #607067;
 }
 
 .stage-observability strong { text-align: right; }
-.stage-observability p { margin: 0; font-size: 9px; line-height: 1.25; }
+.stage-observability p { margin: 0; font-size: 11px; line-height: 1.4; }
 
 .signal-ledger {
   display: grid;
@@ -92,9 +94,9 @@
   background: #f4f8f6;
 }
 
-.signal-ledger dt { font-size: 9px; color: #596a61; }
+.signal-ledger dt { font-size: 11px; line-height: 1.4; color: #596a61; }
 .signal-ledger dd { margin: 0; font-size: 17px; font-weight: 850; color: #0b6f4b; }
-.insight-note { margin: 14px 0 0; font-size: 9px; line-height: 1.55; color: #718078; }
+.insight-note { margin: 14px 0 0; font-size: 11px; line-height: 1.55; color: #5d6b64; }
 
 @media (max-width: 1180px) {
   .market-insight-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

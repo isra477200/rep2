@@ -5,6 +5,8 @@ export type Media = {
   order: number;
   width?: number | null;
   height?: number | null;
+  label?: string;
+  title?: string;
 };
 export type Price = {
   currency: string | null;
@@ -459,6 +461,7 @@ export type FunnelV3IndexItem = {
   fields: number;
   requiredFields: number;
   evidence: number;
+  uniqueEvidenceUrls: number;
   screenshots: number;
   manualEvidence: boolean;
   limitations: number;
@@ -473,6 +476,9 @@ export type FunnelV3Index = {
     forms: number;
     visibleFields: number;
     evidence: number;
+    evidenceReferences: number;
+    uniqueEvidenceUrlsWithinRecords: number;
+    uniqueEvidenceUrlsGlobal: number;
     screenshots: number;
     averageCoverage: number;
   };

@@ -27,7 +27,7 @@
 .completion-panel h2 { margin: 0; font-size: 30px; letter-spacing: -.04em; }
 .completion-panel > div > p:last-child { margin: 7px 0 0; color: #9fc1b1; font-size: 11px; line-height: 1.5; }
 .completion-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.completion-kpis span { padding: 12px; border: 1px solid #315345; border-radius: 9px; background: #17362b; color: #a8cabc; font-size: 9px; }
+.completion-kpis span { padding: 12px; border: 1px solid #315345; border-radius: 9px; background: #17362b; color: #a8cabc; font-size: 11px; line-height: 1.4; }
 .completion-kpis b { display: block; color: #fff; font-size: 21px; margin-bottom: 2px; }
 .completion-panel > .audit-banner {
   grid-column: 1 / -1;
@@ -51,7 +51,7 @@
 .more-sources { margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
 .more-sources summary { cursor: pointer; color: var(--green); font-size: 11px; font-weight: 750; }
 .more-sources .source-links { max-height: 260px; overflow: auto; padding-right: 4px; }
-.more-sources a { padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; text-decoration: none; font-size: 9px; color: var(--green); }
+.more-sources a { padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; text-decoration: none; font-size: 11px; line-height: 1.4; color: var(--green); }
 
 @media (max-width: 1050px) {
   .completion-panel { grid-template-columns: auto 1fr; }

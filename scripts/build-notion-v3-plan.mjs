@@ -178,10 +178,18 @@ function funnelTable(review) {
 }
 
 function evidenceBlocks(review) {
-  const links = (review.evidence || []).map((source, index) => {
+  const byUrl = new Map();
+  for (const source of review.evidence || []) {
     const url = safeUrl(source.url);
-    return url ? `[E${String(index + 1).padStart(3, "0")} · ${escapeRich(truncate(source.title || source.sourceType || "Fuente pública", 150))}](${url})` : null;
-  }).filter(Boolean);
+    if (!url) continue;
+    if (!byUrl.has(url)) byUrl.set(url, new Set());
+    byUrl.get(url).add(escapeRich(truncate(source.title || source.sourceType || "Fuente pública", 110)));
+  }
+  const links = [...byUrl.entries()].map(([url, titles], index) => {
+    const labels = [...titles];
+    const label = `${labels.slice(0, 2).join(" · ")}${labels.length > 2 ? ` · +${labels.length - 2} lecturas` : ""}`;
+    return `[E${String(index + 1).padStart(3, "0")} · ${label}](${url})`;
+  });
   if (!links.length) return "- No hay una URL pública utilizable; la limitación está explicada.";
   const chunks = [];
   for (let index = 0; index < links.length; index += 8) chunks.push(`- ${links.slice(index, index + 8).join(" · ")}`);
@@ -199,6 +207,8 @@ function section(review, item, publicId, digest, screenshots) {
   const jsonUrl = `${PUBLIC_BASE}/data/funnel-v3/records/${encodeURIComponent(publicId)}.json`;
   const marker = `REDVITALIA-AUDITORIA:${digest}`;
   const message = review.messageArchitecture || {};
+  const evidenceReferences = Array.isArray(review.evidence) ? review.evidence.length : 0;
+  const uniqueEvidenceUrls = new Set((review.evidence || []).map((source) => safeUrl(source.url)).filter(Boolean)).size;
   const content = `## 🧠 Auditoría comercial profunda · RedVitalia
 <callout icon="🧭" color="green_bg">
 \t**Estado:** ${escapeRich(review.status)} · **Cobertura pública:** ${Number(review.coveragePercent || 0)}% · **Revisión:** ${escapeRich(review.reviewedAt || "2026-08-22")}
@@ -257,6 +267,7 @@ ${bullets(review.deliveryOperations, "La operación privada no es observable sin
 ### 9. Lectura accionable para RedVitalia
 ${bullets(review.competitiveAssessment, "No procede una recomendación sin evidencia suficiente.", 90)}
 ### 10. Evidencias públicas y capturas verificadas
+**Cobertura:** ${uniqueEvidenceUrls} URL(s) pública(s) única(s) en esta ficha, procedentes de ${evidenceReferences} referencia(s) analítica(s). Las repeticiones exactas se agrupan sin eliminar sus lecturas del expediente JSON.
 ${evidenceBlocks(review)}
 ${imageBlocks(publicId, screenshots)}
 ### 11. Limitaciones explícitas
@@ -307,7 +318,7 @@ for (const item of queue.items) {
       "Formularios observados": built.stats.forms.length,
       "Campos visibles observados": built.stats.fields,
       "Campos obligatorios observados": built.stats.required,
-      "Evidencias verificadas": Number(review.evidence?.length || 0),
+      "Evidencias verificadas": new Set((review.evidence || []).map((source) => safeUrl(source.url)).filter(Boolean)).size,
       "Capturas del embudo": screenshots,
       "Tono y lenguaje comercial": voiceSummary(review),
       "Fricción de conversión": frictionSummary(review, built.stats),
