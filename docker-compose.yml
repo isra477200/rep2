@@ -7,10 +7,10 @@ services:
       - "3000"
     labels:
       - traefik.enable=true
-      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_PROJECT_NAME}.${TRAEFIK_HOST}`)
-      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.entrypoints=websecure
-      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls.certresolver=letsencrypt
-      - traefik.http.services.${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=3000
+      - traefik.http.routers.redvitalia.rule=Host(`redvitalia.srv1480016.hstgr.cloud`)
+      - traefik.http.routers.redvitalia.entrypoints=websecure
+      - traefik.http.routers.redvitalia.tls.certresolver=letsencrypt
+      - traefik.http.services.redvitalia.loadbalancer.server.port=3000
     mem_limit: 768m
     cpus: 1.0
     security_opt:
