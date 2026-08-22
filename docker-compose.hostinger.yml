@@ -1,7 +1,7 @@
 services:
   redvitalia-radar:
     build:
-      context: .
+      context: https://github.com/isra477200/rep2.git#a60507cf884798bc313a8857d6e65ab31b963b28
       dockerfile: Dockerfile
     restart: unless-stopped
     expose:
