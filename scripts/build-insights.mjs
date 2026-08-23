@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 /**
- * Genera dos ficheros públicos derivados de la base canónica:
- *  - public/data/insights.json        → conclusiones calculadas sobre las 712 fichas
- *  - public/data/panorama-europa.json → ampliación europea observada (pendiente de ficha completa)
+ * Genera public/data/insights.json → conclusiones calculadas sobre el catálogo único
+ * (fichas madre + fichas en verificación integradas por scripts/integrate-ampliacion.mjs).
  *
- * Fuente de las conclusiones: public/data/companies-index.json (proyección pública canónica).
- * Fuente del panorama: db/panorama-europa-fuente.json (observación de web pública, con fecha).
+ * Fuente: public/data/companies-index.json (proyección pública canónica).
+ * Ejecutar SIEMPRE después de scripts/integrate-ampliacion.mjs.
  *
  * Regla de honestidad: nada se inventa. Todo número sale de contar la base;
  * los métodos referencian fichas reales (el script falla si una referencia no existe).
@@ -16,11 +15,10 @@ import { resolve } from "node:path";
 
 const root = resolve(new URL("..", import.meta.url).pathname);
 const companies = JSON.parse(readFileSync(resolve(root, "public/data/companies-index.json"), "utf8"));
-const panoramaSource = JSON.parse(readFileSync(resolve(root, "db/panorama-europa-fuente.json"), "utf8"));
 
 const OBSERVED_AT = "23/08/2026";
 const byId = new Map(companies.map((c) => [c.id, c]));
-const panoramaByDomain = new Map(panoramaSource.map((p) => [p.domain, p]));
+const byDomain = new Map(companies.map((c) => [(c.domain || "").toLowerCase(), c]));
 
 function ref(id) {
   const c = byId.get(id);
@@ -28,9 +26,9 @@ function ref(id) {
   return { type: "ficha", id, name: c.name, country: c.primaryCountry, score: c.score };
 }
 function pref(domain) {
-  const p = panoramaByDomain.get(domain);
-  if (!p) throw new Error(`Referencia a panorama inexistente: ${domain}`);
-  return { type: "panorama", domain, name: p.name, country: p.country };
+  const c = byDomain.get(domain);
+  if (!c) throw new Error(`Referencia a dominio inexistente en el catálogo: ${domain}`);
+  return { type: "ficha", id: c.id, name: c.name, country: c.primaryCountry, score: c.score };
 }
 
 const text = (c) => `${c.offer || ""} ${c.guarantee || ""} ${c.ticket || ""} ${c.contract || ""}`.toLowerCase();
@@ -199,31 +197,6 @@ const methods = [
   },
 ];
 
-/* ---------- Panorama Europa (saneado para publicación) ---------- */
-const flagByCountry = {
-  "España": "🇪🇸", "Portugal": "🇵🇹", "Francia": "🇫🇷", "Italia": "🇮🇹", "Alemania": "🇩🇪",
-  "Austria": "🇦🇹", "Suiza": "🇨🇭", "Reino Unido": "🇬🇧", "Irlanda": "🇮🇪", "Países Bajos": "🇳🇱",
-  "Bélgica": "🇧🇪", "Suecia": "🇸🇪", "Noruega": "🇳🇴", "Dinamarca": "🇩🇰", "Finlandia": "🇫🇮",
-  "Polonia": "🇵🇱", "Chequia": "🇨🇿", "Rumanía": "🇷🇴", "Hungría": "🇭🇺", "Grecia": "🇬🇷",
-};
-const panorama = panoramaSource
-  .map((p) => ({
-    name: p.name,
-    domain: p.domain,
-    country: p.country,
-    flag: flagByCountry[p.country] || "",
-    model: p.model || "",
-    offer: p.offer || "",
-    publicPrice: p.public_price || "",
-    guarantee: p.guarantee || "",
-    relevance: p.relevance || "",
-    website: `https://${p.domain}`,
-  }))
-  .sort((a, b) => a.country.localeCompare(b.country, "es") || a.name.localeCompare(b.name, "es"));
-const panoramaCountries = [...new Set(panorama.map((p) => p.country))]
-  .map((country) => ({ country, flag: flagByCountry[country] || "", count: panorama.filter((p) => p.country === country).length }))
-  .sort((a, b) => b.count - a.count || a.country.localeCompare(b.country, "es"));
-
 /* ---------- Salida ---------- */
 const insights = {
   generatedAt: OBSERVED_AT,
@@ -242,9 +215,4 @@ const insights = {
   methods,
 };
 writeFileSync(resolve(root, "public/data/insights.json"), JSON.stringify(insights, null, 1));
-writeFileSync(
-  resolve(root, "public/data/panorama-europa.json"),
-  JSON.stringify({ observedAt: OBSERVED_AT, status: "Observación de web pública — pendiente de ficha madre completa", total: panorama.length, countries: panoramaCountries, companies: panorama }, null, 1),
-);
-console.log(`insights.json: ${models.length} modelos · ${priced.length} precios · ${guarantees.length} clases de garantía · ${methods.length} métodos`);
-console.log(`panorama-europa.json: ${panorama.length} empresas en ${panoramaCountries.length} países`);
+console.log(`insights.json: ${companies.length} fichas · ${models.length} modelos · ${priced.length} precios · ${guarantees.length} clases de garantía · ${methods.length} métodos`);

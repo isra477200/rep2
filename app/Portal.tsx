@@ -39,7 +39,6 @@ import type {
   Insights,
   LogoManifest,
   Media,
-  PanoramaData,
   Summary,
 } from "./data-types";
 
@@ -55,7 +54,6 @@ type View =
   | "compare"
   | "insights"
   | "playbooks"
-  | "europa"
   | "blueprint"
   | "audit";
 
@@ -69,7 +67,6 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "compare", label: "Comparador", icon: "⇄" },
   { id: "insights", label: "Conclusiones", icon: "∴" },
   { id: "playbooks", label: "Métodos", icon: "⚙" },
-  { id: "europa", label: "Panorama Europa", icon: "✧" },
   { id: "blueprint", label: "Blueprint", icon: "✦" },
   { id: "audit", label: "Auditoría", icon: "✓" },
 ];
@@ -376,10 +373,7 @@ export default function Portal() {
     [logos, setLogos] = useState<LogoManifest>({}),
     [deepIndex, setDeepIndex] = useState<DeepIndex | null>(null),
     [v3Index, setV3Index] = useState<FunnelV3Index | null>(null),
-    [insights, setInsights] = useState<Insights | null>(null),
-    [panorama, setPanorama] = useState<PanoramaData | null>(null);
-  const [panoramaCountry, setPanoramaCountry] = useState("Todos"),
-    [panoramaQuery, setPanoramaQuery] = useState("");
+    [insights, setInsights] = useState<Insights | null>(null);
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -446,11 +440,8 @@ export default function Portal() {
       fetch("/data/insights.json")
         .then((r) => (r.ok ? (r.json() as Promise<Insights>) : null))
         .catch(() => null),
-      fetch("/data/panorama-europa.json")
-        .then((r) => (r.ok ? (r.json() as Promise<PanoramaData>) : null))
-        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins, pan]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -460,7 +451,6 @@ export default function Portal() {
         setDeepIndex(d);
         setV3Index(v3);
         setInsights(ins);
-        setPanorama(pan);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
@@ -1035,7 +1025,7 @@ export default function Portal() {
             >
               <i>{n.icon}</i>
               <span>{n.label}</span>
-              {n.id === "companies" && <b>712</b>}
+              {n.id === "companies" && <b>{fmt(companies.length)}</b>}
               {n.id === "countries" && <b>195</b>}
               {n.id === "ads" && <b>{fmt(summary.media)}</b>}
             </button>
@@ -1097,7 +1087,7 @@ export default function Portal() {
                 </p>
                 <div className="hero-buttons">
                   <button onClick={() => go("companies")}>
-                    Explorar las 712 empresas
+                    Explorar las {fmt(companies.length)} empresas
                   </button>
                   <button className="secondary" onClick={() => go("map")}>
                     Abrir mapa 3D
@@ -1224,7 +1214,7 @@ export default function Portal() {
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">BASE EMPRESARIAL</p>
-              <h1>712 fichas madre, sin ruido</h1>
+              <h1>{fmt(companies.length)} fichas, sin ruido</h1>
               <p>
                 Cada tarjeta abre todos los campos canónicos, la trazabilidad de
                 marca, las fuentes públicas y la galería local de la empresa.
@@ -2236,7 +2226,7 @@ export default function Portal() {
                 </div>
               </div>
               <p className="insights-note">
-                Cada método sale de fichas verificadas de la base o de la ampliación europea observada.
+                Cada método sale de fichas del catálogo único (madre o en verificación).
                 Los enlaces abren la evidencia. La aplicación propuesta es una recomendación editorial, no un dato.
               </p>
               <div className="method-list">
@@ -2248,24 +2238,9 @@ export default function Portal() {
                       <p>{m.what}</p>
                       <div className="chip-row">
                         {m.who.map((w) => {
-                          if (w.type === "ficha" && w.id) {
-                            const c = companyById.get(w.id);
-                            return (
-                              <button key={w.id} className="ref-chip" onClick={() => c && openCompany(c)}>
-                                {w.name} · {w.country}
-                              </button>
-                            );
-                          }
+                          const c = w.id ? companyById.get(w.id) : undefined;
                           return (
-                            <button
-                              key={w.domain}
-                              className="ref-chip panorama"
-                              onClick={() => {
-                                setPanoramaQuery(w.name);
-                                setPanoramaCountry("Todos");
-                                go("europa");
-                              }}
-                            >
+                            <button key={w.id || w.name} className="ref-chip" onClick={() => c && openCompany(c)}>
                               {w.name} · {w.country}
                             </button>
                           );
@@ -2282,65 +2257,6 @@ export default function Portal() {
                     </div>
                   </article>
                 ))}
-              </div>
-            </section>
-          </div>
-        )}
-        {view === "europa" && panorama && (
-          <div className="view">
-            <section className="content-section">
-              <div className="section-head">
-                <div>
-                  <p className="eyebrow">PANORAMA EUROPA · AMPLIACIÓN {panorama.observedAt}</p>
-                  <h2>{panorama.total} empresas europeas nuevas, fuera de la base actual</h2>
-                </div>
-              </div>
-              <p className="insights-note">{panorama.status}. Cada entrada procede de su web pública en la fecha indicada; los enlaces abren la fuente original.</p>
-              <div className="panorama-filters">
-                <button
-                  className={panoramaCountry === "Todos" ? "active" : ""}
-                  onClick={() => setPanoramaCountry("Todos")}
-                >
-                  Todos · {panorama.total}
-                </button>
-                {panorama.countries.map((c) => (
-                  <button
-                    key={c.country}
-                    className={panoramaCountry === c.country ? "active" : ""}
-                    onClick={() => setPanoramaCountry(c.country)}
-                  >
-                    {c.flag} {c.country} · {c.count}
-                  </button>
-                ))}
-              </div>
-              <input
-                className="panorama-search"
-                type="search"
-                placeholder="Buscar por nombre, modelo u oferta…"
-                value={panoramaQuery}
-                onChange={(event) => setPanoramaQuery(event.target.value)}
-              />
-              <div className="panorama-grid">
-                {panorama.companies
-                  .filter((p) => panoramaCountry === "Todos" || p.country === panoramaCountry)
-                  .filter((p) => {
-                    const q = panoramaQuery.trim().toLowerCase();
-                    if (!q) return true;
-                    return `${p.name} ${p.model} ${p.offer} ${p.relevance}`.toLowerCase().includes(q);
-                  })
-                  .map((p) => (
-                    <article key={p.domain} className="panorama-card">
-                      <div className="panorama-head">
-                        <h3>{p.flag} {p.name}</h3>
-                        <a href={p.website} target="_blank" rel="noreferrer">{p.domain} ↗</a>
-                      </div>
-                      <p className="panorama-model">{p.model}</p>
-                      <p>{p.offer}</p>
-                      {p.publicPrice && <p className="panorama-price">Precio público: {p.publicPrice}</p>}
-                      {p.guarantee && <p className="panorama-guarantee">Garantía: {p.guarantee}</p>}
-                      <small>{p.relevance}</small>
-                    </article>
-                  ))}
               </div>
             </section>
           </div>

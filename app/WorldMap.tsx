@@ -90,7 +90,7 @@ export default function WorldMap({
     [allGeo, countryCounts, specialCount],
   );
   const mapCompanies = useMemo(
-    () => companies.filter((company) => company.location?.latitude !== null && company.location?.longitude !== null),
+    () => companies.filter((company) => company.location != null && company.location.latitude !== null && company.location.longitude !== null),
     [companies],
   );
 
@@ -465,9 +465,9 @@ export default function WorldMap({
   return (
     <section className="world-map-shell" aria-label="Mapa mundial de competidores y precisión de ubicación">
       <div className="world-map-stage">
-        <div ref={mapNode} tabIndex={-1} className={`world-map-canvas${status === "fallback" ? " map-hidden" : ""}`} aria-label="Globo 3D interactivo con 709 competidores localizables" />
+        <div ref={mapNode} tabIndex={-1} className={`world-map-canvas${status === "fallback" ? " map-hidden" : ""}`} aria-label={`Globo 3D interactivo con ${mapCompanies.length} competidores localizables`} />
         {status === "loading" && <div className="map-loading"><span /><b>Preparando el globo 3D…</b><small>Cargando puntos, logos y precisión verificada</small></div>}
-        {status === "fallback" && <div className="map-fallback" role="status"><b>La vista 3D no está disponible en este dispositivo</b><p>La lista lateral conserva las 712 fichas y abre la misma información.</p></div>}
+        {status === "fallback" && <div className="map-fallback" role="status"><b>La vista 3D no está disponible en este dispositivo</b><p>La lista lateral conserva todas las fichas del catálogo y abre la misma información.</p></div>}
         <div className="map-legend" aria-label="Leyenda de precisión">
           <span><i className="exact" /> Punto publicado</span>
           <span><i className="city" /> Centro de ciudad</span>
