@@ -170,6 +170,17 @@ export type ExecutionAction = {
 };
 export type ExecutionBacklog = { generatedAt: string; note: string; actions: ExecutionAction[] };
 
+export type Recurso = {
+  id: string;
+  categoria: string;
+  para: string;
+  titulo: string;
+  descripcion: string;
+  filename: string;
+  contenido: string;
+};
+export type RecursosData = { generatedAt: string; note: string; items: Recurso[] };
+
 export type Dossier = {
   id: string;
   resumen: string;

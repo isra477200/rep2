@@ -45,6 +45,7 @@ import type {
   LogoManifest,
   Media,
   PatternsData,
+  RecursosData,
   Summary,
   Takeaway,
   TakeawaysData,
@@ -56,6 +57,7 @@ const WorldMap = lazy(() => import("./WorldMap"));
 type View =
   | "home"
   | "exec"
+  | "resources"
   | "companies"
   | "funnels"
   | "map"
@@ -73,6 +75,7 @@ type View =
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
   { id: "exec", label: "Ejecutar", icon: "▸" },
+  { id: "resources", label: "Recursos", icon: "⤓" },
   { id: "companies", label: "Empresas", icon: "◎" },
   { id: "funnels", label: "Funnels de venta", icon: "⌁" },
   { id: "map", label: "Mapa 3D", icon: "◉" },
@@ -407,7 +410,8 @@ export default function Portal() {
     [takeaways, setTakeaways] = useState<TakeawaysData | null>(null),
     [patterns, setPatterns] = useState<PatternsData | null>(null),
     [execution, setExecution] = useState<ExecutionBacklog | null>(null),
-    [dossiers, setDossiers] = useState<DossiersData | null>(null);
+    [dossiers, setDossiers] = useState<DossiersData | null>(null),
+    [recursos, setRecursos] = useState<RecursosData | null>(null);
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -495,8 +499,11 @@ export default function Portal() {
       fetch("/data/dossiers.json")
         .then((r) => (r.ok ? (r.json() as Promise<DossiersData>) : null))
         .catch(() => null),
+      fetch("/data/recursos.json")
+        .then((r) => (r.ok ? (r.json() as Promise<RecursosData>) : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss, recs]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -513,6 +520,7 @@ export default function Portal() {
         setPatterns(pats);
         setExecution(execd);
         setDossiers(doss);
+        setRecursos(recs);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
@@ -1445,6 +1453,76 @@ export default function Portal() {
                     ))}
                 </div>
               </section>
+            )}
+          </div>
+        )}
+
+        {view === "resources" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">RECURSOS · LISTOS PARA USAR</p>
+              <h1>Trabajo hecho, no ideas</h1>
+              <p>
+                Guiones, cláusulas, protocolos, plantillas y datos generados
+                desde las tácticas verificadas de la base. Copia o descarga y
+                a producción; personaliza los campos entre [corchetes].
+              </p>
+            </section>
+            {recursos ? (
+              <section className="content-section">
+                <p className="insights-note">{recursos.note}</p>
+                <div className="resource-grid">
+                  {recursos.items.map((recurso) => (
+                    <article key={recurso.id} className="resource-card">
+                      <div className="resource-head">
+                        <span className="resource-cat">{recurso.categoria}</span>
+                        <span className="resource-for">Para {recurso.para}</span>
+                      </div>
+                      <h3>{recurso.titulo}</h3>
+                      <p>{recurso.descripcion}</p>
+                      <div className="resource-preview">
+                        {recurso.contenido.slice(0, 600)}
+                      </div>
+                      <div className="resource-actions">
+                        <button
+                          className="res-copy"
+                          onClick={async () => {
+                            try {
+                              await navigator.clipboard.writeText(recurso.contenido);
+                              setToast(`«${recurso.titulo}» copiado al portapapeles`);
+                            } catch {
+                              setToast("No se pudo copiar; usa Descargar");
+                            }
+                          }}
+                        >
+                          Copiar
+                        </button>
+                        <button
+                          className="res-download"
+                          onClick={() => {
+                            const type = recurso.filename.endsWith(".csv")
+                              ? "text/csv;charset=utf-8"
+                              : "text/plain;charset=utf-8";
+                            const blob = new Blob(["﻿" + recurso.contenido], { type });
+                            const url = URL.createObjectURL(blob);
+                            const link = document.createElement("a");
+                            link.href = url;
+                            link.download = recurso.filename;
+                            document.body.appendChild(link);
+                            link.click();
+                            link.remove();
+                            URL.revokeObjectURL(url);
+                          }}
+                        >
+                          Descargar {recurso.filename.endsWith(".csv") ? "CSV" : "TXT"}
+                        </button>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ) : (
+              <div className="empty-state">Los recursos aún no están publicados.</div>
             )}
           </div>
         )}

@@ -318,9 +318,9 @@ export default function WorldMap({
     map.on("style.load", () => {
       map.setProjection({ type: "globe" });
       map.setSky({
-        "sky-color": "#03110c",
-        "horizon-color": "#1d5942",
-        "fog-color": "#0a2a1f",
+        "sky-color": "#0a0f16",
+        "horizon-color": "#2c4a73",
+        "fog-color": "#101826",
         "sky-horizon-blend": 0.5,
         "horizon-fog-blend": 0.38,
         "fog-ground-blend": 0.12,
@@ -342,7 +342,7 @@ export default function WorldMap({
         source: "company-locations",
         filter: ["has", "point_count"],
         paint: {
-          "circle-color": "rgba(43,196,134,.16)",
+          "circle-color": "rgba(66,133,244,.18)",
           "circle-radius": ["step", ["get", "point_count"], 26, 10, 32, 40, 40, 100, 50],
           "circle-blur": 0.55,
         },
@@ -353,10 +353,10 @@ export default function WorldMap({
         source: "company-locations",
         filter: ["has", "point_count"],
         paint: {
-          "circle-color": ["step", ["get", "point_count"], "#2bc486", 10, "#17a878", 40, "#0b8163", 100, "#075b48"],
+          "circle-color": ["step", ["get", "point_count"], "#4285f4", 10, "#1a73e8", 40, "#0b57d0", 100, "#083f9a"],
           "circle-radius": ["step", ["get", "point_count"], 17, 10, 22, 40, 28, 100, 35],
           "circle-stroke-width": 2,
-          "circle-stroke-color": "rgba(214,255,238,.85)",
+          "circle-stroke-color": "rgba(232,240,254,.9)",
           "circle-opacity": 0.96,
         },
       });
@@ -366,7 +366,7 @@ export default function WorldMap({
         source: "company-locations",
         filter: ["has", "point_count"],
         layout: { "text-field": ["get", "point_count_abbreviated"], "text-font": ["Noto Sans Bold"], "text-size": 13, "text-allow-overlap": true },
-        paint: { "text-color": "#ffffff", "text-halo-color": "#043829", "text-halo-width": 1 },
+        paint: { "text-color": "#ffffff", "text-halo-color": "#0a2a5e", "text-halo-width": 1 },
       });
       map.addLayer({
         id: "company-points",
@@ -376,9 +376,9 @@ export default function WorldMap({
         paint: {
           "circle-color": [
             "match", ["get", "precision"],
-            "exacta_publicada", "#00d084",
-            "centro_ciudad", "#3aa9ff",
-            "centro_pais_mercado", "#f1b24a",
+            "exacta_publicada", "#34a853",
+            "centro_ciudad", "#4285f4",
+            "centro_pais_mercado", "#fbbc04",
             "#94a3b8",
           ],
           "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 5.5, 5, 8, 10, 11],

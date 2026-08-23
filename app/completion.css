@@ -17,17 +17,17 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #2bd28d;
-  color: #08271c;
+  background: #2b6bd2;
+  color: #131418;
   font-size: 30px;
   font-weight: 900;
 }
 
-.completion-panel .eyebrow { margin-bottom: 5px; color: #66e4ad; }
+.completion-panel .eyebrow { margin-bottom: 5px; color: #6696e4; }
 .completion-panel h2 { margin: 0; font-size: 30px; letter-spacing: -.04em; }
-.completion-panel > div > p:last-child { margin: 7px 0 0; color: #9fc1b1; font-size: 11px; line-height: 1.5; }
+.completion-panel > div > p:last-child { margin: 7px 0 0; color: #aaaeb6; font-size: 11px; line-height: 1.5; }
 .completion-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.completion-kpis span { padding: 12px; border: 1px solid #315345; border-radius: 9px; background: #17362b; color: #a8cabc; font-size: 11px; line-height: 1.4; }
+.completion-kpis span { padding: 12px; border: 1px solid #3c4048; border-radius: 9px; background: #1e2127; color: #b3b7bf; font-size: 11px; line-height: 1.4; }
 .completion-kpis b { display: block; color: #fff; font-size: 21px; margin-bottom: 2px; }
 .completion-panel > .audit-banner {
   grid-column: 1 / -1;
@@ -41,7 +41,7 @@
   margin-top: 12px;
   padding: 9px 12px;
   border-radius: 8px;
-  background: #17362b;
+  background: #1e2127;
   color: #fff;
   font-size: 11px;
   font-weight: 800;
