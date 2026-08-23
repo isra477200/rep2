@@ -6,6 +6,8 @@ import {
   parseFetchedPage,
   parsePropertyTypes,
   privacyReplacements,
+  selectPlanRecords,
+  serializePropertyUpdates,
   scrubPropertyUpdates,
   visiblePrivacyFindings,
 } from "../scripts/notion-v3-sync-utils.mjs";
@@ -52,6 +54,13 @@ También conservar`;
   assert.match(action.content_updates[0].old_str, /Auditoría forense/);
 });
 
+test("cierra V3 en su callout final aunque el siguiente H2 esté sangrado", () => {
+  const section = "## 🧠 Auditoría comercial profunda · RedVitalia\nTexto\n<callout icon=\"✅\">\n\tLa información íntegra y ampliable permanece en esta ficha madre y en su expediente público.\n</callout>";
+  const content = `${section}\n\t## Publicidad de pago\nConservar`;
+  const action = auditContentAction(content, section.replace("Texto", "Nuevo"));
+  assert.equal(action.content_updates[0].old_str, section);
+});
+
 test("inserta al principio cuando no hay auditoría previa", () => {
   const action = auditContentAction("## Histórico\nConservar", "## 🧠 Auditoría comercial profunda · RedVitalia\nNueva");
   assert.equal(action.command, "insert_content");
@@ -75,4 +84,88 @@ test("solo limpia propiedades de texto, URL o título", () => {
   const updates = scrubPropertyUpdates(properties, types);
   assert.deepEqual(updates, { Registro: "Inteligencia Mundial de Captación", Fuentes: "" });
   assert.deepEqual(visiblePrivacyFindings(properties, "Contenido limpio", types), ["property:Registro", "property:Fuentes"]);
+});
+
+test("no confunde rutas públicas /users/ con rutas privadas del equipo", () => {
+  const properties = {};
+  const types = new Map();
+  assert.deepEqual(visiblePrivacyFindings(properties, "https://example.com/users/sign_in", types), []);
+  assert.deepEqual(visiblePrivacyFindings(properties, "C:\\Users\\privado\\.codex", types), ["content"]);
+});
+
+test("detecta y limpia las relaciones internas de las fichas madre", () => {
+  const properties = {
+    "Anuncios hijos": ["https://www.notion.so/privado"],
+    "Ficha madre": [],
+    "Tarea operativa vinculada": ["https://www.notion.so/tarea"],
+  };
+  const types = new Map([
+    ["Anuncios hijos", "relation"],
+    ["Ficha madre", "relation"],
+    ["Tarea operativa vinculada", "relation"],
+  ]);
+  assert.deepEqual(scrubPropertyUpdates(properties, types), {
+    "Anuncios hijos": null,
+    "Tarea operativa vinculada": null,
+  });
+  assert.deepEqual(visiblePrivacyFindings(properties, "Contenido limpio", types), [
+    "property:Anuncios hijos",
+    "property:Tarea operativa vinculada",
+  ]);
+});
+
+test("sustituye el párrafo heredado de Radar sin tocar usos competitivos legítimos", () => {
+  const legacy = "> Esta fila evita que el actor vuelva a quedar fuera del Radar. La existencia de la fuente y su asignación territorial proceden del barrido del 15–16/08/2026. Oferta, precio, contrato, prueba, identidad visual, Meta Ads, Google Ads y funnel permanecen explícitamente pendientes hasta su auditoría individual; no se infieren datos ausentes.";
+  let cleaned = legacy;
+  for (const update of privacyReplacements(legacy)) cleaned = cleaned.split(update.old_str).join(update.new_str);
+  assert.match(cleaned, /cobertura mundial consolidada/);
+  assert.doesNotMatch(cleaned, /Radar|pendientes hasta su auditoría/);
+  assert.deepEqual(privacyReplacements("Radar Summum y signal radar son evidencia pública."), []);
+});
+
+test("la reanudación limita después de retirar los ya completos", () => {
+  const queue = [
+    { id: "a", notion: { status: "complete", digest: "1" } },
+    { id: "b", notion: { status: "complete", digest: "2" } },
+    { id: "c", notion: { status: "pending" } },
+    { id: "d", notion: { status: "pending" } },
+  ];
+  assert.deepEqual(
+    selectPlanRecords(
+      [{ id: "a", digest: "1" }, { id: "b", digest: "2" }, { id: "c", digest: "3" }, { id: "d", digest: "4" }],
+      queue,
+      { pendingOnly: true, limit: 1 },
+    ),
+    [{ id: "c", digest: "3" }],
+  );
+});
+
+test("un digest nuevo reabre una ficha previamente completa", () => {
+  const records = [{ id: "a", digest: "nuevo" }];
+  const queue = [{ id: "a", notion: { status: "complete", digest: "antiguo" } }];
+  assert.deepEqual(selectPlanRecords(records, queue, { pendingOnly: true }), records);
+});
+
+test("serializa solo rich text y títulos sin alterar URL, select ni números", () => {
+  const properties = {
+    Texto: "USD $5 *neto* [fuente] _ga /remove:yes:",
+    Titulo: "Marca *",
+    Url: "https://example.com/?price[]=5",
+    Estado: "Completa",
+    Total: 5,
+  };
+  const types = new Map([
+    ["Texto", "text"],
+    ["Titulo", "title"],
+    ["Url", "url"],
+    ["Estado", "select"],
+    ["Total", "number"],
+  ]);
+  assert.deepEqual(serializePropertyUpdates(properties, types), {
+    Texto: "USD \\$5 \\*neto\\* \\[fuente\\] \\_ga /remove — yes:",
+    Titulo: "Marca \\*",
+    Url: "https://example.com/?price[]=5",
+    Estado: "Completa",
+    Total: 5,
+  });
 });

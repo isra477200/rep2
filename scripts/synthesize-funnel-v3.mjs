@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import { safePublicUrl as safeUrl } from "./funnel-v3-url-utils.mjs";
 
 const QUEUE_FILE = "research/deep/v3/queue.json";
 const PUBLIC_COMPANIES = "public/data/companies.json";
@@ -23,12 +24,18 @@ function parseArgs(argv) {
 const args = parseArgs(process.argv.slice(2));
 
 function clean(value) {
-  return String(value || "").replace(/\s+/g, " ").trim();
+  return String(value || "")
+    .replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, "")
+    // eslint-disable-next-line no-control-regex -- retira controles que rompen la serialización.
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function truncate(value, length = 1_600) {
   const text = clean(value);
-  return text.length > length ? `${text.slice(0, length - 1).trim()}…` : text;
+  const characters = [...text];
+  return characters.length > length ? `${characters.slice(0, length - 1).join("").trim()}…` : text;
 }
 
 function unique(values, limit = Infinity) {
@@ -46,25 +53,6 @@ function uniqueObjects(values, key = (value) => JSON.stringify(value), limit = I
     if (result.length >= limit) break;
   }
   return result;
-}
-
-function safeUrl(value) {
-  try {
-    const url = new URL(value);
-    if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) return null;
-    if (/^(?:l|lm)\.facebook\.com$/i.test(url.hostname) && url.pathname === "/l.php") {
-      const destination = url.searchParams.get("u");
-      return destination ? safeUrl(destination) : null;
-    }
-    if (/(?:^|\.)notion\.(?:com|so)$/i.test(url.hostname) || /\.notion\.site$/i.test(url.hostname)) return null;
-    if (/^(?:localhost|127\.|10\.|192\.168\.|169\.254\.)/i.test(url.hostname)) return null;
-    if (/(?:^|\.)validate\.perfdrive\.com$/i.test(url.hostname)) return null;
-    if ([...url.searchParams.keys()].some((key) => /^(?:token|signature|x-amz-|x-goog-)/i.test(key))) return null;
-    url.hash = "";
-    for (const key of [...url.searchParams.keys()]) if (/^(?:utm_|fbclid|gclid|msclkid|mc_)/i.test(key)) url.searchParams.delete(key);
-    if (/^request\.angi\.com$/i.test(url.hostname) && /^\/service-request\//i.test(url.pathname)) url.search = "";
-    return url.href;
-  } catch { return null; }
 }
 
 function evidenceIdForUrl(evidenceByUrl, value) {

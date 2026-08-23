@@ -1111,7 +1111,7 @@ export default function Portal() {
                 </strong>
                 <small>
                   {fmt(v3Index?.stats.evidenceReferences ?? 0)} referencias
-                  analíticas ·{" "}
+                  analíticas · {fmt(v3Index?.stats.usableEvidenceReferences ?? 0)} enlazables · {fmt(v3Index?.stats.unavailableEvidenceReferences ?? 0)} no disponible ·{" "}
                   {fmt(v3Index?.stats.uniqueEvidenceUrlsWithinRecords ?? 0)}
                   {" "}únicas por ficha
                 </small>
@@ -1332,7 +1332,7 @@ export default function Portal() {
                         <span>URLS PÚBLICAS ÚNICAS</span>
                         <strong>{fmt(v3Index.stats.uniqueEvidenceUrlsGlobal)}</strong>
                         <small>
-                          {fmt(v3Index.stats.evidenceReferences)} referencias analíticas · {fmt(v3Index.stats.uniqueEvidenceUrlsWithinRecords)} URLs únicas por ficha
+                          {fmt(v3Index.stats.evidenceReferences)} referencias · {fmt(v3Index.stats.usableEvidenceReferences)} enlazables · {fmt(v3Index.stats.unavailableEvidenceReferences)} no disponible · {fmt(v3Index.stats.uniqueEvidenceUrlsWithinRecords)} URLs únicas por ficha
                         </small>
                       </article>
                       <article>
@@ -2141,7 +2141,7 @@ export default function Portal() {
                 </strong>
                 <p>
                   {fmt(v3Index?.stats.evidenceReferences ?? 0)} referencias
-                  analíticas y{" "}
+                  analíticas, {fmt(v3Index?.stats.usableEvidenceReferences ?? 0)} enlazables, {fmt(v3Index?.stats.unavailableEvidenceReferences ?? 0)} no disponible y{" "}
                   {fmt(v3Index?.stats.uniqueEvidenceUrlsWithinRecords ?? 0)} URLs
                   únicas al deduplicar cada ficha. El índice empresarial conserva
                   por separado {fmt(summary.sources)} fuentes canónicas.

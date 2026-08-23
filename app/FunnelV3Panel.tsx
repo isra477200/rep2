@@ -535,11 +535,17 @@ export default function FunnelV3Panel({
         <article className="v3-card">
           <p className="eyebrow">FUENTES PÚBLICAS</p>
           <div className="v3-sources">
-            {(review.evidence || []).map((source) => (
-              <PublicEvidenceLink key={source.id} href={source.url}>
-                {source.id} · {source.title || source.sourceType || "Fuente pública"}
-              </PublicEvidenceLink>
-            ))}
+            {(review.evidence || []).map((source) =>
+              source.url ? (
+                <PublicEvidenceLink key={source.id} href={source.url}>
+                  {source.id} · {source.title || source.sourceType || "Fuente pública"}
+                </PublicEvidenceLink>
+              ) : (
+                <span className="v3-source-unavailable" key={source.id}>
+                  {source.id} · {source.title || "Fuente no disponible"} · {source.limitation || "Limitación documentada"}
+                </span>
+              ),
+            )}
           </div>
         </article>
         <article className="v3-card v3-limitations">

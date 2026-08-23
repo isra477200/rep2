@@ -44,7 +44,9 @@ function clean(value) {
 
 function safePublicUrl(value) {
   try {
-    const url = new URL(value);
+    const raw = clean(value);
+    if (!raw || raw.endsWith("\\") || /\[\[[^\]]+\]\]/.test(raw)) return false;
+    const url = new URL(raw);
     if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) return false;
     if (/(?:^|\.)notion\.(?:com|so)$/i.test(url.hostname) || /\.notion\.site$/i.test(url.hostname)) return false;
     if (/^(?:localhost|127\.|10\.|192\.168\.|169\.254\.)/i.test(url.hostname)) return false;
@@ -109,7 +111,11 @@ function reviewQa(item, review) {
     if (!clean(row.id)) issues.push(issue("error", "evidence_id_empty", "Evidencia sin ID.", `evidence[${index}]`));
     if (evidenceIds.has(row.id)) issues.push(issue("error", "evidence_id_duplicate", `ID repetido: ${row.id}.`, `evidence[${index}]`));
     evidenceIds.add(row.id);
-    if (!safePublicUrl(row.url)) issues.push(issue("error", "unsafe_evidence_url", `URL no pública o temporal: ${row.url || "vacía"}.`, `evidence[${index}].url`));
+    const unavailable = row.url === null
+      && row.status === "no disponible documentada"
+      && clean(row.limitation)
+      && !(row.supports || []).length;
+    if (!unavailable && !safePublicUrl(row.url)) issues.push(issue("error", "unsafe_evidence_url", `URL no pública o temporal: ${row.url || "vacía"}.`, `evidence[${index}].url`));
     if (!clean(row.accessedAt)) issues.push(issue("warning", "evidence_date_empty", `Evidencia ${row.id} sin fecha de acceso.`, `evidence[${index}].accessedAt`));
     if (row.status === "observado" && (!Array.isArray(row.supports) || !row.supports.length)) issues.push(issue("error", "evidence_supports_empty", `La evidencia observada ${row.id} no declara qué afirmaciones sostiene.`, `evidence[${index}].supports`));
     if (row.relation === "external_funnel_destination" && (row.supports || []).some((path) => /^\$\.(?:messageArchitecture|proofAndTrust|offerEconomics|objectionsAndSales|deliveryOperations|competitiveAssessment)/.test(path))) {

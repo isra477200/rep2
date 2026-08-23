@@ -366,13 +366,14 @@ export type DeepIndex = {
 
 export type FunnelV3Evidence = {
   id: string;
-  url: string;
+  url: string | null;
   title?: string;
   accessedAt?: string;
   sourceType?: string;
   relation?: "official_site" | "external_funnel_destination" | null;
   status?: string;
   supports?: string[];
+  limitation?: string;
 };
 
 export type FunnelV3Field = {
@@ -461,6 +462,8 @@ export type FunnelV3IndexItem = {
   fields: number;
   requiredFields: number;
   evidence: number;
+  usableEvidenceReferences: number;
+  unavailableEvidenceReferences: number;
   uniqueEvidenceUrls: number;
   screenshots: number;
   manualEvidence: boolean;
@@ -477,6 +480,8 @@ export type FunnelV3Index = {
     visibleFields: number;
     evidence: number;
     evidenceReferences: number;
+    usableEvidenceReferences: number;
+    unavailableEvidenceReferences: number;
     uniqueEvidenceUrlsWithinRecords: number;
     uniqueEvidenceUrlsGlobal: number;
     screenshots: number;

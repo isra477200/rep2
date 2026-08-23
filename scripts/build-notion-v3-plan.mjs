@@ -8,6 +8,7 @@ const RENDERED_DIR = "research/deep/v3/rendered";
 const ID_MAP_FILE = "research/deep/public-id-map.json";
 const OUTPUT_FILE = "research/deep/v3/notion-plan.json";
 const PUBLIC_BASE = "https://redvitalia.srv1480016.hstgr.cloud";
+const NOTION_SERIALIZER_VERSION = "rv-notion-serializer-3";
 const STAGE_LABELS = {
   observado: "🟢 Observado",
   inferido: "🟡 Inferido",
@@ -17,21 +18,33 @@ const STAGE_LABELS = {
 const FORBIDDEN_TEXT = /Puente\s+(?:de\s+)?IA|(?:www\.)?notion\.(?:so|com)|\.notion\.site|file:\/\/|[A-Z]:\\Users\\|\/Users\/|\.codex|agent-handoffs|research\/deep|manual-wave|Bandeja de registro|Origen de la migraci[oó]n/i;
 
 function clean(value) {
-  return String(value ?? "").replace(/\s+/g, " ").trim();
+  return String(value ?? "")
+    .replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, "")
+    // eslint-disable-next-line no-control-regex -- elimina controles que Notion rechaza.
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
+    .replace(/[\u200B-\u200D\uFEFF]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function truncate(value, limit = 1_900) {
   const text = clean(value);
-  return text.length <= limit ? text : `${text.slice(0, limit - 1).replace(/\s+\S*$/, "")}…`;
+  const characters = [...text];
+  return characters.length <= limit ? text : `${characters.slice(0, limit - 1).join("").replace(/\s+\S*$/, "")}…`;
 }
 
 function escapeRich(value) {
-  return clean(value).replace(/([\\*~`$<>{}|^]|\[|\])/g, "\\$1");
+  return clean(value)
+    .replace(/\/remove:yes:/gi, "/remove — yes:")
+    .replaceAll("`", "ʼ")
+    .replace(/([\\_*~`$<>{}|^]|\[|\])/g, "\\$1");
 }
 
 function safeUrl(value) {
   try {
-    const url = new URL(value);
+    const raw = clean(value);
+    if (!raw || raw.endsWith("\\") || /\[\[[^\]]+\]\]/.test(raw)) return null;
+    const url = new URL(raw);
     if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) return null;
     if (/^(?:l|lm)\.facebook\.com$/i.test(url.hostname) && url.pathname === "/l.php") {
       const destination = url.searchParams.get("u");
@@ -95,7 +108,13 @@ function bullets(value, empty = "No observable públicamente.", limit = 40) {
 }
 
 function fieldLabel(field) {
-  return clean(field.label || field.name || field.placeholder || field.type) || "Campo sin etiqueta visible";
+  const raw = clean(field.label || field.name || field.placeholder || field.type);
+  const match = raw.match(/^(.*?)(\s*(?:\*\s*)+)$/);
+  const label = clean(match?.[1] ?? raw) || "Campo sin etiqueta visible";
+  const marker = match ? match[2].replaceAll("*", "\\*") : "";
+  const rendered = escapeRich(label);
+  const containsAutolinkableText = /https?:\/\/|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|\b(?:[A-Z0-9-]+\.)+[A-Z]{2,}(?:\/\S*)?/i.test(label);
+  return `${containsAutolinkableText ? rendered : `**${rendered}**`}${marker}`;
 }
 
 function dimensionStatus(value) {
@@ -156,6 +175,43 @@ function frictionSummary(review, stats) {
   return truncate(`${stats.forms.length} formulario(s), ${stats.fields} campos visibles y ${stats.required} obligatorios. Fricción: ${[...new Set(levels)].join(" / ") || "calculada en la ficha"}.`);
 }
 
+function optionRows(options, baseLength) {
+  const escaped = options.map((option) => escapeRich(option)).filter(Boolean);
+  if (!escaped.length) return { inline: "", children: "" };
+  const inline = ` · opciones: ${escaped.join(" / ")}`;
+  if (baseLength + inline.length <= 1_800) return { inline, children: "" };
+
+  const chunks = [];
+  let current = "";
+  for (const option of escaped) {
+    const candidate = current ? `${current} / ${option}` : option;
+    if (candidate.length <= 1_400) {
+      current = candidate;
+      continue;
+    }
+    if (current) chunks.push(current);
+    if (option.length <= 1_400) {
+      current = option;
+      continue;
+    }
+    const words = option.split(/\s+/);
+    current = "";
+    for (const word of words) {
+      const next = current ? `${current} ${word}` : word;
+      if (next.length <= 1_400) current = next;
+      else {
+        if (current) chunks.push(current);
+        current = word;
+      }
+    }
+  }
+  if (current) chunks.push(current);
+  return {
+    inline: "",
+    children: chunks.map((chunk, index) => `\t\t- ${index ? "Opciones (continuación)" : "Opciones"}: ${chunk}`).join("\n"),
+  };
+}
+
 function formBlocks(forms) {
   if (!forms.length) return "- No se observó un formulario comercial público suficientemente medible.";
   return forms.map((form, formIndex) => {
@@ -164,8 +220,9 @@ function formBlocks(forms) {
     const fields = form.fields || [];
     const rows = fields.length
       ? fields.map((field, fieldIndex) => {
-          const options = Array.isArray(field.options) && field.options.length ? ` · opciones: ${field.options.map(clean).join(" / ")}` : "";
-          return `\t${fieldIndex + 1}. **${escapeRich(fieldLabel(field))}** · ${escapeRich(field.type || "tipo no visible")} · ${field.required ? "obligatorio" : "opcional"}${escapeRich(options)}`;
+          const base = `\t${fieldIndex + 1}. ${fieldLabel(field)} · ${escapeRich(field.type || "tipo no visible")} · ${field.required ? "obligatorio" : "opcional"}`;
+          const options = optionRows(Array.isArray(field.options) ? field.options : [], base.length);
+          return `${base}${options.inline}${options.children ? `\n${options.children}` : ""}`;
         }).join("\n")
       : "\t- No se recuperaron controles visibles.";
     return `<details color="green_bg">\n<summary>${title} · ${fields.length} campos</summary>\n\t${url ? `[Abrir superficie pública](${url})` : "Destino no observable públicamente."}\n\t**Método:** ${escapeRich(form.method || "no visible")} · **obligatorios:** ${Number(form.requiredFieldCount || 0)} · **envío durante la investigación:** no.\n${rows}\n</details>`;
@@ -201,11 +258,10 @@ function imageBlocks(publicId, screenshots) {
   return Array.from({ length: screenshots }, (_, index) => `![Evidencia visual ${index + 1}](${PUBLIC_BASE}/evidence/${publicId}/funnel-${String(index + 1).padStart(2, "0")}.webp)`).join("\n");
 }
 
-function section(review, item, publicId, digest, screenshots) {
+function section(review, item, publicId, screenshots) {
   const stats = formSummary(review);
   const portalUrl = `${PUBLIC_BASE}/?empresa=${encodeURIComponent(publicId)}`;
   const jsonUrl = `${PUBLIC_BASE}/data/funnel-v3/records/${encodeURIComponent(publicId)}.json`;
-  const marker = `REDVITALIA-AUDITORIA:${digest}`;
   const message = review.messageArchitecture || {};
   const evidenceReferences = Array.isArray(review.evidence) ? review.evidence.length : 0;
   const uniqueEvidenceUrls = new Set((review.evidence || []).map((source) => safeUrl(source.url)).filter(Boolean)).size;
@@ -276,7 +332,7 @@ ${bullets(review.limitations, "Sin limitaciones adicionales.", 60)}
 \tLa información íntegra y ampliable permanece en esta ficha madre y en su expediente público. No se han creado subpáginas ni se han añadido enlaces a espacios internos.
 </callout>`;
   if (containsForbidden(content)) throw new Error(`Contenido privado detectado en ${item.name}.`);
-  return { content, marker, portalUrl, jsonUrl, stats };
+  return { content, portalUrl, jsonUrl, stats };
 }
 
 async function writeJsonAtomic(path, value) {
@@ -297,47 +353,54 @@ for (const item of queue.items) {
   let rendered = null;
   try { rendered = JSON.parse(await readFile(`${RENDERED_DIR}/${item.id}.json`, "utf8")); } catch { rendered = null; }
   const publicId = idMap[item.id];
-  const digest = createHash("sha256").update(JSON.stringify(review)).digest("hex").slice(0, 16);
   const screenshots = Math.min(2, (rendered?.pages || []).filter((page) => page.screenshot).length);
-  const built = section(review, item, publicId, digest, screenshots);
+  const built = section(review, item, publicId, screenshots);
   const manual = Boolean(item.manualSources?.length);
   const excluded = item.scope === "Excluir — fuente/no negocio";
+  const properties = {
+    "Estado de auditoría comercial": excluded ? "No aplica verificado" : manual ? "Verificada + manual" : Number(review.coveragePercent || 0) < 25 ? "Limitada documentada" : "Verificada",
+    "Cobertura comercial (%)": Number(review.coveragePercent || 0),
+    "Mensaje principal observado": truncate(headline(review) || "No observable públicamente; limitación documentada."),
+    "CTA principal observado": truncate(primaryCta(review) || "No observable públicamente; limitación documentada."),
+    "Mecanismo de captación": captureType(review, built.stats.forms),
+    "Formularios observados": built.stats.forms.length,
+    "Campos visibles observados": built.stats.fields,
+    "Campos obligatorios observados": built.stats.required,
+    "Evidencias verificadas": new Set((review.evidence || []).map((source) => safeUrl(source.url)).filter(Boolean)).size,
+    "Capturas del embudo": screenshots,
+    "Tono y lenguaje comercial": voiceSummary(review),
+    "Fricción de conversión": frictionSummary(review, built.stats),
+    "Precios públicos · local + EUR": priceSummary(review),
+    "Limitaciones documentadas": truncate(collectRows(review.limitations).join(" · ") || "Sin limitaciones adicionales.").replace(/\/remove:yes:/gi, "/remove — yes:"),
+    "Ficha pública RedVitalia": built.portalUrl,
+    "date:Fecha de auditoría comercial:start": review.reviewedAt || "2026-08-22",
+    "date:Fecha de auditoría comercial:is_datetime": 0,
+    "Estado revisión integral": excluded ? "No aplica" : "Completa",
+    "Estado del análisis": excluded ? "Descartado" : "Analizado",
+    "Estado operativo": "Sin acción",
+    "Auditoría comercial verificada": "__YES__",
+    "Capturas verificadas": screenshots > 0 ? "__YES__" : "__NO__",
+    "Anuncios hijos": null,
+    "Ficha madre": null,
+    "Tarea operativa vinculada": null,
+    "Pendientes de ficha": null,
+    "Guion mystery shopping": "No ejecutado: esta auditoría utiliza solo evidencia pública consultable. No hay una acción pendiente y no se contactó a la empresa.",
+    "Revisado por": ["ChatGPT"],
+    "date:Última revisión:start": review.reviewedAt || "2026-08-22",
+    "date:Última revisión:is_datetime": 0,
+  };
+  const digest = createHash("sha256")
+    .update(JSON.stringify({ serializer: NOTION_SERIALIZER_VERSION, section: built.content, properties }))
+    .digest("hex")
+    .slice(0, 16);
   plan.push({
     id: item.id,
     name: item.name,
     publicId,
     digest,
-    marker: built.marker,
+    marker: `REDVITALIA-AUDITORIA:${digest}`,
     section: built.content,
-    properties: {
-      "Estado de auditoría comercial": excluded ? "No aplica verificado" : manual ? "Verificada + manual" : Number(review.coveragePercent || 0) < 25 ? "Limitada documentada" : "Verificada",
-      "Cobertura comercial (%)": Number(review.coveragePercent || 0),
-      "Mensaje principal observado": truncate(headline(review) || "No observable públicamente; limitación documentada."),
-      "CTA principal observado": truncate(primaryCta(review) || "No observable públicamente; limitación documentada."),
-      "Mecanismo de captación": captureType(review, built.stats.forms),
-      "Formularios observados": built.stats.forms.length,
-      "Campos visibles observados": built.stats.fields,
-      "Campos obligatorios observados": built.stats.required,
-      "Evidencias verificadas": new Set((review.evidence || []).map((source) => safeUrl(source.url)).filter(Boolean)).size,
-      "Capturas del embudo": screenshots,
-      "Tono y lenguaje comercial": voiceSummary(review),
-      "Fricción de conversión": frictionSummary(review, built.stats),
-      "Precios públicos · local + EUR": priceSummary(review),
-      "Limitaciones documentadas": truncate(collectRows(review.limitations).join(" · ") || "Sin limitaciones adicionales."),
-      "Ficha pública RedVitalia": built.portalUrl,
-      "date:Fecha de auditoría comercial:start": review.reviewedAt || "2026-08-22",
-      "date:Fecha de auditoría comercial:is_datetime": 0,
-      "Estado revisión integral": excluded ? "No aplica" : "Completa",
-      "Estado del análisis": excluded ? "Descartado" : "Analizado",
-      "Estado operativo": "Sin acción",
-      "Auditoría comercial verificada": "__YES__",
-      "Capturas verificadas": screenshots > 0 ? "__YES__" : "__NO__",
-      "Pendientes de ficha": [],
-      "Guion mystery shopping": "No ejecutado: esta auditoría utiliza solo evidencia pública consultable. No hay una acción pendiente y no se contactó a la empresa.",
-      "Revisado por": ["ChatGPT"],
-      "date:Última revisión:start": review.reviewedAt || "2026-08-22",
-      "date:Última revisión:is_datetime": 0,
-    },
+    properties,
   });
 }
 

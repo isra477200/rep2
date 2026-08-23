@@ -22,7 +22,9 @@ function clean(value) {
 
 function safePublicUrl(value) {
   try {
-    const url = new URL(value);
+    const raw = clean(value);
+    if (!raw || raw.endsWith("\\") || /\[\[[^\]]+\]\]/.test(raw)) return null;
+    const url = new URL(raw);
     if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) return null;
     if (/^(?:l|lm)\.facebook\.com$/i.test(url.hostname) && url.pathname === "/l.php") {
       const destination = url.searchParams.get("u");
@@ -73,7 +75,10 @@ function sanitize(value, privateIdPattern, key = "") {
     }
     return output;
   }
-  const text = String(value);
+  const text = String(value)
+    .replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, "")
+    // eslint-disable-next-line no-control-regex -- elimina controles inválidos del JSON público.
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "");
   if (/url|href|source|destination/i.test(key) && /^https?:/i.test(text)) return safePublicUrl(text) || undefined;
   if (privateIdPattern.test(text) || forbiddenText.test(text)) return undefined;
   return text;
@@ -169,6 +174,8 @@ for (const item of queue.items) {
       .map((source) => safePublicUrl(source?.url))
       .filter(Boolean),
   );
+  const usableEvidenceReferences = (Array.isArray(publicReview.evidence) ? publicReview.evidence : [])
+    .filter((source) => safePublicUrl(source?.url)).length;
   for (const url of recordEvidenceUrls) globallyUniqueEvidenceUrls.add(url);
   for (const key of DIMENSION_KEYS) addStatus(dimensionCounts[key], publicReview[key]?.status);
   for (const stage of publicReview.funnel || []) {
@@ -192,6 +199,8 @@ for (const item of queue.items) {
     fields: stats.fields,
     requiredFields: stats.requiredFields,
     evidence: Array.isArray(publicReview.evidence) ? publicReview.evidence.length : 0,
+    usableEvidenceReferences,
+    unavailableEvidenceReferences: (Array.isArray(publicReview.evidence) ? publicReview.evidence.length : 0) - usableEvidenceReferences,
     uniqueEvidenceUrls: recordEvidenceUrls.size,
     screenshots: screenshots.length,
     manualEvidence: Boolean(item.manualSources?.length),
@@ -213,6 +222,8 @@ const index = {
     visibleFields: rows.reduce((sum, row) => sum + row.fields, 0),
     evidence: rows.reduce((sum, row) => sum + row.evidence, 0),
     evidenceReferences: rows.reduce((sum, row) => sum + row.evidence, 0),
+    usableEvidenceReferences: rows.reduce((sum, row) => sum + row.usableEvidenceReferences, 0),
+    unavailableEvidenceReferences: rows.reduce((sum, row) => sum + row.unavailableEvidenceReferences, 0),
     uniqueEvidenceUrlsWithinRecords: rows.reduce((sum, row) => sum + row.uniqueEvidenceUrls, 0),
     uniqueEvidenceUrlsGlobal: globallyUniqueEvidenceUrls.size,
     screenshots: rows.reduce((sum, row) => sum + row.screenshots, 0),

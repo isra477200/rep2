@@ -64,6 +64,10 @@ function normalizedName(value) {
     .toLowerCase();
 }
 
+function clean(value) {
+  return String(value ?? "").trim();
+}
+
 function collectClaimChecks(value, evidenceIds, errors, path = "$") {
   if (Array.isArray(value)) {
     value.forEach((child, index) => collectClaimChecks(child, evidenceIds, errors, `${path}[${index}]`));
@@ -123,7 +127,11 @@ for (const file of [...new Set(files)]) {
   if (evidenceIds.size !== ids.length) errors.push({ code: "duplicate_evidence_id" });
   for (const item of evidence) {
     if (!item?.id) errors.push({ code: "evidence_without_id" });
-    if (!isPublicUrl(item?.url)) errors.push({ code: "non_public_evidence_url", value: item?.url || null });
+    const unavailable = item?.url === null
+      && item?.status === "no disponible documentada"
+      && clean(item?.limitation)
+      && !(item?.supports || []).length;
+    if (!unavailable && !isPublicUrl(item?.url)) errors.push({ code: "non_public_evidence_url", value: item?.url || null });
     for (const related of item?.relatedUrls || []) {
       if (!isPublicUrl(related)) errors.push({ code: "non_public_related_url", value: related });
     }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T23:12:58.341Z",
+  "generatedAt": "2026-08-23T03:52:43.205Z",
   "failedCount": 5,
   "failed": [
     {
@@ -40,9 +40,9 @@
     "Los rastros técnicos inválidos se excluyeron de las galerías y se conservaron fuera del directorio público."
   ],
   "completion": {
-    "status": "AMPLIACIÓN FORENSE EN CURSO",
+    "status": "TERMINADO",
     "recordsInProgress": 0,
-    "residualPending": 712,
+    "residualPending": 0,
     "motherlessRecords": 0,
     "criticalEmptyUnexplained": 0,
     "orphanMedia": 0,
@@ -110,18 +110,18 @@
     "hotlinkedBrandAssets": 0
   },
   "finalAudit": {
-    "status": "AMPLIACIÓN FORENSE EN CURSO",
-    "generatedAt": "2026-08-22T23:12:58.341Z",
+    "status": "TERMINADO",
+    "generatedAt": "2026-08-23T03:52:43.205Z",
     "closureChecks": {
       "exactCanonicalRecords": true,
-      "canonicalBaseAudited": false,
+      "canonicalBaseAudited": true,
       "zeroInProgress": true,
-      "zeroResidualPending": false,
+      "zeroResidualPending": true,
       "zeroMotherlessRecords": true,
       "zeroCriticalEmptyUnexplained": true,
       "zeroOrphanMedia": true,
       "zeroRecordsWithoutPublicSource": true,
-      "allCanonicalRecordsSynchronized": false,
+      "allCanonicalRecordsSynchronized": true,
       "allPublicDossiersPublished": true,
       "allQualityControlsPassed": true,
       "allUnavailableEvidenceDocumented": true
@@ -130,7 +130,7 @@
       "research": 0,
       "synthesis": 0,
       "qualityControl": 0,
-      "canonicalSync": 712,
+      "canonicalSync": 0,
       "publicPortal": 0
     },
     "qaErrors": 0,

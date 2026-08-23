@@ -45,7 +45,9 @@ const readJson = async (relativePath) =>
 
 const safePublicUrl = (value) => {
   try {
-    const url = new URL(value);
+    const raw = String(value || "").trim();
+    if (!raw || raw.endsWith("\\") || /\[\[[^\]]+\]\]/.test(raw)) return false;
+    const url = new URL(raw);
     const host = url.hostname.toLowerCase();
     if (!["http:", "https:"].includes(url.protocol)) return false;
     if (url.username || url.password) return false;
@@ -168,7 +170,12 @@ test("forms, field counts and evidence references are internally consistent", as
     if (!evidence.length || evidenceIds.size !== evidence.length)
       failures.push({ id: record.id, issue: "evidence-inventory" });
     for (const row of evidence) {
-      if (!row.id || !safePublicUrl(row.url))
+      const unavailable = row.url === null
+        && row.status === "no disponible documentada"
+        && typeof row.limitation === "string"
+        && row.limitation.trim()
+        && (!Array.isArray(row.supports) || row.supports.length === 0);
+      if (!row.id || (!unavailable && !safePublicUrl(row.url)))
         failures.push({ id: record.id, issue: "evidence-url" });
       if (row.status === "observado" && (!Array.isArray(row.supports) || !row.supports.length))
         failures.push({ id: record.id, issue: `evidence-supports:${row.id}` });
@@ -210,6 +217,8 @@ test("the V3 index totals are recomputed from the published records", async () =
       forms: forms.length,
       fields: forms.reduce((sum, form) => sum + form.visibleFieldCount, 0),
       evidence: record.evidence.length,
+      usableEvidenceReferences: record.evidence.filter((row) => row.url).length,
+      unavailableEvidenceReferences: record.evidence.filter((row) => !row.url).length,
       uniqueEvidenceUrls: new Set(record.evidence.map((row) => row.url).filter(Boolean)).size,
       screenshots: record.evidenceScreenshots.length,
       coverage: record.coveragePercent,
@@ -224,6 +233,8 @@ test("the V3 index totals are recomputed from the published records", async () =
     visibleFields: rows.reduce((sum, row) => sum + row.fields, 0),
     evidence: rows.reduce((sum, row) => sum + row.evidence, 0),
     evidenceReferences: rows.reduce((sum, row) => sum + row.evidence, 0),
+    usableEvidenceReferences: rows.reduce((sum, row) => sum + row.usableEvidenceReferences, 0),
+    unavailableEvidenceReferences: rows.reduce((sum, row) => sum + row.unavailableEvidenceReferences, 0),
     uniqueEvidenceUrlsWithinRecords: rows.reduce((sum, row) => sum + row.uniqueEvidenceUrls, 0),
     uniqueEvidenceUrlsGlobal: new Set(records.flatMap((record) => record.evidence.map((row) => row.url).filter(Boolean))).size,
     screenshots: rows.reduce((sum, row) => sum + row.screenshots, 0),
@@ -234,8 +245,22 @@ test("the V3 index totals are recomputed from the published records", async () =
   };
   assert.deepEqual(index.stats, expected);
   assert.equal(index.stats.evidenceReferences, 15236);
-  assert.equal(index.stats.uniqueEvidenceUrlsWithinRecords, 14803);
-  assert.equal(index.stats.uniqueEvidenceUrlsGlobal, 14542);
+  assert.equal(index.stats.usableEvidenceReferences, 15235);
+  assert.equal(index.stats.unavailableEvidenceReferences, 1);
+  assert.equal(index.stats.uniqueEvidenceUrlsWithinRecords, 14782);
+  assert.equal(index.stats.uniqueEvidenceUrlsGlobal, 14539);
+});
+
+test("published dossiers contain no unpaired Unicode surrogate", async () => {
+  const { records } = await snapshotPromise;
+  for (const record of records) {
+    assert.doesNotMatch(
+      JSON.stringify(record),
+      /\\u(?:d[89ab][0-9a-f]{2}|d[c-f][0-9a-f]{2})/i,
+      record.id,
+    );
+    assert.doesNotMatch(JSON.stringify(record), /\\u00(?:0[0-8bcef]|1[0-9a-f]|7f)/i, record.id);
+  }
 });
 
 test("the global commercial insights reconcile with all 712 published dossiers", async () => {

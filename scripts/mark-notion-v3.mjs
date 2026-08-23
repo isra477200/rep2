@@ -2,6 +2,7 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 
 const QUEUE_FILE = "research/deep/v3/queue.json";
+const PLAN_FILE = "research/deep/v3/notion-plan.json";
 
 function argument(name) {
   const prefix = `--${name}=`;
@@ -25,17 +26,23 @@ if (!complete.size && !failed.size) throw new Error("Indica --complete=id1,id2 o
 for (const id of complete) if (failed.has(id)) throw new Error(`El ID ${id} aparece como completo y fallido.`);
 
 const queue = JSON.parse(await readFile(QUEUE_FILE, "utf8"));
+const plan = JSON.parse(await readFile(PLAN_FILE, "utf8"));
+const digestById = new Map(plan.records.map((record) => [record.id, record.digest]));
 const known = new Set(queue.items.map((item) => item.id));
 for (const id of [...complete, ...failed]) if (!known.has(id)) throw new Error(`ID ajeno a la cola: ${id}.`);
 
 const now = new Date().toISOString();
 for (const item of queue.items) {
-  if (complete.has(item.id) && item.notion?.status !== "complete") {
+  if (
+    complete.has(item.id)
+    && (item.notion?.status !== "complete" || item.notion?.digest !== digestById.get(item.id))
+  ) {
     item.notion = {
       status: "complete",
       attempts: Number(item.notion?.attempts || 0) + 1,
       updatedAt: now,
       error: null,
+      digest: digestById.get(item.id),
     };
   } else if (failed.has(item.id)) {
     item.notion = {
@@ -43,6 +50,7 @@ for (const item of queue.items) {
       attempts: Number(item.notion?.attempts || 0) + 1,
       updatedAt: now,
       error: "La sincronización no se confirmó; el registro debe reintentarse de forma idempotente.",
+      digest: item.notion?.digest || null,
     };
   }
 }
