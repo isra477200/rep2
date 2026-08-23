@@ -44,6 +44,7 @@ import type {
   Media,
   Summary,
 } from "./data-types";
+import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 
 const WorldMap = lazy(() => import("./WorldMap"));
 
@@ -1059,7 +1060,7 @@ export default function Portal() {
           <span className="dot" />
           <div>
             <strong>Instantánea verificada</strong>
-            <small>22 agosto 2026</small>
+            <small>{BUILD_DATE_LONG}</small>
           </div>
         </div>
       </aside>
@@ -1091,7 +1092,7 @@ export default function Portal() {
               </button>
             )}
           </div>
-          <div className="data-date">CORTE · 22 AGO 2026</div>
+          <div className="data-date">CORTE · {BUILD_DATE}</div>
           <span className="avatar">RV</span>
         </header>
 
