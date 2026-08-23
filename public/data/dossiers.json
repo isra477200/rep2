@@ -1,0 +1,1053 @@
+{
+ "generatedAt": "23/08/2026",
+ "items": {
+  "scale-lead": {
+   "id": "scale-lead",
+   "resumen": "SCALE Lead gana dinero cobrando solo por reunión entregada (desde ¥30.000), lo que traslada todo el riesgo aparente al proveedor y convierte la venta en algo casi sin fricción para el cliente B2B japonés. El negocio real está en industrializar la prospección (garantizan 500+ aproximaciones/mes) con lista, guion y BDR propios, de modo que el coste marginal por reunión quede muy por debajo del precio cobrado. El contrato mínimo de 6 meses y el ranking de calidad de cita pactado protegen sus ingresos recurrentes y filtran disputas. Al ser una empresa fundada en 2023, el modelo a éxito funciona además como máquina de adquisición de clientes para el resto de su suite (SCALE Form, Call, CRM, etc.). Lectura editorial.",
+   "equipo": "Empresa joven: 株式会社SCALE fundada el 3 de agosto de 2023, con sede en Minato (Tokio) y estructura ejecutiva de CEO (大串勇輝, Yūki Ōgushi) y CMO visible en su web corporativa (Observado: https://scale-group.co.jp/company.html). Tamaño de plantilla: No observable.",
+   "hitos": [
+    "Fundación de 株式会社SCALE el 3 de agosto de 2023 en Tokio (Observado: https://scale-group.co.jp/company.html).",
+    "Ha construido una suite de 9 servicios complementarios alrededor de SCALE Lead (Form, Call, CRM, Insight, Track, Script, Report, Match), visible en su web (Observado: https://scale-group.co.jp/company.html).",
+    "Declara 80+ empresas cliente en su material comercial; cifra autodeclarada, sin verificación externa (Observado en ficha auditada: https://scale-group.co.jp/scale-lead)."
+   ],
+   "stack": [
+    "Google tag (gtag.js / googletagmanager.com) — Observado en el HTML de la homepage"
+   ],
+   "economics": {
+    "supuesto": "Estimado. Precio dado: desde ¥30.000 + impuesto por reunión (≈162 €), sin alta ni mensualidad; ejemplo público de la propia empresa: 15 reuniones/mes.",
+    "calculo": "15 reuniones/mes × ¥30.000 = ¥450.000/mes ≈ 2.430 €/cliente/mes (al tipo implícito de la ficha, 162 €/reunión). Con contrato mínimo de 6 meses: ≈ ¥2,7M (≈14.580 €) por cliente y ciclo.",
+    "lectura": "Estimado: el ticket real depende del rango/calidad de cita pactado, pero el mínimo de 6 meses convierte cada cliente en un compromiso de ingresos de cinco cifras en euros. El margen depende de cuánto le cueste generar las 500+ aproximaciones/mes que garantiza."
+   },
+   "fuentes": [
+    {
+     "url": "https://scale-group.co.jp/company.html",
+     "label": "Página corporativa (fundación, CEO, sede, suite de servicios)"
+    },
+    {
+     "url": "https://scale-group.co.jp/scale-lead",
+     "label": "Landing de SCALE Lead (oferta, precio, garantía — datos auditados en ficha)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "clozer": {
+   "id": "clozer",
+   "resumen": "Clozer vende resultado de negocio (clientes, no clics) a pymes de Dubái/GCC con un full-funnel gestionado y cuota plana opaca, lo que le permite fijar precio por valor y tamaño del cliente en lugar de por horas o media spend. Sus garantías agresivas (primer lead en 8 días o gratis; objetivo a 80 días o trabaja gratis) actúan como mecanismo de captación en un mercado saturado de agencias, y el mes a mes reduce la barrera de entrada. El posicionamiento reciente como 'sistema de IA' (lanzamiento anunciado en abril de 2026 vía nota de prensa propia) sugiere una apuesta por diferenciarse con automatización y scoring más que con equipo grande. Su economía real depende de la retención (declara 90%) más que del fee inicial. Lectura editorial.",
+   "equipo": "Fundador y CEO: Thageeshan Theiventhiramoorthy, con sede en Dubái, según nota de prensa distribuida por la propia empresa (Observado: https://www.globenewswire.com/news-release/2026/04/06/3268532/0/en/Clozer-Launches-AI-Powered-Lead-Generation-System-to-Help-UAE-Businesses-Acquire-More-Clients.html). Tamaño del equipo: No observable.",
+   "hitos": [
+    "6 de abril de 2026: anuncio del lanzamiento de su sistema de generación de leads con IA (segmentación, secuencias automatizadas y scoring en tiempo real), distribuido vía GlobeNewswire y replicado en Benzinga, Yahoo Finance y otros; es una nota de prensa emitida por la propia empresa (Observado: https://www.globenewswire.com/news-release/2026/04/06/3268532/0/en/Clozer-Launches-AI-Powered-Lead-Generation-System-to-Help-UAE-Businesses-Acquire-More-Clients.html).",
+    "En la misma nota declara clientes en real estate, servicios financieros, SaaS y retail de lujo, y expansión prevista a Arabia Saudí y Baréin en Q3 2026; claims autodeclarados sin verificación externa (Observado: misma URL)."
+   ],
+   "stack": [
+    "Meta Pixel (fbevents.js / connect.facebook.net) — Observado en el HTML de la landing",
+    "Enlace directo de WhatsApp (wa.me) — Observado",
+    "Cloudflare (email-decode / cdn-cgi) — Observado",
+    "Next.js — Inferido por referencias 'next' en el HTML"
+   ],
+   "economics": {
+    "supuesto": "Estimado con limitación declarada: la tarifa principal es una cuota plana mensual personalizada y NO está publicada; la única cifra visible (AED 8.000 ≈ 1.840 €) es el valor declarado de su auditoría gratuita, no el fee.",
+    "calculo": "No es posible un cálculo unitario honesto con el precio dado. Única ancla observable: si su auditoría 'vale' AED 8.000, la cuota mensual de un servicio full-funnel (ads + creatividades + landing + CRM + WhatsApp) difícilmente será inferior a ese orden de magnitud, pero esto es especulación de rango, no un cálculo.",
+    "lectura": "Estimado: la opacidad del precio es en sí una señal de pricing por valor negociado cliente a cliente. Con 90% de retención declarada, su unidad económica sería el LTV por cliente retenido, no el fee del primer mes."
+   },
+   "fuentes": [
+    {
+     "url": "https://clozer.me/lead-generation-dubai",
+     "label": "Landing de Dubái (oferta, garantías, auditoría AED 8.000 — datos auditados en ficha)"
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2026/04/06/3268532/0/en/Clozer-Launches-AI-Powered-Lead-Generation-System-to-Help-UAE-Businesses-Acquire-More-Clients.html",
+     "label": "Nota de prensa de lanzamiento (fundador/CEO, sede, sectores, expansión prevista)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "edge-connection": {
+   "id": "edge-connection",
+   "resumen": "Edge Connection es el operador industrial clásico bien ejecutado: telemarketing B2B con empleados propios a tiempo completo en centros de inside sales de bajo coste (Fukuoka y Miyazaki) vendiendo a clientes corporativos de Tokio, lo que le da un arbitraje estructural de costes laborales frente a competidores capitalinos. Cobra desde ¥15.000/cita con pricing ajustado a la tasa de éxito estimada, es decir, traslada el riesgo al precio en lugar de asumirlo a ciegas. Con 19 años de trayectoria, 1.880 empresas acumuladas declaradas y crecimiento sostenido según fuentes locales, su ventaja es el volumen y la repetición de playbooks (listas, guiones iterados) más que la innovación. El servicio de mejora comercial post-cita alarga la relación y el ticket. Lectura editorial.",
+   "equipo": "Dirigida por su fundador 大村康雄 (Yasuo Omura), con sede en Shinagawa (Tokio), sucursal en Fukuoka y centros de inside sales en Fukuoka y Nobeoka (Miyazaki) (Observado: https://edge-connection.co.jp/corporate-profile/). El centro de Nobeoka emplea a unas 40 personas según el ayuntamiento de Nobeoka (Observado: https://www.city.nobeoka.miyazaki.jp/site/kigyorichi/30996.html). Plantilla total: No observable.",
+   "hitos": [
+    "Constituida en enero de 2007 (設立), según su propia página corporativa; el ayuntamiento de Nobeoka data el inicio de actividad del fundador en 2003 (Observado: https://edge-connection.co.jp/corporate-profile/ y https://www.city.nobeoka.miyazaki.jp/site/kigyorichi/30996.html).",
+    "Marzo de 2022: apertura del Miyazaki Inside Sales Center en Nobeoka (~40 empleados), dentro de una estrategia de expansión regional; el ayuntamiento cita además 7 años consecutivos de crecimiento de ingresos y 12 años de rentabilidad continua (Observado: https://www.city.nobeoka.miyazaki.jp/site/kigyorichi/30996.html).",
+    "Cuenta con licencia de agencia de colocación (有料職業紹介 13-ユ-314770) y certificación Privacy Mark, señales de diversificación hacia RRHH y de cumplimiento en manejo de datos (Observado: https://edge-connection.co.jp/corporate-profile/)."
+   ],
+   "stack": [
+    "Google Tag Manager (contenedor GTM-MS2Z5TQ) — Observado en el HTML de la landing",
+    "Google tag (gtag.js) — Observado"
+   ],
+   "economics": {
+    "supuesto": "Estimado. Precio dado: desde ¥15.000 por cita (≈81 €); mínimo operativo observable: capacidad para atender 10 citas/mes.",
+    "calculo": "10 citas/mes × ¥15.000 = ¥150.000/mes ≈ 810 €/cliente/mes en tarifa base. Con sus casos publicados de ~20% de cierre sobre citas, el cliente pagaría ≈ ¥75.000 (≈405 €) por venta conseguida, antes de impuesto.",
+    "lectura": "Estimado: el precio real por cita sube según la dificultad prevista del sector, así que ¥15.000 es suelo, no media. Operar con plantilla propia en Kyushu le permite sostener este precio con margen donde un centro en Tokio no podría."
+   },
+   "fuentes": [
+    {
+     "url": "https://edge-connection.co.jp/lp_telappointment/",
+     "label": "Landing de telemarketing (oferta, precio, casos — datos auditados en ficha)"
+    },
+    {
+     "url": "https://edge-connection.co.jp/corporate-profile/",
+     "label": "会社概要 (constitución 2007, CEO, oficinas, certificaciones)"
+    },
+    {
+     "url": "https://www.city.nobeoka.miyazaki.jp/site/kigyorichi/30996.html",
+     "label": "Ayuntamiento de Nobeoka (centro 2022, ~40 empleados, trayectoria)"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "salesbread": {
+   "id": "salesbread",
+   "resumen": "SalesBread es una boutique deliberadamente pequeña que monetiza la ultrapersonalización: cobra $3.000/mes por outbound de LinkedIn + email hecho a mano y ancla toda su venta en una promesa memorable ('1 lead cualificado al día o te devolvemos el dinero'). Su motor de captación real es el content marketing SEO del propio Jack Reamer: la web está llena de listículos de 'mejores agencias de lead gen' donde ellos aparecen, lo que les da demanda entrante barata. Al mantener el equipo en 1-10 personas evita el problema clásico de las agencias (degradación de calidad al escalar) y sostiene la garantía. El setup fee no publicado le da margen de negociación por cliente. Lectura editorial.",
+   "equipo": "Fundada y dirigida por Jack Reamer (Observado: https://salesbread.com/about/ y https://www.linkedin.com/in/jackreamer/). El directorio de SalesHive la describe como equipo de 1-10 empleados con sede en Medley, Florida (Observado: https://saleshive.com/vendors/salesbread — fuente de terceros, no verificada con LinkedIn company).",
+   "hitos": [
+    "Fundación en 2017 según el perfil de vendor de SalesHive (Observado: https://saleshive.com/vendors/salesbread; la propia web de SalesBread no publica fecha).",
+    "Cartera declarada de clientes SaaS/B2B como ProdPad, ClearGov, ChatLingual, eKomi, OneUp, Recurly y VPN.com (Observado, autodeclarado: https://salesbread.com/about/).",
+    "SalesHive le atribuye 500+ clientes servidos; cifra de directorio de terceros sin auditoría (Observado: https://saleshive.com/vendors/salesbread)."
+   ],
+   "stack": [
+    "WordPress con tema Divi — Observado en el HTML de la homepage",
+    "WP Rocket 3.21 (caché/rendimiento) — Observado (meta generator)",
+    "Google Tag Manager (contenedor GTM-WVP2WM7N) — Observado"
+   ],
+   "economics": {
+    "supuesto": "Estimado. Precio dado y confirmado: $3.000/mes (≈2.568 €) + setup único no publicado; garantía de 20+ leads cualificados/mes.",
+    "calculo": "$3.000 / 20 leads = $150 por lead cualificado ≈ 130 €/lead como coste máximo implícito para el cliente; si entregan más de 20, el CPL efectivo baja. Ingreso por cliente: ≈2.568 €/mes recurrente + setup.",
+    "lectura": "Estimado: con un equipo de 1-10 personas, una cartera de pocas decenas de clientes simultáneos a $3.000/mes ya genera ingresos de siete cifras anuales con estructura mínima. La garantía money-back es asumible porque el volumen prometido (1/día) está calibrado a su capacidad manual."
+   },
+   "fuentes": [
+    {
+     "url": "https://salesbread.com/",
+     "label": "Home (garantía 20+ SQL/mes o devolución — dato auditado en ficha)"
+    },
+    {
+     "url": "https://salesbread.com/about/",
+     "label": "Página About (fundador, clientes declarados)"
+    },
+    {
+     "url": "https://saleshive.com/vendors/salesbread",
+     "label": "Perfil de vendor en SalesHive (fundación 2017, 1-10 empleados, sede Florida, precio)"
+    },
+    {
+     "url": "https://www.linkedin.com/in/jackreamer/",
+     "label": "LinkedIn de Jack Reamer (fundador)"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "yallaleads": {
+   "id": "yallaleads",
+   "resumen": "YallaLeads es la jugada de productización de una agencia: PremiumPages (la agencia de Dubái que está detrás, entidad legal LANDING PAGES IO MARKETING MANAGEMENT FZE) empaqueta su know-how de Google Ads + landings en un SaaS de AED 849/mes donde el onboarding de 20 minutos y la preview sin tarjeta sustituyen al comercial. El cliente paga su propio gasto de Google sin markup, así que YallaLeads no toca media spend: su ingreso es cuota de plataforma pura, con margen de software y coste marginal bajo por cliente al estar el flujo automatizado. La entrega de leads por WhatsApp encaja con cómo compran los servicios locales en UAE. El riesgo del modelo es el churn: la garantía de 14 días y la ausencia de permanencia hacen que todo dependa de que los primeros leads lleguen rápido. Lectura editorial.",
+   "equipo": "Detrás de YallaLeads está la agencia PremiumPages.io, 'the agency behind YallaLeads' según su propia web; la entidad legal es LANDING PAGES IO MARKETING MANAGEMENT FZE (licencia 3564, Dubái), con Fabian Buengers como responsable (Observado: HTML de https://yallaleads.ae/ y https://yallaleads.ae/imprint). Tamaño del equipo: No observable; la landing declara '5+ años, 500+ campañas' del equipo previo, autodeclarado.",
+   "hitos": [
+    "Opera bajo la entidad LANDING PAGES IO MARKETING MANAGEMENT FZE, licencia comercial 3564, con sede en Barsha Heights, Dubái, y Fabian Buengers como responsable (Observado: https://yallaleads.ae/imprint).",
+    "Es un producto lanzado por la agencia PremiumPages.io, que declara 5+ años de trayectoria, 500+ campañas, 27k+ leads y AED 35M gestionados; todo autodeclarado en la propia landing, sin verificación externa (Observado: https://yallaleads.ae/)."
+   ],
+   "stack": [
+    "Analítica propia first-party (app.yallaleads.ae/yl-analytics.js) — Observado en el HTML",
+    "Widget/embed propio (app.yallaleads.ae/embed/yalla.js) — Observado",
+    "Google Fonts + Fontshare — Observado",
+    "Frontend con Vue — Inferido por referencias en el código; sin GTM, Meta Pixel ni chat de terceros detectados en la homepage"
+   ],
+   "economics": {
+    "supuesto": "Estimado. Precio dado: AED 849/mes de plataforma (≈198 €), setup AED 0, sin markup sobre el gasto de Google (AED 120–400/día recomendado, a cargo del cliente).",
+    "calculo": "Ingreso de YallaLeads: AED 849 ≈ 198 €/cliente/mes. Desembolso total del cliente a 150 AED/día: ~AED 5.349/mes (≈1.230 €), de los que solo el 16% es ingreso de YallaLeads; el resto va a Google.",
+    "lectura": "Estimado: es economía de SaaS, no de agencia — ticket bajo y margen alto por automatización, que exige volumen de clientes para ser negocio relevante. Al no tocar el media spend, su ingreso no crece con el presupuesto del cliente, solo con el número de cuentas."
+   },
+   "fuentes": [
+    {
+     "url": "https://yallaleads.ae/",
+     "label": "Home (oferta, precio AED 849, claims del equipo PremiumPages — datos auditados en ficha)"
+    },
+    {
+     "url": "https://yallaleads.ae/imprint",
+     "label": "Imprint (entidad legal, licencia 3564, responsable Fabian Buengers)"
+    },
+    {
+     "url": "https://premiumpages.io",
+     "label": "PremiumPages.io, agencia matriz enlazada desde el footer"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "b2b-leads-arquitectura-de-negocios": {
+   "id": "b2b-leads-arquitectura-de-negocios",
+   "resumen": "Consultora mexicana clásica de prospección B2B: vende a dueños y directivos la promesa de citas con decisores, apoyada en metodología propia (CRM, speech, checklist) y en una imagen de veteranía corporativa. Su modelo parece ser el de consultoría de ticket negociado caso a caso: al ocultar la tarifa, cada cierre pasa por una conversación comercial donde pueden ajustar precio al tamaño del cliente. Le funciona porque compite en un mercado (México B2B) con poca oferta especializada y se apoya en logos corporativos y antigüedad como prueba, más que en garantías medibles. Síntesis propia (Inferido) a partir de su web pública.",
+   "equipo": "No observable: su web pública no muestra página de equipo accesible (la sección 'Acerca de nosotros' no fue accesible en esta revisión) ni cifras de plantilla. Tiene página de empresa en LinkedIn (mx.linkedin.com/company/b2b-leads-arquitectura-de-negocios), sin recuento de empleados verificado en esta revisión.",
+   "hitos": [
+    "Perfil de empresa existente en Crunchbase (https://www.crunchbase.com/organization/b2b-leads-arquitectura-de-negocios) — Observado como listado; sin datos de funding públicos verificados.",
+    "Inferido: su web muestra logos de clientes subidos en 2018 (rutas wp-content/uploads/2018 en el HTML de la homepage), lo que indica actividad online desde al menos ese año. Los '18+ años' de experiencia son autodeclaración de su material, no verificados de forma independiente."
+   ],
+   "stack": [
+    "WordPress",
+    "Google Tag Manager / gtag (Google Analytics)",
+    "reCAPTCHA"
+   ],
+   "economics": {
+    "supuesto": "Estimado — no procede cálculo: la tarifa principal está oculta y la ficha auditada la marca como NO COMPROBADO.",
+    "calculo": "Sin una cifra pública verificable de fee no se puede construir una economía unitaria honesta; cualquier número sería inventado.",
+    "lectura": "El precio oculto sugiere pricing negociado por cliente, típico de consultoría B2B de ticket medio-alto en México. La promesa de 'ROI garantizado' sin fórmula pública impide contrastarla. (Estimado/Inferido)"
+   },
+   "fuentes": [
+    {
+     "url": "https://b2b-leads.com.mx/generacion-de-leads-mexico/",
+     "label": "Landing auditada (stack detectado en su HTML)"
+    },
+    {
+     "url": "https://b2b-leads.com.mx/",
+     "label": "Homepage — claims de clientes y navegación"
+    },
+    {
+     "url": "https://www.crunchbase.com/organization/b2b-leads-arquitectura-de-negocios",
+     "label": "Perfil Crunchbase (listado)"
+    },
+    {
+     "url": "https://mx.linkedin.com/company/b2b-leads-arquitectura-de-negocios",
+     "label": "Página de empresa en LinkedIn"
+    }
+   ],
+   "confianza": "baja",
+   "checkedAt": "23/08/2026"
+  },
+  "saleshive": {
+   "id": "saleshive",
+   "resumen": "SalesHive gana dinero cobrando una cuota mensual plana por un paquete integrado: SDRs humanos (100% US-based según su web), plataforma de IA propia, datos y dialer. Al ser dueña de la tecnología, cada cliente adicional le cuesta relativamente poco en software y el margen depende del coste del equipo humano (mezcla US/offshore según su propia página de pricing). El 'sin permanencia y sin setup fee' reduce la fricción de entrada y confía la retención a los resultados, lo que exige una máquina de delivery muy estandarizada. Con ~10 años de operación y cientos de empleados, es un negocio de escala: volumen de clientes sobre procesos repetibles, no consultoría artesanal. Síntesis propia (Inferido).",
+   "equipo": "Fundada en 2016 'como una startup de dos personas' (Observado, saleshive.com/about); hoy el directorio de LeadIQ la sitúa en la banda '201-500 empleados' con ~439 empleados a julio de 2026, con sede en Denver, Colorado (Observado, LeadIQ). Brendan Burnett figura como Co-Founder & CEO (Observado, ZoomInfo).",
+   "hitos": [
+    "Fundación en 2016 como startup de dos personas (Observado: https://saleshive.com/about).",
+    "Escala actual estimada de ~439 empleados (banda 201-500) a julio de 2026 (Observado: https://leadiq.com/c/saleshive/5d9237ce408f0cc3d9104841/employee-directory).",
+    "Autodeclaración en su web: 129K+ reuniones cualificadas, $2.5B+ de pipeline generado y 2.285 clientes (Observado como claim propio: https://saleshive.com/about). Estimación de terceros (GetLatka) de ~$51,4M de ARR sin funding externo — Estimado por tercero, no confirmado por la empresa (https://getlatka.com/companies/salesreplycom)."
+   ],
+   "stack": [
+    "Next.js (framework web)",
+    "Google Tag Manager / gtag (Google Analytics)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la cuota mensual plana existe ('One flat monthly fee', confirmado en su pricing) pero la cifra no es pública; depende de equipo US/offshore, canales y volumen.",
+    "calculo": "Sin fee público no procede un coste por reunión honesto. Como referencia de escala: el ARR de ~$51,4M estimado por GetLatka es una cifra de tercero no auditada, y los 2.285 clientes de su web son acumulados, no activos, así que dividir una por otra daría un ticket medio engañoso.",
+    "lectura": "El modelo de cuota plana con tecnología propia apunta a márgenes crecientes con la escala: el software se amortiza entre cientos de clientes y el coste variable real es el SDR. (Estimado)"
+   },
+   "fuentes": [
+    {
+     "url": "https://saleshive.com/about",
+     "label": "Página About — fundación 2016 y claims de volumen"
+    },
+    {
+     "url": "https://saleshive.com/pricing",
+     "label": "Pricing — cuota plana, sin setup, sin permanencia (ficha auditada)"
+    },
+    {
+     "url": "https://leadiq.com/c/saleshive/5d9237ce408f0cc3d9104841/employee-directory",
+     "label": "LeadIQ — ~439 empleados (jul 2026), sede Denver"
+    },
+    {
+     "url": "https://www.zoominfo.com/p/Brendan-Burnett/2081504659",
+     "label": "ZoomInfo — Brendan Burnett, Co-Founder & CEO"
+    },
+    {
+     "url": "https://getlatka.com/companies/salesreplycom",
+     "label": "GetLatka — ARR estimado por tercero (~$51,4M)"
+    },
+    {
+     "url": "https://saleshive.com/",
+     "label": "Homepage — stack detectado en su HTML"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "belkins": {
+   "id": "belkins",
+   "resumen": "Belkins vende appointment setting B2B como servicio premium productizado: paquetes desde ~$5.000 con citas garantizadas al año, ejecutados por equipos de researchers y SDRs (históricamente con fuerte base en Ucrania) cuyo coste laboral es muy inferior al fee estadounidense que cobra. Su motor comercial real son las reseñas: dominar los rankings de Clutch y G2 le genera demanda entrante constante sin depender de outbound propio. La garantía de citas convierte un servicio intangible en un contrato medible, lo que justifica el ticket alto y sostiene la retención. Síntesis propia (Inferido).",
+   "equipo": "Fundada en 2017 por Vladyslav Podoliako y Michael Maximoff; la propia empresa declara 300 empleados a finales de 2022, con direcciones en Dover (Delaware) y Denver (Colorado) (Observado: https://belkins.io/about-us).",
+   "hitos": [
+    "Fundación en 2017 por Podoliako y Maximoff; 300 empleados a finales de 2022 (Observado: https://belkins.io/about-us).",
+    "Reconocimientos: lista Inc. Mid-Atlantic de empresas de mayor crecimiento (2023); Clutch la sitúa #5 de 1.000 agencias globales y G2 la nombra Leader en Winter 2026, según su propia página About (Observado como autodeclaración con premios citados: https://belkins.io/about-us).",
+    "Escala de ingresos: entrevista pública del cofundador Michael Maximoff sobre cómo escaló Belkins a $15M (Observado como titular de tercero: https://www.project33.io/resources/how-michael-maximoff-scaled-belkins-to-15m-retention-pricing-profitability; cifra autodeclarada en entrevista, no auditada)."
+   ],
+   "stack": [
+    "Google Tag Manager (contenedor GTM-K75N78K)",
+    "HubSpot"
+   ],
+   "economics": {
+    "supuesto": "Estimado — tomando la referencia oficial anterior de la ficha: $8.000/mes con 100 citas garantizadas/año (artículo oficial de Belkins, 09/2025).",
+    "calculo": "$8.000 × 12 = $96.000/año ÷ 100 citas garantizadas ≈ $960 por cita cualificada garantizada (≈ 830 € al cambio de la ficha). Con el starter actual 'from $5,000' y sin periodo/volumen conciliados públicamente, el rango honesto queda abierto.",
+    "lectura": "A ~$960/cita el cliente solo rentabiliza con tickets de venta altos (deals de 5-6 cifras), lo que explica el foco de Belkins en B2B mid-market/enterprise. Para Belkins el margen sale del arbitraje entre fee US y coste de delivery offshore. (Estimado)"
+   },
+   "fuentes": [
+    {
+     "url": "https://belkins.io/about-us",
+     "label": "About — fundadores, 300 empleados (2022), premios"
+    },
+    {
+     "url": "https://belkins.io/appointment-setting",
+     "label": "Landing auditada — precio y garantía de citas"
+    },
+    {
+     "url": "https://belkins.io/blog/best-appointment-setting-companies",
+     "label": "Artículo oficial — $8.000/mes, 100 citas/año"
+    },
+    {
+     "url": "https://www.project33.io/resources/how-michael-maximoff-scaled-belkins-to-15m-retention-pricing-profitability",
+     "label": "Project 33 — entrevista 'scaled to $15M'"
+    },
+    {
+     "url": "https://belkins.io/",
+     "label": "Homepage — stack detectado en su HTML (GTM, HubSpot)"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "horizzon-media": {
+   "id": "horizzon-media",
+   "resumen": "Horizzon Media es un productized service hiperlocal para el nicho inmobiliario español: un único sistema (Meta Ads + cualificación + CRM) replicado agencia a agencia, cobrado a 980 €/mes con publicidad incluida y protegido por exclusividad de zona. Su economía real depende de mantener el coste por lead de propietario en Meta muy por debajo de los 24,5 € que implica su mínimo garantizado; la garantía de '40 leads o prolongamos gratis' traslada ese riesgo a su propia habilidad de compra de medios. La exclusividad por zona crea escasez artificial que justifica el precio y frena el churn. Le funciona porque vende un resultado concreto (leads de propietarios) a un cliente que odia hacer marketing. Síntesis propia (Inferido).",
+   "equipo": "La web declara 'un equipo con más de 4 años de experiencia captando propietarios online' y que la marca pertenece a Horizzon Labs, S.L. (CIF B22648075) (Observado: https://horizzonmedia.com/). No se han encontrado nombres de fundadores, plantilla ni página de LinkedIn con recuento de empleados: No observable. Inferido: el tamaño de la operación (marca de una S.L., sin página de equipo) sugiere estructura pequeña.",
+   "hitos": [
+    "Autodeclaración en su web: 20+ agencias cliente, 8.000+ leads generados y 94% de satisfacción, más casos nombrados (Ainhoa, Celsa, Sur Exclusivas) — Observado como claim propio sin auditoría independiente (https://horizzonmedia.com/)."
+   ],
+   "stack": [
+    "React + Vite (SPA)",
+    "Google Analytics 4 (gtag G-6JZ6CS5CPV, cargado desde el bundle JS)",
+    "Calendly (referencias en el bundle JS)",
+    "Avisos a clientes por WhatsApp y email (declarado en la web)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — precio público 980 €/mes + IVA con publicidad incluida y mínimo garantizado de 40 leads de propietarios/mes.",
+    "calculo": "980 € ÷ 40 leads = 24,50 € de ingreso máximo por lead entregado, del que Horizzon debe pagar además el ad spend de Meta. Si el coste real por lead de propietario en Meta fuera p. ej. 8-15 € (rango hipotético, no observado), quedarían ~380-660 €/mes por cliente para gestión, CRM y margen.",
+    "lectura": "El modelo solo es rentable con campañas muy optimizadas y plantillas replicadas entre zonas; la garantía de prolongación gratuita convierte un mal mes de Meta en coste directo para Horizzon, lo que presiona hacia la estandarización total. (Estimado)"
+   },
+   "fuentes": [
+    {
+     "url": "https://horizzonmedia.com/",
+     "label": "Homepage — precio, garantía, claims, Horizzon Labs S.L. y stack (bundle JS)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "hotlead": {
+   "id": "hotlead",
+   "resumen": "HotLead es una agencia polaca de cold calling/telemarketing B2B que ha alineado su cobro con el resultado: fijo mensual bajo (995 PLN), pago por conversación verificada con decisor (195-265 PLN) y un success fee del 1-5% de la venta. El fijo cubre la infraestructura mínima, el variable por lead paga la operación de llamadas y el porcentaje de venta captura upside cuando el cliente cierra, lo que le permite competir contra agencias de retainer alto. Le funciona porque en el mercado polaco de pymes industriales y de servicios el ticket de entrada bajo elimina la principal objeción (riesgo), y la verificación de cada conversación protege su reputación en reseñas. Síntesis propia (Inferido).",
+   "equipo": "Piotr Wolniewicz figura como CEO de hotLead.pl en la propia web, que se describe como 'equipo de expertos en ventas B2B, telemarketing y cold calling' con sede en ul. Krzyżowa 5/3, Poznań (Observado: https://hotlead.pl/). Tiene página de empresa en LinkedIn (https://www.linkedin.com/company/hotleadpl); tamaño de plantilla: No observable en esta revisión.",
+   "hitos": [
+    "Autodeclaración en su web: 4,8/5 en Google, ROI medio 3,7× y 92% de clientes con mejora tras 2 meses — Observado como claim propio, sin auditoría independiente (https://hotlead.pl/).",
+    "Publica contenido propio de posicionamiento (rankings de agencias de lead generation en Polonia, guías sectoriales), señal de estrategia SEO activa (Observado: https://hotlead.pl/pozyskiwanie-klientow/najlepsze-firmy-generujace-leady-w-polsce-ranking/)."
+   ],
+   "stack": [
+    "WordPress",
+    "Elementor",
+    "Google Analytics 4 (gtag G-CG191GK9JQ)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — precio confirmado de la ficha: 995 PLN/mes fijo + 195-265 PLN por lead + 1-5% de la venta; campaña mínima de 20 leads. Conversión aproximada 1 EUR ≈ 4,3 PLN.",
+    "calculo": "Campaña mínima: 995 + 20 × (195 a 265) = 4.895 a 6.295 PLN (~1.140-1.460 €) antes del success fee. Coste total por lead verificado: ~245-315 PLN (~57-73 €), más el 1-5% si hay venta.",
+    "lectura": "Ticket de entrada muy bajo para el estándar del sector: HotLead asume el riesgo de las llamadas improductivas (solo cobra conversaciones que cumplen su condición de oportunidad) y lo compensa con el porcentaje sobre ventas cerradas. (Estimado)"
+   },
+   "fuentes": [
+    {
+     "url": "https://hotlead.pl/",
+     "label": "Homepage — CEO, sede, claims, precios y stack detectado en su HTML"
+    },
+    {
+     "url": "https://www.linkedin.com/company/hotleadpl",
+     "label": "Página de empresa en LinkedIn"
+    },
+    {
+     "url": "https://hotlead.pl/pozyskiwanie-klientow/najlepsze-firmy-generujace-leady-w-polsce-ranking/",
+     "label": "Contenido SEO propio (ranking de agencias)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "persuade": {
+   "id": "persuade",
+   "resumen": "Persuade vende 'infraestructura de ingresos': externaliza la función SDR completa (ICP, datos, secuencias, outreach y cualificación) a empresas B2B con ciclos de venta complejos, cobrando honorarios mensuales fijados en cotización privada. Gana dinero por el arbitraje clásico del SDR externalizado: talento comercial en Ciudad del Cabo facturado a clientes internacionales (UK, Europa, Nordics según sus propias landings geográficas), con casos de peso (Thales, iKhokha) como prueba social. Le funciona porque vende reuniones cualificadas —el cuello de botella más caro del B2B— sin garantizar resultado comercial (su SLA lo excluye expresamente), limitando su riesgo a un mes de honorarios. [Síntesis inferida de fuentes observadas]",
+   "equipo": "No observable el tamaño del equipo ni fundadores en fuentes públicas consultadas. Directorio Salesforge la sitúa en Ciudad del Cabo, Sudáfrica (https://www.salesforge.ai/directory/agencies/persuade); su web declara servir a '30+ marcas' y muestra landings para UK, Europa, Nordics y Sudáfrica (https://www.persuade.co.za/).",
+   "hitos": [
+    "Sede en Ciudad del Cabo, Sudáfrica, según el directorio Salesforge (https://www.salesforge.ai/directory/agencies/persuade)",
+    "Caso publicado con Thales Security: generación de leads cualificados y aumento de pipeline, citado en su propia homepage (https://www.persuade.co.za/) — métrica autodeclarada",
+    "Nota de prensa propia en feb-2026 posicionándose como 'Revenue Infrastructure Solutions' (https://express-press-release.net/news/2026/02/26/1739095) — comunicación de la propia empresa"
+   ],
+   "stack": [
+    "WordPress + Elementor (meta generator Elementor 4.2.3)",
+    "Google tag (gtag.js)",
+    "Meta Pixel (fbevents.js / connect.facebook.net)",
+    "Calendly (reserva de llamadas)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la tarifa es privada (cotización + Scope of Work), así que no hay base pública para un cálculo unitario honesto. Único ancla observable: sus casos declaran 83 demos/6 meses (Five Star) y 54 demos/2 meses (Thales).",
+    "calculo": "No calculable con datos públicos: sin fee mensual publicado no se puede estimar coste por demo ni margen. Los retainers de SDR externalizado son mensuales y el SLA limita responsabilidad a 1 mes de honorarios (ficha auditada).",
+    "lectura": "Estimado: el modelo apunta a margen por arbitraje salarial (equipo en Sudáfrica, clientes en UK/Europa/EE. UU.) con riesgo acotado contractualmente; sin precio público, la economía unitaria concreta es No observable."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.persuade.co.za/",
+     "label": "Homepage Persuade (HTML analizado 23/08/2026: stack, casos, posicionamiento)"
+    },
+    {
+     "url": "https://www.salesforge.ai/directory/agencies/persuade",
+     "label": "Ficha en directorio Salesforge (ubicación Cape Town, servicios)"
+    },
+    {
+     "url": "https://express-press-release.net/news/2026/02/26/1739095",
+     "label": "Nota de prensa propia feb-2026 (reposicionamiento 'revenue infrastructure')"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "senbon-knock": {
+   "id": "senbon-knock",
+   "resumen": "Senbon Knock es una micro-empresa japonesa recién creada (jul-2025, capital de solo ¥300.000, sede en un coworking de Nagasaki) que vende outbound por formularios web a ¥30 el envío: un negocio de volumen y coste marginal bajísimo donde el trabajo real es la lista, el research y el mensaje, y el envío es casi commodity. Gana dinero cobrando por actividad (envíos) con upsell opcional a éxito (¥5.000-¥100.000 por respuesta/cita/venta), lo que le permite facturar sin asumir riesgo de resultado. Le funciona —si le funciona— porque el ticket de entrada (¥3.000) elimina toda fricción de compra; pero sin casos ni métricas publicadas, la tracción real es No observable. [Síntesis inferida de fuentes observadas]",
+   "equipo": "Observado en su web: representante 山下拓郎 (Takuro Yamashita), capital ¥300.000, sede en coworking 'Diagonal Run Nagasaki' (FFG Shianbashi Bldg, Nagasaki) con atención solo con cita previa — señales de empresa unipersonal o micro (https://senbon-knock.co.jp/). Tamaño exacto del equipo: No observable.",
+   "hitos": [
+    "Constitución de 株式会社千本ノック el 07/07/2025, según la sección de información corporativa de su propia web (https://senbon-knock.co.jp/)",
+    "Modelo multi-servicio declarado: form sales, apoyo a nuevos negocios, inbound (turismo), IA y creación de webs/LP — empresa en fase de exploración de líneas, coherente con su lema 'el senbon knock de los negocios' (https://senbon-knock.co.jp/)"
+   ],
+   "stack": [
+    "Tailwind CSS por CDN (web estática artesanal)",
+    "Font Awesome por CDN",
+    "Formspree (formulario de contacto)",
+    "Sin GTM, píxeles ni chat detectados en el HTML (23/08/2026)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — precio auditado: ¥30/envío (mín. 100 envíos = ¥3.000), con éxito opcional de ¥15.000/cita. Supongo un cliente tipo de 2.000 envíos/mes (su propio ejemplo de tarifa).",
+    "calculo": "2.000 envíos × ¥30 = ¥60.000/mes (~380 € a ~158 ¥/€). Si el cliente añade éxito y logra 2 citas: +¥30.000. Ingreso por cliente ~¥60.000-90.000/mes; con envío semi-automatizado, el coste variable principal es la mano de obra de research/redacción.",
+    "lectura": "Estimado: negocio de ticket muy bajo que necesita muchos clientes simultáneos o el upsell a éxito para ser rentable; el precio de ¥30/envío sugiere competir por coste en un mercado japonés de form-eigyo muy poblado."
+   },
+   "fuentes": [
+    {
+     "url": "https://senbon-knock.co.jp/",
+     "label": "Web corporativa (info societaria: constitución 07/07/2025, representante, capital, sede; HTML analizado 23/08/2026)"
+    },
+    {
+     "url": "https://senbon-knock.co.jp/form-sales.html",
+     "label": "Landing del servicio de form sales (tarifas ¥30/envío y opción a éxito)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "everconnect": {
+   "id": "everconnect",
+   "resumen": "EverConnect es un broker de demanda a escala industrial: compra intención de compra en servicios del hogar (search, medios propios como Remodeling.com, redes de afiliados) y la revende como llamadas en vivo filtradas a fontaneros, techadores o restauradores a $90-$1.460 por llamada según categoría. Su margen es el spread entre el coste de generar la llamada y el precio por categoría, protegido por reglas de facturación favorables (una llamada no atendida tras 4 tonos se factura). Le funciona porque el contratista solo paga por llamadas que cumplen sus criterios —riesgo percibido bajo— mientras EverConnect monetiza el mismo motor de adquisición contra miles de compradores. Tras pasar por EverCommerce (cotizada), ahora alimenta la estrategia 'national-to-local' de la agencia Ignite Visibility. [Síntesis inferida de fuentes observadas]",
+   "equipo": "Tamaño de plantilla: No observable en fuentes públicas consultadas. Señales: General Manager Adam Hutcheson nombrado en la nota de adquisición de oct-2025 (https://www.businesswire.com/news/home/20251031093375/en/); nació como grupo de performance marketing de EverCommerce, que sirve a 500.000+ negocios de servicios (https://www.prnewswire.com/news-releases/announcing-the-launch-of-everconnect-a-performance-marketing-and-lead-generation-platform-301391182.html).",
+   "hitos": [
+    "05/10/2021: EverCommerce (Nasdaq: EVCM) lanza EverConnect unificando Keyword Connects, 33 Mile Radius y Remodeling.com, con tres productos (Live, Direct, Marketplace) (https://www.prnewswire.com/news-releases/announcing-the-launch-of-everconnect-a-performance-marketing-and-lead-generation-platform-301391182.html)",
+    "31/10/2025: Ignite Visibility (participada por Mountaingate Capital) adquiere EverConnect a EverCommerce; cuarta adquisición de Ignite desde 2023, con financiación de Capital Southwest y Main Street Capital (https://www.businesswire.com/news/home/20251031093375/en/)"
+   ],
+   "stack": [
+    "Webflow (data-wf-site, assets website-files.com)",
+    "Google Tag Manager (GTM-5HPSMJ5J)",
+    "Formulario integrado con HubSpot ('EverConnect Hubspot Form' en el HTML)",
+    "Logos de partners (Salesforce, etc.) en ticker de confianza"
+   ],
+   "economics": {
+    "supuesto": "Estimado — precios auditados: fontanería $90-$360/llamada, techados $335-$505, daños por agua $185-$1.460. Supongo un fontanero comprando 20 llamadas cualificadas/mes al punto medio (~$225).",
+    "calculo": "20 × $225 = $4.500/mes (~3.890 € a 1,1567 USD/EUR). Si, como declara su página de fontanería, los mejores partners convierten 7 de cada 10 llamadas, 14 trabajos/mes harían rentable el coste para el contratista; el margen de EverConnect es el spread entre su coste de adquisición por llamada y ese precio de venta (spread No observable).",
+    "lectura": "Estimado: modelo de revendedor de intención con precio por categoría según valor del trabajo (daños por agua hasta $1.460); la clave del negocio es comprar tráfico/llamadas por debajo del precio de tarifa y las reglas de facturación (llamada no contestada = facturable) engordan el margen efectivo."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.everconnect.com/services/pay-per-call",
+     "label": "Página pay-per-call (precios por categoría; homepage HTML analizado 23/08/2026: Webflow, GTM, HubSpot)"
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/announcing-the-launch-of-everconnect-a-performance-marketing-and-lead-generation-platform-301391182.html",
+     "label": "PR Newswire 05/10/2021: lanzamiento por EverCommerce (marcas unificadas, productos)"
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20251031093375/en/Ignite-Visibility-Partners-with-Leading-Marketing-Technology-Services-Provider-EverConnect-to-Deepen-Lead-Generation-Home-Services-and-Healthcare-Capabilities",
+     "label": "Business Wire 31/10/2025: adquisición por Ignite Visibility"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "handv-rker-dk": {
+   "id": "handv-rker-dk",
+   "resumen": "Håndværker.dk monetiza la confianza, no el lead: su marketplace atrae al propietario con presupuestos comparables gratis y retiene al artesano con un ecosistema de contrato digital, pago en depósito, reseñas verificadas e inspecciones aleatorias, cobrando al lado profesional (tarifas no públicas). Gana dinero porque en reformas —ticket alto, desconfianza alta— resolver el miedo al impago y a la chapuza vale más que el lead en sí, y eso justifica la membresía/comisión del artesano. Con 13 empleados registrados y pérdidas recientes (-951k DKK), es un negocio consolidado en marca (desde 2006/2009) pero aún ajustado en rentabilidad. [Síntesis inferida de fuentes observadas]",
+   "equipo": "Su página 'Om os' declara 'más de 30 empleados' en oficinas de Amager, Copenhague, y como fundador a Simon Klug, carpintero de origen (https://www.haandvaerker.dk/om/haandvaerkerdk); el registro mercantil (proff.dk, CVR 29792526) recoge 13 empleados y a Simon Arne Klug como director (https://www.proff.dk/firma/h%C3%A5ndv%C3%A6rker.dk-as/k%C3%B8benhavn-s/patentbureauer/0HQK26I01A0) — discrepancia entre autodeclaración y registro.",
+   "hitos": [
+    "Sociedad registrada el 22/09/2006 (CVR 29792526) según proff.dk; la propia web fecha el lanzamiento de la plataforma en 2009 por Simon Klug (https://www.proff.dk/firma/h%C3%A5ndv%C3%A6rker.dk-as/k%C3%B8benhavn-s/patentbureauer/0HQK26I01A0 y https://www.haandvaerker.dk/om/haandvaerkerdk)",
+    "Escala declarada en su web: 97.575+ artesanos asociados y 55.518+ tareas nuevas publicadas (https://www.haandvaerker.dk/) — cifras autodeclaradas",
+    "Resultado del ejercicio cerrado sep-2025: pérdida de 951.000 DKK según cuentas públicas en proff.dk (https://www.proff.dk/firma/h%C3%A5ndv%C3%A6rker.dk-as/k%C3%B8benhavn-s/patentbureauer/0HQK26I01A0)"
+   ],
+   "stack": [
+    "Aplicación Vue.js (SPA propia)",
+    "Google Tag Manager (GTM-TNX4KP) + gtag",
+    "Meta Pixel (connect.facebook.net)",
+    "Hotjar",
+    "reCAPTCHA"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la tarifa al profesional no es pública (la ficha auditada lo confirma), así que no hay base para un cálculo unitario honesto del lado de ingresos.",
+    "calculo": "No calculable con datos públicos. Anclas observadas: 13 empleados registrados y pérdida de -951k DKK (~127.000 €) en el último ejercicio; con ~55.500 tareas/año declaradas, bastaría un ingreso medio bajo por tarea/membresía para cubrir una estructura de ese tamaño, pero el precio real es No observable.",
+    "lectura": "Estimado: marketplace de dos lados donde paga el artesano; las cuentas públicas sugieren que a día de hoy opera cerca del punto de equilibrio o en pérdida ligera pese a 15+ años de marca."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.haandvaerker.dk/",
+     "label": "Homepage (HTML analizado 23/08/2026: stack, cifras de artesanos y tareas)"
+    },
+    {
+     "url": "https://www.haandvaerker.dk/om/haandvaerkerdk",
+     "label": "Página 'Om os' (fundador Simon Klug, 2009, 30+ empleados declarados)"
+    },
+    {
+     "url": "https://www.proff.dk/firma/h%C3%A5ndv%C3%A6rker.dk-as/k%C3%B8benhavn-s/patentbureauer/0HQK26I01A0",
+     "label": "Registro proff.dk CVR 29792526 (startdato 2006, 13 empleados, resultado -951k DKK, dirección)"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "leads-dubai": {
+   "id": "leads-dubai",
+   "resumen": "Leads Dubai es una agencia generalista de generación de leads y telemarketing en EAU, fundada y dirigida por Mukesh Pandey desde 2013, que gana dinero apilando cuatro modelos de cobro sobre el mismo call center: setup + lista (AED 3.000-10.000), retainer mensual (AED 8.000-35.000), y variables por llamada/cita/lead. Le funciona porque el menú de precios por bandas captura tanto al cliente pequeño que quiere pagar por cita como al que firma retainers de 5-10 agentes, en un mercado —Dubái— con demanda constante de prospección multilingüe y costes laborales contenidos. La prueba social es amplia pero poco auditada (benchmarks comerciales, reseñas Google 3,8/5). [Síntesis inferida de fuentes observadas]",
+   "equipo": "Fundada por Mukesh Pandey (MBA por XLRI, ex American Express, RAK Bank, Axis Bank) en junio de 2013; The Org la clasifica en 11-50 empleados (https://theorg.com/org/leads-dubai/org-chart/mukesh-pandey) y DesignRush en 'menos de 49', con sede en Dubai Silicon Oasis (https://www.designrush.com/agency/profile/leads-dubai).",
+   "hitos": [
+    "Fundación en junio de 2013 por Mukesh Pandey (https://theorg.com/org/leads-dubai/org-chart/mukesh-pandey)",
+    "Cartera declarada con clientes como Creative Zone, Ignite School o NMC Hospitals, y 3,8/5 sobre 111 reseñas de Google según DesignRush (https://www.designrush.com/agency/profile/leads-dubai)"
+   ],
+   "stack": [
+    "Google Tag Manager + gtag",
+    "Meta Pixel (fbevents.js)",
+    "Enlaces wa.me (WhatsApp como canal de contacto)",
+    "reCAPTCHA v3",
+    "Trackers de terceros: mxradon y waconvt.ampwordco.com (tracking de conversión WhatsApp) detectados en el HTML"
+   ],
+   "economics": {
+    "supuesto": "Estimado — precios auditados: AED 80-350/cita, AED 8-25/llamada, retainer AED 8.000-35.000/mes, setup AED 3.000-10.000. Supongo un cliente medio en retainer bajo (AED 12.000/mes) con setup de AED 5.000.",
+    "calculo": "Año 1 del cliente: 5.000 + 12×12.000 = AED 149.000 (~34.600 € a ~0,2325 €/AED, tipo implícito de la ficha). Si ese retainer produce ~40 citas/mes al precio medio por cita (AED 215), el equivalente unitario sería AED 8.600/mes, muy por debajo del retainer: cobrar por agente/mes rinde más que cobrar por cita.",
+    "lectura": "Estimado: la estructura de precios empuja al cliente hacia setup + retainer (ingreso recurrente y predecible) mientras las opciones por cita/lead funcionan como puerta de entrada; el margen depende del coste del agente en EAU frente al retainer, no observable públicamente."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.leadsdubai.com/cold-calling-plans-business/",
+     "label": "Página de planes de cold calling (bandas de precios auditadas; homepage HTML analizado 23/08/2026: stack)"
+    },
+    {
+     "url": "https://theorg.com/org/leads-dubai/org-chart/mukesh-pandey",
+     "label": "The Org: fundador Mukesh Pandey, jun-2013, 11-50 empleados"
+    },
+    {
+     "url": "https://www.designrush.com/agency/profile/leads-dubai",
+     "label": "DesignRush: ubicación, tamaño <49, clientes y reseñas"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "losleads": {
+   "id": "losleads",
+   "resumen": "LosLeads vende un resultado de venta, no marketing: cobra por entregar citas B2B ya agendadas con briefing completo del prospecto, absorbiendo todo el embudo previo (landing, secuencias de email/WhatsApp, cualificación). Al ocultar el precio y tratar 'cada caso como diferente', puede fijar tarifas según el valor del ticket del cliente en lugar de competir por precio. Su funcionamiento depende de que el coste de generar y cualificar cada cita quede muy por debajo de lo que un negocio B2B con tomador de decisiones está dispuesto a pagar por una reunión ya calentada. Síntesis propia (Inferido a partir de su web pública).",
+   "equipo": "No observable: la web pública (losleads.com/es) no muestra página de equipo, nombres de fundadores ni sede física, y no se localizó página de LinkedIn de empresa con recuento de empleados en las búsquedas realizadas. Solo consta la marca y el copyright '© 2026 LosLeads' en su home (https://www.losleads.com/es).",
+   "hitos": [],
+   "stack": [
+    "Next.js/React (framework observado en el HTML)",
+    "Google tag (gtag.js)",
+    "Meta Pixel (fbq / connect.facebook.net)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la ficha auditada confirma que no publica precios ('cada caso es diferente'), por lo que no existe base numérica honesta para un cálculo unitario.",
+    "calculo": "No calculable con datos públicos: sin fee conocido no se puede estimar margen por cita ni coste por cliente.",
+    "lectura": "Lo único afirmable es estructural (Inferido): un modelo de citas B2B con precio opaco suele fijar tarifa por valor percibido de cada reunión; sin cifra pública, cualquier número sería inventado."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.losleads.com/es",
+     "label": "Home LosLeads (oferta, copy y HTML analizado para stack)"
+    }
+   ],
+   "confianza": "baja",
+   "checkedAt": "23/08/2026"
+  },
+  "lucid-leads": {
+   "id": "lucid-leads",
+   "resumen": "Lucid Leads empaqueta funnel + anuncios de pago + cualificación humana en menos de 10 minutos y lo vende como un resultado contractual ('30 leads cualificados en 30 días o devolución'), lo que le permite cobrar como servicio premium y no como agencia por horas. La garantía por contrato desplaza el riesgo percibido al proveedor y actúa como su principal arma de captación en un mercado neozelandés de pymes de servicios (oficios, inmobiliario, automoción). Nace como spin-off especializado de una agencia generalista previa (Lucid Media), es decir, monetiza procesos ya rodados con una oferta más agresiva. Síntesis propia (Inferido a partir de fuentes observadas).",
+   "equipo": "Según su propia página About, la fundó Jason Poonia (antes fundador de la agencia Lucid Media, 2019) y opera con un equipo de unos 5 especialistas desde Auckland (60 Highbrook Drive) — autodeclarado, sin verificación independiente (https://www.lucidleads.co.nz/about).",
+   "hitos": [
+    "Fundada en 2021 como servicio especializado de generación de leads, derivada de Lucid Media (agencia creada en 2019 por el mismo fundador) — autodeclarado en https://www.lucidleads.co.nz/about",
+    "Afirma más de 10.000 leads cualificados entregados a negocios de servicios de Nueva Zelanda y 5,0 estrellas con 66 reseñas de Google — claims propios en https://www.lucidleads.co.nz/about (las 66 reseñas también aparecen en la home)"
+   ],
+   "stack": [
+    "Google Tag Manager (GTM-PR57XBP4)",
+    "Calendly (agenda de llamadas)",
+    "Hosting en Vercel"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la ficha auditada confirma que no publica el precio de la oferta garantizada, así que no hay base honesta para un cálculo unitario con cifras.",
+    "calculo": "No calculable: sin fee mensual público no se puede estimar coste por lead entregado ni margen. Solo cabe la aritmética condicional (Estimado): con 30 leads/mes garantizados, cada 100 NZD de fee mensual equivalen a ~3,3 NZD por lead de precio implícito.",
+    "lectura": "El modelo solo es rentable si su coste real por lead cualificado (medios + cualificación humana) queda claramente por debajo del fee prorrateado por los 30 leads; la garantía de devolución 100% le obliga a operar con margen de seguridad en la entrega."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.lucidleads.co.nz/",
+     "label": "Home Lucid Leads (oferta, 66 reseñas, HTML analizado para stack)"
+    },
+    {
+     "url": "https://www.lucidleads.co.nz/about",
+     "label": "Página About (fundador, año, equipo, claims de resultados)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "redsale": {
+   "id": "redsale",
+   "resumen": "Redsale gana dinero como intermediario puro: el cliente final busca gratis y el profesional paga una comisión individual por pedido, visible antes de aceptar, lo que convierte cada solicitud publicada en inventario vendible sin que Redsale ejecute ningún servicio. Su activo real es la confianza agregada (verificaciones, cientos de miles de reseñas mostradas) que abarata la captación orgánica de ambos lados del marketplace. Al ser un negocio de plataforma con equipo mínimo autodeclarado, el apalancamiento operativo es alto: el coste marginal de un pedido adicional es casi nulo. Síntesis propia (Inferido a partir de fuentes observadas).",
+   "equipo": "Según su página about-us, el núcleo son 8 personas, con los hermanos Viktor y Denis Mashukov como fundadores, más desarrolladores, managers, SEO y diseño — autodeclarado (https://redsale.by/about-us). Un directorio bielorruso asocia RedSale.by al registro fiscal УНП 491333878 a nombre de 'IP Mashukov D.V.' (https://dumki.by/firm/ip-mashukov-d-v), coherente con esa fundación familiar.",
+   "hitos": [
+    "Lanzada en 2014 en la región de Gómel y con cobertura nacional en Bielorrusia hacia 2018 — autodeclarado en https://redsale.by/about-us",
+    "Expansión internacional: Rusia desde 2024 y Kazajistán/Kirguistán en 2026, según su propia página about-us (https://redsale.by/about-us)",
+    "La página about-us declara más de 134.670 emparejamientos exitosos, 7.320+ profesionales registrados y 600+ categorías; la home muestra una media de 4,9 sobre 200.619 reseñas — claims propios (https://redsale.by/about-us y https://redsale.by/)"
+   ],
+   "stack": [
+    "Svelte (framework observado en el HTML)",
+    "Meta de verificación de Yandex Webmaster",
+    "Enlace a comunidad VK"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la ficha auditada confirma que la comisión por pedido no es pública y varía por categoría y ciudad, así que no hay cifra base honesta.",
+    "calculo": "No calculable en importes. Solo aritmética estructural (Estimado): con 134.670 emparejamientos acumulados autodeclarados desde 2014, cada unidad monetaria media de comisión por pedido multiplica directamente el ingreso acumulado, con coste marginal de plataforma cercano a cero y una plantilla nuclear de 8 personas.",
+    "lectura": "La economía depende del volumen y de la tasa de aceptación de pedidos por los profesionales, no del importe de cada comisión; sin la comisión media pública, cualquier cifra de ingresos sería inventada."
+   },
+   "fuentes": [
+    {
+     "url": "https://redsale.by/",
+     "label": "Home Redsale (modelo, reseñas, HTML analizado para stack)"
+    },
+    {
+     "url": "https://redsale.by/about-us",
+     "label": "Página about-us (historia, equipo, estadísticas, expansión)"
+    },
+    {
+     "url": "https://dumki.by/firm/ip-mashukov-d-v",
+     "label": "Directorio dumki.by (УНП 491333878, IP Mashukov D.V.)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "99-calls": {
+   "id": "99-calls",
+   "resumen": "99 Calls gana dinero con suscripciones mensuales escalonadas (99–999 USD) a contratistas locales de EE. UU., a las que suma un 15% del presupuesto publicitario desde el plan Growth: ingreso recurrente base más un componente que crece con el gasto en Ads del cliente. La garantía se limita a la calidad del lead (reembolso por spam o números erróneos) y al 'sin contratos', no a un volumen prometido, lo que reduce su riesgo frente a competidores que garantizan resultados. Es un negocio familiar longevo (fundado por Fred y Diane) que funciona por retención: web, SEO local, GBP, Ads y CRM crean coste de cambio para el contratista. Síntesis propia (Inferido a partir de fuentes observadas).",
+   "equipo": "Su página de equipo muestra a los cofundadores Fred (presidente, IT) y Diane (operaciones) más 6-7 especialistas nombrados (SEO, Ads, atención al cliente) (https://99calls.com/Meet-The-Team.htm). El perfil de LeadIQ estima '11-50 empleados' (~19 en julio de 2026) con sede en Bradenton, Florida — estimación de terceros (https://leadiq.com/c/99-calls/5a1db04a2300005900a7c23a).",
+   "hitos": [
+    "Fundada en 2010 según el perfil de LeadIQ (https://leadiq.com/c/99-calls/5a1db04a2300005900a7c23a); la historia en su página de equipo encaja: Diane vendió su empresa de limpieza en 2010 para lanzar 99 Calls con Fred (https://99calls.com/Meet-The-Team.htm)",
+    "Afirma haber ayudado a más de 1.000 contratistas en EE. UU. y Canadá — autodeclaración recogida en la ficha auditada y en su blog (https://99calls.com/blog/comparison-of-10-lead-generation-companies-for-service-businesses-and-why-99-calls-is-the-top-choice)"
+   ],
+   "stack": [
+    "Google tag (gtag.js)",
+    "reCAPTCHA en formularios",
+    "Stripe (pagos)",
+    "React (componentes observados en el HTML)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — precios confirmados en ficha: Essentials 99 USD/mes (setup 249), Growth 199 USD/mes + 15% del presupuesto de Ads (setup 399), Growth Pro 999 USD/mes + 15% (setup 999). Supongo un cliente Growth con 1.000 USD/mes de presupuesto publicitario.",
+    "calculo": "Cliente Growth tipo: 199 + 15% × 1.000 = 349 USD/mes para 99 Calls (~302 €/mes al cambio de la ficha), más 399 USD de setup el primer mes. A 12 meses: ~4.587 USD por cliente. Con los 1.000+ contratistas acumulados autodeclarados (no simultáneos), la base recurrente plausible es de cientos de miles de USD/año — orden de magnitud Estimado, no cifra observada.",
+    "lectura": "El 15% sobre Ads alinea el ingreso con el crecimiento del cliente sin asumir riesgo de resultado, y el 'sin contratos' obliga a retener por servicio; la clave del margen es automatizar SEO/GBP/CRM con un equipo de ~10-19 personas."
+   },
+   "fuentes": [
+    {
+     "url": "https://99calls.com/Pricing",
+     "label": "Página de precios (tarifas confirmadas en la ficha auditada)"
+    },
+    {
+     "url": "https://99calls.com/Meet-The-Team.htm",
+     "label": "Página de equipo (fundadores, plantilla, historia)"
+    },
+    {
+     "url": "https://leadiq.com/c/99-calls/5a1db04a2300005900a7c23a",
+     "label": "Perfil LeadIQ (empleados estimados, fundación 2010, sede)"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "builderscrack": {
+   "id": "builderscrack",
+   "resumen": "Builderscrack monetiza el lado profesional de un marketplace de reformas: el propietario publica gratis y el tradie verificado paga tokens solo cuando el cliente acepta conectar, es decir, cobra por intención confirmada y no por lead frío. Casi dos décadas de operación y cientos de miles de reseñas verificadas le dan un foso de confianza que abarata la captación orgánica de ambos lados. Que hipages pagara 11,8 millones de dólares australianos por la plataforma en 2021 valida que ese flujo recurrente de conexiones tiene valor estratégico más allá de la comisión unitaria. Síntesis propia (Inferido a partir de fuentes observadas).",
+   "equipo": "Según Wikipedia, fue creada por tres cofundadores: Mark Dickson, Jeremy Wyn-Harris (desarrollador de software) y Keith Roberts (https://en.wikipedia.org/wiki/Builderscrack.co.nz); Wyn-Harris aparece como portavoz en la cobertura de la venta a hipages (https://www.smartcompany.com.au/finance/mergers-and-acquisitions/hipages-acquires-new-zealand-tradie-platform-builderscrack/). Tamaño de plantilla actual: No observable en las fuentes consultadas.",
+   "hitos": [
+    "Fundada en 2006 en Nueva Zelanda a raíz de la frustración de Mark Dickson reformando su casa (https://en.wikipedia.org/wiki/Builderscrack.co.nz)",
+    "Tras el terremoto de Canterbury (2010) creó una función específica para conectar tradies con propietarios afectados por la reconstrucción (https://en.wikipedia.org/wiki/Builderscrack.co.nz)",
+    "Adquirida en diciembre de 2021 por la australiana hipages por 11,8 millones de AUD (https://www.smartcompany.com.au/finance/mergers-and-acquisitions/hipages-acquires-new-zealand-tradie-platform-builderscrack/)"
+   ],
+   "stack": [
+    "Google tag (gtag.js)",
+    "Meta Pixel (fbq / connect.facebook.net)",
+    "Zendesk (soporte)"
+   ],
+   "economics": {
+    "supuesto": "Estimado — la ficha auditada confirma que los importes de los tokens no son públicos, así que no cabe un cálculo de comisión unitaria; sí hay dos anclas observadas: 8.900+ trabajos/mes autodeclarados (páginas Pro) y la adquisición por 11,8 M AUD en 2021.",
+    "calculo": "Aritmética condicional (Estimado): a 8.900 trabajos/mes, cada 10 NZD de ingreso medio por trabajo conectado supondrían ~89.000 NZD/mes (~1,07 M NZD/año); el precio de adquisición de 11,8 M AUD en 2021 es coherente con un negocio de ingresos recurrentes de plataforma de ese orden, sin que el múltiplo real sea observable.",
+    "lectura": "Cobra solo cuando hay conexión aceptada, así que su ingreso escala con la liquidez del marketplace, no con el gasto en marketing del tradie; el importe real por token sigue siendo no público y cualquier cifra de ingresos concreta sería inventada."
+   },
+   "fuentes": [
+    {
+     "url": "https://builderscrack.co.nz/",
+     "label": "Home Builderscrack (modelo, métricas autodeclaradas, HTML analizado para stack)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Builderscrack.co.nz",
+     "label": "Wikipedia (fundación 2006, cofundadores, hitos)"
+    },
+    {
+     "url": "https://www.smartcompany.com.au/finance/mergers-and-acquisitions/hipages-acquires-new-zealand-tradie-platform-builderscrack/",
+     "label": "SmartCompany (adquisición por hipages, 11,8 M AUD, dic. 2021)"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "homex-virtual-agency": {
+   "id": "homex-virtual-agency",
+   "resumen": "Homex vende horas de agentes remotos de Kosovo/Macedonia del Norte a empresas de EE. UU. (real estate, solar, home services), monetizando el arbitraje laboral: cobra tarifas 'intermedias entre EE. UU. y offshore' por agentes cuyo coste local es muy inferior. El margen sale de la diferencia entre lo facturado por agente-hora y el salario kosovar, y la retención se apoya en equipos dedicados de larga duración más venta cruzada de 50+ servicios (cold calling, soporte, back office). Su entidad en Filadelfia y el posicionamiento 'English-speaking para EE. UU.' reducen la fricción de contratar offshore. Funciona porque el cliente estadounidense compara contra un SDR local mucho más caro, no contra el coste real del agente.",
+   "equipo": "Observado: liderazgo público en su web — Durim Gorenca (Founder & CEO), Artimis Krasniqi (Founder & CFO), Drilon Fetiu (CRO) — con sede en Pristina y presencia en Filadelfia (https://homexcall.com/about-us/). El directorio TechBehemoths lo clasifica en la banda de 10-49 empleados, coherente con los 25 profesionales autodeclarados en su historia corporativa.",
+   "hitos": [
+    "Fundación en 2019 según el directorio TechBehemoths (https://techbehemoths.com/company/homex-virtual-agency).",
+    "Autodeclarado en su web corporativa: más de 1M de llamadas realizadas y 105+ clientes históricos, con 150 profesionales que han pasado por la empresa (https://homexcall.com/ — cifras autodeclaradas, no auditadas).",
+    "Expansión con dirección física en EE. UU. (4651 Frankford Avenue, Philadelphia PA), observada en el pie de su web (https://homexcall.com/about-us/)."
+   ],
+   "stack": [
+    "WordPress + Elementor",
+    "Google Tag Manager (GTM-KP7PZMGV)",
+    "Google Analytics (gtag)",
+    "Calendly",
+    "Enlaces WhatsApp (wa.me / api.whatsapp)"
+   ],
+   "economics": {
+    "supuesto": "Estimado. La tarifa oficial no es pública; el directorio TechBehemoths sitúa su precio en 'menos de 30 $/hora' y proyectos medios de 2.000-4.000 $. Se asume un agente dedicado a jornada completa (~160 h/mes).",
+    "calculo": "Estimado: <30 $/h × 160 h/mes ≈ hasta ~4.800 $/mes de facturación por agente dedicado; un rango realista de 12-25 $/h daría ~1.900-4.000 $/mes por agente, compatible con el 'proyecto medio de 2.000-4.000 $' del directorio. El coste laboral en Kosovo es sustancialmente inferior al de EE. UU. (no cuantificado aquí para no inventar), lo que deja margen bruto de arbitraje por agente.",
+    "lectura": "Estimado: negocio de márgenes por persona-hora, no por resultado — escala contratando agentes y su rentabilidad depende del diferencial salarial Kosovo-EE. UU. y de la duración media de cada cliente. Sin tarifa pública confirmada, cualquier cifra de margen exacto sería inventada."
+   },
+   "fuentes": [
+    {
+     "url": "https://homexcall.com/",
+     "label": "Homepage Homex (claims autodeclarados, stack)"
+    },
+    {
+     "url": "https://homexcall.com/about-us/",
+     "label": "About: liderazgo, direcciones Pristina y Filadelfia"
+    },
+    {
+     "url": "https://techbehemoths.com/company/homex-virtual-agency",
+     "label": "TechBehemoths: fundación 2019, banda 10-49 empleados, <30 $/h"
+    },
+    {
+     "url": "https://www.linkedin.com/in/durimgorenca/",
+     "label": "LinkedIn de Durim Gorenca, Founder & CEO"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "homezy": {
+   "id": "homezy",
+   "resumen": "Homezy es un lead broker clásico con envoltorio AI-first: capta solicitudes de reformas/servicios del hogar en EAU y las revende a profesionales mediante créditos prepagados, sin cuota mensual. El diseño de precios es la clave — packs con descuento por volumen y coste por lead escalado según el valor del proyecto (3-20 créditos), lo que le permite capturar más margen justo en los trabajos donde el profesional más puede pagar. Los 20 créditos gratis eliminan la fricción de entrada y el 'pago solo por lead reclamado' traslada la sensación de riesgo al mínimo. Funciona si mantiene el coste de captar cada solicitud por debajo de lo que ingresa revendiéndola (posiblemente a varios profesionales, extremo no observado).",
+   "equipo": "No observable: la web es una SPA sin página de equipo accesible y no se localizó un perfil de LinkedIn de empresa inequívoco para homezy.co (los perfiles 'Homezy' encontrados corresponden a empresas homónimas de India/Sudáfrica). Existe una ficha en Tracxn pero bloquea el acceso (robots.txt).",
+   "hitos": [
+    "Fundada en 2025 según su propia página para profesionales (https://homezy.co/become-a-pro — autodeclarado, verificado en la auditoría de la ficha).",
+    "Declara 'cientos de profesionales verificados' en su plataforma (https://homezy.co/become-a-pro — autodeclarado, sin verificación independiente)."
+   ],
+   "stack": [
+    "Next.js (React SSR)",
+    "Google Tag Manager (GTM-KM9K3828)",
+    "Google OAuth (login)"
+   ],
+   "economics": {
+    "supuesto": "Estimado a partir de los precios ya auditados: packs de AED 250/50 créditos (5,0 AED/crédito) hasta AED 3.000/1.300 créditos (~2,31 AED/crédito); un lead cuesta 3-20 créditos. Tipo aproximado 1 AED ≈ 0,25 €.",
+    "calculo": "Estimado: coste por lead para el profesional = 3-20 créditos × 2,31-5,0 AED ≈ 7-100 AED (~1,75-25 €) según pack y valor del proyecto. Con el pack grande, un lead de proyecto alto (20 créditos) deja ~46 AED (~11,5 €) de ingreso a Homezy; si revende la misma solicitud a 3-4 profesionales (práctica habitual del sector, NO observada aquí), el ingreso por solicitud se multiplicaría.",
+    "lectura": "Estimado: monetiza la demanda del hogar en EAU con precios discriminados por valor de proyecto y prepago de créditos (cobra antes de entregar). Su viabilidad depende de captar solicitudes por debajo de ~7-100 AED de ingreso por lead; el multiplicador real (leads vendidos a cuántos profesionales) no es observable."
+   },
+   "fuentes": [
+    {
+     "url": "https://homezy.co/become-a-pro",
+     "label": "Página para profesionales: créditos, packs, fundada 2025"
+    },
+    {
+     "url": "https://homezy.co/",
+     "label": "Homepage (stack Next.js + GTM)"
+    },
+    {
+     "url": "https://tracxn.com/d/companies/homezy/__Dlu0X-AZQ5GFn1ptrYTwR1i8_aOulc_OVgFly2nMmh8",
+     "label": "Ficha Tracxn (acceso bloqueado por robots.txt — no consultada)"
+    }
+   ],
+   "confianza": "baja",
+   "checkedAt": "23/08/2026"
+  },
+  "lgdigital": {
+   "id": "lgdigital",
+   "resumen": "LGDigital vende resultados, no gestión: cobra por lead válido (25 €/lead Meta, 35 €/llamada Google) mientras el cliente pone la inversión publicitaria, de modo que su margen es la diferencia entre el fee por lead y su coste operativo de montar y optimizar campañas — sin riesgo de media buying propio. La exclusividad territorial ('una empresa por sector y zona') crea escasez y justifica el precio, y el SEO local con permanencia de 3 meses añade un ingreso recurrente más estable. Funciona porque para un negocio local portugués (AVAC, reformas) 25-35 € por contacto cualificado es barato frente al valor del trabajo medio, y el modelo sin retainer elimina la principal objeción contra las agencias.",
+   "equipo": "No observable: la web no publica página de equipo ni nombres de fundadores, y no se localizó un perfil de LinkedIn de empresa inequívoco (las búsquedas devuelven resultados de LG Electronics Portugal, empresa no relacionada). Tamaño de equipo: No observable.",
+   "hitos": [
+    "Casos de éxito autodeclarados en su web: Humberto Conde Arquitectos (Lisboa, posición media nº1), Arquitetura 501 (Braga, top 3 en 30 días) y Casa em Ordem (Oporto) — evidencia propia, sin auditoría independiente (https://www.lgdigital.pt/).",
+    "Modelo de exclusividad observado en su web: trabajan con una sola empresa por sector y zona de servicio (https://www.lgdigital.pt/)."
+   ],
+   "stack": [
+    "Meta Pixel (id 878850018571511)",
+    "Enlaces WhatsApp (wa.me)"
+   ],
+   "economics": {
+    "supuesto": "Estimado con los precios ya auditados: 25 €/lead (Meta) y 35 €/llamada facturable (Google, >30 s), con inversión publicitaria a cargo del cliente y ~100 €/día de ad spend recomendado por la propia página.",
+    "calculo": "Estimado: si con 100 €/día de inversión del cliente se generan p. ej. 3-5 leads/día, LGDigital factura ~75-125 €/día (~1.600-2.700 €/mes) por cuenta activa, sin haber arriesgado presupuesto publicitario propio; su coste marginal es la gestión de campañas ya plantilladas por nicho. El volumen real de leads por cuenta no es observable.",
+    "lectura": "Estimado: el fee por lead es casi todo margen operativo porque el riesgo de media lo asume el cliente; la rentabilidad crece replicando la misma plantilla de campaña AVAC/reformas en zonas exclusivas nuevas. El punto débil estimado: su ingreso depende de que el cliente sostenga el ad spend."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.lgdigital.pt/",
+     "label": "Homepage: modelo PPL, casos autodeclarados, exclusividad, stack"
+    },
+    {
+     "url": "https://lgdigital.pt/",
+     "label": "HTML homepage: Meta Pixel y enlaces WhatsApp detectados"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "plusleads": {
+   "id": "plusleads",
+   "resumen": "PlusLeads empaqueta outbound, appointment setting y performance marketing para vender lo que el cliente B2B realmente quiere comprar: citas en la agenda, no clics. Al ocultar CPL y fees y cotizar tras consulta, se da margen para fijar precio según el valor del deal del cliente (value-based pricing), y su embudo autodeclarado (30% lead→cita, 28% cita→deal) es la herramienta de venta que justifica ese precio. El PPL en nichos seleccionados sugiere que solo asume riesgo por resultado donde ya tiene plantillas que sabe rentabilizar. Funciona porque en B2B holandés una sola cita que cierra puede pagar meses de servicio, lo que hace el precio opaco defendible.",
+   "equipo": "Parcialmente observable: PlusLeads B.V. está registrada en Best (Países Bajos), clasificada como agencia de publicidad (SBI 73110), con un cambio de dirección/gestión registrado en KVK el 13/03/2025 (https://companyinfo.nl/organisatieprofiel/activiteiten-van-reclamebureaus/plusleads-b-v-best-96685700-000061994847). Número de empleados y fundadores: No observable sin acceso de pago; existe página de empresa en LinkedIn (https://www.linkedin.com/company/plusleads).",
+   "hitos": [
+    "Registro mercantil como PlusLeads B.V. en Best, Países Bajos, con cambio en la gestión anotado en KVK el 13/03/2025 (https://companyinfo.nl/organisatieprofiel/activiteiten-van-reclamebureaus/plusleads-b-v-best-96685700-000061994847). Inferido: el número KVK alto (96685700) apunta a un registro reciente.",
+    "Autodeclarado en su web: 150+ clientes, 1.240+ citas/año, 30% lead→cita y 28% cita→deal — sin auditoría independiente (https://plusleads.nl/)."
+   ],
+   "stack": [
+    "Google Tag Manager (GTM-NNHPGCTV)",
+    "Calendly"
+   ],
+   "economics": {
+    "supuesto": "El precio de la ficha no permite un cálculo honesto: CPL y fee de appointment setting no son públicos y se cotizan tras consulta.",
+    "calculo": "No calculable sin inventar cifras. Único anclaje observable: su propio claim de 1.240+ citas/año y 30% lead→cita implicaría ~4.100 leads/año trabajados (Estimado, derivado de cifras autodeclaradas no auditadas), pero sin precio por cita no se puede estimar facturación.",
+    "lectura": "Estimado: el modelo apunta a fees por cita cualificada más retainers de campaña, con precio adaptado al valor del deal de cada cliente; la opacidad de precios es en sí una señal de pricing por valor, no por coste."
+   },
+   "fuentes": [
+    {
+     "url": "https://plusleads.nl/",
+     "label": "Homepage: oferta, métricas autodeclaradas, stack (GTM, Calendly)"
+    },
+    {
+     "url": "https://companyinfo.nl/organisatieprofiel/activiteiten-van-reclamebureaus/plusleads-b-v-best-96685700-000061994847",
+     "label": "Company.info/KVK: PlusLeads B.V., Best, SBI 73110"
+    },
+    {
+     "url": "https://www.linkedin.com/company/plusleads",
+     "label": "LinkedIn de empresa PlusLeads B.V."
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "sales-robots": {
+   "id": "sales-robots",
+   "resumen": "Sales Robots monetiza una escalera de valor: entra barato con automatización de email/LinkedIn (999 PLN/mes, casi puro margen de software), sube al 'sistema' completo (5.999 PLN) y culmina en outsourcing integral B2B (9.999 PLN/mes), donde el cliente externaliza toda la generación de leads. El software de los tiers bajos financia la captación y cualifica a los clientes que acabarán pagando el tier alto de servicios. Los logos de clientes grandes (Allegro, FM Logistics) y las integraciones con CRMs polacos (LiveSpace, HubSpot) anclan credibilidad en el mercado B2B local. Funciona porque en Polonia 9.999 PLN/mes (~2.300 €) sigue siendo menos que un solo comercial en nómina, y la promesa de 50-1.000 leads/mes hace la comparación evidente.",
+   "equipo": "Observado: fundador Jacek Palęcki, operando bajo la entidad AMG Poland Sp. z o.o. con dirección en Cracovia (ul. Wiosenna 24C), según su propia web (https://salesrobots.pl/pl). Tamaño de equipo: No observable — ni la web ni fuentes públicas consultadas publican número de empleados.",
+   "hitos": [
+    "Clientes/logos declarados en su web: Allegro, Puls Biznesu, FM Logistics, 3LP, LOVO, SCALO, Tutlo, entre otros — autodeclarado, sin verificación independiente (https://salesrobots.pl/pl).",
+    "Cobertura en medios regionales polacos sobre sus campañas de LinkedIn como agencia (https://tuwroclaw.com/wiadomosci,agencja-sales-robots-skuteczne-kampanie-linkedin,wia5-3273-67432.html — artículo de perfil, posiblemente patrocinado)."
+   ],
+   "stack": [
+    "Nuxt (Vue.js)",
+    "Google Tag Manager (GTM-M4V6QT7)"
+   ],
+   "economics": {
+    "supuesto": "Estimado con los precios ya auditados: 999 PLN/mes (automatización), 5.999 PLN/mes (sistema), 9.999 PLN/mes (outsourcing integral), con 50-1.000 leads/mes estimados por ellos. Tipo aproximado 1 € ≈ 4,3 PLN.",
+    "calculo": "Estimado: los tres tiers equivalen a ~230 €, ~1.400 € y ~2.300 €/mes. En el tier de outsourcing, si un cliente recibe p. ej. 100 leads/mes, el coste efectivo es ~100 PLN (~23 €) por lead; con 500 leads bajaría a ~20 PLN (~4,7 €) por lead. En el tier de 999 PLN el coste marginal de servir a un cliente más es bajo (software), lo que sugiere márgenes tipo SaaS en la base de la escalera.",
+    "lectura": "Estimado: el negocio combina margen de software abajo y margen de servicios arriba; el tier alto solo es rentable si la automatización mantiene bajo el coste humano por lead entregado. El claim de leads 'con garantía' no tiene alcance ni remedio publicados, así que no puede tratarse como riesgo real asumido."
+   },
+   "fuentes": [
+    {
+     "url": "https://salesrobots.pl/pl/cennik",
+     "label": "Página de precios: 999/5.999/9.999 PLN"
+    },
+    {
+     "url": "https://salesrobots.pl/pl",
+     "label": "Homepage: fundador Jacek Palęcki, AMG Poland Sp. z o.o., clientes, integraciones"
+    },
+    {
+     "url": "https://tuwroclaw.com/wiadomosci,agencja-sales-robots-skuteczne-kampanie-linkedin,wia5-3273-67432.html",
+     "label": "Cobertura en medio regional polaco"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "salesarte": {
+   "id": "salesarte",
+   "resumen": "SalesArte vende a empresas B2B tech y e-commerce turcas la externalización de la parte más cara del embudo: conseguir y gestionar reuniones cualificadas. Su argumento comercial es el arbitraje de coste frente a contratar comerciales propios (referencia de coste bruto de 45.000-90.000 TRY/mes por perfil), quedándose presumiblemente con un fee inferior a ese coste pero con equipo compartido entre clientes. Gana dinero si consigue amortizar un mismo equipo de setters/closers y procesos estandarizados entre varias cuentas. Al ocultar la tarifa, conserva margen de negociación por tamaño de cliente. (Síntesis inferida del posicionamiento público; la tarifa real es No observable.)",
+   "equipo": "No observable en detalle: la página 'Hakkımızda' no publica fundadores, plantilla ni sede; solo métricas de servicio (700+ demos, 95% satisfacción). Existe una página de LinkedIn ('Sales Arte') pero el recuento de empleados no era accesible públicamente en esta pasada.",
+   "hitos": [
+    "Autodeclara 700+ reuniones de demo gestionadas y 95% de satisfacción de cliente en su página corporativa (cifras propias, sin auditoría externa) — Observado en salesarte.com/hakkimizda/"
+   ],
+   "stack": [
+    "Google Analytics 4 (gtag, ID G-4E79YF2YJZ)",
+    "Next.js/React (framework del sitio)"
+   ],
+   "economics": {
+    "supuesto": "Estimado. La ficha no da tarifa propia; solo referencias públicas de coste bruto de un comercial interno en Turquía (45.000/65.000/90.000 TRY/mes junior/mid/senior) y un claim de 'hasta 60% de ahorro' en su calculadora.",
+    "calculo": "Estimado: si el ahorro prometido del 60% se aplica sobre un comercial mid de 65.000 TRY/mes, el precio implícito del servicio rondaría ~26.000 TRY/mes por capacidad equivalente (65.000 × 0,4). Es una cota derivada del propio claim, no una tarifa confirmada.",
+    "lectura": "El precio dado (oculto) no permite un cálculo honesto de margen; solo se puede acotar el precio implícito que su propio marketing sugiere. Su economía depende de compartir un equipo comercial y procesos entre varios clientes por debajo del coste laboral turco de un equipo interno."
+   },
+   "fuentes": [
+    {
+     "url": "https://salesarte.com/hakkimizda/",
+     "label": "Página 'Sobre nosotros' de SalesArte (métricas propias, sin datos de fundadores ni plantilla)"
+    },
+    {
+     "url": "https://salesarte.com/servisler",
+     "label": "Página de servicios de SalesArte"
+    },
+    {
+     "url": "https://salesarte.com/",
+     "label": "Homepage (análisis de HTML para stack: GA4, Next.js)"
+    }
+   ],
+   "confianza": "baja",
+   "checkedAt": "23/08/2026"
+  },
+  "scorpion": {
+   "id": "scorpion",
+   "resumen": "Scorpion gana dinero combinando software propietario (RevenueMAX) con servicio gestionado de marketing para verticales locales de alto valor por cliente (legal, home services, salud, franquicias), donde un solo caso o trabajo justifica presupuestos altos de marketing. El modelo genera ingresos recurrentes de plataforma + gestión de medios, y las adquisiciones seriadas de agencias verticales (1SEO, GNGF, MediaSmack...) le compran cuota y conocimiento de nicho. Al controlar web, ads, chat IA y atribución del cliente, el coste de cambio de proveedor es alto, lo que sostiene la retención. La inversión de 100 M$ de Bregal Sagemount financia esa estrategia de consolidación.",
+   "equipo": "Empresa fundada por Rustin Kretz (CEO), con sede en Lehi, Utah desde 2021; al trasladarse anunció la creación de 'más de 1.000 empleos' en Utah en cinco años (Wikipedia). La web oficial no publica plantilla exacta.",
+   "hitos": [
+    "Fundada en 2001 por Rustin Kretz; sede trasladada de California a Lehi, Utah en marzo de 2021 — Observado en Wikipedia",
+    "Inversión de 100 millones de USD de Bregal Sagemount en abril de 2021 — Observado en Wikipedia y sagemount.com",
+    "Adquisiciones seriadas: Driven Local (2017), Wheat Creative, MediaSmack y CanIRank (2021), GNGF (2024) y 1SEO Digital Agency (junio 2026); en julio 2026 se anunció como partner tecnológico de publicidad en ChatGPT — Observado en Wikipedia y scorpion.co/about-us/"
+   ],
+   "stack": [],
+   "economics": {
+    "supuesto": "Estimado. La ficha confirma que no hay tarifa pública (quote-based, sin separación publicada entre medios, plataforma y servicio), así que no existe base numérica honesta para calcular economía unitaria.",
+    "calculo": "No calculable con datos públicos: sin fee conocido no se puede estimar ingreso por cliente ni margen. Como referencia cualitativa (Estimado), su modelo combina suscripción de plataforma + gestión de inversión publicitaria, dos líneas recurrentes sobre una misma cuenta.",
+    "lectura": "El precio dado no da para un cálculo honesto. Lo verificable es la escala (claims propios de 20K+ negocios y 100B+ USD de ingresos generados para clientes) y una estrategia de M&A financiada con 100 M$, coherente con tickets altos por cliente en verticales de alto valor."
+   },
+   "fuentes": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Scorpion_(company)",
+     "label": "Wikipedia: fundación, fundador, sede, funding y adquisiciones"
+    },
+    {
+     "url": "https://www.scorpion.co/about-us/",
+     "label": "About oficial: Rustin Kretz CEO, adquisición de 1SEO (2026), partner de ads en ChatGPT"
+    },
+    {
+     "url": "https://www.sagemount.com/news/scorpion-raises-100-million-from-bregal-sagemount-to-expand-its-technology-and-services-bring-enterprise-grade-technology-and-opportunities-to-local-businesses/",
+     "label": "Bregal Sagemount: inversión de 100 M$ (2021)"
+    },
+    {
+     "url": "https://www.scorpion.co/",
+     "label": "Homepage: HTML no inspeccionable en esta pasada (challenge Cloudflare); stack No observable"
+    }
+   ],
+   "confianza": "alta",
+   "checkedAt": "23/08/2026"
+  },
+  "division50-division50-llc-caascom-information-technology-l-l-c": {
+   "id": "division50-division50-llc-caascom-information-technology-l-l-c",
+   "resumen": "Division50 vende a startups y empresas B2B (sobre todo tech) un motor comercial completo done-for-you —SDRs, cold outreach multicanal, paid media y automatización con IA— cobrando retainers mensuales quote-based sin markup sobre ad spend. Su economía real descansa en el arbitraje de talento: opera desde Dubái/Riad sirviendo a clientes que pagan en USD, con equipos y herramientas de coste inferior al de un SDR occidental. La prueba social (5,0/28 reviews en Clutch, casos con cifras de reuniones) alimenta un embudo inbound de tickets altos. El producto LGE (1.900 USD one-off) actúa como oferta de entrada productizada bajo el servicio principal.",
+   "equipo": "Señales contradictorias: Clutch lista 50-249 empleados con sede en Dubái (EAU) y oficina en Riad; SuperbCompanies lista 1-9 empleados y fundación en 2021. La horquilla real es No observable con precisión; la entidad legal en EAU (CAASCOM Information Technology L.L.C.) es coherente con la sede en Dubái.",
+   "hitos": [
+    "Fundada en 2021 con sede en Dubái (EAU) y presencia en Riad (Arabia Saudí) — Observado en superbcompanies.com y clutch.co",
+    "5,0/5 con 28 reviews verificadas en Clutch y claim propio de '300 M$+ de ingresos generados para clientes' — Observado en clutch.co/profile/division50 (el claim de ingresos es del proveedor, no auditado)"
+   ],
+   "stack": [
+    "Google tag (gtag) con etiqueta de conversión de Google Ads (AW-18222445310)",
+    "Meta Pixel (fbevents.js)",
+    "Microsoft Clarity",
+    "Next.js/React (framework del sitio)"
+   ],
+   "economics": {
+    "supuesto": "Estimado. Retainer quote-based sin cifra pública; SuperbCompanies sitúa el presupuesto típico en 'menos de 5.000 USD'. El 1.900 USD del producto LGE es one-off y no representa el fee del servicio SDR.",
+    "calculo": "Estimado: si un retainer típico ronda los ~3.000-5.000 USD/mes (coherente con la banda 'menos de 5.000 USD' de SuperbCompanies) y el equipo opera desde EAU/KSA con costes laborales inferiores a los de un SDR en EE.UU., un solo SDR compartido entre 2-3 cuentas dejaría margen bruto de servicio elevado. Cifras internas de coste: No observable.",
+    "lectura": "Modelo de agencia con arbitraje geográfico: cobra precios referenciados al mercado USD y produce desde Golfo/offshore. El ad spend sin markup traslada el margen íntegramente al fee de servicio, lo que hace crítica la retención mensual."
+   },
+   "fuentes": [
+    {
+     "url": "https://clutch.co/profile/division50",
+     "label": "Clutch: 28 reviews 5,0, sedes Dubái/Riad, 50-249 empleados, claim 300 M$+"
+    },
+    {
+     "url": "https://superbcompanies.com/organizations/division50/",
+     "label": "SuperbCompanies: fundación 2021, 1-9 empleados, presupuesto <5.000 USD"
+    },
+    {
+     "url": "https://division50.com/",
+     "label": "Homepage (análisis de HTML para stack: gtag/AW, Meta Pixel, Clarity)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "kaptto": {
+   "id": "kaptto",
+   "resumen": "Kaptto es un SaaS puro de prospección B2B para el mercado brasileño: monetiza datos casi gratuitos (los 55 millones de CNPJs públicos y Google Maps) envolviéndolos en IA de cualificación y conversación automática por WhatsApp hasta agendar la reunión. Gana dinero por suscripción mensual de ticket bajo (R$147-397) con coste marginal mínimo por cliente, por lo que su economía depende de volumen y retención, no de margen por cuenta. La garantía de 7 días y el pago por Pix sin autorrenovación reducen la fricción de entrada en un mercado PYME sensible al precio. El canal WhatsApp —dominante en ventas B2B en Brasil— es su ventaja de encaje local.",
+   "equipo": "No observable: ni la web ni las búsquedas públicas revelan fundadores, plantilla ni sede; el único rastro operativo es un número de WhatsApp brasileño con prefijo 15 (región de Sorocaba, SP) en su homepage (wa.me/5515981766399) — Inferido a partir del prefijo, no confirmado como sede.",
+   "hitos": [
+    "Autodeclara 300+ empresas usuarias, 4,8 en Google y 4,9 en Trustpilot, con menciones a clientes como Ademicon, Consórcio Honda o Mercado Pago (cifras y logos mostrados por la marca, no auditados) — Observado en kaptto.com.br"
+   ],
+   "stack": [
+    "Widget/enlace de WhatsApp (wa.me/5515981766399)",
+    "Aplicación Vite (SPA JavaScript)",
+    "Integraciones declaradas del producto: WhatsApp Business, Google Gemini, Google Calendar/Meet"
+   ],
+   "economics": {
+    "supuesto": "Estimado. Precios públicos de la ficha: Starter R$147/mes (200 leads, 500 mensajes, 30 reuniones) y Pro R$397/mes (1.000 leads, 3.000 mensajes, 100 reuniones).",
+    "calculo": "Estimado: el cliente paga R$0,74/lead en Starter (147/200) y R$0,40/lead en Pro (397/1.000); por reunión potencial, R$4,90 (Starter) y R$3,97 (Pro) si se agota el cupo. Como los datos base (CNPJ) son públicos y el coste de mensajería WhatsApp API es de céntimos, el margen bruto por cuenta debería ser el típico de un SaaS (alto); coste real por mensaje/IA: No observable.",
+    "lectura": "Ticket medio bajísimo (~24-65 EUR/mes): necesita cientos o miles de cuentas y churn bajo para ser negocio. El precio por lead es tan agresivo que compite contra el coste de una sola hora de un SDR humano, que es exactamente su pitch."
+   },
+   "fuentes": [
+    {
+     "url": "https://www.kaptto.com.br/",
+     "label": "Homepage: producto, planes R$147/R$397, claims 300+ empresas, 4,8 Google, 4,9 Trustpilot; HTML analizado para stack"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  },
+  "leadsnow-ai": {
+   "id": "leadsnow-ai",
+   "resumen": "LeadsNow AI gana dinero cobrando por resultado: factura solo cuando una cita cualificada aterriza en el calendario del cliente, lo que traslada el riesgo aparente al proveedor pero le permite fijar precios por cita muy superiores a su coste de generación cuando el sistema (ads + cualificación y agendado por IA) está afinado por vertical. Nació del sector fitness (los fundadores declaran haber operado 27 gimnasios y la división More Gym Members) y ha replicado el mismo motor en coaches, educación, agencias y SaaS. El stack publicitario detectado (Meta, TikTok, LinkedIn, Google) confirma que la materia prima son leads de paid social comprados a escala. Su volumen histórico autodeclarado (50.769+ citas) es su principal activo comercial.",
+   "equipo": "Señales limitadas y autodeclaradas: su propia nota de prensa nombra a un fundador ('Riley', sin apellido publicado), operación desde 2017 y dirección en Level 2/696 Bourke Street, Melbourne; declara que los fundadores operaron 27 gimnasios antes de la agencia. Plantilla: No observable.",
+   "hitos": [
+    "Operando desde 2017; origen en el sector fitness con la división More Gym Members y 1.000.000+ leads generados según la propia empresa — Observado en leadsnow.ai (nota de prensa propia, no auditada)",
+    "50.769+ citas agendadas por IA autodeclaradas y 4,6/5 en 43 reviews verificadas según su nota de prensa de 2026 — Observado en leadsnow.ai (fuente propia)"
+   ],
+   "stack": [
+    "Google Tag Manager (GTM-F3LW2G5) y gtag/GA4",
+    "Meta Pixel (fbevents.js)",
+    "TikTok Pixel",
+    "LinkedIn Insight Tag (partner ID 3077780)",
+    "Hotjar",
+    "Crisp (chat)",
+    "React (framework del sitio)"
+   ],
+   "economics": {
+    "supuesto": "Estimado. La ficha confirma que no publican coste por cita como tarifa; pero su propia nota de prensa publica benchmarks de coste por cita agendada: A$40-220 (coaches), A$30-180 (educación), A$80-300 (B2B SaaS), con show rates del 60-75%+.",
+    "calculo": "Estimado: tomando el punto medio de sus propios rangos (~A$125/cita) sobre las 50.769 citas autodeclaradas desde 2017, la facturación histórica implícita sería del orden de A$1,5M-15M acumulados (rango amplio por la dispersión A$30-300). Con show rate del 60-75%, el coste efectivo por cita presentada para el cliente sube un 33-66% sobre el precio por cita agendada. Costes internos de ads e IA: No observable.",
+    "lectura": "El pay-per-result funciona porque cobran por cita, no por venta: la IA abarata la cualificación y el agendado hasta que el margen por cita es positivo, y el cliente asume el riesgo de conversión posterior. Sin retainer, la retención depende de que el flujo de citas se mantenga rentable para ambos."
+   },
+   "fuentes": [
+    {
+     "url": "https://leadsnow.ai/leads-now-ai-50769-booked-appointments-pay-per-result-2026/",
+     "label": "Nota de prensa propia: fundador, 2017, Melbourne, 50.769+ citas, benchmarks de precio por cita"
+    },
+    {
+     "url": "https://leadsnow.ai/",
+     "label": "Homepage: modelo pay-per-result; HTML analizado para stack (GTM, Meta, TikTok, LinkedIn, Hotjar, Crisp)"
+    }
+   ],
+   "confianza": "media",
+   "checkedAt": "23/08/2026"
+  }
+ }
+}

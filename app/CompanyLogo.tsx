@@ -26,9 +26,10 @@ export default function CompanyLogo({
       .join("")
       .toUpperCase() || "RV";
   const hasImage = Boolean(record?.file && !failed);
+  const tone = hasImage && record?.tone ? ` tone-${record.tone}` : "";
   return (
     <span
-      className={`company-logo logo-${size}${hasImage ? " has-image" : ""}`}
+      className={`company-logo logo-${size}${hasImage ? " has-image" : ""}${tone}`}
       title={
         hasImage
           ? `Identidad visual obtenida de ${record?.source || "la web pública"}`

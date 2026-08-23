@@ -1,0 +1,481 @@
+{
+ "generatedAt": "23/08/2026",
+ "universe": 938,
+ "winnersN": 152,
+ "winnersProfile": {
+  "n": 152,
+  "adsActivePct": 49,
+  "pricePublicPct": 46,
+  "guaranteePct": 99,
+  "multiMarketPct": 49,
+  "medianEur": 162
+ },
+ "restProfile": {
+  "n": 786,
+  "adsActivePct": 23,
+  "pricePublicPct": 18,
+  "guaranteePct": 77,
+  "multiMarketPct": 43,
+  "medianEur": 139
+ },
+ "modelStats": [
+  {
+   "id": "mensualidad",
+   "label": "Cuota mensual / retainer",
+   "n": 374,
+   "medianEur": 250,
+   "pricedN": 131,
+   "adsActivePct": 43,
+   "guaranteePct": 92,
+   "winnersPct": 24,
+   "avgScore": 38,
+   "examples": [
+    {
+     "id": "clozer",
+     "name": "Clozer",
+     "country": "Emiratos Árabes Unidos",
+     "score": 99
+    },
+    {
+     "id": "yallaleads",
+     "name": "YallaLeads",
+     "country": "Emiratos Árabes Unidos",
+     "score": 99
+    },
+    {
+     "id": "b2b-leads-arquitectura-de-negocios",
+     "name": "B2B Leads / Arquitectura de Negocios",
+     "country": "México",
+     "score": 98
+    },
+    {
+     "id": "saleshive",
+     "name": "SalesHive",
+     "country": "Estados Unidos",
+     "score": 98
+    }
+   ]
+  },
+  {
+   "id": "no-clasificable",
+   "label": "Sin señal pública de modelo de cobro",
+   "n": 356,
+   "medianEur": 56,
+   "pricedN": 13,
+   "adsActivePct": 9,
+   "guaranteePct": 60,
+   "winnersPct": 4,
+   "avgScore": 7,
+   "examples": [
+    {
+     "id": "premium-leads-grupo-vocento",
+     "name": "Premium Leads (grupo Vocento)",
+     "country": "España",
+     "score": 94
+    },
+    {
+     "id": "portugalseo-operador-rafa-dmark",
+     "name": "PortugalSEO / operador Rafa–Dmark",
+     "country": "Portugal",
+     "score": 92
+    },
+    {
+     "id": "roible",
+     "name": "ROIBLE",
+     "country": "Turquía",
+     "score": 92
+    },
+    {
+     "id": "agencialeads-net-agk-marketing-agency-llc",
+     "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
+     "country": "España",
+     "score": 90
+    }
+   ]
+  },
+  {
+   "id": "por-lead",
+   "label": "Pago por lead",
+   "n": 56,
+   "medianEur": 27,
+   "pricedN": 20,
+   "adsActivePct": 36,
+   "guaranteePct": 98,
+   "winnersPct": 34,
+   "avgScore": 44,
+   "examples": [
+    {
+     "id": "everconnect",
+     "name": "EverConnect",
+     "country": "Estados Unidos",
+     "score": 96
+    },
+    {
+     "id": "homezy",
+     "name": "Homezy",
+     "country": "Emiratos Árabes Unidos",
+     "score": 95
+    },
+    {
+     "id": "lgdigital",
+     "name": "LGDigital",
+     "country": "Portugal",
+     "score": 95
+    },
+    {
+     "id": "sales-robots",
+     "name": "Sales Robots",
+     "country": "Polonia",
+     "score": 95
+    }
+   ]
+  },
+  {
+   "id": "directorio",
+   "label": "Directorio / marketplace (suscripción o comisión)",
+   "n": 55,
+   "medianEur": 20,
+   "pricedN": 5,
+   "adsActivePct": 18,
+   "guaranteePct": 84,
+   "winnersPct": 7,
+   "avgScore": 9,
+   "examples": [
+    {
+     "id": "nocowboys",
+     "name": "NoCowboys",
+     "country": "Nueva Zelanda",
+     "score": 89
+    },
+    {
+     "id": "pro-co-il",
+     "name": "המקצוענים (Pro.co.il)",
+     "country": "Israel",
+     "score": 86
+    },
+    {
+     "id": "profy",
+     "name": "Profy",
+     "country": "Georgia",
+     "score": 85
+    },
+    {
+     "id": "sejasa",
+     "name": "Sejasa",
+     "country": "Indonesia",
+     "score": 82
+    }
+   ]
+  },
+  {
+   "id": "por-cita",
+   "label": "Pago por cita / reunión válida",
+   "n": 45,
+   "medianEur": 425,
+   "pricedN": 23,
+   "adsActivePct": 27,
+   "guaranteePct": 100,
+   "winnersPct": 27,
+   "avgScore": 32,
+   "examples": [
+    {
+     "id": "salesbread",
+     "name": "SalesBread",
+     "country": "Estados Unidos",
+     "score": 99
+    },
+    {
+     "id": "belkins",
+     "name": "Belkins",
+     "country": "Estados Unidos",
+     "score": 97
+    },
+    {
+     "id": "senbon-knock",
+     "name": "Senbon Knock",
+     "country": "Japón",
+     "score": 97
+    },
+    {
+     "id": "leads-dubai",
+     "name": "Leads Dubai",
+     "country": "Emiratos Árabes Unidos",
+     "score": 96
+    }
+   ]
+  },
+  {
+   "id": "exito",
+   "label": "100% a éxito (cobra solo si hay resultado)",
+   "n": 42,
+   "medianEur": 54,
+   "pricedN": 15,
+   "adsActivePct": 48,
+   "guaranteePct": 100,
+   "winnersPct": 29,
+   "avgScore": 40,
+   "examples": [
+    {
+     "id": "scale-lead",
+     "name": "SCALE Lead",
+     "country": "Japón",
+     "score": 100
+    },
+    {
+     "id": "edge-connection",
+     "name": "Edge Connection",
+     "country": "Japón",
+     "score": 99
+    },
+    {
+     "id": "hotlead",
+     "name": "HotLead",
+     "country": "Polonia",
+     "score": 97
+    },
+    {
+     "id": "leadsnow-ai",
+     "name": "LeadsNow AI",
+     "country": "Australia",
+     "score": 94
+    }
+   ]
+  },
+  {
+   "id": "proyecto",
+   "label": "Por proyecto / setup único",
+   "n": 10,
+   "medianEur": null,
+   "pricedN": 2,
+   "adsActivePct": 10,
+   "guaranteePct": 80,
+   "winnersPct": 20,
+   "avgScore": 25,
+   "examples": [
+    {
+     "id": "inmoads",
+     "name": "INMOADS",
+     "country": "España",
+     "score": 92
+    },
+    {
+     "id": "solarix-marketing",
+     "name": "Solarix Marketing",
+     "country": "España",
+     "score": 85
+    },
+    {
+     "id": "babycare-agency-responsable-rodrigo-mantillan-paz",
+     "name": "Babycare Agency — responsable: Rodrigo Mantillán Paz",
+     "country": "España",
+     "score": 76
+    },
+    {
+     "id": "annuaire-mg",
+     "name": "annuaire.mg",
+     "country": "Madagascar",
+     "score": 0
+    }
+   ]
+  }
+ ],
+ "winnerChannels": [
+  {
+   "channel": "Web / landing",
+   "count": 150,
+   "pctWinners": 99
+  },
+  {
+   "channel": "SEO / contenido",
+   "count": 86,
+   "pctWinners": 57
+  },
+  {
+   "channel": "Google Ads",
+   "count": 72,
+   "pctWinners": 47
+  },
+  {
+   "channel": "Email",
+   "count": 70,
+   "pctWinners": 46
+  },
+  {
+   "channel": "Meta Ads",
+   "count": 59,
+   "pctWinners": 39
+  },
+  {
+   "channel": "WhatsApp",
+   "count": 57,
+   "pctWinners": 38
+  },
+  {
+   "channel": "Otro",
+   "count": 48,
+   "pctWinners": 32
+  },
+  {
+   "channel": "Llamada en frío",
+   "count": 32,
+   "pctWinners": 21
+  },
+  {
+   "channel": "LinkedIn Ads",
+   "count": 16,
+   "pctWinners": 11
+  },
+  {
+   "channel": "TikTok Ads",
+   "count": 5,
+   "pctWinners": 3
+  }
+ ],
+ "doubleValidated": [
+  {
+   "id": "todobravo",
+   "name": "TodoBravo",
+   "country": "España",
+   "score": 84,
+   "metaAds": 7000,
+   "googleAds": 0,
+   "agencyType": "Generalista pymes"
+  },
+  {
+   "id": "daas-group-vendermas",
+   "name": "DaaS Group / Vendermas",
+   "country": "España",
+   "score": 81,
+   "metaAds": 6000,
+   "googleAds": 0,
+   "agencyType": "Consultora grande"
+  },
+  {
+   "id": "mas-captacion",
+   "name": "Más Captación",
+   "country": "España",
+   "score": 85,
+   "metaAds": 1100,
+   "googleAds": 0,
+   "agencyType": "Vertical de un solo nicho"
+  },
+  {
+   "id": "ipro-agentes-ia-voz",
+   "name": "iPro / Agentes IA Voz",
+   "country": "España",
+   "score": 87,
+   "metaAds": 600,
+   "googleAds": 2,
+   "agencyType": "Software + servicio"
+  },
+  {
+   "id": "abstrakt-marketing-group",
+   "name": "Abstrakt Marketing Group",
+   "country": "Estados Unidos",
+   "score": 92,
+   "metaAds": 3,
+   "googleAds": 495,
+   "agencyType": "Consultora grande"
+  },
+  {
+   "id": "placassolares-es-nettbureau",
+   "name": "PlacasSolares.es / Nettbureau",
+   "country": "España",
+   "score": 87,
+   "metaAds": 6,
+   "googleAds": 400,
+   "agencyType": "Lead broker / venta de leads"
+  },
+  {
+   "id": "leads-energy",
+   "name": "Leads Energy",
+   "country": "España",
+   "score": 82,
+   "metaAds": 390,
+   "googleAds": 0,
+   "agencyType": "Vertical de un solo nicho"
+  },
+  {
+   "id": "cleverly",
+   "name": "Cleverly",
+   "country": "Estados Unidos",
+   "score": 93,
+   "metaAds": 0,
+   "googleAds": 300,
+   "agencyType": "Multi-nicho especializada"
+  },
+  {
+   "id": "bastida-y-farina-s-l",
+   "name": "Bastida&Farina S.L.",
+   "country": "España",
+   "score": 93,
+   "metaAds": 63,
+   "googleAds": 200,
+   "agencyType": "Multi-nicho especializada"
+  },
+  {
+   "id": "11880-com-11880-solutions-ag-antes-telegate",
+   "name": "11880.com (11880 Solutions AG, antes Telegate)",
+   "country": "Alemania",
+   "score": 90,
+   "metaAds": 210,
+   "googleAds": 40,
+   "agencyType": "Lead broker / venta de leads"
+  },
+  {
+   "id": "agencialeads-net-agk-marketing-agency-llc",
+   "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
+   "country": "España",
+   "score": 90,
+   "metaAds": 240,
+   "googleAds": 0,
+   "agencyType": "Lead broker / venta de leads"
+  },
+  {
+   "id": "premium-leads-grupo-vocento",
+   "name": "Premium Leads (grupo Vocento)",
+   "country": "España",
+   "score": 94,
+   "metaAds": 220,
+   "googleAds": 0,
+   "agencyType": "Lead broker / venta de leads"
+  }
+ ],
+ "findings": [
+  {
+   "title": "Los ganadores dan la cara: garantía escrita",
+   "stat": "99% vs 77%",
+   "detail": "El 99% de las fichas con puntuación 80+ publica una garantía sustancial, frente al 77% del resto. La garantía escrita separa a los mejores del montón más que ningún otro rasgo contractual."
+  },
+  {
+   "title": "Precio público, señal de ganador",
+   "stat": "46% vs 18%",
+   "detail": "Entre los 80+, el 46% publica precio verificable; en el resto solo el 18%. Quien está seguro de su economía la enseña, y precualifica con ella."
+  },
+  {
+   "title": "Los mejores invierten en su propia captación",
+   "stat": "49% vs 23%",
+   "detail": "El 49% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al 23% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola."
+  },
+  {
+   "title": "El riesgo invertido puntúa por encima del retainer",
+   "stat": "40 vs 38 de media",
+   "detail": "Las 42 fichas con señal de cobro a éxito promedian 40 puntos, frente a 38 de las 374 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
+  },
+  {
+   "title": "La cita válida es la unidad más cara del mercado",
+   "stat": "425 € de mediana",
+   "detail": "Los 45 modelos que cobran por cita o reunión válida tienen una mediana de 425 € por unidad y un 27% mantiene anuncios activos. Es la unidad de facturación con mejor relación valor-percibido/esfuerzo de venta."
+  },
+  {
+   "title": "El stack de canales de los ganadores",
+   "stat": "Web / landing + SEO / contenido + Google Ads",
+   "detail": "Entre las fichas 80+, los canales dominantes son Web / landing (99%), SEO / contenido (57%), Google Ads (47%), Email (46%). La combinación de captación de pago con un canal propio de demanda es el patrón repetido."
+  },
+  {
+   "title": "Anuncios activos: la prueba de vida del mercado",
+   "stat": "256 de 938",
+   "detail": "256 fichas (27%) mantienen anuncios verificados en Meta o Google. Su puntuación media es 47 frente a 16 de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar."
+  }
+ ]
+}

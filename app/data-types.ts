@@ -120,8 +120,68 @@ export type LogoRecord = {
   sha256?: string | null;
   confidence?: "high" | "medium" | "fallback";
   reason?: string | null;
+  /** Luminancia real del activo: light = necesita fondo oscuro para verse. */
+  tone?: "light" | "dark" | "mixed" | "opaque";
 };
 export type LogoManifest = Record<string, LogoRecord>;
+
+export type Takeaway = { t: string; copiable: "alta" | "media" | "baja" };
+export type TakeawaysData = { generatedAt: string; items: Record<string, Takeaway> };
+
+export type PatternsProfile = {
+  n: number;
+  adsActivePct: number;
+  pricePublicPct: number;
+  guaranteePct: number;
+  multiMarketPct: number;
+  medianEur: number | null;
+};
+export type PatternsData = {
+  generatedAt: string;
+  universe: number;
+  winnersN: number;
+  winnersProfile: PatternsProfile;
+  restProfile: PatternsProfile;
+  modelStats: Array<{
+    id: string;
+    label: string;
+    n: number;
+    medianEur: number | null;
+    pricedN: number;
+    adsActivePct: number;
+    guaranteePct: number;
+    winnersPct: number;
+    avgScore: number;
+    examples: Array<{ id: string; name: string; country: string; score: number }>;
+  }>;
+  winnerChannels: Array<{ channel: string; count: number; pctWinners: number }>;
+  doubleValidated: Array<{ id: string; name: string; country: string; score: number; metaAds: number; googleAds: number; agencyType: string }>;
+  findings: Array<{ title: string; stat: string; detail: string }>;
+};
+
+export type ExecutionAction = {
+  title: string;
+  categoria: string;
+  impact: number;
+  effort: number;
+  score: number;
+  detail: string;
+  sources: string[];
+};
+export type ExecutionBacklog = { generatedAt: string; note: string; actions: ExecutionAction[] };
+
+export type Dossier = {
+  id: string;
+  resumen: string;
+  equipo: string;
+  hitos: string[];
+  stack: string[];
+  economics: { supuesto: string; calculo: string; lectura: string };
+  fuentes: Array<{ url: string; label: string }>;
+  confianza: string;
+  checkedAt: string;
+};
+export type DossiersData = { generatedAt: string; items: Record<string, Dossier> };
 
 export type Summary = {
   companies: number;

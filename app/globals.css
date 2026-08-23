@@ -252,3 +252,110 @@ body:has(.record-backdrop){overflow:hidden}
 .record-index a.active{background:var(--dark);color:#dff5ea;font-weight:800}
 .record-toolbar button.mode-active{background:var(--dark);color:#dff5ea;border-color:var(--dark)}
 @media(max-width:900px){.record-index{display:flex;overflow-x:auto;gap:6px;padding-bottom:8px}.record-index a{white-space:nowrap}}
+
+/* === v4: tono real de logos (los claros, sobre fondo oscuro) === */
+.company-logo.has-image.tone-light{background:linear-gradient(145deg,#0f2d22,#153c2d);border-color:#2d5343}
+.company-logo.has-image.tone-light img{filter:drop-shadow(0 0 1px rgba(0,0,0,.35))}
+.map-logo-marker.tone-light img{background:#0d2b21}
+.map-logo-marker.tone-dark img,.map-logo-marker.tone-mixed img{background:#fff}
+
+/* === v4: "Qué me llevo" en tarjeta === */
+.card-takeaway{margin:2px 0 10px;padding:10px 12px;border-left:3px solid var(--green2);background:#effaf4;border-radius:0 9px 9px 0}
+.card-takeaway.copiable-alta{border-left-color:#087b52;background:#e8f7f0}
+.card-takeaway.copiable-media{border-left-color:#c8a23b;background:#fdf8ea}
+.card-takeaway.copiable-baja{border-left-color:#b9c4bf;background:#f4f6f5}
+.card-takeaway small{display:block;font-size:8.5px;letter-spacing:.1em;font-weight:900;color:#456a58}
+.card-takeaway small b{text-transform:uppercase}
+.card-takeaway.copiable-media small{color:#8a6d1c}
+.card-takeaway.copiable-baja small{color:#6d7873}
+.card-takeaway p{font-size:11.5px;line-height:1.55;color:#374a41;margin:6px 0 0}
+
+/* === v4: "Qué me llevo" en ficha completa === */
+.record-takeaway{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;padding:22px 28px;background:linear-gradient(120deg,#0a2419,#14402f 70%,#0d3625);color:#eafff5;border-bottom:1px solid #244c3b}
+.takeaway-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#2bc486;color:#052e1f;font-size:20px;font-weight:900}
+.record-takeaway .eyebrow{color:#82dcb2;margin:0 0 8px}
+.record-takeaway.copiable-media .eyebrow{color:#ffe3a1}
+.record-takeaway.copiable-baja .eyebrow{color:#b9cdc4}
+.takeaway-text{font-size:15px;line-height:1.7;margin:0;color:#f2fff9;max-width:960px}
+
+/* === v4: vista Ejecutar === */
+.exec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.exec-card{padding:22px 24px;border:1px solid var(--line);border-radius:15px;background:#fff}
+.exec-head{display:flex;align-items:center;gap:10px}
+.exec-head>b{font-size:16px;color:var(--green);font-weight:900}
+.exec-cat{font-size:9.5px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:99px;background:#eaf6f0;color:#256247}
+.exec-meter{margin-left:auto;font-size:10.5px;color:var(--muted);font-weight:800}
+.exec-card h3{font-size:19px;margin:12px 0 8px;letter-spacing:-.02em}
+.exec-card>p{font-size:13px;line-height:1.68;color:#46564e;margin:0 0 12px}
+.pattern-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:20px 0 26px}
+.pattern-compare article{padding:18px 20px;border:1px solid var(--line);border-radius:13px;background:#fff}
+.pattern-compare article>span{font-size:12.5px;font-weight:850}
+.pattern-bars{display:grid;gap:8px;margin-top:12px}
+.pattern-bars>div{display:grid;grid-template-columns:76px minmax(0,1fr) 48px;align-items:center;gap:10px}
+.pattern-bars small{font-size:10px;color:var(--muted);font-weight:800}
+.pattern-bars i{display:block;height:12px;border-radius:99px;background:var(--pale);overflow:hidden}
+.pattern-bars i>b{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green2),var(--green))}
+.pattern-bars i>b.rest{background:#c3d2cb}
+.pattern-bars strong{font-size:12px;text-align:right}
+.dossier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+.dossier-card{padding:18px;border:1px solid var(--line);border-radius:13px;background:#fff;display:flex;flex-direction:column;gap:10px}
+.dossier-head{display:flex;gap:10px;align-items:center}
+.dossier-head h3{font-size:15px;margin:0;letter-spacing:-.015em}
+.dossier-head small{font-size:10px;color:var(--muted)}
+.dossier-card>p{font-size:12.5px;line-height:1.62;color:#46564e;margin:0;flex:1}
+.dossier-card .link-button{align-self:flex-start;font-size:12px}
+.dossier-body{padding-top:4px}
+.dossier-resumen{margin:14px 19px 4px;padding:14px 16px;font-size:14px;line-height:1.72;color:#2c4237;background:#eff8f3;border-left:3px solid var(--green);border-radius:0 10px 10px 0}
+.map-takeaway{font-size:11.5px;line-height:1.62;color:#d3f0e1;margin:10px 0 6px;padding:10px 12px;border-left:2px solid #2bc486;background:rgba(43,196,134,.09);border-radius:0 8px 8px 0}
+@media(max-width:1180px){.exec-grid,.pattern-compare{grid-template-columns:1fr}.dossier-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.dossier-grid{grid-template-columns:1fr}.record-takeaway{padding:16px 20px}.takeaway-text{font-size:13.5px}}
+
+/* === v4: legibilidad — mínimos tipográficos elevados en todo el portal === */
+.sidebar nav button{font-size:13.5px}
+.company-card h3{font-size:20px}
+.offer{font-size:13px;color:#48564f;min-height:58px}
+.country-label{font-size:11px}
+.pill{font-size:10px}
+.score{font-size:11px}
+.price-box small{font-size:9px}
+.price-box strong{font-size:12.5px}
+.price-box span{font-size:12px}
+.card-meta{font-size:10px}
+.card-buttons button{font-size:12px}
+.filterbar label{font-size:10px}
+.filterbar select{font-size:12px}
+.result-line{font-size:12px}
+.stat-grid span{font-size:10px}
+.stat-grid small{font-size:11px}
+.country-grid span{font-size:12px}
+.country-grid strong{font-size:22px}
+.country-grid small{font-size:9.5px}
+.gallery-stats span{font-size:11px}
+.compare-picker button{font-size:11px}
+.compare-row>*{font-size:11.5px;line-height:1.55}
+.record-kpis span{font-size:9.5px}
+.record-kpis strong{font-size:14.5px}
+.record-kpis small{font-size:10.5px}
+.record-toolbar span,.record-toolbar button{font-size:10.5px}
+.record-index>a{font-size:11.5px;padding:10px 11px}
+.record-content>details>summary{font-size:14.5px}
+.record-field>span{font-size:9.5px}
+.record-field>div{font-size:13px;line-height:1.7;color:#31423a}
+.record-badges span{font-size:10px}
+.record-title p{font-size:10px}
+.record-actions a,.record-actions button{font-size:10px}
+.record-sources>a,.source-blocked{font-size:10.5px}
+.record-empty{font-size:11.5px}
+.complete-analysis{font-size:13px}
+.complete-analysis th,.complete-analysis td{font-size:11.5px}
+.rich-text p,.rich-text li{font-size:13px}
+.detail-grid p{font-size:12.5px}
+.map-company-list span strong{font-size:12px}
+.map-company-list span small{font-size:9.5px}
+.map-selected-company p:not(.eyebrow){font-size:11.5px}
+.map-selected-company small{font-size:9px}
+.insights-note{font-size:12.5px}
+.bar-row .bar-label{font-size:11.5px}
+.threat-list button strong{font-size:12.5px}
+.gap-card p{font-size:12px;line-height:1.62}
+.method-card p{font-size:12.5px;line-height:1.65}

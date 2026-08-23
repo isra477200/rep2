@@ -33,7 +33,9 @@ import type {
   CountryGeo,
   DeepIndex,
   DeepIndexItem,
+  DossiersData,
   Editorial,
+  ExecutionBacklog,
   ExpansionData,
   MysteryData,
   FunnelV3Index,
@@ -42,7 +44,10 @@ import type {
   Insights,
   LogoManifest,
   Media,
+  PatternsData,
   Summary,
+  Takeaway,
+  TakeawaysData,
 } from "./data-types";
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 
@@ -50,6 +55,7 @@ const WorldMap = lazy(() => import("./WorldMap"));
 
 type View =
   | "home"
+  | "exec"
   | "companies"
   | "funnels"
   | "map"
@@ -66,6 +72,7 @@ type View =
 
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
+  { id: "exec", label: "Ejecutar", icon: "▸" },
   { id: "companies", label: "Empresas", icon: "◎" },
   { id: "funnels", label: "Funnels de venta", icon: "⌁" },
   { id: "map", label: "Mapa 3D", icon: "◉" },
@@ -326,12 +333,14 @@ function CompanyCard({
   onOpen,
   onCompare,
   selected,
+  takeaway,
 }: {
   c: Company;
   logos: LogoManifest;
   onOpen: () => void;
   onCompare: () => void;
   selected: boolean;
+  takeaway?: Takeaway;
 }) {
   const scoreClass = c.score >= 85 ? "high" : c.score >= 60 ? "mid" : "low";
   return (
@@ -346,6 +355,14 @@ function CompanyCard({
       <p className="offer">
         {short(c.offer || c.relation || "Oferta no documentada.")}
       </p>
+      {takeaway && (
+        <div className={`card-takeaway copiable-${takeaway.copiable}`}>
+          <small>
+            QUÉ ME LLEVO · <b>{takeaway.copiable}</b>
+          </small>
+          <p>{short(takeaway.t, 180)}</p>
+        </div>
+      )}
       <div className="price-box">
         <small>PRECIO LOCAL</small>
         <strong>{short(c.priceLocal || "No publicado", 75)}</strong>
@@ -386,7 +403,11 @@ export default function Portal() {
     [insights, setInsights] = useState<Insights | null>(null),
     [analytics, setAnalytics] = useState<Analytics | null>(null),
     [expansion, setExpansion] = useState<ExpansionData | null>(null),
-    [mystery, setMystery] = useState<MysteryData | null>(null);
+    [mystery, setMystery] = useState<MysteryData | null>(null),
+    [takeaways, setTakeaways] = useState<TakeawaysData | null>(null),
+    [patterns, setPatterns] = useState<PatternsData | null>(null),
+    [execution, setExecution] = useState<ExecutionBacklog | null>(null),
+    [dossiers, setDossiers] = useState<DossiersData | null>(null);
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -462,8 +483,20 @@ export default function Portal() {
       fetch("/data/mystery.json")
         .then((r) => (r.ok ? (r.json() as Promise<MysteryData>) : null))
         .catch(() => null),
+      fetch("/data/takeaways.json")
+        .then((r) => (r.ok ? (r.json() as Promise<TakeawaysData>) : null))
+        .catch(() => null),
+      fetch("/data/patterns.json")
+        .then((r) => (r.ok ? (r.json() as Promise<PatternsData>) : null))
+        .catch(() => null),
+      fetch("/data/execution.json")
+        .then((r) => (r.ok ? (r.json() as Promise<ExecutionBacklog>) : null))
+        .catch(() => null),
+      fetch("/data/dossiers.json")
+        .then((r) => (r.ok ? (r.json() as Promise<DossiersData>) : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -476,6 +509,10 @@ export default function Portal() {
         setAnalytics(ana);
         setExpansion(exp);
         setMystery(mys);
+        setTakeaways(tks);
+        setPatterns(pats);
+        setExecution(execd);
+        setDossiers(doss);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
@@ -1198,6 +1235,7 @@ export default function Portal() {
                     onOpen={() => openCompany(c)}
                     onCompare={() => toggleCompare(c.id)}
                     selected={compare.includes(c.id)}
+                    takeaway={takeaways?.items[c.id]}
                   />
                 ))}
               </div>
@@ -1232,6 +1270,182 @@ export default function Portal() {
                 →
               </button>
             </section>
+          </div>
+        )}
+
+        {view === "exec" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">EJECUTAR · DESTILADO ACCIONABLE</p>
+              <h1>Del dato a la decisión</h1>
+              <p>
+                Las {fmt(companies.length)} fichas, reducidas a lo que se puede
+                copiar ya: un backlog priorizado, los patrones que separan a los
+                ganadores del montón y los dossiers profundos del top 30. Cada
+                táctica cita la ficha de la que sale.
+              </p>
+            </section>
+
+            {execution && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">BACKLOG PRIORIZADO</p>
+                    <h2>{execution.actions.length} acciones, ordenadas por impacto/esfuerzo</h2>
+                  </div>
+                </div>
+                <p className="insights-note">{execution.note}</p>
+                <div className="exec-grid">
+                  {execution.actions.map((action, index) => (
+                    <article key={action.title} className="exec-card">
+                      <div className="exec-head">
+                        <b>{String(index + 1).padStart(2, "0")}</b>
+                        <span className="exec-cat">{action.categoria}</span>
+                        <span
+                          className="exec-meter"
+                          title={`Impacto ${action.impact}/5 · Esfuerzo ${action.effort}/5`}
+                        >
+                          impacto {action.impact} · esfuerzo {action.effort}
+                        </span>
+                      </div>
+                      <h3>{action.title}</h3>
+                      <p>{action.detail}</p>
+                      <div className="chip-row">
+                        {action.sources.map((id) => {
+                          const c = companyById.get(id);
+                          return c ? (
+                            <button key={id} className="ref-chip" onClick={() => openCompany(c)}>
+                              {c.name}
+                            </button>
+                          ) : null;
+                        })}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {patterns && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">DETECTOR DE PATRONES · {fmt(patterns.universe)} FICHAS CRUZADAS</p>
+                    <h2>Qué hacen distinto los {patterns.winnersN} con puntuación 80+</h2>
+                  </div>
+                </div>
+                <div className="pattern-compare">
+                  {[
+                    { label: "Garantía escrita", w: patterns.winnersProfile.guaranteePct, r: patterns.restProfile.guaranteePct },
+                    { label: "Anuncios activos verificados", w: patterns.winnersProfile.adsActivePct, r: patterns.restProfile.adsActivePct },
+                    { label: "Precio público", w: patterns.winnersProfile.pricePublicPct, r: patterns.restProfile.pricePublicPct },
+                    { label: "Más de un mercado", w: patterns.winnersProfile.multiMarketPct, r: patterns.restProfile.multiMarketPct },
+                  ].map((row) => (
+                    <article key={row.label}>
+                      <span>{row.label}</span>
+                      <div className="pattern-bars">
+                        <div>
+                          <small>Ganadores</small>
+                          <i><b style={{ width: `${row.w}%` }} /></i>
+                          <strong>{row.w}%</strong>
+                        </div>
+                        <div>
+                          <small>Resto</small>
+                          <i><b className="rest" style={{ width: `${row.r}%` }} /></i>
+                          <strong>{row.r}%</strong>
+                        </div>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+                <div className="gap-grid">
+                  {patterns.findings.map((finding) => (
+                    <article key={finding.title} className="gap-card">
+                      <strong>{finding.stat}</strong>
+                      <h3>{finding.title}</h3>
+                      <p>{finding.detail}</p>
+                    </article>
+                  ))}
+                </div>
+                <h3 className="analysis-title">Modelos de cobro, comparados sobre la base entera</h3>
+                <div className="matrix-wrap">
+                  <table className="matrix-table">
+                    <thead>
+                      <tr><th>Modelo de cobro (señal pública)</th><th>Fichas</th><th>Mediana €</th><th>% ads activos</th><th>% garantía</th><th>Score medio</th><th>Referentes</th></tr>
+                    </thead>
+                    <tbody>
+                      {patterns.modelStats.map((model) => (
+                        <tr key={model.id}>
+                          <td><b>{model.label}</b></td>
+                          <td>{model.n}</td>
+                          <td>{model.medianEur != null ? `${fmt(model.medianEur)} €` : "—"}</td>
+                          <td>{model.adsActivePct}%</td>
+                          <td>{model.guaranteePct}%</td>
+                          <td>{model.avgScore}</td>
+                          <td>
+                            {model.examples.slice(0, 2).map((example) => {
+                              const c = companyById.get(example.id);
+                              return c ? (
+                                <button key={example.id} className="ref-chip" onClick={() => openCompany(c)}>{example.name}</button>
+                              ) : null;
+                            })}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <h3 className="analysis-title">Validados dos veces: puntuación 80+ y anuncios pagados ahora mismo</h3>
+                <div className="threat-list">
+                  {patterns.doubleValidated.map((entry) => {
+                    const c = companyById.get(entry.id);
+                    return (
+                      <button key={entry.id} onClick={() => c && openCompany(c)}>
+                        <span><strong>{entry.name}</strong><small>{entry.country} · {entry.agencyType} · Meta {entry.metaAds} · Google {entry.googleAds}</small></span>
+                        <b>{entry.score}</b>
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
+            {dossiers && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">DOSSIERS PROFUNDOS · INVESTIGACIÓN WEB {dossiers.generatedAt}</p>
+                    <h2>El top {Object.keys(dossiers.items).length}, por dentro</h2>
+                  </div>
+                </div>
+                <p className="insights-note">
+                  Equipo, hitos, stack visible y economía unitaria estimada con el
+                  cálculo a la vista. Cada dossier vive dentro de su ficha; aquí
+                  está la puerta.
+                </p>
+                <div className="dossier-grid">
+                  {Object.values(dossiers.items)
+                    .map((dossier) => ({ dossier, company: companyById.get(dossier.id) }))
+                    .filter((row): row is { dossier: typeof row.dossier; company: Company } => Boolean(row.company))
+                    .sort((a, b) => b.company.score - a.company.score)
+                    .map(({ dossier, company }) => (
+                      <article key={dossier.id} className="dossier-card">
+                        <div className="dossier-head">
+                          <CompanyLogo company={company} logos={logos} size="small" />
+                          <div>
+                            <h3>{company.name}</h3>
+                            <small>{company.primaryCountry} · {company.score}/100 · confianza {dossier.confianza}</small>
+                          </div>
+                        </div>
+                        <p>{short(dossier.resumen, 220)}</p>
+                        <button className="link-button" onClick={() => openCompany(company)}>
+                          Abrir dossier completo →
+                        </button>
+                      </article>
+                    ))}
+                </div>
+              </section>
+            )}
           </div>
         )}
 
@@ -1316,6 +1530,7 @@ export default function Portal() {
                   onOpen={() => openCompany(c)}
                   onCompare={() => toggleCompare(c.id)}
                   selected={compare.includes(c.id)}
+                  takeaway={takeaways?.items[c.id]}
                 />
               ))}
             </section>
@@ -1756,6 +1971,7 @@ export default function Portal() {
                 countries={countries}
                 geo={geo}
                 logos={logos}
+                takeaways={takeaways?.items}
                 focusCountry={focusCountry}
                 focusCompanyId={focusCompanyId}
                 onOpen={openCompany}
@@ -2899,6 +3115,8 @@ export default function Portal() {
           key={active.id}
           company={active}
           logos={logos}
+          takeaway={takeaways?.items[active.id]}
+          dossier={dossiers?.items[active.id]}
           compared={compare.includes(active.id)}
           lightboxOpen={lightboxOpen}
           onClose={closeCompany}

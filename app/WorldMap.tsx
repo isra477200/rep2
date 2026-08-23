@@ -14,7 +14,7 @@ import {
 import "maplibre-gl/dist/maplibre-gl.css";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
 import CompanyLogo from "./CompanyLogo";
-import type { Company, Country, CountryGeo, LogoManifest } from "./data-types";
+import type { Company, Country, CountryGeo, LogoManifest, Takeaway } from "./data-types";
 
 setWorkerUrl(workerUrl);
 
@@ -48,6 +48,7 @@ export default function WorldMap({
   companies,
   geo,
   logos,
+  takeaways,
   focusCountry,
   focusCompanyId,
   onOpen,
@@ -56,6 +57,7 @@ export default function WorldMap({
   countries: Country[];
   geo: CountryGeo[];
   logos: LogoManifest;
+  takeaways?: Record<string, Takeaway>;
   focusCountry: string | null;
   focusCompanyId: string | null;
   onOpen: (company: Company) => void;
@@ -226,7 +228,8 @@ export default function WorldMap({
       if (!position) continue;
       const element = document.createElement("button");
       element.type = "button";
-      element.className = `map-logo-marker precision-${company.location?.precision || "sin_punto"}`;
+      const toneClass = logos[company.id]?.tone ? ` tone-${logos[company.id]?.tone}` : "";
+      element.className = `map-logo-marker precision-${company.location?.precision || "sin_punto"}${toneClass}`;
       element.title = `${company.name} · ${precisionLabel[company.location?.precision || "sin_punto"]}`;
       element.setAttribute("aria-label", `Seleccionar ${company.name} en el mapa`);
       const record = logos[company.id];
@@ -391,6 +394,22 @@ export default function WorldMap({
     map.on("moveend", syncLogoMarkers);
     map.on("idle", syncLogoMarkers);
 
+    /* Rotación suave del globo en la vista mundial, hasta que el usuario toca. */
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let spinning = !reducedMotion;
+    const stopSpin = () => { spinning = false; };
+    map.on("mousedown", stopSpin);
+    map.on("touchstart", stopSpin);
+    map.on("wheel", stopSpin);
+    const spin = () => {
+      if (!spinning || map.getZoom() > 2.2) return;
+      const center = map.getCenter();
+      center.lng += 14;
+      map.easeTo({ center, duration: 9000, easing: (t) => t, essential: false });
+    };
+    map.on("moveend", spin);
+    map.once("idle", spin);
+
     map.on("click", "company-clusters", async (event: MapLayerMouseEvent) => {
       const feature = event.features?.[0];
       if (!feature || feature.geometry.type !== "Point") return;
@@ -491,6 +510,11 @@ export default function WorldMap({
               <h2>{selectedCompany.name}</h2>
               <span className={`precision-badge ${selectedCompany.location?.precision || "sin_punto"}`}>{precisionLabel[selectedCompany.location?.precision || "sin_punto"]}</span>
               <p>{selectedCompany.location?.locationLabel}</p>
+              {takeaways?.[selectedCompany.id] && (
+                <p className="map-takeaway">
+                  <b>Qué me llevo:</b> {takeaways[selectedCompany.id].t}
+                </p>
+              )}
               <small>{selectedCompany.location?.limitation}</small>
             </div>
             <button className="primary-action" onClick={() => onOpen(selectedCompany)}>Abrir ficha completa →</button>

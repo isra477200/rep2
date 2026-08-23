@@ -19,9 +19,11 @@ import {
 import type {
   Company,
   DeepReview,
+  Dossier,
   FunnelV3Review,
   LogoManifest,
   Media,
+  Takeaway,
 } from "./data-types";
 
 const scopeShort: Record<string, string> = {
@@ -300,6 +302,8 @@ const isVisibleFocusTarget = (element: HTMLElement) => {
 export default function RecordDetail({
   company: companySummary,
   logos,
+  takeaway,
+  dossier,
   compared,
   lightboxOpen,
   onClose,
@@ -310,6 +314,8 @@ export default function RecordDetail({
 }: {
   company: Company;
   logos: LogoManifest;
+  takeaway?: Takeaway;
+  dossier?: Dossier;
   compared: boolean;
   lightboxOpen: boolean;
   onClose: () => void;
@@ -663,6 +669,18 @@ export default function RecordDetail({
           </article>
         </section>
 
+        {takeaway && (
+          <section className={`record-takeaway copiable-${takeaway.copiable}`}>
+            <div className="takeaway-mark">→</div>
+            <div>
+              <p className="eyebrow">
+                QUÉ ME LLEVO · REPLICABILIDAD {takeaway.copiable.toUpperCase()}
+              </p>
+              <p className="takeaway-text">{takeaway.t}</p>
+            </div>
+          </section>
+        )}
+
         <div className="record-toolbar">
           <span>Todos los campos de la ficha canónica, sin recortes</span>
           <button
@@ -709,6 +727,11 @@ export default function RecordDetail({
             <a href="#record-position" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-position" ? "active" : undefined}>
               Lectura RedVitalia
             </a>
+            {dossier && (
+              <a href="#record-dossier" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-dossier" ? "active" : undefined}>
+                Dossier de investigación
+              </a>
+            )}
             <a href="#record-media" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-media" ? "active" : undefined}>
               Galería
             </a>
@@ -1459,6 +1482,61 @@ export default function RecordDetail({
                 <Field label="Alcance canónico">{value(company.scope)}</Field>
               </div>
             </details>
+
+            {dossier && (
+              <details id="record-dossier" open className={sectionClass("record-dossier")}>
+                <summary>
+                  <span>D</span> Dossier de investigación · web pública {dossier.checkedAt}
+                </summary>
+                <div className="dossier-body">
+                  <p className="dossier-resumen">{dossier.resumen}</p>
+                  <div className="record-grid">
+                    <Field label="Equipo y tamaño (con fuente)" wide>
+                      {dossier.equipo || "No observable"}
+                    </Field>
+                    {dossier.hitos.length > 0 && (
+                      <Field label="Hitos públicos" wide>
+                        <div className="deep-full-list">
+                          {dossier.hitos.map((hito, index) => (
+                            <p key={index}>{hito}</p>
+                          ))}
+                        </div>
+                      </Field>
+                    )}
+                    <Field label="Stack visible en su web" wide>
+                      {dossier.stack.length ? (
+                        <div className="record-badges light">
+                          {dossier.stack.map((tool) => (
+                            <span key={tool}>{tool}</span>
+                          ))}
+                        </div>
+                      ) : (
+                        "No detectado (no significa que no exista)"
+                      )}
+                    </Field>
+                    <Field label="Economía unitaria · Estimado, cálculo a la vista" wide>
+                      <b>Supuesto:</b> {dossier.economics.supuesto}
+                      {"\n"}
+                      <b>Cálculo:</b> {dossier.economics.calculo}
+                      {"\n"}
+                      <b>Lectura:</b> {dossier.economics.lectura}
+                    </Field>
+                    <Field label="Fuentes del dossier" wide>
+                      <div className="deep-sources">
+                        {dossier.fuentes.map((fuente) => (
+                          <PublicLink key={fuente.url} href={fuente.url}>
+                            {fuente.label}
+                          </PublicLink>
+                        ))}
+                      </div>
+                    </Field>
+                    <Field label="Confianza de la investigación">
+                      {dossier.confianza}
+                    </Field>
+                  </div>
+                </div>
+              </details>
+            )}
 
             <details id="record-media" open className={sectionClass("record-media")}>
               <summary>
