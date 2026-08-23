@@ -109,6 +109,71 @@
    "descripcion": "Hero, comprobador de zona, garantías y CTA — el copy completo del bloque de escasez territorial (Horizzon/ReforLeads/Agency MDI).",
    "filename": "kit-landing-zona.txt",
    "contenido": "KIT DE COPY — BLOQUE «ZONA PROTEGIDA» PARA LA LANDING\n\nHERO\n────\nTitular: Citas con clientes de tu zona, en tu calendario. Y tu competencia, fuera.\nSubtítulo: Un solo [nicho] por zona. Cualificamos por teléfono, te agendamos la reunión y si el volumen no llega, seguimos gratis hasta cumplirlo.\nCTA primario: [Comprueba si tu zona está libre →]\nCTA secundario: [Ver cómo funciona · 2 min]\n\nBLOQUE COMPROBADOR DE ZONA\n──────────────────────────\nTítulo: ¿Está libre tu zona?\nTexto: Trabajamos con un único negocio de cada sector por zona. Introduce tu municipio y tu actividad: te decimos en menos de 24 h si la plaza está libre o si hay lista de espera.\n[Municipio ▾] [Actividad ▾] [Comprobar disponibilidad]\nMicrocopy bajo el botón: Sin compromiso. Si está ocupada, puedes entrar en lista de espera.\n\nBLOQUE 3 GARANTÍAS (iconos)\n───────────────────────────\n🛡️ Zona Protegida — Un solo cliente por sector y zona. Por contrato.\n📅 Citas válidas o repuestas — La cita duplicada, falsa o fuera de zona se repone. Por escrito.\n⏱️ Volumen o seguimos gratis — Si un ciclo no llega al volumen pactado, trabajamos sin coste hasta cumplirlo.\n\nBLOQUE EXPECTATIVAS (honestidad que vende)\n──────────────────────────────────────────\nSemanas 1-2: montamos guion, zona y agenda contigo. Semanas 3-4: ritmo objetivo de citas. Sin magia: teléfono, criterio y constancia.\n\nCIERRE\n──────\n«Cada zona solo tiene una plaza. La tuya, ahora mismo, está [LIBRE].»\n[Reservar mi zona →]\n\nOrigen: Horizzon Media («comprueba si tu zona está libre»), ReforLeads (mapa de plazas por provincia), Agency MDI (respuesta <24 h), Buda Marketing (claim seco de exclusividad)."
+  },
+  {
+   "id": "widget-plazas",
+   "categoria": "Landing",
+   "para": "Isra",
+   "titulo": "Widget embebible: mapa de plazas por zona",
+   "descripcion": "HTML autocontenido para la landing: lista de zonas con estado Libre/Ocupada/Lista de espera y CTA. Se edita en el propio archivo (una línea por zona) y se pega como iframe o bloque HTML.",
+   "filename": "widget-plazas-redvitalia.html",
+   "contenido": "<!DOCTYPE html>\n<html lang=\"es\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Zonas RedVitalia</title><style>*{box-sizing:border-box;margin:0}body{font-family:system-ui,Segoe UI,Roboto,sans-serif;background:transparent;padding:8px}.rv-zonas{max-width:680px;margin:0 auto;border:1px solid #dbe2ec;border-radius:16px;overflow:hidden;background:#fff}.rv-zonas header{padding:18px 22px;background:#0b57d0;color:#fff}.rv-zonas header h3{font-size:18px;margin-bottom:4px}.rv-zonas header p{font-size:12px;opacity:.85}.rv-zona{display:flex;align-items:center;gap:12px;padding:13px 22px;border-top:1px solid #eef1f6;font-size:14px}.rv-zona b{flex:1}.rv-tag{font-size:11px;font-weight:800;padding:5px 10px;border-radius:99px}.rv-libre{background:#e6f4ea;color:#188038}.rv-ocupada{background:#fce8e6;color:#c5221f}.rv-espera{background:#fef7e0;color:#b06000}.rv-cta{display:block;text-align:center;padding:14px;background:#f7f9fc;color:#0b57d0;font-weight:800;font-size:13px;text-decoration:none;border-top:1px solid #eef1f6}</style></head><body>\n<div class=\"rv-zonas\">\n<header><h3>Plazas por zona — [NICHO]</h3><p>Un solo negocio por zona. Estado en tiempo real de tu provincia.</p></header>\n<!-- EDITA AQUÍ: una línea por zona; clase rv-libre / rv-ocupada / rv-espera -->\n<div class=\"rv-zona\"><b>Madrid</b><span class=\"rv-tag rv-ocupada\">Ocupada</span></div>\n<div class=\"rv-zona\"><b>Barcelona</b><span class=\"rv-tag rv-espera\">Lista de espera</span></div>\n<div class=\"rv-zona\"><b>Valencia</b><span class=\"rv-tag rv-libre\">Libre</span></div>\n<div class=\"rv-zona\"><b>Sevilla</b><span class=\"rv-tag rv-libre\">Libre</span></div>\n<div class=\"rv-zona\"><b>Bilbao</b><span class=\"rv-tag rv-libre\">Libre</span></div>\n<a class=\"rv-cta\" href=\"[URL-DE-TU-FORMULARIO]\">Comprobar mi zona →</a>\n</div>\n</body></html>"
   }
- ]
+ ],
+ "formacion": {
+  "titulo": "Ruta de formación · 10 fichas que enseñan el oficio",
+  "nota": "Para Nidia: abre cada ficha, lee su «Qué me llevo» y responde la pregunta antes de pasar a la siguiente.",
+  "pasos": [
+   {
+    "id": "scale-lead",
+    "leccion": "El cobro por cita válida con blindaje: mínimo de 6 meses + compromiso de actividad medible.",
+    "pregunta": "¿Qué DOS blindajes usa SCALE Lead para que el pago a éxito no le arruine?"
+   },
+   {
+    "id": "horizzon-media",
+    "leccion": "El espejo español: garantía de volumen que nunca devuelve dinero + CTA de zona.",
+    "pregunta": "¿Qué hace Horizzon cuando no llega a los 40 leads del mes?"
+   },
+   {
+    "id": "belkins",
+    "leccion": "Vender la meta mensual pero garantizar el suelo anual; no-show recovery como producto.",
+    "pregunta": "¿Por qué garantizar 100/año y vender 20/mes no es contradicción?"
+   },
+   {
+    "id": "dotramo",
+    "leccion": "El piloto de 14 días por reunión celebrada y las reglas de qué NO se cobra.",
+    "pregunta": "Lista las 4 cosas que dotramo no factura nunca."
+   },
+   {
+    "id": "salesbread",
+    "leccion": "Reformular el volumen como ritmo diario y convertir la baja en recomendación.",
+    "pregunta": "¿Qué es la graduation call y qué entrega?"
+   },
+   {
+    "id": "everconnect",
+    "leccion": "La cita que el negocio no atiende también cuenta: educar al cliente a responder.",
+    "pregunta": "¿Cuándo factura EverConnect una llamada no atendida?"
+   },
+   {
+    "id": "prospectify",
+    "leccion": "Criterios de cita firmados ANTES de vender: lo no firmado no se factura.",
+    "pregunta": "¿Qué pasa en Prospectify si al final del paquete faltan reuniones?"
+   },
+   {
+    "id": "the-selling-system-marc-graell",
+    "leccion": "El autofiltro en el copy: requisitos de entrada que cualifican sin fricción. Y una garantía-humo que NO copiar.",
+    "pregunta": "¿Por qué su garantía de 121 días es humo y la de Abstrakt no?"
+   },
+   {
+    "id": "qdq-qdq-media",
+    "leccion": "ANTI-MODELO: permanencia anual, renovación automática, penalizaciones. Munición de cierre.",
+    "pregunta": "Cita dos cláusulas de qdq que usarías en una llamada para diferenciarte."
+   },
+   {
+    "id": "doctoralia-grupo-docplanner",
+    "leccion": "ANTI-MODELO: cobrar visibilidad sin comprometerse a aportar pacientes.",
+    "pregunta": "¿Qué frase escrita de Doctoralia es oro para el argumentario de RedVitalia?"
+   }
+  ]
+ }
 }

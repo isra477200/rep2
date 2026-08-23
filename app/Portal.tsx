@@ -27,7 +27,9 @@ import {
 } from "./MediaResolution";
 import RecordDetail from "./RecordDetail";
 import type {
+  AdsKitData,
   Analytics,
+  ArsenalData,
   Company,
   Country,
   CountryGeo,
@@ -37,6 +39,7 @@ import type {
   Editorial,
   ExecutionBacklog,
   ExpansionData,
+  HomesTimelineData,
   MysteryData,
   FunnelV3Index,
   FunnelV3IndexItem,
@@ -49,6 +52,8 @@ import type {
   Summary,
   Takeaway,
   TakeawaysData,
+  VerticalesData,
+  VigilanciaData,
 } from "./data-types";
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 
@@ -58,6 +63,10 @@ type View =
   | "home"
   | "exec"
   | "resources"
+  | "tools"
+  | "arsenal"
+  | "verticals"
+  | "watch"
   | "companies"
   | "funnels"
   | "map"
@@ -76,19 +85,31 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
   { id: "exec", label: "Ejecutar", icon: "▸" },
   { id: "resources", label: "Recursos", icon: "⤓" },
+  { id: "tools", label: "Herramientas", icon: "◳" },
+  { id: "arsenal", label: "Arsenal", icon: "⚑" },
   { id: "companies", label: "Empresas", icon: "◎" },
   { id: "funnels", label: "Funnels de venta", icon: "⌁" },
   { id: "map", label: "Mapa 3D", icon: "◉" },
   { id: "countries", label: "Países", icon: "◈" },
   { id: "ads", label: "Galerías", icon: "▣" },
   { id: "compare", label: "Comparador", icon: "⇄" },
+  { id: "verticals", label: "Nichos", icon: "▤" },
   { id: "insights", label: "Conclusiones", icon: "∴" },
   { id: "playbooks", label: "Métodos", icon: "⚙" },
   { id: "analysis", label: "Análisis", icon: "∑" },
+  { id: "watch", label: "Vigilancia", icon: "◔" },
   { id: "expansion", label: "Expansión", icon: "❖" },
   { id: "mystery", label: "Mystery", icon: "◍" },
   { id: "blueprint", label: "Blueprint", icon: "✦" },
   { id: "audit", label: "Auditoría", icon: "✓" },
+];
+
+const navGroups: Array<{ label: string | null; ids: View[] }> = [
+  { label: null, ids: ["home"] },
+  { label: "Acción", ids: ["exec", "resources", "tools", "arsenal"] },
+  { label: "Base", ids: ["companies", "funnels", "map", "countries", "ads", "compare"] },
+  { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "watch", "expansion", "mystery"] },
+  { label: "Sistema", ids: ["blueprint", "audit"] },
 ];
 const scopeShort: Record<string, string> = {
   "Núcleo — agencia/leadgen": "Agencia / leadgen",
@@ -411,7 +432,43 @@ export default function Portal() {
     [patterns, setPatterns] = useState<PatternsData | null>(null),
     [execution, setExecution] = useState<ExecutionBacklog | null>(null),
     [dossiers, setDossiers] = useState<DossiersData | null>(null),
-    [recursos, setRecursos] = useState<RecursosData | null>(null);
+    [recursos, setRecursos] = useState<RecursosData | null>(null),
+    [verticales, setVerticales] = useState<VerticalesData | null>(null),
+    [arsenal, setArsenal] = useState<ArsenalData | null>(null),
+    [adsKit, setAdsKit] = useState<AdsKitData | null>(null),
+    [vigilancia, setVigilancia] = useState<VigilanciaData | null>(null),
+    [homesTimeline, setHomesTimeline] = useState<HomesTimelineData | null>(null);
+  const [navCollapsed, setNavCollapsed] = useState(false);
+  const [simPrice, setSimPrice] = useState(""),
+    [propVertical, setPropVertical] = useState("clinicas-salud"),
+    [propZona, setPropZona] = useState(""),
+    [propServicio, setPropServicio] = useState(""),
+    [propPrecio, setPropPrecio] = useState(""),
+    [titularQuery, setTitularQuery] = useState(""),
+    [titularFormula, setTitularFormula] = useState("Todas"),
+    [garantiaKind, setGarantiaKind] = useState("Todas");
+  const [actionStates, setActionStates] = useState<Record<string, { estado: string; nota: string }>>({});
+  useEffect(() => {
+    try {
+      const storedNav = window.localStorage.getItem("rv-nav-collapsed");
+      if (storedNav === "1") setNavCollapsed(true);
+      const storedActions = window.localStorage.getItem("rv-backlog-estado");
+      if (storedActions) setActionStates(JSON.parse(storedActions));
+    } catch {}
+  }, []);
+  const toggleNav = () => {
+    setNavCollapsed((current) => {
+      try { window.localStorage.setItem("rv-nav-collapsed", current ? "0" : "1"); } catch {}
+      return !current;
+    });
+  };
+  const setActionState = (title: string, estado: string) => {
+    setActionStates((current) => {
+      const next = { ...current, [title]: { estado, nota: current[title]?.nota || "" } };
+      try { window.localStorage.setItem("rv-backlog-estado", JSON.stringify(next)); } catch {}
+      return next;
+    });
+  };
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -502,8 +559,23 @@ export default function Portal() {
       fetch("/data/recursos.json")
         .then((r) => (r.ok ? (r.json() as Promise<RecursosData>) : null))
         .catch(() => null),
+      fetch("/data/verticales.json")
+        .then((r) => (r.ok ? (r.json() as Promise<VerticalesData>) : null))
+        .catch(() => null),
+      fetch("/data/arsenal.json")
+        .then((r) => (r.ok ? (r.json() as Promise<ArsenalData>) : null))
+        .catch(() => null),
+      fetch("/data/ads-kit.json")
+        .then((r) => (r.ok ? (r.json() as Promise<AdsKitData>) : null))
+        .catch(() => null),
+      fetch("/data/vigilancia.json")
+        .then((r) => (r.ok ? (r.json() as Promise<VigilanciaData>) : null))
+        .catch(() => null),
+      fetch("/data/homes-timeline.json")
+        .then((r) => (r.ok ? (r.json() as Promise<HomesTimelineData>) : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss, recs]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss, recs, verts, ars, adsk, vig, homes]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -521,6 +593,11 @@ export default function Portal() {
         setExecution(execd);
         setDossiers(doss);
         setRecursos(recs);
+        setVerticales(verts);
+        setArsenal(ars);
+        setAdsKit(adsk);
+        setVigilancia(vig);
+        setHomesTimeline(homes);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
@@ -606,6 +683,55 @@ export default function Portal() {
     () => new Map(companies.map((company) => [company.id, company])),
     [companies],
   );
+  const priceDistribution = useMemo(
+    () =>
+      companies
+        .filter((c) => c.price && typeof c.price.eur === "number" && c.price.eur > 0)
+        .map((c) => c.price.eur as number)
+        .sort((a, b) => a - b),
+    [companies],
+  );
+  const simStats = useMemo(() => {
+    const value = Number(simPrice.replace(",", "."));
+    if (!Number.isFinite(value) || value <= 0 || !priceDistribution.length) return null;
+    const below = priceDistribution.filter((p) => p <= value).length;
+    const pct = Math.round((below / priceDistribution.length) * 100);
+    const median = priceDistribution[Math.floor(priceDistribution.length / 2)];
+    return { value, pct, median, n: priceDistribution.length };
+  }, [simPrice, priceDistribution]);
+  const proposalText = useMemo(() => {
+    const vertical = verticales?.verticales.find((v) => v.id === propVertical);
+    if (!vertical) return "";
+    const zona = propZona || "[ZONA]";
+    const servicio = propServicio || vertical.label.toLowerCase();
+    const precio = propPrecio || "[PRECIO]";
+    const refs = vertical.referentes.slice(0, 3).map((r) => `${r.name} (${r.country})`).join(", ");
+    return `PROPUESTA DE CAPTACIÓN — ${zona.toUpperCase()} · ${vertical.label.toUpperCase()}
+
+Preparada por RedVitalia · ${new Date().toLocaleDateString("es-ES")}
+
+1. TU MERCADO, EN DATOS
+Hemos auditado ${vertical.n} empresas de captación del vertical «${vertical.label}» en todo el mundo (${vertical.spainN} en España). ${vertical.medianEur ? `El precio mediano del mercado es de ${vertical.medianEur} € y solo una parte publica tarifas.` : "La mayoría oculta sus tarifas."} El ${vertical.adsActivePct}% mantiene anuncios activos: quien vive de captar, invierte en captarse a sí mismo. Referentes analizados: ${refs}.
+
+2. QUÉ TE PROPONEMOS
+Citas cualificadas con clientes de ${zona} interesados en ${servicio}, agendadas directamente en tu calendario por nuestro equipo de setters. Tú solo atiendes la reunión.
+
+3. NUESTRAS TRES GARANTÍAS (por contrato, no de palabra)
+· Garantía de Zona Protegida: un solo negocio de tu sector en ${zona}. Tu plaza queda registrada y bloqueada.
+· Cita válida o repuesta: la cita duplicada, falsa o fuera de zona se repone sin coste, con criterios firmados antes de empezar.
+· Volumen o seguimos gratis: si un ciclo no alcanza el volumen pactado, seguimos trabajando sin coste hasta cumplirlo.
+
+4. CÓMO ARRANCAMOS (Semana 0)
+Firma → conoces a tu setter → apruebas el guion por escrito → criterios de cita válida firmados → lanzamos. La primera factura llega solo cuando todo lo anterior está hecho.
+
+5. INVERSIÓN
+${precio} €/mes, sin permanencia oculta ni renovación automática escondida. Compáralo con un comercial en plantilla (≈2.200 €/mes con Seguridad Social, sin garantía de volumen).
+
+6. TU PLAZA
+Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fecha de esta propuesta, está LIBRE. Reservarla no cuesta nada: firmarla, sí — para tu competencia.
+
+[Firma / contacto RedVitalia]`;
+  }, [propVertical, propZona, propServicio, propPrecio, verticales]);
   const locationSummary = useMemo(() => {
     const withPoint = companies.filter(
       (company) =>
@@ -1076,38 +1202,62 @@ export default function Portal() {
     ?? Number(((auditedPriceRecords / summary.companies) * 100).toFixed(1));
 
   return (
-    <main className="app-shell">
-      <aside className="sidebar">
-        <button className="brand" onClick={() => go("home")}>
-          <span className="brandmark">RV</span>
-          <span>
-            <strong>RedVitalia</strong>
-            <small>Inteligencia mundial de captación</small>
-          </span>
-        </button>
+    <main className={`app-shell${navCollapsed ? " nav-collapsed" : ""}`}>
+      <aside className={`sidebar${navCollapsed ? " collapsed" : ""}`}>
+        <div className="side-top">
+          <button className="brand" onClick={() => go("home")}>
+            <span className="brandmark">RV</span>
+            {!navCollapsed && (
+              <span>
+                <strong>RedVitalia</strong>
+                <small>Inteligencia mundial de captación</small>
+              </span>
+            )}
+          </button>
+          <button
+            className="nav-toggle"
+            onClick={toggleNav}
+            aria-label={navCollapsed ? "Expandir menú" : "Plegar menú"}
+            title={navCollapsed ? "Expandir menú" : "Plegar menú"}
+          >
+            {navCollapsed ? "»" : "«"}
+          </button>
+        </div>
         <nav aria-label="Navegación principal">
-          {nav.map((n) => (
-            <button
-              key={n.id}
-              className={view === n.id ? "active" : ""}
-              onClick={() => go(n.id)}
-              aria-current={view === n.id ? "page" : undefined}
-            >
-              <i>{n.icon}</i>
-              <span>{n.label}</span>
-              {n.id === "companies" && <b>{fmt(companies.length)}</b>}
-              {n.id === "countries" && <b>195</b>}
-              {n.id === "ads" && <b>{fmt(summary.media)}</b>}
-            </button>
+          {navGroups.map((group) => (
+            <div className="nav-group" key={group.label || "top"}>
+              {group.label && !navCollapsed && <p className="nav-group-label">{group.label}</p>}
+              {group.label && navCollapsed && <hr className="nav-group-rule" />}
+              {group.ids.map((id) => {
+                const item = nav.find((n) => n.id === id)!;
+                return (
+                  <button
+                    key={item.id}
+                    className={view === item.id ? "active" : ""}
+                    onClick={() => go(item.id)}
+                    aria-current={view === item.id ? "page" : undefined}
+                    title={navCollapsed ? item.label : undefined}
+                  >
+                    <i>{item.icon}</i>
+                    {!navCollapsed && <span>{item.label}</span>}
+                    {!navCollapsed && item.id === "companies" && <b>{fmt(companies.length)}</b>}
+                    {!navCollapsed && item.id === "countries" && <b>195</b>}
+                    {!navCollapsed && item.id === "ads" && <b>{fmt(summary.media)}</b>}
+                  </button>
+                );
+              })}
+            </div>
           ))}
         </nav>
-        <div className="side-status">
-          <span className="dot" />
-          <div>
-            <strong>Instantánea verificada</strong>
-            <small>{BUILD_DATE_LONG}</small>
+        {!navCollapsed && (
+          <div className="side-status">
+            <span className="dot" />
+            <div>
+              <strong>Instantánea verificada</strong>
+              <small>{BUILD_DATE_LONG}</small>
+            </div>
           </div>
-        </div>
+        )}
       </aside>
       <section className="main">
         <header className="topbar">
@@ -1328,9 +1478,26 @@ export default function Portal() {
                           ) : null;
                         })}
                       </div>
+                      <div className="exec-state" role="group" aria-label="Estado de la acción">
+                        {(["pendiente", "en curso", "hecha", "descartada"] as const).map((estado) => (
+                          <button
+                            key={estado}
+                            className={(actionStates[action.title]?.estado || "pendiente") === estado ? `on estado-${estado.replace(" ", "-")}` : ""}
+                            onClick={() => setActionState(action.title, estado)}
+                          >
+                            {estado}
+                          </button>
+                        ))}
+                      </div>
                     </article>
                   ))}
                 </div>
+                <p className="exec-state-summary">
+                  {(["hecha", "en curso", "pendiente", "descartada"] as const)
+                    .map((estado) => `${execution.actions.filter((a) => (actionStates[a.title]?.estado || "pendiente") === estado).length} ${estado}`)
+                    .join(" · ")}{" "}
+                  — el estado se guarda en este navegador.
+                </p>
               </section>
             )}
 
@@ -1468,6 +1635,34 @@ export default function Portal() {
                 a producción; personaliza los campos entre [corchetes].
               </p>
             </section>
+            {recursos?.formacion && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">FORMACIÓN · PARA NIDIA</p>
+                    <h2>{recursos.formacion.titulo}</h2>
+                  </div>
+                </div>
+                <p className="insights-note">{recursos.formacion.nota}</p>
+                <div className="formacion-list">
+                  {recursos.formacion.pasos.map((paso, index) => {
+                    const c = companyById.get(paso.id);
+                    return (
+                      <article key={paso.id} className="formacion-card">
+                        <b>{String(index + 1).padStart(2, "0")}</b>
+                        <div>
+                          <h3>{c?.name || paso.id}</h3>
+                          <p>{paso.leccion}</p>
+                          <p className="formacion-pregunta">❓ {paso.pregunta}</p>
+                        </div>
+                        <button className="link-button" onClick={() => c && openCompany(c)}>Abrir ficha →</button>
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
             {recursos ? (
               <section className="content-section">
                 <p className="insights-note">{recursos.note}</p>
@@ -1524,6 +1719,446 @@ export default function Portal() {
             ) : (
               <div className="empty-state">Los recursos aún no están publicados.</div>
             )}
+          </div>
+        )}
+
+        {view === "tools" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">HERRAMIENTAS</p>
+              <h1>Genera, no redactes</h1>
+              <p>
+                Propuestas comerciales montadas con los datos de la base y un
+                simulador para posicionar tu precio contra el mercado mundial.
+              </p>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">GENERADOR DE PROPUESTAS</p>
+                  <h2>Elige nicho y zona; la propuesta sale hecha</h2>
+                </div>
+              </div>
+              <div className="tool-card">
+                <div className="tool-controls">
+                  <label>
+                    Vertical
+                    <select value={propVertical} onChange={(e) => setPropVertical(e.target.value)}>
+                      {(verticales?.verticales || []).map((v) => (
+                        <option key={v.id} value={v.id}>{v.label} · {v.n} fichas</option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    Zona
+                    <input value={propZona} placeholder="p. ej. Zaragoza" onChange={(e) => setPropZona(e.target.value)} />
+                  </label>
+                  <label>
+                    Servicio del cliente
+                    <input value={propServicio} placeholder="p. ej. implantes dentales" onChange={(e) => setPropServicio(e.target.value)} />
+                  </label>
+                  <label>
+                    Precio mensual (€)
+                    <input value={propPrecio} placeholder="p. ej. 890" onChange={(e) => setPropPrecio(e.target.value)} />
+                  </label>
+                </div>
+                <div className="resource-preview tool-preview">{proposalText || "Cargando verticales…"}</div>
+                <div className="resource-actions">
+                  <button
+                    className="res-copy"
+                    onClick={async () => {
+                      try { await navigator.clipboard.writeText(proposalText); setToast("Propuesta copiada"); } catch { setToast("No se pudo copiar"); }
+                    }}
+                  >
+                    Copiar propuesta
+                  </button>
+                  <button
+                    className="res-download"
+                    onClick={() => {
+                      const blob = new Blob([proposalText], { type: "text/plain;charset=utf-8" });
+                      const url = URL.createObjectURL(blob);
+                      const link = document.createElement("a");
+                      link.href = url;
+                      link.download = `propuesta-${propZona || "zona"}.txt`;
+                      document.body.appendChild(link);
+                      link.click();
+                      link.remove();
+                      URL.revokeObjectURL(url);
+                    }}
+                  >
+                    Descargar TXT
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">SIMULADOR DE PRICING</p>
+                  <h2>¿Dónde cae tu precio frente al mundo?</h2>
+                </div>
+              </div>
+              <div className="tool-card">
+                <div className="tool-controls">
+                  <label>
+                    Tu precio mensual (€)
+                    <input value={simPrice} placeholder="p. ej. 750" onChange={(e) => setSimPrice(e.target.value)} />
+                  </label>
+                </div>
+                {simStats ? (
+                  <div className="sim-result">
+                    <div className="sim-gauge" aria-hidden>
+                      <i style={{ width: `${simStats.pct}%` }} />
+                      <span style={{ left: `${Math.min(97, simStats.pct)}%` }}>{simStats.pct}%</span>
+                    </div>
+                    <p>
+                      Con <b>{fmt(simStats.value)} €</b> estás por encima del{" "}
+                      <b>{simStats.pct}%</b> de los {fmt(simStats.n)} precios públicos
+                      de la base (mediana mundial: {fmt(simStats.median)} €).{" "}
+                      {simStats.pct >= 75
+                        ? "Zona premium: exige garantía fuerte y prueba visible para sostenerse."
+                        : simStats.pct >= 40
+                          ? "Zona media del mercado: la diferenciación no vendrá del precio, sino de la garantía y la exclusividad."
+                          : "Zona de entrada: hay recorrido para subir precio si la garantía y la prueba acompañan."}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="record-empty">Escribe un precio para posicionarlo contra la distribución mundial.</p>
+                )}
+              </div>
+            </section>
+          </div>
+        )}
+
+        {view === "arsenal" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">ARSENAL COMERCIAL</p>
+              <h1>Munición extraída de {arsenal ? fmt(arsenal.garantias.total + arsenal.titulares.total) : "…"} piezas reales</h1>
+              <p>
+                Garantías, titulares y anuncios: todo clasificado, buscable y con
+                botón de copiar. Cada pieza cita la ficha de la que sale.
+              </p>
+            </section>
+
+            {adsKit && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">ANUNCIOS LISTOS · {adsKit.items.length} ÁNGULOS</p>
+                    <h2>Para Paula: Meta y Google por ángulo de venta</h2>
+                  </div>
+                </div>
+                <div className="ads-grid">
+                  {adsKit.items.map((item) => (
+                    <article key={item.angulo} className="ads-card">
+                      <h3>{item.angulo}</h3>
+                      <div className="ads-block">
+                        <span>META · TEXTO PRINCIPAL</span>
+                        <p>{item.meta.primaries[0]}</p>
+                        <div className="chip-row">
+                          {item.meta.headlines.slice(0, 3).map((h) => (
+                            <span key={h} className="ref-chip">{h}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="ads-block">
+                        <span>GOOGLE · TITULARES</span>
+                        <div className="chip-row">
+                          {item.google.titulares.slice(0, 4).map((t) => (
+                            <span key={t} className="ref-chip">{t}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="resource-actions">
+                        <button
+                          className="res-copy"
+                          onClick={async () => {
+                            const text = `ÁNGULO: ${item.angulo}\n\nMETA — TEXTOS PRINCIPALES\n${item.meta.primaries.map((p, i) => `${i + 1}. ${p}`).join("\n")}\n\nMETA — TITULARES\n${item.meta.headlines.join("\n")}\n\nGOOGLE — TITULARES (≤30)\n${item.google.titulares.join("\n")}\n\nGOOGLE — DESCRIPCIONES (≤90)\n${item.google.descripciones.join("\n")}`;
+                            try { await navigator.clipboard.writeText(text); setToast(`Ángulo «${item.angulo}» copiado`); } catch { setToast("No se pudo copiar"); }
+                          }}
+                        >
+                          Copiar bloque completo
+                        </button>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {arsenal && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">BANCO DE GARANTÍAS · {fmt(arsenal.garantias.total)} REALES</p>
+                    <h2>Elige la promesa: fuerza contra coste de cumplirla</h2>
+                  </div>
+                </div>
+                <div className="compare-picker">
+                  {["Todas", ...new Set(arsenal.garantias.items.flatMap((g) => g.kinds))].map((kind) => (
+                    <button key={kind} className={garantiaKind === kind ? "selected" : ""} onClick={() => setGarantiaKind(kind)}>
+                      {kind}
+                    </button>
+                  ))}
+                </div>
+                <div className="garantia-list">
+                  {arsenal.garantias.items
+                    .filter((g) => garantiaKind === "Todas" || g.kinds.includes(garantiaKind))
+                    .slice(0, 30)
+                    .map((g) => {
+                      const c = companyById.get(g.id);
+                      return (
+                        <article key={g.id} className="garantia-card">
+                          <div className="garantia-meta">
+                            <button className="ref-chip" onClick={() => c && openCompany(c)}>{g.name} · {g.country}</button>
+                            <span className="garantia-score" title="Fuerza comercial">F {g.fuerza}/5</span>
+                            <span className="garantia-cost" title="Coste de cumplirla">C {g.coste}/5</span>
+                          </div>
+                          <p>{g.text}</p>
+                          <button
+                            className="res-copy mini"
+                            onClick={async () => {
+                              try { await navigator.clipboard.writeText(g.text); setToast("Garantía copiada"); } catch { setToast("No se pudo copiar"); }
+                            }}
+                          >
+                            Copiar
+                          </button>
+                        </article>
+                      );
+                    })}
+                </div>
+              </section>
+            )}
+
+            {arsenal && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">TITULARES REALES · {fmt(arsenal.titulares.total)} HEROS</p>
+                    <h2>Buscador por fórmula persuasiva</h2>
+                  </div>
+                </div>
+                <div className="compare-picker">
+                  {["Todas", ...Object.keys(arsenal.titulares.formulaCounts).sort((a, b) => arsenal.titulares.formulaCounts[b] - arsenal.titulares.formulaCounts[a])].map((f) => (
+                    <button key={f} className={titularFormula === f ? "selected" : ""} onClick={() => setTitularFormula(f)}>
+                      {f}{f !== "Todas" ? ` · ${arsenal.titulares.formulaCounts[f]}` : ""}
+                    </button>
+                  ))}
+                </div>
+                <div className="filterbar">
+                  <label style={{ flex: 1 }}>
+                    Buscar en los titulares
+                    <input value={titularQuery} placeholder="garantía, citas, zona…" onChange={(e) => setTitularQuery(e.target.value)} style={{ display: "block", width: "100%", marginTop: 7, padding: 9, border: "1px solid var(--line)", borderRadius: 8, fontSize: 12 }} />
+                  </label>
+                </div>
+                <div className="titular-list">
+                  {arsenal.titulares.items
+                    .filter((t) => (titularFormula === "Todas" || t.formulas.includes(titularFormula)) && (!titularQuery || t.headline.toLocaleLowerCase("es").includes(titularQuery.toLocaleLowerCase("es"))))
+                    .slice(0, 40)
+                    .map((t) => {
+                      const c = companyById.get(t.id);
+                      return (
+                        <button key={t.id} className="titular-row" onClick={() => c && openCompany(c)}>
+                          <blockquote>“{t.headline}”</blockquote>
+                          <small>{t.name} · {t.country} · {t.formulas.join(" · ") || "sin fórmula clara"}</small>
+                        </button>
+                      );
+                    })}
+                </div>
+              </section>
+            )}
+
+            {arsenal && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">FORMULARIOS · {fmt(arsenal.formularios.n)} FICHAS MEDIDAS</p>
+                    <h2>El formulario óptimo, con datos</h2>
+                  </div>
+                </div>
+                <p className="insights-note">{arsenal.formularios.recommendation.reading}</p>
+                <div className="median-list">
+                  {arsenal.formularios.byCountry.map((row) => (
+                    <button key={row.country} onClick={() => chooseCountry(row.country)}>
+                      <span>{row.country}</span>
+                      <small>{row.n} fichas</small>
+                      <b>{row.medianFields} campos · {row.medianRequired} oblig.</b>
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )}
+          </div>
+        )}
+
+        {view === "verticals" && verticales && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">PLAYBOOKS POR NICHO</p>
+              <h1>Cada vertical, con su libro de jugadas</h1>
+              <p>{verticales.nota}</p>
+            </section>
+            <section className="content-section">
+              <div className="vertical-grid">
+                {verticales.verticales.map((v) => (
+                  <article key={v.id} className="vertical-card">
+                    <div className="vertical-head">
+                      <h3>{v.label}</h3>
+                      <div className="vertical-stats">
+                        <span><b>{v.n}</b> fichas</span>
+                        <span><b>{v.spainN}</b> España</span>
+                        <span><b>{v.medianEur ? `${fmt(v.medianEur)} €` : "s/d"}</b> mediana</span>
+                        <span><b>{v.adsActivePct}%</b> con ads</span>
+                      </div>
+                    </div>
+                    {v.guionApertura && (
+                      <div className="vertical-guion">
+                        <span>APERTURA DEL SETTER</span>
+                        <p>«{v.guionApertura}»</p>
+                        <button
+                          className="res-copy mini"
+                          onClick={async () => {
+                            try { await navigator.clipboard.writeText(v.guionApertura); setToast("Apertura copiada"); } catch { setToast("No se pudo copiar"); }
+                          }}
+                        >
+                          Copiar
+                        </button>
+                      </div>
+                    )}
+                    {v.tacticas.length > 0 && (
+                      <div className="vertical-block">
+                        <span>TÁCTICAS DEL VERTICAL</span>
+                        <ul>
+                          {v.tacticas.map((t, i) => (
+                            <li key={i}>{t}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {v.clienteIdeal && (
+                      <div className="vertical-block">
+                        <span>CLIENTE IDEAL</span>
+                        <p>{v.clienteIdeal}</p>
+                      </div>
+                    )}
+                    {v.estacionalidad && (
+                      <div className="vertical-block">
+                        <span>ESTACIONALIDAD</span>
+                        <p>{v.estacionalidad}</p>
+                      </div>
+                    )}
+                    <div className="chip-row">
+                      {v.referentes.map((r) => {
+                        const c = companyById.get(r.id);
+                        return c ? (
+                          <button key={r.id} className="ref-chip" onClick={() => openCompany(c)}>
+                            {r.name} · {r.score}
+                          </button>
+                        ) : null;
+                      })}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          </div>
+        )}
+
+        {view === "watch" && vigilancia && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">VIGILANCIA · ESPAÑA</p>
+              <h1>{vigilancia.semaforo.filter((s) => s.nivel === "rojo").length} competidores en rojo</h1>
+              <p>{vigilancia.nota}</p>
+            </section>
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">SEMÁFORO DE AMENAZAS · {vigilancia.semaforo.length} VIGILADAS</p>
+                  <h2>Quién está vivo de verdad</h2>
+                </div>
+              </div>
+              <div className="matrix-wrap">
+                <table className="matrix-table">
+                  <thead>
+                    <tr><th></th><th>Empresa</th><th>Amenaza</th><th>Score</th><th>Ads activos</th><th>Precio público</th><th>Garantía</th></tr>
+                  </thead>
+                  <tbody>
+                    {vigilancia.semaforo.slice(0, 60).map((s) => {
+                      const c = companyById.get(s.id);
+                      return (
+                        <tr key={s.id}>
+                          <td><span className={`sem-dot sem-${s.nivel}`} title={s.nivel} /></td>
+                          <td><button className="ref-chip" onClick={() => c && openCompany(c)}>{s.name}</button></td>
+                          <td>{s.threat}</td>
+                          <td>{s.score}</td>
+                          <td>{s.adsActive ? `Sí · M${s.metaAds}/G${s.googleAds}` : "No"}</td>
+                          <td>{s.pricePublic ? "Sí" : "No"}</td>
+                          <td>{s.hasGuarantee ? "Sí" : "No"}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {homesTimeline && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">ARCHIVO DE HOMES · TOP 30</p>
+                    <h2>Qué promete cada uno hoy (y qué cambiará mañana)</h2>
+                  </div>
+                </div>
+                <p className="insights-note">{homesTimeline.nota}</p>
+                {Object.entries(homesTimeline.snapshots).sort((a, b) => b[0].localeCompare(a[0])).map(([date, snaps]) => (
+                  <div key={date}>
+                    <h3 className="analysis-title">Instantánea del {date}</h3>
+                    <div className="homes-grid">
+                      {snaps.map((snap) => {
+                        const c = companyById.get(snap.id);
+                        return (
+                          <button key={snap.id} className="home-snap" onClick={() => c && openCompany(c)}>
+                            <b>{c?.name || snap.domain}</b>
+                            <p>{snap.status === "ok" ? `“${snap.hero}”` : "No accesible en esta pasada"}</p>
+                            <small>{snap.priceVisible ? "💶 precio visible" : "sin precio visible"} · {snap.domain}</small>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </section>
+            )}
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">REDES MULTI-MARCA · {vigilancia.grupos.length} GRUPOS</p>
+                  <h2>Quién opera con varias caras</h2>
+                </div>
+              </div>
+              <div className="grupo-grid">
+                {vigilancia.grupos.map((g) => (
+                  <article key={g.grupo} className="grupo-card">
+                    <h3>{g.grupo}</h3>
+                    <small>{g.etiqueta} · {g.evidencia}</small>
+                    <div className="chip-row">
+                      {g.marcas.map((m) => {
+                        const c = companyById.get(m.id);
+                        return c ? (
+                          <button key={m.id} className="ref-chip" onClick={() => openCompany(c)}>{m.name} · {m.country}</button>
+                        ) : null;
+                      })}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
           </div>
         )}
 
@@ -2917,6 +3552,16 @@ export default function Portal() {
                       </div>
                       <p>{t.focus}</p>
                       <small>{t.priceRef}</small>
+                      {t.hipotesis && t.hipotesis.length > 0 && (
+                        <div className="target-hipotesis">
+                          <span>QUÉ DEBE RESPONDER ESTA LLAMADA</span>
+                          <ul>
+                            {t.hipotesis.map((h, i) => (
+                              <li key={i}>{h}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </article>
                   );
                 })}

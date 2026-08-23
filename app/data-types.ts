@@ -179,7 +179,63 @@ export type Recurso = {
   filename: string;
   contenido: string;
 };
-export type RecursosData = { generatedAt: string; note: string; items: Recurso[] };
+export type FormacionPaso = { id: string; leccion: string; pregunta: string };
+export type RecursosData = {
+  generatedAt: string;
+  note: string;
+  items: Recurso[];
+  formacion?: { titulo: string; nota: string; pasos: FormacionPaso[] };
+};
+
+export type Vertical = {
+  id: string;
+  label: string;
+  n: number;
+  spainN: number;
+  medianEur: number | null;
+  pricedN: number;
+  adsActivePct: number;
+  referentes: Array<{ id: string; name: string; country: string; score: number }>;
+  tacticas: string[];
+  clienteIdeal: string;
+  estacionalidad: string;
+  guionApertura: string;
+};
+export type VerticalesData = { generatedAt: string; nota: string; verticales: Vertical[] };
+
+export type GarantiaItem = { id: string; name: string; country: string; score: number; text: string; kinds: string[]; fuerza: number; coste: number };
+export type TitularItem = { id: string; name: string; country: string; score: number; headline: string; formulas: string[] };
+export type ArsenalData = {
+  generatedAt: string;
+  garantias: { total: number; items: GarantiaItem[] };
+  titulares: { total: number; formulaCounts: Record<string, number>; items: TitularItem[] };
+  formularios: {
+    n: number;
+    byCountry: Array<{ country: string; n: number; medianFields: number; medianRequired: number }>;
+    recommendation: { medianFieldsWinners: number | null; medianFieldsAll: number; reading: string };
+  };
+};
+
+export type AdsKitData = {
+  generatedAt: string;
+  items: Array<{
+    angulo: string;
+    meta: { primaries: string[]; headlines: string[] };
+    google: { titulares: string[]; descripciones: string[] };
+  }>;
+};
+
+export type VigilanciaData = {
+  generatedAt: string;
+  nota: string;
+  semaforo: Array<{ id: string; name: string; agencyType: string; threat: string; score: number; adsActive: boolean; metaAds: number; googleAds: number; pricePublic: boolean; priceLocal: string; hasGuarantee: boolean; nivel: "rojo" | "ambar" | "verde" }>;
+  grupos: Array<{ grupo: string; evidencia: string; etiqueta: string; marcas: Array<{ id: string; name: string; country: string; score: number }> }>;
+};
+
+export type HomesTimelineData = {
+  nota: string;
+  snapshots: Record<string, Array<{ id: string; domain: string; date: string; title: string; hero: string; priceVisible: boolean; status: string }>>;
+};
 
 export type Dossier = {
   id: string;
@@ -705,5 +761,5 @@ export type MysteryData = {
   captureChecklist: string[];
   flow: string[];
   registryTemplate: string[];
-  targets: Array<{ order: number; id: string; name: string; website: string; threat: string; agencyType: string; identity: string; focus: string; priceRef: string }>;
+  targets: Array<{ order: number; id: string; name: string; website: string; threat: string; agencyType: string; identity: string; focus: string; priceRef: string; hipotesis?: string[] }>;
 };
