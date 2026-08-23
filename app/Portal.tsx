@@ -36,8 +36,10 @@ import type {
   FunnelV3Index,
   FunnelV3IndexItem,
   FunnelV3Review,
+  Insights,
   LogoManifest,
   Media,
+  PanoramaData,
   Summary,
 } from "./data-types";
 
@@ -51,6 +53,9 @@ type View =
   | "countries"
   | "ads"
   | "compare"
+  | "insights"
+  | "playbooks"
+  | "europa"
   | "blueprint"
   | "audit";
 
@@ -62,6 +67,9 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "countries", label: "Países", icon: "◈" },
   { id: "ads", label: "Galerías", icon: "▣" },
   { id: "compare", label: "Comparador", icon: "⇄" },
+  { id: "insights", label: "Conclusiones", icon: "∴" },
+  { id: "playbooks", label: "Métodos", icon: "⚙" },
+  { id: "europa", label: "Panorama Europa", icon: "✧" },
   { id: "blueprint", label: "Blueprint", icon: "✦" },
   { id: "audit", label: "Auditoría", icon: "✓" },
 ];
@@ -367,7 +375,11 @@ export default function Portal() {
     [geo, setGeo] = useState<CountryGeo[]>([]),
     [logos, setLogos] = useState<LogoManifest>({}),
     [deepIndex, setDeepIndex] = useState<DeepIndex | null>(null),
-    [v3Index, setV3Index] = useState<FunnelV3Index | null>(null);
+    [v3Index, setV3Index] = useState<FunnelV3Index | null>(null),
+    [insights, setInsights] = useState<Insights | null>(null),
+    [panorama, setPanorama] = useState<PanoramaData | null>(null);
+  const [panoramaCountry, setPanoramaCountry] = useState("Todos"),
+    [panoramaQuery, setPanoramaQuery] = useState("");
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -431,8 +443,14 @@ export default function Portal() {
           r.ok ? (r.json() as Promise<FunnelV3Index>) : null,
         )
         .catch(() => null),
+      fetch("/data/insights.json")
+        .then((r) => (r.ok ? (r.json() as Promise<Insights>) : null))
+        .catch(() => null),
+      fetch("/data/panorama-europa.json")
+        .then((r) => (r.ok ? (r.json() as Promise<PanoramaData>) : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins, pan]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -441,6 +459,8 @@ export default function Portal() {
         setLogos(l);
         setDeepIndex(d);
         setV3Index(v3);
+        setInsights(ins);
+        setPanorama(pan);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
@@ -2042,6 +2062,289 @@ export default function Portal() {
           </div>
         )}
 
+        {view === "insights" && insights && (
+          <div className="view">
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">CONCLUSIONES · CALCULADAS SOBRE LA BASE CANÓNICA</p>
+                  <h2>Lo que dicen las {fmt(insights.universe)} fichas cuando se cuentan</h2>
+                </div>
+              </div>
+              <p className="insights-note">
+                Cada cifra de esta página se recalcula automáticamente desde las fichas publicadas.
+                Nada está estimado a mano. Corte: {insights.generatedAt}.
+              </p>
+              <section className="stat-grid">
+                <article>
+                  <span>FICHAS CON PRECIO VERIFICABLE</span>
+                  <strong>{fmt(insights.pricedCount)}</strong>
+                  <small>{Math.round((insights.pricedCount / insights.universe) * 100)}% del universo publica precio</small>
+                </article>
+                <article>
+                  <span>PRECIO MEDIANO MUNDIAL</span>
+                  <strong>{fmt(insights.worldMedianEur)} €</strong>
+                  <small>Mediana de los precios normalizados a EUR</small>
+                </article>
+                <article>
+                  <span>AMENAZAS ALTAS EN ESPAÑA</span>
+                  <strong>{fmt(insights.threatsSpainTotal)}</strong>
+                  <small>De {fmt(insights.spainCount)} fichas españolas</small>
+                </article>
+                <article>
+                  <span>PARA COPIAR O PROBAR YA</span>
+                  <strong>{insights.copyNow.length}</strong>
+                  <small>Decisión Copiar/Probar con puntuación ≥ 60</small>
+                </article>
+              </section>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">ESTRUCTURA DEL MERCADO</p>
+                  <h2>Cómo se organiza la competencia mundial</h2>
+                </div>
+              </div>
+              <div className="bar-list">
+                {insights.models.map((m) => (
+                  <div key={m.type} className="bar-row">
+                    <span className="bar-label">{m.type}</span>
+                    <div className="bar-track">
+                      <i style={{ width: `${Math.max(3, (m.count / insights.models[0].count) * 100)}%` }} />
+                    </div>
+                    <b>{m.count} · {m.pct}%</b>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">PRECIOS</p>
+                  <h2>Dónde se concentra el dinero</h2>
+                </div>
+              </div>
+              <div className="insights-cols">
+                <div>
+                  <h3 className="insights-subtitle">Distribución de los {fmt(insights.pricedCount)} precios públicos (EUR)</h3>
+                  <div className="bar-list">
+                    {insights.priceBuckets.map((b) => (
+                      <div key={b.label} className="bar-row">
+                        <span className="bar-label">{b.label}</span>
+                        <div className="bar-track">
+                          <i style={{ width: `${Math.max(3, (b.count / Math.max(...insights.priceBuckets.map((x) => x.count))) * 100)}%` }} />
+                        </div>
+                        <b>{b.count}</b>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="insights-subtitle">Precio mediano por país (mín. 4 precios)</h3>
+                  <div className="median-list">
+                    {insights.countryMedians.map((c) => (
+                      <button key={c.country} onClick={() => chooseCountry(c.country)}>
+                        <span>{c.country}</span>
+                        <small>{c.n} precios</small>
+                        <b>{fmt(c.medianEur)} €</b>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">GARANTÍAS</p>
+                  <h2>Las promesas con las que el mercado vende</h2>
+                </div>
+              </div>
+              <div className="guarantee-grid">
+                {insights.guarantees.map((g) => (
+                  <article key={g.kind} className="guarantee-card">
+                    <strong>{g.count}</strong>
+                    <h3>{g.kind}</h3>
+                    <small>{g.spain} en España</small>
+                    <div className="chip-row">
+                      {g.examples.map((e) => {
+                        const c = companyById.get(e.id);
+                        return (
+                          <button key={e.id} className="ref-chip" onClick={() => c && openCompany(c)}>
+                            {e.name}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">HUECOS DETECTADOS</p>
+                  <h2>Lo que casi nadie hace en España (con la cifra que lo demuestra)</h2>
+                </div>
+              </div>
+              <div className="gap-grid">
+                {insights.gaps.map((g) => (
+                  <article key={g.title} className="gap-card">
+                    <strong>{g.stat}</strong>
+                    <h3>{g.title}</h3>
+                    <p>{g.detail}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">AMENAZA ALTA · ESPAÑA</p>
+                  <h2>A quién vigilar de cerca</h2>
+                </div>
+                <button className="link-button" onClick={() => chooseCountry("España")}>
+                  Ver todas las fichas españolas →
+                </button>
+              </div>
+              <div className="threat-list">
+                {insights.threatsSpain.map((t) => {
+                  const c = companyById.get(t.id);
+                  return (
+                    <button key={t.id} onClick={() => c && openCompany(c)}>
+                      <span><strong>{t.name}</strong><small>{t.agencyType} · {t.relation}</small></span>
+                      <b>{t.score}</b>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          </div>
+        )}
+        {view === "playbooks" && insights && (
+          <div className="view">
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">MÉTODOS · DESTILADOS DE LA EVIDENCIA</p>
+                  <h2>{insights.methods.length} formas de captar que ya funcionan en el mundo</h2>
+                </div>
+              </div>
+              <p className="insights-note">
+                Cada método sale de fichas verificadas de la base o de la ampliación europea observada.
+                Los enlaces abren la evidencia. La aplicación propuesta es una recomendación editorial, no un dato.
+              </p>
+              <div className="method-list">
+                {insights.methods.map((m, index) => (
+                  <article key={m.id} className="method-card">
+                    <div className="method-number">{String(index + 1).padStart(2, "0")}</div>
+                    <div className="method-body">
+                      <h3>{m.title}</h3>
+                      <p>{m.what}</p>
+                      <div className="chip-row">
+                        {m.who.map((w) => {
+                          if (w.type === "ficha" && w.id) {
+                            const c = companyById.get(w.id);
+                            return (
+                              <button key={w.id} className="ref-chip" onClick={() => c && openCompany(c)}>
+                                {w.name} · {w.country}
+                              </button>
+                            );
+                          }
+                          return (
+                            <button
+                              key={w.domain}
+                              className="ref-chip panorama"
+                              onClick={() => {
+                                setPanoramaQuery(w.name);
+                                setPanoramaCountry("Todos");
+                                go("europa");
+                              }}
+                            >
+                              {w.name} · {w.country}
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <div className="method-apply">
+                        <span>CÓMO SE APLICA AQUÍ</span>
+                        <p>{m.apply}</p>
+                      </div>
+                      <div className="method-risk">
+                        <span>RIESGO</span>
+                        <p>{m.risk}</p>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          </div>
+        )}
+        {view === "europa" && panorama && (
+          <div className="view">
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">PANORAMA EUROPA · AMPLIACIÓN {panorama.observedAt}</p>
+                  <h2>{panorama.total} empresas europeas nuevas, fuera de la base actual</h2>
+                </div>
+              </div>
+              <p className="insights-note">{panorama.status}. Cada entrada procede de su web pública en la fecha indicada; los enlaces abren la fuente original.</p>
+              <div className="panorama-filters">
+                <button
+                  className={panoramaCountry === "Todos" ? "active" : ""}
+                  onClick={() => setPanoramaCountry("Todos")}
+                >
+                  Todos · {panorama.total}
+                </button>
+                {panorama.countries.map((c) => (
+                  <button
+                    key={c.country}
+                    className={panoramaCountry === c.country ? "active" : ""}
+                    onClick={() => setPanoramaCountry(c.country)}
+                  >
+                    {c.flag} {c.country} · {c.count}
+                  </button>
+                ))}
+              </div>
+              <input
+                className="panorama-search"
+                type="search"
+                placeholder="Buscar por nombre, modelo u oferta…"
+                value={panoramaQuery}
+                onChange={(event) => setPanoramaQuery(event.target.value)}
+              />
+              <div className="panorama-grid">
+                {panorama.companies
+                  .filter((p) => panoramaCountry === "Todos" || p.country === panoramaCountry)
+                  .filter((p) => {
+                    const q = panoramaQuery.trim().toLowerCase();
+                    if (!q) return true;
+                    return `${p.name} ${p.model} ${p.offer} ${p.relevance}`.toLowerCase().includes(q);
+                  })
+                  .map((p) => (
+                    <article key={p.domain} className="panorama-card">
+                      <div className="panorama-head">
+                        <h3>{p.flag} {p.name}</h3>
+                        <a href={p.website} target="_blank" rel="noreferrer">{p.domain} ↗</a>
+                      </div>
+                      <p className="panorama-model">{p.model}</p>
+                      <p>{p.offer}</p>
+                      {p.publicPrice && <p className="panorama-price">Precio público: {p.publicPrice}</p>}
+                      {p.guarantee && <p className="panorama-guarantee">Garantía: {p.guarantee}</p>}
+                      <small>{p.relevance}</small>
+                    </article>
+                  ))}
+              </div>
+            </section>
+          </div>
+        )}
         {view === "blueprint" && editorial && (
           <div className="view editorial-view">
             <section className="page-head">

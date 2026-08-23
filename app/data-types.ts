@@ -515,3 +515,64 @@ export type FunnelV3Index = {
   };
   records: FunnelV3IndexItem[];
 };
+
+export type InsightRef = {
+  type: "ficha" | "panorama";
+  id?: string;
+  domain?: string;
+  name: string;
+  country: string;
+  score?: number;
+};
+
+export type InsightMethod = {
+  id: string;
+  title: string;
+  what: string;
+  who: InsightRef[];
+  apply: string;
+  risk: string;
+};
+
+export type Insights = {
+  generatedAt: string;
+  universe: number;
+  pricedCount: number;
+  worldMedianEur: number;
+  spainCount: number;
+  models: Array<{ type: string; count: number; pct: number }>;
+  priceBuckets: Array<{ label: string; count: number }>;
+  countryMedians: Array<{ country: string; n: number; medianEur: number }>;
+  guarantees: Array<{
+    kind: string;
+    count: number;
+    spain: number;
+    examples: Array<{ id: string; name: string; country: string }>;
+  }>;
+  threatsSpain: Array<{ id: string; name: string; score: number; agencyType: string; relation: string }>;
+  threatsSpainTotal: number;
+  copyNow: Array<{ id: string; name: string; country: string; decision: string; score: number; agencyType: string; offer: string }>;
+  gaps: Array<{ title: string; stat: string; detail: string }>;
+  methods: InsightMethod[];
+};
+
+export type PanoramaCompany = {
+  name: string;
+  domain: string;
+  country: string;
+  flag: string;
+  model: string;
+  offer: string;
+  publicPrice: string;
+  guarantee: string;
+  relevance: string;
+  website: string;
+};
+
+export type PanoramaData = {
+  observedAt: string;
+  status: string;
+  total: number;
+  countries: Array<{ country: string; flag: string; count: number }>;
+  companies: PanoramaCompany[];
+};

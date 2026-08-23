@@ -1,0 +1,735 @@
+{
+ "generatedAt": "23/08/2026",
+ "universe": 712,
+ "pricedCount": 209,
+ "worldMedianEur": 149,
+ "spainCount": 246,
+ "models": [
+  {
+   "type": "Lead broker / venta de leads",
+   "count": 230,
+   "pct": 32.3
+  },
+  {
+   "type": "Generalista pymes",
+   "count": 176,
+   "pct": 24.7
+  },
+  {
+   "type": "Multi-nicho especializada",
+   "count": 96,
+   "pct": 13.5
+  },
+  {
+   "type": "Vertical de un solo nicho",
+   "count": 85,
+   "pct": 11.9
+  },
+  {
+   "type": "Software + servicio",
+   "count": 75,
+   "pct": 10.5
+  },
+  {
+   "type": "Marca personal / freelance",
+   "count": 29,
+   "pct": 4.1
+  },
+  {
+   "type": "Consultora grande",
+   "count": 14,
+   "pct": 2
+  },
+  {
+   "type": "Franquicia / red",
+   "count": 7,
+   "pct": 1
+  }
+ ],
+ "priceBuckets": [
+  {
+   "label": "Menos de 50 €",
+   "count": 73
+  },
+  {
+   "label": "50 – 150 €",
+   "count": 33
+  },
+  {
+   "label": "150 – 500 €",
+   "count": 40
+  },
+  {
+   "label": "500 – 1.500 €",
+   "count": 35
+  },
+  {
+   "label": "1.500 – 5.000 €",
+   "count": 19
+  },
+  {
+   "label": "Más de 5.000 €",
+   "count": 9
+  }
+ ],
+ "countryMedians": [
+  {
+   "country": "España",
+   "n": 81,
+   "medianEur": 300
+  },
+  {
+   "country": "Estados Unidos",
+   "n": 17,
+   "medianEur": 213
+  },
+  {
+   "country": "Japón",
+   "n": 12,
+   "medianEur": 81
+  },
+  {
+   "country": "Portugal",
+   "n": 10,
+   "medianEur": 250
+  },
+  {
+   "country": "Egipto",
+   "n": 10,
+   "medianEur": 34
+  },
+  {
+   "country": "Francia",
+   "n": 5,
+   "medianEur": 19
+  },
+  {
+   "country": "Irak",
+   "n": 5,
+   "medianEur": 642
+  },
+  {
+   "country": "Emiratos Árabes Unidos",
+   "n": 4,
+   "medianEur": 198
+  },
+  {
+   "country": "Reino Unido",
+   "n": 4,
+   "medianEur": 174
+  },
+  {
+   "country": "Global",
+   "n": 4,
+   "medianEur": 425
+  },
+  {
+   "country": "Singapur",
+   "n": 4,
+   "medianEur": 2568
+  },
+  {
+   "country": "India",
+   "n": 4,
+   "medianEur": 556
+  }
+ ],
+ "guarantees": [
+  {
+   "kind": "Pago solo por resultado (cita, lead o venta)",
+   "count": 29,
+   "spain": 8,
+   "examples": [
+    {
+     "id": "scale-lead",
+     "name": "SCALE Lead",
+     "country": "Japón"
+    },
+    {
+     "id": "edge-connection",
+     "name": "Edge Connection",
+     "country": "Japón"
+    },
+    {
+     "id": "hotlead",
+     "name": "HotLead",
+     "country": "Polonia"
+    },
+    {
+     "id": "leads-dubai",
+     "name": "Leads Dubai",
+     "country": "Emiratos Árabes Unidos"
+    }
+   ]
+  },
+  {
+   "kind": "Reemplazo explícito del lead o cita malos",
+   "count": 5,
+   "spain": 4,
+   "examples": [
+    {
+     "id": "horizzon-media",
+     "name": "Horizzon Media",
+     "country": "España"
+    },
+    {
+     "id": "compra-leads-ou",
+     "name": "Compra Leads OÜ",
+     "country": "España"
+    },
+    {
+     "id": "ebisu-marketing-agency",
+     "name": "Ebisu Marketing Agency",
+     "country": "España"
+    },
+    {
+     "id": "leadsclientes-stratcore-llc",
+     "name": "LeadsClientes (STRATCORE LLC)",
+     "country": "Estados Unidos"
+    }
+   ]
+  },
+  {
+   "kind": "Sin permanencia / cancelación libre",
+   "count": 198,
+   "spain": 95,
+   "examples": [
+    {
+     "id": "clozer",
+     "name": "Clozer",
+     "country": "Emiratos Árabes Unidos"
+    },
+    {
+     "id": "salesbread",
+     "name": "SalesBread",
+     "country": "Estados Unidos"
+    },
+    {
+     "id": "yallaleads",
+     "name": "YallaLeads",
+     "country": "Emiratos Árabes Unidos"
+    },
+    {
+     "id": "saleshive",
+     "name": "SalesHive",
+     "country": "Estados Unidos"
+    }
+   ]
+  },
+  {
+   "kind": "Volumen mínimo garantizado",
+   "count": 13,
+   "spain": 6,
+   "examples": [
+    {
+     "id": "scale-lead",
+     "name": "SCALE Lead",
+     "country": "Japón"
+    },
+    {
+     "id": "horizzon-media",
+     "name": "Horizzon Media",
+     "country": "España"
+    },
+    {
+     "id": "senbon-knock",
+     "name": "Senbon Knock",
+     "country": "Japón"
+    },
+    {
+     "id": "salesarte",
+     "name": "SalesArte",
+     "country": "Turquía"
+    }
+   ]
+  },
+  {
+   "kind": "Exclusividad del lead o de la zona",
+   "count": 61,
+   "spain": 33,
+   "examples": [
+    {
+     "id": "horizzon-media",
+     "name": "Horizzon Media",
+     "country": "España"
+    },
+    {
+     "id": "lgdigital",
+     "name": "LGDigital",
+     "country": "Portugal"
+    },
+    {
+     "id": "inmoads",
+     "name": "INMOADS",
+     "country": "España"
+    },
+    {
+     "id": "newleads",
+     "name": "NewLeads",
+     "country": "Portugal"
+    }
+   ]
+  }
+ ],
+ "threatsSpain": [
+  {
+   "id": "horizzon-media",
+   "name": "Horizzon Media",
+   "score": 97,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "premium-leads-grupo-vocento",
+   "name": "Premium Leads (grupo Vocento)",
+   "score": 94,
+   "agencyType": "Lead broker / venta de leads",
+   "relation": "Competidor indirecto"
+  },
+  {
+   "id": "qdq-qdq-media",
+   "name": "qdq (QDQ Media)",
+   "score": 94,
+   "agencyType": "Generalista pymes",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "bastida-y-farina-s-l",
+   "name": "Bastida&Farina S.L.",
+   "score": 93,
+   "agencyType": "Multi-nicho especializada",
+   "relation": "Referente para adaptar"
+  },
+  {
+   "id": "inmoads",
+   "name": "INMOADS",
+   "score": 92,
+   "agencyType": "Software + servicio",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "auge-salud",
+   "name": "Auge Salud",
+   "score": 91,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "masnegocio",
+   "name": "MásNegocio",
+   "score": 91,
+   "agencyType": "Software + servicio",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "360-clinic-consulting",
+   "name": "360 Clinic Consulting",
+   "score": 90,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "agencialeads-net-agk-marketing-agency-llc",
+   "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
+   "score": 90,
+   "agencyType": "Lead broker / venta de leads",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "agency-mdi",
+   "name": "Agency MDI",
+   "score": 90,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "eleva-digitals",
+   "name": "Eleva Digitals",
+   "score": 90,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "generacion-leads-masterfy-lc",
+   "name": "Generación Leads (MASTERFY LC)",
+   "score": 90,
+   "agencyType": "Lead broker / venta de leads",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "markulia",
+   "name": "Markulia",
+   "score": 90,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  },
+  {
+   "id": "qamezia",
+   "name": "Qamezia",
+   "score": 90,
+   "agencyType": "Software + servicio",
+   "relation": "Competidor indirecto"
+  },
+  {
+   "id": "reform-ads",
+   "name": "Reform.Ads",
+   "score": 90,
+   "agencyType": "Vertical de un solo nicho",
+   "relation": "Competidor directo"
+  }
+ ],
+ "threatsSpainTotal": 71,
+ "copyNow": [
+  {
+   "id": "senbon-knock",
+   "name": "Senbon Knock",
+   "country": "Japón",
+   "decision": "Probar",
+   "score": 97,
+   "agencyType": "Multi-nicho especializada",
+   "offer": "Outbound B2B por formularios web: lista, research, mensaje personalizado, 50–100 envíos/día, deduplicación, reporting y traspaso de respuestas."
+  },
+  {
+   "id": "bastida-y-farina-s-l",
+   "name": "Bastida&Farina S.L.",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 93,
+   "agencyType": "Multi-nicho especializada",
+   "offer": "\"En B&F no solo somos la agencia en la que más empresas de España confían para generar leads cualificados sino que, si tras +150 casos de éxito creemos que te podemos ayudar, SOLO PAGAS POR LEAD VENDIDO\"."
+  },
+  {
+   "id": "abstrakt-marketing-group",
+   "name": "Abstrakt Marketing Group",
+   "country": "Estados Unidos",
+   "decision": "Copiar",
+   "score": 92,
+   "agencyType": "Consultora grande",
+   "offer": "SDRs dedicados: investigación de decisores, dialing en frío y cartas personalizadas para generar reuniones de venta — CONFIRMADO"
+  },
+  {
+   "id": "reforleads",
+   "name": "ReforLeads",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 91,
+   "agencyType": "Vertical de un solo nicho",
+   "offer": "Sistema de captación para empresas de reformas: contactos y visitas cualificadas de forma recurrente, con filtrado, agenda/CRM y exclusividad por ciudad o zona."
+  },
+  {
+   "id": "dotramo",
+   "name": "dotramo",
+   "country": "España",
+   "decision": "Probar",
+   "score": 90,
+   "agencyType": "Multi-nicho especializada",
+   "offer": "Infraestructura outbound B2B por reunión celebrada y cualificada: señales de compra, datos/enriquecimiento, scoring ICP, email/LinkedIn/llamada, cualificación humana y sincronización CRM."
+  },
+  {
+   "id": "the-selling-system-marc-graell",
+   "name": "The Selling System (Marc Graell)",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 90,
+   "agencyType": "Marca personal / freelance",
+   "offer": "\"Si cumples estos 3 requisitos, puedes DUPLICAR TU FACTURACIÓN EN 121 DÍAS\"."
+  },
+  {
+   "id": "buda-marketing-buda-consultores-s-l",
+   "name": "Buda Marketing (Buda Consultores S.L.)",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 88,
+   "agencyType": "Generalista pymes",
+   "offer": "\"NO HACEMOS MARKETING. Somos tu sistema de captación de clientes. NO MEDIMOS IMPRESIONES NI CLICS. Medimos clientes reales y euros generados para tu negocio\". Y en home: \"Convertimos tu inversión en clientes, no en 'me g"
+  },
+  {
+   "id": "compra-leads-ou",
+   "name": "Compra Leads OÜ",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 88,
+   "agencyType": "Lead broker / venta de leads",
+   "offer": "\"Leads Cualificados a CPL: Solo pagas por leads generados\" · \"Escalamos la captación de clientes potenciales para tu negocio mediante Meta, Google y TikTok Ads. Sin cuotas fijas ni permanencia\"."
+  },
+  {
+   "id": "origen-agency",
+   "name": "Origen Agency",
+   "country": "España",
+   "decision": "Probar",
+   "score": 88,
+   "agencyType": "Multi-nicho especializada",
+   "offer": "Outsourcing comercial SDR/setter: define ICP, crea listas y guiones, prospecta por teléfono/email/LinkedIn, cualifica con humanos y agenda reuniones con contexto en CRM."
+  },
+  {
+   "id": "nobusales",
+   "name": "NoBuSales",
+   "country": "España",
+   "decision": "Probar",
+   "score": 86,
+   "agencyType": "Multi-nicho especializada",
+   "offer": "Externalización comercial B2B: generación de leads, agencia de ventas y sistema outbound desde la estrategia hasta la implementación, sin asumir costes fijos ni riesgos internos."
+  },
+  {
+   "id": "nova-agency",
+   "name": "Nova Agency",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 86,
+   "agencyType": "Marca personal / freelance",
+   "offer": "\"Tu contenido debería estar captando clientes ahora mismo. El sistema de contenido orgánico para negocios que ya facturan\"."
+  },
+  {
+   "id": "mas-captacion",
+   "name": "Más Captación",
+   "country": "España",
+   "decision": "Copiar",
+   "score": 85,
+   "agencyType": "Vertical de un solo nicho",
+   "offer": "\"Llenamos tu agenda de pacientes nuevos — o no pagas\". Y: \"Hemos generado más de 45.000€ en ventas adicionales para clínicas de estética en España con ROIs de hasta 8x. Sin bajar tus precios. Sin permanencia\"."
+  }
+ ],
+ "gaps": [
+  {
+   "title": "Precio público en España",
+   "stat": "81 de 246",
+   "detail": "Solo 81 de las 246 fichas españolas muestran un precio verificable en público. Publicar tarifas precualifica al lead y la mayoría no lo hace."
+  },
+  {
+   "title": "Pago por reunión válida en España",
+   "stat": "0 de 246",
+   "detail": "El cobro por reunión que cumple criterios (estándar en los países nórdicos y en Japón) no aparece en ninguna ficha española de la base: 0 casos detectados. Encaja de forma natural con un modelo setter."
+  },
+  {
+   "title": "Reemplazo explícito del lead malo en España",
+   "stat": "4 de 246",
+   "detail": "Solo 4 fichas españolas prometen por escrito reponer el lead falso, duplicado o fuera de zona. Es una garantía barata de cumplir para quien controla la cualificación, y casi nadie la da."
+  },
+  {
+   "title": "Exclusividad territorial declarada en España",
+   "stat": "1 de 246",
+   "detail": "Solo 1 ficha española declara exclusividad territorial en su material público. El aval central del modelo RedVitalia casi no tiene imitadores visibles: conviene hacerlo más grande y más verificable."
+  }
+ ],
+ "methods": [
+  {
+   "id": "pago-por-reunion",
+   "title": "Cobrar por reunión válida, no por gestión",
+   "what": "La unidad de facturación es la reunión que cumple criterios pactados (decisor presente, necesidad y presupuesto). Si la cita no los cumple, no se cobra o se repone. El estándar lo marcan Japón y los países nórdicos.",
+   "who": [
+    {
+     "type": "ficha",
+     "id": "scale-lead",
+     "name": "SCALE Lead",
+     "country": "Japón",
+     "score": 100
+    },
+    {
+     "type": "ficha",
+     "id": "edge-connection",
+     "name": "Edge Connection",
+     "country": "Japón",
+     "score": 99
+    },
+    {
+     "type": "ficha",
+     "id": "everconnect",
+     "name": "EverConnect",
+     "country": "Estados Unidos",
+     "score": 96
+    },
+    {
+     "type": "panorama",
+     "domain": "bokare.se",
+     "name": "Bokare.se",
+     "country": "Suecia"
+    },
+    {
+     "type": "panorama",
+     "domain": "leadlabbet.se",
+     "name": "Leadlabbet",
+     "country": "Suecia"
+    },
+    {
+     "type": "panorama",
+     "domain": "etatapaamisia.fi",
+     "name": "Etätapaamisia",
+     "country": "Finlandia"
+    }
+   ],
+   "apply": "El modelo setter ya produce citas: definir por escrito qué es una cita válida y ofrecer un paquete de entrada a éxito (X € por cita válida) para eliminar la objeción de riesgo del cliente nuevo. La mensualidad sigue siendo el destino; el pago por cita es la puerta.",
+   "risk": "Canibalizar la cuota mensual si se ofrece a todo el mundo. Usarlo solo como oferta de entrada o para nichos nuevos."
+  },
+  {
+   "id": "reemplazo-lead",
+   "title": "Garantía de reemplazo del lead malo",
+   "what": "Todo lead con datos falsos, fuera de zona o que no responde se repone sin discusión. Es la garantía dominante del pay-per-lead británico y holandés: barata de cumplir y muy potente en la venta.",
+   "who": [
+    {
+     "type": "panorama",
+     "domain": "onebasemedia.co.uk",
+     "name": "One Base Media",
+     "country": "Reino Unido"
+    },
+    {
+     "type": "panorama",
+     "domain": "gigaleads.nl",
+     "name": "Gigaleads",
+     "country": "Países Bajos"
+    },
+    {
+     "type": "panorama",
+     "domain": "leadskopen.be",
+     "name": "Leadskopen.be",
+     "country": "Bélgica"
+    },
+    {
+     "type": "panorama",
+     "domain": "slimster.nl",
+     "name": "Slimster",
+     "country": "Países Bajos"
+    }
+   ],
+   "apply": "Añadir la reposición de cita no-show o lead ilocalizable a la oferta setter. El coste real es marginal (Nidia ya cualifica) y desarma la objeción principal del cliente quemado por leads compartidos.",
+   "risk": "Definir mal los criterios de reposición y acabar regalando trabajo. Criterios cerrados por escrito antes de vender."
+  },
+  {
+   "id": "precio-publico",
+   "title": "Precio público como filtro de entrada",
+   "what": "Publicar la tarifa en la web y en el anuncio. Solo lo hace una minoría del mercado y quien lo hace lo usa como precualificación: llega menos gente, pero llega sabiendo lo que cuesta.",
+   "who": [
+    {
+     "type": "panorama",
+     "domain": "leadsagentur.de",
+     "name": "Leadsagentur.de (4stairs GmbH)",
+     "country": "Alemania"
+    },
+    {
+     "type": "panorama",
+     "domain": "sink-or-swim-marketing.com",
+     "name": "Sink or Swim Marketing",
+     "country": "Irlanda"
+    },
+    {
+     "type": "ficha",
+     "id": "horizzon-media",
+     "name": "Horizzon Media",
+     "country": "España",
+     "score": 97
+    }
+   ],
+   "apply": "RedVitalia ya precualifica mostrando precio en anuncios de Meta. El paso que falta: tarifas visibles también en la landing, con la exclusividad territorial al lado como justificación del precio.",
+   "risk": "Competidores copian el precio. Irrelevante: la exclusividad territorial no se puede copiar sin cambiar de modelo."
+  },
+  {
+   "id": "exclusividad-territorial",
+   "title": "Exclusividad territorial como escasez verificable",
+   "what": "Un solo cliente por zona y nicho, y que se vea: contador de zonas ocupadas, lista de huecos libres. Convierte la venta en una carrera por la plaza en lugar de una comparación de agencias.",
+   "who": [
+    {
+     "type": "ficha",
+     "id": "placassolares-es-nettbureau",
+     "name": "PlacasSolares.es / Nettbureau",
+     "country": "España",
+     "score": 87
+    },
+    {
+     "type": "ficha",
+     "id": "handv-rker-dk",
+     "name": "Håndværker.dk",
+     "country": "Dinamarca",
+     "score": 96
+    },
+    {
+     "type": "ficha",
+     "id": "checkatrade",
+     "name": "Checkatrade",
+     "country": "Reino Unido",
+     "score": 9
+    }
+   ],
+   "apply": "RedVitalia ya vende exclusividad territorial: hacerla visible y verificable (mapa o lista pública de zonas ocupadas por nicho) multiplica su efecto de urgencia en la llamada del setter y en el deck de pre-cita.",
+   "risk": "Mostrar demasiado inventario libre debilita la escasez. Publicar solo por nicho activo."
+  },
+  {
+   "id": "dominio-nicho",
+   "title": "Dominio-nicho: el marketplace vertical propio",
+   "what": "En lugar de vender 'marketing', operar portales por vertical (placas solares, reformas, clínicas) que captan demanda propia y reparten los leads entre los clientes de la zona. Nettbureau lo ejecuta en España con PlacasSolares.es; en el norte de Europa es una industria entera.",
+   "who": [
+    {
+     "type": "ficha",
+     "id": "placassolares-es-nettbureau",
+     "name": "PlacasSolares.es / Nettbureau",
+     "country": "España",
+     "score": 87
+    },
+    {
+     "type": "ficha",
+     "id": "urban-company",
+     "name": "Urban Company",
+     "country": "India",
+     "score": 94
+    },
+    {
+     "type": "panorama",
+     "domain": "byggstart.no",
+     "name": "Byggstart",
+     "country": "Noruega"
+    },
+    {
+     "type": "panorama",
+     "domain": "3byggetilbud.dk",
+     "name": "3byggetilbud.dk",
+     "country": "Dinamarca"
+    }
+   ],
+   "apply": "Micro-portal por nicho y provincia alimentado con SEO local + Ads, que genera leads inbound propios. Reduce la dependencia del frío puro de los setters y crea un activo que se revaloriza.",
+   "risk": "Frente nuevo con coste de arranque real. Solo tiene sentido tras validar un nicho con 3+ clientes cerrados en frío."
+  },
+  {
+   "id": "prueba-social-cruda",
+   "title": "Prueba social con números crudos, no con adjetivos",
+   "what": "Publicar ratios reales — citas generadas, ventas cerradas, por nicho — en lugar de testimonios genéricos. Las agencias japonesas de la base publican tablas de citas/ventas por caso y eso sostiene precios altos.",
+   "who": [
+    {
+     "type": "ficha",
+     "id": "scale-lead",
+     "name": "SCALE Lead",
+     "country": "Japón",
+     "score": 100
+    },
+    {
+     "type": "ficha",
+     "id": "edge-connection",
+     "name": "Edge Connection",
+     "country": "Japón",
+     "score": 99
+    },
+    {
+     "type": "ficha",
+     "id": "qdq-qdq-media",
+     "name": "qdq (QDQ Media)",
+     "country": "España",
+     "score": 94
+    }
+   ],
+   "apply": "Registrar citas→cierres por nicho (el dato ya existe en el CRM) y publicarlo en la presentación de ventas y el deck de pre-cita: «en clínicas dentales: 22 citas, 9 cierres». Nada vende más barato que un número verificable.",
+   "risk": "Publicar ratios malos. Se publica por nicho y solo donde el dato es defendible."
+  },
+  {
+   "id": "financiar-ads",
+   "title": "La agencia financia la publicidad y cobra a éxito",
+   "what": "El proveedor paga el presupuesto publicitario y factura únicamente por lead cualificado entregado en exclusiva. Lo ejecuta DM Expert en Reino Unido.",
+   "who": [
+    {
+     "type": "panorama",
+     "domain": "dmexpert.co.uk",
+     "name": "Digital Marketing Expert (DM Expert)",
+     "country": "Reino Unido"
+    }
+   ],
+   "apply": "NO recomendado para RedVitalia ahora: exige caja para financiar campañas ajenas y disciplina de riesgo de una financiera. Se vigila como amenaza — si un competidor español lo lanza, cambia el mercado.",
+   "risk": "Riesgo de caja directo. Es el método con mayor barrera y mayor peligro de imitar mal."
+  }
+ ]
+}
