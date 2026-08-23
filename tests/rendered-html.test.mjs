@@ -344,7 +344,7 @@ test("the shareable interface contains the full renderer, permanent links and so
   assert.match(portal, /<table aria-label="Comparación de empresas">/);
   assert.match(record, /ReactMarkdown/);
   assert.match(record, /remarkGfm/);
-  assert.match(record, /Expandir todo/);
+  assert.match(record, /Todo en una página|Por secciones/);
   assert.match(record, /42 campos|Todos los campos/);
   assert.match(mapSource, /setProjection\(\{ type: "globe" \}\)/);
   assert.match(mapSource, /flyTo/);

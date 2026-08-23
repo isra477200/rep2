@@ -1,0 +1,261 @@
+{
+  "generated": "2026-08-23",
+  "scope": "Prospección telefónica en frío B2B (con nota B2C) para agencia española de setters (RedVitalia). Distinción: 'Confirmado' = respaldado por fuente citada; 'Probable' = interpretación razonable no verificada al detalle.",
+  "countries": [
+    {
+      "country": "España",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: el art. 66.1.b Ley 11/2022 (LGT) da a los usuarios finales el derecho a no recibir llamadas comerciales no deseadas; la Circular 1/2023 AEPD exige base jurídica: consentimiento o interés legítimo (este último presumible sobre todo con relación contractual previa y productos similares).",
+        "Confirmado: para personas jurídicas y empresarios individuales cabe interés legítimo, pero hay que hacer ponderación, informar y ofrecer oposición; la llamada a números aleatorios está vedada.",
+        "Confirmado: consultar sistemas de exclusión (Lista Robinson) antes de llamar; identificar empresa y finalidad al inicio; informar del derecho de oposición; conservar prueba (grabaciones).",
+        "Confirmado: Orden TDF/149/2025 — desde 7/6/2025 prohibido hacer llamadas comerciales no solicitadas desde numeración móvil; hay que usar numeración identificable (p.ej. 800/900) y los operadores bloquean números no atribuidos y llamadas internacionales que aparentan origen español.",
+        "Probable: franjas horarias de buenas prácticas 9:00-21:00 laborables (recogidas en guías sectoriales y códigos, no en la LGT); consentimiento con caducidad práctica ~2 años según guías profesionales."
+      ],
+      "b2c_note": "B2C en frío está de facto prohibido sin consentimiento o interés legítimo acreditado (art. 66.1.b LGT + Circular AEPD 1/2023).",
+      "recent_changes": "Orden TDF/149/2025 (vigor marzo-junio 2025): veto a llamadas comerciales desde móviles, numeración obligatoria identificable y bloqueo de operadores. La AEPD sanciona activamente (multas típicas 5.000-70.000 EUR por llamadas a inscritos en Lista Robinson o sin consentimiento; hasta 2 M EUR en casos graves de grandes empresas — este último rango: probable).",
+      "risk_level_for_redvitalia": "Medio — el B2B a personas jurídicas sigue siendo viable con interés legítimo documentado, pero es el mercado con más vigilancia AEPD sobre la propia RedVitalia y con reglas de numeración nuevas (Orden TDF/149/2025) que afectan a la operativa de los setters.",
+      "sources": [
+        "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-15071",
+        "https://www.fieldfisher.com/es-es/locations/espana/actualidad/7-de-junio-prohibicion-de-las-llamadas-comerciales",
+        "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2870",
+        "https://pablofb.com/2026/02/22/el-ocaso-del-spam-telefonico-normas-multas-y-estrategias-de-captacion-de-leads/"
+      ]
+    },
+    {
+      "country": "Portugal",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: para pessoas coletivas (empresas) rige opt-out — el marketing no solicitado está permitido por defecto salvo oposición del destinatario o inscripción en la lista de la Direção-Geral do Consumidor (listas del art. 13.º-B, Lei 41/2004 modificada por Lei 46/2012).",
+        "Confirmado: la Diretriz 2022/1 de la CNPD cubre también llamadas telefónicas (humanas y automatizadas) y exige base RGPD: consentimiento u interés legítimo con derecho de oposición fácil y gratuito; mantener listas internas de oposición actualizadas.",
+        "Confirmado: llamadas automatizadas/robocalls requieren consentimiento previo.",
+        "Probable: no existe horario legal específico para llamadas comerciales; aplican buenas prácticas generales."
+      ],
+      "b2c_note": "B2C: opt-in — el contacto no solicitado a personas físicas requiere consentimiento previo expreso, con excepción de clientes existentes para productos similares.",
+      "recent_changes": "Sin ley nueva específica 2025-2026 detectada; el marco sigue siendo Lei 41/2004 (act. Lei 16/2022) + Diretriz CNPD 2022/1. La prensa portuguesa señala que Portugal no tiene aún una norma anti-spam telefónico tipo España.",
+      "risk_level_for_redvitalia": "Bajo — régimen opt-out claro para B2B, solo exige depurar contra la lista de la DGC y respetar oposiciones; enforcement de la CNPD centrado en B2C.",
+      "sources": [
+        "https://ffms.pt/pt-pt/direitos-e-deveres/e-permitido-o-contacto-telefonico-ou-envio-de-sms-e-email-para-marketing-directo-nao-solicitado",
+        "https://www.garrigues.com/en_GB/new/new-guidelines-direct-marketing-issued-portuguese-data-protection-authority-what-has-change-way",
+        "https://www.anacom.pt/render.jsp?categoryId=275862"
+      ]
+    },
+    {
+      "country": "México",
+      "b2b_cold_calling": "Permitido",
+      "requirements": [
+        "Confirmado: los registros de exclusión REPEP (Profeco) y REUS (Condusef) son solo para consumidores/usuarios financieros personas físicas; las empresas no pueden inscribirse, por lo que el B2B queda fuera de esas listas.",
+        "Confirmado (para llamadas a consumidores): horario permitido lunes-viernes 8:00-19:00, prohibido fines de semana y festivos; depurar contra REPEP/REUS.",
+        "Confirmado: la nueva LFPDPPP 2025 aplica al tratar datos personales de las personas de contacto (avisos de privacidad, base de licitud), incluso en contexto B2B.",
+        "Probable: no hay prefijo obligatorio ni registro de telemarketers a nivel federal para B2B."
+      ],
+      "b2c_note": "B2C: permitido con opt-out (REPEP/REUS) y horarios; multas Profeco/Condusef por llamar a inscritos.",
+      "recent_changes": "Nueva Ley Federal de Protección de Datos Personales en Posesión de Particulares (marzo 2025), con extinción del INAI y sanciones de datos de hasta ~6 M MXN en infracciones graves; multas por violar REPEP/horarios de ~700 MXN hasta ~3,5 M MXN por infracción.",
+      "risk_level_for_redvitalia": "Bajo — sin lista de exclusión ni restricciones específicas para B2B; el riesgo se limita al cumplimiento LFPDPPP sobre los datos de contacto.",
+      "sources": [
+        "https://talk-q.com/outbound-call-regulations-in-mexico",
+        "https://repep.profeco.gob.mx/",
+        "https://www.condusef.gob.mx/?p=contenido&idc=589&idcat=1"
+      ]
+    },
+    {
+      "country": "Colombia",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: Ley 2300 de 2023 ('Dejen de fregar') regula las comunicaciones comerciales: contacto solo por canales autorizados por el destinatario, máx. 1 contacto/día por canal, horarios lunes-viernes 7:00-19:00 y sábados 8:00-15:00, nunca domingos/festivos.",
+        "Confirmado: la SIC (Circular Externa 001 de 26/6/2024) hizo obligatoria la consulta del Registro de Números Excluidos (RNE) antes de la prospección comercial; la inscripción en el RNE revoca autorizaciones previas.",
+        "Probable: la ley se centra en 'consumidores', pero el concepto colombiano de consumidor incluye personas jurídicas como destinatarias finales, y la obligación del RNE aplica a 'productores y proveedores' en general — el B2B puro (empresa que compra para su actividad) queda en zona gris; conviene aplicar horarios y RNE por prudencia.",
+        "Confirmado: tratamiento de datos de contacto bajo Ley 1581/2012 (habeas data) con autorización o base legal."
+      ],
+      "b2c_note": "B2C: fuertemente restringido — autorización de canal, horarios estrictos, frecuencia máxima y RNE obligatorio.",
+      "recent_changes": "Circular SIC 001/2024 operativizó el RNE (obligatorio consultarlo); sanciones de hasta 2.000 SMLMV, suspensión del tratamiento de datos hasta 6 meses y hasta cierre de operaciones.",
+      "risk_level_for_redvitalia": "Medio — el B2B no está claramente exento de la Ley 2300 y la SIC es activa; operar exige depurar RNE, respetar horarios y limitar frecuencia.",
+      "sources": [
+        "https://www.asuntoslegales.com.co/analisis/manuel-serrano-rey-3340544/principales-cambios-ley-2300-de-2023-sobre-comunicaciones-comerciales-3748648",
+        "https://www.perezllorca.com/es-co/actualidad/boletin/la-sic-hizo-obligatoria-la-revision-del-registro-de-numeros-excluidos/",
+        "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=213990"
+      ]
+    },
+    {
+      "country": "Argentina",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: Registro Nacional No Llame (Ley 26.951): pueden inscribirse tanto personas físicas como JURÍDICAS titulares o usuarias de líneas — es decir, los números de empresas también pueden estar bloqueados y hay que depurarlos.",
+        "Confirmado: obligación de consultar periódicamente el registro y respetar las altas (efecto a los 30 días); excepciones: relación contractual vigente, campañas de interés público, emergencias.",
+        "Confirmado: Resolución AAIP 126/2024 actualizó la clasificación de infracciones y sanciones (apercibimiento, suspensión de base de datos 1-365 días, cancelación, multas — montos nominales bajos, 1.000-100.000 ARS por infracción, pero acumulables por llamada; reducción del 50% por pago voluntario).",
+        "Probable: no hay prefijo obligatorio ni horario legal nacional específico para llamadas comerciales."
+      ],
+      "b2c_note": "B2C: permitido en régimen opt-out, pero llamar a inscritos en el No Llame es infracción sancionada por la AAIP.",
+      "recent_changes": "Resolución 126/2024 de la AAIP (nueva matriz de infracciones/sanciones del No Llame); la AAIP publica periódicamente rankings de empresas sancionadas.",
+      "risk_level_for_redvitalia": "Medio — el B2B es viable pero, a diferencia de casi todos los demás países, las líneas de empresas pueden estar en el No Llame, así que la depuración del registro es obligatoria; multas individuales bajas pero acumulables.",
+      "sources": [
+        "https://iapp.org/news/a/se-actualiza-en-argentina-el-registro-nacional-no-llame-con-nuevas-clasificaciones-de-infracciones-y-sanciones",
+        "https://www.argentina.gob.ar/normativa/nacional/ley-26951-233066/texto",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-126-2024-399750/actualizacion"
+      ]
+    },
+    {
+      "country": "Chile",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: no existe prohibición general de la llamada en frío; para consumidores rige el registro opt-out 'No Molestar' del SERNAC (obligación de cesar contactos al ser solicitado, bajo la Ley del Consumidor 19.496).",
+        "Confirmado: desde agosto 2025 rige la numeración obligatoria de SUBTEL: prefijo 600 para comunicaciones solicitadas y prefijo 809 para llamadas NO solicitadas — las llamadas comerciales en frío deben salir con prefijo identificable, con trazabilidad y denuncia ante SUBTEL.",
+        "Confirmado: la Ley 21.719 de protección de datos personales (nueva Agencia de Protección de Datos) exige base legal, consentimiento reforzado y accountability para usar datos de contacto; entrada en vigencia plena el 1/12/2026 (fecha: probable, ampliamente reportada).",
+        "Probable: multas de la Ley 21.719 de hasta ~5.000/10.000/20.000 UTM según gravedad (leve/grave/gravísima)."
+      ],
+      "b2c_note": "B2C: permitido hoy en opt-out (No Molestar + prefijo 809), con proyecto de ley 'No Molestar' en el Senado que estudia prohibir llamadas publicitarias no consentidas.",
+      "recent_changes": "Prefijos 600/809 obligatorios desde agosto 2025; Ley 21.719 (datos personales) plenamente exigible desde diciembre 2026; proyecto de prohibición de llamadas publicitarias en tramitación.",
+      "risk_level_for_redvitalia": "Bajo — B2B en frío legal con el prefijo 809 y respeto de oposiciones; el riesgo subirá a Medio desde dic-2026 con la Ley 21.719 y si prospera el proyecto 'No Molestar'.",
+      "sources": [
+        "https://infogate.cl/2025/10/del-llamalo-hasta-que-conteste-al-dejalo-elegir-como-cambio-para-siempre-la-atencion-al-cliente-en-chile/",
+        "https://www.sernac.cl/portal/617/w3-article-9184.html",
+        "https://www.senado.cl/comunicaciones/noticias/proyecto-no-molestar-analizan-prohibicion-de-llamadas-publicitarias-y-su"
+      ]
+    },
+    {
+      "country": "Perú",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: la Ley 32323 (vigente desde 2025) prohíbe a las empresas llamar a CONSUMIDORES para ofrecer productos/servicios sin consentimiento previo, expreso y voluntario (opt-in puro: el consumidor debe haber contactado primero u autorizado); revocación de efecto inmediato.",
+        "Probable: las llamadas a empresas (personas jurídicas) en contexto B2B quedan fuera del Código de Consumo y de la Ley 32323, PERO el código peruano protege también a microempresarios en situación de asimetría informativa, y los móviles personales de autónomos pueden considerarse consumidor — depurar cuidadosamente.",
+        "Confirmado: Indecopi fiscaliza activamente (revisión masiva de audios con IA en banca, seguros y telecos) y admite reclamos en línea.",
+        "Confirmado: tratamiento de datos bajo Ley 29733 de protección de datos personales."
+      ],
+      "b2c_note": "B2C: PROHIBIDO sin consentimiento previo expreso — uno de los regímenes más estrictos de LATAM.",
+      "recent_changes": "Ley 32323 en vigor desde 2025 con multas de hasta 450 UIT (~2,4 M PEN); en agosto 2026 Indecopi multó a una aseguradora (~118.000 PEN) tras analizar 11.000 audios.",
+      "risk_level_for_redvitalia": "Medio — el B2B puro no está prohibido, pero la frontera con 'consumidor' (autónomos, microempresas, móviles personales) es difusa y el enforcement de Indecopi es agresivo y tecnificado.",
+      "sources": [
+        "https://www.infobae.com/peru/2025/05/16/indecopi-exhorto-a-empresas-a-cumplir-con-nueva-ley-que-prohibe-llamadas-spam-y-anuncia-sanciones-de-hasta-450-uit/",
+        "https://consumidor.gob.pe/2025/06/20/llamadas-telefonicas-no-deseadas-llamadas-spam/",
+        "https://www.infobae.com/peru/2026/08/05/aseguradora-debera-pagar-s-118195-por-llamadas-spam-se-analizaron-mas-de-11-mil-audios-para-determinar-la-multa/"
+      ]
+    },
+    {
+      "country": "Francia",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: la ley n.º 2025-594 (30/6/2025) instaura desde el 11/8/2026 el opt-in para el démarchage a CONSUMIDORES; 'la prospección de empresa a empresa no entra en esos artículos' — el B2B sigue permitido bajo RGPD (interés legítimo + derecho de oposición).",
+        "Confirmado (B2C): consentimiento previo, libre, específico y probado (conservación 3 años); horarios 10:00-13:00 y 14:00-20:00 lunes-viernes; máx. 4 llamadas por persona/30 días; contratos derivados de llamadas ilegales nulos.",
+        "Probable: para B2B evitar móviles personales de directivos (dato personal → RGPD estricto) y usar líneas profesionales publicadas; los prefijos dedicados de prospección (09 37-09 39 de ARCEP) aplican a la prospección hacia consumidores.",
+        "Confirmado: Bloctel deja de ser el mecanismo central al pasar a opt-in B2C."
+      ],
+      "b2c_note": "B2C: desde el 11/8/2026 prohibido sin consentimiento previo (opt-in); hasta entonces, opt-out vía Bloctel con horarios estrictos.",
+      "recent_changes": "Ley 2025-594 de 30/6/2025: fin del modelo Bloctel, opt-in obligatorio B2C desde 11/8/2026; sanciones de hasta 75.000 EUR (persona física) y 375.000 EUR (empresa).",
+      "risk_level_for_redvitalia": "Bajo — el legislador francés dejó expresamente fuera el B2B; llamando solo a líneas profesionales de empresas el modelo setter es defendible, con disciplina RGPD.",
+      "sources": [
+        "https://www.legalplace.fr/actualites/demarchage-telephonique/",
+        "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/le-demarchage-telephonique-desormais-interdit-si-vous-ny-avez-pas-consenti",
+        "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221441/2026-08-11"
+      ]
+    },
+    {
+      "country": "Alemania",
+      "b2b_cold_calling": "Restringido",
+      "requirements": [
+        "Confirmado: § 7(2) n.º 1 UWG — la llamada B2B en frío solo es lícita con 'consentimiento presunto' (mutmaßliche Einwilligung): deben existir circunstancias concretas que indiquen que ESA empresa tiene interés real en ESA oferta, con conexión objetiva a su actividad principal; no basta el interés genérico del sector.",
+        "Confirmado: documentar todo (origen de datos trazable, motivo del interés presunto, fecha, oposiciones); RGPD rige el tratamiento de los datos de contacto.",
+        "Confirmado: B2C exige consentimiento previo expreso (sin excepción de cliente existente); § 7a UWG obliga a documentar el consentimiento y conservarlo 5 años.",
+        "Probable: sin lista Robinson estatal; el riesgo B2B principal son las Abmahnungen (requerimientos de cese con costas) de competidores y asociaciones, más que multas administrativas."
+      ],
+      "b2c_note": "B2C: prohibido sin consentimiento expreso previo; multas de la Bundesnetzagentur de hasta 300.000 EUR por llamada publicitaria ilícita.",
+      "recent_changes": "Sin reforma del UWG 2025-2026 detectada; novedad relevante: desde el 2/8/2026 el AI Act (art. 50) obliga a revelar en la llamada el uso de agentes de voz con IA.",
+      "risk_level_for_redvitalia": "Alto — es el régimen B2B más restrictivo de la lista: la llamada en frío 'a puerta fría' genérica de un setter difícilmente cumple el estándar de consentimiento presunto, y la cultura de Abmahnung hace probable el conflicto.",
+      "sources": [
+        "https://www.telemarketing-international.com/en/blog/2026-07-31-b2b-cold-calling-uwg-gdpr/",
+        "https://www.famulor.io/blog/legal-ai-cold-calling-in-germany-consent-rules-2026",
+        "https://tomba.io/blog/cold-calling-in-germany"
+      ]
+    },
+    {
+      "country": "Italia",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: el Registro Pubblico delle Opposizioni (RPO) cubre TODA la numeración nacional fija y móvil, incluidos números no publicados y también números de empresas — antes de cada campaña hay que depurar la lista contra el RPO (consulta mensual/antes de cada campaña).",
+        "Confirmado: llamada con operador humano a números no inscritos: opt-out permitido; llamadas automatizadas/robocalls sin consentimiento: ilegales.",
+        "Confirmado: la inscripción en el RPO cancela los consentimientos previos (salvo relación contractual vigente); obligación de identificarse, indicar el origen de los datos y ofrecer oposición (Código de conducta telemarketing 2023, franjas 8:45-20:15 laborables).",
+        "Confirmado: novedad 2025 — AGCOM impuso a los operadores el bloqueo de llamadas con CLI falsificado (spoofing) desde el extranjero (agosto/noviembre 2025), lo que afecta a call centers deslocalizados que presentan numeración italiana."
+      ],
+      "b2c_note": "B2C: mismo esquema opt-out vía RPO, pero con el Garante muy activo (multas millonarias a energía/telecos y responsabilidad por listas compradas).",
+      "recent_changes": "Delibere AGCOM 2025 de bloqueo anti-spoofing (agosto: fijos; noviembre: móviles); el Garante intensificó sanciones 2024-2025 contra telemarketing ilícito y consensos 'omnibus'; multas RGPD hasta 20 M EUR o 4% de facturación.",
+      "risk_level_for_redvitalia": "Alto — aunque el B2B en frío es formalmente legal, el RPO también bloquea números de empresas, el Garante es de los reguladores más punitivos de la UE y el bloqueo anti-spoofing complica operar desde fuera de Italia.",
+      "sources": [
+        "https://venditeb2b.it/telefonate-freddo-registro-opposizioni/",
+        "https://www.garanteprivacy.it/temi/telemarketing",
+        "https://www.mimit.gov.it/it/comunicazioni/telefonia/registro-pubblico-delle-opposizioni",
+        "https://protezionedatipersonali.it/marketing-registro-pubblico-opposizioni"
+      ]
+    },
+    {
+      "country": "Reino Unido",
+      "b2b_cold_calling": "Permitido con requisitos",
+      "requirements": [
+        "Confirmado: B2B legal bajo PECR, pero es obligatorio depurar contra el TPS y el Corporate TPS (CTPS) antes de cada campaña — las sociedades, LLP y organismos públicos pueden inscribirse en el CTPS y no se les puede llamar sin consentimiento.",
+        "Confirmado: re-depurar listas al menos cada 28 días, mostrar número identificable (o alternativo de contacto) e identificarse de inmediato; el 'soft opt-in' de email NO existe para llamadas.",
+        "Confirmado: guardar rastro de auditoría con fecha/hora de las comprobaciones TPS/CTPS.",
+        "Confirmado: tratamiento de datos de contacto bajo UK GDPR (interés legítimo habitual en B2B)."
+      ],
+      "b2c_note": "B2C: legal en opt-out pero prohibido llamar a inscritos en TPS; sectores como pensiones y claims tienen prohibición casi total.",
+      "recent_changes": "Data (Use and Access) Act 2025 (efectivo 5/2/2026): el tope de multa PECR sube de 500.000 GBP a 17,5 M GBP o 4% de facturación global, y los INTENTOS de llamada a números TPS/CTPS ya cuentan como infracción.",
+      "risk_level_for_redvitalia": "Medio — proceso claro y asumible (depuración CTPS/TPS cada 28 días), pero el nuevo régimen sancionador 2026 multiplica el coste de un error operativo.",
+      "sources": [
+        "https://tpscheck.uk/blog/2025/12/31/are-cold-calls-illegal-uk/",
+        "https://www.accuradata.co.uk/ctps-checker-the-complete-guide-for-the-ctps-register/",
+        "https://talk-q.com/outbound-call-regulations-in-uk"
+      ]
+    },
+    {
+      "country": "Países Bajos",
+      "b2b_cold_calling": "Restringido",
+      "requirements": [
+        "Confirmado: solo se puede llamar en frío a entidades CON personalidad jurídica (BV, NV...); los autónomos (eenmanszaak) y sociedades personalistas (VOF, CV) están equiparados a consumidores y requieren consentimiento previo (opt-in) desde la reforma de la Telecommunicatiewet de julio 2021.",
+        "Confirmado: identificación del llamante obligatoria (prohibido número oculto), anunciar el propósito de inmediato y ofrecer derecho de oposición con borrado de la lista.",
+        "Confirmado: la carga de la prueba del consentimiento recae en quien llama (casillas premarcadas inválidas); la ACM lo advierte y sanciona.",
+        "Confirmado: desde el 1/7/2026 desaparece el soft opt-in telefónico para clientes existentes — solo consentimiento previo específico para consumidores/no-personas-jurídicas."
+      ],
+      "b2c_note": "B2C: opt-in estricto desde 2021 (el registro Bel-me-niet fue sustituido por consentimiento previo); desde jul-2026 ni siquiera se podrá llamar a clientes existentes sin consentimiento.",
+      "recent_changes": "Reforma efectiva 1/7/2026: fin del soft opt-in para telemarketing a clientes; ACM activa en enforcement (multas históricas de cientos de miles de euros; tope legal exacto no confirmado en fuentes consultadas).",
+      "risk_level_for_redvitalia": "Alto — el filtrado societario es crítico: gran parte del tejido pyme holandés son eenmanszaak/VOF intocables sin opt-in, y un error de segmentación expone directamente a la ACM.",
+      "sources": [
+        "https://business.gov.nl/regulations/telesales/",
+        "https://www.ictrecht.nl/en/blog/einde-van-de-soft-opt-in-telemarketing-vanaf-1-juli-2026-alleen-nog-met-toestemming",
+        "https://www.acm.nl/en/publications/acm-issues-warning-telemarketers-must-be-able-demonstrate-explicit-consent"
+      ]
+    },
+    {
+      "country": "Suecia",
+      "b2b_cold_calling": "Permitido",
+      "requirements": [
+        "Confirmado: NIX-Telefon (registro de exclusión) solo admite a personas físicas con abonos telefónicos; las llamadas a autónomos inscritos son admisibles si conciernen a su actividad empresarial (registrado a IVA, empleador o F-skatt); los números de sociedades no se inscriben — B2B en régimen opt-out.",
+        "Confirmado: quien llama a particulares debe depurar contra NIX (verificación con antigüedad máx. 2 meses), salvo consentimiento (ventana ~3 meses) o relación de cliente (hasta 1 año).",
+        "Confirmado: rige la Marknadsföringslagen (buenas prácticas, identificación); autorregulación vía NIX-nämnden/Kontakta.",
+        "Probable: para ventas telefónicas a CONSUMIDORES se exige confirmación escrita del contrato tras la llamada (reforma 2018); no aplica a B2B."
+      ],
+      "b2c_note": "B2C: opt-out vía NIX-Telefon más requisito de confirmación escrita del contrato; no está prohibido llamar en frío a no inscritos.",
+      "recent_changes": "Desde el 1/9/2022 la sanción por perturbación de mercado (marknadsstörningsavgift) puede llegar al 4% de la facturación anual (o 2 M EUR si no es determinable); NIX endureció sus reglas de autorregulación.",
+      "risk_level_for_redvitalia": "Bajo — B2B en frío plenamente viable en opt-out; solo cuidar autónomos inscritos en NIX (llamables únicamente por asuntos de su negocio).",
+      "sources": [
+        "https://www.nixtelefon.org/regler",
+        "https://www.twobirds.com/en/trending-topics/omnibus-directive/omnibus-directive-countries/sweden",
+        "https://www.swedma.se/reklamsparr-nix-direktmarknadsforing/nix-telefon/"
+      ]
+    },
+    {
+      "country": "Dinamarca",
+      "b2b_cold_calling": "Permitido",
+      "requirements": [
+        "Confirmado: no existe prohibición general de llamadas no solicitadas a empresas — el B2B en frío es legal sujeto a buenas prácticas de la Markedsføringsloven (no engaño, no agresividad), identificación clara e inmediata, explicar propósito y respetar lista interna de exclusión ('stop-list').",
+        "Confirmado: al llamar a empleados concretos aplica RGPD (base habitual: interés legítimo; informar del tratamiento y del derecho de oposición).",
+        "Confirmado: no hay registro nacional de exclusión para empresas (la Robinsonliste/CPR es solo de particulares).",
+        "Probable: sin horarios legales específicos para B2B."
+      ],
+      "b2c_note": "B2C: el telefonsalg no solicitado a particulares está en esencia PROHIBIDO por la Forbrugeraftaleloven salvo excepciones tasadas (libros, prensa, seguros, salvamento) — uno de los regímenes de consumo más duros de Europa.",
+      "recent_changes": "Sin cambios legislativos 2025-2026 detectados; supervisión estable de Forbrugerombudsmanden y Datatilsynet.",
+      "risk_level_for_redvitalia": "Bajo — B2B claramente permitido y sin registro que depurar; la línea roja absoluta es no derivar nunca a particulares (B2C casi prohibido).",
+      "sources": [
+        "https://www.partnerdialog.dk/gdpr-telemarketing-b2b-danmark/",
+        "https://forbrugerombudsmanden.dk/longreads/oversigt-over-reglerne-for-telefonsalg",
+        "https://www.advodan.dk/da/erhverv/min-virksomhed/virksomhedsdrift/markedsforingsloven/reklamepost-og-telefonsalg/"
+      ]
+    }
+  ]
+}

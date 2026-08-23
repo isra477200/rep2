@@ -18,7 +18,12 @@ import { resolve } from "node:path";
 
 const root = resolve(new URL("..", import.meta.url).pathname);
 const indexPath = resolve(root, "public/data/companies-index.json");
-const source = JSON.parse(readFileSync(resolve(root, "db/panorama-europa-fuente.json"), "utf8"));
+import { readdirSync as _rd } from "node:fs";
+const fuentesDir = resolve(root, "db/fuentes");
+const source = _rd(fuentesDir)
+  .filter((f) => f.endsWith(".json"))
+  .sort()
+  .flatMap((f) => JSON.parse(readFileSync(resolve(fuentesDir, f), "utf8")));
 const geo = JSON.parse(readFileSync(resolve(root, "public/data/country-geo.json"), "utf8"));
 const base = JSON.parse(readFileSync(indexPath, "utf8")).filter((c) => !c.id.startsWith("amp-"));
 
@@ -26,6 +31,15 @@ const OBSERVED_AT = "2026-08-23";
 const geoByName = new Map(geo.map((g) => [g.name, g]));
 // Alias de países cuyo nombre difiere entre la fuente y country-geo.json
 geoByName.set("Chequia", geoByName.get("República Checa"));
+geoByName.set("EE.UU.", geoByName.get("Estados Unidos"));
+
+/** Normaliza países con coletillas ("España (multinacional)" → "España"). */
+function normCountry(raw) {
+  if (!raw) return "";
+  let c = raw.split(" (")[0].split("/")[0].trim();
+  if (c === "EE.UU.") c = "Estados Unidos";
+  return c;
+}
 const existingDomains = new Set(base.map((c) => (c.domain || "").toLowerCase()));
 
 const slug = (value) =>
@@ -51,9 +65,12 @@ function classify(model) {
 }
 
 const added = [];
+const seenNew = new Set();
 for (const p of source) {
   const domain = (p.domain || "").toLowerCase();
-  if (!domain || existingDomains.has(domain)) continue;
+  if (!domain || existingDomains.has(domain) || seenNew.has(domain)) continue;
+  seenNew.add(domain);
+  p.country = normCountry(p.country);
   const g = geoByName.get(p.country);
   const { scope, agencyType } = classify(p.model);
   const id = `amp-${slug(domain)}`;

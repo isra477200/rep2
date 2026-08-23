@@ -27,12 +27,15 @@ import {
 } from "./MediaResolution";
 import RecordDetail from "./RecordDetail";
 import type {
+  Analytics,
   Company,
   Country,
   CountryGeo,
   DeepIndex,
   DeepIndexItem,
   Editorial,
+  ExpansionData,
+  MysteryData,
   FunnelV3Index,
   FunnelV3IndexItem,
   FunnelV3Review,
@@ -54,6 +57,9 @@ type View =
   | "compare"
   | "insights"
   | "playbooks"
+  | "analysis"
+  | "expansion"
+  | "mystery"
   | "blueprint"
   | "audit";
 
@@ -67,6 +73,9 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "compare", label: "Comparador", icon: "⇄" },
   { id: "insights", label: "Conclusiones", icon: "∴" },
   { id: "playbooks", label: "Métodos", icon: "⚙" },
+  { id: "analysis", label: "Análisis", icon: "∑" },
+  { id: "expansion", label: "Expansión", icon: "❖" },
+  { id: "mystery", label: "Mystery", icon: "◍" },
   { id: "blueprint", label: "Blueprint", icon: "✦" },
   { id: "audit", label: "Auditoría", icon: "✓" },
 ];
@@ -373,7 +382,10 @@ export default function Portal() {
     [logos, setLogos] = useState<LogoManifest>({}),
     [deepIndex, setDeepIndex] = useState<DeepIndex | null>(null),
     [v3Index, setV3Index] = useState<FunnelV3Index | null>(null),
-    [insights, setInsights] = useState<Insights | null>(null);
+    [insights, setInsights] = useState<Insights | null>(null),
+    [analytics, setAnalytics] = useState<Analytics | null>(null),
+    [expansion, setExpansion] = useState<ExpansionData | null>(null),
+    [mystery, setMystery] = useState<MysteryData | null>(null);
   const [view, setView] = useState<View>("home"),
     [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
@@ -440,8 +452,17 @@ export default function Portal() {
       fetch("/data/insights.json")
         .then((r) => (r.ok ? (r.json() as Promise<Insights>) : null))
         .catch(() => null),
+      fetch("/data/analytics.json")
+        .then((r) => (r.ok ? (r.json() as Promise<Analytics>) : null))
+        .catch(() => null),
+      fetch("/data/expansion.json")
+        .then((r) => (r.ok ? (r.json() as Promise<ExpansionData>) : null))
+        .catch(() => null),
+      fetch("/data/mystery.json")
+        .then((r) => (r.ok ? (r.json() as Promise<MysteryData>) : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -451,6 +472,9 @@ export default function Portal() {
         setDeepIndex(d);
         setV3Index(v3);
         setInsights(ins);
+        setAnalytics(ana);
+        setExpansion(exp);
+        setMystery(mys);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
@@ -2257,6 +2281,350 @@ export default function Portal() {
                     </div>
                   </article>
                 ))}
+              </div>
+            </section>
+          </div>
+        )}
+        {view === "analysis" && analytics && (
+          <div className="view">
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">ANÁLISIS AVANZADO · {fmt(analytics.universe)} FICHAS</p>
+                  <h2>Los datos, cruzados hasta el fondo</h2>
+                </div>
+              </div>
+              <p className="insights-note">Todo calculado sobre el catálogo y sobre investigación con fuente. Lo que no se puede calcular todavía está marcado como pendiente al final.</p>
+
+              <h3 className="analysis-title">Matriz nicho × país: dónde compite cada uno</h3>
+              <div className="matrix-wrap">
+                <table className="matrix-table">
+                  <thead>
+                    <tr><th>Nicho</th><th>Total</th>{analytics.matrix.countries.map((c) => <th key={c}>{c}</th>)}</tr>
+                  </thead>
+                  <tbody>
+                    {analytics.matrix.rows.map((row) => (
+                      <tr key={row.niche}>
+                        <td>{row.niche}</td>
+                        <td><b>{row.total}</b></td>
+                        {row.cells.map((cell) => (
+                          <td key={cell.country} className={cell.count === 0 ? "cell-zero" : cell.count >= 10 ? "cell-hot" : cell.count >= 4 ? "cell-warm" : "cell-low"}>
+                            {cell.count || "·"}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="matrix-hint">Celdas con punto = nadie detectado: cada una es un hueco potencial. Verde intenso = zona saturada.</p>
+            </section>
+
+            <section className="content-section">
+              <div className="insights-cols">
+                <div>
+                  <h3 className="analysis-title">La garantía, ¿abarata o encarece?</h3>
+                  <div className="gap-card guarantee-price-card">
+                    <strong>{analytics.priceGuarantee.withGuarantee.medianEur ? `${fmt(analytics.priceGuarantee.withGuarantee.medianEur)} €` : "—"} vs {analytics.priceGuarantee.withoutGuarantee.medianEur ? `${fmt(analytics.priceGuarantee.withoutGuarantee.medianEur)} €` : "—"}</strong>
+                    <h3>Precio mediano con garantía fuerte ({analytics.priceGuarantee.withGuarantee.n}) vs sin ella ({analytics.priceGuarantee.withoutGuarantee.n})</h3>
+                    {analytics.priceGuarantee.reading && <p>{analytics.priceGuarantee.reading}</p>}
+                  </div>
+                  <h3 className="analysis-title">Rango de precios por país (p25 · mediana · p75)</h3>
+                  <div className="median-list">
+                    {analytics.elasticity.map((e) => (
+                      <button key={e.country} onClick={() => chooseCountry(e.country)}>
+                        <span>{e.country}</span>
+                        <small>{e.n} precios</small>
+                        <b>{fmt(e.p25)} · {fmt(e.p50)} · {fmt(e.p75)} €</b>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="analysis-title">Saturación en España por nicho</h3>
+                  <div className="bar-list">
+                    {analytics.saturation.slice(0, 10).map((s) => (
+                      <div key={s.niche} className="bar-row">
+                        <span className="bar-label">{s.niche}</span>
+                        <div className="bar-track"><i style={{ width: `${Math.max(4, (s.count / analytics.saturation[0].count) * 100)}%` }} /></div>
+                        <b>{s.count}</b>
+                      </div>
+                    ))}
+                  </div>
+                  <h3 className="analysis-title">Las palabras de los mejores ({analytics.copyAnalysis.winnersN} fichas 80+) vs el montón</h3>
+                  <div className="chip-row">
+                    {analytics.copyAnalysis.winnerWords.slice(0, 14).map((w) => (
+                      <span key={w.word} className="ref-chip word-win">{w.word} · {w.count}</span>
+                    ))}
+                  </div>
+                  <div className="chip-row">
+                    {analytics.copyAnalysis.laggardWords.slice(0, 10).map((w) => (
+                      <span key={w.word} className="ref-chip word-lag">{w.word} · {w.count}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">PUNTUACIÓN V2 · CRITERIO DE NEGOCIO</p>
+                  <h2>Quién importa de verdad</h2>
+                </div>
+              </div>
+              <p className="insights-note">{analytics.scoringV2.formula}</p>
+              <div className="insights-cols">
+                <div>
+                  <h3 className="analysis-title">España · top 25</h3>
+                  <div className="threat-list">
+                    {analytics.scoringV2.spain.map((t) => {
+                      const c = companyById.get(t.id);
+                      return (
+                        <button key={t.id} onClick={() => c && openCompany(c)}>
+                          <span><strong>{t.name}</strong><small>{t.agencyType}</small></span>
+                          <b>{t.v2}</b>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="analysis-title">Resto del mundo · top 20</h3>
+                  <div className="threat-list">
+                    {analytics.scoringV2.global.map((t) => {
+                      const c = companyById.get(t.id);
+                      return (
+                        <button key={t.id} onClick={() => c && openCompany(c)}>
+                          <span><strong>{t.name}</strong><small>{t.country}</small></span>
+                          <b>{t.v2}</b>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {analytics.mortality && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">EL CEMENTERIO</p>
+                    <h2>{analytics.mortality.cases.length} agencias muertas y sus lecciones</h2>
+                  </div>
+                </div>
+                <div className="gap-grid">
+                  {analytics.mortality.cases.map((m) => (
+                    <article key={m.name} className="mortality-card">
+                      <h3>{m.name}</h3>
+                      <small>{m.country || "España"} · {m.closed_when || "s/f"}</small>
+                      <p>{m.cause || "Causa no documentada."}</p>
+                      {m.lesson && <p className="mortality-lesson">Lección: {m.lesson}</p>}
+                    </article>
+                  ))}
+                </div>
+                <h3 className="analysis-title">Patrones de mortalidad documentados</h3>
+                <ul className="pattern-list">
+                  {analytics.mortality.patterns.map((p) => <li key={p.slice(0, 40)}>{p}</li>)}
+                </ul>
+              </section>
+            )}
+
+            {analytics.leadEconomy && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">LA ECONOMÍA DEL LEAD · ESPAÑA</p>
+                    <h2>Qué paga el que compra</h2>
+                  </div>
+                </div>
+                <div className="matrix-wrap">
+                  <table className="matrix-table lead-economy">
+                    <thead><tr><th>Vertical</th><th>CPL típico</th><th>Cita/reunión</th><th>Quién compra</th><th>Dónde compra</th></tr></thead>
+                    <tbody>
+                      {analytics.leadEconomy.verticals.map((v) => (
+                        <tr key={v.vertical}>
+                          <td><b>{v.vertical}</b></td>
+                          <td>{v.typical_cpl_range || "—"}</td>
+                          <td>{v.typical_appointment_price || "—"}</td>
+                          <td>{v.who_buys || "—"}</td>
+                          <td>{v.where_they_buy || "—"}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <ul className="pattern-list">
+                  {analytics.leadEconomy.notes.map((n) => <li key={n.slice(0, 40)}>{n}</li>)}
+                </ul>
+              </section>
+            )}
+
+            <section className="content-section">
+              <h3 className="analysis-title">Pendiente (sin inventar)</h3>
+              <ul className="pattern-list pending">
+                {analytics.pending.map((p) => <li key={p.slice(0, 40)}>{p}</li>)}
+              </ul>
+            </section>
+          </div>
+        )}
+        {view === "expansion" && expansion && (
+          <div className="view">
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">EXPANSIÓN INTERNACIONAL · REDVITALIA</p>
+                  <h2>Dónde ir, en qué orden y con qué reglas</h2>
+                </div>
+              </div>
+              <p className="insights-note">{expansion.note}</p>
+              <div className="playbook-strip">
+                {expansion.playbook.map((p) => <div key={p.slice(0, 30)} className="playbook-item">{p}</div>)}
+              </div>
+            </section>
+            <section className="content-section">
+              <div className="expansion-grid">
+                {expansion.dossiers.map((d) => (
+                  <article key={d.country} className={`expansion-card risk-${(d.regulation?.risk || "").toLowerCase().startsWith("alto") ? "high" : (d.regulation?.risk || "").toLowerCase().startsWith("medio") ? "mid" : "low"}`}>
+                    <div className="expansion-head">
+                      <span className="expansion-priority">{d.priority}</span>
+                      <h3>{d.country}</h3>
+                      <button className="link-button" onClick={() => chooseCountry(d.country)}>{d.fichas} fichas →</button>
+                    </div>
+                    <div className="expansion-stats">
+                      <span><b>{d.medianEur ? `${fmt(d.medianEur)} €` : "s/d"}</b><small>mediana ({d.pricedN} precios)</small></span>
+                      <span><b>{d.highThreats}</b><small>amenazas altas</small></span>
+                      <span><b>{d.inVerification}</b><small>en verificación</small></span>
+                    </div>
+                    {d.referents.length > 0 && (
+                      <div className="chip-row">
+                        {d.referents.map((r) => {
+                          const c = companyById.get(r.id);
+                          return <button key={r.id} className="ref-chip" onClick={() => c && openCompany(c)}>{r.name} · {r.decision}</button>;
+                        })}
+                      </div>
+                    )}
+                    {d.regulation && (
+                      <div className="expansion-reg">
+                        <span className="reg-tag">{d.regulation.b2b}</span>
+                        <span className="reg-risk">Riesgo: {d.regulation.risk}</span>
+                        <p>{d.regulation.requirements}</p>
+                        {d.regulation.recentChanges && <small>{d.regulation.recentChanges}</small>}
+                      </div>
+                    )}
+                    <p className="expansion-strategy">{d.strategy}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">REGULACIÓN DE LLAMADAS EN FRÍO · 14 PAÍSES</p>
+                  <h2>El mapa legal antes de descolgar</h2>
+                </div>
+              </div>
+              <div className="matrix-wrap">
+                <table className="matrix-table reg-table">
+                  <thead><tr><th>País</th><th>B2B en frío</th><th>Requisitos</th><th>Cambios recientes</th><th>Riesgo</th></tr></thead>
+                  <tbody>
+                    {expansion.regulationAll.map((r) => (
+                      <tr key={r.country}>
+                        <td><b>{r.country}</b></td>
+                        <td>{r.b2b}</td>
+                        <td>{r.requirements}</td>
+                        <td>{r.recentChanges}</td>
+                        <td className={`reg-${r.risk.toLowerCase().startsWith("alto") ? "high" : r.risk.toLowerCase().startsWith("medio") ? "mid" : "low"}`}>{r.risk}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        )}
+        {view === "mystery" && mystery && (
+          <div className="view">
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">MYSTERY SHOPPING · OPERADO POR NIDIA</p>
+                  <h2>Conocer a la competencia por dentro</h2>
+                </div>
+              </div>
+              <p className="insights-note">{mystery.intro}</p>
+              <div className="insights-cols">
+                <div className="mystery-callout legal">
+                  <h3>Reglas fijas</h3>
+                  <ul>{mystery.legal.map((l) => <li key={l.slice(0, 30)}>{l}</li>)}</ul>
+                </div>
+                <div className="mystery-callout setup">
+                  <h3>Preparación (una sola vez)</h3>
+                  <ul>{mystery.setup.map((s) => <li key={s.slice(0, 30)}>{s}</li>)}</ul>
+                </div>
+              </div>
+            </section>
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">IDENTIDADES DE COBERTURA</p>
+                  <h2>{mystery.identities.length} personajes, uno por tipo de objetivo</h2>
+                </div>
+              </div>
+              <div className="identity-grid">
+                {mystery.identities.map((iden) => (
+                  <article key={iden.id} className="identity-card">
+                    <h3>{iden.label}</h3>
+                    <p>{iden.story}</p>
+                    <div className="identity-data"><span>DATOS QUE DAS</span><p>{iden.dataToGive}</p></div>
+                    <small>{iden.goodFor}</small>
+                  </article>
+                ))}
+              </div>
+            </section>
+            <section className="content-section">
+              <div className="insights-cols">
+                <div>
+                  <h3 className="analysis-title">Las 8 preguntas de toda llamada</h3>
+                  <ol className="mystery-list">{mystery.baseQuestions.map((q) => <li key={q.slice(0, 30)}>{q}</li>)}</ol>
+                  <h3 className="analysis-title">El flujo, paso a paso</h3>
+                  <ol className="mystery-list flow">{mystery.flow.map((f) => <li key={f.slice(0, 30)}>{f.replace(/^\d+\.\s*/, "")}</li>)}</ol>
+                </div>
+                <div>
+                  <h3 className="analysis-title">Qué capturar de cada objetivo</h3>
+                  <ul className="mystery-list check">{mystery.captureChecklist.map((c) => <li key={c.slice(0, 30)}>{c}</li>)}</ul>
+                  <h3 className="analysis-title">Registro por contacto (una línea por empresa)</h3>
+                  <ul className="mystery-list check">{mystery.registryTemplate.map((r) => <li key={r.slice(0, 30)}>{r}</li>)}</ul>
+                </div>
+              </div>
+            </section>
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">OBJETIVOS · EN ORDEN</p>
+                  <h2>{mystery.targets.length} empresas a conocer por dentro</h2>
+                </div>
+              </div>
+              <div className="target-list">
+                {mystery.targets.map((t) => {
+                  const c = companyById.get(t.id);
+                  const iden = mystery.identities.find((x) => x.id === t.identity);
+                  return (
+                    <article key={t.id} className="target-card">
+                      <div className="target-head">
+                        <span className="target-order">{t.order}</span>
+                        <div>
+                          <h3>{t.name}</h3>
+                          <small>{t.agencyType} · Amenaza {t.threat} · Identidad: {iden ? iden.label : t.identity}</small>
+                        </div>
+                        <button className="link-button" onClick={() => c && openCompany(c)}>Ficha →</button>
+                      </div>
+                      <p>{t.focus}</p>
+                      <small>{t.priceRef}</small>
+                    </article>
+                  );
+                })}
               </div>
             </section>
           </div>

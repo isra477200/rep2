@@ -576,3 +576,63 @@ export type PanoramaData = {
   countries: Array<{ country: string; flag: string; count: number }>;
   companies: PanoramaCompany[];
 };
+
+export type Analytics = {
+  generatedAt: string;
+  universe: number;
+  matrix: { countries: string[]; rows: Array<{ niche: string; total: number; cells: Array<{ country: string; count: number }> }> };
+  saturation: Array<{ niche: string; count: number }>;
+  priceGuarantee: {
+    withGuarantee: { n: number; medianEur: number | null };
+    withoutGuarantee: { n: number; medianEur: number | null };
+    reading: string | null;
+  };
+  elasticity: Array<{ country: string; n: number; p25: number; p50: number; p75: number }>;
+  copyAnalysis: {
+    winnersN: number;
+    laggardsN: number;
+    winnerWords: Array<{ word: string; count: number }>;
+    laggardWords: Array<{ word: string; count: number }>;
+  };
+  scoringV2: {
+    formula: string;
+    spain: Array<{ id: string; name: string; v2: number; v1: number; agencyType: string }>;
+    global: Array<{ id: string; name: string; country: string; v2: number; v1: number }>;
+  };
+  holdings: Array<{ id: string; name: string; country: string; offer: string }>;
+  mortality: { cases: Array<{ name: string; domain_last_known?: string; country?: string; closed_when?: string; cause?: string; lesson?: string; sources?: string[] }>; patterns: string[] } | null;
+  leadEconomy: { verticals: Array<{ vertical: string; typical_cpl_range?: string; typical_appointment_price?: string; who_buys?: string; where_they_buy?: string; sources?: string[] }>; notes: string[] } | null;
+  pending: string[];
+};
+
+export type ExpansionData = {
+  generatedAt: string;
+  note: string;
+  playbook: string[];
+  dossiers: Array<{
+    country: string;
+    priority: number;
+    fichas: number;
+    inVerification: number;
+    medianEur: number | null;
+    pricedN: number;
+    highThreats: number;
+    referents: Array<{ id: string; name: string; decision: string; score: number }>;
+    regulation: { b2b: string; requirements: string; recentChanges: string; risk: string; sources: string[] } | null;
+    strategy: string;
+  }>;
+  regulationAll: Array<{ country: string; b2b: string; requirements: string; b2cNote: string; recentChanges: string; risk: string; sources: string[] }>;
+};
+
+export type MysteryData = {
+  generatedAt: string;
+  intro: string;
+  legal: string[];
+  setup: string[];
+  identities: Array<{ id: string; label: string; story: string; dataToGive: string; goodFor: string }>;
+  baseQuestions: string[];
+  captureChecklist: string[];
+  flow: string[];
+  registryTemplate: string[];
+  targets: Array<{ order: number; id: string; name: string; website: string; threat: string; agencyType: string; identity: string; focus: string; priceRef: string }>;
+};

@@ -1,0 +1,374 @@
+{
+ "generatedAt": "23/08/2026",
+ "intro": "Kit operativo para conocer al detalle cómo vende la competencia: qué prometen, qué cobran de verdad y cómo cierran. Responsable: Nidia. Todo lo capturado vuelve a la plataforma y enriquece la ficha de cada empresa.",
+ "legal": [
+  "Grabar una conversación en la que TÚ participas es legal en España para uso interno y de análisis (no lo es difundirla públicamente ni grabar conversaciones ajenas). Guardar las grabaciones solo en la carpeta interna del equipo.",
+  "No firmar ningún contrato ni realizar pagos. El ejercicio termina SIEMPRE antes de la firma: 'lo consulto con mi socio y os digo'.",
+  "No usar datos de terceros reales (clientes, DNI ajenos). Nombre propio o variante, teléfono y email creados para esto."
+ ],
+ "setup": [
+  "1 SIM/número nuevo (o número virtual de Zadarma) dedicado SOLO a esto.",
+  "1 email nuevo (gmail vale) coherente con la identidad elegida.",
+  "Grabadora activada en el móvil de trabajo ANTES de cada llamada.",
+  "Carpeta en Drive: Mystery/<NombreEmpresa>/ — ahí va TODO (audios, PDFs, capturas de WhatsApp)."
+ ],
+ "identities": [
+  {
+   "id": "dental",
+   "label": "Clínica dental en apertura",
+   "story": "Vas a abrir una clínica dental en Valencia dentro de 2 meses (traspaso ya firmado, reforma en marcha). Vienes de trabajar como gestora en otra clínica y ahora montas la tuya. Aún no tenéis web terminada — por eso buscáis a alguien que os traiga primeros pacientes desde el día uno.",
+   "dataToGive": "Nombre propio real o variante · 'Clínica en [barrio de Valencia], nombre por registrar' · presupuesto declarado: 600-900 €/mes en publicidad aparte del servicio · urgencia: abrir con agenda medio llena.",
+   "goodFor": "Fichas de dental, salud y clínicas."
+  },
+  {
+   "id": "estetica",
+   "label": "Centro de estética recién traspasado",
+   "story": "Acabas de quedarte el traspaso de un centro de estética en Alicante que había bajado mucho. Tiene local, camillas y una empleada, pero la clientela se fue con la antigua dueña. Necesitas llenar la agenda en 90 días.",
+   "dataToGive": "Nombre propio · 'centro en Alicante centro, ahora mismo con el nombre antiguo' · presupuesto: hasta 500 €/mes de servicio + publicidad · pregunta clave que sueltas: '¿y si no me traéis clientas, qué pasa?'",
+   "goodFor": "Estética, belleza y generalistas de negocio local."
+  },
+  {
+   "id": "reformas",
+   "label": "Empresa de reformas familiar",
+   "story": "Llevas la administración de la empresa de reformas de tu familia en Murcia (tu marido/hermano y dos oficiales). Trabajo no falta, pero todo viene del boca a boca y quieren dejar de depender de eso. Nunca habéis hecho publicidad.",
+   "dataToGive": "Nombre propio · 'Reformas [apellido], en Murcia, sin web (solo Instagram)' · presupuesto: 'depende de lo que nos traigáis' — fuerza a que te lo cualifiquen ellos · objeción preparada: 'ya nos llamó una de estas empresas y eran leads compartidos con 5 más'.",
+   "goodFor": "Reformas, construcción, oficios y vendedores de leads."
+  },
+  {
+   "id": "solar",
+   "label": "Instaladora solar que quiere crecer",
+   "story": "Oficina técnica de instalaciones fotovoltaicas en Alicante provincia, 2 cuadrillas. Hasta ahora subcontratabais para una comercializadora y queréis cliente final propio. Sabéis lo que es un lead: ya comprasteis a un portal y salió regular.",
+   "dataToGive": "Nombre propio · 'instalaciones [nombre], SL real en trámite de cambio de actividad' · presupuesto: 1.000-1.500 €/mes · pregunta clave: 'los leads ¿son exclusivos o compartidos? ¿reponéis los falsos?'",
+   "goodFor": "Solar, energía y marketplaces de leads."
+  },
+  {
+   "id": "general",
+   "label": "Negocio local genérico (comodín)",
+   "story": "Adapta el comodín al nicho de la ficha: gestora de un negocio local real del sector que corresponda, en apertura o en relanzamiento, sin web o con web antigua, que busca cliente nuevo YA.",
+   "dataToGive": "Nombre propio · ciudad mediana de Levante · presupuesto medio del sector (mira la mediana de precios del apartado Conclusiones) · siempre la misma pregunta final: garantía, exclusividad y permanencia.",
+   "goodFor": "Cualquier ficha sin nicho claro."
+  }
+ ],
+ "baseQuestions": [
+  "¿Cómo conseguís los clientes: publicidad propia, base de datos, llamadas?",
+  "¿El lead o la cita es EXCLUSIVA para mí o la vendéis a más negocios?",
+  "¿Qué pasa si el lead es falso, no contesta o está fuera de mi zona? ¿Lo reponéis?",
+  "¿Hay permanencia? ¿Puedo salirme el mes que quiera?",
+  "¿Qué me garantizáis por escrito? ¿Y si un mes no llega nada?",
+  "Precio total: cuota, setup, ¿la publicidad va aparte? ¿De cuánto hablamos al mes TODO incluido?",
+  "¿Trabajáis con más negocios de mi sector en mi zona?",
+  "¿Cuándo empiezo a ver resultados según vuestra experiencia real?"
+ ],
+ "captureChecklist": [
+  "Minutos desde el formulario/llamada hasta su primera respuesta",
+  "Canal de respuesta (llamada, WhatsApp, email) y a qué hora",
+  "Guion de apertura: qué preguntan ellos primero (¿cualifican o venden?)",
+  "Precio EXACTO ofrecido (cuota, setup, publicidad aparte, descuentos)",
+  "Garantía ofrecida con sus palabras exactas",
+  "Exclusividad: qué contestan y cómo lo justifican",
+  "Permanencia y letra pequeña del contrato",
+  "Presión de cierre: urgencia, descuento por firmar hoy, plazas limitadas",
+  "Nº de toques de seguimiento y por qué canales durante 14 días",
+  "Documentos recibidos: propuesta PDF, contrato, presentación (guardar TODO)"
+ ],
+ "flow": [
+  "1. Elige el objetivo siguiente de la lista (en orden; los de amenaza alta primero).",
+  "2. Lee su ficha en esta plataforma (2 min): su garantía y su precio públicos son tu referencia para pillar contradicciones.",
+  "3. Rellena SU formulario web con la identidad indicada y arranca el cronómetro.",
+  "4. Atiende la llamada con la grabadora puesta; usa las 8 preguntas base + el foco específico del objetivo.",
+  "5. Pide SIEMPRE la propuesta por escrito y el contrato tipo.",
+  "6. Deja el seguimiento vivo 14 días sin responder del todo: cuenta los toques.",
+  "7. Sube todo a Drive (audio, PDFs, capturas) y rellena una línea de registro por contacto.",
+  "8. Cuando un objetivo esté completo, avisa: se transcribe y se vuelca a su ficha aquí (campos de mystery: respuesta, precio real, garantía real, presión, toques)."
+ ],
+ "registryTemplate": [
+  "Fecha y hora del formulario",
+  "Empresa objetivo",
+  "Identidad usada",
+  "Minutos hasta primera respuesta",
+  "Canal de respuesta",
+  "Precio ofrecido (desglosado)",
+  "Garantía ofrecida (palabras exactas)",
+  "¿Exclusividad? ¿Permanencia?",
+  "Presión de cierre (1-5) y táctica usada",
+  "Toques de seguimiento (nº y canales, 14 días)",
+  "Enlace a carpeta Drive con audios y documentos"
+ ],
+ "targets": [
+  {
+   "order": 1,
+   "id": "horizzon-media",
+   "name": "Horizzon Media",
+   "website": "https://horizzonmedia.com/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "inmobiliaria",
+   "focus": "Su garantía pública dice: «Mínimo de 40 leads de propietarios/mes; si faltan, prolonga la campaña gratis hasta completar. Reemplaza falsos, duplicados y fuera de zona. Exige contacto dili». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: 980 €/mes + IVA, publicidad incluida y sin alta. Anual: 980 €/mes con compromiso de 12 meses o 9.800 €/año + IVA pagados"
+  },
+  {
+   "order": 2,
+   "id": "premium-leads-grupo-vocento",
+   "name": "Premium Leads (grupo Vocento)",
+   "website": "https://www.premiumleads.com/",
+   "threat": "Alta",
+   "agencyType": "Lead broker / venta de leads",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «No se localizó garantía pública de volumen, validez, reemplazo o conversión a nivel suite.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Precio B2B por volumen/suite no publicado; requiere propuesta comercial."
+  },
+  {
+   "order": 3,
+   "id": "qdq-qdq-media",
+   "name": "qdq (QDQ Media)",
+   "website": "https://www.qdq.com/marketing-digital/planes-digitales",
+   "threat": "Alta",
+   "agencyType": "Generalista pymes",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «NINGUNA garantía de resultado publicada. Ni leads, ni CPL, ni devolución. Al contrario: la letra pequeña juega en contra. En quejas públicas se atribuye a sus c». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: TODOS PÚBLICOS Y LITERALES. PLANES DIGITALES: Impulsa 60€/mes · Desarrollo 95€/mes promo (regular 170€) · Visibilidad 15"
+  },
+  {
+   "order": 4,
+   "id": "bastida-y-farina-s-l",
+   "name": "Bastida&Farina S.L.",
+   "website": "https://www.bastidafarina.com/business/lead-generation",
+   "threat": "Alta",
+   "agencyType": "Multi-nicho especializada",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «\"Confiamos tanto en nuestro servicio que, si tras llamarte sientes que has perdido el tiempo, TE PAGAMOS TU COSTE POR HORA de nuestro propio bolsillo\". Más: \"Si». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: NINGUNO. Las únicas cifras en euros son resultados de clientes, no tarifas: 5.491 leads a 2€/lead, leads a 5€, leads a 4"
+  },
+  {
+   "order": 5,
+   "id": "inmoads",
+   "name": "INMOADS",
+   "website": "https://inmoads.es/",
+   "threat": "Alta",
+   "agencyType": "Software + servicio",
+   "identity": "inmobiliaria",
+   "focus": "Su garantía pública dice: «Promete 12 exclusivas off-market firmadas en 120 días o 50.000 € de facturación adicional; si no, devolución del 100 %. La web dice «sin condiciones», pero exig». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Tarifa propia no publicada. Solo comunica economía publicitaria de ejemplo: desde 10 €/día y CPL declarado de 5 € frente"
+  },
+  {
+   "order": 6,
+   "id": "auge-salud",
+   "name": "Auge Salud",
+   "website": "https://augesalud.es/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "dental",
+   "focus": "Su garantía pública dice: «Si no se cumplen objetivos escritos, devuelve sus honorarios; el gasto publicitario queda fuera. No publica objetivos estándar, periodo de medición, atribución,». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Fee oculto: setup + cuota mensual tras auditoría. Google Ads se paga aparte. No publica tarifa Essential/Growth/Auge, co"
+  },
+  {
+   "order": 7,
+   "id": "masnegocio",
+   "name": "MásNegocio",
+   "website": "https://www.masnegocio.es/",
+   "threat": "Alta",
+   "agencyType": "Software + servicio",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «Marketing: devolución si no logra reuniones cualificadas en 30 días. Términos: devolución solo si el servicio no cumple expectativas; definición ambigua.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Autónomos 99/299 €/mes; pyme 499/799/999/1.499 €/mes, sin IVA."
+  },
+  {
+   "order": 8,
+   "id": "360-clinic-consulting",
+   "name": "360 Clinic Consulting",
+   "website": "https://www.360clinicconsulting.com/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «Sin permanencia; LinkedIn usa claim 'paga solo por resultados'.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: 499 €/mes; 999 €/mes con web, SEO/AEO y contenidos. Ads aparte."
+  },
+  {
+   "order": 9,
+   "id": "agencialeads-net-agk-marketing-agency-llc",
+   "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
+   "website": "https://agencialeads.net/aviso-legal/",
+   "threat": "Alta",
+   "agencyType": "Lead broker / venta de leads",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «Contrato comercial prevé devolución si no se entregan leads en 30 días; reposición limitada y condiciones a revisar.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: No publica tarifa."
+  },
+  {
+   "order": 10,
+   "id": "agency-mdi",
+   "name": "Agency MDI",
+   "website": "https://agenciamdi.com/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "inmobiliaria",
+   "focus": "Su garantía pública dice: «Si en los primeros 90 días desde la puesta en marcha no se recupera la inversión en el servicio, MDI afirma que trabaja gratis hasta recuperarla. Condiciones vi». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Tarifa propia no publicada: implantación inicial + cuota mensual de gestión. La inversión en Meta Ads se paga directamen"
+  },
+  {
+   "order": 11,
+   "id": "eleva-digitals",
+   "name": "Eleva Digitals",
+   "website": "https://elevadigitals.es/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "inmobiliaria",
+   "focus": "Su garantía pública dice: «Promete operaciones cerradas en el periodo acordado o devolución de la inversión en servicios. No publica número/valor de operaciones, atribución, deberes de se». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Honorarios ocultos y personalizados por zona/servicios. Declara «sin suscripciones mensuales fijas», pero no publica est"
+  },
+  {
+   "order": 12,
+   "id": "generacion-leads-masterfy-lc",
+   "name": "Generación Leads (MASTERFY LC)",
+   "website": "https://generacionleads.es/",
+   "threat": "Alta",
+   "agencyType": "Lead broker / venta de leads",
+   "identity": "dental",
+   "focus": "Su garantía pública dice: «\"100% Garantizado — Si no lo conseguimos, te hacemos una devolución\" y \"si no cumplimos con lo prometido en cuanto a la generación constante de leads de alta ca». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: TARIFARIO PÚBLICO COMPLETO, 3 planes por subnicho con rango de leads incluidos. Los que pisan a RedVitalia: REFORMAS 449"
+  },
+  {
+   "order": 13,
+   "id": "markulia",
+   "name": "Markulia",
+   "website": "https://markulia.com/servicio/telemarketing-inmobiliario/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "inmobiliaria",
+   "focus": "Su garantía pública dice: «2–7 visitas/mes según plan.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Starter 695 €/mes; Digital 895 €; Pro 1.095 €; Business 1.495 €; sin IVA."
+  },
+  {
+   "order": 14,
+   "id": "qamezia",
+   "name": "Qamezia",
+   "website": "https://www.qamezia.com/dentistas",
+   "threat": "Alta",
+   "agencyType": "Software + servicio",
+   "identity": "dental",
+   "focus": "Su garantía pública dice: «Dental: si en 30 días no aparecen al menos cinco resultados medibles atribuibles —lead, cita, reseña, presupuesto cerrado o llamada desde Maps— devuelve el setu». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Productos distintos: Dental Boost 290 € + 19 €/mes opcional; Pack Optimización IA 390 € + 29 €/mes opcional; Web + Visib"
+  },
+  {
+   "order": 15,
+   "id": "reform-ads",
+   "name": "Reform.Ads",
+   "website": "https://www.reform-ads.com/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "reformas",
+   "focus": "Su garantía pública dice: «Reembolsa teléfono inexistente o usuario que niega haber solicitado información.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: CPL pactado; sin cuota ni alta. Alternativa 0 € por lead + porcentaje al facturar."
+  },
+  {
+   "order": 16,
+   "id": "doctoralia-grupo-docplanner",
+   "name": "Doctoralia (grupo Docplanner)",
+   "website": "https://pro.doctoralia.es/precios",
+   "threat": "Alta",
+   "agencyType": "Software + servicio",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «NINGUNA, Y LO DECLARAN POR ESCRITO. Textual de las reclamaciones recogidas en OCU: la empresa responde \"de forma automática que hay permanencia y que NO SE COMP». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: PÚBLICOS Y LITERALES, todos \"por mes + IVA, FACTURADOS ANUALMENTE\". ESPECIALISTAS: Starter 89€/mes + IVA (oferta 44,5€, "
+  },
+  {
+   "order": 17,
+   "id": "buda-marketing-buda-consultores-s-l",
+   "name": "Buda Marketing (Buda Consultores S.L.)",
+   "website": "https://budamarketing.es/mas-clientes-con-captacion/",
+   "threat": "Alta",
+   "agencyType": "Generalista pymes",
+   "identity": "dental",
+   "focus": "Su garantía pública dice: «NINGUNA garantía formal. Lo que sí hay es una PROMESA DE PLAZO repetida en todos los anuncios: \"PRIMEROS RESULTADOS EN 21 DÍAS\", complementada con \"Verás avance». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: NINGUNO para sus servicios de captación. Las únicas cifras: \"a menos de 14€ cada una\" (coste por oportunidad de un caso)"
+  },
+  {
+   "order": 18,
+   "id": "engrana",
+   "name": "Engrana",
+   "website": "https://engrana.es/",
+   "threat": "Alta",
+   "agencyType": "Software + servicio",
+   "identity": "reformas",
+   "focus": "Su garantía pública dice: «Guía/promoción promete resultado en 60 días o devolución de 89 €. Alcance y condiciones no visibles.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: 89 €/mes; setup cotizado aparte. La inversión en Meta no parece incluida."
+  },
+  {
+   "order": 19,
+   "id": "origen-agency",
+   "name": "Origen Agency",
+   "website": "https://origenagency.com/",
+   "threat": "Alta",
+   "agencyType": "Multi-nicho especializada",
+   "identity": "inmobiliaria",
+   "focus": "Su garantía pública dice: «Las reuniones fuera de criterios acordados no se facturan. No garantiza ventas; habla de un mínimo mensual adaptado al cliente sin publicar cifra. Faltan defini». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Para captación por reunión declara 0 € de setup/configuración y pago por reunión cualificada efectiva, pero oculta el im"
+  },
+  {
+   "order": 20,
+   "id": "acelera-tu-crm",
+   "name": "Acelera tu CRM",
+   "website": "https://aceleratucrm.com/marketing-agencias-inmobiliarias",
+   "threat": "Alta",
+   "agencyType": "Multi-nicho especializada",
+   "identity": "reformas",
+   "focus": "Su garantía pública dice: «No publica garantía contractual de resultados. Sí explica plazos esperados: primeros leads semanas 4–5, contratos de exclusiva 6–10 y ventas 10–20, dependientes». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Gestión orientativa, medios aparte: Esencial 1 canal desde 780 €/mes; Meta+Google+Sistema Completo desde 2.800 €/mes + i"
+  },
+  {
+   "order": 21,
+   "id": "clibel",
+   "name": "Clibel",
+   "website": "https://clibel.com/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "estetica",
+   "focus": "Su garantía pública dice: «Garantía contractual sin términos públicos.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Oculto."
+  },
+  {
+   "order": 22,
+   "id": "habitissimo",
+   "name": "Habitissimo",
+   "website": "https://www.habitissimo.es/premium",
+   "threat": "Alta",
+   "agencyType": "Lead broker / venta de leads",
+   "identity": "reformas",
+   "focus": "Su garantía pública dice: «Ninguna garantía de resultado ni de venta. Hay política de reclamación de contactos inválidos, pero según quejas de profesionales la devolución es EN CRÉDITO pa». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: PAGO POR CONTACTO, no cuota. Rango medio declarado en su propio centro de soporte: 12-14€ POR CONTACTO. Registro y perfi"
+  },
+  {
+   "order": 23,
+   "id": "ipro-agentes-ia-voz",
+   "name": "iPro / Agentes IA Voz",
+   "website": "https://agentesiavoz.com/",
+   "threat": "Alta",
+   "agencyType": "Software + servicio",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «Riesgo reducido por precio público, configuración sin coste extra y ausencia de permanencia. No se localizó garantía contractual de número de citas/ventas en la». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: iProChat 299€/mes; iProAsistente 349€/mes; iProSaliente 399€/mes; iProCapta 449€/mes. Setup e implementación incluidos. "
+  },
+  {
+   "order": 24,
+   "id": "ndemarketing",
+   "name": "NdeMarketing",
+   "website": "https://ndemarketing.com/",
+   "threat": "Alta",
+   "agencyType": "Vertical de un solo nicho",
+   "identity": "general",
+   "focus": "Su garantía pública dice: «Si en 90 días no recupera la inversión, trabaja 3 meses gratis.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: Oculto."
+  },
+  {
+   "order": 25,
+   "id": "placassolares-es-nettbureau",
+   "name": "PlacasSolares.es / Nettbureau",
+   "website": "https://placassolares.es/leads-placas-solares",
+   "threat": "Alta",
+   "agencyType": "Lead broker / venta de leads",
+   "identity": "solar",
+   "focus": "Su garantía pública dice: «No se localizó reposición pública; el consumidor busca hasta 3–4 ofertas, por lo que el lead no es exclusivo.». Comprobar si la sostienen de palabra y por contrato.",
+   "priceRef": "Precio público de referencia: CPL fijo para partners, pero importe exacto no publicado; se acuerda por geografía/categoría."
+  }
+ ]
+}

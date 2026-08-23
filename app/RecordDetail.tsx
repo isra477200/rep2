@@ -342,6 +342,8 @@ export default function RecordDetail({
     [companyDetail, companySummary],
   );
   const [analysisOpen, setAnalysisOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("record-identity");
+  const [fullScroll, setFullScroll] = useState(false);
   const [deepResult, setDeepResult] = useState<{
     companyId: string;
     value: DeepReview | null;
@@ -394,6 +396,18 @@ export default function RecordDetail({
     });
     if (open) setAnalysisOpen(true);
   };
+  /** Modo pestañas (por defecto): solo la sección activa está visible. */
+  const sectionClass = (id: string) =>
+    !fullScroll && activeSection === id ? "section-active" : undefined;
+  const goToSection = (id: string) => {
+    setActiveSection(id);
+    if (id === "record-analysis") setAnalysisOpen(true);
+    const section = document.getElementById(id);
+    if (section instanceof HTMLDetailsElement) section.open = true;
+    const url = new URL(window.location.href);
+    url.hash = id;
+    window.history.replaceState(window.history.state, "", url);
+  };
 
   const navigateToRecordSection = (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -405,6 +419,14 @@ export default function RecordDetail({
       !(section instanceof HTMLDetailsElement) ||
       !contentRef.current?.contains(section)
     ) {
+      return;
+    }
+
+    if (!fullScroll) {
+      goToSection(id);
+      window.requestAnimationFrame(() => {
+        contentRef.current?.scrollIntoView({ block: "start", behavior: "auto" });
+      });
       return;
     }
 
@@ -431,12 +453,17 @@ export default function RecordDetail({
 
   useEffect(() => {
     const id = window.location.hash.slice(1);
-    if (!id) return;
-    const section = document.getElementById(id);
-    if (section instanceof HTMLDetailsElement) {
-      section.open = true;
-      window.setTimeout(() => section.scrollIntoView({ block: "start" }), 80);
-    }
+    if (!id || !id.startsWith("record-")) return;
+    const frame = window.requestAnimationFrame(() => {
+      setActiveSection(id);
+      if (id === "record-analysis") setAnalysisOpen(true);
+      const section = document.getElementById(id);
+      if (section instanceof HTMLDetailsElement) {
+        section.open = true;
+        window.setTimeout(() => section.scrollIntoView({ block: "start" }), 80);
+      }
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, [company.id]);
 
   useEffect(() => {
@@ -638,41 +665,57 @@ export default function RecordDetail({
 
         <div className="record-toolbar">
           <span>Todos los campos de la ficha canónica, sin recortes</span>
-          <button onClick={() => setAllDetails(true)}>Expandir todo</button>
-          <button onClick={() => setAllDetails(false)}>Contraer todo</button>
+          <button
+            className={!fullScroll ? "mode-active" : undefined}
+            onClick={() => {
+              setFullScroll(false);
+            }}
+          >
+            Por secciones
+          </button>
+          <button
+            className={fullScroll ? "mode-active" : undefined}
+            onClick={() => {
+              setFullScroll(true);
+              setAllDetails(true);
+            }}
+          >
+            Todo en una página
+          </button>
+          {fullScroll && <button onClick={() => setAllDetails(false)}>Contraer todo</button>}
         </div>
 
         <div className="record-layout">
           <aside className="record-index">
             <p className="eyebrow">FICHA MADRE COMPLETA</p>
-            <a href="#record-identity" onClick={navigateToRecordSection}>
+            <a href="#record-identity" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-identity" ? "active" : undefined}>
               Identidad
             </a>
-            <a href="#record-offer" onClick={navigateToRecordSection}>
+            <a href="#record-offer" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-offer" ? "active" : undefined}>
               Oferta
             </a>
-            <a href="#record-price" onClick={navigateToRecordSection}>
+            <a href="#record-price" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-price" ? "active" : undefined}>
               Precio y contrato
             </a>
-            <a href="#record-acquisition" onClick={navigateToRecordSection}>
+            <a href="#record-acquisition" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-acquisition" ? "active" : undefined}>
               Captación
             </a>
-            <a href="#record-forensics-v3" onClick={navigateToRecordSection}>
+            <a href="#record-forensics-v3" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-forensics-v3" ? "active" : undefined}>
               Auditoría comercial profunda
             </a>
-            <a href="#record-forensics" onClick={navigateToRecordSection}>
+            <a href="#record-forensics" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-forensics" ? "active" : undefined}>
               Trazabilidad previa
             </a>
-            <a href="#record-position" onClick={navigateToRecordSection}>
+            <a href="#record-position" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-position" ? "active" : undefined}>
               Lectura RedVitalia
             </a>
-            <a href="#record-media" onClick={navigateToRecordSection}>
+            <a href="#record-media" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-media" ? "active" : undefined}>
               Galería
             </a>
-            <a href="#record-analysis" onClick={navigateToRecordSection}>
+            <a href="#record-analysis" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-analysis" ? "active" : undefined}>
               Dossier íntegro
             </a>
-            <a href="#record-sources" onClick={navigateToRecordSection}>
+            <a href="#record-sources" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-sources" ? "active" : undefined}>
               Fuentes
             </a>
             <div className="record-trust">
@@ -681,8 +724,8 @@ export default function RecordDetail({
             </div>
           </aside>
 
-          <div className="record-content" ref={contentRef}>
-            <details id="record-identity" open>
+          <div className={`record-content${fullScroll ? "" : " tabbed"}`} ref={contentRef}>
+            <details id="record-identity" open className={sectionClass("record-identity")}>
               <summary>
                 <span>01</span> Identidad, marca y precisión geográfica
               </summary>
@@ -758,7 +801,7 @@ export default function RecordDetail({
               </div>
             </details>
 
-            <details id="record-offer" open>
+            <details id="record-offer" open className={sectionClass("record-offer")}>
               <summary>
                 <span>02</span> Oferta, mercado y público
               </summary>
@@ -792,7 +835,7 @@ export default function RecordDetail({
               </div>
             </details>
 
-            <details id="record-price" open>
+            <details id="record-price" open className={sectionClass("record-price")}>
               <summary>
                 <span>03</span> Precio, contrato y riesgo
               </summary>
@@ -837,7 +880,7 @@ export default function RecordDetail({
               </div>
             </details>
 
-            <details id="record-acquisition" open>
+            <details id="record-acquisition" open className={sectionClass("record-acquisition")}>
               <summary>
                 <span>04</span> Captación, canales, campañas y funnel
               </summary>
@@ -874,7 +917,7 @@ export default function RecordDetail({
               </div>
             </details>
 
-            <details id="record-forensics-v3" open>
+            <details id="record-forensics-v3" open className={sectionClass("record-forensics-v3")}>
               <summary>
                 <span>05</span> Auditoría comercial profunda · funnel, voz, formularios
                 y economía
@@ -898,7 +941,7 @@ export default function RecordDetail({
               )}
             </details>
 
-            <details id="record-forensics" open>
+            <details id="record-forensics" open className={sectionClass("record-forensics")}>
               <summary>
                 <span>06</span> Trazabilidad previa conservada
               </summary>
@@ -1393,7 +1436,7 @@ export default function RecordDetail({
               )}
             </details>
 
-            <details id="record-position" open>
+            <details id="record-position" open className={sectionClass("record-position")}>
               <summary>
                 <span>06</span> Lectura estratégica RedVitalia
               </summary>
@@ -1417,7 +1460,7 @@ export default function RecordDetail({
               </div>
             </details>
 
-            <details id="record-media" open>
+            <details id="record-media" open className={sectionClass("record-media")}>
               <summary>
                 <span>07</span> Galería dentro de la ficha madre (
                 {company.media.length})
@@ -1494,6 +1537,7 @@ export default function RecordDetail({
 
             <details
               id="record-analysis"
+              className={sectionClass("record-analysis")}
               onToggle={(event) => setAnalysisOpen(event.currentTarget.open)}
             >
               <summary>
@@ -1524,7 +1568,7 @@ export default function RecordDetail({
               )}
             </details>
 
-            <details id="record-sources" open>
+            <details id="record-sources" open className={sectionClass("record-sources")}>
               <summary>
                 <span>09</span> Todas las fuentes públicas
                 {companyDetail === undefined ? " (cargando…)" : ` (${company.sources.length})`}
