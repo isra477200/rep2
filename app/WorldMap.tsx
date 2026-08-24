@@ -4,7 +4,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Map as MapLibreMap,
   Marker,
-  NavigationControl,
   Popup,
   ScaleControl,
   setWorkerUrl,
@@ -31,17 +30,27 @@ const precisionLabel = {
   sin_punto: "Sin punto inventado",
 } as const;
 
-/** Zoom a partir del cual los puntos se convierten en logos. */
-const LOGO_ZOOM = 3.1;
-/** Máximo de logos DOM simultáneos en pantalla (rendimiento). */
-const MAX_LOGO_MARKERS = 90;
-/** Ángulo áureo para la distribución en girasol de puntos solapados. */
-const GOLDEN_ANGLE = 2.399963229728653;
+/** Zoom a partir del cual aparecen logos individuales, sin ensuciar la vista mundial. */
+const LOGO_ZOOM = 4.15;
+/** Límite visual deliberado: el mapa debe seguir siendo legible al acercarse. */
+const MAX_LOGO_MARKERS = 42;
 
 type MapStatus = "loading" | "ready" | "fallback";
 
 function escapeHtml(value: string): string {
   return value.replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch] as string));
+}
+
+function companyPosition(company: Company): [number, number] | null {
+  const location = company.location;
+  if (!location || location.latitude === null || location.longitude === null) return null;
+  return [location.longitude, location.latitude];
+}
+
+function worldZoomForViewport(): number {
+  if (window.innerWidth <= 620) return 1.05;
+  if (window.innerWidth <= 900) return 1.32;
+  return 1.55;
 }
 
 export default function WorldMap({
@@ -52,6 +61,7 @@ export default function WorldMap({
   focusCountry,
   focusCompanyId,
   onOpen,
+  onExit,
 }: {
   companies: Company[];
   countries: Country[];
@@ -61,15 +71,18 @@ export default function WorldMap({
   focusCountry: string | null;
   focusCompanyId: string | null;
   onOpen: (company: Company) => void;
+  onExit: () => void;
 }) {
   const mapNode = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const markersRef = useRef<globalThis.Map<string, Marker>>(new globalThis.Map());
   const hoverPopupRef = useRef<Popup | null>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [status, setStatus] = useState<MapStatus>("loading");
   const [selectedCountry, setSelectedCountry] = useState(focusCountry || "España");
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
   const [listQuery, setListQuery] = useState("");
+  const [explorerOpen, setExplorerOpen] = useState(false);
   const selectedCompanyIdRef = useRef<string | null>(null);
 
   const countryCounts = useMemo(() => {
@@ -96,51 +109,6 @@ export default function WorldMap({
     [companies],
   );
 
-  /**
-   * Coordenadas ordenadas: las fichas que comparten exactamente el mismo punto
-   * (p. ej. el centroide de un país) se reparten en una espiral de girasol
-   * determinista alrededor del punto original, con la mejor puntuada en el centro.
-   * Así cada ficha tiene SU sitio en el mapa en vez de apilarse en un solo pixel.
-   */
-  const spreadPosition = useMemo(() => {
-    const groups = new Map<string, Company[]>();
-    for (const company of mapCompanies) {
-      const key = `${company.location!.latitude}|${company.location!.longitude}`;
-      const group = groups.get(key);
-      if (group) group.push(company);
-      else groups.set(key, [company]);
-    }
-    const positions = new Map<string, [number, number]>();
-    for (const group of groups.values()) {
-      group.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "es"));
-      const base = group[0].location!;
-      const baseLat = base.latitude!;
-      const baseLng = base.longitude!;
-      if (group.length === 1) {
-        positions.set(group[0].id, [baseLng, baseLat]);
-        continue;
-      }
-      const countryLevel = group.every((company) => company.location!.precision === "centro_pais_mercado");
-      const step = countryLevel
-        ? Math.min(0.15, Math.max(0.05, 2.3 / Math.sqrt(group.length)))
-        : 0.016;
-      const stretch = Math.min(3.4, 1 / Math.max(0.28, Math.cos((baseLat * Math.PI) / 180)));
-      group.forEach((company, index) => {
-        if (index === 0) {
-          positions.set(company.id, [baseLng, baseLat]);
-          return;
-        }
-        const radius = step * Math.sqrt(index);
-        const angle = index * GOLDEN_ANGLE;
-        positions.set(company.id, [
-          baseLng + Math.cos(angle) * radius * stretch,
-          baseLat + Math.sin(angle) * radius,
-        ]);
-      });
-    }
-    return positions;
-  }, [mapCompanies]);
-
   const unlocatedCompanies = useMemo(
     () => companies.filter((company) => !company.location || company.location.precision === "sin_punto"),
     [companies],
@@ -153,10 +121,57 @@ export default function WorldMap({
   );
   const filteredCompanies = useMemo(() => {
     const query = listQuery.trim().toLowerCase();
-    if (!query) return selectedCompanies;
-    return selectedCompanies.filter((company) => company.name.toLowerCase().includes(query));
-  }, [selectedCompanies, listQuery]);
+    const source = query ? companies : selectedCompanies;
+    return source
+      .filter((company) => {
+        if (!query) return true;
+        return [
+          company.name,
+          company.primaryCountry,
+          company.location?.canonicalMarket,
+          company.agencyType,
+        ].some((value) => value?.toLowerCase().includes(query));
+      })
+      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "es"));
+  }, [companies, selectedCompanies, listQuery]);
   const selectedCompany = selectedCompanyId ? companyById.get(selectedCompanyId) || null : null;
+
+  const reducedMotion = useCallback(
+    () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    [],
+  );
+
+  const resetWorld = useCallback(() => {
+    setSelectedCompanyId(null);
+    mapRef.current?.easeTo({
+      center: [2, 18],
+      zoom: worldZoomForViewport(),
+      pitch: 0,
+      bearing: 0,
+      duration: reducedMotion() ? 0 : 650,
+      essential: false,
+    });
+    mapNode.current?.focus({ preventScroll: true });
+  }, [reducedMotion]);
+
+  const nudgeMap = useCallback((x: number, y: number) => {
+    mapRef.current?.panBy([x, y], {
+      duration: reducedMotion() ? 0 : 360,
+      essential: false,
+    });
+    mapNode.current?.focus({ preventScroll: true });
+  }, [reducedMotion]);
+
+  const zoomMap = useCallback((delta: number) => {
+    const map = mapRef.current;
+    if (!map) return;
+    map.easeTo({
+      zoom: Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), map.getZoom() + delta)),
+      duration: reducedMotion() ? 0 : 380,
+      essential: false,
+    });
+    mapNode.current?.focus({ preventScroll: true });
+  }, [reducedMotion]);
 
   const flyToCountry = useCallback((name: string) => {
     const place = geoByName.get(name);
@@ -164,57 +179,77 @@ export default function WorldMap({
     setSelectedCountry(name);
     setSelectedCompanyId(null);
     setListQuery("");
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const reduced = reducedMotion();
     mapRef.current?.flyTo({
       center: [place.longitude, place.latitude],
-      zoom: 4.35,
-      pitch: reduced ? 0 : 42,
-      bearing: reduced ? 0 : -12,
-      duration: reduced ? 0 : 1900,
-      curve: 1.42,
+      zoom: 3.45,
+      pitch: 0,
+      bearing: 0,
+      duration: reduced ? 0 : 720,
+      curve: 1.15,
       essential: false,
     });
-  }, [geoByName]);
+  }, [geoByName, reducedMotion]);
 
   const flyToCompany = useCallback((company: Company) => {
     setSelectedCountry(company.location?.canonicalMarket || company.primaryCountry);
     setSelectedCompanyId(company.id);
     const location = company.location;
     if (!location || location.latitude === null || location.longitude === null) return;
-    const spread = spreadPosition.get(company.id);
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const position = companyPosition(company);
+    const reduced = reducedMotion();
     mapRef.current?.flyTo({
-      center: spread || [location.longitude, location.latitude],
-      zoom: Math.max(location.zoom || 8, LOGO_ZOOM + 2.4),
-      pitch: reduced ? 0 : location.precision === "centro_pais_mercado" ? 42 : 58,
-      bearing: reduced ? 0 : -24,
-      duration: reduced ? 0 : 2200,
-      curve: 1.55,
+      center: position || [location.longitude, location.latitude],
+      zoom: Math.min(9, Math.max(location.zoom || 7, LOGO_ZOOM + 1.35)),
+      pitch: 0,
+      bearing: 0,
+      duration: reduced ? 0 : 780,
+      curve: 1.2,
       essential: false,
     });
-  }, [spreadPosition]);
+  }, [reducedMotion]);
 
   /** Crea o actualiza los marcadores-logo visibles según viewport y zoom. */
   const syncLogoMarkers = useCallback(() => {
     const map = mapRef.current;
     if (!map || !map.isStyleLoaded() || !map.getLayer("company-points")) return;
     const markers = markersRef.current;
-    if (map.getZoom() < LOGO_ZOOM) {
-      for (const marker of markers.values()) marker.remove();
-      markers.clear();
-      return;
-    }
     const rendered = map.queryRenderedFeatures(undefined, { layers: ["company-points"] });
-    const seen = new Map<string, GeoJSON.Position>();
+    const seen = new Set<string>();
     for (const feature of rendered) {
       const id = String(feature.properties?.id || "");
-      if (id && !seen.has(id) && feature.geometry.type === "Point") seen.set(id, feature.geometry.coordinates);
+      if (id) seen.add(id);
     }
-    const chosen = [...seen.keys()]
-      .map((id) => companyById.get(id))
-      .filter((company): company is Company => Boolean(company))
-      .sort((a, b) => b.score - a.score)
-      .slice(0, MAX_LOGO_MARKERS);
+    let chosen: Company[] = [];
+    if (map.getZoom() >= LOGO_ZOOM) {
+      const occupiedLocations = new Set<string>();
+      chosen = [...seen]
+        .map((id) => companyById.get(id))
+        .filter((company): company is Company => Boolean(company))
+        .sort((a, b) => b.score - a.score)
+        .filter((company) => {
+          const position = companyPosition(company);
+          if (!position) return false;
+          const key = `${position[0].toFixed(5)}|${position[1].toFixed(5)}`;
+          if (occupiedLocations.has(key)) return false;
+          occupiedLocations.add(key);
+          return true;
+        })
+        .slice(0, MAX_LOGO_MARKERS);
+    }
+    const selected = selectedCompanyIdRef.current
+      ? companyById.get(selectedCompanyIdRef.current) || null
+      : null;
+    if (selected && companyPosition(selected)) {
+      const selectedPosition = companyPosition(selected)!;
+      const selectedKey = `${selectedPosition[0].toFixed(5)}|${selectedPosition[1].toFixed(5)}`;
+      chosen = chosen.filter((company) => {
+        const position = companyPosition(company);
+        return !position || `${position[0].toFixed(5)}|${position[1].toFixed(5)}` !== selectedKey;
+      });
+      chosen.unshift(selected);
+      chosen = chosen.slice(0, MAX_LOGO_MARKERS);
+    }
     const keep = new Set(chosen.map((company) => company.id));
     for (const [id, marker] of markers) {
       if (!keep.has(id)) {
@@ -224,7 +259,7 @@ export default function WorldMap({
     }
     for (const company of chosen) {
       if (markers.has(company.id)) continue;
-      const position = spreadPosition.get(company.id);
+      const position = companyPosition(company);
       if (!position) continue;
       const element = document.createElement("button");
       element.type = "button";
@@ -255,14 +290,15 @@ export default function WorldMap({
       const marker = new Marker({ element, anchor: "center" }).setLngLat(position as [number, number]).addTo(map);
       markers.set(company.id, marker);
     }
-  }, [companyById, flyToCompany, logos, spreadPosition]);
+  }, [companyById, flyToCompany, logos]);
 
   useEffect(() => {
     selectedCompanyIdRef.current = selectedCompanyId;
     for (const [id, marker] of markersRef.current) {
       marker.getElement().classList.toggle("selected", id === selectedCompanyId);
     }
-  }, [selectedCompanyId]);
+    syncLogoMarkers();
+  }, [selectedCompanyId, syncLogoMarkers]);
 
   useEffect(() => {
     if (!mapNode.current || mapRef.current) return;
@@ -278,7 +314,7 @@ export default function WorldMap({
         type: "Feature",
         geometry: {
           type: "Point",
-          coordinates: spreadPosition.get(company.id) || [company.location!.longitude!, company.location!.latitude!],
+          coordinates: companyPosition(company)!,
         },
         properties: {
           id: company.id,
@@ -295,21 +331,22 @@ export default function WorldMap({
       container: mapNode.current,
       style: "https://tiles.openfreemap.org/styles/dark",
       center: [2, 18],
-      zoom: 1.22,
-      pitch: 8,
-      maxZoom: 15.5,
+      zoom: worldZoomForViewport(),
+      pitch: 0,
+      bearing: 0,
+      maxZoom: 12.5,
       attributionControl: { compact: true },
-      cooperativeGestures: true,
-      fadeDuration: 90,
-      locale: {
-        "NavigationControl.ZoomIn": "Acercar",
-        "NavigationControl.ZoomOut": "Alejar",
-        "NavigationControl.ResetBearing": "Restablecer orientación",
-      },
+      cooperativeGestures: false,
+      dragRotate: false,
+      pitchWithRotate: false,
+      touchPitch: false,
+      keyboard: false,
+      fadeDuration: 140,
     });
     mapRef.current = map;
-    map.addControl(new NavigationControl({ visualizePitch: true }), "top-right");
     map.addControl(new ScaleControl({ unit: "metric" }), "bottom-left");
+    map.scrollZoom.setWheelZoomRate(1 / 900);
+    map.touchZoomRotate.disableRotation();
 
     const loadTimeout = window.setTimeout(() => {
       if (!map.loaded()) setStatus("fallback");
@@ -334,7 +371,7 @@ export default function WorldMap({
         data: collection,
         cluster: true,
         clusterMaxZoom: Math.ceil(LOGO_ZOOM) + 1,
-        clusterRadius: 44,
+        clusterRadius: 58,
       });
       map.addLayer({
         id: "company-cluster-halo",
@@ -342,9 +379,9 @@ export default function WorldMap({
         source: "company-locations",
         filter: ["has", "point_count"],
         paint: {
-          "circle-color": "rgba(66,133,244,.18)",
-          "circle-radius": ["step", ["get", "point_count"], 26, 10, 32, 40, 40, 100, 50],
-          "circle-blur": 0.55,
+          "circle-color": "rgba(91,143,224,.13)",
+          "circle-radius": ["step", ["get", "point_count"], 21, 10, 25, 40, 31, 100, 37],
+          "circle-blur": 0.68,
         },
       });
       map.addLayer({
@@ -353,11 +390,11 @@ export default function WorldMap({
         source: "company-locations",
         filter: ["has", "point_count"],
         paint: {
-          "circle-color": ["step", ["get", "point_count"], "#4285f4", 10, "#1a73e8", 40, "#0b57d0", 100, "#083f9a"],
-          "circle-radius": ["step", ["get", "point_count"], 17, 10, 22, 40, 28, 100, 35],
-          "circle-stroke-width": 2,
-          "circle-stroke-color": "rgba(232,240,254,.9)",
-          "circle-opacity": 0.96,
+          "circle-color": ["step", ["get", "point_count"], "#4b7fc8", 10, "#356ebd", 40, "#285da9", 100, "#1f4c8d"],
+          "circle-radius": ["step", ["get", "point_count"], 14, 10, 18, 40, 22, 100, 27],
+          "circle-stroke-width": 1.5,
+          "circle-stroke-color": "rgba(231,240,253,.72)",
+          "circle-opacity": 0.92,
         },
       });
       map.addLayer({
@@ -365,7 +402,7 @@ export default function WorldMap({
         type: "symbol",
         source: "company-locations",
         filter: ["has", "point_count"],
-        layout: { "text-field": ["get", "point_count_abbreviated"], "text-font": ["Noto Sans Bold"], "text-size": 13, "text-allow-overlap": true },
+        layout: { "text-field": ["get", "point_count_abbreviated"], "text-font": ["Noto Sans Bold"], "text-size": 11, "text-allow-overlap": true },
         paint: { "text-color": "#ffffff", "text-halo-color": "#0a2a5e", "text-halo-width": 1 },
       });
       map.addLayer({
@@ -381,10 +418,10 @@ export default function WorldMap({
             "centro_pais_mercado", "#fbbc04",
             "#94a3b8",
           ],
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 5.5, 5, 8, 10, 11],
-          "circle-stroke-width": 2.5,
-          "circle-stroke-color": "rgba(244,255,249,.92)",
-          "circle-opacity": 0.94,
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 4, 5, 6.5, 10, 9],
+          "circle-stroke-width": 1.5,
+          "circle-stroke-color": "rgba(244,255,249,.8)",
+          "circle-opacity": 0.88,
         },
       });
       setStatus("ready");
@@ -394,34 +431,19 @@ export default function WorldMap({
     map.on("moveend", syncLogoMarkers);
     map.on("idle", syncLogoMarkers);
 
-    /* Rotación suave del globo en la vista mundial, hasta que el usuario toca. */
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let spinning = !reducedMotion;
-    const stopSpin = () => { spinning = false; };
-    map.on("mousedown", stopSpin);
-    map.on("touchstart", stopSpin);
-    map.on("wheel", stopSpin);
-    const spin = () => {
-      if (!spinning || map.getZoom() > 2.2) return;
-      const center = map.getCenter();
-      center.lng += 14;
-      map.easeTo({ center, duration: 9000, easing: (t) => t, essential: false });
-    };
-    map.on("moveend", spin);
-    map.once("idle", spin);
-
     map.on("click", "company-clusters", async (event: MapLayerMouseEvent) => {
       const feature = event.features?.[0];
       if (!feature || feature.geometry.type !== "Point") return;
       const clusterId = Number(feature.properties?.cluster_id);
       const source = map.getSource("company-locations") as GeoJSONSource;
       const zoom = await source.getClusterExpansionZoom(clusterId);
-      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const reduced = reducedMotion();
       map.easeTo({
         center: feature.geometry.coordinates as [number, number],
         zoom: Math.min(Math.max(zoom, LOGO_ZOOM + 0.4), 13),
-        pitch: reduced ? 0 : 48,
-        duration: reduced ? 0 : 1300,
+        pitch: 0,
+        bearing: 0,
+        duration: reduced ? 0 : 620,
       });
     });
     map.on("click", "company-points", (event: MapLayerMouseEvent) => {
@@ -462,13 +484,50 @@ export default function WorldMap({
       map.remove();
       mapRef.current = null;
     };
-  }, [companyById, flyToCompany, mapCompanies, spreadPosition, syncLogoMarkers]);
+  }, [companyById, flyToCompany, mapCompanies, reducedMotion, syncLogoMarkers]);
 
   useEffect(() => {
-    if (!focusCountry || !geoByName.has(focusCountry)) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
+      if (
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLSelectElement ||
+        target instanceof HTMLTextAreaElement ||
+        target?.isContentEditable ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.altKey
+      ) return;
+
+      const key = event.key.toLowerCase();
+      if (key === "arrowleft" || key === "a") nudgeMap(-170, 0);
+      else if (key === "arrowright" || key === "d") nudgeMap(170, 0);
+      else if (key === "arrowup" || key === "w") nudgeMap(0, -140);
+      else if (key === "arrowdown" || key === "s") nudgeMap(0, 140);
+      else if (key === "+" || key === "=") zoomMap(0.8);
+      else if (key === "-" || key === "_") zoomMap(-0.8);
+      else if (key === "r" || key === "0") resetWorld();
+      else if (key === "escape") {
+        setExplorerOpen(false);
+        setSelectedCompanyId(null);
+      } else return;
+      event.preventDefault();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [nudgeMap, resetWorld, zoomMap]);
+
+  useEffect(() => {
+    if (!explorerOpen) return;
+    const frame = window.requestAnimationFrame(() => searchInputRef.current?.focus());
+    return () => window.cancelAnimationFrame(frame);
+  }, [explorerOpen]);
+
+  useEffect(() => {
+    if (focusCompanyId || !focusCountry || !geoByName.has(focusCountry)) return;
     const frame = window.requestAnimationFrame(() => flyToCountry(focusCountry));
     return () => window.cancelAnimationFrame(frame);
-  }, [focusCountry, flyToCountry, geoByName]);
+  }, [focusCompanyId, focusCountry, flyToCountry, geoByName]);
 
   useEffect(() => {
     if (!focusCompanyId || status === "loading") return;
@@ -482,86 +541,182 @@ export default function WorldMap({
   }, [companyById, flyToCompany, focusCompanyId, status]);
 
   return (
-    <section className="world-map-shell" aria-label="Mapa mundial de competidores y precisión de ubicación">
+    <section className="world-map-shell" aria-label="Mapa mundial interactivo de empresas">
       <div className="world-map-stage">
-        <div ref={mapNode} tabIndex={-1} className={`world-map-canvas${status === "fallback" ? " map-hidden" : ""}`} aria-label={`Globo 3D interactivo con ${mapCompanies.length} competidores localizables`} />
-        {status === "loading" && <div className="map-loading"><span /><b>Preparando el globo 3D…</b><small>Cargando puntos, logos y precisión verificada</small></div>}
-        {status === "fallback" && <div className="map-fallback" role="status"><b>La vista 3D no está disponible en este dispositivo</b><p>La lista lateral conserva todas las fichas del catálogo y abre la misma información.</p></div>}
-        <div className="map-legend" aria-label="Leyenda de precisión">
-          <span><i className="exact" /> Punto publicado</span>
-          <span><i className="city" /> Centro de ciudad</span>
-          <span><i className="market" /> País / mercado</span>
-          <span><i className="cluster" /> Agrupación</span>
-          <span><i className="logo" /> Logo = ficha con identidad visual</span>
-          <small>Ningún punto se presenta como sede central confirmada. Los puntos de un mismo territorio se reparten alrededor de su centro para poder distinguirlos.</small>
-        </div>
-        <button className="map-reset" onClick={() => {
-          const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-          mapRef.current?.flyTo({ center: [2, 18], zoom: 1.22, pitch: reduced ? 0 : 8, bearing: 0, duration: reduced ? 0 : 1200 });
-        }}>Ver mundo completo</button>
-      </div>
+        <div
+          ref={mapNode}
+          role="region"
+          aria-roledescription="mapa interactivo"
+          className={`world-map-canvas${status === "fallback" ? " map-hidden" : ""}`}
+          aria-label={`Mundo interactivo con ${mapCompanies.length} empresas localizables. Usa las flechas o WASD para desplazarte, más y menos para cambiar el zoom.`}
+        />
 
-      <aside className="map-panel">
-        {selectedCompany ? (
-          <article className="map-selected-company" aria-live="polite">
-            <CompanyLogo company={selectedCompany} logos={logos} size="medium" />
-            <div>
-              <p className="eyebrow">PUNTO SELECCIONADO</p>
-              <h2>{selectedCompany.name}</h2>
-              <span className={`precision-badge ${selectedCompany.location?.precision || "sin_punto"}`}>{precisionLabel[selectedCompany.location?.precision || "sin_punto"]}</span>
-              <p>{selectedCompany.location?.locationLabel}</p>
-              {takeaways?.[selectedCompany.id] && (
-                <p className="map-takeaway">
-                  <b>Qué me llevo:</b> {takeaways[selectedCompany.id].t}
-                </p>
-              )}
-              <small>{selectedCompany.location?.limitation}</small>
-            </div>
-            <button className="primary-action" onClick={() => onOpen(selectedCompany)}>Abrir ficha completa →</button>
-          </article>
-        ) : (
-          <div className="map-panel-head">
-            <p className="eyebrow">TERRITORIO SELECCIONADO</p>
-            <h2>{geoByName.get(selectedCountry)?.flag} {selectedCountry}</h2>
-            <p>{selectedCompanies.length} ubicaciones públicas vinculadas. El catálogo separa además los mercados comerciales atendidos.</p>
+        {status === "loading" && (
+          <div className="map-loading">
+            <span />
+            <b>Preparando el mundo…</b>
+            <small>Ordenando territorios y empresas para que puedas explorarlos con calma</small>
           </div>
         )}
-        <label className="map-country-picker">
-          Ir a un territorio
-          <select value={selectedCountry} onChange={(event) => flyToCountry(event.target.value)}>
-            {[...visibleGeo]
-              .sort((a, b) => (countryCounts.get(b.name) || specialCount(b.name)) - (countryCounts.get(a.name) || specialCount(a.name)) || a.name.localeCompare(b.name, "es"))
-              .map((place) => (
-                <option key={place.name} value={place.name}>{place.flag} {place.name} · {countryCounts.get(place.name) || specialCount(place.name)}</option>
-              ))}
-          </select>
-        </label>
-        <label className="map-list-search">
-          <span className="visually-hidden">Filtrar fichas del territorio</span>
-          <input
-            type="search"
-            value={listQuery}
-            placeholder={`Filtrar ${selectedCompanies.length} fichas…`}
-            onChange={(event) => setListQuery(event.target.value)}
-          />
-        </label>
-        <div className="map-company-list">
-          {filteredCompanies.map((company) => (
-            <button key={company.id} onClick={() => flyToCompany(company)} aria-label={`Volar hasta ${company.name} y mostrar su precisión`} className={selectedCompanyId === company.id ? "selected" : ""}>
-              <CompanyLogo company={company} logos={logos} size="small" />
-              <span><strong>{company.name}</strong><small>{precisionLabel[company.location?.precision || "sin_punto"]} · {company.agencyType || company.scope}</small></span>
-              <b>{company.score}</b>
-            </button>
-          ))}
-          {filteredCompanies.length === 0 && <p className="map-list-empty">Ninguna ficha coincide con el filtro.</p>}
-        </div>
-        {unlocatedCompanies.length > 0 && (
-          <details className="map-global">
-            <summary>{unlocatedCompanies.length} modelos sin punto inventado</summary>
-            {unlocatedCompanies.map((company) => <button key={company.id} onClick={() => onOpen(company)}>{company.name}<span>↗</span></button>)}
-          </details>
+        {status === "fallback" && (
+          <div className="map-fallback" role="status">
+            <b>El mapa no está disponible en este dispositivo</b>
+            <p>Abre el explorador de empresas para acceder a las mismas fichas.</p>
+          </div>
         )}
-      </aside>
+
+        <header className="map-command-bar">
+          <button className="map-exit" onClick={onExit} aria-label="Volver al portal">
+            <span aria-hidden="true">←</span>
+            <b>Portal</b>
+          </button>
+          <div className="map-world-title">
+            <span className="map-brandmark">RV</span>
+            <div>
+              <strong>Mapa mundial</strong>
+              <small>{mapCompanies.length} empresas ubicadas · navega sin prisa</small>
+            </div>
+          </div>
+          <button
+            className={`map-explorer-toggle${explorerOpen ? " active" : ""}`}
+            onClick={() => setExplorerOpen((current) => !current)}
+            aria-expanded={explorerOpen}
+            aria-controls="map-explorer"
+          >
+            <span aria-hidden="true">⌕</span>
+            Explorar empresas
+            <b>{companies.length}</b>
+          </button>
+        </header>
+
+        <nav className="map-camera-controls" aria-label="Controles del mapa">
+          <div className="map-zoom-stack">
+            <button onClick={() => zoomMap(0.8)} aria-label="Ampliar mapa" title="Ampliar (+)">+</button>
+            <button onClick={() => zoomMap(-0.8)} aria-label="Reducir mapa" title="Reducir (-)">−</button>
+            <button onClick={resetWorld} aria-label="Ver el mundo completo" title="Mundo completo (R)">◎</button>
+          </div>
+          <div className="map-pan-pad" aria-label="Desplazar el mapa">
+            <span />
+            <button onClick={() => nudgeMap(0, -140)} aria-label="Mover hacia arriba" title="Arriba (W o flecha)">↑</button>
+            <span />
+            <button onClick={() => nudgeMap(-170, 0)} aria-label="Mover hacia la izquierda" title="Izquierda (A o flecha)">←</button>
+            <i aria-hidden="true">•</i>
+            <button onClick={() => nudgeMap(170, 0)} aria-label="Mover hacia la derecha" title="Derecha (D o flecha)">→</button>
+            <span />
+            <button onClick={() => nudgeMap(0, 140)} aria-label="Mover hacia abajo" title="Abajo (S o flecha)">↓</button>
+            <span />
+          </div>
+        </nav>
+
+        <div className="map-navigation-guide" role="note" aria-label="Guía para navegar por el mundo">
+          <div>
+            <span>CONTROLES</span>
+            <strong>Arrastra el mundo o usa el teclado</strong>
+          </div>
+          <div className="map-key-guide">
+            <span><kbd>WASD</kbd><kbd>← ↑ ↓ →</kbd> Mover</span>
+            <span><kbd>+</kbd><kbd>−</kbd> Ampliar / reducir</span>
+            <span><kbd>R</kbd> Mundo completo</span>
+          </div>
+        </div>
+
+        <details className="map-legend">
+          <summary>Qué significa cada punto</summary>
+          <div>
+            <span><i className="exact" /> Punto publicado</span>
+            <span><i className="city" /> Centro de ciudad</span>
+            <span><i className="market" /> País / mercado</span>
+            <span><i className="cluster" /> Varias empresas</span>
+          </div>
+          <small>El mapa diferencia ubicaciones públicas de referencias aproximadas y nunca inventa una sede.</small>
+        </details>
+
+        {selectedCompany && (
+          <article className="map-selected-company" aria-live="polite">
+            <button className="map-selection-close" onClick={() => setSelectedCompanyId(null)} aria-label="Cerrar empresa seleccionada">×</button>
+            <CompanyLogo company={selectedCompany} logos={logos} size="medium" />
+            <div>
+              <p className="eyebrow">EMPRESA EN EL MAPA</p>
+              <h2>{selectedCompany.name}</h2>
+              <span className={`precision-badge ${selectedCompany.location?.precision || "sin_punto"}`}>
+                {precisionLabel[selectedCompany.location?.precision || "sin_punto"]}
+              </span>
+              <p>{selectedCompany.location?.locationLabel}</p>
+            </div>
+            {takeaways?.[selectedCompany.id] && (
+              <p className="map-takeaway"><b>Lectura RedVitalia:</b> {takeaways[selectedCompany.id].t}</p>
+            )}
+            <button className="primary-action" onClick={() => onOpen(selectedCompany)}>Abrir ficha completa <span>→</span></button>
+          </article>
+        )}
+
+        {explorerOpen && (
+          <aside id="map-explorer" className="map-explorer" aria-label="Explorador de empresas">
+            <header>
+              <div>
+                <p className="eyebrow">EXPLORADOR</p>
+                <h2>Encuentra y visita</h2>
+                <small>Elige un territorio o busca cualquier empresa.</small>
+              </div>
+              <button onClick={() => setExplorerOpen(false)} aria-label="Cerrar explorador">×</button>
+            </header>
+            <label className="map-country-picker">
+              Territorio
+              <select value={selectedCountry} onChange={(event) => flyToCountry(event.target.value)}>
+                {[...visibleGeo]
+                  .sort((a, b) => (countryCounts.get(b.name) || specialCount(b.name)) - (countryCounts.get(a.name) || specialCount(a.name)) || a.name.localeCompare(b.name, "es"))
+                  .map((place) => (
+                    <option key={place.name} value={place.name}>{place.flag} {place.name} · {countryCounts.get(place.name) || specialCount(place.name)}</option>
+                  ))}
+              </select>
+            </label>
+            <label className="map-list-search">
+              <span className="visually-hidden">Buscar empresa o mercado</span>
+              <input
+                ref={searchInputRef}
+                type="search"
+                value={listQuery}
+                placeholder="Buscar empresa o mercado…"
+                onChange={(event) => setListQuery(event.target.value)}
+              />
+            </label>
+            <p className="map-list-context">
+              {listQuery.trim()
+                ? `${filteredCompanies.length} coincidencias globales`
+                : `${geoByName.get(selectedCountry)?.flag || ""} ${selectedCountry} · ${selectedCompanies.length} empresas`}
+            </p>
+            <div className="map-company-list">
+              {filteredCompanies.slice(0, 120).map((company) => (
+                <button
+                  key={company.id}
+                  onClick={() => {
+                    flyToCompany(company);
+                    setExplorerOpen(false);
+                  }}
+                  aria-label={`Ir a ${company.name} en el mapa`}
+                  className={selectedCompanyId === company.id ? "selected" : ""}
+                >
+                  <CompanyLogo company={company} logos={logos} size="small" />
+                  <span>
+                    <strong>{company.name}</strong>
+                    <small>{company.location?.canonicalMarket || company.primaryCountry} · {precisionLabel[company.location?.precision || "sin_punto"]}</small>
+                  </span>
+                  <b>{company.score}</b>
+                </button>
+              ))}
+              {filteredCompanies.length > 120 && <p className="map-list-empty">Refina la búsqueda para ver las demás coincidencias.</p>}
+              {filteredCompanies.length === 0 && <p className="map-list-empty">No hay coincidencias.</p>}
+            </div>
+            {unlocatedCompanies.length > 0 && (
+              <details className="map-global">
+                <summary>{unlocatedCompanies.length} fichas sin punto inventado</summary>
+                {unlocatedCompanies.map((company) => <button key={company.id} onClick={() => onOpen(company)}>{company.name}<span>↗</span></button>)}
+              </details>
+            )}
+            <p className="map-explorer-note">Las agrupaciones mantienen el mundo limpio. Pulsa una para acercarte y descubrir sus empresas.</p>
+          </aside>
+        )}
+      </div>
     </section>
   );
 }

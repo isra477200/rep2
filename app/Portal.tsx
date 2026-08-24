@@ -1511,7 +1511,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     ?? Number(((auditedPriceRecords / summary.companies) * 100).toFixed(1));
 
   return (
-    <main className={`app-shell${navCollapsed ? " nav-collapsed" : ""}`}>
+    <main className={`app-shell${navCollapsed ? " nav-collapsed" : ""}${view === "map" ? " map-mode" : ""}`}>
       <aside className={`sidebar${navCollapsed ? " collapsed" : ""}`}>
         <div className="side-top">
           <button className="brand" onClick={() => go("home")}>
@@ -3774,16 +3774,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
 
         {view === "map" && (
           <div className="view map-view">
-            <section className="page-head map-page-head">
-              <p className="eyebrow">CARTOGRAFÍA ESTRATÉGICA</p>
-              <h1>Un globo 3D para volar hasta cada competidor</h1>
-              <p>
-                Pulsa un punto, una agrupación o el selector territorial. El
-                vuelo distingue puntos publicados, centros de ciudad y simples
-                referencias de país o mercado. Desde cada punto puedes abrir su
-                ficha madre completa.
-              </p>
-            </section>
             <Suspense
               fallback={
                 <div className="map-loading inline-map-loading">
@@ -3802,14 +3792,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 focusCountry={focusCountry}
                 focusCompanyId={focusCompanyId}
                 onOpen={openCompany}
+                onExit={() => go("home")}
               />
             </Suspense>
-            <p className="source-note">
-              Geolocalización auditada: 67 puntos publicados por la empresa,
-              107 centros de ciudad derivados, 535 centros de país o mercado y
-              3 fichas sin punto inventado. Ninguno se presenta como sede
-              central confirmada.
-            </p>
           </div>
         )}
 
