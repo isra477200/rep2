@@ -80,6 +80,7 @@ export type Company = {
   legal: string;
   review: string;
   reviewedAt: string | null;
+  addedAt?: string;
   sources: string[];
   body: string;
   media: Media[];
@@ -230,6 +231,52 @@ export type VigilanciaData = {
   nota: string;
   semaforo: Array<{ id: string; name: string; agencyType: string; threat: string; score: number; adsActive: boolean; metaAds: number; googleAds: number; pricePublic: boolean; priceLocal: string; hasGuarantee: boolean; nivel: "rojo" | "ambar" | "verde" }>;
   grupos: Array<{ grupo: string; evidencia: string; etiqueta: string; marcas: Array<{ id: string; name: string; country: string; score: number }> }>;
+};
+
+export type CrucesData = {
+  generatedAt: string;
+  nota: string;
+  elasticidadGarantia: Array<{ label: string; n: number; medianEur: number | null }>;
+  titularPorVertical: Array<{ vertical: string; winners: number; top: Array<{ formula: string; n: number }> }>;
+  curvaEspana: { total: number; buckets: Array<{ rango: string; n: number }>; hueco: { rango: string; n: number } | null };
+  madurez: Array<{ pais: string; n: number; precioPublico: number; garantia: number; adsActivos: number; indice: number }>;
+  promesaRemedio: { celdas: Array<{ promesa: string; remedio: string; n: number; espana: number }>; huecosEspana: Array<{ promesa: string; remedio: string; n: number; espana: number }> };
+  contradicciones: Array<{ id: string; name: string; country: string; score: number; flags: string[] }>;
+  adn: { nTop: number; rasgos: Array<{ rasgo: string; pctTop: number; pctBase: number }> };
+  delta10x: { nBaratos: number; nCaros: number; rasgos: Array<{ rasgo: string; baratos: number; caros: number; delta: number }> };
+  promesasPais: Array<{ pais: string; n: number; dominante: string; nDominante: number }>;
+  fragilidad: Array<{ id: string; name: string; agencyType: string; score: number; puntos: number; razones: string[] }>;
+  lexico: Array<{ vertical: string; n: number; bigramas: Array<{ b: string; n: number }> }>;
+  slas: { total: number; top: Array<{ id: string; name: string; country: string; score: number; sla: string; minutos: number }> };
+  findings: string[];
+};
+
+export type AnuncioReal = {
+  file: string;
+  id: string;
+  name: string;
+  plataforma: string;
+  titular: string;
+  texto: string;
+  cta: string;
+  precioVisible: string;
+  angulo: string;
+  vertical?: string;
+  capturaEnVivo?: boolean;
+  fecha?: string;
+};
+export type AnunciosRealesData = { generatedAt: string; nota: string; total: number; items: AnuncioReal[] };
+
+export type AngulosData = {
+  generatedAt: string;
+  nota: string;
+  total: number;
+  enVivo: number;
+  plataformas: Array<{ label: string; n: number }>;
+  topAngulos: Array<{ label: string; n: number }>;
+  topCtas: Array<{ label: string; n: number }>;
+  senales: Array<{ label: string; n: number; pct: number }>;
+  findings: string[];
 };
 
 export type HomesTimelineData = {

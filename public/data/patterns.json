@@ -1,6 +1,6 @@
 {
  "generatedAt": "23/08/2026",
- "universe": 938,
+ "universe": 963,
  "winnersN": 152,
  "winnersProfile": {
   "n": 152,
@@ -11,24 +11,24 @@
   "medianEur": 162
  },
  "restProfile": {
-  "n": 786,
-  "adsActivePct": 23,
+  "n": 811,
+  "adsActivePct": 26,
   "pricePublicPct": 18,
   "guaranteePct": 77,
-  "multiMarketPct": 43,
-  "medianEur": 139
+  "multiMarketPct": 42,
+  "medianEur": 149
  },
  "modelStats": [
   {
    "id": "mensualidad",
    "label": "Cuota mensual / retainer",
-   "n": 374,
+   "n": 391,
    "medianEur": 250,
-   "pricedN": 131,
-   "adsActivePct": 43,
+   "pricedN": 136,
+   "adsActivePct": 45,
    "guaranteePct": 92,
-   "winnersPct": 24,
-   "avgScore": 38,
+   "winnersPct": 23,
+   "avgScore": 39,
    "examples": [
     {
      "id": "clozer",
@@ -59,10 +59,10 @@
   {
    "id": "no-clasificable",
    "label": "Sin señal pública de modelo de cobro",
-   "n": 356,
+   "n": 358,
    "medianEur": 56,
    "pricedN": 13,
-   "adsActivePct": 9,
+   "adsActivePct": 10,
    "guaranteePct": 60,
    "winnersPct": 4,
    "avgScore": 7,
@@ -96,12 +96,12 @@
   {
    "id": "por-lead",
    "label": "Pago por lead",
-   "n": 56,
-   "medianEur": 27,
-   "pricedN": 20,
-   "adsActivePct": 36,
+   "n": 57,
+   "medianEur": 25,
+   "pricedN": 21,
+   "adsActivePct": 37,
    "guaranteePct": 98,
-   "winnersPct": 34,
+   "winnersPct": 33,
    "avgScore": 44,
    "examples": [
     {
@@ -133,13 +133,13 @@
   {
    "id": "directorio",
    "label": "Directorio / marketplace (suscripción o comisión)",
-   "n": 55,
+   "n": 56,
    "medianEur": 20,
    "pricedN": 5,
-   "adsActivePct": 18,
+   "adsActivePct": 20,
    "guaranteePct": 84,
    "winnersPct": 7,
-   "avgScore": 9,
+   "avgScore": 10,
    "examples": [
     {
      "id": "nocowboys",
@@ -170,12 +170,12 @@
   {
    "id": "por-cita",
    "label": "Pago por cita / reunión válida",
-   "n": 45,
+   "n": 47,
    "medianEur": 425,
    "pricedN": 23,
-   "adsActivePct": 27,
+   "adsActivePct": 30,
    "guaranteePct": 100,
-   "winnersPct": 27,
+   "winnersPct": 26,
    "avgScore": 32,
    "examples": [
     {
@@ -207,12 +207,12 @@
   {
    "id": "exito",
    "label": "100% a éxito (cobra solo si hay resultado)",
-   "n": 42,
+   "n": 43,
    "medianEur": 54,
    "pricedN": 15,
-   "adsActivePct": 48,
+   "adsActivePct": 49,
    "guaranteePct": 100,
-   "winnersPct": 29,
+   "winnersPct": 28,
    "avgScore": 40,
    "examples": [
     {
@@ -244,13 +244,13 @@
   {
    "id": "proyecto",
    "label": "Por proyecto / setup único",
-   "n": 10,
-   "medianEur": null,
-   "pricedN": 2,
-   "adsActivePct": 10,
-   "guaranteePct": 80,
-   "winnersPct": 20,
-   "avgScore": 25,
+   "n": 11,
+   "medianEur": 49,
+   "pricedN": 3,
+   "adsActivePct": 18,
+   "guaranteePct": 82,
+   "winnersPct": 18,
+   "avgScore": 28,
    "examples": [
     {
      "id": "inmoads",
@@ -271,10 +271,10 @@
      "score": 76
     },
     {
-     "id": "annuaire-mg",
-     "name": "annuaire.mg",
-     "country": "Madagascar",
-     "score": 0
+     "id": "escala-con-anuncios",
+     "name": "Escala con Anuncios",
+     "country": "España",
+     "score": 55
     }
    ]
   }
@@ -349,6 +349,15 @@
    "metaAds": 6000,
    "googleAds": 0,
    "agencyType": "Consultora grande"
+  },
+  {
+   "id": "doctoralia-grupo-docplanner",
+   "name": "Doctoralia (grupo Docplanner)",
+   "country": "España",
+   "score": 89,
+   "metaAds": 170,
+   "googleAds": 2000,
+   "agencyType": "Software + servicio"
   },
   {
    "id": "mas-captacion",
@@ -430,15 +439,6 @@
    "metaAds": 240,
    "googleAds": 0,
    "agencyType": "Lead broker / venta de leads"
-  },
-  {
-   "id": "premium-leads-grupo-vocento",
-   "name": "Premium Leads (grupo Vocento)",
-   "country": "España",
-   "score": 94,
-   "metaAds": 220,
-   "googleAds": 0,
-   "agencyType": "Lead broker / venta de leads"
   }
  ],
  "findings": [
@@ -454,18 +454,18 @@
   },
   {
    "title": "Los mejores invierten en su propia captación",
-   "stat": "49% vs 23%",
-   "detail": "El 49% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al 23% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola."
+   "stat": "49% vs 26%",
+   "detail": "El 49% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al 26% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola."
   },
   {
    "title": "El riesgo invertido puntúa por encima del retainer",
-   "stat": "40 vs 38 de media",
-   "detail": "Las 42 fichas con señal de cobro a éxito promedian 40 puntos, frente a 38 de las 374 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
+   "stat": "40 vs 39 de media",
+   "detail": "Las 43 fichas con señal de cobro a éxito promedian 40 puntos, frente a 39 de las 391 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
   },
   {
    "title": "La cita válida es la unidad más cara del mercado",
    "stat": "425 € de mediana",
-   "detail": "Los 45 modelos que cobran por cita o reunión válida tienen una mediana de 425 € por unidad y un 27% mantiene anuncios activos. Es la unidad de facturación con mejor relación valor-percibido/esfuerzo de venta."
+   "detail": "Los 47 modelos que cobran por cita o reunión válida tienen una mediana de 425 € por unidad y un 30% mantiene anuncios activos. Es la unidad de facturación con mejor relación valor-percibido/esfuerzo de venta."
   },
   {
    "title": "El stack de canales de los ganadores",
@@ -474,8 +474,8 @@
   },
   {
    "title": "Anuncios activos: la prueba de vida del mercado",
-   "stat": "256 de 938",
-   "detail": "256 fichas (27%) mantienen anuncios verificados en Meta o Google. Su puntuación media es 47 frente a 16 de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar."
+   "stat": "281 de 963",
+   "detail": "281 fichas (29%) mantienen anuncios verificados en Meta o Google. Su puntuación media es 48 frente a 16 de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar."
   }
  ]
 }

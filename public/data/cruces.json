@@ -1,0 +1,1310 @@
+{
+ "generatedAt": "23/08/2026",
+ "nota": "Cruces calculados sobre la base canónica y el arsenal. Las lecturas se generan desde los números; nada se estima a mano.",
+ "elasticidadGarantia": [
+  {
+   "label": "Sin garantía publicada",
+   "n": 101,
+   "medianEur": 250
+  },
+  {
+   "label": "Garantía floja (1-2)",
+   "n": 7,
+   "medianEur": 197
+  },
+  {
+   "label": "Garantía media (3)",
+   "n": 36,
+   "medianEur": 340
+  },
+  {
+   "label": "Garantía fuerte (4-5)",
+   "n": 5,
+   "medianEur": 29
+  }
+ ],
+ "titularPorVertical": [
+  {
+   "vertical": "Reformas, obra y hogar",
+   "winners": 43,
+   "top": [
+    {
+     "formula": "Exclusividad / escasez",
+     "n": 5
+    },
+    {
+     "formula": "Número concreto",
+     "n": 4
+    },
+    {
+     "formula": "Riesgo invertido",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "vertical": "Clínicas y salud",
+   "winners": 40,
+   "top": [
+    {
+     "formula": "Número concreto",
+     "n": 7
+    },
+    {
+     "formula": "Resultado directo",
+     "n": 7
+    },
+    {
+     "formula": "Prueba social",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "vertical": "B2B, SDR y citas",
+   "winners": 23,
+   "top": [
+    {
+     "formula": "Número concreto",
+     "n": 10
+    },
+    {
+     "formula": "Cómo / método",
+     "n": 3
+    },
+    {
+     "formula": "Riesgo invertido",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "vertical": "Inmobiliario",
+   "winners": 12,
+   "top": [
+    {
+     "formula": "Exclusividad / escasez",
+     "n": 2
+    },
+    {
+     "formula": "Número concreto",
+     "n": 2
+    },
+    {
+     "formula": "Resultado directo",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "vertical": "Generalistas y multi-nicho",
+   "winners": 12,
+   "top": [
+    {
+     "formula": "Prueba social",
+     "n": 4
+    },
+    {
+     "formula": "Exclusividad / escasez",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "vertical": "Legal y despachos",
+   "winners": 7,
+   "top": [
+    {
+     "formula": "Número concreto",
+     "n": 2
+    },
+    {
+     "formula": "Prueba social",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "vertical": "Solar y energía",
+   "winners": 6,
+   "top": [
+    {
+     "formula": "Número concreto",
+     "n": 1
+    },
+    {
+     "formula": "Prueba social",
+     "n": 1
+    },
+    {
+     "formula": "Exclusividad / escasez",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "curvaEspana": {
+  "total": 88,
+  "buckets": [
+   {
+    "rango": "0–100 €",
+    "n": 33
+   },
+   {
+    "rango": "100–250 €",
+    "n": 7
+   },
+   {
+    "rango": "250–400 €",
+    "n": 9
+   },
+   {
+    "rango": "400–600 €",
+    "n": 9
+   },
+   {
+    "rango": "600–900 €",
+    "n": 6
+   },
+   {
+    "rango": "900–1200 €",
+    "n": 5
+   },
+   {
+    "rango": "1200–2000 €",
+    "n": 7
+   },
+   {
+    "rango": "2000+ €",
+    "n": 9
+   }
+  ],
+  "hueco": {
+   "rango": "900–1200 €",
+   "n": 5
+  }
+ },
+ "madurez": [
+  {
+   "pais": "Egipto",
+   "n": 12,
+   "precioPublico": 83,
+   "garantia": 100,
+   "adsActivos": 25,
+   "indice": 69
+  },
+  {
+   "pais": "Estados Unidos",
+   "n": 33,
+   "precioPublico": 52,
+   "garantia": 97,
+   "adsActivos": 36,
+   "indice": 62
+  },
+  {
+   "pais": "Reino Unido",
+   "n": 12,
+   "precioPublico": 33,
+   "garantia": 100,
+   "adsActivos": 50,
+   "indice": 61
+  },
+  {
+   "pais": "Japón",
+   "n": 25,
+   "precioPublico": 48,
+   "garantia": 100,
+   "adsActivos": 28,
+   "indice": 59
+  },
+  {
+   "pais": "España",
+   "n": 334,
+   "precioPublico": 26,
+   "garantia": 77,
+   "adsActivos": 58,
+   "indice": 54
+  },
+  {
+   "pais": "Alemania",
+   "n": 16,
+   "precioPublico": 19,
+   "garantia": 100,
+   "adsActivos": 25,
+   "indice": 48
+  },
+  {
+   "pais": "Francia",
+   "n": 25,
+   "precioPublico": 20,
+   "garantia": 88,
+   "adsActivos": 32,
+   "indice": 47
+  },
+  {
+   "pais": "India",
+   "n": 22,
+   "precioPublico": 18,
+   "garantia": 95,
+   "adsActivos": 23,
+   "indice": 45
+  },
+  {
+   "pais": "Emiratos Árabes Unidos",
+   "n": 26,
+   "precioPublico": 15,
+   "garantia": 100,
+   "adsActivos": 15,
+   "indice": 43
+  },
+  {
+   "pais": "Singapur",
+   "n": 25,
+   "precioPublico": 16,
+   "garantia": 100,
+   "adsActivos": 12,
+   "indice": 43
+  },
+  {
+   "pais": "Portugal",
+   "n": 31,
+   "precioPublico": 32,
+   "garantia": 81,
+   "adsActivos": 10,
+   "indice": 41
+  },
+  {
+   "pais": "Países Bajos",
+   "n": 10,
+   "precioPublico": 10,
+   "garantia": 100,
+   "adsActivos": 10,
+   "indice": 40
+  },
+  {
+   "pais": "Arabia Saudita",
+   "n": 21,
+   "precioPublico": 5,
+   "garantia": 100,
+   "adsActivos": 14,
+   "indice": 40
+  },
+  {
+   "pais": "Irak",
+   "n": 31,
+   "precioPublico": 16,
+   "garantia": 100,
+   "adsActivos": 0,
+   "indice": 39
+  },
+  {
+   "pais": "Corea del Sur",
+   "n": 20,
+   "precioPublico": 0,
+   "garantia": 100,
+   "adsActivos": 10,
+   "indice": 37
+  },
+  {
+   "pais": "Georgia",
+   "n": 18,
+   "precioPublico": 11,
+   "garantia": 100,
+   "adsActivos": 0,
+   "indice": 37
+  }
+ ],
+ "promesaRemedio": {
+  "celdas": [
+   {
+    "promesa": "Genérica",
+    "remedio": "Devolución",
+    "n": 80,
+    "espana": 28
+   },
+   {
+    "promesa": "Genérica",
+    "remedio": "Sin remedio explícito",
+    "n": 26,
+    "espana": 9
+   },
+   {
+    "promesa": "Plazo",
+    "remedio": "Devolución",
+    "n": 13,
+    "espana": 8
+   },
+   {
+    "promesa": "Calidad",
+    "remedio": "Devolución",
+    "n": 9,
+    "espana": 4
+   },
+   {
+    "promesa": "Plazo",
+    "remedio": "Sin remedio explícito",
+    "n": 6,
+    "espana": 2
+   },
+   {
+    "promesa": "Volumen",
+    "remedio": "Devolución",
+    "n": 5,
+    "espana": 1
+   },
+   {
+    "promesa": "Volumen",
+    "remedio": "Sin remedio explícito",
+    "n": 4,
+    "espana": 1
+   },
+   {
+    "promesa": "Calidad",
+    "remedio": "Sin remedio explícito",
+    "n": 4,
+    "espana": 2
+   },
+   {
+    "promesa": "Volumen",
+    "remedio": "Seguimos gratis",
+    "n": 1,
+    "espana": 1
+   },
+   {
+    "promesa": "Plazo",
+    "remedio": "Seguimos gratis",
+    "n": 1,
+    "espana": 0
+   },
+   {
+    "promesa": "Genérica",
+    "remedio": "Seguimos gratis",
+    "n": 1,
+    "espana": 1
+   }
+  ],
+  "huecosEspana": []
+ },
+ "contradicciones": [
+  {
+   "id": "qdq-qdq-media",
+   "name": "qdq (QDQ Media)",
+   "country": "España",
+   "score": 94,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "agency-mdi",
+   "name": "Agency MDI",
+   "country": "España",
+   "score": 90,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "habitissimo",
+   "name": "Habitissimo",
+   "country": "España",
+   "score": 87,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "mas-captacion",
+   "name": "Más Captación",
+   "country": "España",
+   "score": 85,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "todobravo",
+   "name": "TodoBravo",
+   "country": "España",
+   "score": 84,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "anexeo-anexeo-digital-s-l-u-alianza-con-marketingfunerario-com",
+   "name": "Anexeo / Anexeo Digital S.L.U. (alianza con MarketingFunerario.com)",
+   "country": "España",
+   "score": 82,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "bigpubli",
+   "name": "BigPubli",
+   "country": "España",
+   "score": 82,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "vcf-marketing-vcf-group-bcn-sl",
+   "name": "VCF Marketing (VCF GROUP BCN, SL)",
+   "country": "España",
+   "score": 81,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "adfredo",
+   "name": "AdFredo",
+   "country": "España",
+   "score": 79,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "adqueria-agencia-ghl-spain",
+   "name": "AdquerIA / Agencia GHL Spain",
+   "country": "España",
+   "score": 74,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "sara-marketer",
+   "name": "Sara Marketer",
+   "country": "España",
+   "score": 68,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "level-up-agency",
+   "name": "LEVEL UP AGENCY (VERA)",
+   "country": "España",
+   "score": 62,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "construly",
+   "name": "Construly",
+   "country": "España",
+   "score": 60,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "clientify",
+   "name": "Clientify",
+   "country": "España",
+   "score": 55,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "smedialab",
+   "name": "SMedialab",
+   "country": "España",
+   "score": 55,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "teybus-iberia-s-l-u-clicksem",
+   "name": "TEYBUS IBERIA, S.L.U. (ClickSEM)",
+   "country": "España",
+   "score": 48,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "bikain-studio-bikain-studio-sl",
+   "name": "Bikain Studio (BIKAIN STUDIO SL)",
+   "country": "España",
+   "score": 30,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "psycoboost",
+   "name": "Psycoboost",
+   "country": "España",
+   "score": 22,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "eyclick-eyclick-s-l",
+   "name": "EYClick (EYCLICK S.L.)",
+   "country": "España",
+   "score": 8,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "respondeya",
+   "name": "RespondeYA",
+   "country": "España",
+   "score": 8,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "sapiensdataai",
+   "name": "SapiensDataAI",
+   "country": "España",
+   "score": 7,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "la-teva-web",
+   "name": "La Teva Web",
+   "country": "España",
+   "score": 4,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "bion-agency",
+   "name": "BION Agency",
+   "country": "España",
+   "score": 3,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "amp-igtelcom-es",
+   "name": "IG Telcom",
+   "country": "España",
+   "score": 0,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "amp-ghlagencia-com",
+   "name": "Agencia GHL Spain",
+   "country": "España",
+   "score": 0,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  },
+  {
+   "id": "leadsclientes-stratcore-llc",
+   "name": "LeadsClientes (STRATCORE LLC)",
+   "country": "Estados Unidos",
+   "score": 74,
+   "flags": [
+    "Vende «sin permanencia» pero su letra pequeña recoge permanencia o renovación automática"
+   ]
+  }
+ ],
+ "adn": {
+  "nTop": 27,
+  "rasgos": [
+   {
+    "rasgo": "Garantía sustancial publicada",
+    "pctTop": 100,
+    "pctBase": 89
+   },
+   {
+    "rasgo": "Precio público convertible",
+    "pctTop": 48,
+    "pctBase": 22
+   },
+   {
+    "rasgo": "Anuncios activos verificados",
+    "pctTop": 37,
+    "pctBase": 29
+   },
+   {
+    "rasgo": "Promesa numérica en la oferta",
+    "pctTop": 7,
+    "pctBase": 4
+   },
+   {
+    "rasgo": "CTA de conversión documentado",
+    "pctTop": 100,
+    "pctBase": 65
+   },
+   {
+    "rasgo": "Prueba social documentada",
+    "pctTop": 100,
+    "pctBase": 63
+   },
+   {
+    "rasgo": "Multi-mercado",
+    "pctTop": 11,
+    "pctBase": 6
+   },
+   {
+    "rasgo": "Galería de creatividades",
+    "pctTop": 48,
+    "pctBase": 16
+   }
+  ]
+ },
+ "delta10x": {
+  "nBaratos": 88,
+  "nCaros": 71,
+  "rasgos": [
+   {
+    "rasgo": "Agenda/citas",
+    "baratos": 22,
+    "caros": 27,
+    "delta": 5
+   },
+   {
+    "rasgo": "CRM incluido",
+    "baratos": 11,
+    "caros": 14,
+    "delta": 3
+   },
+   {
+    "rasgo": "Sin permanencia",
+    "baratos": 0,
+    "caros": 3,
+    "delta": 3
+   },
+   {
+    "rasgo": "WhatsApp",
+    "baratos": 10,
+    "caros": 11,
+    "delta": 1
+   },
+   {
+    "rasgo": "Exclusividad",
+    "baratos": 8,
+    "caros": 8,
+    "delta": 0
+   },
+   {
+    "rasgo": "Reporting/panel",
+    "baratos": 8,
+    "caros": 8,
+    "delta": 0
+   },
+   {
+    "rasgo": "Gestor dedicado",
+    "baratos": 1,
+    "caros": 0,
+    "delta": -1
+   },
+   {
+    "rasgo": "Grabaciones",
+    "baratos": 1,
+    "caros": 0,
+    "delta": -1
+   },
+   {
+    "rasgo": "Garantía",
+    "baratos": 6,
+    "caros": 1,
+    "delta": -5
+   },
+   {
+    "rasgo": "Cualificación",
+    "baratos": 18,
+    "caros": 10,
+    "delta": -8
+   }
+  ]
+ },
+ "promesasPais": [
+  {
+   "pais": "España",
+   "n": 57,
+   "dominante": "Devolución del dinero",
+   "nDominante": 42
+  },
+  {
+   "pais": "Estados Unidos",
+   "n": 10,
+   "dominante": "Devolución del dinero",
+   "nDominante": 6
+  },
+  {
+   "pais": "Portugal",
+   "n": 7,
+   "dominante": "Devolución del dinero",
+   "nDominante": 5
+  }
+ ],
+ "fragilidad": [
+  {
+   "id": "dotramo",
+   "name": "dotramo",
+   "agencyType": "Multi-nicho especializada",
+   "score": 90,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "markulia",
+   "name": "Markulia",
+   "agencyType": "Vertical de un solo nicho",
+   "score": 90,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "sin garantía",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "reformedia",
+   "name": "Reformedia",
+   "agencyType": "Vertical de un solo nicho",
+   "score": 72,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "captaleads",
+   "name": "CaptaLeads",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 64,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "agencia-digital-seniors",
+   "name": "Agencia Digital Seniors",
+   "agencyType": "Vertical de un solo nicho",
+   "score": 55,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "smedialab",
+   "name": "SMedialab",
+   "agencyType": "Generalista pymes",
+   "score": 55,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "vectoryal-nestor-garcia-velasco",
+   "name": "Vectoryal (Néstor García Velasco)",
+   "agencyType": "Marca personal / freelance",
+   "score": 45,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "tomaleads",
+   "name": "Tomaleads",
+   "agencyType": "Generalista pymes",
+   "score": 12,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "sapiensdataai",
+   "name": "SapiensDataAI",
+   "agencyType": "Software + servicio",
+   "score": 7,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin creatividades",
+    "letra pequeña con fricción"
+   ]
+  },
+  {
+   "id": "comunidad-aprendamos-marketing",
+   "name": "Comunidad Aprendamos Marketing",
+   "agencyType": "Marca personal / freelance",
+   "score": 3,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-leadinmo-es",
+   "name": "LeadInmo",
+   "agencyType": "Multi-nicho especializada",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-igtelcom-es",
+   "name": "IG Telcom",
+   "agencyType": "Multi-nicho especializada",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-activatelemarketing-es",
+   "name": "Activa Telemarketing",
+   "agencyType": "Multi-nicho especializada",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-updent-es",
+   "name": "UpDent",
+   "agencyType": "Generalista pymes",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-agenciamarketingmedico-es",
+   "name": "Dr.Marketing (Agencia Marketing Médico)",
+   "agencyType": "Generalista pymes",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-docmedia-es",
+   "name": "Docmedia",
+   "agencyType": "Generalista pymes",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-aesinergy-es",
+   "name": "Aesinergy",
+   "agencyType": "Generalista pymes",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-presupuestos-com",
+   "name": "Presupuestos.com",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-planreforma-com",
+   "name": "Plan Reforma",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-obrascongarantia-com",
+   "name": "Obras con Garantía",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-needbudget-com",
+   "name": "NeedBudget",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-3presupuestos-com",
+   "name": "3Presupuestos",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-tuproreformas-es",
+   "name": "TuProReformas",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-reformapresupuesto-com",
+   "name": "ReformaPresupuesto",
+   "agencyType": "Lead broker / venta de leads",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  },
+  {
+   "id": "amp-outsourcing-planet-es",
+   "name": "Outsourcing Planet",
+   "agencyType": "Multi-nicho especializada",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
+  }
+ ],
+ "lexico": [
+  {
+   "vertical": "Clínicas y salud",
+   "n": 48,
+   "bigramas": [
+    {
+     "b": "cold calling",
+     "n": 4
+    },
+    {
+     "b": "google business",
+     "n": 4
+    },
+    {
+     "b": "google meta",
+     "n": 4
+    },
+    {
+     "b": "google ads",
+     "n": 3
+    },
+    {
+     "b": "leads cualificados",
+     "n": 3
+    },
+    {
+     "b": "ads seo",
+     "n": 3
+    },
+    {
+     "b": "aeo google",
+     "n": 3
+    },
+    {
+     "b": "business profile",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "vertical": "Reformas, obra y hogar",
+   "n": 48,
+   "bigramas": [
+    {
+     "b": "servicios hogar",
+     "n": 5
+    },
+    {
+     "b": "google ads",
+     "n": 4
+    },
+    {
+     "b": "seo local",
+     "n": 3
+    }
+   ]
+  }
+ ],
+ "slas": {
+  "total": 78,
+  "top": [
+   {
+    "id": "habitissimo",
+    "name": "Habitissimo",
+    "country": "España",
+    "score": 87,
+    "sla": "en 1 min",
+    "minutos": 1
+   },
+   {
+    "id": "neomarketing",
+    "name": "Neomarketing",
+    "country": "Estados Unidos",
+    "score": 90,
+    "sla": "menos de 2 minutos",
+    "minutos": 2
+   },
+   {
+    "id": "dinnia",
+    "name": "DinnIA",
+    "country": "España",
+    "score": 80,
+    "sla": "<2 minutos",
+    "minutos": 2
+   },
+   {
+    "id": "best-seo-singapore",
+    "name": "Best SEO Singapore",
+    "country": "Singapur",
+    "score": 90,
+    "sla": "<5 min",
+    "minutos": 5
+   },
+   {
+    "id": "contactship",
+    "name": "ContactShip",
+    "country": "Global",
+    "score": 6,
+    "sla": "en 5 minutos",
+    "minutos": 5
+   },
+   {
+    "id": "nolam-ai",
+    "name": "Nolam.ai",
+    "country": "España",
+    "score": 6,
+    "sla": "<5 min",
+    "minutos": 5
+   },
+   {
+    "id": "lucid-leads",
+    "name": "Lucid Leads",
+    "country": "Nueva Zelanda",
+    "score": 96,
+    "sla": "menos de 10 minutos",
+    "minutos": 10
+   },
+   {
+    "id": "yallaleads",
+    "name": "YallaLeads",
+    "country": "Emiratos Árabes Unidos",
+    "score": 99,
+    "sla": "en 20 minutos",
+    "minutos": 20
+   },
+   {
+    "id": "amp-gigaleads-nl",
+    "name": "Gigaleads",
+    "country": "Países Bajos",
+    "score": 0,
+    "sla": "<30 minutos",
+    "minutos": 30
+   },
+   {
+    "id": "smedialab",
+    "name": "SMedialab",
+    "country": "España",
+    "score": 55,
+    "sla": "<2 h",
+    "minutos": 120
+   },
+   {
+    "id": "amp-lanzamiento-agency",
+    "name": "Lanzamiento.Agency",
+    "country": "Chile",
+    "score": 0,
+    "sla": "en 2 horas",
+    "minutos": 120
+   },
+   {
+    "id": "btaskee-cong-ty-tnhh-btaskee",
+    "name": "bTaskee / Công Ty TNHH bTaskee",
+    "country": "Vietnam",
+    "score": 0,
+    "sla": "<12 h",
+    "minutos": 720
+   },
+   {
+    "id": "horizzon-media",
+    "name": "Horizzon Media",
+    "country": "España",
+    "score": 97,
+    "sla": "<24 h",
+    "minutos": 1440
+   },
+   {
+    "id": "inmoads",
+    "name": "INMOADS",
+    "country": "España",
+    "score": 92,
+    "sla": "<24 h",
+    "minutos": 1440
+   },
+   {
+    "id": "portugalseo-operador-rafa-dmark",
+    "name": "PortugalSEO / operador Rafa–Dmark",
+    "country": "Portugal",
+    "score": 92,
+    "sla": "en 24h",
+    "minutos": 1440
+   },
+   {
+    "id": "masnegocio",
+    "name": "MásNegocio",
+    "country": "España",
+    "score": 91,
+    "sla": "menos de 24 h",
+    "minutos": 1440
+   },
+   {
+    "id": "360-clinic-consulting",
+    "name": "360 Clinic Consulting",
+    "country": "España",
+    "score": 90,
+    "sla": "menos de 24 h",
+    "minutos": 1440
+   },
+   {
+    "id": "agency-mdi",
+    "name": "Agency MDI",
+    "country": "España",
+    "score": 90,
+    "sla": "<24 h",
+    "minutos": 1440
+   },
+   {
+    "id": "reform-ads",
+    "name": "Reform.Ads",
+    "country": "España",
+    "score": 90,
+    "sla": "en 24 h",
+    "minutos": 1440
+   },
+   {
+    "id": "wdm-agency",
+    "name": "WDM Agency",
+    "country": "Kosovo",
+    "score": 89,
+    "sla": "en 24 h",
+    "minutos": 1440
+   }
+  ]
+ },
+ "findings": [
+  "Entre cuotas mensuales, quien publica garantía fuerte cobra una mediana de 29 € frente a 250 € de quien no promete nada: la garantía se usa como arma de entrada a precio agresivo — RedVitalia puede romper ese patrón cobrando premium CON garantía.",
+  "En España el tramo de precio menos poblado es 900–1200 € (5 actores): hueco de posicionamiento directo.",
+  "78 fichas declaran SLA de contacto; el más agresivo es Habitissimo (en 1 min). Un SLA firmado de 10 minutos sitúa a RedVitalia en el 1% del mercado."
+ ]
+}

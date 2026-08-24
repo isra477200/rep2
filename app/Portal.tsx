@@ -29,10 +29,13 @@ import RecordDetail from "./RecordDetail";
 import type {
   AdsKitData,
   Analytics,
+  AngulosData,
+  AnunciosRealesData,
   ArsenalData,
   Company,
   Country,
   CountryGeo,
+  CrucesData,
   DeepIndex,
   DeepIndexItem,
   DossiersData,
@@ -65,6 +68,7 @@ type View =
   | "resources"
   | "tools"
   | "arsenal"
+  | "landings"
   | "verticals"
   | "watch"
   | "companies"
@@ -76,6 +80,8 @@ type View =
   | "insights"
   | "playbooks"
   | "analysis"
+  | "cruces"
+  | "informe"
   | "expansion"
   | "mystery"
   | "blueprint"
@@ -87,6 +93,7 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "resources", label: "Recursos", icon: "⤓" },
   { id: "tools", label: "Herramientas", icon: "◳" },
   { id: "arsenal", label: "Arsenal", icon: "⚑" },
+  { id: "landings", label: "Landings", icon: "▭" },
   { id: "companies", label: "Empresas", icon: "◎" },
   { id: "funnels", label: "Funnels de venta", icon: "⌁" },
   { id: "map", label: "Mapa 3D", icon: "◉" },
@@ -97,6 +104,8 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "insights", label: "Conclusiones", icon: "∴" },
   { id: "playbooks", label: "Métodos", icon: "⚙" },
   { id: "analysis", label: "Análisis", icon: "∑" },
+  { id: "cruces", label: "Cruces", icon: "⤫" },
+  { id: "informe", label: "Informe", icon: "≡" },
   { id: "watch", label: "Vigilancia", icon: "◔" },
   { id: "expansion", label: "Expansión", icon: "❖" },
   { id: "mystery", label: "Mystery", icon: "◍" },
@@ -106,9 +115,9 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["exec", "resources", "tools", "arsenal"] },
+  { label: "Acción", ids: ["exec", "resources", "tools", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "map", "countries", "ads", "compare"] },
-  { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "watch", "expansion", "mystery"] },
+  { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
 ];
 const scopeShort: Record<string, string> = {
@@ -371,7 +380,10 @@ function CompanyCard({
     <article className="company-card">
       <div className="card-top">
         <CompanyLogo company={c} logos={logos} />
-        <span className={"score score-" + scoreClass}>{c.score}/100</span>
+        <span style={{ display: "inline-flex", gap: 6, alignItems: "center" }}>
+          {c.addedAt === "2026-08-23" && <span className="badge-nueva">NUEVA</span>}
+          <span className={"score score-" + scoreClass}>{c.score}/100</span>
+        </span>
       </div>
       <p className="country-label">{c.primaryCountry}</p>
       <h3>{c.name}</h3>
@@ -437,8 +449,17 @@ export default function Portal() {
     [arsenal, setArsenal] = useState<ArsenalData | null>(null),
     [adsKit, setAdsKit] = useState<AdsKitData | null>(null),
     [vigilancia, setVigilancia] = useState<VigilanciaData | null>(null),
-    [homesTimeline, setHomesTimeline] = useState<HomesTimelineData | null>(null);
+    [homesTimeline, setHomesTimeline] = useState<HomesTimelineData | null>(null),
+    [cruces, setCruces] = useState<CrucesData | null>(null),
+    [anunciosReales, setAnunciosReales] = useState<AnunciosRealesData | null>(null),
+    [angulos, setAngulos] = useState<AngulosData | null>(null);
   const [navCollapsed, setNavCollapsed] = useState(false);
+  const [showBackTop, setShowBackTop] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowBackTop(window.scrollY > 600);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   const [simPrice, setSimPrice] = useState(""),
     [propVertical, setPropVertical] = useState("clinicas-salud"),
     [propZona, setPropZona] = useState(""),
@@ -446,7 +467,22 @@ export default function Portal() {
     [propPrecio, setPropPrecio] = useState(""),
     [titularQuery, setTitularQuery] = useState(""),
     [titularFormula, setTitularFormula] = useState("Todas"),
-    [garantiaKind, setGarantiaKind] = useState("Todas");
+    [garantiaKind, setGarantiaKind] = useState("Todas"),
+    [adRealQuery, setAdRealQuery] = useState(""),
+    [adRealVertical, setAdRealVertical] = useState("Todos"),
+    [adRealPlat, setAdRealPlat] = useState("Todas"),
+    [semQuery, setSemQuery] = useState(""),
+    [semSort, setSemSort] = useState<"score" | "ads" | "nombre">("score"),
+    [companiesNewOnly, setCompaniesNewOnly] = useState(false),
+    [landTemplate, setLandTemplate] = useState<"garantia" | "anticuota" | "velocidad">("garantia"),
+    [landVertical, setLandVertical] = useState("clinicas-salud"),
+    [landZona, setLandZona] = useState(""),
+    [landServicio, setLandServicio] = useState(""),
+    [landTelefono, setLandTelefono] = useState("34613431439"),
+    [mrrClientes, setMrrClientes] = useState("12"),
+    [mrrCuota, setMrrCuota] = useState("600"),
+    [mrrAltas, setMrrAltas] = useState("2"),
+    [mrrChurn, setMrrChurn] = useState("5");
   const [actionStates, setActionStates] = useState<Record<string, { estado: string; nota: string }>>({});
   useEffect(() => {
     try {
@@ -454,8 +490,22 @@ export default function Portal() {
       if (storedNav === "1") setNavCollapsed(true);
       const storedActions = window.localStorage.getItem("rv-backlog-estado");
       if (storedActions) setActionStates(JSON.parse(storedActions));
+      const storedLanding = window.localStorage.getItem("rv-landing");
+      if (storedLanding) {
+        const saved = JSON.parse(storedLanding);
+        if (saved.v) setLandVertical(saved.v);
+        if (saved.z) setLandZona(saved.z);
+        if (saved.s) setLandServicio(saved.s);
+        if (saved.t) setLandTelefono(saved.t);
+        if (saved.p) setLandTemplate(saved.p);
+      }
     } catch {}
   }, []);
+  useEffect(() => {
+    try {
+      window.localStorage.setItem("rv-landing", JSON.stringify({ v: landVertical, z: landZona, s: landServicio, t: landTelefono, p: landTemplate }));
+    } catch {}
+  }, [landVertical, landZona, landServicio, landTelefono, landTemplate]);
   const toggleNav = () => {
     setNavCollapsed((current) => {
       try { window.localStorage.setItem("rv-nav-collapsed", current ? "0" : "1"); } catch {}
@@ -469,8 +519,12 @@ export default function Portal() {
       return next;
     });
   };
-  const [view, setView] = useState<View>("home"),
-    [query, setQuery] = useState(""),
+  const [view, setViewState] = useState<View>("home");
+  const setView = (next: View) => {
+    try { window.localStorage.setItem("rv-last-view", next); } catch {}
+    setViewState(next);
+  };
+  const [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
     [country, setCountry] = useState("Todos");
   const [priceOnly, setPriceOnly] = useState(false),
@@ -574,8 +628,17 @@ export default function Portal() {
       fetch("/data/homes-timeline.json")
         .then((r) => (r.ok ? (r.json() as Promise<HomesTimelineData>) : null))
         .catch(() => null),
+      fetch("/data/cruces.json")
+        .then((r) => (r.ok ? (r.json() as Promise<CrucesData>) : null))
+        .catch(() => null),
+      fetch("/data/anuncios-reales.json")
+        .then((r) => (r.ok ? (r.json() as Promise<AnunciosRealesData>) : null))
+        .catch(() => null),
+      fetch("/data/angulos-anuncios.json")
+        .then((r) => (r.ok ? (r.json() as Promise<AngulosData>) : null))
+        .catch(() => null),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss, recs, verts, ars, adsk, vig, homes]) => {
+      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss, recs, verts, ars, adsk, vig, homes, crc, anr, ang]) => {
         setCompanies(c);
         setCountries(co);
         setSummary(s);
@@ -598,10 +661,19 @@ export default function Portal() {
         setAdsKit(adsk);
         setVigilancia(vig);
         setHomesTimeline(homes);
+        setCruces(crc);
+        setAnunciosReales(anr);
+        setAngulos(ang);
         setCompare(c.slice(0, 3).map((x: Company) => x.id));
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
         if (nav.some((item) => item.id === requestedView)) setView(requestedView as View);
+        else {
+          try {
+            const lastView = window.localStorage.getItem("rv-last-view");
+            if (lastView && nav.some((item) => item.id === lastView)) setView(lastView as View);
+          } catch {}
+        }
         const requested = params.get("empresa");
         const requestedCompany = requested
           ? c.find((x: Company) => x.id === requested)
@@ -699,6 +771,177 @@ export default function Portal() {
     const median = priceDistribution[Math.floor(priceDistribution.length / 2)];
     return { value, pct, median, n: priceDistribution.length };
   }, [simPrice, priceDistribution]);
+  const mrrProj = useMemo(() => {
+    const clientes = Number(mrrClientes.replace(",", "."));
+    const cuota = Number(mrrCuota.replace(",", "."));
+    const altas = Number(mrrAltas.replace(",", "."));
+    const churn = Number(mrrChurn.replace(",", ".")) / 100;
+    if (![clientes, cuota, altas].every((v) => Number.isFinite(v) && v >= 0) || !Number.isFinite(churn) || churn < 0 || churn > 1) return null;
+    const rows: Array<{ mes: number; clientes: number; mrr: number }> = [];
+    let c = clientes;
+    for (let mes = 1; mes <= 12; mes++) {
+      c = c * (1 - churn) + altas;
+      rows.push({ mes, clientes: Math.round(c * 10) / 10, mrr: Math.round(c * cuota) });
+    }
+    const mrr0 = Math.round(clientes * cuota);
+    const final = rows[rows.length - 1];
+    const techo = churn > 0 ? Math.round((altas / churn) * cuota) : null;
+    const anual = rows.reduce((sum, r) => sum + r.mrr, 0);
+    return { rows, mrr0, final, techo, anual, cuota };
+  }, [mrrClientes, mrrCuota, mrrAltas, mrrChurn]);
+  const informeText = useMemo(() => {
+    if (!companies.length) return "";
+    const spain = companies.filter((c) => c.primaryCountry === "España");
+    const nuevas = companies.filter((c) => c.addedAt === "2026-08-23");
+    const rojos = (vigilancia?.semaforo || []).filter((s) => s.nivel === "rojo");
+    const topRojos = rojos.sort((a, b) => b.score - a.score).slice(0, 5).map((s) => `${s.name} (${s.score})`).join(", ");
+    const topAcciones = (execution?.actions || []).slice().sort((a, b) => (b.impact - b.effort) - (a.impact - a.effort)).slice(0, 5);
+    const lines: string[] = [];
+    lines.push(`INFORME EJECUTIVO · INTELIGENCIA DE CAPTACIÓN REDVITALIA`);
+    lines.push(`Corte: ${BUILD_DATE_LONG} · generado desde la base viva del portal`);
+    lines.push("");
+    lines.push(`1. BASE`);
+    lines.push(`${fmt(companies.length)} fichas de competidores en ${new Set(companies.map((c) => c.primaryCountry)).size} países; ${fmt(spain.length)} operan en España.${nuevas.length ? ` Hoy se han incorporado ${nuevas.length} fichas nuevas desde la caza de anuncios en vivo (Meta, Google, Instagram).` : ""}`);
+    lines.push("");
+    lines.push(`2. HALLAZGOS DE LOS CRUCES`);
+    (cruces?.findings || []).forEach((f, i) => lines.push(`${i + 1}. ${f}`));
+    lines.push("");
+    lines.push(`3. PATRONES DE LOS GANADORES`);
+    (patterns?.findings || []).slice(0, 4).forEach((f) => lines.push(`· ${f.title} (${f.stat}): ${f.detail}`));
+    lines.push("");
+    lines.push(`4. LO QUE DICEN ${fmt(angulos?.total || 0)} ANUNCIOS REALES`);
+    (angulos?.findings || []).forEach((f) => lines.push(`· ${f}`));
+    lines.push("");
+    lines.push(`5. AMENAZAS EN ESPAÑA`);
+    lines.push(`${rojos.length} competidores en nivel rojo de ${vigilancia?.semaforo.length || 0} vigilados. Los cinco más peligrosos: ${topRojos || "—"}.`);
+    if (cruces?.contradicciones.length) lines.push(`${cruces.contradicciones.length} vigiladas prometen algo en la home que su letra pequeña desmiente: material directo para venta comparativa.`);
+    lines.push("");
+    lines.push(`6. PRÓXIMAS 5 ACCIONES (mayor impacto por esfuerzo)`);
+    topAcciones.forEach((a, i) => lines.push(`${i + 1}. ${a.title} — impacto ${a.impact}/5, esfuerzo ${a.effort}/5 (${a.categoria})`));
+    lines.push("");
+    lines.push(`Fuente: portal Inteligencia Mundial de Captación · RedVitalia. Cada dato es trazable a su ficha.`);
+    return lines.join("\n");
+  }, [companies, vigilancia, cruces, patterns, angulos, execution]);
+  const landingHtml = useMemo(() => {
+    const v = verticales?.verticales.find((x) => x.id === landVertical);
+    if (!v) return "";
+    const zona = landZona.trim() || "tu zona";
+    const NICE: Record<string, { cliente: string; unidad: string; servicio: string }> = {
+      "clinicas-salud": { cliente: "tu clínica", unidad: "pacientes", servicio: "captación de pacientes" },
+      "reformas-hogar": { cliente: "tu empresa de reformas", unidad: "obras", servicio: "captación de obras" },
+      "solar-energia": { cliente: "tu instaladora", unidad: "instalaciones", servicio: "captación de instalaciones" },
+      "inmobiliario": { cliente: "tu inmobiliaria", unidad: "propietarios", servicio: "captación de propietarios" },
+      "legal": { cliente: "tu despacho", unidad: "casos", servicio: "captación de casos" },
+      "coches-motor": { cliente: "tu concesionario o taller", unidad: "clientes", servicio: "captación de clientes" },
+      "b2b-sdr": { cliente: "tu negocio B2B", unidad: "reuniones", servicio: "generación de reuniones" },
+      "belleza-bienestar": { cliente: "tu centro", unidad: "clientas", servicio: "captación de clientas" },
+      "hosteleria-turismo": { cliente: "tu negocio", unidad: "reservas", servicio: "captación de reservas" },
+      "directorios-marketplaces": { cliente: "tu negocio", unidad: "clientes", servicio: "captación de clientes" },
+      "generalista": { cliente: "tu negocio", unidad: "clientes", servicio: "captación de clientes" },
+    };
+    const nice = NICE[v.id] || NICE.generalista;
+    const servicio = landServicio.trim() || nice.servicio;
+    const tel = landTelefono.replace(/\D/g, "") || "34613431439";
+    const wa = (txt: string) => `https://wa.me/${tel}?text=${encodeURIComponent(txt)}`;
+    const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const Z = esc(zona), S = esc(servicio);
+    const U = nice.unidad, Uc = U.charAt(0).toUpperCase() + U.slice(1);
+    const TEMPLATES = {
+      garantia: {
+        pill: `${S.charAt(0).toUpperCase() + S.slice(1)} · exclusiva por zona`,
+        h1: `${Uc} nuevos cada semana para ${nice.cliente} en ${Z} — o no cobramos`,
+        sub: `Respondemos a cada solicitud en menos de 10 minutos, trabajamos con UNA sola empresa por zona y sin permanencia. Tú atiendes; nosotros llenamos la agenda.`,
+        gTitle: "Garantía por escrito",
+        gText: `Si el primer mes no recibes las ${U} acordadas en tu propuesta, seguimos trabajando gratis hasta conseguirlas. Firmado en el contrato, no en un anuncio.`,
+      },
+      anticuota: {
+        pill: `Sin cuota fija · pagas por resultado`,
+        h1: `Paga solo por cada ${U.replace(/s$/, "")} que recibes. Sin cuota, sin permanencia, sin letra pequeña.`,
+        sub: `Se acabó pagar mensualidades por contactos que no llegan. Cada ${U.replace(/s$/, "")} tiene precio cerrado, es exclusivo para ti y si no cumple los criterios pactados, se repone. Compras cuando quieres.`,
+        gTitle: "Garantía de reposición",
+        gText: `Cada contacto se entrega con zona, servicio e intención verificados. Si uno no cumple lo pactado, se repone sin discusión. Solo pagas ${U} válidos.`,
+      },
+      velocidad: {
+        pill: `SLA firmado · 10 minutos`,
+        h1: `El primero en llamar se lleva al cliente. Nosotros contactamos en menos de 10 minutos.`,
+        sub: `El 40% de los contactos se pierde por respuesta lenta. Nuestro sistema responde, filtra y agenda cada solicitud de ${S} en ${Z} en menos de 10 minutos, 24/7 — mientras tu competencia responde al día siguiente.`,
+        gTitle: "SLA por contrato",
+        gText: `Tiempo de primera respuesta bajo 10 minutos, medido y auditable en tu informe semanal. Si un mes incumplimos el SLA medio, ese mes tiene descuento automático. Por contrato.`,
+      },
+    } as const;
+    const T = TEMPLATES[landTemplate];
+    return `<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RedVitalia · ${S} en ${Z}</title>
+<style>
+:root{--azul:#0b57d0;--azul2:#1a73e8;--ink:#1c2430;--muted:#5b6675;--paper:#f7f9fc;--ok:#0b6b2f}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+header{padding:18px 0;border-bottom:1px solid #e6ebf2}header .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:19px;color:var(--azul)}.logo span{color:var(--ink)}
+.pill{display:inline-block;background:#e8f0fe;color:var(--azul);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600}
+.hero{padding:64px 0 46px;background:linear-gradient(180deg,#fff,var(--paper))}
+h1{font-size:clamp(30px,4.6vw,46px);line-height:1.15;letter-spacing:-.02em;margin:16px 0 14px;max-width:21ch}
+.sub{font-size:18px;color:var(--muted);max-width:56ch}
+.cta{display:inline-block;margin-top:26px;background:var(--azul);color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:15px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(11,87,208,.25)}
+.cta.sec{background:#fff;color:var(--azul);border:1.5px solid var(--azul);box-shadow:none;margin-left:10px}
+.bullets{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;padding:38px 0}
+.b{background:#fff;border:1px solid #e6ebf2;border-radius:14px;padding:18px}
+.b b{display:block;font-size:15px;margin-bottom:6px}.b p{font-size:13.5px;color:var(--muted)}
+.faixa{background:var(--azul);color:#fff;padding:34px 0}.faixa .wrap{display:flex;gap:28px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.faixa h2{font-size:22px;max-width:34ch}.faixa a{background:#fff;color:var(--azul);text-decoration:none;font-weight:700;padding:13px 24px;border-radius:11px}
+.pasos{padding:46px 0}.pasos h2,.datos h2,.form h2{font-size:26px;margin-bottom:20px}
+.paso{display:flex;gap:16px;margin-bottom:18px}.paso i{flex:0 0 38px;height:38px;border-radius:50%;background:#e8f0fe;color:var(--azul);font-style:normal;font-weight:800;display:flex;align-items:center;justify-content:center}
+.datos{background:var(--paper);padding:46px 0}.datos .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.dato{background:#fff;border:1px solid #e6ebf2;border-radius:14px;padding:18px;text-align:center}
+.dato b{display:block;font-size:28px;color:var(--azul)}.dato span{font-size:13px;color:var(--muted)}
+.garantia{margin:46px 0;border:2px solid var(--ok);background:#f2faf4;border-radius:16px;padding:24px}
+.garantia h3{color:var(--ok);font-size:20px;margin-bottom:8px}
+.form{padding:10px 0 60px}.form .caja{background:#fff;border:1px solid #e6ebf2;border-radius:16px;padding:26px;max-width:560px}
+label{display:block;font-size:13px;font-weight:600;margin:12px 0 5px}
+input,select{width:100%;padding:12px;border:1px solid #cfd8e3;border-radius:10px;font-size:15px}
+button{margin-top:18px;width:100%;background:#25d366;color:#fff;border:0;border-radius:12px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer}
+footer{border-top:1px solid #e6ebf2;padding:26px 0;font-size:12.5px;color:var(--muted)}
+@media(max-width:640px){.cta.sec{margin-left:0;margin-top:12px}}
+</style></head><body>
+<header><div class="wrap"><div class="logo">Red<span>Vitalia</span></div><span class="pill">${Z} · plazas limitadas</span></div></header>
+<section class="hero"><div class="wrap">
+<span class="pill">${T.pill}</span>
+<h1>${T.h1}</h1>
+<p class="sub">${T.sub}</p>
+<a class="cta" href="${wa(`Hola, soy de ${zona}. Quiero información sobre ${servicio} con RedVitalia.`)}">Quiero mi zona → WhatsApp directo</a>
+<a class="cta sec" href="#como">Ver cómo funciona</a>
+</div></section>
+<div class="wrap"><div class="bullets">
+<div class="b"><b>⚡ SLA de 10 minutos</b><p>El mercado responde en horas; los mejores, en minutos. Nos obligamos por escrito a contactar cada solicitud en menos de 10 minutos.</p></div>
+<div class="b"><b>🔒 Exclusividad real</b><p>Una sola empresa por zona y especialidad. Ningún contacto se comparte, se revende ni se recicla.</p></div>
+<div class="b"><b>📄 Sin permanencia</b><p>Nos ganamos tu renovación cada mes con resultados, no con una cláusula en la letra pequeña.</p></div>
+<div class="b"><b>✅ Cualificación previa</b><p>Filtramos por zona, servicio e intención antes de pasarte el contacto. Hablas solo con quien puede comprar.</p></div>
+</div></div>
+<section class="faixa"><div class="wrap"><h2>Hemos analizado ${fmt(v.n)} empresas de captación de tu sector en todo el mundo. Sabemos exactamente qué funciona.</h2><a href="${wa(`Hola, quiero la auditoría gratuita de captación para ${servicio} en ${zona}.`)}">Pedir auditoría gratuita</a></div></section>
+<section class="pasos" id="como"><div class="wrap"><h2>Cómo funciona</h2>
+<div class="paso"><i>1</i><div><b>Auditoría gratuita (48 h).</b> Analizamos tu zona, tu competencia y tu capacidad real de atender ${nice.unidad} nuevos.</div></div>
+<div class="paso"><i>2</i><div><b>Campañas y filtro.</b> Lanzamos la captación con nuestro sistema probado y cualificamos cada contacto antes de pasártelo.</div></div>
+<div class="paso"><i>3</i><div><b>Agenda llena, medida cada semana.</b> Recibes ${nice.unidad} verificados con informe semanal claro: coste, origen y resultado de cada uno.</div></div>
+</div></section>
+<section class="datos"><div class="wrap"><h2>Datos, no promesas</h2><div class="grid">
+<div class="dato"><b>${fmt(v.n)}</b><span>competidores analizados en tu sector</span></div>
+<div class="dato"><b>10 min</b><span>SLA de respuesta firmado (el nº1 del mercado promete 1 min; la media, horas)</span></div>
+<div class="dato"><b>${v.medianEur ? fmt(v.medianEur) + " €" : "—"}</b><span>mediana mundial de cuota en tu sector — sabemos lo que vale cada ${nice.unidad.replace(/s$/, "")}</span></div>
+<div class="dato"><b>0 €</b><span>de permanencia: te quedas solo si funciona</span></div>
+</div>
+<div class="garantia"><h3>${T.gTitle}</h3><p>${T.gText}</p></div>
+</div></section>
+<section class="form"><div class="wrap"><h2>Reserva tu zona</h2><div class="caja">
+<label>Tu nombre</label><input id="n" placeholder="Nombre y apellido">
+<label>Tu negocio</label><input id="e" placeholder="Nombre del negocio">
+<label>Zona</label><input id="z" value="${Z}">
+<button onclick="var n=document.getElementById('n').value,e=document.getElementById('e').value,z=document.getElementById('z').value;location.href='https://wa.me/${tel}?text='+encodeURIComponent('Hola, soy '+n+' de '+e+' ('+z+'). Quiero reservar mi zona para ${servicio.replace(/'/g, "\\'")}.')">Reservar por WhatsApp →</button>
+<p style="font-size:12px;color:var(--muted);margin-top:10px">Sin compromiso. Respuesta en menos de 10 minutos en horario laboral.</p>
+</div></div></section>
+<footer><div class="wrap">RedVitalia · Inteligencia y captación de clientes · ${Z} · ${new Date().getFullYear()}</div></footer>
+</body></html>`;
+  }, [verticales, landVertical, landZona, landServicio, landTelefono, landTemplate]);
   const proposalText = useMemo(() => {
     const vertical = verticales?.verticales.find((v) => v.id === propVertical);
     if (!vertical) return "";
@@ -766,10 +1009,11 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
             c.countries.includes(country) ||
             (!c.countries.length && c.primaryCountry === country)) &&
           (!priceOnly || c.price.eur != null) &&
+          (!companiesNewOnly || c.addedAt === "2026-08-23") &&
           (channel === "Todos" || c.channels.includes(channel))
         );
       }),
-    [companies, query, scope, country, priceOnly, channel],
+    [companies, query, scope, country, priceOnly, channel, companiesNewOnly],
   );
   const galleries = useMemo(() => {
     const q = query.toLocaleLowerCase("es");
@@ -1017,6 +1261,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
     setCountry("Todos");
     setChannel("Todos");
     setPriceOnly(false);
+    setCompaniesNewOnly(false);
     setQuery("");
     setVisible(24);
   };
@@ -1243,6 +1488,8 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                     {!navCollapsed && item.id === "companies" && <b>{fmt(companies.length)}</b>}
                     {!navCollapsed && item.id === "countries" && <b>195</b>}
                     {!navCollapsed && item.id === "ads" && <b>{fmt(summary.media)}</b>}
+                    {!navCollapsed && item.id === "arsenal" && anunciosReales && <b>{fmt(anunciosReales.total)}</b>}
+                    {!navCollapsed && item.id === "watch" && vigilancia && <b>{vigilancia.semaforo.filter((s) => s.nivel === "rojo").length}</b>}
                   </button>
                 );
               })}
@@ -1352,6 +1599,54 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 <small>{auditedPricePercent}% del universo</small>
               </article>
             </section>
+
+            {cruces && cruces.findings.length > 0 && (
+              <section className="home-finding">
+                <span className="home-finding-badge">HALLAZGO DEL DÍA</span>
+                <p>{cruces.findings[0]}</p>
+                <button className="ref-chip" onClick={() => go("cruces")}>Ver todos los cruces →</button>
+              </section>
+            )}
+
+            <section className="quick-grid">
+              {([
+                ["informe", "≡", "Informe ejecutivo", "El mercado en una página, listo para copiar o imprimir"],
+                ["cruces", "⤫", "Cruces", `${cruces?.findings.length || 0} hallazgos · 12 análisis cruzados`],
+                ["landings", "▭", "Landings", "3 plantillas por nicho basadas en conclusiones"],
+                ["arsenal", "⚑", `Arsenal · ${fmt(anunciosReales?.total || 0)} anuncios`, "Garantías, titulares y anuncios reales buscables"],
+                ["watch", "◔", `Vigilancia · ${vigilancia?.semaforo.filter((s) => s.nivel === "rojo").length || 0} en rojo`, "Semáforo España con fragilidad y contradicciones"],
+                ["exec", "▸", "Ejecutar", `${execution?.actions.length || 0} acciones priorizadas con estado`],
+              ] as Array<[View, string, string, string]>).map(([id, icon, title, sub]) => (
+                <button key={id} className="quick-card" onClick={() => go(id)}>
+                  <i>{icon}</i>
+                  <b>{title}</b>
+                  <small>{sub}</small>
+                </button>
+              ))}
+            </section>
+
+            {vigilancia && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">RADAR ROJO · ESPAÑA</p>
+                    <h2>Los 10 competidores más peligrosos ahora mismo</h2>
+                  </div>
+                </div>
+                <div className="median-list">
+                  {vigilancia.semaforo.filter((s) => s.nivel === "rojo").sort((a, b) => b.score - a.score).slice(0, 10).map((s) => {
+                    const c = companyById.get(s.id);
+                    return (
+                      <button key={s.id} onClick={() => c && openCompany(c)}>
+                        <span><i className="sem-dot sem-rojo" style={{ marginRight: 8 }} />{s.name}</span>
+                        <small>{s.threat}</small>
+                        <b>score {s.score} · M{s.metaAds}/G{s.googleAds}</b>
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
             <section className="brand-coverage">
               <div className="brand-coverage-mark">✓</div>
               <div>
@@ -1829,6 +2124,60 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 )}
               </div>
             </section>
+
+            <section className="content-section">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">SIMULADOR DE CARTERA · MRR A 12 MESES</p>
+                  <h2>Cuánto vale tu cartera si mantienes el ritmo</h2>
+                </div>
+              </div>
+              <div className="tool-card">
+                <div className="tool-controls">
+                  <label>
+                    Clientes actuales
+                    <input value={mrrClientes} onChange={(e) => setMrrClientes(e.target.value)} />
+                  </label>
+                  <label>
+                    Cuota media (€/mes)
+                    <input value={mrrCuota} onChange={(e) => setMrrCuota(e.target.value)} />
+                  </label>
+                  <label>
+                    Altas nuevas al mes
+                    <input value={mrrAltas} onChange={(e) => setMrrAltas(e.target.value)} />
+                  </label>
+                  <label>
+                    Bajas mensuales (%)
+                    <input value={mrrChurn} onChange={(e) => setMrrChurn(e.target.value)} />
+                  </label>
+                </div>
+                {mrrProj ? (
+                  <div className="sim-result">
+                    <p>
+                      Hoy: <b>{fmt(mrrProj.mrr0)} €/mes</b>. En 12 meses:{" "}
+                      <b>{fmt(mrrProj.final.mrr)} €/mes</b> con ~{mrrProj.final.clientes} clientes.
+                      Facturación acumulada del año: <b>{fmt(mrrProj.anual)} €</b> (bruto).{" "}
+                      {mrrProj.techo !== null
+                        ? `Con este ritmo de altas y bajas, tu cartera se estanca en ${fmt(mrrProj.techo)} €/mes: a partir de ahí solo crece subiendo cuota, bajando churn o sumando más altas.`
+                        : "Sin bajas, la cartera crece de forma lineal e indefinida: cada alta se queda."}
+                    </p>
+                    <div className="mrr-bars" aria-hidden>
+                      {mrrProj.rows.map((r) => {
+                        const max = Math.max(mrrProj.mrr0, ...mrrProj.rows.map((x) => x.mrr)) || 1;
+                        return (
+                          <div key={r.mes} className="mrr-bar" title={`Mes ${r.mes}: ${fmt(r.mrr)} €`}>
+                            <i style={{ height: `${Math.max(6, Math.round((r.mrr / max) * 100))}%` }} />
+                            <span>{r.mes}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : (
+                  <p className="record-empty">Rellena los cuatro campos con números para proyectar la cartera.</p>
+                )}
+              </div>
+            </section>
           </div>
         )}
 
@@ -1898,11 +2247,14 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   </div>
                 </div>
                 <div className="compare-picker">
-                  {["Todas", ...new Set(arsenal.garantias.items.flatMap((g) => g.kinds))].map((kind) => (
-                    <button key={kind} className={garantiaKind === kind ? "selected" : ""} onClick={() => setGarantiaKind(kind)}>
-                      {kind}
-                    </button>
-                  ))}
+                  {["Todas", ...new Set(arsenal.garantias.items.flatMap((g) => g.kinds))].map((kind) => {
+                    const n = kind === "Todas" ? arsenal.garantias.items.length : arsenal.garantias.items.filter((g) => g.kinds.includes(kind)).length;
+                    return (
+                      <button key={kind} className={garantiaKind === kind ? "selected" : ""} onClick={() => setGarantiaKind(kind)}>
+                        {kind} · {n}
+                      </button>
+                    );
+                  })}
                 </div>
                 <div className="garantia-list">
                   {arsenal.garantias.items
@@ -1991,6 +2343,226 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 </div>
               </section>
             )}
+
+            {anunciosReales && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">ANUNCIOS REALES TRANSCRITOS · {fmt(anunciosReales.total)} PIEZAS</p>
+                    <h2>La base de anuncios en texto, buscable</h2>
+                  </div>
+                </div>
+                <p className="insights-note">{anunciosReales.nota}</p>
+                <div className="compare-picker">
+                  {["Todos", "En vivo 23/08", ...[...new Set(anunciosReales.items.map((a) => a.vertical).filter(Boolean))].sort()].map((v) => (
+                    <button key={v} className={adRealVertical === v ? "selected" : ""} onClick={() => setAdRealVertical(v as string)}>
+                      {v}
+                    </button>
+                  ))}
+                </div>
+                <div className="compare-picker">
+                  {["Todas", "Meta", "Google", "Instagram", "Display"].map((p) => (
+                    <button key={p} className={adRealPlat === p ? "selected" : ""} onClick={() => setAdRealPlat(p)}>
+                      {p}
+                    </button>
+                  ))}
+                </div>
+                <div className="filterbar">
+                  <label style={{ flex: 1 }}>
+                    Buscar en anunciante, titular y texto
+                    <input value={adRealQuery} placeholder="garantía, WhatsApp, exclusivo, 10€…" onChange={(e) => setAdRealQuery(e.target.value)} style={{ display: "block", width: "100%", marginTop: 7, padding: 9, border: "1px solid var(--line)", borderRadius: 8, fontSize: 12 }} />
+                  </label>
+                </div>
+                {(() => {
+                  const matchPlat = (a: { plataforma: string }) => {
+                    if (adRealPlat === "Todas") return true;
+                    const p = a.plataforma.toLowerCase();
+                    if (adRealPlat === "Meta") return p.includes("meta");
+                    if (adRealPlat === "Google") return p.includes("google") || p.includes("transparencia");
+                    if (adRealPlat === "Instagram") return p.includes("instagram");
+                    return p.includes("display");
+                  };
+                  const filtered = anunciosReales.items.filter((a) => {
+                    if (!matchPlat(a)) return false;
+                    if (adRealVertical === "En vivo 23/08" && !a.capturaEnVivo) return false;
+                    if (adRealVertical !== "Todos" && adRealVertical !== "En vivo 23/08" && a.vertical !== adRealVertical) return false;
+                    if (!adRealQuery) return true;
+                    const q = adRealQuery.toLocaleLowerCase("es");
+                    return `${a.name} ${a.titular} ${a.texto} ${a.angulo}`.toLocaleLowerCase("es").includes(q);
+                  });
+                  return (
+                    <>
+                    <p className="insights-note">Mostrando {Math.min(30, filtered.length)} de {filtered.length} piezas que cumplen el filtro.</p>
+                    <div className="anuncio-grid">
+                  {filtered
+                    .slice(0, 30)
+                    .map((a, i) => {
+                      const c = companyById.get(a.id);
+                      return (
+                        <article key={`${a.id}-${i}`} className="anuncio-card">
+                          <div className="anuncio-meta">
+                            {c ? (
+                              <button className="ref-chip" onClick={() => openCompany(c)}>{a.name}</button>
+                            ) : (
+                              <span className="ref-chip static">{a.name}</span>
+                            )}
+                            {a.capturaEnVivo && <span className="anuncio-live">EN VIVO 23/08</span>}
+                          </div>
+                          <h3>{a.titular || "(sin titular visible)"}</h3>
+                          <p className="anuncio-texto">{a.texto}</p>
+                          <small>{a.plataforma}{a.cta ? ` · CTA: ${a.cta}` : ""}{a.precioVisible ? ` · ${a.precioVisible}` : ""}</small>
+                          {a.angulo && <small className="anuncio-angulo">Ángulo: {a.angulo}</small>}
+                          <button
+                            className="res-copy mini"
+                            onClick={async () => {
+                              const text = `${a.name} — ${a.titular}\n${a.texto}${a.cta ? `\nCTA: ${a.cta}` : ""}\nÁngulo: ${a.angulo}`;
+                              try { await navigator.clipboard.writeText(text); setToast("Anuncio copiado"); } catch { setToast("No se pudo copiar"); }
+                            }}
+                          >
+                            Copiar
+                          </button>
+                        </article>
+                      );
+                    })}
+                    </div>
+                    </>
+                  );
+                })()}
+              </section>
+            )}
+
+            {angulos && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">QUÉ DOMINA EN LOS {fmt(angulos.total)} ANUNCIOS · ANÁLISIS AGREGADO</p>
+                    <h2>Los ángulos y señales que usa el mercado</h2>
+                  </div>
+                </div>
+                <p className="insights-note">{angulos.nota}</p>
+                <div className="findings-list">
+                  {angulos.findings.map((f, i) => (
+                    <article key={i} className="finding-card">
+                      <span>{String(i + 1).padStart(2, "0")}</span>
+                      <p>{f}</p>
+                    </article>
+                  ))}
+                </div>
+                <h3 className="analysis-title">Señales en el copy</h3>
+                <div className="rasgo-list">
+                  {angulos.senales.map((s) => (
+                    <div key={s.label} className="rasgo-row">
+                      <span>{s.label}</span>
+                      <div className="rasgo-bars">
+                        <div className="rasgo-bar top" style={{ width: `${s.pct}%` }} title={`${s.pct}%`} />
+                      </div>
+                      <b>{s.pct}% <em>({s.n})</em></b>
+                    </div>
+                  ))}
+                </div>
+                <h3 className="analysis-title">Ángulos más repetidos</h3>
+                <div className="chip-row">
+                  {angulos.topAngulos.map((a) => (
+                    <span key={a.label} className="ref-chip static">{a.label} · {a.n}</span>
+                  ))}
+                </div>
+                <h3 className="analysis-title">CTAs dominantes</h3>
+                <div className="chip-row">
+                  {angulos.topCtas.map((cta) => (
+                    <span key={cta.label} className="ref-chip static">{cta.label} · {cta.n}</span>
+                  ))}
+                </div>
+              </section>
+            )}
+          </div>
+        )}
+
+        {view === "landings" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">LANDING PAGES POR NICHO</p>
+              <h1>Una landing lista para captar, por vertical</h1>
+              <p>
+                Generadas con los datos de la base: SLA agresivo, exclusividad por zona, garantía
+                por escrito y formulario que abre WhatsApp. Descarga el HTML y súbelo a cualquier hosting.
+              </p>
+            </section>
+            <section className="content-section">
+              <div className="compare-picker">
+                {([["garantia", "Plantilla A · Garantía «o no cobramos»"], ["anticuota", "Plantilla B · Anti-cuota (pago por lead)"], ["velocidad", "Plantilla C · Velocidad (SLA 10 min)"]] as const).map(([key, label]) => (
+                  <button key={key} className={landTemplate === key ? "selected" : ""} onClick={() => setLandTemplate(key)}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+              <p className="insights-note">
+                Las tres plantillas salen de las conclusiones de la base: solo el 10% de los anuncios reales promete
+                garantía (A), el marketplace sin cuota es el ángulo de los entrantes tipo Veltavia (B) y el 40% de los
+                leads se pierde por respuesta lenta — SLA como arma (C).
+              </p>
+              <div className="tool-card">
+                <div className="tool-controls">
+                  <label>
+                    Vertical
+                    <select value={landVertical} onChange={(e) => setLandVertical(e.target.value)}>
+                      {(verticales?.verticales || []).map((v) => (
+                        <option key={v.id} value={v.id}>{v.label}</option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    Zona
+                    <input value={landZona} placeholder="p. ej. Zaragoza" onChange={(e) => setLandZona(e.target.value)} />
+                  </label>
+                  <label>
+                    Servicio (opcional)
+                    <input value={landServicio} placeholder="p. ej. captación de pacientes de implantes" onChange={(e) => setLandServicio(e.target.value)} />
+                  </label>
+                  <label>
+                    WhatsApp destino (sin +)
+                    <input value={landTelefono} onChange={(e) => setLandTelefono(e.target.value)} />
+                  </label>
+                </div>
+                <div className="resource-actions">
+                  <button
+                    className="res-download"
+                    onClick={() => {
+                      const blob = new Blob([landingHtml], { type: "text/html;charset=utf-8" });
+                      const url = URL.createObjectURL(blob);
+                      const link = document.createElement("a");
+                      link.href = url;
+                      link.download = `landing-${landVertical}-${(landZona || "zona").toLocaleLowerCase("es").replace(/\s+/g, "-")}.html`;
+                      document.body.appendChild(link);
+                      link.click();
+                      link.remove();
+                      URL.revokeObjectURL(url);
+                    }}
+                  >
+                    Descargar HTML
+                  </button>
+                  <button
+                    className="res-copy"
+                    onClick={async () => {
+                      try { await navigator.clipboard.writeText(landingHtml); setToast("HTML de la landing copiado"); } catch { setToast("No se pudo copiar"); }
+                    }}
+                  >
+                    Copiar HTML
+                  </button>
+                  <button
+                    className="res-copy"
+                    onClick={() => {
+                      const blob = new Blob([landingHtml], { type: "text/html;charset=utf-8" });
+                      window.open(URL.createObjectURL(blob), "_blank");
+                    }}
+                  >
+                    Abrir en pestaña nueva
+                  </button>
+                </div>
+                <div className="landing-preview">
+                  <iframe title="Vista previa de la landing" srcDoc={landingHtml} sandbox="" />
+                </div>
+              </div>
+            </section>
           </div>
         )}
 
@@ -2081,26 +2653,69 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   <h2>Quién está vivo de verdad</h2>
                 </div>
               </div>
+              <div className="filterbar">
+                <label style={{ flex: 1 }}>
+                  Buscar vigilada
+                  <input value={semQuery} placeholder="nombre o tipo de amenaza…" onChange={(e) => setSemQuery(e.target.value)} style={{ display: "block", width: "100%", marginTop: 7, padding: 9, border: "1px solid var(--line)", borderRadius: 8, fontSize: 12 }} />
+                </label>
+              </div>
+              <div className="compare-picker">
+                {([["score", "Ordenar por score"], ["ads", "Ordenar por ads activos"], ["nombre", "Ordenar por nombre"]] as const).map(([key, label]) => (
+                  <button key={key} className={semSort === key ? "selected" : ""} onClick={() => setSemSort(key)}>{label}</button>
+                ))}
+                <button
+                  onClick={() => {
+                    const rows = [["empresa", "nivel", "amenaza", "score", "meta_ads", "google_ads", "precio_publico", "garantia", "fragilidad_pts"]];
+                    const fragil = new Map((cruces?.fragilidad || []).map((f) => [f.id, f.puntos]));
+                    for (const s of vigilancia.semaforo)
+                      rows.push([s.name, s.nivel, s.threat, String(s.score), String(s.metaAds), String(s.googleAds), s.pricePublic ? "si" : "no", s.hasGuarantee ? "si" : "no", String(fragil.get(s.id) ?? "")]);
+                    const csv = rows.map((r) => r.map((x) => `"${String(x).replace(/"/g, '""')}"`).join(";")).join("\n");
+                    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = "semaforo-vigilancia-espana.csv";
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    URL.revokeObjectURL(url);
+                  }}
+                >
+                  ⤓ Exportar CSV
+                </button>
+              </div>
               <div className="matrix-wrap">
                 <table className="matrix-table">
                   <thead>
-                    <tr><th></th><th>Empresa</th><th>Amenaza</th><th>Score</th><th>Ads activos</th><th>Precio público</th><th>Garantía</th></tr>
+                    <tr><th></th><th>Empresa</th><th>Amenaza</th><th>Score</th><th>Ads activos</th><th>Precio público</th><th>Garantía</th><th>Fragilidad</th></tr>
                   </thead>
                   <tbody>
-                    {vigilancia.semaforo.slice(0, 60).map((s) => {
-                      const c = companyById.get(s.id);
-                      return (
-                        <tr key={s.id}>
-                          <td><span className={`sem-dot sem-${s.nivel}`} title={s.nivel} /></td>
-                          <td><button className="ref-chip" onClick={() => c && openCompany(c)}>{s.name}</button></td>
-                          <td>{s.threat}</td>
-                          <td>{s.score}</td>
-                          <td>{s.adsActive ? `Sí · M${s.metaAds}/G${s.googleAds}` : "No"}</td>
-                          <td>{s.pricePublic ? "Sí" : "No"}</td>
-                          <td>{s.hasGuarantee ? "Sí" : "No"}</td>
-                        </tr>
+                    {(() => {
+                      const fragil = new Map((cruces?.fragilidad || []).map((f) => [f.id, f.puntos]));
+                      const q = semQuery.toLocaleLowerCase("es");
+                      const filtered = vigilancia.semaforo.filter((s) => !q || `${s.name} ${s.threat} ${s.agencyType}`.toLocaleLowerCase("es").includes(q));
+                      const sorted = [...filtered].sort((a, b) =>
+                        semSort === "nombre" ? a.name.localeCompare(b.name, "es") :
+                        semSort === "ads" ? (b.metaAds + b.googleAds) - (a.metaAds + a.googleAds) :
+                        b.score - a.score
                       );
-                    })}
+                      return sorted.slice(0, 80).map((s) => {
+                        const c = companyById.get(s.id);
+                        const pts = fragil.get(s.id);
+                        return (
+                          <tr key={s.id}>
+                            <td><span className={`sem-dot sem-${s.nivel}`} title={s.nivel} /></td>
+                            <td><button className="ref-chip" onClick={() => c && openCompany(c)}>{s.name}</button></td>
+                            <td>{s.threat}</td>
+                            <td>{s.score}</td>
+                            <td>{s.adsActive ? `Sí · M${s.metaAds}/G${s.googleAds}` : "No"}</td>
+                            <td>{s.pricePublic ? "Sí" : "No"}</td>
+                            <td>{s.hasGuarantee ? "Sí" : "No"}</td>
+                            <td>{pts != null ? <span className="fragil-puntos">{pts} pts</span> : "—"}</td>
+                          </tr>
+                        );
+                      });
+                    })()}
                   </tbody>
                 </table>
               </div>
@@ -2158,6 +2773,389 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   </article>
                 ))}
               </div>
+            </section>
+
+            {cruces && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">ÍNDICE DE FRAGILIDAD · {cruces.fragilidad.length} SEÑALADAS</p>
+                    <h2>Competidores con score alto pero cimientos débiles</h2>
+                  </div>
+                </div>
+                <p className="insights-note">
+                  Puntos de fragilidad: cada señal (sin anuncios activos, precio oculto, sin creatividades,
+                  letra pequeña con fricción…) suma. A más puntos, más fachada y menos músculo verificable.
+                </p>
+                <div className="fragil-list">
+                  {cruces.fragilidad.slice(0, 15).map((f) => {
+                    const c = companyById.get(f.id);
+                    return (
+                      <article key={f.id} className="fragil-card">
+                        <div className="fragil-head">
+                          {c ? (
+                            <button className="ref-chip" onClick={() => openCompany(c)}>{f.name}</button>
+                          ) : (
+                            <span className="ref-chip static">{f.name}</span>
+                          )}
+                          <span className="fragil-score">Score {f.score}</span>
+                          <b className="fragil-puntos">{f.puntos} pts fragilidad</b>
+                        </div>
+                        <small>{f.agencyType}</small>
+                        <p>{f.razones.join(" · ")}</p>
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
+            {cruces && cruces.contradicciones.length > 0 && (
+              <section className="content-section">
+                <div className="section-head">
+                  <div>
+                    <p className="eyebrow">CONTRADICCIONES DETECTADAS · {cruces.contradicciones.length}</p>
+                    <h2>Lo que prometen arriba y desmienten en la letra pequeña</h2>
+                  </div>
+                </div>
+                <div className="fragil-list">
+                  {cruces.contradicciones.slice(0, 15).map((k) => {
+                    const c = companyById.get(k.id);
+                    return (
+                      <article key={k.id} className="fragil-card contradiccion">
+                        <div className="fragil-head">
+                          {c ? (
+                            <button className="ref-chip" onClick={() => openCompany(c)}>{k.name}</button>
+                          ) : (
+                            <span className="ref-chip static">{k.name}</span>
+                          )}
+                          <small>{k.country} · score {k.score}</small>
+                        </div>
+                        {k.flags.map((flag, i) => (
+                          <p key={i}>⚠ {flag}</p>
+                        ))}
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+          </div>
+        )}
+
+        {view === "cruces" && cruces && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">CRUCES DE DATOS</p>
+              <h1>Lo que solo se ve cruzando las {fmt(companies.length)} fichas</h1>
+              <p>{cruces.nota}</p>
+            </section>
+
+            <div className="compare-picker seccion-nav">
+              {[["cx-hallazgos", "Hallazgos"], ["cx-garantia", "Garantía×precio"], ["cx-curva", "Curva España"], ["cx-madurez", "Madurez"], ["cx-promesa", "Promesa×remedio"], ["cx-adn", "ADN top"], ["cx-10x", "El 10x"], ["cx-pais", "Por país"], ["cx-titular", "Titulares"], ["cx-lexico", "Léxico"], ["cx-sla", "SLAs"]].map(([id, label]) => (
+                <button key={id} onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            <section className="content-section" id="cx-hallazgos">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">HALLAZGOS PRINCIPALES</p>
+                  <h2>Tres conclusiones accionables</h2>
+                </div>
+                <button
+                  className="res-copy"
+                  onClick={async () => {
+                    const text = `HALLAZGOS · CRUCES REDVITALIA · ${cruces.generatedAt}\n\n${cruces.findings.map((f, i) => `${i + 1}. ${f}`).join("\n\n")}`;
+                    try { await navigator.clipboard.writeText(text); setToast("Hallazgos copiados"); } catch { setToast("No se pudo copiar"); }
+                  }}
+                >
+                  Copiar hallazgos
+                </button>
+              </div>
+              <div className="findings-list">
+                {cruces.findings.map((f, i) => (
+                  <article key={i} className="finding-card">
+                    <span>{String(i + 1).padStart(2, "0")}</span>
+                    <p>{f}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-garantia">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">GARANTÍA × PRECIO (SOLO CUOTAS MENSUALES)</p>
+                  <h2>¿Cobra más quien más promete?</h2>
+                </div>
+              </div>
+              <div className="median-list">
+                {cruces.elasticidadGarantia.map((row) => (
+                  <button key={row.label} style={{ cursor: "default" }}>
+                    <span>{row.label}</span>
+                    <small>{row.n} fichas</small>
+                    <b>{row.medianEur != null ? `${fmt(row.medianEur)} €/mes` : "s/d"}</b>
+                  </button>
+                ))}
+              </div>
+              <p className="insights-note">
+                Lectura honesta en ambos sentidos: la garantía media acompaña a precios más altos,
+                pero la garantía fuerte aparece sobre todo en modelos por lead barato (pago por resultado),
+                no en cuotas premium. Prometer fuerte no sube la cuota: cambia el modelo de cobro.
+              </p>
+            </section>
+
+            <section className="content-section" id="cx-curva">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">CURVA DE PRECIOS · ESPAÑA · {cruces.curvaEspana.total} CUOTAS</p>
+                  <h2>El hueco de mercado está en {cruces.curvaEspana.hueco?.rango || "—"}</h2>
+                </div>
+              </div>
+              <div className="curva-wrap">
+                {cruces.curvaEspana.buckets.map((b) => {
+                  const max = Math.max(...cruces.curvaEspana.buckets.map((x) => x.n)) || 1;
+                  const esHueco = cruces.curvaEspana.hueco?.rango === b.rango;
+                  return (
+                    <div key={b.rango} className={`curva-col${esHueco ? " hueco" : ""}`} title={`${b.rango}: ${b.n} ofertas`}>
+                      <b>{b.n}</b>
+                      <i style={{ height: `${Math.max(5, Math.round((b.n / max) * 100))}%` }} />
+                      <span>{b.rango}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              {cruces.curvaEspana.hueco && (
+                <p className="insights-note">
+                  En {cruces.curvaEspana.hueco.rango} solo compiten {cruces.curvaEspana.hueco.n} ofertas en España:
+                  es la franja con menos competencia directa para posicionar un plan premium.
+                </p>
+              )}
+            </section>
+
+            <section className="content-section" id="cx-madurez">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">MADUREZ POR PAÍS · {cruces.madurez.length} MERCADOS</p>
+                  <h2>Transparencia y agresividad comercial por mercado</h2>
+                </div>
+              </div>
+              <div className="matrix-wrap">
+                <table className="matrix-table">
+                  <thead>
+                    <tr><th>País</th><th>Fichas</th><th>% precio público</th><th>% con garantía</th><th>% con ads activos</th><th>Índice de madurez</th></tr>
+                  </thead>
+                  <tbody>
+                    {cruces.madurez.map((m) => (
+                      <tr key={m.pais}>
+                        <td><button className="ref-chip" onClick={() => chooseCountry(m.pais)}>{m.pais}</button></td>
+                        <td>{m.n}</td>
+                        <td>{m.precioPublico}%</td>
+                        <td>{m.garantia}%</td>
+                        <td>{m.adsActivos}%</td>
+                        <td><b>{m.indice}</b></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-promesa">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">PROMESA × REMEDIO</p>
+                  <h2>Qué se promete y cómo se respalda{cruces.promesaRemedio.huecosEspana.length > 0 ? " (y los huecos de España)" : ""}</h2>
+                </div>
+              </div>
+              <div className="median-list">
+                {cruces.promesaRemedio.celdas.slice(0, 12).map((cell, i) => (
+                  <button key={i} style={{ cursor: "default" }}>
+                    <span>{cell.promesa} × {cell.remedio}</span>
+                    <small>{cell.espana} en España</small>
+                    <b>{cell.n} fichas</b>
+                  </button>
+                ))}
+              </div>
+              {cruces.promesaRemedio.huecosEspana.length > 0 && (
+                <p className="insights-note">
+                  Huecos sin explotar en España:{" "}
+                  {cruces.promesaRemedio.huecosEspana.map((h) => `${h.promesa} respaldada con ${h.remedio.toLowerCase()} (${h.n} en el mundo, ${h.espana} aquí)`).join(" · ")}.
+                </p>
+              )}
+            </section>
+
+            <section className="content-section" id="cx-adn">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">ADN DEL TOP {cruces.adn.nTop} MUNDIAL</p>
+                  <h2>Qué hacen los mejores que el resto no hace</h2>
+                </div>
+              </div>
+              <div className="rasgo-list">
+                {cruces.adn.rasgos.map((r) => (
+                  <div key={r.rasgo} className="rasgo-row">
+                    <span>{r.rasgo}</span>
+                    <div className="rasgo-bars">
+                      <div className="rasgo-bar top" style={{ width: `${r.pctTop}%` }} title={`Top: ${r.pctTop}%`} />
+                      <div className="rasgo-bar base" style={{ width: `${r.pctBase}%` }} title={`Base: ${r.pctBase}%`} />
+                    </div>
+                    <b>{r.pctTop}% <em>vs {r.pctBase}%</em></b>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-10x">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">QUÉ INCLUYE EL 10X · {cruces.delta10x.nBaratos} BARATAS VS {cruces.delta10x.nCaros} CARAS</p>
+                  <h2>Qué añade una oferta cara frente a una barata</h2>
+                </div>
+              </div>
+              <div className="rasgo-list">
+                {cruces.delta10x.rasgos.map((r) => (
+                  <div key={r.rasgo} className="rasgo-row">
+                    <span>{r.rasgo}</span>
+                    <div className="rasgo-bars">
+                      <div className="rasgo-bar top" style={{ width: `${r.caros}%` }} title={`Caras: ${r.caros}%`} />
+                      <div className="rasgo-bar base" style={{ width: `${r.baratos}%` }} title={`Baratas: ${r.baratos}%`} />
+                    </div>
+                    <b>{r.delta > 0 ? "+" : ""}{r.delta} pts</b>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-pais">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">PROMESA DOMINANTE POR PAÍS</p>
+                  <h2>Con qué garantía se compite en cada mercado</h2>
+                </div>
+              </div>
+              <div className="median-list">
+                {cruces.promesasPais.map((p) => (
+                  <button key={p.pais} onClick={() => chooseCountry(p.pais)}>
+                    <span>{p.pais}</span>
+                    <small>{p.nDominante} de {p.n} garantías</small>
+                    <b>{p.dominante}</b>
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-titular">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">TITULAR GANADOR POR VERTICAL</p>
+                  <h2>La fórmula que más usan los mejores de cada nicho</h2>
+                </div>
+              </div>
+              <div className="median-list">
+                {cruces.titularPorVertical.map((t) => (
+                  <button key={t.vertical} style={{ cursor: "default" }}>
+                    <span>{t.vertical}</span>
+                    <small>{t.winners} referentes analizados</small>
+                    <b>{t.top.map((x) => `${x.formula} (${x.n})`).join(" · ") || "sin patrón claro"}</b>
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-lexico">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">LÉXICO QUE CONVIERTE</p>
+                  <h2>Bigramas más repetidos por los referentes</h2>
+                </div>
+              </div>
+              <div className="lexico-grid">
+                {cruces.lexico.map((l) => (
+                  <article key={l.vertical} className="lexico-card">
+                    <h3>{l.vertical}</h3>
+                    <small>{l.n} piezas analizadas</small>
+                    <div className="chip-row">
+                      {l.bigramas.map((b) => (
+                        <span key={b.b} className="ref-chip static">{b.b} · {b.n}</span>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <section className="content-section" id="cx-sla">
+              <div className="section-head">
+                <div>
+                  <p className="eyebrow">CARRERA DEL SLA · {cruces.slas.total} PROMESAS DE VELOCIDAD</p>
+                  <h2>Quién promete responder más rápido</h2>
+                </div>
+              </div>
+              <div className="median-list">
+                {cruces.slas.top.slice(0, 12).map((s) => {
+                  const c = companyById.get(s.id);
+                  return (
+                    <button key={s.id} onClick={() => c && openCompany(c)}>
+                      <span>{s.name}</span>
+                      <small>{s.country} · score {s.score}</small>
+                      <b>{s.sla}</b>
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="insights-note">
+                El estándar de los agresivos es responder en minutos, no en horas: cualquier promesa de
+                velocidad de RedVitalia debe medirse contra este benchmark, no contra la media del sector.
+              </p>
+            </section>
+          </div>
+        )}
+
+        {view === "informe" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">INFORME EJECUTIVO</p>
+              <h1>El estado del mercado, en una página</h1>
+              <p>
+                Generado en vivo desde la base: hallazgos de los cruces, patrones de los ganadores,
+                lectura de los anuncios reales, amenazas en España y próximas acciones. Cópialo o imprímelo a PDF.
+              </p>
+            </section>
+            <section className="content-section">
+              <div className="resource-actions">
+                <button
+                  className="res-copy"
+                  onClick={async () => {
+                    try { await navigator.clipboard.writeText(informeText); setToast("Informe copiado"); } catch { setToast("No se pudo copiar"); }
+                  }}
+                >
+                  Copiar informe
+                </button>
+                <button className="res-download" onClick={() => window.print()}>
+                  Imprimir / guardar PDF
+                </button>
+                <button
+                  className="res-copy"
+                  onClick={() => {
+                    const blob = new Blob([informeText], { type: "text/plain;charset=utf-8" });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = `informe-redvitalia-${new Date().toISOString().slice(0, 10)}.txt`;
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    URL.revokeObjectURL(url);
+                  }}
+                >
+                  Descargar TXT
+                </button>
+              </div>
+              <pre className="informe-pre" id="informe-imprimible">{informeText || "Cargando datos…"}</pre>
             </section>
           </div>
         )}
@@ -2226,13 +3224,21 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 />{" "}
                 Solo precio convertible
               </label>
+              <label className="check">
+                <input
+                  type="checkbox"
+                  checked={companiesNewOnly}
+                  onChange={(e) => { setCompaniesNewOnly(e.target.checked); setVisible(24); }}
+                />{" "}
+                Solo añadidas hoy
+              </label>
               <button onClick={clearCompanyFilters}>
                 Limpiar
               </button>
             </section>
             <div className="result-line">
-              <strong>{fmt(filtered.length)} resultados</strong>
-              <span>Ordenados por puntuación estratégica</span>
+              <strong>Mostrando {fmt(Math.min(visible, filtered.length))} de {fmt(filtered.length)} resultados</strong>
+              <span>Ordenados por puntuación estratégica{companiesNewOnly ? " · solo la remesa de la caza de anuncios de hoy" : ""}</span>
             </div>
             <section className="company-grid">
               {filtered.slice(0, visible).map((c) => (
@@ -3863,6 +4869,14 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
           {toast}
         </div>
       )}
+      <button
+        className={`back-top${showBackTop ? " visible" : ""}`}
+        title="Volver arriba"
+        aria-label="Volver arriba"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        ↑
+      </button>
       {lightbox && (
         <div
           ref={lightboxRef}
