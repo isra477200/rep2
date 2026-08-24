@@ -255,6 +255,11 @@ export type AnuncioReal = {
   file: string;
   id: string;
   name: string;
+  /** Identidad observada antes de resolver un alias hacia la ficha canónica. */
+  observedId?: string | null;
+  observedName?: string | null;
+  /** Capas de evidencia fusionadas cuando el mismo anuncio aparece en varias fuentes. */
+  evidenceLayers?: string[];
   plataforma: string;
   titular: string;
   texto: string;
@@ -307,7 +312,12 @@ export type AdCoverageItem = {
   availableEvidenceCount: number;
   targetCount: number;
   transcribedCanonicalCount: number;
+  verifiedTranscribedCount: number;
+  textAvailabilityGap: number;
+  verifiedTranscriptionGap: number;
   transcriptionGap: number;
+  textAvailableComplete: boolean;
+  verifiedComplete: boolean;
   transcriptionComplete: boolean;
   transcribedByPlatform: AdCoveragePlatformCounts;
   exactCreativeIds: { meta: string[]; google: string[]; total: number };
@@ -339,12 +349,15 @@ export type AdCoverageData = {
     exactMetaIds: number;
     exactGoogleIds: number;
     transcribedCanonical: number;
+    verifiedTranscribed: number;
     /** Evidencias canónicas muestreadas, limitadas al objetivo de cada empresa. */
     sampledEvidence?: number;
     /** Parte de la muestra que dispone de un archivo público verificable. */
     sampledEvidenceWithPublicFile?: number;
     targetTotal: number;
     transcriptionGap: number;
+    textAvailabilityGap: number;
+    verifiedTranscriptionGap: number;
     orphanAdvertisers: number;
     orphanTranscribedRecords: number;
   };

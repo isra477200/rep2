@@ -16,7 +16,6 @@ const arsenal = JSON.parse(readFileSync(resolve(root, "public/data/arsenal.json"
 const verticalesData = JSON.parse(readFileSync(resolve(root, "public/data/verticales.json"), "utf8"));
 const vmap = verticalesData.map;
 const vlabel = Object.fromEntries(verticalesData.verticales.map((v) => [v.id, v.label]));
-const byId = new Map(companies.map((c) => [c.id, c]));
 const median = (arr) => { const s = [...arr].sort((a, b) => a - b); return s.length ? s[Math.floor(s.length / 2)] : null; };
 const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 const priced = companies.filter((c) => c.price?.eur > 0);

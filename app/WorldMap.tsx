@@ -241,11 +241,11 @@ export default function WorldMap({
         image.decoding = "async";
         image.addEventListener("error", () => {
           image.remove();
-          element.append(makeInitials(company.name));
+          element.appendChild(makeInitials(company.name));
         });
-        element.append(image);
+        element.appendChild(image);
       } else {
-        element.append(makeInitials(company.name));
+        element.appendChild(makeInitials(company.name));
       }
       element.addEventListener("click", (event) => {
         event.stopPropagation();

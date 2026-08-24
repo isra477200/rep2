@@ -21,7 +21,7 @@ const MANIFEST = path.join(ROOT, "public/data/logos.json");
 const manifest = JSON.parse(await readFile(MANIFEST, "utf8"));
 let done = 0, light = 0, dark = 0, mixed = 0, opaque = 0, missing = 0;
 
-for (const [id, record] of Object.entries(manifest)) {
+for (const record of Object.values(manifest)) {
   if (!record || !record.file) continue;
   const file = path.join(ROOT, "public", record.file.replace(/^\//, ""));
   try {

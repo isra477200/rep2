@@ -13,25 +13,15 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  canonicalAdCompanyId,
+} from "./ad-aliases.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const detailsDir = resolve(root, "public/data/company-details");
 const outputPath = resolve(root, "public/data/ad-corpus.json");
 const ocrPath = resolve(root, "public/data/ad-ocr-transcripts.json");
 const coveragePath = resolve(root, "public/data/ad-coverage.json");
-
-const ALIASES = new Map([
-  ["compra-leads", "compra-leads-ou"],
-  ["idealleader-io", "idealleader"],
-  ["ivandebenito", "ivan-de-benito"],
-  ["kaizex-especialistas-en-seo-local", "kaizex"],
-  ["level-up-agency-vera", "level-up-agency"],
-  ["inmomax-es", "inmomax"],
-  ["doctoralia", "doctoralia-grupo-docplanner"],
-  ["presupuestos-com", "amp-presupuestos-com"],
-  ["docmedia-marketing-dental", "amp-docmedia-es"],
-  ["cronoshare-maxory", "cronoshare"],
-]);
 
 const companies = JSON.parse(readFileSync(resolve(root, "public/data/companies-index.json"), "utf8"));
 const companyById = new Map(companies.map((company) => [company.id, company]));
@@ -171,6 +161,11 @@ const confirmsBrand = (company, advertiser, text) => {
   return brandTokens(company).some((token) => evidence.includes(token));
 };
 
+const isAbsenceRecord = (item) =>
+  /(?:^|\b)(?:0 anuncios|sin anuncios activos|sin resultados atribuibles)(?:\b|$)/i.test(
+    `${item.titular || ""} ${item.texto || ""}`,
+  );
+
 const coverageRows = coverageData?.companies || coverageData?.rows || coverageData?.items || [];
 const coverageEvidence = new Map();
 for (const evidence of coverageData?.creativeFiles || []) {
@@ -190,21 +185,31 @@ for (const row of Array.isArray(coverageRows) ? coverageRows : []) {
 const findCoverageEvidence = (companyId, externalId) =>
   coverageEvidence.get(`${companyId}:${String(externalId).toUpperCase()}`) || null;
 
-const manual = manualData.items.map((item, index) => ({
-  ...item,
-  origen: item.origen || "curado_literal",
-  transcripcion: item.transcripcion || "Manual sobre captura o biblioteca pública",
-  estadoEvidencia: item.estadoEvidencia || "Texto curado · literal o ilegible marcado",
-  atribucion: item.atribucion || "propia_confirmada",
-  aptaPatrones: item.aptaPatrones ?? true,
-  corpusKey: `manual:${item.id}:${String(index + 1).padStart(3, "0")}`,
-}));
+const manual = manualData.items.map((item, index) => {
+  const id = companyById.has(item.id) ? item.id : canonicalAdCompanyId(item.id);
+  const company = companyById.get(id);
+  return {
+    ...item,
+    observedId: item.id !== id ? item.id : (item.observedId || null),
+    observedName: item.id !== id ? item.name : (item.observedName || null),
+    id,
+    name: company?.name || item.name,
+    origen: item.origen || "curado_literal",
+    transcripcion: item.transcripcion || "Manual sobre captura o biblioteca pública",
+    estadoEvidencia: item.estadoEvidencia || "Texto curado · literal o ilegible marcado",
+    atribucion: item.atribucion || "propia_confirmada",
+    aptaPatrones: isAbsenceRecord(item) ? false : (item.aptaPatrones ?? true),
+    corpusKey: `manual:${id}:${String(index + 1).padStart(3, "0")}`,
+  };
+});
 
 const structured = [];
 const externalSeen = new Set();
 for (const file of readdirSync(detailsDir).filter((name) => name.endsWith(".json")).sort()) {
   const detail = JSON.parse(readFileSync(resolve(detailsDir, file), "utf8"));
-  const canonicalId = companyById.has(detail.id) ? detail.id : ALIASES.get(detail.id);
+  const canonicalId = companyById.has(detail.id)
+    ? detail.id
+    : canonicalAdCompanyId(detail.id);
   const company = canonicalId ? companyById.get(canonicalId) : null;
   if (!company) continue;
   const headings = [...String(detail.body || "").matchAll(/^## Anuncio consolidado · (.+)$/gm)];
@@ -214,7 +219,9 @@ for (const file of readdirSync(detailsDir).filter((name) => name.endsWith(".json
     const start = headings[index].index;
     const end = headings[index + 1]?.index ?? detail.body.length;
     const section = detail.body.slice(start, end);
-    const platform = /^CR/i.test(externalId) || /Google Ads|Google Transparency/i.test(section)
+    // El tipo de ID es determinista. El copy puede mencionar "Google Ads"
+    // dentro de una creatividad Meta y nunca debe cambiar su plataforma.
+    const platform = /^CR/i.test(externalId)
       ? "Google Ads Transparency"
       : "Meta Ads Library";
     const globalKey = `${platform}:${externalId.toUpperCase()}`;
@@ -245,7 +252,7 @@ for (const file of readdirSync(detailsDir).filter((name) => name.endsWith(".json
       /\*\*Formato real:\*\*\s*([^\n]+)/i,
       /\*\*Formato:\*\*\s*\\?\[?\\?["']?([^\]"'\n]+)/i,
     ]);
-    const ownConfirmed = platform.startsWith("Meta") || confirmsBrand(company, advertiser, text);
+    const ownConfirmed = confirmsBrand(company, advertiser, text);
     const mapped = findCoverageEvidence(canonicalId, externalId);
     const filePath = mapped?.file || mapped?.publicFile || "";
     const title = archivedTitle || titleFrom(text);
@@ -275,23 +282,51 @@ for (const file of readdirSync(detailsDir).filter((name) => name.endsWith(".json
   }
 }
 
-// Conserva el curado manual cuando el mismo copy ya estaba estructurado.
-const structuredDeduped = structured.filter((item) => {
-  const candidates = manual.filter((manualItem) => manualItem.id === item.id);
-  return !candidates.some((candidate) => similar(
-    `${candidate.titular}\n${candidate.texto}`,
-    `${item.titular}\n${item.texto}`,
-  ));
-});
+// Cuando el mismo copy existe en curado manual y biblioteca estructurada, se
+// fusiona el linaje en vez de descartar el ID/URL exactos de la biblioteca.
+const structuredDeduped = [];
+for (const item of structured) {
+  const candidate = manual.find(
+    (manualItem) =>
+      manualItem.id === item.id &&
+      similar(
+        `${manualItem.titular}\n${manualItem.texto}`,
+        `${item.titular}\n${item.texto}`,
+      ),
+  );
+  if (!candidate) {
+    structuredDeduped.push(item);
+    continue;
+  }
+  candidate.externalId ||= item.externalId;
+  candidate.fuenteUrl ||= item.fuenteUrl;
+  candidate.file ||= item.file;
+  candidate.anunciante ||= item.anunciante;
+  candidate.estadoEvidencia = item.estadoEvidencia || candidate.estadoEvidencia;
+  candidate.atribucion =
+    candidate.atribucion === "propia_confirmada"
+      ? candidate.atribucion
+      : item.atribucion;
+  candidate.aptaPatrones =
+    candidate.aptaPatrones !== false && item.aptaPatrones !== false;
+  candidate.evidenceLayers = uniqueLines(
+    `${candidate.origen || "curado_literal"}\n${item.origen || "biblioteca_estructurada"}`,
+  ).split("\n");
+}
 
 const ocr = (ocrData.items || []).map((item, index) => {
-  const company = companyById.get(item.id);
+  const id = companyById.has(item.id) ? item.id : canonicalAdCompanyId(item.id);
+  const company = companyById.get(id);
   const ownProbable = company ? confirmsBrand(company, "", `${item.titular}\n${item.texto}`) : false;
   return {
     ...item,
+    observedId: item.id !== id ? item.id : (item.observedId || null),
+    observedName: item.id !== id ? item.name : (item.observedName || null),
+    id,
+    name: company?.name || item.name,
     atribucion: ownProbable ? "propia_probable_por_marca_visible" : (item.atribucion || "asociada_a_ficha"),
     aptaPatrones: false,
-    corpusKey: `ocr:${item.id}:${item.archivoSha256 || String(index + 1).padStart(4, "0")}`,
+    corpusKey: `ocr:${id}:${item.archivoSha256 || String(index + 1).padStart(4, "0")}`,
   };
 });
 

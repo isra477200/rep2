@@ -16,7 +16,6 @@ import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import CompanyLogo from "./CompanyLogo";
-import AdsLaboratory from "./AdsLaboratory";
 import {
   classifyMediaResolution,
   dimensionsFromMedia,
@@ -26,12 +25,11 @@ import {
   MediaResolutionNotice,
   type MediaDimensions,
 } from "./MediaResolution";
-import RecordDetail from "./RecordDetail";
-import PositioningSimulator from "./PositioningSimulator";
 import type {
   AdsKitData,
   Analytics,
   AngulosData,
+  AnuncioReal,
   AnunciosRealesData,
   ArsenalData,
   Company,
@@ -63,9 +61,14 @@ import type {
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 
 const WorldMap = lazy(() => import("./WorldMap"));
+const OperationsHub = lazy(() => import("./OperationsHub"));
+const AdsLaboratory = lazy(() => import("./AdsLaboratory"));
+const PositioningSimulator = lazy(() => import("./PositioningSimulator"));
+const RecordDetail = lazy(() => import("./RecordDetail"));
 
 type View =
   | "home"
+  | "operations"
   | "exec"
   | "resources"
   | "tools"
@@ -92,6 +95,7 @@ type View =
 
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
+  { id: "operations", label: "Operación", icon: "◆" },
   { id: "exec", label: "Ejecutar", icon: "▸" },
   { id: "resources", label: "Recursos", icon: "⤓" },
   { id: "tools", label: "Herramientas", icon: "◳" },
@@ -119,7 +123,7 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["exec", "resources", "tools", "adlab", "arsenal", "landings"] },
+  { label: "Acción", ids: ["operations", "exec", "resources", "tools", "adlab", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "map", "countries", "ads", "compare"] },
   { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
@@ -385,7 +389,7 @@ function CompanyCard({
       <div className="card-top">
         <CompanyLogo company={c} logos={logos} />
         <span style={{ display: "inline-flex", gap: 6, alignItems: "center" }}>
-          {c.addedAt === "2026-08-23" && <span className="badge-nueva">NUEVA</span>}
+          {c.addedAt === "2026-08-23" && <span className="badge-nueva">ALTA 23/08</span>}
           <span className={"score score-" + scoreClass}>{c.score}/100</span>
         </span>
       </div>
@@ -488,48 +492,71 @@ export default function Portal() {
     [mrrChurn, setMrrChurn] = useState("5");
   const [actionStates, setActionStates] = useState<Record<string, { estado: string; nota: string }>>({});
   useEffect(() => {
+    let storedNav = false;
+    let storedActions: Record<string, { estado: string; nota: string }> | null = null;
+    let storedLanding: {
+      v?: string;
+      z?: string;
+      s?: string;
+      t?: string;
+      p?: "garantia" | "anticuota" | "velocidad";
+    } | null = null;
     try {
-      const storedNav = window.localStorage.getItem("rv-nav-collapsed");
-      if (storedNav === "1") setNavCollapsed(true);
-      const storedActions = window.localStorage.getItem("rv-backlog-estado");
-      if (storedActions) setActionStates(JSON.parse(storedActions));
-      const storedLanding = window.localStorage.getItem("rv-landing");
-      if (storedLanding) {
-        const saved = JSON.parse(storedLanding);
-        if (saved.v) setLandVertical(saved.v);
-        if (saved.z) setLandZona(saved.z);
-        if (saved.s) setLandServicio(saved.s);
-        if (saved.t) setLandTelefono(saved.t);
-        if (saved.p) setLandTemplate(saved.p);
-      }
-    } catch {}
+      storedNav = window.localStorage.getItem("rv-nav-collapsed") === "1";
+      const rawActions = window.localStorage.getItem("rv-backlog-estado");
+      if (rawActions) storedActions = JSON.parse(rawActions);
+      const rawLanding = window.localStorage.getItem("rv-landing");
+      if (rawLanding) storedLanding = JSON.parse(rawLanding);
+    } catch {
+      return undefined;
+    }
+    const hydrationFrame = window.requestAnimationFrame(() => {
+      if (storedNav) setNavCollapsed(true);
+      if (storedActions) setActionStates(storedActions);
+      if (storedLanding?.v) setLandVertical(storedLanding.v);
+      if (storedLanding?.z) setLandZona(storedLanding.z);
+      if (storedLanding?.s) setLandServicio(storedLanding.s);
+      if (storedLanding?.t) setLandTelefono(storedLanding.t);
+      if (storedLanding?.p) setLandTemplate(storedLanding.p);
+    });
+    return () => window.cancelAnimationFrame(hydrationFrame);
   }, []);
   useEffect(() => {
     try {
       window.localStorage.setItem("rv-landing", JSON.stringify({ v: landVertical, z: landZona, s: landServicio, t: landTelefono, p: landTemplate }));
-    } catch {}
+    } catch {
+      /* El almacenamiento local es una mejora opcional. */
+    }
   }, [landVertical, landZona, landServicio, landTelefono, landTemplate]);
   const toggleNav = () => {
     setNavCollapsed((current) => {
-      try { window.localStorage.setItem("rv-nav-collapsed", current ? "0" : "1"); } catch {}
+      try { window.localStorage.setItem("rv-nav-collapsed", current ? "0" : "1"); } catch {
+        /* El estado visual sigue funcionando aunque el navegador bloquee storage. */
+      }
       return !current;
     });
   };
   const setActionState = (title: string, estado: string) => {
     setActionStates((current) => {
       const next = { ...current, [title]: { estado, nota: current[title]?.nota || "" } };
-      try { window.localStorage.setItem("rv-backlog-estado", JSON.stringify(next)); } catch {}
+      try { window.localStorage.setItem("rv-backlog-estado", JSON.stringify(next)); } catch {
+        /* La edición actual no depende de que la persistencia esté disponible. */
+      }
       return next;
     });
   };
   const [view, setViewState] = useState<View>("home");
   const setView = (next: View) => {
-    try { window.localStorage.setItem("rv-last-view", next); } catch {}
+    try { window.localStorage.setItem("rv-last-view", next); } catch {
+      /* La navegación no se bloquea si el navegador rechaza la persistencia. */
+    }
     setViewState(next);
   };
   const [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
     [country, setCountry] = useState("Todos");
+  const [globalAds, setGlobalAds] = useState<AnuncioReal[] | null>(null);
+  const [adLabInitialQuery, setAdLabInitialQuery] = useState("");
   const [priceOnly, setPriceOnly] = useState(false),
     [channel, setChannel] = useState("Todos"),
     [visible, setVisible] = useState(24);
@@ -667,7 +694,7 @@ export default function Portal() {
         setCruces(crc);
         setAnunciosReales(anr);
         setAngulos(ang);
-        setCompare(c.slice(0, 3).map((x: Company) => x.id));
+        setCompare([]);
         const params = new URLSearchParams(window.location.search);
         const requestedView = params.get("vista");
         if (nav.some((item) => item.id === requestedView)) setView(requestedView as View);
@@ -675,7 +702,9 @@ export default function Portal() {
           try {
             const lastView = window.localStorage.getItem("rv-last-view");
             if (lastView && nav.some((item) => item.id === lastView)) setView(lastView as View);
-          } catch {}
+          } catch {
+            /* Sin una vista guardada válida se conserva la vista inicial. */
+          }
         }
         const requested = params.get("empresa");
         const requestedCompany = requested
@@ -723,6 +752,23 @@ export default function Portal() {
       });
   }, []);
 
+  useEffect(() => {
+    if (query.trim().length < 2 || globalAds !== null) return;
+    const controller = new AbortController();
+    fetch("/data/ad-corpus.json", { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<AnunciosRealesData>;
+      })
+      .then((data) => setGlobalAds(data.items))
+      .catch((searchError: unknown) => {
+        if (searchError instanceof DOMException && searchError.name === "AbortError")
+          return;
+        setGlobalAds([]);
+      });
+    return () => controller.abort();
+  }, [globalAds, query]);
+
   const scopes = useMemo(
     () => ["Todos", ...new Set(companies.map((x) => x.scope))],
     [companies],
@@ -758,6 +804,37 @@ export default function Portal() {
     () => new Map(companies.map((company) => [company.id, company])),
     [companies],
   );
+  const globalCompanyResults = useMemo(() => {
+    const value = query.trim().toLocaleLowerCase("es");
+    if (value.length < 2) return [];
+    return companies
+      .filter((company) =>
+        [
+          company.name,
+          company.primaryCountry,
+          company.scope,
+          company.agencyType,
+          company.offer,
+          company.priceLocal,
+          company.channels.join(" "),
+        ]
+          .join(" ")
+          .toLocaleLowerCase("es")
+          .includes(value),
+      )
+      .slice(0, 5);
+  }, [companies, query]);
+  const globalAdResults = useMemo(() => {
+    const value = query.trim().toLocaleLowerCase("es");
+    if (value.length < 2 || !globalAds) return [];
+    return globalAds
+      .filter((item) =>
+        `${item.name} ${item.titular} ${item.texto} ${item.angulo} ${item.externalId || ""}`
+          .toLocaleLowerCase("es")
+          .includes(value),
+      )
+      .slice(0, 5);
+  }, [globalAds, query]);
   const mrrProj = useMemo(() => {
     const clientes = Number(mrrClientes.replace(",", "."));
     const cuota = Number(mrrCuota.replace(",", "."));
@@ -788,12 +865,12 @@ export default function Portal() {
     lines.push(`Corte: ${BUILD_DATE_LONG} · generado desde la base viva del portal`);
     lines.push("");
     lines.push(`1. BASE`);
-    lines.push(`${fmt(companies.length)} fichas de competidores en ${new Set(companies.map((c) => c.primaryCountry)).size} países; ${fmt(spain.length)} operan en España.${nuevas.length ? ` Hoy se han incorporado ${nuevas.length} fichas nuevas desde la caza de anuncios en vivo (Meta, Google, Instagram).` : ""}`);
+    lines.push(`${fmt(companies.length)} fichas de competidores en ${new Set(companies.map((c) => c.primaryCountry)).size} mercados primarios; ${fmt(spain.length)} operan en España.${nuevas.length ? ` El corte del 23/08/2026 incorporó ${nuevas.length} fichas desde la revisión de anuncios (Meta, Google, Instagram).` : ""}`);
     lines.push("");
     lines.push(`2. HALLAZGOS DE LOS CRUCES`);
     (cruces?.findings || []).forEach((f, i) => lines.push(`${i + 1}. ${f}`));
     lines.push("");
-    lines.push(`3. PATRONES DE LOS GANADORES`);
+    lines.push(`3. PATRONES DE LOS REFERENTES CON SCORE 80+`);
     (patterns?.findings || []).slice(0, 4).forEach((f) => lines.push(`· ${f.title} (${f.stat}): ${f.detail}`));
     lines.push("");
     lines.push(`4. LO QUE DICEN ${fmt(angulos?.total || 0)} ANUNCIOS REALES`);
@@ -835,25 +912,25 @@ export default function Portal() {
     const U = nice.unidad, Uc = U.charAt(0).toUpperCase() + U.slice(1);
     const TEMPLATES = {
       garantia: {
-        pill: `${S.charAt(0).toUpperCase() + S.slice(1)} · exclusiva por zona`,
-        h1: `${Uc} nuevos cada semana para ${nice.cliente} en ${Z} — o no cobramos`,
-        sub: `Respondemos a cada solicitud en menos de 10 minutos, trabajamos con UNA sola empresa por zona y sin permanencia. Tú atiendes; nosotros llenamos la agenda.`,
-        gTitle: "Garantía por escrito",
-        gText: `Si el primer mes no recibes las ${U} acordadas en tu propuesta, seguimos trabajando gratis hasta conseguirlas. Firmado en el contrato, no en un anuncio.`,
+        pill: `${S.charAt(0).toUpperCase() + S.slice(1)} · hipótesis de reducción de riesgo`,
+        h1: `${Uc} para ${nice.cliente} en ${Z}, con objetivo y remedio definidos antes de lanzar`,
+        sub: `Borrador para configurar volumen, SLA, exclusividad, duración y remedio. Ninguna condición debe publicarse hasta comprobar capacidad y dejarla por escrito.`,
+        gTitle: "Garantía por configurar",
+        gText: `Define una métrica, un periodo, sus exclusiones y un único remedio operativo. Si no quedan cerrados en el contrato, elimina este bloque.`,
       },
       anticuota: {
-        pill: `Sin cuota fija · pagas por resultado`,
-        h1: `Paga solo por cada ${U.replace(/s$/, "")} que recibes. Sin cuota, sin permanencia, sin letra pequeña.`,
-        sub: `Se acabó pagar mensualidades por contactos que no llegan. Cada ${U.replace(/s$/, "")} tiene precio cerrado, es exclusivo para ti y si no cumple los criterios pactados, se repone. Compras cuando quieres.`,
-        gTitle: "Garantía de reposición",
-        gText: `Cada contacto se entrega con zona, servicio e intención verificados. Si uno no cumple lo pactado, se repone sin discusión. Solo pagas ${U} válidos.`,
+        pill: `Hipótesis · precio por resultado`,
+        h1: `Evalúa un precio por cada ${U.replace(/s$/, "")} válida en lugar de una cuota genérica.`,
+        sub: `Borrador para fijar precio, criterios, atribución, duplicados, reposición, duración y límite de compra. No presupone que el modelo esté disponible.`,
+        gTitle: "Regla de reposición por configurar",
+        gText: `Describe qué invalida una pieza, cómo se prueba y qué remedio se aplica. Sin esos campos firmados, no publiques una promesa de reposición.`,
       },
       velocidad: {
         pill: `SLA firmado · 10 minutos`,
-        h1: `El primero en llamar se lleva al cliente. Nosotros contactamos en menos de 10 minutos.`,
-        sub: `El 40% de los contactos se pierde por respuesta lenta. Nuestro sistema responde, filtra y agenda cada solicitud de ${S} en ${Z} en menos de 10 minutos, 24/7 — mientras tu competencia responde al día siguiente.`,
+        h1: `Cada minuto cuenta. Proponemos un primer contacto en menos de 10 minutos.`,
+        sub: `Esta plantilla convierte la velocidad en una condición medible: respuesta, filtro y agenda para cada solicitud de ${S} en ${Z}. El horario, la cobertura y el remedio deben quedar configurados antes de publicarla.`,
         gTitle: "SLA por contrato",
-        gText: `Tiempo de primera respuesta bajo 10 minutos, medido y auditable en tu informe semanal. Si un mes incumplimos el SLA medio, ese mes tiene descuento automático. Por contrato.`,
+        gText: `Configura horario, método de medición, excepciones y remedio para el SLA. El descuento u otra compensación solo se mostrará si está aceptado en el contrato.`,
       },
     } as const;
     const T = TEMPLATES[landTemplate];
@@ -891,40 +968,40 @@ button{margin-top:18px;width:100%;background:#25d366;color:#fff;border:0;border-
 footer{border-top:1px solid #e6ebf2;padding:26px 0;font-size:12.5px;color:var(--muted)}
 @media(max-width:640px){.cta.sec{margin-left:0;margin-top:12px}}
 </style></head><body>
-<header><div class="wrap"><div class="logo">Red<span>Vitalia</span></div><span class="pill">${Z} · plazas limitadas</span></div></header>
+<header><div class="wrap"><div class="logo">Red<span>Vitalia</span></div><span class="pill">BORRADOR · disponibilidad por comprobar</span></div></header>
 <section class="hero"><div class="wrap">
-<span class="pill">${T.pill}</span>
+<span class="pill">BORRADOR EDITORIAL · ${T.pill}</span>
 <h1>${T.h1}</h1>
 <p class="sub">${T.sub}</p>
-<a class="cta" href="${wa(`Hola, soy de ${zona}. Quiero información sobre ${servicio} con RedVitalia.`)}">Quiero mi zona → WhatsApp directo</a>
+<a class="cta" href="${wa(`Hola, soy de ${zona}. Quiero evaluar ${servicio} con RedVitalia.`)}">Evaluar encaje → WhatsApp</a>
 <a class="cta sec" href="#como">Ver cómo funciona</a>
 </div></section>
 <div class="wrap"><div class="bullets">
-<div class="b"><b>⚡ SLA de 10 minutos</b><p>El mercado responde en horas; los mejores, en minutos. Nos obligamos por escrito a contactar cada solicitud en menos de 10 minutos.</p></div>
-<div class="b"><b>🔒 Exclusividad real</b><p>Una sola empresa por zona y especialidad. Ningún contacto se comparte, se revende ni se recicla.</p></div>
-<div class="b"><b>📄 Sin permanencia</b><p>Nos ganamos tu renovación cada mes con resultados, no con una cláusula en la letra pequeña.</p></div>
-<div class="b"><b>✅ Cualificación previa</b><p>Filtramos por zona, servicio e intención antes de pasarte el contacto. Hablas solo con quien puede comprar.</p></div>
+<div class="b"><b>⚡ SLA configurable</b><p>Objetivo propuesto de primer contacto en menos de 10 minutos. Debe validarse contra la capacidad operativa y quedar por escrito.</p></div>
+<div class="b"><b>🔒 Exclusividad configurable</b><p>La zona y la regla de no compartir contactos solo deben publicarse cuando estén comprobadas y aceptadas en el contrato.</p></div>
+<div class="b"><b>📄 Condiciones transparentes</b><p>Duración, renovación y cancelación se muestran en la propuesta final; esta plantilla no las presupone.</p></div>
+<div class="b"><b>✅ Criterios de cualificación</b><p>Zona, servicio e intención se definen antes del test para poder medir qué contactos cumplen lo pactado.</p></div>
 </div></div>
-<section class="faixa"><div class="wrap"><h2>Hemos analizado ${fmt(v.n)} empresas de captación de tu sector en todo el mundo. Sabemos exactamente qué funciona.</h2><a href="${wa(`Hola, quiero la auditoría gratuita de captación para ${servicio} en ${zona}.`)}">Pedir auditoría gratuita</a></div></section>
+<section class="faixa"><div class="wrap"><h2>Hemos analizado ${fmt(v.n)} empresas de captación de este sector. Es evidencia de mercado para formular un test, no prueba de rendimiento.</h2><a href="${wa(`Hola, quiero la auditoría de captación para ${servicio} en ${zona}.`)}">Pedir auditoría</a></div></section>
 <section class="pasos" id="como"><div class="wrap"><h2>Cómo funciona</h2>
-<div class="paso"><i>1</i><div><b>Auditoría gratuita (48 h).</b> Analizamos tu zona, tu competencia y tu capacidad real de atender ${nice.unidad} nuevos.</div></div>
-<div class="paso"><i>2</i><div><b>Campañas y filtro.</b> Lanzamos la captación con nuestro sistema probado y cualificamos cada contacto antes de pasártelo.</div></div>
-<div class="paso"><i>3</i><div><b>Agenda llena, medida cada semana.</b> Recibes ${nice.unidad} verificados con informe semanal claro: coste, origen y resultado de cada uno.</div></div>
+<div class="paso"><i>1</i><div><b>Diagnóstico por configurar.</b> Acordamos plazo, alcance, zona y capacidad real de atender ${nice.unidad} nuevos.</div></div>
+<div class="paso"><i>2</i><div><b>Test controlado.</b> Se aprueban campaña, criterios y una sola variable antes de invertir.</div></div>
+<div class="paso"><i>3</i><div><b>Revisión semanal.</b> Se registran inversión, lead, cita, asistencia y venta sin prometer un volumen no medido.</div></div>
 </div></section>
 <section class="datos"><div class="wrap"><h2>Datos, no promesas</h2><div class="grid">
 <div class="dato"><b>${fmt(v.n)}</b><span>competidores analizados en tu sector</span></div>
-<div class="dato"><b>10 min</b><span>SLA de respuesta firmado (el nº1 del mercado promete 1 min; la media, horas)</span></div>
-<div class="dato"><b>${v.medianEur ? fmt(v.medianEur) + " €" : "—"}</b><span>mediana mundial de cuota en tu sector — sabemos lo que vale cada ${nice.unidad.replace(/s$/, "")}</span></div>
-<div class="dato"><b>0 €</b><span>de permanencia: te quedas solo si funciona</span></div>
+<div class="dato"><b>10 min</b><span>objetivo de SLA propuesto; confirmar cobertura y remedio antes de publicar</span></div>
+<div class="dato"><b>${v.medianEur ? fmt(v.medianEur) + " €" : "—"}</b><span>mediana de las tarifas públicas comparables documentadas en este vertical</span></div>
+<div class="dato"><b>A definir</b><span>duración y cancelación deben configurarse en la propuesta final</span></div>
 </div>
 <div class="garantia"><h3>${T.gTitle}</h3><p>${T.gText}</p></div>
 </div></section>
-<section class="form"><div class="wrap"><h2>Reserva tu zona</h2><div class="caja">
+<section class="form"><div class="wrap"><h2>Evaluar encaje en tu zona</h2><div class="caja">
 <label>Tu nombre</label><input id="n" placeholder="Nombre y apellido">
 <label>Tu negocio</label><input id="e" placeholder="Nombre del negocio">
 <label>Zona</label><input id="z" value="${Z}">
-<button onclick="var n=document.getElementById('n').value,e=document.getElementById('e').value,z=document.getElementById('z').value;location.href='https://wa.me/${tel}?text='+encodeURIComponent('Hola, soy '+n+' de '+e+' ('+z+'). Quiero reservar mi zona para ${servicio.replace(/'/g, "\\'")}.')">Reservar por WhatsApp →</button>
-<p style="font-size:12px;color:var(--muted);margin-top:10px">Sin compromiso. Respuesta en menos de 10 minutos en horario laboral.</p>
+<button onclick="var n=document.getElementById('n').value,e=document.getElementById('e').value,z=document.getElementById('z').value;location.href='https://wa.me/${tel}?text='+encodeURIComponent('Hola, soy '+n+' de '+e+' ('+z+'). Quiero evaluar el encaje para ${servicio.replace(/'/g, "\\'")}.')">Solicitar diagnóstico por WhatsApp →</button>
+<p style="font-size:12px;color:var(--muted);margin-top:10px">El envío no confirma disponibilidad, exclusividad, precio ni SLA.</p>
 </div></div></section>
 <footer><div class="wrap">RedVitalia · Inteligencia y captación de clientes · ${Z} · ${new Date().getFullYear()}</div></footer>
 </body></html>`;
@@ -941,24 +1018,24 @@ footer{border-top:1px solid #e6ebf2;padding:26px 0;font-size:12.5px;color:var(--
 Preparada por RedVitalia · ${new Date().toLocaleDateString("es-ES")}
 
 1. TU MERCADO, EN DATOS
-Hemos auditado ${vertical.n} empresas de captación del vertical «${vertical.label}» en todo el mundo (${vertical.spainN} en España). ${vertical.medianEur ? `El precio mediano del mercado es de ${vertical.medianEur} € y solo una parte publica tarifas.` : "La mayoría oculta sus tarifas."} El ${vertical.adsActivePct}% mantiene anuncios activos: quien vive de captar, invierte en captarse a sí mismo. Referentes analizados: ${refs}.
+La muestra contiene ${vertical.n} empresas de captación del vertical «${vertical.label}» (${vertical.spainN} en España). ${vertical.medianEur ? `La mediana de las tarifas públicas comparables documentadas es ${vertical.medianEur} €.` : "No hay una mediana pública comparable suficiente."} El ${vertical.adsActivePct}% tiene anuncios activos documentados en el corte. Referencias con score editorial alto: ${refs}.
 
 2. QUÉ TE PROPONEMOS
-Citas cualificadas con clientes de ${zona} interesados en ${servicio}, agendadas directamente en tu calendario por nuestro equipo de setters. Tú solo atiendes la reunión.
+Propuesta editorial: captar, cualificar y agendar oportunidades de ${zona} interesadas en ${servicio}. El volumen, la definición de cita válida y las responsabilidades se fijan antes del test; no son resultados históricos.
 
-3. NUESTRAS TRES GARANTÍAS (por contrato, no de palabra)
-· Garantía de Zona Protegida: un solo negocio de tu sector en ${zona}. Tu plaza queda registrada y bloqueada.
-· Cita válida o repuesta: la cita duplicada, falsa o fuera de zona se repone sin coste, con criterios firmados antes de empezar.
-· Volumen o seguimos gratis: si un ciclo no alcanza el volumen pactado, seguimos trabajando sin coste hasta cumplirlo.
+3. CONDICIONES PROPUESTAS A CONFIGURAR
+· Protección territorial: comprobar disponibilidad, alcance y duración antes de ofrecerla.
+· Cita válida: definir duplicado, falsedad, zona, intención, prueba y remedio antes de empezar.
+· Volumen: fijar objetivo, periodo, exclusiones y un remedio operativo concreto; si falta alguno, no presentarlo como garantía.
 
 4. CÓMO ARRANCAMOS (Semana 0)
-Firma → conoces a tu setter → apruebas el guion por escrito → criterios de cita válida firmados → lanzamos. La primera factura llega solo cuando todo lo anterior está hecho.
+Diagnóstico → responsable operativo → guion aprobado → criterios de cita válida firmados → test. Facturación y fecha de inicio se detallan en la versión contractual.
 
 5. INVERSIÓN
-${precio} €/mes, sin permanencia oculta ni renovación automática escondida. Compáralo con un comercial en plantilla (≈2.200 €/mes con Seguridad Social, sin garantía de volumen).
+${precio} €/mes. Duración, renovación y cancelación se detallan expresamente. La comparación económica se hará contra el coste total documentado del canal actual del cliente.
 
 6. TU PLAZA
-Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fecha de esta propuesta, está LIBRE. Reservarla no cuesta nada: firmarla, sí — para tu competencia.
+La disponibilidad territorial no se presupone. Antes de usar exclusividad, comprobar y registrar si ${zona} está disponible para ${servicio}; si no puede demostrarse, retirar este argumento.
 
 [Firma / contacto RedVitalia]`;
   }, [propVertical, propZona, propServicio, propPrecio, verticales]);
@@ -1500,25 +1577,53 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
             <input
               value={query}
               onChange={(e) => {
-                const nextQuery = e.target.value;
-                setQuery(nextQuery);
-                if (
-                  nextQuery &&
-                  !(["companies", "funnels", "ads", "compare"] as View[]).includes(
-                    view,
-                  )
-                ) {
-                  go("companies");
-                  setToast("Búsqueda abierta en Empresas");
+                setQuery(e.target.value);
+              }}
+              onKeyDown={(event) => {
+                if (event.key !== "Enter") return;
+                if (globalCompanyResults[0]) {
+                  openCompany(globalCompanyResults[0]);
+                  setQuery("");
+                  return;
+                }
+                if (globalAdResults[0]) {
+                  setAdLabInitialQuery(query);
+                  go("adlab");
+                  setQuery("");
                 }
               }}
-              placeholder="Busca empresa, país, modelo, canal o precio…"
+              placeholder="Busca empresa, mercado, anuncio, titular o ID…"
               aria-label="Buscar en toda la investigación"
+              role="combobox"
+              aria-controls="global-search-results"
+              aria-expanded={query.trim().length >= 2}
             />
             {query && (
               <button onClick={() => setQuery("")} aria-label="Borrar búsqueda">
                 ×
               </button>
+            )}
+            {query.trim().length >= 2 && (
+              <div id="global-search-results" className="global-search-results" role="listbox" aria-label="Resultados de búsqueda global">
+                <section>
+                  <header><b>EMPRESAS</b><span>{globalCompanyResults.length} primeras coincidencias</span></header>
+                  {globalCompanyResults.map((company) => (
+                    <button key={company.id} role="option" aria-selected="false" onClick={() => { openCompany(company); setQuery(""); }}>
+                      <b>{company.name}</b><span>{company.primaryCountry} · {company.agencyType}</span>
+                    </button>
+                  ))}
+                  {!globalCompanyResults.length && <p>Sin coincidencias en fichas.</p>}
+                </section>
+                <section>
+                  <header><b>ANUNCIOS</b><span>{globalAds === null ? "Cargando corpus…" : `${globalAdResults.length} primeras coincidencias`}</span></header>
+                  {globalAdResults.map((item) => (
+                    <button key={item.corpusKey || `${item.id}-${item.titular}`} role="option" aria-selected="false" onClick={() => { setAdLabInitialQuery(query); go("adlab"); setQuery(""); }}>
+                      <b>{item.titular || item.name}</b><span>{item.name} · {item.plataforma}</span>
+                    </button>
+                  ))}
+                  {globalAds !== null && !globalAdResults.length && <p>Sin coincidencias en el corpus.</p>}
+                </section>
+              </div>
             )}
           </div>
           <div className="data-date">CORTE · {BUILD_DATE}</div>
@@ -1540,33 +1645,33 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   una única sala de mando diseñada para decidir y ejecutar.
                 </p>
                 <div className="hero-buttons">
-                  <button onClick={() => go("companies")}>
-                    Explorar las {fmt(companies.length)} empresas
+                  <button onClick={() => go("operations")}>
+                    Abrir Centro de Operaciones
+                  </button>
+                  <button className="secondary" onClick={() => go("companies")}>
+                    Explorar {fmt(companies.length)} empresas
                   </button>
                   <button className="secondary" onClick={() => go("map")}>
                     Abrir mapa 3D
                   </button>
-                  <button className="secondary" onClick={() => go("blueprint")}>
-                    Abrir Blueprint
-                  </button>
                 </div>
               </div>
               <div className="hero-orbit">
-                <span>195</span>
-                <strong>países auditados</strong>
-                <small>Una sola fuente canónica</small>
+                <span>{new Set(companies.map((company) => company.primaryCountry)).size}</span>
+                <strong>mercados representados</strong>
+                <small>963 fichas · atlas territorial de {summary.countries} Estados</small>
               </div>
             </section>
             <section className="stat-grid">
               <article>
                 <span>EMPRESAS CANÓNICAS</span>
-                <strong>{fmt(summary.companies)}</strong>
-                <small>Fichas madre estructuradas y trazables</small>
+                <strong>{fmt(companies.length)}</strong>
+                <small>Fichas indexadas; profundidad declarada por separado</small>
               </article>
               <article>
                 <span>MATERIALES LOCALES</span>
-                <strong>{fmt(summary.media)}</strong>
-                <small>Imágenes, vídeo y documentos</small>
+                <strong>{fmt(companies.reduce((sum, company) => sum + company.media.length, 0))}</strong>
+                <small>Imágenes, vídeo y documentos enlazados en el índice</small>
               </article>
               <article>
                 <span>URLS PÚBLICAS ÚNICAS</span>
@@ -1581,15 +1686,15 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 </small>
               </article>
               <article>
-                <span>PRECIOS AUDITADOS · LOCAL + EUR</span>
+                <span>PRECIOS PROFUNDOS · SNAPSHOT BASE</span>
                 <strong>{fmt(auditedPriceRecords)}</strong>
-                <small>{auditedPricePercent}% del universo</small>
+                <small>{auditedPricePercent}% del snapshot profundo de {summary.companies} fichas</small>
               </article>
             </section>
 
             {cruces && cruces.findings.length > 0 && (
               <section className="home-finding">
-                <span className="home-finding-badge">HALLAZGO DEL DÍA</span>
+                <span className="home-finding-badge">HALLAZGO DEL CORTE</span>
                 <p>{cruces.findings[0]}</p>
                 <button className="ref-chip" onClick={() => go("cruces")}>Ver todos los cruces →</button>
               </section>
@@ -1597,6 +1702,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
 
             <section className="quick-grid">
               {([
+                ["operations", "◆", "Centro de Operaciones", "Prioridad, campaña 360, OCR, tests, métricas y battlecards"],
                 ["informe", "≡", "Informe ejecutivo", "El mercado en una página, listo para copiar o imprimir"],
                 ["cruces", "⤫", "Cruces", `${cruces?.findings.length || 0} hallazgos · 12 análisis cruzados`],
                 ["landings", "▭", "Landings", "3 plantillas por nicho basadas en conclusiones"],
@@ -1618,7 +1724,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 <div className="section-head">
                   <div>
                     <p className="eyebrow">RADAR ROJO · ESPAÑA</p>
-                    <h2>Los 10 competidores más peligrosos ahora mismo</h2>
+                    <h2>Los 10 competidores con mayor amenaza editorial en el corte</h2>
                   </div>
                 </div>
                 <div className="median-list">
@@ -1638,7 +1744,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
             <section className="brand-coverage">
               <div className="brand-coverage-mark">✓</div>
               <div>
-                <p className="eyebrow">IDENTIDAD VISUAL CON TRAZABILIDAD</p>
+                <p className="eyebrow">IDENTIDAD VISUAL · SNAPSHOT BASE DE {Object.keys(logos).length}</p>
                 <h2>
                   {fmt(summary.logos.authentic)} marcas auténticas guardadas
                   localmente
@@ -1647,9 +1753,9 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   {fmt(summary.logos.official)} logos o wordmarks,{" "}
                   {fmt(summary.logos.favicon)} iconos oficiales y{" "}
                   {fmt(summary.logos.platform)} perfiles de plataforma
-                  verificados. Las {fmt(summary.logos.fallback)} fichas
-                  restantes muestran iniciales honestas; ninguna utiliza una
-                  marca inventada ni una imagen enlazada en caliente.
+                  verificados dentro del manifiesto visual base. Sus {fmt(summary.logos.fallback)}
+                  fallbacks muestran iniciales honestas. Las fichas añadidas después
+                  se declaran fuera de este porcentaje hasta verificar su marca.
                 </p>
               </div>
               <strong>
@@ -1714,6 +1820,21 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
           </div>
         )}
 
+        {view === "operations" && (
+          <div className="view">
+            <Suspense fallback={<div className="deep-loading">Preparando la sala de mando…</div>}>
+              <OperationsHub
+                companies={companies}
+                onOpenCompany={(id) => {
+                  const company = companyById.get(id);
+                  if (company) openCompany(company);
+                }}
+                onOpenLab={() => go("adlab")}
+              />
+            </Suspense>
+          </div>
+        )}
+
         {view === "exec" && (
           <div className="view">
             <section className="page-head">
@@ -1722,7 +1843,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               <p>
                 Las {fmt(companies.length)} fichas, reducidas a lo que se puede
                 copiar ya: un backlog priorizado, los patrones que separan a los
-                ganadores del montón y los dossiers profundos del top 30. Cada
+                referentes con score 80+ y los dossiers profundos del top 30. Cada
                 táctica cita la ficha de la que sale.
               </p>
             </section>
@@ -1803,7 +1924,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                       <span>{row.label}</span>
                       <div className="pattern-bars">
                         <div>
-                          <small>Ganadores</small>
+                          <small>Score 80+</small>
                           <i><b style={{ width: `${row.w}%` }} /></i>
                           <strong>{row.w}%</strong>
                         </div>
@@ -1853,7 +1974,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                     </tbody>
                   </table>
                 </div>
-                <h3 className="analysis-title">Validados dos veces: puntuación 80+ y anuncios pagados ahora mismo</h3>
+                <h3 className="analysis-title">Doble señal editorial: puntuación 80+ y anuncios activos documentados en el corte</h3>
                 <div className="threat-list">
                   {patterns.doubleValidated.map((entry) => {
                     const c = companyById.get(entry.id);
@@ -2077,11 +2198,13 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
             </section>
 
             {patterns && (
-              <PositioningSimulator
-                companies={companies}
-                patterns={patterns}
-                onOpenCompany={openCompany}
-              />
+              <Suspense fallback={<div className="deep-loading">Preparando el simulador…</div>}>
+                <PositioningSimulator
+                  companies={companies}
+                  patterns={patterns}
+                  onOpenCompany={openCompany}
+                />
+              </Suspense>
             )}
 
             <section className="content-section">
@@ -2152,12 +2275,16 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               </p>
             </section>
             <section className="content-section">
-              <AdsLaboratory
-                onOpenCompany={(id) => {
-                  const company = companyById.get(id);
-                  if (company) openCompany(company);
-                }}
-              />
+              <Suspense fallback={<div className="deep-loading">Abriendo el corpus publicitario…</div>}>
+                <AdsLaboratory
+                  key={adLabInitialQuery || "default"}
+                  initialQuery={adLabInitialQuery}
+                  onOpenCompany={(id) => {
+                    const company = companyById.get(id);
+                    if (company) openCompany(company);
+                  }}
+                />
+              </Suspense>
             </section>
           </div>
         )}
@@ -2464,22 +2591,22 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               <p className="eyebrow">LANDING PAGES POR NICHO</p>
               <h1>Una landing lista para captar, por vertical</h1>
               <p>
-                Generadas con los datos de la base: SLA agresivo, exclusividad por zona, garantía
-                por escrito y formulario que abre WhatsApp. Descarga el HTML y súbelo a cualquier hosting.
+                Plantillas editoriales basadas en señales observadas: configura y valida SLA,
+                exclusividad, garantía y condiciones antes de publicar. El HTML conserva esas advertencias.
               </p>
             </section>
             <section className="content-section">
               <div className="compare-picker">
-                {([["garantia", "Plantilla A · Garantía «o no cobramos»"], ["anticuota", "Plantilla B · Anti-cuota (pago por lead)"], ["velocidad", "Plantilla C · Velocidad (SLA 10 min)"]] as const).map(([key, label]) => (
+                {([["garantia", "Plantilla A · Garantía con remedio configurable"], ["anticuota", "Plantilla B · Precio por resultado configurable"], ["velocidad", "Plantilla C · Objetivo de SLA configurable"]] as const).map(([key, label]) => (
                   <button key={key} className={landTemplate === key ? "selected" : ""} onClick={() => setLandTemplate(key)}>
                     {label}
                   </button>
                 ))}
               </div>
               <p className="insights-note">
-                Las tres plantillas salen de las conclusiones de la base: solo el 10% de los anuncios reales promete
-                garantía (A), el marketplace sin cuota es el ángulo de los entrantes tipo Veltavia (B) y el 40% de los
-                leads se pierde por respuesta lenta — SLA como arma (C).
+                Las tres plantillas convierten señales observadas en hipótesis: garantía con remedio (A),
+                precio por resultado (B) y velocidad medible (C). Su frecuencia no demuestra rendimiento;
+                hay que probar una variable cada vez con métricas propias.
               </p>
               <div className="tool-card">
                 <div className="tool-controls">
@@ -2963,7 +3090,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               </div>
               {cruces.promesaRemedio.huecosEspana.length > 0 && (
                 <p className="insights-note">
-                  Huecos sin explotar en España:{" "}
+                  Combinaciones no observadas en la muestra española:{" "}
                   {cruces.promesaRemedio.huecosEspana.map((h) => `${h.promesa} respaldada con ${h.remedio.toLowerCase()} (${h.n} en el mundo, ${h.espana} aquí)`).join(" · ")}.
                 </p>
               )}
@@ -2973,7 +3100,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               <div className="section-head">
                 <div>
                   <p className="eyebrow">ADN DEL TOP {cruces.adn.nTop} MUNDIAL</p>
-                  <h2>Qué hacen los mejores que el resto no hace</h2>
+                  <h2>Qué publican las fichas con mayor score editorial</h2>
                 </div>
               </div>
               <div className="rasgo-list">
@@ -3032,8 +3159,8 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
             <section className="content-section" id="cx-titular">
               <div className="section-head">
                 <div>
-                  <p className="eyebrow">TITULAR GANADOR POR VERTICAL</p>
-                  <h2>La fórmula que más usan los mejores de cada nicho</h2>
+                  <p className="eyebrow">TITULAR FRECUENTE POR VERTICAL</p>
+                  <h2>La fórmula que más repiten los referentes de cada nicho</h2>
                 </div>
               </div>
               <div className="median-list">
@@ -3102,7 +3229,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               <p className="eyebrow">INFORME EJECUTIVO</p>
               <h1>El estado del mercado, en una página</h1>
               <p>
-                Generado en vivo desde la base: hallazgos de los cruces, patrones de los ganadores,
+                Generado en vivo desde la base: hallazgos de los cruces, patrones de los referentes con score 80+,
                 lectura de los anuncios reales, amenazas en España y próximas acciones. Cópialo o imprímelo a PDF.
               </p>
             </section>
@@ -3211,7 +3338,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   checked={companiesNewOnly}
                   onChange={(e) => { setCompaniesNewOnly(e.target.checked); setVisible(24); }}
                 />{" "}
-                Solo añadidas hoy
+                Añadidas en el corte 23/08/2026
               </label>
               <button onClick={clearCompanyFilters}>
                 Limpiar
@@ -4234,7 +4361,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   </tbody>
                 </table>
               </div>
-              <p className="matrix-hint">Celdas con punto = nadie detectado: cada una es un hueco potencial. Verde intenso = zona saturada.</p>
+              <p className="matrix-hint">Celdas con punto = combinación no observada en la muestra. Verde intenso = mayor presencia en el catálogo.</p>
             </section>
 
             <section className="content-section">
@@ -4268,7 +4395,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                       </div>
                     ))}
                   </div>
-                  <h3 className="analysis-title">Las palabras de los mejores ({analytics.copyAnalysis.winnersN} fichas 80+) vs el montón</h3>
+                  <h3 className="analysis-title">Las palabras de las fichas con score 80+ ({analytics.copyAnalysis.winnersN}) frente al resto</h3>
                   <div className="chip-row">
                     {analytics.copyAnalysis.winnerWords.slice(0, 14).map((w) => (
                       <span key={w.word} className="ref-chip word-win">{w.word} · {w.count}</span>
@@ -4623,8 +4750,8 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
             <section className="audit-grid">
               <article>
                 <span>COBERTURA</span>
-                <strong>712 / 195</strong>
-                <p>Empresas canónicas y Estados auditados.</p>
+                <strong>{fmt(companies.length)} / {fmt(summary.countries)}</strong>
+                <p>Fichas canónicas actuales y Estados incluidos en el universo territorial.</p>
               </article>
               <article>
                 <span>MEDIOS VERIFICADOS</span>
@@ -4663,15 +4790,15 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               </article>
               <article>
                 <span>MARCAS AUTÉNTICAS</span>
-                <strong>{summary.logos.authentic} / 712</strong>
+                <strong>{summary.logos.authentic} / {fmt(Object.keys(logos).length)}</strong>
                 <p>
-                  {summary.logos.coveragePercent}% con logo, wordmark o icono
-                  oficial local.
+                  Cobertura del manifiesto de marcas disponible; las fichas añadidas
+                  después se contabilizan aparte y no se presentan como cubiertas.
                 </p>
               </article>
               <article>
                 <span>FICHAS MADRE INDEXADAS</span>
-                <strong>712 / 712</strong>
+                <strong>{fmt(companies.length)} / {fmt(companies.length)}</strong>
                 <p>
                   Esquema canónico íntegro; la cobertura observable se declara
                   por separado.
@@ -4758,10 +4885,10 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
           <section className="completion-panel">
             <div className="completion-mark">{summary.completion.status === "TERMINADO" ? "✓" : "↻"}</div>
             <div>
-              <p className="eyebrow">CRITERIOS DE CIERRE</p>
-              <h2>{summary.completion.status}</h2>
+              <p className="eyebrow">CRITERIOS DE CIERRE · SNAPSHOT BASE DE {summary.companies}</p>
+              <h2>{summary.completion.status} · 22/08/2026</h2>
               <p>{summary.completion.status === "TERMINADO"
-                ? "La auditoría canónica no conserva trabajo abierto ni evidencia disponible fuera de su ficha madre."
+                ? "El snapshot base cerró sus criterios internos. La ampliación hasta 963 fichas y las colas publicitarias se controlan por separado en Centro de Operaciones."
                 : "La base anterior está preservada, pero la ampliación forense de funnels todavía tiene registros pendientes de revisar, sincronizar o publicar."}
               </p>
             </div>
@@ -4821,29 +4948,31 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
       </section>
 
       {active && (
-        <RecordDetail
-          key={active.id}
-          company={active}
-          logos={logos}
-          takeaway={takeaways?.items[active.id]}
-          dossier={dossiers?.items[active.id]}
-          compared={compare.includes(active.id)}
-          lightboxOpen={lightboxOpen}
-          onClose={closeCompany}
-          onMediaOpen={openMedia}
-          onShare={shareCompany}
-          onLocate={() => {
-            const selectedCompany = active;
-            dismissCompanyInPlace();
-            go("map");
-            setFocusCountry(
-              selectedCompany.location?.canonicalMarket ||
-                selectedCompany.primaryCountry,
-            );
-            setFocusCompanyId(selectedCompany.id);
-          }}
-          onCompare={() => toggleCompare(active.id)}
-        />
+        <Suspense fallback={<div className="modal-backdrop"><div className="detail-modal"><div className="deep-loading">Abriendo ficha completa…</div></div></div>}>
+          <RecordDetail
+            key={active.id}
+            company={active}
+            logos={logos}
+            takeaway={takeaways?.items[active.id]}
+            dossier={dossiers?.items[active.id]}
+            compared={compare.includes(active.id)}
+            lightboxOpen={lightboxOpen}
+            onClose={closeCompany}
+            onMediaOpen={openMedia}
+            onShare={shareCompany}
+            onLocate={() => {
+              const selectedCompany = active;
+              dismissCompanyInPlace();
+              go("map");
+              setFocusCountry(
+                selectedCompany.location?.canonicalMarket ||
+                  selectedCompany.primaryCountry,
+              );
+              setFocusCompanyId(selectedCompany.id);
+            }}
+            onCompare={() => toggleCompare(active.id)}
+          />
+        </Suspense>
       )}
       {toast && (
         <div className="portal-toast" role="status">

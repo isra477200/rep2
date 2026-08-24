@@ -56,6 +56,7 @@ export type AdsLaboratoryProps = {
   coverageData?: AdCoverageData | null;
   onOpenCompany?: (companyId: string) => void;
   initialSection?: LabSection;
+  initialQuery?: string;
 };
 
 const ALL = "__all__";
@@ -504,12 +505,13 @@ export default function AdsLaboratory({
   coverageData: suppliedCoverage,
   onOpenCompany,
   initialSection = "explore",
+  initialQuery = "",
 }: AdsLaboratoryProps) {
   const [remoteData, setRemoteData] = useState<AnunciosRealesData | null>(null);
   const [remoteCoverage, setRemoteCoverage] = useState<AdCoverageData | null>(null);
   const [loadError, setLoadError] = useState("");
   const [section, setSection] = useState<LabSection>(initialSection);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery);
   const [platform, setPlatform] = useState(ALL);
   const [vertical, setVertical] = useState(ALL);
   const [company, setCompany] = useState(ALL);

@@ -1,0 +1,39 @@
+{
+ "schema": "redvitalia-data-manifest-v1",
+ "generatedAt": "2026-08-24",
+ "revision": "573c211efaa37448",
+ "universe": {
+  "companies": 963,
+  "representedPrimaryMarkets": 129,
+  "territorialAtlasStates": 195,
+  "media": 3957
+ },
+ "deepSnapshot": {
+  "companies": 712,
+  "publicPrices": 245,
+  "sources": 6275,
+  "media": 3957,
+  "status": "TERMINADO"
+ },
+ "visualIdentitySnapshot": {
+  "entries": 712,
+  "authentic": 615
+ },
+ "advertising": {
+  "companiesWithEvidence": 170,
+  "companiesPendingDiscovery": 777,
+  "exactCreativeIds": 3012,
+  "attributableEvidenceSample": 1273,
+  "searchableTranscriptions": 1005,
+  "verifiedTranscriptions": 366,
+  "patternReady": 387,
+  "textAvailabilityGap": 435,
+  "verifiedTranscriptionGap": 1001
+ },
+ "scopeNotes": [
+  "El universo actual tiene 963 fichas; el snapshot profundo conserva 712.",
+  "Los 195 elementos territoriales son Estados del atlas, no mercados primarios con empresa.",
+  "Una transcripción OCR es buscable, pero no verificada ni apta para patrones hasta revisión humana.",
+  "Frecuencia publicitaria y score editorial no demuestran rendimiento de campaña."
+ ]
+}

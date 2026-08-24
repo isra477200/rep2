@@ -43,7 +43,9 @@ test("el corpus ampliado conserva capas, claves y archivos trazables", () => {
   assert.equal(new Set(corpus.items.map((item) => item.corpusKey)).size, corpus.items.length);
   assert(corpus.total >= 1000);
   assert(corpus.companies >= 180);
-  assert(corpus.patternReady >= 400);
+  // La atribución de marca es conservadora: una pieza Meta no se convierte en
+  // propia solo por estar archivada dentro de una ficha.
+  assert(corpus.patternReady >= 350);
   assert(corpus.withFive >= 70);
   assert(corpus.withTen >= 40);
 

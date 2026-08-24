@@ -14,35 +14,28 @@ import { createHash } from "node:crypto";
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  AD_ALIAS_ENTRIES,
+  canonicalAdCompanyId,
+} from "./ad-aliases.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (relativePath) =>
   JSON.parse(readFileSync(resolve(root, relativePath), "utf8"));
 
 const companies = readJson("public/data/companies-index.json");
-const anuncios = readJson("public/data/anuncios-reales.json").items || [];
+const corpusPath = resolve(root, "public/data/ad-corpus.json");
+const anuncios = existsSync(corpusPath)
+  ? JSON.parse(readFileSync(corpusPath, "utf8")).items || []
+  : readJson("public/data/anuncios-reales.json").items || [];
 const detailsDir = resolve(root, "public/data/company-details");
 
 /**
  * Alias observados en anuncios-reales.json que apuntan inequívocamente a una
  * ficha canónica existente. Los alias dudosos se conservan como huérfanos.
  */
-const aliasEntries = [
-  ["compra-leads", "compra-leads-ou", "Mismo ID Meta 1567766664997071 ya documentado en la ficha canónica."],
-  ["cronoshare-maxory", "cronoshare", "La observación identifica expresamente Cronoshare; Maxory se conserva como nota de rebranding."],
-  ["docmedia-marketing-dental", "amp-docmedia-es", "Misma marca DOCMEDIA/Docmedia."],
-  ["doctoralia", "doctoralia-grupo-docplanner", "Misma marca y dominio doctoralia.es."],
-  ["idealleader-io", "idealleader", "Misma marca y dominio idealleader.io."],
-  ["inmomax-es", "inmomax", "Misma marca y dominio inmomax.es."],
-  ["ivandebenito", "ivan-de-benito", "Misma identidad; solo cambia la normalización del slug."],
-  ["kaizex-especialistas-en-seo-local", "kaizex", "Misma marca KAIZEX."],
-  ["level-up-agency-vera", "level-up-agency", "Misma marca LEVEL UP AGENCY (VERA)."],
-  ["presupuestos-com", "amp-presupuestos-com", "Misma marca y dominio presupuestos.com."],
-];
-const aliases = new Map(aliasEntries.map(([alias, canonical]) => [alias, canonical]));
-
 const companyIds = new Set(companies.map((company) => company.id));
-const canonicalId = (id) => aliases.get(id) || id;
+const canonicalId = canonicalAdCompanyId;
 const unique = (values) => [...new Set(values.filter(Boolean))];
 
 const cleanUrl = (value) =>
@@ -104,6 +97,8 @@ const publicMediaByCompanyAndOrder = new Map(
 const mediaEvidenceByCompany = new Map();
 const mediaJoin = {
   sourceMediaAvailable: false,
+  versionedIdentityAvailable: false,
+  versionedIdentityRows: 0,
   sourceRows: 0,
   idBearingRows: 0,
   uniqueExternalIdsIdentified: 0,
@@ -114,9 +109,71 @@ const mediaJoin = {
 };
 const sourceExternalEvidenceKeys = new Set();
 
+const versionedIdentityPath = resolve(
+  root,
+  "public/data/ad-media-identity.json",
+);
+if (existsSync(versionedIdentityPath)) {
+  const identity = JSON.parse(readFileSync(versionedIdentityPath, "utf8"));
+  if (identity.schema !== "redvitalia-ad-media-identity-v1")
+    throw new Error("build-ad-coverage: esquema de identidad de medios inválido");
+  mediaJoin.sourceMediaAvailable = true;
+  mediaJoin.versionedIdentityAvailable = true;
+  mediaJoin.versionedIdentityRows = identity.items?.length || 0;
+  for (const item of identity.items || []) {
+    if (!companyIds.has(item.companyId))
+      throw new Error(
+        `build-ad-coverage: identidad apunta a ficha inexistente ${item.companyId}`,
+      );
+    if (!/^(?:meta|google)$/.test(item.platform))
+      throw new Error(
+        `build-ad-coverage: plataforma de identidad inválida ${item.platform}`,
+      );
+    const publicFile = String(item.file || "");
+    const absolutePublicFile = resolve(
+      root,
+      "public",
+      publicFile.replace(/^\/+/, ""),
+    );
+    if (!publicFile.startsWith("/media/") || !existsSync(absolutePublicFile))
+      throw new Error(
+        `build-ad-coverage: archivo de identidad inexistente ${publicFile}`,
+      );
+    const key = `${item.platform}:${item.externalId}`;
+    const bucket = mediaEvidenceByCompany.get(item.companyId) || new Map();
+    bucket.set(key, {
+      platform: item.platform,
+      externalId: item.externalId,
+      file: publicFile,
+      bytes: statSync(absolutePublicFile).size,
+      order: 0,
+      variantCount: Math.max(1, Number(item.variantCount || 1)),
+    });
+    mediaEvidenceByCompany.set(item.companyId, bucket);
+    sourceExternalEvidenceKeys.add(`${item.companyId}:${key}`);
+  }
+  const selectedMedia = [...mediaEvidenceByCompany.values()].flatMap((bucket) => [
+    ...bucket.values(),
+  ]);
+  mediaJoin.sourceRows = selectedMedia.length;
+  mediaJoin.idBearingRows = selectedMedia.length;
+  mediaJoin.uniqueExternalIdsIdentified = sourceExternalEvidenceKeys.size;
+  mediaJoin.mappedToCompanyAndOrder = selectedMedia.length;
+  mediaJoin.validPublicFiles = selectedMedia.length;
+  mediaJoin.uniqueExternalIdsWithPublicFile = selectedMedia.length;
+  mediaJoin.variantFilesCollapsed = selectedMedia.reduce(
+    (sum, evidence) => sum + Math.max(0, evidence.variantCount - 1),
+    0,
+  );
+}
+
 const identityMapPath = resolve(root, "research/deep/public-id-map.json");
 const sourceSnapshotDir = resolve(root, "../portal-source-snapshot");
-if (existsSync(identityMapPath) && existsSync(sourceSnapshotDir)) {
+if (
+  !mediaJoin.versionedIdentityAvailable &&
+  existsSync(identityMapPath) &&
+  existsSync(sourceSnapshotDir)
+) {
   const identityMap = JSON.parse(readFileSync(identityMapPath, "utf8")).ids || {};
   const mediaMapFiles = readdirSync(sourceSnapshotDir)
     .filter((name) => /^media-map-.*\.json$/i.test(name))
@@ -256,15 +313,21 @@ const platformOf = (value) => {
 
 const embeddedIds = (anuncio) => {
   const platform = platformOf(anuncio.plataforma);
+  const explicit = String(anuncio.externalId || "").trim();
+  if (explicit) return [explicit.toUpperCase()];
   if (platform !== "meta") return [];
   return unique(String(anuncio.plataforma || "").match(/\d{10,}/g) || []);
 };
 
+const isAbsenceRecord = (anuncio) =>
+  /(?:^|\b)(?:0 anuncios|sin anuncios activos|sin resultados atribuibles)(?:\b|$)/i.test(
+    `${anuncio.titular || ""} ${anuncio.texto || ""}`,
+  );
+
 const isActualAdObservation = (anuncio) => {
+  if (isAbsenceRecord(anuncio)) return false;
   const title = String(anuncio.titular || "").trim();
   const text = String(anuncio.texto || "").trim();
-  if (/^[-—–]+$/.test(title) && /sin anuncios|0 anuncios/i.test(text)) return false;
-  if (/^sin anuncios activos|^0 anuncios/i.test(text)) return false;
   return Boolean(anuncio.file || embeddedIds(anuncio).length || title || text);
 };
 
@@ -272,12 +335,13 @@ const transcriptByCompany = new Map();
 const orphanTranscripts = new Map();
 for (const anuncio of anuncios) {
   if (!isActualAdObservation(anuncio)) continue;
-  const resolvedId = canonicalId(anuncio.id);
+  const observedId = anuncio.observedId || anuncio.id;
+  const resolvedId = canonicalId(observedId);
   const ids = embeddedIds(anuncio);
-  const signature = anuncio.file
-    ? `file:${anuncio.file}`
-    : ids.length === 1
-      ? `${platformOf(anuncio.plataforma)}:${ids[0]}`
+  const signature = ids.length === 1
+    ? `${/^CR/i.test(ids[0]) ? "google" : "meta"}:${ids[0]}`
+    : anuncio.file
+      ? `file:${anuncio.file}`
       : `text:${createHash("sha256")
           .update(`${resolvedId}\n${anuncio.plataforma}\n${anuncio.titular}\n${anuncio.texto}`)
           .digest("hex")}`;
@@ -286,16 +350,18 @@ for (const anuncio of anuncios) {
     platform: platformOf(anuncio.plataforma),
     ids,
     file: anuncio.file || null,
+    validated: anuncio.aptaPatrones !== false,
+    layers: [anuncio.origen || "sin_clasificar"],
   };
 
   if (!companyIds.has(resolvedId)) {
-    const orphan = orphanTranscripts.get(anuncio.id) || {
-      observedId: anuncio.id,
-      name: anuncio.name,
+    const orphan = orphanTranscripts.get(observedId) || {
+      observedId,
+      name: anuncio.observedName || anuncio.name,
       records: [],
     };
     orphan.records.push(record);
-    orphanTranscripts.set(anuncio.id, orphan);
+    orphanTranscripts.set(observedId, orphan);
     continue;
   }
 
@@ -303,10 +369,49 @@ for (const anuncio of anuncios) {
     records: new Map(),
     aliases: new Set(),
     metaIds: new Set(),
+    googleIds: new Set(),
   };
-  bucket.records.set(signature, record);
-  if (resolvedId !== anuncio.id) bucket.aliases.add(anuncio.id);
-  for (const id of ids) bucket.metaIds.add(id);
+  const sameIdentity = [...bucket.records.entries()].find(([, candidate]) => {
+    const sharesId =
+      record.ids.length > 0 &&
+      candidate.ids.some((id) => record.ids.includes(id));
+    const sharesFile =
+      Boolean(record.file) &&
+      Boolean(candidate.file) &&
+      record.file === candidate.file;
+    return sharesId || sharesFile;
+  });
+  if (sameIdentity) {
+    const [previousKey, previous] = sameIdentity;
+    const mergedIds = unique([...previous.ids, ...record.ids]);
+    const mergedPlatform = mergedIds.some((id) => /^CR/i.test(id))
+      ? "google"
+      : mergedIds.some((id) => /^\d+$/.test(id))
+        ? "meta"
+        : previous.platform;
+    const mergedSignature = mergedIds.length === 1
+      ? `${mergedPlatform}:${mergedIds[0]}`
+      : previous.file || record.file
+        ? `file:${previous.file || record.file}`
+        : previous.signature;
+    bucket.records.delete(previousKey);
+    bucket.records.set(mergedSignature, {
+      ...previous,
+      signature: mergedSignature,
+      platform: mergedPlatform,
+      ids: mergedIds,
+      file: previous.file || record.file,
+      validated: previous.validated || record.validated,
+      layers: unique([...previous.layers, ...record.layers]),
+    });
+  } else {
+    bucket.records.set(signature, record);
+  }
+  if (resolvedId !== observedId) bucket.aliases.add(observedId);
+  for (const id of ids) {
+    if (/^CR/i.test(id)) bucket.googleIds.add(id.toUpperCase());
+    else if (/^\d+$/.test(id)) bucket.metaIds.add(id);
+  }
   transcriptByCompany.set(resolvedId, bucket);
 }
 
@@ -360,12 +465,14 @@ const items = companies.map((company) => {
     records: new Map(),
     aliases: new Set(),
     metaIds: new Set(),
+    googleIds: new Set(),
   };
 
   for (const id of transcript.metaIds) {
     detail.metaIds.add(id);
     detail.sourceUrlByExternalId.set(`meta:${id}`, exactMetaUrl(id));
   }
+  for (const id of transcript.googleIds) detail.googleIds.add(id);
   const records = [...transcript.records.values()];
   const transcribedByPlatform = {
     meta: records.filter((record) => record.platform === "meta").length,
@@ -375,6 +482,9 @@ const items = companies.map((company) => {
     other: records.filter((record) => record.platform === "other").length,
   };
   const transcribedCanonicalCount = records.length;
+  const verifiedTranscribedCount = records.filter(
+    (record) => record.validated,
+  ).length;
 
   const metaIds = [...detail.metaIds].sort();
   const googleIds = [...detail.googleIds].sort();
@@ -470,8 +580,16 @@ const items = companies.map((company) => {
     availableEvidenceCount,
     targetCount,
     transcribedCanonicalCount,
-    transcriptionGap: Math.max(0, targetCount - transcribedCanonicalCount),
-    transcriptionComplete: transcribedCanonicalCount >= targetCount,
+    verifiedTranscribedCount,
+    textAvailabilityGap: Math.max(0, targetCount - transcribedCanonicalCount),
+    verifiedTranscriptionGap: Math.max(0, targetCount - verifiedTranscribedCount),
+    transcriptionGap: Math.max(0, targetCount - verifiedTranscribedCount),
+    textAvailableComplete:
+      targetCount > 0 && transcribedCanonicalCount >= targetCount,
+    verifiedComplete:
+      targetCount > 0 && verifiedTranscribedCount >= targetCount,
+    transcriptionComplete:
+      targetCount > 0 && verifiedTranscribedCount >= targetCount,
     transcribedByPlatform,
     exactCreativeIds: {
       meta: metaIds,
@@ -501,7 +619,7 @@ const assert = (condition, message) => {
 
 assert(items.length === companies.length, `esperadas ${companies.length} fichas, generadas ${items.length}`);
 assert(new Set(items.map((item) => item.companyId)).size === companies.length, "hay companyId duplicados");
-for (const [alias, canonical] of aliases) {
+for (const [alias, canonical] of AD_ALIAS_ENTRIES) {
   assert(companyIds.has(canonical), `el alias ${alias} apunta a una ficha inexistente: ${canonical}`);
 }
 for (const item of items) {
@@ -560,16 +678,21 @@ const countries = [...new Set(items.map((item) => item.country))]
       withEvidence: rows.filter((item) => item.availableEvidenceCount > 0).length,
       exactCreativeIds: rows.reduce((sum, item) => sum + item.exactCreativeIds.total, 0),
       transcribedCanonical: rows.reduce((sum, item) => sum + item.transcribedCanonicalCount, 0),
+      verifiedTranscribed: rows.reduce((sum, item) => sum + item.verifiedTranscribedCount, 0),
       statusCounts: Object.fromEntries([...allowedStatuses].map((status) => [status, rows.filter((item) => item.status === status).length])),
     };
   })
   .sort((a, b) => b.companies - a.companies || a.country.localeCompare(b.country, "es"));
 
-const aliasMap = aliasEntries.map(([alias, canonical, reason]) => ({
+const aliasMap = AD_ALIAS_ENTRIES.map(([alias, canonical, reason]) => ({
   alias,
   canonical,
   reason,
-  transcribedRecords: anuncios.filter((anuncio) => anuncio.id === alias && isActualAdObservation(anuncio)).length,
+  transcribedRecords: anuncios.filter(
+    (anuncio) =>
+      (anuncio.observedId || anuncio.id) === alias &&
+      isActualAdObservation(anuncio),
+  ).length,
 }));
 
 const creativeFiles = [...mediaEvidenceByCompany.entries()]
@@ -634,13 +757,16 @@ const output = {
     exactMetaIds: items.reduce((sum, item) => sum + item.exactCreativeIds.meta.length, 0),
     exactGoogleIds: items.reduce((sum, item) => sum + item.exactCreativeIds.google.length, 0),
     transcribedCanonical: items.reduce((sum, item) => sum + item.transcribedCanonicalCount, 0),
+    verifiedTranscribed: items.reduce((sum, item) => sum + item.verifiedTranscribedCount, 0),
     sampledEvidence: items.reduce((sum, item) => sum + item.evidence.length, 0),
     sampledEvidenceWithPublicFile: items.reduce(
       (sum, item) => sum + item.evidence.filter((evidence) => evidence.file).length,
       0,
     ),
     targetTotal: items.reduce((sum, item) => sum + item.targetCount, 0),
-    transcriptionGap: items.reduce((sum, item) => sum + item.transcriptionGap, 0),
+    textAvailabilityGap: items.reduce((sum, item) => sum + item.textAvailabilityGap, 0),
+    verifiedTranscriptionGap: items.reduce((sum, item) => sum + item.verifiedTranscriptionGap, 0),
+    transcriptionGap: items.reduce((sum, item) => sum + item.verifiedTranscriptionGap, 0),
     orphanAdvertisers: orphanItems.length,
     orphanTranscribedRecords: orphanItems.reduce((sum, item) => sum + item.transcribedRecords, 0),
   },
