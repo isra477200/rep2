@@ -264,8 +264,102 @@ export type AnuncioReal = {
   vertical?: string;
   capturaEnVivo?: boolean;
   fecha?: string;
+  /** ID exacto de la creatividad en la biblioteca de origen, cuando existe. */
+  externalId?: string | null;
+  /** URL directa o pública usada para verificar la pieza. */
+  fuenteUrl?: string | null;
+  /** Procedencia de la evidencia: biblioteca, archivo, captura manual, etc. */
+  origen?: string | null;
+  /** Estado o alcance de la transcripción, no un sustituto del copy en `texto`. */
+  transcripcion?: string | null;
+  /** Confianza editorial declarada por el proceso de revisión. */
+  confianza?: number | string | null;
+  /** Estado verificable de la evidencia individual. */
+  estadoEvidencia?: string | null;
+  /** Calidad de la atribución de la pieza al anunciante. */
+  atribucion?: string | null;
+  /** `false` excluye la pieza de patrones agregados, pero no de búsqueda. */
+  aptaPatrones?: boolean;
+  /** SHA-256 del archivo visual local cuando ha sido archivado y verificado. */
+  archivoSha256?: string | null;
+  /** Identificador estable de la fila dentro del corpus consolidado. */
+  corpusKey?: string | null;
+  /** Metadatos públicos del anunciante/financiador cuando la biblioteca los expone. */
+  anunciante?: string | null;
 };
 export type AnunciosRealesData = { generatedAt: string; nota: string; total: number; items: AnuncioReal[] };
+
+export type AdCoverageStatus = ">=10" | "5-9" | "1-4" | "sin evidencia" | "pendiente/no atribuible";
+export type AdCoverageStatusCounts = Record<AdCoverageStatus, number>;
+export type AdCoveragePlatformCounts = {
+  meta: number;
+  google: number;
+  instagram: number;
+  display: number;
+  other: number;
+};
+export type AdCoverageItem = {
+  companyId: string;
+  name: string;
+  country: string;
+  domain: string;
+  status: AdCoverageStatus;
+  availableEvidenceCount: number;
+  targetCount: number;
+  transcribedCanonicalCount: number;
+  transcriptionGap: number;
+  transcriptionComplete: boolean;
+  transcribedByPlatform: AdCoveragePlatformCounts;
+  exactCreativeIds: { meta: string[]; google: string[]; total: number };
+  archivedFileCount: number;
+  reportedLibraryCounts: { meta: number; google: number };
+  review: {
+    meta: { status: string; classification: string };
+    google: { status: string; classification: string };
+  };
+  sourceLinks: string[];
+  observedAliases: string[];
+  detailAvailable: boolean;
+  evidence: Array<{
+    externalId: string | null;
+    platform: "meta" | "google" | "instagram" | "display" | "other";
+    file?: string | null;
+    sourceUrl?: string | null;
+    transcriptSignature?: string;
+  }>;
+};
+export type AdCoverageData = {
+  generatedAt: string;
+  note: string;
+  totalCompanies: number;
+  summary: {
+    statusCounts: AdCoverageStatusCounts;
+    companiesWithEvidence: number;
+    companiesWithExactIds: number;
+    exactMetaIds: number;
+    exactGoogleIds: number;
+    transcribedCanonical: number;
+    /** Evidencias canónicas muestreadas, limitadas al objetivo de cada empresa. */
+    sampledEvidence?: number;
+    /** Parte de la muestra que dispone de un archivo público verificable. */
+    sampledEvidenceWithPublicFile?: number;
+    targetTotal: number;
+    transcriptionGap: number;
+    orphanAdvertisers: number;
+    orphanTranscribedRecords: number;
+  };
+  aliasMap: Array<{ alias: string; canonical: string; reason: string; transcribedRecords: number }>;
+  orphanItems: Array<{ observedId: string; name: string; transcribedRecords: number; platforms: string[] }>;
+  countries: Array<{
+    country: string;
+    companies: number;
+    withEvidence: number;
+    exactCreativeIds: number;
+    transcribedCanonical: number;
+    statusCounts: AdCoverageStatusCounts;
+  }>;
+  items: AdCoverageItem[];
+};
 
 export type AngulosData = {
   generatedAt: string;

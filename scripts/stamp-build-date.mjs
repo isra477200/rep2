@@ -7,7 +7,8 @@
  * existente y sale con código 0.
  */
 import { writeFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 try {
   const now = new Date();
@@ -37,7 +38,8 @@ export const BUILD_DATE = ${JSON.stringify(short)};
 export const BUILD_DATE_LONG = ${JSON.stringify(long)};
 export const BUILD_DATE_ISO = ${JSON.stringify(iso)};
 `;
-  writeFileSync(resolve(new URL("..", import.meta.url).pathname, "app/build-date.ts"), out);
+  const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+  writeFileSync(resolve(root, "app/build-date.ts"), out);
   console.log(`build-date sellada: ${short}`);
 } catch (e) {
   console.warn("stamp-build-date: no se pudo sellar la fecha, se mantiene la existente.", e && e.message);

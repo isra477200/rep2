@@ -16,6 +16,7 @@ import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import CompanyLogo from "./CompanyLogo";
+import AdsLaboratory from "./AdsLaboratory";
 import {
   classifyMediaResolution,
   dimensionsFromMedia,
@@ -26,6 +27,7 @@ import {
   type MediaDimensions,
 } from "./MediaResolution";
 import RecordDetail from "./RecordDetail";
+import PositioningSimulator from "./PositioningSimulator";
 import type {
   AdsKitData,
   Analytics,
@@ -67,6 +69,7 @@ type View =
   | "exec"
   | "resources"
   | "tools"
+  | "adlab"
   | "arsenal"
   | "landings"
   | "verticals"
@@ -92,6 +95,7 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "exec", label: "Ejecutar", icon: "▸" },
   { id: "resources", label: "Recursos", icon: "⤓" },
   { id: "tools", label: "Herramientas", icon: "◳" },
+  { id: "adlab", label: "Lab anuncios", icon: "⌗" },
   { id: "arsenal", label: "Arsenal", icon: "⚑" },
   { id: "landings", label: "Landings", icon: "▭" },
   { id: "companies", label: "Empresas", icon: "◎" },
@@ -115,7 +119,7 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["exec", "resources", "tools", "arsenal", "landings"] },
+  { label: "Acción", ids: ["exec", "resources", "tools", "adlab", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "map", "countries", "ads", "compare"] },
   { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
@@ -460,8 +464,7 @@ export default function Portal() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  const [simPrice, setSimPrice] = useState(""),
-    [propVertical, setPropVertical] = useState("clinicas-salud"),
+  const [propVertical, setPropVertical] = useState("clinicas-salud"),
     [propZona, setPropZona] = useState(""),
     [propServicio, setPropServicio] = useState(""),
     [propPrecio, setPropPrecio] = useState(""),
@@ -755,22 +758,6 @@ export default function Portal() {
     () => new Map(companies.map((company) => [company.id, company])),
     [companies],
   );
-  const priceDistribution = useMemo(
-    () =>
-      companies
-        .filter((c) => c.price && typeof c.price.eur === "number" && c.price.eur > 0)
-        .map((c) => c.price.eur as number)
-        .sort((a, b) => a - b),
-    [companies],
-  );
-  const simStats = useMemo(() => {
-    const value = Number(simPrice.replace(",", "."));
-    if (!Number.isFinite(value) || value <= 0 || !priceDistribution.length) return null;
-    const below = priceDistribution.filter((p) => p <= value).length;
-    const pct = Math.round((below / priceDistribution.length) * 100);
-    const median = priceDistribution[Math.floor(priceDistribution.length / 2)];
-    return { value, pct, median, n: priceDistribution.length };
-  }, [simPrice, priceDistribution]);
   const mrrProj = useMemo(() => {
     const clientes = Number(mrrClientes.replace(",", "."));
     const cuota = Number(mrrCuota.replace(",", "."));
@@ -1613,6 +1600,7 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                 ["informe", "≡", "Informe ejecutivo", "El mercado en una página, listo para copiar o imprimir"],
                 ["cruces", "⤫", "Cruces", `${cruces?.findings.length || 0} hallazgos · 12 análisis cruzados`],
                 ["landings", "▭", "Landings", "3 plantillas por nicho basadas en conclusiones"],
+                ["adlab", "⌗", "Laboratorio de anuncios", "Busca copy, cruza patrones y crea matrices de test trazables"],
                 ["arsenal", "⚑", `Arsenal · ${fmt(anunciosReales?.total || 0)} anuncios`, "Garantías, titulares y anuncios reales buscables"],
                 ["watch", "◔", `Vigilancia · ${vigilancia?.semaforo.filter((s) => s.nivel === "rojo").length || 0} en rojo`, "Semáforo España con fragilidad y contradicciones"],
                 ["exec", "▸", "Ejecutar", `${execution?.actions.length || 0} acciones priorizadas con estado`],
@@ -2088,42 +2076,13 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
               </div>
             </section>
 
-            <section className="content-section">
-              <div className="section-head">
-                <div>
-                  <p className="eyebrow">SIMULADOR DE PRICING</p>
-                  <h2>¿Dónde cae tu precio frente al mundo?</h2>
-                </div>
-              </div>
-              <div className="tool-card">
-                <div className="tool-controls">
-                  <label>
-                    Tu precio mensual (€)
-                    <input value={simPrice} placeholder="p. ej. 750" onChange={(e) => setSimPrice(e.target.value)} />
-                  </label>
-                </div>
-                {simStats ? (
-                  <div className="sim-result">
-                    <div className="sim-gauge" aria-hidden>
-                      <i style={{ width: `${simStats.pct}%` }} />
-                      <span style={{ left: `${Math.min(97, simStats.pct)}%` }}>{simStats.pct}%</span>
-                    </div>
-                    <p>
-                      Con <b>{fmt(simStats.value)} €</b> estás por encima del{" "}
-                      <b>{simStats.pct}%</b> de los {fmt(simStats.n)} precios públicos
-                      de la base (mediana mundial: {fmt(simStats.median)} €).{" "}
-                      {simStats.pct >= 75
-                        ? "Zona premium: exige garantía fuerte y prueba visible para sostenerse."
-                        : simStats.pct >= 40
-                          ? "Zona media del mercado: la diferenciación no vendrá del precio, sino de la garantía y la exclusividad."
-                          : "Zona de entrada: hay recorrido para subir precio si la garantía y la prueba acompañan."}
-                    </p>
-                  </div>
-                ) : (
-                  <p className="record-empty">Escribe un precio para posicionarlo contra la distribución mundial.</p>
-                )}
-              </div>
-            </section>
+            {patterns && (
+              <PositioningSimulator
+                companies={companies}
+                patterns={patterns}
+                onOpenCompany={openCompany}
+              />
+            )}
 
             <section className="content-section">
               <div className="section-head">
@@ -2177,6 +2136,28 @@ Cada zona tiene una sola plaza por sector. La de ${zona} para ${servicio}, a fec
                   <p className="record-empty">Rellena los cuatro campos con números para proyectar la cartera.</p>
                 )}
               </div>
+            </section>
+          </div>
+        )}
+
+        {view === "adlab" && (
+          <div className="view">
+            <section className="page-head">
+              <p className="eyebrow">LABORATORIO DE ANUNCIOS</p>
+              <h1>Del archivo de capturas al siguiente test</h1>
+              <p>
+                Todo el copy queda buscable y trazable. Los patrones usan solo
+                evidencia apta; el OCR pendiente sigue visible sin mezclarse con
+                conclusiones ni fingir ganadores.
+              </p>
+            </section>
+            <section className="content-section">
+              <AdsLaboratory
+                onOpenCompany={(id) => {
+                  const company = companyById.get(id);
+                  if (company) openCompany(company);
+                }}
+              />
             </section>
           </div>
         )}
