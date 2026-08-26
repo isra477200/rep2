@@ -1,6 +1,6 @@
 {
   "schemaVersion": "rv-competitive-intelligence-v1",
-  "generatedAt": "2026-08-26T19:51:30.634Z",
+  "generatedAt": "2026-08-26T20:17:09.541Z",
   "scope": {
     "market": "España",
     "includedScopes": [
@@ -45,7 +45,7 @@
     "sourceFingerprints": {
       "corpus": "fdfc8336183ef324057851e35efeb7312b0e23834d43cfb4caff8569b230c9c2",
       "companies": "b5fad443f50f436fea145495fd961c1f8ba997acac9674e64d53d15ab4d4514b",
-      "landingIntelligence": "13134eb0cc218d61e2a65fc2145266922d635617f2bffa43f381acad4824dc8e",
+      "landingIntelligence": "faef70730713152e1ca75dbf33bb7a6d116f15f63e81926dee6feed20d803c16",
       "scrapeLandingAnalysis": "915549e4c4840cbce5befebc4c330db093b3a29251e74dafc1d013122328fc35",
       "scrapeAds": "6f42defc5c9ad59a9c4130326d7ceac4cb2c265288020ea7e760aef989a1bdae",
       "siteCaptures": "c3b82eeae61183aa595cfd1c97a989e00029383867da15f4ef56bca1d73986fa"
@@ -4659,7 +4659,7 @@
         "trustedSemanticIdentities": 5,
         "activeIdentities": 1,
         "activeSharePct": 20,
-        "medianLongevityDays": 3.5,
+        "medianLongevityDays": 3.6,
         "variantUnits": 5,
         "firstStartedAt": "2025-11-10T08:00:00.000Z",
         "lastStartedAt": "2026-08-23T07:00:00.000Z",
@@ -5873,7 +5873,7 @@
         "trustedSemanticIdentities": 8,
         "activeIdentities": 3,
         "activeSharePct": 37.5,
-        "medianLongevityDays": 2.5,
+        "medianLongevityDays": 2.6,
         "variantUnits": 8,
         "firstStartedAt": "2026-07-26T07:00:00.000Z",
         "lastStartedAt": "2026-08-24T07:00:00.000Z",
@@ -11313,7 +11313,7 @@
         "trustedSemanticIdentities": 28,
         "activeIdentities": 14,
         "activeSharePct": 33.3,
-        "medianLongevityDays": 57.5,
+        "medianLongevityDays": 57.6,
         "variantUnits": 46,
         "firstStartedAt": "2026-06-23T07:00:00.000Z",
         "lastStartedAt": "2026-07-24T07:00:00.000Z",
@@ -13872,10 +13872,11 @@
       "country": "España",
       "scope": "Núcleo — agencia/leadgen",
       "vertical": {
-        "id": "generalist",
-        "label": "Generalista",
-        "status": "observed",
-        "source": "landing-intelligence curated example"
+        "id": "clinics-health",
+        "label": "Clínicas y salud",
+        "status": "inferred",
+        "score": 15,
+        "source": "rules over company and captured landing text"
       },
       "eligibility": {
         "included": true,
@@ -14726,7 +14727,7 @@
         "trustedSemanticIdentities": 2,
         "activeIdentities": 1,
         "activeSharePct": 50,
-        "medianLongevityDays": 27.5,
+        "medianLongevityDays": 27.6,
         "variantUnits": 3,
         "firstStartedAt": "2026-08-08T07:00:00.000Z",
         "lastStartedAt": "2026-08-08T07:00:00.000Z",
@@ -17940,7 +17941,7 @@
         "trustedSemanticIdentities": 29,
         "activeIdentities": 1,
         "activeSharePct": 3.4,
-        "medianLongevityDays": 5.5,
+        "medianLongevityDays": 5.6,
         "variantUnits": 29,
         "firstStartedAt": "2026-08-21T07:00:00.000Z",
         "lastStartedAt": "2026-08-21T07:00:00.000Z",
@@ -22261,7 +22262,7 @@
         "trustedSemanticIdentities": 2,
         "activeIdentities": 1,
         "activeSharePct": 50,
-        "medianLongevityDays": 13.5,
+        "medianLongevityDays": 13.6,
         "variantUnits": 2,
         "firstStartedAt": "2026-08-13T07:00:00.000Z",
         "lastStartedAt": "2026-08-13T07:00:00.000Z",
@@ -23080,7 +23081,7 @@
         "trustedSemanticIdentities": 3,
         "activeIdentities": 2,
         "activeSharePct": 66.7,
-        "medianLongevityDays": 119,
+        "medianLongevityDays": 119.1,
         "variantUnits": 3,
         "firstStartedAt": "2026-04-22T07:00:00.000Z",
         "lastStartedAt": "2026-06-11T07:00:00.000Z",
@@ -24292,7 +24293,7 @@
         "trustedSemanticIdentities": 13,
         "activeIdentities": 4,
         "activeSharePct": 30.8,
-        "medianLongevityDays": 15.5,
+        "medianLongevityDays": 15.6,
         "variantUnits": 14,
         "firstStartedAt": "2025-10-28T07:00:00.000Z",
         "lastStartedAt": "2026-08-13T07:00:00.000Z",
@@ -34334,7 +34335,7 @@
         "trustedSemanticIdentities": 17,
         "activeIdentities": 8,
         "activeSharePct": 47.1,
-        "medianLongevityDays": 27.5,
+        "medianLongevityDays": 27.6,
         "variantUnits": 17,
         "firstStartedAt": "2026-07-05T07:00:00.000Z",
         "lastStartedAt": "2026-08-06T07:00:00.000Z",
@@ -35823,7 +35824,7 @@
         "trustedSemanticIdentities": 16,
         "activeIdentities": 11,
         "activeSharePct": 57.9,
-        "medianLongevityDays": 16.5,
+        "medianLongevityDays": 16.6,
         "variantUnits": 23,
         "firstStartedAt": "2026-06-25T07:00:00.000Z",
         "lastStartedAt": "2026-08-21T07:00:00.000Z",
@@ -45606,7 +45607,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 2,
         "activeSharePct": 50,
-        "medianLongevityDays": 80.5,
+        "medianLongevityDays": 80.6,
         "variantUnits": 4,
         "firstStartedAt": "2026-02-19T08:00:00.000Z",
         "lastStartedAt": "2026-06-07T07:00:00.000Z",
@@ -48257,7 +48258,7 @@
         "trustedSemanticIdentities": 9,
         "activeIdentities": 4,
         "activeSharePct": 44.4,
-        "medianLongevityDays": 8.5,
+        "medianLongevityDays": 8.6,
         "variantUnits": 11,
         "firstStartedAt": "2026-08-03T07:00:00.000Z",
         "lastStartedAt": "2026-08-22T07:00:00.000Z",
@@ -57829,7 +57830,7 @@
         "trustedSemanticIdentities": 0,
         "activeIdentities": 2,
         "activeSharePct": 100,
-        "medianLongevityDays": 1.5,
+        "medianLongevityDays": 1.6,
         "variantUnits": 2,
         "firstStartedAt": "2026-08-25T07:00:00.000Z",
         "lastStartedAt": "2026-08-25T07:00:00.000Z",
@@ -61793,8 +61794,9 @@
       "vertical": {
         "id": "generalist",
         "label": "Generalista",
-        "status": "observed",
-        "source": "landing-intelligence curated example"
+        "status": "inferred",
+        "score": 0,
+        "source": "no specific vertical signal observed"
       },
       "eligibility": {
         "included": true,
@@ -63915,11 +63917,10 @@
       "country": "España",
       "scope": "Núcleo — agencia/leadgen",
       "vertical": {
-        "id": "legal-finance-insurance",
-        "label": "Legal, finanzas y seguros",
-        "status": "inferred",
-        "score": 5,
-        "source": "rules over company and captured landing text"
+        "id": "generalist",
+        "label": "Generalista",
+        "status": "observed",
+        "source": "landing-intelligence curated example"
       },
       "eligibility": {
         "included": true,
@@ -69699,7 +69700,7 @@
         "trustedSemanticIdentities": 8,
         "activeIdentities": 8,
         "activeSharePct": 100,
-        "medianLongevityDays": 4.5,
+        "medianLongevityDays": 4.6,
         "variantUnits": 10,
         "firstStartedAt": "2026-08-21T07:00:00.000Z",
         "lastStartedAt": "2026-08-25T07:00:00.000Z",
@@ -70324,7 +70325,7 @@
         "trustedSemanticIdentities": 5,
         "activeIdentities": 2,
         "activeSharePct": 40,
-        "medianLongevityDays": 5.5,
+        "medianLongevityDays": 5.6,
         "variantUnits": 5,
         "firstStartedAt": "2026-04-04T07:00:00.000Z",
         "lastStartedAt": "2026-08-21T07:00:00.000Z",
@@ -83559,7 +83560,7 @@
         "trustedSemanticIdentities": 2,
         "activeIdentities": 1,
         "activeSharePct": 50,
-        "medianLongevityDays": 23.5,
+        "medianLongevityDays": 23.6,
         "variantUnits": 3,
         "firstStartedAt": "2026-08-24T07:00:00.000Z",
         "lastStartedAt": "2026-08-24T07:00:00.000Z",
@@ -85667,9 +85668,8 @@
       "vertical": {
         "id": "generalist",
         "label": "Generalista",
-        "status": "inferred",
-        "score": 0,
-        "source": "no specific vertical signal observed"
+        "status": "observed",
+        "source": "landing-intelligence curated example"
       },
       "eligibility": {
         "included": true,
@@ -86705,7 +86705,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 3.5,
+        "medianLongevityDays": 3.6,
         "variantUnits": 1,
         "firstStartedAt": "2026-08-23T07:00:00.000Z",
         "lastStartedAt": "2026-08-23T07:00:00.000Z",
@@ -103339,9 +103339,9 @@
         "verticalId": "clinics-health",
         "label": "Clínicas y salud",
         "denominator": {
-          "companies": 54,
-          "uniqueIdentities": 201,
-          "landingCompanies": 45
+          "companies": 55,
+          "uniqueIdentities": 210,
+          "landingCompanies": 46
         },
         "gaps": [
           {
@@ -103350,7 +103350,7 @@
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
-            "denominatorCompanies": 54,
+            "denominatorCompanies": 55,
             "adoptionPct": 0,
             "gapPct": 100,
             "evidence": [],
@@ -103362,9 +103362,9 @@
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
-            "denominatorCompanies": 54,
-            "adoptionPct": 5.6,
-            "gapPct": 94.4,
+            "denominatorCompanies": 55,
+            "adoptionPct": 5.5,
+            "gapPct": 94.5,
             "evidence": [
               {
                 "companyId": "aibla",
@@ -103404,10 +103404,10 @@
             "label": "Sin permanencia",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 7,
-            "denominatorCompanies": 54,
-            "adoptionPct": 13,
-            "gapPct": 87,
+            "observedCompanies": 8,
+            "denominatorCompanies": 55,
+            "adoptionPct": 14.5,
+            "gapPct": 85.5,
             "evidence": [
               {
                 "companyId": "360-clinic-consulting",
@@ -103430,14 +103430,14 @@
                 "excerpt": "Atrae pacientes, no curiosos Si ya has probado agencias que te prometen resultados sin entender cómo funciona una clínica dental, prueba con quien sí lo sabe. Nosotros gestionamos campañas reales para captar pacientes,…"
               },
               {
-                "companyId": "devside-tm",
-                "companyName": "Devside TM / Leads Consulting",
-                "adId": "1001578479081508",
-                "identityKey": "40c4a13f459029ccca29b6708a545f267a3b5177cd3aac0c6185e93b00b76641",
+                "companyId": "buda-marketing-buda-consultores-s-l",
+                "companyName": "Buda Marketing (Buda Consultores S.L.)",
+                "adId": "CR17623429131175723009",
+                "identityKey": "84f990a49eece8a8d720f8300b8190fd9a6ae072cce9db5f3139e821a67e023d",
                 "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=1001578479081508",
+                "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR17623429131175723009?region=anywhere",
                 "active": false,
-                "excerpt": "¿Tu clínica dental necesita más pacientes nuevos? ¿Tienes una clínica dental y estás cansado de pagar mensualidades a agencias que te prometen pacientes y no aparecen? En Leads Consulting no somos una agencia tradiciona…"
+                "excerpt": "Imagen de Imagen de Patrocinado Buda Marketing www.budamarketing.es/agencia/web Contáctanos sin compromiso - ¿Empezamos con tu nueva web? ¿No tienes resultados con tu web? La rediseñamos para que funcione y obtengas más…"
               }
             ],
             "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
@@ -103448,9 +103448,9 @@
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 10,
-            "denominatorCompanies": 54,
-            "adoptionPct": 18.5,
-            "gapPct": 81.5,
+            "denominatorCompanies": 55,
+            "adoptionPct": 18.2,
+            "gapPct": 81.8,
             "evidence": [
               {
                 "companyId": "auge-salud",
@@ -103489,9 +103489,9 @@
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 19,
-            "denominatorCompanies": 54,
-            "adoptionPct": 35.2,
-            "gapPct": 64.8,
+            "denominatorCompanies": 55,
+            "adoptionPct": 34.5,
+            "gapPct": 65.5,
             "evidence": [
               {
                 "companyId": "capilagency",
@@ -103529,7 +103529,7 @@
         "label": "Generalista",
         "denominator": {
           "companies": 43,
-          "uniqueIdentities": 210,
+          "uniqueIdentities": 201,
           "landingCompanies": 40
         },
         "gaps": [
@@ -103550,10 +103550,10 @@
             "label": "Agenda implantada",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 3,
+            "observedCompanies": 4,
             "denominatorCompanies": 43,
-            "adoptionPct": 7,
-            "gapPct": 93,
+            "adoptionPct": 9.3,
+            "gapPct": 90.7,
             "evidence": [
               {
                 "companyId": "doga-marketing",
@@ -103566,22 +103566,20 @@
                 "excerpt": "Atrae casos de verdad Cambiar una sola frase lo cambia todo. 🗣️ Existe una gran diferencia entre que te pidan un descuento o que te pidan ayuda. ⚖️ Cuando el cliente solo ve números, terminas compitiendo por la minuta…"
               },
               {
+                "companyId": "masnegocio",
+                "companyName": "MásNegocio",
+                "pageId": "masnegocio-homepage",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://www.masnegocio.es/",
+                "excerpt": "Promete encontrar clientes y cerrar reuniones en piloto automático usando cinco millones de empresas verificadas y agentes IA. Declara acceso desde el primer día, envíos en 24–48 horas, primeras respuestas cualificadas…"
+              },
+              {
                 "companyId": "skyaweb-nacho-tejedor",
                 "companyName": "Skyaweb (Nacho Tejedor)",
                 "pageId": "skyaweb-nacho-tejedor-homepage",
                 "sourceType": "captured_landing",
                 "sourceUrl": "https://skyaweb.com/",
                 "excerpt": "“Webs que venden. SEO que posiciona.” Construir una máquina de visibilidad y captación combinando web, SEO orgánico y agente IA desde el primer día. Pyme local sin visibilidad/conversión o con consultas no atendidas que…"
-              },
-              {
-                "companyId": "viraltia",
-                "companyName": "Viraltia",
-                "adId": "1388653663316266",
-                "identityKey": "dd544d1077dd2b6f790f6be0cdf105fa71732b4217359538940594bc6571a505",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=1388653663316266",
-                "active": false,
-                "excerpt": "Tu agenda vacía te cuesta 30,000€ al mes en citas perdidas ¿Cuánto dinero pierdes cada día que tu agenda no está llena? Si cada cita vale 200€ y tienes 5 huecos vacíos diarios, son 1,000€ que se evaporan. En un mes: 30,…"
               }
             ],
             "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
@@ -103591,10 +103589,10 @@
             "label": "Citas o reuniones cualificadas",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 4,
+            "observedCompanies": 5,
             "denominatorCompanies": 43,
-            "adoptionPct": 9.3,
-            "gapPct": 90.7,
+            "adoptionPct": 11.6,
+            "gapPct": 88.4,
             "evidence": [
               {
                 "companyId": "exponencialmente",
@@ -103605,6 +103603,14 @@
                 "excerpt": "closer de ventas de alto valor Agencia de closers de ventas y setters de appointment \"como servicio\", con modelo de pago 100% por resultado Empresas digitales que necesitan externalizar el cierre de ventas (closers y se…"
               },
               {
+                "companyId": "masnegocio",
+                "companyName": "MásNegocio",
+                "pageId": "masnegocio-homepage",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://www.masnegocio.es/",
+                "excerpt": "Promete encontrar clientes y cerrar reuniones en piloto automático usando cinco millones de empresas verificadas y agentes IA. Declara acceso desde el primer día, envíos en 24–48 horas, primeras respuestas cualificadas…"
+              },
+              {
                 "companyId": "vendemasmuebles-es",
                 "companyName": "Vendemasmuebles.es",
                 "adId": "2051957519026775",
@@ -103613,16 +103619,6 @@
                 "sourceUrl": "https://www.facebook.com/ads/library/?id=2051957519026775",
                 "active": false,
                 "excerpt": "20 citas en tienda en 60 días o te devolvemos el dinero. ¿Quieres saber si podemos llevar 20 citas cualificadas a tu tienda de muebles en los próximos 60 días? No trabajamos con todo el mundo. Primero hacemos una llamad…"
-              },
-              {
-                "companyId": "viraltia",
-                "companyName": "Viraltia",
-                "adId": "1024588267043279",
-                "identityKey": "6b14b9edf8c9fb7c5bd3fb503807e228e281766a754923ce656277459c94432e",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=1024588267043279",
-                "active": false,
-                "excerpt": "Tu agenda está llena solo en el papel y es papel mojado Te están entrando solicitudes por WhatsApp y la cabina sigue medio vacía. Es exactamente el escenario que vivieron Sara de Kibó y Carlos de Tribecca hace unos mese…"
               }
             ],
             "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
@@ -103632,21 +103628,11 @@
             "label": "Sin permanencia",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 8,
+            "observedCompanies": 7,
             "denominatorCompanies": 43,
-            "adoptionPct": 18.6,
-            "gapPct": 81.4,
+            "adoptionPct": 16.3,
+            "gapPct": 83.7,
             "evidence": [
-              {
-                "companyId": "buda-marketing-buda-consultores-s-l",
-                "companyName": "Buda Marketing (Buda Consultores S.L.)",
-                "adId": "CR17623429131175723009",
-                "identityKey": "84f990a49eece8a8d720f8300b8190fd9a6ae072cce9db5f3139e821a67e023d",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR17623429131175723009?region=anywhere",
-                "active": false,
-                "excerpt": "Imagen de Imagen de Patrocinado Buda Marketing www.budamarketing.es/agencia/web Contáctanos sin compromiso - ¿Empezamos con tu nueva web? ¿No tienes resultados con tu web? La rediseñamos para que funcione y obtengas más…"
-              },
               {
                 "companyId": "level-up-agency",
                 "companyName": "LEVEL UP AGENCY (VERA)",
@@ -103662,13 +103648,23 @@
                 "sourceType": "captured_landing",
                 "sourceUrl": "https://www.localboostspain.com/",
                 "excerpt": "Tu negocio local no debería perder clientes que ya te están buscando Optimización de Google Business Profile, gestión de reseñas, webs locales, campañas Google/Meta Ads, tracking de conversiones y automatización de What…"
+              },
+              {
+                "companyId": "pmg-ads",
+                "companyName": "PMG Ads",
+                "adId": "1285027903617518",
+                "identityKey": "725162d43b47982d04640c9b41db29481932f770d2eab05ec9ab84bb8bc52636",
+                "sourceType": "ad_copy",
+                "sourceUrl": "https://www.facebook.com/ads/library/?id=1285027903617518",
+                "active": true,
+                "excerpt": "¿Vender una sociedad con deudas? ¿Tu sociedad tiene deudas y no sabes cómo salir de la situación? En PMG Consulting estudiamos la adquisición de sociedades con dificultades económicas. ✔ Sociedades con deudas bancarias,…"
               }
             ],
             "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
           },
           {
-            "signalId": "automation-ai",
-            "label": "Automatización o IA explicada",
+            "signalId": "public-price",
+            "label": "Precio público observado",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 16,
@@ -103677,32 +103673,22 @@
             "gapPct": 62.8,
             "evidence": [
               {
-                "companyId": "acelerador-elite",
-                "companyName": "Acelerador Elite / Sergio Retamero",
-                "adId": "1331107405769091",
-                "identityKey": "e4a5a4d70435c36e1a2f9d582b12ed85bcada6f6261d758d0ce6dfbf01ca684c",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=1331107405769091",
-                "active": true,
-                "excerpt": "El VSL Funnel tradicional está muerto (y tu agenda lo sabe) Te vendieron que montando un VSL Funnel con un vídeo de 15 minutos tu negocio se automatizaría por completo. La realidad es que la gente ya no confía en esos v…"
+                "companyId": "agencia-pronoia",
+                "companyName": "Agencia Pronoia",
+                "sourceType": "company_or_captured_landing",
+                "sourcePath": "price"
               },
               {
                 "companyId": "agencia-riders",
                 "companyName": "Agencia Riders",
-                "pageId": "agencia-riders-homepage",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://agenciariders.com/",
-                "excerpt": "Hero exacto: «Genera Ingresos Constantes, Predecibles y Escalables con tus Infoproductos y Conviértete en Referente en tu Sector». Diseñar un sistema de ventas que atraiga, convierta y escale infoproductos de forma recu…"
+                "sourceType": "company_or_captured_landing",
+                "sourcePath": "price"
               },
               {
                 "companyId": "bastida-y-farina-s-l",
                 "companyName": "Bastida&Farina S.L.",
-                "adId": "877145185438985",
-                "identityKey": "58923ec7714864c8198e4f83dc79d0788c5083b1feb4742c51f6bf375313bf18",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=877145185438985",
-                "active": false,
-                "excerpt": "En B&F no hacemos promesas vacías, hacemos sistemas. 📢 ARCO: El sistema que transforma leads en ventas. En Bastida&Farina combinamos canales estratégicos, optimización constante e inteligencia artificial para crear sis…"
+                "sourceType": "company_or_captured_landing",
+                "sourcePath": "price"
               }
             ],
             "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
@@ -104077,180 +104063,6 @@
         ]
       },
       {
-        "verticalId": "legal-finance-insurance",
-        "label": "Legal, finanzas y seguros",
-        "denominator": {
-          "companies": 27,
-          "uniqueIdentities": 79,
-          "landingCompanies": 26
-        },
-        "gaps": [
-          {
-            "signalId": "qualified-meetings",
-            "label": "Citas o reuniones cualificadas",
-            "measurementStatus": "observed_frequency",
-            "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 1,
-            "denominatorCompanies": 27,
-            "adoptionPct": 3.7,
-            "gapPct": 96.3,
-            "evidence": [
-              {
-                "companyId": "masnegocio",
-                "companyName": "MásNegocio",
-                "pageId": "masnegocio-homepage",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://www.masnegocio.es/",
-                "excerpt": "Promete encontrar clientes y cerrar reuniones en piloto automático usando cinco millones de empresas verificadas y agentes IA. Declara acceso desde el primer día, envíos en 24–48 horas, primeras respuestas cualificadas…"
-              }
-            ],
-            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
-          },
-          {
-            "signalId": "territorial-exclusivity",
-            "label": "Exclusividad territorial",
-            "measurementStatus": "observed_frequency",
-            "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 1,
-            "denominatorCompanies": 27,
-            "adoptionPct": 3.7,
-            "gapPct": 96.3,
-            "evidence": [
-              {
-                "companyId": "pepperli",
-                "companyName": "Pepperli",
-                "pageId": "pepperli-landing",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://www.pepperli.com/leads/solar",
-                "excerpt": "Leads que realmente quieren comprar. Leads exclusivos filtrados por zona, presupuesto, urgencia y decisión; integración CRM/WhatsApp, puesta en marcha en 48 h. Solar, estética, fertilidad, legal, hipotecas y seguros de…"
-              }
-            ],
-            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
-          },
-          {
-            "signalId": "appointment-setting",
-            "label": "Agenda implantada",
-            "measurementStatus": "observed_frequency",
-            "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 6,
-            "denominatorCompanies": 27,
-            "adoptionPct": 22.2,
-            "gapPct": 77.8,
-            "evidence": [
-              {
-                "companyId": "adfredo",
-                "companyName": "AdFredo",
-                "pageId": "adfredo-homepage",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://adfredo.com/",
-                "excerpt": "Hero exacto: «Tu cliente ya te busca en Google. ¿Estás ahí?». Poner al negocio frente a demanda existente y medir contactos, no impresiones o clics. Negocio español con demanda demostrable, capacidad para atender leads…"
-              },
-              {
-                "companyId": "confymagency",
-                "companyName": "Confymagency",
-                "adId": "1060461783034052",
-                "identityKey": "fcfdffdc78f771d85ae7582bb6032678843a78968cb12029357d9584d9423e3a",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=1060461783034052",
-                "active": false,
-                "excerpt": "Llena tu Agenda de Clientes en 30 Días | Sistema Confymagency ¿¿Te suena familiar abrir tu calendario y ver días enteros en blanco, esperando a que suene el teléfono? 📉 Depender de la suerte o del boca a boca hace que…"
-              },
-              {
-                "companyId": "expiey",
-                "companyName": "Expiey",
-                "pageId": "expiey-homepage",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://expiey.com/",
-                "excerpt": "Hero exacto: «Agencia de marketing para abogados que firma 30-60 casos cada mes en tu bufete». Llenar el bufete de asuntos jurídicos mediante un sistema vertical con exclusividad y garantía contractual. Bufete español c…"
-              }
-            ],
-            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
-          },
-          {
-            "signalId": "no-lock-in",
-            "label": "Sin permanencia",
-            "measurementStatus": "observed_frequency",
-            "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 7,
-            "denominatorCompanies": 27,
-            "adoptionPct": 25.9,
-            "gapPct": 74.1,
-            "evidence": [
-              {
-                "companyId": "cronoshare",
-                "companyName": "Cronoshare",
-                "adId": "manual:cronoshare:054",
-                "identityKey": "ef0f1b3d5bf523d61571be22a4c88d8bffc131a3451a59fcd1e0f8665ee13b77",
-                "sourceType": "ad_copy",
-                "sourceUrl": null,
-                "active": false,
-                "excerpt": "Empresas de Reformas en Esplugues de Llobregat | Presupuestos En pocas horas, recibirás presupuestos personalizados sin compromiso. Encuentra los mejores profesionales de confianza para la mejora y mantenimiento del hog…"
-              },
-              {
-                "companyId": "expiey",
-                "companyName": "Expiey",
-                "adId": "manual:expiey:034",
-                "identityKey": "45f44c92177f7ff20b1ca5b2e7015130d11be2b06f3ca7d164f521a5ac545830",
-                "sourceType": "ad_copy",
-                "sourceUrl": null,
-                "active": false,
-                "excerpt": "De 10 a 20 nuevas exclusivas - Marketing inmobiliario expiey.com — www.expiey.com/inmobiliaria/marketing — De 10 a 20 nuevas exclusivas - Marketing inmobiliario. Solo trabajamos con 1 inmobiliaria por zona. Análisis gra…"
-              },
-              {
-                "companyId": "generacion-leads-masterfy-lc",
-                "companyName": "Generación Leads (MASTERFY LC)",
-                "pageId": "generacion-leads-masterfy-lc-homepage",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://generacionleads.es/",
-                "excerpt": "Hero exacto: «AGENCIA DE LEADS» / «CLIENTES PARA TU SECTOR» / «Leads exclusivos y de calidad». Entregar cada mes contactos exclusivos filtrados, con volumen según plan, integración y devolución si no se consigue la capt…"
-              }
-            ],
-            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
-          },
-          {
-            "signalId": "automation-ai",
-            "label": "Automatización o IA explicada",
-            "measurementStatus": "observed_frequency",
-            "opportunityStatus": "inferred_hypothesis",
-            "observedCompanies": 9,
-            "denominatorCompanies": 27,
-            "adoptionPct": 33.3,
-            "gapPct": 66.7,
-            "evidence": [
-              {
-                "companyId": "confymagency",
-                "companyName": "Confymagency",
-                "adId": "1060461783034052",
-                "identityKey": "fcfdffdc78f771d85ae7582bb6032678843a78968cb12029357d9584d9423e3a",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=1060461783034052",
-                "active": false,
-                "excerpt": "Llena tu Agenda de Clientes en 30 Días | Sistema Confymagency ¿¿Te suena familiar abrir tu calendario y ver días enteros en blanco, esperando a que suene el teléfono? 📉 Depender de la suerte o del boca a boca hace que…"
-              },
-              {
-                "companyId": "eximia-studio",
-                "companyName": "Eximia Studio",
-                "adId": "2466552230425329",
-                "identityKey": "2f781c6ff86707f32341dba6e510107466a4c016a237f6ffafb57e58b40836ee",
-                "sourceType": "ad_copy",
-                "sourceUrl": "https://www.facebook.com/ads/library/?id=2466552230425329",
-                "active": true,
-                "excerpt": "NECESITA HACER LO CORRECTO Tu marca ya está posicionada. El mercado te reconoce. Pero sabes que podrías ser más eficiente: menos desperdicio, más precisión, mejores decisiones. En nuestros casos verás cómo empresas cons…"
-              },
-              {
-                "companyId": "expiey",
-                "companyName": "Expiey",
-                "pageId": "expiey-homepage",
-                "sourceType": "captured_landing",
-                "sourceUrl": "https://expiey.com/",
-                "excerpt": "Hero exacto: «Agencia de marketing para abogados que firma 30-60 casos cada mes en tu bufete». Llenar el bufete de asuntos jurídicos mediante un sistema vertical con exclusividad y garantía contractual. Bufete español c…"
-              }
-            ],
-            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
-          }
-        ]
-      },
-      {
         "verticalId": "real-estate",
         "label": "Inmobiliario",
         "denominator": {
@@ -104430,6 +104242,171 @@
                 "companyName": "Desorbitante",
                 "sourceType": "company_or_captured_landing",
                 "sourcePath": "price"
+              }
+            ],
+            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
+          }
+        ]
+      },
+      {
+        "verticalId": "legal-finance-insurance",
+        "label": "Legal, finanzas y seguros",
+        "denominator": {
+          "companies": 26,
+          "uniqueIdentities": 79,
+          "landingCompanies": 25
+        },
+        "gaps": [
+          {
+            "signalId": "qualified-meetings",
+            "label": "Citas o reuniones cualificadas",
+            "measurementStatus": "observed_frequency",
+            "opportunityStatus": "inferred_hypothesis",
+            "observedCompanies": 0,
+            "denominatorCompanies": 26,
+            "adoptionPct": 0,
+            "gapPct": 100,
+            "evidence": [],
+            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
+          },
+          {
+            "signalId": "territorial-exclusivity",
+            "label": "Exclusividad territorial",
+            "measurementStatus": "observed_frequency",
+            "opportunityStatus": "inferred_hypothesis",
+            "observedCompanies": 1,
+            "denominatorCompanies": 26,
+            "adoptionPct": 3.8,
+            "gapPct": 96.2,
+            "evidence": [
+              {
+                "companyId": "pepperli",
+                "companyName": "Pepperli",
+                "pageId": "pepperli-landing",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://www.pepperli.com/leads/solar",
+                "excerpt": "Leads que realmente quieren comprar. Leads exclusivos filtrados por zona, presupuesto, urgencia y decisión; integración CRM/WhatsApp, puesta en marcha en 48 h. Solar, estética, fertilidad, legal, hipotecas y seguros de…"
+              }
+            ],
+            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
+          },
+          {
+            "signalId": "appointment-setting",
+            "label": "Agenda implantada",
+            "measurementStatus": "observed_frequency",
+            "opportunityStatus": "inferred_hypothesis",
+            "observedCompanies": 5,
+            "denominatorCompanies": 26,
+            "adoptionPct": 19.2,
+            "gapPct": 80.8,
+            "evidence": [
+              {
+                "companyId": "adfredo",
+                "companyName": "AdFredo",
+                "pageId": "adfredo-homepage",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://adfredo.com/",
+                "excerpt": "Hero exacto: «Tu cliente ya te busca en Google. ¿Estás ahí?». Poner al negocio frente a demanda existente y medir contactos, no impresiones o clics. Negocio español con demanda demostrable, capacidad para atender leads…"
+              },
+              {
+                "companyId": "confymagency",
+                "companyName": "Confymagency",
+                "adId": "1060461783034052",
+                "identityKey": "fcfdffdc78f771d85ae7582bb6032678843a78968cb12029357d9584d9423e3a",
+                "sourceType": "ad_copy",
+                "sourceUrl": "https://www.facebook.com/ads/library/?id=1060461783034052",
+                "active": false,
+                "excerpt": "Llena tu Agenda de Clientes en 30 Días | Sistema Confymagency ¿¿Te suena familiar abrir tu calendario y ver días enteros en blanco, esperando a que suene el teléfono? 📉 Depender de la suerte o del boca a boca hace que…"
+              },
+              {
+                "companyId": "expiey",
+                "companyName": "Expiey",
+                "pageId": "expiey-homepage",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://expiey.com/",
+                "excerpt": "Hero exacto: «Agencia de marketing para abogados que firma 30-60 casos cada mes en tu bufete». Llenar el bufete de asuntos jurídicos mediante un sistema vertical con exclusividad y garantía contractual. Bufete español c…"
+              }
+            ],
+            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
+          },
+          {
+            "signalId": "no-lock-in",
+            "label": "Sin permanencia",
+            "measurementStatus": "observed_frequency",
+            "opportunityStatus": "inferred_hypothesis",
+            "observedCompanies": 7,
+            "denominatorCompanies": 26,
+            "adoptionPct": 26.9,
+            "gapPct": 73.1,
+            "evidence": [
+              {
+                "companyId": "cronoshare",
+                "companyName": "Cronoshare",
+                "adId": "manual:cronoshare:054",
+                "identityKey": "ef0f1b3d5bf523d61571be22a4c88d8bffc131a3451a59fcd1e0f8665ee13b77",
+                "sourceType": "ad_copy",
+                "sourceUrl": null,
+                "active": false,
+                "excerpt": "Empresas de Reformas en Esplugues de Llobregat | Presupuestos En pocas horas, recibirás presupuestos personalizados sin compromiso. Encuentra los mejores profesionales de confianza para la mejora y mantenimiento del hog…"
+              },
+              {
+                "companyId": "expiey",
+                "companyName": "Expiey",
+                "adId": "manual:expiey:034",
+                "identityKey": "45f44c92177f7ff20b1ca5b2e7015130d11be2b06f3ca7d164f521a5ac545830",
+                "sourceType": "ad_copy",
+                "sourceUrl": null,
+                "active": false,
+                "excerpt": "De 10 a 20 nuevas exclusivas - Marketing inmobiliario expiey.com — www.expiey.com/inmobiliaria/marketing — De 10 a 20 nuevas exclusivas - Marketing inmobiliario. Solo trabajamos con 1 inmobiliaria por zona. Análisis gra…"
+              },
+              {
+                "companyId": "generacion-leads-masterfy-lc",
+                "companyName": "Generación Leads (MASTERFY LC)",
+                "pageId": "generacion-leads-masterfy-lc-homepage",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://generacionleads.es/",
+                "excerpt": "Hero exacto: «AGENCIA DE LEADS» / «CLIENTES PARA TU SECTOR» / «Leads exclusivos y de calidad». Entregar cada mes contactos exclusivos filtrados, con volumen según plan, integración y devolución si no se consigue la capt…"
+              }
+            ],
+            "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
+          },
+          {
+            "signalId": "automation-ai",
+            "label": "Automatización o IA explicada",
+            "measurementStatus": "observed_frequency",
+            "opportunityStatus": "inferred_hypothesis",
+            "observedCompanies": 8,
+            "denominatorCompanies": 26,
+            "adoptionPct": 30.8,
+            "gapPct": 69.2,
+            "evidence": [
+              {
+                "companyId": "confymagency",
+                "companyName": "Confymagency",
+                "adId": "1060461783034052",
+                "identityKey": "fcfdffdc78f771d85ae7582bb6032678843a78968cb12029357d9584d9423e3a",
+                "sourceType": "ad_copy",
+                "sourceUrl": "https://www.facebook.com/ads/library/?id=1060461783034052",
+                "active": false,
+                "excerpt": "Llena tu Agenda de Clientes en 30 Días | Sistema Confymagency ¿¿Te suena familiar abrir tu calendario y ver días enteros en blanco, esperando a que suene el teléfono? 📉 Depender de la suerte o del boca a boca hace que…"
+              },
+              {
+                "companyId": "eximia-studio",
+                "companyName": "Eximia Studio",
+                "adId": "2466552230425329",
+                "identityKey": "2f781c6ff86707f32341dba6e510107466a4c016a237f6ffafb57e58b40836ee",
+                "sourceType": "ad_copy",
+                "sourceUrl": "https://www.facebook.com/ads/library/?id=2466552230425329",
+                "active": true,
+                "excerpt": "NECESITA HACER LO CORRECTO Tu marca ya está posicionada. El mercado te reconoce. Pero sabes que podrías ser más eficiente: menos desperdicio, más precisión, mejores decisiones. En nuestros casos verás cómo empresas cons…"
+              },
+              {
+                "companyId": "expiey",
+                "companyName": "Expiey",
+                "pageId": "expiey-homepage",
+                "sourceType": "captured_landing",
+                "sourceUrl": "https://expiey.com/",
+                "excerpt": "Hero exacto: «Agencia de marketing para abogados que firma 30-60 casos cada mes en tu bufete». Llenar el bufete de asuntos jurídicos mediante un sistema vertical con exclusividad y garantía contractual. Bufete español c…"
               }
             ],
             "limitation": "Ausencia en la evidencia recuperada no demuestra que la empresa nunca use esta señal; el hueco es una hipótesis para validar."
@@ -105085,9 +105062,9 @@
       "verticalId": "clinics-health",
       "label": "Clínicas y salud",
       "denominator": {
-        "companies": 54,
-        "uniqueIdentities": 201,
-        "landingCompanies": 45
+        "companies": 55,
+        "uniqueIdentities": 210,
+        "landingCompanies": 46
       },
       "status": "evidence_based_playbook",
       "observedModules": {
@@ -105095,8 +105072,8 @@
           "status": "observed_frequency",
           "id": "clinics-health",
           "label": "Clínicas y salud",
-          "companies": 51,
-          "adoptionPct": 94.4,
+          "companies": 52,
+          "adoptionPct": 94.5,
           "evidence": [
             {
               "companyId": "red-bonsai",
@@ -105134,8 +105111,8 @@
           "status": "observed_frequency",
           "id": "dependency",
           "label": "Dependencia de portales o referidos",
-          "companies": 15,
-          "adoptionPct": 27.8,
+          "companies": 16,
+          "adoptionPct": 29.1,
           "evidence": [
             {
               "companyId": "amp-docmedia-es",
@@ -105173,8 +105150,8 @@
           "status": "observed_frequency",
           "id": "sales-growth",
           "label": "Ventas, facturación o crecimiento",
-          "companies": 32,
-          "adoptionPct": 59.3,
+          "companies": 33,
+          "adoptionPct": 60,
           "evidence": [
             {
               "companyId": "amp-docmedia-es",
@@ -105212,8 +105189,8 @@
           "status": "observed_frequency",
           "id": "system-crm-funnel",
           "label": "Sistema, funnel o CRM",
-          "companies": 38,
-          "adoptionPct": 70.4,
+          "companies": 39,
+          "adoptionPct": 70.9,
           "evidence": [
             {
               "companyId": "amp-docmedia-es",
@@ -105251,8 +105228,8 @@
           "status": "observed_frequency",
           "id": "free-entry",
           "label": "Entrada gratuita",
-          "companies": 19,
-          "adoptionPct": 35.2,
+          "companies": 20,
+          "adoptionPct": 36.4,
           "evidence": [
             {
               "companyId": "amp-docmedia-es",
@@ -105290,8 +105267,8 @@
           "status": "observed_frequency",
           "id": "audit-demo",
           "label": "Auditoría, demo o diagnóstico",
-          "companies": 41,
-          "adoptionPct": 75.9,
+          "companies": 42,
+          "adoptionPct": 76.4,
           "evidence": [
             {
               "companyId": "red-bonsai",
@@ -105329,8 +105306,8 @@
           "status": "observed_frequency",
           "id": "video",
           "label": "Vídeo",
-          "companies": 17,
-          "adoptionPct": 31.5,
+          "companies": 18,
+          "adoptionPct": 32.7,
           "evidence": [
             {
               "companyId": "echale-marketing",
@@ -105374,9 +105351,9 @@
           "offer": 97,
           "mechanism": 75,
           "primaryCta": 90,
-          "proof": 57,
-          "price": 37,
-          "guarantee": 49,
+          "proof": 52,
+          "price": 24,
+          "guarantee": 32,
           "funnel": 100
         },
         "medianFunnelSteps": 2,
@@ -105437,7 +105414,7 @@
           },
           {
             "status": "inferred_recommendation",
-            "text": "La prueba aparece en 57% y el mecanismo en 75% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+            "text": "La prueba aparece en 52% y el mecanismo en 75% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
           }
         ]
       },
@@ -105446,28 +105423,28 @@
           "status": "inferred_hypothesis",
           "signalId": "territorial-exclusivity",
           "test": "Probar una variante que haga explícito: Exclusividad territorial.",
-          "rationale": "0/54 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "0/55 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         },
         {
           "status": "inferred_hypothesis",
           "signalId": "qualified-meetings",
           "test": "Probar una variante que haga explícito: Citas o reuniones cualificadas.",
-          "rationale": "3/54 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "3/55 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         },
         {
           "status": "inferred_hypothesis",
           "signalId": "no-lock-in",
           "test": "Probar una variante que haga explícito: Sin permanencia.",
-          "rationale": "7/54 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "8/55 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         },
         {
           "status": "inferred_hypothesis",
           "signalId": "appointment-setting",
           "test": "Probar una variante que haga explícito: Agenda implantada.",
-          "rationale": "10/54 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "10/55 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         }
       ]
@@ -105477,7 +105454,7 @@
       "label": "Generalista",
       "denominator": {
         "companies": 43,
-        "uniqueIdentities": 210,
+        "uniqueIdentities": 201,
         "landingCompanies": 40
       },
       "status": "evidence_based_playbook",
@@ -105525,8 +105502,8 @@
           "status": "observed_frequency",
           "id": "dependency",
           "label": "Dependencia de portales o referidos",
-          "companies": 13,
-          "adoptionPct": 30.2,
+          "companies": 12,
+          "adoptionPct": 27.9,
           "evidence": [
             {
               "companyId": "acelerador-elite",
@@ -105564,8 +105541,8 @@
           "status": "observed_frequency",
           "id": "sales-growth",
           "label": "Ventas, facturación o crecimiento",
-          "companies": 27,
-          "adoptionPct": 62.8,
+          "companies": 26,
+          "adoptionPct": 60.5,
           "evidence": [
             {
               "companyId": "acelerador-elite",
@@ -105640,40 +105617,40 @@
         },
         "guarantee": {
           "status": "observed_frequency",
-          "id": "free-entry",
-          "label": "Entrada gratuita",
-          "companies": 17,
-          "adoptionPct": 39.5,
+          "id": "explicit-guarantee",
+          "label": "Garantía explícita",
+          "companies": 18,
+          "adoptionPct": 41.9,
           "evidence": [
             {
-              "companyId": "acelerador-elite",
-              "companyName": "Acelerador Elite / Sergio Retamero",
-              "adId": "1331107405769091",
-              "identityKey": "e4a5a4d70435c36e1a2f9d582b12ed85bcada6f6261d758d0ce6dfbf01ca684c",
+              "companyId": "bastida-y-farina-s-l",
+              "companyName": "Bastida&Farina S.L.",
+              "adId": "1539658374285263",
+              "identityKey": "4aba43bd80a67489bc29ac732deb7fe4713d403786808e38d9da5ae0dfd97a0b",
               "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1331107405769091",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1539658374285263",
               "active": true,
-              "excerpt": "El VSL Funnel tradicional está muerto (y tu agenda lo sabe) Te vendieron que montando un VSL Funnel con un vídeo de 15 minutos tu negocio se automatizaría por completo. La realidad es que la gente ya no confía en esos v…"
+              "excerpt": "En B&F no hacemos promesas vacías, o tienes resultados o no pagas. ¿Te pasa como a Mario? 😴 ¿Sueñas con leads entrando sin parar y tu equipo comercial cerrando clientes a tope como si no hubiera un mañana? Pues que no…"
             },
             {
-              "companyId": "pmg-ads",
-              "companyName": "PMG Ads",
-              "adId": "1285027903617518",
-              "identityKey": "725162d43b47982d04640c9b41db29481932f770d2eab05ec9ab84bb8bc52636",
+              "companyId": "clibel",
+              "companyName": "Clibel",
+              "adId": "1058317379922992",
+              "identityKey": "3480aef01153c21eee2cd03e3ed95b1c84a6955097a82c9770bcdfaa5c3af91d",
               "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1285027903617518",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1058317379922992",
               "active": true,
-              "excerpt": "¿Vender una sociedad con deudas? ¿Tu sociedad tiene deudas y no sabes cómo salir de la situación? En PMG Consulting estudiamos la adquisición de sociedades con dificultades económicas. ✔ Sociedades con deudas bancarias,…"
+              "excerpt": "Agenda llena en 30 días Centro de estética, danos 30 días y llenaremos tu agenda. Garantizado bajo contrato. Y si te preguntas como puedo estar tan seguro de garantizarte algo así, es porque ya lo he hecho. Ya lo he hec…"
             },
             {
-              "companyId": "buda-marketing-buda-consultores-s-l",
-              "companyName": "Buda Marketing (Buda Consultores S.L.)",
-              "adId": "manual:buda-marketing-buda-consultores-s-l:013",
-              "identityKey": "53ffa2c5d5d3e22afb288accc73f64e8329c98682ddfd61bcc2ac8bdf89c2833",
+              "companyId": "gym-evolution",
+              "companyName": "Gym Evolution",
+              "adId": "1089630070483777",
+              "identityKey": "276a3855d50843ee20632d99cedea6f8c7f47580c5c33e779afbfe75e11565e7",
               "sourceType": "ad_copy",
-              "sourceUrl": null,
-              "active": false,
-              "excerpt": "Empieza a captar clientes Es hora de dejar de depender del boca a boca. [En imagen:] No somos una agencia de marketing Somos tu sistema de captación · análisis gratuito Visitar el sitio análisis gratuito"
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1089630070483777",
+              "active": true,
+              "excerpt": "Añade 30.000-100.000 € de facturación anual a tu centro de entrenamiento ¡Dueños de centros de entrenamiento en España! 💪 Añade entre **30.000 y 100.000 € de facturación anual** a tu centro de entrenamiento. No hablamo…"
             }
           ]
         },
@@ -105720,8 +105697,8 @@
           "status": "observed_frequency",
           "id": "video",
           "label": "Vídeo",
-          "companies": 15,
-          "adoptionPct": 34.9,
+          "companies": 14,
+          "adoptionPct": 32.6,
           "evidence": [
             {
               "companyId": "bastida-y-farina-s-l",
@@ -105765,9 +105742,9 @@
           "offer": 95,
           "mechanism": 60,
           "primaryCta": 85,
-          "proof": 62,
-          "price": 34,
-          "guarantee": 46,
+          "proof": 54,
+          "price": 20,
+          "guarantee": 32,
           "funnel": 100
         },
         "medianFunnelSteps": 2,
@@ -105828,7 +105805,7 @@
           },
           {
             "status": "inferred_recommendation",
-            "text": "La prueba aparece en 62% y el mecanismo en 60% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+            "text": "La prueba aparece en 54% y el mecanismo en 60% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
           }
         ]
       },
@@ -105844,21 +105821,21 @@
           "status": "inferred_hypothesis",
           "signalId": "appointment-setting",
           "test": "Probar una variante que haga explícito: Agenda implantada.",
-          "rationale": "3/43 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "4/43 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         },
         {
           "status": "inferred_hypothesis",
           "signalId": "qualified-meetings",
           "test": "Probar una variante que haga explícito: Citas o reuniones cualificadas.",
-          "rationale": "4/43 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "5/43 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         },
         {
           "status": "inferred_hypothesis",
           "signalId": "no-lock-in",
           "test": "Probar una variante que haga explícito: Sin permanencia.",
-          "rationale": "8/43 empresas lo hacen visible en la evidencia recuperada.",
+          "rationale": "7/43 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         }
       ]
@@ -106157,8 +106134,8 @@
           "mechanism": 68,
           "primaryCta": 100,
           "proof": 73,
-          "price": 45,
-          "guarantee": 55,
+          "price": 36,
+          "guarantee": 41,
           "funnel": 100
         },
         "medianFunnelSteps": 6,
@@ -106547,9 +106524,9 @@
           "offer": 95,
           "mechanism": 82,
           "primaryCta": 95,
-          "proof": 64,
-          "price": 32,
-          "guarantee": 68,
+          "proof": 59,
+          "price": 18,
+          "guarantee": 41,
           "funnel": 100
         },
         "medianFunnelSteps": 1,
@@ -106610,7 +106587,7 @@
           },
           {
             "status": "inferred_recommendation",
-            "text": "La prueba aparece en 64% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+            "text": "La prueba aparece en 59% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
           }
         ]
       },
@@ -106641,397 +106618,6 @@
           "signalId": "automation-ai",
           "test": "Probar una variante que haga explícito: Automatización o IA explicada.",
           "rationale": "8/29 empresas lo hacen visible en la evidencia recuperada.",
-          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
-        }
-      ]
-    },
-    {
-      "verticalId": "legal-finance-insurance",
-      "label": "Legal, finanzas y seguros",
-      "denominator": {
-        "companies": 27,
-        "uniqueIdentities": 79,
-        "landingCompanies": 26
-      },
-      "status": "evidence_based_playbook",
-      "observedModules": {
-        "audience": {
-          "status": "observed_frequency",
-          "id": "legal-finance",
-          "label": "Legal, finanzas y seguros",
-          "companies": 21,
-          "adoptionPct": 77.8,
-          "evidence": [
-            {
-              "companyId": "advisorscale",
-              "companyName": "AdvisorScale / Isidro Ayala",
-              "adId": "1066649132680032",
-              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
-              "active": true,
-              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
-            },
-            {
-              "companyId": "confymagency",
-              "companyName": "Confymagency",
-              "adId": "2128856414711704",
-              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
-              "active": true,
-              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
-            },
-            {
-              "companyId": "epiko",
-              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
-              "adId": "1636593964643080",
-              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
-              "active": true,
-              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
-            }
-          ]
-        },
-        "pain": {
-          "status": "observed_frequency",
-          "id": "dependency",
-          "label": "Dependencia de portales o referidos",
-          "companies": 7,
-          "adoptionPct": 25.9,
-          "evidence": [
-            {
-              "companyId": "advisorscale",
-              "companyName": "AdvisorScale / Isidro Ayala",
-              "adId": "1066649132680032",
-              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
-              "active": true,
-              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
-            },
-            {
-              "companyId": "confymagency",
-              "companyName": "Confymagency",
-              "adId": "2128856414711704",
-              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
-              "active": true,
-              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
-            },
-            {
-              "companyId": "eximia-studio",
-              "companyName": "Eximia Studio",
-              "adId": "1059782006405248",
-              "identityKey": "2eabf325ccdf07e115d50675d58219dc0ff4e93ea45c77ca304fc9c8fe6a31eb",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1059782006405248",
-              "active": true,
-              "excerpt": "El sistema para abogados ¿Quieres captar clientes de manera constante y no dejarlo a la suerte? Descubre el secreto de los despachos que más facturan en España: • Atraer prospectos • Convertirlos en clientes • Cerrar tr…"
-            }
-          ]
-        },
-        "promise": {
-          "status": "observed_frequency",
-          "id": "sales-growth",
-          "label": "Ventas, facturación o crecimiento",
-          "companies": 12,
-          "adoptionPct": 44.4,
-          "evidence": [
-            {
-              "companyId": "confymagency",
-              "companyName": "Confymagency",
-              "adId": "2128856414711704",
-              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
-              "active": true,
-              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
-            },
-            {
-              "companyId": "epiko",
-              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
-              "adId": "1636593964643080",
-              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
-              "active": true,
-              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
-            },
-            {
-              "companyId": "eximia-studio",
-              "companyName": "Eximia Studio",
-              "adId": "1059782006405248",
-              "identityKey": "2eabf325ccdf07e115d50675d58219dc0ff4e93ea45c77ca304fc9c8fe6a31eb",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1059782006405248",
-              "active": true,
-              "excerpt": "El sistema para abogados ¿Quieres captar clientes de manera constante y no dejarlo a la suerte? Descubre el secreto de los despachos que más facturan en España: • Atraer prospectos • Convertirlos en clientes • Cerrar tr…"
-            }
-          ]
-        },
-        "mechanism": {
-          "status": "observed_frequency",
-          "id": "system-crm-funnel",
-          "label": "Sistema, funnel o CRM",
-          "companies": 19,
-          "adoptionPct": 70.4,
-          "evidence": [
-            {
-              "companyId": "advisorscale",
-              "companyName": "AdvisorScale / Isidro Ayala",
-              "adId": "1066649132680032",
-              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
-              "active": true,
-              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
-            },
-            {
-              "companyId": "confymagency",
-              "companyName": "Confymagency",
-              "adId": "2128856414711704",
-              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
-              "active": true,
-              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
-            },
-            {
-              "companyId": "epiko",
-              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
-              "adId": "1636593964643080",
-              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
-              "active": true,
-              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
-            }
-          ]
-        },
-        "guarantee": {
-          "status": "observed_frequency",
-          "id": "explicit-guarantee",
-          "label": "Garantía explícita",
-          "companies": 13,
-          "adoptionPct": 48.1,
-          "evidence": [
-            {
-              "companyId": "advisorscale",
-              "companyName": "AdvisorScale / Isidro Ayala",
-              "adId": "1066649132680032",
-              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
-              "active": true,
-              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
-            },
-            {
-              "companyId": "leadgrow",
-              "companyName": "Leadgrow",
-              "adId": "1064601889833928",
-              "identityKey": "09148f6436ae32bb90af6b67bdea778e2d3a8476eb12a853f6313ec858fc9f28",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1064601889833928",
-              "active": true,
-              "excerpt": "Deja de depender del boca a boca en tu correduría Consigue leads de salud Sólo paga por lead cualificado. Book now Solicitudes exclusivas. Solo tuyas. Garantía de reposición. No Si Te haremos unas preguntas para ver si…"
-            },
-            {
-              "companyId": "nexo-juridico",
-              "companyName": "Nexo Jurídico",
-              "adId": "1366130926576257",
-              "identityKey": "37c3d3b5c40f02f20f3e4537f86216946a9083fd40e3151153c003837c9901d4",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1366130926576257",
-              "active": true,
-              "excerpt": "Mira el vídeo para ver cómo ayudamos a Despachos Concursales Si tienes un Despacho de Abogados Concursal, con capacidad para absorber más casos. Implementamos un sistema que genera 15-20 reuniones al mes con administrad…"
-            }
-          ]
-        },
-        "cta": {
-          "status": "observed_frequency",
-          "id": "contact-whatsapp",
-          "label": "Contacto o WhatsApp",
-          "companies": 24,
-          "adoptionPct": 88.9,
-          "evidence": [
-            {
-              "companyId": "advisorscale",
-              "companyName": "AdvisorScale / Isidro Ayala",
-              "adId": "1066649132680032",
-              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
-              "active": true,
-              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
-            },
-            {
-              "companyId": "confymagency",
-              "companyName": "Confymagency",
-              "adId": "2128856414711704",
-              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
-              "active": true,
-              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
-            },
-            {
-              "companyId": "epiko",
-              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
-              "adId": "1636593964643080",
-              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
-              "active": true,
-              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
-            }
-          ]
-        },
-        "format": {
-          "status": "observed_frequency",
-          "id": "image",
-          "label": "Imagen",
-          "companies": 8,
-          "adoptionPct": 29.6,
-          "evidence": [
-            {
-              "companyId": "confymagency",
-              "companyName": "Confymagency",
-              "adId": "2128856414711704",
-              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
-              "active": true,
-              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
-            },
-            {
-              "companyId": "epiko",
-              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
-              "adId": "1636593964643080",
-              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
-              "active": true,
-              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
-            },
-            {
-              "companyId": "eximia-studio",
-              "companyName": "Eximia Studio",
-              "adId": "1048031190974938",
-              "identityKey": "6ebd7bff21d9d86e01ea02f2b2f3e45d79ffc3fcfe4691d44e931ef7068a3820",
-              "sourceType": "ad_copy",
-              "sourceUrl": "https://www.facebook.com/ads/library/?id=1048031190974938",
-              "active": true,
-              "excerpt": "Empieza a escalar este mes Inviertes en Google Ads cada mes y no sabes si estás ganando o perdiendo dinero. Ves clics, ves impresiones, ves un informe bonito. Pero tu cuenta bancaria no lo nota. Y cada mes que pasa así…"
-            }
-          ]
-        }
-      },
-      "landingBlueprint": {
-        "status": "observed_frequency_plus_inferred_structure",
-        "fieldPresence": {
-          "headline": 100,
-          "promise": 88,
-          "audience": 88,
-          "offer": 100,
-          "mechanism": 81,
-          "primaryCta": 88,
-          "proof": 81,
-          "price": 50,
-          "guarantee": 44,
-          "funnel": 100
-        },
-        "medianFunnelSteps": 7,
-        "modules": [
-          {
-            "id": "hero",
-            "label": "Resultado + público",
-            "purpose": "Dejar claro para quién es la página y qué cambio propone."
-          },
-          {
-            "id": "proof",
-            "label": "Prueba temprana",
-            "purpose": "Reducir incertidumbre con evidencia identificable, no con adjetivos."
-          },
-          {
-            "id": "problem",
-            "label": "Problema reconocible",
-            "purpose": "Nombrar el coste de seguir igual sin exagerar ni asustar."
-          },
-          {
-            "id": "mechanism",
-            "label": "Mecanismo",
-            "purpose": "Explicar filtro, entrega, seguimiento y responsabilidades."
-          },
-          {
-            "id": "qualification",
-            "label": "Criterios de encaje",
-            "purpose": "Autofiltrar antes del formulario y mejorar la conversación comercial."
-          },
-          {
-            "id": "offer",
-            "label": "Oferta y condiciones",
-            "purpose": "Aclarar qué incluye, qué no incluye y qué queda por configurar."
-          },
-          {
-            "id": "faq",
-            "label": "Objeciones",
-            "purpose": "Resolver precio, plazo, exclusividad, validez y medición."
-          },
-          {
-            "id": "conversion",
-            "label": "Una acción final",
-            "purpose": "Cerrar con un CTA coherente y los campos mínimos necesarios."
-          }
-        ],
-        "recommendations": [
-          {
-            "status": "inferred_recommendation",
-            "text": "El enfoque más visible es «Categoría o identidad» (4 de 16); úsalo como control, no como ganador."
-          },
-          {
-            "status": "inferred_recommendation",
-            "text": "El 81% de la muestra ofrece un CTA comercial recuperable; «Auditoría o diagnóstico» es la familia más observada."
-          },
-          {
-            "status": "inferred_recommendation",
-            "text": "El formulario mediano tiene 4 campos; ajusta longitud a intención y fricción, no por imitación."
-          },
-          {
-            "status": "inferred_recommendation",
-            "text": "La prueba aparece en 81% y el mecanismo en 81% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
-          }
-        ]
-      },
-      "opportunityTests": [
-        {
-          "status": "inferred_hypothesis",
-          "signalId": "qualified-meetings",
-          "test": "Probar una variante que haga explícito: Citas o reuniones cualificadas.",
-          "rationale": "1/27 empresas lo hacen visible en la evidencia recuperada.",
-          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
-        },
-        {
-          "status": "inferred_hypothesis",
-          "signalId": "territorial-exclusivity",
-          "test": "Probar una variante que haga explícito: Exclusividad territorial.",
-          "rationale": "1/27 empresas lo hacen visible en la evidencia recuperada.",
-          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
-        },
-        {
-          "status": "inferred_hypothesis",
-          "signalId": "appointment-setting",
-          "test": "Probar una variante que haga explícito: Agenda implantada.",
-          "rationale": "6/27 empresas lo hacen visible en la evidencia recuperada.",
-          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
-        },
-        {
-          "status": "inferred_hypothesis",
-          "signalId": "no-lock-in",
-          "test": "Probar una variante que haga explícito: Sin permanencia.",
-          "rationale": "7/27 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         }
       ]
@@ -107329,9 +106915,9 @@
           "offer": 100,
           "mechanism": 82,
           "primaryCta": 82,
-          "proof": 73,
-          "price": 45,
-          "guarantee": 41,
+          "proof": 64,
+          "price": 36,
+          "guarantee": 32,
           "funnel": 100
         },
         "medianFunnelSteps": 4,
@@ -107392,7 +106978,7 @@
           },
           {
             "status": "inferred_recommendation",
-            "text": "La prueba aparece en 73% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+            "text": "La prueba aparece en 64% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
           }
         ]
       },
@@ -107423,6 +107009,397 @@
           "signalId": "explicit-guarantee",
           "test": "Probar una variante que haga explícito: Garantía explícita.",
           "rationale": "5/26 empresas lo hacen visible en la evidencia recuperada.",
+          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
+        }
+      ]
+    },
+    {
+      "verticalId": "legal-finance-insurance",
+      "label": "Legal, finanzas y seguros",
+      "denominator": {
+        "companies": 26,
+        "uniqueIdentities": 79,
+        "landingCompanies": 25
+      },
+      "status": "evidence_based_playbook",
+      "observedModules": {
+        "audience": {
+          "status": "observed_frequency",
+          "id": "legal-finance",
+          "label": "Legal, finanzas y seguros",
+          "companies": 20,
+          "adoptionPct": 76.9,
+          "evidence": [
+            {
+              "companyId": "advisorscale",
+              "companyName": "AdvisorScale / Isidro Ayala",
+              "adId": "1066649132680032",
+              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
+              "active": true,
+              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
+            },
+            {
+              "companyId": "confymagency",
+              "companyName": "Confymagency",
+              "adId": "2128856414711704",
+              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
+              "active": true,
+              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
+            },
+            {
+              "companyId": "epiko",
+              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
+              "adId": "1636593964643080",
+              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
+              "active": true,
+              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
+            }
+          ]
+        },
+        "pain": {
+          "status": "observed_frequency",
+          "id": "dependency",
+          "label": "Dependencia de portales o referidos",
+          "companies": 7,
+          "adoptionPct": 26.9,
+          "evidence": [
+            {
+              "companyId": "advisorscale",
+              "companyName": "AdvisorScale / Isidro Ayala",
+              "adId": "1066649132680032",
+              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
+              "active": true,
+              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
+            },
+            {
+              "companyId": "confymagency",
+              "companyName": "Confymagency",
+              "adId": "2128856414711704",
+              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
+              "active": true,
+              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
+            },
+            {
+              "companyId": "eximia-studio",
+              "companyName": "Eximia Studio",
+              "adId": "1059782006405248",
+              "identityKey": "2eabf325ccdf07e115d50675d58219dc0ff4e93ea45c77ca304fc9c8fe6a31eb",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1059782006405248",
+              "active": true,
+              "excerpt": "El sistema para abogados ¿Quieres captar clientes de manera constante y no dejarlo a la suerte? Descubre el secreto de los despachos que más facturan en España: • Atraer prospectos • Convertirlos en clientes • Cerrar tr…"
+            }
+          ]
+        },
+        "promise": {
+          "status": "observed_frequency",
+          "id": "sales-growth",
+          "label": "Ventas, facturación o crecimiento",
+          "companies": 12,
+          "adoptionPct": 46.2,
+          "evidence": [
+            {
+              "companyId": "confymagency",
+              "companyName": "Confymagency",
+              "adId": "2128856414711704",
+              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
+              "active": true,
+              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
+            },
+            {
+              "companyId": "epiko",
+              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
+              "adId": "1636593964643080",
+              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
+              "active": true,
+              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
+            },
+            {
+              "companyId": "eximia-studio",
+              "companyName": "Eximia Studio",
+              "adId": "1059782006405248",
+              "identityKey": "2eabf325ccdf07e115d50675d58219dc0ff4e93ea45c77ca304fc9c8fe6a31eb",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1059782006405248",
+              "active": true,
+              "excerpt": "El sistema para abogados ¿Quieres captar clientes de manera constante y no dejarlo a la suerte? Descubre el secreto de los despachos que más facturan en España: • Atraer prospectos • Convertirlos en clientes • Cerrar tr…"
+            }
+          ]
+        },
+        "mechanism": {
+          "status": "observed_frequency",
+          "id": "system-crm-funnel",
+          "label": "Sistema, funnel o CRM",
+          "companies": 18,
+          "adoptionPct": 69.2,
+          "evidence": [
+            {
+              "companyId": "advisorscale",
+              "companyName": "AdvisorScale / Isidro Ayala",
+              "adId": "1066649132680032",
+              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
+              "active": true,
+              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
+            },
+            {
+              "companyId": "confymagency",
+              "companyName": "Confymagency",
+              "adId": "2128856414711704",
+              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
+              "active": true,
+              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
+            },
+            {
+              "companyId": "epiko",
+              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
+              "adId": "1636593964643080",
+              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
+              "active": true,
+              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
+            }
+          ]
+        },
+        "guarantee": {
+          "status": "observed_frequency",
+          "id": "explicit-guarantee",
+          "label": "Garantía explícita",
+          "companies": 12,
+          "adoptionPct": 46.2,
+          "evidence": [
+            {
+              "companyId": "advisorscale",
+              "companyName": "AdvisorScale / Isidro Ayala",
+              "adId": "1066649132680032",
+              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
+              "active": true,
+              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
+            },
+            {
+              "companyId": "leadgrow",
+              "companyName": "Leadgrow",
+              "adId": "1064601889833928",
+              "identityKey": "09148f6436ae32bb90af6b67bdea778e2d3a8476eb12a853f6313ec858fc9f28",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1064601889833928",
+              "active": true,
+              "excerpt": "Deja de depender del boca a boca en tu correduría Consigue leads de salud Sólo paga por lead cualificado. Book now Solicitudes exclusivas. Solo tuyas. Garantía de reposición. No Si Te haremos unas preguntas para ver si…"
+            },
+            {
+              "companyId": "nexo-juridico",
+              "companyName": "Nexo Jurídico",
+              "adId": "1366130926576257",
+              "identityKey": "37c3d3b5c40f02f20f3e4537f86216946a9083fd40e3151153c003837c9901d4",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1366130926576257",
+              "active": true,
+              "excerpt": "Mira el vídeo para ver cómo ayudamos a Despachos Concursales Si tienes un Despacho de Abogados Concursal, con capacidad para absorber más casos. Implementamos un sistema que genera 15-20 reuniones al mes con administrad…"
+            }
+          ]
+        },
+        "cta": {
+          "status": "observed_frequency",
+          "id": "contact-whatsapp",
+          "label": "Contacto o WhatsApp",
+          "companies": 23,
+          "adoptionPct": 88.5,
+          "evidence": [
+            {
+              "companyId": "advisorscale",
+              "companyName": "AdvisorScale / Isidro Ayala",
+              "adId": "1066649132680032",
+              "identityKey": "b047b638abb23d372a58bcc36b091a2fe898270506036e2f6674b986650c77d1",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1066649132680032",
+              "active": true,
+              "excerpt": "ASESOR FINANCIERO: DESCUBRE EL VÍDEO 📈 Descubre cómo generar un flujo constante de reuniones con personas que tienen +100.000€ en patrimonio listo para invertir y están dispuestas a pagar 1.000€ - 2.000€ por tu servici…"
+            },
+            {
+              "companyId": "confymagency",
+              "companyName": "Confymagency",
+              "adId": "2128856414711704",
+              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
+              "active": true,
+              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
+            },
+            {
+              "companyId": "epiko",
+              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
+              "adId": "1636593964643080",
+              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
+              "active": true,
+              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
+            }
+          ]
+        },
+        "format": {
+          "status": "observed_frequency",
+          "id": "image",
+          "label": "Imagen",
+          "companies": 8,
+          "adoptionPct": 30.8,
+          "evidence": [
+            {
+              "companyId": "confymagency",
+              "companyName": "Confymagency",
+              "adId": "2128856414711704",
+              "identityKey": "0b0431ca3d47c89003f7ca2b98dbff198c553d138a4c56fc83404f8a64d56617",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=2128856414711704",
+              "active": true,
+              "excerpt": "Cierra +20 Pólizas al Mes ¿Cansado de depender de que te recomienden para conseguir nuevos clientes de seguros? 📉 La mayoría de los asesores dependen exclusivamente del boca a boca, lo que hace que los ingresos suban y…"
+            },
+            {
+              "companyId": "epiko",
+              "companyName": "EPIKO - Consultoría para Empresa y Marketing Aplicado",
+              "adId": "1636593964643080",
+              "identityKey": "27c71c9bf22e78e0969d852aa8f1fc4602dbaaaeefac998c1f8e6b4e724fc6c4",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1636593964643080",
+              "active": true,
+              "excerpt": "¿Sabrías decirme qué campaña te trajo tus últimos diez asuntos? Casi ningún despacho puede. Recibe informes con impresiones, clics y coste por contacto: cifras que no aparecen en ninguna cuenta de resultados. Nosotros t…"
+            },
+            {
+              "companyId": "eximia-studio",
+              "companyName": "Eximia Studio",
+              "adId": "1048031190974938",
+              "identityKey": "6ebd7bff21d9d86e01ea02f2b2f3e45d79ffc3fcfe4691d44e931ef7068a3820",
+              "sourceType": "ad_copy",
+              "sourceUrl": "https://www.facebook.com/ads/library/?id=1048031190974938",
+              "active": true,
+              "excerpt": "Empieza a escalar este mes Inviertes en Google Ads cada mes y no sabes si estás ganando o perdiendo dinero. Ves clics, ves impresiones, ves un informe bonito. Pero tu cuenta bancaria no lo nota. Y cada mes que pasa así…"
+            }
+          ]
+        }
+      },
+      "landingBlueprint": {
+        "status": "observed_frequency_plus_inferred_structure",
+        "fieldPresence": {
+          "headline": 100,
+          "promise": 88,
+          "audience": 88,
+          "offer": 100,
+          "mechanism": 81,
+          "primaryCta": 88,
+          "proof": 69,
+          "price": 38,
+          "guarantee": 38,
+          "funnel": 100
+        },
+        "medianFunnelSteps": 7,
+        "modules": [
+          {
+            "id": "hero",
+            "label": "Resultado + público",
+            "purpose": "Dejar claro para quién es la página y qué cambio propone."
+          },
+          {
+            "id": "proof",
+            "label": "Prueba temprana",
+            "purpose": "Reducir incertidumbre con evidencia identificable, no con adjetivos."
+          },
+          {
+            "id": "problem",
+            "label": "Problema reconocible",
+            "purpose": "Nombrar el coste de seguir igual sin exagerar ni asustar."
+          },
+          {
+            "id": "mechanism",
+            "label": "Mecanismo",
+            "purpose": "Explicar filtro, entrega, seguimiento y responsabilidades."
+          },
+          {
+            "id": "qualification",
+            "label": "Criterios de encaje",
+            "purpose": "Autofiltrar antes del formulario y mejorar la conversación comercial."
+          },
+          {
+            "id": "offer",
+            "label": "Oferta y condiciones",
+            "purpose": "Aclarar qué incluye, qué no incluye y qué queda por configurar."
+          },
+          {
+            "id": "faq",
+            "label": "Objeciones",
+            "purpose": "Resolver precio, plazo, exclusividad, validez y medición."
+          },
+          {
+            "id": "conversion",
+            "label": "Una acción final",
+            "purpose": "Cerrar con un CTA coherente y los campos mínimos necesarios."
+          }
+        ],
+        "recommendations": [
+          {
+            "status": "inferred_recommendation",
+            "text": "El enfoque más visible es «Categoría o identidad» (4 de 16); úsalo como control, no como ganador."
+          },
+          {
+            "status": "inferred_recommendation",
+            "text": "El 81% de la muestra ofrece un CTA comercial recuperable; «Auditoría o diagnóstico» es la familia más observada."
+          },
+          {
+            "status": "inferred_recommendation",
+            "text": "El formulario mediano tiene 4 campos; ajusta longitud a intención y fricción, no por imitación."
+          },
+          {
+            "status": "inferred_recommendation",
+            "text": "La prueba aparece en 69% y el mecanismo en 81% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+          }
+        ]
+      },
+      "opportunityTests": [
+        {
+          "status": "inferred_hypothesis",
+          "signalId": "qualified-meetings",
+          "test": "Probar una variante que haga explícito: Citas o reuniones cualificadas.",
+          "rationale": "0/26 empresas lo hacen visible en la evidencia recuperada.",
+          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
+        },
+        {
+          "status": "inferred_hypothesis",
+          "signalId": "territorial-exclusivity",
+          "test": "Probar una variante que haga explícito: Exclusividad territorial.",
+          "rationale": "1/26 empresas lo hacen visible en la evidencia recuperada.",
+          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
+        },
+        {
+          "status": "inferred_hypothesis",
+          "signalId": "appointment-setting",
+          "test": "Probar una variante que haga explícito: Agenda implantada.",
+          "rationale": "5/26 empresas lo hacen visible en la evidencia recuperada.",
+          "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
+        },
+        {
+          "status": "inferred_hypothesis",
+          "signalId": "no-lock-in",
+          "test": "Probar una variante que haga explícito: Sin permanencia.",
+          "rationale": "7/26 empresas lo hacen visible en la evidencia recuperada.",
           "guardrail": "Comparar con control usando CPL válido, cita, asistencia, venta y margen; no asumir rendimiento por frecuencia."
         }
       ]
@@ -107749,7 +107726,7 @@
           },
           {
             "status": "inferred_recommendation",
-            "text": "El formulario mediano tiene — campos; ajusta longitud a intención y fricción, no por imitación."
+            "text": "No hay muestra suficiente de formularios para fijar una longitud; decide los campos según intención y fricción."
           },
           {
             "status": "inferred_recommendation",
@@ -108082,8 +108059,8 @@
           "mechanism": 67,
           "primaryCta": 73,
           "proof": 73,
-          "price": 33,
-          "guarantee": 53,
+          "price": 20,
+          "guarantee": 33,
           "funnel": 100
         },
         "medianFunnelSteps": 2,
@@ -108132,7 +108109,7 @@
         "recommendations": [
           {
             "status": "inferred_recommendation",
-            "text": "El enfoque más visible es «Resultado primero» (2 de 15); úsalo como control, no como ganador."
+            "text": "No hay una apertura dominante con soporte suficiente; prioriza claridad de público, problema y oferta."
           },
           {
             "status": "inferred_recommendation",
@@ -110101,7 +110078,7 @@
       {
         "companyId": "buda-marketing-buda-consultores-s-l",
         "name": "Buda Marketing (Buda Consultores S.L.)",
-        "verticalId": "generalist",
+        "verticalId": "clinics-health",
         "offer": {
           "status": "observed_attributed",
           "excerpt": "\"NO HACEMOS MARKETING. Somos tu sistema de captación de clientes. NO MEDIMOS IMPRESIONES NI CLICS. Medimos clientes reales y euros generados para tu negocio\". Y en home: \"Convertimos tu inversión en clientes, no en 'me gusta'\".",
@@ -116336,7 +116313,7 @@
       {
         "companyId": "masnegocio",
         "name": "MásNegocio",
-        "verticalId": "legal-finance-insurance",
+        "verticalId": "generalist",
         "offer": {
           "status": "observed_attributed",
           "excerpt": "Base de datos, email, WhatsApp y voz con IA; cualifica y agenda. Planes por tamaño.",
@@ -121610,7 +121587,7 @@
         "adoptionPct": 60.4,
         "uniqueIdentities": 426,
         "activeCompanySharePct": 51.9,
-        "medianLongevityDays": 5.5,
+        "medianLongevityDays": 5.6,
         "medianVariantsPerCompany": 3,
         "landingCoherencePct": 68.9,
         "landingCoherenceDenominator": 61,
@@ -121717,7 +121694,7 @@
         "adoptionPct": 56,
         "uniqueIdentities": 387,
         "activeCompanySharePct": 38.7,
-        "medianLongevityDays": 5.5,
+        "medianLongevityDays": 5.6,
         "medianVariantsPerCompany": 4,
         "landingCoherencePct": 62.7,
         "landingCoherenceDenominator": 59,
@@ -121931,7 +121908,7 @@
         "adoptionPct": 50,
         "uniqueIdentities": 384,
         "activeCompanySharePct": 52.2,
-        "medianLongevityDays": 5.5,
+        "medianLongevityDays": 5.6,
         "medianVariantsPerCompany": 5,
         "landingCoherencePct": 0,
         "landingCoherenceDenominator": 55,
@@ -123321,7 +123298,7 @@
         "adoptionPct": 29.9,
         "uniqueIdentities": 195,
         "activeCompanySharePct": 47.5,
-        "medianLongevityDays": 6.5,
+        "medianLongevityDays": 6.6,
         "medianVariantsPerCompany": 2,
         "landingCoherencePct": 41.2,
         "landingCoherenceDenominator": 34,
@@ -124688,7 +124665,7 @@
         "adoptionPct": 15.7,
         "uniqueIdentities": 52,
         "activeCompanySharePct": 47.6,
-        "medianLongevityDays": 4.5,
+        "medianLongevityDays": 4.6,
         "medianVariantsPerCompany": 1,
         "landingCoherencePct": 0,
         "landingCoherenceDenominator": 14,
@@ -125639,7 +125616,7 @@
         "components": {
           "adoption": 60.4,
           "activity": 51.9,
-          "longevity": 6.1,
+          "longevity": 6.2,
           "variants": 37.5,
           "format": 90.1,
           "landingCoherence": 68.9
@@ -125767,7 +125744,7 @@
         "components": {
           "adoption": 56,
           "activity": 38.7,
-          "longevity": 6.1,
+          "longevity": 6.2,
           "variants": 50,
           "format": 87.4,
           "landingCoherence": 62.7
@@ -126471,7 +126448,7 @@
         "components": {
           "adoption": 29.9,
           "activity": 47.5,
-          "longevity": 7.2,
+          "longevity": 7.3,
           "variants": 25,
           "format": 92.9,
           "landingCoherence": 41.2
