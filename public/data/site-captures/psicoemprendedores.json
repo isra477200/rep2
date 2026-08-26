@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "psicoemprendedores",
+  "name": "PsicoEmprendedores",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://psicoemprendedores.com/optin",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "PARA PSICÓLOGOS Y COACHES CON NEGOCIO ONLINE QUE QUIEREN ESCALARLO CON UN PASO A PASO",
+    "promise": "PARA PSICÓLOGOS Y COACHES CON NEGOCIO ONLINE QUE QUIEREN ESCALARLO CON UN PASO A PASO",
+    "audience": "Público inferido de la especialización declarada: Implementación acompañada de oferta, anuncios, landing, VSL y filtrado en 30 días.",
+    "offer": "Sistema de Captación Premium para atraer, filtrar y cerrar clientes premium.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: Responde estas 5 preguntas y descubre si tu negocio está listo para escalar a Clientes Premium. Su presencia no valida las cifras que contengan.",
+    "price": "No se observó un precio público en las piezas recuperadas.",
+    "guarantee": "Garantiza por contrato recuperar cada euro invertido o seguir trabajando gratis hasta lograrlo.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "psicoemprendedores-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://psicoemprendedores.com/optin",
+      "finalUrl": "https://psicoemprendedores.com/optin-847310",
+      "title": "PsicoEmprendedores",
+      "status": "captured",
+      "capturedAt": "2026-08-26T16:05:31.737Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/psicoemprendedores/site-f847386187-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 965,
+        "bytes": 23184,
+        "sha256": "1c62143a70d4b53378d781a3b2b4686f2556b82756a985874d9faf8fc3896a36"
+      },
+      "thumbnail": {
+        "file": "/evidence/psicoemprendedores/site-f847386187-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 397,
+        "bytes": 6134,
+        "sha256": "57c34fe7fff0d915a9d07d9d7379ac7b65ec464fcd6bd055aab34815ac13a981"
+      },
+      "text": {
+        "language": "es",
+        "h1": "PARA PSICÓLOGOS Y COACHES CON NEGOCIO ONLINE QUE QUIEREN ESCALARLO CON UN PASO A PASO",
+        "headings": [
+          "PARA PSICÓLOGOS Y COACHES CON NEGOCIO ONLINE QUE QUIEREN ESCALARLO CON UN PASO A PASO",
+          "Responde estas 5 preguntas y descubre si tu negocio está listo para escalar a Clientes Premium",
+          "PsicoEmprendedores - Todos los derechos reservados",
+          "Políticas de privacidad – Descargo de responsabilidad"
+        ],
+        "ctas": [
+          "Siguiente"
+        ],
+        "excerpt": "PARA PSICÓLOGOS Y COACHES CON NEGOCIO ONLINE QUE QUIEREN ESCALARLO CON UN PASO A PASO Responde estas 5 preguntas y descubre si tu negocio está listo para escalar a Clientes Premium PsicoEmprendedores - Todos los derechos reservados Políticas de privacidad – Descargo de responsabilidad"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 966
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:13:51.383Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "psicoemprendedores-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "PARA PSICÓLOGOS Y COACHES CON NEGOCIO ONLINE QUE QUIEREN ESCALARLO CON UN PASO A PASO",
+            "capturedAt": "2026-08-26T16:05:31.737Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "psicoemprendedores-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T16:05:31.737Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

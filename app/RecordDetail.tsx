@@ -8,6 +8,8 @@ import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import remarkGfm from "remark-gfm";
 import CompanyLogo from "./CompanyLogo";
 import FunnelV3Panel from "./FunnelV3Panel";
+import SiteCapturePanel, { type SiteCaptureRecord } from "./SiteCapturePanel";
+import detailStyles from "./RecordDetail.module.css";
 import {
   classifyMediaResolution,
   dimensionsFromMedia,
@@ -73,6 +75,81 @@ const scalarText = (input: unknown): string => {
 
 const value = (input: unknown, fallback = "No documentado públicamente") =>
   scalarText(input) || fallback;
+
+const normalizedCountryText = (input: unknown) =>
+  scalarText(input)
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("es");
+
+const hasSpainOrFranceProfile = (company: Company) =>
+  [company.primaryCountry, company.country, ...(company.countries || [])].some(
+    (country) =>
+      /(^|\W)(espana|spain|francia|france)(\W|$)/.test(
+        normalizedCountryText(country),
+      ),
+  );
+
+const webCaptureStatusLabel = (input: unknown) => {
+  const status = scalarText(input).toLocaleLowerCase("es").replaceAll("_", "-");
+  if (status === "complete") return "Captura completa";
+  if (status === "partial") return "Cobertura parcial";
+  if (status === "pending") return "Captura pendiente";
+  if (status === "no-url") return "Sin URL pública";
+  return scalarText(input) || "Estado no indicado";
+};
+
+const suspiciousStructuredPriceReason = (company: Company): string | null => {
+  const amount = company.price?.amount;
+  const euro = company.price?.eur;
+  if (amount == null && euro == null) return null;
+  const local = normalizedCountryText(company.priceLocal);
+  const hasExplicitFreePrice =
+    /(?:^|\W)(?:0\s*(?:€|eur|usd|\$)|gratis|gratuit|free)(?:\W|$)/.test(local);
+  const hasGroupedThousands = /\b\d{1,3}(?:[.,]\d{3})+\b/.test(local);
+  const amountToken = Number.isFinite(Number(amount))
+    ? String(amount).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace("\\.", "[.,]")
+    : "";
+  const currencyToken = scalarText(company.price.currency).replace(
+    /[.*+?^${}()|[\]\\]/g,
+    "\\$&",
+  );
+  const amountShownWithCurrency =
+    amountToken && currencyToken
+      ? new RegExp(
+          `(?:[€$£¥₦₹]|\\b${currencyToken}\\b)\\s*${amountToken}(?!\\d|[.,]\\d{3})|${amountToken}(?!\\d|[.,]\\d{3})\\s*(?:[€$£¥₦₹]|\\b${currencyToken}\\b)`,
+          "i",
+        ).test(company.priceLocal)
+      : false;
+
+  if (
+    company.price.currency === "EUR" &&
+    (Number(amount || 0) >= 500_000 || Number(euro || 0) >= 500_000)
+  ) {
+    return "La cifra estructurada parece proceder de un plazo, volumen o inversión citado en el texto, no de una tarifa convertible.";
+  }
+  if (Number(amount) === 0 && !hasExplicitFreePrice) {
+    return "El texto publica importes, pero la extracción estructurada quedó en cero; no se muestra esa equivalencia.";
+  }
+  if (
+    hasGroupedThousands &&
+    Number(amount) > 0 &&
+    Number(amount) < 1_000 &&
+    company.price.currency !== "EUR" &&
+    !amountShownWithCurrency
+  ) {
+    return "La cifra estructurada parece haber perdido el separador de millares de la moneda original.";
+  }
+  if (
+    Number.isFinite(Number(amount)) &&
+    Number.isFinite(Number(euro)) &&
+    Number(amount) > 0 &&
+    Number(euro) < 0
+  ) {
+    return "La conversión automática produjo un valor inválido.";
+  }
+  return null;
+};
 const isPublicHref = (input?: string | null) => {
   if (!input) return false;
   try {
@@ -347,8 +424,12 @@ export default function RecordDetail({
     }),
     [companyDetail, companySummary],
   );
+  const captureEligible = hasSpainOrFranceProfile(company);
+  const defaultSection = captureEligible
+    ? "record-site-capture"
+    : "record-identity";
   const [analysisOpen, setAnalysisOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("record-identity");
+  const [activeSection, setActiveSection] = useState(defaultSection);
   const [fullScroll, setFullScroll] = useState(false);
   const [deepResult, setDeepResult] = useState<{
     companyId: string;
@@ -358,16 +439,26 @@ export default function RecordDetail({
     companyId: string;
     value: FunnelV3Review | null;
   } | null>(null);
+  const [siteCaptureResult, setSiteCaptureResult] = useState<{
+    companyId: string;
+    value: SiteCaptureRecord | null;
+  } | null>(null);
   const deep =
     deepResult?.companyId === company.id ? deepResult.value : undefined;
   const deepV3 =
     deepV3Result?.companyId === company.id ? deepV3Result.value : undefined;
+  const siteCapture =
+    siteCaptureResult?.companyId === company.id
+      ? siteCaptureResult.value
+      : undefined;
   const [mediaFilter, setMediaFilter] = useState<
     "all" | "image" | "video" | "document"
   >("all");
   const [mediaVisible, setMediaVisible] = useState(24);
-  const euro =
-    company.price.eur != null
+  const suspiciousPrice = suspiciousStructuredPriceReason(company);
+  const euro = suspiciousPrice
+    ? "Conversión no mostrada"
+    : company.price.eur != null
       ? `≈ ${company.price.label}`
       : company.price.label;
   const logo = logos[company.id];
@@ -458,8 +549,13 @@ export default function RecordDetail({
   };
 
   useEffect(() => {
-    const id = window.location.hash.slice(1);
-    if (!id || !id.startsWith("record-")) return;
+    const hashId = window.location.hash.slice(1);
+    const id =
+      hashId === "record-site-capture" && !captureEligible
+        ? "record-identity"
+        : hashId && hashId.startsWith("record-")
+          ? hashId
+          : defaultSection;
     const frame = window.requestAnimationFrame(() => {
       setActiveSection(id);
       if (id === "record-analysis") setAnalysisOpen(true);
@@ -470,7 +566,7 @@ export default function RecordDetail({
       }
     });
     return () => window.cancelAnimationFrame(frame);
-  }, [company.id]);
+  }, [captureEligible, company.id, defaultSection]);
 
   useEffect(() => {
     let active = true;
@@ -492,6 +588,28 @@ export default function RecordDetail({
       active = false;
     };
   }, [company.id]);
+
+  useEffect(() => {
+    if (!captureEligible) return;
+    let active = true;
+    fetch(`/data/site-captures/${company.id}.json`)
+      .then((response) =>
+        response.ok ? (response.json() as Promise<SiteCaptureRecord>) : null,
+      )
+      .then(
+        (result) =>
+          active &&
+          setSiteCaptureResult({ companyId: company.id, value: result }),
+      )
+      .catch(
+        () =>
+          active &&
+          setSiteCaptureResult({ companyId: company.id, value: null }),
+      );
+    return () => {
+      active = false;
+    };
+  }, [captureEligible, company.id]);
 
   useEffect(() => {
     let active = true;
@@ -641,7 +759,7 @@ export default function RecordDetail({
           </div>
         </header>
 
-        <section className="record-kpis">
+        <section className={`record-kpis${captureEligible ? ` ${detailStyles.webKpis}` : ""}`}>
           <article>
             <span>DECISIÓN RV</span>
             <strong>{value(company.decision)}</strong>
@@ -667,6 +785,25 @@ export default function RecordDetail({
               fuentes
             </small>
           </article>
+          {captureEligible ? (
+            <article className={detailStyles.webEvidenceKpi}>
+              <span>EVIDENCIA WEB</span>
+              <strong>
+                {siteCapture === undefined
+                  ? "Cargando…"
+                  : siteCapture
+                    ? `${Number(siteCapture.coverage?.captured || 0)} de ${Number(siteCapture.coverage?.planned || siteCapture.pages?.length || 0)} páginas`
+                    : "Sin captura publicada"}
+              </strong>
+              <small>
+                {siteCapture
+                  ? `${webCaptureStatusLabel(siteCapture.status)} · ${siteCapture.language?.original?.toUpperCase() || "idioma pendiente"}`
+                  : siteCapture === undefined
+                    ? "Consultando el archivo web de la ficha"
+                    : "La lectura existente permanece disponible"}
+              </small>
+            </article>
+          ) : null}
         </section>
 
         {takeaway && (
@@ -706,6 +843,11 @@ export default function RecordDetail({
         <div className="record-layout">
           <aside className="record-index">
             <p className="eyebrow">FICHA MADRE COMPLETA</p>
+            {captureEligible ? (
+              <a href="#record-site-capture" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-site-capture" ? "active" : undefined}>
+                Web y mensaje
+              </a>
+            ) : null}
             <a href="#record-identity" onClick={navigateToRecordSection} className={!fullScroll && activeSection === "record-identity" ? "active" : undefined}>
               Identidad
             </a>
@@ -748,6 +890,31 @@ export default function RecordDetail({
           </aside>
 
           <div className={`record-content${fullScroll ? "" : " tabbed"}`} ref={contentRef}>
+            {captureEligible ? (
+              <details
+                id="record-site-capture"
+                open
+                className={[sectionClass("record-site-capture"), detailStyles.siteCaptureSection].filter(Boolean).join(" ")}
+              >
+                <summary>
+                  <span>00</span> Web y mensaje · landing, funnel y lectura comercial
+                </summary>
+                <div className={detailStyles.siteCaptureWrap}>
+                  {siteCapture === undefined ? (
+                    <div className="deep-loading" role="status">
+                      Cargando la web, sus capturas y el recorrido comercial…
+                    </div>
+                  ) : (
+                    <SiteCapturePanel
+                      company={company}
+                      review={deepV3 || deep || null}
+                      captureRecord={siteCapture}
+                      onMediaOpen={onMediaOpen}
+                    />
+                  )}
+                </div>
+              </details>
+            ) : null}
             <details id="record-identity" open className={sectionClass("record-identity")}>
               <summary>
                 <span>01</span> Identidad, marca y precisión geográfica
@@ -869,27 +1036,44 @@ export default function RecordDetail({
                 <Field label="Estado del precio">
                   {value(company.priceStatus)}
                 </Field>
-                <Field label="Equivalencia EUR">{euro}</Field>
-                <Field label="Moneda estructurada">
-                  {value(
-                    company.price.currency,
-                    "No convertible: moneda no inequívoca",
+                <Field label="Equivalencia EUR">
+                  {suspiciousPrice ? (
+                    <span className={detailStyles.priceSuppressed}>
+                      <strong>Conversión automática no mostrada</strong>
+                      <small>{suspiciousPrice}</small>
+                    </span>
+                  ) : (
+                    euro
                   )}
+                </Field>
+                <Field label="Moneda estructurada">
+                  {suspiciousPrice
+                    ? "No utilizada: extracción incoherente"
+                    : value(
+                        company.price.currency,
+                        "No convertible: moneda no inequívoca",
+                      )}
                 </Field>
                 <Field label="Importe estructurado">
-                  {value(
-                    company.price.amount,
-                    "No convertible: importe no inequívoco",
-                  )}
+                  {suspiciousPrice
+                    ? "Suprimido para evitar una lectura engañosa"
+                    : value(
+                        company.price.amount,
+                        "No convertible: importe no inequívoco",
+                      )}
                 </Field>
                 <Field label="Importe EUR orientativo">
-                  {value(
-                    company.price.eur,
-                    "No calculable sin moneda e importe inequívocos",
-                  )}
+                  {suspiciousPrice
+                    ? "No calculable con fiabilidad"
+                    : value(
+                        company.price.eur,
+                        "No calculable sin moneda e importe inequívocos",
+                      )}
                 </Field>
                 <Field label="Etiqueta normalizada">
-                  {value(company.price.label)}
+                  {suspiciousPrice
+                    ? "No mostrada: procede de la conversión descartada"
+                    : value(company.price.label)}
                 </Field>
                 <Field label="Ticket / economía" wide>
                   {value(company.ticket)}

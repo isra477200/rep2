@@ -1,12 +1,12 @@
 {
  "schema": "redvitalia-data-manifest-v1",
- "generatedAt": "2026-08-24",
- "revision": "573c211efaa37448",
+ "generatedAt": "2026-08-26",
+ "revision": "5620f9de342452e2",
  "universe": {
-  "companies": 963,
+  "companies": 1052,
   "representedPrimaryMarkets": 129,
   "territorialAtlasStates": 195,
-  "media": 3957
+  "media": 5100
  },
  "deepSnapshot": {
   "companies": 712,
@@ -20,20 +20,32 @@
   "authentic": 615
  },
  "advertising": {
-  "companiesWithEvidence": 170,
-  "companiesPendingDiscovery": 777,
-  "exactCreativeIds": 3012,
-  "attributableEvidenceSample": 1273,
-  "searchableTranscriptions": 1005,
-  "verifiedTranscriptions": 366,
-  "patternReady": 387,
-  "textAvailabilityGap": 435,
-  "verifiedTranscriptionGap": 1001
+  "companiesWithEvidence": 266,
+  "companiesPendingDiscovery": 770,
+  "exactCreativeIds": 5836,
+  "attributableEvidenceSample": 2212,
+  "searchableTranscriptions": 4464,
+  "verifiedTranscriptions": 2994,
+  "patternReady": 3035,
+  "searchablePieces": 4591,
+  "representedAdvertisers": 279,
+  "exactAssetsAudited": 2014,
+  "exactAssetsWithUsableText": 1978,
+  "exactAssetsWithoutLegibleText": 36,
+  "translationsAvailable": 482,
+  "translationsRejectedQa": 141,
+  "translationsPending": 0,
+  "translationsRequiresReview": 475,
+  "translationsUnavailable": 0,
+  "textAvailabilityGap": 219,
+  "verifiedTranscriptionGap": 1046
  },
  "scopeNotes": [
-  "El universo actual tiene 963 fichas; el snapshot profundo conserva 712.",
+  "El universo actual tiene 1052 fichas; el snapshot profundo conserva 712.",
   "Los 195 elementos territoriales son Estados del atlas, no mercados primarios con empresa.",
   "Una transcripción OCR es buscable, pero no verificada ni apta para patrones hasta revisión humana.",
+  "Una creatividad sin texto legible se conserva como evidencia visual, pero no cuenta como transcripción.",
+  "Las traducciones automáticas preservan el original y no se promueven a evidencia literal revisada.",
   "Frecuencia publicitaria y score editorial no demuestran rendimiento de campaña."
  ]
 }

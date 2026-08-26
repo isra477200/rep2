@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "copyfilms",
+  "name": "COPYFILMS",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://www.copyfilms.online/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "¿Estás preparado para vivir una experiencia de marketing como nunca has visto?",
+    "promise": null,
+    "audience": "Infoproductores, emprendedores y negocios digitales hispanohablantes que venden con VSL/llamada y buscan diferenciarse de la landing clásica",
+    "offer": "Creación de 'embudos gamificados cinematográficos': funnels experienciales con estética de cine y mecánicas de juego que sustituyen a la landing page clásica ('la landing educa al curioso, y el curioso no paga'). Promesa: 'aumenta un 60% el engagement hasta tu oferta'. La propia web es la demo: una 'experiencia' inmersiva que desemboca en una llamada. Venden el servicio/sistema de construir ese embudo (con VSL cinematográfica) para otros negocios.",
+    "mechanism": [],
+    "primaryCta": "'ENTRAR EN LA EXPERIENCIA' → copyfilms.online/call (simula una llamada entrante de 'Michael')",
+    "proof": "Sin testimonios ni casos públicos; la web solo ofrece la opción 'Ya pasé por la experiencia' sin pruebas verificables. Web con noindex/nofollow (evita indexación) y locale es LA, lo que sugiere orientación también a Hispanoamérica. Anuncio patrocinado activo en Instagram (@copyfilms oficial) visto el 23/08/2026.",
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Anuncio Instagram",
+      "web-experiencia gamificada/cinematográfica (vídeo)",
+      "/call con 'llamada entrante'",
+      "llamada de venta. La web entera es la prueba de concepto del producto."
+    ]
+  },
+  "pages": [
+    {
+      "id": "copyfilms-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://www.copyfilms.online/",
+      "finalUrl": "https://copyfilms.online/",
+      "title": "Copy Film's",
+      "status": "captured",
+      "capturedAt": "2026-08-25T17:20:04.617Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/copyfilms/site-19b94e0b16-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 767,
+        "bytes": 24842,
+        "sha256": "319c02ed16b8b2cc03f1bcf23f5b8911859dc75575629ce599d6578a7ebdeb94"
+      },
+      "thumbnail": {
+        "file": "/evidence/copyfilms/site-19b94e0b16-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 316,
+        "bytes": 7030,
+        "sha256": "e3616a24c8b80e29212e585af06d2d30f43df8dfd1d2f361378209740165291d"
+      },
+      "text": {
+        "language": "es",
+        "h1": "¿Estás preparado para vivir una experiencia de marketing como nunca has visto?",
+        "headings": [
+          "¿Estás preparado para vivir una experiencia de marketing como nunca has visto?"
+        ],
+        "ctas": [
+          "ENTRAR EN LA EXPERIENCIA",
+          "Ya pasé por la experiencia"
+        ],
+        "excerpt": "¿Estás preparado para vivir una experiencia de marketing como nunca has visto? sube el volumen"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 767
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:10:02.326Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "copyfilms-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "¿Estás preparado para vivir una experiencia de marketing como nunca has visto?",
+            "capturedAt": "2026-08-25T17:20:04.617Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

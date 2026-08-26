@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "advisorscale",
+  "name": "AdvisorScale / Isidro Ayala",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://lm.advisorscale.co/vsl-page",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Así te conseguimos +30 reuniones de venta al mes con personas que tienen +100.000 € líquidos y dispuestas a pagar +1.000 € por asesoramiento financiero. O NO PAGAS",
+    "promise": "Así te conseguimos +30 reuniones de venta al mes con personas que tienen +100.000 € líquidos y dispuestas a pagar +1.000 € por asesoramiento financiero. O NO PAGAS",
+    "audience": "Público inferido de la especialización declarada: Sistema de captación y cualificación para advisors.",
+    "offer": "Flujo constante de reuniones con personas de alto patrimonio para asesoramiento financiero.",
+    "mechanism": [],
+    "primaryCta": "Agendar llamada",
+    "proof": null,
+    "price": "Prospectos objetivo dispuestos a pagar 1.000-2.000 € por asesoramiento; precio del proveedor no observado.",
+    "guarantee": "No se observó una garantía público en las piezas recuperadas.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "advisorscale-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://lm.advisorscale.co/vsl-page",
+      "finalUrl": "https://lm.advisorscale.co/vsl-page",
+      "title": "Content Leaders",
+      "status": "captured",
+      "capturedAt": "2026-08-26T15:52:20.209Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/advisorscale/site-e1a84c7b22-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 3736,
+        "bytes": 139018,
+        "sha256": "e346cce780de05a150230fb8485d10bc8b20ef69e9dfc5fb09447c177d8219d3"
+      },
+      "thumbnail": {
+        "file": "/evidence/advisorscale/site-e1a84c7b22-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1537,
+        "bytes": 33398,
+        "sha256": "d437d9c9a810b98195527f192a25fef1382b736d665ab62166bd6be2f3566c39"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Así te conseguimos +30 reuniones de venta al mes con personas que tienen +100.000 € líquidos y dispuestas a pagar +1.000 € por asesoramiento financiero. O NO PAGAS",
+        "headings": [
+          "Así te conseguimos +30 reuniones de venta al mes con personas que tienen +100.000 € líquidos y dispuestas a pagar +1.000 € por asesoramiento financiero. O NO PAGAS",
+          "Antonio: de depender de referencias a tener +15 reuniones a la semana con altos patrimonios",
+          "Marcos: de facturar 5.000 €/mes a +20.000 € en 40 días",
+          "Elige un hueco en el calendario"
+        ],
+        "ctas": [
+          "Agendar llamada",
+          "Política de Privacidad",
+          "Aviso Legal",
+          "Política de Cookies",
+          "Política de WhatsApp"
+        ],
+        "excerpt": "Así te conseguimos +30 reuniones de venta al mes con personas que tienen +100.000 € líquidos y dispuestas a pagar +1.000 € por asesoramiento financiero. O NO PAGAS El único sistema en España diseñado para que Asesores Financieros tengan nuevos clientes mes tras mes de forma recurrente sin depender del boca a boca. Esto no es para ti si perteneces a OVB, Banco Mediolanum o alguna entidad con políticas comerciales restrictivas. Antonio: de depender de referencias a tener +15 reuniones a la semana con altos patrimonios Marcos: de facturar 5.000 €/mes a +20.000 € en 40 días Elige un hueco en el calendario Analizamos tu situación actual y te explicamos cómo aplicaríamos el sistema a tu asesoría. Si no encajas, te lo diremos en la llamada. Copyright 2025 | AdvisorScale"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3736
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:07:29.188Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "advisorscale-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Así te conseguimos +30 reuniones de venta al mes con personas que tienen +100.000 € líquidos y dispuestas a pagar +1.000 € por asesoramiento financiero. O NO PAGAS",
+            "capturedAt": "2026-08-26T15:52:20.209Z"
+          }
+        ]
+      },
+      "primaryCta": {
+        "source": "captured_site_text",
+        "method": "first_filtered_commercial_cta_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "advisorscale-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.ctas[]",
+            "value": "Agendar llamada",
+            "capturedAt": "2026-08-26T15:52:20.209Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "advisorscale-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T15:52:20.209Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "goal-guiders-ia",
+  "name": "Goal Guiders IA",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://goalguidersia.com/captacion-anticipada",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Capta propiedades en exclusiva con un Sistema Probado.",
+    "promise": "Capta propiedades en exclusiva con un Sistema Probado.",
+    "audience": "Público inferido de la especialización declarada: Sistema de captación y agenda automática para inmobiliarias.",
+    "offer": "El anunciante ofrece atraer propietarios, filtrar zona, vivienda y urgencia, y agendar visitas automáticamente antes de la conversación comercial.",
+    "mechanism": [],
+    "primaryCta": "Agenda tu llamada",
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "goal-guiders-ia-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://goalguidersia.com/captacion-anticipada",
+      "finalUrl": "https://goalguidersia.com/captacion-anticipada",
+      "title": "Cómo captar más propiedades para tu inmobiliaria con IA | Goal Guiders IA",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:51:05.413Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/goal-guiders-ia/site-425a24b4b7-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 3604,
+        "bytes": 57604,
+        "sha256": "ef529e6cfdf8f10259399019764381e5a20ae8c409e6f1b6b4b52e6bcf74895f"
+      },
+      "thumbnail": {
+        "file": "/evidence/goal-guiders-ia/site-425a24b4b7-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1483,
+        "bytes": 14946,
+        "sha256": "902be7d4cfa3444c332df56a9262885aedfb166ae3fae0e73d3773b4d2dc6e9c"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Capta propiedades en exclusiva con un Sistema Probado.",
+        "headings": [
+          "Capta propiedades en exclusiva con un Sistema Probado.",
+          "Lo que pasa cuando dejas de depender de la suerte.",
+          "Las inmobiliarias que más crecen no son las que más trabajan. Son las que tienen mejores sistemas."
+        ],
+        "ctas": [
+          "Agenda tu llamada",
+          "Agendar llamada"
+        ],
+        "excerpt": "Capta propiedades en exclusiva con un Sistema Probado. Instalamos una Oficina Inmobiliaria Digital Inteligente en menos de 24 horas para inmobiliarias independientes que ya facturan y quieren dejar de depender de portales y referidos. Lo que pasa cuando dejas de depender de la suerte. Inmobiliarias por toda España con el mismo sistema instalado. Distintas zonas, mismos resultados. Las inmobiliarias que más crecen no son las que más trabajan. Son las que tienen mejores sistemas. Valoramos tu situación, vemos qué está frenando tu captación y te decimos con honestidad si podemos ayudarte. No somos una agencia de marketing. Instalamos sistemas completos de captación para inmobiliarias. © 2026 Goal Guiders IA · Sistemas de captación inmobiliaria con inteligencia artificial · España"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3604
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:11:22.414Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "goal-guiders-ia-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Capta propiedades en exclusiva con un Sistema Probado.",
+            "capturedAt": "2026-08-26T13:51:05.413Z"
+          }
+        ]
+      },
+      "primaryCta": {
+        "source": "captured_site_text",
+        "method": "first_filtered_commercial_cta_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "goal-guiders-ia-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.ctas[]",
+            "value": "Agenda tu llamada",
+            "capturedAt": "2026-08-26T13:51:05.413Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "goal-guiders-ia-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T13:51:05.413Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

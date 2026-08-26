@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "ohrus-marketing-digital",
+  "name": "Ohrus Marketing Digital",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://ohrusprospeccion.online/f/mi-embudo-distribuidores",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Crea tu camino hacia la independencia económica en el ecosistema cripto",
+    "promise": "Crea tu camino hacia la independencia económica en el ecosistema cripto",
+    "audience": "Público inferido de la especialización declarada: Plataforma y servicio de prospección B2B apoyado en IA.",
+    "offer": "El anunciante presenta una plataforma SaaS que busca negocios, analiza su presencia digital y detecta oportunidades comerciales; las piezas recuperadas mezclan esta propuesta con promociones de terceros.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "ohrus-marketing-digital-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://ohrusprospeccion.online/f/mi-embudo-distribuidores",
+      "finalUrl": "https://ohrusprospeccion.online/f/mi-embudo-distribuidores",
+      "title": "LooPool | Ohrus Gonet Marketing",
+      "status": "captured",
+      "capturedAt": "2026-08-26T14:04:36.731Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/ohrus-marketing-digital/site-a5fd223430-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 911,
+        "bytes": 31010,
+        "sha256": "5f63df9e4b1b9aa32f3292a80fe1d51f603eb716e3c20753789a696435956b71"
+      },
+      "thumbnail": {
+        "file": "/evidence/ohrus-marketing-digital/site-a5fd223430-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 375,
+        "bytes": 7558,
+        "sha256": "eb5d6129cd8e653a7376dd743aa3df75903398375b9d6fb9cee59f8321ba0e2b"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Crea tu camino hacia la independencia económica en el ecosistema cripto",
+        "headings": [
+          "Crea tu camino hacia la independencia económica en el ecosistema cripto"
+        ],
+        "ctas": [
+          "Quiero mi regalo y saber de LooPool",
+          "Vídeo de presentación",
+          "Cerrar saludo",
+          "Abrir asistente",
+          "Aviso legal"
+        ],
+        "excerpt": "Crea tu camino hacia la independencia económica en el ecosistema cripto ¿Estás listo para formar parte de un proyecto innovador y generar ingresos al aprovechar una oportunidad única en el mercado cripto? Sigue adelante y solo por seguir tendrás un regalo muy especial"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 911
+      },
+      "cookieAction": "rejected",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:13:20.803Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T14:05:44.113Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "ohrus-marketing-digital-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Crea tu camino hacia la independencia económica en el ecosistema cripto",
+            "capturedAt": "2026-08-26T14:04:36.731Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "ohrus-marketing-digital-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T14:04:36.731Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T14:05:44.113Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

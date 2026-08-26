@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "high-clinic-aceleradora",
+  "name": "High Clinic Aceleradora",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://aceleradora.highclinic.es/optin",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "¿Si estás viendo esto el 26 de Agosto, Tu clínica podría tener +100 citas de pacientes cualificados el 26 de Septiembre",
+    "promise": "¿Si estás viendo esto el 26 de Agosto, Tu clínica podría tener +100 citas de pacientes cualificados el 26 de Septiembre",
+    "audience": "Público inferido de la especialización declarada: Aceleradora de marketing, captación y ventas para clínicas médicas y estéticas.",
+    "offer": "El anunciante ofrece formación y un sistema de captación, automatización y ventas para ayudar a clínicas a llenar agenda y convertir contactos en pacientes.",
+    "mechanism": [
+      "En 2025 generamos",
+      "Con un sistema que atrae y agenda pacientes en piloto automatico"
+    ],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: Resultados Garantizados · más de 250 casos de éxito documentados en video · el 95% de nuestros clientes se quedan por más de 3 años · 36 M€ en ventas para nuestros clientes. Su presencia no valida las cifras que contengan.",
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": "No se observó una garantía contractual verificable.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "high-clinic-aceleradora-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://aceleradora.highclinic.es/optin",
+      "finalUrl": "https://aceleradora.highclinic.es/optin-791591",
+      "title": "aceleradora.highclinic.es/optin-791591",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:51:04.051Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/high-clinic-aceleradora/site-c223021f43-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1337,
+        "bytes": 61612,
+        "sha256": "33139d6bd3b93ed7bfbeb221c098202f6c0b9ce4ac2a87acf48b24c10568be16"
+      },
+      "thumbnail": {
+        "file": "/evidence/high-clinic-aceleradora/site-c223021f43-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 550,
+        "bytes": 15404,
+        "sha256": "ae0f1980f92de4b58e2296e5cdb7629f8101f3aa5d39d282032e928b91b43383"
+      },
+      "text": {
+        "language": "es",
+        "h1": "¿Si estás viendo esto el 26 de Agosto, Tu clínica podría tener +100 citas de pacientes cualificados el 26 de Septiembre",
+        "headings": [
+          "¿Si estás viendo esto el 26 de Agosto, Tu clínica podría tener +100 citas de pacientes cualificados el 26 de Septiembre",
+          "Resultados Garantizados",
+          "Megan Sanchis, Fundadora de HighClinic.",
+          "Ingresa tus datos para obtener acceso inmediato:",
+          "*Tus datos no serán compartidos",
+          "más de 250 casos de éxito documentados en video",
+          "el 95% de nuestros clientes se quedan por más de 3 años",
+          "la aceleradora de ventas 1# en España",
+          "La ÚNICA agencia Para Clínicas que acelera Ingresos en España",
+          "En 2025 generamos",
+          "36 M€ en ventas para nuestros clientes",
+          "Con un sistema que atrae y agenda pacientes en piloto automatico"
+        ],
+        "ctas": [
+          "Sí, quiero conseguir una plaza",
+          "Términos & Condiciones",
+          "Política de Privacidad"
+        ],
+        "excerpt": "¿Si estás viendo esto el 26 de Agosto, Tu clínica podría tener +100 citas de pacientes cualificados el 26 de Septiembre Resultados Garantizados Megan Sanchis, Fundadora de HighClinic. Ingresa tus datos para obtener acceso inmediato: Sí, quiero conseguir una plaza *Tus datos no serán compartidos más de 250 casos de éxito documentados en video el 95% de nuestros clientes se quedan por más de 3 años la aceleradora de ventas 1# en España La ÚNICA agencia Para Clínicas que acelera Ingresos en España En 2025 generamos 36 M€ en ventas para nuestros clientes Con un sistema que atrae y agenda pacientes en piloto automatico"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1338
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:11:32.731Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "high-clinic-aceleradora-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "¿Si estás viendo esto el 26 de Agosto, Tu clínica podría tener +100 citas de pacientes cualificados el 26 de Septiembre",
+            "capturedAt": "2026-08-26T13:51:04.051Z"
+          }
+        ]
+      },
+      "mechanism": {
+        "source": "captured_site_text",
+        "method": "commercial_headings_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "high-clinic-aceleradora-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.headings[]",
+            "value": "En 2025 generamos",
+            "capturedAt": "2026-08-26T13:51:04.051Z"
+          },
+          {
+            "pageId": "high-clinic-aceleradora-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.headings[]",
+            "value": "Con un sistema que atrae y agenda pacientes en piloto automatico",
+            "capturedAt": "2026-08-26T13:51:04.051Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "high-clinic-aceleradora-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T13:51:04.051Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

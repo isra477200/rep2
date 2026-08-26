@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "mario-rivera-mkt",
+  "name": "Mario Rivera MKT",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://marioriveraweb.es/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": null,
+    "promise": null,
+    "audience": "Público inferido de la especialización declarada: Consultoría de calidad de lead, oferta y conversión.",
+    "offer": "El anunciante ofrece analizar captación, oferta, anuncios y seguimiento para explicar por qué los leads no se convierten antes de aumentar presupuesto.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "mario-rivera-mkt-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://marioriveraweb.es/",
+      "finalUrl": "https://marioriveraweb.es/",
+      "title": "▷ Consultor Marketing Digital Madrid 🥇 Mario Rivera",
+      "status": "captured",
+      "capturedAt": "2026-08-26T14:04:31.693Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/mario-rivera-mkt/site-f2f9317710-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 8845,
+        "bytes": 471072,
+        "sha256": "1382725e04dfbdeabfedbcf12a75cd6718333d8445d29546b0c7ab3518815517"
+      },
+      "thumbnail": {
+        "file": "/evidence/mario-rivera-mkt/site-f2f9317710-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 3639,
+        "bytes": 113378,
+        "sha256": "55aad0547f5e118cbc7c4174e326b4623ca861a8e59ecd7d77780d990f311867"
+      },
+      "text": {
+        "language": null,
+        "h1": null,
+        "headings": [],
+        "ctas": [],
+        "excerpt": null
+      },
+      "issue": null,
+      "viewport": {
+        "width": 573,
+        "height": 300
+      },
+      "document": {
+        "width": 573,
+        "height": 300
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:12:22.445Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T14:05:44.113Z",
+    "fields": {
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "mario-rivera-mkt-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T14:04:31.693Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T14:05:44.113Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

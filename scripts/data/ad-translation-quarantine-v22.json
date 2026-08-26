@@ -1,0 +1,1315 @@
+{
+  "schema": "redvitalia-ad-translation-quarantine-v22",
+  "generatedAt": "2026-08-25",
+  "source": {
+    "sidecar": "public/data/ad-translations-es.json",
+    "recipeVersion": "rv-mt-es-v21",
+    "acceptedCount": 530
+  },
+  "policy": {
+    "action": "exclude_from_automatic_translation_and_require_review",
+    "severity": {
+      "P1": "Bloquear o reprocesar antes de publicar o usar para búsqueda semántica.",
+      "P2": "Revisar y corregir antes de considerar la traducción fiable."
+    },
+    "rejectedV21ExcludedFromItems": true
+  },
+  "summary": {
+    "total": 211,
+    "bySeverity": {
+      "P1": 144,
+      "P2": 67
+    },
+    "byCategory": {
+      "acronym_integrity": 14,
+      "entity_integrity": 15,
+      "literal_integrity": 13,
+      "semantic_direct": 68,
+      "semantic_pivot": 51,
+      "source_language": 5,
+      "foreign_residue": 27,
+      "legibility": 6,
+      "semantic_omission": 2,
+      "semantic_offer": 2,
+      "semantic_service": 4,
+      "polarity": 1,
+      "semantic_benefit": 2,
+      "headline_legibility": 1
+    }
+  },
+  "items": [
+    {
+      "sourceCopySha256": "0b16b519bf3dda55a5ae6fd03e4d5d9af1cf2a3e21b6ae7c9d9d58b2386c1b07",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SEO se altera como SIO u otra forma incorrecta. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "0ebd0d0742eb574d521d02605836f4f1e577731a34578786f7f3e8a6620c1466",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo técnico HVAC se pierde o se traduce de forma no equivalente."
+    },
+    {
+      "sourceCopySha256": "108a81bd143826cd0379ab1421ad646eff00766e727957c9792510276fd6c6b9",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG."
+    },
+    {
+      "sourceCopySha256": "14a489f837d0c0d9ca47589f40217c80d70031432290c9058f7cd6e8b0faa975",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG."
+    },
+    {
+      "sourceCopySha256": "2b169fac5351dcdeaea7f7d958173906f3c799af96cb278e06d4d476d500086e",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG. | La prospección con SDR se convierte en DEG y frases no equivalentes."
+    },
+    {
+      "sourceCopySha256": "35495e8cfb17b4a1ce409a29aebfe833525cfea95554bcdf11d76da12a505fe1",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SEO se altera como SIO u otra forma incorrecta. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "5a912eb25439a4a75ad4af4bd8aed6d3fa3d08dc60b4845f182f971e304c075e",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG. | La prospección con SDR se convierte en DEG y frases no equivalentes."
+    },
+    {
+      "sourceCopySha256": "66f4f97530396b4a5b39c8391f9b855923a543caf191c643ea4e7b5d985ce9ed",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "Se pierden LLM y una aparición de GEO. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "6b9aa2351118d6973044e6692dcec1220cdd42cfa5101fed7b299793d0f3ddfb",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG."
+    },
+    {
+      "sourceCopySha256": "79243fa73907ee65c1a901fa6aa912f2c00eff6a4217fee7293f3a8deeb6be3e",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG."
+    },
+    {
+      "sourceCopySha256": "a288d344e6a2a80ab985e31884734a51bf6dd5bf9932d5d616b46819c59a749f",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo técnico HVAC se pierde o se traduce de forma no equivalente."
+    },
+    {
+      "sourceCopySha256": "d416f34f3c7327f246916b618c25ce3f79d9e9afccdafdf83e53410803ec5f62",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo técnico HVAC se pierde o se traduce de forma no equivalente."
+    },
+    {
+      "sourceCopySha256": "d7ef9986bd32231954eea9d5d608d92e6323c02d4a88ed10597f9a879597d319",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "Se pierde el acrónimo RPA y se corrompe IA/AI. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "f0827acb4eba60b76f6ce36d1eefb4281dac5f89f6d4adf37f927ac4b446c291",
+      "severity": "P1",
+      "category": "acronym_integrity",
+      "reason": "El acrónimo SDR se pierde o se transforma en DEG."
+    },
+    {
+      "sourceCopySha256": "05b041202ac883e4ff01f040b4c9e6db058db4d5a5e31e8739a43760b7696657",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "Desaparece la marca B&G Store. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "1007059ea55c8d632e96ef46cfe8fa81ac318fb33e6a7a91faba3c7b8056dcbe",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "La marca IKEA se altera sistemáticamente a IkeA."
+    },
+    {
+      "sourceCopySha256": "52b124fa891fbcfb272545ff1f00eb34c68a5b813ac35b9f5d1b0146a1835147",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "La marca Koçtaş se pierde o se transforma en Coachstone/Cobstone/Coxtatas. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "6b29f39ade77a67adcb4513e14dc8db0ee34bc1d82aedfc5ddb5eb7f4eb4f2ae",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "TikTok Shop se corrompe a TikTok Söp. | La salida conserva/corrompe el nombre de producto en vez de traducir el resto correctamente."
+    },
+    {
+      "sourceCopySha256": "926c3601fa141f2d83cd65a5e87e87878fc5aa2dd6ec3ddc3bf480efb6d8aaa3",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "Desaparece Esnafım y se pierde parte de POS. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "e65accbe1e512926d55bed6b875fde9d9e620a498205aeaa3363978c78b9c8d7",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "Se pierden apariciones de Gree y Airy. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "f03e5f208a0fde6a5ad3d82e993e67741d356b8bce6c9d19ea4fa90a77768fe6",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "Turkcell y 5G se corrompen como Earlcell, Ritch, G-force y otras variantes. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "f2bcb5cf4b861ccaccd9919b874d5fa7b489c7908fa4e4f92220f463fe04b290",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "La marca Koçtaş se pierde o se transforma en Coachstone/Cobstone/Coxtatas. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "07c0f533fbe5e891079c8283275da0fb9d8f932f3e6b3e0caf0b03433c66e24f",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "El símbolo monetario £ se transforma en #. | Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "093da025dac1a7a84205cb42e20486582a78ec72fbb7f80cc977fec035351642",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Se pierden o alteran una o más tarifas AED por hora."
+    },
+    {
+      "sourceCopySha256": "173d4cffbe10d86dc65599526703b691565ec3fcac175c058305a40873631545",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Se pierden o alteran una o más tarifas AED por hora."
+    },
+    {
+      "sourceCopySha256": "1f04478e9213359b1cde3769ce4efb7cc839b088f04463807d79a0f8c1a645a6",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Los importes en won pierden 원 o lo convierten en «círculo». | Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "25ef9abaa10d5eda8a8859c921130a6afdb4f654d40d98a0d739310889d0711f",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Se pierden o alteran una o más tarifas AED por hora."
+    },
+    {
+      "sourceCopySha256": "33a143e6a8f6703c37b13d2a39788cadd7729ab17a222cee48c6c6da33d1e812",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Los importes en won pierden 원 o lo convierten en «círculo». | Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "373e9ecc54d5190042148085863e9192b5f10205ffe90fac8f56a59b282c43e8",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "La tarifa 499AED/month queda como 499EDA/mes."
+    },
+    {
+      "sourceCopySha256": "6cc2c6146866a6670b25788c8ad97ff312014cb49afb4a812747b555949008a5",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Se pierden dos apariciones de la URL OCR malformada www.yourmystarjp/. | Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "6f09d960419edde599439c861122270e624011c6a5632cc6f8860ff362a276c0",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Se pierden o alteran una o más tarifas AED por hora."
+    },
+    {
+      "sourceCopySha256": "79364ef07e95fba470fc016cb07b76eff53f699b8f5c7e06017e81c588b8023e",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Los importes en won pierden 원 o lo convierten en «círculo». | Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "a6d202cb962370c4a1671ead829a9b4c0a0c3b88d34eab31d38acb7e60c88ffd",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Los importes en won pierden 원 o lo convierten en «círculo». | Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "b9c502088664cec7a6641112865d375621452e89bae59c42ef5512436ecc266c",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Los importes en won pierden 원 o lo convierten en «círculo». | Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "cefd08d2dcfeec0e24937667c34ae416f7b18243e6bd0748f5bd7eb0b324705c",
+      "severity": "P1",
+      "category": "literal_integrity",
+      "reason": "Los importes en won pierden 원 o lo convierten en «círculo». | Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "08d8d2fc691375fc8337090df174a796acd0f6fc517149cb8c87bdc87c3e4b23",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "0d4365d31d2d9f4a54dbfd5fc04d8b9c5e243e1b35fcd99f17645b86e3ab3ea4",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada."
+    },
+    {
+      "sourceCopySha256": "1d75dae02fd6d9fb90f4f30b261bcc77b68d765a701796fbd63b94cc351719b4",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta. | Devis d'Artisans a Proximite se traduce como Divisas de Artisans a Proximite."
+    },
+    {
+      "sourceCopySha256": "29f755f2f974c9d6383d0041785ae931b59553734d7781f202e5fb952aaed949",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "2ca5cee1404ff231052e9f5f83105b8e76bf67ebe798e45b7f66ea949b8eb134",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "2d7835fe8d942038bab966211ee0727a2e165c06d0cea3a7dd35d79f6ee8880c",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "303999c0ab1436d6e816115727da37b096bc1ed412fad1f7c16c1d053be389da",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada."
+    },
+    {
+      "sourceCopySha256": "3585c359036cb280adddfe1a92368828e46a53dc20106d21c2303f8ba8491b94",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "3a57138abc1a63f16dd4fafdd5d6e6e9ab62d66604ff41b853a526711bddf105",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "41dfc608cfdf47f638b6301dc6ea8fa9a6c243957ad422599b34498e653e7376",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "431f78f451c56aa7e0368fd589feff5b01567ae524b3f4a9eac960460c294345",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "47945f3a33169442d26518e25f31e074ba0c47dba0fab334375287c34b853f62",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "4d556b3e905c32df806ed80c5bfa2035e4258455fbd36f8eb5a425156588b6b6",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada."
+    },
+    {
+      "sourceCopySha256": "515d56bca80dfa24b306fe207fc7ddc839a38bd48ccff3a8bff33388721857ff",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada."
+    },
+    {
+      "sourceCopySha256": "5eb9bb0cb9dac8f9b8cc55211c3d559e4afe78b2f7123d0f8a1a3dde946cfc35",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada."
+    },
+    {
+      "sourceCopySha256": "5f725da6b79009c72a23d7791d8dbe6be872e85303d9027396059fc8895dea3c",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "5f9700c7eab04a7a269ccd925fd6d1357b458d7f2f8329ad4d86e067530766b0",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "64c3227205471c82f6d5313b86b97174f504b9c336bcd7bfecb35ff20931c68e",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada. | sourceConfidence figura como 0.84, pero el corpus actual contiene 0.96."
+    },
+    {
+      "sourceCopySha256": "6718753cdfd84093626a3c6f4265bf2f791f2608cccd5ac37236127a8acfccda",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Italiano: falso amigo, omisión o frase gravemente dañada."
+    },
+    {
+      "sourceCopySha256": "77ac958b94808b92acd648416ba26fcdd89b396765aecba5b50676962aca172c",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "890ac822874117c528b98e5f97cc29e4f8cd89059fbe754ed9b5662df1d80e64",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "97d785806703e701fe49285f907a2df8a34323bbd9ce08a09ca53da5ebfdcbe7",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "c509373a1dd89800f3615d78064ab5d1210a2de1cb7062ed4e3e1ae7b1250b6b",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "cce26c21eb89131bd4f88f8501fba0885f159ad759399f2472fa647978e15172",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "d36482d28dfcf76edd6f59422a24cc3b8e3d8894887ca3cf4edecec654ba5de4",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Francés: falso amigo, alucinación o cambio del servicio/oferta."
+    },
+    {
+      "sourceCopySha256": "d400e674b844e7de9ab62030f0822a46c83b5121aff19836598dfce07736221e",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "de3f2155142f1fd5db6e1063f12ad5ff79cd2e34823756f7aefe7b335f5d3751",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "e0dda561d767b0920d8f165f00e1d42219009ada17662f76c4e809bda09c2877",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "e3c97ae532a3f078dd232eb58bab570504e79f6398e723c52b7b4c8911656c1a",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "e49b854412ce03850d1c7c44279c1e633356d33e039b01b002f85eb9ec23e6c8",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Se pierde al menos una aparición del nombre Jess. | Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "e8bf5cc8ce8489cb4c39797c690121ce6a09402715b18ecc0102891a1a1b697b",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "f4dea01696e2c54340598df64475c66eb6e17d07b9d7016908d119dd5c600623",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Inglés: falso amigo, servicio alterado o salida claramente rota."
+    },
+    {
+      "sourceCopySha256": "f504074a1753829d81322be0bc9d75140406f6b0df9da941831ebd2886234d9f",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "f6001a7e6e960e2ff17aeb32dc32e353494ff11d743d121776529c4efe8e7bd0",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Alemán: producto, servicio u oferta cambian de significado o quedan ininteligibles."
+    },
+    {
+      "sourceCopySha256": "049742de34b7e09e6fe5ef41c09c7456e5ae00b87f7bb60bcbf85e2352f9cb4a",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Telemarketing se transforma en Tele-Michael."
+    },
+    {
+      "sourceCopySha256": "100037cf8c6ea85efdba4cea7c4e9d146b25c00a7fcc2c043f4d1a4fa778f749",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Indonesio: servicio, producto o relación de protección quedan alterados de forma grave."
+    },
+    {
+      "sourceCopySha256": "10ef3ea7fc9f725197bd1697ce6b5da102305f7984fa0d56d47b97501871f7fa",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "El dominio protegido acaba visualmente como www.entshaar.com/::. | Árabe: call center corporativo se convierte en Coca-Center, estaciones y centro de extensión."
+    },
+    {
+      "sourceCopySha256": "1b670a0e6305335f69ed2deb66afc5eeb9cbc466cc71efde315ac23b27647311",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Diseñador gráfico se transforma en Campeón gráfico/DENT gráfico."
+    },
+    {
+      "sourceCopySha256": "1d5c1aa7d6c68f29cbd5de84204b0d8afd898b2a81aaa2341ab493ee1a5082fd",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "277ea879cf5bdcc9c5b43979978f1b2192ffeb8c23092eb37cc829a182c00dad",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "2aed5c3a446a2692e80400b5b08537f4a3b532c3e081c62723614243d3ee8ad8",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Neerlandés: se pierde información comercial o se altera el significado central."
+    },
+    {
+      "sourceCopySha256": "2afa4882876d4e39486e05997343545c71a1c928c90a0dd93ae1a63af46f3ca5",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "2f480332bce11934c834f93b12ab54e187468b61f0ac4825c09d99b938e422d2",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Hebreo: traducción aceptada claramente alucinada e inservible."
+    },
+    {
+      "sourceCopySha256": "30e5d6564d22c6bb161496ec596df279270fe15fb520f80147ed2782d2ee01e7",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Adstrategy queda convertida en ruido: HotGPDS, GPAs y CampanXCingitals."
+    },
+    {
+      "sourceCopySha256": "397fa3895e182e451ccf36af479da98744bc3b2d0afe0f3a87464b3f64897211",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Indonesio: servicio, producto o relación de protección quedan alterados de forma grave."
+    },
+    {
+      "sourceCopySha256": "39fdbbefe32ceb3a88c2950d1ce1b5b69c000b4c853ee227e8b02b299dfbae2f",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Neerlandés: se pierde información comercial o se altera el significado central."
+    },
+    {
+      "sourceCopySha256": "3c34fd0fea4a163091765dfdbbb48b3bdc7f7cba50d550e35a1cd4bfa780712b",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Vidente se traduce como ¿Ves? o Seer."
+    },
+    {
+      "sourceCopySha256": "43b5a763f334c58af42a762b2ea58298ca00d13e3ffe54611c605d7b05fa6ec8",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Vidente se traduce como ¿Ves? o Seer."
+    },
+    {
+      "sourceCopySha256": "44570661d7cc791399f94ee44a789774289117f9f542fd29acae3d4cf66b72aa",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Hebreo: traducción aceptada claramente alucinada e inservible."
+    },
+    {
+      "sourceCopySha256": "488eaeb1d58798ebca2c1cce120121df9e9f2dafcaf1be6bd149537c3ac486ef",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "4898219ea980740f2c4918b4ac654bb044cf84babd4de30ee50d889921d381c3",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "4a0f08fd04aae8f961c9bfed6325b9a779353eac509b1e8ba9b75121530a3a9a",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "516819f055c045ec169866617ae01d4270d0f5e795224e6d5f0c5379b9296647",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Adstrategy queda convertida en ruido: HotGPDS, GPAs y CampanXCingitals."
+    },
+    {
+      "sourceCopySha256": "51dbcc9b1411cf1e96b3cd36180fb909cb964d20b86e4b55b7113c1d1a3d6bf8",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Amianto se transforma en Amit/Amicant."
+    },
+    {
+      "sourceCopySha256": "53386ace0347f1545a1f3c74e706948cd8be722177fbe5474d9e05ec5a404c98",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Mueble se transforma en móvil."
+    },
+    {
+      "sourceCopySha256": "59c70d3d49b7ac1078a7686a5f38cf316a3c14782d84f50944107d28e8dfc39f",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "5e681d46b47a7bcde4c15a2f70bc91ef588dd1c1536217356bb55a1a7676a157",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Indonesio: servicio, producto o relación de protección quedan alterados de forma grave."
+    },
+    {
+      "sourceCopySha256": "77407917cc806890bb0c343c89a0d6560bda7e6d89843878300d312fa9a78d6c",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "7d81736a36656e429f72e8790332302d85ecc410f067d440a6972ab1aa050e65",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Hebreo: traducción aceptada claramente alucinada e inservible."
+    },
+    {
+      "sourceCopySha256": "7fb28453cd4495de0ebde27233258088d1df77d34632dc5053cb5d1ce0326c81",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Desaparece por completo la promesa de comparar cuatro presupuestos."
+    },
+    {
+      "sourceCopySha256": "88589e6e33e9f34d4c9eee1b544e8fc3e7dfbc14d7d0e71bfd0d23364e0a027b",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Hebreo: traducción aceptada claramente alucinada e inservible."
+    },
+    {
+      "sourceCopySha256": "8b5d6f182c9a3319d41809345a36cd01f1f3b282085e5148491259f2cd033f9b",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "La tarjeta empresarial de combustible se convierte en tarjeta de visita."
+    },
+    {
+      "sourceCopySha256": "8fe0f9e614aa75d09a61eb97685962f2025bc65c5ad8dd560fbaef814526b287",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Reforma se transforma en jubilación."
+    },
+    {
+      "sourceCopySha256": "989795bf223c51e7eae542b3c9c13e7397124372ec57cd122ae13c4b650d00da",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Mueble se transforma en móvil."
+    },
+    {
+      "sourceCopySha256": "9956e7f616d1dc6a443d9b393bb3206945fb7f1f451cd6d37e24cbb9b80d1635",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Alquiler de hinchables se transforma en Rent a Car e insufrible."
+    },
+    {
+      "sourceCopySha256": "9998cbe806afaefc9222e9422205cb31d761ed62a087bbe82b9204056bd16eed",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "a279af4a61cd556aff4575ab2f303447b570326d770d5eb7e49842a88764eff7",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Telemarketing se transforma en Tele-Michael."
+    },
+    {
+      "sourceCopySha256": "a3b6a262a8ee0b02e0ae94c482897460c95ecebc8cf559c1c48eadf1b33a9781",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Japonés: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "a425505c772e5a741a1675bd2542fa73f6ce0c55f650317d469563bc5c922c77",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Telemarketing se transforma en Tele-Michael."
+    },
+    {
+      "sourceCopySha256": "af1dc4e9c9c1302096015716849cb0fe708d8c208d749efbb1b7873e5534ce98",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Indonesio: servicio, producto o relación de protección quedan alterados de forma grave."
+    },
+    {
+      "sourceCopySha256": "b28ab5028ca010c3ba390bedbdbefa57e389ca1717191cc0c6e56ca6396ab3bb",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "La tarjeta empresarial de combustible se convierte en tarjeta de visita."
+    },
+    {
+      "sourceCopySha256": "c6deb1aed0f350bc508ef808ed581c251924c32d22c0c9c1b311dbac4230fe82",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "La CTA Order Now se invierte a «No voy a poder conseguirlo»."
+    },
+    {
+      "sourceCopySha256": "cde5160ab53d95e96259d7aecc5f1b599ff5f5d9d69f6cb3cd973b48bc4172a5",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Indonesio: servicio, producto o relación de protección quedan alterados de forma grave."
+    },
+    {
+      "sourceCopySha256": "d3f61e2e91e5df07e29c3c4b3aacc3df2a6f99be434bcbbfefd8ca4d75df48fc",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Coreano: traducción rota o pérdida grave del servicio/precios."
+    },
+    {
+      "sourceCopySha256": "d72f63ad2dfa8c29c7380e3935e7314b3e7de16ed490dfb3fde1aeed6a50d753",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Celebrante de bodas se transforma en Boda de la Manufactura."
+    },
+    {
+      "sourceCopySha256": "dc44b6093acf885c1c2a9c9ac47d90cadb5b82745bc9d8562ded2a837afee13d",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Indonesio: servicio, producto o relación de protección quedan alterados de forma grave."
+    },
+    {
+      "sourceCopySha256": "e593b16113b6220715b1516471f0744357a9c7fa5de9a2e5e7b3ce1dd73b9718",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Turco: marca, servicio, precio, polaridad o acrónimo quedan gravemente alterados."
+    },
+    {
+      "sourceCopySha256": "e602542747ab10ee8a76938ed39c0d808dd6896044457980061ac5e7ab0756f9",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Amianto se transforma en Amit/Amicant."
+    },
+    {
+      "sourceCopySha256": "e984607ae587ce936bde48321a78eb03fa4ad427b31334b88f5bd296cbf934ad",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Chino/etiquetado zh: salida claramente alucinada e inutilizable."
+    },
+    {
+      "sourceCopySha256": "ec4a20ad52d281f444f811b980eb03dd13abe05b45ac9d159c18c6656a53ccbf",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Amianto se transforma en Amit/Amicant."
+    },
+    {
+      "sourceCopySha256": "f541463af2124f4495a1e3d9624fe47c8c92a66bed1233f9e3dc03cbc66356d4",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Fontanero e hidráulica se transforman en Flomero e hidro-raíles."
+    },
+    {
+      "sourceCopySha256": "fc97f8dc5b55f3759795ed9b514f9667ea2b25664a05a76dbf0063f4b7bd2012",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Celebrante de bodas se transforma en Boda de la Manufactura."
+    },
+    {
+      "sourceCopySha256": "fe2d680aec78f784609e57f43947bf0bb3c15887016572d6579eb79f4a262c2b",
+      "severity": "P1",
+      "category": "semantic_pivot",
+      "reason": "Se pierde el servicio de cerrajería y queda solo Tienda de presupuesto gratis."
+    },
+    {
+      "sourceCopySha256": "16ae6a2486b75df57b1b5e39b202817b99445d9afe9a90388b26a37e593b0753",
+      "severity": "P1",
+      "category": "source_language",
+      "reason": "Chino/etiquetado zh: salida claramente alucinada e inutilizable. | Fuente japonesa clasificada erróneamente como zh y enviada al modelo chino."
+    },
+    {
+      "sourceCopySha256": "6319d695cfbc8f35d094ec1303220f30a281525bc293ba4671010c8262662c2d",
+      "severity": "P1",
+      "category": "source_language",
+      "reason": "Contenido español clasificado como portugués y degradado al traducirlo."
+    },
+    {
+      "sourceCopySha256": "95fc78e46ceb804d956249bea96e8551ec05b96b67221d4f9ca3182d4837363f",
+      "severity": "P1",
+      "category": "source_language",
+      "reason": "Se pierden dos apariciones de la URL OCR malformada www.yourmystarjp/. | Chino/etiquetado zh: salida claramente alucinada e inutilizable. | Fuente japonesa clasificada erróneamente como zh y enviada al modelo chino."
+    },
+    {
+      "sourceCopySha256": "cc5f35cd44feb56646e069a96126bf5ec4d9956711123452674989b36d9c5f09",
+      "severity": "P1",
+      "category": "source_language",
+      "reason": "Chino/etiquetado zh: salida claramente alucinada e inutilizable. | Fuente japonesa clasificada erróneamente como zh y enviada al modelo chino."
+    },
+    {
+      "sourceCopySha256": "152073a1e259721c26bd2b7e552558b4d8adbd3afffd8fd9c106e8ea6dc49125",
+      "severity": "P2",
+      "category": "entity_integrity",
+      "reason": "Se pierde al menos una aparición del nombre Jess."
+    },
+    {
+      "sourceCopySha256": "36875731ecdd5f01274880d8f5241a547dfa4b5a9119e1facef6cba9d50e6699",
+      "severity": "P2",
+      "category": "entity_integrity",
+      "reason": "Se pierde una de las apariciones del nombre Alfred."
+    },
+    {
+      "sourceCopySha256": "940b9c88878a4669205c3abe986d62add77905b034ff0106c637d4aa2c627c80",
+      "severity": "P2",
+      "category": "entity_integrity",
+      "reason": "Se pierde al menos una aparición del nombre Jess."
+    },
+    {
+      "sourceCopySha256": "a515501aa7a95503ad0fe30309520e6d3afaa48906fd7e177e1502e0df18466f",
+      "severity": "P2",
+      "category": "entity_integrity",
+      "reason": "Conserva SINGAPORE y corrompe GHATGPT a Ghatgg."
+    },
+    {
+      "sourceCopySha256": "ac580eb4e404455a23fa15c915970db86e0bfec2996b3dbeda50ad621fe31dfa",
+      "severity": "P2",
+      "category": "entity_integrity",
+      "reason": "Se pierde al menos una aparición del nombre Jess."
+    },
+    {
+      "sourceCopySha256": "01419b8ab47a917b7ba30d95d872c6acb87b39a6cd796ca0ed62a3282ee8c268",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva la frase inglesa Local Service."
+    },
+    {
+      "sourceCopySha256": "0d0af16abd09b7cd608c344cc6df6aff2906ccb4b846f0c63795847aea3bcdf7",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "15399c9258aa23ae93f7d94509cf752d8e7c5988b3f2ce4b9d68782eac795ec5",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Handyman/Handymen."
+    },
+    {
+      "sourceCopySha256": "1edbb58149e1d17d2133548f4fd0ffe198e7e937d7d1c668004a95ba8bf194c6",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva la frase inglesa Local Service."
+    },
+    {
+      "sourceCopySha256": "24386a42f19574d14dc72bdaf580d6f603907f2b4610f81f5f892e1720c6d29c",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Preventivos/Preventivo en vez de presupuestos."
+    },
+    {
+      "sourceCopySha256": "302cc1cfc78524b039543e9e1413250dcab0f92ff650d8e593ec37559a5bf241",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Gesponsord."
+    },
+    {
+      "sourceCopySha256": "3c25fb4bac5e11e62d51b0e1a49096cb2c50dc397517f6fdea33892df216626e",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "46a7fe7ffe7576ac675a02c5bdcbe19eba86de8e2c1a90d7ce8dfe2ab81e9fd3",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva by Text & Phone y Stop Wasting."
+    },
+    {
+      "sourceCopySha256": "46f5b2888a4e453e60ef3dc2547f17acf09efb793e8f4bfa51dd42863f4cb215",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "53a36ee0d564c3ada20d0cb29b1ff77c0aaa541d69de355993943ec52cbdfcab",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Digital Marketing Agency in Valencia."
+    },
+    {
+      "sourceCopySha256": "6988f7679ec25858cdacc8969fb1048565c58c026543ae4634081515d65ef9b0",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Wintergarten."
+    },
+    {
+      "sourceCopySha256": "7351ee8d5da7f793104fea6fff7b78cc12f8a74adb1f1036a8c906cf1b381073",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Wintergarten."
+    },
+    {
+      "sourceCopySha256": "7476a1baa02654539765e48c3a166b01d3593289665e3ef894315af0e64f7b83",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva residuos italianos como roba y Laciala."
+    },
+    {
+      "sourceCopySha256": "9e4b573fdb7d373af7af328ad576e35f2cc3a2b6fff7a1564db7fe6f8d83ce7e",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Preventivos/Preventivo en vez de presupuestos."
+    },
+    {
+      "sourceCopySha256": "9e4c2532d4e08f48f94d875f1566f77e64fa74b262c42145cbdca35d6b69c3f6",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "a727f79efbbef4c91e9cfd808969429ca1ec7cf5b0f00ee8910d21ab5b9be128",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "acf839e77bc27a5632635921af853481d60092cac530cdfd37e72c629d001122",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva la palabra inglesa clients."
+    },
+    {
+      "sourceCopySha256": "ae0ee370169b8911b817fac356f6a2d3ec769e388346655ad4598f5e2352f4ec",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Teuer."
+    },
+    {
+      "sourceCopySha256": "b0b9cb144c3330f4c69fbcc6bb4acd4fb6dc40221a4a8f7ab64b1127bd639d34",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Preventivos/Preventivo en vez de presupuestos."
+    },
+    {
+      "sourceCopySha256": "c37648031338c20ea94467fc1ebbead4ca04a2fad1d9ec924cdc2a60f546b7f3",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva service dentro de una frase española."
+    },
+    {
+      "sourceCopySha256": "c84945dafb2c53c481ae96cd756e7c1e2a2f12a9e9c6a09967612a93549eeb8a",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Preventivos/Preventivo en vez de presupuestos."
+    },
+    {
+      "sourceCopySha256": "cb3b8b79b4410fcb2787cccc8fd0101756852f79d3ba1eec6414b391dc9b2d75",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "ddca38c1360b66faeab3643574e63693a257cb95a4b92a70bfbec7b5c3fd1108",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Preventivos/Preventivo en vez de presupuestos."
+    },
+    {
+      "sourceCopySha256": "e1b2959339071b79fba0c19ce60f7b6f9c82ea441dcb8d16ce9da3b43acda4ca",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "e658ddc65973bc1583387dc184cdfabcb060040aea92770f0dc3c902887414d8",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Wintergarten y unbhangig."
+    },
+    {
+      "sourceCopySha256": "f7aef3074070551594eca7bb4f5c5ae7d22da1e4b96162043867affb0322f8fe",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Conserva Preventivos/Preventivo en vez de presupuestos."
+    },
+    {
+      "sourceCopySha256": "f82c1c6e9af90660e051cd1edb8337f382c8035d7f0b2b9d98ae042a32de4634",
+      "severity": "P2",
+      "category": "foreign_residue",
+      "reason": "Quedan palabras o frases francesas no traducidas."
+    },
+    {
+      "sourceCopySha256": "320e18b4bdf9e3394683325b6c225d617458d59a92f45261052708dbc3482053",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Lead se traduce como ventaja en el titular."
+    },
+    {
+      "sourceCopySha256": "37662eef8f8222ca2bfc79ab3e2aa2a3707212d7f6915869a64c83a6d48b98b4",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Lead se traduce como conduce en el titular."
+    },
+    {
+      "sourceCopySha256": "f4297b89fc0fc68e7d36777d36af786e4f7aa48e2c54c5ca0180f3ba9c34a1d0",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Lead se traduce como conduce en el titular."
+    },
+    {
+      "sourceCopySha256": "f54505e139cb3f7454baa361481463c7961dc1d57fb5b37dd3792b768134ef88",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Lead se traduce como ventaja en el titular."
+    },
+    {
+      "sourceCopySha256": "0b56344f445aeb2fe98dbe623fe75fd122d13af3b0b111524ba7a4647e45c888",
+      "severity": "P2",
+      "category": "semantic_pivot",
+      "reason": "Coreano: idea parcialmente recuperable, pero redacción o terminología dañadas."
+    },
+    {
+      "sourceCopySha256": "fb4ffe6aee34a31bf51c5a7139a4b15558d682f644f5d32e193ecf61b00c2191",
+      "severity": "P2",
+      "category": "semantic_pivot",
+      "reason": "Coreano: idea parcialmente recuperable, pero redacción o terminología dañadas."
+    },
+    {
+      "sourceCopySha256": "d481b8d949fec5ce5caba859be2ee5172ec5c3a590cd217c2cbed9f8dd1d48ff",
+      "severity": "P2",
+      "category": "source_language",
+      "reason": "Contenido principal español clasificado como inglés; la salida es casi inocua pero no debe retraducirse."
+    },
+    {
+      "sourceCopySha256": "26b0aa44b1522e0c5067c357e412deec2f3d459c97304a42a2a6d4e6589b6858",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Distorsiona el resultado negativo «flopped and churned under 90 days», convierte leads en frases ininteligibles, corrompe Android y deja incompletos el CTA y la propuesta comercial."
+    },
+    {
+      "sourceCopySha256": "b1d95e60de5c900638bd908375934a27e9ac56c84e639a98f974e337bfff14f6",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Mantiene la idea general de autenticidad en vídeo, pero omite las instrucciones centrales de ponerse ante la cámara y grabar, y acumula falsos amigos y expresiones ilegibles como «rollo de la manguita»."
+    },
+    {
+      "sourceCopySha256": "78a5c955e386e78e56f45e1fee8613eb070881ede85b54bdac073e7119f50055",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "La oferta del pricing quiz queda inconsistente como concurso, prueba y examen; «done for you service» se traduce mal y varias frases comerciales resultan antinaturales, aunque conserva precios y cupos."
+    },
+    {
+      "sourceCopySha256": "309b90fba8b8d7015e3debf7ebbfad6044f421b25b94641061dce678fcd6adc6",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Omite la reserva automática de llamada del lead y traduce hardscaping como «escafandra», alterando uno de los servicios y parte de la evidencia de resultados."
+    },
+    {
+      "sourceCopySha256": "f46383e24688de8e3a70218d8187ac990fc5cee0abe6d52e18e2932c3ce86015",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Elimina la revelación sobre el único factor que cierra ventas y convierte «book a 15 minute call» en «reservar a 15 llamada por minuto», dañando el núcleo del gancho y la conversión."
+    },
+    {
+      "sourceCopySha256": "4e6145f19d669a5432f26037f6de50ba0186b5f2e4a10458b9104194359d7585",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Traduce static ads como «anuncios estancos», cambia referentes de forma incoherente y repite «contactarte»; la recomendación se entiende, pero la redacción no es publicable."
+    },
+    {
+      "sourceCopySha256": "86e243a5624791b812aba8fcb3eadea3645e47d05947b3a621df9c175f452fa4",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "El concepto central speed to lead se transforma en «velocidad para liderar» y lead aparece como «persona principal» o sintagmas rotos, alterando la táctica comercial auditada."
+    },
+    {
+      "sourceCopySha256": "cd64a14b8fd6c6b068e0527a763b6e0bd4709f89fb12ddc16c4b8415e300bfe2",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Conserva la recomendación sobre llamar los domingos, pero los errores reiterados de género, concordancia y sintaxis con lead hacen que el texto sea claramente automático e impropio de publicación."
+    },
+    {
+      "sourceCopySha256": "9cd14f0c24c281e1f44c7703ffb7e4203a6646bc4430678ee5f0a207414944fe",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Convierte free quotes de abogados en «citas gratis» y vuelve ininteligible la ayuda de derecho de familia y el trabajo de búsqueda, alterando la oferta principal."
+    },
+    {
+      "sourceCopySha256": "da8e4950da3f8faf7c04348633286edefa4a9a6e722b96da0d0066cbd044b321",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "La atención domiciliaria sigue reconocible, pero la gramática es deficiente y «do the leg work» queda como «hacer el trabajo de piernas» tanto en texto como en CTA."
+    },
+    {
+      "sourceCopySha256": "74beb244a8f3092140b7ba127ed9b9e25f48729d40e29ecc04f1ec0ffc70f439",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Free quotes pasa a «citas gratis», tree surgeons pierde el componente arbóreo en el cuerpo y el CTA conserva una traducción literal absurda de legwork."
+    },
+    {
+      "sourceCopySha256": "a32a161691ab729a53cf51dc7a48044675493d5ef2e69213dd804622b9a196ee",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "La campaña de DJs conserva 2025 y la escasez, pero presenta errores visibles —«2025 ofrece», «están rompiendo ofertas», Minutes sin traducir— y convierte quotes en citas."
+    },
+    {
+      "sourceCopySha256": "83a84371b6e309a7df8a008a4080bd621a352d1273538884907c3d35e54f3aaa",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Deja Landscaping en inglés, traduce literalmente legwork y corrompe Cotizar como «Co-Doc.», por lo que la oferta se entiende pero su presentación y acción final no son publicables."
+    },
+    {
+      "sourceCopySha256": "bef4d80d60e8e8e0e7127506fbc7686d6900515dfd1b5c15ae19d88920d26468",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Interpreta live in 7 days como «vivir en 7 días», in-house voice como «voz en el hogar» y deja el CTA mezclado en inglés, alterando plazos y capacidades del servicio."
+    },
+    {
+      "sourceCopySha256": "0cce4d5acfc41f4933afa8710856ac6611df9e0ce02bc500d273b55931c7c930",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "El servicio de catering es reconocible, pero aparecen «cateters», el falso literal «trabajo de piernas» y un CTA corrompido como «Co-Doc.»."
+    },
+    {
+      "sourceCopySha256": "9d5755d35d07c7f70b6039f35d5c28318adf576a509efd1fad73d582e022b2eb",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Omite o fragmenta la objeción sobre no-shows y malas citas, deja residuos ingleses y traduce qualified como «cuantificados» en el CTA, dañando la propuesta de concertación B2B."
+    },
+    {
+      "sourceCopySha256": "2a64be71f1cea90936cb99695dde329af540ceb73547ccb5850257b4a48a5db0",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "La instalación de cargadores se conserva, pero el texto y CTA repiten «hacer el trabajo de piernas» y mantienen una redacción impropia de un anuncio profesional."
+    },
+    {
+      "sourceCopySha256": "89340e388acbbcb188a815950f883313e38fb036ed62ca8c5c1c1fc8b6041886",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Una variante convierte Book en «Libro» y walk-through opportunities en «oportunidades de paso»; las otras variantes permiten inferir el sentido, pero el conjunto no es editorialmente legible."
+    },
+    {
+      "sourceCopySha256": "5dd445b580237818bde24bf75a743da4906137fe0b9c7189a640ebfd90368701",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "La modalidad pay-per-meeting, los correos fríos personalizados y el cierre quedan convertidos en una frase desordenada y parcialmente truncada; la oferta comercial ya no se entiende con fiabilidad."
+    },
+    {
+      "sourceCopySha256": "db2f43636eb82e7f1ee3d58c646eedcedac8c237a3202283e18d1a2024470be9",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "End-of-tenancy cleaning queda con orden sintáctico roto y free quote se convierte en «cita gratis», alterando una oferta orientada a recuperar la fianza."
+    },
+    {
+      "sourceCopySha256": "0651a253f9291b4cc7ff815ba795c88482a79f2d8695a8fd82f62db555dce142",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "El contenido B2B se puede reconstruir, pero la jerarquía queda colapsada, varias etiquetas se fusionan y el CTA pierde «Company» y resulta incompleto."
+    },
+    {
+      "sourceCopySha256": "247878024ac351c357b7d6d4426d6fba3a60145b11363f96a1fac256191d3eac",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "En la primera variante Book se traduce como «Libro» y la oportunidad de visita comercial queda truncada; la segunda variante mejora el sentido, pero no corrige el bloque completo."
+    },
+    {
+      "sourceCopySha256": "0ea073810152b4dbf9c1aa90f2f2e46a32158e4dcc85d060503d76aaed97f5e8",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "No more pay per lead pasa a «pago por cliente principal», quoting for jobs se vuelve «citar» y tradesmen/callouts se traducen con significados incorrectos, alterando el servicio."
+    },
+    {
+      "sourceCopySha256": "5bd48b2cb4fbcfb45a672701a85a21c10306e04781aa6979428e95080c9af11d",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Free quotes se convierte en «citas gratis», Minutes queda sin traducir y legwork se vuelve «trabajo de piernas», dañando oferta y legibilidad."
+    },
+    {
+      "sourceCopySha256": "ea499e12d9dfb46a224164d7df389d9b2d6e0a42644308d415398e085f41e13a",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Repite el mismo fallo de la variante anterior: free quotes como citas, Minutes en inglés y una traducción literal absurda de legwork."
+    },
+    {
+      "sourceCopySha256": "62d458500afe6b848f0402e48290f411a23bc485d08f9cabeb0d22a8af294ced",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "La oferta de fotografía de boda y el CTA se conservan, pero el sustantivo central aparece como «Fotgrafo» y la redacción requiere corrección editorial antes de publicarse."
+    },
+    {
+      "sourceCopySha256": "88b2fb3fec06a2f081356015098bd3a8d7319d4c6fbdb7e01931dae7b5847b92",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "Conserva la escasez y la cifra 2025, pero el titular dice «2025 ofrece» y snapping up offers se convierte en «rompiendo ofertas», con una redacción claramente defectuosa."
+    },
+    {
+      "sourceCopySha256": "5cd5401183c3d2b3841387c5dadc708d27ac91d18ffab60fd7a3c7fda303a413",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Deja sin traducir «No Gimmicks, Just Fair Prices» y Windows, convierte «No Sales-People» en «No hay ventas-gente» y conserva abundante ruido OCR, dañando posicionamiento y legibilidad."
+    },
+    {
+      "sourceCopySha256": "e892314bd9316f827b585f5e0eeeea52d21b96b025d80a3a23a2de0fef9b3141",
+      "severity": "P2",
+      "category": "semantic_direct",
+      "reason": "La mudanza con furgoneta se entiende, pero deja Man with Van en inglés y repite la traducción absurda «hacer el trabajo de piernas»."
+    },
+    {
+      "sourceCopySha256": "e2f97df1ecee3902bfde48b1c2b9273436ffccb68503661ce6b471ebfa55d0ea",
+      "severity": "P1",
+      "category": "semantic_direct",
+      "reason": "Omite partes esenciales de la propuesta —incluido conseguir más presupuestos y la gestión de trabajos—, corrompe trade leads como «comembolsos» y deja oficios sin traducir; la oferta ya no es fiable ni legible."
+    },
+    {
+      "sourceCopySha256": "6ed7522ccb30048631cfaa704a3a888095b48ab2bc25cdadfe7f7cc6bf8cd370",
+      "severity": "P2",
+      "category": "legibility",
+      "reason": "Conserva la oferta y las dos referencias a 12 meses, pero «depuis 12 mois» aparece como «desde entonces 12 Mes» y «desde 12 Mes», además de mezclar tú y usted; la redacción comercial no es fiable."
+    },
+    {
+      "sourceCopySha256": "465e9793420622397c81a0aeef4e9f49482ed773ef10e7d1a5759952c0b400bc",
+      "severity": "P2",
+      "category": "semantic_omission",
+      "reason": "Conserva 59€, 2 min, SEO y los dominios, pero omite «Discutons ensemble» después de «¿Un presupuesto?» y degrada varias condiciones y rótulos; la llamada comercial queda incompleta."
+    },
+    {
+      "sourceCopySha256": "c50d934d50f793ed8cb0375db85876854825255c8d4e36eec0bd8f154f23d589",
+      "severity": "P2",
+      "category": "legibility",
+      "reason": "Mantiene 10 000 obras, 180 000 contactos al año y la ausencia de intermediarios, pero acumula «los obras», «endroi t», «dee» y «cuerpos de oficios»; el bloque completo no alcanza legibilidad editorial."
+    },
+    {
+      "sourceCopySha256": "2ecafd3eb2385971d9e13b831ac8de34d1f1cc0588075e50d7a6df87b03836fb",
+      "severity": "P1",
+      "category": "semantic_offer",
+      "reason": "«Soyez rassuré, nous vous conseillons… et suivons de A à Z» se convierte en «Sea seguro, le consentimos… seguiremos a Z», perdiendo la promesa de asesoramiento, tranquilidad y seguimiento integral de la obra."
+    },
+    {
+      "sourceCopySha256": "902dd39ace6d612040b329caf87686f9d7d2b49e00901894cebf25041130e82c",
+      "severity": "P1",
+      "category": "semantic_service",
+      "reason": "Traduce una borne de recharge como «Botón eléctrico», deja el titular en «instalar» y degrada los rótulos de Wallbox y smart charge; altera el producto central de recarga aunque conserva marca, URL y cifras."
+    },
+    {
+      "sourceCopySha256": "e14f123795263c39d5aa367801a9f50802ba03fee962c312e8babd2d0cdcbc77",
+      "severity": "P1",
+      "category": "polarity",
+      "reason": "Añade «No hay una nota asociada con travaux.com» donde el original afirma que existe una valoración asociada, invirtiendo la polaridad junto a la puntuación 4,8; además corrompe varias menciones de fontaneros."
+    },
+    {
+      "sourceCopySha256": "befba7fc38a481438c970539b9edd1c08bcad51d1ff89487c310bc9f35349f4a",
+      "severity": "P1",
+      "category": "semantic_service",
+      "reason": "Convierte «Artisans près de chez vous» en «Artistas cerca de su hogar», deja «Salle de Bain» sin traducir y pierde la solicitud de presupuestos en pocos clics; cambia la categoría del proveedor y parte de la conversión."
+    },
+    {
+      "sourceCopySha256": "26284161de03b51d45192caf214a491575576352d067385b2c1ae990c89b69de",
+      "severity": "P2",
+      "category": "legibility",
+      "reason": "La propuesta de consultar licitaciones gratis y sin compromiso se reconoce, pero «prochain chantier», proximidad y planificación quedan sintácticamente rotos, y el titular termina en «Red Pro da»."
+    },
+    {
+      "sourceCopySha256": "387ba274a1147d33f775363d4b11fb8de1ba31b8f07244c803003d532b10b68f",
+      "severity": "P1",
+      "category": "entity_integrity",
+      "reason": "Traduce «Electriciens» como «Electricos», altera una aparición de Lille a «Lilla» y pierde el sentido de «Mise en Relation»; quedan dañados tanto el oficio ofertado como la localización."
+    },
+    {
+      "sourceCopySha256": "92667d45959be078cd67663fea64eb29362f335ec921acddf102672555d695fc",
+      "severity": "P2",
+      "category": "semantic_service",
+      "reason": "El simulador y la elección entre punto o toma de recarga se conservan, pero «Tableau électrique» pasa a «Tabla eléctrica» y «Borne de recharge» queda a medias en francés; los rótulos técnicos no son fiables."
+    },
+    {
+      "sourceCopySha256": "c75c6ef80c9695bbe057bcabfdedf07da08dad9a326a8431499bf5699b5a303c",
+      "severity": "P2",
+      "category": "legibility",
+      "reason": "Conserva KfW, 2.500€, 6.250€, el dominio y el beneficio de comparar ofertas, pero el arranque «Guardar la ayuda» y las llamadas finales duplicadas y desordenadas impiden una lectura comercial fiable."
+    },
+    {
+      "sourceCopySha256": "89d8b8999d248af78bc172f7631a6d038fec5e4654f0707ccf7d1dc0e03a24fb",
+      "severity": "P1",
+      "category": "semantic_offer",
+      "reason": "Convierte Photovoltaik-Leads en «guías fotovoltaicas», la distribución a un máximo de 2 competidores en «2 Concursos» y omite que el servicio es cancelable mensualmente; altera elementos centrales de la oferta B2B."
+    },
+    {
+      "sourceCopySha256": "1c0a5f08753d306238ead2f4d2cbafdd3133f12e45f22823624393b7dab67b39",
+      "severity": "P2",
+      "category": "legibility",
+      "reason": "Mantiene la construcción en seco, las dos referencias a 2025, la marca y el dominio, pero degrada la invitación a comparar y convierte el corte «Jetzt Firma…» en «Aroundhome Empresa de negocios…», con sintaxis fragmentaria."
+    },
+    {
+      "sourceCopySha256": "abe92a05d9d45041ad14ad4319659e83ea7c9abdcd75d075a5cf6009ad129493",
+      "severity": "P2",
+      "category": "legibility",
+      "reason": "La secuencia describir necesidades, recibir ofertas sin compromiso y comparar aún se infiere, pero «Badsanierung» se rebaja a reparaciones y la pregunta regional y los rótulos finales quedan desordenados e ilegibles."
+    },
+    {
+      "sourceCopySha256": "3421153d9f8f0fd405ebaed1b20544a48612467801b1759d34b49dff9db56c0d",
+      "severity": "P2",
+      "category": "semantic_benefit",
+      "reason": "Conserva la ventana de tejado con montaje y menciona subvenciones, pero traduce repetidamente «Förderung» como promoción y rompe la instrucción para informarse sobre la ayuda estatal; el beneficio económico queda oscurecido."
+    },
+    {
+      "sourceCopySha256": "af8b0328a1696ffa825ebde0eccab332c41c0e003775b8b8cd57c49de41c1000",
+      "severity": "P2",
+      "category": "headline_legibility",
+      "reason": "El cuerpo explica correctamente que las alarmas protegen frente a robo, incendio y otros peligros, pero el titular se convierte en una frase sin sentido sobre «entrar en el edificio» y queda inutilizable."
+    },
+    {
+      "sourceCopySha256": "cb5958bf4b8f0fd9ec501117335ab600e8f1d267f10099af78c102a4e4c04cf0",
+      "severity": "P2",
+      "category": "semantic_benefit",
+      "reason": "La ayuda regional aparece primero como «Ayuda», pero después «Förderung» pasa a promoción y la frase para informarse sobre las subvenciones queda rota; la oferta de ventanas se entiende, no así el incentivo."
+    },
+    {
+      "sourceCopySha256": "e95f8d65641f4961508d3712197046f3ad21a5eadd7479f3ee3351e48270beb5",
+      "severity": "P1",
+      "category": "semantic_omission",
+      "reason": "Omite por completo «Kostenloser Anbietervergleich!», la comparación gratuita de proveedores que constituye un beneficio central, y reordena de forma confusa el bloque sobre especialistas regionales en fachadas."
+    },
+    {
+      "sourceCopySha256": "e8a4ee3bf2545031f9efb990e5914359adfb270713de93a4d836d25986fe29b4",
+      "severity": "P2",
+      "category": "entity_integrity",
+      "reason": "La venta inmobiliaria y 2026 se mantienen, pero una aparición de Greifswald cambia a «Greifeswald», «Umland» queda sin traducir y el titular conserva un orden de palabras impropio; la localización no es íntegra."
+    },
+    {
+      "sourceCopySha256": "3371d7ec7cda07de1d9440f1bf9cefa92783ee16ebd5159450ee67daa4fbe3d3",
+      "severity": "P2",
+      "category": "semantic_service",
+      "reason": "La consulta sobre precios de pintura exterior y la comparación gratuita aún se reconocen, pero se omite qué cuestan las fachadas nuevas en 2025 y «Hausfassade streichen» termina como «tachar fachada»; el rótulo del servicio no es publicable."
+    }
+  ],
+  "notes": [
+    "La base inicial contiene hashes aceptados por rv-mt-es-v21; se añaden 30 hallazgos del barrido semántico residual de las traducciones automáticas EN→ES más largas aún publicables en rv-mt-es-v22.",
+    "Los hashes ya presentes en rejections v21 no se duplican aquí.",
+    "Cuando un hash tenía varios hallazgos se conserva la severidad más alta y se concatenan los motivos.",
+    "Barrido residual EN→ES: 30 revisadas, 0 aptas, 15 P1 y 15 P2; todas quedan bloqueadas para revisión editorial.",
+    "Barrido residual FR→ES/DE→ES: 20 revisadas (10 por idioma), 0 aptas, 7 P1 y 13 P2; se seleccionaron las automáticas más largas sin override ni cuarentena previa y todas quedan bloqueadas para revisión editorial."
+  ]
+}

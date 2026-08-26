@@ -1,6 +1,6 @@
 {
  "generatedAt": "23/08/2026",
- "universe": 963,
+ "universe": 1017,
  "winnersN": 152,
  "winnersProfile": {
   "n": 152,
@@ -11,23 +11,23 @@
   "medianEur": 162
  },
  "restProfile": {
-  "n": 811,
-  "adsActivePct": 26,
-  "pricePublicPct": 18,
-  "guaranteePct": 77,
-  "multiMarketPct": 42,
+  "n": 865,
+  "adsActivePct": 30,
+  "pricePublicPct": 17,
+  "guaranteePct": 74,
+  "multiMarketPct": 39,
   "medianEur": 149
  },
  "modelStats": [
   {
    "id": "mensualidad",
    "label": "Cuota mensual / retainer",
-   "n": 391,
+   "n": 407,
    "medianEur": 250,
    "pricedN": 136,
-   "adsActivePct": 45,
-   "guaranteePct": 92,
-   "winnersPct": 23,
+   "adsActivePct": 47,
+   "guaranteePct": 89,
+   "winnersPct": 22,
    "avgScore": 39,
    "examples": [
     {
@@ -59,13 +59,13 @@
   {
    "id": "no-clasificable",
    "label": "Sin señal pública de modelo de cobro",
-   "n": 358,
+   "n": 394,
    "medianEur": 56,
    "pricedN": 13,
-   "adsActivePct": 10,
-   "guaranteePct": 60,
+   "adsActivePct": 18,
+   "guaranteePct": 56,
    "winnersPct": 4,
-   "avgScore": 7,
+   "avgScore": 10,
    "examples": [
     {
      "id": "premium-leads-grupo-vocento",
@@ -96,10 +96,10 @@
   {
    "id": "por-lead",
    "label": "Pago por lead",
-   "n": 57,
+   "n": 58,
    "medianEur": 25,
    "pricedN": 21,
-   "adsActivePct": 37,
+   "adsActivePct": 38,
    "guaranteePct": 98,
    "winnersPct": 33,
    "avgScore": 44,
@@ -244,12 +244,12 @@
   {
    "id": "proyecto",
    "label": "Por proyecto / setup único",
-   "n": 11,
+   "n": 12,
    "medianEur": 49,
    "pricedN": 3,
-   "adsActivePct": 18,
-   "guaranteePct": 82,
-   "winnersPct": 18,
+   "adsActivePct": 25,
+   "guaranteePct": 75,
+   "winnersPct": 17,
    "avgScore": 28,
    "examples": [
     {
@@ -444,23 +444,28 @@
  "findings": [
   {
    "title": "Los ganadores dan la cara: garantía escrita",
-   "stat": "99% vs 77%",
-   "detail": "El 99% de las fichas con puntuación 80+ publica una garantía sustancial, frente al 77% del resto. La garantía escrita separa a los mejores del montón más que ningún otro rasgo contractual."
+   "stat": "99% vs 74%",
+   "detail": "El 99% de las fichas con puntuación 80+ publica una garantía sustancial, frente al 74% del resto. La garantía escrita separa a los mejores del montón más que ningún otro rasgo contractual."
   },
   {
    "title": "Precio público, señal de ganador",
-   "stat": "46% vs 18%",
-   "detail": "Entre los 80+, el 46% publica precio verificable; en el resto solo el 18%. Quien está seguro de su economía la enseña, y precualifica con ella."
+   "stat": "46% vs 17%",
+   "detail": "Entre los 80+, el 46% publica precio verificable; en el resto solo el 17%. Quien está seguro de su economía la enseña, y precualifica con ella."
   },
   {
    "title": "Los mejores invierten en su propia captación",
-   "stat": "49% vs 26%",
-   "detail": "El 49% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al 26% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola."
+   "stat": "49% vs 30%",
+   "detail": "El 49% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al 30% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola."
+  },
+  {
+   "title": "Ganar en un mercado empuja al siguiente",
+   "stat": "49% vs 39%",
+   "detail": "El 49% de los 80+ opera en más de un mercado, frente al 39% del resto. La expansión no es causa del éxito, pero casi ningún mediocre se la puede permitir."
   },
   {
    "title": "El riesgo invertido puntúa por encima del retainer",
    "stat": "40 vs 39 de media",
-   "detail": "Las 43 fichas con señal de cobro a éxito promedian 40 puntos, frente a 39 de las 391 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
+   "detail": "Las 43 fichas con señal de cobro a éxito promedian 40 puntos, frente a 39 de las 407 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
   },
   {
    "title": "La cita válida es la unidad más cara del mercado",
@@ -474,8 +479,8 @@
   },
   {
    "title": "Anuncios activos: la prueba de vida del mercado",
-   "stat": "281 de 963",
-   "detail": "281 fichas (29%) mantienen anuncios verificados en Meta o Google. Su puntuación media es 48 frente a 16 de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar."
+   "stat": "335 de 1017",
+   "detail": "335 fichas (33%) mantienen anuncios verificados en Meta o Google. Su puntuación media es 46 frente a 16 de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar."
   }
  ]
 }

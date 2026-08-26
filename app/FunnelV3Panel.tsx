@@ -1,13 +1,78 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import type {
   Company,
   FunnelV3Form,
   FunnelV3Review,
   Media,
 } from "./data-types";
+import styles from "./FunnelV3Panel.module.css";
+
+const DEFAULT_VISIBLE_ROWS = 4;
+
+const semanticTextKeys = [
+  "text",
+  "detail",
+  "explanation",
+  "finding",
+  "summary",
+  "headline",
+  "promise",
+  "trait",
+  "pattern",
+  "technology",
+  "label",
+  "name",
+  "title",
+  "term",
+  "question",
+  "answer",
+  "objection",
+  "value",
+] as const;
+
+const internalFields = new Set([
+  "accessedAt",
+  "action",
+  "autocomplete",
+  "bytes",
+  "commitment",
+  "destinationLabel",
+  "element",
+  "embedded",
+  "evidenceIds",
+  "file",
+  "fieldInventoryStatus",
+  "formIndex",
+  "format",
+  "href",
+  "id",
+  "inputMode",
+  "manualOrder",
+  "maximum",
+  "method",
+  "minimum",
+  "multiple",
+  "pageUrl",
+  "parentPageUrl",
+  "placeholder",
+  "relation",
+  "required",
+  "requiredBasis",
+  "role",
+  "sha256",
+  "sourceUrl",
+  "sourceStage",
+  "sourceType",
+  "status",
+  "submissionPerformed",
+  "supports",
+  "tag",
+  "type",
+  "url",
+]);
 
 const clean = (value: unknown) =>
   typeof value === "string" || typeof value === "number"
@@ -48,78 +113,50 @@ function PublicEvidenceLink({
   );
 }
 
-function objectText(value: unknown): string {
+function scalarText(value: unknown, depth = 0): string {
   if (typeof value === "string" || typeof value === "number") return clean(value);
-  if (!value || typeof value !== "object") return "";
+  if (!value || typeof value !== "object" || depth > 8) return "";
+  if (Array.isArray(value)) {
+    return value
+      .map((child) => scalarText(child, depth + 1))
+      .filter(Boolean)
+      .join(" · ");
+  }
   const row = value as Record<string, unknown>;
-  const preferred = [
-    "text",
-    "detail",
-    "explanation",
-    "finding",
-    "summary",
-    "trait",
-    "pattern",
-    "technology",
-    "label",
-    "name",
-    "term",
-    "answer",
-    "objection",
-    "question",
-    "value",
-  ];
-  for (const key of preferred) {
-    const text = clean(row[key]);
+  for (const key of semanticTextKeys) {
+    const text = scalarText(row[key], depth + 1);
+    if (text) return text;
+  }
+  for (const [key, child] of Object.entries(row)) {
+    if (internalFields.has(key)) continue;
+    const text = scalarText(child, depth + 1);
     if (text) return text;
   }
   return "";
 }
 
-function flattenText(value: unknown, prefix = "", rows: string[] = []): string[] {
+function flattenText(value: unknown, rows: string[] = [], depth = 0): string[] {
   if (value === null || value === undefined || value === "") return rows;
   if (typeof value === "string" || typeof value === "number") {
     const text = clean(value);
-    if (text) rows.push(prefix ? `${prefix}: ${text}` : text);
+    if (text) rows.push(text);
     return rows;
   }
-  if (typeof value === "boolean") return rows;
+  if (typeof value === "boolean" || depth > 8) return rows;
   if (Array.isArray(value)) {
-    value.forEach((child) => flattenText(child, prefix, rows));
+    value.forEach((child) => flattenText(child, rows, depth + 1));
     return rows;
   }
   if (typeof value !== "object") return rows;
   const object = value as Record<string, unknown>;
-  const direct = objectText(object);
-  if (direct) rows.push(prefix ? `${prefix}: ${direct}` : direct);
+  const preferredKey = semanticTextKeys.find((key) => scalarText(object[key]));
+  if (preferredKey) {
+    const preferredText = scalarText(object[preferredKey], depth + 1);
+    if (preferredText) rows.push(preferredText);
+  }
   for (const [key, child] of Object.entries(object)) {
-    if (
-      [
-        "evidenceIds",
-        "supports",
-        "id",
-        "url",
-        "href",
-        "status",
-        "text",
-        "detail",
-        "explanation",
-        "finding",
-        "summary",
-        "trait",
-        "pattern",
-        "technology",
-        "label",
-        "name",
-        "term",
-        "answer",
-        "objection",
-        "question",
-        "value",
-      ].includes(key)
-    )
-      continue;
-    flattenText(child, prefix || key.replaceAll(/([A-Z])/g, " $1"), rows);
+    if (internalFields.has(key) || key === preferredKey) continue;
+    flattenText(child, rows, depth + 1);
   }
   return rows;
 }
@@ -127,21 +164,53 @@ function flattenText(value: unknown, prefix = "", rows: string[] = []): string[]
 function TextList({
   value,
   empty = "No observable públicamente",
-  limit,
+  limit = DEFAULT_VISIBLE_ROWS,
 }: {
   value: unknown;
   empty?: string;
   limit?: number;
 }) {
   const allRows = [...new Set(flattenText(value))].filter(Boolean);
-  const rows = Number.isFinite(limit) ? allRows.slice(0, limit) : allRows;
+  const contentKey = allRows.join("\u001f");
+  const listId = useId();
+  const [disclosure, setDisclosure] = useState({ key: "", expanded: false });
+  const expanded = disclosure.key === contentKey && disclosure.expanded;
+  const initialRows = Number.isFinite(limit)
+    ? Math.max(1, Math.floor(limit))
+    : allRows.length;
+  const rows = expanded ? allRows : allRows.slice(0, initialRows);
+  const hiddenRows = allRows.length - rows.length;
   if (!rows.length) return <p className="v3-empty">{empty}</p>;
   return (
-    <ul className="v3-list">
-      {rows.map((row, index) => (
-        <li key={`${row}-${index}`}>{row}</li>
-      ))}
-    </ul>
+    <div>
+      <ul className="v3-list" id={listId}>
+        {rows.map((row, index) => (
+          <li key={`${row}-${index}`}>{row}</li>
+        ))}
+      </ul>
+      {allRows.length > initialRows ? (
+        <div className={styles.listDisclosure}>
+          <button
+            type="button"
+            className={styles.listToggle}
+            aria-controls={listId}
+            aria-expanded={expanded}
+            onClick={() =>
+              setDisclosure((current) => ({
+                key: contentKey,
+                expanded:
+                  current.key === contentKey ? !current.expanded : true,
+              }))
+            }
+          >
+            {expanded ? "Ver menos" : `Ver más (${hiddenRows})`}
+          </button>
+          <span className={styles.listCount}>
+            {rows.length} de {allRows.length} hallazgos
+          </span>
+        </div>
+      ) : null}
+    </div>
   );
 }
 
@@ -193,7 +262,12 @@ function FormCard({ form, index }: { form: FunnelV3Form; index: number }) {
             {field.options?.length ? (
               <details>
                 <summary>{field.options.length} opciones</summary>
-                <p>{field.options.map(objectText).filter(Boolean).join(" · ")}</p>
+                <p>
+                  {field.options
+                    .map((option) => scalarText(option))
+                    .filter(Boolean)
+                    .join(" · ")}
+                </p>
               </details>
             ) : null}
           </div>
@@ -348,7 +422,7 @@ export default function FunnelV3Panel({
           <h5>Voz comercial</h5>
           <div className="record-badges light">
             {((message.tone || []) as unknown[]).map((row, index) => (
-              <span key={`${objectText(row)}-${index}`}>{objectText(row)}</span>
+              <span key={`${scalarText(row)}-${index}`}>{scalarText(row)}</span>
             ))}
           </div>
           <p>{clean(voice.addressStyle)}</p>
@@ -434,7 +508,7 @@ export default function FunnelV3Panel({
               <div>
                 <Status value={stage.status} />
                 <h5>{stage.stage}</h5>
-                <p>{objectText(stage.detail) || "Detalle no observable públicamente"}</p>
+                <p>{scalarText(stage.detail) || "Detalle no observable públicamente"}</p>
                 {stage.manualFindings?.length ? (
                   <details>
                     <summary>Hallazgos manuales</summary>

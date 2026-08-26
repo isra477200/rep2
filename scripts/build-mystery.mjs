@@ -8,8 +8,9 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = resolve(new URL("..", import.meta.url).pathname);
+const root = fileURLToPath(new URL("..", import.meta.url));
 const companies = JSON.parse(readFileSync(resolve(root, "public/data/companies-index.json"), "utf8"));
 
 const spain = companies.filter((c) => c.primaryCountry === "España");

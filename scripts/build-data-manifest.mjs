@@ -12,6 +12,8 @@ const paths = {
   logos: "public/data/logos.json",
   corpus: "public/data/ad-corpus.json",
   coverage: "public/data/ad-coverage.json",
+  ocrAudit: "public/data/ad-ocr-audit.json",
+  translations: "public/data/ad-translations-es.json",
 };
 const raw = Object.fromEntries(
   Object.entries(paths).map(([key, path]) => [
@@ -26,6 +28,8 @@ const companies = data.companies;
 const summary = data.summary;
 const coverage = data.coverage;
 const corpus = data.corpus;
+const ocrAudit = data.ocrAudit;
+const translations = data.translations;
 const media = companies.reduce(
   (total, company) => total + (company.media?.length || 0),
   0,
@@ -68,6 +72,24 @@ const output = {
     searchableTranscriptions: coverage.summary.transcribedCanonical,
     verifiedTranscriptions: coverage.summary.verifiedTranscribed,
     patternReady: corpus.patternReady,
+    searchablePieces: corpus.total,
+    representedAdvertisers: corpus.companies,
+    exactAssetsAudited: ocrAudit.items.length,
+    exactAssetsWithUsableText: ocrAudit.items.filter((item) => item.textoUtil).length,
+    exactAssetsWithoutLegibleText: ocrAudit.items.filter(
+      (item) => item.estadoOcr === "sin_texto",
+    ).length,
+    translationsAvailable: translations.total,
+    translationsRejectedQa: translations.rejectedCount || 0,
+    translationsPending: corpus.items.filter(
+      (item) => item.estadoTraduccion === "pendiente",
+    ).length,
+    translationsRequiresReview: corpus.items.filter(
+      (item) => item.estadoTraduccion === "requiere_revision",
+    ).length,
+    translationsUnavailable: corpus.items.filter(
+      (item) => item.estadoTraduccion === "no_disponible",
+    ).length,
     textAvailabilityGap: coverage.summary.textAvailabilityGap,
     verifiedTranscriptionGap: coverage.summary.verifiedTranscriptionGap,
   },
@@ -75,6 +97,8 @@ const output = {
     `El universo actual tiene ${companies.length} fichas; el snapshot profundo conserva ${summary.companies}.`,
     `Los ${data.countries.length} elementos territoriales son Estados del atlas, no mercados primarios con empresa.`,
     "Una transcripción OCR es buscable, pero no verificada ni apta para patrones hasta revisión humana.",
+    "Una creatividad sin texto legible se conserva como evidencia visual, pero no cuenta como transcripción.",
+    "Las traducciones automáticas preservan el original y no se promueven a evidencia literal revisada.",
     "Frecuencia publicitaria y score editorial no demuestran rendimiento de campaña.",
   ],
 };

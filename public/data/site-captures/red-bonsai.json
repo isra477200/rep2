@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "red-bonsai",
+  "name": "Agencia Red BonsAI",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://redbonsais.com/",
+  "status": "failed",
+  "coverage": {
+    "planned": 1,
+    "captured": 0,
+    "blocked": 0,
+    "failed": 1
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": null,
+    "promise": null,
+    "audience": "Público inferido de la especialización declarada: Agencia vertical de Meta Ads dental.",
+    "offer": "Campañas para atraer pacientes odontológicos y citas, no clics.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No se observó un precio público en las piezas recuperadas.",
+    "guarantee": "No se observó una garantía público en las piezas recuperadas.",
+    "funnel": []
+  },
+  "pages": [
+    {
+      "id": "red-bonsai-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://redbonsais.com/",
+      "finalUrl": null,
+      "title": null,
+      "status": "failed",
+      "capturedAt": "2026-08-26T15:54:35.383Z",
+      "fullPage": true,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": "Browser Use cannot open https://redbonsais.com in tab 841. Browser reported: net::ERR_NAME_NOT_RESOLVED"
+    }
+  ],
+  "updatedAt": "2026-08-26T15:54:37.461Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

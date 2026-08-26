@@ -35,6 +35,8 @@ test("el linaje de alias sobrevive a la canonización", () => {
     const rows = corpus.items.filter(
       (item) =>
         item.observedId === entry.alias &&
+        item.copyAvailable !== false &&
+        String(item.titular || item.texto || item.cta || "").trim() &&
         !/(?:^|\b)(?:0 anuncios|sin anuncios activos|sin resultados atribuibles)(?:\b|$)/i.test(
           `${item.titular || ""} ${item.texto || ""}`,
         ),
@@ -51,13 +53,18 @@ test("la plataforma se deriva del tipo de ID, nunca del copy", () => {
     "1696507908094911",
     "833192399862271",
   ]);
-  for (const item of corpus.items.filter((row) => row.externalId)) {
+  // Las filas API se atribuyen por el mapa editorial pageId -> companyId y
+  // tienen su contrato específico en ad-corpus.test.mjs. La cobertura
+  // histórica solo enumera IDs archivados dentro del cuerpo de cada ficha.
+  for (const item of corpus.items.filter(
+    (row) => row.externalId && row.origen !== "api_scrapecreators",
+  )) {
     if (/^CR/i.test(item.externalId))
-      assert.match(item.plataforma, /google/i, item.externalId);
+      assert.equal(item.platformFamily, "google", item.externalId);
     if (/^\d+$/.test(item.externalId)) {
-      assert.doesNotMatch(item.plataforma, /google/i, item.externalId);
+      assert.equal(item.platformFamily, "meta", item.externalId);
       if (correctedMetaIds.has(item.externalId))
-        assert.match(item.plataforma, /meta/i, item.externalId);
+        assert.equal(item.platformFamily, "meta", item.externalId);
     }
   }
 });
@@ -114,7 +121,12 @@ test("cada pieza estructurada enlaza un ID exacto de su ficha", () => {
   const coverageById = new Map(
     coverage.items.map((item) => [item.companyId, item.exactCreativeIds]),
   );
-  for (const item of corpus.items.filter((row) => row.externalId)) {
+  // Las filas API se atribuyen por el mapa editorial pageId -> companyId y
+  // tienen su contrato específico en ad-corpus.test.mjs. La cobertura
+  // histórica solo enumera IDs archivados dentro del cuerpo de cada ficha.
+  for (const item of corpus.items.filter(
+    (row) => row.externalId && row.origen !== "api_scrapecreators",
+  )) {
     const exact = coverageById.get(item.id);
     assert(exact, item.id);
     if (/^CR/i.test(item.externalId))

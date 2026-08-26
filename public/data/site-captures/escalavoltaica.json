@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "escalavoltaica",
+  "name": "EscalaVoltaica",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://escalavoltaica.es/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema",
+    "promise": "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema",
+    "audience": "Público inferido de la especialización declarada: Generación de oportunidades para instaladoras fotovoltaicas.",
+    "offer": "El anunciante ofrece entregar oportunidades de personas interesadas en instalaciones residenciales de placas solares, con foco observado en Andalucía.",
+    "mechanism": [
+      "Esto no es marketing. Es un sistema completo diseñado para generar ventas reales",
+      "Vamos a implementar el sistema que necesita tu empresa de placas solares"
+    ],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: Resultados reales. Su presencia no valida las cifras que contengan.",
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "escalavoltaica-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://escalavoltaica.es/",
+      "finalUrl": "https://escalavoltaica.es/",
+      "title": "Marketing para empresas de placas solares | EscalaVoltaica",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:50:54.761Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/escalavoltaica/site-defa50a2e5-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 5771,
+        "bytes": 295784,
+        "sha256": "2300283f62763deddd5d1a1eb9a4b2c47cbb53d5807b9f600cd3a2a5cfc1120b"
+      },
+      "thumbnail": {
+        "file": "/evidence/escalavoltaica/site-defa50a2e5-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 2374,
+        "bytes": 71404,
+        "sha256": "7ab8ae024025abdcaa7fb2c8d0111b48d0e5cd763faaabcc3b6fae724e2c5e18"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema",
+        "headings": [
+          "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema",
+          "Esto no es marketing. Es un sistema completo diseñado para generar ventas reales",
+          "Resultados reales",
+          "Vamos a implementar el sistema que necesita tu empresa de placas solares",
+          "Cuéntanos tu caso"
+        ],
+        "ctas": [
+          "QUIERO ESCALAR MI EMPRESA DE PLACAS SOLARES",
+          "Política de privacidad",
+          "Aviso legal",
+          "Política de cookies",
+          "Condiciones del servicio"
+        ],
+        "excerpt": "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema Esto no es marketing. Es un sistema completo diseñado para generar ventas reales Resultados reales Empresas reales, sistemas implementados y resultados que demuestran lo que ocurre cuando dejas de depender de leads comprados. Vamos a implementar el sistema que necesita tu empresa de placas solares Cuéntanos tu caso"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 5771
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:10:47.783Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "escalavoltaica-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema",
+            "capturedAt": "2026-08-26T13:50:54.761Z"
+          }
+        ]
+      },
+      "mechanism": {
+        "source": "captured_site_text",
+        "method": "commercial_headings_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "escalavoltaica-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.headings[]",
+            "value": "Esto no es marketing. Es un sistema completo diseñado para generar ventas reales",
+            "capturedAt": "2026-08-26T13:50:54.761Z"
+          },
+          {
+            "pageId": "escalavoltaica-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.headings[]",
+            "value": "Vamos a implementar el sistema que necesita tu empresa de placas solares",
+            "capturedAt": "2026-08-26T13:50:54.761Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "escalavoltaica-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T13:50:54.761Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

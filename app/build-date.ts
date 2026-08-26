@@ -1,4 +1,4 @@
 // Generado automáticamente por scripts/stamp-build-date.mjs en cada build. No editar a mano.
-export const BUILD_DATE = "24 AGO 2026";
-export const BUILD_DATE_LONG = "24 agosto 2026";
-export const BUILD_DATE_ISO = "2026-08-24";
+export const BUILD_DATE = "26 AGO 2026";
+export const BUILD_DATE_LONG = "26 agosto 2026";
+export const BUILD_DATE_ISO = "2026-08-26";

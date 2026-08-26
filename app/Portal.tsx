@@ -11,11 +11,8 @@ import {
   useRef,
   useState,
 } from "react";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
-import remarkGfm from "remark-gfm";
 import CompanyLogo from "./CompanyLogo";
+import { deriveGalleryMetrics } from "./gallery-metrics";
 import {
   classifyMediaResolution,
   dimensionsFromMedia,
@@ -63,8 +60,11 @@ import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 const WorldMap = lazy(() => import("./WorldMap"));
 const OperationsHub = lazy(() => import("./OperationsHub"));
 const AdsLaboratory = lazy(() => import("./AdsLaboratory"));
+const DecisionCenter = lazy(() => import("./DecisionCenter"));
 const PositioningSimulator = lazy(() => import("./PositioningSimulator"));
 const RecordDetail = lazy(() => import("./RecordDetail"));
+const EditorialText = lazy(() => import("./EditorialText"));
+const LandingStudio = lazy(() => import("./LandingStudio"));
 
 type View =
   | "home"
@@ -73,6 +73,7 @@ type View =
   | "resources"
   | "tools"
   | "adlab"
+  | "decisions"
   | "arsenal"
   | "landings"
   | "verticals"
@@ -93,6 +94,51 @@ type View =
   | "blueprint"
   | "audit";
 
+type OptionalResourceKey =
+  | "editorial"
+  | "geo"
+  | "deepIndex"
+  | "v3Index"
+  | "insights"
+  | "analytics"
+  | "expansion"
+  | "mystery"
+  | "takeaways"
+  | "patterns"
+  | "execution"
+  | "dossiers"
+  | "recursos"
+  | "verticales"
+  | "arsenal"
+  | "adsKit"
+  | "vigilancia"
+  | "homesTimeline"
+  | "cruces"
+  | "anunciosReales"
+  | "angulos";
+
+type ResourceLoadState = "loading" | "ready" | "error";
+
+const requiredResourcesByView: Partial<
+  Record<View, OptionalResourceKey[]>
+> = {
+  exec: ["execution"],
+  resources: ["recursos"],
+  tools: ["verticales"],
+  arsenal: ["arsenal"],
+  landings: ["verticales", "deepIndex"],
+  verticals: ["verticales"],
+  watch: ["vigilancia"],
+  insights: ["insights"],
+  playbooks: ["insights"],
+  analysis: ["analytics"],
+  cruces: ["cruces"],
+  informe: ["vigilancia", "cruces", "patterns", "angulos", "execution"],
+  expansion: ["expansion"],
+  mystery: ["mystery"],
+  blueprint: ["editorial"],
+};
+
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
   { id: "operations", label: "Operación", icon: "◆" },
@@ -100,6 +146,7 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "resources", label: "Recursos", icon: "⤓" },
   { id: "tools", label: "Herramientas", icon: "◳" },
   { id: "adlab", label: "Lab anuncios", icon: "⌗" },
+  { id: "decisions", label: "Decisiones", icon: "✣" },
   { id: "arsenal", label: "Arsenal", icon: "⚑" },
   { id: "landings", label: "Landings", icon: "▭" },
   { id: "companies", label: "Empresas", icon: "◎" },
@@ -123,7 +170,7 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["operations", "exec", "resources", "tools", "adlab", "arsenal", "landings"] },
+  { label: "Acción", ids: ["operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "map", "countries", "ads", "compare"] },
   { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
@@ -166,81 +213,6 @@ const editorialTabs: Array<{ id: keyof Editorial; label: string }> = [
   { id: "execution", label: "Sistema operativo" },
   { id: "report", label: "Informe estratégico" },
 ];
-
-const editorialMarkdownSchema = {
-  ...defaultSchema,
-  tagNames: [...(defaultSchema.tagNames || []), "details", "summary"],
-  attributes: { ...defaultSchema.attributes, details: ["open"] },
-};
-
-const isPublicHref = (input?: string) => {
-  if (!input) return false;
-  try {
-    const url = new URL(input);
-    const hostname = url.hostname.toLowerCase();
-    const privateIpv4 =
-      /^(?:10\.|127\.|169\.254\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)/.test(
-        hostname,
-      );
-    return (
-      ["http:", "https:"].includes(url.protocol) &&
-      !/(^|\.)notion\.(?:com|so|site)$/i.test(hostname) &&
-      !/(^|\.)(?:localhost|local|internal)$/i.test(hostname) &&
-      !privateIpv4
-    );
-  } catch {
-    return false;
-  }
-};
-
-function EditorialText({
-  text,
-  companyById,
-  onOpen,
-}: {
-  text: string;
-  companyById: Map<string, Company>;
-  onOpen: (company: Company) => void;
-}) {
-  return (
-    <div className="rich-text">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw, [rehypeSanitize, editorialMarkdownSchema]]}
-        components={{
-          a: ({ href, children }) => {
-            const internal = href?.match(/^\?empresa=([^&#]+)$/);
-            if (internal) {
-              const company = companyById.get(decodeURIComponent(internal[1]));
-              return company ? (
-                <a
-                  href={href}
-                  onClick={(event) => {
-                    event.preventDefault();
-                    onOpen(company);
-                  }}
-                >
-                  {children}
-                </a>
-              ) : (
-                <span>{children}</span>
-              );
-            }
-            return isPublicHref(href) ? (
-              <a href={href} target="_blank" rel="noopener noreferrer">
-                {children} ↗
-              </a>
-            ) : (
-              <span>{children}</span>
-            );
-          },
-        }}
-      >
-        {text}
-      </ReactMarkdown>
-    </div>
-  );
-}
 
 function MediaTile({
   item,
@@ -460,7 +432,10 @@ export default function Portal() {
     [homesTimeline, setHomesTimeline] = useState<HomesTimelineData | null>(null),
     [cruces, setCruces] = useState<CrucesData | null>(null),
     [anunciosReales, setAnunciosReales] = useState<AnunciosRealesData | null>(null),
-    [angulos, setAngulos] = useState<AngulosData | null>(null);
+    [angulos, setAngulos] = useState<AngulosData | null>(null),
+    [resourceLoadState, setResourceLoadState] = useState<
+      Partial<Record<OptionalResourceKey, ResourceLoadState>>
+    >({});
   const [navCollapsed, setNavCollapsed] = useState(false);
   const [showBackTop, setShowBackTop] = useState(false);
   useEffect(() => {
@@ -475,17 +450,9 @@ export default function Portal() {
     [titularQuery, setTitularQuery] = useState(""),
     [titularFormula, setTitularFormula] = useState("Todas"),
     [garantiaKind, setGarantiaKind] = useState("Todas"),
-    [adRealQuery, setAdRealQuery] = useState(""),
-    [adRealVertical, setAdRealVertical] = useState("Todos"),
-    [adRealPlat, setAdRealPlat] = useState("Todas"),
     [semQuery, setSemQuery] = useState(""),
     [semSort, setSemSort] = useState<"score" | "ads" | "nombre">("score"),
     [companiesNewOnly, setCompaniesNewOnly] = useState(false),
-    [landTemplate, setLandTemplate] = useState<"garantia" | "anticuota" | "velocidad">("garantia"),
-    [landVertical, setLandVertical] = useState("clinicas-salud"),
-    [landZona, setLandZona] = useState(""),
-    [landServicio, setLandServicio] = useState(""),
-    [landTelefono, setLandTelefono] = useState("34613431439"),
     [mrrClientes, setMrrClientes] = useState("12"),
     [mrrCuota, setMrrCuota] = useState("600"),
     [mrrAltas, setMrrAltas] = useState("2"),
@@ -494,40 +461,19 @@ export default function Portal() {
   useEffect(() => {
     let storedNav = false;
     let storedActions: Record<string, { estado: string; nota: string }> | null = null;
-    let storedLanding: {
-      v?: string;
-      z?: string;
-      s?: string;
-      t?: string;
-      p?: "garantia" | "anticuota" | "velocidad";
-    } | null = null;
     try {
       storedNav = window.localStorage.getItem("rv-nav-collapsed") === "1";
       const rawActions = window.localStorage.getItem("rv-backlog-estado");
       if (rawActions) storedActions = JSON.parse(rawActions);
-      const rawLanding = window.localStorage.getItem("rv-landing");
-      if (rawLanding) storedLanding = JSON.parse(rawLanding);
     } catch {
       return undefined;
     }
     const hydrationFrame = window.requestAnimationFrame(() => {
       if (storedNav) setNavCollapsed(true);
       if (storedActions) setActionStates(storedActions);
-      if (storedLanding?.v) setLandVertical(storedLanding.v);
-      if (storedLanding?.z) setLandZona(storedLanding.z);
-      if (storedLanding?.s) setLandServicio(storedLanding.s);
-      if (storedLanding?.t) setLandTelefono(storedLanding.t);
-      if (storedLanding?.p) setLandTemplate(storedLanding.p);
     });
     return () => window.cancelAnimationFrame(hydrationFrame);
   }, []);
-  useEffect(() => {
-    try {
-      window.localStorage.setItem("rv-landing", JSON.stringify({ v: landVertical, z: landZona, s: landServicio, t: landTelefono, p: landTemplate }));
-    } catch {
-      /* El almacenamiento local es una mejora opcional. */
-    }
-  }, [landVertical, landZona, landServicio, landTelefono, landTemplate]);
   const toggleNav = () => {
     setNavCollapsed((current) => {
       try { window.localStorage.setItem("rv-nav-collapsed", current ? "0" : "1"); } catch {
@@ -555,6 +501,9 @@ export default function Portal() {
   const [query, setQuery] = useState(""),
     [scope, setScope] = useState("Todos"),
     [country, setCountry] = useState("Todos");
+  const [globalSearchOpen, setGlobalSearchOpen] = useState(false);
+  const [globalSearchActiveIndex, setGlobalSearchActiveIndex] = useState(-1);
+  const globalSearchInputRef = useRef<HTMLInputElement | null>(null);
   const [globalAds, setGlobalAds] = useState<AnuncioReal[] | null>(null);
   const [adLabInitialQuery, setAdLabInitialQuery] = useState("");
   const [priceOnly, setPriceOnly] = useState(false),
@@ -587,125 +536,229 @@ export default function Portal() {
   const [measuredImageDimensions, setMeasuredImageDimensions] = useState<
     Record<string, MediaDimensions>
   >({});
+  const currentViewRef = useRef(view);
 
   useEffect(() => {
+    currentViewRef.current = view;
+  }, [view]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let optionalStartTimer: number | null = null;
+    const requiredJson = async <T,>(path: string) => {
+      const response = await fetch(path, { signal: controller.signal });
+      if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+      return response.json() as Promise<T>;
+    };
+    const optionalJson = requiredJson;
+    const params = new URLSearchParams(window.location.search);
+    const requestedView = params.get("vista");
+    let initialView: View = "home";
+    if (nav.some((item) => item.id === requestedView)) {
+      initialView = requestedView as View;
+    } else {
+      try {
+        const lastView = window.localStorage.getItem("rv-last-view");
+        if (lastView && nav.some((item) => item.id === lastView))
+          initialView = lastView as View;
+      } catch {
+        /* Sin una vista guardada válida se conserva la portada. */
+      }
+    }
+
+    type OptionalTask = {
+      key: OptionalResourceKey;
+      views: View[];
+      load: () => Promise<void>;
+    };
+    const optionalTasks: OptionalTask[] = [
+      {
+        key: "editorial",
+        views: ["blueprint"],
+        load: async () => {
+          const data = await optionalJson<Editorial>("/data/editorial.json");
+          if (!controller.signal.aborted) setEditorial(data);
+        },
+      },
+      {
+        key: "geo",
+        views: ["map"],
+        load: async () => {
+          const data = await optionalJson<CountryGeo[]>("/data/country-geo.json");
+          if (!controller.signal.aborted) setGeo(data);
+        },
+      },
+      {
+        key: "deepIndex",
+        views: ["landings", "funnels", "audit"],
+        load: async () => {
+          const data = await optionalJson<DeepIndex>("/data/deep/index.json");
+          if (!controller.signal.aborted) setDeepIndex(data);
+        },
+      },
+      {
+        key: "v3Index",
+        views: ["home", "funnels", "audit"],
+        load: async () => {
+          const data = await optionalJson<FunnelV3Index>("/data/funnel-v3/index.json");
+          if (!controller.signal.aborted) setV3Index(data);
+        },
+      },
+      {
+        key: "insights",
+        views: ["insights", "playbooks"],
+        load: async () => {
+          const data = await optionalJson<Insights>("/data/insights.json");
+          if (!controller.signal.aborted) setInsights(data);
+        },
+      },
+      {
+        key: "analytics",
+        views: ["analysis"],
+        load: async () => {
+          const data = await optionalJson<Analytics>("/data/analytics.json");
+          if (!controller.signal.aborted) setAnalytics(data);
+        },
+      },
+      {
+        key: "expansion",
+        views: ["expansion"],
+        load: async () => {
+          const data = await optionalJson<ExpansionData>("/data/expansion.json");
+          if (!controller.signal.aborted) setExpansion(data);
+        },
+      },
+      {
+        key: "mystery",
+        views: ["mystery"],
+        load: async () => {
+          const data = await optionalJson<MysteryData>("/data/mystery.json");
+          if (!controller.signal.aborted) setMystery(data);
+        },
+      },
+      {
+        key: "takeaways",
+        views: ["home", "companies", "map"],
+        load: async () => {
+          const data = await optionalJson<TakeawaysData>("/data/takeaways.json");
+          if (!controller.signal.aborted) setTakeaways(data);
+        },
+      },
+      {
+        key: "patterns",
+        views: ["operations", "tools", "informe"],
+        load: async () => {
+          const data = await optionalJson<PatternsData>("/data/patterns.json");
+          if (!controller.signal.aborted) setPatterns(data);
+        },
+      },
+      {
+        key: "execution",
+        views: ["home", "operations", "exec", "informe"],
+        load: async () => {
+          const data = await optionalJson<ExecutionBacklog>("/data/execution.json");
+          if (!controller.signal.aborted) setExecution(data);
+        },
+      },
+      {
+        key: "dossiers",
+        views: ["operations", "companies"],
+        load: async () => {
+          const data = await optionalJson<DossiersData>("/data/dossiers.json");
+          if (!controller.signal.aborted) setDossiers(data);
+        },
+      },
+      {
+        key: "recursos",
+        views: ["operations", "resources"],
+        load: async () => {
+          const data = await optionalJson<RecursosData>("/data/recursos.json");
+          if (!controller.signal.aborted) setRecursos(data);
+        },
+      },
+      {
+        key: "verticales",
+        views: ["tools", "landings", "verticals"],
+        load: async () => {
+          const data = await optionalJson<VerticalesData>("/data/verticales.json");
+          if (!controller.signal.aborted) setVerticales(data);
+        },
+      },
+      {
+        key: "arsenal",
+        views: ["arsenal"],
+        load: async () => {
+          const data = await optionalJson<ArsenalData>("/data/arsenal.json");
+          if (!controller.signal.aborted) setArsenal(data);
+        },
+      },
+      {
+        key: "adsKit",
+        views: ["arsenal"],
+        load: async () => {
+          const data = await optionalJson<AdsKitData>("/data/ads-kit.json");
+          if (!controller.signal.aborted) setAdsKit(data);
+        },
+      },
+      {
+        key: "vigilancia",
+        views: ["home", "watch", "informe"],
+        load: async () => {
+          const data = await optionalJson<VigilanciaData>("/data/vigilancia.json");
+          if (!controller.signal.aborted) setVigilancia(data);
+        },
+      },
+      {
+        key: "homesTimeline",
+        views: ["watch"],
+        load: async () => {
+          const data = await optionalJson<HomesTimelineData>("/data/homes-timeline.json");
+          if (!controller.signal.aborted) setHomesTimeline(data);
+        },
+      },
+      {
+        key: "cruces",
+        views: ["home", "watch", "cruces", "informe"],
+        load: async () => {
+          const data = await optionalJson<CrucesData>("/data/cruces.json");
+          if (!controller.signal.aborted) setCruces(data);
+        },
+      },
+      {
+        key: "anunciosReales",
+        views: ["home", "arsenal"],
+        load: async () => {
+          const data = await optionalJson<AnunciosRealesData>("/data/anuncios-reales.json");
+          if (!controller.signal.aborted) setAnunciosReales(data);
+        },
+      },
+      {
+        key: "angulos",
+        views: ["arsenal", "informe"],
+        load: async () => {
+          const data = await optionalJson<AngulosData>("/data/angulos-anuncios.json");
+          if (!controller.signal.aborted) setAngulos(data);
+        },
+      },
+    ];
+
     Promise.all([
-      fetch("/data/companies-index.json").then(
-        (r) => r.json() as Promise<Company[]>,
-      ),
-      fetch("/data/countries.json").then(
-        (r) => r.json() as Promise<Country[]>,
-      ),
-      fetch("/data/summary.json").then(
-        (r) => r.json() as Promise<Summary>,
-      ),
-      fetch("/data/editorial.json").then(
-        (r) => r.json() as Promise<Editorial>,
-      ),
-      fetch("/data/country-geo.json").then(
-        (r) => r.json() as Promise<CountryGeo[]>,
-      ),
-      fetch("/data/logos.json").then((r) =>
-        r.ok ? (r.json() as Promise<LogoManifest>) : {},
-      ),
-      fetch("/data/deep/index.json").then((r) =>
-        r.ok ? (r.json() as Promise<DeepIndex>) : null,
-      ),
-      fetch("/data/funnel-v3/index.json")
-        .then((r) =>
-          r.ok ? (r.json() as Promise<FunnelV3Index>) : null,
-        )
-        .catch(() => null),
-      fetch("/data/insights.json")
-        .then((r) => (r.ok ? (r.json() as Promise<Insights>) : null))
-        .catch(() => null),
-      fetch("/data/analytics.json")
-        .then((r) => (r.ok ? (r.json() as Promise<Analytics>) : null))
-        .catch(() => null),
-      fetch("/data/expansion.json")
-        .then((r) => (r.ok ? (r.json() as Promise<ExpansionData>) : null))
-        .catch(() => null),
-      fetch("/data/mystery.json")
-        .then((r) => (r.ok ? (r.json() as Promise<MysteryData>) : null))
-        .catch(() => null),
-      fetch("/data/takeaways.json")
-        .then((r) => (r.ok ? (r.json() as Promise<TakeawaysData>) : null))
-        .catch(() => null),
-      fetch("/data/patterns.json")
-        .then((r) => (r.ok ? (r.json() as Promise<PatternsData>) : null))
-        .catch(() => null),
-      fetch("/data/execution.json")
-        .then((r) => (r.ok ? (r.json() as Promise<ExecutionBacklog>) : null))
-        .catch(() => null),
-      fetch("/data/dossiers.json")
-        .then((r) => (r.ok ? (r.json() as Promise<DossiersData>) : null))
-        .catch(() => null),
-      fetch("/data/recursos.json")
-        .then((r) => (r.ok ? (r.json() as Promise<RecursosData>) : null))
-        .catch(() => null),
-      fetch("/data/verticales.json")
-        .then((r) => (r.ok ? (r.json() as Promise<VerticalesData>) : null))
-        .catch(() => null),
-      fetch("/data/arsenal.json")
-        .then((r) => (r.ok ? (r.json() as Promise<ArsenalData>) : null))
-        .catch(() => null),
-      fetch("/data/ads-kit.json")
-        .then((r) => (r.ok ? (r.json() as Promise<AdsKitData>) : null))
-        .catch(() => null),
-      fetch("/data/vigilancia.json")
-        .then((r) => (r.ok ? (r.json() as Promise<VigilanciaData>) : null))
-        .catch(() => null),
-      fetch("/data/homes-timeline.json")
-        .then((r) => (r.ok ? (r.json() as Promise<HomesTimelineData>) : null))
-        .catch(() => null),
-      fetch("/data/cruces.json")
-        .then((r) => (r.ok ? (r.json() as Promise<CrucesData>) : null))
-        .catch(() => null),
-      fetch("/data/anuncios-reales.json")
-        .then((r) => (r.ok ? (r.json() as Promise<AnunciosRealesData>) : null))
-        .catch(() => null),
-      fetch("/data/angulos-anuncios.json")
-        .then((r) => (r.ok ? (r.json() as Promise<AngulosData>) : null))
-        .catch(() => null),
+      requiredJson<Company[]>("/data/companies-index.json"),
+      requiredJson<Country[]>("/data/countries.json"),
+      requiredJson<Summary>("/data/summary.json"),
+      fetch("/data/logos.json", { signal: controller.signal })
+        .then((r) => (r.ok ? (r.json() as Promise<LogoManifest>) : {}))
+        .catch(() => ({} as LogoManifest)),
     ])
-      .then(([c, co, s, e, g, l, d, v3, ins, ana, exp, mys, tks, pats, execd, doss, recs, verts, ars, adsk, vig, homes, crc, anr, ang]) => {
+      .then(([c, co, s, l]) => {
+        if (controller.signal.aborted) return;
         setCompanies(c);
         setCountries(co);
         setSummary(s);
-        setEditorial(e);
-        setGeo(g);
         setLogos(l);
-        setDeepIndex(d);
-        setV3Index(v3);
-        setInsights(ins);
-        setAnalytics(ana);
-        setExpansion(exp);
-        setMystery(mys);
-        setTakeaways(tks);
-        setPatterns(pats);
-        setExecution(execd);
-        setDossiers(doss);
-        setRecursos(recs);
-        setVerticales(verts);
-        setArsenal(ars);
-        setAdsKit(adsk);
-        setVigilancia(vig);
-        setHomesTimeline(homes);
-        setCruces(crc);
-        setAnunciosReales(anr);
-        setAngulos(ang);
         setCompare([]);
-        const params = new URLSearchParams(window.location.search);
-        const requestedView = params.get("vista");
-        if (nav.some((item) => item.id === requestedView)) setView(requestedView as View);
-        else {
-          try {
-            const lastView = window.localStorage.getItem("rv-last-view");
-            if (lastView && nav.some((item) => item.id === lastView)) setView(lastView as View);
-          } catch {
-            /* Sin una vista guardada válida se conserva la vista inicial. */
-          }
-        }
+        currentViewRef.current = initialView;
+        setView(initialView);
         const requested = params.get("empresa");
         const requestedCompany = requested
           ? c.find((x: Company) => x.id === requested)
@@ -745,11 +798,70 @@ export default function Portal() {
               .catch(() => undefined);
         }
         setLoading(false);
+        const pendingTasks = [...optionalTasks];
+        const takeNextTask = () => {
+          if (!pendingTasks.length) return null;
+          const activeView = currentViewRef.current;
+          const score = (task: OptionalTask) =>
+            (task.views.includes(activeView) ? 100 : 0) +
+            (task.views.includes("home") ? 10 : 0);
+          let bestIndex = 0;
+          for (let index = 1; index < pendingTasks.length; index += 1) {
+            if (score(pendingTasks[index]) > score(pendingTasks[bestIndex]))
+              bestIndex = index;
+          }
+          return pendingTasks.splice(bestIndex, 1)[0];
+        };
+        const runWorker = async () => {
+          while (!controller.signal.aborted) {
+            const task = takeNextTask();
+            if (!task) return;
+            setResourceLoadState((current) => ({
+              ...current,
+              [task.key]: "loading",
+            }));
+            try {
+              await task.load();
+              if (controller.signal.aborted) return;
+              setResourceLoadState((current) => ({
+                ...current,
+                [task.key]: "ready",
+              }));
+            } catch (resourceError: unknown) {
+              if (
+                controller.signal.aborted ||
+                (resourceError instanceof DOMException &&
+                  resourceError.name === "AbortError")
+              ) return;
+              setResourceLoadState((current) => ({
+                ...current,
+                [task.key]: "error",
+              }));
+            }
+          }
+        };
+        const startOptionalLoads = () => {
+          void Promise.all([runWorker(), runWorker(), runWorker()]);
+        };
+        if (optionalTasks.some((task) => task.views.includes(initialView)))
+          startOptionalLoads();
+        else
+          optionalStartTimer = window.setTimeout(startOptionalLoads, 650);
       })
-      .catch(() => {
+      .catch((loadError: unknown) => {
+        if (
+          loadError instanceof DOMException &&
+          loadError.name === "AbortError"
+        )
+          return;
         setError("No se pudo cargar la instantánea de inteligencia competitiva.");
         setLoading(false);
       });
+    return () => {
+      controller.abort();
+      if (optionalStartTimer !== null)
+        window.clearTimeout(optionalStartTimer);
+    };
   }, []);
 
   useEffect(() => {
@@ -835,6 +947,13 @@ export default function Portal() {
       )
       .slice(0, 5);
   }, [globalAds, query]);
+  const globalSearchOptionCount =
+    globalCompanyResults.length + globalAdResults.length;
+  const globalSearchIsOpen =
+    globalSearchOpen && query.trim().length >= 2;
+  const globalSearchActiveId = globalSearchActiveIndex >= 0
+    ? `global-search-option-${globalSearchActiveIndex}`
+    : undefined;
   const mrrProj = useMemo(() => {
     const clientes = Number(mrrClientes.replace(",", "."));
     const cuota = Number(mrrCuota.replace(",", "."));
@@ -886,49 +1005,82 @@ export default function Portal() {
     lines.push(`Fuente: portal Inteligencia Mundial de Captación · RedVitalia. Cada dato es trazable a su ficha.`);
     return lines.join("\n");
   }, [companies, vigilancia, cruces, patterns, angulos, execution]);
+  /* Generador heredado conservado temporalmente como referencia histórica.
+     La vista activa usa LandingStudio y el corpus site-captures. */
+  /*
+  const landingStudy = useMemo(() => {
+    const vertical = verticales?.verticales.find((item) => item.id === landVertical);
+    if (!vertical) return null;
+    const deepById = new Map((deepIndex?.records || []).map((item) => [item.id, item]));
+    const references = vertical.referentes
+      .map((reference) => ({ reference, funnel: deepById.get(reference.id) }))
+      .filter((item) => item.funnel?.researchReadiness === "usable");
+    const fieldCounts = references
+      .map((item) => item.funnel?.minFormFields)
+      .filter((value): value is number => Number.isFinite(value));
+    return {
+      references: references.slice(0, 4),
+      medianFields: fieldCounts.length
+        ? Math.round(fieldCounts.reduce((sum, value) => sum + value, 0) / fieldCounts.length)
+        : null,
+      ctas: [...new Set(references.map((item) => item.funnel?.primaryCta).filter(Boolean))].slice(0, 4),
+    };
+  }, [deepIndex, landVertical, verticales]);
   const landingHtml = useMemo(() => {
     const v = verticales?.verticales.find((x) => x.id === landVertical);
     if (!v) return "";
     const zona = landZona.trim() || "tu zona";
-    const NICE: Record<string, { cliente: string; unidad: string; servicio: string }> = {
-      "clinicas-salud": { cliente: "tu clínica", unidad: "pacientes", servicio: "captación de pacientes" },
-      "reformas-hogar": { cliente: "tu empresa de reformas", unidad: "obras", servicio: "captación de obras" },
-      "solar-energia": { cliente: "tu instaladora", unidad: "instalaciones", servicio: "captación de instalaciones" },
-      "inmobiliario": { cliente: "tu inmobiliaria", unidad: "propietarios", servicio: "captación de propietarios" },
-      "legal": { cliente: "tu despacho", unidad: "casos", servicio: "captación de casos" },
-      "coches-motor": { cliente: "tu concesionario o taller", unidad: "clientes", servicio: "captación de clientes" },
-      "b2b-sdr": { cliente: "tu negocio B2B", unidad: "reuniones", servicio: "generación de reuniones" },
-      "belleza-bienestar": { cliente: "tu centro", unidad: "clientas", servicio: "captación de clientas" },
-      "hosteleria-turismo": { cliente: "tu negocio", unidad: "reservas", servicio: "captación de reservas" },
-      "directorios-marketplaces": { cliente: "tu negocio", unidad: "clientes", servicio: "captación de clientes" },
-      "generalista": { cliente: "tu negocio", unidad: "clientes", servicio: "captación de clientes" },
+    const NICE: Record<string, { cliente: string; unidad: string; servicio: string; dolor: string; resultado: string; filtro: string }> = {
+      "clinicas-salud": { cliente: "tu clínica", unidad: "pacientes", servicio: "captación de pacientes", dolor: "huecos de agenda, consultas sin intención y no-shows", resultado: "pacientes cualificados y confirmados en agenda", filtro: "tratamiento, zona, disponibilidad e intención" },
+      "reformas-hogar": { cliente: "tu empresa de reformas", unidad: "obras", servicio: "captación de obras", dolor: "leads compartidos y visitas sin intención real", resultado: "visitas de presupuesto con propietarios cualificados", filtro: "tipo de obra, zona, plazo, propiedad y presupuesto" },
+      "solar-energia": { cliente: "tu instaladora", unidad: "instalaciones", servicio: "captación de instalaciones", dolor: "visitas a viviendas inviables y contactos compartidos", resultado: "visitas viables con propietarios decisores", filtro: "vivienda, consumo, titularidad, zona y plazo" },
+      "inmobiliario": { cliente: "tu inmobiliaria", unidad: "propietarios", servicio: "captación de propietarios", dolor: "compradores curiosos y propietarios sin intención de vender", resultado: "citas de valoración con propietarios vendedores", filtro: "propiedad, zona, motivo, plazo y decisión" },
+      "legal": { cliente: "tu despacho", unidad: "casos", servicio: "captación de casos", dolor: "consultas fuera de especialidad y llamadas que consumen horas", resultado: "consultas filtradas y agendadas por especialidad", filtro: "materia, jurisdicción, urgencia, zona y encaje" },
+      "coches-motor": { cliente: "tu concesionario o taller", unidad: "clientes", servicio: "captación de clientes", dolor: "solicitudes sin vehículo, presupuesto o intención", resultado: "oportunidades cualificadas listas para atender", filtro: "vehículo, servicio, zona, presupuesto y plazo" },
+      "b2b-sdr": { cliente: "tu negocio B2B", unidad: "reuniones", servicio: "generación de reuniones", dolor: "listas frías, reuniones sin decisor y seguimiento irregular", resultado: "reuniones con cuentas y decisores que encajan", filtro: "empresa, cargo, necesidad, tamaño y momento" },
+      "belleza-bienestar": { cliente: "tu centro", unidad: "clientas", servicio: "captación de clientas", dolor: "huecos de agenda y consultas que no reservan", resultado: "reservas cualificadas para tus tratamientos", filtro: "tratamiento, zona, disponibilidad e intención" },
+      "hosteleria-turismo": { cliente: "tu negocio", unidad: "reservas", servicio: "captación de reservas", dolor: "dependencia de intermediarios y demanda poco previsible", resultado: "reservas directas con datos propios", filtro: "fechas, grupo, zona, disponibilidad y presupuesto" },
+      "directorios-marketplaces": { cliente: "tu negocio", unidad: "clientes", servicio: "captación de clientes", dolor: "visibilidad sin demanda verificable y contactos compartidos", resultado: "solicitudes trazables con intención concreta", filtro: "servicio, zona, plazo, presupuesto y contacto" },
+      "generalista": { cliente: "tu negocio", unidad: "clientes", servicio: "captación de clientes", dolor: "contactos sin contexto y seguimiento inconsistente", resultado: "oportunidades cualificadas listas para atender", filtro: "servicio, zona, necesidad, plazo y presupuesto" },
     };
     const nice = NICE[v.id] || NICE.generalista;
     const servicio = landServicio.trim() || nice.servicio;
     const tel = landTelefono.replace(/\D/g, "") || "34613431439";
     const wa = (txt: string) => `https://wa.me/${tel}?text=${encodeURIComponent(txt)}`;
-    const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
     const Z = esc(zona), S = esc(servicio);
-    const U = nice.unidad, Uc = U.charAt(0).toUpperCase() + U.slice(1);
+    const U = nice.unidad;
+    const deepById = new Map((deepIndex?.records || []).map((item) => [item.id, item]));
+    const studiedReferences = v.referentes
+      .map((reference) => ({ reference, funnel: deepById.get(reference.id) }))
+      .filter((item) => item.funnel?.researchReadiness === "usable");
+    const formFieldCounts = studiedReferences
+      .map((item) => item.funnel?.minFormFields)
+      .filter((value): value is number => Number.isFinite(value));
+    const observedFormFields = formFieldCounts.length
+      ? Math.round(formFieldCounts.reduce((sum, value) => sum + value, 0) / formFieldCounts.length)
+      : null;
+    const observedCtas = [...new Set(studiedReferences.map((item) => item.funnel?.primaryCta).filter(Boolean))].slice(0, 3);
+    const sourceNames = v.referentes.slice(0, 3).map((item) => item.name).join(", ");
     const TEMPLATES = {
       garantia: {
         pill: `${S.charAt(0).toUpperCase() + S.slice(1)} · hipótesis de reducción de riesgo`,
-        h1: `${Uc} para ${nice.cliente} en ${Z}, con objetivo y remedio definidos antes de lanzar`,
-        sub: `Borrador para configurar volumen, SLA, exclusividad, duración y remedio. Ninguna condición debe publicarse hasta comprobar capacidad y dejarla por escrito.`,
+        h1: `${nice.resultado.charAt(0).toUpperCase() + nice.resultado.slice(1)} en ${Z}, con criterios claros antes de empezar`,
+        sub: `Reduce ${nice.dolor}. Diseñamos el test, el filtro y el seguimiento; el volumen, el SLA y el remedio se fijan por escrito antes de lanzar.`,
         gTitle: "Garantía por configurar",
         gText: `Define una métrica, un periodo, sus exclusiones y un único remedio operativo. Si no quedan cerrados en el contrato, elimina este bloque.`,
       },
       anticuota: {
         pill: `Hipótesis · precio por resultado`,
-        h1: `Evalúa un precio por cada ${U.replace(/s$/, "")} válida en lugar de una cuota genérica.`,
-        sub: `Borrador para fijar precio, criterios, atribución, duplicados, reposición, duración y límite de compra. No presupone que el modelo esté disponible.`,
+        h1: `Evalúa pagar por cada ${U.replace(/s$/, "")} válida, no por una promesa genérica`,
+        sub: `Una propuesta para ${nice.cliente} basada en ${nice.filtro}. Precio, atribución, duplicados, reposición y límite de compra se acuerdan antes del test.`,
         gTitle: "Regla de reposición por configurar",
         gText: `Describe qué invalida una pieza, cómo se prueba y qué remedio se aplica. Sin esos campos firmados, no publiques una promesa de reposición.`,
       },
       velocidad: {
         pill: `SLA firmado · 10 minutos`,
-        h1: `Cada minuto cuenta. Proponemos un primer contacto en menos de 10 minutos.`,
-        sub: `Esta plantilla convierte la velocidad en una condición medible: respuesta, filtro y agenda para cada solicitud de ${S} en ${Z}. El horario, la cobertura y el remedio deben quedar configurados antes de publicarla.`,
+        h1: `Convierte cada solicitud en una conversación antes de que se enfríe`,
+        sub: `Proponemos un primer contacto en menos de 10 minutos y un filtro de ${nice.filtro} para cada solicitud de ${S} en ${Z}. Horario, cobertura y remedio se configuran antes de publicar.`,
         gTitle: "SLA por contrato",
         gText: `Configura horario, método de medición, excepciones y remedio para el SLA. El descuento u otra compensación solo se mostrará si está aceptado en el contrato.`,
       },
@@ -940,15 +1092,20 @@ export default function Portal() {
 <style>
 :root{--azul:#0b57d0;--azul2:#1a73e8;--ink:#1c2430;--muted:#5b6675;--paper:#f7f9fc;--ok:#0b6b2f}
 *{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
-.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 header{padding:18px 0;border-bottom:1px solid #e6ebf2}header .wrap{display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;font-size:19px;color:var(--azul)}.logo span{color:var(--ink)}
 .pill{display:inline-block;background:#e8f0fe;color:var(--azul);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600}
-.hero{padding:64px 0 46px;background:linear-gradient(180deg,#fff,var(--paper))}
+.hero{padding:70px 0 54px;background:radial-gradient(circle at 86% 12%,#e8f0fe 0,transparent 34%),linear-gradient(180deg,#fff,var(--paper))}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.72fr);gap:50px;align-items:center}
 h1{font-size:clamp(30px,4.6vw,46px);line-height:1.15;letter-spacing:-.02em;margin:16px 0 14px;max-width:21ch}
 .sub{font-size:18px;color:var(--muted);max-width:56ch}
 .cta{display:inline-block;margin-top:26px;background:var(--azul);color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:15px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(11,87,208,.25)}
 .cta.sec{background:#fff;color:var(--azul);border:1.5px solid var(--azul);box-shadow:none;margin-left:10px}
+.hero-card{background:rgba(255,255,255,.92);border:1px solid #dce4f0;border-radius:20px;padding:24px;box-shadow:0 22px 56px rgba(33,54,84,.13)}
+.hero-card>span{font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--azul)}.hero-card h2{font-size:22px;line-height:1.2;margin:10px 0 16px}
+.hero-card ul{list-style:none;display:grid;gap:12px}.hero-card li{position:relative;padding-left:26px;color:var(--muted);font-size:14px}.hero-card li:before{content:'✓';position:absolute;left:0;top:0;color:var(--ok);font-weight:900}
+.research{border-bottom:1px solid #e6ebf2;background:#fff}.research .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.research div{padding:19px 22px;border-right:1px solid #e6ebf2}.research div:last-child{border-right:0}.research b{display:block;font-size:20px;color:var(--ink)}.research span{font-size:12px;color:var(--muted)}
 .bullets{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;padding:38px 0}
 .b{background:#fff;border:1px solid #e6ebf2;border-radius:14px;padding:18px}
 .b b{display:block;font-size:15px;margin-bottom:6px}.b p{font-size:13.5px;color:var(--muted)}
@@ -956,25 +1113,43 @@ h1{font-size:clamp(30px,4.6vw,46px);line-height:1.15;letter-spacing:-.02em;margi
 .faixa h2{font-size:22px;max-width:34ch}.faixa a{background:#fff;color:var(--azul);text-decoration:none;font-weight:700;padding:13px 24px;border-radius:11px}
 .pasos{padding:46px 0}.pasos h2,.datos h2,.form h2{font-size:26px;margin-bottom:20px}
 .paso{display:flex;gap:16px;margin-bottom:18px}.paso i{flex:0 0 38px;height:38px;border-radius:50%;background:#e8f0fe;color:var(--azul);font-style:normal;font-weight:800;display:flex;align-items:center;justify-content:center}
+.fit{padding:58px 0}.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.fit article{padding:24px;border:1px solid #e2e8f1;border-radius:16px;background:#fff}.fit article:first-child{background:#f8fbff}.fit h2{font-size:28px;margin-bottom:8px}.fit h3{font-size:18px;margin-bottom:9px}.fit p{color:var(--muted)}
 .datos{background:var(--paper);padding:46px 0}.datos .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
 .dato{background:#fff;border:1px solid #e6ebf2;border-radius:14px;padding:18px;text-align:center}
 .dato b{display:block;font-size:28px;color:var(--azul)}.dato span{font-size:13px;color:var(--muted)}
 .garantia{margin:46px 0;border:2px solid var(--ok);background:#f2faf4;border-radius:16px;padding:24px}
 .garantia h3{color:var(--ok);font-size:20px;margin-bottom:8px}
-.form{padding:10px 0 60px}.form .caja{background:#fff;border:1px solid #e6ebf2;border-radius:16px;padding:26px;max-width:560px}
+.faq{padding:54px 0;background:#fff}.faq h2{font-size:28px;margin-bottom:18px}.faq details{border-top:1px solid #e1e7ef;padding:16px 0}.faq details:last-child{border-bottom:1px solid #e1e7ef}.faq summary{font-weight:750;cursor:pointer}.faq details p{padding-top:9px;color:var(--muted);max-width:75ch}
+.form{padding:54px 0 70px;background:#0f1f37;color:#fff}.form .form-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}.form .intro p{color:#bcc9da}.form .caja{background:#fff;color:var(--ink);border:1px solid #e6ebf2;border-radius:18px;padding:26px;max-width:640px;box-shadow:0 24px 60px rgba(0,0,0,.2)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.fields label.wide{grid-column:1/-1}
 label{display:block;font-size:13px;font-weight:600;margin:12px 0 5px}
 input,select{width:100%;padding:12px;border:1px solid #cfd8e3;border-radius:10px;font-size:15px}
 button{margin-top:18px;width:100%;background:#25d366;color:#fff;border:0;border-radius:12px;padding:15px;font-size:16.5px;font-weight:700;cursor:pointer}
 footer{border-top:1px solid #e6ebf2;padding:26px 0;font-size:12.5px;color:var(--muted)}
-@media(max-width:640px){.cta.sec{margin-left:0;margin-top:12px}}
+@media(max-width:760px){.hero{padding-top:48px}.hero-grid,.fit-grid,.form .form-grid{grid-template-columns:1fr}.hero-grid{gap:28px}.research .wrap{grid-template-columns:1fr}.research div{border-right:0;border-bottom:1px solid #e6ebf2}.cta.sec{margin-left:0;margin-top:12px}.fields{grid-template-columns:1fr}.fields label.wide{grid-column:auto}}
 </style></head><body>
+<!-- Base de diseño RedVitalia: ${studiedReferences.length} funnels utilizables; referencias internas: ${esc(sourceNames || "sin referentes estructurados")}; CTAs observados: ${esc(observedCtas.join(" · ") || "sin CTA comparable")}. La redacción es una síntesis, no una copia literal ni una afirmación de rendimiento. -->
 <header><div class="wrap"><div class="logo">Red<span>Vitalia</span></div><span class="pill">BORRADOR · disponibilidad por comprobar</span></div></header>
-<section class="hero"><div class="wrap">
+<section class="hero"><div class="wrap hero-grid"><div>
 <span class="pill">BORRADOR EDITORIAL · ${T.pill}</span>
 <h1>${T.h1}</h1>
 <p class="sub">${T.sub}</p>
-<a class="cta" href="${wa(`Hola, soy de ${zona}. Quiero evaluar ${servicio} con RedVitalia.`)}">Evaluar encaje → WhatsApp</a>
-<a class="cta sec" href="#como">Ver cómo funciona</a>
+<a class="cta" href="${wa(`Hola, soy de ${zona}. Quiero evaluar ${servicio} con RedVitalia.`)}">Comprobar encaje en ${Z}</a>
+<a class="cta sec" href="#como">Ver el proceso</a>
+</div><aside class="hero-card">
+<span>DIAGNÓSTICO DE ENCAJE</span>
+<h2>Qué se define antes de invertir</h2>
+<ul>
+<li>Zona, capacidad y servicio prioritario de ${nice.cliente}.</li>
+<li>Filtro de entrada: ${nice.filtro}.</li>
+<li>Criterio de oportunidad válida, duplicados y exclusiones.</li>
+<li>SLA, seguimiento y remedio operativo por escrito.</li>
+</ul>
+</aside></div></section>
+<section class="research"><div class="wrap">
+<div><b>${fmt(v.n)}</b><span>empresas del vertical analizadas</span></div>
+<div><b>${studiedReferences.length || "—"}</b><span>funnels de referentes estructurados y utilizables</span></div>
+<div><b>${observedFormFields ?? "—"}</b><span>campos mínimos medios observados en esos funnels</span></div>
 </div></section>
 <div class="wrap"><div class="bullets">
 <div class="b"><b>⚡ SLA configurable</b><p>Objetivo propuesto de primer contacto en menos de 10 minutos. Debe validarse contra la capacidad operativa y quedar por escrito.</p></div>
@@ -982,6 +1157,10 @@ footer{border-top:1px solid #e6ebf2;padding:26px 0;font-size:12.5px;color:var(--
 <div class="b"><b>📄 Condiciones transparentes</b><p>Duración, renovación y cancelación se muestran en la propuesta final; esta plantilla no las presupone.</p></div>
 <div class="b"><b>✅ Criterios de cualificación</b><p>Zona, servicio e intención se definen antes del test para poder medir qué contactos cumplen lo pactado.</p></div>
 </div></div>
+<section class="fit"><div class="wrap"><h2>Una página construida para el problema real</h2><div class="fit-grid">
+<article><h3>Lo que queremos dejar atrás</h3><p>${nice.dolor.charAt(0).toUpperCase() + nice.dolor.slice(1)}. Por eso la página no vende clics: explica el filtro, la respuesta y la trazabilidad.</p></article>
+<article><h3>El resultado operativo que se evalúa</h3><p>${nice.resultado.charAt(0).toUpperCase() + nice.resultado.slice(1)}, con criterios verificables de ${nice.filtro}.</p></article>
+</div></div></section>
 <section class="faixa"><div class="wrap"><h2>Hemos analizado ${fmt(v.n)} empresas de captación de este sector. Es evidencia de mercado para formular un test, no prueba de rendimiento.</h2><a href="${wa(`Hola, quiero la auditoría de captación para ${servicio} en ${zona}.`)}">Pedir auditoría</a></div></section>
 <section class="pasos" id="como"><div class="wrap"><h2>Cómo funciona</h2>
 <div class="paso"><i>1</i><div><b>Diagnóstico por configurar.</b> Acordamos plazo, alcance, zona y capacidad real de atender ${nice.unidad} nuevos.</div></div>
@@ -996,16 +1175,27 @@ footer{border-top:1px solid #e6ebf2;padding:26px 0;font-size:12.5px;color:var(--
 </div>
 <div class="garantia"><h3>${T.gTitle}</h3><p>${T.gText}</p></div>
 </div></section>
-<section class="form"><div class="wrap"><h2>Evaluar encaje en tu zona</h2><div class="caja">
-<label>Tu nombre</label><input id="n" placeholder="Nombre y apellido">
-<label>Tu negocio</label><input id="e" placeholder="Nombre del negocio">
-<label>Zona</label><input id="z" value="${Z}">
-<button onclick="var n=document.getElementById('n').value,e=document.getElementById('e').value,z=document.getElementById('z').value;location.href='https://wa.me/${tel}?text='+encodeURIComponent('Hola, soy '+n+' de '+e+' ('+z+'). Quiero evaluar el encaje para ${servicio.replace(/'/g, "\\'")}.')">Solicitar diagnóstico por WhatsApp →</button>
+<section class="faq"><div class="wrap"><h2>Preguntas antes de empezar</h2>
+<details><summary>¿Trabajáis con más de una empresa en la misma zona?</summary><p>La exclusividad no se presupone. Primero comprobamos zona, servicio, capacidad y duración; solo se comunica si queda aceptada por escrito.</p></details>
+<details><summary>¿Qué cuenta como oportunidad válida?</summary><p>Se define antes del test con ${nice.filtro}. También se documentan duplicados, datos falsos, fuera de zona y el remedio aplicable.</p></details>
+<details><summary>¿Se garantiza un resultado comercial?</summary><p>No se promete una venta que no controlamos. Sí pueden pactarse entregables operativos, medición, SLA y un remedio proporcionado.</p></details>
+<details><summary>¿Qué veremos en el diagnóstico?</summary><p>Capacidad, zona, oferta prioritaria, economía por ${U.replace(/s$/, "")}, seguimiento actual y una hipótesis de test con una sola variable.</p></details>
+</div></section>
+<section class="form"><div class="wrap form-grid"><div class="intro"><span class="pill">SIGUIENTE PASO</span><h2>Evaluar encaje en ${Z}</h2><p>Cuéntanos lo mínimo necesario. Abriremos WhatsApp con el contexto ordenado para que la primera conversación sea útil.</p></div><form class="caja" id="lead-form" data-service="${S}">
+<div class="fields"><label>Tu nombre<input id="n" name="nombre" required placeholder="Nombre y apellido"></label>
+<label>Teléfono<input id="p" name="telefono" inputmode="tel" placeholder="Tu teléfono"></label>
+<label>Tu negocio<input id="e" name="empresa" required placeholder="Nombre del negocio"></label>
+<label>Zona<input id="z" name="zona" required value="${Z}"></label>
+<label class="wide">¿Qué quieres captar?<input id="s" name="objetivo" value="${S}"></label>
+<label class="wide">Capacidad aproximada al mes<select id="c" name="capacidad"><option>Por definir</option><option>1–5</option><option>6–15</option><option>16–30</option><option>Más de 30</option></select></label></div>
+<button type="submit">Solicitar diagnóstico por WhatsApp →</button>
 <p style="font-size:12px;color:var(--muted);margin-top:10px">El envío no confirma disponibilidad, exclusividad, precio ni SLA.</p>
-</div></div></section>
+</form></div></section>
 <footer><div class="wrap">RedVitalia · Inteligencia y captación de clientes · ${Z} · ${new Date().getFullYear()}</div></footer>
+<script>(function(){var form=document.getElementById('lead-form');if(!form)return;form.addEventListener('submit',function(event){event.preventDefault();var value=function(id){var node=document.getElementById(id);return node&&'value' in node?String(node.value).trim():'';};var message=['Hola, soy '+value('n')+' de '+value('e')+'.','Zona: '+value('z')+'.','Objetivo: '+(value('s')||form.dataset.service)+'.','Capacidad mensual: '+value('c')+'.',value('p')?'Mi teléfono: '+value('p')+'.':'','Quiero evaluar el encaje con RedVitalia.'].filter(Boolean).join('\\n');location.href='https://wa.me/${tel}?text='+encodeURIComponent(message);});})();</script>
 </body></html>`;
-  }, [verticales, landVertical, landZona, landServicio, landTelefono, landTemplate]);
+  }, [deepIndex, verticales, landVertical, landZona, landServicio, landTelefono, landTemplate]);
+  */
   const proposalText = useMemo(() => {
     const vertical = verticales?.verticales.find((v) => v.id === propVertical);
     if (!vertical) return "";
@@ -1093,6 +1283,10 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
       )
       .sort((a, b) => b.media.length - a.media.length);
   }, [companies, query]);
+  const galleryMetrics = useMemo(
+    () => deriveGalleryMetrics(companies, summary),
+    [companies, summary],
+  );
   const compared = compare
     .map((id) => companies.find((x) => x.id === id))
     .filter(Boolean) as Company[];
@@ -1185,7 +1379,8 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
       );
   }, [companyById, country, funnelCapture, funnelStatus, query, scope, v3Index]);
   const top = companies.slice(0, 4);
-  const go = (v: View) => {
+  const go = (v: View, options?: { adQuery?: string }) => {
+    setAdLabInitialQuery(v === "adlab" ? options?.adQuery || "" : "");
     if (v === "map") {
       setFocusCountry(null);
       setFocusCompanyId(null);
@@ -1249,6 +1444,24 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
       url,
     );
   }, []);
+  const closeGlobalSearch = () => {
+    setGlobalSearchOpen(false);
+    setGlobalSearchActiveIndex(-1);
+  };
+  const selectGlobalSearchResult = (index: number) => {
+    if (index < 0 || index >= globalSearchOptionCount) return;
+    if (index < globalCompanyResults.length) {
+      openCompany(globalCompanyResults[index]);
+    } else {
+      const item = globalAdResults[index - globalCompanyResults.length];
+      if (!item) return;
+      go("adlab", {
+        adQuery: item.corpusKey || item.externalId || item.titular || item.name,
+      });
+    }
+    setQuery("");
+    closeGlobalSearch();
+  };
   const dismissCompanyInPlace = useCallback(() => {
     setActive(null);
     setLightbox(null);
@@ -1487,6 +1700,24 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
         ),
       ).join(" · ")
     : "";
+  const requiredViewResources = requiredResourcesByView[view] || [];
+  const funnelResourceReady =
+    resourceLoadState.v3Index === "ready" ||
+    resourceLoadState.deepIndex === "ready";
+  const funnelResourceError =
+    resourceLoadState.v3Index === "error" &&
+    resourceLoadState.deepIndex === "error";
+  const viewResourceError = view === "funnels"
+    ? funnelResourceError
+    : requiredViewResources.some(
+        (resource) => resourceLoadState[resource] === "error",
+      );
+  const viewResourcePending = view === "funnels"
+    ? !funnelResourceReady && !funnelResourceError
+    : requiredViewResources.some(
+        (resource) => resourceLoadState[resource] !== "ready",
+      ) && !viewResourceError;
+  const viewResourcesReady = !viewResourcePending && !viewResourceError;
 
   if (loading)
     return (
@@ -1532,6 +1763,24 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             {navCollapsed ? "»" : "«"}
           </button>
         </div>
+        <div className="mobile-nav-picker">
+          <label htmlFor="mobile-primary-navigation">Ir a sección</label>
+          <select
+            id="mobile-primary-navigation"
+            value={view}
+            onChange={(event) => go(event.target.value as View)}
+          >
+            {navGroups.map((group) => {
+              const options = group.ids.map((id) => {
+                const item = nav.find((candidate) => candidate.id === id)!;
+                return <option key={item.id} value={item.id}>{item.label}</option>;
+              });
+              return group.label ? (
+                <optgroup key={group.label} label={group.label}>{options}</optgroup>
+              ) : options;
+            })}
+          </select>
+        </div>
         <nav aria-label="Navegación principal">
           {navGroups.map((group) => (
             <div className="nav-group" key={group.label || "top"}>
@@ -1551,7 +1800,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                     {!navCollapsed && <span>{item.label}</span>}
                     {!navCollapsed && item.id === "companies" && <b>{fmt(companies.length)}</b>}
                     {!navCollapsed && item.id === "countries" && <b>195</b>}
-                    {!navCollapsed && item.id === "ads" && <b>{fmt(summary.media)}</b>}
+                    {!navCollapsed && item.id === "ads" && <b>{fmt(galleryMetrics.media)}</b>}
                     {!navCollapsed && item.id === "arsenal" && anunciosReales && <b>{fmt(anunciosReales.total)}</b>}
                     {!navCollapsed && item.id === "watch" && vigilancia && <b>{vigilancia.semaforo.filter((s) => s.nivel === "rojo").length}</b>}
                   </button>
@@ -1572,55 +1821,113 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
       </aside>
       <section className="main">
         <header className="topbar">
-          <div className="global-search">
+          <div
+            className="global-search"
+            onBlur={(event) => {
+              const nextTarget = event.relatedTarget as Node | null;
+              if (nextTarget && event.currentTarget.contains(nextTarget)) return;
+              closeGlobalSearch();
+            }}
+          >
             <span>⌕</span>
             <input
+              ref={globalSearchInputRef}
               value={query}
               onChange={(e) => {
                 setQuery(e.target.value);
+                setGlobalSearchOpen(e.target.value.trim().length >= 2);
+                setGlobalSearchActiveIndex(-1);
               }}
+              onFocus={() => setGlobalSearchOpen(query.trim().length >= 2)}
               onKeyDown={(event) => {
-                if (event.key !== "Enter") return;
-                if (globalCompanyResults[0]) {
-                  openCompany(globalCompanyResults[0]);
-                  setQuery("");
+                if (event.key === "Escape") {
+                  event.preventDefault();
+                  closeGlobalSearch();
                   return;
                 }
-                if (globalAdResults[0]) {
-                  setAdLabInitialQuery(query);
-                  go("adlab");
-                  setQuery("");
+                if (!globalSearchOptionCount) return;
+                if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+                  event.preventDefault();
+                  setGlobalSearchOpen(true);
+                  setGlobalSearchActiveIndex((current) => {
+                    if (current < 0)
+                      return event.key === "ArrowDown"
+                        ? 0
+                        : globalSearchOptionCount - 1;
+                    const delta = event.key === "ArrowDown" ? 1 : -1;
+                    return (current + delta + globalSearchOptionCount) % globalSearchOptionCount;
+                  });
+                  return;
+                }
+                if (event.key === "Enter") {
+                  if (!globalSearchIsOpen) return;
+                  event.preventDefault();
+                  selectGlobalSearchResult(
+                    globalSearchActiveIndex >= 0 ? globalSearchActiveIndex : 0,
+                  );
                 }
               }}
               placeholder="Busca empresa, mercado, anuncio, titular o ID…"
               aria-label="Buscar en toda la investigación"
               role="combobox"
+              aria-autocomplete="list"
+              aria-haspopup="listbox"
               aria-controls="global-search-results"
-              aria-expanded={query.trim().length >= 2}
+              aria-expanded={globalSearchIsOpen}
+              aria-activedescendant={globalSearchActiveId}
             />
             {query && (
-              <button onClick={() => setQuery("")} aria-label="Borrar búsqueda">
+              <button
+                onMouseDown={(event) => event.preventDefault()}
+                onClick={() => {
+                  setQuery("");
+                  closeGlobalSearch();
+                  globalSearchInputRef.current?.focus();
+                }}
+                aria-label="Borrar búsqueda"
+              >
                 ×
               </button>
             )}
-            {query.trim().length >= 2 && (
+            {globalSearchIsOpen && (
               <div id="global-search-results" className="global-search-results" role="listbox" aria-label="Resultados de búsqueda global">
-                <section>
-                  <header><b>EMPRESAS</b><span>{globalCompanyResults.length} primeras coincidencias</span></header>
-                  {globalCompanyResults.map((company) => (
-                    <button key={company.id} role="option" aria-selected="false" onClick={() => { openCompany(company); setQuery(""); }}>
+                <section role="group" aria-labelledby="global-search-companies-label">
+                  <header id="global-search-companies-label"><b>EMPRESAS</b><span>{globalCompanyResults.length} primeras coincidencias</span></header>
+                  {globalCompanyResults.map((company, index) => (
+                    <button
+                      id={`global-search-option-${index}`}
+                      key={company.id}
+                      role="option"
+                      aria-selected={globalSearchActiveIndex === index}
+                      tabIndex={-1}
+                      onMouseDown={(event) => event.preventDefault()}
+                      onMouseEnter={() => setGlobalSearchActiveIndex(index)}
+                      onClick={() => selectGlobalSearchResult(index)}
+                    >
                       <b>{company.name}</b><span>{company.primaryCountry} · {company.agencyType}</span>
                     </button>
                   ))}
                   {!globalCompanyResults.length && <p>Sin coincidencias en fichas.</p>}
                 </section>
-                <section>
-                  <header><b>ANUNCIOS</b><span>{globalAds === null ? "Cargando corpus…" : `${globalAdResults.length} primeras coincidencias`}</span></header>
-                  {globalAdResults.map((item) => (
-                    <button key={item.corpusKey || `${item.id}-${item.titular}`} role="option" aria-selected="false" onClick={() => { setAdLabInitialQuery(query); go("adlab"); setQuery(""); }}>
+                <section role="group" aria-labelledby="global-search-ads-label">
+                  <header id="global-search-ads-label"><b>ANUNCIOS</b><span>{globalAds === null ? "Cargando corpus…" : `${globalAdResults.length} primeras coincidencias`}</span></header>
+                  {globalAdResults.map((item, itemIndex) => {
+                    const index = globalCompanyResults.length + itemIndex;
+                    return (
+                    <button
+                      id={`global-search-option-${index}`}
+                      key={item.corpusKey || `${item.id}-${item.titular}`}
+                      role="option"
+                      aria-selected={globalSearchActiveIndex === index}
+                      tabIndex={-1}
+                      onMouseDown={(event) => event.preventDefault()}
+                      onMouseEnter={() => setGlobalSearchActiveIndex(index)}
+                      onClick={() => selectGlobalSearchResult(index)}
+                    >
                       <b>{item.titular || item.name}</b><span>{item.name} · {item.plataforma}</span>
                     </button>
-                  ))}
+                    );
+                  })}
                   {globalAds !== null && !globalAdResults.length && <p>Sin coincidencias en el corpus.</p>}
                 </section>
               </div>
@@ -1629,6 +1936,21 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           <div className="data-date">CORTE · {BUILD_DATE}</div>
           <span className="avatar">RV</span>
         </header>
+
+        {viewResourcePending && (
+          <div className="view">
+            <div className="deep-loading" role="status" aria-live="polite">
+              Preparando {nav.find((item) => item.id === view)?.label.toLocaleLowerCase("es") || "la sección"}…
+            </div>
+          </div>
+        )}
+        {viewResourceError && (
+          <div className="view">
+            <div className="empty-state" role="alert">
+              No se pudo cargar esta sección. Recarga la página para volver a intentarlo.
+            </div>
+          </div>
+        )}
 
         {view === "home" && (
           <div className="view">
@@ -1679,9 +2001,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   {fmt(v3Index?.stats.uniqueEvidenceUrlsGlobal ?? summary.sources)}
                 </strong>
                 <small>
-                  {fmt(v3Index?.stats.evidenceReferences ?? 0)} referencias
-                  analíticas · {fmt(v3Index?.stats.usableEvidenceReferences ?? 0)} enlazables · {fmt(v3Index?.stats.unavailableEvidenceReferences ?? 0)} no disponible ·{" "}
-                  {fmt(v3Index?.stats.uniqueEvidenceUrlsWithinRecords ?? 0)}
+                  {v3Index ? fmt(v3Index.stats.evidenceReferences) : "…"} referencias
+                  analíticas · {v3Index ? fmt(v3Index.stats.usableEvidenceReferences) : "…"} enlazables · {v3Index ? fmt(v3Index.stats.unavailableEvidenceReferences) : "…"} no disponible ·{" "}
+                  {v3Index ? fmt(v3Index.stats.uniqueEvidenceUrlsWithinRecords) : "…"}
                   {" "}únicas por ficha
                 </small>
               </article>
@@ -1704,12 +2026,12 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               {([
                 ["operations", "◆", "Centro de Operaciones", "Prioridad, campaña 360, OCR, tests, métricas y battlecards"],
                 ["informe", "≡", "Informe ejecutivo", "El mercado en una página, listo para copiar o imprimir"],
-                ["cruces", "⤫", "Cruces", `${cruces?.findings.length || 0} hallazgos · 12 análisis cruzados`],
+                ["cruces", "⤫", "Cruces", `${cruces ? cruces.findings.length : resourceLoadState.cruces === "error" ? "n/d" : "…"} hallazgos · 12 análisis cruzados`],
                 ["landings", "▭", "Landings", "3 plantillas por nicho basadas en conclusiones"],
                 ["adlab", "⌗", "Laboratorio de anuncios", "Busca copy, cruza patrones y crea matrices de test trazables"],
-                ["arsenal", "⚑", `Arsenal · ${fmt(anunciosReales?.total || 0)} anuncios`, "Garantías, titulares y anuncios reales buscables"],
-                ["watch", "◔", `Vigilancia · ${vigilancia?.semaforo.filter((s) => s.nivel === "rojo").length || 0} en rojo`, "Semáforo España con fragilidad y contradicciones"],
-                ["exec", "▸", "Ejecutar", `${execution?.actions.length || 0} acciones priorizadas con estado`],
+                ["arsenal", "⚑", `Arsenal · ${anunciosReales ? fmt(anunciosReales.total) : resourceLoadState.anunciosReales === "error" ? "n/d" : "…"} anuncios`, "Garantías, titulares y anuncios reales buscables"],
+                ["watch", "◔", `Vigilancia · ${vigilancia ? vigilancia.semaforo.filter((s) => s.nivel === "rojo").length : resourceLoadState.vigilancia === "error" ? "n/d" : "…"} en rojo`, "Semáforo España con fragilidad y contradicciones"],
+                ["exec", "▸", "Ejecutar", `${execution ? execution.actions.length : resourceLoadState.execution === "error" ? "n/d" : "…"} acciones priorizadas con estado`],
               ] as Array<[View, string, string, string]>).map(([id, icon, title, sub]) => (
                 <button key={id} className="quick-card" onClick={() => go(id)}>
                   <i>{icon}</i>
@@ -1835,7 +2157,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "exec" && (
+        {viewResourcesReady && view === "exec" && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">EJECUTAR · DESTILADO ACCIONABLE</p>
@@ -2028,7 +2350,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "resources" && (
+        {viewResourcesReady && view === "resources" && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">RECURSOS · LISTOS PARA USAR</p>
@@ -2126,7 +2448,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "tools" && (
+        {viewResourcesReady && view === "tools" && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">HERRAMIENTAS</p>
@@ -2264,17 +2586,8 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
         )}
 
         {view === "adlab" && (
-          <div className="view">
-            <section className="page-head">
-              <p className="eyebrow">LABORATORIO DE ANUNCIOS</p>
-              <h1>Del archivo de capturas al siguiente test</h1>
-              <p>
-                Todo el copy queda buscable y trazable. Los patrones usan solo
-                evidencia apta; el OCR pendiente sigue visible sin mezclarse con
-                conclusiones ni fingir ganadores.
-              </p>
-            </section>
-            <section className="content-section">
+          <div className="view adlab-view">
+            <section className="adlab-shell">
               <Suspense fallback={<div className="deep-loading">Abriendo el corpus publicitario…</div>}>
                 <AdsLaboratory
                   key={adLabInitialQuery || "default"}
@@ -2289,7 +2602,20 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "arsenal" && (
+        {view === "decisions" && (
+          <div className="view decision-center-view">
+            <Suspense fallback={<div className="deep-loading">Convirtiendo evidencia en decisiones…</div>}>
+              <DecisionCenter
+                onOpenCompany={(id) => {
+                  const company = companyById.get(id);
+                  if (company) openCompany(company);
+                }}
+              />
+            </Suspense>
+          </div>
+        )}
+
+        {viewResourcesReady && view === "arsenal" && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">ARSENAL COMERCIAL</p>
@@ -2453,89 +2779,15 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             )}
 
             {anunciosReales && (
-              <section className="content-section">
-                <div className="section-head">
-                  <div>
-                    <p className="eyebrow">ANUNCIOS REALES TRANSCRITOS · {fmt(anunciosReales.total)} PIEZAS</p>
-                    <h2>La base de anuncios en texto, buscable</h2>
-                  </div>
+              <section className="content-section arsenal-ad-handoff">
+                <div>
+                  <p className="eyebrow">ANUNCIOS · UNA ÚNICA FUENTE DE VERDAD</p>
+                  <h2>El explorador completo vive ahora en el Laboratorio</h2>
+                  <p className="insights-note">
+                    La nueva vista reúne OCR exhaustivo, idioma original, traducción al español, país, plataforma, evidencia y patrones en un solo sistema de filtros.
+                  </p>
                 </div>
-                <p className="insights-note">{anunciosReales.nota}</p>
-                <div className="compare-picker">
-                  {["Todos", "En vivo 23/08", ...[...new Set(anunciosReales.items.map((a) => a.vertical).filter(Boolean))].sort()].map((v) => (
-                    <button key={v} className={adRealVertical === v ? "selected" : ""} onClick={() => setAdRealVertical(v as string)}>
-                      {v}
-                    </button>
-                  ))}
-                </div>
-                <div className="compare-picker">
-                  {["Todas", "Meta", "Google", "Instagram", "Display"].map((p) => (
-                    <button key={p} className={adRealPlat === p ? "selected" : ""} onClick={() => setAdRealPlat(p)}>
-                      {p}
-                    </button>
-                  ))}
-                </div>
-                <div className="filterbar">
-                  <label style={{ flex: 1 }}>
-                    Buscar en anunciante, titular y texto
-                    <input value={adRealQuery} placeholder="garantía, WhatsApp, exclusivo, 10€…" onChange={(e) => setAdRealQuery(e.target.value)} style={{ display: "block", width: "100%", marginTop: 7, padding: 9, border: "1px solid var(--line)", borderRadius: 8, fontSize: 12 }} />
-                  </label>
-                </div>
-                {(() => {
-                  const matchPlat = (a: { plataforma: string }) => {
-                    if (adRealPlat === "Todas") return true;
-                    const p = a.plataforma.toLowerCase();
-                    if (adRealPlat === "Meta") return p.includes("meta");
-                    if (adRealPlat === "Google") return p.includes("google") || p.includes("transparencia");
-                    if (adRealPlat === "Instagram") return p.includes("instagram");
-                    return p.includes("display");
-                  };
-                  const filtered = anunciosReales.items.filter((a) => {
-                    if (!matchPlat(a)) return false;
-                    if (adRealVertical === "En vivo 23/08" && !a.capturaEnVivo) return false;
-                    if (adRealVertical !== "Todos" && adRealVertical !== "En vivo 23/08" && a.vertical !== adRealVertical) return false;
-                    if (!adRealQuery) return true;
-                    const q = adRealQuery.toLocaleLowerCase("es");
-                    return `${a.name} ${a.titular} ${a.texto} ${a.angulo}`.toLocaleLowerCase("es").includes(q);
-                  });
-                  return (
-                    <>
-                    <p className="insights-note">Mostrando {Math.min(30, filtered.length)} de {filtered.length} piezas que cumplen el filtro.</p>
-                    <div className="anuncio-grid">
-                  {filtered
-                    .slice(0, 30)
-                    .map((a, i) => {
-                      const c = companyById.get(a.id);
-                      return (
-                        <article key={`${a.id}-${i}`} className="anuncio-card">
-                          <div className="anuncio-meta">
-                            {c ? (
-                              <button className="ref-chip" onClick={() => openCompany(c)}>{a.name}</button>
-                            ) : (
-                              <span className="ref-chip static">{a.name}</span>
-                            )}
-                            {a.capturaEnVivo && <span className="anuncio-live">EN VIVO 23/08</span>}
-                          </div>
-                          <h3>{a.titular || "(sin titular visible)"}</h3>
-                          <p className="anuncio-texto">{a.texto}</p>
-                          <small>{a.plataforma}{a.cta ? ` · CTA: ${a.cta}` : ""}{a.precioVisible ? ` · ${a.precioVisible}` : ""}</small>
-                          {a.angulo && <small className="anuncio-angulo">Ángulo: {a.angulo}</small>}
-                          <button
-                            className="res-copy mini"
-                            onClick={async () => {
-                              const text = `${a.name} — ${a.titular}\n${a.texto}${a.cta ? `\nCTA: ${a.cta}` : ""}\nÁngulo: ${a.angulo}`;
-                              try { await navigator.clipboard.writeText(text); setToast("Anuncio copiado"); } catch { setToast("No se pudo copiar"); }
-                            }}
-                          >
-                            Copiar
-                          </button>
-                        </article>
-                      );
-                    })}
-                    </div>
-                    </>
-                  );
-                })()}
+                <button className="res-copy" onClick={() => setView("adlab")}>Abrir Laboratorio de anuncios</button>
               </section>
             )}
 
@@ -2585,96 +2837,13 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "landings" && (
-          <div className="view">
-            <section className="page-head">
-              <p className="eyebrow">LANDING PAGES POR NICHO</p>
-              <h1>Una landing lista para captar, por vertical</h1>
-              <p>
-                Plantillas editoriales basadas en señales observadas: configura y valida SLA,
-                exclusividad, garantía y condiciones antes de publicar. El HTML conserva esas advertencias.
-              </p>
-            </section>
-            <section className="content-section">
-              <div className="compare-picker">
-                {([["garantia", "Plantilla A · Garantía con remedio configurable"], ["anticuota", "Plantilla B · Precio por resultado configurable"], ["velocidad", "Plantilla C · Objetivo de SLA configurable"]] as const).map(([key, label]) => (
-                  <button key={key} className={landTemplate === key ? "selected" : ""} onClick={() => setLandTemplate(key)}>
-                    {label}
-                  </button>
-                ))}
-              </div>
-              <p className="insights-note">
-                Las tres plantillas convierten señales observadas en hipótesis: garantía con remedio (A),
-                precio por resultado (B) y velocidad medible (C). Su frecuencia no demuestra rendimiento;
-                hay que probar una variable cada vez con métricas propias.
-              </p>
-              <div className="tool-card">
-                <div className="tool-controls">
-                  <label>
-                    Vertical
-                    <select value={landVertical} onChange={(e) => setLandVertical(e.target.value)}>
-                      {(verticales?.verticales || []).map((v) => (
-                        <option key={v.id} value={v.id}>{v.label}</option>
-                      ))}
-                    </select>
-                  </label>
-                  <label>
-                    Zona
-                    <input value={landZona} placeholder="p. ej. Zaragoza" onChange={(e) => setLandZona(e.target.value)} />
-                  </label>
-                  <label>
-                    Servicio (opcional)
-                    <input value={landServicio} placeholder="p. ej. captación de pacientes de implantes" onChange={(e) => setLandServicio(e.target.value)} />
-                  </label>
-                  <label>
-                    WhatsApp destino (sin +)
-                    <input value={landTelefono} onChange={(e) => setLandTelefono(e.target.value)} />
-                  </label>
-                </div>
-                <div className="resource-actions">
-                  <button
-                    className="res-download"
-                    onClick={() => {
-                      const blob = new Blob([landingHtml], { type: "text/html;charset=utf-8" });
-                      const url = URL.createObjectURL(blob);
-                      const link = document.createElement("a");
-                      link.href = url;
-                      link.download = `landing-${landVertical}-${(landZona || "zona").toLocaleLowerCase("es").replace(/\s+/g, "-")}.html`;
-                      document.body.appendChild(link);
-                      link.click();
-                      link.remove();
-                      URL.revokeObjectURL(url);
-                    }}
-                  >
-                    Descargar HTML
-                  </button>
-                  <button
-                    className="res-copy"
-                    onClick={async () => {
-                      try { await navigator.clipboard.writeText(landingHtml); setToast("HTML de la landing copiado"); } catch { setToast("No se pudo copiar"); }
-                    }}
-                  >
-                    Copiar HTML
-                  </button>
-                  <button
-                    className="res-copy"
-                    onClick={() => {
-                      const blob = new Blob([landingHtml], { type: "text/html;charset=utf-8" });
-                      window.open(URL.createObjectURL(blob), "_blank");
-                    }}
-                  >
-                    Abrir en pestaña nueva
-                  </button>
-                </div>
-                <div className="landing-preview">
-                  <iframe title="Vista previa de la landing" srcDoc={landingHtml} sandbox="" />
-                </div>
-              </div>
-            </section>
-          </div>
+        {viewResourcesReady && view === "landings" && (
+          <Suspense fallback={<div className="loading">Preparando el estudio de landings…</div>}>
+            <LandingStudio verticales={verticales} />
+          </Suspense>
         )}
 
-        {view === "verticals" && verticales && (
+        {viewResourcesReady && view === "verticals" && verticales && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">PLAYBOOKS POR NICHO</p>
@@ -2747,7 +2916,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "watch" && vigilancia && (
+        {viewResourcesReady && view === "watch" && vigilancia && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">VIGILANCIA · ESPAÑA</p>
@@ -2951,7 +3120,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "cruces" && cruces && (
+        {viewResourcesReady && view === "cruces" && cruces && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">CRUCES DE DATOS</p>
@@ -3223,7 +3392,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "informe" && (
+        {viewResourcesReady && view === "informe" && (
           <div className="view">
             <section className="page-head">
               <p className="eyebrow">INFORME EJECUTIVO</p>
@@ -3372,7 +3541,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "funnels" && (
+        {viewResourcesReady && view === "funnels" && (
           <div className="view funnel-intel-view">
             <section className="page-head funnel-page-head">
               <p className="eyebrow">INTELIGENCIA COMERCIAL FORENSE</p>
@@ -3772,7 +3941,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "map" && (
+        {viewResourcesReady && view === "map" && (
           <div className="view map-view">
             <Suspense
               fallback={
@@ -3858,18 +4027,18 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <p className="eyebrow">ARCHIVO VISUAL VERIFICADO</p>
               <h1>Galerías que cargan y se pueden recorrer</h1>
               <p>
-                {fmt(summary.media)} archivos visuales comprobados, organizados
-                por ficha madre. Desliza, usa las flechas o abre cualquier pieza
+                {fmt(galleryMetrics.media)} archivos visuales comprobados, organizados
+                en {fmt(galleryMetrics.companies)} fichas madre. Desliza, usa las flechas o abre cualquier pieza
                 a pantalla completa; dentro del visor también funcionan las
                 teclas ← y →.
               </p>
             </section>
             <div className="gallery-stats">
               <span>
-                <b>{fmt(summary.withMedia)}</b> empresas con galería
+                <b>{fmt(galleryMetrics.withMedia)}</b> empresas con galería
               </span>
               <span>
-                <b>{fmt(summary.media)}</b> archivos disponibles y verificados
+                <b>{fmt(galleryMetrics.media)}</b> archivos disponibles y verificados
               </span>
               <span>
                 <b>{fmt(summary.mediaFileTypeCorrections)}</b> formatos
@@ -4105,7 +4274,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {view === "insights" && insights && (
+        {viewResourcesReady && view === "insights" && insights && (
           <div className="view">
             <section className="content-section">
               <div className="section-head">
@@ -4269,7 +4438,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             </section>
           </div>
         )}
-        {view === "playbooks" && insights && (
+        {viewResourcesReady && view === "playbooks" && insights && (
           <div className="view">
             <section className="content-section">
               <div className="section-head">
@@ -4314,7 +4483,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             </section>
           </div>
         )}
-        {view === "analysis" && analytics && (
+        {viewResourcesReady && view === "analysis" && analytics && (
           <div className="view">
             <section className="content-section">
               <div className="section-head">
@@ -4498,7 +4667,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             </section>
           </div>
         )}
-        {view === "expansion" && expansion && (
+        {viewResourcesReady && view === "expansion" && expansion && (
           <div className="view">
             <section className="content-section">
               <div className="section-head">
@@ -4573,7 +4742,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             </section>
           </div>
         )}
-        {view === "mystery" && mystery && (
+        {viewResourcesReady && view === "mystery" && mystery && (
           <div className="view">
             <section className="content-section">
               <div className="section-head">
@@ -4668,7 +4837,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             </section>
           </div>
         )}
-        {view === "blueprint" && editorial && (
+        {viewResourcesReady && view === "blueprint" && editorial && (
           <div className="view editorial-view">
             <section className="page-head">
               <p className="eyebrow">CONCLUSIONES Y EJECUCIÓN</p>
@@ -4712,11 +4881,13 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   <span>REDVITALIA · 22/08/2026</span>
                   <h2>{editorial[tab.id].title}</h2>
                 </div>
-                <EditorialText
-                  text={editorial[tab.id].body}
-                  companyById={companyById}
-                  onOpen={openCompany}
-                />
+                <Suspense fallback={<p className="editorial-loading">Preparando el informe…</p>}>
+                  <EditorialText
+                    text={editorial[tab.id].body}
+                    companyById={companyById}
+                    onOpen={openCompany}
+                  />
+                </Suspense>
               </article>
             ))}
           </div>
@@ -4903,14 +5074,14 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 de galería verificadas
               </span>
               <span>
-                <b>{fmt(v3Index?.stats.uniqueEvidenceUrlsGlobal || 0)}</b> URLs públicas
+                <b>{v3Index ? fmt(v3Index.stats.uniqueEvidenceUrlsGlobal) : resourceLoadState.v3Index === "error" ? "n/d" : "…"}</b> URLs públicas
                 únicas de funnel
               </span>
               <span>
-                <b>{fmt(v3Index?.stats.screenshots || 0)}</b> capturas de funnel
+                <b>{v3Index ? fmt(v3Index.stats.screenshots) : resourceLoadState.v3Index === "error" ? "n/d" : "…"}</b> capturas de funnel
               </span>
               <span>
-                <b>{fmt(v3Index?.stats.verified || 0)}</b> fichas comerciales
+                <b>{v3Index ? fmt(v3Index.stats.verified) : resourceLoadState.v3Index === "error" ? "n/d" : "…"}</b> fichas comerciales
                 verificadas
               </span>
             </div>

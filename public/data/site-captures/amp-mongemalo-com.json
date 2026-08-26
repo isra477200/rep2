@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-mongemalo-com",
+  "name": "Luis Monge Malo",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://mongemalo.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Solo existen dos caminos",
+    "promise": null,
+    "audience": null,
+    "offer": "Email diario de ventas como funnel principal ('cómo generar dinero sea cual sea tu situación') desde el que vende formaciones y asesoría de ventas para profesionales y empresas.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": null,
+    "guarantee": "No se menciona",
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-mongemalo-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://mongemalo.com/",
+      "finalUrl": "https://mongemalo.com/",
+      "title": "Este es el día en el que tomaste el camino equivocado - Luis Monge Malo",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:30:52.343Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-mongemalo-com/site-c9935c2770-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 3239,
+        "bytes": 161716,
+        "sha256": "ca723acd390d24679323aa4f0f25380d770290ec29aeb2d3495d93389a16889d"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-mongemalo-com/site-c9935c2770-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1332,
+        "bytes": 34834,
+        "sha256": "91fd00e2bacc5b226491f921674ae0c883ad65717c85f7eadcb51d68f4271d48"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Solo existen dos caminos",
+        "headings": [
+          "Solo existen dos caminos",
+          "Cada día intentaré venderte algo",
+          "Ahórrate un disgusto"
+        ],
+        "ctas": [
+          "Saltar al contenido",
+          "Suscribirse",
+          "política de privacidad",
+          "LEGAL"
+        ],
+        "excerpt": "Luis Monge Malo Es imposible no triunfar en esta vida Solo existen dos caminos Te desensibiliza, el sexo. Si lo haces con mucha gente. Que pierdes la capacidad de conectar emocionalmente, dicen. Los niños de la guerra pierden el malestar por matar. Y los atletas de ultramaratón pierden la sensibilidad en pies y articulaciones. – Cualquier cosa de valor que manoseas, se desgasta. A menudo lo pierdes sin darte cuenta de que ahí había algo de valor. Como la creatividad de cuando eras niño, o la capacidad de insistir hasta conseguir tu objetivo. O la libertad. Has pasado años regalándosela a cualquiera que te la ha pedido, y ha desaparecido. Todo porque preferiste caer bien a vivir bien. Concediste la reunión que no servía para nada, ayudaste al tipo que al que no se podía ayudar y aceptaste ese trabajo o cliente para salir adelante. Te dijiste que era temporal, la última vez, que en cuanto estuvieras en un lugar seguro cambiarías. Pero después de años haciéndolo olvidaste que un día fuiste creativo, luchador y libre. Seguiste eligiendo evitar el conflicto y la incertidumbre. Y donde debías decir que no, dijiste que sí. Una vez, diez veces, mil veces. Creíste tan poco en ti mismo que consideraste que prostituirte era imprescindible para sobrevivir. Cambiaste la capacidad de divertirte por pagar la factura de la luz. Ahora, en lugar de fuerte, libre y creativo eres madrugador, obediente, rellenas informes y envías documentos adjuntos. El peor trato de la historia si me preguntas. Eres el niño de la guerra que no siente nada al matar. Lo único que lo que tú matas es tu vida. No tienes la libertad que mereces por que toleras la esclavitud que tienes. Y eso no cambiará hasta que sepas vender grandes cantidades en condiciones de libertad. Cada día envío un email contando cómo hacerlo. Te apuntas ahí: Cada día intentaré venderte algo Y lo haré de una forma tan descarada que si prestas atención a cómo lo hago, es decir, si no te limitas a leer lo que escribo sino que te fijas en cómo lo escribo, encontrarás tantas lecciones de cómo generar dinero sea cual sea tu situación, que aunque no compres nada ya te habrá merecido la pena: Ahórrate un disgusto En el primer email que recibas encontrarás blasfemia y mal gusto. Luego la cosa empeora. Si te escandalizas con facilidad mi mensaje no es para ti, la libertad no es para ti y mi recomendación es que no te apuntes. Esto no es un truco de marketing ni nada parecido, es mi recomendación sincera y genuina. LEGAL"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3239
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:27.280Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-mongemalo-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "Solo existen dos caminos",
+            "capturedAt": "2026-08-26T11:30:52.343Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-mongemalo-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T11:30:52.343Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

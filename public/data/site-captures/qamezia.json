@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "qamezia",
+  "name": "Qamezia",
+  "primaryCountry": "España",
+  "markets": [
+    "España",
+    "Europa"
+  ],
+  "website": "https://www.qamezia.com/dentistas",
+  "status": "partial",
+  "coverage": {
+    "planned": 5,
+    "captured": 2,
+    "blocked": 0,
+    "failed": 3
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "“Sistema IA para clínicas dentales: agenda llena, presupuestos que se cierran, pacientes que vuelven.”",
+    "promise": "Cerrar las fugas de revenue entre búsqueda, conversación, cita, presupuesto, reseña y recall, no limitarse a generar tráfico.",
+    "audience": "Clínica dental española con fugas de WhatsApp, presupuestos abiertos, reseñas escasas, recalls manuales y capacidad insuficiente de recepción.",
+    "offer": "Sistema operativo IA local productizado, no agencia de captación gestionada pura: web/AEO/Google Business Profile, agente WhatsApp, agenda, recuperación de presupuestos, reseñas, reactivación y dashboard. La landing dental es una de 12 verticales.",
+    "mechanism": [
+      "Web/GBP/AEO → WhatsApp que detecta intención y agenda sin diagnosticar → secuencia 48h/7d/14d para presupuestos → reseña tras alta → recall 5/11 meses → dashboard y mejora mensual."
+    ],
+    "primaryCta": "“Ver planes y precios” / “Empezar ahora” / “Reservar”.",
+    "proof": "Benchmarks declarados, demo funcional, escenarios cuantificados, garantía medible, procesos/tiempos, pricing y términos públicos; aún sin casos reales dentales.",
+    "price": "Productos distintos: Dental Boost 290 € + 19 €/mes opcional; Pack Optimización IA 390 € + 29 €/mes opcional; Web + Visibilidad IA 490 € + 29 €/mes; Dental Growth 1.490 € + 99 €/mes. La reserva puede ser 99 € descontable. AI Domination no muestra precio.",
+    "guarantee": "Dental: si en 30 días no aparecen al menos cinco resultados medibles atribuibles —lead, cita, reseña, presupuesto cerrado o llamada desde Maps— devuelve el setup; no garantiza pacientes. Checkout genérico comunica garantía de 30 días/puesta en marcha, con alcance diferente.",
+    "funnel": [
+      "Dental expone seis pains, módulos, demo, proceso, comparación, packs y FAQ.",
+      "Agenda, presupuestos y pacientes recurrentes sin ampliar recepción.",
+      "Benchmarks y demo ilustrativa, garantía/tiempos y transparencia de estar en validación; no casos reales.",
+      "Planes/precios, empezar/reservar, auditoría, persona, test y email.",
+      "Nombre/teléfono/zona/sector/problema, email opcional; test empieza sin email; checkout posterior no inspeccionado.",
+      "Revisión web, Maps, contacto móvil, presupuestos, WhatsApp y oportunidad; AI Domination se reserva para clínicas con volumen/múltiples doctores.",
+      "Respuesta objetivo 24h, auditoría dental 48–72h y reserva €99 descontable; no calendario de venta público.",
+      "Packs estándar/Shopify o propuesta personalizada; quote/contrato escrito prevalece sobre web."
+    ]
+  },
+  "pages": [
+    {
+      "id": "qamezia-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://www.qamezia.com/",
+      "finalUrl": null,
+      "title": "Qamezia",
+      "status": "failed",
+      "capturedAt": "2026-08-26T11:48:37.446Z",
+      "fullPage": null,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": "Unable to capture screenshot"
+    },
+    {
+      "id": "qamezia-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://www.qamezia.com/dentistas",
+      "finalUrl": null,
+      "title": "Qamezia",
+      "status": "failed",
+      "capturedAt": "2026-08-26T11:48:35.807Z",
+      "fullPage": null,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": "Unable to capture screenshot"
+    },
+    {
+      "id": "qamezia-conversion",
+      "role": "conversion",
+      "label": "Conversión o contacto",
+      "requestedUrl": "https://www.qamezia.com/contacto",
+      "finalUrl": null,
+      "title": "Contacto",
+      "status": "failed",
+      "capturedAt": "2026-08-26T11:48:35.704Z",
+      "fullPage": null,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": "Unable to capture screenshot"
+    },
+    {
+      "id": "qamezia-pricing",
+      "role": "pricing",
+      "label": "Precios u oferta",
+      "requestedUrl": "https://www.qamezia.com/comprar",
+      "finalUrl": "https://www.qamezia.com/comprar",
+      "title": "Comprar QAmezIA — desde 390 € pago único | Qamezia",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:48:41.536Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/qamezia/site-fe9a38cdd0-pricing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1765,
+        "bytes": 49514,
+        "sha256": "60e21a2dfd4ee8b7b41f6c67cd3414433078b9ca9192f74fe7cc38f08474b606"
+      },
+      "thumbnail": {
+        "file": "/evidence/qamezia/site-fe9a38cdd0-pricing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 726,
+        "bytes": 10422,
+        "sha256": "4110dca90e1e44595628f23486e4ff4ac3d587a09e4e18fbea1f1fc87276c892"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Elige tu plan QAmezIA",
+        "headings": [
+          "Elige tu plan QAmezIA",
+          "Pack Web + Visibilidad IA",
+          "Pack Optimización IA",
+          "Sectores con sistema propio",
+          "Más sectores",
+          "Sistema y empresa"
+        ],
+        "ctas": [
+          "QAmezIA",
+          "Inicio",
+          "vigÍA",
+          "No tienes web",
+          "Ya tienes web",
+          "Contacto",
+          "Test IA gratis",
+          "Reservar",
+          "Lee cómo funciona",
+          "hola@qamezia.com",
+          "Clínicas estéticas",
+          "Clínicas dentales",
+          "Reformas",
+          "Abogados",
+          "Inmobiliarias",
+          "Fisioterapia",
+          "Psicología",
+          "Cerrajeros",
+          "Talleres",
+          "Fontanería",
+          "Electricistas",
+          "Academias",
+          "SEO local",
+          "Google Maps para negocios",
+          "Pack Web + Visibilidad IA (sin web)",
+          "Pack Optimización IA (ya tienes web)",
+          "Test de visibilidad en IA (gratis)",
+          "Casos funcionales",
+          "Por qué Qamezia",
+          "Sobre nosotros",
+          "Politica de privacidad",
+          "Condiciones del servicio",
+          "Eliminacion de datos",
+          "Abrir chat"
+        ],
+        "excerpt": "Elige tu plan QAmezIA Pago único, sin permanencia. Si no tienes web te la montamos y la dejamos visible en la IA (490 €); si ya tienes, optimizamos la tuya (390 €). El mantenimiento (29 €/mes) es opcional. ¿Solo quieres seguimiento mensual? Mira vigÍA. Pack Web + Visibilidad IA 490 € + 29 €/mes (mantenimiento opcional) 490 € pago único · precio fundador Web local profesional + ficha de Google Optimizada para que la IA te recomiende (AEO/GEO) Datos estructurados, FAQs y llms.txt Mantenimiento opcional 29 €/mes Pago único, sin permanencia Pack Optimización IA 390 € 390 € pago único Optimizamos TU web para la IA (AEO/GEO) Schema + FAQs + llms.txt Que ChatGPT, Gemini, Perplexity y Claude te citen Pago único ¿Dudas antes de pagar? Lee cómo funciona o escribe a hola@qamezia.com Sistema operativo IA para que negocios locales españoles consigan más clientes desde Google, Maps y WhatsApp. Sin permanencia · garantía de puesta en marcha. Sectores con sistema propio Clínicas estéticas Clínicas dentales Reformas Abogados Inmobiliarias Fisioterapia Más sectores Psicología Cerrajeros Talleres Fontanería Electricistas Academias Sistema y empresa SEO local Google Maps para negocios Pack Web + Visibilidad IA (sin web) Pack Optimización IA (ya tienes web) Test de visibilidad en IA (gratis) Casos funcionales Por qué Qamezia Sobre nosotros Contacto © 2026 Qamezia. Todos los derechos reservados. Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1766
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "qamezia-proof",
+      "role": "proof",
+      "label": "Prueba y resultados",
+      "requestedUrl": "https://www.qamezia.com/casos-de-exito",
+      "finalUrl": "https://www.qamezia.com/casos-de-exito",
+      "title": "Ejemplos de Presencia Local para Negocios | QAMEZIA",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:48:42.100Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/qamezia/site-86a7a9df16-proof.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 5269,
+        "bytes": 50626,
+        "sha256": "e7ad4ab67b069c5ba1838043900c3f74f0cc1d9772a6806fb103e041a5f8c4ee"
+      },
+      "thumbnail": {
+        "file": "/evidence/qamezia/site-86a7a9df16-proof-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 2168,
+        "bytes": 12414,
+        "sha256": "9e716883b9c9c8bac4f2e21f20c48f162ca5a69c2352c59fb46b846e6e604865"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Mira como cambia la decision cuando cambia la presencia.",
+        "headings": [
+          "Mira como cambia la decision cuando cambia la presencia.",
+          "De web del 2000 a presencia local que vende.",
+          "Taller Auto 2000",
+          "Pide cita sin perder tiempo.",
+          "Transformaciones que un cliente entiende sin que nadie se las explique.",
+          "Taller mecanico",
+          "Clinica local",
+          "Restaurante local",
+          "Servicio local",
+          "Si tu web no cambia la percepcion, no esta haciendo su trabajo.",
+          "Sectores con sistema propio",
+          "Más sectores",
+          "Sistema y empresa"
+        ],
+        "ctas": [
+          "QAmezIA",
+          "Inicio",
+          "vigÍA",
+          "No tienes web",
+          "Ya tienes web",
+          "Contacto",
+          "Test IA gratis",
+          "Pedir revision gratis",
+          "Ver packs",
+          "Ver antes completo",
+          "Ver despues completo",
+          "Todos",
+          "Talleres",
+          "Clinicas",
+          "Restaurantes",
+          "Servicios",
+          "hola@qamezia.com",
+          "Clínicas estéticas",
+          "Clínicas dentales",
+          "Reformas",
+          "Abogados",
+          "Inmobiliarias",
+          "Fisioterapia",
+          "Psicología",
+          "Cerrajeros",
+          "Fontanería",
+          "Electricistas",
+          "Academias",
+          "SEO local",
+          "Google Maps para negocios",
+          "Pack Web + Visibilidad IA (sin web)",
+          "Pack Optimización IA (ya tienes web)",
+          "Test de visibilidad en IA (gratis)",
+          "Casos funcionales",
+          "Por qué Qamezia",
+          "Sobre nosotros"
+        ],
+        "excerpt": "Casos de exito Mira como cambia la decision cuando cambia la presencia. No vendemos una web como decoracion. Vendemos el salto de percepcion: de negocio dudoso a opcion clara. busqueda local intencion real web preparada confianza visible accion directa llamada o WhatsApp seguimiento lead controlado arrastra la barra De web del 2000 a presencia local que vende. La barra compara dos paginas completas. Izquierda: caos, ruido y contacto escondido. Derecha: claridad, confianza y accion inmediata. MENU VISITAS 000128 Taller Auto 2000 Reparacion coches - mecanica - aceite - ruedas - todo barato NUESTROS SERVICIOS * Cambio aceite ........................ llamar para precio * Ruedas ........................ llamar para precio * Pre ITV ........................ llamar para precio * Mecanica general ........................ llamar para precio * Diagnosis ........................ llamar para precio imagen_taller_final.jpg foto no disponible CONTACTO Telefono escondido al final. Sin WhatsApp visible. Sin zona clara. escenarios por sector Transformaciones que un cliente entiende sin que nadie se las explique. Taller mecanico antes Ficha de Google activa, pero sin web seria que explicara servicios, horarios, zona y como pedir cita. despues Web local con servicios claros, llamada visible, WhatsApp, bloque de confianza y SEO basico por zona. Objetivo del cambio Mas confianza antes de llamar Clinica local Web antigua, lenta y con tratamientos mal explicados. Pedir cita desde el movil era incomodo. Estructura limpia por tratamientos, CTA de cita, textos simples y presencia visual mas confiable. Menos friccion para pedir cita Restaurante local Carta dispersa, horarios poco claros y ninguna pagina preparada para reservas o llamadas desde movil. Pagina rapida con carta, ubicacion, llamadas, WhatsApp y estructura para busquedas locales. Reserva mas facil Servicio local Dependia de referidos. Cuando alguien buscaba el nombre, no encontraba una pagina que respaldara el presupuesto. Web local con zonas, servicios, contacto directo y una primera impresion profesional. Mejor respaldo comercial Si tu web no cambia la percepcion, no esta haciendo su trabajo. Pide la revision gratuita. Te diremos que falla, que arreglar primero y si el pack tiene sentido para tu negocio. Sistema operativo IA para que negocios locales españoles consigan más clientes desde Google, Maps y WhatsApp. Sin permanencia · garantía de puesta en marcha. Sectores con sistema propio Clínicas estéticas Clínicas dentales Reformas Abogados Inmobiliarias Fisioterapia Más sectores Psicología Cerrajeros Talleres Fontanería Electricistas Academias Sistema y empresa SEO local Google Maps para negocios Pack Web + Visibilidad IA (sin web) Pack Optimización IA (ya tienes web) Test de visibilidad en IA (gratis) Casos funcionales Por qué Qamezia Sobre nosotros Contacto © 2026 Qamezia. Todos los derechos reservados. Sistema operativo IA local · 12 sectores · Garantía 30 días · Sin permanencia · Datos en servidores europeos."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 5270
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:13:54.505Z"
+}

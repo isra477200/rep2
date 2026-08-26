@@ -326,9 +326,15 @@ const isAbsenceRecord = (anuncio) =>
 
 const isActualAdObservation = (anuncio) => {
   if (isAbsenceRecord(anuncio)) return false;
+  if (anuncio.copyAvailable === false) return false;
+  if (/^(?:sin_texto|fallido|pendiente)$/i.test(String(anuncio.estadoOcr || "")))
+    return false;
   const title = String(anuncio.titular || "").trim();
   const text = String(anuncio.texto || "").trim();
-  return Boolean(anuncio.file || embeddedIds(anuncio).length || title || text);
+  const cta = String(anuncio.cta || "").trim();
+  // Un ID o un archivo demuestran que la creatividad existe, pero no que su
+  // copy esté transcrito. Esa evidencia visual se contabiliza por separado.
+  return Boolean(title || text || cta);
 };
 
 const transcriptByCompany = new Map();
@@ -467,6 +473,22 @@ const items = companies.map((company) => {
     metaIds: new Set(),
     googleIds: new Set(),
   };
+  const mediaBucket = mediaEvidenceByCompany.get(company.id) || new Map();
+
+  // El manifiesto de identidad es evidencia exacta incluso cuando la imagen
+  // no contiene texto legible. Sus IDs deben figurar en cobertura, aunque no
+  // generen una transcripción.
+  for (const media of mediaBucket.values()) {
+    if (media.platform === "meta") {
+      detail.metaIds.add(media.externalId);
+      detail.sourceUrlByExternalId.set(
+        `meta:${media.externalId}`,
+        exactMetaUrl(media.externalId),
+      );
+    } else if (media.platform === "google") {
+      detail.googleIds.add(media.externalId);
+    }
+  }
 
   for (const id of transcript.metaIds) {
     detail.metaIds.add(id);
@@ -497,7 +519,6 @@ const items = companies.map((company) => {
     ...detail.libraryLinks,
   ]).sort();
 
-  const mediaBucket = mediaEvidenceByCompany.get(company.id) || new Map();
   const evidenceByKey = new Map();
   for (const [platform, externalIds] of [
     ["meta", metaIds],
@@ -748,7 +769,7 @@ const orphanItems = [...orphanTranscripts.values()]
 
 const output = {
   generatedAt: new Date().toISOString().slice(0, 10),
-  note: "Cobertura de evidencia individualizable, no rendimiento publicitario. Los recuentos agregados de Meta/Google y creativeArchive se conservan aparte: no crean anuncios ni inflan el objetivo con variantes. El objetivo es min(10, evidencia canónica disponible).",
+  note: "Cobertura de evidencia individualizable, no rendimiento publicitario. Los recuentos agregados de Meta/Google y creativeArchive se conservan aparte: no crean anuncios ni inflan el objetivo con variantes. Una creatividad sin texto legible cuenta como evidencia visual, nunca como transcripción. El objetivo es min(10, evidencia canónica disponible).",
   totalCompanies: companies.length,
   summary: {
     statusCounts,

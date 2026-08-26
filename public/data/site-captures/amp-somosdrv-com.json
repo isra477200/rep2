@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-somosdrv-com",
+  "name": "DRV Sistemas",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://somosdrv.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "B2B lead generation",
+    "promise": null,
+    "audience": null,
+    "offer": "Empresa valenciana de telemarketing B2B: generación de leads, concertación de visitas comerciales, account executives y outsourcing comercial completo.",
+    "mechanism": [],
+    "primaryCta": "Más información",
+    "proof": null,
+    "price": null,
+    "guarantee": "Anuncian 'resultados garantizados' y 87,2% de clientes que repiten campaña",
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-somosdrv-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://somosdrv.com/",
+      "finalUrl": "https://www.somosdrv.com/",
+      "title": "Servicios de telemarketing B2B para empresas | Somos DRV",
+      "status": "captured",
+      "capturedAt": "2026-08-25T17:24:20.503Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-somosdrv-com/site-52f49a518f-homepage.webp",
+        "type": "image/webp",
+        "width": 1270,
+        "height": 3041,
+        "bytes": 112698,
+        "sha256": "878bcc2cb9ef0c9093d39f6ba3c993797d597ce6b2b12046bb3e765cdfcfd193"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-somosdrv-com/site-52f49a518f-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1245,
+        "bytes": 26634,
+        "sha256": "9a79619ad8b71838216820ee69b671321f746a4037628a19cea621e152687382"
+      },
+      "text": {
+        "language": "es",
+        "h1": "B2B lead generation",
+        "headings": [
+          "B2B lead generation",
+          "Telemarketing B2B para empresas",
+          "Telemarketing B2B: Para quién",
+          "Por qué DRV",
+          "Contacto"
+        ],
+        "ctas": [
+          "Ir al contenido",
+          "Tel. 963 145 145",
+          "Linkedin",
+          "Youtube",
+          "Spotify",
+          "Telemarketing B2B",
+          "Casos de éxito",
+          "Blog",
+          "Contacto",
+          "Resultados garantizados",
+          "B2B lead generation",
+          "Más información",
+          "Go to slide 01",
+          "Go to slide 11",
+          "Concertar visitas",
+          "Account Executive",
+          "Outsource de ventas",
+          "Empresas",
+          "ONG",
+          "Gasolineras",
+          "ITV",
+          "Banca",
+          "Salud y seguros",
+          "Consumo",
+          "Administración pública",
+          "Y más",
+          "Reservar videoconferencia",
+          "Ver presentación comercial",
+          "Aviso Legal",
+          "Privacidad",
+          "Enviar"
+        ],
+        "excerpt": "Tel. 963 145 145 Telemarketing B2BLead generation Concertación de visitas comerciales Servicios AE Account Executive Outsourcing en ventas Casos de éxito Blog Contacto B2B lead generation Para conseguir nuevos clientes de forma constante. Telemarketing B2B para empresas Desde Somos DRV trabajamos en la gestión de clientes y contactos, por ello ofrecemos servicios de telemarketing outbound para empresas. Todos nuestros servicios están enfocados en mejorar la comunicación, aumentar la satisfacción y facilitar estrategias que generen más ventas y mayor retorno. Concertar visitas Account Executive Outsource de ventas Telemarketing B2B: Para quién Empresas ONG Gasolineras ITV Banca Salud y seguros Consumo Administración pública Y más Por qué DRV En el mercado desde 2010. El 87,2% de clientes retornan en nuevas campañas. Certificamos, con la ISO 9001, la calidad de nuestros servicios y la seguridad de nuestros datos. Especialización por sector y modelo (B2B vs B2G). Telemarketing B2B Lead generation Concertación de visitas comerciales Servicios AE Account Executive Outsourcing en ventas © Copyright 2024. All rights reserved. | Aviso legal – Protección de datos – Política de privacidad – Política de cookies – Política de calidad"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3042
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:35.255Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-somosdrv-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "B2B lead generation",
+            "capturedAt": "2026-08-25T17:24:20.503Z"
+          }
+        ]
+      },
+      "primaryCta": {
+        "source": "captured_site_text",
+        "method": "first_filtered_commercial_cta_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-somosdrv-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.ctas[]",
+            "value": "Más información",
+            "capturedAt": "2026-08-25T17:24:20.503Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-somosdrv-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-25T17:24:20.503Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-atresmedia-com",
+  "name": "Atresmedia",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://atresmedia.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "ATRESMEDIA AUDIOVISUAL",
+    "promise": null,
+    "audience": null,
+    "offer": "Compra de la agencia Last Lap (eventos/marketing deportivo); citado por Bondo Advisors y el informe M&A de Iberia entre los compradores locales más activos del sector publicitario.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-atresmedia-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://atresmedia.com/",
+      "finalUrl": "https://www.atresmedia.com/",
+      "title": "Atresmedia | ATRESMEDIA",
+      "status": "captured",
+      "capturedAt": "2026-08-25T17:00:45.735Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-atresmedia-com/site-6e7ee6e67b-homepage.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 32096,
+        "sha256": "44276b11ccdf78db488f8faa335579c4c646e4ec3e89b5a790ef1e4a26babaea"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-atresmedia-com/site-6e7ee6e67b-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 292,
+        "bytes": 6190,
+        "sha256": "5c93f10b2b991729c48182bdf11dc9fefe01574e3c22b6481f786f490e05ad5e"
+      },
+      "text": {
+        "language": "es",
+        "h1": "ATRESMEDIA AUDIOVISUAL",
+        "headings": [
+          "ATRESMEDIA AUDIOVISUAL",
+          "ATRESMEDIA RADIO",
+          "ATRESMEDIA CINE",
+          "ATRESMEDIA PUBLICIDAD",
+          "ATRESMEDIA DIVERSIFICACIÓN",
+          "FUNDACIÓN ATRESMEDIA",
+          "INICIATIVAS CORPORATIVAS DE RESPONSABILIDAD SOCIAL",
+          "ATRESMEDIA CORPORACIÓN"
+        ],
+        "ctas": [
+          "SOBRE NOSOTROS",
+          "OFICINA DE PRENSA",
+          "ACCIONISTAS E INVERSORES",
+          "Atresmedia",
+          "Antena 3",
+          "laSexta",
+          "Neox",
+          "Nova",
+          "Mega",
+          "Atreseries",
+          "Onda Cero",
+          "Europa FM",
+          "Melodía FM",
+          "Atresplayer",
+          "Flooxer",
+          "Aviso legal",
+          "Política de privacidad",
+          "Política de cookies",
+          "Cond. de participación",
+          "Configuración de privacidad",
+          "Accesibilidad",
+          "Aceptar y continuar",
+          "Suscribirse por 7,99€/mes",
+          "Ya tengo cuenta"
+        ],
+        "excerpt": "SOBRE NOSOTROS OFICINA DE PRENSA ACCIONISTAS E INVERSORES ATRESMEDIA AUDIOVISUAL ATRESMEDIA RADIO ATRESMEDIA CINE ATRESMEDIA PUBLICIDAD ATRESMEDIA DIVERSIFICACIÓN FUNDACIÓN ATRESMEDIA INICIATIVAS CORPORATIVAS DE RESPONSABILIDAD SOCIAL ATRESMEDIA CORPORACIÓN Antena 3 laSexta Neox Nova Mega Atreseries Onda Cero Europa FM Melodía FM Atresplayer Flooxer Atresmedia Corporación de Medios de Comunicación SA © Atresmedia Corporación de Medios de Comunicación, S.A - A. Isla Graciosa 13, 28703, S.S. de los Reyes, Madrid. Reservados todos los derechos Aviso legal Política de privacidad Política de cookies Cond. de participación Configuración de privacidad Accesibilidad Acepta cookies para navegar sin coste adicional Aceptando las cookies nos ayudas a mantener nuestro modelo de información y entretenimiento gratuito para ti. Si prefieres no recibir publicidad ni contenidos personalizados, y por tanto no das el consentimiento al uso de cookies, deberás tener una suscripción a atresplayer premium familiar. Por 7,99 € al mes, tendrás acceso a Todo el universo de contenidos de Atresplayer, incluyendo originales y exclusivos, sin publicidad, con hasta 3 dispositivos simultáneos y con calidad máxima 4K. Todo el contenido de información y entretenimiento de los sites del grupo Atresmedia (Antena 3, La Sexta, Onda Cero, Europa FM, Neox, Nova…), con publicidad limitada y no personalizada. Si no deseas pagar, acepta cookies y continúa navegando por este site de forma gratuita."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1523
+      },
+      "cookieAction": "rejected",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:07:55.942Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-atresmedia-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "ATRESMEDIA AUDIOVISUAL",
+            "capturedAt": "2026-08-25T17:00:45.735Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-atresmedia-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-25T17:00:45.735Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

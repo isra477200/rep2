@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "artic-agents",
+  "name": "Artic Agents",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://sevilla-2000.articagents.com/valora-tu-propiedad-page",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "¿Estás pensando en vender tu propiedad?",
+    "promise": "¿Estás pensando en vender tu propiedad?",
+    "audience": "Público inferido de la especialización declarada: Meta Ads, captación bajo marca del cliente y cualificación por WhatsApp/IA.",
+    "offer": "Citas con propietarios que ya quieren vender para agencias inmobiliarias.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "Filtra agencias con más de 100.000 € anuales; precio del servicio no observado.",
+    "guarantee": "Garantiza citas cualificadas, sin volumen ni condicionado visible.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "artic-agents-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://sevilla-2000.articagents.com/valora-tu-propiedad-page",
+      "finalUrl": "https://sevilla-2000.articagents.com/valora-tu-propiedad-page",
+      "title": "sevilla-2000.articagents.com/valora-tu-propiedad-page",
+      "status": "captured",
+      "capturedAt": "2026-08-26T16:02:56.060Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/artic-agents/site-d7844bc9a0-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1245,
+        "bytes": 46586,
+        "sha256": "62ba949a0a4e371b0a61e473d889e94dac7b65f6490e96e1a3daec106045b94a"
+      },
+      "thumbnail": {
+        "file": "/evidence/artic-agents/site-d7844bc9a0-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 512,
+        "bytes": 9974,
+        "sha256": "10e5a4b220453fea8e1ceb10992fe44725d39e4d1ca39d3c1cf775159551793a"
+      },
+      "text": {
+        "language": "es",
+        "h1": "¿Estás pensando en vender tu propiedad?",
+        "headings": [
+          "¿Estás pensando en vender tu propiedad?",
+          "Nos encargamos de todo para que vendas sin complicaciones: desde valorar tu propiedad hasta encontrar al comprador ideal y negociar el mejor precio por ti.",
+          "Sevilla 2000",
+          "Política de Privacidad"
+        ],
+        "ctas": [
+          "Siguiente",
+          "📞 +34 659 08 16 55",
+          "juancarlos.galindo@sevilla-2000.com",
+          "Política de Privacidad"
+        ],
+        "excerpt": "¿Estás pensando en vender tu propiedad? Nos encargamos de todo para que vendas sin complicaciones: desde valorar tu propiedad hasta encontrar al comprador ideal y negociar el mejor precio por ti. 100% Gratuito Sin compromiso Sevilla 2000 📞 +34 659 08 16 55 ✉ juancarlos.galindo@sevilla-2000.com 📍 Av. de Diego Martínez Barrio, 1, 41013 Sevilla, España Hecho por Artic Agents • 2026 • Sevilla 2000 | Todos los derechos reservados Política de Privacidad Este sitio no forma parte del sitio web de Facebook o Facebook Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc. Al dejar tu número de teléfono, permites a nombre de la empresa contactar contigo. Esta información será utilizada exclusivamente con el propósito de proporcionarte detalles adicionales sobre nuestros servicios, promociones o cualquier otra comunicación relevante. Tu privacidad es importante para nosotros y tus datos no serán compartidos con terceros sin tu consentimiento explícito."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1246
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:51.544Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "artic-agents-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "¿Estás pensando en vender tu propiedad?",
+            "capturedAt": "2026-08-26T16:02:56.060Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "artic-agents-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T16:02:56.060Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

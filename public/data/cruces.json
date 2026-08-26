@@ -4,13 +4,13 @@
  "elasticidadGarantia": [
   {
    "label": "Sin garantía publicada",
-   "n": 101,
-   "medianEur": 250
+   "n": 107,
+   "medianEur": 213
   },
   {
    "label": "Garantía floja (1-2)",
-   "n": 7,
-   "medianEur": 197
+   "n": 1,
+   "medianEur": null
   },
   {
    "label": "Garantía media (3)",
@@ -219,11 +219,11 @@
   },
   {
    "pais": "España",
-   "n": 334,
-   "precioPublico": 26,
-   "garantia": 77,
-   "adsActivos": 58,
-   "indice": 54
+   "n": 388,
+   "precioPublico": 23,
+   "garantia": 70,
+   "adsActivos": 64,
+   "indice": 52
   },
   {
    "pais": "Alemania",
@@ -319,14 +319,14 @@
    {
     "promesa": "Genérica",
     "remedio": "Devolución",
-    "n": 80,
-    "espana": 28
+    "n": 83,
+    "espana": 31
    },
    {
     "promesa": "Genérica",
     "remedio": "Sin remedio explícito",
-    "n": 26,
-    "espana": 9
+    "n": 21,
+    "espana": 8
    },
    {
     "promesa": "Plazo",
@@ -337,20 +337,20 @@
    {
     "promesa": "Calidad",
     "remedio": "Devolución",
-    "n": 9,
-    "espana": 4
-   },
-   {
-    "promesa": "Plazo",
-    "remedio": "Sin remedio explícito",
-    "n": 6,
-    "espana": 2
+    "n": 11,
+    "espana": 6
    },
    {
     "promesa": "Volumen",
     "remedio": "Devolución",
     "n": 5,
     "espana": 1
+   },
+   {
+    "promesa": "Plazo",
+    "remedio": "Sin remedio explícito",
+    "n": 5,
+    "espana": 2
    },
    {
     "promesa": "Volumen",
@@ -361,20 +361,20 @@
    {
     "promesa": "Calidad",
     "remedio": "Sin remedio explícito",
-    "n": 4,
+    "n": 3,
     "espana": 2
    },
    {
     "promesa": "Volumen",
     "remedio": "Seguimos gratis",
-    "n": 1,
-    "espana": 1
+    "n": 2,
+    "espana": 2
    },
    {
     "promesa": "Plazo",
     "remedio": "Seguimos gratis",
-    "n": 1,
-    "espana": 0
+    "n": 2,
+    "espana": 1
    },
    {
     "promesa": "Genérica",
@@ -627,32 +627,32 @@
    {
     "rasgo": "Garantía sustancial publicada",
     "pctTop": 100,
-    "pctBase": 89
+    "pctBase": 85
    },
    {
     "rasgo": "Precio público convertible",
     "pctTop": 48,
-    "pctBase": 22
+    "pctBase": 21
    },
    {
     "rasgo": "Anuncios activos verificados",
     "pctTop": 37,
-    "pctBase": 29
+    "pctBase": 33
    },
    {
     "rasgo": "Promesa numérica en la oferta",
     "pctTop": 7,
-    "pctBase": 4
+    "pctBase": 5
    },
    {
     "rasgo": "CTA de conversión documentado",
     "pctTop": 100,
-    "pctBase": 65
+    "pctBase": 62
    },
    {
     "rasgo": "Prueba social documentada",
     "pctTop": 100,
-    "pctBase": 63
+    "pctBase": 65
    },
    {
     "rasgo": "Multi-mercado",
@@ -662,7 +662,7 @@
    {
     "rasgo": "Galería de creatividades",
     "pctTop": 48,
-    "pctBase": 16
+    "pctBase": 22
    }
   ]
  },
@@ -735,19 +735,19 @@
  "promesasPais": [
   {
    "pais": "España",
-   "n": 57,
+   "n": 63,
    "dominante": "Devolución del dinero",
-   "nDominante": 42
+   "nDominante": 47
   },
   {
    "pais": "Estados Unidos",
-   "n": 10,
+   "n": 8,
    "dominante": "Devolución del dinero",
    "nDominante": 6
   },
   {
    "pais": "Portugal",
-   "n": 7,
+   "n": 6,
    "dominante": "Devolución del dinero",
    "nDominante": 5
   }
@@ -1303,7 +1303,7 @@
   ]
  },
  "findings": [
-  "Entre cuotas mensuales, quien publica garantía fuerte cobra una mediana de 29 € frente a 250 € de quien no promete nada: la garantía se usa como arma de entrada a precio agresivo — RedVitalia puede romper ese patrón cobrando premium CON garantía.",
+  "Entre cuotas mensuales, quien publica garantía fuerte cobra una mediana de 29 € frente a 213 € de quien no promete nada: la garantía se usa como arma de entrada a precio agresivo — RedVitalia puede romper ese patrón cobrando premium CON garantía.",
   "En España el tramo de precio menos poblado es 900–1200 € (5 actores): hueco de posicionamiento directo.",
   "78 fichas declaran SLA de contacto; el más agresivo es Habitissimo (en 1 min). Un SLA firmado de 10 minutos sitúa a RedVitalia en el 1% del mercado."
  ]

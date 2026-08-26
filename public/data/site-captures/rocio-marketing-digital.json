@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "rocio-marketing-digital",
+  "name": "Rocío - Marketing Digital",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://smc.rociobonachera.com/captacion",
+  "status": "partial",
+  "coverage": {
+    "planned": 2,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti",
+    "promise": "Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti",
+    "audience": "Público inferido de la especialización declarada: Consultoría y formación sobre embudos, seguimiento y captación.",
+    "offer": "El anunciante ofrece contenido y acompañamiento para ordenar la captación y recuperar oportunidades que ya han mostrado interés.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti. Su presencia no valida las cifras que contengan.",
+    "price": "No observado; la entrada anunciada es un vídeo gratuito.",
+    "guarantee": null,
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "rocio-marketing-digital-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://smc.rociobonachera.com/captacion",
+      "finalUrl": "https://smc.rociobonachera.com/captacion",
+      "title": "Solicita acceso al vídeo — Captación",
+      "status": "captured",
+      "capturedAt": "2026-08-26T14:04:40.729Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/rocio-marketing-digital/site-512e66ffa0-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1441,
+        "bytes": 52244,
+        "sha256": "a2887873afc3e16b5ace90ed151358e4c3754c81dde34456eb0b8b8056570788"
+      },
+      "thumbnail": {
+        "file": "/evidence/rocio-marketing-digital/site-512e66ffa0-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 593,
+        "bytes": 12570,
+        "sha256": "103ec3ff7e9966bed498bf1b25dd77fc4aeeb7da5183900e9526cb1fc877e67f"
+      },
+      "text": {
+        "language": "en",
+        "h1": "Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti",
+        "headings": [
+          "Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti",
+          "Solicita acceso al vídeo",
+          "Qué verás en este vídeo",
+          "Por qué hay negocios que venden pero no tienen previsibilidad",
+          "Qué significa captar de forma estructurada",
+          "Dónde se están perdiendo las oportunidades que ya tienes al alcance"
+        ],
+        "ctas": [
+          "on",
+          "política de privacidad",
+          "Quiero ver el vídeo",
+          "Aviso legal",
+          "Política de privacidad",
+          "Política de cookies"
+        ],
+        "excerpt": "Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti La captación irregular no se soluciona publicando más. Se soluciona construyendo un sistema. Solicita acceso al vídeo Déjanos tus datos y te enviaremos el enlace privado al vídeo. Qué verás en este vídeo Por qué hay negocios que venden pero no tienen previsibilidad Y no es un problema de oferta ni de precio. Qué significa captar de forma estructurada Y por qué no tiene nada que ver con hacer más reels o mandar más mensajes. Dónde se están perdiendo las oportunidades que ya tienes al alcance Sin necesidad de más tráfico ni más contenido. © 2026 Rocío Bonachera. Todos los derechos reservados."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1442
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "rocio-marketing-digital-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://comunidad.rociobonachera.com/",
+      "finalUrl": null,
+      "title": null,
+      "status": "pending",
+      "capturedAt": null,
+      "fullPage": true,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": null
+    }
+  ],
+  "updatedAt": "2026-08-26T16:14:14.983Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T14:05:44.113Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "rocio-marketing-digital-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Si ya vendes pero no sabes de dónde va a venir el próximo cliente, este vídeo es para ti",
+            "capturedAt": "2026-08-26T14:04:40.729Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "rocio-marketing-digital-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T14:04:40.729Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T14:05:44.113Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

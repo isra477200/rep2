@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-havas-com",
+  "name": "Havas (Vivendi)",
+  "primaryCountry": "Francia",
+  "markets": [
+    "Francia"
+  ],
+  "website": "https://havas.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "fr",
+    "translationStatus": "spanish_summary_available"
+  },
+  "commercialRead": {
+    "headline": "Desirable brandscreate desirable results",
+    "promise": null,
+    "audience": null,
+    "offer": null,
+    "mechanism": [],
+    "primaryCta": "Learn more here",
+    "proof": null,
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "translation": {
+    "sourceLanguage": "fr",
+    "status": "existing_spanish_summary",
+    "spanish": {
+      "headline": null,
+      "promise": null,
+      "audience": null,
+      "offer": "Adquisición de Tidart, agencia española de performance/paid media (2025); además de participación mayoritaria en Gauly (Alemania) y otras compras europeas.",
+      "mechanism": [],
+      "primaryCta": null,
+      "proof": null,
+      "price": null,
+      "guarantee": null,
+      "funnel": []
+    }
+  },
+  "pages": [
+    {
+      "id": "amp-havas-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://havas.com/",
+      "finalUrl": "https://www.havas.com/",
+      "title": "Havas: Growth, Powered by Desire",
+      "status": "captured",
+      "capturedAt": "2026-08-25T16:33:28.406Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-havas-com/site-4151e2bf99-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 9395,
+        "bytes": 44774,
+        "sha256": "63e2c4c32f95dc13ab2ebd1fb3e05ad6450d9baf8e6ace5db8f6cd38d5b13efd"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-havas-com/site-4151e2bf99-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 3865,
+        "bytes": 12268,
+        "sha256": "0dc5fb896c2374503ee7c82165c9a0ac3c278b31554267da4e6184ac5b73d272"
+      },
+      "text": {
+        "language": "en-US",
+        "h1": "Desirable brandscreate desirable results",
+        "headings": [
+          "Desirable brandscreate desirable results",
+          "Our services",
+          "Our creative work",
+          "Ink of Democracy",
+          "70 Years of Lightness",
+          "Creamotherapy",
+          "Converged.AI"
+        ],
+        "ctas": [
+          "Content",
+          "Back to homepage havas",
+          "Investors/Shareholders",
+          "en",
+          "fr",
+          "Menu",
+          "Presentation video",
+          "Our mission",
+          "Our services",
+          "Our work",
+          "Our magazine",
+          "What we do",
+          "Business Consultancy & Transformation",
+          "Brand Consultancy & Design",
+          "Creative",
+          "Media",
+          "Health & Wellness",
+          "Customer Experience",
+          "PR, Public Affairs & Corporate Communications",
+          "Brand Partnership, Sponsorship & Events",
+          "Production & Content at Scale",
+          "See more work",
+          "Ink of Democracy : view the project's presentation video",
+          "70 Years of Lightness : view the project's presentation video",
+          "Creamotherapy : view the project's presentation video",
+          "Learn more here",
+          "Find an agency",
+          "Need help now?",
+          "Havas Villages",
+          "Science of Desire",
+          "Meaningful Brands",
+          "Prosumer Reports",
+          "Havas on LinkedIn",
+          "Havas on Instagram",
+          "Havas on DailyMotion",
+          "Legal Notices",
+          "General Terms and Conditions of Use",
+          "Data Protection Policy",
+          "Havas N.A. Privacy Notice"
+        ],
+        "excerpt": "en fr Presentation video Our mission Our services Our work Our magazine Scroll down Hover to discover more Swipe to discover more Desirable brandscreate desirable results Business Consultancy & Transformation Brand Consultancy & Design Creative Media Health & Wellness Customer Experience PR, Public Affairs & Corporate Communications Brand Partnership, Sponsorship & Events Production & Content at Scale Our creative work Havas India Ink of Democracy Ink of Democracy : view the project's presentation video View Havas India Ink of Democracy Maison BETC 70 Years of Lightness 70 Years of Lightness : view the project's presentation video View Maison BETC 70 Years of Lightness Havas Lynx UK Creamotherapy Creamotherapy : view the project's presentation video View Havas Lynx UK Creamotherapy Converged.AI Fueled by Data Powered by Human Ingenuity Find an agency Need help now? Havas Villages Science of Desire Meaningful Brands Prosumer Reports Havas on LinkedIn Havas on Instagram Havas on DailyMotion Legal Notices General Terms and Conditions of Use Data Protection Policy Havas N.A. Privacy Notice Cookie Policy Cookie settings Sitemap Accessibility: not compliant"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 9368
+      },
+      "cookieAction": "rejected",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:14.892Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-25T16:41:45.803Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-25T16:41:45.803Z",
+        "evidence": [
+          {
+            "pageId": "amp-havas-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "Desirable brandscreate desirable results",
+            "capturedAt": "2026-08-25T16:33:28.406Z"
+          }
+        ]
+      },
+      "primaryCta": {
+        "source": "captured_site_text",
+        "method": "first_filtered_commercial_cta_exact",
+        "enrichedAt": "2026-08-25T16:41:45.803Z",
+        "evidence": [
+          {
+            "pageId": "amp-havas-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.ctas[]",
+            "value": "Learn more here",
+            "capturedAt": "2026-08-25T16:33:28.406Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-25T16:41:45.803Z",
+        "evidence": [
+          {
+            "pageId": "amp-havas-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-25T16:33:28.406Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-25T16:41:45.803Z"
+}

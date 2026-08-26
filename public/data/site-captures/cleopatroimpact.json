@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "cleopatroimpact",
+  "name": "Cleopatroimpact",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://cleopatroimpact.es/01-home-page",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Escala tu empresa de placas solares sin depender de referidos",
+    "promise": "Escala tu empresa de placas solares sin depender de referidos",
+    "audience": "Instaladoras solares / autoconsumo residencial",
+    "offer": "Según el anuncio: leads/sistema de cierre para instaladoras de autoconsumo solar atacando la baja conversión de presupuestos ('Haces 20 presupuestos de autoconsumo y cierras 3... Nuestros clientes suman 2-3 instalaciones extra cada semana'). Web no encontrada: oferta completa sin verificar.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Solo la afirmación del anuncio ('nuestros clientes suman 2-3 instalaciones extra cada semana'), sin clientes nombrados ni cifras verificables en ninguna fuente pública.",
+    "price": "Web no encontrada — sin datos de precios",
+    "guarantee": "Web no encontrada — sin garantía verificable; el anuncio promete resultado ('2-3 instalaciones extra cada semana') sin formularlo como garantía",
+    "funnel": [
+      "Anuncio Meta con hook de dolor (baja tasa de cierre de presupuestos)",
+      "destino no verificable; el dominio .es activo con 404 sugiere funnel oculto por URL directa desde el anuncio"
+    ]
+  },
+  "pages": [
+    {
+      "id": "cleopatroimpact-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://cleopatroimpact.es/01-home-page",
+      "finalUrl": "https://cleopatroimpact.es/01-home-page",
+      "title": "cleopatroimpact.es/01-home-page",
+      "status": "captured",
+      "capturedAt": "2026-08-26T15:52:35.963Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/cleopatroimpact/site-5643708348-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 732,
+        "bytes": 26342,
+        "sha256": "68f52eb3ac7b478c6613fdafa58499af8b3e78f6ca5b4008e52fa5f7256b1439"
+      },
+      "thumbnail": {
+        "file": "/evidence/cleopatroimpact/site-5643708348-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 301,
+        "bytes": 7430,
+        "sha256": "3711a065b2ecc85fe1a48531bff525530d066ebc24e450112c5a38e669f63f52"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Escala tu empresa de placas solares sin depender de referidos",
+        "headings": [
+          "Escala tu empresa de placas solares sin depender de referidos"
+        ],
+        "ctas": [
+          "Calcular mi rentabilidad"
+        ],
+        "excerpt": "Escala tu empresa de placas solares sin depender de referidos Calcula en tiempo real cuántas instalaciones más podrías cerrar cada mes con un sistema de captación automática — sin adivinar, con tus propios números."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 733
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:09:40.086Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "cleopatroimpact-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Escala tu empresa de placas solares sin depender de referidos",
+            "capturedAt": "2026-08-26T15:52:35.963Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

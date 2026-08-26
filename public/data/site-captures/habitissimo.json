@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "habitissimo",
+  "name": "Habitissimo",
+  "primaryCountry": "España",
+  "markets": [
+    "España",
+    "México",
+    "Chile",
+    "Argentina",
+    "Colombia",
+    "Perú",
+    "LATAM"
+  ],
+  "website": "https://www.habitissimo.es/premium",
+  "status": "partial",
+  "coverage": {
+    "planned": 5,
+    "captured": 4,
+    "blocked": 0,
+    "failed": 1
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Hero exacto: «Consigue trabajos con habitissimo».",
+    "promise": "Aportar oportunidades locales de reforma sin comisión ni permanencia, con control de zona y gasto.",
+    "audience": "Autónomo o empresa de reformas con zona/trabajos definidos, capacidad de contactar rápido y presupuesto semanal controlable para oportunidades.",
+    "offer": "Al PROFESIONAL: \"Sin planes, sin comisiones, sin permanencia\" y \"Paga solo por los contactos que recibas, sin planes ni cuotas mensuales\". Al CONSUMIDOR, que es quien genera el lead: \"Hasta 4 contactos con profesionales recomendados en servicios del hogar. Solicítalo ya\".",
+    "mechanism": [
+      "Solicitud del consumidor, clasificación por categoría/zona, distribución/venta manual o automática del contacto, WhatsApp con datos del profesional, conversación/cotización directa y reseñas/garantías bajo condiciones."
+    ],
+    "primaryCta": "Profesional: activar suscripción/registrar empresa; consumidor: pedir presupuesto gratis.",
+    "proof": "Testimonios propios, perfiles/reseñas, garantías condicionadas, app y marca consolidada.",
+    "price": "PAGO POR CONTACTO, no cuota. Rango medio declarado en su propio centro de soporte: 12-14€ POR CONTACTO. Registro y perfil gratis; para recibir solicitudes hay que activar suscripción y fijar un \"presupuesto semanal en función del número de contactos que deseas obtener\". El precio por categoría solo se ve dentro del panel. Factores literales: \"Tipo de trabajo: no cuesta lo mismo la construcción de una casa que cambiar una persiana\", \"Oferta y demanda\", \"Costo de adquisición del contacto\". En foros de quejas se citan cargos de unos 15€ por contacto.",
+    "guarantee": "Ninguna garantía de resultado ni de venta. Hay política de reclamación de contactos inválidos, pero según quejas de profesionales la devolución es EN CRÉDITO para seguir usando la plataforma, no en dinero. LETRA PEQUEÑA CLAVE: el mismo lead se vende hasta a 4 profesionales a la vez — lo dice su propio anuncio: \"Hasta 4 contactos con profesionales recomendados\". Un solo formulario les puede ingresar hasta 52€.",
+    "funnel": [
+      "Landing de petición o Premium con promesa y proceso.",
+      "Varias propuestas para consumidor y oportunidades controlables para profesional.",
+      "Testimonios, perfiles/reseñas, marca y garantías propias.",
+      "Pedir presupuesto o activar suscripción/registrarse.",
+      "Cuestionario dinámico de obra o registro profesional; contacto genérico documentado.",
+      "Categoría/zona/necesidad y filtros del profesional; presupuesto del consumidor/capacidad no siempre visibles.",
+      "Contacto se compra/asigna y los datos del profesional pueden enviarse por WhatsApp.",
+      "Profesional activa suscripción, zonas/tipos/budget y recibe oportunidades; ejecuta la obra por su cuenta."
+    ]
+  },
+  "pages": [
+    {
+      "id": "habitissimo-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://www.habitissimo.es/",
+      "finalUrl": null,
+      "title": "Habitissimo",
+      "status": "failed",
+      "capturedAt": "2026-08-26T11:16:07.131Z",
+      "fullPage": null,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": "Unable to capture screenshot"
+    },
+    {
+      "id": "habitissimo-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://www.habitissimo.es/premium",
+      "finalUrl": "https://www.habitissimo.es/registrar/empresa",
+      "title": "Trabajos en Servicios y Reformas: Regístrate y consigue clientes",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:16:05.828Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/habitissimo/site-8e6ffca36f-landing.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 3864,
+        "bytes": 33968,
+        "sha256": "c113711bffec0e04630769659c05ea634b623623f4c50eba53d9a4edb5e30873"
+      },
+      "thumbnail": {
+        "file": "/evidence/habitissimo/site-8e6ffca36f-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1570,
+        "bytes": 7010,
+        "sha256": "bc3acd1d4248d58a9713f204e9f0fb73af6b67ad399a7c2f9aa41e2fa6f4178b"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "Consigue trabajos en tu zona",
+        "headings": [
+          "Consigue trabajos en tu zona",
+          "Consigue clientes sin complicaciones",
+          "Sin planes, sin comisiones, sin permanencia",
+          "Aumenta la visibilidad de tu negocio",
+          "Consigue trabajos",
+          "Así les funciona a estos profesionales",
+          "Empezar es fácil",
+          "Consigue trabajos en tu zona hoy mismo",
+          "Servicios más solicitados",
+          "Reformas",
+          "Limpieza",
+          "Instaladores",
+          "Preguntas frecuentes",
+          "Te informamos sin compromiso"
+        ],
+        "ctas": [
+          "nuestros socios",
+          "Ver nuestros 16 socios",
+          "Más información →",
+          "Rechazar y cerrar",
+          "Aceptar y cerrar",
+          "Inicia sesión",
+          "Conseguir trabajos",
+          "Entra",
+          "Anterior",
+          "Siguiente",
+          "Escríbenos por Whatsapp"
+        ],
+        "excerpt": "Tu privacidad nos importa. Con tu acuerdo, nosotros y nuestros socios usamos cookies o tecnologías similares para almacenar, acceder y procesar datos personales. Puedes retirar tu consentimiento u oponerte al procesamiento de datos basado en intereses legítimos en cualquier momento haciendo clic en \"Más información\" o en nuestra Política de privacidad.Nosotros y nuestros socios hacemos el siguiente tratamiento de datos con tu consentimiento y/o nuestro interés legítimo:Almacenar o acceder a información en un dispositivo, anuncios y contenido personalizados, medición de anuncios y del contenido, información sobre el público y desarrollo de productos, datos de localización geográfica precisa e identificación mediante las características de dispositivos. Consigue trabajos en tu zona Accede a más de 20.000 nuevos trabajos cada semana: reformas, carpinteros, limpieza, mudanzas y más + 6 millones presupuestos solicitados + 450 mil profesionales activos + 2 millones visitas al mes Consigue clientes sin complicacionesDecide cuántos clientes necesitas y te ayudamos a conseguirlos, sin complicaciones Consigue clientes sin complicaciones Decide cuántos clientes necesitas y te ayudamos a conseguirlos, sin complicaciones Sin planes, sin comisiones, sin permanenciaControla tu inversión y paga sólo por los contactos que recibas, sin planes ni cuotas mensuales Sin planes, sin comisiones, sin permanencia Controla tu inversión y paga sólo por los contactos que recibas, sin planes ni cuotas mensuales Aumenta la visibilidad de tu negocioConviértete en un referente para tu sector. Te ayudamos a destacar de tu competencia Aumenta la visibilidad de tu negocio Conviértete en un referente para tu sector. Te ayudamos a destacar de tu competencia Consigue trabajos Así les funciona a estos profesionales Paco Navalón 7 años en habitissimo Con habitissimo he conseguido muchísimos trabajos de reformas. Mi experiencia es muy positiva. Si buscas aumentar tu cartera de clientes habitissimo es la opción ideal Antonio Miguel 12 años en habitissimo habitissimo es una gran herramienta para captar clientes. Si quieres tener éxito en la plataforma te recomiendo ser rápido, prestar un servicio de calidad y mantener un trato profesional con tus clientes Manolo Guerrero 9 años en habitissimo Yo he conseguido muchos trabajos gracias a habitissimo, para mí es sin duda la mejor plataforma que hay. Si necesitas una fuente constante de clientes, te recomiendo probarlo Empezar es fácil Activa una suscripciónElige las zonas y el tipo de trabajos que deseas recibir y el sistema comenzará a enviarte contactos de clientes automáticamente Activa una suscripción Elige las zonas y el tipo de trabajos que deseas recibir y el sistema comenzará a enviarte contactos de clientes automáticamente Asigna tu presupuesto semanalSelecciona tu presupuesto semanal en función del número de contactos que deseas obtener cada semana. Solo pagas por los contactos que recibas Asigna tu presupuesto semanal Selecciona tu presupuesto semanal en función del número de contactos que deseas obtener cada semana. Solo pagas por los contactos que recibas Envía documentaciónEnvíanos la documentación que acredite que estás de alta como autónomo o empresa legalmente constituida. Envía documentación Envíanos la documentación que acredite que estás de alta como autónomo o empresa legalmente constituida. Consigue trabajos en tu zona hoy mismo Sin planes Sin comisiones Sin permanencia Servicios más solicitados ReformasTenemos para ti todo tipo de trabajos relacionados con Reformas del Hogar: reformas integrales, baños o…"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3864
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "habitissimo-conversion",
+      "role": "conversion",
+      "label": "Conversión o contacto",
+      "requestedUrl": "https://www.habitissimo.es/contacto",
+      "finalUrl": "https://www.habitissimo.es/contacto",
+      "title": "Contacto | habitissimo",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:16:02.628Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/habitissimo/site-eee78cb608-conversion.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1820,
+        "bytes": 48776,
+        "sha256": "de851669445d33614e85ee8d60073a5a17d7d3607c3b019b5fbb5450cf2205e6"
+      },
+      "thumbnail": {
+        "file": "/evidence/habitissimo/site-eee78cb608-conversion-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 749,
+        "bytes": 10000,
+        "sha256": "0ae30382c2e1481a1bc2bd21969252962abdac76a8a5a5f2c87408063daa758a"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "Contacto",
+        "headings": [
+          "Contacto",
+          "Nuestra sede está en:"
+        ],
+        "ctas": [
+          "¡Regístrate gratis!",
+          "Directorio de profesionales",
+          "Instaladores",
+          "Placas solares",
+          "Aire acondicionado",
+          "Ascensores",
+          "Aerotermia",
+          "Electricistas",
+          "Toldos",
+          "Reformas",
+          "Reformas baños",
+          "Reformas cocinas",
+          "Reformas viviendas",
+          "Reformas oficinas",
+          "Rehabilitación fachadas",
+          "Reformas piscinas",
+          "Construcción",
+          "Construcción casas",
+          "Construcción piscinas",
+          "Construcción casas prefabricadas",
+          "Construcción naves industriales",
+          "Derribos",
+          "Construcción muros",
+          "Obras menores",
+          "Humedades",
+          "Pintores",
+          "Albañiles",
+          "Fontaneros",
+          "Cerrajeros",
+          "Hormigon impreso",
+          "Mudanzas",
+          "Jardineros",
+          "Limpieza",
+          "Control plagas",
+          "Calefacción",
+          "Arquitectos",
+          "Guía de precios",
+          "Precio Placas solares",
+          "Precio Aerotermia"
+        ],
+        "excerpt": "¿Eres autónomo o empresa? ¡Regístrate gratis! Directorio de profesionales Instaladores Placas solares Aire acondicionado Ascensores Aerotermia Electricistas Toldos Reformas Reformas baños Reformas cocinas Reformas viviendas Reformas oficinas Rehabilitación fachadas Reformas piscinas Construcción Construcción casas Construcción piscinas Construcción casas prefabricadas Construcción naves industriales Derribos Construcción muros Obras menores Humedades Pintores Albañiles Fontaneros Cerrajeros Hormigon impreso Otros trabajos Mudanzas Jardineros Limpieza Control plagas Calefacción Arquitectos Placas solares Aire acondicionado Ascensores Aerotermia Electricistas Toldos Reformas baños Reformas cocinas Reformas viviendas Reformas oficinas Rehabilitación fachadas Reformas piscinas Construcción casas Construcción piscinas Construcción casas prefabricadas Construcción naves industriales Derribos Construcción muros Humedades Pintores Albañiles Fontaneros Cerrajeros Hormigon impreso Mudanzas Jardineros Limpieza Control plagas Calefacción Arquitectos Guía de precios Instaladores Precio Placas solares Precio Aerotermia Precio Aire acondicionado Precio Ascensores Precio Toldos Precio Electricistas Reformas Precio Reformas baños Precio Reformas cocinas Precio Reformas viviendas Precio Reformas oficinas Precio Rehabilitación fachadas Precio Reformas piscinas Construcción Precio Construcción casas Precio Construcción piscinas Precio Construcción casas prefabricadas Precio Construcción naves industriales Precio Derribos Precio Construcción muros Obras menores Precio Pintores Precio Albañiles Precio Fontaneros Precio Cerrajeros Precio Hormigon impreso Otros trabajos Precio Mudanzas Precio Cambiar plato ducha Precio Cerramiento cristal Precio Ventanas pvc Precio Calefacción Precio Limpieza Precio Placas solares Precio Aerotermia Precio Aire acondicionado Precio Ascensores Precio Toldos Precio Electricistas Precio Reformas baños Precio Reformas cocinas Precio Reformas viviendas Precio Reformas oficinas Precio Rehabilitación fachadas Precio Reformas piscinas Precio Construcción casas Precio Construcción piscinas Precio Construcción casas prefabricadas Precio Construcción naves industriales Precio Derribos Precio Construcción muros Precio Pintores Precio Albañiles Precio Fontaneros Precio Cerrajeros Precio Hormigon impreso Precio Mudanzas Precio Cambiar plato ducha Precio Cerramiento cristal Precio Ventanas pvc Precio Calefacción Precio Limpieza Blog Inspiración y proyectos Decoradores Reformas baños Reformas viviendas Jardineros Pintores Muebles Consejos de hogar Carpinteros Reformas cocinas Reformas viviendas Placas solares Calefacción Reformas baños ¿Cómo se hace? Limpieza Aire acondicionado Pintores Decoradores Reformas baños Fontaneros Ayudas y subvenciones Reformas viviendas Aerotermia Placas solares Rehabilitación edificios Decoradores Muebles Carpinteros Rehabilitación edificios Comunidad Preguntas a la comunidad Eficiencia energética Galería de fotos Procenter Preguntas a la comunidad Eficiencia energética Galería de fotos Procenter Contacto Puedes contactarnos a través de nuestra dirección de e-mail support@habitissimo.com o completando el siguiente formulario de contacto. Atenderemos tu consulta lo antes posible dentro de nuestro horario de oficina, de lunes a jueves de 9h a 18h y viernes de 9h a 14:30h Nuestra sede está en: Edificio U, Local 3, Parcbit, Carrer Galileo Galilei, s/n, 07121, Palma, Illes Balears Precio Reforma de Baño Precio Mudanzas Viviendas Precio Construcción Casas Precio Aire Acondicionado Precio Placas Solares Precio…"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1820
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "habitissimo-pricing",
+      "role": "pricing",
+      "label": "Precios u oferta",
+      "requestedUrl": "https://www.habitissimo.es/presupuestos",
+      "finalUrl": "https://www.habitissimo.es/presupuestos",
+      "title": "Guías de precios: reformas, instalaciones, servicios y recomendaciones para mejorar tu hogar",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:16:14.611Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/habitissimo/site-b63982cff3-pricing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 6236,
+        "bytes": 126274,
+        "sha256": "ff5e1f4891c5bceee1a97b0b71c29ca18a34f560a5ee6cb4fcf9f0f35e619c79"
+      },
+      "thumbnail": {
+        "file": "/evidence/habitissimo/site-b63982cff3-pricing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 2565,
+        "bytes": 27434,
+        "sha256": "b10565f465d120d661cd57960e563f0e98ad627ad50631172c9cc7055e7e9c9c"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "Guía de precios y recomendaciones",
+        "headings": [
+          "Guía de precios y recomendaciones",
+          "Descubre cuánto cuestan los servicios más populares",
+          "Precio Instaladores",
+          "Precio Reformas",
+          "Precio Construcción",
+          "Precio Obras Menores",
+          "Precio Técnicos",
+          "Precio Mantenimiento",
+          "Precio Tiendas",
+          "Precio Mudanzas",
+          "Busca en todas nuestras categorías",
+          "Reformas",
+          "Construcción",
+          "Instaladores",
+          "Mantenimiento",
+          "Técnicos",
+          "Obras menores",
+          "Tiendas",
+          "Mudanzas"
+        ],
+        "ctas": [
+          "¡Regístrate gratis!",
+          "Directorio de profesionales",
+          "Guía de precios",
+          "Blog",
+          "Buscar",
+          "Accede",
+          "Pide presupuestos",
+          "Precio reformas baños",
+          "Precio reformas cocinas",
+          "Precio placas solares",
+          "Precio aerotermia",
+          "Precio reforma integral vivienda",
+          "Precio pintores",
+          "Precio electricistas",
+          "Precio Placas solares",
+          "Precio Aire acondicionado",
+          "Precio Ascensores",
+          "Precio Reformas baños",
+          "Precio Reformas cocinas",
+          "Precio Reformas viviendas",
+          "Precio Construcción casas",
+          "Precio Construcción piscinas",
+          "Precio Construcción casas prefabricadas",
+          "Precio Humedades",
+          "Precio Pintores",
+          "Precio Albañiles",
+          "Precio Arquitectos",
+          "Precio Geólogos",
+          "Precio Ingenieros",
+          "Precio Control de plagas",
+          "Precio Jardineros",
+          "Precio Limpieza",
+          "Precio Muebles",
+          "Precio Licencias de apertura",
+          "Precio Decorar local comercial",
+          "Precio Mudanzas viviendas",
+          "Precio Mudanzas oficinas",
+          "Precio Guardamuebles",
+          "Encontrar profesionales gratis"
+        ],
+        "excerpt": "¿Eres autónomo o empresa?¡Regístrate gratis! Directorio de profesionalesInstaladoresPlacas solaresAire acondicionadoAscensoresAerotermiaElectricistasToldosReformasReformas bañosReformas cocinasReformas viviendasReformas oficinasRehabilitación fachadasReformas piscinasConstrucciónConstrucción casasConstrucción piscinasConstrucción casas prefabricadasConstrucción naves industrialesDerribosConstrucción MurosObras menoresHumedadesPintoresAlbañilesFontanerosCerrajerosHormigón impresoOtros trabajosMudanzasJardinerosLimpiezaControl plagasCalefacciónArquitectos Guía de preciosInstaladoresPrecio Placas solaresPrecio AerotermiaPrecio Aire acondicionadoPrecio AscensoresPrecio ToldosPrecio ElectricistasReformasPrecio Reformas bañosPrecio Reformas cocinasPrecio Reformas viviendasPrecio Reformas oficinasPrecio Rehabilitación fachadasPrecio Reformas piscinasConstrucciónPrecio Construcción casasPrecio Construcción piscinasPrecio Construcción casas prefabricadasPrecio Construcción naves industrialesPrecio DerribosPrecio Construcción MurosObras menoresPrecio HumedadesPrecio PintoresPrecio AlbañilesPrecio FontanerosPrecio CerrajerosPrecio Hormigón impresoOtros trabajosPrecio MudanzasPrecio Cambiar plato duchaPrecio Cerramiento cristalPrecio Limpieza casaPrecio Ventanas PVCPrecio CalefacciónPrecio Limpieza BlogInspiración y proyectosDecoradoresReformas bañosReformas viviendasJardinerosPintoresMueblesConsejos de hogarCarpinterosReformas cocinasReformas viviendasPlacas solaresCalefacciónReformas baños¿Cómo se hace?LimpiezaAire acondicionadoPintoresDecoradoresReformas bañosFontanerosAyudas y subvencionesReformas viviendasAerotermiaPlacas solaresRehabilitación edificios ComunidadPreguntas a la comunidadEficiencia energéticaGalería de fotosProcenterAyuda Guía de precios y recomendaciones Recibe orientación del trabajo que deseas realizar Descubre cuánto cuestan los servicios más populares ¡En habitissimo sabemos los precios de los servicios que buscas! Tenemos miles de presupuestos reales que recibimos de nuestros usuarios particulares y profesionales, contrastados y revisados por expertos del sector Precio Instaladores Cuenta con instaladores de placas solares, electricistas, aire acondicionado y aerotermia entre otros, asegurando tu bienestar y su buen funcionamiento Precio Placas solares Precio Aire acondicionado Precio Ascensores Precio Reformas Convierte espacios y renueva ambientes para hacer realidad tus ideas de remodelación, asegurando que tu hogar refleje tu estilo y necesidades Precio Reformas baños Precio Reformas cocinas Precio Reformas viviendas Precio Construcción Encuentra trabajos de construcción de chalets, piscinas, viviendas unifamiliares y cualquier otro proyecto de construcción que tengas en mente Precio Construcción casas Precio Construcción piscinas Precio Construcción casas prefabricadas Precio Obras Menores Repara, mejora o arregla esos pequeños detalles de tu hogar, para hacer de tu espacio un lugar más funcional y acogedor Precio Humedades Precio Pintores Precio Albañiles Precio Técnicos Resuelve cualquier problema técnico para tu hogar o instalaciones con arquitectos, ingenieros, peritos o decoradores expertos Precio Arquitectos Precio Geólogos Precio Ingenieros Precio Mantenimiento Mantén cada aspecto de tu hogar, empresa o instalaciones en las mejores condiciones. Consigue un entorno limpio y cuidado dentro de un ambiente saludable Precio Control de plagas Precio Jardineros Precio Limpieza Precio Tiendas Soluciones para el montaje de muebles de tu salón, dormitorio, baño o cocina para que puedas llenar de vida cada rincón de…"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 6237
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "habitissimo-proof",
+      "role": "proof",
+      "label": "Prueba y resultados",
+      "requestedUrl": "https://www.habitissimo.es/registrar/empresa",
+      "finalUrl": "https://www.habitissimo.es/registrar/empresa",
+      "title": "Trabajos en Servicios y Reformas: Regístrate y consigue clientes",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:16:16.602Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/habitissimo/site-9ec7333253-proof.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 3860,
+        "bytes": 34342,
+        "sha256": "751baf6c8c55dcc28a6c42134271debd0eef5e3db147b046970c7459f8dbfd65"
+      },
+      "thumbnail": {
+        "file": "/evidence/habitissimo/site-9ec7333253-proof-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1568,
+        "bytes": 7028,
+        "sha256": "6c9400f4ff1b69676885ee412741299aad971577d0bda9f3837fdca13e553fa2"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "Consigue trabajos en tu zona",
+        "headings": [
+          "Consigue trabajos en tu zona",
+          "Consigue clientes sin complicaciones",
+          "Sin planes, sin comisiones, sin permanencia",
+          "Aumenta la visibilidad de tu negocio",
+          "Consigue trabajos",
+          "Así les funciona a estos profesionales",
+          "Empezar es fácil",
+          "Consigue trabajos en tu zona hoy mismo",
+          "Servicios más solicitados",
+          "Reformas",
+          "Limpieza",
+          "Instaladores",
+          "Preguntas frecuentes",
+          "Te informamos sin compromiso"
+        ],
+        "ctas": [
+          "nuestros socios",
+          "Ver nuestros 16 socios",
+          "Más información →",
+          "Rechazar y cerrar",
+          "Aceptar y cerrar",
+          "Inicia sesión",
+          "Conseguir trabajos",
+          "Entra",
+          "Anterior",
+          "Siguiente",
+          "Escríbenos por Whatsapp"
+        ],
+        "excerpt": "Tu privacidad nos importa. Con tu acuerdo, nosotros y nuestros socios usamos cookies o tecnologías similares para almacenar, acceder y procesar datos personales. Puedes retirar tu consentimiento u oponerte al procesamiento de datos basado en intereses legítimos en cualquier momento haciendo clic en \"Más información\" o en nuestra Política de privacidad.Nosotros y nuestros socios hacemos el siguiente tratamiento de datos con tu consentimiento y/o nuestro interés legítimo:Almacenar o acceder a información en un dispositivo, anuncios y contenido personalizados, medición de anuncios y del contenido, información sobre el público y desarrollo de productos, datos de localización geográfica precisa e identificación mediante las características de dispositivos. Consigue trabajos en tu zona Accede a más de 20.000 nuevos trabajos cada semana: reformas, carpinteros, limpieza, mudanzas y más + 6 millones presupuestos solicitados + 450 mil profesionales activos + 2 millones visitas al mes Consigue clientes sin complicacionesDecide cuántos clientes necesitas y te ayudamos a conseguirlos, sin complicaciones Consigue clientes sin complicaciones Decide cuántos clientes necesitas y te ayudamos a conseguirlos, sin complicaciones Sin planes, sin comisiones, sin permanenciaControla tu inversión y paga sólo por los contactos que recibas, sin planes ni cuotas mensuales Sin planes, sin comisiones, sin permanencia Controla tu inversión y paga sólo por los contactos que recibas, sin planes ni cuotas mensuales Aumenta la visibilidad de tu negocioConviértete en un referente para tu sector. Te ayudamos a destacar de tu competencia Aumenta la visibilidad de tu negocio Conviértete en un referente para tu sector. Te ayudamos a destacar de tu competencia Consigue trabajos Así les funciona a estos profesionales Paco Navalón 7 años en habitissimo Con habitissimo he conseguido muchísimos trabajos de reformas. Mi experiencia es muy positiva. Si buscas aumentar tu cartera de clientes habitissimo es la opción ideal Antonio Miguel 12 años en habitissimo habitissimo es una gran herramienta para captar clientes. Si quieres tener éxito en la plataforma te recomiendo ser rápido, prestar un servicio de calidad y mantener un trato profesional con tus clientes Manolo Guerrero 9 años en habitissimo Yo he conseguido muchos trabajos gracias a habitissimo, para mí es sin duda la mejor plataforma que hay. Si necesitas una fuente constante de clientes, te recomiendo probarlo Empezar es fácil Activa una suscripciónElige las zonas y el tipo de trabajos que deseas recibir y el sistema comenzará a enviarte contactos de clientes automáticamente Activa una suscripción Elige las zonas y el tipo de trabajos que deseas recibir y el sistema comenzará a enviarte contactos de clientes automáticamente Asigna tu presupuesto semanalSelecciona tu presupuesto semanal en función del número de contactos que deseas obtener cada semana. Solo pagas por los contactos que recibas Asigna tu presupuesto semanal Selecciona tu presupuesto semanal en función del número de contactos que deseas obtener cada semana. Solo pagas por los contactos que recibas Envía documentaciónEnvíanos la documentación que acredite que estás de alta como autónomo o empresa legalmente constituida. Envía documentación Envíanos la documentación que acredite que estás de alta como autónomo o empresa legalmente constituida. Consigue trabajos en tu zona hoy mismo Sin planes Sin comisiones Sin permanencia Servicios más solicitados ReformasTenemos para ti todo tipo de trabajos relacionados con Reformas del Hogar: reformas integrales, baños o…"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3861
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:11:28.647Z"
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "nexo-juridico",
+  "name": "Nexo Jurídico",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://vsl.nexo-juridico.com/optin-vsl",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas",
+    "promise": "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas",
+    "audience": "Público inferido de la especialización declarada: Generación de reuniones para despachos concursales.",
+    "offer": "El anunciante afirma implantar de extremo a extremo un sistema que genera entre 15 y 20 reuniones mensuales con administradores de empresas para servicios concursales.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": "El anunciante afirma que no cobra si no entrega las reuniones; no se ha verificado el condicionado completo.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "nexo-juridico-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://vsl.nexo-juridico.com/optin-vsl",
+      "finalUrl": "https://vsl.nexo-juridico.com/optin-vsl",
+      "title": "vsl.nexo-juridico.com/optin-vsl",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:51:22.384Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/nexo-juridico/site-cf159044b0-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1616,
+        "bytes": 56276,
+        "sha256": "d935f1ba6495ce83736601bc7c8d3aa63e0704605198a1fc10b5bc934c331d33"
+      },
+      "thumbnail": {
+        "file": "/evidence/nexo-juridico/site-cf159044b0-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 665,
+        "bytes": 11730,
+        "sha256": "41c77482b1dcfa72aeb231e6f60e3f2281b77b6021606bcdb2bb7f1a9dab47be"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas",
+        "headings": [
+          "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas"
+        ],
+        "ctas": [
+          "Política de Privacidad",
+          "VER VÍDEO",
+          "Política de cookies",
+          "Aviso Legal",
+          "Política de uso de WhatsApp"
+        ],
+        "excerpt": "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas Esto no funciona para abogados de oficio, despachos ‘low cost’ o gestorías. Acepto la Política de Privacidad VER VÍDEO Tus datos están protegidos. Sin spam. Copyright © 2026 Nexo Jurídico — Mario Gil Mochón This website is not part of the YouTube, Google, or Facebook website; Google Inc or Facebook Inc. Also, this website is NOT endorsed by YouTube, Google or Facebook in any way. FACEBOOK is a trademark of FACEBOOK Inc. YOUTUBE is a trademark of GOOGLE Inc."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1617
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:13:07.377Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "nexo-juridico-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas",
+            "capturedAt": "2026-08-26T13:51:22.384Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "nexo-juridico-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T13:51:22.384Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

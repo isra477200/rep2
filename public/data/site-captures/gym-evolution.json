@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "gym-evolution",
+  "name": "Gym Evolution",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://vsl.gymevolution.net/calendario-v1",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Añade mínimo 30.000 € a tu facturación en menos de 6 meses",
+    "promise": "Añade mínimo 30.000 € a tu facturación en menos de 6 meses",
+    "audience": "Público inferido de la especialización declarada: Captación, agenda y retención para centros de entrenamiento.",
+    "offer": "El anunciante ofrece generar personas interesadas, agendar pruebas automáticamente y convertirlas en socios; afirma un potencial de 30.000 a 100.000 € de facturación anual adicional.",
+    "mechanism": [],
+    "primaryCta": "Agenda tu llamada gratuita",
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Conversión o contacto · conversion"
+    ]
+  },
+  "pages": [
+    {
+      "id": "gym-evolution-conversion",
+      "role": "conversion",
+      "label": "Conversión o contacto",
+      "requestedUrl": "https://vsl.gymevolution.net/calendario-v1",
+      "finalUrl": "https://vsl.gymevolution.net/calendario-v1",
+      "title": "Descubre cómo aumentar mínimo 30.000€ la facturación de tu gimnasio - Gym Evolution",
+      "status": "captured",
+      "capturedAt": "2026-08-26T14:04:17.262Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/gym-evolution/site-bc34f670cc-conversion.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 4067,
+        "bytes": 157986,
+        "sha256": "3b2411f57f0594ee42914278da024dbca91005d0fe70aa73f5f3333298e072c6"
+      },
+      "thumbnail": {
+        "file": "/evidence/gym-evolution/site-bc34f670cc-conversion-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1673,
+        "bytes": 36214,
+        "sha256": "0bea06cb7882082440ed661e92adfd60ce842a813623dcbff0f224df5dad0f61"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Añade mínimo 30.000 € a tu facturación en menos de 6 meses",
+        "headings": [
+          "Añade mínimo 30.000 € a tu facturación en menos de 6 meses",
+          "Tú puedes ser el próximo",
+          "Preguntas frecuentes",
+          "¿Listo para llenar tu centro?"
+        ],
+        "ctas": [
+          "Agenda tu llamada gratuita",
+          "Agenda una llamada",
+          "¿Funcionará para mi gimnasio?+",
+          "¿Cuánto tardáis en conseguir resultados?+",
+          "¿Cuál es la garantía?+",
+          "Agenda tu llamada ahora",
+          "Aviso legal",
+          "Política de privacidad",
+          "Política de cookies",
+          "Uso de WhatsApp"
+        ],
+        "excerpt": "Añade mínimo 30.000 € a tu facturación en menos de 6 meses Sin ofertas low cost, sin retos de 6 semanas y sin agencias que te cobran aunque no tengas resultados. Algunos de los +20 centros que ya confían en el sistema Tú puedes ser el próximo Agendando una llamada con nuestro equipo para que te digan cómo puedes empezar a llenar tu centro. Empezamos a trabajar en septiembre de 2025 Preguntas frecuentes El sistema está diseñado específicamente para gimnasios y centros de clases grupales de barrio en España con cuotas entre 40 y 100 €/mes. Si tienes un servicio de calidad y un local accesible, lo que te falta no son clientes potenciales: es un sistema de captación, ventas y retención que los convierta en altas válidas. En la llamada analizamos tu caso concreto antes de proponerte nada. Los primeros resultados suelen llegar desde las primeras semanas reactivando tu base de contactos (leads antiguos y ex socios), lo que genera caja rápida casi sin inversión. A partir de ahí instalamos el sistema completo para que tengas un flujo de altas predecible mes a mes. Nuestra garantía es añadir un mínimo de 30.000 € a tu facturación en menos de 6 meses. Si tras aplicar el sistema no conseguimos los resultados acordados, tú eliges: seguimos trabajando contigo sin coste adicional hasta conseguirlo, o te devolvemos la parte proporcional de las altas no conseguidas. Compartimos el riesgo contigo porque nuestros incentivos están alineados con los tuyos: si tú no ganas, nosotros tampoco. ¿Listo para llenar tu centro? Agenda una llamada gratuita con nuestro equipo. Veremos si encajas y cómo podemos empezar a llenar tu centro de forma predecible y semi automatizada."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 4067
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:11:26.979Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T14:05:44.113Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "gym-evolution-conversion",
+            "pageRole": "conversion",
+            "sourcePath": "pages[].text.h1",
+            "value": "Añade mínimo 30.000 € a tu facturación en menos de 6 meses",
+            "capturedAt": "2026-08-26T14:04:17.262Z"
+          }
+        ]
+      },
+      "primaryCta": {
+        "source": "captured_site_text",
+        "method": "first_filtered_commercial_cta_exact",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "gym-evolution-conversion",
+            "pageRole": "conversion",
+            "sourcePath": "pages[].text.ctas[]",
+            "value": "Agenda tu llamada gratuita",
+            "capturedAt": "2026-08-26T14:04:17.262Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "gym-evolution-conversion",
+            "pageRole": "conversion",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Conversión o contacto · conversion",
+            "capturedAt": "2026-08-26T14:04:17.262Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T14:05:44.113Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

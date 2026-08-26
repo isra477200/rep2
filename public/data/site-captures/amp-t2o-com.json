@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-t2o-com",
+  "name": "t2ó ONE",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://t2o.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Think big. Get big.",
+    "promise": null,
+    "audience": null,
+    "offer": "Compró la canadiense Rebel & Thorn (hasta 20 M€), la creativa española Fly Me To The Moon (jun 2025) y la italiana Crafted; lanzó la agencia de ventas digitales Gain; proyecta 200 M€ de facturación y 20 M€ de EBITDA.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-t2o-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://t2o.com/",
+      "finalUrl": "https://www.t2o.com/",
+      "title": "t2ó I Connect. Convert. Grow. - Marketing Digital, Estrategia y Ventas",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:58:29.778Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-t2o-com/site-58739bca00-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 3220,
+        "bytes": 98232,
+        "sha256": "0c1aa4ae600cf98128993ef323a0cf28a9d803b4bf9fb61f14217c5976885fb5"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-t2o-com/site-58739bca00-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1325,
+        "bytes": 26640,
+        "sha256": "be388a988aaadb4fd7e7dc834d4558a98fd7791a3f0b1826bb04f6639a18264d"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "Think big. Get big.",
+        "headings": [
+          "Think big. Get big.",
+          "Aceleramos tu negocio a través del marketing digital y la tecnología",
+          "Connect.",
+          "Convert.",
+          "Grow.",
+          "Aseguramos el éxito de nuestros proyectos con las mejores soluciones del mercado y los mejores socios estratégicos",
+          "Queremos construir algo grande juntos"
+        ],
+        "ctas": [
+          "Qué hacemos",
+          "Qué somos",
+          "T2ópen",
+          "Join Us",
+          "Casos de éxito",
+          "PARTNERS",
+          "¿Hablamos?",
+          "Esp",
+          "Eng",
+          "Ita",
+          "Contáctanos",
+          "política de privacidad",
+          "(+info)",
+          "Aviso legal",
+          "Política de privacidad",
+          "Política de Cookies",
+          "Compromisos t2ó",
+          "customIQ",
+          "Abrir el widget de configuración de cookies",
+          "Yes",
+          "No"
+        ],
+        "excerpt": "Qué hacemos Qué somos T2ópen Join Us Casos de éxito PARTNERS ¿Hablamos? Esp Eng Ita Think big. Get big. Aceleramos tu negocio a través del marketing digital y la tecnología Connect. Conectamos con tu audiencia. Ideamos y activamos estrategias para conectar con las audiencias relevantes para tu negocio a través de la tecnología y los datos que nos permiten generar journeys multicanal y creatividad inteligente para un mayor impacto. Convert. Incrementamos tus ventas. Trabajamos para obtener los mejores resultados mediante la combinación de tecnología e inteligencia artificial enfocada a la optimización y maximización de resultados. Grow. Fidelizamos a tus clientes. El análisis de los datos y la explotación a través de procesos de marketing automation nos permiten amplificar el valor las audiencias y los clientes para incrementar el valor de tu negocio. Nuestros partners Aseguramos el éxito de nuestros proyectos con las mejores soluciones del mercado y los mejores socios estratégicos Queremos construir algo grande juntos Suscríbete para recibir las últimas noticias y eventos del grupo t2ó ONE Al pulsar en \"Enviar\" has aceptado la política de privacidad (+info) para tratar tus datos con la finalidad de tramitar las consultas que puedas plantearnos. Aviso legal Política de privacidad Política de Cookies Compromisos t2ó customIQ"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3221
+      },
+      "cookieAction": "rejected",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:36.118Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-t2o-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "Think big. Get big.",
+            "capturedAt": "2026-08-26T11:58:29.778Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-t2o-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T11:58:29.778Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

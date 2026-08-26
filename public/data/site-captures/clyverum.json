@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "clyverum",
+  "name": "Clyverum",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://clyverum.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "¿Necesitas Placas Solares?",
+    "promise": "¿Necesitas Placas Solares?",
+    "audience": "Público inferido de la especialización declarada: Captación y automatización para solar, mezclada con adquisición B2C en Andalucía.",
+    "offer": "Motor propio de ventas y leads exclusivos para instaladores solares.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No se observó un precio público en las piezas recuperadas.",
+    "guarantee": "No se observó una garantía público en las piezas recuperadas.",
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "clyverum-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://clyverum.com/",
+      "finalUrl": "https://clyverum.com/",
+      "title": "Luzfirme: Leads confiables para placas solares | LuzFirme",
+      "status": "captured",
+      "capturedAt": "2026-08-26T15:55:46.046Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/clyverum/site-d9f148d75f-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 5061,
+        "bytes": 296726,
+        "sha256": "fb63c1413585c0b8f0144980ba47e5d53d5d9b9914e89d149dacd96aba99ff58"
+      },
+      "thumbnail": {
+        "file": "/evidence/clyverum/site-d9f148d75f-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 2082,
+        "bytes": 66930,
+        "sha256": "705a1d8ccb3b06f589bac69ddf00261fb9989d194e7f9172274f8a39dc76d1cd"
+      },
+      "text": {
+        "language": "es",
+        "h1": "¿Necesitas Placas Solares?",
+        "headings": [
+          "¿Necesitas Placas Solares?",
+          "No hay dos instalaciones solares iguales",
+          "Ponte en Contacto"
+        ],
+        "ctas": [
+          "Inicio",
+          "Contacto",
+          "Comprobar viabilidad",
+          "Encontrar mi instalador",
+          "Entregar",
+          "Política de Privacidad",
+          "Términos y Condiciones"
+        ],
+        "excerpt": "Inicio Contacto ¿Necesitas Placas Solares? Te ponemos en contacto con profesionales certificados que se adaptarán a tus necesidades energéticas y a las características de tu propiedad. No hay dos instalaciones solares iguales Lo que necesitas depende de tu tipo de inmueble, tu consumo eléctrico y tus objetivos de ahorro Envíanos tus datos y dirigiremos tu solicitud a una empresa instaladora independiente y validada de tu zona que gestione proyectos como el tuyo. Si tu cubierta es viable, se pondrán en contacto contigo para explicarte los siguientes pasos y ofrecerte un estudio inicial. Viviendas unifamiliares: Generalmente requieren un cálculo exacto de paneles según la orientación del tejado y la evaluación de baterías para cubrir el consumo nocturno. Comunidades y empresas: Pueden requerir proyectos de autoconsumo colectivo, infraestructuras en naves industriales o instalación de puntos de recarga. Ponte en Contacto Contacts: clyverum@gmail.com Política de Privacidad Términos y Condiciones"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 5062
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:09:52.876Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "clyverum-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "¿Necesitas Placas Solares?",
+            "capturedAt": "2026-08-26T15:55:46.046Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "clyverum-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T15:55:46.046Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

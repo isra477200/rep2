@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-heading2market-com",
+  "name": "Heading2Market",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://heading2market.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 2,
+    "captured": 2,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "El sitio web se encuentra en mantenimiento.",
+    "promise": null,
+    "audience": null,
+    "offer": "Outsourcing de equipos SDR: prospección outbound multicanal (teléfono, email, LinkedIn) que entrega un flujo predecible de reuniones cualificadas para equipos de venta B2B.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage",
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-heading2market-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://heading2market.com/",
+      "finalUrl": "https://heading2market.com/",
+      "title": "Mantenimiento programado",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:16:58.010Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-heading2market-com/site-b70d4802f3-homepage.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 69626,
+        "sha256": "14e78fb5bce7267b963c624ef3d2ac2e77f9a3ca524605ad0f957654b731109c"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-heading2market-com/site-b70d4802f3-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 292,
+        "bytes": 11132,
+        "sha256": "50349fb21bca410f51282452dd08456d821a31a5288a2d18a6000f0fc62c8699"
+      },
+      "text": {
+        "language": "en",
+        "h1": "El sitio web se encuentra en mantenimiento.",
+        "headings": [
+          "El sitio web se encuentra en mantenimiento.",
+          "Lo sentimos por los problemas causados. ¡En breve volveremos a estar operativos!"
+        ],
+        "ctas": [],
+        "excerpt": "El sitio web se encuentra en mantenimiento. Lo sentimos por los problemas causados. ¡En breve volveremos a estar operativos!"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 720
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "amp-heading2market-com-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://heading2market.com/outbound-marketing-outsourcing-sdr-externalizados",
+      "finalUrl": "https://heading2market.com/outbound-marketing-outsourcing-sdr-externalizados",
+      "title": "Mantenimiento programado",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:16:57.979Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-heading2market-com/site-a4d6449130-landing.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 69626,
+        "sha256": "14e78fb5bce7267b963c624ef3d2ac2e77f9a3ca524605ad0f957654b731109c"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-heading2market-com/site-a4d6449130-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 292,
+        "bytes": 11132,
+        "sha256": "50349fb21bca410f51282452dd08456d821a31a5288a2d18a6000f0fc62c8699"
+      },
+      "text": {
+        "language": "en",
+        "h1": "El sitio web se encuentra en mantenimiento.",
+        "headings": [
+          "El sitio web se encuentra en mantenimiento.",
+          "Lo sentimos por los problemas causados. ¡En breve volveremos a estar operativos!"
+        ],
+        "ctas": [],
+        "excerpt": "El sitio web se encuentra en mantenimiento. Lo sentimos por los problemas causados. ¡En breve volveremos a estar operativos!"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 720
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:15.141Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-heading2market-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "El sitio web se encuentra en mantenimiento.",
+            "capturedAt": "2026-08-26T11:16:58.010Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-heading2market-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T11:16:58.010Z"
+          },
+          {
+            "pageId": "amp-heading2market-com-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T11:16:57.979Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

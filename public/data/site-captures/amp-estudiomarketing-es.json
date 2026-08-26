@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-estudiomarketing-es",
+  "name": "Estudio Marketing",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://estudiomarketing.es/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Franquicia de éxito y alta rentabilidad",
+    "promise": null,
+    "audience": null,
+    "offer": "Franquicia de agencia de marketing digital online: el franquiciado vende webs (CMS propio), tiendas online, apps, SEO, redes sociales y campañas; la central ejecuta la producción técnica. Formación personalizada y gestor dedicado.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": null,
+    "guarantee": "Sin garantía explícita de rentabilidad",
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-estudiomarketing-es-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://estudiomarketing.es/",
+      "finalUrl": "https://www.estudiomarketing.es/",
+      "title": "Franquicia de Marketing Digital Online muy rentable. Unete a una de las franquicias de éxito más rentables de 2024, 2025, 2026 que funciona y es segura | Agencia de Marketing Digital",
+      "status": "captured",
+      "capturedAt": "2026-08-25T17:26:00.034Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-estudiomarketing-es/site-9e072fb582-homepage.webp",
+        "type": "image/webp",
+        "width": 2264,
+        "height": 6599,
+        "bytes": 508712,
+        "sha256": "37687ac6834074e8bdda1b0b1d24ce02ce55ad61143468f3b9d5fdf01b3b08f9"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-estudiomarketing-es/site-9e072fb582-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1516,
+        "bytes": 60046,
+        "sha256": "8c139dd34a04198bb9b33cfb9443568aa01e57b05655b02791055c10662a4bd9"
+      },
+      "text": {
+        "language": "es",
+        "h1": "Franquicia de éxito y alta rentabilidad",
+        "headings": [
+          "Franquicia de éxito y alta rentabilidad"
+        ],
+        "ctas": [
+          "Aceptar",
+          "Renuncio",
+          "Configurar",
+          "INICIO",
+          "NOSOTROS",
+          "CONDICIONES FRANQUICIAS",
+          "DESCARGAR DOSSIER",
+          "CONTACTO",
+          "Creamos tu agencia de marketing digital",
+          "Servicios que ofrecemos",
+          "Te aportamos la formación necesaria",
+          "Éxito y rentabilidad de nuestros franquiciados",
+          "Servicios que te ofrecemos",
+          "Formación necesaria",
+          "Introducing estudio marketing",
+          "Condiciones de franquicia",
+          "Descargar nuestro dossier",
+          "Contacto",
+          "Política de privacidad",
+          "Aviso legal",
+          "Política de Cookies"
+        ],
+        "excerpt": "Utilizamos cookies Usamos cookies y otras técnicas de rastreo para mejorar tu experiencia de navegación en nuestra web, para mostrarte contenidos personalizados y anuncios adecuados, para analizar el tráfico en nuestra web y para comprender de donde llegan nuestros visitantes. Creamos tu agencia de marketing digital Servicios que ofrecemos Te aportamos la formación necesaria Éxito y rentabilidad de nuestros franquiciados Franquicia de éxito y alta rentabilidad"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 2264,
+        "height": 6599
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:10.337Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-estudiomarketing-es-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "Franquicia de éxito y alta rentabilidad",
+            "capturedAt": "2026-08-25T17:26:00.034Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-estudiomarketing-es-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-25T17:26:00.034Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

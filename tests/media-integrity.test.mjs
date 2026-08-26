@@ -11,6 +11,7 @@ const snapshotPromise = Promise.all([
   readJson("public/data/summary.json"),
   readJson("public/data/audit.json"),
   readJson("public/data/media-quality.json"),
+  readJson("public/data/scrapecreators-media-index.json"),
 ]);
 
 function validSignature(file, buffer) {
@@ -22,6 +23,13 @@ function validSignature(file, buffer) {
   if (extension === "webp")
     return buffer.toString("ascii", 0, 4) === "RIFF" && buffer.toString("ascii", 8, 12) === "WEBP";
   if (extension === "pdf") return buffer.toString("ascii", 0, 5) === "%PDF-";
+  if (extension === "mp4")
+    return buffer.length >= 12 && buffer.toString("ascii", 4, 8) === "ftyp";
+  if (extension === "heic") {
+    if (buffer.length < 12 || buffer.toString("ascii", 4, 8) !== "ftyp") return false;
+    const brands = buffer.subarray(8, Math.min(buffer.length, 64)).toString("ascii");
+    return /heic|heix|hevc|hevx|mif1|msf1/.test(brands);
+  }
   if (extension === "svg") {
     const text = buffer.subarray(0, Math.min(buffer.length, 4_096)).toString("utf8");
     return /<svg\b/i.test(text) && !/<html\b|<!doctype\s+html/i.test(text);
@@ -29,16 +37,21 @@ function validSignature(file, buffer) {
   return false;
 }
 
-test("all 3,957 gallery assets exist locally, are unique and match their declared size", async () => {
-  const [companies, summary] = await snapshotPromise;
-  const rows = companies.flatMap((company) =>
+test("all declared gallery assets exist locally, are unique and match their declared size", async () => {
+  const [companies, summary, , , scrapeCreators] = await snapshotPromise;
+  const legacyRows = companies.flatMap((company) =>
     company.media.map((media) => ({ companyId: company.id, ...media })),
   );
+  const scrapeCreatorsRows = Object.values(scrapeCreators.items || {}).flatMap((ad) =>
+    (ad.mediaAssets || []).map((media) => ({ companyId: ad.companyId, ...media })),
+  );
+  const rows = [...legacyRows, ...scrapeCreatorsRows];
   const failures = [];
   const referenced = new Set();
 
-  assert.equal(rows.length, summary.media);
-  assert.equal(rows.length, 3_957);
+  assert.equal(legacyRows.length, summary.media);
+  assert.equal(scrapeCreatorsRows.length, scrapeCreators.summary.assets);
+  assert.equal(rows.length, summary.media + scrapeCreators.summary.assets);
 
   await Promise.all(
     rows.map(async (media) => {

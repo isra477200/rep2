@@ -7,8 +7,9 @@
  */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = resolve(new URL("..", import.meta.url).pathname);
+const root = fileURLToPath(new URL("..", import.meta.url));
 const indexPath = resolve(root, "public/data/companies-index.json");
 const adsPath = resolve(root, "db/ads-espana.json");
 if (!existsSync(adsPath)) { console.log("db/ads-espana.json no existe; nada que aplicar."); process.exit(0); }

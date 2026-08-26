@@ -6,8 +6,9 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = resolve(new URL("..", import.meta.url).pathname);
+const root = fileURLToPath(new URL("..", import.meta.url));
 const mysteryPath = resolve(root, "public/data/mystery.json");
 const mystery = JSON.parse(readFileSync(mysteryPath, "utf8"));
 const companies = JSON.parse(readFileSync(resolve(root, "public/data/companies-index.json"), "utf8"));

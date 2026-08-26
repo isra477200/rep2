@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "salesdrive",
+  "name": "SalesDrive by Marlene",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://salesdrive.es/RECURSOS",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Deja de dependerde coches.net",
+    "promise": "Deja de dependerde coches.net",
+    "audience": "Público inferido de la especialización declarada: Consultoría/agencia de crecimiento que reduce dependencia de portales externos.",
+    "offer": "Sistema propio de marca, contenido y captación para automoción.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No se observó un precio público en las piezas recuperadas.",
+    "guarantee": "No se observó una garantía público en las piezas recuperadas.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "salesdrive-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://salesdrive.es/RECURSOS",
+      "finalUrl": "https://salesdrive.es/RECURSOS",
+      "title": "Vibe App",
+      "status": "captured",
+      "capturedAt": "2026-08-26T16:06:02.722Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/salesdrive/site-8446d4a486-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 744,
+        "bytes": 37608,
+        "sha256": "4ea23b31e1ec4a61787920b7c7b291ed66d93f9839387404d3a30b60b30d0070"
+      },
+      "thumbnail": {
+        "file": "/evidence/salesdrive/site-8446d4a486-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 306,
+        "bytes": 9764,
+        "sha256": "d20f649791ea821481f1376543060703349324716ab26fd9a0e20404fe067353"
+      },
+      "text": {
+        "language": "en",
+        "h1": "Deja de dependerde coches.net",
+        "headings": [
+          "Deja de dependerde coches.net"
+        ],
+        "ctas": [],
+        "excerpt": "Deja de dependerde coches.net Aquí obtendrás el paso a paso que he conseguido después de trabajar 3 años únicamente con concesionarios y compraventa y he podido ver que hacer y qué no hacer para reducir la dependencia de plataformas externas (cochesnet, wallapop, autoscout, etc) y poder dejar de competir solo por precio de manera simple y escalable. © 2026 SALESDRIVE by MARLENE VILLANUEVA"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 745
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:14:19.331Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "salesdrive-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Deja de dependerde coches.net",
+            "capturedAt": "2026-08-26T16:06:02.722Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "salesdrive-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T16:06:02.722Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

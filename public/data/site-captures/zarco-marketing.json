@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "zarco-marketing",
+  "name": "Zarco Marketing",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://zarcomarketing.es/vsl",
+  "status": "partial",
+  "coverage": {
+    "planned": 2,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo.",
+    "promise": "Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo.",
+    "audience": "Público inferido de la especialización declarada: Agencia de adquisición para agencias, consultores y negocios high-ticket.",
+    "offer": "El anunciante ofrece construir durante 120 días un sistema para atraer prospectos cualificados, agendar reuniones y convertirlas en ventas.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo.. Su presencia no valida las cifras que contengan.",
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": "El anunciante afirma que el sistema busca ayudar a cerrar 7.000 € adicionales al mes en high-ticket; no se observó una garantía contractual.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "zarco-marketing-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://zarcomarketing.es/vsl",
+      "finalUrl": "https://zarcomarketing.es/vsl",
+      "title": "Zarco Escala",
+      "status": "captured",
+      "capturedAt": "2026-08-26T14:05:12.445Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/zarco-marketing/site-c3590de591-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1139,
+        "bytes": 33284,
+        "sha256": "040b983221d77551b5fefa54e3758f75ddd29ebd9a6e684f73cf34af93057611"
+      },
+      "thumbnail": {
+        "file": "/evidence/zarco-marketing/site-c3590de591-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 469,
+        "bytes": 9290,
+        "sha256": "bcf25bc036a5b03725aed4ffb06b069d16a33a695521dc02fb33280d07ba289f"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo.",
+        "headings": [
+          "Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo."
+        ],
+        "ctas": [
+          "Play",
+          "Reserva una llamada gratuitaReserva una llamada gratuita"
+        ],
+        "excerpt": "AGENCIAS DE MARKETING O IA Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo. Sin llamadas en frío, enviar miles de emails o tener que subir contenido todos los días Clica abajo para reservar una consulta gratuita y ver si te podriamos ayudar. escala tu agencia"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1139
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "zarco-marketing-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://zarcomarketing.framer.website/",
+      "finalUrl": null,
+      "title": null,
+      "status": "pending",
+      "capturedAt": null,
+      "fullPage": true,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": null
+    }
+  ],
+  "updatedAt": "2026-08-26T16:16:26.765Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T14:05:44.113Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "zarco-marketing-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "Necesitas un sistema para diferenciarte.Subir el ticket. Cerrar más fácil mejores clientes para tu agencia, y que permanezcan más tiempo.",
+            "capturedAt": "2026-08-26T14:05:12.445Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "zarco-marketing-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T14:05:12.445Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T14:05:44.113Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

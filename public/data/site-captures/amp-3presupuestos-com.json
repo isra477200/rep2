@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-3presupuestos-com",
+  "name": "3Presupuestos",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://3presupuestos.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": null,
+    "promise": null,
+    "audience": null,
+    "offer": "Plataforma española que envía cada solicitud de reforma a 3-4 empresas cualificadas que compiten con sus ofertas; monetiza vía los profesionales que reciben los leads.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-3presupuestos-com-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://3presupuestos.com/",
+      "finalUrl": "https://www.3presupuestos.com/",
+      "title": "Encuentra al profesional ideal para tu reforma. 3presupuestos",
+      "status": "captured",
+      "capturedAt": "2026-08-25T16:35:36.988Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-3presupuestos-com/site-9aab706df4-homepage.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 5756,
+        "bytes": 279538,
+        "sha256": "f5f0581075bf57880951d36af4def5540c0d72189b4ac26ffbcb5381a1f12fa8"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-3presupuestos-com/site-9aab706df4-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 2368,
+        "bytes": 61408,
+        "sha256": "e24ff572913c6107d80aabe8584b7af9b59ef7effad98fab90a9f8d8aa8692a3"
+      },
+      "text": {
+        "language": null,
+        "h1": null,
+        "headings": [],
+        "ctas": [],
+        "excerpt": null
+      },
+      "issue": null,
+      "viewport": {
+        "width": 450,
+        "height": 150
+      },
+      "document": {
+        "width": 450,
+        "height": 150
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:07:52.545Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-25T16:41:45.803Z",
+    "fields": {
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-25T16:41:45.803Z",
+        "evidence": [
+          {
+            "pageId": "amp-3presupuestos-com-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-25T16:35:36.988Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-25T16:41:45.803Z"
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "pietri-growth-consulting",
+  "name": "Pietri Growth Consulting",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://www.pietrigrowthconsulting.com/8kframework-masterclass",
+  "status": "partial",
+  "coverage": {
+    "planned": 2,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "MASTERCLASS: El Fin del Esclavo del Contenido",
+    "promise": "MASTERCLASS: El Fin del Esclavo del Contenido",
+    "audience": "Público inferido de la especialización declarada: Consultoría y formación en sistemas de captación para servicios de alto valor.",
+    "offer": "El anunciante ofrece una masterclass sobre un sistema para atraer tráfico cualificado, convertirlo en leads y llevar perfiles adecuados a sesiones estratégicas.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: \"Cómo instalar un Sistema de Inyección Quirúrgica que te traiga clientes de alto valor sin grabar un solo Reel.\". Su presencia no valida las cifras que contengan.",
+    "price": "La masterclass observada se anuncia como gratuita; no se observó el precio del servicio posterior.",
+    "guarantee": null,
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "pietri-growth-consulting-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://www.pietrigrowthconsulting.com/8kframework-masterclass",
+      "finalUrl": "https://www.pietrigrowthconsulting.com/8kframework-masterclass",
+      "title": "8K Framework | Masterclass",
+      "status": "captured",
+      "capturedAt": "2026-08-26T14:04:38.675Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/pietri-growth-consulting/site-7fbac59ade-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 881,
+        "bytes": 53810,
+        "sha256": "948009d229f85b48f1d20a576e59aae93ebd4848bc2dac9b3ee4edc717d1b4d7"
+      },
+      "thumbnail": {
+        "file": "/evidence/pietri-growth-consulting/site-7fbac59ade-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 362,
+        "bytes": 14858,
+        "sha256": "211ae819e3e968168843a0ffa8930e658a22db4d529befcfdb04f62b41451c63"
+      },
+      "text": {
+        "language": "es",
+        "h1": "MASTERCLASS: El Fin del Esclavo del Contenido",
+        "headings": [
+          "MASTERCLASS: El Fin del Esclavo del Contenido",
+          "\"Cómo instalar un Sistema de Inyección Quirúrgica que te traiga clientes de alto valor sin grabar un solo Reel.\""
+        ],
+        "ctas": [],
+        "excerpt": "MASTERCLASS: El Fin del Esclavo del Contenido \"Cómo instalar un Sistema de Inyección Quirúrgica que te traiga clientes de alto valor sin grabar un solo Reel.\""
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 882
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "pietri-growth-consulting-landing-2",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://pietrigrowthconsulting.com/exprta-latina",
+      "finalUrl": null,
+      "title": null,
+      "status": "pending",
+      "capturedAt": null,
+      "fullPage": true,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": null
+    }
+  ],
+  "updatedAt": "2026-08-26T16:13:33.910Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T14:05:44.113Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "pietri-growth-consulting-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "MASTERCLASS: El Fin del Esclavo del Contenido",
+            "capturedAt": "2026-08-26T14:04:38.675Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T14:05:44.113Z",
+        "evidence": [
+          {
+            "pageId": "pietri-growth-consulting-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T14:04:38.675Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T14:05:44.113Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

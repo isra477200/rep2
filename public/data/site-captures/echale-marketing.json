@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "echale-marketing",
+  "name": "Échale Marketing",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://agency.echale.es/optin-276957",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "CLÍNICAS DENTALES CON 3 GABINETES O MÁS",
+    "promise": "CLÍNICAS DENTALES CON 3 GABINETES O MÁS",
+    "audience": "Público inferido de la especialización declarada: Agencia/consultoría que audita anuncios, velocidad de contacto, filtrado y recepción.",
+    "offer": "Diagnóstico y mejora del sistema completo de captación y cierre en clínicas dentales.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "Compara con agencias que cobran más de 2.000 €/mes; precio propio no observado.",
+    "guarantee": "No se observó una garantía público en las piezas recuperadas.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "echale-marketing-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://agency.echale.es/optin-276957",
+      "finalUrl": "https://agency.echale.es/optin-276957",
+      "title": "agency.echale.es/optin-276957",
+      "status": "captured",
+      "capturedAt": "2026-08-26T15:56:37.459Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/echale-marketing/site-4d9e93b83c-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 2260,
+        "bytes": 67054,
+        "sha256": "1841b6d8ad2b001f717e94cb20b907c4f9bb9dc1a2ce52639881afdd039109bb"
+      },
+      "thumbnail": {
+        "file": "/evidence/echale-marketing/site-4d9e93b83c-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 930,
+        "bytes": 17434,
+        "sha256": "9f0054f055506d61b845887c1ea6f546c9c9e4c9b5aa301c2e69a0b0ac3cd308"
+      },
+      "text": {
+        "language": "es-es",
+        "h1": "CLÍNICAS DENTALES CON 3 GABINETES O MÁS",
+        "headings": [
+          "CLÍNICAS DENTALES CON 3 GABINETES O MÁS",
+          "Descubre el método para cerrar más pacientes de implantología sin quemar a tu equipo con leads que nunca van a pagar",
+          "RELLENA EL FORMULARIO PARA ACCEDER",
+          "OTRAS CLÍNICAS YA LO HAN PROBADO"
+        ],
+        "ctas": [
+          "Política de Privacidad",
+          "Términos y Condiciones",
+          "ACCEDER A VER EL VÍDEO"
+        ],
+        "excerpt": "CLÍNICAS DENTALES CON 3 GABINETES O MÁS Descubre el método para cerrar más pacientes de implantología sin quemar a tu equipo con leads que nunca van a pagar Un sistema pensado para clínicas que ya facturan +50.000€/mes y quieren cerrar más pacientes (no llenar la agenda de leads que no tienen dinero). DESCÚBRELO EN 3 MINUTOS ↓ RELLENA EL FORMULARIO PARA ACCEDER PARA VER EL VÍDEO, RELLENA EL FORMULARIO Acepto la Política de Privacidad y los Términos y Condiciones de esta página. ACCEDER A VER EL VÍDEO OTRAS CLÍNICAS YA LO HAN PROBADO Copyright 2026, AGENCIA ÉCHALE , All rights reserved.This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 2260
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:10:39.034Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "echale-marketing-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].text.h1",
+            "value": "CLÍNICAS DENTALES CON 3 GABINETES O MÁS",
+            "capturedAt": "2026-08-26T15:56:37.459Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "echale-marketing-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T15:56:37.459Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

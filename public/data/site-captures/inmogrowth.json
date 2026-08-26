@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "inmogrowth",
+  "name": "Inmogrowth",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://info.inmogrowth.es/reservar-demo-inmobiliarias",
+  "status": "partial",
+  "coverage": {
+    "planned": 2,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "IMPORTANTE: ESTO NO ES UNA FORMACIÓN, ES UN SERVICIO PERSONALIZADO",
+    "promise": "IMPORTANTE: ESTO NO ES UNA FORMACIÓN, ES UN SERVICIO PERSONALIZADO",
+    "audience": "Público inferido de la especialización declarada: Captación de propietarios para agencias inmobiliarias.",
+    "offer": "El anunciante afirma hacer que propietarios interesados lleguen a la inmobiliaria, reduciendo llamadas en frío y trabajo de zona.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: CASOS DE ÉXITO. Su presencia no valida las cifras que contengan.",
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Conversión o contacto · conversion"
+    ]
+  },
+  "pages": [
+    {
+      "id": "inmogrowth-conversion",
+      "role": "conversion",
+      "label": "Conversión o contacto",
+      "requestedUrl": "https://info.inmogrowth.es/reservar-demo-inmobiliarias",
+      "finalUrl": "https://info.inmogrowth.es/reservar-demo-inmobiliarias",
+      "title": "info.inmogrowth.es/reservar-demo-inmobiliarias",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:51:11.256Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/inmogrowth/site-878e603058-conversion.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 3552,
+        "bytes": 194574,
+        "sha256": "c9f234900f01c9d2b37389334d507752e4f2ef99c7e30a642eca239944bb74df"
+      },
+      "thumbnail": {
+        "file": "/evidence/inmogrowth/site-878e603058-conversion-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 1461,
+        "bytes": 55424,
+        "sha256": "2ff75ed13fe1c9773486a85ca9adb936a387c7d92c2a5a354d521fad53ccaa24"
+      },
+      "text": {
+        "language": "es",
+        "h1": "IMPORTANTE: ESTO NO ES UNA FORMACIÓN, ES UN SERVICIO PERSONALIZADO",
+        "headings": [
+          "IMPORTANTE: ESTO NO ES UNA FORMACIÓN, ES UN SERVICIO PERSONALIZADO",
+          "Descubre cómo puedes conseguir",
+          "3 ventas extras cada mes",
+          "PASO 1: Mira cómo funciona el sistema 👇",
+          "CASOS DE ÉXITO",
+          "Lo que ya están consiguiendo otras agencias",
+          "PASO 2: Agenda tu reunión ahora 👇",
+          "Para poder darte tu diagnóstico personalizado, necesitamos analizar tu caso contigo en una videollamada."
+        ],
+        "ctas": [
+          "agosto",
+          "2026"
+        ],
+        "excerpt": "IMPORTANTE: ESTO NO ES UNA FORMACIÓN, ES UN SERVICIO PERSONALIZADO Descubre cómo puedes conseguir 3 ventas extras cada mes PASO 1: Mira cómo funciona el sistema 👇 CASOS DE ÉXITO Lo que ya están consiguiendo otras agencias PASO 2: Agenda tu reunión ahora 👇 Para poder darte tu diagnóstico personalizado, necesitamos analizar tu caso contigo en una videollamada. Agenda tu sesión estratégica Revisaremos contigo todo tu proceso actual y te mostraremos, paso a paso, cómo nuestros clientes ya captan más exclusivas. ✅ Análisis de tu sistema actual de captación de clientes ✅ Detección de errores y puntos de fuga en tu embudo ✅ Ideas prácticas para aumentar tus oportunidades de venta ✅ Presentación de nuestro sistema Inmogrowth ✅ Recomendaciones adaptadas a tu inmobiliaria para generar más oportunidades Seleccione la Fecha & Hora 12:00 13:00 16:00 17:00 18:00"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 3553
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    },
+    {
+      "id": "inmogrowth-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://inmogrowth.es/",
+      "finalUrl": null,
+      "title": null,
+      "status": "pending",
+      "capturedAt": null,
+      "fullPage": true,
+      "image": null,
+      "thumbnail": null,
+      "text": null,
+      "issue": null
+    }
+  ],
+  "updatedAt": "2026-08-26T16:11:43.328Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "inmogrowth-conversion",
+            "pageRole": "conversion",
+            "sourcePath": "pages[].text.h1",
+            "value": "IMPORTANTE: ESTO NO ES UNA FORMACIÓN, ES UN SERVICIO PERSONALIZADO",
+            "capturedAt": "2026-08-26T13:51:11.256Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "inmogrowth-conversion",
+            "pageRole": "conversion",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Conversión o contacto · conversion",
+            "capturedAt": "2026-08-26T13:51:11.256Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

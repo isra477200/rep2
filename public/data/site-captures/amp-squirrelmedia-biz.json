@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "amp-squirrelmedia-biz",
+  "name": "Squirrel Media",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://squirrelmedia.biz/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "The Media Tech Group",
+    "promise": null,
+    "audience": null,
+    "offer": "11 adquisiciones registradas (Tracxn), entre ellas Best Option Media (agencia de medios), Grupo Green Shark (Guadalmedia y Eolo Comunicación, oct 2025), 75% de la agencia de comunicación Ranna (nov 2025), Trihaus (creadores de contenido/influencers) y la agencia SrBurns.",
+    "mechanism": [],
+    "primaryCta": "Contact Us",
+    "proof": null,
+    "price": null,
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "amp-squirrelmedia-biz-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://squirrelmedia.biz/",
+      "finalUrl": "https://squirrelmedia.biz/",
+      "title": "Squirrel Media | The Media Tech Group",
+      "status": "captured",
+      "capturedAt": "2026-08-26T11:56:28.255Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/amp-squirrelmedia-biz/site-9481a10871-homepage.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 21340,
+        "sha256": "9ad11b23de01eaee3b87866facbd26ce1e963dfd166e5703b53cf257c99f9d0a"
+      },
+      "thumbnail": {
+        "file": "/evidence/amp-squirrelmedia-biz/site-9481a10871-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 292,
+        "bytes": 5136,
+        "sha256": "db1b87ab4b6ae6d5024c1cbc1091c62b7bb36c6e1f531febf2f44d19a632b470"
+      },
+      "text": {
+        "language": "en",
+        "h1": "The Media Tech Group",
+        "headings": [
+          "The Media Tech Group",
+          "BUSINESS AREAS",
+          "OUR BRANDS",
+          "Advertising Companies",
+          "Content Companies",
+          "Media Companies",
+          "Technology Companies"
+        ],
+        "ctas": [
+          "Home",
+          "Investors",
+          "Contact Us",
+          "Media",
+          "Advertising",
+          "Content",
+          "Technology",
+          "Search",
+          "ES",
+          "EN",
+          "IT",
+          "Read more",
+          "Advertising Companies",
+          "Content Companies",
+          "Media Companies",
+          "Technology Companies",
+          "Send",
+          "info@squirrelmedia.es",
+          "+34 91 794 06 00",
+          "Privacy",
+          "Cookies",
+          "Linkedin Pablo Pereiro"
+        ],
+        "excerpt": "Home Areas Advertising Content Media Technology Investors Contact Us Languages Spanish English Italian Portuguese Areas Media Advertising Content Technology Search ES EN IT The Media Tech Group ABOUT US The Media Tech Group is a fullyintegrated technology groupwithin the media sector. TheGroup is made up of four unitsthat interact with each other toadd value: Advertising, Content,Media and Technology. Innovation and technology are the key components of ourbusiness culture, increasing the quality of our services andthe global value (multidisciplinary, transversal andinternational) that we bring to our clients from all sections ofthe group. BUSINESS AREAS OUR BRANDS Advertising Companies Content Companies Media Companies Technology Companies © Squirrel Media"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 4052
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:08:35.380Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T12:19:53.236Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-squirrelmedia-biz-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "The Media Tech Group",
+            "capturedAt": "2026-08-26T11:56:28.255Z"
+          }
+        ]
+      },
+      "primaryCta": {
+        "source": "captured_site_text",
+        "method": "first_filtered_commercial_cta_exact",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-squirrelmedia-biz-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.ctas[]",
+            "value": "Contact Us",
+            "capturedAt": "2026-08-26T11:56:28.255Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T12:19:53.236Z",
+        "evidence": [
+          {
+            "pageId": "amp-squirrelmedia-biz-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T11:56:28.255Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T12:19:53.236Z"
+}

@@ -1,0 +1,50 @@
+.listDisclosure {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgb(137 158 190 / 22%);
+}
+
+.listToggle {
+  min-height: 30px;
+  padding: 6px 11px;
+  border: 1px solid #c7d5e8;
+  border-radius: 999px;
+  background: #f2f6fc;
+  color: #08347b;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.2;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.listToggle:hover {
+  border-color: #8da9d1;
+  background: #e7effa;
+  transform: translateY(-1px);
+}
+
+.listToggle:focus-visible {
+  outline: 3px solid rgb(54 118 211 / 28%);
+  outline-offset: 2px;
+}
+
+.listCount {
+  color: currentColor;
+  font-size: 10px;
+  line-height: 1.35;
+  opacity: 0.62;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listToggle {
+    transition: none;
+  }
+}

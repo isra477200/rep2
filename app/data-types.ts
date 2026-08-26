@@ -251,6 +251,23 @@ export type CrucesData = {
   findings: string[];
 };
 
+export type AdMediaAsset =
+  | string
+  | {
+      type?: "image" | "video" | "poster" | "other";
+      kind?: "image" | "video" | "poster" | "other";
+      url?: string | null;
+      sourceUrl?: string | null;
+      file?: string | null;
+      localFile?: string | null;
+      posterUrl?: string | null;
+      posterFile?: string | null;
+      mimeType?: string | null;
+      width?: number | null;
+      height?: number | null;
+      duration?: number | null;
+    };
+
 export type AnuncioReal = {
   file: string;
   id: string;
@@ -291,8 +308,74 @@ export type AnuncioReal = {
   corpusKey?: string | null;
   /** Metadatos públicos del anunciante/financiador cuando la biblioteca los expone. */
   anunciante?: string | null;
+  /** ID estable de la página anunciante en Meta Ad Library. */
+  pageId?: string | null;
+  /** Destino comercial observado en la creatividad. */
+  landingUrl?: string | null;
+  /** Estado observado en la biblioteca; `null` significa que no se pudo determinar. */
+  isActive?: boolean | null;
+  /** Fechas originales de entrega. Admiten ISO o epoch para conservar la fuente sin pérdida. */
+  startDate?: string | number | null;
+  endDate?: string | number | null;
+  /** Activos descargados o URLs públicas asociados a la creatividad. */
+  mediaAssets?: AdMediaAsset[];
+  /** Vídeo y poster locales preferidos para reproducción estable en el portal. */
+  videoFile?: string | null;
+  posterFile?: string | null;
+  /** Transcripción normalizada del audio; convive con `transcripcion` del corpus histórico. */
+  transcript?: string | null;
+  /** País principal de la empresa; no implica que sea el mercado objetivo del anuncio. */
+  country?: string;
+  /** Familia normalizada, separada del origen del archivo. */
+  platformFamily?: "meta" | "instagram" | "google" | "display" | "unknown";
+  /** Tipo del archivo local archivado. */
+  mediaType?: "image" | "video" | "document" | "other" | "none";
+  /** Variantes físicas agrupadas bajo la misma identidad creativa. */
+  variantCount?: number;
+  variantFiles?: string[];
+  /** El original contiene copy suficiente para lectura y búsqueda. */
+  copyAvailable?: boolean;
+  /** Huella del titular, cuerpo, CTA y oferta originales. */
+  sourceCopySha256?: string;
+  /** Código BCP-47 simplificado del original (`und` si no se puede determinar). */
+  idioma?: string;
+  idiomaNombre?: string;
+  idiomaConfianza?: number | null;
+  idiomaOrigen?: "detected" | "market_inferred" | "reviewed" | "unknown" | "no_text" | "insufficient_text" | "ambiguous_ocr" | "library_ui_literal";
+  /** Traducción separada: nunca sustituye a titular, texto o CTA. */
+  traduccionEs?: {
+    titular: string;
+    texto: string;
+    cta: string;
+    precioVisible: string;
+  };
+  estadoTraduccion?: "no_necesaria" | "automatica" | "revisada" | "pendiente" | "requiere_revision" | "no_disponible" | "no_aplica";
+  proveedorTraduccion?: string;
+  traducidoEn?: string;
+  revisadoPorTraduccion?: string;
+  notaRevisionTraduccion?: string;
+  /** Estado exhaustivo del OCR para la creatividad archivada. */
+  estadoOcr?: "no_necesario" | "completo_alta" | "completo_media" | "completo_baja" | "sin_texto" | "fallido" | "pendiente";
+  confianzaOcr?: number | null;
+  intentosOcr?: number;
+  motorOcr?: string | null;
+  idiomasOcr?: string | null;
+  motivoOcr?: string | null;
 };
-export type AnunciosRealesData = { generatedAt: string; nota: string; total: number; items: AnuncioReal[] };
+export type AnunciosRealesData = {
+  schema?: string;
+  generatedAt: string;
+  nota: string;
+  total: number;
+  companies?: number;
+  patternReady?: number;
+  withFive?: number;
+  withTen?: number;
+  byLanguage?: Array<{ label: string; n: number }>;
+  byOcrStatus?: Array<{ label: string; n: number }>;
+  byTranslationStatus?: Array<{ label: string; n: number }>;
+  items: AnuncioReal[];
+};
 
 export type AdCoverageStatus = ">=10" | "5-9" | "1-4" | "sin evidencia" | "pendiente/no atribuible";
 export type AdCoverageStatusCounts = Record<AdCoverageStatus, number>;

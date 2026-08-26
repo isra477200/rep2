@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "en-alta-agency",
+  "name": "En Alta Agency",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://www.enaltaagency.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "AGENCIA DE MARKETING",
+    "promise": "AGENCIA DE MARKETING",
+    "audience": "Público inferido de la especialización declarada: Agencia de captación completa para empresas de servicios.",
+    "offer": "El anunciante ofrece estrategia, Meta Ads, formularios, automatización, filtrado y renovación mensual de creatividades para generar clientes de forma predecible.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": "Secciones de prueba observadas en la página: MARCAS QUE CONFÍAN EN NOSOTROS. Su presencia no valida las cifras que contengan.",
+    "price": "No publica honorarios; el anunciante exige capacidad para invertir un mínimo declarado de 1.500 € al mes en publicidad.",
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "en-alta-agency-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://www.enaltaagency.com/",
+      "finalUrl": "https://www.enaltaagency.com/",
+      "title": "Agencia de marketing digital - Enalta Agency",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:50:45.203Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/en-alta-agency/site-6acd98b3b8-homepage.webp",
+        "type": "image/webp",
+        "width": 1294,
+        "height": 5280,
+        "bytes": 364922,
+        "sha256": "531de0f4a4651bab6c4d19e540dc0298129ff90d852ead07e92cbe5bbe6362bf"
+      },
+      "thumbnail": {
+        "file": "/evidence/en-alta-agency/site-6acd98b3b8-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 2122,
+        "bytes": 86324,
+        "sha256": "8030a53af6e3950ca6d622b3b03393ec7879a8d20c9f71003fc52324b9c39277"
+      },
+      "text": {
+        "language": "es-ES",
+        "h1": "AGENCIA DE MARKETING",
+        "headings": [
+          "AGENCIA DE MARKETING",
+          "EXPERTOS EN ESTRATEGIAS DIGITALES",
+          "HAZ CRECER TU MARCA",
+          "Creación de Contenido",
+          "Branding",
+          "Embudos de venta digital",
+          "Desarrollo Web",
+          "MARCAS QUE CONFÍAN EN NOSOTROS",
+          "NUESTRAS CIFRAS NOS AVALAN",
+          "HAZ QUE TU MARCA ESTE EN ALTA"
+        ],
+        "ctas": [
+          "Aceptar",
+          "Denegar",
+          "Ver preferencias",
+          "Política de cookies",
+          "Política de Privacidad",
+          "Aviso Legal",
+          "Ir al contenido",
+          "Menú",
+          "OBTENER PROPUESTA",
+          "Politica de Privacidad",
+          "Politica de Cookies",
+          "Declaración de accesibilidad"
+        ],
+        "excerpt": "AGENCIA DE MARKETING EXPERTOS EN ESTRATEGIAS DIGITALES EMBUDOS DE VENTA · CREACIÓN DE CONTENIDO · BRANDING HAZ CRECER TU MARCA Creación de Contenido Creamos contenido atractivo y valioso, alineado con tendencias y audiencia, para generar impacto, interacción y alto alcance. Branding Creamos y reestructuramos marcas con identidad sólida y única, desarrollando universos que conectan con el público y refuerzan su propuesta de valor. Embudos de venta digital Diseñamos embudos de venta optimizados para maximizar conversiones, creando experiencias fluidas que guían al cliente hasta la compra y el crecimiento. Desarrollo Web Diseñamos, desarrollamos y optimizamos sitios web modernos y funcionales, brindando una experiencia excepcional y alineada con tus objetivos comerciales. MARCAS QUE CONFÍAN EN NOSOTROS Para nosotros cada proyecto es una oportunidad para transformar marcas y hacerlas brillar. La satisfacción de nuestros clientes es la mejor prueba de nuestro compromiso con la excelencia. NUESTRAS CIFRAS NOS AVALAN +40 MILLONES DE VISUALIZACIONES EN EL ÚLTIMO AÑO Alcance: + 3.700.000 visualizaciones Alcance: + 1.900.000 visualizaciones Alcance: + 900.000 visualizaciones Alcance: + 440.000 visualizaciones HAZ QUE TU MARCA ESTE EN ALTA © 2024 Copyright Enalta Agency | Aviso Legal | Politica de Privacidad | Politica de Cookies | Declaración de accesibilidad"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1294,
+        "height": 5281
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:10:42.992Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "en-alta-agency-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "AGENCIA DE MARKETING",
+            "capturedAt": "2026-08-26T13:50:45.203Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "en-alta-agency-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T13:50:45.203Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

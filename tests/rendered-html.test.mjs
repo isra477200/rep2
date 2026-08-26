@@ -22,9 +22,10 @@ test("modal layers close through browser history without reopening stale records
   assert.match(record, /event\.preventDefault\(\)[\s\S]*?window\.history\.replaceState/);
 });
 
-test("the production index has the exact canonical coverage", async () => {
-  const [companies, countries, summary, audit, media] = await Promise.all([
+test("the base snapshot stays coherent while the live index owns current gallery coverage", async () => {
+  const [companies, liveCompanies, countries, summary, audit, media] = await Promise.all([
     json("public/data/companies.json"),
+    json("public/data/companies-index.json"),
     json("public/data/countries.json"),
     json("public/data/summary.json"),
     json("public/data/audit.json"),
@@ -33,7 +34,15 @@ test("the production index has the exact canonical coverage", async () => {
 
   assert.equal(companies.length, 712);
   assert.equal(countries.length, 195);
-  assert.equal(media.length, 3957);
+  assert.equal(media.length, liveCompanies.flatMap((company) => company.media).length);
+  assert.deepEqual(
+    new Set(media),
+    new Set(
+      liveCompanies.flatMap((company) =>
+        company.media.map((item) => item.file.replace(/^\/media\//, "")),
+      ),
+    ),
+  );
   assert.equal(summary.companies, 712);
   assert.equal(summary.countries, 195);
   assert.equal(summary.media, 3957);
@@ -63,10 +72,10 @@ test("the production index has the exact canonical coverage", async () => {
 });
 
 test("every published media file has a truthful extension and readable payload", async () => {
-  const companies = await json("public/data/companies.json");
+  const companies = await json("public/data/companies-index.json");
   const publicDir = fileURLToPath(new URL("../public/", import.meta.url));
   const referenced = companies.flatMap((company) => company.media);
-  assert.equal(referenced.length, 3957);
+  assert.equal(referenced.length, new Set(referenced.map((item) => item.file)).size);
 
   const detect = (buffer) => {
     if (
@@ -91,6 +100,10 @@ test("every published media file has a truthful extension and readable payload",
       return "pdf";
     if (buffer.length >= 4 && buffer.toString("ascii", 0, 4) === "GIF8")
       return "gif";
+    if (buffer.length >= 12 && buffer.toString("ascii", 4, 8) === "ftyp") {
+      const brand = buffer.toString("ascii", 8, 12).toLowerCase();
+      return /^(?:heic|heix|hevc|hevx|mif1|msf1)$/u.test(brand) ? "heic" : "mp4";
+    }
     const text = buffer.toString("utf8").trimStart();
     if (
       text.startsWith("<svg") ||
@@ -347,7 +360,15 @@ test("the shareable interface contains the full renderer, permanent links and so
   assert.match(record, /Todo en una página|Por secciones/);
   assert.match(record, /42 campos|Todos los campos/);
   assert.match(mapSource, /setProjection\(\{ type: "globe" \}\)/);
-  assert.match(mapSource, /flyTo/);
+  assert.doesNotMatch(mapSource, /setProjection\(\{ type: "mercator" \}\)/);
+  assert.match(mapSource, /easeTo/);
+  assert.doesNotMatch(mapSource, /\.flyTo\(/);
+  assert.match(mapSource, /scrollZoom: false/);
+  assert.match(mapSource, /setZoomRate\(1 \/ 160\)/);
+  assert.match(mapSource, /center\.lng \+ longitudeDelta/);
+  assert.doesNotMatch(mapSource, /\.panBy\(/);
+  assert.match(mapSource, /companyZoom\(company\)/);
+  assert.match(mapSource, /Math\.min\(expansionZoom, map\.getZoom\(\) \+ 1\.2, 6\.5\)/);
   assert.equal(og[0], 0x89);
   assert.equal(og.toString("ascii", 1, 4), "PNG");
 });

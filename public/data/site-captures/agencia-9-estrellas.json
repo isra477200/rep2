@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "agencia-9-estrellas",
+  "name": "Agencia 9 Estrellas",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://9estrellas.com/testeo",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": null,
+    "promise": null,
+    "audience": "Público inferido de la especialización declarada: Anuncios, embudos, CRM, redes, contenido y estrategia.",
+    "offer": "Captación y marketing completo para concesionarios.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "Se comunica como menos que una nómina; no publica importe.",
+    "guarantee": "No se observó una garantía público en las piezas recuperadas.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "agencia-9-estrellas-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://9estrellas.com/testeo",
+      "finalUrl": "https://9estrellas.com/testeo",
+      "title": "Agencia 9 Estrellas — ¿Cualificas para nuestros servicios?",
+      "status": "captured",
+      "capturedAt": "2026-08-26T15:52:26.816Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/agencia-9-estrellas/site-59ca04d9b8-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 876,
+        "bytes": 15290,
+        "sha256": "95626db3ae3f71fe70a47daa6e1db0c823848ef4a6e477a77285ff0ccc2eafbe"
+      },
+      "thumbnail": {
+        "file": "/evidence/agencia-9-estrellas/site-59ca04d9b8-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 360,
+        "bytes": 3642,
+        "sha256": "082e269200d5c6f34633d4c0edc814cdbc274a666ddfd57524cac7e89e00bb28"
+      },
+      "text": {
+        "language": "es",
+        "h1": null,
+        "headings": [],
+        "ctas": [
+          "Agencia 9 Estrellas"
+        ],
+        "excerpt": "Rellena el formulario y te contactamos en menos de 24h."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 876
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:07:32.712Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T16:16:34.600Z",
+    "fields": {
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T16:16:34.600Z",
+        "evidence": [
+          {
+            "pageId": "agencia-9-estrellas-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T15:52:26.816Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T16:16:34.600Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

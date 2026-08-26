@@ -1,55 +1,70 @@
 {
  "generatedAt": "23/08/2026",
- "universe": 938,
- "pricedCount": 209,
+ "universe": 1017,
+ "pricedCount": 216,
  "worldMedianEur": 149,
- "spainCount": 309,
+ "spainCount": 388,
  "models": [
   {
    "type": "Generalista pymes",
-   "count": 287,
-   "pct": 30.6
+   "count": 288,
+   "pct": 28.3
   },
   {
    "type": "Lead broker / venta de leads",
-   "count": 285,
-   "pct": 30.4
+   "count": 287,
+   "pct": 28.2
   },
   {
    "type": "Multi-nicho especializada",
-   "count": 145,
-   "pct": 15.5
+   "count": 185,
+   "pct": 18.2
   },
   {
    "type": "Vertical de un solo nicho",
-   "count": 96,
-   "pct": 10.2
+   "count": 105,
+   "pct": 10.3
   },
   {
    "type": "Software + servicio",
-   "count": 75,
-   "pct": 8
+   "count": 79,
+   "pct": 7.8
   },
   {
    "type": "Marca personal / freelance",
-   "count": 29,
+   "count": 32,
    "pct": 3.1
+  },
+  {
+   "type": "Marketing / automatización adyacente",
+   "count": 16,
+   "pct": 1.6
   },
   {
    "type": "Consultora grande",
    "count": 14,
-   "pct": 1.5
+   "pct": 1.4
   },
   {
    "type": "Franquicia / red",
    "count": 7,
    "pct": 0.7
+  },
+  {
+   "type": "Comunidad / formación",
+   "count": 3,
+   "pct": 0.3
+  },
+  {
+   "type": "Directorio / marketplace",
+   "count": 1,
+   "pct": 0.1
   }
  ],
  "priceBuckets": [
   {
    "label": "Menos de 50 €",
-   "count": 73
+   "count": 76
   },
   {
    "label": "50 – 150 €",
@@ -57,7 +72,7 @@
   },
   {
    "label": "150 – 500 €",
-   "count": 40
+   "count": 41
   },
   {
    "label": "500 – 1.500 €",
@@ -65,7 +80,7 @@
   },
   {
    "label": "1.500 – 5.000 €",
-   "count": 19
+   "count": 22
   },
   {
    "label": "Más de 5.000 €",
@@ -75,7 +90,7 @@
  "countryMedians": [
   {
    "country": "España",
-   "n": 81,
+   "n": 88,
    "medianEur": 300
   },
   {
@@ -137,8 +152,8 @@
  "guarantees": [
   {
    "kind": "Pago solo por resultado (cita, lead o venta)",
-   "count": 35,
-   "spain": 9,
+   "count": 37,
+   "spain": 11,
    "examples": [
     {
      "id": "scale-lead",
@@ -164,8 +179,8 @@
   },
   {
    "kind": "Reemplazo explícito del lead o cita malos",
-   "count": 5,
-   "spain": 4,
+   "count": 6,
+   "spain": 5,
    "examples": [
     {
      "id": "horizzon-media",
@@ -191,8 +206,8 @@
   },
   {
    "kind": "Sin permanencia / cancelación libre",
-   "count": 219,
-   "spain": 100,
+   "count": 230,
+   "spain": 111,
    "examples": [
     {
      "id": "clozer",
@@ -245,8 +260,8 @@
   },
   {
    "kind": "Exclusividad del lead o de la zona",
-   "count": 77,
-   "spain": 35,
+   "count": 87,
+   "spain": 45,
    "examples": [
     {
      "id": "horizzon-media",
@@ -378,7 +393,7 @@
    "relation": "Competidor directo"
   }
  ],
- "threatsSpainTotal": 71,
+ "threatsSpainTotal": 78,
  "copyNow": [
   {
    "id": "senbon-knock",
@@ -492,22 +507,22 @@
  "gaps": [
   {
    "title": "Precio público en España",
-   "stat": "81 de 309",
-   "detail": "Solo 81 de las 309 fichas españolas muestran un precio verificable en público. Publicar tarifas precualifica al lead y la mayoría no lo hace."
+   "stat": "88 de 388",
+   "detail": "Solo 88 de las 388 fichas españolas muestran un precio verificable en público. Publicar tarifas precualifica al lead y la mayoría no lo hace."
   },
   {
    "title": "Pago por reunión válida en España",
-   "stat": "0 de 309",
+   "stat": "0 de 388",
    "detail": "El cobro por reunión que cumple criterios (estándar en los países nórdicos y en Japón) no aparece en ninguna ficha española de la base: 0 casos detectados. Encaja de forma natural con un modelo setter."
   },
   {
    "title": "Reemplazo explícito del lead malo en España",
-   "stat": "4 de 309",
-   "detail": "Solo 4 fichas españolas prometen por escrito reponer el lead falso, duplicado o fuera de zona. Es una garantía barata de cumplir para quien controla la cualificación, y casi nadie la da."
+   "stat": "5 de 388",
+   "detail": "Solo 5 fichas españolas prometen por escrito reponer el lead falso, duplicado o fuera de zona. Es una garantía barata de cumplir para quien controla la cualificación, y casi nadie la da."
   },
   {
    "title": "Exclusividad territorial declarada en España",
-   "stat": "1 de 309",
+   "stat": "1 de 388",
    "detail": "Solo 1 ficha española declara exclusividad territorial en su material público. El aval central del modelo RedVitalia casi no tiene imitadores visibles: conviene hacerlo más grande y más verificable."
   }
  ],

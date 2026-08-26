@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "witheya",
+  "name": "Witheya",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://witheya.com/saber-mas",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": null,
+    "promise": null,
+    "audience": "Público inferido de la especialización declarada: Agencia de generación de demanda para empresas de reformas.",
+    "offer": "El anunciante afirma conseguir entre 15 y 30 presupuestos exclusivos y cualificados al mes para proyectos de baños y cocinas de 10.000 a 30.000 €.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": "No se observó un condicionado de garantía; el anunciante afirma que más de 100 clientes confían en su sistema.",
+    "funnel": [
+      "Landing comercial · landing"
+    ]
+  },
+  "pages": [
+    {
+      "id": "witheya-landing",
+      "role": "landing",
+      "label": "Landing comercial",
+      "requestedUrl": "https://witheya.com/saber-mas",
+      "finalUrl": "https://witheya.com/saber-mas",
+      "title": "RECURSOS GRATIS",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:51:40.878Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/witheya/site-4191b84b32-landing.webp",
+        "type": "image/webp",
+        "width": 1264,
+        "height": 1346,
+        "bytes": 35428,
+        "sha256": "aa419d20fed66ce7f7a9af260c71fc09d3c67bde629952abbba78c6c66fb9627"
+      },
+      "thumbnail": {
+        "file": "/evidence/witheya/site-4191b84b32-landing-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 554,
+        "bytes": 7844,
+        "sha256": "dec9f6e47ef45f6432dfd1285276cbd30c93a9b43b1a6ac0ceead4646f8338aa"
+      },
+      "text": {
+        "language": "es",
+        "h1": null,
+        "headings": [],
+        "ctas": [
+          "Política de Privacidad",
+          "Aviso Legal",
+          "Política de Cookies",
+          "Política de WhatsApp"
+        ],
+        "excerpt": "Descubre el sistema que nuestros clientes usan para generar 15 a 30 presupuestos exclusivos al mes con personas que quieren reformar su baño/cocina ahora. (10-30k€ por proyecto) El sistema que mantiene las cuadrillas de nuestros clientes trabajando los 12 meses del año con proyectos exclusivos y cualificados. Copyright 2026 | WITHEYA"
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 1347
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:16:14.644Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "witheya-landing",
+            "pageRole": "landing",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Landing comercial · landing",
+            "capturedAt": "2026-08-26T13:51:40.878Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}

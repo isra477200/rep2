@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "rv-site-captures-v1",
+  "id": "mas-clientes-energia",
+  "name": "Más clientes energía",
+  "primaryCountry": "España",
+  "markets": [
+    "España"
+  ],
+  "website": "https://masclientesenergia.com/",
+  "status": "complete",
+  "coverage": {
+    "planned": 1,
+    "captured": 1,
+    "blocked": 0,
+    "failed": 0
+  },
+  "language": {
+    "original": "es",
+    "translationStatus": "not_needed"
+  },
+  "commercialRead": {
+    "headline": "This site is under maintenance.",
+    "promise": "This site is under maintenance.",
+    "audience": "Público inferido de la especialización declarada: Sistema de captación para energía solar y comercializadoras.",
+    "offer": "El anunciante ofrece un embudo de captación para generar instalaciones solares y cambios de comercializadora de forma predecible.",
+    "mechanism": [],
+    "primaryCta": null,
+    "proof": null,
+    "price": "No observado en las piezas recuperadas.",
+    "guarantee": null,
+    "funnel": [
+      "Página principal · homepage"
+    ]
+  },
+  "pages": [
+    {
+      "id": "mas-clientes-energia-homepage",
+      "role": "homepage",
+      "label": "Página principal",
+      "requestedUrl": "https://masclientesenergia.com/",
+      "finalUrl": "https://masclientesenergia.com/",
+      "title": "Site under maintenance",
+      "status": "captured",
+      "capturedAt": "2026-08-26T13:51:20.733Z",
+      "fullPage": true,
+      "image": {
+        "file": "/evidence/mas-clientes-energia/site-876d45ad3b-homepage.webp",
+        "type": "image/webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 4324,
+        "sha256": "11725bc2cedf20fb662250c48399f9af22be57a6cf22c595b291244ddb6c0f45"
+      },
+      "thumbnail": {
+        "file": "/evidence/mas-clientes-energia/site-876d45ad3b-homepage-thumb.webp",
+        "type": "image/webp",
+        "width": 520,
+        "height": 292,
+        "bytes": 912,
+        "sha256": "493a708a4271a25ed67866571332fedb20c928d22053336e34c68a478fff8ca9"
+      },
+      "text": {
+        "language": "en",
+        "h1": "This site is under maintenance.",
+        "headings": [
+          "This site is under maintenance."
+        ],
+        "ctas": [],
+        "excerpt": "This site is under maintenance. We apologize for the inconvenience and appreciate your patience. Please check back later."
+      },
+      "issue": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "document": {
+        "width": 1280,
+        "height": 720
+      },
+      "cookieAction": "not_observed",
+      "imageOptimization": {
+        "status": "webp_optimized",
+        "maxWebpDimension": 16383
+      }
+    }
+  ],
+  "updatedAt": "2026-08-26T16:12:41.494Z",
+  "commercialReadProvenance": {
+    "schemaVersion": "rv-site-capture-copy-provenance-v1",
+    "updatedAt": "2026-08-26T13:54:06.669Z",
+    "fields": {
+      "headline": {
+        "source": "captured_site_text",
+        "method": "first_valid_h1_exact",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "mas-clientes-energia-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].text.h1",
+            "value": "This site is under maintenance.",
+            "capturedAt": "2026-08-26T13:51:20.733Z"
+          }
+        ]
+      },
+      "funnel": {
+        "source": "captured_site_text",
+        "method": "captured_page_labels_and_roles",
+        "enrichedAt": "2026-08-26T13:54:06.669Z",
+        "evidence": [
+          {
+            "pageId": "mas-clientes-energia-homepage",
+            "pageRole": "homepage",
+            "sourcePath": "pages[].label + pages[].role",
+            "value": "Página principal · homepage",
+            "capturedAt": "2026-08-26T13:51:20.733Z"
+          }
+        ]
+      }
+    }
+  },
+  "commercialReadEnrichedAt": "2026-08-26T13:54:06.669Z",
+  "commercialReadAttribution": {
+    "status": "observed_not_performance_validated",
+    "note": "Titulares, CTA y secciones proceden de la captura pública. Oferta, precio y garantía se atribuyen al anunciante; no son resultados verificados por RedVitalia.",
+    "observedAt": "2026-08-26"
+  }
+}
