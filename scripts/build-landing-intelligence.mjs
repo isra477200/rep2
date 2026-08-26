@@ -156,9 +156,38 @@ const salesPageScore = (page) => {
 };
 
 const NEGATIVE_OBSERVATION = /\b(?:no\s+(?:se\s+)?(?:observa|observado|observ[oó]|publica|publicado|consta|menciona|mencionado|indica|indicado|detecta|detectado|verifica|verificado|comprueba|comprobado|visible|disponible|formaliza|formalizado|localiza|localizado|localiz[oó])|no\s+hay\s+(?:(?:un|una|precios?|tarifas?|garant[ií]as?)\s+)?(?:precio|tarifa|garant[ií]a)?|sin\s+(?:precio|tarifa|garant[ií]a|prueba|evidencia|datos?|promesa)|(?:precio|tarifa|garant[ií]a)\s+(?:p[uú]blic[oa]\s+)?(?:ocult[oa]|a consultar|no disponible)|rechaz[ao]n?\s+(?:expresamente\s+)?(?:las?\s+)?garant[ií]as?|no\s+promet(?:e|en)|not\s+(?:observed|published|available|verified|mentioned)|non\s+(?:publi[eé]|observ[eé]|mentionn[eé]))(?=\s|[.,;:!?)}\]"']|$)/i;
-const positiveField = (key, value) => {
+
+// Revisión editorial del 26/08/2026: textos con cifras o palabras clave que describen
+// benchmarks, inversión, ausencia o antigarantías, no una condición publicada propia.
+const ABSENT_FIELD_OVERRIDES = {
+  price: new Set([
+    "agencia-riders", "agency-go-to-market", "anexeo-anexeo-digital-s-l-u-alianza-con-marketingfunerario-com",
+    "bastida-y-farina-s-l", "borrads", "buda-marketing-buda-consultores-s-l", "captaleads",
+    "cleanify-agency", "clibel", "crece-sin-limite", "dentalead", "hack-celeration-agencia-outbound",
+    "idealleader", "inmoads", "lexiuris-marketing", "marketinhouse", "marketlabs", "mas-captacion",
+    "multiacustica", "ndemarketing", "nova-agency", "onlysem-andreu-magrina-freelance", "playmedic",
+    "sempatiza", "summum-marketing", "the-selling-system-marc-graell", "top-doctors",
+    "under-ads-ex-aiz-agency", "vcf-marketing-vcf-group-bcn-sl",
+  ]),
+  guarantee: new Set([
+    "agencia-riders", "amp-leadsestudio-com", "back-in-town-sdr-externalizado",
+    "buda-marketing-buda-consultores-s-l", "comadi-telemarketing", "desorbitante",
+    "doctoralia-grupo-docplanner", "fertilidad-marketing", "growyourindustry", "kimoon",
+    "marketing-para-fisios", "marketing-para-fontaneros", "mavo-growth",
+    "mpg-marketing-para-gimnasios", "pivote-marketing", "starofservice", "summum-marketing",
+  ]),
+  proof: new Set([
+    "brokerlead-solutions", "devside-tm", "ecaptor", "epiko", "psicoemprendedores", "salesdose",
+    "zarco-marketing", "copyfilms", "escala-con-anuncios", "leadsforma",
+    "marketing-para-seguros-marketing-web-consulting-s-l", "metrian", "reformas-leads",
+    "inmomax", "comprarleads",
+  ]),
+};
+
+const positiveField = (key, value, companyId = "") => {
   const text = list(value).join(" ");
   if (!text) return false;
+  if (ABSENT_FIELD_OVERRIDES[key]?.has(companyId)) return false;
   if (key === "price") {
     const monetaryAmounts = text.match(/\d[\d.,]*(?:\s?[-–]\s?\d[\d.,]*)?\s?(?:€|eur(?:os?)?|\$)(?:\s*\/\s*(?:mes|month))?/gi) || [];
     if (monetaryAmounts.length >= 2 || /\b(?:starter|pro|plan|paquete)\b[^.]{0,80}\d[^.]{0,30}(?:€|eur|\$)/i.test(text)) return true;
@@ -312,7 +341,7 @@ for (const record of records) {
   const pages = Array.isArray(record.pages) ? record.pages : [];
   const capturedPages = pages.filter((page) => page.status === "captured");
   const deep = deepById.get(record.id);
-  const fieldsPresent = fieldKeys.filter((key) => positiveField(key, read[key]));
+  const fieldsPresent = fieldKeys.filter((key) => positiveField(key, read[key], record.id));
   const funnel = list(read.funnel);
   const scoredPages = capturedPages
     .filter((page) => ["homepage", "landing", "conversion"].includes(page.role))
@@ -567,6 +596,9 @@ const result = {
       ctaCoveragePct: pct(universal.usableCtaCompanies, universal.salesPageCompanies),
       classifiedHeroCompanies: universal.classifiedHeroCompanies,
       heroCoveragePct: pct(universal.classifiedHeroCompanies, universal.salesPageCompanies),
+      auditedAbsenceOverrides: Object.fromEntries(
+        Object.entries(ABSENT_FIELD_OVERRIDES).map(([field, ids]) => [field, ids.size]),
+      ),
     },
     anatomy: [
       { id: "hero", label: "Resultado + público", purpose: "Dejar claro para quién es la página y qué cambio propone." },

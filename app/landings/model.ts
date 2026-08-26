@@ -171,6 +171,11 @@ export type LandingIntelligence = {
       ctaCoveragePct: number;
       classifiedHeroCompanies: number;
       heroCoveragePct: number;
+      auditedAbsenceOverrides: {
+        price: number;
+        guarantee: number;
+        proof: number;
+      };
     };
   };
   verticals: Record<string, LandingVerticalIntelligence>;

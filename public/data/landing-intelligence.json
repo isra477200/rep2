@@ -1,6 +1,6 @@
 {
   "schemaVersion": "rv-landing-intelligence-v2",
-  "generatedAt": "2026-08-26T19:58:21.190Z",
+  "generatedAt": "2026-08-26T20:17:09.541Z",
   "source": {
     "companies": 453,
     "eligibleCompanies": 324,
@@ -36,9 +36,9 @@
       "offer": 97,
       "mechanism": 61,
       "primaryCta": 79,
-      "proof": 57,
-      "price": 33,
-      "guarantee": 38,
+      "proof": 52,
+      "price": 24,
+      "guarantee": 32,
       "funnel": 89
     },
     "ctaFamilies": [
@@ -880,7 +880,12 @@
       "usableCtaCompanies": 198,
       "ctaCoveragePct": 76,
       "classifiedHeroCompanies": 100,
-      "heroCoveragePct": 38
+      "heroCoveragePct": 38,
+      "auditedAbsenceOverrides": {
+        "price": 29,
+        "guarantee": 17,
+        "proof": 15
+      }
     },
     "anatomy": [
       {
@@ -941,9 +946,9 @@
         "offer": 97,
         "mechanism": 75,
         "primaryCta": 90,
-        "proof": 57,
-        "price": 38,
-        "guarantee": 38,
+        "proof": 52,
+        "price": 24,
+        "guarantee": 32,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -961,9 +966,9 @@
             "amp-leadsestudio-com",
             "engrana",
             "agencialeads-net-agk-marketing-agency-llc",
+            "rauw-leads",
             "marketlabs",
             "mas-captacion",
-            "rauw-leads",
             "amp-docmedia-es",
             "amp-tuotempo-es",
             "fertilidad-marketing",
@@ -1172,14 +1177,14 @@
             "fertilidad-marketing",
             "vectoryal-nestor-garcia-velasco",
             "ebisu-marketing-agency",
-            "ecaptor",
             "marketingpubli",
-            "multiacustica",
             "sergio-marketing-digital",
-            "escala-con-anuncios",
+            "ecaptor",
             "exponencialmente",
+            "multiacustica",
             "tm-system",
             "audifono-es-hispania-hearing-partners",
+            "escala-con-anuncios",
             "metodo-vertice-samantha-quesada",
             "amp-growcompany-es",
             "amp-cosmoscallcenter-com",
@@ -1860,7 +1865,7 @@
         "El enfoque más visible es «Categoría o identidad» (13 de 63); úsalo como control, no como ganador.",
         "El 75% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 4 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 57% y el mecanismo en 75% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 52% y el mecanismo en 75% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "study": {
         "confidence": "medium",
@@ -1930,9 +1935,9 @@
             "amp-leadsestudio-com",
             "engrana",
             "agencialeads-net-agk-marketing-agency-llc",
+            "rauw-leads",
             "marketlabs",
             "mas-captacion",
-            "rauw-leads",
             "amp-docmedia-es",
             "amp-tuotempo-es",
             "fertilidad-marketing",
@@ -1993,14 +1998,14 @@
         "opportunities": [
           {
             "field": "price",
-            "presence": 38,
-            "universal": 33,
-            "delta": 5
+            "presence": 24,
+            "universal": 24,
+            "delta": 0
           },
           {
             "field": "guarantee",
-            "presence": 38,
-            "universal": 38,
+            "presence": 32,
+            "universal": 32,
             "delta": 0
           }
         ],
@@ -2030,8 +2035,8 @@
         "mechanism": 68,
         "primaryCta": 100,
         "proof": 73,
-        "price": 45,
-        "guarantee": 45,
+        "price": 36,
+        "guarantee": 41,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -2711,8 +2716,8 @@
           {
             "field": "proof",
             "presence": 73,
-            "universal": 57,
-            "delta": 16
+            "universal": 52,
+            "delta": 21
           },
           {
             "field": "headline",
@@ -2724,15 +2729,15 @@
         "opportunities": [
           {
             "field": "price",
-            "presence": 45,
-            "universal": 33,
+            "presence": 36,
+            "universal": 24,
             "delta": 12
           },
           {
             "field": "guarantee",
-            "presence": 45,
-            "universal": 38,
-            "delta": 7
+            "presence": 41,
+            "universal": 32,
+            "delta": 9
           }
         ],
         "recommendedDefaults": {
@@ -3246,30 +3251,30 @@
             "delta": 29
           },
           {
+            "field": "proof",
+            "presence": 73,
+            "universal": 52,
+            "delta": 21
+          },
+          {
             "field": "audience",
             "presence": 93,
             "universal": 75,
             "delta": 18
-          },
-          {
-            "field": "proof",
-            "presence": 73,
-            "universal": 57,
-            "delta": 16
           }
         ],
         "opportunities": [
           {
             "field": "price",
             "presence": 20,
-            "universal": 33,
-            "delta": -13
+            "universal": 24,
+            "delta": -4
           },
           {
             "field": "guarantee",
             "presence": 33,
-            "universal": 38,
-            "delta": -5
+            "universal": 32,
+            "delta": 1
           },
           {
             "field": "primaryCta",
@@ -3303,9 +3308,9 @@
         "offer": 100,
         "mechanism": 82,
         "primaryCta": 82,
-        "proof": 73,
-        "price": 45,
-        "guarantee": 36,
+        "proof": 64,
+        "price": 36,
+        "guarantee": 32,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -3361,8 +3366,8 @@
             "markulia",
             "acelera-tu-crm",
             "amp-activatelemarketing-es",
-            "vcf-marketing-vcf-group-bcn-sl",
-            "eleva-digitals"
+            "eleva-digitals",
+            "vcf-marketing-vcf-group-bcn-sl"
           ],
           "examples": [
             {
@@ -3431,8 +3436,8 @@
             "idealista-producto-para-agencias-inmobiliarias",
             "amp-activatelemarketing-es",
             "comprarleads",
-            "vcf-marketing-vcf-group-bcn-sl",
             "eleva-digitals",
+            "vcf-marketing-vcf-group-bcn-sl",
             "bixquert-performance-ads"
           ],
           "examples": [
@@ -3467,8 +3472,8 @@
           "count": 3,
           "companyIds": [
             "horizzon-media",
-            "brokerlead-solutions",
-            "artic-agents"
+            "artic-agents",
+            "brokerlead-solutions"
           ],
           "examples": [
             {
@@ -3477,14 +3482,14 @@
               "text": "Consigue propietarioslistos para vender en tu zona"
             },
             {
-              "companyId": "brokerlead-solutions",
-              "name": "Brokerlead Solutions",
-              "text": "Consigue más firmas sin depender de inmobiliarias ni comprar leads compartidos"
-            },
-            {
               "companyId": "artic-agents",
               "name": "Artic Agents",
               "text": "¿Estás pensando en vender tu propiedad?"
+            },
+            {
+              "companyId": "brokerlead-solutions",
+              "name": "Brokerlead Solutions",
+              "text": "Consigue más firmas sin depender de inmobiliarias ni comprar leads compartidos"
             }
           ],
           "share": 14,
@@ -3752,7 +3757,7 @@
           "verticalEvidence": "curated",
           "verticalMargin": 29,
           "curatedRank": 2,
-          "completeness": 10,
+          "completeness": 9,
           "fieldsPresent": [
             "headline",
             "promise",
@@ -3761,11 +3766,10 @@
             "mechanism",
             "primaryCta",
             "proof",
-            "price",
             "guarantee",
             "funnel"
           ],
-          "score": 299
+          "score": 296
         },
         {
           "companyId": "agency-mdi",
@@ -3880,7 +3884,7 @@
           "verticalEvidence": "curated",
           "verticalMargin": 25,
           "curatedRank": 6,
-          "completeness": 10,
+          "completeness": 9,
           "fieldsPresent": [
             "headline",
             "promise",
@@ -3890,17 +3894,16 @@
             "primaryCta",
             "proof",
             "price",
-            "guarantee",
             "funnel"
           ],
-          "score": 263
+          "score": 260
         }
       ],
       "recommendations": [
         "El enfoque más visible es «Resultado primero» (3 de 22); úsalo como control, no como ganador.",
         "El 86% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 6 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 73% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 64% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "study": {
         "confidence": "medium",
@@ -3917,8 +3920,8 @@
           "count": 3,
           "companyIds": [
             "horizzon-media",
-            "brokerlead-solutions",
-            "artic-agents"
+            "artic-agents",
+            "brokerlead-solutions"
           ],
           "examples": [
             {
@@ -3927,14 +3930,14 @@
               "text": "Consigue propietarioslistos para vender en tu zona"
             },
             {
-              "companyId": "brokerlead-solutions",
-              "name": "Brokerlead Solutions",
-              "text": "Consigue más firmas sin depender de inmobiliarias ni comprar leads compartidos"
-            },
-            {
               "companyId": "artic-agents",
               "name": "Artic Agents",
               "text": "¿Estás pensando en vender tu propiedad?"
+            },
+            {
+              "companyId": "brokerlead-solutions",
+              "name": "Brokerlead Solutions",
+              "text": "Consigue más firmas sin depender de inmobiliarias ni comprar leads compartidos"
             }
           ],
           "share": 14,
@@ -3998,23 +4001,23 @@
             "delta": 18
           },
           {
-            "field": "proof",
-            "presence": 73,
-            "universal": 57,
-            "delta": 16
+            "field": "headline",
+            "presence": 100,
+            "universal": 86,
+            "delta": 14
           }
         ],
         "opportunities": [
           {
             "field": "guarantee",
-            "presence": 36,
-            "universal": 38,
-            "delta": -2
+            "presence": 32,
+            "universal": 32,
+            "delta": 0
           },
           {
             "field": "price",
-            "presence": 45,
-            "universal": 33,
+            "presence": 36,
+            "universal": 24,
             "delta": 12
           }
         ],
@@ -4043,8 +4046,8 @@
         "offer": 100,
         "mechanism": 81,
         "primaryCta": 88,
-        "proof": 75,
-        "price": 56,
+        "proof": 69,
+        "price": 38,
         "guarantee": 38,
         "funnel": 100
       },
@@ -4057,8 +4060,8 @@
             "expiey",
             "iqlex-solutions-sl",
             "adfredo",
-            "epiko",
             "eximia-studio",
+            "epiko",
             "onlysem-andreu-magrina-freelance"
           ],
           "examples": [
@@ -4078,9 +4081,9 @@
               "text": "Análisis gratuito"
             },
             {
-              "companyId": "epiko",
-              "name": "EPIKO",
-              "text": "Solicitar diagnóstico"
+              "companyId": "eximia-studio",
+              "name": "Eximia Studio",
+              "text": "Agenda tu diagnóstico gratuito"
             }
           ],
           "share": 38,
@@ -4545,7 +4548,7 @@
           "verticalEvidence": "curated",
           "verticalMargin": 27,
           "curatedRank": 4,
-          "completeness": 9,
+          "completeness": 8,
           "fieldsPresent": [
             "headline",
             "promise",
@@ -4554,17 +4557,16 @@
             "mechanism",
             "primaryCta",
             "proof",
-            "price",
             "funnel"
           ],
-          "score": 278
+          "score": 275
         }
       ],
       "recommendations": [
         "El enfoque más visible es «Categoría o identidad» (4 de 16); úsalo como control, no como ganador.",
         "El 81% de la muestra ofrece un CTA comercial recuperable; «Auditoría o diagnóstico» es la familia más observada.",
         "El formulario mediano tiene 4 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 75% y el mecanismo en 81% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 69% y el mecanismo en 81% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "study": {
         "confidence": "medium",
@@ -4619,8 +4621,8 @@
             "expiey",
             "iqlex-solutions-sl",
             "adfredo",
-            "epiko",
             "eximia-studio",
+            "epiko",
             "onlysem-andreu-magrina-freelance"
           ],
           "examples": [
@@ -4640,9 +4642,9 @@
               "text": "Análisis gratuito"
             },
             {
-              "companyId": "epiko",
-              "name": "EPIKO",
-              "text": "Solicitar diagnóstico"
+              "companyId": "eximia-studio",
+              "name": "Eximia Studio",
+              "text": "Agenda tu diagnóstico gratuito"
             }
           ],
           "share": 38,
@@ -4657,24 +4659,30 @@
             "delta": 24
           },
           {
-            "field": "price",
-            "presence": 56,
-            "universal": 33,
-            "delta": 23
-          },
-          {
             "field": "mechanism",
             "presence": 81,
             "universal": 61,
             "delta": 20
+          },
+          {
+            "field": "proof",
+            "presence": 69,
+            "universal": 52,
+            "delta": 17
           }
         ],
         "opportunities": [
           {
+            "field": "price",
+            "presence": 38,
+            "universal": 24,
+            "delta": 14
+          },
+          {
             "field": "guarantee",
             "presence": 38,
-            "universal": 38,
-            "delta": 0
+            "universal": 32,
+            "delta": 6
           }
         ],
         "recommendedDefaults": {
@@ -4988,8 +4996,8 @@
           {
             "field": "guarantee",
             "presence": 71,
-            "universal": 38,
-            "delta": 33
+            "universal": 32,
+            "delta": 39
           },
           {
             "field": "promise",
@@ -4998,18 +5006,18 @@
             "delta": 22
           },
           {
-            "field": "headline",
-            "presence": 100,
-            "universal": 86,
-            "delta": 14
+            "field": "proof",
+            "presence": 71,
+            "universal": 52,
+            "delta": 19
           }
         ],
         "opportunities": [
           {
             "field": "price",
             "presence": 0,
-            "universal": 33,
-            "delta": -33
+            "universal": 24,
+            "delta": -24
           },
           {
             "field": "mechanism",
@@ -5045,9 +5053,9 @@
         "offer": 95,
         "mechanism": 82,
         "primaryCta": 95,
-        "proof": 64,
-        "price": 23,
-        "guarantee": 55,
+        "proof": 59,
+        "price": 18,
+        "guarantee": 41,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -5063,8 +5071,8 @@
             "compra-leads-ou",
             "customertop",
             "amp-igtelcom-es",
-            "agency-go-to-market",
             "tumejorlead",
+            "agency-go-to-market",
             "daas-group-vendermas",
             "comadi-telemarketing",
             "amp-seventic-com",
@@ -5208,8 +5216,8 @@
             "customertop",
             "pivote-marketing",
             "amp-outsourcing-planet-es",
-            "agency-go-to-market",
             "solumize",
+            "agency-go-to-market",
             "comadi-telemarketing",
             "amp-seventic-com",
             "amp-reclutae-com",
@@ -5555,7 +5563,7 @@
           "verticalEvidence": "curated",
           "verticalMargin": 26,
           "curatedRank": 5,
-          "completeness": 10,
+          "completeness": 9,
           "fieldsPresent": [
             "headline",
             "promise",
@@ -5565,10 +5573,9 @@
             "primaryCta",
             "proof",
             "price",
-            "guarantee",
             "funnel"
           ],
-          "score": 272
+          "score": 269
         },
         {
           "companyId": "amp-wanaleads-fr",
@@ -5655,7 +5662,7 @@
         "El enfoque más visible es «Resultado primero» (4 de 22); úsalo como control, no como ganador.",
         "El 95% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 3 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 64% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 59% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "study": {
         "confidence": "medium",
@@ -5714,8 +5721,8 @@
             "compra-leads-ou",
             "customertop",
             "amp-igtelcom-es",
-            "agency-go-to-market",
             "tumejorlead",
+            "agency-go-to-market",
             "daas-group-vendermas",
             "comadi-telemarketing",
             "amp-seventic-com",
@@ -5755,24 +5762,30 @@
             "delta": 21
           },
           {
-            "field": "guarantee",
-            "presence": 55,
-            "universal": 38,
-            "delta": 17
-          },
-          {
             "field": "primaryCta",
             "presence": 95,
             "universal": 79,
             "delta": 16
+          },
+          {
+            "field": "headline",
+            "presence": 100,
+            "universal": 86,
+            "delta": 14
           }
         ],
         "opportunities": [
           {
             "field": "price",
-            "presence": 23,
-            "universal": 33,
-            "delta": -10
+            "presence": 18,
+            "universal": 24,
+            "delta": -6
+          },
+          {
+            "field": "guarantee",
+            "presence": 41,
+            "universal": 32,
+            "delta": 9
           }
         ],
         "recommendedDefaults": {
@@ -5801,8 +5814,8 @@
         "mechanism": 81,
         "primaryCta": 88,
         "proof": 56,
-        "price": 44,
-        "guarantee": 50,
+        "price": 38,
+        "guarantee": 38,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -5812,9 +5825,9 @@
           "count": 5,
           "companyIds": [
             "habitissimo",
-            "summum-marketing",
             "travaux-com",
             "companeo",
+            "summum-marketing",
             "veltavia"
           ],
           "examples": [
@@ -5822,11 +5835,6 @@
               "companyId": "habitissimo",
               "name": "Habitissimo",
               "text": "Escríbenos por Whatsapp"
-            },
-            {
-              "companyId": "summum-marketing",
-              "name": "Summum Marketing",
-              "text": "Enviar mensaje"
             },
             {
               "companyId": "travaux-com",
@@ -5837,6 +5845,11 @@
               "companyId": "companeo",
               "name": "Companeo",
               "text": "Neem contact met ons op"
+            },
+            {
+              "companyId": "summum-marketing",
+              "name": "Summum Marketing",
+              "text": "Enviar mensaje"
             }
           ],
           "share": 31,
@@ -5849,8 +5862,8 @@
           "count": 3,
           "companyIds": [
             "leadgrow",
-            "starofservice",
-            "babycare-agency-responsable-rodrigo-mantillan-paz"
+            "babycare-agency-responsable-rodrigo-mantillan-paz",
+            "starofservice"
           ],
           "examples": [
             {
@@ -5859,14 +5872,14 @@
               "text": "Solicitar reunión"
             },
             {
-              "companyId": "starofservice",
-              "name": "StarOfService",
-              "text": "Book de fotos43 profesionales cerca de ti."
-            },
-            {
               "companyId": "babycare-agency-responsable-rodrigo-mantillan-paz",
               "name": "Babycare Agency — responsable: Rodrigo Mantillán Paz",
               "text": "Book a Discovery Call"
+            },
+            {
+              "companyId": "starofservice",
+              "name": "StarOfService",
+              "text": "Book de fotos43 profesionales cerca de ti."
             }
           ],
           "share": 19,
@@ -5926,12 +5939,12 @@
             "amp-yoojo-fr",
             "zaask",
             "amp-allovoisins-com",
-            "summum-marketing",
             "travaux-com",
-            "starofservice",
             "babycare-agency-responsable-rodrigo-mantillan-paz",
             "companeo",
             "cyberclick",
+            "starofservice",
+            "summum-marketing",
             "veltavia",
             "amp-localboostspain-com",
             "amp-lomejordelbarrio-com"
@@ -6285,9 +6298,9 @@
           "count": 5,
           "companyIds": [
             "habitissimo",
-            "summum-marketing",
             "travaux-com",
             "companeo",
+            "summum-marketing",
             "veltavia"
           ],
           "examples": [
@@ -6295,11 +6308,6 @@
               "companyId": "habitissimo",
               "name": "Habitissimo",
               "text": "Escríbenos por Whatsapp"
-            },
-            {
-              "companyId": "summum-marketing",
-              "name": "Summum Marketing",
-              "text": "Enviar mensaje"
             },
             {
               "companyId": "travaux-com",
@@ -6310,6 +6318,11 @@
               "companyId": "companeo",
               "name": "Companeo",
               "text": "Neem contact met ons op"
+            },
+            {
+              "companyId": "summum-marketing",
+              "name": "Summum Marketing",
+              "text": "Enviar mensaje"
             }
           ],
           "share": 31,
@@ -6330,18 +6343,24 @@
             "delta": 14
           },
           {
-            "field": "guarantee",
-            "presence": 50,
-            "universal": 38,
-            "delta": 12
+            "field": "price",
+            "presence": 38,
+            "universal": 24,
+            "delta": 14
           }
         ],
         "opportunities": [
           {
             "field": "price",
-            "presence": 44,
-            "universal": 33,
-            "delta": 11
+            "presence": 38,
+            "universal": 24,
+            "delta": 14
+          },
+          {
+            "field": "guarantee",
+            "presence": 38,
+            "universal": 32,
+            "delta": 6
           }
         ],
         "recommendedDefaults": {
@@ -6530,14 +6549,14 @@
           {
             "field": "guarantee",
             "presence": 0,
-            "universal": 38,
-            "delta": -38
+            "universal": 32,
+            "delta": -32
           },
           {
             "field": "price",
             "presence": 0,
-            "universal": 33,
-            "delta": -33
+            "universal": 24,
+            "delta": -24
           }
         ],
         "recommendedDefaults": {
@@ -6570,7 +6589,7 @@
         "mechanism": 55,
         "primaryCta": 91,
         "proof": 45,
-        "price": 45,
+        "price": 36,
         "guarantee": 27,
         "funnel": 100
       },
@@ -7085,7 +7104,7 @@
           "verticalEvidence": "landing_content",
           "verticalMargin": 5,
           "curatedRank": null,
-          "completeness": 10,
+          "completeness": 9,
           "fieldsPresent": [
             "headline",
             "promise",
@@ -7094,11 +7113,10 @@
             "mechanism",
             "primaryCta",
             "proof",
-            "price",
             "guarantee",
             "funnel"
           ],
-          "score": 107
+          "score": 104
         }
       ],
       "recommendations": [
@@ -7168,8 +7186,8 @@
           },
           {
             "field": "price",
-            "presence": 45,
-            "universal": 33,
+            "presence": 36,
+            "universal": 24,
             "delta": 12
           }
         ],
@@ -7177,20 +7195,20 @@
           {
             "field": "guarantee",
             "presence": 27,
-            "universal": 38,
-            "delta": -11
+            "universal": 32,
+            "delta": -5
+          },
+          {
+            "field": "price",
+            "presence": 36,
+            "universal": 24,
+            "delta": 12
           },
           {
             "field": "proof",
             "presence": 45,
-            "universal": 57,
-            "delta": -12
-          },
-          {
-            "field": "price",
-            "presence": 45,
-            "universal": 33,
-            "delta": 12
+            "universal": 52,
+            "delta": -7
           }
         ],
         "recommendedDefaults": {
@@ -7218,9 +7236,9 @@
         "offer": 95,
         "mechanism": 60,
         "primaryCta": 85,
-        "proof": 60,
-        "price": 32,
-        "guarantee": 40,
+        "proof": 54,
+        "price": 20,
+        "guarantee": 32,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -7229,40 +7247,30 @@
           "label": "Reserva o llamada",
           "count": 22,
           "companyIds": [
-            "buda-marketing-buda-consultores-s-l",
-            "cleanify-agency",
             "masnegocio",
             "agencia-pronoia",
-            "growyourindustry",
+            "cleanify-agency",
             "orbanya",
             "sirelo",
-            "under-ads-ex-aiz-agency",
+            "buda-marketing-buda-consultores-s-l",
             "c-onnect",
             "cliento",
             "comunicare",
+            "growyourindustry",
+            "under-ads-ex-aiz-agency",
             "amp-leadsdeseguros-es",
             "advisorscale",
             "amp-erizonet-com",
             "gym-evolution",
-            "zarco-marketing",
             "amp-acuabit-es",
             "amp-bewe-ai",
             "ivan-de-benito",
+            "zarco-marketing",
             "amp-geswebs-com",
             "amp-sercloser-com",
             "amp-upteam-fr"
           ],
           "examples": [
-            {
-              "companyId": "buda-marketing-buda-consultores-s-l",
-              "name": "Buda Marketing (Buda Consultores S.L.)",
-              "text": "Agenda tu llamada"
-            },
-            {
-              "companyId": "cleanify-agency",
-              "name": "Cleanify Agency",
-              "text": "Agendar llamada"
-            },
             {
               "companyId": "masnegocio",
               "name": "MásNegocio",
@@ -7272,50 +7280,20 @@
               "companyId": "agencia-pronoia",
               "name": "Agencia Pronoia",
               "text": "agendar una reunión aquí,"
+            },
+            {
+              "companyId": "cleanify-agency",
+              "name": "Cleanify Agency",
+              "text": "Agendar llamada"
+            },
+            {
+              "companyId": "orbanya",
+              "name": "Orbanya",
+              "text": "Agendar una llamada"
             }
           ],
           "share": 34,
           "classifiedShare": 44,
-          "sampleBase": 65
-        },
-        {
-          "id": "audit",
-          "label": "Auditoría o diagnóstico",
-          "count": 8,
-          "companyIds": [
-            "bastida-y-farina-s-l",
-            "skyaweb-nacho-tejedor",
-            "mavo-growth",
-            "werise-performance",
-            "gaplogic",
-            "idealleader",
-            "xpandex-abadesa-export-center-s-l",
-            "amp-millennium-digital-com"
-          ],
-          "examples": [
-            {
-              "companyId": "bastida-y-farina-s-l",
-              "name": "Bastida&Farina S.L.",
-              "text": "ANÁLISIS GRATUITO"
-            },
-            {
-              "companyId": "skyaweb-nacho-tejedor",
-              "name": "Skyaweb (Nacho Tejedor)",
-              "text": "Solicita tu auditoría SEO gratuita"
-            },
-            {
-              "companyId": "mavo-growth",
-              "name": "MAVO Growth",
-              "text": "Solicita tu diagnóstico"
-            },
-            {
-              "companyId": "werise-performance",
-              "name": "WeRise Performance",
-              "text": "Solicitar auditoría gratuita"
-            }
-          ],
-          "share": 12,
-          "classifiedShare": 16,
           "sampleBase": 65
         },
         {
@@ -7352,6 +7330,46 @@
               "companyId": "recom",
               "name": "ReCom",
               "text": "Contact"
+            }
+          ],
+          "share": 12,
+          "classifiedShare": 16,
+          "sampleBase": 65
+        },
+        {
+          "id": "audit",
+          "label": "Auditoría o diagnóstico",
+          "count": 8,
+          "companyIds": [
+            "skyaweb-nacho-tejedor",
+            "bastida-y-farina-s-l",
+            "werise-performance",
+            "gaplogic",
+            "mavo-growth",
+            "xpandex-abadesa-export-center-s-l",
+            "idealleader",
+            "amp-millennium-digital-com"
+          ],
+          "examples": [
+            {
+              "companyId": "skyaweb-nacho-tejedor",
+              "name": "Skyaweb (Nacho Tejedor)",
+              "text": "Solicita tu auditoría SEO gratuita"
+            },
+            {
+              "companyId": "bastida-y-farina-s-l",
+              "name": "Bastida&Farina S.L.",
+              "text": "ANÁLISIS GRATUITO"
+            },
+            {
+              "companyId": "werise-performance",
+              "name": "WeRise Performance",
+              "text": "Solicitar auditoría gratuita"
+            },
+            {
+              "companyId": "gaplogic",
+              "name": "Gaplogic",
+              "text": "Análisis Web"
             }
           ],
           "share": 12,
@@ -7402,8 +7420,8 @@
           "count": 6,
           "companyIds": [
             "hemea",
-            "leadsforma",
             "habitatpresto",
+            "leadsforma",
             "spotinleads",
             "en-alta-agency",
             "amp-inprofit-eu"
@@ -7415,14 +7433,14 @@
               "text": "Exemples Réels de Devis Travaux"
             },
             {
-              "companyId": "leadsforma",
-              "name": "LeadsForma",
-              "text": "Contactar para una propuesta adaptada a objetivos de matrículas."
-            },
-            {
               "companyId": "habitatpresto",
               "name": "Habitatpresto",
               "text": "❯ Besoin d'un devis ?"
+            },
+            {
+              "companyId": "leadsforma",
+              "name": "LeadsForma",
+              "text": "Contactar para una propuesta adaptada a objetivos de matrículas."
             },
             {
               "companyId": "spotinleads",
@@ -7441,29 +7459,29 @@
           "label": "Otros enfoques",
           "count": 37,
           "companyIds": [
+            "involgy-enterprise-cloud-solutions-s-l",
             "cleanify-agency",
             "clibel",
-            "involgy-enterprise-cloud-solutions-s-l",
-            "mpg-marketing-para-gimnasios",
-            "nova-agency",
             "sirelo",
             "c-onnect",
             "comunicare",
             "gaplogic",
-            "idealleader",
-            "leadsforma",
+            "mpg-marketing-para-gimnasios",
+            "nova-agency",
             "recom",
             "sciremarketing",
             "unlimited-growth",
             "xpandex-abadesa-export-center-s-l",
             "habitatpresto",
+            "idealleader",
             "izi-by-edf",
-            "psicoemprendedores",
+            "leadsforma",
             "spotinleads",
-            "copyfilms",
             "amp-erizonet-com",
             "gym-evolution",
+            "psicoemprendedores",
             "amp-cerotonteria-com",
+            "copyfilms",
             "ivan-de-benito",
             "amp-inprofit-eu",
             "amp-makingscience-com",
@@ -7481,6 +7499,11 @@
           ],
           "examples": [
             {
+              "companyId": "involgy-enterprise-cloud-solutions-s-l",
+              "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
+              "text": "Leads de servicios financieros"
+            },
+            {
               "companyId": "cleanify-agency",
               "name": "Cleanify Agency",
               "text": "el checklist de marketing digital Que Hará Que Tu Empresa de Limpieza Consiga Más Clientes y Aumente su Visibilidad Online"
@@ -7491,14 +7514,9 @@
               "text": "SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA"
             },
             {
-              "companyId": "involgy-enterprise-cloud-solutions-s-l",
-              "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
-              "text": "Leads de servicios financieros"
-            },
-            {
-              "companyId": "mpg-marketing-para-gimnasios",
-              "name": "MPG - Marketing para Gimnasios",
-              "text": "El plan de marketing para gimnasios que necesitas para triunfar"
+              "companyId": "sirelo",
+              "name": "Sirelo",
+              "text": "¿Buscas una empresa de mudanzas?"
             }
           ],
           "share": 57,
@@ -7510,29 +7528,19 @@
           "label": "Resultado primero",
           "count": 11,
           "companyIds": [
-            "bastida-y-farina-s-l",
-            "marketinhouse",
             "masnegocio",
             "skyaweb-nacho-tejedor",
-            "growyourindustry",
+            "bastida-y-farina-s-l",
             "hemea",
+            "marketinhouse",
+            "viraltia",
+            "growyourindustry",
             "kimoon",
             "mavo-growth",
-            "viraltia",
             "roi-performance",
             "amp-millennium-digital-com"
           ],
           "examples": [
-            {
-              "companyId": "bastida-y-farina-s-l",
-              "name": "Bastida&Farina S.L.",
-              "text": "Servicio de lead generation"
-            },
-            {
-              "companyId": "marketinhouse",
-              "name": "Marketinhouse",
-              "text": "Tu agencia de lead generation"
-            },
             {
               "companyId": "masnegocio",
               "name": "MásNegocio",
@@ -7542,6 +7550,16 @@
               "companyId": "skyaweb-nacho-tejedor",
               "name": "Skyaweb (Nacho Tejedor)",
               "text": "Webs que venden. SEO que posiciona. En Google desde el día 1."
+            },
+            {
+              "companyId": "bastida-y-farina-s-l",
+              "name": "Bastida&Farina S.L.",
+              "text": "Servicio de lead generation"
+            },
+            {
+              "companyId": "hemea",
+              "name": "hemea",
+              "text": "Obtenez Votre Devis Travaux en Ligne"
             }
           ],
           "share": 17,
@@ -7556,9 +7574,9 @@
             "agencia-pronoia",
             "orbanya",
             "psycoboost",
-            "under-ads-ex-aiz-agency",
             "werise-performance",
             "cliento",
+            "under-ads-ex-aiz-agency",
             "en-alta-agency",
             "amp-acuabit-es",
             "amp-geswebs-com"
@@ -7580,9 +7598,9 @@
               "text": "Sí, otra agencia de marketing. Pero esta te lo cuenta claro."
             },
             {
-              "companyId": "under-ads-ex-aiz-agency",
-              "name": "Under Ads (ex AIZ Agency)",
-              "text": "Descubre qué hay detrás de una agencia facebook ads"
+              "companyId": "werise-performance",
+              "name": "WeRise Performance",
+              "text": "Agencia de leads a comisión: cómo funciona el modelo en el que solo pagas por lead válido"
             }
           ],
           "share": 14,
@@ -7679,8 +7697,8 @@
           "companyIds": [
             "agencia-pronoia",
             "orbanya",
-            "under-ads-ex-aiz-agency",
             "cliento",
+            "under-ads-ex-aiz-agency",
             "amp-acuabit-es",
             "amp-geswebs-com"
           ],
@@ -7698,16 +7716,16 @@
               "primaryCta": "Agendar una llamada"
             },
             {
-              "companyId": "under-ads-ex-aiz-agency",
-              "name": "Under Ads (ex AIZ Agency)",
-              "headline": "Descubre qué hay detrás de una agencia facebook ads",
-              "primaryCta": "AGENDAR LLAMADA"
-            },
-            {
               "companyId": "cliento",
               "name": "Cliento",
               "headline": "Agencia de embudos de venta",
               "primaryCta": "Agendar una demo de 15 minutos"
+            },
+            {
+              "companyId": "under-ads-ex-aiz-agency",
+              "name": "Under Ads (ex AIZ Agency)",
+              "headline": "Descubre qué hay detrás de una agencia facebook ads",
+              "primaryCta": "AGENDAR LLAMADA"
             }
           ],
           "share": 9,
@@ -7721,23 +7739,23 @@
           "ctaLabel": "Auditoría o diagnóstico",
           "count": 4,
           "companyIds": [
-            "bastida-y-farina-s-l",
             "skyaweb-nacho-tejedor",
+            "bastida-y-farina-s-l",
             "mavo-growth",
             "amp-millennium-digital-com"
           ],
           "examples": [
             {
-              "companyId": "bastida-y-farina-s-l",
-              "name": "Bastida&Farina S.L.",
-              "headline": "Servicio de lead generation",
-              "primaryCta": "ANÁLISIS GRATUITO"
-            },
-            {
               "companyId": "skyaweb-nacho-tejedor",
               "name": "Skyaweb (Nacho Tejedor)",
               "headline": "Webs que venden. SEO que posiciona. En Google desde el día 1.",
               "primaryCta": "Solicita tu auditoría SEO gratuita"
+            },
+            {
+              "companyId": "bastida-y-farina-s-l",
+              "name": "Bastida&Farina S.L.",
+              "headline": "Servicio de lead generation",
+              "primaryCta": "ANÁLISIS GRATUITO"
             },
             {
               "companyId": "mavo-growth",
@@ -8003,175 +8021,6 @@
       ],
       "examples": [
         {
-          "companyId": "bastida-y-farina-s-l",
-          "name": "Bastida&Farina S.L.",
-          "country": "España",
-          "headline": "Servicio de lead generation",
-          "primaryCta": "ANÁLISIS GRATUITO",
-          "offer": "\"En B&F no solo somos la agencia en la que más empresas de España confían para generar leads cualificados sino que, si tras +150 casos de éxito creemos que te podemos ayudar, SOLO PAGAS POR LEAD VENDIDO\".",
-          "proof": "Mezcla. VERIFICABLE: página de equipo con 39 personas nombradas con rol y cara, sociedad real en registro mercantil, LinkedIn activo, más de 110 testimonios y más de 70 casos publicados con nombre. HUMO: el contador de casos es INCONSISTENTE según la página y el anuncio — conviven +30, +150, +180 y 250+ proyectos en activos publicados el mismo mes, lo que indica que la cifra es copy y no dato auditado. \"Somos Nº1 generando Leads\" y \"La única Agencia a Éxito\" son claims sin fuente.",
-          "price": "NINGUNO. Las únicas cifras en euros son resultados de clientes, no tarifas: 5.491 leads a 2€/lead, leads a 5€, leads a 40€, 45.000€ generados con retorno x25, más de 90.000€ en ventas, más de 150.000€ manejados con -50% de CPL.",
-          "guarantee": "\"Confiamos tanto en nuestro servicio que, si tras llamarte sientes que has perdido el tiempo, TE PAGAMOS TU COSTE POR HORA de nuestro propio bolsillo\". Más: \"Si no tienes resultados no pagas\" y \"bajo garantía TOTAL\". LETRA PEQUEÑA: la garantía está condicionada DOS VECES — \"si tras +150 casos de éxito CREEMOS QUE TE PODEMOS AYUDAR\" y \"Si tú buscas esto y creemos que podemos ayudarte, te garantizamos resultados\". Es decir, la garantía solo aplica a los proyectos que ellos aceptan tras cualificar: es un FILTRO disfrazado de garantía. No hay documento de términos publicado.",
-          "funnelSteps": 2,
-          "capturedPages": 3,
-          "pageRoles": [
-            "homepage",
-            "landing",
-            "conversion"
-          ],
-          "thumbnail": "/evidence/bastida-y-farina-s-l/site-5fe8273592-landing-thumb.webp",
-          "sourceUrl": "https://www.bastidafarina.com/business/lead-generation",
-          "sourceRole": "landing",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 1,
-          "verticalConfidence": "low",
-          "verticalEvidence": "generic_landing",
-          "verticalMargin": 0,
-          "curatedRank": null,
-          "completeness": 10,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "proof",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "score": 87
-        },
-        {
-          "companyId": "buda-marketing-buda-consultores-s-l",
-          "name": "Buda Marketing (Buda Consultores S.L.)",
-          "country": "España",
-          "headline": "Una web no es un adorno. Es tu motor de crecimiento.",
-          "primaryCta": "Agenda tu llamada",
-          "offer": "\"NO HACEMOS MARKETING. Somos tu sistema de captación de clientes. NO MEDIMOS IMPRESIONES NI CLICS. Medimos clientes reales y euros generados para tu negocio\". Y en home: \"Convertimos tu inversión en clientes, no en 'me gusta'\".",
-          "proof": "Usa Google/Meta Partner, reseñas de Google vía Trustindex, logos de marcas, casos numéricos, fundador visible y dirección física como anclas de confianza.",
-          "price": "NINGUNO para sus servicios de captación. Las únicas cifras: \"a menos de 14€ cada una\" (coste por oportunidad de un caso), \"coste por cliente potencial desde 0€\" y \"el mínimo es 70€/mes\" (mantenimiento WordPress, en un artículo de blog, no en la oferta comercial).",
-          "guarantee": "NINGUNA garantía formal. Lo que sí hay es una PROMESA DE PLAZO repetida en todos los anuncios: \"PRIMEROS RESULTADOS EN 21 DÍAS\", complementada con \"Verás avances medibles desde el primer mes\". No definen qué cuenta como resultado ni qué pasa si no ocurre: es una promesa de riesgo, no una garantía.",
-          "funnelSteps": 8,
-          "capturedPages": 4,
-          "pageRoles": [
-            "homepage",
-            "landing",
-            "conversion",
-            "proof"
-          ],
-          "thumbnail": "/evidence/buda-marketing-buda-consultores-s-l/site-ba20eda23f-landing-thumb.webp",
-          "sourceUrl": "https://budamarketing.es/agencia-de-diseno-web/",
-          "sourceRole": "landing",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 1,
-          "verticalConfidence": "low",
-          "verticalEvidence": "generic_landing",
-          "verticalMargin": 0,
-          "curatedRank": null,
-          "completeness": 10,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "proof",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "score": 87
-        },
-        {
-          "companyId": "cleanify-agency",
-          "name": "Cleanify Agency",
-          "country": "España",
-          "headline": "el checklist de marketing digital Que Hará Que Tu Empresa de Limpieza Consiga Más Clientes y Aumente su Visibilidad Online",
-          "primaryCta": "Agendar llamada",
-          "offer": "Agencia española especializada en empresas de limpieza: SEO local, optimización de presencia digital, web con formularios/reservas, Google/Meta Ads y mejora continua. Promesa de conseguir clientes en seis meses o seguir trabajando sin coste adicional.",
-          "proof": "Caso oficial autodeclarado «Limpiezas Brillo»: +50% de reservas en tres meses. Sin identificación suficiente, capturas, inversión, periodo comparable, atribución ni auditoría independiente. No se convierten notas de prensa o porcentajes promocionales en prueba validada.",
-          "price": "Tarifa propia no publicada; no hay paquetes, rango, mínimo de inversión ni separación pública entre fee y medios.",
-          "guarantee": "Si no se alcanzan los objetivos en seis meses, Cleanify afirma que continúa sin coste hasta lograrlos. No define públicamente objetivo mínimo, qué cuenta como cliente, criterios de elegibilidad, gasto de medios durante la prórroga ni exclusiones.",
-          "funnelSteps": 8,
-          "capturedPages": 4,
-          "pageRoles": [
-            "homepage",
-            "landing",
-            "conversion",
-            "proof"
-          ],
-          "thumbnail": "/evidence/cleanify-agency/site-d007ee71bc-landing-thumb.webp",
-          "sourceUrl": "https://cleanify.agency/checklist-marketing-empresas-de-limpieza/",
-          "sourceRole": "landing",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 1,
-          "verticalConfidence": "low",
-          "verticalEvidence": "generic_landing",
-          "verticalMargin": 0,
-          "curatedRank": null,
-          "completeness": 10,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "proof",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "score": 87
-        },
-        {
-          "companyId": "clibel",
-          "name": "Clibel",
-          "country": "España",
-          "headline": "SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA",
-          "primaryCta": "",
-          "offer": "Captación + prefiltrado; promesa de clientes a 100 € y 'tú no llamas'.",
-          "proof": "VSL, casos nominados, testimonios, garantía y biblioteca Meta activa sostienen la venta.",
-          "price": "Oculto.",
-          "guarantee": "Garantía contractual sin términos públicos.",
-          "funnelSteps": 6,
-          "capturedPages": 2,
-          "pageRoles": [
-            "homepage",
-            "landing"
-          ],
-          "thumbnail": "/evidence/clibel/site-45df2f51ab-landing-thumb.webp",
-          "sourceUrl": "https://clibel.com/consultoria",
-          "sourceRole": "landing",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 1,
-          "verticalConfidence": "low",
-          "verticalEvidence": "generic_landing",
-          "verticalMargin": 0,
-          "curatedRank": null,
-          "completeness": 10,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "proof",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "score": 87
-        },
-        {
           "companyId": "involgy-enterprise-cloud-solutions-s-l",
           "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
           "country": "España",
@@ -8255,49 +8104,6 @@
           "score": 87
         },
         {
-          "companyId": "marketinhouse",
-          "name": "Marketinhouse",
-          "country": "España",
-          "headline": "Tu agencia de lead generation",
-          "primaryCta": "¡Empieza hoy!",
-          "offer": "\"Más de 9 años ayudando a empresas como la tuya a captar leads de calidad\"; \"Verás resultados a corto plazo. Sin florituras\"",
-          "proof": "CONFIRMADO — \"Vídeo viral en TikTok = aumento de +13k seguidores y mejora de un +24% en interacciones\"; mención de Calzados Elche PPC sin cifras concretas",
-          "price": "En España lo más habitual es que hablemos desde 25€ en caso de un freelance o agencia pequeña ohasta 150€ o más por hora en agencias grandes y especializadas.",
-          "guarantee": "CONFIRMADO — \"Si no funciona, lo cortamos y buscamos alternativa\"",
-          "funnelSteps": 8,
-          "capturedPages": 4,
-          "pageRoles": [
-            "homepage",
-            "landing",
-            "conversion",
-            "pricing"
-          ],
-          "thumbnail": "/evidence/marketinhouse/site-f48699443e-landing-thumb.webp",
-          "sourceUrl": "https://www.marketinhouse.es/agencia-captacion-lead-gen",
-          "sourceRole": "landing",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 1,
-          "verticalConfidence": "low",
-          "verticalEvidence": "generic_landing",
-          "verticalMargin": 0,
-          "curatedRank": null,
-          "completeness": 10,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "proof",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "score": 87
-        },
-        {
           "companyId": "masnegocio",
           "name": "MásNegocio",
           "country": "España",
@@ -8337,13 +8143,221 @@
             "funnel"
           ],
           "score": 87
+        },
+        {
+          "companyId": "skyaweb-nacho-tejedor",
+          "name": "Skyaweb (Nacho Tejedor)",
+          "country": "España",
+          "headline": "Webs que venden. SEO que posiciona. En Google desde el día 1.",
+          "primaryCta": "Solicita tu auditoría SEO gratuita",
+          "offer": "Agentes y automatizaciones de IA para captar empresas y clientes 24/7, con posicionamiento local en Zaragoza y soluciones adaptadas a cada empresa.",
+          "proof": "Casos nombrados/enlaces vivos, testimonios, comparación, herramientas conocidas y fundador visible; no se aporta analítica auditable.",
+          "price": "Mantenimiento SEO: \"desde 250€ /mes\"; Agente IA: \"desde 350€ /mes\"",
+          "guarantee": "La cabecera publica «3× ROI mínimo garantizado», pero no define remedio, devolución, periodo de medición ni condiciones. Un contador inferior carga como «0×» por fallo de animación. Por tanto la garantía contractual es NO COMPROBADA.",
+          "funnelSteps": 8,
+          "capturedPages": 5,
+          "pageRoles": [
+            "homepage",
+            "landing",
+            "conversion",
+            "pricing",
+            "proof"
+          ],
+          "thumbnail": "/evidence/skyaweb-nacho-tejedor/site-d056420007-landing-thumb.webp",
+          "sourceUrl": "https://skyaweb.com/agencia-ia-automocion",
+          "sourceRole": "landing",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 1,
+          "verticalConfidence": "low",
+          "verticalEvidence": "generic_landing",
+          "verticalMargin": 0,
+          "curatedRank": null,
+          "completeness": 10,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "audience",
+            "offer",
+            "mechanism",
+            "primaryCta",
+            "proof",
+            "price",
+            "guarantee",
+            "funnel"
+          ],
+          "score": 87
+        },
+        {
+          "companyId": "agencia-pronoia",
+          "name": "Agencia Pronoia",
+          "country": "España",
+          "headline": "Agencia de Marketing Digital en Galicia especializada en PYMES y Autónomos",
+          "primaryCta": "agendar una reunión aquí,",
+          "offer": "Consultoría y gestión de LinkedIn: optimización de perfil, contenidos, prospección directa y publicidad en la plataforma, con \"briefing inicial\" antes de proponer acciones",
+          "proof": "Fundadoras nominadas, formación, testimonios, logos/proyectos, métricas propias y FAQs.",
+          "price": "SEO Local: alrededor de 250 €/mes por ficha de empresa; puede subir según competencia del sector y zona.",
+          "guarantee": "No hay garantía contractual de ranking, llamadas o ventas.",
+          "funnelSteps": 8,
+          "capturedPages": 3,
+          "pageRoles": [
+            "homepage",
+            "conversion",
+            "pricing"
+          ],
+          "thumbnail": "/evidence/agencia-pronoia/site-392433700c-homepage-thumb.webp",
+          "sourceUrl": "https://agenciapronoia.com/",
+          "sourceRole": "homepage",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 1,
+          "verticalConfidence": "low",
+          "verticalEvidence": "generic_landing",
+          "verticalMargin": 0,
+          "curatedRank": null,
+          "completeness": 9,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "audience",
+            "offer",
+            "mechanism",
+            "primaryCta",
+            "proof",
+            "price",
+            "funnel"
+          ],
+          "score": 84
+        },
+        {
+          "companyId": "bastida-y-farina-s-l",
+          "name": "Bastida&Farina S.L.",
+          "country": "España",
+          "headline": "Servicio de lead generation",
+          "primaryCta": "ANÁLISIS GRATUITO",
+          "offer": "\"En B&F no solo somos la agencia en la que más empresas de España confían para generar leads cualificados sino que, si tras +150 casos de éxito creemos que te podemos ayudar, SOLO PAGAS POR LEAD VENDIDO\".",
+          "proof": "Mezcla. VERIFICABLE: página de equipo con 39 personas nombradas con rol y cara, sociedad real en registro mercantil, LinkedIn activo, más de 110 testimonios y más de 70 casos publicados con nombre. HUMO: el contador de casos es INCONSISTENTE según la página y el anuncio — conviven +30, +150, +180 y 250+ proyectos en activos publicados el mismo mes, lo que indica que la cifra es copy y no dato auditado. \"Somos Nº1 generando Leads\" y \"La única Agencia a Éxito\" son claims sin fuente.",
+          "price": "NINGUNO. Las únicas cifras en euros son resultados de clientes, no tarifas: 5.491 leads a 2€/lead, leads a 5€, leads a 40€, 45.000€ generados con retorno x25, más de 90.000€ en ventas, más de 150.000€ manejados con -50% de CPL.",
+          "guarantee": "\"Confiamos tanto en nuestro servicio que, si tras llamarte sientes que has perdido el tiempo, TE PAGAMOS TU COSTE POR HORA de nuestro propio bolsillo\". Más: \"Si no tienes resultados no pagas\" y \"bajo garantía TOTAL\". LETRA PEQUEÑA: la garantía está condicionada DOS VECES — \"si tras +150 casos de éxito CREEMOS QUE TE PODEMOS AYUDAR\" y \"Si tú buscas esto y creemos que podemos ayudarte, te garantizamos resultados\". Es decir, la garantía solo aplica a los proyectos que ellos aceptan tras cualificar: es un FILTRO disfrazado de garantía. No hay documento de términos publicado.",
+          "funnelSteps": 2,
+          "capturedPages": 3,
+          "pageRoles": [
+            "homepage",
+            "landing",
+            "conversion"
+          ],
+          "thumbnail": "/evidence/bastida-y-farina-s-l/site-5fe8273592-landing-thumb.webp",
+          "sourceUrl": "https://www.bastidafarina.com/business/lead-generation",
+          "sourceRole": "landing",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 1,
+          "verticalConfidence": "low",
+          "verticalEvidence": "generic_landing",
+          "verticalMargin": 0,
+          "curatedRank": null,
+          "completeness": 9,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "audience",
+            "offer",
+            "mechanism",
+            "primaryCta",
+            "proof",
+            "guarantee",
+            "funnel"
+          ],
+          "score": 84
+        },
+        {
+          "companyId": "cleanify-agency",
+          "name": "Cleanify Agency",
+          "country": "España",
+          "headline": "el checklist de marketing digital Que Hará Que Tu Empresa de Limpieza Consiga Más Clientes y Aumente su Visibilidad Online",
+          "primaryCta": "Agendar llamada",
+          "offer": "Agencia española especializada en empresas de limpieza: SEO local, optimización de presencia digital, web con formularios/reservas, Google/Meta Ads y mejora continua. Promesa de conseguir clientes en seis meses o seguir trabajando sin coste adicional.",
+          "proof": "Caso oficial autodeclarado «Limpiezas Brillo»: +50% de reservas en tres meses. Sin identificación suficiente, capturas, inversión, periodo comparable, atribución ni auditoría independiente. No se convierten notas de prensa o porcentajes promocionales en prueba validada.",
+          "price": "Tarifa propia no publicada; no hay paquetes, rango, mínimo de inversión ni separación pública entre fee y medios.",
+          "guarantee": "Si no se alcanzan los objetivos en seis meses, Cleanify afirma que continúa sin coste hasta lograrlos. No define públicamente objetivo mínimo, qué cuenta como cliente, criterios de elegibilidad, gasto de medios durante la prórroga ni exclusiones.",
+          "funnelSteps": 8,
+          "capturedPages": 4,
+          "pageRoles": [
+            "homepage",
+            "landing",
+            "conversion",
+            "proof"
+          ],
+          "thumbnail": "/evidence/cleanify-agency/site-d007ee71bc-landing-thumb.webp",
+          "sourceUrl": "https://cleanify.agency/checklist-marketing-empresas-de-limpieza/",
+          "sourceRole": "landing",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 1,
+          "verticalConfidence": "low",
+          "verticalEvidence": "generic_landing",
+          "verticalMargin": 0,
+          "curatedRank": null,
+          "completeness": 9,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "audience",
+            "offer",
+            "mechanism",
+            "primaryCta",
+            "proof",
+            "guarantee",
+            "funnel"
+          ],
+          "score": 84
+        },
+        {
+          "companyId": "clibel",
+          "name": "Clibel",
+          "country": "España",
+          "headline": "SOLO PARA PROPIETARIOS DE CENTROS DE ESTÉTICA",
+          "primaryCta": "",
+          "offer": "Captación + prefiltrado; promesa de clientes a 100 € y 'tú no llamas'.",
+          "proof": "VSL, casos nominados, testimonios, garantía y biblioteca Meta activa sostienen la venta.",
+          "price": "Oculto.",
+          "guarantee": "Garantía contractual sin términos públicos.",
+          "funnelSteps": 6,
+          "capturedPages": 2,
+          "pageRoles": [
+            "homepage",
+            "landing"
+          ],
+          "thumbnail": "/evidence/clibel/site-45df2f51ab-landing-thumb.webp",
+          "sourceUrl": "https://clibel.com/consultoria",
+          "sourceRole": "landing",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 1,
+          "verticalConfidence": "low",
+          "verticalEvidence": "generic_landing",
+          "verticalMargin": 0,
+          "curatedRank": null,
+          "completeness": 9,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "audience",
+            "offer",
+            "mechanism",
+            "primaryCta",
+            "proof",
+            "guarantee",
+            "funnel"
+          ],
+          "score": 84
         }
       ],
       "recommendations": [
         "El enfoque más visible es «Resultado primero» (11 de 65); úsalo como control, no como ganador.",
         "El 77% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 5 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 60% y el mecanismo en 60% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 54% y el mecanismo en 60% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "study": {
         "confidence": "medium",
@@ -8359,29 +8373,19 @@
           "label": "Resultado primero",
           "count": 11,
           "companyIds": [
-            "bastida-y-farina-s-l",
-            "marketinhouse",
             "masnegocio",
             "skyaweb-nacho-tejedor",
-            "growyourindustry",
+            "bastida-y-farina-s-l",
             "hemea",
+            "marketinhouse",
+            "viraltia",
+            "growyourindustry",
             "kimoon",
             "mavo-growth",
-            "viraltia",
             "roi-performance",
             "amp-millennium-digital-com"
           ],
           "examples": [
-            {
-              "companyId": "bastida-y-farina-s-l",
-              "name": "Bastida&Farina S.L.",
-              "text": "Servicio de lead generation"
-            },
-            {
-              "companyId": "marketinhouse",
-              "name": "Marketinhouse",
-              "text": "Tu agencia de lead generation"
-            },
             {
               "companyId": "masnegocio",
               "name": "MásNegocio",
@@ -8391,6 +8395,16 @@
               "companyId": "skyaweb-nacho-tejedor",
               "name": "Skyaweb (Nacho Tejedor)",
               "text": "Webs que venden. SEO que posiciona. En Google desde el día 1."
+            },
+            {
+              "companyId": "bastida-y-farina-s-l",
+              "name": "Bastida&Farina S.L.",
+              "text": "Servicio de lead generation"
+            },
+            {
+              "companyId": "hemea",
+              "name": "hemea",
+              "text": "Obtenez Votre Devis Travaux en Ligne"
             }
           ],
           "share": 17,
@@ -8402,40 +8416,30 @@
           "label": "Reserva o llamada",
           "count": 22,
           "companyIds": [
-            "buda-marketing-buda-consultores-s-l",
-            "cleanify-agency",
             "masnegocio",
             "agencia-pronoia",
-            "growyourindustry",
+            "cleanify-agency",
             "orbanya",
             "sirelo",
-            "under-ads-ex-aiz-agency",
+            "buda-marketing-buda-consultores-s-l",
             "c-onnect",
             "cliento",
             "comunicare",
+            "growyourindustry",
+            "under-ads-ex-aiz-agency",
             "amp-leadsdeseguros-es",
             "advisorscale",
             "amp-erizonet-com",
             "gym-evolution",
-            "zarco-marketing",
             "amp-acuabit-es",
             "amp-bewe-ai",
             "ivan-de-benito",
+            "zarco-marketing",
             "amp-geswebs-com",
             "amp-sercloser-com",
             "amp-upteam-fr"
           ],
           "examples": [
-            {
-              "companyId": "buda-marketing-buda-consultores-s-l",
-              "name": "Buda Marketing (Buda Consultores S.L.)",
-              "text": "Agenda tu llamada"
-            },
-            {
-              "companyId": "cleanify-agency",
-              "name": "Cleanify Agency",
-              "text": "Agendar llamada"
-            },
             {
               "companyId": "masnegocio",
               "name": "MásNegocio",
@@ -8445,6 +8449,16 @@
               "companyId": "agencia-pronoia",
               "name": "Agencia Pronoia",
               "text": "agendar una reunión aquí,"
+            },
+            {
+              "companyId": "cleanify-agency",
+              "name": "Cleanify Agency",
+              "text": "Agendar llamada"
+            },
+            {
+              "companyId": "orbanya",
+              "name": "Orbanya",
+              "text": "Agendar una llamada"
             }
           ],
           "share": 34,
@@ -8468,15 +8482,15 @@
         "opportunities": [
           {
             "field": "price",
-            "presence": 32,
-            "universal": 33,
-            "delta": -1
+            "presence": 20,
+            "universal": 24,
+            "delta": -4
           },
           {
             "field": "guarantee",
-            "presence": 40,
-            "universal": 38,
-            "delta": 2
+            "presence": 32,
+            "universal": 32,
+            "delta": 0
           }
         ],
         "recommendedDefaults": {

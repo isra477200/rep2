@@ -355,6 +355,15 @@ test("la inteligencia v2 conserva denominadores, cobertura y referencias coheren
     quality.heroCoveragePct,
     Math.round((quality.classifiedHeroCompanies / quality.salesPageCompanies) * 100),
   );
+  assert.deepEqual(quality.auditedAbsenceOverrides, { price: 29, guarantee: 17, proof: 15 });
+  assert.deepEqual(
+    {
+      price: intelligence.universal.fieldPresence.price,
+      guarantee: intelligence.universal.fieldPresence.guarantee,
+      proof: intelligence.universal.fieldPresence.proof,
+    },
+    { price: 24, guarantee: 32, proof: 52 },
+  );
 
   const invalidSalesUrl = /privacy|privacidad|politica(?:-de)?-privacidad|legal|condiciones|cookies?|\/blog\/|\/tag\/|\/404/;
   for (const [verticalId, vertical] of Object.entries(intelligence.verticals)) {
