@@ -1,27 +1,27 @@
 {
  "generatedAt": "2026-08-27",
  "note": "Cobertura de evidencia individualizable, no rendimiento publicitario. Los recuentos agregados de Meta/Google y creativeArchive se conservan aparte: no crean anuncios ni inflan el objetivo con variantes. Una creatividad sin texto legible cuenta como evidencia visual, nunca como transcripción. El objetivo es min(10, evidencia canónica disponible).",
- "totalCompanies": 1075,
+ "totalCompanies": 1091,
  "summary": {
   "statusCounts": {
-   ">=10": 197,
-   "5-9": 22,
-   "1-4": 70,
+   ">=10": 199,
+   "5-9": 25,
+   "1-4": 87,
    "sin evidencia": 16,
-   "pendiente/no atribuible": 770
+   "pendiente/no atribuible": 764
   },
-  "companiesWithEvidence": 289,
-  "companiesWithExactIds": 281,
+  "companiesWithEvidence": 311,
+  "companiesWithExactIds": 282,
   "exactMetaIds": 3924,
-  "exactGoogleIds": 2008,
-  "transcribedCanonical": 4560,
-  "verifiedTranscribed": 3067,
-  "sampledEvidence": 2297,
-  "sampledEvidenceWithPublicFile": 1815,
-  "targetTotal": 2297,
-  "textAvailabilityGap": 219,
-  "verifiedTranscriptionGap": 1067,
-  "transcriptionGap": 1067,
+  "exactGoogleIds": 2053,
+  "transcribedCanonical": 4975,
+  "verifiedTranscribed": 3447,
+  "sampledEvidence": 2372,
+  "sampledEvidenceWithPublicFile": 1825,
+  "targetTotal": 2372,
+  "textAvailabilityGap": 213,
+  "verifiedTranscriptionGap": 1048,
+  "transcriptionGap": 1048,
   "orphanAdvertisers": 17,
   "orphanTranscribedRecords": 17
  },
@@ -90,14 +90,16 @@
  "mediaJoin": {
   "sourceMediaAvailable": true,
   "versionedIdentityAvailable": true,
-  "versionedIdentityRows": 2014,
-  "sourceRows": 2014,
-  "idBearingRows": 2014,
-  "uniqueExternalIdsIdentified": 2014,
-  "mappedToCompanyAndOrder": 2014,
-  "validPublicFiles": 2014,
-  "uniqueExternalIdsWithPublicFile": 2014,
-  "variantFilesCollapsed": 685
+  "versionedIdentityRows": 2049,
+  "serpApiMediaAvailable": true,
+  "serpApiRows": 41,
+  "sourceRows": 2090,
+  "idBearingRows": 2049,
+  "uniqueExternalIdsIdentified": 2049,
+  "mappedToCompanyAndOrder": 2049,
+  "validPublicFiles": 2049,
+  "uniqueExternalIdsWithPublicFile": 2049,
+  "variantFilesCollapsed": 684
  },
  "creativeFiles": [
   {
@@ -1341,6 +1343,30 @@
    "variantCount": 1
   },
   {
+   "companyId": "amp-igtelcom-es",
+   "externalId": "CR03651051170325069825",
+   "platform": "google",
+   "file": "/media/serpapi-google/amp-igtelcom-es/CR03651051170325069825.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR03651051170325069825?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "amp-igtelcom-es",
+   "externalId": "CR07973797284003446785",
+   "platform": "google",
+   "file": "/media/serpapi-google/amp-igtelcom-es/CR07973797284003446785.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR07973797284003446785?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "amp-igtelcom-es",
+   "externalId": "CR13579152376094261249",
+   "platform": "google",
+   "file": "/media/serpapi-google/amp-igtelcom-es/CR13579152376094261249.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR13579152376094261249?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
    "companyId": "angi-inc-ex-homeadvisor",
    "externalId": "1247763370756520",
    "platform": "meta",
@@ -2430,10 +2456,26 @@
   },
   {
    "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR01382625297718837249",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR01382625297718837249.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01382625297718837249?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
    "externalId": "CR01654577653329428481",
    "platform": "google",
    "file": "/media/bastida-y-farina-s-l-009.png",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01654577653329428481?region=anywhere",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR02483912198687031297",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR02483912198687031297.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR02483912198687031297?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -2448,16 +2490,32 @@
    "companyId": "bastida-y-farina-s-l",
    "externalId": "CR04445237807866183681",
    "platform": "google",
-   "file": "/media/bastida-y-farina-s-l-013.png",
-   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04445237807866183681?region=anywhere",
-   "variantCount": 2
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR04445237807866183681.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04445237807866183681?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
   },
   {
    "companyId": "bastida-y-farina-s-l",
    "externalId": "CR06655276932977917953",
    "platform": "google",
-   "file": "/media/bastida-y-farina-s-l-011.png",
-   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06655276932977917953?region=anywhere",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR06655276932977917953.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06655276932977917953?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR06760218883988127745",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR06760218883988127745.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06760218883988127745?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR07877839854820655105",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR07877839854820655105.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR07877839854820655105?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -2470,10 +2528,26 @@
   },
   {
    "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR10849095343975432193",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR10849095343975432193.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10849095343975432193?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
    "externalId": "CR13100958791896137729",
    "platform": "google",
    "file": "/media/bastida-y-farina-s-l-032.png",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13100958791896137729?region=anywhere",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR13126704294747176961",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR13126704294747176961.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13126704294747176961?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -2483,6 +2557,22 @@
    "file": "/media/bastida-y-farina-s-l-024.png",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13583455280489824257?region=anywhere",
    "variantCount": 3
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR15702987281327456257",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR15702987281327456257.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR15702987281327456257?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "bastida-y-farina-s-l",
+   "externalId": "CR17474252023493820417",
+   "platform": "google",
+   "file": "/media/serpapi-google/bastida-y-farina-s-l/CR17474252023493820417.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR17474252023493820417?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
   },
   {
    "companyId": "bastida-y-farina-s-l",
@@ -2934,11 +3024,27 @@
   },
   {
    "companyId": "buda-marketing-buda-consultores-s-l",
+   "externalId": "CR08668483779997728769",
+   "platform": "google",
+   "file": "/media/serpapi-google/buda-marketing-buda-consultores-s-l/CR08668483779997728769.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08668483779997728769?domain=budamarketing.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "buda-marketing-buda-consultores-s-l",
    "externalId": "CR09818128396356419585",
    "platform": "google",
    "file": "/media/buda-marketing-buda-consultores-s-l-035.png",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09818128396356419585?region=anywhere",
    "variantCount": 3
+  },
+  {
+   "companyId": "buda-marketing-buda-consultores-s-l",
+   "externalId": "CR11328011367442546689",
+   "platform": "google",
+   "file": "/media/serpapi-google/buda-marketing-buda-consultores-s-l/CR11328011367442546689.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR11328011367442546689?domain=budamarketing.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
   },
   {
    "companyId": "buda-marketing-buda-consultores-s-l",
@@ -2952,8 +3058,8 @@
    "companyId": "buda-marketing-buda-consultores-s-l",
    "externalId": "CR12019164651540447233",
    "platform": "google",
-   "file": "/media/buda-marketing-buda-consultores-s-l-021.png",
-   "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12019164651540447233?region=anywhere",
+   "file": "/media/serpapi-google/buda-marketing-buda-consultores-s-l/CR12019164651540447233.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12019164651540447233?domain=budamarketing.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -4104,8 +4210,8 @@
    "companyId": "comadi-telemarketing",
    "externalId": "CR00234367921437016065",
    "platform": "google",
-   "file": "/media/comadi-telemarketing-004.png",
-   "sourceUrl": "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR00234367921437016065?region=anywhere",
+   "file": "/media/serpapi-google/comadi-telemarketing/CR00234367921437016065.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR00234367921437016065?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -4128,8 +4234,8 @@
    "companyId": "comadi-telemarketing",
    "externalId": "CR17524572332780158977",
    "platform": "google",
-   "file": "/media/comadi-telemarketing-008.png",
-   "sourceUrl": "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR17524572332780158977?region=anywhere",
+   "file": "/media/serpapi-google/comadi-telemarketing/CR17524572332780158977.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR17524572332780158977?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -4699,6 +4805,86 @@
    "file": "/media/cronoshare-010.svg",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR03267753170545147905/creative/CR16427637419093786625?region=anywhere",
    "variantCount": 3
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR01503057005332398081",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR01503057005332398081.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR01503057005332398081?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR07933665109589622785",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR07933665109589622785.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR07933665109589622785?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR08156177332151779329",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR08156177332151779329.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR08156177332151779329?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR12520139876147920897",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR12520139876147920897.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR12520139876147920897?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR12917424763344781313",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR12917424763344781313.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR12917424763344781313?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR13384341077683601409",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR13384341077683601409.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR13384341077683601409?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR13566751800488361985",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR13566751800488361985.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR13566751800488361985?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR15006198201273286657",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR15006198201273286657.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR15006198201273286657?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR17861819701802303489",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR17861819701802303489.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR17861819701802303489?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "customertop",
+   "externalId": "CR18165580207249948673",
+   "platform": "google",
+   "file": "/media/serpapi-google/customertop/CR18165580207249948673.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR18165580207249948673?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
   },
   {
    "companyId": "customertop",
@@ -10286,10 +10472,58 @@
   },
   {
    "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR00845457586298814465",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR00845457586298814465.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR00845457586298814465?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
    "externalId": "CR05014078351883632641",
    "platform": "google",
-   "file": "/media/medical-marketing-digital-marketing-specialist-worldwide-llc-014.png",
-   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05014078351883632641?region=anywhere",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR05014078351883632641.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05014078351883632641?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR05463884710516097025",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR05463884710516097025.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05463884710516097025?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR05877897292740034561",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR05877897292740034561.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05877897292740034561?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR06022854019527999489",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR06022854019527999489.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR06022854019527999489?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR09615889381504057345",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR09615889381504057345.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09615889381504057345?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR09696136962779381761",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR09696136962779381761.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09696136962779381761?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -10306,6 +10540,30 @@
    "platform": "google",
    "file": "/media/medical-marketing-digital-marketing-specialist-worldwide-llc-016.png",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR12276416906054860801?region=anywhere",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR13615039945998598145",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR13615039945998598145.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR13615039945998598145?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR17085226324047429633",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR17085226324047429633.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17085226324047429633?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+   "externalId": "CR17376703558035963905",
+   "platform": "google",
+   "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR17376703558035963905.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17376703558035963905?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -13582,6 +13840,22 @@
   },
   {
    "companyId": "salesdose",
+   "externalId": "CR03591311267614162945",
+   "platform": "google",
+   "file": "/media/serpapi-google/salesdose/CR03591311267614162945.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR03591311267614162945?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "salesdose",
+   "externalId": "CR10799565678038745089",
+   "platform": "google",
+   "file": "/media/serpapi-google/salesdose/CR10799565678038745089.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR10799565678038745089?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+   "variantCount": 1
+  },
+  {
+   "companyId": "salesdose",
    "externalId": "1035389059096036",
    "platform": "meta",
    "file": "/media/salesdose-sc-meta-1035389059096036-poster.jpg",
@@ -13802,6 +14076,14 @@
    "platform": "google",
    "file": "/media/saleshive-006.png",
    "sourceUrl": "https://adstransparency.google.com/advertiser/AR03324858411467669505/creative/CR18244704422649135105?region=anywhere",
+   "variantCount": 1
+  },
+  {
+   "companyId": "sara-marketer",
+   "externalId": "CR12488941070501019649",
+   "platform": "google",
+   "file": "/media/serpapi-google/sara-marketer/CR12488941070501019649.webp",
+   "sourceUrl": "https://adstransparency.google.com/advertiser/AR06622715033560285185/creative/CR12488941070501019649?domain=saramarketer.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
    "variantCount": 1
   },
   {
@@ -16354,30 +16636,30 @@
  "countries": [
   {
    "country": "España",
-   "companies": 434,
-   "withEvidence": 187,
-   "exactCreativeIds": 3982,
-   "transcribedCanonical": 3636,
-   "verifiedTranscribed": 2939,
+   "companies": 444,
+   "withEvidence": 203,
+   "exactCreativeIds": 4025,
+   "transcribedCanonical": 3979,
+   "verifiedTranscribed": 3257,
    "statusCounts": {
-    ">=10": 134,
-    "5-9": 13,
-    "1-4": 40,
+    ">=10": 135,
+    "5-9": 14,
+    "1-4": 54,
     "sin evidencia": 0,
-    "pendiente/no atribuible": 247
+    "pendiente/no atribuible": 241
    }
   },
   {
    "country": "Estados Unidos",
-   "companies": 33,
-   "withEvidence": 12,
-   "exactCreativeIds": 320,
-   "transcribedCanonical": 164,
-   "verifiedTranscribed": 47,
+   "companies": 34,
+   "withEvidence": 13,
+   "exactCreativeIds": 322,
+   "transcribedCanonical": 190,
+   "verifiedTranscribed": 63,
    "statusCounts": {
     ">=10": 10,
     "5-9": 1,
-    "1-4": 1,
+    "1-4": 2,
     "sin evidencia": 1,
     "pendiente/no atribuible": 20
    }
@@ -16414,13 +16696,13 @@
   },
   {
    "country": "Emiratos Árabes Unidos",
-   "companies": 26,
-   "withEvidence": 4,
+   "companies": 27,
+   "withEvidence": 5,
    "exactCreativeIds": 73,
-   "transcribedCanonical": 49,
-   "verifiedTranscribed": 0,
+   "transcribedCanonical": 80,
+   "verifiedTranscribed": 31,
    "statusCounts": {
-    ">=10": 2,
+    ">=10": 3,
     "5-9": 0,
     "1-4": 2,
     "sin evidencia": 0,
@@ -16429,15 +16711,15 @@
   },
   {
    "country": "Francia",
-   "companies": 25,
-   "withEvidence": 8,
+   "companies": 26,
+   "withEvidence": 9,
    "exactCreativeIds": 274,
-   "transcribedCanonical": 95,
-   "verifiedTranscribed": 0,
+   "transcribedCanonical": 96,
+   "verifiedTranscribed": 1,
    "statusCounts": {
     ">=10": 8,
     "5-9": 0,
-    "1-4": 0,
+    "1-4": 1,
     "sin evidencia": 0,
     "pendiente/no atribuible": 17
    }
@@ -16549,14 +16831,14 @@
   },
   {
    "country": "Alemania",
-   "companies": 16,
-   "withEvidence": 4,
+   "companies": 17,
+   "withEvidence": 5,
    "exactCreativeIds": 153,
-   "transcribedCanonical": 82,
-   "verifiedTranscribed": 14,
+   "transcribedCanonical": 87,
+   "verifiedTranscribed": 19,
    "statusCounts": {
     ">=10": 4,
-    "5-9": 0,
+    "5-9": 1,
     "1-4": 0,
     "sin evidencia": 1,
     "pendiente/no atribuible": 11
@@ -16653,6 +16935,21 @@
    }
   },
   {
+   "country": "Suiza",
+   "companies": 10,
+   "withEvidence": 1,
+   "exactCreativeIds": 0,
+   "transcribedCanonical": 6,
+   "verifiedTranscribed": 6,
+   "statusCounts": {
+    ">=10": 0,
+    "5-9": 1,
+    "1-4": 0,
+    "sin evidencia": 0,
+    "pendiente/no atribuible": 9
+   }
+  },
+  {
    "country": "Sin determinar",
    "companies": 9,
    "withEvidence": 9,
@@ -16665,21 +16962,6 @@
     "1-4": 9,
     "sin evidencia": 0,
     "pendiente/no atribuible": 0
-   }
-  },
-  {
-   "country": "Suiza",
-   "companies": 9,
-   "withEvidence": 0,
-   "exactCreativeIds": 0,
-   "transcribedCanonical": 0,
-   "verifiedTranscribed": 0,
-   "statusCounts": {
-    ">=10": 0,
-    "5-9": 0,
-    "1-4": 0,
-    "sin evidencia": 0,
-    "pendiente/no atribuible": 9
    }
   },
   {
@@ -17773,6 +18055,21 @@
     ">=10": 1,
     "5-9": 0,
     "1-4": 0,
+    "sin evidencia": 0,
+    "pendiente/no atribuible": 0
+   }
+  },
+  {
+   "country": "Islas Caimán",
+   "companies": 1,
+   "withEvidence": 1,
+   "exactCreativeIds": 0,
+   "transcribedCanonical": 3,
+   "verifiedTranscribed": 3,
+   "statusCounts": {
+    ">=10": 0,
+    "5-9": 0,
+    "1-4": 1,
     "sin evidencia": 0,
     "pendiente/no atribuible": 0
    }
@@ -21322,10 +21619,10 @@
    "country": "España",
    "domain": "bastidafarina.com",
    "status": ">=10",
-   "availableEvidenceCount": 86,
+   "availableEvidenceCount": 218,
    "targetCount": 10,
-   "transcribedCanonicalCount": 58,
-   "verifiedTranscribedCount": 44,
+   "transcribedCanonicalCount": 180,
+   "verifiedTranscribedCount": 158,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -21334,7 +21631,7 @@
    "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 40,
-    "google": 17,
+    "google": 139,
     "instagram": 0,
     "display": 1,
     "other": 0
@@ -21389,34 +21686,51 @@
      "CR00019888361460203521",
      "CR00138583665335599105",
      "CR00273699350738108417",
+     "CR00359562687652298753",
+     "CR00822056061849567233",
      "CR01252648978772656129",
      "CR01357822763527569409",
+     "CR01382625297718837249",
      "CR01654577653329428481",
      "CR01845143909143937025",
      "CR02141595883492343809",
+     "CR02483912198687031297",
+     "CR03341231402325639169",
+     "CR03607804259858382849",
      "CR03693584583644676097",
+     "CR03774974445832110081",
+     "CR03798188709707251713",
      "CR03907308478485495809",
+     "CR04123526340576018433",
+     "CR04135775475635060737",
      "CR04308243469408665601",
      "CR04445237807866183681",
      "CR04801604232396406785",
      "CR05219264719323398145",
+     "CR05358080424562130945",
      "CR05395392738197766145",
+     "CR05651401883147829249",
      "CR05759435540596260865",
      "CR05808447920671817729",
      "CR06655276932977917953",
      "CR06673785561964085249",
+     "CR06760218883988127745",
      "CR07101462187503255553",
      "CR07877839854820655105",
+     "CR08206362384328032257",
      "CR08397960531805208577",
      "CR08923396247998431233",
      "CR10169978551105748993",
      "CR10220852954122944513",
      "CR10478366823685292033",
      "CR10796268070868353025",
+     "CR10849095343975432193",
+     "CR11018275918241071105",
      "CR11764265738456530945",
      "CR12583044834748530689",
      "CR12880451460067753985",
      "CR13100958791896137729",
+     "CR13126704294747176961",
      "CR13343191949503365121",
      "CR13583455280489824257",
      "CR14144650963109019649",
@@ -21425,9 +21739,10 @@
      "CR15702987281327456257",
      "CR16175749132055478273",
      "CR16785485478492110849",
+     "CR17474252023493820417",
      "CR17716070888555675649"
     ],
-    "total": 83
+    "total": 101
    },
    "archivedFileCount": 46,
    "reportedLibraryCounts": {
@@ -21464,10 +21779,22 @@
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00273699350738108417?region=anywhere"
     },
     {
+     "externalId": "CR01382625297718837249",
+     "platform": "google",
+     "file": "/media/serpapi-google/bastida-y-farina-s-l/CR01382625297718837249.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01382625297718837249?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
+    {
      "externalId": "CR01654577653329428481",
      "platform": "google",
      "file": "/media/bastida-y-farina-s-l-009.png",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01654577653329428481?region=anywhere"
+    },
+    {
+     "externalId": "CR02483912198687031297",
+     "platform": "google",
+     "file": "/media/serpapi-google/bastida-y-farina-s-l/CR02483912198687031297.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR02483912198687031297?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
      "externalId": "CR03907308478485495809",
@@ -21478,75 +21805,106 @@
     {
      "externalId": "CR04445237807866183681",
      "platform": "google",
-     "file": "/media/bastida-y-farina-s-l-013.png",
+     "file": "/media/serpapi-google/bastida-y-farina-s-l/CR04445237807866183681.webp",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04445237807866183681?region=anywhere"
     },
     {
      "externalId": "CR06655276932977917953",
      "platform": "google",
-     "file": "/media/bastida-y-farina-s-l-011.png",
+     "file": "/media/serpapi-google/bastida-y-farina-s-l/CR06655276932977917953.webp",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06655276932977917953?region=anywhere"
     },
     {
-     "externalId": "CR10220852954122944513",
+     "externalId": "CR06760218883988127745",
      "platform": "google",
-     "file": "/media/bastida-y-farina-s-l-031.png",
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10220852954122944513?region=anywhere"
-    },
-    {
-     "externalId": "CR13100958791896137729",
-     "platform": "google",
-     "file": "/media/bastida-y-farina-s-l-032.png",
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13100958791896137729?region=anywhere"
-    },
-    {
-     "externalId": "CR13583455280489824257",
-     "platform": "google",
-     "file": "/media/bastida-y-farina-s-l-024.png",
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13583455280489824257?region=anywhere"
+     "file": "/media/serpapi-google/bastida-y-farina-s-l/CR06760218883988127745.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06760218883988127745?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     }
    ],
    "sourceLinks": [
     "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=bastidafarina.com",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00019888361460203521?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00019888361460203521?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00138583665335599105?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00138583665335599105?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00273699350738108417?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00359562687652298753?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR00822056061849567233?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01252648978772656129?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01252648978772656129?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01357822763527569409?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01382625297718837249?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01654577653329428481?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01654577653329428481?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR01845143909143937025?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR02141595883492343809?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR02483912198687031297?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03341231402325639169?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03607804259858382849?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03693584583644676097?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03693584583644676097?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03774974445832110081?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03798188709707251713?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03907308478485495809?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR03907308478485495809?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04123526340576018433?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04135775475635060737?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04308243469408665601?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04445237807866183681?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04445237807866183681?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04801604232396406785?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR04801604232396406785?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05219264719323398145?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05219264719323398145?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05358080424562130945?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05395392738197766145?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05395392738197766145?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05651401883147829249?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05759435540596260865?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR05808447920671817729?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06655276932977917953?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06655276932977917953?region=ES",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06655276932977917953?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06673785561964085249?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR06760218883988127745?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR07101462187503255553?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR07101462187503255553?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR07877839854820655105?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR07877839854820655105?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR08206362384328032257?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR08397960531805208577?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR08923396247998431233?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR08923396247998431233?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10169978551105748993?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10169978551105748993?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10220852954122944513?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10220852954122944513?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10478366823685292033?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10478366823685292033?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10796268070868353025?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR10849095343975432193?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR11018275918241071105?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR11764265738456530945?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR11764265738456530945?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR12583044834748530689?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR12880451460067753985?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR12880451460067753985?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13100958791896137729?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13126704294747176961?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13343191949503365121?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13343191949503365121?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR13583455280489824257?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR14144650963109019649?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR14144650963109019649?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR14308453456636018689?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR15579373449624158209?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR15702987281327456257?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR15702987281327456257?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR16175749132055478273?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR16175749132055478273?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR16785485478492110849?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR16785485478492110849?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR17474252023493820417?domain=bastidafarina.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR15967500573192749057/creative/CR17716070888555675649?region=anywhere",
     "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data",
     "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[direction",
@@ -26222,10 +26580,10 @@
    "country": "España",
    "domain": "budamarketing.es",
    "status": ">=10",
-   "availableEvidenceCount": 48,
+   "availableEvidenceCount": 57,
    "targetCount": 10,
-   "transcribedCanonicalCount": 27,
-   "verifiedTranscribedCount": 10,
+   "transcribedCanonicalCount": 38,
+   "verifiedTranscribedCount": 19,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -26234,7 +26592,7 @@
    "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 20,
+    "google": 31,
     "instagram": 0,
     "display": 1,
     "other": 6
@@ -26319,10 +26677,22 @@
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR07562834884473913345?region=anywhere"
     },
     {
+     "externalId": "CR08668483779997728769",
+     "platform": "google",
+     "file": "/media/serpapi-google/buda-marketing-buda-consultores-s-l/CR08668483779997728769.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08668483779997728769?region=anywhere"
+    },
+    {
      "externalId": "CR09818128396356419585",
      "platform": "google",
      "file": "/media/buda-marketing-buda-consultores-s-l-035.png",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09818128396356419585?region=anywhere"
+    },
+    {
+     "externalId": "CR11328011367442546689",
+     "platform": "google",
+     "file": "/media/serpapi-google/buda-marketing-buda-consultores-s-l/CR11328011367442546689.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR11328011367442546689?region=anywhere"
     },
     {
      "externalId": "CR11509844485865472001",
@@ -26333,7 +26703,7 @@
     {
      "externalId": "CR12019164651540447233",
      "platform": "google",
-     "file": "/media/buda-marketing-buda-consultores-s-l-021.png",
+     "file": "/media/serpapi-google/buda-marketing-buda-consultores-s-l/CR12019164651540447233.webp",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12019164651540447233?region=anywhere"
     },
     {
@@ -26347,18 +26717,6 @@
      "platform": "google",
      "file": "/media/buda-marketing-buda-consultores-s-l-023.png",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR13521931514652131329?region=anywhere"
-    },
-    {
-     "externalId": "CR14654954263977918465",
-     "platform": "google",
-     "file": "/media/buda-marketing-buda-consultores-s-l-039.png",
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR14654954263977918465?region=anywhere"
-    },
-    {
-     "externalId": "CR15686172621802569729",
-     "platform": "google",
-     "file": "/media/buda-marketing-buda-consultores-s-l-027.png",
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR15686172621802569729?region=anywhere"
     }
    ],
    "sourceLinks": [
@@ -26377,6 +26735,7 @@
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR06482519655977058305?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR07562834884473913345?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR07932189590754951169?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08668483779997728769?domain=budamarketing.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08668483779997728769?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR08683029657408241665?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09698985316370612225?region=anywhere",
@@ -26386,8 +26745,10 @@
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR09997794643648970753?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR10220811473328799745?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR10651738092030918657?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR11328011367442546689?domain=budamarketing.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR11328011367442546689?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR11509844485865472001?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12019164651540447233?domain=budamarketing.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12019164651540447233?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12559384332361269249?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR12669817905865555969?region=anywhere",
@@ -27808,19 +28169,19 @@
    "country": "España",
    "domain": "placassolares.es",
    "status": ">=10",
-   "availableEvidenceCount": 54,
+   "availableEvidenceCount": 59,
    "targetCount": 10,
-   "transcribedCanonicalCount": 13,
-   "verifiedTranscribedCount": 2,
+   "transcribedCanonicalCount": 18,
+   "verifiedTranscribedCount": 7,
    "textAvailabilityGap": 0,
-   "verifiedTranscriptionGap": 8,
-   "transcriptionGap": 8,
+   "verifiedTranscriptionGap": 3,
+   "transcriptionGap": 3,
    "textAvailableComplete": true,
    "verifiedComplete": false,
    "transcriptionComplete": false,
    "transcribedByPlatform": {
     "meta": 2,
-    "google": 5,
+    "google": 10,
     "instagram": 0,
     "display": 0,
     "other": 6
@@ -30445,19 +30806,19 @@
    "country": "Estados Unidos",
    "domain": "medicalmarketing.digital",
    "status": ">=10",
-   "availableEvidenceCount": 30,
+   "availableEvidenceCount": 48,
    "targetCount": 10,
-   "transcribedCanonicalCount": 8,
-   "verifiedTranscribedCount": 0,
-   "textAvailabilityGap": 2,
-   "verifiedTranscriptionGap": 10,
-   "transcriptionGap": 10,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "transcribedCanonicalCount": 33,
+   "verifiedTranscribedCount": 16,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 3,
+    "google": 28,
     "instagram": 0,
     "display": 0,
     "other": 5
@@ -30476,7 +30837,9 @@
      "CR05463884710516097025",
      "CR05534837982562877441",
      "CR05865178417107828737",
+     "CR05877897292740034561",
      "CR06022854019527999489",
+     "CR06478074510854586369",
      "CR09466232929702117377",
      "CR09615889381504057345",
      "CR09696136962779381761",
@@ -30491,7 +30854,7 @@
      "CR17185116817991925761",
      "CR17376703558035963905"
     ],
-    "total": 25
+    "total": 27
    },
    "archivedFileCount": 8,
    "reportedLibraryCounts": {
@@ -30510,10 +30873,46 @@
    },
    "evidence": [
     {
+     "externalId": "CR00845457586298814465",
+     "platform": "google",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR00845457586298814465.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR00845457586298814465?region=anywhere"
+    },
+    {
      "externalId": "CR05014078351883632641",
      "platform": "google",
-     "file": "/media/medical-marketing-digital-marketing-specialist-worldwide-llc-014.png",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR05014078351883632641.webp",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05014078351883632641?region=anywhere"
+    },
+    {
+     "externalId": "CR05463884710516097025",
+     "platform": "google",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR05463884710516097025.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05463884710516097025?region=anywhere"
+    },
+    {
+     "externalId": "CR05877897292740034561",
+     "platform": "google",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR05877897292740034561.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05877897292740034561?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
+    {
+     "externalId": "CR06022854019527999489",
+     "platform": "google",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR06022854019527999489.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR06022854019527999489?region=anywhere"
+    },
+    {
+     "externalId": "CR09615889381504057345",
+     "platform": "google",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR09615889381504057345.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09615889381504057345?region=anywhere"
+    },
+    {
+     "externalId": "CR09696136962779381761",
+     "platform": "google",
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR09696136962779381761.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09696136962779381761?region=anywhere"
     },
     {
      "externalId": "CR10225044936693121025",
@@ -30528,74 +30927,60 @@
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR12276416906054860801?region=anywhere"
     },
     {
-     "externalId": "CR00845457586298814465",
+     "externalId": "CR13615039945998598145",
      "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR00845457586298814465?region=anywhere"
-    },
-    {
-     "externalId": "CR01435205910854107137",
-     "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR01435205910854107137?region=anywhere"
-    },
-    {
-     "externalId": "CR01466898809538740225",
-     "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR01466898809538740225?region=anywhere"
-    },
-    {
-     "externalId": "CR02270526498161033217",
-     "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR02270526498161033217?region=anywhere"
-    },
-    {
-     "externalId": "CR02747114623583911937",
-     "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR02747114623583911937?region=anywhere"
-    },
-    {
-     "externalId": "CR03643934031558475777",
-     "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR03643934031558475777?region=anywhere"
-    },
-    {
-     "externalId": "CR03688375329480507393",
-     "platform": "google",
-     "file": null,
-     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR03688375329480507393?region=anywhere"
+     "file": "/media/serpapi-google/medical-marketing-digital-marketing-specialist-worldwide-llc/CR13615039945998598145.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR13615039945998598145?region=anywhere"
     }
    ],
    "sourceLinks": [
     "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=medicalmarketing.digital",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR00845457586298814465?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR00845457586298814465?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR01435205910854107137?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR01435205910854107137?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR01466898809538740225?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR02270526498161033217?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR02270526498161033217?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR02747114623583911937?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR02747114623583911937?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR03643934031558475777?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR03688375329480507393?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05014078351883632641?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05014078351883632641?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05463884710516097025?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05463884710516097025?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05534837982562877441?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05534837982562877441?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05865178417107828737?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05865178417107828737?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR05877897292740034561?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR06022854019527999489?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR06022854019527999489?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR06478074510854586369?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09466232929702117377?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09466232929702117377?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09615889381504057345?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09615889381504057345?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09696136962779381761?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR09696136962779381761?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR10225044936693121025?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR10225044936693121025?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR10246316638399889409?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR10877958718205460481?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR10877958718205460481?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR12276416906054860801?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR12276416906054860801?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR12772340287049564161?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR12772340287049564161?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR13615039945998598145?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR13615039945998598145?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17018292359705657345?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17085226324047429633?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17085226324047429633?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17185116817991925761?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17185116817991925761?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17376703558035963905?domain=medicalmarketing.digital&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617/creative/CR17376703558035963905?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR16328687394138095617?region=anywhere",
     "https://www.facebook.com/ads/library/"
@@ -32422,10 +32807,10 @@
    "country": "España",
    "domain": "mpdentales.com",
    "status": "1-4",
-   "availableEvidenceCount": 3,
-   "targetCount": 3,
-   "transcribedCanonicalCount": 3,
-   "verifiedTranscribedCount": 0,
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 1,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 3,
    "transcriptionGap": 3,
@@ -32434,7 +32819,7 @@
    "transcriptionComplete": false,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 3,
+    "google": 4,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -32481,6 +32866,13 @@
      "platform": "google",
      "file": "/media/mpdentales-marketing-medico-y-sanitario-s-l-006.svg",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR05069188305619255297/creative/CR16323274481214685185?region=anywhere"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:6968fd5eaaaead2799dacc124338b31f7423bad792397fbbca932b4185da6294"
     }
    ],
    "sourceLinks": [
@@ -34346,19 +34738,19 @@
    "country": "España",
    "domain": "comadi.es",
    "status": ">=10",
-   "availableEvidenceCount": 18,
+   "availableEvidenceCount": 39,
    "targetCount": 10,
-   "transcribedCanonicalCount": 8,
-   "verifiedTranscribedCount": 4,
-   "textAvailabilityGap": 2,
-   "verifiedTranscriptionGap": 6,
-   "transcriptionGap": 6,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "transcribedCanonicalCount": 29,
+   "verifiedTranscribedCount": 25,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 8,
+    "google": 29,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -34403,7 +34795,7 @@
     {
      "externalId": "CR00234367921437016065",
      "platform": "google",
-     "file": "/media/comadi-telemarketing-004.png",
+     "file": "/media/serpapi-google/comadi-telemarketing/CR00234367921437016065.webp",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR00234367921437016065?region=anywhere"
     },
     {
@@ -34421,7 +34813,7 @@
     {
      "externalId": "CR17524572332780158977",
      "platform": "google",
-     "file": "/media/comadi-telemarketing-008.png",
+     "file": "/media/serpapi-google/comadi-telemarketing/CR17524572332780158977.webp",
      "sourceUrl": "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR17524572332780158977?region=anywhere"
     },
     {
@@ -34463,20 +34855,32 @@
    ],
    "sourceLinks": [
     "https://adstransparency.google.com/?region=anywhere&query=auditoria&domain=comadi.es",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR00234367921437016065?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR00234367921437016065?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR01527559579007713281?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR01527559579007713281?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR01667398044808642561?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR01667398044808642561?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR02728532559246917633?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR02728532559246917633?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR05073934046912839681?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR05073934046912839681?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR08242229965454573569?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR08661488266115022849?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR08661488266115022849?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR11076506122767564801?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR11076506122767564801?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR12729583209013051393?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR12729583209013051393?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR13195530948097081345?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR13195530948097081345?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR13797790941882351617?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR13797790941882351617?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR14355513980233973761?region=anywhere",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR15869327482051100673?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR16449963621171068929?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR16449963621171068929?region=anywhere",
+    "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR17524572332780158977?domain=comadi.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://adstransparency.google.com/advertiser/AR00321384706178285569/creative/CR17524572332780158977?region=anywhere",
     "https://www.facebook.com/ads/library/"
    ],
@@ -35437,19 +35841,19 @@
    "country": "España",
    "domain": "sciremarketing.com",
    "status": ">=10",
-   "availableEvidenceCount": 43,
+   "availableEvidenceCount": 45,
    "targetCount": 10,
-   "transcribedCanonicalCount": 8,
-   "verifiedTranscribedCount": 3,
-   "textAvailabilityGap": 2,
-   "verifiedTranscriptionGap": 7,
-   "transcriptionGap": 7,
-   "textAvailableComplete": false,
+   "transcribedCanonicalCount": 10,
+   "verifiedTranscribedCount": 5,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 5,
+   "transcriptionGap": 5,
+   "textAvailableComplete": true,
    "verifiedComplete": false,
    "transcriptionComplete": false,
    "transcribedByPlatform": {
     "meta": 2,
-    "google": 3,
+    "google": 5,
     "instagram": 0,
     "display": 0,
     "other": 3
@@ -37113,20 +37517,20 @@
    "name": "Searcha — Search Platform, S.L.",
    "country": "España",
    "domain": "searcha.net",
-   "status": "pendiente/no atribuible",
-   "availableEvidenceCount": 0,
-   "targetCount": 0,
-   "transcribedCanonicalCount": 0,
-   "verifiedTranscribedCount": 0,
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 0,
+    "google": 1,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -37147,11 +37551,19 @@
      "classification": "recuento agregado pendiente de muestra"
     },
     "google": {
-     "status": "88 anuncios de Google activos (23/08/2026)",
-     "classification": "recuento agregado pendiente de muestra"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
-   "evidence": [],
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:0f8564e93be59633d007aa40dbdc4309f3e262033048e802eecb90f917051c05"
+    }
+   ],
    "sourceLinks": [
     "https://adstransparency.google.com/?region=anywhere&domain=searcha.net",
     "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&q=Searcha&search_type=keyword_unordered"
@@ -38694,10 +39106,10 @@
    "country": "España",
    "domain": "dimoni.com",
    "status": "5-9",
-   "availableEvidenceCount": 7,
-   "targetCount": 7,
-   "transcribedCanonicalCount": 4,
-   "verifiedTranscribedCount": 0,
+   "availableEvidenceCount": 9,
+   "targetCount": 9,
+   "transcribedCanonicalCount": 6,
+   "verifiedTranscribedCount": 2,
    "textAvailabilityGap": 3,
    "verifiedTranscriptionGap": 7,
    "transcriptionGap": 7,
@@ -38706,7 +39118,7 @@
    "transcriptionComplete": false,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 1,
+    "google": 3,
     "instagram": 0,
     "display": 0,
     "other": 3
@@ -38781,6 +39193,20 @@
      "file": "/media/dimoni-008.svg",
      "sourceUrl": null,
      "transcriptSignature": "file:/media/dimoni-008.svg"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:3e841ce199f0d8d97f7dc16cfa90d76e5ae88aed6dd12b955b5129849fe4c058"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:632a93d8218d2b0018276365dc14b33ed02c42e00cb21aa4e440d8cf1e2afcd3"
     }
    ],
    "sourceLinks": [
@@ -42636,10 +43062,10 @@
    "country": "España",
    "domain": "marketingmedico.es",
    "status": "5-9",
-   "availableEvidenceCount": 6,
-   "targetCount": 6,
-   "transcribedCanonicalCount": 6,
-   "verifiedTranscribedCount": 3,
+   "availableEvidenceCount": 8,
+   "targetCount": 8,
+   "transcribedCanonicalCount": 8,
+   "verifiedTranscribedCount": 5,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 3,
    "transcriptionGap": 3,
@@ -42648,7 +43074,7 @@
    "transcriptionComplete": false,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 6,
+    "google": 8,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -42716,6 +43142,20 @@
      "file": "/media/medical-marketing-marketingmedico-es-003.png",
      "sourceUrl": null,
      "transcriptSignature": "file:/media/medical-marketing-marketingmedico-es-003.png"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:d7dc487ec805def22c522333674baec7ab5d08d5ca9e26e2c30f5f9555f64684"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:e9d08ed52f3e03b8dbd407998fc8be80cc42ed2bdabcd9687366bf0560b55689"
     }
    ],
    "sourceLinks": [
@@ -52755,20 +53195,20 @@
    "name": "Kimoon",
    "country": "España",
    "domain": "kimoon.io",
-   "status": "pendiente/no atribuible",
-   "availableEvidenceCount": 0,
-   "targetCount": 0,
-   "transcribedCanonicalCount": 0,
-   "verifiedTranscribedCount": 0,
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 3,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 0,
+    "google": 3,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -52789,11 +53229,33 @@
      "classification": "sin evidencia comprobada"
     },
     "google": {
-     "status": "11 anuncios de Google activos (23/08/2026)",
-     "classification": "recuento agregado pendiente de muestra"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
-   "evidence": [],
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:18537b7ca596fab94280d655604da5599bc62dfeee6dc4b16b058f4b9379cecc"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:1b630beee0d1826bd713678c8ccd620b2beb7f265780f3fe925c51c763cf7b04"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:edd7fd4d06bd0fb632035632062309633d7f67584aa1c9170d3683cd025115a5"
+    }
+   ],
    "sourceLinks": [],
    "observedAliases": [],
    "detailAvailable": true
@@ -70228,20 +70690,20 @@
    "name": "Glissmarket",
    "country": "España",
    "domain": "glissmarket.com",
-   "status": "pendiente/no atribuible",
-   "availableEvidenceCount": 0,
-   "targetCount": 0,
-   "transcribedCanonicalCount": 0,
-   "verifiedTranscribedCount": 0,
+   "status": "1-4",
+   "availableEvidenceCount": 2,
+   "targetCount": 2,
+   "transcribedCanonicalCount": 2,
+   "verifiedTranscribedCount": 2,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 0,
+    "google": 2,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -70262,11 +70724,26 @@
      "classification": "pendiente/no atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
-   "evidence": [],
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:8bcd439c1a29676c46e3c9175176afa3bcaf3c19abc68f9acaf443f032188f85"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:8c7d2e5363246a8b486c1cc51834cb86e9297bf07e77efa67181679e6f12aac4"
+    }
+   ],
    "sourceLinks": [],
    "observedAliases": [],
    "detailAvailable": true
@@ -70324,28 +70801,32 @@
    "name": "IG Telcom",
    "country": "España",
    "domain": "igtelcom.es",
-   "status": "pendiente/no atribuible",
-   "availableEvidenceCount": 0,
-   "targetCount": 0,
-   "transcribedCanonicalCount": 0,
-   "verifiedTranscribedCount": 0,
+   "status": "5-9",
+   "availableEvidenceCount": 9,
+   "targetCount": 9,
+   "transcribedCanonicalCount": 9,
+   "verifiedTranscribedCount": 6,
    "textAvailabilityGap": 0,
-   "verifiedTranscriptionGap": 0,
-   "transcriptionGap": 0,
-   "textAvailableComplete": false,
+   "verifiedTranscriptionGap": 3,
+   "transcriptionGap": 3,
+   "textAvailableComplete": true,
    "verifiedComplete": false,
    "transcriptionComplete": false,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 0,
+    "google": 9,
     "instagram": 0,
     "display": 0,
     "other": 0
    },
    "exactCreativeIds": {
     "meta": [],
-    "google": [],
-    "total": 0
+    "google": [
+     "CR03651051170325069825",
+     "CR07973797284003446785",
+     "CR13579152376094261249"
+    ],
+    "total": 3
    },
    "archivedFileCount": 0,
    "reportedLibraryCounts": {
@@ -70358,12 +70839,77 @@
      "classification": "pendiente/no atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
-   "evidence": [],
-   "sourceLinks": [],
+   "evidence": [
+    {
+     "externalId": "CR03651051170325069825",
+     "platform": "google",
+     "file": "/media/serpapi-google/amp-igtelcom-es/CR03651051170325069825.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR03651051170325069825?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
+    {
+     "externalId": "CR07973797284003446785",
+     "platform": "google",
+     "file": "/media/serpapi-google/amp-igtelcom-es/CR07973797284003446785.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR07973797284003446785?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
+    {
+     "externalId": "CR13579152376094261249",
+     "platform": "google",
+     "file": "/media/serpapi-google/amp-igtelcom-es/CR13579152376094261249.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR13579152376094261249?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:1ca12e2122f24437dda4a5087346dfe338a39d78b0a9e3e5d96a413e4cb92401"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:35cb2ff19554ce1ae5ca20761483a57f9696add0908e6e19cc17f3bb4bf397e8"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:3d1e2e249e11d88d33de8b7661d9fd869ad2ff1ff53c82be916c00ea316ca3f7"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:577e5b5eb09156fbcfec6b6a6d0e9abe0ec8f8c96d040856c7fc570684b87959"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:6eeb6860f5bcedc752c41fc2b75eb82e93d293898a563b4270cceff3dfaac544"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:f4513e4668a578babe6027b585cc506775e217fed192efe8da935046bc6b5ea4"
+    }
+   ],
+   "sourceLinks": [
+    "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR03651051170325069825?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR07973797284003446785?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR15698984732584837121/creative/CR13579152376094261249?domain=igtelcom.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+   ],
    "observedAliases": [],
    "detailAvailable": true
   },
@@ -71191,20 +71737,20 @@
    "name": "ReformaPresupuesto",
    "country": "España",
    "domain": "reformapresupuesto.com",
-   "status": "pendiente/no atribuible",
-   "availableEvidenceCount": 0,
-   "targetCount": 0,
-   "transcribedCanonicalCount": 0,
-   "verifiedTranscribedCount": 0,
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 0,
+    "google": 1,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -71225,11 +71771,19 @@
      "classification": "pendiente/no atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
-   "evidence": [],
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:ced24564d4563b862b40d6b386cba197a71ed147edf90acacb408ef72761a2fd"
+    }
+   ],
    "sourceLinks": [],
    "observedAliases": [],
    "detailAvailable": true
@@ -77719,20 +78273,20 @@
    "name": "Erizonet",
    "country": "España",
    "domain": "erizonet.com",
-   "status": "pendiente/no atribuible",
-   "availableEvidenceCount": 0,
-   "targetCount": 0,
-   "transcribedCanonicalCount": 0,
-   "verifiedTranscribedCount": 0,
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 3,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
-   "textAvailableComplete": false,
-   "verifiedComplete": false,
-   "transcriptionComplete": false,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 0,
-    "google": 0,
+    "google": 3,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -77753,11 +78307,33 @@
      "classification": "pendiente/no atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
-   "evidence": [],
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:013a658d04871216377b6b10bab499cfb69fd730936ce9c28d836d89c8e214ff"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:97bd0ee8f4ef49b20a641558f9314c361415c188acbd4c45d452139d121d91b5"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:c5cadc497e7210b13719bd1c592c9e8a92641e6850fc4cebe2e52d382c557047"
+    }
+   ],
    "sourceLinks": [],
    "observedAliases": [],
    "detailAvailable": true
@@ -79688,10 +80264,10 @@
    "country": "España",
    "domain": "veltavia.com",
    "status": ">=10",
-   "availableEvidenceCount": 32,
+   "availableEvidenceCount": 33,
    "targetCount": 10,
-   "transcribedCanonicalCount": 30,
-   "verifiedTranscribedCount": 30,
+   "transcribedCanonicalCount": 31,
+   "verifiedTranscribedCount": 31,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -79700,7 +80276,7 @@
    "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 30,
-    "google": 0,
+    "google": 1,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -79754,8 +80330,8 @@
      "classification": "evidencia atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
    "evidence": [
@@ -80107,10 +80683,10 @@
    "country": "España",
    "domain": "saramarketer.es",
    "status": ">=10",
-   "availableEvidenceCount": 31,
+   "availableEvidenceCount": 47,
    "targetCount": 10,
-   "transcribedCanonicalCount": 31,
-   "verifiedTranscribedCount": 31,
+   "transcribedCanonicalCount": 47,
+   "verifiedTranscribedCount": 46,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -80119,7 +80695,7 @@
    "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 31,
-    "google": 0,
+    "google": 16,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -80158,8 +80734,10 @@
      "2772244386478346",
      "2825497694483134"
     ],
-    "google": [],
-    "total": 31
+    "google": [
+     "CR12488941070501019649"
+    ],
+    "total": 32
    },
    "archivedFileCount": 0,
    "reportedLibraryCounts": {
@@ -80172,11 +80750,17 @@
      "classification": "evidencia atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
    "evidence": [
+    {
+     "externalId": "CR12488941070501019649",
+     "platform": "google",
+     "file": "/media/serpapi-google/sara-marketer/CR12488941070501019649.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR06622715033560285185/creative/CR12488941070501019649?region=ES"
+    },
     {
      "externalId": "1049071574503923",
      "platform": "meta",
@@ -80230,15 +80814,11 @@
      "platform": "meta",
      "file": "/media/sara-marketer-sc-meta-2245599362883066-poster.jpg",
      "sourceUrl": "https://www.facebook.com/ads/library/?id=2245599362883066"
-    },
-    {
-     "externalId": "2266732497447101",
-     "platform": "meta",
-     "file": "/media/sara-marketer-sc-meta-2266732497447101-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=2266732497447101"
     }
    ],
    "sourceLinks": [
+    "https://adstransparency.google.com/advertiser/AR06622715033560285185/creative/CR12488941070501019649?domain=saramarketer.es&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR06622715033560285185/creative/CR12488941070501019649?region=ES",
     "https://www.facebook.com/ads/library/?id=1039944281724537",
     "https://www.facebook.com/ads/library/?id=1049071574503923",
     "https://www.facebook.com/ads/library/?id=1227945199469832",
@@ -85952,10 +86532,10 @@
    "country": "España",
    "domain": "customertop.com",
    "status": ">=10",
-   "availableEvidenceCount": 30,
+   "availableEvidenceCount": 89,
    "targetCount": 10,
-   "transcribedCanonicalCount": 30,
-   "verifiedTranscribedCount": 30,
+   "transcribedCanonicalCount": 85,
+   "verifiedTranscribedCount": 76,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -85964,7 +86544,7 @@
    "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 30,
-    "google": 0,
+    "google": 55,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -86002,8 +86582,23 @@
      "926175903186669",
      "956792353661640"
     ],
-    "google": [],
-    "total": 30
+    "google": [
+     "CR01503057005332398081",
+     "CR07933665109589622785",
+     "CR08156177332151779329",
+     "CR10303091776725975041",
+     "CR10855217493438365697",
+     "CR12520139876147920897",
+     "CR12917424763344781313",
+     "CR13384341077683601409",
+     "CR13566751800488361985",
+     "CR15006198201273286657",
+     "CR15384985042283397121",
+     "CR17016409609251848193",
+     "CR17861819701802303489",
+     "CR18165580207249948673"
+    ],
+    "total": 44
    },
    "archivedFileCount": 30,
    "reportedLibraryCounts": {
@@ -86016,73 +86611,88 @@
      "classification": "evidencia atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
    "evidence": [
     {
-     "externalId": "1028086340012969",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1028086340012969-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1028086340012969"
+     "externalId": "CR01503057005332398081",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR01503057005332398081.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR01503057005332398081?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "1440445027385459",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1440445027385459-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1440445027385459"
+     "externalId": "CR07933665109589622785",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR07933665109589622785.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR07933665109589622785?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "1573660264426591",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1573660264426591-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1573660264426591"
+     "externalId": "CR08156177332151779329",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR08156177332151779329.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR08156177332151779329?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "1592579645132969",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1592579645132969-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1592579645132969"
+     "externalId": "CR12520139876147920897",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR12520139876147920897.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR12520139876147920897?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "1844207373210572",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1844207373210572-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1844207373210572"
+     "externalId": "CR12917424763344781313",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR12917424763344781313.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR12917424763344781313?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "1920447041983663",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1920447041983663-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1920447041983663"
+     "externalId": "CR13384341077683601409",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR13384341077683601409.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR13384341077683601409?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "1954783491802517",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-1954783491802517-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1954783491802517"
+     "externalId": "CR13566751800488361985",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR13566751800488361985.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR13566751800488361985?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "2142792700001971",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-2142792700001971-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=2142792700001971"
+     "externalId": "CR15006198201273286657",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR15006198201273286657.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR15006198201273286657?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "35918610904451750",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-35918610904451750-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=35918610904451750"
+     "externalId": "CR17861819701802303489",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR17861819701802303489.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR17861819701802303489?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
     },
     {
-     "externalId": "926175903186669",
-     "platform": "meta",
-     "file": "/media/customertop-sc-meta-926175903186669-image.png",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=926175903186669"
+     "externalId": "CR18165580207249948673",
+     "platform": "google",
+     "file": "/media/serpapi-google/customertop/CR18165580207249948673.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR18165580207249948673?region=ES"
     }
    ],
    "sourceLinks": [
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR01503057005332398081?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR07933665109589622785?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR08156177332151779329?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR10303091776725975041?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR10855217493438365697?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR12520139876147920897?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR12917424763344781313?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR13384341077683601409?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR13566751800488361985?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR15006198201273286657?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR15384985042283397121?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR17016409609251848193?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR17861819701802303489?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR18165580207249948673?domain=customertop.com&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR09252444670481399809/creative/CR18165580207249948673?region=ES",
     "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=134725383675253",
     "https://www.facebook.com/ads/library/?id=1006855185621130",
     "https://www.facebook.com/ads/library/?id=1028086340012969",
@@ -95007,10 +95617,10 @@
    "country": "España",
    "domain": "salesdose.io",
    "status": ">=10",
-   "availableEvidenceCount": 29,
+   "availableEvidenceCount": 95,
    "targetCount": 10,
-   "transcribedCanonicalCount": 29,
-   "verifiedTranscribedCount": 29,
+   "transcribedCanonicalCount": 90,
+   "verifiedTranscribedCount": 88,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -95019,7 +95629,7 @@
    "transcriptionComplete": true,
    "transcribedByPlatform": {
     "meta": 29,
-    "google": 0,
+    "google": 61,
     "instagram": 0,
     "display": 0,
     "other": 0
@@ -95056,8 +95666,16 @@
      "941097372373148",
      "952569361190464"
     ],
-    "google": [],
-    "total": 29
+    "google": [
+     "CR01656686473681829889",
+     "CR03591311267614162945",
+     "CR04805464299893948417",
+     "CR05197985183596281857",
+     "CR05966387225494028289",
+     "CR10783076748833587201",
+     "CR10799565678038745089"
+    ],
+    "total": 36
    },
    "archivedFileCount": 29,
    "reportedLibraryCounts": {
@@ -95070,11 +95688,23 @@
      "classification": "evidencia atribuible"
     },
     "google": {
-     "status": "No comprobado",
-     "classification": "pendiente/no atribuible"
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
     }
    },
    "evidence": [
+    {
+     "externalId": "CR03591311267614162945",
+     "platform": "google",
+     "file": "/media/serpapi-google/salesdose/CR03591311267614162945.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR03591311267614162945?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
+    {
+     "externalId": "CR10799565678038745089",
+     "platform": "google",
+     "file": "/media/serpapi-google/salesdose/CR10799565678038745089.webp",
+     "sourceUrl": "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR10799565678038745089?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28"
+    },
     {
      "externalId": "1035389059096036",
      "platform": "meta",
@@ -95122,21 +95752,16 @@
      "platform": "meta",
      "file": "/media/salesdose-sc-meta-26750492611290313-image.jpg",
      "sourceUrl": "https://www.facebook.com/ads/library/?id=26750492611290313"
-    },
-    {
-     "externalId": "888905187175366",
-     "platform": "meta",
-     "file": "/media/salesdose-sc-meta-888905187175366-image.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=888905187175366"
-    },
-    {
-     "externalId": "925394066671340",
-     "platform": "meta",
-     "file": "/media/salesdose-sc-meta-925394066671340-image.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=925394066671340"
     }
    ],
    "sourceLinks": [
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR01656686473681829889?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR03591311267614162945?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR04805464299893948417?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR05197985183596281857?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR05966387225494028289?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR10783076748833587201?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
+    "https://adstransparency.google.com/advertiser/AR04503473028914479105/creative/CR10799565678038745089?domain=salesdose.io&end-date=2026-08-28&platform=SEARCH&region=ES&start-date=2026-02-28",
     "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=694759070379092",
     "https://www.facebook.com/ads/library/?id=1003723538960177",
     "https://www.facebook.com/ads/library/?id=1028893792886688",
@@ -98193,6 +98818,1147 @@
     "https://www.facebook.com/ads/library?id=1986814992027593",
     "https://www.facebook.com/ads/library?id=2311520259589014"
    ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "erik-pascual",
+   "name": "Erik Pascual",
+   "country": "Emiratos Árabes Unidos",
+   "domain": "https://erikpascual.com/",
+   "status": ">=10",
+   "availableEvidenceCount": 31,
+   "targetCount": 10,
+   "transcribedCanonicalCount": 31,
+   "verifiedTranscribedCount": 31,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 31,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:06e57a676c9a1524be738c7204bed2a96311ffde36dc2815c8ee621f313e71fe"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:09d7f5a8815c4304ab62ed8408ef6b7d2000938df5bb5aba62230af28c43a49e"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:1104e7d7a6aaccee406a1cbac519a98ae6ad93b731dfbf3e3ce729bf1e827aed"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:1abb3a26b0b2a4de62be516ec16169e4d45830185af4440446fb41a7777abeee"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:23150f177792394e4a322a75f37fa401425fc0bd6b903264711b2c8090ab4cc2"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:2659c17fad2edd2603c372b164a6fef4d391d12e921d894c791d348e015f5f1e"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:2681c2e8e1842d796e73d88295447121473ba8f5c74727b55a5099e4f8ef6e72"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:272a45f622cdcce7564e6fcb7e592d8f5477320a0c60b0f2bf75ea9c4fb97aed"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:503c0edb3d476b2fdf0c911116deca50b8a7da81d2b65b5961ba18f7ecde4302"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:514a55698ce65bc7c5eef677c8da4b28e4beb03f3589f957f54893304b6de4ab"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "doctor-reputacion-legal-eraser",
+   "name": "Doctor Reputación",
+   "country": "España",
+   "domain": "https://drreputacion.es/",
+   "status": ">=10",
+   "availableEvidenceCount": 10,
+   "targetCount": 10,
+   "transcribedCanonicalCount": 10,
+   "verifiedTranscribedCount": 10,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 10,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:13b831a8d889fd5b6085c5f3fa7e6a04a70452a75dea74ad1d30d39eca767399"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:191601250fb9e7ce2df7d321e2ed8b7efbd8acf4858ac6698202f4a9f2be0658"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:3df9363dcce8243f63f5b1eabd468419d5f2343543aab02f099ab24f5ae638d1"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:4e7bc56df02069d0f54d3565ce2896ed4dcda43ec7254746d9e5a54c8fa62cf1"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:57142c5d39e60a9937b65b04bc31e3374b459fdd64a476b5e19a3e58ebba21f5"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:6752ca070f97965e4ffcef57305a0e48d437ce627d8c5d859db0a23960f672ae"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:762dcc71402c117e7ca67b37f43e82c276b513f7b0e2ddddfb503d2d321d41c8"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:9baa72c0ed7529de7f91fccfd4a4e8bdd569d396d31ce7f1430adfc0c1867a7f"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:dfb700fb40cfd209f3dfc027de6eed9ba53d723c39188fb566aa8db65607f66e"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:f190ded142e4084b18aefb00fc6e7ce5fddc12a363f5678d503b5c65e05a3d93"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "realadvisor-sa",
+   "name": "RealAdvisor Pro",
+   "country": "Suiza",
+   "domain": "https://realadvisor.es/es/pro",
+   "status": "5-9",
+   "availableEvidenceCount": 6,
+   "targetCount": 6,
+   "transcribedCanonicalCount": 6,
+   "verifiedTranscribedCount": 6,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 6,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:8b6c2367331c83c6547227b3a5c0e8240fc6bc4868e4fb07bd5d528a69c982cb"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:9226d53720357d0aad2f4ca8269741944714dc5cd7d2412f6365ca5f965ab7eb"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:972ecf5f88314ca8cad5544868e46f1899b1f59cd485f9a2b626b53b0d23bf73"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:bd2215bfffb3104b4055888681604a0f57184e7e04c352703011c1420a291d69"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:cc28ee2a69ad3f7ae2d7e0ecddac0a262cadaaa2002135af335a0712a916ca77"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:da5d2816250449b13711873cc8e5aa8e9cd1de0bc23b9be89b0d0e0cdbbd6fd6"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "presupuestossolares-es-betterbusiness",
+   "name": "PresupuestosSolares.es / betterbusiness",
+   "country": "Alemania",
+   "domain": "https://instaladores.presupuestossolares.es/",
+   "status": "5-9",
+   "availableEvidenceCount": 5,
+   "targetCount": 5,
+   "transcribedCanonicalCount": 5,
+   "verifiedTranscribedCount": 5,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 5,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:3695b4684e8767a86bf2bf6b2e6aeffe34c032c2428bd6ca433b64f855f03486"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:4fa6b64788f730a7c855f603c2c4b5ca2ceffb84dc98574801810a7858ddf4d8"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:6d6833046bca2d0008bc1d067b7aff79652acaac334deb107bcee2c067fb673a"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:774492053db06062cf2ffbf9d06e95afaa7d0e74d190ded90581e369b591b5ad"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:b3bf5f9550747cf80d55af3b87f199d00300a2698970b4a73c3a83f4f8cbbd56"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "melendos-business",
+   "name": "Melendos Business",
+   "country": "España",
+   "domain": "https://www.melendos.es/",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 4,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:00083c273c4be12ee191f144e279d5e42e8c7529126896eeef98d7423f41f220"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:220367e77eb8496ce2ecb2706bb173ab1a3875961038bcc7d79833d38ffcf3e3"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:97a685540c547106567554b1443e37dd55023bc39bd4011d88141df6ff0af36b"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:f8b9ae27a999118b7ac8610ebbd41b7180268a3072bb6845ec0f7772b7ef9018"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "psychology-today-directory",
+   "name": "Psychology Today Directory",
+   "country": "Islas Caimán",
+   "domain": "https://join.psychologytoday.com/es/signup",
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 3,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 3,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:8275947ee828a8f3dac27d41b6bc3fab925844de8970b2118b40bceeba6b0aae"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:aee30f3fa3c564b62fbe4071149e77faaee6286593d88d473a8808a2780475c7"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:e58f0f6b88c3ab44162b59ae641cf9d674846619e6db9756275f3d2dec9380a5"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "publiactivos-comunicacion-marketing",
+   "name": "Publiactivos",
+   "country": "España",
+   "domain": "https://publiactivos.com/bases",
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 3,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 3,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:7873c2df61220fbfd0cc34debd9267c0db847822bcf3f25295b91fd9b0438cd8"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:a1e629263dbc4b11e037a421ceec3a2cad1bce640c5d7e7bb8ba3e94a46e2a0a"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:fdc62c169762fde29c34ac293dea78b86927931d6a4e19ad5cc3e48c6594c349"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "next-conversion-adsl-house",
+   "name": "Next Conversion",
+   "country": "España",
+   "domain": "https://nextconversion.es/",
+   "status": "1-4",
+   "availableEvidenceCount": 2,
+   "targetCount": 2,
+   "transcribedCanonicalCount": 2,
+   "verifiedTranscribedCount": 2,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 2,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:479996bd8318cb15f03c0cd80460803917be19755cdc3c390e5d89ab7c4345c5"
+    },
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:e1df7858a068f1883bc0f6dcb601bcd47128f013e4ed8db96a22fc8b7bcfc907"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "stk-atencion-de-llamadas",
+   "name": "STK Atención de Llamadas",
+   "country": "España",
+   "domain": "https://www.atenciondellamadas.net/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:ae35d39c66ab9167489f2e4dc0d36b6b9a91ef4949cf2261a338702c02ed701b"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "ddigitals",
+   "name": "DDigitals",
+   "country": "España",
+   "domain": "https://ddigitals.net/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:a44f879ce872f31c62a658d091f79f6d7f6249a2a6b15d0c6e647d95635a24f6"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "grupo-solnet",
+   "name": "GrupoSolnet",
+   "country": "España",
+   "domain": "https://gruposolnet.com/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:3f982cacb3df6bde299625b975a8f71bd1fecc9f8dcfcb68a9d16dc885efd0ac"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "leadflow-espana",
+   "name": "LeadFlow España",
+   "country": "España",
+   "domain": "https://lead-flow.es/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:96e9537a9b3e49e4461095241de17366a4164c8ea83c467eeeb5aa0319d1ecc2"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "leads-juridicos-digital",
+   "name": "Leads Jurídicos Digital",
+   "country": "España",
+   "domain": "https://leadsjuridicos.com/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:643424603ea296b9b733c620bd08763f4442fcaca5675626543880c11b78255e"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "maline-inmobiliaria",
+   "name": "Maline Inmobiliaria",
+   "country": "Francia",
+   "domain": "https://maline.io/es/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:fc7b5144ce52125723965bd5d5ffa08ce9540da520967f23052c39a47eee7128"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "taskus-sales-as-a-service",
+   "name": "TaskUs Sales as a Service",
+   "country": "Estados Unidos",
+   "domain": "https://www.taskus.com/services/sales-as-a-service/supercharge-your-growth-with-sales-as-a-service-expertise/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 1,
+   "transcriptionGap": 1,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:37bfaed4f2b4aff6ca0b79fa0aff414ce64f163595ee43f01820a0e5bdeacc4c"
+    }
+   ],
+   "sourceLinks": [],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "tecnofind",
+   "name": "Tecnofind",
+   "country": "España",
+   "domain": "https://www.tecnofind.es/",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 0,
+    "google": 1,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [],
+    "google": [],
+    "total": 0
+   },
+   "archivedFileCount": 0,
+   "reportedLibraryCounts": {
+    "meta": 0,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    },
+    "google": {
+     "status": "Activo observado en Google Search",
+     "classification": "evidencia atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": null,
+     "platform": "google",
+     "file": null,
+     "sourceUrl": null,
+     "transcriptSignature": "text:b9be2d4b39b5760c19804a30cffb91aaa6d1d1b876c0905e48c4dd98c43526a2"
+    }
+   ],
+   "sourceLinks": [],
    "observedAliases": [],
    "detailAvailable": true
   }

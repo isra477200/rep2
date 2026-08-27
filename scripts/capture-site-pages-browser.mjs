@@ -1,6 +1,10 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, rename, stat, writeFile } from "node:fs/promises";
+import { createRequire } from "node:module";
 import { dirname, join, resolve } from "node:path";
+
+const require = createRequire(import.meta.url);
+const sharp = require("sharp");
 
 const IMAGE_FORMATS = {
   jpeg: { format: "jpeg", extension: "jpg", type: "image/jpeg" },
@@ -239,8 +243,8 @@ function blockedReason(title, text, url) {
   const haystack = `${title} ${text.slice(0, 2_000)} ${url}`;
   if (/captcha|verify you are human|verifica que eres humano|vérifiez que vous êtes humain/i.test(haystack)) return "captcha";
   if (/access denied|forbidden|error 403|bloqueado|blocked|un moment|just a moment/i.test(haystack)) return "blocked";
-  if (/404|page not found|página no encontrada|page introuvable/i.test(haystack)) return "not_found";
-  if (/500|internal server error|service unavailable/i.test(haystack)) return "server_error";
+  if (/(?:error|erreur)\s*404|404\s*(?:error|erreur)|page not found|página no encontrada|page introuvable/i.test(haystack)) return "not_found";
+  if (/(?:error|erreur)\s*(?:500|502|503|504)|(?:500|502|503|504)\s*(?:error|erreur)|internal server error|service unavailable/i.test(haystack)) return "server_error";
   return null;
 }
 
@@ -273,6 +277,51 @@ async function saveCapture(bytes, rootDir, record, pageRow) {
   };
 }
 
+async function captureLongPageFromViewports(tab, geometry) {
+  const viewportHeight = Math.max(1, Math.round(Number(geometry.viewportHeight) || 0));
+  const documentHeight = Math.max(viewportHeight, Math.round(Number(geometry.height) || viewportHeight));
+  if (!viewportHeight) throw new Error("El navegador no informó del alto de la ventana.");
+
+  const positions = [];
+  for (let top = 0; top < documentHeight; top += viewportHeight) positions.push(top);
+  const finalTop = Math.max(0, documentHeight - viewportHeight);
+  if (positions.at(-1) !== finalTop) positions.push(finalTop);
+
+  const segments = [];
+  for (const requestedTop of [...new Set(positions)]) {
+    const actualTop = await tab.playwright.evaluate(({ top }) => {
+      window.scrollTo({ top, behavior: "auto" });
+      return Math.max(0, Math.round(window.scrollY || document.documentElement?.scrollTop || 0));
+    }, { top: requestedTop }, { timeoutMs: 4_000 });
+    await tab.playwright.waitForTimeout(120);
+    const bytes = Buffer.from(await tab.screenshot({ fullPage: false }));
+    const metadata = await sharp(bytes).metadata();
+    if (!metadata.width || !metadata.height) throw new Error("Un tramo de la captura no tiene dimensiones válidas.");
+    segments.push({ top: actualTop, bytes, width: metadata.width, height: metadata.height });
+  }
+  await tab.playwright.evaluate(() => window.scrollTo({ top: 0, behavior: "auto" }), undefined, { timeoutMs: 4_000 });
+
+  if (!segments.length) throw new Error("El navegador no devolvió ningún tramo de la página.");
+  const width = Math.min(...segments.map((segment) => segment.width));
+  const height = Math.max(1, Math.min(documentHeight, Math.max(...segments.map((segment) => segment.top + segment.height))));
+  const layers = [];
+  for (const segment of segments) {
+    const layerHeight = Math.min(segment.height, height - segment.top);
+    if (layerHeight <= 0) continue;
+    const input = await sharp(segment.bytes)
+      .extract({ left: 0, top: 0, width, height: layerHeight })
+      .jpeg({ quality: 84, mozjpeg: true })
+      .toBuffer();
+    layers.push({ input, left: 0, top: segment.top });
+  }
+  return sharp({
+    create: { width, height, channels: 3, background: "#ffffff" },
+  })
+    .composite(layers)
+    .jpeg({ quality: 84, mozjpeg: true })
+    .toBuffer();
+}
+
 async function capturePage(tab, rootDir, record, pageRow) {
   const requestedUrl = safePublicUrl(pageRow.requestedUrl);
   if (!requestedUrl) {
@@ -287,7 +336,43 @@ async function capturePage(tab, rootDir, record, pageRow) {
     const [finalUrlRaw, title] = await Promise.all([tab.url(), tab.title()]);
     const finalUrl = safePublicUrl(finalUrlRaw) || requestedUrl;
     const issue = blockedReason(title || "", text.visibleText || "", finalUrl);
-    const bytes = await tab.screenshot({ fullPage: true });
+    let bytes;
+    let captureMethod = "native_full_page";
+    let nativeCaptureIssue = null;
+    try {
+      bytes = await tab.screenshot({ fullPage: true });
+    } catch (error) {
+      nativeCaptureIssue = clean(error?.message || error).slice(0, 300) || "La captura nativa completa falló.";
+      captureMethod = "stitched_viewports";
+      try {
+        bytes = await captureLongPageFromViewports(tab, geometry);
+      } catch (fallbackError) {
+        return {
+          ...pageRow,
+          requestedUrl,
+          finalUrl,
+          title: clean(title) || text.h1 || pageRow.label || null,
+          status: "failed",
+          issue: clean(fallbackError?.message || fallbackError).slice(0, 600) || "No se pudo guardar la captura.",
+          nativeCaptureIssue,
+          capturedAt: new Date().toISOString(),
+          fullPage: false,
+          captureMethod: "text_only_after_image_failure",
+          viewport: { width: geometry.viewportWidth, height: geometry.viewportHeight },
+          document: { width: geometry.width, height: geometry.height },
+          cookieAction,
+          image: null,
+          thumbnail: null,
+          text: {
+            language: text.language,
+            h1: text.h1,
+            headings: text.headings,
+            ctas: text.ctas,
+            excerpt: text.excerpt || null,
+          },
+        };
+      }
+    }
     const saved = await saveCapture(bytes, rootDir, record, pageRow);
     return {
       ...pageRow,
@@ -298,6 +383,8 @@ async function capturePage(tab, rootDir, record, pageRow) {
       issue,
       capturedAt: new Date().toISOString(),
       fullPage: true,
+      captureMethod,
+      nativeCaptureIssue,
       viewport: { width: geometry.viewportWidth, height: geometry.viewportHeight },
       document: { width: geometry.width, height: geometry.height },
       cookieAction,

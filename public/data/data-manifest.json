@@ -1,10 +1,10 @@
 {
  "schema": "redvitalia-data-manifest-v1",
  "generatedAt": "2026-08-27",
- "revision": "4fc6f6875d49353c",
+ "revision": "e07a77997bd1eba6",
  "universe": {
-  "companies": 1075,
-  "representedPrimaryMarkets": 130,
+  "companies": 1091,
+  "representedPrimaryMarkets": 131,
   "territorialAtlasStates": 195,
   "media": 5206
  },
@@ -16,32 +16,32 @@
   "status": "TERMINADO"
  },
  "visualIdentitySnapshot": {
-  "entries": 1075,
-  "authentic": 903
+  "entries": 1091,
+  "authentic": 917
  },
  "advertising": {
-  "companiesWithEvidence": 289,
-  "companiesPendingDiscovery": 770,
-  "exactCreativeIds": 5932,
-  "attributableEvidenceSample": 2297,
-  "searchableTranscriptions": 4560,
-  "verifiedTranscriptions": 3067,
-  "patternReady": 3110,
-  "searchablePieces": 4689,
-  "representedAdvertisers": 302,
-  "exactAssetsAudited": 2014,
-  "exactAssetsWithUsableText": 1978,
+  "companiesWithEvidence": 311,
+  "companiesPendingDiscovery": 764,
+  "exactCreativeIds": 5977,
+  "attributableEvidenceSample": 2372,
+  "searchableTranscriptions": 4975,
+  "verifiedTranscriptions": 3447,
+  "patternReady": 3504,
+  "searchablePieces": 5168,
+  "representedAdvertisers": 324,
+  "exactAssetsAudited": 2049,
+  "exactAssetsWithUsableText": 2013,
   "exactAssetsWithoutLegibleText": 36,
   "translationsAvailable": 482,
   "translationsRejectedQa": 141,
-  "translationsPending": 5,
-  "translationsRequiresReview": 475,
+  "translationsPending": 9,
+  "translationsRequiresReview": 479,
   "translationsUnavailable": 0,
-  "textAvailabilityGap": 219,
-  "verifiedTranscriptionGap": 1067
+  "textAvailabilityGap": 213,
+  "verifiedTranscriptionGap": 1048
  },
  "scopeNotes": [
-  "El universo actual tiene 1075 fichas; el snapshot profundo conserva 712.",
+  "El universo actual tiene 1091 fichas; el snapshot profundo conserva 712.",
   "Los 195 elementos territoriales son Estados del atlas, no mercados primarios con empresa.",
   "Una transcripción OCR es buscable, pero no verificada ni apta para patrones hasta revisión humana.",
   "Una creatividad sin texto legible se conserva como evidencia visual, pero no cuenta como transcripción.",

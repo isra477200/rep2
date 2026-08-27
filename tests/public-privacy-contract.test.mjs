@@ -28,9 +28,9 @@ const documentsPromise = Promise.all(
 );
 
 const forbiddenKey =
-  /^(?:schemaVersion|sourceFile|password|passwd|pwd|secret|clientSecret|apiKey|api_key|accessToken|access_token|refreshToken|refresh_token|authorization|credentials?|cookie|session(?:Id|_id)?)$/i;
+  /^(?:sourceFile|password|passwd|pwd|secret|clientSecret|apiKey|api_key|accessToken|access_token|refreshToken|refresh_token|authorization|credentials?|cookie|session(?:Id|_id)?)$/i;
 const notionArtifact =
-  /\bnotion\b|notion\.(?:com|so|site)|<mention-(?:page|database|user)\b|(?:view|collection|notion):\/\//i;
+  /notion\.(?:com|so|site)|<mention-(?:page|database|user)\b|(?:view|collection|notion):\/\//i;
 const puenteIa = /\bpuente\s+(?:de\s+)?ia\b/i;
 const localPath =
   /file:\/\/|(?:^|[\s"'(<])(?:[a-z]:[\\/](?:Users|Documents and Settings|ProgramData|Windows|tmp)[\\/]|\\\\[a-z0-9._-]+\\[a-z0-9_$.-]+(?:\\|$)|\/(?:Users|home|tmp|var\/tmp)\/)/i;

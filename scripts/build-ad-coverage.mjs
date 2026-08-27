@@ -99,6 +99,8 @@ const mediaJoin = {
   sourceMediaAvailable: false,
   versionedIdentityAvailable: false,
   versionedIdentityRows: 0,
+  serpApiMediaAvailable: false,
+  serpApiRows: 0,
   sourceRows: 0,
   idBearingRows: 0,
   uniqueExternalIdsIdentified: 0,
@@ -240,6 +242,62 @@ if (
 
   const selectedMedia = [...mediaEvidenceByCompany.values()].flatMap((bucket) => [...bucket.values()]);
   mediaJoin.uniqueExternalIdsIdentified = sourceExternalEvidenceKeys.size;
+  mediaJoin.uniqueExternalIdsWithPublicFile = selectedMedia.length;
+  mediaJoin.variantFilesCollapsed = selectedMedia.reduce(
+    (sum, evidence) => sum + Math.max(0, evidence.variantCount - 1),
+    0,
+  );
+}
+
+const serpApiMediaPath = resolve(root, "public/data/serpapi-media-index.json");
+if (existsSync(serpApiMediaPath)) {
+  const serpApiMedia = JSON.parse(readFileSync(serpApiMediaPath, "utf8"));
+  if (serpApiMedia.schema !== "redvitalia-serpapi-media-index-v1") {
+    throw new Error("build-ad-coverage: esquema SerpAPI de medios inválido");
+  }
+  const downloaded = Object.values(serpApiMedia.items || {})
+    .filter((item) => item.status === "downloaded" && item.file);
+  mediaJoin.serpApiMediaAvailable = downloaded.length > 0;
+  mediaJoin.serpApiRows = downloaded.length;
+  mediaJoin.sourceRows += downloaded.length;
+  for (const item of downloaded) {
+    if (!companyIds.has(item.companyId)) {
+      throw new Error(`build-ad-coverage: medio SerpAPI apunta a ficha inexistente ${item.companyId}`);
+    }
+    const externalId = String(item.creativeId || "").toUpperCase();
+    if (!/^CR\d{10,}$/.test(externalId)) {
+      throw new Error(`build-ad-coverage: Creative ID SerpAPI inválido ${externalId}`);
+    }
+    const publicFile = String(item.file || "");
+    const absolutePublicFile = resolve(root, "public", publicFile.replace(/^\/+/, ""));
+    if (!publicFile.startsWith("/media/") || !existsSync(absolutePublicFile)) {
+      throw new Error(`build-ad-coverage: preview SerpAPI inexistente ${publicFile}`);
+    }
+    const bytes = statSync(absolutePublicFile).size;
+    if (Number(item.bytes || 0) > 0 && Number(item.bytes) !== bytes) {
+      throw new Error(`build-ad-coverage: tamaño SerpAPI incoherente ${publicFile}`);
+    }
+    const key = `google:${externalId}`;
+    const bucket = mediaEvidenceByCompany.get(item.companyId) || new Map();
+    bucket.set(key, {
+      platform: "google",
+      externalId,
+      file: publicFile,
+      bytes,
+      order: Number(item.selectionRank || 0),
+      variantCount: 1,
+      sourceUrl: item.sourceUrl || null,
+    });
+    mediaEvidenceByCompany.set(item.companyId, bucket);
+    sourceExternalEvidenceKeys.add(`${item.companyId}:${key}`);
+  }
+  const selectedMedia = [...mediaEvidenceByCompany.values()]
+    .flatMap((bucket) => [...bucket.values()]);
+  mediaJoin.sourceMediaAvailable ||= downloaded.length > 0;
+  mediaJoin.idBearingRows = sourceExternalEvidenceKeys.size;
+  mediaJoin.uniqueExternalIdsIdentified = sourceExternalEvidenceKeys.size;
+  mediaJoin.mappedToCompanyAndOrder = selectedMedia.length;
+  mediaJoin.validPublicFiles = selectedMedia.length;
   mediaJoin.uniqueExternalIdsWithPublicFile = selectedMedia.length;
   mediaJoin.variantFilesCollapsed = selectedMedia.reduce(
     (sum, evidence) => sum + Math.max(0, evidence.variantCount - 1),
@@ -724,7 +782,7 @@ const creativeFiles = [...mediaEvidenceByCompany.entries()]
       platform: media.platform,
       file: media.file,
       sourceUrl:
-        detailsById.get(companyId)?.sourceUrlByExternalId.get(
+        media.sourceUrl || detailsById.get(companyId)?.sourceUrlByExternalId.get(
           `${media.platform}:${media.externalId}`,
         ) || (media.platform === "meta" ? exactMetaUrl(media.externalId) : null),
       variantCount: media.variantCount,

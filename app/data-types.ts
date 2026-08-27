@@ -67,6 +67,18 @@ export type Company = {
   metaAds: number;
   googleStatus: string;
   googleAds: number;
+  /** Observaciones separadas de Google Search Ads; no alteran el recuento histórico de Transparency. */
+  googleSearchAdsObserved?: number;
+  googleSearchObservations?: number;
+  googleSearchQueries?: number;
+  googleSearchQueryTerms?: string[];
+  googleSearchLocations?: string[];
+  googleSearchDevices?: string[];
+  googleSearchLastObservedAt?: string | null;
+  googleAdvertiserIds?: string[];
+  googleSearchLandingUrls?: string[];
+  serpApiReviewedAt?: string | null;
+  serpApiManaged?: boolean;
   creativeArchive: number;
   score: number;
   threat: string;
@@ -292,6 +304,10 @@ export type AnuncioReal = {
   fecha?: string;
   /** ID exacto de la creatividad en la biblioteca de origen, cuando existe. */
   externalId?: string | null;
+  /** Identidades de observación propias del corte SerpAPI; no sustituyen a un Creative ID oficial. */
+  observationId?: string | null;
+  creativeKey?: string | null;
+  advertiserId?: string | null;
   /** URL directa o pública usada para verificar la pieza. */
   fuenteUrl?: string | null;
   /** Procedencia de la evidencia: biblioteca, archivo, captura manual, etc. */
@@ -324,6 +340,29 @@ export type AnuncioReal = {
   pageId?: string | null;
   /** Destino comercial observado en la creatividad. */
   landingUrl?: string | null;
+  /** Contexto agregado de las subastas de Google en las que se observó la pieza. */
+  observationCount?: number;
+  queryCount?: number;
+  observedQueries?: string[];
+  observedLocations?: string[];
+  observedDevices?: string[];
+  bestObservedPosition?: number | null;
+  firstObservedAt?: string | number | null;
+  lastObservedAt?: string | number | null;
+  observations?: Array<{
+    observationId?: string | null;
+    requestId?: string | null;
+    searchId?: string | null;
+    query?: string | null;
+    segment?: string | null;
+    location?: string | null;
+    device?: string | null;
+    language?: string | null;
+    position?: number | null;
+    blockPosition?: string | null;
+    observedAt?: string | null;
+    googleUrl?: string | null;
+  }>;
   /** Estado observado en la biblioteca; `null` significa que no se pudo determinar. */
   isActive?: boolean | null;
   /** Fechas originales de entrega. Admiten ISO o epoch para conservar la fuente sin pérdida. */
@@ -367,7 +406,7 @@ export type AnuncioReal = {
   revisadoPorTraduccion?: string;
   notaRevisionTraduccion?: string;
   /** Estado exhaustivo del OCR para la creatividad archivada. */
-  estadoOcr?: "no_necesario" | "completo_alta" | "completo_media" | "completo_baja" | "sin_texto" | "fallido" | "pendiente";
+  estadoOcr?: "no_necesario" | "completo_alta" | "completo_media" | "completo_baja" | "sin_texto" | "fallido" | "pendiente" | "no_disponible";
   confianzaOcr?: number | null;
   intentosOcr?: number;
   motorOcr?: string | null;

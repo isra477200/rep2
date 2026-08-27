@@ -8,12 +8,22 @@
  * Uso: node scripts/prepare-ad-ocr-source.mjs C:/carpeta/con/ocr
  */
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, extname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const sourceDir = resolve(process.argv[2] || resolve(root, "work"));
+const args = process.argv.slice(2);
+const valueAfter = (name, fallback = null) => {
+  const index = args.indexOf(name);
+  return index >= 0 && args[index + 1] ? args[index + 1] : fallback;
+};
+const positionalSource = args.find((value, index) =>
+  !value.startsWith("--") && args[index - 1] !== "--baseline-ref",
+);
+const sourceDir = resolve(positionalSource || resolve(root, "work"));
+const baselineRef = valueAfter("--baseline-ref");
 const transcriptPath = resolve(root, "public/data/ad-ocr-transcripts.json");
 const auditPath = resolve(root, "public/data/ad-ocr-audit.json");
 if (!existsSync(sourceDir)) throw new Error(`No existe la carpeta OCR: ${sourceDir}`);
@@ -231,7 +241,7 @@ for (const item of nonOcrCorpus) {
   }
 }
 
-const auditItems = identities.map((identity) => {
+let auditItems = identities.map((identity) => {
   const key = identityKey(identity);
   const strong = strongByIdentity.get(key) || strongByFile.get(identity.file);
   const candidate = candidateByIdentity.get(key) || candidateByFile.get(identity.file);
@@ -299,7 +309,7 @@ const transcriptCandidates = [
       left.companyId.localeCompare(right.companyId, "es") ||
       left.file.localeCompare(right.file, "es"),
   );
-const transcriptItems = transcriptCandidates.map((candidate) => {
+let transcriptItems = transcriptCandidates.map((candidate) => {
   const audit = candidate.externalId
     ? auditItems.find(
         (item) =>
@@ -342,6 +352,70 @@ const transcriptItems = transcriptCandidates.map((candidate) => {
     aptaPatrones: false,
   };
 });
+
+if (baselineRef) {
+  const fromGit = (relativePath) => JSON.parse(execFileSync(
+    "git",
+    ["show", `${baselineRef}:${relativePath}`],
+    { cwd: root, encoding: "utf8", maxBuffer: 32 * 1024 * 1024 },
+  ));
+  const baselineAudit = fromGit("public/data/ad-ocr-audit.json");
+  const baselineTranscripts = fromGit("public/data/ad-ocr-transcripts.json");
+  const baselineAuditByIdentity = new Map(
+    (baselineAudit.items || []).map((item) => [identityKey(item), item]),
+  );
+  auditItems = auditItems.map((item) => {
+    const baseline = baselineAuditByIdentity.get(identityKey(item));
+    if (
+      !baseline ||
+      baseline.estadoOcr === "pendiente" ||
+      baseline.file !== item.file ||
+      baseline.archivoSha256 !== item.archivoSha256
+    ) return item;
+    const baselineIsBetter =
+      ["pendiente", "fallido", "sin_texto"].includes(item.estadoOcr) &&
+      !["pendiente", "fallido", "sin_texto"].includes(baseline.estadoOcr);
+    if (!baselineIsBetter) return item;
+    return {
+      ...baseline,
+      companyId: item.companyId,
+      platform: item.platform,
+      externalId: item.externalId,
+      file: item.file,
+      variantCount: item.variantCount,
+      country: item.country,
+      mediaType: item.mediaType,
+      archivoSha256: item.archivoSha256,
+    };
+  });
+
+  const identityByKey = new Map(identities.map((item) => [identityKey(item), item]));
+  const transcriptKey = (item) => item.externalId
+    ? `${item.id}:${item.platformFamily}:${item.externalId}`
+    : `file:${item.file}`;
+  const merged = new Map();
+  for (const item of baselineTranscripts.items || []) {
+    if (!item.externalId) {
+      const diskPath = resolve(root, "public", String(item.file || "").replace(/^\/+/, ""));
+      if (companyById.has(item.id) && item.file && existsSync(diskPath)) {
+        merged.set(transcriptKey(item), item);
+      }
+      continue;
+    }
+    const identity = item.externalId
+      ? identityByKey.get(`${item.id}:${item.platformFamily}:${item.externalId}`)
+      : null;
+    if (!identity) continue;
+    merged.set(transcriptKey(item), item);
+  }
+  for (const item of transcriptItems) merged.set(transcriptKey(item), item);
+  transcriptItems = [...merged.values()].sort(
+    (left, right) =>
+      left.id.localeCompare(right.id, "es") ||
+      left.file.localeCompare(right.file, "es"),
+  );
+  sourceFiles.push(`git:${baselineRef}`);
+}
 
 const statusCounts = auditItems.reduce((counts, item) => {
   counts[item.estadoOcr] = (counts[item.estadoOcr] || 0) + 1;

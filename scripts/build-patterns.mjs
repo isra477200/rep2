@@ -5,7 +5,7 @@
  * Cruza toda la base canónica (companies-index.json) buscando qué hacen
  * distinto las fichas con señales de éxito. Señales usadas (todas públicas):
  *   - score >= 80 (puntuación estratégica del catálogo)
- *   - anuncios activos verificados (metaAds > 0 o googleAds > 0)
+ *   - anuncios verificados o presencia observada en Google Search
  * Nada se inventa: cada cifra sale de contar la base y cada lectura se genera
  * a partir de los números calculados.
  *
@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const companies = JSON.parse(readFileSync(resolve(root, "public/data/companies-index.json"), "utf8"));
-const OBSERVED_AT = "23/08/2026";
+const OBSERVED_AT = "27/08/2026";
 
 const text = (c) => `${c.offer || ""} ${c.priceLocal || ""} ${c.ticket || ""} ${c.guarantee || ""} ${c.contract || ""}`.toLowerCase();
 const median = (arr) => {
@@ -41,7 +41,14 @@ const classify = (c) => {
   return "no-clasificable";
 };
 
-const adsActive = (c) => (c.metaAds || 0) > 0 || (c.googleAds || 0) > 0;
+const adsActive = (c) =>
+  (c.metaAds || 0) > 0 ||
+  (c.googleAds || 0) > 0 ||
+  (c.googleSearchAdsObserved || 0) > 0;
+const adEvidenceScore = (c) =>
+  Number(c.metaAds || 0) +
+  Number(c.googleAds || 0) +
+  (Number(c.googleSearchAdsObserved || 0) > 0 ? 1 : 0);
 const hasPrice = (c) => c.price && typeof c.price.eur === "number" && c.price.eur > 0;
 const hasGuarantee = (c) => (c.guarantee || "").trim().length > 25 && !/no (documentada|publicada|localizada)/i.test(c.guarantee || "");
 const multiMarket = (c) => (c.countries || []).length > 1 || (c.markets || []).some((m) => /global|internacional|europa|latam/i.test(m));
@@ -107,9 +114,19 @@ const winnerChannels = channelCount(winners)
 /* ---------- Ganadores con anuncios activos: los validados dos veces ---------- */
 const doubleValidated = companies
   .filter((c) => c.score >= 80 && adsActive(c))
-  .sort((a, b) => (b.metaAds + b.googleAds) - (a.metaAds + a.googleAds))
+  .sort((a, b) => adEvidenceScore(b) - adEvidenceScore(a))
   .slice(0, 12)
-  .map((c) => ({ id: c.id, name: c.name, country: c.primaryCountry, score: c.score, metaAds: c.metaAds, googleAds: c.googleAds, agencyType: c.agencyType }));
+  .map((c) => ({
+    id: c.id,
+    name: c.name,
+    country: c.primaryCountry,
+    score: c.score,
+    metaAds: c.metaAds,
+    googleAds: c.googleAds,
+    googleSearchObserved: Number(c.googleSearchAdsObserved || 0) > 0,
+    googleSearchAdsObserved: Number(c.googleSearchAdsObserved || 0),
+    agencyType: c.agencyType,
+  }));
 
 /* ---------- Lecturas generadas desde los números ---------- */
 const findings = [];
@@ -131,7 +148,7 @@ if (diff(winnersProfile.adsActivePct, restProfile.adsActivePct) >= 10)
   findings.push({
     title: "Los mejores invierten en su propia captación",
     stat: `${winnersProfile.adsActivePct}% vs ${restProfile.adsActivePct}%`,
-    detail: `El ${winnersProfile.adsActivePct}% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al ${restProfile.adsActivePct}% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola.`,
+    detail: `El ${winnersProfile.adsActivePct}% de los ganadores tiene actividad publicitaria verificada u observada (Meta o Google), frente al ${restProfile.adsActivePct}% del resto. Es una señal de uso del canal, no una prueba de rentabilidad.`,
   });
 if (diff(winnersProfile.multiMarketPct, restProfile.multiMarketPct) >= 10)
   findings.push({
@@ -164,7 +181,7 @@ if (winnerChannels.length >= 2)
 findings.push({
   title: "Anuncios activos: la prueba de vida del mercado",
   stat: `${withAds.length} de ${companies.length}`,
-  detail: `${withAds.length} fichas (${pct(withAds.length, companies.length)}%) mantienen anuncios verificados en Meta o Google. Su puntuación media es ${Math.round(withAds.reduce((s, c) => s + c.score, 0) / (withAds.length || 1))} frente a ${Math.round(companies.filter((c) => !adsActive(c)).reduce((s, c) => s + c.score, 0) / (companies.length - withAds.length || 1))} de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar.`,
+  detail: `${withAds.length} fichas (${pct(withAds.length, companies.length)}%) tienen actividad verificada u observada en Meta o Google. Su puntuación media es ${Math.round(withAds.reduce((s, c) => s + c.score, 0) / (withAds.length || 1))} frente a ${Math.round(companies.filter((c) => !adsActive(c)).reduce((s, c) => s + c.score, 0) / (companies.length - withAds.length || 1))} de las que no. La actividad ayuda a priorizar qué estudiar; no demuestra gasto, estabilidad, conversiones ni rentabilidad.`,
 });
 
 const patterns = {

@@ -31,6 +31,9 @@ const scrapeCreatorsMapPath = resolve(root, "scripts/data/scrapecreators-company
 const scrapeCreatorsMediaPath = resolve(root, "public/data/scrapecreators-media-index.json");
 const leadMarketPath = resolve(root, "db/leads-market-spain-2026-08-26.json");
 const leadMarketReviewPath = resolve(root, "scripts/data/leads-market-company-review.json");
+const serpApiPath = resolve(root, "db/serpapi-google-ads-spain-2026-08-27.json");
+const serpApiReviewPath = resolve(root, "scripts/data/serpapi-company-map.json");
+const serpApiMediaPath = resolve(root, "public/data/serpapi-media-index.json");
 const TRANSLATION_RECIPE_VERSION = "rv-mt-es-v22";
 const TRANSLATABLE_LANGUAGES = new Set([
   "en", "fr", "de", "it", "ru", "pt", "tr", "ar", "ja", "zh", "ko", "he",
@@ -84,6 +87,15 @@ const leadMarketData = existsSync(leadMarketPath)
 const leadMarketReview = existsSync(leadMarketReviewPath)
   ? JSON.parse(readFileSync(leadMarketReviewPath, "utf8"))
   : { pageIds: {} };
+const serpApiData = existsSync(serpApiPath)
+  ? JSON.parse(readFileSync(serpApiPath, "utf8"))
+  : { items: [], creativeDetails: [] };
+const serpApiReview = existsSync(serpApiReviewPath)
+  ? JSON.parse(readFileSync(serpApiReviewPath, "utf8"))
+  : { domains: {}, advertiserIds: {} };
+const serpApiMedia = existsSync(serpApiMediaPath)
+  ? JSON.parse(readFileSync(serpApiMediaPath, "utf8"))
+  : { items: {} };
 
 const normalizeText = (value) =>
   String(value || "")
@@ -585,6 +597,245 @@ for (const source of structuredSources) for (const ad of source.items) {
   });
 }
 
+// SerpAPI aporta dos evidencias distintas que no deben confundirse:
+//  - anuncios observados en una subasta real (sin Creative ID oficial);
+//  - detalles del Centro de Transparencia (con advertiser_id + CR...).
+// El dominio solo se publica después de una asociación editorial explícita.
+const reviewedSerpCompany = (domain, advertiserId = "") => {
+  const rawAdvertiserMapping = advertiserId
+    ? serpApiReview.advertiserIds?.[String(advertiserId)]
+    : null;
+  const advertiserCompanyId = typeof rawAdvertiserMapping === "string"
+    ? rawAdvertiserMapping
+    : rawAdvertiserMapping?.companyId;
+  const domainMapping = serpApiReview.domains?.[String(domain || "").toLocaleLowerCase("en")];
+  if (domainMapping && !["matched", "new"].includes(domainMapping.status)) return null;
+  if (
+    advertiserCompanyId &&
+    domainMapping?.companyId &&
+    domainMapping.companyId !== advertiserCompanyId
+  ) {
+    throw new Error(
+      `Conflicto editorial SerpAPI: ${advertiserId} apunta a ${advertiserCompanyId}, `
+      + `pero ${domain} apunta a ${domainMapping.companyId}`,
+    );
+  }
+  const advertiserAuthorized = advertiserCompanyId
+    ? Object.values(serpApiReview.domains || {}).some((candidate) =>
+      ["matched", "new"].includes(candidate.status) &&
+      candidate.companyId === advertiserCompanyId,
+    )
+    : false;
+  const mapping = advertiserCompanyId
+    ? (advertiserAuthorized
+      ? (
+      domainMapping?.companyId === advertiserCompanyId
+        ? domainMapping
+        : {
+          status: "matched",
+          companyId: advertiserCompanyId,
+          confidence: "high",
+          note: "Asociación editorial por Google advertiser ID.",
+        }
+      )
+      : null)
+    : domainMapping;
+  if (
+    !mapping ||
+    !["matched", "new"].includes(mapping.status) ||
+    !companyById.has(mapping.companyId)
+  ) return null;
+  return mapping;
+};
+
+const serpApiAds = [];
+for (const ad of serpApiData.items || []) {
+  const domain = String(ad.advertiser?.domain || ad.landing?.domain || "").toLocaleLowerCase("en");
+  const mapping = reviewedSerpCompany(domain);
+  if (!mapping) continue;
+  const company = companyById.get(mapping.companyId);
+  const title = String(ad.copy?.title || "");
+  const description = String(ad.copy?.description || "");
+  const cta = ctaFrom(`${title}\n${description}\n${(ad.copy?.extensions || []).join("\n")}`);
+  const copy = `${title}\n${description}\n${cta}`;
+  const sourceUrl = String(ad.observations?.[0]?.googleUrl || "");
+  serpApiAds.push({
+    file: "",
+    id: mapping.companyId,
+    name: company.name,
+    plataforma: "Google Search Ads · subasta observada",
+    platformFamily: "google",
+    titular: title,
+    texto: description,
+    descripcion: description,
+    cta,
+    sourceCopy: {
+      title,
+      text: description,
+      description,
+      cta,
+    },
+    precioVisible: priceFrom(copy),
+    angulo: angleFrom(copy),
+    capturaEnVivo: true,
+    fecha: String(ad.lastObservedAt || "").slice(0, 10),
+    origen: "api_serpapi_google_search",
+    transcripcion: "Copy estructurado observado en una página de resultados patrocinados de Google",
+    estadoEvidencia: "Google Search Ads · subasta, consulta, ubicación, dispositivo y posición conservados",
+    atribucion: "propia_confirmada_por_dominio_y_revision",
+    aptaPatrones: Boolean(isHighConfidenceMatch(mapping.confidence) && isUseful(copy)),
+    estadoOcr: "no_necesario",
+    externalId: null,
+    observationId: String(ad.observationId || "") || null,
+    creativeKey: String(ad.creativeKey || ""),
+    fuenteUrl: sourceUrl,
+    sourceUrl,
+    anunciante: String(ad.advertiser?.observedName || company.name),
+    landingUrl: String(ad.landing?.url || "") || null,
+    observationCount: Number(ad.observationCount || 0),
+    queryCount: Number(ad.queryCount || 0),
+    observedQueries: Array.isArray(ad.queries) ? [...ad.queries] : [],
+    observedLocations: Array.isArray(ad.locations) ? [...ad.locations] : [],
+    observedDevices: Array.isArray(ad.devices) ? [...ad.devices] : [],
+    bestObservedPosition: Number(ad.bestPosition || 0) || null,
+    firstObservedAt: ad.firstObservedAt || null,
+    lastObservedAt: ad.lastObservedAt || null,
+    observations: Array.isArray(ad.observations) ? [...ad.observations] : [],
+    mappingConfidence: String(mapping.confidence || ""),
+    mappingNote: String(mapping.note || ""),
+    evidenceLayers: ["api_serpapi_google_search"],
+    corpusKey: `serpapi:google:${ad.creativeKey}`,
+  });
+}
+
+for (const creative of serpApiData.transparencyCreatives || []) {
+  if (creative.targetMatchesCandidate === false) continue;
+  const domain = String(creative.candidateDomain || creative.targetDomain || "").toLocaleLowerCase("en");
+  const advertiserId = String(creative.advertiserId || "");
+  const externalId = String(creative.creativeId || "").toUpperCase();
+  const mapping = reviewedSerpCompany(domain, advertiserId);
+  const indexed = serpApiMedia.items?.[externalId] || {};
+  const file = publicMediaFile(indexed.file);
+  if (!mapping || !/^CR\d{10,}$/.test(externalId)) continue;
+  const company = companyById.get(mapping.companyId);
+  const mediaAssets = localMediaAssets(indexed.mediaAssets);
+  const sourceUrl = String(creative.detailsUrl || indexed.sourceUrl || "");
+  const hasPreview = Boolean(file);
+  serpApiAds.push({
+    file: file || "",
+    posterFile: publicMediaFile(indexed.posterFile) || file || null,
+    videoFile: null,
+    mediaAssets,
+    id: mapping.companyId,
+    name: company.name,
+    plataforma: `Google Ads Transparency · ${creative.format || "creatividad"}`,
+    platformFamily: "google",
+    titular: "",
+    texto: "",
+    descripcion: "",
+    cta: "",
+    sourceCopy: { title: "", text: "", description: "", cta: "" },
+    precioVisible: "",
+    angulo: hasPreview ? "pieza visual sin copy estructurado" : "metadatos oficiales sin preview local",
+    capturaEnVivo: false,
+    fecha: creative.lastShown ? new Date(Number(creative.lastShown) * 1000).toISOString().slice(0, 10) : "",
+    origen: "api_serpapi_google_transparency_preview",
+    transcripcion: hasPreview
+      ? "Vista previa oficial conservada; el texto visible se incorpora mediante OCR trazable."
+      : "Creative ID, advertiser ID, formato y fechas conservados; la preview dinámica no pudo archivarse como archivo estático.",
+    estadoEvidencia: hasPreview
+      ? "Creative ID y advertiser ID oficiales · preview local con huella SHA-256"
+      : "Creative ID y advertiser ID oficiales · metadata enlazable sin preview local",
+    atribucion: "propia_confirmada_por_advertiser_id_y_revision",
+    aptaPatrones: false,
+    estadoOcr: hasPreview ? "pendiente" : "no_disponible",
+    structuredCopyAvailable: false,
+    externalId,
+    advertiserId,
+    fuenteUrl: sourceUrl,
+    sourceUrl,
+    anunciante: String(creative.advertiser || company.name),
+    landingUrl: null,
+    isActive: null,
+    startDate: creative.firstShown || null,
+    endDate: creative.lastShown || null,
+    displayFormats: [String(creative.format || "unknown")],
+    mappingConfidence: String(mapping.confidence || ""),
+    mappingNote: String(mapping.note || ""),
+    evidenceLayers: ["api_serpapi_google_transparency_preview"],
+    corpusKey: `google:${externalId}`,
+  });
+}
+
+for (const detail of serpApiData.creativeDetails || []) {
+  const domain = String(detail.candidateDomain || "").toLocaleLowerCase("en");
+  const advertiserId = String(detail.advertiserId || "");
+  const externalId = String(detail.creativeId || "").toUpperCase();
+  const mapping = reviewedSerpCompany(domain, advertiserId);
+  if (!mapping || !/^CR\d{10,}$/.test(externalId)) continue;
+  const company = companyById.get(mapping.companyId);
+  const variants = Array.isArray(detail.variants) ? detail.variants : [];
+  const primary = variants.find((variant) =>
+    `${variant.headline || ""}${variant.snippet || ""}`.trim(),
+  ) || variants[0] || {};
+  const title = String(primary.headline || primary.title || "");
+  const descriptions = [...new Set(variants.map((variant) => String(variant.snippet || "")).filter(Boolean))];
+  const text = descriptions.join("\n\n— Variante observada —\n\n");
+  const cta = String(primary.callToAction || "") || ctaFrom(`${title}\n${text}`);
+  const copy = `${title}\n${text}\n${cta}`;
+  const indexed = serpApiMedia.items?.[externalId] || {};
+  const file = publicMediaFile(indexed.file);
+  const posterFile = publicMediaFile(indexed.posterFile);
+  const videoFile = publicMediaFile(indexed.videoFile);
+  const mediaAssets = localMediaAssets(indexed.mediaAssets);
+  const sourceUrl = String(detail.sourceUrl || "");
+  serpApiAds.push({
+    file,
+    posterFile: posterFile || null,
+    videoFile: videoFile || null,
+    mediaAssets,
+    id: mapping.companyId,
+    name: company.name,
+    plataforma: `Google Ads Transparency · ${detail.format || "creatividad"}`,
+    platformFamily: "google",
+    titular: title,
+    texto: text,
+    descripcion: text,
+    cta,
+    sourceCopy: {
+      title,
+      text,
+      description: text,
+      cta,
+    },
+    precioVisible: priceFrom(copy),
+    angulo: angleFrom(copy),
+    capturaEnVivo: false,
+    fecha: detail.lastShown ? new Date(Number(detail.lastShown) * 1000).toISOString().slice(0, 10) : "",
+    origen: "api_serpapi_google_transparency",
+    transcripcion: "Detalle estructurado de creatividad del Centro de Transparencia de Google",
+    estadoEvidencia: "Creative ID y advertiser ID oficiales · copy y destino estructurados",
+    atribucion: "propia_confirmada_por_advertiser_id_y_revision",
+    aptaPatrones: Boolean(isHighConfidenceMatch(mapping.confidence) && isUseful(copy)),
+    estadoOcr: "no_necesario",
+    structuredCopyAvailable: isUseful(copy),
+    externalId,
+    advertiserId,
+    fuenteUrl: sourceUrl,
+    sourceUrl,
+    anunciante: String(detail.fundedBy || company.name),
+    landingUrl: String(primary.landingUrl || "") || null,
+    isActive: null,
+    startDate: detail.firstShown || null,
+    endDate: detail.lastShown || null,
+    displayFormats: [String(detail.format || "unknown")],
+    mappingConfidence: String(mapping.confidence || ""),
+    mappingNote: String(mapping.note || ""),
+    evidenceLayers: ["api_serpapi_google_transparency"],
+    corpusKey: `google:${externalId}`,
+  });
+}
+
 const iso3ToIso2 = {
   spa: "es", eng: "en", por: "pt", ita: "it", deu: "de", nld: "nl",
   fra: "fr", tur: "tr", pol: "pl", dan: "da", vie: "vi", ind: "id",
@@ -903,6 +1154,101 @@ for (const candidate of scrapeCreatorsAds) {
     ].filter(Boolean))],
   };
 }
+
+for (const candidate of serpApiAds) {
+  const officialId = String(candidate.externalId || "").toUpperCase();
+  const existing = (officialId
+    ? items.find((item) => String(item.externalId || "").toUpperCase() === officialId)
+    : candidate.creativeKey
+      ? items.find((item) =>
+        item.id === candidate.id && item.creativeKey === candidate.creativeKey,
+      )
+      : null) || (!officialId && !candidate.creativeKey ? items.find((item) =>
+      item.id === candidate.id &&
+      similar(
+        `${item.titular || ""}\n${item.texto || ""}`,
+        `${candidate.titular || ""}\n${candidate.texto || ""}`,
+      ),
+    ) : null);
+  if (!existing) {
+    items.push(candidate);
+    continue;
+  }
+
+  const candidateHasStructuredCopy = isUseful(
+    `${candidate.titular || ""}\n${candidate.texto || ""}\n${candidate.cta || ""}`,
+  );
+  if (
+    candidateHasStructuredCopy &&
+    (!isUseful(`${existing.titular || ""}\n${existing.texto || ""}\n${existing.cta || ""}`)
+      || candidate.origen === "api_serpapi_google_transparency")
+  ) {
+    existing.titular = candidate.titular;
+    existing.texto = candidate.texto;
+    existing.descripcion = candidate.descripcion;
+    existing.cta = candidate.cta;
+    existing.sourceCopy = candidate.sourceCopy;
+    existing.precioVisible = candidate.precioVisible;
+    existing.angulo = candidate.angulo;
+  }
+  if (candidate.structuredCopyAvailable && candidateHasStructuredCopy) {
+    existing.structuredCopyAvailable = true;
+    existing.origen = candidate.origen;
+    existing.plataforma = candidate.plataforma;
+    existing.transcripcion = candidate.transcripcion;
+    existing.estadoEvidencia = candidate.estadoEvidencia;
+    existing.estadoOcr = "no_necesario";
+  }
+  existing.file ||= candidate.file;
+  existing.posterFile ||= candidate.posterFile;
+  existing.videoFile ||= candidate.videoFile;
+  if (!existing.mediaAssets?.length && candidate.mediaAssets?.length) {
+    existing.mediaAssets = candidate.mediaAssets;
+  }
+  existing.externalId ||= candidate.externalId;
+  existing.advertiserId ||= candidate.advertiserId;
+  existing.observationId ||= candidate.observationId;
+  existing.creativeKey ||= candidate.creativeKey;
+  existing.landingUrl ||= candidate.landingUrl;
+  existing.fuenteUrl ||= candidate.fuenteUrl;
+  existing.sourceUrl ||= candidate.sourceUrl;
+  existing.anunciante ||= candidate.anunciante;
+  existing.observationCount = Number(existing.observationCount || 0)
+    + Number(candidate.observationCount || 0);
+  existing.queryCount = new Set([
+    ...(existing.observedQueries || []),
+    ...(candidate.observedQueries || []),
+  ]).size;
+  existing.observedQueries = [...new Set([
+    ...(existing.observedQueries || []),
+    ...(candidate.observedQueries || []),
+  ])];
+  existing.observedLocations = [...new Set([
+    ...(existing.observedLocations || []),
+    ...(candidate.observedLocations || []),
+  ])];
+  existing.observedDevices = [...new Set([
+    ...(existing.observedDevices || []),
+    ...(candidate.observedDevices || []),
+  ])];
+  existing.bestObservedPosition = [
+    Number(existing.bestObservedPosition || 0),
+    Number(candidate.bestObservedPosition || 0),
+  ].filter((value) => value > 0).sort((a, b) => a - b)[0] || null;
+  existing.firstObservedAt = [existing.firstObservedAt, candidate.firstObservedAt]
+    .filter(Boolean).sort()[0] || null;
+  existing.lastObservedAt = [existing.lastObservedAt, candidate.lastObservedAt]
+    .filter(Boolean).sort().at(-1) || null;
+  existing.observations = [
+    ...(existing.observations || []),
+    ...(candidate.observations || []),
+  ];
+  existing.evidenceLayers = [...new Set([
+    ...(existing.evidenceLayers || [existing.origen]),
+    ...(candidate.evidenceLayers || [candidate.origen]),
+  ].filter(Boolean))];
+  existing.aptaPatrones = Boolean(existing.aptaPatrones || candidate.aptaPatrones);
+}
 const findExisting = (candidate) => {
   const identity = metaIdentity(candidate.externalId);
   if (identity) {
@@ -924,7 +1270,7 @@ for (const candidate of ocr) {
     continue;
   }
   if (
-    ["api_scrapecreators", "informe_mercado_leads"].includes(existing.origen) &&
+    ["api_scrapecreators", "informe_mercado_leads", "api_serpapi_google_transparency_preview"].includes(existing.origen) &&
     !existing.structuredCopyAvailable &&
     isUseful(`${candidate.titular || ""}\n${candidate.texto || ""}\n${candidate.cta || ""}`)
   ) {
@@ -978,7 +1324,7 @@ for (const audit of ocrAuditData.items || []) {
   };
   if (existing) {
     Object.assign(existing, common);
-    if (["api_scrapecreators", "informe_mercado_leads"].includes(existing.origen) && existing.structuredCopyAvailable) {
+    if (existing.structuredCopyAvailable) {
       existing.estadoOcr = "no_necesario";
     }
     if (existing.file && existing.file !== audit.file) {

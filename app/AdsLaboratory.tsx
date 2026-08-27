@@ -103,6 +103,52 @@ type LeadMarketSnapshot = {
   qualityWarnings: string[];
 };
 
+type SerpApiSnapshot = {
+  observedAt: string;
+  credits: {
+    consumed: number;
+    savedResponses: number;
+    interruptedDuplicates: number;
+  };
+  coverage: {
+    discoveryRequests: number;
+    requestsWithAds: number;
+    observations: number;
+    uniqueAds: number;
+    observedDomains: number;
+    transparencyCreatives: number;
+    transparencyAdvertisers: number;
+    detailedCreatives: number;
+  };
+  editorialReview: {
+    reviewedDomains: number;
+    statusCounts: Record<string, number>;
+    publishedCompanies: number;
+    enrichedCompanies: number;
+    newCompanies: number;
+    policy: string;
+  };
+  topCompanies: Array<{
+    companyId: string;
+    name: string;
+    status: string;
+    uniqueAds: number;
+    observations: number;
+    queryCount: number;
+    locations: number;
+    devices: string[];
+    transparencyCreatives: number;
+  }>;
+  topQueries: Array<{
+    query: string;
+    observations: number;
+    companies: number;
+    uniqueAds: number;
+  }>;
+  conclusions: string[];
+  limitations: string[];
+};
+
 export type AdsLaboratoryProps = {
   /** Si no se pasa, el componente carga /data/ad-corpus.json por sí solo. */
   data?: AnunciosRealesData | null;
@@ -146,6 +192,7 @@ const OCR_STATUS_LABELS: Record<string, string> = {
   sin_texto: "OCR · sin texto legible",
   fallido: "OCR · fallo técnico",
   pendiente: "OCR · pendiente",
+  no_disponible: "OCR · sin archivo local",
 };
 
 const PLATFORM_FAMILY_LABELS: Record<string, string> = {
@@ -534,6 +581,8 @@ const evidenceQualityScore = (ad: AnuncioReal) => {
   let score = ocrScore[ad.estadoOcr || "pendiente"] ?? 55;
   if (ad.aptaPatrones === false) score = Math.min(score, 42);
   if (ad.externalId) score += 3;
+  if (ad.observationId) score += 2;
+  if (Number(ad.observationCount || 0) > 0) score += 2;
   if (ad.fuenteUrl) score += 3;
   if (presentableMedia(ad).openFile) score += 2;
   if (ad.estadoTraduccion === "automatica") score -= 8;
@@ -560,6 +609,9 @@ const classifyRealAd = (ad: AnuncioReal, index: number): LabAd => {
   const patternEligible = ad.aptaPatrones !== false;
   const hasEvidenceMetadata = [
     ad.externalId,
+    ad.observationId,
+    ad.creativeKey,
+    ad.advertiserId,
     ad.fuenteUrl,
     ad.origen,
     ad.transcripcion,
@@ -607,9 +659,15 @@ const classifyRealAd = (ad: AnuncioReal, index: number): LabAd => {
         format,
         ctaGroup,
         ad.externalId || "",
+        ad.observationId || "",
+        ad.creativeKey || "",
+        ad.advertiserId || "",
         ad.pageId || "",
         ad.fuenteUrl || "",
         ad.landingUrl || "",
+        ...(ad.observedQueries || []),
+        ...(ad.observedLocations || []),
+        ...(ad.observedDevices || []),
         ad.origen || "",
         ad.transcripcion || "",
         ad.transcript || "",
@@ -773,6 +831,14 @@ const adAsText = (ad: LabAd) =>
     `Ángulo etiquetado: ${ad.ad.angulo || "sin etiqueta"}`,
     `Plataforma: ${ad.ad.plataforma}`,
     ad.ad.externalId ? `ID externo: ${ad.ad.externalId}` : "",
+    ad.ad.observationId ? `ID de observación: ${ad.ad.observationId}` : "",
+    ad.ad.advertiserId ? `Advertiser ID: ${ad.ad.advertiserId}` : "",
+    Number(ad.ad.observationCount || 0) > 0 ? `Subastas observadas: ${ad.ad.observationCount}` : "",
+    Number(ad.ad.queryCount || 0) > 0 ? `Consultas distintas: ${ad.ad.queryCount}` : "",
+    ad.ad.observedQueries?.length ? `Keywords: ${ad.ad.observedQueries.join(" · ")}` : "",
+    ad.ad.observedLocations?.length ? `Ubicaciones: ${ad.ad.observedLocations.join(" · ")}` : "",
+    ad.ad.observedDevices?.length ? `Dispositivos: ${ad.ad.observedDevices.join(" · ")}` : "",
+    ad.ad.bestObservedPosition ? `Mejor posición observada: ${ad.ad.bestObservedPosition}` : "",
     ad.ad.pageId ? `Page ID: ${ad.ad.pageId}` : "",
     hasValue(ad.ad.isActive) ? `Estado en biblioteca: ${ad.ad.isActive ? "activo" : "inactivo"}` : "",
     deliveryRange(ad.ad) ? `Periodo observado: ${deliveryRange(ad.ad)}` : "",
@@ -1049,6 +1115,7 @@ export default function AdsLaboratory({
   const [remoteData, setRemoteData] = useState<AnunciosRealesData | null>(null);
   const [remoteCoverage, setRemoteCoverage] = useState<AdCoverageData | null>(null);
   const [leadMarketSnapshot, setLeadMarketSnapshot] = useState<LeadMarketSnapshot | null>(null);
+  const [serpApiSnapshot, setSerpApiSnapshot] = useState<SerpApiSnapshot | null>(null);
   const [loadError, setLoadError] = useState("");
   const [section, setSection] = useState<LabSection>(initialSection);
   const [query, setQuery] = useState(initialQuery);
@@ -1075,6 +1142,7 @@ export default function AdsLaboratory({
   const [liveOnly, setLiveOnly] = useState(false);
   const [selectedOnly, setSelectedOnly] = useState(false);
   const [leadMarketOnly, setLeadMarketOnly] = useState(false);
+  const [serpApiOnly, setSerpApiOnly] = useState(false);
   const [visible, setVisible] = useState(DEFAULT_VISIBLE);
   const [patternDimension, setPatternDimension] = useState<PatternDimension>("angle");
   const [patternView, setPatternView] = useState<PatternView>("signals");
@@ -1145,6 +1213,21 @@ export default function AdsLaboratory({
       .catch((error: unknown) => {
         if (error instanceof DOMException && error.name === "AbortError") return;
         // Es una capa contextual; un fallo no bloquea el corpus principal.
+      });
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/data/serpapi-google-ads-snapshot.json", { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<SerpApiSnapshot>;
+      })
+      .then(setSerpApiSnapshot)
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+        // Es un estudio opcional; un fallo no bloquea el laboratorio.
       });
     return () => controller.abort();
   }, []);
@@ -1274,6 +1357,8 @@ export default function AdsLaboratory({
         ad.ad.name, ad.ad.id, ad.ad.country, ad.ad.titular, ad.ad.texto,
         ad.ad.cta, ad.ad.precioVisible, ad.ad.angulo, ad.ad.externalId,
         ad.ad.pageId, ad.ad.landingUrl, ad.ad.transcript, ad.ad.transcripcion,
+        ad.ad.observationId, ad.ad.advertiserId,
+        ...(ad.ad.observedQueries || []), ...(ad.ad.observedLocations || []),
       ].filter(Boolean).join(" "));
       const translatedSearch = normalize([
         ad.ad.traduccionEs?.titular, ad.ad.traduccionEs?.texto,
@@ -1307,6 +1392,7 @@ export default function AdsLaboratory({
       if (selectedOnly && !selectedSet.has(ad.key)) return false;
       if (signalEvidenceKeys.length && !signalEvidenceKeys.includes(ad.key)) return false;
       if (leadMarketOnly && ad.ad.researchSnapshotId !== leadMarketSnapshot?.id) return false;
+      if (serpApiOnly && !String(ad.ad.origen || "").startsWith("api_serpapi_google")) return false;
       return true;
     });
     if (sort === "relevance" && queryTerms.length) {
@@ -1340,7 +1426,7 @@ export default function AdsLaboratory({
     if (sort === "confidence") result.sort((left, right) => confidenceSortValue(right.ad) - confidenceSortValue(left.ad) || left.index - right.index);
     if (sort === "newest") result.sort((left, right) => sortableAdDate(right.ad) - sortableAdDate(left.ad) || left.index - right.index);
     return result;
-  }, [ads, angle, company, countries, cta, evidenceFilter, format, hook, languages, leadMarketOnly, leadMarketSnapshot?.id, liveOnly, mechanic, mediaTypes, ocrStatuses, platformFamilies, promise, query, searchScope, selectedOnly, selectedSet, signalEvidenceKeys, sort, translationStatuses, vertical]);
+  }, [ads, angle, company, countries, cta, evidenceFilter, format, hook, languages, leadMarketOnly, leadMarketSnapshot?.id, liveOnly, mechanic, mediaTypes, ocrStatuses, platformFamilies, promise, query, searchScope, selectedOnly, selectedSet, serpApiOnly, signalEvidenceKeys, sort, translationStatuses, vertical]);
 
   const coverage = useMemo(() => {
     const companies = new Map<string, { name: string; count: number }>();
@@ -1526,6 +1612,7 @@ export default function AdsLaboratory({
     setLiveOnly(false);
     setSelectedOnly(false);
     setLeadMarketOnly(false);
+    setSerpApiOnly(false);
     setSignalEvidenceKeys([]);
     setSignalEvidenceLabel("");
     setVisible(DEFAULT_VISIBLE);
@@ -1562,13 +1649,14 @@ export default function AdsLaboratory({
     setVisible(DEFAULT_VISIBLE);
   };
 
-  const applyQuickPreset = (preset: "eligible" | "translated" | "reviewed" | "spain" | "meta" | "lead-market") => {
+  const applyQuickPreset = (preset: "eligible" | "translated" | "reviewed" | "spain" | "meta" | "lead-market" | "serpapi") => {
     if (preset === "eligible") setEvidenceFilter((current) => current === EVIDENCE_ELIGIBLE ? ALL : EVIDENCE_ELIGIBLE);
     if (preset === "translated") setTranslationStatuses((current) => current.length === 2 && current.includes("automatica") && current.includes("revisada") ? [] : ["automatica", "revisada"]);
     if (preset === "reviewed") setTranslationStatuses((current) => current.length === 1 && current[0] === "revisada" ? [] : ["revisada"]);
     if (preset === "spain") setCountries((current) => current.length === 1 && current[0] === "España" ? [] : ["España"]);
     if (preset === "meta") setPlatformFamilies((current) => current.length === 2 && current.includes("meta") && current.includes("instagram") ? [] : ["meta", "instagram"]);
     if (preset === "lead-market") setLeadMarketOnly((current) => !current);
+    if (preset === "serpapi") setSerpApiOnly((current) => !current);
     setVisible(DEFAULT_VISIBLE);
   };
 
@@ -1580,7 +1668,7 @@ export default function AdsLaboratory({
     ...ocrStatuses,
     ...mediaTypes,
   ].length + [company, vertical, hook, angle, promise, mechanic, format, cta, evidenceFilter]
-    .filter((value) => value !== ALL).length + (query.trim() ? 1 : 0) + (selectedOnly ? 1 : 0) + (liveOnly ? 1 : 0) + (leadMarketOnly ? 1 : 0) + (signalEvidenceKeys.length ? 1 : 0);
+    .filter((value) => value !== ALL).length + (query.trim() ? 1 : 0) + (selectedOnly ? 1 : 0) + (liveOnly ? 1 : 0) + (leadMarketOnly ? 1 : 0) + (serpApiOnly ? 1 : 0) + (signalEvidenceKeys.length ? 1 : 0);
 
   const optionLabel = (group: FacetOption[], value: string) =>
     group.find((option) => option.value === value)?.label || value;
@@ -1664,6 +1752,68 @@ export default function AdsLaboratory({
         </details>
       )}
 
+      {serpApiSnapshot && (
+        <details className="ads-lab-market-study">
+          <summary>
+            <span><b>Estudio incorporado · 27 ago 2026</b><small>Google Ads · búsquedas reales en España</small></span>
+            <strong>{serpApiSnapshot.coverage.observations.toLocaleString("es-ES")} apariciones</strong>
+          </summary>
+          <div className="ads-lab-market-study-body">
+            <section className="ads-lab-market-study-metrics" aria-label="Cobertura del estudio de Google Ads">
+              <article><span>Matriz consultada</span><b>{serpApiSnapshot.coverage.discoveryRequests}</b><small>{serpApiSnapshot.coverage.requestsWithAds} búsquedas con anuncios</small></article>
+              <article><span>Presencia observada</span><b>{serpApiSnapshot.coverage.observations.toLocaleString("es-ES")}</b><small>{serpApiSnapshot.coverage.uniqueAds} anuncios únicos</small></article>
+              <article><span>Mercado cubierto</span><b>{serpApiSnapshot.coverage.observedDomains}</b><small>{serpApiSnapshot.editorialReview.reviewedDomains} dominios revisados</small></article>
+              <article><span>Fichas publicadas</span><b>{serpApiSnapshot.editorialReview.publishedCompanies}</b><small>{serpApiSnapshot.editorialReview.enrichedCompanies} enriquecidas · {serpApiSnapshot.editorialReview.newCompanies} nuevas</small></article>
+            </section>
+            <div className="ads-lab-market-study-copy">
+              <div>
+                <h3>Qué aporta</h3>
+                {serpApiSnapshot.conclusions.slice(0, 3).map((text) => <p key={text}>{text}</p>)}
+              </div>
+              <div>
+                <h3>Criterio y límites</h3>
+                <p>{serpApiSnapshot.editorialReview.policy}</p>
+                {serpApiSnapshot.limitations.slice(0, 2).map((text) => <p key={text}><b>Límite:</b> {text}</p>)}
+                <p>Coste auditado: {serpApiSnapshot.credits.consumed} créditos · {serpApiSnapshot.credits.savedResponses} respuestas útiles conservadas · {serpApiSnapshot.credits.interruptedDuplicates} respuestas duplicadas cobradas durante pausas y repetidas después.</p>
+              </div>
+            </div>
+            <section className="ads-lab-market-clones" aria-label="Proveedores con mayor cobertura observada">
+              <header><h3>Mayor cobertura observada</h3><small>Abre la ficha; presencia no significa rendimiento.</small></header>
+              <div>{serpApiSnapshot.topCompanies.slice(0, 6).map((item) => (
+                <article key={item.companyId}>
+                  <button type="button" className="ads-lab-study-link" onClick={() => {
+                    if (onOpenCompany) onOpenCompany(item.companyId);
+                    else {
+                      resetFilters();
+                      setCompany(item.companyId);
+                      setSerpApiOnly(true);
+                      goToSection("explore");
+                    }
+                  }}>{item.name}</button>
+                  <span>{item.observations} apariciones · {item.uniqueAds} anuncios únicos</span>
+                  <small>{item.queryCount} consultas · {item.locations} ubicaciones · {item.devices.join(" + ") || "dispositivo no indicado"}</small>
+                </article>
+              ))}</div>
+            </section>
+            <section className="ads-lab-market-clones" aria-label="Consultas con mayor competencia revisada">
+              <header><h3>Subastas para investigar</h3><small>Pulsa una consulta para abrir su evidencia en el buscador.</small></header>
+              <div>{serpApiSnapshot.topQueries.slice(0, 6).map((item) => (
+                <article key={item.query}>
+                  <button type="button" className="ads-lab-study-link" onClick={() => {
+                    resetFilters();
+                    setQuery(item.query);
+                    setSerpApiOnly(true);
+                    goToSection("explore");
+                  }}>{item.query}</button>
+                  <span>{item.companies} proveedores revisados</span>
+                  <small>{item.observations} apariciones · {item.uniqueAds} anuncios únicos</small>
+                </article>
+              ))}</div>
+            </section>
+          </div>
+        </details>
+      )}
+
       <div className="ads-lab-tabs-shell">
         <div className="ads-lab-tabs" role="tablist" aria-label="Secciones del laboratorio">
           {([
@@ -1708,6 +1858,7 @@ export default function AdsLaboratory({
             <button type="button" className={countries.length === 1 && countries[0] === "España" ? "active" : ""} onClick={() => applyQuickPreset("spain")}>España</button>
             <button type="button" className={platformFamilies.length === 2 && platformFamilies.includes("meta") && platformFamilies.includes("instagram") ? "active" : ""} onClick={() => applyQuickPreset("meta")}>Meta + Instagram</button>
             {leadMarketSnapshot && <button type="button" className={leadMarketOnly ? "active" : ""} onClick={() => applyQuickPreset("lead-market")}>Estudio · 26 ago</button>}
+            {ads.some((item) => String(item.ad.origen || "").startsWith("api_serpapi_google")) && <button type="button" className={serpApiOnly ? "active" : ""} onClick={() => applyQuickPreset("serpapi")}>Google SERP · 27 ago</button>}
           </div>
         )}
       </div>
@@ -1734,6 +1885,7 @@ export default function AdsLaboratory({
           {selectedOnly && <button onClick={() => setSelectedOnly(false)}>Solo selección ×</button>}
           {liveOnly && <button onClick={() => setLiveOnly(false)}>Anuncio activo ×</button>}
           {leadMarketOnly && <button onClick={() => setLeadMarketOnly(false)}>Estudio mercado leads ×</button>}
+          {serpApiOnly && <button onClick={() => setSerpApiOnly(false)}>Google SERP España ×</button>}
           <button className="clear" onClick={resetFilters}>Limpiar todo</button>
         </div>
       )}
@@ -1827,6 +1979,11 @@ export default function AdsLaboratory({
                         <span>{item.platform}</span>
                         <span>{item.ad.idiomaNombre || "Idioma sin determinar"}</span>
                         {item.ad.fecha && <span title="Fecha de corte o revisión de la evidencia">Corte · {item.ad.fecha}</span>}
+                        {Number(item.ad.observationCount || 0) > 0 && (
+                          <span title="Número de páginas de resultados donde apareció; no equivale a impresiones ni rendimiento">
+                            Google observado · {item.ad.observationCount} subastas
+                          </span>
+                        )}
                         {typeof item.ad.isActive === "boolean" && <i className={item.ad.isActive ? "active" : "inactive"}>{item.ad.isActive ? "Activo" : "Inactivo"}</i>}
                         {dateRange && <span title="Periodo observado en la biblioteca">{dateRange}</span>}
                       </div>
@@ -1838,6 +1995,7 @@ export default function AdsLaboratory({
                         <span>{LANGUAGE_STATUS_LABELS[item.ad.estadoTraduccion || "pendiente"] || item.ad.estadoTraduccion}</span>
                         <span title="OCR, atribución, fuente y traducción; no mide rendimiento creativo">Evidencia · {item.qualityScore}/100</span>
                         {item.ad.researchSnapshotId && <span className="market-study">Estudio España · 26 ago</span>}
+                        {item.ad.observationId && <span className="market-study">SERP España · consulta real</span>}
                       </div>
                       <BilingualCopy ad={item.ad} mode={languageMode} />
                       <div className="ads-lab-tags">
@@ -1865,6 +2023,14 @@ export default function AdsLaboratory({
                         {item.ad.notaRevisionTraduccion && <small><b>Revisión:</b> {item.ad.notaRevisionTraduccion}</small>}
                         <small><b>Plataforma:</b> {item.ad.plataforma}</small>
                         {item.ad.externalId && <small><b>ID externo:</b> {item.ad.externalId}</small>}
+                        {item.ad.observationId && <small><b>ID de observación:</b> {item.ad.observationId}</small>}
+                        {item.ad.advertiserId && <small><b>Advertiser ID:</b> {item.ad.advertiserId}</small>}
+                        {Number(item.ad.observationCount || 0) > 0 && (
+                          <small><b>Subastas observadas:</b> {item.ad.observationCount} · {item.ad.queryCount || 0} consultas distintas{item.ad.bestObservedPosition ? ` · mejor posición ${item.ad.bestObservedPosition}` : ""}. No es una métrica de rendimiento.</small>
+                        )}
+                        {item.ad.observedQueries?.length ? <small><b>Keywords:</b> {item.ad.observedQueries.join(" · ")}</small> : null}
+                        {item.ad.observedLocations?.length ? <small><b>Ubicaciones:</b> {item.ad.observedLocations.join(" · ")}</small> : null}
+                        {item.ad.observedDevices?.length ? <small><b>Dispositivos:</b> {item.ad.observedDevices.join(" · ")}</small> : null}
                         {item.ad.pageId && <small><b>Page ID:</b> {item.ad.pageId}</small>}
                         {typeof item.ad.isActive === "boolean" && <small><b>Estado:</b> {item.ad.isActive ? "activo" : "inactivo"}</small>}
                         {dateRange && <small><b>Periodo:</b> {dateRange}</small>}
@@ -1884,7 +2050,7 @@ export default function AdsLaboratory({
                         <button type="button" onClick={() => copyText(adAsText(item), "Transcripción copiada.")}>Copiar transcripción</button>
                       </details>
                       <footer>
-                        <small>{item.ad.externalId ? `ID ${item.ad.externalId}` : media.openFile ? basename(media.openFile) : "sin archivo visual"}</small>
+                        <small>{item.ad.externalId ? `ID ${item.ad.externalId}` : item.ad.observationId ? `Obs. ${item.ad.observationId}` : media.openFile ? basename(media.openFile) : "sin archivo visual"}</small>
                         <button type="button" className={selected ? "remove" : ""} aria-pressed={selected} onClick={() => toggleSelected(item.key)}>
                           {selected ? (isBaseline ? "Control · quitar" : "Seleccionado · quitar") : "+ Usar en hipótesis"}
                         </button>
@@ -2138,7 +2304,7 @@ const LAB_CSS = String.raw`
 
 /* Pattern intelligence · capa analítica y responsive */
 .ads-lab{max-width:100%;overflow-x:clip}.ads-lab-panel{min-width:0}.ads-lab-snapshot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid #d7dee8;background:#f7f9fc;padding:14px 28px}.ads-lab-snapshot article{min-width:0;padding:8px 18px;border-right:1px solid #d7dee8}.ads-lab-snapshot article:first-child{padding-left:0}.ads-lab-snapshot article:last-child{border-right:0}.ads-lab-snapshot span,.ads-lab-snapshot strong,.ads-lab-snapshot small{display:block}.ads-lab-snapshot span{color:#5f6368;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.055em}.ads-lab-snapshot strong{margin:4px 0 2px;color:#15161a;font-size:24px;line-height:28px}.ads-lab-snapshot small{overflow:hidden;color:#5f6368;font-size:12px;line-height:17px;text-overflow:ellipsis}
-.ads-lab-market-study{margin:14px 28px;border:1px solid #c8d5e8;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.06)}.ads-lab-market-study>summary{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:68px;padding:14px 18px;background:linear-gradient(135deg,#f4f8ff,#fff);cursor:pointer;list-style:none}.ads-lab-market-study>summary::-webkit-details-marker{display:none}.ads-lab-market-study>summary:after{content:"+";flex:none;display:grid;place-items:center;width:28px;height:28px;border:1px solid #c8d5e8;border-radius:50%;color:#0b57d0;font-size:18px;font-weight:500}.ads-lab-market-study[open]>summary:after{content:"−"}.ads-lab-market-study>summary span{min-width:0;flex:1}.ads-lab-market-study>summary b,.ads-lab-market-study>summary small,.ads-lab-market-study>summary strong{display:block}.ads-lab-market-study>summary b{color:#174f9f;font-size:14px;line-height:20px}.ads-lab-market-study>summary small{margin-top:2px;color:#5f6368;font-size:12px}.ads-lab-market-study>summary strong{flex:none;color:#15161a;font-size:15px}.ads-lab-market-study-body{border-top:1px solid #dfe6f0;padding:18px}.ads-lab-market-study-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden;border:1px solid #dfe6f0;border-radius:10px}.ads-lab-market-study-metrics article{min-width:0;padding:12px 14px;border-right:1px solid #dfe6f0;background:#fafbfd}.ads-lab-market-study-metrics article:last-child{border-right:0}.ads-lab-market-study-metrics span,.ads-lab-market-study-metrics b,.ads-lab-market-study-metrics small{display:block}.ads-lab-market-study-metrics span{color:#697386;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.045em}.ads-lab-market-study-metrics b{margin:4px 0;color:#15161a;font-size:22px}.ads-lab-market-study-metrics small{color:#5f6368;font-size:11px;line-height:16px}.ads-lab-market-study-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}.ads-lab-market-study-copy>div{padding:14px 15px;border:1px solid #e0e5ed;border-radius:10px}.ads-lab-market-study-copy h3,.ads-lab-market-clones h3{margin:0 0 7px;color:#15161a;font-size:14px}.ads-lab-market-study-copy p{margin:0 0 7px;color:#4f5662;font-size:12px;line-height:18px}.ads-lab-market-study-copy p:last-child{margin-bottom:0}.ads-lab-market-clones{margin-top:14px}.ads-lab-market-clones>header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}.ads-lab-market-clones>header h3{margin:0}.ads-lab-market-clones>header small{color:#697386;font-size:11px}.ads-lab-market-clones>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ads-lab-market-clones article{min-width:0;padding:11px 12px;border:1px solid #e0e5ed;border-radius:9px;background:#fafbfd}.ads-lab-market-clones b,.ads-lab-market-clones span,.ads-lab-market-clones article small{display:block}.ads-lab-market-clones b{color:#263244;font-size:12px}.ads-lab-market-clones span{overflow:hidden;margin:4px 0;color:#4f5662;font-size:11px;text-overflow:ellipsis;white-space:nowrap}.ads-lab-market-clones article small{color:#697386;font-size:10px;line-height:15px}.ads-lab-evidence-badges span.market-study{border:1px solid #b9cef0;background:#edf4ff;color:#174f9f}
+.ads-lab-market-study{margin:14px 28px;border:1px solid #c8d5e8;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.06)}.ads-lab-market-study>summary{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:68px;padding:14px 18px;background:linear-gradient(135deg,#f4f8ff,#fff);cursor:pointer;list-style:none}.ads-lab-market-study>summary::-webkit-details-marker{display:none}.ads-lab-market-study>summary:after{content:"+";flex:none;display:grid;place-items:center;width:28px;height:28px;border:1px solid #c8d5e8;border-radius:50%;color:#0b57d0;font-size:18px;font-weight:500}.ads-lab-market-study[open]>summary:after{content:"−"}.ads-lab-market-study>summary span{min-width:0;flex:1}.ads-lab-market-study>summary b,.ads-lab-market-study>summary small,.ads-lab-market-study>summary strong{display:block}.ads-lab-market-study>summary b{color:#174f9f;font-size:14px;line-height:20px}.ads-lab-market-study>summary small{margin-top:2px;color:#5f6368;font-size:12px}.ads-lab-market-study>summary strong{flex:none;color:#15161a;font-size:15px}.ads-lab-market-study-body{border-top:1px solid #dfe6f0;padding:18px}.ads-lab-market-study-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden;border:1px solid #dfe6f0;border-radius:10px}.ads-lab-market-study-metrics article{min-width:0;padding:12px 14px;border-right:1px solid #dfe6f0;background:#fafbfd}.ads-lab-market-study-metrics article:last-child{border-right:0}.ads-lab-market-study-metrics span,.ads-lab-market-study-metrics b,.ads-lab-market-study-metrics small{display:block}.ads-lab-market-study-metrics span{color:#697386;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.045em}.ads-lab-market-study-metrics b{margin:4px 0;color:#15161a;font-size:22px}.ads-lab-market-study-metrics small{color:#5f6368;font-size:11px;line-height:16px}.ads-lab-market-study-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}.ads-lab-market-study-copy>div{padding:14px 15px;border:1px solid #e0e5ed;border-radius:10px}.ads-lab-market-study-copy h3,.ads-lab-market-clones h3{margin:0 0 7px;color:#15161a;font-size:14px}.ads-lab-market-study-copy p{margin:0 0 7px;color:#4f5662;font-size:12px;line-height:18px}.ads-lab-market-study-copy p:last-child{margin-bottom:0}.ads-lab-market-clones{margin-top:14px}.ads-lab-market-clones>header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}.ads-lab-market-clones>header h3{margin:0}.ads-lab-market-clones>header small{color:#697386;font-size:11px}.ads-lab-market-clones>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ads-lab-market-clones article{min-width:0;padding:11px 12px;border:1px solid #e0e5ed;border-radius:9px;background:#fafbfd}.ads-lab-market-clones b,.ads-lab-market-clones span,.ads-lab-market-clones article small{display:block}.ads-lab-market-clones b{color:#263244;font-size:12px}.ads-lab-market-clones span{overflow:hidden;margin:4px 0;color:#4f5662;font-size:11px;text-overflow:ellipsis;white-space:nowrap}.ads-lab-market-clones article small{color:#697386;font-size:10px;line-height:15px}.ads-lab-evidence-badges span.market-study{border:1px solid #b9cef0;background:#edf4ff;color:#174f9f}.ads-lab-study-link{display:block;max-width:100%;overflow:hidden;border:0;padding:0;background:transparent;color:#174f9f;font-size:12px;font-weight:800;text-align:left;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}.ads-lab-study-link:hover{text-decoration:underline}
 .ads-lab-quick-presets{display:flex;gap:7px;align-items:center;overflow-x:auto;padding:8px 28px 10px;border-top:1px solid #edf0f4;background:#fff;scrollbar-width:thin}.ads-lab-quick-presets>span{flex:none;margin-right:3px;color:#697386;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.05em}.ads-lab-quick-presets button{flex:none;min-height:32px;border:1px solid #d7dee8;border-radius:999px;padding:6px 11px;background:#fff;color:#3c4043;font-size:12px;font-weight:650}.ads-lab-quick-presets button:hover{border-color:#9eb7df;background:#f7faff}.ads-lab-quick-presets button.active{border-color:#a8c7fa;background:#e8f0fe;color:#0b57d0}.ads-lab-translation-note{display:block!important;margin-top:9px!important;padding:8px 9px;border-radius:7px;background:#fff8e6;color:#6b5320!important;font-size:11px!important;line-height:16px!important}.ads-lab-tags span.more{border-style:dashed;background:#fff;color:#5f6368}
 .ads-lab-pattern-head{display:block;margin-bottom:16px}.ads-lab-pattern-head>div{max-width:850px}.ads-lab-pattern-head h3{margin:3px 0 7px;color:#15161a;font-size:26px;line-height:32px;letter-spacing:-.02em}.ads-lab-pattern-head>div>p:last-child{max-width:800px;margin:0;color:#5f6368;font-size:13px;line-height:20px}.ads-lab-pattern-view-tabs{display:grid;grid-template-columns:repeat(4,minmax(130px,1fr));gap:8px;overflow-x:auto;margin-bottom:12px}.ads-lab-pattern-view-tabs button{min-width:0;border:1px solid #d7dee8;border-radius:10px;padding:12px 13px;background:#fff;text-align:left}.ads-lab-pattern-view-tabs button:hover{border-color:#a8c7fa;background:#f7faff}.ads-lab-pattern-view-tabs button.active{border-color:#0b57d0;background:#edf4ff;box-shadow:inset 0 0 0 1px #0b57d0}.ads-lab-pattern-view-tabs strong,.ads-lab-pattern-view-tabs span{display:block}.ads-lab-pattern-view-tabs strong{color:#15161a;font-size:13px}.ads-lab-pattern-view-tabs span{margin-top:3px;color:#5f6368;font-size:11px;line-height:15px}.ads-lab-pattern-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:12px;padding:10px 12px;border:1px solid #e0e5ed;border-radius:10px;background:#fff}.ads-lab-pattern-toolbar>p{max-width:760px;margin:0;color:#5f6368;font-size:12px;line-height:18px}.ads-lab-pattern-dimensions{display:flex;gap:5px;flex-wrap:wrap}.ads-lab-pattern-dimensions button,.ads-lab-weighting button{min-height:34px;border:1px solid #d7dee8;border-radius:7px;padding:7px 9px;background:#fff;color:#3c4043;font-size:12px;font-weight:700}.ads-lab-pattern-dimensions button.active,.ads-lab-weighting button.active{border-color:#a8c7fa;background:#e8f0fe;color:#0b57d0}.ads-lab-weighting{display:flex;flex:none;align-items:center;gap:5px}.ads-lab-weighting>span{margin-right:3px;color:#5f6368;font-size:11px;font-weight:700}.ads-lab-pattern-universe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden;margin-bottom:12px;border:1px solid #d7dee8;border-radius:11px;background:#fff}.ads-lab-pattern-universe article{min-width:0;padding:12px 14px;border-right:1px solid #e4e8ee}.ads-lab-pattern-universe article:last-child{border-right:0}.ads-lab-pattern-universe span,.ads-lab-pattern-universe strong,.ads-lab-pattern-universe small{display:block}.ads-lab-pattern-universe span{color:#5f6368;font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.04em}.ads-lab-pattern-universe strong{margin:3px 0;color:#15161a;font-size:21px}.ads-lab-pattern-universe small{color:#697386;font-size:11px;line-height:15px}.ads-lab-featured-signal{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(260px,1.2fr);gap:10px 22px;align-items:center;margin-bottom:13px;padding:16px 18px;border:1px solid #b9cef0;border-radius:12px;background:linear-gradient(135deg,#edf4ff,#fff)}.ads-lab-featured-signal div span,.ads-lab-featured-signal div strong{display:block}.ads-lab-featured-signal div span{color:#0b57d0;font-size:10px;font-weight:850;letter-spacing:.07em}.ads-lab-featured-signal div strong{margin-top:4px;color:#15161a;font-size:17px;line-height:22px}.ads-lab-featured-signal p{margin:0;color:#3c4043;font-size:12px;line-height:18px}.ads-lab-featured-signal>small{grid-column:1/-1;color:#5f6368;font-size:11px}.ads-lab-signal-list{display:grid;gap:10px}.ads-lab-signal-row{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(210px,.65fr);gap:13px 18px;min-width:0;padding:16px 18px;border:1px solid #d7dee8;border-left:4px solid #8aa8d8;border-radius:11px;background:#fff}.ads-lab-signal-row.robusta{border-left-color:#168352}.ads-lab-signal-row.recurrente{border-left-color:#0b57d0}.ads-lab-signal-row.distintiva{border-left-color:#7c3aed}.ads-lab-signal-row.exploratoria{border-left-color:#d97706}.ads-lab-signal-row.indicio{border-left-color:#94a3b8}.ads-lab-signal-main{min-width:0}.ads-lab-signal-title{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.ads-lab-signal-title>span{color:#0b57d0;font-size:10px;font-weight:850;letter-spacing:.07em}.ads-lab-signal-title>i{border-radius:999px;padding:3px 7px;background:#eef2f7;color:#52606f;font-size:10px;font-style:normal;font-weight:750}.ads-lab-signal-row h4{margin:5px 0 7px;color:#15161a;font-size:17px;line-height:22px}.ads-lab-association-note{margin:0 0 9px;color:#5f6368;font-size:11px;line-height:16px}.ads-lab-signal-meter{height:7px;overflow:hidden;border-radius:99px;background:#e7ebf1}.ads-lab-signal-meter>i{display:block;height:100%;max-width:100%;border-radius:inherit;background:#0b57d0}.ads-lab-signal-main>small{display:block;margin-top:6px;color:#5f6368;font-size:11px;line-height:16px}.ads-lab-signal-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:0}.ads-lab-signal-metrics div{padding:8px 9px;border-radius:8px;background:#f5f7fa}.ads-lab-signal-metrics dt{color:#697386;font-size:10px}.ads-lab-signal-metrics dd{margin:2px 0 0;color:#15161a;font-size:16px;font-weight:800}.ads-lab-signal-row>blockquote{grid-column:1/-1;margin:0;padding:11px 13px;border:0;border-radius:8px;background:#f7f9fc;color:#3c4043;font-size:12px;line-height:18px}.ads-lab-signal-context{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.ads-lab-signal-context span{border-radius:999px;padding:4px 7px;background:#eef2f7;color:#52606f;font-size:10px;font-weight:650}.ads-lab-signal-context span.warning{background:#fff3d6;color:#77530b}.ads-lab-signal-row>footer{display:flex;justify-content:flex-end;gap:7px}.ads-lab-signal-row>footer button{min-height:35px;border:1px solid #0b57d0;border-radius:7px;padding:7px 10px;background:#0b57d0;color:#fff;font-size:11px;font-weight:750}.ads-lab-signal-row>footer button.quiet{border-color:#d7dee8;background:#fff;color:#0b57d0}
 .ads-lab-selection-dock{position:sticky;z-index:18;bottom:14px;display:flex;gap:10px;align-items:center;width:min(760px,calc(100% - 32px));margin:0 auto 14px;padding:12px 13px;border:1px solid #b9c8dc;border-radius:12px;background:rgba(255,255,255,.97);box-shadow:0 14px 38px rgba(15,23,42,.18);backdrop-filter:blur(14px)}.ads-lab-selection-dock>div{min-width:0;flex:1}.ads-lab-selection-dock strong,.ads-lab-selection-dock span{display:block}.ads-lab-selection-dock strong{font-size:13px}.ads-lab-selection-dock span{overflow:hidden;margin-top:2px;color:#5f6368;font-size:11px;text-overflow:ellipsis;white-space:nowrap}.ads-lab-selection-dock .ads-lab-dock-notice{display:block;overflow:visible;margin-top:5px;color:#174f9f;font-size:10px;line-height:14px;white-space:normal}.ads-lab-selection-dock button{min-height:38px;border:0;border-radius:8px;padding:8px 12px;background:#0b57d0;color:#fff;font-size:12px;font-weight:750}.ads-lab-selection-dock button.quiet{border:1px solid #d7dee8;background:#fff;color:#3c4043}.ads-lab-selection-dock button:disabled{background:#d8dee8;color:#687386}.ads-lab-primary:disabled{border-color:#d8dee8;background:#d8dee8;color:#687386;cursor:not-allowed}

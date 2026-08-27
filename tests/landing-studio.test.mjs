@@ -506,7 +506,7 @@ test("la inteligencia v3 conserva denominadores, secuencias y referencias cohere
       guarantee: intelligence.universal.fieldPresence.guarantee,
       proof: intelligence.universal.fieldPresence.proof,
     },
-    { price: 26, guarantee: 34, proof: 58 },
+    { price: 28, guarantee: 35, proof: 57 },
   );
   assert.ok(intelligence.universal.sectionPatterns.length >= 6);
   for (const pattern of intelligence.universal.sectionPatterns) {

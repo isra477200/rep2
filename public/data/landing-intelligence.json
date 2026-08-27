@@ -1,28 +1,32 @@
 {
   "schemaVersion": "rv-landing-intelligence-v3",
-  "generatedAt": "2026-08-27T14:15:50.715Z",
+  "generatedAt": "2026-08-27T18:31:36.506Z",
   "source": {
-    "companies": 453,
-    "eligibleCompanies": 324,
-    "salesPageCompanies": 261,
-    "pages": 1199,
-    "capturedPages": 969,
+    "companies": 480,
+    "eligibleCompanies": 343,
+    "salesPageCompanies": 280,
+    "pages": 1241,
+    "capturedPages": 1010,
     "blockedPages": 96,
     "failedPages": 106,
     "countries": [
+      "Alemania",
+      "Emiratos Árabes Unidos",
       "España",
       "Estados Unidos",
       "Francia",
+      "Islas Caimán",
       "Marruecos",
-      "México"
+      "México",
+      "Suiza"
     ],
     "methodology": "Patrones descriptivos extraídos de capturas públicas y lectura comercial estructurada. No contienen métricas de conversión ni demuestran causalidad.",
     "qualityPolicy": "Los patrones excluyen alcances adyacentes, excluidos o en cuarentena; los CTA eliminan navegación, cookies y boilerplate; una selección editorial fija las referencias prioritarias y el resto se clasifica por el contenido de la página capturada."
   },
   "universal": {
     "roles": {
-      "homepage": 324,
-      "landing": 263,
+      "homepage": 350,
+      "landing": 278,
       "conversion": 180,
       "pricing": 62,
       "proof": 140
@@ -32,20 +36,20 @@
     "fieldPresence": {
       "headline": 100,
       "promise": 72,
-      "audience": 73,
+      "audience": 70,
       "offer": 98,
-      "mechanism": 69,
+      "mechanism": 67,
       "primaryCta": 88,
-      "proof": 58,
-      "price": 26,
-      "guarantee": 34,
+      "proof": 57,
+      "price": 28,
+      "guarantee": 35,
       "funnel": 100
     },
     "ctaFamilies": [
       {
         "id": "booking",
         "label": "Reserva o llamada",
-        "count": 93,
+        "count": 98,
         "companyIds": [
           "advisorscale",
           "agemia",
@@ -99,6 +103,7 @@
           "doga-marketing",
           "ebisu-marketing-agency",
           "engrana",
+          "erik-pascual",
           "eximia-real-estate",
           "fertilidad-marketing",
           "goal-guiders-ia",
@@ -108,9 +113,11 @@
           "horizzon-media",
           "inmoads",
           "ivan-de-benito",
+          "leadflow-espana",
           "leadgrow",
           "level-up-agency",
           "lexiuris-marketing",
+          "maline-inmobiliaria",
           "marketing-taller",
           "marketlabs",
           "mas-captacion",
@@ -121,6 +128,7 @@
           "nemetea",
           "orbanya",
           "otomatico",
+          "presupuestossolares-es-betterbusiness",
           "ranking-online",
           "rauw-leads",
           "roi-master",
@@ -132,6 +140,7 @@
           "spainready",
           "starofservice",
           "systemeleads",
+          "tecnofind",
           "top-doctors",
           "tumejorlead",
           "ubtcall",
@@ -163,14 +172,14 @@
             "text": "Solicitar Consultoría"
           }
         ],
-        "share": 36,
-        "classifiedShare": 47,
-        "sampleBase": 261
+        "share": 35,
+        "classifiedShare": 46,
+        "sampleBase": 280
       },
       {
         "id": "contact",
         "label": "Contacto directo",
-        "count": 35,
+        "count": 38,
         "companyIds": [
           "acelera-tu-crm",
           "agency-mdi",
@@ -183,6 +192,7 @@
           "anexeo-anexeo-digital-s-l-u-alianza-con-marketingfunerario-com",
           "capilagency",
           "companeo",
+          "doctor-reputacion-legal-eraser",
           "ecaptor",
           "eleva-digitals",
           "habitissimo",
@@ -195,6 +205,7 @@
           "mpdentales-marketing-medico-y-sanitario-s-l",
           "mpg-marketing-para-gimnasios",
           "neomarketing",
+          "next-conversion-adsl-house",
           "nova-agency",
           "pivote-marketing",
           "recom",
@@ -202,6 +213,7 @@
           "summum-marketing",
           "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
           "surper",
+          "taskus-sales-as-a-service",
           "teamleads",
           "tm-system",
           "travaux-com",
@@ -230,14 +242,14 @@
             "text": "Enviar Mensaje"
           }
         ],
-        "share": 13,
+        "share": 14,
         "classifiedShare": 18,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "audit",
         "label": "Auditoría o diagnóstico",
-        "count": 27,
+        "count": 30,
         "companyIds": [
           "360-clinic-consulting",
           "adfredo",
@@ -247,6 +259,7 @@
           "auge-salud",
           "bastida-y-farina-s-l",
           "cold-outreach-studio",
+          "ddigitals",
           "dentalead",
           "devside-tm",
           "epiko",
@@ -256,6 +269,7 @@
           "idealleader",
           "iqlex-solutions-sl",
           "leads-energy",
+          "leads-juridicos-digital",
           "marketing-para-fisios",
           "marketingpubli",
           "mavo-growth",
@@ -264,6 +278,7 @@
           "salesdose",
           "skyaweb-nacho-tejedor",
           "solumize",
+          "visionarius-ai",
           "werise-performance",
           "xpandex-abadesa-export-center-s-l"
         ],
@@ -289,67 +304,14 @@
             "text": "Análisis gratuito →"
           }
         ],
-        "share": 10,
+        "share": 11,
         "classifiedShare": 14,
-        "sampleBase": 261
-      },
-      {
-        "id": "quote",
-        "label": "Presupuesto o propuesta",
-        "count": 21,
-        "companyIds": [
-          "adstralis",
-          "amp-cosmoscallcenter-com",
-          "amp-inprofit-eu",
-          "amp-obrascongarantia-com",
-          "amp-planreforma-com",
-          "amp-presupuestos-com",
-          "amp-reclutae-com",
-          "amp-reformapresupuesto-com",
-          "amp-sodigix-com",
-          "amp-teleaction-fr",
-          "amp-tuproreformas-es",
-          "captaleads",
-          "certicalia",
-          "en-alta-agency",
-          "hemea",
-          "leadsforma",
-          "marketing-para-fontaneros",
-          "reform-ads",
-          "spotinleads",
-          "yag-comunicacion",
-          "zaask"
-        ],
-        "examples": [
-          {
-            "companyId": "adstralis",
-            "name": "Adstralis",
-            "text": "Tengo un presupuesto"
-          },
-          {
-            "companyId": "amp-cosmoscallcenter-com",
-            "name": "Cosmos Call Center",
-            "text": "Info / Presupuesto"
-          },
-          {
-            "companyId": "amp-inprofit-eu",
-            "name": "Inprofit",
-            "text": "Presupuesto tienda online E-commerce"
-          },
-          {
-            "companyId": "amp-obrascongarantia-com",
-            "name": "Obras con Garantía",
-            "text": "Pide presupuesto"
-          }
-        ],
-        "share": 8,
-        "classifiedShare": 11,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "start",
         "label": "Empezar o comprar",
-        "count": 21,
+        "count": 23,
         "companyIds": [
           "amp-bodas-net",
           "amp-emprendeaprendiendo-com",
@@ -357,6 +319,7 @@
           "amp-toopixels-com",
           "amp-updent-es",
           "amp-wanaleads-fr",
+          "dejalia-secretaria-24-7",
           "dimoni",
           "escala-con-anuncios",
           "generacion-leads-masterfy-lc",
@@ -368,6 +331,7 @@
           "playmedic",
           "roi-performance",
           "sempatiza",
+          "skalex-pro",
           "solar-leads-estudio",
           "stamina-marketing-marca-conseguir-pacientes",
           "tu-agencia-365",
@@ -397,14 +361,68 @@
         ],
         "share": 8,
         "classifiedShare": 11,
-        "sampleBase": 261
+        "sampleBase": 280
+      },
+      {
+        "id": "quote",
+        "label": "Presupuesto o propuesta",
+        "count": 22,
+        "companyIds": [
+          "adstralis",
+          "amp-cosmoscallcenter-com",
+          "amp-inprofit-eu",
+          "amp-obrascongarantia-com",
+          "amp-planreforma-com",
+          "amp-presupuestos-com",
+          "amp-reclutae-com",
+          "amp-reformapresupuesto-com",
+          "amp-sodigix-com",
+          "amp-teleaction-fr",
+          "amp-tuproreformas-es",
+          "captaleads",
+          "certicalia",
+          "en-alta-agency",
+          "hemea",
+          "leadsforma",
+          "marketing-para-fontaneros",
+          "publiactivos-comunicacion-marketing",
+          "reform-ads",
+          "spotinleads",
+          "yag-comunicacion",
+          "zaask"
+        ],
+        "examples": [
+          {
+            "companyId": "adstralis",
+            "name": "Adstralis",
+            "text": "Tengo un presupuesto"
+          },
+          {
+            "companyId": "amp-cosmoscallcenter-com",
+            "name": "Cosmos Call Center",
+            "text": "Info / Presupuesto"
+          },
+          {
+            "companyId": "amp-inprofit-eu",
+            "name": "Inprofit",
+            "text": "Presupuesto tienda online E-commerce"
+          },
+          {
+            "companyId": "amp-obrascongarantia-com",
+            "name": "Obras con Garantía",
+            "text": "Pide presupuesto"
+          }
+        ],
+        "share": 8,
+        "classifiedShare": 10,
+        "sampleBase": 280
       }
     ],
     "heroFamilies": [
       {
         "id": "other",
         "label": "Otros enfoques",
-        "count": 161,
+        "count": 173,
         "companyIds": [
           "360-clinic-consulting",
           "adfredo",
@@ -485,12 +503,15 @@
           "comprarleads",
           "comunicare",
           "construly",
+          "consultoria-io",
           "copyfilms",
           "cronoshare",
           "customertop",
           "cyberclick",
+          "dejalia-secretaria-24-7",
           "desorbitante",
           "dimoni",
+          "doctor-reputacion-legal-eraser",
           "ebisu-marketing-agency",
           "ecaptor",
           "echale-marketing",
@@ -502,6 +523,7 @@
           "fertilidad-marketing",
           "fluy",
           "gaplogic",
+          "grupo-solnet",
           "guillermo-saez",
           "gym-evolution",
           "idealista-producto-para-agencias-inmobiliarias",
@@ -517,6 +539,8 @@
           "leadsforma",
           "level-up-agency",
           "llavia",
+          "maline-inmobiliaria",
+          "mar-dominguez-seda",
           "marketing-para-fisios",
           "marketing-para-fontaneros",
           "marketing-taller",
@@ -533,12 +557,15 @@
           "multiservicio-web",
           "nemetea",
           "neomarketing",
+          "next-conversion-adsl-house",
           "nova-agency",
           "onlysem-andreu-magrina-freelance",
           "otomatico",
           "pepperli",
           "pivote-marketing",
+          "presupuestossolares-es-betterbusiness",
           "psicoemprendedores",
+          "publiactivos-comunicacion-marketing",
           "ranking-online",
           "rauw-leads",
           "recom",
@@ -554,6 +581,8 @@
           "summum-marketing",
           "surper",
           "t4-franquicias-grupo-t4-lafranquicia-es",
+          "taskus-sales-as-a-service",
+          "tecnofind",
           "tm-system",
           "top-doctors",
           "travaux-com",
@@ -565,6 +594,7 @@
           "veltavia",
           "venus-consulting",
           "vertex-marketing",
+          "visionarius-ai",
           "xpandex-abadesa-export-center-s-l",
           "zaask"
         ],
@@ -592,12 +622,12 @@
         ],
         "share": 62,
         "classifiedShare": 62,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "outcome",
         "label": "Resultado primero",
-        "count": 37,
+        "count": 42,
         "companyIds": [
           "agencia-digital-seniors",
           "amp-igtelcom-es",
@@ -612,23 +642,28 @@
           "crece-sin-limite",
           "daas-group-vendermas",
           "dentalead",
+          "erik-pascual",
           "growyourindustry",
           "habitissimo",
           "hemea",
           "horizzon-media",
           "kimoon",
+          "leadflow-espana",
           "leadgrow",
+          "leads-juridicos-digital",
           "marketinhouse",
           "mas-captacion",
           "masnegocio",
           "mavo-growth",
           "medical-marketing-digital-marketing-specialist-worldwide-llc",
+          "melendos-business",
           "playmedic",
           "prontopro",
           "roi-performance",
           "salesdose",
           "sara-marketer",
           "sbr-scale",
+          "skalex-pro",
           "skyaweb-nacho-tejedor",
           "solar-leads-estudio",
           "systemeleads",
@@ -659,18 +694,19 @@
             "text": "Ha llegado la hora de multiplicar tu fuerza de ventas."
           }
         ],
-        "share": 14,
-        "classifiedShare": 14,
-        "sampleBase": 261
+        "share": 15,
+        "classifiedShare": 15,
+        "sampleBase": 280
       },
       {
         "id": "identity",
         "label": "Categoría o identidad",
-        "count": 36,
+        "count": 38,
         "companyIds": [
           "acelera-tu-crm",
           "agencia-pronoia",
           "agency-mdi",
+          "airos-agency",
           "amp-acuabit-es",
           "amp-agenciamarketingmedico-es",
           "amp-dentalketing-com",
@@ -681,6 +717,7 @@
           "borrads",
           "captaleads",
           "cliento",
+          "ddigitals",
           "devside-tm",
           "doga-marketing",
           "en-alta-agency",
@@ -722,14 +759,14 @@
             "text": "Otras agencias de marketing inmobiliario te traen leads. InmoSystem 3X™ te trae valoraciones agendadas."
           },
           {
-            "companyId": "amp-acuabit-es",
-            "name": "Acuabit",
-            "text": "Agencia Google Ads y SEM"
+            "companyId": "airos-agency",
+            "name": "Airos Agency",
+            "text": "Agencia de marketing jurídico"
           }
         ],
         "share": 14,
         "classifiedShare": 14,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "mechanism",
@@ -772,7 +809,7 @@
         ],
         "share": 4,
         "classifiedShare": 4,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "proof",
@@ -812,7 +849,7 @@
         ],
         "share": 3,
         "classifiedShare": 3,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "pain",
@@ -851,7 +888,7 @@
         ],
         "share": 3,
         "classifiedShare": 3,
-        "sampleBase": 261
+        "sampleBase": 280
       },
       {
         "id": "risk",
@@ -869,14 +906,14 @@
         ],
         "share": 0,
         "classifiedShare": 0,
-        "sampleBase": 261
+        "sampleBase": 280
       }
     ],
     "sectionPatterns": [
       {
         "id": "problem",
         "label": "Problema y contexto",
-        "count": 9,
+        "count": 10,
         "companyIds": [
           "amp-booksy-com",
           "amp-getalead-co",
@@ -886,6 +923,7 @@
           "leads-energy",
           "marketing-para-fisios",
           "sciremarketing",
+          "visionarius-ai",
           "werise-performance"
         ],
         "examples": [
@@ -915,13 +953,13 @@
             "text": "El problema no es tu equipo.Es que todo depende de él."
           }
         ],
-        "share": 3,
-        "medianPosition": 1
+        "share": 4,
+        "medianPosition": 2
       },
       {
         "id": "offer",
         "label": "Oferta y solución",
-        "count": 100,
+        "count": 105,
         "companyIds": [
           "acelera-tu-crm",
           "agencia-pronoia",
@@ -972,6 +1010,7 @@
           "certicalia",
           "cleanify-agency",
           "comunicare",
+          "ddigitals",
           "desorbitante",
           "dimoni",
           "doctoralia-grupo-docplanner",
@@ -981,6 +1020,7 @@
           "fluy",
           "generacion-leads-masterfy-lc",
           "growyourindustry",
+          "grupo-solnet",
           "habitissimo",
           "horizzon-media",
           "idealista-producto-para-agencias-inmobiliarias",
@@ -988,6 +1028,8 @@
           "iqlex-solutions-sl",
           "izi-by-edf",
           "kubik-experience",
+          "leadflow-espana",
+          "leads-juridicos-digital",
           "leadsclientes-stratcore-llc",
           "leadsmarketing",
           "lexiuris-marketing",
@@ -1014,6 +1056,7 @@
           "summum-marketing",
           "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
           "surper",
+          "taskus-sales-as-a-service",
           "the-selling-system-marc-graell",
           "top-doctors",
           "ubtcall",
@@ -1057,7 +1100,7 @@
       {
         "id": "mechanism",
         "label": "Proceso o mecanismo",
-        "count": 88,
+        "count": 93,
         "companyIds": [
           "acelera-tu-crm",
           "agency-go-to-market",
@@ -1089,6 +1132,7 @@
           "cliento",
           "comprarleads",
           "cyberclick",
+          "dejalia-secretaria-24-7",
           "dentalead",
           "desorbitante",
           "devside-tm",
@@ -1106,10 +1150,12 @@
           "kimoon",
           "leadiq-agency",
           "leads-energy",
+          "leads-juridicos-digital",
           "leadsclientes-stratcore-llc",
           "leadsmarketing",
           "lexiuris-marketing",
           "mains",
+          "maline-inmobiliaria",
           "marketing-para-fisios",
           "mas-captacion",
           "mavance",
@@ -1121,6 +1167,7 @@
           "pepperli",
           "pivote-marketing",
           "prontopro",
+          "publiactivos-comunicacion-marketing",
           "ranking-online",
           "reform-ads",
           "reformedia",
@@ -1145,6 +1192,7 @@
           "veltavia",
           "vertex-marketing",
           "viraltia",
+          "visionarius-ai",
           "werise-performance",
           "xpandex-abadesa-export-center-s-l"
         ],
@@ -1175,13 +1223,13 @@
             "text": "Te entregamos tu sistema de ventas.Y te enseñamos a dominarlo."
           }
         ],
-        "share": 34,
+        "share": 33,
         "medianPosition": 5
       },
       {
         "id": "proof",
         "label": "Prueba y autoridad",
-        "count": 56,
+        "count": 58,
         "companyIds": [
           "agencia-digital-seniors",
           "agencia-pronoia",
@@ -1205,6 +1253,7 @@
           "certicalia",
           "customertop",
           "dentalead",
+          "doctor-reputacion-legal-eraser",
           "ebisu-marketing-agency",
           "en-alta-agency",
           "escala-con-anuncios",
@@ -1238,6 +1287,7 @@
           "tapstar",
           "under-ads-ex-aiz-agency",
           "viraltia",
+          "visionarius-ai",
           "yag-comunicacion"
         ],
         "examples": [
@@ -1331,7 +1381,7 @@
       {
         "id": "guarantee",
         "label": "Garantía o reducción de riesgo",
-        "count": 20,
+        "count": 22,
         "companyIds": [
           "agency-mdi",
           "back-in-town-sdr-externalizado",
@@ -1340,10 +1390,12 @@
           "cronoshare",
           "customertop",
           "ebisu-marketing-agency",
+          "grupo-solnet",
           "habitissimo",
           "horizzon-media",
           "leadgrow",
           "leadiq-agency",
+          "leads-juridicos-digital",
           "leadsmarketing",
           "marketlabs",
           "mas-captacion",
@@ -1387,7 +1439,7 @@
       {
         "id": "pricing",
         "label": "Precio y condiciones",
-        "count": 15,
+        "count": 17,
         "companyIds": [
           "acelera-tu-crm",
           "agency-mdi",
@@ -1396,11 +1448,13 @@
           "amp-igtelcom-es",
           "amp-obrascongarantia-com",
           "audifono-es-hispania-hearing-partners",
+          "dejalia-secretaria-24-7",
           "ebisu-marketing-agency",
           "ecaptor",
           "masnegocio",
           "neomarketing",
           "orbanya",
+          "tecnofind",
           "tumejorlead",
           "veltavia",
           "werise-performance"
@@ -1438,7 +1492,7 @@
       {
         "id": "faq",
         "label": "Preguntas y objeciones",
-        "count": 62,
+        "count": 68,
         "companyIds": [
           "acelera-tu-crm",
           "adstralis",
@@ -1461,7 +1515,10 @@
           "captain-prospect",
           "captaleads",
           "cliento",
+          "consultoria-io",
+          "doctor-reputacion-legal-eraser",
           "eleva-digitals",
+          "erik-pascual",
           "escala-con-anuncios",
           "eximia-studio",
           "expiey",
@@ -1473,16 +1530,19 @@
           "involgy-enterprise-cloud-solutions-s-l",
           "kaizex",
           "kimoon",
+          "leadflow-espana",
           "leads-energy",
           "leadsclientes-stratcore-llc",
           "leadsmarketing",
           "lexiuris-marketing",
+          "maline-inmobiliaria",
           "marketingpubli",
           "markulia",
           "masnegocio",
           "mavance",
           "mavo-growth",
           "medical-marketing-digital-marketing-specialist-worldwide-llc",
+          "melendos-business",
           "metodo-vertice-samantha-quesada",
           "mpdentales-marketing-medico-y-sanitario-s-l",
           "neomarketing",
@@ -1531,15 +1591,15 @@
           }
         ],
         "share": 24,
-        "medianPosition": 15
+        "medianPosition": 14
       }
     ],
     "dataQuality": {
-      "eligibleCompanies": 324,
-      "salesPageCompanies": 261,
-      "usableCtaCompanies": 197,
+      "eligibleCompanies": 343,
+      "salesPageCompanies": 280,
+      "usableCtaCompanies": 211,
       "ctaCoveragePct": 75,
-      "classifiedHeroCompanies": 100,
+      "classifiedHeroCompanies": 107,
       "heroCoveragePct": 38,
       "auditedAbsenceOverrides": {
         "price": 29,
@@ -1556,7 +1616,7 @@
       {
         "id": "problem",
         "label": "Problema y contexto",
-        "purpose": "Nombrar el problema y el coste de no resolverlo con el lenguaje observado en el mercado. Observado en 3% de las páginas comerciales clasificables."
+        "purpose": "Nombrar el problema y el coste de no resolverlo con el lenguaje observado en el mercado. Observado en 4% de las páginas comerciales clasificables."
       },
       {
         "id": "offer",
@@ -1566,7 +1626,7 @@
       {
         "id": "mechanism",
         "label": "Proceso o mecanismo",
-        "purpose": "Explicar proceso, responsabilidades y siguiente paso de forma comprensible. Observado en 34% de las páginas comerciales clasificables."
+        "purpose": "Explicar proceso, responsabilidades y siguiente paso de forma comprensible. Observado en 33% de las páginas comerciales clasificables."
       },
       {
         "id": "proof",
@@ -1604,28 +1664,28 @@
     "clinicas-salud": {
       "id": "clinicas-salud",
       "label": "Clínicas y salud",
-      "sampleSize": 63,
-      "capturedPages": 144,
+      "sampleSize": 66,
+      "capturedPages": 147,
       "companiesWithLanding": 39,
       "medianFunnelSteps": 2,
       "medianFormFields": 4,
       "fieldPresence": {
         "headline": 100,
         "promise": 71,
-        "audience": 76,
+        "audience": 74,
         "offer": 97,
-        "mechanism": 75,
-        "primaryCta": 90,
+        "mechanism": 74,
+        "primaryCta": 89,
         "proof": 52,
-        "price": 24,
-        "guarantee": 32,
+        "price": 27,
+        "guarantee": 33,
         "funnel": 100
       },
       "ctaFamilies": [
         {
           "id": "booking",
           "label": "Reserva o llamada",
-          "count": 22,
+          "count": 23,
           "companyIds": [
             "doctoralia-grupo-docplanner",
             "top-doctors",
@@ -1641,6 +1701,7 @@
             "mas-captacion",
             "amp-docmedia-es",
             "amp-tuotempo-es",
+            "erik-pascual",
             "fertilidad-marketing",
             "vectoryal-nestor-garcia-velasco",
             "doga-marketing",
@@ -1673,16 +1734,17 @@
             }
           ],
           "share": 35,
-          "classifiedShare": 47,
-          "sampleBase": 63
+          "classifiedShare": 46,
+          "sampleBase": 66
         },
         {
           "id": "contact",
           "label": "Contacto directo",
-          "count": 9,
+          "count": 10,
           "companyIds": [
             "medical-marketing-digital-marketing-specialist-worldwide-llc",
             "amp-agenciamarketingmedico-es",
+            "doctor-reputacion-legal-eraser",
             "mpdentales-marketing-medico-y-sanitario-s-l",
             "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
             "kaizex",
@@ -1703,19 +1765,19 @@
               "text": "Enviar Mensaje"
             },
             {
+              "companyId": "doctor-reputacion-legal-eraser",
+              "name": "Doctor Reputación",
+              "text": "WhatsApp"
+            },
+            {
               "companyId": "mpdentales-marketing-medico-y-sanitario-s-l",
               "name": "MPDentales (Marketing Médico y Sanitario S.L.)",
               "text": "Enviar Mensaje"
-            },
-            {
-              "companyId": "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
-              "name": "Supertú (razón social no encontrada — sin aviso legal localizado)",
-              "text": "Preguntar por WhatsApp"
             }
           ],
-          "share": 14,
-          "classifiedShare": 19,
-          "sampleBase": 63
+          "share": 15,
+          "classifiedShare": 20,
+          "sampleBase": 66
         },
         {
           "id": "audit",
@@ -1753,19 +1815,20 @@
               "text": "SOLICITA DIAGNÓSTICO"
             }
           ],
-          "share": 13,
-          "classifiedShare": 17,
-          "sampleBase": 63
+          "share": 12,
+          "classifiedShare": 16,
+          "sampleBase": 66
         },
         {
           "id": "start",
           "label": "Empezar o comprar",
-          "count": 6,
+          "count": 7,
           "companyIds": [
             "stamina-marketing-marca-conseguir-pacientes",
             "playmedic",
             "amp-updent-es",
             "tu-agencia-365",
+            "dejalia-secretaria-24-7",
             "amp-toopixels-com",
             "escala-con-anuncios"
           ],
@@ -1791,9 +1854,9 @@
               "text": "Get Started"
             }
           ],
-          "share": 10,
-          "classifiedShare": 13,
-          "sampleBase": 63
+          "share": 11,
+          "classifiedShare": 14,
+          "sampleBase": 66
         },
         {
           "id": "quote",
@@ -1817,18 +1880,19 @@
           ],
           "share": 3,
           "classifiedShare": 4,
-          "sampleBase": 63
+          "sampleBase": 66
         }
       ],
       "heroFamilies": [
         {
           "id": "other",
           "label": "Otros enfoques",
-          "count": 35,
+          "count": 37,
           "companyIds": [
             "360-clinic-consulting",
             "stamina-marketing-marca-conseguir-pacientes",
             "top-doctors",
+            "doctor-reputacion-legal-eraser",
             "medical-marketing-marketingmedico-es",
             "mpdentales-marketing-medico-y-sanitario-s-l",
             "kairium-agency",
@@ -1846,6 +1910,7 @@
             "anexeo-anexeo-digital-s-l-u-alianza-con-marketingfunerario-com",
             "fertilidad-marketing",
             "vectoryal-nestor-garcia-velasco",
+            "dejalia-secretaria-24-7",
             "ebisu-marketing-agency",
             "marketingpubli",
             "sergio-marketing-digital",
@@ -1879,14 +1944,14 @@
               "text": "Clíncas Gaias A Coruña"
             },
             {
-              "companyId": "medical-marketing-marketingmedico-es",
-              "name": "Medical Marketing (marketingmedico.es)",
-              "text": "Auditoria Web (SEO + técnica)"
+              "companyId": "doctor-reputacion-legal-eraser",
+              "name": "Doctor Reputación",
+              "text": "Que tus pacientes encuentren confianza, no dudas."
             }
           ],
           "share": 56,
           "classifiedShare": 56,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "identity",
@@ -1929,14 +1994,14 @@
               "text": "Agencia Meta Ads en Málaga"
             }
           ],
-          "share": 21,
-          "classifiedShare": 21,
-          "sampleBase": 63
+          "share": 20,
+          "classifiedShare": 20,
+          "sampleBase": 66
         },
         {
           "id": "outcome",
           "label": "Resultado primero",
-          "count": 8,
+          "count": 9,
           "companyIds": [
             "medical-marketing-digital-marketing-specialist-worldwide-llc",
             "playmedic",
@@ -1944,6 +2009,7 @@
             "sara-marketer",
             "mas-captacion",
             "capilagency",
+            "erik-pascual",
             "tapstar",
             "agencia-digital-seniors"
           ],
@@ -1969,9 +2035,9 @@
               "text": "Llena la agenda de tu clínica de clientes cualificados sin depender del boca a boca"
             }
           ],
-          "share": 13,
-          "classifiedShare": 13,
-          "sampleBase": 63
+          "share": 14,
+          "classifiedShare": 14,
+          "sampleBase": 66
         },
         {
           "id": "proof",
@@ -2001,7 +2067,7 @@
           ],
           "share": 5,
           "classifiedShare": 5,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "mechanism",
@@ -2031,7 +2097,7 @@
           ],
           "share": 5,
           "classifiedShare": 5,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "pain",
@@ -2049,7 +2115,7 @@
           ],
           "share": 2,
           "classifiedShare": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         }
       ],
       "cooccurrences": [
@@ -2093,7 +2159,7 @@
             }
           ],
           "share": 6,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "identity--contact",
@@ -2128,7 +2194,42 @@
             }
           ],
           "share": 5,
-          "sampleBase": 63
+          "sampleBase": 66
+        },
+        {
+          "id": "outcome--booking",
+          "heroId": "outcome",
+          "heroLabel": "Resultado primero",
+          "ctaId": "booking",
+          "ctaLabel": "Reserva o llamada",
+          "count": 3,
+          "companyIds": [
+            "sara-marketer",
+            "mas-captacion",
+            "erik-pascual"
+          ],
+          "examples": [
+            {
+              "companyId": "sara-marketer",
+              "name": "Sara Marketer",
+              "headline": "Llena la agenda de tu clínica de clientes cualificados sin depender del boca a boca",
+              "primaryCta": "Reserva tu llamada →"
+            },
+            {
+              "companyId": "mas-captacion",
+              "name": "Más Captación",
+              "headline": "Llenamos tu agenda de pacientes nuevos este verano — o no pagas",
+              "primaryCta": "Agendar llamada de claridad →"
+            },
+            {
+              "companyId": "erik-pascual",
+              "name": "Erik Pascual",
+              "headline": "El Embudo de Ventas Que Multiplicará y Automatizará Tus Clientes en 90 Días",
+              "primaryCta": "Reservar llamada gratuita"
+            }
+          ],
+          "share": 5,
+          "sampleBase": 66
         },
         {
           "id": "outcome--audit",
@@ -2156,35 +2257,7 @@
             }
           ],
           "share": 3,
-          "sampleBase": 63
-        },
-        {
-          "id": "outcome--booking",
-          "heroId": "outcome",
-          "heroLabel": "Resultado primero",
-          "ctaId": "booking",
-          "ctaLabel": "Reserva o llamada",
-          "count": 2,
-          "companyIds": [
-            "sara-marketer",
-            "mas-captacion"
-          ],
-          "examples": [
-            {
-              "companyId": "sara-marketer",
-              "name": "Sara Marketer",
-              "headline": "Llena la agenda de tu clínica de clientes cualificados sin depender del boca a boca",
-              "primaryCta": "Reserva tu llamada →"
-            },
-            {
-              "companyId": "mas-captacion",
-              "name": "Más Captación",
-              "headline": "Llenamos tu agenda de pacientes nuevos este verano — o no pagas",
-              "primaryCta": "Agendar llamada de claridad →"
-            }
-          ],
-          "share": 3,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "outcome--contact",
@@ -2212,7 +2285,7 @@
             }
           ],
           "share": 3,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "proof--booking",
@@ -2240,7 +2313,7 @@
             }
           ],
           "share": 3,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "identity--audit",
@@ -2261,7 +2334,7 @@
             }
           ],
           "share": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "identity--quote",
@@ -2282,7 +2355,7 @@
             }
           ],
           "share": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "identity--start",
@@ -2303,7 +2376,7 @@
             }
           ],
           "share": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "mechanism--start",
@@ -2324,7 +2397,7 @@
             }
           ],
           "share": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "outcome--start",
@@ -2345,7 +2418,7 @@
             }
           ],
           "share": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         },
         {
           "id": "pain--audit",
@@ -2366,7 +2439,7 @@
             }
           ],
           "share": 2,
-          "sampleBase": 63
+          "sampleBase": 66
         }
       ],
       "examples": [
@@ -2991,6 +3064,75 @@
           "score": 196
         },
         {
+          "companyId": "doctor-reputacion-legal-eraser",
+          "name": "Doctor Reputación",
+          "country": "España",
+          "headline": "Que tus pacientes encuentren confianza, no dudas.",
+          "primaryCta": "WhatsApp",
+          "offer": "Captación sanitaria mediante SEO, Google Ads, Maps, landing pages, contenido y reputación.",
+          "proof": "",
+          "price": "Planes públicos de 799 €, 1.200 € y 1.490 € al mes.",
+          "guarantee": "No se localizó una garantía contractual de resultados.",
+          "funnelSteps": 1,
+          "capturedPages": 1,
+          "pageRoles": [
+            "homepage"
+          ],
+          "thumbnail": "/evidence/doctor-reputacion-legal-eraser/site-eea35a391b-homepage-thumb.webp",
+          "sourceUrl": "https://drreputacion.es/",
+          "sourceRole": "homepage",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 24,
+          "verticalConfidence": "high",
+          "verticalEvidence": "landing_content",
+          "verticalMargin": 19,
+          "curatedRank": null,
+          "completeness": 6,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "offer",
+            "primaryCta",
+            "price",
+            "funnel"
+          ],
+          "language": "es",
+          "sectionHeadings": [
+            "Hacemos que la autoridad médica suba y lo negativo baje",
+            "Diagnosticar",
+            "Crear autoridad",
+            "Subir lo positivo",
+            "Proteger",
+            "Doctor Reputación para profesionales de la salud",
+            "Reputación para clínicas",
+            "Marca personal médica",
+            "Gestión de reseñas",
+            "Sube posiciones en Google y donde tus pacientes buscan especialistas",
+            "Tu reputación médica ya no se juega solo en Google.",
+            "Ayúdanos con tu opinión",
+            "Consigue más reseñas y mejora la reputación online",
+            "Un plan medible para recuperar confianza online",
+            "Para clínicas, doctores y especialistas con reputación sensible",
+            "Clínicas médicas privadas",
+            "Cirujanos plásticos y estética",
+            "Clínicas dentales",
+            "Cuando Google no refleja tu prestigio real",
+            "Revisamos cómo aparece tu clínica o tu nombre médico en Google.",
+            "Preguntas frecuentes sobre reputación médica online"
+          ],
+          "sectionSequence": [
+            "proof",
+            "faq"
+          ],
+          "ctaTexts": [
+            "WhatsApp",
+            "Enviar WhatsApp"
+          ],
+          "documentHeight": 9975,
+          "score": 190
+        },
+        {
           "companyId": "medical-marketing-marketingmedico-es",
           "name": "Medical Marketing (marketingmedico.es)",
           "country": "España",
@@ -3110,93 +3252,13 @@
           "ctaTexts": [],
           "documentHeight": 3272,
           "score": 176
-        },
-        {
-          "companyId": "sara-marketer",
-          "name": "Sara Marketer",
-          "country": "España",
-          "headline": "Llena la agenda de tu clínica de clientes cualificados sin depender del boca a boca",
-          "primaryCta": "Reserva tu llamada →",
-          "offer": "Programa mentorizado para llenar la agenda de clientes y aumentar ventas 'sin depender de redes sociales': montan con el profesional sanitario un sistema de captación automatizado en 4 semanas. Modelo 'te enseño/acompaño', no done-for-you puro.",
-          "proof": "'+1.000 profesionales formados', '8M generados por mis clientes', '+7 años de experiencia'; 3 testimonios con nombre y cifras (10.000€/mes, agenda llena en 1 mes, 55 leads la primera semana, 7.000€ mensuales, retorno de casi 800€ con 12€ de inversión).",
-          "price": "",
-          "guarantee": "",
-          "funnelSteps": 5,
-          "capturedPages": 1,
-          "pageRoles": [
-            "homepage"
-          ],
-          "thumbnail": "/evidence/sara-marketer/site-d2b74f01da-homepage-thumb.webp",
-          "sourceUrl": "https://saramarketer.es/",
-          "sourceRole": "homepage",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 20,
-          "verticalConfidence": "high",
-          "verticalEvidence": "landing_content",
-          "verticalMargin": 20,
-          "curatedRank": null,
-          "completeness": 8,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "proof",
-            "funnel"
-          ],
-          "language": "es",
-          "sectionHeadings": [
-            "Fisioterapeutas y osteópatas",
-            "Nutricionistas y dietistas",
-            "Psicólogos y terapeutas",
-            "Clínicas de salud",
-            "Dependes del boca a boca",
-            "Las plataformas se llevan tu comisión",
-            "Publicas en redes sin resultados",
-            "No tienes tiempo para marketing",
-            "Un sistema que atrae pacientes mientras tú te dedicas a lo tuyo",
-            "Oferta irresistible para tu especialidad",
-            "Captación automatizada 24/7",
-            "Fidelización y recomendaciones",
-            "Marketing digital para clínicas de fisioterapia, nutrición, psicología y osteopatía en España",
-            "NAVEGACIÓN",
-            "Sobre mí",
-            "Trabaja Conmigo",
-            "Recursos",
-            "Casos de éxito",
-            "RECURSOS",
-            "Guías gratuitas",
-            "Podcast",
-            "Youtube",
-            "CONTACTO",
-            "info@saramarketer.es",
-            "Legal",
-            "Privacidad",
-            "Cookies",
-            "Condiciones"
-          ],
-          "sectionSequence": [
-            "mechanism",
-            "proof"
-          ],
-          "ctaTexts": [
-            "Reserva tu llamada →",
-            "Quiero llenar mi agenda",
-            "Reserva tu llamada gratuita",
-            "Reservar llamada"
-          ],
-          "documentHeight": 6901,
-          "score": 176
         }
       ],
       "recommendations": [
-        "El enfoque más visible es «Categoría o identidad» (13 de 63); úsalo como control, no como ganador.",
-        "El 75% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
+        "El enfoque más visible es «Categoría o identidad» (13 de 66); úsalo como control, no como ganador.",
+        "El 76% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 4 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 52% y el mecanismo en 75% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 52% y el mecanismo en 74% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "sectionPatterns": [
         {
@@ -3287,13 +3349,13 @@
               "text": "Beneficios para su Web:"
             }
           ],
-          "share": 41,
+          "share": 39,
           "medianPosition": 4
         },
         {
           "id": "mechanism",
           "label": "Proceso o mecanismo",
-          "count": 25,
+          "count": 26,
           "companyIds": [
             "auge-salud",
             "amp-agenciamarketingmedico-es",
@@ -3311,6 +3373,7 @@
             "vectoryal-nestor-garcia-velasco",
             "devside-tm",
             "doga-marketing",
+            "dejalia-secretaria-24-7",
             "ebisu-marketing-agency",
             "sergio-marketing-digital",
             "roashunter",
@@ -3348,17 +3411,18 @@
               "text": "Un sistema que atrae pacientes mientras tú te dedicas a lo tuyo"
             }
           ],
-          "share": 40,
+          "share": 39,
           "medianPosition": 7
         },
         {
           "id": "proof",
           "label": "Prueba y autoridad",
-          "count": 16,
+          "count": 17,
           "companyIds": [
             "auge-salud",
             "stamina-marketing-marca-conseguir-pacientes",
             "playmedic",
+            "doctor-reputacion-legal-eraser",
             "dentalead",
             "sara-marketer",
             "rauw-leads",
@@ -3390,46 +3454,17 @@
               "text": "Casos de Éxito"
             },
             {
+              "companyId": "doctor-reputacion-legal-eraser",
+              "name": "Doctor Reputación",
+              "text": "Gestión de reseñas"
+            },
+            {
               "companyId": "dentalead",
               "name": "Dentalead",
               "text": "Vídeo corto con resultados reales"
-            },
-            {
-              "companyId": "sara-marketer",
-              "name": "Sara Marketer",
-              "text": "Casos de éxito"
             }
           ],
-          "share": 25,
-          "medianPosition": 7
-        },
-        {
-          "id": "pricing",
-          "label": "Precio y condiciones",
-          "count": 3,
-          "companyIds": [
-            "ebisu-marketing-agency",
-            "ecaptor",
-            "audifono-es-hispania-hearing-partners"
-          ],
-          "examples": [
-            {
-              "companyId": "ebisu-marketing-agency",
-              "name": "Ebisu Marketing Agency",
-              "text": "Plan Local"
-            },
-            {
-              "companyId": "ecaptor",
-              "name": "Ecaptor",
-              "text": "Plan Captación"
-            },
-            {
-              "companyId": "audifono-es-hispania-hearing-partners",
-              "name": "Audifono.es (Hispania Hearing Partners)",
-              "text": "Precios de Audífonos"
-            }
-          ],
-          "share": 5,
+          "share": 26,
           "medianPosition": 8
         },
         {
@@ -3471,7 +3506,42 @@
               "text": "¿PARA QUIÉN TRABAJAMOS?"
             }
           ],
-          "share": 10,
+          "share": 9,
+          "medianPosition": 10
+        },
+        {
+          "id": "pricing",
+          "label": "Precio y condiciones",
+          "count": 4,
+          "companyIds": [
+            "dejalia-secretaria-24-7",
+            "ebisu-marketing-agency",
+            "ecaptor",
+            "audifono-es-hispania-hearing-partners"
+          ],
+          "examples": [
+            {
+              "companyId": "dejalia-secretaria-24-7",
+              "name": "Dejalia · Secretaria 24/7",
+              "text": "Planes que se pagan solos en el primer mes"
+            },
+            {
+              "companyId": "ebisu-marketing-agency",
+              "name": "Ebisu Marketing Agency",
+              "text": "Plan Local"
+            },
+            {
+              "companyId": "ecaptor",
+              "name": "Ecaptor",
+              "text": "Plan Captación"
+            },
+            {
+              "companyId": "audifono-es-hispania-hearing-partners",
+              "name": "Audifono.es (Hispania Hearing Partners)",
+              "text": "Precios de Audífonos"
+            }
+          ],
+          "share": 6,
           "medianPosition": 10
         },
         {
@@ -3518,16 +3588,18 @@
         {
           "id": "faq",
           "label": "Preguntas y objeciones",
-          "count": 18,
+          "count": 20,
           "companyIds": [
             "medical-marketing-digital-marketing-specialist-worldwide-llc",
             "amp-agenciamarketingmedico-es",
             "leadsclientes-stratcore-llc",
+            "doctor-reputacion-legal-eraser",
             "mpdentales-marketing-medico-y-sanitario-s-l",
             "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
             "kaizex",
             "capilagency",
             "captaleads",
+            "erik-pascual",
             "fertilidad-marketing",
             "marketingpubli",
             "roashunter",
@@ -3556,28 +3628,28 @@
               "text": "Preguntas Frecuentes sobre la captación de leads"
             },
             {
+              "companyId": "doctor-reputacion-legal-eraser",
+              "name": "Doctor Reputación",
+              "text": "Preguntas frecuentes sobre reputación médica online"
+            },
+            {
               "companyId": "mpdentales-marketing-medico-y-sanitario-s-l",
               "name": "MPDentales (Marketing Médico y Sanitario S.L.)",
               "text": "Preguntas Frecuentes"
-            },
-            {
-              "companyId": "supertu-razon-social-no-encontrada-sin-aviso-legal-localizado",
-              "name": "Supertú (razón social no encontrada — sin aviso legal localizado)",
-              "text": "Preguntas frecuentes"
             }
           ],
-          "share": 29,
+          "share": 30,
           "medianPosition": 13
         }
       ],
       "study": {
         "confidence": "medium",
         "coverage": {
-          "eligibleCompanies": 63,
-          "heroClassifiedCompanies": 28,
+          "eligibleCompanies": 66,
+          "heroClassifiedCompanies": 29,
           "heroCoveragePct": 44,
-          "ctaClassifiedCompanies": 47,
-          "ctaCoveragePct": 75
+          "ctaClassifiedCompanies": 50,
+          "ctaCoveragePct": 76
         },
         "dominantHero": {
           "id": "identity",
@@ -3620,14 +3692,14 @@
               "text": "Agencia Meta Ads en Málaga"
             }
           ],
-          "share": 21,
-          "classifiedShare": 21,
-          "sampleBase": 63
+          "share": 20,
+          "classifiedShare": 20,
+          "sampleBase": 66
         },
         "dominantCta": {
           "id": "booking",
           "label": "Reserva o llamada",
-          "count": 22,
+          "count": 23,
           "companyIds": [
             "doctoralia-grupo-docplanner",
             "top-doctors",
@@ -3643,6 +3715,7 @@
             "mas-captacion",
             "amp-docmedia-es",
             "amp-tuotempo-es",
+            "erik-pascual",
             "fertilidad-marketing",
             "vectoryal-nestor-garcia-velasco",
             "doga-marketing",
@@ -3675,28 +3748,28 @@
             }
           ],
           "share": 35,
-          "classifiedShare": 47,
-          "sampleBase": 63
+          "classifiedShare": 46,
+          "sampleBase": 66
         },
         "strengths": [],
         "opportunities": [
           {
             "field": "price",
-            "presence": 24,
-            "universal": 26,
-            "delta": -2
+            "presence": 27,
+            "universal": 28,
+            "delta": -1
           },
           {
             "field": "guarantee",
-            "presence": 32,
-            "universal": 34,
+            "presence": 33,
+            "universal": 35,
             "delta": -2
           },
           {
             "field": "proof",
             "presence": 52,
-            "universal": 58,
-            "delta": -6
+            "universal": 57,
+            "delta": -5
           }
         ],
         "recommendedDefaults": {
@@ -5161,8 +5234,8 @@
           {
             "field": "proof",
             "presence": 73,
-            "universal": 58,
-            "delta": 15
+            "universal": 57,
+            "delta": 16
           },
           {
             "field": "primaryCta",
@@ -5173,22 +5246,22 @@
           {
             "field": "price",
             "presence": 36,
-            "universal": 26,
-            "delta": 10
+            "universal": 28,
+            "delta": 8
           }
         ],
         "opportunities": [
           {
             "field": "price",
             "presence": 36,
-            "universal": 26,
-            "delta": 10
+            "universal": 28,
+            "delta": 8
           },
           {
             "field": "guarantee",
             "presence": 41,
-            "universal": 34,
-            "delta": 7
+            "universal": 35,
+            "delta": 6
           }
         ],
         "recommendedDefaults": {
@@ -5204,24 +5277,54 @@
     "solar-energia": {
       "id": "solar-energia",
       "label": "Solar y energía",
-      "sampleSize": 15,
-      "capturedPages": 28,
-      "companiesWithLanding": 8,
+      "sampleSize": 16,
+      "capturedPages": 30,
+      "companiesWithLanding": 9,
       "medianFunnelSteps": 2,
       "medianFormFields": 5,
       "fieldPresence": {
         "headline": 100,
-        "promise": 93,
-        "audience": 93,
+        "promise": 94,
+        "audience": 88,
         "offer": 100,
-        "mechanism": 67,
-        "primaryCta": 73,
-        "proof": 73,
-        "price": 20,
-        "guarantee": 33,
+        "mechanism": 63,
+        "primaryCta": 75,
+        "proof": 69,
+        "price": 25,
+        "guarantee": 38,
         "funnel": 100
       },
       "ctaFamilies": [
+        {
+          "id": "booking",
+          "label": "Reserva o llamada",
+          "count": 3,
+          "companyIds": [
+            "veive",
+            "systemeleads",
+            "presupuestossolares-es-betterbusiness"
+          ],
+          "examples": [
+            {
+              "companyId": "veive",
+              "name": "Veive",
+              "text": "Agenda tu llamada y descubre lo que podemos hacer por tu negocio"
+            },
+            {
+              "companyId": "systemeleads",
+              "name": "SystemeLeads",
+              "text": "Agenda tu llamada"
+            },
+            {
+              "companyId": "presupuestossolares-es-betterbusiness",
+              "name": "PresupuestosSolares.es / betterbusiness",
+              "text": "Consultar demanda y recibir propuesta."
+            }
+          ],
+          "share": 19,
+          "classifiedShare": 38,
+          "sampleBase": 16
+        },
         {
           "id": "start",
           "label": "Empezar o comprar",
@@ -5243,32 +5346,8 @@
             }
           ],
           "share": 13,
-          "classifiedShare": 29,
-          "sampleBase": 15
-        },
-        {
-          "id": "booking",
-          "label": "Reserva o llamada",
-          "count": 2,
-          "companyIds": [
-            "veive",
-            "systemeleads"
-          ],
-          "examples": [
-            {
-              "companyId": "veive",
-              "name": "Veive",
-              "text": "Agenda tu llamada y descubre lo que podemos hacer por tu negocio"
-            },
-            {
-              "companyId": "systemeleads",
-              "name": "SystemeLeads",
-              "text": "Agenda tu llamada"
-            }
-          ],
-          "share": 13,
-          "classifiedShare": 29,
-          "sampleBase": 15
+          "classifiedShare": 25,
+          "sampleBase": 16
         },
         {
           "id": "audit",
@@ -5284,9 +5363,9 @@
               "text": "Solicitar diagnóstico"
             }
           ],
-          "share": 7,
-          "classifiedShare": 14,
-          "sampleBase": 15
+          "share": 6,
+          "classifiedShare": 13,
+          "sampleBase": 16
         },
         {
           "id": "contact",
@@ -5302,9 +5381,9 @@
               "text": "Contact"
             }
           ],
-          "share": 7,
-          "classifiedShare": 14,
-          "sampleBase": 15
+          "share": 6,
+          "classifiedShare": 13,
+          "sampleBase": 16
         },
         {
           "id": "quote",
@@ -5320,16 +5399,16 @@
               "text": "devis gratuit"
             }
           ],
-          "share": 7,
-          "classifiedShare": 14,
-          "sampleBase": 15
+          "share": 6,
+          "classifiedShare": 13,
+          "sampleBase": 16
         }
       ],
       "heroFamilies": [
         {
           "id": "other",
           "label": "Otros enfoques",
-          "count": 10,
+          "count": 11,
           "companyIds": [
             "leads-energy",
             "amp-leadbolt-online",
@@ -5338,6 +5417,7 @@
             "pepperli",
             "veive",
             "venus-consulting",
+            "presupuestossolares-es-betterbusiness",
             "amp-sodigix-com",
             "clyverum",
             "mas-clientes-energia"
@@ -5364,9 +5444,9 @@
               "text": "Consígue una entrada recurrente de clientes interesados (de verdad) para tu negocio de energías renovables"
             }
           ],
-          "share": 67,
-          "classifiedShare": 67,
-          "sampleBase": 15
+          "share": 69,
+          "classifiedShare": 69,
+          "sampleBase": 16
         },
         {
           "id": "outcome",
@@ -5390,7 +5470,7 @@
           ],
           "share": 13,
           "classifiedShare": 13,
-          "sampleBase": 15
+          "sampleBase": 16
         },
         {
           "id": "identity",
@@ -5406,9 +5486,9 @@
               "text": "LA AGENCIA QUE SOLO TRABAJA CON INSTALADORAS SOLARES"
             }
           ],
-          "share": 7,
-          "classifiedShare": 7,
-          "sampleBase": 15
+          "share": 6,
+          "classifiedShare": 6,
+          "sampleBase": 16
         },
         {
           "id": "mechanism",
@@ -5424,9 +5504,9 @@
               "text": "Hacemos que tu empresa de placas solares aumente su facturación con su propio sistema"
             }
           ],
-          "share": 7,
-          "classifiedShare": 7,
-          "sampleBase": 15
+          "share": 6,
+          "classifiedShare": 6,
+          "sampleBase": 16
         },
         {
           "id": "pain",
@@ -5442,9 +5522,9 @@
               "text": "Escala tu empresa de placas solares sin depender de referidos"
             }
           ],
-          "share": 7,
-          "classifiedShare": 7,
-          "sampleBase": 15
+          "share": 6,
+          "classifiedShare": 6,
+          "sampleBase": 16
         }
       ],
       "cooccurrences": [
@@ -5466,8 +5546,8 @@
               "primaryCta": "Agenda tu llamada"
             }
           ],
-          "share": 7,
-          "sampleBase": 15
+          "share": 6,
+          "sampleBase": 16
         },
         {
           "id": "outcome--start",
@@ -5487,8 +5567,8 @@
               "primaryCta": "Empieza a recibir leads cualificados"
             }
           ],
-          "share": 7,
-          "sampleBase": 15
+          "share": 6,
+          "sampleBase": 16
         }
       ],
       "examples": [
@@ -6199,22 +6279,23 @@
           "score": 101
         },
         {
-          "companyId": "cleopatroimpact",
-          "name": "Cleopatroimpact",
-          "country": "España",
-          "headline": "Escala tu empresa de placas solares sin depender de referidos",
-          "primaryCta": "",
-          "offer": "Según el anuncio: leads/sistema de cierre para instaladoras de autoconsumo solar atacando la baja conversión de presupuestos ('Haces 20 presupuestos de autoconsumo y cierras 3... Nuestros clientes suman 2-3 instalaciones extra cada semana'). Web no encontrada: oferta completa sin verificar.",
-          "proof": "Solo la afirmación del anuncio ('nuestros clientes suman 2-3 instalaciones extra cada semana'), sin clientes nombrados ni cifras verificables en ninguna fuente pública.",
-          "price": "Web no encontrada — sin datos de precios",
-          "guarantee": "Web no encontrada — sin garantía verificable; el anuncio promete resultado ('2-3 instalaciones extra cada semana') sin formularlo como garantía",
-          "funnelSteps": 2,
-          "capturedPages": 1,
+          "companyId": "presupuestossolares-es-betterbusiness",
+          "name": "PresupuestosSolares.es / betterbusiness",
+          "country": "Alemania",
+          "headline": "¿Necesitas leads a medida?",
+          "primaryCta": "Consultar demanda y recibir propuesta.",
+          "offer": "Leads solares cualificados por zona entregados por email o CRM a instaladores españoles.",
+          "proof": "",
+          "price": "Pago por lead a importe pactado; sin fijo, mínimos ni permanencia declarados.",
+          "guarantee": "Hasta 20 leads de prueba y reclamación cuando una solicitud no cumple los criterios comunicados.",
+          "funnelSteps": 1,
+          "capturedPages": 2,
           "pageRoles": [
+            "homepage",
             "landing"
           ],
-          "thumbnail": "/evidence/cleopatroimpact/site-5643708348-landing-thumb.webp",
-          "sourceUrl": "https://cleopatroimpact.es/01-home-page",
+          "thumbnail": "/evidence/presupuestossolares-es-betterbusiness/site-768b783a8d-landing-thumb.webp",
+          "sourceUrl": "https://instaladores.presupuestossolares.es/?placement=",
           "sourceRole": "landing",
           "salesPageValid": true,
           "trustedScope": true,
@@ -6223,28 +6304,34 @@
           "verticalEvidence": "landing_content",
           "verticalMargin": 5,
           "curatedRank": null,
-          "completeness": 6,
+          "completeness": 7,
           "fieldsPresent": [
             "headline",
             "promise",
-            "audience",
             "offer",
-            "proof",
+            "primaryCta",
+            "price",
+            "guarantee",
             "funnel"
           ],
           "language": "es",
-          "sectionHeadings": [],
+          "sectionHeadings": [
+            "Recibe leads solares cualificados en tu zona!",
+            "+++ 251 leads solares generados en las últimas 24 horas* +++",
+            "Más de 200 empresas en Europa ya trabajan con nosotros",
+            "¿Cómo desea comenzar?"
+          ],
           "sectionSequence": [],
           "ctaTexts": [],
-          "documentHeight": 733,
-          "score": 95
+          "documentHeight": 2703,
+          "score": 98
         }
       ],
       "recommendations": [
         "No hay una apertura dominante con soporte suficiente; prioriza claridad de público, problema y oferta.",
-        "El 47% de la muestra ofrece un CTA comercial recuperable; «Empezar o comprar» es la familia más observada.",
+        "El 50% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 5 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 73% y el mecanismo en 67% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 69% y el mecanismo en 63% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "sectionPatterns": [
         {
@@ -6261,7 +6348,7 @@
               "text": "Por qué a muchas instaladoras les cuesta crecer"
             }
           ],
-          "share": 7,
+          "share": 6,
           "medianPosition": 1
         },
         {
@@ -6278,7 +6365,7 @@
               "text": "Ya que trabajamos con garantia de exito, solo podremos ayudarte tras pasar la auditoria."
             }
           ],
-          "share": 7,
+          "share": 6,
           "medianPosition": 2
         },
         {
@@ -6319,7 +6406,7 @@
               "text": "Todo lo que necesitasen un solo sistema"
             }
           ],
-          "share": 33,
+          "share": 31,
           "medianPosition": 5
         },
         {
@@ -6354,7 +6441,7 @@
               "text": "SODIGIX : l'expertise au service de leads de haute qualité"
             }
           ],
-          "share": 27,
+          "share": 25,
           "medianPosition": 11
         },
         {
@@ -6383,7 +6470,7 @@
               "text": "Preguntas frecuentes sobre leads de solar"
             }
           ],
-          "share": 20,
+          "share": 19,
           "medianPosition": 11
         },
         {
@@ -6412,7 +6499,7 @@
               "text": "Lo que dicen nuestros clientes"
             }
           ],
-          "share": 20,
+          "share": 19,
           "medianPosition": 12
         },
         {
@@ -6429,89 +6516,95 @@
               "text": "🚀 ¿Para quién es Venus?"
             }
           ],
-          "share": 7,
+          "share": 6,
           "medianPosition": 13
         }
       ],
       "study": {
         "confidence": "medium",
         "coverage": {
-          "eligibleCompanies": 15,
+          "eligibleCompanies": 16,
           "heroClassifiedCompanies": 5,
-          "heroCoveragePct": 33,
-          "ctaClassifiedCompanies": 7,
-          "ctaCoveragePct": 47
+          "heroCoveragePct": 31,
+          "ctaClassifiedCompanies": 8,
+          "ctaCoveragePct": 50
         },
         "dominantHero": null,
         "dominantCta": {
-          "id": "start",
-          "label": "Empezar o comprar",
-          "count": 2,
+          "id": "booking",
+          "label": "Reserva o llamada",
+          "count": 3,
           "companyIds": [
-            "solar-leads-estudio",
-            "dimoni"
+            "veive",
+            "systemeleads",
+            "presupuestossolares-es-betterbusiness"
           ],
           "examples": [
             {
-              "companyId": "solar-leads-estudio",
-              "name": "Solar Leads Estudio",
-              "text": "Empieza a recibir leads cualificados"
+              "companyId": "veive",
+              "name": "Veive",
+              "text": "Agenda tu llamada y descubre lo que podemos hacer por tu negocio"
             },
             {
-              "companyId": "dimoni",
-              "name": "Dimoni",
-              "text": "Comprar Leads"
+              "companyId": "systemeleads",
+              "name": "SystemeLeads",
+              "text": "Agenda tu llamada"
+            },
+            {
+              "companyId": "presupuestossolares-es-betterbusiness",
+              "name": "PresupuestosSolares.es / betterbusiness",
+              "text": "Consultar demanda y recibir propuesta."
             }
           ],
-          "share": 13,
-          "classifiedShare": 29,
-          "sampleBase": 15
+          "share": 19,
+          "classifiedShare": 38,
+          "sampleBase": 16
         },
         "strengths": [
           {
             "field": "promise",
-            "presence": 93,
+            "presence": 94,
             "universal": 72,
-            "delta": 21
+            "delta": 22
           },
           {
             "field": "audience",
-            "presence": 93,
-            "universal": 73,
-            "delta": 20
+            "presence": 88,
+            "universal": 70,
+            "delta": 18
           },
           {
             "field": "proof",
-            "presence": 73,
-            "universal": 58,
-            "delta": 15
+            "presence": 69,
+            "universal": 57,
+            "delta": 12
           }
         ],
         "opportunities": [
           {
             "field": "price",
-            "presence": 20,
-            "universal": 26,
-            "delta": -6
+            "presence": 25,
+            "universal": 28,
+            "delta": -3
           },
           {
             "field": "guarantee",
-            "presence": 33,
-            "universal": 34,
-            "delta": -1
+            "presence": 38,
+            "universal": 35,
+            "delta": 3
           },
           {
             "field": "primaryCta",
-            "presence": 73,
+            "presence": 75,
             "universal": 88,
-            "delta": -15
+            "delta": -13
           }
         ],
         "recommendedDefaults": {
           "architecture": "local",
           "angle": "outcome",
           "ctaMode": "calendar",
-          "ctaLabel": "Comprobar si encaja",
+          "ctaLabel": "Reservar una primera conversación",
           "formFields": 5
         },
         "warnings": []
@@ -6520,20 +6613,20 @@
     "inmobiliario": {
       "id": "inmobiliario",
       "label": "Inmobiliario",
-      "sampleSize": 22,
-      "capturedPages": 50,
-      "companiesWithLanding": 14,
-      "medianFunnelSteps": 4,
+      "sampleSize": 25,
+      "capturedPages": 55,
+      "companiesWithLanding": 16,
+      "medianFunnelSteps": 2,
       "medianFormFields": 6,
       "fieldPresence": {
         "headline": 100,
-        "promise": 82,
-        "audience": 86,
+        "promise": 80,
+        "audience": 80,
         "offer": 100,
-        "mechanism": 82,
-        "primaryCta": 82,
-        "proof": 64,
-        "price": 36,
+        "mechanism": 76,
+        "primaryCta": 84,
+        "proof": 60,
+        "price": 40,
         "guarantee": 32,
         "funnel": 100
       },
@@ -6541,7 +6634,7 @@
         {
           "id": "booking",
           "label": "Reserva o llamada",
-          "count": 11,
+          "count": 13,
           "companyIds": [
             "horizzon-media",
             "inmoads",
@@ -6550,10 +6643,12 @@
             "smartads",
             "amp-cseosagency-com",
             "vertex-marketing",
+            "maline-inmobiliaria",
             "comprarleads",
             "bixquert-performance-ads",
             "goal-guiders-ia",
-            "amp-leadinmo-es"
+            "amp-leadinmo-es",
+            "tecnofind"
           ],
           "examples": [
             {
@@ -6577,9 +6672,9 @@
               "text": "Solicitar Información"
             }
           ],
-          "share": 50,
-          "classifiedShare": 58,
-          "sampleBase": 22
+          "share": 52,
+          "classifiedShare": 59,
+          "sampleBase": 25
         },
         {
           "id": "contact",
@@ -6615,9 +6710,9 @@
               "text": "Cómo usar los Grupos de WhatsApp en nuestra empresa"
             }
           ],
-          "share": 27,
-          "classifiedShare": 32,
-          "sampleBase": 22
+          "share": 24,
+          "classifiedShare": 27,
+          "sampleBase": 25
         },
         {
           "id": "start",
@@ -6639,16 +6734,34 @@
               "text": "Prueba nuestro software de gestión para inmobiliarias"
             }
           ],
-          "share": 9,
-          "classifiedShare": 11,
-          "sampleBase": 22
+          "share": 8,
+          "classifiedShare": 9,
+          "sampleBase": 25
+        },
+        {
+          "id": "audit",
+          "label": "Auditoría o diagnóstico",
+          "count": 1,
+          "companyIds": [
+            "visionarius-ai"
+          ],
+          "examples": [
+            {
+              "companyId": "visionarius-ai",
+              "name": "Visionarius AI",
+              "text": "AGENDAR AUDITORÍAAGENDAR AUDITORÍA"
+            }
+          ],
+          "share": 4,
+          "classifiedShare": 5,
+          "sampleBase": 25
         }
       ],
       "heroFamilies": [
         {
           "id": "other",
           "label": "Otros enfoques",
-          "count": 13,
+          "count": 16,
           "companyIds": [
             "markulia",
             "desorbitante",
@@ -6656,13 +6769,16 @@
             "amp-cseosagency-com",
             "vertex-marketing",
             "inmogrowth",
+            "maline-inmobiliaria",
             "llavia",
             "idealista-producto-para-agencias-inmobiliarias",
             "amp-activatelemarketing-es",
             "comprarleads",
             "eleva-digitals",
             "vcf-marketing-vcf-group-bcn-sl",
-            "bixquert-performance-ads"
+            "visionarius-ai",
+            "bixquert-performance-ads",
+            "tecnofind"
           ],
           "examples": [
             {
@@ -6686,9 +6802,9 @@
               "text": "Leads para inmobiliarias"
             }
           ],
-          "share": 59,
-          "classifiedShare": 59,
-          "sampleBase": 22
+          "share": 64,
+          "classifiedShare": 64,
+          "sampleBase": 25
         },
         {
           "id": "outcome",
@@ -6716,9 +6832,9 @@
               "text": "Consigue más firmas sin depender de inmobiliarias ni comprar leads compartidos"
             }
           ],
-          "share": 14,
-          "classifiedShare": 14,
-          "sampleBase": 22
+          "share": 12,
+          "classifiedShare": 12,
+          "sampleBase": 25
         },
         {
           "id": "identity",
@@ -6746,9 +6862,9 @@
               "text": "Marketing para agencias inmobiliarias y API.Duplica las ventas cerradas al mes"
             }
           ],
-          "share": 14,
-          "classifiedShare": 14,
-          "sampleBase": 22
+          "share": 12,
+          "classifiedShare": 12,
+          "sampleBase": 25
         },
         {
           "id": "mechanism",
@@ -6770,9 +6886,9 @@
               "text": "Capta propiedades en exclusiva con un Sistema Probado."
             }
           ],
-          "share": 9,
-          "classifiedShare": 9,
-          "sampleBase": 22
+          "share": 8,
+          "classifiedShare": 8,
+          "sampleBase": 25
         },
         {
           "id": "proof",
@@ -6788,9 +6904,9 @@
               "text": "Descubre cómo captar +20 propiedades en exclusiva cada mes de forma automatizada"
             }
           ],
-          "share": 5,
-          "classifiedShare": 5,
-          "sampleBase": 22
+          "share": 4,
+          "classifiedShare": 4,
+          "sampleBase": 25
         }
       ],
       "cooccurrences": [
@@ -6819,8 +6935,8 @@
               "primaryCta": "Enviar mensaje"
             }
           ],
-          "share": 9,
-          "sampleBase": 22
+          "share": 8,
+          "sampleBase": 25
         },
         {
           "id": "mechanism--booking",
@@ -6847,8 +6963,8 @@
               "primaryCta": "Agenda tu llamada"
             }
           ],
-          "share": 9,
-          "sampleBase": 22
+          "share": 8,
+          "sampleBase": 25
         },
         {
           "id": "identity--booking",
@@ -6868,8 +6984,8 @@
               "primaryCta": "Agenda una llamada"
             }
           ],
-          "share": 5,
-          "sampleBase": 22
+          "share": 4,
+          "sampleBase": 25
         },
         {
           "id": "outcome--booking",
@@ -6889,8 +7005,8 @@
               "primaryCta": "Agenda tu reunión"
             }
           ],
-          "share": 5,
-          "sampleBase": 22
+          "share": 4,
+          "sampleBase": 25
         },
         {
           "id": "proof--booking",
@@ -6910,8 +7026,8 @@
               "primaryCta": "Agenda llamada"
             }
           ],
-          "share": 5,
-          "sampleBase": 22
+          "share": 4,
+          "sampleBase": 25
         }
       ],
       "examples": [
@@ -7594,6 +7710,65 @@
           "score": 120
         },
         {
+          "companyId": "maline-inmobiliaria",
+          "name": "Maline Inmobiliaria",
+          "country": "Francia",
+          "headline": "La pige immobilière est bientôt interdite. Passez à la prospection prédictive.",
+          "primaryCta": "Solicitar demo o reservar territorio.",
+          "offer": "Identificación predictiva y scoring de propietarios vendedores, campañas y territorio exclusivo para agencias inmobiliarias.",
+          "proof": "",
+          "price": "Herramientas desde 59 € al mes; plan predictivo desde 300 € al mes.",
+          "guarantee": "Exclusividad territorial declarada; comunica primeros leads en unos 15 días, sin garantía de conversión.",
+          "funnelSteps": 1,
+          "capturedPages": 2,
+          "pageRoles": [
+            "homepage",
+            "landing"
+          ],
+          "thumbnail": "/evidence/maline-inmobiliaria/site-6a818d75b3-landing-thumb.webp",
+          "sourceUrl": "https://www.maline.io/fr/",
+          "sourceRole": "landing",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 10,
+          "verticalConfidence": "high",
+          "verticalEvidence": "landing_content",
+          "verticalMargin": 10,
+          "curatedRank": null,
+          "completeness": 6,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "offer",
+            "primaryCta",
+            "price",
+            "funnel"
+          ],
+          "language": "fr-FR",
+          "sectionHeadings": [
+            "Ils nous font confiance au quotidien",
+            "Qu'est-ce que le logiciel Maline Immobilier ?",
+            "Un générateur de leads vendeurs immobiliers",
+            "Un outil de prospection immobilière digitale",
+            "Une application pour suivre ses prospects",
+            "La pige immobilière sera interdite. Anticipez dès maintenant.",
+            "Nous vous donnons toutes les cartes en main pour trouver des propriétaires qui veulent vraiment vendre leur bien",
+            "Propulsez votre visibilité vers de nouveaux sommets !",
+            "Etape 1",
+            "Etape 2",
+            "Etape 3",
+            "Nos guides pour booster votre prospection immobilière",
+            "Questions fréquentes"
+          ],
+          "sectionSequence": [
+            "mechanism",
+            "faq"
+          ],
+          "ctaTexts": [],
+          "documentHeight": 8563,
+          "score": 120
+        },
+        {
           "companyId": "acelera-tu-crm",
           "name": "Acelera tu CRM",
           "country": "España",
@@ -7662,80 +7837,36 @@
           "ctaTexts": [],
           "documentHeight": 12387,
           "score": 119
-        },
-        {
-          "companyId": "llavia",
-          "name": "Llavia",
-          "country": "España",
-          "headline": "Del visitante a la ficha de oportunidad, paso a paso.",
-          "primaryCta": "Comprar▾",
-          "offer": "Scoring con IA, captación, CRM y derivación hipotecaria; software y modalidad por lead/cita.",
-          "proof": "",
-          "price": "Piloto: setup 500–1.500 € + 300–800 €/mes. Starter 299 € + setup 500 €; Growth 799 € + 1.500 €; Local 1.500 € + 3.000 €. Partner: 20–50 € lead comprador, 50–150 € propietario, 100–250 € cita.",
-          "guarantee": "Piloto real de 30 días y planes mensuales sin permanencia. En Partner, el lead se cualifica antes de facturar y si la agencia no lo acepta, no lo paga; criterios finales deben pactarse.",
-          "funnelSteps": 8,
-          "capturedPages": 3,
-          "pageRoles": [
-            "homepage",
-            "landing",
-            "conversion"
-          ],
-          "thumbnail": "/evidence/llavia/site-cb49281f77-conversion-thumb.webp",
-          "sourceUrl": "https://llavia.es/demo-agencia",
-          "sourceRole": "conversion",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 8,
-          "verticalConfidence": "medium",
-          "verticalEvidence": "landing_content",
-          "verticalMargin": 8,
-          "curatedRank": null,
-          "completeness": 9,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "language": "es",
-          "sectionHeadings": [
-            "El visitante entra a la web de la zona",
-            "El agente pregunta y cualifica",
-            "Simula hipoteca o valoración",
-            "Pide consentimiento explícito",
-            "Tu agencia recibe la ficha de oportunidad",
-            "El panel muestra tus leads y el ROI estimado"
-          ],
-          "sectionSequence": [],
-          "ctaTexts": [
-            "Comprar▾",
-            "Probar con mi agencia",
-            "Ver esta demo en mi agencia",
-            "Ver la demo (73 s)",
-            "Abre el portal en modo demo",
-            "Ver esta demo en mi agencia →",
-            "Ver la demo"
-          ],
-          "documentHeight": 4057,
-          "score": 119
         }
       ],
       "recommendations": [
-        "El enfoque más visible es «Resultado primero» (3 de 22); úsalo como control, no como ganador.",
-        "El 86% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
+        "El enfoque más visible es «Resultado primero» (3 de 25); úsalo como control, no como ganador.",
+        "El 88% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 6 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 64% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 60% y el mecanismo en 76% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "sectionPatterns": [
         {
+          "id": "problem",
+          "label": "Problema y contexto",
+          "count": 1,
+          "companyIds": [
+            "visionarius-ai"
+          ],
+          "examples": [
+            {
+              "companyId": "visionarius-ai",
+              "name": "Visionarius AI",
+              "text": "Desafíos operativos"
+            }
+          ],
+          "share": 4,
+          "medianPosition": 2
+        },
+        {
           "id": "mechanism",
           "label": "Proceso o mecanismo",
-          "count": 12,
+          "count": 14,
           "companyIds": [
             "horizzon-media",
             "agency-mdi",
@@ -7743,9 +7874,11 @@
             "smartads",
             "vertex-marketing",
             "inmogrowth",
+            "maline-inmobiliaria",
             "acelera-tu-crm",
             "comprarleads",
             "eleva-digitals",
+            "visionarius-ai",
             "bixquert-performance-ads",
             "brokerlead-solutions",
             "amp-leadinmo-es"
@@ -7777,17 +7910,18 @@
               "text": "Paso 1 de 2"
             }
           ],
-          "share": 55,
+          "share": 56,
           "medianPosition": 3
         },
         {
           "id": "proof",
           "label": "Prueba y autoridad",
-          "count": 4,
+          "count": 5,
           "companyIds": [
             "horizzon-media",
             "amp-cseosagency-com",
             "inmogrowth",
+            "visionarius-ai",
             "bixquert-performance-ads"
           ],
           "examples": [
@@ -7807,13 +7941,18 @@
               "text": "CASOS DE ÉXITO"
             },
             {
+              "companyId": "visionarius-ai",
+              "name": "Visionarius AI",
+              "text": "Nuestro mejor caso de éxito"
+            },
+            {
               "companyId": "bixquert-performance-ads",
               "name": "Bixquert Performance Ads",
               "text": "Resultados reales de captación inmobiliaria"
             }
           ],
-          "share": 18,
-          "medianPosition": 3
+          "share": 20,
+          "medianPosition": 4
         },
         {
           "id": "offer",
@@ -7857,7 +7996,7 @@
               "text": "Complementa el servicio de leads"
             }
           ],
-          "share": 41,
+          "share": 36,
           "medianPosition": 6
         },
         {
@@ -7874,16 +8013,17 @@
               "text": "¿Para quién es este servicio?"
             }
           ],
-          "share": 5,
+          "share": 4,
           "medianPosition": 10
         },
         {
           "id": "faq",
           "label": "Preguntas y objeciones",
-          "count": 4,
+          "count": 5,
           "companyIds": [
             "markulia",
             "smartads",
+            "maline-inmobiliaria",
             "acelera-tu-crm",
             "eleva-digitals"
           ],
@@ -7899,6 +8039,11 @@
               "text": "Preguntas Frecuentes sobre la Agencia de Marketing Inmobiliario"
             },
             {
+              "companyId": "maline-inmobiliaria",
+              "name": "Maline Inmobiliaria",
+              "text": "Questions fréquentes"
+            },
+            {
               "companyId": "acelera-tu-crm",
               "name": "Acelera tu CRM",
               "text": "Preguntas frecuentes sobre marketing para agencias inmobiliarias"
@@ -7909,16 +8054,17 @@
               "text": "Preguntas frecuentes"
             }
           ],
-          "share": 18,
-          "medianPosition": 16
+          "share": 20,
+          "medianPosition": 13
         },
         {
           "id": "pricing",
           "label": "Precio y condiciones",
-          "count": 2,
+          "count": 3,
           "companyIds": [
             "agency-mdi",
-            "acelera-tu-crm"
+            "acelera-tu-crm",
+            "tecnofind"
           ],
           "examples": [
             {
@@ -7930,10 +8076,15 @@
               "companyId": "acelera-tu-crm",
               "name": "Acelera tu CRM",
               "text": "Cuánto cuesta nuestra gestión para tu agencia inmobiliaria"
+            },
+            {
+              "companyId": "tecnofind",
+              "name": "Tecnofind",
+              "text": "Planes de Búsqueda"
             }
           ],
-          "share": 9,
-          "medianPosition": 18
+          "share": 12,
+          "medianPosition": 16
         },
         {
           "id": "guarantee",
@@ -7955,18 +8106,18 @@
               "text": "Sin permanencia"
             }
           ],
-          "share": 9,
+          "share": 8,
           "medianPosition": 23
         }
       ],
       "study": {
         "confidence": "medium",
         "coverage": {
-          "eligibleCompanies": 22,
+          "eligibleCompanies": 25,
           "heroClassifiedCompanies": 9,
-          "heroCoveragePct": 41,
-          "ctaClassifiedCompanies": 19,
-          "ctaCoveragePct": 86
+          "heroCoveragePct": 36,
+          "ctaClassifiedCompanies": 22,
+          "ctaCoveragePct": 88
         },
         "dominantHero": {
           "id": "outcome",
@@ -7994,14 +8145,14 @@
               "text": "Consigue más firmas sin depender de inmobiliarias ni comprar leads compartidos"
             }
           ],
-          "share": 14,
-          "classifiedShare": 14,
-          "sampleBase": 22
+          "share": 12,
+          "classifiedShare": 12,
+          "sampleBase": 25
         },
         "dominantCta": {
           "id": "booking",
           "label": "Reserva o llamada",
-          "count": 11,
+          "count": 13,
           "companyIds": [
             "horizzon-media",
             "inmoads",
@@ -8010,10 +8161,12 @@
             "smartads",
             "amp-cseosagency-com",
             "vertex-marketing",
+            "maline-inmobiliaria",
             "comprarleads",
             "bixquert-performance-ads",
             "goal-guiders-ia",
-            "amp-leadinmo-es"
+            "amp-leadinmo-es",
+            "tecnofind"
           ],
           "examples": [
             {
@@ -8037,48 +8190,42 @@
               "text": "Solicitar Información"
             }
           ],
-          "share": 50,
-          "classifiedShare": 58,
-          "sampleBase": 22
+          "share": 52,
+          "classifiedShare": 59,
+          "sampleBase": 25
         },
         "strengths": [
           {
+            "field": "price",
+            "presence": 40,
+            "universal": 28,
+            "delta": 12
+          },
+          {
             "field": "audience",
-            "presence": 86,
-            "universal": 73,
-            "delta": 13
+            "presence": 80,
+            "universal": 70,
+            "delta": 10
           },
           {
             "field": "mechanism",
-            "presence": 82,
-            "universal": 69,
-            "delta": 13
-          },
-          {
-            "field": "promise",
-            "presence": 82,
-            "universal": 72,
-            "delta": 10
+            "presence": 76,
+            "universal": 67,
+            "delta": 9
           }
         ],
         "opportunities": [
           {
             "field": "guarantee",
             "presence": 32,
-            "universal": 34,
-            "delta": -2
+            "universal": 35,
+            "delta": -3
           },
           {
             "field": "price",
-            "presence": 36,
-            "universal": 26,
-            "delta": 10
-          },
-          {
-            "field": "primaryCta",
-            "presence": 82,
-            "universal": 88,
-            "delta": -6
+            "presence": 40,
+            "universal": 28,
+            "delta": 12
           }
         ],
         "recommendedDefaults": {
@@ -8094,34 +8241,35 @@
     "legal": {
       "id": "legal",
       "label": "Legal y despachos",
-      "sampleSize": 16,
-      "capturedPages": 44,
-      "companiesWithLanding": 13,
-      "medianFunnelSteps": 7,
+      "sampleSize": 20,
+      "capturedPages": 50,
+      "companiesWithLanding": 15,
+      "medianFunnelSteps": 6,
       "medianFormFields": 4,
       "fieldPresence": {
         "headline": 100,
-        "promise": 88,
-        "audience": 88,
+        "promise": 85,
+        "audience": 75,
         "offer": 100,
-        "mechanism": 81,
-        "primaryCta": 88,
-        "proof": 69,
-        "price": 38,
-        "guarantee": 38,
+        "mechanism": 70,
+        "primaryCta": 90,
+        "proof": 60,
+        "price": 40,
+        "guarantee": 35,
         "funnel": 100
       },
       "ctaFamilies": [
         {
           "id": "audit",
           "label": "Auditoría o diagnóstico",
-          "count": 6,
+          "count": 7,
           "companyIds": [
             "expiey",
             "iqlex-solutions-sl",
             "adfredo",
             "eximia-studio",
             "epiko",
+            "leads-juridicos-digital",
             "onlysem-andreu-magrina-freelance"
           ],
           "examples": [
@@ -8146,9 +8294,9 @@
               "text": "Agenda tu diagnóstico gratuito"
             }
           ],
-          "share": 38,
-          "classifiedShare": 46,
-          "sampleBase": 16
+          "share": 35,
+          "classifiedShare": 50,
+          "sampleBase": 20
         },
         {
           "id": "booking",
@@ -8184,9 +8332,9 @@
               "text": "Agenda mi llamada gratuita"
             }
           ],
-          "share": 38,
-          "classifiedShare": 46,
-          "sampleBase": 16
+          "share": 30,
+          "classifiedShare": 43,
+          "sampleBase": 20
         },
         {
           "id": "start",
@@ -8202,20 +8350,21 @@
               "text": "Contrata una agencia de leads"
             }
           ],
-          "share": 6,
-          "classifiedShare": 8,
-          "sampleBase": 16
+          "share": 5,
+          "classifiedShare": 7,
+          "sampleBase": 20
         }
       ],
       "heroFamilies": [
         {
           "id": "other",
           "label": "Otros enfoques",
-          "count": 9,
+          "count": 10,
           "companyIds": [
             "agemia",
             "iqlex-solutions-sl",
             "spainready",
+            "grupo-solnet",
             "adfredo",
             "ranking-online",
             "amp-domarketingpro-com",
@@ -8240,22 +8389,23 @@
               "text": "¿Quieres recibir prospectos de DNV y NLV ya cualificados?"
             },
             {
-              "companyId": "adfredo",
-              "name": "AdFredo",
-              "text": "Tu cliente ya te busca en Google. ¿Estás ahí?"
+              "companyId": "grupo-solnet",
+              "name": "GrupoSolnet",
+              "text": "PROFESIONALIDAD"
             }
           ],
-          "share": 56,
-          "classifiedShare": 56,
-          "sampleBase": 16
+          "share": 50,
+          "classifiedShare": 50,
+          "sampleBase": 20
         },
         {
           "id": "identity",
           "label": "Categoría o identidad",
-          "count": 4,
+          "count": 5,
           "companyIds": [
             "lexiuris-marketing",
             "ndemarketing",
+            "airos-agency",
             "generacion-leads-masterfy-lc",
             "eximia-studio"
           ],
@@ -8271,19 +8421,43 @@
               "text": "Agencia Google Ads para Abogados"
             },
             {
+              "companyId": "airos-agency",
+              "name": "Airos Agency",
+              "text": "Agencia de marketing jurídico"
+            },
+            {
               "companyId": "generacion-leads-masterfy-lc",
               "name": "Generación Leads (MASTERFY LC)",
               "text": "La mejor agencia de leads en España"
-            },
-            {
-              "companyId": "eximia-studio",
-              "name": "Eximia Studio",
-              "text": "AGENCIA DE MARKETING PARA ABOGADOS"
             }
           ],
           "share": 25,
           "classifiedShare": 25,
-          "sampleBase": 16
+          "sampleBase": 20
+        },
+        {
+          "id": "outcome",
+          "label": "Resultado primero",
+          "count": 2,
+          "companyIds": [
+            "leads-juridicos-digital",
+            "melendos-business"
+          ],
+          "examples": [
+            {
+              "companyId": "leads-juridicos-digital",
+              "name": "Leads Jurídicos Digital",
+              "text": "El marketing que convierte búsquedas en clientes."
+            },
+            {
+              "companyId": "melendos-business",
+              "name": "Melendos Business",
+              "text": "Consigue nuevos clientes"
+            }
+          ],
+          "share": 10,
+          "classifiedShare": 10,
+          "sampleBase": 20
         },
         {
           "id": "proof",
@@ -8299,9 +8473,9 @@
               "text": "Agencia de marketing para abogados que firma 30-60 casos cada mes en tu bufete"
             }
           ],
-          "share": 6,
-          "classifiedShare": 6,
-          "sampleBase": 16
+          "share": 5,
+          "classifiedShare": 5,
+          "sampleBase": 20
         },
         {
           "id": "pain",
@@ -8317,9 +8491,9 @@
               "text": "Deja de depender del boca a boca. Construimos y gestionamos el sistema de captación de tu despacho."
             }
           ],
-          "share": 6,
-          "classifiedShare": 6,
-          "sampleBase": 16
+          "share": 5,
+          "classifiedShare": 5,
+          "sampleBase": 20
         },
         {
           "id": "mechanism",
@@ -8335,9 +8509,9 @@
               "text": "Descubre el sistema que te GARANTIZA entre 15–20 reuniones al mes con Administradores listos para presentar el Concurso de Acreedores Garantizado por contrato o no pagas"
             }
           ],
-          "share": 6,
-          "classifiedShare": 6,
-          "sampleBase": 16
+          "share": 5,
+          "classifiedShare": 5,
+          "sampleBase": 20
         }
       ],
       "cooccurrences": [
@@ -8366,8 +8540,8 @@
               "primaryCta": "Agendar consultoría"
             }
           ],
-          "share": 13,
-          "sampleBase": 16
+          "share": 10,
+          "sampleBase": 20
         },
         {
           "id": "identity--audit",
@@ -8387,8 +8561,8 @@
               "primaryCta": "Agenda tu diagnóstico gratuito"
             }
           ],
-          "share": 6,
-          "sampleBase": 16
+          "share": 5,
+          "sampleBase": 20
         },
         {
           "id": "identity--start",
@@ -8408,8 +8582,29 @@
               "primaryCta": "Contrata una agencia de leads"
             }
           ],
-          "share": 6,
-          "sampleBase": 16
+          "share": 5,
+          "sampleBase": 20
+        },
+        {
+          "id": "outcome--audit",
+          "heroId": "outcome",
+          "heroLabel": "Resultado primero",
+          "ctaId": "audit",
+          "ctaLabel": "Auditoría o diagnóstico",
+          "count": 1,
+          "companyIds": [
+            "leads-juridicos-digital"
+          ],
+          "examples": [
+            {
+              "companyId": "leads-juridicos-digital",
+              "name": "Leads Jurídicos Digital",
+              "headline": "El marketing que convierte búsquedas en clientes.",
+              "primaryCta": "Auditoría gratuita"
+            }
+          ],
+          "share": 5,
+          "sampleBase": 20
         },
         {
           "id": "pain--audit",
@@ -8429,8 +8624,8 @@
               "primaryCta": "Solicitar diagnóstico"
             }
           ],
-          "share": 6,
-          "sampleBase": 16
+          "share": 5,
+          "sampleBase": 20
         },
         {
           "id": "proof--audit",
@@ -8450,8 +8645,8 @@
               "primaryCta": "Solicitar análisis/llamada de 30 minutos para comprobar encaje."
             }
           ],
-          "share": 6,
-          "sampleBase": 16
+          "share": 5,
+          "sampleBase": 20
         }
       ],
       "examples": [
@@ -8837,6 +9032,53 @@
           "score": 149
         },
         {
+          "companyId": "airos-agency",
+          "name": "Airos Agency",
+          "country": "España",
+          "headline": "Agencia de marketing jurídico",
+          "primaryCta": "",
+          "offer": "Construcción del sistema completo de marketing del bufete y generación de primeras citas cualificadas sin depender de directorios compartidos.",
+          "proof": "4 creatividades detalladas y 4 anuncios activos contados en el corte; sin métricas de rendimiento.",
+          "price": "No observado.",
+          "guarantee": "",
+          "funnelSteps": 2,
+          "capturedPages": 1,
+          "pageRoles": [
+            "homepage"
+          ],
+          "thumbnail": "/evidence/airos-agency/site-d0c42d700a-homepage-thumb.webp",
+          "sourceUrl": "https://www.airosagency.com/",
+          "sourceRole": "homepage",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 14,
+          "verticalConfidence": "high",
+          "verticalEvidence": "landing_content",
+          "verticalMargin": 9,
+          "curatedRank": null,
+          "completeness": 7,
+          "fieldsPresent": [
+            "headline",
+            "audience",
+            "offer",
+            "mechanism",
+            "primaryCta",
+            "proof",
+            "funnel"
+          ],
+          "language": "es",
+          "sectionHeadings": [
+            "Aumenta las ventas de tu bufete sin depender del boca a boca ni directorios",
+            "estrategias de marketing jurídico",
+            "Construimos tu estrategia",
+            "Crecemos la facturación sin límite"
+          ],
+          "sectionSequence": [],
+          "ctaTexts": [],
+          "documentHeight": 5048,
+          "score": 143
+        },
+        {
           "companyId": "spainready",
           "name": "SpainReady",
           "country": "España",
@@ -8883,6 +9125,72 @@
           ],
           "documentHeight": 2784,
           "score": 143
+        },
+        {
+          "companyId": "grupo-solnet",
+          "name": "GrupoSolnet",
+          "country": "España",
+          "headline": "PROFESIONALIDAD",
+          "primaryCta": "",
+          "offer": "Captación para despachos mediante SEO/GEO, Google, Meta y LinkedIn Ads, contenidos, UX, automatización y medición de CPL.",
+          "proof": "",
+          "price": "No publicado.",
+          "guarantee": "No se localizó garantía contractual; los plazos de Ads y SEO son expectativas declaradas.",
+          "funnelSteps": 1,
+          "capturedPages": 2,
+          "pageRoles": [
+            "homepage",
+            "landing"
+          ],
+          "thumbnail": "/evidence/grupo-solnet/site-30dbdf3470-landing-thumb.webp",
+          "sourceUrl": "https://gruposolnet.com/",
+          "sourceRole": "landing",
+          "salesPageValid": true,
+          "trustedScope": true,
+          "verticalRelevance": 14,
+          "verticalConfidence": "high",
+          "verticalEvidence": "landing_content",
+          "verticalMargin": 14,
+          "curatedRank": null,
+          "completeness": 5,
+          "fieldsPresent": [
+            "headline",
+            "promise",
+            "offer",
+            "primaryCta",
+            "funnel"
+          ],
+          "language": "es",
+          "sectionHeadings": [
+            "SERIEDAD",
+            "COMPROMISO",
+            "EXPERIENCIA",
+            "Email",
+            "Teléfono",
+            "Dirección",
+            "¿POR QUÉ ELEGIRNOS?",
+            "Principales Soluciones en marketing digital jurídico",
+            "Diseño Web",
+            "Posicionamiento GEO",
+            "Google Ads",
+            "Meta Ads",
+            "Posicionamiento SEO",
+            "Social Selling",
+            "Captación de Clientes",
+            "Marketing de Contenidos",
+            "¿QUIERES CONSEGUIR NUEVOS CLIENTES Y POSICIONAR TU WEB EN LOS PRIMEROS PUESTOS?",
+            "Nuestros clientes dicen",
+            "Preguntasfrecuentes",
+            "Contacto",
+            "Ubicación"
+          ],
+          "sectionSequence": [
+            "guarantee",
+            "offer"
+          ],
+          "ctaTexts": [],
+          "documentHeight": 7838,
+          "score": 137
         },
         {
           "companyId": "generacion-leads-masterfy-lc",
@@ -9158,202 +9466,40 @@
           "ctaTexts": [],
           "documentHeight": 8359,
           "score": 121
-        },
-        {
-          "companyId": "amp-domarketingpro-com",
-          "name": "DO Marketing (DOMARKETING.ES)",
-          "country": "España",
-          "headline": "Más casos. Menos tiempo perdido.",
-          "primaryCta": "Agenda tu reunión hoy",
-          "offer": "Sistema de captación de casos exclusivos y validados para despachos de abogados (+250 despachos, +7 años): entregan casos listos para contactar y cobran por caso entregado.",
-          "proof": "",
-          "price": "Precio variable por caso según especialidad; sin inversión inicial ni costes fijos",
-          "guarantee": "Solo se abonan los casos realmente recibidos (pago por resultado)",
-          "funnelSteps": 1,
-          "capturedPages": 1,
-          "pageRoles": [
-            "homepage"
-          ],
-          "thumbnail": "/evidence/amp-domarketingpro-com/site-2bd5aa61f1-homepage-thumb.webp",
-          "sourceUrl": "https://abogados.domarketingpro.com/",
-          "sourceRole": "homepage",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 9,
-          "verticalConfidence": "high",
-          "verticalEvidence": "landing_content",
-          "verticalMargin": 9,
-          "curatedRank": null,
-          "completeness": 7,
-          "fieldsPresent": [
-            "headline",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "price",
-            "guarantee",
-            "funnel"
-          ],
-          "language": "es",
-          "sectionHeadings": [
-            "EL MÉTODO QUE YA UTILIZAN",
-            "+ 250 DESPACHOS PARA CAPTAR CLIENTES.",
-            "En tres pasos simples, te enviamos solo casos con recorrido real y personas que ya buscan un abogado.",
-            "Cómo funciona nuestro sistema",
-            "Detectamos casos con encaje jurídico",
-            "Verificamos y filtramos",
-            "Asignamos el caso a tu despacho",
-            "Compara. Verás por qué los despachos con resultados eligen este sistema.",
-            "Por qué nuestro sistema marca la diferencia",
-            "Nuestro sistema Casos reales. Sin competencia.",
-            "Método tradicional Contactos sin control.",
-            "tus datos y visualiza al instante el impacto económico de convertir casos cualificados en clientes.",
-            "Simula tus resultados con nuestro sistema",
-            "Resultados reales, sin inversión inicial y con un flujo constante de nuevos casos cada semana.",
-            "Más de 250 despachos ya confían en nuestro sistema",
-            "Con + 7 años operando en el sector legal y más de 980.000 casos gestionados.",
-            "Somos el sistema de captación elegido por+ 250 despachos en España.",
-            "Historias reales. Resultados reales.",
-            "Despachos legales de todo el país están transformando su captación de clientes con nuestro sistema.",
-            "Recomendable!!",
-            "Excelente sistema de captación !",
-            "Lo que suelen preguntarnos antes de empezar",
-            "Respondemos con claridad a las preguntas más frecuentes de los despachos antes de empezar a colaborar con nosotros.",
-            "Quedan solo 4 disponibles este mes",
-            "¡Reserva tu reunión ahora!",
-            "PONERLO EN MARCHA ES SENCILLO"
-          ],
-          "sectionSequence": [
-            "mechanism",
-            "proof"
-          ],
-          "ctaTexts": [
-            "Agenda tu reunión hoy",
-            "Solicitar una plaza para mi despacho",
-            "Agenda tu Reunión ahora"
-          ],
-          "documentHeight": 7986,
-          "score": 118
-        },
-        {
-          "companyId": "epiko",
-          "name": "EPIKO",
-          "country": "España",
-          "headline": "Deja de depender del boca a boca. Construimos y gestionamos el sistema de captación de tu despacho.",
-          "primaryCta": "Solicitar diagnóstico",
-          "offer": "El anunciante ofrece conectar campañas con contacto, seguimiento y resultado comercial para que los despachos conozcan qué acciones generan asuntos.",
-          "proof": "Secciones de prueba observadas en la página: Lo que habla con el cliente.. Su presencia no valida las cifras que contengan.",
-          "price": "No observado en las piezas recuperadas.",
-          "guarantee": "",
-          "funnelSteps": 1,
-          "capturedPages": 1,
-          "pageRoles": [
-            "landing"
-          ],
-          "thumbnail": "/evidence/epiko/site-2e34385351-landing-thumb.webp",
-          "sourceUrl": "https://despachos.epiko.ai/abogados",
-          "sourceRole": "landing",
-          "salesPageValid": true,
-          "trustedScope": true,
-          "verticalRelevance": 9,
-          "verticalConfidence": "high",
-          "verticalEvidence": "landing_content",
-          "verticalMargin": 9,
-          "curatedRank": null,
-          "completeness": 7,
-          "fieldsPresent": [
-            "headline",
-            "promise",
-            "audience",
-            "offer",
-            "mechanism",
-            "primaryCta",
-            "funnel"
-          ],
-          "language": "es",
-          "sectionHeadings": [
-            "Puedes hacer publicidad, publicar todas las semanas y seguir dependiendo del boca a boca.",
-            "Cinco fases. Un solo responsable.",
-            "Atraer",
-            "Convertir",
-            "Cualificar",
-            "Medir",
-            "Tu departamento externo de captación.",
-            "Estrategia y posicionamiento",
-            "Autoridad y generación de demanda",
-            "Campañas de captación",
-            "Landings y conversión",
-            "CRM, automatización e IA",
-            "Lo que acumula datos.",
-            "Soy abogado. Sé que un despacho no vive de leads.",
-            "Lo construimos. Lo gestionamos. Lo optimizamos.",
-            "Sin cuota inicial de implantación.",
-            "No necesitas firmar un año para comprobar si funciona.",
-            "Construimos",
-            "Lanzamos",
-            "Optimizamos",
-            "Consolidamos",
-            "Tiene sentido si quieres crecer de verdad.",
-            "No necesitas más marketing. Necesitas que todo el marketing empiece a trabajar como un negocio.",
-            "Empecemos por conocernos."
-          ],
-          "sectionSequence": [],
-          "ctaTexts": [
-            "Solicitar diagnóstico"
-          ],
-          "documentHeight": 10706,
-          "score": 118
         }
       ],
       "recommendations": [
-        "El enfoque más visible es «Categoría o identidad» (4 de 16); úsalo como control, no como ganador.",
-        "El 81% de la muestra ofrece un CTA comercial recuperable; «Auditoría o diagnóstico» es la familia más observada.",
+        "El enfoque más visible es «Categoría o identidad» (5 de 20); úsalo como control, no como ganador.",
+        "El 70% de la muestra ofrece un CTA comercial recuperable; «Auditoría o diagnóstico» es la familia más observada.",
         "El formulario mediano tiene 4 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 69% y el mecanismo en 81% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 60% y el mecanismo en 70% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "sectionPatterns": [
         {
-          "id": "mechanism",
-          "label": "Proceso o mecanismo",
-          "count": 3,
-          "companyIds": [
-            "lexiuris-marketing",
-            "ranking-online",
-            "amp-domarketingpro-com"
-          ],
-          "examples": [
-            {
-              "companyId": "lexiuris-marketing",
-              "name": "Lexiuris Marketing",
-              "text": "SISTEMA DE CAPTACIÓN DE CONSULTAS"
-            },
-            {
-              "companyId": "ranking-online",
-              "name": "Ranking Online",
-              "text": "Sistema de ventas a medida"
-            },
-            {
-              "companyId": "amp-domarketingpro-com",
-              "name": "DO Marketing (DOMARKETING.ES)",
-              "text": "En tres pasos simples, te enviamos solo casos con recorrido real y personas que ya buscan un abogado."
-            }
-          ],
-          "share": 19,
-          "medianPosition": 3
-        },
-        {
           "id": "guarantee",
           "label": "Garantía o reducción de riesgo",
-          "count": 2,
+          "count": 4,
           "companyIds": [
+            "grupo-solnet",
             "ranking-online",
+            "leads-juridicos-digital",
             "cronoshare"
           ],
           "examples": [
             {
+              "companyId": "grupo-solnet",
+              "name": "GrupoSolnet",
+              "text": "COMPROMISO"
+            },
+            {
               "companyId": "ranking-online",
               "name": "Ranking Online",
               "text": "Una reunión sin compromiso te espera llenando fácilmente el formulario"
+            },
+            {
+              "companyId": "leads-juridicos-digital",
+              "name": "Leads Jurídicos Digital",
+              "text": "Personaliza tu plan. Sin sorpresas, sin permanencia."
             },
             {
               "companyId": "cronoshare",
@@ -9361,7 +9507,7 @@
               "text": "Protegidos por nuestra Garantía Cronoshare"
             }
           ],
-          "share": 13,
+          "share": 20,
           "medianPosition": 3
         },
         {
@@ -9378,19 +9524,56 @@
               "text": "Sectores en los quegeneramos leads a diario."
             }
           ],
-          "share": 6,
+          "share": 5,
           "medianPosition": 5
+        },
+        {
+          "id": "mechanism",
+          "label": "Proceso o mecanismo",
+          "count": 4,
+          "companyIds": [
+            "lexiuris-marketing",
+            "ranking-online",
+            "amp-domarketingpro-com",
+            "leads-juridicos-digital"
+          ],
+          "examples": [
+            {
+              "companyId": "lexiuris-marketing",
+              "name": "Lexiuris Marketing",
+              "text": "SISTEMA DE CAPTACIÓN DE CONSULTAS"
+            },
+            {
+              "companyId": "ranking-online",
+              "name": "Ranking Online",
+              "text": "Sistema de ventas a medida"
+            },
+            {
+              "companyId": "amp-domarketingpro-com",
+              "name": "DO Marketing (DOMARKETING.ES)",
+              "text": "En tres pasos simples, te enviamos solo casos con recorrido real y personas que ya buscan un abogado."
+            },
+            {
+              "companyId": "leads-juridicos-digital",
+              "name": "Leads Jurídicos Digital",
+              "text": "De invisible a imparable, en cuatro pasos."
+            }
+          ],
+          "share": 20,
+          "medianPosition": 7
         },
         {
           "id": "offer",
           "label": "Oferta y solución",
-          "count": 6,
+          "count": 8,
           "companyIds": [
             "expiey",
             "iqlex-solutions-sl",
             "lexiuris-marketing",
             "ndemarketing",
+            "grupo-solnet",
             "generacion-leads-masterfy-lc",
+            "leads-juridicos-digital",
             "amp-glissmarket-com"
           ],
           "examples": [
@@ -9415,13 +9598,13 @@
               "text": "¿Qué conseguirás con nuestro servicio?"
             },
             {
-              "companyId": "generacion-leads-masterfy-lc",
-              "name": "Generación Leads (MASTERFY LC)",
-              "text": "Nuestros servicios de leads"
+              "companyId": "grupo-solnet",
+              "name": "GrupoSolnet",
+              "text": "Principales Soluciones en marketing digital jurídico"
             }
           ],
-          "share": 38,
-          "medianPosition": 7
+          "share": 40,
+          "medianPosition": 9
         },
         {
           "id": "proof",
@@ -9463,17 +9646,18 @@
               "text": "Uno de nuestros casos de éxito"
             }
           ],
-          "share": 44,
+          "share": 35,
           "medianPosition": 10
         },
         {
           "id": "faq",
           "label": "Preguntas y objeciones",
-          "count": 3,
+          "count": 4,
           "companyIds": [
             "expiey",
             "lexiuris-marketing",
-            "eximia-studio"
+            "eximia-studio",
+            "melendos-business"
           ],
           "examples": [
             {
@@ -9490,28 +9674,34 @@
               "companyId": "eximia-studio",
               "name": "Eximia Studio",
               "text": "PREGUNTAS FRECUENTES"
+            },
+            {
+              "companyId": "melendos-business",
+              "name": "Melendos Business",
+              "text": "Preguntas frecuentes"
             }
           ],
-          "share": 19,
+          "share": 20,
           "medianPosition": 16
         }
       ],
       "study": {
         "confidence": "medium",
         "coverage": {
-          "eligibleCompanies": 16,
-          "heroClassifiedCompanies": 7,
-          "heroCoveragePct": 44,
-          "ctaClassifiedCompanies": 13,
-          "ctaCoveragePct": 81
+          "eligibleCompanies": 20,
+          "heroClassifiedCompanies": 10,
+          "heroCoveragePct": 50,
+          "ctaClassifiedCompanies": 14,
+          "ctaCoveragePct": 70
         },
         "dominantHero": {
           "id": "identity",
           "label": "Categoría o identidad",
-          "count": 4,
+          "count": 5,
           "companyIds": [
             "lexiuris-marketing",
             "ndemarketing",
+            "airos-agency",
             "generacion-leads-masterfy-lc",
             "eximia-studio"
           ],
@@ -9527,30 +9717,31 @@
               "text": "Agencia Google Ads para Abogados"
             },
             {
+              "companyId": "airos-agency",
+              "name": "Airos Agency",
+              "text": "Agencia de marketing jurídico"
+            },
+            {
               "companyId": "generacion-leads-masterfy-lc",
               "name": "Generación Leads (MASTERFY LC)",
               "text": "La mejor agencia de leads en España"
-            },
-            {
-              "companyId": "eximia-studio",
-              "name": "Eximia Studio",
-              "text": "AGENCIA DE MARKETING PARA ABOGADOS"
             }
           ],
           "share": 25,
           "classifiedShare": 25,
-          "sampleBase": 16
+          "sampleBase": 20
         },
         "dominantCta": {
           "id": "audit",
           "label": "Auditoría o diagnóstico",
-          "count": 6,
+          "count": 7,
           "companyIds": [
             "expiey",
             "iqlex-solutions-sl",
             "adfredo",
             "eximia-studio",
             "epiko",
+            "leads-juridicos-digital",
             "onlysem-andreu-magrina-freelance"
           ],
           "examples": [
@@ -9575,42 +9766,36 @@
               "text": "Agenda tu diagnóstico gratuito"
             }
           ],
-          "share": 38,
-          "classifiedShare": 46,
-          "sampleBase": 16
+          "share": 35,
+          "classifiedShare": 50,
+          "sampleBase": 20
         },
         "strengths": [
           {
             "field": "promise",
-            "presence": 88,
+            "presence": 85,
             "universal": 72,
-            "delta": 16
+            "delta": 13
           },
           {
-            "field": "audience",
-            "presence": 88,
-            "universal": 73,
-            "delta": 15
-          },
-          {
-            "field": "mechanism",
-            "presence": 81,
-            "universal": 69,
+            "field": "price",
+            "presence": 40,
+            "universal": 28,
             "delta": 12
           }
         ],
         "opportunities": [
           {
-            "field": "price",
-            "presence": 38,
-            "universal": 26,
-            "delta": 12
+            "field": "guarantee",
+            "presence": 35,
+            "universal": 35,
+            "delta": 0
           },
           {
-            "field": "guarantee",
-            "presence": 38,
-            "universal": 34,
-            "delta": 4
+            "field": "price",
+            "presence": 40,
+            "universal": 28,
+            "delta": 12
           }
         ],
         "recommendedDefaults": {
@@ -10347,34 +10532,34 @@
           {
             "field": "guarantee",
             "presence": 71,
-            "universal": 34,
-            "delta": 37
+            "universal": 35,
+            "delta": 36
+          },
+          {
+            "field": "audience",
+            "presence": 86,
+            "universal": 70,
+            "delta": 16
           },
           {
             "field": "promise",
             "presence": 86,
             "universal": 72,
             "delta": 14
-          },
-          {
-            "field": "audience",
-            "presence": 86,
-            "universal": 73,
-            "delta": 13
           }
         ],
         "opportunities": [
           {
             "field": "price",
             "presence": 0,
-            "universal": 26,
-            "delta": -26
+            "universal": 28,
+            "delta": -28
           },
           {
             "field": "mechanism",
             "presence": 43,
-            "universal": 69,
-            "delta": -26
+            "universal": 67,
+            "delta": -24
           }
         ],
         "recommendedDefaults": {
@@ -10392,21 +10577,21 @@
     "b2b-sdr": {
       "id": "b2b-sdr",
       "label": "B2B, SDR y citas",
-      "sampleSize": 22,
-      "capturedPages": 44,
+      "sampleSize": 23,
+      "capturedPages": 45,
       "companiesWithLanding": 13,
       "medianFunnelSteps": 1,
       "medianFormFields": 3,
       "fieldPresence": {
         "headline": 100,
-        "promise": 68,
-        "audience": 64,
-        "offer": 95,
-        "mechanism": 82,
-        "primaryCta": 95,
-        "proof": 59,
-        "price": 18,
-        "guarantee": 41,
+        "promise": 70,
+        "audience": 65,
+        "offer": 96,
+        "mechanism": 78,
+        "primaryCta": 96,
+        "proof": 61,
+        "price": 17,
+        "guarantee": 39,
         "funnel": 100
       },
       "ctaFamilies": [
@@ -10451,9 +10636,9 @@
               "text": "Solicitar presupuesto"
             }
           ],
-          "share": 59,
+          "share": 57,
           "classifiedShare": 62,
-          "sampleBase": 22
+          "sampleBase": 23
         },
         {
           "id": "audit",
@@ -10481,9 +10666,9 @@
               "text": "Rellena la aplicación →"
             }
           ],
-          "share": 14,
+          "share": 13,
           "classifiedShare": 14,
-          "sampleBase": 22
+          "sampleBase": 23
         },
         {
           "id": "contact",
@@ -10507,7 +10692,7 @@
           ],
           "share": 9,
           "classifiedShare": 10,
-          "sampleBase": 22
+          "sampleBase": 23
         },
         {
           "id": "quote",
@@ -10531,7 +10716,7 @@
           ],
           "share": 9,
           "classifiedShare": 10,
-          "sampleBase": 22
+          "sampleBase": 23
         },
         {
           "id": "start",
@@ -10547,16 +10732,16 @@
               "text": "Commencer maintenant"
             }
           ],
-          "share": 5,
+          "share": 4,
           "classifiedShare": 5,
-          "sampleBase": 22
+          "sampleBase": 23
         }
       ],
       "heroFamilies": [
         {
           "id": "other",
           "label": "Otros enfoques",
-          "count": 16,
+          "count": 17,
           "companyIds": [
             "amp-getalead-co",
             "captain-prospect",
@@ -10569,6 +10754,7 @@
             "amp-outsourcing-planet-es",
             "solumize",
             "agency-go-to-market",
+            "mar-dominguez-seda",
             "comadi-telemarketing",
             "amp-seventic-com",
             "amp-reclutae-com",
@@ -10597,9 +10783,9 @@
               "text": "Back In Town"
             }
           ],
-          "share": 73,
-          "classifiedShare": 73,
-          "sampleBase": 22
+          "share": 74,
+          "classifiedShare": 74,
+          "sampleBase": 23
         },
         {
           "id": "outcome",
@@ -10633,9 +10819,9 @@
               "text": "B2B lead generation"
             }
           ],
-          "share": 18,
-          "classifiedShare": 18,
-          "sampleBase": 22
+          "share": 17,
+          "classifiedShare": 17,
+          "sampleBase": 23
         },
         {
           "id": "identity",
@@ -10651,9 +10837,9 @@
               "text": "Tu agencia de cold email.Clientes nuevos cada día, en automático."
             }
           ],
-          "share": 5,
-          "classifiedShare": 5,
-          "sampleBase": 22
+          "share": 4,
+          "classifiedShare": 4,
+          "sampleBase": 23
         },
         {
           "id": "mechanism",
@@ -10669,9 +10855,9 @@
               "text": "Te instalamos un sistema de prospección B2B 100% automatizado que añade de 30.000 a 50.000 € al mes a tu facturación."
             }
           ],
-          "share": 5,
-          "classifiedShare": 5,
-          "sampleBase": 22
+          "share": 4,
+          "classifiedShare": 4,
+          "sampleBase": 23
         }
       ],
       "cooccurrences": [
@@ -10701,7 +10887,7 @@
             }
           ],
           "share": 9,
-          "sampleBase": 22
+          "sampleBase": 23
         },
         {
           "id": "identity--booking",
@@ -10721,8 +10907,8 @@
               "primaryCta": "Solicitar propuesta →"
             }
           ],
-          "share": 5,
-          "sampleBase": 22
+          "share": 4,
+          "sampleBase": 23
         },
         {
           "id": "mechanism--audit",
@@ -10742,8 +10928,8 @@
               "primaryCta": "Rellena la aplicación →"
             }
           ],
-          "share": 5,
-          "sampleBase": 22
+          "share": 4,
+          "sampleBase": 23
         },
         {
           "id": "outcome--audit",
@@ -10763,8 +10949,8 @@
               "primaryCta": "Reserva una auditoría"
             }
           ],
-          "share": 5,
-          "sampleBase": 22
+          "share": 4,
+          "sampleBase": 23
         }
       ],
       "examples": [
@@ -11621,10 +11807,10 @@
         }
       ],
       "recommendations": [
-        "El enfoque más visible es «Resultado primero» (4 de 22); úsalo como control, no como ganador.",
-        "El 95% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
+        "El enfoque más visible es «Resultado primero» (4 de 23); úsalo como control, no como ganador.",
+        "El 91% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 3 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 59% y el mecanismo en 82% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 61% y el mecanismo en 78% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "sectionPatterns": [
         {
@@ -11641,7 +11827,7 @@
               "text": "Le problème en interne"
             }
           ],
-          "share": 5,
+          "share": 4,
           "medianPosition": 2
         },
         {
@@ -11670,7 +11856,7 @@
               "text": "Sin permanencia ni humo"
             }
           ],
-          "share": 14,
+          "share": 13,
           "medianPosition": 3
         },
         {
@@ -11712,7 +11898,7 @@
               "text": "Cómo funciona."
             }
           ],
-          "share": 27,
+          "share": 26,
           "medianPosition": 4
         },
         {
@@ -11759,7 +11945,7 @@
               "text": "Tres servicios de outsourcing comercial B2B para empresas en España"
             }
           ],
-          "share": 50,
+          "share": 48,
           "medianPosition": 5
         },
         {
@@ -11801,7 +11987,7 @@
               "text": "Mismo método. Sectores distintos. Resultados consistentes."
             }
           ],
-          "share": 27,
+          "share": 26,
           "medianPosition": 7
         },
         {
@@ -11844,7 +12030,7 @@
               "text": "Résultats concrets de nos campagnes de génération de leads"
             }
           ],
-          "share": 32,
+          "share": 30,
           "medianPosition": 9
         },
         {
@@ -11911,18 +12097,18 @@
               "text": "Preguntas frecuentes sobre agencia de cold email."
             }
           ],
-          "share": 36,
+          "share": 35,
           "medianPosition": 15
         }
       ],
       "study": {
         "confidence": "medium",
         "coverage": {
-          "eligibleCompanies": 22,
+          "eligibleCompanies": 23,
           "heroClassifiedCompanies": 6,
-          "heroCoveragePct": 27,
+          "heroCoveragePct": 26,
           "ctaClassifiedCompanies": 21,
-          "ctaCoveragePct": 95
+          "ctaCoveragePct": 91
         },
         "dominantHero": {
           "id": "outcome",
@@ -11956,9 +12142,9 @@
               "text": "B2B lead generation"
             }
           ],
-          "share": 18,
-          "classifiedShare": 18,
-          "sampleBase": 22
+          "share": 17,
+          "classifiedShare": 17,
+          "sampleBase": 23
         },
         "dominantCta": {
           "id": "booking",
@@ -12001,30 +12187,36 @@
               "text": "Solicitar presupuesto"
             }
           ],
-          "share": 59,
+          "share": 57,
           "classifiedShare": 62,
-          "sampleBase": 22
+          "sampleBase": 23
         },
         "strengths": [
           {
             "field": "mechanism",
-            "presence": 82,
-            "universal": 69,
-            "delta": 13
+            "presence": 78,
+            "universal": 67,
+            "delta": 11
+          },
+          {
+            "field": "primaryCta",
+            "presence": 96,
+            "universal": 88,
+            "delta": 8
           }
         ],
         "opportunities": [
           {
             "field": "price",
-            "presence": 18,
-            "universal": 26,
-            "delta": -8
+            "presence": 17,
+            "universal": 28,
+            "delta": -11
           },
           {
             "field": "guarantee",
-            "presence": 41,
-            "universal": 34,
-            "delta": 7
+            "presence": 39,
+            "universal": 35,
+            "delta": 4
           }
         ],
         "recommendedDefaults": {
@@ -13367,34 +13559,34 @@
           {
             "field": "mechanism",
             "presence": 81,
-            "universal": 69,
-            "delta": 12
-          },
-          {
-            "field": "price",
-            "presence": 38,
-            "universal": 26,
-            "delta": 12
+            "universal": 67,
+            "delta": 14
           },
           {
             "field": "audience",
             "presence": 81,
-            "universal": 73,
-            "delta": 8
+            "universal": 70,
+            "delta": 11
+          },
+          {
+            "field": "price",
+            "presence": 38,
+            "universal": 28,
+            "delta": 10
           }
         ],
         "opportunities": [
           {
             "field": "price",
             "presence": 38,
-            "universal": 26,
-            "delta": 12
+            "universal": 28,
+            "delta": 10
           },
           {
             "field": "guarantee",
             "presence": 38,
-            "universal": 34,
-            "delta": 4
+            "universal": 35,
+            "delta": 3
           }
         ],
         "recommendedDefaults": {
@@ -13718,20 +13910,20 @@
           {
             "field": "mechanism",
             "presence": 0,
-            "universal": 69,
-            "delta": -69
+            "universal": 67,
+            "delta": -67
           },
           {
             "field": "guarantee",
             "presence": 0,
-            "universal": 34,
-            "delta": -34
+            "universal": 35,
+            "delta": -35
           },
           {
             "field": "price",
             "presence": 0,
-            "universal": 26,
-            "delta": -26
+            "universal": 28,
+            "delta": -28
           }
         ],
         "recommendedDefaults": {
@@ -14820,28 +15012,28 @@
           {
             "field": "price",
             "presence": 36,
-            "universal": 26,
-            "delta": 10
+            "universal": 28,
+            "delta": 8
           }
         ],
         "opportunities": [
           {
             "field": "guarantee",
             "presence": 27,
-            "universal": 34,
-            "delta": -7
+            "universal": 35,
+            "delta": -8
           },
           {
             "field": "price",
             "presence": 36,
-            "universal": 26,
-            "delta": 10
+            "universal": 28,
+            "delta": 8
           },
           {
             "field": "proof",
             "presence": 45,
-            "universal": 58,
-            "delta": -13
+            "universal": 57,
+            "delta": -12
           }
         ],
         "recommendedDefaults": {
@@ -14857,28 +15049,28 @@
     "generalista": {
       "id": "generalista",
       "label": "Generalista",
-      "sampleSize": 64,
-      "capturedPages": 141,
-      "companiesWithLanding": 37,
+      "sampleSize": 71,
+      "capturedPages": 153,
+      "companiesWithLanding": 42,
       "medianFunnelSteps": 2,
       "medianFormFields": 6,
       "fieldPresence": {
         "headline": 100,
         "promise": 63,
-        "audience": 59,
+        "audience": 58,
         "offer": 97,
-        "mechanism": 59,
-        "primaryCta": 84,
-        "proof": 53,
-        "price": 20,
-        "guarantee": 31,
+        "mechanism": 56,
+        "primaryCta": 85,
+        "proof": 54,
+        "price": 21,
+        "guarantee": 32,
         "funnel": 100
       },
       "ctaFamilies": [
         {
           "id": "booking",
           "label": "Reserva o llamada",
-          "count": 22,
+          "count": 23,
           "companyIds": [
             "masnegocio",
             "agencia-pronoia",
@@ -14895,6 +15087,7 @@
             "advisorscale",
             "amp-erizonet-com",
             "gym-evolution",
+            "leadflow-espana",
             "amp-acuabit-es",
             "amp-bewe-ai",
             "ivan-de-benito",
@@ -14925,21 +15118,23 @@
               "text": "Agendar una llamada"
             }
           ],
-          "share": 34,
-          "classifiedShare": 45,
-          "sampleBase": 64
+          "share": 32,
+          "classifiedShare": 42,
+          "sampleBase": 71
         },
         {
           "id": "contact",
           "label": "Contacto directo",
-          "count": 8,
+          "count": 10,
           "companyIds": [
             "mains",
             "mpg-marketing-para-gimnasios",
             "nova-agency",
             "recom",
             "sciremarketing",
+            "taskus-sales-as-a-service",
             "izi-by-edf",
+            "next-conversion-adsl-house",
             "amp-makingscience-com",
             "amp-squirrelmedia-biz"
           ],
@@ -14965,14 +15160,14 @@
               "text": "Contact"
             }
           ],
-          "share": 13,
-          "classifiedShare": 16,
-          "sampleBase": 64
+          "share": 14,
+          "classifiedShare": 18,
+          "sampleBase": 71
         },
         {
           "id": "audit",
           "label": "Auditoría o diagnóstico",
-          "count": 8,
+          "count": 9,
           "companyIds": [
             "skyaweb-nacho-tejedor",
             "bastida-y-farina-s-l",
@@ -14980,6 +15175,7 @@
             "gaplogic",
             "mavo-growth",
             "xpandex-abadesa-export-center-s-l",
+            "ddigitals",
             "idealleader",
             "amp-millennium-digital-com"
           ],
@@ -15007,17 +15203,18 @@
           ],
           "share": 13,
           "classifiedShare": 16,
-          "sampleBase": 64
+          "sampleBase": 71
         },
         {
           "id": "start",
           "label": "Empezar o comprar",
-          "count": 6,
+          "count": 7,
           "companyIds": [
             "involgy-enterprise-cloud-solutions-s-l",
             "marketinhouse",
             "viraltia",
             "roi-performance",
+            "skalex-pro",
             "amp-emprendeaprendiendo-com",
             "amp-starofservice-com"
           ],
@@ -15043,19 +15240,20 @@
               "text": "Commencer ➜"
             }
           ],
-          "share": 9,
-          "classifiedShare": 12,
-          "sampleBase": 64
+          "share": 10,
+          "classifiedShare": 13,
+          "sampleBase": 71
         },
         {
           "id": "quote",
           "label": "Presupuesto o propuesta",
-          "count": 5,
+          "count": 6,
           "companyIds": [
             "hemea",
             "leadsforma",
             "spotinleads",
             "en-alta-agency",
+            "publiactivos-comunicacion-marketing",
             "amp-inprofit-eu"
           ],
           "examples": [
@@ -15081,15 +15279,15 @@
             }
           ],
           "share": 8,
-          "classifiedShare": 10,
-          "sampleBase": 64
+          "classifiedShare": 11,
+          "sampleBase": 71
         }
       ],
       "heroFamilies": [
         {
           "id": "other",
           "label": "Otros enfoques",
-          "count": 36,
+          "count": 40,
           "companyIds": [
             "involgy-enterprise-cloud-solutions-s-l",
             "cleanify-agency",
@@ -15102,15 +15300,19 @@
             "nova-agency",
             "recom",
             "sciremarketing",
+            "taskus-sales-as-a-service",
             "unlimited-growth",
             "xpandex-abadesa-export-center-s-l",
             "idealleader",
             "izi-by-edf",
             "leadsforma",
             "spotinleads",
+            "consultoria-io",
             "amp-erizonet-com",
             "gym-evolution",
+            "next-conversion-adsl-house",
             "psicoemprendedores",
+            "publiactivos-comunicacion-marketing",
             "amp-cerotonteria-com",
             "copyfilms",
             "ivan-de-benito",
@@ -15152,12 +15354,12 @@
           ],
           "share": 56,
           "classifiedShare": 56,
-          "sampleBase": 64
+          "sampleBase": 71
         },
         {
           "id": "outcome",
           "label": "Resultado primero",
-          "count": 11,
+          "count": 13,
           "companyIds": [
             "masnegocio",
             "skyaweb-nacho-tejedor",
@@ -15169,6 +15371,8 @@
             "kimoon",
             "mavo-growth",
             "roi-performance",
+            "skalex-pro",
+            "leadflow-espana",
             "amp-millennium-digital-com"
           ],
           "examples": [
@@ -15193,14 +15397,14 @@
               "text": "Obtenez Votre Devis Travaux en Ligne"
             }
           ],
-          "share": 17,
-          "classifiedShare": 17,
-          "sampleBase": 64
+          "share": 18,
+          "classifiedShare": 18,
+          "sampleBase": 71
         },
         {
           "id": "identity",
           "label": "Categoría o identidad",
-          "count": 9,
+          "count": 10,
           "companyIds": [
             "agencia-pronoia",
             "orbanya",
@@ -15208,6 +15412,7 @@
             "werise-performance",
             "cliento",
             "under-ads-ex-aiz-agency",
+            "ddigitals",
             "en-alta-agency",
             "amp-acuabit-es",
             "amp-geswebs-com"
@@ -15236,7 +15441,7 @@
           ],
           "share": 14,
           "classifiedShare": 14,
-          "sampleBase": 64
+          "sampleBase": 71
         },
         {
           "id": "mechanism",
@@ -15264,9 +15469,9 @@
               "text": "SÓLO DAME 15 MINUTOS, DESCUBRE NUESTRA METODOLOGÍA Y EMPIEZA A CERRAR VENTAS"
             }
           ],
-          "share": 5,
-          "classifiedShare": 5,
-          "sampleBase": 64
+          "share": 4,
+          "classifiedShare": 4,
+          "sampleBase": 71
         },
         {
           "id": "proof",
@@ -15290,7 +15495,7 @@
           ],
           "share": 3,
           "classifiedShare": 3,
-          "sampleBase": 64
+          "sampleBase": 71
         },
         {
           "id": "pain",
@@ -15314,7 +15519,7 @@
           ],
           "share": 3,
           "classifiedShare": 3,
-          "sampleBase": 64
+          "sampleBase": 71
         }
       ],
       "cooccurrences": [
@@ -15359,8 +15564,8 @@
               "primaryCta": "AGENDAR LLAMADA"
             }
           ],
-          "share": 9,
-          "sampleBase": 64
+          "share": 8,
+          "sampleBase": 71
         },
         {
           "id": "outcome--audit",
@@ -15402,7 +15607,49 @@
             }
           ],
           "share": 6,
-          "sampleBase": 64
+          "sampleBase": 71
+        },
+        {
+          "id": "outcome--start",
+          "heroId": "outcome",
+          "heroLabel": "Resultado primero",
+          "ctaId": "start",
+          "ctaLabel": "Empezar o comprar",
+          "count": 4,
+          "companyIds": [
+            "marketinhouse",
+            "viraltia",
+            "roi-performance",
+            "skalex-pro"
+          ],
+          "examples": [
+            {
+              "companyId": "marketinhouse",
+              "name": "Marketinhouse",
+              "headline": "Tu agencia de lead generation",
+              "primaryCta": "¡Empieza hoy!"
+            },
+            {
+              "companyId": "viraltia",
+              "name": "Viraltia",
+              "headline": "Marketing + Tecnología Punta + IA conversacional para crecer tu negocio",
+              "primaryCta": "Comienza Tu Proyecto"
+            },
+            {
+              "companyId": "roi-performance",
+              "name": "ROI Performance",
+              "headline": "Leads qualifiés et exclusifs pour booster votre croissance",
+              "primaryCta": "Commencer ➜"
+            },
+            {
+              "companyId": "skalex-pro",
+              "name": "Skalex.pro",
+              "headline": "Setter de IA #1 Deja de perder leads y multiplica tus ventas",
+              "primaryCta": "Prueba gratis ahora"
+            }
+          ],
+          "share": 6,
+          "sampleBase": 71
         },
         {
           "id": "mechanism--booking",
@@ -15436,43 +15683,8 @@
               "primaryCta": "Agendar Reunión"
             }
           ],
-          "share": 5,
-          "sampleBase": 64
-        },
-        {
-          "id": "outcome--start",
-          "heroId": "outcome",
-          "heroLabel": "Resultado primero",
-          "ctaId": "start",
-          "ctaLabel": "Empezar o comprar",
-          "count": 3,
-          "companyIds": [
-            "marketinhouse",
-            "viraltia",
-            "roi-performance"
-          ],
-          "examples": [
-            {
-              "companyId": "marketinhouse",
-              "name": "Marketinhouse",
-              "headline": "Tu agencia de lead generation",
-              "primaryCta": "¡Empieza hoy!"
-            },
-            {
-              "companyId": "viraltia",
-              "name": "Viraltia",
-              "headline": "Marketing + Tecnología Punta + IA conversacional para crecer tu negocio",
-              "primaryCta": "Comienza Tu Proyecto"
-            },
-            {
-              "companyId": "roi-performance",
-              "name": "ROI Performance",
-              "headline": "Leads qualifiés et exclusifs pour booster votre croissance",
-              "primaryCta": "Commencer ➜"
-            }
-          ],
-          "share": 5,
-          "sampleBase": 64
+          "share": 4,
+          "sampleBase": 71
         },
         {
           "id": "outcome--booking",
@@ -15480,10 +15692,11 @@
           "heroLabel": "Resultado primero",
           "ctaId": "booking",
           "ctaLabel": "Reserva o llamada",
-          "count": 2,
+          "count": 3,
           "companyIds": [
             "masnegocio",
-            "growyourindustry"
+            "growyourindustry",
+            "leadflow-espana"
           ],
           "examples": [
             {
@@ -15497,10 +15710,16 @@
               "name": "GrowYourIndustry",
               "headline": "Generar Leads B2B de Alta Calidad que se Convierten en Ventas",
               "primaryCta": "Reservar Llamada"
+            },
+            {
+              "companyId": "leadflow-espana",
+              "name": "LeadFlow España",
+              "headline": "Vamos a lo que de verdad le importa a tu negocio: conseguir clientes y vender más.",
+              "primaryCta": "Solicitar asesoría gratuita"
             }
           ],
-          "share": 3,
-          "sampleBase": 64
+          "share": 4,
+          "sampleBase": 71
         },
         {
           "id": "identity--audit",
@@ -15508,9 +15727,10 @@
           "heroLabel": "Categoría o identidad",
           "ctaId": "audit",
           "ctaLabel": "Auditoría o diagnóstico",
-          "count": 1,
+          "count": 2,
           "companyIds": [
-            "werise-performance"
+            "werise-performance",
+            "ddigitals"
           ],
           "examples": [
             {
@@ -15518,10 +15738,16 @@
               "name": "WeRise Performance",
               "headline": "Agencia de leads a comisión: cómo funciona el modelo en el que solo pagas por lead válido",
               "primaryCta": "Solicitar auditoría gratuita"
+            },
+            {
+              "companyId": "ddigitals",
+              "name": "DDigitals",
+              "headline": "Agencia de Meta Ads. Expertos en Instagram y Facebook Ads.",
+              "primaryCta": "Solicita diagnóstico en Meta"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 3,
+          "sampleBase": 71
         },
         {
           "id": "identity--quote",
@@ -15541,8 +15767,8 @@
               "primaryCta": "OBTENER PROPUESTA"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 1,
+          "sampleBase": 71
         },
         {
           "id": "outcome--quote",
@@ -15562,8 +15788,8 @@
               "primaryCta": "Exemples Réels de Devis Travaux"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 1,
+          "sampleBase": 71
         },
         {
           "id": "pain--booking",
@@ -15583,8 +15809,8 @@
               "primaryCta": "Agenda Inteligente"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 1,
+          "sampleBase": 71
         },
         {
           "id": "pain--start",
@@ -15604,8 +15830,8 @@
               "primaryCta": "Empieza por aquí"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 1,
+          "sampleBase": 71
         },
         {
           "id": "proof--booking",
@@ -15625,8 +15851,8 @@
               "primaryCta": "Agendar llamada"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 1,
+          "sampleBase": 71
         },
         {
           "id": "proof--contact",
@@ -15646,8 +15872,8 @@
               "primaryCta": "Cuéntame por WhatsApp"
             }
           ],
-          "share": 2,
-          "sampleBase": 64
+          "share": 1,
+          "sampleBase": 71
         }
       ],
       "examples": [
@@ -16477,10 +16703,10 @@
         }
       ],
       "recommendations": [
-        "El enfoque más visible es «Resultado primero» (11 de 64); úsalo como control, no como ganador.",
+        "El enfoque más visible es «Resultado primero» (13 de 71); úsalo como control, no como ganador.",
         "El 77% de la muestra ofrece un CTA comercial recuperable; «Reserva o llamada» es la familia más observada.",
         "El formulario mediano tiene 6 campos; ajusta longitud a intención y fricción, no por imitación.",
-        "La prueba aparece en 53% y el mecanismo en 59% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
+        "La prueba aparece en 54% y el mecanismo en 56% de la muestra; cualquier cifra propia debe conservar fuente y periodo."
       ],
       "sectionPatterns": [
         {
@@ -16509,13 +16735,70 @@
               "text": "Retos clave que enfrentan las academias de oposiciones"
             }
           ],
-          "share": 5,
+          "share": 4,
           "medianPosition": 1
+        },
+        {
+          "id": "mechanism",
+          "label": "Proceso o mecanismo",
+          "count": 21,
+          "companyIds": [
+            "involgy-enterprise-cloud-solutions-s-l",
+            "mains",
+            "skyaweb-nacho-tejedor",
+            "bastida-y-farina-s-l",
+            "clibel",
+            "hemea",
+            "orbanya",
+            "sirelo",
+            "viraltia",
+            "werise-performance",
+            "buda-marketing-buda-consultores-s-l",
+            "cliento",
+            "kimoon",
+            "mavo-growth",
+            "nova-agency",
+            "roi-performance",
+            "under-ads-ex-aiz-agency",
+            "xpandex-abadesa-export-center-s-l",
+            "publiactivos-comunicacion-marketing",
+            "amp-cerotonteria-com",
+            "amp-millennium-digital-com"
+          ],
+          "examples": [
+            {
+              "companyId": "involgy-enterprise-cloud-solutions-s-l",
+              "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
+              "text": "Simplifica tu proceso de venta"
+            },
+            {
+              "companyId": "mains",
+              "name": "Mains",
+              "text": "Sistema de adquisición"
+            },
+            {
+              "companyId": "skyaweb-nacho-tejedor",
+              "name": "Skyaweb (Nacho Tejedor)",
+              "text": "De cero a sistema funcionandoen 72 horas"
+            },
+            {
+              "companyId": "bastida-y-farina-s-l",
+              "name": "Bastida&Farina S.L.",
+              "text": "Cómo CREAMOSNUESTRO SISTEMA"
+            },
+            {
+              "companyId": "clibel",
+              "name": "Clibel",
+              "text": "Mira Este Vídeo de 3 Minutos Para Saber Cómo Funciona"
+            }
+          ],
+          "share": 30,
+          "medianPosition": 5
         },
         {
           "id": "offer",
           "label": "Oferta y solución",
-          "count": 25,
+          "count": 28,
           "companyIds": [
             "involgy-enterprise-cloud-solutions-s-l",
             "skyaweb-nacho-tejedor",
@@ -16531,11 +16814,14 @@
             "comunicare",
             "growyourindustry",
             "sciremarketing",
+            "taskus-sales-as-a-service",
             "under-ads-ex-aiz-agency",
             "unlimited-growth",
+            "ddigitals",
             "izi-by-edf",
             "spotinleads",
             "amp-erizonet-com",
+            "leadflow-espana",
             "amp-acuabit-es",
             "amp-bewe-ai",
             "amp-millennium-digital-com",
@@ -16571,62 +16857,6 @@
             }
           ],
           "share": 39,
-          "medianPosition": 6
-        },
-        {
-          "id": "mechanism",
-          "label": "Proceso o mecanismo",
-          "count": 20,
-          "companyIds": [
-            "involgy-enterprise-cloud-solutions-s-l",
-            "mains",
-            "skyaweb-nacho-tejedor",
-            "bastida-y-farina-s-l",
-            "clibel",
-            "hemea",
-            "orbanya",
-            "sirelo",
-            "viraltia",
-            "werise-performance",
-            "buda-marketing-buda-consultores-s-l",
-            "cliento",
-            "kimoon",
-            "mavo-growth",
-            "nova-agency",
-            "roi-performance",
-            "under-ads-ex-aiz-agency",
-            "xpandex-abadesa-export-center-s-l",
-            "amp-cerotonteria-com",
-            "amp-millennium-digital-com"
-          ],
-          "examples": [
-            {
-              "companyId": "involgy-enterprise-cloud-solutions-s-l",
-              "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
-              "text": "Simplifica tu proceso de venta"
-            },
-            {
-              "companyId": "mains",
-              "name": "Mains",
-              "text": "Sistema de adquisición"
-            },
-            {
-              "companyId": "skyaweb-nacho-tejedor",
-              "name": "Skyaweb (Nacho Tejedor)",
-              "text": "De cero a sistema funcionandoen 72 horas"
-            },
-            {
-              "companyId": "bastida-y-farina-s-l",
-              "name": "Bastida&Farina S.L.",
-              "text": "Cómo CREAMOSNUESTRO SISTEMA"
-            },
-            {
-              "companyId": "clibel",
-              "name": "Clibel",
-              "text": "Mira Este Vídeo de 3 Minutos Para Saber Cómo Funciona"
-            }
-          ],
-          "share": 31,
           "medianPosition": 6
         },
         {
@@ -16670,7 +16900,7 @@
               "text": "Nuestros casos de éxito"
             }
           ],
-          "share": 13,
+          "share": 11,
           "medianPosition": 11
         },
         {
@@ -16687,8 +16917,60 @@
               "text": "¿Para quién es este programa?"
             }
           ],
-          "share": 2,
+          "share": 1,
           "medianPosition": 14
+        },
+        {
+          "id": "faq",
+          "label": "Preguntas y objeciones",
+          "count": 16,
+          "companyIds": [
+            "involgy-enterprise-cloud-solutions-s-l",
+            "masnegocio",
+            "agencia-pronoia",
+            "orbanya",
+            "werise-performance",
+            "buda-marketing-buda-consultores-s-l",
+            "cliento",
+            "growyourindustry",
+            "kimoon",
+            "mavo-growth",
+            "unlimited-growth",
+            "consultoria-io",
+            "amp-emprendeaprendiendo-com",
+            "gym-evolution",
+            "leadflow-espana",
+            "amp-millennium-digital-com"
+          ],
+          "examples": [
+            {
+              "companyId": "involgy-enterprise-cloud-solutions-s-l",
+              "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
+              "text": "Preguntas frecuentes sobre leads de seguros"
+            },
+            {
+              "companyId": "masnegocio",
+              "name": "MásNegocio",
+              "text": "Preguntas frecuentes."
+            },
+            {
+              "companyId": "agencia-pronoia",
+              "name": "Agencia Pronoia",
+              "text": "Preguntas frecuentes sobre Marketing Digital"
+            },
+            {
+              "companyId": "orbanya",
+              "name": "Orbanya",
+              "text": "Preguntas frecuentes sobre publicidad online"
+            },
+            {
+              "companyId": "werise-performance",
+              "name": "WeRise Performance",
+              "text": "Preguntas frecuentes sobre pagar por lead válido"
+            }
+          ],
+          "share": 23,
+          "medianPosition": 15
         },
         {
           "id": "pricing",
@@ -16728,58 +17010,8 @@
               "text": "Planes que crecen contigo"
             }
           ],
-          "share": 8,
+          "share": 7,
           "medianPosition": 16
-        },
-        {
-          "id": "faq",
-          "label": "Preguntas y objeciones",
-          "count": 14,
-          "companyIds": [
-            "involgy-enterprise-cloud-solutions-s-l",
-            "masnegocio",
-            "agencia-pronoia",
-            "orbanya",
-            "werise-performance",
-            "buda-marketing-buda-consultores-s-l",
-            "cliento",
-            "growyourindustry",
-            "kimoon",
-            "mavo-growth",
-            "unlimited-growth",
-            "amp-emprendeaprendiendo-com",
-            "gym-evolution",
-            "amp-millennium-digital-com"
-          ],
-          "examples": [
-            {
-              "companyId": "involgy-enterprise-cloud-solutions-s-l",
-              "name": "Involgy (Enterprise Cloud Solutions, S.L.)",
-              "text": "Preguntas frecuentes sobre leads de seguros"
-            },
-            {
-              "companyId": "masnegocio",
-              "name": "MásNegocio",
-              "text": "Preguntas frecuentes."
-            },
-            {
-              "companyId": "agencia-pronoia",
-              "name": "Agencia Pronoia",
-              "text": "Preguntas frecuentes sobre Marketing Digital"
-            },
-            {
-              "companyId": "orbanya",
-              "name": "Orbanya",
-              "text": "Preguntas frecuentes sobre publicidad online"
-            },
-            {
-              "companyId": "werise-performance",
-              "name": "WeRise Performance",
-              "text": "Preguntas frecuentes sobre pagar por lead válido"
-            }
-          ],
-          "share": 22,
-          "medianPosition": 17
         },
         {
           "id": "guarantee",
@@ -16795,23 +17027,23 @@
               "text": "Qualité garantie"
             }
           ],
-          "share": 2,
+          "share": 1,
           "medianPosition": 21
         }
       ],
       "study": {
         "confidence": "medium",
         "coverage": {
-          "eligibleCompanies": 64,
-          "heroClassifiedCompanies": 28,
+          "eligibleCompanies": 71,
+          "heroClassifiedCompanies": 31,
           "heroCoveragePct": 44,
-          "ctaClassifiedCompanies": 49,
+          "ctaClassifiedCompanies": 55,
           "ctaCoveragePct": 77
         },
         "dominantHero": {
           "id": "outcome",
           "label": "Resultado primero",
-          "count": 11,
+          "count": 13,
           "companyIds": [
             "masnegocio",
             "skyaweb-nacho-tejedor",
@@ -16823,6 +17055,8 @@
             "kimoon",
             "mavo-growth",
             "roi-performance",
+            "skalex-pro",
+            "leadflow-espana",
             "amp-millennium-digital-com"
           ],
           "examples": [
@@ -16847,14 +17081,14 @@
               "text": "Obtenez Votre Devis Travaux en Ligne"
             }
           ],
-          "share": 17,
-          "classifiedShare": 17,
-          "sampleBase": 64
+          "share": 18,
+          "classifiedShare": 18,
+          "sampleBase": 71
         },
         "dominantCta": {
           "id": "booking",
           "label": "Reserva o llamada",
-          "count": 22,
+          "count": 23,
           "companyIds": [
             "masnegocio",
             "agencia-pronoia",
@@ -16871,6 +17105,7 @@
             "advisorscale",
             "amp-erizonet-com",
             "gym-evolution",
+            "leadflow-espana",
             "amp-acuabit-es",
             "amp-bewe-ai",
             "ivan-de-benito",
@@ -16901,29 +17136,29 @@
               "text": "Agendar una llamada"
             }
           ],
-          "share": 34,
-          "classifiedShare": 45,
-          "sampleBase": 64
+          "share": 32,
+          "classifiedShare": 42,
+          "sampleBase": 71
         },
         "strengths": [],
         "opportunities": [
           {
             "field": "price",
-            "presence": 20,
-            "universal": 26,
-            "delta": -6
+            "presence": 21,
+            "universal": 28,
+            "delta": -7
           },
           {
             "field": "guarantee",
-            "presence": 31,
-            "universal": 34,
+            "presence": 32,
+            "universal": 35,
             "delta": -3
           },
           {
-            "field": "proof",
-            "presence": 53,
-            "universal": 58,
-            "delta": -5
+            "field": "mechanism",
+            "presence": 56,
+            "universal": 67,
+            "delta": -11
           }
         ],
         "recommendedDefaults": {

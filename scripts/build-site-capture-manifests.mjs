@@ -416,10 +416,28 @@ function marketsFor(company) {
   ]);
 }
 
+function selectedIdsFromArgs(argv = process.argv.slice(2)) {
+  const index = argv.indexOf("--ids");
+  if (index === -1) return null;
+  const value = argv[index + 1];
+  if (!value || value.startsWith("--")) throw new Error("--ids requiere una lista separada por comas.");
+  const ids = new Set(value.split(",").map((id) => id.trim()).filter(Boolean));
+  if (!ids.size) throw new Error("--ids no contiene IDs válidos.");
+  return ids;
+}
+
 const companies = await readJson(resolve(DATA_DIR, "companies-index.json"));
+const requestedIds = selectedIdsFromArgs();
 const selected = companies
   .filter((company) => (company.countries || []).some((country) => TARGET_MARKETS.has(country)))
+  .filter((company) => !requestedIds || requestedIds.has(company.id))
   .sort((left, right) => left.id.localeCompare(right.id, "es"));
+
+if (requestedIds) {
+  const selectedIds = new Set(selected.map((company) => company.id));
+  const missing = [...requestedIds].filter((id) => !selectedIds.has(id));
+  if (missing.length) throw new Error(`IDs fuera del catálogo España/Francia: ${missing.join(", ")}`);
+}
 
 await mkdir(OUTPUT_DIR, { recursive: true });
 

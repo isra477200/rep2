@@ -1115,6 +1115,28 @@ export default function RecordDetail({
                   {value(company.googleStatus)} · {company.googleAds} resultados
                   archivados
                 </Field>
+                {Number(company.googleSearchObservations || 0) > 0 && (
+                  <Field label="Google Search · subastas observadas" wide>
+                    <strong>
+                      {company.googleSearchAdsObserved || 0} anuncios únicos · {company.googleSearchObservations || 0} apariciones · {company.googleSearchQueries || 0} consultas
+                    </strong>
+                    <p>
+                      Corte SerpAPI {company.googleSearchLastObservedAt || company.serpApiReviewedAt || "sin fecha"}. Describe presencia por keyword, ciudad y dispositivo; no equivale a impresiones, inversión ni rendimiento.
+                    </p>
+                    <details>
+                      <summary>Ver consultas, ubicaciones y destinos</summary>
+                      {company.googleSearchQueryTerms?.length ? <p><b>Keywords:</b> {company.googleSearchQueryTerms.join(" · ")}</p> : null}
+                      {company.googleSearchLocations?.length ? <p><b>Ubicaciones:</b> {company.googleSearchLocations.join(" · ")}</p> : null}
+                      {company.googleSearchDevices?.length ? <p><b>Dispositivos:</b> {company.googleSearchDevices.join(" · ")}</p> : null}
+                      {company.googleAdvertiserIds?.length ? <p><b>Advertiser IDs:</b> {company.googleAdvertiserIds.join(" · ")}</p> : null}
+                      {company.googleSearchLandingUrls?.length ? (
+                        <ul>
+                          {company.googleSearchLandingUrls.map((url) => <li key={url}><a href={url} target="_blank" rel="noreferrer">{url}</a></li>)}
+                        </ul>
+                      ) : null}
+                    </details>
+                  </Field>
+                )}
                 <Field label="Archivo creativo declarado">
                   {company.creativeArchive}
                 </Field>

@@ -1,0 +1,469 @@
+{
+  "schema": "redvitalia-serpapi-google-ads-snapshot-v1",
+  "id": "serpapi-google-ads-es-2026-08-27",
+  "observedAt": "2026-08-27",
+  "market": "España",
+  "credits": {
+    "consumed": 250,
+    "savedResponses": 216,
+    "interruptedDuplicates": 34
+  },
+  "coverage": {
+    "discoveryRequests": 205,
+    "requestsWithAds": 194,
+    "observations": 800,
+    "uniqueAds": 675,
+    "observedDomains": 85,
+    "transparencyCreatives": 104,
+    "transparencyAdvertisers": 8,
+    "detailedCreatives": 3
+  },
+  "editorialReview": {
+    "reviewedDomains": 86,
+    "statusCounts": {
+      "matched": 22,
+      "new": 16,
+      "excluded": 44,
+      "watchlist": 4
+    },
+    "publishedCompanies": 35,
+    "enrichedCompanies": 19,
+    "newCompanies": 16,
+    "policy": "Solo se publica una ficha cuando la oferta vende leads, citas, datos o captación a terceros y la identidad es verificable."
+  },
+  "topCompanies": [
+    {
+      "domain": "bastidafarina.com",
+      "domains": [
+        "bastidafarina.com"
+      ],
+      "companyId": "bastida-y-farina-s-l",
+      "name": "Bastida&Farina S.L.",
+      "status": "matched",
+      "uniqueAds": 121,
+      "observations": 158,
+      "queryCount": 73,
+      "locations": 6,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 42
+    },
+    {
+      "domain": "salesdose.io",
+      "domains": [
+        "salesdose.io"
+      ],
+      "companyId": "salesdose",
+      "name": "SalesDose",
+      "status": "matched",
+      "uniqueAds": 61,
+      "observations": 63,
+      "queryCount": 31,
+      "locations": 6,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 7
+    },
+    {
+      "domain": "customertop.com",
+      "domains": [
+        "customertop.com"
+      ],
+      "companyId": "customertop",
+      "name": "CustomerTop - Reuniones Comerciales B2B",
+      "status": "matched",
+      "uniqueAds": 45,
+      "observations": 48,
+      "queryCount": 29,
+      "locations": 6,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 14
+    },
+    {
+      "domain": "erikpascual.com",
+      "domains": [
+        "erikpascual.com"
+      ],
+      "companyId": "erik-pascual",
+      "name": "Erik Pascual",
+      "status": "new",
+      "uniqueAds": 35,
+      "observations": 44,
+      "queryCount": 21,
+      "locations": 6,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "comadi.es",
+      "domains": [
+        "comadi.es"
+      ],
+      "companyId": "comadi-telemarketing",
+      "name": "Comadi Telemarketing",
+      "status": "matched",
+      "uniqueAds": 21,
+      "observations": 22,
+      "queryCount": 17,
+      "locations": 4,
+      "devices": [
+        "desktop"
+      ],
+      "transparencyCreatives": 12
+    },
+    {
+      "domain": "saramarketer.es",
+      "domains": [
+        "saramarketer.es"
+      ],
+      "companyId": "sara-marketer",
+      "name": "Sara Marketer",
+      "status": "matched",
+      "uniqueAds": 16,
+      "observations": 18,
+      "queryCount": 11,
+      "locations": 5,
+      "devices": [
+        "desktop"
+      ],
+      "transparencyCreatives": 1
+    },
+    {
+      "domain": "medicalmarketing.digital",
+      "domains": [
+        "medicalmarketing.digital"
+      ],
+      "companyId": "medical-marketing-digital-marketing-specialist-worldwide-llc",
+      "name": "Medical Marketing (Digital Marketing Specialist worldwide, LLC)",
+      "status": "matched",
+      "uniqueAds": 16,
+      "observations": 16,
+      "queryCount": 10,
+      "locations": 6,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 22
+    },
+    {
+      "domain": "drreputacion.es",
+      "domains": [
+        "drreputacion.es"
+      ],
+      "companyId": "doctor-reputacion-legal-eraser",
+      "name": "Doctor Reputación",
+      "status": "new",
+      "uniqueAds": 10,
+      "observations": 10,
+      "queryCount": 6,
+      "locations": 1,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "budamarketing.es",
+      "domains": [
+        "budamarketing.es"
+      ],
+      "companyId": "buda-marketing-buda-consultores-s-l",
+      "name": "Buda Marketing (Buda Consultores S.L.)",
+      "status": "matched",
+      "uniqueAds": 9,
+      "observations": 9,
+      "queryCount": 7,
+      "locations": 1,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 3
+    },
+    {
+      "domain": "igtelcom.es",
+      "domains": [
+        "igtelcom.es"
+      ],
+      "companyId": "amp-igtelcom-es",
+      "name": "IG Telcom",
+      "status": "matched",
+      "uniqueAds": 6,
+      "observations": 6,
+      "queryCount": 3,
+      "locations": 4,
+      "devices": [
+        "mobile",
+        "desktop"
+      ],
+      "transparencyCreatives": 3
+    },
+    {
+      "domain": "realadvisor.es",
+      "domains": [
+        "realadvisor.es"
+      ],
+      "companyId": "realadvisor-sa",
+      "name": "RealAdvisor Pro",
+      "status": "new",
+      "uniqueAds": 6,
+      "observations": 6,
+      "queryCount": 3,
+      "locations": 1,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "placassolares.es",
+      "domains": [
+        "placassolares.es",
+        "luz.es",
+        "alarmasdelhogar.es"
+      ],
+      "companyId": "placassolares-es-nettbureau",
+      "name": "PlacasSolares.es / Nettbureau",
+      "status": "matched",
+      "uniqueAds": 5,
+      "observations": 5,
+      "queryCount": 4,
+      "locations": 1,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "presupuestossolares.es",
+      "domains": [
+        "presupuestossolares.es"
+      ],
+      "companyId": "presupuestossolares-es-betterbusiness",
+      "name": "PresupuestosSolares.es / betterbusiness",
+      "status": "new",
+      "uniqueAds": 5,
+      "observations": 5,
+      "queryCount": 3,
+      "locations": 1,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "melendos.es",
+      "domains": [
+        "melendos.es"
+      ],
+      "companyId": "melendos-business",
+      "name": "Melendos Business",
+      "status": "new",
+      "uniqueAds": 4,
+      "observations": 4,
+      "queryCount": 2,
+      "locations": 1,
+      "devices": [
+        "mobile",
+        "desktop"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "kimoon.io",
+      "domains": [
+        "kimoon.io",
+        "kuadrado.io"
+      ],
+      "companyId": "kimoon",
+      "name": "Kimoon",
+      "status": "matched",
+      "uniqueAds": 3,
+      "observations": 3,
+      "queryCount": 3,
+      "locations": 2,
+      "devices": [
+        "desktop"
+      ],
+      "transparencyCreatives": 0
+    },
+    {
+      "domain": "publiactivos.com",
+      "domains": [
+        "publiactivos.com"
+      ],
+      "companyId": "publiactivos-comunicacion-marketing",
+      "name": "Publiactivos",
+      "status": "new",
+      "uniqueAds": 3,
+      "observations": 3,
+      "queryCount": 3,
+      "locations": 1,
+      "devices": [
+        "desktop",
+        "mobile"
+      ],
+      "transparencyCreatives": 0
+    }
+  ],
+  "topQueries": [
+    {
+      "query": "agencia generación de leads",
+      "observations": 22,
+      "companies": 6,
+      "uniqueAds": 21
+    },
+    {
+      "query": "generación de leads",
+      "observations": 11,
+      "companies": 5,
+      "uniqueAds": 10
+    },
+    {
+      "query": "leads energía",
+      "observations": 8,
+      "companies": 5,
+      "uniqueAds": 8
+    },
+    {
+      "query": "outsourcing comercial B2B",
+      "observations": 7,
+      "companies": 5,
+      "uniqueAds": 7
+    },
+    {
+      "query": "concertación de citas B2B",
+      "observations": 32,
+      "companies": 4,
+      "uniqueAds": 32
+    },
+    {
+      "query": "comprar leads clínicas",
+      "observations": 21,
+      "companies": 4,
+      "uniqueAds": 20
+    },
+    {
+      "query": "comprar leads",
+      "observations": 20,
+      "companies": 4,
+      "uniqueAds": 17
+    },
+    {
+      "query": "captación de clientes",
+      "observations": 16,
+      "companies": 4,
+      "uniqueAds": 14
+    },
+    {
+      "query": "comprar leads inmobiliarios",
+      "observations": 15,
+      "companies": 4,
+      "uniqueAds": 15
+    },
+    {
+      "query": "comprar leads reformas",
+      "observations": 14,
+      "companies": 4,
+      "uniqueAds": 13
+    },
+    {
+      "query": "leads B2B",
+      "observations": 10,
+      "companies": 4,
+      "uniqueAds": 9
+    },
+    {
+      "query": "captación de pacientes",
+      "observations": 6,
+      "companies": 4,
+      "uniqueAds": 6
+    },
+    {
+      "query": "captación pacientes psicólogos",
+      "observations": 6,
+      "companies": 4,
+      "uniqueAds": 6
+    },
+    {
+      "query": "comprar leads abogados",
+      "observations": 6,
+      "companies": 4,
+      "uniqueAds": 6
+    },
+    {
+      "query": "reuniones comerciales cualificadas",
+      "observations": 6,
+      "companies": 4,
+      "uniqueAds": 6
+    },
+    {
+      "query": "agencia lead generation España",
+      "observations": 5,
+      "companies": 4,
+      "uniqueAds": 5
+    }
+  ],
+  "locations": [
+    {
+      "location": "Madrid,Community of Madrid,Spain",
+      "observations": 327
+    },
+    {
+      "location": "Seville,Andalusia,Spain",
+      "observations": 26
+    },
+    {
+      "location": "Valencia,Valencian Community,Spain",
+      "observations": 26
+    },
+    {
+      "location": "Malaga,Andalusia,Spain",
+      "observations": 26
+    },
+    {
+      "location": "Bilbao,Basque Country,Spain",
+      "observations": 22
+    },
+    {
+      "location": "Barcelona,Catalonia,Spain",
+      "observations": 21
+    }
+  ],
+  "devices": [
+    {
+      "device": "desktop",
+      "observations": 386
+    },
+    {
+      "device": "mobile",
+      "observations": 62
+    }
+  ],
+  "conclusions": [
+    "Bastida&Farina S.L. fue el proveedor con mayor cobertura observada: 158 apariciones en 73 consultas. Es presión publicitaria observada, no cuota ni rendimiento.",
+    "18 proveedores publicables aparecieron tanto en escritorio como en móvil; esta repetición entre dispositivos refuerza la señal de cobertura, no la de conversión.",
+    "16 consultas del ranking reúnen al menos tres proveedores revisados y sirven como subastas prioritarias para comparar propuesta, precio, garantía y CTA.",
+    "Las plataformas de CRM, automatización y directorios se conservan en el mapa editorial como excluidas; no inflan el catálogo de competidores de generación de demanda."
+  ],
+  "limitations": [
+    "Una aparición describe presencia en una SERP concreta; no equivale a impresiones, inversión, clics, leads ni ventas.",
+    "La mejor posición observada no identifica un ganador.",
+    "España es mercado publicitario observado; el país corporativo se documenta por separado."
+  ]
+}

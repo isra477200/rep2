@@ -36,6 +36,12 @@ test("the initial company index is an exact lightweight projection (712 mother r
         row.review === "Completa" ||
         (row.scrapeCreatorsManaged === true &&
           row.review === "Revisión estructurada de anuncios y destinos públicos" &&
+          row.reviewedAt) ||
+        (row.serpApiManaged === true &&
+          row.review === "Revisión estructurada SerpAPI y landing pública" &&
+          row.reviewedAt) ||
+        (row.leadMarketManaged === true &&
+          row.review === "Ficha estructurada; requiere revisión profunda de landing/entidad cuando no existe dominio confirmado" &&
           row.reviewedAt),
     ),
     "toda alta suplementaria está revisada y declara el método",
@@ -48,6 +54,7 @@ test("every catalog dossier and source list loads from one matching per-company 
     readFile(fullPath, "utf8").then(JSON.parse),
     readFile(indexPath, "utf8").then(JSON.parse),
   ]);
+  const indexById = new Map(index.map((row) => [row.id, row]));
   const files = (await readdir(detailsDirectory)).filter((name) => name.endsWith(".json")).sort();
   assert.equal(files.length, index.length);
   const expected = index.map((row) => `${row.id}.json`).sort();
@@ -55,8 +62,22 @@ test("every catalog dossier and source list loads from one matching per-company 
   for (const company of full) {
     const detail = JSON.parse(await readFile(`${detailsDirectory}/${company.id}.json`, "utf8"));
     assert.equal(detail.id, company.id);
-    assert.equal(detail.body, company.body);
-    assert.deepEqual(detail.sources, company.sources);
+    const row = indexById.get(company.id);
+    const enriched = Boolean(
+      row?.serpApiReviewedAt ||
+      row?.leadMarketSnapshotId ||
+      row?.scrapeCreatorsSnapshotId,
+    );
+    if (enriched) {
+      assert.ok(detail.body.startsWith(company.body), `${company.id}: el enriquecimiento debe conservar el dossier madre`);
+      assert.ok(
+        company.sources.every((source) => detail.sources.includes(source)),
+        `${company.id}: el enriquecimiento debe conservar las fuentes madre`,
+      );
+    } else {
+      assert.equal(detail.body, company.body);
+      assert.deepEqual(detail.sources, company.sources);
+    }
   }
   for (const row of index.filter((item) => !full.some((company) => company.id === item.id))) {
     const detail = JSON.parse(await readFile(`${detailsDirectory}/${row.id}.json`, "utf8"));

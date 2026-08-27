@@ -10,9 +10,11 @@ const read = (p) => JSON.parse(readFileSync(resolve(root, p), "utf8"));
 const companies = read("public/data/companies-index.json");
 const ids = new Set(companies.map((c) => c.id));
 
-test("takeaways cubre todas las fichas con ids válidos", () => {
+test("takeaways conserva IDs válidos y omite solo altas SerpAPI sin conclusión editorial", () => {
   const { items } = read("public/data/takeaways.json");
-  assert.equal(Object.keys(items).length, companies.length);
+  const missing = companies.filter((company) => !items[company.id]).map((company) => company.id).sort();
+  const intentionallyPending = companies.filter((company) => company.serpApiManaged === true).map((company) => company.id).sort();
+  assert.deepEqual(missing, intentionallyPending);
   for (const [id, entry] of Object.entries(items)) {
     assert.ok(ids.has(id), `id desconocido en takeaways: ${id}`);
     assert.ok(typeof entry.t === "string" && entry.t.length > 20, `takeaway vacío: ${id}`);

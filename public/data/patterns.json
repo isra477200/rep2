@@ -1,6 +1,6 @@
 {
- "generatedAt": "23/08/2026",
- "universe": 1017,
+ "generatedAt": "27/08/2026",
+ "universe": 1091,
  "winnersN": 152,
  "winnersProfile": {
   "n": 152,
@@ -11,23 +11,60 @@
   "medianEur": 162
  },
  "restProfile": {
-  "n": 865,
-  "adsActivePct": 30,
-  "pricePublicPct": 17,
-  "guaranteePct": 74,
-  "multiMarketPct": 39,
+  "n": 939,
+  "adsActivePct": 36,
+  "pricePublicPct": 16,
+  "guaranteePct": 75,
+  "multiMarketPct": 37,
   "medianEur": 149
  },
  "modelStats": [
   {
+   "id": "no-clasificable",
+   "label": "Sin señal pública de modelo de cobro",
+   "n": 437,
+   "medianEur": 56,
+   "pricedN": 13,
+   "adsActivePct": 27,
+   "guaranteePct": 59,
+   "winnersPct": 3,
+   "avgScore": 13,
+   "examples": [
+    {
+     "id": "premium-leads-grupo-vocento",
+     "name": "Premium Leads (grupo Vocento)",
+     "country": "España",
+     "score": 94
+    },
+    {
+     "id": "portugalseo-operador-rafa-dmark",
+     "name": "PortugalSEO / operador Rafa–Dmark",
+     "country": "Portugal",
+     "score": 92
+    },
+    {
+     "id": "roible",
+     "name": "ROIBLE",
+     "country": "Turquía",
+     "score": 92
+    },
+    {
+     "id": "agencialeads-net-agk-marketing-agency-llc",
+     "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
+     "country": "España",
+     "score": 90
+    }
+   ]
+  },
+  {
    "id": "mensualidad",
    "label": "Cuota mensual / retainer",
-   "n": 407,
+   "n": 429,
    "medianEur": 250,
    "pricedN": 136,
-   "adsActivePct": 47,
-   "guaranteePct": 89,
-   "winnersPct": 22,
+   "adsActivePct": 50,
+   "guaranteePct": 90,
+   "winnersPct": 21,
    "avgScore": 39,
    "examples": [
     {
@@ -57,51 +94,14 @@
    ]
   },
   {
-   "id": "no-clasificable",
-   "label": "Sin señal pública de modelo de cobro",
-   "n": 394,
-   "medianEur": 56,
-   "pricedN": 13,
-   "adsActivePct": 18,
-   "guaranteePct": 56,
-   "winnersPct": 4,
-   "avgScore": 10,
-   "examples": [
-    {
-     "id": "premium-leads-grupo-vocento",
-     "name": "Premium Leads (grupo Vocento)",
-     "country": "España",
-     "score": 94
-    },
-    {
-     "id": "portugalseo-operador-rafa-dmark",
-     "name": "PortugalSEO / operador Rafa–Dmark",
-     "country": "Portugal",
-     "score": 92
-    },
-    {
-     "id": "roible",
-     "name": "ROIBLE",
-     "country": "Turquía",
-     "score": 92
-    },
-    {
-     "id": "agencialeads-net-agk-marketing-agency-llc",
-     "name": "AgenciaLeads.net / AGK Marketing Agency LLC",
-     "country": "España",
-     "score": 90
-    }
-   ]
-  },
-  {
    "id": "por-lead",
    "label": "Pago por lead",
-   "n": 58,
+   "n": 60,
    "medianEur": 25,
    "pricedN": 21,
-   "adsActivePct": 38,
+   "adsActivePct": 40,
    "guaranteePct": 98,
-   "winnersPct": 33,
+   "winnersPct": 32,
    "avgScore": 44,
    "examples": [
     {
@@ -133,13 +133,13 @@
   {
    "id": "directorio",
    "label": "Directorio / marketplace (suscripción o comisión)",
-   "n": 56,
+   "n": 57,
    "medianEur": 20,
    "pricedN": 5,
-   "adsActivePct": 20,
+   "adsActivePct": 21,
    "guaranteePct": 84,
    "winnersPct": 7,
-   "avgScore": 10,
+   "avgScore": 11,
    "examples": [
     {
      "id": "nocowboys",
@@ -170,13 +170,13 @@
   {
    "id": "por-cita",
    "label": "Pago por cita / reunión válida",
-   "n": 47,
+   "n": 49,
    "medianEur": 425,
    "pricedN": 23,
-   "adsActivePct": 30,
+   "adsActivePct": 33,
    "guaranteePct": 100,
-   "winnersPct": 26,
-   "avgScore": 32,
+   "winnersPct": 24,
+   "avgScore": 33,
    "examples": [
     {
      "id": "salesbread",
@@ -207,12 +207,12 @@
   {
    "id": "exito",
    "label": "100% a éxito (cobra solo si hay resultado)",
-   "n": 43,
+   "n": 46,
    "medianEur": 54,
    "pricedN": 15,
-   "adsActivePct": 49,
+   "adsActivePct": 52,
    "guaranteePct": 100,
-   "winnersPct": 28,
+   "winnersPct": 26,
    "avgScore": 40,
    "examples": [
     {
@@ -244,13 +244,13 @@
   {
    "id": "proyecto",
    "label": "Por proyecto / setup único",
-   "n": 12,
+   "n": 13,
    "medianEur": 49,
    "pricedN": 3,
-   "adsActivePct": 25,
-   "guaranteePct": 75,
-   "winnersPct": 17,
-   "avgScore": 28,
+   "adsActivePct": 31,
+   "guaranteePct": 77,
+   "winnersPct": 15,
+   "avgScore": 29,
    "examples": [
     {
      "id": "inmoads",
@@ -339,6 +339,8 @@
    "score": 84,
    "metaAds": 7000,
    "googleAds": 0,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Generalista pymes"
   },
   {
@@ -348,6 +350,8 @@
    "score": 81,
    "metaAds": 6000,
    "googleAds": 0,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Consultora grande"
   },
   {
@@ -357,6 +361,8 @@
    "score": 89,
    "metaAds": 170,
    "googleAds": 2000,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Software + servicio"
   },
   {
@@ -366,6 +372,8 @@
    "score": 85,
    "metaAds": 1100,
    "googleAds": 0,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Vertical de un solo nicho"
   },
   {
@@ -375,6 +383,8 @@
    "score": 87,
    "metaAds": 600,
    "googleAds": 2,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Software + servicio"
   },
   {
@@ -384,6 +394,8 @@
    "score": 92,
    "metaAds": 3,
    "googleAds": 495,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Consultora grande"
   },
   {
@@ -393,6 +405,8 @@
    "score": 87,
    "metaAds": 6,
    "googleAds": 400,
+   "googleSearchObserved": true,
+   "googleSearchAdsObserved": 5,
    "agencyType": "Lead broker / venta de leads"
   },
   {
@@ -402,6 +416,8 @@
    "score": 82,
    "metaAds": 390,
    "googleAds": 0,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Vertical de un solo nicho"
   },
   {
@@ -411,6 +427,8 @@
    "score": 93,
    "metaAds": 0,
    "googleAds": 300,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Multi-nicho especializada"
   },
   {
@@ -420,6 +438,8 @@
    "score": 93,
    "metaAds": 63,
    "googleAds": 200,
+   "googleSearchObserved": true,
+   "googleSearchAdsObserved": 121,
    "agencyType": "Multi-nicho especializada"
   },
   {
@@ -429,6 +449,8 @@
    "score": 90,
    "metaAds": 210,
    "googleAds": 40,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Lead broker / venta de leads"
   },
   {
@@ -438,39 +460,41 @@
    "score": 90,
    "metaAds": 240,
    "googleAds": 0,
+   "googleSearchObserved": false,
+   "googleSearchAdsObserved": 0,
    "agencyType": "Lead broker / venta de leads"
   }
  ],
  "findings": [
   {
    "title": "Los ganadores dan la cara: garantía escrita",
-   "stat": "99% vs 74%",
-   "detail": "El 99% de las fichas con puntuación 80+ publica una garantía sustancial, frente al 74% del resto. La garantía escrita separa a los mejores del montón más que ningún otro rasgo contractual."
+   "stat": "99% vs 75%",
+   "detail": "El 99% de las fichas con puntuación 80+ publica una garantía sustancial, frente al 75% del resto. La garantía escrita separa a los mejores del montón más que ningún otro rasgo contractual."
   },
   {
    "title": "Precio público, señal de ganador",
-   "stat": "46% vs 17%",
-   "detail": "Entre los 80+, el 46% publica precio verificable; en el resto solo el 17%. Quien está seguro de su economía la enseña, y precualifica con ella."
+   "stat": "46% vs 16%",
+   "detail": "Entre los 80+, el 46% publica precio verificable; en el resto solo el 16%. Quien está seguro de su economía la enseña, y precualifica con ella."
   },
   {
    "title": "Los mejores invierten en su propia captación",
-   "stat": "49% vs 30%",
-   "detail": "El 49% de los ganadores mantiene anuncios activos verificados (Meta o Google), frente al 30% del resto. El que vende captación y no se la aplica a sí mismo suele estar en la cola."
+   "stat": "49% vs 36%",
+   "detail": "El 49% de los ganadores tiene actividad publicitaria verificada u observada (Meta o Google), frente al 36% del resto. Es una señal de uso del canal, no una prueba de rentabilidad."
   },
   {
    "title": "Ganar en un mercado empuja al siguiente",
-   "stat": "49% vs 39%",
-   "detail": "El 49% de los 80+ opera en más de un mercado, frente al 39% del resto. La expansión no es causa del éxito, pero casi ningún mediocre se la puede permitir."
+   "stat": "49% vs 37%",
+   "detail": "El 49% de los 80+ opera en más de un mercado, frente al 37% del resto. La expansión no es causa del éxito, pero casi ningún mediocre se la puede permitir."
   },
   {
    "title": "El riesgo invertido puntúa por encima del retainer",
    "stat": "40 vs 39 de media",
-   "detail": "Las 43 fichas con señal de cobro a éxito promedian 40 puntos, frente a 39 de las 407 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
+   "detail": "Las 46 fichas con señal de cobro a éxito promedian 40 puntos, frente a 39 de las 429 con cuota mensual. El mercado premia a quien asume parte del riesgo del cliente."
   },
   {
    "title": "La cita válida es la unidad más cara del mercado",
    "stat": "425 € de mediana",
-   "detail": "Los 47 modelos que cobran por cita o reunión válida tienen una mediana de 425 € por unidad y un 30% mantiene anuncios activos. Es la unidad de facturación con mejor relación valor-percibido/esfuerzo de venta."
+   "detail": "Los 49 modelos que cobran por cita o reunión válida tienen una mediana de 425 € por unidad y un 33% mantiene anuncios activos. Es la unidad de facturación con mejor relación valor-percibido/esfuerzo de venta."
   },
   {
    "title": "El stack de canales de los ganadores",
@@ -479,8 +503,8 @@
   },
   {
    "title": "Anuncios activos: la prueba de vida del mercado",
-   "stat": "335 de 1017",
-   "detail": "335 fichas (33%) mantienen anuncios verificados en Meta o Google. Su puntuación media es 46 frente a 16 de las que no. Quien sigue pagando anuncios tiene un funnel que le sale a cuenta: esa sublista es la primera de la que copiar."
+   "stat": "413 de 1091",
+   "detail": "413 fichas (38%) tienen actividad verificada u observada en Meta o Google. Su puntuación media es 45 frente a 16 de las que no. La actividad ayuda a priorizar qué estudiar; no demuestra gasto, estabilidad, conversiones ni rentabilidad."
   }
  ]
 }

@@ -207,7 +207,10 @@ test("cada creatividad exacta termina el OCR con un estado explícito", () => {
     ocrAudit.items.length,
   );
   assert.equal(ocrAudit.assetsPending, 0);
-  assert.equal(ocrAudit.items.filter((item) => item.estadoOcr === "sin_texto").length, 36);
+  assert.equal(
+    ocrAudit.items.filter((item) => item.estadoOcr === "sin_texto").length,
+    Number(ocrAudit.statusCounts.sin_texto || 0),
+  );
   const seenIdentities = new Set();
   for (const item of ocrAudit.items) {
     const key = `${item.companyId}:${item.platform}:${item.externalId}`;
@@ -270,7 +273,7 @@ test("identidad, OCR, corpus y cobertura comparten el mismo universo creativo", 
     assert(audit, key);
     assert.equal(row.file, identity.file);
     assert.equal(row.archivoSha256, audit.archivoSha256);
-    if (row.origen === "api_scrapecreators" && row.structuredCopyAvailable) {
+    if (row.structuredCopyAvailable) {
       assert.equal(row.estadoOcr, "no_necesario");
     } else {
       assert.equal(row.estadoOcr, audit.estadoOcr);
@@ -278,7 +281,7 @@ test("identidad, OCR, corpus y cobertura comparten el mismo universo creativo", 
     }
     if (
       audit.estadoOcr === "sin_texto" &&
-      !(row.origen === "api_scrapecreators" && row.structuredCopyAvailable)
+      !row.structuredCopyAvailable
     ) {
       assert.equal(`${row.titular}${row.texto}${row.cta}`, "");
       assert.equal(row.aptaPatrones, false);

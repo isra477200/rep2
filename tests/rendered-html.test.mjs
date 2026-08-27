@@ -23,13 +23,14 @@ test("modal layers close through browser history without reopening stale records
 });
 
 test("the base snapshot stays coherent while live records and study archives own gallery coverage", async () => {
-  const [companies, liveCompanies, countries, summary, audit, study, media] = await Promise.all([
+  const [companies, liveCompanies, countries, summary, audit, study, serpApiMedia, media] = await Promise.all([
     json("public/data/companies.json"),
     json("public/data/companies-index.json"),
     json("public/data/countries.json"),
     json("public/data/summary.json"),
     json("public/data/audit.json"),
     json("public/data/lead-market-snapshot.json"),
+    json("public/data/serpapi-media-index.json"),
     readdir(new URL("public/media/", root)),
   ]);
 
@@ -38,6 +39,9 @@ test("the base snapshot stays coherent while live records and study archives own
       company.media.map((item) => item.file.replace(/^\/media\//, "")),
     ),
     ...study.creativeIndex.map((item) => item.image.replace(/^\/media\//, "")),
+    ...new Set(Object.values(serpApiMedia.items || {})
+      .map((item) => String(item.file || "").replace(/^\/media\//, "").split("/")[0])
+      .filter(Boolean)),
   ];
   assert.equal(companies.length, 712);
   assert.equal(countries.length, 195);

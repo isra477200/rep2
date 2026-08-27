@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile, readdir, stat } from "node:fs/promises";
 import test from "node:test";
 
@@ -12,6 +13,8 @@ const snapshotPromise = Promise.all([
   readJson("public/data/audit.json"),
   readJson("public/data/media-quality.json"),
   readJson("public/data/scrapecreators-media-index.json"),
+  readJson("public/data/serpapi-media-index.json"),
+  readJson("public/data/lead-market-snapshot.json"),
 ]);
 
 function validSignature(file, buffer) {
@@ -38,20 +41,30 @@ function validSignature(file, buffer) {
 }
 
 test("all declared gallery assets exist locally, are unique and match their declared size", async () => {
-  const [companies, summary, , , scrapeCreators] = await snapshotPromise;
+  const [companies, summary, , , scrapeCreators, serpApi, leadMarket] = await snapshotPromise;
   const legacyRows = companies.flatMap((company) =>
     company.media.map((media) => ({ companyId: company.id, ...media })),
   );
   const scrapeCreatorsRows = Object.values(scrapeCreators.items || {}).flatMap((ad) =>
     (ad.mediaAssets || []).map((media) => ({ companyId: ad.companyId, ...media })),
   );
-  const rows = [...legacyRows, ...scrapeCreatorsRows];
+  const serpApiRows = Object.values(serpApi.items || {}).flatMap((ad) =>
+    (ad.mediaAssets || []).map((media) => ({ companyId: ad.companyId, ...media })),
+  );
+  const leadMarketRows = (leadMarket.creativeIndex || []).map((creative) => ({
+    companyId: creative.pageId,
+    file: creative.image,
+    sha256: creative.imageSha256,
+  }));
+  const rows = [...legacyRows, ...scrapeCreatorsRows, ...serpApiRows, ...leadMarketRows];
   const failures = [];
   const referenced = new Set();
 
   assert.equal(legacyRows.length, summary.media);
   assert.equal(scrapeCreatorsRows.length, scrapeCreators.summary.assets);
-  assert.equal(rows.length, summary.media + scrapeCreators.summary.assets);
+  assert.equal(serpApiRows.length, serpApi.summary.downloaded);
+  assert.equal(leadMarketRows.length, leadMarket.creativeIndex.length);
+  assert.equal(rows.length, summary.media + scrapeCreators.summary.assets + serpApi.summary.downloaded + leadMarket.creativeIndex.length);
 
   await Promise.all(
     rows.map(async (media) => {
@@ -64,8 +77,10 @@ test("all declared gallery assets exist locally, are unique and match their decl
       try {
         const url = new URL(`public/${media.file.replace(/^\//, "")}`, root);
         const [buffer, metadata] = await Promise.all([readFile(url), stat(url)]);
-        if (metadata.size !== media.bytes)
+        if (Number.isFinite(media.bytes) && metadata.size !== media.bytes)
           failures.push({ file: media.file, issue: "size" });
+        if (media.sha256 && createHash("sha256").update(buffer).digest("hex") !== media.sha256)
+          failures.push({ file: media.file, issue: "sha256" });
         if (!validSignature(media.file, buffer))
           failures.push({ file: media.file, issue: "signature" });
       } catch {
