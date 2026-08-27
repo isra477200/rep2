@@ -203,6 +203,11 @@ const sectionItems = (value: unknown, preferredKeys: string[] = []) => {
 
 const marketGapItems = (value: unknown) => {
   const root = asRecord(value);
+  const grouped = sectionItems(root?.groupedSignals, [
+    "groupedSignals",
+    "signals",
+  ]);
+  if (grouped.length) return grouped;
   const verticals = sectionItems(root?.verticals, ["verticals"]);
   return verticals.flatMap((vertical) => {
     const verticalRecord = asRecord(vertical);
@@ -596,7 +601,14 @@ export default function DecisionCenter({ onOpenCompany }: DecisionCenterProps) {
     if (section === "hypotheses")
       return ["category", "vertical", "dimension", "type"];
     if (section === "gaps")
-      return ["category", "vertical", "dimension", "type"];
+      return [
+        "categoryLabel",
+        "category",
+        "verticals",
+        "vertical",
+        "dimension",
+        "type",
+      ];
     return [];
   }, [section]);
 
@@ -874,6 +886,10 @@ function Overview({
 }) {
   const primaryHypotheses = hypotheses.slice(0, 3);
   const primaryGaps = gaps.slice(0, 3);
+  const gapReadings = gaps.reduce(
+    (sum, item) => sum + (firstNumber(asRecord(item), ["verticalCount"]) || 1),
+    0,
+  );
   const methodologyRecord = asRecord(methodology);
   const methodologyItems = Array.isArray(methodology)
     ? methodology.map(compactText).filter(Boolean)
@@ -925,7 +941,9 @@ function Overview({
         <article>
           <span>HUECOS DETECTADOS</span>
           <b>{formatNumber(gaps.length)}</b>
-          <small>Candidatos que aún requieren validación</small>
+          <small>
+            {formatNumber(gapReadings)} lecturas verticales agrupadas
+          </small>
         </article>
       </section>
 
@@ -946,6 +964,11 @@ function Overview({
             <div className={styles.priorityList}>
               {primaryHypotheses.map((item, index) => {
                 const record = asRecord(item);
+                const stableId = firstText(
+                  record,
+                  ["patternId", "id", "slug"],
+                  `primary-hypothesis-${index}`,
+                );
                 const title = firstText(
                   record,
                   ["title", "label", "name", "hypothesis"],
@@ -959,7 +982,7 @@ function Overview({
                   "why",
                 ]);
                 return (
-                  <article key={`${title}-${index}`}>
+                  <article key={stableId}>
                     <b>{String(index + 1).padStart(2, "0")}</b>
                     <div>
                       <EvidenceBadge record={record} />
@@ -1016,6 +1039,11 @@ function Overview({
           <div>
             {primaryGaps.map((item, index) => {
               const record = asRecord(item);
+              const stableId = firstText(
+                record,
+                ["signalId", "id", "slug"],
+                `primary-gap-${index}`,
+              );
               const title = firstText(
                 record,
                 ["title", "label", "name", "gap"],
@@ -1039,7 +1067,7 @@ function Overview({
                 "adShare",
               ]);
               return (
-                <article key={`${title}-${index}`}>
+                <article key={stableId}>
                   <header>
                     <EvidenceBadge record={record} />
                     {share !== null && (
@@ -1144,7 +1172,7 @@ function DnaView({
           ]) || firstText(landing, ["offer", "headline"]);
         const coherenceScore = firstNumber(coherence, ["score"]);
         return (
-          <article className={styles.dnaCard} key={`${company.id}-${index}`}>
+          <article className={styles.dnaCard} key={company.id}>
             <header>
               <div>
                 <EvidenceBadge record={record} />
@@ -1228,18 +1256,57 @@ function GapView({
   if (!items.length) return <EmptySection />;
   return (
     <div className={styles.cardList}>
+      <aside className={styles.dedupeNotice}>
+        <b>Una señal, una decisión.</b>
+        <span>
+          Los mercados donde aparece el mismo hueco están agrupados en una sola
+          ficha. Abre el desglose para comparar cada vertical sin leer la misma
+          recomendación varias veces.
+        </span>
+      </aside>
       {items.map((item, index) => {
         const record = asRecord(item);
+        const stableId = firstText(
+          record,
+          ["signalId", "id", "slug"],
+          `gap-${index}`,
+        );
         const title = firstText(
           record,
           ["title", "label", "name", "gap"],
           `Hueco ${index + 1}`,
         );
         const vertical = firstText(record, [
+          "categoryLabel",
           "vertical",
           "verticalLabel",
           "category",
         ]);
+        const verticalRows = asArray(record?.verticals)
+          .map((value) => {
+            const row = asRecord(value);
+            const label = firstText(row, ["label", "vertical", "name"]);
+            if (!label) return null;
+            return {
+              label,
+              adoption: firstNumber(row, ["adoptionPct", "share"]),
+              observed: firstNumber(row, ["observedCompanies"]),
+              denominator: firstNumber(row, ["denominatorCompanies"]),
+            };
+          })
+          .filter(
+            (
+              value,
+            ): value is {
+              label: string;
+              adoption: number | null;
+              observed: number | null;
+              denominator: number | null;
+            } => Boolean(value),
+          );
+        const verticalCount =
+          firstNumber(record, ["verticalCount"]) ?? verticalRows.length;
+        const verticalUniverse = firstNumber(record, ["verticalUniverseCount"]);
         const observedCompanies = firstNumber(record, [
           "observedCompanies",
           "companiesUsing",
@@ -1272,7 +1339,6 @@ function GapView({
           "why",
           "reason",
         ]);
-        const limitation = firstText(record, ["limitation"]);
         const action =
           firstText(record, [
             "recommendation",
@@ -1283,7 +1349,7 @@ function GapView({
           ]) ||
           `Probar una variante que haga explícito “${title}” frente a un control equivalente.`;
         return (
-          <article className={styles.wideCard} key={`${title}-${index}`}>
+          <article className={styles.wideCard} key={stableId}>
             <div className={styles.cardRank}>
               {String(index + 1).padStart(2, "0")}
             </div>
@@ -1318,19 +1384,47 @@ function GapView({
                     <b>{formatNumber(observedCompanies)}</b>
                   </span>
                 )}
+                {verticalCount > 0 && (
+                  <span>
+                    <small>Verticales agrupados</small>
+                    <b>
+                      {formatNumber(verticalCount)}
+                      {verticalUniverse !== null
+                        ? ` / ${formatNumber(verticalUniverse)}`
+                        : ""}
+                    </b>
+                  </span>
+                )}
                 <span>
                   <small>Lectura</small>
                   <b>Hipótesis</b>
                 </span>
               </div>
-              {(why || action || limitation) && (
+              {(why || action || verticalRows.length > 0) && (
                 <details className={styles.progressiveDetails}>
-                  <summary>Por qué importa y cómo probarlo</summary>
+                  <summary>Ver mercados y experimento</summary>
+                  {verticalRows.length > 0 && (
+                    <div className={styles.verticalBreakdown}>
+                      {verticalRows.map((row) => (
+                        <span key={row.label}>
+                          <b>{row.label}</b>
+                          <small>
+                            {row.observed !== null && row.denominator !== null
+                              ? `${formatNumber(row.observed)}/${formatNumber(row.denominator)} empresas`
+                              : "Muestra disponible"}
+                            {row.adoption !== null
+                              ? ` · ${formatShare(row.adoption)} presencia`
+                              : ""}
+                          </small>
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   <div className={styles.detailColumns}>
-                    {(why || limitation) && (
+                    {why && (
                       <div>
-                        <b>Interpretación y límite</b>
-                        <p>{why || limitation}</p>
+                        <b>Interpretación</b>
+                        <p>{why}</p>
                       </div>
                     )}
                     {action && (
@@ -1359,102 +1453,173 @@ function PlaybookView({
   onOpenCompany?: (id: string) => void;
 }) {
   if (!items.length) return <EmptySection />;
+  const moduleDefinitions = [
+    ["audience", "Público"],
+    ["pain", "Dolor"],
+    ["promise", "Promesa"],
+    ["guarantee", "Garantía"],
+    ["cta", "CTA"],
+    ["format", "Formato"],
+  ] as const;
+  const sharedThreshold = Math.max(2, Math.ceil(items.length * 0.6));
+  const sharedModules = moduleDefinitions.flatMap(([key, label]) => {
+    const counts = new Map<string, number>();
+    for (const item of items) {
+      const value = firstText(playbookModule(asRecord(item), key), ["label"]);
+      if (value) counts.set(value, (counts.get(value) || 0) + 1);
+    }
+    return [...counts.entries()]
+      .filter(([, count]) => count >= sharedThreshold)
+      .map(([value, count]) => ({ key, label, value, count }));
+  });
+  const sharedKeys = new Set(
+    sharedModules.map((module) => `${module.key}:${module.value}`),
+  );
   return (
-    <div className={styles.playbookGrid}>
-      {items.map((item, index) => {
-        const record = asRecord(item);
-        const vertical = firstText(
-          record,
-          ["label", "vertical", "niche", "segment", "category"],
-          "Playbook transversal",
-        );
-        const title = firstText(
-          record,
-          ["title", "name"],
-          `Sistema recomendado · ${vertical}`,
-        );
-        const summary = firstText(record, [
-          "summary",
-          "description",
-          "positioning",
-          "thesis",
-        ]);
-        const observedAudience = playbookModule(record, "audience");
-        const observedPain = playbookModule(record, "pain");
-        const observedPromise = playbookModule(record, "promise");
-        const observedGuarantee = playbookModule(record, "guarantee");
-        const observedCta = playbookModule(record, "cta");
-        const observedFormat = playbookModule(record, "format");
-        const landingBlueprint = nestedRecord(record, "landingBlueprint");
-        const landing = asArray(landingBlueprint?.modules)
-          .map((module) => firstText(asRecord(module), ["label", "purpose"]))
-          .filter(Boolean);
-        const tests = asArray(record?.opportunityTests)
-          .map((test) => firstText(asRecord(test), ["test"]))
-          .filter(Boolean);
-        const moduleRows: Array<[string, string, string]> = [
-          ["01", "Público", firstText(observedAudience, ["label"])],
-          ["02", "Dolor", firstText(observedPain, ["label"])],
-          ["03", "Promesa", firstText(observedPromise, ["label"])],
-          ["04", "Garantía", firstText(observedGuarantee, ["label"])],
-          ["05", "CTA", firstText(observedCta, ["label"])],
-          ["06", "Formato", firstText(observedFormat, ["label"])],
-        ].filter((entry) => Boolean(entry[2])) as Array<
-          [string, string, string]
-        >;
-        return (
-          <article className={styles.playbookCard} key={`${title}-${index}`}>
-            <header>
-              <span>{vertical}</span>
-              <EvidenceBadge record={record} />
-            </header>
-            <h3>{title}</h3>
-            <p className={styles.cardLead}>
-              {summary ||
-                "Plan sintetizado a partir de frecuencia empresarial observada y estructura de landing; necesita validación propia."}
-            </p>
-            <div className={styles.playbookSequence}>
-              {moduleRows.map(([number, label, value]) => (
-                <div key={label}>
-                  <b>{number}</b>
-                  <span>
-                    <small>{label}</small>
-                    {value}
-                  </span>
-                </div>
-              ))}
-            </div>
-            {(landing.length > 0 || tests.length > 0) && (
-              <details className={styles.progressiveDetails}>
-                <summary>Ver blueprint y test</summary>
-                <div className={styles.detailColumns}>
-                  {landing.length > 0 && (
-                    <div>
-                      <b>Secuencia de landing</b>
-                      <p>{landing.join(" → ")}</p>
-                    </div>
-                  )}
-                  {tests.length > 0 && (
-                    <div>
-                      <b>Primeros experimentos</b>
-                      <p>{tests.slice(0, 3).join(" · ")}</p>
-                    </div>
-                  )}
-                </div>
-              </details>
-            )}
-            <CompanyEvidence
-              record={record}
-              onOpenCompany={onOpenCompany}
-              limit={5}
-            />
-            <a className={styles.landingCta} href="?vista=landings">
-              Crear landing desde este playbook{" "}
-              <span aria-hidden="true">→</span>
-            </a>
-          </article>
-        );
-      })}
+    <div className={styles.playbookView}>
+      {sharedModules.length > 0 && (
+        <aside className={styles.sharedCore}>
+          <div>
+            <b>Núcleo común, mostrado una sola vez</b>
+            <span>
+              Estas señales aparecen en la mayoría de los verticales. Las
+              tarjetas inferiores enseñan únicamente lo que cambia.
+            </span>
+          </div>
+          <div>
+            {sharedModules.map((module) => (
+              <span key={`${module.key}:${module.value}`}>
+                <small>{module.label}</small>
+                <b>{module.value}</b>
+                <i>
+                  {module.count}/{items.length} verticales
+                </i>
+              </span>
+            ))}
+          </div>
+        </aside>
+      )}
+      <div className={styles.playbookGrid}>
+        {items.map((item, index) => {
+          const record = asRecord(item);
+          const stableId = firstText(
+            record,
+            ["verticalId", "id", "slug"],
+            `playbook-${index}`,
+          );
+          const vertical = firstText(
+            record,
+            ["label", "vertical", "niche", "segment", "category"],
+            "Playbook transversal",
+          );
+          const title = firstText(
+            record,
+            ["title", "name"],
+            `Sistema recomendado · ${vertical}`,
+          );
+          const summary = firstText(record, [
+            "summary",
+            "description",
+            "positioning",
+            "thesis",
+          ]);
+          const observedAudience = playbookModule(record, "audience");
+          const observedPain = playbookModule(record, "pain");
+          const observedPromise = playbookModule(record, "promise");
+          const observedGuarantee = playbookModule(record, "guarantee");
+          const observedCta = playbookModule(record, "cta");
+          const observedFormat = playbookModule(record, "format");
+          const landingBlueprint = nestedRecord(record, "landingBlueprint");
+          const denominator = nestedRecord(record, "denominator");
+          const companies = firstNumber(denominator, ["companies"]);
+          const identities = firstNumber(denominator, ["uniqueIdentities"]);
+          const landing = asArray(landingBlueprint?.modules)
+            .map((module) => firstText(asRecord(module), ["label", "purpose"]))
+            .filter(Boolean);
+          const tests = asArray(record?.opportunityTests)
+            .map((test) => firstText(asRecord(test), ["test"]))
+            .filter(Boolean);
+          const moduleRows: Array<[string, string, string, string]> = [
+            [
+              "audience",
+              "01",
+              "Público",
+              firstText(observedAudience, ["label"]),
+            ],
+            ["pain", "02", "Dolor", firstText(observedPain, ["label"])],
+            ["promise", "03", "Promesa", firstText(observedPromise, ["label"])],
+            [
+              "guarantee",
+              "04",
+              "Garantía",
+              firstText(observedGuarantee, ["label"]),
+            ],
+            ["cta", "05", "CTA", firstText(observedCta, ["label"])],
+            ["format", "06", "Formato", firstText(observedFormat, ["label"])],
+          ].filter(
+            (entry) =>
+              Boolean(entry[3]) && !sharedKeys.has(`${entry[0]}:${entry[3]}`),
+          ) as Array<[string, string, string, string]>;
+          return (
+            <article className={styles.playbookCard} key={stableId}>
+              <header>
+                <span>{vertical}</span>
+                <EvidenceBadge record={record} />
+              </header>
+              <h3>{title}</h3>
+              <p className={styles.cardLead}>
+                {summary ||
+                  `Lectura de ${formatNumber(companies)} empresas y ${formatNumber(identities)} identidades del vertical; necesita validación propia.`}
+              </p>
+              <div className={styles.playbookSequence}>
+                {moduleRows.map(([, number, label, value]) => (
+                  <div key={`${label}:${value}`}>
+                    <b>{number}</b>
+                    <span>
+                      <small>{label}</small>
+                      {value}
+                    </span>
+                  </div>
+                ))}
+                {!moduleRows.length && (
+                  <p className={styles.noDifferential}>
+                    Este vertical coincide con el núcleo común; su diferencia
+                    útil está en los experimentos y en la evidencia asociada.
+                  </p>
+                )}
+              </div>
+              {(landing.length > 0 || tests.length > 0) && (
+                <details className={styles.progressiveDetails}>
+                  <summary>Ver blueprint y test</summary>
+                  <div className={styles.detailColumns}>
+                    {landing.length > 0 && (
+                      <div>
+                        <b>Secuencia de landing</b>
+                        <p>{landing.join(" → ")}</p>
+                      </div>
+                    )}
+                    {tests.length > 0 && (
+                      <div>
+                        <b>Primeros experimentos</b>
+                        <p>{tests.slice(0, 3).join(" · ")}</p>
+                      </div>
+                    )}
+                  </div>
+                </details>
+              )}
+              <CompanyEvidence
+                record={record}
+                onOpenCompany={onOpenCompany}
+                limit={5}
+              />
+              <a className={styles.landingCta} href="?vista=landings">
+                Crear landing desde este playbook{" "}
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -1475,6 +1640,23 @@ function OfferView({
   const publicPriceShare = firstNumber(summary, ["publicPriceSharePct"]);
   const guaranteeShare = firstNumber(summary, ["guaranteeSharePct"]);
   const offerModels = asArray(summary?.offerModels);
+  const hasComparableConditions = (item: unknown) => {
+    const record = asRecord(item);
+    const modelObserved = asArray(record?.models).some((model) => {
+      const id = firstText(asRecord(model), ["id"]);
+      return Boolean(id && id !== "not-classified");
+    });
+    return (
+      modelObserved ||
+      ["pricing", "guarantee", "contract"].some((key) =>
+        /observed/.test(firstText(asRecord(record?.[key]), ["status"])),
+      )
+    );
+  };
+  const comparableItems = items.filter(hasComparableConditions);
+  const incompleteItems = items.filter(
+    (item) => !hasComparableConditions(item),
+  );
   return (
     <div className={styles.offerView}>
       <section className={styles.offerSummary} aria-label="Resumen de ofertas">
@@ -1520,7 +1702,7 @@ function OfferView({
             </tr>
           </thead>
           <tbody>
-            {items.map((item, index) => {
+            {comparableItems.map((item, index) => {
               const record = asRecord(item);
               const company = directCompanyReference(record);
               const title =
@@ -1560,7 +1742,7 @@ function OfferView({
                 "No observable",
               );
               return (
-                <tr key={`${title}-${index}`}>
+                <tr key={company?.id || `offer-${title}-${index}`}>
                   <td data-label="Empresa / oferta">
                     <b>
                       {company ? (
@@ -1587,6 +1769,51 @@ function OfferView({
           </tbody>
         </table>
       </div>
+      {incompleteItems.length > 0 && (
+        <details className={styles.missingOffers}>
+          <summary>
+            {formatNumber(incompleteItems.length)} fichas sin condiciones
+            comerciales comparables
+          </summary>
+          <p>
+            Conservamos su oferta y el acceso a la ficha, pero no repetimos en
+            la tabla “modelo no clasificado”, “precio no publicado”, “sin
+            garantía” y “sin permanencia observable” para cada empresa.
+          </p>
+          <div>
+            {incompleteItems.map((item, index) => {
+              const record = asRecord(item);
+              const company = directCompanyReference(record) ?? {
+                id: firstText(
+                  record,
+                  ["companyId", "id"],
+                  `offer-missing-${index}`,
+                ),
+                label: firstText(
+                  record,
+                  ["name", "label"],
+                  `Empresa ${index + 1}`,
+                ),
+                detail: "",
+              };
+              const offer = firstText(record, [
+                "offer",
+                "description",
+                "summary",
+              ]);
+              return (
+                <article key={company.id}>
+                  <CompanyLink
+                    reference={company}
+                    onOpenCompany={onOpenCompany}
+                  />
+                  {offer && <span>{offer}</span>}
+                </article>
+              );
+            })}
+          </div>
+        </details>
+      )}
     </div>
   );
 }
@@ -1600,99 +1827,115 @@ function PatternView({
 }) {
   if (!items.length) return <EmptySection />;
   return (
-    <div className={styles.patternGrid}>
-      {items.map((item, index) => {
-        const record = asRecord(item);
-        const metrics = nestedRecord(record, "metrics");
-        const category = firstText(
-          record,
-          ["categoryLabel", "category", "dimension", "family", "type"],
-          "Patrón",
-        );
-        const title = firstText(
-          record,
-          ["title", "label", "name", "pattern"],
-          `Patrón ${index + 1}`,
-        );
-        const saturation = firstText(record, ["saturation"]);
-        const saturationMeaning = firstText(record, ["saturationMeaning"]);
-        const description =
-          firstText(record, [
+    <div className={styles.patternView}>
+      <aside className={styles.dedupeNotice}>
+        <b>Conceptos únicos, reglas comunes.</b>
+        <span>
+          La saturación indica frecuencia empresarial dentro de la muestra; no
+          demuestra fatiga ni rendimiento. Esa regla se aplica a toda la sección
+          y no se repite dentro de cada tarjeta.
+        </span>
+      </aside>
+      <div className={styles.patternGrid}>
+        {items.map((item, index) => {
+          const record = asRecord(item);
+          const stableId = firstText(
+            record,
+            ["id", "signalId", "slug"],
+            `pattern-${index}`,
+          );
+          const metrics = nestedRecord(record, "metrics");
+          const category = firstText(
+            record,
+            ["categoryLabel", "category", "dimension", "family", "type"],
+            "Patrón",
+          );
+          const title = firstText(
+            record,
+            ["title", "label", "name", "pattern"],
+            `Patrón ${index + 1}`,
+          );
+          const saturation = firstText(record, ["saturation"]);
+          const description = firstText(record, [
             "description",
             "summary",
             "definition",
             "finding",
-          ]) ||
-          (saturation
-            ? `Saturación ${saturation}. ${saturationMeaning}`
-            : "Frecuencia empresarial observada en la cohorte semántica.");
-        const when = firstText(record, [
-          "whenToUse",
-          "useCase",
-          "recommendation",
-          "bestFor",
-        ]);
-        const risk = textList(record, [
-          "risks",
-          "risk",
-          "warning",
-          "limitations",
-        ]).join(" · ");
-        const share = firstNumber(metrics, [
-          "adoptionPct",
-          "share",
-          "prevalence",
-          "adShare",
-          "frequency",
-        ]);
-        const companies = firstNumber(metrics, [
-          "companies",
-          "companyCount",
-          "companiesUsing",
-        ]);
-        return (
-          <article className={styles.patternCard} key={`${title}-${index}`}>
-            <header>
-              <span>{category}</span>
-              <EvidenceBadge record={record} />
-            </header>
-            <h3>{title}</h3>
-            {description && <p className={styles.cardLead}>{description}</p>}
-            <div className={styles.patternMetrics}>
-              {share !== null && (
-                <span>
-                  <b>{formatShare(share)}</b>
-                  <small>presencia</small>
-                </span>
-              )}
-              {companies !== null && (
-                <span>
-                  <b>{formatNumber(companies)}</b>
-                  <small>empresas</small>
-                </span>
-              )}
-            </div>
-            {(when || risk) && (
-              <details className={styles.progressiveDetails}>
-                <summary>Cuándo usarlo y qué vigilar</summary>
-                {when && (
-                  <div className={styles.guidance}>
-                    <b>Puede encajar cuando</b>
-                    <p>{when}</p>
-                  </div>
+          ]);
+          const when = firstText(record, [
+            "whenToUse",
+            "useCase",
+            "recommendation",
+            "bestFor",
+          ]);
+          const risk = textList(record, [
+            "risks",
+            "risk",
+            "warning",
+            "limitations",
+          ]).join(" · ");
+          const share = firstNumber(metrics, [
+            "adoptionPct",
+            "share",
+            "prevalence",
+            "adShare",
+            "frequency",
+          ]);
+          const companies = firstNumber(metrics, [
+            "companies",
+            "companyCount",
+            "companiesUsing",
+          ]);
+          return (
+            <article className={styles.patternCard} key={stableId}>
+              <header>
+                <span>{category}</span>
+                <EvidenceBadge record={record} />
+              </header>
+              <h3>{title}</h3>
+              {description && <p className={styles.cardLead}>{description}</p>}
+              <div className={styles.patternMetrics}>
+                {share !== null && (
+                  <span>
+                    <b>{formatShare(share)}</b>
+                    <small>presencia</small>
+                  </span>
                 )}
-                {risk && (
-                  <div className={`${styles.guidance} ${styles.warning}`}>
-                    <b>Riesgo</b>
-                    <p>{risk}</p>
-                  </div>
+                {companies !== null && (
+                  <span>
+                    <b>{formatNumber(companies)}</b>
+                    <small>empresas</small>
+                  </span>
                 )}
-              </details>
-            )}
-            <CompanyEvidence record={record} onOpenCompany={onOpenCompany} />
-          </article>
-        );
-      })}
+                {saturation && (
+                  <span>
+                    <b>{saturation}</b>
+                    <small>saturación</small>
+                  </span>
+                )}
+              </div>
+              {(when || risk) && (
+                <details className={styles.progressiveDetails}>
+                  <summary>Cuándo usarlo y qué vigilar</summary>
+                  {when && (
+                    <div className={styles.guidance}>
+                      <b>Puede encajar cuando</b>
+                      <p>{when}</p>
+                    </div>
+                  )}
+                  {risk && (
+                    <div className={`${styles.guidance} ${styles.warning}`}>
+                      <b>Riesgo</b>
+                      <p>{risk}</p>
+                    </div>
+                  )}
+                </details>
+              )}
+              <CompanyEvidence record={record} onOpenCompany={onOpenCompany} />
+            </article>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -1729,6 +1972,12 @@ function HypothesisView({
       <ol className={styles.hypothesisList}>
         {items.map((item, index) => {
           const record = asRecord(item);
+          const stableId = firstText(
+            record,
+            ["patternId", "id", "slug"],
+            `hypothesis-${index}`,
+          );
+          const publishedRank = firstNumber(record, ["rank"]) ?? index + 1;
           const title = firstText(
             record,
             ["title", "label", "name", "hypothesis"],
@@ -1772,10 +2021,10 @@ function HypothesisView({
             (entry): entry is [string, number] => typeof entry[1] === "number",
           );
           return (
-            <li key={`${title}-${index}`}>
+            <li key={stableId}>
               <div className={styles.hypothesisRank}>
                 <small>RANGO</small>
-                <b>{String(index + 1).padStart(2, "0")}</b>
+                <b>{String(publishedRank).padStart(2, "0")}</b>
               </div>
               <article>
                 <header>

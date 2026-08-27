@@ -1,6 +1,6 @@
 {
   "schemaVersion": "rv-competitive-intelligence-v1",
-  "generatedAt": "2026-08-27T02:28:48.533Z",
+  "generatedAt": "2026-08-27",
   "scope": {
     "market": "España",
     "includedScopes": [
@@ -43,9 +43,9 @@
       "gapsPerVertical": 5
     },
     "sourceFingerprints": {
-      "corpus": "4b0e115b7156f4d191ec7fd68580153f916cc059844ce925247643125759b388",
-      "companies": "b55fa4b123ce911ea95fe721592303ad45a5f5f3800c809bf5b264c2c94db172",
-      "landingIntelligence": "b54a5670b19708e85556e4cba0845c1e17ff1c0a066fb2484085b3dbd65fa1b1",
+      "corpus": "b87a5c045b9c9bec468ac3039f20b004eee27e68d27420e77895933e91669862",
+      "companies": "b5222ff7cdc4d848c11db1872d7e28f26147040e21233bca15ad4fcf876264a2",
+      "landingIntelligence": "61314466ec79df770e485a969179d4c9974fa3dbb7e20962ae540a11386b5626",
       "scrapeLandingAnalysis": "915549e4c4840cbce5befebc4c330db093b3a29251e74dafc1d013122328fc35",
       "scrapeAds": "6f42defc5c9ad59a9c4130326d7ceac4cb2c265288020ea7e760aef989a1bdae",
       "siteCaptures": "c3b82eeae61183aa595cfd1c97a989e00029383867da15f4ef56bca1d73986fa"
@@ -63,7 +63,8 @@
     "verticals": 13,
     "patterns": 42,
     "hypotheses": 25,
-    "playbooks": 8
+    "playbooks": 8,
+    "distinctGapSignals": 8
   },
   "companyDna": [
     {
@@ -4659,7 +4660,7 @@
         "trustedSemanticIdentities": 5,
         "activeIdentities": 1,
         "activeSharePct": 20,
-        "medianLongevityDays": 3.8,
+        "medianLongevityDays": 3.7,
         "variantUnits": 5,
         "firstStartedAt": "2025-11-10T08:00:00.000Z",
         "lastStartedAt": "2026-08-23T07:00:00.000Z",
@@ -5873,7 +5874,7 @@
         "trustedSemanticIdentities": 8,
         "activeIdentities": 3,
         "activeSharePct": 37.5,
-        "medianLongevityDays": 2.8,
+        "medianLongevityDays": 2.7,
         "variantUnits": 8,
         "firstStartedAt": "2026-07-26T07:00:00.000Z",
         "lastStartedAt": "2026-08-24T07:00:00.000Z",
@@ -7451,7 +7452,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 526.1,
+        "medianLongevityDays": 526,
         "variantUnits": 1,
         "firstStartedAt": "2025-03-19T00:00:00.000Z",
         "lastStartedAt": "2025-03-19T00:00:00.000Z",
@@ -11556,7 +11557,7 @@
         "trustedSemanticIdentities": 28,
         "activeIdentities": 16,
         "activeSharePct": 38.1,
-        "medianLongevityDays": 57.8,
+        "medianLongevityDays": 57.7,
         "variantUnits": 46,
         "firstStartedAt": "2026-06-23T07:00:00.000Z",
         "lastStartedAt": "2026-08-15T00:00:00.000Z",
@@ -14970,7 +14971,7 @@
         "trustedSemanticIdentities": 2,
         "activeIdentities": 1,
         "activeSharePct": 50,
-        "medianLongevityDays": 27.8,
+        "medianLongevityDays": 27.7,
         "variantUnits": 3,
         "firstStartedAt": "2026-08-08T07:00:00.000Z",
         "lastStartedAt": "2026-08-08T07:00:00.000Z",
@@ -18184,7 +18185,7 @@
         "trustedSemanticIdentities": 29,
         "activeIdentities": 1,
         "activeSharePct": 3.4,
-        "medianLongevityDays": 5.8,
+        "medianLongevityDays": 5.7,
         "variantUnits": 29,
         "firstStartedAt": "2026-08-21T07:00:00.000Z",
         "lastStartedAt": "2026-08-21T07:00:00.000Z",
@@ -22505,7 +22506,7 @@
         "trustedSemanticIdentities": 2,
         "activeIdentities": 1,
         "activeSharePct": 50,
-        "medianLongevityDays": 13.8,
+        "medianLongevityDays": 13.7,
         "variantUnits": 2,
         "firstStartedAt": "2026-08-13T07:00:00.000Z",
         "lastStartedAt": "2026-08-13T07:00:00.000Z",
@@ -22737,7 +22738,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 64.1,
+        "medianLongevityDays": 64,
         "variantUnits": 1,
         "firstStartedAt": "2026-06-24T00:00:00.000Z",
         "lastStartedAt": "2026-06-24T00:00:00.000Z",
@@ -23550,7 +23551,7 @@
         "trustedSemanticIdentities": 4,
         "activeIdentities": 3,
         "activeSharePct": 75,
-        "medianLongevityDays": 126.8,
+        "medianLongevityDays": 126.7,
         "variantUnits": 4,
         "firstStartedAt": "2026-01-23T00:00:00.000Z",
         "lastStartedAt": "2026-06-11T07:00:00.000Z",
@@ -24762,7 +24763,7 @@
         "trustedSemanticIdentities": 13,
         "activeIdentities": 4,
         "activeSharePct": 30.8,
-        "medianLongevityDays": 15.8,
+        "medianLongevityDays": 15.7,
         "variantUnits": 14,
         "firstStartedAt": "2025-10-28T07:00:00.000Z",
         "lastStartedAt": "2026-08-13T07:00:00.000Z",
@@ -25759,7 +25760,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 273.1,
+        "medianLongevityDays": 273,
         "variantUnits": 1,
         "firstStartedAt": "2025-11-27T00:00:00.000Z",
         "lastStartedAt": "2025-11-27T00:00:00.000Z",
@@ -35082,7 +35083,7 @@
         "trustedSemanticIdentities": 17,
         "activeIdentities": 8,
         "activeSharePct": 47.1,
-        "medianLongevityDays": 27.8,
+        "medianLongevityDays": 27.7,
         "variantUnits": 17,
         "firstStartedAt": "2026-07-05T07:00:00.000Z",
         "lastStartedAt": "2026-08-06T07:00:00.000Z",
@@ -36571,7 +36572,7 @@
         "trustedSemanticIdentities": 16,
         "activeIdentities": 11,
         "activeSharePct": 57.9,
-        "medianLongevityDays": 16.8,
+        "medianLongevityDays": 16.7,
         "variantUnits": 23,
         "firstStartedAt": "2026-06-25T07:00:00.000Z",
         "lastStartedAt": "2026-08-21T07:00:00.000Z",
@@ -37112,7 +37113,7 @@
         "trustedSemanticIdentities": 3,
         "activeIdentities": 7,
         "activeSharePct": 23.3,
-        "medianLongevityDays": 2.8,
+        "medianLongevityDays": 2.7,
         "variantUnits": 48,
         "firstStartedAt": "2026-08-21T07:00:00.000Z",
         "lastStartedAt": "2026-08-26T07:00:00.000Z",
@@ -46354,7 +46355,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 2,
         "activeSharePct": 50,
-        "medianLongevityDays": 80.8,
+        "medianLongevityDays": 80.7,
         "variantUnits": 4,
         "firstStartedAt": "2026-02-19T08:00:00.000Z",
         "lastStartedAt": "2026-06-07T07:00:00.000Z",
@@ -49005,7 +49006,7 @@
         "trustedSemanticIdentities": 9,
         "activeIdentities": 4,
         "activeSharePct": 44.4,
-        "medianLongevityDays": 8.8,
+        "medianLongevityDays": 8.7,
         "variantUnits": 11,
         "firstStartedAt": "2026-08-03T07:00:00.000Z",
         "lastStartedAt": "2026-08-22T07:00:00.000Z",
@@ -56025,7 +56026,7 @@
         "trustedSemanticIdentities": 4,
         "activeIdentities": 2,
         "activeSharePct": 50,
-        "medianLongevityDays": 17.8,
+        "medianLongevityDays": 17.7,
         "variantUnits": 5,
         "firstStartedAt": "2026-07-27T07:00:00.000Z",
         "lastStartedAt": "2026-08-09T07:00:00.000Z",
@@ -58577,7 +58578,7 @@
         "trustedSemanticIdentities": 0,
         "activeIdentities": 2,
         "activeSharePct": 100,
-        "medianLongevityDays": 1.8,
+        "medianLongevityDays": 1.7,
         "variantUnits": 2,
         "firstStartedAt": "2026-08-25T07:00:00.000Z",
         "lastStartedAt": "2026-08-25T07:00:00.000Z",
@@ -60545,7 +60546,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 70.1,
+        "medianLongevityDays": 70,
         "variantUnits": 1,
         "firstStartedAt": "2026-06-18T00:00:00.000Z",
         "lastStartedAt": "2026-06-18T00:00:00.000Z",
@@ -70747,7 +70748,7 @@
         "trustedSemanticIdentities": 8,
         "activeIdentities": 8,
         "activeSharePct": 100,
-        "medianLongevityDays": 4.8,
+        "medianLongevityDays": 4.7,
         "variantUnits": 10,
         "firstStartedAt": "2026-08-21T07:00:00.000Z",
         "lastStartedAt": "2026-08-25T07:00:00.000Z",
@@ -71372,7 +71373,7 @@
         "trustedSemanticIdentities": 5,
         "activeIdentities": 2,
         "activeSharePct": 40,
-        "medianLongevityDays": 5.8,
+        "medianLongevityDays": 5.7,
         "variantUnits": 5,
         "firstStartedAt": "2026-04-04T07:00:00.000Z",
         "lastStartedAt": "2026-08-21T07:00:00.000Z",
@@ -84607,7 +84608,7 @@
         "trustedSemanticIdentities": 2,
         "activeIdentities": 1,
         "activeSharePct": 50,
-        "medianLongevityDays": 23.8,
+        "medianLongevityDays": 23.7,
         "variantUnits": 3,
         "firstStartedAt": "2026-08-24T07:00:00.000Z",
         "lastStartedAt": "2026-08-24T07:00:00.000Z",
@@ -86954,7 +86955,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 25.1,
+        "medianLongevityDays": 25,
         "variantUnits": 1,
         "firstStartedAt": "2026-08-02T00:00:00.000Z",
         "lastStartedAt": "2026-08-02T00:00:00.000Z",
@@ -88032,7 +88033,7 @@
         "trustedSemanticIdentities": 1,
         "activeIdentities": 1,
         "activeSharePct": 100,
-        "medianLongevityDays": 3.8,
+        "medianLongevityDays": 3.7,
         "variantUnits": 1,
         "firstStartedAt": "2026-08-23T07:00:00.000Z",
         "lastStartedAt": "2026-08-23T07:00:00.000Z",
@@ -102536,7 +102537,7 @@
         "trustedSemanticIdentities": 3,
         "activeIdentities": 3,
         "activeSharePct": 100,
-        "medianLongevityDays": 39.1,
+        "medianLongevityDays": 39,
         "variantUnits": 3,
         "firstStartedAt": "2026-07-19T00:00:00.000Z",
         "lastStartedAt": "2026-07-20T00:00:00.000Z",
@@ -105122,6 +105123,1018 @@
   ],
   "marketGaps": {
     "note": "Un hueco significa baja visibilidad en la muestra, no ausencia absoluta ni oportunidad validada.",
+    "groupedSignals": [
+      {
+        "signalId": "territorial-exclusivity",
+        "label": "Exclusividad territorial",
+        "category": "promise",
+        "categoryLabel": "Promesa",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 11,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 7,
+        "denominatorCompanies": 275,
+        "adoptionPct": 2.5,
+        "gapPct": 97.5,
+        "opportunityScore": 98.3,
+        "description": "Exclusividad territorial aparece con baja visibilidad en 11 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "automotive",
+            "label": "Automoción",
+            "observedCompanies": 0,
+            "denominatorCompanies": 10,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "beauty-wellness",
+            "label": "Belleza y bienestar",
+            "observedCompanies": 0,
+            "denominatorCompanies": 19,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "clinics-health",
+            "label": "Clínicas y salud",
+            "observedCompanies": 0,
+            "denominatorCompanies": 55,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "ecommerce-retail",
+            "label": "Ecommerce y retail",
+            "observedCompanies": 0,
+            "denominatorCompanies": 8,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "generalist",
+            "label": "Generalista",
+            "observedCompanies": 0,
+            "denominatorCompanies": 45,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "hospitality-tourism",
+            "label": "Hostelería y turismo",
+            "observedCompanies": 0,
+            "denominatorCompanies": 9,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "b2b-sdr",
+            "label": "Ventas B2B y SDR",
+            "observedCompanies": 0,
+            "denominatorCompanies": 30,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "reforms-home",
+            "label": "Reformas, obra y hogar",
+            "observedCompanies": 1,
+            "denominatorCompanies": 32,
+            "adoptionPct": 3.1,
+            "gapPct": 96.9
+          },
+          {
+            "verticalId": "legal-finance-insurance",
+            "label": "Legal, finanzas y seguros",
+            "observedCompanies": 1,
+            "denominatorCompanies": 27,
+            "adoptionPct": 3.7,
+            "gapPct": 96.3
+          },
+          {
+            "verticalId": "solar-energy",
+            "label": "Solar y energía",
+            "observedCompanies": 1,
+            "denominatorCompanies": 13,
+            "adoptionPct": 7.7,
+            "gapPct": 92.3
+          },
+          {
+            "verticalId": "real-estate",
+            "label": "Inmobiliario",
+            "observedCompanies": 4,
+            "denominatorCompanies": 27,
+            "adoptionPct": 14.8,
+            "gapPct": 85.2
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "reforleads",
+            "companyName": "ReforLeads",
+            "adId": "1054610873681850",
+            "identityKey": "a2fa3d3dddd2ae273328ca1c52cbc2f91c2fe23943c31ee5235d5d3dfc0a9cfc",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1054610873681850",
+            "active": true,
+            "excerpt": "⚠️ Exclusividad por ciudad ⚠️ Si no entras tú, entra tu competencia 📈 Consigue clientes listos para reformar 🧠 Método ya implantado en España 🚀 Posiciónate antes que el resto 🎯 Solo 4 empresas podrán acceder 📲 Rell…"
+          },
+          {
+            "companyId": "agency-mdi",
+            "companyName": "Agency MDI",
+            "pageId": "agency-mdi-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://agenciamdi.com/",
+            "excerpt": "Contrapone “leads” a “valoraciones agendadas”: otras agencias traen contactos, InmoSystem 3X trae oportunidades en calendario. Primeros leads en 2–4 semanas y desempeño óptimo en 60–90 días; garantía de recuperar la inv…"
+          },
+          {
+            "companyId": "horizzon-media",
+            "companyName": "Horizzon Media",
+            "pageId": "horizzon-media-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://horizzonmedia.com/",
+            "excerpt": "'Consigue propietarios listos para vender en tu zona', contrastando portales de compradores con demanda exclusiva de vendedores. 40 contactos de propietarios al mes como mínimo contractual, exclusivos y repuestos si son…"
+          },
+          {
+            "companyId": "inmoads",
+            "companyName": "INMOADS",
+            "pageId": "inmoads-landing",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://inmoads.es/guia-captacion-exclusivas",
+            "excerpt": "Promete convertir publicidad, CRM, automatización y guiones en exclusivas firmadas, con una sola agencia por zona. Doce exclusivas en 120 días o devolución, con campañas, filtrado, seguimiento, scripts y activos que con…"
+          },
+          {
+            "companyId": "pepperli",
+            "companyName": "Pepperli",
+            "pageId": "pepperli-landing",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://www.pepperli.com/leads/solar",
+            "excerpt": "Leads que realmente quieren comprar. Leads exclusivos filtrados por zona, presupuesto, urgencia y decisión; integración CRM/WhatsApp, puesta en marcha en 48 h. Solar, estética, fertilidad, legal, hipotecas y seguros de…"
+          },
+          {
+            "companyId": "cleopatroimpact",
+            "companyName": "Cleopatroimpact",
+            "adId": "1315813729969991",
+            "identityKey": "17e33b6357818e2c5aeaf0248ad5dda757f8f2724a960c4d818fd7163d40e872",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1315813729969991",
+            "active": false,
+            "excerpt": "Leads Cualificados En Tu Zona. Leads fotovoltaicos cualificados y filtrados por zona. Contactos verificados de personas interesadas en instalar placas solares en tu área de trabajo. Exclusivos y listos para usar. Solici…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "qualified-meetings",
+        "label": "Citas o reuniones cualificadas",
+        "category": "promise",
+        "categoryLabel": "Promesa",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 10,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 15,
+        "denominatorCompanies": 245,
+        "adoptionPct": 6.1,
+        "gapPct": 93.9,
+        "opportunityScore": 93,
+        "description": "Citas o reuniones cualificadas aparece con baja visibilidad en 10 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "automotive",
+            "label": "Automoción",
+            "observedCompanies": 0,
+            "denominatorCompanies": 10,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "ecommerce-retail",
+            "label": "Ecommerce y retail",
+            "observedCompanies": 0,
+            "denominatorCompanies": 8,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "hospitality-tourism",
+            "label": "Hostelería y turismo",
+            "observedCompanies": 0,
+            "denominatorCompanies": 9,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "legal-finance-insurance",
+            "label": "Legal, finanzas y seguros",
+            "observedCompanies": 0,
+            "denominatorCompanies": 27,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "beauty-wellness",
+            "label": "Belleza y bienestar",
+            "observedCompanies": 1,
+            "denominatorCompanies": 19,
+            "adoptionPct": 5.3,
+            "gapPct": 94.7
+          },
+          {
+            "verticalId": "clinics-health",
+            "label": "Clínicas y salud",
+            "observedCompanies": 3,
+            "denominatorCompanies": 55,
+            "adoptionPct": 5.5,
+            "gapPct": 94.5
+          },
+          {
+            "verticalId": "reforms-home",
+            "label": "Reformas, obra y hogar",
+            "observedCompanies": 2,
+            "denominatorCompanies": 32,
+            "adoptionPct": 6.3,
+            "gapPct": 93.7
+          },
+          {
+            "verticalId": "real-estate",
+            "label": "Inmobiliario",
+            "observedCompanies": 2,
+            "denominatorCompanies": 27,
+            "adoptionPct": 7.4,
+            "gapPct": 92.6
+          },
+          {
+            "verticalId": "solar-energy",
+            "label": "Solar y energía",
+            "observedCompanies": 1,
+            "denominatorCompanies": 13,
+            "adoptionPct": 7.7,
+            "gapPct": 92.3
+          },
+          {
+            "verticalId": "generalist",
+            "label": "Generalista",
+            "observedCompanies": 6,
+            "denominatorCompanies": 45,
+            "adoptionPct": 13.3,
+            "gapPct": 86.7
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "aibla",
+            "companyName": "AIBLA",
+            "adId": "1330509205570245",
+            "identityKey": "20e4deaddf21a31e7751e46b1888ae1f71f7e23221948b9387cda486fc9e59d1",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1330509205570245",
+            "active": true,
+            "excerpt": "Abrimos agenda para noviembre con 5 empresas Aibla atiende al 100% de tus contactos ¡Ni una oportunidad perdida más! Aibla cambia eso: cualifica con precisión, agenda con intención y aumenta tu oportunidad de negocio. \ud83d…"
+          },
+          {
+            "companyId": "kairium-agency",
+            "companyName": "Kairium Agency",
+            "adId": "1322823039879959",
+            "identityKey": "493fcb61ffa6d7dd2bc34a777a0c3ba6c8cd8bbd7724cf93b01089ac88c0064f",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1322823039879959",
+            "active": false,
+            "excerpt": "Tu Asistente de IA por solo 549€ | Oferta válida hasta el 15 de Febrero ¿Cansada de perder clientes porque no puedes atender 24/7? Imagina tener una recepcionista que NUNCA duerme, nunca se enferma y responde en segundo…"
+          },
+          {
+            "companyId": "marketlabs",
+            "companyName": "MarketLabs",
+            "adId": "manual:marketlabs:050",
+            "identityKey": "7d98ef47ca9b42732f54fd3e80012c1ecccd2be14d9f513ba482e3b5c676b94c",
+            "sourceType": "ad_copy",
+            "sourceUrl": null,
+            "active": false,
+            "excerpt": "Sistema Único Con IA - Resultados En 30-60… Captación de pacientes 100% automati[…] Menos esfuerzo, más citas cualificadas[…]"
+          },
+          {
+            "companyId": "exponencialmente",
+            "companyName": "Exponencialmente",
+            "pageId": "exponencialmente-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://exponencialmente.es/",
+            "excerpt": "closer de ventas de alto valor Agencia de closers de ventas y setters de appointment \"como servicio\", con modelo de pago 100% por resultado Empresas digitales que necesitan externalizar el cierre de ventas (closers y se…"
+          },
+          {
+            "companyId": "masnegocio",
+            "companyName": "MásNegocio",
+            "pageId": "masnegocio-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://www.masnegocio.es/",
+            "excerpt": "Promete encontrar clientes y cerrar reuniones en piloto automático usando cinco millones de empresas verificadas y agentes IA. Declara acceso desde el primer día, envíos en 24–48 horas, primeras respuestas cualificadas…"
+          },
+          {
+            "companyId": "skalex-pro",
+            "companyName": "Skalex.pro",
+            "adId": "27944996611798011",
+            "identityKey": "e551ef0c7e0d9542ad7140abfcf6b04d43c51c737ad6f9ffff9c6bd0d12ec4df",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library?id=27944996611798011",
+            "active": true,
+            "excerpt": "Setter de IA: Agenda citas 24/7 en automático 🤖 Si eres infoproductor, sabes que tu negocio vive o muere por tus setters. Pero los humanos se cansan, duermen y tardan en responder. Por eso hemos creado el mejor Setter…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "appointment-setting",
+        "label": "Agenda implantada",
+        "category": "mechanism",
+        "categoryLabel": "Mecanismo",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 10,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 42,
+        "denominatorCompanies": 256,
+        "adoptionPct": 16.4,
+        "gapPct": 83.6,
+        "opportunityScore": 85.8,
+        "description": "Agenda implantada aparece con baja visibilidad en 10 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "ecommerce-retail",
+            "label": "Ecommerce y retail",
+            "observedCompanies": 0,
+            "denominatorCompanies": 8,
+            "adoptionPct": 0,
+            "gapPct": 100
+          },
+          {
+            "verticalId": "generalist",
+            "label": "Generalista",
+            "observedCompanies": 4,
+            "denominatorCompanies": 45,
+            "adoptionPct": 8.9,
+            "gapPct": 91.1
+          },
+          {
+            "verticalId": "automotive",
+            "label": "Automoción",
+            "observedCompanies": 1,
+            "denominatorCompanies": 10,
+            "adoptionPct": 10,
+            "gapPct": 90
+          },
+          {
+            "verticalId": "hospitality-tourism",
+            "label": "Hostelería y turismo",
+            "observedCompanies": 1,
+            "denominatorCompanies": 9,
+            "adoptionPct": 11.1,
+            "gapPct": 88.9
+          },
+          {
+            "verticalId": "real-estate",
+            "label": "Inmobiliario",
+            "observedCompanies": 3,
+            "denominatorCompanies": 27,
+            "adoptionPct": 11.1,
+            "gapPct": 88.9
+          },
+          {
+            "verticalId": "solar-energy",
+            "label": "Solar y energía",
+            "observedCompanies": 2,
+            "denominatorCompanies": 13,
+            "adoptionPct": 15.4,
+            "gapPct": 84.6
+          },
+          {
+            "verticalId": "clinics-health",
+            "label": "Clínicas y salud",
+            "observedCompanies": 10,
+            "denominatorCompanies": 55,
+            "adoptionPct": 18.2,
+            "gapPct": 81.8
+          },
+          {
+            "verticalId": "legal-finance-insurance",
+            "label": "Legal, finanzas y seguros",
+            "observedCompanies": 5,
+            "denominatorCompanies": 27,
+            "adoptionPct": 18.5,
+            "gapPct": 81.5
+          },
+          {
+            "verticalId": "reforms-home",
+            "label": "Reformas, obra y hogar",
+            "observedCompanies": 7,
+            "denominatorCompanies": 32,
+            "adoptionPct": 21.9,
+            "gapPct": 78.1
+          },
+          {
+            "verticalId": "b2b-sdr",
+            "label": "Ventas B2B y SDR",
+            "observedCompanies": 9,
+            "denominatorCompanies": 30,
+            "adoptionPct": 30,
+            "gapPct": 70
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "auge-salud",
+            "companyName": "Auge Salud",
+            "pageId": "auge-salud-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://augesalud.es/",
+            "excerpt": "Promete más pacientes sin que el profesional tenga que ocuparse del marketing. Propone objetivos por escrito y devolución de sus honorarios si no se cumplen, con plazas limitadas por territorio/especialidad. Fundador o…"
+          },
+          {
+            "companyId": "echale-marketing",
+            "companyName": "Échale Marketing",
+            "adId": "1837041491007326",
+            "identityKey": "6e0f8cc5a48f092765743540d887fb2d34f97e3d3f768c82713d341074ae6315",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1837041491007326",
+            "active": true,
+            "excerpt": "Cierres > volumen Si tu clínica factura +50.000€/mes, no tienes un problema de leads. Tienes agenda llena. Tienes primeras visitas. Puede que hasta tengas más presupuestos abiertos que nunca. Y aun así, la facturación n…"
+          },
+          {
+            "companyId": "high-clinic-aceleradora",
+            "companyName": "High Clinic Aceleradora",
+            "adId": "1072840108668141",
+            "identityKey": "cd2814ce813b79ed93051acca558a655cd2b353c4e2f9162bdb28767df66e4bc",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1072840108668141",
+            "active": true,
+            "excerpt": "ÚLTIMA HORA: Las clínicas más exitosas llenan su calendario sin llamar... ¿Y tú para cuando? ¿Qué Pasaría Si Pudieras Unir 3 Cosas: Clientes Potenciales + Médicina Estética + Ventas? (Llenarías Tu Agenda) Te voy a hacer…"
+          },
+          {
+            "companyId": "doga-marketing",
+            "companyName": "Doga Marketing",
+            "adId": "3917042968430641",
+            "identityKey": "a94fc889c5a0466648c40189831cbd05dec40e303fc1cd1f7ee45a1ad05093f1",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=3917042968430641",
+            "active": true,
+            "excerpt": "Atrae casos de verdad Cambiar una sola frase lo cambia todo. 🗣️ Existe una gran diferencia entre que te pidan un descuento o que te pidan ayuda. ⚖️ Cuando el cliente solo ve números, terminas compitiendo por la minuta…"
+          },
+          {
+            "companyId": "masnegocio",
+            "companyName": "MásNegocio",
+            "pageId": "masnegocio-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://www.masnegocio.es/",
+            "excerpt": "Promete encontrar clientes y cerrar reuniones en piloto automático usando cinco millones de empresas verificadas y agentes IA. Declara acceso desde el primer día, envíos en 24–48 horas, primeras respuestas cualificadas…"
+          },
+          {
+            "companyId": "skyaweb-nacho-tejedor",
+            "companyName": "Skyaweb (Nacho Tejedor)",
+            "pageId": "skyaweb-nacho-tejedor-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://skyaweb.com/",
+            "excerpt": "“Webs que venden. SEO que posiciona.” Construir una máquina de visibilidad y captación combinando web, SEO orgánico y agente IA desde el primer día. Pyme local sin visibilidad/conversión o con consultas no atendidas que…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "no-lock-in",
+        "label": "Sin permanencia",
+        "category": "guarantee",
+        "categoryLabel": "Garantía y reducción de riesgo",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 8,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 40,
+        "denominatorCompanies": 230,
+        "adoptionPct": 17.4,
+        "gapPct": 82.6,
+        "opportunityScore": 79.6,
+        "description": "Sin permanencia aparece con baja visibilidad en 8 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "b2b-sdr",
+            "label": "Ventas B2B y SDR",
+            "observedCompanies": 3,
+            "denominatorCompanies": 30,
+            "adoptionPct": 10,
+            "gapPct": 90
+          },
+          {
+            "verticalId": "hospitality-tourism",
+            "label": "Hostelería y turismo",
+            "observedCompanies": 1,
+            "denominatorCompanies": 9,
+            "adoptionPct": 11.1,
+            "gapPct": 88.9
+          },
+          {
+            "verticalId": "clinics-health",
+            "label": "Clínicas y salud",
+            "observedCompanies": 8,
+            "denominatorCompanies": 55,
+            "adoptionPct": 14.5,
+            "gapPct": 85.5
+          },
+          {
+            "verticalId": "generalist",
+            "label": "Generalista",
+            "observedCompanies": 7,
+            "denominatorCompanies": 45,
+            "adoptionPct": 15.6,
+            "gapPct": 84.4
+          },
+          {
+            "verticalId": "beauty-wellness",
+            "label": "Belleza y bienestar",
+            "observedCompanies": 3,
+            "denominatorCompanies": 19,
+            "adoptionPct": 15.8,
+            "gapPct": 84.2
+          },
+          {
+            "verticalId": "solar-energy",
+            "label": "Solar y energía",
+            "observedCompanies": 3,
+            "denominatorCompanies": 13,
+            "adoptionPct": 23.1,
+            "gapPct": 76.9
+          },
+          {
+            "verticalId": "reforms-home",
+            "label": "Reformas, obra y hogar",
+            "observedCompanies": 8,
+            "denominatorCompanies": 32,
+            "adoptionPct": 25,
+            "gapPct": 75
+          },
+          {
+            "verticalId": "legal-finance-insurance",
+            "label": "Legal, finanzas y seguros",
+            "observedCompanies": 7,
+            "denominatorCompanies": 27,
+            "adoptionPct": 25.9,
+            "gapPct": 74.1
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "360-clinic-consulting",
+            "companyName": "360 Clinic Consulting",
+            "adId": "manual:360-clinic-consulting:007",
+            "identityKey": "c2ca5c8bd1c8e216ee7876e8fd08e0fcc95970b363b8b07f9e8ea4e184a87218",
+            "sourceType": "ad_copy",
+            "sourceUrl": null,
+            "active": false,
+            "excerpt": "SEO para clínicas privadas - Sin permanencia Sin permanencia y con una sola factura. Desde 499 € al mes. Pide el diagnóstico gratuito. Te decimos dónde estás perdiendo pacientes. Auditoría gratuita. [Sitelinks:] Precios…"
+          },
+          {
+            "companyId": "red-bonsai",
+            "companyName": "Agencia Red BonsAI",
+            "adId": "1043286768330946",
+            "identityKey": "f6fb4682fbb7c994bfca26d87e4f3603430fac23a625f6c1ecbc9769ff414336",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1043286768330946",
+            "active": true,
+            "excerpt": "Atrae pacientes, no curiosos Si ya has probado agencias que te prometen resultados sin entender cómo funciona una clínica dental, prueba con quien sí lo sabe. Nosotros gestionamos campañas reales para captar pacientes,…"
+          },
+          {
+            "companyId": "buda-marketing-buda-consultores-s-l",
+            "companyName": "Buda Marketing (Buda Consultores S.L.)",
+            "adId": "CR17623429131175723009",
+            "identityKey": "84f990a49eece8a8d720f8300b8190fd9a6ae072cce9db5f3139e821a67e023d",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://adstransparency.google.com/advertiser/AR01701394497662877697/creative/CR17623429131175723009?region=anywhere",
+            "active": false,
+            "excerpt": "Imagen de Imagen de Patrocinado Buda Marketing www.budamarketing.es/agencia/web Contáctanos sin compromiso - ¿Empezamos con tu nueva web? ¿No tienes resultados con tu web? La rediseñamos para que funcione y obtengas más…"
+          },
+          {
+            "companyId": "level-up-agency",
+            "companyName": "LEVEL UP AGENCY (VERA)",
+            "pageId": "level-up-agency-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://levelupagencies.com/",
+            "excerpt": "VERA atiende, cualifica y agenda tus leads en menos de 60 segundos. VERA atiende, cualifica y agenda tus leads en menos de 60 segundos. Negocios que ya facturan +20.000€/mes con publicidad activa y volumen de DMs/leads…"
+          },
+          {
+            "companyId": "amp-localboostspain-com",
+            "companyName": "Local Boost Spain",
+            "pageId": "amp-localboostspain-com-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://www.localboostspain.com/",
+            "excerpt": "Tu negocio local no debería perder clientes que ya te están buscando Optimización de Google Business Profile, gestión de reseñas, webs locales, campañas Google/Meta Ads, tracking de conversiones y automatización de What…"
+          },
+          {
+            "companyId": "pmg-ads",
+            "companyName": "PMG Ads",
+            "adId": "1285027903617518",
+            "identityKey": "725162d43b47982d04640c9b41db29481932f770d2eab05ec9ab84bb8bc52636",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1285027903617518",
+            "active": true,
+            "excerpt": "¿Vender una sociedad con deudas? ¿Tu sociedad tiene deudas y no sabes cómo salir de la situación? En PMG Consulting estudiamos la adquisición de sociedades con dificultades económicas. ✔ Sociedades con deudas bancarias,…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "explicit-guarantee",
+        "label": "Garantía explícita",
+        "category": "guarantee",
+        "categoryLabel": "Garantía y reducción de riesgo",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 5,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 38,
+        "denominatorCompanies": 141,
+        "adoptionPct": 27,
+        "gapPct": 73,
+        "opportunityScore": 64.8,
+        "description": "Garantía explícita aparece con baja visibilidad en 5 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "real-estate",
+            "label": "Inmobiliario",
+            "observedCompanies": 5,
+            "denominatorCompanies": 27,
+            "adoptionPct": 18.5,
+            "gapPct": 81.5
+          },
+          {
+            "verticalId": "beauty-wellness",
+            "label": "Belleza y bienestar",
+            "observedCompanies": 4,
+            "denominatorCompanies": 19,
+            "adoptionPct": 21.1,
+            "gapPct": 78.9
+          },
+          {
+            "verticalId": "b2b-sdr",
+            "label": "Ventas B2B y SDR",
+            "observedCompanies": 7,
+            "denominatorCompanies": 30,
+            "adoptionPct": 23.3,
+            "gapPct": 76.7
+          },
+          {
+            "verticalId": "automotive",
+            "label": "Automoción",
+            "observedCompanies": 3,
+            "denominatorCompanies": 10,
+            "adoptionPct": 30,
+            "gapPct": 70
+          },
+          {
+            "verticalId": "clinics-health",
+            "label": "Clínicas y salud",
+            "observedCompanies": 19,
+            "denominatorCompanies": 55,
+            "adoptionPct": 34.5,
+            "gapPct": 65.5
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "capilagency",
+            "companyName": "CapilAgency",
+            "pageId": "capilagency-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://capilagency.com/",
+            "excerpt": "Hero exacto: «Agencia de Marketing para tu Clínica Capilar». Atraer y convertir pacientes, aumentar cirugías y activar recomendación/recurrencia con un sistema vertical. Clínica capilar con ambición de varias cirugías,…"
+          },
+          {
+            "companyId": "amp-dentalketing-com",
+            "companyName": "Dentalketing",
+            "pageId": "amp-dentalketing-com-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://dentalketing.com/",
+            "excerpt": "Agencia de Marketing Online Para Clínicas Dentales Marketing digital para clínicas dentales enfocado en primeras visitas: SEO, Google Ads, web y estrategia digital. Servicios para tu Estrategia Digital Estrategia SEO El…"
+          },
+          {
+            "companyId": "devside-tm",
+            "companyName": "Devside TM / Leads Consulting",
+            "adId": "1001578479081508",
+            "identityKey": "40c4a13f459029ccca29b6708a545f267a3b5177cd3aac0c6185e93b00b76641",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1001578479081508",
+            "active": false,
+            "excerpt": "¿Tu clínica dental necesita más pacientes nuevos? ¿Tienes una clínica dental y estás cansado de pagar mensualidades a agencias que te prometen pacientes y no aparecen? En Leads Consulting no somos una agencia tradiciona…"
+          },
+          {
+            "companyId": "comadi-telemarketing",
+            "companyName": "Comadi Telemarketing",
+            "pageId": "comadi-telemarketing-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://comadi.es/",
+            "excerpt": "Te generamos reuniones cualificadas con tu cliente ideal. \"Te generamos reuniones cualificadas con tu cliente ideal\" / \"Externaliza con tranquilidad. Aumenta tus Leads\" Empresas B2B en sectores tecnológicos, industriale…"
+          },
+          {
+            "companyId": "compra-leads-ou",
+            "companyName": "Compra Leads OÜ",
+            "adId": "1213324789624912",
+            "identityKey": "8a42263408eb3db0b23407f05a60fedf1b5f0af5134ca258433b5cae7b62ea73",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1213324789624912",
+            "active": false,
+            "excerpt": "Aumenta tus Ventas con Leads Cualificados 🚀 🏆 Agencia de marketing especializada en generar contactos cualificados. 📈 Obtén desde 3 hasta 300+ leads diarios. 💼 Solo pagas por resultados: contactos interesados en tu…"
+          },
+          {
+            "companyId": "customertop",
+            "companyName": "CustomerTop - Reuniones Comerciales B2B",
+            "adId": "926175903186669",
+            "identityKey": "3d84e7d92912441d480bf76298b44271026e8f2981c3e9ded718083925ee2b8e",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=926175903186669",
+            "active": true,
+            "excerpt": "Reuniones Cualificadas B2B ¿Quieres vender más? 🎯 Empieza por reunirte con quienes sí pueden comprarte. En CustomerTop agendamos **reuniones B2B de calidad con decisores**, interesados y con necesidad real. ✅ Garantía…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "public-price",
+        "label": "Precio público observado",
+        "category": "offer",
+        "categoryLabel": "Oferta",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 5,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 31,
+        "denominatorCompanies": 103,
+        "adoptionPct": 30.1,
+        "gapPct": 69.9,
+        "opportunityScore": 62.6,
+        "description": "Precio público observado aparece con baja visibilidad en 5 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "ecommerce-retail",
+            "label": "Ecommerce y retail",
+            "observedCompanies": 1,
+            "denominatorCompanies": 8,
+            "adoptionPct": 12.5,
+            "gapPct": 87.5
+          },
+          {
+            "verticalId": "solar-energy",
+            "label": "Solar y energía",
+            "observedCompanies": 2,
+            "denominatorCompanies": 13,
+            "adoptionPct": 15.4,
+            "gapPct": 84.6
+          },
+          {
+            "verticalId": "real-estate",
+            "label": "Inmobiliario",
+            "observedCompanies": 8,
+            "denominatorCompanies": 27,
+            "adoptionPct": 29.6,
+            "gapPct": 70.4
+          },
+          {
+            "verticalId": "automotive",
+            "label": "Automoción",
+            "observedCompanies": 3,
+            "denominatorCompanies": 10,
+            "adoptionPct": 30,
+            "gapPct": 70
+          },
+          {
+            "verticalId": "generalist",
+            "label": "Generalista",
+            "observedCompanies": 17,
+            "denominatorCompanies": 45,
+            "adoptionPct": 37.8,
+            "gapPct": 62.2
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "agencia-pronoia",
+            "companyName": "Agencia Pronoia",
+            "sourceType": "company_or_captured_landing",
+            "sourcePath": "price"
+          },
+          {
+            "companyId": "agencia-riders",
+            "companyName": "Agencia Riders",
+            "sourceType": "company_or_captured_landing",
+            "sourcePath": "price"
+          },
+          {
+            "companyId": "bastida-y-farina-s-l",
+            "companyName": "Bastida&Farina S.L.",
+            "sourceType": "company_or_captured_landing",
+            "sourcePath": "price"
+          },
+          {
+            "companyId": "acelera-tu-crm",
+            "companyName": "Acelera tu CRM",
+            "sourceType": "company_or_captured_landing",
+            "sourcePath": "price"
+          },
+          {
+            "companyId": "amp-cseosagency-com",
+            "companyName": "CSEOs Agency",
+            "sourceType": "company_or_captured_landing",
+            "sourcePath": "price"
+          },
+          {
+            "companyId": "desorbitante",
+            "companyName": "Desorbitante",
+            "sourceType": "company_or_captured_landing",
+            "sourcePath": "price"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "qualification",
+        "label": "Cualificación o filtrado explicado",
+        "category": "mechanism",
+        "categoryLabel": "Mecanismo",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 2,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 5,
+        "denominatorCompanies": 27,
+        "adoptionPct": 18.5,
+        "gapPct": 81.5,
+        "opportunityScore": 62.5,
+        "description": "Cualificación o filtrado explicado aparece con baja visibilidad en 2 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "beauty-wellness",
+            "label": "Belleza y bienestar",
+            "observedCompanies": 3,
+            "denominatorCompanies": 19,
+            "adoptionPct": 15.8,
+            "gapPct": 84.2
+          },
+          {
+            "verticalId": "ecommerce-retail",
+            "label": "Ecommerce y retail",
+            "observedCompanies": 2,
+            "denominatorCompanies": 8,
+            "adoptionPct": 25,
+            "gapPct": 75
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "agencia-digital-seniors",
+            "companyName": "Agencia Digital Seniors",
+            "pageId": "agencia-digital-seniors-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://agenciadigitalseniors.com/",
+            "excerpt": "No se recuperó un hero actual verificable; la síntesis previa se conserva separada y no se presenta como titular observado. Aumenta la visibilidad de tu residencia Residencia con plazas disponibles, baja visibilidad loc…"
+          },
+          {
+            "companyId": "agencialeads-net-agk-marketing-agency-llc",
+            "companyName": "AgenciaLeads.net / AGK Marketing Agency LLC",
+            "pageId": "agencialeads-net-agk-marketing-agency-llc-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://agencialeads.net/",
+            "excerpt": "Hero exacto: «La Agencia de Leads especializada en Leads de Calidad para tu Sector». Entregar contactos exclusivos, cualificados, filtrados y adaptados al sector para aumentar clientes potenciales. Empresa española con…"
+          },
+          {
+            "companyId": "t4-franquicias-grupo-t4-lafranquicia-es",
+            "companyName": "T4 Franquicias (Grupo T4 / lafranquicia.es)",
+            "pageId": "t4-franquicias-grupo-t4-lafranquicia-es-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://www.t4franquicias.com/",
+            "excerpt": "Consultores y asesores en franquicias \"Hemos creado un sistema de trabajo para captación de referencias que asegura el flujo de trabajo en cualquier organización de franquicia\" (t4franquicias.com) Marcas de franquicia (…"
+          },
+          {
+            "companyId": "anexeo-anexeo-digital-s-l-u-alianza-con-marketingfunerario-com",
+            "companyName": "Anexeo / Anexeo Digital S.L.U. (alianza con MarketingFunerario.com)",
+            "pageId": "anexeo-anexeo-digital-s-l-u-alianza-con-marketingfunerario-com-landing",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://anexeo.com/marketing-funerario/",
+            "excerpt": "Hero exacto: «Marketing Funerario». Ayudar a empresas funerarias a crecer y aumentar facturación con eficacia comprobada, estrategia personalizada y resultados que la página califica de garantizados. Funeraria española…"
+          },
+          {
+            "companyId": "surper",
+            "companyName": "Surper",
+            "adId": "1427314012575034",
+            "identityKey": "603ab45e053cb17dfc55ea13b0f782078a5d3454f066b39e3610599debd1cf2d",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1427314012575034",
+            "active": false,
+            "excerpt": "El CRM con IA que recupera los clientes que hoy pierdes Un cliente que no recibe respuesta en 5 minutos, se va con la competencia. Si facturas más de 5.000€/mes y cada lead perdido te duele en la cuenta, esto es para ti…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      },
+      {
+        "signalId": "automation-ai",
+        "label": "Automatización o IA explicada",
+        "category": "mechanism",
+        "categoryLabel": "Mecanismo",
+        "measurementStatus": "observed_frequency_aggregated",
+        "opportunityStatus": "inferred_hypothesis",
+        "verticalCount": 4,
+        "verticalUniverseCount": 11,
+        "observedCompanies": 26,
+        "denominatorCompanies": 98,
+        "adoptionPct": 26.5,
+        "gapPct": 73.5,
+        "opportunityScore": 62.4,
+        "description": "Automatización o IA explicada aparece con baja visibilidad en 4 de 11 verticales analizados. El dato agregado evita repetir la misma decisión por cada mercado.",
+        "verticals": [
+          {
+            "verticalId": "hospitality-tourism",
+            "label": "Hostelería y turismo",
+            "observedCompanies": 2,
+            "denominatorCompanies": 9,
+            "adoptionPct": 22.2,
+            "gapPct": 77.8
+          },
+          {
+            "verticalId": "reforms-home",
+            "label": "Reformas, obra y hogar",
+            "observedCompanies": 8,
+            "denominatorCompanies": 32,
+            "adoptionPct": 25,
+            "gapPct": 75
+          },
+          {
+            "verticalId": "b2b-sdr",
+            "label": "Ventas B2B y SDR",
+            "observedCompanies": 8,
+            "denominatorCompanies": 30,
+            "adoptionPct": 26.7,
+            "gapPct": 73.3
+          },
+          {
+            "verticalId": "legal-finance-insurance",
+            "label": "Legal, finanzas y seguros",
+            "observedCompanies": 8,
+            "denominatorCompanies": 27,
+            "adoptionPct": 29.6,
+            "gapPct": 70.4
+          }
+        ],
+        "evidence": [
+          {
+            "companyId": "construly",
+            "companyName": "Construly",
+            "pageId": "construly-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://construly.es/",
+            "excerpt": "Llena tu agenda de presupuestos reales, citas cerradas, clientes de calidad, visitas confirmadas y obras nuevas desde la primera semana. Llena tu agenda decitas cerradas desde la primera semana. Llena tu agenda de presu…"
+          },
+          {
+            "companyId": "marketing-bur-reformas-full-funnel",
+            "companyName": "Marketing Bur / Reformas Full Funnel",
+            "adId": "1036173052549756",
+            "identityKey": "035e17e3a05488d9a2f8b95af7148ec891e968fff600aa6907fa47d8102e0e66",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1036173052549756",
+            "active": false,
+            "excerpt": "Deja de contestar mensajes que no van a ningún lado Voy a ser claro contigo: No estás perdiendo obras por falta de trabajo... las estás perdiendo por falta de sistema. Porque mientras estás en obra: No contestas a tiemp…"
+          },
+          {
+            "companyId": "reeno",
+            "companyName": "Reeno",
+            "pageId": null,
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://reeno.es/",
+            "excerpt": "Empresas de reformas consolidadas en España (explícitamente las que facturan +500K€/año; plan Avanzado para +800K€) «Front office» completo para reformistas que facturan +500K€/año: CRM especializado en reformas (pipeli…"
+          },
+          {
+            "companyId": "cliento",
+            "companyName": "Cliento",
+            "pageId": "cliento-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://cliento.io/",
+            "excerpt": "Agencia de embudos de venta \"Capta, sigue y cualifica clientes potenciales sin que tengas que estar encima\"; sistema de 3 capas (investigación, embudos, CRM con IA) que trabaja \"24/7 para tu negocio\" Empresas de servici…"
+          },
+          {
+            "companyId": "cold-outreach-studio",
+            "companyName": "Cold Outreach Studio",
+            "adId": "1064621096429958",
+            "identityKey": "fb55b04b241415198d6635a10cfb323ed0c4f88aeaea2dbf5da2ea3fbb18e5eb",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1064621096429958",
+            "active": true,
+            "excerpt": "👇 Dale al play (7 min) ¿Cansado de quemar presupuesto en ads y horas en contenido para llegar a los decisores de tu cliente ideal? Te instalamos un sistema de prospección B2B 100% automatizado que añade entre 30.000 y…"
+          },
+          {
+            "companyId": "growyourindustry",
+            "companyName": "GrowYourIndustry",
+            "pageId": "growyourindustry-homepage",
+            "sourceType": "captured_landing",
+            "sourceUrl": "https://growyourindustry.com/",
+            "excerpt": "AGENCIA DE MARKETING DIGITAL PARA EMPRESAS INDUSTRIALES & B2B \"Generar leads B2B de Alta Calidad que se Convierten en Ventas\" · \"leads listos para hablar con tu equipo comercial, no en inflar tu base de datos\" (growyour…"
+          }
+        ],
+        "limitation": "La ausencia en la evidencia recuperada no demuestra ausencia absoluta ni demanda; esta agrupación sirve para diseñar una prueba, no para declarar una oportunidad validada."
+      }
+    ],
     "verticals": [
       {
         "verticalId": "clinics-health",
@@ -105135,6 +106148,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -105147,6 +106162,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -105190,6 +106207,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 8,
@@ -105233,6 +106252,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 10,
@@ -105274,6 +106295,8 @@
           {
             "signalId": "explicit-guarantee",
             "label": "Garantía explícita",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 19,
@@ -105324,6 +106347,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -105336,6 +106361,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 4,
@@ -105375,6 +106402,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 6,
@@ -105414,6 +106443,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 7,
@@ -105453,6 +106484,8 @@
           {
             "signalId": "public-price",
             "label": "Precio público observado",
+            "category": "offer",
+            "categoryLabel": "Oferta",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 17,
@@ -105495,6 +106528,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -105518,6 +106553,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 2,
@@ -105547,6 +106584,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 7,
@@ -105588,6 +106627,8 @@
           {
             "signalId": "automation-ai",
             "label": "Automatización o IA explicada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 8,
@@ -105627,6 +106668,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 8,
@@ -105679,6 +106722,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -105691,6 +106736,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -105732,6 +106779,8 @@
           {
             "signalId": "explicit-guarantee",
             "label": "Garantía explícita",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 7,
@@ -105773,6 +106822,8 @@
           {
             "signalId": "automation-ai",
             "label": "Automatización o IA explicada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 8,
@@ -105812,6 +106863,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 9,
@@ -105862,6 +106915,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 2,
@@ -105891,6 +106946,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -105930,6 +106987,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 4,
@@ -105967,6 +107026,8 @@
           {
             "signalId": "explicit-guarantee",
             "label": "Garantía explícita",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 5,
@@ -106006,6 +107067,8 @@
           {
             "signalId": "public-price",
             "label": "Precio público observado",
+            "category": "offer",
+            "categoryLabel": "Oferta",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 8,
@@ -106048,6 +107111,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106060,6 +107125,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106081,6 +107148,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 5,
@@ -106120,6 +107189,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 7,
@@ -106161,6 +107232,8 @@
           {
             "signalId": "automation-ai",
             "label": "Automatización o IA explicada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 8,
@@ -106213,6 +107286,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106225,6 +107300,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106246,6 +107323,8 @@
           {
             "signalId": "qualification",
             "label": "Cualificación o filtrado explicado",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -106283,6 +107362,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -106322,6 +107403,8 @@
           {
             "signalId": "explicit-guarantee",
             "label": "Garantía explícita",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 4,
@@ -106374,6 +107457,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106397,6 +107482,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106420,6 +107507,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 2,
@@ -106451,6 +107540,8 @@
           {
             "signalId": "public-price",
             "label": "Precio público observado",
+            "category": "offer",
+            "categoryLabel": "Oferta",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 2,
@@ -106476,6 +107567,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -106526,6 +107619,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106538,6 +107633,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106550,6 +107647,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106573,6 +107672,8 @@
           {
             "signalId": "explicit-guarantee",
             "label": "Garantía explícita",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -106610,6 +107711,8 @@
           {
             "signalId": "public-price",
             "label": "Precio público observado",
+            "category": "offer",
+            "categoryLabel": "Oferta",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 3,
@@ -106652,6 +107755,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106664,6 +107769,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106676,6 +107783,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106697,6 +107806,8 @@
           {
             "signalId": "no-lock-in",
             "label": "Sin permanencia",
+            "category": "guarantee",
+            "categoryLabel": "Garantía y reducción de riesgo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106718,6 +107829,8 @@
           {
             "signalId": "automation-ai",
             "label": "Automatización o IA explicada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 2,
@@ -106758,6 +107871,8 @@
           {
             "signalId": "appointment-setting",
             "label": "Agenda implantada",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106770,6 +107885,8 @@
           {
             "signalId": "qualified-meetings",
             "label": "Citas o reuniones cualificadas",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106782,6 +107899,8 @@
           {
             "signalId": "territorial-exclusivity",
             "label": "Exclusividad territorial",
+            "category": "promise",
+            "categoryLabel": "Promesa",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 0,
@@ -106794,6 +107913,8 @@
           {
             "signalId": "public-price",
             "label": "Precio público observado",
+            "category": "offer",
+            "categoryLabel": "Oferta",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 1,
@@ -106813,6 +107934,8 @@
           {
             "signalId": "qualification",
             "label": "Cualificación o filtrado explicado",
+            "category": "mechanism",
+            "categoryLabel": "Mecanismo",
             "measurementStatus": "observed_frequency",
             "opportunityStatus": "inferred_hypothesis",
             "observedCompanies": 2,
@@ -106855,6 +107978,7 @@
         "landingCompanies": 46
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Clínicas y salud basada en 55 empresas, 211 identidades publicitarias y 46 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -107246,6 +108370,7 @@
         "landingCompanies": 40
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Generalista basada en 45 empresas, 205 identidades publicitarias y 40 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -107637,6 +108762,7 @@
         "landingCompanies": 27
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Reformas, obra y hogar basada en 32 empresas, 112 identidades publicitarias y 27 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -108028,6 +109154,7 @@
         "landingCompanies": 27
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Ventas B2B y SDR basada en 30 empresas, 84 identidades publicitarias y 27 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -108419,6 +109546,7 @@
         "landingCompanies": 22
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Inmobiliario basada en 27 empresas, 80 identidades publicitarias y 22 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -108810,6 +109938,7 @@
         "landingCompanies": 25
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Legal, finanzas y seguros basada en 27 empresas, 80 identidades publicitarias y 25 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -109201,6 +110330,7 @@
         "landingCompanies": 19
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Belleza y bienestar basada en 19 empresas, 22 identidades publicitarias y 19 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -109562,6 +110692,7 @@
         "landingCompanies": 12
       },
       "status": "evidence_based_playbook",
+      "summary": "Lectura para Solar y energía basada en 13 empresas, 73 identidades publicitarias y 12 landings capturadas.",
       "observedModules": {
         "audience": {
           "status": "observed_frequency",
@@ -123304,7 +124435,7 @@
         "adoptionPct": 62.1,
         "uniqueIdentities": 533,
         "activeCompanySharePct": 57.5,
-        "medianLongevityDays": 7.8,
+        "medianLongevityDays": 7.7,
         "medianVariantsPerCompany": 4,
         "landingCoherencePct": 8.3,
         "landingCoherenceDenominator": 60,
@@ -123518,7 +124649,7 @@
         "adoptionPct": 60.7,
         "uniqueIdentities": 513,
         "activeCompanySharePct": 54.1,
-        "medianLongevityDays": 5.7,
+        "medianLongevityDays": 5.6,
         "medianVariantsPerCompany": 4,
         "landingCoherencePct": 71.4,
         "landingCoherenceDenominator": 63,
@@ -124237,7 +125368,7 @@
         "adoptionPct": 42.1,
         "uniqueIdentities": 266,
         "activeCompanySharePct": 35.6,
-        "medianLongevityDays": 6.5,
+        "medianLongevityDays": 6.4,
         "medianVariantsPerCompany": 3,
         "landingCoherencePct": 25.5,
         "landingCoherenceDenominator": 47,
@@ -125336,7 +126467,7 @@
         "adoptionPct": 29.3,
         "uniqueIdentities": 196,
         "activeCompanySharePct": 48.8,
-        "medianLongevityDays": 6.9,
+        "medianLongevityDays": 6.8,
         "medianVariantsPerCompany": 2,
         "landingCoherencePct": 41.2,
         "landingCoherenceDenominator": 34,
@@ -125657,7 +126788,7 @@
         "adoptionPct": 23.6,
         "uniqueIdentities": 145,
         "activeCompanySharePct": 51.5,
-        "medianLongevityDays": 3.8,
+        "medianLongevityDays": 3.7,
         "medianVariantsPerCompany": 3,
         "landingCoherencePct": 47.8,
         "landingCoherenceDenominator": 23,
@@ -126489,7 +127620,7 @@
         "adoptionPct": 21.4,
         "uniqueIdentities": 122,
         "activeCompanySharePct": 40,
-        "medianLongevityDays": 8.8,
+        "medianLongevityDays": 8.7,
         "medianVariantsPerCompany": 2,
         "landingCoherencePct": 63.6,
         "landingCoherenceDenominator": 22,
@@ -126596,7 +127727,7 @@
         "adoptionPct": 15.7,
         "uniqueIdentities": 81,
         "activeCompanySharePct": 31.8,
-        "medianLongevityDays": 8.8,
+        "medianLongevityDays": 8.7,
         "medianVariantsPerCompany": 1.5,
         "landingCoherencePct": 0,
         "landingCoherenceDenominator": 17,
@@ -126703,7 +127834,7 @@
         "adoptionPct": 15,
         "uniqueIdentities": 52,
         "activeCompanySharePct": 47.6,
-        "medianLongevityDays": 4.8,
+        "medianLongevityDays": 4.7,
         "medianVariantsPerCompany": 1,
         "landingCoherencePct": 0,
         "landingCoherenceDenominator": 14,
@@ -127214,7 +128345,7 @@
         "adoptionPct": 11.4,
         "uniqueIdentities": 39,
         "activeCompanySharePct": 37.5,
-        "medianLongevityDays": 7.8,
+        "medianLongevityDays": 7.7,
         "medianVariantsPerCompany": 1.5,
         "landingCoherencePct": 20,
         "landingCoherenceDenominator": 10,
@@ -127521,8 +128652,9 @@
         "category": "cta",
         "score": 54.9,
         "claimStatus": "hypothesis",
-        "claim": "Probar contacto o whatsapp como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar el siguiente paso “Contacto o WhatsApp” con el CTA actual manteniendo constante anuncio, oferta y página.",
+        "successMetric": "Tasa clic→acción, lead válido, cita y asistencia; no premiar clics que no avanzan en el embudo.",
+        "interpretation": "La señal “Contacto o WhatsApp” aparece en 90 de 140 empresas de la cohorte (64.3%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 64.3,
           "activity": 54.4,
@@ -127585,12 +128717,13 @@
         "category": "mechanism",
         "score": 53.8,
         "claimStatus": "hypothesis",
-        "claim": "Probar sistema, funnel o crm como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Explicar “Sistema, funnel o CRM” en pasos concretos y compararlo con una variante que solo presenta el resultado.",
+        "successMetric": "Conversión a lead válido y cita, más comprensión del mecanismo en llamadas y formularios.",
+        "interpretation": "La señal “Sistema, funnel o CRM” aparece en 85 de 140 empresas de la cohorte (60.7%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 60.7,
           "activity": 54.1,
-          "longevity": 6.3,
+          "longevity": 6.2,
           "variants": 50,
           "format": 86.3,
           "landingCoherence": 71.4
@@ -127649,8 +128782,9 @@
         "category": "cta",
         "score": 52.1,
         "claimStatus": "hypothesis",
-        "claim": "Probar reservar llamada o reunión como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar el siguiente paso “Reservar llamada o reunión” con el CTA actual manteniendo constante anuncio, oferta y página.",
+        "successMetric": "Tasa clic→acción, lead válido, cita y asistencia; no premiar clics que no avanzan en el embudo.",
+        "interpretation": "La señal “Reservar llamada o reunión” aparece en 86 de 140 empresas de la cohorte (61.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 61.4,
           "activity": 54.7,
@@ -127713,8 +128847,9 @@
         "category": "promise",
         "score": 49.9,
         "claimStatus": "hypothesis",
-        "claim": "Probar ventas, facturación o crecimiento como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Formular “Ventas, facturación o crecimiento” como promesa medible y contrastarla con una versión más conservadora.",
+        "successMetric": "Lead válido, asistencia, venta y margen; descartar mejoras de volumen que reduzcan la calidad.",
+        "interpretation": "La señal “Ventas, facturación o crecimiento” aparece en 85 de 140 empresas de la cohorte (60.7%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 60.7,
           "activity": 47.1,
@@ -127777,8 +128912,9 @@
         "category": "mechanism",
         "score": 47.7,
         "claimStatus": "hypothesis",
-        "claim": "Probar filtrado o cualificación como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Explicar “Filtrado o cualificación” en pasos concretos y compararlo con una variante que solo presenta el resultado.",
+        "successMetric": "Conversión a lead válido y cita, más comprensión del mecanismo en llamadas y formularios.",
+        "interpretation": "La señal “Filtrado o cualificación” aparece en 63 de 140 empresas de la cohorte (45%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 45,
           "activity": 42.9,
@@ -127841,8 +128977,9 @@
         "category": "audience",
         "score": 47,
         "claimStatus": "hypothesis",
-        "claim": "Probar agencias y consultores como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para agencias y consultores, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Agencias y consultores” aparece en 79 de 140 empresas de la cohorte (56.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 56.4,
           "activity": 41.8,
@@ -127905,12 +129042,13 @@
         "category": "cta",
         "score": 45.7,
         "claimStatus": "hypothesis",
-        "claim": "Probar saber más como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar el siguiente paso “Saber más” con el CTA actual manteniendo constante anuncio, oferta y página.",
+        "successMetric": "Tasa clic→acción, lead válido, cita y asistencia; no premiar clics que no avanzan en el embudo.",
+        "interpretation": "La señal “Saber más” aparece en 87 de 140 empresas de la cohorte (62.1%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 62.1,
           "activity": 57.5,
-          "longevity": 8.7,
+          "longevity": 8.6,
           "variants": 50,
           "format": 86.3,
           "landingCoherence": 8.3
@@ -127969,8 +129107,9 @@
         "category": "cta",
         "score": 43,
         "claimStatus": "hypothesis",
-        "claim": "Probar auditoría, demo o diagnóstico como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar el siguiente paso “Auditoría, demo o diagnóstico” con el CTA actual manteniendo constante anuncio, oferta y página.",
+        "successMetric": "Tasa clic→acción, lead válido, cita y asistencia; no premiar clics que no avanzan en el embudo.",
+        "interpretation": "La señal “Auditoría, demo o diagnóstico” aparece en 76 de 140 empresas de la cohorte (54.3%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 54.3,
           "activity": 46.1,
@@ -128033,8 +129172,9 @@
         "category": "pain",
         "score": 41.5,
         "claimStatus": "hypothesis",
-        "claim": "Probar dependencia de portales o referidos como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar un ángulo centrado en “Dependencia de portales o referidos” frente a un mensaje de beneficio equivalente.",
+        "successMetric": "CTR cualificado, CPL válido y tasa de cita, sin elevar rechazo comercial ni contactos fuera de perfil.",
+        "interpretation": "La señal “Dependencia de portales o referidos” aparece en 65 de 140 empresas de la cohorte (46.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 46.4,
           "activity": 58.5,
@@ -128097,8 +129237,9 @@
         "category": "cta",
         "score": 40.8,
         "claimStatus": "hypothesis",
-        "claim": "Probar empezar o registrarse como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar el siguiente paso “Empezar o registrarse” con el CTA actual manteniendo constante anuncio, oferta y página.",
+        "successMetric": "Tasa clic→acción, lead válido, cita y asistencia; no premiar clics que no avanzan en el embudo.",
+        "interpretation": "La señal “Empezar o registrarse” aparece en 52 de 140 empresas de la cohorte (37.1%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 37.1,
           "activity": 51.9,
@@ -128161,8 +129302,9 @@
         "category": "cta",
         "score": 40.2,
         "claimStatus": "hypothesis",
-        "claim": "Probar presupuesto o propuesta como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Comparar el siguiente paso “Presupuesto o propuesta” con el CTA actual manteniendo constante anuncio, oferta y página.",
+        "successMetric": "Tasa clic→acción, lead válido, cita y asistencia; no premiar clics que no avanzan en el embudo.",
+        "interpretation": "La señal “Presupuesto o propuesta” aparece en 46 de 140 empresas de la cohorte (32.9%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 32.9,
           "activity": 39.1,
@@ -128225,8 +129367,9 @@
         "category": "mechanism",
         "score": 40,
         "claimStatus": "hypothesis",
-        "claim": "Probar automatización o ia como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Explicar “Automatización o IA” en pasos concretos y compararlo con una variante que solo presenta el resultado.",
+        "successMetric": "Conversión a lead válido y cita, más comprensión del mecanismo en llamadas y formularios.",
+        "interpretation": "La señal “Automatización o IA” aparece en 43 de 140 empresas de la cohorte (30.7%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 30.7,
           "activity": 48.8,
@@ -128289,8 +129432,9 @@
         "category": "audience",
         "score": 39.3,
         "claimStatus": "hypothesis",
-        "claim": "Probar reformas, obra y hogar como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para reformas, obra y hogar, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Reformas, obra y hogar” aparece en 40 de 140 empresas de la cohorte (28.6%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 28.6,
           "activity": 50,
@@ -128353,8 +129497,9 @@
         "category": "guarantee",
         "score": 39.2,
         "claimStatus": "hypothesis",
-        "claim": "Probar garantía explícita como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar “Garantía explícita” con condiciones visibles frente a la misma oferta sin reversión de riesgo.",
+        "successMetric": "Conversión, calidad, cancelaciones y coste real de cumplir la garantía; proteger margen y legalidad.",
+        "interpretation": "La señal “Garantía explícita” aparece en 41 de 140 empresas de la cohorte (29.3%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 29.3,
           "activity": 51.2,
@@ -128417,8 +129562,9 @@
         "category": "promise",
         "score": 38.4,
         "claimStatus": "hypothesis",
-        "claim": "Probar captación predecible y recurrente como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Formular “Captación predecible y recurrente” como promesa medible y contrastarla con una versión más conservadora.",
+        "successMetric": "Lead válido, asistencia, venta y margen; descartar mejoras de volumen que reduzcan la calidad.",
+        "interpretation": "La señal “Captación predecible y recurrente” aparece en 56 de 140 empresas de la cohorte (40%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 40,
           "activity": 42.9,
@@ -128481,12 +129627,13 @@
         "category": "mechanism",
         "score": 38.4,
         "claimStatus": "hypothesis",
-        "claim": "Probar whatsapp conversacional como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Explicar “WhatsApp conversacional” en pasos concretos y compararlo con una variante que solo presenta el resultado.",
+        "successMetric": "Conversión a lead válido y cita, más comprensión del mecanismo en llamadas y formularios.",
+        "interpretation": "La señal “WhatsApp conversacional” aparece en 33 de 140 empresas de la cohorte (23.6%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 23.6,
           "activity": 51.5,
-          "longevity": 4.2,
+          "longevity": 4.1,
           "variants": 37.5,
           "format": 87.8,
           "landingCoherence": 47.8
@@ -128540,77 +129687,14 @@
       },
       {
         "rank": 17,
-        "patternId": "audience:legal-finance",
-        "label": "Legal, finanzas y seguros",
-        "category": "audience",
-        "score": 37,
-        "claimStatus": "hypothesis",
-        "claim": "Probar legal, finanzas y seguros como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
-        "components": {
-          "adoption": 29.3,
-          "activity": 48.8,
-          "longevity": 7.7,
-          "variants": 25,
-          "format": 87.8,
-          "landingCoherence": 41.2
-        },
-        "weightsApplied": {
-          "adoption": 25,
-          "activity": 20,
-          "longevity": 15,
-          "variants": 15,
-          "format": 10,
-          "landingCoherence": 15
-        },
-        "availableWeight": 100,
-        "missingComponents": [],
-        "denominator": {
-          "companies": 140,
-          "uniqueIdentities": 963
-        },
-        "evidence": [
-          {
-            "companyId": "airos-agency",
-            "companyName": "Airos Agency",
-            "adId": "688609243831523",
-            "identityKey": "ea03d6783199b22914be199333c6d6ba43b28ad7804a98650718ee67cafd11f4",
-            "sourceType": "ad_copy",
-            "sourceUrl": "https://www.facebook.com/ads/library?id=688609243831523",
-            "active": true,
-            "excerpt": "👀 Abogado... Te quiero contar cómo conseguimos más de 230 clientes en sólo 2 meses para el despacho de Enrique (Robles Santos Abogados). O bien, cómo conseguimos que Pablo diera el paso a trabajar por cuenta propia en…"
-          },
-          {
-            "companyId": "monq-media",
-            "companyName": "Monq Media",
-            "adId": "1216692357343827",
-            "identityKey": "efcb68ac1c2c045708976fbd8849f79d265dad0baca7e0d7308af2f5254f0585",
-            "sourceType": "ad_copy",
-            "sourceUrl": "https://www.facebook.com/ads/library/?id=1216692357343827",
-            "active": true,
-            "excerpt": "Duplica tus ventas de fotovoltaica en 60 días 🚨 Solo 3 instaladoras podrán duplicar sus ventas en 60 días. No trabajamos con todos. Solo con empresas instaladoras de fotovoltaica que ya estén vendiendo y quieran escala…"
-          },
-          {
-            "companyId": "ndemarketing",
-            "companyName": "NdeMarketing",
-            "adId": "1299226939070878",
-            "identityKey": "c1b6dcccdf3f3ac3bfef7288d4ec251555c67f900e9a9b8cdeb380c4f692abdc",
-            "sourceType": "ad_copy",
-            "sourceUrl": "https://www.facebook.com/ads/library/?id=1299226939070878",
-            "active": true,
-            "excerpt": "¿Sabes cómo Ospina Abogados aparece en todos lados? No es suerte. Es estrategia digital bien ejecutada. Desde contenido orientado al cliente hasta SEO local, dominan el juego sin tener la web más bonita. ¿Tu despacho ta…"
-          }
-        ]
-      },
-      {
-        "rank": 18,
         "patternId": "promise:speed",
         "label": "Resultado en un plazo",
         "category": "promise",
         "score": 37,
         "claimStatus": "hypothesis",
-        "claim": "Probar resultado en un plazo como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Formular “Resultado en un plazo” como promesa medible y contrastarla con una versión más conservadora.",
+        "successMetric": "Lead válido, asistencia, venta y margen; descartar mejoras de volumen que reduzcan la calidad.",
+        "interpretation": "La señal “Resultado en un plazo” aparece en 49 de 140 empresas de la cohorte (35%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 35,
           "activity": 44.9,
@@ -128667,18 +129751,84 @@
         ]
       },
       {
+        "rank": 18,
+        "patternId": "audience:legal-finance",
+        "label": "Legal, finanzas y seguros",
+        "category": "audience",
+        "score": 36.9,
+        "claimStatus": "hypothesis",
+        "claim": "Probar una campaña específica para legal, finanzas y seguros, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Legal, finanzas y seguros” aparece en 41 de 140 empresas de la cohorte (29.3%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
+        "components": {
+          "adoption": 29.3,
+          "activity": 48.8,
+          "longevity": 7.6,
+          "variants": 25,
+          "format": 87.8,
+          "landingCoherence": 41.2
+        },
+        "weightsApplied": {
+          "adoption": 25,
+          "activity": 20,
+          "longevity": 15,
+          "variants": 15,
+          "format": 10,
+          "landingCoherence": 15
+        },
+        "availableWeight": 100,
+        "missingComponents": [],
+        "denominator": {
+          "companies": 140,
+          "uniqueIdentities": 963
+        },
+        "evidence": [
+          {
+            "companyId": "airos-agency",
+            "companyName": "Airos Agency",
+            "adId": "688609243831523",
+            "identityKey": "ea03d6783199b22914be199333c6d6ba43b28ad7804a98650718ee67cafd11f4",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library?id=688609243831523",
+            "active": true,
+            "excerpt": "👀 Abogado... Te quiero contar cómo conseguimos más de 230 clientes en sólo 2 meses para el despacho de Enrique (Robles Santos Abogados). O bien, cómo conseguimos que Pablo diera el paso a trabajar por cuenta propia en…"
+          },
+          {
+            "companyId": "monq-media",
+            "companyName": "Monq Media",
+            "adId": "1216692357343827",
+            "identityKey": "efcb68ac1c2c045708976fbd8849f79d265dad0baca7e0d7308af2f5254f0585",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1216692357343827",
+            "active": true,
+            "excerpt": "Duplica tus ventas de fotovoltaica en 60 días 🚨 Solo 3 instaladoras podrán duplicar sus ventas en 60 días. No trabajamos con todos. Solo con empresas instaladoras de fotovoltaica que ya estén vendiendo y quieran escala…"
+          },
+          {
+            "companyId": "ndemarketing",
+            "companyName": "NdeMarketing",
+            "adId": "1299226939070878",
+            "identityKey": "c1b6dcccdf3f3ac3bfef7288d4ec251555c67f900e9a9b8cdeb380c4f692abdc",
+            "sourceType": "ad_copy",
+            "sourceUrl": "https://www.facebook.com/ads/library/?id=1299226939070878",
+            "active": true,
+            "excerpt": "¿Sabes cómo Ospina Abogados aparece en todos lados? No es suerte. Es estrategia digital bien ejecutada. Desde contenido orientado al cliente hasta SEO local, dominan el juego sin tener la web más bonita. ¿Tu despacho ta…"
+          }
+        ]
+      },
+      {
         "rank": 19,
         "patternId": "guarantee:free-entry",
         "label": "Entrada gratuita",
         "category": "guarantee",
         "score": 36.8,
         "claimStatus": "hypothesis",
-        "claim": "Probar entrada gratuita como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar “Entrada gratuita” con condiciones visibles frente a la misma oferta sin reversión de riesgo.",
+        "successMetric": "Conversión, calidad, cancelaciones y coste real de cumplir la garantía; proteger margen y legalidad.",
+        "interpretation": "La señal “Entrada gratuita” aparece en 59 de 140 empresas de la cohorte (42.1%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 42.1,
           "activity": 35.6,
-          "longevity": 7.2,
+          "longevity": 7.1,
           "variants": 37.5,
           "format": 86.3,
           "landingCoherence": 25.5
@@ -128735,14 +129885,15 @@
         "patternId": "audience:b2b-sales",
         "label": "Ventas B2B",
         "category": "audience",
-        "score": 36.7,
+        "score": 36.6,
         "claimStatus": "hypothesis",
-        "claim": "Probar ventas b2b como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para ventas b2b, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Ventas B2B” aparece en 30 de 140 empresas de la cohorte (21.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 21.4,
           "activity": 40,
-          "longevity": 9.8,
+          "longevity": 9.7,
           "variants": 25,
           "format": 85.5,
           "landingCoherence": 63.6
@@ -128801,8 +129952,9 @@
         "category": "audience",
         "score": 36.1,
         "claimStatus": "hypothesis",
-        "claim": "Probar clínicas y salud como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para clínicas y salud, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Clínicas y salud” aparece en 42 de 140 empresas de la cohorte (30%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 30,
           "activity": 35.7,
@@ -128865,8 +130017,9 @@
         "category": "mechanism",
         "score": 35.5,
         "claimStatus": "hypothesis",
-        "claim": "Probar seo o contenido como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Explicar “SEO o contenido” en pasos concretos y compararlo con una variante que solo presenta el resultado.",
+        "successMetric": "Conversión a lead válido y cita, más comprensión del mecanismo en llamadas y formularios.",
+        "interpretation": "La señal “SEO o contenido” aparece en 32 de 140 empresas de la cohorte (22.9%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 22.9,
           "activity": 43.8,
@@ -128929,8 +130082,9 @@
         "category": "audience",
         "score": 34.9,
         "claimStatus": "hypothesis",
-        "claim": "Probar inmobiliario como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para inmobiliario, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Inmobiliario” aparece en 30 de 140 empresas de la cohorte (21.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 21.4,
           "activity": 46.7,
@@ -128993,8 +130147,9 @@
         "category": "audience",
         "score": 32.4,
         "claimStatus": "hypothesis",
-        "claim": "Probar automoción como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para automoción, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Automoción” aparece en 16 de 140 empresas de la cohorte (11.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 11.4,
           "activity": 43.8,
@@ -129057,8 +130212,9 @@
         "category": "audience",
         "score": 32.4,
         "claimStatus": "hypothesis",
-        "claim": "Probar solar y energía como hipótesis controlada en una campaña compatible.",
-        "interpretation": "Prioridad descriptiva por presencia y señales operativas; necesita métricas propias de coste, calidad, citas y ventas.",
+        "claim": "Probar una campaña específica para solar y energía, con lenguaje, casos y objeciones propios del segmento.",
+        "successMetric": "CPL válido y tasa lead→cita frente a una versión generalista; vigilar calidad y margen por segmento.",
+        "interpretation": "La señal “Solar y energía” aparece en 16 de 140 empresas de la cohorte (11.4%). La prioridad combina presencia y señales operativas, pero necesita métricas propias de coste, calidad, citas, ventas y margen.",
         "components": {
           "adoption": 11.4,
           "activity": 25,

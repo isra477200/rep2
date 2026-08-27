@@ -97,7 +97,6 @@ export type AdLandingAuditItem = {
     dimension: string;
     label: string;
     action: string;
-    basis: string;
   }>;
   limitation: string;
 };
@@ -156,9 +155,13 @@ const CONFIDENCE_LABELS: Record<Confidence, string> = {
   low: "Confianza baja",
 };
 
-const clean = (value: unknown) => String(value ?? "").replace(/\s+/g, " ").trim();
+const clean = (value: unknown) =>
+  String(value ?? "")
+    .replace(/\s+/g, " ")
+    .trim();
 
-const scoreLabel = (score: number | null) => (score === null ? "—" : String(score));
+const scoreLabel = (score: number | null) =>
+  score === null ? "—" : String(score);
 
 const shortDate = (value: string) => {
   const date = new Date(value);
@@ -179,13 +182,23 @@ const hostLabel = (value?: string | null) => {
   }
 };
 
-function ScoreRing({ score, coverage }: { score: number | null; coverage: number }) {
+function ScoreRing({
+  score,
+  coverage,
+}: {
+  score: number | null;
+  coverage: number;
+}) {
   const value = score ?? 0;
   return (
     <div
       className={styles.scoreRing}
       style={{ "--audit-score": `${value * 3.6}deg` } as React.CSSProperties}
-      aria-label={score === null ? "Índice no calculado" : `Índice de continuidad ${score} sobre 100`}
+      aria-label={
+        score === null
+          ? "Índice no calculado"
+          : `Índice de continuidad ${score} sobre 100`
+      }
     >
       <div>
         <strong>{scoreLabel(score)}</strong>
@@ -220,14 +233,18 @@ function AdLandingAuditContent({
   const [confidence, setConfidence] = useState("all");
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState(
-    data.items.find((item) => item.companyId === initialCompanyId)?.id || data.items[0]?.id || "",
+    data.items.find((item) => item.companyId === initialCompanyId)?.id ||
+      data.items[0]?.id ||
+      "",
   );
 
   const verticals = useMemo(
     () =>
-      [...new Map(data.items.map((item) => [item.vertical, item.verticalLabel])).entries()].sort((a, b) =>
-        a[1].localeCompare(b[1], "es"),
-      ),
+      [
+        ...new Map(
+          data.items.map((item) => [item.vertical, item.verticalLabel]),
+        ).entries(),
+      ].sort((a, b) => a[1].localeCompare(b[1], "es")),
     [data.items],
   );
 
@@ -236,26 +253,44 @@ function AdLandingAuditContent({
     return data.items.filter((item) => {
       if (vertical !== "all" && item.vertical !== vertical) return false;
       if (state !== "all" && item.state !== state) return false;
-      if (confidence !== "all" && item.confidence.label !== confidence) return false;
-      if (needle && !`${item.companyName} ${item.country} ${item.verticalLabel}`.toLocaleLowerCase("es").includes(needle)) {
+      if (confidence !== "all" && item.confidence.label !== confidence)
+        return false;
+      if (
+        needle &&
+        !`${item.companyName} ${item.country} ${item.verticalLabel}`
+          .toLocaleLowerCase("es")
+          .includes(needle)
+      ) {
         return false;
       }
       return true;
     });
   }, [confidence, data.items, query, state, vertical]);
 
-  const selected = filtered.find((item) => item.id === selectedId) || filtered[0] || null;
-  const selectedCapture = selected?.landing.capture.thumbnailFile || selected?.landing.capture.captureFile;
+  const selected =
+    filtered.find((item) => item.id === selectedId) || filtered[0] || null;
+  const selectedCapture =
+    selected?.landing.capture.thumbnailFile ||
+    selected?.landing.capture.captureFile;
 
   return (
-    <section className={`${styles.panel} ${className}`.trim()} aria-labelledby="ad-landing-audit-title">
+    <section
+      className={`${styles.panel} ${className}`.trim()}
+      aria-labelledby="ad-landing-audit-title"
+    >
       <header className={styles.hero}>
         <div>
-          <p className={styles.eyebrow}>INTELIGENCIA DE RECORRIDO · ANUNCIO → LANDING</p>
-          <h2 id="ad-landing-audit-title">¿La landing cumple lo que prepara el anuncio?</h2>
+          <p className={styles.eyebrow}>
+            INTELIGENCIA DE RECORRIDO · ANUNCIO → LANDING
+          </p>
+          <h2 id="ad-landing-audit-title">
+            ¿La landing cumple lo que prepara el anuncio?
+          </h2>
           <p>
-            Compara promesa, público, oferta, CTA y confianza con evidencia concreta. Una ausencia de datos queda
-            como <strong>no observada</strong>; nunca se convierte automáticamente en una mala nota.
+            Compara promesa, público, oferta, CTA y confianza con evidencia
+            concreta. Una ausencia de datos queda como{" "}
+            <strong>no observada</strong>; nunca se convierte automáticamente en
+            una mala nota.
           </p>
         </div>
         <div className={styles.updateStamp}>
@@ -269,7 +304,9 @@ function AdLandingAuditContent({
         <article>
           <span>Empresas contrastadas</span>
           <strong>{data.summary.companies.toLocaleString("es-ES")}</strong>
-          <small>{data.summary.totalAds.toLocaleString("es-ES")} anuncios enlazados</small>
+          <small>
+            {data.summary.totalAds.toLocaleString("es-ES")} anuncios enlazados
+          </small>
         </article>
         <article>
           <span>Con índice calculable</span>
@@ -278,7 +315,9 @@ function AdLandingAuditContent({
         </article>
         <article>
           <span>Landing capturada</span>
-          <strong>{data.summary.withCapturedLanding.toLocaleString("es-ES")}</strong>
+          <strong>
+            {data.summary.withCapturedLanding.toLocaleString("es-ES")}
+          </strong>
           <small>Evidencia visual o textual recuperada</small>
         </article>
         <article>
@@ -302,28 +341,43 @@ function AdLandingAuditContent({
         </label>
         <label>
           <span>Vertical</span>
-          <select value={vertical} onChange={(event) => setVertical(event.target.value)}>
+          <select
+            value={vertical}
+            onChange={(event) => setVertical(event.target.value)}
+          >
             <option value="all">Todas</option>
             {verticals.map(([id, label]) => (
-              <option key={id} value={id}>{label}</option>
+              <option key={id} value={id}>
+                {label}
+              </option>
             ))}
           </select>
         </label>
         <label>
           <span>Estado</span>
-          <select value={state} onChange={(event) => setState(event.target.value)}>
+          <select
+            value={state}
+            onChange={(event) => setState(event.target.value)}
+          >
             <option value="all">Todos</option>
             {Object.entries(STATE_LABELS).map(([id, label]) => (
-              <option key={id} value={id}>{label}</option>
+              <option key={id} value={id}>
+                {label}
+              </option>
             ))}
           </select>
         </label>
         <label>
           <span>Confianza</span>
-          <select value={confidence} onChange={(event) => setConfidence(event.target.value)}>
+          <select
+            value={confidence}
+            onChange={(event) => setConfidence(event.target.value)}
+          >
             <option value="all">Todas</option>
             {Object.entries(CONFIDENCE_LABELS).map(([id, label]) => (
-              <option key={id} value={id}>{label}</option>
+              <option key={id} value={id}>
+                {label}
+              </option>
             ))}
           </select>
         </label>
@@ -335,7 +389,10 @@ function AdLandingAuditContent({
 
       {selected ? (
         <div className={styles.workspace}>
-          <aside className={styles.ranking} aria-label="Ranking descriptivo de continuidad">
+          <aside
+            className={styles.ranking}
+            aria-label="Ranking descriptivo de continuidad"
+          >
             <div className={styles.rankingHeader}>
               <div>
                 <span>Comparativa</span>
@@ -360,7 +417,10 @@ function AdLandingAuditContent({
                       {item.ads.uniqueCopies === 1 ? "copy" : "copies"}
                     </small>
                   </span>
-                  <span className={styles.miniScore} data-empty={item.qualityScore === null}>
+                  <span
+                    className={styles.miniScore}
+                    data-empty={item.qualityScore === null}
+                  >
                     {scoreLabel(item.qualityScore)}
                   </span>
                 </button>
@@ -370,22 +430,40 @@ function AdLandingAuditContent({
 
           <article className={styles.detail}>
             <header className={styles.detailHeader}>
-              <ScoreRing score={selected.qualityScore} coverage={selected.confidence.evaluatedShare} />
+              <ScoreRing
+                score={selected.qualityScore}
+                coverage={selected.confidence.evaluatedShare}
+              />
               <div className={styles.detailIdentity}>
                 <div className={styles.badges}>
-                  <span data-tone={selected.state}>{STATE_LABELS[selected.state]}</span>
-                  <span data-confidence={selected.confidence.label}>{CONFIDENCE_LABELS[selected.confidence.label]}</span>
+                  <span data-tone={selected.state}>
+                    {STATE_LABELS[selected.state]}
+                  </span>
+                  <span data-confidence={selected.confidence.label}>
+                    {CONFIDENCE_LABELS[selected.confidence.label]}
+                  </span>
                 </div>
                 <h3>{selected.companyName}</h3>
                 <p>
-                  {selected.verticalLabel} · {selected.country} · {selected.ads.usableForAudit} piezas aptas / {selected.ads.total} recuperadas
+                  {selected.verticalLabel} · {selected.country} ·{" "}
+                  {selected.ads.usableForAudit} piezas aptas /{" "}
+                  {selected.ads.total} recuperadas
                 </p>
-                <a href={selected.landing.url || undefined} target="_blank" rel="noreferrer">
-                  {hostLabel(selected.landing.url)} <span aria-hidden="true">↗</span>
+                <a
+                  href={selected.landing.url || undefined}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {hostLabel(selected.landing.url)}{" "}
+                  <span aria-hidden="true">↗</span>
                 </a>
               </div>
               {onOpenCompany ? (
-                <button className={styles.openCompany} type="button" onClick={() => onOpenCompany(selected.companyId)}>
+                <button
+                  className={styles.openCompany}
+                  type="button"
+                  onClick={() => onOpenCompany(selected.companyId)}
+                >
                   Abrir ficha
                 </button>
               ) : null}
@@ -396,7 +474,9 @@ function AdLandingAuditContent({
                 <span>Confianza de lectura</span>
                 <strong>{selected.confidence.score}/100</strong>
               </div>
-              <div className={styles.track}><i style={{ width: `${selected.confidence.score}%` }} /></div>
+              <div className={styles.track}>
+                <i style={{ width: `${selected.confidence.score}%` }} />
+              </div>
               <p>{selected.confidence.note}</p>
             </div>
 
@@ -410,10 +490,18 @@ function AdLandingAuditContent({
               </div>
               <div className={styles.dimensionGrid}>
                 {selected.dimensions.map((dimension) => (
-                  <article key={dimension.id} className={styles.dimension} data-status={dimension.status}>
+                  <article
+                    key={dimension.id}
+                    className={styles.dimension}
+                    data-status={dimension.status}
+                  >
                     <header>
                       <span>{dimension.label}</span>
-                      <strong>{dimension.score === null ? "—" : `${dimension.score}/100`}</strong>
+                      <strong>
+                        {dimension.score === null
+                          ? "—"
+                          : `${dimension.score}/100`}
+                      </strong>
                     </header>
                     <div className={styles.dimensionTrack}>
                       <i style={{ width: `${dimension.score || 0}%` }} />
@@ -436,13 +524,23 @@ function AdLandingAuditContent({
                 <div className={styles.adEvidence}>
                   <header>
                     <span>Anuncios</span>
-                    <strong>{selected.ads.evidence.length} piezas representativas</strong>
+                    <strong>
+                      {selected.ads.evidence.length} piezas representativas
+                    </strong>
                   </header>
                   {selected.ads.evidence.slice(0, 3).map((ad) => (
                     <article key={ad.corpusKey || ad.id}>
                       <div>
                         <span>ID {ad.id || ad.corpusKey}</span>
-                        {ad.sourceUrl ? <a href={ad.sourceUrl} target="_blank" rel="noreferrer">Fuente ↗</a> : null}
+                        {ad.sourceUrl ? (
+                          <a
+                            href={ad.sourceUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Fuente ↗
+                          </a>
+                        ) : null}
                       </div>
                       {ad.title ? <strong>{ad.title}</strong> : null}
                       <p>{ad.copy}</p>
@@ -453,28 +551,50 @@ function AdLandingAuditContent({
                 <div className={styles.landingEvidence}>
                   <header>
                     <span>Landing</span>
-                    <strong>{selected.landing.capture.captureFile ? "Captura completa disponible" : "Cobertura limitada"}</strong>
+                    <strong>
+                      {selected.landing.capture.captureFile
+                        ? "Captura completa disponible"
+                        : "Cobertura limitada"}
+                    </strong>
                   </header>
                   {selectedCapture ? (
                     <a
                       className={styles.capturePreview}
-                      href={selected.landing.capture.captureFile || selectedCapture}
+                      href={
+                        selected.landing.capture.captureFile || selectedCapture
+                      }
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img src={selectedCapture} alt={`Captura de la landing de ${selected.companyName}`} />
+                      <img
+                        src={selectedCapture}
+                        alt={`Captura de la landing de ${selected.companyName}`}
+                      />
                       <span>Ampliar captura ↗</span>
                     </a>
                   ) : (
                     <div className={styles.noCapture}>
                       <strong>Captura no disponible</strong>
-                      <p>Se conserva como ausencia de evidencia y no como fallo de la landing.</p>
+                      <p>
+                        Se conserva como ausencia de evidencia y no como fallo
+                        de la landing.
+                      </p>
                     </div>
                   )}
-                  {selected.landing.capture.headline ? <h5>{selected.landing.capture.headline}</h5> : null}
-                  {selected.landing.capture.excerpt ? <p>{selected.landing.capture.excerpt}</p> : null}
+                  {selected.landing.capture.headline ? (
+                    <h5>{selected.landing.capture.headline}</h5>
+                  ) : null}
+                  {selected.landing.capture.excerpt ? (
+                    <p>{selected.landing.capture.excerpt}</p>
+                  ) : null}
                   {selected.landing.capture.url ? (
-                    <a href={selected.landing.capture.url} target="_blank" rel="noreferrer">Abrir URL observada ↗</a>
+                    <a
+                      href={selected.landing.capture.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Abrir URL observada ↗
+                    </a>
                   ) : null}
                 </div>
               </div>
@@ -486,6 +606,10 @@ function AdLandingAuditContent({
                   <span>Plan de corrección</span>
                   <h4>Acciones priorizadas por pérdida ponderada</h4>
                 </div>
+                <p>
+                  El motivo de cada acción queda en el desglose superior; aquí
+                  solo aparece el cambio concreto.
+                </p>
               </div>
               {selected.actions.length ? (
                 <ol className={styles.actions}>
@@ -495,14 +619,15 @@ function AdLandingAuditContent({
                       <div>
                         <strong>{action.label}</strong>
                         <p>{action.action}</p>
-                        <small>Por qué: {action.basis}</small>
                       </div>
                     </li>
                   ))}
                 </ol>
               ) : (
                 <div className={styles.noActions}>
-                  No se detectaron pérdidas explícitas con la evidencia disponible. Conviene validar con métricas reales antes de decidir.
+                  {selected.state === "insufficient_evidence"
+                    ? "No generamos acciones con evidencia insuficiente. Primero hay que recuperar una landing y piezas comparables."
+                    : "No se detectaron pérdidas con peso suficiente para prescribir un cambio. Conviene validar con métricas reales antes de decidir."}
                 </div>
               )}
             </section>
@@ -536,13 +661,20 @@ export default function AdLandingAuditPanel(props: AdLandingAuditPanelProps) {
         });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const payload = (await response.json()) as AdLandingAuditData;
-        if (payload.schemaVersion !== "rv-ad-landing-audit-v1" || !Array.isArray(payload.items)) {
+        if (
+          payload.schemaVersion !== "rv-ad-landing-audit-v1" ||
+          !Array.isArray(payload.items)
+        ) {
           throw new Error("Esquema de auditoría no reconocido");
         }
         setRemoteData(payload);
       } catch (error) {
         if (controller.signal.aborted) return;
-        setLoadError(error instanceof Error ? error.message : "No se pudo cargar la auditoría");
+        setLoadError(
+          error instanceof Error
+            ? error.message
+            : "No se pudo cargar la auditoría",
+        );
       }
     };
     void load();
@@ -551,9 +683,16 @@ export default function AdLandingAuditPanel(props: AdLandingAuditPanelProps) {
 
   if (!data) {
     return (
-      <section className={`${styles.panel} ${props.className || ""}`.trim()} aria-live="polite">
+      <section
+        className={`${styles.panel} ${props.className || ""}`.trim()}
+        aria-live="polite"
+      >
         <div className={styles.loadingState} data-error={Boolean(loadError)}>
-          <strong>{loadError ? "No se pudo abrir la auditoría" : "Preparando auditoría anuncio → landing…"}</strong>
+          <strong>
+            {loadError
+              ? "No se pudo abrir la auditoría"
+              : "Preparando auditoría anuncio → landing…"}
+          </strong>
           <p>
             {loadError
               ? `El archivo de resultados no está disponible (${loadError}).`
