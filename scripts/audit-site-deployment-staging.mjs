@@ -5,7 +5,7 @@ const stagingProject = resolve(process.argv[2] || ".");
 const clientRoot = resolve(stagingProject, "dist", "client");
 const dataRoot = resolve(clientRoot, "data");
 const clientPrefix = `${clientRoot}${sep}`;
-const localAssetPattern = /^\/(?:media|evidence|asset-previews|document-previews)\//;
+const localAssetPattern = /^(?:file:)?(\/(?:media|evidence|asset-previews|document-previews)\/)/;
 
 async function walk(root) {
   const files = [];
@@ -23,7 +23,9 @@ async function walk(root) {
 
 function collect(value, references) {
   if (typeof value === "string") {
-    if (localAssetPattern.test(value)) references.add(value);
+    if (localAssetPattern.test(value)) {
+      references.add(value.startsWith("file:") ? value.slice("file:".length) : value);
+    }
     return;
   }
   if (!value || typeof value !== "object") return;
@@ -31,6 +33,9 @@ function collect(value, references) {
 }
 
 const jsonFiles = (await walk(dataRoot)).filter((path) => path.endsWith(".json"));
+const temporaryFiles = (await walk(clientRoot)).filter(
+  (path) => /\.rv(?:stage\.|staging$|finalize$|previews$|documents$|compact$)/.test(path),
+);
 const references = new Set();
 for (const path of jsonFiles) collect(JSON.parse(await readFile(path, "utf8")), references);
 
@@ -45,8 +50,14 @@ for (const reference of references) {
   }
 }
 
-console.log(JSON.stringify({ jsonFiles: jsonFiles.length, references: references.size, missing: missing.length }, null, 2));
-if (missing.length) {
+console.log(JSON.stringify({
+  jsonFiles: jsonFiles.length,
+  references: references.size,
+  missing: missing.length,
+  temporaryFiles: temporaryFiles.length,
+}, null, 2));
+if (missing.length || temporaryFiles.length) {
   console.error(missing.slice(0, 50).join("\n"));
+  console.error(temporaryFiles.slice(0, 50).join("\n"));
   process.exitCode = 1;
 }

@@ -34,6 +34,8 @@
     "sites:prepare:deployment:documents": "python scripts/prepare_site_deployment_documents.py",
     "sites:compact:deployment": "node scripts/compact-site-deployment-data.mjs",
     "sites:recompress:deployment": "node scripts/recompress-site-deployment-staging.mjs",
+    "sites:finalize:deployment": "node scripts/finalize-site-deployment-staging.mjs",
+    "sites:package:qa": "node --test tests/site-deployment-packaging.test.mjs",
     "sites:qa": "node --test tests/site-captures-contract.test.mjs tests/site-capture-copy-enrichment.test.mjs",
     "landings:intelligence": "node scripts/build-landing-intelligence.mjs",
     "landings:qa": "node --experimental-strip-types --test tests/landing-studio.test.mjs",

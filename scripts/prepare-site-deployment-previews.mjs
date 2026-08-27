@@ -30,13 +30,24 @@ function hashBuffer(buffer) {
 }
 
 function rewrite(value, mappings) {
-  if (typeof value === "string") return mappings.get(value) || value;
+  if (typeof value === "string") {
+    const direct = mappings.get(value);
+    if (direct) return direct;
+    if (value.startsWith("file:")) {
+      const mappedFile = mappings.get(value.slice("file:".length));
+      if (mappedFile) return `file:${mappedFile}`;
+    }
+    return value;
+  }
   if (!value || typeof value !== "object") return value;
   if (Array.isArray(value)) return value.map((child) => rewrite(child, mappings));
   const next = {};
   let mappedVisual = false;
   for (const [key, child] of Object.entries(value)) {
-    if (typeof child === "string" && mappings.has(child)) mappedVisual = true;
+    if (
+      typeof child === "string" &&
+      (mappings.has(child) || (child.startsWith("file:") && mappings.has(child.slice("file:".length))))
+    ) mappedVisual = true;
     next[key] = rewrite(child, mappings);
   }
   if (mappedVisual) {
@@ -44,6 +55,18 @@ function rewrite(value, mappings) {
     if (typeof next.type === "string" && next.type.startsWith("image/")) next.type = "image/webp";
   }
   return next;
+}
+
+function collectStaleReferences(value, mappings, stale) {
+  if (typeof value === "string") {
+    const publicPath = value.startsWith("file:") ? value.slice("file:".length) : value;
+    if (mappings.has(publicPath)) stale.add(value);
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  for (const child of Array.isArray(value) ? value : Object.values(value)) {
+    collectStaleReferences(child, mappings, stale);
+  }
 }
 
 async function writeJsonAtomic(path, value) {
@@ -106,6 +129,18 @@ for (const path of jsonFiles) {
   await writeJsonAtomic(path, rewrite(value, mappings));
 }
 
+const staleReferences = new Set();
+for (const path of jsonFiles) {
+  collectStaleReferences(JSON.parse(await readFile(path, "utf8")), mappings, staleReferences);
+}
+if (staleReferences.size) {
+  throw new Error(
+    `No se borran medios: quedan ${staleReferences.size} referencias antiguas (${[
+      ...staleReferences,
+    ].slice(0, 10).join(", ")})`,
+  );
+}
+
 let removedBytes = 0;
 for (const [publicPath] of mappings) {
   const path = resolve(clientRoot, publicPath.slice(1));
@@ -124,4 +159,6 @@ console.log(JSON.stringify({
   previewBytes,
   removedBytes,
   savedBytes: removedBytes - previewBytes,
+  staleReferences: staleReferences.size,
 }, null, 2));
+if (errors > 0) process.exitCode = 1;

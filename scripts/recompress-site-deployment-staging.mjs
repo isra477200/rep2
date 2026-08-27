@@ -1,4 +1,4 @@
-import { readdir, rename, stat, unlink } from "node:fs/promises";
+import { access, readFile, readdir, rename, stat, unlink } from "node:fs/promises";
 import { extname, join, resolve } from "node:path";
 import sharp from "sharp";
 
@@ -25,6 +25,7 @@ async function walk(root) {
     for (const entry of await readdir(directory, { withFileTypes: true })) {
       const path = join(directory, entry.name);
       if (entry.isDirectory()) queue.push(path);
+      else if (entry.name.includes(".rvstage.")) await unlink(path);
       else if (extensions.has(extname(entry.name).toLowerCase())) files.push(path);
     }
   }
@@ -32,18 +33,19 @@ async function walk(root) {
 }
 
 function settings(path, kind) {
-  if (kind === "asset-preview") return { width: 720, quality: 42 };
-  if (/-thumb\.webp$/i.test(path)) return { width: 420, quality: 40 };
-  return { width: 720, quality: 42 };
+  if (kind === "asset-preview") return { width: 620, quality: 36 };
+  if (/-thumb\.webp$/i.test(path)) return { width: 420, quality: 38 };
+  return { width: 700, quality: 40 };
 }
 
 async function optimize(path, kind) {
   const before = (await stat(path)).size;
+  const source = await readFile(path);
   const extension = extname(path).toLowerCase();
   const temporary = `${path}.rvstage${extension}`;
   const target = settings(path, kind);
   try {
-    let pipeline = sharp(path, { limitInputPixels: false, sequentialRead: true })
+    let pipeline = sharp(source, { limitInputPixels: false, sequentialRead: true })
       .rotate()
       .resize({ width: target.width, withoutEnlargement: true });
     if (extension === ".webp") pipeline = pipeline.webp({ quality: target.quality, effort: 6, smartSubsample: true });
@@ -53,13 +55,13 @@ async function optimize(path, kind) {
     const after = (await stat(temporary)).size;
     if (after >= before) {
       await unlink(temporary);
-      return { before, after: before, changed: false };
+      return { path, before, after: before, changed: false };
     }
     await rename(temporary, path);
-    return { before, after, changed: true };
+    return { path, before, after, changed: true };
   } catch (error) {
     await unlink(temporary).catch(() => undefined);
-    return { before, after: before, changed: false, error: String(error?.message || error) };
+    return { path, before, after: before, changed: false, error: String(error?.message || error) };
   }
 }
 
@@ -77,6 +79,7 @@ async function runPool(items, worker) {
 }
 
 const report = [];
+await Promise.all(targets.map((target) => access(target.root)));
 for (const target of targets) {
   const files = await walk(target.root);
   const results = await runPool(files, (path) => optimize(path, target.kind));
@@ -85,9 +88,14 @@ for (const target of targets) {
     files: files.length,
     changed: results.filter((result) => result.changed).length,
     errors: results.filter((result) => result.error).length,
+    errorSamples: results
+      .filter((result) => result.error)
+      .slice(0, 10)
+      .map(({ path, error }) => ({ path, error })),
     beforeBytes: results.reduce((sum, result) => sum + result.before, 0),
     afterBytes: results.reduce((sum, result) => sum + result.after, 0),
   });
 }
 
 console.log(JSON.stringify({ concurrency, targets: report }, null, 2));
+if (report.some((target) => target.errors > 0)) process.exitCode = 1;
