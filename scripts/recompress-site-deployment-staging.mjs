@@ -33,7 +33,7 @@ async function walk(root) {
 }
 
 function settings(path, kind) {
-  if (kind === "asset-preview") return { width: 620, quality: 36 };
+  if (kind === "asset-preview") return { width: 600, quality: 34 };
   if (/-thumb\.webp$/i.test(path)) return { width: 420, quality: 38 };
   return { width: 700, quality: 40 };
 }
