@@ -18,7 +18,6 @@ import {
   dimensionsFromMedia,
   imagePresentationStyle,
   measureImage,
-  MediaResolutionBadge,
   MediaResolutionNotice,
   type MediaDimensions,
 } from "./MediaResolution";
@@ -56,6 +55,7 @@ import type {
   VigilanciaData,
 } from "./data-types";
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
+import { galleryMediaPosition, resolveGalleryMediaIndex } from "./media-deep-link";
 
 const WorldMap = lazy(() => import("./WorldMap"));
 const OperationsHub = lazy(() => import("./OperationsHub"));
@@ -65,6 +65,7 @@ const PositioningSimulator = lazy(() => import("./PositioningSimulator"));
 const RecordDetail = lazy(() => import("./RecordDetail"));
 const EditorialText = lazy(() => import("./EditorialText"));
 const LandingStudio = lazy(() => import("./LandingStudio"));
+const GalleryExplorer = lazy(() => import("./GalleryExplorer"));
 
 type View =
   | "home"
@@ -213,132 +214,6 @@ const editorialTabs: Array<{ id: keyof Editorial; label: string }> = [
   { id: "execution", label: "Sistema operativo" },
   { id: "report", label: "Informe estratégico" },
 ];
-
-function MediaTile({
-  item,
-  name,
-  onOpen,
-}: {
-  item: Media;
-  name: string;
-  onOpen: () => void;
-}) {
-  const [failed, setFailed] = useState(false);
-  const [dimensions, setDimensions] = useState<MediaDimensions | null>(() =>
-    dimensionsFromMedia(item),
-  );
-  const resolution = classifyMediaResolution(dimensions);
-  if (failed)
-    return (
-      <div className="media-tile media-fallback" role="status">
-        <b>Vista no disponible</b>
-        <span>El archivo está documentado para revisión técnica.</span>
-      </div>
-    );
-  if (item.type.includes("video") || /\.(mp4|webm|mov)$/i.test(item.file))
-    return (
-      <button
-        className="media-tile"
-        onClick={onOpen}
-        aria-label={"Abrir vídeo de " + name}
-      >
-        <video
-          src={item.file}
-          muted
-          preload="metadata"
-          onError={() => setFailed(true)}
-        />
-        <span className="play">▶</span>
-      </button>
-    );
-  if (item.type.includes("pdf") || /\.pdf$/i.test(item.file))
-    return (
-      <a
-        className="media-tile document"
-        href={item.file}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <b>PDF</b>
-        <span>Abrir documento</span>
-      </a>
-    );
-  return (
-    <button
-      className={`media-tile${resolution.isLowResolution ? " media-low-resolution" : ""}`}
-      onClick={onOpen}
-      aria-label={
-        resolution.isLowResolution
-          ? `Abrir ${resolution.label?.toLocaleLowerCase("es")} de ${name}; ${resolution.dimensionLabel}`
-          : "Abrir material de " + name
-      }
-      data-media-resolution={resolution.kind}
-    >
-      <img
-        src={item.file}
-        alt={"Material de " + name}
-        loading="lazy"
-        decoding="async"
-        style={imagePresentationStyle(resolution, "tile")}
-        onLoad={(event) => {
-          const measured = measureImage(event.currentTarget);
-          if (measured) setDimensions(measured);
-        }}
-        onError={() => setFailed(true)}
-      />
-      <MediaResolutionBadge resolution={resolution} />
-    </button>
-  );
-}
-
-function MediaRail({
-  company,
-  onOpen,
-}: {
-  company: Company;
-  onOpen: (m: Media, c: Company) => void;
-}) {
-  const rail = useRef<HTMLDivElement>(null);
-  return (
-    <article className="rail-card">
-      <div className="rail-head">
-        <div>
-          <span>{company.primaryCountry}</span>
-          <h3>{company.name}</h3>
-        </div>
-        <div className="rail-tools">
-          <b>{company.media.length} materiales</b>
-          <button
-            onClick={() =>
-              rail.current?.scrollBy({ left: -640, behavior: scrollBehavior() })
-            }
-            aria-label="Anterior"
-          >
-            ←
-          </button>
-          <button
-            onClick={() =>
-              rail.current?.scrollBy({ left: 640, behavior: scrollBehavior() })
-            }
-            aria-label="Siguiente"
-          >
-            →
-          </button>
-        </div>
-      </div>
-      <div className="media-rail" ref={rail}>
-        {company.media.map((m) => (
-          <MediaTile
-            key={m.file}
-            item={m}
-            name={company.name}
-            onOpen={() => onOpen(m, company)}
-          />
-        ))}
-      </div>
-    </article>
-  );
-}
 
 function CompanyCard({
   c,
@@ -522,7 +397,6 @@ export default function Portal() {
   const lightboxRef = useRef<HTMLDivElement | null>(null);
   const lightboxCloseRef = useRef<HTMLButtonElement | null>(null);
   const [compare, setCompare] = useState<string[]>([]),
-    [galleryLimit, setGalleryLimit] = useState(8),
     [editorialTab, setEditorialTab] = useState<keyof Editorial>("blueprint");
   const [loading, setLoading] = useState(true),
     [error, setError] = useState(""),
@@ -765,7 +639,11 @@ export default function Portal() {
           : null;
         if (requestedCompany) {
           setActive(requestedCompany);
-          const mediaIndex = Number(params.get("media")) - 1;
+          const mediaIndex = resolveGalleryMediaIndex(
+            requestedCompany.media,
+            params.get("media"),
+            params.get("archivo"),
+          );
           const evidenceIndex = Number(params.get("evidence")) - 1;
           if (
             Number.isInteger(mediaIndex) &&
@@ -1269,20 +1147,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
       }),
     [companies, query, scope, country, priceOnly, channel, companiesNewOnly],
   );
-  const galleries = useMemo(() => {
-    const q = query.toLocaleLowerCase("es");
-    return companies
-      .filter(
-        (x) =>
-          x.media.length &&
-          (!q ||
-            [x.name, x.primaryCountry, ...x.countries, x.niche, x.offer]
-              .join(" ")
-              .toLocaleLowerCase("es")
-              .includes(q)),
-      )
-      .sort((a, b) => b.media.length - a.media.length);
-  }, [companies, query]);
   const galleryMetrics = useMemo(
     () => deriveGalleryMetrics(companies, summary),
     [companies, summary],
@@ -1418,6 +1282,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     const url = new URL(window.location.href);
     url.searchParams.set("empresa", company.id);
     url.searchParams.delete("media");
+    url.searchParams.delete("archivo");
     url.searchParams.delete("evidence");
     url.hash = "";
     window.history.pushState(
@@ -1436,6 +1301,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     const url = new URL(window.location.href);
     url.searchParams.delete("empresa");
     url.searchParams.delete("media");
+    url.searchParams.delete("archivo");
     url.searchParams.delete("evidence");
     url.hash = "";
     window.history.replaceState(
@@ -1468,6 +1334,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     const url = new URL(window.location.href);
     url.searchParams.delete("empresa");
     url.searchParams.delete("media");
+    url.searchParams.delete("archivo");
     url.searchParams.delete("evidence");
     url.hash = "";
     window.history.replaceState(
@@ -1493,12 +1360,18 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     const collection = suppliedCollection?.length ? suppliedCollection : company.media;
     const index = collection.findIndex((item) => item.file === media.file);
     if (index < 0) return;
+    const linkPosition = source === "gallery"
+      ? galleryMediaPosition(company.media, media.file)
+      : index + 1;
+    if (linkPosition < 1) return;
     setLightbox({ media, company, collection, source });
     const url = new URL(window.location.href);
     url.searchParams.set("empresa", company.id);
     url.searchParams.delete("media");
+    url.searchParams.delete("archivo");
     url.searchParams.delete("evidence");
-    url.searchParams.set(source === "funnel" ? "evidence" : "media", String(index + 1));
+    url.searchParams.set(source === "funnel" ? "evidence" : "media", String(linkPosition));
+    if (source === "gallery") url.searchParams.set("archivo", media.file);
     window.history.pushState(
       {
         ...window.history.state,
@@ -1519,6 +1392,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     }
     const url = new URL(window.location.href);
     url.searchParams.delete("media");
+    url.searchParams.delete("archivo");
     url.searchParams.delete("evidence");
     if (!active) url.searchParams.delete("empresa");
     window.history.replaceState(
@@ -1576,8 +1450,13 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
         const url = new URL(window.location.href);
         url.searchParams.set("empresa", current.company.id);
         url.searchParams.delete("media");
+        url.searchParams.delete("archivo");
         url.searchParams.delete("evidence");
-        url.searchParams.set(current.source === "funnel" ? "evidence" : "media", String(next + 1));
+        const linkPosition = current.source === "gallery"
+          ? galleryMediaPosition(current.company.media, nextMedia.file)
+          : next + 1;
+        url.searchParams.set(current.source === "funnel" ? "evidence" : "media", String(linkPosition));
+        if (current.source === "gallery") url.searchParams.set("archivo", nextMedia.file);
         window.history.replaceState(
           {
             ...window.history.state,
@@ -1640,7 +1519,13 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
         ? companies.find((item) => item.id === requested) || null
         : null;
       setActive(company);
-      const mediaIndex = Number(params.get("media")) - 1;
+      const mediaIndex = company
+        ? resolveGalleryMediaIndex(
+            company.media,
+            params.get("media"),
+            params.get("archivo"),
+          )
+        : -1;
       const evidenceIndex = Number(params.get("evidence")) - 1;
       if (company && Number.isInteger(mediaIndex) && company.media[mediaIndex]) {
         setLightbox({
@@ -4022,75 +3907,16 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
         )}
 
         {view === "ads" && (
-          <div className="view">
-            <section className="page-head">
-              <p className="eyebrow">ARCHIVO VISUAL VERIFICADO</p>
-              <h1>Galerías que cargan y se pueden recorrer</h1>
-              <p>
-                {fmt(galleryMetrics.media)} archivos visuales comprobados, organizados
-                en {fmt(galleryMetrics.companies)} fichas madre. Desliza, usa las flechas o abre cualquier pieza
-                a pantalla completa; dentro del visor también funcionan las
-                teclas ← y →.
-              </p>
-            </section>
-            <div className="gallery-stats">
-              <span>
-                <b>{fmt(galleryMetrics.withMedia)}</b> empresas con galería
-              </span>
-              <span>
-                <b>{fmt(galleryMetrics.media)}</b> archivos disponibles y verificados
-              </span>
-              <span>
-                <b>{fmt(summary.mediaFileTypeCorrections)}</b> formatos
-                reparados
-              </span>
-              <span>
-                <b>{summary.technicalArtifactsExcluded}</b> rastros técnicos
-                excluidos
-              </span>
-              <span>
-                <b>{summary.mediaFailed}</b> URLs no recuperables
-              </span>
-            </div>
-            {query && (
-              <div className="result-line gallery-result">
-                <strong>
-                  {fmt(galleries.length)} galerías coinciden con “{query}”
-                </strong>
-                <button onClick={() => setQuery("")}>Ver todas</button>
-              </div>
-            )}
-            <section className="rails">
-              {galleries.slice(0, galleryLimit).map((c) => (
-                <MediaRail key={c.id} company={c} onOpen={openMedia} />
-              ))}
-            </section>
-            {!galleries.length && (
-              <div className="empty-state">
-                No hay galerías que coincidan con la búsqueda.
-              </div>
-            )}
-            {galleryLimit < galleries.length && (
-              <button
-                className="load-more"
-                onClick={() => setGalleryLimit((x) => x + 8)}
-              >
-                Mostrar 8 galerías más
-              </button>
-            )}
-            <div className="limitation">
-              <strong>Control de calidad de los materiales</strong>
-              <p>
-                Se corrigieron {fmt(summary.mediaFileTypeCorrections)} archivos
-                cuyo contenido real no coincidía con la extensión. Los{" "}
-                {summary.technicalArtifactsExcluded} rastros técnicos inválidos
-                no se muestran como creatividades y se conservan en cuarentena
-                de auditoría. Las {summary.mediaFailed} URLs públicas que
-                responden 403/404 o dejaron de servir el archivo siguen
-                documentadas; no se sustituyen por imágenes inventadas.
-              </p>
-            </div>
-          </div>
+          <Suspense fallback={<div className="deep-loading">Abriendo el explorador visual…</div>}>
+            <GalleryExplorer
+              companies={companies}
+              metrics={galleryMetrics}
+              logos={logos}
+              summary={summary}
+              onOpenMedia={openMedia}
+              onOpenCompany={openCompany}
+            />
+          </Suspense>
         )}
 
         {view === "compare" && (

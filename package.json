@@ -53,6 +53,7 @@
     "leads-market:companies": "node scripts/integrate-leads-market-companies.mjs",
     "leads-market:qa": "node --test tests/leads-market-import.test.mjs",
     "media:normalize": "node scripts/normalize-media.mjs",
+    "gallery:index": "node scripts/build-gallery-index.mjs",
     "geo:build": "node scripts/build-country-geo.mjs",
     "logos:build": "node scripts/download-logos.mjs",
     "logos:recover": "node scripts/recover-browser-logos.mjs",

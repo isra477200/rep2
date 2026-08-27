@@ -11,7 +11,7 @@ const imageExtension = /\.(?:jpe?g|png|webp|gif|svg)$/i;
 
 async function inspectGalleryImages() {
   const companies = JSON.parse(
-    await readFile(new URL("public/data/companies.json", root), "utf8"),
+    await readFile(new URL("public/data/companies-index.json", root), "utf8"),
   );
   const queue = companies.flatMap((company) =>
     company.media
@@ -40,7 +40,7 @@ async function inspectGalleryImages() {
   return { companies, inspected };
 }
 
-test("las 151 imágenes menores de 200×200 px se conservan e identifican por dimensiones reales", async () => {
+test("las 155 imágenes actuales menores de 200×200 px se conservan e identifican por dimensiones reales", async () => {
   const { companies, inspected } = await inspectGalleryImages();
   const lowResolution = inspected.filter(
     (row) =>
@@ -55,19 +55,20 @@ test("las 151 imágenes menores de 200×200 px se conservan e identifican por di
 
   assert.equal(
     companies.reduce((total, company) => total + company.media.length, 0),
-    3_957,
+    5_206,
     "La solución no debe retirar ninguna evidencia disponible",
   );
-  assert.equal(lowResolution.length, 151);
-  assert.equal(new Set(lowResolution.map((row) => row.companyId)).size, 35);
+  assert.equal(lowResolution.length, 155);
+  assert.equal(new Set(lowResolution.map((row) => row.companyId)).size, 37);
   assert.equal(thumbnailOrIcon.length, 149);
-  assert.equal(lowResolution.length - thumbnailOrIcon.length, 2);
+  assert.equal(lowResolution.length - thumbnailOrIcon.length, 6);
 });
 
 test("galerías y visor aplican aviso, tamaño natural y enlace al original", async () => {
-  const [resolution, portal, detail, types] = await Promise.all([
+  const [resolution, portal, explorer, detail, types] = await Promise.all([
     readFile(new URL("app/MediaResolution.tsx", root), "utf8"),
     readFile(new URL("app/Portal.tsx", root), "utf8"),
+    readFile(new URL("app/GalleryExplorer.tsx", root), "utf8"),
     readFile(new URL("app/RecordDetail.tsx", root), "utf8"),
     readFile(new URL("app/data-types.ts", root), "utf8"),
   ]);
@@ -86,7 +87,7 @@ test("galerías y visor aplican aviso, tamaño natural y enlace al original", as
   assert.match(resolution, /width: resolution\.dimensions\.width/);
   assert.match(resolution, /height: resolution\.dimensions\.height/);
 
-  for (const gallerySource of [portal, detail]) {
+  for (const gallerySource of [explorer, detail]) {
     assert.match(gallerySource, /measureImage\(event\.currentTarget\)/);
     assert.match(gallerySource, /MediaResolutionBadge/);
     assert.match(gallerySource, /imagePresentationStyle\(resolution, "tile"\)/);
