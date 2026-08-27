@@ -16,6 +16,16 @@ const targets = [
 ];
 const extensions = new Set([".jpg", ".jpeg", ".png", ".webp"]);
 const concurrency = 6;
+const boundedEnv = (name, fallback, minimum, maximum) => {
+  const value = Number(process.env[name] || fallback);
+  return Math.max(minimum, Math.min(maximum, Number.isFinite(value) ? value : fallback));
+};
+const assetPreviewWidth = boundedEnv("SITES_ASSET_PREVIEW_WIDTH", 600, 360, 960);
+const assetPreviewQuality = boundedEnv("SITES_ASSET_PREVIEW_QUALITY", 34, 20, 70);
+const evidenceWidth = boundedEnv("SITES_EVIDENCE_WIDTH", 700, 420, 1_000);
+const evidenceQuality = boundedEnv("SITES_EVIDENCE_QUALITY", 40, 24, 75);
+const evidenceThumbWidth = boundedEnv("SITES_EVIDENCE_THUMB_WIDTH", 420, 300, 700);
+const evidenceThumbQuality = boundedEnv("SITES_EVIDENCE_THUMB_QUALITY", 38, 20, 70);
 
 async function walk(root) {
   const files = [];
@@ -33,9 +43,13 @@ async function walk(root) {
 }
 
 function settings(path, kind) {
-  if (kind === "asset-preview") return { width: 600, quality: 34 };
-  if (/-thumb\.webp$/i.test(path)) return { width: 420, quality: 38 };
-  return { width: 700, quality: 40 };
+  if (kind === "asset-preview") {
+    return { width: assetPreviewWidth, quality: assetPreviewQuality };
+  }
+  if (/-thumb\.webp$/i.test(path)) {
+    return { width: evidenceThumbWidth, quality: evidenceThumbQuality };
+  }
+  return { width: evidenceWidth, quality: evidenceQuality };
 }
 
 async function optimize(path, kind) {
@@ -97,5 +111,16 @@ for (const target of targets) {
   });
 }
 
-console.log(JSON.stringify({ concurrency, targets: report }, null, 2));
+console.log(JSON.stringify({
+  concurrency,
+  settings: {
+    assetPreviewWidth,
+    assetPreviewQuality,
+    evidenceWidth,
+    evidenceQuality,
+    evidenceThumbWidth,
+    evidenceThumbQuality,
+  },
+  targets: report,
+}, null, 2));
 if (report.some((target) => target.errors > 0)) process.exitCode = 1;
