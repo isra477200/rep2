@@ -8,7 +8,10 @@ import { load } from "cheerio";
 import sharp from "sharp";
 
 const root = process.cwd();
-const companiesPath = path.join(root, "public", "data", "companies.json");
+// El portal navega companies-index.json: incluye las fichas madre y las
+// ampliaciones verificadas posteriores. El manifiesto visual debe cubrir el
+// mismo universo que ve el usuario, no solo el snapshot histórico.
+const companiesPath = path.join(root, "public", "data", "companies-index.json");
 const manifestPath = path.join(root, "public", "data", "logos.json");
 const logosRoot = path.join(root, "public", "logos");
 const concurrency = Math.max(

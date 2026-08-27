@@ -30,7 +30,7 @@ function loadPlaywright() {
 }
 
 const { chromium } = loadPlaywright();
-const COMPANIES_FILE = "public/data/companies.json";
+const COMPANIES_FILE = "public/data/companies-index.json";
 const LOGOS_FILE = "public/data/logos.json";
 const SUMMARY_FILE = "public/data/summary.json";
 const AUDIT_FILE = "public/data/audit.json";

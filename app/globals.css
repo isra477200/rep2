@@ -16,6 +16,20 @@
 .company-logo.logo-small{width:36px;height:36px;border-radius:10px;font-size:9px}
 .company-logo.logo-medium{width:48px;height:48px;border-radius:13px;font-size:12px}
 .company-logo.logo-large{width:88px;height:88px;border-radius:22px;font-size:22px;box-shadow:0 16px 45px rgba(0,0,0,.2)}
+.company-logo.is-fallback{position:relative;color:#fff;border-color:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.company-logo.is-fallback b{font-weight:850;letter-spacing:-.03em;text-shadow:0 1px 2px rgba(12,25,46,.18)}
+.company-logo.fallback-tone-0{background:linear-gradient(145deg,#0b57d0,#4285f4)}
+.company-logo.fallback-tone-1{background:linear-gradient(145deg,#2459a8,#557fc4)}
+.company-logo.fallback-tone-2{background:linear-gradient(145deg,#23665b,#3b8f7e)}
+.company-logo.fallback-tone-3{background:linear-gradient(145deg,#7049a8,#9a6bc9)}
+.company-logo.fallback-tone-4{background:linear-gradient(145deg,#8b4b35,#bd7254)}
+.company-logo.fallback-tone-5{background:linear-gradient(145deg,#355b76,#5688a7)}
+.company-logo.fallback-tone-6{background:linear-gradient(145deg,#735424,#a9813d)}
+.company-logo.fallback-tone-7{background:linear-gradient(145deg,#495464,#737f91)}
+.company-logo-lockup{display:flex;min-width:0;flex-direction:column;align-items:flex-start;gap:9px}
+.company-logo-meta{display:flex;max-width:124px;flex-direction:column;gap:2px}
+.company-logo-meta b{color:#26303d;font-size:9px;line-height:1.25;letter-spacing:.045em;text-transform:uppercase}
+.company-logo-meta small{overflow:hidden;color:#6b7480;font-size:8px;line-height:1.35;text-overflow:ellipsis;white-space:nowrap}
 .brand-coverage{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;margin:-42px 48px 64px;padding:20px 22px;border:1px solid #cad8ee;border-radius:15px;background:linear-gradient(135deg,#f2f6fc,#fff);box-shadow:0 12px 35px rgba(34,36,43,.06)}.brand-coverage-mark{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#0b3c8c;color:#fff;font-size:22px}.brand-coverage h2{font-size:20px;letter-spacing:-.025em;margin:0 0 5px}.brand-coverage p:last-child{font-size:10px;line-height:1.5;color:#66686c;margin:0}.brand-coverage>strong{font-size:30px;color:#08347c;text-align:right}.brand-coverage>strong small{display:block;font-size:8px;letter-spacing:.08em;color:#7a7b7f;text-transform:uppercase;margin-top:3px}
 .map-view{background:#0d0f11}
 .map-page-head{background:radial-gradient(circle at 85% 0,#1a2f51 0,transparent 32%),#16181c;color:#fff;border-bottom-color:#3c4048}
@@ -452,6 +466,8 @@ body:has(.record-backdrop){overflow:hidden}
 .record-close{background:#fff;border:1px solid #dbe2ec;color:#1f2430;box-shadow:0 4px 16px rgba(23,26,31,.18)}
 .record-close:hover{background:#eef2f8}
 .record-hero{background:#fff;color:#1b1f26;border-bottom:1px solid #e6eaf1;padding:38px 70px 30px 42px}
+.record-hero>.company-logo-lockup{align-items:center}
+.record-hero>.company-logo-lockup .company-logo-meta{max-width:132px;align-items:center;text-align:center}
 .record-title p{color:#5f6368}
 .record-title h2{color:#171a1f}
 .record-badges span{background:#e8f0fe;border:0;color:#0b57d0;font-weight:800}
@@ -872,4 +888,8 @@ body:has(.app-shell.map-mode) { overflow: hidden; }
   .mobile-nav-picker label{color:#aeb7c4;font-size:11px;font-weight:750}
   .mobile-nav-picker select{width:100%;min-height:44px;padding:10px 36px 10px 12px;border:1px solid #3b4654;border-radius:10px;background:#171b22;color:#f8fafc;font-size:13px;font-weight:750}
   .mobile-nav-picker select:focus-visible{border-color:#75a7ec;outline:3px solid rgba(117,167,236,.32);outline-offset:2px}
+}
+@media(max-width:620px){
+  .record-hero>.company-logo-lockup{align-items:flex-start}
+  .record-hero>.company-logo-lockup .company-logo-meta{max-width:180px;align-items:flex-start;text-align:left}
 }

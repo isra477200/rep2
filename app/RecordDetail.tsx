@@ -722,7 +722,7 @@ export default function RecordDetail({
           ×
         </button>
         <header className="record-hero">
-          <CompanyLogo company={company} logos={logos} size="large" />
+          <CompanyLogo company={company} logos={logos} size="large" showStatus />
           <div className="record-title">
             <p>
               {company.countries.join(" · ") || company.primaryCountry} ·

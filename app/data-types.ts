@@ -120,7 +120,10 @@ export type LogoRecord = {
   bytes?: number | null;
   sha256?: string | null;
   confidence?: "high" | "medium" | "fallback";
+  isFallback?: boolean;
+  licenseNote?: string | null;
   reason?: string | null;
+  recoveryMethod?: string | null;
   /** Luminancia real del activo: light = necesita fondo oscuro para verse. */
   tone?: "light" | "dark" | "mixed" | "opaque";
 };

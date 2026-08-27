@@ -284,35 +284,21 @@ test("the geographic layer covers all canonical countries without inventing glob
 
 test("brand assets are local, traceable and byte-verified", async () => {
   const [companies, logos, summary] = await Promise.all([
-    json("public/data/companies.json"),
+    json("public/data/companies-index.json"),
     json("public/data/logos.json"),
     json("public/data/summary.json"),
   ]);
   const values = Object.values(logos);
   const publicDir = fileURLToPath(new URL("../public/", import.meta.url));
-  assert.equal(Object.keys(logos).length, 712);
+  assert.equal(Object.keys(logos).length, companies.length);
   assert.deepEqual(
     new Set(Object.keys(logos)),
     new Set(companies.map((company) => company.id)),
   );
-  assert.equal(values.filter((record) => record.file).length, 615);
-  assert.equal(
-    values.filter((record) => record.status === "official").length,
-    457,
-  );
-  assert.equal(
-    values.filter((record) => record.status === "favicon").length,
-    155,
-  );
-  assert.equal(
-    values.filter((record) => record.status === "platform").length,
-    3,
-  );
-  assert.equal(
-    values.filter((record) => record.status === "fallback").length,
-    97,
-  );
-  assert.equal(summary.logos.authentic, 615);
+  const authentic = values.filter((record) => record.file && record.status !== "fallback").length;
+  assert.ok(authentic >= 615, "la ampliación no puede perder marcas verificadas del snapshot base");
+  assert.equal(summary.logos.authentic, authentic);
+  assert.equal(summary.logos.total, companies.length);
   assert.equal(summary.logos.hotlinked, 0);
   for (const record of values) {
     assert.doesNotMatch(

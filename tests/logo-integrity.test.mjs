@@ -4,15 +4,16 @@ import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
-const EXPECTED_RECORDS = 712;
-
 const readJson = async (relativePath) =>
   JSON.parse(await readFile(new URL(relativePath, root), "utf8"));
 
 const snapshotPromise = Promise.all([
-  readJson("public/data/companies.json"),
+  readJson("public/data/companies-index.json"),
   readJson("public/data/logos.json"),
   readJson("public/data/logo-quality.json"),
+  readJson("public/data/summary.json"),
+  readJson("public/data/portal-quality.json"),
+  readJson("public/data/final-audit.json"),
 ]);
 
 test("every company has either a verified local brand asset or an explained neutral fallback", async () => {
@@ -21,8 +22,8 @@ test("every company has either a verified local brand asset or an explained neut
   const logoIds = Object.keys(logos).sort();
   const failures = [];
 
-  assert.equal(companies.length, EXPECTED_RECORDS);
-  assert.equal(logoIds.length, EXPECTED_RECORDS);
+  assert.ok(companies.length >= 1_000, "el manifiesto debe cubrir el catálogo ampliado visible");
+  assert.equal(logoIds.length, companies.length);
   assert.deepEqual(logoIds, companyIds);
 
   for (const company of companies) {
@@ -86,7 +87,7 @@ test("all stored logo files exist and match their declared WebP hash and size", 
 });
 
 test("the logo-quality summary is exactly recomputed from the manifest", async () => {
-  const [, logos, quality] = await snapshotPromise;
+  const [, logos, quality, summary, portalQuality, finalAudit] = await snapshotPromise;
   const rows = Object.values(logos);
   const authentic = rows.filter((row) => row.file && row.status !== "fallback").length;
   assert.equal(quality.total, rows.length);
@@ -98,4 +99,9 @@ test("the logo-quality summary is exactly recomputed from the manifest", async (
   assert.equal(quality.coveragePercent, Number(((authentic / rows.length) * 100).toFixed(1)));
   assert.equal(quality.locallyStored, true);
   assert.equal(quality.hotlinked, 0);
+  assert.deepEqual(summary.logos, quality);
+  assert.deepEqual(portalQuality.brands, quality);
+  assert.equal(finalAudit.totals.authenticBrandAssets, quality.authentic);
+  assert.equal(finalAudit.totals.neutralLogoFallbacks, quality.fallback);
+  assert.equal(finalAudit.documentedLimitations.neutralLogoFallbacks, quality.fallback);
 });

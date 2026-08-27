@@ -2,7 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useMemo, useState } from "react";
-import type { VerticalesData } from "./data-types";
+import CompanyLogo from "./CompanyLogo";
+import type { LogoManifest, VerticalesData } from "./data-types";
 import {
   ANGLES,
   ARCHITECTURES,
@@ -22,6 +23,7 @@ import styles from "./LandingStudio.module.css";
 
 type LandingStudioProps = {
   verticales: VerticalesData | null;
+  logos: LogoManifest;
 };
 
 type Device = "desktop" | "mobile";
@@ -85,7 +87,7 @@ const severityLabel = (severity: string) => {
   return "Mejora";
 };
 
-export default function LandingStudio({ verticales }: LandingStudioProps) {
+export default function LandingStudio({ verticales, logos }: LandingStudioProps) {
   const [brief, setBrief] = useState<LandingBrief>(() => defaultBrief());
   const [studyVerticalId, setStudyVerticalId] = useState("clinicas-salud");
   const [hydrated, setHydrated] = useState(false);
@@ -305,7 +307,11 @@ export default function LandingStudio({ verticales }: LandingStudioProps) {
           <div><span>REFERENCIAS DEL ESTUDIO</span><b>Abre la captura y contrasta el patrón</b></div>
           {(verticalIntel?.examples || []).slice(0, 3).map((example) => (
             <a key={example.companyId} href={`?vista=companies&empresa=${encodeURIComponent(example.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">
-              <span>{example.name}</span><small>{example.headline || example.offer}</small><b>Ver evidencia ↗</b>
+              <span className={styles.studyReferenceBrand}>
+                <CompanyLogo company={{ id: example.companyId, name: example.name }} logos={logos} size="small" />
+                <strong>{example.name}</strong>
+              </span>
+              <small>{example.headline || example.offer}</small><b>Ver evidencia ↗</b>
             </a>
           ))}
         </div>
@@ -568,7 +574,15 @@ export default function LandingStudio({ verticales }: LandingStudioProps) {
               <a className={styles.exampleImage} href={`?vista=companies&empresa=${encodeURIComponent(example.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">
                 {example.thumbnail ? <img src={example.thumbnail} alt={`Captura de ${example.name}`} loading="lazy" /> : <span>Sin vista previa</span>}
               </a>
-              <div><span>{example.country} · {example.capturedPages} páginas</span><h4>{example.name}</h4><p>{example.headline || example.offer}</p><div><a href={`?vista=companies&empresa=${encodeURIComponent(example.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">Abrir ficha</a>{example.sourceUrl ? <a href={example.sourceUrl} target="_blank" rel="noopener noreferrer">Visitar web ↗</a> : null}</div></div>
+              <div>
+                <span>{example.country} · {example.capturedPages} páginas</span>
+                <div className={styles.exampleBrand}>
+                  <CompanyLogo company={{ id: example.companyId, name: example.name }} logos={logos} size="small" />
+                  <h4>{example.name}</h4>
+                </div>
+                <p>{example.headline || example.offer}</p>
+                <div><a href={`?vista=companies&empresa=${encodeURIComponent(example.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">Abrir ficha</a>{example.sourceUrl ? <a href={example.sourceUrl} target="_blank" rel="noopener noreferrer">Visitar web ↗</a> : null}</div>
+              </div>
             </article>
           ))}
         </div>

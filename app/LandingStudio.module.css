@@ -499,6 +499,23 @@
   font-size: 12px;
 }
 
+.studyReferenceBrand {
+  display: flex !important;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.studyReferenceBrand strong {
+  min-width: 0;
+  overflow: hidden;
+  color: #16304f;
+  font-size: 14px;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .studyInsights {
   display: grid;
   grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1.45fr) minmax(210px, 0.83fr);
@@ -1513,7 +1530,8 @@
 .exampleImage span { display: grid; height: 100%; place-items: center; color: #748194; font-size: 12px; }
 .exampleCard > div { padding: 15px; }
 .exampleCard > div > span { color: #6d7989; font-size: 12px; font-weight: 800; }
-.exampleCard h4 { margin: 7px 0; font-size: 15px; }
+.exampleBrand { display: flex; min-width: 0; align-items: center; gap: 10px; margin: 9px 0; }
+.exampleCard .exampleBrand h4 { min-width: 0; margin: 0; overflow: hidden; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; }
 .exampleCard p { display: -webkit-box; min-height: 54px; margin: 0; overflow: hidden; color: var(--studio-muted); font-size: 12px; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
 .exampleCard > div > div { display: flex; justify-content: space-between; gap: 8px; margin-top: 11px; }
 .exampleCard a { display: inline-flex; min-height: 40px; align-items: center; color: #0d63ca; font-size: 12px; font-weight: 850; text-decoration: none; }

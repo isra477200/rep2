@@ -2066,7 +2066,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             <section className="brand-coverage">
               <div className="brand-coverage-mark">✓</div>
               <div>
-                <p className="eyebrow">IDENTIDAD VISUAL · SNAPSHOT BASE DE {Object.keys(logos).length}</p>
+                <p className="eyebrow">IDENTIDAD VISUAL · CATÁLOGO COMPLETO DE {Object.keys(logos).length}</p>
                 <h2>
                   {fmt(summary.logos.authentic)} marcas auténticas guardadas
                   localmente
@@ -2075,9 +2075,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   {fmt(summary.logos.official)} logos o wordmarks,{" "}
                   {fmt(summary.logos.favicon)} iconos oficiales y{" "}
                   {fmt(summary.logos.platform)} perfiles de plataforma
-                  verificados dentro del manifiesto visual base. Sus {fmt(summary.logos.fallback)}
-                  fallbacks muestran iniciales honestas. Las fichas añadidas después
-                  se declaran fuera de este porcentaje hasta verificar su marca.
+                  verificados y almacenados localmente. Las {fmt(summary.logos.fallback)}
+                  fichas restantes tienen un monograma profesional claramente
+                  señalado como provisional, nunca una marca inventada.
                 </p>
               </div>
               <strong>
@@ -2839,7 +2839,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
 
         {viewResourcesReady && view === "landings" && (
           <Suspense fallback={<div className="loading">Preparando el estudio de landings…</div>}>
-            <LandingStudio verticales={verticales} />
+            <LandingStudio verticales={verticales} logos={logos} />
           </Suspense>
         )}
 
@@ -4945,15 +4945,15 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 </p>
               </article>
               <article>
-                <span>MARCAS AUTÉNTICAS</span>
+                <span>MARCAS VERIFICADAS</span>
                 <strong>{summary.logos.authentic} / {fmt(Object.keys(logos).length)}</strong>
                 <p>
-                  Cobertura del manifiesto de marcas disponible; las fichas añadidas
-                  después se contabilizan aparte y no se presentan como cubiertas.
+                  El manifiesto ya cubre todas las fichas visibles; cada identidad
+                  real conserva su origen y cada respaldo explica su limitación.
                 </p>
               </article>
               <article>
-                <span>FICHAS MADRE INDEXADAS</span>
+                <span>FICHAS VISIBLES INDEXADAS</span>
                 <strong>{fmt(companies.length)} / {fmt(companies.length)}</strong>
                 <p>
                   Esquema canónico íntegro; la cobertura observable se declara
