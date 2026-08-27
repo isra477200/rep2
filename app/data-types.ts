@@ -23,6 +23,7 @@ export type CompanyLocation = {
     | "exacta_publicada"
     | "centro_ciudad"
     | "centro_pais_mercado"
+    | "centro_mercado_observado"
     | "sin_punto";
   locationLabel: string;
   locality: string | null;

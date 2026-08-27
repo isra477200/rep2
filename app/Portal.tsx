@@ -151,7 +151,7 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "landings", label: "Landings", icon: "▭" },
   { id: "companies", label: "Empresas", icon: "◎" },
   { id: "funnels", label: "Funnels de venta", icon: "⌁" },
-  { id: "map", label: "Mapa 3D", icon: "◉" },
+  { id: "map", label: "Mapa mundial", icon: "◉" },
   { id: "countries", label: "Países", icon: "◈" },
   { id: "ads", label: "Galerías", icon: "▣" },
   { id: "compare", label: "Comparador", icon: "⇄" },
@@ -3947,7 +3947,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               fallback={
                 <div className="map-loading inline-map-loading">
                   <span />
-                  <b>Preparando el globo 3D…</b>
+                  <b>Preparando el mapa mundial…</b>
                   <small>La base empresarial ya está disponible</small>
                 </div>
               }

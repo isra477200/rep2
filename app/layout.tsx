@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://redvitalia.srv1480016.hstgr.cloud"),
   title: "Inteligencia Mundial de Captación · RedVitalia",
   description:
-    "963 fichas empresariales estructuradas, cobertura territorial mundial, mapa 3D, precios, anuncios y evidencias públicas con límites documentados.",
+    "Fichas empresariales estructuradas, cobertura territorial mundial, mapa navegable, precios, anuncios y evidencias públicas con límites documentados.",
   icons: { icon: "/favicon.svg" },
   robots: {
     index: false,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Inteligencia Mundial de Captación · RedVitalia",
     description:
-      "Mapa 3D territorial, fichas estructuradas, precios, anuncios y evidencia competitiva con trazabilidad.",
+      "Mapa mundial navegable, fichas estructuradas, precios, anuncios y evidencia competitiva con trazabilidad.",
     images: ["/og.png"],
   },
 };
