@@ -30,7 +30,6 @@ import type {
   ArsenalData,
   Company,
   Country,
-  CountryGeo,
   CrucesData,
   DeepIndex,
   DeepIndexItem,
@@ -57,7 +56,6 @@ import type {
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 import { galleryMediaPosition, resolveGalleryMediaIndex } from "./media-deep-link";
 
-const WorldMap = lazy(() => import("./WorldMap"));
 const OperationsHub = lazy(() => import("./OperationsHub"));
 const AdsLaboratory = lazy(() => import("./AdsLaboratory"));
 const DecisionCenter = lazy(() => import("./DecisionCenter"));
@@ -81,7 +79,6 @@ type View =
   | "watch"
   | "companies"
   | "funnels"
-  | "map"
   | "countries"
   | "ads"
   | "compare"
@@ -97,7 +94,6 @@ type View =
 
 type OptionalResourceKey =
   | "editorial"
-  | "geo"
   | "deepIndex"
   | "v3Index"
   | "insights"
@@ -152,7 +148,6 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "landings", label: "Landings", icon: "▭" },
   { id: "companies", label: "Empresas", icon: "◎" },
   { id: "funnels", label: "Funnels de venta", icon: "⌁" },
-  { id: "map", label: "Mapa mundial", icon: "◉" },
   { id: "countries", label: "Países", icon: "◈" },
   { id: "ads", label: "Galerías", icon: "▣" },
   { id: "compare", label: "Comparador", icon: "⇄" },
@@ -172,7 +167,7 @@ const nav: { id: View; label: string; icon: string }[] = [
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
   { label: "Acción", ids: ["operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
-  { label: "Base", ids: ["companies", "funnels", "map", "countries", "ads", "compare"] },
+  { label: "Base", ids: ["companies", "funnels", "countries", "ads", "compare"] },
   { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
 ];
@@ -287,7 +282,6 @@ export default function Portal() {
     [countries, setCountries] = useState<Country[]>([]);
   const [summary, setSummary] = useState<Summary | null>(null),
     [editorial, setEditorial] = useState<Editorial | null>(null),
-    [geo, setGeo] = useState<CountryGeo[]>([]),
     [logos, setLogos] = useState<LogoManifest>({}),
     [deepIndex, setDeepIndex] = useState<DeepIndex | null>(null),
     [v3Index, setV3Index] = useState<FunnelV3Index | null>(null),
@@ -401,8 +395,6 @@ export default function Portal() {
   const [loading, setLoading] = useState(true),
     [error, setError] = useState(""),
     [failedLightboxFile, setFailedLightboxFile] = useState<string | null>(null),
-    [focusCountry, setFocusCountry] = useState<string | null>(null),
-    [focusCompanyId, setFocusCompanyId] = useState<string | null>(null),
     [toast, setToast] = useState("");
   const editorialTabRefs = useRef<
     Partial<Record<keyof Editorial, HTMLButtonElement | null>>
@@ -428,12 +420,18 @@ export default function Portal() {
     const params = new URLSearchParams(window.location.search);
     const requestedView = params.get("vista");
     let initialView: View = "home";
-    if (nav.some((item) => item.id === requestedView)) {
+    if (requestedView === "map") {
+      initialView = "countries";
+      const legacyUrl = new URL(window.location.href);
+      legacyUrl.searchParams.set("vista", "countries");
+      window.history.replaceState({ vista: "countries" }, "", legacyUrl);
+    } else if (nav.some((item) => item.id === requestedView)) {
       initialView = requestedView as View;
     } else {
       try {
         const lastView = window.localStorage.getItem("rv-last-view");
-        if (lastView && nav.some((item) => item.id === lastView))
+        if (lastView === "map") initialView = "countries";
+        else if (lastView && nav.some((item) => item.id === lastView))
           initialView = lastView as View;
       } catch {
         /* Sin una vista guardada válida se conserva la portada. */
@@ -452,14 +450,6 @@ export default function Portal() {
         load: async () => {
           const data = await optionalJson<Editorial>("/data/editorial.json");
           if (!controller.signal.aborted) setEditorial(data);
-        },
-      },
-      {
-        key: "geo",
-        views: ["map"],
-        load: async () => {
-          const data = await optionalJson<CountryGeo[]>("/data/country-geo.json");
-          if (!controller.signal.aborted) setGeo(data);
         },
       },
       {
@@ -512,7 +502,7 @@ export default function Portal() {
       },
       {
         key: "takeaways",
-        views: ["home", "companies", "map"],
+        views: ["home", "companies"],
         load: async () => {
           const data = await optionalJson<TakeawaysData>("/data/takeaways.json");
           if (!controller.signal.aborted) setTakeaways(data);
@@ -1245,10 +1235,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
   const top = companies.slice(0, 4);
   const go = (v: View, options?: { adQuery?: string }) => {
     setAdLabInitialQuery(v === "adlab" ? options?.adQuery || "" : "");
-    if (v === "map") {
-      setFocusCountry(null);
-      setFocusCompanyId(null);
-    }
     setView(v);
     const url = new URL(window.location.href);
     if (v === "home") url.searchParams.delete("vista");
@@ -1328,21 +1314,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     setQuery("");
     closeGlobalSearch();
   };
-  const dismissCompanyInPlace = useCallback(() => {
-    setActive(null);
-    setLightbox(null);
-    const url = new URL(window.location.href);
-    url.searchParams.delete("empresa");
-    url.searchParams.delete("media");
-    url.searchParams.delete("archivo");
-    url.searchParams.delete("evidence");
-    url.hash = "";
-    window.history.replaceState(
-      { vista: url.searchParams.get("vista") || "home" },
-      "",
-      url,
-    );
-  }, []);
   const shareCompany = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
@@ -1513,7 +1484,17 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     const onPop = () => {
       const params = new URLSearchParams(window.location.search);
       const requestedView = params.get("vista");
-      setView(nav.some((item) => item.id === requestedView) ? requestedView as View : "home");
+      const nextView = requestedView === "map"
+        ? "countries"
+        : nav.some((item) => item.id === requestedView)
+          ? requestedView as View
+          : "home";
+      setView(nextView);
+      if (requestedView === "map") {
+        const legacyUrl = new URL(window.location.href);
+        legacyUrl.searchParams.set("vista", "countries");
+        window.history.replaceState({ ...window.history.state, vista: "countries" }, "", legacyUrl);
+      }
       const requested = params.get("empresa");
       const company = requested
         ? companies.find((item) => item.id === requested) || null
@@ -1627,7 +1608,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     ?? Number(((auditedPriceRecords / summary.companies) * 100).toFixed(1));
 
   return (
-    <main className={`app-shell${navCollapsed ? " nav-collapsed" : ""}${view === "map" ? " map-mode" : ""}`}>
+    <main className={`app-shell${navCollapsed ? " nav-collapsed" : ""}`}>
       <aside className={`sidebar${navCollapsed ? " collapsed" : ""}`}>
         <div className="side-top">
           <button className="brand" onClick={() => go("home")}>
@@ -1858,9 +1839,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   <button className="secondary" onClick={() => go("companies")}>
                     Explorar {fmt(companies.length)} empresas
                   </button>
-                  <button className="secondary" onClick={() => go("map")}>
-                    Abrir mapa 3D
-                  </button>
                 </div>
               </div>
               <div className="hero-orbit">
@@ -1999,11 +1977,11 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 <p className="eyebrow">DE LA INVESTIGACIÓN A LA ACCIÓN</p>
                 <h2>Tres formas de utilizar el portal</h2>
               </div>
-              <button onClick={() => go("map")}>
+              <button onClick={() => go("companies")}>
                 <b>01</b>
                 <span>
-                  <strong>Volar por mercados</strong>
-                  <small>Globo 3D, presencia y huecos</small>
+                  <strong>Explorar empresas</strong>
+                  <small>Fichas, ofertas y evidencias verificadas</small>
                 </span>
                 →
               </button>
@@ -3826,32 +3804,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           </div>
         )}
 
-        {viewResourcesReady && view === "map" && (
-          <div className="view map-view">
-            <Suspense
-              fallback={
-                <div className="map-loading inline-map-loading">
-                  <span />
-                  <b>Preparando el mapa mundial…</b>
-                  <small>La base empresarial ya está disponible</small>
-                </div>
-              }
-            >
-              <WorldMap
-                companies={companies}
-                countries={countries}
-                geo={geo}
-                logos={logos}
-                takeaways={takeaways?.items}
-                focusCountry={focusCountry}
-                focusCompanyId={focusCompanyId}
-                onOpen={openCompany}
-                onExit={() => go("home")}
-              />
-            </Suspense>
-          </div>
-        )}
-
         {view === "countries" && (
           <div className="view">
             <section className="page-head">
@@ -4942,16 +4894,6 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             onClose={closeCompany}
             onMediaOpen={openMedia}
             onShare={shareCompany}
-            onLocate={() => {
-              const selectedCompany = active;
-              dismissCompanyInPlace();
-              go("map");
-              setFocusCountry(
-                selectedCompany.location?.canonicalMarket ||
-                  selectedCompany.primaryCountry,
-              );
-              setFocusCompanyId(selectedCompany.id);
-            }}
             onCompare={() => toggleCompare(active.id)}
           />
         </Suspense>

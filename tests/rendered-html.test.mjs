@@ -337,10 +337,9 @@ test("brand assets are local, traceable and byte-verified", async () => {
 });
 
 test("the shareable interface contains the full renderer, permanent links and social preview", async () => {
-  const [portal, record, mapSource, og] = await Promise.all([
+  const [portal, record, og] = await Promise.all([
     readFile(new URL("../app/Portal.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/RecordDetail.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../app/WorldMap.tsx", import.meta.url), "utf8"),
     readFile(new URL("../public/og.png", import.meta.url)),
   ]);
   assert.match(portal, /searchParams\.set\("empresa"/);
@@ -352,21 +351,8 @@ test("the shareable interface contains the full renderer, permanent links and so
   assert.match(record, /remarkGfm/);
   assert.match(record, /Todo en una página|Por secciones/);
   assert.match(record, /42 campos|Todos los campos/);
-  assert.match(mapSource, /setProjection\(\{ type: "mercator" \}\)/);
-  assert.doesNotMatch(mapSource, /setProjection\(\{ type: "globe" \}\)/);
-  assert.match(mapSource, /market-summary/);
-  assert.match(mapSource, /hasPrecisePoint/);
-  assert.match(mapSource, /easeTo/);
-  assert.doesNotMatch(mapSource, /\.flyTo\(/);
-  assert.match(mapSource, /scrollZoom: false/);
-  assert.match(mapSource, /setWheelZoomRate\(1 \/ 600\)/);
-  assert.match(mapSource, /setZoomRate\(1 \/ 120\)/);
-  assert.match(mapSource, /\.panBy\(/);
-  assert.doesNotMatch(mapSource, /center\.lng \+ longitudeDelta/);
-  assert.match(mapSource, /companyZoom\(company\)/);
-  assert.match(mapSource, /getClusterLeaves/);
-  assert.match(mapSource, /distinct\.size <= 1/);
-  assert.match(mapSource, /Abrir directorio/);
+  assert.doesNotMatch(portal, /WorldMap|id: "map"|go\("map"\)|view === "map"/);
+  assert.doesNotMatch(record, /onLocate|Ver en mapa 3D|Ver contexto territorial/);
   assert.equal(og[0], 0x89);
   assert.equal(og.toString("ascii", 1, 4), "PNG");
 });

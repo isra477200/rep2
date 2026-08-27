@@ -386,7 +386,6 @@ export default function RecordDetail({
   onClose,
   onMediaOpen,
   onShare,
-  onLocate,
   onCompare,
 }: {
   company: Company;
@@ -403,7 +402,6 @@ export default function RecordDetail({
     source?: "gallery" | "funnel",
   ) => void;
   onShare: () => void;
-  onLocate: () => void;
   onCompare: () => void;
 }) {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -743,11 +741,6 @@ export default function RecordDetail({
                 Web oficial ↗
               </a>
             )}
-            <button onClick={onLocate}>
-              {company.location?.precision === "sin_punto"
-                ? "Ver contexto territorial"
-                : "Ver en mapa 3D"}
-            </button>
             <button onClick={onShare}>Copiar enlace</button>
             <button
               className={compared ? "is-compared" : ""}
@@ -942,7 +935,7 @@ export default function RecordDetail({
                 <Field label="Mercados y asociaciones" wide>
                   {markets.length ? markets.join(" · ") : "No documentados"}
                 </Field>
-                <Field label="Precisión del mapa" wide>
+                <Field label="Precisión geográfica" wide>
                   {company.location?.locationLabel ||
                     "No existe un punto único verificable; no se inventa una ubicación."}
                   {company.location?.limitation ? (
