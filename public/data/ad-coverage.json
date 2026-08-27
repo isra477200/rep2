@@ -1,27 +1,27 @@
 {
- "generatedAt": "2026-08-26",
+ "generatedAt": "2026-08-27",
  "note": "Cobertura de evidencia individualizable, no rendimiento publicitario. Los recuentos agregados de Meta/Google y creativeArchive se conservan aparte: no crean anuncios ni inflan el objetivo con variantes. Una creatividad sin texto legible cuenta como evidencia visual, nunca como transcripción. El objetivo es min(10, evidencia canónica disponible).",
- "totalCompanies": 1052,
+ "totalCompanies": 1075,
  "summary": {
   "statusCounts": {
-   ">=10": 196,
-   "5-9": 20,
-   "1-4": 50,
+   ">=10": 197,
+   "5-9": 22,
+   "1-4": 70,
    "sin evidencia": 16,
    "pendiente/no atribuible": 770
   },
-  "companiesWithEvidence": 266,
-  "companiesWithExactIds": 258,
-  "exactMetaIds": 3828,
+  "companiesWithEvidence": 289,
+  "companiesWithExactIds": 281,
+  "exactMetaIds": 3924,
   "exactGoogleIds": 2008,
-  "transcribedCanonical": 4464,
-  "verifiedTranscribed": 2994,
-  "sampledEvidence": 2212,
-  "sampledEvidenceWithPublicFile": 1730,
-  "targetTotal": 2212,
+  "transcribedCanonical": 4560,
+  "verifiedTranscribed": 3067,
+  "sampledEvidence": 2297,
+  "sampledEvidenceWithPublicFile": 1815,
+  "targetTotal": 2297,
   "textAvailabilityGap": 219,
-  "verifiedTranscriptionGap": 1046,
-  "transcriptionGap": 1046,
+  "verifiedTranscriptionGap": 1067,
+  "transcriptionGap": 1067,
   "orphanAdvertisers": 17,
   "orphanTranscribedRecords": 17
  },
@@ -16354,15 +16354,15 @@
  "countries": [
   {
    "country": "España",
-   "companies": 423,
-   "withEvidence": 176,
-   "exactCreativeIds": 3919,
-   "transcribedCanonical": 3573,
-   "verifiedTranscribed": 2884,
+   "companies": 434,
+   "withEvidence": 187,
+   "exactCreativeIds": 3982,
+   "transcribedCanonical": 3636,
+   "verifiedTranscribed": 2939,
    "statusCounts": {
-    ">=10": 133,
-    "5-9": 11,
-    "1-4": 32,
+    ">=10": 134,
+    "5-9": 13,
+    "1-4": 40,
     "sin evidencia": 0,
     "pendiente/no atribuible": 247
    }
@@ -16534,15 +16534,15 @@
   },
   {
    "country": "Italia",
-   "companies": 17,
-   "withEvidence": 2,
-   "exactCreativeIds": 60,
-   "transcribedCanonical": 15,
-   "verifiedTranscribed": 0,
+   "companies": 18,
+   "withEvidence": 3,
+   "exactCreativeIds": 64,
+   "transcribedCanonical": 19,
+   "verifiedTranscribed": 4,
    "statusCounts": {
     ">=10": 2,
     "5-9": 0,
-    "1-4": 0,
+    "1-4": 1,
     "sin evidencia": 0,
     "pendiente/no atribuible": 15
    }
@@ -16609,15 +16609,15 @@
   },
   {
    "country": "Argentina",
-   "companies": 10,
-   "withEvidence": 0,
-   "exactCreativeIds": 0,
-   "transcribedCanonical": 0,
-   "verifiedTranscribed": 0,
+   "companies": 11,
+   "withEvidence": 1,
+   "exactCreativeIds": 4,
+   "transcribedCanonical": 4,
+   "verifiedTranscribed": 4,
    "statusCounts": {
     ">=10": 0,
     "5-9": 0,
-    "1-4": 0,
+    "1-4": 1,
     "sin evidencia": 0,
     "pendiente/no atribuible": 10
    }
@@ -16653,6 +16653,21 @@
    }
   },
   {
+   "country": "Sin determinar",
+   "companies": 9,
+   "withEvidence": 9,
+   "exactCreativeIds": 21,
+   "transcribedCanonical": 21,
+   "verifiedTranscribed": 6,
+   "statusCounts": {
+    ">=10": 0,
+    "5-9": 0,
+    "1-4": 9,
+    "sin evidencia": 0,
+    "pendiente/no atribuible": 0
+   }
+  },
+  {
    "country": "Suiza",
    "companies": 9,
    "withEvidence": 0,
@@ -16665,6 +16680,21 @@
     "1-4": 0,
     "sin evidencia": 0,
     "pendiente/no atribuible": 9
+   }
+  },
+  {
+   "country": "Austria",
+   "companies": 7,
+   "withEvidence": 1,
+   "exactCreativeIds": 4,
+   "transcribedCanonical": 4,
+   "verifiedTranscribed": 4,
+   "statusCounts": {
+    ">=10": 0,
+    "5-9": 0,
+    "1-4": 1,
+    "sin evidencia": 0,
+    "pendiente/no atribuible": 6
    }
   },
   {
@@ -16693,21 +16723,6 @@
     ">=10": 0,
     "5-9": 0,
     "1-4": 1,
-    "sin evidencia": 0,
-    "pendiente/no atribuible": 6
-   }
-  },
-  {
-   "country": "Austria",
-   "companies": 6,
-   "withEvidence": 0,
-   "exactCreativeIds": 0,
-   "transcribedCanonical": 0,
-   "verifiedTranscribed": 0,
-   "statusCounts": {
-    ">=10": 0,
-    "5-9": 0,
-    "1-4": 0,
     "sin evidencia": 0,
     "pendiente/no atribuible": 6
    }
@@ -21307,10 +21322,10 @@
    "country": "España",
    "domain": "bastidafarina.com",
    "status": ">=10",
-   "availableEvidenceCount": 85,
+   "availableEvidenceCount": 86,
    "targetCount": 10,
-   "transcribedCanonicalCount": 57,
-   "verifiedTranscribedCount": 43,
+   "transcribedCanonicalCount": 58,
+   "verifiedTranscribedCount": 44,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -21318,7 +21333,7 @@
    "verifiedComplete": true,
    "transcriptionComplete": true,
    "transcribedByPlatform": {
-    "meta": 39,
+    "meta": 40,
     "google": 17,
     "instagram": 0,
     "display": 1,
@@ -21360,6 +21375,7 @@
      "2905785899761823",
      "3561124044051177",
      "3735740306576382",
+     "4129207057213380",
      "4216059425193832",
      "4424284557883717",
      "4653348394943027",
@@ -21411,9 +21427,9 @@
      "CR16785485478492110849",
      "CR17716070888555675649"
     ],
-    "total": 82
+    "total": 83
    },
-   "archivedFileCount": 6,
+   "archivedFileCount": 46,
    "reportedLibraryCounts": {
     "meta": 63,
     "google": 200
@@ -21570,6 +21586,7 @@
     "https://www.facebook.com/ads/library/?id=2905785899761823",
     "https://www.facebook.com/ads/library/?id=3561124044051177",
     "https://www.facebook.com/ads/library/?id=3735740306576382",
+    "https://www.facebook.com/ads/library/?id=4129207057213380",
     "https://www.facebook.com/ads/library/?id=4216059425193832",
     "https://www.facebook.com/ads/library/?id=4424284557883717",
     "https://www.facebook.com/ads/library/?id=4653348394943027",
@@ -21577,7 +21594,11 @@
     "https://www.facebook.com/ads/library/?id=877145185438985",
     "https://www.facebook.com/ads/library/?id=903679015427972",
     "https://www.facebook.com/ads/library/?id=974002308866856",
-    "https://www.facebook.com/ads/library/?id=978594451840776"
+    "https://www.facebook.com/ads/library/?id=978594451840776",
+    "https://www.facebook.com/ads/library?id=1331857582411685",
+    "https://www.facebook.com/ads/library?id=1690336198864173",
+    "https://www.facebook.com/ads/library?id=3735740306576382",
+    "https://www.facebook.com/ads/library?id=4129207057213380"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -30135,9 +30156,9 @@
    "country": "España",
    "domain": "expiey.com",
    "status": ">=10",
-   "availableEvidenceCount": 68,
+   "availableEvidenceCount": 70,
    "targetCount": 10,
-   "transcribedCanonicalCount": 43,
+   "transcribedCanonicalCount": 45,
    "verifiedTranscribedCount": 3,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 7,
@@ -30146,7 +30167,7 @@
    "verifiedComplete": false,
    "transcriptionComplete": false,
    "transcribedByPlatform": {
-    "meta": 25,
+    "meta": 27,
     "google": 18,
     "instagram": 0,
     "display": 0,
@@ -30162,6 +30183,7 @@
      "1095612219575084",
      "1096650702693821",
      "1166552982746406",
+     "1412620944121366",
      "1426244552723061",
      "1432517892358735",
      "1437972481727992",
@@ -30178,6 +30200,7 @@
      "3057292581268812",
      "4420581804856725",
      "4792452547654794",
+     "882582881390358",
      "909540638470236"
     ],
     "google": [
@@ -30222,11 +30245,11 @@
      "CR17837246553224380417",
      "CR18398453875204947969"
     ],
-    "total": 65
+    "total": 67
    },
-   "archivedFileCount": 3,
+   "archivedFileCount": 85,
    "reportedLibraryCounts": {
-    "meta": 0,
+    "meta": 4,
     "google": 87
    },
    "review": {
@@ -30338,6 +30361,7 @@
     "https://www.facebook.com/ads/library/?id=1095612219575084",
     "https://www.facebook.com/ads/library/?id=1096650702693821",
     "https://www.facebook.com/ads/library/?id=1166552982746406",
+    "https://www.facebook.com/ads/library/?id=1412620944121366",
     "https://www.facebook.com/ads/library/?id=1426244552723061",
     "https://www.facebook.com/ads/library/?id=1432517892358735",
     "https://www.facebook.com/ads/library/?id=1437972481727992",
@@ -30354,7 +30378,12 @@
     "https://www.facebook.com/ads/library/?id=3057292581268812",
     "https://www.facebook.com/ads/library/?id=4420581804856725",
     "https://www.facebook.com/ads/library/?id=4792452547654794",
-    "https://www.facebook.com/ads/library/?id=909540638470236"
+    "https://www.facebook.com/ads/library/?id=882582881390358",
+    "https://www.facebook.com/ads/library/?id=909540638470236",
+    "https://www.facebook.com/ads/library?id=1412620944121366",
+    "https://www.facebook.com/ads/library?id=1426244552723061",
+    "https://www.facebook.com/ads/library?id=27770843875941905",
+    "https://www.facebook.com/ads/library?id=882582881390358"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -79714,9 +79743,9 @@
     "google": [],
     "total": 32
    },
-   "archivedFileCount": 0,
+   "archivedFileCount": 12,
    "reportedLibraryCounts": {
-    "meta": 3,
+    "meta": 4,
     "google": 0
    },
    "review": {
@@ -79823,7 +79852,11 @@
     "https://www.facebook.com/ads/library/?id=27817934657871212",
     "https://www.facebook.com/ads/library/?id=3607150196116451",
     "https://www.facebook.com/ads/library/?id=892342763948847",
-    "https://www.facebook.com/ads/library/?id=945736954488194"
+    "https://www.facebook.com/ads/library/?id=945736954488194",
+    "https://www.facebook.com/ads/library?id=1072452485525268",
+    "https://www.facebook.com/ads/library?id=1377645054476359",
+    "https://www.facebook.com/ads/library?id=1403656351829330",
+    "https://www.facebook.com/ads/library?id=2076944506550929"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -80300,7 +80333,7 @@
     "google": [],
     "total": 30
    },
-   "archivedFileCount": 0,
+   "archivedFileCount": 10,
    "reportedLibraryCounts": {
     "meta": 6,
     "google": 0
@@ -80407,7 +80440,11 @@
     "https://www.facebook.com/ads/library/?id=2813011392431736",
     "https://www.facebook.com/ads/library/?id=4430234480591279",
     "https://www.facebook.com/ads/library/?id=867782256191729",
-    "https://www.facebook.com/ads/library/?id=964607973333108"
+    "https://www.facebook.com/ads/library/?id=964607973333108",
+    "https://www.facebook.com/ads/library?id=1089972866930277",
+    "https://www.facebook.com/ads/library?id=1297016300154552",
+    "https://www.facebook.com/ads/library?id=1523380235744435",
+    "https://www.facebook.com/ads/library?id=4430234480591279"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -80595,9 +80632,9 @@
     "google": [],
     "total": 12
    },
-   "archivedFileCount": 0,
+   "archivedFileCount": 11,
    "reportedLibraryCounts": {
-    "meta": 1,
+    "meta": 2,
     "google": 0
    },
    "review": {
@@ -80684,7 +80721,9 @@
     "https://www.facebook.com/ads/library/?id=1691470198598149",
     "https://www.facebook.com/ads/library/?id=2656946944708305",
     "https://www.facebook.com/ads/library/?id=930794453383637",
-    "https://www.facebook.com/ads/library/?id=997203983146004"
+    "https://www.facebook.com/ads/library/?id=997203983146004",
+    "https://www.facebook.com/ads/library?id=1546201073647990",
+    "https://www.facebook.com/ads/library?id=930794453383637"
    ],
    "observedAliases": [
     "level-up-agency-vera"
@@ -81267,9 +81306,9 @@
     "google": [],
     "total": 29
    },
-   "archivedFileCount": 0,
+   "archivedFileCount": 12,
    "reportedLibraryCounts": {
-    "meta": 1,
+    "meta": 9,
     "google": 0
    },
    "review": {
@@ -81373,7 +81412,11 @@
     "https://www.facebook.com/ads/library/?id=950460174311462",
     "https://www.facebook.com/ads/library/?id=965351966505238",
     "https://www.facebook.com/ads/library/?id=970944518948875",
-    "https://www.facebook.com/ads/library/?id=997206523099023"
+    "https://www.facebook.com/ads/library/?id=997206523099023",
+    "https://www.facebook.com/ads/library?id=1216692357343827",
+    "https://www.facebook.com/ads/library?id=1283780547158445",
+    "https://www.facebook.com/ads/library?id=1797130117911248",
+    "https://www.facebook.com/ads/library?id=777610048740166"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -82133,10 +82176,10 @@
    "country": "España",
    "domain": "crecesinlimite.com",
    "status": ">=10",
-   "availableEvidenceCount": 31,
+   "availableEvidenceCount": 33,
    "targetCount": 10,
-   "transcribedCanonicalCount": 31,
-   "verifiedTranscribedCount": 31,
+   "transcribedCanonicalCount": 33,
+   "verifiedTranscribedCount": 33,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -82144,7 +82187,7 @@
    "verifiedComplete": true,
    "transcriptionComplete": true,
    "transcribedByPlatform": {
-    "meta": 31,
+    "meta": 33,
     "google": 0,
     "instagram": 0,
     "display": 0,
@@ -82171,6 +82214,7 @@
      "2126909761540254",
      "2152731198858545",
      "2343489439515893",
+     "2405828273200781",
      "2543284699433506",
      "28139872218946041",
      "28251465891138413",
@@ -82182,14 +82226,15 @@
      "4381022825480818",
      "4573765929567574",
      "818459271127687",
+     "970603118979091",
      "994386730179455"
     ],
     "google": [],
-    "total": 31
+    "total": 33
    },
-   "archivedFileCount": 0,
+   "archivedFileCount": 14,
    "reportedLibraryCounts": {
-    "meta": 5,
+    "meta": 12,
     "google": 0
    },
    "review": {
@@ -82222,6 +82267,12 @@
      "sourceUrl": "https://www.facebook.com/ads/library/?id=1680648006417712"
     },
     {
+     "externalId": "1691269928894507",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1691269928894507.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1691269928894507"
+    },
+    {
      "externalId": "1805549187095967",
      "platform": "meta",
      "file": "/media/crece-sin-limite-sc-meta-1805549187095967-poster.jpg",
@@ -82246,22 +82297,16 @@
      "sourceUrl": "https://www.facebook.com/ads/library/?id=2343489439515893"
     },
     {
+     "externalId": "2405828273200781",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2405828273200781.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2405828273200781"
+    },
+    {
      "externalId": "2543284699433506",
      "platform": "meta",
      "file": "/media/crece-sin-limite-sc-meta-2543284699433506-poster.jpg",
      "sourceUrl": "https://www.facebook.com/ads/library/?id=2543284699433506"
-    },
-    {
-     "externalId": "28251465891138413",
-     "platform": "meta",
-     "file": "/media/crece-sin-limite-sc-meta-28251465891138413-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=28251465891138413"
-    },
-    {
-     "externalId": "4573765929567574",
-     "platform": "meta",
-     "file": "/media/crece-sin-limite-sc-meta-4573765929567574-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=4573765929567574"
     }
    ],
    "sourceLinks": [
@@ -82284,6 +82329,7 @@
     "https://www.facebook.com/ads/library/?id=2126909761540254",
     "https://www.facebook.com/ads/library/?id=2152731198858545",
     "https://www.facebook.com/ads/library/?id=2343489439515893",
+    "https://www.facebook.com/ads/library/?id=2405828273200781",
     "https://www.facebook.com/ads/library/?id=2543284699433506",
     "https://www.facebook.com/ads/library/?id=28139872218946041",
     "https://www.facebook.com/ads/library/?id=28251465891138413",
@@ -82295,7 +82341,12 @@
     "https://www.facebook.com/ads/library/?id=4381022825480818",
     "https://www.facebook.com/ads/library/?id=4573765929567574",
     "https://www.facebook.com/ads/library/?id=818459271127687",
-    "https://www.facebook.com/ads/library/?id=994386730179455"
+    "https://www.facebook.com/ads/library/?id=970603118979091",
+    "https://www.facebook.com/ads/library/?id=994386730179455",
+    "https://www.facebook.com/ads/library?id=1332245128953637",
+    "https://www.facebook.com/ads/library?id=1691269928894507",
+    "https://www.facebook.com/ads/library?id=2405828273200781",
+    "https://www.facebook.com/ads/library?id=970603118979091"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -83243,7 +83294,11 @@
     "https://www.facebook.com/ads/library/?id=3522408404592569",
     "https://www.facebook.com/ads/library/?id=899410746576329",
     "https://www.facebook.com/ads/library/?id=925284047302665",
-    "https://www.facebook.com/ads/library/?id=929210229552602"
+    "https://www.facebook.com/ads/library/?id=929210229552602",
+    "https://www.facebook.com/ads/library?id=1362588249382625",
+    "https://www.facebook.com/ads/library?id=1825028515535199",
+    "https://www.facebook.com/ads/library?id=3522408404592569",
+    "https://www.facebook.com/ads/library?id=925284047302665"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -84079,7 +84134,8 @@
     "https://www.facebook.com/ads/library/?id=898196600016410",
     "https://www.facebook.com/ads/library/?id=916472374196696",
     "https://www.facebook.com/ads/library/?id=923999807398400",
-    "https://www.facebook.com/ads/library/?id=952606500928878"
+    "https://www.facebook.com/ads/library/?id=952606500928878",
+    "https://www.facebook.com/ads/library?id=2054683358478745"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -84604,10 +84660,10 @@
    "country": "España",
    "domain": "realestaterocket.io",
    "status": ">=10",
-   "availableEvidenceCount": 59,
+   "availableEvidenceCount": 64,
    "targetCount": 10,
-   "transcribedCanonicalCount": 59,
-   "verifiedTranscribedCount": 59,
+   "transcribedCanonicalCount": 64,
+   "verifiedTranscribedCount": 64,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -84615,7 +84671,7 @@
    "verifiedComplete": true,
    "transcriptionComplete": true,
    "transcribedByPlatform": {
-    "meta": 59,
+    "meta": 64,
     "google": 0,
     "instagram": 0,
     "display": 0,
@@ -84629,6 +84685,7 @@
      "1026769396388475",
      "1037466645799987",
      "1037682249102299",
+     "1056163916756708",
      "1067167012518418",
      "1093720053171317",
      "1100589872913777",
@@ -84636,6 +84693,7 @@
      "1275927267712533",
      "1277234077742152",
      "1312833437347007",
+     "1346924867571054",
      "1351227727120677",
      "1355355746804722",
      "1355685943125458",
@@ -84644,6 +84702,7 @@
      "1387937793465554",
      "1418626906810692",
      "1423188636340921",
+     "1507562027198880",
      "1555004996231476",
      "1578792937272432",
      "1583623156490544",
@@ -84680,11 +84739,13 @@
      "829156130186665",
      "911388418250734",
      "953143671139485",
+     "961566303572884",
      "972859212040105",
+     "986604130860932",
      "992019810475914"
     ],
     "google": [],
-    "total": 59
+    "total": 64
    },
    "archivedFileCount": 60,
    "reportedLibraryCounts": {
@@ -84702,6 +84763,12 @@
     }
    },
    "evidence": [
+    {
+     "externalId": "1056163916756708",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1056163916756708.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1056163916756708"
+    },
     {
      "externalId": "1067167012518418",
      "platform": "meta",
@@ -84733,6 +84800,12 @@
      "sourceUrl": "https://www.facebook.com/ads/library/?id=1277234077742152"
     },
     {
+     "externalId": "1346924867571054",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1346924867571054.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1346924867571054"
+    },
+    {
      "externalId": "1355355746804722",
      "platform": "meta",
      "file": "/media/real-estate-rocket-sc-meta-1355355746804722-poster.jpg",
@@ -84745,22 +84818,10 @@
      "sourceUrl": "https://www.facebook.com/ads/library/?id=1418626906810692"
     },
     {
-     "externalId": "1578792937272432",
+     "externalId": "1507562027198880",
      "platform": "meta",
-     "file": "/media/real-estate-rocket-sc-meta-1578792937272432-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1578792937272432"
-    },
-    {
-     "externalId": "1583623156490544",
-     "platform": "meta",
-     "file": "/media/real-estate-rocket-sc-meta-1583623156490544-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1583623156490544"
-    },
-    {
-     "externalId": "1622797036229866",
-     "platform": "meta",
-     "file": "/media/real-estate-rocket-sc-meta-1622797036229866-poster.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=1622797036229866"
+     "file": "/media/lead-market-meta-1507562027198880.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1507562027198880"
     }
    ],
    "sourceLinks": [
@@ -84772,6 +84833,7 @@
     "https://www.facebook.com/ads/library/?id=1026769396388475",
     "https://www.facebook.com/ads/library/?id=1037466645799987",
     "https://www.facebook.com/ads/library/?id=1037682249102299",
+    "https://www.facebook.com/ads/library/?id=1056163916756708",
     "https://www.facebook.com/ads/library/?id=1067167012518418",
     "https://www.facebook.com/ads/library/?id=1093720053171317",
     "https://www.facebook.com/ads/library/?id=1100589872913777",
@@ -84779,6 +84841,7 @@
     "https://www.facebook.com/ads/library/?id=1275927267712533",
     "https://www.facebook.com/ads/library/?id=1277234077742152",
     "https://www.facebook.com/ads/library/?id=1312833437347007",
+    "https://www.facebook.com/ads/library/?id=1346924867571054",
     "https://www.facebook.com/ads/library/?id=1351227727120677",
     "https://www.facebook.com/ads/library/?id=1355355746804722",
     "https://www.facebook.com/ads/library/?id=1355685943125458",
@@ -84787,6 +84850,7 @@
     "https://www.facebook.com/ads/library/?id=1387937793465554",
     "https://www.facebook.com/ads/library/?id=1418626906810692",
     "https://www.facebook.com/ads/library/?id=1423188636340921",
+    "https://www.facebook.com/ads/library/?id=1507562027198880",
     "https://www.facebook.com/ads/library/?id=1555004996231476",
     "https://www.facebook.com/ads/library/?id=1578792937272432",
     "https://www.facebook.com/ads/library/?id=1583623156490544",
@@ -84823,8 +84887,25 @@
     "https://www.facebook.com/ads/library/?id=829156130186665",
     "https://www.facebook.com/ads/library/?id=911388418250734",
     "https://www.facebook.com/ads/library/?id=953143671139485",
+    "https://www.facebook.com/ads/library/?id=961566303572884",
     "https://www.facebook.com/ads/library/?id=972859212040105",
-    "https://www.facebook.com/ads/library/?id=992019810475914"
+    "https://www.facebook.com/ads/library/?id=986604130860932",
+    "https://www.facebook.com/ads/library/?id=992019810475914",
+    "https://www.facebook.com/ads/library?id=1056163916756708",
+    "https://www.facebook.com/ads/library?id=1067167012518418",
+    "https://www.facebook.com/ads/library?id=1100589872913777",
+    "https://www.facebook.com/ads/library?id=1346924867571054",
+    "https://www.facebook.com/ads/library?id=1507562027198880",
+    "https://www.facebook.com/ads/library?id=1578792937272432",
+    "https://www.facebook.com/ads/library?id=1583623156490544",
+    "https://www.facebook.com/ads/library?id=1742052180331135",
+    "https://www.facebook.com/ads/library?id=2173580313199402",
+    "https://www.facebook.com/ads/library?id=2191626281395111",
+    "https://www.facebook.com/ads/library?id=2266748884061428",
+    "https://www.facebook.com/ads/library?id=911388418250734",
+    "https://www.facebook.com/ads/library?id=953143671139485",
+    "https://www.facebook.com/ads/library?id=961566303572884",
+    "https://www.facebook.com/ads/library?id=986604130860932"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -86559,10 +86640,10 @@
    "country": "España",
    "domain": "agencia-p.es",
    "status": ">=10",
-   "availableEvidenceCount": 51,
+   "availableEvidenceCount": 52,
    "targetCount": 10,
-   "transcribedCanonicalCount": 51,
-   "verifiedTranscribedCount": 51,
+   "transcribedCanonicalCount": 52,
+   "verifiedTranscribedCount": 52,
    "textAvailabilityGap": 0,
    "verifiedTranscriptionGap": 0,
    "transcriptionGap": 0,
@@ -86570,7 +86651,7 @@
    "verifiedComplete": true,
    "transcriptionComplete": true,
    "transcribedByPlatform": {
-    "meta": 51,
+    "meta": 52,
     "google": 0,
     "instagram": 0,
     "display": 0,
@@ -86613,6 +86694,7 @@
      "1899794084010210",
      "2036118143692234",
      "2048476349428653",
+     "2100077874270095",
      "2208324446409219",
      "2237602713698954",
      "2434618017003718",
@@ -86631,7 +86713,7 @@
      "989392313703989"
     ],
     "google": [],
-    "total": 51
+    "total": 52
    },
    "archivedFileCount": 51,
    "reportedLibraryCounts": {
@@ -86704,10 +86786,10 @@
      "sourceUrl": "https://www.facebook.com/ads/library/?id=2036118143692234"
     },
     {
-     "externalId": "2208324446409219",
+     "externalId": "2100077874270095",
      "platform": "meta",
-     "file": "/media/agenciap-sc-meta-2208324446409219-image.jpg",
-     "sourceUrl": "https://www.facebook.com/ads/library/?id=2208324446409219"
+     "file": "/media/lead-market-meta-2100077874270095.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2100077874270095"
     }
    ],
    "sourceLinks": [
@@ -86747,6 +86829,7 @@
     "https://www.facebook.com/ads/library/?id=1899794084010210",
     "https://www.facebook.com/ads/library/?id=2036118143692234",
     "https://www.facebook.com/ads/library/?id=2048476349428653",
+    "https://www.facebook.com/ads/library/?id=2100077874270095",
     "https://www.facebook.com/ads/library/?id=2208324446409219",
     "https://www.facebook.com/ads/library/?id=2237602713698954",
     "https://www.facebook.com/ads/library/?id=2434618017003718",
@@ -86762,7 +86845,11 @@
     "https://www.facebook.com/ads/library/?id=880327371539687",
     "https://www.facebook.com/ads/library/?id=951180474002516",
     "https://www.facebook.com/ads/library/?id=976050758607917",
-    "https://www.facebook.com/ads/library/?id=989392313703989"
+    "https://www.facebook.com/ads/library/?id=989392313703989",
+    "https://www.facebook.com/ads/library?id=1508070874338539",
+    "https://www.facebook.com/ads/library?id=1589699319375610",
+    "https://www.facebook.com/ads/library?id=2100077874270095",
+    "https://www.facebook.com/ads/library?id=3446746765533979"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -89337,7 +89424,8 @@
     "https://www.facebook.com/ads/library/?id=2710462212659072",
     "https://www.facebook.com/ads/library/?id=951410784593536",
     "https://www.facebook.com/ads/library/?id=964189589791335",
-    "https://www.facebook.com/ads/library/?id=986180714007677"
+    "https://www.facebook.com/ads/library/?id=986180714007677",
+    "https://www.facebook.com/ads/library?id=1605074721253926"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -92735,7 +92823,8 @@
     "https://www.facebook.com/ads/library/?id=772375149270025",
     "https://www.facebook.com/ads/library/?id=802256679557525",
     "https://www.facebook.com/ads/library/?id=853111924443606",
-    "https://www.facebook.com/ads/library/?id=917633287411207"
+    "https://www.facebook.com/ads/library/?id=917633287411207",
+    "https://www.facebook.com/ads/library?id=1837041491007326"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -93071,7 +93160,11 @@
     "https://www.facebook.com/ads/library/?id=4572186769729274",
     "https://www.facebook.com/ads/library/?id=4572751969717249",
     "https://www.facebook.com/ads/library/?id=892457856791844",
-    "https://www.facebook.com/ads/library/?id=985379277864212"
+    "https://www.facebook.com/ads/library/?id=985379277864212",
+    "https://www.facebook.com/ads/library?id=1013887638089271",
+    "https://www.facebook.com/ads/library?id=1502244981706457",
+    "https://www.facebook.com/ads/library?id=1773650267135365",
+    "https://www.facebook.com/ads/library?id=4572751969717249"
    ],
    "observedAliases": [],
    "detailAvailable": true
@@ -96138,6 +96231,1967 @@
     "https://www.facebook.com/ads/library/?id=2716114862115438",
     "https://www.facebook.com/ads/library/?id=2845418709167779",
     "https://www.facebook.com/ads/library/?id=4374119079514361"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "vip-appointment-setting",
+   "name": "Vip Appointment Setting",
+   "country": "Sin determinar",
+   "domain": "Sin web propia localizada",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1042101711642558",
+     "1324021363094882",
+     "1761165105228301",
+     "3024099187779619"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 25,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1042101711642558",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1042101711642558.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1042101711642558"
+    },
+    {
+     "externalId": "1324021363094882",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1324021363094882.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1324021363094882"
+    },
+    {
+     "externalId": "1761165105228301",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1761165105228301.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1761165105228301"
+    },
+    {
+     "externalId": "3024099187779619",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-3024099187779619.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=3024099187779619"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=154732644379106",
+    "https://www.facebook.com/ads/library/?id=1042101711642558",
+    "https://www.facebook.com/ads/library/?id=1324021363094882",
+    "https://www.facebook.com/ads/library/?id=1761165105228301",
+    "https://www.facebook.com/ads/library/?id=3024099187779619",
+    "https://www.facebook.com/ads/library?id=1042101711642558",
+    "https://www.facebook.com/ads/library?id=1324021363094882",
+    "https://www.facebook.com/ads/library?id=1761165105228301",
+    "https://www.facebook.com/ads/library?id=3024099187779619"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "mar-dominguez-seda",
+   "name": "Mar Domínguez Seda · La Malcriada Agency",
+   "country": "España",
+   "domain": "lamalcriadaagency.com",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1138923142645322",
+     "1512909260292401",
+     "1979661845997034",
+     "2232220610965436"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 22,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1138923142645322",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1138923142645322.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1138923142645322"
+    },
+    {
+     "externalId": "1512909260292401",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1512909260292401.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1512909260292401"
+    },
+    {
+     "externalId": "1979661845997034",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1979661845997034.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1979661845997034"
+    },
+    {
+     "externalId": "2232220610965436",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2232220610965436.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2232220610965436"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=385860544615973",
+    "https://www.facebook.com/ads/library/?id=1138923142645322",
+    "https://www.facebook.com/ads/library/?id=1512909260292401",
+    "https://www.facebook.com/ads/library/?id=1979661845997034",
+    "https://www.facebook.com/ads/library/?id=2232220610965436",
+    "https://www.facebook.com/ads/library?id=1138923142645322",
+    "https://www.facebook.com/ads/library?id=1512909260292401",
+    "https://www.facebook.com/ads/library?id=1979661845997034",
+    "https://www.facebook.com/ads/library?id=2232220610965436"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "fatima-aio",
+   "name": "Fátima AIO · Agente Inmobiliario Online",
+   "country": "España",
+   "domain": "agenteinmobiliarioonline.com",
+   "status": ">=10",
+   "availableEvidenceCount": 10,
+   "targetCount": 10,
+   "transcribedCanonicalCount": 10,
+   "verifiedTranscribedCount": 10,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 10,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1020303067388728",
+     "1026179606815293",
+     "1365197659087102",
+     "1623946729177077",
+     "1697532784823887",
+     "1704184460861304",
+     "1757190828942547",
+     "1811943756882377",
+     "2094271361175080",
+     "834101359784336"
+    ],
+    "google": [],
+    "total": 10
+   },
+   "archivedFileCount": 10,
+   "reportedLibraryCounts": {
+    "meta": 10,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1020303067388728",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1020303067388728.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1020303067388728"
+    },
+    {
+     "externalId": "1026179606815293",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1026179606815293.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1026179606815293"
+    },
+    {
+     "externalId": "1365197659087102",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1365197659087102.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1365197659087102"
+    },
+    {
+     "externalId": "1623946729177077",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1623946729177077.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1623946729177077"
+    },
+    {
+     "externalId": "1697532784823887",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1697532784823887.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1697532784823887"
+    },
+    {
+     "externalId": "1704184460861304",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1704184460861304.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1704184460861304"
+    },
+    {
+     "externalId": "1757190828942547",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1757190828942547.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1757190828942547"
+    },
+    {
+     "externalId": "1811943756882377",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1811943756882377.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1811943756882377"
+    },
+    {
+     "externalId": "2094271361175080",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2094271361175080.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2094271361175080"
+    },
+    {
+     "externalId": "834101359784336",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-834101359784336.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=834101359784336"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1106148002571765",
+    "https://www.facebook.com/ads/library/?id=1020303067388728",
+    "https://www.facebook.com/ads/library/?id=1026179606815293",
+    "https://www.facebook.com/ads/library/?id=1365197659087102",
+    "https://www.facebook.com/ads/library/?id=1623946729177077",
+    "https://www.facebook.com/ads/library/?id=1697532784823887",
+    "https://www.facebook.com/ads/library/?id=1704184460861304",
+    "https://www.facebook.com/ads/library/?id=1757190828942547",
+    "https://www.facebook.com/ads/library/?id=1811943756882377",
+    "https://www.facebook.com/ads/library/?id=2094271361175080",
+    "https://www.facebook.com/ads/library/?id=834101359784336",
+    "https://www.facebook.com/ads/library?id=1020303067388728",
+    "https://www.facebook.com/ads/library?id=1026179606815293",
+    "https://www.facebook.com/ads/library?id=1365197659087102",
+    "https://www.facebook.com/ads/library?id=1623946729177077",
+    "https://www.facebook.com/ads/library?id=1697532784823887",
+    "https://www.facebook.com/ads/library?id=1704184460861304",
+    "https://www.facebook.com/ads/library?id=1757190828942547",
+    "https://www.facebook.com/ads/library?id=1811943756882377",
+    "https://www.facebook.com/ads/library?id=2094271361175080",
+    "https://www.facebook.com/ads/library?id=834101359784336"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "odental-agency",
+   "name": "Odental Agency",
+   "country": "Sin determinar",
+   "domain": "Sin web propia localizada",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 4,
+   "transcriptionGap": 4,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1635215147537076",
+     "2039656096975759",
+     "27158265610432488",
+     "936215016128091"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 7,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1635215147537076",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1635215147537076.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1635215147537076"
+    },
+    {
+     "externalId": "2039656096975759",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2039656096975759.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2039656096975759"
+    },
+    {
+     "externalId": "27158265610432488",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-27158265610432488.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=27158265610432488"
+    },
+    {
+     "externalId": "936215016128091",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-936215016128091.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=936215016128091"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=405497982637871",
+    "https://www.facebook.com/ads/library/?id=1635215147537076",
+    "https://www.facebook.com/ads/library/?id=2039656096975759",
+    "https://www.facebook.com/ads/library/?id=27158265610432488",
+    "https://www.facebook.com/ads/library/?id=936215016128091",
+    "https://www.facebook.com/ads/library?id=1635215147537076",
+    "https://www.facebook.com/ads/library?id=2039656096975759",
+    "https://www.facebook.com/ads/library?id=27158265610432488",
+    "https://www.facebook.com/ads/library?id=936215016128091"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "german-ruperez",
+   "name": "Germán Rupérez",
+   "country": "España",
+   "domain": "Sin web propia localizada",
+   "status": "5-9",
+   "availableEvidenceCount": 6,
+   "targetCount": 6,
+   "transcribedCanonicalCount": 6,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 6,
+   "transcriptionGap": 6,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 6,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1048785114372372",
+     "1334827255291237",
+     "1345443571122146",
+     "2112540169672033",
+     "2923369211166760",
+     "3079142058947144"
+    ],
+    "google": [],
+    "total": 6
+   },
+   "archivedFileCount": 6,
+   "reportedLibraryCounts": {
+    "meta": 6,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1048785114372372",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1048785114372372.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1048785114372372"
+    },
+    {
+     "externalId": "1334827255291237",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1334827255291237.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1334827255291237"
+    },
+    {
+     "externalId": "1345443571122146",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1345443571122146.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1345443571122146"
+    },
+    {
+     "externalId": "2112540169672033",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2112540169672033.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2112540169672033"
+    },
+    {
+     "externalId": "2923369211166760",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2923369211166760.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2923369211166760"
+    },
+    {
+     "externalId": "3079142058947144",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-3079142058947144.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=3079142058947144"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=195122443678632",
+    "https://www.facebook.com/ads/library/?id=1048785114372372",
+    "https://www.facebook.com/ads/library/?id=1334827255291237",
+    "https://www.facebook.com/ads/library/?id=1345443571122146",
+    "https://www.facebook.com/ads/library/?id=2112540169672033",
+    "https://www.facebook.com/ads/library/?id=2923369211166760",
+    "https://www.facebook.com/ads/library/?id=3079142058947144",
+    "https://www.facebook.com/ads/library?id=1048785114372372",
+    "https://www.facebook.com/ads/library?id=1334827255291237",
+    "https://www.facebook.com/ads/library?id=1345443571122146",
+    "https://www.facebook.com/ads/library?id=2112540169672033",
+    "https://www.facebook.com/ads/library?id=2923369211166760",
+    "https://www.facebook.com/ads/library?id=3079142058947144"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "icall-for-you",
+   "name": "iCall For You",
+   "country": "Italia",
+   "domain": "icallforyou.com",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1479684593605358",
+     "1704585567525122",
+     "26587252290966314",
+     "4447867795433735"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 6,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1479684593605358",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1479684593605358.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1479684593605358"
+    },
+    {
+     "externalId": "1704585567525122",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1704585567525122.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1704585567525122"
+    },
+    {
+     "externalId": "26587252290966314",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-26587252290966314.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=26587252290966314"
+    },
+    {
+     "externalId": "4447867795433735",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-4447867795433735.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=4447867795433735"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=246855511833552",
+    "https://www.facebook.com/ads/library/?id=1479684593605358",
+    "https://www.facebook.com/ads/library/?id=1704585567525122",
+    "https://www.facebook.com/ads/library/?id=26587252290966314",
+    "https://www.facebook.com/ads/library/?id=4447867795433735",
+    "https://www.facebook.com/ads/library?id=1479684593605358",
+    "https://www.facebook.com/ads/library?id=1704585567525122",
+    "https://www.facebook.com/ads/library?id=26587252290966314",
+    "https://www.facebook.com/ads/library?id=4447867795433735"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "pacs-la-aceleradora-b2b",
+   "name": "PACS · La Aceleradora B2B",
+   "country": "Argentina",
+   "domain": "pacs.academy",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1297245482586814",
+     "1532490631547585",
+     "2092909088237704",
+     "839076102449346"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 4,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1297245482586814",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1297245482586814.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1297245482586814"
+    },
+    {
+     "externalId": "1532490631547585",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1532490631547585.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1532490631547585"
+    },
+    {
+     "externalId": "2092909088237704",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2092909088237704.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2092909088237704"
+    },
+    {
+     "externalId": "839076102449346",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-839076102449346.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=839076102449346"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=101121952080959",
+    "https://www.facebook.com/ads/library/?id=1297245482586814",
+    "https://www.facebook.com/ads/library/?id=1532490631547585",
+    "https://www.facebook.com/ads/library/?id=2092909088237704",
+    "https://www.facebook.com/ads/library/?id=839076102449346",
+    "https://www.facebook.com/ads/library?id=1297245482586814",
+    "https://www.facebook.com/ads/library?id=1532490631547585",
+    "https://www.facebook.com/ads/library?id=2092909088237704",
+    "https://www.facebook.com/ads/library?id=839076102449346"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "airos-agency",
+   "name": "Airos Agency",
+   "country": "España",
+   "domain": "airosagency.com",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1124448326115336",
+     "667582109456105",
+     "688609243831523",
+     "689737376794276"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 4,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1124448326115336",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1124448326115336.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1124448326115336"
+    },
+    {
+     "externalId": "667582109456105",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-667582109456105.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=667582109456105"
+    },
+    {
+     "externalId": "688609243831523",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-688609243831523.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=688609243831523"
+    },
+    {
+     "externalId": "689737376794276",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-689737376794276.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=689737376794276"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=104365698370278",
+    "https://www.facebook.com/ads/library/?id=1124448326115336",
+    "https://www.facebook.com/ads/library/?id=667582109456105",
+    "https://www.facebook.com/ads/library/?id=688609243831523",
+    "https://www.facebook.com/ads/library/?id=689737376794276",
+    "https://www.facebook.com/ads/library?id=1124448326115336",
+    "https://www.facebook.com/ads/library?id=667582109456105",
+    "https://www.facebook.com/ads/library?id=688609243831523",
+    "https://www.facebook.com/ads/library?id=689737376794276"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "fonio-ai",
+   "name": "fonio.ai",
+   "country": "Austria",
+   "domain": "fonio.ai",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1026061026431082",
+     "1312675334345364",
+     "1388775386487496",
+     "1505727334658456"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 4,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1026061026431082",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1026061026431082.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1026061026431082"
+    },
+    {
+     "externalId": "1312675334345364",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1312675334345364.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1312675334345364"
+    },
+    {
+     "externalId": "1388775386487496",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1388775386487496.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1388775386487496"
+    },
+    {
+     "externalId": "1505727334658456",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1505727334658456.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1505727334658456"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=448215355034775",
+    "https://www.facebook.com/ads/library/?id=1026061026431082",
+    "https://www.facebook.com/ads/library/?id=1312675334345364",
+    "https://www.facebook.com/ads/library/?id=1388775386487496",
+    "https://www.facebook.com/ads/library/?id=1505727334658456",
+    "https://www.facebook.com/ads/library?id=1026061026431082",
+    "https://www.facebook.com/ads/library?id=1312675334345364",
+    "https://www.facebook.com/ads/library?id=1388775386487496",
+    "https://www.facebook.com/ads/library?id=1505727334658456"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "clinic-wise",
+   "name": "Clinic Wise",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 4,
+   "transcriptionGap": 4,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1143938601215457",
+     "1298801542291329",
+     "2767836913569241",
+     "700114199784964"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 4,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1143938601215457",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1143938601215457.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1143938601215457"
+    },
+    {
+     "externalId": "1298801542291329",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1298801542291329.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1298801542291329"
+    },
+    {
+     "externalId": "2767836913569241",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2767836913569241.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2767836913569241"
+    },
+    {
+     "externalId": "700114199784964",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-700114199784964.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=700114199784964"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=685178108002598",
+    "https://www.facebook.com/ads/library/?id=1143938601215457",
+    "https://www.facebook.com/ads/library/?id=1298801542291329",
+    "https://www.facebook.com/ads/library/?id=2767836913569241",
+    "https://www.facebook.com/ads/library/?id=700114199784964",
+    "https://www.facebook.com/ads/library?id=1143938601215457",
+    "https://www.facebook.com/ads/library?id=1298801542291329",
+    "https://www.facebook.com/ads/library?id=2767836913569241",
+    "https://www.facebook.com/ads/library?id=700114199784964"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "consultoria-io",
+   "name": "Consultoria.io",
+   "country": "España",
+   "domain": "consultoria.io",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1019824707264875",
+     "1357048216378334",
+     "1531490838465063",
+     "4711186659167703"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 4,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1019824707264875",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1019824707264875.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1019824707264875"
+    },
+    {
+     "externalId": "1357048216378334",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1357048216378334.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1357048216378334"
+    },
+    {
+     "externalId": "1531490838465063",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1531490838465063.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1531490838465063"
+    },
+    {
+     "externalId": "4711186659167703",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-4711186659167703.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=4711186659167703"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=338429670215715",
+    "https://www.facebook.com/ads/library/?id=1019824707264875",
+    "https://www.facebook.com/ads/library/?id=1357048216378334",
+    "https://www.facebook.com/ads/library/?id=1531490838465063",
+    "https://www.facebook.com/ads/library/?id=4711186659167703",
+    "https://www.facebook.com/ads/library?id=1019824707264875",
+    "https://www.facebook.com/ads/library?id=1357048216378334",
+    "https://www.facebook.com/ads/library?id=1531490838465063",
+    "https://www.facebook.com/ads/library?id=4711186659167703"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "visionarius-ai",
+   "name": "Visionarius AI",
+   "country": "España",
+   "domain": "visionarius.ai",
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 3,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 3,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1323437613334472",
+     "1719115835996553",
+     "797062310096022"
+    ],
+    "google": [],
+    "total": 3
+   },
+   "archivedFileCount": 3,
+   "reportedLibraryCounts": {
+    "meta": 3,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1323437613334472",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1323437613334472.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1323437613334472"
+    },
+    {
+     "externalId": "1719115835996553",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1719115835996553.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1719115835996553"
+    },
+    {
+     "externalId": "797062310096022",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-797062310096022.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=797062310096022"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1085107841343598",
+    "https://www.facebook.com/ads/library/?id=1323437613334472",
+    "https://www.facebook.com/ads/library/?id=1719115835996553",
+    "https://www.facebook.com/ads/library/?id=797062310096022",
+    "https://www.facebook.com/ads/library?id=1323437613334472",
+    "https://www.facebook.com/ads/library?id=1719115835996553",
+    "https://www.facebook.com/ads/library?id=797062310096022"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "dejalia-secretaria-24-7",
+   "name": "Dejalia · Secretaria 24/7",
+   "country": "España",
+   "domain": "dejalia.com",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 1,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 1,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1144969651132815"
+    ],
+    "google": [],
+    "total": 1
+   },
+   "archivedFileCount": 1,
+   "reportedLibraryCounts": {
+    "meta": 3,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1144969651132815",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1144969651132815.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1144969651132815"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=708527609017301",
+    "https://www.facebook.com/ads/library/?id=1144969651132815",
+    "https://www.facebook.com/ads/library?id=1144969651132815"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "siweb-360",
+   "name": "Siweb 360",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 1,
+   "transcriptionGap": 1,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 1,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1748414716364402"
+    ],
+    "google": [],
+    "total": 1
+   },
+   "archivedFileCount": 1,
+   "reportedLibraryCounts": {
+    "meta": 1,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1748414716364402",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1748414716364402.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1748414716364402"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1127620933767528",
+    "https://www.facebook.com/ads/library/?id=1748414716364402",
+    "https://www.facebook.com/ads/library?id=1748414716364402"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "leeia-agentes-inteligencia-artificial",
+   "name": "LEEIA · Agentes Inteligencia Artificial",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 1,
+   "transcriptionGap": 1,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 1,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1668620367536809"
+    ],
+    "google": [],
+    "total": 1
+   },
+   "archivedFileCount": 1,
+   "reportedLibraryCounts": {
+    "meta": 1,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1668620367536809",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1668620367536809.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1668620367536809"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1050399631499049",
+    "https://www.facebook.com/ads/library/?id=1668620367536809",
+    "https://www.facebook.com/ads/library?id=1668620367536809"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "nodo-point",
+   "name": "Nodo Point",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 2,
+   "targetCount": 2,
+   "transcribedCanonicalCount": 2,
+   "verifiedTranscribedCount": 2,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 2,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1354291829517445",
+     "1496932065048617"
+    ],
+    "google": [],
+    "total": 2
+   },
+   "archivedFileCount": 2,
+   "reportedLibraryCounts": {
+    "meta": 2,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1354291829517445",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1354291829517445.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1354291829517445"
+    },
+    {
+     "externalId": "1496932065048617",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1496932065048617.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1496932065048617"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=100528589807390",
+    "https://www.facebook.com/ads/library/?id=1354291829517445",
+    "https://www.facebook.com/ads/library/?id=1496932065048617",
+    "https://www.facebook.com/ads/library?id=1354291829517445",
+    "https://www.facebook.com/ads/library?id=1496932065048617"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "coventia-ai",
+   "name": "Coventia AI",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 1,
+   "transcriptionGap": 1,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 1,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1551160893052106"
+    ],
+    "google": [],
+    "total": 1
+   },
+   "archivedFileCount": 1,
+   "reportedLibraryCounts": {
+    "meta": 1,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1551160893052106",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1551160893052106.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1551160893052106"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1236435766213432",
+    "https://www.facebook.com/ads/library/?id=1551160893052106",
+    "https://www.facebook.com/ads/library?id=1551160893052106"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "viraplus-agencia-de-marketing",
+   "name": "ViraPlus Agencia de Marketing",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 1,
+   "targetCount": 1,
+   "transcribedCanonicalCount": 1,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 1,
+   "transcriptionGap": 1,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 1,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "2550708418706345"
+    ],
+    "google": [],
+    "total": 1
+   },
+   "archivedFileCount": 1,
+   "reportedLibraryCounts": {
+    "meta": 1,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "2550708418706345",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2550708418706345.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2550708418706345"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=349527364921689",
+    "https://www.facebook.com/ads/library/?id=2550708418706345",
+    "https://www.facebook.com/ads/library?id=2550708418706345"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "skalex-pro",
+   "name": "Skalex.pro",
+   "country": "España",
+   "domain": "skalex.pro",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1661309354938031",
+     "1804754657327781",
+     "2470505196765796",
+     "27944996611798011"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 9,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1661309354938031",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1661309354938031.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1661309354938031"
+    },
+    {
+     "externalId": "1804754657327781",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1804754657327781.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1804754657327781"
+    },
+    {
+     "externalId": "2470505196765796",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2470505196765796.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2470505196765796"
+    },
+    {
+     "externalId": "27944996611798011",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-27944996611798011.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=27944996611798011"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=970350222838103",
+    "https://www.facebook.com/ads/library/?id=1661309354938031",
+    "https://www.facebook.com/ads/library/?id=1804754657327781",
+    "https://www.facebook.com/ads/library/?id=2470505196765796",
+    "https://www.facebook.com/ads/library/?id=27944996611798011",
+    "https://www.facebook.com/ads/library?id=1661309354938031",
+    "https://www.facebook.com/ads/library?id=1804754657327781",
+    "https://www.facebook.com/ads/library?id=2470505196765796",
+    "https://www.facebook.com/ads/library?id=27944996611798011"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "car-import-academy",
+   "name": "Car Import Academy",
+   "country": "España",
+   "domain": "carimportacademy.com",
+   "status": "5-9",
+   "availableEvidenceCount": 9,
+   "targetCount": 9,
+   "transcribedCanonicalCount": 9,
+   "verifiedTranscribedCount": 9,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 9,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1241899461224737",
+     "1358059842853682",
+     "1365707665745417",
+     "1407160601294262",
+     "1537945797719841",
+     "1554461929627451",
+     "2033336533946342",
+     "3028184720720695",
+     "862301630276828"
+    ],
+    "google": [],
+    "total": 9
+   },
+   "archivedFileCount": 9,
+   "reportedLibraryCounts": {
+    "meta": 9,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1241899461224737",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1241899461224737.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1241899461224737"
+    },
+    {
+     "externalId": "1358059842853682",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1358059842853682.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1358059842853682"
+    },
+    {
+     "externalId": "1365707665745417",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1365707665745417.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1365707665745417"
+    },
+    {
+     "externalId": "1407160601294262",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1407160601294262.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1407160601294262"
+    },
+    {
+     "externalId": "1537945797719841",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1537945797719841.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1537945797719841"
+    },
+    {
+     "externalId": "1554461929627451",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1554461929627451.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1554461929627451"
+    },
+    {
+     "externalId": "2033336533946342",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2033336533946342.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2033336533946342"
+    },
+    {
+     "externalId": "3028184720720695",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-3028184720720695.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=3028184720720695"
+    },
+    {
+     "externalId": "862301630276828",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-862301630276828.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=862301630276828"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=645814835280075",
+    "https://www.facebook.com/ads/library/?id=1241899461224737",
+    "https://www.facebook.com/ads/library/?id=1358059842853682",
+    "https://www.facebook.com/ads/library/?id=1365707665745417",
+    "https://www.facebook.com/ads/library/?id=1407160601294262",
+    "https://www.facebook.com/ads/library/?id=1537945797719841",
+    "https://www.facebook.com/ads/library/?id=1554461929627451",
+    "https://www.facebook.com/ads/library/?id=2033336533946342",
+    "https://www.facebook.com/ads/library/?id=3028184720720695",
+    "https://www.facebook.com/ads/library/?id=862301630276828",
+    "https://www.facebook.com/ads/library?id=1241899461224737",
+    "https://www.facebook.com/ads/library?id=1358059842853682",
+    "https://www.facebook.com/ads/library?id=1365707665745417",
+    "https://www.facebook.com/ads/library?id=1407160601294262",
+    "https://www.facebook.com/ads/library?id=1537945797719841",
+    "https://www.facebook.com/ads/library?id=1554461929627451",
+    "https://www.facebook.com/ads/library?id=2033336533946342",
+    "https://www.facebook.com/ads/library?id=3028184720720695",
+    "https://www.facebook.com/ads/library?id=862301630276828"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "academia-entrenadores-online",
+   "name": "Academia de Entrenadores Online",
+   "country": "España",
+   "domain": "academiaentrenadoresonline.com",
+   "status": "1-4",
+   "availableEvidenceCount": 4,
+   "targetCount": 4,
+   "transcribedCanonicalCount": 4,
+   "verifiedTranscribedCount": 4,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 4,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1393144919651391",
+     "1587118979485504",
+     "1948398982506140",
+     "4610000099242424"
+    ],
+    "google": [],
+    "total": 4
+   },
+   "archivedFileCount": 4,
+   "reportedLibraryCounts": {
+    "meta": 7,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1393144919651391",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1393144919651391.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1393144919651391"
+    },
+    {
+     "externalId": "1587118979485504",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1587118979485504.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1587118979485504"
+    },
+    {
+     "externalId": "1948398982506140",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1948398982506140.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1948398982506140"
+    },
+    {
+     "externalId": "4610000099242424",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-4610000099242424.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=4610000099242424"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=102559208079455",
+    "https://www.facebook.com/ads/library/?id=1393144919651391",
+    "https://www.facebook.com/ads/library/?id=1587118979485504",
+    "https://www.facebook.com/ads/library/?id=1948398982506140",
+    "https://www.facebook.com/ads/library/?id=4610000099242424",
+    "https://www.facebook.com/ads/library?id=1393144919651391",
+    "https://www.facebook.com/ads/library?id=1587118979485504",
+    "https://www.facebook.com/ads/library?id=1948398982506140",
+    "https://www.facebook.com/ads/library?id=4610000099242424"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "leadfluence-academy",
+   "name": "LeadFluence Academy",
+   "country": "España",
+   "domain": "leadfluenceacademy.com",
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 3,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 0,
+   "transcriptionGap": 0,
+   "textAvailableComplete": true,
+   "verifiedComplete": true,
+   "transcriptionComplete": true,
+   "transcribedByPlatform": {
+    "meta": 3,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1563543941927705",
+     "1967587027234094",
+     "2166808500905282"
+    ],
+    "google": [],
+    "total": 3
+   },
+   "archivedFileCount": 3,
+   "reportedLibraryCounts": {
+    "meta": 3,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1563543941927705",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1563543941927705.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1563543941927705"
+    },
+    {
+     "externalId": "1967587027234094",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1967587027234094.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1967587027234094"
+    },
+    {
+     "externalId": "2166808500905282",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2166808500905282.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2166808500905282"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1098383993357983",
+    "https://www.facebook.com/ads/library/?id=1563543941927705",
+    "https://www.facebook.com/ads/library/?id=1967587027234094",
+    "https://www.facebook.com/ads/library/?id=2166808500905282",
+    "https://www.facebook.com/ads/library?id=1563543941927705",
+    "https://www.facebook.com/ads/library?id=1967587027234094",
+    "https://www.facebook.com/ads/library?id=2166808500905282"
+   ],
+   "observedAliases": [],
+   "detailAvailable": true
+  },
+  {
+   "companyId": "marketing-360-embudo-ia",
+   "name": "Marketing 360 · Embudo con IA",
+   "country": "Sin determinar",
+   "domain": "Sin web propia confirmada",
+   "status": "1-4",
+   "availableEvidenceCount": 3,
+   "targetCount": 3,
+   "transcribedCanonicalCount": 3,
+   "verifiedTranscribedCount": 0,
+   "textAvailabilityGap": 0,
+   "verifiedTranscriptionGap": 3,
+   "transcriptionGap": 3,
+   "textAvailableComplete": true,
+   "verifiedComplete": false,
+   "transcriptionComplete": false,
+   "transcribedByPlatform": {
+    "meta": 3,
+    "google": 0,
+    "instagram": 0,
+    "display": 0,
+    "other": 0
+   },
+   "exactCreativeIds": {
+    "meta": [
+     "1027505713448975",
+     "1986814992027593",
+     "2311520259589014"
+    ],
+    "google": [],
+    "total": 3
+   },
+   "archivedFileCount": 3,
+   "reportedLibraryCounts": {
+    "meta": 3,
+    "google": 0
+   },
+   "review": {
+    "meta": {
+     "status": "Activo en el corte secundario (2026-08-26)",
+     "classification": "evidencia atribuible"
+    },
+    "google": {
+     "status": "No comprobado",
+     "classification": "pendiente/no atribuible"
+    }
+   },
+   "evidence": [
+    {
+     "externalId": "1027505713448975",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1027505713448975.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1027505713448975"
+    },
+    {
+     "externalId": "1986814992027593",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-1986814992027593.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=1986814992027593"
+    },
+    {
+     "externalId": "2311520259589014",
+     "platform": "meta",
+     "file": "/media/lead-market-meta-2311520259589014.jpg",
+     "sourceUrl": "https://www.facebook.com/ads/library/?id=2311520259589014"
+    }
+   ],
+   "sourceLinks": [
+    "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ES&view_all_page_id=1033626519834813",
+    "https://www.facebook.com/ads/library/?id=1027505713448975",
+    "https://www.facebook.com/ads/library/?id=1986814992027593",
+    "https://www.facebook.com/ads/library/?id=2311520259589014",
+    "https://www.facebook.com/ads/library?id=1027505713448975",
+    "https://www.facebook.com/ads/library?id=1986814992027593",
+    "https://www.facebook.com/ads/library?id=2311520259589014"
    ],
    "observedAliases": [],
    "detailAvailable": true

@@ -1,12 +1,12 @@
 {
  "schema": "redvitalia-data-manifest-v1",
  "generatedAt": "2026-08-27",
- "revision": "c46779d0f7e2e1b6",
+ "revision": "4fc6f6875d49353c",
  "universe": {
-  "companies": 1052,
-  "representedPrimaryMarkets": 129,
+  "companies": 1075,
+  "representedPrimaryMarkets": 130,
   "territorialAtlasStates": 195,
-  "media": 5100
+  "media": 5206
  },
  "deepSnapshot": {
   "companies": 712,
@@ -16,32 +16,32 @@
   "status": "TERMINADO"
  },
  "visualIdentitySnapshot": {
-  "entries": 1052,
-  "authentic": 890
+  "entries": 1075,
+  "authentic": 903
  },
  "advertising": {
-  "companiesWithEvidence": 266,
+  "companiesWithEvidence": 289,
   "companiesPendingDiscovery": 770,
-  "exactCreativeIds": 5836,
-  "attributableEvidenceSample": 2212,
-  "searchableTranscriptions": 4464,
-  "verifiedTranscriptions": 2994,
-  "patternReady": 3035,
-  "searchablePieces": 4591,
-  "representedAdvertisers": 279,
+  "exactCreativeIds": 5932,
+  "attributableEvidenceSample": 2297,
+  "searchableTranscriptions": 4560,
+  "verifiedTranscriptions": 3067,
+  "patternReady": 3110,
+  "searchablePieces": 4689,
+  "representedAdvertisers": 302,
   "exactAssetsAudited": 2014,
   "exactAssetsWithUsableText": 1978,
   "exactAssetsWithoutLegibleText": 36,
   "translationsAvailable": 482,
   "translationsRejectedQa": 141,
-  "translationsPending": 0,
+  "translationsPending": 5,
   "translationsRequiresReview": 475,
   "translationsUnavailable": 0,
   "textAvailabilityGap": 219,
-  "verifiedTranscriptionGap": 1046
+  "verifiedTranscriptionGap": 1067
  },
  "scopeNotes": [
-  "El universo actual tiene 1052 fichas; el snapshot profundo conserva 712.",
+  "El universo actual tiene 1075 fichas; el snapshot profundo conserva 712.",
   "Los 195 elementos territoriales son Estados del atlas, no mercados primarios con empresa.",
   "Una transcripción OCR es buscable, pero no verificada ni apta para patrones hasta revisión humana.",
   "Una creatividad sin texto legible se conserva como evidencia visual, pero no cuenta como transcripción.",

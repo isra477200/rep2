@@ -295,6 +295,14 @@ export type AnuncioReal = {
   fuenteUrl?: string | null;
   /** Procedencia de la evidencia: biblioteca, archivo, captura manual, etc. */
   origen?: string | null;
+  /** Snapshot de investigación secundario en el que también aparece la pieza. */
+  researchSnapshotId?: string | null;
+  /** Etiquetas conservadas de un estudio secundario; no implican validación de rendimiento. */
+  marketCategory?: string | null;
+  marketVerticals?: string[];
+  marketGuarantees?: string[];
+  /** Distingue un precio pagable revisado de una cifra monetaria meramente mencionada. */
+  priceEvidenceRole?: "offer_price_reviewed" | "currency_mentions_not_treated_as_price" | null;
   /** Estado o alcance de la transcripción, no un sustituto del copy en `texto`. */
   transcripcion?: string | null;
   /** Confianza editorial declarada por el proceso de revisión. */

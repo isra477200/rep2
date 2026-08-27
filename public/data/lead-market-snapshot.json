@@ -1,0 +1,3261 @@
+{
+  "schema": "redvitalia-lead-market-snapshot-v1",
+  "id": "mercado-leads-es-2026-08-26",
+  "observedAt": "2026-08-26",
+  "importedAt": "2026-08-27T02:32:28.177Z",
+  "title": "El mercado de los leads · España",
+  "note": "Fuente secundaria importada como evidencia, no como verdad automática. Las categorías, garantías, precios y condición de proveedor proceden del informe y pueden contener falsos positivos. Solo las Page ID resueltas editorialmente alimentan fichas y patrones.",
+  "methodology": {
+    "source": "ScrapeCreators API / Meta Ads Library, según el propio informe",
+    "market": "España",
+    "searchTerms": 50,
+    "apiCallsOrCredits": 84,
+    "scope": "Anuncios activos; hasta dos páginas por término de búsqueda",
+    "rawAds": 1074,
+    "discardedAsNoise": 341,
+    "analyzedAds": 733,
+    "limitation": "El HTML identifica 65 páginas y entrega 173 creatividades detalladas; no permite reconstruir individualmente las 733 piezas ni identificar las 319 páginas declaradas.",
+    "gallerySelection": "La regla con la que se eligieron las 173 piezas detalladas no está documentada; por tanto, la galería no es una muestra representativa garantizada.",
+    "performanceDataAvailable": false
+  },
+  "kpis": {
+    "analyzedAds": 733,
+    "providerAds": 438,
+    "finalAdvertiserAds": 295,
+    "pages": 319,
+    "providerPages": 197,
+    "pagesWithPrice": 66,
+    "pagesWithGuarantee": 102,
+    "clonePages": 11,
+    "detailedCreatives": 173,
+    "detailedPages": 58,
+    "uniqueCopyBodies": 71,
+    "uniqueImages": 141,
+    "topProviders": 40,
+    "copyCloneClusters": 4
+  },
+  "distributions": {
+    "categories": [
+      [
+        "Formación y mentoría",
+        194
+      ],
+      [
+        "Software e IA",
+        94
+      ],
+      [
+        "Venta de leads",
+        77
+      ],
+      [
+        "Agencia de anuncios",
+        39
+      ],
+      [
+        "Call center y citas",
+        34
+      ]
+    ],
+    "verticals": [
+      [
+        "B2B genérico",
+        156
+      ],
+      [
+        "Inmobiliaria",
+        69
+      ],
+      [
+        "Salud y clínicas",
+        67
+      ],
+      [
+        "Reformas",
+        52
+      ],
+      [
+        "Automoción",
+        38
+      ],
+      [
+        "Restauración",
+        35
+      ],
+      [
+        "Abogados",
+        34
+      ],
+      [
+        "Seguros",
+        25
+      ],
+      [
+        "Belleza",
+        24
+      ],
+      [
+        "Solar",
+        16
+      ],
+      [
+        "Fitness",
+        12
+      ],
+      [
+        "Ecommerce",
+        7
+      ]
+    ],
+    "guarantees": [
+      [
+        "Exclusividad de zona",
+        50
+      ],
+      [
+        "Plazo concreto",
+        43
+      ],
+      [
+        "Garantía de resultados",
+        41
+      ],
+      [
+        "Pago por resultados",
+        21
+      ],
+      [
+        "Sin permanencia",
+        8
+      ]
+    ],
+    "ctas": [
+      [
+        "Más información",
+        169
+      ],
+      [
+        "Ver más",
+        132
+      ],
+      [
+        "Ver detalles",
+        46
+      ],
+      [
+        "Ver Instagram",
+        25
+      ],
+      [
+        "Registrarse",
+        25
+      ],
+      [
+        "Solicitar ahora",
+        15
+      ],
+      [
+        "Pedir ahora",
+        7
+      ],
+      [
+        "Reservar",
+        4
+      ]
+    ],
+    "formats": [
+      [
+        "Vídeo",
+        217
+      ],
+      [
+        "Catálogo dinámico",
+        125
+      ],
+      [
+        "Imagen",
+        88
+      ],
+      [
+        "Carrusel",
+        6
+      ],
+      [
+        "Multi-vídeo",
+        1
+      ],
+      [
+        "Dinámico",
+        1
+      ]
+    ],
+    "destinations": [
+      [
+        "Web propia",
+        281
+      ],
+      [
+        "Messenger",
+        110
+      ],
+      [
+        "Instagram",
+        28
+      ],
+      [
+        "Formulario",
+        9
+      ],
+      [
+        "Sin destino claro",
+        6
+      ],
+      [
+        "WhatsApp",
+        3
+      ],
+      [
+        "YouTube",
+        1
+      ]
+    ],
+    "activityBands": [
+      [
+        "menos de 10 €",
+        8
+      ],
+      [
+        "10 – 99 €",
+        10
+      ],
+      [
+        "100 – 999 €",
+        7
+      ],
+      [
+        "1.000 – 9.999 €",
+        37
+      ],
+      [
+        "10.000 € o más",
+        36
+      ]
+    ]
+  },
+  "editorialReview": {
+    "matchedPageIds": 23,
+    "matchedCompanyIds": 23,
+    "quarantinedPageIds": 11,
+    "watchlistPageIds": 7,
+    "policy": "Solo matched alimenta fichas y patrones; quarantine y watchlist permanecen consultables en el snapshot sin atribución competitiva."
+  },
+  "topProviders": [
+    {
+      "rank": 1,
+      "pageId": "154732644379106",
+      "pageName": "Vip-appointment-setting",
+      "observedActiveAds": 25,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 1455,
+      "categoryCode": "callcenter",
+      "category": "Call center y citas",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-07-29",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "matched",
+        "companyId": "vip-appointment-setting",
+        "confidence": "high",
+        "note": "Identidad exacta por Page ID. La oferta recuperada es formación para setters, no un call center operativo; se integra como actor adyacente."
+      }
+    },
+    {
+      "rank": 2,
+      "pageId": "385860544615973",
+      "pageName": "Mar Dominguez Seda",
+      "observedActiveAds": 22,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 55,
+      "categoryCode": "software",
+      "category": "Software e IA",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-06-18",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "mar-dominguez-seda",
+        "confidence": "high",
+        "note": "Identidad exacta y copy coherente con La Malcriada Agency; se corrige la etiqueta automática de software."
+      }
+    },
+    {
+      "rank": 3,
+      "pageId": "174753545710311",
+      "pageName": "Crece Sin Límite",
+      "observedActiveAds": 12,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 141,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [],
+      "firstStartDateObserved": "2026-01-23",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "matched",
+        "companyId": "crece-sin-limite",
+        "confidence": "high",
+        "note": "Nombre y oferta coinciden."
+      }
+    },
+    {
+      "rank": 4,
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "observedActiveAds": 11,
+      "detailedCreatives": 11,
+      "pageLikesObserved": 7663,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [
+        100000
+      ],
+      "guarantees": [
+        "Pago por resultados",
+        "Exclusividad de zona"
+      ],
+      "verticals": [
+        "Inmobiliaria",
+        "Restauración"
+      ],
+      "firstStartDateObserved": "2026-07-07",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "real-estate-rocket",
+        "confidence": "high",
+        "note": "Nueva ficha; marca y realestaterocket.io coinciden."
+      }
+    },
+    {
+      "rank": 5,
+      "pageId": "1271866622671431",
+      "pageName": "Novelas Obsesionantes",
+      "observedActiveAds": 11,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 11,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Abogados",
+        "Salud y clínicas",
+        "Inmobiliaria"
+      ],
+      "firstStartDateObserved": "2026-08-19",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "quarantine",
+        "companyId": null,
+        "confidence": "high",
+        "note": "Novelas Obsesionantes es un anunciante final de ficción; la etiqueta de formación es un falso positivo."
+      }
+    },
+    {
+      "rank": 6,
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "observedActiveAds": 10,
+      "detailedCreatives": 10,
+      "pageLikesObserved": 297,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [
+        6000,
+        25000
+      ],
+      "guarantees": [
+        "Exclusividad de zona"
+      ],
+      "verticals": [
+        "Inmobiliaria"
+      ],
+      "firstStartDateObserved": "2026-07-18",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "matched",
+        "companyId": "fatima-aio",
+        "confidence": "high",
+        "note": "Fátima / Agente Inmobiliario Online / Academia Rascacielos; formación y captación inmobiliaria, no venta genérica de leads."
+      }
+    },
+    {
+      "rank": 7,
+      "pageId": "103943539390549",
+      "pageName": "Bastida&Farina",
+      "observedActiveAds": 9,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 256,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [
+        2,
+        4.42,
+        5.75,
+        15
+      ],
+      "guarantees": [
+        "Plazo concreto",
+        "Garantía de resultados"
+      ],
+      "verticals": [
+        "B2B genérico",
+        "Belleza"
+      ],
+      "firstStartDateObserved": "2026-06-23",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "bastida-y-farina-s-l",
+        "confidence": "high",
+        "note": "Nombre y dominio coinciden."
+      }
+    },
+    {
+      "rank": 8,
+      "pageId": "104077976067660",
+      "pageName": "Monq Media",
+      "observedActiveAds": 9,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 307,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Garantía de resultados",
+        "Exclusividad de zona",
+        "Plazo concreto"
+      ],
+      "verticals": [
+        "Solar",
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-02-27",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "matched",
+        "companyId": "monq-media",
+        "confidence": "high",
+        "note": "Nombre y dominio coinciden."
+      }
+    },
+    {
+      "rank": 9,
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "observedActiveAds": 9,
+      "detailedCreatives": 9,
+      "pageLikesObserved": 4019,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [
+        2000,
+        5000
+      ],
+      "guarantees": [],
+      "verticals": [
+        "Automoción"
+      ],
+      "firstStartDateObserved": "2026-06-18",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "car-import-academy",
+        "confidence": "high",
+        "note": "Academia española e intermediación ImportMatch; actor adyacente con nueve creatividades detalladas."
+      }
+    },
+    {
+      "rank": 10,
+      "pageId": "970350222838103",
+      "pageName": "Skalex.pro",
+      "observedActiveAds": 9,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 5,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [],
+      "firstStartDateObserved": "2026-08-02",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "skalex-pro",
+        "confidence": "high",
+        "note": "Setter IA real confirmado por skalex.pro; se corrige la clasificación automática de formación."
+      }
+    },
+    {
+      "rank": 11,
+      "pageId": "443198685535146",
+      "pageName": "Nino Director",
+      "observedActiveAds": 7,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 16115,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Restauración",
+        "Reformas"
+      ],
+      "firstStartDateObserved": "2026-08-15",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "matched",
+        "companyId": "nino-director",
+        "confidence": "high",
+        "note": "Nueva ficha; página exacta."
+      }
+    },
+    {
+      "rank": 12,
+      "pageId": "102559208079455",
+      "pageName": "academiaentrenadoresonline",
+      "observedActiveAds": 7,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 2862,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Salud y clínicas",
+        "Fitness"
+      ],
+      "firstStartDateObserved": "2026-08-25",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "matched",
+        "companyId": "academia-entrenadores-online",
+        "confidence": "high",
+        "note": "Formación española para lanzar y escalar negocios fitness; actor adyacente de captación."
+      }
+    },
+    {
+      "rank": 13,
+      "pageId": "405497982637871",
+      "pageName": "Odental Agency",
+      "observedActiveAds": 7,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 989,
+      "categoryCode": "software",
+      "category": "Software e IA",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Plazo concreto",
+        "Garantía de resultados"
+      ],
+      "verticals": [
+        "Salud y clínicas",
+        "Abogados",
+        "Restauración"
+      ],
+      "firstStartDateObserved": "2026-05-04",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "odental-agency",
+        "confidence": "medium",
+        "note": "Identidad publicitaria exacta. Se publica como actor internacional/LatAm y no como empresa española."
+      }
+    },
+    {
+      "rank": 14,
+      "pageId": "350328218908184",
+      "pageName": "Fotocasa Pro",
+      "observedActiveAds": 6,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 11738,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Garantía de resultados",
+        "Exclusividad de zona"
+      ],
+      "verticals": [
+        "Inmobiliaria"
+      ],
+      "firstStartDateObserved": "2026-07-30",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "matched",
+        "companyId": "fotocasa-pro",
+        "confidence": "high",
+        "note": "Genera contactos para inmobiliarias, pero el modelo observado es portal/plataforma de visibilidad y gestión, no agencia ni venta directa de leads bajo encargo."
+      }
+    },
+    {
+      "rank": 15,
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "observedActiveAds": 6,
+      "detailedCreatives": 6,
+      "pageLikesObserved": 22,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [
+        1500
+      ],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-06-24",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "german-ruperez",
+        "confidence": "medium",
+        "note": "Identidad exacta por Page ID; oferta de sistemas y formación de generación/seguimiento de leads."
+      }
+    },
+    {
+      "rank": 16,
+      "pageId": "106470725425396",
+      "pageName": "Agenciap",
+      "observedActiveAds": 6,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 312,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Seguros",
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-08-08",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "agenciap",
+        "confidence": "high",
+        "note": "Ficha huérfana existente; página exacta y agencia-p.es/agencia-p.com."
+      }
+    },
+    {
+      "rank": 17,
+      "pageId": "246855511833552",
+      "pageName": "ICall For You",
+      "observedActiveAds": 6,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 178,
+      "categoryCode": "callcenter",
+      "category": "Call center y citas",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-05-01",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "matched",
+        "companyId": "icall-for-you",
+        "confidence": "high",
+        "note": "Servicio italiano B2B de appointment setting y cualificación, confirmado por web oficial."
+      }
+    },
+    {
+      "rank": 18,
+      "pageId": "185130644919625",
+      "pageName": "Meta for Business",
+      "observedActiveAds": 5,
+      "detailedCreatives": 2,
+      "pageLikesObserved": 20431357,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-06-23",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "quarantine",
+        "companyId": null,
+        "confidence": "high",
+        "note": "Meta for Business es plataforma/ecosistema, no proveedor competidor de leads."
+      }
+    },
+    {
+      "rank": 19,
+      "pageId": "101121952080959",
+      "pageName": "PACS - La Aceleradora B2B",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 1362,
+      "categoryCode": "software",
+      "category": "Software e IA",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-05-19",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "pacs-la-aceleradora-b2b",
+        "confidence": "high",
+        "note": "Aceleradora argentina de prospección y reuniones B2B, confirmada por web oficial."
+      }
+    },
+    {
+      "rank": 20,
+      "pageId": "104365698370278",
+      "pageName": "Airos Agency",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 264,
+      "categoryCode": "agencia",
+      "category": "Agencia de anuncios",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Abogados",
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2025-03-19",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "airos-agency",
+        "confidence": "high",
+        "note": "Agencia española de captación para despachos de abogados, confirmada por web oficial."
+      }
+    },
+    {
+      "rank": 21,
+      "pageId": "445529558639653",
+      "pageName": "Pablo Valverde Business",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 30,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [
+        100000
+      ],
+      "guarantees": [
+        "Pago por resultados",
+        "Exclusividad de zona"
+      ],
+      "verticals": [
+        "Inmobiliaria",
+        "Restauración"
+      ],
+      "firstStartDateObserved": "2026-08-22",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "real-estate-rocket",
+        "confidence": "high",
+        "note": "Página personal, dominio y oferta ya consolidados en la ficha Real Estate Rocket."
+      }
+    },
+    {
+      "rank": 22,
+      "pageId": "1221634917700764",
+      "pageName": "Veltavia",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 28,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [
+        10
+      ],
+      "guarantees": [
+        "Exclusividad de zona"
+      ],
+      "verticals": [
+        "Reformas",
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-08-10",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "veltavia",
+        "confidence": "high",
+        "note": "Nombre y dominio coinciden."
+      }
+    },
+    {
+      "rank": 23,
+      "pageId": "645321401991219",
+      "pageName": "Escala con Anuncios",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 62,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Salud y clínicas",
+        "Reformas",
+        "Automoción"
+      ],
+      "firstStartDateObserved": "2026-07-30",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "escala-con-anuncios",
+        "confidence": "high",
+        "note": "Marca y dominio coinciden con la ficha existente."
+      }
+    },
+    {
+      "rank": 24,
+      "pageId": "448215355034775",
+      "pageName": "Fonio.ai",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 2635,
+      "categoryCode": "software",
+      "category": "Software e IA",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-06-24",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "matched",
+        "companyId": "fonio-ai",
+        "confidence": "high",
+        "note": "SaaS austríaco de asistente telefónico IA con versión española, identidad y dominio confirmados."
+      }
+    },
+    {
+      "rank": 25,
+      "pageId": "685178108002598",
+      "pageName": "Clinic Wise",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 10,
+      "categoryCode": "software",
+      "category": "Software e IA",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Salud y clínicas"
+      ],
+      "firstStartDateObserved": "2025-10-14",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "matched",
+        "companyId": "clinic-wise",
+        "confidence": "medium",
+        "note": "Identidad exacta por Page ID y oferta coherente en cuatro creatividades; sede y dominio concreto no confirmados."
+      }
+    },
+    {
+      "rank": 26,
+      "pageId": "338429670215715",
+      "pageName": "Consultoria.io",
+      "observedActiveAds": 4,
+      "detailedCreatives": 4,
+      "pageLikesObserved": 3817,
+      "categoryCode": "agencia",
+      "category": "Agencia de anuncios",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Pago por resultados",
+        "Plazo concreto"
+      ],
+      "verticals": [
+        "Ecommerce"
+      ],
+      "firstStartDateObserved": "2026-06-24",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "matched",
+        "companyId": "consultoria-io",
+        "confidence": "high",
+        "note": "Dominio consultoria.io incluido literalmente en el copy y oferta coherente con la web oficial."
+      }
+    },
+    {
+      "rank": 27,
+      "pageId": "303141819810769",
+      "pageName": "Raiola Networks",
+      "observedActiveAds": 3,
+      "detailedCreatives": 3,
+      "pageLikesObserved": 10056,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [],
+      "firstStartDateObserved": "2026-04-16",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "high",
+        "note": "Raiola Networks anuncia formación n8n/IA general; evidencia conservada, relevancia competitiva baja."
+      }
+    },
+    {
+      "rank": 28,
+      "pageId": "1085107841343598",
+      "pageName": "Visionarius AI",
+      "observedActiveAds": 3,
+      "detailedCreatives": 3,
+      "pageLikesObserved": 36,
+      "categoryCode": "software",
+      "category": "Software e IA",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Inmobiliaria",
+        "Reformas"
+      ],
+      "firstStartDateObserved": "2026-07-19",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "visionarius-ai",
+        "confidence": "high",
+        "note": "IA de cualificación y agenda para inmobiliarias; identidad y landing vertical confirmadas."
+      }
+    },
+    {
+      "rank": 29,
+      "pageId": "1098383993357983",
+      "pageName": "LeadFluence Academy",
+      "observedActiveAds": 3,
+      "detailedCreatives": 3,
+      "pageLikesObserved": 100,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [
+        19,
+        5000
+      ],
+      "guarantees": [
+        "Sin permanencia",
+        "Exclusividad de zona"
+      ],
+      "verticals": [
+        "Ecommerce"
+      ],
+      "firstStartDateObserved": "2026-07-29",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "leadfluence-academy",
+        "confidence": "high",
+        "note": "Academia de la agencia española LeadFluence; actor adyacente de paid media/CRO para ecommerce."
+      }
+    },
+    {
+      "rank": 30,
+      "pageId": "226282297242864",
+      "pageName": "Marcos Pascual",
+      "observedActiveAds": 3,
+      "detailedCreatives": 3,
+      "pageLikesObserved": 12,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Garantía de resultados",
+        "Plazo concreto"
+      ],
+      "verticals": [],
+      "firstStartDateObserved": "2026-07-31",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "medium",
+        "note": "Marcos Pascual ofrece posicionamiento/captación, pero el mercado y la entidad necesitan revisión adicional."
+      }
+    },
+    {
+      "rank": 31,
+      "pageId": "710431798818748",
+      "pageName": "B9 Studios",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 9,
+      "categoryCode": "agencia",
+      "category": "Agencia de anuncios",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [],
+      "firstStartDateObserved": "2026-06-12",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "medium",
+        "note": "B9 Studios figura con tres anuncios, pero el HTML no entrega ninguna creatividad detallada."
+      }
+    },
+    {
+      "rank": 32,
+      "pageId": "708527609017301",
+      "pageName": "Dejalia - Secretaria 24/7",
+      "observedActiveAds": 3,
+      "detailedCreatives": 1,
+      "pageLikesObserved": 33,
+      "categoryCode": "callcenter",
+      "category": "Call center y citas",
+      "pricesEurMentioned": [
+        400
+      ],
+      "guarantees": [
+        "Sin permanencia",
+        "Plazo concreto",
+        "Garantía de resultados"
+      ],
+      "verticals": [
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2025-11-27",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "matched",
+        "companyId": "dejalia-secretaria-24-7",
+        "confidence": "high",
+        "note": "Marca española Dejalia y producto de secretaría IA 24/7 confirmados por web y aviso legal."
+      }
+    },
+    {
+      "rank": 33,
+      "pageId": "102738562801794",
+      "pageName": "Yo Pago Menos",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 12391,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Abogados",
+        "Reformas"
+      ],
+      "firstStartDateObserved": "2026-07-30",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "quarantine",
+        "companyId": null,
+        "confidence": "medium",
+        "note": "Yo Pago Menos no aporta creatividad ni oferta suficiente para sostener la clasificación de proveedor."
+      }
+    },
+    {
+      "rank": 34,
+      "pageId": "161316727236094",
+      "pageName": "MGS Seguros",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 54283,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [
+        "Seguros",
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2025-12-22",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "quarantine",
+        "companyId": null,
+        "confidence": "high",
+        "note": "MGS Seguros es anunciante final."
+      }
+    },
+    {
+      "rank": 35,
+      "pageId": "101645039004905",
+      "pageName": "Leo Nabel",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 307981,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Garantía de resultados"
+      ],
+      "verticals": [
+        "Reformas",
+        "Automoción"
+      ],
+      "firstStartDateObserved": "2026-08-10",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "low",
+        "note": "Leo Nabel no tiene creatividad detallada en el HTML."
+      }
+    },
+    {
+      "rank": 36,
+      "pageId": "1743338852392072",
+      "pageName": "IMMUNE Technology Institute",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 4803,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [],
+      "firstStartDateObserved": "2026-08-18",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "quarantine",
+        "companyId": null,
+        "confidence": "high",
+        "note": "IMMUNE Technology Institute es formación tecnológica general, no proveedor de captación."
+      }
+    },
+    {
+      "rank": 37,
+      "pageId": "702826622915817",
+      "pageName": "Orangutan.ia",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 1627,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Garantía de resultados",
+        "Plazo concreto"
+      ],
+      "verticals": [
+        "Reformas",
+        "Automoción",
+        "B2B genérico"
+      ],
+      "firstStartDateObserved": "2026-08-17",
+      "leadingFormat": "Catálogo dinámico",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "low",
+        "note": "Orangutan.ia no tiene creatividad detallada en el HTML."
+      }
+    },
+    {
+      "rank": 38,
+      "pageId": "1033626519834813",
+      "pageName": "Marketing 360",
+      "observedActiveAds": 3,
+      "detailedCreatives": 3,
+      "pageLikesObserved": 2,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [
+        20000
+      ],
+      "guarantees": [
+        "Garantía de resultados",
+        "Pago por resultados",
+        "Plazo concreto"
+      ],
+      "verticals": [
+        "Salud y clínicas"
+      ],
+      "firstStartDateObserved": "2026-08-14",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "matched",
+        "companyId": "marketing-360-embudo-ia",
+        "confidence": "medium",
+        "note": "Page ID exacta y tres creatividades coherentes; nombre genérico, por eso la ficha mantiene cautela y no inventa dominio."
+      }
+    },
+    {
+      "rank": 39,
+      "pageId": "1068937232970750",
+      "pageName": "Pletoric Media",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 1,
+      "categoryCode": "leads",
+      "category": "Venta de leads",
+      "pricesEurMentioned": [],
+      "guarantees": [
+        "Plazo concreto"
+      ],
+      "verticals": [],
+      "firstStartDateObserved": "2026-07-29",
+      "leadingFormat": "Imagen",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "medium",
+        "note": "Pletoric Media figura como venta de leads, pero el HTML no entrega copy ni creatividad detallada."
+      }
+    },
+    {
+      "rank": 40,
+      "pageId": "100778399482041",
+      "pageName": "Jesus Tassarolo - Publicista Digital",
+      "observedActiveAds": 3,
+      "detailedCreatives": 0,
+      "pageLikesObserved": 16726,
+      "categoryCode": "formacion",
+      "category": "Formación y mentoría",
+      "pricesEurMentioned": [],
+      "guarantees": [],
+      "verticals": [],
+      "firstStartDateObserved": "2025-10-29",
+      "leadingFormat": "Vídeo",
+      "review": {
+        "status": "watchlist",
+        "companyId": null,
+        "confidence": "low",
+        "note": "Jesus Tassarolo figura en formación, sin creatividad detallada en el HTML."
+      }
+    }
+  ],
+  "cloneClusters": [
+    {
+      "id": "clone-1",
+      "signature": "solo durante agosto puedes probar gratis el software con ia que llena tu empresa",
+      "pages": [
+        "20minutos.es",
+        "Business Insider España",
+        "Euronews Español",
+        "lainformacion.com"
+      ],
+      "pageCount": 4,
+      "adCount": 4,
+      "listedExternalIdCount": 4,
+      "countConsistent": true,
+      "example": "Solo durante agosto puedes probar gratis el software con IA que llena tu empresa de placas solares de clientes cualificados. El 31 de agosto se cierra la demo gratuita. Pide tu demo hoy.",
+      "title": "Clientes garantizados · demo gratis en agosto",
+      "externalIds": [
+        "1426244552723061",
+        "1412620944121366",
+        "882582881390358",
+        "27770843875941905"
+      ]
+    },
+    {
+      "id": "clone-2",
+      "signature": "atencion propietarios en valencia y alrededores que quieren vender su propiedad rapido y al",
+      "pages": [
+        "ELIÁN Gestión Inmobiliaria",
+        "Perlas Inmobiliarias Valencia",
+        "Tecnocasa - Estudio Olivereta 37, S.L."
+      ],
+      "pageCount": 3,
+      "adCount": 6,
+      "listedExternalIdCount": 6,
+      "countConsistent": true,
+      "example": "Atención, Propietarios en Valencia y Alrededores que Quieren Vender su Propiedad Rápido y al Mejor Precio\n\nMira.\n\nAl igual que tú, estoy harto de ver inmobiliarias haciendo promesas vacías como:\n\n\"Tenemos cientos de compradores esperando.\"\n\nO...\n\n\"Vendelo por",
+      "title": "Vende Tu Propiedad En Valencia y Alrededores. Fin.",
+      "externalIds": [
+        "1060140636498776",
+        "28198510893090152",
+        "2007030790204329",
+        "985716267274980",
+        "1490378099539086",
+        "980993441243022"
+      ]
+    },
+    {
+      "id": "clone-3",
+      "signature": "duplica tu facturacion o no pagas solo para agencias que facturan mas de solo",
+      "pages": [
+        "Pablo Valverde Business",
+        "Real Estate Rocket"
+      ],
+      "pageCount": 2,
+      "adCount": 14,
+      "listedExternalIdCount": 12,
+      "countConsistent": false,
+      "example": "Duplica Tu Facturación O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción.\n\nEsto es un sistema privado y de élite para dueños de agencia inmobiliaria de 40 y 50 años que ya facturan más de 100.000€ al año, están acostumbrado",
+      "title": "Duplica tu facturación o no pagas",
+      "externalIds": [
+        "1067167012518418",
+        "1056163916756708",
+        "2191626281395111",
+        "1346924867571054",
+        "1578792937272432",
+        "1742052180331135",
+        "2173580313199402",
+        "1583623156490544",
+        "953143671139485",
+        "986604130860932",
+        "1100589872913777",
+        "961566303572884"
+      ]
+    },
+    {
+      "id": "clone-4",
+      "signature": "la compania mas recomendada por los clientes segun la encuesta nps de grupo axa",
+      "pages": [
+        "AXA HacHe seguros",
+        "Agencia Novo AXA"
+      ],
+      "pageCount": 2,
+      "adCount": 5,
+      "listedExternalIdCount": 5,
+      "countConsistent": true,
+      "example": "🩺 La compañía más recomendada por los CLIENTES según la encuesta NPS de Grupo AXA (2023).\n\n✨ El seguro de vida de AXA va mucho más allá de una simple protección futura. Mientras cuidas de quienes más quieres, también puedes aprovechar beneficios pensados para",
+      "title": "MÁS VIDA, MÁS AHORRO",
+      "externalIds": [
+        "1037180179174186",
+        "2913231525678904",
+        "4089287521202555",
+        "866768213094589",
+        "1983740695665569"
+      ]
+    }
+  ],
+  "creativeIndex": [
+    {
+      "externalId": "2913231525678904",
+      "pageId": "876182302237657",
+      "pageName": "Agencia Novo AXA",
+      "category": "Agencia de anuncios",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2913231525678904.jpg",
+      "copyBodySha256": "fd3fab15f8a88c845ec6014e3c1c631cbad67c9f7c1c2f6dc1ccdeed41e0ea1a",
+      "imageSha256": "cc2fbfc429ec13d84aec7dd3af6b8077433c637f951b0c0022836edc2c8a3147",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2913231525678904"
+    },
+    {
+      "externalId": "688609243831523",
+      "pageId": "104365698370278",
+      "pageName": "Airos Agency",
+      "category": "Agencia de anuncios",
+      "format": "Multi-vídeo",
+      "image": "/media/lead-market-meta-688609243831523.jpg",
+      "copyBodySha256": "9dbe29ca1cd1d0a4dcc54e575ec61fd0288cfa7b2b899150bc52916450126d12",
+      "imageSha256": "eb2abf7db9803e84757249851431a28c5e7dbe93bfd623f992b240ed1523455e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=688609243831523"
+    },
+    {
+      "externalId": "1124448326115336",
+      "pageId": "104365698370278",
+      "pageName": "Airos Agency",
+      "category": "Agencia de anuncios",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1124448326115336.jpg",
+      "copyBodySha256": "9dbe29ca1cd1d0a4dcc54e575ec61fd0288cfa7b2b899150bc52916450126d12",
+      "imageSha256": "14086bdcd3f83faaa88b8b5aa8454ed0451038cb717dc3a22934a05952c34399",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1124448326115336"
+    },
+    {
+      "externalId": "689737376794276",
+      "pageId": "104365698370278",
+      "pageName": "Airos Agency",
+      "category": "Agencia de anuncios",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-689737376794276.jpg",
+      "copyBodySha256": "9dbe29ca1cd1d0a4dcc54e575ec61fd0288cfa7b2b899150bc52916450126d12",
+      "imageSha256": "294b9d76955503301e51c1b54f66f4fa233474161a323c5d6b69f0f8c2ffd46f",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=689737376794276"
+    },
+    {
+      "externalId": "667582109456105",
+      "pageId": "104365698370278",
+      "pageName": "Airos Agency",
+      "category": "Agencia de anuncios",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-667582109456105.jpg",
+      "copyBodySha256": "9dbe29ca1cd1d0a4dcc54e575ec61fd0288cfa7b2b899150bc52916450126d12",
+      "imageSha256": "98c56278493c31e2d4b5303b2d0f5d3b9286954e08dc1311d22884d8d30c6172",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=667582109456105"
+    },
+    {
+      "externalId": "1531490838465063",
+      "pageId": "338429670215715",
+      "pageName": "Consultoria.io",
+      "category": "Agencia de anuncios",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1531490838465063.jpg",
+      "copyBodySha256": "4299f235ce903ea4eadc66ac3cc715e0e36a79bb66eb0143a5e93a9f6844e39f",
+      "imageSha256": "930b04b4b0868db44440565b5d498cb66f3d83513d21d8c7cf51b6f323c25652",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1531490838465063"
+    },
+    {
+      "externalId": "1019824707264875",
+      "pageId": "338429670215715",
+      "pageName": "Consultoria.io",
+      "category": "Agencia de anuncios",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1019824707264875.jpg",
+      "copyBodySha256": "4299f235ce903ea4eadc66ac3cc715e0e36a79bb66eb0143a5e93a9f6844e39f",
+      "imageSha256": "9d85d414f0d29caa92b2e000a63e9db78cc85c0f6dc2ed8ef4a273dbbdd6b6d7",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1019824707264875"
+    },
+    {
+      "externalId": "4711186659167703",
+      "pageId": "338429670215715",
+      "pageName": "Consultoria.io",
+      "category": "Agencia de anuncios",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-4711186659167703.jpg",
+      "copyBodySha256": "4299f235ce903ea4eadc66ac3cc715e0e36a79bb66eb0143a5e93a9f6844e39f",
+      "imageSha256": "40f07b590036c81c44fc7075a1de58a98bc48f15fef10e368160a02f21f4aca6",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4711186659167703"
+    },
+    {
+      "externalId": "1357048216378334",
+      "pageId": "338429670215715",
+      "pageName": "Consultoria.io",
+      "category": "Agencia de anuncios",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1357048216378334.jpg",
+      "copyBodySha256": "4299f235ce903ea4eadc66ac3cc715e0e36a79bb66eb0143a5e93a9f6844e39f",
+      "imageSha256": "e2a54613377b830c3ad0aced7b109fe1a8832680efc11977808f30ecfa678ef2",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1357048216378334"
+    },
+    {
+      "externalId": "1510528410762637",
+      "pageId": "103454422572766",
+      "pageName": "Fabian Piquer Barbera",
+      "category": "Agencia de anuncios",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1510528410762637.jpg",
+      "copyBodySha256": "85976167089dac05edcb1c13c686244191f562ac9fd19df8978b0620ea69c816",
+      "imageSha256": "30eaf0da95510a129821010569d266c43121bcc9ae7428463668b5ee15adfae0",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1510528410762637"
+    },
+    {
+      "externalId": "1635215147537076",
+      "pageId": "405497982637871",
+      "pageName": "Odental Agency",
+      "category": "Agencia de anuncios",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1635215147537076.jpg",
+      "copyBodySha256": "45ed004d564a169334d197961461b3081888f0037b631141795c2f672d39ce8b",
+      "imageSha256": "947f43641410793ac024803bc00fb6b57fab19ad79c3d22df01bbf8ad5817af0",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1635215147537076"
+    },
+    {
+      "externalId": "911388418250734",
+      "pageId": "445529558639653",
+      "pageName": "Pablo Valverde Business",
+      "category": "Agencia de anuncios",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-911388418250734.jpg",
+      "copyBodySha256": "0a3c7bc269cebf2700bbd74eca917c3bf112d9bf0e9e3a90f08c6bc5e27a9cf6",
+      "imageSha256": "d8f1aafe273c31969c5c2b86ab253e760632ef7c932b808e42e685dc9adff68c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=911388418250734"
+    },
+    {
+      "externalId": "1748414716364402",
+      "pageId": "1127620933767528",
+      "pageName": "Siweb 360",
+      "category": "Agencia de anuncios",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1748414716364402.jpg",
+      "copyBodySha256": "92117a8fabf6cc3b0376cba380b0ba06c2c065bfbeeecb4c82b02e93ca63fde8",
+      "imageSha256": "e1b5a4b1ac6b7399326c14fb2a062ba5c8b180cf6d30667ecabd2a24f5f5232e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1748414716364402"
+    },
+    {
+      "externalId": "1037180179174186",
+      "pageId": "942413362482940",
+      "pageName": "AXA HacHe seguros",
+      "category": "Anunciante final",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1037180179174186.jpg",
+      "copyBodySha256": "60df0f8e91ed65d5d16df9a2fa1c9f6ae1490018dca957262e062c38b041e8ef",
+      "imageSha256": "f39dcf0192aa4634db9438d345c8ecc0844b79b932512e8ff3b38cf80ee068be",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1037180179174186"
+    },
+    {
+      "externalId": "4089287521202555",
+      "pageId": "942413362482940",
+      "pageName": "AXA HacHe seguros",
+      "category": "Anunciante final",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-4089287521202555.jpg",
+      "copyBodySha256": "60df0f8e91ed65d5d16df9a2fa1c9f6ae1490018dca957262e062c38b041e8ef",
+      "imageSha256": "5417d4772646937b564939384a43b7b9b1ecde182c1b110f6cdd7c499463677c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4089287521202555"
+    },
+    {
+      "externalId": "866768213094589",
+      "pageId": "942413362482940",
+      "pageName": "AXA HacHe seguros",
+      "category": "Anunciante final",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-866768213094589.jpg",
+      "copyBodySha256": "60df0f8e91ed65d5d16df9a2fa1c9f6ae1490018dca957262e062c38b041e8ef",
+      "imageSha256": "fdabf2575574ae31405cba650c5e5cb93dc516b566c750a41fdc30db56fa2feb",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=866768213094589"
+    },
+    {
+      "externalId": "1983740695665569",
+      "pageId": "942413362482940",
+      "pageName": "AXA HacHe seguros",
+      "category": "Anunciante final",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1983740695665569.jpg",
+      "copyBodySha256": "60df0f8e91ed65d5d16df9a2fa1c9f6ae1490018dca957262e062c38b041e8ef",
+      "imageSha256": "c9891bb369d02fec9b461b95ac6dfe2b0bf205031082a44c688e06cf29f729f7",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1983740695665569"
+    },
+    {
+      "externalId": "28198510893090152",
+      "pageId": "1104577372737758",
+      "pageName": "ELIÁN Gestión Inmobiliaria",
+      "category": "Anunciante final",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-28198510893090152.jpg",
+      "copyBodySha256": "e11cf329f9d171b5de79f71abf1efec0576536c64e74528ace099d6e3356d3ba",
+      "imageSha256": "b1f3d1005efdef0510634d16212fa26bc746d7d6b7cf2a675935a4c34e571679",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=28198510893090152"
+    },
+    {
+      "externalId": "2007030790204329",
+      "pageId": "1064735466731696",
+      "pageName": "Perlas Inmobiliarias Valencia",
+      "category": "Anunciante final",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-2007030790204329.jpg",
+      "copyBodySha256": "ad4927b4c9370a208a6086fc7a5b6e36a027b94a4ddfe156c728813bca9f1855",
+      "imageSha256": "97897e60d5f111a63d4b9139450d20308e473c6602e5090972184149d70d25e2",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2007030790204329"
+    },
+    {
+      "externalId": "985716267274980",
+      "pageId": "1064735466731696",
+      "pageName": "Perlas Inmobiliarias Valencia",
+      "category": "Anunciante final",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-985716267274980.jpg",
+      "copyBodySha256": "ad4927b4c9370a208a6086fc7a5b6e36a027b94a4ddfe156c728813bca9f1855",
+      "imageSha256": "1c906346ba3dde1b91a1448fece7f88e41eb180c5a95204417aaecf1a2f80ffd",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=985716267274980"
+    },
+    {
+      "externalId": "1490378099539086",
+      "pageId": "1064735466731696",
+      "pageName": "Perlas Inmobiliarias Valencia",
+      "category": "Anunciante final",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1490378099539086.jpg",
+      "copyBodySha256": "ad4927b4c9370a208a6086fc7a5b6e36a027b94a4ddfe156c728813bca9f1855",
+      "imageSha256": "b3d2841f5811a04b7bb55c5b72526d0ed677c97c854fa640024242324880e807",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1490378099539086"
+    },
+    {
+      "externalId": "980993441243022",
+      "pageId": "1064735466731696",
+      "pageName": "Perlas Inmobiliarias Valencia",
+      "category": "Anunciante final",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-980993441243022.jpg",
+      "copyBodySha256": "ad4927b4c9370a208a6086fc7a5b6e36a027b94a4ddfe156c728813bca9f1855",
+      "imageSha256": "dc3c666d53eeb3c04d0aa5a7fe4d4d4edf1a72331f0c6ce91fe57ded8d1ad307",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=980993441243022"
+    },
+    {
+      "externalId": "1060140636498776",
+      "pageId": "243499079112666",
+      "pageName": "Tecnocasa - Estudio Olivereta 37, S.L.",
+      "category": "Anunciante final",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1060140636498776.jpg",
+      "copyBodySha256": "ad4927b4c9370a208a6086fc7a5b6e36a027b94a4ddfe156c728813bca9f1855",
+      "imageSha256": "5873c9e18b32b9fd0fdcc69b8c9ff111d54203ab9771bd5beaa790b2bb7aa466",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1060140636498776"
+    },
+    {
+      "externalId": "1144969651132815",
+      "pageId": "708527609017301",
+      "pageName": "Dejalia - Secretaria 24/7",
+      "category": "Call center y citas",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1144969651132815.jpg",
+      "copyBodySha256": "dc24b40fbe4aa524744a94eee9224e0479ed1237edd1077674281d702003445d",
+      "imageSha256": "d92a2315bf6e812d1b84759d338fc2173d450f3b300c7ffeede6b428040abb76",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1144969651132815"
+    },
+    {
+      "externalId": "1479684593605358",
+      "pageId": "246855511833552",
+      "pageName": "ICall For You",
+      "category": "Call center y citas",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1479684593605358.jpg",
+      "copyBodySha256": "84a93cb889f00a7ca116597d8f9c2f50b8e1e33e144ed5151fd7361740da15e9",
+      "imageSha256": "2b8445d8352fec71718c7b818fb9f7fa15c2a1361d64e8c083404829d0921f14",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1479684593605358"
+    },
+    {
+      "externalId": "4447867795433735",
+      "pageId": "246855511833552",
+      "pageName": "ICall For You",
+      "category": "Call center y citas",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-4447867795433735.jpg",
+      "copyBodySha256": "84a93cb889f00a7ca116597d8f9c2f50b8e1e33e144ed5151fd7361740da15e9",
+      "imageSha256": "8c6b7f17fd9b7bd47aff260ddf66be9f96dcc7cbcdb3100e798a54a72041f78f",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4447867795433735"
+    },
+    {
+      "externalId": "26587252290966314",
+      "pageId": "246855511833552",
+      "pageName": "ICall For You",
+      "category": "Call center y citas",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-26587252290966314.jpg",
+      "copyBodySha256": "84a93cb889f00a7ca116597d8f9c2f50b8e1e33e144ed5151fd7361740da15e9",
+      "imageSha256": "c964b308c62db650c5c77a76a2a397f2ac527499eb8347d00b8ed4f682355de8",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=26587252290966314"
+    },
+    {
+      "externalId": "1704585567525122",
+      "pageId": "246855511833552",
+      "pageName": "ICall For You",
+      "category": "Call center y citas",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1704585567525122.jpg",
+      "copyBodySha256": "84a93cb889f00a7ca116597d8f9c2f50b8e1e33e144ed5151fd7361740da15e9",
+      "imageSha256": "f4e3450c80330082995ae75486464038129add971cbcfcf64a0879870aa01b59",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1704585567525122"
+    },
+    {
+      "externalId": "3024099187779619",
+      "pageId": "154732644379106",
+      "pageName": "Vip-appointment-setting",
+      "category": "Call center y citas",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-3024099187779619.jpg",
+      "copyBodySha256": "40565c9e22b2f118eaee8aecff9f5043e2cfea6dcbf6e87623cba15dddee9868",
+      "imageSha256": "5e145d65a0ebf6985494671afebc21bacf9568d0718c888d68cdd4d06a0295b6",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=3024099187779619"
+    },
+    {
+      "externalId": "1761165105228301",
+      "pageId": "154732644379106",
+      "pageName": "Vip-appointment-setting",
+      "category": "Call center y citas",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1761165105228301.jpg",
+      "copyBodySha256": "40565c9e22b2f118eaee8aecff9f5043e2cfea6dcbf6e87623cba15dddee9868",
+      "imageSha256": "bfa6f25c3fa511fdf8d72da20aaf4361939cac00993275f1a8eff098ad411fae",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1761165105228301"
+    },
+    {
+      "externalId": "1042101711642558",
+      "pageId": "154732644379106",
+      "pageName": "Vip-appointment-setting",
+      "category": "Call center y citas",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1042101711642558.jpg",
+      "copyBodySha256": "40565c9e22b2f118eaee8aecff9f5043e2cfea6dcbf6e87623cba15dddee9868",
+      "imageSha256": "07f5be1f402b8182f4de08c0abe614a95e485f3707b21ba56e0b7880962fadd9",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1042101711642558"
+    },
+    {
+      "externalId": "1324021363094882",
+      "pageId": "154732644379106",
+      "pageName": "Vip-appointment-setting",
+      "category": "Call center y citas",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1324021363094882.jpg",
+      "copyBodySha256": "40565c9e22b2f118eaee8aecff9f5043e2cfea6dcbf6e87623cba15dddee9868",
+      "imageSha256": "8c6598126b087f38e9f604c24690df81e8adf0c2fe05b5ce056c6e54544edf93",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1324021363094882"
+    },
+    {
+      "externalId": "1508070874338539",
+      "pageId": "106470725425396",
+      "pageName": "Agenciap",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1508070874338539.jpg",
+      "copyBodySha256": "2076df79a547cfff72f3d73d7b6115242d78dae2c5b693eca5a006897b954529",
+      "imageSha256": "a151cc97075e26ba0a59eef02f87c1025bb08829f58f91e60c353d98dc5eba7e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1508070874338539"
+    },
+    {
+      "externalId": "2100077874270095",
+      "pageId": "106470725425396",
+      "pageName": "Agenciap",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2100077874270095.jpg",
+      "copyBodySha256": "2076df79a547cfff72f3d73d7b6115242d78dae2c5b693eca5a006897b954529",
+      "imageSha256": "1ce37e5163fcaef81bcd78055811a9f56256793a35a5f2a38a662d90ccaef7ae",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2100077874270095"
+    },
+    {
+      "externalId": "1589699319375610",
+      "pageId": "106470725425396",
+      "pageName": "Agenciap",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1589699319375610.jpg",
+      "copyBodySha256": "2076df79a547cfff72f3d73d7b6115242d78dae2c5b693eca5a006897b954529",
+      "imageSha256": "2e31f13dfb51682a92636432f56070edba9faa8311ea68c65efd1c2efd2bfa80",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1589699319375610"
+    },
+    {
+      "externalId": "3446746765533979",
+      "pageId": "106470725425396",
+      "pageName": "Agenciap",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-3446746765533979.jpg",
+      "copyBodySha256": "d4cfea54eeaa1a38ba79818f87850ae46c1504c5908a7f262bbd89e6949c1ed0",
+      "imageSha256": "e3f269143e8bdc5ebd44e339f41c14c88b03df265d98618cc2e5c3f49fab6255",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=3446746765533979"
+    },
+    {
+      "externalId": "1625043475912487",
+      "pageId": "110225934009812",
+      "pageName": "Artydents Clinicas Dentales",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1625043475912487.jpg",
+      "copyBodySha256": "a31a6f6ed96345f0cad776f08967e6034fde9b031a56902e4fabf54c979edbd6",
+      "imageSha256": "1a7b191d9eeb13428aaeb6f246acd86a5970236385d5ec9f0bb4f2844c787321",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1625043475912487"
+    },
+    {
+      "externalId": "3735740306576382",
+      "pageId": "103943539390549",
+      "pageName": "Bastida&Farina",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-3735740306576382.jpg",
+      "copyBodySha256": "22cc4767aae3676ed6d91d80d477d87724fbc5830027f362a5fccbcab6360376",
+      "imageSha256": "4b645a17fe17510995cf867a2a0ddbe1c4589fa0af9b6d36f836677f6376e650",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=3735740306576382"
+    },
+    {
+      "externalId": "4129207057213380",
+      "pageId": "103943539390549",
+      "pageName": "Bastida&Farina",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-4129207057213380.jpg",
+      "copyBodySha256": "22cc4767aae3676ed6d91d80d477d87724fbc5830027f362a5fccbcab6360376",
+      "imageSha256": "4b645a17fe17510995cf867a2a0ddbe1c4589fa0af9b6d36f836677f6376e650",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4129207057213380"
+    },
+    {
+      "externalId": "1241899461224737",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1241899461224737.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "99eee6dab78295f82d26c878c55f2e16ea3a3d3711607da00cd4540d6d71007e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1241899461224737"
+    },
+    {
+      "externalId": "1358059842853682",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1358059842853682.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "99eee6dab78295f82d26c878c55f2e16ea3a3d3711607da00cd4540d6d71007e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1358059842853682"
+    },
+    {
+      "externalId": "862301630276828",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-862301630276828.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "99eee6dab78295f82d26c878c55f2e16ea3a3d3711607da00cd4540d6d71007e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=862301630276828"
+    },
+    {
+      "externalId": "3028184720720695",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-3028184720720695.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "a63e1d3a9589d1e1e0205ded451ddbd3119d7924df93715478646fec07284d8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=3028184720720695"
+    },
+    {
+      "externalId": "1554461929627451",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1554461929627451.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "a63e1d3a9589d1e1e0205ded451ddbd3119d7924df93715478646fec07284d8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1554461929627451"
+    },
+    {
+      "externalId": "1407160601294262",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1407160601294262.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "a63e1d3a9589d1e1e0205ded451ddbd3119d7924df93715478646fec07284d8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1407160601294262"
+    },
+    {
+      "externalId": "1365707665745417",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1365707665745417.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "a63e1d3a9589d1e1e0205ded451ddbd3119d7924df93715478646fec07284d8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1365707665745417"
+    },
+    {
+      "externalId": "2033336533946342",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2033336533946342.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "a63e1d3a9589d1e1e0205ded451ddbd3119d7924df93715478646fec07284d8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2033336533946342"
+    },
+    {
+      "externalId": "1537945797719841",
+      "pageId": "645814835280075",
+      "pageName": "Car Import Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1537945797719841.jpg",
+      "copyBodySha256": "bc1fbf6b8fa835787d808c9d2522d361135bb8d059db02cb233783192ad5e822",
+      "imageSha256": "a63e1d3a9589d1e1e0205ded451ddbd3119d7924df93715478646fec07284d8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1537945797719841"
+    },
+    {
+      "externalId": "1297016300154552",
+      "pageId": "645321401991219",
+      "pageName": "Escala con Anuncios",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1297016300154552.jpg",
+      "copyBodySha256": "480c96954b9bf8fc7f3b615ed61ea0bc018a5c9112ce3d6c4786e6191a9a34fa",
+      "imageSha256": "4735695d85d5f04d3ea7a51c4d2f6184b4c0e91297f2ec99041c4d9792b1a3a5",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1297016300154552"
+    },
+    {
+      "externalId": "1089972866930277",
+      "pageId": "645321401991219",
+      "pageName": "Escala con Anuncios",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1089972866930277.jpg",
+      "copyBodySha256": "480c96954b9bf8fc7f3b615ed61ea0bc018a5c9112ce3d6c4786e6191a9a34fa",
+      "imageSha256": "4735695d85d5f04d3ea7a51c4d2f6184b4c0e91297f2ec99041c4d9792b1a3a5",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1089972866930277"
+    },
+    {
+      "externalId": "4430234480591279",
+      "pageId": "645321401991219",
+      "pageName": "Escala con Anuncios",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-4430234480591279.jpg",
+      "copyBodySha256": "480c96954b9bf8fc7f3b615ed61ea0bc018a5c9112ce3d6c4786e6191a9a34fa",
+      "imageSha256": "10ba1d5351a4cb06d7a8315ba858fcff8ffe7f14b12e02e038f41d95af3c5bde",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4430234480591279"
+    },
+    {
+      "externalId": "1523380235744435",
+      "pageId": "645321401991219",
+      "pageName": "Escala con Anuncios",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1523380235744435.jpg",
+      "copyBodySha256": "480c96954b9bf8fc7f3b615ed61ea0bc018a5c9112ce3d6c4786e6191a9a34fa",
+      "imageSha256": "b18ac849c5d5042ed8edf68118fd39017feab38bd371d25d939d0c59dbbebdad",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1523380235744435"
+    },
+    {
+      "externalId": "1773650267135365",
+      "pageId": "350328218908184",
+      "pageName": "Fotocasa Pro",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1773650267135365.jpg",
+      "copyBodySha256": "910e2480b620dd563cfbd5f92b0a44c58fe96e259b569bd2cda3126b69e25117",
+      "imageSha256": "e96b7c4da701c5b5f2641cbcad36425e876fb6e426a75e24510034ca89979314",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1773650267135365"
+    },
+    {
+      "externalId": "1502244981706457",
+      "pageId": "350328218908184",
+      "pageName": "Fotocasa Pro",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1502244981706457.jpg",
+      "copyBodySha256": "910e2480b620dd563cfbd5f92b0a44c58fe96e259b569bd2cda3126b69e25117",
+      "imageSha256": "e96b7c4da701c5b5f2641cbcad36425e876fb6e426a75e24510034ca89979314",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1502244981706457"
+    },
+    {
+      "externalId": "4572751969717249",
+      "pageId": "350328218908184",
+      "pageName": "Fotocasa Pro",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-4572751969717249.jpg",
+      "copyBodySha256": "910e2480b620dd563cfbd5f92b0a44c58fe96e259b569bd2cda3126b69e25117",
+      "imageSha256": "e96b7c4da701c5b5f2641cbcad36425e876fb6e426a75e24510034ca89979314",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4572751969717249"
+    },
+    {
+      "externalId": "1013887638089271",
+      "pageId": "350328218908184",
+      "pageName": "Fotocasa Pro",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1013887638089271.jpg",
+      "copyBodySha256": "910e2480b620dd563cfbd5f92b0a44c58fe96e259b569bd2cda3126b69e25117",
+      "imageSha256": "cc220fac35cf67a9e32c89f069cfa83cce4578f849367ca2672370172cbce504",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1013887638089271"
+    },
+    {
+      "externalId": "1020303067388728",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1020303067388728.jpg",
+      "copyBodySha256": "34c118f66de2fdc131bbfbb248f6305fcfc52602921ae87cfabcc12f6dd83b1c",
+      "imageSha256": "6b1328b5e4243faa2eaf9839bbcf6a2bcd12b0b17bdc08ae680ef7054f486859",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1020303067388728"
+    },
+    {
+      "externalId": "834101359784336",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-834101359784336.jpg",
+      "copyBodySha256": "34c118f66de2fdc131bbfbb248f6305fcfc52602921ae87cfabcc12f6dd83b1c",
+      "imageSha256": "6b1328b5e4243faa2eaf9839bbcf6a2bcd12b0b17bdc08ae680ef7054f486859",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=834101359784336"
+    },
+    {
+      "externalId": "1026179606815293",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1026179606815293.jpg",
+      "copyBodySha256": "34c118f66de2fdc131bbfbb248f6305fcfc52602921ae87cfabcc12f6dd83b1c",
+      "imageSha256": "6b1328b5e4243faa2eaf9839bbcf6a2bcd12b0b17bdc08ae680ef7054f486859",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1026179606815293"
+    },
+    {
+      "externalId": "1605074721253926",
+      "pageId": "119283071267235",
+      "pageName": "Gym Evolution",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1605074721253926.jpg",
+      "copyBodySha256": "61118bdbb5d75cba5a824a5a425ec9db6c853aaebc2169cb17704acc2773b433",
+      "imageSha256": "e8f3b56b999816fec94b57bbb91758e82873fb3f1e7b7f10f9ce6a8ad79e1d3a",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1605074721253926"
+    },
+    {
+      "externalId": "2166808500905282",
+      "pageId": "1098383993357983",
+      "pageName": "LeadFluence Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2166808500905282.jpg",
+      "copyBodySha256": "3ee62b596df1c19c9558e139da76f2cfce9e2331843c59999840544784f5c4c6",
+      "imageSha256": "b1f08b14aa636e9471cbb322906c87f2397a780c471bdfb4fb17c88486c10c2d",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2166808500905282"
+    },
+    {
+      "externalId": "1967587027234094",
+      "pageId": "1098383993357983",
+      "pageName": "LeadFluence Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1967587027234094.jpg",
+      "copyBodySha256": "eb1d80f0d5a63661cc787bed67e8d1b26ef7e224c0b44c9933b48da11acf4523",
+      "imageSha256": "7eb239903e8f78de16d083b2c795fadb5062fa7fb94fd18602c8c53804c2624c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1967587027234094"
+    },
+    {
+      "externalId": "1563543941927705",
+      "pageId": "1098383993357983",
+      "pageName": "LeadFluence Academy",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1563543941927705.jpg",
+      "copyBodySha256": "40f919bc4ce78d0b6b77c17c04edb0e8df4cb2a8fae3d62e0f6fde16870fd855",
+      "imageSha256": "93c7421b49f188206230acaf45d3d27ce8a84dee6497462b7e1f78ec5c162c8b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1563543941927705"
+    },
+    {
+      "externalId": "1007543475507187",
+      "pageId": "1212592311930433",
+      "pageName": "Lederma",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1007543475507187.jpg",
+      "copyBodySha256": "9619aa4c4c136bee99f613806964d0c2f921b8c103dd0832119e2b70c8c4c9fd",
+      "imageSha256": "d6f67914c0f362aa893681b7d5b745f36d3bc906dcc5b30ec3cb1be5660310ab",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1007543475507187"
+    },
+    {
+      "externalId": "1023622933913615",
+      "pageId": "226282297242864",
+      "pageName": "Marcos Pascual",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1023622933913615.jpg",
+      "copyBodySha256": "c1840e9f5ee8e71bec2dfa928016c514b550f3da0988a74b7b226b8e36122936",
+      "imageSha256": "218c63f076737c9a66bff0f1ac082d16312f3bb053ab92fc0226e39a7d560095",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1023622933913615"
+    },
+    {
+      "externalId": "1318580286932012",
+      "pageId": "226282297242864",
+      "pageName": "Marcos Pascual",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1318580286932012.jpg",
+      "copyBodySha256": "c1840e9f5ee8e71bec2dfa928016c514b550f3da0988a74b7b226b8e36122936",
+      "imageSha256": "218c63f076737c9a66bff0f1ac082d16312f3bb053ab92fc0226e39a7d560095",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1318580286932012"
+    },
+    {
+      "externalId": "4537199933274601",
+      "pageId": "226282297242864",
+      "pageName": "Marcos Pascual",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-4537199933274601.jpg",
+      "copyBodySha256": "c1840e9f5ee8e71bec2dfa928016c514b550f3da0988a74b7b226b8e36122936",
+      "imageSha256": "39bd9958edad7b4eca25e8a6710545ac75daba3e88ca818745ba27aeb1784a09",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4537199933274601"
+    },
+    {
+      "externalId": "1986814992027593",
+      "pageId": "1033626519834813",
+      "pageName": "Marketing 360",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1986814992027593.jpg",
+      "copyBodySha256": "0e00f807285b6f45896fb8258137c850a0780131222d5a61a82a8e3db9cd5143",
+      "imageSha256": "b97ae9c776afaeb4de8db2c1cb4ebec7738ff19fd0b69d5a83d1a4c264bffb8c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1986814992027593"
+    },
+    {
+      "externalId": "1027505713448975",
+      "pageId": "1033626519834813",
+      "pageName": "Marketing 360",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1027505713448975.jpg",
+      "copyBodySha256": "0e00f807285b6f45896fb8258137c850a0780131222d5a61a82a8e3db9cd5143",
+      "imageSha256": "98edb7d194132643e0c7a37d18f20aadcf77597e2bbf91143a564de6b27d4d64",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1027505713448975"
+    },
+    {
+      "externalId": "2311520259589014",
+      "pageId": "1033626519834813",
+      "pageName": "Marketing 360",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-2311520259589014.jpg",
+      "copyBodySha256": "0e00f807285b6f45896fb8258137c850a0780131222d5a61a82a8e3db9cd5143",
+      "imageSha256": "6f78a7bc284b8486bdae22e97b3b3e21f8f28ed51c20001eb24bd40dfe450f96",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2311520259589014"
+    },
+    {
+      "externalId": "1624615615456646",
+      "pageId": "549531788578953",
+      "pageName": "MeleRock Tattoo",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1624615615456646.jpg",
+      "copyBodySha256": "18c5fb766cf6f6ecf18af7b254460233f73572381359fe56ae936db7155f9a94",
+      "imageSha256": "957753451b748630f2e2da685890897598897bb96e3457f6a9a35b87ab11b64d",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1624615615456646"
+    },
+    {
+      "externalId": "1030828249719636",
+      "pageId": "1271866622671431",
+      "pageName": "Novelas Obsesionantes",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1030828249719636.jpg",
+      "copyBodySha256": "756c234d2b5b516f1448c6850498357c42ac4a41e6d4ae8aa22933519f981819",
+      "imageSha256": "24908c73644e6d59d57eed080c0824eaf1617760c3ffe0e588d288627f68dc44",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1030828249719636"
+    },
+    {
+      "externalId": "4170613136563215",
+      "pageId": "1271866622671431",
+      "pageName": "Novelas Obsesionantes",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-4170613136563215.jpg",
+      "copyBodySha256": "756c234d2b5b516f1448c6850498357c42ac4a41e6d4ae8aa22933519f981819",
+      "imageSha256": "3da1148d228a3ea65b6d307b7e1755b4b05d8a754f8e1ce56dc1d9d86e75bb18",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4170613136563215"
+    },
+    {
+      "externalId": "4448240325390211",
+      "pageId": "1271866622671431",
+      "pageName": "Novelas Obsesionantes",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-4448240325390211.jpg",
+      "copyBodySha256": "756c234d2b5b516f1448c6850498357c42ac4a41e6d4ae8aa22933519f981819",
+      "imageSha256": "86189e4ef2db9e3c3f91754e1575388517612e2b3a360280b6dbbb5be727c556",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4448240325390211"
+    },
+    {
+      "externalId": "1064219156092767",
+      "pageId": "1271866622671431",
+      "pageName": "Novelas Obsesionantes",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1064219156092767.jpg",
+      "copyBodySha256": "07a764e2ade6d911340e92e08f23da9fc537c01ecebca4d15a5e246f368ccdb2",
+      "imageSha256": "ec70787e8b083accee054c9541115d23a7c16c5d72ce3d2c5132e46ac7ca57ae",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1064219156092767"
+    },
+    {
+      "externalId": "1578792937272432",
+      "pageId": "445529558639653",
+      "pageName": "Pablo Valverde Business",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1578792937272432.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "d211ae502296b4196732988652376fe803c083cf9633017e591c5cb1bc028426",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1578792937272432"
+    },
+    {
+      "externalId": "953143671139485",
+      "pageId": "445529558639653",
+      "pageName": "Pablo Valverde Business",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-953143671139485.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "a67c320b7eda3340515ca131e21c532ff20aaeace69b422c22cc7707a0e412bc",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=953143671139485"
+    },
+    {
+      "externalId": "1100589872913777",
+      "pageId": "445529558639653",
+      "pageName": "Pablo Valverde Business",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1100589872913777.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "b84eb98b6351b20b3dffe406ae778338af52c511108138c63c0087cbb1acefc1",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1100589872913777"
+    },
+    {
+      "externalId": "2149723039185571",
+      "pageId": "303141819810769",
+      "pageName": "Raiola Networks",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-2149723039185571.jpg",
+      "copyBodySha256": "5316b1c940ca0dbf6e618659c66d7826a501ace11708371045e991c9eb02c1e9",
+      "imageSha256": "e35ca1d1fb06fc20fb49a2f5d8fcc1805b88a48631540e9b1ded307a44408695",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2149723039185571"
+    },
+    {
+      "externalId": "1346381430672008",
+      "pageId": "303141819810769",
+      "pageName": "Raiola Networks",
+      "category": "Formación y mentoría",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1346381430672008.jpg",
+      "copyBodySha256": "5316b1c940ca0dbf6e618659c66d7826a501ace11708371045e991c9eb02c1e9",
+      "imageSha256": "8be94469d89ea4aff886dc049d8f466fc4c4769e6ed443de3b21e2c4a91f8d70",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1346381430672008"
+    },
+    {
+      "externalId": "1283030570582436",
+      "pageId": "303141819810769",
+      "pageName": "Raiola Networks",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1283030570582436.jpg",
+      "copyBodySha256": "5316b1c940ca0dbf6e618659c66d7826a501ace11708371045e991c9eb02c1e9",
+      "imageSha256": "fe51f827761f4949f8346ef806cbf08a036218ead4f49a3e3e520912905656f1",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1283030570582436"
+    },
+    {
+      "externalId": "1056163916756708",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1056163916756708.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "b84eb98b6351b20b3dffe406ae778338af52c511108138c63c0087cbb1acefc1",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1056163916756708"
+    },
+    {
+      "externalId": "986604130860932",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-986604130860932.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "843f7ce99bf73c4b6c6a4f1bc1889fb13a9b58a01be8b07601964b2ec2de2ca9",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=986604130860932"
+    },
+    {
+      "externalId": "1346924867571054",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1346924867571054.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "3e3b56b677af6077c19738f61c617f3c15a345ccc99e187e8db396df1e0c91cd",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1346924867571054"
+    },
+    {
+      "externalId": "1507562027198880",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1507562027198880.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "faab5abe700951ac774eba8a36e33f7e9421adb96cd2c2518f2bafb03d2f919e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1507562027198880"
+    },
+    {
+      "externalId": "1067167012518418",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1067167012518418.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "eec026bf1773b10ec5cfa05a320953bb5ab4ac339ca97dd5efb45ec42d2bf409",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1067167012518418"
+    },
+    {
+      "externalId": "2191626281395111",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2191626281395111.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "895bcde5bc76ac8894554b909b4804cd6fd445ad2590ca548718ea71126c95d2",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2191626281395111"
+    },
+    {
+      "externalId": "1742052180331135",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1742052180331135.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "b0c025d62db63d30bb6377fa8feefd15aacbfef83f447ff466cb38fbc4738793",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1742052180331135"
+    },
+    {
+      "externalId": "2173580313199402",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2173580313199402.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "faab5abe700951ac774eba8a36e33f7e9421adb96cd2c2518f2bafb03d2f919e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2173580313199402"
+    },
+    {
+      "externalId": "1583623156490544",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1583623156490544.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "5feaebf0e73f690e2ffacf546e028810700ade131b3345cb5c17ac87fe3c527a",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1583623156490544"
+    },
+    {
+      "externalId": "961566303572884",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-961566303572884.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "95af03c7af0e2bc88d7115cc1df95d83b225675501fb70ae6f4a646943dc1dc2",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=961566303572884"
+    },
+    {
+      "externalId": "2266748884061428",
+      "pageId": "165515773319368",
+      "pageName": "Real Estate Rocket",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2266748884061428.jpg",
+      "copyBodySha256": "ac4046650de5cdc09d97370c759f7c4b6a433c22a55a3d8867b789283596861a",
+      "imageSha256": "66bb8f7ed11b31e843374c44c0706405bc9f3acae52c044a8e51cd9f9360d189",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2266748884061428"
+    },
+    {
+      "externalId": "27944996611798011",
+      "pageId": "970350222838103",
+      "pageName": "Skalex.pro",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-27944996611798011.jpg",
+      "copyBodySha256": "dfa8dba7de74654b9ff8f135c888ec7800552c6df8eeef5ce19dfeba7834e175",
+      "imageSha256": "8e703e6a3d34b1e1ca463243572b16aa62a3272f4d2a0207d5a55262d82edbcc",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=27944996611798011"
+    },
+    {
+      "externalId": "1661309354938031",
+      "pageId": "970350222838103",
+      "pageName": "Skalex.pro",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1661309354938031.jpg",
+      "copyBodySha256": "dfa8dba7de74654b9ff8f135c888ec7800552c6df8eeef5ce19dfeba7834e175",
+      "imageSha256": "fafb9ae107a46395ae72d4bd310bdc04ab16fdc9c5b8033ac8fbad6453640b5b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1661309354938031"
+    },
+    {
+      "externalId": "1804754657327781",
+      "pageId": "970350222838103",
+      "pageName": "Skalex.pro",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1804754657327781.jpg",
+      "copyBodySha256": "dfa8dba7de74654b9ff8f135c888ec7800552c6df8eeef5ce19dfeba7834e175",
+      "imageSha256": "fafb9ae107a46395ae72d4bd310bdc04ab16fdc9c5b8033ac8fbad6453640b5b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1804754657327781"
+    },
+    {
+      "externalId": "2470505196765796",
+      "pageId": "970350222838103",
+      "pageName": "Skalex.pro",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2470505196765796.jpg",
+      "copyBodySha256": "dfa8dba7de74654b9ff8f135c888ec7800552c6df8eeef5ce19dfeba7834e175",
+      "imageSha256": "794ddc57f8c52a4c743470566a808272d950f28276c68d4fd13ac94720d69d20",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2470505196765796"
+    },
+    {
+      "externalId": "1323437613334472",
+      "pageId": "1085107841343598",
+      "pageName": "Visionarius AI",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1323437613334472.jpg",
+      "copyBodySha256": "13cb3e01d4f47f137a8d98f85c3c99bf08224d1ce2ca5b6f6459ae025ea4e816",
+      "imageSha256": "0a7ee817ede42342880acb98381b26bb0dd57f64cbabcde6e02150cdb5c2a817",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1323437613334472"
+    },
+    {
+      "externalId": "1868398540804011",
+      "pageId": "468252266697813",
+      "pageName": "Wibaes",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1868398540804011.jpg",
+      "copyBodySha256": "df9d9d24c4b9e2bb603cb8f6d744b79261500c1a34abfe2d6bffa5ae48c437cd",
+      "imageSha256": "1a6399b8e9d1c9c0442bba1daa0ee9a6b92b6e7db948211a0007f8ca314351c6",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1868398540804011"
+    },
+    {
+      "externalId": "2054683358478745",
+      "pageId": "104166978737501",
+      "pageName": "Witheya",
+      "category": "Formación y mentoría",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2054683358478745.jpg",
+      "copyBodySha256": "7b097081ece0d48242c8ae371aef2d981c3b04c47d3953cf6c06275a6824288d",
+      "imageSha256": "c34a53db59fe68234a09b682eba75f372fe70bb6434d3dff2f8ee04b4e74603c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2054683358478745"
+    },
+    {
+      "externalId": "1587118979485504",
+      "pageId": "102559208079455",
+      "pageName": "academiaentrenadoresonline",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1587118979485504.jpg",
+      "copyBodySha256": "23de33eb0d8262ddd80c1596b980788085425a8f2496d4460ed13b6f4d767511",
+      "imageSha256": "aedf2e1e81bb924baec8f8302edd5a0e647fa07c8985d1830e65318fa4d8226e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1587118979485504"
+    },
+    {
+      "externalId": "1948398982506140",
+      "pageId": "102559208079455",
+      "pageName": "academiaentrenadoresonline",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1948398982506140.jpg",
+      "copyBodySha256": "23de33eb0d8262ddd80c1596b980788085425a8f2496d4460ed13b6f4d767511",
+      "imageSha256": "fbe84057bc54bc243d7b93a0c6f98f07059072bb5804dc7746a79eeb4fe154f4",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1948398982506140"
+    },
+    {
+      "externalId": "1393144919651391",
+      "pageId": "102559208079455",
+      "pageName": "academiaentrenadoresonline",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1393144919651391.jpg",
+      "copyBodySha256": "23de33eb0d8262ddd80c1596b980788085425a8f2496d4460ed13b6f4d767511",
+      "imageSha256": "689cda43ec47efbe30bc95722a21f80ec14a80e554562545056ba88a744c4ce4",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1393144919651391"
+    },
+    {
+      "externalId": "4610000099242424",
+      "pageId": "102559208079455",
+      "pageName": "academiaentrenadoresonline",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-4610000099242424.jpg",
+      "copyBodySha256": "23de33eb0d8262ddd80c1596b980788085425a8f2496d4460ed13b6f4d767511",
+      "imageSha256": "3631cc34be190a4a848d8e24635b4df1c52b58e25d4f280b98d3e64dff19e63b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=4610000099242424"
+    },
+    {
+      "externalId": "27770843875941905",
+      "pageId": "62303362587",
+      "pageName": "lainformacion.com",
+      "category": "Formación y mentoría",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-27770843875941905.jpg",
+      "copyBodySha256": "d920997d0777ba9abe08f2b6a925c532989f7b11a59087e8a88f0962ddb0a8ad",
+      "imageSha256": "7c70dcd5339c858423becc6c4b05a01a5301f5fabab5f573e45e23dbb30d8380",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=27770843875941905"
+    },
+    {
+      "externalId": "1426244552723061",
+      "pageId": "38352573027",
+      "pageName": "20minutos.es",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1426244552723061.jpg",
+      "copyBodySha256": "d920997d0777ba9abe08f2b6a925c532989f7b11a59087e8a88f0962ddb0a8ad",
+      "imageSha256": "7c70dcd5339c858423becc6c4b05a01a5301f5fabab5f573e45e23dbb30d8380",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1426244552723061"
+    },
+    {
+      "externalId": "2108507080072575",
+      "pageId": "108792248597801",
+      "pageName": "AccioGest",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-2108507080072575.jpg",
+      "copyBodySha256": "05ed193d2486ca3f06fb77b28b8d6e4febce2aa38ab835bc6e97951205c55f1b",
+      "imageSha256": "9e569eb6b54e35f20c1359ac6fc35074b9c5f865b20c1dac023f0841f053a80b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2108507080072575"
+    },
+    {
+      "externalId": "1331857582411685",
+      "pageId": "103943539390549",
+      "pageName": "Bastida&Farina",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1331857582411685.jpg",
+      "copyBodySha256": "85418870c004bf7cedde35eee1c65af4515d1c6ef9ef20db66fde3c0628146d0",
+      "imageSha256": "8acfd412c10939b011af17cedf915fd4a969f910d10e11c1d23d4ee3374e90c5",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1331857582411685"
+    },
+    {
+      "externalId": "882582881390358",
+      "pageId": "233002290380159",
+      "pageName": "Business Insider España",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-882582881390358.jpg",
+      "copyBodySha256": "d920997d0777ba9abe08f2b6a925c532989f7b11a59087e8a88f0962ddb0a8ad",
+      "imageSha256": "7c70dcd5339c858423becc6c4b05a01a5301f5fabab5f573e45e23dbb30d8380",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=882582881390358"
+    },
+    {
+      "externalId": "1298801542291329",
+      "pageId": "685178108002598",
+      "pageName": "Clinic Wise",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1298801542291329.jpg",
+      "copyBodySha256": "d8831f034759ebe04f6db80104a27c92acd5fe156b2c5278eb732b29c1ff99f2",
+      "imageSha256": "fb45cd381bd4131340d1412589e6e6c07174d58765937b51b08079acefaa1cae",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1298801542291329"
+    },
+    {
+      "externalId": "700114199784964",
+      "pageId": "685178108002598",
+      "pageName": "Clinic Wise",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-700114199784964.jpg",
+      "copyBodySha256": "f895c7fafcbd59e82aaf28ebf628b2ecbd3cff06f0c2d960d73c7534ed2dd911",
+      "imageSha256": "c6b9114c7cab5517763404a4919f3bf8b6550fb7079d74f16ed203f391c831b0",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=700114199784964"
+    },
+    {
+      "externalId": "1143938601215457",
+      "pageId": "685178108002598",
+      "pageName": "Clinic Wise",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1143938601215457.jpg",
+      "copyBodySha256": "f895c7fafcbd59e82aaf28ebf628b2ecbd3cff06f0c2d960d73c7534ed2dd911",
+      "imageSha256": "f6ab5206158818b1cfa2794f1e384064cc9641ab06ce5520e824ff1cadd3366e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1143938601215457"
+    },
+    {
+      "externalId": "2767836913569241",
+      "pageId": "685178108002598",
+      "pageName": "Clinic Wise",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-2767836913569241.jpg",
+      "copyBodySha256": "f895c7fafcbd59e82aaf28ebf628b2ecbd3cff06f0c2d960d73c7534ed2dd911",
+      "imageSha256": "7434d71fd95ac358aae224ed1f65f8b2538e250dec6aece2b477cc43f3fb8ec1",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2767836913569241"
+    },
+    {
+      "externalId": "1412620944121366",
+      "pageId": "1425131221041292",
+      "pageName": "Euronews Español",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1412620944121366.jpg",
+      "copyBodySha256": "d920997d0777ba9abe08f2b6a925c532989f7b11a59087e8a88f0962ddb0a8ad",
+      "imageSha256": "7c70dcd5339c858423becc6c4b05a01a5301f5fabab5f573e45e23dbb30d8380",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1412620944121366"
+    },
+    {
+      "externalId": "1312675334345364",
+      "pageId": "448215355034775",
+      "pageName": "Fonio.ai",
+      "category": "Software e IA",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1312675334345364.jpg",
+      "copyBodySha256": "37133f20a8dff123821d6b42175f3f825bfbc777bf45f7882a74ed8aa393d78e",
+      "imageSha256": "e4f87519ea2672ad12f30b30575c58133e2a0af99bfe93f8815c8c2043c70c6c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1312675334345364"
+    },
+    {
+      "externalId": "1026061026431082",
+      "pageId": "448215355034775",
+      "pageName": "Fonio.ai",
+      "category": "Software e IA",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1026061026431082.jpg",
+      "copyBodySha256": "37133f20a8dff123821d6b42175f3f825bfbc777bf45f7882a74ed8aa393d78e",
+      "imageSha256": "e4f87519ea2672ad12f30b30575c58133e2a0af99bfe93f8815c8c2043c70c6c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1026061026431082"
+    },
+    {
+      "externalId": "1388775386487496",
+      "pageId": "448215355034775",
+      "pageName": "Fonio.ai",
+      "category": "Software e IA",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1388775386487496.jpg",
+      "copyBodySha256": "37133f20a8dff123821d6b42175f3f825bfbc777bf45f7882a74ed8aa393d78e",
+      "imageSha256": "ba2b1c66b97437ee90a47d584e6f2712d89e51477a0d323fcf518a0e29313d6d",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1388775386487496"
+    },
+    {
+      "externalId": "1505727334658456",
+      "pageId": "448215355034775",
+      "pageName": "Fonio.ai",
+      "category": "Software e IA",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1505727334658456.jpg",
+      "copyBodySha256": "37133f20a8dff123821d6b42175f3f825bfbc777bf45f7882a74ed8aa393d78e",
+      "imageSha256": "ba2b1c66b97437ee90a47d584e6f2712d89e51477a0d323fcf518a0e29313d6d",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1505727334658456"
+    },
+    {
+      "externalId": "1668620367536809",
+      "pageId": "1050399631499049",
+      "pageName": "LEEIA - Agentes Inteligencia Artificial",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1668620367536809.jpg",
+      "copyBodySha256": "da0e47c4fd3f8ea376704fb64438b6aae61fec61bad6cecafa6e92017eeb4a13",
+      "imageSha256": "809db4a90ab53f3b6e00cb9c3b011833e49ea07333c167e5985644955c78b661",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1668620367536809"
+    },
+    {
+      "externalId": "1546201073647990",
+      "pageId": "1238872042636587",
+      "pageName": "Level Up Agency",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1546201073647990.jpg",
+      "copyBodySha256": "118fa21bea92efdf8f8a6fd3b93f57c4dab3c99125347edf2c816dad8f55c750",
+      "imageSha256": "7a9b3e34f5a2332fa2c1a5fd70399610242be1945005f250bcd3a6ac99bee5ef",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1546201073647990"
+    },
+    {
+      "externalId": "930794453383637",
+      "pageId": "1238872042636587",
+      "pageName": "Level Up Agency",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-930794453383637.jpg",
+      "copyBodySha256": "118fa21bea92efdf8f8a6fd3b93f57c4dab3c99125347edf2c816dad8f55c750",
+      "imageSha256": "09996ff21ed00b00363bfcb7e5b591a8cbc1e69197b116c4096f181d30ce9cbf",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=930794453383637"
+    },
+    {
+      "externalId": "1979661845997034",
+      "pageId": "385860544615973",
+      "pageName": "Mar Dominguez Seda",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1979661845997034.jpg",
+      "copyBodySha256": "0c41159bdc13217e690c1b6deceee9624ab699aba1201091f1c3ca72feb1e216",
+      "imageSha256": "41de7e892a19da20bafe25bdb0109813d39dac16ee7a8bc1f57ceb7276ac4c67",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1979661845997034"
+    },
+    {
+      "externalId": "1138923142645322",
+      "pageId": "385860544615973",
+      "pageName": "Mar Dominguez Seda",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1138923142645322.jpg",
+      "copyBodySha256": "0c41159bdc13217e690c1b6deceee9624ab699aba1201091f1c3ca72feb1e216",
+      "imageSha256": "630ca29c08f5ec1e1eb382b4efc02a40ac9ba86ed3c0735f6b3739032b10e6d3",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1138923142645322"
+    },
+    {
+      "externalId": "1512909260292401",
+      "pageId": "385860544615973",
+      "pageName": "Mar Dominguez Seda",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1512909260292401.jpg",
+      "copyBodySha256": "0c41159bdc13217e690c1b6deceee9624ab699aba1201091f1c3ca72feb1e216",
+      "imageSha256": "554f4660793ccc29a985210002a7977ea7784826a9fb236a5f9f14230e648384",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1512909260292401"
+    },
+    {
+      "externalId": "2232220610965436",
+      "pageId": "385860544615973",
+      "pageName": "Mar Dominguez Seda",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2232220610965436.jpg",
+      "copyBodySha256": "0c41159bdc13217e690c1b6deceee9624ab699aba1201091f1c3ca72feb1e216",
+      "imageSha256": "aee2d7ec9661140ffe7fd6f351778e25e67868f2f06d8988bb3c1b4d2b4b0250",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2232220610965436"
+    },
+    {
+      "externalId": "2415360682272750",
+      "pageId": "173438009377975",
+      "pageName": "Meta for Business",
+      "category": "Software e IA",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-2415360682272750.jpg",
+      "copyBodySha256": "ece39fdd733817bc557ec61fdec2ea6ce7fff477cd64ef35e2b126f6b9eff0a9",
+      "imageSha256": "9e6402d3d0d4f4564a6d32e8f8ee8a5d6d9dd91be1aa8e28e286fe917c555e2f",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2415360682272750"
+    },
+    {
+      "externalId": "1496932065048617",
+      "pageId": "100528589807390",
+      "pageName": "Nodo Point",
+      "category": "Software e IA",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1496932065048617.jpg",
+      "copyBodySha256": "cb84635bd24869f562de206e17fa643fe6e3078c06668b5224a9e1191f413773",
+      "imageSha256": "91c617943d076957e78c706cd6f2f1688f20bc7ef42361fdabe9b22117b64e09",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1496932065048617"
+    },
+    {
+      "externalId": "27158265610432488",
+      "pageId": "405497982637871",
+      "pageName": "Odental Agency",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-27158265610432488.jpg",
+      "copyBodySha256": "44f76c6b5e49c79fafdc4376e8d45447d8f911e60a511c7afe43cecaad49c95c",
+      "imageSha256": "beaee94f2a181881bedc02406291e99a0b4eb4a256a0cd0d0f570e9aabd3a1a8",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=27158265610432488"
+    },
+    {
+      "externalId": "2039656096975759",
+      "pageId": "405497982637871",
+      "pageName": "Odental Agency",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2039656096975759.jpg",
+      "copyBodySha256": "c1ca6f175429886534a215443d5ff4de4f557d2807d2673b8c42660f861485a4",
+      "imageSha256": "5e6faf3f8472c1b4e5344ac7855e8bd3b97c90a243c9372f5caedf9660a361ca",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2039656096975759"
+    },
+    {
+      "externalId": "936215016128091",
+      "pageId": "405497982637871",
+      "pageName": "Odental Agency",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-936215016128091.jpg",
+      "copyBodySha256": "c1ca6f175429886534a215443d5ff4de4f557d2807d2673b8c42660f861485a4",
+      "imageSha256": "784c279e2f5f523a812972788c8d8c7875d5937342c2754236f57c15a33fe669",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=936215016128091"
+    },
+    {
+      "externalId": "1532490631547585",
+      "pageId": "101121952080959",
+      "pageName": "PACS - La Aceleradora B2B",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1532490631547585.jpg",
+      "copyBodySha256": "521e59c3626aeb95dfa414537f5276ca0d47ed9e3355b2da91f248f240a3066e",
+      "imageSha256": "2e7f37d9579387fd5f56eb986e62b62fed5772249b3bc67c0d3f52934bfb3726",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1532490631547585"
+    },
+    {
+      "externalId": "839076102449346",
+      "pageId": "101121952080959",
+      "pageName": "PACS - La Aceleradora B2B",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-839076102449346.jpg",
+      "copyBodySha256": "521e59c3626aeb95dfa414537f5276ca0d47ed9e3355b2da91f248f240a3066e",
+      "imageSha256": "7a23f0e7014fbf8c93aad1915504307dca1294267402e03397b750d01733c276",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=839076102449346"
+    },
+    {
+      "externalId": "2092909088237704",
+      "pageId": "101121952080959",
+      "pageName": "PACS - La Aceleradora B2B",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2092909088237704.jpg",
+      "copyBodySha256": "521e59c3626aeb95dfa414537f5276ca0d47ed9e3355b2da91f248f240a3066e",
+      "imageSha256": "32bc64f4106d5c05dd3c8092d99d40263d7d764e5bb423fb6b3950234c7f8f86",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2092909088237704"
+    },
+    {
+      "externalId": "1297245482586814",
+      "pageId": "101121952080959",
+      "pageName": "PACS - La Aceleradora B2B",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1297245482586814.jpg",
+      "copyBodySha256": "521e59c3626aeb95dfa414537f5276ca0d47ed9e3355b2da91f248f240a3066e",
+      "imageSha256": "bffc59202b9d9bbcde3c0c44887db38c11cb09269dc6b339aaf9e2e6ffed24cb",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1297245482586814"
+    },
+    {
+      "externalId": "1327244816237119",
+      "pageId": "552530817935233",
+      "pageName": "Pablo Tregón Automatización de Contenido",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1327244816237119.jpg",
+      "copyBodySha256": "2022dfab1a48b900355a5d9510bb2ce52886222cc368cadf7c0c3d71ef0060fc",
+      "imageSha256": "df1e0b3df4ace77ab4c692c82ba70fbb1f8816f93ce4bd1afd4eaf259b7f9e5a",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1327244816237119"
+    },
+    {
+      "externalId": "797062310096022",
+      "pageId": "1085107841343598",
+      "pageName": "Visionarius AI",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-797062310096022.jpg",
+      "copyBodySha256": "0dfe781f3557021d889711283f89714b09ea435f82e991bcab584d23893cb641",
+      "imageSha256": "78e1cdc2a6ee2050705e996c9caec0a4c07412a76783eff975451d6958cab8f8",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=797062310096022"
+    },
+    {
+      "externalId": "1719115835996553",
+      "pageId": "1085107841343598",
+      "pageName": "Visionarius AI",
+      "category": "Software e IA",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1719115835996553.jpg",
+      "copyBodySha256": "9d1aef72bba81b8abd75f222f38f889b7bc57eb42dc402f3dba866d979d18845",
+      "imageSha256": "72608054a7e699064746c655c60123816a2369c97b319d871ad275f7a6f69cd0",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1719115835996553"
+    },
+    {
+      "externalId": "1690336198864173",
+      "pageId": "103943539390549",
+      "pageName": "Bastida&Farina",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1690336198864173.jpg",
+      "copyBodySha256": "f2c91f56957cfe471cf89c232cf067d716fbdc755c5922df8216b7f75d95b6d4",
+      "imageSha256": "2d9b8d148780af4f5a9573880d0bc9e9f6f8377858fd9c76e6bc668cb801d3b8",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1690336198864173"
+    },
+    {
+      "externalId": "1551160893052106",
+      "pageId": "1236435766213432",
+      "pageName": "Coventia AI",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1551160893052106.jpg",
+      "copyBodySha256": "e732b7f2fbb0744d652b7197bddcbfaba4a442b91b376f7cc5b4de04dbdd01f8",
+      "imageSha256": "268bc30361919a1ceb51b1d02885231b6ffbd397f870f94643d1f172bbaa80cc",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1551160893052106"
+    },
+    {
+      "externalId": "1691269928894507",
+      "pageId": "174753545710311",
+      "pageName": "Crece Sin Límite",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1691269928894507.jpg",
+      "copyBodySha256": "47f0c863e3a15835ab4cd444a5b694247e70723fa5ebd227deb22d7f8c4da7d6",
+      "imageSha256": "ebc448cf37fe511e1303e2e66c8b2200d07295e5e73e1dced4411536d3e46110",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1691269928894507"
+    },
+    {
+      "externalId": "2405828273200781",
+      "pageId": "174753545710311",
+      "pageName": "Crece Sin Límite",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-2405828273200781.jpg",
+      "copyBodySha256": "47f0c863e3a15835ab4cd444a5b694247e70723fa5ebd227deb22d7f8c4da7d6",
+      "imageSha256": "bbe44bdabce004f20549945585246c486fe30ef0d8c329e8e41b18939ba92513",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2405828273200781"
+    },
+    {
+      "externalId": "970603118979091",
+      "pageId": "174753545710311",
+      "pageName": "Crece Sin Límite",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-970603118979091.jpg",
+      "copyBodySha256": "47f0c863e3a15835ab4cd444a5b694247e70723fa5ebd227deb22d7f8c4da7d6",
+      "imageSha256": "fa1367db63d08b3cdd92dab3053dec3cfe0db564e16b3dc2da6dc86e515fb40e",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=970603118979091"
+    },
+    {
+      "externalId": "1332245128953637",
+      "pageId": "174753545710311",
+      "pageName": "Crece Sin Límite",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1332245128953637.jpg",
+      "copyBodySha256": "47f0c863e3a15835ab4cd444a5b694247e70723fa5ebd227deb22d7f8c4da7d6",
+      "imageSha256": "765911f43df711e5b3befcb244729034b4cc70793a2f810b48636d98f38cb865",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1332245128953637"
+    },
+    {
+      "externalId": "2094271361175080",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-2094271361175080.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2094271361175080"
+    },
+    {
+      "externalId": "1697532784823887",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1697532784823887.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1697532784823887"
+    },
+    {
+      "externalId": "1623946729177077",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1623946729177077.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1623946729177077"
+    },
+    {
+      "externalId": "1811943756882377",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1811943756882377.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1811943756882377"
+    },
+    {
+      "externalId": "1757190828942547",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1757190828942547.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1757190828942547"
+    },
+    {
+      "externalId": "1365197659087102",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1365197659087102.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1365197659087102"
+    },
+    {
+      "externalId": "1704184460861304",
+      "pageId": "1106148002571765",
+      "pageName": "Fátima AIO",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1704184460861304.jpg",
+      "copyBodySha256": "66dd3f51229e841f97606f49f0422db56f863f570e96621bdea7ca555e4b3fb2",
+      "imageSha256": "beaa76de2f296fb0a491562c226905cec685d3c88cc79931d3367bb97181237b",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1704184460861304"
+    },
+    {
+      "externalId": "3079142058947144",
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-3079142058947144.jpg",
+      "copyBodySha256": "3f8b811d173fc34b421db962ebbd2accb5bde87e9b940b808d5ef206508e76f3",
+      "imageSha256": "e47728317b5821fbb4cdfd18050caab96877c35acb83563c153159690963f2ba",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=3079142058947144"
+    },
+    {
+      "externalId": "1334827255291237",
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1334827255291237.jpg",
+      "copyBodySha256": "3f8b811d173fc34b421db962ebbd2accb5bde87e9b940b808d5ef206508e76f3",
+      "imageSha256": "ae5eab56ca60ab443cba01b25e7af115a6450289b5090cf40d9c6004b4d1ece7",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1334827255291237"
+    },
+    {
+      "externalId": "1048785114372372",
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1048785114372372.jpg",
+      "copyBodySha256": "3f8b811d173fc34b421db962ebbd2accb5bde87e9b940b808d5ef206508e76f3",
+      "imageSha256": "71744001cee0dd0e83e025a1c30092a17ff68335d8d0f13106e90a58f200611f",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1048785114372372"
+    },
+    {
+      "externalId": "2923369211166760",
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2923369211166760.jpg",
+      "copyBodySha256": "3f8b811d173fc34b421db962ebbd2accb5bde87e9b940b808d5ef206508e76f3",
+      "imageSha256": "4fc2867fbd504d8401a3905c361f39c3dc88ff4bff51edb72936cabe820f3009",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2923369211166760"
+    },
+    {
+      "externalId": "2112540169672033",
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2112540169672033.jpg",
+      "copyBodySha256": "3f8b811d173fc34b421db962ebbd2accb5bde87e9b940b808d5ef206508e76f3",
+      "imageSha256": "e7537e3aedb4900bd6209829c83ec17c59296d68fabe45cc1a6e5528ec53f49f",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2112540169672033"
+    },
+    {
+      "externalId": "1345443571122146",
+      "pageId": "195122443678632",
+      "pageName": "Germán Rupérez",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1345443571122146.jpg",
+      "copyBodySha256": "3f8b811d173fc34b421db962ebbd2accb5bde87e9b940b808d5ef206508e76f3",
+      "imageSha256": "c2f5747f6a58b1b9fa8cac2160bef8e48ab1a0d856d15ab8429949530dbf7d14",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1345443571122146"
+    },
+    {
+      "externalId": "1008142905261519",
+      "pageId": "185130644919625",
+      "pageName": "Meta for Business",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-1008142905261519.jpg",
+      "copyBodySha256": "c4a65513e69a9f69fd9b0332856efb2e32aa9b8f0dec3e537e5e38ca36e380df",
+      "imageSha256": "9c84dd073432f2b74c9be4cf02c1656b3585fe2c5d2334c4de33b040ee66eb9a",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1008142905261519"
+    },
+    {
+      "externalId": "2811578449209776",
+      "pageId": "185130644919625",
+      "pageName": "Meta for Business",
+      "category": "Venta de leads",
+      "format": "Catálogo dinámico",
+      "image": "/media/lead-market-meta-2811578449209776.jpg",
+      "copyBodySha256": "c4a65513e69a9f69fd9b0332856efb2e32aa9b8f0dec3e537e5e38ca36e380df",
+      "imageSha256": "2558e1032fb7ef5e6e55e7007ab3700577d4fcbc0cf1c6c653867985d29f1715",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2811578449209776"
+    },
+    {
+      "externalId": "1001589482472715",
+      "pageId": "173438009377975",
+      "pageName": "Meta for Business",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1001589482472715.jpg",
+      "copyBodySha256": "d1842719925f974571407b984f0117a3e426f85811919b38c40b210acdeda7b7",
+      "imageSha256": "3f09101c0fdc6f9b7000937b04e54af9ce7f9dc3790bea9aad2ce3fa19be39bb",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1001589482472715"
+    },
+    {
+      "externalId": "1216692357343827",
+      "pageId": "104077976067660",
+      "pageName": "Monq Media",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1216692357343827.jpg",
+      "copyBodySha256": "7ce64eaec8967c4c550edc4f19a595c6ff764a9a8ee9d1d334a41e28dd43daac",
+      "imageSha256": "4b5ff5a45faa0ed717b341410852526b2d7803e7ccbe68a8cbe6a21b2c48a02d",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1216692357343827"
+    },
+    {
+      "externalId": "777610048740166",
+      "pageId": "104077976067660",
+      "pageName": "Monq Media",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-777610048740166.jpg",
+      "copyBodySha256": "7ce64eaec8967c4c550edc4f19a595c6ff764a9a8ee9d1d334a41e28dd43daac",
+      "imageSha256": "f6cfee2d6787090c18134a4c19e349b329f17b82edf9a1052cdf40be692b57f3",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=777610048740166"
+    },
+    {
+      "externalId": "1797130117911248",
+      "pageId": "104077976067660",
+      "pageName": "Monq Media",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1797130117911248.jpg",
+      "copyBodySha256": "7ce64eaec8967c4c550edc4f19a595c6ff764a9a8ee9d1d334a41e28dd43daac",
+      "imageSha256": "9cb7c7ac2b98a612b599811ed1a9cc0c3c6a7672c49f169b3e71b998812fbc5c",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1797130117911248"
+    },
+    {
+      "externalId": "1283780547158445",
+      "pageId": "104077976067660",
+      "pageName": "Monq Media",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1283780547158445.jpg",
+      "copyBodySha256": "7ce64eaec8967c4c550edc4f19a595c6ff764a9a8ee9d1d334a41e28dd43daac",
+      "imageSha256": "b6895e25fb11de7e6485960d34c961685ef6c51fc510349cc31574d6c50f53a1",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1283780547158445"
+    },
+    {
+      "externalId": "1825028515535199",
+      "pageId": "443198685535146",
+      "pageName": "Nino Director",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1825028515535199.jpg",
+      "copyBodySha256": "ccf431ef4f59d675d76a7ada9e250760f0833e6461bb15a82343b7b22a4f1244",
+      "imageSha256": "20a8bab816f36e59cfdc09efe13fbec5cc8f6ffbc7c897b97e0b1837ec42643a",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1825028515535199"
+    },
+    {
+      "externalId": "3522408404592569",
+      "pageId": "443198685535146",
+      "pageName": "Nino Director",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-3522408404592569.jpg",
+      "copyBodySha256": "b5a078b18beacff97e70675eefd84297d2b64568a27a112d38d5997590d4efae",
+      "imageSha256": "d2ba0d6689024bef4f182516c4a671f1dc66edb9197e24de01e41d970f5749f0",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=3522408404592569"
+    },
+    {
+      "externalId": "1362588249382625",
+      "pageId": "443198685535146",
+      "pageName": "Nino Director",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1362588249382625.jpg",
+      "copyBodySha256": "2cdf425d8893e65935f426880c6518914cbbd296868ec40244dd7135829b46f7",
+      "imageSha256": "d2ba0d6689024bef4f182516c4a671f1dc66edb9197e24de01e41d970f5749f0",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1362588249382625"
+    },
+    {
+      "externalId": "925284047302665",
+      "pageId": "443198685535146",
+      "pageName": "Nino Director",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-925284047302665.jpg",
+      "copyBodySha256": "2cdf425d8893e65935f426880c6518914cbbd296868ec40244dd7135829b46f7",
+      "imageSha256": "20a8bab816f36e59cfdc09efe13fbec5cc8f6ffbc7c897b97e0b1837ec42643a",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=925284047302665"
+    },
+    {
+      "externalId": "1354291829517445",
+      "pageId": "100528589807390",
+      "pageName": "Nodo Point",
+      "category": "Venta de leads",
+      "format": "Imagen",
+      "image": "/media/lead-market-meta-1354291829517445.jpg",
+      "copyBodySha256": "db5339b37d3c100218c175068b086b171e4c7e9138b15acfba39c52feeb27548",
+      "imageSha256": "33c52b1c7c17680f5d92a2893fbbbde0a959c0e45f7ca846029e89af8d50a5b3",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1354291829517445"
+    },
+    {
+      "externalId": "2076944506550929",
+      "pageId": "1221634917700764",
+      "pageName": "Veltavia",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2076944506550929.jpg",
+      "copyBodySha256": "1a480f94f3302b6fb16f8517dde4c8b5830c290cd9bfaa3871e01ff77b9c99fa",
+      "imageSha256": "d32a8a0548778ec1f09efe6836fdfaf22cc3d3b2bf328e848588b0e17c7efd39",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2076944506550929"
+    },
+    {
+      "externalId": "1403656351829330",
+      "pageId": "1221634917700764",
+      "pageName": "Veltavia",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1403656351829330.jpg",
+      "copyBodySha256": "be677b3e680c6997b4d46f388fad35f43d697b8e2009576c285c8524be499cbb",
+      "imageSha256": "81401eff1532c5d3a0817d5bc8fadbbd9a948c738d715de2e243f7056a160fda",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1403656351829330"
+    },
+    {
+      "externalId": "1377645054476359",
+      "pageId": "1221634917700764",
+      "pageName": "Veltavia",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1377645054476359.jpg",
+      "copyBodySha256": "be677b3e680c6997b4d46f388fad35f43d697b8e2009576c285c8524be499cbb",
+      "imageSha256": "81401eff1532c5d3a0817d5bc8fadbbd9a948c738d715de2e243f7056a160fda",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1377645054476359"
+    },
+    {
+      "externalId": "1072452485525268",
+      "pageId": "1221634917700764",
+      "pageName": "Veltavia",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1072452485525268.jpg",
+      "copyBodySha256": "be677b3e680c6997b4d46f388fad35f43d697b8e2009576c285c8524be499cbb",
+      "imageSha256": "81401eff1532c5d3a0817d5bc8fadbbd9a948c738d715de2e243f7056a160fda",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1072452485525268"
+    },
+    {
+      "externalId": "2550708418706345",
+      "pageId": "349527364921689",
+      "pageName": "ViraPlus Agencia de marketing",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-2550708418706345.jpg",
+      "copyBodySha256": "656e0028d2ec3514612a3ea528024e90812bbbd9fb523db5e950bd5c01cf8a16",
+      "imageSha256": "4cc42764cb64ecb457f651dcb414f1fc84d315b64f74d0f9967614fa832dd740",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=2550708418706345"
+    },
+    {
+      "externalId": "1837041491007326",
+      "pageId": "119300421168649",
+      "pageName": "Échale Marketing",
+      "category": "Venta de leads",
+      "format": "Vídeo",
+      "image": "/media/lead-market-meta-1837041491007326.jpg",
+      "copyBodySha256": "aef9d2523f04a287ac5ada8ddba230084c4d4cbf9869d2552c8bcacd7857e60a",
+      "imageSha256": "24a1036958e96bb2b705a7c12af4f39c3d1b769e383eebe7f30200c021f2e849",
+      "sourceUrl": "https://www.facebook.com/ads/library?id=1837041491007326"
+    }
+  ],
+  "qualityWarnings": [
+    "No hay gasto, impresiones, conversiones ni validación independiente de claims; frecuencia no equivale a rendimiento.",
+    "España es la región de búsqueda, no una prueba del país, sede o targeting de cada anunciante.",
+    "Las cifras con símbolo monetario mezclan precios pagables, criterios de cualificación, resultados, presupuestos, deudas y ahorros.",
+    "Los vídeos solo incluyen un póster; el HTML no aporta vídeo, audio ni transcripción.",
+    "Los cuatro clústeres cross-page indican copy compartido, pero no demuestran por sí solos una agencia o autor común.",
+    "El clúster Real Estate Rocket/Pablo Valverde declara 14 anuncios, pero enumera 12 IDs; se preservan ambas cifras."
+  ]
+}

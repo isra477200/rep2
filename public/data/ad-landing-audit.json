@@ -1,6 +1,6 @@
 {
   "schemaVersion": "rv-ad-landing-audit-v1",
-  "generatedAt": "2026-08-26T19:15:51.372Z",
+  "generatedAt": "2026-08-27T02:28:51.445Z",
   "methodology": {
     "name": "Auditoría heurística y explicable de continuidad anuncio→landing",
     "qualityScore": "Media ponderada exclusiva de dimensiones evaluables. Los campos no observados se excluyen; no reciben cero ni equivalen a una contradicción.",
@@ -58,16 +58,16 @@
   "sources": {
     "adCorpus": {
       "path": "/public/data/ad-corpus.json",
-      "generatedAt": "2026-08-26",
-      "items": 4591
+      "generatedAt": "2026-08-27",
+      "items": 4689
     },
     "companiesIndex": {
       "path": "/public/data/companies-index.json",
-      "items": 1052
+      "items": 1075
     },
     "landingIntelligence": {
       "path": "/public/data/landing-intelligence.json",
-      "generatedAt": "2026-08-26T16:17:01.122Z",
+      "generatedAt": "2026-08-27T02:28:48.533Z",
       "companies": 453,
       "pages": 1199
     },
@@ -84,97 +84,97 @@
   },
   "benchmarks": {
     "universal": {
-      "medianFunnelSteps": 5,
+      "medianFunnelSteps": 2,
       "medianFormFields": 5,
       "fieldPresence": {
-        "headline": 85,
-        "promise": 71,
-        "audience": 81,
-        "offer": 98,
-        "mechanism": 66,
-        "primaryCta": 78,
-        "proof": 64,
-        "price": 53,
-        "guarantee": 54,
+        "headline": 86,
+        "promise": 64,
+        "audience": 75,
+        "offer": 97,
+        "mechanism": 61,
+        "primaryCta": 79,
+        "proof": 52,
+        "price": 24,
+        "guarantee": 32,
         "funnel": 89
       }
     },
     "verticals": {
       "clinicas-salud": {
         "label": "Clínicas y salud",
-        "sampleSize": 75,
-        "capturedPages": 201,
-        "medianFunnelSteps": 7,
-        "medianFormFields": 5
+        "sampleSize": 63,
+        "capturedPages": 144,
+        "medianFunnelSteps": 2,
+        "medianFormFields": 4
       },
       "reformas-hogar": {
         "label": "Reformas, obra y hogar",
-        "sampleSize": 32,
-        "capturedPages": 76,
-        "medianFunnelSteps": 4,
+        "sampleSize": 22,
+        "capturedPages": 44,
+        "medianFunnelSteps": 6,
         "medianFormFields": 6
       },
       "solar-energia": {
         "label": "Solar y energía",
-        "sampleSize": 18,
-        "capturedPages": 36,
+        "sampleSize": 15,
+        "capturedPages": 28,
         "medianFunnelSteps": 2,
-        "medianFormFields": 6
+        "medianFormFields": 5
       },
       "inmobiliario": {
         "label": "Inmobiliario",
-        "sampleSize": 31,
-        "capturedPages": 75,
-        "medianFunnelSteps": 3,
+        "sampleSize": 22,
+        "capturedPages": 50,
+        "medianFunnelSteps": 4,
         "medianFormFields": 6
       },
       "legal": {
         "label": "Legal y despachos",
         "sampleSize": 16,
-        "capturedPages": 46,
+        "capturedPages": 44,
         "medianFunnelSteps": 7,
         "medianFormFields": 4
       },
       "coches-motor": {
         "label": "Coches y motor",
-        "sampleSize": 6,
-        "capturedPages": 10,
+        "sampleSize": 7,
+        "capturedPages": 13,
         "medianFunnelSteps": 1,
-        "medianFormFields": 3
+        "medianFormFields": 4
       },
       "b2b-sdr": {
         "label": "B2B, SDR y citas",
-        "sampleSize": 24,
-        "capturedPages": 55,
-        "medianFunnelSteps": 2,
-        "medianFormFields": 2
+        "sampleSize": 22,
+        "capturedPages": 44,
+        "medianFunnelSteps": 1,
+        "medianFormFields": 3
       },
       "directorios-marketplaces": {
         "label": "Directorios y marketplaces",
-        "sampleSize": 9,
-        "capturedPages": 22,
-        "medianFunnelSteps": 6,
+        "sampleSize": 16,
+        "capturedPages": 42,
+        "medianFunnelSteps": 2,
         "medianFormFields": 7
       },
       "belleza-bienestar": {
         "label": "Belleza y bienestar",
-        "sampleSize": 2,
-        "capturedPages": 7,
-        "medianFunnelSteps": 2,
+        "sampleSize": 3,
+        "capturedPages": 4,
+        "medianFunnelSteps": 1,
         "medianFormFields": null
       },
       "hosteleria-turismo": {
         "label": "Hostelería y turismo",
-        "sampleSize": 9,
-        "capturedPages": 26,
-        "medianFunnelSteps": 7,
+        "sampleSize": 11,
+        "capturedPages": 23,
+        "medianFunnelSteps": 2,
         "medianFormFields": 5
       },
       "generalista": {
         "label": "Generalista",
-        "sampleSize": 151,
-        "capturedPages": 369,
-        "medianFunnelSteps": 6,
+        "sampleSize": 65,
+        "capturedPages": 145,
+        "medianFunnelSteps": 2,
         "medianFormFields": 5
       }
     }
@@ -186,8 +186,8 @@
     "averageQualityScore": 71,
     "medianQualityScore": 72,
     "averageConfidence": 69,
-    "totalAds": 3751,
-    "uniqueCopies": 1167,
+    "totalAds": 3764,
+    "uniqueCopies": 1179,
     "withCapturedLanding": 148,
     "stateCounts": {
       "coherent_sample": 14,
@@ -201,11 +201,11 @@
       "low": 38
     },
     "verticalCounts": {
-      "reformas-hogar": 56,
       "belleza-bienestar": 3,
       "generalista": 10,
       "b2b-sdr": 15,
       "inmobiliario": 17,
+      "reformas-hogar": 56,
       "clinicas-salud": 60,
       "directorios-marketplaces": 9,
       "legal": 3,
@@ -220,8 +220,8 @@
         "evaluable": 109,
         "notObserved": 77,
         "statuses": {
-          "not_observed": 77,
           "aligned": 30,
+          "not_observed": 77,
           "partial": 76,
           "leak": 3
         }
@@ -233,9 +233,9 @@
         "evaluable": 110,
         "notObserved": 76,
         "statuses": {
-          "aligned": 43,
           "not_observed": 76,
           "partial": 65,
+          "aligned": 43,
           "leak": 2
         }
       },
@@ -259,9 +259,9 @@
         "evaluable": 103,
         "notObserved": 83,
         "statuses": {
-          "partial": 56,
           "not_observed": 83,
           "aligned": 7,
+          "partial": 56,
           "leak": 40
         }
       },
@@ -285,9 +285,9 @@
         "evaluable": 131,
         "notObserved": 55,
         "statuses": {
-          "aligned": 35,
-          "partial": 75,
+          "partial": 76,
           "not_observed": 55,
+          "aligned": 34,
           "leak": 21
         }
       },
@@ -298,8 +298,8 @@
         "evaluable": 105,
         "notObserved": 81,
         "statuses": {
-          "aligned": 24,
           "not_observed": 81,
+          "aligned": 24,
           "partial": 33,
           "leak": 48
         }
@@ -319,267 +319,6 @@
     }
   },
   "items": [
-    {
-      "id": "witheya::aHR0cHM6Ly93aXRo",
-      "companyId": "witheya",
-      "companyName": "Witheya",
-      "country": "España",
-      "vertical": "reformas-hogar",
-      "verticalLabel": "Reformas, obra y hogar",
-      "landing": {
-        "url": "https://witheya.com/saber-mas",
-        "destinationCount": 2,
-        "observedDestinations": [
-          "https://witheya.com/privacy-policy",
-          "https://witheya.com/saber-mas"
-        ],
-        "capture": {
-          "url": "https://witheya.com/saber-mas",
-          "requestedUrl": "https://witheya.com/saber-mas",
-          "finalUrl": "https://witheya.com/saber-mas",
-          "captureFile": "/evidence/witheya/site-4191b84b32-landing.webp",
-          "thumbnailFile": "/evidence/witheya/site-4191b84b32-landing-thumb.webp",
-          "captureStatus": "captured",
-          "capturedAt": "2026-08-26T13:51:40.878Z",
-          "headline": null,
-          "excerpt": "Descubre el sistema que nuestros clientes usan para generar 15 a 30 presupuestos exclusivos al mes con personas que quieren reformar su baño/cocina ahora. (10-30k€ por proyecto) El sistema que mantiene las cuadrillas de nuestros clientes trabajando los 12 meses del año con proyectos exclusivos y cualificados. Copyright 2026 | WITHEYA"
-        },
-        "captureStatus": "complete",
-        "read": {
-          "headline": null,
-          "promise": null,
-          "audience": "Público inferido de la especialización declarada: Agencia de generación de demanda para empresas de reformas.",
-          "offer": "El anunciante afirma conseguir entre 15 y 30 presupuestos exclusivos y cualificados al mes para proyectos de baños y cocinas de 10.000 a 30.000 €.",
-          "mechanism": [],
-          "primaryCta": null,
-          "proof": null,
-          "price": "No observado en las piezas recuperadas.",
-          "guarantee": "No se observó un condicionado de garantía; el anunciante afirma que más de 100 clientes confían en su sistema."
-        }
-      },
-      "ads": {
-        "total": 30,
-        "usableForAudit": 30,
-        "excludedFromSemantics": 0,
-        "uniqueCopies": 6,
-        "active": 16,
-        "evidence": [
-          {
-            "id": "1032905139569476",
-            "corpusKey": "meta:1032905139569476",
-            "title": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS DE +5 PERSONAS. 👷‍♂️",
-            "copy": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS DE +5 PERSONAS. 👷‍♂️ · 🎯 ¿Quieres más Proyectos de Baños y Cocinas? 💰 Descubre cómo conseguir entre 15 y 30 presupuestos al mes. 👥 Personas que quieren reformar su baño o cocina 🔨 Proyectos de 10.000€ a 30.000€ 📅 Presupuestos TODOS los meses ✅ Exclusivos y 100% cualificados 📲…",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=1032905139569476",
-            "landingUrl": "https://witheya.com/saber-mas"
-          },
-          {
-            "id": "1002883692372428",
-            "corpusKey": "meta:1002883692372428",
-            "title": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS. 👷‍♂️",
-            "copy": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS. 👷‍♂️ · 🎯 ¿Quieres más Proyectos de Baños y Cocinas? 💰 Descubre cómo conseguir entre 15 y 30 presupuestos al mes. 👥 Personas que quieren reformar su baño o cocina 🔨 Proyectos de 10.000€ a 30.000€ 📅 Presupuestos TODOS los meses ✅ Exclusivos y 100% cualificados 📲 Rellena el for…",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=1002883692372428",
-            "landingUrl": "https://witheya.com/saber-mas"
-          },
-          {
-            "id": "2234357763764472",
-            "corpusKey": "meta:2234357763764472",
-            "title": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅",
-            "copy": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅ · 👷 ¿Tienes a tus obreros, teleoperadoras y comerciales sin trabajo? 📈 Recibe hasta 50 visitas adicionales al mes 🧠 Método validado en España 🎯 Exclusividad por comunidad autónoma 🔥 El primero se queda con la ciudad 📲 Rellena el formulario ahora · ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ · Learn m…",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=2234357763764472",
-            "landingUrl": "https://witheya.com/privacy-policy"
-          },
-          {
-            "id": "952606500928878",
-            "corpusKey": "meta:952606500928878",
-            "title": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅",
-            "copy": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅ · 🚫 Deja atrás sistemas que NO funcionan 📞 Consigue contactos sin depender de llamadas 🧠 Sistema especializado en reformas 📈 Flujo constante de proyectos reales 🔥 Plazas limitadas por zona (comunidad autónoma) · ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ · Learn more",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=952606500928878",
-            "landingUrl": "https://witheya.com/privacy-policy"
-          },
-          {
-            "id": "1001413712222831",
-            "corpusKey": "meta:1001413712222831",
-            "title": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅",
-            "copy": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅ · 🎯 Buscamos 3 empresas de reformas en tu zona 📈 Recibe hasta 50 visitas comerciales al mes 🧠 Método usado por líderes en España 🚀 Deja de perseguir clientes y elige obras 📲 Rellena el formulario ahora · ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ · Learn more",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=1001413712222831",
-            "landingUrl": "https://witheya.com/privacy-policy"
-          }
-        ]
-      },
-      "qualityScore": 89,
-      "scoreMeaning": "Índice heurístico de continuidad anuncio→landing; no mide conversión ni rendimiento.",
-      "confidence": {
-        "score": 89,
-        "label": "high",
-        "evaluatedShare": 77,
-        "captureShare": 100,
-        "note": "Comparación respaldada por varias piezas y captura suficiente."
-      },
-      "state": "coherent_sample",
-      "dimensions": [
-        {
-          "id": "promise",
-          "label": "Continuidad de promesa",
-          "weight": 22,
-          "status": "not_observed",
-          "score": null,
-          "rationale": "La captura no muestra una promesa suficientemente explícita para compararla.",
-          "signals": {
-            "adConcepts": [
-              "clients"
-            ],
-            "landingConcepts": [],
-            "sharedConcepts": [],
-            "lexicalOverlap": 0
-          }
-        },
-        {
-          "id": "audience",
-          "label": "Continuidad de audiencia",
-          "weight": 12,
-          "status": "aligned",
-          "score": 94,
-          "rationale": "El anuncio y la landing sostienen las mismas ideas principales.",
-          "signals": {
-            "adConcepts": [
-              "b2b",
-              "homeServices"
-            ],
-            "landingConcepts": [
-              "b2b",
-              "homeServices"
-            ],
-            "sharedConcepts": [
-              "b2b",
-              "homeServices"
-            ],
-            "lexicalOverlap": 0.222
-          }
-        },
-        {
-          "id": "offerMechanism",
-          "label": "Oferta y mecanismo",
-          "weight": 18,
-          "status": "aligned",
-          "score": 94,
-          "rationale": "El anuncio y la landing sostienen las mismas ideas principales.",
-          "signals": {
-            "adConcepts": [
-              "qualification",
-              "marketplace",
-              "training"
-            ],
-            "landingConcepts": [
-              "qualification",
-              "marketplace"
-            ],
-            "sharedConcepts": [
-              "qualification",
-              "marketplace"
-            ],
-            "lexicalOverlap": 0.778
-          }
-        },
-        {
-          "id": "cta",
-          "label": "Continuidad de CTA",
-          "weight": 14,
-          "status": "partial",
-          "score": 72,
-          "rationale": "La landing hace avanzar la intención, aunque cambia la acción exacta presentada en el anuncio.",
-          "signals": {
-            "adFamilies": [
-              "learn"
-            ],
-            "landingFamily": "message",
-            "adCtas": [
-              "Learn more"
-            ],
-            "landingCta": "Política de WhatsApp"
-          }
-        },
-        {
-          "id": "proof",
-          "label": "Respaldo de la promesa",
-          "weight": 10,
-          "status": "aligned",
-          "score": 90,
-          "rationale": "La landing mantiene una capa de prueba para las afirmaciones utilizadas en los anuncios.",
-          "signals": {
-            "adClaimsProof": true,
-            "landingShowsProof": true
-          }
-        },
-        {
-          "id": "commercialTerms",
-          "label": "Garantía y precio",
-          "weight": 8,
-          "status": "aligned",
-          "score": 92,
-          "rationale": "Las condiciones comerciales observadas mantienen continuidad.",
-          "signals": {
-            "adSignals": [
-              "price"
-            ],
-            "landingSignals": [
-              "price"
-            ],
-            "sharedSignals": [
-              "price"
-            ]
-          }
-        },
-        {
-          "id": "destinationFriction",
-          "label": "Destino y fricción",
-          "weight": 10,
-          "status": "aligned",
-          "score": 96,
-          "rationale": "El destino anunciado coincide con la página capturada.",
-          "signals": {
-            "observedDestinations": 2,
-            "poorDestinations": [
-              "https://witheya.com/privacy-policy"
-            ],
-            "primaryHostShare": 1,
-            "primaryUrl": "https://witheya.com/saber-mas",
-            "capturedUrl": "https://witheya.com/saber-mas",
-            "redirectObserved": false
-          }
-        },
-        {
-          "id": "captureCoverage",
-          "label": "Cobertura de captura",
-          "weight": 0,
-          "status": "aligned",
-          "score": 100,
-          "rationale": "Se capturó todo el recorrido planificado.",
-          "signals": {
-            "planned": 1,
-            "captured": 1,
-            "blocked": 0,
-            "failed": 0,
-            "fullPage": true
-          }
-        }
-      ],
-      "leaks": [],
-      "actions": [
-        {
-          "priority": 1,
-          "dimension": "cta",
-          "label": "Continuidad de CTA",
-          "action": "Alinear la acción prometida con el CTA principal y explicar cualquier paso intermedio.",
-          "basis": "La landing hace avanzar la intención, aunque cambia la acción exacta presentada en el anuncio."
-        }
-      ],
-      "limitation": "Lectura heurística de piezas y capturas públicas. La presencia de prueba no valida sus afirmaciones y el índice no identifica campañas ganadoras."
-    },
     {
       "id": "mpg-marketing-para-gimnasios::aHR0cHM6Ly9tYXJr",
       "companyId": "mpg-marketing-para-gimnasios",
@@ -1513,6 +1252,277 @@
           "label": "Continuidad de audiencia",
           "action": "Nombrar en el primer bloque al mismo público o caso de uso que activa el anuncio.",
           "basis": "Existe continuidad parcial, pero la formulación o el foco cambia al llegar a la landing."
+        }
+      ],
+      "limitation": "Lectura heurística de piezas y capturas públicas. La presencia de prueba no valida sus afirmaciones y el índice no identifica campañas ganadoras."
+    },
+    {
+      "id": "witheya::aHR0cHM6Ly93aXRo",
+      "companyId": "witheya",
+      "companyName": "Witheya",
+      "country": "España",
+      "vertical": "reformas-hogar",
+      "verticalLabel": "Reformas, obra y hogar",
+      "landing": {
+        "url": "https://witheya.com/saber-mas",
+        "destinationCount": 2,
+        "observedDestinations": [
+          "https://witheya.com/privacy-policy",
+          "https://witheya.com/saber-mas"
+        ],
+        "capture": {
+          "url": "https://witheya.com/saber-mas",
+          "requestedUrl": "https://witheya.com/saber-mas",
+          "finalUrl": "https://witheya.com/saber-mas",
+          "captureFile": "/evidence/witheya/site-4191b84b32-landing.webp",
+          "thumbnailFile": "/evidence/witheya/site-4191b84b32-landing-thumb.webp",
+          "captureStatus": "captured",
+          "capturedAt": "2026-08-26T13:51:40.878Z",
+          "headline": null,
+          "excerpt": "Descubre el sistema que nuestros clientes usan para generar 15 a 30 presupuestos exclusivos al mes con personas que quieren reformar su baño/cocina ahora. (10-30k€ por proyecto) El sistema que mantiene las cuadrillas de nuestros clientes trabajando los 12 meses del año con proyectos exclusivos y cualificados. Copyright 2026 | WITHEYA"
+        },
+        "captureStatus": "complete",
+        "read": {
+          "headline": null,
+          "promise": null,
+          "audience": "Público inferido de la especialización declarada: Agencia de generación de demanda para empresas de reformas.",
+          "offer": "El anunciante afirma conseguir entre 15 y 30 presupuestos exclusivos y cualificados al mes para proyectos de baños y cocinas de 10.000 a 30.000 €.",
+          "mechanism": [],
+          "primaryCta": null,
+          "proof": null,
+          "price": "No observado en las piezas recuperadas.",
+          "guarantee": "No se observó un condicionado de garantía; el anunciante afirma que más de 100 clientes confían en su sistema."
+        }
+      },
+      "ads": {
+        "total": 30,
+        "usableForAudit": 30,
+        "excludedFromSemantics": 0,
+        "uniqueCopies": 7,
+        "active": 16,
+        "evidence": [
+          {
+            "id": "2054683358478745",
+            "corpusKey": "meta:2054683358478745",
+            "title": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS DE +5 PERSONAS. 👷‍♂️",
+            "copy": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS DE +5 PERSONAS. 👷‍♂️ · 🎯 ¿Quieres más Proyectos de Baños y Cocinas? 💰 Descubre cómo conseguir entre 15 y 30 presupuestos al mes. 👥 Personas que quieren reformar su baño o cocina 🔨 Proyectos de 10.000€ a 30.000€ 📅 Presupuestos TODOS los meses ✅ Exclusivos y 100% cualificados 📲…",
+            "cta": "Learn more",
+            "sourceUrl": "https://facebook.com/ads/library?id=2054683358478745",
+            "landingUrl": "https://witheya.com/saber-mas"
+          },
+          {
+            "id": "1032905139569476",
+            "corpusKey": "meta:1032905139569476",
+            "title": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS DE +5 PERSONAS. 👷‍♂️",
+            "copy": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS DE +5 PERSONAS. 👷‍♂️ · 🎯 ¿Quieres más Proyectos de Baños y Cocinas? 💰 Descubre cómo conseguir entre 15 y 30 presupuestos al mes. 👥 Personas que quieren reformar su baño o cocina 🔨 Proyectos de 10.000€ a 30.000€ 📅 Presupuestos TODOS los meses ✅ Exclusivos y 100% cualificados 📲…",
+            "cta": "Learn more",
+            "sourceUrl": "https://facebook.com/ads/library?id=1032905139569476",
+            "landingUrl": "https://witheya.com/saber-mas"
+          },
+          {
+            "id": "1002883692372428",
+            "corpusKey": "meta:1002883692372428",
+            "title": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS. 👷‍♂️",
+            "copy": "SOLO PARA EMPRESAS DE REFORMAS CON CUADRILLAS. 👷‍♂️ · 🎯 ¿Quieres más Proyectos de Baños y Cocinas? 💰 Descubre cómo conseguir entre 15 y 30 presupuestos al mes. 👥 Personas que quieren reformar su baño o cocina 🔨 Proyectos de 10.000€ a 30.000€ 📅 Presupuestos TODOS los meses ✅ Exclusivos y 100% cualificados 📲 Rellena el for…",
+            "cta": "Learn more",
+            "sourceUrl": "https://facebook.com/ads/library?id=1002883692372428",
+            "landingUrl": "https://witheya.com/saber-mas"
+          },
+          {
+            "id": "2234357763764472",
+            "corpusKey": "meta:2234357763764472",
+            "title": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅",
+            "copy": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅ · 👷 ¿Tienes a tus obreros, teleoperadoras y comerciales sin trabajo? 📈 Recibe hasta 50 visitas adicionales al mes 🧠 Método validado en España 🎯 Exclusividad por comunidad autónoma 🔥 El primero se queda con la ciudad 📲 Rellena el formulario ahora · ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ · Learn m…",
+            "cta": "Learn more",
+            "sourceUrl": "https://facebook.com/ads/library?id=2234357763764472",
+            "landingUrl": "https://witheya.com/privacy-policy"
+          },
+          {
+            "id": "952606500928878",
+            "corpusKey": "meta:952606500928878",
+            "title": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅",
+            "copy": "15 Nuevos Proyectos para tu Empresa de Reformas! ✅ · 🚫 Deja atrás sistemas que NO funcionan 📞 Consigue contactos sin depender de llamadas 🧠 Sistema especializado en reformas 📈 Flujo constante de proyectos reales 🔥 Plazas limitadas por zona (comunidad autónoma) · ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ · Learn more",
+            "cta": "Learn more",
+            "sourceUrl": "https://facebook.com/ads/library?id=952606500928878",
+            "landingUrl": "https://witheya.com/privacy-policy"
+          }
+        ]
+      },
+      "qualityScore": 86,
+      "scoreMeaning": "Índice heurístico de continuidad anuncio→landing; no mide conversión ni rendimiento.",
+      "confidence": {
+        "score": 89,
+        "label": "high",
+        "evaluatedShare": 77,
+        "captureShare": 100,
+        "note": "Comparación respaldada por varias piezas y captura suficiente."
+      },
+      "state": "coherent_sample",
+      "dimensions": [
+        {
+          "id": "promise",
+          "label": "Continuidad de promesa",
+          "weight": 22,
+          "status": "not_observed",
+          "score": null,
+          "rationale": "La captura no muestra una promesa suficientemente explícita para compararla.",
+          "signals": {
+            "adConcepts": [
+              "leads",
+              "clients",
+              "sales"
+            ],
+            "landingConcepts": [],
+            "sharedConcepts": [],
+            "lexicalOverlap": 0
+          }
+        },
+        {
+          "id": "audience",
+          "label": "Continuidad de audiencia",
+          "weight": 12,
+          "status": "aligned",
+          "score": 94,
+          "rationale": "El anuncio y la landing sostienen las mismas ideas principales.",
+          "signals": {
+            "adConcepts": [
+              "b2b",
+              "homeServices"
+            ],
+            "landingConcepts": [
+              "b2b",
+              "homeServices"
+            ],
+            "sharedConcepts": [
+              "b2b",
+              "homeServices"
+            ],
+            "lexicalOverlap": 0.222
+          }
+        },
+        {
+          "id": "offerMechanism",
+          "label": "Oferta y mecanismo",
+          "weight": 18,
+          "status": "aligned",
+          "score": 94,
+          "rationale": "El anuncio y la landing sostienen las mismas ideas principales.",
+          "signals": {
+            "adConcepts": [
+              "qualification",
+              "marketplace",
+              "training"
+            ],
+            "landingConcepts": [
+              "qualification",
+              "marketplace"
+            ],
+            "sharedConcepts": [
+              "qualification",
+              "marketplace"
+            ],
+            "lexicalOverlap": 0.778
+          }
+        },
+        {
+          "id": "cta",
+          "label": "Continuidad de CTA",
+          "weight": 14,
+          "status": "partial",
+          "score": 72,
+          "rationale": "La landing hace avanzar la intención, aunque cambia la acción exacta presentada en el anuncio.",
+          "signals": {
+            "adFamilies": [
+              "learn"
+            ],
+            "landingFamily": "message",
+            "adCtas": [
+              "Learn more"
+            ],
+            "landingCta": "Política de WhatsApp"
+          }
+        },
+        {
+          "id": "proof",
+          "label": "Respaldo de la promesa",
+          "weight": 10,
+          "status": "aligned",
+          "score": 90,
+          "rationale": "La landing mantiene una capa de prueba para las afirmaciones utilizadas en los anuncios.",
+          "signals": {
+            "adClaimsProof": true,
+            "landingShowsProof": true
+          }
+        },
+        {
+          "id": "commercialTerms",
+          "label": "Garantía y precio",
+          "weight": 8,
+          "status": "partial",
+          "score": 62,
+          "rationale": "Solo una parte de las condiciones comerciales se conserva.",
+          "signals": {
+            "adSignals": [
+              "guarantee",
+              "price"
+            ],
+            "landingSignals": [
+              "price"
+            ],
+            "sharedSignals": [
+              "price"
+            ]
+          }
+        },
+        {
+          "id": "destinationFriction",
+          "label": "Destino y fricción",
+          "weight": 10,
+          "status": "aligned",
+          "score": 96,
+          "rationale": "El destino anunciado coincide con la página capturada.",
+          "signals": {
+            "observedDestinations": 2,
+            "poorDestinations": [
+              "https://witheya.com/privacy-policy"
+            ],
+            "primaryHostShare": 1,
+            "primaryUrl": "https://witheya.com/saber-mas",
+            "capturedUrl": "https://witheya.com/saber-mas",
+            "redirectObserved": false
+          }
+        },
+        {
+          "id": "captureCoverage",
+          "label": "Cobertura de captura",
+          "weight": 0,
+          "status": "aligned",
+          "score": 100,
+          "rationale": "Se capturó todo el recorrido planificado.",
+          "signals": {
+            "planned": 1,
+            "captured": 1,
+            "blocked": 0,
+            "failed": 0,
+            "fullPage": true
+          }
+        }
+      ],
+      "leaks": [],
+      "actions": [
+        {
+          "priority": 1,
+          "dimension": "cta",
+          "label": "Continuidad de CTA",
+          "action": "Alinear la acción prometida con el CTA principal y explicar cualquier paso intermedio.",
+          "basis": "La landing hace avanzar la intención, aunque cambia la acción exacta presentada en el anuncio."
+        },
+        {
+          "priority": 2,
+          "dimension": "commercialTerms",
+          "label": "Garantía y precio",
+          "action": "Repetir y aclarar precio, gratuidad o garantía, incluyendo condiciones visibles antes del formulario.",
+          "basis": "Solo una parte de las condiciones comerciales se conserva."
         }
       ],
       "limitation": "Lectura heurística de piezas y capturas públicas. La presencia de prueba no valida sus afirmaciones y el índice no identifica campañas ganadoras."
@@ -6373,7 +6383,7 @@
         "total": 13,
         "usableForAudit": 13,
         "excludedFromSemantics": 0,
-        "uniqueCopies": 3,
+        "uniqueCopies": 4,
         "active": 5,
         "evidence": [
           {
@@ -6383,6 +6393,15 @@
             "copy": "Tus setters cubren 8 horas. Tus leads escriben 24. · Pagas a alguien por responder tus mensajes y aun así hay leads que se enfrían esperando. No es culpa de tu equipo: un setter cubre 8 horas de las 24 que tienen tus leads para escribirte, y los que entran a las 23:00, en fin de semana o todos de golpe, los pagaste tú con tus a…",
             "cta": "Watch more",
             "sourceUrl": "https://facebook.com/ads/library?id=1047553238033775",
+            "landingUrl": "http://levelupagencies.com/"
+          },
+          {
+            "id": "1546201073647990",
+            "corpusKey": "meta:1546201073647990",
+            "title": "Tus setters cubren 8 horas. Tus leads escriben 24.",
+            "copy": "Tus setters cubren 8 horas. Tus leads escriben 24. · Pagas a alguien por responder tus mensajes y aun así hay leads que se enfrían esperando. No es culpa de tu equipo: un setter cubre 8 horas de las 24 que tienen tus leads para escribirte, y los que entran a las 23:00, en fin de semana o todos de golpe, los pagaste tú con tus a…",
+            "cta": "Watch more",
+            "sourceUrl": "https://facebook.com/ads/library?id=1546201073647990",
             "landingUrl": "http://levelupagencies.com/"
           },
           {
@@ -10620,11 +10639,11 @@
         }
       },
       "ads": {
-        "total": 57,
-        "usableForAudit": 43,
+        "total": 58,
+        "usableForAudit": 44,
         "excludedFromSemantics": 14,
         "uniqueCopies": 28,
-        "active": 15,
+        "active": 18,
         "evidence": [
           {
             "id": "1056796583455866",
@@ -10636,12 +10655,30 @@
             "landingUrl": "https://bastidafarina.com/politica-de-privacidad"
           },
           {
+            "id": "1690336198864173",
+            "corpusKey": "meta:1690336198864173",
+            "title": "🚀 Escala tus leads cualificados",
+            "copy": "🚀 Escala tus leads cualificados · ❗️”Tenemos mucho lead pero convertimos muy poco. La mayoría no contestan y cuando contestan están poco interesados” Esto es lo que nos dicen muchos de nuestros clientes antes de trabajar con nosotros cuando hablan de su problema. 🥲 Cada mes tienen que generar más y más leads porque solo conte…",
+            "cta": "Más información",
+            "sourceUrl": "https://facebook.com/ads/library?id=1690336198864173",
+            "landingUrl": null
+          },
+          {
             "id": "2361482910922154",
             "corpusKey": "meta:2361482910922154",
             "title": "",
             "copy": "📢 ¿Qué tienen en común nuestros clientes? Leads cualificados, ventas constantes y un retorno de inversión que habla por sí mismo. 🚀 En Bastida&Farina no hacemos promesas vacías, hacemos sistemas. Y aquí tienes los resultados que lo demuestran: 🔺 5.500 leads en solo 2 meses a un coste de 2€ cada uno. 🔺 Retorno x11 constante…",
             "cta": "",
             "sourceUrl": "https://facebook.com/ads/library?id=2361482910922154",
+            "landingUrl": null
+          },
+          {
+            "id": "3735740306576382",
+            "corpusKey": "meta:3735740306576382",
+            "title": "🚀 Escala tus leads cualificados",
+            "copy": "🚀 Escala tus leads cualificados · 📢 ¿Qué tienen en común nuestros clientes? Leads cualificados, ventas constantes y un retorno de inversión que habla por sí mismo. 🚀 En Bastida&Farina no hacemos promesas vacías, hacemos sistemas. Y aquí tienes los resultados que lo demuestran: 🔺 5.500 leads en solo 2 meses a un coste de 2€…",
+            "cta": "Más información",
+            "sourceUrl": "https://facebook.com/ads/library?id=3735740306576382",
             "landingUrl": null
           },
           {
@@ -10652,24 +10689,6 @@
             "cta": "Learn More",
             "sourceUrl": "https://facebook.com/ads/library?id=1354888976124668",
             "landingUrl": "http://fb.me/"
-          },
-          {
-            "id": "1331857582411685",
-            "corpusKey": "meta:1331857582411685",
-            "title": "En Bastida&Farina no hacemos promesas vacías, hacemos sistemas.",
-            "copy": "En Bastida&Farina no hacemos promesas vacías, hacemos sistemas. · 📣 ¿Por qué algunas empresas crecen mientras otras se estancan? La clave está en un sistema sólido, rentable y escalable para captar leads y convertirlos en ventas. 🚀 Soy Alejandro Bastida, cofundador de Bastida&Farina. En nuestra agencia creamos sistemas comple…",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=1331857582411685",
-            "landingUrl": "https://bastidafarina.com/business/youtube-ads-lead-generation"
-          },
-          {
-            "id": "2051891375748075",
-            "corpusKey": "meta:2051891375748075",
-            "title": "En B&F no hacemos promesas vacías, o tienes resultados o no pagas.",
-            "copy": "En B&F no hacemos promesas vacías, o tienes resultados o no pagas. · 🤔 ¿Confías tus campañas a cualquiera? Es como lanzarte montaña abajo con los ojos vendados: arriesgado, sin control... y seguramente, un desastre económico. 💸 En Bastida&Farina, pasamos del “a ver qué pasa” al “esto funciona”, con sistemas que ya han funcion…",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=2051891375748075",
-            "landingUrl": "https://bastidafarina.com/politica-de-privacidad"
           }
         ]
       },
@@ -10769,17 +10788,15 @@
           "signals": {
             "adFamilies": [
               "learn",
-              "booking",
-              "contact"
+              "booking"
             ],
             "landingFamily": "booking",
             "adCtas": [
               "Más información",
               "Learn more",
               "Agendar una llamada",
-              "📲 Haz clic, rellena el formulario y habla con nosotros. 😃",
               "Agenda tu llamada con el mejor equipo de captación de leads con más de 150 casos de éxito. Por algo damos garantías...",
-              "1️⃣ Falta de mecanismos para contactar al lead inmediatamente desde que entra y atenderle (incluso si es de noche o fin de semana)"
+              "Learn More"
             ],
             "landingCta": "Solicitar análisis gratuito o agendar reunión"
           }
@@ -14781,7 +14798,7 @@
         "total": 35,
         "usableForAudit": 35,
         "excludedFromSemantics": 0,
-        "uniqueCopies": 15,
+        "uniqueCopies": 16,
         "active": 11,
         "evidence": [
           {
@@ -19740,7 +19757,7 @@
         "total": 30,
         "usableForAudit": 30,
         "excludedFromSemantics": 0,
-        "uniqueCopies": 5,
+        "uniqueCopies": 6,
         "active": 6,
         "evidence": [
           {
@@ -20299,11 +20316,11 @@
         }
       },
       "ads": {
-        "total": 31,
-        "usableForAudit": 31,
+        "total": 34,
+        "usableForAudit": 34,
         "excludedFromSemantics": 0,
-        "uniqueCopies": 3,
-        "active": 17,
+        "uniqueCopies": 4,
+        "active": 20,
         "evidence": [
           {
             "id": "1004784728563530",
@@ -20313,6 +20330,15 @@
             "cta": "Watch More",
             "sourceUrl": "https://facebook.com/ads/library?id=1004784728563530",
             "landingUrl": "https://go.crecesinlimite.com/vsl-leadgen-fb"
+          },
+          {
+            "id": "1691269928894507",
+            "corpusKey": "meta:1691269928894507",
+            "title": "Leads Ultra Cualificados",
+            "copy": "Leads Ultra Cualificados · Descubre cómo en solo 30 días puedes reducir tu coste por cliente a la mitad, empezar a recibir leads ultra cualificados y añadir cientos de miles de euros a tu facturación. Haz clic para conocer la oferta completa. Luego, si te interesa, agenda una llamada. · Ver más",
+            "cta": "Ver más",
+            "sourceUrl": "https://facebook.com/ads/library?id=1691269928894507",
+            "landingUrl": null
           },
           {
             "id": "4188859364697227",
@@ -20422,7 +20448,8 @@
             "landingFamily": "booking",
             "adCtas": [
               "Watch More",
-              "Send message"
+              "Send message",
+              "Ver más"
             ],
             "landingCta": "'Agenda una llamada' / '¿Empezamos?' — formulario de admisión en go.crecesinlimite.com con entrega de 'Mapa de Crecimiento'"
           }
@@ -24248,9 +24275,9 @@
         }
       },
       "ads": {
-        "total": 43,
+        "total": 45,
         "usableForAudit": 3,
-        "excludedFromSemantics": 40,
+        "excludedFromSemantics": 42,
         "uniqueCopies": 3,
         "active": 0,
         "evidence": [
@@ -24509,7 +24536,7 @@
         "total": 30,
         "usableForAudit": 30,
         "excludedFromSemantics": 0,
-        "uniqueCopies": 10,
+        "uniqueCopies": 11,
         "active": 1,
         "evidence": [
           {
@@ -24549,12 +24576,12 @@
             "landingUrl": "https://agency.echale.es/vsl-fb-174376"
           },
           {
-            "id": "4351793555073765",
-            "corpusKey": "meta:4351793555073765",
+            "id": "1837041491007326",
+            "corpusKey": "meta:1837041491007326",
             "title": "Cierres > volumen",
-            "copy": "Cierres > volumen · Si tu clínica tiene 3 sillones o más, no tienes un problema de leads. Tienes agenda llena. Tienes primeras visitas. Puede que hasta tengas más presupuestos abiertos que nunca. Y aun así, la facturación no sube al ritmo que debería. ¿Por qué? Porque la mayoría de agencias de marketing dental están optimizadas…",
+            "copy": "Cierres > volumen · Si tu clínica factura +50.000€/mes, no tienes un problema de leads. Tienes agenda llena. Tienes primeras visitas. Puede que hasta tengas más presupuestos abiertos que nunca. Y aun así, la facturación no sube al ritmo que debería. ¿Por qué? Porque la mayoría de agencias de marketing dental están optimizadas p…",
             "cta": "Watch more",
-            "sourceUrl": "https://facebook.com/ads/library?id=4351793555073765",
+            "sourceUrl": "https://facebook.com/ads/library?id=1837041491007326",
             "landingUrl": "https://agency.echale.es/optin-276957"
           }
         ]
@@ -27886,11 +27913,11 @@
         }
       },
       "ads": {
-        "total": 52,
-        "usableForAudit": 51,
+        "total": 54,
+        "usableForAudit": 53,
         "excludedFromSemantics": 1,
-        "uniqueCopies": 9,
-        "active": 30,
+        "uniqueCopies": 11,
+        "active": 32,
         "evidence": [
           {
             "id": "1008813401630681",
@@ -27929,13 +27956,13 @@
             "landingUrl": "https://agencia-p.es/politica-de-privacidad"
           },
           {
-            "id": "26032077903156812",
-            "corpusKey": "meta:26032077903156812",
+            "id": "2100077874270095",
+            "corpusKey": "meta:2100077874270095",
             "title": "El problema de captar clientes en seguros hoy",
-            "copy": "El problema de captar clientes en seguros hoy · Hace unos años la mayoría de clientes llegaban por recomendaciones. Hoy muchas personas investigan y comparan antes de contratar un seguro. Esto está cambiando la forma en la que los agentes consiguen clientes. Haz clic en Más información para descubrir cómo adaptarte. · Learn more",
-            "cta": "Learn more",
-            "sourceUrl": "https://facebook.com/ads/library?id=26032077903156812",
-            "landingUrl": "https://agencia-p.es/politica-de-privacidad"
+            "copy": "El problema de captar clientes en seguros hoy · Hace unos años la mayoría de clientes llegaban por recomendaciones. Hoy muchas personas investigan y comparan antes de contratar un seguro. Esto está cambiando la forma en la que los agentes consiguen clientes. Haz clic en Más información para descubrir cómo adaptarte. · Registrar…",
+            "cta": "Registrarse",
+            "sourceUrl": "https://facebook.com/ads/library?id=2100077874270095",
+            "landingUrl": null
           }
         ]
       },
@@ -28020,14 +28047,16 @@
           "signals": {
             "adFamilies": [
               "learn",
-              "other"
+              "other",
+              "register"
             ],
             "landingFamily": "booking",
             "adCtas": [
               "Más información",
               "Learn More",
               "Learn more",
-              "Sign up"
+              "Sign up",
+              "Registrarse"
             ],
             "landingCta": "reservar demo"
           }
@@ -41495,11 +41524,11 @@
         }
       },
       "ads": {
-        "total": 60,
-        "usableForAudit": 59,
+        "total": 65,
+        "usableForAudit": 64,
         "excludedFromSemantics": 1,
-        "uniqueCopies": 11,
-        "active": 30,
+        "uniqueCopies": 15,
+        "active": 35,
         "evidence": [
           {
             "id": "1002170146134937",
@@ -41511,6 +41540,24 @@
             "landingUrl": "https://realestaterocket.io/registro-sh"
           },
           {
+            "id": "1056163916756708",
+            "corpusKey": "meta:1056163916756708",
+            "title": "Duplica tu facturación o no pagas",
+            "copy": "Duplica tu facturación o no pagas · Duplica Tu Facturación O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción. Esto es un sistema privado y de élite para dueños de agencia inmobiliaria de 40 y 50 años que ya facturan más de 100.000€ al año, están acostumbrados a ganar y están hartos de perder…",
+            "cta": "Ver más",
+            "sourceUrl": "https://facebook.com/ads/library?id=1056163916756708",
+            "landingUrl": null
+          },
+          {
+            "id": "1067167012518418",
+            "corpusKey": "meta:1067167012518418",
+            "title": "Duplica tu facturación o no pagas",
+            "copy": "Duplica tu facturación o no pagas · Duplica Tu Facturación O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción. Esto es un sistema privado y de élite para dueños de agencia inmobiliaria de 40 y 50 años que ya facturan más de 100.000€ al año, están acostumbrados a ganar y están hartos de perder…",
+            "cta": "Watch more",
+            "sourceUrl": "https://facebook.com/ads/library?id=1067167012518418",
+            "landingUrl": "https://realestaterocket.io/registro-bh"
+          },
+          {
             "id": "1093720053171317",
             "corpusKey": "meta:1093720053171317",
             "title": "",
@@ -41520,31 +41567,13 @@
             "landingUrl": "http://instagram.com/pablovalverdebusiness"
           },
           {
-            "id": "1355355746804722",
-            "corpusKey": "meta:1355355746804722",
-            "title": "x2 tu facturación de 2025 en 2026",
-            "copy": "x2 tu facturación de 2025 en 2026 · Factura Un Millón Con Tu Agencia Inmobiliaria O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción. Esto es un sistema privado y de élite para dueños de agencia inmobiliaria que ya facturan más de 100.000€ al año, están acostumbrados a ganar y saben que su ag…",
-            "cta": "See details",
-            "sourceUrl": "https://facebook.com/ads/library?id=1355355746804722",
-            "landingUrl": "https://realestaterocket.io/registro-bh"
-          },
-          {
-            "id": "1418626906810692",
-            "corpusKey": "meta:1418626906810692",
-            "title": "x2 tu facturación de 2025 en 2026",
-            "copy": "x2 tu facturación de 2025 en 2026 · Factura Un Millón Con Tu Agencia Inmobiliaria O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción. Esto es un sistema privado y de élite para dueños de agencia inmobiliaria que ya facturan más de 100.000€ al año, están acostumbrados a ganar y saben que su ag…",
-            "cta": "Watch More",
-            "sourceUrl": "https://facebook.com/ads/library?id=1418626906810692",
-            "landingUrl": "https://realestaterocket.io/registro-bh"
-          },
-          {
-            "id": "1423188636340921",
-            "corpusKey": "meta:1423188636340921",
-            "title": "x2 tu facturación de 2025 en 2026",
-            "copy": "x2 tu facturación de 2025 en 2026 · Factura Un Millón Con Tu Agencia Inmobiliaria O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción. Esto es un sistema privado y de élite para dueños de agencia inmobiliaria que ya facturan más de 100.000€ al año, están acostumbrados a ganar y saben que su ag…",
-            "cta": "Watch more",
-            "sourceUrl": "https://facebook.com/ads/library?id=1423188636340921",
-            "landingUrl": "https://realestaterocket.io/registro-bh"
+            "id": "1100589872913777",
+            "corpusKey": "meta:1100589872913777",
+            "title": "",
+            "copy": "Duplica Tu Facturación O No Pagas. Solo para agencias que facturan más de 100.000€. Solo para gente de acción. Esto es un sistema privado y de élite para dueños de agencia inmobiliaria de 40 y 50 años que ya facturan más de 100.000€ al año, están acostumbrados a ganar y están hartos de perder exclusivas en su propia zona frente…",
+            "cta": "Visit Instagram profile",
+            "sourceUrl": "https://facebook.com/ads/library?id=1100589872913777",
+            "landingUrl": "http://instagram.com/pablovalverdebusiness"
           }
         ]
       },
@@ -41629,7 +41658,8 @@
               "Watch more",
               "Visit Instagram profile",
               "See details",
-              "Watch More"
+              "Watch More",
+              "Ver más"
             ],
             "landingCta": null
           }

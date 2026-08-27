@@ -29,6 +29,8 @@ const coveragePath = resolve(root, "public/data/ad-coverage.json");
 const scrapeCreatorsPath = resolve(root, "db/scrapecreators-spain-leadgen.json");
 const scrapeCreatorsMapPath = resolve(root, "scripts/data/scrapecreators-company-map.json");
 const scrapeCreatorsMediaPath = resolve(root, "public/data/scrapecreators-media-index.json");
+const leadMarketPath = resolve(root, "db/leads-market-spain-2026-08-26.json");
+const leadMarketReviewPath = resolve(root, "scripts/data/leads-market-company-review.json");
 const TRANSLATION_RECIPE_VERSION = "rv-mt-es-v22";
 const TRANSLATABLE_LANGUAGES = new Set([
   "en", "fr", "de", "it", "ru", "pt", "tr", "ar", "ja", "zh", "ko", "he",
@@ -76,6 +78,12 @@ const scrapeCreatorsMap = existsSync(scrapeCreatorsMapPath)
 const scrapeCreatorsMedia = existsSync(scrapeCreatorsMediaPath)
   ? JSON.parse(readFileSync(scrapeCreatorsMediaPath, "utf8"))
   : { items: {} };
+const leadMarketData = existsSync(leadMarketPath)
+  ? JSON.parse(readFileSync(leadMarketPath, "utf8"))
+  : { items: [] };
+const leadMarketReview = existsSync(leadMarketReviewPath)
+  ? JSON.parse(readFileSync(leadMarketReviewPath, "utf8"))
+  : { pageIds: {} };
 
 const normalizeText = (value) =>
   String(value || "")
@@ -212,6 +220,19 @@ const localMediaAssets = (value) => (Array.isArray(value) ? value : [])
 
 const isHighConfidenceMatch = (value) =>
   String(value || "").trim().toLocaleLowerCase("en") === "high";
+
+// El informe secundario marcaba cualquier cifra en euros como “precio”. Solo
+// estas menciones tienen contexto de precio pagable revisado; el resto se
+// conserva en el copy, pero no alimenta el filtro de precio del laboratorio.
+const LEAD_MARKET_REVIEWED_PRICES = new Map([
+  ["2076944506550929", "10 €/lead"],
+  ["1403656351829330", "10 €/lead"],
+  ["1377645054476359", "10 €/lead"],
+  ["1072452485525268", "10 €/lead"],
+  ["1551160893052106", "79,99 €/mes"],
+  ["1748414716364402", "129 €/mes"],
+  ["1967587027234094", "19 €/mes"],
+]);
 
 const metaIdentity = (externalId) => {
   const id = String(externalId || "").trim();
@@ -404,19 +425,54 @@ for (const item of structured) {
   ).split("\n");
 }
 
-// ScrapeCreators aporta copy estructurado y metadatos exactos de Meta. El
+// Las fuentes estructuradas aportan copy y metadatos exactos de Meta. Cada
 // pageId se resuelve únicamente mediante un mapa editorial explícito: ni el
 // nombre del anunciante ni el dominio bastan para atribuir una creatividad.
 const scrapeCreatorsAds = [];
 const scrapeCreatorsSeen = new Set();
-for (const ad of scrapeCreatorsData.items || []) {
+const structuredSources = [
+  { items: scrapeCreatorsData.items || [], origin: "api_scrapecreators", review: scrapeCreatorsMap },
+  { items: leadMarketData.items || [], origin: "informe_mercado_leads", review: leadMarketReview },
+];
+for (const source of structuredSources) for (const ad of source.items) {
   const externalId = String(ad.externalId || "").trim();
   const identity = metaIdentity(externalId);
   const pageId = String(ad.pageId || "").trim();
-  const mapping = scrapeCreatorsMap.pageIds?.[pageId];
+  const mapping = source.review.pageIds?.[pageId] || (
+    source.origin === "informe_mercado_leads"
+      ? scrapeCreatorsMap.pageIds?.[pageId]
+      : null
+  );
+  if (identity && scrapeCreatorsSeen.has(identity)) {
+    if (
+      source.origin === "informe_mercado_leads" &&
+      mapping?.status === "matched" &&
+      companyById.has(mapping.companyId)
+    ) {
+      const existing = scrapeCreatorsAds.find((item) => item.corpusKey === identity);
+      if (existing) {
+        existing.researchSnapshotId = ad.marketIntelligence?.sourceSnapshotId || null;
+        existing.marketCategory = ad.marketIntelligence?.category || null;
+        existing.marketVerticals = Array.isArray(ad.marketIntelligence?.verticals)
+          ? [...ad.marketIntelligence.verticals]
+          : [];
+        existing.marketGuarantees = Array.isArray(ad.marketIntelligence?.guarantees)
+          ? [...ad.marketIntelligence.guarantees]
+          : [];
+        existing.precioVisible = LEAD_MARKET_REVIEWED_PRICES.get(externalId) || "";
+        existing.priceEvidenceRole = LEAD_MARKET_REVIEWED_PRICES.has(externalId)
+          ? "offer_price_reviewed"
+          : "currency_mentions_not_treated_as_price";
+        existing.evidenceLayers = [...new Set([
+          ...(existing.evidenceLayers || [existing.origen]),
+          source.origin,
+        ].filter(Boolean))];
+      }
+    }
+    continue;
+  }
   if (
     !identity ||
-    scrapeCreatorsSeen.has(identity) ||
     mapping?.status !== "matched" ||
     !companyById.has(mapping.companyId)
   ) continue;
@@ -427,10 +483,24 @@ for (const ad of scrapeCreatorsData.items || []) {
     (!indexedMedia.companyId || indexedMedia.companyId === mapping.companyId) &&
     (!indexedMedia.pageId || String(indexedMedia.pageId) === pageId);
   const media = mediaMatches ? indexedMedia : {};
-  const file = publicMediaFile(media.file);
+  const sourceLocalFile = publicMediaFile(ad.media?.localFile);
+  const file = publicMediaFile(media.file) || sourceLocalFile;
   const videoFile = publicMediaFile(media.videoFile);
-  const posterFile = publicMediaFile(media.posterFile);
-  const mediaAssets = localMediaAssets(media.mediaAssets);
+  const posterFile = publicMediaFile(media.posterFile) || (
+    ad.media?.role === "video_poster" ? sourceLocalFile : ""
+  );
+  const mediaAssets = localMediaAssets(media.mediaAssets).length
+    ? localMediaAssets(media.mediaAssets)
+    : (sourceLocalFile ? [{
+        file: sourceLocalFile,
+        localFile: sourceLocalFile,
+        kind: ad.media?.role === "video_poster" ? "poster" : "image",
+        type: ad.media?.type || "image/jpeg",
+        bytes: Number(ad.media?.bytes || 0),
+        width: Number(ad.media?.width || 0) || null,
+        height: Number(ad.media?.height || 0) || null,
+        sha256: String(ad.media?.sha256 || ""),
+      }] : []);
   const title = String(ad.copy?.title || "");
   const text = String(ad.copy?.text || "");
   const description = String(ad.copy?.description || "");
@@ -465,11 +535,16 @@ for (const ad of scrapeCreatorsData.items || []) {
     extraTexts: Array.isArray(ad.copy?.extraTexts) ? [...ad.copy.extraTexts] : [],
     structuredCopyAvailable,
     ctaType: String(ad.cta?.type || ""),
-    precioVisible: priceFrom(copyForAnalysis),
+    precioVisible: source.origin === "informe_mercado_leads"
+      ? (LEAD_MARKET_REVIEWED_PRICES.get(externalId) || "")
+      : priceFrom(copyForAnalysis),
+    priceEvidenceRole: source.origin === "informe_mercado_leads"
+      ? (LEAD_MARKET_REVIEWED_PRICES.has(externalId) ? "offer_price_reviewed" : "currency_mentions_not_treated_as_price")
+      : null,
     angulo: angleFrom(copyForAnalysis),
     capturaEnVivo: typeof ad.isActive === "boolean" ? ad.isActive : false,
     fecha: String(ad.startedAt || "").slice(0, 10),
-    origen: "api_scrapecreators",
+    origen: source.origin,
     transcripcion: transcript,
     transcript,
     estadoEvidencia: "Copy estructurado · ID público exacto · Page ID resuelto editorialmente",
@@ -497,7 +572,15 @@ for (const ad of scrapeCreatorsData.items || []) {
     publisherPlatforms,
     mappingConfidence: String(mapping.confidence || ""),
     mappingNote: String(mapping.note || ""),
-    evidenceLayers: ["api_scrapecreators"],
+    researchSnapshotId: ad.marketIntelligence?.sourceSnapshotId || null,
+    marketCategory: ad.marketIntelligence?.category || null,
+    marketVerticals: Array.isArray(ad.marketIntelligence?.verticals)
+      ? [...ad.marketIntelligence.verticals]
+      : [],
+    marketGuarantees: Array.isArray(ad.marketIntelligence?.guarantees)
+      ? [...ad.marketIntelligence.guarantees]
+      : [],
+    evidenceLayers: [source.origin],
     corpusKey: identity,
   });
 }
@@ -777,7 +860,7 @@ for (const candidate of scrapeCreatorsAds) {
     continue;
   }
 
-  // El registro API sustituye el copy derivado de una captura, pero conserva
+  // El registro estructurado sustituye el copy derivado de una captura, pero conserva
   // el archivo canónico ya auditado si esa creatividad estaba en el corpus.
   const existing = items[existingIndex];
   const keepExistingVisibleCopy =
@@ -815,7 +898,8 @@ for (const candidate of scrapeCreatorsAds) {
     variantFiles: variantFiles.length > 1 ? variantFiles : existing.variantFiles,
     evidenceLayers: [...new Set([
       ...(existing.evidenceLayers || [existing.origen]),
-      "api_scrapecreators",
+      ...(candidate.evidenceLayers || []),
+      candidate.origen,
     ].filter(Boolean))],
   };
 }
@@ -840,7 +924,7 @@ for (const candidate of ocr) {
     continue;
   }
   if (
-    existing.origen === "api_scrapecreators" &&
+    ["api_scrapecreators", "informe_mercado_leads"].includes(existing.origen) &&
     !existing.structuredCopyAvailable &&
     isUseful(`${candidate.titular || ""}\n${candidate.texto || ""}\n${candidate.cta || ""}`)
   ) {
@@ -894,7 +978,7 @@ for (const audit of ocrAuditData.items || []) {
   };
   if (existing) {
     Object.assign(existing, common);
-    if (existing.origen === "api_scrapecreators" && existing.structuredCopyAvailable) {
+    if (["api_scrapecreators", "informe_mercado_leads"].includes(existing.origen) && existing.structuredCopyAvailable) {
       existing.estadoOcr = "no_necesario";
     }
     if (existing.file && existing.file !== audit.file) {

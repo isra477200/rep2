@@ -22,26 +22,29 @@ test("modal layers close through browser history without reopening stale records
   assert.match(record, /event\.preventDefault\(\)[\s\S]*?window\.history\.replaceState/);
 });
 
-test("the base snapshot stays coherent while the live index owns current gallery coverage", async () => {
-  const [companies, liveCompanies, countries, summary, audit, media] = await Promise.all([
+test("the base snapshot stays coherent while live records and study archives own gallery coverage", async () => {
+  const [companies, liveCompanies, countries, summary, audit, study, media] = await Promise.all([
     json("public/data/companies.json"),
     json("public/data/companies-index.json"),
     json("public/data/countries.json"),
     json("public/data/summary.json"),
     json("public/data/audit.json"),
+    json("public/data/lead-market-snapshot.json"),
     readdir(new URL("public/media/", root)),
   ]);
 
+  const declaredMedia = [
+    ...liveCompanies.flatMap((company) =>
+      company.media.map((item) => item.file.replace(/^\/media\//, "")),
+    ),
+    ...study.creativeIndex.map((item) => item.image.replace(/^\/media\//, "")),
+  ];
   assert.equal(companies.length, 712);
   assert.equal(countries.length, 195);
-  assert.equal(media.length, liveCompanies.flatMap((company) => company.media).length);
+  assert.equal(media.length, new Set(declaredMedia).size);
   assert.deepEqual(
     new Set(media),
-    new Set(
-      liveCompanies.flatMap((company) =>
-        company.media.map((item) => item.file.replace(/^\/media\//, "")),
-      ),
-    ),
+    new Set(declaredMedia),
   );
   assert.equal(summary.companies, 712);
   assert.equal(summary.countries, 195);

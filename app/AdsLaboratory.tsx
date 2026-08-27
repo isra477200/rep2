@@ -65,6 +65,44 @@ type MatrixRow = {
   challengers: MatrixOption[];
 };
 
+type LeadMarketSnapshot = {
+  id: string;
+  observedAt: string;
+  note: string;
+  methodology: {
+    apiCallsOrCredits: number;
+    analyzedAds: number;
+    discardedAsNoise: number;
+    limitation: string;
+  };
+  kpis: {
+    analyzedAds: number;
+    providerAds: number;
+    providerPages: number;
+    detailedCreatives: number;
+    detailedPages: number;
+    uniqueCopyBodies: number;
+    uniqueImages: number;
+    copyCloneClusters: number;
+  };
+  editorialReview: {
+    matchedPageIds: number;
+    matchedCompanyIds: number;
+    quarantinedPageIds: number;
+    watchlistPageIds: number;
+    policy: string;
+  };
+  cloneClusters: Array<{
+    id: string;
+    title: string;
+    pages: string[];
+    adCount: number;
+    listedExternalIdCount: number;
+    countConsistent: boolean;
+  }>;
+  qualityWarnings: string[];
+};
+
 export type AdsLaboratoryProps = {
   /** Si no se pasa, el componente carga /data/ad-corpus.json por sí solo. */
   data?: AnunciosRealesData | null;
@@ -1010,6 +1048,7 @@ export default function AdsLaboratory({
 }: AdsLaboratoryProps) {
   const [remoteData, setRemoteData] = useState<AnunciosRealesData | null>(null);
   const [remoteCoverage, setRemoteCoverage] = useState<AdCoverageData | null>(null);
+  const [leadMarketSnapshot, setLeadMarketSnapshot] = useState<LeadMarketSnapshot | null>(null);
   const [loadError, setLoadError] = useState("");
   const [section, setSection] = useState<LabSection>(initialSection);
   const [query, setQuery] = useState(initialQuery);
@@ -1035,6 +1074,7 @@ export default function AdsLaboratory({
   const [filterDialogMode, setFilterDialogMode] = useState(false);
   const [liveOnly, setLiveOnly] = useState(false);
   const [selectedOnly, setSelectedOnly] = useState(false);
+  const [leadMarketOnly, setLeadMarketOnly] = useState(false);
   const [visible, setVisible] = useState(DEFAULT_VISIBLE);
   const [patternDimension, setPatternDimension] = useState<PatternDimension>("angle");
   const [patternView, setPatternView] = useState<PatternView>("signals");
@@ -1093,6 +1133,21 @@ export default function AdsLaboratory({
       });
     return () => controller.abort();
   }, [suppliedCoverage]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/data/lead-market-snapshot.json", { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json() as Promise<LeadMarketSnapshot>;
+      })
+      .then(setLeadMarketSnapshot)
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+        // Es una capa contextual; un fallo no bloquea el corpus principal.
+      });
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     const media = window.matchMedia("(max-width: 1280px)");
@@ -1251,6 +1306,7 @@ export default function AdsLaboratory({
       if (liveOnly && !(ad.ad.isActive ?? ad.ad.capturaEnVivo)) return false;
       if (selectedOnly && !selectedSet.has(ad.key)) return false;
       if (signalEvidenceKeys.length && !signalEvidenceKeys.includes(ad.key)) return false;
+      if (leadMarketOnly && ad.ad.researchSnapshotId !== leadMarketSnapshot?.id) return false;
       return true;
     });
     if (sort === "relevance" && queryTerms.length) {
@@ -1284,7 +1340,7 @@ export default function AdsLaboratory({
     if (sort === "confidence") result.sort((left, right) => confidenceSortValue(right.ad) - confidenceSortValue(left.ad) || left.index - right.index);
     if (sort === "newest") result.sort((left, right) => sortableAdDate(right.ad) - sortableAdDate(left.ad) || left.index - right.index);
     return result;
-  }, [ads, angle, company, countries, cta, evidenceFilter, format, hook, languages, liveOnly, mechanic, mediaTypes, ocrStatuses, platformFamilies, promise, query, searchScope, selectedOnly, selectedSet, signalEvidenceKeys, sort, translationStatuses, vertical]);
+  }, [ads, angle, company, countries, cta, evidenceFilter, format, hook, languages, leadMarketOnly, leadMarketSnapshot?.id, liveOnly, mechanic, mediaTypes, ocrStatuses, platformFamilies, promise, query, searchScope, selectedOnly, selectedSet, signalEvidenceKeys, sort, translationStatuses, vertical]);
 
   const coverage = useMemo(() => {
     const companies = new Map<string, { name: string; count: number }>();
@@ -1469,6 +1525,7 @@ export default function AdsLaboratory({
     setSearchScope("both");
     setLiveOnly(false);
     setSelectedOnly(false);
+    setLeadMarketOnly(false);
     setSignalEvidenceKeys([]);
     setSignalEvidenceLabel("");
     setVisible(DEFAULT_VISIBLE);
@@ -1505,12 +1562,13 @@ export default function AdsLaboratory({
     setVisible(DEFAULT_VISIBLE);
   };
 
-  const applyQuickPreset = (preset: "eligible" | "translated" | "reviewed" | "spain" | "meta") => {
+  const applyQuickPreset = (preset: "eligible" | "translated" | "reviewed" | "spain" | "meta" | "lead-market") => {
     if (preset === "eligible") setEvidenceFilter((current) => current === EVIDENCE_ELIGIBLE ? ALL : EVIDENCE_ELIGIBLE);
     if (preset === "translated") setTranslationStatuses((current) => current.length === 2 && current.includes("automatica") && current.includes("revisada") ? [] : ["automatica", "revisada"]);
     if (preset === "reviewed") setTranslationStatuses((current) => current.length === 1 && current[0] === "revisada" ? [] : ["revisada"]);
     if (preset === "spain") setCountries((current) => current.length === 1 && current[0] === "España" ? [] : ["España"]);
     if (preset === "meta") setPlatformFamilies((current) => current.length === 2 && current.includes("meta") && current.includes("instagram") ? [] : ["meta", "instagram"]);
+    if (preset === "lead-market") setLeadMarketOnly((current) => !current);
     setVisible(DEFAULT_VISIBLE);
   };
 
@@ -1522,7 +1580,7 @@ export default function AdsLaboratory({
     ...ocrStatuses,
     ...mediaTypes,
   ].length + [company, vertical, hook, angle, promise, mechanic, format, cta, evidenceFilter]
-    .filter((value) => value !== ALL).length + (query.trim() ? 1 : 0) + (selectedOnly ? 1 : 0) + (liveOnly ? 1 : 0) + (signalEvidenceKeys.length ? 1 : 0);
+    .filter((value) => value !== ALL).length + (query.trim() ? 1 : 0) + (selectedOnly ? 1 : 0) + (liveOnly ? 1 : 0) + (leadMarketOnly ? 1 : 0) + (signalEvidenceKeys.length ? 1 : 0);
 
   const optionLabel = (group: FacetOption[], value: string) =>
     group.find((option) => option.value === value)?.label || value;
@@ -1567,6 +1625,45 @@ export default function AdsLaboratory({
         <article><span>Lectura bilingüe</span><strong>{ads.filter((item) => item.ad.traduccionEs).length}</strong><small>{ads.filter((item) => item.ad.estadoTraduccion === "revisada").length} piezas revisadas</small></article>
       </section>
 
+      {leadMarketSnapshot && (
+        <details className="ads-lab-market-study">
+          <summary>
+            <span><b>Estudio incorporado · 26 ago 2026</b><small>Meta Ads · mercado de leads en España</small></span>
+            <strong>{leadMarketSnapshot.kpis.detailedCreatives} creatividades archivadas</strong>
+          </summary>
+          <div className="ads-lab-market-study-body">
+            <section className="ads-lab-market-study-metrics" aria-label="Cobertura del estudio importado">
+              <article><span>Universo analizado</span><b>{leadMarketSnapshot.kpis.analyzedAds}</b><small>según el informe</small></article>
+              <article><span>Evidencia detallada</span><b>{leadMarketSnapshot.kpis.detailedCreatives}</b><small>{leadMarketSnapshot.kpis.detailedPages} páginas con ID + copy + imagen</small></article>
+              <article><span>Diversidad real</span><b>{leadMarketSnapshot.kpis.uniqueCopyBodies}</b><small>copies únicos · {leadMarketSnapshot.kpis.uniqueImages} imágenes únicas</small></article>
+              <article><span>Resolución editorial</span><b>{leadMarketSnapshot.editorialReview.matchedCompanyIds}</b><small>nuevas fichas aprobadas</small></article>
+            </section>
+            <div className="ads-lab-market-study-copy">
+              <div>
+                <h3>Qué aporta</h3>
+                <p>Amplía el buscador con anuncios, posters, CTA, formatos, verticales y señales de oferta. Los duplicados se conservan como presión publicitaria, pero el motor deduplica el copy para no confundir repetición con diversidad.</p>
+                <p><b>Límite:</b> {leadMarketSnapshot.methodology.limitation}</p>
+              </div>
+              <div>
+                <h3>Control de calidad</h3>
+                <p>{leadMarketSnapshot.editorialReview.quarantinedPageIds} páginas quedaron en cuarentena y {leadMarketSnapshot.editorialReview.watchlistPageIds} en observación. Las cifras monetarias no se tratan como precio salvo cuando el contexto de pago fue revisado.</p>
+                <p>No hay gasto, impresiones ni conversiones: aquí “recurrente” significa observado en varias empresas, nunca ganador.</p>
+              </div>
+            </div>
+            <section className="ads-lab-market-clones" aria-label="Copy compartido entre páginas">
+              <header><h3>Copy compartido entre páginas</h3><small>Hipótesis de plantilla o sindicación; no prueba autoría común.</small></header>
+              <div>{leadMarketSnapshot.cloneClusters.map((cluster) => (
+                <article key={cluster.id}>
+                  <b>{cluster.title}</b>
+                  <span>{cluster.pages.join(" · ")}</span>
+                  <small>{cluster.adCount} anuncios declarados · {cluster.listedExternalIdCount} IDs enumerados{cluster.countConsistent ? "" : " · inconsistencia conservada"}</small>
+                </article>
+              ))}</div>
+            </section>
+          </div>
+        </details>
+      )}
+
       <div className="ads-lab-tabs-shell">
         <div className="ads-lab-tabs" role="tablist" aria-label="Secciones del laboratorio">
           {([
@@ -1610,6 +1707,7 @@ export default function AdsLaboratory({
             <button type="button" className={translationStatuses.length === 1 && translationStatuses[0] === "revisada" ? "active" : ""} onClick={() => applyQuickPreset("reviewed")}>Revisadas</button>
             <button type="button" className={countries.length === 1 && countries[0] === "España" ? "active" : ""} onClick={() => applyQuickPreset("spain")}>España</button>
             <button type="button" className={platformFamilies.length === 2 && platformFamilies.includes("meta") && platformFamilies.includes("instagram") ? "active" : ""} onClick={() => applyQuickPreset("meta")}>Meta + Instagram</button>
+            {leadMarketSnapshot && <button type="button" className={leadMarketOnly ? "active" : ""} onClick={() => applyQuickPreset("lead-market")}>Estudio · 26 ago</button>}
           </div>
         )}
       </div>
@@ -1635,6 +1733,7 @@ export default function AdsLaboratory({
           {mediaTypes.map((value) => <button key={`media-${value}`} onClick={() => toggleFacet(value, setMediaTypes)}>Media · {optionLabel(options.mediaTypes, value)} ×</button>)}
           {selectedOnly && <button onClick={() => setSelectedOnly(false)}>Solo selección ×</button>}
           {liveOnly && <button onClick={() => setLiveOnly(false)}>Anuncio activo ×</button>}
+          {leadMarketOnly && <button onClick={() => setLeadMarketOnly(false)}>Estudio mercado leads ×</button>}
           <button className="clear" onClick={resetFilters}>Limpiar todo</button>
         </div>
       )}
@@ -1738,6 +1837,7 @@ export default function AdsLaboratory({
                         <span>{OCR_STATUS_LABELS[item.ad.estadoOcr || "pendiente"] || item.ad.estadoOcr}</span>
                         <span>{LANGUAGE_STATUS_LABELS[item.ad.estadoTraduccion || "pendiente"] || item.ad.estadoTraduccion}</span>
                         <span title="OCR, atribución, fuente y traducción; no mide rendimiento creativo">Evidencia · {item.qualityScore}/100</span>
+                        {item.ad.researchSnapshotId && <span className="market-study">Estudio España · 26 ago</span>}
                       </div>
                       <BilingualCopy ad={item.ad} mode={languageMode} />
                       <div className="ads-lab-tags">
@@ -1770,6 +1870,9 @@ export default function AdsLaboratory({
                         {dateRange && <small><b>Periodo:</b> {dateRange}</small>}
                         {Number(item.ad.variantCount || 1) > 1 && <small><b>Variantes agrupadas:</b> {item.ad.variantCount} archivos de la misma identidad</small>}
                         {media.assetCount > 0 && <small><b>Activos asociados:</b> {media.assetCount}</small>}
+                        {item.ad.marketCategory && <small><b>Categoría del estudio:</b> {item.ad.marketCategory}</small>}
+                        {item.ad.marketVerticals?.length ? <small><b>Verticales observadas:</b> {item.ad.marketVerticals.join(" · ")}</small> : null}
+                        {item.ad.priceEvidenceRole === "currency_mentions_not_treated_as_price" && <small><b>Control monetario:</b> hay cifras en el copy, pero no se clasifican como precio sin contexto de pago.</small>}
                         {item.ad.origen && <small><b>Origen:</b> {item.ad.origen}</small>}
                         {item.ad.atribucion && <small><b>Atribución:</b> {item.ad.atribucion}</small>}
                         {item.ad.anunciante && <small><b>Anunciante:</b> {item.ad.anunciante}</small>}
@@ -2035,12 +2138,13 @@ const LAB_CSS = String.raw`
 
 /* Pattern intelligence · capa analítica y responsive */
 .ads-lab{max-width:100%;overflow-x:clip}.ads-lab-panel{min-width:0}.ads-lab-snapshot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid #d7dee8;background:#f7f9fc;padding:14px 28px}.ads-lab-snapshot article{min-width:0;padding:8px 18px;border-right:1px solid #d7dee8}.ads-lab-snapshot article:first-child{padding-left:0}.ads-lab-snapshot article:last-child{border-right:0}.ads-lab-snapshot span,.ads-lab-snapshot strong,.ads-lab-snapshot small{display:block}.ads-lab-snapshot span{color:#5f6368;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.055em}.ads-lab-snapshot strong{margin:4px 0 2px;color:#15161a;font-size:24px;line-height:28px}.ads-lab-snapshot small{overflow:hidden;color:#5f6368;font-size:12px;line-height:17px;text-overflow:ellipsis}
+.ads-lab-market-study{margin:14px 28px;border:1px solid #c8d5e8;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.06)}.ads-lab-market-study>summary{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:68px;padding:14px 18px;background:linear-gradient(135deg,#f4f8ff,#fff);cursor:pointer;list-style:none}.ads-lab-market-study>summary::-webkit-details-marker{display:none}.ads-lab-market-study>summary:after{content:"+";flex:none;display:grid;place-items:center;width:28px;height:28px;border:1px solid #c8d5e8;border-radius:50%;color:#0b57d0;font-size:18px;font-weight:500}.ads-lab-market-study[open]>summary:after{content:"−"}.ads-lab-market-study>summary span{min-width:0;flex:1}.ads-lab-market-study>summary b,.ads-lab-market-study>summary small,.ads-lab-market-study>summary strong{display:block}.ads-lab-market-study>summary b{color:#174f9f;font-size:14px;line-height:20px}.ads-lab-market-study>summary small{margin-top:2px;color:#5f6368;font-size:12px}.ads-lab-market-study>summary strong{flex:none;color:#15161a;font-size:15px}.ads-lab-market-study-body{border-top:1px solid #dfe6f0;padding:18px}.ads-lab-market-study-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden;border:1px solid #dfe6f0;border-radius:10px}.ads-lab-market-study-metrics article{min-width:0;padding:12px 14px;border-right:1px solid #dfe6f0;background:#fafbfd}.ads-lab-market-study-metrics article:last-child{border-right:0}.ads-lab-market-study-metrics span,.ads-lab-market-study-metrics b,.ads-lab-market-study-metrics small{display:block}.ads-lab-market-study-metrics span{color:#697386;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.045em}.ads-lab-market-study-metrics b{margin:4px 0;color:#15161a;font-size:22px}.ads-lab-market-study-metrics small{color:#5f6368;font-size:11px;line-height:16px}.ads-lab-market-study-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}.ads-lab-market-study-copy>div{padding:14px 15px;border:1px solid #e0e5ed;border-radius:10px}.ads-lab-market-study-copy h3,.ads-lab-market-clones h3{margin:0 0 7px;color:#15161a;font-size:14px}.ads-lab-market-study-copy p{margin:0 0 7px;color:#4f5662;font-size:12px;line-height:18px}.ads-lab-market-study-copy p:last-child{margin-bottom:0}.ads-lab-market-clones{margin-top:14px}.ads-lab-market-clones>header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}.ads-lab-market-clones>header h3{margin:0}.ads-lab-market-clones>header small{color:#697386;font-size:11px}.ads-lab-market-clones>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ads-lab-market-clones article{min-width:0;padding:11px 12px;border:1px solid #e0e5ed;border-radius:9px;background:#fafbfd}.ads-lab-market-clones b,.ads-lab-market-clones span,.ads-lab-market-clones article small{display:block}.ads-lab-market-clones b{color:#263244;font-size:12px}.ads-lab-market-clones span{overflow:hidden;margin:4px 0;color:#4f5662;font-size:11px;text-overflow:ellipsis;white-space:nowrap}.ads-lab-market-clones article small{color:#697386;font-size:10px;line-height:15px}.ads-lab-evidence-badges span.market-study{border:1px solid #b9cef0;background:#edf4ff;color:#174f9f}
 .ads-lab-quick-presets{display:flex;gap:7px;align-items:center;overflow-x:auto;padding:8px 28px 10px;border-top:1px solid #edf0f4;background:#fff;scrollbar-width:thin}.ads-lab-quick-presets>span{flex:none;margin-right:3px;color:#697386;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.05em}.ads-lab-quick-presets button{flex:none;min-height:32px;border:1px solid #d7dee8;border-radius:999px;padding:6px 11px;background:#fff;color:#3c4043;font-size:12px;font-weight:650}.ads-lab-quick-presets button:hover{border-color:#9eb7df;background:#f7faff}.ads-lab-quick-presets button.active{border-color:#a8c7fa;background:#e8f0fe;color:#0b57d0}.ads-lab-translation-note{display:block!important;margin-top:9px!important;padding:8px 9px;border-radius:7px;background:#fff8e6;color:#6b5320!important;font-size:11px!important;line-height:16px!important}.ads-lab-tags span.more{border-style:dashed;background:#fff;color:#5f6368}
 .ads-lab-pattern-head{display:block;margin-bottom:16px}.ads-lab-pattern-head>div{max-width:850px}.ads-lab-pattern-head h3{margin:3px 0 7px;color:#15161a;font-size:26px;line-height:32px;letter-spacing:-.02em}.ads-lab-pattern-head>div>p:last-child{max-width:800px;margin:0;color:#5f6368;font-size:13px;line-height:20px}.ads-lab-pattern-view-tabs{display:grid;grid-template-columns:repeat(4,minmax(130px,1fr));gap:8px;overflow-x:auto;margin-bottom:12px}.ads-lab-pattern-view-tabs button{min-width:0;border:1px solid #d7dee8;border-radius:10px;padding:12px 13px;background:#fff;text-align:left}.ads-lab-pattern-view-tabs button:hover{border-color:#a8c7fa;background:#f7faff}.ads-lab-pattern-view-tabs button.active{border-color:#0b57d0;background:#edf4ff;box-shadow:inset 0 0 0 1px #0b57d0}.ads-lab-pattern-view-tabs strong,.ads-lab-pattern-view-tabs span{display:block}.ads-lab-pattern-view-tabs strong{color:#15161a;font-size:13px}.ads-lab-pattern-view-tabs span{margin-top:3px;color:#5f6368;font-size:11px;line-height:15px}.ads-lab-pattern-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:12px;padding:10px 12px;border:1px solid #e0e5ed;border-radius:10px;background:#fff}.ads-lab-pattern-toolbar>p{max-width:760px;margin:0;color:#5f6368;font-size:12px;line-height:18px}.ads-lab-pattern-dimensions{display:flex;gap:5px;flex-wrap:wrap}.ads-lab-pattern-dimensions button,.ads-lab-weighting button{min-height:34px;border:1px solid #d7dee8;border-radius:7px;padding:7px 9px;background:#fff;color:#3c4043;font-size:12px;font-weight:700}.ads-lab-pattern-dimensions button.active,.ads-lab-weighting button.active{border-color:#a8c7fa;background:#e8f0fe;color:#0b57d0}.ads-lab-weighting{display:flex;flex:none;align-items:center;gap:5px}.ads-lab-weighting>span{margin-right:3px;color:#5f6368;font-size:11px;font-weight:700}.ads-lab-pattern-universe{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden;margin-bottom:12px;border:1px solid #d7dee8;border-radius:11px;background:#fff}.ads-lab-pattern-universe article{min-width:0;padding:12px 14px;border-right:1px solid #e4e8ee}.ads-lab-pattern-universe article:last-child{border-right:0}.ads-lab-pattern-universe span,.ads-lab-pattern-universe strong,.ads-lab-pattern-universe small{display:block}.ads-lab-pattern-universe span{color:#5f6368;font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.04em}.ads-lab-pattern-universe strong{margin:3px 0;color:#15161a;font-size:21px}.ads-lab-pattern-universe small{color:#697386;font-size:11px;line-height:15px}.ads-lab-featured-signal{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(260px,1.2fr);gap:10px 22px;align-items:center;margin-bottom:13px;padding:16px 18px;border:1px solid #b9cef0;border-radius:12px;background:linear-gradient(135deg,#edf4ff,#fff)}.ads-lab-featured-signal div span,.ads-lab-featured-signal div strong{display:block}.ads-lab-featured-signal div span{color:#0b57d0;font-size:10px;font-weight:850;letter-spacing:.07em}.ads-lab-featured-signal div strong{margin-top:4px;color:#15161a;font-size:17px;line-height:22px}.ads-lab-featured-signal p{margin:0;color:#3c4043;font-size:12px;line-height:18px}.ads-lab-featured-signal>small{grid-column:1/-1;color:#5f6368;font-size:11px}.ads-lab-signal-list{display:grid;gap:10px}.ads-lab-signal-row{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(210px,.65fr);gap:13px 18px;min-width:0;padding:16px 18px;border:1px solid #d7dee8;border-left:4px solid #8aa8d8;border-radius:11px;background:#fff}.ads-lab-signal-row.robusta{border-left-color:#168352}.ads-lab-signal-row.recurrente{border-left-color:#0b57d0}.ads-lab-signal-row.distintiva{border-left-color:#7c3aed}.ads-lab-signal-row.exploratoria{border-left-color:#d97706}.ads-lab-signal-row.indicio{border-left-color:#94a3b8}.ads-lab-signal-main{min-width:0}.ads-lab-signal-title{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.ads-lab-signal-title>span{color:#0b57d0;font-size:10px;font-weight:850;letter-spacing:.07em}.ads-lab-signal-title>i{border-radius:999px;padding:3px 7px;background:#eef2f7;color:#52606f;font-size:10px;font-style:normal;font-weight:750}.ads-lab-signal-row h4{margin:5px 0 7px;color:#15161a;font-size:17px;line-height:22px}.ads-lab-association-note{margin:0 0 9px;color:#5f6368;font-size:11px;line-height:16px}.ads-lab-signal-meter{height:7px;overflow:hidden;border-radius:99px;background:#e7ebf1}.ads-lab-signal-meter>i{display:block;height:100%;max-width:100%;border-radius:inherit;background:#0b57d0}.ads-lab-signal-main>small{display:block;margin-top:6px;color:#5f6368;font-size:11px;line-height:16px}.ads-lab-signal-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:0}.ads-lab-signal-metrics div{padding:8px 9px;border-radius:8px;background:#f5f7fa}.ads-lab-signal-metrics dt{color:#697386;font-size:10px}.ads-lab-signal-metrics dd{margin:2px 0 0;color:#15161a;font-size:16px;font-weight:800}.ads-lab-signal-row>blockquote{grid-column:1/-1;margin:0;padding:11px 13px;border:0;border-radius:8px;background:#f7f9fc;color:#3c4043;font-size:12px;line-height:18px}.ads-lab-signal-context{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.ads-lab-signal-context span{border-radius:999px;padding:4px 7px;background:#eef2f7;color:#52606f;font-size:10px;font-weight:650}.ads-lab-signal-context span.warning{background:#fff3d6;color:#77530b}.ads-lab-signal-row>footer{display:flex;justify-content:flex-end;gap:7px}.ads-lab-signal-row>footer button{min-height:35px;border:1px solid #0b57d0;border-radius:7px;padding:7px 10px;background:#0b57d0;color:#fff;font-size:11px;font-weight:750}.ads-lab-signal-row>footer button.quiet{border-color:#d7dee8;background:#fff;color:#0b57d0}
 .ads-lab-selection-dock{position:sticky;z-index:18;bottom:14px;display:flex;gap:10px;align-items:center;width:min(760px,calc(100% - 32px));margin:0 auto 14px;padding:12px 13px;border:1px solid #b9c8dc;border-radius:12px;background:rgba(255,255,255,.97);box-shadow:0 14px 38px rgba(15,23,42,.18);backdrop-filter:blur(14px)}.ads-lab-selection-dock>div{min-width:0;flex:1}.ads-lab-selection-dock strong,.ads-lab-selection-dock span{display:block}.ads-lab-selection-dock strong{font-size:13px}.ads-lab-selection-dock span{overflow:hidden;margin-top:2px;color:#5f6368;font-size:11px;text-overflow:ellipsis;white-space:nowrap}.ads-lab-selection-dock .ads-lab-dock-notice{display:block;overflow:visible;margin-top:5px;color:#174f9f;font-size:10px;line-height:14px;white-space:normal}.ads-lab-selection-dock button{min-height:38px;border:0;border-radius:8px;padding:8px 12px;background:#0b57d0;color:#fff;font-size:12px;font-weight:750}.ads-lab-selection-dock button.quiet{border:1px solid #d7dee8;background:#fff;color:#3c4043}.ads-lab-selection-dock button:disabled{background:#d8dee8;color:#687386}.ads-lab-primary:disabled{border-color:#d8dee8;background:#d8dee8;color:#687386;cursor:not-allowed}
 .ads-lab-thumb.video{position:relative;display:flex;align-items:stretch;background:#101317}.ads-lab-thumb.video>span{z-index:2;top:9px;left:9px;border-radius:5px;padding:4px 6px;background:rgba(9,12,17,.78);color:#fff;pointer-events:none}.ads-lab-thumb video{position:relative;z-index:1;width:100%;height:100%;min-height:280px;object-fit:contain;background:#0b0e12}.ads-lab-open-media{position:absolute;z-index:3;top:8px;right:8px;border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:5px 7px;background:rgba(9,12,17,.82);color:#fff;font-size:10px;font-weight:750;text-decoration:none;backdrop-filter:blur(8px)}.ads-lab-open-media:hover{background:#0b57d0}.ads-lab-card-meta i.inactive{background:#f1f3f4;color:#5f6368}.ads-lab-card-links{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:9px;border:1px solid #dce4ef;border-radius:9px;background:#f8faff}.ads-lab-card-links a{min-height:34px;border:1px solid #c9d4e3;border-radius:7px;padding:7px 10px;background:#fff;color:#315f9f;font-size:12px;font-weight:750;line-height:18px;text-decoration:none}.ads-lab-card-links a:hover{border-color:#0b57d0;background:#edf4ff}.ads-lab-card-links a.landing{border-color:#0b57d0;background:#0b57d0;color:#fff}.ads-lab-card-links a.landing:hover{background:#0849ad}
 @media(max-width:1280px){.ads-lab-command-shell{position:relative;top:auto}.ads-lab-command-bar{grid-template-columns:repeat(2,minmax(0,1fr))}.ads-lab-command-bar .ads-lab-search{grid-column:1/-1}.ads-lab-command-bar>*{min-width:0}.ads-lab-language-mode{grid-column:auto}.ads-lab-filter-toggle{display:block}.ads-lab-copy-parallel{grid-template-columns:1fr}.ads-lab-card{grid-template-columns:190px minmax(0,1fr)}.ads-lab-thumb{min-height:300px}.ads-lab-pattern-toolbar{align-items:flex-start;flex-direction:column}.ads-lab-weighting{width:100%;justify-content:flex-end}}
-@media(max-width:840px){.ads-lab-snapshot{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px 16px}.ads-lab-snapshot article{padding:9px 12px}.ads-lab-snapshot article:nth-child(2){border-right:0}.ads-lab-snapshot article:nth-child(-n+2){border-bottom:1px solid #d7dee8}.ads-lab-snapshot article:nth-child(3){padding-left:0}.ads-lab-quick-presets{padding-left:16px;padding-right:16px}.ads-lab-pattern-view-tabs{grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.ads-lab-pattern-universe{grid-template-columns:repeat(2,minmax(0,1fr))}.ads-lab-pattern-universe article:nth-child(2){border-right:0}.ads-lab-pattern-universe article:nth-child(-n+2){border-bottom:1px solid #e4e8ee}.ads-lab-featured-signal{grid-template-columns:1fr}.ads-lab-featured-signal>small{grid-column:1}.ads-lab-signal-row{grid-template-columns:1fr}.ads-lab-signal-row>blockquote{grid-column:1}.ads-lab-signal-row>footer{justify-content:flex-start}.ads-lab-weighting{justify-content:flex-start}}
-@media(max-width:560px){.ads-lab-snapshot{grid-template-columns:1fr}.ads-lab-snapshot article,.ads-lab-snapshot article:nth-child(3){padding:9px 0;border-right:0;border-bottom:1px solid #d7dee8}.ads-lab-snapshot article:last-child{border-bottom:0}.ads-lab-command-bar{grid-template-columns:1fr}.ads-lab-command-bar>*{grid-column:1}.ads-lab-pattern-head h3{font-size:22px;line-height:28px}.ads-lab-pattern-view-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.ads-lab-pattern-universe{grid-template-columns:1fr}.ads-lab-pattern-universe article,.ads-lab-pattern-universe article:nth-child(2){border-right:0;border-bottom:1px solid #e4e8ee}.ads-lab-pattern-universe article:last-child{border-bottom:0}.ads-lab-weighting{align-items:stretch;flex-wrap:wrap}.ads-lab-weighting>span{width:100%}.ads-lab-signal-row{padding:14px 13px}.ads-lab-signal-row>footer{display:grid;grid-template-columns:1fr}.ads-lab-selection-dock{align-items:stretch;flex-wrap:wrap}.ads-lab-selection-dock>div{width:100%;flex-basis:100%}.ads-lab-selection-dock button{flex:1}.ads-lab-card-links{align-items:stretch;flex-direction:column}.ads-lab-card-links a{text-align:center}.ads-lab-thumb video{min-height:260px}}
+@media(max-width:840px){.ads-lab-snapshot{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px 16px}.ads-lab-snapshot article{padding:9px 12px}.ads-lab-snapshot article:nth-child(2){border-right:0}.ads-lab-snapshot article:nth-child(-n+2){border-bottom:1px solid #d7dee8}.ads-lab-snapshot article:nth-child(3){padding-left:0}.ads-lab-market-study{margin:12px 16px}.ads-lab-market-study-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.ads-lab-market-study-metrics article:nth-child(2){border-right:0}.ads-lab-market-study-metrics article:nth-child(-n+2){border-bottom:1px solid #dfe6f0}.ads-lab-quick-presets{padding-left:16px;padding-right:16px}.ads-lab-pattern-view-tabs{grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.ads-lab-pattern-universe{grid-template-columns:repeat(2,minmax(0,1fr))}.ads-lab-pattern-universe article:nth-child(2){border-right:0}.ads-lab-pattern-universe article:nth-child(-n+2){border-bottom:1px solid #e4e8ee}.ads-lab-featured-signal{grid-template-columns:1fr}.ads-lab-featured-signal>small{grid-column:1}.ads-lab-signal-row{grid-template-columns:1fr}.ads-lab-signal-row>blockquote{grid-column:1}.ads-lab-signal-row>footer{justify-content:flex-start}.ads-lab-weighting{justify-content:flex-start}}
+@media(max-width:560px){.ads-lab-snapshot{grid-template-columns:1fr}.ads-lab-snapshot article,.ads-lab-snapshot article:nth-child(3){padding:9px 0;border-right:0;border-bottom:1px solid #d7dee8}.ads-lab-snapshot article:last-child{border-bottom:0}.ads-lab-market-study{margin:10px}.ads-lab-market-study>summary{align-items:flex-start;gap:10px;padding:13px}.ads-lab-market-study>summary strong{display:none}.ads-lab-market-study-body{padding:12px}.ads-lab-market-study-metrics,.ads-lab-market-study-copy,.ads-lab-market-clones>div{grid-template-columns:1fr}.ads-lab-market-study-metrics article,.ads-lab-market-study-metrics article:nth-child(2){border-right:0;border-bottom:1px solid #dfe6f0}.ads-lab-market-study-metrics article:last-child{border-bottom:0}.ads-lab-market-clones>header{align-items:flex-start;flex-direction:column}.ads-lab-command-bar{grid-template-columns:1fr}.ads-lab-command-bar>*{grid-column:1}.ads-lab-pattern-head h3{font-size:22px;line-height:28px}.ads-lab-pattern-view-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.ads-lab-pattern-universe{grid-template-columns:1fr}.ads-lab-pattern-universe article,.ads-lab-pattern-universe article:nth-child(2){border-right:0;border-bottom:1px solid #e4e8ee}.ads-lab-pattern-universe article:last-child{border-bottom:0}.ads-lab-weighting{align-items:stretch;flex-wrap:wrap}.ads-lab-weighting>span{width:100%}.ads-lab-signal-row{padding:14px 13px}.ads-lab-signal-row>footer{display:grid;grid-template-columns:1fr}.ads-lab-selection-dock{align-items:stretch;flex-wrap:wrap}.ads-lab-selection-dock>div{width:100%;flex-basis:100%}.ads-lab-selection-dock button{flex:1}.ads-lab-card-links{align-items:stretch;flex-direction:column}.ads-lab-card-links a{text-align:center}.ads-lab-thumb video{min-height:260px}}
 @media(prefers-reduced-motion:reduce){.ads-lab *{scroll-behavior:auto!important;transition:none!important}}
 `;
