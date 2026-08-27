@@ -75,6 +75,39 @@ const HERO_FAMILIES = [
   ["identity", "Categoría o identidad", /somos|agencia|especialistas|expertos|servicio de|we are|agency/i],
 ];
 
+const SECTION_PATTERNS = [
+  ["faq", "Preguntas y objeciones", /preguntas frecuentes|preguntas clave|faq|questions? fr[eé]quentes|foire aux questions/i],
+  ["pricing", "Precio y condiciones", /^(?:(?:nuestros?|ver|consulta|elige)\s+)?(?:precios?|tarifas?|planes?|pricing|prices?|plans?|tarifs?|formules?)\b|^presupuestos? y precios?\b|^(?:¿)?cu[aá]nto cuesta\b|^(?:la )?inversi[oó]n(?:(?: transparente| necesaria| mensual)?$|\s+(?:de|desde)\s+\d)/i],
+  ["guarantee", "Garantía o reducción de riesgo", /\b(?:garant[ií]a|compromiso|guarantee|risk|garantie)\b|\bsin (?:permanencia|riesgo)\b|\bsans engagement\b/i],
+  ["proof", "Prueba y autoridad", /(?:nuestros? |resultados? )(?:resultados?|reales|concretos)|\bcasos? (?:reales|de (?:[eé]xito|estudio))\b|\b(?:testimonios?|opiniones?|rese[nñ]as?|cifras)\b|historias? de clientes|lo que dicen (?:nuestros? )?clientes|clientes que conf[ií]an|clientes satisfechos|(?:our|real|client) results?|case stud|testimonials?|trusted by|\bnos r[eé]sultats?\b|r[eé]sultats? clients?|r[eé]sultats? concrets?|t[eé]moignages?|avis clients?/i],
+  ["mechanism", "Proceso o mecanismo", /c[oó]mo funciona|\b(?:proceso|metodolog[ií]a|pasos?|sistema)\b|how it works|\b(?:process|method)\b|comment .*(?:marche|fonctionne)|\b(?:[eé]tapes?|m[eé]thode)\b/i],
+  ["qualification", "Casos, encaje y requisitos", /para qui[eé]n|\bcasos? (?:en los que|que (?:aceptamos|encajan)|viables|admitidos)\b|\b(?:requisitos?|sectores?|categor[ií]as?|especialidades?)\b|ideal para|who (?:it'?s|is this) for|use cases?|for whom|pour qui|nos secteurs|cat[eé]gories/i],
+  ["problem", "Problema y contexto", /^(?:¿)?(?:(?:el|los|tu|tus|nuestro|nuestros|un|no tienes|tienes alg[uú]n)\s+)?(?:problemas?|retos?|desaf[ií]os?|dificultades?)\b|por qu[eé].*(?:fall|cuesta|pierde)|^(?:(?:the|your|our|le|les|vos|nos)\s+)?(?:problems?|challenges?|pain points?|probl[eè]mes?|d[eé]fis?|enjeux)\b/i],
+  ["offer", "Oferta y solución", /qu[eé] incluye|\b(?:servicios?|soluciones?|beneficios?|ventajas?)\b|qu[eé] ofrecemos|nuestra oferta|\b(?:services?|solutions?|benefits?|avantages?)\b|what you get|nos offres?|nos services/i],
+];
+
+const EDITORIAL_HEADING_MARKER = /^(?:[uú]ltimas? entradas?|aprende a\b|tambi[eé]n te puede interesar|m[aá]s sobre\b|art[ií]culos? relacionados?|related (?:posts?|articles?)|desde (?:nuestro )?blog\b|todo sobre\b)/i;
+const INVALID_SECTION_HEADING = /(?:m[aá]s sobre sin categor[ií]a|deja un comentario|cancelar respuesta|accesos directos|^plan(?:es)? de (?:acci[oó]n|marketing|trabajo|crecimiento|mejora|contenidos?|medios?|captaci[oó]n|seguimiento)\b|^plan para .*\b(?:semana|mes|fase|paso)\b|(?:\b20\d{2}\b.*\b(?:gu[ií]as?|paso a paso|mejores?)\b|\b(?:gu[ií]as?|paso a paso|mejores?)\b.*\b20\d{2}\b))/i;
+
+const sectionForHeading = (value) => {
+  const text = clean(value);
+  if (/lo sentimos|problemas causados|p[aá]gina no encontrada|not found|error \d{3}|cookies?|privacidad|politique de confidentialit[eé]/i.test(text) || INVALID_SECTION_HEADING.test(text)) return null;
+  const row = SECTION_PATTERNS.find(([, , pattern]) => pattern.test(text));
+  return row ? { id: row[0], label: row[1] } : null;
+};
+
+const commercialSectionHeadings = (page, exactHeadline) => {
+  const headings = list(page?.text?.headings)
+    .filter((heading) => clean(heading) !== clean(exactHeadline))
+    .filter((heading) => heading.length >= 4 && heading.length <= 160);
+  const editorialStart = headings.findIndex((heading) => EDITORIAL_HEADING_MARKER.test(clean(heading)));
+  const commercial = (editorialStart >= 0 ? headings.slice(0, editorialStart) : headings)
+    .filter((heading) => !INVALID_SECTION_HEADING.test(clean(heading)))
+    .filter((heading) => !usefulCta(heading));
+  const faqStart = commercial.findIndex((heading) => sectionForHeading(heading)?.id === "faq");
+  return (faqStart >= 0 ? commercial.slice(0, faqStart + 1) : commercial).slice(0, 32);
+};
+
 const familyFor = (value, families) => {
   const text = clean(value);
   const row = families.find(([, , pattern]) => pattern.test(text));
@@ -131,7 +164,7 @@ const selectPrimaryCta = (selectedPage, scoredPages, fallback) => {
   return candidates[0] || null;
 };
 
-const INVALID_SALES_PAGE = /(?:\/|\b)(?:privacy|privacidad|politica(?:-de)?-privacidad|legal|aviso-legal|terms|terminos|condiciones|cookies?|blog|articulo|article|post|author|contacto?|contactar|about|nosotros|tag|category|categorias|medios|ebook|curso|resenas|proyectos|404|error)(?:\/|\b|[-_])/i;
+const INVALID_SALES_PAGE = /(?:\/|\b)(?:privacy|privacidad|politica(?:-de)?-privacidad|legal|aviso-legal|terms|terminos|condiciones|cookies?|blog|mag|articulo|article|post|author|contacto?|contactar|about|nosotros|tag|category|categorias|medios|ebook|curso|resenas|proyectos|404|error)(?:\/|\b|[-_])/i;
 const EDITORIAL_PATH = /\/(?:como|que-es|claves|mejores|evitar|boca-a-boca|noticias|precio-[^/]+-20\d\d)(?:-|\/)/i;
 const salesPageScore = (page) => {
   if (!page || page.status !== "captured") return -100;
@@ -141,7 +174,7 @@ const salesPageScore = (page) => {
   const excerpt = clean(page.text?.excerpt);
   const headings = list(page.text?.headings);
   const ctas = list(page.text?.ctas).filter(usefulCta);
-  if (INVALID_SALES_PAGE.test(url) || EDITORIAL_PATH.test(url) || /404|not found|error|privacidad|cookies?|condiciones de uso/i.test(`${title} ${headline}`)) return -100;
+  if (INVALID_SALES_PAGE.test(url) || EDITORIAL_PATH.test(url) || /404|not found|error|privacidad|cookies?|condiciones de uso|param[eè]tres personnels de navigation/i.test(`${title} ${headline}`)) return -100;
   if (/publicar el comentario|← anterior|siguiente →|leave a comment/i.test(list(page.text?.ctas).join(" "))) return -100;
   if (!usefulHeadline(headline) && excerpt.length < 350 && headings.length < 3) return -50;
   const roleWeight = { landing: 24, conversion: 20, homepage: 16, pricing: 10, proof: 8 }[page.role] || 0;
@@ -207,6 +240,40 @@ const incrementFamily = (map, family, example) => {
   }
   map.set(family.id, current);
 };
+
+const incrementSectionPattern = (map, section, example, position) => {
+  const current = map.get(section.id) || {
+    id: section.id,
+    label: section.label,
+    count: 0,
+    companyIds: [],
+    examples: [],
+    positions: [],
+  };
+  if (!current.companyIds.includes(example.companyId)) {
+    current.count += 1;
+    current.companyIds.push(example.companyId);
+    current.positions.push(position);
+  }
+  if (current.examples.length < 5 && !current.examples.some((item) => item.companyId === example.companyId)) {
+    current.examples.push(example);
+  }
+  map.set(section.id, current);
+};
+
+const normalizeSectionPatterns = (map, sampleSize) =>
+  [...map.values()]
+    .map(({ positions, ...row }) => ({
+      ...row,
+      share: pct(row.count, sampleSize),
+      medianPosition: median(positions),
+    }))
+    .sort(
+      (left, right) =>
+        (left.medianPosition ?? 99) - (right.medianPosition ?? 99) ||
+        right.share - left.share ||
+        left.id.localeCompare(right.id),
+    );
 
 const incrementCooccurrence = (map, hero, cta, row) => {
   if (!hero || hero.id === "other" || !cta || cta.id === "other") return;
@@ -326,6 +393,7 @@ const universal = {
   formFields: [],
   ctaFamilies: new Map(),
   heroFamilies: new Map(),
+  sectionPatterns: new Map(),
 };
 const verticalRows = new Map(verticales.verticales.map((vertical) => [vertical.id, []]));
 verticalRows.set("generalista", []);
@@ -362,6 +430,13 @@ for (const record of records) {
   );
   const headline = clean(exactHeadline || read.headline);
   const primaryCta = clean(selectedCta?.text);
+  const sectionHeadings = commercialSectionHeadings(selectedPage, exactHeadline);
+  const sectionSequence = sectionHeadings
+    .map(sectionForHeading)
+    .filter(Boolean)
+    .map((section) => section.id)
+    .filter((id, index, values) => values.indexOf(id) === index);
+  const ctaTexts = list(selectedPage?.text?.ctas).filter(usefulCta).slice(0, 12);
   const example = {
     companyId: record.id,
     name: record.name,
@@ -387,6 +462,11 @@ for (const record of records) {
     curatedRank: classification.curatedRank || null,
     completeness: fieldsPresent.length,
     fieldsPresent,
+    language: clean(selectedPage?.text?.language || record.language?.original) || null,
+    sectionHeadings,
+    sectionSequence,
+    ctaTexts,
+    documentHeight: Number.isFinite(selectedPage?.document?.height) ? selectedPage.document.height : null,
     score:
       (salesPageValid ? 40 : -100) +
       classification.relevance * 5 +
@@ -404,10 +484,12 @@ for (const record of records) {
   for (const page of capturedPages) universal.roles[page.role || "other"] = (universal.roles[page.role || "other"] || 0) + 1;
   if (trustedScope) {
     universal.eligibleCompanies += 1;
-    for (const key of fieldsPresent) universal.fields[key] += 1;
     if (funnel.length) universal.funnelSteps.push(funnel.length);
     if (Number.isFinite(deep?.minFormFields) && deep.minFormFields > 0) universal.formFields.push(deep.minFormFields);
-    if (salesPageValid) universal.salesPageCompanies += 1;
+    if (salesPageValid) {
+      universal.salesPageCompanies += 1;
+      for (const key of fieldsPresent) universal.fields[key] += 1;
+    }
     if (salesPageValid && usefulCta(primaryCta)) {
       universal.usableCtaCompanies += 1;
       incrementFamily(universal.ctaFamilies, familyFor(primaryCta, CTA_FAMILIES), { companyId: record.id, name: record.name, text: primaryCta });
@@ -416,6 +498,19 @@ for (const record of records) {
       const family = familyFor(headline, HERO_FAMILIES);
       if (family.id !== "other") universal.classifiedHeroCompanies += 1;
       incrementFamily(universal.heroFamilies, family, { companyId: record.id, name: record.name, text: headline });
+    }
+    if (salesPageValid) {
+      sectionHeadings.forEach((heading, index) => {
+        const section = sectionForHeading(heading);
+        if (section) {
+          incrementSectionPattern(
+            universal.sectionPatterns,
+            section,
+            { companyId: record.id, name: record.name, text: heading },
+            index + 1,
+          );
+        }
+      });
     }
   }
 }
@@ -462,10 +557,11 @@ const confidenceFor = (sampleSize, ctaCoverage, heroCoverage) => {
   return "low";
 };
 const universalFieldPresence = Object.fromEntries(
-  Object.entries(universal.fields).map(([key, value]) => [key, pct(value, universal.eligibleCompanies)]),
+  Object.entries(universal.fields).map(([key, value]) => [key, pct(value, universal.salesPageCompanies)]),
 );
 const universalCtaFamilies = normalizeFamilies(universal.ctaFamilies, universal.salesPageCompanies);
 const universalHeroFamilies = normalizeFamilies(universal.heroFamilies, universal.salesPageCompanies);
+const universalSectionPatterns = normalizeSectionPatterns(universal.sectionPatterns, universal.salesPageCompanies);
 
 const verticalOutput = {};
 for (const vertical of [...verticales.verticales, { id: "generalista", label: "Generalista" }]) {
@@ -481,12 +577,24 @@ for (const vertical of [...verticales.verticales, { id: "generalista", label: "G
   const ctaMap = new Map();
   const heroMap = new Map();
   const cooccurrenceMap = new Map();
+  const sectionPatternMap = new Map();
   for (const row of qualifiedRows) {
     const ctaFamily = usefulCta(row.primaryCta) ? familyFor(row.primaryCta, CTA_FAMILIES) : null;
     const heroFamily = usefulHeadline(row.headline) ? familyFor(row.headline, HERO_FAMILIES) : null;
     if (ctaFamily) incrementFamily(ctaMap, ctaFamily, { companyId: row.companyId, name: row.name, text: row.primaryCta });
     if (heroFamily) incrementFamily(heroMap, heroFamily, { companyId: row.companyId, name: row.name, text: row.headline });
     incrementCooccurrence(cooccurrenceMap, heroFamily, ctaFamily, row);
+    (row.sectionHeadings || []).forEach((heading, index) => {
+      const section = sectionForHeading(heading);
+      if (section) {
+        incrementSectionPattern(
+          sectionPatternMap,
+          section,
+          { companyId: row.companyId, name: row.name, text: heading },
+          index + 1,
+        );
+      }
+    });
   }
   const fieldPresence = {};
   for (const key of fieldKeys) fieldPresence[key] = pct(qualifiedRows.filter((row) => row.fieldsPresent.includes(key)).length, qualifiedRows.length);
@@ -520,7 +628,9 @@ for (const vertical of [...verticales.verticales, { id: "generalista", label: "G
   ];
   const validExamples = qualifiedRows.filter((row) => row.thumbnail && usefulHeadline(row.headline));
   const curatedExamples = validExamples.filter((row) => row.curatedRank).sort((a, b) => a.curatedRank - b.curatedRank);
-  const topExamples = (curatedExamples.length ? curatedExamples : validExamples).slice(0, 8);
+  const topExamples = [...curatedExamples, ...validExamples]
+    .filter((row, index, values) => values.findIndex((item) => item.companyId === row.companyId) === index)
+    .slice(0, 12);
   verticalOutput[vertical.id] = {
     id: vertical.id,
     label: vertical.label,
@@ -538,6 +648,7 @@ for (const vertical of [...verticales.verticales, { id: "generalista", label: "G
       .slice(0, 12),
     examples: topExamples,
     recommendations,
+    sectionPatterns: normalizeSectionPatterns(sectionPatternMap, qualifiedRows.length),
     study: {
       confidence: sampleConfidence,
       coverage: {
@@ -567,8 +678,28 @@ for (const vertical of [...verticales.verticales, { id: "generalista", label: "G
   };
 }
 
+const SECTION_PURPOSES = {
+  problem: "Nombrar el problema y el coste de no resolverlo con el lenguaje observado en el mercado.",
+  qualification: "Ayudar al usuario a reconocer si su caso, zona o necesidad encajan.",
+  mechanism: "Explicar proceso, responsabilidades y siguiente paso de forma comprensible.",
+  offer: "Concretar la solución, el alcance y qué recibe el usuario.",
+  proof: "Reducir incertidumbre con pruebas identificables y atribuibles.",
+  pricing: "Aclarar precio, rango o condiciones cuando el negocio puede publicarlos.",
+  guarantee: "Explicar compromisos y límites sin convertirlos en promesas inventadas.",
+  faq: "Resolver objeciones que bloquean el contacto o el envío del formulario.",
+};
+const observedAnatomy = [
+  { id: "hero", label: "Propuesta y acción inicial", purpose: "Dejar claro para quién es la página, qué situación resuelve y qué debe hacer el usuario." },
+  ...universalSectionPatterns.map((pattern) => ({
+    id: pattern.id,
+    label: pattern.label,
+    purpose: `${SECTION_PURPOSES[pattern.id]} Observado en ${pattern.share}% de las páginas comerciales clasificables.`,
+  })),
+  { id: "conversion", label: "Formulario y siguiente paso", purpose: "Capturar el lead, conservar atribución y mostrar éxito o error verificable." },
+];
+
 const result = {
-  schemaVersion: "rv-landing-intelligence-v2",
+  schemaVersion: "rv-landing-intelligence-v3",
   generatedAt: new Date().toISOString(),
   source: {
     companies: universal.companies,
@@ -589,6 +720,7 @@ const result = {
     fieldPresence: universalFieldPresence,
     ctaFamilies: universalCtaFamilies,
     heroFamilies: universalHeroFamilies,
+    sectionPatterns: universalSectionPatterns,
     dataQuality: {
       eligibleCompanies: universal.eligibleCompanies,
       salesPageCompanies: universal.salesPageCompanies,
@@ -600,16 +732,7 @@ const result = {
         Object.entries(ABSENT_FIELD_OVERRIDES).map(([field, ids]) => [field, ids.size]),
       ),
     },
-    anatomy: [
-      { id: "hero", label: "Resultado + público", purpose: "Dejar claro para quién es la página y qué cambio propone." },
-      { id: "proof", label: "Prueba temprana", purpose: "Reducir incertidumbre con evidencia identificable, no con adjetivos." },
-      { id: "problem", label: "Problema reconocible", purpose: "Nombrar el coste de seguir igual sin exagerar ni asustar." },
-      { id: "mechanism", label: "Mecanismo", purpose: "Explicar filtro, entrega, seguimiento y responsabilidades." },
-      { id: "qualification", label: "Criterios de encaje", purpose: "Autofiltrar antes del formulario y mejorar la conversación comercial." },
-      { id: "offer", label: "Oferta y condiciones", purpose: "Aclarar qué incluye, qué no incluye y qué queda por configurar." },
-      { id: "faq", label: "Objeciones", purpose: "Resolver precio, plazo, exclusividad, validez y medición." },
-      { id: "conversion", label: "Una acción final", purpose: "Cerrar con un CTA coherente y los campos mínimos necesarios." },
-    ],
+    anatomy: observedAnatomy,
   },
   verticals: verticalOutput,
 };

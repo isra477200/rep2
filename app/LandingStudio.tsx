@@ -7,6 +7,9 @@ import type { LogoManifest, VerticalesData } from "./data-types";
 import {
   ANGLES,
   ARCHITECTURES,
+  AUTOMOTIVE_INTENTS,
+  AUTOMOTIVE_MARKET_REFERENCES,
+  applyAutomotiveIntent,
   applyEvidenceRecipe,
   applyStrategyRecommendation,
   applyVerticalPreset,
@@ -18,6 +21,7 @@ import {
   landingReadiness,
   type LandingBrief,
   type LandingIntelligence,
+  type LandingSectionId,
 } from "./landings/model";
 import styles from "./LandingStudio.module.css";
 
@@ -29,7 +33,7 @@ type LandingStudioProps = {
 type Device = "desktop" | "mobile";
 type EditorSection = "strategy" | "message" | "evidence" | "conversion";
 
-const STORAGE_KEY = "rv-landing-studio-v2";
+const STORAGE_KEY = "rv-landing-studio-v3";
 
 const safeParse = (raw: string | null): LandingBrief | null => {
   if (!raw) return null;
@@ -74,6 +78,17 @@ const FIELD_LABELS: Record<string, string> = {
   funnel: "Recorrido",
 };
 
+const SECTION_LABELS: Record<LandingSectionId, string> = {
+  problem: "Problema",
+  qualification: "Casos y encaje",
+  mechanism: "Proceso",
+  offer: "Oferta",
+  proof: "Prueba",
+  pricing: "Precio",
+  guarantee: "Compromiso",
+  faq: "Preguntas",
+};
+
 const qualityLabel = (score: number) => {
   if (score >= 85) return "Lista para test";
   if (score >= 75) return "Lista para revisión";
@@ -114,7 +129,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
       .then((response) => (response.ok ? (response.json() as Promise<LandingIntelligence>) : null))
       .then((value) => {
         if (!active) return;
-        if (value?.schemaVersion === "rv-landing-intelligence-v2") setIntelligence(value);
+        if (value?.schemaVersion === "rv-landing-intelligence-v3") setIntelligence(value);
         else setIntelligenceError(true);
       })
       .catch(() => {
@@ -158,13 +173,18 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     setBrief((current) => ({
       ...current,
       [key]: value,
+      ...(key === "leadEndpoint" ? { leadEndpointVerified: false } : {}),
+      ...(["gtmId", "service", "zone"].includes(key) ? { trackingVerified: false } : {}),
       activeRecipeId: ["architecture", "angle", "variant", "ctaMode", "ctaLabel", "objective", "trafficSource", "awareness"].includes(key)
         ? ""
         : current.activeRecipeId,
+      evidencePlan: ["architecture", "angle", "variant", "ctaMode", "ctaLabel", "objective", "trafficSource", "awareness"].includes(key)
+        ? null
+        : current.evidencePlan,
     }));
   const selectVertical = (verticalId: string) => {
     setPreviousBrief(brief);
-    setBrief((current) => ({ ...current, verticalId, activeRecipeId: "" }));
+    setBrief((current) => ({ ...current, verticalId, intent: "vertical-default", activeRecipeId: "", evidencePlan: null, leadEndpointVerified: false, trackingVerified: false }));
     setStudyVerticalId(verticalId);
     setVisibleExamples(4);
     setToast("Vertical cambiado; hemos mantenido tu contenido");
@@ -176,6 +196,10 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   };
 
   const html = useMemo(() => buildLandingHtml(brief), [brief]);
+  const previewHtml = useMemo(
+    () => buildLandingHtml({ ...brief, leadEndpoint: "", gtmId: "" }),
+    [brief],
+  );
   const readiness = useMemo(() => landingReadiness(brief), [brief]);
   const publishReady = readiness.publishable;
   const verticalIntel =
@@ -195,9 +219,16 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const variantA = useMemo(() => landingCopyPreview({ ...brief, variant: "a" }), [brief]);
   const variantB = useMemo(() => landingCopyPreview({ ...brief, variant: "b" }), [brief]);
   const landingCount = intelligence?.universal.roles.landing || 0;
+  const exactAutomotiveIntent = brief.verticalId === "coches-motor" && brief.intent !== "vertical-default";
+  const automotivePlaybook = brief.intent !== "vertical-default" ? AUTOMOTIVE_INTENTS[brief.intent] : null;
+  const endpointConfigured = /^https:\/\//i.test(brief.leadEndpoint.trim());
   const preview = (
     <div className={`${styles.previewFrame} ${styles[device]}`}>
-      <iframe title="Vista previa de la landing generada" srcDoc={html} sandbox="" />
+      <iframe
+        title="Vista previa de la landing generada"
+        srcDoc={previewHtml}
+        sandbox="allow-scripts allow-forms allow-popups"
+      />
     </div>
   );
   const filename = `landing-${slug(brief.service)}-${slug(brief.zone)}.html`;
@@ -207,10 +238,10 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
       <section className={styles.hero}>
         <div>
           <p>LANDING INTELLIGENCE STUDIO</p>
-          <h1>Estudia el mercado. Diseña con criterio. Genera una landing lista para probar.</h1>
+          <h1>De la competencia real a una landing completa, medible y lista para campaña.</h1>
           <span>
-            Un recorrido completo desde el corpus depurado hasta el HTML: patrones observados,
-            decisiones explicadas, variantes comparables y controles antes de publicar.
+            El blueprint ordena la página con patrones observados; la intención y el objetivo gobiernan
+            el formulario. Las recomendaciones conservan sus fuentes y ningún lead se da por capturado sin entrega real.
           </span>
         </div>
         <div className={styles.sourceScore}>
@@ -287,12 +318,29 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
 
           <article className={styles.strategyCard}>
             <span>DECISIÓN RECOMENDADA</span>
-            <div className={styles.compatibility}><strong>{strategyRecommendation.compatibility}</strong><small>/100 encaje estructural</small></div>
-            <h3>{ARCHITECTURES.find((item) => item.id === strategyRecommendation.architecture)?.label}</h3>
-            <p>{strategyRecommendation.reasons[0]}</p>
-            <ul>{strategyRecommendation.reasons.slice(1).map((reason) => <li key={reason}>{reason}</li>)}</ul>
-            <button type="button" onClick={() => { setPreviousBrief(brief); setBrief((current) => applyStrategyRecommendation(current, strategyRecommendation)); setToast("Estrategia aplicada; revisa el destino del CTA"); }}>Aplicar recomendación</button>
+            <div className={styles.compatibility}><strong>{exactAutomotiveIntent ? "B2C" : strategyRecommendation.compatibility}</strong><small>{exactAutomotiveIntent ? "intención exacta" : "/100 encaje estructural"}</small></div>
+            <h3>{exactAutomotiveIntent ? automotivePlaybook?.label : ARCHITECTURES.find((item) => item.id === strategyRecommendation.architecture)?.label}</h3>
+            <p>{exactAutomotiveIntent ? "Esta landing usa la cohorte española de compra de vehículos con cargas; las recomendaciones genéricas de talleres y concesionarios quedan aisladas." : strategyRecommendation.reasons[0]}</p>
+            <ul>{exactAutomotiveIntent ? <><li>Formulario y preguntas específicos</li><li>Proceso, aceptación y exclusiones propios</li></> : strategyRecommendation.reasons.slice(1).map((reason) => <li key={reason}>{reason}</li>)}</ul>
+            <button type="button" disabled={exactAutomotiveIntent} onClick={() => { if (exactAutomotiveIntent) return; setPreviousBrief(brief); setBrief((current) => applyStrategyRecommendation(current, strategyRecommendation)); setToast("Estrategia aplicada; revisa el destino del CTA"); }}>{exactAutomotiveIntent ? "La intención B2C ya gobierna esta landing" : "Aplicar recomendación"}</button>
           </article>
+        </div>
+
+        <div className={styles.realAnatomy}>
+          <div className={styles.realAnatomyIntro}>
+            <span>SECUENCIA OBSERVADA</span>
+            <b>Qué bloques aparecen y en qué momento</b>
+            <p>Clasificación automática y revisable de los encabezados ordenados; excluye errores, cookies y coincidencias ambiguas conocidas.</p>
+          </div>
+          <ol>
+            {(verticalIntel?.sectionPatterns || intelligence?.universal.sectionPatterns || []).map((pattern) => (
+              <li key={pattern.id}>
+                <i>{pattern.medianPosition ?? "—"}</i>
+                <div><b>{pattern.label}</b><span>{pattern.count} empresas · {pattern.share}% de la muestra</span></div>
+                <em style={{ width: `${Math.max(8, pattern.share)}%` }} />
+              </li>
+            ))}
+          </ol>
         </div>
 
         <div className={styles.studyInsights}>
@@ -302,6 +350,13 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
           </ol>
           {(verticalIntel?.study?.warnings || []).length ? <aside><b>Límites de esta muestra</b>{verticalIntel?.study?.warnings.map((warning) => <span key={warning}>{warning}</span>)}</aside> : null}
         </div>
+
+        {studyVerticalId === "coches-motor" ? (
+          <section className={styles.automotiveCohort}>
+            <header><div><span>COHORTE ESPECÍFICA · ESPAÑA</span><b>Compra de coches con reserva, financiación, embargo o cargas</b></div><p>El corpus genérico de “motor” está formado sobre todo por marketing para talleres y concesionarios. No lo usamos para justificar estas landings B2C. Esta cohorte separada sí corresponde a la intención.</p></header>
+            <div>{AUTOMOTIVE_MARKET_REFERENCES.map((reference) => <a key={reference.id} href={reference.url} target="_blank" rel="noopener noreferrer"><b>{reference.name}</b><span>{reference.market} · idioma {reference.language} · revisada {reference.reviewedAt}</span><span>{reference.observed}</span><small>{reference.observedSections.join(" → ")} · Ver página ↗</small></a>)}</div>
+          </section>
+        ) : null}
 
         <div className={styles.studyReferences}>
           <div><span>REFERENCIAS DEL ESTUDIO</span><b>Abre la captura y contrasta el patrón</b></div>
@@ -383,8 +438,12 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                 {recipe.warnings.map((warning) => <small className={styles.recipeWarning} key={warning}>{warning}</small>)}
                 <button
                   type="button"
-                  disabled={brief.verticalId !== studyVerticalId}
+                  disabled={brief.verticalId !== studyVerticalId || exactAutomotiveIntent}
                   onClick={() => {
+                    if (exactAutomotiveIntent) {
+                      setToast("Las recetas genéricas de motor quedan bloqueadas mientras uses una intención B2C específica");
+                      return;
+                    }
                     if (brief.verticalId !== studyVerticalId) {
                       setToast("Primero sincroniza este vertical con el brief");
                       return;
@@ -395,7 +454,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                     setToast("Enfoque aplicado; oferta, prueba, precio y garantía se mantienen");
                   }}
                 >
-                  {activeRecipe?.id === recipe.id ? "Enfoque aplicado ✓" : "Probar este enfoque"}
+                  {exactAutomotiveIntent ? "No aplicable a esta intención B2C" : activeRecipe?.id === recipe.id ? "Enfoque aplicado ✓" : "Probar este enfoque"}
                 </button>
               </article>
             ))}
@@ -447,16 +506,62 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                 {!verticales?.verticales.some((vertical) => vertical.id === "generalista") ? <option value="generalista">Generalista</option> : null}
               </select></label>
               <div className={styles.presetNotice}><span>El cambio de vertical conserva tus textos.</span><button type="button" onClick={loadVerticalPreset}>Cargar el contenido base de {verticalIntel?.label || "este vertical"}</button></div>
+              {brief.verticalId === "coches-motor" ? (
+                <section className={styles.intentLab} aria-labelledby="automotive-intent-title">
+                  <div>
+                    <span>INTENCIÓN DE BÚSQUEDA</span>
+                    <h3 id="automotive-intent-title">No mezcles situaciones que necesitan respuestas distintas</h3>
+                    <p>Reserva, embargo, financiación y carga desconocida cambian titular, campos, proceso, preguntas y evento de conversión.</p>
+                  </div>
+                  <div className={styles.intentGrid}>
+                    {(Object.entries(AUTOMOTIVE_INTENTS) as Array<[Exclude<LandingBrief["intent"], "vertical-default">, (typeof AUTOMOTIVE_INTENTS)[Exclude<LandingBrief["intent"], "vertical-default">]]>).map(([id, intent]) => (
+                      <button
+                        type="button"
+                        key={id}
+                        className={brief.intent === id ? styles.selected : ""}
+                        onClick={() => {
+                          setPreviousBrief(brief);
+                          setBrief((current) => applyAutomotiveIntent(current, id));
+                          setToast(`${intent.label}: brief, formulario y medición aplicados`);
+                        }}
+                      >
+                        <b>{intent.label}</b>
+                        <span>{intent.result}</span>
+                        <small>{intent.formFields.length} señales · {intent.eventName}</small>
+                      </button>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
               <div className={styles.strategyContextGrid}>
                 <label>Objetivo principal<select value={brief.objective} onChange={(event) => update("objective", event.target.value as LandingBrief["objective"])}><option value="qualified">Solicitud cualificada</option><option value="booking">Reserva o llamada</option><option value="quote">Presupuesto o propuesta</option><option value="contact">Contacto directo</option></select></label>
                 <label>Origen del tráfico<select value={brief.trafficSource} onChange={(event) => update("trafficSource", event.target.value as LandingBrief["trafficSource"])}><option value="mixed">Mixto</option><option value="meta">Meta / interrupción</option><option value="google">Google / intención</option><option value="organic">Orgánico o referido</option><option value="outbound">Outbound</option></select></label>
                 <label>Temperatura<select value={brief.awareness} onChange={(event) => update("awareness", event.target.value as LandingBrief["awareness"])}><option value="cold">Fría</option><option value="warm">Templada</option><option value="hot">Caliente</option></select></label>
                 <label>Profundidad<select value={brief.depth} onChange={(event) => update("depth", event.target.value as LandingBrief["depth"])}><option value="short">Breve</option><option value="standard">Estándar</option><option value="extended">Extensa</option></select></label>
-                <label>Campos del formulario<select value={brief.formFieldsTarget} onChange={(event) => update("formFieldsTarget", Number(event.target.value))}>{[3, 4, 5, 6, 7, 8].map((value) => <option key={value} value={value}>{value} campos</option>)}</select></label>
+                <label>Campos del formulario<select value={brief.formFieldsTarget} disabled={exactAutomotiveIntent} onChange={(event) => update("formFieldsTarget", Number(event.target.value))}>{[3, 4, 5, 6, 7, 8].map((value) => <option key={value} value={value}>{value} campos</option>)}</select></label>
               </div>
               <div className={styles.inlineRecommendation}>
-                <div><span>RECOMENDACIÓN ACTUAL</span><b>{ARCHITECTURES.find((item) => item.id === strategyRecommendation.architecture)?.label} · {strategyRecommendation.compatibility}/100 encaje</b><small>{strategyRecommendation.suggestedFormFields ? `${strategyRecommendation.suggestedFormFields} campos como punto de partida, usando la mediana del vertical cuando existe` : "Longitud de formulario pendiente de evidencia"}</small></div>
-                <button type="button" onClick={() => { setPreviousBrief(brief); setBrief((current) => applyStrategyRecommendation(current, strategyRecommendation)); }}>Aplicar</button>
+                <div><span>RECOMENDACIÓN ACTUAL</span><b>{exactAutomotiveIntent ? `${automotivePlaybook?.label} · formulario específico` : `${ARCHITECTURES.find((item) => item.id === strategyRecommendation.architecture)?.label} · ${strategyRecommendation.compatibility}/100 encaje`}</b><small>{exactAutomotiveIntent ? `${automotivePlaybook?.formFields.length || 0} campos obligatorios para no perder vehículo, carga, zona o contacto` : strategyRecommendation.suggestedFormFields ? `${strategyRecommendation.suggestedFormFields} campos como punto de partida, usando la mediana del vertical cuando existe` : "Longitud de formulario pendiente de evidencia"}</small></div>
+                <button type="button" disabled={exactAutomotiveIntent} onClick={() => { if (exactAutomotiveIntent) return; setPreviousBrief(brief); setBrief((current) => applyStrategyRecommendation(current, strategyRecommendation)); }}>Aplicar</button>
+              </div>
+                <div className={styles.blueprintPanel} data-active={Boolean(brief.evidencePlan)}>
+                  <header>
+                  <div><span>BLUEPRINT QUE GOBIERNA EL ORDEN DEL HTML</span><b>{brief.evidencePlan?.strategyLabel || "Todavía no has aplicado una estrategia"}</b></div>
+                  {brief.evidencePlan ? <small>{exactAutomotiveIntent ? "Curación editorial" : brief.evidencePlan.confidence === "high" ? "Confianza alta" : brief.evidencePlan.confidence === "medium" ? "Confianza media" : "Exploratoria"} · {brief.evidencePlan.sourceCompanies.length} fuentes aplicadas de {brief.evidencePlan.sampleBase} revisadas</small> : null}
+                </header>
+                {brief.evidencePlan ? (
+                  <>
+                    <ol>{brief.evidencePlan.sectionSequence.map((section, index) => <li key={section}><i>{String(index + 1).padStart(2, "0")}</i><b>{SECTION_LABELS[section]}</b></li>)}</ol>
+                    <div className={styles.blueprintSources}>
+                      <span>FUENTES CONSERVADAS</span>
+                      {brief.evidencePlan.sourceCompanies.map((source) => source.url ? (
+                        <a key={source.companyId} href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a>
+                      ) : (
+                        <a key={source.companyId} href={`?vista=companies&empresa=${encodeURIComponent(source.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">{source.name}</a>
+                      ))}
+                    </div>
+                  </>
+                ) : <p>Aplica una recomendación o una receta. La secuencia, el formulario y el render dejarán de ser una plantilla genérica.</p>}
               </div>
               <fieldset><legend>Arquitectura del funnel</legend><div className={styles.optionGrid}>
                 {ARCHITECTURES.map((item) => <button type="button" key={item.id} className={brief.architecture === item.id ? styles.selected : ""} onClick={() => update("architecture", item.id)}><b>{item.label}</b><span>{item.description}</span><small>{item.bestFor}</small></button>)}
@@ -465,7 +570,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                 {ANGLES.map((item) => <button type="button" key={item.id} className={brief.angle === item.id ? styles.selected : ""} onClick={() => update("angle", item.id)} title={item.description}>{item.label}</button>)}
               </div></fieldset>
               <div className={styles.twoCols}>
-                <label>Tono<select value={brief.tone} onChange={(event) => update("tone", event.target.value as LandingBrief["tone"])}><option value="consultative">Consultivo</option><option value="direct">Directo</option><option value="premium">Premium</option></select></label>
+                <label>Sistema visual<select value={brief.tone} onChange={(event) => update("tone", event.target.value as LandingBrief["tone"])}><option value="consultative">Consultivo · confianza</option><option value="direct">Directo · alto contraste</option><option value="premium">Premium · editorial</option></select></label>
                 <label>Variante activa<select value={brief.variant} onChange={(event) => update("variant", event.target.value as LandingBrief["variant"])}><option value="a">A · Resultado</option><option value="b">B · Dolor</option></select></label>
               </div>
               <div className={styles.variantCompare}>
@@ -503,6 +608,13 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
 
           {activeSection === "conversion" ? (
             <div className={styles.controls}>
+              <div className={styles.deliveryNotice} data-ready={endpointConfigured && brief.leadEndpointVerified}>
+                <div><span>ENTREGA DEL LEAD</span><b>{brief.leadEndpointVerified && endpointConfigured ? "Endpoint HTTPS probado" : endpointConfigured ? "Endpoint configurado; falta probarlo" : "Sin endpoint HTTPS no existe lead capturado"}</b><p>El formulario hace POST, espera una respuesta válida y solo entonces registra la conversión. WhatsApp, llamada o calendario quedan como siguiente paso.</p></div>
+              </div>
+              <label>Endpoint HTTPS del CRM / webhook<input value={brief.leadEndpoint} onChange={(event) => update("leadEndpoint", event.target.value)} placeholder="https://crm.tudominio.com/leads" /></label>
+              <div className={styles.verificationCheck}><input id="lead-endpoint-verified" type="checkbox" checked={brief.leadEndpointVerified} onChange={(event) => update("leadEndpointVerified", event.target.checked)} /><label htmlFor="lead-endpoint-verified"><b>Envío real probado</b><small>Marca esto solo después de recibir un lead de prueba y una respuesta 2xx del endpoint.</small></label></div>
+              <label>Google Tag Manager<input value={brief.gtmId} onChange={(event) => update("gtmId", event.target.value)} placeholder="GTM-XXXXXXX" /></label>
+              <div className={styles.verificationCheck}><input id="tracking-verified" type="checkbox" checked={brief.trackingVerified} onChange={(event) => update("trackingVerified", event.target.checked)} /><label htmlFor="tracking-verified"><b>Conversión comprobada</b><small>Marca esto después de ver el evento correcto en Preview / Tag Assistant sin datos personales.</small></label></div>
               <div className={styles.twoCols}>
                 <label>Conversión<select value={brief.ctaMode} onChange={(event) => update("ctaMode", event.target.value as LandingBrief["ctaMode"])}><option value="whatsapp">WhatsApp</option><option value="phone">Llamada</option><option value="calendar">Calendario / URL</option></select></label>
                 <label>Color<input className={styles.colorInput} type="color" value={brief.accent} onChange={(event) => update("accent", event.target.value)} /></label>
@@ -511,7 +623,13 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               <label>Texto del CTA<input value={brief.ctaLabel} onChange={(event) => update("ctaLabel", event.target.value)} placeholder="Se genera según la arquitectura" /></label>
               <label>URL del logo<input value={brief.logoUrl} onChange={(event) => update("logoUrl", event.target.value)} placeholder="https://…/logo.svg" /></label>
               <label>Imagen principal<input value={brief.heroImageUrl} onChange={(event) => update("heroImageUrl", event.target.value)} placeholder="https://…/imagen.webp" /></label>
+              <div className={styles.twoCols}>
+                <label>Responsable legal<input value={brief.legalName} onChange={(event) => update("legalName", event.target.value)} placeholder="Razón social real" /></label>
+                <label>CIF / identificación<input value={brief.legalId} onChange={(event) => update("legalId", event.target.value)} placeholder="Opcional en el footer" /></label>
+              </div>
               <label>Política de privacidad<input value={brief.privacyUrl} onChange={(event) => update("privacyUrl", event.target.value)} placeholder="https://…/privacidad" /></label>
+              <label>Política de cookies<input value={brief.cookiesUrl} onChange={(event) => update("cookiesUrl", event.target.value)} placeholder="https://…/cookies" /></label>
+              <p className={styles.helper}>La analítica solo carga tras aceptar el aviso. Entonces conserva UTM y click IDs y envía a dataLayer únicamente el evento, la intención, la ruta y el número de campos completados: nunca datos personales, económicos ni del vehículo.</p>
             </div>
           ) : null}
 
@@ -575,12 +693,13 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                 {example.thumbnail ? <img src={example.thumbnail} alt={`Captura de ${example.name}`} loading="lazy" /> : <span>Sin vista previa</span>}
               </a>
               <div>
-                <span>{example.country} · {example.capturedPages} páginas</span>
+                <span>{example.country} · idioma {example.language || "no identificado"} · {example.capturedPages} páginas</span>
                 <div className={styles.exampleBrand}>
                   <CompanyLogo company={{ id: example.companyId, name: example.name }} logos={logos} size="small" />
                   <h4>{example.name}</h4>
                 </div>
                 <p>{example.headline || example.offer}</p>
+                {example.sectionHeadings?.length ? <ol className={styles.exampleOutline}>{example.sectionHeadings.slice(0, 5).map((heading, index) => <li key={`${example.companyId}-${heading}`}><i>{String(index + 1).padStart(2, "0")}</i><span>{heading}</span></li>)}</ol> : null}
                 <div><a href={`?vista=companies&empresa=${encodeURIComponent(example.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">Abrir ficha</a>{example.sourceUrl ? <a href={example.sourceUrl} target="_blank" rel="noopener noreferrer">Visitar web ↗</a> : null}</div>
               </div>
             </article>

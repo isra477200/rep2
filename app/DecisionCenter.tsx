@@ -886,7 +886,7 @@ function Overview({
 }) {
   const primaryHypotheses = hypotheses.slice(0, 3);
   const primaryGaps = gaps.slice(0, 3);
-  const gapReadings = gaps.reduce(
+  const gapReadings = gaps.reduce<number>(
     (sum, item) => sum + (firstNumber(asRecord(item), ["verticalCount"]) || 1),
     0,
   );

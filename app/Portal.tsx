@@ -2027,7 +2027,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 ["operations", "◆", "Centro de Operaciones", "Prioridad, campaña 360, OCR, tests, métricas y battlecards"],
                 ["informe", "≡", "Informe ejecutivo", "El mercado en una página, listo para copiar o imprimir"],
                 ["cruces", "⤫", "Cruces", `${cruces ? cruces.findings.length : resourceLoadState.cruces === "error" ? "n/d" : "…"} hallazgos · 12 análisis cruzados`],
-                ["landings", "▭", "Landings", "3 plantillas por nicho basadas en conclusiones"],
+                ["landings", "▭", "Landings", "Estudio real → blueprint → landing completa y medible"],
                 ["adlab", "⌗", "Laboratorio de anuncios", "Busca copy, cruza patrones y crea matrices de test trazables"],
                 ["arsenal", "⚑", `Arsenal · ${anunciosReales ? fmt(anunciosReales.total) : resourceLoadState.anunciosReales === "error" ? "n/d" : "…"} anuncios`, "Garantías, titulares y anuncios reales buscables"],
                 ["watch", "◔", `Vigilancia · ${vigilancia ? vigilancia.semaforo.filter((s) => s.nivel === "rojo").length : resourceLoadState.vigilancia === "error" ? "n/d" : "…"} en rojo`, "Semáforo España con fragilidad y contradicciones"],

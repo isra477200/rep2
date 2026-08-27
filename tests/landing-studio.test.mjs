@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   applyEvidenceRecipe,
+  applyAutomotiveIntent,
   applyStrategyRecommendation,
   buildEvidenceRecipes,
   buildLandingHtml,
@@ -39,10 +40,10 @@ test("los destinos se validan según el modo de CTA, no solo por longitud", () =
     assert.equal(destinationCompatible(value, "whatsapp"), false, value);
     assert.equal(destinationCompatible(value, "phone"), false, value);
   }
-  for (const value of ["https://cal.com/equipo/30", "http://example.com/reserva?zona=Madrid"]) {
+  for (const value of ["https://cal.com/equipo/30", "https://example.com/reserva?zona=Madrid"]) {
     assert.equal(destinationCompatible(value, "calendar"), true, value);
   }
-  for (const value of ["cal.com/equipo", "+34600111222", "javascript:alert(1)", ""]) {
+  for (const value of ["cal.com/equipo", "http://example.com/reserva", "+34600111222", "javascript:alert(1)", ""]) {
     assert.equal(destinationCompatible(value, "calendar"), false, value);
   }
 });
@@ -84,7 +85,7 @@ test("aplicar una receta conserva claims y deja visible un destino incompatible 
   assert.equal(readiness.publishable, false);
 });
 
-test("las recetas v2 separan fuentes de hero, CTA y coocurrencia, y no inventan saturación", async () => {
+test("las recetas v3 separan fuentes, secuencia y coocurrencia, y no inventan saturación", async () => {
   const intelligence = await intelligencePromise;
   const vertical = intelligence.verticals["clinicas-salud"];
   const brief = {
@@ -104,6 +105,9 @@ test("las recetas v2 separan fuentes de hero, CTA y coocurrencia, y no inventan 
     assert.match(recipe.summary, /no es una tasa de conversión/i);
     assert.ok(["high", "medium", "low"].includes(recipe.confidence), recipe.id);
     assert.ok(recipe.sampleBase > 0, recipe.id);
+    assert.equal(recipe.heroSampleBase, recipe.heroFamily.sampleBase, recipe.id);
+    assert.equal(recipe.ctaSampleBase, recipe.ctaFamily.sampleBase, recipe.id);
+    assert.ok(recipe.sectionSequence.length >= 6, `${recipe.id}: sin blueprint de secciones`);
     assert.ok(recipe.sourceGroups.hero.length > 0, `${recipe.id}: sin fuentes de hero`);
     assert.ok(recipe.sourceGroups.cta.length > 0, `${recipe.id}: sin fuentes de CTA`);
     assert.ok(recipe.sources.some((source) =>
@@ -185,6 +189,18 @@ test("cada arquitectura renderiza un bloque distintivo", () => {
     signatures.add(block[0]);
   }
   assert.equal(signatures.size, architectures.length);
+});
+
+test("los tres sistemas visuales producen tratamientos realmente distintos", () => {
+  const consultative = buildLandingHtml({ ...defaultBrief(), tone: "consultative" });
+  const direct = buildLandingHtml({ ...defaultBrief(), tone: "direct" });
+  const premium = buildLandingHtml({ ...defaultBrief(), tone: "premium" });
+
+  assert.match(consultative, /<body class="theme-consultative architecture-/);
+  assert.match(direct, /<body class="theme-direct architecture-/);
+  assert.match(premium, /<body class="theme-premium architecture-/);
+  assert.match(direct, /\.theme-direct \.hero\{background:#0d1b2d/);
+  assert.match(premium, /font-family:Georgia/);
 });
 
 test("la profundidad corta, estándar y extendida cambia de forma controlada secciones y FAQ", () => {
@@ -273,6 +289,12 @@ test("readiness bloquea pricing sin precio y lo libera con condiciones visibles"
     ctaMode: "whatsapp",
     destination: "+34600111222",
     privacyUrl: "https://example.com/privacidad",
+    cookiesUrl: "https://example.com/cookies",
+    legalName: "Empresa Ejemplo, S.L.",
+    leadEndpoint: "https://example.com/api/leads",
+    leadEndpointVerified: true,
+    gtmId: "GTM-ABCDE12",
+    trackingVerified: true,
   };
   const missingPrice = landingReadiness(base);
   assert.equal(checkById(missingPrice, "price").ok, false);
@@ -330,12 +352,134 @@ test("readiness detecta claims numéricos, temporales y garantías sin respaldo"
   assert.ok(!blockerIds(supported).includes("claim"));
 });
 
-test("la inteligencia v2 conserva denominadores, cobertura y referencias coherentes", async () => {
+test("las cuatro intenciones de coches generan páginas, campos y eventos distintos", () => {
+  const intents = {
+    "reserva-dominio": ["debt", "finance_company", "lead_form_submit_reserva"],
+    "embargo-precinto": ["embargo_type", "ownership", "lead_form_submit_embargo"],
+    "financiado-pendiente": ["finance_company", "debt", "lead_form_submit_financiado"],
+    "con-cargas": ["charge_type", "amount", "lead_form_submit_con_cargas"],
+  };
+  const signatures = new Set();
+  for (const [intent, [fieldA, fieldB, eventName]] of Object.entries(intents)) {
+    const brief = applyAutomotiveIntent(defaultBrief("coches-motor"), intent);
+    const ready = {
+      ...brief,
+      destination: "+34600111222",
+      privacyUrl: "https://example.com/privacidad",
+      cookiesUrl: "https://example.com/cookies",
+      legalName: "Compraventa Ejemplo, S.L.",
+      leadEndpoint: "https://example.com/api/leads",
+      leadEndpointVerified: true,
+      gtmId: "GTM-ABCDE12",
+      trackingVerified: true,
+    };
+    const html = buildLandingHtml(ready);
+    const compactRequest = buildLandingHtml({ ...ready, formFieldsTarget: 3 });
+    assert.match(html, new RegExp(`id="${fieldA}"`), intent);
+    assert.match(html, new RegExp(`id="${fieldB}"`), intent);
+    assert.match(formActionScript(html), new RegExp(eventName), intent);
+    assert.match(compactRequest, /id="phone"/, `${intent}: el contacto no puede desaparecer al reducir el formulario`);
+    assert.doesNotMatch(html, /La landing no debe|No publiques un plazo|antes de lanzar/i, intent);
+    assert.ok(brief.evidencePlan.sourceCompanies.length >= 4, intent);
+    assert.match(brief.evidencePlan.sourceCompanies[0].url, /^https:\/\//, intent);
+    assert.equal(landingReadiness(ready).publishable, true, intent);
+    signatures.add(`${brief.service}|${brief.ctaLabel}|${eventName}`);
+  }
+  assert.equal(signatures.size, 4);
+});
+
+test("una intención B2C de coches no puede ser sustituida por recetas genéricas", async () => {
+  const intelligence = await intelligencePromise;
+  const automotive = applyAutomotiveIntent(defaultBrief("coches-motor"), "reserva-dominio");
+  const recipe = buildEvidenceRecipes(
+    intelligence.verticals["coches-motor"],
+    intelligence.universal,
+    automotive,
+  )[0];
+  const recommendation = buildStrategyRecommendation(automotive, intelligence.verticals["coches-motor"]);
+
+  assert.strictEqual(applyEvidenceRecipe(automotive, recipe), automotive);
+  assert.strictEqual(applyStrategyRecommendation(automotive, recommendation), automotive);
+  assert.match(automotive.evidencePlan.recipeId, /^automotive-/);
+  const withoutBlueprint = landingReadiness({ ...automotive, evidencePlan: null });
+  assert.equal(checkById(withoutBlueprint, "blueprint").ok, false);
+  assert.ok(blockerIds(withoutBlueprint).includes("blueprint"));
+});
+
+test("readiness rechaza endpoints locales y exige medición con consentimiento", () => {
+  const base = {
+    ...defaultBrief("generalista"),
+    destination: "+34600111222",
+    privacyUrl: "https://example.com/privacidad",
+    cookiesUrl: "https://example.com/cookies",
+    legalName: "Empresa Ejemplo, S.L.",
+    gtmId: "GTM-ABCDE12",
+  };
+  const local = landingReadiness({ ...base, leadEndpoint: "http://localhost:8787/leads" });
+  assert.equal(checkById(local, "endpoint").ok, false);
+  assert.equal(local.publishable, false);
+
+  const withoutTracking = landingReadiness({ ...base, leadEndpoint: "https://example.com/leads", gtmId: "" });
+  assert.equal(checkById(withoutTracking, "tracking").ok, false);
+  assert.ok(blockerIds(withoutTracking).includes("tracking"));
+});
+
+test("la entrega persiste atribución y solo registra conversión después de un 2xx", () => {
+  const html = buildLandingHtml({
+    ...defaultBrief("generalista"),
+    destination: "+34600111222",
+    privacyUrl: "https://example.com/privacidad",
+    cookiesUrl: "https://example.com/cookies",
+    legalName: "Empresa Ejemplo, S.L.",
+    leadEndpoint: "https://example.com/api/leads?source=landing&version=3",
+    leadEndpointVerified: true,
+    gtmId: "GTM-ABCDE12",
+    trackingVerified: true,
+  });
+  const script = formActionScript(html);
+  const scriptSource = script.replace(/^<script>/, "").replace(/<\/script>$/, "");
+  assert.doesNotThrow(() => new Function(scriptSource));
+  for (const key of ["gclid", "gbraid", "wbraid", "fbclid", "msclkid", "utm_content", "utm_term"]) {
+    assert.match(script, new RegExp(key), key);
+  }
+  assert.match(script, /analyticsAllowed=state==='granted'&&Boolean\(gtmId\)/);
+  assert.ok(script.indexOf("localStorage.setItem(storageKey") > script.indexOf("if(analyticsAllowed)"));
+  assert.match(script, /localStorage\.removeItem\(storageKey\)/);
+  assert.match(script, /expiresAt:Date\.now\(\)\+consentDuration/);
+  assert.match(script, /if\(raw==='granted'\|\|raw==='denied'\)\{clearStoredConsent\(\);return ''\}/);
+  assert.match(script, /Date\.now\(\)>stored\.expiresAt\)\{clearStoredConsent\(\);return ''\}/);
+  assert.match(html, /data-analytics-manage>Gestionar analítica/);
+  assert.match(script, /ad_storage:'denied',analytics_storage:'granted',ad_user_data:'denied',ad_personalization:'denied'/);
+  assert.match(script, /googletagmanager\.com\/gtm\.js/);
+  assert.match(script, /X-Idempotency-Key/);
+  assert.match(script, /data\.vehicle\?'Vehículo:/);
+  assert.ok(script.indexOf("form.reset()") > script.indexOf("var message="));
+  const conversionPush = script.indexOf('window.dataLayer.push({event:"lead_form_submit_generalista"');
+  assert.ok(conversionPush > script.indexOf("if(!response.ok)"));
+  const dataLayerPayload = script.slice(conversionPush, script.indexOf("submitted_at:data.submitted_at", conversionPush) + 31);
+  assert.doesNotMatch(dataLayerPayload, /phone|email|name|vehicle|debt|embargo|charge_type|zone/);
+  assert.match(script, /https:\/\/example\.com\/api\/leads\?source=landing&version=3/);
+});
+
+test("el calendario navega tras el 2xx sin depender de un popup", () => {
+  const html = buildLandingHtml({
+    ...defaultBrief("generalista"),
+    ctaMode: "calendar",
+    destination: "https://cal.example.com/revision",
+    leadEndpoint: "https://example.com/leads",
+  });
+  const script = formActionScript(html);
+  assert.match(script, /window\.location\.assign\("https:\/\/cal\.example\.com\/revision"\)/);
+  assert.doesNotMatch(script, /window\.open\(/);
+  assert.ok(script.indexOf("window.location.assign") > script.indexOf("if(!response.ok)"));
+});
+
+test("la inteligencia v3 conserva denominadores, secuencias y referencias coherentes", async () => {
   const [intelligence, captureIndex] = await Promise.all([
     intelligencePromise,
     captureIndexPromise,
   ]);
-  assert.equal(intelligence.schemaVersion, "rv-landing-intelligence-v2");
+  assert.equal(intelligence.schemaVersion, "rv-landing-intelligence-v3");
   assert.equal(intelligence.source.companies, captureIndex.stats.records);
   assert.equal(intelligence.source.pages, captureIndex.stats.pages);
   assert.equal(intelligence.source.capturedPages, captureIndex.stats.captured);
@@ -362,10 +506,43 @@ test("la inteligencia v2 conserva denominadores, cobertura y referencias coheren
       guarantee: intelligence.universal.fieldPresence.guarantee,
       proof: intelligence.universal.fieldPresence.proof,
     },
-    { price: 24, guarantee: 32, proof: 52 },
+    { price: 26, guarantee: 34, proof: 58 },
   );
+  assert.ok(intelligence.universal.sectionPatterns.length >= 6);
+  for (const pattern of intelligence.universal.sectionPatterns) {
+    assert.ok(pattern.count > 0, pattern.id);
+    assert.equal(pattern.share, Math.round((pattern.count / intelligence.source.salesPageCompanies) * 100), pattern.id);
+    assert.ok(pattern.medianPosition >= 1, pattern.id);
+  }
+  const pricingHeadings = intelligence.universal.sectionPatterns.find((pattern) => pattern.id === "pricing")?.examples.map((item) => item.text).join(" | ") || "";
+  const proofHeadings = intelligence.universal.sectionPatterns.find((pattern) => pattern.id === "proof")?.examples.map((item) => item.text).join(" | ") || "";
+  assert.doesNotMatch(pricingHeadings, /plan de acci[oó]n|plan marketing|implantamos el sistema|sin bajar precios|mejor precio|precios asumibles|gu[ií]as? de precios/i);
+  assert.doesNotMatch(proofHeadings, /pierde clientes|nuevos clientes|fidelizaci[oó]n de clientes/i);
 
-  const invalidSalesUrl = /privacy|privacidad|politica(?:-de)?-privacidad|legal|condiciones|cookies?|\/blog\/|\/tag\/|\/404/;
+  const scopedSectionPatterns = [
+    ...intelligence.universal.sectionPatterns,
+    ...Object.values(intelligence.verticals).flatMap((vertical) => vertical.sectionPatterns),
+  ];
+  for (const pattern of scopedSectionPatterns) {
+    const headings = pattern.examples.map((item) => item.text).join(" | ");
+    assert.doesNotMatch(headings, /m[aá]s sobre sin categor[ií]a|google business profile|[uú]ltimas entradas/i, pattern.id);
+    if (pattern.id === "problem") assert.doesNotMatch(headings, /retorno|definimos|definici[oó]n|talento diverso para retos/i, pattern.id);
+    if (pattern.id === "qualification") assert.doesNotMatch(headings, /casos reales/i, pattern.id);
+    if (pattern.id === "pricing") assert.doesNotMatch(headings, /sin bajar precios|bajar el precio|mejor precio|precios asumibles|gu[ií]as? de precios|plan para .*semana/i, pattern.id);
+  }
+  const automotiveProof = intelligence.verticals["coches-motor"].sectionPatterns
+    .find((pattern) => pattern.id === "proof")?.examples.map((item) => item.text).join(" | ") || "";
+  assert.match(automotiveProof, /casos reales/i);
+  const sectionCompanies = (verticalId, patternId) =>
+    intelligence.verticals[verticalId].sectionPatterns.find((pattern) => pattern.id === patternId)?.companyIds || [];
+  assert.ok(!sectionCompanies("reformas-hogar", "problem").includes("reform-ads"));
+  assert.ok(!sectionCompanies("solar-energia", "pricing").includes("pepperli"));
+  assert.ok(!sectionCompanies("legal", "pricing").includes("lexiuris-marketing"));
+  assert.ok(!sectionCompanies("solar-energia", "offer").includes("solar-leads-estudio"));
+  assert.ok(!sectionCompanies("solar-energia", "qualification").includes("solar-leads-estudio"));
+  assert.ok(!scopedSectionPatterns.some((pattern) => pattern.companyIds.includes("habitatpresto")));
+
+  const invalidSalesUrl = /privacy|privacidad|politica(?:-de)?-privacidad|legal|condiciones|cookies?|\/blog\/|\/mag\/|\/tag\/|\/404/;
   for (const [verticalId, vertical] of Object.entries(intelligence.verticals)) {
     assert.equal(vertical.sampleSize, vertical.study.coverage.eligibleCompanies, verticalId);
     assert.equal(
@@ -410,7 +587,7 @@ test("la inteligencia v2 conserva denominadores, cobertura y referencias coheren
   }
 });
 
-test("las familias de CTA v2 excluyen navegación, cookies, login y boilerplate", async () => {
+test("las familias de CTA v3 excluyen navegación, cookies, login y boilerplate", async () => {
   const intelligence = await intelligencePromise;
   const ctaFamilies = [
     ...intelligence.universal.ctaFamilies,

@@ -1,3 +1,5 @@
+import { buildLandingHtmlV3 } from "./renderer.ts";
+
 export type LandingArchitecture =
   | "local"
   | "diagnostic"
@@ -20,6 +22,38 @@ export type LandingObjective = "qualified" | "booking" | "quote" | "contact";
 export type LandingTrafficSource = "meta" | "google" | "organic" | "outbound" | "mixed";
 export type LandingAwareness = "cold" | "warm" | "hot";
 export type LandingDepth = "short" | "standard" | "extended";
+export type LandingIntent =
+  | "vertical-default"
+  | "reserva-dominio"
+  | "embargo-precinto"
+  | "financiado-pendiente"
+  | "con-cargas";
+export type LandingSectionId =
+  | "problem"
+  | "qualification"
+  | "mechanism"
+  | "offer"
+  | "proof"
+  | "pricing"
+  | "guarantee"
+  | "faq";
+
+export type LandingEvidencePlan = {
+  recipeId: string;
+  strategy: "dominant" | "intent" | "contrast" | "recommended";
+  strategyLabel: string;
+  heroFamilyId: string;
+  heroFamilyLabel: string;
+  ctaFamilyId: string;
+  ctaFamilyLabel: string;
+  confidence: "high" | "medium" | "low";
+  observedTogether: number;
+  sampleBase: number;
+  heroSampleBase: number;
+  ctaSampleBase: number;
+  sectionSequence: LandingSectionId[];
+  sourceCompanies: Array<{ companyId: string; name: string; url?: string }>;
+};
 
 export type LandingBrief = {
   architecture: LandingArchitecture;
@@ -30,8 +64,10 @@ export type LandingBrief = {
   trafficSource: LandingTrafficSource;
   awareness: LandingAwareness;
   depth: LandingDepth;
+  intent: LandingIntent;
   formFieldsTarget: number;
   activeRecipeId: string;
+  evidencePlan: LandingEvidencePlan | null;
   verticalId: string;
   brand: string;
   zone: string;
@@ -52,6 +88,13 @@ export type LandingBrief = {
   logoUrl: string;
   heroImageUrl: string;
   privacyUrl: string;
+  cookiesUrl: string;
+  legalName: string;
+  legalId: string;
+  leadEndpoint: string;
+  leadEndpointVerified: boolean;
+  gtmId: string;
+  trackingVerified: boolean;
 };
 
 export type LandingExample = {
@@ -72,6 +115,11 @@ export type LandingExample = {
   completeness: number;
   fieldsPresent: string[];
   score: number;
+  language?: string | null;
+  sectionHeadings?: string[];
+  sectionSequence?: LandingSectionId[];
+  ctaTexts?: string[];
+  documentHeight?: number | null;
   sourceRole?: string | null;
   salesPageValid?: boolean;
   trustedScope?: boolean;
@@ -117,6 +165,15 @@ export type LandingVerticalIntelligence = {
   }>;
   examples: LandingExample[];
   recommendations: string[];
+  sectionPatterns?: Array<{
+    id: LandingSectionId;
+    label: string;
+    count: number;
+    share: number;
+    medianPosition: number | null;
+    companyIds: string[];
+    examples: Array<{ companyId: string; name: string; text: string }>;
+  }>;
   study: {
     confidence: "high" | "medium" | "low";
     coverage: {
@@ -142,7 +199,7 @@ export type LandingVerticalIntelligence = {
 };
 
 export type LandingIntelligence = {
-  schemaVersion: "rv-landing-intelligence-v2";
+  schemaVersion: "rv-landing-intelligence-v3";
   generatedAt: string;
   source: {
     companies: number;
@@ -163,6 +220,7 @@ export type LandingIntelligence = {
     fieldPresence: Record<string, number>;
     ctaFamilies: LandingFamily[];
     heroFamilies: LandingFamily[];
+    sectionPatterns: LandingVerticalIntelligence["sectionPatterns"];
     anatomy: Array<{ id: string; label: string; purpose: string }>;
     dataQuality: {
       eligibleCompanies: number;
@@ -208,7 +266,10 @@ export type LandingEvidenceRecipe = {
   };
   observedTogether: number;
   sampleBase: number;
+  heroSampleBase: number;
+  ctaSampleBase: number;
   warnings: string[];
+  sectionSequence: LandingSectionId[];
 };
 
 export type LandingStrategyRecommendation = {
@@ -220,6 +281,7 @@ export type LandingStrategyRecommendation = {
   reasons: string[];
   risks: string[];
   suggestedFormFields: number | null;
+  evidencePlan: LandingEvidencePlan;
 };
 
 type VerticalPreset = {
@@ -509,6 +571,50 @@ const trafficHeroPriority: Record<LandingTrafficSource, string[]> = {
   mixed: ["outcome", "proof", "identity", "mechanism", "pain", "risk"],
 };
 
+const SECTION_FALLBACK: LandingSectionId[] = [
+  "problem",
+  "qualification",
+  "mechanism",
+  "offer",
+  "proof",
+  "pricing",
+  "guarantee",
+  "faq",
+];
+
+const buildSectionSequence = (
+  vertical: LandingVerticalIntelligence | null | undefined,
+  heroFamilyId = "outcome",
+  ctaFamilyId = "contact",
+): LandingSectionId[] => {
+  const observed = [...(vertical?.sectionPatterns || [])]
+    .filter((item) => item.count > 0)
+    .sort(
+      (left, right) =>
+        (left.medianPosition ?? 99) - (right.medianPosition ?? 99) ||
+        right.share - left.share,
+    )
+    .map((item) => item.id);
+  const priority: LandingSectionId[] =
+    heroFamilyId === "pain"
+      ? ["problem", "qualification"]
+      : heroFamilyId === "proof"
+        ? ["proof", "qualification"]
+        : heroFamilyId === "mechanism"
+          ? ["mechanism", "qualification"]
+          : heroFamilyId === "risk"
+            ? ["guarantee", "qualification"]
+            : ["qualification", "mechanism"];
+  if (ctaFamilyId === "quote") priority.push("pricing", "offer");
+  if (["booking", "availability", "contact"].includes(ctaFamilyId)) {
+    priority.push("mechanism", "offer");
+  }
+  const sequence = [...priority, ...observed, ...SECTION_FALLBACK];
+  return sequence.filter(
+    (id, index, values): id is LandingSectionId => values.indexOf(id) === index,
+  );
+};
+
 const familyConfidence = (
   hero: LandingFamily,
   cta: LandingFamily,
@@ -600,7 +706,9 @@ export const buildEvidenceRecipes = (
       .forEach((source) => {
       if (!sourceMap.has(source.companyId)) sourceMap.set(source.companyId, source);
     });
-    const sampleBase = vertical?.sampleSize || hero.sampleBase || cta.sampleBase || 0;
+    const heroSampleBase = hero.sampleBase || vertical?.sampleSize || 0;
+    const ctaSampleBase = cta.sampleBase || vertical?.sampleSize || 0;
+    const sampleBase = Math.max(heroSampleBase, ctaSampleBase);
     const observedTogether = cooccurrence?.count || 0;
     const scopes = { hero: heroScope, cta: ctaScope } as const;
     const strategyLabel = {
@@ -647,6 +755,9 @@ export const buildEvidenceRecipes = (
       sourceGroups,
       observedTogether,
       sampleBase,
+      heroSampleBase,
+      ctaSampleBase,
+      sectionSequence: buildSectionSequence(vertical, hero.id, cta.id),
       warnings: observedTogether
         ? []
         : ["Apertura y CTA se observan por separado; valida la combinación como experimento."],
@@ -659,7 +770,7 @@ export const destinationCompatible = (value: string, mode: LandingCtaMode) => {
   if (!text) return false;
   if (mode === "calendar") {
     try {
-      return ["http:", "https:"].includes(new URL(text).protocol);
+      return new URL(text).protocol === "https:";
     } catch {
       return false;
     }
@@ -673,16 +784,38 @@ export const destinationCompatible = (value: string, mode: LandingCtaMode) => {
 export const applyEvidenceRecipe = (
   brief: LandingBrief,
   recipe: LandingEvidenceRecipe,
-): LandingBrief => ({
-  ...brief,
-  architecture: recipe.architecture,
-  angle: recipe.angle,
-  variant: recipe.variant,
-  ctaMode: recipe.ctaMode,
-  ctaLabel: recipe.ctaLabel,
-  destination: brief.destination,
-  activeRecipeId: recipe.id,
-});
+): LandingBrief => {
+  if (brief.verticalId === "coches-motor" && brief.intent !== "vertical-default") return brief;
+  return {
+    ...brief,
+    architecture: recipe.architecture,
+    angle: recipe.angle,
+    variant: recipe.variant,
+    ctaMode: recipe.ctaMode,
+    ctaLabel: recipe.ctaLabel,
+    destination: brief.destination,
+    activeRecipeId: recipe.id,
+    evidencePlan: {
+      recipeId: recipe.id,
+      strategy: recipe.strategy,
+      strategyLabel: recipe.strategyLabel,
+      heroFamilyId: recipe.heroFamily.id,
+      heroFamilyLabel: recipe.heroFamily.label,
+      ctaFamilyId: recipe.ctaFamily.id,
+      ctaFamilyLabel: recipe.ctaFamily.label,
+      confidence: recipe.confidence,
+      observedTogether: recipe.observedTogether,
+      sampleBase: recipe.sampleBase,
+      heroSampleBase: recipe.heroSampleBase,
+      ctaSampleBase: recipe.ctaSampleBase,
+      sectionSequence: recipe.sectionSequence,
+      sourceCompanies: recipe.sources.map((source) => ({
+        companyId: source.companyId,
+        name: source.name,
+      })),
+    },
+  };
+};
 
 export const buildStrategyRecommendation = (
   brief: LandingBrief,
@@ -714,6 +847,23 @@ export const buildStrategyRecommendation = (
     96,
     58 + (confidence === "high" ? 18 : confidence === "medium" ? 10 : 3) + Math.round(coverage / 8),
   );
+  const dominantHero = vertical?.study?.dominantHero || null;
+  const dominantCta = vertical?.study?.dominantCta || null;
+  const referenceMap = new Map<string, { companyId: string; name: string }>();
+  [
+    ...(dominantHero?.examples || []),
+    ...(dominantCta?.examples || []),
+    ...(vertical?.examples || []).slice(0, 4).map((example) => ({
+      companyId: example.companyId,
+      name: example.name,
+    })),
+  ].forEach((source) => {
+    if (source?.companyId && !referenceMap.has(source.companyId)) {
+      referenceMap.set(source.companyId, { companyId: source.companyId, name: source.name });
+    }
+  });
+  const recommendedCtaFamily = objectiveCtaFamily[brief.objective];
+  const recommendedHeroFamily = trafficHeroPriority[brief.trafficSource]?.[0] || "outcome";
   return {
     architecture: objectiveArchitecture[brief.objective],
     angle: trafficAngle[brief.trafficSource],
@@ -732,22 +882,42 @@ export const buildStrategyRecommendation = (
       ...(coverage < 35 ? ["La cobertura de CTA del vertical es baja; contrasta el destino manualmente."] : []),
       ...(confidence === "low" ? ["Muestra pequeña: trata esta configuración como hipótesis exploratoria."] : []),
     ],
+    evidencePlan: {
+      recipeId: `recommended-${brief.verticalId}-${brief.objective}-${brief.trafficSource}`,
+      strategy: "recommended",
+      strategyLabel: "Blueprint recomendado",
+      heroFamilyId: recommendedHeroFamily,
+      heroFamilyLabel: dominantHero?.label || "Apertura orientada a intención",
+      ctaFamilyId: recommendedCtaFamily,
+      ctaFamilyLabel: dominantCta?.label || "Acción alineada con el objetivo",
+      confidence,
+      observedTogether: 0,
+      sampleBase: vertical?.sampleSize || 0,
+      heroSampleBase: dominantHero?.sampleBase || vertical?.sampleSize || 0,
+      ctaSampleBase: dominantCta?.sampleBase || vertical?.sampleSize || 0,
+      sectionSequence: buildSectionSequence(vertical, recommendedHeroFamily, recommendedCtaFamily),
+      sourceCompanies: [...referenceMap.values()].slice(0, 6),
+    },
   };
 };
 
 export const applyStrategyRecommendation = (
   brief: LandingBrief,
   recommendation: LandingStrategyRecommendation,
-): LandingBrief => ({
-  ...brief,
-  architecture: recommendation.architecture,
-  angle: recommendation.angle,
-  ctaMode: recommendation.ctaMode,
-  ctaLabel: recommendation.ctaLabel,
-  formFieldsTarget: recommendation.suggestedFormFields || brief.formFieldsTarget,
-  destination: brief.destination,
-  activeRecipeId: "",
-});
+): LandingBrief => {
+  if (brief.verticalId === "coches-motor" && brief.intent !== "vertical-default") return brief;
+  return {
+    ...brief,
+    architecture: recommendation.architecture,
+    angle: recommendation.angle,
+    ctaMode: recommendation.ctaMode,
+    ctaLabel: recommendation.ctaLabel,
+    formFieldsTarget: recommendation.suggestedFormFields || brief.formFieldsTarget,
+    destination: brief.destination,
+    activeRecipeId: "",
+    evidencePlan: recommendation.evidencePlan,
+  };
+};
 
 const clean = (value: string) => value.replace(/\s+/g, " ").trim();
 const capitalize = (value: string) => {
@@ -767,11 +937,22 @@ const safeUrl = (value: string) => {
   if (!text) return "";
   try {
     const url = new URL(text);
-    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+    return url.protocol === "https:" ? url.href : "";
   } catch {
     return "";
   }
 };
+const safeLeadEndpoint = (value: string) => {
+  const text = clean(value);
+  if (!text) return "";
+  try {
+    const url = new URL(text);
+    return url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+};
+const safeGtmId = (value: string) => /^GTM-[A-Z0-9]{4,}$/i.test(clean(value)) ? clean(value).toUpperCase() : "";
 const safeColor = (value: string) => (/^#[0-9a-f]{6}$/i.test(value) ? value : "#1769e0");
 const singular = (value: string) => {
   const text = clean(value);
@@ -797,8 +978,10 @@ export const defaultBrief = (verticalId = "clinicas-salud"): LandingBrief => {
     trafficSource: "mixed",
     awareness: "cold",
     depth: "standard",
+    intent: "vertical-default",
     formFieldsTarget: 5,
     activeRecipeId: "",
+    evidencePlan: null,
     verticalId,
     brand: "RedVitalia",
     zone: "tu zona",
@@ -819,6 +1002,13 @@ export const defaultBrief = (verticalId = "clinicas-salud"): LandingBrief => {
     logoUrl: "",
     heroImageUrl: "",
     privacyUrl: "",
+    cookiesUrl: "",
+    legalName: "",
+    legalId: "",
+    leadEndpoint: "",
+    leadEndpointVerified: false,
+    gtmId: "",
+    trackingVerified: false,
   };
 };
 
@@ -844,6 +1034,260 @@ export const applyVerticalPreset = (brief: LandingBrief, verticalId: string): La
     objective: verticalId === "belleza-bienestar" || verticalId === "hosteleria-turismo" ? "booking" : "qualified",
     formFieldsTarget: verticalId === "belleza-bienestar" || verticalId === "hosteleria-turismo" ? 4 : 5,
     activeRecipeId: "",
+    evidencePlan: null,
+    intent: "vertical-default",
+    leadEndpointVerified: false,
+    trackingVerified: false,
+  };
+};
+
+type AutomotiveIntentPlaybook = {
+  label: string;
+  route: string;
+  eventName: string;
+  service: string;
+  audience: string;
+  pain: string;
+  result: string;
+  filter: string;
+  offer: string;
+  ctaLabel: string;
+  formFields: string[];
+  accepted: string[];
+  rejected: string[];
+  steps: Array<{ title: string; text: string }>;
+  faqs: Array<{ question: string; answer: string }>;
+  referenceIds: string[];
+};
+
+export const AUTOMOTIVE_MARKET_REFERENCES = [
+  {
+    id: "export-coches-financiados",
+    name: "Export Coches Financiados",
+    url: "https://exportcochesfinanciados.com/",
+    market: "España",
+    language: "es",
+    reviewedAt: "2026-08-27",
+    observedSections: ["formulario inicial", "casos", "proceso", "opiniones", "FAQ"],
+    observed: "Formulario de vehículo y deuda en el primer bloque; después ventajas, casuística, proceso, opiniones y FAQ.",
+  },
+  {
+    id: "oto-exportacion",
+    name: "OtoExportación",
+    url: "https://otoexportacion.es/",
+    market: "España",
+    language: "es",
+    reviewedAt: "2026-08-27",
+    observedSections: ["tasación", "filtro del vehículo", "proceso", "prueba social", "FAQ"],
+    observed: "Tasación arriba, filtro por estado del coche, proceso, prueba social y preguntas sobre documentación y deuda.",
+  },
+  {
+    id: "valorami-auto-deuda",
+    name: "Valórame Auto · coche con deuda",
+    url: "https://www.valoramiauto.com/vender-coche-con-deuda/",
+    market: "España",
+    language: "es",
+    reviewedAt: "2026-08-27",
+    observedSections: ["situación", "opciones", "cancelación", "valoración", "contacto"],
+    observed: "Promesa prudente: evaluar situación, explicar opciones y gestionar cancelación si resulta posible.",
+  },
+  {
+    id: "reserva-y-embargo",
+    name: "Reserva y Embargo",
+    url: "https://www.reservayembargo.es/",
+    market: "España",
+    language: "es",
+    reviewedAt: "2026-08-27",
+    observedSections: ["formulario inicial", "tipos de carga", "proceso", "territorio", "testimonios"],
+    observed: "Formulario compacto en primer viewport, explicación de tipos de carga, proceso, territorio y testimonios.",
+  },
+  {
+    id: "paga-tu-coche",
+    name: "PagaTuCoche",
+    url: "https://pagatucoche.com/",
+    market: "España",
+    language: "es",
+    reviewedAt: "2026-08-27",
+    observedSections: ["situaciones", "proceso", "alternativas", "objeciones", "pago"],
+    observed: "Segmenta situaciones, explica cuatro pasos, compara alternativas y responde objeciones legales y de pago.",
+  },
+  {
+    id: "compro-coches-export",
+    name: "Compro Coches Export",
+    url: "https://comprocochesexport.es/",
+    market: "España",
+    language: "es",
+    reviewedAt: "2026-08-27",
+    observedSections: ["alcance", "gestión", "responsabilidad", "deuda", "contacto"],
+    observed: "Aclara de forma visible qué gestión realiza y qué deuda continúa siendo responsabilidad del titular.",
+  },
+] as const;
+
+export const AUTOMOTIVE_INTENTS: Record<Exclude<LandingIntent, "vertical-default">, AutomotiveIntentPlaybook> = {
+  "reserva-dominio": {
+    label: "Reserva de dominio",
+    route: "/vender-coche-reserva-dominio/",
+    eventName: "lead_form_submit_reserva",
+    service: "valoración de coches con reserva de dominio",
+    audience: "propietarios que quieren vender un coche con reserva de dominio o deuda pendiente",
+    pain: "cancelar deuda o iniciar trámites sin saber antes si la operación tiene sentido",
+    result: "saber si la venta es viable antes de cancelar nada a ciegas",
+    filter: "vehículo, kilometraje, financiera, deuda pendiente, titularidad y provincia",
+    offer: "Revisamos el vehículo y la deuda pendiente, calculamos la viabilidad de la operación y explicamos el siguiente paso con la financiera.",
+    ctaLabel: "Comprobar si mi venta es viable",
+    formFields: ["vehicle", "year", "mileage", "debt", "financeCompany", "zone", "phone"],
+    accepted: ["Reserva de dominio activa", "Deuda pendiente con financiera", "Propietario que quiere vender", "Vehículo con documentación revisable"],
+    rejected: ["Personas que buscan comprar coches baratos", "Consultas jurídicas sin intención de venta", "Vehículos sin titularidad acreditable"],
+    steps: [
+      { title: "Envías los datos", text: "Vehículo, kilómetros, financiera y deuda aproximada." },
+      { title: "Revisamos viabilidad", text: "Contrastamos valor, deuda y situación documental antes de prometer una oferta." },
+      { title: "Recibes un siguiente paso", text: "Te explicamos si encaja y cómo se resolvería la reserva si avanzas." },
+      { title: "Firma, pago y gestión", text: "Solo si aceptas y la documentación permite completar la operación." },
+    ],
+    faqs: [
+      { question: "¿Tengo que cancelar la reserva antes?", answer: "No conviene cancelar a ciegas. Primero revisamos deuda, vehículo y documentación para saber si la venta puede ser viable." },
+      { question: "¿Qué pasa si debo más de lo que vale el coche?", answer: "Hay que calcular la diferencia real. Te diremos si existe una vía viable o si la operación no encaja antes de pedirte más trámites." },
+      { question: "¿Quién habla con la financiera?", answer: "Depende del caso y de la entidad. Tras la revisión te explicamos qué gestiona cada parte y qué documentos hacen falta." },
+      { question: "¿Recibiré una oferta al enviar el formulario?", answer: "El formulario inicia una revisión. No podemos prometer una oferta hasta comprobar el vehículo, la deuda y la titularidad." },
+    ],
+    referenceIds: ["export-coches-financiados", "valorami-auto-deuda", "reserva-y-embargo", "paga-tu-coche"],
+  },
+  "embargo-precinto": {
+    label: "Embargo o precinto",
+    route: "/vender-coche-embargado/",
+    eventName: "lead_form_submit_embargo",
+    service: "revisión de coches con embargo o precinto",
+    audience: "propietarios que quieren vender un coche con embargo, precinto o anotación administrativa",
+    pain: "recibir respuestas genéricas sin que nadie revise el tipo de embargo y la titularidad",
+    result: "obtener una respuesta clara sobre la viabilidad de vender el coche embargado",
+    filter: "vehículo, tipo e importe del embargo, titularidad, provincia y documentación disponible",
+    offer: "Revisamos el tipo de embargo o precinto y la documentación antes de decir si la operación puede avanzar.",
+    ctaLabel: "Revisar mi caso de embargo",
+    formFields: ["vehicle", "year", "mileage", "embargoType", "amount", "ownership", "phone"],
+    accepted: ["Embargo administrativo o judicial", "Precinto o anotación que pueda documentarse", "Propietario con intención real de vender", "Importe aproximado conocido o por confirmar"],
+    rejected: ["Búsqueda de coches de subasta", "Asesoría legal sin intención de venta", "Vehículo robado o sin titularidad", "Promesas de compra sin revisar la carga"],
+    steps: [
+      { title: "Identificamos la carga", text: "Tipo de embargo, organismo, importe aproximado y titularidad." },
+      { title: "Revisamos el coche", text: "Valor, documentación y límites reales de la operación." },
+      { title: "Confirmamos viabilidad", text: "Te decimos qué se puede hacer y qué no antes de prometer un precio." },
+      { title: "Formalizamos si encaja", text: "Firma, pago y gestión según las condiciones comprobadas." },
+    ],
+    faqs: [
+      { question: "¿Se puede vender un coche con embargo?", answer: "Depende del tipo de embargo, su importe, la titularidad y la forma de levantar o gestionar la carga. Por eso lo revisamos antes de prometer una compra." },
+      { question: "¿Esta página vende coches de subasta?", answer: "No. Está dirigida a propietarios que quieren vender su propio vehículo." },
+      { question: "¿Y si el coche tiene un precinto?", answer: "Un precinto puede cambiar por completo la viabilidad. Indícalo en el formulario para que el caso se revise por la ruta adecuada." },
+      { question: "¿Qué documentos pueden pedirme?", answer: "Después del primer filtro pueden solicitarse permiso de circulación, ficha técnica, acreditación de titularidad y documentación de la carga." },
+    ],
+    referenceIds: ["reserva-y-embargo", "oto-exportacion", "paga-tu-coche", "compro-coches-export"],
+  },
+  "financiado-pendiente": {
+    label: "Financiación pendiente",
+    route: "/vender-coche-financiado/",
+    eventName: "lead_form_submit_financiado",
+    service: "valoración de coches con financiación pendiente",
+    audience: "propietarios que quieren vender un coche financiado y no saben si existe reserva de dominio",
+    pain: "hablar de precio sin calcular antes la deuda neta y las condiciones de la financiera",
+    result: "conocer la viabilidad y el importe neto orientativo antes de decidir",
+    filter: "vehículo, kilómetros, financiera o tipo de préstamo, deuda aproximada, provincia y titularidad",
+    offer: "Revisamos financiación, posible reserva y valor del vehículo antes de plantear una operación neta.",
+    ctaLabel: "Calcular la viabilidad de mi coche",
+    formFields: ["vehicle", "year", "mileage", "financeCompany", "debt", "zone", "phone"],
+    accepted: ["Préstamo o financiación pendiente", "Reserva desconocida", "Propietario que quiere vender", "Deuda aproximada disponible"],
+    rejected: ["Solicitud de nueva financiación", "Consulta sin vehículo concreto", "Promesa de importe neto sin revisar deuda"],
+    steps: [
+      { title: "Describes la financiación", text: "Entidad, deuda aproximada y datos del vehículo." },
+      { title: "Comprobamos el escenario", text: "Diferenciamos préstamo, reserva y venta ordinaria." },
+      { title: "Calculamos el neto", text: "Valoramos qué quedaría después de atender la deuda, si el caso es viable." },
+      { title: "Decides con claridad", text: "Solo se piden documentos adicionales si merece la pena avanzar." },
+    ],
+    faqs: [
+      { question: "¿Financiado y reserva de dominio son lo mismo?", answer: "No siempre. Puede existir deuda sin una reserva activa o una reserva que todavía no se haya cancelado. La documentación permite distinguirlo." },
+      { question: "¿Puedo vender si todavía pago cuotas?", answer: "Puede ser posible, pero primero hay que revisar deuda, contrato, valor del coche y restricciones registrales." },
+      { question: "¿Qué importe recibiría yo?", answer: "El importe neto depende del valor aceptado y de la deuda que deba atenderse. No debe prometerse antes de revisar ambos datos." },
+      { question: "¿Qué documentos se revisan después?", answer: "Normalmente contrato o certificado de deuda, permiso de circulación, ficha técnica y acreditación de titularidad." },
+    ],
+    referenceIds: ["export-coches-financiados", "valorami-auto-deuda", "oto-exportacion", "paga-tu-coche"],
+  },
+  "con-cargas": {
+    label: "No sé qué carga tiene",
+    route: "/vender-coche-con-cargas/",
+    eventName: "lead_form_submit_con_cargas",
+    service: "diagnóstico de coches con cargas",
+    audience: "propietarios que quieren vender y no saben si el coche tiene reserva, embargo, precinto o financiación pendiente",
+    pain: "no saber qué anotación tiene el vehículo ni a qué trámite afecta",
+    result: "identificar la ruta correcta y saber qué información falta para valorar la venta",
+    filter: "vehículo, carga conocida o desconocida, importe aproximado, titularidad, provincia y teléfono",
+    offer: "Clasificamos el tipo de carga y enviamos el caso a la revisión correcta antes de hablar de una oferta.",
+    ctaLabel: "Identificar mi caso",
+    formFields: ["vehicle", "year", "mileage", "chargeType", "amount", "zone", "phone"],
+    accepted: ["Reserva de dominio", "Embargo o precinto", "Financiación pendiente", "Carga desconocida"],
+    rejected: ["Compra de coches de subasta", "Asesoría jurídica sin intención de venta", "Vehículo sin titularidad acreditable"],
+    steps: [
+      { title: "Eliges lo que sabes", text: "Reserva, embargo, financiación o «no lo sé»." },
+      { title: "Clasificamos el caso", text: "Pedimos solo la información necesaria para la ruta correcta." },
+      { title: "Revisamos viabilidad", text: "Vehículo, titularidad, importe y documentación disponible." },
+      { title: "Te damos un siguiente paso", text: "Una respuesta clara sin prometer una compra antes de comprobar el caso." },
+    ],
+    faqs: [
+      { question: "¿Y si no sé qué carga tiene el coche?", answer: "Selecciona «No lo sé» y describe cualquier carta, anotación o deuda que conozcas. El objetivo inicial es clasificar el caso." },
+      { question: "¿Todas las cargas permiten vender?", answer: "No. La viabilidad depende del tipo, importe, titularidad y documentación. La revisión evita iniciar trámites que no llevan a una operación." },
+      { question: "¿Tengo que pagar algo por enviar los datos?", answer: "El envío del formulario no autoriza ningún cobro. Cualquier coste o condición adicional debe comunicarse y aceptarse antes de avanzar." },
+      { question: "¿Cuánto tarda la revisión?", answer: "El tiempo depende de la documentación y del tipo de carga. Tras recibir los datos, el equipo confirmará el plazo aplicable al caso." },
+    ],
+    referenceIds: ["paga-tu-coche", "reserva-y-embargo", "compro-coches-export", "oto-exportacion"],
+  },
+};
+
+export const applyAutomotiveIntent = (
+  brief: LandingBrief,
+  intent: LandingIntent,
+): LandingBrief => {
+  if (intent === "vertical-default") return { ...brief, intent, evidencePlan: null, activeRecipeId: "" };
+  const playbook = AUTOMOTIVE_INTENTS[intent];
+  const references = AUTOMOTIVE_MARKET_REFERENCES.filter((reference) =>
+    playbook.referenceIds.includes(reference.id),
+  );
+  return {
+    ...brief,
+    verticalId: "coches-motor",
+    intent,
+    architecture: "diagnostic",
+    angle: "outcome",
+    objective: "qualified",
+    trafficSource: "google",
+    awareness: "hot",
+    depth: "extended",
+    formFieldsTarget: 7,
+    service: playbook.service,
+    audience: playbook.audience,
+    pain: playbook.pain,
+    result: playbook.result,
+    filter: playbook.filter,
+    offer: playbook.offer,
+    ctaLabel: playbook.ctaLabel,
+    leadEndpointVerified: false,
+    trackingVerified: false,
+    activeRecipeId: "",
+    evidencePlan: {
+      recipeId: `automotive-${intent}`,
+      strategy: "intent",
+      strategyLabel: "Intención exacta + mercado observado",
+      heroFamilyId: "outcome",
+      heroFamilyLabel: "Situación concreta y siguiente paso",
+      ctaFamilyId: "audit",
+      ctaFamilyLabel: "Revisión de viabilidad",
+      confidence: "medium",
+      observedTogether: 0,
+      sampleBase: AUTOMOTIVE_MARKET_REFERENCES.length,
+      heroSampleBase: AUTOMOTIVE_MARKET_REFERENCES.length,
+      ctaSampleBase: AUTOMOTIVE_MARKET_REFERENCES.length,
+      sectionSequence: ["qualification", "mechanism", "problem", "offer", "proof", "faq", "pricing", "guarantee"],
+      sourceCompanies: references.map((reference) => ({
+        companyId: reference.id,
+        name: reference.name,
+        url: reference.url,
+      })),
+    },
   };
 };
 
@@ -865,6 +1309,14 @@ const subheadlineFor = (brief: LandingBrief) => {
   if (brief.tone === "direct") return `${capitalize(brief.offer)} Sin rodeos: sabrás qué entra, qué se mide y cuál es el siguiente paso.`;
   if (brief.tone === "premium") return `${capitalize(brief.offer)} Una experiencia cuidada desde el primer contacto hasta la conversación comercial.`;
   return `${capitalize(brief.offer)} Alcance, responsabilidades y medición quedan claros antes de lanzar.`;
+};
+
+const automotiveSubheadlineFor = (brief: LandingBrief, playbook: AutomotiveIntentPlaybook) => {
+  const offer = capitalize(playbook.offer);
+  if (brief.variant === "b") return `${offer} Antes de cancelar, firmar o asumir un coste, sabrás qué documentación y qué siguiente paso requiere tu caso.`;
+  if (brief.tone === "direct") return `${offer} Una respuesta basada en vehículo, carga y documentación disponible; sin prometer una compra antes de comprobarlo.`;
+  if (brief.tone === "premium") return `${offer} Revisamos cada condición con criterio y te explicamos con precisión si merece la pena avanzar.`;
+  return `${offer} Primero aclaramos la viabilidad; después te explicamos condiciones, responsables y siguiente paso.`;
 };
 
 const ctaFor = (brief: LandingBrief) => {
@@ -892,6 +1344,7 @@ export const landingReadiness = (brief: LandingBrief) => {
     clean(brief.guarantee).length >= 28 &&
     /\b(?:d[ií]as|semanas|meses|contrato|remedio|reembolso|contin[uú]a|excluye|condiciones)\b/i.test(brief.guarantee);
   const authorityRequiresProof = brief.angle === "authority";
+  const automotiveRequiresIntent = brief.verticalId === "coches-motor";
   const expectedArchitecture = objectiveArchitecture[brief.objective];
   const minimumFormFields: Record<LandingObjective, number> = {
     qualified: 5,
@@ -904,9 +1357,17 @@ export const landingReadiness = (brief: LandingBrief) => {
     { id: "offer", label: "Oferta concreta", ok: clean(brief.offer).length >= 24, weight: 12, severity: "important", section: "evidence" },
     { id: "result", label: "Resultado comprensible", ok: clean(brief.result).length >= 12 && clean(brief.result).length <= 170, weight: 12, severity: "important", section: "message" },
     { id: "filter", label: "Criterios de cualificación", ok: clean(brief.filter).length >= 12, weight: 8, severity: "important", section: "evidence" },
-    { id: "destination", label: "Destino compatible con el CTA", ok: destinationCompatible(brief.destination, brief.ctaMode), weight: 18, severity: "blocker", section: "conversion" },
+    { id: "destination", label: "Destino compatible con el CTA", ok: destinationCompatible(brief.destination, brief.ctaMode), weight: 12, severity: "blocker", section: "conversion" },
+    { id: "endpoint", label: "Endpoint HTTPS configurado", ok: Boolean(safeLeadEndpoint(brief.leadEndpoint)), weight: 14, severity: "blocker", section: "conversion" },
+    { id: "endpoint-verified", label: "Envío real comprobado con respuesta 2xx", ok: Boolean(brief.leadEndpointVerified), weight: 10, severity: "blocker", section: "conversion" },
     { id: "proof", label: authorityRequiresProof ? "Autoridad respaldada" : "Prueba identificable", ok: !authorityRequiresProof || concreteEvidence, weight: 10, severity: authorityRequiresProof ? "blocker" : "opportunity", section: "evidence" },
-    { id: "legal", label: "Política de privacidad", ok: Boolean(safeUrl(brief.privacyUrl)), weight: 16, severity: "blocker", section: "conversion" },
+    { id: "legal", label: "Política de privacidad", ok: Boolean(safeUrl(brief.privacyUrl)), weight: 12, severity: "blocker", section: "conversion" },
+    { id: "identity", label: "Responsable legal identificado", ok: clean(brief.legalName).length >= 3, weight: 10, severity: "blocker", section: "conversion" },
+    { id: "tracking", label: "Medición conectada con Google Tag Manager", ok: Boolean(safeGtmId(brief.gtmId)), weight: 10, severity: "blocker", section: "conversion" },
+    { id: "tracking-verified", label: "Evento de conversión comprobado", ok: Boolean(brief.trackingVerified), weight: 8, severity: "blocker", section: "conversion" },
+    { id: "cookies", label: "Cookies y consentimiento analítico", ok: Boolean(safeUrl(brief.cookiesUrl)), weight: 6, severity: "blocker", section: "conversion" },
+    { id: "intent", label: "Intención de campaña definida", ok: !automotiveRequiresIntent || brief.intent !== "vertical-default", weight: 12, severity: automotiveRequiresIntent ? "blocker" : "opportunity", section: "strategy" },
+    { id: "blueprint", label: "Blueprint conectado a evidencia", ok: Boolean(brief.evidencePlan), weight: 6, severity: automotiveRequiresIntent ? "blocker" : "warning", section: "strategy" },
     {
       id: "claim",
       label: "Claim sensible respaldado",
@@ -934,7 +1395,7 @@ export const landingReadiness = (brief: LandingBrief) => {
   };
 };
 
-export const buildLandingHtml = (brief: LandingBrief) => {
+export const buildLegacyLandingHtml = (brief: LandingBrief) => {
   const rawService = clean(brief.service || "captación de oportunidades");
   const rawDestination = clean(brief.destination);
   const brand = esc(brief.brand || "Tu marca");
@@ -1085,4 +1546,15 @@ ${faqSection}
 <footer><div class="wrap">${brand} · ${service} · ${zone}</div></footer>
 <script>(function(){var form=document.querySelector('.lead-form');if(!form)return;var v=function(id){var n=document.getElementById(id);return n&&'value'in n?String(n.value).trim():''};var utm=function(){var p=new URLSearchParams(location.search);var out=['utm_source','utm_medium','utm_campaign'].map(function(k){return p.get(k)?k+': '+p.get(k):''}).filter(Boolean);return out.length?'Origen: '+out.join(', '):''};form.addEventListener('submit',function(e){e.preventDefault();${actionScript}})})();</script>
 </body></html>`;
+};
+
+export const buildLandingHtml = (brief: LandingBrief) => {
+  const automotive = brief.intent !== "vertical-default" ? AUTOMOTIVE_INTENTS[brief.intent] : null;
+  return buildLandingHtmlV3(brief, {
+    headline: headlineFor(brief),
+    subheadline: automotive ? automotiveSubheadlineFor(brief, automotive) : subheadlineFor(brief),
+    cta: ctaFor(brief),
+    publishable: landingReadiness(brief).publishable,
+    automotive,
+  });
 };
