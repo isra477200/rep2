@@ -1,3 +1,4 @@
+import { VERTICAL_CONTENT } from "./vertical-content.ts";
 import { buildLandingHtmlV3 } from "./renderer.ts";
 
 export type LandingArchitecture =
@@ -71,6 +72,10 @@ export type LandingBrief = {
   verticalId: string;
   brand: string;
   headlineOverride: string;
+  subheadlineOverride: string;
+  problemOverride: string;
+  stepsOverride: Array<{ title: string; text: string }> | null;
+  faqsOverride: Array<{ question: string; answer: string }> | null;
   marketStats: Array<{ value: string; label: string }>;
   zone: string;
   service: string;
@@ -987,6 +992,10 @@ export const defaultBrief = (verticalId = "clinicas-salud"): LandingBrief => {
     verticalId,
     brand: "RedVitalia",
     headlineOverride: "",
+    subheadlineOverride: "",
+    problemOverride: "",
+    stepsOverride: null,
+    faqsOverride: null,
     marketStats: [],
     zone: "tu zona",
     service: preset.service,
@@ -1002,7 +1011,7 @@ export const defaultBrief = (verticalId = "clinicas-salud"): LandingBrief => {
     ctaLabel: "",
     ctaMode: "whatsapp",
     destination: "",
-    accent: "#1769e0",
+    accent: VERTICAL_CONTENT[verticalId]?.accent || "#1769e0",
     logoUrl: "",
     heroImageUrl: "",
     privacyUrl: "",
@@ -1040,6 +1049,12 @@ export const applyVerticalPreset = (brief: LandingBrief, verticalId: string): La
     activeRecipeId: "",
     evidencePlan: null,
     intent: "vertical-default",
+    accent: VERTICAL_CONTENT[verticalId]?.accent || brief.accent,
+    headlineOverride: "",
+    subheadlineOverride: "",
+    problemOverride: "",
+    stepsOverride: null,
+    faqsOverride: null,
     leadEndpointVerified: false,
     trackingVerified: false,
   };
@@ -1316,6 +1331,7 @@ const headlineFor = (brief: LandingBrief) => {
 };
 
 const subheadlineFor = (brief: LandingBrief) => {
+  if (clean(brief.subheadlineOverride)) return clean(brief.subheadlineOverride);
   if (brief.variant === "b") return `${capitalize(brief.result)} mediante un proceso visible de filtro, entrega y seguimiento.`;
   if (brief.variant === "c")
     return clean(brief.guarantee)

@@ -1,12 +1,13 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import CompanyLogo from "./CompanyLogo";
 import type { ArsenalData, CrucesData, LogoManifest, VerticalesData } from "./data-types";
 import { applyMarketAmmo, buildMarketAmmo } from "./landings/market-ammo";
 import { buildZip } from "./landings/zip";
 import { kitToText, type Kit } from "./kit-text";
+import { VERTICAL_CONTENT } from "./landings/vertical-content.ts";
 import {
   ANGLES,
   ARCHITECTURES,
@@ -126,6 +127,10 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const [compare, setCompare] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
   const [toast, setToast] = useState("");
+  const [advancedOpen, setAdvancedOpen] = useState(false);
+  const [buildingStep, setBuildingStep] = useState(-1);
+  const [editMode, setEditMode] = useState(false);
+  const previewPanelRef = useRef<HTMLElement | null>(null);
   const [visibleExamples, setVisibleExamples] = useState(4);
   const [previousBrief, setPreviousBrief] = useState<LandingBrief | null>(null);
 
@@ -229,6 +234,44 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     setToast("Contenido base del vertical cargado; puedes deshacerlo");
   };
 
+  useEffect(() => {
+    const onMessage = (event: MessageEvent) => {
+      const data = event.data as { rvEdit?: string; value?: string };
+      if (!data?.rvEdit || typeof data.value !== "string") return;
+      const value = data.value.replace(/\s+/g, " ").trim();
+      const [field, indexRaw, sub] = data.rvEdit.split(":");
+      if (field === "headline") update("headlineOverride", value);
+      else if (field === "sub") update("subheadlineOverride", value);
+      else if (field === "pain") update("pain", value);
+      else if (field === "problem") update("problemOverride", value);
+      else if (field === "offer") update("offer", value);
+      else if (field === "proof") update("proof", value);
+      else if (field === "price") update("price", value);
+      else if (field === "guarantee") update("guarantee", value);
+      else if (field === "cta") update("ctaLabel", value);
+      else if (field === "step" || field === "faq") {
+        const index = Number(indexRaw);
+        if (!Number.isInteger(index)) return;
+        setBrief((current) => {
+          const vc = VERTICAL_CONTENT[current.verticalId];
+          if (field === "step") {
+            const base = current.stepsOverride ?? vc?.steps ?? [];
+            if (!base[index]) return current;
+            const next = base.map((step, i) => (i === index ? { ...step, [sub === "title" ? "title" : "text"]: value } : { ...step }));
+            return { ...current, stepsOverride: next };
+          }
+          const base = current.faqsOverride ?? vc?.faqs ?? [];
+          if (!base[index]) return current;
+          const next = base.map((faq, i) => (i === index ? { ...faq, [sub === "question" ? "question" : "answer"]: value } : { ...faq }));
+          return { ...current, faqsOverride: next };
+        });
+      }
+    };
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const ammo = useMemo(
     () => buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit),
     [brief.verticalId, brief.unit, verticales, arsenalData, crucesData],
@@ -253,34 +296,71 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
       next = applyStrategyRecommendation(next, recommendation);
       const recipes = buildEvidenceRecipes(verticalIntel, intelligence?.universal, next);
       if (recipes[0]) next = applyEvidenceRecipe(next, recipes[0]);
+      // El express monta desde cero con el estudio del vertical elegido: se retira la
+      // munición del vertical anterior para no mezclar garantías ni cifras ajenas.
+      next = { ...next, proof: "", guarantee: "", marketStats: [] };
       const freshAmmo = buildMarketAmmo(studyVerticalId, verticales, arsenalData, crucesData, next.unit);
       if (freshAmmo) next = applyMarketAmmo(next, freshAmmo);
-      return next;
+      // Los ganadores del estudio publican precio: el express lo hace por defecto si hay
+      // mediana de cuota real y el usuario no ha puesto un precio propio.
+      if (freshAmmo?.priceSuggestion && !current.price.trim()) next = { ...next, price: freshAmmo.priceSuggestion };
+      const destination = current.destination.trim();
+      return {
+        ...next,
+        brand: current.brand,
+        zone: current.zone,
+        destination: current.destination,
+        // El destino que ha escrito el usuario manda sobre el modo de CTA de la receta.
+        ctaMode: destination ? (/^https:\/\//i.test(destination) ? "calendar" : "whatsapp") : next.ctaMode,
+        // El flujo express genera la landing completa: problema, encaje, proceso y oferta + 4 FAQ.
+        depth: "extended" as LandingBrief["depth"],
+      };
     });
     setActiveSection("conversion");
-    setToast("Landing completa montada con el estudio del vertical; queda destino, endpoint y datos legales");
+    // Secuencia de montaje visible: el usuario ve construirse la landing paso a paso.
+    setBuildingStep(0);
+    window.setTimeout(() => previewPanelRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
+    [1, 2, 3].forEach((step) => window.setTimeout(() => setBuildingStep(step), step * 420));
+    window.setTimeout(() => {
+      setBuildingStep(-1);
+      setToast("Landing montada con el estudio del vertical — lista para afinar o descargar");
+    }, 1850);
   };
 
-  const html = useMemo(() => buildLandingHtml(brief), [brief]);
-  const previewHtml = useMemo(
-    () => buildLandingHtml({ ...brief, leadEndpoint: "", gtmId: "" }),
-    [brief],
-  );
+  // La vista previa se reconstruye con un pequeño retardo para que escribir sea fluido;
+  // el HTML de exportación se genera solo al pulsar descargar/copiar.
+  const [previewBrief, setPreviewBrief] = useState<LandingBrief>(brief);
+  useEffect(() => {
+    // En modo edición en página el iframe conserva su DOM (el usuario está escribiendo
+    // dentro); el brief se actualiza igualmente y la preview se regenera al salir.
+    if (editMode) return;
+    const timeout = window.setTimeout(() => setPreviewBrief(brief), 350);
+    return () => window.clearTimeout(timeout);
+  }, [brief, editMode]);
+  const exportHtml = () => buildLandingHtml(brief);
+  const previewHtml = useMemo(() => {
+    const html = buildLandingHtml({ ...previewBrief, leadEndpoint: "", gtmId: "" });
+    if (!editMode) return html;
+    const editRuntime =
+      "<style>[data-edit]{outline:2px dashed rgba(23,105,224,.5);outline-offset:3px;cursor:text;border-radius:3px;transition:outline-color .15s}[data-edit]:hover{outline-color:#1769e0;background:rgba(23,105,224,.06)}[data-edit]:focus{outline:2px solid #1769e0;background:#fff}</style>" +
+      "<script>!function(){document.querySelectorAll('[data-edit]').forEach(function(el){el.setAttribute('contenteditable','plaintext-only');el.addEventListener('blur',function(){parent.postMessage({rvEdit:el.getAttribute('data-edit'),value:el.innerText},'*')});el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.tagName!=='P'){e.preventDefault();el.blur()}})});document.querySelectorAll('summary[data-edit]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault()})});document.querySelectorAll('a[data-edit]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault()})})}()</script>";
+    return html.replace("</body>", editRuntime + "</body>");
+  }, [previewBrief, editMode]);
   const readiness = useMemo(() => landingReadiness(brief), [brief]);
   const publishReady = readiness.publishable;
   const verticalIntel =
     intelligence?.verticals[studyVerticalId] || intelligence?.verticals.generalista || null;
   const evidenceRecipes = useMemo(
-    () => buildEvidenceRecipes(verticalIntel, intelligence?.universal, brief),
-    [brief, verticalIntel, intelligence?.universal],
+    () => buildEvidenceRecipes(verticalIntel, intelligence?.universal, previewBrief),
+    [previewBrief, verticalIntel, intelligence?.universal],
   );
   const activeRecipe =
     brief.verticalId === studyVerticalId
       ? evidenceRecipes.find((recipe) => recipe.id === brief.activeRecipeId) || null
       : null;
   const strategyRecommendation = useMemo(
-    () => buildStrategyRecommendation(brief, verticalIntel),
-    [brief, verticalIntel],
+    () => buildStrategyRecommendation(previewBrief, verticalIntel),
+    [previewBrief, verticalIntel],
   );
   const variantA = useMemo(() => landingCopyPreview({ ...brief, variant: "a" }), [brief]);
   const variantB = useMemo(() => landingCopyPreview({ ...brief, variant: "b" }), [brief]);
@@ -298,6 +378,23 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const exactAutomotiveIntent = brief.verticalId === "coches-motor" && brief.intent !== "vertical-default";
   const automotivePlaybook = brief.intent !== "vertical-default" ? AUTOMOTIVE_INTENTS[brief.intent] : null;
   const endpointConfigured = /^https:\/\//i.test(brief.leadEndpoint.trim());
+  // Contenido efectivo de pasos y FAQs (override del usuario ?? contenido del vertical),
+  // para que TODO sea editable antes de descargar.
+  const effectiveSteps = brief.stepsOverride ?? VERTICAL_CONTENT[brief.verticalId]?.steps ?? [
+    { title: "Cuéntanos el contexto", text: `Recogemos ${brief.filter}.` },
+    { title: "Revisamos el encaje", text: "Comprobamos alcance, zona y viabilidad antes de confirmar nada." },
+    { title: "Recibes una respuesta", text: "Te explicamos el siguiente paso y las condiciones que aplican." },
+    { title: "Decides si avanzar", text: "Solo se formaliza lo que ambas partes hayan revisado y aceptado." },
+  ];
+  const effectiveFaqs = brief.faqsOverride ?? VERTICAL_CONTENT[brief.verticalId]?.faqs ?? [];
+  const setStep = (index: number, field: "title" | "text", value: string) => {
+    const next = effectiveSteps.map((step, i) => (i === index ? { ...step, [field]: value } : { ...step }));
+    update("stepsOverride", next);
+  };
+  const setFaq = (index: number, field: "question" | "answer", value: string) => {
+    const next = effectiveFaqs.map((faq, i) => (i === index ? { ...faq, [field]: value } : { ...faq }));
+    update("faqsOverride", next);
+  };
   const preview = (
     <div className={`${styles.previewFrame} ${styles[device]}`}>
       <iframe
@@ -386,6 +483,311 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
         <div><b>No afirmamos</b><span>Qué página gana sin datos propios de conversión.</span></div>
       </section>
 
+      <section className={styles.express} aria-labelledby="express-title">
+        <div className={styles.expressIntro}>
+          <p>GENERADOR EXPRESS</p>
+          <h2 id="express-title">Tu landing completa en un clic</h2>
+          <span>Elige el vertical, pon marca, zona y WhatsApp, y pulsa Generar. La estrategia, la estructura, los textos, la prueba del estudio y la garantía se montan solos con los datos de {verticales?.verticales.length || 11} verticales analizados. Después afinas lo que quieras.</span>
+        </div>
+        <div className={styles.expressForm}>
+          <label>Vertical
+            <select value={studyVerticalId} onChange={(event) => { setStudyVerticalId(event.target.value); setVisibleExamples(4); }}>
+              {(verticales?.verticales || []).map((vertical) => <option key={vertical.id} value={vertical.id}>{vertical.label}</option>)}
+              {!verticales?.verticales.some((vertical) => vertical.id === "generalista") ? <option value="generalista">Generalista</option> : null}
+            </select>
+          </label>
+          <label>Marca<input value={brief.brand} onChange={(event) => update("brand", event.target.value)} placeholder="RedVitalia" /></label>
+          <label>Zona<input value={brief.zone === "tu zona" ? "" : brief.zone} onChange={(event) => update("zone", event.target.value || "tu zona")} placeholder="Madrid, Valencia…" /></label>
+          <label>WhatsApp o URL de agenda<input value={brief.destination} onChange={(event) => update("destination", event.target.value)} placeholder="34600000000" /></label>
+          <div className={styles.expressTones} role="group" aria-label="Estilo visual">
+            {([["consultative", "Consultivo", "confianza y claridad"], ["direct", "Directo", "alto contraste"], ["premium", "Premium", "editorial y sobrio"]] as const).map(([id, label, hint]) => (
+              <button key={id} type="button" data-selected={brief.tone === id} onClick={() => update("tone", id)}><b>{label}</b><span>{hint}</span></button>
+            ))}
+          </div>
+          <button type="button" className={styles.expressGo} onClick={autoBuild}>⚡ Generar landing completa</button>
+        </div>
+      </section>
+
+      <section className={styles.workspace}>
+        <aside className={styles.editor} aria-label="Configuración de la landing">
+          <div className={styles.editorHeader}>
+            <div><span>03 · CONSTRUIR</span><h2>Construye la página</h2></div>
+            <div className={styles.score} data-score={readiness.score >= 75 ? "good" : readiness.score >= 60 ? "mid" : "low"}>
+              <strong>{readiness.score}</strong><span>/100</span>
+            </div>
+          </div>
+          <div className={styles.scoreLabel}>
+            <b>{readiness.blockers.length ? `Faltan ${readiness.blockers.length} decisiones antes de publicar` : qualityLabel(readiness.score)}</b>
+            <span>{readiness.blockers.length ? `${readiness.passed} de ${readiness.total} controles resueltos` : `${readiness.warnings.length} mejoras opcionales pendientes`}</span>
+          </div>
+          {previousBrief ? <button className={styles.undoButton} type="button" onClick={() => { setBrief(previousBrief); setStudyVerticalId(previousBrief.verticalId); setPreviousBrief(null); setToast("Cambio deshecho"); }}>Deshacer último cambio</button> : null}
+          <nav className={styles.editorNav} aria-label="Pasos del brief">
+            {([
+              ["strategy", "01", "Estrategia"],
+              ["message", "02", "Mensaje"],
+              ["evidence", "03", "Prueba y oferta"],
+              ["conversion", "04", "Conversión y marca"],
+            ] as const).map(([id, number, label]) => (
+              <button key={id} className={activeSection === id ? styles.active : ""} onClick={() => setActiveSection(id)}>
+                <span>{number}</span>{label}
+              </button>
+            ))}
+          </nav>
+
+          {activeSection === "strategy" ? (
+            <div className={styles.controls}>
+              <label>Vertical<select value={brief.verticalId} onChange={(event) => selectVertical(event.target.value)}>
+                {(verticales?.verticales || []).map((vertical) => <option key={vertical.id} value={vertical.id}>{vertical.label}</option>)}
+                {!verticales?.verticales.some((vertical) => vertical.id === "generalista") ? <option value="generalista">Generalista</option> : null}
+              </select></label>
+              <div className={styles.presetNotice}><span>El cambio de vertical conserva tus textos.</span><button type="button" onClick={loadVerticalPreset}>Cargar el contenido base de {verticalIntel?.label || "este vertical"}</button></div>
+              {brief.verticalId === "coches-motor" ? (
+                <section className={styles.intentLab} aria-labelledby="automotive-intent-title">
+                  <div>
+                    <span>INTENCIÓN DE BÚSQUEDA</span>
+                    <h3 id="automotive-intent-title">No mezcles situaciones que necesitan respuestas distintas</h3>
+                    <p>Reserva, embargo, financiación y carga desconocida cambian titular, campos, proceso, preguntas y evento de conversión.</p>
+                  </div>
+                  <div className={styles.intentGrid}>
+                    {(Object.entries(AUTOMOTIVE_INTENTS) as Array<[Exclude<LandingBrief["intent"], "vertical-default">, (typeof AUTOMOTIVE_INTENTS)[Exclude<LandingBrief["intent"], "vertical-default">]]>).map(([id, intent]) => (
+                      <button
+                        type="button"
+                        key={id}
+                        className={brief.intent === id ? styles.selected : ""}
+                        onClick={() => {
+                          setPreviousBrief(brief);
+                          setBrief((current) => applyAutomotiveIntent(current, id));
+                          setToast(`${intent.label}: brief, formulario y medición aplicados`);
+                        }}
+                      >
+                        <b>{intent.label}</b>
+                        <span>{intent.result}</span>
+                        <small>{intent.formFields.length} señales · {intent.eventName}</small>
+                      </button>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+              <div className={styles.strategyContextGrid}>
+                <label>Objetivo principal<select value={brief.objective} onChange={(event) => update("objective", event.target.value as LandingBrief["objective"])}><option value="qualified">Solicitud cualificada</option><option value="booking">Reserva o llamada</option><option value="quote">Presupuesto o propuesta</option><option value="contact">Contacto directo</option></select></label>
+                <label>Origen del tráfico<select value={brief.trafficSource} onChange={(event) => update("trafficSource", event.target.value as LandingBrief["trafficSource"])}><option value="mixed">Mixto</option><option value="meta">Meta / interrupción</option><option value="google">Google / intención</option><option value="organic">Orgánico o referido</option><option value="outbound">Outbound</option></select></label>
+                <label>Temperatura<select value={brief.awareness} onChange={(event) => update("awareness", event.target.value as LandingBrief["awareness"])}><option value="cold">Fría</option><option value="warm">Templada</option><option value="hot">Caliente</option></select></label>
+                <label>Profundidad<select value={brief.depth} onChange={(event) => update("depth", event.target.value as LandingBrief["depth"])}><option value="short">Breve</option><option value="standard">Estándar</option><option value="extended">Extensa</option></select></label>
+                <label>Campos del formulario<select value={brief.formFieldsTarget} disabled={exactAutomotiveIntent} onChange={(event) => update("formFieldsTarget", Number(event.target.value))}>{[3, 4, 5, 6, 7, 8].map((value) => <option key={value} value={value}>{value} campos</option>)}</select></label>
+              </div>
+              <div className={styles.inlineRecommendation}>
+                <div><span>RECOMENDACIÓN ACTUAL</span><b>{exactAutomotiveIntent ? `${automotivePlaybook?.label} · formulario específico` : `${ARCHITECTURES.find((item) => item.id === strategyRecommendation.architecture)?.label} · ${strategyRecommendation.compatibility}/100 encaje`}</b><small>{exactAutomotiveIntent ? `${automotivePlaybook?.formFields.length || 0} campos obligatorios para no perder vehículo, carga, zona o contacto` : strategyRecommendation.suggestedFormFields ? `${strategyRecommendation.suggestedFormFields} campos como punto de partida, usando la mediana del vertical cuando existe` : "Longitud de formulario pendiente de evidencia"}</small></div>
+                <button type="button" disabled={exactAutomotiveIntent} onClick={() => { if (exactAutomotiveIntent) return; setPreviousBrief(brief); setBrief((current) => applyStrategyRecommendation(current, strategyRecommendation)); }}>Aplicar</button>
+              </div>
+                <div className={styles.blueprintPanel} data-active={Boolean(brief.evidencePlan)}>
+                  <header>
+                  <div><span>BLUEPRINT QUE GOBIERNA EL ORDEN DEL HTML</span><b>{brief.evidencePlan?.strategyLabel || "Todavía no has aplicado una estrategia"}</b></div>
+                  {brief.evidencePlan ? <small>{exactAutomotiveIntent ? "Curación editorial" : brief.evidencePlan.confidence === "high" ? "Confianza alta" : brief.evidencePlan.confidence === "medium" ? "Confianza media" : "Exploratoria"} · {brief.evidencePlan.sourceCompanies.length} fuentes aplicadas de {brief.evidencePlan.sampleBase} revisadas</small> : null}
+                </header>
+                {brief.evidencePlan ? (
+                  <>
+                    <ol>{brief.evidencePlan.sectionSequence.map((section, index) => <li key={section}><i>{String(index + 1).padStart(2, "0")}</i><b>{SECTION_LABELS[section]}</b></li>)}</ol>
+                    <div className={styles.blueprintSources}>
+                      <span>FUENTES CONSERVADAS</span>
+                      {brief.evidencePlan.sourceCompanies.map((source) => source.url ? (
+                        <a key={source.companyId} href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a>
+                      ) : (
+                        <a key={source.companyId} href={`?vista=companies&empresa=${encodeURIComponent(source.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">{source.name}</a>
+                      ))}
+                    </div>
+                  </>
+                ) : <p>Aplica una recomendación o una receta. La secuencia, el formulario y el render dejarán de ser una plantilla genérica.</p>}
+              </div>
+              <fieldset><legend>Arquitectura del funnel</legend><div className={styles.optionGrid}>
+                {ARCHITECTURES.map((item) => <button type="button" key={item.id} className={brief.architecture === item.id ? styles.selected : ""} onClick={() => update("architecture", item.id)}><b>{item.label}</b><span>{item.description}</span><small>{item.bestFor}</small></button>)}
+              </div></fieldset>
+              <fieldset><legend>Ángulo del mensaje</legend><div className={styles.angleGrid}>
+                {ANGLES.map((item) => <button type="button" key={item.id} className={brief.angle === item.id ? styles.selected : ""} onClick={() => update("angle", item.id)} title={item.description}>{item.label}</button>)}
+              </div></fieldset>
+              <div className={styles.twoCols}>
+                <label>Sistema visual<select value={brief.tone} onChange={(event) => update("tone", event.target.value as LandingBrief["tone"])}><option value="consultative">Consultivo · confianza</option><option value="direct">Directo · alto contraste</option><option value="premium">Premium · editorial</option></select></label>
+                <label>Variante activa<select value={brief.variant} onChange={(event) => update("variant", event.target.value as LandingBrief["variant"])}><option value="a">A · Resultado</option><option value="b">B · Dolor</option></select></label>
+              </div>
+              <div className={styles.variantCompare}>
+                <button type="button" className={brief.variant === "a" ? styles.selected : ""} onClick={() => update("variant", "a")}><span>A · RESULTADO</span><b>{variantA.headline}</b><small>{variantA.cta}</small></button>
+                <button type="button" className={brief.variant === "b" ? styles.selected : ""} onClick={() => update("variant", "b")}><span>B · DOLOR</span><b>{variantB.headline}</b><small>{variantB.cta}</small></button>
+                <button type="button" className={brief.variant === "c" ? styles.selected : ""} onClick={() => update("variant", "c")}><span>C · COMPROMISO</span><b>{variantC.headline}</b><small>{variantC.cta}</small></button>
+              </div>
+              <p className={styles.helper}>A, B y C cambian únicamente el encuadre del hero. Arquitectura, oferta, prueba y CTA permanecen iguales para que el test sea interpretable. C brilla cuando hay garantía real.</p>
+            </div>
+          ) : null}
+
+          {activeSection === "message" ? (
+            <div className={styles.controls}>
+              <div className={styles.twoCols}>
+                <label>Marca<input value={brief.brand} onChange={(event) => update("brand", event.target.value)} /></label>
+                <label>Zona<input value={brief.zone} onChange={(event) => update("zone", event.target.value)} placeholder="Madrid, España…" /></label>
+              </div>
+              <label>Servicio<input value={brief.service} onChange={(event) => update("service", event.target.value)} /></label>
+              <label>Titular personalizado (opcional)<input value={brief.headlineOverride} onChange={(event) => update("headlineOverride", event.target.value)} placeholder="Vacío = titular generado según ángulo y variante" /></label>
+              {brief.headlineOverride.trim() ? (
+                <div className={styles.presetNotice}><span>El titular manual manda sobre ángulo y variante en el hero.</span><button type="button" onClick={() => update("headlineOverride", "")}>Volver al titular generado</button></div>
+              ) : null}
+              <label>Público<textarea value={brief.audience} onChange={(event) => update("audience", event.target.value)} /></label>
+              <label>Resultado deseado<textarea value={brief.result} onChange={(event) => update("result", event.target.value)} /></label>
+              <label>Problema que reconoce el cliente<textarea value={brief.pain} onChange={(event) => update("pain", event.target.value)} /></label>
+              <label>Unidad que se capta<input value={brief.unit} onChange={(event) => update("unit", event.target.value)} placeholder="pacientes, reuniones, solicitudes…" /></label>
+              <label>Subtítulo personalizado (opcional)<textarea value={brief.subheadlineOverride} onChange={(event) => update("subheadlineOverride", event.target.value)} placeholder="Vacío = subtítulo generado según oferta y estilo" /></label>
+              {!exactAutomotiveIntent ? (
+                <>
+                  <div className={styles.contentEditorHead}><span>PASOS DEL PROCESO</span><small>Se publican tal cual los dejes aquí.</small>{brief.stepsOverride ? <button type="button" onClick={() => update("stepsOverride", null)}>Restaurar los del vertical</button> : null}</div>
+                  {effectiveSteps.slice(0, 4).map((step, index) => (
+                    <div key={`step-${index}`} className={styles.contentEditorRow}>
+                      <input value={step.title} onChange={(event) => setStep(index, "title", event.target.value)} placeholder={`Paso ${index + 1}`} />
+                      <textarea value={step.text} onChange={(event) => setStep(index, "text", event.target.value)} />
+                    </div>
+                  ))}
+                  <div className={styles.contentEditorHead}><span>PREGUNTAS FRECUENTES</span><small>Máximo 4; las vacías no se publican.</small>{brief.faqsOverride ? <button type="button" onClick={() => update("faqsOverride", null)}>Restaurar las del vertical</button> : null}</div>
+                  {(effectiveFaqs.length ? effectiveFaqs : [{ question: "", answer: "" }]).slice(0, 4).map((faq, index) => (
+                    <div key={`faq-${index}`} className={styles.contentEditorRow}>
+                      <input value={faq.question} onChange={(event) => setFaq(index, "question", event.target.value)} placeholder={`Pregunta ${index + 1}`} />
+                      <textarea value={faq.answer} onChange={(event) => setFaq(index, "answer", event.target.value)} />
+                    </div>
+                  ))}
+                </>
+              ) : null}
+            </div>
+          ) : null}
+
+          {activeSection === "evidence" ? (
+            <div className={styles.controls}>
+              <label>Qué incluye la oferta<textarea value={brief.offer} onChange={(event) => update("offer", event.target.value)} /></label>
+              <label>Criterios de cualificación<textarea value={brief.filter} onChange={(event) => update("filter", event.target.value)} /></label>
+              <label>Prueba verificable<textarea value={brief.proof} onChange={(event) => update("proof", event.target.value)} placeholder="Caso, reseña o dato con empresa, periodo y fuente. Si lo dejas vacío, el bloque desaparece." /></label>
+              <label>Precio o rango publicado<input value={brief.price} onChange={(event) => update("price", event.target.value)} placeholder="Ej. Desde 690 €/mes + inversión" /></label>
+              <label>Garantía o compromiso contractual<textarea value={brief.guarantee} onChange={(event) => update("guarantee", event.target.value)} placeholder="Métrica, periodo, exclusiones y remedio. Si no existe, déjalo vacío." /></label>
+              {brief.marketStats?.length ? (
+                <div className={styles.presetNotice}><span>Banda “El mercado, en cifras” activa con {brief.marketStats.length} datos del estudio del vertical.</span><button type="button" onClick={() => update("marketStats", [])}>Quitar banda de cifras</button></div>
+              ) : null}
+              <p className={styles.helper}>La página pública nunca mostrará “por configurar”. Los bloques sin respaldo se eliminan automáticamente.</p>
+            </div>
+          ) : null}
+
+          {activeSection === "conversion" ? (
+            <div className={styles.controls}>
+              <div className={styles.deliveryNotice} data-ready={endpointConfigured && brief.leadEndpointVerified}>
+                <div><span>ENTREGA DEL LEAD</span><b>{brief.leadEndpointVerified && endpointConfigured ? "Endpoint HTTPS probado" : endpointConfigured ? "Endpoint configurado; falta probarlo" : "Sin endpoint HTTPS no existe lead capturado"}</b><p>El formulario hace POST, espera una respuesta válida y solo entonces registra la conversión. WhatsApp, llamada o calendario quedan como siguiente paso.</p></div>
+              </div>
+              <label>Endpoint HTTPS del CRM / webhook<input value={brief.leadEndpoint} onChange={(event) => update("leadEndpoint", event.target.value)} placeholder="https://crm.tudominio.com/leads" /></label>
+              <div className={styles.verificationCheck}><input id="lead-endpoint-verified" type="checkbox" checked={brief.leadEndpointVerified} onChange={(event) => update("leadEndpointVerified", event.target.checked)} /><label htmlFor="lead-endpoint-verified"><b>Envío real probado</b><small>Marca esto solo después de recibir un lead de prueba y una respuesta 2xx del endpoint.</small></label></div>
+              <label>Google Tag Manager<input value={brief.gtmId} onChange={(event) => update("gtmId", event.target.value)} placeholder="GTM-XXXXXXX" /></label>
+              <div className={styles.verificationCheck}><input id="tracking-verified" type="checkbox" checked={brief.trackingVerified} onChange={(event) => update("trackingVerified", event.target.checked)} /><label htmlFor="tracking-verified"><b>Conversión comprobada</b><small>Marca esto después de ver el evento correcto en Preview / Tag Assistant sin datos personales.</small></label></div>
+              <div className={styles.twoCols}>
+                <label>Conversión<select value={brief.ctaMode} onChange={(event) => update("ctaMode", event.target.value as LandingBrief["ctaMode"])}><option value="whatsapp">WhatsApp</option><option value="phone">Llamada</option><option value="calendar">Calendario / URL</option></select></label>
+                <label>Color<input className={styles.colorInput} type="color" value={brief.accent} onChange={(event) => update("accent", event.target.value)} /></label>
+              </div>
+              <label>{brief.ctaMode === "calendar" ? "URL del calendario" : "Teléfono destino"}<input value={brief.destination} onChange={(event) => update("destination", event.target.value)} placeholder={brief.ctaMode === "calendar" ? "https://calendly.com/…" : "34600000000"} /></label>
+              <label>Texto del CTA<input value={brief.ctaLabel} onChange={(event) => update("ctaLabel", event.target.value)} placeholder="Se genera según la arquitectura" /></label>
+              <label>URL del logo<input value={brief.logoUrl} onChange={(event) => update("logoUrl", event.target.value)} placeholder="https://…/logo.svg" /></label>
+              <label>Imagen principal<input value={brief.heroImageUrl} onChange={(event) => update("heroImageUrl", event.target.value)} placeholder="https://…/imagen.webp" /></label>
+              <div className={styles.twoCols}>
+                <label>Responsable legal<input value={brief.legalName} onChange={(event) => update("legalName", event.target.value)} placeholder="Razón social real" /></label>
+                <label>CIF / identificación<input value={brief.legalId} onChange={(event) => update("legalId", event.target.value)} placeholder="Opcional en el footer" /></label>
+              </div>
+              <label>Política de privacidad<input value={brief.privacyUrl} onChange={(event) => update("privacyUrl", event.target.value)} placeholder="https://…/privacidad" /></label>
+              <label>Política de cookies<input value={brief.cookiesUrl} onChange={(event) => update("cookiesUrl", event.target.value)} placeholder="https://…/cookies" /></label>
+              <p className={styles.helper}>La analítica solo carga tras aceptar el aviso. Entonces conserva UTM y click IDs y envía a dataLayer únicamente el evento, la intención, la ruta y el número de campos completados: nunca datos personales, económicos ni del vehículo.</p>
+            </div>
+          ) : null}
+
+          <div className={styles.checklist}>
+            <div><span>04 · VALIDAR</span><b>Controles antes de exportar</b></div>
+            {readiness.checks.map((check) => <button type="button" key={check.id} data-ok={check.ok} data-severity={check.severity} onClick={() => setActiveSection(check.section as EditorSection)}><i>{check.ok ? "✓" : "!"}</i><span>{check.label}<small>{check.ok ? "Resuelto" : severityLabel(check.severity)}</small></span><b>→</b></button>)}
+          </div>
+        </aside>
+
+        <main className={styles.previewPanel} ref={previewPanelRef}>
+          <header className={styles.previewToolbar}>
+            <div><span>04 · VALIDAR EN CONTEXTO</span><b>{ARCHITECTURES.find((item) => item.id === brief.architecture)?.label}</b></div>
+            <div className={styles.previewActions}>
+              <div className={styles.segmented}><button className={!compare && device === "desktop" ? styles.active : ""} onClick={() => { setCompare(false); setDevice("desktop"); }}>Escritorio</button><button className={!compare && device === "mobile" ? styles.active : ""} onClick={() => { setCompare(false); setDevice("mobile"); }}>Móvil</button><button className={compare ? styles.active : ""} onClick={() => setCompare((current) => !current)}>Comparar A/B/C</button></div>
+              <button
+                className={styles.editToggle}
+                type="button"
+                data-active={editMode}
+                title="Editar los textos clicando directamente en la página"
+                onClick={() => {
+                  setEditMode((current) => {
+                    const next = !current;
+                    setToast(next ? "Modo edición: clica cualquier texto de la página y escríbelo ahí mismo" : "Cambios guardados en el brief");
+                    return next;
+                  });
+                }}
+              >
+                {editMode ? "✓ Terminar edición" : "✏️ Editar en la página"}
+              </button>
+              <button
+                className={styles.angleCycle}
+                type="button"
+                title="Rotar el enfoque del titular del hero"
+                onClick={() => {
+                  const order = ["outcome", "territory", "speed", "risk", "authority"] as const;
+                  const nextAngle = order[(order.indexOf(brief.angle as (typeof order)[number]) + 1) % order.length];
+                  update("angle", nextAngle);
+                  const labels: Record<string, string> = { outcome: "Resultado", territory: "Territorio", speed: "Velocidad", risk: "Riesgo invertido", authority: "Autoridad" };
+                  setToast(`Titular con enfoque «${labels[nextAngle]}»`);
+                }}
+              >
+                ↻ Otro titular
+              </button>
+              <button className={styles.iconButton} onClick={() => setFullscreen(true)} aria-label="Abrir vista previa a pantalla completa">⛶</button>
+            </div>
+          </header>
+          {buildingStep >= 0 ? (
+            <div className={styles.buildOverlay} role="status" aria-live="polite">
+              <div>
+                <b>Montando tu landing…</b>
+                <ol>
+                  {["Leyendo el estudio del vertical", "Eligiendo estructura y enfoque con evidencia", "Inyectando cifras, prueba y garantía", "Renderizando tu página"].map((label, index) => (
+                    <li key={label} data-state={buildingStep > index ? "done" : buildingStep === index ? "active" : "wait"}>
+                      <i>{buildingStep > index ? "✓" : index + 1}</i>{label}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+          ) : null}
+          {compare && compareHtml ? (
+            <div className={styles.compareTriple}>
+              {VARIANT_META.map(([variant, label], index) => (
+                <figure key={variant}>
+                  <figcaption>{label}{brief.variant === variant ? " · activa" : ""}</figcaption>
+                  <iframe
+                    title={`Variante ${label}`}
+                    srcDoc={compareHtml[index]}
+                    sandbox="allow-scripts allow-forms allow-popups"
+                  />
+                </figure>
+              ))}
+            </div>
+          ) : (
+            preview
+          )}
+          <div className={styles.exportBar}>
+            <div><span>ESTADO</span><b>{publishReady ? "Sin bloqueos críticos" : `${readiness.blockers.length} bloqueos por resolver`}</b><small>{publishReady ? "HTML listo para revisión humana y test." : "La exportación sigue disponible para revisión interna, pero todavía no es publicable."}</small></div>
+            <div>
+              <button className={styles.packButton} onClick={downloadPack}>Descargar pack de campaña (A/B/C + brief)</button>
+              <button onClick={() => download(filename, exportHtml(), "text/html;charset=utf-8")}>{publishReady ? "Descargar HTML" : "Exportar versión para revisión"}</button>
+              <button onClick={async () => { try { await navigator.clipboard.writeText(exportHtml()); setToast("HTML copiado"); } catch { setToast("No se pudo copiar"); } }}>Copiar HTML</button>
+              <button onClick={() => download(filename.replace(/\.html$/, ".json"), JSON.stringify(brief, null, 2), "application/json;charset=utf-8")}>Guardar brief</button>
+            </div>
+          </div>
+        </main>
+      </section>
+
+      <section className={styles.advancedBar}>
+        <button type="button" onClick={() => setAdvancedOpen((value) => !value)}>
+          {advancedOpen ? "▾ Ocultar modo avanzado" : "▸ Modo avanzado: estudio del vertical, munición del mercado y enfoques con evidencia"}
+        </button>
+        <span>El generador de arriba ya usa todo esto por ti; entra solo si quieres afinar a mano.</span>
+      </section>
+
+      {advancedOpen ? (<>
       <section className={styles.studyBoard} aria-labelledby="landing-study-title">
         <header className={styles.studyHeader}>
           <div>
@@ -667,216 +1069,6 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
         </footer>
       </section>
 
-      <section className={styles.workspace}>
-        <aside className={styles.editor} aria-label="Configuración de la landing">
-          <div className={styles.editorHeader}>
-            <div><span>03 · CONSTRUIR</span><h2>Construye la página</h2></div>
-            <div className={styles.score} data-score={readiness.score >= 75 ? "good" : readiness.score >= 60 ? "mid" : "low"}>
-              <strong>{readiness.score}</strong><span>/100</span>
-            </div>
-          </div>
-          <div className={styles.scoreLabel}>
-            <b>{readiness.blockers.length ? `Faltan ${readiness.blockers.length} decisiones antes de publicar` : qualityLabel(readiness.score)}</b>
-            <span>{readiness.blockers.length ? `${readiness.passed} de ${readiness.total} controles resueltos` : `${readiness.warnings.length} mejoras opcionales pendientes`}</span>
-          </div>
-          {previousBrief ? <button className={styles.undoButton} type="button" onClick={() => { setBrief(previousBrief); setStudyVerticalId(previousBrief.verticalId); setPreviousBrief(null); setToast("Cambio deshecho"); }}>Deshacer último cambio</button> : null}
-          <nav className={styles.editorNav} aria-label="Pasos del brief">
-            {([
-              ["strategy", "01", "Estrategia"],
-              ["message", "02", "Mensaje"],
-              ["evidence", "03", "Prueba y oferta"],
-              ["conversion", "04", "Conversión y marca"],
-            ] as const).map(([id, number, label]) => (
-              <button key={id} className={activeSection === id ? styles.active : ""} onClick={() => setActiveSection(id)}>
-                <span>{number}</span>{label}
-              </button>
-            ))}
-          </nav>
-
-          {activeSection === "strategy" ? (
-            <div className={styles.controls}>
-              <label>Vertical<select value={brief.verticalId} onChange={(event) => selectVertical(event.target.value)}>
-                {(verticales?.verticales || []).map((vertical) => <option key={vertical.id} value={vertical.id}>{vertical.label}</option>)}
-                {!verticales?.verticales.some((vertical) => vertical.id === "generalista") ? <option value="generalista">Generalista</option> : null}
-              </select></label>
-              <div className={styles.presetNotice}><span>El cambio de vertical conserva tus textos.</span><button type="button" onClick={loadVerticalPreset}>Cargar el contenido base de {verticalIntel?.label || "este vertical"}</button></div>
-              {brief.verticalId === "coches-motor" ? (
-                <section className={styles.intentLab} aria-labelledby="automotive-intent-title">
-                  <div>
-                    <span>INTENCIÓN DE BÚSQUEDA</span>
-                    <h3 id="automotive-intent-title">No mezcles situaciones que necesitan respuestas distintas</h3>
-                    <p>Reserva, embargo, financiación y carga desconocida cambian titular, campos, proceso, preguntas y evento de conversión.</p>
-                  </div>
-                  <div className={styles.intentGrid}>
-                    {(Object.entries(AUTOMOTIVE_INTENTS) as Array<[Exclude<LandingBrief["intent"], "vertical-default">, (typeof AUTOMOTIVE_INTENTS)[Exclude<LandingBrief["intent"], "vertical-default">]]>).map(([id, intent]) => (
-                      <button
-                        type="button"
-                        key={id}
-                        className={brief.intent === id ? styles.selected : ""}
-                        onClick={() => {
-                          setPreviousBrief(brief);
-                          setBrief((current) => applyAutomotiveIntent(current, id));
-                          setToast(`${intent.label}: brief, formulario y medición aplicados`);
-                        }}
-                      >
-                        <b>{intent.label}</b>
-                        <span>{intent.result}</span>
-                        <small>{intent.formFields.length} señales · {intent.eventName}</small>
-                      </button>
-                    ))}
-                  </div>
-                </section>
-              ) : null}
-              <div className={styles.strategyContextGrid}>
-                <label>Objetivo principal<select value={brief.objective} onChange={(event) => update("objective", event.target.value as LandingBrief["objective"])}><option value="qualified">Solicitud cualificada</option><option value="booking">Reserva o llamada</option><option value="quote">Presupuesto o propuesta</option><option value="contact">Contacto directo</option></select></label>
-                <label>Origen del tráfico<select value={brief.trafficSource} onChange={(event) => update("trafficSource", event.target.value as LandingBrief["trafficSource"])}><option value="mixed">Mixto</option><option value="meta">Meta / interrupción</option><option value="google">Google / intención</option><option value="organic">Orgánico o referido</option><option value="outbound">Outbound</option></select></label>
-                <label>Temperatura<select value={brief.awareness} onChange={(event) => update("awareness", event.target.value as LandingBrief["awareness"])}><option value="cold">Fría</option><option value="warm">Templada</option><option value="hot">Caliente</option></select></label>
-                <label>Profundidad<select value={brief.depth} onChange={(event) => update("depth", event.target.value as LandingBrief["depth"])}><option value="short">Breve</option><option value="standard">Estándar</option><option value="extended">Extensa</option></select></label>
-                <label>Campos del formulario<select value={brief.formFieldsTarget} disabled={exactAutomotiveIntent} onChange={(event) => update("formFieldsTarget", Number(event.target.value))}>{[3, 4, 5, 6, 7, 8].map((value) => <option key={value} value={value}>{value} campos</option>)}</select></label>
-              </div>
-              <div className={styles.inlineRecommendation}>
-                <div><span>RECOMENDACIÓN ACTUAL</span><b>{exactAutomotiveIntent ? `${automotivePlaybook?.label} · formulario específico` : `${ARCHITECTURES.find((item) => item.id === strategyRecommendation.architecture)?.label} · ${strategyRecommendation.compatibility}/100 encaje`}</b><small>{exactAutomotiveIntent ? `${automotivePlaybook?.formFields.length || 0} campos obligatorios para no perder vehículo, carga, zona o contacto` : strategyRecommendation.suggestedFormFields ? `${strategyRecommendation.suggestedFormFields} campos como punto de partida, usando la mediana del vertical cuando existe` : "Longitud de formulario pendiente de evidencia"}</small></div>
-                <button type="button" disabled={exactAutomotiveIntent} onClick={() => { if (exactAutomotiveIntent) return; setPreviousBrief(brief); setBrief((current) => applyStrategyRecommendation(current, strategyRecommendation)); }}>Aplicar</button>
-              </div>
-                <div className={styles.blueprintPanel} data-active={Boolean(brief.evidencePlan)}>
-                  <header>
-                  <div><span>BLUEPRINT QUE GOBIERNA EL ORDEN DEL HTML</span><b>{brief.evidencePlan?.strategyLabel || "Todavía no has aplicado una estrategia"}</b></div>
-                  {brief.evidencePlan ? <small>{exactAutomotiveIntent ? "Curación editorial" : brief.evidencePlan.confidence === "high" ? "Confianza alta" : brief.evidencePlan.confidence === "medium" ? "Confianza media" : "Exploratoria"} · {brief.evidencePlan.sourceCompanies.length} fuentes aplicadas de {brief.evidencePlan.sampleBase} revisadas</small> : null}
-                </header>
-                {brief.evidencePlan ? (
-                  <>
-                    <ol>{brief.evidencePlan.sectionSequence.map((section, index) => <li key={section}><i>{String(index + 1).padStart(2, "0")}</i><b>{SECTION_LABELS[section]}</b></li>)}</ol>
-                    <div className={styles.blueprintSources}>
-                      <span>FUENTES CONSERVADAS</span>
-                      {brief.evidencePlan.sourceCompanies.map((source) => source.url ? (
-                        <a key={source.companyId} href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a>
-                      ) : (
-                        <a key={source.companyId} href={`?vista=companies&empresa=${encodeURIComponent(source.companyId)}#record-site-capture`} target="_blank" rel="noopener noreferrer">{source.name}</a>
-                      ))}
-                    </div>
-                  </>
-                ) : <p>Aplica una recomendación o una receta. La secuencia, el formulario y el render dejarán de ser una plantilla genérica.</p>}
-              </div>
-              <fieldset><legend>Arquitectura del funnel</legend><div className={styles.optionGrid}>
-                {ARCHITECTURES.map((item) => <button type="button" key={item.id} className={brief.architecture === item.id ? styles.selected : ""} onClick={() => update("architecture", item.id)}><b>{item.label}</b><span>{item.description}</span><small>{item.bestFor}</small></button>)}
-              </div></fieldset>
-              <fieldset><legend>Ángulo del mensaje</legend><div className={styles.angleGrid}>
-                {ANGLES.map((item) => <button type="button" key={item.id} className={brief.angle === item.id ? styles.selected : ""} onClick={() => update("angle", item.id)} title={item.description}>{item.label}</button>)}
-              </div></fieldset>
-              <div className={styles.twoCols}>
-                <label>Sistema visual<select value={brief.tone} onChange={(event) => update("tone", event.target.value as LandingBrief["tone"])}><option value="consultative">Consultivo · confianza</option><option value="direct">Directo · alto contraste</option><option value="premium">Premium · editorial</option></select></label>
-                <label>Variante activa<select value={brief.variant} onChange={(event) => update("variant", event.target.value as LandingBrief["variant"])}><option value="a">A · Resultado</option><option value="b">B · Dolor</option></select></label>
-              </div>
-              <div className={styles.variantCompare}>
-                <button type="button" className={brief.variant === "a" ? styles.selected : ""} onClick={() => update("variant", "a")}><span>A · RESULTADO</span><b>{variantA.headline}</b><small>{variantA.cta}</small></button>
-                <button type="button" className={brief.variant === "b" ? styles.selected : ""} onClick={() => update("variant", "b")}><span>B · DOLOR</span><b>{variantB.headline}</b><small>{variantB.cta}</small></button>
-                <button type="button" className={brief.variant === "c" ? styles.selected : ""} onClick={() => update("variant", "c")}><span>C · COMPROMISO</span><b>{variantC.headline}</b><small>{variantC.cta}</small></button>
-              </div>
-              <p className={styles.helper}>A, B y C cambian únicamente el encuadre del hero. Arquitectura, oferta, prueba y CTA permanecen iguales para que el test sea interpretable. C brilla cuando hay garantía real.</p>
-            </div>
-          ) : null}
-
-          {activeSection === "message" ? (
-            <div className={styles.controls}>
-              <div className={styles.twoCols}>
-                <label>Marca<input value={brief.brand} onChange={(event) => update("brand", event.target.value)} /></label>
-                <label>Zona<input value={brief.zone} onChange={(event) => update("zone", event.target.value)} placeholder="Madrid, España…" /></label>
-              </div>
-              <label>Servicio<input value={brief.service} onChange={(event) => update("service", event.target.value)} /></label>
-              <label>Titular personalizado (opcional)<input value={brief.headlineOverride} onChange={(event) => update("headlineOverride", event.target.value)} placeholder="Vacío = titular generado según ángulo y variante" /></label>
-              {brief.headlineOverride.trim() ? (
-                <div className={styles.presetNotice}><span>El titular manual manda sobre ángulo y variante en el hero.</span><button type="button" onClick={() => update("headlineOverride", "")}>Volver al titular generado</button></div>
-              ) : null}
-              <label>Público<textarea value={brief.audience} onChange={(event) => update("audience", event.target.value)} /></label>
-              <label>Resultado deseado<textarea value={brief.result} onChange={(event) => update("result", event.target.value)} /></label>
-              <label>Problema que reconoce el cliente<textarea value={brief.pain} onChange={(event) => update("pain", event.target.value)} /></label>
-              <label>Unidad que se capta<input value={brief.unit} onChange={(event) => update("unit", event.target.value)} placeholder="pacientes, reuniones, solicitudes…" /></label>
-            </div>
-          ) : null}
-
-          {activeSection === "evidence" ? (
-            <div className={styles.controls}>
-              <label>Qué incluye la oferta<textarea value={brief.offer} onChange={(event) => update("offer", event.target.value)} /></label>
-              <label>Criterios de cualificación<textarea value={brief.filter} onChange={(event) => update("filter", event.target.value)} /></label>
-              <label>Prueba verificable<textarea value={brief.proof} onChange={(event) => update("proof", event.target.value)} placeholder="Caso, reseña o dato con empresa, periodo y fuente. Si lo dejas vacío, el bloque desaparece." /></label>
-              <label>Precio o rango publicado<input value={brief.price} onChange={(event) => update("price", event.target.value)} placeholder="Ej. Desde 690 €/mes + inversión" /></label>
-              <label>Garantía o compromiso contractual<textarea value={brief.guarantee} onChange={(event) => update("guarantee", event.target.value)} placeholder="Métrica, periodo, exclusiones y remedio. Si no existe, déjalo vacío." /></label>
-              {brief.marketStats?.length ? (
-                <div className={styles.presetNotice}><span>Banda “El mercado, en cifras” activa con {brief.marketStats.length} datos del estudio del vertical.</span><button type="button" onClick={() => update("marketStats", [])}>Quitar banda de cifras</button></div>
-              ) : null}
-              <p className={styles.helper}>La página pública nunca mostrará “por configurar”. Los bloques sin respaldo se eliminan automáticamente.</p>
-            </div>
-          ) : null}
-
-          {activeSection === "conversion" ? (
-            <div className={styles.controls}>
-              <div className={styles.deliveryNotice} data-ready={endpointConfigured && brief.leadEndpointVerified}>
-                <div><span>ENTREGA DEL LEAD</span><b>{brief.leadEndpointVerified && endpointConfigured ? "Endpoint HTTPS probado" : endpointConfigured ? "Endpoint configurado; falta probarlo" : "Sin endpoint HTTPS no existe lead capturado"}</b><p>El formulario hace POST, espera una respuesta válida y solo entonces registra la conversión. WhatsApp, llamada o calendario quedan como siguiente paso.</p></div>
-              </div>
-              <label>Endpoint HTTPS del CRM / webhook<input value={brief.leadEndpoint} onChange={(event) => update("leadEndpoint", event.target.value)} placeholder="https://crm.tudominio.com/leads" /></label>
-              <div className={styles.verificationCheck}><input id="lead-endpoint-verified" type="checkbox" checked={brief.leadEndpointVerified} onChange={(event) => update("leadEndpointVerified", event.target.checked)} /><label htmlFor="lead-endpoint-verified"><b>Envío real probado</b><small>Marca esto solo después de recibir un lead de prueba y una respuesta 2xx del endpoint.</small></label></div>
-              <label>Google Tag Manager<input value={brief.gtmId} onChange={(event) => update("gtmId", event.target.value)} placeholder="GTM-XXXXXXX" /></label>
-              <div className={styles.verificationCheck}><input id="tracking-verified" type="checkbox" checked={brief.trackingVerified} onChange={(event) => update("trackingVerified", event.target.checked)} /><label htmlFor="tracking-verified"><b>Conversión comprobada</b><small>Marca esto después de ver el evento correcto en Preview / Tag Assistant sin datos personales.</small></label></div>
-              <div className={styles.twoCols}>
-                <label>Conversión<select value={brief.ctaMode} onChange={(event) => update("ctaMode", event.target.value as LandingBrief["ctaMode"])}><option value="whatsapp">WhatsApp</option><option value="phone">Llamada</option><option value="calendar">Calendario / URL</option></select></label>
-                <label>Color<input className={styles.colorInput} type="color" value={brief.accent} onChange={(event) => update("accent", event.target.value)} /></label>
-              </div>
-              <label>{brief.ctaMode === "calendar" ? "URL del calendario" : "Teléfono destino"}<input value={brief.destination} onChange={(event) => update("destination", event.target.value)} placeholder={brief.ctaMode === "calendar" ? "https://calendly.com/…" : "34600000000"} /></label>
-              <label>Texto del CTA<input value={brief.ctaLabel} onChange={(event) => update("ctaLabel", event.target.value)} placeholder="Se genera según la arquitectura" /></label>
-              <label>URL del logo<input value={brief.logoUrl} onChange={(event) => update("logoUrl", event.target.value)} placeholder="https://…/logo.svg" /></label>
-              <label>Imagen principal<input value={brief.heroImageUrl} onChange={(event) => update("heroImageUrl", event.target.value)} placeholder="https://…/imagen.webp" /></label>
-              <div className={styles.twoCols}>
-                <label>Responsable legal<input value={brief.legalName} onChange={(event) => update("legalName", event.target.value)} placeholder="Razón social real" /></label>
-                <label>CIF / identificación<input value={brief.legalId} onChange={(event) => update("legalId", event.target.value)} placeholder="Opcional en el footer" /></label>
-              </div>
-              <label>Política de privacidad<input value={brief.privacyUrl} onChange={(event) => update("privacyUrl", event.target.value)} placeholder="https://…/privacidad" /></label>
-              <label>Política de cookies<input value={brief.cookiesUrl} onChange={(event) => update("cookiesUrl", event.target.value)} placeholder="https://…/cookies" /></label>
-              <p className={styles.helper}>La analítica solo carga tras aceptar el aviso. Entonces conserva UTM y click IDs y envía a dataLayer únicamente el evento, la intención, la ruta y el número de campos completados: nunca datos personales, económicos ni del vehículo.</p>
-            </div>
-          ) : null}
-
-          <div className={styles.checklist}>
-            <div><span>04 · VALIDAR</span><b>Controles antes de exportar</b></div>
-            {readiness.checks.map((check) => <button type="button" key={check.id} data-ok={check.ok} data-severity={check.severity} onClick={() => setActiveSection(check.section as EditorSection)}><i>{check.ok ? "✓" : "!"}</i><span>{check.label}<small>{check.ok ? "Resuelto" : severityLabel(check.severity)}</small></span><b>→</b></button>)}
-          </div>
-        </aside>
-
-        <main className={styles.previewPanel}>
-          <header className={styles.previewToolbar}>
-            <div><span>04 · VALIDAR EN CONTEXTO</span><b>{ARCHITECTURES.find((item) => item.id === brief.architecture)?.label}</b></div>
-            <div className={styles.previewActions}>
-              <div className={styles.segmented}><button className={!compare && device === "desktop" ? styles.active : ""} onClick={() => { setCompare(false); setDevice("desktop"); }}>Escritorio</button><button className={!compare && device === "mobile" ? styles.active : ""} onClick={() => { setCompare(false); setDevice("mobile"); }}>Móvil</button><button className={compare ? styles.active : ""} onClick={() => setCompare((current) => !current)}>Comparar A/B/C</button></div>
-              <button className={styles.iconButton} onClick={() => setFullscreen(true)} aria-label="Abrir vista previa a pantalla completa">⛶</button>
-            </div>
-          </header>
-          {compare && compareHtml ? (
-            <div className={styles.compareTriple}>
-              {VARIANT_META.map(([variant, label], index) => (
-                <figure key={variant}>
-                  <figcaption>{label}{brief.variant === variant ? " · activa" : ""}</figcaption>
-                  <iframe
-                    title={`Variante ${label}`}
-                    srcDoc={compareHtml[index]}
-                    sandbox="allow-scripts allow-forms allow-popups"
-                  />
-                </figure>
-              ))}
-            </div>
-          ) : (
-            preview
-          )}
-          <div className={styles.exportBar}>
-            <div><span>ESTADO</span><b>{publishReady ? "Sin bloqueos críticos" : `${readiness.blockers.length} bloqueos por resolver`}</b><small>{publishReady ? "HTML listo para revisión humana y test." : "La exportación sigue disponible para revisión interna, pero todavía no es publicable."}</small></div>
-            <div>
-              <button className={styles.packButton} onClick={downloadPack}>Descargar pack de campaña (A/B/C + brief)</button>
-              <button onClick={() => download(filename, html, "text/html;charset=utf-8")}>{publishReady ? "Descargar HTML" : "Exportar versión para revisión"}</button>
-              <button onClick={async () => { try { await navigator.clipboard.writeText(html); setToast("HTML copiado"); } catch { setToast("No se pudo copiar"); } }}>Copiar HTML</button>
-              <button onClick={() => download(filename.replace(/\.html$/, ".json"), JSON.stringify(brief, null, 2), "application/json;charset=utf-8")}>Guardar brief</button>
-            </div>
-          </div>
-        </main>
-      </section>
-
       <section className={styles.evidenceSection}>
         <header><div><p>EVIDENCIA DETALLADA</p><h2>Audita cada decisión y abre sus fuentes</h2></div><span>{intelligence?.source.methodology || "Patrones descriptivos; no son métricas de rendimiento."}</span></header>
         <div className={styles.evidenceStats}>
@@ -925,6 +1117,8 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
         </div>
         {verticalIntel && visibleExamples < verticalIntel.examples.length ? <button className={styles.moreButton} onClick={() => setVisibleExamples((current) => current + 4)}>Ver más referencias</button> : null}
       </section>
+
+      </>) : null}
 
       {fullscreen ? (
         <div className={styles.fullscreen} role="dialog" aria-modal="true" aria-label="Vista previa completa de la landing">

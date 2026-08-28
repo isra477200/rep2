@@ -1768,3 +1768,57 @@
 
 .packButton { background: #0f7a52 !important; }
 .packButton:hover { background: #0c6141 !important; }
+
+.express { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 34px; align-items: center; margin-top: 18px; padding: 30px 34px; border: 1px solid #1d4fa8; border-radius: 20px; background: linear-gradient(140deg, #0d1b2d, #14325a 70%, #17418f); color: #fff; box-shadow: 0 20px 50px rgba(13, 33, 66, 0.35); }
+.expressIntro p { margin: 0 0 8px; color: #9dc0ff; font-size: 11.5px; font-weight: 900; letter-spacing: 0.14em; }
+.expressIntro h2 { margin: 0 0 10px; font-size: clamp(24px, 2.6vw, 34px); letter-spacing: -0.03em; color: #fff; }
+.expressIntro span { display: block; color: #c3d2e8; font-size: 13.5px; line-height: 1.6; }
+.expressForm { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.expressForm label { display: grid; gap: 6px; color: #b8c9e2; font-size: 11.5px; font-weight: 750; }
+.expressForm input, .expressForm select { min-height: 46px; border: 1px solid rgba(255,255,255,0.25); border-radius: 10px; background: rgba(255,255,255,0.08); color: #fff; padding: 10px 12px; font: inherit; font-size: 14px; }
+.expressForm input::placeholder { color: #8ea3c2; }
+.expressForm select option { color: #14213a; }
+.expressForm input:focus, .expressForm select:focus { outline: 2px solid #6ea8ff; background: rgba(255,255,255,0.14); }
+.expressGo { grid-column: 1 / -1; min-height: 54px; border: 0; border-radius: 12px; background: #fff; color: #0d3f8c; font-size: 16px; font-weight: 850; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform .15s; }
+.expressGo:hover { transform: translateY(-2px); }
+@media (max-width: 980px) { .express { grid-template-columns: 1fr; } .expressForm { grid-template-columns: 1fr; } }
+
+.advancedBar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 22px; padding: 14px 18px; border: 1px dashed #c4d2e5; border-radius: 14px; background: #f7fafd; }
+.advancedBar button { border: 0; background: none; color: #0b57d0; font-size: 13.5px; font-weight: 800; cursor: pointer; padding: 0; }
+.advancedBar span { color: #74829a; font-size: 12px; }
+
+.expressTones { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.expressTones button { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid rgba(255,255,255,0.25); border-radius: 10px; background: rgba(255,255,255,0.06); color: #c3d2e8; text-align: left; cursor: pointer; font: inherit; }
+.expressTones button b { font-size: 13px; color: #fff; }
+.expressTones button span { font-size: 10.5px; }
+.expressTones button[data-selected="true"] { background: #fff; border-color: #fff; }
+.expressTones button[data-selected="true"] b { color: #0d3f8c; }
+.expressTones button[data-selected="true"] span { color: #4e5d72; }
+
+.previewPanel { position: relative; }
+.buildOverlay { position: absolute; inset: 0; z-index: 12; display: grid; place-items: center; background: rgba(10, 22, 40, 0.82); backdrop-filter: blur(6px); border-radius: inherit; animation: buildIn .25s ease; }
+@keyframes buildIn { from { opacity: 0; } to { opacity: 1; } }
+.buildOverlay > div { min-width: 340px; padding: 26px 30px; border-radius: 16px; background: #0f2440; border: 1px solid rgba(120, 165, 235, 0.35); box-shadow: 0 30px 80px rgba(0,0,0,0.45); }
+.buildOverlay b { display: block; margin-bottom: 14px; color: #fff; font-size: 16px; letter-spacing: -0.01em; }
+.buildOverlay ol { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+.buildOverlay li { display: flex; align-items: center; gap: 10px; color: #7b8fae; font-size: 13px; transition: color .2s; }
+.buildOverlay li i { display: grid; place-items: center; width: 24px; height: 24px; flex: none; border-radius: 8px; border: 1px solid rgba(120,165,235,0.35); font-style: normal; font-size: 11px; font-weight: 800; }
+.buildOverlay li[data-state="active"] { color: #fff; }
+.buildOverlay li[data-state="active"] i { border-color: #6ea8ff; color: #6ea8ff; animation: pulseStep 1s ease infinite; }
+.buildOverlay li[data-state="done"] { color: #9fe3bf; }
+.buildOverlay li[data-state="done"] i { background: #0b6b45; border-color: #0b6b45; color: #fff; }
+@keyframes pulseStep { 50% { box-shadow: 0 0 0 5px rgba(110,168,255,0.18); } }
+
+.angleCycle { border: 1px solid var(--studio-line); border-radius: 9px; background: #fff; color: #0b57d0; padding: 8px 12px; font-size: 12px; font-weight: 750; cursor: pointer; }
+.angleCycle:hover { border-color: #0b57d0; }
+
+.contentEditorHead { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.contentEditorHead span { font-size: 11px; font-weight: 900; letter-spacing: 0.1em; color: #0a63ca; }
+.contentEditorHead small { color: var(--studio-muted); font-size: 11px; flex: 1; }
+.contentEditorHead button { border: 1px solid var(--studio-line); border-radius: 8px; background: #fff; color: #0b57d0; padding: 5px 10px; font-size: 11px; font-weight: 700; cursor: pointer; }
+.contentEditorRow { display: grid; gap: 6px; padding: 10px 12px; border: 1px solid #e6ecf4; border-radius: 10px; background: #fbfcfe; }
+.contentEditorRow input { font-weight: 700; }
+.contentEditorRow textarea { min-height: 54px; }
+
+.editToggle { border: 1px solid #0b57d0; border-radius: 9px; background: #0b57d0; color: #fff; padding: 8px 12px; font-size: 12px; font-weight: 800; cursor: pointer; }
+.editToggle[data-active="true"] { background: #0f7a52; border-color: #0f7a52; }

@@ -20,6 +20,7 @@ export type MarketAmmo = {
   headlines: AmmoQuote[];
   proofLine: string;
   guaranteeSuggestion: string;
+  priceSuggestion: string | null;
   stats: Array<{ value: string; label: string }>;
 };
 
@@ -51,7 +52,21 @@ export const buildMarketAmmo = (
 
   const slaEntry = (cruces?.slas.top || []).find((s) => inVertical(s.id)) || (cruces?.slas.top || [])[0] || null;
 
-  const proofLine = `Sistema construido sobre el análisis de ${vertical.n} empresas de captación del sector (${vertical.spainN} en España)${vertical.medianEur ? `, con una mediana de mercado de ${vertical.medianEur} €/mes` : ""}. Cada táctica de esta página sale de ese estudio, no de una plantilla.`;
+  // Una mediana muy baja delata que el vertical mezcla cuotas mensuales con precio
+  // por lead: se etiqueta como tal para no vender una cuota irreal.
+  const medianaFrase = vertical.medianEur
+    ? vertical.medianEur >= 100
+      ? `, con una mediana de mercado de ${vertical.medianEur} €/mes`
+      : `, con un precio por contacto observado en torno a ${vertical.medianEur} €`
+    : "";
+  const proofLine = `Sistema construido sobre el análisis de ${vertical.n} empresas de captación del sector (${vertical.spainN} en España)${medianaFrase}. Cada táctica de esta página sale de ese estudio, no de una plantilla.`;
+
+  // Sugerencia de precio publicado: los ganadores del estudio publican precio (46% vs 16%).
+  // Solo con mediana de cuota real (>=100 EUR); nunca con medianas de precio por lead.
+  const priceSuggestion =
+    vertical.medianEur && vertical.medianEur >= 100
+      ? `Desde ${Math.round(vertical.medianEur / 10) * 10} €/mes + inversión publicitaria`
+      : null;
 
   const cleanUnit = (unit || "clientes").trim() || "clientes";
   const femenina = ["obras", "instalaciones", "consultas", "reuniones", "solicitudes", "reservas", "citas", "ventas", "visitas", "llamadas", "oportunidades"].includes(
@@ -64,7 +79,11 @@ export const buildMarketAmmo = (
   const stats: Array<{ value: string; label: string }> = [
     { value: String(vertical.n), label: "empresas del sector analizadas" },
     vertical.spainN ? { value: String(vertical.spainN), label: "operando en España" } : null,
-    vertical.medianEur ? { value: `${vertical.medianEur} €/mes`, label: "mediana de precio del mercado" } : null,
+    vertical.medianEur
+      ? vertical.medianEur >= 100
+        ? { value: `${vertical.medianEur} €/mes`, label: "mediana de precio del mercado" }
+        : { value: `${vertical.medianEur} €`, label: "precio por contacto observado (mediana)" }
+      : null,
     slaEntry ? { value: slaEntry.sla, label: `SLA más agresivo (${slaEntry.name})` } : null,
   ].filter((s): s is { value: string; label: string } => Boolean(s)).slice(0, 4);
 
@@ -79,6 +98,7 @@ export const buildMarketAmmo = (
     headlines,
     proofLine,
     guaranteeSuggestion,
+    priceSuggestion,
     stats,
   };
 };

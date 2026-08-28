@@ -4,6 +4,7 @@ import type {
   LandingObjective,
   LandingSectionId,
 } from "./model";
+import { VERTICAL_CONTENT } from "./vertical-content.ts";
 
 export type AutomotiveRenderPlaybook = {
   label: string;
@@ -89,6 +90,10 @@ const css = [
   ".topbar{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(219,227,238,.9);background:rgba(255,255,255,.92);backdrop-filter:blur(14px)}.topbar .wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:850;font-size:17px;letter-spacing:-.02em}.brand-logo{display:block;width:auto;max-width:176px;height:40px;object-fit:contain}.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));color:#fff;font-size:14px;font-weight:900;letter-spacing:.04em;box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 35%,transparent)}.topbar nav{display:flex;align-items:center;gap:26px}.topbar nav>a:not(.button){color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:650;transition:color .15s}.topbar nav>a:not(.button):hover{color:var(--ink)}",
   ".button{display:inline-flex;min-height:52px;align-items:center;justify-content:center;gap:9px;border:1px solid var(--accent);border-radius:12px;padding:0 26px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 92%,#fff),var(--accent));color:#fff;text-decoration:none;font:inherit;font-size:15.5px;font-weight:800;letter-spacing:-.01em;cursor:pointer;box-shadow:0 1px 2px rgba(10,40,90,.18),0 8px 22px color-mix(in srgb,var(--accent) 32%,transparent);transition:transform .16s ease,box-shadow .16s ease,filter .16s ease}.button:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 2px 4px rgba(10,40,90,.2),0 14px 30px color-mix(in srgb,var(--accent) 40%,transparent)}.button:active{transform:translateY(0)}.button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 32%,transparent);outline-offset:2px}.button.secondary{border-color:var(--line);background:#fff;color:var(--ink);box-shadow:var(--shadow-sm)}.button.secondary:hover{border-color:#b9c6da;box-shadow:var(--shadow)}",
   ".hero{position:relative;border-bottom:1px solid var(--line);background:radial-gradient(1200px 520px at 82% -10%,color-mix(in srgb,var(--accent) 13%,transparent),transparent 60%),radial-gradient(900px 420px at -8% 30%,color-mix(in srgb,var(--accent) 7%,transparent),transparent 55%),linear-gradient(180deg,#fbfcfe,var(--paper));padding:68px 0 64px;overflow:hidden}.hero:before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(15,35,64,.05) 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(180deg,#000 20%,transparent 85%);pointer-events:none}.hero .wrap{position:relative}.hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(400px,.8fr);gap:56px;align-items:start}.hero-copy{padding-top:16px}",
+  ".brand-logo-rv{display:block;height:36px;width:auto}.footer-logo{margin-bottom:10px}.footer-logo .brand-logo-rv{height:30px}",
+  ".hero-copy>*{opacity:0;transform:translateY(16px);animation:rvup .55s cubic-bezier(.2,.65,.3,1) forwards}.hero-copy>*:nth-child(1){animation-delay:.05s}.hero-copy>*:nth-child(2){animation-delay:.12s}.hero-copy>*:nth-child(3){animation-delay:.19s}.hero-copy>*:nth-child(4){animation-delay:.26s}.hero-copy>*:nth-child(5){animation-delay:.33s}.hero-copy>*:nth-child(6){animation-delay:.4s}.hero-copy>*:nth-child(7){animation-delay:.47s}.hero .lead-form{opacity:0;animation:rvup .6s cubic-bezier(.2,.65,.3,1) .3s forwards}@keyframes rvup{to{opacity:1;transform:none}}",
+  ".button:not(.secondary){position:relative;overflow:hidden}.button:not(.secondary):after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .5s ease}.button:not(.secondary):hover:after{left:125%}",
+  ".hero-art{position:absolute;inset:0;pointer-events:none;overflow:hidden}.hero-art svg{position:absolute;right:max(30%,420px);top:8%;width:min(30vw,380px);height:auto;stroke:var(--accent);opacity:.09;fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;animation:rvfloat 10s ease-in-out infinite alternate}.hero-art .orb{position:absolute;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 55%,transparent),transparent 70%);filter:blur(70px)}.hero-art .orb-a{left:-140px;top:-160px;width:460px;height:460px;opacity:.35}.hero-art .orb-b{right:-120px;bottom:-180px;width:400px;height:400px;opacity:.22}.hero-art .ring{position:absolute;right:-90px;top:-110px;width:340px;height:340px;border:2px dashed color-mix(in srgb,var(--accent) 35%,transparent);border-radius:50%;animation:rvspin 60s linear infinite}@keyframes rvfloat{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-16px) rotate(2deg)}}@keyframes rvspin{to{transform:rotate(360deg)}}.theme-direct .hero-art svg{opacity:.14}.theme-direct .hero-art .orb{opacity:.28}.theme-premium .hero-art svg{opacity:.07}@media(max-width:900px){.hero-art svg{right:-60px;top:2%;width:300px}}@media(prefers-reduced-motion:reduce){.hero-art svg,.hero-art .ring{animation:none}}",
   ".zone-badge{display:inline-flex;align-items:center;gap:9px;margin:0 0 20px;border:1px solid color-mix(in srgb,var(--accent) 28%,#fff);border-radius:999px;background:#fff;padding:8px 16px;color:var(--accent-deep);font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;box-shadow:var(--shadow-sm)}.zone-badge i{position:relative;width:8px;height:8px;border-radius:50%;background:var(--ok);font-style:normal}.zone-badge i:after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid color-mix(in srgb,var(--ok) 45%,transparent);animation:rvpulse 1.8s ease-out infinite}@keyframes rvpulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.5);opacity:0}}",
   ".eyebrow{margin:0 0 14px;color:var(--accent);font-size:11.5px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.hero h1{max-width:16ch;margin:0;font-size:clamp(42px,5.4vw,66px);line-height:1.03;letter-spacing:-.045em;font-weight:850}.hero .lead{max-width:620px;margin:24px 0 0;color:var(--muted);font-size:19.5px;line-height:1.6}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.proof-pills{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 0;padding:0;list-style:none}.proof-pills li{display:inline-flex;align-items:center;gap:7px;border:1px solid #cdd9e8;border-radius:999px;background:rgba(255,255,255,.85);padding:8px 14px;color:#33415c;font-size:13px;font-weight:700}.proof-pills li:before{content:'';width:15px;height:15px;flex:none;background:var(--ok);mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E\") center/contain no-repeat}",
   ".hero-media{margin:30px 0 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm)}.hero-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.process-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow-sm);overflow:hidden}.process-trust div{position:relative;padding:18px 18px 18px 52px;border-right:1px solid var(--line)}.process-trust div:last-child{border-right:0}.process-trust div:before{content:'';position:absolute;left:17px;top:20px;width:22px;height:22px;border-radius:7px;background:var(--accent-soft)}.process-trust div:after{content:'';position:absolute;left:22px;top:25px;width:12px;height:12px;background:var(--accent);mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E\") center/contain no-repeat}.process-trust b{display:block;font-size:14px;letter-spacing:-.01em}.process-trust span{display:block;margin-top:3px;color:var(--muted);font-size:12px;line-height:1.45}",
@@ -107,6 +112,7 @@ const css = [
   ".final-cta{position:relative;background:linear-gradient(160deg,var(--dark),#14283f 55%,color-mix(in srgb,var(--accent) 55%,#14283f));color:#fff;text-align:center;overflow:hidden}.final-cta:before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}.final-cta .wrap{position:relative}.final-cta .eyebrow{color:#9dc0ff}.final-cta h2{max-width:800px;margin:0 auto;color:#fff}.final-cta p{max-width:640px;margin:18px auto 30px;color:#c7d2e2}.final-cta .button{border-color:#fff;background:#fff;color:var(--accent-deep);box-shadow:0 14px 40px rgba(0,0,0,.35)}.final-cta .button:hover{filter:none;background:#f2f6ff}",
   ".market-stats{position:relative;background:linear-gradient(160deg,var(--dark),#14283f 60%,color-mix(in srgb,var(--accent) 45%,#14283f));color:#fff;padding:64px 0;overflow:hidden}.market-stats:before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}.market-stats .wrap{position:relative}.market-stats .eyebrow{color:#9dc0ff}.market-stats h2{margin:4px 0 0;max-width:720px;font-size:clamp(27px,3.4vw,40px);line-height:1.1;letter-spacing:-.032em;font-weight:830;color:#fff}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:34px}.stat{border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);background:rgba(255,255,255,.05);padding:22px 22px 20px;backdrop-filter:blur(4px)}.stat b{display:flex;align-items:baseline;gap:5px;font-size:clamp(30px,3.6vw,46px);font-weight:850;letter-spacing:-.04em;line-height:1}.stat b i{font-style:normal}.stat b em{font-style:normal;font-size:.42em;font-weight:800;color:#9dc0ff;letter-spacing:0}.stat span{display:block;margin-top:9px;color:#c7d2e2;font-size:13px;line-height:1.5}.stats-note{margin:26px 0 0;color:#8fa3bb;font-size:12px;max-width:720px}",
   ".form-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;margin:13px 0 0;padding:0;list-style:none}.form-trust li{position:relative;padding-left:19px;color:#8494ab;font-size:11px;font-weight:650}.form-trust li:before{content:'';position:absolute;left:0;top:1px;width:13px;height:13px;background:var(--ok);mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16-4-4 1.41-1.41L10 14.17l6.59-6.58L18 9l-8 8z'/%3E%3C/svg%3E\") center/contain no-repeat;opacity:.75}",
+  ".read-progress{position:fixed;top:0;left:0;z-index:60;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-deep));transition:width .1s linear}",
   ".reveal{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.2,.65,.3,1),transform .6s cubic-bezier(.2,.65,.3,1)}.reveal.in{opacity:1;transform:none}.topbar.scrolled{box-shadow:0 6px 24px rgba(15,35,64,.09)}@media print{.reveal{opacity:1;transform:none}}",
   ".site-footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;background:#fff}.footer-grid{display:flex;justify-content:space-between;gap:24px;align-items:center}.footer-grid nav{display:flex;flex-wrap:wrap;align-items:center;gap:16px}.analytics-manage{border:0;background:transparent;padding:0;color:inherit;font:inherit;font-weight:750;text-decoration:underline;cursor:pointer}.mobile-cta{display:none}",
   ".analytics-consent{position:fixed;right:18px;bottom:18px;z-index:40;width:min(510px,calc(100% - 36px));border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:12px;background:#fff;padding:22px;box-shadow:0 24px 70px rgba(15,35,64,.25)}.analytics-consent[hidden]{display:none}.analytics-consent b{display:block;font-size:17px}.analytics-consent p{margin:7px 0 15px;color:var(--muted);font-size:13px}.analytics-consent a{font-weight:750}.consent-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.consent-actions button{min-height:42px}.consent-actions .secondary{border-color:var(--line);background:#fff;color:var(--ink)}",
@@ -114,7 +120,7 @@ const css = [
   ".theme-premium{background:#fbf8f2}.theme-premium .topbar{background:rgba(251,248,242,.94)}.theme-premium .hero{background:radial-gradient(1100px 480px at 85% -10%,rgba(157,132,84,.14),transparent 60%),linear-gradient(180deg,#faf6ee,#f1ece3)}.theme-premium .hero:before{background-image:radial-gradient(rgba(80,65,40,.07) 1px,transparent 1px)}.theme-premium .hero h1,.theme-premium .section h2,.theme-premium .form-head h2,.theme-premium .final-cta h2,.theme-premium blockquote,.theme-premium .guarantee-card h3{font-family:Georgia,\"Times New Roman\",serif;font-weight:600;letter-spacing:-.03em}.theme-premium .hero h1{max-width:18ch}.theme-premium .button,.theme-premium .brand-mark,.theme-premium .lead-form,.theme-premium .fields input,.theme-premium .fields select,.theme-premium .fields textarea,.theme-premium .steps article,.theme-premium .offer-grid article,.theme-premium .fit-box,.theme-premium .price-card,.theme-premium .compare-col,.theme-premium .guarantee-card,.theme-premium .faq details{border-radius:0}.theme-premium .lead-form{border:1px solid #cfc5b5;box-shadow:0 20px 55px rgba(63,52,38,.15)}.theme-premium .lead-form:before{border-radius:0}.theme-premium .price-card:before{border-radius:0}.theme-premium .qualification{background:#292722}.theme-premium .final-cta{background:linear-gradient(160deg,#292722,#3a352c)}.theme-premium .architecture-block,.theme-premium .mechanism,.theme-premium .pricing,.theme-premium .compare,.theme-premium .faq{background:#f1ece3}.theme-premium .proof{background:#e8dfd0}.theme-premium .zone-badge{border-color:#cfc5b5;color:#6d5c3f}",
   "@media(max-width:900px){.hero-grid,.split{grid-template-columns:1fr;gap:38px}.hero-copy{padding-top:4px}.hero h1{font-size:46px}.lead-form{max-width:680px}.steps{grid-template-columns:1fr 1fr}.steps article:not(:last-child):after{display:none}.fit-columns,.compare-grid{grid-template-columns:1fr}.section{padding:70px 0}}",
   "@media(max-width:620px){.wrap{width:min(100% - 28px,1180px)}.topbar .wrap{min-height:62px}.topbar nav>a:not(.button){display:none}.topbar nav .button{display:none}.hero{padding:40px 0 48px}.hero h1{font-size:37px;line-height:1.06}.hero .lead{font-size:17px}.hero-actions{display:grid}.hero-actions .button{width:100%}.process-trust{grid-template-columns:1fr}.process-trust div{border-right:0;border-bottom:1px solid var(--line)}.process-trust div:last-child{border-bottom:0}.fields{grid-template-columns:1fr}.fields .wide{grid-column:auto}.lead-form{padding:24px}.steps,.offer-grid{grid-template-columns:1fr}.section h2{font-size:31px}.guarantee-card{grid-template-columns:1fr;padding:26px}.footer-grid{display:grid;text-align:left}.mobile-cta{position:fixed;right:12px;bottom:12px;left:12px;z-index:25;display:flex;box-shadow:0 12px 34px rgba(15,35,64,.32)}body{padding-bottom:76px}}",
-  "@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.steps article,.offer-grid article{transition:none}.zone-badge i:after{animation:none}.reveal{opacity:1;transform:none;transition:none}}",
+  "@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.steps article,.offer-grid article{transition:none}.zone-badge i:after{animation:none}.reveal{opacity:1;transform:none;transition:none}.hero-copy>*,.hero .lead-form{opacity:1;transform:none;animation:none}.button:not(.secondary):after{display:none}}",
   ".theme-premium .market-stats{background:linear-gradient(160deg,#292722,#3a352c)}.theme-premium .stat{border-radius:0}.theme-premium .stat b em,.theme-premium .market-stats .eyebrow{color:#cbb98d}",
 ].join("");
 
@@ -214,9 +220,14 @@ export const buildLandingHtmlV3 = (
   const cspOrigins = [...new Set([endpointOrigin, imageOrigin, logoOrigin].filter(Boolean))].join(" ");
   const robots = context.publishable ? "index,follow" : "noindex,nofollow";
 
+  const isRedVitalia = /^redvitalia/i.test(clean(brief.brand));
+  const rvLogo = (textColor: string) =>
+    "<svg class=\"brand-logo-rv\" viewBox=\"0 0 178 40\" width=\"178\" height=\"40\" role=\"img\" aria-label=\"RedVitalia\" xmlns=\"http://www.w3.org/2000/svg\"><defs><linearGradient id=\"rvlg\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#1f7bff\"/><stop offset=\"1\" stop-color=\"#0a3d91\"/></linearGradient></defs><rect width=\"40\" height=\"40\" rx=\"11\" fill=\"url(#rvlg)\"/><path d=\"M12 28V12h8.2c3 0 5 1.8 5 4.4 0 2-1.1 3.4-2.9 4l3.3 7.6h-4l-2.9-7h-2.9v7z\" fill=\"#fff\" opacity=\"0\"/><text x=\"20\" y=\"26.8\" text-anchor=\"middle\" font-family=\"Inter,ui-sans-serif,-apple-system,'Segoe UI',sans-serif\" font-weight=\"900\" font-size=\"16.5\" letter-spacing=\".5\" fill=\"#fff\">RV</text><text x=\"51\" y=\"27\" font-family=\"Inter,ui-sans-serif,-apple-system,'Segoe UI',sans-serif\" font-weight=\"850\" font-size=\"19.5\" letter-spacing=\"-.5\" fill=\"" + textColor + "\">Red<tspan font-weight=\"600\">Vitalia</tspan></text></svg>";
   const logo = logoUrl
     ? "<img src=\"" + esc(logoUrl) + "\" alt=\"" + brand + "\" class=\"brand-logo\" width=\"172\" height=\"38\">"
-    : "<span class=\"brand-mark\">" + brand.slice(0, 2).toUpperCase() + "</span><b>" + brand + "</b>";
+    : isRedVitalia
+      ? rvLogo("#0f172a")
+      : "<span class=\"brand-mark\">" + brand.slice(0, 2).toUpperCase() + "</span><b>" + brand + "</b>";
 
   const media = heroImageUrl
     ? "<figure class=\"hero-media\"><img src=\"" + esc(heroImageUrl) + "\" alt=\"" + service + " en " + zone + "\" width=\"960\" height=\"540\" fetchpriority=\"high\" decoding=\"async\"></figure>"
@@ -253,13 +264,19 @@ export const buildLandingHtmlV3 = (
   ];
   const accepted = context.automotive ? context.automotive.accepted : genericAccepted;
   const rejected = context.automotive ? context.automotive.rejected : genericRejected;
+  const verticalContent = VERTICAL_CONTENT[brief.verticalId] || null;
   const genericSteps = [
     { title: "Cuéntanos el contexto", text: "Recogemos " + clean(brief.filter) + "." },
     { title: "Revisamos el encaje", text: "Comprobamos alcance, zona y viabilidad antes de confirmar nada." },
     { title: "Recibes una respuesta", text: "Te explicamos el siguiente paso y las condiciones que aplican." },
     { title: "Decides si avanzar", text: "Solo se formaliza lo que ambas partes hayan revisado y aceptado." },
   ];
-  const steps = context.automotive ? context.automotive.steps : genericSteps;
+  const stepsOverride = (brief.stepsOverride || []).filter((step) => clean(step?.title) && clean(step?.text));
+  const steps = context.automotive
+    ? context.automotive.steps
+    : stepsOverride.length >= 3
+      ? stepsOverride.slice(0, 4)
+      : verticalContent?.steps || genericSteps;
   const genericFaqs = [
     {
       question: "¿Qué cuenta como " + singular(brief.unit) + " con encaje?",
@@ -278,10 +295,17 @@ export const buildLandingHtmlV3 = (
       answer: "Duración, renovación y cancelación deben aparecer en la propuesta o contrato antes de cualquier pago.",
     },
   ];
-  const faqs = context.automotive ? context.automotive.faqs : genericFaqs;
+  const faqsOverride = (brief.faqsOverride || []).filter((faq) => clean(faq?.question) && clean(faq?.answer));
+  const faqs = context.automotive
+    ? context.automotive.faqs
+    : faqsOverride.length >= 2
+      ? faqsOverride.slice(0, 4)
+      : verticalContent?.faqs || genericFaqs;
 
   const problemSection =
-    "<section class=\"section problem\"><div class=\"wrap split\"><div><p class=\"eyebrow\">LA SITUACIÓN REAL</p><h2>Sabes lo que cuesta " + pain + "</h2></div><div class=\"problem-copy\"><p>No es falta de trabajo: es que sin criterio claro cada intento sale caro en tiempo, dinero y confianza.</p><p>Aquí el objetivo es concreto: <strong>" + result + "</strong>. Y el camino está a la vista — sabrás qué se revisa, qué se promete y qué no, antes de dar ningún paso.</p></div></div></section>";
+    "<section class=\"section problem\"><div class=\"wrap split\"><div><p class=\"eyebrow\">LA SITUACIÓN REAL</p><h2>Sabes lo que cuesta <span data-edit=\"pain\">" + pain + "</span></h2></div><div class=\"problem-copy\"><p data-edit=\"problem\">" +
+    (clean(brief.problemOverride) ? esc(brief.problemOverride) : verticalContent ? esc(verticalContent.problema) : "No es falta de trabajo: es que sin criterio claro cada intento sale caro en tiempo, dinero y confianza.") +
+    "</p><p>Aquí el objetivo es concreto: <strong>" + result + "</strong>. Y el camino está a la vista — sabrás qué se revisa, qué se promete y qué no, antes de dar ningún paso.</p></div></div></section>";
   const qualificationSection =
     "<section class=\"section qualification\"><div class=\"wrap split\"><div><p class=\"eyebrow\">ENCAJE</p><h2>Comprueba si esta es la ruta correcta para tu caso</h2><p>Está pensada para " + audience + ".</p></div><div class=\"fit-columns\"><div class=\"fit-box\"><b>Sí revisamos</b>" + listItems(accepted, "check-list") + "</div><div class=\"fit-box\"><b>No es esta ruta</b>" + listItems(rejected, "cross-list") + "</div></div></div></section>";
   const mechanismSection =
@@ -289,20 +313,20 @@ export const buildLandingHtmlV3 = (
     steps
       .map(
         (step, index) =>
-          "<article><i>" + String(index + 1).padStart(2, "0") + "</i><h3>" + esc(step.title) + "</h3><p>" + esc(step.text) + "</p></article>",
+          "<article><i>" + String(index + 1).padStart(2, "0") + "</i><h3 data-edit=\"step:" + index + ":title\">" + esc(step.title) + "</h3><p data-edit=\"step:" + index + ":text\">" + esc(step.text) + "</p></article>",
       )
       .join("") +
     "</div></div></section>";
   const offerSection =
-    "<section class=\"section offer\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">QUÉ RECIBES</p><h2>Una propuesta que deja claro el alcance</h2><p>" + offer + "</p></div><div class=\"offer-grid\"><article><b>01 · REVISIÓN</b><h3>Contexto antes de precio</h3><p>Se comprueban los datos necesarios para evitar respuestas genéricas.</p></article><article><b>02 · CRITERIO</b><h3>Encaje explicado</h3><p>Sabes por qué el caso puede avanzar o por qué no.</p></article><article><b>03 · CONDICIONES</b><h3>Responsabilidades visibles</h3><p>Quién hace cada trámite y qué queda pendiente se aclara antes de aceptar.</p></article><article><b>04 · SIGUIENTE PASO</b><h3>Una decisión concreta</h3><p>Avanzar, aportar un documento o detener el proceso sin perder más tiempo.</p></article></div></div></section>";
+    "<section class=\"section offer\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">QUÉ RECIBES</p><h2>Una propuesta que deja claro el alcance</h2><p data-edit=\"offer\">" + offer + "</p></div><div class=\"offer-grid\"><article><b>01 · REVISIÓN</b><h3>Contexto antes de precio</h3><p>Se comprueban los datos necesarios para evitar respuestas genéricas.</p></article><article><b>02 · CRITERIO</b><h3>Encaje explicado</h3><p>Sabes por qué el caso puede avanzar o por qué no.</p></article><article><b>03 · CONDICIONES</b><h3>Responsabilidades visibles</h3><p>Quién hace cada trámite y qué queda pendiente se aclara antes de aceptar.</p></article><article><b>04 · SIGUIENTE PASO</b><h3>Una decisión concreta</h3><p>Avanzar, aportar un documento o detener el proceso sin perder más tiempo.</p></article></div></div></section>";
   const proofSection = proof
-    ? "<section class=\"section proof\"><div class=\"wrap\"><span class=\"proof-mark\" aria-hidden=\"true\">“</span><p class=\"eyebrow\">PRUEBA IDENTIFICABLE</p><blockquote>" + proof + "<cite>Verificable — pide el detalle en la primera conversación.</cite></blockquote></div></section>"
+    ? "<section class=\"section proof\"><div class=\"wrap\"><span class=\"proof-mark\" aria-hidden=\"true\">“</span><p class=\"eyebrow\">PRUEBA IDENTIFICABLE</p><blockquote><span data-edit=\"proof\">" + proof + "</span><cite>Verificable — pide el detalle en la primera conversación.</cite></blockquote></div></section>"
     : "";
   const pricingSection = price
-    ? "<section class=\"section pricing\"><div class=\"wrap split\"><div><p class=\"eyebrow\">PRECIO Y CONDICIONES</p><h2>La inversión aparece antes de pedir una decisión</h2><p>" + offer + "</p></div><article class=\"price-card\"><span>INVERSIÓN PUBLICADA</span><strong>" + price + "</strong><small>Revisa impuestos, duración, renovación, cancelación y exclusiones en las condiciones.</small><a class=\"button\" href=\"#lead-form\">" + cta + "</a></article></div></section>"
+    ? "<section class=\"section pricing\"><div class=\"wrap split\"><div><p class=\"eyebrow\">PRECIO Y CONDICIONES</p><h2>La inversión aparece antes de pedir una decisión</h2><p>" + offer + "</p></div><article class=\"price-card\"><span>INVERSIÓN PUBLICADA</span><strong data-edit=\"price\">" + price + "</strong><small>Revisa impuestos, duración, renovación, cancelación y exclusiones en las condiciones.</small><a class=\"button\" href=\"#lead-form\">" + cta + "</a></article></div></section>"
     : "";
   const guaranteeSection = guarantee
-    ? "<section class=\"section guarantee\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">COMPROMISO PUBLICABLE</p><h2>La garantía, por delante</h2></div><div class=\"guarantee-card\"><span class=\"guarantee-shield\" aria-hidden=\"true\"></span><div><h3>Por escrito en la propuesta, no en un anuncio</h3><p>" + guarantee + "</p></div></div></div></section>"
+    ? "<section class=\"section guarantee\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">COMPROMISO PUBLICABLE</p><h2>La garantía, por delante</h2></div><div class=\"guarantee-card\"><span class=\"guarantee-shield\" aria-hidden=\"true\"></span><div><h3>Por escrito en la propuesta, no en un anuncio</h3><p data-edit=\"guarantee\">" + guarantee + "</p></div></div></div></section>"
     : "";
   const statsItems = (brief.marketStats || [])
     .map((item) => ({ value: clean(item?.value), label: clean(item?.label) }))
@@ -330,7 +354,7 @@ export const buildLandingHtmlV3 = (
     "<section class=\"section faq\" id=\"faq\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">PREGUNTAS CLAVE</p><h2>Respuestas antes de pedirte que avances</h2></div>" +
     faqs
       .slice(0, brief.depth === "short" ? 2 : brief.depth === "standard" ? 3 : 4)
-      .map((faq) => "<details><summary>" + esc(faq.question) + "</summary><p>" + esc(faq.answer) + "</p></details>")
+      .map((faq, faqIndex) => "<details><summary data-edit=\"faq:" + faqIndex + ":question\">" + esc(faq.question) + "</summary><p data-edit=\"faq:" + faqIndex + ":answer\">" + esc(faq.answer) + "</p></details>")
       .join("") +
     "</div></section>";
 
@@ -398,6 +422,20 @@ export const buildLandingHtmlV3 = (
       (cookiesUrl ? "<a href=\"" + esc(cookiesUrl) + "\" target=\"_blank\" rel=\"noopener noreferrer\">Consultar política de cookies</a>" : "") +
       "<div class=\"consent-actions\"><button class=\"button secondary\" type=\"button\" data-analytics-consent=\"denied\">Solo necesarias</button><button class=\"button\" type=\"button\" data-analytics-consent=\"granted\">Aceptar analítica</button></div></aside>"
     : "";
+  const faqSchemaItems = faqs.slice(0, brief.depth === "short" ? 2 : brief.depth === "standard" ? 3 : 4);
+  const faqSchema = faqSchemaItems.length
+    ? "<script type=\"application/ld+json\">" +
+      JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqSchemaItems.map((faq) => ({
+          "@type": "Question",
+          name: clean(faq.question),
+          acceptedAnswer: { "@type": "Answer", text: clean(faq.answer) },
+        })),
+      }).replace(/</g, "\\u003c") +
+      "</script>"
+    : "";
   const schema = legalName
     ? "<script type=\"application/ld+json\">" +
       JSON.stringify({
@@ -433,6 +471,7 @@ export const buildLandingHtmlV3 = (
     "var rmq=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)');" +
     "if('IntersectionObserver' in window&&!(rmq&&rmq.matches)){var rvCount=function(el){var target=parseInt((el.getAttribute('data-count')||'').replace(/\\D/g,''),10);if(!target)return;var fin=el.textContent;var st=null;var fr=function(ts){if(st===null)st=ts;var p=Math.min(1,(ts-st)/900);el.textContent=String(Math.round(target*(p*p*(3-2*p))));if(p<1)requestAnimationFrame(fr);else el.textContent=fin};requestAnimationFrame(fr)};var rvIo=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(!entry.isIntersecting)return;entry.target.classList.add('in');rvIo.unobserve(entry.target);entry.target.querySelectorAll('[data-count]').forEach(rvCount)})},{threshold:.01,rootMargin:'0px 0px -6% 0px'});document.querySelectorAll('main section:not(.hero),.steps article,.offer-grid article,.compare-col,.guarantee-card').forEach(function(el){el.classList.add('reveal');rvIo.observe(el)})}" +
     "var rvTopbar=document.querySelector('.topbar');if(rvTopbar)window.addEventListener('scroll',function(){rvTopbar.classList.toggle('scrolled',window.scrollY>8)},{passive:true});" +
+    "var rvProg=document.querySelector('.read-progress');if(rvProg)window.addEventListener('scroll',function(){var h=document.documentElement;var max=h.scrollHeight-h.clientHeight;rvProg.style.width=(max>0?(h.scrollTop/max)*100:0)+'%'},{passive:true});" +
     "var form=document.querySelector('.lead-form');if(!form)return;" +
     "var button=form.querySelector('button[type=submit]');var status=form.querySelector('.form-status');" +
     "var endpoint=" + endpointLiteral + ";var route=" + routeLiteral + ";var intent=" + intentLiteral + ";var gtmId=" + gtmIdLiteral + ";" +
@@ -505,17 +544,21 @@ export const buildLandingHtmlV3 = (
     "<title>" + brand + " · " + service + " en " + zone + "</title>",
     "<meta name=\"description\" content=\"" + metaDescription + "\"><meta name=\"robots\" content=\"" + robots + "\">",
     "<meta name=\"referrer\" content=\"strict-origin-when-cross-origin\">",
+    "<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%231769e0'/%3E%3Ctext x='20' y='27' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='17' fill='white'%3ERV%3C/text%3E%3C/svg%3E\">",
     "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data: https:; style-src 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' " + esc(cspOrigins) + " https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; font-src 'self' data:; base-uri 'self'; form-action 'self' " + esc(endpointOrigin) + "; frame-ancestors 'none'\">",
     schema,
-    "<style>:root{--accent:" + accent + "}" + css + "</style></head><body class=\"theme-" + visualTheme + " architecture-" + architectureClass + "\"" + (context.publishable ? "" : " data-draft=\"true\"") + ">",
+    faqSchema,
+    "<style>:root{--accent:" + accent + "}" + css + "</style></head><body class=\"theme-" + visualTheme + " architecture-" + architectureClass + "\"" + (context.publishable ? "" : " data-draft=\"true\"") + "><div class=\"read-progress\" aria-hidden=\"true\"></div>",
     "<header class=\"topbar\"><div class=\"wrap\"><a class=\"brand\" href=\"#\">" + logo + "</a><nav><a href=\"#proceso\">Proceso</a><a href=\"#faq\">Preguntas</a><a class=\"button\" href=\"#lead-form\">" + cta + "</a></nav></div></header>",
-    "<main><section class=\"hero\"><div class=\"wrap hero-grid\"><div class=\"hero-copy\"><span class=\"zone-badge\"><i></i>Atendiendo " + zone + "</span><p class=\"eyebrow\">" + service + "</p><h1>" + headline + "</h1><p class=\"lead\">" + subheadline + "</p><div class=\"hero-actions\"><a class=\"button\" href=\"#lead-form\">" + cta + "</a><a class=\"button secondary\" href=\"#proceso\">Ver cómo funciona</a></div>" + trustPills + media + "</div>" + form + "</div></section>",
+    "<main><section class=\"hero\"><div class=\"hero-art\" aria-hidden=\"true\"><svg viewBox=\"0 0 240 240\" xmlns=\"http://www.w3.org/2000/svg\">" +
+    (verticalContent?.motif || "<circle cx=\"120\" cy=\"120\" r=\"70\"/>") +
+    "</svg><i class=\"orb orb-a\"></i><i class=\"orb orb-b\"></i><span class=\"ring\"></span></div><div class=\"wrap hero-grid\"><div class=\"hero-copy\"><span class=\"zone-badge\"><i></i>Atendiendo " + zone + "</span><p class=\"eyebrow\">" + service + "</p><h1 data-edit=\"headline\">" + headline + "</h1><p class=\"lead\" data-edit=\"sub\">" + subheadline + "</p><div class=\"hero-actions\"><a class=\"button\" href=\"#lead-form\" data-edit=\"cta\">" + cta + "</a><a class=\"button secondary\" href=\"#proceso\">Ver cómo funciona</a></div>" + trustPills + media + "</div>" + form + "</div></section>",
     statsSection,
     architectureSections[brief.architecture],
     renderedSections,
     compareSection,
     "<section class=\"section final-cta\"><div class=\"wrap\"><p class=\"eyebrow\">SIGUIENTE PASO</p><h2>" + esc(cap(clean(brief.result || "Una respuesta clara y un siguiente paso útil"))) + "</h2><p>Dos minutos de contexto por tu parte. Una revisión honesta por la nuestra. Sin compromiso hasta que veas la propuesta.</p><a class=\"button\" href=\"#lead-form\">" + cta + "</a></div></section></main>",
-    "<footer class=\"site-footer\"><div class=\"wrap footer-grid\"><div><b>" + legalIdentity + "</b><br>" + service + " · " + zone + "</div><nav>" + legalLinks + consentManager + "</nav></div></footer>",
+    "<footer class=\"site-footer\"><div class=\"wrap footer-grid\"><div>" + (isRedVitalia && !logoUrl ? "<div class=\"footer-logo\">" + rvLogo("#0f172a").replace("rvlg", "rvlgf") + "</div>" : "") + "<b>" + legalIdentity + "</b><br>" + service + " · " + zone + "</div><nav>" + legalLinks + consentManager + "</nav></div></footer>",
     "<a class=\"button mobile-cta\" href=\"#lead-form\">" + cta + "</a>",
     consentBanner,
     "<noscript><div class=\"wrap\" role=\"alert\">Necesitas JavaScript para confirmar el estado del envío. También puedes usar el formulario con su destino configurado.</div></noscript>",
