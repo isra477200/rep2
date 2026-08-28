@@ -62,7 +62,7 @@ const enVivo = items.filter((a) => a.capturaEnVivo).length;
 const pct = (n) => Math.round((n / items.length) * 100);
 
 const data = {
-  generatedAt: "23/08/2026",
+  generatedAt: new Date().toLocaleDateString("es-ES"),
   nota: "Análisis calculado sobre los " + items.length + " anuncios reales transcritos (galerías + capturas en vivo). Los porcentajes salen del texto literal de cada pieza.",
   total: items.length,
   enVivo,

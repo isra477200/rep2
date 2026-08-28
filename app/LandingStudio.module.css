@@ -1742,3 +1742,29 @@
   .examplesHeader > span { text-align: left; }
   .fullscreen > header { flex-wrap: wrap; }
 }
+
+/* ── Munición del mercado ─────────────────────────────────────────────── */
+.ammoBoard { background: #fff; border: 1px solid #d9e0e9; border-radius: 18px; padding: 26px 28px; margin-top: 18px; }
+.ammoNote { color: #596579; font-size: 13.5px; max-width: 72ch; }
+.ammoApply { align-self: flex-start; background: #0b57d0; color: #fff; border: 0; border-radius: 11px; padding: 12px 20px; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap; }
+.ammoApply:hover { background: #0a4cb8; }
+.ammoColumns { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 18px; }
+.ammoColumns h3 { font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: #596579; margin: 0 0 10px; }
+.ammoQuote { display: block; width: 100%; text-align: left; background: #f5f7fa; border: 1px solid #d9e0e9; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; cursor: pointer; transition: border-color .15s, background .15s; }
+.ammoQuote:hover { border-color: #0b57d0; background: #eef4ff; }
+.ammoQuote span { display: block; font-size: 13.5px; line-height: 1.5; color: #111827; }
+.ammoQuote small { display: block; margin-top: 6px; color: #596579; font-size: 11.5px; }
+.ammoEmpty { color: #596579; font-size: 13px; }
+
+.ammoActions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.autoBuild { background: linear-gradient(135deg, #0b57d0, #063a8f); color: #fff; border: 0; border-radius: 11px; padding: 13px 22px; font-weight: 800; font-size: 14.5px; cursor: pointer; white-space: nowrap; box-shadow: 0 8px 22px rgba(11, 87, 208, 0.32); transition: transform .15s, box-shadow .15s; }
+.autoBuild:hover { transform: translateY(-1px); box-shadow: 0 12px 28px rgba(11, 87, 208, 0.4); }
+
+.compareTriple { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 14px 16px 16px; }
+.compareTriple figure { margin: 0; border: 1px solid var(--studio-line); border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 8px 24px rgba(32, 56, 91, 0.08); }
+.compareTriple figcaption { padding: 10px 14px; font-size: 12px; font-weight: 850; letter-spacing: 0.08em; color: #0a63ca; border-bottom: 1px solid var(--studio-line); background: #f6f9fd; }
+.compareTriple iframe { display: block; width: 100%; height: 640px; border: 0; background: #fff; }
+@media (max-width: 1100px) { .compareTriple { grid-template-columns: 1fr; } }
+
+.packButton { background: #0f7a52 !important; }
+.packButton:hover { background: #0c6141 !important; }

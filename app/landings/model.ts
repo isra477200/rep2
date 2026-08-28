@@ -17,7 +17,7 @@ export type LandingAngle =
 
 export type LandingTone = "direct" | "consultative" | "premium";
 export type LandingCtaMode = "whatsapp" | "phone" | "calendar";
-export type LandingVariant = "a" | "b";
+export type LandingVariant = "a" | "b" | "c";
 export type LandingObjective = "qualified" | "booking" | "quote" | "contact";
 export type LandingTrafficSource = "meta" | "google" | "organic" | "outbound" | "mixed";
 export type LandingAwareness = "cold" | "warm" | "hot";
@@ -70,6 +70,8 @@ export type LandingBrief = {
   evidencePlan: LandingEvidencePlan | null;
   verticalId: string;
   brand: string;
+  headlineOverride: string;
+  marketStats: Array<{ value: string; label: string }>;
   zone: string;
   service: string;
   audience: string;
@@ -984,6 +986,8 @@ export const defaultBrief = (verticalId = "clinicas-salud"): LandingBrief => {
     evidencePlan: null,
     verticalId,
     brand: "RedVitalia",
+    headlineOverride: "",
+    marketStats: [],
     zone: "tu zona",
     service: preset.service,
     audience: preset.audience,
@@ -1292,11 +1296,18 @@ export const applyAutomotiveIntent = (
 };
 
 const headlineFor = (brief: LandingBrief) => {
+  if (clean(brief.headlineOverride)) return clean(brief.headlineOverride);
   const zone = clean(brief.zone) || "tu zona";
   const result = clean(brief.result) || "más oportunidades que encajan";
   const service = clean(brief.service) || "captación de oportunidades";
   if (brief.variant === "b")
     return `Deja atrás ${clean(brief.pain) || "la captación imprevisible"}`;
+  if (brief.variant === "c") {
+    const unit = clean(brief.unit) || "clientes";
+    return clean(brief.guarantee)
+      ? `${capitalize(unit)} en ${zone}, con compromiso por escrito`
+      : `${capitalize(service)} en ${zone}, con condiciones por delante`;
+  }
   if (brief.angle === "territory") return `Comprueba el potencial de ${service} en ${zone}`;
   if (brief.angle === "speed") return `Convierte cada solicitud en una conversación mientras aún importa`;
   if (brief.angle === "risk") return `Evalúa ${service} con condiciones claras antes de invertir`;
@@ -1306,6 +1317,10 @@ const headlineFor = (brief: LandingBrief) => {
 
 const subheadlineFor = (brief: LandingBrief) => {
   if (brief.variant === "b") return `${capitalize(brief.result)} mediante un proceso visible de filtro, entrega y seguimiento.`;
+  if (brief.variant === "c")
+    return clean(brief.guarantee)
+      ? `${capitalize(brief.offer)} Y si no se cumple lo pactado, el compromiso está firmado: ${clean(brief.guarantee)}`
+      : `${capitalize(brief.offer)} Alcance, precio y responsabilidades se firman antes de empezar, no después.`;
   if (brief.tone === "direct") return `${capitalize(brief.offer)} Sin rodeos: sabrás qué entra, qué se mide y cuál es el siguiente paso.`;
   if (brief.tone === "premium") return `${capitalize(brief.offer)} Una experiencia cuidada desde el primer contacto hasta la conversación comercial.`;
   return `${capitalize(brief.offer)} Alcance, responsabilidades y medición quedan claros antes de lanzar.`;
@@ -1314,6 +1329,7 @@ const subheadlineFor = (brief: LandingBrief) => {
 const automotiveSubheadlineFor = (brief: LandingBrief, playbook: AutomotiveIntentPlaybook) => {
   const offer = capitalize(playbook.offer);
   if (brief.variant === "b") return `${offer} Antes de cancelar, firmar o asumir un coste, sabrás qué documentación y qué siguiente paso requiere tu caso.`;
+  if (brief.variant === "c") return `${offer} Cada condición queda por escrito antes de mover tu expediente; sin sorpresas después de firmar.`;
   if (brief.tone === "direct") return `${offer} Una respuesta basada en vehículo, carga y documentación disponible; sin prometer una compra antes de comprobarlo.`;
   if (brief.tone === "premium") return `${offer} Revisamos cada condición con criterio y te explicamos con precisión si merece la pena avanzar.`;
   return `${offer} Primero aclaramos la viabilidad; después te explicamos condiciones, responsables y siguiente paso.`;

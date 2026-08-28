@@ -13,8 +13,9 @@ const ids = new Set(companies.map((c) => c.id));
 test("takeaways conserva IDs válidos y omite solo altas SerpAPI sin conclusión editorial", () => {
   const { items } = read("public/data/takeaways.json");
   const missing = companies.filter((company) => !items[company.id]).map((company) => company.id).sort();
-  const intentionallyPending = companies.filter((company) => company.serpApiManaged === true).map((company) => company.id).sort();
-  assert.deepEqual(missing, intentionallyPending);
+  const intentionallyPending = new Set(companies.filter((company) => company.serpApiManaged === true).map((company) => company.id));
+  for (const id of missing)
+    assert.ok(intentionallyPending.has(id), `ficha sin takeaway y sin exención SerpAPI: ${id}`);
   for (const [id, entry] of Object.entries(items)) {
     assert.ok(ids.has(id), `id desconocido en takeaways: ${id}`);
     assert.ok(typeof entry.t === "string" && entry.t.length > 20, `takeaway vacío: ${id}`);

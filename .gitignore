@@ -43,3 +43,6 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
+
+# Build cache de TypeScript: se regenera en cada build
+tsconfig.tsbuildinfo

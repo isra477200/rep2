@@ -218,7 +218,7 @@ export type Vertical = {
   estacionalidad: string;
   guionApertura: string;
 };
-export type VerticalesData = { generatedAt: string; nota: string; verticales: Vertical[] };
+export type VerticalesData = { generatedAt: string; nota: string; verticales: Vertical[]; map?: Record<string, string> };
 
 export type GarantiaItem = { id: string; name: string; country: string; score: number; text: string; kinds: string[]; fuerza: number; coste: number };
 export type TitularItem = { id: string; name: string; country: string; score: number; headline: string; formulas: string[] };
@@ -1050,4 +1050,23 @@ export type MysteryData = {
   flow: string[];
   registryTemplate: string[];
   targets: Array<{ order: number; id: string; name: string; website: string; threat: string; agencyType: string; identity: string; focus: string; priceRef: string; hipotesis?: string[] }>;
+};
+
+export type DataManifest = {
+  schema: string;
+  generatedAt: string;
+  revision: string;
+  universe: { companies: number; representedPrimaryMarkets: number; territorialAtlasStates: number; media: number };
+  deepSnapshot: { companies: number; publicPrices: number; sources: number; media: number; status: string };
+  visualIdentitySnapshot: { entries: number; authentic: number };
+  advertising: {
+    companiesWithEvidence: number;
+    searchablePieces: number;
+    searchableTranscriptions: number;
+    verifiedTranscriptions: number;
+    patternReady: number;
+    representedAdvertisers: number;
+    [extra: string]: number;
+  };
+  scopeNotes: string[];
 };

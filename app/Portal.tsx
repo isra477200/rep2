@@ -25,6 +25,7 @@ import type {
   AdsKitData,
   Analytics,
   AngulosData,
+  DataManifest,
   AnuncioReal,
   AnunciosRealesData,
   ArsenalData,
@@ -64,10 +65,12 @@ const PositioningSimulator = lazy(() => import("./PositioningSimulator"));
 const RecordDetail = lazy(() => import("./RecordDetail"));
 const EditorialText = lazy(() => import("./EditorialText"));
 const LandingStudio = lazy(() => import("./LandingStudio"));
+const BusinessDossier = lazy(() => import("./BusinessDossier"));
 const GalleryExplorer = lazy(() => import("./GalleryExplorer"));
 
 type View =
   | "home"
+  | "negocio"
   | "operations"
   | "exec"
   | "resources"
@@ -113,7 +116,8 @@ type OptionalResourceKey =
   | "homesTimeline"
   | "cruces"
   | "anunciosReales"
-  | "angulos";
+  | "angulos"
+  | "manifest";
 
 type ResourceLoadState = "loading" | "ready" | "error";
 
@@ -139,6 +143,7 @@ const requiredResourcesByView: Partial<
 
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
+  { id: "negocio", label: "Dossier de negocio", icon: "€" },
   { id: "operations", label: "Campañas", icon: "◆" },
   { id: "exec", label: "Ejecutar", icon: "▸" },
   { id: "resources", label: "Recursos", icon: "⤓" },
@@ -167,7 +172,7 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
+  { label: "Acción", ids: ["negocio", "operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "countries", "ads", "compare"] },
   { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
@@ -303,6 +308,7 @@ export default function Portal() {
     [cruces, setCruces] = useState<CrucesData | null>(null),
     [anunciosReales, setAnunciosReales] = useState<AnunciosRealesData | null>(null),
     [angulos, setAngulos] = useState<AngulosData | null>(null),
+    [manifest, setManifest] = useState<DataManifest | null>(null),
     [resourceLoadState, setResourceLoadState] = useState<
       Partial<Record<OptionalResourceKey, ResourceLoadState>>
     >({});
@@ -598,6 +604,14 @@ export default function Portal() {
         },
       },
       {
+        key: "manifest",
+        views: ["home", "arsenal", "adlab", "audit", "informe"],
+        load: async () => {
+          const data = await optionalJson<DataManifest>("/data/data-manifest.json");
+          if (!controller.signal.aborted) setManifest(data);
+        },
+      },
+      {
         key: "angulos",
         views: ["arsenal", "informe"],
         load: async () => {
@@ -861,7 +875,7 @@ export default function Portal() {
     lines.push(`3. PATRONES DE LOS REFERENTES CON SCORE 80+`);
     (patterns?.findings || []).slice(0, 4).forEach((f) => lines.push(`· ${f.title} (${f.stat}): ${f.detail}`));
     lines.push("");
-    lines.push(`4. LO QUE DICEN ${fmt(angulos?.total || 0)} ANUNCIOS REALES`);
+    lines.push(`4. LO QUE DICEN ${fmt(angulos?.total || 0)} ANUNCIOS CURADOS${manifest ? ` (corpus buscable: ${fmt(manifest.advertising.searchablePieces)} piezas de ${fmt(manifest.advertising.representedAdvertisers)} anunciantes)` : ""}`);
     (angulos?.findings || []).forEach((f) => lines.push(`· ${f}`));
     lines.push("");
     lines.push(`5. AMENAZAS EN ESPAÑA`);
@@ -873,7 +887,7 @@ export default function Portal() {
     lines.push("");
     lines.push(`Fuente: portal Inteligencia Mundial de Captación · RedVitalia. Cada dato es trazable a su ficha.`);
     return lines.join("\n");
-  }, [companies, vigilancia, cruces, patterns, angulos, execution]);
+  }, [companies, vigilancia, cruces, patterns, angulos, execution, manifest]);
   /* Generador heredado conservado temporalmente como referencia histórica.
      La vista activa usa LandingStudio y el corpus site-captures. */
   /*
@@ -1676,7 +1690,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                     {!navCollapsed && item.id === "companies" && <b>{fmt(companies.length)}</b>}
                     {!navCollapsed && item.id === "countries" && <b>195</b>}
                     {!navCollapsed && item.id === "ads" && <b>{fmt(galleryMetrics.media)}</b>}
-                    {!navCollapsed && item.id === "arsenal" && anunciosReales && <b>{fmt(anunciosReales.total)}</b>}
+                    {!navCollapsed && item.id === "arsenal" && (manifest || anunciosReales) && <b>{fmt(manifest?.advertising.searchablePieces ?? anunciosReales!.total)}</b>}
                     {!navCollapsed && item.id === "watch" && vigilancia && <b>{vigilancia.semaforo.filter((s) => s.nivel === "rojo").length}</b>}
                   </button>
                 );
@@ -1901,7 +1915,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 ["cruces", "⤫", "Cruces", `${cruces ? cruces.findings.length : resourceLoadState.cruces === "error" ? "n/d" : "…"} hallazgos · 12 análisis cruzados`],
                 ["landings", "▭", "Landings", "Estudio real → blueprint → landing completa y medible"],
                 ["adlab", "⌗", "Laboratorio de anuncios", "Busca copy, cruza patrones y crea matrices de test trazables"],
-                ["arsenal", "⚑", `Arsenal · ${anunciosReales ? fmt(anunciosReales.total) : resourceLoadState.anunciosReales === "error" ? "n/d" : "…"} anuncios`, "Garantías, titulares y anuncios reales buscables"],
+                ["arsenal", "⚑", `Arsenal · ${manifest ? fmt(manifest.advertising.searchablePieces) : anunciosReales ? fmt(anunciosReales.total) : resourceLoadState.anunciosReales === "error" ? "n/d" : "…"} anuncios`, "Garantías, titulares y el corpus publicitario completo"],
                 ["watch", "◔", `Vigilancia · ${vigilancia ? vigilancia.semaforo.filter((s) => s.nivel === "rojo").length : resourceLoadState.vigilancia === "error" ? "n/d" : "…"} en rojo`, "Semáforo España con fragilidad y contradicciones"],
                 ["exec", "▸", "Ejecutar", `${execution ? execution.actions.length : resourceLoadState.execution === "error" ? "n/d" : "…"} acciones priorizadas con estado`],
               ] as Array<[View, string, string, string]>).map(([id, icon, title, sub]) => (
@@ -2660,7 +2674,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   <p className="eyebrow">ANUNCIOS · UNA ÚNICA FUENTE DE VERDAD</p>
                   <h2>El explorador completo vive ahora en el Laboratorio</h2>
                   <p className="insights-note">
-                    La nueva vista reúne OCR exhaustivo, idioma original, traducción al español, país, plataforma, evidencia y patrones en un solo sistema de filtros.
+                    {manifest
+                      ? `${fmt(manifest.advertising.searchablePieces)} piezas buscables de ${fmt(manifest.advertising.representedAdvertisers)} anunciantes (${fmt(manifest.advertising.verifiedTranscriptions)} transcripciones verificadas), con OCR, idioma original, traducción, país, plataforma, evidencia y patrones en un solo sistema de filtros.`
+                      : "La nueva vista reúne OCR exhaustivo, idioma original, traducción al español, país, plataforma, evidencia y patrones en un solo sistema de filtros."}
                   </p>
                 </div>
                 <button className="res-copy" onClick={() => setView("adlab")}>Abrir Laboratorio de anuncios</button>
@@ -2716,6 +2732,12 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
         {viewResourcesReady && view === "landings" && (
           <Suspense fallback={<div className="loading">Preparando el estudio de landings…</div>}>
             <LandingStudio verticales={verticales} logos={logos} />
+          </Suspense>
+        )}
+
+        {viewResourcesReady && view === "negocio" && (
+          <Suspense fallback={<div className="loading">Montando el dossier de negocio…</div>}>
+            <BusinessDossier />
           </Suspense>
         )}
 
@@ -4701,18 +4723,14 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 <p>Fichas canónicas actuales y Estados incluidos en el universo territorial.</p>
               </article>
               <article>
-                <span>MEDIOS VERIFICADOS</span>
+                <span>MEDIOS SERVIDOS / SNAPSHOT PROFUNDO</span>
                 <strong>
-                  {fmt(summary.media)} /{" "}
-                  {fmt(
-                    summary.media +
-                      summary.mediaFailed +
-                      summary.technicalArtifactsExcluded,
-                  )}
+                  {fmt(manifest?.universe.media ?? summary.media)} /{" "}
+                  {fmt(manifest?.deepSnapshot.media ?? summary.media)}
                 </strong>
                 <p>
-                  Disponibles frente a 3.979 declarados; 5 no recuperables y 17
-                  rastros excluidos.
+                  Archivos de galería servidos hoy frente a los verificados en el
+                  snapshot profundo de {fmt(manifest?.deepSnapshot.companies ?? summary.companies)} fichas.
                 </p>
               </article>
               <article>

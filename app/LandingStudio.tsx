@@ -3,7 +3,10 @@
 
 import { useEffect, useMemo, useState } from "react";
 import CompanyLogo from "./CompanyLogo";
-import type { LogoManifest, VerticalesData } from "./data-types";
+import type { ArsenalData, CrucesData, LogoManifest, VerticalesData } from "./data-types";
+import { applyMarketAmmo, buildMarketAmmo } from "./landings/market-ammo";
+import { buildZip } from "./landings/zip";
+import { kitToText, type Kit } from "./kit-text";
 import {
   ANGLES,
   ARCHITECTURES,
@@ -45,8 +48,7 @@ const safeParse = (raw: string | null): LandingBrief | null => {
   }
 };
 
-const download = (filename: string, content: string, type: string) => {
-  const blob = new Blob([content], { type });
+const downloadBlob = (filename: string, blob: Blob) => {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
@@ -56,6 +58,15 @@ const download = (filename: string, content: string, type: string) => {
   link.remove();
   URL.revokeObjectURL(url);
 };
+
+const download = (filename: string, content: string, type: string) =>
+  downloadBlob(filename, new Blob([content], { type }));
+
+const VARIANT_META = [
+  ["a", "A · Resultado", "resultado"],
+  ["b", "B · Dolor", "dolor"],
+  ["c", "C · Compromiso", "compromiso"],
+] as const;
 
 const slug = (value: string) =>
   value
@@ -107,9 +118,12 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const [studyVerticalId, setStudyVerticalId] = useState("clinicas-salud");
   const [hydrated, setHydrated] = useState(false);
   const [intelligence, setIntelligence] = useState<LandingIntelligence | null>(null);
+  const [arsenalData, setArsenalData] = useState<ArsenalData | null>(null);
+  const [crucesData, setCrucesData] = useState<CrucesData | null>(null);
   const [intelligenceError, setIntelligenceError] = useState(false);
   const [activeSection, setActiveSection] = useState<EditorSection>("strategy");
   const [device, setDevice] = useState<Device>("desktop");
+  const [compare, setCompare] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
   const [toast, setToast] = useState("");
   const [visibleExamples, setVisibleExamples] = useState(4);
@@ -125,6 +139,14 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
       }
       if (active) setHydrated(true);
     });
+    fetch("/data/arsenal.json")
+      .then((response) => (response.ok ? (response.json() as Promise<ArsenalData>) : null))
+      .then((value) => { if (active && value) setArsenalData(value); })
+      .catch(() => {});
+    fetch("/data/cruces.json")
+      .then((response) => (response.ok ? (response.json() as Promise<CrucesData>) : null))
+      .then((value) => { if (active && value) setCrucesData(value); })
+      .catch(() => {});
     fetch("/data/landing-intelligence.json", { cache: "no-store" })
       .then((response) => (response.ok ? (response.json() as Promise<LandingIntelligence>) : null))
       .then((value) => {
@@ -184,7 +206,19 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     }));
   const selectVertical = (verticalId: string) => {
     setPreviousBrief(brief);
-    setBrief((current) => ({ ...current, verticalId, intent: "vertical-default", activeRecipeId: "", evidencePlan: null, leadEndpointVerified: false, trackingVerified: false }));
+    setBrief((current) => ({
+      ...current,
+      verticalId,
+      intent: "vertical-default",
+      activeRecipeId: "",
+      evidencePlan: null,
+      leadEndpointVerified: false,
+      trackingVerified: false,
+      // Las piezas que venían del estudio del vertical anterior se retiran para no mezclar datos.
+      marketStats: [],
+      proof: ammo && current.proof === ammo.proofLine ? "" : current.proof,
+      guarantee: ammo && current.guarantee === ammo.guaranteeSuggestion ? "" : current.guarantee,
+    }));
     setStudyVerticalId(verticalId);
     setVisibleExamples(4);
     setToast("Vertical cambiado; hemos mantenido tu contenido");
@@ -193,6 +227,38 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     setPreviousBrief(brief);
     setBrief((current) => applyVerticalPreset(current, current.verticalId));
     setToast("Contenido base del vertical cargado; puedes deshacerlo");
+  };
+
+  const ammo = useMemo(
+    () => buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit),
+    [brief.verticalId, brief.unit, verticales, arsenalData, crucesData],
+  );
+  useEffect(() => {
+    if (!hydrated || !ammo) return;
+    setBrief((current) => {
+      if (current.verticalId !== ammo.verticalId) return current;
+      const wantsCopy = !current.proof.trim() && !current.guarantee.trim();
+      const wantsStats = !(current.marketStats || []).length && ammo.stats.length > 0;
+      if (wantsCopy) return applyMarketAmmo(current, ammo);
+      if (wantsStats) return { ...current, marketStats: ammo.stats };
+      return current;
+    });
+  }, [ammo, hydrated]);
+
+  const autoBuild = () => {
+    setPreviousBrief(brief);
+    setBrief((current) => {
+      let next = applyVerticalPreset({ ...current, intent: "vertical-default" as LandingBrief["intent"] }, studyVerticalId);
+      const recommendation = buildStrategyRecommendation(next, verticalIntel);
+      next = applyStrategyRecommendation(next, recommendation);
+      const recipes = buildEvidenceRecipes(verticalIntel, intelligence?.universal, next);
+      if (recipes[0]) next = applyEvidenceRecipe(next, recipes[0]);
+      const freshAmmo = buildMarketAmmo(studyVerticalId, verticales, arsenalData, crucesData, next.unit);
+      if (freshAmmo) next = applyMarketAmmo(next, freshAmmo);
+      return next;
+    });
+    setActiveSection("conversion");
+    setToast("Landing completa montada con el estudio del vertical; queda destino, endpoint y datos legales");
   };
 
   const html = useMemo(() => buildLandingHtml(brief), [brief]);
@@ -218,6 +284,16 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   );
   const variantA = useMemo(() => landingCopyPreview({ ...brief, variant: "a" }), [brief]);
   const variantB = useMemo(() => landingCopyPreview({ ...brief, variant: "b" }), [brief]);
+  const variantC = useMemo(() => landingCopyPreview({ ...brief, variant: "c" }), [brief]);
+  const compareHtml = useMemo(
+    () =>
+      compare
+        ? VARIANT_META.map(([variant]) =>
+            buildLandingHtml({ ...brief, variant, leadEndpoint: "", gtmId: "" }),
+          )
+        : null,
+    [brief, compare],
+  );
   const landingCount = intelligence?.universal.roles.landing || 0;
   const exactAutomotiveIntent = brief.verticalId === "coches-motor" && brief.intent !== "vertical-default";
   const automotivePlaybook = brief.intent !== "vertical-default" ? AUTOMOTIVE_INTENTS[brief.intent] : null;
@@ -232,6 +308,55 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     </div>
   );
   const filename = `landing-${slug(brief.service)}-${slug(brief.zone)}.html`;
+  const downloadPack = async () => {
+    const files = VARIANT_META.map(([variant, , suffix]) => ({
+      name: `landing-${variant}-${suffix}-${slug(brief.zone)}.html`,
+      content: buildLandingHtml({ ...brief, variant }),
+    }));
+    files.push({ name: "brief.json", content: JSON.stringify(brief, null, 2) });
+    // Kit de salida al mercado del vertical (guiones, emails, Google/Meta Ads con prompts).
+    let kitIncluido = false;
+    try {
+      const response = await fetch("/data/dossier.json", { cache: "no-store" });
+      if (response.ok) {
+        const dossier = (await response.json()) as { verticales?: Array<{ id: string; label: string; kit?: Kit }> };
+        const entry = (dossier.verticales || []).find((item) => item.id === brief.verticalId);
+        if (entry?.kit) {
+          files.push({ name: `kit-campana-redvitalia-${entry.id}.txt`, content: kitToText(entry.label, entry.kit) });
+          kitIncluido = true;
+        }
+      }
+    } catch {
+      /* Sin dossier el pack sigue siendo válido. */
+    }
+    files.push({
+      name: "LEEME.txt",
+      content: [
+        `PACK DE CAMPAÑA · ${brief.brand} · ${brief.service} · ${brief.zone}`,
+        "",
+        "Contenido:",
+        "- landing-a-resultado: el hero vende el resultado.",
+        "- landing-b-dolor: el hero abre con el problema que reconoce el cliente.",
+        "- landing-c-compromiso: el hero pone la garantía y las condiciones por delante.",
+        "- brief.json: configuración completa; se puede volver a cargar en el Landing Studio.",
+        ...(kitIncluido ? ["- kit-campana-redvitalia: guiones de llamada fría y closer, emails, campaña Google Ads y campaña Meta Ads con los prompts de imagen (los genera ChatGPT)."] : []),
+        "",
+        "Antes de publicar:",
+        "1. Endpoint HTTPS del CRM configurado y probado con una respuesta 2xx.",
+        "2. GTM con el evento de conversión comprobado en Preview (sin datos personales).",
+        "3. URLs reales de privacidad y cookies + responsable legal en el footer.",
+        "4. Destino del CTA (WhatsApp, teléfono o calendario) verificado a mano.",
+        "",
+        "Cómo testar: misma campaña, mismo presupuesto, reparto 50/50 entre dos variantes",
+        "como máximo; una sola variable por test. La tercera variante entra cuando haya",
+        "un ganador claro. Sin datos propios de conversión, ninguna variante 'gana' de serie.",
+      ].join("\n"),
+    });
+    downloadBlob(`pack-${slug(brief.service)}-${slug(brief.zone)}.zip`, buildZip(files));
+    setToast(kitIncluido
+      ? "Pack descargado: 3 landings + brief + kit completo de campaña (guiones, emails y ads)"
+      : "Pack de campaña descargado: 3 variantes + brief + instrucciones");
+  };
 
   return (
     <div className={styles.studio}>
@@ -371,6 +496,75 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
           ))}
         </div>
       </section>
+
+      {ammo && (
+        <section className={styles.ammoBoard} aria-labelledby="landing-ammo-title">
+          <header className={styles.studyHeader}>
+            <div>
+              <p>01B · MUNICIÓN DEL MERCADO</p>
+              <h2 id="landing-ammo-title">Rellena el brief con lo mejor de {ammo.label}</h2>
+              <p className={styles.ammoNote}>
+                {ammo.n} competidores analizados{ammo.spainN ? ` (${ammo.spainN} en España)` : ""}
+                {ammo.medianEur ? ` · mediana de mercado ${ammo.medianEur} €/mes` : ""}
+                {ammo.slaTop ? ` · SLA más agresivo: ${ammo.slaTop.name} (${ammo.slaTop.sla})` : ""}. Cada pieza cita su fuente.
+              </p>
+            </div>
+            <div className={styles.ammoActions}>
+              <button type="button" className={styles.autoBuild} onClick={autoBuild}>
+                ⚡ Montar landing completa (1 clic)
+              </button>
+              <button
+                type="button"
+                className={styles.ammoApply}
+                onClick={() => {
+                  setBrief((current) => applyMarketAmmo(current, ammo));
+                  setToast("Prueba, garantía y cifras inyectadas desde el estudio del vertical");
+                }}
+              >
+                Inyectar munición en el brief
+              </button>
+            </div>
+          </header>
+          <div className={styles.ammoColumns}>
+            <div>
+              <h3>Garantías reales del vertical (clic para usar como base)</h3>
+              {ammo.guarantees.length === 0 && <p className={styles.ammoEmpty}>Sin garantías fuertes registradas en este vertical.</p>}
+              {ammo.guarantees.map((quote) => (
+                <button
+                  key={quote.company + quote.text.slice(0, 24)}
+                  type="button"
+                  className={styles.ammoQuote}
+                  onClick={() => {
+                    update("guarantee", quote.text);
+                    setToast(`Garantía tomada de ${quote.company} — reescríbela a tu forma antes de publicar`);
+                  }}
+                >
+                  <span>“{quote.text}”</span>
+                  <small>{quote.company}{quote.extra ? ` · ${quote.extra}` : ""}</small>
+                </button>
+              ))}
+            </div>
+            <div>
+              <h3>Titulares ganadores del vertical (clic para ponerlo en el hero)</h3>
+              {ammo.headlines.length === 0 && <p className={styles.ammoEmpty}>Sin titulares de referentes 80+ en este vertical.</p>}
+              {ammo.headlines.map((quote) => (
+                <button
+                  key={quote.company + quote.text.slice(0, 24)}
+                  type="button"
+                  className={styles.ammoQuote}
+                  onClick={() => {
+                    update("headlineOverride", quote.text);
+                    setToast(`Titular de ${quote.company} puesto en el hero — reescríbelo a tu marca antes de publicar`);
+                  }}
+                >
+                  <span>“{quote.text}”</span>
+                  <small>{quote.company}{quote.extra ? ` · ${quote.extra}` : ""}</small>
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className={styles.recipeSection} aria-labelledby="landing-recipes-title">
         <header>
@@ -576,8 +770,9 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               <div className={styles.variantCompare}>
                 <button type="button" className={brief.variant === "a" ? styles.selected : ""} onClick={() => update("variant", "a")}><span>A · RESULTADO</span><b>{variantA.headline}</b><small>{variantA.cta}</small></button>
                 <button type="button" className={brief.variant === "b" ? styles.selected : ""} onClick={() => update("variant", "b")}><span>B · DOLOR</span><b>{variantB.headline}</b><small>{variantB.cta}</small></button>
+                <button type="button" className={brief.variant === "c" ? styles.selected : ""} onClick={() => update("variant", "c")}><span>C · COMPROMISO</span><b>{variantC.headline}</b><small>{variantC.cta}</small></button>
               </div>
-              <p className={styles.helper}>A y B cambian únicamente el encuadre del hero. Arquitectura, oferta, prueba y CTA permanecen iguales para que el test sea interpretable.</p>
+              <p className={styles.helper}>A, B y C cambian únicamente el encuadre del hero. Arquitectura, oferta, prueba y CTA permanecen iguales para que el test sea interpretable. C brilla cuando hay garantía real.</p>
             </div>
           ) : null}
 
@@ -588,6 +783,10 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                 <label>Zona<input value={brief.zone} onChange={(event) => update("zone", event.target.value)} placeholder="Madrid, España…" /></label>
               </div>
               <label>Servicio<input value={brief.service} onChange={(event) => update("service", event.target.value)} /></label>
+              <label>Titular personalizado (opcional)<input value={brief.headlineOverride} onChange={(event) => update("headlineOverride", event.target.value)} placeholder="Vacío = titular generado según ángulo y variante" /></label>
+              {brief.headlineOverride.trim() ? (
+                <div className={styles.presetNotice}><span>El titular manual manda sobre ángulo y variante en el hero.</span><button type="button" onClick={() => update("headlineOverride", "")}>Volver al titular generado</button></div>
+              ) : null}
               <label>Público<textarea value={brief.audience} onChange={(event) => update("audience", event.target.value)} /></label>
               <label>Resultado deseado<textarea value={brief.result} onChange={(event) => update("result", event.target.value)} /></label>
               <label>Problema que reconoce el cliente<textarea value={brief.pain} onChange={(event) => update("pain", event.target.value)} /></label>
@@ -602,6 +801,9 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               <label>Prueba verificable<textarea value={brief.proof} onChange={(event) => update("proof", event.target.value)} placeholder="Caso, reseña o dato con empresa, periodo y fuente. Si lo dejas vacío, el bloque desaparece." /></label>
               <label>Precio o rango publicado<input value={brief.price} onChange={(event) => update("price", event.target.value)} placeholder="Ej. Desde 690 €/mes + inversión" /></label>
               <label>Garantía o compromiso contractual<textarea value={brief.guarantee} onChange={(event) => update("guarantee", event.target.value)} placeholder="Métrica, periodo, exclusiones y remedio. Si no existe, déjalo vacío." /></label>
+              {brief.marketStats?.length ? (
+                <div className={styles.presetNotice}><span>Banda “El mercado, en cifras” activa con {brief.marketStats.length} datos del estudio del vertical.</span><button type="button" onClick={() => update("marketStats", [])}>Quitar banda de cifras</button></div>
+              ) : null}
               <p className={styles.helper}>La página pública nunca mostrará “por configurar”. Los bloques sin respaldo se eliminan automáticamente.</p>
             </div>
           ) : null}
@@ -643,14 +845,30 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
           <header className={styles.previewToolbar}>
             <div><span>04 · VALIDAR EN CONTEXTO</span><b>{ARCHITECTURES.find((item) => item.id === brief.architecture)?.label}</b></div>
             <div className={styles.previewActions}>
-              <div className={styles.segmented}><button className={device === "desktop" ? styles.active : ""} onClick={() => setDevice("desktop")}>Escritorio</button><button className={device === "mobile" ? styles.active : ""} onClick={() => setDevice("mobile")}>Móvil</button></div>
+              <div className={styles.segmented}><button className={!compare && device === "desktop" ? styles.active : ""} onClick={() => { setCompare(false); setDevice("desktop"); }}>Escritorio</button><button className={!compare && device === "mobile" ? styles.active : ""} onClick={() => { setCompare(false); setDevice("mobile"); }}>Móvil</button><button className={compare ? styles.active : ""} onClick={() => setCompare((current) => !current)}>Comparar A/B/C</button></div>
               <button className={styles.iconButton} onClick={() => setFullscreen(true)} aria-label="Abrir vista previa a pantalla completa">⛶</button>
             </div>
           </header>
-          {preview}
+          {compare && compareHtml ? (
+            <div className={styles.compareTriple}>
+              {VARIANT_META.map(([variant, label], index) => (
+                <figure key={variant}>
+                  <figcaption>{label}{brief.variant === variant ? " · activa" : ""}</figcaption>
+                  <iframe
+                    title={`Variante ${label}`}
+                    srcDoc={compareHtml[index]}
+                    sandbox="allow-scripts allow-forms allow-popups"
+                  />
+                </figure>
+              ))}
+            </div>
+          ) : (
+            preview
+          )}
           <div className={styles.exportBar}>
             <div><span>ESTADO</span><b>{publishReady ? "Sin bloqueos críticos" : `${readiness.blockers.length} bloqueos por resolver`}</b><small>{publishReady ? "HTML listo para revisión humana y test." : "La exportación sigue disponible para revisión interna, pero todavía no es publicable."}</small></div>
             <div>
+              <button className={styles.packButton} onClick={downloadPack}>Descargar pack de campaña (A/B/C + brief)</button>
               <button onClick={() => download(filename, html, "text/html;charset=utf-8")}>{publishReady ? "Descargar HTML" : "Exportar versión para revisión"}</button>
               <button onClick={async () => { try { await navigator.clipboard.writeText(html); setToast("HTML copiado"); } catch { setToast("No se pudo copiar"); } }}>Copiar HTML</button>
               <button onClick={() => download(filename.replace(/\.html$/, ".json"), JSON.stringify(brief, null, 2), "application/json;charset=utf-8")}>Guardar brief</button>

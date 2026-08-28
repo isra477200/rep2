@@ -200,7 +200,7 @@ if (huecosPR.length) findings.push(`Combinaciones promesa×remedio frecuentes fu
 if (slas.length) findings.push(`${slas.length} fichas declaran SLA de contacto; el más agresivo es ${slas[0].name} (${slas[0].sla}). Un SLA firmado de 10 minutos sitúa a RedVitalia en el 1% del mercado.`);
 
 const out = {
-  generatedAt: "23/08/2026",
+  generatedAt: new Date().toLocaleDateString("es-ES"),
   nota: "Cruces calculados sobre la base canónica y el arsenal. Las lecturas se generan desde los números; nada se estima a mano.",
   elasticidadGarantia,
   titularPorVertical,

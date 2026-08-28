@@ -1,15 +1,15 @@
 {
- "generatedAt": "23/08/2026",
+ "generatedAt": "28/8/2026",
  "nota": "Cruces calculados sobre la base canónica y el arsenal. Las lecturas se generan desde los números; nada se estima a mano.",
  "elasticidadGarantia": [
   {
    "label": "Sin garantía publicada",
-   "n": 107,
-   "medianEur": 213
+   "n": 108,
+   "medianEur": 248
   },
   {
    "label": "Garantía floja (1-2)",
-   "n": 1,
+   "n": 0,
    "medianEur": null
   },
   {
@@ -195,11 +195,11 @@
   },
   {
    "pais": "Estados Unidos",
-   "n": 33,
-   "precioPublico": 52,
+   "n": 34,
+   "precioPublico": 50,
    "garantia": 97,
-   "adsActivos": 36,
-   "indice": 62
+   "adsActivos": 35,
+   "indice": 61
   },
   {
    "pais": "Reino Unido",
@@ -219,27 +219,27 @@
   },
   {
    "pais": "España",
-   "n": 388,
-   "precioPublico": 23,
-   "garantia": 70,
-   "adsActivos": 64,
-   "indice": 52
+   "n": 444,
+   "precioPublico": 20,
+   "garantia": 73,
+   "adsActivos": 66,
+   "indice": 53
   },
   {
    "pais": "Alemania",
-   "n": 16,
-   "precioPublico": 19,
+   "n": 17,
+   "precioPublico": 18,
    "garantia": 100,
-   "adsActivos": 25,
-   "indice": 48
+   "adsActivos": 24,
+   "indice": 47
   },
   {
    "pais": "Francia",
-   "n": 25,
-   "precioPublico": 20,
+   "n": 26,
+   "precioPublico": 19,
    "garantia": 88,
-   "adsActivos": 32,
-   "indice": 47
+   "adsActivos": 31,
+   "indice": 46
   },
   {
    "pais": "India",
@@ -251,7 +251,7 @@
   },
   {
    "pais": "Emiratos Árabes Unidos",
-   "n": 26,
+   "n": 27,
    "precioPublico": 15,
    "garantia": 100,
    "adsActivos": 15,
@@ -319,19 +319,19 @@
    {
     "promesa": "Genérica",
     "remedio": "Devolución",
-    "n": 83,
+    "n": 84,
     "espana": 31
    },
    {
     "promesa": "Genérica",
     "remedio": "Sin remedio explícito",
-    "n": 21,
+    "n": 18,
     "espana": 8
    },
    {
     "promesa": "Plazo",
     "remedio": "Devolución",
-    "n": 13,
+    "n": 12,
     "espana": 8
    },
    {
@@ -343,14 +343,14 @@
    {
     "promesa": "Volumen",
     "remedio": "Devolución",
-    "n": 5,
-    "espana": 1
+    "n": 6,
+    "espana": 2
    },
    {
     "promesa": "Plazo",
     "remedio": "Sin remedio explícito",
-    "n": 5,
-    "espana": 2
+    "n": 6,
+    "espana": 3
    },
    {
     "promesa": "Volumen",
@@ -379,8 +379,8 @@
    {
     "promesa": "Genérica",
     "remedio": "Seguimos gratis",
-    "n": 1,
-    "espana": 1
+    "n": 2,
+    "espana": 2
    }
   ],
   "huecosEspana": []
@@ -627,32 +627,32 @@
    {
     "rasgo": "Garantía sustancial publicada",
     "pctTop": 100,
-    "pctBase": 85
+    "pctBase": 86
    },
    {
     "rasgo": "Precio público convertible",
     "pctTop": 48,
-    "pctBase": 21
+    "pctBase": 20
    },
    {
     "rasgo": "Anuncios activos verificados",
     "pctTop": 37,
-    "pctBase": 33
+    "pctBase": 36
    },
    {
     "rasgo": "Promesa numérica en la oferta",
     "pctTop": 7,
-    "pctBase": 5
+    "pctBase": 4
    },
    {
     "rasgo": "CTA de conversión documentado",
     "pctTop": 100,
-    "pctBase": 62
+    "pctBase": 59
    },
    {
     "rasgo": "Prueba social documentada",
     "pctTop": 100,
-    "pctBase": 65
+    "pctBase": 67
    },
    {
     "rasgo": "Multi-mercado",
@@ -662,7 +662,7 @@
    {
     "rasgo": "Galería de creatividades",
     "pctTop": 48,
-    "pctBase": 22
+    "pctBase": 26
    }
   ]
  },
@@ -735,13 +735,13 @@
  "promesasPais": [
   {
    "pais": "España",
-   "n": 63,
+   "n": 66,
    "dominante": "Devolución del dinero",
-   "nDominante": 47
+   "nDominante": 48
   },
   {
    "pais": "Estados Unidos",
-   "n": 8,
+   "n": 6,
    "dominante": "Devolución del dinero",
    "nDominante": 6
   },
@@ -949,19 +949,6 @@
    ]
   },
   {
-   "id": "amp-docmedia-es",
-   "name": "Docmedia",
-   "agencyType": "Generalista pymes",
-   "score": 0,
-   "puntos": 8,
-   "razones": [
-    "sin anuncios activos",
-    "precio oculto",
-    "sin garantía",
-    "sin creatividades"
-   ]
-  },
-  {
    "id": "amp-aesinergy-es",
    "name": "Aesinergy",
    "agencyType": "Generalista pymes",
@@ -1077,6 +1064,19 @@
     "sin garantía",
     "sin creatividades"
    ]
+  },
+  {
+   "id": "amp-toopixels-com",
+   "name": "TooPixels",
+   "agencyType": "Generalista pymes",
+   "score": 0,
+   "puntos": 8,
+   "razones": [
+    "sin anuncios activos",
+    "precio oculto",
+    "sin garantía",
+    "sin creatividades"
+   ]
   }
  ],
  "lexico": [
@@ -1138,7 +1138,7 @@
   }
  ],
  "slas": {
-  "total": 78,
+  "total": 79,
   "top": [
    {
     "id": "habitissimo",
@@ -1303,8 +1303,8 @@
   ]
  },
  "findings": [
-  "Entre cuotas mensuales, quien publica garantía fuerte cobra una mediana de 29 € frente a 213 € de quien no promete nada: la garantía se usa como arma de entrada a precio agresivo — RedVitalia puede romper ese patrón cobrando premium CON garantía.",
+  "Entre cuotas mensuales, quien publica garantía fuerte cobra una mediana de 29 € frente a 248 € de quien no promete nada: la garantía se usa como arma de entrada a precio agresivo — RedVitalia puede romper ese patrón cobrando premium CON garantía.",
   "En España el tramo de precio menos poblado es 900–1200 € (5 actores): hueco de posicionamiento directo.",
-  "78 fichas declaran SLA de contacto; el más agresivo es Habitissimo (en 1 min). Un SLA firmado de 10 minutos sitúa a RedVitalia en el 1% del mercado."
+  "79 fichas declaran SLA de contacto; el más agresivo es Habitissimo (en 1 min). Un SLA firmado de 10 minutos sitúa a RedVitalia en el 1% del mercado."
  ]
 }

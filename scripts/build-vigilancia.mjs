@@ -80,7 +80,7 @@ const grupos = [...groupSignals.values()]
   .map((g) => ({ grupo: g.key, evidencia: g.reason, etiqueta: g.reason === "marca/holding declarado" ? "Observado" : "Inferido", marcas: g.members.sort((x, y) => y.score - x.score) }));
 
 const out = {
-  generatedAt: "23/08/2026",
+  generatedAt: new Date().toLocaleDateString("es-ES"),
   nota: "Instantánea del corte actual. El semáforo se recalcula con cada actualización de anuncios/precios de la base; los grupos marcados Inferido salen de cruces (razón social, dominio raíz), no de declaración pública.",
   semaforo,
   grupos,

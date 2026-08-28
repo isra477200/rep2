@@ -1,7 +1,7 @@
 {
  "generatedAt": "23/08/2026",
  "garantias": {
-  "total": 780,
+  "total": 847,
   "items": [
    {
     "id": "doctoralia-grupo-docplanner",
@@ -222,6 +222,20 @@
     "coste": 5
    },
    {
+    "id": "vendemasmuebles-es",
+    "name": "Vendemasmuebles.es",
+    "country": "España",
+    "score": 45,
+    "text": "20 citas en tienda en 60 días o devolución del dinero; también garantiza 20.000 € extra bajo contrato en una pieza.",
+    "kinds": [
+     "Volumen mínimo garantizado",
+     "Devolución del dinero",
+     "Plazo de resultados"
+    ],
+    "fuerza": 4,
+    "coste": 5
+   },
+   {
     "id": "thumbtack-inc",
     "name": "Thumbtack Inc.",
     "country": "Estados Unidos",
@@ -384,6 +398,30 @@
     "country": "España",
     "score": 62,
     "text": "En el anuncio: 'garantía por contrato' de duplicar ventas en 60 días; ninguna garantía publicada en la web",
+    "kinds": [
+     "Plazo de resultados"
+    ],
+    "fuerza": 3,
+    "coste": 1
+   },
+   {
+    "id": "pacs-la-aceleradora-b2b",
+    "name": "PACS · La Aceleradora B2B",
+    "country": "Argentina",
+    "score": 52,
+    "text": "Afirma lograr 10 reuniones mensuales en 60 días o devolver el dinero, bajo contrato no revisado.",
+    "kinds": [
+     "Plazo de resultados"
+    ],
+    "fuerza": 3,
+    "coste": 1
+   },
+   {
+    "id": "javi-alba-bano",
+    "name": "Javi Alba Bañó",
+    "country": "España",
+    "score": 30,
+    "text": "Para solar: aumentar facturación en 30 días o no pagar, anunciado como garantía por contrato.",
     "kinds": [
      "Plazo de resultados"
     ],
@@ -652,6 +690,18 @@
     "country": "España",
     "score": 60,
     "text": "Anuncio: «10 citas de presupuesto el primer mes o no pagas... seguimos trabajando gratis hasta conseguirlas». Web: afirma 100% de éxito para quienes implementan el sistema completo — garantía condicionada al comportamiento del cliente.",
+    "kinds": [
+     "Seguimos gratis hasta cumplir"
+    ],
+    "fuerza": 3,
+    "coste": 4
+   },
+   {
+    "id": "psicoemprendedores",
+    "name": "PsicoEmprendedores",
+    "country": "España",
+    "score": 45,
+    "text": "Garantiza por contrato recuperar cada euro invertido o seguir trabajando gratis hasta lograrlo.",
     "kinds": [
      "Seguimos gratis hasta cumplir"
     ],
@@ -1228,6 +1278,18 @@
     "coste": 5
    },
    {
+    "id": "icall-for-you",
+    "name": "iCall For You",
+    "country": "Italia",
+    "score": 52,
+    "text": "La web declara garantía de conversión mínima del 10 % o reembolso; afirmación del proveedor pendiente de auditoría contractual.",
+    "kinds": [
+     "Devolución del dinero"
+    ],
+    "fuerza": 3,
+    "coste": 5
+   },
+   {
     "id": "citysem-marketing-online-s-l",
     "name": "Citysem Marketing Online, S.L.",
     "country": "España",
@@ -1272,6 +1334,19 @@
     "text": "No se identifican garantías explícitas con texto exacto; la promesa \"mejorar tus resultados desde el primer mes\" no está condicionada a devolución ni a cláusula de \"si no funciona no pagas\".",
     "kinds": [
      "Devolución del dinero"
+    ],
+    "fuerza": 3,
+    "coste": 5
+   },
+   {
+    "id": "grupo-elite-labs",
+    "name": "Grupo Elite Labs",
+    "country": "España",
+    "score": 30,
+    "text": "Agenda en siete días o no pagar; en otras piezas, devolución si no consigue clientes potenciales en 30 días.",
+    "kinds": [
+     "Devolución del dinero",
+     "Plazo de resultados"
     ],
     "fuerza": 3,
     "coste": 5
@@ -1777,80 +1852,6 @@
     ],
     "fuerza": 3,
     "coste": 5
-   },
-   {
-    "id": "amp-leadsdeseguros-es",
-    "name": "LeadsDeSeguros",
-    "country": "España",
-    "score": 0,
-    "text": "Devolución por números falsos o contactos que no responden en 3 días",
-    "kinds": [
-     "Devolución del dinero",
-     "Plazo de resultados"
-    ],
-    "fuerza": 3,
-    "coste": 5
-   },
-   {
-    "id": "amp-agenciavelo-mx",
-    "name": "Agencia Velo",
-    "country": "México",
-    "score": 0,
-    "text": "'30 días o te devolvemos tu mensualidad' y 'listo en 21 días o te devolvemos la activación'",
-    "kinds": [
-     "Devolución del dinero",
-     "Plazo de resultados"
-    ],
-    "fuerza": 3,
-    "coste": 5
-   },
-   {
-    "id": "belkins",
-    "name": "Belkins",
-    "country": "Estados Unidos",
-    "score": 97,
-    "text": "CONFIRMADO — paquete inicial muestra “100 guaranteed appts/year” y “No-show recovery” en todos los paquetes. CONTRADICCIÓN/ALCANCE: el titular dice “deliver 20 monthly meetings”, que serían 240/año, frente a 100 garantizadas/año; pueden ser meta y mínimo contractual distintos. Fuente consultada 15/08/2026: https://belkins.io/appointment-setting",
-    "kinds": [
-     "Otra promesa"
-    ],
-    "fuerza": 2,
-    "coste": 1
-   },
-   {
-    "id": "everconnect",
-    "name": "EverConnect",
-    "country": "Estados Unidos",
-    "score": 96,
-    "text": "PARCIALMENTE CONFIRMADO — 15/08/2026. “Only Pay for Qualified Calls” y “You only pay when a live homeowner call meets your criteria—like zip code, job type, or hours.” Sin embargo, la FAQ de fontanería considera facturable una llamada no atendida tras cuatro tonos o enviada al buzón. Fuentes: https://www.everconnect.com/services/pay-per-call y https://www.everconnect.com/plumbing-leads",
-    "kinds": [
-     "Otra promesa"
-    ],
-    "fuerza": 2,
-    "coste": 1
-   },
-   {
-    "id": "handv-rker-dk",
-    "name": "Håndværker.dk",
-    "country": "Dinamarca",
-    "score": 96,
-    "text": "Contrato digital jurídicamente vinculante y dinero en cuenta de depósito que solo se libera tras aprobación del propietario; solución de seguridad de pago explícita.",
-    "kinds": [
-     "Otra promesa"
-    ],
-    "fuerza": 2,
-    "coste": 1
-   },
-   {
-    "id": "losleads",
-    "name": "LosLeads",
-    "country": "México",
-    "score": 96,
-    "text": "5–15 citas/mes y recuperación rápida son claims autodeclarados, no garantía.",
-    "kinds": [
-     "Otra promesa"
-    ],
-    "fuerza": 2,
-    "coste": 1
    }
   ]
  },
