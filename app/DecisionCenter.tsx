@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import AdLandingAuditPanel from "./AdLandingAuditPanel";
+import CampaignLaunchpad from "./CampaignLaunchpad";
+import CompetitiveBenchmark from "./CompetitiveBenchmark";
 import styles from "./DecisionCenter.module.css";
 
 type DecisionSection =
@@ -12,7 +14,9 @@ type DecisionSection =
   | "offers"
   | "patterns"
   | "hypotheses"
-  | "audit";
+  | "audit"
+  | "benchmark"
+  | "builder";
 
 type UnknownRecord = Record<string, unknown>;
 
@@ -38,6 +42,9 @@ type CompanyReference = {
 
 export type DecisionCenterProps = {
   onOpenCompany?: (id: string) => void;
+  onOpenFactory?: () => void;
+  onOpenAdLab?: (query?: string) => void;
+  onOpenLandings?: () => void;
 };
 
 const TABS: Array<{
@@ -46,13 +53,15 @@ const TABS: Array<{
   short: string;
 }> = [
   { id: "overview", label: "Resumen", short: "Qué merece atención" },
-  { id: "dna", label: "ADN competitivo", short: "Cómo vende cada actor" },
-  { id: "gaps", label: "Huecos", short: "Espacios menos ocupados" },
-  { id: "playbooks", label: "Playbooks", short: "Planes por nicho" },
+  { id: "gaps", label: "Oportunidades", short: "Espacios para probar" },
+  { id: "patterns", label: "Patrones", short: "Señales reutilizables" },
+  { id: "audit", label: "Recorridos", short: "Anuncio → landing → lead" },
+  { id: "benchmark", label: "Benchmark", short: "Comparativa explicable" },
+  { id: "playbooks", label: "Playbooks", short: "País × vertical" },
+  { id: "builder", label: "Constructor", short: "Campaña completa" },
+  { id: "dna", label: "ADN", short: "Cómo vende cada actor" },
   { id: "offers", label: "Ofertas", short: "Modelos y condiciones" },
-  { id: "patterns", label: "Patrones", short: "Biblioteca reutilizable" },
   { id: "hypotheses", label: "Hipótesis", short: "Qué probar primero" },
-  { id: "audit", label: "Anuncio → landing", short: "Continuidad y fugas" },
 ];
 
 const SECTION_META: Record<
@@ -102,12 +111,26 @@ const SECTION_META: Record<
       "El ranking ordena señales competitivas. Solo las métricas reales de campaña pueden convertirlas en ganadoras.",
   },
   audit: {
-    kicker: "AUDITORÍA ANUNCIO → LANDING",
-    title: "Comprueba si la promesa sobrevive al clic",
+    kicker: "RECORRIDO ANUNCIO → LANDING → LEAD",
+    title: "Comprueba si la promesa sobrevive hasta la acción observable",
     description:
-      "Contrasta mensaje, público, oferta, mecanismo y acción para localizar pérdidas de continuidad con evidencia trazable.",
+      "Contrasta mensaje, público, oferta, mecanismo, formulario y acción; la entrega privada queda como no observada.",
+  },
+  benchmark: {
+    kicker: "BENCHMARK EXPLICABLE",
+    title: "Compara empresas sin confundir puntuación con rendimiento",
+    description:
+      "Separa continuidad, confianza y cobertura para que un dato ausente nunca se convierta en una mala nota.",
+  },
+  builder: {
+    kicker: "CONSTRUCTOR DE CAMPAÑAS",
+    title: "De la señal competitiva a un paquete listo para validar",
+    description:
+      "Lleva playbook, patrón e hipótesis a anuncios, landing, funnel, tracking y experimento dentro de un mismo contexto.",
   },
 };
+
+const DECISION_SECTIONS = TABS.map((tab) => tab.id);
 
 const asRecord = (value: unknown): UnknownRecord | null =>
   value !== null && typeof value === "object" && !Array.isArray(value)
@@ -525,12 +548,23 @@ function Score({ record }: { record: UnknownRecord | null }) {
   );
 }
 
-export default function DecisionCenter({ onOpenCompany }: DecisionCenterProps) {
+export default function DecisionCenter({
+  onOpenCompany,
+  onOpenFactory,
+  onOpenAdLab,
+  onOpenLandings,
+}: DecisionCenterProps) {
   const [data, setData] = useState<CompetitiveIntelligenceData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [retry, setRetry] = useState(0);
-  const [section, setSection] = useState<DecisionSection>("overview");
+  const [section, setSection] = useState<DecisionSection>(() => {
+    if (typeof window === "undefined") return "overview";
+    const requested = new URLSearchParams(window.location.search).get("area");
+    return DECISION_SECTIONS.includes(requested as DecisionSection)
+      ? (requested as DecisionSection)
+      : "overview";
+  });
   const [query, setQuery] = useState("");
   const [contextFilter, setContextFilter] = useState("__all__");
 
@@ -633,6 +667,10 @@ export default function DecisionCenter({ onOpenCompany }: DecisionCenterProps) {
     setSection(next);
     setQuery("");
     setContextFilter("__all__");
+    const url = new URL(window.location.href);
+    if (next === "overview") url.searchParams.delete("area");
+    else url.searchParams.set("area", next);
+    window.history.replaceState({}, "", url);
   }, []);
 
   if (loading) {
@@ -767,7 +805,10 @@ export default function DecisionCenter({ onOpenCompany }: DecisionCenterProps) {
           </div>
         </header>
 
-        {section !== "overview" && section !== "audit" && (
+        {section !== "overview" &&
+          section !== "audit" &&
+          section !== "benchmark" &&
+          section !== "builder" && (
           <div className={styles.toolbar}>
             <label>
               <span className={styles.srOnly}>
@@ -823,10 +864,10 @@ export default function DecisionCenter({ onOpenCompany }: DecisionCenterProps) {
           <DnaView items={filteredItems} onOpenCompany={onOpenCompany} />
         )}
         {section === "gaps" && (
-          <GapView items={filteredItems} onOpenCompany={onOpenCompany} />
+          <GapView items={filteredItems} onOpenCompany={onOpenCompany} onOpenFactory={onOpenFactory} />
         )}
         {section === "playbooks" && (
-          <PlaybookView items={filteredItems} onOpenCompany={onOpenCompany} />
+          <PlaybookView items={filteredItems} onOpenCompany={onOpenCompany} onOpenFactory={onOpenFactory} />
         )}
         {section === "offers" && (
           <OfferView
@@ -836,18 +877,36 @@ export default function DecisionCenter({ onOpenCompany }: DecisionCenterProps) {
           />
         )}
         {section === "patterns" && (
-          <PatternView items={filteredItems} onOpenCompany={onOpenCompany} />
+          <PatternView items={filteredItems} onOpenCompany={onOpenCompany} onOpenAdLab={onOpenAdLab} />
         )}
         {section === "hypotheses" && (
           <HypothesisView
             items={filteredItems}
             ranking={data.hypothesisRanking}
             onOpenCompany={onOpenCompany}
+            onOpenFactory={onOpenFactory}
           />
         )}
         {section === "audit" && (
           <div className={styles.auditPanel}>
             <AdLandingAuditPanel onOpenCompany={onOpenCompany} />
+          </div>
+        )}
+        {section === "benchmark" && (
+          <div className={styles.auditPanel}>
+            <CompetitiveBenchmark onOpenCompany={onOpenCompany} />
+          </div>
+        )}
+        {section === "builder" && (
+          <div className={styles.auditPanel}>
+            <CampaignLaunchpad
+              patternCount={patterns.length}
+              opportunityCount={gaps.length}
+              playbookCount={playbooks.length}
+              onOpenFactory={onOpenFactory}
+              onOpenAdLab={onOpenAdLab}
+              onOpenLandings={onOpenLandings}
+            />
           </div>
         )}
       </main>
@@ -1249,9 +1308,11 @@ function DnaView({
 function GapView({
   items,
   onOpenCompany,
+  onOpenFactory,
 }: {
   items: unknown[];
   onOpenCompany?: (id: string) => void;
+  onOpenFactory?: () => void;
 }) {
   if (!items.length) return <EmptySection />;
   return (
@@ -1437,6 +1498,7 @@ function GapView({
                 </details>
               )}
               <CompanyEvidence record={record} onOpenCompany={onOpenCompany} />
+              {onOpenFactory ? <button type="button" className={styles.landingCta} onClick={onOpenFactory}>Crear campaña con esta oportunidad <span aria-hidden="true">→</span></button> : null}
             </div>
           </article>
         );
@@ -1448,9 +1510,11 @@ function GapView({
 function PlaybookView({
   items,
   onOpenCompany,
+  onOpenFactory,
 }: {
   items: unknown[];
   onOpenCompany?: (id: string) => void;
+  onOpenFactory?: () => void;
 }) {
   if (!items.length) return <EmptySection />;
   const moduleDefinitions = [
@@ -1612,10 +1676,12 @@ function PlaybookView({
                 onOpenCompany={onOpenCompany}
                 limit={5}
               />
-              <a className={styles.landingCta} href="?vista=landings">
-                Crear landing desde este playbook{" "}
-                <span aria-hidden="true">→</span>
-              </a>
+              {onOpenFactory ? (
+                <button type="button" className={styles.landingCta} onClick={onOpenFactory}>
+                  Crear campaña desde este playbook{" "}
+                  <span aria-hidden="true">→</span>
+                </button>
+              ) : null}
             </article>
           );
         })}
@@ -1821,9 +1887,11 @@ function OfferView({
 function PatternView({
   items,
   onOpenCompany,
+  onOpenAdLab,
 }: {
   items: unknown[];
   onOpenCompany?: (id: string) => void;
+  onOpenAdLab?: (query?: string) => void;
 }) {
   if (!items.length) return <EmptySection />;
   return (
@@ -1932,6 +2000,7 @@ function PatternView({
                 </details>
               )}
               <CompanyEvidence record={record} onOpenCompany={onOpenCompany} />
+              {onOpenAdLab ? <button type="button" className={styles.landingCta} onClick={() => onOpenAdLab(title)}>Ver anuncios que sostienen este patrón <span aria-hidden="true">→</span></button> : null}
             </article>
           );
         })}
@@ -1944,10 +2013,12 @@ function HypothesisView({
   items,
   ranking,
   onOpenCompany,
+  onOpenFactory,
 }: {
   items: unknown[];
   ranking: unknown;
   onOpenCompany?: (id: string) => void;
+  onOpenFactory?: () => void;
 }) {
   if (!items.length) return <EmptySection />;
   const rankingRecord = asRecord(ranking);
@@ -2071,6 +2142,7 @@ function HypothesisView({
                   record={record}
                   onOpenCompany={onOpenCompany}
                 />
+                {onOpenFactory ? <button type="button" className={styles.landingCta} onClick={onOpenFactory}>Preparar este test en la Fábrica 360 <span aria-hidden="true">→</span></button> : null}
               </article>
             </li>
           );

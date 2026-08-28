@@ -1,4 +1,9 @@
-import type { Company } from "./data-types";
+import type { Company } from "./data-types.ts";
+import {
+  buildLandingHtml as buildEvidenceBasedLandingHtml,
+  defaultBrief,
+  type LandingBrief,
+} from "./landings/model.ts";
 
 export type OperationsTab =
   | "command"
@@ -67,9 +72,17 @@ export type Experiment = {
 
 export type OperationContext = {
   name: string;
+  market: string;
   vertical: string;
+  landingVerticalId: string;
   zone: string;
   service: string;
+  audience: string;
+  pain: string;
+  result: string;
+  offer: string;
+  proof: string;
+  formFields: string;
   price: string;
   appointments: string;
   slaMinutes: string;
@@ -78,7 +91,17 @@ export type OperationContext = {
   channel: "Meta" | "Google" | "Meta + Google";
   objective: string;
   strategicAxis: StrategicAxis;
+  sourcePlaybook: string;
+  sourcePattern: string;
+  sourceHypothesis: string;
   contactUrl: string;
+  legalName: string;
+  privacyUrl: string;
+  cookiesUrl: string;
+  leadEndpoint: string;
+  leadEndpointVerified: boolean;
+  gtmId: string;
+  trackingVerified: boolean;
 };
 
 export type OperationEvidence = {
@@ -129,9 +152,17 @@ export type ExperimentEvaluation = {
 
 export const defaultOperationContext: OperationContext = {
   name: "Nueva operación RedVitalia",
+  market: "España",
   vertical: "",
+  landingVerticalId: "generalista",
   zone: "",
   service: "",
+  audience: "",
+  pain: "",
+  result: "",
+  offer: "",
+  proof: "",
+  formFields: "5",
   price: "",
   appointments: "",
   slaMinutes: "",
@@ -140,7 +171,17 @@ export const defaultOperationContext: OperationContext = {
   channel: "Meta + Google",
   objective: "Validar una oferta defendible antes de escalar inversión",
   strategicAxis: "exclusivity",
+  sourcePlaybook: "",
+  sourcePattern: "",
+  sourceHypothesis: "",
   contactUrl: "",
+  legalName: "RedVitalia",
+  privacyUrl: "",
+  cookiesUrl: "",
+  leadEndpoint: "",
+  leadEndpointVerified: false,
+  gtmId: "",
+  trackingVerified: false,
 };
 
 const numberValue = (value: string) => {
@@ -632,6 +673,26 @@ export const buildOperationMarkdown = (
   const vertical = safeText(context.vertical, "el nicho elegido");
   const zone = safeText(context.zone, "la zona elegida");
   const service = safeText(context.service, "captación y agenda de citas");
+  const audience = safeText(
+    context.audience,
+    `${vertical} con capacidad comercial en ${zone}`,
+  );
+  const pain = safeText(
+    context.pain,
+    "contactos sin suficiente contexto y seguimiento difícil de auditar",
+  );
+  const result = safeText(
+    context.result,
+    "más conversaciones comerciales con encaje y seguimiento visible",
+  );
+  const offer = safeText(
+    context.offer,
+    `${service}, cualificación, entrega y revisión semanal del recorrido`,
+  );
+  const proof = safeText(
+    context.proof,
+    "Prueba propia pendiente de documentar; no publicar cifras ni testimonios sin fuente.",
+  );
   const appointments = safeText(context.appointments, "el volumen acordado");
   const price = safeText(context.price, "precio por definir");
   const sla = context.slaMinutes.trim();
@@ -656,8 +717,12 @@ Estado: propuesta editorial para test. No contiene resultados de campaña.
 ## Contexto operativo
 
 - Nicho: ${vertical}
+- Mercado: ${safeText(context.market, "España")}
 - Zona: ${zone}
 - Servicio: ${service}
+- Público: ${audience}
+- Dolor que se aborda: ${pain}
+- Resultado esperado: ${result}
 - Canal: ${context.channel}
 - Objetivo: ${safeText(context.objective, "Validar una oferta antes de escalar")}
 - Precio configurado: ${price === "precio por definir" ? price : `${price} €/mes`}
@@ -672,7 +737,9 @@ RedVitalia instala un sistema de ${service} para ${vertical} en ${zone}, con cri
 
 ## Oferta · propuesta editorial
 
-Objetivo de ${appointments} citas válidas bajo criterios firmados. Inversión de ${price === "precio por definir" ? price : `${price} €/mes`}. ${guaranteeText(context.guarantee)}. ${exclusivityText(context.exclusivity)}. El objetivo es una condición de diseño del test, no un resultado histórico.
+${offer}. Objetivo de ${appointments} citas válidas bajo criterios firmados. Inversión de ${price === "precio por definir" ? price : `${price} €/mes`}. ${guaranteeText(context.guarantee)}. ${exclusivityText(context.exclusivity)}. El objetivo es una condición de diseño del test, no un resultado histórico.
+
+Prueba publicable configurada: ${proof}
 
 ## Test A/B/C · una variable
 
@@ -682,6 +749,48 @@ ${experiment.variants.map((variant) => `- ${variant.name}: “${variant.concept}
 
 Mantener audiencia, presupuesto, formato, periodo y landing constantes. Métrica primaria recomendada: coste por cita válida. Registrar también CTR, CPL, asistencia, venta y CAC.
 
+## Meta Ads · paquete editorial
+
+### Variante A · control
+- Texto principal: “Si ${pain.toLocaleLowerCase("es")}, proponemos ${offer.toLocaleLowerCase("es")}. Primero comprobamos encaje, capacidad y criterios; después lanzamos un test medible en ${zone}.”
+- Titular: “${result} en ${zone}”
+- Descripción: “Alcance y medición definidos antes de invertir.”
+- CTA: Más información
+
+### Variante B · eje ${experiment.variable}
+- Texto principal: “Para ${audience}: ${experiment.variants[1]?.concept || "una alternativa concreta y medible"}. Mismo público, presupuesto y landing; cambia una sola variable.”
+- Titular: “${experiment.variants[1]?.concept || result}”
+- Descripción: “Hipótesis para validar, no resultado histórico.”
+- CTA: Solicitar información
+
+### Variante C · contraste
+- Texto principal: “${experiment.variants[2]?.concept || "Compara una propuesta trazable"}. Te explicamos qué se mide desde solicitud hasta venta antes de decidir.”
+- Titular: “Comprobar encaje en ${zone}”
+- Descripción: “Criterios, seguimiento y siguiente decisión visibles.”
+- CTA: Contactar
+
+## Google Ads · RSA por intención
+
+Titulares sugeridos (revisar límites de caracteres en la plataforma):
+1. ${service} en ${zone}
+2. ${result}
+3. Comprueba el encaje primero
+4. Criterios de cita por escrito
+5. Seguimiento desde el primer lead
+6. ${experiment.variants[1]?.concept || "Propuesta medible"}
+7. Diagnóstico para ${vertical}
+8. Oferta y alcance sin sorpresas
+9. Medición hasta cita y venta
+10. Solicita una primera revisión
+
+Descripciones:
+1. ${offer}. Comprueba alcance, zona y capacidad antes de lanzar.
+2. Una propuesta para ${audience}, con criterios y siguiente decisión definidos.
+3. Separamos solicitud, contacto, cita, asistencia y venta para localizar la fuga real.
+4. La evidencia configura el test; solo tus métricas propias deciden qué funciona.
+
+Sitelinks sugeridos: Cómo funciona · Qué incluye · Criterios de encaje · Preguntas frecuentes.
+
 ## Landing · estructura
 
 1. Titular: “${appointments} citas válidas para ${vertical} en ${zone}, con criterios acordados antes de lanzar”.
@@ -690,6 +799,15 @@ Mantener audiencia, presupuesto, formato, periodo y landing constantes. Métrica
 4. Cómo funciona: diagnóstico → criterios → campaña → respuesta en ${slaLabel} → agenda → revisión semanal.
 5. Reducción de riesgo: ${guaranteeText(context.guarantee)}.
 6. CTA: “Comprobar disponibilidad en ${zone}”.
+
+## Funnel y formulario
+
+- Formulario objetivo: ${safeText(context.formFields, "5")} campos visibles.
+- Campos recomendados: nombre, teléfono, empresa, zona y contexto; añadir presupuesto o plazo solo si cambia la cualificación.
+- Después del envío: confirmación explícita, plazo de respuesta, responsable y siguiente paso.
+- Estado privado del competidor: no observado; nunca se interpreta como ausencia o fallo.
+- Eventos: view_landing → form_start → lead_submit → qualified_lead → booked → attended → sale.
+- UTM mínimas: source, medium, campaign, content y term; conservarlas en el lead y en el CRM.
 
 ## Guion de apertura
 
@@ -718,63 +836,119 @@ ${competitorBlock}
 
 ${sources}
 
+## Origen estratégico del paquete
+
+- Playbook: ${safeText(context.sourcePlaybook, "No seleccionado")}
+- Patrón: ${safeText(context.sourcePattern, "No seleccionado")}
+- Hipótesis: ${safeText(context.sourceHypothesis, "No seleccionada")}
+
+## Lista de validación antes de publicar
+
+- [ ] CTA conectado a un destino real.
+- [ ] Endpoint de lead HTTPS probado con respuesta 2xx.
+- [ ] Política de privacidad, responsable legal y consentimiento visibles.
+- [ ] GTM y evento de conversión comprobados.
+- [ ] Claims, cifras, testimonios y garantía respaldados.
+- [ ] Promesa del anuncio repetida y explicada en la landing.
+- [ ] Una sola variable aislada entre A/B/C.
+- [ ] Presupuesto, periodo, mínimos y guardrail definidos en Experimentos.
+
 ## Regla de verdad
 
 Los patrones sirven para diseñar el test. En costes o ingresos agregados solo se declara líder observado. La palabra ganador exige test cerrado, mínimos, diferencia estadística, lift mínimo y guardrail de coste.
 `;
 };
 
-const escapeHtml = (value: string) =>
-  value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+const VERTICAL_ALIASES: Array<[RegExp, string]> = [
+  [/cl[ií]nic|salud|dental|m[eé]dic|paciente/i, "clinicas-salud"],
+  [/reforma|obra|hogar|constru|instalad/i, "reformas-hogar"],
+  [/solar|energ[ií]a|fotovolta/i, "solar-energia"],
+  [/inmob|vivienda|real estate/i, "inmobiliario"],
+  [/legal|abog|seguro|finanz/i, "legal"],
+  [/coche|auto|veh[ií]cul|motor/i, "coches-motor"],
+  [/\bb2b\b|\bsdr\b|ventas empresariales/i, "b2b-sdr"],
+  [/directorio|marketplace|comparador/i, "directorios-marketplaces"],
+  [/belleza|bienestar|gimnas|fitness|est[eé]tica/i, "belleza-bienestar"],
+  [/hotel|turis|hostel|restaur/i, "hosteleria-turismo"],
+];
 
-export const buildLandingHtml = (context: OperationContext) => {
-  const vertical = escapeHtml(safeText(context.vertical, "tu sector"));
-  const zone = escapeHtml(safeText(context.zone, "tu zona"));
-  const service = escapeHtml(
-    safeText(context.service, "captación y agenda de citas"),
-  );
-  const appointments = escapeHtml(
-    safeText(context.appointments, "el volumen acordado"),
-  );
-  const rawSla = context.slaMinutes.trim();
-  const slaLabel = rawSla
-    ? `${escapeHtml(rawSla)} minutos`
-    : "un plazo por definir";
-  const axis = context.strategicAxis || "exclusivity";
-  const exclusivityHeadline = context.exclusivity === "lead"
-    ? `${appointments} citas válidas en ${zone}, con entrega a una sola empresa por contacto, sujeta a contrato.`
-    : context.exclusivity === "territory"
-      ? `${appointments} citas válidas en ${zone}, con protección territorial sujeta a disponibilidad comprobada y contrato.`
-      : `${appointments} citas válidas en ${zone}, con una regla de exclusividad pendiente de definir.`;
-  const guaranteeHeadline = context.guarantee === "none"
-    ? `${appointments} citas válidas en ${zone}, con garantía y remedio pendientes de definir.`
-    : `${appointments} citas válidas en ${zone}, con la garantía configurada por escrito antes de lanzar.`;
-  const headline = ({
-    exclusivity: exclusivityHeadline,
-    guarantee: guaranteeHeadline,
-    speed: `Objetivo de primer contacto en ${slaLabel} para las oportunidades de ${vertical} en ${zone}.`,
-    proof: `${service} en ${zone}, con evidencia y medición separadas desde el primer test.`,
-  } as Record<StrategicAxis, string>)[axis];
-  const rawContactUrl = safeText(context.contactUrl || "", "");
-  const contactUrl = /^(?:https?:|mailto:|tel:)/i.test(rawContactUrl)
-    ? escapeHtml(rawContactUrl)
-    : "#configurar-contacto";
-  const contactLabel = rawContactUrl
-    ? "Solicitar diagnóstico"
-    : "Configurar destino antes de publicar";
-  return `<!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(context.name)}</title>
-<style>body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#151922}main{max-width:920px;margin:auto;padding:64px 24px}.hero,.card{background:white;border:1px solid #dfe5ef;border-radius:24px;padding:40px;margin-bottom:20px}.eyebrow{color:#0b57d0;font-weight:800;letter-spacing:.1em;font-size:12px}h1{font-size:52px;line-height:1.02;margin:16px 0}p{font-size:18px;line-height:1.6}.cta{display:inline-block;background:#0b57d0;color:white;padding:16px 22px;border-radius:12px;text-decoration:none;font-weight:800}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid div{background:#eef4ff;padding:18px;border-radius:14px}.fine{font-size:13px;color:#657087}@media(max-width:700px){h1{font-size:36px}.grid{grid-template-columns:1fr}}</style></head>
-<body><main><section class="hero"><div class="eyebrow">REDVITALIA · PROPUESTA PARA ${vertical.toUpperCase()}</div><h1>${headline}</h1><p>${service}, cualificación, primer contacto y agenda dentro del mismo sistema.</p><a class="cta" href="#diagnostico">Comprobar encaje en ${zone}</a></section>
-<section class="card"><h2>Un proceso que se puede auditar</h2><div class="grid"><div><b>01 · Criterios</b><p>Definimos por escrito qué cuenta como cita válida.</p></div><div><b>02 · Respuesta</b><p>Objetivo operativo de primer contacto en ${slaLabel}.</p></div><div><b>03 · Resultado</b><p>Separamos lead, cita, asistencia y venta.</p></div></div></section>
-<section class="card"><h2>Riesgo definido antes de empezar</h2><p>${escapeHtml(guaranteeText(context.guarantee))}. ${escapeHtml(exclusivityText(context.exclusivity))}.</p><p class="fine">El volumen mostrado es el objetivo configurado para la propuesta, no un resultado histórico. La garantía final depende del contrato firmado.</p></section>
-<section class="card" id="diagnostico"><h2>Primero comprobamos si encaja</h2><p>Capacidad, zona, criterios de cita y umbral económico. Si no se puede medir, no se lanza.</p><a class="cta" href="${contactUrl}">${contactLabel}</a>${rawContactUrl ? "" : '<p class="fine" id="configurar-contacto">Esta plantilla no incluye un contacto inventado. Vuelve a la Fábrica 360, añade la URL real de WhatsApp, calendario o formulario y descarga de nuevo.</p>'}</section></main></body></html>`;
+export const inferLandingVerticalId = (context: OperationContext) => {
+  if (context.landingVerticalId && context.landingVerticalId !== "generalista")
+    return context.landingVerticalId;
+  const text = `${context.vertical} ${context.service}`;
+  return VERTICAL_ALIASES.find(([pattern]) => pattern.test(text))?.[1] || "generalista";
 };
+
+const positiveInteger = (value: string, fallback: number) => {
+  const parsed = Number.parseInt(value, 10);
+  return Number.isFinite(parsed) ? Math.max(3, Math.min(8, parsed)) : fallback;
+};
+
+export const buildOperationLandingBrief = (
+  context: OperationContext,
+): LandingBrief => {
+  const verticalId = inferLandingVerticalId(context);
+  const preset = defaultBrief(verticalId);
+  const vertical = safeText(context.vertical, preset.audience);
+  const zone = safeText(context.zone, "tu zona");
+  const service = safeText(context.service, preset.service);
+  const destination = safeText(context.contactUrl, "");
+  const ctaMode = /wa\.me|whatsapp/i.test(destination)
+    ? "whatsapp"
+    : /^tel:/i.test(destination)
+      ? "phone"
+      : "calendar";
+  const guarantee = context.guarantee === "none"
+    ? ""
+    : `${guaranteeText(context.guarantee)}. Su alcance, periodo, exclusiones y remedio deben quedar definidos en el contrato.`;
+  return {
+    ...preset,
+    verticalId,
+    brand: "RedVitalia",
+    zone,
+    service,
+    audience: safeText(
+      context.audience,
+      `${vertical} con capacidad para atender nuevas oportunidades en ${zone}`,
+    ),
+    pain: safeText(
+      context.pain,
+      "contactos sin suficiente contexto y seguimiento difícil de auditar",
+    ),
+    result: safeText(
+      context.result,
+      "más conversaciones comerciales con encaje y seguimiento visible",
+    ),
+    filter: "necesidad, ubicación, capacidad, presupuesto, plazo y encaje",
+    offer: safeText(
+      context.offer,
+      `${service}, cualificación, entrega trazable y revisión semanal del recorrido comercial.`,
+    ),
+    proof: context.proof.trim(),
+    price: context.price.trim() ? `${context.price.trim()} €/mes` : "",
+    guarantee,
+    ctaLabel: `Comprobar encaje en ${zone}`,
+    ctaMode,
+    destination,
+    trafficSource:
+      context.channel === "Meta"
+        ? "meta"
+        : context.channel === "Google"
+          ? "google"
+          : "mixed",
+    formFieldsTarget: positiveInteger(context.formFields, 5),
+    legalName: context.legalName,
+    privacyUrl: context.privacyUrl,
+    cookiesUrl: context.cookiesUrl,
+    leadEndpoint: context.leadEndpoint,
+    leadEndpointVerified: context.leadEndpointVerified,
+    gtmId: context.gtmId,
+    trackingVerified: context.trackingVerified,
+  };
+};
+
+export const buildLandingHtml = (context: OperationContext) =>
+  buildEvidenceBasedLandingHtml(buildOperationLandingBrief(context));
 
 export const formatMetric = (
   metric: keyof Pick<

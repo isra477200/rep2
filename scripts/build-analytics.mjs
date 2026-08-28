@@ -94,7 +94,7 @@ const elasticity = Object.entries(priceByCountry)
   .map(([country, v]) => ({ country, n: v.length, p25: pct(v, 25), p50: pct(v, 50), p75: pct(v, 75) }))
   .sort((a, b) => b.n - a.n);
 
-/* ---------- 6. Copy de ganadores vs mediocres ---------- */
+/* ---------- 6. Copy por prioridad estratégica del catálogo ---------- */
 const STOP = new Set("de la el en y a los las para con que un una del al por su sus se o más como sin sobre este esta hasta desde entre pero the and for with your our of to in on is are we you leads lead clientes cliente marketing agencia empresa empresas negocio negocios servicio servicios web digital online".split(" "));
 function topWords(list) {
   const freq = {};

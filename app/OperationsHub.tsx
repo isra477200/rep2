@@ -25,6 +25,7 @@ import {
   saveOperationsWorkspace,
 } from "./operations-storage";
 import styles from "./OperationsHub.module.css";
+import type { LandingBrief } from "./landings/model";
 
 type OcrData = AnunciosRealesData & { sourceFiles?: number; companies?: number };
 
@@ -58,7 +59,17 @@ export type OperationsHubProps = {
   companies: Company[];
   onOpenCompany: (companyId: string) => void;
   onOpenLab: () => void;
+  onOpenLanding: (brief: LandingBrief) => void;
 };
+
+const OPERATIONS_TABS: OperationsTab[] = [
+  "command",
+  "factory",
+  "coverage",
+  "review",
+  "experiments",
+  "warroom",
+];
 
 const normalize = (value: string) =>
   value
@@ -231,8 +242,15 @@ export default function OperationsHub({
   companies,
   onOpenCompany,
   onOpenLab,
+  onOpenLanding,
 }: OperationsHubProps) {
-  const [tab, setTab] = useState<OperationsTab>("command");
+  const [tab, setTab] = useState<OperationsTab>(() => {
+    if (typeof window === "undefined") return "command";
+    const requested = new URLSearchParams(window.location.search).get("tab");
+    return OPERATIONS_TABS.includes(requested as OperationsTab)
+      ? (requested as OperationsTab)
+      : "command";
+  });
   const [corpus, setCorpus] = useState<AnuncioReal[]>([]);
   const [coverage, setCoverage] = useState<AdCoverageData | null>(null);
   const [ocr, setOcr] = useState<AnuncioReal[]>([]);
@@ -313,6 +331,14 @@ export default function OperationsHub({
   useEffect(() => {
     loadData();
   }, [loadData]);
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    url.searchParams.set("vista", "operations");
+    if (tab === "command") url.searchParams.delete("tab");
+    else url.searchParams.set("tab", tab);
+    window.history.replaceState({}, "", `${url.pathname}?${url.searchParams.toString()}${url.hash}`);
+  }, [tab]);
 
   useEffect(() => {
     let active = true;
@@ -706,7 +732,7 @@ export default function OperationsHub({
       )}
 
       {tab === "factory" && (
-        <OperationFactoryPanel companies={companies} corpus={patternReady} context={context} onContext={setContext} onOpenCompany={onOpenCompany} onAddExperiment={(experiment) => { setExperiments((current) => [...current, experiment]); setTab("experiments"); }} />
+        <OperationFactoryPanel companies={companies} corpus={patternReady} context={context} onContext={setContext} onOpenCompany={onOpenCompany} onOpenLanding={onOpenLanding} onAddExperiment={(experiment) => { setExperiments((current) => [...current, experiment]); setTab("experiments"); }} />
       )}
 
       {tab === "coverage" && (

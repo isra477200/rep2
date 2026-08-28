@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * Detector de patrones ganadores → public/data/patterns.json
+ * Detector de patrones de prioridad estratégica → public/data/patterns.json
  *
  * Cruza toda la base canónica (companies-index.json) buscando qué hacen
- * distinto las fichas con señales de éxito. Señales usadas (todas públicas):
+ * distinto las fichas con prioridad editorial alta. Señales usadas (todas públicas):
  *   - score >= 80 (puntuación estratégica del catálogo)
  *   - anuncios verificados o presencia observada en Google Search
  * Nada se inventa: cada cifra sale de contar la base y cada lectura se genera
@@ -86,7 +86,7 @@ const modelStats = [...byModel.entries()]
   })
   .sort((a, b) => b.n - a.n);
 
-/* ---------- Perfil del ganador (score >= 80) ---------- */
+/* ---------- Perfil de prioridad estratégica alta (score >= 80) ---------- */
 const profile = (list) => ({
   n: list.length,
   adsActivePct: pct(list.filter(adsActive).length, list.length),
@@ -101,7 +101,7 @@ const profile = (list) => ({
 const winnersProfile = profile(winners);
 const restProfile = profile(rest);
 
-/* ---------- Canales de los ganadores ---------- */
+/* ---------- Canales de las fichas con prioridad alta ---------- */
 const channelCount = (list) => {
   const counts = {};
   for (const c of list) for (const ch of c.channels || []) counts[ch] = (counts[ch] || 0) + 1;
@@ -111,7 +111,7 @@ const winnerChannels = channelCount(winners)
   .slice(0, 10)
   .map(([channel, count]) => ({ channel, count, pctWinners: pct(count, winners.length) }));
 
-/* ---------- Ganadores con anuncios activos: los validados dos veces ---------- */
+/* ---------- Prioridad alta con anuncios activos: doble evidencia ---------- */
 const doubleValidated = companies
   .filter((c) => c.score >= 80 && adsActive(c))
   .sort((a, b) => adEvidenceScore(b) - adEvidenceScore(a))
@@ -134,27 +134,27 @@ const diff = (a, b) => a - b;
 
 if (diff(winnersProfile.guaranteePct, restProfile.guaranteePct) >= 10)
   findings.push({
-    title: "Los ganadores dan la cara: garantía escrita",
+    title: "Las fichas de prioridad alta publican más garantía escrita",
     stat: `${winnersProfile.guaranteePct}% vs ${restProfile.guaranteePct}%`,
-    detail: `El ${winnersProfile.guaranteePct}% de las fichas con puntuación 80+ publica una garantía sustancial, frente al ${restProfile.guaranteePct}% del resto. La garantía escrita separa a los mejores del montón más que ningún otro rasgo contractual.`,
+    detail: `El ${winnersProfile.guaranteePct}% de las fichas con puntuación estratégica 80+ publica una garantía sustancial, frente al ${restProfile.guaranteePct}% del resto. Es una asociación descriptiva del catálogo, no una prueba de conversión o rentabilidad.`,
   });
 if (diff(winnersProfile.pricePublicPct, restProfile.pricePublicPct) >= 10)
   findings.push({
-    title: "Precio público, señal de ganador",
+    title: "Precio público asociado a prioridad estratégica alta",
     stat: `${winnersProfile.pricePublicPct}% vs ${restProfile.pricePublicPct}%`,
-    detail: `Entre los 80+, el ${winnersProfile.pricePublicPct}% publica precio verificable; en el resto solo el ${restProfile.pricePublicPct}%. Quien está seguro de su economía la enseña, y precualifica con ella.`,
+    detail: `Entre las fichas con puntuación estratégica 80+, el ${winnersProfile.pricePublicPct}% publica precio verificable; en el resto, el ${restProfile.pricePublicPct}%. La asociación sirve para diseñar un test de transparencia; no demuestra qué enfoque convierte mejor.`,
   });
 if (diff(winnersProfile.adsActivePct, restProfile.adsActivePct) >= 10)
   findings.push({
     title: "Los mejores invierten en su propia captación",
     stat: `${winnersProfile.adsActivePct}% vs ${restProfile.adsActivePct}%`,
-    detail: `El ${winnersProfile.adsActivePct}% de los ganadores tiene actividad publicitaria verificada u observada (Meta o Google), frente al ${restProfile.adsActivePct}% del resto. Es una señal de uso del canal, no una prueba de rentabilidad.`,
+    detail: `El ${winnersProfile.adsActivePct}% de las fichas con prioridad estratégica alta tiene actividad publicitaria verificada u observada (Meta o Google), frente al ${restProfile.adsActivePct}% del resto. Es una señal de uso del canal, no una prueba de rentabilidad.`,
   });
 if (diff(winnersProfile.multiMarketPct, restProfile.multiMarketPct) >= 10)
   findings.push({
-    title: "Ganar en un mercado empuja al siguiente",
+    title: "La prioridad estratégica alta aparece más en varios mercados",
     stat: `${winnersProfile.multiMarketPct}% vs ${restProfile.multiMarketPct}%`,
-    detail: `El ${winnersProfile.multiMarketPct}% de los 80+ opera en más de un mercado, frente al ${restProfile.multiMarketPct}% del resto. La expansión no es causa del éxito, pero casi ningún mediocre se la puede permitir.`,
+    detail: `El ${winnersProfile.multiMarketPct}% de las fichas 80+ opera en más de un mercado, frente al ${restProfile.multiMarketPct}% del resto. La expansión es una característica observada, no una causa demostrada de rendimiento.`,
   });
 
 const exito = modelStats.find((m) => m.id === "exito");
@@ -174,7 +174,7 @@ if (porCita && porCita.medianEur)
   });
 if (winnerChannels.length >= 2)
   findings.push({
-    title: "El stack de canales de los ganadores",
+    title: "Canales más repetidos en la prioridad estratégica alta",
     stat: winnerChannels.slice(0, 3).map((c) => c.channel).join(" + "),
     detail: `Entre las fichas 80+, los canales dominantes son ${winnerChannels.slice(0, 4).map((c) => `${c.channel} (${c.pctWinners}%)`).join(", ")}. La combinación de captación de pago con un canal propio de demanda es el patrón repetido.`,
   });

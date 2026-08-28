@@ -55,6 +55,7 @@ import type {
 } from "./data-types";
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 import { galleryMediaPosition, resolveGalleryMediaIndex } from "./media-deep-link";
+import type { LandingBrief } from "./landings/model";
 
 const OperationsHub = lazy(() => import("./OperationsHub"));
 const AdsLaboratory = lazy(() => import("./AdsLaboratory"));
@@ -138,12 +139,12 @@ const requiredResourcesByView: Partial<
 
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
-  { id: "operations", label: "Operación", icon: "◆" },
+  { id: "operations", label: "Campañas", icon: "◆" },
   { id: "exec", label: "Ejecutar", icon: "▸" },
   { id: "resources", label: "Recursos", icon: "⤓" },
   { id: "tools", label: "Herramientas", icon: "◳" },
   { id: "adlab", label: "Lab anuncios", icon: "⌗" },
-  { id: "decisions", label: "Decisiones", icon: "✣" },
+  { id: "decisions", label: "Growth Lab", icon: "✣" },
   { id: "arsenal", label: "Arsenal", icon: "⚑" },
   { id: "landings", label: "Landings", icon: "▭" },
   { id: "companies", label: "Empresas", icon: "◎" },
@@ -1233,14 +1234,22 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
       );
   }, [companyById, country, funnelCapture, funnelStatus, query, scope, v3Index]);
   const top = companies.slice(0, 4);
-  const go = (v: View, options?: { adQuery?: string }) => {
+  const go = (v: View, options?: { adQuery?: string; tab?: string; area?: string }) => {
     setAdLabInitialQuery(v === "adlab" ? options?.adQuery || "" : "");
     setView(v);
     const url = new URL(window.location.href);
     if (v === "home") url.searchParams.delete("vista");
     else url.searchParams.set("vista", v);
+    if (v === "operations" && options?.tab) url.searchParams.set("tab", options.tab);
+    else url.searchParams.delete("tab");
+    if (v === "decisions" && options?.area) url.searchParams.set("area", options.area);
+    else url.searchParams.delete("area");
     window.history.pushState({ vista: v }, "", url);
     window.scrollTo({ top: 0, behavior: scrollBehavior() });
+  };
+  const openLandingBrief = (brief: LandingBrief) => {
+    window.localStorage.setItem("rv-landing-studio-v3", JSON.stringify(brief));
+    go("landings");
   };
   const chooseCountry = (name: string) => {
     setCountry(name);
@@ -1993,11 +2002,11 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 </span>
                 →
               </button>
-              <button onClick={() => go("blueprint")}>
+              <button onClick={() => go("decisions")}>
                 <b>03</b>
                 <span>
-                  <strong>Decidir qué aplicar</strong>
-                  <small>Blueprint y sistema operativo</small>
+                  <strong>Construir una campaña</strong>
+                  <small>Oportunidades, patrones, benchmark y playbooks</small>
                 </span>
                 →
               </button>
@@ -2015,6 +2024,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   if (company) openCompany(company);
                 }}
                 onOpenLab={() => go("adlab")}
+                onOpenLanding={openLandingBrief}
               />
             </Suspense>
           </div>
@@ -2027,8 +2037,8 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <h1>Del dato a la decisión</h1>
               <p>
                 Las {fmt(companies.length)} fichas, reducidas a lo que se puede
-                copiar ya: un backlog priorizado, los patrones que separan a los
-                referentes con score 80+ y los dossiers profundos del top 30. Cada
+                copiar ya: un backlog priorizado, los patrones observados en las
+                fichas de alta prioridad estratégica y los dossiers profundos del top 30. Cada
                 táctica cita la ficha de la que sale.
               </p>
             </section>
@@ -2095,7 +2105,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 <div className="section-head">
                   <div>
                     <p className="eyebrow">DETECTOR DE PATRONES · {fmt(patterns.universe)} FICHAS CRUZADAS</p>
-                    <h2>Qué hacen distinto los {patterns.winnersN} con puntuación 80+</h2>
+                    <h2>Qué se repite en las {patterns.winnersN} fichas con prioridad estratégica 80+</h2>
                   </div>
                 </div>
                 <div className="pattern-compare">
@@ -2473,6 +2483,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                   const company = companyById.get(id);
                   if (company) openCompany(company);
                 }}
+                onOpenFactory={() => go("operations", { tab: "factory" })}
+                onOpenAdLab={(adQuery) => go("adlab", { adQuery })}
+                onOpenLandings={() => go("landings")}
               />
             </Suspense>
           </div>
@@ -3261,7 +3274,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <p className="eyebrow">INFORME EJECUTIVO</p>
               <h1>El estado del mercado, en una página</h1>
               <p>
-                Generado en vivo desde la base: hallazgos de los cruces, patrones de los referentes con score 80+,
+                Generado en vivo desde la base: hallazgos de los cruces, patrones de las fichas con prioridad estratégica alta,
                 lectura de los anuncios reales, amenazas en España y próximas acciones. Cópialo o imprímelo a PDF.
               </p>
             </section>
@@ -4327,7 +4340,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                       </div>
                     ))}
                   </div>
-                  <h3 className="analysis-title">Las palabras de las fichas con score 80+ ({analytics.copyAnalysis.winnersN}) frente al resto</h3>
+                  <h3 className="analysis-title">Las palabras de las fichas con prioridad estratégica alta ({analytics.copyAnalysis.winnersN}) frente al resto</h3>
                   <div className="chip-row">
                     {analytics.copyAnalysis.winnerWords.slice(0, 14).map((w) => (
                       <span key={w.word} className="ref-chip word-win">{w.word} · {w.count}</span>

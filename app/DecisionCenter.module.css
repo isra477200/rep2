@@ -1018,9 +1018,11 @@
 }
 .landingCta {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
+  border: 0;
   border-radius: 10px;
   padding: 12px 13px;
   background: #eaf2ff;
@@ -1028,6 +1030,7 @@
   font-size: 12px;
   font-weight: 900;
   text-decoration: none;
+  text-align: left;
 }
 .playbookCard .companyEvidence + .landingCta {
   margin-top: 16px;

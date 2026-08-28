@@ -182,6 +182,62 @@ const hostLabel = (value?: string | null) => {
   }
 };
 
+const journeyTone = (status?: AuditStatus) => {
+  if (status === "aligned") return "observed";
+  if (status === "leak") return "leak";
+  if (status === "partial") return "partial";
+  return "not_observed";
+};
+
+const journeyStages = (item: AdLandingAuditItem) => {
+  const dimension = (id: string) =>
+    item.dimensions.find((candidate) => candidate.id === id);
+  const landingObserved = Boolean(
+    item.landing.capture.captureFile ||
+      item.landing.capture.headline ||
+      item.landing.read.headline,
+  );
+  const actionObserved = Boolean(
+    item.landing.read.primaryCta || item.landing.destinationCount,
+  );
+  return [
+    {
+      id: "ad",
+      label: "Anuncio",
+      detail: `${item.ads.usableForAudit} piezas aptas`,
+      tone: item.ads.usableForAudit ? "observed" : "not_observed",
+    },
+    {
+      id: "promise",
+      label: "Promesa y clic",
+      detail: dimension("promise")?.rationale || "Mensaje no comparable",
+      tone: journeyTone(dimension("promise")?.status),
+    },
+    {
+      id: "landing",
+      label: "Landing",
+      detail: landingObserved ? "Página capturada o leída" : "Página no recuperada",
+      tone: landingObserved ? "observed" : "not_observed",
+    },
+    {
+      id: "capture",
+      label: "CTA / formulario",
+      detail: actionObserved
+        ? item.landing.read.primaryCta || "Acción observada"
+        : "Acción no recuperada",
+      tone: actionObserved
+        ? journeyTone(dimension("destinationFriction")?.status || "partial")
+        : "not_observed",
+    },
+    {
+      id: "delivery",
+      label: "Entrega y nurture",
+      detail: "Etapa privada no observada",
+      tone: "not_observed",
+    },
+  ] as const;
+};
+
 function ScoreRing({
   score,
   coverage,
@@ -479,6 +535,22 @@ function AdLandingAuditContent({
               </div>
               <p>{selected.confidence.note}</p>
             </div>
+
+            <section className={styles.journey} aria-labelledby="journey-title">
+              <header>
+                <div><span>Recorrido reconstruido</span><h4 id="journey-title">De la impresión a lo último que podemos observar</h4></div>
+                <p>La etapa privada posterior al envío nunca se califica como fuga.</p>
+              </header>
+              <ol>
+                {journeyStages(selected).map((stage, index) => (
+                  <li key={stage.id} data-tone={stage.tone}>
+                    <i>{String(index + 1).padStart(2, "0")}</i>
+                    <div><strong>{stage.label}</strong><span>{stage.detail}</span></div>
+                    <b>{stage.tone === "observed" ? "Observado" : stage.tone === "partial" ? "Parcial" : stage.tone === "leak" ? "Fuga" : "No observado"}</b>
+                  </li>
+                ))}
+              </ol>
+            </section>
 
             <section className={styles.detailSection}>
               <div className={styles.sectionHeading}>
