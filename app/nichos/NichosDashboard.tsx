@@ -104,7 +104,7 @@ const DETAIL_TABS: Array<{ id: DetailTab; label: string }> = [
 const euro = new Intl.NumberFormat("es-ES", {
   style: "currency",
   currency: "EUR",
-  maximumFractionDigits: 0,
+  maximumFractionDigits: 2,
 });
 const decimal = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 1 });
 
@@ -220,7 +220,8 @@ function EconomicsModel({ niche, strategy }: { niche: Niche; strategy: NicheStra
   const acquisitionCost = values.media + fee;
   const contribution = grossProfit - acquisitionCost;
   const profitPerSale = values.valuePerSale * values.grossMarginPct / 100;
-  const maxCpl = profitPerSale * values.qualificationPct / 100 * values.showPct / 100 * values.closePct / 100;
+  const expectedGrossProfitPerLead = profitPerSale * values.qualificationPct / 100 * values.showPct / 100 * values.closePct / 100;
+  const maxCpl = values.media > 0 ? expectedGrossProfitPerLead / (1 + fee / values.media) : 0;
   const cac = sales > 0 ? acquisitionCost / sales : 0;
   const breakEvenSales = profitPerSale > 0 ? acquisitionCost / profitPerSale : 0;
 
@@ -463,6 +464,7 @@ export default function NichosDashboard() {
           <small>VERTICALES</small>
           {niches.map((niche) => {
             const strategy = STRATEGY[niche.id];
+            if (!strategy) return null;
             return (
               <button key={niche.id} className={view === "detail" && selectedId === niche.id ? styles.activeNav : ""} onClick={() => navigate("detail", niche.id)}>
                 <i>{String(niche.rank).padStart(2, "0")}</i>
@@ -577,7 +579,7 @@ export default function NichosDashboard() {
 
               <section className={styles.section}>
                 <SectionTitle eyebrow="TARIFAS CANÓNICAS" title="Honorarios, IVA y medios sin mezclar" text={data.disclaimer} />
-                <div className={styles.pricingGrid}>{data.pricing.map((price) => <article key={price.name}><span>{price.name}</span><strong>{euro.format(price.net)} <small>netos/mes</small></strong><p>IVA: {euro.format(price.vat)} · Total: {euro.format(price.gross)}</p><small>La inversión publicitaria se paga aparte a la plataforma.</small></article>)}</div>
+                <div className={styles.pricingGrid}>{data.pricing.map((price) => <article key={price.name}><span>{price.name}</span><strong>{euro.format(price.net)} <small>netos/mes</small></strong><p>{euro.format(price.net)} × 21% = {euro.format(price.vat)} IVA · Total: {euro.format(price.gross)}</p><small>La inversión publicitaria se paga aparte a la plataforma.</small></article>)}</div>
                 <div className={styles.sourceStrip}><strong>Fuente:</strong> {data.source}</div>
               </section>
             </>
