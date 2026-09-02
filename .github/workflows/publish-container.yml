@@ -41,11 +41,14 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Update Hostinger Docker project
-        if: ${{ secrets.HOSTINGER_API_KEY != '' }}
         env:
           HOSTINGER_API_KEY: ${{ secrets.HOSTINGER_API_KEY }}
         run: |
           set -euo pipefail
+          if [ -z "${HOSTINGER_API_KEY:-}" ]; then
+            echo 'HOSTINGER_API_KEY is not configured; image published without automatic Docker restart.'
+            exit 0
+          fi
           response=$(curl --silent --show-error --write-out '\n%{http_code}' \
             --request POST \
             --header 'Accept: application/json' \
@@ -59,7 +62,3 @@ jobs:
             exit 1
           fi
           echo "Hostinger accepted the RedVitalia project update."
-
-      - name: Hostinger API not configured
-        if: ${{ secrets.HOSTINGER_API_KEY == '' }}
-        run: echo 'HOSTINGER_API_KEY is not configured; the image is published but the Docker project cannot be restarted automatically.'
