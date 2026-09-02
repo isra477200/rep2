@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import NichosDashboard from "./NichosDashboard";
 
 export const metadata: Metadata = {
-  title: "Nichos · Inteligencia Mundial de Captación · RedVitalia",
+  title: "Nichos y competencia · Inteligencia Mundial de Captación · RedVitalia",
   description:
-    "Sistemas verticales de RedVitalia conectados con las fichas de competencia del mercado.",
+    "Sala de decisión de RedVitalia: cartera de verticales, economía editable, funnel, ejecución y competencia conectada con el mercado.",
   robots: {
     index: false,
     follow: false,
@@ -12,17 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function NichosPage() {
-  return (
-    <iframe
-      title="Nichos y competencia · RedVitalia"
-      src="/nichos-redvitalia.html"
-      style={{
-        display: "block",
-        width: "100%",
-        height: "100dvh",
-        border: 0,
-        background: "#f7f9fc",
-      }}
-    />
-  );
+  return <NichosDashboard />;
 }
