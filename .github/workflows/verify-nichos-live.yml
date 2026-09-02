@@ -1,0 +1,48 @@
+name: Verify RedVitalia niches live
+
+on:
+  push:
+    branches:
+      - chatgpt/verify-nichos-live-20260902
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Wait for the live deployment and verify it
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://redvitalia.srv1480016.hstgr.cloud'
+          for attempt in $(seq 1 120); do
+            echo "Verification attempt ${attempt}/120"
+            index=$(curl --silent --show-error --location --max-time 20 "${base}/data/nichos/index.json" || true)
+            script=$(curl --silent --show-error --location --max-time 20 "${base}/nichos-redvitalia.js" || true)
+            page=$(curl --silent --show-error --location --max-time 20 "${base}/nichos" || true)
+
+            index_ok=$(INDEX="$index" python - <<'PY'
+          import json, os
+          try:
+              data = json.loads(os.environ.get('INDEX', ''))
+              print('yes' if len(data.get('files', [])) == 10 else 'no')
+          except Exception:
+              print('no')
+          PY
+            )
+
+            if [ "$index_ok" = yes ] \
+              && printf '%s' "$script" | grep -q '68 cruces' \
+              && printf '%s' "$page" | grep -q 'nichos-redvitalia.html'; then
+              echo 'LIVE_OK: /nichos, 10 verticales and linked module are online.'
+              exit 0
+            fi
+
+            sleep 10
+          done
+
+          echo 'LIVE_CHECK_FAILED: the new image is not yet being served by Hostinger.'
+          exit 1
