@@ -30,8 +30,8 @@ export default function NicheNavBridge() {
       const button = target?.closest(".sidebar nav button");
       if (!(button instanceof HTMLButtonElement)) return;
 
-      const label = (button.textContent || "").replace(/\s+/g, " ").trim();
-      if (!/(^|\s)Nichos($|\s)/.test(label)) return;
+      const label = button.querySelector("span")?.textContent?.trim();
+      if (label !== "Nichos") return;
 
       event.preventDefault();
       event.stopPropagation();
