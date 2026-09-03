@@ -248,6 +248,25 @@ test("the delivery center exposes one complete downloadable package per campaign
   const deliveryCenter = await readFile(path.join(root, "app", "entregables", "DeliveryCenter.tsx"), "utf8");
   assert.match(deliveryCenter, /Descargar paquete ZIP/);
   assert.match(deliveryCenter, /Antes de publicar/i);
+  assert.match(deliveryCenter, /Material para conseguir y cerrar clientes de RedVitalia/i);
+  assert.match(deliveryCenter, /No son guiones para vender al consumidor final/i);
+
+  const enablementFiles = [
+    "01-PRESENTACION-COMERCIAL-REDVITALIA.pptx",
+    "01-PRESENTACION-COMERCIAL-REDVITALIA.pdf",
+    "02-PLAYBOOK-CLOSER-POR-VERTICALES.pptx",
+    "02-PLAYBOOK-CLOSER-POR-VERTICALES.pdf",
+    "03-MANUAL-PROSPECCION-Y-LLAMADA-FRIA.docx",
+    "03-MANUAL-PROSPECCION-Y-LLAMADA-FRIA.pdf",
+    "04-MANUAL-CLOSER-REDVITALIA.docx",
+    "04-MANUAL-CLOSER-REDVITALIA.pdf",
+  ];
+  for (const filename of enablementFiles) {
+    const file = await stat(path.join(root, "public", "assets", "ejecucion", "enablement", filename));
+    assert.ok(file.size > 20_000, `${filename} is unexpectedly small`);
+  }
+  const enablementArchive = await stat(path.join(root, "public", "assets", "ejecucion", "enablement", "KIT-COMERCIAL-REDVITALIA.zip"));
+  assert.ok(enablementArchive.size > 5_000_000, "commercial enablement archive is unexpectedly small");
 });
 
 test("campaign and creative deep links are consumed instead of discarding context", async () => {

@@ -43,6 +43,40 @@ export default function DeliveryCenter() {
       description="Cada paquete reúne briefing, landing, medición y 42 imágenes reales. Lo que depende de marca, pruebas o aprobación del cliente aparece separado, no escondido."
       actions={<a className={styles.headerDownload} href="/assets/ejecucion/delivery-manifest.json" download>Descargar inventario</a>}
     >
+      <section className={styles.commercialKit} aria-labelledby="commercial-kit-title">
+        <header className={styles.kitHeader}>
+          <div>
+            <p className={styles.kitEyebrow}>KIT COMERCIAL · CAPTACIÓN B2B</p>
+            <h2 id="commercial-kit-title">Material para conseguir y cerrar clientes de RedVitalia.</h2>
+            <p>Prospección a empresas que contratarán a RedVitalia para gestionar su publicidad y captación. No son guiones para vender al consumidor final.</p>
+          </div>
+          <div className={styles.kitSummary}>
+            <span><b>4</b> materiales principales</span>
+            <span><b>51</b> diapositivas y páginas</span>
+            <a href="/assets/ejecucion/enablement/KIT-COMERCIAL-REDVITALIA.zip" download>Descargar kit completo</a>
+          </div>
+        </header>
+
+        <div className={styles.kitGrid}>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/presentacion-comercial.png" alt="Vista previa de la presentación comercial" />
+            <div><p>PARA EL PROSPECTO</p><h3>Presentación comercial</h3><span>12 diapositivas para conducir el diagnóstico y explicar el sistema con claridad.</span><nav><a href="/assets/ejecucion/enablement/01-PRESENTACION-COMERCIAL-REDVITALIA.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/01-PRESENTACION-COMERCIAL-REDVITALIA.pptx" download>Editar PPTX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/playbook-closer.png" alt="Vista previa del playbook para closers" />
+            <div><p>USO INTERNO · CLOSER</p><h3>Playbook por verticales</h3><span>Discovery, objeciones, criterios de rechazo y 12 battlecards sectoriales.</span><nav><a href="/assets/ejecucion/enablement/02-PLAYBOOK-CLOSER-POR-VERTICALES.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/02-PLAYBOOK-CLOSER-POR-VERTICALES.pptx" download>Editar PPTX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/manual-llamada-fria.png" alt="Portada del manual de llamada fría" />
+            <div><p>USO INTERNO · CALLER</p><h3>Manual de llamada fría</h3><span>Guiones exactos, gatekeeper, objeciones, seguimiento, CRM y entrenamiento.</span><nav><a href="/assets/ejecucion/enablement/03-MANUAL-PROSPECCION-Y-LLAMADA-FRIA.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/03-MANUAL-PROSPECCION-Y-LLAMADA-FRIA.docx" download>Editar DOCX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/manual-closer.png" alt="Portada del manual del closer" />
+            <div><p>USO INTERNO · CLOSER</p><h3>Manual del closer</h3><span>Handoff, scorecard, economía, cierres, señales por vertical y certificación.</span><nav><a href="/assets/ejecucion/enablement/04-MANUAL-CLOSER-REDVITALIA.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/04-MANUAL-CLOSER-REDVITALIA.docx" download>Editar DOCX</a></nav></div>
+          </article>
+        </div>
+      </section>
+
       <section className={styles.summary} aria-label="Resumen de entregables">
         <article><span>Paquetes de campaña</span><strong>{CAMPAIGNS.length}</strong><small>12 B2B + 12 B2C</small></article>
         <article><span>Archivos gráficos</span><strong>{number.format(CREATIVES.length * CREATIVE_FORMATS.length)}</strong><small>JPG listos para descarga</small></article>
