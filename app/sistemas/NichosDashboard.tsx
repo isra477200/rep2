@@ -502,6 +502,7 @@ export default function NichosDashboard() {
         </a>
         <div className={`${styles.sideBlock} ${styles.executionLinks}`}>
           <small>EJECUCIÓN REDVITALIA</small>
+          <a href="/maestro"><i>✦</i><span>Maestro MiniMax</span></a>
           <a href="/entregables"><i>01</i><span>Centro de entregables</span></a>
           <a className={styles.activeExecution} href="/sistemas"><i>02</i><span>Sistemas de captación</span></a>
           <a href="/campanas"><i>03</i><span>Campañas</span></a>

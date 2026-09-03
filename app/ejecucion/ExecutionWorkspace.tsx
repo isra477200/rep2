@@ -29,7 +29,7 @@ import { downloadJson, usePersistentState, writeStoredValue } from "./storage";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const calculate = calculateEconomics;
 
-type WorkspaceKind = Exclude<ExecutionSection, "systems" | "delivery">;
+type WorkspaceKind = Exclude<ExecutionSection, "systems" | "delivery" | "maestro" | "commercial">;
 
 type CampaignDraft = (typeof CAMPAIGNS)[number] & {
   subniche: string;

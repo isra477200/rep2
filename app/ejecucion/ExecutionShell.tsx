@@ -7,6 +7,7 @@ import WorkspaceTransfer from "./WorkspaceTransfer";
 import { CAPTURE_UNITS } from "./catalog";
 
 export const EXECUTION_NAV = [
+  { id: "maestro", href: "/maestro", label: "Maestro MiniMax", icon: "✦" },
   { id: "delivery", href: "/entregables", label: "Centro de entregables", icon: "01" },
   { id: "systems", href: "/sistemas", label: "Sistemas de captación", icon: "02" },
   { id: "campaigns", href: "/campanas", label: "Campañas", icon: "03" },

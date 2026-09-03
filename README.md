@@ -32,3 +32,21 @@ npm run ads:qa
 
 El despliegue de Hostinger se define en `docker-compose.yml` y se mantiene
 aislado del resto de proyectos del servidor.
+
+## Maestro MiniMax
+
+`/maestro` es el centro de mando conversacional de RedVitalia. También aparece
+como asistente flotante en el resto de la aplicación. Admite cuatro modos:
+preguntar, analizar, crear un entregable y auditar. El historial y los encargos
+guardados permanecen en el navegador.
+
+La credencial de MiniMax nunca llega al navegador ni se guarda en este
+repositorio. El recorrido es aplicación → Worker privado → webhook protegido de
+n8n → credencial `MiniMax account`. Para activarlo en local:
+
+1. Copia las dos variables de `config/redvitalia-ai.env.example` a `.dev.vars`.
+2. Usa la misma llave privada que valida el workflow de n8n.
+3. Reinicia el servidor local.
+
+La memoria compacta se genera en cada compilación con `npm run ai:context`. El
+workflow reproducible se conserva en `automation/n8n/redvitalia-maestro.workflow.ts`.

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./completion.css";
 import "./market-insights.css";
+import AppCopilotDock from "./maestro/AppCopilotDock";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -54,6 +55,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <AppCopilotDock />
       </body>
     </html>
   );

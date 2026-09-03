@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import sharp from "sharp";
 import {
@@ -251,8 +252,8 @@ test("workspace snapshots are versioned, bounded and round-trip without unrelate
   assert.equal(decodeStoredValue("not-json", "fallback"), "fallback");
 });
 
-test("all ten native execution routes are present without embedded page frames", async () => {
-  const routes = ["entregables", "operacion-comercial", "sistemas", "campanas", "creativos", "biblioteca-creativa", "laboratorio", "experimentos", "decisiones", "aprendizajes"];
+test("all native execution routes are present without embedded page frames", async () => {
+  const routes = ["maestro", "entregables", "operacion-comercial", "sistemas", "campanas", "creativos", "biblioteca-creativa", "laboratorio", "experimentos", "decisiones", "aprendizajes"];
   for (const route of routes) await stat(path.join(root, "app", route, "page.tsx"));
   const sources = await Promise.all([
     readFile(path.join(root, "app", "ejecucion", "ExecutionShell.tsx"), "utf8"),
@@ -262,7 +263,7 @@ test("all ten native execution routes are present without embedded page frames",
     readFile(path.join(root, "app", "landings", "[slug]", "LandingBlueprintView.tsx"), "utf8"),
   ]);
   assert.doesNotMatch(sources.join("\n"), /<iframe\b/i);
-  assert.doesNotMatch(sources.join("\n"), /MiniMax|Claude|Quién hace qué/i);
+  assert.doesNotMatch(sources.join("\n"), /Claude|Quién hace qué/i);
 });
 
 test("the delivery center exposes one complete downloadable package per campaign", async () => {
@@ -334,4 +335,58 @@ test("campaign and creative deep links are consumed instead of discarding contex
   assert.match(workspace, /query\.get\("creatividad"\)/);
   assert.match(workspace, /usePersistentState\("campaign-filter-unit"/);
   assert.match(workspace, /usePersistentState\("library-filters"/);
+});
+
+test("Maestro receives a bounded application-wide context without exposing credentials", async () => {
+  const contextPath = path.join(root, "worker", "redvitalia-maestro-context.generated.json");
+  const contextFile = await readFile(contextPath, "utf8");
+  assert.ok(Buffer.byteLength(contextFile, "utf8") <= 70_000);
+  assert.doesNotMatch(contextFile, /REDVITALIA_AI_GATEWAY_SECRET|authorization|api[_-]?key|bearer\s/i);
+
+  const context = JSON.parse(contextFile);
+  assert.deepEqual(
+    {
+      records: context.totals.marketRecords,
+      systems: context.totals.systems,
+      units: context.totals.captureUnits,
+      campaigns: context.totals.campaigns,
+      routes: context.totals.growthRoutes,
+      landings: context.totals.landingBlueprints,
+    },
+    { records: 712, systems: 10, units: 12, campaigns: 24, routes: 40, landings: 27 },
+  );
+  assert.equal(context.systems.reduce((total, system) => total + system.routes.length, 0), 40);
+  const { sha256, ...unsigned } = context;
+  assert.equal(sha256, createHash("sha256").update(JSON.stringify(unsigned)).digest("hex"));
+
+  const worker = await readFile(path.join(root, "worker", "index.ts"), "utf8");
+  assert.match(worker, /\/api\/redvitalia-ai/);
+  assert.match(worker, /REDVITALIA_AI_GATEWAY_SECRET/);
+  assert.match(worker, /body\.appContext/);
+  assert.match(worker, /redvitalia-maestro-context\.generated\.json/);
+  assert.doesNotMatch(worker, /NEXT_PUBLIC_|VITE_/);
+
+  const workflow = await readFile(path.join(root, "automation", "n8n", "redvitalia-maestro.workflow.ts"), "utf8");
+  assert.match(workflow, /newCredential\("MiniMax account"\)/);
+  assert.match(workflow, /MiniMax-M3/);
+  assert.match(workflow, /executedActions:\[\]/);
+  assert.match(workflow, /rate_limit/);
+  assert.doesNotMatch(workflow, /sk-[A-Za-z0-9_-]{20,}|Bearer\s+[A-Za-z0-9_.-]{20,}/);
+
+  const gitignore = await readFile(path.join(root, ".gitignore"), "utf8");
+  assert.match(gitignore, /^\/\.dev\.vars$/m);
+});
+
+test("Maestro is a native working surface with four modes, saved work and a global dock", async () => {
+  const workspace = await readFile(path.join(root, "app", "maestro", "MaestroWorkspace.tsx"), "utf8");
+  const dock = await readFile(path.join(root, "app", "maestro", "AppCopilotDock.tsx"), "utf8");
+  const modes = await readFile(path.join(root, "app", "maestro", "types.ts"), "utf8");
+  const layout = await readFile(path.join(root, "app", "layout.tsx"), "utf8");
+  assert.match(workspace, /Mesa de trabajo/);
+  assert.match(workspace, /Guardar como encargo/);
+  assert.match(workspace, /Exportar conversación/);
+  for (const mode of ["ask", "analyze", "create", "audit"]) assert.match(modes, new RegExp(`id: "${mode}"`));
+  assert.match(dock, /Abrir centro de mando/);
+  assert.match(layout, /<AppCopilotDock \/>/);
+  assert.doesNotMatch(`${workspace}\n${dock}`, /dangerouslySetInnerHTML|rehypeRaw/);
 });
