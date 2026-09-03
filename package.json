@@ -45,6 +45,7 @@
     "ads:qa": "node --experimental-strip-types --test tests/ad-corpus.test.mjs tests/ad-intelligence.test.mjs tests/ad-language.test.mjs tests/ad-pattern-engine.test.mjs tests/leads-market-import.test.mjs tests/serpapi-google-ads.test.mjs",
     "ads:patterns:test": "node --experimental-strip-types --test tests/ad-pattern-engine.test.mjs",
     "execution:build": "node --experimental-strip-types scripts/build-execution-creatives.mjs",
+    "execution:deliverables": "node --experimental-strip-types scripts/build-execution-deliverables.mjs",
     "execution:qa": "node --experimental-strip-types --test tests/execution-redvitalia.test.mjs",
     "scrapecreators:normalize": "node scripts/normalize-scrapecreators-ads.mjs",
     "scrapecreators:companies": "node scripts/integrate-scrapecreators-companies.mjs",

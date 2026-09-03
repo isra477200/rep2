@@ -311,6 +311,7 @@ export default function NichosDashboard() {
   const [view, setView] = useState<View>("overview");
   const [selectedId, setSelectedId] = useState("legal");
   const [detailTab, setDetailTab] = useState<DetailTab>("strategy");
+  const [playbookUnitId, setPlaybookUnitId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
   const [phaseFilter, setPhaseFilter] = useState<PhaseFilter>("Todos");
@@ -390,6 +391,7 @@ export default function NichosDashboard() {
   const selected = niches.find((niche) => niche.id === selectedId) || niches[0];
   const selectedStrategy = selected ? STRATEGY[selected.id] : null;
   const selectedPlaybooks = useMemo(() => selected ? buildOperationalPlaybooks(selected.id, selected) : [], [selected]);
+  const activePlaybook = selectedPlaybooks.find((item) => item.unitId === playbookUnitId) || selectedPlaybooks[0];
 
   const scoredNiches = useMemo(() => niches
     .filter((niche) => STRATEGY[niche.id])
@@ -483,14 +485,15 @@ export default function NichosDashboard() {
         </a>
         <div className={`${styles.sideBlock} ${styles.executionLinks}`}>
           <small>EJECUCIÓN REDVITALIA</small>
-          <a className={styles.activeExecution} href="/sistemas"><i>01</i><span>Sistemas de captación</span></a>
-          <a href="/campanas"><i>02</i><span>Campañas</span></a>
-          <a href="/creativos"><i>03</i><span>Fábrica creativa</span></a>
-          <a href="/biblioteca-creativa"><i>04</i><span>Biblioteca creativa</span></a>
-          <a href="/laboratorio"><i>05</i><span>Laboratorio económico</span></a>
-          <a href="/experimentos"><i>06</i><span>Experimentos</span></a>
-          <a href="/decisiones"><i>07</i><span>Decisiones</span></a>
-          <a href="/aprendizajes"><i>08</i><span>Aprendizajes</span></a>
+          <a href="/entregables"><i>01</i><span>Centro de entregables</span></a>
+          <a className={styles.activeExecution} href="/sistemas"><i>02</i><span>Sistemas de captación</span></a>
+          <a href="/campanas"><i>03</i><span>Campañas</span></a>
+          <a href="/creativos"><i>04</i><span>Fábrica creativa</span></a>
+          <a href="/biblioteca-creativa"><i>05</i><span>Biblioteca creativa</span></a>
+          <a href="/laboratorio"><i>06</i><span>Laboratorio económico</span></a>
+          <a href="/experimentos"><i>07</i><span>Experimentos</span></a>
+          <a href="/decisiones"><i>08</i><span>Decisiones</span></a>
+          <a href="/aprendizajes"><i>09</i><span>Aprendizajes</span></a>
         </div>
         <div className={styles.sideBlock}>
           <small>DECISIÓN</small>
@@ -806,8 +809,9 @@ export default function NichosDashboard() {
                     <article><span>TRAZABILIDAD</span><strong>{selectedPlaybooks.reduce((sum, item) => sum + item.sections.flatMap((section) => section.items).length, 0)}</strong><p>campos con evidencia y fuente</p></article>
                     <article><span>CONTROL</span><strong>Humano</strong><p>sin publicación automática</p></article>
                   </div>
+                  {selectedPlaybooks.length > 1 ? <nav className={styles.playbookPicker} aria-label="Elegir unidad operativa">{selectedPlaybooks.map((playbook) => <button key={playbook.unitId} className={activePlaybook?.unitId === playbook.unitId ? styles.playbookPickerActive : ""} onClick={() => setPlaybookUnitId(playbook.unitId)}>{playbook.name}</button>)}</nav> : null}
                   <div className={styles.playbookUnits}>
-                    {selectedPlaybooks.map((playbook) => (
+                    {activePlaybook ? [activePlaybook].map((playbook) => (
                       <article className={styles.playbookUnit} key={playbook.unitId}>
                         <header><div><span>{playbook.unitId} · v{playbook.version}</span><h2>{playbook.name}</h2></div><small>{playbook.generatedAt}</small></header>
                         <div className={styles.playbookSections}>
@@ -827,7 +831,7 @@ export default function NichosDashboard() {
                           ))}
                         </div>
                       </article>
-                    ))}
+                    )) : null}
                   </div>
                 </section>
               ) : null}

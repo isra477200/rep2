@@ -29,7 +29,7 @@ import { downloadJson, usePersistentState, writeStoredValue } from "./storage";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const calculate = calculateEconomics;
 
-type WorkspaceKind = Exclude<ExecutionSection, "systems">;
+type WorkspaceKind = Exclude<ExecutionSection, "systems" | "delivery">;
 
 type CampaignDraft = (typeof CAMPAIGNS)[number] & {
   subniche: string;
@@ -216,7 +216,7 @@ function CampaignsView() {
             <article><h3>Seguimiento multicanal</h3><p><b>Email:</b> {selected.messages.emailSubject}</p><p><b>Apertura:</b> {selected.messages.openingScript}</p><p><b>No-show:</b> {selected.messages.noShow}</p></article>
             <article><h3>Control</h3><label className={styles.field}><span>Estado local</span><select value={selected.status} onChange={(event) => changeCampaignState(selected.id, event.target.value)}>{CAMPAIGN_STATES.map((item) => <option key={item}>{item}</option>)}</select></label><button className={styles.secondary} onClick={() => downloadJson(`${selected.id}.json`, selected)}>Exportar briefing completo</button></article>
           </div>
-          <details className={packStyles.packDisclosure} open><summary>Ver pack operativo completo</summary><CampaignPack campaign={selected} /></details>
+           <details className={packStyles.packDisclosure}><summary>Consultar planificación, audiencias, medición y puerta de lanzamiento</summary><CampaignPack campaign={selected} /></details>
         </section>
       ) : null}
       <section className={styles.section} id="campaign-builder">

@@ -220,8 +220,8 @@ test("workspace snapshots are versioned, bounded and round-trip without unrelate
   assert.equal(decodeStoredValue("not-json", "fallback"), "fallback");
 });
 
-test("all eight native execution routes are present without embedded page frames", async () => {
-  const routes = ["sistemas", "campanas", "creativos", "biblioteca-creativa", "laboratorio", "experimentos", "decisiones", "aprendizajes"];
+test("all nine native execution routes are present without embedded page frames", async () => {
+  const routes = ["entregables", "sistemas", "campanas", "creativos", "biblioteca-creativa", "laboratorio", "experimentos", "decisiones", "aprendizajes"];
   for (const route of routes) await stat(path.join(root, "app", route, "page.tsx"));
   const sources = await Promise.all([
     readFile(path.join(root, "app", "ejecucion", "ExecutionShell.tsx"), "utf8"),
@@ -231,6 +231,23 @@ test("all eight native execution routes are present without embedded page frames
   ]);
   assert.doesNotMatch(sources.join("\n"), /<iframe\b/i);
   assert.doesNotMatch(sources.join("\n"), /MiniMax|Claude|Quién hace qué/i);
+});
+
+test("the delivery center exposes one complete downloadable package per campaign", async () => {
+  const manifest = JSON.parse(await readFile(path.join(root, "public", "assets", "ejecucion", "delivery-manifest.json"), "utf8"));
+  assert.equal(manifest.packages.length, CAMPAIGNS.length);
+  assert.equal(manifest.totals.images, CREATIVES.length * CREATIVE_FORMATS.length);
+  assert.equal(new Set(manifest.packages.map((item) => item.sha256)).size, CAMPAIGNS.length);
+  for (const item of manifest.packages) {
+    assert.equal(item.images, 42);
+    assert.equal(item.concepts, 6);
+    assert.match(item.status, /marca y aprobación pendientes/i);
+    const archive = await stat(path.join(root, "public", item.zip.replace(/^\//, "")));
+    assert.ok(archive.size > 1_000_000, `${item.id} package is unexpectedly small`);
+  }
+  const deliveryCenter = await readFile(path.join(root, "app", "entregables", "DeliveryCenter.tsx"), "utf8");
+  assert.match(deliveryCenter, /Descargar paquete ZIP/);
+  assert.match(deliveryCenter, /Antes de publicar/i);
 });
 
 test("campaign and creative deep links are consumed instead of discarding context", async () => {

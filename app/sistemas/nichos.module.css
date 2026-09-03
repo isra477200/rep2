@@ -175,6 +175,13 @@
   opacity: 0.92;
 }
 
+.playbookPicker{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 12px;padding:5px;border:1px solid #d8e2ee;border-radius:9px;background:#f4f7fb}.playbookPicker button{min-height:42px;padding:8px 14px;border:0;border-radius:6px;color:#53667e;background:transparent;font-size:13px;font-weight:760}.playbookPicker button:hover{background:#e8eef7}.playbookPicker .playbookPickerActive{color:#fff;background:#12315a}.playbookPicker .playbookPickerActive:hover{background:#12315a}
+@media(max-width:680px){.playbookPicker{display:grid}.playbookPicker button{text-align:left}}
+
+/* La cabecera del sistema resume; el detalle vive en las pestañas, no en una pared de micrométricas. */
+.detailHero{grid-template-columns:minmax(0,1fr) 220px;gap:24px;padding:30px 48px}.detailHero h1{margin-top:11px;font-size:clamp(38px,4vw,54px)}.detailBadges>span{padding:5px 9px;font-size:11px}.detailHero>aside{padding:17px;border-radius:10px}.detailHero>aside>span,.detailHero>aside>small{font-size:11px}.detailHero>aside>strong{font-size:38px}.detailHero>aside>div{display:none}.detailTabs button{min-height:42px;padding:9px 14px;font-size:13px}
+@media(max-width:760px){.detailHero{display:block;padding:30px 18px}.detailHero>aside{display:none}.detailHero h1{font-size:40px}.detailTabs{top:61px;padding:8px 14px}}
+
 .executionLinks {
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(255,255,255,.08);

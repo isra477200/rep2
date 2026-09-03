@@ -27,7 +27,7 @@
 .campaignPack h4 { margin: 0 0 8px; font-size: 0.78rem; }
 .campaignPack p,
 .campaignPack li,
-.campaignPack small { color: #65738a; font-size: 0.75rem; line-height: 1.5; }
+.campaignPack small { color: #5c6c81; font-size: 0.875rem; line-height: 1.55; }
 
 .packSequence {
   display: grid;
@@ -45,7 +45,7 @@
   border: 1px solid #dfe6ef;
   border-radius: 8px;
   color: #4d5e75;
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   line-height: 1.45;
 }
 
@@ -75,7 +75,7 @@
 .packTable > div {
   color: #fff;
   background: #13233d;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 
@@ -90,7 +90,7 @@
 .packTable > article:last-child > * { border-bottom: 0; }
 .packTable > article > *:last-child,
 .packTable > div span:last-child { border-right: 0; }
-.packTable > article strong { font-size: 0.75rem; }
+.packTable > article strong { font-size: 0.86rem; }
 
 .packColumns {
   display: grid;
@@ -106,7 +106,7 @@
   background: #f8fafc;
 }
 
-.packColumns b { font-size: 0.75rem; }
+.packColumns b { font-size: 0.86rem; }
 .packColumns p { margin: 6px 0; }
 
 .budgetBar {
@@ -123,7 +123,7 @@
   border-right: 1px solid #c9daf4;
   color: #37516f;
   background: #eaf2ff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .budgetBar span:nth-child(2) { background: #dbeaff; }
@@ -151,7 +151,7 @@
   border-radius: 7px;
   color: #536176;
   background: #f8fafc;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 1100px) {

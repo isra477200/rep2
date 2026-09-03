@@ -7,25 +7,28 @@ import WorkspaceTransfer from "./WorkspaceTransfer";
 import { CAPTURE_UNITS } from "./catalog";
 
 export const EXECUTION_NAV = [
-  { id: "systems", href: "/sistemas", label: "Sistemas de captación", icon: "01" },
-  { id: "campaigns", href: "/campanas", label: "Campañas", icon: "02" },
-  { id: "creative", href: "/creativos", label: "Fábrica creativa", icon: "03" },
-  { id: "library", href: "/biblioteca-creativa", label: "Biblioteca creativa", icon: "04" },
-  { id: "economics", href: "/laboratorio", label: "Laboratorio económico", icon: "05" },
-  { id: "experiments", href: "/experimentos", label: "Experimentos", icon: "06" },
-  { id: "decisions", href: "/decisiones", label: "Decisiones", icon: "07" },
-  { id: "learnings", href: "/aprendizajes", label: "Aprendizajes", icon: "08" },
+  { id: "delivery", href: "/entregables", label: "Centro de entregables", icon: "01" },
+  { id: "systems", href: "/sistemas", label: "Sistemas de captación", icon: "02" },
+  { id: "campaigns", href: "/campanas", label: "Campañas", icon: "03" },
+  { id: "creative", href: "/creativos", label: "Fábrica creativa", icon: "04" },
+  { id: "library", href: "/biblioteca-creativa", label: "Biblioteca creativa", icon: "05" },
+  { id: "economics", href: "/laboratorio", label: "Laboratorio económico", icon: "06" },
+  { id: "experiments", href: "/experimentos", label: "Experimentos", icon: "07" },
+  { id: "decisions", href: "/decisiones", label: "Decisiones", icon: "08" },
+  { id: "learnings", href: "/aprendizajes", label: "Aprendizajes", icon: "09" },
 ] as const;
 
 export type ExecutionSection = (typeof EXECUTION_NAV)[number]["id"];
 
-export default function ExecutionShell({ active, eyebrow, title, description, actions, children }: {
+export default function ExecutionShell({ active, eyebrow, title, description, actions, children, compact = false, immersive = false }: {
   active: ExecutionSection;
   eyebrow: string;
   title: string;
   description: string;
   actions?: ReactNode;
   children: ReactNode;
+  compact?: boolean;
+  immersive?: boolean;
 }) {
   const [query, setQuery] = useState("");
   const normalized = query.trim().toLocaleLowerCase("es");
@@ -84,11 +87,11 @@ export default function ExecutionShell({ active, eyebrow, title, description, ac
             </select>
           </label>
         </header>
-        <div className={styles.mobileSearch}><label htmlFor="execution-mobile-search">Buscar en ejecución</label><input id="execution-mobile-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Sistema, campaña o creatividad" />{results.length ? <div>{results.map((item) => <Link prefetch={false} key={item.id} href={item.href} onClick={() => setQuery("")}><span>{item.label}</span><small>{item.detail}</small></Link>)}</div> : null}</div>
-        <header className={styles.pageHead}>
+        {!immersive ? <div className={styles.mobileSearch}><label htmlFor="execution-mobile-search">Buscar en ejecución</label><input id="execution-mobile-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Sistema, campaña o creatividad" />{results.length ? <div>{results.map((item) => <Link prefetch={false} key={item.id} href={item.href} onClick={() => setQuery("")}><span>{item.label}</span><small>{item.detail}</small></Link>)}</div> : null}</div> : null}
+        {!immersive ? <header className={`${styles.pageHead} ${compact ? styles.pageHeadCompact : ""}`}>
           <div><nav className={styles.breadcrumbs} aria-label="Migas de pan"><Link prefetch={false} href="/?vista=home">Mercado</Link><span>/</span><Link prefetch={false} href="/sistemas">Ejecución</Link><span>/</span><b>{EXECUTION_NAV.find((item) => item.id === active)?.label}</b></nav><p>{eyebrow}</p><h1>{title}</h1><span>{description}</span></div>
           {actions ? <div className={styles.pageActions}>{actions}</div> : null}
-        </header>
+        </header> : null}
         <main id="execution-content" className={styles.content}>{children}</main>
       </div>
     </div>
