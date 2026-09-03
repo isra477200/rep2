@@ -1,14 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import ExecutionShell from "../../ejecucion/ExecutionShell";
 import { CAR_TRIAGE_LINKS, type LandingBlueprint } from "../../ejecucion/landing-blueprints";
 import { downloadJson, usePersistentState } from "../../ejecucion/storage";
 import styles from "./landing-blueprint.module.css";
+import simStyles from "./landing-simulator.module.css";
 
 export default function LandingBlueprintView({ blueprint }: { blueprint: LandingBlueprint }) {
   const [review, setReview] = usePersistentState<Record<string, boolean>>(`landing-review-${blueprint.slug}`, {});
   const [notes, setNotes] = usePersistentState(`landing-notes-${blueprint.slug}`, "");
+  const [simulated, setSimulated] = useState(false);
   const isCarTriage = blueprint.slug === "vender-coche-con-cargas";
   const checklist = [
     "Cliente, responsable y datos legales confirmados",
@@ -53,6 +56,16 @@ export default function LandingBlueprintView({ blueprint }: { blueprint: Landing
           <b>Evento tras validación y envío real</b>
           <code>{blueprint.event}</code>
         </aside>
+      </section>
+
+      <section className={simStyles.formSimulator} id="form-simulator">
+        <header><div><p>SIMULADOR DE FORMULARIO</p><h2>Comprobar campos y éxito sin enviar datos</h2></div><span>Memoria temporal · se vacía al salir</span></header>
+        <form onSubmit={(event) => { event.preventDefault(); setSimulated(true); }} onChange={() => setSimulated(false)}>
+          <div>{blueprint.fields.filter((field) => !/consentimiento/i.test(field)).map((field, index) => <label key={field}><span>{field}</span><input required name={`field-${index + 1}`} type={/tel[eé]fono/i.test(field) ? "tel" : "text"} autoComplete="off" placeholder="Dato de prueba" /></label>)}</div>
+          <label className={simStyles.simulatedConsent}><input required type="checkbox" /><span>Confirmo que estos son datos ficticios usados solo para validar la propuesta interna.</span></label>
+          <button type="submit">Simular validación</button>
+        </form>
+        {simulated ? <div className={simStyles.simulatedSuccess} role="status"><strong>Validación correcta</strong><span>No se envió ni guardó ningún dato. En producción, el envío válido activaría <code>{blueprint.event}</code>.</span></div> : null}
       </section>
 
       {isCarTriage ? (

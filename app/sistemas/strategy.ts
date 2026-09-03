@@ -1,4 +1,18 @@
-export type DimensionKey = "demand" | "value" | "defensibility" | "speed" | "evidence";
+export type DimensionKey =
+  | "demand"
+  | "value"
+  | "margin"
+  | "qualification"
+  | "demonstrability"
+  | "competition"
+  | "defensibility"
+  | "experience"
+  | "speed"
+  | "legalRisk"
+  | "standardisation"
+  | "scalability"
+  | "mentalCost"
+  | "volume";
 
 export type NicheStrategy = {
   phase: "Ahora" | "Siguiente" | "Validar" | "Después";
@@ -29,9 +43,37 @@ export type NicheStrategy = {
 export const DIMENSION_LABELS: Record<DimensionKey, string> = {
   demand: "Demanda",
   value: "Valor económico",
+  margin: "Margen",
+  qualification: "Facilidad de cualificación",
+  demonstrability: "Facilidad de demostrar resultado",
+  competition: "Competencia favorable",
   defensibility: "Defendibilidad",
+  experience: "Experiencia previa",
   speed: "Velocidad de aprendizaje",
-  evidence: "Evidencia disponible",
+  legalRisk: "Riesgo legal controlable",
+  standardisation: "Estandarización",
+  scalability: "Escalabilidad",
+  mentalCost: "Coste mental sostenible",
+  volume: "Volumen potencial",
+};
+
+export const DIMENSION_KEYS = Object.keys(DIMENSION_LABELS) as DimensionKey[];
+
+export const sanitizeWeights = (value: unknown, defaults: Record<DimensionKey, number>) => {
+  const source = value && typeof value === "object" ? value as Partial<Record<DimensionKey, unknown>> : {};
+  return DIMENSION_KEYS.reduce<Record<DimensionKey, number>>((result, key) => {
+    const candidate = Number(source[key]);
+    result[key] = Number.isFinite(candidate) && candidate >= 0 ? candidate : defaults[key];
+    return result;
+  }, { ...defaults });
+};
+
+export const weightedStrategyScore = (
+  strategy: Pick<NicheStrategy, "dimensions">,
+  weights: Record<DimensionKey, number>,
+) => {
+  const denominator = DIMENSION_KEYS.reduce((sum, key) => sum + weights[key], 0) || 1;
+  return DIMENSION_KEYS.reduce((sum, key) => sum + strategy.dimensions[key] * weights[key], 0) / denominator;
 };
 
 export const STRATEGY: Record<string, NicheStrategy> = {
@@ -39,7 +81,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Ahora",
     channel: "Google Search",
     salesCycle: "7–45 días",
-    dimensions: { demand: 94, value: 91, defensibility: 82, speed: 78, evidence: 88 },
+    dimensions: { demand: 94, value: 91, margin: 84, qualification: 76, demonstrability: 72, competition: 58, defensibility: 82, experience: 88, speed: 78, legalRisk: 54, standardisation: 80, scalability: 85, mentalCost: 57, volume: 91 },
     economics: { media: 1400, cpl: 48, valuePerSale: 2200, grossMarginPct: 65, qualificationPct: 45, showPct: 70, closePct: 24 },
     subsegments: [
       { name: "Ley de Segunda Oportunidad", priority: "P1", why: "Dolor urgente, intención explícita y asunto fácil de clasificar antes de consulta.", entry: "Deuda, acreedores, ingresos, bienes y provincia." },
@@ -74,7 +116,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Siguiente",
     channel: "Google Search + Meta visual",
     salesCycle: "14–75 días",
-    dimensions: { demand: 85, value: 88, defensibility: 84, speed: 81, evidence: 82 },
+    dimensions: { demand: 85, value: 88, margin: 77, qualification: 83, demonstrability: 86, competition: 71, defensibility: 84, experience: 82, speed: 81, legalRisk: 84, standardisation: 78, scalability: 75, mentalCost: 73, volume: 79 },
     economics: { media: 1000, cpl: 35, valuePerSale: 6500, grossMarginPct: 30, qualificationPct: 48, showPct: 76, closePct: 20 },
     subsegments: [
       { name: "Pérgolas bioclimáticas", priority: "P1", why: "Ticket alto, producto visual y margen suficiente para financiar captación.", entry: "Zona, medidas, tipo de espacio, propiedad, presupuesto y plazo." },
@@ -109,7 +151,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Siguiente",
     channel: "Google Search",
     salesCycle: "1–14 días",
-    dimensions: { demand: 83, value: 86, defensibility: 91, speed: 91, evidence: 92 },
+    dimensions: { demand: 83, value: 86, margin: 85, qualification: 88, demonstrability: 95, competition: 82, defensibility: 91, experience: 92, speed: 91, legalRisk: 68, standardisation: 89, scalability: 88, mentalCost: 74, volume: 84 },
     economics: { media: 1500, cpl: 38, valuePerSale: 1600, grossMarginPct: 100, qualificationPct: 42, showPct: 92, closePct: 24 },
     subsegments: [
       { name: "Vehículos averiados", priority: "P1", why: "Intención directa, urgencia y tasación relativamente estandarizable.", entry: "Marca, modelo, año, km, avería, ubicación y fotos." },
@@ -144,7 +186,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Siguiente",
     channel: "Meta Ads + Google Search",
     salesCycle: "7–60 días",
-    dimensions: { demand: 88, value: 86, defensibility: 76, speed: 84, evidence: 87 },
+    dimensions: { demand: 88, value: 86, margin: 81, qualification: 70, demonstrability: 77, competition: 52, defensibility: 76, experience: 87, speed: 84, legalRisk: 61, standardisation: 77, scalability: 83, mentalCost: 62, volume: 87 },
     economics: { media: 1800, cpl: 30, valuePerSale: 1400, grossMarginPct: 65, qualificationPct: 43, showPct: 66, closePct: 27 },
     subsegments: [
       { name: "Injerto capilar", priority: "P1", why: "Ticket alto, decisión investigada y fuerte capacidad de atribución.", entry: "Edad, situación, zona, disponibilidad y financiación." },
@@ -179,7 +221,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Validar",
     channel: "Google Search + llamadas",
     salesCycle: "0–30 días",
-    dimensions: { demand: 89, value: 82, defensibility: 78, speed: 92, evidence: 83 },
+    dimensions: { demand: 89, value: 82, margin: 74, qualification: 86, demonstrability: 92, competition: 63, defensibility: 78, experience: 83, speed: 92, legalRisk: 88, standardisation: 84, scalability: 76, mentalCost: 71, volume: 88 },
     economics: { media: 1200, cpl: 36, valuePerSale: 2800, grossMarginPct: 35, qualificationPct: 52, showPct: 78, closePct: 30 },
     subsegments: [
       { name: "Instalación y sustitución de aire", priority: "P1", why: "Intención alta y ticket defendible con disponibilidad técnica.", entry: "Tipo de inmueble, m², equipo actual, zona y plazo." },
@@ -214,7 +256,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Validar",
     channel: "Google Search + Meta casos",
     salesCycle: "30–180 días",
-    dimensions: { demand: 87, value: 94, defensibility: 80, speed: 64, evidence: 90 },
+    dimensions: { demand: 87, value: 94, margin: 79, qualification: 68, demonstrability: 88, competition: 61, defensibility: 80, experience: 90, speed: 64, legalRisk: 82, standardisation: 66, scalability: 69, mentalCost: 55, volume: 86 },
     economics: { media: 1800, cpl: 58, valuePerSale: 18000, grossMarginPct: 25, qualificationPct: 36, showPct: 78, closePct: 16 },
     subsegments: [
       { name: "Reforma integral", priority: "P1", why: "Ticket alto y suficientes búsquedas, con necesidad de filtro económico duro.", entry: "Zona, m², presupuesto, propiedad, alcance y fecha." },
@@ -249,7 +291,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Validar",
     channel: "Google Search + Meta educación",
     salesCycle: "14–90 días",
-    dimensions: { demand: 88, value: 91, defensibility: 72, speed: 76, evidence: 89 },
+    dimensions: { demand: 88, value: 91, margin: 82, qualification: 72, demonstrability: 79, competition: 46, defensibility: 72, experience: 89, speed: 76, legalRisk: 58, standardisation: 75, scalability: 82, mentalCost: 59, volume: 88 },
     economics: { media: 1600, cpl: 38, valuePerSale: 3200, grossMarginPct: 55, qualificationPct: 46, showPct: 66, closePct: 25 },
     subsegments: [
       { name: "Implantes", priority: "P1", why: "Intención clara, ticket alto y financiación como palanca comercial.", entry: "Necesidad, zona, urgencia, financiación y disponibilidad." },
@@ -284,7 +326,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Después",
     channel: "Meta Ads + Google Search",
     salesCycle: "30–270 días",
-    dimensions: { demand: 84, value: 93, defensibility: 66, speed: 58, evidence: 93 },
+    dimensions: { demand: 84, value: 93, margin: 91, qualification: 63, demonstrability: 65, competition: 41, defensibility: 66, experience: 93, speed: 58, legalRisk: 70, standardisation: 61, scalability: 76, mentalCost: 48, volume: 90 },
     economics: { media: 2000, cpl: 48, valuePerSale: 6000, grossMarginPct: 70, qualificationPct: 36, showPct: 65, closePct: 11 },
     subsegments: [
       { name: "Propietario con venta < 90 días", priority: "P1", why: "Intención y plazo permiten medir valoración y exclusiva.", entry: "Titularidad, zona, inmueble, motivo, plazo y precio." },
@@ -319,7 +361,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Después",
     channel: "Google Search + llamada",
     salesCycle: "7–60 días",
-    dimensions: { demand: 67, value: 78, defensibility: 88, speed: 72, evidence: 58 },
+    dimensions: { demand: 67, value: 78, margin: 76, qualification: 74, demonstrability: 80, competition: 77, defensibility: 88, experience: 58, speed: 72, legalRisk: 56, standardisation: 73, scalability: 61, mentalCost: 68, volume: 57 },
     economics: { media: 900, cpl: 36, valuePerSale: 1900, grossMarginPct: 50, qualificationPct: 46, showPct: 72, closePct: 25 },
     subsegments: [
       { name: "Prueba auditiva y audífonos", priority: "P1", why: "Producto de ticket alto, decisión familiar y demanda local medible.", entry: "Necesidad, edad, zona, acompañante, financiación y disponibilidad." },
@@ -354,7 +396,7 @@ export const STRATEGY: Record<string, NicheStrategy> = {
     phase: "Después",
     channel: "Google Search",
     salesCycle: "0–21 días",
-    dimensions: { demand: 79, value: 68, defensibility: 81, speed: 95, evidence: 74 },
+    dimensions: { demand: 79, value: 68, margin: 58, qualification: 91, demonstrability: 94, competition: 66, defensibility: 81, experience: 74, speed: 95, legalRisk: 89, standardisation: 93, scalability: 71, mentalCost: 79, volume: 78 },
     economics: { media: 800, cpl: 28, valuePerSale: 650, grossMarginPct: 35, qualificationPct: 56, showPct: 88, closePct: 34 },
     subsegments: [
       { name: "Contenedores de obra", priority: "P1", why: "Necesidad inmediata, zona clara y presupuesto rápido.", entry: "Tipo, volumen, dirección, fecha, permisos y duración." },

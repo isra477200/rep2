@@ -1,6 +1,8 @@
 export type EvidenceLevel = "Dato real" | "Dato del mercado" | "Hipótesis" | "Pendiente de validar";
 export type CampaignMode = "B2B" | "B2C";
 
+export { PRICING, PRICING_SOURCE } from "./pricing.ts";
+
 export type CaptureUnit = {
   id: string;
   systemId: string;
@@ -22,22 +24,6 @@ export type CaptureUnit = {
   compliance: string;
   creativeRoutes: Array<{ name: string; direction: string }>;
 };
-
-export const PRICING_SOURCE = {
-  name: "Tarifas oficiales Red Vitalia",
-  url: "https://app.notion.com/p/360f1447360c80ec93cae6183e599a37",
-  sourceLastEditedAt: "2026-05-14T09:49:41.888Z",
-  verifiedAt: "2026-09-03",
-  evidence: "Dato real" as EvidenceLevel,
-};
-
-export const PRICING = [
-  { id: "google", name: "Google Ads", net: 400, vat: 84, total: 484 },
-  { id: "meta", name: "Meta Ads", net: 450, vat: 94.5, total: 544.5 },
-  { id: "combo", name: "Google + Meta Ads", net: 750, vat: 157.5, total: 907.5 },
-  { id: "combo-seo", name: "Google + Meta Ads + SEO básico", net: 1000, vat: 210, total: 1210 },
-  { id: "setter", name: "Setter", net: 250, vat: 52.5, total: 302.5 },
-] as const;
 
 export const CAPTURE_UNITS: CaptureUnit[] = [
   {
@@ -136,17 +122,19 @@ export const SYSTEMS = [
   { id: "logistica", name: "Contenedores, mudanzas y guardamuebles", rank: 10, phase: "Después", units: ["logistica"], score: 70 },
 ] as const;
 
+const asFragment = (value: string) => value.trim().replace(/[.!?]+$/, "").toLocaleLowerCase("es");
+
 const modeCopy = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
   ? {
       objective: `Conseguir que empresas de ${unit.system.toLocaleLowerCase("es")} soliciten una reunión de diagnóstico con RedVitalia.`,
       audience: unit.decisionMaker,
-      message: `No faltan formularios: falta convertir ${unit.result.toLocaleLowerCase("es")} en una métrica operativa.`,
+      message: `No faltan formularios: falta convertir ${asFragment(unit.result)} en una métrica operativa.`,
       offer: `Auditoría del recorrido actual + piloto de ${unit.offer.toLocaleLowerCase("es")}`,
       landing: `/landings/${unit.id}-b2b`,
       conversion: `reunion_b2b_${unit.id.replaceAll("-", "_")}`,
     }
   : {
-      objective: `Generar ${unit.result.toLocaleLowerCase("es")} para la empresa contratada.`,
+      objective: `Generar ${asFragment(unit.result)} para la empresa contratada.`,
       audience: unit.endUser,
       message: unit.problem,
       offer: unit.offer,
@@ -157,11 +145,11 @@ const modeCopy = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
 const messagePack = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
   ? {
       emailSubject: `${unit.result.replace(/[.!?]+$/, "")}: propuesta de piloto medible`,
-      emailBody: `Hemos revisado el recorrido de captación de ${unit.system.toLocaleLowerCase("es")}. La propuesta es empezar por ${unit.subniches[0].toLocaleLowerCase("es")}, acordar qué se considera una oportunidad válida y devolver al sistema el resultado ${unit.result.toLocaleLowerCase("es")} Si hay capacidad y margen, preparamos un piloto para revisión.`,
+      emailBody: `Hemos revisado el recorrido de captación de ${unit.system.toLocaleLowerCase("es")}. La propuesta es empezar por ${unit.subniches[0].toLocaleLowerCase("es")}, acordar qué se considera una oportunidad válida y devolver al sistema el resultado ${asFragment(unit.result)}. Si hay capacidad y margen, preparamos un piloto para revisión.`,
       whatsapp: `Hola. Te escribo por la solicitud sobre captación para ${unit.name}. Antes de proponer campañas necesitamos confirmar zona, capacidad, ticket, seguimiento y resultado medible. ¿Te viene bien revisar esos cinco puntos?`,
-      openingScript: `Confirmar cargo y contexto. Preguntar oferta prioritaria, zona, capacidad semanal, tiempo de respuesta, ticket, margen y cómo registran hoy ${unit.result.toLocaleLowerCase("es")}`,
+      openingScript: `Confirmar cargo y contexto. Preguntar oferta prioritaria, zona, capacidad semanal, tiempo de respuesta, ticket, margen y cómo registran hoy ${asFragment(unit.result)}.`,
       noShow: "No damos la reunión por perdida: confirmar si cambió la prioridad, ofrecer una única alternativa y registrar el motivo si no continúa.",
-      reactivation: `Retomar solo con base legítima y contexto: preguntar si sigue activa la necesidad de mejorar ${unit.result.toLocaleLowerCase("es")} y si han cambiado capacidad o presupuesto.`,
+      reactivation: `Retomar solo con base legítima y contexto: preguntar si sigue activa la necesidad de mejorar ${asFragment(unit.result)} y si han cambiado capacidad o presupuesto.`,
       remarketing: `Mensaje de proceso: definir oportunidad válida, medir el recorrido completo y decidir con contribución; sin prometer volumen ni ventas.`,
     }
   : {
@@ -170,12 +158,98 @@ const messagePack = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
       whatsapp: `Hola. Te contactamos por tu solicitud sobre ${unit.name}. Antes de avanzar necesitamos confirmar ${unit.qualification.slice(0, 3).join(", ").toLocaleLowerCase("es")}. No envíes documentación sensible por este chat.`,
       openingScript: `Confirmar identidad, consentimiento y teléfono. Revisar ${unit.qualification.slice(0, 5).join(", ").toLocaleLowerCase("es")}. Explicar el siguiente paso sin anticipar resultado.`,
       noShow: "Confirmar que la persona está bien, ofrecer una nueva franja y registrar el motivo. No usar presión, urgencia falsa ni mensajes repetidos.",
-      reactivation: `Con consentimiento vigente, preguntar si sigue necesitando ${unit.result.toLocaleLowerCase("es")} y si cambiaron zona, urgencia o disponibilidad.`,
+      reactivation: `Con consentimiento vigente, preguntar si sigue necesitando ${asFragment(unit.result)} y si cambiaron zona, urgencia o disponibilidad.`,
       remarketing: `${unit.problem} Explicar proceso, encaje y siguiente paso; no convertir una señal intermedia en promesa de resultado.`,
     };
 
+const campaignOperations = (unit: CaptureUnit, mode: CampaignMode, copy: ReturnType<typeof modeCopy>) => {
+  const b2b = mode === "B2B";
+  const conversionPrefix = unit.id.replaceAll("-", "_");
+  const adGroups = unit.subniches.slice(0, 6).map((subniche, index) => ({
+    id: `${conversionPrefix}-${mode.toLocaleLowerCase("es")}-g${index + 1}`,
+    name: subniche,
+    intent: b2b ? `Empresa de ${unit.system.toLocaleLowerCase("es")} que necesita captar ${subniche.toLocaleLowerCase("es")}` : `Persona que busca resolver ${subniche.toLocaleLowerCase("es")}`,
+    message: b2b ? `Convertir ${asFragment(unit.result)} en una métrica del sistema.` : unit.problem,
+    landing: copy.landing,
+    conversion: copy.conversion,
+  }));
+  return {
+    strategicSummary: `${copy.objective} Se entra por ${unit.subniches[0].toLocaleLowerCase("es")}, con control de capacidad, cualificación y resultado offline antes de escalar.`,
+    architecture: [
+      `${b2b ? "Adquisición empresarial" : "Captación de usuario final"} por intención y subnicho`,
+      `Landing nativa y conversión propias: ${copy.landing} → ${copy.conversion}`,
+      "Remarketing separado por etapa; no cuenta como conversión primaria",
+      `Devolución offline de ${asFragment(unit.result)} y valor económico`,
+    ],
+    adStructure: adGroups,
+    audiences: b2b
+      ? [unit.decisionMaker, `Empresas de ${unit.system.toLocaleLowerCase("es")} con capacidad comercial`, "Visitantes de la landing B2B sin reunión", "Lista propia con base legítima"]
+      : [unit.endUser, `Intención: ${unit.subniches.join(" · ")}`, "Visitantes sin envío", "Lead sin siguiente paso confirmado"],
+    locations: ["Zona incluida por el cliente", "Presencia o servicio real", "Excluir zonas sin capacidad", "Revisar informe geográfico por resultado, no por clic"],
+    bidding: {
+      start: "Control de términos y conversiones de primera capa durante la fase de aprendizaje",
+      evolve: `Migrar a ${copy.conversion} o valor offline cuando el volumen y la calidad del dato sean suficientes`,
+      never: "No optimizar a clic de teléfono, WhatsApp o apertura de formulario sin validación posterior",
+    },
+    valueSignals: [copy.conversion, "resultado aceptado", "valor bruto", "margen bruto", "motivo de pérdida", "tiempo de respuesta"],
+    offlineImport: ["gclid / gbraid / wbraid", "campaign_id y landing_route", "estado CRM y fecha", "valor y moneda", "deduplicación por identificador", "consentimiento y minimización de PII"],
+    remarketingStages: [
+      { stage: "Visitante sin convertir", message: "Explicar proceso y encaje, sin urgencia artificial." },
+      { stage: "Lead sin cita", message: "Confirmar datos mínimos y ofrecer el siguiente paso." },
+      { stage: "Cita no asistida", message: "Ofrecer una alternativa y registrar el motivo." },
+      { stage: "Presupuesto no aceptado", message: "Resolver la objeción registrada; no inventar descuento." },
+      { stage: "Oportunidad perdida", message: "Reabrir solo si cambia la causa y existe consentimiento." },
+      { stage: "Reactivación", message: "Comprobar que la necesidad sigue vigente y facilitar la baja." },
+    ],
+    creativeNeeds: unit.creativeRoutes.map((route) => ({
+      route: route.name,
+      direction: route.direction,
+      concepts: ["Resultado verificable", "Proceso y filtro"],
+      variants: ["Texto completo", "Texto reducido", "Arte sin texto", "Feed 1:1", "Feed 4:5", "Story/Reels 9:16", "Google 1,91:1", "Google 1:1", "Google 4:5", "Hero landing"],
+    })),
+    creativeBrief: {
+      audience: b2b ? unit.decisionMaker : unit.endUser,
+      problem: unit.problem,
+      promise: b2b ? copy.offer : `Revisar encaje y siguiente paso para ${unit.name.toLocaleLowerCase("es")}`,
+      proof: "Solo prueba documentada y autorizada; mientras falte, usar proceso verificable",
+      mustAvoid: unit.compliance,
+      qa: ["Ortografía", "Jerarquía", "Contraste", "Márgenes", "Recortes", "Marca", "Claims", "Derechos", "Políticas"],
+    },
+    landingPlan: {
+      route: copy.landing,
+      hero: copy.message,
+      sections: ["Problema", "Proceso", "Casos que encajan", "Casos que no encajan", "Prueba real", "FAQ", "Formulario", "Privacidad"],
+      mobile: "CTA antes de media, campos de al menos 44 px, sin scroll horizontal y carga optimizada",
+      blockers: ["Marca y datos legales", "Prueba autorizada", "Cobertura y horario", "Destino real del formulario", "Consentimiento/CMP"],
+    },
+    formPlan: {
+      firstStep: [...unit.qualification.slice(0, 4), "Teléfono", "Consentimiento"],
+      later: unit.qualification.slice(4),
+      reject: unit.rejection,
+      hidden: ["gclid", "gbraid", "wbraid", "msclkid", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "landing_route", "intent_cluster"],
+    },
+    trackingPlan: {
+      primary: copy.conversion,
+      secondary: ["landing_view", "form_start", "form_submit", "contact_valid", "appointment_booked"],
+      quality: ["opportunity_valid", "appointment_attended", copy.conversion, "gross_value", "gross_margin"],
+      qa: ["Un GTM por dominio", "Sin conversiones primarias duplicadas", "Consentimiento probado", "Identifiers persistidos", "Evento disparado tras envío válido", "Importación offline deduplicada"],
+    },
+    automationPlan: ["Capturar origen", "Asignar intención", "Avisar al responsable", "Contactar dentro del SLA", "Confirmar siguiente paso", "Recordar", "Recuperar no-show", "Registrar resultado", "Reactivar según causa y consentimiento"],
+    kpis: ["Coste por oportunidad válida", "Tasa de contacto", "Tasa de cita", "Show rate", `Coste por ${asFragment(unit.result)}`, "CAC", "Contribución", "Capacidad consumida"],
+    budgetAllocation: b2b
+      ? [{ bucket: "Search de intención", share: 65 }, { bucket: "Meta de prueba", share: 20 }, { bucket: "Remarketing", share: 15 }]
+      : [{ bucket: "Intención principal", share: 70 }, { bucket: "Exploración controlada", share: 20 }, { bucket: "Remarketing", share: 10 }],
+    controls: ["Revisión de términos 2 veces por semana", "Control diario de capacidad", "Calidad semanal por subnicho", "Economía quincenal", "Decisión mensual con muestra mínima"],
+    scaleCriteria: ["Contribución positiva", "Resultado offline estable", "SLA cumplido", "Capacidad disponible", "Sin deterioro de calidad >20%", "Aprobación humana de presupuesto"],
+    stopCriteria: ["Datos o consentimiento incompletos", "Capacidad agotada", "Resultado offline ausente", "Claims no aprobables", "Contribución negativa tras dos iteraciones", ...unit.rejection.slice(0, 2)],
+    risks: [unit.compliance, "Optimizar a una señal intermedia", "Escalar antes de completar el ciclo", "Mezclar subnichos con economía distinta"],
+    launchChecklist: ["Cliente y decisor", "Oferta", "Zona", "Presupuesto", "Capacidad", "Brand kit", "Prueba autorizada", "Landing", "Formulario", "CRM", "Tracking", "Privacidad", "Creatividad revisada", "Aprobación humana"],
+  };
+};
+
 export const CAMPAIGNS = CAPTURE_UNITS.flatMap((unit) => (["B2B", "B2C"] as CampaignMode[]).map((mode) => {
   const copy = modeCopy(unit, mode);
+  const operations = campaignOperations(unit, mode, copy);
   return {
     id: `${unit.id}-${mode.toLocaleLowerCase("es")}`,
     systemId: unit.systemId,
@@ -201,6 +275,7 @@ export const CAMPAIGNS = CAPTURE_UNITS.flatMap((unit) => (["B2B", "B2C"] as Camp
     tracking: ["view_landing", "form_start", "lead_submit", copy.conversion],
     messages: messagePack(unit, mode),
     evidence: "Hipótesis" as EvidenceLevel,
+    ...operations,
   };
 }));
 
@@ -231,10 +306,37 @@ export const CREATIVE_FORMATS = [
   { id: "landing-hero", name: "Landing hero", width: 1600, height: 900 },
 ] as const;
 
+export const CREATIVE_REQUIREMENTS = [
+  { id: "meta-feed-square", channel: "Meta", name: "Feed cuadrado con texto", status: "Archivo listo", formatId: "meta-square" },
+  { id: "meta-feed-portrait", channel: "Meta", name: "Feed vertical con texto", status: "Archivo listo", formatId: "meta-portrait" },
+  { id: "meta-stories", channel: "Meta", name: "Stories", status: "Archivo listo", formatId: "story" },
+  { id: "meta-reels-cover", channel: "Meta", name: "Portada Reels", status: "Archivo listo", formatId: "story" },
+  { id: "meta-carousel", channel: "Meta", name: "Carrusel", status: "Guion listo", formatId: "meta-square" },
+  { id: "meta-less-text", channel: "Meta", name: "Versión con menos texto", status: "Archivo listo", formatId: "google-square" },
+  { id: "meta-no-text", channel: "Meta", name: "Arte sin texto", status: "Archivo base listo", source: "base" },
+  { id: "google-square", channel: "Google", name: "Imagen 1:1", status: "Archivo listo", formatId: "google-square" },
+  { id: "google-landscape", channel: "Google", name: "Imagen 1,91:1", status: "Archivo listo", formatId: "google-landscape" },
+  { id: "google-vertical", channel: "Google", name: "Imagen 4:5", status: "Archivo listo", formatId: "google-portrait" },
+  { id: "google-logo-square", channel: "Google", name: "Logotipo 1:1", status: "Bloqueado por brand kit", source: "brand" },
+  { id: "google-logo-landscape", channel: "Google", name: "Logotipo 4:1", status: "Bloqueado por brand kit", source: "brand" },
+  { id: "google-search-images", channel: "Google", name: "Assets de imagen para Search", status: "Archivos listos", formatId: "google-square" },
+  { id: "google-pmax", channel: "Google", name: "Paquete Performance Max", status: "Imágenes listas · logo pendiente", formatId: "google-landscape" },
+  { id: "google-demand-gen", channel: "Google", name: "Paquete Demand Gen", status: "Imágenes listas · logo pendiente", formatId: "google-portrait" },
+  { id: "google-display", channel: "Google", name: "Display responsive", status: "Assets base listos", formatId: "google-landscape" },
+  { id: "landing-desktop", channel: "Landing", name: "Hero escritorio", status: "Archivo listo", formatId: "landing-hero" },
+  { id: "landing-mobile", channel: "Landing", name: "Hero móvil", status: "Archivo listo", formatId: "story" },
+  { id: "landing-section", channel: "Landing", name: "Imagen de sección", status: "Archivo listo", formatId: "google-landscape" },
+  { id: "landing-process", channel: "Landing", name: "Imagen de proceso", status: "Pendiente de prueba real", source: "proof" },
+  { id: "landing-trust", channel: "Landing", name: "Visual de confianza", status: "Pendiente de evidencia autorizada", source: "proof" },
+  { id: "remarketing", channel: "Remarketing", name: "6 etapas de remarketing", status: "Mensajes y adaptación listos", formatId: "meta-square" },
+  { id: "video-storyboard", channel: "Vídeo", name: "Guion y storyboard", status: "Paquete de producción listo", source: "storyboard" },
+] as const;
+
 export const CREATIVE_SPEC_SOURCES = [
-  { platform: "Meta", url: "https://www.facebook.com/business/ads/facebook-instagram-reels-ads", checkedAt: "2026-09-03", note: "Creatividad vertical 9:16 y mensajes dentro de la zona segura." },
-  { platform: "Google Ads", url: "https://support.google.com/google-ads/answer/13676244", checkedAt: "2026-09-03", note: "1:1 a 1200×1200 y 1,91:1 a 1200×628 como formatos comunes." },
-  { platform: "Google Demand Gen", url: "https://support.google.com/google-ads/answer/13704860", checkedAt: "2026-09-03", note: "4:5 a 960×1200 y 9:16 a 1080×1920; máximo 5 MB." },
+  { platform: "Meta Reels", url: "https://www.facebook.com/business/ads/facebook-instagram-reels-ads", checkedAt: "2026-09-03", note: "Meta recomienda creatividad vertical 9:16, audio y mensajes dentro de la zona segura para Reels." },
+  { platform: "Google Display", url: "https://support.google.com/google-ads/answer/17090561", checkedAt: "2026-09-03", note: "Imagen horizontal 1,91:1 a 1200×628, cuadrada 1:1 y logos 1:1/4:1; límites separados por tipo de asset." },
+  { platform: "Google Demand Gen", url: "https://support.google.com/google-ads/answer/17091672", checkedAt: "2026-09-03", note: "1:1 a 1200×1200, 1,91:1 a 1200×628 y 4:5 a 960×1200; máximo 5 MB por imagen." },
+  { platform: "Google Search", url: "https://support.google.com/google-ads/answer/9566341", checkedAt: "2026-09-03", note: "Asset cuadrado obligatorio y horizontal recomendado, con resolución recomendada de 1200 px." },
 ] as const;
 
 export const CREATIVES = CAPTURE_UNITS.flatMap((unit) =>
@@ -255,6 +357,7 @@ export const CREATIVES = CAPTURE_UNITS.flatMap((unit) =>
   routeDirection: route.direction,
   concept: concept.concept,
   format: "Meta feed cuadrado",
+  channel: mode === "B2B" ? "Meta + Google" : unit.channel,
   aspectRatio: "1:1",
   prompt: `Fotografía realista para ${unit.name}; ruta ${route.name}; ${route.direction}; sin texto, marcas ni promesas no verificadas.`,
   restrictions: unit.compliance,
@@ -273,6 +376,21 @@ export const CREATIVES = CAPTURE_UNITS.flatMap((unit) =>
   master: `/assets/ejecucion/adaptations/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}-meta-square.jpg`,
   thumbnail: `/assets/ejecucion/thumbnails/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}.webp`,
   adaptations: CREATIVE_FORMATS.map((format) => ({ ...format, file: `/assets/ejecucion/adaptations/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}-${format.id}.jpg` })),
+  deliverables: CREATIVE_REQUIREMENTS.map((requirement) => ({
+    ...requirement,
+    file: "formatId" in requirement
+      ? `/assets/ejecucion/adaptations/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}-${requirement.formatId}.jpg`
+      : "source" in requirement && requirement.source === "base" ? unit.image : null,
+  })),
+  remarketing: ["Visitante sin convertir", "Lead sin cita", "Cita no asistida", "Presupuesto no aceptado", "Oportunidad perdida", "Reactivación"],
+  videoPackage: {
+    duration: "20–30 s",
+    format: "9:16 principal · 1:1 y 16:9 como adaptaciones",
+    script: [`Problema: ${unit.problem}`, `Proceso: ${unit.offer}`, `Cierre: ${concept.cta}`],
+    scenes: ["Contexto real sin marca ajena", route.direction, "Detalle del proceso", `CTA: ${concept.cta}`],
+    keyframes: [unit.image, `/assets/ejecucion/adaptations/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}-story.jpg`],
+    status: "Storyboard, textos y fotogramas; no es un vídeo terminado",
+  },
   landing: mode === "B2B" ? `/landings/${unit.id}-b2b` : unit.landing,
   performance: null,
   cost: "Generación nativa de la sesión · coste no expuesto",
@@ -294,7 +412,7 @@ export const EXPERIMENTS = CAPTURE_UNITS.map((unit, index) => ({
   budget: unit.systemId === "legal" ? 1400 : 1000,
   duration: "30 días o hasta volumen mínimo",
   minimumVolume: "100 conversiones de primera capa o 20 resultados offline",
-  primaryMetric: `Coste por ${unit.result.toLocaleLowerCase("es")}`,
+  primaryMetric: `Coste por ${asFragment(unit.result)}`,
   secondaryMetrics: ["CPL", "% válido", "% contacto", "show rate", "cierre"],
   pass: "+20% en resultado válido o -15% en coste por resultado, con capacidad estable",
   fail: "Sin mejora tras alcanzar volumen mínimo o deterioro de calidad >20%",

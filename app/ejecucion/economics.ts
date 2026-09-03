@@ -2,6 +2,8 @@ import { PRICING } from "./catalog.ts";
 
 export type LabInputs = {
   plan: string;
+  fee?: number;
+  vatPct?: number;
   activation: number;
   media: number;
   cpl: number;
@@ -27,7 +29,11 @@ export const calculateEconomics = (input: LabInputs, factor = 1) => {
   const duration = Math.max(1, Math.round(nonNegative(input.duration)));
   const monthlyMedia = nonNegative(input.media);
   const mediaTotal = monthlyMedia * duration;
-  const feeTotal = plan.net * duration;
+  const effectiveFee = input.fee === undefined || input.fee === 0 ? plan.net : nonNegative(input.fee);
+  const vatPct = input.vatPct === undefined ? 21 : Math.min(100, nonNegative(input.vatPct));
+  const feeVatMonthly = effectiveFee * (vatPct / 100);
+  const feeGrossMonthly = effectiveFee + feeVatMonthly;
+  const feeTotal = effectiveFee * duration;
   const oneTimeCost = nonNegative(input.activation) + nonNegative(input.followup) + nonNegative(input.creative) + nonNegative(input.commercial) + nonNegative(input.technology);
   const adjustedCpl = nonNegative(input.cpl) * Math.max(0.01, nonNegative(factor));
   const leads = adjustedCpl > 0 ? mediaTotal / adjustedCpl : 0;
@@ -53,9 +59,9 @@ export const calculateEconomics = (input: LabInputs, factor = 1) => {
   const roas = mediaTotal > 0 ? revenue / mediaTotal : 0;
   const mer = totalCost > 0 ? revenue / totalCost : 0;
   const monthlyGrossMargin = duration > 0 ? grossMargin / duration : 0;
-  const monthlyRecurringCost = monthlyMedia + plan.net;
+  const monthlyRecurringCost = monthlyMedia + effectiveFee;
   const monthlyContributionBeforeOneTime = monthlyGrossMargin - monthlyRecurringCost;
   const recoveryMonths = monthlyContributionBeforeOneTime > 0 ? oneTimeCost / monthlyContributionBeforeOneTime : null;
 
-  return { plan, duration, mediaTotal, feeTotal, oneTimeCost, leads, valid, contacted, appointments, attended, sales, revenue, grossMargin, totalCost, contribution, cac, costPerAttended, breakEvenSales, maxCpl, maxCostPerAttended, maxCostPerSale, roas, mer, recoveryMonths };
+  return { plan, effectiveFee, vatPct, feeVatMonthly, feeGrossMonthly, duration, mediaTotal, feeTotal, oneTimeCost, leads, valid, contacted, appointments, attended, sales, revenue, grossMargin, totalCost, contribution, cac, costPerAttended, breakEvenSales, maxCpl, maxCostPerAttended, maxCostPerSale, roas, mer, recoveryMonths };
 };

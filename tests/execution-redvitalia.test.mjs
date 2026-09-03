@@ -8,11 +8,14 @@ import {
   CAPTURE_UNITS,
   CREATIVES,
   CREATIVE_FORMATS,
+  CREATIVE_REQUIREMENTS,
   PRICING,
   PRICING_SOURCE,
   SYSTEMS,
 } from "../app/ejecucion/catalog.ts";
 import { calculateEconomics } from "../app/ejecucion/economics.ts";
+import { buildOperationalPlaybooks, validatePlaybook } from "../app/ejecucion/playbooks.ts";
+import { DIMENSION_LABELS, sanitizeWeights, STRATEGY, weightedStrategyScore } from "../app/sistemas/strategy.ts";
 import { getLandingBlueprint, LANDING_BLUEPRINTS } from "../app/ejecucion/landing-blueprints.ts";
 import {
   createExecutionSnapshot,
@@ -43,9 +46,58 @@ test("every acquisition unit has separate B2B and B2C campaign records", () => {
     const campaigns = CAMPAIGNS.filter((campaign) => campaign.unitId === unit.id);
     assert.deepEqual(new Set(campaigns.map((campaign) => campaign.mode)), new Set(["B2B", "B2C"]));
   }
+  assert.ok(CAMPAIGNS.every((campaign) => campaign.adStructure.length >= 4));
+  assert.ok(CAMPAIGNS.every((campaign) => campaign.remarketingStages.length === 6));
+  assert.ok(CAMPAIGNS.every((campaign) => campaign.launchChecklist.length >= 12));
+  assert.ok(CAMPAIGNS.every((campaign) => campaign.trackingPlan.primary === campaign.primaryConversion));
+  assert.ok(CAMPAIGNS.every((campaign) => campaign.scaleCriteria.length >= 5 && campaign.stopCriteria.length >= 5));
+});
+
+test("the portfolio score exposes all fourteen requested decision dimensions", () => {
+  assert.equal(Object.keys(DIMENSION_LABELS).length, 14);
+  assert.ok(SYSTEMS.every((system) => Object.keys(STRATEGY[system.id].dimensions).length === 14));
+});
+
+test("legacy or corrupt saved weights cannot poison the portfolio score", () => {
+  const defaults = Object.fromEntries(Object.keys(DIMENSION_LABELS).map((key) => [key, 1]));
+  const weights = sanitizeWeights({ demand: 8, obsoleteDimension: 99, margin: "broken" }, defaults);
+  assert.deepEqual(Object.keys(weights), Object.keys(DIMENSION_LABELS));
+  assert.equal(weights.demand, 8);
+  assert.equal(weights.margin, 1);
+  assert.ok(Number.isFinite(weightedStrategyScore(STRATEGY.legal, weights)));
+});
+
+test("every acquisition unit has a complete A-S operational playbook with traceability", () => {
+  const playbooks = SYSTEMS.flatMap((system) => buildOperationalPlaybooks(system.id, {
+    id: system.id,
+    rank: system.rank,
+    name: system.name,
+    recommendation: `Validar ${system.name}`,
+    reason: "Razón de prueba",
+    result: "Resultado verificable",
+    fee: "Fuente canónica",
+    media: "Hipótesis",
+    offer: "Sistema de captación",
+    target: "Cliente con capacidad",
+    reject: "Cliente sin datos",
+    qualification: ["Zona", "Servicio"],
+    funnel: ["Fuente", "Anuncio", "Landing", "Formulario"],
+    campaigns: ["B2B", "B2C"],
+    copy: { b2b: "Propuesta B2B", b2c: "Propuesta B2C" },
+    opener: "Apertura",
+    objections: ["Objeción"],
+    kpis: ["Resultado"],
+    plan: ["Días 1-15", "Días 16-30", "Días 31-60", "Días 61-90"],
+    competitors: [],
+  }));
+  assert.equal(playbooks.length, CAPTURE_UNITS.length);
+  assert.ok(playbooks.every(validatePlaybook));
+  assert.ok(playbooks.every((playbook) => playbook.sections.map((item) => item.code).join("") === "ABCDEFGHIJKLMNOPQRS"));
+  assert.ok(playbooks.every((playbook) => playbook.sections.flatMap((item) => item.items).length >= 160));
 });
 
 test("creative inventory reaches the requested depth and every optimized asset exists", async () => {
+  assert.ok(CREATIVE_REQUIREMENTS.length >= 23);
   assert.equal(CREATIVE_FORMATS.length, 7);
   assert.equal(CREATIVES.length, 144);
   assert.equal(new Set(CREATIVES.map((creative) => creative.id)).size, 144);
@@ -55,6 +107,8 @@ test("creative inventory reaches the requested depth and every optimized asset e
     assert.equal(unitCreatives.filter((creative) => creative.mode === "B2B").length, 6);
     assert.equal(unitCreatives.filter((creative) => creative.mode === "B2C").length, 6);
   }
+  assert.ok(CREATIVES.every((creative) => creative.deliverables.length === CREATIVE_REQUIREMENTS.length));
+  assert.ok(CREATIVES.every((creative) => creative.videoPackage.status.includes("no es un vídeo terminado")));
   let totalBytes = 0;
   for (const creative of CREATIVES) {
     assert.equal(creative.adaptations.length, 7);

@@ -3,12 +3,16 @@
 
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import styles from "./nichos.module.css";
-import { CAPTURE_UNITS } from "../ejecucion/catalog";
+import { CAPTURE_UNITS, PRICING, PRICING_SOURCE } from "../ejecucion/catalog";
+import { buildOperationalPlaybooks } from "../ejecucion/playbooks";
 import {
+  DIMENSION_KEYS,
   DIMENSION_LABELS,
+  sanitizeWeights,
   STRATEGY,
   type DimensionKey,
   type NicheStrategy,
+  weightedStrategyScore,
 } from "./strategy";
 
 type Competitor = {
@@ -62,7 +66,7 @@ type IndexData = {
 
 type LoadedData = IndexData & { niches: Niche[] };
 type View = "overview" | "portfolio" | "compare" | "competitors" | "methodology" | "detail";
-type DetailTab = "strategy" | "economics" | "funnel" | "competition" | "execution";
+type DetailTab = "strategy" | "playbook" | "economics" | "funnel" | "competition" | "execution";
 type PhaseFilter = "Todos" | NicheStrategy["phase"];
 
 type CompetitorAggregate = {
@@ -86,17 +90,44 @@ type EconomicsState = {
 };
 
 const DEFAULT_WEIGHTS: Weights = {
-  demand: 25,
-  value: 25,
-  defensibility: 20,
-  speed: 15,
-  evidence: 15,
+  demand: 10,
+  value: 10,
+  margin: 8,
+  qualification: 8,
+  demonstrability: 7,
+  competition: 6,
+  defensibility: 8,
+  experience: 8,
+  speed: 7,
+  legalRisk: 7,
+  standardisation: 6,
+  scalability: 6,
+  mentalCost: 4,
+  volume: 5,
+};
+
+const DIMENSION_DESCRIPTIONS: Record<DimensionKey, string> = {
+  demand: "Intención observable y capacidad de generar volumen.",
+  value: "Ticket y LTV que pueden financiar la captación.",
+  margin: "Contribución disponible después de servir el trabajo.",
+  qualification: "Claridad de los datos que separan una oportunidad útil.",
+  demonstrability: "Facilidad para devolver un resultado verificable al sistema.",
+  competition: "Espacio competitivo disponible; 100 implica menor presión relativa.",
+  defensibility: "Especialización, activos y dificultad de copia.",
+  experience: "Evidencia y aprendizaje previo ya disponible.",
+  speed: "Tiempo necesario para obtener una señal fiable.",
+  legalRisk: "Capacidad de operar con claims, datos y procesos conformes; 100 implica riesgo más controlable.",
+  standardisation: "Capacidad de repetir oferta, cualificación y seguimiento.",
+  scalability: "Posibilidad de crecer por zona, cliente o presupuesto.",
+  mentalCost: "Carga operativa sostenible; 100 implica menor fricción interna.",
+  volume: "Techo potencial de oportunidades económicamente útiles.",
 };
 
 const PHASES: PhaseFilter[] = ["Todos", "Ahora", "Siguiente", "Validar", "Después"];
 const DECISIONS = ["Todas", "Copiar", "Adaptar", "Probar", "Vigilar", "Descartar", "Prospecto"];
 const DETAIL_TABS: Array<{ id: DetailTab; label: string }> = [
   { id: "strategy", label: "Estrategia" },
+  { id: "playbook", label: "Ficha A–S" },
   { id: "economics", label: "Economía" },
   { id: "funnel", label: "Funnel y medición" },
   { id: "competition", label: "Competencia" },
@@ -153,12 +184,6 @@ const decisionClass = (decision: string) => {
   if (decision === "Descartar") return styles.decisionDiscard;
   if (decision === "Prospecto") return styles.decisionProspect;
   return styles.decisionWatch;
-};
-
-const weightedScore = (strategy: NicheStrategy, weights: Weights) => {
-  const keys = Object.keys(weights) as DimensionKey[];
-  const denominator = keys.reduce((sum, key) => sum + weights[key], 0) || 1;
-  return keys.reduce((sum, key) => sum + strategy.dimensions[key] * weights[key], 0) / denominator;
 };
 
 const download = (filename: string, content: string, type: string) => {
@@ -299,11 +324,11 @@ export default function NichosDashboard() {
     let active = true;
     const load = async () => {
       try {
-        const response = await fetch("/data/nichos/index.json", { cache: "no-store" });
+        const response = await fetch("/data/nichos/index.json", { cache: "force-cache" });
         if (!response.ok) throw new Error(`Índice: HTTP ${response.status}`);
         const index = await response.json() as IndexData;
         const niches = await Promise.all(index.files.map(async (file) => {
-          const item = await fetch(file, { cache: "no-store" });
+          const item = await fetch(file, { cache: "force-cache" });
           if (!item.ok) throw new Error(`${file}: HTTP ${item.status}`);
           return item.json() as Promise<Niche>;
         }));
@@ -321,7 +346,7 @@ export default function NichosDashboard() {
     const savedCompare = safeGet("rv-nichos-v2-compare");
     queueMicrotask(() => {
       try {
-        if (savedWeights) setWeights({ ...DEFAULT_WEIGHTS, ...JSON.parse(savedWeights) as Partial<Weights> });
+        if (savedWeights) setWeights(sanitizeWeights(JSON.parse(savedWeights), DEFAULT_WEIGHTS));
         if (savedCompare) setCompareIds((JSON.parse(savedCompare) as string[]).slice(0, 3));
       } catch {
         // Ignora preferencias corruptas.
@@ -364,10 +389,11 @@ export default function NichosDashboard() {
   const niches = useMemo(() => data?.niches || [], [data?.niches]);
   const selected = niches.find((niche) => niche.id === selectedId) || niches[0];
   const selectedStrategy = selected ? STRATEGY[selected.id] : null;
+  const selectedPlaybooks = useMemo(() => selected ? buildOperationalPlaybooks(selected.id, selected) : [], [selected]);
 
   const scoredNiches = useMemo(() => niches
     .filter((niche) => STRATEGY[niche.id])
-    .map((niche) => ({ niche, strategy: STRATEGY[niche.id], weighted: weightedScore(STRATEGY[niche.id], weights) }))
+    .map((niche) => ({ niche, strategy: STRATEGY[niche.id], weighted: weightedStrategyScore(STRATEGY[niche.id], weights) }))
     .sort((a, b) => b.weighted - a.weighted), [niches, weights]);
 
   const competitorAggregates = useMemo(() => {
@@ -422,7 +448,7 @@ export default function NichosDashboard() {
         id: niche.id,
         name: niche.name,
         phase: STRATEGY[niche.id]?.phase,
-        weightedScore: STRATEGY[niche.id] ? weightedScore(STRATEGY[niche.id], weights) : null,
+        weightedScore: STRATEGY[niche.id] ? weightedStrategyScore(STRATEGY[niche.id], weights) : null,
         notes: safeGet(`rv-nichos-v2-notes-${niche.id}`),
         launchGate: STRATEGY[niche.id]?.launchGate.map((item, index) => ({ item, done: safeGet(`rv-nichos-v2-gate-${niche.id}-${index}`) === "1" })),
         roadmap: niche.plan.map((item, index) => ({ item, done: safeGet(`rv-nichos-v2-plan-${niche.id}-${index}`) === "1" })),
@@ -592,9 +618,9 @@ export default function NichosDashboard() {
               </section>
 
               <section className={styles.section}>
-                <SectionTitle eyebrow="TARIFAS CANÓNICAS" title="Honorarios, IVA y medios sin mezclar" text={data.disclaimer} />
-                <div className={styles.pricingGrid}>{data.pricing.map((price) => <article key={price.name}><span>{price.name}</span><strong>{euro.format(price.net)} <small>netos/mes</small></strong><p>{euro.format(price.net)} × 21% = {euro.format(price.vat)} IVA · Total: {euro.format(price.gross)}</p><small>La inversión publicitaria se paga aparte a la plataforma.</small></article>)}</div>
-                <div className={styles.sourceStrip}><strong>Fuente:</strong> {data.source}</div>
+                <SectionTitle eyebrow="TARIFAS CANÓNICAS" title="Honorarios, IVA y medios sin mezclar" text="La ampliación consume un único snapshot trazable; las fichas enlazan esta fuente y no conservan importes editables propios." />
+                <div className={styles.pricingGrid}>{PRICING.filter((price) => price.id !== "setter").map((price) => <article key={price.name}><span>{price.name}</span><strong>{euro.format(price.net)} <small>netos/mes</small></strong><p>{euro.format(price.net)} × 21% = {euro.format(price.vat)} IVA · Total: {euro.format(price.total)}</p><small>La inversión publicitaria se paga aparte a la plataforma.</small></article>)}</div>
+                <div className={styles.sourceStrip}><strong>Fuente:</strong> <a href={PRICING_SOURCE.url} target="_blank" rel="noreferrer">{PRICING_SOURCE.name}</a> · verificada {PRICING_SOURCE.verifiedAt}</div>
               </section>
             </>
           ) : null}
@@ -604,11 +630,11 @@ export default function NichosDashboard() {
               <div className={styles.pageHero}>
                 <p>CARTERA Y PRIORIZACIÓN</p>
                 <h1>Un ranking que se puede discutir con números.</h1>
-                <span>Ajusta el peso de demanda, valor, defendibilidad, velocidad y evidencia. El sistema recalcula el orden sin esconder el criterio.</span>
+                <span>Ajusta las 14 dimensiones: demanda, economía, cualificación, competencia, riesgo, capacidad de repetir y coste operativo. El sistema recalcula el orden sin esconder el criterio.</span>
               </div>
 
               <div className={styles.weightPanel}>
-                {(Object.keys(weights) as DimensionKey[]).map((key) => (
+                {DIMENSION_KEYS.map((key) => (
                   <label key={key}>
                     <span>{DIMENSION_LABELS[key]} <b>{weights[key]}%</b></span>
                     <input type="range" min="0" max="40" step="5" value={weights[key]} onChange={(event) => setWeights((current) => ({ ...current, [key]: Number(event.target.value) }))} />
@@ -628,7 +654,7 @@ export default function NichosDashboard() {
                     <span className={styles.position}>{String(index + 1).padStart(2, "0")}</span>
                     <button className={styles.portfolioName} onClick={() => navigate("detail", niche.id)}><strong>{niche.name}</strong><small>{niche.subtitle}</small></button>
                     <span className={`${styles.phasePill} ${phaseClass(strategy.phase)}`}>{strategy.phase}</span>
-                    <div className={styles.portfolioScore}><strong>{decimal.format(weighted)}</strong><i><b style={{ width: `${weighted}%` }} /></i><small>Base editorial: {niche.score}</small></div>
+                    <div className={styles.portfolioScore}><strong>{decimal.format(weighted)}</strong><i><b style={{ width: `${weighted}%` }} /></i><small>Base editorial: {niche.score} · {niche.rank === scoredNiches.findIndex((item) => item.niche.id === niche.id) + 1 ? "sin cambio" : niche.rank > scoredNiches.findIndex((item) => item.niche.id === niche.id) + 1 ? `sube ${niche.rank - (scoredNiches.findIndex((item) => item.niche.id === niche.id) + 1)}` : `baja ${(scoredNiches.findIndex((item) => item.niche.id === niche.id) + 1) - niche.rank}`}</small></div>
                     <span>{strategy.channel}</span>
                     <span>{strategy.salesCycle}</span>
                     <span>{euro.format(strategy.economics.media)} medios · {euro.format(strategy.economics.cpl)} CPL</span>
@@ -656,7 +682,7 @@ export default function NichosDashboard() {
                   const niche = niches.find((item) => item.id === id);
                   const strategy = STRATEGY[id];
                   if (!niche || !strategy) return null;
-                  const score = weightedScore(strategy, weights);
+                  const score = weightedStrategyScore(strategy, weights);
                   return (
                     <article key={id} className={styles.compareCard}>
                       <div className={styles.compareHeader}><span className={`${styles.phasePill} ${phaseClass(strategy.phase)}`}>{strategy.phase}</span><strong>{decimal.format(score)}</strong></div>
@@ -716,8 +742,8 @@ export default function NichosDashboard() {
                 <article><span className={styles.truthHypothesis}>HIPÓTESIS</span><h3>Economía del piloto</h3><p>CPL, margen, cierre, show y presupuesto de medios. Son valores editables que deben sustituirse por datos reales antes de decidir.</p></article>
               </div>
               <section className={styles.methodBlock}>
-                <SectionTitle eyebrow="MODELO DE SCORE" title="Cinco dimensiones visibles" text="Los pesos son editables y el cálculo es transparente. Un score alto no autoriza a abrir otro frente si todavía no existe prueba comercial." />
-                <div className={styles.methodDimensions}>{(Object.keys(DIMENSION_LABELS) as DimensionKey[]).map((key) => <article key={key}><span>{weights[key]}%</span><h3>{DIMENSION_LABELS[key]}</h3><p>{key === "demand" ? "Intención observable y capacidad de generar volumen." : key === "value" ? "Ticket, margen y LTV que pueden financiar captación." : key === "defensibility" ? "Ventaja propia, especialización y dificultad de copia." : key === "speed" ? "Tiempo necesario para obtener una señal fiable." : "Cantidad y calidad de información ya disponible."}</p></article>)}</div>
+                <SectionTitle eyebrow="MODELO DE SCORE" title="Catorce dimensiones visibles" text="Los pesos son editables y el cálculo es transparente. Competencia, riesgo y coste mental se puntúan en sentido favorable: 100 equivale a una situación más defendible." />
+                <div className={styles.methodDimensions}>{DIMENSION_KEYS.map((key) => <article key={key}><span>{weights[key]}%</span><h3>{DIMENSION_LABELS[key]}</h3><p>{DIMENSION_DESCRIPTIONS[key]}</p></article>)}</div>
               </section>
               <section className={styles.methodBlock}>
                 <SectionTitle eyebrow="REGLA DE DECISIÓN" title="Ventas primero, perfección después" />
@@ -737,7 +763,7 @@ export default function NichosDashboard() {
                   <div className={styles.detailActions}><button onClick={() => setDetailTab("economics")}>Probar economía</button><button onClick={() => toggleCompare(selected.id)}>{compareIds.includes(selected.id) ? "Quitar del comparador" : "Añadir al comparador"}</button><a href="#competition" onClick={(event) => { event.preventDefault(); setDetailTab("competition"); }}>Ver competencia</a></div>
                 </div>
                 <aside>
-                  <span>SCORE PONDERADO</span><strong>{decimal.format(weightedScore(selectedStrategy, weights))}</strong><small>Con los pesos actuales</small>
+                  <span>SCORE PONDERADO</span><strong>{decimal.format(weightedStrategyScore(selectedStrategy, weights))}</strong><small>Con los pesos actuales</small>
                   <div>{(Object.keys(selectedStrategy.dimensions) as DimensionKey[]).map((key) => <ScoreBar key={key} compact label={DIMENSION_LABELS[key]} value={selectedStrategy.dimensions[key]} />)}</div>
                 </aside>
               </div>
@@ -765,6 +791,45 @@ export default function NichosDashboard() {
                     <div className={styles.twoColumn}><article className={styles.card}><h3>Oferta</h3><p>{selected.offer}</p></article><article className={styles.card}><h3>Cliente ideal</h3><p>{selected.target}</p></article><article className={`${styles.card} ${styles.cardNegative}`}><h3>Cliente que se rechaza</h3><p>{selected.reject}</p></article><ListCard title="Preguntas de cualificación" items={selected.qualification} /></div>
                   </section>
                 </>
+              ) : null}
+
+              {detailTab === "playbook" ? (
+                <section className={styles.detailSection}>
+                  <SectionTitle
+                    eyebrow="FICHA OPERATIVA COMPLETA"
+                    title={`${selectedPlaybooks.length} ${selectedPlaybooks.length === 1 ? "unidad" : "unidades"} · 19 apartados A–S`}
+                    text="Cada afirmación indica si es dato, señal de mercado, hipótesis o información pendiente. Legal conserva tres playbooks independientes."
+                    action={<button onClick={() => download(`playbook-${selected.id}.json`, JSON.stringify(selectedPlaybooks, null, 2), "application/json")}>Exportar A–S</button>}
+                  />
+                  <div className={styles.playbookSummary}>
+                    <article><span>COBERTURA</span><strong>{selectedPlaybooks.reduce((sum, item) => sum + item.sections.length, 0)}</strong><p>apartados operativos</p></article>
+                    <article><span>TRAZABILIDAD</span><strong>{selectedPlaybooks.reduce((sum, item) => sum + item.sections.flatMap((section) => section.items).length, 0)}</strong><p>campos con evidencia y fuente</p></article>
+                    <article><span>CONTROL</span><strong>Humano</strong><p>sin publicación automática</p></article>
+                  </div>
+                  <div className={styles.playbookUnits}>
+                    {selectedPlaybooks.map((playbook) => (
+                      <article className={styles.playbookUnit} key={playbook.unitId}>
+                        <header><div><span>{playbook.unitId} · v{playbook.version}</span><h2>{playbook.name}</h2></div><small>{playbook.generatedAt}</small></header>
+                        <div className={styles.playbookSections}>
+                          {playbook.sections.map((playbookSection, sectionIndex) => (
+                            <details key={playbookSection.code} open={sectionIndex === 0}>
+                              <summary><b>{playbookSection.code}</b><span><strong>{playbookSection.title}</strong><small>{playbookSection.purpose}</small></span><em>{playbookSection.items.length}</em></summary>
+                              <div className={styles.playbookItems}>
+                                {playbookSection.items.map((item, itemIndex) => (
+                                  <article key={`${item.label}-${itemIndex}`}>
+                                    <div><strong>{item.label}</strong><span className={styles.playbookEvidence} data-evidence={item.evidence}>{item.evidence}</span></div>
+                                    <p>{item.value}</p>
+                                    <small>Fuente: {item.source}</small>
+                                  </article>
+                                ))}
+                              </div>
+                            </details>
+                          ))}
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
               ) : null}
 
               {detailTab === "economics" ? <section className={styles.detailSection}><SectionTitle eyebrow="ECONOMÍA DEL PILOTO" title="El CPL no decide; decide la contribución" text="Modelo editable. Honorarios netos, inversión en medios y valor bruto se muestran por separado." /><EconomicsModel key={selected.id} niche={selected} strategy={selectedStrategy} /></section> : null}

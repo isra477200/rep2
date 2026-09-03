@@ -1,0 +1,35 @@
+.formSimulator {
+  margin-top: 32px;
+  padding: 22px;
+  border: 1px solid #dfe6ef;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.formSimulator > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.formSimulator > header p { margin: 0; color: #2f6fe4; font-size: 0.68rem; font-weight: 900; letter-spacing: 0.14em; }
+.formSimulator > header h2 { margin: 5px 0 0; font-size: 1.6rem; }
+.formSimulator > header > span { color: #65738a; font-size: 0.72rem; }
+.formSimulator form { display: grid; gap: 14px; margin-top: 18px; }
+.formSimulator form > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.formSimulator label { display: grid; gap: 6px; }
+.formSimulator label > span { color: #5d6b80; font-size: 0.75rem; font-weight: 750; }
+.formSimulator input[type="text"],
+.formSimulator input[type="tel"] { min-height: 44px; padding: 10px 11px; border: 1px solid #dfe6ef; border-radius: 8px; font: inherit; }
+.formSimulator button { justify-self: start; min-height: 44px; padding: 10px 16px; border: 0; border-radius: 8px; color: #fff; background: #2f6fe4; font: inherit; font-size: 0.78rem; font-weight: 800; }
+.simulatedConsent { display: flex !important; align-items: flex-start; gap: 8px; }
+.simulatedConsent input { margin-top: 3px; }
+.simulatedSuccess { display: grid; gap: 3px; margin-top: 14px; padding: 14px; border-left: 4px solid #18735a; color: #155942; background: #effaf6; }
+.simulatedSuccess span { font-size: 0.78rem; line-height: 1.5; }
+
+@media (max-width: 700px) {
+  .formSimulator { padding: 18px; }
+  .formSimulator > header { display: grid; }
+  .formSimulator form > div { grid-template-columns: 1fr; }
+}

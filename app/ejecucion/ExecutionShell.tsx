@@ -1,9 +1,10 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import styles from "./execution.module.css";
 import WorkspaceTransfer from "./WorkspaceTransfer";
+import { CAPTURE_UNITS } from "./catalog";
 
 export const EXECUTION_NAV = [
   { id: "systems", href: "/sistemas", label: "Sistemas de captación", icon: "01" },
@@ -26,6 +27,25 @@ export default function ExecutionShell({ active, eyebrow, title, description, ac
   actions?: ReactNode;
   children: ReactNode;
 }) {
+  const [query, setQuery] = useState("");
+  const normalized = query.trim().toLocaleLowerCase("es");
+  const results = useMemo(() => normalized ? CAPTURE_UNITS.flatMap((unit) => [
+    { id: `${unit.id}-system`, label: unit.name, detail: "Sistema", href: `/sistemas#/niche/${unit.systemId}` },
+    { id: `${unit.id}-campaigns`, label: `${unit.name} · campañas`, detail: "B2B y B2C", href: `/campanas?unidad=${unit.id}` },
+    { id: `${unit.id}-creative`, label: `${unit.name} · creatividades`, detail: "Biblioteca", href: `/biblioteca-creativa?unidad=${unit.id}` },
+  ]).filter((item) => `${item.label} ${item.detail}`.toLocaleLowerCase("es").includes(normalized)).slice(0, 8) : [], [normalized]);
+
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase("es") === "k") {
+        event.preventDefault();
+        document.getElementById(window.matchMedia("(max-width: 760px)").matches ? "execution-mobile-search" : "execution-global-search")?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   return (
     <div className={styles.shell}>
       <a className={styles.skip} href="#execution-content">Saltar al contenido</a>
@@ -35,6 +55,11 @@ export default function ExecutionShell({ active, eyebrow, title, description, ac
           <div><strong>RedVitalia</strong><small>INTELIGENCIA DE MERCADO</small></div>
         </Link>
         <p className={styles.groupLabel}>EJECUCIÓN REDVITALIA</p>
+        <div className={styles.globalSearch}>
+          <label htmlFor="execution-global-search">Buscar en ejecución <kbd>Ctrl K</kbd></label>
+          <input id="execution-global-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Sistema, campaña o creatividad" />
+          {results.length ? <div role="listbox" aria-label="Resultados globales">{results.map((item) => <Link prefetch={false} role="option" aria-selected="false" key={item.id} href={item.href} onClick={() => setQuery("")}><span>{item.label}</span><small>{item.detail}</small></Link>)}</div> : normalized ? <small className={styles.searchEmpty}>Sin coincidencias</small> : null}
+        </div>
         <nav aria-label="Ejecución RedVitalia">
           {EXECUTION_NAV.map((item) => (
             <Link prefetch={false} key={item.id} href={item.href} className={active === item.id ? styles.active : undefined} aria-current={active === item.id ? "page" : undefined}>
@@ -59,8 +84,9 @@ export default function ExecutionShell({ active, eyebrow, title, description, ac
             </select>
           </label>
         </header>
+        <div className={styles.mobileSearch}><label htmlFor="execution-mobile-search">Buscar en ejecución</label><input id="execution-mobile-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Sistema, campaña o creatividad" />{results.length ? <div>{results.map((item) => <Link prefetch={false} key={item.id} href={item.href} onClick={() => setQuery("")}><span>{item.label}</span><small>{item.detail}</small></Link>)}</div> : null}</div>
         <header className={styles.pageHead}>
-          <div><p>{eyebrow}</p><h1>{title}</h1><span>{description}</span></div>
+          <div><nav className={styles.breadcrumbs} aria-label="Migas de pan"><Link prefetch={false} href="/?vista=home">Mercado</Link><span>/</span><Link prefetch={false} href="/sistemas">Ejecución</Link><span>/</span><b>{EXECUTION_NAV.find((item) => item.id === active)?.label}</b></nav><p>{eyebrow}</p><h1>{title}</h1><span>{description}</span></div>
           {actions ? <div className={styles.pageActions}>{actions}</div> : null}
         </header>
         <main id="execution-content" className={styles.content}>{children}</main>
