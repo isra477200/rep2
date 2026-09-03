@@ -5,7 +5,9 @@ import { CAPTURE_UNITS, CREATIVES, CREATIVE_FORMATS } from "../app/ejecucion/cat
 
 const root = process.cwd();
 const baseDir = path.join(root, "public", "assets", "ejecucion", "base");
+const sourceBaseDir = path.join(root, "source-assets", "ejecucion", "base");
 const outDir = path.join(root, "public", "assets", "ejecucion", "adaptations");
+const thumbnailDir = path.join(root, "public", "assets", "ejecucion", "thumbnails");
 
 const escapeXml = (value) => String(value)
   .replaceAll("&", "&amp;")
@@ -94,7 +96,7 @@ const overlay = (creative, format) => {
 };
 
 const ensureBaseWebp = async (unit) => {
-  const png = path.join(baseDir, path.basename(unit.image).replace(/\.webp$/, ".png"));
+  const png = path.join(sourceBaseDir, path.basename(unit.image).replace(/\.webp$/, ".png"));
   const webp = path.join(baseDir, path.basename(unit.image));
   try {
     await access(webp);
@@ -115,9 +117,14 @@ const renderOne = async (creative, format) => {
 };
 
 await mkdir(outDir, { recursive: true });
+await mkdir(thumbnailDir, { recursive: true });
 if (!path.resolve(outDir).startsWith(`${path.resolve(root)}${path.sep}`)) throw new Error("Directorio de salida fuera del proyecto");
+if (!path.resolve(thumbnailDir).startsWith(`${path.resolve(root)}${path.sep}`)) throw new Error("Directorio de miniaturas fuera del proyecto");
 for (const filename of await readdir(outDir)) {
   if (/^cr-[a-z0-9-]+\.(?:webp|jpg)$/i.test(filename)) await unlink(path.join(outDir, filename));
+}
+for (const filename of await readdir(thumbnailDir)) {
+  if (/^cr-[a-z0-9-]+\.webp$/i.test(filename)) await unlink(path.join(thumbnailDir, filename));
 }
 for (const unit of CAPTURE_UNITS) await ensureBaseWebp(unit);
 
@@ -131,4 +138,10 @@ const workers = Array.from({ length: 8 }, async () => {
 });
 await Promise.all(workers);
 
-console.log(JSON.stringify({ baseImages: CAPTURE_UNITS.length, concepts: CREATIVES.length, formats: CREATIVE_FORMATS.length, adaptations: jobs.length, output: outDir }, null, 2));
+await Promise.all(CREATIVES.map(async (creative) => {
+  const source = path.join(root, "public", creative.master.replace(/^\//, ""));
+  const destination = path.join(root, "public", creative.thumbnail.replace(/^\//, ""));
+  await sharp(source).resize(480, 480, { fit: "cover" }).webp({ quality: 74, effort: 5 }).toFile(destination);
+}));
+
+console.log(JSON.stringify({ baseImages: CAPTURE_UNITS.length, concepts: CREATIVES.length, formats: CREATIVE_FORMATS.length, adaptations: jobs.length, thumbnails: CREATIVES.length, output: outDir }, null, 2));

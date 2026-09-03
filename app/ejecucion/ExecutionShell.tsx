@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import styles from "./execution.module.css";
+import WorkspaceTransfer from "./WorkspaceTransfer";
 
 export const EXECUTION_NAV = [
   { id: "systems", href: "/sistemas", label: "Sistemas de captación", icon: "01" },
@@ -29,14 +30,14 @@ export default function ExecutionShell({ active, eyebrow, title, description, ac
     <div className={styles.shell}>
       <a className={styles.skip} href="#execution-content">Saltar al contenido</a>
       <aside className={styles.sidebar}>
-        <Link className={styles.brand} href="/?vista=home" aria-label="Volver al mercado RedVitalia">
+        <Link prefetch={false} className={styles.brand} href="/?vista=home" aria-label="Volver al mercado RedVitalia">
           <span>RV</span>
           <div><strong>RedVitalia</strong><small>INTELIGENCIA DE MERCADO</small></div>
         </Link>
         <p className={styles.groupLabel}>EJECUCIÓN REDVITALIA</p>
         <nav aria-label="Ejecución RedVitalia">
           {EXECUTION_NAV.map((item) => (
-            <Link key={item.id} href={item.href} className={active === item.id ? styles.active : undefined} aria-current={active === item.id ? "page" : undefined}>
+            <Link prefetch={false} key={item.id} href={item.href} className={active === item.id ? styles.active : undefined} aria-current={active === item.id ? "page" : undefined}>
               <i>{item.icon}</i><span>{item.label}</span>
             </Link>
           ))}
@@ -45,11 +46,12 @@ export default function ExecutionShell({ active, eyebrow, title, description, ac
           <span />
           <div><strong>Revisión humana obligatoria</strong><small>Nada se publica ni se envía a Ads desde aquí.</small></div>
         </div>
-        <Link className={styles.marketLink} href="/?vista=home">← Volver al estudio de mercado</Link>
+        <WorkspaceTransfer />
+        <Link prefetch={false} className={styles.marketLink} href="/?vista=home">← Volver al estudio de mercado</Link>
       </aside>
       <div className={styles.main}>
         <header className={styles.mobileHeader}>
-          <Link href="/?vista=home"><span>RV</span><strong>RedVitalia</strong></Link>
+          <Link prefetch={false} href="/?vista=home"><span>RV</span><strong>RedVitalia</strong></Link>
           <label>
             <span>Sección</span>
             <select defaultValue={EXECUTION_NAV.find((item) => item.id === active)?.href} onChange={(event) => window.location.assign(event.target.value)} aria-label="Navegación de ejecución">

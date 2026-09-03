@@ -83,7 +83,7 @@ export const CAPTURE_UNITS: CaptureUnit[] = [
   },
   {
     id: "coches", systemId: "coches", system: "Compra de vehículos problemáticos", name: "Coches con cargas, avería o siniestro", phase: "Siguiente", channel: "Google Search",
-    image: "/assets/ejecucion/base/coches.webp", problem: "Propietarios que necesitan saber si una venta es viable pese a la carga, deuda o estado del vehículo.", result: "Vehículo valorable con oferta emitida y margen registrado.", decisionMaker: "Dirección de compras o gerente con liquidez y logística.", endUser: "Propietario o representante acreditado que quiere vender.", offer: "Silos por reserva, embargo, financiado, avería y siniestro; valoración y eventos offline por margen.", landing: "/landings/coches-con-cargas", primaryConversion: "oferta_emitida_vehiculo",
+    image: "/assets/ejecucion/base/coches.webp", problem: "Propietarios que necesitan saber si una venta es viable pese a la carga, deuda o estado del vehículo.", result: "Vehículo valorable con oferta emitida y margen registrado.", decisionMaker: "Dirección de compras o gerente con liquidez y logística.", endUser: "Propietario o representante acreditado que quiere vender.", offer: "Silos por reserva, embargo, financiado, avería y siniestro; valoración y eventos offline por margen.", landing: "/landings/vender-coche-con-cargas", primaryConversion: "oferta_emitida_vehiculo",
     qualification: ["Marca, modelo, año y kilómetros", "Provincia", "Titularidad", "Tipo de carga o avería", "Deuda aproximada", "Fotos", "Expectativa y urgencia"], rejection: ["Quiere comprar en subasta", "No es titular", "Busca asesoría sin vender", "Fuera de cobertura", "Sin documentación", "Expectativa inviable"], subniches: ["Reserva de dominio", "Embargo o precinto", "Financiado pendiente", "Averiado", "Siniestro", "Exportación"], compliance: "Diferenciar tasación, oferta y compra. No garantizar valoración ni compra inmediata.", creativeRoutes: [{ name: "Diagnóstico de carga", direction: "Documentación, vehículo y viabilidad antes de ofertar." }, { name: "Oferta transparente", direction: "Explicar qué se descuenta y qué falta por comprobar." }, { name: "Proceso de recogida", direction: "Pasos operativos, propiedad y documentación sin promesas." }],
   },
   {
@@ -142,7 +142,7 @@ const modeCopy = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
       audience: unit.decisionMaker,
       message: `No faltan formularios: falta convertir ${unit.result.toLocaleLowerCase("es")} en una métrica operativa.`,
       offer: `Auditoría del recorrido actual + piloto de ${unit.offer.toLocaleLowerCase("es")}`,
-      landing: `/campanas/${unit.id}/b2b`,
+      landing: `/landings/${unit.id}-b2b`,
       conversion: `reunion_b2b_${unit.id.replaceAll("-", "_")}`,
     }
   : {
@@ -152,6 +152,26 @@ const modeCopy = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
       offer: unit.offer,
       landing: unit.landing,
       conversion: unit.primaryConversion,
+    };
+
+const messagePack = (unit: CaptureUnit, mode: CampaignMode) => mode === "B2B"
+  ? {
+      emailSubject: `${unit.result.replace(/[.!?]+$/, "")}: propuesta de piloto medible`,
+      emailBody: `Hemos revisado el recorrido de captación de ${unit.system.toLocaleLowerCase("es")}. La propuesta es empezar por ${unit.subniches[0].toLocaleLowerCase("es")}, acordar qué se considera una oportunidad válida y devolver al sistema el resultado ${unit.result.toLocaleLowerCase("es")} Si hay capacidad y margen, preparamos un piloto para revisión.`,
+      whatsapp: `Hola. Te escribo por la solicitud sobre captación para ${unit.name}. Antes de proponer campañas necesitamos confirmar zona, capacidad, ticket, seguimiento y resultado medible. ¿Te viene bien revisar esos cinco puntos?`,
+      openingScript: `Confirmar cargo y contexto. Preguntar oferta prioritaria, zona, capacidad semanal, tiempo de respuesta, ticket, margen y cómo registran hoy ${unit.result.toLocaleLowerCase("es")}`,
+      noShow: "No damos la reunión por perdida: confirmar si cambió la prioridad, ofrecer una única alternativa y registrar el motivo si no continúa.",
+      reactivation: `Retomar solo con base legítima y contexto: preguntar si sigue activa la necesidad de mejorar ${unit.result.toLocaleLowerCase("es")} y si han cambiado capacidad o presupuesto.`,
+      remarketing: `Mensaje de proceso: definir oportunidad válida, medir el recorrido completo y decidir con contribución; sin prometer volumen ni ventas.`,
+    }
+  : {
+      emailSubject: `Siguiente paso para revisar ${unit.name.toLocaleLowerCase("es")}`,
+      emailBody: `Hemos recibido tu solicitud. Para comprobar si encaja necesitamos revisar ${unit.qualification.slice(0, 3).join(", ").toLocaleLowerCase("es")}. Enviar datos no garantiza aceptación, cita, precio ni resultado.`,
+      whatsapp: `Hola. Te contactamos por tu solicitud sobre ${unit.name}. Antes de avanzar necesitamos confirmar ${unit.qualification.slice(0, 3).join(", ").toLocaleLowerCase("es")}. No envíes documentación sensible por este chat.`,
+      openingScript: `Confirmar identidad, consentimiento y teléfono. Revisar ${unit.qualification.slice(0, 5).join(", ").toLocaleLowerCase("es")}. Explicar el siguiente paso sin anticipar resultado.`,
+      noShow: "Confirmar que la persona está bien, ofrecer una nueva franja y registrar el motivo. No usar presión, urgencia falsa ni mensajes repetidos.",
+      reactivation: `Con consentimiento vigente, preguntar si sigue necesitando ${unit.result.toLocaleLowerCase("es")} y si cambiaron zona, urgencia o disponibilidad.`,
+      remarketing: `${unit.problem} Explicar proceso, encaje y siguiente paso; no convertir una señal intermedia en promesa de resultado.`,
     };
 
 export const CAMPAIGNS = CAPTURE_UNITS.flatMap((unit) => (["B2B", "B2C"] as CampaignMode[]).map((mode) => {
@@ -178,7 +198,8 @@ export const CAMPAIGNS = CAPTURE_UNITS.flatMap((unit) => (["B2B", "B2C"] as Camp
     exclusions: ["Fuera de zona", "Menores sin representante", "Tráfico informativo sin intención", ...unit.rejection.slice(0, 2)],
     schedule: "Solo franjas con respuesta humana y agenda disponible",
     devices: "Móvil prioritario; revisar llamadas y formularios por dispositivo",
-    tracking: ["view_landing", "form_start", "lead_submit", ...copy.conversion.split(" "), copy.conversion],
+    tracking: ["view_landing", "form_start", "lead_submit", copy.conversion],
+    messages: messagePack(unit, mode),
     evidence: "Hipótesis" as EvidenceLevel,
   };
 }));
@@ -250,8 +271,9 @@ export const CREATIVES = CAPTURE_UNITS.flatMap((unit) =>
   rejectionReason: "",
   baseImage: unit.image,
   master: `/assets/ejecucion/adaptations/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}-meta-square.jpg`,
+  thumbnail: `/assets/ejecucion/thumbnails/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}.webp`,
   adaptations: CREATIVE_FORMATS.map((format) => ({ ...format, file: `/assets/ejecucion/adaptations/cr-${unit.id}-${mode.toLocaleLowerCase("es")}-${routeIndex + 1}-${conceptIndex + 1}-${format.id}.jpg` })),
-  landing: mode === "B2B" ? `/campanas/${unit.id}/b2b` : unit.landing,
+  landing: mode === "B2B" ? `/landings/${unit.id}-b2b` : unit.landing,
   performance: null,
   cost: "Generación nativa de la sesión · coste no expuesto",
         learning: "Pendiente de prueba",
@@ -302,6 +324,6 @@ export const LEARNINGS = [
   { id: "learn-5", type: "Descartar", title: "CPL barato como criterio de éxito", detail: "Un lead barato no demuestra asistencia, venta ni contribución. El laboratorio mantiene todas las capas separadas.", source: "Síntesis operativa", status: "Comprobada" },
 ];
 
-export const CAMPAIGN_STATES = ["Borrador", "Pendiente de datos", "Lista para creatividad", "Creatividad en producción", "Pendiente de revisión", "Lista para aprobación", "Aprobada", "Rechazada", "Exportada", "En prueba", "Pendiente de resultado", "Cerrada"];
+export const CAMPAIGN_STATES = ["Borrador", "En preparación", "Pendiente de creatividad", "Pendiente de revisión", "Lista para aprobar", "Aprobada", "Rechazada", "En prueba", "Pausada", "Escalada", "Cerrada"];
 export const DECISION_STATES = ["Borrador", "Pendiente de datos", "Comprobada", "Pendiente de aprobación", "Aprobada", "Rechazada", "Ejecutada", "Pendiente de resultado", "Cerrada"];
-export const CREATIVE_STATES = ["Brief", "Generando", "Generada", "Revisando", "Corregir", "Aprobada", "Rechazada", "Lista para campaña", "En prueba", "Ganadora", "Perdedora", "Archivada"];
+export const CREATIVE_STATES = ["Brief", "En generación", "Generada", "Pendiente de revisión", "Necesita corrección", "Aprobada", "Rechazada", "Lista para campaña", "En prueba", "Ganadora", "Perdedora", "Archivada"];
