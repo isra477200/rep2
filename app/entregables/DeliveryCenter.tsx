@@ -51,8 +51,10 @@ export default function DeliveryCenter() {
             <p>Prospección a empresas que contratarán a RedVitalia para gestionar su publicidad y captación. No son guiones para vender al consumidor final.</p>
           </div>
           <div className={styles.kitSummary}>
-            <span><b>4</b> materiales principales</span>
-            <span><b>51</b> diapositivas y páginas</span>
+            <span><b>8</b> materiales principales</span>
+            <span><b>91</b> páginas/diapositivas + <b>10</b> hojas CRM</span>
+            <Link prefetch={false} href="/operacion-comercial">Abrir operación comercial</Link>
+            <a href="/assets/ejecucion/enablement/09-INFORME-EJECUTIVO-AMPLIACION.md">Leer informe ejecutivo</a>
             <a href="/assets/ejecucion/enablement/KIT-COMERCIAL-REDVITALIA.zip" download>Descargar kit completo</a>
           </div>
         </header>
@@ -73,6 +75,22 @@ export default function DeliveryCenter() {
           <article className={styles.kitCard}>
             <img src="/assets/ejecucion/enablement/previews/manual-closer.png" alt="Portada del manual del closer" />
             <div><p>USO INTERNO · CLOSER</p><h3>Manual del closer</h3><span>Handoff, scorecard, economía, cierres, señales por vertical y certificación.</span><nav><a href="/assets/ejecucion/enablement/04-MANUAL-CLOSER-REDVITALIA.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/04-MANUAL-CLOSER-REDVITALIA.docx" download>Editar DOCX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/academia-caller.png" alt="Vista previa de la academia para callers" />
+            <div><p>FORMACIÓN · CALLER</p><h3>Academia de prospección</h3><span>18 diapositivas para formar, practicar, evaluar y certificar a quien abre conversaciones en frío.</span><nav><a href="/assets/ejecucion/enablement/05-ACADEMIA-CALLER-REDVITALIA.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/05-ACADEMIA-CALLER-REDVITALIA.pptx" download>Editar PPTX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/secuencias-multicanal.png" alt="Portada del manual de secuencias multicanal" />
+            <div><p>USO INTERNO · SDR</p><h3>Secuencias multicanal B2B</h3><span>Cadencia de 15 días con llamada, email, LinkedIn, WhatsApp, voicemail y criterios de salida.</span><nav><a href="/assets/ejecucion/enablement/06-SECUENCIAS-MULTICANAL-B2B.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/06-SECUENCIAS-MULTICANAL-B2B.docx" download>Editar DOCX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/diagnostico-propuesta.png" alt="Portada de la plantilla de diagnóstico y propuesta" />
+            <div><p>USO INTERNO · CLOSER</p><h3>Diagnóstico y propuesta</h3><span>Workbook para discovery, scorecard, economía, plan mutuo, go/no-go y recap con siguiente decisión.</span><nav><a href="/assets/ejecucion/enablement/07-PLANTILLA-DIAGNOSTICO-PROPUESTA.pdf">Abrir PDF</a><a href="/assets/ejecucion/enablement/07-PLANTILLA-DIAGNOSTICO-PROPUESTA.docx" download>Editar DOCX</a></nav></div>
+          </article>
+          <article className={styles.kitCard}>
+            <img src="/assets/ejecucion/enablement/previews/crm-dashboard.png" alt="Dashboard del sistema comercial CRM" />
+            <div><p>OPERACIÓN · EQUIPO</p><h3>Sistema comercial CRM</h3><span>10 hojas editables: cuentas, pipeline, actividad, cadencia, dashboard, scorecards e inteligencia vertical.</span><nav><a href="/assets/ejecucion/enablement/08-SISTEMA-COMERCIAL-CRM.xlsx" download>Descargar XLSX</a><Link prefetch={false} href="/operacion-comercial">Usar en la plataforma</Link></nav></div>
           </article>
         </div>
       </section>

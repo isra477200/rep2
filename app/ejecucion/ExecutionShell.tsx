@@ -16,6 +16,7 @@ export const EXECUTION_NAV = [
   { id: "experiments", href: "/experimentos", label: "Experimentos", icon: "07" },
   { id: "decisions", href: "/decisiones", label: "Decisiones", icon: "08" },
   { id: "learnings", href: "/aprendizajes", label: "Aprendizajes", icon: "09" },
+  { id: "commercial", href: "/operacion-comercial", label: "Operación comercial", icon: "10" },
 ] as const;
 
 export type ExecutionSection = (typeof EXECUTION_NAV)[number]["id"];

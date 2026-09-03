@@ -14,6 +14,7 @@ import {
   SYSTEMS,
 } from "../app/ejecucion/catalog.ts";
 import { calculateEconomics } from "../app/ejecucion/economics.ts";
+import { CADENCE, CALL_DISPOSITIONS, CLOSER_SCORE, COMMERCIAL_VERTICALS, PIPELINE_STAGES, QA_CALL } from "../app/ejecucion/commercial.ts";
 import { buildOperationalPlaybooks, validatePlaybook } from "../app/ejecucion/playbooks.ts";
 import { DIMENSION_LABELS, sanitizeWeights, STRATEGY, weightedStrategyScore } from "../app/sistemas/strategy.ts";
 import { getLandingBlueprint, LANDING_BLUEPRINTS } from "../app/ejecucion/landing-blueprints.ts";
@@ -220,12 +221,13 @@ test("workspace snapshots are versioned, bounded and round-trip without unrelate
   assert.equal(decodeStoredValue("not-json", "fallback"), "fallback");
 });
 
-test("all nine native execution routes are present without embedded page frames", async () => {
-  const routes = ["entregables", "sistemas", "campanas", "creativos", "biblioteca-creativa", "laboratorio", "experimentos", "decisiones", "aprendizajes"];
+test("all ten native execution routes are present without embedded page frames", async () => {
+  const routes = ["entregables", "operacion-comercial", "sistemas", "campanas", "creativos", "biblioteca-creativa", "laboratorio", "experimentos", "decisiones", "aprendizajes"];
   for (const route of routes) await stat(path.join(root, "app", route, "page.tsx"));
   const sources = await Promise.all([
     readFile(path.join(root, "app", "ejecucion", "ExecutionShell.tsx"), "utf8"),
     readFile(path.join(root, "app", "ejecucion", "ExecutionWorkspace.tsx"), "utf8"),
+    readFile(path.join(root, "app", "operacion-comercial", "CommercialOps.tsx"), "utf8"),
     readFile(path.join(root, "app", "nichos", "page.tsx"), "utf8"),
     readFile(path.join(root, "app", "landings", "[slug]", "LandingBlueprintView.tsx"), "utf8"),
   ]);
@@ -260,6 +262,13 @@ test("the delivery center exposes one complete downloadable package per campaign
     "03-MANUAL-PROSPECCION-Y-LLAMADA-FRIA.pdf",
     "04-MANUAL-CLOSER-REDVITALIA.docx",
     "04-MANUAL-CLOSER-REDVITALIA.pdf",
+    "05-ACADEMIA-CALLER-REDVITALIA.pptx",
+    "05-ACADEMIA-CALLER-REDVITALIA.pdf",
+    "06-SECUENCIAS-MULTICANAL-B2B.docx",
+    "06-SECUENCIAS-MULTICANAL-B2B.pdf",
+    "07-PLANTILLA-DIAGNOSTICO-PROPUESTA.docx",
+    "07-PLANTILLA-DIAGNOSTICO-PROPUESTA.pdf",
+    "08-SISTEMA-COMERCIAL-CRM.xlsx",
   ];
   for (const filename of enablementFiles) {
     const file = await stat(path.join(root, "public", "assets", "ejecucion", "enablement", filename));
@@ -267,6 +276,23 @@ test("the delivery center exposes one complete downloadable package per campaign
   }
   const enablementArchive = await stat(path.join(root, "public", "assets", "ejecucion", "enablement", "KIT-COMERCIAL-REDVITALIA.zip"));
   assert.ok(enablementArchive.size > 5_000_000, "commercial enablement archive is unexpectedly small");
+});
+
+test("the B2B commercial operation covers caller, pipeline, closer, cadence and quality", async () => {
+  assert.equal(PIPELINE_STAGES.length, 8);
+  assert.equal(CADENCE.length, 9);
+  assert.ok(CALL_DISPOSITIONS.length >= 8);
+  assert.equal(CLOSER_SCORE.length, 8);
+  assert.ok(QA_CALL.length >= 10);
+  assert.equal(COMMERCIAL_VERTICALS.length, CAPTURE_UNITS.length);
+  assert.ok(COMMERCIAL_VERTICALS.every((item) => item.questions.length >= 4));
+  assert.ok(COMMERCIAL_VERTICALS.every((item) => item.proof.length >= 2 && item.noGo.length >= 2));
+
+  const source = await readFile(path.join(root, "app", "operacion-comercial", "CommercialOps.tsx"), "utf8");
+  assert.match(source, /RedVitalia vende captación a empresas/i);
+  assert.match(source, /EJEMPLO - BORRAR/);
+  assert.match(source, /Exportar CSV/);
+  assert.match(source, /Revisión humana/i);
 });
 
 test("campaign and creative deep links are consumed instead of discarding context", async () => {
