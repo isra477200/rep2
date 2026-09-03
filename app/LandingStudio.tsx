@@ -39,6 +39,48 @@ type EditorSection = "strategy" | "message" | "evidence" | "conversion";
 
 const STORAGE_KEY = "rv-landing-studio-v3";
 
+function IsolatedPreview({ html, title, editable = false }: { html: string; title: string; editable?: boolean }) {
+  const hostRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const host = hostRef.current;
+    if (!host) return;
+    const root = host.shadowRoot || host.attachShadow({ mode: "open" });
+    const parsed = new DOMParser().parseFromString(html, "text/html");
+    parsed.querySelectorAll("script,iframe,object,embed").forEach((node) => node.remove());
+    parsed.querySelectorAll("*").forEach((node) => {
+      [...node.attributes].forEach((attribute) => {
+        if (attribute.name.toLowerCase().startsWith("on")) node.removeAttribute(attribute.name);
+      });
+    });
+    const scopedCss = [...parsed.head.querySelectorAll("style")]
+      .map((node) => node.textContent || "")
+      .join("\n")
+      .replace(/\bhtml\b/g, ":host")
+      .replace(/\bbody\b/g, ".rv-preview-body");
+    const editCss = editable
+      ? "[data-edit]{outline:2px dashed rgba(23,105,224,.5);outline-offset:3px;cursor:text;border-radius:3px}[data-edit]:focus{outline:2px solid #1769e0;background:#fff}"
+      : "";
+    root.innerHTML = `<style>:host{display:block;width:100%;height:100%;overflow:auto;background:#fff}${scopedCss}${editCss}</style><div class="rv-preview-body">${parsed.body.innerHTML}</div>`;
+    if (!editable) return;
+    root.querySelectorAll<HTMLElement>("[data-edit]").forEach((element) => {
+      element.setAttribute("contenteditable", "plaintext-only");
+      element.addEventListener("blur", () => {
+        window.postMessage({ rvEdit: element.dataset.edit, value: element.innerText }, "*");
+      });
+      element.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" && element.tagName !== "P") {
+          event.preventDefault();
+          element.blur();
+        }
+      });
+      if (element.matches("summary,a")) element.addEventListener("click", (event) => event.preventDefault());
+    });
+  }, [editable, html]);
+
+  return <div ref={hostRef} className={styles.previewDocument} role="document" aria-label={title} />;
+}
+
 const safeParse = (raw: string | null): LandingBrief | null => {
   if (!raw) return null;
   try {
@@ -269,24 +311,23 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     };
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const ammo = useMemo(
-    () => buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit),
-    [brief.verticalId, brief.unit, verticales, arsenalData, crucesData],
-  );
+  const ammo = buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit);
   useEffect(() => {
-    if (!hydrated || !ammo) return;
-    setBrief((current) => {
-      if (current.verticalId !== ammo.verticalId) return current;
-      const wantsCopy = !current.proof.trim() && !current.guarantee.trim();
-      const wantsStats = !(current.marketStats || []).length && ammo.stats.length > 0;
-      if (wantsCopy) return applyMarketAmmo(current, ammo);
-      if (wantsStats) return { ...current, marketStats: ammo.stats };
-      return current;
+    const effectAmmo = buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit);
+    if (!hydrated || !effectAmmo) return;
+    queueMicrotask(() => {
+      setBrief((current) => {
+        if (current.verticalId !== effectAmmo.verticalId) return current;
+        const wantsCopy = !current.proof.trim() && !current.guarantee.trim();
+        const wantsStats = !(current.marketStats || []).length && effectAmmo.stats.length > 0;
+        if (wantsCopy) return applyMarketAmmo(current, effectAmmo);
+        if (wantsStats) return { ...current, marketStats: effectAmmo.stats };
+        return current;
+      });
     });
-  }, [ammo, hydrated]);
+  }, [arsenalData, brief.unit, brief.verticalId, crucesData, hydrated, verticales]);
 
   const autoBuild = () => {
     setPreviousBrief(brief);
@@ -331,8 +372,8 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   // el HTML de exportación se genera solo al pulsar descargar/copiar.
   const [previewBrief, setPreviewBrief] = useState<LandingBrief>(brief);
   useEffect(() => {
-    // En modo edición en página el iframe conserva su DOM (el usuario está escribiendo
-    // dentro); el brief se actualiza igualmente y la preview se regenera al salir.
+    // En modo edición el documento aislado conserva su DOM mientras el usuario escribe;
+    // el brief se actualiza igualmente y la preview se regenera al salir.
     if (editMode) return;
     const timeout = window.setTimeout(() => setPreviewBrief(brief), 350);
     return () => window.clearTimeout(timeout);
@@ -340,12 +381,8 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const exportHtml = () => buildLandingHtml(brief);
   const previewHtml = useMemo(() => {
     const html = buildLandingHtml({ ...previewBrief, leadEndpoint: "", gtmId: "" });
-    if (!editMode) return html;
-    const editRuntime =
-      "<style>[data-edit]{outline:2px dashed rgba(23,105,224,.5);outline-offset:3px;cursor:text;border-radius:3px;transition:outline-color .15s}[data-edit]:hover{outline-color:#1769e0;background:rgba(23,105,224,.06)}[data-edit]:focus{outline:2px solid #1769e0;background:#fff}</style>" +
-      "<script>!function(){document.querySelectorAll('[data-edit]').forEach(function(el){el.setAttribute('contenteditable','plaintext-only');el.addEventListener('blur',function(){parent.postMessage({rvEdit:el.getAttribute('data-edit'),value:el.innerText},'*')});el.addEventListener('keydown',function(e){if(e.key==='Enter'&&el.tagName!=='P'){e.preventDefault();el.blur()}})});document.querySelectorAll('summary[data-edit]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault()})});document.querySelectorAll('a[data-edit]').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault()})})}()</script>";
-    return html.replace("</body>", editRuntime + "</body>");
-  }, [previewBrief, editMode]);
+    return html;
+  }, [previewBrief]);
   const readiness = useMemo(() => landingReadiness(brief), [brief]);
   const publishReady = readiness.publishable;
   const verticalIntel =
@@ -397,11 +434,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   };
   const preview = (
     <div className={`${styles.previewFrame} ${styles[device]}`}>
-      <iframe
-        title="Vista previa de la landing generada"
-        srcDoc={previewHtml}
-        sandbox="allow-scripts allow-forms allow-popups"
-      />
+      <IsolatedPreview html={previewHtml} title="Vista previa de la landing generada" editable={editMode} />
     </div>
   );
   const filename = `landing-${slug(brief.service)}-${slug(brief.zone)}.html`;
@@ -757,11 +790,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               {VARIANT_META.map(([variant, label], index) => (
                 <figure key={variant}>
                   <figcaption>{label}{brief.variant === variant ? " · activa" : ""}</figcaption>
-                  <iframe
-                    title={`Variante ${label}`}
-                    srcDoc={compareHtml[index]}
-                    sandbox="allow-scripts allow-forms allow-popups"
-                  />
+                  <IsolatedPreview html={compareHtml[index]} title={`Variante ${label}`} />
                 </figure>
               ))}
             </div>

@@ -1,7 +1,9 @@
 "use client";
+/* eslint-disable @next/next/no-html-link-for-pages, @next/next/no-img-element, jsx-a11y/label-has-associated-control */
 
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import styles from "./nichos.module.css";
+import { CAPTURE_UNITS } from "../ejecucion/catalog";
 import {
   DIMENSION_LABELS,
   STRATEGY,
@@ -208,7 +210,6 @@ function ListCard({ title, items, tone }: { title: string; items: string[]; tone
 
 function EconomicsModel({ niche, strategy }: { niche: Niche; strategy: NicheStrategy }) {
   const [values, setValues] = useState<EconomicsState>(strategy.economics);
-  useEffect(() => setValues(strategy.economics), [strategy]);
 
   const fee = parseFee(niche.fee);
   const leads = values.cpl > 0 ? values.media / values.cpl : 0;
@@ -318,12 +319,14 @@ export default function NichosDashboard() {
   useEffect(() => {
     const savedWeights = safeGet("rv-nichos-v2-weights");
     const savedCompare = safeGet("rv-nichos-v2-compare");
-    try {
-      if (savedWeights) setWeights({ ...DEFAULT_WEIGHTS, ...JSON.parse(savedWeights) as Partial<Weights> });
-      if (savedCompare) setCompareIds((JSON.parse(savedCompare) as string[]).slice(0, 3));
-    } catch {
-      // Ignora preferencias corruptas.
-    }
+    queueMicrotask(() => {
+      try {
+        if (savedWeights) setWeights({ ...DEFAULT_WEIGHTS, ...JSON.parse(savedWeights) as Partial<Weights> });
+        if (savedCompare) setCompareIds((JSON.parse(savedCompare) as string[]).slice(0, 3));
+      } catch {
+        // Ignora preferencias corruptas.
+      }
+    });
   }, []);
 
   useEffect(() => safeSet("rv-nichos-v2-weights", JSON.stringify(weights)), [weights]);
@@ -358,7 +361,7 @@ export default function NichosDashboard() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const niches = data?.niches || [];
+  const niches = useMemo(() => data?.niches || [], [data?.niches]);
   const selected = niches.find((niche) => niche.id === selectedId) || niches[0];
   const selectedStrategy = selected ? STRATEGY[selected.id] : null;
 
@@ -452,6 +455,17 @@ export default function NichosDashboard() {
           <span>RV</span>
           <div><strong>RedVitalia</strong><small>INTELIGENCIA DE MERCADO</small></div>
         </a>
+        <div className={`${styles.sideBlock} ${styles.executionLinks}`}>
+          <small>EJECUCIÓN REDVITALIA</small>
+          <a className={styles.activeExecution} href="/sistemas"><i>01</i><span>Sistemas de captación</span></a>
+          <a href="/campanas"><i>02</i><span>Campañas</span></a>
+          <a href="/creativos"><i>03</i><span>Fábrica creativa</span></a>
+          <a href="/biblioteca-creativa"><i>04</i><span>Biblioteca creativa</span></a>
+          <a href="/laboratorio"><i>05</i><span>Laboratorio económico</span></a>
+          <a href="/experimentos"><i>06</i><span>Experimentos</span></a>
+          <a href="/decisiones"><i>07</i><span>Decisiones</span></a>
+          <a href="/aprendizajes"><i>08</i><span>Aprendizajes</span></a>
+        </div>
         <div className={styles.sideBlock}>
           <small>DECISIÓN</small>
           <button className={view === "overview" ? styles.activeNav : ""} onClick={() => navigate("overview")}><i>01</i><span>Resumen ejecutivo</span></button>
@@ -736,6 +750,12 @@ export default function NichosDashboard() {
                     <div className={styles.decisionPair}><article><span>MI RECOMENDACIÓN</span><p>{selected.recommendation}</p></article><article><span>MOTIVO</span><p>{selected.reason}</p></article></div>
                     <div className={styles.metaGrid}><article><span>RESULTADO VENDIBLE</span><strong>{selected.result}</strong></article><article><span>CANAL PRINCIPAL</span><strong>{selectedStrategy.channel}</strong></article><article><span>CICLO DE VENTA</span><strong>{selectedStrategy.salesCycle}</strong></article><article><span>FEE CANÓNICO</span><strong>{selected.fee}</strong></article></div>
                   </section>
+                  {selected.id === "legal" ? (
+                    <section className={styles.detailSection}>
+                      <SectionTitle eyebrow="TRES UNIDADES SEPARADAS" title="Infraestructura común, campañas y economía independientes" text="Segunda Oportunidad, Herencias y Divorcios no comparten landing, keywords, preguntas, creatividad, conversión principal ni modelo económico." />
+                      <div className={styles.legalUnitGrid}>{CAPTURE_UNITS.filter((unit) => unit.systemId === "legal").map((unit) => <article key={unit.id}><img src={unit.image} alt={`Consulta profesional para ${unit.name}`} /><div><span>{unit.phase}</span><h3>{unit.name}</h3><p>{unit.problem}</p><dl><div><dt>Resultado</dt><dd>{unit.result}</dd></div><div><dt>Conversión</dt><dd><code>{unit.primaryConversion}</code></dd></div><div><dt>Landing</dt><dd>{unit.landing}</dd></div></dl><h4>Preguntas propias</h4><ul>{unit.qualification.slice(0, 5).map((item) => <li key={item}>{item}</li>)}</ul><p className={styles.legalCompliance}>{unit.compliance}</p><div className={styles.legalActions}><a href={`/campanas?unidad=${unit.id}`}>Abrir campañas</a><a href={`/biblioteca-creativa?unidad=${unit.id}`}>Ver creatividades</a></div></div></article>)}</div>
+                    </section>
+                  ) : null}
                   <section className={styles.detailSection}>
                     <SectionTitle eyebrow="ENTRADA AL MERCADO" title="Subnichos y orden interno" text="No se abre un vertical completo. Se entra por el problema que ofrece mejor intención, margen y aprendizaje." />
                     <div className={styles.segmentTable}><div><span>Prioridad</span><span>Subsegmento</span><span>Por qué</span><span>Datos de entrada</span></div>{selectedStrategy.subsegments.map((segment) => <article key={segment.name}><b>{segment.priority}</b><strong>{segment.name}</strong><p>{segment.why}</p><span>{segment.entry}</span></article>)}</div>
@@ -747,7 +767,7 @@ export default function NichosDashboard() {
                 </>
               ) : null}
 
-              {detailTab === "economics" ? <section className={styles.detailSection}><SectionTitle eyebrow="ECONOMÍA DEL PILOTO" title="El CPL no decide; decide la contribución" text="Modelo editable. Honorarios netos, inversión en medios y valor bruto se muestran por separado." /><EconomicsModel niche={selected} strategy={selectedStrategy} /></section> : null}
+              {detailTab === "economics" ? <section className={styles.detailSection}><SectionTitle eyebrow="ECONOMÍA DEL PILOTO" title="El CPL no decide; decide la contribución" text="Modelo editable. Honorarios netos, inversión en medios y valor bruto se muestran por separado." /><EconomicsModel key={selected.id} niche={selected} strategy={selectedStrategy} /></section> : null}
 
               {detailTab === "funnel" ? (
                 <>
