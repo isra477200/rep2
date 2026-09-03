@@ -16,7 +16,8 @@ const STATUS = {
 } as const;
 
 const METRICS = [
-  ["712", "expedientes"],
+  ["1.091", "fichas"],
+  ["712", "profundas"],
   ["10", "sistemas"],
   ["40", "vías"],
   ["24", "campañas"],
@@ -133,7 +134,7 @@ export default function MaestroWorkspace() {
           <div className={styles.railHead}><span>03</span><div><strong>Memoria y control</strong><small>Qué sabe y qué límites respeta.</small></div></div>
           <article className={styles.contextCard}>
             <header><span>CONTEXTO CONECTADO</span><b>ACTIVO</b></header>
-            <ul><li>Mercado y expedientes</li><li>Oferta y tarifas canónicas</li><li>Sistemas y 40 vías</li><li>Campañas y landings</li><li>Creatividad y entregables</li><li>Caller, closer y economía</li></ul>
+            <ul><li>1.091 fichas de mercado</li><li>712 expedientes profundos</li><li>157 patrones e hipótesis</li><li>Oferta y tarifas canónicas</li><li>Sistemas y 40 vías</li><li>Caller, closer y economía</li></ul>
           </article>
           <article className={styles.controlCard}><span>REGLA DE VERDAD</span><p><b>Dato</b>, evidencia, síntesis, hipótesis y pendiente permanecen separados. Maestro no inventa resultados ni permisos.</p></article>
           <article className={styles.controlCard}><span>REGLA DE ACCIÓN</span><p>Puede producir un encargo completo. Si requiere publicar, enviar o cambiar sistemas externos, prepara el material y marca la aprobación necesaria.</p></article>

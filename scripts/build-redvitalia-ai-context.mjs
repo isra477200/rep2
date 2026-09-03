@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CAMPAIGNS, CAPTURE_UNITS, CREATIVES, CREATIVE_FORMATS, PRICING, PRICING_SOURCE, SYSTEMS } from "../app/ejecucion/catalog.ts";
@@ -10,6 +10,16 @@ import { STRATEGY } from "../app/sistemas/strategy.ts";
 
 const repository = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const target = resolve(repository, "worker/redvitalia-maestro-context.generated.json");
+const marketTarget = resolve(repository, "worker/redvitalia-market-search.generated.json");
+const intelligenceTarget = resolve(repository, "worker/redvitalia-intelligence-search.generated.json");
+const companyIndex = JSON.parse(await readFile(resolve(repository, "public/data/companies-index.json"), "utf8"));
+const deepIndex = JSON.parse(await readFile(resolve(repository, "public/data/deep/index.json"), "utf8"));
+const dataManifest = JSON.parse(await readFile(resolve(repository, "public/data/data-manifest.json"), "utf8"));
+const takeaways = JSON.parse(await readFile(resolve(repository, "public/data/takeaways.json"), "utf8"));
+const patternData = JSON.parse(await readFile(resolve(repository, "public/data/patterns.json"), "utf8"));
+const insightData = JSON.parse(await readFile(resolve(repository, "public/data/insights.json"), "utf8"));
+const competitiveData = JSON.parse(await readFile(resolve(repository, "public/data/competitive-intelligence.json"), "utf8"));
+const landingData = JSON.parse(await readFile(resolve(repository, "public/data/landing-intelligence.json"), "utf8"));
 
 const navigation = [
   ["/", "Mercado mundial, empresas, expedientes, países, funnels, anuncios y evidencias"],
@@ -113,7 +123,8 @@ const context = {
   ],
   navigation,
   totals: {
-    marketRecords: 712,
+    marketRecords: dataManifest.universe.companies,
+    deepRecords: dataManifest.deepSnapshot.companies,
     systems: SYSTEMS.length,
     captureUnits: CAPTURE_UNITS.length,
     campaigns: CAMPAIGNS.length,
@@ -152,3 +163,91 @@ const payload = JSON.stringify({ ...context, sha256: createHash("sha256").update
 await mkdir(dirname(target), { recursive: true });
 await writeFile(target, `${payload}\n`, "utf8");
 console.log(`RedVitalia Maestro context: ${Buffer.byteLength(payload, "utf8")} bytes.`);
+
+const sanitizePotentialSecrets = (value) => String(value || "")
+  .replace(/sk-[A-Za-z0-9_-]{20,}/gi, "[REDACTED_POTENTIAL_TOKEN]")
+  .replace(/Bearer\s+[A-Za-z0-9_.-]{20,}/gi, "Bearer [REDACTED]")
+  .replace(/(api[_-]?key\s*[:=]\s*)[^\s,;]{12,}/gi, "$1[REDACTED]");
+const clip = (value, limit) => sanitizePotentialSecrets(value).replace(/\s+/g, " ").trim().slice(0, limit);
+const deepById = new Map((deepIndex.records || []).map((record) => [record.id, record]));
+const marketRecords = companyIndex.map((company) => {
+  const deep = deepById.get(company.id) || {};
+  return {
+    id: company.id,
+    name: company.name,
+    domain: company.domain,
+    country: company.country,
+    scope: company.scope,
+    agencyType: company.agencyType,
+    offer: clip(company.offer, 480),
+    priceLocal: clip(company.priceLocal, 320),
+    priceEur: company.price?.eur || null,
+    channels: (company.channels || []).slice(0, 8),
+    score: company.score,
+    threat: company.threat,
+    relation: company.relation,
+    decision: company.decision,
+    evidence: company.evidence,
+    proof: clip(company.proof, 420),
+    cta: clip(company.cta, 220),
+    funnel: clip(company.funnel, 560),
+    niche: clip(company.niche, 300),
+    review: company.review,
+    advertising: { meta: company.metaStatus, metaAds: company.metaAds, google: company.googleStatus, googleAds: company.googleAds },
+    deep: deep.id ? { status: deep.status, confidence: deep.confidence, coveragePercent: deep.coveragePercent, evidenceCount: deep.evidenceCount, researchReadiness: deep.researchReadiness } : null,
+    takeaway: takeaways.items?.[company.id] || null,
+  };
+});
+
+if (marketRecords.length !== dataManifest.universe.companies) throw new Error(`Market index mismatch: ${marketRecords.length}`);
+const marketCore = { version: 1, generatedAt: dataManifest.generatedAt, records: marketRecords };
+const marketCompact = JSON.stringify(marketCore);
+const marketPayload = JSON.stringify({ ...marketCore, sha256: createHash("sha256").update(marketCompact).digest("hex") });
+await writeFile(marketTarget, `${marketPayload}\n`, "utf8");
+console.log(`RedVitalia market retrieval index: ${marketRecords.length} records · ${Buffer.byteLength(marketPayload, "utf8")} bytes.`);
+
+const intelligenceEntries = [];
+const addEntry = (kind, id, title, value, limit = 7000) => {
+  const content = clip(typeof value === "string" ? value : JSON.stringify(value), limit);
+  if (content) intelligenceEntries.push({ kind, id: `${kind}-${id}`, title: clip(title || id, 180), content });
+};
+const addCollection = (kind, collection, titlePrefix) => {
+  if (Array.isArray(collection)) collection.forEach((item, index) => addEntry(kind, item?.id || index + 1, item?.title || item?.label || item?.name || item?.pattern || `${titlePrefix} ${index + 1}`, item));
+  else if (collection && typeof collection === "object") Object.entries(collection).forEach(([key, value]) => addEntry(kind, key, `${titlePrefix}: ${key}`, value));
+};
+
+addEntry("market-summary", "winner-profile", "Perfil cuantitativo de ganadores y resto del mercado", {
+  universe: patternData.universe,
+  winnersN: patternData.winnersN,
+  winnersProfile: patternData.winnersProfile,
+  restProfile: patternData.restProfile,
+  winnerChannels: patternData.winnerChannels,
+});
+addCollection("business-model", patternData.modelStats, "Modelo de negocio");
+addCollection("validated-pattern", patternData.doubleValidated, "Patrón doblemente validado");
+addCollection("finding", patternData.findings, "Hallazgo competitivo");
+addEntry("market-economics", "overview", "Economía y distribución del mercado", {
+  universe: insightData.universe,
+  pricedCount: insightData.pricedCount,
+  worldMedianEur: insightData.worldMedianEur,
+  spainCount: insightData.spainCount,
+  priceBuckets: insightData.priceBuckets,
+  countryMedians: insightData.countryMedians,
+});
+addCollection("market-model", insightData.models, "Modelo observado");
+addCollection("guarantee", insightData.guarantees, "Garantías observadas");
+addCollection("copy-now", insightData.copyNow, "Acción copiable ahora");
+addCollection("market-gap", insightData.gaps, "Hueco de mercado");
+addEntry("methodology", "competitive", "Método y límites de la inteligencia competitiva", competitiveData.methodology, 9000);
+addCollection("creative-pattern", competitiveData.patternLibrary, "Patrón creativo y de copy");
+addCollection("playbook", competitiveData.playbooks, "Playbook competitivo");
+addCollection("vertical-gap", competitiveData.marketGaps, "Hueco por vertical");
+addCollection("hypothesis", competitiveData.hypothesisRanking, "Hipótesis priorizada");
+addCollection("landing-universal", landingData.universal, "Patrón universal de landing");
+addCollection("landing-vertical", landingData.verticals, "Patrón de landing por vertical");
+
+const intelligenceCore = { version: 1, generatedAt: competitiveData.generatedAt, entries: intelligenceEntries };
+const intelligenceCompact = JSON.stringify(intelligenceCore);
+const intelligencePayload = JSON.stringify({ ...intelligenceCore, sha256: createHash("sha256").update(intelligenceCompact).digest("hex") });
+await writeFile(intelligenceTarget, `${intelligencePayload}\n`, "utf8");
+console.log(`RedVitalia strategic retrieval index: ${intelligenceEntries.length} entries · ${Buffer.byteLength(intelligencePayload, "utf8")} bytes.`);

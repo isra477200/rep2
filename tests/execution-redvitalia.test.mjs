@@ -353,17 +353,42 @@ test("Maestro receives a bounded application-wide context without exposing crede
       routes: context.totals.growthRoutes,
       landings: context.totals.landingBlueprints,
     },
-    { records: 712, systems: 10, units: 12, campaigns: 24, routes: 40, landings: 27 },
+    { records: 1091, systems: 10, units: 12, campaigns: 24, routes: 40, landings: 27 },
   );
+  assert.equal(context.totals.deepRecords, 712);
   assert.equal(context.systems.reduce((total, system) => total + system.routes.length, 0), 40);
   const { sha256, ...unsigned } = context;
   assert.equal(sha256, createHash("sha256").update(JSON.stringify(unsigned)).digest("hex"));
+
+  const marketFile = await readFile(path.join(root, "worker", "redvitalia-market-search.generated.json"), "utf8");
+  assert.ok(Buffer.byteLength(marketFile, "utf8") < 2_000_000);
+  assert.doesNotMatch(marketFile, /authorization|api[_-]?key|bearer\s|sk-[A-Za-z0-9_-]{20,}/i);
+  const market = JSON.parse(marketFile);
+  assert.equal(market.records.length, 1091);
+  assert.equal(market.records.filter((record) => record.deep).length, 712);
+  assert.equal(new Set(market.records.map((record) => record.id)).size, 1091);
+  const { sha256: marketSha, ...marketUnsigned } = market;
+  assert.equal(marketSha, createHash("sha256").update(JSON.stringify(marketUnsigned)).digest("hex"));
+
+  const intelligenceFile = await readFile(path.join(root, "worker", "redvitalia-intelligence-search.generated.json"), "utf8");
+  assert.ok(Buffer.byteLength(intelligenceFile, "utf8") < 500_000);
+  assert.doesNotMatch(intelligenceFile, /authorization|api[_-]?key|bearer\s+[A-Za-z0-9_.-]{20,}|sk-[A-Za-z0-9_-]{20,}/i);
+  const intelligence = JSON.parse(intelligenceFile);
+  assert.ok(intelligence.entries.length >= 150);
+  for (const kind of ["creative-pattern", "hypothesis", "playbook", "landing-vertical", "market-economics"]) {
+    assert.ok(intelligence.entries.some((entry) => entry.kind === kind), `missing ${kind} retrieval entries`);
+  }
+  const { sha256: intelligenceSha, ...intelligenceUnsigned } = intelligence;
+  assert.equal(intelligenceSha, createHash("sha256").update(JSON.stringify(intelligenceUnsigned)).digest("hex"));
 
   const worker = await readFile(path.join(root, "worker", "index.ts"), "utf8");
   assert.match(worker, /\/api\/redvitalia-ai/);
   assert.match(worker, /REDVITALIA_AI_GATEWAY_SECRET/);
   assert.match(worker, /body\.appContext/);
   assert.match(worker, /redvitalia-maestro-context\.generated\.json/);
+  assert.match(worker, /redvitalia-market-search\.generated\.json/);
+  assert.match(worker, /redvitalia-intelligence-search\.generated\.json/);
+  assert.match(worker, /retrieveKnowledgeContext/);
   assert.doesNotMatch(worker, /NEXT_PUBLIC_|VITE_/);
 
   const workflow = await readFile(path.join(root, "automation", "n8n", "redvitalia-maestro.workflow.ts"), "utf8");
@@ -371,6 +396,8 @@ test("Maestro receives a bounded application-wide context without exposing crede
   assert.match(workflow, /MiniMax-M3/);
   assert.match(workflow, /executedActions:\[\]/);
   assert.match(workflow, /rate_limit/);
+  assert.match(workflow, /retrievedContext/);
+  assert.doesNotMatch(workflow, /ignoreBots/);
   assert.doesNotMatch(workflow, /sk-[A-Za-z0-9_-]{20,}|Bearer\s+[A-Za-z0-9_.-]{20,}/);
 
   const gitignore = await readFile(path.join(root, ".gitignore"), "utf8");
