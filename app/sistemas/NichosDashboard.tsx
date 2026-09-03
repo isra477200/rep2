@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import styles from "./nichos.module.css";
 import { CAPTURE_UNITS, PRICING, PRICING_SOURCE } from "../ejecucion/catalog";
 import { buildOperationalPlaybooks } from "../ejecucion/playbooks";
+import GrowthRoutes, { ROUTE_COUNT, type RouteSystem } from "./GrowthRoutes";
 import {
   DIMENSION_KEYS,
   DIMENSION_LABELS,
@@ -65,8 +66,8 @@ type IndexData = {
 };
 
 type LoadedData = IndexData & { niches: Niche[] };
-type View = "overview" | "portfolio" | "compare" | "competitors" | "methodology" | "detail";
-type DetailTab = "strategy" | "playbook" | "economics" | "funnel" | "competition" | "execution";
+type View = "overview" | "portfolio" | "compare" | "routes" | "competitors" | "methodology" | "detail";
+type DetailTab = "strategy" | "routes" | "playbook" | "economics" | "funnel" | "competition" | "execution";
 type PhaseFilter = "Todos" | NicheStrategy["phase"];
 
 type CompetitorAggregate = {
@@ -127,6 +128,7 @@ const PHASES: PhaseFilter[] = ["Todos", "Ahora", "Siguiente", "Validar", "Despu�
 const DECISIONS = ["Todas", "Copiar", "Adaptar", "Probar", "Vigilar", "Descartar", "Prospecto"];
 const DETAIL_TABS: Array<{ id: DetailTab; label: string }> = [
   { id: "strategy", label: "Estrategia" },
+  { id: "routes", label: "4 vías" },
   { id: "playbook", label: "Ficha A–S" },
   { id: "economics", label: "Economía" },
   { id: "funnel", label: "Funnel y medición" },
@@ -364,6 +366,7 @@ export default function NichosDashboard() {
       if (!hash || hash === "overview") setView("overview");
       else if (hash === "portfolio") setView("portfolio");
       else if (hash === "compare") setView("compare");
+      else if (hash === "routes") setView("routes");
       else if (hash === "competitors") setView("competitors");
       else if (hash === "methodology") setView("methodology");
       else if (hash.startsWith("niche/")) {
@@ -392,6 +395,20 @@ export default function NichosDashboard() {
   const selectedStrategy = selected ? STRATEGY[selected.id] : null;
   const selectedPlaybooks = useMemo(() => selected ? buildOperationalPlaybooks(selected.id, selected) : [], [selected]);
   const activePlaybook = selectedPlaybooks.find((item) => item.unitId === playbookUnitId) || selectedPlaybooks[0];
+  const routeSystems = useMemo<RouteSystem[]>(() => niches.filter((niche) => STRATEGY[niche.id]).map((niche) => {
+    const strategy = STRATEGY[niche.id];
+    return {
+      id: niche.id,
+      name: niche.name,
+      phase: strategy.phase,
+      channel: strategy.channel,
+      salesCycle: strategy.salesCycle,
+      unitId: CAPTURE_UNITS.find((unit) => unit.systemId === niche.id)?.id || niche.id,
+      dimensions: strategy.dimensions,
+      competitorCount: niche.competitors.length,
+      decisions: niche.competitors.map((competitor) => competitor.decision),
+    };
+  }), [niches]);
 
   const scoredNiches = useMemo(() => niches
     .filter((niche) => STRATEGY[niche.id])
@@ -500,8 +517,9 @@ export default function NichosDashboard() {
           <button className={view === "overview" ? styles.activeNav : ""} onClick={() => navigate("overview")}><i>01</i><span>Resumen ejecutivo</span></button>
           <button className={view === "portfolio" ? styles.activeNav : ""} onClick={() => navigate("portfolio")}><i>02</i><span>Cartera y ranking</span></button>
           <button className={view === "compare" ? styles.activeNav : ""} onClick={() => navigate("compare")}><i>03</i><span>Comparador</span></button>
-          <button className={view === "competitors" ? styles.activeNav : ""} onClick={() => navigate("competitors")}><i>04</i><span>Competencia</span></button>
-          <button className={view === "methodology" ? styles.activeNav : ""} onClick={() => navigate("methodology")}><i>05</i><span>Método y fuentes</span></button>
+          <button className={view === "routes" ? styles.activeNav : ""} onClick={() => navigate("routes")}><i>04</i><span>40 rutas de crecimiento</span></button>
+          <button className={view === "competitors" ? styles.activeNav : ""} onClick={() => navigate("competitors")}><i>05</i><span>Competencia</span></button>
+          <button className={view === "methodology" ? styles.activeNav : ""} onClick={() => navigate("methodology")}><i>06</i><span>Método y fuentes</span></button>
         </div>
         <div className={styles.sideBlock}>
           <small>VERTICALES</small>
@@ -531,7 +549,7 @@ export default function NichosDashboard() {
           <button className={styles.menuButton} onClick={() => setMobileOpen(true)} aria-label="Abrir navegación">Menú</button>
           <div className={styles.topContext}>
             <span>NICHOS</span>
-            <strong>{view === "detail" && selected ? selected.name : view === "portfolio" ? "Cartera" : view === "compare" ? "Comparador" : view === "competitors" ? "Competencia" : view === "methodology" ? "Método" : "Resumen ejecutivo"}</strong>
+            <strong>{view === "detail" && selected ? selected.name : view === "portfolio" ? "Cartera" : view === "compare" ? "Comparador" : view === "routes" ? "40 rutas" : view === "competitors" ? "Competencia" : view === "methodology" ? "Método" : "Resumen ejecutivo"}</strong>
           </div>
           <div className={styles.searchWrap}>
             <input
@@ -570,6 +588,7 @@ export default function NichosDashboard() {
                   <span>Los diez verticales están conectados con la competencia del mercado y separados entre evidencia, datos canónicos e hipótesis que aún deben validarse.</span>
                   <div className={styles.heroActions}>
                     <button onClick={() => navigate("detail", "legal")}>Abrir prioridad legal</button>
+                    <button onClick={() => navigate("routes")}>Ver 40 rutas</button>
                     <button onClick={() => navigate("portfolio")}>Recalcular ranking</button>
                   </div>
                 </div>
@@ -585,7 +604,7 @@ export default function NichosDashboard() {
                 <article><span>SISTEMAS</span><strong>{niches.length}</strong><small>Verticales operativos</small></article>
                 <article><span>COMPETIDORES ÚNICOS</span><strong>{competitorAggregates.length}</strong><small>{crossCount} cruces por nicho</small></article>
                 <article><span>LÍDER PONDERADO</span><strong>{topWeighted?.niche.name}</strong><small>{decimal.format(topWeighted?.weighted || 0)}/100 con pesos actuales</small></article>
-                <article><span>FOCO COMERCIAL</span><strong>1 vertical</strong><small>Probar antes de abrir más frentes</small></article>
+                <article><span>RUTAS ACTIVABLES</span><strong>{ROUTE_COUNT}</strong><small>4 vías diferentes por sistema</small></article>
               </section>
 
               <section className={styles.section}>
@@ -702,6 +721,17 @@ export default function NichosDashboard() {
             </section>
           ) : null}
 
+          {view === "routes" ? (
+            <section className={styles.sectionPage}>
+              <div className={styles.pageHero}>
+                <p>MAPA OPERATIVO · 10 SISTEMAS × 4 VÍAS</p>
+                <h1>No hay una sola forma de crecer.</h1>
+                <span>Cada vertical separa cuatro trabajos distintos: conseguir la cuenta para RedVitalia, capturar la intención del cliente, crear demanda y expandir lo que ya funciona. Puedes verlo como rutas, embudos, matriz comparativa o sprint de 30 días.</span>
+              </div>
+              <GrowthRoutes systems={routeSystems} />
+            </section>
+          ) : null}
+
           {view === "competitors" ? (() => {
             const filtered = competitorAggregates.filter((competitor) => {
               const matchesQuery = !queryNormalised || normalise(`${competitor.name} ${competitor.decisions.join(" ")} ${competitor.niches.map((niche) => niche.name).join(" ")}`).includes(queryNormalised);
@@ -763,7 +793,7 @@ export default function NichosDashboard() {
                   <div className={styles.detailBadges}><span className={phaseClass(selectedStrategy.phase)}>{selectedStrategy.phase}</span><span>PRIORIDAD {selected.rank}</span><span>SCORE EDITORIAL {selected.score}/100</span></div>
                   <h1>{selected.name}</h1>
                   <p>{selected.subtitle}</p>
-                  <div className={styles.detailActions}><button onClick={() => setDetailTab("economics")}>Probar economía</button><button onClick={() => toggleCompare(selected.id)}>{compareIds.includes(selected.id) ? "Quitar del comparador" : "Añadir al comparador"}</button><a href="#competition" onClick={(event) => { event.preventDefault(); setDetailTab("competition"); }}>Ver competencia</a></div>
+                  <div className={styles.detailActions}><button onClick={() => setDetailTab("routes")}>Ver 4 vías</button><button onClick={() => setDetailTab("economics")}>Probar economía</button><button onClick={() => toggleCompare(selected.id)}>{compareIds.includes(selected.id) ? "Quitar del comparador" : "Añadir al comparador"}</button><a href="#competition" onClick={(event) => { event.preventDefault(); setDetailTab("competition"); }}>Ver competencia</a></div>
                 </div>
                 <aside>
                   <span>SCORE PONDERADO</span><strong>{decimal.format(weightedStrategyScore(selectedStrategy, weights))}</strong><small>Con los pesos actuales</small>
@@ -794,6 +824,12 @@ export default function NichosDashboard() {
                     <div className={styles.twoColumn}><article className={styles.card}><h3>Oferta</h3><p>{selected.offer}</p></article><article className={styles.card}><h3>Cliente ideal</h3><p>{selected.target}</p></article><article className={`${styles.card} ${styles.cardNegative}`}><h3>Cliente que se rechaza</h3><p>{selected.reject}</p></article><ListCard title="Preguntas de cualificación" items={selected.qualification} /></div>
                   </section>
                 </>
+              ) : null}
+
+              {detailTab === "routes" ? (
+                <section className={styles.detailSection}>
+                  <GrowthRoutes systems={routeSystems.filter((item) => item.id === selected.id)} initialSystemId={selected.id} />
+                </section>
               ) : null}
 
               {detailTab === "playbook" ? (

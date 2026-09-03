@@ -17,6 +17,7 @@ import { calculateEconomics } from "../app/ejecucion/economics.ts";
 import { CADENCE, CALL_DISPOSITIONS, CLOSER_SCORE, COMMERCIAL_VERTICALS, PIPELINE_STAGES, QA_CALL } from "../app/ejecucion/commercial.ts";
 import { buildOperationalPlaybooks, validatePlaybook } from "../app/ejecucion/playbooks.ts";
 import { DIMENSION_LABELS, sanitizeWeights, STRATEGY, weightedStrategyScore } from "../app/sistemas/strategy.ts";
+import { ALL_GROWTH_ROUTES, GROWTH_ROUTES, ROUTE_KIND_META, routeFitScore } from "../app/sistemas/growth-routes.ts";
 import { getLandingBlueprint, LANDING_BLUEPRINTS } from "../app/ejecucion/landing-blueprints.ts";
 import {
   createExecutionSnapshot,
@@ -57,6 +58,35 @@ test("every acquisition unit has separate B2B and B2C campaign records", () => {
 test("the portfolio score exposes all fourteen requested decision dimensions", () => {
   assert.equal(Object.keys(DIMENSION_LABELS).length, 14);
   assert.ok(SYSTEMS.every((system) => Object.keys(STRATEGY[system.id].dimensions).length === 14));
+});
+
+test("every system exposes four differentiated and executable growth routes", async () => {
+  assert.equal(Object.keys(GROWTH_ROUTES).length, 10);
+  assert.equal(ALL_GROWTH_ROUTES.length, 40);
+  for (const system of SYSTEMS) {
+    const routes = GROWTH_ROUTES[system.id];
+    assert.equal(routes.length, 4, `${system.id} must expose four routes`);
+    assert.deepEqual(routes.map((route) => route.kind), ["client", "intent", "demand", "expansion"]);
+    for (const route of routes) {
+      assert.equal(route.funnel.length, 5);
+      assert.ok(route.qualification.length >= 3);
+      assert.ok(route.assets.length >= 4);
+      assert.ok(route.evidence.length >= 2);
+      assert.ok(route.guardrails.length >= 2);
+      assert.equal(route.sprint.length, 3);
+      assert.ok(route.sprint.every((phase) => phase.actions.length >= 3));
+      const score = routeFitScore(route, STRATEGY[system.id].dimensions);
+      assert.ok(Number.isFinite(score) && score >= 0 && score <= 100);
+      assert.equal(ROUTE_KIND_META[route.kind].dimensions.length, 4);
+    }
+  }
+
+  const source = await readFile(path.join(root, "app", "sistemas", "GrowthRoutes.tsx"), "utf8");
+  assert.match(source, /label: "4 vías"/);
+  assert.match(source, /label: "Embudo"/);
+  assert.match(source, /label: "Matriz"/);
+  assert.match(source, /Sprint 30 días/);
+  assert.match(source, /Exportar 40 rutas/);
 });
 
 test("legacy or corrupt saved weights cannot poison the portfolio score", () => {
@@ -269,10 +299,12 @@ test("the delivery center exposes one complete downloadable package per campaign
     "07-PLANTILLA-DIAGNOSTICO-PROPUESTA.docx",
     "07-PLANTILLA-DIAGNOSTICO-PROPUESTA.pdf",
     "08-SISTEMA-COMERCIAL-CRM.xlsx",
+    "10-MAPA-40-RUTAS-REDVITALIA.csv",
+    "10-MAPA-40-RUTAS-REDVITALIA.json",
   ];
   for (const filename of enablementFiles) {
     const file = await stat(path.join(root, "public", "assets", "ejecucion", "enablement", filename));
-    assert.ok(file.size > 20_000, `${filename} is unexpectedly small`);
+    assert.ok(file.size > (filename.endsWith(".csv") ? 10_000 : 20_000), `${filename} is unexpectedly small`);
   }
   const enablementArchive = await stat(path.join(root, "public", "assets", "ejecucion", "enablement", "KIT-COMERCIAL-REDVITALIA.zip"));
   assert.ok(enablementArchive.size > 5_000_000, "commercial enablement archive is unexpectedly small");

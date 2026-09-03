@@ -1,0 +1,3434 @@
+{
+  "title": "Mapa de 40 rutas de crecimiento de RedVitalia",
+  "generatedAt": "2026-09-03",
+  "status": "Síntesis estratégica e hipótesis operativas; validar con datos reales antes de invertir o prometer resultados.",
+  "model": {
+    "systems": 10,
+    "routesPerSystem": 4,
+    "routes": 40,
+    "routeKinds": {
+      "client": {
+        "label": "Conseguir la cuenta",
+        "scope": "RedVitalia → empresa",
+        "dimensions": [
+          "experience",
+          "demonstrability",
+          "standardisation",
+          "competition"
+        ]
+      },
+      "intent": {
+        "label": "Capturar intención",
+        "scope": "Empresa → oportunidad",
+        "dimensions": [
+          "demand",
+          "qualification",
+          "speed",
+          "demonstrability"
+        ]
+      },
+      "demand": {
+        "label": "Crear demanda",
+        "scope": "Mercado → interés",
+        "dimensions": [
+          "value",
+          "defensibility",
+          "volume",
+          "legalRisk"
+        ]
+      },
+      "expansion": {
+        "label": "Expandir la cuenta",
+        "scope": "Resultado → crecimiento",
+        "dimensions": [
+          "margin",
+          "scalability",
+          "standardisation",
+          "experience"
+        ]
+      }
+    }
+  },
+  "routes": [
+    {
+      "id": "legal-client",
+      "systemId": "legal",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un sistema separado para Segunda Oportunidad, Herencias o Divorcios",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Despachos con área concursal, sucesoria o de familia, decisor accesible y capacidad semanal para consultas nuevas.",
+      "trigger": "La especialidad existe, pero la web, la compra de tráfico y el intake mezclan asuntos con economías distintas.",
+      "offer": "Auditoría de demanda, filtro jurídico, tiempo de respuesta y devolución de asunto aceptado al origen.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir consulta asistida, asunto aceptado y valor económico registrado."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Registro verificable desde búsqueda hasta consulta y asunto aceptado; no basta con contar formularios.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No prometer sentencias, plazos judiciales ni cancelación de deuda; revisión jurídica y humana obligatoria.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Servicios jurídicos",
+      "phase": "Ahora",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 75,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "legal-intent",
+      "systemId": "legal",
+      "code": "B",
+      "kind": "intent",
+      "title": "Tres intenciones jurídicas sin mezclarlas",
+      "premise": "Búsquedas explícitas sobre deuda, herencia bloqueada o divorcio complejo, cada una con landing, negativas y conversión propia.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Rama, provincia, complejidad, urgencia, capacidad de consulta y criterio de asunto aceptable.",
+      "offer": "Captación y cualificación hasta consulta asistida, asunto aceptado y valor económico registrado.",
+      "channels": [
+        "Google Search",
+        "remarketing educativo"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Rama, provincia, complejidad, urgencia, capacidad de consulta y criterio de asunto aceptable.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Registro verificable desde búsqueda hasta consulta y asunto aceptado; no basta con contar formularios.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No prometer sentencias, plazos judiciales ni cancelación de deuda; revisión jurídica y humana obligatoria.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "consulta asistida, asunto aceptado y valor económico registrado",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Servicios jurídicos",
+      "phase": "Ahora",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 80,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "legal-demand",
+      "systemId": "legal",
+      "code": "C",
+      "kind": "demand",
+      "title": "Autoridad antes de la urgencia",
+      "premise": "Explicar proceso, documentación y errores evitables para construir confianza antes de que la persona elija despacho.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un sistema separado para Segunda Oportunidad, Herencias o Divorcios.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Guías por problema, mapas de proceso, preguntas frecuentes revisadas y piezas de autoridad del profesional.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Registro verificable desde búsqueda hasta consulta y asunto aceptado; no basta con contar formularios."
+      ],
+      "guardrails": [
+        "No prometer sentencias, plazos judiciales ni cancelación de deuda; revisión jurídica y humana obligatoria.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Servicios jurídicos",
+      "phase": "Ahora",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 80,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "legal-expansion",
+      "systemId": "legal",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Abrir una segunda rama solo con señal",
+      "premise": "Replicar infraestructura y aprendizaje sin compartir campañas, economía ni promesas entre especialidades.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de consulta asistida, asunto aceptado y valor económico registrado y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Registro verificable desde búsqueda hasta consulta y asunto aceptado; no basta con contar formularios.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No prometer sentencias, plazos judiciales ni cancelación de deuda; revisión jurídica y humana obligatoria.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Servicios jurídicos",
+      "phase": "Ahora",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 84,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "toldos-client",
+      "systemId": "toldos",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un piloto monoproducto orientado a visita técnica y venta",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Instaladores de pérgolas, cerramientos o toldos premium con obras reales, radio definido y capacidad de visita.",
+      "trigger": "Buen producto visual y ticket defendible, pero catálogo genérico, respuesta lenta o mezcla con reparaciones de bajo valor.",
+      "offer": "Revisión de producto prioritario, ticket mínimo, radio, material visual, velocidad de visita y presupuesto.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir visita asistida, presupuesto emitido, venta y margen."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Obras propias autorizadas, fechas de presupuesto y ventas devueltas al sistema.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No usar obras ajenas, rangos inventados ni disponibilidad ficticia; separar reparación y producto premium.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Toldos y protección solar",
+      "phase": "Siguiente",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 79,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "toldos-intent",
+      "systemId": "toldos",
+      "code": "B",
+      "kind": "intent",
+      "title": "Proyecto premium por producto y municipio",
+      "premise": "Búsquedas de pérgola bioclimática, cerramiento o motorización con intención de instalación, no de bricolaje.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Propiedad, zona, medidas, uso del espacio, rango de inversión, plazo y disponibilidad de visita.",
+      "offer": "Captación y cualificación hasta visita asistida, presupuesto emitido, venta y margen.",
+      "channels": [
+        "Google Search",
+        "Meta visual"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Propiedad, zona, medidas, uso del espacio, rango de inversión, plazo y disponibilidad de visita.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Obras propias autorizadas, fechas de presupuesto y ventas devueltas al sistema.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No usar obras ajenas, rangos inventados ni disponibilidad ficticia; separar reparación y producto premium.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "visita asistida, presupuesto emitido, venta y margen",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Toldos y protección solar",
+      "phase": "Siguiente",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 84,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "toldos-demand",
+      "systemId": "toldos",
+      "code": "C",
+      "kind": "demand",
+      "title": "Inspiración que termina en proyecto",
+      "premise": "Convertir obras reales en deseo, explicar decisiones técnicas y conducir a una valoración, no a un catálogo vacío.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un piloto monoproducto orientado a visita técnica y venta.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Casos autorizados por producto y zona, secuencia antes/después, materiales y explicación de la visita técnica.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Obras propias autorizadas, fechas de presupuesto y ventas devueltas al sistema."
+      ],
+      "guardrails": [
+        "No usar obras ajenas, rangos inventados ni disponibilidad ficticia; separar reparación y producto premium.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Toldos y protección solar",
+      "phase": "Siguiente",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 84,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "toldos-expansion",
+      "systemId": "toldos",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Escalar producto × municipio",
+      "premise": "Abrir nuevas combinaciones únicamente cuando visita, presupuesto, venta y margen estén conectados.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de visita asistida, presupuesto emitido, venta y margen y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Obras propias autorizadas, fechas de presupuesto y ventas devueltas al sistema.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No usar obras ajenas, rangos inventados ni disponibilidad ficticia; separar reparación y producto premium.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Toldos y protección solar",
+      "phase": "Siguiente",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 78,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "coches-client",
+      "systemId": "coches",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un sistema por problema del vehículo con tasación y señal económica offline",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Compradores profesionales con caja, logística, tasación rápida y criterios escritos para vehículos complejos.",
+      "trigger": "Aceptan averías, siniestros o cargas, pero comunican una compra genérica y no devuelven margen por operación.",
+      "offer": "Mapa de aceptación, documentación, tiempo de oferta, cobertura logística, caja y margen por compra.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir vehículo valorable, oferta aceptada, recogida y margen."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Compra y margen importados por origen, junto con tiempos reales de tasación y recogida.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No garantizar valoración, cancelación de cargas ni recogida sin revisar documentación, zona y capacidad.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Compra de coches con cargas",
+      "phase": "Siguiente",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 90,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "coches-intent",
+      "systemId": "coches",
+      "code": "B",
+      "kind": "intent",
+      "title": "Una landing por problema del vehículo",
+      "premise": "Separar avería, siniestro, reserva de dominio, embargo y financiación pendiente para no perder intención específica.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Titularidad, vehículo, estado, carga, ubicación, documentación, fotos, urgencia y expectativa.",
+      "offer": "Captación y cualificación hasta vehículo valorable, oferta aceptada, recogida y margen.",
+      "channels": [
+        "Google Search",
+        "remarketing de decisión"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Titularidad, vehículo, estado, carga, ubicación, documentación, fotos, urgencia y expectativa.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Compra y margen importados por origen, junto con tiempos reales de tasación y recogida.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No garantizar valoración, cancelación de cargas ni recogida sin revisar documentación, zona y capacidad.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "vehículo valorable, oferta aceptada, recogida y margen",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Compra de coches con cargas",
+      "phase": "Siguiente",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 89,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "coches-demand",
+      "systemId": "coches",
+      "code": "C",
+      "kind": "demand",
+      "title": "Resolver incertidumbre antes de tasar",
+      "premise": "Explicar opciones reales, documentación y proceso para captar a quien todavía no sabe si puede vender.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un sistema por problema del vehículo con tasación y señal económica offline.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Árbol de situaciones, checklist documental, contenido de proceso y ejemplos solo cuando sean verificables.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Compra y margen importados por origen, junto con tiempos reales de tasación y recogida."
+      ],
+      "guardrails": [
+        "No garantizar valoración, cancelación de cargas ni recogida sin revisar documentación, zona y capacidad.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Compra de coches con cargas",
+      "phase": "Siguiente",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 82,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "coches-expansion",
+      "systemId": "coches",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Escalar problema × provincia × margen",
+      "premise": "Mover presupuesto hacia combinaciones que producen compra y margen neto, aunque el CPL sea más alto.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de vehículo valorable, oferta aceptada, recogida y margen y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Compra y margen importados por origen, junto con tiempos reales de tasación y recogida.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No garantizar valoración, cancelación de cargas ni recogida sin revisar documentación, zona y capacidad.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Compra de coches con cargas",
+      "phase": "Siguiente",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 89,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "estetica-client",
+      "systemId": "estetica",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un piloto por tratamiento que mida valoración asistida y venta",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Clínicas con tratamiento de alto valor, coordinador comercial, agenda disponible y casos autorizados.",
+      "trigger": "Invierten en visibilidad, pero mezclan tratamientos, optimizan a lead barato o pierden la cita en recepción.",
+      "offer": "Revisión de tratamiento, huecos, coordinador, seguimiento, financiación, prueba y registro de ingresos.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir valoración asistida, tratamiento vendido e ingreso."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Agenda, asistencia, presupuesto y tratamiento vendido devueltos por campaña y creatividad.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No diagnosticar, señalar defectos personales ni garantizar resultados; revisión clínica y publicitaria obligatoria.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Clínicas estéticas",
+      "phase": "Siguiente",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 73,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "estetica-intent",
+      "systemId": "estetica",
+      "code": "B",
+      "kind": "intent",
+      "title": "Tratamiento único con intención alta",
+      "premise": "Búsquedas de injerto, tratamiento facial o corporal concreto conectadas a valoración y venta, no a formulario genérico.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Tratamiento, motivación, zona, plazo, disponibilidad, rango económico y aceptación de valoración clínica.",
+      "offer": "Captación y cualificación hasta valoración asistida, tratamiento vendido e ingreso.",
+      "channels": [
+        "Google Search",
+        "Meta Ads"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Tratamiento, motivación, zona, plazo, disponibilidad, rango económico y aceptación de valoración clínica.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Agenda, asistencia, presupuesto y tratamiento vendido devueltos por campaña y creatividad.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No diagnosticar, señalar defectos personales ni garantizar resultados; revisión clínica y publicitaria obligatoria.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "valoración asistida, tratamiento vendido e ingreso",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Clínicas estéticas",
+      "phase": "Siguiente",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 80,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "estetica-demand",
+      "systemId": "estetica",
+      "code": "C",
+      "kind": "demand",
+      "title": "Educación visual sin explotar inseguridad",
+      "premise": "Resolver dudas de proceso, profesional, recuperación y financiación con comunicación clínica aprobada.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un piloto por tratamiento que mida valoración asistida y venta.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Profesional real, instalaciones, explicación del proceso y casos con permiso expreso y contexto suficiente.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Agenda, asistencia, presupuesto y tratamiento vendido devueltos por campaña y creatividad."
+      ],
+      "guardrails": [
+        "No diagnosticar, señalar defectos personales ni garantizar resultados; revisión clínica y publicitaria obligatoria.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Clínicas estéticas",
+      "phase": "Siguiente",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 78,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "estetica-expansion",
+      "systemId": "estetica",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Expandir por tratamiento rentable",
+      "premise": "Abrir un segundo tratamiento o zona solo después de estabilizar show, cierre y contribución del primero.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de valoración asistida, tratamiento vendido e ingreso y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Agenda, asistencia, presupuesto y tratamiento vendido devueltos por campaña y creatividad.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No diagnosticar, señalar defectos personales ni garantizar resultados; revisión clínica y publicitaria obligatoria.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Clínicas estéticas",
+      "phase": "Siguiente",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 82,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "climatizacion-client",
+      "systemId": "climatizacion",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un sistema por servicio y franja conectado a capacidad técnica",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Instaladores con servicios y tickets definidos, agenda técnica visible y atención inmediata de llamadas.",
+      "trigger": "Existe demanda, pero urgencias, reparación, instalación y aerotermia compiten por el mismo presupuesto y teléfono.",
+      "offer": "Revisión de llamadas perdidas, zonas, horario, ticket mínimo, disponibilidad, visita y valor del trabajo.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir llamada válida, visita, presupuesto, trabajo ganado y valor."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Grabación y clasificación de llamadas, agenda técnica y valor final del trabajo.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No anunciar atención, ahorro, subvención o instalación inmediata si la operación no puede sostenerlo.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Climatización y aerotermia",
+      "phase": "Validar",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 81,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "climatizacion-intent",
+      "systemId": "climatizacion",
+      "code": "B",
+      "kind": "intent",
+      "title": "Urgencia y proyecto en funnels distintos",
+      "premise": "Llamada directa para urgencia; landing cualificada para instalación, sustitución o aerotermia.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Servicio, inmueble, metros, equipo, avería, zona, plazo, propietario y disponibilidad de visita.",
+      "offer": "Captación y cualificación hasta llamada válida, visita, presupuesto, trabajo ganado y valor.",
+      "channels": [
+        "Google Search",
+        "campañas de llamada"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Servicio, inmueble, metros, equipo, avería, zona, plazo, propietario y disponibilidad de visita.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Grabación y clasificación de llamadas, agenda técnica y valor final del trabajo.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No anunciar atención, ahorro, subvención o instalación inmediata si la operación no puede sostenerlo.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "llamada válida, visita, presupuesto, trabajo ganado y valor",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Climatización y aerotermia",
+      "phase": "Validar",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 90,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "climatizacion-demand",
+      "systemId": "climatizacion",
+      "code": "C",
+      "kind": "demand",
+      "title": "Pretemporada y decisión energética",
+      "premise": "Crear demanda antes del pico con sustitución, eficiencia y planificación, sin depender solo de averías.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un sistema por servicio y franja conectado a capacidad técnica.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Comparativas técnicas revisadas, proceso de visita, explicación de consumo y trabajos reales autorizados.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Grabación y clasificación de llamadas, agenda técnica y valor final del trabajo."
+      ],
+      "guardrails": [
+        "No anunciar atención, ahorro, subvención o instalación inmediata si la operación no puede sostenerlo.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Climatización y aerotermia",
+      "phase": "Validar",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 84,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "climatizacion-expansion",
+      "systemId": "climatizacion",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Escalar servicio × franja × capacidad",
+      "premise": "Activar o pausar combinaciones según técnicos, llamadas atendidas, trabajo ganado y margen.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de llamada válida, visita, presupuesto, trabajo ganado y valor y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Grabación y clasificación de llamadas, agenda técnica y valor final del trabajo.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No anunciar atención, ahorro, subvención o instalación inmediata si la operación no puede sostenerlo.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Climatización y aerotermia",
+      "phase": "Validar",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 79,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "reformas-client",
+      "systemId": "reformas",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un piloto por tipología de obra con filtro económico y seguimiento",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Empresas de reforma integral o cocina premium con portfolio propio, ticket mínimo y disciplina de presupuesto.",
+      "trigger": "Tienen buenos trabajos, pero captan proyectos pequeños, tardan en presupuestar o no siguen decisiones largas.",
+      "offer": "Revisión de zona, tipología, ticket, portfolio, capacidad de visita, plazo de presupuesto y margen de obra.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir proyecto cualificado, visita, presupuesto, obra ganada y margen."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Portfolio propio, fecha real de presupuesto, causa de pérdida y margen por obra.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No usar obras ajenas ni prometer precio o plazo sin alcance; el presupuesto mínimo debe ser real.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Reformas integrales",
+      "phase": "Validar",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 76,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "reformas-intent",
+      "systemId": "reformas",
+      "code": "B",
+      "kind": "intent",
+      "title": "Microvertical con presupuesto mínimo",
+      "premise": "Reforma integral, cocina o rehabilitación separadas para filtrar alcance, propiedad y capacidad económica.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Propiedad, zona, metros, alcance, presupuesto, fecha, decisores y disponibilidad de visita.",
+      "offer": "Captación y cualificación hasta proyecto cualificado, visita, presupuesto, obra ganada y margen.",
+      "channels": [
+        "Google Search",
+        "Meta casos reales"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Propiedad, zona, metros, alcance, presupuesto, fecha, decisores y disponibilidad de visita.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Portfolio propio, fecha real de presupuesto, causa de pérdida y margen por obra.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No usar obras ajenas ni prometer precio o plazo sin alcance; el presupuesto mínimo debe ser real.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "proyecto cualificado, visita, presupuesto, obra ganada y margen",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Reformas integrales",
+      "phase": "Validar",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 77,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "reformas-demand",
+      "systemId": "reformas",
+      "code": "C",
+      "kind": "demand",
+      "title": "Caso real, proceso y confianza",
+      "premise": "Mostrar cómo se planifica y ejecuta una obra para madurar al propietario antes de pedir visita.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un piloto por tipología de obra con filtro económico y seguimiento.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Obras propias autorizadas, diario de proyecto, materiales, equipo, plazo contextualizado y reseñas verificables.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Portfolio propio, fecha real de presupuesto, causa de pérdida y margen por obra."
+      ],
+      "guardrails": [
+        "No usar obras ajenas ni prometer precio o plazo sin alcance; el presupuesto mínimo debe ser real.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Reformas integrales",
+      "phase": "Validar",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 86,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "reformas-expansion",
+      "systemId": "reformas",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Escalar tipología × zona con seguimiento",
+      "premise": "Crecer donde visita, presupuesto, seguimiento, obra y margen sean medibles durante un ciclo largo.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de proyecto cualificado, visita, presupuesto, obra ganada y margen y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Portfolio propio, fecha real de presupuesto, causa de pérdida y margen por obra.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No usar obras ajenas ni prometer precio o plazo sin alcance; el presupuesto mínimo debe ser real.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Reformas integrales",
+      "phase": "Validar",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 76,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "dental-client",
+      "systemId": "dental",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un piloto por tratamiento optimizado a plan aceptado",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Clínicas con implantes, rehabilitación u ortodoncia, coordinador, financiación y capacidad de primeras visitas.",
+      "trigger": "Consiguen formularios, pero recepción, no-show y seguimiento del plan rompen la economía del tratamiento.",
+      "offer": "Revisión de huecos, coordinador, llamada, financiación, show, presentación del plan y registro de ingreso.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir primera visita asistida, plan presentado, plan aceptado e ingreso."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Resultado desde lead hasta tratamiento aceptado, con causa de no-show y de no aceptación.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No prometer resultados clínicos, diagnosticar ni explotar atributos personales; revisión sanitaria obligatoria.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Clínicas dentales",
+      "phase": "Validar",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 72,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "dental-intent",
+      "systemId": "dental",
+      "code": "B",
+      "kind": "intent",
+      "title": "Intención clínica por tratamiento",
+      "premise": "Implantes, rehabilitación u ortodoncia con campañas, landings y expectativas separadas.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Tratamiento, situación, zona, plazo, financiación, disponibilidad y aceptación de primera visita.",
+      "offer": "Captación y cualificación hasta primera visita asistida, plan presentado, plan aceptado e ingreso.",
+      "channels": [
+        "Google Search",
+        "Meta educación"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Tratamiento, situación, zona, plazo, financiación, disponibilidad y aceptación de primera visita.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Resultado desde lead hasta tratamiento aceptado, con causa de no-show y de no aceptación.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No prometer resultados clínicos, diagnosticar ni explotar atributos personales; revisión sanitaria obligatoria.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "primera visita asistida, plan presentado, plan aceptado e ingreso",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Clínicas dentales",
+      "phase": "Validar",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 79,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "dental-demand",
+      "systemId": "dental",
+      "code": "C",
+      "kind": "demand",
+      "title": "Educación clínica que reduce fricción",
+      "premise": "Explicar valoración, opciones y proceso con autoridad profesional antes de pedir una cita.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un piloto por tratamiento optimizado a plan aceptado.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Profesional, clínica, proceso, financiación y casos autorizados sin promesas ni diagnósticos publicitarios.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Resultado desde lead hasta tratamiento aceptado, con causa de no-show y de no aceptación."
+      ],
+      "guardrails": [
+        "No prometer resultados clínicos, diagnosticar ni explotar atributos personales; revisión sanitaria obligatoria.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Clínicas dentales",
+      "phase": "Validar",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 77,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "dental-expansion",
+      "systemId": "dental",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Tratamiento rentable y reactivación",
+      "premise": "Estabilizar un tratamiento, recuperar planes abiertos y después abrir una segunda línea.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de primera visita asistida, plan presentado, plan aceptado e ingreso y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Resultado desde lead hasta tratamiento aceptado, con causa de no-show y de no aceptación.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No prometer resultados clínicos, diagnosticar ni explotar atributos personales; revisión sanitaria obligatoria.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Clínicas dentales",
+      "phase": "Validar",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 82,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "inmobiliario-client",
+      "systemId": "inmobiliario",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un sistema de captación de propietarios por motivo y horizonte",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Agencias con zona defendible, propuesta para propietarios y proceso de valoración, nutrición y exclusiva.",
+      "trigger": "Compran leads o hacen marca general, pero mezclan propietario, comprador y curiosidad de valoración.",
+      "offer": "Revisión de zona, titularidad, valoración, seguimiento, horizonte, exclusiva y comisión registrada.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir propietario válido, valoración asistida, propuesta y exclusiva."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Titularidad validada, horizonte, valoración, exclusiva y comisión devueltas por origen.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No garantizar valoración, precio de venta, plazo ni exclusiva; separar propietario, comprador y alquiler.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Captación inmobiliaria",
+      "phase": "Después",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 65,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "inmobiliario-intent",
+      "systemId": "inmobiliario",
+      "code": "B",
+      "kind": "intent",
+      "title": "Propietario por motivo y plazo",
+      "premise": "Venta urgente, herencia o divorcio separadas de la valoración exploratoria y del comprador.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Titularidad, inmueble, zona, motivo, plazo, ocupación, cargas, expectativa y decisores.",
+      "offer": "Captación y cualificación hasta propietario válido, valoración asistida, propuesta y exclusiva.",
+      "channels": [
+        "Google Search",
+        "Meta hiperlocal"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Titularidad, inmueble, zona, motivo, plazo, ocupación, cargas, expectativa y decisores.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Titularidad validada, horizonte, valoración, exclusiva y comisión devueltas por origen.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No garantizar valoración, precio de venta, plazo ni exclusiva; separar propietario, comprador y alquiler.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "propietario válido, valoración asistida, propuesta y exclusiva",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Captación inmobiliaria",
+      "phase": "Después",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 68,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "inmobiliario-demand",
+      "systemId": "inmobiliario",
+      "code": "C",
+      "kind": "demand",
+      "title": "Autoridad hiperlocal y maduración",
+      "premise": "Construir preferencia antes de vender con información real de zona, proceso y preparación del inmueble.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un sistema de captación de propietarios por motivo y horizonte.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Guías locales, proceso de valoración, preguntas de propietario y prueba verificable de la agencia.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Titularidad validada, horizonte, valoración, exclusiva y comisión devueltas por origen."
+      ],
+      "guardrails": [
+        "No garantizar valoración, precio de venta, plazo ni exclusiva; separar propietario, comprador y alquiler.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Captación inmobiliaria",
+      "phase": "Después",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 80,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "inmobiliario-expansion",
+      "systemId": "inmobiliario",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Nutrición 30/90/180 y expansión local",
+      "premise": "Convertir plazos largos en pipeline y abrir otra zona solo con citas, valoraciones y exclusivas medibles.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de propietario válido, valoración asistida, propuesta y exclusiva y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Titularidad validada, horizonte, valoración, exclusiva y comisión devueltas por origen.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No garantizar valoración, precio de venta, plazo ni exclusiva; separar propietario, comprador y alquiler.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Captación inmobiliaria",
+      "phase": "Después",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 80,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "auditivos-client",
+      "systemId": "auditivos",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un piloto de ciudad y producto con cita asistida como señal",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Centros auditivos con agenda, profesional, financiación y proceso que incorpora al familiar decisor.",
+      "trigger": "La demanda local es incierta o se mezcla audición con ortopedia y productos de economía muy distinta.",
+      "offer": "Revisión de volumen local, producto, ticket, teléfono, agenda, cuidador y venta registrada.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir necesidad validada, cita asistida, prueba o presupuesto y venta."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Agenda, asistencia, decisión familiar, producto vendido y valor por ciudad.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No diagnosticar ni prometer mejora médica; audición y ortopedia no comparten funnel.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Centros auditivos y ortopedia",
+      "phase": "Después",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 72,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "auditivos-intent",
+      "systemId": "auditivos",
+      "code": "B",
+      "kind": "intent",
+      "title": "Ciudad única y necesidad concreta",
+      "premise": "Prueba auditiva y audífonos separados de movilidad, camas y productos pequeños.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Necesidad, usuario, zona, producto, acompañante, financiación y disponibilidad de cita o visita.",
+      "offer": "Captación y cualificación hasta necesidad validada, cita asistida, prueba o presupuesto y venta.",
+      "channels": [
+        "Google Search",
+        "llamada visible"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Necesidad, usuario, zona, producto, acompañante, financiación y disponibilidad de cita o visita.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Agenda, asistencia, decisión familiar, producto vendido y valor por ciudad.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No diagnosticar ni prometer mejora médica; audición y ortopedia no comparten funnel.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "necesidad validada, cita asistida, prueba o presupuesto y venta",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Centros auditivos y ortopedia",
+      "phase": "Después",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 73,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "auditivos-demand",
+      "systemId": "auditivos",
+      "code": "C",
+      "kind": "demand",
+      "title": "Mensaje al cuidador y a la familia",
+      "premise": "Explicar acompañamiento, prueba y adaptación al decisor que ayuda al usuario a actuar.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un piloto de ciudad y producto con cita asistida como señal.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Profesional real, proceso de prueba, adaptación, financiación y piezas accesibles para usuario y cuidador.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Agenda, asistencia, decisión familiar, producto vendido y valor por ciudad."
+      ],
+      "guardrails": [
+        "No diagnosticar ni prometer mejora médica; audición y ortopedia no comparten funnel.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Centros auditivos y ortopedia",
+      "phase": "Después",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 70,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "auditivos-expansion",
+      "systemId": "auditivos",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Validar ciudad antes de replicar",
+      "premise": "Abrir producto o ciudad solo cuando exista volumen suficiente, cita asistida y margen comprobado.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de necesidad validada, cita asistida, prueba o presupuesto y venta y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Agenda, asistencia, decisión familiar, producto vendido y valor por ciudad.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No diagnosticar ni prometer mejora médica; audición y ortopedia no comparten funnel.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Centros auditivos y ortopedia",
+      "phase": "Después",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 67,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    },
+    {
+      "id": "logistica-client",
+      "systemId": "logistica",
+      "code": "A",
+      "kind": "client",
+      "title": "Cuenta fundadora: un sistema por servicio, fecha y zona conectado a disponibilidad",
+      "premise": "La primera venta es el sistema de RedVitalia a la empresa. Se entra con un diagnóstico específico, no con una presentación genérica de agencia.",
+      "audience": "Empresas de mudanza, contenedor o guardamuebles con mínimos, zonas, capacidad y presupuesto rápido.",
+      "trigger": "Tienen volumen potencial, pero pequeños portes, fechas imposibles y capacidad cambiante destruyen el margen.",
+      "offer": "Revisión de mínimos, radio, calendario, plantilla de presupuesto, tiempo de respuesta y valor de reserva.",
+      "channels": [
+        "Teléfono",
+        "Email",
+        "LinkedIn",
+        "Referencia"
+      ],
+      "funnel": [
+        "Lista con señal verificable",
+        "Apertura sectorial",
+        "Diagnóstico con decisor",
+        "Economía y capacidad",
+        "Piloto condicionado"
+      ],
+      "qualification": [
+        "Existe una prioridad concreta y no solo curiosidad.",
+        "Hay capacidad operativa y responsable comercial.",
+        "Acepta medir solicitud válida, presupuesto, reserva pagada y valor del servicio."
+      ],
+      "assets": [
+        "Lista de cuentas con fuente",
+        "Guion por señal",
+        "Diagnóstico y scorecard",
+        "Plan de piloto con dependencias"
+      ],
+      "evidence": [
+        "Tiempo a presupuesto, reserva, trabajo completado y valor por ruta y servicio.",
+        "Notas que separan dato, hipótesis y pendiente de confirmar."
+      ],
+      "guardrails": [
+        "No prometer fecha, cobertura, precio o disponibilidad si el calendario operativo no está actualizado.",
+        "No inventar clientes, resultados, precios ni personalización."
+      ],
+      "northStar": "Diagnósticos B2B celebrados con decisor, datos y siguiente decisión.",
+      "decision": "Avanzar solo cuando dolor, capacidad, economía, medición y decisor alcanzan el umbral del closer.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir cuentas",
+          "actions": [
+            "Definir señal de entrada.",
+            "Construir lista verificable.",
+            "Preparar tres observaciones reales."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Abrir conversaciones",
+          "actions": [
+            "Ejecutar bloques de llamada.",
+            "Usar cadencia multicanal.",
+            "Revisar dos conversaciones al día."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Convertir a piloto",
+          "actions": [
+            "Celebrar diagnósticos.",
+            "Condicionar propuesta a datos.",
+            "Registrar win/loss y objeciones."
+          ]
+        }
+      ],
+      "system": "Mudanzas, contenedores y guardamuebles",
+      "phase": "Después",
+      "routeLabel": "Conseguir la cuenta",
+      "scope": "RedVitalia → empresa",
+      "fitScore": 82,
+      "fitDimensions": [
+        "experience",
+        "demonstrability",
+        "standardisation",
+        "competition"
+      ]
+    },
+    {
+      "id": "logistica-intent",
+      "systemId": "logistica",
+      "code": "B",
+      "kind": "intent",
+      "title": "Fecha, ruta y servicio como intención",
+      "premise": "Mudanza completa, contenedor y guardamuebles separados de empleo, alquiler o pequeño porte.",
+      "audience": "Personas o empresas que ya expresan el problema y buscan resolverlo ahora.",
+      "trigger": "Señal de entrada: Origen, destino, fecha, volumen, plantas, accesos, permisos, duración y mínimo económico.",
+      "offer": "Captación y cualificación hasta solicitud válida, presupuesto, reserva pagada y valor del servicio.",
+      "channels": [
+        "Google Search",
+        "campañas por fecha"
+      ],
+      "funnel": [
+        "Intención específica",
+        "Anuncio por problema",
+        "Landing y filtro",
+        "Respuesta dentro del SLA",
+        "Resultado offline"
+      ],
+      "qualification": [
+        "Origen, destino, fecha, volumen, plantas, accesos, permisos, duración y mínimo económico.",
+        "Zona, capacidad y exclusiones aplicadas antes de optimizar.",
+        "Consentimiento y dato de contacto válidos."
+      ],
+      "assets": [
+        "Mapa de términos y negativas",
+        "Landing específica",
+        "Formulario de cualificación",
+        "Importación del resultado final"
+      ],
+      "evidence": [
+        "Tiempo a presupuesto, reserva, trabajo completado y valor por ruta y servicio.",
+        "Consultas, llamadas y resultados trazados por campaña y término."
+      ],
+      "guardrails": [
+        "No prometer fecha, cobertura, precio o disponibilidad si el calendario operativo no está actualizado.",
+        "No escalar por CPL si cae la calidad o la contribución."
+      ],
+      "northStar": "solicitud válida, presupuesto, reserva pagada y valor del servicio",
+      "decision": "Escalar únicamente cuando la conversión final y la capacidad sostienen la economía; el volumen de formularios no decide.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Separar intención",
+          "actions": [
+            "Elegir un problema.",
+            "Definir válido/no válido.",
+            "Aprobar zona y capacidad."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Lanzar señal limpia",
+          "actions": [
+            "Construir campaña y landing.",
+            "Probar medición completa.",
+            "Ensayar respuesta y seguimiento."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Aprender con resultado",
+          "actions": [
+            "Clasificar cada oportunidad.",
+            "Importar resultado offline.",
+            "Corregir términos, filtro y SLA."
+          ]
+        }
+      ],
+      "system": "Mudanzas, contenedores y guardamuebles",
+      "phase": "Después",
+      "routeLabel": "Capturar intención",
+      "scope": "Empresa → oportunidad",
+      "fitScore": 90,
+      "fitDimensions": [
+        "demand",
+        "qualification",
+        "speed",
+        "demonstrability"
+      ]
+    },
+    {
+      "id": "logistica-demand",
+      "systemId": "logistica",
+      "code": "C",
+      "kind": "demand",
+      "title": "Confianza operativa antes del presupuesto",
+      "premise": "Reducir incertidumbre mostrando preparación, cobertura, seguro, acceso y qué necesita la empresa para presupuestar.",
+      "audience": "Mercado relevante que reconoce parte del problema, pero aún no ha decidido actuar o comparar proveedores.",
+      "trigger": "Interacción con contenido útil, prueba autorizada o explicación del proceso.",
+      "offer": "Educación y prueba que conducen a una conversación cualificada sobre un sistema por servicio, fecha y zona conectado a disponibilidad.",
+      "channels": [
+        "Meta Ads",
+        "vídeo corto propuesto",
+        "contenido",
+        "remarketing"
+      ],
+      "funnel": [
+        "Problema reconocible",
+        "Contenido o caso",
+        "Interacción de calidad",
+        "Remarketing por objeción",
+        "Conversación cualificada"
+      ],
+      "qualification": [
+        "La pieza corresponde a un subsegmento prioritario.",
+        "La acción final exige los mismos filtros que la ruta de intención.",
+        "La frecuencia y la exclusión se revisan por audiencia."
+      ],
+      "assets": [
+        "Checklist de mudanza, proceso de presupuesto, equipo propio verificable y explicación de incidencias comunes.",
+        "Matriz de objeciones",
+        "Secuencia de remarketing",
+        "Prueba y permisos documentados"
+      ],
+      "evidence": [
+        "Patrones creativos clasificados como copiar, adaptar, probar o descartar.",
+        "Tiempo a presupuesto, reserva, trabajo completado y valor por ruta y servicio."
+      ],
+      "guardrails": [
+        "No prometer fecha, cobertura, precio o disponibilidad si el calendario operativo no está actualizado.",
+        "No convertir una hipótesis creativa en un caso o testimonio ficticio."
+      ],
+      "northStar": "Conversaciones cualificadas asistidas por contenido, no clics ni reproducciones aisladas.",
+      "decision": "Mantener si incrementa conversación válida o reduce fricción sin degradar la economía de la ruta de intención.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Elegir tensión",
+          "actions": [
+            "Extraer objeción recurrente.",
+            "Seleccionar prueba autorizada.",
+            "Escribir hipótesis creativa."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Construir secuencia",
+          "actions": [
+            "Producir tres ángulos.",
+            "Conectar remarketing.",
+            "Revisar compliance y permisos."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Medir asistencia",
+          "actions": [
+            "Etiquetar interacción útil.",
+            "Comparar conversación por ángulo.",
+            "Promover o descartar con criterio escrito."
+          ]
+        }
+      ],
+      "system": "Mudanzas, contenedores y guardamuebles",
+      "phase": "Después",
+      "routeLabel": "Crear demanda",
+      "scope": "Mercado → interés",
+      "fitScore": 79,
+      "fitDimensions": [
+        "value",
+        "defensibility",
+        "volume",
+        "legalRisk"
+      ]
+    },
+    {
+      "id": "logistica-expansion",
+      "systemId": "logistica",
+      "code": "D",
+      "kind": "expansion",
+      "title": "Escalar servicio × zona × capacidad",
+      "premise": "Aumentar cobertura únicamente donde respuesta, presupuesto, reserva y margen siguen dentro del estándar.",
+      "audience": "Cuenta activa con capacidad, disciplina de datos y una primera combinación ya validada.",
+      "trigger": "Existe señal estable de solicitud válida, presupuesto, reserva pagada y valor del servicio y la operación cumple el SLA.",
+      "offer": "Revisión de crecimiento basada en contribución, saturación, capacidad y aprendizaje transferible.",
+      "channels": [
+        "Revisión mensual",
+        "experimentos",
+        "nueva zona",
+        "nuevo subsegmento"
+      ],
+      "funnel": [
+        "Resultado offline",
+        "Cohorte por origen",
+        "Cuello de botella",
+        "Experimento limitado",
+        "Escala o rollback"
+      ],
+      "qualification": [
+        "La primera ruta deja contribución defendible.",
+        "La empresa mantiene capacidad y velocidad de respuesta.",
+        "Existe una sola variable de expansión y un rollback claro."
+      ],
+      "assets": [
+        "Dashboard de resultado final",
+        "Informe win/loss",
+        "Backlog de experimentos",
+        "Plan mutuo de expansión"
+      ],
+      "evidence": [
+        "Tiempo a presupuesto, reserva, trabajo completado y valor por ruta y servicio.",
+        "Comparación antes/después con ventana, fuente y limitaciones visibles."
+      ],
+      "guardrails": [
+        "No prometer fecha, cobertura, precio o disponibilidad si el calendario operativo no está actualizado.",
+        "No abrir una segunda vía para ocultar fallos del primer funnel."
+      ],
+      "northStar": "Contribución incremental con SLA y calidad estables.",
+      "decision": "Escalar una combinación cada vez; pausar si empeoran margen, calidad, capacidad o trazabilidad.",
+      "sprint": [
+        {
+          "phase": "Días 1–3",
+          "objective": "Encontrar el límite",
+          "actions": [
+            "Revisar cohortes.",
+            "Localizar cuello de botella.",
+            "Confirmar capacidad adicional."
+          ]
+        },
+        {
+          "phase": "Días 4–10",
+          "objective": "Diseñar expansión",
+          "actions": [
+            "Elegir una variable.",
+            "Fijar inversión y rollback.",
+            "Aprobar medición y responsables."
+          ]
+        },
+        {
+          "phase": "Días 11–30",
+          "objective": "Escalar con control",
+          "actions": [
+            "Lanzar experimento.",
+            "Comparar contribución y calidad.",
+            "Escalar, mantener o revertir."
+          ]
+        }
+      ],
+      "system": "Mudanzas, contenedores y guardamuebles",
+      "phase": "Después",
+      "routeLabel": "Expandir la cuenta",
+      "scope": "Resultado → crecimiento",
+      "fitScore": 74,
+      "fitDimensions": [
+        "margin",
+        "scalability",
+        "standardisation",
+        "experience"
+      ]
+    }
+  ]
+}

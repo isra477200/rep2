@@ -51,13 +51,29 @@ export default function DeliveryCenter() {
             <p>Prospección a empresas que contratarán a RedVitalia para gestionar su publicidad y captación. No son guiones para vender al consumidor final.</p>
           </div>
           <div className={styles.kitSummary}>
-            <span><b>8</b> materiales principales</span>
+            <span><b>9</b> materiales principales</span>
             <span><b>91</b> páginas/diapositivas + <b>10</b> hojas CRM</span>
+            <span><b>40</b> rutas operativas por vertical</span>
+            <span><b>4</b> formas de ver y activar cada ruta</span>
             <Link prefetch={false} href="/operacion-comercial">Abrir operación comercial</Link>
             <a href="/assets/ejecucion/enablement/09-INFORME-EJECUTIVO-AMPLIACION.md">Leer informe ejecutivo</a>
             <a href="/assets/ejecucion/enablement/KIT-COMERCIAL-REDVITALIA.zip" download>Descargar kit completo</a>
           </div>
         </header>
+
+        <article className={styles.routePack}>
+          <div className={styles.routePackMark}><span>10×4</span><small>MAPA</small></div>
+          <div>
+            <p>ARQUITECTURA DE CRECIMIENTO · NUEVO</p>
+            <h3>40 rutas para captar cuentas, ejecutar, crear demanda y expandir.</h3>
+            <span>Diez verticales, cuatro vías por sistema, embudos, criterios, activos, límites y sprint de 30 días. Todo navegable dentro de la aplicación y exportable para trabajar fuera.</span>
+          </div>
+          <nav>
+            <a href="/sistemas#/routes">Explorar en la aplicación</a>
+            <a href="/assets/ejecucion/enablement/10-MAPA-40-RUTAS-REDVITALIA.csv" download>Descargar CSV</a>
+            <a href="/assets/ejecucion/enablement/10-MAPA-40-RUTAS-REDVITALIA.json" download>Descargar JSON</a>
+          </nav>
+        </article>
 
         <div className={styles.kitGrid}>
           <article className={styles.kitCard}>
