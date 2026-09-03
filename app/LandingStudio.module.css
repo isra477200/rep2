@@ -1422,7 +1422,7 @@
 
 .previewFrame.desktop { width: calc(100% - 32px); }
 .previewFrame.mobile { width: min(390px, calc(100% - 28px)); }
-.previewFrame iframe { display: block; width: 100%; height: 780px; border: 0; background: #fff; }
+.previewFrame .previewDocument { display: block; width: 100%; height: 780px; border: 0; background: #fff; }
 
 .exportBar {
   display: flex;
@@ -1643,7 +1643,7 @@
 .fullscreen .previewFrame { flex: 1 1 auto; margin: 12px auto; }
 .fullscreen .previewFrame.desktop { width: min(1440px, calc(100% - 24px)); }
 .fullscreen .previewFrame.mobile { width: min(390px, calc(100% - 24px)); }
-.fullscreen .previewFrame iframe { height: calc(100vh - 104px); }
+.fullscreen .previewFrame .previewDocument { height: calc(100vh - 104px); }
 .closeButton { min-height: 44px; padding: 0 15px; font-size: 12px; font-weight: 850; }
 .toast { position: fixed; z-index: 1100; right: 26px; bottom: 26px; padding: 13px 17px; border-radius: 11px; background: #17263a; color: #fff; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18); font-size: 12px; font-weight: 800; }
 
@@ -1763,7 +1763,7 @@
 .compareTriple { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 14px 16px 16px; }
 .compareTriple figure { margin: 0; border: 1px solid var(--studio-line); border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 8px 24px rgba(32, 56, 91, 0.08); }
 .compareTriple figcaption { padding: 10px 14px; font-size: 12px; font-weight: 850; letter-spacing: 0.08em; color: #0a63ca; border-bottom: 1px solid var(--studio-line); background: #f6f9fd; }
-.compareTriple iframe { display: block; width: 100%; height: 640px; border: 0; background: #fff; }
+.compareTriple .previewDocument { display: block; width: 100%; height: 640px; border: 0; background: #fff; }
 @media (max-width: 1100px) { .compareTriple { grid-template-columns: 1fr; } }
 
 .packButton { background: #0f7a52 !important; }

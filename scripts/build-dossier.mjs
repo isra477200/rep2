@@ -493,7 +493,7 @@ const verticales = verticalesData.verticales.map((v) => {
 
   const metaAds = {
     campana: `RV · Meta · ${v.label} · [ZONA]`,
-    nota: "Tres ángulos, un anuncio por ángulo para arrancar (presupuesto repartido, optimización por contactos). El dato de cada texto sale del estudio; la garantía es oferta propia de RedVitalia. División del trabajo: Claude deja el prompt, ChatGPT genera la imagen.",
+    nota: "Tres ángulos, un anuncio por ángulo para arrancar (presupuesto repartido, optimización por contactos). El dato de cada texto sale del estudio; la garantía es oferta propia de RedVitalia. ChatGPT prepara el concepto y genera la imagen; una persona aprueba antes de publicar.",
     anuncios: [
       {
         nombre: "A · Garantía firmada",

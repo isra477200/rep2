@@ -177,6 +177,16 @@ const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
 ];
+const executionNav = [
+  ["/sistemas", "Sistemas", "⌬"],
+  ["/campanas", "Campañas", "▷"],
+  ["/creativos", "Fábrica creativa", "✦"],
+  ["/biblioteca-creativa", "Biblioteca", "▦"],
+  ["/laboratorio", "Laboratorio económico", "∑"],
+  ["/experimentos", "Experimentos", "⌁"],
+  ["/decisiones", "Decisiones", "✓"],
+  ["/aprendizajes", "Aprendizajes", "↗"],
+] as const;
 const scopeShort: Record<string, string> = {
   "Núcleo — agencia/leadgen": "Agencia / leadgen",
   "Vertical — broker/marketplace": "Broker / marketplace",
@@ -1657,7 +1667,11 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           <select
             id="mobile-primary-navigation"
             value={view}
-            onChange={(event) => go(event.target.value as View)}
+            onChange={(event) => {
+              const target = event.target.value;
+              if (target.startsWith("/")) window.location.assign(target);
+              else go(target as View);
+            }}
           >
             {navGroups.map((group) => {
               const options = group.ids.map((id) => {
@@ -1668,6 +1682,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 <optgroup key={group.label} label={group.label}>{options}</optgroup>
               ) : options;
             })}
+            <optgroup label="Ejecución RedVitalia">
+              {executionNav.map(([href, label]) => <option key={href} value={href}>{label}</option>)}
+            </optgroup>
           </select>
         </div>
         <nav aria-label="Navegación principal">
@@ -1697,6 +1714,16 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               })}
             </div>
           ))}
+          <div className="nav-group execution-nav-group">
+            {!navCollapsed && <p className="nav-group-label">Ejecución RedVitalia</p>}
+            {navCollapsed && <hr className="nav-group-rule" />}
+            {executionNav.map(([href, label, icon]) => (
+              <a key={href} href={href} title={navCollapsed ? label : undefined}>
+                <i>{icon}</i>
+                {!navCollapsed && <span>{label}</span>}
+              </a>
+            ))}
+          </div>
         </nav>
         {!navCollapsed && (
           <div className="side-status">
