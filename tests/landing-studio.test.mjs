@@ -12,6 +12,7 @@ import {
   destinationCompatible,
   landingReadiness,
 } from "../app/landings/model.ts";
+import { applyMarketAmmo, buildMarketAmmo } from "../app/landings/market-ammo.ts";
 
 const intelligencePromise = readFile(
   new URL("../public/data/landing-intelligence.json", import.meta.url),
@@ -20,6 +21,11 @@ const intelligencePromise = readFile(
 
 const captureIndexPromise = readFile(
   new URL("../public/data/site-captures/index.json", import.meta.url),
+  "utf8",
+).then(JSON.parse);
+
+const verticalesPromise = readFile(
+  new URL("../public/data/verticales.json", import.meta.url),
   "utf8",
 ).then(JSON.parse);
 
@@ -346,10 +352,72 @@ test("readiness detecta claims numéricos, temporales y garantías sin respaldo"
 
   const supported = landingReadiness({
     ...base,
-    proof: "Caso Empresa Norte: 30 reuniones entre enero y marzo de 2026, documentadas en https://example.com/caso.",
+    result: "30 reuniones en 7 días",
+    proof: "Caso Empresa Norte: 30 reuniones obtenidas en 7 días de marzo de 2026, documentadas en https://example.com/caso.",
   });
   assert.equal(checkById(supported, "claim").ok, true);
   assert.ok(!blockerIds(supported).includes("claim"));
+});
+
+test("la munición competitiva nunca sobrescribe prueba, precio ni garantía propios", async () => {
+  const verticales = await verticalesPromise;
+  for (const vertical of verticales.verticales) {
+    const brief = {
+      ...defaultBrief(vertical.id),
+      proof: "Caso propio documentado: 12 oportunidades entre enero y marzo de 2026.",
+      price: "Oferta aprobada: 900 € más impuestos",
+      guarantee: "Durante 30 días se repone cada dato inválido probado; excluye duplicados y aplica según el anexo firmado.",
+    };
+    const ammo = buildMarketAmmo(vertical.id, verticales, null, null, brief.unit);
+    assert.ok(ammo, vertical.id);
+    const applied = applyMarketAmmo(brief, ammo);
+    assert.equal(applied.proof, brief.proof, `${vertical.id}: prueba`);
+    assert.equal(applied.price, brief.price, `${vertical.id}: precio`);
+    assert.equal(applied.guarantee, brief.guarantee, `${vertical.id}: garantía`);
+    assert.ok(applied.marketStats.every((item) => !/precio|€\s*\/\s*mes|por contacto/i.test(`${item.value} ${item.label}`)), vertical.id);
+    assert.equal(ammo.priceSuggestion, null, vertical.id);
+    assert.equal(ammo.guaranteeSuggestion, "", vertical.id);
+  }
+});
+
+test("los defaults no publican compromisos operativos que nadie haya configurado", async () => {
+  const verticales = await verticalesPromise;
+  const forbidden = /seguimos trabajando gratis|sin permanencia|tuyo en exclusiva|revisi[oó]n humana|tus datos no se revenden|sin letra pequeña/i;
+  for (const vertical of verticales.verticales) {
+    assert.doesNotMatch(buildLandingHtml(defaultBrief(vertical.id)), forbidden, vertical.id);
+  }
+});
+
+test("los claims copiados se detectan en todas las superficies editables", () => {
+  const base = {
+    ...defaultBrief("legal"),
+    proof: "Benchmark editorial de 153 empresas del mercado; no contiene resultados propios.",
+  };
+  const claim = "30-60 casos cada mes";
+  const candidates = [
+    { headlineOverride: claim },
+    { subheadlineOverride: claim },
+    { offer: `Servicio con ${claim}` },
+    { problemOverride: `Ahora consigues ${claim}` },
+    { stepsOverride: [{ title: "Resultado", text: claim }] },
+    { faqsOverride: [{ question: "¿Qué recibo?", answer: claim }] },
+  ];
+  for (const patch of candidates) {
+    const readiness = landingReadiness({ ...base, ...patch });
+    assert.equal(checkById(readiness, "claim").ok, false, JSON.stringify(patch));
+    assert.ok(blockerIds(readiness).includes("claim"), JSON.stringify(patch));
+  }
+});
+
+test("una garantía exige periodo, métrica, condiciones y remedio", () => {
+  const base = defaultBrief("generalista");
+  const vague = landingReadiness({ ...base, guarantee: "Te garantizamos resultados por contrato." });
+  assert.equal(checkById(vague, "guarantee").ok, false);
+  const complete = landingReadiness({
+    ...base,
+    guarantee: "Durante 30 días se repone cada contacto inválido acreditado; excluye duplicados y aplica según el anexo firmado.",
+  });
+  assert.equal(checkById(complete, "guarantee").ok, true);
 });
 
 test("las cuatro intenciones de coches generan páginas, campos y eventos distintos", () => {

@@ -61,20 +61,11 @@ export const buildMarketAmmo = (
     : "";
   const proofLine = `Sistema construido sobre el análisis de ${vertical.n} empresas de captación del sector (${vertical.spainN} en España)${medianaFrase}. Cada táctica de esta página sale de ese estudio, no de una plantilla.`;
 
-  // Sugerencia de precio publicado: los ganadores del estudio publican precio (46% vs 16%).
-  // Solo con mediana de cuota real (>=100 EUR); nunca con medianas de precio por lead.
-  const priceSuggestion =
-    vertical.medianEur && vertical.medianEur >= 100
-      ? `Desde ${Math.round(vertical.medianEur / 10) * 10} €/mes + inversión publicitaria`
-      : null;
-
-  const cleanUnit = (unit || "clientes").trim() || "clientes";
-  const femenina = ["obras", "instalaciones", "consultas", "reuniones", "solicitudes", "reservas", "citas", "ventas", "visitas", "llamadas", "oportunidades"].includes(
-    cleanUnit.split(/\s+/)[0].toLocaleLowerCase("es"),
-  );
-  const guaranteeSuggestion = femenina
-    ? `Si el primer mes no recibes las ${cleanUnit} pactadas en tu propuesta, seguimos trabajando gratis hasta conseguirlas. Por contrato, no en un anuncio.`
-    : `Si el primer mes no recibes los ${cleanUnit} pactados en tu propuesta, seguimos trabajando gratis hasta conseguirlos. Por contrato, no en un anuncio.`;
+  // El corpus mezcla cuotas, precios por lead y otros modelos. Sirve como benchmark,
+  // pero no autoriza a inventar el precio ni la garantía de RedVitalia.
+  const priceSuggestion = null;
+  const guaranteeSuggestion = "";
+  void unit;
 
   const stats: Array<{ value: string; label: string }> = [
     { value: String(vertical.n), label: "empresas del sector analizadas" },
@@ -105,8 +96,10 @@ export const buildMarketAmmo = (
 
 export const applyMarketAmmo = (brief: LandingBrief, ammo: MarketAmmo): LandingBrief => ({
   ...brief,
-  proof: ammo.proofLine,
-  guarantee: brief.guarantee.trim() ? brief.guarantee : ammo.guaranteeSuggestion,
-  marketStats: ammo.stats,
+  // Los datos de competidores son contexto, no prueba de resultados propios.
+  // Precio, prueba y garantía solo pueden venir del brief aprobado por el usuario.
+  marketStats: ammo.stats.filter(
+    (item) => !/precio|€\s*\/\s*mes|por contacto/i.test(`${item.value} ${item.label}`),
+  ),
   activeRecipeId: brief.activeRecipeId,
 });

@@ -57,6 +57,7 @@ import type {
 import { BUILD_DATE, BUILD_DATE_LONG } from "./build-date";
 import { galleryMediaPosition, resolveGalleryMediaIndex } from "./media-deep-link";
 import type { LandingBrief } from "./landings/model";
+import type { OperationContext } from "./operations-model";
 
 const OperationsHub = lazy(() => import("./OperationsHub"));
 const AdsLaboratory = lazy(() => import("./AdsLaboratory"));
@@ -158,7 +159,7 @@ const nav: { id: View; label: string; icon: string }[] = [
   { id: "countries", label: "Países", icon: "◈" },
   { id: "ads", label: "Galerías", icon: "▣" },
   { id: "compare", label: "Comparador", icon: "⇄" },
-  { id: "verticals", label: "Nichos", icon: "▤" },
+  { id: "verticals", label: "Lanzamientos", icon: "▤" },
   { id: "insights", label: "Conclusiones", icon: "∴" },
   { id: "playbooks", label: "Métodos", icon: "⚙" },
   { id: "analysis", label: "Análisis", icon: "∑" },
@@ -173,9 +174,9 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["negocio", "operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
+  { label: "Acción", ids: ["verticals", "negocio", "operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "countries", "ads", "compare"] },
-  { label: "Análisis", ids: ["verticals", "insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
+  { label: "Análisis", ids: ["insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
 ];
 const scopeShort: Record<string, string> = {
@@ -383,6 +384,8 @@ export default function Portal() {
   const globalSearchInputRef = useRef<HTMLInputElement | null>(null);
   const [globalAds, setGlobalAds] = useState<AnuncioReal[] | null>(null);
   const [adLabInitialQuery, setAdLabInitialQuery] = useState("");
+  const [operationsWorkspaceId, setOperationsWorkspaceId] = useState("");
+  const [operationsSeed, setOperationsSeed] = useState<OperationContext | null>(null);
   const [priceOnly, setPriceOnly] = useState(false),
     [channel, setChannel] = useState("Todos"),
     [visible, setVisible] = useState(24);
@@ -1263,9 +1266,10 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
   const openLandingBrief = (brief: LandingBrief) => {
-    window.localStorage.setItem("rv-landing-studio-v3", JSON.stringify(brief));
+    window.localStorage.setItem("rv-landing-studio-v4", JSON.stringify(brief));
     go("landings");
   };
+  const clearOperationsSeed = useCallback(() => setOperationsSeed(null), []);
   const chooseCountry = (name: string) => {
     setCountry(name);
     setView("companies");
@@ -2017,11 +2021,11 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 </span>
                 →
               </button>
-              <button onClick={() => go("decisions")}>
+              <button onClick={() => go("verticals")}>
                 <b>03</b>
                 <span>
-                  <strong>Construir una campaña</strong>
-                  <small>Oportunidades, patrones, benchmark y playbooks</small>
+                  <strong>Abrir un lanzamiento</strong>
+                  <small>Cliente, economía, guiones, propuesta, landing y campaña</small>
                 </span>
                 →
               </button>
@@ -2034,6 +2038,9 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             <Suspense fallback={<div className="deep-loading">Preparando la sala de mando…</div>}>
               <OperationsHub
                 companies={companies}
+                workspaceId={operationsWorkspaceId || undefined}
+                initialContext={operationsSeed}
+                onInitialContextApplied={clearOperationsSeed}
                 onOpenCompany={(id) => {
                   const company = companyById.get(id);
                   if (company) openCompany(company);
@@ -2747,9 +2754,13 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
             <Suspense fallback={<div className="loading">Preparando el sistema operativo del nicho…</div>}>
               <SectorOperatingSystem
                 data={verticales}
-                onOpenFactory={() => go("operations", { tab: "factory" })}
-                onOpenAdLab={() => go("adlab")}
-                onOpenLandings={() => go("landings")}
+                onOpenFactory={(context) => {
+                  setOperationsWorkspaceId(context.launchId);
+                  setOperationsSeed(context);
+                  go("operations", { tab: "factory" });
+                }}
+                onOpenAdLab={(adQuery) => go("adlab", { adQuery })}
+                onOpenLandings={openLandingBrief}
                 onOpenCompany={(id) => {
                   const company = companyById.get(id);
                   if (company) openCompany(company);

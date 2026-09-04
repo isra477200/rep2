@@ -15,12 +15,12 @@ const openDatabase = () =>
     request.onerror = () => reject(request.error);
   });
 
-export const loadOperationsWorkspace = async <T,>(): Promise<T | null> => {
+export const loadOperationsWorkspace = async <T,>(recordKey = RECORD_KEY): Promise<T | null> => {
   try {
     const database = await openDatabase();
     const value = await new Promise<T | null>((resolve, reject) => {
       const transaction = database.transaction(STORE_NAME, "readonly");
-      const request = transaction.objectStore(STORE_NAME).get(RECORD_KEY);
+      const request = transaction.objectStore(STORE_NAME).get(recordKey);
       request.onsuccess = () => resolve((request.result as T | undefined) || null);
       request.onerror = () => reject(request.error);
     });
@@ -30,7 +30,8 @@ export const loadOperationsWorkspace = async <T,>(): Promise<T | null> => {
     // El fallback mantiene compatibilidad con navegadores sin IndexedDB.
   }
   try {
-    const legacy = window.localStorage.getItem(LEGACY_KEY);
+    const storageKey = recordKey === RECORD_KEY ? LEGACY_KEY : `${LEGACY_KEY}:${recordKey}`;
+    const legacy = window.localStorage.getItem(storageKey);
     return legacy ? (JSON.parse(legacy) as T) : null;
   } catch {
     return null;
@@ -39,25 +40,25 @@ export const loadOperationsWorkspace = async <T,>(): Promise<T | null> => {
 
 let saveQueue: Promise<boolean> = Promise.resolve(true);
 
-const persistOperationsWorkspace = async <T,>(value: T) => {
+const persistOperationsWorkspace = async <T,>(value: T, recordKey: string) => {
   try {
     const database = await openDatabase();
     await new Promise<void>((resolve, reject) => {
       const transaction = database.transaction(STORE_NAME, "readwrite");
-      transaction.objectStore(STORE_NAME).put(value, RECORD_KEY);
+      transaction.objectStore(STORE_NAME).put(value, recordKey);
       transaction.oncomplete = () => resolve();
       transaction.onerror = () => reject(transaction.error);
     });
     database.close();
     try {
-      window.localStorage.removeItem(LEGACY_KEY);
+      if (recordKey === RECORD_KEY) window.localStorage.removeItem(LEGACY_KEY);
     } catch {
       // La migración ya se ha guardado en IndexedDB.
     }
     return true;
   } catch {
     try {
-      window.localStorage.setItem(LEGACY_KEY, JSON.stringify(value));
+      window.localStorage.setItem(recordKey === RECORD_KEY ? LEGACY_KEY : `${LEGACY_KEY}:${recordKey}`, JSON.stringify(value));
       return true;
     } catch {
       return false;
@@ -65,7 +66,7 @@ const persistOperationsWorkspace = async <T,>(value: T) => {
   }
 };
 
-export const saveOperationsWorkspace = <T,>(value: T) => {
-  saveQueue = saveQueue.then(() => persistOperationsWorkspace(value));
+export const saveOperationsWorkspace = <T,>(value: T, recordKey = RECORD_KEY) => {
+  saveQueue = saveQueue.then(() => persistOperationsWorkspace(value, recordKey));
   return saveQueue;
 };
