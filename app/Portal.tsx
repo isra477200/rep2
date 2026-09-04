@@ -67,6 +67,7 @@ const EditorialText = lazy(() => import("./EditorialText"));
 const LandingStudio = lazy(() => import("./LandingStudio"));
 const BusinessDossier = lazy(() => import("./BusinessDossier"));
 const GalleryExplorer = lazy(() => import("./GalleryExplorer"));
+const SectorOperatingSystem = lazy(() => import("./SectorOperatingSystem"));
 
 type View =
   | "home"
@@ -2743,74 +2744,18 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
 
         {viewResourcesReady && view === "verticals" && verticales && (
           <div className="view">
-            <section className="page-head">
-              <p className="eyebrow">PLAYBOOKS POR NICHO</p>
-              <h1>Cada vertical, con su libro de jugadas</h1>
-              <p>{verticales.nota}</p>
-            </section>
-            <section className="content-section">
-              <div className="vertical-grid">
-                {verticales.verticales.map((v) => (
-                  <article key={v.id} className="vertical-card">
-                    <div className="vertical-head">
-                      <h3>{v.label}</h3>
-                      <div className="vertical-stats">
-                        <span><b>{v.n}</b> fichas</span>
-                        <span><b>{v.spainN}</b> España</span>
-                        <span><b>{v.medianEur ? `${fmt(v.medianEur)} €` : "s/d"}</b> mediana</span>
-                        <span><b>{v.adsActivePct}%</b> con ads</span>
-                      </div>
-                    </div>
-                    {v.guionApertura && (
-                      <div className="vertical-guion">
-                        <span>APERTURA DEL SETTER</span>
-                        <p>«{v.guionApertura}»</p>
-                        <button
-                          className="res-copy mini"
-                          onClick={async () => {
-                            try { await navigator.clipboard.writeText(v.guionApertura); setToast("Apertura copiada"); } catch { setToast("No se pudo copiar"); }
-                          }}
-                        >
-                          Copiar
-                        </button>
-                      </div>
-                    )}
-                    {v.tacticas.length > 0 && (
-                      <div className="vertical-block">
-                        <span>TÁCTICAS DEL VERTICAL</span>
-                        <ul>
-                          {v.tacticas.map((t, i) => (
-                            <li key={i}>{t}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                    {v.clienteIdeal && (
-                      <div className="vertical-block">
-                        <span>CLIENTE IDEAL</span>
-                        <p>{v.clienteIdeal}</p>
-                      </div>
-                    )}
-                    {v.estacionalidad && (
-                      <div className="vertical-block">
-                        <span>ESTACIONALIDAD</span>
-                        <p>{v.estacionalidad}</p>
-                      </div>
-                    )}
-                    <div className="chip-row">
-                      {v.referentes.map((r) => {
-                        const c = companyById.get(r.id);
-                        return c ? (
-                          <button key={r.id} className="ref-chip" onClick={() => openCompany(c)}>
-                            {r.name} · {r.score}
-                          </button>
-                        ) : null;
-                      })}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
+            <Suspense fallback={<div className="loading">Preparando el sistema operativo del nicho…</div>}>
+              <SectorOperatingSystem
+                data={verticales}
+                onOpenFactory={() => go("operations", { tab: "factory" })}
+                onOpenAdLab={() => go("adlab")}
+                onOpenLandings={() => go("landings")}
+                onOpenCompany={(id) => {
+                  const company = companyById.get(id);
+                  if (company) openCompany(company);
+                }}
+              />
+            </Suspense>
           </div>
         )}
 
