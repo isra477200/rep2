@@ -9,12 +9,20 @@ permissions:
   contents: read
   packages: write
 
+concurrency:
+  group: redvitalia-production
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 75
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+
+      - name: Verify deployment contract
+        run: npm run deployment:qa
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -37,19 +45,23 @@ jobs:
           labels: |
             org.opencontainers.image.source=https://github.com/isra477200/rep2
             org.opencontainers.image.title=Inteligencia Mundial de Captación · RedVitalia
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+            org.opencontainers.image.revision=${{ github.sha }}
+          cache-from: type=gha,scope=redvitalia-production
+          cache-to: type=gha,mode=max,scope=redvitalia-production
+          build-args: |
+            GIT_SHA=${{ github.sha }}
 
-      - name: Update Hostinger Docker project
+      - name: Update and verify Hostinger Docker project
         env:
           HOSTINGER_API_KEY: ${{ secrets.HOSTINGER_API_KEY }}
+          EXPECTED_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
           if [ -z "${HOSTINGER_API_KEY:-}" ]; then
-            echo 'HOSTINGER_API_KEY is not configured; image published without automatic Docker restart.'
-            exit 0
+            echo 'HOSTINGER_API_KEY is not configured; production deployment cannot be verified.'
+            exit 1
           fi
-          response=$(curl --silent --show-error --write-out '\n%{http_code}' \
+          response=$(curl --silent --show-error --connect-timeout 10 --max-time 30 --write-out '\n%{http_code}' \
             --request POST \
             --header 'Accept: application/json' \
             --header "Authorization: Bearer ${HOSTINGER_API_KEY}" \
@@ -61,4 +73,70 @@ jobs:
             echo "Hostinger update failed with HTTP $status"
             exit 1
           fi
-          echo "Hostinger accepted the RedVitalia project update."
+
+          action_id=$(printf '%s' "$body" | jq -er '.id | numbers')
+          action_state=$(printf '%s' "$body" | jq -er '.state | strings')
+          echo "Hostinger accepted action $action_id with state $action_state."
+
+          for attempt in $(seq 1 91); do
+            case "$action_state" in
+              success)
+                echo "Hostinger action $action_id completed successfully."
+                break
+                ;;
+              error)
+                echo "Hostinger action $action_id failed."
+                exit 1
+                ;;
+              created|sent|delayed)
+                ;;
+              *)
+                echo "Hostinger action $action_id returned unknown state: $action_state"
+                exit 1
+                ;;
+            esac
+
+            if [ "$attempt" -eq 91 ]; then
+              echo "Hostinger action $action_id did not finish within 30 minutes (last state: $action_state)."
+              exit 1
+            fi
+
+            sleep 20
+            if ! poll_response=$(curl --silent --show-error --connect-timeout 10 --max-time 30 --write-out '\n%{http_code}' \
+                --header 'Accept: application/json' \
+                --header "Authorization: Bearer ${HOSTINGER_API_KEY}" \
+                "https://developers.hostinger.com/api/vps/v1/virtual-machines/1480016/actions/${action_id}"); then
+              echo "Transient error while polling Hostinger action $action_id; retrying."
+              continue
+            fi
+            poll_body=$(printf '%s\n' "$poll_response" | sed '$d')
+            poll_status=$(printf '%s\n' "$poll_response" | tail -n1)
+            case "$poll_status" in
+              408|425|429|500|502|503|504)
+                echo "Hostinger action polling returned transient HTTP $poll_status; retrying."
+                continue
+                ;;
+            esac
+            if [ "$poll_status" -lt 200 ] || [ "$poll_status" -ge 300 ]; then
+              echo "$poll_body"
+              echo "Hostinger action polling failed with HTTP $poll_status"
+              exit 1
+            fi
+            action_state=$(printf '%s' "$poll_body" | jq -er '.state | strings')
+            echo "Hostinger action $action_id: $action_state"
+          done
+
+          for attempt in $(seq 1 60); do
+            served_sha=$(curl --silent --show-error --fail --connect-timeout 5 --max-time 15 \
+              "https://redvitalia.srv1480016.hstgr.cloud/deployment.txt?expected=${EXPECTED_SHA}&attempt=${attempt}" \
+              2>/dev/null || true)
+            served_sha=$(printf '%s' "$served_sha" | tr -d '\r\n')
+            if [ "$served_sha" = "$EXPECTED_SHA" ]; then
+              echo "Production is serving the expected commit $EXPECTED_SHA."
+              exit 0
+            fi
+            sleep 10
+          done
+
+          echo "Hostinger completed the action, but production did not expose commit $EXPECTED_SHA within 10 minutes."
+          exit 1
