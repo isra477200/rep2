@@ -1750,8 +1750,8 @@
 .ammoApply:hover { background: #0a4cb8; }
 .ammoColumns { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 18px; }
 .ammoColumns h3 { font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; color: #596579; margin: 0 0 10px; }
-.ammoQuote { display: block; width: 100%; text-align: left; background: #f5f7fa; border: 1px solid #d9e0e9; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; cursor: pointer; transition: border-color .15s, background .15s; }
-.ammoQuote:hover { border-color: #0b57d0; background: #eef4ff; }
+.ammoQuote { display: block; width: 100%; text-align: left; background: #f5f7fa; border: 1px solid #d9e0e9; border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; cursor: default; transition: border-color .15s, background .15s; }
+.ammoQuote:hover { border-color: #b9c5d4; background: #f5f7fa; }
 .ammoQuote span { display: block; font-size: 13.5px; line-height: 1.5; color: #111827; }
 .ammoQuote small { display: block; margin-top: 6px; color: #596579; font-size: 11.5px; }
 .ammoEmpty { color: #596579; font-size: 13px; }
@@ -1768,6 +1768,9 @@
 
 .packButton { background: #0f7a52 !important; }
 .packButton:hover { background: #0c6141 !important; }
+.packButton:disabled,
+.variantCompare button:disabled { cursor: not-allowed; opacity: .48; }
+.packButton:disabled:hover { background: #0f7a52 !important; }
 
 .express { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 34px; align-items: center; margin-top: 18px; padding: 30px 34px; border: 1px solid #1d4fa8; border-radius: 20px; background: linear-gradient(140deg, #0d1b2d, #14325a 70%, #17418f); color: #fff; box-shadow: 0 20px 50px rgba(13, 33, 66, 0.35); }
 .expressIntro p { margin: 0 0 8px; color: #9dc0ff; font-size: 11.5px; font-weight: 900; letter-spacing: 0.14em; }

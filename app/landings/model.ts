@@ -1366,15 +1366,34 @@ export const landingCopyPreview = (brief: LandingBrief) => ({
 });
 
 export const landingReadiness = (brief: LandingBrief) => {
-  const sensitiveClaim = /\b(?:\d+(?:[.,]\d+)?|garant|exclusiv|sin permanencia|no pagas|resultado asegurado|en \d+ (?:d[ií]as|semanas|meses))\b/i.test(
-    `${brief.result} ${brief.guarantee} ${brief.ctaLabel}`,
-  );
+  const editableClaimText = [
+    brief.headlineOverride,
+    brief.subheadlineOverride,
+    brief.problemOverride,
+    brief.result,
+    brief.offer,
+    brief.ctaLabel,
+    ...(brief.stepsOverride || []).flatMap((step) => [step.title, step.text]),
+    ...(brief.faqsOverride || []).flatMap((faq) => [faq.question, faq.answer]),
+  ].join(" ");
+  const sensitiveClaim = /\b(?:garant\w*|exclusiv\w*|sin permanencia|no pagas|gratis|resultado asegurado|en \d+(?:[.,]\d+)?\s*(?:d[ií]as|semanas|meses)|\d+(?:[.,]\d+)?(?:\s*[-–]\s*\d+(?:[.,]\d+)?)?\s*(?:casos|clientes|leads|contactos|citas|reuniones|ventas|solicitudes|reservas|pacientes|oportunidades)(?:\s+(?:cada|al|en|por)\s+(?:d[ií]a|semana|mes|año))?)\b/i.test(editableClaimText);
   const concreteEvidence =
     clean(brief.proof).length >= 20 &&
     /\b(?:caso|fuente|reseña|cliente|empresa|periodo|per[ií]odo|entre|durante|https?:\/\/|\d{2,})\b/i.test(brief.proof);
-  const concreteGuarantee =
-    clean(brief.guarantee).length >= 28 &&
-    /\b(?:d[ií]as|semanas|meses|contrato|remedio|reembolso|contin[uú]a|excluye|condiciones)\b/i.test(brief.guarantee);
+  const claimNumbers = [...editableClaimText.matchAll(/\d+(?:[.,]\d+)?/g)].map((match) => match[0].replace(",", "."));
+  const evidenceNumbers = new Set([...brief.proof.matchAll(/\d+(?:[.,]\d+)?/g)].map((match) => match[0].replace(",", ".")));
+  const quantitiesSupported = claimNumbers.every((value) => evidenceNumbers.has(value));
+  const contractualClaim = /\b(?:garant\w*|exclusiv\w*|sin permanencia|no pagas|gratis)\b/i.test(editableClaimText);
+  const contractSupport = !contractualClaim || /\b(?:contrato|acuerdo|condiciones|anexo|remedio|exclusiones?)\b/i.test(brief.proof);
+  const resultClaimSupported = concreteEvidence && quantitiesSupported && contractSupport;
+  const hasGuarantee = clean(brief.guarantee).length > 0;
+  const concreteGuarantee = !hasGuarantee || (
+    clean(brief.guarantee).length >= 40 &&
+    /\b\d+(?:[.,]\d+)?\s*(?:d[ií]as|semanas|meses)\b/i.test(brief.guarantee) &&
+    /\b(?:lead|contacto|dato|cita|reuni[oó]n|venta|solicitud|reserva|paciente|oportunidad|entregable|resultado)\w*\b/i.test(brief.guarantee) &&
+    /\b(?:repon\w*|reembols\w*|abon\w*|devolv\w*|contin[uú]a\w*|sin\s+(?:fee|coste|cargo)|cr[eé]dito)\b/i.test(brief.guarantee) &&
+    /\b(?:exclu\w*|condiciones?|no\s+aplica|salvo|contrato|anexo)\b/i.test(brief.guarantee)
+  );
   const authorityRequiresProof = brief.angle === "authority";
   const automotiveRequiresIntent = brief.verticalId === "coches-motor";
   const expectedArchitecture = objectiveArchitecture[brief.objective];
@@ -1403,7 +1422,15 @@ export const landingReadiness = (brief: LandingBrief) => {
     {
       id: "claim",
       label: "Claim sensible respaldado",
-      ok: !sensitiveClaim || concreteEvidence || concreteGuarantee,
+      ok: !sensitiveClaim || resultClaimSupported,
+      weight: 10,
+      severity: "blocker",
+      section: "evidence",
+    },
+    {
+      id: "guarantee",
+      label: "Garantía medible, limitada y con remedio",
+      ok: concreteGuarantee,
       weight: 10,
       severity: "blocker",
       section: "evidence",

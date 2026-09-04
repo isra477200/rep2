@@ -6,8 +6,6 @@ import CompanyLogo from "./CompanyLogo";
 import type { ArsenalData, CrucesData, LogoManifest, VerticalesData } from "./data-types";
 import { applyMarketAmmo, buildMarketAmmo } from "./landings/market-ammo";
 import { buildZip } from "./landings/zip";
-import { kitToText, type Kit } from "./kit-text";
-import { VERTICAL_CONTENT } from "./landings/vertical-content.ts";
 import {
   ANGLES,
   ARCHITECTURES,
@@ -37,7 +35,7 @@ type LandingStudioProps = {
 type Device = "desktop" | "mobile";
 type EditorSection = "strategy" | "message" | "evidence" | "conversion";
 
-const STORAGE_KEY = "rv-landing-studio-v3";
+const STORAGE_KEY = "rv-landing-studio-v4";
 
 const safeParse = (raw: string | null): LandingBrief | null => {
   if (!raw) return null;
@@ -253,14 +251,23 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
         const index = Number(indexRaw);
         if (!Number.isInteger(index)) return;
         setBrief((current) => {
-          const vc = VERTICAL_CONTENT[current.verticalId];
           if (field === "step") {
-            const base = current.stepsOverride ?? vc?.steps ?? [];
+            const base = current.stepsOverride ?? [
+              { title: "Cuéntanos el contexto", text: `Recogemos ${current.filter}.` },
+              { title: "Se comprueba el encaje", text: "El responsable debe confirmar alcance, zona y viabilidad antes de ofrecer condiciones." },
+              { title: "Se concreta el siguiente paso", text: "La respuesta debe explicar qué puede avanzar y qué queda pendiente." },
+              { title: "Decides si avanzar", text: "Solo se formaliza lo que ambas partes hayan revisado y aceptado." },
+            ];
             if (!base[index]) return current;
             const next = base.map((step, i) => (i === index ? { ...step, [sub === "title" ? "title" : "text"]: value } : { ...step }));
             return { ...current, stepsOverride: next };
           }
-          const base = current.faqsOverride ?? vc?.faqs ?? [];
+          const base = current.faqsOverride ?? [
+            { question: `¿Qué cuenta como ${current.unit || "oportunidad"} con encaje?`, answer: `Se define usando ${current.filter}. También deben acordarse duplicados, datos incorrectos y casos fuera de zona.` },
+            { question: "¿Qué ocurre después de enviar el formulario?", answer: "El responsable debe explicar el siguiente paso. El envío no confirma precio, disponibilidad ni resultado." },
+            { question: "¿Existe exclusividad?", answer: "Solo si su zona, alcance y duración aparecen de forma expresa en las condiciones aceptadas." },
+            { question: "¿Hay permanencia o renovación automática?", answer: "Duración, renovación y cancelación deben figurar en la propuesta o contrato antes de cualquier pago." },
+          ];
           if (!base[index]) return current;
           const next = base.map((faq, i) => (i === index ? { ...faq, [sub === "question" ? "question" : "answer"]: value } : { ...faq }));
           return { ...current, faqsOverride: next };
@@ -280,10 +287,8 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     if (!hydrated || !ammo) return;
     setBrief((current) => {
       if (current.verticalId !== ammo.verticalId) return current;
-      const wantsCopy = !current.proof.trim() && !current.guarantee.trim();
       const wantsStats = !(current.marketStats || []).length && ammo.stats.length > 0;
-      if (wantsCopy) return applyMarketAmmo(current, ammo);
-      if (wantsStats) return { ...current, marketStats: ammo.stats };
+      if (wantsStats) return applyMarketAmmo(current, ammo);
       return current;
     });
   }, [ammo, hydrated]);
@@ -296,14 +301,11 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
       next = applyStrategyRecommendation(next, recommendation);
       const recipes = buildEvidenceRecipes(verticalIntel, intelligence?.universal, next);
       if (recipes[0]) next = applyEvidenceRecipe(next, recipes[0]);
-      // El express monta desde cero con el estudio del vertical elegido: se retira la
-      // munición del vertical anterior para no mezclar garantías ni cifras ajenas.
-      next = { ...next, proof: "", guarantee: "", marketStats: [] };
+      // El estudio aporta estructura y contexto; la prueba, el precio y la garantía
+      // escritos por el usuario se conservan y nunca se deducen de competidores.
+      next = { ...next, proof: current.proof, guarantee: current.guarantee, price: current.price, marketStats: [] };
       const freshAmmo = buildMarketAmmo(studyVerticalId, verticales, arsenalData, crucesData, next.unit);
       if (freshAmmo) next = applyMarketAmmo(next, freshAmmo);
-      // Los ganadores del estudio publican precio: el express lo hace por defecto si hay
-      // mediana de cuota real y el usuario no ha puesto un precio propio.
-      if (freshAmmo?.priceSuggestion && !current.price.trim()) next = { ...next, price: freshAmmo.priceSuggestion };
       const destination = current.destination.trim();
       return {
         ...next,
@@ -323,7 +325,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     [1, 2, 3].forEach((step) => window.setTimeout(() => setBuildingStep(step), step * 420));
     window.setTimeout(() => {
       setBuildingStep(-1);
-      setToast("Landing montada con el estudio del vertical — lista para afinar o descargar");
+      setToast("Landing montada con estructura del estudio; completa prueba, condiciones y conexiones antes de publicar");
     }, 1850);
   };
 
@@ -348,6 +350,15 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   }, [previewBrief, editMode]);
   const readiness = useMemo(() => landingReadiness(brief), [brief]);
   const publishReady = readiness.publishable;
+  const guaranteeReady = Boolean(brief.guarantee.trim()) && Boolean(readiness.checks.find((check) => check.id === "guarantee")?.ok);
+  const availableVariants = useMemo(
+    () => guaranteeReady ? VARIANT_META : VARIANT_META.filter(([variant]) => variant !== "c"),
+    [guaranteeReady],
+  );
+  useEffect(() => {
+    if (hydrated && brief.variant === "c" && !guaranteeReady)
+      setBrief((current) => ({ ...current, variant: "a" }));
+  }, [brief.variant, guaranteeReady, hydrated]);
   const verticalIntel =
     intelligence?.verticals[studyVerticalId] || intelligence?.verticals.generalista || null;
   const evidenceRecipes = useMemo(
@@ -368,11 +379,11 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const compareHtml = useMemo(
     () =>
       compare
-        ? VARIANT_META.map(([variant]) =>
+        ? availableVariants.map(([variant]) =>
             buildLandingHtml({ ...brief, variant, leadEndpoint: "", gtmId: "" }),
           )
         : null,
-    [brief, compare],
+    [availableVariants, brief, compare],
   );
   const landingCount = intelligence?.universal.roles.landing || 0;
   const exactAutomotiveIntent = brief.verticalId === "coches-motor" && brief.intent !== "vertical-default";
@@ -380,13 +391,18 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const endpointConfigured = /^https:\/\//i.test(brief.leadEndpoint.trim());
   // Contenido efectivo de pasos y FAQs (override del usuario ?? contenido del vertical),
   // para que TODO sea editable antes de descargar.
-  const effectiveSteps = brief.stepsOverride ?? VERTICAL_CONTENT[brief.verticalId]?.steps ?? [
+  const effectiveSteps = brief.stepsOverride ?? [
     { title: "Cuéntanos el contexto", text: `Recogemos ${brief.filter}.` },
-    { title: "Revisamos el encaje", text: "Comprobamos alcance, zona y viabilidad antes de confirmar nada." },
-    { title: "Recibes una respuesta", text: "Te explicamos el siguiente paso y las condiciones que aplican." },
+    { title: "Se comprueba el encaje", text: "El responsable debe confirmar alcance, zona y viabilidad antes de ofrecer condiciones." },
+    { title: "Se concreta el siguiente paso", text: "La respuesta debe explicar qué puede avanzar y qué queda pendiente." },
     { title: "Decides si avanzar", text: "Solo se formaliza lo que ambas partes hayan revisado y aceptado." },
   ];
-  const effectiveFaqs = brief.faqsOverride ?? VERTICAL_CONTENT[brief.verticalId]?.faqs ?? [];
+  const effectiveFaqs = brief.faqsOverride ?? [
+    { question: `¿Qué cuenta como ${brief.unit || "oportunidad"} con encaje?`, answer: `Se define usando ${brief.filter}. También deben acordarse duplicados, datos incorrectos y casos fuera de zona.` },
+    { question: "¿Qué ocurre después de enviar el formulario?", answer: "El responsable debe explicar el siguiente paso. El envío no confirma precio, disponibilidad ni resultado." },
+    { question: "¿Existe exclusividad?", answer: "Solo si su zona, alcance y duración aparecen de forma expresa en las condiciones aceptadas." },
+    { question: "¿Hay permanencia o renovación automática?", answer: "Duración, renovación y cancelación deben figurar en la propuesta o contrato antes de cualquier pago." },
+  ];
   const setStep = (index: number, field: "title" | "text", value: string) => {
     const next = effectiveSteps.map((step, i) => (i === index ? { ...step, [field]: value } : { ...step }));
     update("stepsOverride", next);
@@ -406,26 +422,15 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   );
   const filename = `landing-${slug(brief.service)}-${slug(brief.zone)}.html`;
   const downloadPack = async () => {
-    const files = VARIANT_META.map(([variant, , suffix]) => ({
+    if (!publishReady) {
+      setToast("Resuelve los bloqueos antes de descargar el pack de campaña");
+      return;
+    }
+    const files = availableVariants.map(([variant, , suffix]) => ({
       name: `landing-${variant}-${suffix}-${slug(brief.zone)}.html`,
       content: buildLandingHtml({ ...brief, variant }),
     }));
     files.push({ name: "brief.json", content: JSON.stringify(brief, null, 2) });
-    // Kit de salida al mercado del vertical (guiones, emails, Google/Meta Ads con prompts).
-    let kitIncluido = false;
-    try {
-      const response = await fetch("/data/dossier.json", { cache: "no-store" });
-      if (response.ok) {
-        const dossier = (await response.json()) as { verticales?: Array<{ id: string; label: string; kit?: Kit }> };
-        const entry = (dossier.verticales || []).find((item) => item.id === brief.verticalId);
-        if (entry?.kit) {
-          files.push({ name: `kit-campana-redvitalia-${entry.id}.txt`, content: kitToText(entry.label, entry.kit) });
-          kitIncluido = true;
-        }
-      }
-    } catch {
-      /* Sin dossier el pack sigue siendo válido. */
-    }
     files.push({
       name: "LEEME.txt",
       content: [
@@ -434,9 +439,8 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
         "Contenido:",
         "- landing-a-resultado: el hero vende el resultado.",
         "- landing-b-dolor: el hero abre con el problema que reconoce el cliente.",
-        "- landing-c-compromiso: el hero pone la garantía y las condiciones por delante.",
+        ...(guaranteeReady ? ["- landing-c-compromiso: solo incluida porque la garantía supera los controles de periodo, métrica, condiciones y remedio."] : []),
         "- brief.json: configuración completa; se puede volver a cargar en el Landing Studio.",
-        ...(kitIncluido ? ["- kit-campana-redvitalia: guiones de llamada fría y closer, emails, campaña Google Ads y campaña Meta Ads con los prompts de imagen (los genera ChatGPT)."] : []),
         "",
         "Antes de publicar:",
         "1. Endpoint HTTPS del CRM configurado y probado con una respuesta 2xx.",
@@ -450,9 +454,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
       ].join("\n"),
     });
     downloadBlob(`pack-${slug(brief.service)}-${slug(brief.zone)}.zip`, buildZip(files));
-    setToast(kitIncluido
-      ? "Pack descargado: 3 landings + brief + kit completo de campaña (guiones, emails y ads)"
-      : "Pack de campaña descargado: 3 variantes + brief + instrucciones");
+    setToast(`Pack descargado: ${availableVariants.length} variantes validadas + brief + instrucciones`);
   };
 
   return (
@@ -487,7 +489,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
         <div className={styles.expressIntro}>
           <p>GENERADOR EXPRESS</p>
           <h2 id="express-title">Tu landing completa en un clic</h2>
-          <span>Elige el vertical, pon marca, zona y WhatsApp, y pulsa Generar. La estrategia, la estructura, los textos, la prueba del estudio y la garantía se montan solos con los datos de {verticales?.verticales.length || 11} verticales analizados. Después afinas lo que quieras.</span>
+          <span>Elige el vertical, pon marca, zona y destino, y pulsa Generar. La estructura y los textos parten del estudio de {verticales?.verticales.length || 11} verticales; tu precio, prueba y garantía nunca se inventan ni se copian de un competidor.</span>
         </div>
         <div className={styles.expressForm}>
           <label>Vertical
@@ -611,7 +613,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               <div className={styles.variantCompare}>
                 <button type="button" className={brief.variant === "a" ? styles.selected : ""} onClick={() => update("variant", "a")}><span>A · RESULTADO</span><b>{variantA.headline}</b><small>{variantA.cta}</small></button>
                 <button type="button" className={brief.variant === "b" ? styles.selected : ""} onClick={() => update("variant", "b")}><span>B · DOLOR</span><b>{variantB.headline}</b><small>{variantB.cta}</small></button>
-                <button type="button" className={brief.variant === "c" ? styles.selected : ""} onClick={() => update("variant", "c")}><span>C · COMPROMISO</span><b>{variantC.headline}</b><small>{variantC.cta}</small></button>
+                <button type="button" disabled={!guaranteeReady} title={!guaranteeReady ? "Disponible cuando la garantía define periodo, métrica, condiciones y remedio" : undefined} className={brief.variant === "c" ? styles.selected : ""} onClick={() => update("variant", "c")}><span>C · COMPROMISO</span><b>{guaranteeReady ? variantC.headline : "Requiere una garantía contractual completa"}</b><small>{guaranteeReady ? variantC.cta : "No se genera desde datos de competidores"}</small></button>
               </div>
               <p className={styles.helper}>A, B y C cambian únicamente el encuadre del hero. Arquitectura, oferta, prueba y CTA permanecen iguales para que el test sea interpretable. C brilla cuando hay garantía real.</p>
             </div>
@@ -743,7 +745,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               <div>
                 <b>Montando tu landing…</b>
                 <ol>
-                  {["Leyendo el estudio del vertical", "Eligiendo estructura y enfoque con evidencia", "Inyectando cifras, prueba y garantía", "Renderizando tu página"].map((label, index) => (
+                  {["Leyendo el estudio del vertical", "Eligiendo estructura y enfoque con evidencia", "Añadiendo contexto de mercado seguro", "Renderizando tu página"].map((label, index) => (
                     <li key={label} data-state={buildingStep > index ? "done" : buildingStep === index ? "active" : "wait"}>
                       <i>{buildingStep > index ? "✓" : index + 1}</i>{label}
                     </li>
@@ -754,7 +756,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
           ) : null}
           {compare && compareHtml ? (
             <div className={styles.compareTriple}>
-              {VARIANT_META.map(([variant, label], index) => (
+              {availableVariants.map(([variant, label], index) => (
                 <figure key={variant}>
                   <figcaption>{label}{brief.variant === variant ? " · activa" : ""}</figcaption>
                   <iframe
@@ -771,7 +773,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
           <div className={styles.exportBar}>
             <div><span>ESTADO</span><b>{publishReady ? "Sin bloqueos críticos" : `${readiness.blockers.length} bloqueos por resolver`}</b><small>{publishReady ? "HTML listo para revisión humana y test." : "La exportación sigue disponible para revisión interna, pero todavía no es publicable."}</small></div>
             <div>
-              <button className={styles.packButton} onClick={downloadPack}>Descargar pack de campaña (A/B/C + brief)</button>
+              <button className={styles.packButton} disabled={!publishReady} title={!publishReady ? "Resuelve los bloqueos críticos antes de descargar" : undefined} onClick={downloadPack}>Descargar pack validado ({availableVariants.map(([variant]) => variant.toUpperCase()).join("/")} + brief)</button>
               <button onClick={() => download(filename, exportHtml(), "text/html;charset=utf-8")}>{publishReady ? "Descargar HTML" : "Exportar versión para revisión"}</button>
               <button onClick={async () => { try { await navigator.clipboard.writeText(exportHtml()); setToast("HTML copiado"); } catch { setToast("No se pudo copiar"); } }}>Copiar HTML</button>
               <button onClick={() => download(filename.replace(/\.html$/, ".json"), JSON.stringify(brief, null, 2), "application/json;charset=utf-8")}>Guardar brief</button>
@@ -907,7 +909,7 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
               <h2 id="landing-ammo-title">Rellena el brief con lo mejor de {ammo.label}</h2>
               <p className={styles.ammoNote}>
                 {ammo.n} competidores analizados{ammo.spainN ? ` (${ammo.spainN} en España)` : ""}
-                {ammo.medianEur ? ` · mediana de mercado ${ammo.medianEur} €/mes` : ""}
+                {ammo.medianEur ? ` · mediana numérica observada ${ammo.medianEur} € (modelo por verificar)` : ""}
                 {ammo.slaTop ? ` · SLA más agresivo: ${ammo.slaTop.name} (${ammo.slaTop.sla})` : ""}. Cada pieza cita su fuente.
               </p>
             </div>
@@ -920,48 +922,38 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
                 className={styles.ammoApply}
                 onClick={() => {
                   setBrief((current) => applyMarketAmmo(current, ammo));
-                  setToast("Prueba, garantía y cifras inyectadas desde el estudio del vertical");
+                  setToast("Contexto seguro añadido; prueba, precio y garantía propios se mantienen intactos");
                 }}
               >
-                Inyectar munición en el brief
+                Añadir contexto seguro al brief
               </button>
             </div>
           </header>
           <div className={styles.ammoColumns}>
             <div>
-              <h3>Garantías reales del vertical (clic para usar como base)</h3>
+              <h3>Garantías observadas · referencia, no copiar</h3>
               {ammo.guarantees.length === 0 && <p className={styles.ammoEmpty}>Sin garantías fuertes registradas en este vertical.</p>}
               {ammo.guarantees.map((quote) => (
-                <button
+                <article
                   key={quote.company + quote.text.slice(0, 24)}
-                  type="button"
                   className={styles.ammoQuote}
-                  onClick={() => {
-                    update("guarantee", quote.text);
-                    setToast(`Garantía tomada de ${quote.company} — reescríbela a tu forma antes de publicar`);
-                  }}
                 >
                   <span>“{quote.text}”</span>
                   <small>{quote.company}{quote.extra ? ` · ${quote.extra}` : ""}</small>
-                </button>
+                </article>
               ))}
             </div>
             <div>
-              <h3>Titulares ganadores del vertical (clic para ponerlo en el hero)</h3>
+              <h3>Titulares destacados · referencia, no copiar</h3>
               {ammo.headlines.length === 0 && <p className={styles.ammoEmpty}>Sin titulares de referentes 80+ en este vertical.</p>}
               {ammo.headlines.map((quote) => (
-                <button
+                <article
                   key={quote.company + quote.text.slice(0, 24)}
-                  type="button"
                   className={styles.ammoQuote}
-                  onClick={() => {
-                    update("headlineOverride", quote.text);
-                    setToast(`Titular de ${quote.company} puesto en el hero — reescríbelo a tu marca antes de publicar`);
-                  }}
                 >
                   <span>“{quote.text}”</span>
                   <small>{quote.company}{quote.extra ? ` · ${quote.extra}` : ""}</small>
-                </button>
+                </article>
               ))}
             </div>
           </div>

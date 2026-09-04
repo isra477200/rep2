@@ -344,12 +344,40 @@ export default function OperationFactoryPanel({
               <textarea value={context.proof} onChange={(event) => change("proof", event.target.value)} placeholder="Caso, periodo, muestra, fuente o URL. Déjalo vacío si aún no existe." />
             </label>
             <label>
-              Precio mensual €
+              Honorarios RedVitalia del periodo €
               <input type="number" min="0" value={context.price} onChange={(event) => change("price", event.target.value)} />
             </label>
             <label>
               Objetivo de citas válidas
               <input type="number" min="0" value={context.appointments} onChange={(event) => change("appointments", event.target.value)} />
+            </label>
+            <label>
+              Ticket medio del cliente €
+              <input type="number" min="0" value={context.clientAverageTicket} onChange={(event) => change("clientAverageTicket", event.target.value)} />
+            </label>
+            <label>
+              Margen bruto del cliente %
+              <input type="number" min="0" max="100" value={context.grossMarginPct} onChange={(event) => change("grossMarginPct", event.target.value)} />
+            </label>
+            <label>
+              Cierre estimado %
+              <input type="number" min="0" max="100" value={context.closeRatePct} onChange={(event) => change("closeRatePct", event.target.value)} />
+            </label>
+            <label>
+              Capacidad mensual máxima
+              <input type="number" min="0" value={context.monthlyCapacity} onChange={(event) => change("monthlyCapacity", event.target.value)} />
+            </label>
+            <label>
+              Inversión en medios €
+              <input type="number" min="0" value={context.mediaBudget} onChange={(event) => change("mediaBudget", event.target.value)} />
+            </label>
+            <label>
+              Coste máximo prudente €
+              <input type="number" min="0" value={context.maxAcquisitionCost} onChange={(event) => change("maxAcquisitionCost", event.target.value)} />
+            </label>
+            <label className={styles.wideField}>
+              Modelo comercial
+              <input value={context.commercialModel} onChange={(event) => change("commercialModel", event.target.value)} placeholder="Ej. piloto gestionado" />
             </label>
             <label>
               SLA de primer contacto
@@ -388,6 +416,10 @@ export default function OperationFactoryPanel({
             <label className={styles.wideField}>
               Destino real del CTA
               <input type="url" value={context.contactUrl || ""} onChange={(event) => change("contactUrl", event.target.value)} placeholder="https://wa.me/… o URL del calendario" />
+            </label>
+            <label className={styles.wideField}>
+              Web actual del cliente · referencia, no CTA
+              <input type="url" value={context.currentWebsiteUrl} onChange={(event) => change("currentWebsiteUrl", event.target.value)} placeholder="https://cliente.es" />
             </label>
           </div>
         </div>

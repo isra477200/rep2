@@ -60,6 +60,9 @@ export type OperationsHubProps = {
   onOpenCompany: (companyId: string) => void;
   onOpenLab: () => void;
   onOpenLanding: (brief: LandingBrief) => void;
+  workspaceId?: string;
+  initialContext?: OperationContext | null;
+  onInitialContextApplied?: () => void;
 };
 
 const OPERATIONS_TABS: OperationsTab[] = [
@@ -176,7 +179,7 @@ const buildBattlecard = (company: Company, context: OperationContext) => {
   const zone = context.zone.trim() || "zona por definir";
   const service = context.service.trim() || "servicio por definir";
   const configuredPrice = context.price.trim()
-    ? `${context.price.trim()} €/mes`
+    ? `${context.price.trim()} € durante el periodo acordado`
     : "Por definir";
   const sla = context.slaMinutes.trim();
   const slaLabel = sla ? `${sla} minutos` : "Por definir";
@@ -243,7 +246,11 @@ export default function OperationsHub({
   onOpenCompany,
   onOpenLab,
   onOpenLanding,
+  workspaceId,
+  initialContext,
+  onInitialContextApplied,
 }: OperationsHubProps) {
+  const workspaceKey = workspaceId ? `launch:${workspaceId}` : "current";
   const [tab, setTab] = useState<OperationsTab>(() => {
     if (typeof window === "undefined") return "command";
     const requested = new URLSearchParams(window.location.search).get("tab");
@@ -342,10 +349,27 @@ export default function OperationsHub({
 
   useEffect(() => {
     let active = true;
-    loadOperationsWorkspace<Partial<WorkspaceData>>()
-      .then((parsed) => {
-        if (!active || !parsed) return;
-        applyWorkspace(parsed);
+    setHydrated(false);
+    setSaveStatus("loading");
+    setContext(defaultOperationContext);
+    setReviews({});
+    setExperiments([]);
+    loadOperationsWorkspace<Partial<WorkspaceData>>(workspaceKey)
+      .then(async (parsed) => {
+        if (!active) return;
+        if (initialContext) {
+          const seededWorkspace: WorkspaceData = {
+            context: { ...defaultOperationContext, ...parsed?.context, ...initialContext },
+            reviews: parsed?.reviews && typeof parsed.reviews === "object" ? parsed.reviews : {},
+            experiments: Array.isArray(parsed?.experiments) ? parsed.experiments : [],
+          };
+          await saveOperationsWorkspace(seededWorkspace, workspaceKey);
+          if (!active) return;
+          applyWorkspace(seededWorkspace);
+          onInitialContextApplied?.();
+          return;
+        }
+        if (parsed) applyWorkspace(parsed);
       })
       .finally(() => {
         if (active) {
@@ -356,7 +380,7 @@ export default function OperationsHub({
     return () => {
       active = false;
     };
-  }, [applyWorkspace]);
+  }, [applyWorkspace, initialContext, onInitialContextApplied, workspaceKey]);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -366,12 +390,12 @@ export default function OperationsHub({
         context,
         reviews,
         experiments,
-      } satisfies WorkspaceData).then((saved) =>
+      } satisfies WorkspaceData, workspaceKey).then((saved) =>
         setSaveStatus(saved ? "saved" : "error"),
       );
     }, 350);
     return () => window.clearTimeout(timeout);
-  }, [context, experiments, hydrated, reviews]);
+  }, [context, experiments, hydrated, reviews, workspaceKey]);
 
   const canonical = useMemo(() => {
     if (!coverage)

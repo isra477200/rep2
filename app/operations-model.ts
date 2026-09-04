@@ -71,6 +71,7 @@ export type Experiment = {
 };
 
 export type OperationContext = {
+  launchId: string;
   name: string;
   market: string;
   vertical: string;
@@ -85,6 +86,14 @@ export type OperationContext = {
   formFields: string;
   price: string;
   appointments: string;
+  clientAverageTicket: string;
+  grossMarginPct: string;
+  closeRatePct: string;
+  monthlyCapacity: string;
+  mediaBudget: string;
+  maxAcquisitionCost: string;
+  commercialModel: string;
+  currentWebsiteUrl: string;
   slaMinutes: string;
   guarantee: "none" | "written" | "measurable" | "remedy";
   exclusivity: "none" | "lead" | "territory";
@@ -151,6 +160,7 @@ export type ExperimentEvaluation = {
 };
 
 export const defaultOperationContext: OperationContext = {
+  launchId: "",
   name: "Nueva operación RedVitalia",
   market: "España",
   vertical: "",
@@ -165,6 +175,14 @@ export const defaultOperationContext: OperationContext = {
   formFields: "5",
   price: "",
   appointments: "",
+  clientAverageTicket: "",
+  grossMarginPct: "",
+  closeRatePct: "",
+  monthlyCapacity: "",
+  mediaBudget: "",
+  maxAcquisitionCost: "",
+  commercialModel: "",
+  currentWebsiteUrl: "",
   slaMinutes: "",
   guarantee: "none",
   exclusivity: "none",
@@ -725,8 +743,14 @@ Estado: propuesta editorial para test. No contiene resultados de campaña.
 - Resultado esperado: ${result}
 - Canal: ${context.channel}
 - Objetivo: ${safeText(context.objective, "Validar una oferta antes de escalar")}
-- Precio configurado: ${price === "precio por definir" ? price : `${price} €/mes`}
+- Honorarios configurados: ${price === "precio por definir" ? price : `${price} € durante el periodo acordado`}
 - Objetivo operativo configurado: ${appointments} citas válidas
+- Modelo comercial: ${safeText(context.commercialModel, "por definir")}
+- Ticket medio del cliente: ${context.clientAverageTicket.trim() ? `${context.clientAverageTicket} €` : "por validar"}
+- Margen bruto / cierre estimado: ${context.grossMarginPct.trim() ? `${context.grossMarginPct}%` : "por validar"} / ${context.closeRatePct.trim() ? `${context.closeRatePct}%` : "por validar"}
+- Capacidad mensual: ${safeText(context.monthlyCapacity, "por validar")}
+- Inversión en medios: ${context.mediaBudget.trim() ? `${context.mediaBudget} €` : "por validar"}
+- Coste máximo prudente: ${context.maxAcquisitionCost.trim() ? `${context.maxAcquisitionCost} €` : "por validar"}
 - SLA propuesto: primer contacto en ${slaLabel}
 - Garantía propuesta: ${guaranteeText(context.guarantee)}
 - Exclusividad propuesta: ${exclusivityText(context.exclusivity)}
@@ -737,7 +761,7 @@ RedVitalia instala un sistema de ${service} para ${vertical} en ${zone}, con cri
 
 ## Oferta · propuesta editorial
 
-${offer}. Objetivo de ${appointments} citas válidas bajo criterios firmados. Inversión de ${price === "precio por definir" ? price : `${price} €/mes`}. ${guaranteeText(context.guarantee)}. ${exclusivityText(context.exclusivity)}. El objetivo es una condición de diseño del test, no un resultado histórico.
+${offer}. Objetivo de ${appointments} citas válidas bajo criterios firmados. Honorarios de ${price === "precio por definir" ? price : `${price} € durante el periodo acordado`}. ${guaranteeText(context.guarantee)}. ${exclusivityText(context.exclusivity)}. El objetivo es una condición de diseño del test, no un resultado histórico.
 
 Prueba publicable configurada: ${proof}
 
@@ -904,7 +928,7 @@ export const buildOperationLandingBrief = (
   return {
     ...preset,
     verticalId,
-    brand: "RedVitalia",
+    brand: safeText(context.legalName, "RedVitalia"),
     zone,
     service,
     audience: safeText(
@@ -925,7 +949,7 @@ export const buildOperationLandingBrief = (
       `${service}, cualificación, entrega trazable y revisión semanal del recorrido comercial.`,
     ),
     proof: context.proof.trim(),
-    price: context.price.trim() ? `${context.price.trim()} €/mes` : "",
+    price: context.price.trim() ? `${context.price.trim()} € durante el periodo acordado` : "",
     guarantee,
     ctaLabel: `Comprobar encaje en ${zone}`,
     ctaMode,

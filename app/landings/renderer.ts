@@ -231,7 +231,7 @@ export const buildLandingHtmlV3 = (
 
   const media = heroImageUrl
     ? "<figure class=\"hero-media\"><img src=\"" + esc(heroImageUrl) + "\" alt=\"" + service + " en " + zone + "\" width=\"960\" height=\"540\" fetchpriority=\"high\" decoding=\"async\"></figure>"
-    : "<div class=\"process-trust\" aria-label=\"Cómo abordamos cada solicitud\"><div><b>Revisión humana</b><span>Cada solicitud la valora una persona, no un autoresponder.</span></div><div><b>Alcance por escrito</b><span>Zona, condiciones y responsabilidades, antes de pagar nada.</span></div><div><b>Tú tienes la última palabra</b><span>Nada queda aceptado por enviar el formulario.</span></div></div>";
+    : "<div class=\"process-trust\" aria-label=\"Qué debe quedar claro antes de avanzar\"><div><b>Criterio visible</b><span>La página explica qué información se usa para valorar el encaje.</span></div><div><b>Condiciones por confirmar</b><span>Zona, precio y responsabilidades deben quedar por escrito.</span></div><div><b>Sin aceptación automática</b><span>Enviar el formulario no supone contratar ni aceptar una oferta.</span></div></div>";
 
   const definitions = fieldDefinitions(service, zone);
   const requestedPlan = context.automotive
@@ -247,7 +247,7 @@ export const buildLandingHtmlV3 = (
     : "Acepto que " + brand + " contacte conmigo para responder a esta solicitud.";
   const formAction = endpoint ? esc(endpoint) : "#";
   const trustPills = listItems(
-    ["Respuesta revisada por una persona", "Condiciones por escrito antes de pagar", "Sin letra pequeña escondida", ...(privacyUrl ? ["Responsable y privacidad visibles"] : [])],
+    ["Formulario con consentimiento", "Condiciones por confirmar por escrito", "El envío no confirma la contratación", ...(privacyUrl ? ["Responsable y privacidad visibles"] : [])],
     "proof-pills",
   );
 
@@ -267,8 +267,8 @@ export const buildLandingHtmlV3 = (
   const verticalContent = VERTICAL_CONTENT[brief.verticalId] || null;
   const genericSteps = [
     { title: "Cuéntanos el contexto", text: "Recogemos " + clean(brief.filter) + "." },
-    { title: "Revisamos el encaje", text: "Comprobamos alcance, zona y viabilidad antes de confirmar nada." },
-    { title: "Recibes una respuesta", text: "Te explicamos el siguiente paso y las condiciones que aplican." },
+    { title: "Se comprueba el encaje", text: "El responsable debe confirmar alcance, zona y viabilidad antes de ofrecer condiciones." },
+    { title: "Se concreta el siguiente paso", text: "La respuesta debe explicar qué puede avanzar y qué queda pendiente." },
     { title: "Decides si avanzar", text: "Solo se formaliza lo que ambas partes hayan revisado y aceptado." },
   ];
   const stepsOverride = (brief.stepsOverride || []).filter((step) => clean(step?.title) && clean(step?.text));
@@ -276,7 +276,7 @@ export const buildLandingHtmlV3 = (
     ? context.automotive.steps
     : stepsOverride.length >= 3
       ? stepsOverride.slice(0, 4)
-      : verticalContent?.steps || genericSteps;
+      : genericSteps;
   const genericFaqs = [
     {
       question: "¿Qué cuenta como " + singular(brief.unit) + " con encaje?",
@@ -300,11 +300,11 @@ export const buildLandingHtmlV3 = (
     ? context.automotive.faqs
     : faqsOverride.length >= 2
       ? faqsOverride.slice(0, 4)
-      : verticalContent?.faqs || genericFaqs;
+      : genericFaqs;
 
   const problemSection =
     "<section class=\"section problem\"><div class=\"wrap split\"><div><p class=\"eyebrow\">LA SITUACIÓN REAL</p><h2>Sabes lo que cuesta <span data-edit=\"pain\">" + pain + "</span></h2></div><div class=\"problem-copy\"><p data-edit=\"problem\">" +
-    (clean(brief.problemOverride) ? esc(brief.problemOverride) : verticalContent ? esc(verticalContent.problema) : "No es falta de trabajo: es que sin criterio claro cada intento sale caro en tiempo, dinero y confianza.") +
+    (clean(brief.problemOverride) ? esc(brief.problemOverride) : "Cuando " + pain + ", cada intento consume tiempo, inversión y confianza sin dejar claro qué corregir.") +
     "</p><p>Aquí el objetivo es concreto: <strong>" + result + "</strong>. Y el camino está a la vista — sabrás qué se revisa, qué se promete y qué no, antes de dar ningún paso.</p></div></div></section>";
   const qualificationSection =
     "<section class=\"section qualification\"><div class=\"wrap split\"><div><p class=\"eyebrow\">ENCAJE</p><h2>Comprueba si esta es la ruta correcta para tu caso</h2><p>Está pensada para " + audience + ".</p></div><div class=\"fit-columns\"><div class=\"fit-box\"><b>Sí revisamos</b>" + listItems(accepted, "check-list") + "</div><div class=\"fit-box\"><b>No es esta ruta</b>" + listItems(rejected, "cross-list") + "</div></div></div></section>";
@@ -348,7 +348,7 @@ export const buildLandingHtmlV3 = (
     : "";
 
   const compareSection =
-    "<section class=\"section compare\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">LA DIFERENCIA</p><h2>Lo que te suelen vender, frente a cómo trabajamos</h2></div><div class=\"compare-grid\"><div class=\"compare-col lose\"><header>El proveedor típico</header><ul><li>Promete volumen sin comprobar tu zona ni tu capacidad real.</li><li>El precio aparece después de firmar, con sorpresas dentro.</li><li>Permanencias y renovaciones escondidas en la letra pequeña.</li><li>El mismo contacto se revende a varios competidores a la vez.</li><li>Responde un embudo automático; nadie estudia tu caso.</li></ul></div><div class=\"compare-col win\"><header>" + brand + "</header><ul><li>Zona y capacidad comprobadas antes de prometer nada.</li><li>Alcance, condiciones y responsabilidades por escrito y por adelantado.</li><li>Sin permanencia impuesta: la renovación se gana con resultados.</li><li>Cada " + esc(singular(brief.unit || "oportunidad")) + " se trata como tuyo, no como inventario.</li><li>Revisión humana de cada solicitud y respuesta con criterio.</li></ul></div></div></div></section>";
+    "<section class=\"section compare\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">ANTES DE ACTIVAR</p><h2>Cinco decisiones que deben quedar por escrito</h2></div><div class=\"compare-grid\"><div class=\"compare-col lose\"><header>Pendiente de definir</header><ul><li>Qué cuenta como resultado u oportunidad válida.</li><li>Qué zona, servicio y perfil quedan dentro.</li><li>Qué inversión, duración e impuestos aplican.</li><li>Quién recibe los datos y con qué finalidad.</li><li>Cómo se registran incidencias y resultados.</li></ul></div><div class=\"compare-col win\"><header>Documento final</header><ul><li>Criterios de aceptación y exclusiones concretos.</li><li>Regla de reparto o exclusividad, si existe.</li><li>Renovación, cancelación y responsabilidades visibles.</li><li>Privacidad, conservación y canal de oposición.</li><li>Métricas y próxima decisión acordadas.</li></ul></div></div></div></section>";
 
   const faqSection =
     "<section class=\"section faq\" id=\"faq\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow\">PREGUNTAS CLAVE</p><h2>Respuestas antes de pedirte que avances</h2></div>" +
@@ -527,7 +527,7 @@ export const buildLandingHtmlV3 = (
     privacy +
     "</span></label></div><button class=\"button\" type=\"submit\">" +
     cta +
-    "</button><p class=\"form-note\">Enviar estos datos no confirma precio, disponibilidad ni aceptación del caso.</p><ul class=\"form-trust\"><li>Conexión cifrada</li><li>Tus datos no se revenden</li><li>Respuesta con criterio, no automática</li></ul><p class=\"form-status\" role=\"status\" aria-live=\"polite\"></p></form><!-- Formulario de " +
+    "</button><p class=\"form-note\">Enviar estos datos no confirma precio, disponibilidad ni aceptación del caso.</p><ul class=\"form-trust\"><li>Conexión cifrada</li><li>Uso de datos explicado en privacidad</li><li>Respuesta sujeta al proceso indicado</li></ul><p class=\"form-status\" role=\"status\" aria-live=\"polite\"></p></form><!-- Formulario de " +
     formFieldsTarget +
     " campos adaptado al objetivo «" +
     (brief.objective === "qualified"
@@ -557,7 +557,7 @@ export const buildLandingHtmlV3 = (
     architectureSections[brief.architecture],
     renderedSections,
     compareSection,
-    "<section class=\"section final-cta\"><div class=\"wrap\"><p class=\"eyebrow\">SIGUIENTE PASO</p><h2>" + esc(cap(clean(brief.result || "Una respuesta clara y un siguiente paso útil"))) + "</h2><p>Dos minutos de contexto por tu parte. Una revisión honesta por la nuestra. Sin compromiso hasta que veas la propuesta.</p><a class=\"button\" href=\"#lead-form\">" + cta + "</a></div></section></main>",
+    "<section class=\"section final-cta\"><div class=\"wrap\"><p class=\"eyebrow\">SIGUIENTE PASO</p><h2>" + esc(cap(clean(brief.result || "Una respuesta clara y un siguiente paso útil"))) + "</h2><p>Aporta el contexto mínimo para recibir una respuesta basada en tu caso. El envío no confirma contratación, precio ni resultado.</p><a class=\"button\" href=\"#lead-form\">" + cta + "</a></div></section></main>",
     "<footer class=\"site-footer\"><div class=\"wrap footer-grid\"><div>" + (isRedVitalia && !logoUrl ? "<div class=\"footer-logo\">" + rvLogo("#0f172a").replace("rvlg", "rvlgf") + "</div>" : "") + "<b>" + legalIdentity + "</b><br>" + service + " · " + zone + "</div><nav>" + legalLinks + consentManager + "</nav></div></footer>",
     "<a class=\"button mobile-cta\" href=\"#lead-form\">" + cta + "</a>",
     consentBanner,
