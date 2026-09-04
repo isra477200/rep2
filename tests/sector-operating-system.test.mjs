@@ -34,3 +34,15 @@ test("separa la base preparada del trabajo realmente ejecutado", () => {
   assert.ok(source.includes("Hecho por el equipo"));
   assert.ok(source.includes("Los datos competitivos orientan hipótesis"));
 });
+
+test("el kit se puede activar con datos de cliente y exportar como entregable", () => {
+  for (const phrase of [
+    "Empresa cliente",
+    "Zona prioritaria",
+    "Oferta a vender",
+    "datos mínimos para lanzar",
+    "rv-sector-client-briefs-v1",
+    "Descargar dossier HTML",
+    "Anuncios iniciales",
+  ]) assert.ok(source.includes(phrase), `Falta la capacidad de activación: ${phrase}`);
+});

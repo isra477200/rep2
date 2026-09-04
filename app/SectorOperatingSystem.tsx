@@ -195,6 +195,7 @@ const profiles: Record<string, SectorProfile> = {
 };
 
 const fallbackProfile = profiles.generalista;
+const emptyBrief: ClientBrief = { company: "", contact: "", zone: "", offer: "", price: "", calendar: "", url: "" };
 
 const stageNames = ["Preparar", "Prospectar", "Llamar", "Diagnosticar", "Proponer", "Lanzar", "Operar", "Medir"];
 
@@ -235,12 +236,20 @@ function buildPack(vertical: Vertical, profile: SectorProfile, brief: ClientBrie
     "10. Piloto — una hipótesis, mínimos, revisión y decisión de escala",
   ];
   const landing = `LANDING LISTA PARA MAQUETAR\n\nH1\n${profile.landing}\n\nSUBTÍTULO\nTe explicamos el proceso, filtramos lo que encaja y te contactamos en el horario que elijas. Sin promesas imposibles ni letra pequeña.\n\n3 BENEFICIOS\n• Respuesta de un especialista de ${brief.company || "la empresa"}.\n• Criterios claros antes de pedirte datos.\n• Próximo paso y condiciones visibles.\n\nPRUEBA\n${profile.proof}.\n\nCTA\n${brief.offer ? `Solicitar información sobre ${brief.offer}` : "Quiero que me contacten"}\n\nFORMULARIO\n${profile.formFields.map((field) => `• ${field}`).join("\n")}\n\nAVISO\nTe contactaremos para responder a tu solicitud. No se garantiza resultado, precio ni disponibilidad hasta validar tu caso.\n\nPÁGINA DE GRACIAS\nHemos recibido tus datos. ${brief.company || "El equipo"} revisará la solicitud y te contactará en ${brief.calendar || "el horario indicado"}.`;
+  const campaign = profile.angles.map((angle, index) => `ANUNCIO ${String.fromCharCode(65 + index)} · ${angle}\n\nTITULAR\n${angle} en ${brief.zone || "tu zona"}\n\nTEXTO PRINCIPAL\n¿Buscas ${brief.offer || "una solución concreta"}? ${profile.landing.replace("[ZONA]", brief.zone || "tu zona")} Te explicamos el proceso y te contactamos con el siguiente paso claro.\n\nCTA\nSolicitar información\n\nFILTRO\n${profile.lead}`).join("\n\n────────────────────────\n\n");
   const callScript = fill(`APERTURA\n“${profile.opening}”\n\nPUENTE\n“No quiero venderte publicidad sin saber si encaja. En dos minutos: ¿qué queréis vender más, dónde y cuánta capacidad tenéis?”\n\nPREGUNTAS\n${profile.discovery.map((item, index) => `${index + 1}. ${item}`).join("\n")}\n\nCIERRE\n“Si los números y la capacidad encajan, preparo un piloto con definición de oportunidad válida, volumen máximo y medición hasta venta. ¿Lo revisamos juntos en una reunión de 25 minutos?”`);
   const proposal = fill(`PROPUESTA PILOTO · ${sector.toUpperCase()}\n\nCliente\n${brief.company || "[EMPRESA]"}\n\nObjetivo\nGenerar ${profile.outcome}.\n\nOportunidad válida\n${profile.lead}.\n\nOferta a priorizar\n${brief.offer || "[OFERTA]"}${brief.price ? `\nPrecio o ticket de referencia: ${brief.price}` : ""}\n\nIncluye\nEstrategia, campaña, creatividades, landing, formulario, tracking, integración, guiones, seguimiento y revisión semanal.\n\nAntes de fijar precio o volumen\nValidaremos ticket, margen, capacidad, zona, SLA, exclusividad y datos históricos. Ninguna cifra se presenta como promesa hasta aprobar esos datos.\n\nPrueba necesaria\n${profile.proof}.\n\nPiloto\nUna oferta, un público, una variable principal y criterios de decisión acordados por escrito.`);
   const followUp = fill(`ASUNTO: Propuesta de captación para ${sector}\n\nHola, [NOMBRE].\n\nTe resumo lo acordado: queremos generar ${profile.outcome}, limitando el piloto a ${brief.zone || "la zona acordada"} y considerando válida únicamente una oportunidad que cumpla: ${profile.lead}.\n\nAntes de lanzar confirmaremos precio, exclusiones, responsable de contacto, SLA, privacidad y medición hasta venta. Te adjunto la presentación, la propuesta y la lista de materiales necesarios.\n\nSiguiente paso: reunión de validación de 25 minutos el ${brief.calendar || "[FECHA]"}.`);
   const whatsapp = fill(`Hola, [NOMBRE]. Te acabo de enviar el resumen del piloto para ${sector}. Lo importante: definición de oportunidad válida, capacidad máxima y medición hasta venta quedan por escrito antes de invertir. ¿Te encaja revisar esos tres puntos el ${brief.calendar || "[DÍA/HORA]"}?`);
-  const markdown = `# Kit RedVitalia · ${brief.company || sector}\n\n## Ficha de activación\nEmpresa: ${brief.company || "[EMPRESA]"}\nContacto: ${brief.contact || "[NOMBRE]"}\nZona: ${brief.zone || "[ZONA]"}\nOferta: ${brief.offer || "[OFERTA]"}\nPrecio/ticket: ${brief.price || "[PRECIO]"}\nCalendario: ${brief.calendar || "[CALENDARIO]"}\nURL: ${brief.url || "[URL]"}\n\n## Evidencia disponible\n${stats}\n\n## Cliente objetivo\n${profile.buyer}\n\n## Problema de entrada\n${profile.trigger}\n\n## Resultado propuesto\n${profile.outcome}\n\n## Definición de oportunidad válida\n${profile.lead}\n\n## Guion de llamada\n${callScript}\n\n## Presentación\n${slides.map((slide) => `- ${slide}`).join("\n")}\n\n## Propuesta\n${proposal}\n\n## Email de seguimiento\n${followUp}\n\n## WhatsApp\n${whatsapp}\n\n## Campaña inicial\n${profile.angles.map((angle, index) => `${index + 1}. ${angle}`).join("\n")}\n\n## Landing completa\n${landing}\n\n## Materiales a solicitar\n${profile.assets.map((asset) => `- ${asset}`).join("\n")}\n\n## Checklist operativo\n${operationalTasks.map((task) => `- [ ] ${task}`).join("\n")}\n\n## Límites\nLos datos competitivos orientan hipótesis. Precio, volumen, conversión y rentabilidad se validan con datos propios del cliente y un piloto medido.`;
-  return { stats, slides, callScript, proposal, followUp, whatsapp, landing, markdown };
+  const escapeHtml = (value: string) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+  const htmlSections = [
+    ["Activación", `Empresa: ${brief.company || "[EMPRESA]"}\nContacto: ${brief.contact || "[NOMBRE]"}\nZona: ${brief.zone || "[ZONA]"}\nOferta: ${brief.offer || "[OFERTA]"}\nPrecio/ticket: ${brief.price || "[PRECIO]"}`],
+    ["Guion de llamada", callScript], ["Presentación", slides.join("\n")], ["Propuesta piloto", proposal],
+    ["Landing", landing], ["Anuncios iniciales", campaign], ["Seguimiento", `${followUp}\n\n${whatsapp}`],
+  ].map(([title, body]) => `<section><h2>${escapeHtml(title)}</h2><pre>${escapeHtml(body)}</pre></section>`).join("\n");
+  const dossierHtml = `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Kit RedVitalia · ${escapeHtml(brief.company || sector)}</title><style>body{font-family:Inter,Arial,sans-serif;max-width:960px;margin:0 auto;padding:48px 28px;color:#10231d;background:#f4f7f5}header{background:#10231d;color:#fff;border-radius:20px;padding:28px;margin-bottom:18px}h1{margin:0 0 8px;font-size:32px}h2{font-size:19px;margin:0 0 12px;color:#0d6b4f}section{background:#fff;border:1px solid #dce5e1;border-radius:15px;padding:22px;margin:12px 0}pre{font-family:inherit;white-space:pre-wrap;line-height:1.6;margin:0;font-size:15px}small{color:#66756f}</style></head><body><header><small>REDVITALIA · KIT DE ACTIVACIÓN</small><h1>${escapeHtml(brief.company || sector)}</h1><div>${escapeHtml(sector)} · ${escapeHtml(brief.zone || "zona por validar")}</div></header>${htmlSections}</body></html>`;
+  const markdown = `# Kit RedVitalia · ${brief.company || sector}\n\n## Ficha de activación\nEmpresa: ${brief.company || "[EMPRESA]"}\nContacto: ${brief.contact || "[NOMBRE]"}\nZona: ${brief.zone || "[ZONA]"}\nOferta: ${brief.offer || "[OFERTA]"}\nPrecio/ticket: ${brief.price || "[PRECIO]"}\nCalendario: ${brief.calendar || "[CALENDARIO]"}\nURL: ${brief.url || "[URL]"}\n\n## Evidencia disponible\n${stats}\n\n## Cliente objetivo\n${profile.buyer}\n\n## Problema de entrada\n${profile.trigger}\n\n## Resultado propuesto\n${profile.outcome}\n\n## Definición de oportunidad válida\n${profile.lead}\n\n## Guion de llamada\n${callScript}\n\n## Presentación\n${slides.map((slide) => `- ${slide}`).join("\n")}\n\n## Propuesta\n${proposal}\n\n## Email de seguimiento\n${followUp}\n\n## WhatsApp\n${whatsapp}\n\n## Anuncios iniciales\n${campaign}\n\n## Landing completa\n${landing}\n\n## Materiales a solicitar\n${profile.assets.map((asset) => `- ${asset}`).join("\n")}\n\n## Checklist operativo\n${operationalTasks.map((task) => `- [ ] ${task}`).join("\n")}\n\n## Límites\nLos datos competitivos orientan hipótesis. Precio, volumen, conversión y rentabilidad se validan con datos propios del cliente y un piloto medido.`;
+  return { stats, slides, callScript, proposal, followUp, whatsapp, landing, campaign, markdown, dossierHtml };
 }
 
 export default function SectorOperatingSystem({ data, onOpenFactory, onOpenAdLab, onOpenLandings, onOpenCompany }: SectorOperatingSystemProps) {
@@ -248,7 +257,7 @@ export default function SectorOperatingSystem({ data, onOpenFactory, onOpenAdLab
   const [activeStage, setActiveStage] = useState("Preparar");
   const [completed, setCompleted] = useState<Record<string, boolean>>({});
   const [copied, setCopied] = useState("");
-  const [brief, setBrief] = useState<ClientBrief>({ company: "", contact: "", zone: "", offer: "", price: "", calendar: "", url: "" });
+  const [brief, setBrief] = useState<ClientBrief>(emptyBrief);
   const vertical = data.verticales.find((item) => item.id === selectedId) || data.verticales[0];
   const profile = profiles[vertical?.id] || fallbackProfile;
   const pack = useMemo(() => buildPack(vertical, profile, brief), [profile, vertical, brief]);
@@ -267,6 +276,18 @@ export default function SectorOperatingSystem({ data, onOpenFactory, onOpenAdLab
     }
     return () => window.clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      try {
+        const saved = JSON.parse(window.localStorage.getItem("rv-sector-client-briefs-v1") || "{}") as Record<string, ClientBrief>;
+        setBrief(saved[selectedId] || emptyBrief);
+      } catch {
+        setBrief(emptyBrief);
+      }
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [selectedId]);
 
   const toggleTask = (key: string, done: boolean) => {
     setCompleted((current) => {
@@ -306,6 +327,31 @@ export default function SectorOperatingSystem({ data, onOpenFactory, onOpenAdLab
     URL.revokeObjectURL(url);
   };
 
+  const downloadHtml = () => {
+    const blob = new Blob([pack.dossierHtml], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = `redvitalia-${vertical.id}-kit.html`;
+    anchor.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const updateBrief = (key: keyof ClientBrief, value: string) => {
+    setBrief((current) => {
+      const next = { ...current, [key]: value };
+      try {
+        const saved = JSON.parse(window.localStorage.getItem("rv-sector-client-briefs-v1") || "{}") as Record<string, ClientBrief>;
+        window.localStorage.setItem("rv-sector-client-briefs-v1", JSON.stringify({ ...saved, [selectedId]: next }));
+      } catch {
+        // La activación sigue funcionando durante la sesión aunque el almacenamiento esté bloqueado.
+      }
+      return next;
+    });
+  };
+
+  const readyCount = [brief.company, brief.zone, brief.offer].filter(Boolean).length;
+
   const cards = [
     { stage: "Preparar", label: "Brief del nicho", eyebrow: "BASE ESTRATÉGICA LISTA", body: `Cliente: ${profile.buyer}.\n\nDisparador: ${profile.trigger}.\n\nResultado: ${profile.outcome}.\n\nOportunidad válida: ${profile.lead}.`, action: "brief" },
     { stage: "Prospectar", label: "Lista y criterio de prospección", eyebrow: "CRITERIO LISTO · DATOS POR CARGAR", body: `Buscar ${profile.buyer}. Priorizar señales de ${profile.trigger}. Excluir negocios sin capacidad, fuera de zona o sin una oferta prioritaria. Campos mínimos: empresa, decisor, cargo, teléfono, email, zona, señal observada, fuente y próximo paso.`, action: "lista" },
@@ -332,7 +378,8 @@ export default function SectorOperatingSystem({ data, onOpenFactory, onOpenAdLab
         </div>
         <div className={styles.topActions}>
           <button type="button" onClick={() => copy("paquete", pack.markdown)}>{copied === "paquete" ? "Copiado" : "Copiar paquete"}</button>
-          <button type="button" onClick={download}>Descargar paquete</button>
+          <button type="button" onClick={download}>Descargar Markdown</button>
+          <button type="button" onClick={downloadHtml}>Descargar dossier HTML</button>
           <button type="button" className={styles.primary} onClick={onOpenFactory}>Crear campaña →</button>
         </div>
       </header>
@@ -354,12 +401,12 @@ export default function SectorOperatingSystem({ data, onOpenFactory, onOpenAdLab
           </section>
 
           <section className={styles.clientBrief} aria-labelledby="client-brief-title">
-            <header><div><p>ACTIVACIÓN REDVITALIA</p><h3 id="client-brief-title">Aterriza el kit a un cliente real</h3></div><span>Rellena lo que sepas; lo demás queda marcado para validar en la llamada.</span></header>
+            <header><div><p>ACTIVACIÓN REDVITALIA</p><h3 id="client-brief-title">Aterriza el kit a un cliente real</h3></div><span><strong>{readyCount}/3</strong> datos mínimos para lanzar · se guarda por nicho automáticamente</span></header>
             <div className={styles.briefGrid}>
               {([[
                 "company", "Empresa cliente", "Ej. Inmobiliaria Norte"
               ], ["contact", "Persona de contacto", "Ej. Marta García"], ["zone", "Zona prioritaria", "Ej. Madrid norte"], ["offer", "Oferta a vender", "Ej. Valoración gratuita"], ["price", "Ticket o precio", "Ej. 350.000 €"], ["calendar", "Próximo paso / fecha", "Ej. martes 10:00"], ["url", "Web o landing actual", "Ej. https://…"]] as Array<[keyof ClientBrief, string, string]>).map(([key, label, placeholder]) => (
-                <label key={key}><span>{label}</span><input value={brief[key]} placeholder={placeholder} onChange={(event) => setBrief((current) => ({ ...current, [key]: event.target.value }))} /></label>
+                <label key={key}><span>{label}{["company", "zone", "offer"].includes(key) ? " · mínimo" : ""}</span><input value={brief[key]} placeholder={placeholder} onChange={(event) => updateBrief(key, event.target.value)} /></label>
               ))}
             </div>
           </section>
