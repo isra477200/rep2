@@ -10,8 +10,10 @@
  document.body.appendChild(host);
  const drawer=host.querySelector('.rv-drawer'),launcher=host.querySelector('.rv-launcher');let opener=launcher;
  const bridge=window.RedVitaliaNativeBridge?.create({forms,locationId:'KdwdmsNodpCq6RYicQ1N',eventTarget:window,pageURL:location.protocol==='file:'?'https://redvitalia.srv1480016.hstgr.cloud/abogados/redvitalia.html':location.href,getConsent:()=>({hasResponded:window.RedVitaliaMetrics?.hasResponded===true,analytics:window.RedVitaliaMetrics?.consent===true}),onReady:({frameId})=>{const frame=document.getElementById(frameId);if(frame){frame.dataset.ready='true';const entry=instances.find(e=>Object.values(e.frames).includes(frame));if(entry?.current===frame)frame.hidden=false;entry?.slot.querySelector('[data-native-loading]')?.setAttribute('hidden','');}},onAck:({channel})=>{
-  try{sessionStorage.setItem('redvitalia.contact-receipt.v1',JSON.stringify({id:crypto.randomUUID(),channel,at:Date.now()}));}catch{}
-  track('generate_lead',{contact_channel:channel});
+  // The provider redirects immediately. Defer measurement to the confirmed receipt
+  // page so navigation cannot discard the event before Analytics loads/sends it.
+  try{sessionStorage.setItem('redvitalia.contact-receipt.v1',JSON.stringify({id:crypto.randomUUID(),channel,at:Date.now(),analyticsEligible:window.RedVitaliaMetrics?.consent===true}));}
+  catch{track('generate_lead',{contact_channel:channel});}
  }});
  document.addEventListener('rv-consent-change',()=>bridge?.refreshConsent());
  function mount(slot,lazy=false){
