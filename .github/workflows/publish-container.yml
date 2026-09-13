@@ -99,7 +99,7 @@ jobs:
                 echo "Hostinger action $action_id failed."
                 exit 1
                 ;;
-              created|sent|delayed)
+              created|sent|delayed|started)
                 ;;
               *)
                 echo "Hostinger action $action_id returned unknown state: $action_state"

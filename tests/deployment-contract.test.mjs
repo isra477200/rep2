@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
@@ -58,4 +59,27 @@ test("missing deployment credentials never report a verified release", () => {
   assert.match(missingKey[1], /GITHUB_STEP_SUMMARY/);
   assert.match(missingKey[1], /exit 1/);
   assert.doesNotMatch(missingKey[1], /exit 0/);
+});
+
+test("Hostinger started actions keep polling, while errors still stop the deployment", () => {
+  const actionCase = workflow.match(/case "\$action_state" in[\s\S]*?\n\s*esac/);
+  assert.ok(actionCase, "the real deployment status handler must be present");
+  const bash = process.platform === "win32" ? "C:/Program Files/Git/bin/bash.exe" : "bash";
+  const script = `action_id=fixture
+for action_state in "$@"; do
+${actionCase[0]}
+printf 'WAIT_FOR_ACTION\\n'
+done`;
+  const run = (...states) => spawnSync(bash, ["--noprofile", "--norc", "-c", script, "status-test", ...states], { encoding: "utf8" });
+
+  const completed = run("created", "sent", "delayed", "started", "success");
+  assert.equal(completed.status, 0, completed.stderr || completed.stdout);
+  assert.equal((completed.stdout.match(/WAIT_FOR_ACTION/g) || []).length, 4);
+  assert.match(completed.stdout, /completed successfully/);
+
+  for (const failedState of ["error", "unexpected-status"]) {
+    const failed = run(failedState);
+    assert.equal(failed.status, 1, failed.stderr || failed.stdout);
+    assert.doesNotMatch(failed.stdout, /WAIT_FOR_ACTION|completed successfully/);
+  }
 });
