@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
@@ -728,12 +728,22 @@ export default function RecordDetail({
             </p>
             <h2>{company.name}</h2>
             <div className="record-badges">
-              <span>{company.score}/100</span>
               <span>{scopeShort[company.scope] || company.scope}</span>
               <span>{value(company.evidence)}</span>
               <span>{value(company.review)}</span>
               {deep && <span>Auditoría comercial · {deep.status}</span>}
             </div>
+          </div>
+          <div
+            className={`record-score band-${company.score >= 85 ? "high" : company.score >= 60 ? "mid" : "low"}`}
+            style={{ "--p": company.score } as CSSProperties}
+            aria-label={`Puntuación ${company.score} sobre 100`}
+          >
+            <span className="record-score-ring">
+              <b>{company.score}</b>
+              <small>/100</small>
+            </span>
+            <span className="record-score-label">Score RV</span>
           </div>
           <div className="record-actions">
             {isPublicHref(company.website) && (

@@ -893,3 +893,125 @@ body:has(.app-shell.map-mode) { overflow: hidden; }
   .record-hero>.company-logo-lockup{align-items:flex-start}
   .record-hero>.company-logo-lockup .company-logo-meta{max-width:180px;align-items:flex-start;text-align:left}
 }
+
+/* ============================================================
+   v7 — Fichas premium: hero oscuro, anillo de score, KPIs y lista
+   ============================================================ */
+
+/* --- Hero de la ficha: vuelve a marca oscura, con profundidad --- */
+.record-hero{
+  grid-template-columns:auto minmax(0,1fr) auto minmax(220px,auto);
+  align-items:center;gap:26px;padding:44px 74px 36px 44px;
+  background:
+    radial-gradient(circle at 88% -10%,rgba(59,120,214,.38),transparent 42%),
+    radial-gradient(circle at 12% 118%,rgba(26,62,120,.5),transparent 46%),
+    linear-gradient(120deg,#0d1220,#152238 62%,#101725);
+  color:#fff;border-bottom:0;position:relative;overflow:hidden;
+}
+.record-hero:before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(rgba(148,180,226,.14) 1px,transparent 1.4px);
+  background-size:26px 26px;
+}
+.record-hero>*{position:relative}
+.record-hero .record-title p{color:#93b2e4;font-weight:800}
+.record-hero .record-title h2{color:#fff;text-shadow:0 2px 24px rgba(8,16,32,.5)}
+.record-hero .record-badges span{
+  background:rgba(255,255,255,.07);border:1px solid rgba(154,186,232,.28);
+  color:#dbe7fa;font-weight:750;backdrop-filter:blur(6px);
+}
+.record-hero .company-logo.logo-large{
+  border:1px solid rgba(255,255,255,.16);background:#fff;
+  box-shadow:0 14px 40px rgba(4,10,24,.55);
+}
+.record-hero>.company-logo-lockup .company-logo-meta{color:#b9c8e2}
+
+/* --- Anillo de score --- */
+.record-score{display:grid;justify-items:center;gap:8px;--sc:#9aa6b8;--sc-soft:rgba(154,166,184,.16)}
+.record-score.band-high{--sc:#43d17c;--sc-soft:rgba(67,209,124,.16)}
+.record-score.band-mid{--sc:#f5b93e;--sc-soft:rgba(245,185,62,.16)}
+.record-score.band-low{--sc:#8fa0b8;--sc-soft:rgba(143,160,184,.14)}
+.record-score-ring{
+  width:92px;height:92px;border-radius:50%;display:grid;place-items:center;position:relative;
+  background:conic-gradient(var(--sc) calc(var(--p)*1%),rgba(255,255,255,.1) 0);
+  box-shadow:0 10px 34px var(--sc-soft),inset 0 0 0 1px rgba(255,255,255,.08);
+}
+.record-score-ring:before{content:"";position:absolute;inset:8px;border-radius:50%;background:linear-gradient(160deg,#111a2b,#0d1420);box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}
+.record-score-ring b,.record-score-ring small{position:relative;line-height:1}
+.record-score-ring b{font-size:30px;font-weight:850;letter-spacing:-.04em;color:#fff}
+.record-score-ring small{font-size:9px;color:#93a5c4;margin-top:3px}
+.record-score-ring b,.record-score-ring small{display:block;text-align:center}
+.record-score-label{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:#7f95bd}
+
+/* --- Acciones del hero --- */
+.record-hero .record-actions{grid-template-columns:1fr;gap:8px;min-width:190px}
+.record-hero .record-actions a,.record-hero .record-actions button{
+  background:rgba(255,255,255,.08);border:1px solid rgba(154,186,232,.24);color:#e8effc;
+  border-radius:11px;font-weight:800;min-height:42px;backdrop-filter:blur(6px);transition:.15s;
+}
+.record-hero .record-actions a:first-child{
+  background:linear-gradient(120deg,#2f6fe0,#1450b4);border-color:transparent;color:#fff;
+  box-shadow:0 10px 26px rgba(31,84,182,.45);
+}
+.record-hero .record-actions a:hover,.record-hero .record-actions button:hover{background:rgba(255,255,255,.15);border-color:rgba(184,207,242,.4)}
+.record-hero .record-actions a:first-child:hover{background:linear-gradient(120deg,#3c7ceb,#1a5ac4)}
+.record-hero .record-actions .is-compared{background:rgba(67,209,124,.14);border-color:rgba(67,209,124,.4);color:#8ce8b2}
+
+/* --- KPIs: tarjetas con acento, sin scroll interno --- */
+.record-kpis{gap:12px;padding:18px 22px 6px;background:transparent}
+.record-kpis article{
+  position:relative;background:#fff;border:1px solid #e4e9f2;border-radius:16px;
+  padding:16px 18px 15px;box-shadow:0 1px 2px rgba(23,26,31,.05);overflow:hidden;transition:.18s;
+}
+.record-kpis article:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:3px;background:linear-gradient(90deg,#2f6fe0,#7db0f4)}
+.record-kpis article:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(23,40,70,.1)}
+.record-kpis span{color:#5b7099;font-weight:900}
+.record-kpis strong{
+  max-height:none;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  font-size:14.5px;line-height:1.42;color:#141a24;
+}
+.record-kpis small{color:#6b7686}
+
+/* --- Banda "Qué me llevo" --- */
+.record-takeaway{box-shadow:0 1px 2px rgba(23,26,31,.05)}
+.takeaway-mark{border-radius:50%;font-size:18px}
+
+/* --- Lista de fichas: tarjetas con más jerarquía --- */
+.company-card{position:relative;overflow:hidden;border-radius:16px}
+.company-card:after{
+  content:"";position:absolute;inset:0 0 auto 0;height:3px;
+  background:linear-gradient(90deg,#2f6fe0,#7db0f4);opacity:0;transition:.2s;
+}
+.company-card:hover{transform:translateY(-4px);border-color:#c8d6ec}
+.company-card:hover:after{opacity:1}
+.company-card .company-logo{box-shadow:0 4px 14px rgba(23,40,70,.1);border:1px solid #e8edf5}
+.score{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;font-size:10.5px;letter-spacing:.02em}
+.score:before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.85}
+.score-high{background:#e3efe6;color:#0f7b3d}
+.score-mid{background:#fdf3d7;color:#8a5a00}
+.score-low{background:#eef1f5;color:#5f6368}
+
+/* --- Entrada de la ficha --- */
+@keyframes rv-sheet-in{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.record-sheet{animation:rv-sheet-in .32s cubic-bezier(.2,.7,.2,1) both}
+@media (prefers-reduced-motion:reduce){.record-sheet{animation:none}}
+
+/* --- Responsive del hero v7 --- */
+@media(max-width:1180px){
+  .record-hero{grid-template-columns:auto minmax(0,1fr) auto;padding:38px 66px 30px 28px}
+  .record-hero .record-actions{grid-column:1/-1;grid-template-columns:repeat(3,1fr);min-width:0}
+}
+@media(max-width:620px){
+  .record-hero{grid-template-columns:1fr;padding:74px 20px 26px;gap:18px}
+  .record-score{justify-items:start;grid-auto-flow:column;align-items:center;gap:12px}
+  .record-score-ring{width:74px;height:74px}
+  .record-score-ring b{font-size:24px}
+  .record-hero .record-actions{grid-template-columns:repeat(2,1fr)}
+}
+
+/* v7.1 — botón cerrar sobre hero oscuro, sin pisar las acciones */
+.record-close{background:rgba(255,255,255,.1);border:1px solid rgba(174,199,236,.32);color:#fff;box-shadow:0 6px 22px rgba(4,10,24,.45);backdrop-filter:blur(6px)}
+.record-close:hover{background:rgba(255,255,255,.2)}
+.record-hero{padding-right:152px}
+@media(max-width:1180px){.record-hero{padding-right:126px}}
+@media(max-width:620px){.record-hero{padding-right:20px}}
