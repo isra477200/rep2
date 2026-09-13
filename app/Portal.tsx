@@ -69,9 +69,11 @@ const LandingStudio = lazy(() => import("./LandingStudio"));
 const BusinessDossier = lazy(() => import("./BusinessDossier"));
 const GalleryExplorer = lazy(() => import("./GalleryExplorer"));
 const SectorOperatingSystem = lazy(() => import("./SectorOperatingSystem"));
+const LegalAcquisition = lazy(() => import("./LegalAcquisition"));
 
 type View =
   | "home"
+  | "abogados"
   | "negocio"
   | "operations"
   | "exec"
@@ -145,6 +147,7 @@ const requiredResourcesByView: Partial<
 
 const nav: { id: View; label: string; icon: string }[] = [
   { id: "home", label: "Resumen", icon: "⌂" },
+  { id: "abogados", label: "Captar abogados", icon: "§" },
   { id: "negocio", label: "Dossier de negocio", icon: "€" },
   { id: "operations", label: "Campañas", icon: "◆" },
   { id: "exec", label: "Ejecutar", icon: "▸" },
@@ -174,7 +177,7 @@ const nav: { id: View; label: string; icon: string }[] = [
 
 const navGroups: Array<{ label: string | null; ids: View[] }> = [
   { label: null, ids: ["home"] },
-  { label: "Acción", ids: ["verticals", "negocio", "operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
+  { label: "Acción", ids: ["abogados", "verticals", "negocio", "operations", "exec", "resources", "tools", "adlab", "decisions", "arsenal", "landings"] },
   { label: "Base", ids: ["companies", "funnels", "countries", "ads", "compare"] },
   { label: "Análisis", ids: ["insights", "playbooks", "analysis", "cruces", "informe", "watch", "expansion", "mystery"] },
   { label: "Sistema", ids: ["blueprint", "audit"] },
@@ -2737,6 +2740,15 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               </section>
             )}
           </div>
+        )}
+
+        {viewResourcesReady && view === "abogados" && (
+          <Suspense fallback={<div className="loading">Preparando el plan para captar despachos…</div>}>
+            <LegalAcquisition onOpenCompany={(id) => {
+              const company = companyById.get(id);
+              if (company) openCompany(company);
+            }} />
+          </Suspense>
         )}
 
         {viewResourcesReady && view === "landings" && (
