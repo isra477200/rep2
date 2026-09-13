@@ -1,0 +1,528 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-09-13T14:24:59.735Z",
+  "containerVersion": {
+    "name": "RedVitalia · Abogados · Medición v2",
+    "description": "Importar combinando en un espacio de trabajo nuevo. Configurar RV · GA4 ID. El sitio carga GTM solo después de consentimiento. Etiquetas HTML utilizan el snippet gtag oficial. Desactivar medición mejorada automática del flujo para evitar formularios, enlaces WhatsApp y URLs con datos personales. No incluye píxel Meta ni Google Ads.",
+    "container": {
+      "name": "RedVitalia · Abogados",
+      "usageContext": [
+        "WEB"
+      ]
+    },
+    "tag": [
+      {
+        "tagId": "1",
+        "name": "RV · Inicializar Analytics con consentimiento",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>(function(){\nvar id='{{RV · GA4 ID}}';\nif(!/^G-[A-Z0-9]{4,}$/.test(id)||!window.RedVitaliaMetrics||!window.RedVitaliaMetrics.consent||window.rvSendGA4)return;\nwindow.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});\nwindow.gtag('js',new Date());\nvar cleanLocation=window.RedVitaliaMetrics.pageId==='resource'?location.origin+'/':location.origin+'/abogados/'+window.RedVitaliaMetrics.pageId+'.html';\nwindow.gtag('config',id,{send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false,page_location:cleanLocation,page_referrer:'',cookie_domain:location.hostname});\nwindow.rvGA4Consent=function(allowed){window['ga-disable-'+id]=!allowed;window.gtag('consent','update',{analytics_storage:allowed?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});};\nwindow.rvSendGA4=function(name,data){if(!window.RedVitaliaMetrics.consent)return;var safe={send_to:id,page_location:cleanLocation,page_referrer:'',page_title:'RedVitalia · '+window.RedVitaliaMetrics.pageId};var keys=['page_id','page_kind','campaign','contact_channel','asset_id'];for(var i=0;i<keys.length;i++){var key=keys[i];if(data&&typeof data[key]==='string'&&/^[a-z0-9_-]{1,40}$/.test(data[key]))safe[key]=data[key];}window.gtag('event',name,safe);};\nvar script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(script);\n})();</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "1"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "2",
+        "name": "RV · GA4 · page_view",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('page_view',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "2"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "3",
+        "name": "RV · GA4 · contact_widget_open",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_widget_open',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "3"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "4",
+        "name": "RV · GA4 · contact_channel_select",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_channel_select',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "4"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "5",
+        "name": "RV · GA4 · contact_form_start",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_form_start',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "5"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "6",
+        "name": "RV · GA4 · generate_lead",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('generate_lead',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "6"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "7",
+        "name": "RV · GA4 · contact_whatsapp_click",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_whatsapp_click',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "7"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "8",
+        "name": "RV · GA4 · contact_phone_click",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_phone_click',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "8"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "9",
+        "name": "RV · GA4 · contact_submit_error",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_submit_error',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "9"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "10",
+        "name": "RV · GA4 · asset_download",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('asset_download',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "10"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "tagId": "11",
+        "name": "RV · GA4 · diagnostic_complete",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('diagnostic_complete',{{RV · Datos de evento}});}</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": [
+          "11"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      }
+    ],
+    "trigger": [
+      {
+        "triggerId": "1",
+        "name": "RV · rv_analytics_ready",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_analytics_ready"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "2",
+        "name": "RV · rv_page_view",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_page_view"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "3",
+        "name": "RV · rv_contact_widget_open",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_contact_widget_open"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "4",
+        "name": "RV · rv_contact_channel_select",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_contact_channel_select"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "5",
+        "name": "RV · rv_contact_form_start",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_contact_form_start"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "6",
+        "name": "RV · rv_generate_lead",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_generate_lead"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "7",
+        "name": "RV · rv_contact_whatsapp_click",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_contact_whatsapp_click"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "8",
+        "name": "RV · rv_contact_phone_click",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_contact_phone_click"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "9",
+        "name": "RV · rv_contact_submit_error",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_contact_submit_error"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "10",
+        "name": "RV · rv_asset_download",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_asset_download"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "triggerId": "11",
+        "name": "RV · rv_diagnostic_complete",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "rv_diagnostic_complete"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "variableId": "1",
+        "name": "RV · GA4 ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "G-REPLACE_ME"
+          }
+        ]
+      },
+      {
+        "variableId": "2",
+        "name": "RV · Datos de evento",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "event_data"
+          }
+        ]
+      }
+    ],
+    "builtInVariable": [
+      {
+        "type": "EVENT",
+        "name": "Event"
+      }
+    ]
+  }
+}

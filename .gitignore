@@ -46,3 +46,6 @@ yarn-error.log*
 
 # Build cache de TypeScript: se regenera en cada build
 tsconfig.tsbuildinfo
+
+# Local ad packaging manifest contains machine paths.
+.legal-build/

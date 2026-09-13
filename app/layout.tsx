@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import NicheNavBridge from "./NicheNavBridge";
+import ContactBridge from "./ContactBridge";
 import "./globals.css";
 import "./completion.css";
 import "./market-insights.css";
-
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "./typography.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://redvitalia.srv1480016.hstgr.cloud"),
@@ -53,8 +49,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body >
         <NicheNavBridge />
+        <ContactBridge />
         {children}
       </body>
     </html>

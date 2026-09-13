@@ -260,7 +260,7 @@ La gestión de Google Ads es de 400 € netos al mes + 84 € de IVA (484 €). 
 
 Un saludo,
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 Te envío la información que has solicitado. Si prefieres que cerremos el seguimiento, responde a este correo y lo dejamos registrado.
 
@@ -281,7 +281,7 @@ Hemos separado lo que se ve en la página de lo que necesitamos confirmar con vo
 Si te encaja, lo vemos en 20 minutos y decidimos si merece preparar un piloto. ¿Qué horario te viene bien?
 
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 Si prefieres no continuar con esta propuesta, responde a este correo y cerramos el seguimiento.
 
@@ -299,7 +299,7 @@ Si la respuesta es sí, podemos revisar el recorrido de las consultas. Si no es 
 
 Gracias,
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 Puedes responder a este correo si no quieres más seguimiento.
 
@@ -320,7 +320,7 @@ En la reunión comprobaríamos si ese punto también aparece en vuestro proceso 
 ¿Quieres que lo comentemos o prefieres que cerremos esta propuesta por ahora?
 
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 Responde a este correo para cerrar el seguimiento cuando quieras.
 
@@ -338,7 +338,7 @@ Si más adelante queréis revisar cómo pasan las consultas a citas y asuntos ac
 
 Gracias por tu tiempo,
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 ### WhatsApp solicitado · WhatsApp
 
@@ -363,7 +363,7 @@ Conviene que participe quien decide la inversión y, si es posible, quien organi
 
 Si necesitas cambiarla, responde a este correo.
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 ### Recordatorio acordado · WhatsApp
 
@@ -384,7 +384,7 @@ No hemos podido coincidir en la reunión. Si sigue siendo útil revisar la capta
 Si ha dejado de ser prioridad, no hace falta reprogramar; puedes responder y cierro el seguimiento.
 
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 ## 06 · Reunión y objeciones: Vender a partir de capacidad, proceso y números
 
@@ -527,7 +527,7 @@ Prepararé una propuesta con gestión, inversión en medios y preparación separ
 Próximo paso acordado: [acción, responsable y fecha].
 
 [Tu nombre] · RedVitalia
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 Si prefieres cerrar el seguimiento comercial, responde a este correo.
 
@@ -677,7 +677,7 @@ Texto de finalidad: Usaremos estos datos para atender tu solicitud de diagnósti
 [Insertar identificación real del responsable y enlace a política vigente. Cualquier suscripción comercial adicional será opcional y separada.]
 
 PÁGINA DE GRACIAS
-Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a WhatsApp: +34 637 371 993. No envíes documentación de tus clientes.
+Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a WhatsApp: +34 919 935 237. No envíes documentación de tus clientes.
 
 ## 09 · Anuncios y contenido: Dos ángulos para probar sin dispersar presupuesto
 
@@ -807,7 +807,7 @@ Uso: Solo a una relación existente y cuando sea pertinente.
 
 Hola, [Nombre de quien decide]. Estoy preparando diagnósticos de captación para despachos que quieran trabajar Segunda Oportunidad. Revisamos cómo pasan las consultas a citas y asuntos aceptados.
 
-Si conoces un despacho al que le pueda interesar, puedes comentárselo y, si quiere, presentarnos o pasarle mi contacto: WhatsApp: +34 637 371 993. Prefiero que sea el despacho quien confirme interés antes de escribirle.
+Si conoces un despacho al que le pueda interesar, puedes comentárselo y, si quiere, presentarnos o pasarle mi contacto: WhatsApp: +34 919 935 237. Prefiero que sea el despacho quien confirme interés antes de escribirle.
 
 Gracias, [Tu nombre] · RedVitalia.
 
@@ -850,7 +850,7 @@ Revisaremos juntos el recorrido con una prueba identificada antes de activar pub
 Reunión de arranque: [fecha acordada].
 Responsable RedVitalia: [Tu nombre].
 
-WhatsApp: +34 637 371 993
+WhatsApp: +34 919 935 237
 
 ### Reunión de arranque · 45 minutos · Guía
 

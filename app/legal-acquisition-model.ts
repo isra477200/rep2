@@ -1,7 +1,7 @@
 import { chapters, profiles, scripts, evidence, sourceNotes } from './legal-acquisition-content.ts';
 
 export type LegalContext = { profile: string; zona: string; despacho: string; nombre: string; asesor: string; contacto: string; observacion: string; enlaceDiagnostico: string; cita: string; enlaceReunion: string };
-export const defaultContext: LegalContext = { profile: 'segunda-oportunidad', zona: '', despacho: '', nombre: '', asesor: '', contacto: 'WhatsApp: +34 637 371 993', observacion: '', enlaceDiagnostico: '', cita: '', enlaceReunion: '' };
+export const defaultContext: LegalContext = { profile: 'segunda-oportunidad', zona: '', despacho: '', nombre: '', asesor: '', contacto: 'WhatsApp: +34 919 935 237', observacion: '', enlaceDiagnostico: '', cita: '', enlaceReunion: '' };
 export const contextLabels: Record<Exclude<keyof LegalContext, 'profile'>, string> = { zona: 'Ciudad o provincia', despacho: 'Nombre del despacho', nombre: 'Nombre de quien decide', asesor: 'Tu nombre', contacto: 'Tu email o teléfono profesional', observacion: 'Observación real de su web', enlaceDiagnostico: 'Enlace al diagnóstico preparado', cita: 'Fecha, hora y zona horaria de reunión', enlaceReunion: 'Enlace de reunión' };
 export function fillText(text: string, context: LegalContext): string {
  const profile = profiles.find(p => p.id === context.profile) ?? profiles[0];
@@ -17,6 +17,7 @@ export function readSavedContext(value: unknown): LegalContext {
   if (typeof item === 'string') result[key] = item.slice(0, key === 'observacion' ? 1500 : 350);
  }
  if (!profiles.some(p => p.id === result.profile)) result.profile = defaultContext.profile;
+ result.contacto = result.contacto.replace(/637[ \u00a0.-]*371[ \u00a0.-]*993/g, '919 935 237');
  return result;
 }
 export function readSavedProgress(value: unknown): string[] { return Array.isArray(value) ? [...new Set(value.filter((id): id is string => typeof id === 'string' && chapters.some(c => c.id === id)))] : []; }

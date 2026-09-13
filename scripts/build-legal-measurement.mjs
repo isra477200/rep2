@@ -1,0 +1,20 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+const out=new URL('../public/abogados/measurement/',import.meta.url);await mkdir(out,{recursive:true});
+const names=['page_view','contact_widget_open','contact_channel_select','contact_form_start','generate_lead','contact_whatsapp_click','contact_phone_click','contact_submit_error','asset_download','diagnostic_complete'];
+const trigger=(id,event)=>({triggerId:String(id),name:'RV · '+event,type:'CUSTOM_EVENT',customEventFilter:[{type:'EQUALS',parameter:[{type:'TEMPLATE',key:'arg0',value:'{{_event}}'},{type:'TEMPLATE',key:'arg1',value:event}]}]});
+const htmlTag=(id,name,html,triggerId)=>({tagId:String(id),name,type:'html',parameter:[{type:'TEMPLATE',key:'html',value:html},{type:'BOOLEAN',key:'supportDocumentWrite',value:'false'}],firingTriggerId:[String(triggerId)],tagFiringOption:'ONCE_PER_EVENT'});
+const bootstrap=`<script>(function(){
+var id='{{RV · GA4 ID}}';
+if(!/^G-[A-Z0-9]{4,}$/.test(id)||!window.RedVitaliaMetrics||!window.RedVitaliaMetrics.consent||window.rvSendGA4)return;
+window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+window.gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+window.gtag('js',new Date());
+var cleanLocation=window.RedVitaliaMetrics.pageId==='resource'?location.origin+'/':location.origin+'/abogados/'+window.RedVitaliaMetrics.pageId+'.html';
+window.gtag('config',id,{send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false,page_location:cleanLocation,page_referrer:'',cookie_domain:location.hostname});
+window.rvGA4Consent=function(allowed){window['ga-disable-'+id]=!allowed;window.gtag('consent','update',{analytics_storage:allowed?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});};
+window.rvSendGA4=function(name,data){if(!window.RedVitaliaMetrics.consent)return;var safe={send_to:id,page_location:cleanLocation,page_referrer:'',page_title:'RedVitalia · '+window.RedVitaliaMetrics.pageId};var keys=['page_id','page_kind','campaign','contact_channel','asset_id'];for(var i=0;i<keys.length;i++){var key=keys[i];if(data&&typeof data[key]==='string'&&/^[a-z0-9_-]{1,40}$/.test(data[key]))safe[key]=data[key];}window.gtag('event',name,safe);};
+var script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+id;document.head.appendChild(script);
+})();</script>`;
+const container={exportFormatVersion:2,exportTime:new Date().toISOString(),containerVersion:{name:'RedVitalia · Abogados · Medición v2',description:'Importar combinando en un espacio de trabajo nuevo. Configurar RV · GA4 ID. El sitio carga GTM solo después de consentimiento. Etiquetas HTML utilizan el snippet gtag oficial. Desactivar medición mejorada automática del flujo para evitar formularios, enlaces WhatsApp y URLs con datos personales. No incluye píxel Meta ni Google Ads.',container:{name:'RedVitalia · Abogados',usageContext:['WEB']},tag:[htmlTag(1,'RV · Inicializar Analytics con consentimiento',bootstrap,1),...names.map((name,i)=>htmlTag(i+2,'RV · GA4 · '+name,`<script>if(window.rvSendGA4){window.rvSendGA4('${name}',{{RV · Datos de evento}});}</script>`,i+2))],trigger:[trigger(1,'rv_analytics_ready'),...names.map((n,i)=>trigger(i+2,'rv_'+n))],variable:[{variableId:'1',name:'RV · GA4 ID',type:'c',parameter:[{type:'TEMPLATE',key:'value',value:'G-REPLACE_ME'}]},{variableId:'2',name:'RV · Datos de evento',type:'v',parameter:[{type:'INTEGER',key:'dataLayerVersion',value:'2'},{type:'TEMPLATE',key:'name',value:'event_data'}]}],builtInVariable:[{type:'EVENT',name:'Event'}]}};
+await writeFile(new URL('RedVitalia-GTM.json',out),JSON.stringify(container,null,2));
+console.log('Contenedor GTM: 11 etiquetas, 11 activadores y 2 variables.');

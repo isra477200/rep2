@@ -3,6 +3,8 @@ services:
     image: ghcr.io/isra477200/redvitalia-inteligencia:latest
     pull_policy: always
     restart: unless-stopped
+    environment:
+      REDVITALIA_GHL_WEBHOOK_URL: ${REDVITALIA_GHL_WEBHOOK_URL:-}
     expose:
       - "3000"
     labels:
