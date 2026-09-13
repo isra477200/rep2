@@ -35,6 +35,7 @@ test("the Docker context excludes local secrets and generated work", () => {
 });
 
 test("production deploys are serialized and verified to completion", () => {
+  assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /group: redvitalia-production/);
   assert.match(workflow, /cancel-in-progress: false/);
   assert.match(workflow, /timeout-minutes: 75/);
@@ -49,4 +50,12 @@ test("production deploys are serialized and verified to completion", () => {
   assert.match(workflow, /408\|425\|429\|500\|502\|503\|504/);
   assert.match(workflow, /deployment\.txt\?expected=\$\{EXPECTED_SHA\}/);
   assert.match(workflow, /Production is serving the expected commit/);
+});
+
+test("missing deployment credentials never report a verified release", () => {
+  const missingKey = workflow.match(/if \[ -z "\$\{HOSTINGER_API_KEY:-\}" \]; then([\s\S]*?)\n\s*fi/);
+  assert.ok(missingKey, "missing-key handling must remain explicit");
+  assert.match(missingKey[1], /GITHUB_STEP_SUMMARY/);
+  assert.match(missingKey[1], /exit 1/);
+  assert.doesNotMatch(missingKey[1], /exit 0/);
 });

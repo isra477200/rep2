@@ -1,6 +1,7 @@
 name: Publish RedVitalia portal
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - redvitalia-radar-deploy
@@ -58,7 +59,17 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "${HOSTINGER_API_KEY:-}" ]; then
-            echo 'HOSTINGER_API_KEY is not configured; production deployment cannot be verified.'
+            echo '::error title=Despliegue automático pendiente::Falta HOSTINGER_API_KEY. La imagen se ha publicado, pero Hostinger no se ha actualizado ni verificado automáticamente.'
+            {
+              echo '## Imagen publicada; despliegue automático pendiente'
+              echo ''
+              printf -- '- Imagen disponible: `ghcr.io/isra477200/redvitalia-inteligencia:%s`\n' "$EXPECTED_SHA"
+              echo '- Falta el secreto de repositorio `HOSTINGER_API_KEY`.'
+              echo '- Configura la conexión con Hostinger y vuelve a ejecutar este workflow.'
+              echo '- Alternativa manual: Hostinger > VPS 1480016 > Docker > redvitalia > Implementar.'
+              printf -- '- Comprueba que `https://redvitalia.srv1480016.hstgr.cloud/deployment.txt` devuelve `%s`.\n' "$EXPECTED_SHA"
+              echo '- Esta ejecución permanece fallida porque no ha verificado el despliegue.'
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
           response=$(curl --silent --show-error --connect-timeout 10 --max-time 30 --write-out '\n%{http_code}' \

@@ -131,6 +131,10 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
   const previewPanelRef = useRef<HTMLElement | null>(null);
   const [visibleExamples, setVisibleExamples] = useState(4);
   const [previousBrief, setPreviousBrief] = useState<LandingBrief | null>(null);
+  const ammo = useMemo(
+    () => buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit),
+    [brief.verticalId, brief.unit, verticales, arsenalData, crucesData],
+  );
 
   useEffect(() => {
     let active = true;
@@ -276,21 +280,19 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     };
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const ammo = useMemo(
-    () => buildMarketAmmo(brief.verticalId, verticales, arsenalData, crucesData, brief.unit),
-    [brief.verticalId, brief.unit, verticales, arsenalData, crucesData],
-  );
   useEffect(() => {
     if (!hydrated || !ammo) return;
-    setBrief((current) => {
-      if (current.verticalId !== ammo.verticalId) return current;
-      const wantsStats = !(current.marketStats || []).length && ammo.stats.length > 0;
-      if (wantsStats) return applyMarketAmmo(current, ammo);
-      return current;
+    const frame = window.requestAnimationFrame(() => {
+      setBrief((current) => {
+        if (current.verticalId !== ammo.verticalId) return current;
+        const wantsStats = !(current.marketStats || []).length && ammo.stats.length > 0;
+        if (wantsStats) return applyMarketAmmo(current, ammo);
+        return current;
+      });
     });
+    return () => window.cancelAnimationFrame(frame);
   }, [ammo, hydrated]);
 
   const autoBuild = () => {
@@ -356,8 +358,17 @@ export default function LandingStudio({ verticales, logos }: LandingStudioProps)
     [guaranteeReady],
   );
   useEffect(() => {
-    if (hydrated && brief.variant === "c" && !guaranteeReady)
-      setBrief((current) => ({ ...current, variant: "a" }));
+    if (!hydrated || brief.variant !== "c" || guaranteeReady) return;
+    const frame = window.requestAnimationFrame(() => {
+      setBrief((current) => {
+        const validGuarantee = current.guarantee.trim()
+          && landingReadiness(current).checks.some((check) => check.id === "guarantee" && check.ok);
+        return current.variant === "c" && !validGuarantee
+          ? { ...current, variant: "a" }
+          : current;
+      });
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, [brief.variant, guaranteeReady, hydrated]);
   const verticalIntel =
     intelligence?.verticals[studyVerticalId] || intelligence?.verticals.generalista || null;

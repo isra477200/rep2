@@ -403,6 +403,7 @@ export default function Portal() {
   const lightboxCloseRef = useRef<HTMLButtonElement | null>(null);
   const [compare, setCompare] = useState<string[]>([]),
     [editorialTab, setEditorialTab] = useState<keyof Editorial>("blueprint");
+  const [compareVisible, setCompareVisible] = useState(80);
   const [loading, setLoading] = useState(true),
     [error, setError] = useState(""),
     [failedLightboxFile, setFailedLightboxFile] = useState<string | null>(null),
@@ -868,7 +869,7 @@ export default function Portal() {
     const topAcciones = (execution?.actions || []).slice().sort((a, b) => (b.impact - b.effort) - (a.impact - a.effort)).slice(0, 5);
     const lines: string[] = [];
     lines.push(`INFORME EJECUTIVO · INTELIGENCIA DE CAPTACIÓN REDVITALIA`);
-    lines.push(`Corte: ${BUILD_DATE_LONG} · generado desde la base viva del portal`);
+    lines.push(`Versión compilada: ${BUILD_DATE_LONG} · generado desde los datos del portal; consulta las fechas de cada fuente`);
     lines.push("");
     lines.push(`1. BASE`);
     lines.push(`${fmt(companies.length)} fichas de competidores en ${new Set(companies.map((c) => c.primaryCountry)).size} mercados primarios; ${fmt(spain.length)} operan en España.${nuevas.length ? ` El corte del 23/08/2026 incorporó ${nuevas.length} fichas desde la revisión de anuncios (Meta, Google, Instagram).` : ""}`);
@@ -1414,6 +1415,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
     setCompaniesNewOnly(false);
     setQuery("");
     setVisible(24);
+    setCompareVisible(80);
   };
 
   const handleEditorialTabKeyDown = (
@@ -1707,7 +1709,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
           <div className="side-status">
             <span className="dot" />
             <div>
-              <strong>Instantánea verificada</strong>
+              <strong>Versión compilada</strong>
               <small>{BUILD_DATE_LONG}</small>
             </div>
           </div>
@@ -1827,7 +1829,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               </div>
             )}
           </div>
-          <div className="data-date">CORTE · {BUILD_DATE}</div>
+          <div className="data-date" title="Fecha de compilación de la aplicación. Las fuentes conservan sus propias fechas de revisión.">VERSIÓN · {BUILD_DATE}</div>
           <span className="avatar">RV</span>
         </header>
 
@@ -1872,7 +1874,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <div className="hero-orbit">
                 <span>{new Set(companies.map((company) => company.primaryCountry)).size}</span>
                 <strong>mercados representados</strong>
-                <small>963 fichas · atlas territorial de {summary.countries} Estados</small>
+                <small>{fmt(companies.length)} fichas · atlas territorial de {summary.countries} Estados</small>
               </div>
             </section>
             <section className="stat-grid">
@@ -3868,8 +3870,8 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <p className="eyebrow">COMPARADOR</p>
               <h1>Decide con las diferencias a la vista</h1>
               <p>
-                Selecciona hasta cuatro empresas desde sus tarjetas. Ya hemos
-                cargado tres referentes para empezar.
+                Selecciona hasta cuatro empresas desde sus tarjetas o desde la
+                lista. Usa la búsqueda y los filtros para localizar cualquier empresa.
               </p>
             </section>
             <section className="filterbar" aria-label="Filtros del comparador">
@@ -3958,7 +3960,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <span>{compare.length} de 4 seleccionadas</span>
             </div>
             <div className="compare-picker" aria-label="Empresas disponibles para comparar">
-              {filtered.slice(0, 80).map((c) => (
+              {filtered.slice(0, compareVisible).map((c) => (
                 <button
                   key={c.id}
                   className={compare.includes(c.id) ? "selected" : ""}
@@ -3970,6 +3972,11 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
                 </button>
               ))}
             </div>
+            {compareVisible < filtered.length && (
+              <button className="load-more" onClick={() => setCompareVisible((current) => current + 80)}>
+                Mostrar más empresas ({fmt(Math.min(compareVisible, filtered.length))} de {fmt(filtered.length)})
+              </button>
+            )}
             {!filtered.length && (
               <p className="record-empty">
                 No hay empresas que coincidan con la búsqueda y los filtros actuales.
@@ -4809,7 +4816,7 @@ La disponibilidad territorial no se presupone. Antes de usar exclusividad, compr
               <p className="eyebrow">CRITERIOS DE CIERRE · SNAPSHOT BASE DE {summary.companies}</p>
               <h2>{summary.completion.status} · 22/08/2026</h2>
               <p>{summary.completion.status === "TERMINADO"
-                ? "El snapshot base cerró sus criterios internos. La ampliación hasta 963 fichas y las colas publicitarias se controlan por separado en Centro de Operaciones."
+                ? `El snapshot base cerró sus criterios internos. La ampliación hasta ${fmt(companies.length)} fichas y las colas publicitarias se controlan por separado en Centro de Operaciones.`
                 : "La base anterior está preservada, pero la ampliación forense de funnels todavía tiene registros pendientes de revisar, sincronizar o publicar."}
               </p>
             </div>

@@ -7,10 +7,12 @@ const readJson = async (relativePath) =>
   JSON.parse(await readFile(new URL(relativePath, root), "utf8"));
 
 test("the published closure audit satisfies every exact completion condition", async () => {
-  const [finalAudit, summary, funnelIndex] = await Promise.all([
+  const [finalAudit, summary, funnelIndex, companyIndex, logos] = await Promise.all([
     readJson("public/data/final-audit.json"),
     readJson("public/data/summary.json"),
     readJson("public/data/funnel-v3/index.json"),
+    readJson("public/data/companies-index.json"),
+    readJson("public/data/logos.json"),
   ]);
 
   assert.equal(finalAudit.status, "TERMINADO");
@@ -42,7 +44,17 @@ test("the published closure audit satisfies every exact completion condition", a
   assert.equal(
     finalAudit.totals.authenticBrandAssets
       + finalAudit.totals.neutralLogoFallbacks,
-    712,
+    companyIndex.length,
+  );
+  const catalogIds = companyIndex.map((company) => company.id).sort();
+  assert.deepEqual(Object.keys(logos).sort(), catalogIds);
+  assert.equal(
+    finalAudit.totals.authenticBrandAssets,
+    Object.values(logos).filter((logo) => !logo.isFallback).length,
+  );
+  assert.equal(
+    finalAudit.totals.neutralLogoFallbacks,
+    Object.values(logos).filter((logo) => logo.isFallback).length,
   );
 
   for (const field of [
