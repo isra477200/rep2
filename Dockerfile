@@ -1,10 +1,14 @@
 FROM node:22-alpine AS build
 
+ARG GIT_SHA=development
+
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
-RUN npm run build
+RUN printf '%s\n' "$GIT_SHA" > /app/public/deployment.txt \
+  && npm run build \
+  && test -f /app/dist/client/deployment.txt
 
 FROM node:22-alpine AS runtime
 
@@ -12,10 +16,10 @@ ENV NODE_ENV=production
 ENV PORT=3000
 WORKDIR /app
 
-COPY --from=build /app/package.json /app/package-lock.json ./
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/dist ./dist
-RUN mkdir -p /app/.wrangler && chown -R node:node /app
+RUN mkdir -p /app/.wrangler && chown node:node /app/.wrangler
+COPY --from=build --chown=node:node /app/package.json /app/package-lock.json ./
+COPY --from=build --chown=node:node /app/node_modules ./node_modules
+COPY --from=build --chown=node:node /app/dist ./dist
 
 USER node
 EXPOSE 3000

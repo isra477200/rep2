@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "prebuild": "node scripts/stamp-build-date.mjs",
     "build": "vinext build",
+    "deployment:qa": "node --test tests/deployment-contract.test.mjs",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs && npm run ads:patterns:test",
     "ads:coverage": "node scripts/build-ad-coverage.mjs",

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="color-scheme" content="light">
+  <title>Nichos · Inteligencia Mundial de Captación · RedVitalia</title>
+  <link rel="stylesheet" href="/nichos-redvitalia.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/" target="_top" aria-label="Volver al mercado">
+        <span class="brandmark">RV</span>
+        <span><strong>RedVitalia</strong><small>INTELIGENCIA MUNDIAL</small></span>
+      </a>
+      <div class="nav-label">Mercado</div>
+      <nav class="market-nav">
+        <a href="/?vista=home" target="_top"><i>⌂</i><span>Resumen</span></a>
+        <a href="/?vista=companies" target="_top"><i>◎</i><span>Empresas</span></a>
+        <a class="active" href="#inicio"><i>▤</i><span>Nichos</span></a>
+        <a href="/?vista=informe" target="_top"><i>≡</i><span>Informe</span></a>
+      </nav>
+      <div class="nav-label">Control</div>
+      <nav id="controlNav">
+        <button data-route="inicio"><i>00</i><span>Visión general</span></button>
+        <button data-route="matriz"><i>M</i><span>Matriz de decisión</span></button>
+        <button data-route="competidores"><i>C</i><span>Competencia vinculada</span></button>
+      </nav>
+      <div class="nav-label">Verticales RedVitalia</div>
+      <nav id="nicheNav"></nav>
+      <div class="side-status"><span class="dot"></span><span><strong>Dentro del mercado</strong><small>10 sistemas conectados a sus fichas</small></span></div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <main class="main">
+      <header class="topbar">
+        <button class="menu" id="menuBtn" aria-label="Abrir menú">☰</button>
+        <div class="page-title"><strong id="topTitle">Nichos</strong><small id="topSub">Estrategia aplicada a la competencia</small></div>
+        <label class="global-search"><span>⌕</span><input id="search" placeholder="Buscar nicho, competidor, oferta o táctica…"><button id="clearSearch" type="button" aria-label="Limpiar">×</button></label>
+        <button class="top-action" id="printBtn">Imprimir</button>
+        <button class="top-action primary" id="exportBtn">Exportar decisiones</button>
+      </header>
+      <div class="content" id="app"><div class="loading">Cargando sistemas verticales…</div></div>
+    </main>
+  </div>
+  <script src="/nichos-redvitalia.js" defer></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import NicheNavBridge from "./NicheNavBridge";
 import "./globals.css";
 import "./completion.css";
 import "./market-insights.css";
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <NicheNavBridge />
         {children}
       </body>
     </html>
