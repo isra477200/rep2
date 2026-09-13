@@ -28,7 +28,7 @@
       loaded=true;
       const script=document.createElement('script');script.async=true;
       if(activeGTM){window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});window.dataLayer.push({event:'rv_analytics_ready'});script.src='https://www.googletagmanager.com/gtm.js?id='+cfg.gtmId;}
-      else {script.src=location.protocol==='file:'?'ga4.js':'/abogados/ga4.js';}
+      else {script.src=(location.protocol==='file:'?'ga4.js':'/abogados/ga4.js')+'?v='+(window.RedVitaliaAssetVersions?.['ga4.js']||'native-20260913');}
       document.head.appendChild(script);
     }
     if(!window.rvSendGA4&&pageSent)window.dataLayer.push({event:'rv_analytics_ready'});

@@ -4,8 +4,8 @@ const status=JSON.parse(await readFile(new URL('campaign-status.json',out),'utf8
 const metaConfig=JSON.parse(await readFile(new URL('ads/meta-configuracion.json',out),'utf8'));
 if(status.meta?.campaignId){Object.assign(metaConfig,{status:'CREATED_PAUSED_REVIEW_PENDING',campaignId:status.meta.campaignId,account:status.meta.accountId,page:status.meta.pageId,dailyBudget:20,location:'España',adsets:status.meta.adsets,adsCreated:status.meta.ads,conversion:'LINK_CLICKS — no optimiza a formulario; pendiente de píxel y conversión verificados',verifiedAt:status.meta.verifiedAt,activationPerformed:false});await writeFile(new URL('ads/meta-configuracion.json',out),JSON.stringify(metaConfig,null,2));}
 let html=await readFile(new URL('anuncios.html',out),'utf8');
-html=html.replaceAll('<script src="operations.js" defer></script>','');
-html=html.replace('<script src="ads.js" defer></script>','<script src="ads.js" defer></script><script src="operations.js" defer></script>');
+html=html.replace(/<script src="operations\.js(?:\?[^"]*)?" defer><\/script>/g,'');
+html=html.replace(/<script src="ads\.js(?:\?[^"]*)?" defer><\/script>/,'<script src="ads.js" defer></script><script src="operations.js" defer></script>');
 html=html.replace('Cinco ideas distintas.<br><em>Un sistema reconocible.</em>','Tus campañas para abogados.<br><em>Los anuncios, terminados.</em>');
 html=html.replace('Para que un abogado se vea reflejado desde el primer vistazo. Una oferta común, cinco historias visuales y cada formato preparado para su plataforma.','Cinco mensajes distintos, una oferta clara y formatos para Meta Ads y Performance Max. Cada imagen identifica al abogado, el Sistema RedVitalia y el precio desde 400 €/mes.');
 html=html.replace('<a class="text-link" href="ads/GUIA-PUBLICACION.md" download>Plan de las dos campañas ↓</a>','<a class="text-link" href="index.html">Abrir el sistema y las campañas ↗</a>');

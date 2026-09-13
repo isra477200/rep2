@@ -11,7 +11,7 @@ test('every landing ships local resources, unique sections and accessible fields
   const ids=$('[id]').map((_,el)=>$(el).attr('id')).get();assert.equal(new Set(ids).size,ids.length);
   $('img,script[src],link[rel="stylesheet"]').each((_,el)=>{const src=$(el).attr('src')||$(el).attr('href');assert.ok(existsSync(new URL(src,base)),`${page}: ${src}`);});
   $('img').each((_,el)=>assert.ok($(el).attr('alt')));
-  if($('script[src="contact.js"]').length){const scripts=$('script[src]').map((_,el)=>$(el).attr('src')).get();assert.ok(scripts.indexOf('native-bridge.js')>=0&&scripts.indexOf('native-bridge.js')<scripts.indexOf('contact.js'),`${page}: missing native form bridge`);}
+  {const scripts=$('script[src]').map((_,el)=>$(el).attr('src').split('?')[0]).get();if(scripts.includes('contact.js')){assert.ok(scripts.indexOf('native-bridge.js')>=0&&scripts.indexOf('native-bridge.js')<scripts.indexOf('contact.js'),`${page}: missing native form bridge`);}}
   $('input,select,textarea').each((_,el)=>assert.ok($(el).closest('label').length||$(el).attr('aria-label')));
   $('a[href^="#"]').each((_,el)=>assert.ok(ids.includes($(el).attr('href').slice(1)),`${page}: missing anchor`));
  }

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "prebuild": "node scripts/stamp-build-date.mjs",
+    "prebuild": "node scripts/stamp-build-date.mjs && node scripts/version-legal-assets.mjs",
     "build": "vinext build",
     "deployment:qa": "node --test tests/deployment-contract.test.mjs",
     "start": "vinext start",

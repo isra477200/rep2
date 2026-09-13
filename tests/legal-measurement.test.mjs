@@ -17,7 +17,7 @@ function harness(id='',search='?utm_content=e2_feed&name=PRIVATE&phone=919935237
 test('direct GA4 queues the first event, sends it once, and respects withdrawal',()=>{
  const h=harness('','?phone=PRIVATE','G-QRQEMYM8NH');
  assert.equal(h.scripts.length,0);h.handlers['[data-consent="yes"]click']();
- assert.equal(h.scripts.length,1);assert.equal(h.scripts[0].src,'/abogados/ga4.js');
+ assert.equal(h.scripts.length,1);assert.equal(h.scripts[0].src,'/abogados/ga4.js?v=native-20260913');
  vm.runInNewContext(readFileSync(new URL('ga4.js',base),'utf8'),h.context);
  assert.equal(h.window.dataLayer.filter(x=>x[0]==='event'&&x[1]==='page_view').length,1);
  h.window.RedVitaliaMetrics.track('generate_lead',{contact_channel:'whatsapp',phone:'PRIVATE'});
