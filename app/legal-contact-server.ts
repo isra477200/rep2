@@ -6,7 +6,7 @@ export function parseLegalContact(value:unknown):LegalContact|null {
  const name=text('name',80),company=text('company',120),phone=text('phone',22),channel=data.channel;
  if(name.length<2||company.length<2||!/^\+[1-9]\d{7,14}$/.test(phone)||!['phone','whatsapp'].includes(String(channel))||data.consent!==true||data.website||!/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/.test(text('request_id',40)))return null;
  const page=text('source_page',40),campaign=text('campaign',40);
- return {name,company,phone,channel:channel as LegalContact['channel'],consent:true,source_page:['index','redvitalia','segunda-oportunidad','herencias','divorcios','manual','anuncios','medicion','privacidad','resource'].includes(page)?page:'resource',campaign:/^e[1-5]_(feed|square|story)$/.test(campaign)?campaign:'direct',request_id:text('request_id',40)};
+ return {name,company,phone,channel:channel as LegalContact['channel'],consent:true,source_page:['index','redvitalia','segunda-oportunidad','herencias','divorcios','manual','anuncios','medicion','privacidad','resource'].includes(page)?page:'resource',campaign:/^(e[1-5]_(feed|square|story|meta_(feed|square|story)|pmax_(wide|square|portrait))|meta_campaign|pmax_campaign)$/.test(campaign)?campaign:'direct',request_id:text('request_id',40)};
 }
 export function legalContactWebhook(value:string|undefined):URL|null {
  try{const url=new URL(value||'');return url.protocol==='https:'&&url.hostname==='services.leadconnectorhq.com'&&/^\/hooks\//.test(url.pathname)&&!url.username&&!url.password?url:null;}catch{return null;}

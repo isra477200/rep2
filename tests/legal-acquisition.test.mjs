@@ -51,5 +51,5 @@ test('base management price matches the panel instead of bundling infrastructure
  assert.match(JSON.stringify(data),/400/);
  const proposal=scripts.find(s=>s.id==='propuesta-completa').text;
  assert.match(proposal,/No está incluido por defecto/);
- assert.match(proposal,/400 € netos\/mes \+ 84 € IVA = 484 €/);
+ assert.match(proposal,/Sistema RedVitalia: desde 400 € netos\/mes/);
 });

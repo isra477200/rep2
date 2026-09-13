@@ -11,3 +11,7 @@ body{--ink:#122b29;--accent:#d7fa7d;--paper:#fcfdf9;--soft:#eef2e9;--muted:#5266
 @media print{.rv-contact,.rv-privacy-panel,.launch-shortcuts,.launch-download{display:none!important}.manual-script{break-inside:auto}.manual-script pre{font-size:11px}}
 
 .rv-drawer-head{position:sticky;top:0;z-index:2}.rv-drawer[data-step="form"] .rv-drawer-head p,.rv-drawer[data-step="result"] .rv-drawer-head p{display:none}.rv-drawer[data-step="form"] .rv-drawer-head,.rv-drawer[data-step="result"] .rv-drawer-head{padding:17px 22px}.rv-drawer[data-step="form"] .rv-drawer-head small,.rv-drawer[data-step="result"] .rv-drawer-head small{margin-bottom:7px}.rv-drawer[data-step="form"] .rv-drawer-head h2,.rv-drawer[data-step="result"] .rv-drawer-head h2{font-size:21px;margin-bottom:0}
+
+.price-card .price>small:first-child{display:block;margin:0 0 6px;font-size:19px}
+
+.hero-system-offer{display:inline-flex;flex-direction:column;gap:3px;margin-top:23px;padding:14px 20px;border:1px solid #abc18e;border-radius:10px;background:#e9efdd;color:#173b2c;text-decoration:none}.hero-system-offer strong{font-size:24px;letter-spacing:-.03em}.hero-system-offer small{font-size:12px}.hero-system-offer+.hero-buttons{margin-top:22px}

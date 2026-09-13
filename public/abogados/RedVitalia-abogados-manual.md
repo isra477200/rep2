@@ -36,7 +36,7 @@ El cliente de RedVitalia es el despacho. El primer producto es un piloto medible
 
 2. Piloto recomendado: 30 días de campaña activa, con preparación previa y decisión posterior de continuar. Es una propuesta de alcance, no una condición contractual ya aprobada.
 
-3. Precio existente en el panel: gestión de Google Ads 400 € netos/mes, IVA 84 €, total 484 €. Medios orientativos: 800–2.000 €/mes a Google. La landing, CRM, licencias, automatización y alta requieren alcance y presupuesto separado; no se incluyen gratis por defecto.
+3. Oferta de entrada: Sistema RedVitalia desde 400 €/mes + IVA. Con una base de 400 €, el IVA es 84 € y la factura 484 €. Publicidad aparte. Alcance, módulos, licencias y puesta en marcha se concretan en la propuesta; no se presume que todos los módulos estén incluidos en la cuota de entrada.
 
 4. Resultado que se gestiona: consultas con encaje, atención y seguimiento. Entregables que sí controlamos: campaña, medición acordada, revisión semanal y registro de descartes.
 
@@ -50,7 +50,7 @@ Uso: Para explicar qué comprará el despacho.
 
 En RedVitalia ayudamos a los despachos a organizar su captación por especialidad. Para [Nombre del despacho] proponemos empezar por Segunda Oportunidad en [Ciudad o provincia]: atraer consultas, acordar un filtro inicial y seguir el recorrido hasta la cita y el asunto aceptado.
 
-Empezamos con un diagnóstico y, si hay encaje, definimos un piloto medible. La gestión de Google Ads es de 400 € netos al mes más IVA. La publicidad se paga directamente a Google; la preparación y las herramientas se presupuestan según lo que ya tenga el despacho.
+Empezamos con un diagnóstico y, si hay encaje, definimos un piloto medible. El Sistema RedVitalia parte de 400 € netos al mes más IVA. La publicidad se paga aparte a las plataformas. Concretamos módulos, preparación y herramientas en la propuesta según lo que ya tenga el despacho.
 
 El primer paso es revisar juntos qué ocurre hoy con las consultas y qué capacidad tenéis para atender nuevas.
 
@@ -254,7 +254,7 @@ Gracias por la conversación. Como me has pedido, te resumo la propuesta de RedV
 
 Empezaríamos por Segunda Oportunidad en [Ciudad o provincia], revisando tres puntos: qué consultas encajan, cómo se atienden y cuáles terminan en una cita y un asunto aceptado. Con eso definiríamos un piloto y los datos que necesita el despacho para decidir si continuar.
 
-La gestión de Google Ads es de 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a Google; el panel plantea 800–2.000 €/mes como rango inicial orientativo, que habría que ajustar a vuestra zona. Preparación, landing y herramientas se concretan y presupuestan aparte según lo que ya tengáis.
+El Sistema RedVitalia parte de 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a las plataformas y se acuerda según el servicio y la zona. Con una cuota neta de 400 €, la factura es de 484 € con IVA. El alcance de landing, CRM, automatizaciones y cualquier puesta en marcha queda detallado en la propuesta.
 
 ¿Te parece que lo revisemos en una conversación de 20 minutos? Dime qué horario te viene bien y lo acordamos.
 
@@ -448,7 +448,7 @@ Uso: Aclara de qué coste habla y comprueba economía.
 
 ¿Te refieres a la gestión, a la inversión publicitaria o al coste total del piloto?
 
-La gestión de Google Ads son 400 € netos al mes más IVA. Medios y preparación van separados. Podemos revisar cuánto margen aporta un asunto y cuánto tendría que costar conseguirlo para que tenga sentido. Si los números o la capacidad no encajan, prefiero que ajustemos el alcance antes de comprometer inversión.
+El Sistema RedVitalia parte de 400 € netos al mes más IVA. Medios y preparación van separados. Podemos revisar cuánto margen aporta un asunto y cuánto tendría que costar conseguirlo para que tenga sentido. Si los números o la capacidad no encajan, prefiero que ajustemos el alcance antes de comprometer inversión.
 
 ### «¿Cuántos clientes me garantizas?» · Objeción
 
@@ -492,7 +492,7 @@ Si lo resolvemos ahora, perfecto. Si necesitas revisarlo, acordamos una fecha o 
 
 La propuesta debe permitir decidir cuánto se invierte, qué se entrega y cómo se revisa. Usa la calculadora para ensayar escenarios del despacho; no son predicciones.
 
-1. Presenta 400 € netos de gestión Google Ads y su IVA, inversión en medios aparte y presupuesto separado para alta/landing/CRM. Si ya tienen infraestructura válida, documenta qué se aprovecha.
+1. Presenta el Sistema RedVitalia desde 400 € netos al mes y su IVA, inversión en medios aparte y presupuesto separado para alta/landing/CRM. Si ya tienen infraestructura válida, documenta qué se aprovecha.
 
 2. Define consulta válida por especialidad, zona, contacto utilizable y solicitud real; deduplica dentro del periodo acordado. Una consulta válida puede no acabar en cliente.
 
@@ -552,7 +552,7 @@ Una especialidad y la zona acordada. Configuración/revisión de campaña según
 Landing, formulario, CRM, agenda, automatizaciones, seguimiento de llamadas y licencias: [qué se aprovecha, qué se contrata y qué se excluye]. Cada elemento adicional tendrá responsable, coste y aprobación. No está incluido por defecto en la tarifa de gestión.
 
 5. INVERSIÓN
-Gestión Google Ads: 400 € netos/mes + 84 € IVA = 484 €.
+Sistema RedVitalia: desde 400 € netos/mes + IVA (cuota de entrada: 400 € + 84 € IVA = 484 €).
 Publicidad: [presupuesto aprobado] €/mes, facturada por Google al despacho; tratamiento fiscal según su factura. Rango de exploración del panel: 800–2.000 €/mes, pendiente de estimación por zona.
 Preparación y alta: [importe neto e impuestos aplicables].
 Herramientas recurrentes: [importe, proveedor e impuestos aplicables].
@@ -651,7 +651,7 @@ BLOQUE 5 · Puedes ver cómo trabajaríamos
 En el diagnóstico mostramos una revisión concreta, un recorrido de demostración y el formato del informe. Las demostraciones se identifican como ejemplos. Los resultados propios solo se presentan cuando existen datos verificables y autorización para compartirlos.
 
 BLOQUE 6 · Inversión clara desde el principio
-Gestión de Google Ads: 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a Google. La preparación de landing, medición y herramientas se presupuesta según el alcance y lo que ya tenga el despacho.
+Sistema RedVitalia: desde 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a las plataformas. La preparación de landing, medición y herramientas se presupuesta según el alcance y lo que ya tenga el despacho.
 Antes de empezar recibirás una propuesta con todos los importes, responsabilidades y condiciones.
 
 PREGUNTAS FRECUENTES
@@ -671,13 +671,13 @@ Revisemos el siguiente paso de tus consultas.
 Completa tus datos profesionales y cuéntanos qué servicio quieres impulsar.
 
 FORMULARIO
-Nombre · Despacho · Web (opcional) · Email profesional · Especialidad · Zona · Canal preferido; teléfono solo si elige llamada.
+Nombre · Empresa o despacho · Teléfono · Canal preferido (WhatsApp o llamada) · Consentimiento para atender la solicitud.
 Botón: Solicitar diagnóstico de captación
 Texto de finalidad: Usaremos estos datos para atender tu solicitud de diagnóstico y acordar el siguiente paso. Consulta la información de privacidad de RedVitalia.
 [Insertar identificación real del responsable y enlace a política vigente. Cualquier suscripción comercial adicional será opcional y separada.]
 
 PÁGINA DE GRACIAS
-Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a WhatsApp: +34 919 935 237. No envíes documentación de tus clientes.
+Solo mostrar este mensaje después de confirmar recepción en el CRM: «Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a WhatsApp: +34 919 935 237. No envíes documentación de tus clientes». Si falla la entrega, informar y ofrecer contacto directo sin registrar un lead recibido.
 
 ## 09 · Anuncios y contenido: Dos ángulos para probar sin dispersar presupuesto
 
@@ -695,73 +695,81 @@ Creativos B2B originales generados para RedVitalia: seguimiento de consultas y m
 
 Paso terminado cuando: Ángulo, audiencia profesional, landing, presupuesto propio y medición elegidos.
 
-### Anuncio A · siguiente paso · Anuncio
+### E1 · Boca a boca · Anuncio
 
-Uso: Acompaña al creativo vertical de RedVitalia.
+Uso: Versión recomendada de la campaña Meta; todas las variantes están en el estudio de anuncios.
 
 TEXTO PRINCIPAL
-La captación de un despacho sigue después del formulario. ¿Quién responde? ¿Qué consultas encajan? ¿Cuáles llegan a una cita?
-
-En RedVitalia revisamos ese recorrido por especialidad y zona, y proponemos un piloto con seguimiento hasta el asunto aceptado.
-
-Solicita un diagnóstico de captación para tu despacho.
+Abogados: las recomendaciones son valiosas. ¿Y si vuestro despacho también tuviera una forma de darse a conocer a quienes todavía no os conocen? Sistema RedVitalia desde 400 €/mes + IVA. Inversión publicitaria aparte. Hablemos de tu despacho y del alcance de la propuesta.
 
 TITULAR
-Cada consulta, un siguiente paso
+Abogados, más allá del boca a boca
 
 DESCRIPCIÓN
-Captación, filtro y seguimiento.
+Desde 400 €/mes + IVA
 
 BOTÓN
 Más información
 
 DESTINO
-Landing B2B de RedVitalia configurada y probada antes de anunciar.
+/abogados/redvitalia.html · Copia el enlace identificado de la pieza en /abogados/anuncios.html.
 
-### Anuncio B · ver el recorrido · Anuncio
+### E3 · Especialidad · Anuncio
 
-Uso: Acompaña al creativo cuadrado del recorrido.
+Uso: Versión recomendada de la campaña Meta; todas las variantes están en el estudio de anuncios.
 
 TEXTO PRINCIPAL
-Una consulta, una cita y un asunto aceptado son momentos distintos. Verlos por separado ayuda a decidir dónde invertir y qué mejorar.
-
-RedVitalia conecta captación y seguimiento para despachos de abogados. Empezamos por una especialidad, una zona y una revisión de vuestro proceso actual.
-
-Revisemos tu captación.
+Abogados: herencias, familia e insolvencia no empiezan con la misma pregunta. La captación debe explicar el servicio que vuestro despacho quiere impulsar. Sistema RedVitalia desde 400 €/mes + IVA. Inversión publicitaria aparte. Hablemos de tu despacho y del alcance de la propuesta.
 
 TITULAR
-Del contacto al asunto aceptado
+Abogados: vuestra especialidad
 
 DESCRIPCIÓN
-Diagnóstico para despachos.
+Desde 400 €/mes + IVA
 
 BOTÓN
 Más información
 
-### Google Ads · captar despachos · Anuncio
+DESTINO
+/abogados/redvitalia.html · Copia el enlace identificado de la pieza en /abogados/anuncios.html.
 
-Uso: Titulares cortos de partida; validar combinaciones y destino.
+### Performance Max · Sistema para abogados · Anuncio
 
-TITULARES
+Uso: Una campaña y un grupo de recursos. Usar los textos y el plan del estudio de anuncios.
+
+15 TITULARES
+Para abogados
+Abogados: desde 400 €/mes
+Sistema RedVitalia: abogados
+Captación para abogados
+Abogados, más visibilidad
+Abogados: más que referidos
+Abogados: cada consulta cuenta
+Abogados: ordena la captación
 Marketing para abogados
-Captación para despachos
-RedVitalia para abogados
-Revisa tu captación
-Consultas con seguimiento
-Un diagnóstico de captación
+Abogados: consultas y citas
+Un sistema para abogados
+Abogados: siguiente paso
+Abogados: foco en el despacho
+Abogados: citas y seguimiento
+Abogados: un plan comercial
 
-DESCRIPCIONES
-Conecta captación, filtro y seguimiento. Revisemos el proceso de tu despacho.
-Una especialidad y una zona. Define un piloto con presupuesto y medición claros.
-Gestión Google Ads: 400 € + IVA/mes. Medios y preparación aparte. Consulta alcance.
+5 TITULARES LARGOS
+Abogados, más allá del boca a boca: Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: captación y seguimiento con el Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: da visibilidad a tu especialidad. Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: revisemos el camino a la cita. Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: conoce el Sistema RedVitalia desde 400 €/mes + IVA. Publicidad aparte.
 
-BÚSQUEDAS DE PARTIDA
-«agencia marketing abogados», «captación clientes despachos», «google ads abogados».
-Negativas iniciales a revisar: empleo, prácticas, curso, oposición, estudiar. Excluir intención de contratar un abogado particular cuando aparezca.
+5 DESCRIPCIONES
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Publicidad aparte. Hablemos.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Definimos el alcance. Medios aparte.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Especialidad y zona. Medios aparte.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Revisemos tu proceso. Medios aparte.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Solicita una propuesta. Medios aparte.
 
-ENLACES PROPUESTOS
-Cómo trabajamos · Qué medimos · Inversión · Solicitar diagnóstico
-Crear destinos reales y útiles antes de cargarlos.
+DESTINO
+/abogados/redvitalia.html · Desactivar expansión de URL final para evitar el panel y las demos jurídicas. Las señales de audiencia orientan, pero no restringen PMax solo a abogados. Configuración completa en /abogados/anuncios.html.
 
 ### Publicación de autoridad · LinkedIn · Publicación
 
@@ -784,22 +792,27 @@ La pregunta útil es dónde se detiene la siguiente oportunidad y qué se puede 
 
 Si diriges un despacho y quieres revisar este proceso, puedes pedirnos un diagnóstico de captación.
 
-### Guion de vídeo · 35 segundos · Vídeo
+### Vídeos de campaña · 20 segundos · Vídeo
 
-Uso: Una persona real del equipo o piezas gráficas; sin testimonios ficticios.
+Uso: Tres montajes descargables: vertical, cuadrado y horizontal. Sin locución.
 
-0–5 s · Texto en pantalla: «¿Qué pasa después del formulario?»
-Voz: Una persona pide información a un despacho. Ahí empieza el trabajo de convertir esa consulta en una conversación útil.
+0–4 s · Abogados, más allá del boca a boca.
+4–8 s · Abogados: que cada consulta tenga seguimiento.
+8–12 s · Abogados: vuestra especialidad merece más visibilidad.
+12–16 s · Abogados: de las consultas a las citas.
+16–20 s · Abogados: crecer también necesita un sistema.
 
-5–15 s · Pantalla: Consulta → Contacto → Cita
-Voz: Hay que responder, comprobar que encaja y acordar un siguiente paso. Cada salto puede medirse.
+EN CADA ESCENA
+Sistema RedVitalia
+Desde 400 €/mes
++ IVA · Publicidad aparte
 
-15–26 s · Pantalla: Cita asistida → Asunto aceptado
-Voz: En RedVitalia revisamos la captación por especialidad y zona, conectando campañas, filtro y seguimiento hasta el resultado que registra el despacho.
+IMÁGENES
+Teléfono amarillo, expediente granate, abogada ilustrativa, calendario naranja y despacho. Cada escena identifica explícitamente al abogado y conserva el precio visible.
 
-26–35 s · Marca y CTA
-Voz: Si quieres saber qué mejorar primero, solicita un diagnóstico de captación para tu despacho.
-Pantalla: «RedVitalia · Solicita un diagnóstico».
+DESCARGA
+/abogados/anuncios.html#videos
+Los vídeos son montajes de las composiciones generadas, sin testimonios ni resultados atribuidos. Para PMax, subir los MP4 a YouTube y elegirlos como recursos de la campaña.
 
 ### Pedir una presentación a un contacto · Mensaje
 
@@ -1112,7 +1125,7 @@ REVISIÓN DEL VIERNES
 Uso: Datos ficticios para entender el cálculo; no son resultados de RedVitalia.
 
 EJEMPLO DIDÁCTICO · NO ES UNA PREVISIÓN
-Medios: 1.200 € · Gestión: 400 € · Preparación imputada: 300 € · Herramientas y atención: 100 €.
+Medios: 1.200 € · Cuota de entrada del sistema: 400 € · Preparación imputada: 300 € · Herramientas y atención: 100 €.
 Coste total neto imputado: 2.000 €.
 Honorario medio efectivamente cobrado por asunto: 2.500 €.
 Margen de contribución antes de captación: 40 % = 1.000 € por asunto.

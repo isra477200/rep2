@@ -7,13 +7,13 @@ export const profiles: LegalProfile[] = [
 
 export type Chapter = { id: string; label: string; title: string; intro: string; actions: string[]; done: string };
 export const chapters: Chapter[] = [
-  { id: 'estrategia', label: '01 · Elegir y ofrecer', title: 'Una especialidad, una zona, una oferta comprensible', intro: 'El cliente de RedVitalia es el despacho. El primer producto es un piloto medible de captación, con una especialidad por campaña. España es el mercado de partida; elige una ciudad o provincia antes de prospectar.', actions: ['Empieza con Segunda Oportunidad solo si el despacho puede acreditar esa práctica. Cambia a herencias o divorcios cuando el encaje real sea mejor.', 'Piloto recomendado: 30 días de campaña activa, con preparación previa y decisión posterior de continuar. Es una propuesta de alcance, no una condición contractual ya aprobada.', 'Precio existente en el panel: gestión de Google Ads 400 € netos/mes, IVA 84 €, total 484 €. Medios orientativos: 800–2.000 €/mes a Google. La landing, CRM, licencias, automatización y alta requieren alcance y presupuesto separado; no se incluyen gratis por defecto.', 'Resultado que se gestiona: consultas con encaje, atención y seguimiento. Entregables que sí controlamos: campaña, medición acordada, revisión semanal y registro de descartes.', 'Propuesta de valor: ayudar a identificar dónde se pierden las consultas y construir un camino hasta el asunto aceptado. La hipótesis comercial debe validarse con el piloto.'], done: 'Elegida la especialidad y zona; anotados servicio, capacidad, coste y alcance de la oferta.' },
+  { id: 'estrategia', label: '01 · Elegir y ofrecer', title: 'Una especialidad, una zona, una oferta comprensible', intro: 'El cliente de RedVitalia es el despacho. El primer producto es un piloto medible de captación, con una especialidad por campaña. España es el mercado de partida; elige una ciudad o provincia antes de prospectar.', actions: ['Empieza con Segunda Oportunidad solo si el despacho puede acreditar esa práctica. Cambia a herencias o divorcios cuando el encaje real sea mejor.', 'Piloto recomendado: 30 días de campaña activa, con preparación previa y decisión posterior de continuar. Es una propuesta de alcance, no una condición contractual ya aprobada.', 'Oferta de entrada: Sistema RedVitalia desde 400 €/mes + IVA. Con una base de 400 €, el IVA es 84 € y la factura 484 €. Publicidad aparte. Alcance, módulos, licencias y puesta en marcha se concretan en la propuesta; no se presume que todos los módulos estén incluidos en la cuota de entrada.', 'Resultado que se gestiona: consultas con encaje, atención y seguimiento. Entregables que sí controlamos: campaña, medición acordada, revisión semanal y registro de descartes.', 'Propuesta de valor: ayudar a identificar dónde se pierden las consultas y construir un camino hasta el asunto aceptado. La hipótesis comercial debe validarse con el piloto.'], done: 'Elegida la especialidad y zona; anotados servicio, capacidad, coste y alcance de la oferta.' },
   { id: 'prospectos', label: '02 · Encontrar despachos', title: 'Una lista corta con motivos reales para llamar', intro: 'Construye una primera cohorte de 30 despachos. Es una carga de trabajo propuesta, no una previsión de ventas. Dedica 5–8 minutos a comprobar cada uno y prioriza los 10 con mejor encaje.', actions: ['Busca en Google y Maps: «abogado {{especialidad}} {{zona}}», «despacho {{especialidad}} {{zona}}». Completa con directorios profesionales públicos para comprobar identidad, y con webs de los despachos para teléfono y actividad.', 'Registra URL y fecha, especialidad visible, zona, teléfono profesional, responsable si es público, canal, observación verificable y siguiente acción. No inventes ingresos, presupuesto o tamaño por apariencia de la web.', 'Puntúa 0–2 cada criterio: especialidad acreditable, claridad de servicio, señal de captación activa, oportunidad concreta de mejora y accesibilidad del responsable. 8–10: llamar primero; 5–7: investigar; 0–4: aparcar. Desconocido vale 0 hasta confirmarlo.', 'Señales útiles: anuncios activos observados, landing por especialidad, formulario con demasiados campos, falta de siguiente paso claro o CTA poco visible en móvil. Una web bonita o un anuncio activo no prueban rentabilidad.', 'Antes de llamadas comerciales, documenta base de legitimación, origen profesional y pertinencia del servicio. Comprueba oposición y sistemas de exclusión aplicables. Si no está resuelto, empieza por solicitudes entrantes, referencias autorizadas o contactos que hayan pedido información.', 'Detén el contacto si rechazan, piden baja o no hay encaje. Mantén una lista mínima de exclusión para evitar repetir llamadas. Un email público no autoriza una secuencia comercial.'], done: '30 fichas revisadas, 10 priorizadas y origen/legitimación del contacto documentados.' },
   { id: 'diagnostico', label: '03 · Preparar el diagnóstico', title: 'Lleva una observación, una pregunta y una mejora', intro: 'La oferta de entrada es un diagnóstico breve de captación. Debe existir antes de afirmar que has revisado la web. No envíes un PDF genérico con el nombre cambiado.', actions: ['Abre la landing desde móvil y escritorio. Anota URL, fecha y captura de la pantalla donde se ve el problema. No envíes formularios reales fingiendo ser un posible cliente.', 'Revisa seis elementos: promesa específica, especialidad/zona, credenciales comprobables, llamada a la acción, fricción del formulario y explicación del paso posterior.', 'Prepara tres observaciones como máximo: hecho visible, posible consecuencia a validar y cambio propuesto. «No vi un plazo de respuesta» es verificable; «perdéis el 40 % de los clientes» no lo es.', 'Compara con dos páginas del archivo para explicar mecanismos, sin copiar sus promesas. Enseña una maqueta o recorrido de ejemplo etiquetado como demostración si falta acceso a datos reales.', 'Termina con una sola decisión: dedicar 20 minutos a conocer cómo se atienden hoy las consultas. Separa lo observado de lo que solo el despacho puede confirmar.'], done: 'Mini diagnóstico de una página con pruebas visibles y pregunta específica.' },
   { id: 'llamadas', label: '04 · Llamar y cualificar', title: 'Conseguir una conversación útil con quien decide', intro: 'Objetivo de la primera llamada: confirmar encaje y acordar el siguiente paso. Usa el guion como conversación; escucha y recoge las palabras exactas del despacho.', actions: ['Identifícate, di que es una propuesta comercial y ofrece oposición al inicio. Si hay interés, pide permiso para una pregunta breve.', 'Pregunta por especialidad, capacidad y atención. No intentes cerrar el servicio sin hablar con quien decide y conocer los números.', 'Si responde recepción, pide la función responsable, no datos personales innecesarios. Si no es momento, ofrece una devolución acordada.', 'Para enviar información, confirma dirección, contenido solicitado y si acepta un seguimiento. Registra fecha y alcance; no metas al contacto automáticamente en una newsletter.', 'Rutina propuesta: bloque diario de 60–90 minutos con hasta 10 fichas preparadas, registro inmediato y una próxima acción. Ajusta el volumen a la calidad y las restricciones de contacto.'], done: 'Llamada registrada con encaje, oposición o permiso, responsable y siguiente acción.' },
   { id: 'seguimiento', label: '05 · Correo y seguimiento', title: 'Continuar solo la conversación que han aceptado', intro: 'El correo de interesados resume lo hablado y permite responder con facilidad. Todos los envíos de esta biblioteca son manuales; el apartado no manda mensajes.', actions: ['Día 0: envía lo pedido en la llamada y el diagnóstico si realmente está preparado. Una sola llamada a la acción.', 'Día 2–3: si aceptaron seguimiento y no contestaron, pregunta si tiene sentido revisar el diagnóstico. No añadas más archivos sin necesidad.', 'Día 6–7: aporta una idea concreta ligada a su web. Usa la variante de cierre si no hay interés o no se acordaron más contactos.', 'Día 10: cierra el seguimiento si seguía autorizado y no hay respuesta. Después, archiva. Si fijaron otra fecha, respétala en vez de esta cadencia.', 'WhatsApp solo cuando lo han elegido para esta conversación. Los recordatorios de cita se limitan a la cita solicitada. Ante oposición, cancela toda la secuencia.'], done: 'Información solicitada enviada y próxima fecha acordada, o seguimiento cerrado.' },
   { id: 'reunion', label: '06 · Reunión y objeciones', title: 'Vender a partir de capacidad, proceso y números', intro: 'Reunión de diagnóstico de 20 minutos: 2 para contexto, 8 para entender el proceso, 5 para la propuesta y 5 para una decisión. Los números desconocidos se apuntan como pendientes.', actions: ['Invita al socio o responsable con capacidad de decisión; suma a quien atiende llamadas si su intervención es necesaria.', 'Recorre el último mes: consultas, válidas, contactadas, citas, asistencias, asuntos aceptados y honorarios efectivamente cobrados. Trabaja con agregados, sin expedientes ni nombres de clientes.', 'Pregunta cuánto trabajo nuevo pueden asumir y qué plazo real de respuesta pueden sostener. Marca un objetivo operativo de respuesta en horario atendido; fuera de horario, confirmación con expectativa realista.', 'Muestra un único cuello de botella. Si falta medición, el primer entregable es medir; si no hay capacidad de atención, no tiene sentido aumentar inversión todavía.', 'Cierra con una de tres salidas: propuesta con fecha de decisión, tarea concreta para resolver una duda, o no encaja. Evita reuniones sin dueño ni fecha.'], done: 'Decisor, capacidad, cuello de botella y próximo acuerdo identificados.' },
-  { id: 'propuesta', label: '07 · Proponer y cerrar', title: 'Un piloto con límites y responsabilidades por escrito', intro: 'La propuesta debe permitir decidir cuánto se invierte, qué se entrega y cómo se revisa. Usa la calculadora para ensayar escenarios del despacho; no son predicciones.', actions: ['Presenta 400 € netos de gestión Google Ads y su IVA, inversión en medios aparte y presupuesto separado para alta/landing/CRM. Si ya tienen infraestructura válida, documenta qué se aprovecha.', 'Define consulta válida por especialidad, zona, contacto utilizable y solicitud real; deduplica dentro del periodo acordado. Una consulta válida puede no acabar en cliente.', 'Distingue consulta válida, cita agendada, cita asistida y asunto aceptado con encargo confirmado. El despacho decide el encaje jurídico y conserva su independencia.', 'Incluye alcance, revisiones, calendario tras accesos, propiedad de cuentas, salida, entrega de activos y costes de terceros. No cierres permanencia, gratuidad o exclusividad si no están expresamente pactadas.', 'La exclusividad de un contacto captado para el despacho no equivale a exclusividad territorial. Esta última requiere territorio, especialidad, duración y capacidad acordados.', 'Antes de cobrar o activar inversión, obtén aceptación del alcance y presupuesto final por quien tiene facultad. El resumen comercial sirve de base; no sustituye al contrato de servicios.'], done: 'Alcance, honorarios, medios, condiciones y aceptación registrados.' },
+  { id: 'propuesta', label: '07 · Proponer y cerrar', title: 'Un piloto con límites y responsabilidades por escrito', intro: 'La propuesta debe permitir decidir cuánto se invierte, qué se entrega y cómo se revisa. Usa la calculadora para ensayar escenarios del despacho; no son predicciones.', actions: ['Presenta el Sistema RedVitalia desde 400 € netos al mes y su IVA, inversión en medios aparte y presupuesto separado para alta/landing/CRM. Si ya tienen infraestructura válida, documenta qué se aprovecha.', 'Define consulta válida por especialidad, zona, contacto utilizable y solicitud real; deduplica dentro del periodo acordado. Una consulta válida puede no acabar en cliente.', 'Distingue consulta válida, cita agendada, cita asistida y asunto aceptado con encargo confirmado. El despacho decide el encaje jurídico y conserva su independencia.', 'Incluye alcance, revisiones, calendario tras accesos, propiedad de cuentas, salida, entrega de activos y costes de terceros. No cierres permanencia, gratuidad o exclusividad si no están expresamente pactadas.', 'La exclusividad de un contacto captado para el despacho no equivale a exclusividad territorial. Esta última requiere territorio, especialidad, duración y capacidad acordados.', 'Antes de cobrar o activar inversión, obtén aceptación del alcance y presupuesto final por quien tiene facultad. El resumen comercial sirve de base; no sustituye al contrato de servicios.'], done: 'Alcance, honorarios, medios, condiciones y aceptación registrados.' },
   { id: 'landing', label: '08 · Landing de RedVitalia', title: 'La página que convence al socio del despacho', intro: 'Esta landing vende RedVitalia a despachos. El formulario pide datos profesionales mínimos y una conversación de diagnóstico. Los bloques siguientes son el texto íntegro para construirla.', actions: ['Orden recomendado: propuesta clara → problema reconocible → recorrido de trabajo → entregables → a quién encaja → método y prueba → precio → preguntas → formulario.', 'Usa un solo CTA: «Solicitar diagnóstico de captación». En móvil, mantenlo accesible sin tapar contenido. Confirma recepción y el siguiente paso después del envío.', 'Prueba que puedes enseñar hoy: muestra de diagnóstico, recorrido de demo, criterios de consulta válida y ejemplo de informe marcado como ejemplo. Añade casos reales solo con datos comprobables y permiso.', 'Evita logotipos de clientes no autorizados, contadores de plazas sin capacidad real, testimonios inventados y promesas de facturación.', 'La colección HTML ya incluye la landing de RedVitalia con WhatsApp y tres modelos de especialidad. Abre «Explorar las landings». Completa la identidad legal y la medición antes de campañas; los modelos de despachos mantienen la captación desactivada hasta asignar cliente.'], done: 'Texto de la landing adaptado, pruebas reales y recorrido del formulario definidos.' },
   { id: 'creativos', label: '09 · Anuncios y contenido', title: 'Dos ángulos para probar sin dispersar presupuesto', intro: 'Creativos B2B originales generados para RedVitalia: seguimiento de consultas y medición hasta asunto aceptado. Las imágenes son ilustrativas, no fotografías del equipo ni de clientes.', actions: ['Primero valida la oferta en conversaciones. Después plantea una prueba pagada con un presupuesto propio de captación de RedVitalia, separado del dinero que los despachos invierten para captar sus clientes.', 'Prueba A: continuidad de atención. Prueba B: visibilidad del proceso. Usa la misma oferta y landing para saber qué cambia; evita modificar creatividad, precio y público a la vez.', 'Mide formulario profesional válido, reunión asistida y despacho contratado. El CTR solo ayuda a diagnosticar el anuncio.', 'Para Google B2B, usa intención de contratar marketing para abogados; excluye búsquedas de abogados para particulares. Para campañas del despacho, usa las búsquedas de su especialidad y una cuenta separada.', 'Antes de anunciar, revisa las políticas vigentes de la plataforma para audiencia, datos y anuncios jurídicos. Los públicos, presupuesto, destino y seguimiento están por configurar; no hay campañas activadas desde este módulo.'], done: 'Ángulo, audiencia profesional, landing, presupuesto propio y medición elegidos.' },
   { id: 'entrega', label: '10 · Arranque del servicio', title: 'Lo que pasa después del sí', intro: 'La buena venta prepara la entrega. Pide accesos por invitación, reúne las aprobaciones del despacho y ensaya el recorrido de una consulta antes de invertir.', actions: ['Día de aceptación: contrato y alcance, persona responsable, facturación, agenda y permisos. Invita a cuentas de Google Ads, analítica y web con roles mínimos; nunca pidas contraseñas en correo.', 'Preparación: landing por especialidad, campañas separadas, CRM y agenda acordados, horarios, mensajes, política de datos y responsable de revisión jurídica.', 'Define quién atiende, quién sustituye, cuándo se escala una consulta y qué se registra. El formulario de marketing recoge mínimos; el despacho recibe documentación jurídica por sus canales.', 'Prueba con datos ficticios identificados: formulario → recepción → aviso → responsable → cita → recordatorio → estado final. Excluye estas pruebas de métricas y conversiones.', 'Antes de publicar, el abogado revisa texto, identidad profesional y afirmaciones jurídicas; verifica medición y consentimiento aplicable. Ningún evento publicitario debe contener relato del asunto o datos sensibles.', 'Primera semana activa: revisión de búsquedas y calidad. Semana 2: llamada de seguimiento y citas. Semana 3: asuntos aceptados y razones de descarte. Semana 4: decisión según costes, calidad y capacidad, no solo número de contactos.'], done: 'Accesos, revisiones, atención y prueba del recorrido completados.' },
@@ -26,7 +26,7 @@ const s = (id: string, chapter: string, title: string, kind: string, when: strin
 export const scripts: Script[] = [
  s('oferta-breve','estrategia','La oferta en 30 segundos','Presentación','Para explicar qué comprará el despacho.',`En RedVitalia ayudamos a los despachos a organizar su captación por especialidad. Para {{despacho}} proponemos empezar por {{especialidad}} en {{zona}}: atraer consultas, acordar un filtro inicial y seguir el recorrido hasta la cita y el asunto aceptado.
 
-Empezamos con un diagnóstico y, si hay encaje, definimos un piloto medible. La gestión de Google Ads es de 400 € netos al mes más IVA. La publicidad se paga directamente a Google; la preparación y las herramientas se presupuestan según lo que ya tenga el despacho.
+Empezamos con un diagnóstico y, si hay encaje, definimos un piloto medible. El Sistema RedVitalia parte de 400 € netos al mes más IVA. La publicidad se paga aparte a las plataformas. Concretamos módulos, preparación y herramientas en la propuesta según lo que ya tenga el despacho.
 
 El primer paso es revisar juntos qué ocurre hoy con las consultas y qué capacidad tenéis para atender nuevas.`),
  s('microdiagnostico','diagnostico','Mini diagnóstico que entregar','Documento','Completa solo con observaciones que hayas comprobado.',`DIAGNÓSTICO DE CAPTACIÓN · {{despacho}}
@@ -124,7 +124,7 @@ Gracias por la conversación. Como me has pedido, te resumo la propuesta de RedV
 
 Empezaríamos por {{especialidad}} en {{zona}}, revisando tres puntos: qué consultas encajan, cómo se atienden y cuáles terminan en una cita y un asunto aceptado. Con eso definiríamos un piloto y los datos que necesita el despacho para decidir si continuar.
 
-La gestión de Google Ads es de 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a Google; el panel plantea 800–2.000 €/mes como rango inicial orientativo, que habría que ajustar a vuestra zona. Preparación, landing y herramientas se concretan y presupuestan aparte según lo que ya tengáis.
+El Sistema RedVitalia parte de 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a las plataformas y se acuerda según el servicio y la zona. Con una cuota neta de 400 €, la factura es de 484 € con IVA. El alcance de landing, CRM, automatizaciones y cualquier puesta en marcha queda detallado en la propuesta.
 
 ¿Te parece que lo revisemos en una conversación de 20 minutos? Dime qué horario te viene bien y lo acordamos.
 
@@ -242,7 +242,7 @@ Si esa parte está resuelta y estáis satisfechos, puede que ahora no necesitéi
 Lo primero sería dejar por escrito qué consideráis una consulta válida y registrar los descartes. Con eso sabremos si hay que cambiar el anuncio, el filtro o la atención. Sin ese dato no te propondría simplemente comprar más tráfico.`),
  s('objecion-precio','reunion','«Es caro»','Objeción','Aclara de qué coste habla y comprueba economía.',`¿Te refieres a la gestión, a la inversión publicitaria o al coste total del piloto?
 
-La gestión de Google Ads son 400 € netos al mes más IVA. Medios y preparación van separados. Podemos revisar cuánto margen aporta un asunto y cuánto tendría que costar conseguirlo para que tenga sentido. Si los números o la capacidad no encajan, prefiero que ajustemos el alcance antes de comprometer inversión.`),
+El Sistema RedVitalia parte de 400 € netos al mes más IVA. Medios y preparación van separados. Podemos revisar cuánto margen aporta un asunto y cuánto tendría que costar conseguirlo para que tenga sentido. Si los números o la capacidad no encajan, prefiero que ajustemos el alcance antes de comprometer inversión.`),
  s('objecion-garantia','reunion','«¿Cuántos clientes me garantizas?»','Objeción','Distingue trabajo controlable de resultado comercial.',`Podemos comprometernos al alcance, la medición, el seguimiento y las revisiones acordadas. El número de asuntos depende también de la demanda, la competencia, vuestro encaje jurídico y la atención.
 
 Para poner una cifra responsable necesitamos datos propios. El piloto sirve para construirlos y decidir con un coste por asunto aceptado. Si para avanzar necesitas un número de clientes garantizado, esta propuesta todavía no cumple ese requisito.`),
@@ -293,7 +293,7 @@ Una especialidad y la zona acordada. Configuración/revisión de campaña según
 Landing, formulario, CRM, agenda, automatizaciones, seguimiento de llamadas y licencias: [qué se aprovecha, qué se contrata y qué se excluye]. Cada elemento adicional tendrá responsable, coste y aprobación. No está incluido por defecto en la tarifa de gestión.
 
 5. INVERSIÓN
-Gestión Google Ads: 400 € netos/mes + 84 € IVA = 484 €.
+Sistema RedVitalia: desde 400 € netos/mes + IVA (cuota de entrada: 400 € + 84 € IVA = 484 €).
 Publicidad: [presupuesto aprobado] €/mes, facturada por Google al despacho; tratamiento fiscal según su factura. Rango de exploración del panel: 800–2.000 €/mes, pendiente de estimación por zona.
 Preparación y alta: [importe neto e impuestos aplicables].
 Herramientas recurrentes: [importe, proveedor e impuestos aplicables].
@@ -366,7 +366,7 @@ BLOQUE 5 · Puedes ver cómo trabajaríamos
 En el diagnóstico mostramos una revisión concreta, un recorrido de demostración y el formato del informe. Las demostraciones se identifican como ejemplos. Los resultados propios solo se presentan cuando existen datos verificables y autorización para compartirlos.
 
 BLOQUE 6 · Inversión clara desde el principio
-Gestión de Google Ads: 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a Google. La preparación de landing, medición y herramientas se presupuesta según el alcance y lo que ya tenga el despacho.
+Sistema RedVitalia: desde 400 € netos al mes + 84 € de IVA (484 €). La inversión publicitaria se paga aparte a las plataformas. La preparación de landing, medición y herramientas se presupuesta según el alcance y lo que ya tenga el despacho.
 Antes de empezar recibirás una propuesta con todos los importes, responsabilidades y condiciones.
 
 PREGUNTAS FRECUENTES
@@ -386,66 +386,74 @@ Revisemos el siguiente paso de tus consultas.
 Completa tus datos profesionales y cuéntanos qué servicio quieres impulsar.
 
 FORMULARIO
-Nombre · Despacho · Web (opcional) · Email profesional · Especialidad · Zona · Canal preferido; teléfono solo si elige llamada.
+Nombre · Empresa o despacho · Teléfono · Canal preferido (WhatsApp o llamada) · Consentimiento para atender la solicitud.
 Botón: Solicitar diagnóstico de captación
 Texto de finalidad: Usaremos estos datos para atender tu solicitud de diagnóstico y acordar el siguiente paso. Consulta la información de privacidad de RedVitalia.
 [Insertar identificación real del responsable y enlace a política vigente. Cualquier suscripción comercial adicional será opcional y separada.]
 
 PÁGINA DE GRACIAS
-Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a {{contacto}}. No envíes documentación de tus clientes.`),
- s('anuncio-a','creativos','Anuncio A · siguiente paso','Anuncio','Acompaña al creativo vertical de RedVitalia.',`TEXTO PRINCIPAL
-La captación de un despacho sigue después del formulario. ¿Quién responde? ¿Qué consultas encajan? ¿Cuáles llegan a una cita?
-
-En RedVitalia revisamos ese recorrido por especialidad y zona, y proponemos un piloto con seguimiento hasta el asunto aceptado.
-
-Solicita un diagnóstico de captación para tu despacho.
+Solo mostrar este mensaje después de confirmar recepción en el CRM: «Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a {{contacto}}. No envíes documentación de tus clientes». Si falla la entrega, informar y ofrecer contacto directo sin registrar un lead recibido.`),
+ s('anuncio-a','creativos','E1 · Boca a boca','Anuncio','Versión recomendada de la campaña Meta; todas las variantes están en el estudio de anuncios.',`TEXTO PRINCIPAL
+Abogados: las recomendaciones son valiosas. ¿Y si vuestro despacho también tuviera una forma de darse a conocer a quienes todavía no os conocen? Sistema RedVitalia desde 400 €/mes + IVA. Inversión publicitaria aparte. Hablemos de tu despacho y del alcance de la propuesta.
 
 TITULAR
-Cada consulta, un siguiente paso
+Abogados, más allá del boca a boca
 
 DESCRIPCIÓN
-Captación, filtro y seguimiento.
+Desde 400 €/mes + IVA
 
 BOTÓN
 Más información
 
 DESTINO
-Landing B2B de RedVitalia configurada y probada antes de anunciar.`),
- s('anuncio-b','creativos','Anuncio B · ver el recorrido','Anuncio','Acompaña al creativo cuadrado del recorrido.',`TEXTO PRINCIPAL
-Una consulta, una cita y un asunto aceptado son momentos distintos. Verlos por separado ayuda a decidir dónde invertir y qué mejorar.
-
-RedVitalia conecta captación y seguimiento para despachos de abogados. Empezamos por una especialidad, una zona y una revisión de vuestro proceso actual.
-
-Revisemos tu captación.
+/abogados/redvitalia.html · Copia el enlace identificado de la pieza en /abogados/anuncios.html.`),
+ s('anuncio-b','creativos','E3 · Especialidad','Anuncio','Versión recomendada de la campaña Meta; todas las variantes están en el estudio de anuncios.',`TEXTO PRINCIPAL
+Abogados: herencias, familia e insolvencia no empiezan con la misma pregunta. La captación debe explicar el servicio que vuestro despacho quiere impulsar. Sistema RedVitalia desde 400 €/mes + IVA. Inversión publicitaria aparte. Hablemos de tu despacho y del alcance de la propuesta.
 
 TITULAR
-Del contacto al asunto aceptado
+Abogados: vuestra especialidad
 
 DESCRIPCIÓN
-Diagnóstico para despachos.
+Desde 400 €/mes + IVA
 
 BOTÓN
-Más información`),
- s('google-b2b','creativos','Google Ads · captar despachos','Anuncio','Titulares cortos de partida; validar combinaciones y destino.',`TITULARES
+Más información
+
+DESTINO
+/abogados/redvitalia.html · Copia el enlace identificado de la pieza en /abogados/anuncios.html.`),
+ s('google-b2b','creativos','Performance Max · Sistema para abogados','Anuncio','Una campaña y un grupo de recursos. Usar los textos y el plan del estudio de anuncios.',`15 TITULARES
+Para abogados
+Abogados: desde 400 €/mes
+Sistema RedVitalia: abogados
+Captación para abogados
+Abogados, más visibilidad
+Abogados: más que referidos
+Abogados: cada consulta cuenta
+Abogados: ordena la captación
 Marketing para abogados
-Captación para despachos
-RedVitalia para abogados
-Revisa tu captación
-Consultas con seguimiento
-Un diagnóstico de captación
+Abogados: consultas y citas
+Un sistema para abogados
+Abogados: siguiente paso
+Abogados: foco en el despacho
+Abogados: citas y seguimiento
+Abogados: un plan comercial
 
-DESCRIPCIONES
-Conecta captación, filtro y seguimiento. Revisemos el proceso de tu despacho.
-Una especialidad y una zona. Define un piloto con presupuesto y medición claros.
-Gestión Google Ads: 400 € + IVA/mes. Medios y preparación aparte. Consulta alcance.
+5 TITULARES LARGOS
+Abogados, más allá del boca a boca: Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: captación y seguimiento con el Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: da visibilidad a tu especialidad. Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: revisemos el camino a la cita. Sistema RedVitalia desde 400 €/mes + IVA.
+Abogados: conoce el Sistema RedVitalia desde 400 €/mes + IVA. Publicidad aparte.
 
-BÚSQUEDAS DE PARTIDA
-«agencia marketing abogados», «captación clientes despachos», «google ads abogados».
-Negativas iniciales a revisar: empleo, prácticas, curso, oposición, estudiar. Excluir intención de contratar un abogado particular cuando aparezca.
+5 DESCRIPCIONES
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Publicidad aparte. Hablemos.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Definimos el alcance. Medios aparte.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Especialidad y zona. Medios aparte.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Revisemos tu proceso. Medios aparte.
+Abogados: Sistema RedVitalia desde 400 €/mes + IVA. Solicita una propuesta. Medios aparte.
 
-ENLACES PROPUESTOS
-Cómo trabajamos · Qué medimos · Inversión · Solicitar diagnóstico
-Crear destinos reales y útiles antes de cargarlos.`),
+DESTINO
+/abogados/redvitalia.html · Desactivar expansión de URL final para evitar el panel y las demos jurídicas. Las señales de audiencia orientan, pero no restringen PMax solo a abogados. Configuración completa en /abogados/anuncios.html.`),
  s('post-linkedin','creativos','Publicación de autoridad · LinkedIn','Publicación','Útil para perfil o página de RedVitalia, sin fingir resultados.',`Una consulta jurídica no es todavía un cliente.
 
 Entre ambos hay varias decisiones: responder, confirmar que el asunto encaja, reservar una cita, asistir y aceptar el encargo.
@@ -462,18 +470,23 @@ En RedVitalia proponemos empezar con cinco datos:
 La pregunta útil es dónde se detiene la siguiente oportunidad y qué se puede mejorar ahí.
 
 Si diriges un despacho y quieres revisar este proceso, puedes pedirnos un diagnóstico de captación.`),
- s('video-anuncio','creativos','Guion de vídeo · 35 segundos','Vídeo','Una persona real del equipo o piezas gráficas; sin testimonios ficticios.',`0–5 s · Texto en pantalla: «¿Qué pasa después del formulario?»
-Voz: Una persona pide información a un despacho. Ahí empieza el trabajo de convertir esa consulta en una conversación útil.
+ s('video-anuncio','creativos','Vídeos de campaña · 20 segundos','Vídeo','Tres montajes descargables: vertical, cuadrado y horizontal. Sin locución.',`0–4 s · Abogados, más allá del boca a boca.
+4–8 s · Abogados: que cada consulta tenga seguimiento.
+8–12 s · Abogados: vuestra especialidad merece más visibilidad.
+12–16 s · Abogados: de las consultas a las citas.
+16–20 s · Abogados: crecer también necesita un sistema.
 
-5–15 s · Pantalla: Consulta → Contacto → Cita
-Voz: Hay que responder, comprobar que encaja y acordar un siguiente paso. Cada salto puede medirse.
+EN CADA ESCENA
+Sistema RedVitalia
+Desde 400 €/mes
++ IVA · Publicidad aparte
 
-15–26 s · Pantalla: Cita asistida → Asunto aceptado
-Voz: En RedVitalia revisamos la captación por especialidad y zona, conectando campañas, filtro y seguimiento hasta el resultado que registra el despacho.
+IMÁGENES
+Teléfono amarillo, expediente granate, abogada ilustrativa, calendario naranja y despacho. Cada escena identifica explícitamente al abogado y conserva el precio visible.
 
-26–35 s · Marca y CTA
-Voz: Si quieres saber qué mejorar primero, solicita un diagnóstico de captación para tu despacho.
-Pantalla: «RedVitalia · Solicita un diagnóstico».`),
+DESCARGA
+/abogados/anuncios.html#videos
+Los vídeos son montajes de las composiciones generadas, sin testimonios ni resultados atribuidos. Para PMax, subir los MP4 a YouTube y elegirlos como recursos de la campaña.`),
  s('referencia','creativos','Pedir una presentación a un contacto','Mensaje','Solo a una relación existente y cuando sea pertinente.',`Hola, {{nombre}}. Estoy preparando diagnósticos de captación para despachos que quieran trabajar {{especialidad}}. Revisamos cómo pasan las consultas a citas y asuntos aceptados.
 
 Si conoces un despacho al que le pueda interesar, puedes comentárselo y, si quiere, presentarnos o pasarle mi contacto: {{contacto}}. Prefiero que sea el despacho quien confirme interés antes de escribirle.
@@ -667,7 +680,7 @@ No contar como ingresos de RedVitalia el dinero que el despacho paga directament
 REVISIÓN DEL VIERNES
 ¿Dónde cae más el recorrido? ¿Qué dicen las objeciones reales? ¿Qué tarea cambiaremos la semana siguiente? Mantener las cohortes por fecha para no enfrentar contratos antiguos a contactos nuevos.`),
  s('prueba-ejemplo','control','Ejemplo numérico del despacho','Ejemplo','Datos ficticios para entender el cálculo; no son resultados de RedVitalia.',`EJEMPLO DIDÁCTICO · NO ES UNA PREVISIÓN
-Medios: 1.200 € · Gestión: 400 € · Preparación imputada: 300 € · Herramientas y atención: 100 €.
+Medios: 1.200 € · Cuota de entrada del sistema: 400 € · Preparación imputada: 300 € · Herramientas y atención: 100 €.
 Coste total neto imputado: 2.000 €.
 Honorario medio efectivamente cobrado por asunto: 2.500 €.
 Margen de contribución antes de captación: 40 % = 1.000 € por asunto.

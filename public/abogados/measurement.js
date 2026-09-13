@@ -5,8 +5,10 @@
   const name=location.pathname.split('/').pop().replace(/\.html$/,'');
   const pageId=knownPages.includes(name)?name:'resource';
   const pageKind=pageId==='redvitalia'?'commercial':['segunda-oportunidad','herencias','divorcios'].includes(pageId)?'demo':'resource';
-  const campaignValue=new URLSearchParams(location.search).get('utm_content')||'';
-  const campaign=/^e[1-5]_(feed|square|story)$/i.test(campaignValue)?campaignValue.toLowerCase():'direct';
+  const campaignParams=new URLSearchParams(location.search),campaignValue=campaignParams.get('utm_content')||'';
+  const paidCampaign=campaignParams.get('utm_campaign')==='sistema_redvitalia_abogados';
+  const sourceCampaign=paidCampaign&&campaignParams.get('utm_source')==='google'&&campaignParams.get('utm_medium')==='cpc'?'pmax_campaign':paidCampaign&&campaignParams.get('utm_source')==='meta'&&campaignParams.get('utm_medium')==='paid_social'?'meta_campaign':'direct';
+  const campaign=/^e[1-5]_(feed|square|story|meta_(feed|square|story)|pmax_(wide|square|portrait))$/i.test(campaignValue)?campaignValue.toLowerCase():sourceCampaign;
   const allowed=['page_view','contact_widget_open','contact_channel_select','contact_form_start','generate_lead','contact_whatsapp_click','contact_phone_click','contact_submit_error','asset_download','diagnostic_complete'];
   window.dataLayer=window.dataLayer||[];
   let choice=null,loaded=false,pageSent=false;
@@ -15,7 +17,7 @@
   const api={pageId,pageKind,campaign,consent:choice===true,track};window.RedVitaliaMetrics=api;
   function track(event,values={}){
     if(!allowed.includes(event)||!api.consent)return;
-    const event_data={page_id:pageId,page_kind:pageKind,campaign,contact_channel:['phone','whatsapp'].includes(values.contact_channel)?values.contact_channel:'none',asset_id:/^(e[1-5]_(feed|square|story)|html_kit|ads_kit|gtm_container|manual|other_resource)$/.test(values.asset_id||'')?values.asset_id:'none'};
+    const event_data={page_id:pageId,page_kind:pageKind,campaign,contact_channel:['phone','whatsapp'].includes(values.contact_channel)?values.contact_channel:'none',asset_id:/^(e[1-5]_(feed|square|story|meta_(feed|square|story)|pmax_(wide|square|portrait))|html_kit|ads_kit|gtm_container|manual|other_resource)$/.test(values.asset_id||'')?values.asset_id:'none'};
     window.dataLayer.push({event:'rv_'+event,event_data});
   }
   function enable(){
@@ -45,8 +47,8 @@
     if(event.target.closest('[data-privacy-settings]')){panel.hidden=false;panel.querySelector('button').focus();}
     const link=event.target.closest('a[download]');if(!link)return;
     const filename=(link.getAttribute('href')||'').split('/').pop();
-    const asset=filename.match(/^redvitalia_(E[1-5]_(?:feed|square|story))\.png$/i);
-    track('asset_download',{asset_id:asset?asset[1].toLowerCase():/GTM/.test(filename)?'gtm_container':/anuncios/.test(filename)?'ads_kit':/kit/.test(filename)?'html_kit':/manual/.test(filename)?'manual':'other_resource'});
+    const asset=filename.match(/^redvitalia_(E[1-5]_(?:feed|square|story|meta_(?:feed|square|story)|pmax_(?:wide|square|portrait)))\.png$/i);
+    track('asset_download',{asset_id:asset?asset[1].toLowerCase():/GTM/.test(filename)?'gtm_container':/anuncios|Sistema-RedVitalia-(?:Meta|PMax)/.test(filename)?'ads_kit':/kit/.test(filename)?'html_kit':/manual/.test(filename)?'manual':'other_resource'});
   });
   const footer=document.querySelector('footer');if(footer){const button=document.createElement('button');button.type='button';button.className='rv-privacy-link';button.dataset.privacySettings='';button.textContent='Preferencias de privacidad';footer.appendChild(button);}
   if(active&&choice===null)panel.hidden=false;enable();

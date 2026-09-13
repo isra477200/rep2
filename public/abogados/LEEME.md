@@ -1,6 +1,6 @@
 # Kit RedVitalia · Abogados
 
-Abre index.html para explorar la colección. Incluye cuatro landings completas, CSS y JavaScript locales, imágenes WebP, manual comercial, plantilla CSV y 15 anuncios PNG en tres formatos, contenedor GTM y guía de GoHighLevel.
+Abre index.html para explorar la colección. Incluye cuatro landings completas, CSS y JavaScript locales, imágenes WebP, manual comercial, plantilla CSV y 30 imágenes de campaña para Meta y Performance Max, tres vídeos y sus textos, contenedor GTM y guía de GoHighLevel.
 
 La landing redvitalia.html prepara mensajes para +34 919 935 237: el visitante elige WhatsApp o llamada; los datos se registran en GoHighLevel cuando su integración está configurada y confirma recepción. Si no lo está, se informa del fallo y se ofrece contacto directo. Las otras tres páginas son demostraciones sin recogida de datos jurídicos.
 

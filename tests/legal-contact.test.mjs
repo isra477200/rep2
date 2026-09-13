@@ -9,6 +9,7 @@ test('contact validation requires consent, a real phone shape, company and suppo
  assert.equal(parseLegalContact(sample).phone,'+34919935237');
  for(const fields of [{consent:false},{phone:'123'},{name:' '},{company:''},{channel:'email'},{website:'bot'}])assert.equal(parseLegalContact({...sample,...fields}),null);
  assert.equal(parseLegalContact({...sample,source_page:'https://x/?name=private',campaign:'phone_919935237'}).campaign,'direct');
+ for(const campaign of ['e1_meta_feed','e2_meta_story','e3_pmax_wide','e5_pmax_portrait','pmax_campaign','meta_campaign'])assert.equal(parseLegalContact({...sample,campaign}).campaign,campaign);
  assert.equal(legalContactWebhook('http://services.leadconnectorhq.com/hooks/x'),null);
  assert.equal(legalContactWebhook('https://services.leadconnectorhq.com.evil.test/hooks/x'),null);
  assert.equal(legalContactWebhook('https://services.leadconnectorhq.com/contacts/'),null);
