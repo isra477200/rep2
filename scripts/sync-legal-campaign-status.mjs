@@ -1,0 +1,20 @@
+import {readFile,writeFile} from 'node:fs/promises';
+const out=new URL('../public/abogados/',import.meta.url);
+const status=JSON.parse(await readFile(new URL('campaign-status.json',out),'utf8'));
+const metaConfig=JSON.parse(await readFile(new URL('ads/meta-configuracion.json',out),'utf8'));
+if(status.meta?.campaignId){Object.assign(metaConfig,{status:'CREATED_PAUSED_REVIEW_PENDING',campaignId:status.meta.campaignId,account:status.meta.accountId,page:status.meta.pageId,dailyBudget:20,location:'España',adsets:status.meta.adsets,adsCreated:status.meta.ads,conversion:'LINK_CLICKS — no optimiza a formulario; pendiente de píxel y conversión verificados',verifiedAt:status.meta.verifiedAt,activationPerformed:false});await writeFile(new URL('ads/meta-configuracion.json',out),JSON.stringify(metaConfig,null,2));}
+let html=await readFile(new URL('anuncios.html',out),'utf8');
+html=html.replaceAll('<script src="operations.js" defer></script>','');
+html=html.replace('<script src="ads.js" defer></script>','<script src="ads.js" defer></script><script src="operations.js" defer></script>');
+html=html.replace('Cinco ideas distintas.<br><em>Un sistema reconocible.</em>','Tus campañas para abogados.<br><em>Los anuncios, terminados.</em>');
+html=html.replace('Para que un abogado se vea reflejado desde el primer vistazo. Una oferta común, cinco historias visuales y cada formato preparado para su plataforma.','Cinco mensajes distintos, una oferta clara y formatos para Meta Ads y Performance Max. Cada imagen identifica al abogado, el Sistema RedVitalia y el precio desde 400 €/mes.');
+html=html.replace('<a class="text-link" href="ads/GUIA-PUBLICACION.md" download>Plan de las dos campañas ↓</a>','<a class="text-link" href="index.html">Abrir el sistema y las campañas ↗</a>');
+html=html.replace(/<details class="ad-strategy">[\s\S]*?<\/details>/g,'');
+const initial=html.indexOf('<section class="wrap section"><div class="soft-box"><span class="eyebrow">LAS DOS CAMPAÑAS');
+const a=initial>=0?initial:html.indexOf('<section class="wrap section"><div class="soft-box"><span class="eyebrow">CAMPAÑAS EN LAS PLATAFORMAS'),b=html.indexOf('</main>',a);
+if(a>=0&&b>a)html=html.slice(0,a)+`<section class="wrap section"><div class="soft-box"><span class="eyebrow">CAMPAÑAS EN LAS PLATAFORMAS</span><h2>El trabajo continúa en tu cuenta.</h2><p data-campaign-evidence="meta">${status.meta?.evidence||''}</p><a class="button" data-campaign-link="meta" href="${status.meta?.url||'index.html'}">Abrir campaña en Meta ↗</a><p style="margin-top:25px" data-campaign-evidence="pmax">${status.pmax?.evidence||''}</p><a class="button quiet" data-campaign-link="pmax" href="${status.pmax?.url||'index.html'}">Ver Performance Max ↗</a><p class="fine" style="margin-top:25px">La inversión permanece desactivada. El presupuesto de preparación no supone autorización de gasto. La revisión y las conversiones se comprueban en cada plataforma.</p></div></section>`+html.slice(b);
+await writeFile(new URL('anuncios.html',out),html);
+const pmaxConfig=JSON.parse(await readFile(new URL('ads/pmax-configuracion.json',out),'utf8'));
+Object.assign(pmaxConfig,{status:status.pmax.status,accountId:status.pmax.accountId,created:false,activationPerformed:false,blockingReason:status.pmax.evidence});
+await writeFile(new URL('ads/pmax-configuracion.json',out),JSON.stringify(pmaxConfig,null,2));
+console.log('Published platform campaign states synchronized.');

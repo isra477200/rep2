@@ -1,9 +1,9 @@
 {
   "exportFormatVersion": 2,
-  "exportTime": "2026-09-13T14:59:11.021Z",
+  "exportTime": "2026-09-13T16:13:43.450Z",
   "containerVersion": {
     "name": "RedVitalia · Abogados · Medición v2",
-    "description": "Importar combinando en un espacio de trabajo nuevo. Configurar RV · GA4 ID. El sitio carga GTM solo después de consentimiento. Etiquetas HTML utilizan el snippet gtag oficial. Desactivar medición mejorada automática del flujo para evitar formularios, enlaces WhatsApp y URLs con datos personales. No incluye píxel Meta ni Google Ads.",
+    "description": "Importar combinando en un espacio de trabajo nuevo. Destino verificado G-QRQEMYM8NH. La web usa GA4 directamente mientras gtmId está vacío; al configurar GTM se desactiva la carga directa, evitando duplicados. El sitio carga GTM solo después de consentimiento. Etiquetas HTML utilizan el snippet gtag oficial. Desactivar medición mejorada automática del flujo para evitar formularios, enlaces WhatsApp y URLs con datos personales. No incluye píxel Meta ni Google Ads.",
     "container": {
       "name": "RedVitalia · Abogados",
       "usageContext": [
@@ -496,7 +496,7 @@
           {
             "type": "TEMPLATE",
             "key": "value",
-            "value": "G-REPLACE_ME"
+            "value": "G-QRQEMYM8NH"
           }
         ]
       },

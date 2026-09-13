@@ -1,14 +1,14 @@
 {
-  "status": "PREPARED_NOT_CREATED",
+  "status": "CREATED_PAUSED_REVIEW_PENDING",
   "campaign": "RV | Sistema | Abogados | Meta | Leads",
   "objective": "OUTCOME_LEADS",
   "adset": "Abogados | Prospección | Zona por confirmar",
-  "account": null,
-  "page": null,
+  "account": "2346977792090732",
+  "page": "820898124443906",
   "instagramAccount": null,
-  "dailyBudget": null,
-  "location": null,
-  "conversion": "CRM delivery confirmed; connect and verify Meta lead measurement before launch",
+  "dailyBudget": 20,
+  "location": "España",
+  "conversion": "LINK_CLICKS — no optimiza a formulario; pendiente de píxel y conversión verificados",
   "ads": [
     {
       "id": "E1",
@@ -230,5 +230,90 @@
         }
       ]
     }
-  ]
+  ],
+  "campaignId": "120251027730570263",
+  "adsets": [
+    "120251027753870263",
+    "120251027753560263",
+    "120251027732130263"
+  ],
+  "adsCreated": [
+    {
+      "id": "120251027736670263",
+      "preview": "https://fb.me/2N5LZAdcgRWSI2g",
+      "asset": "/abogados/ads/images/redvitalia_E1_meta_feed.png"
+    },
+    {
+      "id": "120251027737450263",
+      "preview": "https://fb.me/2pXK7DLqQ2kkTEe",
+      "asset": "/abogados/ads/images/redvitalia_E2_meta_feed.png"
+    },
+    {
+      "id": "120251027737780263",
+      "preview": "https://fb.me/yXhJYozOBqPnG2W",
+      "asset": "/abogados/ads/images/redvitalia_E3_meta_feed.png"
+    },
+    {
+      "id": "120251027738260263",
+      "preview": "https://fb.me/282wqK7PPEgHLzl",
+      "asset": "/abogados/ads/images/redvitalia_E4_meta_feed.png"
+    },
+    {
+      "id": "120251027738840263",
+      "preview": "https://fb.me/28o5hQYT0DPgMfw",
+      "asset": "/abogados/ads/images/redvitalia_E5_meta_feed.png"
+    },
+    {
+      "id": "120251027758010263",
+      "preview": "https://fb.me/2io07JwGI09rega",
+      "asset": "/abogados/ads/images/redvitalia_E1_meta_story.png"
+    },
+    {
+      "id": "120251027762080263",
+      "preview": "https://fb.me/1Wd5hK2hUqo40zr",
+      "asset": "/abogados/ads/images/redvitalia_E2_meta_story.png"
+    },
+    {
+      "id": "120251027764160263",
+      "preview": "https://fb.me/1VVCsNBYy3DnrOV",
+      "asset": "/abogados/ads/images/redvitalia_E3_meta_story.png"
+    },
+    {
+      "id": "120251027765020263",
+      "preview": "https://fb.me/1Ut4s5lBNFKCfal",
+      "asset": "/abogados/ads/images/redvitalia_E4_meta_story.png"
+    },
+    {
+      "id": "120251027766190263",
+      "preview": "https://fb.me/2ZWtEMdi1wawUBF",
+      "asset": "/abogados/ads/images/redvitalia_E5_meta_story.png"
+    },
+    {
+      "id": "120251027771080263",
+      "preview": "https://fb.me/366OYm2nxGsZfLB",
+      "asset": "/abogados/ads/images/redvitalia_E1_meta_square.png"
+    },
+    {
+      "id": "120251027772230263",
+      "preview": "https://fb.me/22GLPlgeThLkdVr",
+      "asset": "/abogados/ads/images/redvitalia_E2_meta_square.png"
+    },
+    {
+      "id": "120251027773430263",
+      "preview": "https://fb.me/22glBnGoz0tQJpr",
+      "asset": "/abogados/ads/images/redvitalia_E3_meta_square.png"
+    },
+    {
+      "id": "120251027774170263",
+      "preview": "https://fb.me/2n3tHzJFTWDUcEE",
+      "asset": "/abogados/ads/images/redvitalia_E4_meta_square.png"
+    },
+    {
+      "id": "120251027774980263",
+      "preview": "https://fb.me/23BhjJc9uxl4dbD",
+      "asset": "/abogados/ads/images/redvitalia_E5_meta_square.png"
+    }
+  ],
+  "verifiedAt": "2026-09-13T16:00:30.686Z",
+  "activationPerformed": false
 }

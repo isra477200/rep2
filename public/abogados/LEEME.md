@@ -1,11 +1,11 @@
-# Kit RedVitalia · Abogados
+# Sistema RedVitalia · Abogados
 
-Abre index.html para explorar la colección. Incluye cuatro landings completas, CSS y JavaScript locales, imágenes WebP, manual comercial, plantilla CSV y 30 imágenes de campaña para Meta y Performance Max, tres vídeos y sus textos, contenedor GTM y guía de GoHighLevel.
+Centro operativo: https://redvitalia.srv1480016.hstgr.cloud/abogados/index.html
 
-La landing redvitalia.html prepara mensajes para +34 919 935 237: el visitante elige WhatsApp o llamada; los datos se registran en GoHighLevel cuando su integración está configurada y confirma recepción. Si no lo está, se informa del fallo y se ofrece contacto directo. Las otras tres páginas son demostraciones sin recogida de datos jurídicos.
+Landing comercial con formularios nativos de GoHighLevel para WhatsApp y llamada, contacto 919 935 237, circuito de recepción publicado, mesa comercial con guiones y correos terminados, 30 imágenes y 3 vídeos. El estado real de las campañas está en campaign-status.json y en el centro operativo.
 
-Antes de campañas: completar identidad fiscal/legal de RedVitalia y política de conversaciones; configurar dominio y medición elegida. En cada despacho: identidad/colegiación, zona, alcance y honorarios de consulta, privacidad, canal de recepción y validación jurídica. No quitar el aviso demo ni habilitar captación hasta completarlo.
+La campaña Meta está creada y pausada. Google Ads requiere confirmar la identidad del propietario antes de guardar la campaña PMax. Ninguna campaña se ha activado.
 
-Sin dependencias externas ni librerías remotas. Las imágenes son originales generadas con la herramienta integrada de imagen; no son instalaciones ni clientes reales. Los PNG originales y prompts se conservan en la entrega local.
+La medición GA4 utiliza G-QRQEMYM8NH después del consentimiento. El contenedor GTM descargable contiene ese mismo destino. Los tres modelos jurídicos son demostraciones para mostrar a despachos, no formularios de asistencia jurídica.
 
-Regeneración: node --experimental-strip-types scripts/build-legal-landings.mjs. Los estilos y el comportamiento se editan en public/abogados/landing.css y landing.js.
+Los archivos HTML permiten revisar el material descargado. El sistema de recepción requiere conexión a Internet. Las imágenes son ilustrativas, generadas para esta campaña.

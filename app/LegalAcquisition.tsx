@@ -5,7 +5,7 @@ import { chapters, evidence, profiles, scripts, sourceNotes } from './legal-acqu
 import { buildDossier, clientEconomics, contextLabels, defaultContext, fillText, matchingScripts, pendingFields, prospectCsv, readSavedContext, readSavedProgress, type EconomicsInput, type LegalContext } from './legal-acquisition-model';
 import styles from './LegalAcquisition.module.css';
 
-type Page = 'ruta' | 'biblioteca' | 'evidencia' | 'numeros';
+type Page = 'operacion' | 'ruta' | 'biblioteca' | 'evidencia' | 'numeros';
 const storageKey = 'redvitalia.abogados.v1';
 const money = (value: number) => new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 2 }).format(value);
 function download(name: string, content: string, mime = 'text/markdown;charset=utf-8') {
@@ -35,7 +35,7 @@ export default function LegalAcquisition({onOpenCompany}: {onOpenCompany: (id: s
  const [loaded, setLoaded] = useState(false);
  const [saved, setSaved] = useState('');
  const working = useRef<{context: LegalContext; complete: string[]}>({context:defaultContext,complete:[]});
- const [page, setPage] = useState<Page>('ruta');
+ const [page, setPage] = useState<Page>('operacion');
  const [active, setActive] = useState(chapters[0].id);
  const [query, setQuery] = useState('');
  const [chapterFilter, setChapterFilter] = useState('');
@@ -64,8 +64,9 @@ export default function LegalAcquisition({onOpenCompany}: {onOpenCompany: (id: s
  const chapter = chapters.find(c=>c.id===active) ?? chapters[0];
  const selectedScripts = matchingScripts(query, chapterFilter);
  const calculation = clientEconomics(economics);
+ if(page==='operacion')return <div style={{height:'calc(100dvh - 30px)',minHeight:700,display:'flex',flexDirection:'column'}}><iframe title="Sistema RedVitalia para captar abogados" src="/abogados/index.html" style={{flex:1,width:'100%',border:0,minHeight:600}}/><button className={styles.textButton} style={{padding:12}} onClick={()=>setPage('ruta')}>Abrir biblioteca de investigación y guiones anteriores ↗</button></div>;
  return <div className={styles.shell}>
-  <header className={styles.hero}>
+  <button className={styles.textButton} onClick={()=>setPage('operacion')}>← Volver al sistema de captación</button><header className={styles.hero}>
    <div><span className={styles.eyebrow}>REDVITALIA / PLAN COMERCIAL · ESPAÑA</span><h1>El próximo cliente:<br/><em>un despacho de abogados.</em></h1><p>Una ruta para encontrarlo, abrir conversación, presentar la propuesta y poner el servicio en marcha. Con cada texto a mano.</p>
     <div className={styles.heroActions}><button onClick={()=>{setPage('ruta');openChapter('llamadas');}}>Ir al guion de llamada ↗</button><button className={styles.secondary} onClick={()=>download('RedVitalia-abogados-manual.md',buildDossier(context))}>Descargar manual completo ↓</button></div>
    </div><aside className={styles.heroAside}><span>EMPEZAMOS POR</span><strong>{profile.name}</strong><p>Un servicio y una zona para validar la oferta.</p><div><b>{scripts.length}</b><span>textos utilizables</span></div><div><b>12</b><span>pasos de trabajo</span></div><div><b>30</b><span>imágenes para Meta y PMax</span></div></aside>

@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_NOT_CREATED",
+  "status": "AUTHENTICATION_REQUIRED_NOT_SAVED",
   "offer": {
     "name": "Sistema RedVitalia",
     "price": "Desde 400 €/mes",
@@ -287,5 +287,9 @@
     "videos/Sistema-RedVitalia-square.mp4",
     "videos/Sistema-RedVitalia-vertical.mp4"
   ],
-  "note": "Manual configuration reference, not a Google Ads API or Editor import payload. Upload videos to YouTube. Confirm budgets, account, service scope and conversion before activation."
+  "note": "Manual configuration reference, not a Google Ads API or Editor import payload. Upload videos to YouTube. Confirm budgets, account, service scope and conversion before activation.",
+  "accountId": "2850588745",
+  "created": false,
+  "activationPerformed": false,
+  "blockingReason": "15 imágenes, 2 logotipos y textos terminados. Google Ads exige confirmar la identidad del propietario con su llave de acceso antes de guardar. La campaña todavía no está creada ni activa."
 }

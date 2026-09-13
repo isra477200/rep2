@@ -3,15 +3,30 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFileSync} from 'node:fs';
 const base=new URL('../public/abogados/',import.meta.url);
-function harness(id='',search='?utm_content=e2_feed&name=PRIVATE&phone=919935237'){
+function harness(id='',search='?utm_content=e2_feed&name=PRIVATE&phone=919935237',ga4Id=''){
  const scripts=[],handlers={},nodes={};
  function node(){return {hidden:true,dataset:{},setAttribute(){},addEventListener:(e,fn)=>{},focus(){},querySelector(selector){return nodes[selector]??=( {focus(){},addEventListener:(event,fn)=>{handlers[selector+event]=fn;}});}};}
- const panel=node();const document={cookie:'',createElement:tag=>tag==='section'?panel:{},body:{appendChild(){}},head:{appendChild:s=>scripts.push(s)},addEventListener:(e,fn)=>handlers[e]=fn,querySelector:()=>null};
+ const panel=node();const document={cookie:'',createElement:tag=>tag==='section'?panel:{},body:{appendChild(){}},head:{appendChild:s=>scripts.push(s)},addEventListener:(e,fn)=>handlers[e]=fn,dispatchEvent(){},querySelector:()=>null};
  const values=new Map();const localStorage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};
- const window={REDVITALIA_CONFIG:{gtmId:id}};const location={pathname:'/abogados/redvitalia.html',search,origin:'https://redvitalia.srv1480016.hstgr.cloud',hostname:'redvitalia.srv1480016.hstgr.cloud'};
- vm.runInNewContext(readFileSync(new URL('measurement.js',base),'utf8'),{window,document,location,localStorage,URLSearchParams,Date});
- return {window,scripts,handlers,panel};
+ const window={REDVITALIA_CONFIG:{gtmId:id,ga4Id}};const location={pathname:'/abogados/redvitalia.html',search,origin:'https://redvitalia.srv1480016.hstgr.cloud',hostname:'redvitalia.srv1480016.hstgr.cloud'};
+ const context={window,document,location,localStorage,URLSearchParams,Date,Event};
+ vm.runInNewContext(readFileSync(new URL('measurement.js',base),'utf8'),context);
+ return {window,scripts,handlers,panel,context};
 }
+
+test('direct GA4 queues the first event, sends it once, and respects withdrawal',()=>{
+ const h=harness('','?phone=PRIVATE','G-QRQEMYM8NH');
+ assert.equal(h.scripts.length,0);h.handlers['[data-consent="yes"]click']();
+ assert.equal(h.scripts.length,1);assert.equal(h.scripts[0].src,'/abogados/ga4.js');
+ vm.runInNewContext(readFileSync(new URL('ga4.js',base),'utf8'),h.context);
+ assert.equal(h.window.dataLayer.filter(x=>x[0]==='event'&&x[1]==='page_view').length,1);
+ h.window.RedVitaliaMetrics.track('generate_lead',{contact_channel:'whatsapp',phone:'PRIVATE'});
+ assert.equal(h.window.dataLayer.filter(x=>x[0]==='event'&&x[1]==='generate_lead').length,1);
+ assert.ok(!JSON.stringify(h.window.dataLayer).includes('PRIVATE'));
+ h.handlers['[data-consent="no"]click']();h.window.RedVitaliaMetrics.track('generate_lead');
+ assert.equal(h.window.dataLayer.filter(x=>x[0]==='event'&&x[1]==='generate_lead').length,1);
+ h.handlers['[data-consent="yes"]click']();assert.equal(h.window.dataLayer.filter(x=>x[0]==='event'&&x[1]==='page_view').length,1);
+});
 test('tracking loads nothing before acceptance and never passes personal fields',()=>{
  const h=harness('GTM-TEST123');assert.equal(h.scripts.length,0);assert.equal(h.panel.hidden,false);
  h.window.RedVitaliaMetrics.track('generate_lead',{phone:'SECRET'});assert.equal(h.window.dataLayer.length,0);
