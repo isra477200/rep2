@@ -48,9 +48,9 @@ test('configured GA4 sends one explicit event with cleaned URLs and consent cont
  const events=window.dataLayer.filter(args=>args[0]==='event');assert.equal(events.length,1);assert.equal(events[0][2].contact_channel,'phone');assert.ok(!JSON.stringify(window.dataLayer).includes('PRIVATE'));
  window.RedVitaliaMetrics.consent=false;window.rvGA4Consent(false);window.rvSendGA4('generate_lead',{});assert.equal(window.dataLayer.filter(args=>args[0]==='event').length,1);assert.equal(window['ga-disable-G-TEST1234'],true);
 });
-test('container imports a closed event set, all references resolve and empty GA4 fails closed',()=>{
+test('container has a closed supported event set, all references resolve and empty GA4 fails closed',()=>{
  const json=JSON.parse(readFileSync(new URL('measurement/RedVitalia-GTM.json',base),'utf8'));assert.equal(json.exportFormatVersion,2);
- const c=json.containerVersion;assert.equal(c.tag.length,11);assert.equal(c.trigger.length,11);const triggerIds=new Set(c.trigger.map(x=>x.triggerId));
+ const c=json.containerVersion;assert.equal(c.tag.length,9);assert.equal(c.trigger.length,9);const triggerIds=new Set(c.trigger.map(x=>x.triggerId));
  for(const tag of c.tag){assert.ok(tag.firingTriggerId.every(x=>triggerIds.has(x)));assert.equal(tag.type,'html');}
  const init=c.tag[0].parameter.find(x=>x.key==='html').value.replace(/<\/?script>/g,'').replace('{{RV · GA4 ID}}','G-REPLACE_ME');
  const window={RedVitaliaMetrics:{consent:true}};vm.runInNewContext(init,{window});assert.equal(window.rvSendGA4,undefined);
@@ -66,4 +66,16 @@ test('paid campaign attribution keeps only known non-personal URL values',()=>{
   window.rvSendGA4('generate_lead',{});
   const event=window.dataLayer.find(args=>args[0]==='event');assert.match(event[2].page_location,new RegExp(`utm_content=${content}`));assert.ok(!JSON.stringify(window.dataLayer).includes('SECRET'));
  }
+});
+
+
+test('container exposes only events emitted by the current native contact flow',()=>{
+ const c=JSON.parse(readFileSync(new URL('measurement/RedVitalia-GTM.json',base),'utf8')).containerVersion;
+ const actual=c.trigger.map(t=>t.customEventFilter[0].parameter.find(p=>p.key==='arg1').value).sort();
+ const supported=['rv_analytics_ready','rv_page_view','rv_contact_widget_open','rv_contact_channel_select','rv_generate_lead','rv_contact_whatsapp_click','rv_contact_phone_click','rv_asset_download','rv_diagnostic_complete'].sort();
+ assert.deepEqual(actual,supported);
+ const h=harness('','', 'G-QRQEMYM8NH');h.handlers['[data-consent="yes"]click']();
+ const before=h.window.dataLayer.length;
+ for(const name of ['contact_form_start','contact_submit_error'])h.window.RedVitaliaMetrics.track(name,{contact_channel:'phone'});
+ assert.equal(h.window.dataLayer.length,before,'unobserved native form lifecycle must not become a reported metric');
 });

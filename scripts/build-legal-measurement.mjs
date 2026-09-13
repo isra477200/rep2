@@ -1,6 +1,6 @@
 import {mkdir,writeFile} from 'node:fs/promises';
 const out=new URL('../public/abogados/measurement/',import.meta.url);await mkdir(out,{recursive:true});
-const names=['page_view','contact_widget_open','contact_channel_select','contact_form_start','generate_lead','contact_whatsapp_click','contact_phone_click','contact_submit_error','asset_download','diagnostic_complete'];
+const names=['page_view','contact_widget_open','contact_channel_select','generate_lead','contact_whatsapp_click','contact_phone_click','asset_download','diagnostic_complete'];
 const trigger=(id,event)=>({triggerId:String(id),name:'RV · '+event,type:'CUSTOM_EVENT',customEventFilter:[{type:'EQUALS',parameter:[{type:'TEMPLATE',key:'arg0',value:'{{_event}}'},{type:'TEMPLATE',key:'arg1',value:event}]}]});
 const htmlTag=(id,name,html,triggerId)=>({tagId:String(id),name,type:'html',parameter:[{type:'TEMPLATE',key:'html',value:html},{type:'BOOLEAN',key:'supportDocumentWrite',value:'false'}],firingTriggerId:[String(triggerId)],tagFiringOption:'ONCE_PER_EVENT'});
 const bootstrap=`<script>(function(){
@@ -22,4 +22,4 @@ await writeFile(new URL('RedVitalia-GTM.json',out),JSON.stringify(container,null
 const direct=bootstrap.replace(/<\/?script>/g,'').replace("var id='{{RV · GA4 ID}}';", "var id=(window.REDVITALIA_CONFIG||{}).ga4Id;");
 const flush="\nif(window.rvSendGA4){for(const item of [...window.dataLayer]){if(item&&/^rv_(page_view|contact_widget_open|contact_channel_select|generate_lead|contact_whatsapp_click|contact_phone_click|asset_download|diagnostic_complete)$/.test(item.event||''))window.rvSendGA4(item.event.slice(3),item.event_data);}}\n";
 await writeFile(new URL('../ga4.js',out),direct+flush);
-console.log('Contenedor GTM: 11 etiquetas, 11 activadores y 2 variables.');
+console.log('Contenedor GTM: 9 etiquetas, 9 activadores y 2 variables.');

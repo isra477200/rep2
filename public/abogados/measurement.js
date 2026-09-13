@@ -9,7 +9,7 @@
   const paidCampaign=campaignParams.get('utm_campaign')==='sistema_redvitalia_abogados';
   const sourceCampaign=paidCampaign&&campaignParams.get('utm_source')==='google'&&campaignParams.get('utm_medium')==='cpc'?'pmax_campaign':paidCampaign&&campaignParams.get('utm_source')==='meta'&&campaignParams.get('utm_medium')==='paid_social'?'meta_campaign':'direct';
   const campaign=/^e[1-5]_(feed|square|story|meta_(feed|square|story)|pmax_(wide|square|portrait))$/i.test(campaignValue)?campaignValue.toLowerCase():sourceCampaign;
-  const allowed=['page_view','contact_widget_open','contact_channel_select','contact_form_start','generate_lead','contact_whatsapp_click','contact_phone_click','contact_submit_error','asset_download','diagnostic_complete'];
+  const allowed=['page_view','contact_widget_open','contact_channel_select','generate_lead','contact_whatsapp_click','contact_phone_click','asset_download','diagnostic_complete'];
   window.dataLayer=window.dataLayer||[];
   let choice=null,loaded=false,pageSent=false;
   try {const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved&&Date.now()-saved.at<183*86400000&&typeof saved.value==='boolean')choice=saved.value;}catch{/* Storage can be unavailable; keep consent in memory. */}

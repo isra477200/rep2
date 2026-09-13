@@ -2,7 +2,7 @@
 
 Centro operativo: https://redvitalia.srv1480016.hstgr.cloud/abogados/index.html
 
-Landing comercial con formularios nativos de GoHighLevel para WhatsApp y llamada, contacto 919 935 237, circuito de recepción publicado, mesa comercial con guiones y correos terminados, 30 imágenes y 3 vídeos. El estado real de las campañas está en campaign-status.json y en el centro operativo.
+Landing comercial con formularios nativos de GoHighLevel para WhatsApp y llamada, contacto Nidia Guerrero · 919 935 237, circuito de recepción publicado, mesa comercial con guiones y correos terminados, 30 imágenes y 3 vídeos. El estado real de las campañas está en campaign-status.json y en el centro operativo.
 
 La campaña Meta está creada y pausada. Google Ads requiere confirmar la identidad del propietario antes de guardar la campaña PMax. Ninguna campaña se ha activado.
 

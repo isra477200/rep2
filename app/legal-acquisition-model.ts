@@ -1,7 +1,7 @@
 import { chapters, profiles, scripts, evidence, sourceNotes } from './legal-acquisition-content.ts';
 
 export type LegalContext = { profile: string; zona: string; despacho: string; nombre: string; asesor: string; contacto: string; observacion: string; enlaceDiagnostico: string; cita: string; enlaceReunion: string };
-export const defaultContext: LegalContext = { profile: 'segunda-oportunidad', zona: '', despacho: '', nombre: '', asesor: '', contacto: 'WhatsApp: +34 919 935 237', observacion: '', enlaceDiagnostico: '', cita: '', enlaceReunion: '' };
+export const defaultContext: LegalContext = { profile: 'segunda-oportunidad', zona: '', despacho: '', nombre: '', asesor: 'Nidia Guerrero', contacto: '919 935 237', observacion: '', enlaceDiagnostico: '', cita: '', enlaceReunion: '' };
 export const contextLabels: Record<Exclude<keyof LegalContext, 'profile'>, string> = { zona: 'Ciudad o provincia', despacho: 'Nombre del despacho', nombre: 'Nombre de quien decide', asesor: 'Tu nombre', contacto: 'Tu email o teléfono profesional', observacion: 'Observación real de su web', enlaceDiagnostico: 'Enlace al diagnóstico preparado', cita: 'Fecha, hora y zona horaria de reunión', enlaceReunion: 'Enlace de reunión' };
 export function fillText(text: string, context: LegalContext): string {
  const profile = profiles.find(p => p.id === context.profile) ?? profiles[0];

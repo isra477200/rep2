@@ -5,5 +5,6 @@ window.REDVITALIA_CONFIG = Object.freeze({
   ghlForms: Object.freeze({phone:'cxXcdVJAXp9MBbRpm29d',whatsapp:'XMLHrXNBUMUlHOsFUvJH'}),
   contactEndpoint: '/api/legal-contact',
   phone: '34919935237',
-  displayPhone: '919 935 237'
+  displayPhone: '919 935 237',
+  contactName: 'Nidia Guerrero'
 });

@@ -94,7 +94,7 @@ Uso: Completa solo con observaciones que hayas comprobado.
 
 DIAGNÓSTICO DE CAPTACIÓN · [Nombre del despacho]
 Especialidad: Segunda Oportunidad · Zona: [Ciudad o provincia]
-Preparado por [Tu nombre], RedVitalia · Fecha: [fecha de revisión]
+Preparado por Nidia Guerrero, RedVitalia · Fecha: [fecha de revisión]
 Web revisada: [URL exacta]
 
 1. Lo que vemos
@@ -117,7 +117,7 @@ Una conversación de 20 minutos para confirmar capacidad, objetivo y alcance. Si
 
 Uso: Graba la pantalla real revisada. No muestres datos de clientes.
 
-Hola, [Nombre de quien decide]. Soy [Tu nombre], de RedVitalia. Te enseño una observación de la página de [Nombre del despacho] para Segunda Oportunidad.
+Hola, [Nombre de quien decide]. Soy Nidia Guerrero, de RedVitalia. Te enseño una observación de la página de [Nombre del despacho] para Segunda Oportunidad.
 
 [0–20 s · Mostrar la URL y el bloque exacto]
 Aquí se ve lo siguiente: [Observación real de su web]
@@ -151,7 +151,7 @@ Paso terminado cuando: Llamada registrada con encaje, oposición o permiso, resp
 
 Uso: Contacto profesional con legitimación comprobada.
 
-Buenos días. Soy [Tu nombre], de RedVitalia. Es una llamada comercial sobre la captación del despacho; si preferís no recibir estas llamadas, lo dejo anotado y no insistimos.
+Buenos días. Soy Nidia Guerrero, de RedVitalia. Es una llamada comercial sobre la captación del despacho; si preferís no recibir estas llamadas, lo dejo anotado y no insistimos.
 
 ¿Quién se encarga de decidir sobre captación y atención de nuevas consultas de Segunda Oportunidad?
 
@@ -171,7 +171,7 @@ Entendido, gracias. Dejo indicado que no contactemos de nuevo por esta propuesta
 
 Uso: Objetivo: encaje y permiso para el siguiente paso.
 
-Hola, ¿hablo con [Nombre de quien decide]? Soy [Tu nombre], de RedVitalia. Te llamo por una propuesta comercial para la captación de [Nombre del despacho]. Si prefieres que no volvamos a contactar, me lo dices y lo registramos.
+Hola, ¿hablo con [Nombre de quien decide]? Soy Nidia Guerrero, de RedVitalia. Te llamo por una propuesta comercial para la captación de [Nombre del despacho]. Si prefieres que no volvamos a contactar, me lo dices y lo registramos.
 
 ¿Te viene bien que te lo explique en medio minuto?
 
@@ -259,8 +259,8 @@ El Sistema RedVitalia parte de 400 € netos al mes + 84 € de IVA (484 €). L
 ¿Te parece que lo revisemos en una conversación de 20 minutos? Dime qué horario te viene bien y lo acordamos.
 
 Un saludo,
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 Te envío la información que has solicitado. Si prefieres que cerremos el seguimiento, responde a este correo y lo dejamos registrado.
 
@@ -280,8 +280,8 @@ Hemos separado lo que se ve en la página de lo que necesitamos confirmar con vo
 
 Si te encaja, lo vemos en 20 minutos y decidimos si merece preparar un piloto. ¿Qué horario te viene bien?
 
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 Si prefieres no continuar con esta propuesta, responde a este correo y cerramos el seguimiento.
 
@@ -298,8 +298,8 @@ Retomo una vez la información que me pediste sobre Segunda Oportunidad. Para sa
 Si la respuesta es sí, podemos revisar el recorrido de las consultas. Si no es prioridad, lo dejamos aquí.
 
 Gracias,
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 Puedes responder a este correo si no quieres más seguimiento.
 
@@ -319,8 +319,8 @@ En la reunión comprobaríamos si ese punto también aparece en vuestro proceso 
 
 ¿Quieres que lo comentemos o prefieres que cerremos esta propuesta por ahora?
 
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 Responde a este correo para cerrar el seguimiento cuando quieras.
 
@@ -337,14 +337,14 @@ Cierro por ahora el seguimiento de la propuesta de captación para Segunda Oport
 Si más adelante queréis revisar cómo pasan las consultas a citas y asuntos aceptados, puedes responder a este correo y lo retomamos desde ahí.
 
 Gracias por tu tiempo,
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 ### WhatsApp solicitado · WhatsApp
 
 Uso: Solo si han elegido WhatsApp para esta conversación.
 
-Hola, [Nombre de quien decide]. Soy [Tu nombre], de RedVitalia. Te escribo por aquí como hemos acordado. La propuesta es revisar la captación de Segunda Oportunidad de [Nombre del despacho] y definir un piloto si encaja con vuestra capacidad. ¿Qué momento te viene bien para una conversación de 20 minutos? Si prefieres no seguir, dímelo y lo dejamos registrado.
+Hola, [Nombre de quien decide]. Soy Nidia Guerrero, de RedVitalia. Te escribo por aquí como hemos acordado. La propuesta es revisar la captación de Segunda Oportunidad de [Nombre del despacho] y definir un piloto si encaja con vuestra capacidad. ¿Qué momento te viene bien para una conversación de 20 minutos? Si prefieres no seguir, dímelo y lo dejamos registrado.
 
 ### Confirmación de la reunión · Correo
 
@@ -362,14 +362,14 @@ Revisaremos la captación de Segunda Oportunidad, la atención de consultas y si
 Conviene que participe quien decide la inversión y, si es posible, quien organiza la atención.
 
 Si necesitas cambiarla, responde a este correo.
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 ### Recordatorio acordado · WhatsApp
 
 Uso: Canal elegido, una vez antes de la cita.
 
-Hola, [Nombre de quien decide]. Te recuerdo nuestra revisión de captación de [Nombre del despacho] para [Fecha, hora y zona horaria de reunión]. Duración: 20 minutos. Enlace: [Enlace de reunión]. Si necesitas cambiar la hora, dímelo y buscamos otra. [Tu nombre], RedVitalia.
+Hola, [Nombre de quien decide]. Te recuerdo nuestra revisión de captación de [Nombre del despacho] para [Fecha, hora y zona horaria de reunión]. Duración: 20 minutos. Enlace: [Enlace de reunión]. Si necesitas cambiar la hora, dímelo y buscamos otra. Nidia Guerrero, RedVitalia.
 
 ### Si no se presenta · Correo
 
@@ -383,8 +383,8 @@ No hemos podido coincidir en la reunión. Si sigue siendo útil revisar la capta
 
 Si ha dejado de ser prioridad, no hace falta reprogramar; puedes responder y cierro el seguimiento.
 
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 ## 06 · Reunión y objeciones: Vender a partir de capacidad, proceso y números
 
@@ -526,8 +526,8 @@ Prepararé una propuesta con gestión, inversión en medios y preparación separ
 
 Próximo paso acordado: [acción, responsable y fecha].
 
-[Tu nombre] · RedVitalia
-WhatsApp: +34 919 935 237
+Nidia Guerrero · RedVitalia
+919 935 237
 
 Si prefieres cerrar el seguimiento comercial, responde a este correo.
 
@@ -677,7 +677,7 @@ Texto de finalidad: Usaremos estos datos para atender tu solicitud de diagnósti
 [Insertar identificación real del responsable y enlace a política vigente. Cualquier suscripción comercial adicional será opcional y separada.]
 
 PÁGINA DE GRACIAS
-Solo mostrar este mensaje después de confirmar recepción en el CRM: «Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a WhatsApp: +34 919 935 237. No envíes documentación de tus clientes». Si falla la entrega, informar y ofrecer contacto directo sin registrar un lead recibido.
+Solo mostrar este mensaje después de confirmar recepción en el CRM: «Hemos recibido tu solicitud. Revisaremos los datos y te contactaremos por el canal que has elegido para acordar el diagnóstico. Si quieres añadir algo, escribe a 919 935 237. No envíes documentación de tus clientes». Si falla la entrega, informar y ofrecer contacto directo sin registrar un lead recibido.
 
 ## 09 · Anuncios y contenido: Dos ángulos para probar sin dispersar presupuesto
 
@@ -820,9 +820,9 @@ Uso: Solo a una relación existente y cuando sea pertinente.
 
 Hola, [Nombre de quien decide]. Estoy preparando diagnósticos de captación para despachos que quieran trabajar Segunda Oportunidad. Revisamos cómo pasan las consultas a citas y asuntos aceptados.
 
-Si conoces un despacho al que le pueda interesar, puedes comentárselo y, si quiere, presentarnos o pasarle mi contacto: WhatsApp: +34 919 935 237. Prefiero que sea el despacho quien confirme interés antes de escribirle.
+Si conoces un despacho al que le pueda interesar, puedes comentárselo y, si quiere, presentarnos o pasarle mi contacto: 919 935 237. Prefiero que sea el despacho quien confirme interés antes de escribirle.
 
-Gracias, [Tu nombre] · RedVitalia.
+Gracias, Nidia Guerrero · RedVitalia.
 
 ## 10 · Arranque del servicio: Lo que pasa después del sí
 
@@ -861,9 +861,9 @@ Para fijar el inicio necesitamos:
 Revisaremos juntos el recorrido con una prueba identificada antes de activar publicidad. Confirmaremos la fecha cuando estén completos los accesos, la revisión jurídica y la medición.
 
 Reunión de arranque: [fecha acordada].
-Responsable RedVitalia: [Tu nombre].
+Responsable RedVitalia: Nidia Guerrero.
 
-WhatsApp: +34 919 935 237
+919 935 237
 
 ### Reunión de arranque · 45 minutos · Guía
 
@@ -914,7 +914,7 @@ NECESITAMOS DEL DESPACHO
 [Acción, responsable y fecha].
 
 Próxima revisión: [fecha].
-[Tu nombre] · RedVitalia
+Nidia Guerrero · RedVitalia
 
 ### Revisión del piloto · continuar, ajustar o parar · Reunión
 

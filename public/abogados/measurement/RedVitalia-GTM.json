@@ -1,6 +1,6 @@
 {
   "exportFormatVersion": 2,
-  "exportTime": "2026-09-13T16:13:43.450Z",
+  "exportTime": "2026-09-13T17:45:05.495Z",
   "containerVersion": {
     "name": "RedVitalia · Abogados · Medición v2",
     "description": "Importar combinando en un espacio de trabajo nuevo. Destino verificado G-QRQEMYM8NH. La web usa GA4 directamente mientras gtmId está vacío; al configurar GTM se desactiva la carga directa, evitando duplicados. El sitio carga GTM solo después de consentimiento. Etiquetas HTML utilizan el snippet gtag oficial. Desactivar medición mejorada automática del flujo para evitar formularios, enlaces WhatsApp y URLs con datos personales. No incluye píxel Meta ni Google Ads.",
@@ -97,27 +97,6 @@
       },
       {
         "tagId": "5",
-        "name": "RV · GA4 · contact_form_start",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_form_start',{{RV · Datos de evento}});}</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "firingTriggerId": [
-          "5"
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT"
-      },
-      {
-        "tagId": "6",
         "name": "RV · GA4 · generate_lead",
         "type": "html",
         "parameter": [
@@ -133,12 +112,12 @@
           }
         ],
         "firingTriggerId": [
-          "6"
+          "5"
         ],
         "tagFiringOption": "ONCE_PER_EVENT"
       },
       {
-        "tagId": "7",
+        "tagId": "6",
         "name": "RV · GA4 · contact_whatsapp_click",
         "type": "html",
         "parameter": [
@@ -154,12 +133,12 @@
           }
         ],
         "firingTriggerId": [
-          "7"
+          "6"
         ],
         "tagFiringOption": "ONCE_PER_EVENT"
       },
       {
-        "tagId": "8",
+        "tagId": "7",
         "name": "RV · GA4 · contact_phone_click",
         "type": "html",
         "parameter": [
@@ -175,33 +154,12 @@
           }
         ],
         "firingTriggerId": [
-          "8"
+          "7"
         ],
         "tagFiringOption": "ONCE_PER_EVENT"
       },
       {
-        "tagId": "9",
-        "name": "RV · GA4 · contact_submit_error",
-        "type": "html",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "html",
-            "value": "<script>if(window.rvSendGA4){window.rvSendGA4('contact_submit_error',{{RV · Datos de evento}});}</script>"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "supportDocumentWrite",
-            "value": "false"
-          }
-        ],
-        "firingTriggerId": [
-          "9"
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT"
-      },
-      {
-        "tagId": "10",
+        "tagId": "8",
         "name": "RV · GA4 · asset_download",
         "type": "html",
         "parameter": [
@@ -217,12 +175,12 @@
           }
         ],
         "firingTriggerId": [
-          "10"
+          "8"
         ],
         "tagFiringOption": "ONCE_PER_EVENT"
       },
       {
-        "tagId": "11",
+        "tagId": "9",
         "name": "RV · GA4 · diagnostic_complete",
         "type": "html",
         "parameter": [
@@ -238,7 +196,7 @@
           }
         ],
         "firingTriggerId": [
-          "11"
+          "9"
         ],
         "tagFiringOption": "ONCE_PER_EVENT"
       }
@@ -334,28 +292,6 @@
       },
       {
         "triggerId": "5",
-        "name": "RV · rv_contact_form_start",
-        "type": "CUSTOM_EVENT",
-        "customEventFilter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{_event}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "rv_contact_form_start"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "triggerId": "6",
         "name": "RV · rv_generate_lead",
         "type": "CUSTOM_EVENT",
         "customEventFilter": [
@@ -377,7 +313,7 @@
         ]
       },
       {
-        "triggerId": "7",
+        "triggerId": "6",
         "name": "RV · rv_contact_whatsapp_click",
         "type": "CUSTOM_EVENT",
         "customEventFilter": [
@@ -399,7 +335,7 @@
         ]
       },
       {
-        "triggerId": "8",
+        "triggerId": "7",
         "name": "RV · rv_contact_phone_click",
         "type": "CUSTOM_EVENT",
         "customEventFilter": [
@@ -421,29 +357,7 @@
         ]
       },
       {
-        "triggerId": "9",
-        "name": "RV · rv_contact_submit_error",
-        "type": "CUSTOM_EVENT",
-        "customEventFilter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{_event}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "rv_contact_submit_error"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "triggerId": "10",
+        "triggerId": "8",
         "name": "RV · rv_asset_download",
         "type": "CUSTOM_EVENT",
         "customEventFilter": [
@@ -465,7 +379,7 @@
         ]
       },
       {
-        "triggerId": "11",
+        "triggerId": "9",
         "name": "RV · rv_diagnostic_complete",
         "type": "CUSTOM_EVENT",
         "customEventFilter": [
